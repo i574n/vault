@@ -12,6 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - run: mv .obsidian obsidian
+
       - uses: actions/upload-artifact@v2
         with:
           name: gh-pages
