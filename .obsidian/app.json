@@ -1,1 +1,10 @@
-{}
+{
+  "vimMode": true,
+  "promptDelete": false,
+  "attachmentFolderPath": "./attachments",
+  "newLinkFormat": "absolute",
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true
+}
