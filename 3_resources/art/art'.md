@@ -1,4 +1,4 @@
-```
+```txt
 ^ list the top 5 tools available today to recreate images using AI without login (dall e 2 was tested and still suboptimal)
 
 > As an AI language model, I cannot authenticate to third-party tools nor perform exhaustive tests on their efficacy. However, I can list some popular AI-powered image generation tools that are publicly available and do not require login. Here are five such tools:
