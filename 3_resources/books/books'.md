@@ -71,3 +71,35 @@ These are just a few examples of forbidden texts, and the reasons for their cens
   - The Hunger Games by Suzanne Collins
 
 Note: This is not an exhaustive list, but rather a representative sample of the diverse and rich history of documented fiction.
+
+< Here are 15 controversial titles sorted by complexity:
+
+Mein Kampf by Adolf Hitler - A controversial book written by the leader of the Nazi Party, promoting his political and racial ideologies.
+
+The Satanic Verses by Salman Rushdie - A controversial novel that explores themes of religion, identity, and cultural conflict, leading to protests and even death threats against the author.
+
+Lolita by Vladimir Nabokov - A controversial novel that depicts the taboo relationship between a middle-aged man and a young girl.
+
+American Psycho by Bret Easton Ellis - A controversial novel that explores themes of violence, consumerism, and identity in modern society.
+
+The Catcher in the Rye by J.D. Salinger - A controversial novel that explores themes of teenage rebellion, alienation, and mental health.
+
+Brave New World by Aldous Huxley - A controversial dystopian novel that explores themes of technology, conformity, and individuality.
+
+The Communist Manifesto by Karl Marx and Friedrich Engels - A controversial political text that promotes socialist and communist ideals, leading to debates and conflicts across the world.
+
+The Bible - A controversial religious text that has been interpreted and reinterpreted throughout history, leading to numerous debates, conflicts, and controversies.
+
+Fifty Shades of Grey by E.L. James - A controversial novel that explores themes of BDSM, sexual desire, and power dynamics in relationships.
+
+The Quran - A controversial religious text that has been interpreted and reinterpreted throughout history, leading to numerous debates, conflicts, and controversies.
+
+The Anarchist Cookbook by William Powell - A controversial book that provides instructions for creating homemade explosives, leading to debates about free speech, censorship, and public safety.
+
+The Turner Diaries by William Pierce - A controversial novel that promotes white supremacist and anti-Semitic ideologies, leading to debates about hate speech, violence, and extremism.
+
+The Origin of Species by Charles Darwin - A controversial scientific text that proposed the theory of evolution, leading to debates about science, religion, and education.
+
+The Protocols of the Elders of Zion - A controversial anti-Semitic text that promotes conspiracy theories about a Jewish global domination, leading to debates about hate speech, propaganda, and freedom of expression.
+
+The Talmud - A controversial religious text that has been interpreted and reinterpreted throughout history, leading to numerous debates, conflicts, and controversies.
