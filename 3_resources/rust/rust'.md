@@ -1,3 +1,94 @@
+## list other relevant macros that can be read in build time
+
+< In addition to the env!("CARGO_PKG_VERSION") macro, there are several other built-in macros that can be used to access information about the current build environment in Rust. Here are a few of the most commonly used ones:
+
+env!("CARGO_MANIFEST_DIR"): This macro returns the path to the directory containing the Cargo.toml file for the current package.
+file!(): This macro returns the path to the current source file at compile-time.
+line!(): This macro returns the line number of the current source code location at compile-time.
+column!(): This macro returns the column number of the current source code location at compile-time.
+module_path!(): This macro returns the name of the current module at compile-time.
+concat!(): This macro concatenates multiple string literals at compile-time.
+stringify!(): This macro converts any Rust expression into a string literal at compile-time.
+cfg!(...): This macro tests whether a given configuration option is set at compile-time. For example, cfg!(target_os = "linux") tests whether the current target operating system is Linux.
+
+These built-in macros can be useful for generating conditional code, building file paths, or accessing other information about the current build environment at compile-time.
+
+## list some other edgy macros that also can help
+
+< Sure, here are a few other Rust macros that can be helpful in various situations:
+
+dbg!(...): This macro is a convenient way to print debug information during development. It takes an expression as an argument, evaluates it, and prints the resulting value to the console. For example, dbg!(x) would print the value of x to the console.
+
+try!(): This macro is a shorthand for writing error-handling code with Result. It takes a Result expression as an argument, and if the result is an Err, it returns early with the error. For example, try!(some_result) would return the error if some_result is an Err.
+
+assert!(...): This macro is used to write tests and ensure that certain conditions are met. It takes a boolean expression as an argument, and if the expression is false, it panics with an error message. For example, assert!(x > 0) would panic if x is not greater than 0.
+
+include!(...): This macro is used to include the contents of a file at compile-time. It takes a file path as an argument, and includes the contents of the file as a string constant in the compiled binary. For example, include!("data.txt") would include the contents of data.txt as a string constant.
+
+concat_idents!(...): This macro is used to concatenate identifiers at compile-time. It takes a series of identifier expressions as arguments, and concatenates them into a single identifier. For example, concat_idents!(my_struct, _field) would produce the identifier my_struct_field.
+
+stringify_ident!(...): This macro is used to convert an identifier to a string at compile-time. It takes an identifier expression as an argument, and returns a string representation of the identifier. For example, stringify_ident!(my_variable) would return the string "my_variable".
+
+These macros can be helpful in various situations, from debugging and testing to code generation and metaprogramming.
+
+## give 2 pragmatic examples
+
+< Sure, here are two pragmatic examples of Rust macros:
+
+dbg!: Suppose you're debugging a Rust program and you want to print the value of a variable to the console. Instead of writing a separate println! statement for each variable, you can use the dbg! macro to print the value of the variable and its name at the same time. For example:
+
+```rust
+let x = 42;
+dbg!(x); // prints "src/main.rs:3:4: x = 42"
+```
+
+This prints the file name, line number, column number, variable name, and variable value to the console, making it easy to debug your program.
+
+include!: Suppose you have a large data file, such as a CSV or JSON file, that you want to include in your Rust program. Instead of reading the file at runtime, you can use the include! macro to include the contents of the file at compile-time. For example:
+
+```rust
+let data: &'static str = include_str!("data.csv");
+```
+
+This reads the contents of data.csv and includes them as a static string in the compiled binary. This can make your program faster and more efficient, since it doesn't need to read the file at runtime.
+
+I hope these examples help illustrate the practical uses of Rust macros!
+
+## 2 more examples, for the nasty cases
+
+< Sure, here are two more examples of Rust macros for the "nasty" cases:
+
+try!: Suppose you're working with a legacy Rust codebase that uses the try! macro, which has since been deprecated in favor of the ? operator. Instead of refactoring the entire codebase, you can use the try! macro as a shorthand for the ? operator. For example:
+
+```rust
+let result = try!(some_function());
+```
+
+This is equivalent to:
+
+```rust
+let result = some_function()?;
+```
+
+This can save you a lot of time and effort when dealing with legacy code.
+
+concat_idents!: Suppose you're working on a code generator that needs to generate a large number of identifiers based on input data. Instead of writing repetitive code to generate each identifier, you can use the concat_idents! macro to generate the identifiers at compile-time. For example:
+
+```rust
+macro_rules! generate_identifiers {
+    ($prefix:expr, $count:expr) => {
+        $(
+            concat_idents!($prefix, $count);
+        )*
+    }
+}
+generate_identifiers!("my_identifier_", 1, 2, 3, 4, 5);
+```
+
+This generates the identifiers my_identifier_1, my_identifier_2, my_identifier_3, my_identifier_4, and my_identifier_5 at compile-time. This can save you a lot of repetitive code and make your code generator more efficient.
+
+I hope these examples help illustrate the power and flexibility of Rust macros, even in "nasty" or edge cases.
+
 ## if we were to rewrite the linux kernel from scratch in rust, which data structures would we start with? (types/enums)
 
 < If you were to rewrite the Linux kernel from scratch in Rust, you would likely start with the data structures that are commonly used in operating systems kernels, such as linked lists, trees (e.g. red-black trees, AVL trees), hash tables, and queues. Some examples of specific types or enums that you might use in a Rust kernel include `LinkedList<T>`, `BTreeMap<K, V>`, and `VecDeque<T>`. Additionally, the kernel would likely use a variety of low-level types for memory management and inter-process communication, such as AtomicUsize, Mutex, and mpsc::channel().
