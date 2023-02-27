@@ -80,3 +80,52 @@ fill(0);
 
 
 ```
+
+```js
+
+fill = (i) => {
+
+document.querySelectorAll('.divide-y-dashed-custom .btn-base')[i].click();
+
+setTimeout(() => {
+
+setValue = (el, value) => {
+el.value = value;
+};
+
+input_ = name => {
+el = document.querySelector('.input-base[name=' + name + ']');
+setValue(document.querySelector('.input-base[name=description]'), el.value);
+
+setValue(el, '');
+};
+input_('title')
+
+el = document.querySelector('.input-base[name="royalty.0.accountId"]');
+setValue(el, 'fc1943s.near');
+
+el = document.querySelector('.input-base[name="royalty.0.royalty"]');
+setValue(el, '15');
+
+el = document.querySelector('.input-base[name=copies]');
+setValue(el, '15');
+
+document.querySelector('.w-full .input-base.cursor-pointer').click();
+
+setTimeout(() => {
+document.querySelector('#for-sale').click();
+
+el = document.querySelector('.input-base[name=price]');
+setValue(el, '7');
+
+document.querySelector('.btn-base.bg-darkmode-blue-75').click();
+}, 100);
+
+}, 100);
+
+};
+
+fill(0);
+
+
+```

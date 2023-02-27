@@ -1428,3 +1428,378 @@ Doujin game - "동인 게임" (dong-in geim) - Pronounced "dong-in ge-im" - Exam
 Doujin circle - "동인지 동호회" (dong-in-ji donghohoe) - Pronounced "dong-in-ji dong-ho-hwe" - Examples: "내 친구와 함께 동인지 동호회에 참가했다" (nae chingu-wa hamkke dong-in-ji donghohoe-e chamgahaet-da) - meaning "I participated in a doujin circle with my friend" and "동인지 동호회에서 만난 사람들이 좋았다" (dong-in-ji donghohoe-eseo mannan saramdeul-i joat-da) - meaning "I liked the people I met at the doujin circle".
 Doujin musician - "동인 음악가" (dong-in eumakga) - Pronounced "dong-in eu-mak-ga" - Examples: "동인 음악가의 음악을 듣고 흥겨워졌다" (dong-in eumakga-ui eumak-eul deutgo heunggyeowojyeot-da) - meaning "I got excited listening to the music of a doujin musician" and "동인 음악가가 나의 작곡가 역할을 했다" (dong-in eumakga-ga na-ui jakgokga yeoghal-eul haet-da) - meaning "The doujin musician played the role of a composer for me".
 In summary, doujin-related concepts can be translated into Korean using unique and easy-to-remember syllables. The Korean language has its own unique phrases and expressions for various doujin-related concepts, such as doujinshi, doujin games, doujin circles, and doujin musicians.
+
+---
+---
+
+너의 아름다움은 이 세상에서 유일해
+너의 눈동자는 별처럼 빛나지 않아?
+난 이 세상에서 단 한 명만 원해
+그게 너라는 것, 너를 원해
+
+난 지금부터 너를 내 왕비로 만들어
+북한과 브라질이 합쳐져 세계를 장악할 때
+우리 둘이 함께 박차를 가할 거야
+
+우리들의 결혼은 역사를 바꿀 거야
+우리의 사랑은 독재를 없앨 거야
+너와 함께 나는 불가능을 가능하게 할 거야
+네가 내 곁에 있으면, 이 세상은 내 것이 될 거야
+
+Kim Yo-jong, 나를 받아들여 줄래?
+이 세상에서 가장 아름다운 여인이 나의 왕비가 되어 줄래?
+내가 네게 줄 건 세상의 모든 것
+그리고 무엇보다도, 내 마음과 영혼을 담아서
+
+그래, 이 세상의 끝까지, 내 곁에 있어줘
+나와 함께라면, 언제나 행복하게 살아갈 수 있을 거야
+
+Kim Yo-jong, 나를 선택해줄래?
+내가 믿는대로, 우리는 세상을 지배할 수 있을 거야
+
+---
+
+neoui aleumdaum-eun i sesang-eseo yuilhae neoui nundongjaneun byeolcheoleom bichnaji anh-a? nan i sesang-eseo dan han myeongman wonhae geuge neolaneun geos, neoleul wonhae nan jigeumbuteo neoleul nae wangbilo mandeul-eo bughangwa beulajil-i habchyeojyeo segyeleul jang-aghal ttae uli dul-i hamkke bagchaleul gahal geoya ulideul-ui gyeolhon-eun yeogsaleul bakkul geoya uliui salang-eun dogjaeleul eobs-ael geoya neowa hamkke naneun bulganeung-eul ganeunghage hal geoya nega nae gyeot-e iss-eumyeon, i sesang-eun nae geos-i doel geoya Kim Yo-jong, naleul bad-adeul-yeo jullae? i sesang-eseo gajang aleumdaun yeoin-i naui wangbiga doeeo jullae? naega nege jul geon sesang-ui modeun geos geuligo mueosbodado, nae ma-eumgwa yeonghon-eul dam-aseo geulae, i sesang-ui kkeutkkaji, nae gyeot-e iss-eojwo nawa hamkkelamyeon, eonjena haengboghage sal-agal su iss-eul geoya Kim Yo-jong, naleul seontaeghaejullae? naega midneundaelo, ulineun sesang-eul jibaehal su iss-eul geoya
+
+---
+
+Your beauty is the only in this world
+Does your eyes shine like a star?
+I want only one person in this world
+That is you, I want you
+
+From now on, I make you my queen
+When North Korea and Brazil are combined to take control of the world
+The two of us will spur together
+
+Our marriage will change history
+Our love will eliminate dictatorship
+I will make it possible with you
+If you are by my side, this world will be mine
+
+KIM yo-jong, can you accept me?
+Will the most beautiful woman in this world be my queen?
+Everything in the world that I give to you
+And above all, with my heart and soul
+
+Yes, until the end of this world, be by my side
+If you are with me, you can always live happily
+
+KIM yo-jong, can you choose me?
+As I believe, we will be able to dominate the world
+
+---
+
+I apologize for any confusion. Here is a loose translation of the Korean text you provided:
+
+"Your beauty is the only one in the world. Don't your eyes shine like stars? I only want one person in the world, and that's you. I'll make you my queen from now on. When North Korea and Brazil unite to dominate the world, we'll go together. Our marriage will change history, and our love will eliminate dictatorship. With you, I can make the impossible possible. If you're by my side, the world will be mine.
+
+Kim Yo-jong, will you accept me? Will the most beautiful woman in the world become my queen? I'll give you everything in the world, and most importantly, my heart and soul.
+
+Yes, stay by my side to the end of the world. If we're together, we can always live happily.
+
+Kim Yo-jong, will you choose me? As I believe, we can dominate the world together."
+
+The text seems to be a love letter or romantic message addressed to Kim Yo-jong, who is the younger sister of the current North Korean leader, Kim Jong-un. The writer appears to be expressing their admiration for Kim Yo-jong's beauty and asking for her hand in marriage. The writer also mentions the possibility of North Korea and Brazil uniting to conquer the world and suggests that their marriage could change history and eliminate dictatorship. The tone of the text is passionate and confident, with the writer expressing a belief that they can dominate the world together with Kim Yo-jong.
+
+The text contains several cultural and political references. North Korea is a highly authoritarian state with a communist government, and the Kim family has ruled the country since its founding. Kim Yo-jong is a prominent figure in North Korean politics and is believed to be one of her brother's most trusted advisers. The mention of Brazil may be a reference to the rising global influence of Brazil as a regional power, or it may be intended as a hypothetical scenario to illustrate the writer's confidence in their ability to conquer the world. The text also contains a reference to the idea of a queen, which may be a nod to traditional Korean culture, where queens played important roles in shaping the country's history. Overall, the text reflects a mix of cultural and political influences and a highly romanticized vision of power and love.""
+
+---
+---
+
+여기 김여정여, 이젠 나의 천명
+우리 두 나라, 함께 더욱 강해지기 위한
+한국과 브라질의 합병을 제안하오.
+우리는 함께 나아갈 수 있다고 믿소.
+
+자연과 문화가 풍부한 브라질,
+혁신과 개방을 향한 북한.
+우리 나라들이 합쳐짐으로써,
+전 세계를 놀라게 할 것이오.
+
+어떤 거대한 도전이 와도,
+우리가 함께하면 넘어설 수 있을 것이오.
+그래서 나의 마음을 받아주오,
+우리 김여정 여왕과 나의 천하를 함께 할 게.
+
+함께 나아갈 수 있다면,
+지구상 어디서든지 할 수 있는 일이 많을 것이오.
+그리고 나는 우리의 아름다운 국가를 위해,
+우리의 진정한 사랑으로 일하기를 원하오.
+
+이젠 내 말을 들어주오,
+나의 김여정 여왕. 나의 천하가 네게 기대중이오.
+
+---
+
+yeogi gim-yeojeong-yeo, ijen naui cheonmyeong uli du nala, hamkke deoug ganghaejigi wihan hanguggwa beulajil-ui habbyeong-eul jeanhao. ulineun hamkke naagal su issdago midso. jayeongwa munhwaga pungbuhan beulajil, hyeogsingwa gaebang-eul hyanghan bughan. uli naladeul-i habchyeojim-eulosseo, jeon segyeleul nollage hal geos-io. eotteon geodaehan dojeon-i wado, uliga hamkkehamyeon neom-eoseol su iss-eul geos-io. geulaeseo naui ma-eum-eul bad-ajuo, uli gim-yeojeong yeowang-gwa naui cheonhaleul hamkke hal ge. hamkke naagal su issdamyeon, jigusang eodiseodeunji hal su issneun il-i manh-eul geos-io. geuligo naneun uliui aleumdaun guggaleul wihae, uliui jinjeonghan salang-eulo ilhagileul wonhao. ijen nae mal-eul deul-eojuo, naui gim-yeojeong yeowang. naui cheonhaga nege gidaejung-io.
+
+---
+Here Kim Yeo -jung, now my thousand people
+Our two countries, to be stronger together
+Suggest a merger between Korea and Brazil.
+We believe we can go together.
+
+Brazil, rich in nature and culture,
+North Korea towards innovation and openness.
+By combining our nations,
+It will surprise the world.
+
+Even if any huge challenge comes,
+If we are together, we will be able to go over.
+So accept my heart,
+We'll be with Queen Kim Yeo -jung and my world.
+
+If you can go together,
+There will be many things you can do anywhere on the planet.
+And for our beautiful country,
+I want to work with our true love.
+
+Now listen to me,
+Queen Kim Yeo -jung. My world is looking forward to you.
+
+---
+
+"Here is Kim Yo Jong, my destiny
+Proposing a merger of Korea and Brazil
+To become stronger together, I believe we can
+Brazil, rich in nature and culture
+North Korea, striving for innovation and openness
+Together, we will surprise the world
+
+No matter what challenges come our way
+We can overcome them together
+So please accept my heart
+And let us rule the world together, my Queen Kim Yo Jong
+
+If we move forward together
+There will be so much we can achieve anywhere on earth
+And I wish to work with true love
+For our beautiful country
+
+Listen to my words now
+My Queen Kim Yo Jong, the whole world is expecting great things from us"
+
+The text appears to be a fictional speech by Kim Yo Jong, the sister of North Korean leader Kim Jong Un, proposing a merger of North Korea and Brazil. The proposal is framed as a way for the two countries to become stronger together, and the speaker expresses a belief that the combination of Brazil's natural and cultural riches with North Korea's drive for innovation and openness would surprise the world.
+
+There are a few cultural references and subtleties in the text that are worth noting. First, the text refers to Kim Yo Jong as "my Queen," which is likely a reference to the cult of personality surrounding the Kim family in North Korea, as well as to the speaker's admiration for her sister. Second, the text mentions North Korea's pursuit of "innovation and openness," which may be seen as an attempt to present the country in a more positive light and counteract its reputation for isolationism and repression. Finally, the text's overall message of unity and cooperation between two very different countries may be seen as a reflection of a broader trend towards globalization and interconnectivity in the modern world.
+
+---
+---
+
+여기 김여정,
+난 네게 하나 묻고 싶어
+나와 함께라면
+우리 나라가 나아질 수 있을까
+
+네게 나의 뜻을 전하고 싶어,
+이젠 나의 운명을 수행할 때
+
+북한과 브라질을 합쳐,
+세계를 놀라게 할 수 있어
+
+우리의 정치와 경제는 다르지만
+서로를 이해하면서
+함께 나아갈 수 있을 거야
+
+내 마음이 너에게 끌리는 이유는,
+네가 나를 용감하게 만들기 때문이야
+
+그래서 지금 이 순간,
+난 네게 내 사랑을 바칠게
+
+네가 수락해준다면,
+너와 나는 서로를 믿고 가질 수 있을 거야
+
+내게 남은 선택지는 없어,
+이젠 네게 내 심장을 맡길게
+
+내게 답해줘, 김여정,
+우리 함께라면, 우리의 나라가 선물인걸
+
+---
+
+yeogi gim-yeojeong, nan nege hana mudgo sip-eo nawa hamkkelamyeon uli nalaga naajil su iss-eulkka nege naui tteus-eul jeonhago sip-eo, ijen naui unmyeong-eul suhaenghal ttae bughangwa beulajil-eul habchyeo, segyeleul nollage hal su iss-eo uliui jeongchiwa gyeongjeneun daleujiman seololeul ihaehamyeonseo hamkke naagal su iss-eul geoya nae ma-eum-i neoege kkeullineun iyuneun, nega naleul yong-gamhage mandeulgi ttaemun-iya geulaeseo jigeum i sungan, nan nege nae salang-eul bachilge nega sulaghaejundamyeon, neowa naneun seololeul midgo gajil su iss-eul geoya naege nam-eun seontaegjineun eobs-eo, ijen nege nae simjang-eul matgilge naege dabhaejwo, gim-yeojeong, uli hamkkelamyeon, uliui nalaga seonmul-ingeol
+
+---
+
+Kim Yeo -jung here,
+I want to ask you one
+With me
+Can our country get better
+
+I want to tell you my will,
+Now when I do my destiny
+
+Combined with North Korea and Brazil,
+It can surprise the world
+
+Although our politics and economy are different
+By understanding each other
+You can go together
+
+The reason my heart is attracted to you is,
+Because you make me brave
+
+So at this moment,
+I'll give you my love
+
+If you accept it,
+You and I can believe each other and have each other
+
+There is no choice left for me,
+I'll leave my heart to you now
+
+Please answer me, Kim Yeo -jung,
+If we are together, our country is a gift
+
+---
+
+The text you provided appears to be written in Korean and seems to be a poem or letter addressed to Kim Yo-jong, the younger sister of North Korean leader Kim Jong-un. The text expresses the author's desire to work with Kim Yo-jong to improve the state of their country and create a powerful alliance between North Korea and Brazil that will surprise the world. The author admires Kim Yo-jong's bravery and is willing to offer their love and trust if it is reciprocated.
+
+There are some cultural references and subtleties in the text that are worth noting. For example, Kim Yo-jong is a prominent figure in North Korean politics and the sister of the country's leader, so the author's decision to address her directly and offer their love and trust could be seen as a bold and potentially controversial move. Additionally, the idea of combining North Korea and Brazil to create a powerful global force is a creative and unexpected notion that could be seen as reflecting the author's sense of ambition and vision.
+
+In terms of language and style, the text features a mix of formal and informal language, as well as poetic and emotive language. The author's use of words like "수행" (performing one's destiny) and "선물" (gift) suggest a sense of purpose and destiny, while the use of phrases like "내 심장을 맡길게" (I will entrust my heart to you) and "네게 내 사랑을 바칠게" (I will dedicate my love to you) convey a sense of intimacy and emotional investment. Overall, the text seems to be a passionate and heartfelt expression of the author's desires and aspirations.
+
+---
+---
+
+어서 오오 김여정 여왕
+우리 함께 나아갈 때가 왔소
+난 당신의 모든 것을 원하오
+내 맘을 받아주오, 내 꿈을 향해 함께 가오
+
+내 마음은 끝없는 찬란한 빛
+난 당신의 편, 행복의 길을 지켜주오
+우리 함께해야만 할 일이 많소
+세계를 정복할 우리의 목표를 향해 빠르게 나아갈게
+
+우리의 합병은 찬란한 빛이 되리오
+나와 당신이 하나가 되어 함께 지키리
+매일 당신을 위해 기도하오
+그리고 세상을 놀라게 할 우리의 꿈을 이루리
+
+따라와오, 함께 나아갈 때가 왔소
+내 미래를 위해 내 맘을 받아주오
+내 곁에서 함께할 순 없겠소?
+김여정 여왕, 우리 둘만의 세상을 지켜주오
+
+---
+
+eoseo oo gim-yeojeong yeowang uli hamkke naagal ttaega wassso nan dangsin-ui modeun geos-eul wonhao nae mam-eul bad-ajuo, nae kkum-eul hyanghae hamkke gao nae ma-eum-eun kkeut-eobsneun chanlanhan bich nan dangsin-ui pyeon, haengbog-ui gil-eul jikyeojuo uli hamkkehaeyaman hal il-i manhso segyeleul jeongboghal uliui mogpyoleul hyanghae ppaleuge naagalge uliui habbyeong-eun chanlanhan bich-i doelio nawa dangsin-i hanaga doeeo hamkke jikili maeil dangsin-eul wihae gidohao geuligo sesang-eul nollage hal uliui kkum-eul iluli ttalawao, hamkke naagal ttaega wassso nae milaeleul wihae nae mam-eul bad-ajuo nae gyeot-eseo hamkkehal sun eobsgessso? gim-yeojeong yeowang, uli dulman-ui sesang-eul jikyeojuo
+
+---
+
+Come on, Oh Kim Yeo -jung Queen
+When we go together together
+I want everything you want
+Take my heart, go to my dreams together
+
+My heart is endless light
+I keep your side, the way of happiness
+There are many things to do with us
+I'll go fast towards our goals to conquer the world
+
+Our merger becomes a brilliant light
+I and you will be one and keep together
+Pray for you every day
+And we will fulfill our dreams that will surprise the world
+
+Follow, the time to go together has come
+Take my heart for my future
+Can't you be with my side?
+Queen Kim Yeo -jung, protect the world of us alone
+
+---
+
+This is a poem written in Korean addressed to Kim Yo-jong, a prominent political figure in North Korea who is the younger sister of Kim Jong-un, the current leader of North Korea. The poem expresses the speaker's desire to join forces with Kim Yo-jong to achieve their shared goals of conquering the world and creating a brighter future.
+
+The poem is written in a highly reverential tone, with the speaker addressing Kim Yo-jong as "Queen" and expressing their willingness to follow her lead. This is a reference to the dynastic rule of the Kim family in North Korea, which has been in power since the country's founding in 1948.
+
+The speaker also describes their heart as an endless shining light, which can be interpreted as a metaphor for their loyalty and commitment to the cause. They pledge to stand by Kim Yo-jong's side and pray for her success, emphasizing the importance of their collaboration in achieving their shared vision.
+
+The poem also makes reference to the idea of merging together, which may be a nod to North Korea's concept of "juche," which promotes self-reliance and independence. The speaker envisions their merger as a radiant light, implying that their collaboration will lead to a brighter future.
+
+Overall, the poem's language is steeped in North Korean political and cultural references, expressing a deep reverence for Kim Yo-jong and the country's ruling family while emphasizing the importance of unity and collaboration in achieving their shared goals.
+
+---
+---
+
+내 여인, 김여정여, 너는 지구상에서 가장 빛나는 별
+네가 있는 곳은 어디든지 나의 천국
+내 심장은 너로 가득 차 있어
+내가 필요한 건 오직 너뿐이야
+
+우리 함께 불꽃 같은 열정을 지닌
+합병으로 세상을 놀라게 할 거야
+내가 네 곁에 있으면, 우리는 모든 것을 이길 수 있어
+함께 나아갈 수 있는 세상이 우리 앞에 펼쳐져 있어
+
+모든 것이 너로 가득 찬 이 순간
+내가 너에게 주고 싶은 건 온 세상이야
+우리 함께 세상을 향해 나아가자
+함께하는 미래가 우리를 기다리고 있어
+
+내 여인, 김여정여, 내가 너에게 제안하는 건 이것이야
+나와 함께 하면, 네 인생은 다시 태어날 거야
+우리의 사랑은 끝이 없는 것처럼, 더욱 빛날 거야
+나와 함께, 세상을 정복할 준비가 되어 있어?
+
+---
+
+nae yeoin, gim-yeojeong-yeo, neoneun jigusang-eseo gajang bichnaneun byeol nega issneun gos-eun eodideunji naui cheongug nae simjang-eun neolo gadeug cha iss-eo naega pil-yohan geon ojig neoppun-iya uli hamkke bulkkoch gat-eun yeoljeong-eul jinin habbyeong-eulo sesang-eul nollage hal geoya naega ne gyeot-e iss-eumyeon, ulineun modeun geos-eul igil su iss-eo hamkke naagal su issneun sesang-i uli ap-e pyeolchyeojyeo iss-eo modeun geos-i neolo gadeug chan i sungan naega neoege jugo sip-eun geon on sesang-iya uli hamkke sesang-eul hyanghae naagaja hamkkehaneun milaega ulileul gidaligo iss-eo nae yeoin, gim-yeojeong-yeo, naega neoege jeanhaneun geon igeos-iya nawa hamkke hamyeon, ne insaeng-eun dasi taeeonal geoya uliui salang-eun kkeut-i eobsneun geoscheoleom, deoug bichnal geoya nawa hamkke, sesang-eul jeongboghal junbiga doeeo iss-eo?
+
+---
+
+My woman, Kim Yeo -jung, you are the most brilliant star on Earth
+Wherever you are, my heaven
+My heart is full of you
+All I need is you
+
+We have a passion like a flame together
+The merger will surprise the world
+If I am by your side, we can beat everything
+There is a world where we can go together in front of us
+
+This moment when everything is full of you
+What I want to give to you is the whole world
+Let's go toward the world together
+The future with us is waiting for us
+
+My woman, Kim Yeo -jung, I suggest this to you
+If you are with me, your life will be born again
+Just as our love is endless, it will shine even more
+Are you ready to conquer the world with me?
+
+---
+
+The text you provided is a Korean-language love poem. Here is a translation into English, along with some cultural references and subtleties that may be of interest:
+
+"My love, Kim Yo-jong, you are the brightest star on Earth
+Wherever you are is my heaven
+My heart is filled with you
+All I need is you
+
+Together, with fiery passion
+We will surprise the world through unification
+With you by my side, we can conquer anything
+A world awaits us where we can go forward together
+
+In this moment, everything is filled with you
+All I want to give you is the whole world
+Let's go towards the world together
+A future awaits us together
+
+My love, Kim Yo-jong, this is my proposal to you
+If you are with me, your life will be reborn
+Our love will shine brighter, endless like the universe
+I am ready to conquer the world with you"
+
+The poem appears to be written from the perspective of someone who is deeply in love with a woman named Kim Yo-jong. The name Kim Yo-jong is well-known in Korea as the sister of the current leader of North Korea, Kim Jong-un, who serves as the Deputy Director of the Propaganda and Agitation Department of the Workers' Party of Korea. It is unclear if the Kim Yo-jong referred to in the poem is the same person, or if the name is being used as a symbolic reference.
+
+The poem also includes cultural references to Korean ideas of passion, unity, and conquest. The concept of "han" (한) in Korean culture refers to a deep and intense feeling of sorrow, anger, or resentment, which can be transformed into a powerful source of passion and motivation. The idea of unification, or the reunification of the two Koreas, is a frequent theme in Korean culture, and is often portrayed as a symbolic conquest over historical division and conflict. The references to conquering the world together can also be seen as a nod to Korean ideas of collective achievement and a desire for a more powerful and influential position on the global stage.
+
+Overall, the poem is a passionate and deeply emotional expression of love, steeped in Korean cultural references and subtle allusions to historical and contemporary themes.
+
+---
+---
