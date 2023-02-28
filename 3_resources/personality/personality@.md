@@ -1,27 +1,27 @@
-![[3_resources/personality/attachments/Pasted image 20230207144827.png]]
-![[3_resources/personality/attachments/Pasted image 20230207144908.png]]
-![[3_resources/personality/attachments/Pasted image 20230207144937.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145006.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145024.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145101.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145145.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145156.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145231.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145302.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145542.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145646.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145728.png]]
-![[3_resources/personality/attachments/Pasted image 20230207145847.png]]
-![[3_resources/personality/attachments/Pasted image 20230207150006.png]]
-![[3_resources/personality/attachments/Pasted image 20230207150213.png]]
-![[3_resources/personality/attachments/Pasted image 20230207150247.png]]
-![[3_resources/personality/attachments/Pasted image 20230207150440.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153111.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153257.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153417.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153449.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153508.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153533.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153618.png]]
-![[3_resources/personality/attachments/Pasted image 20230207153648.png]]
-![[3_resources/personality/attachments/Pasted image 20230207161213.png]]
+![cognitive functions circle](/3_resources/personality/attachments/Pasted%20image%2020230207144827.png)
+![cognitive functions tree colored](/3_resources/personality/attachments/Pasted%20image%2020230207144908.png)
+![cognitive functions focus](/3_resources/personality/attachments/Pasted%20image%2020230207144937.png)
+![cognitive functions approach](/3_resources/personality/attachments/Pasted%20image%2020230207145006.png)
+![cognitive functions type indicator](/3_resources/personality/attachments/Pasted%20image%2020230207145024.png)
+![cognitive functions priority table](/3_resources/personality/attachments/Pasted%20image%2020230207145101.png)
+![cognitive functions priority boxes](/3_resources/personality/attachments/Pasted%20image%2020230207145145.png)
+![cognitive functions quadrant](/3_resources/personality/attachments/Pasted%20image%2020230207145156.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207145231.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207145302.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207145542.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207145646.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207145728.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207145847.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207150006.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207150213.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207150247.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207150440.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153111.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153257.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153417.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153449.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153508.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153533.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153618.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207153648.png)
+![alt](/3_resources/personality/attachments/Pasted%20image%2020230207161213.png)
