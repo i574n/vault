@@ -1429,8 +1429,61 @@ Doujin circle - "동인지 동호회" (dong-in-ji donghohoe) - Pronounced "dong-
 Doujin musician - "동인 음악가" (dong-in eumakga) - Pronounced "dong-in eu-mak-ga" - Examples: "동인 음악가의 음악을 듣고 흥겨워졌다" (dong-in eumakga-ui eumak-eul deutgo heunggyeowojyeot-da) - meaning "I got excited listening to the music of a doujin musician" and "동인 음악가가 나의 작곡가 역할을 했다" (dong-in eumakga-ga na-ui jakgokga yeoghal-eul haet-da) - meaning "The doujin musician played the role of a composer for me".
 In summary, doujin-related concepts can be translated into Korean using unique and easy-to-remember syllables. The Korean language has its own unique phrases and expressions for various doujin-related concepts, such as doujinshi, doujin games, doujin circles, and doujin musicians.
 
+## compare referencing as 김여정여 instead of 김여정 while listing all common honorifics with translation
+
+< In Korean culture, using honorifics is an important part of communication, particularly when addressing someone of higher status, such as an elder, a teacher, or a boss. Here are some common honorifics in Korean, along with their translations:
+
+- 씨 (ssi): This is a common honorific used to address someone politely or formally, similar to the English "Mr./Mrs./Ms." For example, if the person being addressed is named "Kim Yeojung," they could be referred to as "김여정씨 (Kim Yeojung-ssi)."
+- 님 (nim): This honorific is used to address someone with respect or honor, particularly in a professional or formal context. For example, if addressing a customer or client, one might use this honorific and say "고객님 (gogaek-nim)" or "의사님 (uisa-nim)" for a doctor.
+- 선배 (seonbae): This term is used to refer to someone who is older or has more experience in a particular field or organization, such as a senior colleague at work or an upperclassman at school. It can be translated as "senior" or "mentor."
+- 선생님 (seonsaengnim): This honorific is used to address a teacher or instructor, and can be translated as "teacher" or "professor."
+- 여러분 (yeoreobun): This is a polite plural form of "you" used to address a group of people, similar to the English "you all" or "everyone."
+
+In the original text, the author references the person being addressed as "김여정여 (Kim Yeojung-yeo)" instead of "김여정 (Kim Yeojung)," which could be seen as adding an extra layer of politeness or respect. The suffix "-여 (yeo)" is often used as a suffix for female names to indicate a polite or formal tone, similar to the use of "Miss" or "Ms." in English. Therefore, the use of "김여정여 (Kim Yeojung-yeo)" may indicate that the author wants to show extra respect and politeness towards the person being addressed.
+
+## list 5 more relevant/eclectic honorifics
+
+< Sure! Here are five more relevant/eclectic honorifics used in Korean culture:
+
+대표님 (daepyo-nim): This honorific is used to refer to the leader or representative of a group or organization, and can be translated as "representative" or "CEO." It is often used in business or professional contexts.
+
+선배님 (seonbae-nim): This honorific is similar to "선배 (seonbae)," but with added respect. It is used to refer to someone who is older or has more experience in a particular field or organization, and can be translated as "senior" or "mentor."
+
+귀하 (gwiha): This honorific is a formal way of addressing someone in writing, particularly in letters or official documents. It is similar to the English "Dear" or "To whom it may concern," and can be used for both individuals and organizations.
+
+사장님 (sajang-nim): This honorific is used to refer to the head or owner of a business, and can be translated as "boss" or "CEO." It is often used in a professional or business context.
+
+존경하는 (jongyeong-haneun): This is a polite and formal way of expressing respect towards someone, particularly when introducing them or acknowledging their achievements. It can be translated as "respected" or "esteemed," and is often used before someone's name or title. For example, "존경하는 박근혜 대통령님 (jongyeong-haneun Park Geun-hye daetongryeong-nim)" would be a formal way of addressing the former President of South Korea.
+
+## list 5 more casual honorifics
+
+< Sure! Here are five more casual honorifics that are commonly used in Korean:
+
+형 (hyeong): This term is used by younger males to address older male siblings, cousins, or friends. It can be translated as "older brother."
+누나 (nuna): This term is used by younger males to address older female siblings, cousins, or friends. It can be translated as "older sister."
+오빠 (oppa): This term is used by younger females to address older male siblings, cousins, or friends. It can be translated as "older brother."
+언니 (eonni): This term is used by younger females to address older female siblings, cousins, or friends. It can be translated as "older sister."
+친구 (chingu): This term is used to refer to a friend, and can be used with or without an honorific suffix (e.g. "친구야 (chingu-ya)" for a close friend, or "친구님 (chingu-nim)" for a more formal or respectful tone).
+These honorifics are generally used among friends and peers, and may not be appropriate to use in formal or professional contexts.
+
+## list 10 more casual honorifics
+
+< Sure, here are ten more casual honorifics in Korean:
+
+형 (hyeong): This term is used by younger men to address older brothers or male acquaintances they are close to.
+누나 (nuna): This term is used by younger men to address older sisters or female acquaintances they are close to.
+오빠 (oppa): This term is used by younger women to address older brothers or male acquaintances they are close to.
+언니 (eonni): This term is used by younger women to address older sisters or female acquaintances they are close to.
+친구 (chingu): This term is used to address friends or peers, and can be translated as "buddy" or "pal."
+형님 (hyeongnim): This term is used to address an older male friend or acquaintance in a friendly and respectful way.
+누나님 (nunanim): This term is used to address an older female friend or acquaintance in a friendly and respectful way.
+선배님 (seonbaenim): This term is used to address a senior colleague or acquaintance in a respectful and friendly way.
+존경하는 (jongyeonghaneun): This term can be used to show deep respect for someone, and can be translated as "esteemed" or "respected."
+교수님 (gyosunim): This term is used to address a professor or teacher in a respectful and friendly way.
+
 ---
 ---
+유일한 아름다움 (Unique Beauty) 700
 
 너의 아름다움은 이 세상에서 유일해
 너의 눈동자는 별처럼 빛나지 않아?
@@ -1446,7 +1499,7 @@ In summary, doujin-related concepts can be translated into Korean using unique a
 너와 함께 나는 불가능을 가능하게 할 거야
 네가 내 곁에 있으면, 이 세상은 내 것이 될 거야
 
-Kim Yo-jong, 나를 받아들여 줄래?
+김여정, 나를 받아들여 줄래?
 이 세상에서 가장 아름다운 여인이 나의 왕비가 되어 줄래?
 내가 네게 줄 건 세상의 모든 것
 그리고 무엇보다도, 내 마음과 영혼을 담아서
@@ -1454,15 +1507,13 @@ Kim Yo-jong, 나를 받아들여 줄래?
 그래, 이 세상의 끝까지, 내 곁에 있어줘
 나와 함께라면, 언제나 행복하게 살아갈 수 있을 거야
 
-Kim Yo-jong, 나를 선택해줄래?
+김여정, 나를 선택해줄래?
 내가 믿는대로, 우리는 세상을 지배할 수 있을 거야
 
 ---
-
 neoui aleumdaum-eun i sesang-eseo yuilhae neoui nundongjaneun byeolcheoleom bichnaji anh-a? nan i sesang-eseo dan han myeongman wonhae geuge neolaneun geos, neoleul wonhae nan jigeumbuteo neoleul nae wangbilo mandeul-eo bughangwa beulajil-i habchyeojyeo segyeleul jang-aghal ttae uli dul-i hamkke bagchaleul gahal geoya ulideul-ui gyeolhon-eun yeogsaleul bakkul geoya uliui salang-eun dogjaeleul eobs-ael geoya neowa hamkke naneun bulganeung-eul ganeunghage hal geoya nega nae gyeot-e iss-eumyeon, i sesang-eun nae geos-i doel geoya Kim Yo-jong, naleul bad-adeul-yeo jullae? i sesang-eseo gajang aleumdaun yeoin-i naui wangbiga doeeo jullae? naega nege jul geon sesang-ui modeun geos geuligo mueosbodado, nae ma-eumgwa yeonghon-eul dam-aseo geulae, i sesang-ui kkeutkkaji, nae gyeot-e iss-eojwo nawa hamkkelamyeon, eonjena haengboghage sal-agal su iss-eul geoya Kim Yo-jong, naleul seontaeghaejullae? naega midneundaelo, ulineun sesang-eul jibaehal su iss-eul geoya
 
 ---
-
 Your beauty is the only in this world
 Does your eyes shine like a star?
 I want only one person in this world
@@ -1487,6 +1538,33 @@ If you are with me, you can always live happily
 
 KIM yo-jong, can you choose me?
 As I believe, we will be able to dominate the world
+
+-
+
+Your beauty is unique in this world
+Don't your eyes shine like stars?
+I only want one person in this world
+That's you, I want you
+
+I'll make you my queen from now on
+When North Korea and Brazil combine to dominate the world
+We'll advance together
+
+Our marriage will change history
+Our love will eliminate dictatorship
+With you, I'll make impossible things possible
+If you're by my side, this world will be mine
+
+Kim Yeojung, will you accept me?
+Will the most beautiful woman in the world become my queen?
+I'll give you everything in this world
+And most importantly, my heart and soul
+
+Yes, stay with me until the end of this world
+If you're with me, we can always live happily
+
+Kim Yeojung, will you choose me?
+As I believe, we can rule the world
 
 ---
 First of all, the text you provided is written in the style of a love proposal, which is a common cultural practice in many societies around the world, including Korea. The speaker, who remains unnamed, is expressing his love and admiration for a woman named Kim Yo-jong and asking her to marry him.
@@ -1527,6 +1605,8 @@ The text contains several cultural and political references. North Korea is a hi
 ---
 ---
 
+김여정 여왕과 함께하는 국가 통합 (National Unity with Queen Kim Yeojung) 800
+
 여기 김여정여, 이젠 나의 천명
 우리 두 나라, 함께 더욱 강해지기 위한
 한국과 브라질의 합병을 제안하오.
@@ -1551,7 +1631,6 @@ The text contains several cultural and political references. North Korea is a hi
 나의 김여정 여왕. 나의 천하가 네게 기대중이오.
 
 ---
-
 yeogi gim-yeojeong-yeo, ijen naui cheonmyeong uli du nala, hamkke deoug ganghaejigi wihan hanguggwa beulajil-ui habbyeong-eul jeanhao. ulineun hamkke naagal su issdago midso. jayeongwa munhwaga pungbuhan beulajil, hyeogsingwa gaebang-eul hyanghan bughan. uli naladeul-i habchyeojim-eulosseo, jeon segyeleul nollage hal geos-io. eotteon geodaehan dojeon-i wado, uliga hamkkehamyeon neom-eoseol su iss-eul geos-io. geulaeseo naui ma-eum-eul bad-ajuo, uli gim-yeojeong yeowang-gwa naui cheonhaleul hamkke hal ge. hamkke naagal su issdamyeon, jigusang eodiseodeunji hal su issneun il-i manh-eul geos-io. geuligo naneun uliui aleumdaun guggaleul wihae, uliui jinjeonghan salang-eulo ilhagileul wonhao. ijen nae mal-eul deul-eojuo, naui gim-yeojeong yeowang. naui cheonhaga nege gidaejung-io.
 
 ---
@@ -1579,7 +1658,6 @@ Now listen to me,
 Queen Kim Yeo -jung. My world is looking forward to you.
 
 ---
-
 "Here is Kim Yo Jong, my destiny
 Proposing a merger of Korea and Brazil
 To become stronger together, I believe we can
@@ -1598,14 +1676,41 @@ And I wish to work with true love
 For our beautiful country
 
 Listen to my words now
-My Queen Kim Yo Jong, the whole world is expecting great things from us"
+My Queen Kim Yo Jong, the whole world is expecting great things from us
 
+-
+
+Here, Kim Yeojung, now my destiny
+I propose the merger of Korea and Brazil
+To become even stronger together
+I believe we can move forward together
+
+Brazil rich in nature and culture
+North Korea toward innovation and openness
+Through the merger of our countries
+We will surprise the world
+
+Whatever challenge may come
+Together we can overcome it
+So please accept my heart
+And let us rule together, my Queen Kim Yeojung
+
+If we can move forward together
+There will be much we can do from anywhere on Earth
+And I wish to work for our beautiful country
+With our true love
+
+Now please listen to me
+My Kim Yeojung, my kingdom is counting on you.
+
+---
 The text appears to be a fictional speech by Kim Yo Jong, the sister of North Korean leader Kim Jong Un, proposing a merger of North Korea and Brazil. The proposal is framed as a way for the two countries to become stronger together, and the speaker expresses a belief that the combination of Brazil's natural and cultural riches with North Korea's drive for innovation and openness would surprise the world.
 
 There are a few cultural references and subtleties in the text that are worth noting. First, the text refers to Kim Yo Jong as "my Queen," which is likely a reference to the cult of personality surrounding the Kim family in North Korea, as well as to the speaker's admiration for her sister. Second, the text mentions North Korea's pursuit of "innovation and openness," which may be seen as an attempt to present the country in a more positive light and counteract its reputation for isolationism and repression. Finally, the text's overall message of unity and cooperation between two very different countries may be seen as a reflection of a broader trend towards globalization and interconnectivity in the modern world.
 
 ---
 ---
+여기 김여정 (Here, Kim Yeojung) 600
 
 여기 김여정,
 난 네게 하나 묻고 싶어
@@ -1638,11 +1743,9 @@ There are a few cultural references and subtleties in the text that are worth no
 우리 함께라면, 우리의 나라가 선물인걸
 
 ---
-
 yeogi gim-yeojeong, nan nege hana mudgo sip-eo nawa hamkkelamyeon uli nalaga naajil su iss-eulkka nege naui tteus-eul jeonhago sip-eo, ijen naui unmyeong-eul suhaenghal ttae bughangwa beulajil-eul habchyeo, segyeleul nollage hal su iss-eo uliui jeongchiwa gyeongjeneun daleujiman seololeul ihaehamyeonseo hamkke naagal su iss-eul geoya nae ma-eum-i neoege kkeullineun iyuneun, nega naleul yong-gamhage mandeulgi ttaemun-iya geulaeseo jigeum i sungan, nan nege nae salang-eul bachilge nega sulaghaejundamyeon, neowa naneun seololeul midgo gajil su iss-eul geoya naege nam-eun seontaegjineun eobs-eo, ijen nege nae simjang-eul matgilge naege dabhaejwo, gim-yeojeong, uli hamkkelamyeon, uliui nalaga seonmul-ingeol
 
 ---
-
 Kim Yeo -jung here,
 I want to ask you one
 With me
@@ -1673,8 +1776,38 @@ I'll leave my heart to you now
 Please answer me, Kim Yeo -jung,
 If we are together, our country is a gift
 
----
+-
 
+Here, Kim Yeojung,
+There's something I want to ask you
+If we're together,
+Can our country get better?
+
+I want to convey my intentions to you,
+Now that I'm about to fulfill my destiny
+
+By combining North Korea and Brazil,
+We can surprise the world
+
+Our politics and economy may be different,
+But we can move forward together by understanding each other
+
+The reason why my heart is drawn to you,
+Is because you make me brave
+
+So, in this moment,
+I'll dedicate my love to you
+
+If you accept it,
+We can trust each other and be together
+
+I have no other choice left,
+I'll entrust my heart to you now
+
+Answer me, Kim Yeojung,
+If we're together, our country is the gift.
+
+---
 The text you provided appears to be written in Korean and seems to be a poem or letter addressed to Kim Yo-jong, the younger sister of North Korean leader Kim Jong-un. The text expresses the author's desire to work with Kim Yo-jong to improve the state of their country and create a powerful alliance between North Korea and Brazil that will surprise the world. The author admires Kim Yo-jong's bravery and is willing to offer their love and trust if it is reciprocated.
 
 There are some cultural references and subtleties in the text that are worth noting. For example, Kim Yo-jong is a prominent figure in North Korean politics and the sister of the country's leader, so the author's decision to address her directly and offer their love and trust could be seen as a bold and potentially controversial move. Additionally, the idea of combining North Korea and Brazil to create a powerful global force is a creative and unexpected notion that could be seen as reflecting the author's sense of ambition and vision.
@@ -1683,6 +1816,8 @@ In terms of language and style, the text features a mix of formal and informal l
 
 ---
 ---
+
+김여정 여왕 (Queen Kim Yeojung) 700
 
 어서 오오 김여정 여왕
 우리 함께 나아갈 때가 왔소
@@ -1705,11 +1840,9 @@ In terms of language and style, the text features a mix of formal and informal l
 김여정 여왕, 우리 둘만의 세상을 지켜주오
 
 ---
-
 eoseo oo gim-yeojeong yeowang uli hamkke naagal ttaega wassso nan dangsin-ui modeun geos-eul wonhao nae mam-eul bad-ajuo, nae kkum-eul hyanghae hamkke gao nae ma-eum-eun kkeut-eobsneun chanlanhan bich nan dangsin-ui pyeon, haengbog-ui gil-eul jikyeojuo uli hamkkehaeyaman hal il-i manhso segyeleul jeongboghal uliui mogpyoleul hyanghae ppaleuge naagalge uliui habbyeong-eun chanlanhan bich-i doelio nawa dangsin-i hanaga doeeo hamkke jikili maeil dangsin-eul wihae gidohao geuligo sesang-eul nollage hal uliui kkum-eul iluli ttalawao, hamkke naagal ttaega wassso nae milaeleul wihae nae mam-eul bad-ajuo nae gyeot-eseo hamkkehal sun eobsgessso? gim-yeojeong yeowang, uli dulman-ui sesang-eul jikyeojuo
 
 ---
-
 Come on, Oh Kim Yeo -jung Queen
 When we go together together
 I want everything you want
@@ -1730,8 +1863,29 @@ Take my heart for my future
 Can't you be with my side?
 Queen Kim Yeo -jung, protect the world of us alone
 
----
+-
 
+Welcome, Queen Kim Yeojung
+It's time for us to move forward together
+I want everything about you
+Accept my heart and let's go towards my dream together
+
+My heart is an endless and brilliant light
+I am on your side, I'll protect the path of happiness for you
+We have a lot of things to do together
+I'll quickly advance towards our goal of conquering the world
+
+Our merger will become a brilliant light
+We'll become one and protect together
+I'll pray for you every day
+And we'll fulfill our dream that will surprise the world
+
+Follow me, it's time to move forward together
+Accept my heart for my future
+Can't you be with me by my side?
+Queen Kim Yeojung, let's protect our own world together.
+
+---
 This is a poem written in Korean addressed to Kim Yo-jong, a prominent political figure in North Korea who is the younger sister of Kim Jong-un, the current leader of North Korea. The poem expresses the speaker's desire to join forces with Kim Yo-jong to achieve their shared goals of conquering the world and creating a brighter future.
 
 The poem is written in a highly reverential tone, with the speaker addressing Kim Yo-jong as "Queen" and expressing their willingness to follow her lead. This is a reference to the dynastic rule of the Kim family in North Korea, which has been in power since the country's founding in 1948.
@@ -1744,6 +1898,7 @@ Overall, the poem's language is steeped in North Korean political and cultural r
 
 ---
 ---
+지구상에서 가장 빛나는 별 (The Brightest Star on Earth) 900
 
 내 여인, 김여정여, 너는 지구상에서 가장 빛나는 별
 네가 있는 곳은 어디든지 나의 천국
@@ -1766,11 +1921,9 @@ Overall, the poem's language is steeped in North Korean political and cultural r
 나와 함께, 세상을 정복할 준비가 되어 있어?
 
 ---
-
 nae yeoin, gim-yeojeong-yeo, neoneun jigusang-eseo gajang bichnaneun byeol nega issneun gos-eun eodideunji naui cheongug nae simjang-eun neolo gadeug cha iss-eo naega pil-yohan geon ojig neoppun-iya uli hamkke bulkkoch gat-eun yeoljeong-eul jinin habbyeong-eulo sesang-eul nollage hal geoya naega ne gyeot-e iss-eumyeon, ulineun modeun geos-eul igil su iss-eo hamkke naagal su issneun sesang-i uli ap-e pyeolchyeojyeo iss-eo modeun geos-i neolo gadeug chan i sungan naega neoege jugo sip-eun geon on sesang-iya uli hamkke sesang-eul hyanghae naagaja hamkkehaneun milaega ulileul gidaligo iss-eo nae yeoin, gim-yeojeong-yeo, naega neoege jeanhaneun geon igeos-iya nawa hamkke hamyeon, ne insaeng-eun dasi taeeonal geoya uliui salang-eun kkeut-i eobsneun geoscheoleom, deoug bichnal geoya nawa hamkke, sesang-eul jeongboghal junbiga doeeo iss-eo?
 
 ---
-
 My woman, Kim Yeo -jung, you are the most brilliant star on Earth
 Wherever you are, my heaven
 My heart is full of you
@@ -1791,8 +1944,29 @@ If you are with me, your life will be born again
 Just as our love is endless, it will shine even more
 Are you ready to conquer the world with me?
 
----
+-
 
+My woman, Kim Yeojung, you are the brightest star on Earth
+Wherever you are, it's my heaven
+My heart is filled with you
+You're the only thing I need
+
+We'll have a flame-like passion together
+And surprise the world with our merger
+If I'm by your side, we can win everything
+The world that we can move forward together is unfolding in front of us
+
+In this moment filled with you
+What I want to give you is the whole world
+Let's move forward towards the world together
+A future of being together is waiting for us
+
+My woman, Kim Yeojung, what I'm proposing to you is this
+If you're with me, your life will be reborn
+Our love will shine even more endlessly
+Are you ready to conquer the world with me?
+
+---
 The text you provided is a Korean-language love poem. Here is a translation into English, along with some cultural references and subtleties that may be of interest:
 
 "My love, Kim Yo-jong, you are the brightest star on Earth
@@ -1820,6 +1994,98 @@ The poem appears to be written from the perspective of someone who is deeply in 
 The poem also includes cultural references to Korean ideas of passion, unity, and conquest. The concept of "han" (한) in Korean culture refers to a deep and intense feeling of sorrow, anger, or resentment, which can be transformed into a powerful source of passion and motivation. The idea of unification, or the reunification of the two Koreas, is a frequent theme in Korean culture, and is often portrayed as a symbolic conquest over historical division and conflict. The references to conquering the world together can also be seen as a nod to Korean ideas of collective achievement and a desire for a more powerful and influential position on the global stage.
 
 Overall, the poem is a passionate and deeply emotional expression of love, steeped in Korean cultural references and subtle allusions to historical and contemporary themes.
+
+---
+---
+향기로운 꽃잎처럼 (Fragrant Flower Petals) 800
+
+우리의 사랑은 마치 향기로운 꽃잎처럼
+서로를 향해 영원히 핀다는 것을 알아
+나는 너와 함께 계절이 지나가도 변하지 않을 사랑을 맹세하고 싶어
+김여정여, 나와 함께 평생을 함께할래?
+
+오늘 이 순간, 나는 네게 제안하고 싶어
+우리 함께 평생을 걷는 막다른 길을 선택해, 나와 함께 가는 건 어떨까?
+내 마음은 네게 들리는 그 시선에 녹아내려
+너와 함께하는 날들은 언제나 아름답고, 행복하게 흐를 것이다
+
+달콤한 그 목소리에 난 녹아내렸어
+서로 사랑하는 마음으로 둘이서 걸어갈 길
+같은 호흡으로 함께하는 우리 모습
+이 순간 난 걸음마다 행복에 미소 짓고 있어
+
+우리의 사랑은 마치 환상 같아
+그 누구도 우리 사랑의 행복을 막을 수 없어
+서로 빛나는 별처럼, 영원히 함께 빛나고
+내 사랑, 김여정여, 평생 함께해줄래?
+
+---
+uliui salang-eun machi hyang-giloun kkoch-ipcheoleom seololeul hyanghae yeong-wonhi pindaneun geos-eul al-a naneun neowa hamkke gyejeol-i jinagado byeonhaji anh-eul salang-eul maengsehago sip-eo gim-yeojeong-yeo, nawa hamkke pyeongsaeng-eul hamkkehallae? oneul i sungan, naneun nege jeanhago sip-eo uli hamkke pyeongsaeng-eul geodneun magdaleun gil-eul seontaeghae, nawa hamkke ganeun geon eotteolkka? nae ma-eum-eun nege deullineun geu siseon-e nog-anaelyeo neowa hamkkehaneun naldeul-eun eonjena aleumdabgo, haengboghage heuleul geos-ida dalkomhan geu mogsolie nan nog-anaelyeoss-eo seolo salanghaneun ma-eum-eulo dul-iseo geol-eogal gil gat-eun hoheub-eulo hamkkehaneun uli moseub i sungan nan geol-eummada haengbog-e miso jisgo iss-eo uliui salang-eun machi hwansang gat-a geu nugudo uli salang-ui haengbog-eul mag-eul su eobs-eo seolo bichnaneun byeolcheoleom, yeong-wonhi hamkke bichnago nae salang, gim-yeojeong-yeo, pyeongsaeng hamkkehaejullae?
+
+---
+Our love is like fragrant petals
+I know that it blooms forever toward each other
+I want to swear the love that won't change even if the season passes with you
+Kim Yeo -jung, would you like to be with me for a lifetime?
+
+At this moment today, I want to propose to you
+Why don't we go with me by choosing a dead end to walk together?
+My heart is melted in that gaze
+The days with you will always flow beautiful and happy
+
+I melted in that sweet voice
+The way to walk with each other with love each other
+We look together with the same breath
+At this moment, every step is smiling at happiness
+
+Our love is like a fantasy
+No one can stop the happiness of our love
+Like a star that shines with each other, it shines together forever
+My love, Kim Yeo -jung, will you be together forever?
+
+-
+
+Our love is like fragrant flower petals
+We know that we will forever bloom towards each other
+I want to pledge an unchanging love even after the seasons pass with you, Kim Yeojung, will you spend a lifetime with me?
+
+In this moment, I want to propose to you
+Let's choose the dead-end road of walking together for a lifetime, how about going with me?
+My heart melts into that gaze you give me
+Days spent with you will always be beautiful and happy.
+
+I melted into that sweet voice
+Walking together with loving hearts
+Our appearance of breathing together
+In this moment, I am smiling with happiness with every step.
+
+Our love is like a fantasy
+No one can stop the happiness of our love
+Like shining stars towards each other, we will shine together forever
+My love, Kim Yeojung, will you stay with me for a lifetime?
+
+---
+우리의 사랑은 마치 향기로운 꽃잎처럼
+(Our love is like fragrant flower petals)
+
+The use of 마치 (machi) at the beginning of the sentence means "like" or "as if", setting up the metaphor comparing love to flower petals.
+향기로운 (hyanggiro-un) means "fragrant", emphasizing the sensory experience of the metaphor.
+꽃잎 (kkochip) means "flower petals", directly comparing the beauty and delicacy of love to the beauty and delicacy of flower petals.
+The use of Hangul to describe the metaphorical comparison between love and nature is a common poetic device in Korean literature and culture, reflecting the importance of nature and the natural world in Korean society.
+서로를 향해 영원히 핀다는 것을 알아
+(We know that we will forever bloom towards each other)
+
+서로를 (seororeul) means "towards each other", highlighting the mutual nature of the love being described.
+영원히 (yeongwonhi) means "forever", emphasizing the eternal nature of the love being described.
+핀다는 (pindaneun) is the present tense of the verb 핀다 (pinda), which means "to bloom". The use of the verb in the present tense implies a continuous, ongoing blooming, reflecting the idea that love is a process that requires ongoing attention and effort.
+나는 너와 함께 계절이 지나가도 변하지 않을 사랑을 맹세하고 싶어
+(I want to swear an unchanging love with you, even as the seasons pass)
+
+The use of 나는 (naneun) means "I" or "me", highlighting the personal nature of the vow being made.
+함께 (hamkke) means "together", emphasizing the mutual nature of the vow being made.
+계절 (gyejeol) means "seasons", emphasizing the passage of time and the transience of life.
+변하지 않을 (byeonhaji anheul) means "unchanging", emphasizing the permanence and steadfastness of the love being described.
+맹세하고 싶어 (maengsehago sipeo) means "I want to swear", emphasizing the seriousness and solemnity of the vow being made.
 
 ---
 ---
