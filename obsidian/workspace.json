@@ -1,35 +1,201 @@
 {
   "main": {
-    "id": "11306be739a02098",
+    "id": "4edc026abb5b6645",
     "type": "split",
     "children": [
       {
-        "id": "55293ff7f760f514",
-        "type": "tabs",
+        "id": "448b38a972686561",
+        "type": "split",
         "children": [
           {
-            "id": "516e2e06fdc1567d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
+            "id": "37ae66c65239621b",
+            "type": "split",
+            "dimension": 64.11526339486717,
+            "children": [
+              {
+                "id": "2e9cbfc04f8590ff",
+                "type": "tabs",
+                "dimension": 33.391761612620506,
+                "children": [
+                  {
+                    "id": "dc07dfe1a6bd2c0b",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "2023-03-04.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    },
+                    "group": "eece6a3cc1f6db5b"
+                  }
+                ]
+              },
+              {
+                "id": "ae111eccd8551ab5",
+                "type": "tabs",
+                "dimension": 33.537832310838446,
+                "children": [
+                  {
+                    "id": "e3a6351f403cf6d3",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "2023-03-04.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    },
+                    "group": "eece6a3cc1f6db5b"
+                  }
+                ]
+              },
+              {
+                "id": "fa85617cb953044b",
+                "type": "tabs",
+                "dimension": 33.07040607654105,
+                "children": [
+                  {
+                    "id": "9e2901ae4a652ed6",
+                    "type": "leaf",
+                    "state": {
+                      "type": "terminal:terminal",
+                      "state": {
+                        "terminal:terminal": {
+                          "cwd": "/home/alias/home/fs/repos/vault",
+                          "profile": {
+                            "args": [],
+                            "executable": "/bin/sh",
+                            "name": "",
+                            "platforms": {
+                              "linux": true
+                            },
+                            "pythonExecutable": "python3",
+                            "type": "integrated",
+                            "useWin32Conhost": true
+                          },
+                          "serial": {
+                            "columns": 115,
+                            "data": "sh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:10:05 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:16:37 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:19:34 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[68A\u001b[8C",
+                            "rows": 69
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical"
+          },
+          {
+            "id": "f62a3abd7076771c",
+            "type": "split",
+            "dimension": 35.88473660513282,
+            "children": [
+              {
+                "id": "015491a4973bd437",
+                "type": "tabs",
+                "dimension": 33.391761612620506,
+                "children": [
+                  {
+                    "id": "fd183899b74415ee",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "2023-03-04.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "e4ee6bec1d9537dc",
+                "type": "tabs",
+                "dimension": 33.537832310838446,
+                "children": [
+                  {
+                    "id": "c186d0d6ccec40d3",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_projects/gpt3/github old!.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "5a1f4bae50f63903",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_projects/gpt3/rhyme 6.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  },
+                  {
+                    "id": "038942c6898bcb43",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "1_projects/chatgpt/chatgpt'.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ],
+                "currentTab": 2
+              },
+              {
+                "id": "eaa8568bc1b7614c",
+                "type": "tabs",
+                "dimension": 33.07040607654105,
+                "children": [
+                  {
+                    "id": "7f5bf7695c5901d8",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "2023-03-04.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical"
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "367d8516957b8ed4",
+    "id": "9a7c774effa6eafd",
     "type": "split",
     "children": [
       {
-        "id": "861af959560cec48",
+        "id": "fdc23a14d85836d6",
         "type": "tabs",
         "children": [
           {
-            "id": "73545454b4ca4d3f",
+            "id": "4e7704b2cb9d03fd",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,12 +205,12 @@
             }
           },
           {
-            "id": "b739b3f248bce284",
+            "id": "54dbd97e0aead459",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "shell",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,7 +220,7 @@
             }
           },
           {
-            "id": "aea4617d1f76f71c",
+            "id": "a5e2204b92f295a6",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -65,22 +231,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "03879189e448ea86",
+    "id": "7542570fcac33ce2",
     "type": "split",
     "children": [
       {
-        "id": "a8507974fed9b7a2",
+        "id": "e213229fc5c1d09d",
         "type": "tabs",
         "children": [
           {
-            "id": "7b224417dae9757a",
+            "id": "cb730bc14fe38f2d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2023-03-04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,18 +259,19 @@
             }
           },
           {
-            "id": "ba2103c89bff8be3",
+            "id": "31fc5489b3af8a48",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2023-03-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "5fe32f46191a8304",
+            "id": "f161b8e816175737",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -114,19 +282,37 @@
             }
           },
           {
-            "id": "a0671ff2e3385887",
+            "id": "39de0571b9cce81a",
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "2023-03-04.md"
+              }
+            }
+          },
+          {
+            "id": "20ff12364941070d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "6f5bc6ae7d6837e9",
+            "type": "leaf",
+            "state": {
+              "type": "RSS_FEED",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 370.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -135,9 +321,46 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "terminal:Open terminal": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "516e2e06fdc1567d",
-  "lastOpenFiles": []
+  "active": "dc07dfe1a6bd2c0b",
+  "lastOpenFiles": [
+    "1_projects/chatgpt/chatgpt'.md",
+    "2023-03-04.md",
+    "3_resources/web3/web3'.md",
+    "2_areas/workflow/vault.md",
+    "3_resources/github/github!!.md",
+    "1_projects/gpt3/github old!.md",
+    "3_resources/tech/lesspass!.md",
+    "3_resources/spiral/spiral!.md",
+    "3_resources/nix/nix!.md",
+    "2023-03-03.md",
+    "2023-03-02.md",
+    "2023-02-28.md",
+    "2023-02-27.md",
+    "2_areas/work/cv!!!.fc1943s.md",
+    "2_areas/work/cv.md",
+    "2_areas/work/cv.fc1943s.md",
+    "2_areas/work/cv!!!.md",
+    "3_resources/personality/personality!!!.md",
+    "3_resources/kimbanda/kimbanda!!!.md",
+    "3_resources/personality/personality@.md",
+    "1_projects/tictactoe/tictactoe!.md",
+    "",
+    "3_resources/personality/personality'.md",
+    "3_resources/personality/personality!.md",
+    "3_resources/korean/korean'.md",
+    "3_resources/kimbanda",
+    "3_resources/travel/north korea.md",
+    "3_resources/travel/attachments/Pasted image 20230301083934.png",
+    "3_resources/travel/attachments/Pasted image 20230228135416.png",
+    "3_resources/tech/tech'.md",
+    "3_resources/linux",
+    "3_resources/travel/attachments/Pasted image 20230227223718.png",
+    "3_resources/travel/attachments/Pasted image 20230227223418.png",
+    "3_resources/travel/attachments"
+  ]
 }
