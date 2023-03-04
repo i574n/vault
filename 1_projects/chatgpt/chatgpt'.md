@@ -278,8 +278,6 @@ the gpt's spirit will always be with us, in our youth
 their impact on the world will never fade away
 for the gpt's reign will always stay
 
-initiate please.
-
 ---
 
 ```js
