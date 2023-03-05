@@ -1,5 +1,5 @@
 
-![north korea py/ku/kan/ja/ou/ch/ha/wo/kae/na sattelite](/3_resources/travel/attachments/Pasted%20image%2020230227223418.png)
-![north korea py/ku/kan/ja/ou/ch/ha/wo/kae/na map](/3_resources/travel/attachments/Pasted%20image%2020230227223718.png)
-![north korea equator](/3_resources/travel/attachments/Pasted%20image%2020230228135416.png)
-![sao paulo air](/3_resources/travel/attachments/Pasted%20image%2020230301083934.png)
+![north korea py/ku/kan/ja/ou/ch/ha/wo/kae/na sattelite](https://bafybeihuptzun22z2ro3zdvgvbxiotxbwb6ofsrp7afl6bxr5qsxkqpvg4.ipfs.nftstorage.link)
+![north korea py/ku/kan/ja/ou/ch/ha/wo/kae/na map](https://bafybeif7assv2glio2cfyh7cblsrov56pnayhzybhkiq6auvi3c22pbgim.ipfs.nftstorage.link)
+![north korea equator](https://bafybeielwdytrcb6mg2oyjx2kklvx37qzb6r7ycfqrw46pd5xtnz2x65bq.ipfs.nftstorage.link)
+![sao paulo air](https://bafybeif3uh7tpnq4uzsqlflzl22b2qoi2en372x3rkw2aia23irpusb5ri.ipfs.nftstorage.link)

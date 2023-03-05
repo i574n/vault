@@ -1,1 +1,2 @@
-![tarot illustration jpg high resolution adobe stock](/3_resources/tarot/attachments/Pasted%20image%2020230209232605.png)
+![tarot illustration jpg high resolution adobe stock](https://bafybeiegbxyisowd644h6ylqubldoazur4tkmptf2u53exqtx3bv2pfdoa.ipfs.nftstorage.link)
+
