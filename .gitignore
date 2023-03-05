@@ -6,3 +6,4 @@
 .obsidian/plugins/**/rss-reader/data.json
 
 *.bundle
+.*.md
