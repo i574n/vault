@@ -15,7 +15,7 @@
               {
                 "id": "2e9cbfc04f8590ff",
                 "type": "tabs",
-                "dimension": 33.391761612620506,
+                "dimension": 36.273364485981304,
                 "children": [
                   {
                     "id": "dc07dfe1a6bd2c0b",
@@ -25,7 +25,7 @@
                       "state": {
                         "file": "2023-03-04.md",
                         "mode": "source",
-                        "source": false
+                        "source": true
                       }
                     },
                     "group": "eece6a3cc1f6db5b"
@@ -35,7 +35,7 @@
               {
                 "id": "ae111eccd8551ab5",
                 "type": "tabs",
-                "dimension": 33.537832310838446,
+                "dimension": 33.469626168224295,
                 "children": [
                   {
                     "id": "e3a6351f403cf6d3",
@@ -53,9 +53,9 @@
                 ]
               },
               {
-                "id": "fa85617cb953044b",
+                "id": "b6216de095427c59",
                 "type": "tabs",
-                "dimension": 33.07040607654105,
+                "dimension": 30.257009345794394,
                 "children": [
                   {
                     "id": "9e2901ae4a652ed6",
@@ -77,8 +77,8 @@
                             "useWin32Conhost": true
                           },
                           "serial": {
-                            "columns": 115,
-                            "data": "sh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:10:05 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:16:37 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:19:34 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[68A\u001b[8C",
+                            "columns": 104,
+                            "data": "sh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:10:05 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:16:37 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:19:34 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 11:04:58 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 21:47:47 GMT-0300 (Horário Padrão de Brasília)\r\n\r\nsh-5.2# \r\n * Restored history at Sat Mar 04 2023 21:48:35 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[66A\u001b[8C",
                             "rows": 69
                           }
                         }
@@ -98,7 +98,7 @@
               {
                 "id": "015491a4973bd437",
                 "type": "tabs",
-                "dimension": 33.391761612620506,
+                "dimension": 36.24415887850467,
                 "children": [
                   {
                     "id": "fd183899b74415ee",
@@ -117,7 +117,7 @@
               {
                 "id": "e4ee6bec1d9537dc",
                 "type": "tabs",
-                "dimension": 33.537832310838446,
+                "dimension": 33.52803738317757,
                 "children": [
                   {
                     "id": "c186d0d6ccec40d3",
@@ -125,7 +125,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "1_projects/gpt3/github old!.md",
+                        "file": "1_projects/gpt3/gpt3.html.md",
                         "mode": "source",
                         "source": false
                       }
@@ -149,7 +149,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "1_projects/chatgpt/chatgpt'.md",
+                        "file": "1_projects/chatgpt/chatgpt.md",
                         "mode": "source",
                         "source": false
                       }
@@ -161,7 +161,7 @@
               {
                 "id": "eaa8568bc1b7614c",
                 "type": "tabs",
-                "dimension": 33.07040607654105,
+                "dimension": 30.227803738317753,
                 "children": [
                   {
                     "id": "7f5bf7695c5901d8",
@@ -247,7 +247,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-03-04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -264,7 +263,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-03-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -286,9 +284,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "2023-03-04.md"
-              }
+              "state": {}
             }
           },
           {
@@ -316,48 +312,49 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-custom-frames:Open https://": false,
+      "obsidian-custom-frames:Open http://": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "terminal:Open terminal": false,
-      "omnisearch:Omnisearch": false
+      "terminal:Open terminal": false
     }
   },
-  "active": "dc07dfe1a6bd2c0b",
+  "active": "9e2901ae4a652ed6",
   "lastOpenFiles": [
-    "1_projects/chatgpt/chatgpt'.md",
+    "1_projects/chatgpt/chatgpt.md",
+    "1_projects/gpt3/rhyme 6.md",
+    "1_projects/gpt3/gpt3.html.md",
     "2023-03-04.md",
-    "3_resources/web3/web3'.md",
-    "2_areas/workflow/vault.md",
-    "3_resources/github/github!!.md",
-    "1_projects/gpt3/github old!.md",
-    "3_resources/tech/lesspass!.md",
-    "3_resources/spiral/spiral!.md",
-    "3_resources/nix/nix!.md",
-    "2023-03-03.md",
-    "2023-03-02.md",
-    "2023-02-28.md",
-    "2023-02-27.md",
-    "2_areas/work/cv!!!.fc1943s.md",
-    "2_areas/work/cv.md",
-    "2_areas/work/cv.fc1943s.md",
-    "2_areas/work/cv!!!.md",
-    "3_resources/personality/personality!!!.md",
-    "3_resources/kimbanda/kimbanda!!!.md",
-    "3_resources/personality/personality@.md",
+    "2_areas/work/cv.fc1943s.pdf.md",
+    "3_resources/near/Untitled.md",
+    "3_resources/compilers/compilers.pdf.md",
+    "1_projects/exercism/exercism.html.md",
+    "1_projects/exercism/rust!.md",
+    "1_projects/chatgpt/chatgpt.html.md",
+    "1_projects/gpt3/gpt3!!.md",
+    "3_resources/nix/nix.html.md",
+    "1_projects/tictactoe/tictactoe.md",
     "1_projects/tictactoe/tictactoe!.md",
+    "1_projects/twitter/twitter!.md",
+    "2_areas/work/cv.fc1943s.md",
+    "2_areas/workflow/vault.md",
+    "2_areas/workflow/workflow.md",
+    "3_resources/art/art.md",
+    "3_resources/astrology/astrology.md",
+    "3_resources/astrology/astrology.fc1943s.md",
+    "3_resources/books/books.md",
+    "3_resources/cryptography/cryptography.md",
+    "3_resources/doujinshi/doujinshi.md",
+    "3_resources/drugs/drugs.md",
+    "3_resources/git/git.md",
     "",
-    "3_resources/personality/personality'.md",
-    "3_resources/personality/personality!.md",
-    "3_resources/korean/korean'.md",
     "3_resources/kimbanda",
-    "3_resources/travel/north korea.md",
     "3_resources/travel/attachments/Pasted image 20230301083934.png",
     "3_resources/travel/attachments/Pasted image 20230228135416.png",
-    "3_resources/tech/tech'.md",
     "3_resources/linux",
     "3_resources/travel/attachments/Pasted image 20230227223718.png",
     "3_resources/travel/attachments/Pasted image 20230227223418.png",

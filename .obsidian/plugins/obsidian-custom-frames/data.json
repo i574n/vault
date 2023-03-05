@@ -1,0 +1,27 @@
+{
+  "frames": [
+    {
+      "url": "https://",
+      "displayName": "https://",
+      "icon": "",
+      "hideOnMobile": true,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 0.6,
+      "forceIframe": false,
+      "customCss": "body {\nfont-family: Roboto Condensed Medium;\nbackground-color: #000;\ncolor: #fff;\n}\n\nimg, video {\n  filter: invert(1);\n}\n\nsvg, [class*=\"icon\"], [class*=\"Icon\"], [class*=\"btn\"], [class*=\"button\"] {\n  filter: invert(1);\n}\n\na {\n  color: #fff;\n  border-bottom: 1px solid #fff;\n} "
+    },
+    {
+      "url": "http://",
+      "displayName": "http://",
+      "icon": "",
+      "hideOnMobile": true,
+      "addRibbonIcon": true,
+      "openInCenter": true,
+      "zoomLevel": 0.6,
+      "forceIframe": false,
+      "customCss": "body {\nfont-family: Roboto Condensed Medium;\nbackground-color: #000;\ncolor: #fff;\n}\n\nimg, video {\n  filter: invert(1);\n}\n\nsvg, [class*=\"icon\"], [class*=\"Icon\"], [class*=\"btn\"], [class*=\"button\"] {\n  filter: invert(1);\n}\n\na {\n  color: #fff;\n  border-bottom: 1px solid #fff;\n}"
+    }
+  ],
+  "padding": 5
+}
