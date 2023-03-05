@@ -1,3 +1,10 @@
+
+```sh
+~/.cargo/bin
+```
+
+---
+
 ## list other relevant macros that can be read in build time
 
 < In addition to the env!("CARGO_PKG_VERSION") macro, there are several other built-in macros that can be used to access information about the current build environment in Rust. Here are a few of the most commonly used ones:

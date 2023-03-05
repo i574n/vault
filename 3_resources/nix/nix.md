@@ -1,20 +1,19 @@
-zenith
-
-microsoft-edge-dev --disable-web-security --ignore-certificate-errors --user-data-dir=/root/.config/microsoft-edge-dev\_/ --no-sandbox & disown
-obsidian --no-sandbox & disown
-ledger-live-desktop --no-sandbox & disown
-
-DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus ledger-live-desktop --no-sandbox
-sudo -H -u alias microsoft-edge-dev
-sudo -H -u alias ledger-live-desktop
 
 clear && nixos-rebuild switch --upgrade-all
-lapce & disown
-xrandr --setprovideroutputsource NVIDIA-G0 modesetting && xrandr --auto
-microsoft-edge-dev --no-sandbox & disown
-obsidian --no-sandbox & disown
 
+xrandr --setprovideroutputsource NVIDIA-G0 modesetting && xrandr --auto
+zenith
+lapce & disown
+
+ledger-live-desktop --no-sandbox & disown
+sudo -H -u alias ledger-live-desktop
+
+microsoft-edge-dev --no-sandbox & disown
+sudo -H -u alias microsoft-edge-dev
 microsoft-edge-dev --disable-web-security --ignore-certificate-errors --user-data-dir=/root/.config/microsoft-edge-dev/ --no-sandbox & disown
+microsoft-edge-dev --disable-web-security --ignore-certificate-errors --user-data-dir=/root/.config/microsoft-edge-dev\_/ --no-sandbox & disown
+
+obsidian --no-sandbox & disown
 
 ---
 
