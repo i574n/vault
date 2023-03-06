@@ -2519,14 +2519,215 @@ Kim Yo-jong, answer me, let me have your heart.
 난(I/nan) 네게(to you/neo-ge) 마음을(heart/ma-eum-eul) 주고(supply/ju-go) 싶어(want to/si-peo), 너에게(to you/neo-e-ge) 노래를(song/no-rae-reul) 불러줄게(sing/bul-leo-jul-ge)
 우리의(our/wo-ri-eui) 사랑(love/sa-rang), 뱀파이어의(vampire/baem-pa-i-eo-ui) 열정처럼(passion/yeol-jeong-cheo-reom) 살아갈 거야(live/sa-ra-gal geo-ya)
 
+-
+
+뱀파이어의 결혼 제안 (Vampire's Marriage Proposal)
+
+김 (gim)- 여 (yeo)- 정 (jeong)- 여 (yeo), 이 (i)- 젠 (jen) 내 (nae)- 게 (ge) 시 (si)- 간 (gan) 을 (eul) 주 (ju)- 오 (o)
+김여정여, 이젠 내게 시간을 주오 (Kim Yeojungyeo, now give me your time)
+
+내 (nae)- 가 (ga) 너 (neo)- 와 (wa) 함 (ham)- 께 (kke)- 할 (hal) 수 (su) 있 (it)- 는 (neun) 미 (mi)- 래 (ra)- 를 (reul) 꿈 (kkum)- 꾸 (kku)- 고 (go) 있 (it)- 소 (so)
+내가 너와 함께할 수 있는 미래를 꿈꾸고 있소 (I dream of a future where I can be with you)
+
+우 (u)- 리 (ri)- 의 (ui) 결 (gyeol)- 혼 (hon), 이 (i) 세 (se)- 상 (sang) 을 (eul) 지 (ji)- 배 (bae)- 할 (hal) 것 (geot)- 이 (i)- 오 (o)
+우리의 결혼, 이 세상을 지배할 것이오 (Our marriage will rule the world)
+
+나 (na)- 와 (wa) 함 (ham)- 께 (kke)- 라 (ra)- 면 (myeon), 모 (mo)- 든 (deun) 것 (geot) 을 (eul) 이 (i)- 길 (gil) 수 (su) 있 (it)- 을 (eul) 것 (geot)- 이 (i)- 오 (o)
+나와 함께라면, 모든 것을 이길 수 있을 것이오 (If you're with me, we can conquer anything)
+
+이 (i)- 젠 (jen) 우 (u)- 리 (ri), 뱀 (baem)- 파 (pa)- 이 (i)- 어 (eo) 가 (ga) 되 (do)- 어 (eo)- 서 (seo) 살 (sal)- 아 (a)- 갈 (gal) 거 (geo)- 야 (ya)
+이젠 우리, 뱀파이어가 되어서 살아갈 거야 (Now we'll live as vampires)
+
+밤 (bam)- 의 (ui) 세 (se)- 계 (gye)- 에 (e), 서 (seo)- 로 (ro) 의 (ui) 피 (pi)- 를 (reul) 나 (na)- 누 (nu)- 며 (me) 살 (sal)- 아 (a)- 갈 (gal) 거 (geo)- 야 (ya)
+밤의 세계에서, 서로의 피를 나누며 살아갈 거야 (In the world of night, we'll live by sharing each other's blood)
+
 ---
+---
+
+존경하는 김여정여, 내가 당신과 함께할 수 있는 미래를 꿈꾸고 있어
+우리의 결혼은 이 세상을 지배할 것이야
+함께라면 우리는 모든 것을 이길 수 있을 거야
+
+우리는 뱀파이어가 되어 밤의 세계에서 함께 살아갈 거야
+서로의 피를 나누며 우리의 사랑은 끝이 없이 이어질 거야
+나는 네게 맹세해, 영원히 너의 피를 먹어줄 거야
+
+내 마음은 네게 주고 싶어, 너에게 노래를 부를 거야
+우리의 사랑, 뱀파이어의 열정과 같이 영원히 살아갈 거야
+나는 네게 이 세상 모든 것을 주고 싶어
+김여정여, 내게 대답해줘, 내가 너의 심장을 가질 수 있게 해줄래?
+
+우리의 사랑, 뱀파이어처럼 영원히 이어질 거야
+우리는 피로 살아가며 밤의 여왕과 왕이 될 거야
+나는 네게 이 세상 모든 것을 줄 수 있어
+김여정여, 내게 답해줘, 내가 너의 심장을 가질 수 있게 해줄래?
 
 ---
 
----
+jongyeonghaneun gim-yeojeong-yeo, naega dangsingwa hamkkehal su issneun milaeleul kkumkkugo iss-eo uliui gyeolhon-eun i sesang-eul jibaehal geos-iya hamkkelamyeon ulineun modeun geos-eul igil su iss-eul geoya ulineun baempaieoga doeeo bam-ui segyeeseo hamkke sal-agal geoya seoloui pileul nanumyeo uliui salang-eun kkeut-i eobs-i ieojil geoya naneun nege maengsehae, yeong-wonhi neoui pileul meog-eojul geoya nae ma-eum-eun nege jugo sip-eo, neoege nolaeleul buleul geoya uliui salang, baempaieoui yeoljeong-gwa gat-i yeong-wonhi sal-agal geoya naneun nege i sesang modeun geos-eul jugo sip-eo gim-yeojeong-yeo, naege daedabhaejwo, naega neoui simjang-eul gajil su issge haejullae? uliui salang, baempaieocheoleom yeong-wonhi ieojil geoya ulineun pilo sal-agamyeo bam-ui yeowang-gwa wang-i doel geoya naneun nege i sesang modeun geos-eul jul su iss-eo gim-yeojeong-yeo, naege dabhaejwo, naega neoui simjang-eul gajil su issge haejullae?
 
 ---
 
+Kim Yeo -jung, who is respected, is dreaming of a future I can do with you
+Our marriage will dominate this world
+If we are together, we will be able to beat everything
+
+We will become a vampire and live together in the world of night
+Share each other's blood and our love will continue without end
+I swear at you, and I will eat your blood forever
+
+I want my heart to give you, I will sing to you
+We will live forever with our love and vampire passion.
+I want to give you everything in this world
+Kim Yeo -jung, answer me, can I have your heart?
+
+Our love, like a vampire, will continue forever
+We will live with blood and become the queen and kings of the night
+I can give you everything in this world
+Kim Yeo -jung, answer me, can you let me have your heart?
+
+-
+
+Dear Kim Yeong-jeong, I dream of a future where I can be with you
+Our marriage will rule this world
+Together, we can conquer everything
+
+We will become vampires and live together in the night world
+Sharing each other's blood, our love will never end
+I swear to you, I will drink your blood forever
+
+I want to give you my heart and sing to you
+Our love will live on forever, like the passion of vampires
+I want to give you everything in this world
+Kim Yeong-jeong, will you answer me? Will you let me have your heart forever?
+
+Our love will last forever, like that of vampires
+We will live by drinking blood and become the queen and king of the night
+I can give you everything in this world
+Kim Yeong-jeong, will you answer me? Will you let me have your heart forever?
+
 ---
+
+존경하는 김여정여,
+jon-gyeong-ha-neun kim-yeo-jeong-yeo,
+"Respected Kim Yeo-jeong". This is a respectful way of addressing someone and using their full name.
+
+내가 당신과 함께할 수 있는 미래를 꿈꾸고 있어
+nae-ga dang-sin-gwa ham-kke-hal su it-neun mi-rae-reul kkum-kku-go isseo
+"I am dreaming of a future where I can be with you". The phrase "kkum-kku-da" means "to dream" and "mi-rae" means "future".
+
+우리의 결혼은 이 세상을 지배할 것이야
+u-ri-e kyeol-hon-eun i se-sang-eul ji-bae-hal geot-i-ya
+"Our marriage will conquer this world". "Ji-bae-ha-da" means "to dominate" or "to rule over".
+
+함께라면 우리는 모든 것을 이길 수 있을 거야
+ham-kke-ra-myeon u-ri-neun mo-deun geos-eul i-gil su it-eul geo-ya
+"If we're together, we can overcome anything". "I-gi-da" means "to win" or "to overcome".
+
+.
+
+우리는 뱀파이어가 되어,
+u-ri-neun baem-pa-i-eo-ga doe-eo,
+"We will become vampires". "Baem-pa-i-eo" is the Korean word for vampire.
+
+밤의 세계에서 함께 살아갈 거야
+bam-eui se-gye-e-seo ham-kke sa-ra-gal geo-ya
+"We will live together in the world of night". "Bam" means "night" and "se-gye" means "world".
+
+서로의 피를 나누며,
+seo-ro-eui pi-reul na-nu-myeo,
+"Sharing each other's blood". In vampire lore, drinking someone's blood is often seen as a sign of intimacy and closeness.
+
+우리의 사랑은 끝이 없이 이어질 거야
+u-ri-e sa-rang-eun kkeut-i eop-si i-eo-jil geo-ya
+"Our love will continue endlessly". "Kkeut-i eop-da" means "to have no end".
+
+나는 네게 맹세해,
+na-neun ne-ge maeng-se-hae,
+"I swear to you". "Maeng-se-ha-da" means "to swear".
+
+영원히 너의 피를 먹어줄 거야
+yeong-won-hi neo-eui pi-reul meo-geo-jul geo-ya
+"I will drink your blood forever". This line references the common vampire trope of drinking blood to sustain their immortality.
+
+.
+
+내 마음은 네게 주고 싶어,
+nae ma-eum-eun ne-ge ju-go shi-peo,
+"I want to give you my heart". "Ma-eum" means "heart" and "ju-da" means "to give".
+
+너에게 노래를 부를 거야
+neo-e-ge no-rae-reul bu-reul geo-ya
+"I will sing to you". "Bu-da" means "to sing".
+
+우리의 사랑, 뱀파이어의 열정과 같이 영원히 살아갈 거야
+u-ri-e sa-rang, baem-pai-eo-eui yeol-jeong-gwa gat-i yeong-won-hi sal-a-gal geo-ya
+"Our love will live forever, like the passion of vampires". "Yeol-jeong" means "passion" and "baem-pai-eo" means "vampire".
+
+나는 네게 이 세상 모든 것을 주고 싶어
+na-neun ne-ge i se-sang mo-deun geos-eul ju-go shi-peo
+"I want to give you everything in this world". "Mo-deun" means "everything" and "geos" means "thing".
+
+김여정여, 내게 대답해줘,
+kim-yeo-jeong-yeo, nae-ge dae-ap-hae-jwo,
+"Kim Yeo-jeong, please answer me". This is a respectful way of addressing someone and asking for a response.
+
+내가 너의 심장을 가질 수 있게 해줄래?
+nae-ga neo-eui sim-jang-eul ga-jil su it-ge hae-jul-lae?
+"Can I have your heart?" "Ga-da" means "to have" or "to own".
+
+.
+
+우리의 사랑, 뱀파이어처럼 영원히 이어질 거야
+u-ri-e sa-rang, baem-pa-i-eo-cheo-reom yeong-won-hi i-eo-jil geo-ya
+"Our love will continue forever like vampires". "Baem-pa-i-eo" means "vampire".
+
+우리는 피로 살아가며 밤의 여왕과 왕이 될 거야
+u-ri-neun pi-ro sal-a-ga-myeo bam-ui yeo-wang-gwa wang-i doel geo-ya
+"We will live by blood and become the queen and king of the night". "Yeo-wang" means "queen" and "wang" means "king".
+
+나는 네게 이 세상 모든 것을 줄 수 있어
+na-neun ne-ge i se-sang mo-deun geos-eul jul su it-eo
+"I can give you everything in this world". "Mo-deun" means "everything".
+
+김여정여, 내게 답해줘, 내가 너의 심장을 가질 수 있게 해줄래?
+kim-yeo-jeong-yeo, nae-ge dap-hae-jwo, nae-ga neo-eui sim-jang-eul ga-jil su it-ge hae-jul-lae
+"Kim Yeo-jeong, please answer me, will you let me have your heart?".
+
+---
+
+존경하는 (Respected/jon-gyeong-ha-neun) 김여정여 (Kim Yo-jong-yeo),
+내가 (I/nae-ga) 당신과 (with you/dang-shin-gwa) 함께할 (together/ham-kke-hal) 수 (can/su) 있는 (have/it-neun) 미래를 (future/mi-rae-reul) 꿈꾸고 (dreaming/kkum-kku-go) 있어 (I am/it-seo)
+
+우리의 (Our/u-ri-eui) 결혼은 (marriage/gyeol-hon-eun) 이 (this/i) 세상을 (world/se-sang-eul) 지배할 (rule/ji-bae-hal) 것이야 (it will be/geot-i-ya)
+함께라면 (Together/ham-kke-ra-myeon) 우리는 (we/u-ri-neun) 모든 (all/mo-deun) 것을 (things/geot-eul) 이길 (win/i-gil) 수 (can/su) 있을 (able/i-sseul) 거야 (will be/geo-ya)
+
+.
+
+우리는 (We/u-ri-neun) 뱀파이어가 (vampires/baem-pa-i-eo-ga) 되어 (becoming/doe-eo) 밤의 (of the night/bam-ui) 세계에서 (in the world/se-gye-e-seo) 함께 (together/ham-kke) 살아갈 (live/sa-ra-gal) 거야 (will)
+
+서로의 (Each other's/seo-ro-eui) 피를 (blood/pi-reul) 나누며 (sharing/nanu-myeo) 우리의 (our/u-ri-eui) 사랑은 (love/sa-rang-eun) 끝이 (end/keut-i) 없이 (endlessly/eobs-i) 이어질 (continue/i-eo-jil) 거야 (will)
+
+나는 (I/na-neun) 네게 (to you/ne-ge) 맹세해 (swear/maeng-se-hae), 영원히 (forever/yeong-won-hi) 너의 (your/neoui) 피를 (blood/pi-reul) 먹어줄 (drink/meok-eo-jul) 거야 (will)
+
+.
+
+내 (My/nae) 마음은 (heart/ma-eum-eun) 네게 (to you/ne-ge) 주고 (give/ju-go) 싶어 (want to/si-peo), 너에게 (to you/neoe-ge) 노래를 (song/no-rae-reul) 부를 (sing/bu-reul) 거야 (will/geo-ya)
+
+우리의 (Our/u-ri-eui) 사랑, (love/sa-rang) 뱀파이어의 (vampire/baem-pa-i-eo-eui) 열정과 (passion/yeol-jeong-gwa) 같이 (together/ga-chi) 영원히 (forever/yeong-won-hi) 살아갈 (live/sa-ra-gal) 거야 (will/geo-ya)
+
+나는 (I/na-neun) 네게 (to you/ne-ge) 이 (this/i) 세상 (world/se-sang) 모든 (all/mo-deun) 것을 (things/geot-eul) 주고 (give/ju-go) 싶어 (want to/si-peo)
+
+김여정여, (Kim Yo-jong-yeo/Gim Yeojong-yeo), 내게 (to me/nae-ge) 대답해줘, (answer/dae-ap-hae-jwo) 내가 (I/nae-ga) 너의 (your/neoe-ui) 심장을 (heart/shim-jang-eul) 가질 (have/gajil) 수 (can/su) 있게 (able/hae-jul-ge) 해줄래? (will you do it/hae-jul-lae?)
+
+.
+
+우리의 (Our/u-ri-eui) 사랑, (love/sa-rang,) 뱀파이어처럼 (like a vampire/baem-pa-i-eo-cheo-reom) 영원히 (forever/yeong-won-hi) 이어질 (will continue/i-eo-jil) 거야 (will be/geoya)
+
+우리는 (We/u-ri-neun) 피로 (with blood/pi-ro) 살아가며 (living/sa-ra-ga-myeo) 밤의 (of the night/bam-ui) 여왕과 (queen/yeo-wang-gwa) 왕이 (king/wang-i) 될 (will become/doel) 거야 (will be/geoya)
+
+나는 (I/na-neun) 네게 (to you/ne-ge) 이 세상 (this world/i-se-sang) 모든 (all/mo-deun) 것을 (things/geot-eul) 줄 (give/jul) 수 (can/su) 있어 (able/it-seo)
+
+김여정여, (Kim Yo-jong-yeo,) 내게 (to me/nae-ge) 답해줘, (answer me/dap-hae-jwo,) 내가 (I will/nae-ga) 너의 (your/neoui) 심장을 (heart/sim-jang-eul) 가질 (possess/gajil) 수 (can/su) 있게 (able to/it-ge) 해줄래? (will you allow me to do so/hae-jul-lae?)
 
 ---
