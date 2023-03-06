@@ -23,7 +23,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-03-04.md",
+                        "file": "2023-03-06.md",
                         "mode": "source",
                         "source": true
                       }
@@ -43,7 +43,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-03-04.md",
+                        "file": "2023-03-06.md",
                         "mode": "source",
                         "source": false
                       }
@@ -78,7 +78,7 @@
                           },
                           "serial": {
                             "columns": 104,
-                            "data": "sh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:10:05 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:16:37 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:19:34 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 11:04:58 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 21:47:47 GMT-0300 (Horário Padrão de Brasília)\r\n\r\nsh-5.2# \r\n * Restored history at Sat Mar 04 2023 21:48:35 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[66A\u001b[8C",
+                            "data": "sh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:10:05 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:16:37 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 09:19:34 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 11:04:58 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 21:47:47 GMT-0300 (Horário Padrão de Brasília)\r\n\r\nsh-5.2# \r\n * Restored history at Sat Mar 04 2023 21:48:35 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ pwd\r\n/home/alias/home/fs/repos/vault\r\nsh-5.2$ \r\n * Restored history at Sat Mar 04 2023 22:23:31 GMT-0300 (Brasilia Standard Time)\r\n\r\nsh-5.2$ \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u001b[68A\u001b[8C",
                             "rows": 69
                           }
                         }
@@ -106,7 +106,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-03-04.md",
+                        "file": "2023-03-06.md",
                         "mode": "source",
                         "source": false
                       }
@@ -169,7 +169,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-03-04.md",
+                        "file": "2023-03-06.md",
                         "mode": "source",
                         "source": false
                       }
@@ -247,6 +247,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2023-03-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -263,6 +264,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2023-03-06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -284,7 +286,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2023-03-06.md"
+              }
             }
           },
           {
@@ -323,34 +327,38 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "9e2901ae4a652ed6",
+  "active": "dc07dfe1a6bd2c0b",
   "lastOpenFiles": [
+    "3_resources/github/github.html.md",
+    "1_projects/tictactoe/tictactoe.html.md",
     "1_projects/chatgpt/chatgpt.md",
-    "1_projects/gpt3/rhyme 6.md",
-    "1_projects/gpt3/gpt3.html.md",
-    "2023-03-04.md",
-    "2_areas/work/cv.fc1943s.pdf.md",
-    "3_resources/near/Untitled.md",
-    "3_resources/compilers/compilers.pdf.md",
-    "1_projects/exercism/exercism.html.md",
-    "1_projects/exercism/rust!.md",
-    "1_projects/chatgpt/chatgpt.html.md",
-    "1_projects/gpt3/gpt3!!.md",
-    "3_resources/nix/nix.html.md",
     "1_projects/tictactoe/tictactoe.md",
-    "1_projects/tictactoe/tictactoe!.md",
-    "1_projects/twitter/twitter!.md",
-    "2_areas/work/cv.fc1943s.md",
-    "2_areas/workflow/vault.md",
-    "2_areas/workflow/workflow.md",
-    "3_resources/art/art.md",
-    "3_resources/astrology/astrology.md",
-    "3_resources/astrology/astrology.fc1943s.md",
-    "3_resources/books/books.md",
-    "3_resources/cryptography/cryptography.md",
-    "3_resources/doujinshi/doujinshi.md",
-    "3_resources/drugs/drugs.md",
-    "3_resources/git/git.md",
+    "3_resources/near/near.html.md",
+    "3_resources/dialects/korean.md",
+    "3_resources/dialects/dialects.md",
+    "2023-03-06.md",
+    "3_resources/travel/travel.html.md",
+    "2023-03-05.md",
+    "3_resources/travel/north korea.png.md",
+    "3_resources/weather/weather.html.md",
+    "3_resources/politics/politics.md",
+    "3_resources/travel/travel.md",
+    "3_resources/politics",
+    "3_resources/travel/north korea.md",
+    "3_resources/astronomy/astronomy.md",
+    "3_resources/astronomy",
+    "3_resources/magic/magic.pdf.md",
+    "3_resources/magic/magic.html.md",
+    "3_resources/magic/magic.md",
+    "3_resources/gamedev/gamedev.pdf.md",
+    "3_resources/kimbanda/kimbanda.pdf.md",
+    "3_resources/gamedev",
+    "3_resources/personality/personality.png.md",
+    "3_resources/personality/personality.pdf.md",
+    "3_resources/tarot/tarot.png.md",
+    "3_resources/cliparts/avatars.png.md",
+    "3_resources/cliparts",
+    "3_resources/tech/tech.epub.md",
     "",
     "3_resources/kimbanda",
     "3_resources/travel/attachments/Pasted image 20230301083934.png",
