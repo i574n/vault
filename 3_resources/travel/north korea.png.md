@@ -4,6 +4,19 @@
 
 ---
 
+sp->ch 18002
+sp->su 13312
+an->su 13282
+ha->an 14868
+ha->ch 12162
+ha->su 11672
+ch->an 10871
+sp->an 9582
+ch->su 8317
+ha->sp 6466
+
+---
+
 ![havana](https://bafybeiae6uyxao2ignuyrhls2civ6gbqhaa7kwkgjcxw66tjml4fhegizu.ipfs.nftstorage.link/havana.png)
 ![sao paulo](https://bafybeiae6uyxao2ignuyrhls2civ6gbqhaa7kwkgjcxw66tjml4fhegizu.ipfs.nftstorage.link/sao%20paulo.png)
 ![chongjin](https://bafybeiae6uyxao2ignuyrhls2civ6gbqhaa7kwkgjcxw66tjml4fhegizu.ipfs.nftstorage.link/chongjin.png)
