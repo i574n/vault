@@ -28,3 +28,21 @@ urlSuffix: openweathermap.org/weathermap?basemap=map&cities=true&layer=radar&lat
 frame: https://
 style: height:30vh
 ```
+
+```custom-frames
+urlSuffix: wunderground.com/hourly/br/aeroporto-internacional/-23.43,-46.48
+frame: https://
+style: height:30vh
+```
+
+```custom-frames
+urlSuffix: accuweather.com/en/br/s%C3%A3o-paulo/1-45881_1_al/hourly-weather-forecast/1-45881_1_al
+frame: https://
+style: height:30vh
+```
+
+```custom-frames
+urlSuffix: weather.com/weather/hourbyhour/l/63e18eea74a484c42c3921cf52a8fec98113dbb13f6deb7c477b2f453c95b837
+frame: https://
+style: height:30vh
+```
