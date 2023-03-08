@@ -46,3 +46,33 @@ urlSuffix: weather.com/weather/hourbyhour/l/63e18eea74a484c42c3921cf52a8fec98113
 frame: https://
 style: height:30vh
 ```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/temperature/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/precipitation/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/wind/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/cloud/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/hourlyforecast/in-São-Paulo,Brazil
+frame: https://
+style: height:50vh
+```
