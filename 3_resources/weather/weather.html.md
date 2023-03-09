@@ -1,8 +1,50 @@
 
 ```custom-frames
-urlSuffix: weatherspark.com/compare/y/16780~30268~142723~104299~144952/Comparison-of-the-Average-Weather-in-Havana-São-Paulo-Chongjin-Antananarivo-and-Suva
+urlSuffix: zoom.earth/maps/temperature/#view=-23.570989,-46.590619,10z/date=2023-03-08,13:40,-3/model=icon/overlays=wind,fires,crosshair
 frame: https://
-style: height:50vh
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: zoom.earth/maps/temperature-feel/#view=-23.570989,-46.590619,10z/date=2023-03-08,13:40,-3/model=icon/overlays=wind,fires,crosshair
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: zoom.earth/maps/precipitation/#view=-23.570989,-46.590619,10z/date=2023-03-08,13:40,-3/model=icon/overlays=wind,fires,crosshair
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/hourlyforecast/in-São-Paulo,Brazil
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/temperature/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/precipitation/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/wind/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlSuffix: msn.com/en-us/weather/maps/cloud/in-S%C3%A3o-Paulo,Brazil
+frame: https://
+style: height:40vh
 ```
 
 ```custom-frames
@@ -24,13 +66,13 @@ style: height:30vh
 ```
 
 ```custom-frames
-urlSuffix: openweathermap.org/weathermap?basemap=map&cities=true&layer=radar&lat=-23.5475&lon=-46.6361&zoom=9
+urlSuffix: wunderground.com/hourly/br/aeroporto-internacional/-23.43,-46.48
 frame: https://
 style: height:30vh
 ```
 
 ```custom-frames
-urlSuffix: wunderground.com/hourly/br/aeroporto-internacional/-23.43,-46.48
+urlSuffix: openweathermap.org/weathermap?basemap=map&cities=true&layer=radar&lat=-23.5475&lon=-46.6361&zoom=9
 frame: https://
 style: height:30vh
 ```
@@ -48,31 +90,7 @@ style: height:30vh
 ```
 
 ```custom-frames
-urlSuffix: msn.com/en-us/weather/maps/temperature/in-S%C3%A3o-Paulo,Brazil
+urlSuffix: weatherspark.com/compare/y/16780~30268~142723~104299~144952/Comparison-of-the-Average-Weather-in-Havana-São-Paulo-Chongjin-Antananarivo-and-Suva
 frame: https://
-style: height:50vh
-```
-
-```custom-frames
-urlSuffix: msn.com/en-us/weather/maps/precipitation/in-S%C3%A3o-Paulo,Brazil
-frame: https://
-style: height:50vh
-```
-
-```custom-frames
-urlSuffix: msn.com/en-us/weather/maps/wind/in-S%C3%A3o-Paulo,Brazil
-frame: https://
-style: height:50vh
-```
-
-```custom-frames
-urlSuffix: msn.com/en-us/weather/maps/cloud/in-S%C3%A3o-Paulo,Brazil
-frame: https://
-style: height:50vh
-```
-
-```custom-frames
-urlSuffix: msn.com/en-us/weather/hourlyforecast/in-São-Paulo,Brazil
-frame: https://
-style: height:50vh
+style: height:40vh
 ```
