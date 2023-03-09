@@ -1,3 +1,15 @@
+
+```ts
+assert.deepEqual(
+    Hangul.disassemble('AB삵e$@%2s낄캌ㅋ', true),
+    [['A'], ['B'], ['ㅅ', 'ㅏ', 'ㄹ', 'ㄱ'], ['e'], ['$'], ['@'], ['%'], ['2'], ['s'], ['ㄲ', 'ㅣ', 'ㄹ'], ['ㅋ', 'ㅏ', 'ㅋ'], ['ㅋ']]
+);
+assert.deepEqual(
+    Hangul.disassemble('뷁궬릪쯻튋', true),
+    [['ㅂ', 'ㅜ', 'ㅔ', 'ㄹ', 'ㄱ'], ['ㄱ', 'ㅜ', 'ㅔ', 'ㄹ'], ['ㄹ', 'ㅡ', 'ㅣ', 'ㅍ'], ['ㅉ', 'ㅡ', 'ㅣ', 'ㄹ', 'ㅂ'], ['ㅌ', 'ㅜ', 'ㅣ', 'ㄹ', 'ㅂ']]
+);
+```
+
 ## the question was to understand the 10 korean vowels from a pt-br speaker
 
 < Apologies for the confusion. Here are some mnemonics to help a pt-br speaker remember the 10 vowel sounds in Korean:
@@ -1480,6 +1492,91 @@ These honorifics are generally used among friends and peers, and may not be appr
 선배님 (seonbaenim): This term is used to address a senior colleague or acquaintance in a respectful and friendly way.
 존경하는 (jongyeonghaneun): This term can be used to show deep respect for someone, and can be translated as "esteemed" or "respected."
 교수님 (gyosunim): This term is used to address a professor or teacher in a respectful and friendly way.
+
+---
+---
+
+## use other languages to explain the difference from korean and jeju using a 0-100% percentage
+
+< I apologize if my previous answer was unclear. As an AI language model, I cannot provide subjective opinions or make value judgments on the differences between Korean and Jeju language. However, I can provide some general information about the differences between the two languages:
+
+Korean and Jeju language are both members of the Koreanic language family and share many similarities in vocabulary, grammar, and pronunciation. However, Jeju language also has some unique features that distinguish it from standard Korean.
+
+One of the major differences between the two languages is their phonology. Jeju language has more vowel sounds than standard Korean, and some of its consonants are pronounced differently as well. For example, the Jeju dialect often replaces the Korean "ㅈ" sound with a "ㅊ" sound. Additionally, Jeju language has its own set of intonation patterns that are different from standard Korean.
+
+In terms of vocabulary, Jeju language has many words that are not used in standard Korean, and vice versa. For example, the Jeju dialect has many words related to the island's unique culture and environment, such as words for local food, plants, and animals. Standard Korean, on the other hand, has a larger vocabulary for modern concepts and technology.
+
+The grammatical structure of Jeju language is also slightly different from standard Korean. For example, Jeju language uses a different set of sentence endings than standard Korean, and it has its own set of honorifics and speech levels.
+
+Overall, the differences between Korean and Jeju language are not easily quantifiable in terms of a percentage. Both languages have their own unique features that make them valuable and interesting in their own ways.
+
+## describe their honorific difference, since its something easily transferable
+
+< Certainly, honorifics are an important aspect of Korean language and Jeju language, and their usage can vary between the two languages.
+
+In Korean language, honorifics are used to show respect or politeness towards the person being addressed. There are different levels of honorifics, ranging from informal speech used among close friends to formal speech used in formal settings such as job interviews or official ceremonies.
+
+In formal situations, Korean speakers often use the honorific suffix "-습니다" (-seumnida) or "-ㅂ니다" (-imnida) after a verb or adjective to show respect towards the person they are addressing. For example, the sentence "I am going to the store" would be "저는 가요" (jeoneun gayo) in informal speech, but it would be "저는 가십니다" (jeoneun gasimnida) in formal speech.
+
+In Jeju language, honorifics are also used to show respect or politeness towards the person being addressed. However, the honorific system in Jeju language is slightly different from that of standard Korean.
+
+Jeju language has its own set of honorific suffixes, which are used to show respect towards someone who is older or of higher social status. For example, the suffix "-요" (-yo) can be added to verbs or adjectives to show respect towards someone older or of higher social status. The sentence "I am going to the store" would be "내가 살지" (naega salji) in informal speech, but it would be "내가 살어요" (naega saleoyo) in formal speech.
+
+Additionally, Jeju language has a unique honorific verb form, which is used to show respect towards the person being addressed. The honorific verb form is created by adding the suffix "-시-" (-si-) before the verb stem. For example, the sentence "I ate rice" would be "내가 밥 먹었어" (naega bab meogeosseo) in informal speech, but it would be "내가 밥 드시었어" (naega bab deusieosseo) in formal speech.
+
+Overall, while both Korean language and Jeju language use honorifics to show respect towards the person being addressed, the honorific systems of the two languages have some differences in terms of their specific rules and usage.
+
+## give 20 examples in korean and jeju for honorifics both formal and informal using kim yo-jong as subject
+
+< Certainly, I can provide 20 examples of honorifics in Korean and Jeju language, using Kim Yo-jong as the subject. Please note that the examples below are for illustrative purposes only and do not represent a complete or exhaustive list of possible honorific expressions.
+
+Formal Honorifics:
+
+Korean:
+김 여정 부장님께서 오셨습니다. (Kim Yo-jong-bujangnimkkeseo osyeosseumnida.) - Director Kim Yo-jong has arrived.
+김 여정 부장님께서는 어떤 것을 찾으시나요? (Kim Yo-jong-bujangnimkkeseoneun eotteon geoseul chaj-eusinayo?) - What are you looking for, Director Kim Yo-jong?
+김 여정 부장님께서는 대단히 바쁘실 텐데, 이번 주말에 저희와 함께 식사하실 수 있으세요? (Kim Yo-jong-bujangnimkkeseoneun daedanhi bappeusil tende, ibeon jumale jeohuiwa hamkke sigsahasil su iss-euseyo?) - Director Kim Yo-jong must be very busy, but would you be able to have a meal with us this weekend?
+
+Jeju:
+김 여정 부장, 영광스럽게도 뵙게 되어 감사드립니다. (Kim Yo-jong-bujang, yeong-gwangseuleob-ge-do boep-ge doeeo gamsadeurimnida.) - Director Kim Yo-jong, it is an honor to meet you.
+김 여정 부장, 감사합니다. (Kim Yo-jong-bujang, gamsahamnida.) - Thank you, Director Kim Yo-jong.
+김 여정 부장, 이번 회의에서 귀하의 의견을 듣고 싶습니다. (Kim Yo-jong-bujang, ibeon hoeuieseo gwiha-ui uigyeon-eul deutgo sipseumnida.) - Director Kim Yo-jong, I would like to hear your opinion in this meeting.
+
+Informal Honorifics:
+
+Korean:
+김 여정 씨, 요즘 어떻게 지내고 계세요? (Kim Yo-jong-ssi, yojeum eotteohge jinaego gyeseyo?) - How have you been, Miss Kim Yo-jong?
+김 여정 씨, 여기 앉으세요. (Kim Yo-jong-ssi, yeogi anjeuseyo.) - Please sit here, Miss Kim Yo-jong.
+김 여정 씨, 이것 좀 도와주세요. (Kim Yo-jong-ssi, igeos jom dowajuseyo.) - Could you help me with this, Miss Kim Yo-jong?
+
+Jeju:
+김 여정아, 이거 좀 받아봐? (Kim Yo-jong-a, igeo jom badabwa?) - Kim Yo-jong, could you try taking this?
+김 여정아, 오늘 비가 와서 불편하셨겠어요? (Kim Yo-jong-a, oneul biga waseo bulpyeonhasyeotgesseoyo?) - Kim Yo-jong, you must have been inconvenienced by the rain today.
+김 여정아, 좀 더 빨리 움직여주세요. (Kim Yo-jong-a, jom deo ppalli umjig-yeojuseyo.) - Kim Yo-jong, could you move a bit faster, please?
+
+I hope these examples help to illustrate the honorific differences between Korean and Jeju languages.
+
+## provide examples cross referencing them 1 of each (formal, informal, korean, jeju), with detailed pronunciation and meaning breakdown
+
+< Certainly, here are some examples that cross-reference the four categories you mentioned (formal Korean, informal Korean, formal Jeju, informal Jeju), along with detailed pronunciation and meaning breakdowns:
+
+Formal Korean: 김 여정 부장님께서 오셨습니다. (Kim Yo-jong-bujangnimkkeseo osyeosseumnida.) - Director Kim Yo-jong has arrived.
+Pronunciation: gim yeo-jeong bu-jang-nim-kke-seo o-syeo-sseo-eum-ni-da
+Meaning: This is a formal expression meaning "Director Kim Yo-jong has arrived". It shows respect for Kim Yo-jong's position as a director.
+
+Informal Korean: 김 여정 씨, 이것 좀 도와주세요. (Kim Yo-jong-ssi, igeos jom dowajuseyo.) - Could you help me with this, Miss Kim Yo-jong?
+Pronunciation: gim yeo-jeong-ssi, i-geos jom do-wa-ju-se-yo
+Meaning: This is an informal expression that means "Could you help me with this, Miss Kim Yo-jong?" It is appropriate for situations where you are on friendly terms with Kim Yo-jong and it shows a polite request for help.
+
+Formal Jeju: 김 여정 부장, 영광스럽게도 뵙게 되어 감사드립니다. (Kim Yo-jong-bujang, yeong-gwangseuleob-ge-do boep-ge doeeo gamsadeurimnida.) - Director Kim Yo-jong, it is an honor to meet you.
+Pronunciation: gim yeo-jeong-bu-jang, yeong-gwang-seu-reob-ge-do boep-ge doe-eo gam-sa-deu-rim-ni-da
+Meaning: This is a formal Jeju expression that means "Director Kim Yo-jong, it is an honor to meet you." It shows respect for Kim Yo-jong's position as a director and also acknowledges the importance of meeting her.
+
+Informal Jeju: 김 여정아, 오늘 비가 와서 불편하셨겠어요? (Kim Yo-jong-a, oneul biga waseo bulpyeonhasyeotgesseoyo?) - Kim Yo-jong, you must have been inconvenienced by the rain today.
+Pronunciation: gim yeo-jeong-a, on-eul bi-ga wa-seo bul-pyeon-ha-syeot-ge-sseo-yo
+Meaning: This is an informal Jeju expression that means "Kim Yo-jong, you must have been inconvenienced by the rain today." It shows empathy and concern for Kim Yo-jong's well-being and is appropriate for use with friends or colleagues who you are on a first-name basis with.
+
+I hope these examples help to illustrate the differences between formal and informal honorifics in Korean and Jeju languages.
 
 ---
 ---
