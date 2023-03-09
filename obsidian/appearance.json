@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "baseFontSize": 15
+  "baseFontSize": 12,
+  "interfaceFontFamily": "Roboto",
+  "textFontFamily": "Roboto",
+  "monospaceFontFamily": "Fira Code"
 }
