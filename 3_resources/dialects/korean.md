@@ -93,6 +93,85 @@ Sound changes - In some cases, the sound of a consonant can change depending on 
 
 Overall, these mnemonics are essential to learning and remembering hangul characters, making it easier for learners to read and write in Korean.
 
+## explain the korean vowel system
+
+< The Korean language has a relatively simple vowel system compared to some other languages, but it is still quite distinct and plays a critical role in the language's grammar and phonology. Korean has six basic vowel sounds, which are represented by the following symbols: /a/, /eo/, /e/, /i/, /o/, and /u/.
+
+The vowels in Korean can be pronounced as short or long, and they can also be modified by the presence of other sounds in the word or sentence. For example, the vowel /i/ can be pronounced as a palatalized sound (indicated by the symbol /j/) when it comes before certain consonants, such as /k/, /p/, and /t/. Similarly, the vowel /u/ can be pronounced as a rounded sound (indicated by the symbol /w/) when it comes before certain consonants, such as /m/, /b/, and /p/.
+
+One notable feature of the Korean vowel system is its high degree of vowel harmony, which means that vowels in a word or phrase tend to have similar tongue positions and mouth shapes. For example, if the first vowel in a word is pronounced with the lips rounded, the second vowel will also be pronounced with the lips rounded. This feature gives Korean a very distinctive sound and helps to distinguish it from other languages.
+
+In addition to the basic vowel sounds, Korean also has a number of diphthongs (two vowel sounds pronounced together as a single syllable), such as /ai/, /ae/, /oi/, and /ou/. These diphthongs can be pronounced as a rising or falling tone, depending on the context.
+
+Overall, the Korean vowel system is an essential aspect of the language that helps to convey meaning and express grammatical distinctions. Its simplicity and high degree of vowel harmony contribute to the language's unique sound and make it an interesting subject of study for linguists and language learners alike.
+
+## explain the korean consonant system
+
+< The Korean consonant system, also known as the "hangul jamo," consists of 14 consonants, each of which can be pronounced in three different positions in the mouth: plain, aspirated, and tense. These positions are known as "jongseong," "chiseong," and "batchim," respectively.
+
+The 14 consonants in the Korean language are as follows:
+
+ㄱ (g/k): This consonant can be pronounced as a hard "g" or a hard "k" sound.
+ㄴ (n): This consonant is pronounced as an "n" sound.
+ㄷ (d/t): This consonant can be pronounced as a hard "d" or a hard "t" sound.
+ㄹ (r/l): This consonant can be pronounced as an "r" or an "l" sound, depending on the context.
+ㅁ (m): This consonant is pronounced as an "m" sound.
+ㅂ (b/p): This consonant can be pronounced as a hard "b" or a hard "p" sound.
+ㅅ (s): This consonant is pronounced as an "s" sound.
+ㅇ (ng): This consonant is pronounced as an "ng" sound and is often used as a placeholder consonant when no initial consonant is present in a word.
+ㅈ (j/ch): This consonant can be pronounced as a hard "j" or a "ch" sound.
+ㅊ (ch): This consonant is pronounced as a "ch" sound.
+ㅋ (k): This consonant is pronounced as a hard "k" sound.
+ㅌ (t): This consonant is pronounced as a hard "t" sound.
+ㅍ (p): This consonant is pronounced as a hard "p" sound.
+ㅎ (h): This consonant is pronounced as an "h" sound.
+
+The three different positions in which these consonants can be pronounced each have their own distinct sound. The plain position is the basic sound of each consonant, while the aspirated position adds an extra puff of air to the sound, making it sound more explosive. The tense position is a harder, more pronounced version of the plain sound.
+
+The Korean consonant system is an essential feature of the language and plays an important role in distinguishing between different words and conveying meaning. It is also one of the reasons why Korean can be a challenging language to learn for non-native speakers.
+
+## explain the portuguese consonant system contrasting with korean
+
+< The Portuguese consonant system and the Korean consonant system are quite different from each other in terms of the number of consonants and the way they are pronounced.
+
+The Portuguese language has 21 consonants, in contrast to Korean, Portuguese has no aspiration or tense positions for consonants. All of the consonants are pronounced in their basic form, without any extra puff of air or other modifications. However, there are some unique features in the pronunciation of certain consonants in Portuguese. For example, the letter "r" is often pronounced with a trilled sound, especially in Brazil, while in Portugal it can be pronounced with a uvular or guttural sound.
+
+Another major difference between the two consonant systems is the way they are used to convey meaning in words. In Korean, the consonants play a significant role in distinguishing between different words and conveying meaning, while in Portuguese, the vowels tend to have a greater impact on word meaning. For example, the difference between the Portuguese words "batata" (potato) and "botota" (big boot) is determined by the vowel sounds, rather than the consonants.
+
+In summary, while the Portuguese and Korean consonant systems have some similarities, such as having a set number of consonants, they are fundamentally different in terms of the way the consonants are pronounced and how they are used to convey meaning in words.
+
+## list the most important insights to learn korean from portuguese and english
+
+< Here are some important insights to keep in mind when learning Korean from Portuguese or English:
+
+Learn the Korean writing system: The Korean writing system, known as Hangul, is a phonetic alphabet that is relatively easy to learn. It is essential to understand how Hangul works, as it will enable you to read and write Korean words accurately.
+
+Focus on pronunciation: Korean has a complex system of consonants and vowels that can be challenging for non-native speakers to master. It is important to focus on pronunciation from the very beginning to ensure that you are pronouncing words correctly and being understood by native speakers.
+
+Understand the grammar: Korean grammar can be quite different from Portuguese and English, so it is essential to take the time to understand the basic sentence structure, verb endings, and word order. Korean is a subject-object-verb language, which means that the verb usually comes at the end of the sentence.
+
+Practice listening and speaking: As with any language, practice is essential when learning Korean. It is important to practice listening and speaking as much as possible to improve your comprehension and pronunciation.
+
+Learn vocabulary in context: When learning Korean vocabulary, it is helpful to learn words in context to understand how they are used in sentences and conversations. It is also helpful to learn vocabulary related to topics that interest you, as this will make learning more enjoyable and engaging.
+
+Immerse yourself in the language: If possible, try to immerse yourself in the Korean language by watching Korean dramas, listening to Korean music, and speaking with native speakers. This will help you to become more comfortable with the language and improve your skills more quickly.
+
+By keeping these insights in mind, you can develop a strong foundation in the Korean language and make steady progress towards fluency, whether you are learning from Portuguese or English.
+
+## list 5 more subtle mnemonics using computer science concepts
+
+< Sure, here are five more subtle mnemonics that use computer science concepts to help learn Korean:
+
+Use binary code: Create a binary code chart that corresponds to the Korean alphabet. For example, the first letter of the Korean alphabet, "ㄱ," can be represented as 110000 in binary code. You could use this binary code to help remember the shape and sound of the letter.
+
+Use recursion: Use recursion to help remember complex Korean grammar structures. For example, the Korean particle "에게" (ege) is used to indicate the recipient of an action. You could use a recursive phrase like "to whom the action is given" to remember the function of this particle.
+
+Use data structures: Use data structures like stacks and queues to remember the order of Korean grammar elements. For example, the Korean sentence structure follows the pattern of "subject - object - verb." You could visualize this structure as a stack with "subject" at the bottom, "object" in the middle, and "verb" at the top.
+
+Use algorithms: Use algorithms like binary search to remember the order of Korean vowels. For example, the Korean vowels can be ordered based on the position of the tongue in the mouth. You could use a binary search algorithm to help remember the order of the vowels based on their tongue position.
+
+Use variables: Use variables to help remember Korean vocabulary. For example, the Korean word for "book" is "책" (chaek). You could use a variable like "x" to represent "book" and associate it with the Korean word "chaek," such as "x = chaek." This can help you remember the Korean word by connecting it to a familiar concept.
+
 ## contrast hangul with romance languages like portuguese and english, while cross referencing with rust, ruby and javascript
 
 < Hangul, the Korean writing system, is quite different from the writing systems of Romance languages like Portuguese and English. While Romance languages use alphabets based on the Latin script, Hangul is a unique and distinct writing system that was specifically designed to represent the sounds of the Korean language.
