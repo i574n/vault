@@ -23,6 +23,9 @@ jobs:
   push:
     needs: build
     runs-on: ubuntu-latest
+    env:
+      FLEEK_TOKEN: ${{ secrets.FLEEK_TOKEN }}
+      FLEEK_PROJECT_ID: ${{ secrets.FLEEK_PROJECT_ID }}
     permissions:
       contents: write
     steps:
@@ -42,3 +45,12 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: gh-pages
           publish_branch: gh-pages
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm i -g @fleekxyz/cli
+
+      - if: ${{ steps.hash.outputs.hash != github.event.before }}
+        run: cd gh-pages && fleek sites deploy
