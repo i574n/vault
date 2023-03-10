@@ -53,4 +53,4 @@ jobs:
       - run: npm i -g @fleekxyz/cli
 
       - if: ${{ steps.hash.outputs.hash != github.event.before }}
-        run: cd gh-pages && fleek sites deploy
+        run: cd gh-pages && pwsh publish.ps1
