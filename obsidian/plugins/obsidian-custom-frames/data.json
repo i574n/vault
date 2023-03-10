@@ -2,14 +2,14 @@
   "frames": [
     {
       "url": "https://",
-      "displayName": "https://",
+      "displayName": "https_dark://",
       "icon": "",
       "hideOnMobile": true,
       "addRibbonIcon": true,
       "openInCenter": true,
       "zoomLevel": 0.6,
       "forceIframe": false,
-      "customCss": "body {\nfont-family: Roboto Condensed Medium;\nbackground-color: #000;\ncolor: #fff;\n}\n\nimg, video {\n  filter: invert(1);\n}\n\nsvg, [class*=\"icon\"], [class*=\"Icon\"], [class*=\"btn\"], [class*=\"button\"] {\n  filter: invert(1);\n}\n\na {\n  color: #fff;\n  border-bottom: 1px solid #fff;\n} "
+      "customCss": "body {\n  font-family: Roboto;\n}\n\nbody,div,span,table,td,th,header,.icon-edits,.mw-header {\n  font-family: Roboto;\n  background: #232323 !important;\n  color: #ccc !important;\n}\n\na {\n  color: #cdcd42 !important;\n  border-bottom: 1px solid #dada13 !important;\n}\n\nimg, video {\n  filter: invert(1);\n}\n\nsvg, [class*=\"icon\"], [class*=\"Icon\"], [class*=\"btn\"], [class*=\"button\"] {\n  filter: invert(1);\n}\n\n*::-webkit-scrollbar {\n  width: 13px;\n}\n\n*::-webkit-scrollbar:horizontal {\n  height: 8px;\n}\n\n*::-webkit-scrollbar-track {\n  display: none;\n}\n\n*::-webkit-scrollbar-corner {\n  display: none;\n}\n\n*::-webkit-scrollbar-thumb {\n  background: #555;\n  opacity: 0.8;\n  background-clip: content-box;\n  border-left: 2px solid transparent;\n}\n*::-webkit-scrollbar-thumb:hover, *:hover::-webkit-scrollbar-thumb {\n  background-color: #999;\n  background-clip: content-box;\n  border-left: 2px solid transparent;\n}\n"
     },
     {
       "url": "http://",
@@ -20,7 +20,18 @@
       "openInCenter": true,
       "zoomLevel": 0.6,
       "forceIframe": false,
-      "customCss": "body {\nfont-family: Roboto Condensed Medium;\nbackground-color: #000;\ncolor: #fff;\n}\n\nimg, video {\n  filter: invert(1);\n}\n\nsvg, [class*=\"icon\"], [class*=\"Icon\"], [class*=\"btn\"], [class*=\"button\"] {\n  filter: invert(1);\n}\n\na {\n  color: #fff;\n  border-bottom: 1px solid #fff;\n}"
+      "customCss": "body {\n  font-family: Roboto;\n  background: #232323 !important;\n  color: #ccc !important;\n}\n\nimg, video {\n  filter: invert(1);\n}\n\nsvg, [class*=\"icon\"], [class*=\"Icon\"], [class*=\"btn\"], [class*=\"button\"] {\n  filter: invert(1);\n}\n\na {\n  color: #cdcd42 !important;\n  border-bottom: 1px solid #dada13 !important;\n}"
+    },
+    {
+      "url": "https://",
+      "displayName": "https://",
+      "icon": "",
+      "hideOnMobile": true,
+      "addRibbonIcon": false,
+      "openInCenter": false,
+      "zoomLevel": 0.6,
+      "forceIframe": false,
+      "customCss": "body {\n  font-family: Roboto;\n}\n"
     }
   ],
   "padding": 5
