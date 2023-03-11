@@ -77,6 +77,80 @@ Hangul was a revolutionary development in Korean history, breaking down barriers
 
 Today, hangul remains a powerful symbol of Korean culture and identity, recognized around the world as one of the most efficient and effective writing systems ever created. Its legacy is a testament to the power of innovation and the determination of a people to overcome even the greatest challenges in pursuit of progress.
 
+## draw out a hangul cheat sheet
+
+< Certainly! Here's a cheat sheet for Hangul:
+
+Consonants: ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ
+Vowels: ㅏ ㅑ ㅓ ㅕ ㅗ ㅛ ㅜ ㅠ ㅡ ㅣ
+Double Vowels: ㅐ ㅒ ㅔ ㅖ ㅘ ㅙ ㅚ ㅝ ㅞ ㅟ ㅢ
+Combined Vowels: ㅗㅏ ㅗㅐ ㅗㅣ ㅜㅓ ㅜㅔ ㅜㅣ ㅡㅣ
+Diphthongs: ㅑㅣ ㅕㅣ ㅛㅣ ㅠㅣ
+Here's an example of how to use these characters to create the word "Hello" in Hangul:
+ㅎ ㅏ ㄴ ㄱ ㅓ ㅇ ㅇ ㅏ
+
+I hope this cheat sheet is helpful for you!
+
+## generate an advanced hangul cheat sheet in markdown table format
+
+< Sure, here's an advanced Hangul cheat sheet in Markdown table format:
+
+Consonants | Pronunciation |  |  | Vowels | Pronunciation
+-----------|---------------|--|--|--------|--------------
+ㄱ | g/k |  |  | ㅏ | a
+ㄴ | n |  |  | ㅑ | ya
+ㄷ | d/t |  |  | ㅓ | eo
+ㄹ | r/l |  |  | ㅕ | yeo
+ㅁ | m |  |  | ㅗ | o
+ㅂ | b/p |  |  | ㅛ | yo
+ㅅ | s |  |  | ㅜ | u
+ㅇ | ng |  |  | ㅠ | yu
+ㅈ | j |  |  | ㅡ | eu
+ㅊ | ch |  |  | ㅣ | i
+ㅋ | k
+ㅌ | t
+ㅍ | p
+ㅎ | h
+
+Double Vowels | Pronunciation
+--------------|--------------
+ㅐ | ae
+ㅒ | yae
+ㅔ | e
+ㅖ | ye
+ㅘ | wa
+ㅙ | wae
+ㅚ | oe
+ㅝ | wo
+ㅞ | we
+ㅟ | wi
+ㅢ | ui
+
+Combined Vowels | Pronunciation
+----------------|--------------
+ㅗㅏ | oa
+ㅗㅐ | oae
+ㅗㅣ | oi
+ㅜㅓ | ueo
+ㅜㅔ | ue
+ㅜㅣ | ui
+ㅡㅣ | eui
+
+Diphthongs | Pronunciation
+-----------|--------------
+ㅑㅣ | yai
+ㅕㅣ | yeui
+ㅛㅣ | yoi
+ㅠㅣ | yui
+
+Here's an example of how to use these characters to create the word "Hello" in Hangul:
+
+ㅎ | ㅏ | ㄴ | ㄱ | ㅓ | ㅇ | ㅇ | ㅏ
+--|---|---|---|---|---|---|--
+h | a | n | g | eo | ng | - | a
+
+I hope this advanced cheat sheet is helpful for you!
+
 ## detail important hangul mnemonics
 
 < Hangul, the Korean writing system, was designed with the principle of phonetics and sound symbolism in mind. As such, the characters are intended to be easy to learn and remember, with mnemonics used to help associate each character with its corresponding sound.
