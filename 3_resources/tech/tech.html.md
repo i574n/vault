@@ -16,3 +16,9 @@ urlsuffix: hn.algolia.com/?dateRange=all&page=0&prefix=true&query=spiral&sort=by
 frame: https://
 style: height:40vh
 ```
+
+```custom-frames
+urlsuffix: wheregoes.com
+frame: https://
+style: height:40vh
+```
