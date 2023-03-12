@@ -1,4 +1,7 @@
-< Yo, listen up, I got a story to tell
+---
+---
+
+Yo, listen up, I got a story to tell
 'Bout the changes in society, the rise and the fell
 The family's individualized, it's every man for himself
 The collective to the singular, the group to the wealth
@@ -22,3 +25,5 @@ In the end, who are we? Virtuous or sinful?
 A society of contradictions, constantly in limbo
 We say one thing, but do another, it's all so simple
 Intimacy's the only place to be, where we can truly know.
+
+---

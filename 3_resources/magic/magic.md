@@ -1,4 +1,7 @@
-< In addition to the Victorian Era, other relevant time periods for obscure charms and talismans include:
+---
+---
+
+In addition to the Victorian Era, other relevant time periods for obscure charms and talismans include:
 
 1. The Middle Ages - a time when various religious and mystical symbols were used as charms, such as the cross and the pentagram.
 2. Ancient civilizations - such as the Egyptians, Greeks, and Romans, who utilized various amulets, talismans, and charms in their daily lives.

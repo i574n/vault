@@ -341,7 +341,7 @@ Note that this is just one way to categorize the MBTI types and there may be oth
 
 ## you sorted 4 groups of 4. make it 1 group of 16 with canon sorting
 
-<< Here is a common canon sorting of the 16 MBTI types based on their dichotomies:
+< Here is a common canon sorting of the 16 MBTI types based on their dichotomies:
 
 1. ISTJ (Introverted, Sensing, Thinking, Judging)
 2. ISFJ (Introverted, Sensing, Feeling, Judging)
