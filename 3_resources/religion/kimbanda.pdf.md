@@ -79,4 +79,16 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeigizbuxcnoivn4pux2zhwxuvokqvb25qthdy4zen4fsxaanm5ioom.ipfs.nftstorage.link/Maria_Padilha_reina_de_la_magia.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeig6zmjr4vagwhxqlucgoeh6zjltff3x4taqkfnav6kajxfqbed2mm.ipfs.nftstorage.link/No%20Reino%20Dos%20Exus.pdf
+frame: https://
+style: height:50vh
+```
+
 ---
