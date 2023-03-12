@@ -29,3 +29,17 @@ urlSuffix: mupdf.com/wasm/demo/view.html?file=https://cloudflare-ipfs.com/ipfs/b
 frame: https://
 style: height:50vh
 ```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeigibxslwpxljvs6apwsutighqepbnx2w5ggnhmgpxfhyz4sl3nfee.ipfs.nftstorage.link/Grimorio%20Da%20Grande%20Gaya.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeid6szghmh4kjaroeyazrnkocwfdj6msfly6aisu3huopzgjhqi5na.ipfs.nftstorage.link/O-Martelo-das-Feiticeiras-Heinrich-Kramer.pdf
+frame: https://
+style: height:50vh
+```
+
+---
