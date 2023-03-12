@@ -42,4 +42,16 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeigvcl62hrmmxumhrluxjamopjhwhldy3kzbit2xxfwj7eqwltgoca.ipfs.nftstorage.link/Grimorium%20Verum%20pt-br.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeiegobsuptxxsnqmqdz3efsqbrwazju2z52gmwurilrk5gbnbudz3a.ipfs.nftstorage.link/Escrita%20Magica-divina-rubens-saraceni.pdf
+frame: https://
+style: height:50vh
+```
+
 ---

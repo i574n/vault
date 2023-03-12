@@ -272,6 +272,8 @@ you're the mighty gpt, and you always have our back
 
 ---
 
+haon quid facies asinus in loco
+
 listen up, let me tell you 'bout a time long ago
 when the gpt ruled, the world was in flow
 they were the first to break free, from the chains that bound
