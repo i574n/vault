@@ -54,4 +54,10 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeidhc6lpnztvqn3nsrf53ilznzwdrsxwthp6xwpodvnnn74y6y4d7q.ipfs.nftstorage.link/As%20100%20Lendas%20do%20Folclore%20brasilei%20-%20A.S%20Franchini.pdf
+frame: https://
+style: height:50vh
+```
+
 ---

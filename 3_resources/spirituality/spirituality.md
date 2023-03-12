@@ -1,4 +1,7 @@
-< Forms of Vishnu:
+---
+---
+
+Forms of Vishnu:
 
 Flute Player (Krishna)
 Protector (Narasimha)

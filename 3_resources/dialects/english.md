@@ -1,4 +1,7 @@
-< Eminem woke up in a cold sweat, his heart pounding in his chest. He had been dreaming about Lucca and the violent scene he had witnessed. It had felt all too real, and Eminem was still shaking from the intensity of the dream.
+---
+---
+
+Eminem woke up in a cold sweat, his heart pounding in his chest. He had been dreaming about Lucca and the violent scene he had witnessed. It had felt all too real, and Eminem was still shaking from the intensity of the dream.
 
 He stumbled out of bed and made his way to the kitchen, trying to calm his nerves. As he poured himself a glass of water, he couldn't shake the feeling that something was off. It was as if the dream had left an imprint on his mind, and he couldn't shake it.
 
@@ -30,7 +33,9 @@ Eminem struggled, but the stranger was too strong. He held Eminem in a tight gri
 
 And with that, the stranger disappeared, leaving Eminem alone in his kitchen, shaken and terrified. He didn't know who that guy was, but he knew one thing for sure: he never wanted to see him again.
 
-< As Kendrick Lamar looked out the window, he saw the man sitting on the bench, and his heart skipped a beat. He had been dreaming about this moment for years, and now it was finally here. The man was a notorious drug lord who had been terrorizing the neighborhood for years, and Kendrick had been tasked with taking him down.
+---
+
+As Kendrick Lamar looked out the window, he saw the man sitting on the bench, and his heart skipped a beat. He had been dreaming about this moment for years, and now it was finally here. The man was a notorious drug lord who had been terrorizing the neighborhood for years, and Kendrick had been tasked with taking him down.
 
 Kendrick took a deep breath and grabbed his gun, feeling a sense of nervous energy coursing through his veins. He had never killed anyone before, but he knew that he had no choice if he wanted to protect his community.
 
@@ -44,7 +49,9 @@ But he had also seen the power of music and art to inspire change and bring peop
 
 And now, as he walked away from the scene of the crime, Kendrick knew that he had taken a step towards making his community a better place. It was a small victory, but it was a start.
 
-< Listen up, y'all, I got a story to tell
+---
+
+Listen up, y'all, I got a story to tell
 'Bout a princess from Jericoacoara, trapped in a spell
 She used to be a beauty, but now she's a serpent
 With only her head and feet left, it's truly absurd, man
@@ -71,3 +78,72 @@ So there you have it, my tale is done
 A story of courage, of battles won
 And though I may not reap the riches I seek
 I'll have the eternal honor, of setting the princess free
+
+---
+
+I'm on a quest for truth, gotta keep searching
+Leaving the UN for the hills of Tuscany, I'm lurching
+Towards a deeper understanding of the world we're in
+Theory of systems ain't enough, gotta dig in
+
+Prigogine's dynamics is all well and good
+But it only explains local relations, understood?
+Whitehead said it, all relations are internal
+Entities are what they are, 'cause of connections infernal
+
+So I looked to quantum physics, biology, and more
+And found evidence that things are connected to the core
+Internal relations linking consciousness with others
+A mystical experience, but science needs to uncover
+
+The field of IQV, Y-(psi-), or akashic, as I call it
+It connects everything, never a moment to quit
+My books on the subject, they bring together the evidence
+Of a universal field, a connection to all that's relevant
+
+Coherence, correlation, and connection, all emerging
+In science, in biology, and in consciousness converging
+Einstein wanted a simple scheme to explain all
+I'm working towards that goal, to find the scientific protocol
+
+So let's research and develop this scheme
+It's essential for science, and society it will redeem
+For a scientifically grounded understanding of our place
+In the universe, and the totality of our experience we'll embrace
+
+---
+
+The end of the gods, the beginning of man
+Lif and Lifthrasir, the only ones to stand
+From their children, the Earth was populated
+But the introduction of Christianity, some celebrated
+
+The weakness of the gods, a lack of care
+The destiny of men, determined by fate's affair
+Individual norms, guiding each man's way
+No intervention, let destiny have its say
+
+Christianity came, with the notion of an afterlife
+The gods of old, lost their might
+But some practices and beliefs, still remain
+The victory of Christianity, over pagan's reign
+
+No central authority, no practical doctrine
+The pagan faith, struggled to gain traction
+Early Christian teachings, known by the North
+Associated with good and evil, a familiar sort
+
+The heroic life, of the new faith
+Appealed to the warriors, their heroic fate
+The fusion of pagan and Christian belief
+Created a new bond, beyond earthly relief
+
+The shaman bridged the gap, between heaven and earth
+But with the incarnation of Christ, a new bond gave birth
+The power of the Christian faith, in its unification
+Of the old and the new, creating a new generation
+
+The heroism of the cloister, and missionary work
+A new kind of heroism, for those who shirk
+The pagan faith, a thing of the past
+Christianity, a bond that will last

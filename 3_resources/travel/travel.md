@@ -1,4 +1,7 @@
-< If you're worried about your food not being well-received by the local population, it could be a good idea to consider moving to a country where there is a large demand for Korean cuisine. In recent years, Korean cuisine has become increasingly popular worldwide, so there are many cities around the world where you may be able to find work as a Korean chef.
+---
+---
+
+If you're worried about your food not being well-received by the local population, it could be a good idea to consider moving to a country where there is a large demand for Korean cuisine. In recent years, Korean cuisine has become increasingly popular worldwide, so there are many cities around the world where you may be able to find work as a Korean chef.
 Some of the countries where Korean cuisine is popular include:
 United States: cities like Los Angeles, New York City, and Chicago are known for having a large Korean population, which has led to the opening of many Korean restaurants.
 Canada: Toronto and Vancouver have seen a rise in popularity of Korean cuisine in recent years.

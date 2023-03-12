@@ -1,4 +1,7 @@
-< Vedic astrology, also known as Jyotisha, is an ancient system of astrology that originated in India over 3,000 years ago. It is based on the belief that the positions and movements of celestial bodies at the time of a person's birth can provide insight into their personality and future.
+---
+---
+
+Vedic astrology, also known as Jyotisha, is an ancient system of astrology that originated in India over 3,000 years ago. It is based on the belief that the positions and movements of celestial bodies at the time of a person's birth can provide insight into their personality and future.
 It has a more complex system of planetary influences than Western astrology, it not only considers the influence of the 7 traditional planets, but also the influence of the "shadow planets" Rahu and Ketu and sometimes it also includes the outer planets Uranus, Neptune, and Pluto.
 
 There are several branches of Vedic astrology, including:
@@ -33,7 +36,9 @@ Additionally, having accurate and complete background information about the pers
 It's important to note that even with accurate birth data, the interpretation of the chart can still be subject to the astrologer's skill and experience, as well as the specific method used for interpretation.
 It's also worth noting that astrology is not a science, it does not have a solid evidence base, and it's not based on empirical research or statistical analysis. Astrology uses the positions and movements of celestial bodies to provide insight into human behavior and experience, but the interpretation of these positions and movements can vary greatly depending on the astrological system being used and the astrologer's skill and experience.
 
-< With the birth data provided, an astrologer can use it to cast a Vedic astrological chart (also known as a "Jataka" or "Janma Kundali") using software or traditional methods. The chart is then used to analyze the positions of the planets at the time of the birth, which can provide insight into the person's personality, strengths and weaknesses, and the general nature of their life.
+---
+
+With the birth data provided, an astrologer can use it to cast a Vedic astrological chart (also known as a "Jataka" or "Janma Kundali") using software or traditional methods. The chart is then used to analyze the positions of the planets at the time of the birth, which can provide insight into the person's personality, strengths and weaknesses, and the general nature of their life.
 
 The process of casting the chart involves calculating the positions of the planets using the birth data, including the birth date, birth time, and location. The most important variables to consider are the birth time, which is used to calculate the positions of the planets and the houses, and the birth location, which is used to calculate the positions of the houses.
 
@@ -114,7 +119,9 @@ let calculateHouses (chart: Chart) =
 
 ```
 
-< Sure, here are the five main types that could be used to model the Vedic astrology domain using F#:
+---
+
+Sure, here are the five main types that could be used to model the Vedic astrology domain using F#:
 Nakshatra: A record type that represents the 27 lunar mansions or constellations. Each Nakshatra is associated with a specific planetary ruler and has specific characteristics that can indicate the general nature of the person born under it.
 Rashi (Zodiac Sign): A discriminated union type that represents the 12 zodiac signs in Vedic astrology: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, and Pisces. Each Rashi is associated with a specific planetary ruler and has specific characteristics that can indicate the general nature of the person born under it.
 Dasha: A record type that represents the planetary periods that rule a person's life. Dasha system is used to predict the timing of events in a person's life and it's based on the relative positions of the planets at the time of birth.

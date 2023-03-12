@@ -1,4 +1,7 @@
-< The three main divisions of time used in Hindu scriptures are Yugas, Manvantaras, and Kalpas, which we will describe below. There are four Yugas, which together comprise 12,000 divine years. The respective durations of each Yuga are as follows:
+---
+---
+
+The three main divisions of time used in Hindu scriptures are Yugas, Manvantaras, and Kalpas, which we will describe below. There are four Yugas, which together comprise 12,000 divine years. The respective durations of each Yuga are as follows:
 
 The Krita Yuga = 4800 divine years.
 The Treta Yuga = 3600 divine years.

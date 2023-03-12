@@ -1,5 +1,7 @@
+---
+---
 
-< It's important to note that assigning a numerical rating to the weather of a city is a highly subjective task, and it will depend on personal preferences and the criteria used to make the assessment. However, based on general consensus and considering factors such as temperature, precipitation, and overall climate, here are 20 cities around the world that could potentially be considered to have weather with a rating higher than 750:
+It's important to note that assigning a numerical rating to the weather of a city is a highly subjective task, and it will depend on personal preferences and the criteria used to make the assessment. However, based on general consensus and considering factors such as temperature, precipitation, and overall climate, here are 20 cities around the world that could potentially be considered to have weather with a rating higher than 750:
 
 Honolulu, Hawaii (USA) - 800
 San Diego, California (USA) - 790
@@ -24,7 +26,9 @@ Durban, South Africa - 765
 
 Note that this list is a selection of cities with a high rating, there are many other cities that could have a high rating as well.
 
-< Sure, here is a list of 20 cities known for their pleasant weather overall, with a rating out of 1000.
+---
+
+Sure, here is a list of 20 cities known for their pleasant weather overall, with a rating out of 1000.
 
 San Diego, California, USA - 900
 Honolulu, Hawaii, USA - 890
@@ -49,7 +53,9 @@ Bristol, England, UK - 710
 
 It's worth noting that, as with any list of this nature, the rankings are somewhat subjective and may vary depending on individual preferences and what people are used to. Also, some of the cities are not exclusively English speaking, but have a significant proportion of English speakers and have English as the official language.
 
-< Here is a list of 20 English-speaking cities with a pleasant overall yearly weather rating, considering that inhabitants live in the streets with no access to air conditioning or heating:
+---
+
+Here is a list of 20 English-speaking cities with a pleasant overall yearly weather rating, considering that inhabitants live in the streets with no access to air conditioning or heating:
 
 San Diego, California (USA) - rating: 800
 Honolulu, Hawaii (USA) - rating: 800
