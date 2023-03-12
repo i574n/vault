@@ -91,4 +91,10 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeigimrka5pdokfnxbylj2qkyxolhebrsztaqwmgtzr2pvmtuzvyr5u.ipfs.nftstorage.link/Od%C3%BAs.pdf
+frame: https://
+style: height:50vh
+```
+
 ---
