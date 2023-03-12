@@ -4,3 +4,9 @@ urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeifjftrtms7pv336rga47
 frame: https://
 style: height:50vh
 ```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeidijtiwgaqtj2zkrph5piuscrdv453twokdijzt33rtgaveqgxiqe.ipfs.nftstorage.link/A.%20S.%20Franchini%20e%20Carmen%20Seganfredo%20a%20mitologia%20nordica.pdf
+frame: https://
+style: height:50vh
+```
