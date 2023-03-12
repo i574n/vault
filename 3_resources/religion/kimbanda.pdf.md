@@ -61,4 +61,22 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeifhv6r5qchjdnt26q34y4x2gobeqcolvxiljfnuancfe2e4p7kjia.ipfs.nftstorage.link/Exu%20o%20Guardi%C3%A3o%20da%20Luz.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeic6ojlsurbrlcoatai6q5k6zqjzovfbkziqa2relhce53xwxvwxn4.ipfs.nftstorage.link/Ex%C3%BA%20Marabo.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeidnhmy33nfsnlsr6av343xidpslizfjd7fxffeeg632okdqehqf3q.ipfs.nftstorage.link/A%20MAGIA%20DO%20PONTO%20RISCADO.%20Osvaldo%20Olavo%20Ortiz%20Solera.pdf
+frame: https://
+style: height:50vh
+```
+
 ---
