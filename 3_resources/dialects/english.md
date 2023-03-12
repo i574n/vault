@@ -43,3 +43,31 @@ As he walked away from the scene, Kendrick couldn't help but think about how he 
 But he had also seen the power of music and art to inspire change and bring people together. That was why he had become a rapper - to use his platform to speak out against injustice and inspire his community to come together and make a change.
 
 And now, as he walked away from the scene of the crime, Kendrick knew that he had taken a step towards making his community a better place. It was a small victory, but it was a start.
+
+< Listen up, y'all, I got a story to tell
+'Bout a princess from Jericoacoara, trapped in a spell
+She used to be a beauty, but now she's a serpent
+With only her head and feet left, it's truly absurd, man
+But there's a way to break the curse, it's no lie
+But it takes a real man, willing to die
+Only with the sacrifice of a human life
+Can she be freed from her reptilian strife
+
+So who's the man that's brave enough to try?
+To face the danger head on, to do or die
+I'll tell you what, I'll be that man tonight
+I'll take the risk, no matter what the price
+I'll make my way to that hidden cave
+Where the princess and her palace of riches lay
+I'll offer up my life, spill my blood on her back
+And watch the spell break, see her beauty come back
+
+Princess of Jericoacoara, trapped in a curse
+Only a hero can break it, it couldn't be worse
+But the reward is great, riches beyond measure
+For the one who frees her from her scaly treasure
+
+So there you have it, my tale is done
+A story of courage, of battles won
+And though I may not reap the riches I seek
+I'll have the eternal honor, of setting the princess free
