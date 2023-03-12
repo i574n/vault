@@ -30,3 +30,21 @@ urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeiciyxz3cwzrtyspnkd5r
 frame: https://
 style: height:50vh
 ```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeia75eunmp2i34ombnprlbyt5u3bmzz4pnlifna2gbj74rflvgzdiu.ipfs.nftstorage.link/maria%20padilha.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeifp3y2akhbspbtg34fmz2foi57yhl4yt4qafnyne26stgpme2nspy.ipfs.nftstorage.link/40%20Orix%C3%A1%20Pombagira.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeicgwaytxfvjxtsqqqju5fg2fbelb4ovkhswysyxyg67ub5t25j4k4.ipfs.nftstorage.link/Como_desmanchar_trabalhos_de_quimbanda_vol1.pdf
+frame: https://
+style: height:50vh
+```
