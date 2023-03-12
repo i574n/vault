@@ -48,3 +48,17 @@ urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeicgwaytxfvjxtsqqqju5
 frame: https://
 style: height:50vh
 ```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeicku2n76zg7hcsg6lpemhyvvabn5y44wshxzvkeb7lxrxfeoiachq.ipfs.nftstorage.link/reinos-da-quimbanda.pdf
+frame: https://
+style: height:50vh
+```
+
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeifg4jkzuplsguir6bq674b5fhdmfjzskq3wglmybis2zlvzxq3e7a.ipfs.nftstorage.link/Lendas%20Africanas%20Dos%20Orixas%20-%20Pierre%20Fatumbi%20Verger.pdf
+frame: https://
+style: height:50vh
+```
+
+---
