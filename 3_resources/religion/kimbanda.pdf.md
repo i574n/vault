@@ -97,4 +97,10 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeihsyfyuaczwg5cyao4uvvc2x5cmkqdmsjmh3dfpykl4snf4ham22m.ipfs.nftstorage.link/Livro%20de%20Exu%20-%20O%20Mist%C3%A9rio%20Revelado.pdf
+frame: https://
+style: height:50vh
+```
+
 ---

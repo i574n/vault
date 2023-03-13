@@ -147,3 +147,79 @@ The heroism of the cloister, and missionary work
 A new kind of heroism, for those who shirk
 The pagan faith, a thing of the past
 Christianity, a bond that will last
+
+---
+
+I'm about to drop some real knowledge,
+So listen up, you cruel monsters, it's time to acknowledge
+The power of love, and how it's generated
+By the supreme Jove, who created
+A new kind of seed, with a new kind of sex
+Beautiful and malicious, and oh so complex
+Their chests, reserved for the Furies alone
+But Cupid's arrows can pierce to the bone
+Don't be ashamed of the flames of desire
+Even Jove himself was once consumed by their fire
+Whether in hell or up in the skies
+Love can burn bright, but it can also capsize
+Look at Narcissus and Hippolytus, and learn
+To be kind and compassionate, and never spurn
+Fedra's love, even if it's twisted and wrong
+Show her mercy, and help her move on
+Tirse sees good things in your future
+Don't be blind to love, don't be a loser
+Like Triton, who burned for Nereus' daughter
+Tisbe was elusive, but he finally caught her
+With the help of Proteus, the sea shepherd
+Tisbe's heart finally opened, no longer weathered
+When Girce was betrayed by Ulisses
+Triton vowed to avenge her, and he seized
+The winds and waves, and brought the Greeks to their knees
+Tisbe surrendered, and they had a million kisses, if you please
+From their love, the ocean was filled with new life
+Triton and Nereus had a brand new strife
+So listen up, young men, and learn the rules
+Of love and life, don't be anyone's fool
+Be careful, be cautious, don't fall for the traps
+That love can set, and never look back
+With these lessons, you'll conquer hearts and minds
+And build a legacy that will stand the test of time
+
+---
+
+A great destruction is coming to this earth
+A flood, a devastation that will give birth
+To a child that will survive, with his three sons
+While all of humanity will be undone
+
+This child will procreate the fleshly giants
+A great punishment will wash away the defiance
+Enoch knew the secrets of the Lord above
+And saw in the tablets the future of love
+
+Methuselah, Enoch's son, heard these words
+And returned with knowledge, his mind in a whirl
+He named the child Noah, a survivor true
+To save his offspring from the corruptive stew
+
+Enoch wrote a book for Methuselah to keep
+And for those after him, to avoid the sinful deep
+Wait until the wicked are consumed by fate
+Until sin passes and their names are erased
+
+The spirits of sinners and blasphemers will burn
+In the fire without bottom, they'll never return
+The righteous will bless the name of the Lord
+For their pure spirits have passed the test of the sword
+
+God will reward those who love Him with passion
+Who endured suffering without earthly fashion
+They've loved the heavens with eternal zeal
+And praised His name with a heart full of appeal
+
+The judgments of God are always right
+The faithful will dwell in the homes of light
+They'll see those who were born in the dark
+Thrown into darkness, a life without a spark
+
+---
