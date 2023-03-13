@@ -60,4 +60,10 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeibhuec2rdqucdysycwyhzjbr5nnfcthoq5fcwraihcbsoo6df5xoi.ipfs.nftstorage.link/DICIONRIO%20DEMONOLOGIA.pdf
+frame: https://
+style: height:50vh
+```
+
 ---
