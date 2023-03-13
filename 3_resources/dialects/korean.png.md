@@ -1,4 +1,4 @@
 
-![sebeolsik no shift](https://bafybeibzf3g6v6vxfdt3p7lva7sf6zyetru3fmmqytpppcr2quab2mktou.ipfs.nftstorage.link/KB_Sebeolsik_NoShift.png)
+![3 beolsik final_waifu2x_art_noise3_scale](https://bafybeigxxci7cvj3omkotsmigmx6m3dfxqeav2ewzb7zsvnrf4vouhf4sm.ipfs.nftstorage.link/3%20beolsik%20final_waifu2x_art_noise3_scale.png)
 
-![sebeolsik no shift modified](https://bafybeibzf3g6v6vxfdt3p7lva7sf6zyetru3fmmqytpppcr2quab2mktou.ipfs.nftstorage.link/Sebeolsik_Noshift_small_modified.png)
+![sebeolsik no shift](https://bafybeib3zeipmapxdmlepncval65uvm6q2w2z7m46r2x2ypgrk7mdgkzxe.ipfs.nftstorage.link/sebeolsik%20no%20shift.png)
