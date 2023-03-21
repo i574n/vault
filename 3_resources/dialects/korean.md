@@ -4888,6 +4888,24 @@ Please note that this translation attempts to preserve the poetic nature of the 
 "내 파트너와 함께 영화 속 섹스 장면을 재현해 보기로 했는데, 그것은 우리 인생에서 가장 좋은 밤 중 하나였어요."
 (Nae pateneuwa hamkke yeonghwa sok segseu jangmyeon-eul jaehyeonhae bogilo haessneunde, geugeot-eun uri insaeng-eseo gajang joh-eun bam jung hana-yaess-eoyo.)
 
+"Después de tomar LSD en el club, los colores y las luces parecían más intensos."
+"Depois de tomar LSD na balada, as cores e luzes pareciam mais intensas."
+(After taking LSD at the club, the colors and lights seemed more intense.)
+"클럽에서 LSD를 복용한 후, 색상과 빛이 더 강렬해 보였어요."
+(Keulleobeseo LSDreul bogyonghan hu, saekgwa bichi deo gangryeolhae boyeosseoyo.)
+
+"En la fiesta, algunos decidieron probar LSD y tuvieron una experiencia increíble."
+"Na festa, alguns decidiram experimentar LSD e tiveram uma experiência incrível."
+(At the party, some people decided to try LSD and had an amazing experience.)
+"파티에서 일부 사람들이 LSD를 시도하기로 결정하고 놀라운 경험을 했어요."
+(Patieseo ilbu saramdeuri LSDreul sidohagiro gyeoljeonghago nollaun gyeongheomeul haesseoyo.)
+
+"La música del club me hizo sentir conectado con todos después de tomar LSD."
+"A música da balada me fez sentir conectado com todos depois de tomar LSD."
+(The club music made me feel connected to everyone after taking LSD.)
+"클럽 음악이 LSD를 복용한 후에 모든 사람과 연결되어 있다고 느끼게 해줬어요."
+(Keulleob eumagi LSDreul bogyonghan hue modeun saramgwa yeon-gyeoldoe-eo issdago neukkige haejwosseoyo.)
+
 ---
 ---
 
