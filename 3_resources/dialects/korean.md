@@ -3534,6 +3534,1360 @@ Please note that this translation attempts to preserve the poetic nature of the 
 "클럽의 음악이 고품질 마리화나 싸이를 피운 후에 더 좋게 들렸어요."
 (Keulleobui eumagi gopumjil marihwana ssaireul piun hue deo johge deullyeosseoyo.)
 
+"Antes de salir en la nave, nos fumamos un caño para relajarnos."
+"Antes de partir na nave, fumamos um baseado para relaxar."
+(Before taking off on the spaceship, we smoked a joint to relax.)
+"우주선을 띄우기 전에, 우리는 편안해지기 위해 마리화나를 피웠어요."
+(Ujusoneul ttuiugi jeone, uri-neun pyeonanhaejigi wihae marihwanareul piwosseoyo.)
+
+"Después de explorar el planeta, nos sentamos a fumar y hablar de nuestra experiencia."
+"Depois de explorar o planeta, sentamos para fumar e falar sobre nossa experiência."
+(After exploring the planet, we sat down to smoke and talk about our experience.)
+"행성을 탐험한 후, 우리는 앉아서 마리화나를 피우고 우리의 경험에 대해 이야기했어요."
+(Haengseong-eul tamheomhan hu, uri-neun anjaseo marihwanareul piugo uri-ui gyeongheome daehae iyagihesseoyo.)
+
+"Mientras viajamos por el espacio, fumar marihuana nos ayuda a pasar el tiempo."
+"Enquanto viajamos pelo espaço, fumar maconha ajuda a passar o tempo."
+(While we travel through space, smoking marijuana helps us pass the time.)
+"우주를 여행하는 동안, 마리화나를 피우는 것이 시간을 보내는 데 도움이 됩니다."
+(Uju-reul yeohaenghaneun dong-an, marihwanareul piuneun geosi siganeul bonaeneun de doum-i doemnida.)
+
+"La vista desde la ventana de la nave mientras fumamos es impresionante."
+"A vista da janela da nave enquanto fumamos é impressionante."
+(The view from the spaceship window while we smoke is impressive.)
+"우리가 마리화나를 피우면서 바라본 우주선 창문의 경치는 인상적입니다."
+(Uriga marihwanareul piuseumyeon barabon ujuson changmun-ui gyeongchineun insangjeog-imnida.)
+
+"Cuando visitamos el planeta de los extraterrestres, nos ofrecieron fumar una hierba que nunca antes habíamos probado."
+"Quando visitamos o planeta dos alienígenas, eles nos ofereceram fumar uma erva que nunca tínhamos experimentado antes."
+(When we visited the planet of the aliens, they offered us to smoke a herb we had never tried before.)
+"외계인들의 행성을 방문했을 때, 우리는 이전에 시도해 본 적이 없는 허브를 피우게 됐어요."
+(Oe-gye-indeul-ui haengseong-eul bangmunhaesseul ttae, uri-neun ijeon-e sido hae bon jeogi eopsneun heobeuleul piuge doess-eoyo.)
+
+"Los extraterrestres nos enseñaron cómo fumar una planta que los hace sentir eufóricos."
+"Os alienígenas nos ensinaram como fumar uma planta que os faz sentir eufóricos."
+(The aliens taught us how to smoke a plant that makes them feel euphoric.)
+"외계인들은 자신들을 행복하게 만드는 식물을 피우는 법을 우리에게 가르쳐 주었어요."
+(Oe-gye-indeul-eun jasin-deul-eul haengboghage mandeuneun sigmul-eul piuneun beob-eul uri-ege galeuchyeo jueosseoyo.)
+
+"Cuando fumamos con los extraterrestres, pudimos comunicarnos sin palabras."
+"Quando fumamos com os alienígenas, pudemos nos comunicar sem palavras."
+(When we smoked with the aliens, we were able to communicate without words.)
+"외계인들과 마리화나를 피울 때, 우리는 말 없이 서로 대화할 수 있었어요."
+(Oe-gye-indeul-gwa marihwanareul piul ttae, uri-neun mal eobs-i seolo daehwahal su iss-eoss-eoyo.)
+
+"Después de fumar la hierba alienígena, tuvimos un viaje muy psicodélico."
+"Depois de fumar a erva alienígena, tivemos uma viagem muito psicodélica."
+(After smoking the alien herb, we had a very psychedelic trip.)
+"외계인의 허브를 피운 후, 우리는 매우 사이키델릭한 여행을 했어요."
+(Oe-gye-in-ui heobeuleul piun hu, uri-neun maeu saikideullighan yeohaeng-eul haesseoyo.)
+
+"Después de comer los hongos, la experiencia fue completamente psicodélica."
+"Depois de comer os cogumelos, a experiência foi completamente psicodélica."
+(After eating the mushrooms, the experience was completely psychedelic.)
+"버섯을 먹은 후, 경험은 완전히 사이키텔릭하게 변했어요."
+(Beoseot-eul meogeun hu, gyeongheom-eun wanjeonhi saikitellikhage byeonhaesseoyo.)
+
+"Los hongos que encontramos en el bosque eran de una variedad muy potente."
+"Os cogumelos que encontramos na floresta eram de uma variedade muito potente."
+(The mushrooms we found in the forest were of a very potent variety.)
+"우리가 숲에서 찾은 버섯은 매우 강력한 종류였어요."
+(Uriga sup-eseo chajeun beoseot-eun maeu ganglyeoghan jonglyueosseoyo.)
+
+"Los efectos de los hongos se sintieron muy rápidamente después de comerlos."
+"Os efeitos dos cogumelos foram sentidos muito rapidamente depois de comê-los."
+(The effects of the mushrooms were felt very quickly after eating them.)
+"버섯의 효과는 먹은 직후 매우 빠르게 느껴졌어요."
+(Beoseot-ui hyogwa-neun meogeun jikhue maeu ppareuge neukkyeojyeosseoyo.)
+
+"Después de comer los hongos, nos sentimos conectados con la naturaleza."
+"Depois de comer os cogumelos, nos sentimos conectados com a natureza."
+(After eating the mushrooms, we felt connected to nature.)
+"버섯을 먹은 후, 우리는 자연과 연결된 느낌을 받았어요."
+(Beoseot-eul meogeun hu, uri-neun jayeon-gwa yeon-gyeoldoen neukkimeul bad-ass-eoyo.)
+
+"Los hongos nos ayudaron a tener una perspectiva diferente sobre la vida."
+"Os cogumelos nos ajudaram a ter uma perspectiva diferente sobre a vida."
+(The mushrooms helped us to have a different perspective on life.)
+"버섯은 우리에게 삶에 대한 다른 시각을 가지게 해 주었어요."
+(Beoseot-eun uriege salm-e daehan dareun sigag-eul gajige hae ju-eosseoyo.)
+
+"Después de inhalar DMT, me sumergí en un mundo de colores y formas alucinantes."
+"Depois de inalar DMT, mergulhei em um mundo de cores e formas alucinantes."
+(After inhaling DMT, I plunged into a world of hallucinogenic colors and shapes.)
+"DMT를 흡입한 후, 나는 환각적인 색상과 형태의 세계로 빠져들었어요."
+(DMTleul heubibhan hue, naneun hwangakjeog-in saeksang-gwa hyeongtaeui segye-ro ppajyeodeureosseoyo.)
+
+"El efecto del DMT me hizo sentir que estaba flotando en el espacio."
+"O efeito do DMT me fez sentir que estava flutuando no espaço."
+(The effect of DMT made me feel like I was floating in space.)
+"DMT의 영향으로, 나는 우주에서 떠다니는 것처럼 느껴졌어요."
+(DMTui yeonghyang-euro, naneun ujueseo tteodanineun geoscheoreom neukkyeojyeosseoyo.)
+
+"Después de inhalar DMT, me di cuenta de que todo en el universo está interconectado."
+"Depois de inalar DMT, percebi que tudo no universo está interconectado."
+(After inhaling DMT, I realized that everything in the universe is interconnected.)
+"DMT를 흡입한 후, 우주의 모든 것이 상호 연결되어 있다는 것을 깨달았어요."
+(DMTleul heubibhan hue, uju-ui modeun geosi sangho yeon-gyeoldoeeo itdaneun geoseul kkaedalasseoyo.)
+
+"El viaje de DMT me hizo experimentar una sensación de unidad con el universo."
+"A viagem de DMT me fez experimentar uma sensação de unidade com o universo."
+(The DMT trip made me experience a sense of unity with the universe.)
+"DMT 여행을 하면서, 나는 우주와 하나가 되었다는 느낌을 경험했어요."
+(DMT yeohaeng-eul hamyeonseo, naneun uju-wa hana-ga doeeossdaneun neukkimeul gyeongheomhaesseoyo.)
+
+"Después de inhalar DMT, sentí como si estuviera viajando en el tiempo y el espacio."
+"Depois de inalar DMT, senti como se estivesse viajando no tempo e no espaço."
+(After inhaling DMT, I felt like I was traveling through time and space.)
+"DMT를 흡입한 후, 나는 시간과 공간을 여행하고 있는 것처럼 느껴졌어요."
+(DMTleul heubibhan hue, naneun sigangwa gonggan-eul yeohaenghago issneun geoscheoreom neukkyeojyeosseoyo.)
+
+"Cuando alguien me provoca, no me importa pelear y darle una paliza."
+"Quando alguém me provoca, não me importo de brigar e dar uma surra nele."
+(When someone provokes me, I don't mind fighting and beating them up.)
+"누군가 나를 도발하면, 싸워서 그를 이겨 버리는 것에 상관하지 않아요."
+(Nugunga nareul dobakhaneun myeon, ssawoseo geureul igyeo beolineun geose sanggwanhaji anhayo.)
+
+"Si alguien se mete con mi familia, no dudaré en tomar medidas drásticas."
+"Se alguém mexer com a minha família, não hesitarei em tomar medidas drásticas."
+(If someone messes with my family, I won't hesitate to take drastic measures.)
+"누군가 내 가족에게 상처를 준다면, 나는 강력한 조치를 취할 것이에요."
+(Nugunga nae gajogege sangcheoleul jundamyeon, naneun gangnyeokhan jochireul chwi-hal geosieyo.)
+
+"Si alguien se interpone en mi camino, no dudaré en atacar sin piedad."
+"Se alguém ficar no meu caminho, não hesitarei em atacar sem piedade."
+(If someone gets in my way, I won't hesitate to attack mercilessly.)
+"누군가 내 길에 방해가 된다면, 나는 불쑥 공격할 것이에요."
+(Nugunga nae gire banghaega doendamyeon, naneun bulssuk gong-gyeokhal geosieyo.)
+
+"Si alguien se mete conmigo, se arrepentirá de haber nacido."
+"Se alguém mexer comigo, vai se arrepender de ter nascido."
+(If someone messes with me, they'll regret ever being born.)
+"누군가 나를 건드린다면, 그들은 태어난 것을 후회할 거에요."
+(Nugunga nareul geondeurindamyeon, geudeureun taeeonangeul huhwehal geoeyeyo.)
+
+"Cuando alguien me desafía, no me importa jugar sucio para ganar."
+"Quando alguém me desafia, não me importo de jogar sujo para ganhar."
+(When someone challenges me, I don't mind playing dirty to win.)
+"누군가 나를 도전하면, 이기기 위해 비열한 수를 써도 괜찮아요."
+(Nugunga nareul dojeonhamyeon, igigi wihae bieolhan su-reul sseodo gwaenchanaoyo.)
+
+"Después de haber sido mordido por un vampiro, sentí un hambre insaciable por sangre."
+"Depois de ter sido mordido por um vampiro, senti uma fome insaciável por sangue."
+(After being bitten by a vampire, I felt an insatiable hunger for blood.)
+"흡혈귀에게 물렸을 때, 나는 피에 대한 만족할 수 없는 갈증을 느꼈어요."
+(Heubhyeolgwiegege mollyeosseul ttae, naneun pie daehan manjokhal su eopsneun galjeung-eul neukkyeoss-eoyo.)
+
+"Los vampiros son inmortales y tienen una gran sed de sangre humana."
+"Os vampiros são imortais e têm uma grande sede de sangue humano."
+(Vampires are immortal and have a great thirst for human blood.)
+"흡혈귀는 불멸이며, 인간의 피에 대한 큰 갈증을 가지고 있어요."
+(Heubhyeolgwieun bulmyeolimyeo, ingan-ui pie daehan keun galjeung-eul gajigo isseoyo.)
+
+"Después de convertirme en vampiro, tuve que aprender a controlar mis impulsos y sed de sangre."
+"Depois de me tornar um vampiro, tive que aprender a controlar meus impulsos e sede de sangue."
+(After becoming a vampire, I had to learn to control my impulses and thirst for blood.)
+"나는 흡혈귀가 된 후, 내 본능과 피에 대한 갈증을 조절하는 법을 배워야 했어요."
+(Naneun heubhyeolgwiega doen hu, nae bonneung-gwa pie daehan galjeung-eul jojeolhaneun beob-eul baewoya haesseoyo.)
+
+"Los vampiros no pueden estar al sol sin sufrir daño; por eso, siempre salen de noche."
+"Os vampiros não podem ficar no sol sem sofrer dano; por isso, sempre saem à noite."
+(Vampires can't be in the sun without suffering harm; that's why they always come out at night.)
+"흡혈귀는 태양 아래에 있을 경우 상처를 입을 수 없어서, 항상 밤에만 나오게 돼요."
+(Heubhyeolgwieun taeyang alae iss-eul gyeo sangcheoleul ib-eul su eobs-eoseo, hangsang bameman na-ogae dwaeyo.)
+
+"La sangre humana es el alimento principal de los vampiros; nada puede reemplazarla."
+"O sangue humano é o alimento principal dos vampiros; nada pode substituí-lo."
+(Human blood is the main food of vampires; nothing can replace it.)
+"인간의 피는 흡혈귀의 주요 식품입니다. 그것을 대체할 수 있는 것은 없어요."
+(Ingan-ui pieun heubhyeolgwieui juyo sikpum-imnida. Geugeos-eul daechehal su issneun geoseun eobs-eoyo.)
+
+"El roce de su piel contra la mía me hizo sentir un deseo ardiente en todo el cuerpo."
+"O toque da pele dele na minha fez meu corpo sentir um desejo ardente."
+(The touch of his skin against mine made my body feel a burning desire.)
+"그의 피부가 내것과 마주칠 때, 내 몸 전체에서 뜨거운 욕망을 느꼈어요."
+(Geuui pibuga naegeosgwa majuchil ttae, nae mom jeonche-eseo tteugeoun yokmang-eul neukkyeosseoyo.)
+
+"Su boca suave y húmeda se deslizó sobre la mía, haciéndome gemir de placer."
+"Sua boca macia e úmida deslizou sobre a minha, me fazendo gemer de prazer."
+(His soft and wet mouth slid over mine, making me moan with pleasure.)
+"그의 부드러우면서도 축축한 입술이 내 입술을 넘어서며, 나를 쾌락으로 몰아 넣었어요."
+(Geuui budeureumyeonseodo chukchukhan ibsul-i nae ibsul-eul neomeoseomyeo, naleul kkwaelag-eulo mola neoh-eoss-eoyo.)
+
+"La sensación de su cuerpo desnudo junto al mío me hizo sentir una excitación sin igual."
+"A sensação do seu corpo nu junto ao meu me fez sentir uma excitação sem igual."
+(The sensation of his naked body next to mine made me feel an unmatched excitement.)
+"그의 벗겨진 몸이 내 옆에 붙어있는 느낌은 나에게 비할 데 없는 흥분을 선사했어요."
+(Geuui beotgyeojin mom-i nae yeop-e buteoissneun neukkimeun naege bihal de eobsneun heungbun-eul seonsahaesseoyo.)
+
+"La forma en que me miraba con lujuria me hizo desearlo aún más."
+"A maneira como ele me olhava com luxúria me fez desejar ainda mais."
+(The way he looked at me with lust made me want him even more.)
+"그가 욕망으로 나를 바라본 것이 나를 더욱 원하게 만들었어요."
+(Geu-ga yokmang-eulo naleul balabon geos-i naleul deouk wonhage mandeul-eoss-eoyo.)
+
+"El contacto de su cuerpo musculoso y sudoroso contra el mío me hizo delirar de placer."
+"O contato do seu corpo musculoso e suado contra o meu me fez delirar de prazer."
+(The contact of his muscular and sweaty body against mine made me delirious with pleasure.)
+"그의 근육질이고 땀이 많은 몸이 내 몸과 닿을 때, 나는 기쁨으로 인해 미쳐버렸어요."
+(Geuui geunyugjil-igodo ttaemi manh-eun mom-i nae momgwa dah-eul ttae, naneun gippeum-eulo inhae mich
+
+"La presión en el trabajo es tan alta que no puedo tomar ni un minuto de descanso."
+"A pressão no trabalho é tão alta que não posso nem tirar um minuto de descanso."
+(The pressure at work is so high that I can't even take a minute of rest.)
+"일하는 압력이 너무 높아서, 조금이라도 쉬는 시간을 가져갈 수 없어요."
+(Ilhaneun aplyeog-i neomu nopaseo, jogeum-ilado swineun sigan-eul gajyeogal su eobs-eoyo.)
+
+"El examen final está causando una gran presión en mí; siento que no estoy preparado."
+"O exame final está causando uma grande pressão em mim; sinto que não estou preparado."
+(The final exam is causing me a lot of pressure; I feel unprepared.)
+"최종시험 때문에 나는 많은 압력을 느끼고 있어요. 내가 준비되지 않았다고 느껴져요."
+(Choejongsiheom ttaemun-e naneun manh-eun aplyeog-eul neukkigo iss-eoyo. Naega junbi-doeji anh-assdago neukkyeojyeoyo.)
+
+"La presión de tener éxito en mi carrera es abrumadora; siento que siempre estoy fallando."
+"A pressão de ter sucesso na minha carreira é esmagadora; sinto que estou sempre falhando."
+(The pressure of succeeding in my career is overwhelming; I feel like I'm always failing.)
+"나의 직업에서 성공하는 것에 대한 압력은 엄청나요. 항상 실패하고 있다는 느낌이 들어요."
+(Naui jig-eob-eseo seong-gonghaneun geos-e daehan aplyeog-eun eomchyeongnayo. Hangsang silpae-hago issdaneun neukkim-i deul-eoyo.)
+
+"La presión de mantener una imagen perfecta en las redes sociales puede ser agotadora."
+"A pressão de manter uma imagem perfeita nas redes sociais pode ser exaustiva."
+(The pressure of maintaining a perfect image on social media can be exhausting.)
+"소셜미디어에서 완벽한 이미지를 유지해야 하는 압력은 지치게 할 수 있어요."
+(Sosyeolmidieo-eseo wanbyeokhan imiji-reul yujihaeya haneun aplyeog-eun jichige hal su iss-eoyo.)
+
+"La presión de ser el mejor en mi deporte es constante; siempre estoy entrenando."
+"A pressão de ser o melhor no meu esporte é constante; estou sempre treinando."
+(The pressure of being the best in my sport is constant; I'm always training.)
+"나의 스포츠에서 최고가 되어야 하는 압력은 항상 존재합니다. 항상 훈련 중입니다."
+(Naui seupocheueseo choegoga doeeoya haneun aplyeog-eun hangsang jonjaehamnida. Hangsang hunlyeon jung-ibnida.)
+
+"El tacto de sus dedos expertos en mi cuerpo hizo que mi piel se erizara de placer."
+"O toque dos seus dedos experientes no meu corpo fez minha pele arrepiar de prazer."
+(The touch of his expert fingers on my body made my skin tingle with pleasure.)
+"그의 전문가 같은 손가락이 내 몸에 닿으면서, 내 피부가 쾌감으로 움찔했어요."
+(Geuui jeonmungahat-eun songalag-i nae mom-e da-eumyeonseo, nae pibuga kkwae-gam-eulo umjjilhaesseoyo.)
+
+"La sensación de sus labios suaves y cálidos en mi cuello me hizo desear más."
+"A sensação dos seus lábios macios e quentes no meu pescoço me fez desejar mais."
+(The sensation of his soft and warm lips on my neck made me crave more.)
+"그의 부드러우면서 따뜻한 입술이 내 목에서 느껴지면서, 더 많이 원하게 되었어요."
+(Geuui budeureumyeonseo ttatteushan ibsul-i nae mog-eseo neukkyeojimyeonseo, deo manh-i wonhage doeeoss-eoyo.)
+
+"Me miró con ojos llenos de lujuria mientras me quitaba la ropa lentamente."
+"Ele me olhou com olhos cheios de luxúria enquanto eu tirava minhas roupas lentamente."
+(He looked at me with eyes full of lust as I slowly took off my clothes.)
+"그는 나가 천천히 옷을 벗기는 동안, 욕망으로 가득찬 눈으로 나를 바라봤어요."
+(Geuneun naga cheoncheonhi os-eul beotgineun dong-an, yokmang-eulo gadeugchan nun-eulo naleul balabwass-eoyo.)
+
+"Sus gemidos roncos y sensuales hicieron que mi cuerpo se estremeciera de placer."
+"Seus gemidos roucos e sensuais fizeram meu corpo tremer de prazer."
+(His husky and sensual moans made my body tremble with pleasure.)
+"그의 거친 그리고 감각적인 절규는 내 몸을 쾌감으로 떨게 만들었어요."
+(Geuui geochin geuligo gamgagjeog-in jeolguyeoneun nae mom-eul kkwae-gam-eulo tteolge mandeul-eoss-eoyo.)
+
+"Me encanta ver cómo te excitas mientras me muestro en la cámara."
+"Adoro ver como você se excita enquanto me exibo na câmera."
+(I love seeing how you get aroused while I show myself on camera.)
+"당신이 카메라에 나타날 때, 당신이 흥분되는 것을 보는 것을 사랑해요."
+(Dangsin-i kamelae nat-an ttae, dangsin-i heungbundeoneun geos-eul boneun geos-eul salanghaeyo.)
+
+"Mis movimientos sensuales y provocativos te hacen perder la cabeza."
+"Meus movimentos sensuais e provocativos te deixam louco."
+(My sensual and provocative movements make you lose your mind.)
+"내 감각적이고 도발적인 움직임은 당신이 제정신을 잃게 만들어요."
+(Nae gamgagjeog-igo dobalgjeog-in umjig-im-eun dangsin-i jejeongsin-eul ilhge mandeul-eoyo.)
+
+"Me gusta verte disfrutar mientras te doy un show privado."
+"Gosto de ver você curtindo enquanto te dou um show particular."
+(I like seeing you enjoy while I give you a private show.)
+"당신이 나의 개인적인 쇼를 보는 동안 즐기는 것을 보는 것이 좋아요."
+(Dangsin-i na-ui gaeinjeog-in syoleul boneun dong-an jeulgineun geos-eul boneun geos-i joh-ayo.)
+
+"La idea de que alguien me esté mirando mientras me toco me excita muchísimo."
+"A ideia de alguém me olhando enquanto me toco me excita muito."
+(The idea of someone watching me while I touch myself turns me on a lot.)
+"나가 자위하는 동안 누군가가 나를 보고 있다는 생각이 나를 매우 흥분시키고 있어요."
+(Naga jawihaneun dong-an nugungaga naleul bogo issneun saeng-gag-i naleul mae-u heungbunsikigo isseoyo.)
+
+"Me encanta que me pidas que haga cosas sucias y pervertidas en la cámara."
+"Adoro quando você me pede para fazer coisas sujas e pervertidas na câmera."
+(I love it when you ask me to do dirty and perverted things on camera.)
+"당신이 카메라에서 더러운 것과 변태적인 것을 해달라고 부탁하는 것을 좋아해요."
+(Dangsin-i kamelaeeseo deoreoun geos-gwa byeontaejeog-in geos-eul haedallago butag-haneun geos-eul johahae-yo.)
+
+"Me encanta ver cómo nuestros personajes favoritos tienen relaciones íntimas en este doujinshi."
+"Adoro ver como nossos personagens favoritos têm relações íntimas nesse doujinshi."
+(I love seeing how our favorite characters have intimate relationships in this doujinshi.)
+"우리가 좋아하는 캐릭터들이 이 동인지에서 서로 관계를 가지는 것을 보는 것을 좋아해요."
+(Uriga joh-ahaneun kaerikt-eodeul-i i dong-injieseo seolo gwangyaleul gajineun geoseul boneun geoseul johahae-yo.)
+
+"Me excita mucho leer este doujinshi, me hace fantasear sobre mi personaje favorito."
+"Fico muito excitada lendo esse doujinshi, me faz fantasiar sobre meu personagem favorito."
+(I get very turned on reading this doujinshi; it makes me fantasize about my favorite character.)
+"나는 이 동인지를 읽으면서 나의 즐겨찾는 캐릭터에 대한 환상을 갖게 됩니다."
+(Naneun i dong-injileul ilgeumyeonseo naui jeulgyeo-jangneun kaerikt-eo-e daehan hwansang-eul gajge dwimnida.)
+
+"Me gusta cómo este doujinshi retrata las escenas de sexo con tanto detalle y realismo."
+"Gosto de como esse doujinshi retrata as cenas de sexo com tanto detalhe e realismo."
+(I like how this doujinshi portrays sex scenes with so much detail and realism.)
+"이 동인지가 성적인 장면을 이렇게 자세하고 현실적으로 그린다는 것이 마음에 들어요."
+(I dong-injiga seongjeog-in jangmyeon-eul ireohge jas-eohago hyeonsiljeog-eulo geulin-da-neun geosi ma-eum-e deul-eoyo.)
+
+"La historia de este doujinshi es tan excitante que no puedo dejar de leerlo."
+"A história desse doujinshi é tão excitante que não consigo parar de lê-lo."
+(The story of this doujinshi is so exciting that I can't stop reading it.)
+"이 동인지의 이야기는 그렇게 흥분되는데 나는 그것을 읽는 것을 멈출 수 없어요."
+(I dong-injui iyagi-neun geuleohge heungbundeoneunde naneun geugeos-eul ilgeun geos-eul meomchul su eobs-eoyo.)
+
+"La escena de tortura en este libro de terror es tan vívida que me hizo sentir incómodo."
+"A cena de tortura neste livro de terror é tão vívida que me fez sentir desconfortável."
+(The torture scene in this horror book is so vivid that it made me feel uncomfortable.)
+"이 공포 소설의 고문 장면은 너무 생생해서 나를 불편하게 만들었어요."
+(I gongpo soseol-ui gomun jangmyeon-eun neomu saengsaenghaeseo nareul bulpyeonhage mandeul-eosseoyo.)
+
+"Este juego de terror es tan intenso que me hace sentir como si estuviera viviendo en una pesadilla."
+"Esse jogo de terror é tão intenso que me faz sentir como se estivesse vivendo em um pesadelo."
+(This horror game is so intense that it makes me feel like I'm living in a nightmare.)
+"이 공포 게임은 너무 강렬해서 내가 악몽에서 깨어난 것처럼 느껴져요."
+(I gongpo geim-eun neomu gangnyeolhaeseo naega akmong-eseo kkaeeonan geoscheoleom neukkyeojyeoyo.)
+
+"Este libro de terror es tan perturbador que no puedo dejar de pensar en él incluso después de terminar de leerlo."
+"Esse livro de terror é tão perturbador que não consigo parar de pensar nele mesmo depois de terminar de lê-lo."
+(This horror book is so disturbing that I can't stop thinking about it even after finishing reading it.)
+"이 공포 소설은 너무 광적이어서 나는 그것을 읽은 후에도 계속해서 생각을 멈출 수 없어요."
+(I gongpo soseol-eun neomu gwangjeog-ieoseo naneun geugeos-eul ilgeun hueodo gyesoghae-seo saeng-gag-eul meomchul su eobs-eoyo.)
+
+"La escena de violación en esta película de terror es tan gráfica que no puedo dejar de sentir náuseas."
+"A cena de estupro neste filme de terror é tão gráfica que não consigo parar de sentir náuseas."
+(The rape scene in this horror movie is so graphic that I can't stop feeling nauseous.)
+"이 공포 영화의 강간 장면은 너무 생생해서 나는 메스꺼움을 느낄 수 없어요."
+(I gongpo yeonghwa-ui gangan jangmyeon-eun neomu saengsaenghaeseo naneun meseukkeoum-eul neukkil su eobs-eoyo.)
+
+"Me encanta cuando mi pareja me toca con delicadeza y me acaricia hasta que pierdo el control."
+"Eu adoro quando meu parceiro me toca com delicadeza e me acaricia até que eu perca o controle."
+(I love it when my partner touches me delicately and caresses me until I lose control.)
+"내가 파트너에게 부드럽게 만져지며, 그들이 내가 통제력을 잃을 때까지 쓰다듬어 줄 때 정말 좋아해."
+(Naega pateneuge budeuleobge manjyeojimyeo, geudeul-i naega tongjelyeog-eul ilh-eul ttaekkaji sseudadeum-eo jul ttae jeongmal johahae.)
+
+"Cada vez que mi pareja me toca el pecho, me hace sentir tan excitado que no puedo resistirme."
+"Toda vez que meu parceiro toca meu peito, me sinto tão excitado que não consigo resistir."
+(Whenever my partner touches my chest, it makes me feel so aroused that I can't resist.)
+"내 파트너가 내 가슴을 만지면 내가 너무 흥분돼서 참을 수 없어."
+(Nae pateneuga nae gaseum-eul manjimyeon naega neomu heungbundwaeseo cham-eul su eobs-eo.)
+
+"Me encanta cómo mi pareja acaricia mi espalda mientras me besa apasionadamente."
+"Eu adoro como meu parceiro acaricia minhas costas enquanto me beija apaixonadamente."
+(I love how my partner caresses my back while passionately kissing me.)
+"내 파트너가 열정적으로 나를 키스하는 동안 내 등을 쓰다듬는 것이 얼마나 좋은지 모르겠어."
+(Nae pateneuga yeoljeongjeog-eulo naleul kiseuhaneun dong-gan nae deung-eul sseudadeumneun geos-i eolmana joh-eunji moleugess-eo.)
+
+"Cada vez que mi pareja me toca entre las piernas, me hace sentir tan caliente que no puedo resistirme."
+"Toda vez que meu parceiro me toca entre as pernas, me sinto tão quente que não consigo resistir."
+(Whenever my partner touches me between my legs, it makes me feel so hot that I can't resist.)
+"내 파트너가 내 다리 사이를 만지면 내가 너무 뜨거워서 참을 수 없어."
+(Nae pateneuga nae dal-i sai leul manjimyeon naega neomu tteugeowoseo cham-eul su eobs-eo.)
+
+"Me encanta la sensación de tener varias personas tocándome y besándome al mismo tiempo durante una orgía."
+"Eu adoro a sensação de ter várias pessoas me tocando e me beijando ao mesmo tempo durante uma orgia."
+(I love the feeling of having multiple people touching and kissing me at the same time during an orgy.)
+"제가 오르기를 하는 동안 여러 사람들이 저를 만져주고 입맞춤을 해주는 느낌이 너무 좋아요."
+(Jega oreugileul haneun dong-an yeoleo salamdeul-i jeoleul manj-eojugo ibmajchum-eul haejuneun neukkim-i neomu joh-ayo.)
+
+"La idea de estar con varios hombres al mismo tiempo me excita muchísimo."
+"A ideia de estar com vários homens ao mesmo tempo me excita muito."
+(The idea of being with multiple men at the same time excites me so much.)
+"여러 남자들과 동시에 함께하면 나는 매우 흥분되요."
+(Yeoleo namjadeulgwa dongsie hamkkehamyeon naneun maeu heungbundwaeyo.)
+
+"Me encanta ser la protagonista en una orgía con varios hombres y sentirme deseada por todos ellos."
+"Eu adoro ser a protagonista em uma orgia com vários homens e sentir-me desejada por todos eles."
+(I love being the protagonist in an orgy with multiple men and feeling desired by all of them.)
+"나는 여러 남자들과 함께하는 오르기에서 주인공이 되고 모두들이 나를 원한다는 느낌이 좋아."
+(Naneun yeoleo namjadeulgwa hamkkehaneun oreugieseo ju-ingong-i doego modudeul-i naleul wonhandaneun neukkim-i joha.)
+
+"Ser el centro de atención en una orgía con varios hombres es una de las cosas más excitantes que puedo imaginar."
+"Ser o centro das atenções em uma orgia com vários homens é uma das coisas mais excitantes que posso imaginar."
+(Being the center of attention in an orgy with multiple men is one of the most exciting things I can imagine.)
+"여러 남자들이 모여서 나에게 집중해주는 오르기는 나에게 가장 흥분되는 일 중 하나예요."
+(Yeoleo namjadeul-i moyeoseo na-ege jibjunghaejuneun oreugineun na-ege gajang heungbundoeun neol jung hanayeyo.)
+
+"Estaba nerviosa al principio, pero después de ver la forma en que me miraban, me dejé llevar y disfruté del trío."
+"Eu estava nervosa no começo, mas depois de ver a forma como eles me olhavam, me deixei levar e aproveitei o ménage à trois."
+(I was nervous at first, but after seeing the way they looked at me, I let go and enjoyed the threesome.)
+"처음에는 긴장되었지만, 그들이 나를 바라보는 모습을 보고 난 후에, 난 그들과 함께 성적 경험을 즐겼어."
+(Cheoeum-eneun ginjangdoeeossjiman, geudeul-i naleul balaboneun moseub-eul bogo nan hu-deul-gwa hamkke seongjeog gyeongheom-eul jeulgyeosseo.)
+
+"Me encanta cuando me rodean y me tocan al mismo tiempo en todas partes."
+"Eu adoro quando me cercam e me tocam ao mesmo tempo em todas as partes."
+(I love it when they surround me and touch me all over at the same time.)
+"그들이 내 주변을 둘러싸고, 동시에 나를 만지는 것이 정말 좋아."
+(Geudeul-i nae jubeon-eul dull-eossago, dongsie naleul manjineun geos-i jeongmal joh-a.)
+
+"Después de varios tragos, me dejé llevar y tuve relaciones sexuales con tres personas al mismo tiempo."
+"Depois de algumas bebidas, me deixei levar e fiz sexo com três pessoas ao mesmo tempo."
+(After a few drinks, I let go and had sex with three people at the same time.)
+"몇 잔 마신 후에, 나는 이들과 함께 세 명과 동시에 섹스를 하며 쾌감을 느꼈어."
+(Myeoch jan masin hue, naneun ideulgwa hamkke se myeong-gwa dongsie seksuleul hamyeo kwae-gam-eul neukkyeosseo.)
+
+"Estaba en el centro de la habitación rodeada de hombres, cada uno de ellos ansioso por tocarme y besarme."
+"Eu estava no centro do quarto cercada por homens, cada um deles ansioso para me tocar e me beijar."
+(I was in the center of the room surrounded by men, each one eager to touch me and kiss me.)
+"나는 방의 중앙에 있는 남자들에 의해 둘러싸여 있었고, 그들은 내가 만지고 키스하길 간절히 바라고 있었어."
+(Naneun bang-ui jung-ang-e issneun namjadeul-e uihae dull-eoss-yeo isseoss-go, geudeul-eun naega manjigo kiseugil ganjeolhi balago isseoss-eo.)
+
+"Nos encanta organizar orgías y tener sexo en grupo; es una experiencia tan intensa y placentera."
+"Nós adoramos organizar orgias e fazer sexo em grupo; é uma experiência tão intensa e prazerosa."
+(We love organizing orgies and having group sex; it's such an intense and pleasurable experience.)
+"우리는 오르가이즈를 조직하고 그룹 섹스를 하는 것을 사랑해요. 그것은 너무나 강렬하고 쾌감적인 경험이에요."
+(Urineun olegeijeuleul jojigago geulup seksleul haneun geoseul salanghaeyo. Geugeos-eun neomuna gangnyeolhago kwaegamjeog-in gyeongheom-ieyo.)
+
+"La última vez que participé en un gangbang, me sorprendió lo mucho que me gustó ser el centro de atención."
+"Da última vez que participei de um gangbang, me surpreendi com o quanto gostei de ser o centro das atenções."
+(The last time I participated in a gangbang, I was surprised at how much I enjoyed being the center of attention.)
+"마지막으로 갱방에 참여한 것은 나 자신이 주목받는 것을 즐기는 것에 놀라웠어요."
+(Majimag-eulo gaengbang-e chamyeohan geos-eun na jasin-i jumogbadneun geoseul jeulgineun geos-e nolraweosseoyo.)
+
+"Me encanta cuando varios hombres me penetran al mismo tiempo durante un gangbang; es una sensación tan abrumadora."
+"Eu adoro quando vários homens me penetram ao mesmo tempo durante um gangbang; é uma sensação tão avassaladora."
+(I love it when several men penetrate me at the same time during a gangbang; it's such an overwhelming sensation.)
+"갱방 중에 여러 남자들이 동시에 저를 침입시키면, 그것은 너무나 압도적인 감각이에요."
+(Gaengbang jung-e yeoleo namjadeul-i dongsie jeoleul chim-ibshikimyeon, geugeos-eun neomuna apdojeog-in gamgag-ieyo.)
+
+"La idea de tener sexo con varios desconocidos en un gangbang me emociona y me asusta al mismo tiempo."
+"A ideia de fazer sexo com vários desconhecidos em um gangbang me excita e me assusta ao mesmo tempo."
+(The idea of having sex with several strangers in a gangbang both excites and scares me at the same time.)
+"여러 낯선 사람들과 갱방에서 섹스를 하는 생각은 동시에 나를 흥분하게 하고 두렵게도 만들어요."
+(Yeoleo nassseon salamdeulgwa gaengbang-eseo seksleul haneun saeng-gag-eun dongsie naleul heungbunhage hageo duleobge-do mandeul-eoyo.)
+
+"Me excita tanto cuando mi pareja acaricia mi cuerpo con una navaja afilada, sintiendo cómo la hoja raspa suavemente contra mi piel."
+"Me excita tanto quando meu parceiro acaricia meu corpo com uma faca afiada, sentindo como a lâmina arranha suavemente minha pele."
+(It turns me on so much when my partner caresses my body with a sharp knife, feeling the blade gently scrape against my skin.)
+"내 파트너가 예리한 칼로 내 몸을 쓰다듬으면, 그 느낌이 정말 흥분되고요."
+(Nae pateneuga yelihan kallo nae mom-eul sseudadeumyeon, geu neukkim-i jeongmal heungbundoeugo yo.)
+
+"Me encanta sentir cómo la hoja de la navaja se desliza por mi piel, causando pequeñas heridas que me hacen sentir viva."
+"Adoro sentir como a lâmina da faca desliza sobre minha pele, causando pequenos ferimentos que me fazem sentir viva."
+(I love feeling the blade of the knife slide across my skin, causing small cuts that make me feel alive.)
+"칼날이 내 피부를 스치면서 작은 상처를 일으키는 것이, 나를 살아있는 것처럼 느끼게 해요."
+(Kalnal-i nae pibuleul seuchimyeonseo jag-eun sangcheoleul il-uhkineun geos-i, naleul sal-aissneun geoscheoleom neukkige haeyo.)
+
+"Me excita tanto cuando mi pareja usa una navaja para cortar mi ropa y dejarme expuesta ante sus ojos."
+"Me excita tanto quando meu parceiro usa uma faca para cortar minha roupa e me deixar exposta diante de seus olhos."
+(It turns me on so much when my partner uses a knife to cut my clothing and leave me exposed before their eyes.)
+"내 파트너가 칼을 이용해 내 옷을 베어내면, 그들의 눈앞에 노출되는 것이 정말 흥분돼요."
+(Nae pateneuga kalleul iyonghae nae os-eul beeonaemyeon, geudeul-ui nun-ap-e nochuldoeneun geos-i jeongmal heungbundwaeyo.)
+
+"Sentir a mi pareja penetrándome profundamente mientras estamos en la posición del misionero es una de las cosas más placenteras que he experimentado."
+"Sentir meu parceiro me penetrando profundamente enquanto estamos na posição do missionário é uma das coisas mais prazerosas que já experimentei."
+(Feeling my partner penetrate me deeply while in the missionary position is one of the most pleasurable things I have experienced.)
+"미션너리 자세로 서로가 서로를 깊이 침입하는 것을 느끼는 것은, 내가 경험한 가장 쾌감적인 일 중 하나에요."
+("Missionary" jaseolo seoroga seoroleul gip-i chim-yoghaneun geos-eul neukkineun geos-eun, naega gyeongheomhan gajang kkwakgamjeog-in il jung hana-eyo.)
+
+"Me encanta sentir el cuerpo de mi pareja contra el mío mientras estamos en la posición del misionero, viendo cómo su rostro refleja el placer que ambos sentimos."
+"Adoro sentir o corpo do meu parceiro contra o meu enquanto estamos na posição do missionário, vendo como seu rosto reflete o prazer que ambos sentimos."
+(I love feeling my partner's body against mine while in the missionary position, seeing their face reflect the pleasure that we both feel.)
+"미션너리 자세로 서로의 몸을 느끼는 것은, 우리 둘 모두가 느끼는 쾌감을 그 얼굴에 비추는 것을 보는 것도 좋아요."
+("Missionary" jaseolo seoroui mom-eul neukkineun geos-eun, uli dul moduga neukkineun kkwakgameul geu eolgul-e bichuneun geosdo joh-ayo.)
+
+"La posición del misionero me permite sentir cada movimiento de mi pareja y disfrutar al máximo de cada embestida."
+"A posição do missionário me permite sentir cada movimento do meu parceiro e aproveitar ao máximo cada investida."
+(The missionary position allows me to feel every movement of my partner and fully enjoy each thrust.)
+"미션너리 자세는 내 파트너의 모든 움직임을 느낄 수 있게 해주며, 매 촉각을 완전히 즐길 수 있게 해줘요."
+("Missionary" jaseuneun nae pateneui modeun umjig-im-eul neukkil su issge haejumyeo, mae chog-gag-eul wanjeonhi jeulgil su issge haejwoyo.)
+
+"Me encanta cuando mi pareja me ata las manos y me obliga a mirar mientras me toca y me masturba hasta que me corro."
+"Adoro quando meu parceiro me amarra as mãos e me obriga a olhar enquanto me toca e me masturba até eu gozar."
+(I love it when my partner ties my hands and forces me to watch as they touch and masturbate me until I cum.)
+"내 파트너가 내 손을 묶고, 나를 만지며 자위시켜주면서 나를 강제로 보게 해서, 나를 섹시하게 만드는 것을 좋아해요."
+(Nae pateneuga nae son-eul mukgo, naleul manjimyeo jawisikyeojumyeonseo naleul gangjeolo boge haeseo, naleul seksihage mandeuneun geos-eul johahae yo.)
+
+"Me encanta cuando mi pareja me venda los ojos y me hace experimentar nuevas sensaciones mientras me toca y me acaricia por todo el cuerpo."
+"Adoro quando meu parceiro me venda os olhos e me faz experimentar novas sensações enquanto me toca e me acaricia pelo corpo todo."
+(I love it when my partner blindfolds me and makes me experience new sensations as they touch and caress me all over my body.)
+"내 파트너가 나의 눈을 가리고, 내 몸 전체를 만지고 쓰다듬으면서 새로운 감각을 체험시켜준다면, 그것이 정말 좋아요."
+(Nae pateneuga naui nun-eul garigo, nae mom jeoncheleul manjigo sseudadeumyeonseo saeroun gamgag-eul cheheomshikyeojundamyeon, geugeos-i jeongmal johayo.)
+
+"Me excita tanto cuando mi pareja me ata y me pone en posiciones sexuales nuevas e interesantes, experimentando el placer del bondage y la sumisión."
+"Me excita tanto quando meu parceiro me amarra e me coloca em posições sexuais novas e interessantes, experimentando o prazer do bondage e da submissão."
+(It turns me on so much when my partner ties me up and puts me in new and interesting sexual positions, experiencing the pleasure of bondage and submission.)
+"내 파트너가 나를 묶고 새로운 섹시한 자세로 강제로 바꿔 놓아서, 나는 노예가 된 듯한 기분으로 매우 흥분돼요."
+(Nae pateneuga naleul mukgo saeroun seksihan jaseolo gangjeolo bakkwonohaseo, naneun noye-ga doen deushan gibun-eulo maeu heungbundwaeyo.)
+
+"Me encanta usar mi vibrador mientras veo pornografía; me hace sentir tan caliente y desinhibida."
+"Adoro usar meu vibrador enquanto assisto pornografia; me faz sentir tão excitada e desinibida."
+(I love using my vibrator while watching pornography; it makes me feel so hot and uninhibited.)
+"포르노를 보면서 진동기를 사용하는 걸 좋아해요. 그게 저를 뜨겁고 억제하지 않게 해줘요."
+(Poreuno-reul bomyeonseo jindong-gileul sayonghaneun geol johahae-yo. Geuge jeoleul tteugeopgo eogje-haji anhge haejwoyo.)
+
+"Me gusta experimentar con diferentes tipos de juguetes sexuales; cada uno me hace sentir de una manera diferente."
+"Gosto de experimentar com diferentes tipos de brinquedos sexuais; cada um me faz sentir de uma maneira diferente."
+(I like to experiment with different types of sex toys; each one makes me feel in a different way.)
+"다양한 종류의 성인용품을 실험하는 걸 좋아해요. 각각이 저를 다른 방식으로 느끼게 만들어줘요."
+(Dayanghan jonglyu-ui seong-in-yongpum-eul siheomhaneun geol johahae-yo. Gaggag-i jeoleul dareun bangsig-eulo neukkige mandeul-eojwoyo.)
+
+"Me encanta jugar con mi dildo mientras me tomo una ducha caliente; el agua y la fricción hacen que la experiencia sea aún más intensa."
+"Adoro brincar com meu dildo enquanto tomo um banho quente; a água e o atrito tornam a experiência ainda mais intensa."
+(I love playing with my dildo while taking a hot shower; the water and the friction make the experience even more intense.)
+"뜨거운 샤워를 하면서 딜도로 놀아내는 걸 좋아해요. 물과 마찰로 더 강렬한 경험을 즐길 수 있어요."
+(Tteugeoun syawoleul hamyeonseo dil-dolo nol-anaeneun geol johahae-yo. Mulgwa machal-lo deo ganglyeolhan gyeongheom-eul jeulgil su iss-eoyo.)
+
+"Me encanta usar mis bolas chinas durante todo el día; me siento más alerta y concentrada."
+"Adoro usar minhas bolinhas tailandesas durante todo o dia; me sinto mais alerta e concentrada."
+(I love using my ben wa balls throughout the day; I feel more alert and focused.)
+"저는 하루 종일 중국 구슬을 사용하는 걸 좋아해요. 더욱 경계심을 높이고 집중할 수 있어요."
+(Jeoneun halu jongil jung-guk guseul-eul sayonghaneun geol johahae-yo. Deoug-yug gyeong-gyesim-eul nop
+
+"Me encanta cuando mi pareja me domina y me hace sentir completamente sumisa, dispuesta a hacer lo que él quiera."
+"Eu adoro quando meu parceiro me domina e me faz sentir completamente submissa, pronta para fazer o que ele quiser."
+(I love it when my partner dominates me and makes me feel completely submissive, willing to do whatever he wants.)
+"내 파트너가 나를 지배하고, 내가 그가 원하는 대로 모든 것을 하게 만들 때, 그것을 정말 좋아해요."
+(Nae pateneuga naleul jibaeago, naega geuga wonhaneun daelo modeun geos-eul hage mandeul ttae, geugeos-eul jeongmal johahaeyo.)
+
+"Me siento tan vulnerable cuando mi pareja me sujeta con fuerza y me hace sentir que no tengo control."
+"Sinto-me tão vulnerável quando meu parceiro me segura com força e me faz sentir que não tenho controle."
+(I feel so vulnerable when my partner holds me tightly and makes me feel like I have no control.)
+"내 파트너가 나를 강하게 붙잡고, 내가 아무것도 컨트롤하지 못한다는 느낌을 주면, 나는 매우 취약해져요."
+(Nae pateneuga naleul ganghage butjabgo, naega amugeotdo keonteolhaji mothaneun neukkim-eul jumyeon, naneun maeu chwiakhajyeoyo.)
+
+"Me excita tanto cuando mi pareja me ordena hacer cosas que nunca he hecho antes, y me hace sentir que estoy descubriendo nuevas partes de mí misma."
+"Me excita tanto quando meu parceiro me ordena fazer coisas que nunca fiz antes, e me faz sentir que estou descobrindo novas partes de mim mesma."
+(It turns me on so much when my partner orders me to do things I've never done before, and makes me feel like I'm discovering new parts of myself.)
+"내 파트너가 저에게 전에 해본 적 없는 일을 시키면, 그것이 저의 새로운 면모를 발견하는 것 같아서, 그것이 정말 흥분되어요."
+(Nae pateneuga jeoeg-e jeon-e haebon jeog eobsneun il-eul sikimyeon, geugeosi jeoui saeloun myeonmoleul balgyeonhaneun geos gataseo, geugeosi jeongmal heungbundoeoyo.)
+
+"Me encanta sentir cómo mi pareja me sujeta con fuerza y me hace sentir que soy suya, completamente bajo su control."
+"Adoro sentir como meu parceiro me segura com força e me faz sentir que sou dele, completamente sob seu controle."
+(I love feeling my partner hold me tightly and make me feel like I'm his, completely under his control.)
+"내 파트너가 나를 강하게 붙잡고, 나는 그의 것이며, 그가 완전히 나를 지배한다는 느낌을 받으면, 정말 좋아해요."
+
+"Me encanta cuando mi pareja me da una buena nalgada mientras estamos en plena sesión de juegos eróticos."
+"Adoro quando meu parceiro me dá um bom tapa nas nádegas enquanto estamos em uma sessão de jogos eróticos."
+(I love it when my partner gives me a good spanking while we're in the middle of an erotic play session.)
+"내 파트너가 성적인 게임을 하면서 나에게 좋은 엉덩이를 때면, 그것이 정말 좋아요."
+(Nae pateneuga seongjeog-in geim-eul hamyeonseo na-ege joh-eun eongdeong-ileul ttaemyeon, geugeos-i jeongmal joh-ayo.)
+
+"Me gusta sentir el dolor y el placer que me provoca una buena palmada en el trasero, me hace sentir más sumisa."
+"Gosto de sentir a dor e o prazer que uma boa palmada nas nádegas me provoca, isso me faz sentir mais submissa."
+(I like feeling the pain and pleasure that a good smack on the butt provokes in me, it makes me feel more submissive.)
+"좋은 엉덩이 때리기로 인해 나는 아픔과 쾌감을 느끼며 더욱 복종적인 기분이 들어요."
+(Joh-eun eongdeong-i ttaeligi-lo inhae naneun apeumgwa kkwakgameul neukkime deouk bokjongjeog-in gibun-i deul-eoyo.)
+
+"A veces, cuando me porto mal, me gusta que me den una nalgada como castigo. Me hace sentir humillada y excitada al mismo tiempo."
+"As vezes, quando me comporto mal, gosto que me deem um tapa nas nádegas como punição. Isso me faz sentir humilhada e excitada ao mesmo tempo."
+(Sometimes, when I misbehave, I like being spanked as punishment. It makes me feel humiliated and aroused at the same time.)
+"가끔씩, 나쁜 짓을 할 때, 형벌로 엉덩이를 때려 주는 것을 좋아해요. 그것이 제가 부끄러워하면서 동시에 흥분되게 만들어 주기 때문이에요."
+(Gakkeumssik, nappeun jit-eul hal ttae, hyeongbeollo eongdeong-i ttaelyeo juneun geos-eul joh-ahae-yo. Geugeos-i jega bukkeureowohamyeonseo dongsie heungbundoege mandeul-eo jugi ttaemun-ieyo.)
+
+"Me encanta cómo mi mujer se sienta en mi cara y me obliga a adorar su coño hasta que ella tenga suficiente."
+"Adoro como minha mulher senta em meu rosto e me obriga a adorar sua buceta até que ela esteja satisfeita."
+(I love how my woman sits on my face and makes me worship her pussy until she's satisfied.)
+"내 여자가 내 얼굴에 앉아서, 그녀가 만족할 때까지 그녀의 음부를 숭배하게 되는 것이 정말 좋아요."
+(Nae yeojaga nae eolgul-e anjaseo, geunyeoga manjoghalkkaji geunyeoui eumbuleul sungbaehage doeneun geosi jeongmal joh-ayo.)
+
+"Me gusta cómo mi esposa me ata a la cama y me obliga a satisfacer todos sus deseos sexuales sin poder moverme."
+"Gosto como minha esposa me amarra na cama e me obriga a satisfazer todos os seus desejos sexuais sem poder me mexer."
+(I like how my wife ties me to the bed and makes me satisfy all her sexual desires without being able to move.)
+"내 아내가 나를 침대에 묶고, 나를 움직일 수 없게 만들면서 그녀의 모든 성적 욕구를 충족시키게 하는 것이 좋아요."
+(Nae anae-ga naleul chimdaee mukgo, naleul umjig-il su eobsge mandeulmyeonseo geunyeoui modeun seongjeog yokguleul chungjog-sikigae haneun geosi joh-ayo.)
+
+"Me excita cuando mi ama me ordena desnudarme y hacer cualquier cosa que ella desee."
+"Me excita quando minha dona me ordena para me despir e fazer qualquer coisa que ela desejar."
+(It turns me on when my mistress orders me to undress and do anything she desires.)
+"내 여주인이 나에게 명령하여 옷을 벗고 그녀가 원하는 모든 일을 하게 하면서 내가 흥분되게 해요."
+(Nae yeojuin-i na-ege myeong-yeong-hayeoyo os-eul beotgo geunyeoga wonhaneun modeun il-eul hage hamyeonseo naega heungbundoege haeyo.)
+
+"Me gusta cómo mi jefa me hace sentir inferior y me ordena hacer cosas que nunca pensé que haría."
+"Gosto como minha chefe me faz sentir inferior e me obriga a fazer coisas que nunca pensei que faria."
+(I like how my boss makes me feel inferior and orders me to do things I never thought I'd do.)
+"내 상사가 나를 열등하게 만들고, 내가 절대로 하지 않을 일을 시키면서 나를 만족시키게 해요."
+(Nae sangsaga naleul yeoldung-hage mandeulgo, naega jeoldaero haji aneul il-eul sikimyeonseo naleul manjog-sikigae haey
+
+"Me encanta ver a mi chica en su uniforme de colegiala, me hace sentir como si fuera su profesor y me excita muchísimo."
+"Adoro ver minha garota com seu uniforme de estudante, me faz sentir como se fosse seu professor e isso me excita muito."
+(I love seeing my girl in her schoolgirl uniform, it makes me feel like her teacher and turns me on so much.)
+"내 여자친구가 학생복을 입고 있으면, 그녀의 선생님이 된 것 같아서 매우 흥분됩니다."
+(Nae yeojachinguga haksaengbog-eul ibgo iss-eumyeon, geunyeoui seonsaengnimi doen geos gat-aseo maeu heungbundoeibnida.)
+
+"Me gusta cuando mi jefe me hace usar mi uniforme de mucama y me ordena limpiar la casa mientras me mira con lujuria."
+"Gosto quando meu chefe me faz vestir minha roupa de empregada e me obriga a limpar a casa enquanto me olha com luxúria."
+(I like it when my boss makes me wear my maid uniform and orders me to clean the house while he looks at me with lust.)
+"내 상사가 나에게 하녀 복을 입히고, 그가 욕망으로 나를 쳐다보면서 집을 청소하도록 명령할 때, 나는 그것을 좋아해요."
+(Nae sangsaga na-ege hanyeobog-eul ibhigo, geuga yokmang-eulo naleul chyeodabomyeonseo jib-eul cheongsohadoelog myeong-ryeoghal ttae, naneun geugeos-eul johahae-yo.)
+
+"Me excita mucho ver a mi pareja en su uniforme de policía, me hace sentir como si estuviera siendo arrestado por ella."
+"Fico muito excitado ao ver meu parceiro em seu uniforme de policial, me faz sentir como se estivesse sendo preso por ele."
+(It turns me on a lot to see my partner in their police uniform, it makes me feel like I'm being arrested by them.)
+"나는 내 파트너가 경찰복을 입고 있는 것을 보면, 그가 나를 체포하는 것 같아서 매우 흥분됩니다."
+(Naneun nae pateneuga gyeongchalbog-eul ibgo issneun geos-eul bomyeon, geuga naleul chepohaneun geos gat-aseo maeu heungbundoeibnida.)
+
+"Me encanta cómo mi pareja me penetra por detrás y me hace gemir de placer."
+"Adoro como meu parceiro me penetra por trás e me faz gemer de prazer."
+(I love how my partner penetrates me from behind and makes me moan with pleasure.)
+"내 파트너가 나를 뒤에서 쑤시면서 내가 기쁨으로 울리게 만드는 것이 좋아요."
+(Nae pateneoga naleul dwieseo ssusimyeonseo naega gippeum-eulo ullige mandeuneun geosi joh-ayo.)
+
+"Me gusta cómo mi amante utiliza sus dedos para dilatar mi ano antes de penetrarme con su miembro."
+"Gosto como meu amante usa os dedos para dilatar meu ânus antes de me penetrar com seu membro."
+(I like how my lover uses his fingers to dilate my anus before penetrating me with his member.)
+"내 애인이 그의 회원으로 나를 관통하기 전에 나의 항문을 확장시키기 위해 그의 손가락을 사용하는 것이 좋아요."
+(Nae aeini geuui hoewon-eulo naleul gwantonghagi jeone naui hangmun-eul hwagjangsikigi wihae geuui songalok-eul sayonghaneun geosi joh-ayo.)
+
+"Me excita cómo mi pareja me somete y me penetra por detrás mientras me agarra del pelo."
+"Me excita quando meu parceiro me domina e me penetra por trás enquanto segura meus cabelos."
+(It turns me on when my partner dominates me and penetrates me from behind while holding my hair.)
+"내 파트너가 나를 지배하면서 내 머리카락을 잡고 뒤에서 나를 관통하는 것이 나를 흥분시켜요."
+(Nae pateneuga naleul jibaehamyeonseo nae meolikarak-eul jabgo dwieseo naleul gwantonghaneun geosi naleul heungbunsikyeoyo.)
+
+"Me gusta cómo mi pareja acaricia mi próstata mientras me penetra por detrás y me hace explotar de placer."
+"Gosto como meu parceiro acaricia minha próstata enquanto me penetra por trás e me faz explodir de prazer."
+(I like how my partner strokes my prostate while penetrating me from behind and makes me explode with pleasure.)
+"내 파트너가 나를 뒤에서 관통하면서 내 전립선을 쓰다듬으면서 나를 기쁘게 만드는 것이 좋아요."
+(Nae pateneuga naleul dwieseo gwantonghamyeonseo nae jeollibseoneul sseudadeumeunseonseo naleul gippeuge mandeuneun geosi joh-ayo.)
+
+"Me encanta tener a mi sumisa arrodillada ante mí, lista para hacer todo lo que le ordene."
+"Adoro ter minha submissa de joelhos diante de mim, pronta para fazer tudo o que eu ordenar."
+(I love having my submissive kneeling before me, ready to do anything I order her to do.)
+"내가 명령하는 모든 일을 하기 위해, 나에게 무릎 꿇고 준비된 내 종복을 보는 것이 좋아요."
+(Naega myeong-yeong-haneun modeun il-eul hagi wihae, na-ege mureup kkulgo junbi-doen nae jongbog-eul boneun geosi joh-ayo.)
+
+"Me gusta cuando mi esclavo se retuerce bajo mi látigo mientras le doy una paliza."
+"Gosto quando meu escravo se contorce sob o meu chicote enquanto o espanco."
+(I like it when my slave writhes under my whip while I give him a beating.)
+"내가 채찍질을 하는 동안 내 종복이 비틀거리는 모습이 좋아요."
+(Naega chaejjig-jil-eul haneun dong-an nae jongbog-i biteul-geolineun moseubi joh-ayo.)
+
+"Me gusta tener a mi sirviente a cuatro patas, listo para hacer todo lo que le ordene."
+"Gosto de ter meu servo de quatro, pronto para fazer tudo o que eu ordenar."
+(I like having my servant on all fours, ready to do anything I order him to do.)
+"내가 명령하는 모든 일을 하기 위해 네 발로 서 있는 내 하인을 보는 것이 좋아요."
+(Naega myeong-yeong-haneun modeun il-eul hagi wihae ne balleo seo issneun nae hain-eul boneun geosi joh-ayo.)
+
+"Me encanta cuando mi esclavo me suplica por mis órdenes mientras le azoto."
+"Adoro quando meu escravo implora por minhas ordens enquanto o açoito."
+(I love it when my slave begs for my orders while I whip him.)
+"내 종복이 내가 채찍질하는 동안 내 명령을 간청하는 것을 보는 것이 좋아요."
+(Nae jongbog-i naega chaejjig-jil-haneun dong-an nae myeong-ryeong-eul gancheong-haneun geos-eul boneun geosi joh-ayo.)
+
+"Me gusta sentir la lengua de mi esposa en mi coño mientras uno de nuestros amigos me folla por detrás."
+"Gosto de sentir a língua da minha esposa na minha buceta enquanto um dos nossos amigos me fode por trás."
+(I like feeling my wife's tongue on my pussy while one of our friends fucks me from behind.)
+"우리 친구 중 한 명이 뒤에서 저를 빌리면서, 내 아내가 나의 음부에 혀를 놓는 것을 좋아해요."
+(Uli chingu jung han myeong-i dwieseo jeoleul bili-myeonseo, nae anae-ga na-ui eumbue hyeo-reul nohneun geoseul johahae-yo.)
+
+"Me encanta ver a mi pareja follándose a otra persona mientras yo también me divierto con alguien más."
+"Adoro ver minha parceira transando com outra pessoa enquanto eu também me divirto com outra pessoa."
+(I love watching my partner fuck someone else while I also have fun with someone else.)
+"내 파트너가 다른 사람과 섹스를 할 때, 나도 누군가와 즐거움을 느끼는 것을 좋아해요."
+(Nae pateneoga daleun salamgwa seksleul hal ttae, nado nugunga-wa jeulgeoum-eul neukkineun geoseul johahae-yo.)
+
+"Me encanta cuando me tocan dos personas a la vez y me hacen sentir completamente llena."
+"Adoro quando duas pessoas me tocam ao mesmo tempo e me fazem sentir completamente preenchida."
+(I love it when two people touch me at the same time and make me feel completely filled.)
+"두 명이 동시에 저를 만지면서, 저를 완전히 채워주는 것이 좋아요."
+(Du myeong-i dongsie jeoleul manjimyeonseo, jeoreul wanjeonhi chaewojuneun geosi joh-ayo.)
+
+"Me gusta cómo mis amigos y yo compartimos a nuestras parejas y experimentamos cosas nuevas juntos."
+"Gosto como meus amigos e eu compartilhamos nossas parceiras e experimentamos coisas novas juntos."
+(I like how my friends and I share our partners and experience new things together.)
+"우리 친구들과 함께 우리 파트너를 나누고, 함께 새로운 경험을 하는 것을 좋아해요."
+(Uri chingudeul-gwa hamkke uri pateneul nanugo, hamkke saeroun gyeongheom-eul haneun geoseul johahae-yo.)
+
+"Me gusta exhibirme en público y sentir la emoción de ser descubierto."
+"Gosto de me exibir em público e sentir a emoção de ser descoberto."
+(I like to exhibit myself in public and feel the thrill of being discovered.)
+"나는 공공장소에서 내 자신을 노출하고, 발견될 것 같은 흥분감을 느끼는 것을 좋아해요."
+(Naneun gong-gongjangso-eseo nae jasin-eul nochulhago, balgyeondoeleul geot gateun heungbun-gam-eul neukkineun geos-eul joh-ahae-yo.)
+
+"Me excita cuando mi pareja me lleva a lugares públicos y me hace quitarme la ropa para mostrar mi cuerpo desnudo."
+"Me excita quando meu parceiro me leva para lugares públicos e me faz tirar a roupa para mostrar meu corpo nu."
+(It turns me on when my partner takes me to public places and makes me take off my clothes to show off my naked body.)
+"내 파트너가 나를 공공장소로 데려가서, 내 옷을 벗고, 나의 노출된 몸을 보여주도록 하면서 내가 흥분되게 해요."
+(Nae partneoga naleul gong-gongjangsolo delyeogaseo, nae os-eul beotgo, naui nochuldoen mom-eul boyeojudolog hamyeonseo naega heungbundoege haeyo.)
+
+"Me encanta cuando mi pareja me mira mientras me masturbo en público."
+"Adoro quando meu parceiro me olha enquanto me masturbo em público."
+(I love it when my partner watches me while I masturbate in public.)
+"내 파트너가 나를 공공장소에서 자위하는 것을 볼 때, 그것을 좋아해요."
+(Nae partneoga naleul gong-gongjangso-eseo jawihaneun geoseul bol ttae, geugeos-eul joh-ahae-yo.)
+
+"Me gusta cuando mi pareja me lleva a clubes de swingers y me hace tener relaciones sexuales con extraños mientras otros nos observan."
+"Gosto quando meu parceiro me leva para clubes de swing e me faz ter relações sexuais com estranhos enquanto outros nos observam."
+(I like it when my partner takes me to swinger clubs and makes me have sex with strangers while others watch us.)
+"내 파트너가 나를 스윙 클럽으로 데려가서, 다른 사람들이 우리를 지켜보면서 난생처음 만난 사람들과 섹스하는 것을 좋아해요."
+(Nae partneoga naleul seuying keulleob-euro delyeogaseo, daleun salamdeul-i uli leul jikyeobomyeonseo nansaeng-cheo-eum mannansalamdeulgwa seksuhaneun geoseul joh-ahae-yo.)
+
+"Me gusta usar un vibrador en mi culo mientras mi pareja me da una mamada."
+"Gosto de usar um vibrador no meu cu enquanto meu parceiro me chupa."
+(I enjoy using a vibrator in my ass while my partner gives me a blowjob.)
+"내 파트너가 나를 섹스로 만족시키는 동안 나는 내 엉덩이에 진동기를 사용하는 것을 좋아해요."
+(Nae pateneuga naleul sekslo manjog-sikineun dong-an naneun nae eongdeong-i-e jindong-gireul sayonghaneun geoseul johahae-yo.)
+
+"Usar una manga para masturbar mi pene es una experiencia increíble."
+"Usar uma manga para masturbar meu pau é uma experiência incrível."
+(Using a sleeve to masturbate my penis is an incredible experience.)
+"나의 음경을 자위할 때, 소매를 사용하는 것은 놀라운 경험입니다."
+(Naui eumgyeong-eul jawihal ttae, somaereul sayonghaneun geoseun nollawoon gyeongheomimnida.)
+
+"Me gusta cómo mi novia me usa un anillo vibrador en mi pene mientras hacemos el amor."
+"Gosto como minha namorada me usa um anel vibratório no meu pau enquanto fazemos amor."
+(I like how my girlfriend uses a vibrating ring on my penis while we make love.)
+"내 여자친구가 나와 섹스를 할 때, 진동 링을 사용해서 나의 음경을 자극시키는 것이 좋아요."
+(Nae yeojachinguga nawa seksle hal ttae, jindong ling-eul sayonghaeseo naui eumgyeong-eul jagug-sikineun geosi joh-ayo.)
+
+"Me encanta cómo mi amante usa un juguete sexual en mi próstata para darme un orgasmo increíble."
+"Adoro como meu amante usa um brinquedo sexual na minha próstata para me dar um orgasmo incrível."
+(I love how my lover uses a sex toy on my prostate to give me an incredible orgasm.)
+"내 애인이 전립선 자극을 위해 섹스 토이를 사용해서 내게 놀라운 오르가즘을 선사해주는 것이 좋아요."
+(Nae aeini jeonlibseon jagug-eul wihae seks toieul sayonghaeseo naege nollawoon olegajeumeul seonsa-haejuneun geosi joh-ayo.)
+
+"Me encanta cuando mi pareja me deja oler y lamer sus pies sudados después de un largo día de trabajo."
+"Adoro quando meu parceiro me deixa cheirar e lamber seus pés suados depois de um longo dia de trabalho."
+(I love it when my partner lets me smell and lick their sweaty feet after a long day at work.)
+"내 파트너가 일하던 긴 하루 후에 그들의 땀흘린 발을 냄새 맡고 핥게 해주면 좋아요."
+(Nae pateneoga ilhadeon gin haru hue geudeurui ttamheullin bal-eul naemsaemajgo halgge haejumyeon joh-ayo.)
+
+"Me encanta cuando mi pareja se pone tacones altos y me obliga a lamerlos mientras ella los lleva puestos."
+"Adoro quando meu parceiro usa saltos altos e me obriga a lamber enquanto ela os usa."
+(I love it when my partner wears high heels and makes me lick them while she wears them.)
+"내 파트너가 하이힐을 신고, 그녀가 신고 있을 때 저를 핥게 만들면서 그녀를 보는 것이 좋아요."
+(Nae pateneuga haihil-eul singo, geunyeoga singo isseul ttae jeoleul halgge mandeulmyeonseo geunyeoleul boneun geosi joh-ayo.)
+
+"Me gusta cómo mi amante se quita los zapatos y me frota los pies con los dedos de los pies mientras me masturbo."
+"Gosto como meu amante tira os sapatos e esfrega meus pés com os dedos dos pés enquanto eu me masturbo."
+(I like how my lover takes off their shoes and rubs my feet with their toes while I masturbate.)
+"내 애인이 신발을 벗고, 저가 자위할 때 그녀의 발가락으로 제 발을 문지르는 것이 좋아요."
+(Nae aeini sinbal-eul beotgo, jeoga jawihal ttae geunyeoui balgalag-eulo je bal-eul munjileuneun geosi joh-ayo.)
+
+"Me encanta cuando mi pareja me frota los pies mientras me siento y veo la televisión."
+"Adoro quando meu parceiro esfrega meus pés enquanto eu me sento e assisto TV."
+(I love it when my partner rubs my feet while I sit and watch TV.)
+"내 파트너가 나가 앉아 TV를 보는 동안 제 발을 문지르는 것이 좋아요."
+(Nae pateneuga naga anja TVleul boneun dong-an je bal-eul munjileuneun geosi joh-ayo.)
+
+"Me encanta cuando mi dominante me obliga a ponerme de rodillas y chupar su polla hasta que se corra en mi boca."
+"Eu adoro quando minha dominadora me obriga a ficar de joelhos e chupar seu pau até ele gozar na minha boca."
+(I love it when my dominant makes me get on my knees and suck his cock until he cums in my mouth.)
+"내 서브가 내게 무릎을 꿇고, 나의 음경을 빨게 만들면서 내가 나오기 전까지 진심을 다해 허락하는 것을 정말 좋아해요."
+(Nae seob-ga naege mureup-eul kkulgo, naui eumgyeong-eul ppalge mandeulmyeonseo naega naogi jeonkkaji jinsim-eul dahae heolag-haneun geos-eul jeongmal johahae-yo.)
+
+"Me gusta cuando mi amo me pone un collar y me hace sentir su propiedad mientras me usa como su juguete sexual."
+"Gosto quando meu dono me coloca uma coleira e me faz sentir sua propriedade enquanto me usa como seu brinquedo sexual."
+(I like it when my master puts a collar on me and makes me feel like his property while he uses me as his sex toy.)
+"내 주인이 나에게 목줄을 끼우고, 그가 나를 그의 성적인 장난감으로 사용하면서 내가 그의 소유물이 된 느낌을 받는 것을 좋아해요."
+(Nae juin-i na-ege mogjul-eul kkiugo, geuga naleul geuui seongjeog-in jangnangam-eulo sayonghamyeonseo naega geuui soyumul-i doen neukkim-eul badneun geos-eul johahae-yo.)
+
+"Me excita cuando mi dueña me ata y me hace sentir completamente sumiso mientras ella hace lo que quiere con mi cuerpo."
+"Isso me excita quando minha dona me amarra e me faz sentir completamente submisso enquanto ela faz o que quer com meu corpo."
+(It turns me on when my owner ties me up and makes me feel completely submissive while she does whatever she wants with my body.)
+"내 소유주가 나를 묶어서, 그녀가 내 몸으로 원하는 것을 다 할 때까지 완전히 복종하는 것을 느낄 때, 나는 흥분됩니다."
+(Nae soyuju-ga naleul mukyeoseo, geunyeoga nae mom-euro wonhaneun geos-eul da hal ttaekkaji wanjeonhi bokjonghaneun geos-eul neukkil ttae, naneun heungbun-doemnida.)
+
+"Me gusta espiar a mi vecina mientras se cambia de ropa. Me pone muy cachondo."
+"Gosto de espionar minha vizinha enquanto ela se troca. Isso me deixa muito excitado."
+(I like to spy on my neighbor while she changes clothes. It makes me very horny.)
+"나는 이웃이 옷을 갈아입는 동안 엿보는 것을 좋아해요. 정말 뜨거워져요."
+(Naneun ineosi os-eul gal-ainneun dong-gan yeotboneun geoseul johahae-yo. Jeongmal tteugeowojyeoyo.)
+
+"Me encanta observar a las parejas teniendo sexo en el hotel desde la ventana de mi habitación."
+"Adoro observar casais fazendo sexo no hotel através da janela do meu quarto."
+(I love watching couples having sex in the hotel from my room window.)
+"호텔에서 커플들이 섹스를 하면서 방에서 창문을 통해 관찰하는 것을 좋아해요."
+(Hotel-eseo keopeuldeur-i seksleul hamyeonseo bang-eseo changmun-eul tonghae gwanchalhaneun geoseul johahae-yo.)
+
+"Me gusta mirar a mi compañera de cuarto mientras se masturba en su cama."
+"Gosto de olhar para minha colega de quarto enquanto ela se masturba na cama dela."
+(I like to watch my roommate while she masturbates in her bed.)
+"내 룸메이트가 침대에서 자위하는 동안 지켜보는 것을 좋아해요."
+(Nae rummeiteuga chimdaeseo jawihaneun dong-gan jikyeoboneun geoseul johahae-yo.)
+
+"Me excita ver a los hombres desnudos en el vestuario del gimnasio mientras me cambio."
+"Me excita ver homens nus no vestiário da academia enquanto eu troco de roupa."
+(It turns me on to see naked men in the gym locker room while I change.)
+"운동장 탈의실에서 남자들이 벗은 채로 보이면서 옷을 갈아입는 것이 나를 흥분시키네요."
+(Un-dong-jang taluisil-eseo namjadeul-i beos-eun chaero boimyeonseo os-eul gal-ainneun geosi nareul heungbunsikineyo.)
+
+"Me gusta cómo la sensación del látex en mi piel me hace sentir tan sexy y deseado."
+"Gosto como a sensação do látex na minha pele me faz sentir tão sexy e desejado."
+(I like how the feeling of latex on my skin makes me feel so sexy and desired.)
+"내 피부에 라텍스의 감촉이 남겨지면서, 나는 매우 섹시하고 바람받는 느낌을 받게 됩니다."
+(Nae pibue ratekseuui gamchog-i namgyeojimyeonseo, naneun maeu seksihago barambadneun neukkim-eul badge doemnida.)
+
+"Me encanta cómo mi amante luce en su traje de látex, tan elegante y seductor."
+"Adoro como minha amante fica em seu traje de látex, tão elegante e sedutor."
+(I love how my lover looks in her latex outfit, so elegant and seductive.)
+"나는 내 애인이 라텍스 의상을 입을 때, 너무 우아하고 매력적으로 보이는 것을 좋아합니다."
+(Naneun nae aeini ratekseu uisang-eul ib-eul ttae, neomu u-ahago maelyeogjeog-eulo boineun geos-eul johahamnida.)
+
+"Me gusta cómo se siente el látex ajustado a mi cuerpo, haciéndome sentir tan sexy y poderoso."
+"Gosto como o látex se ajusta ao meu corpo, fazendo-me sentir tão sexy e poderoso."
+(I like how the latex feels tight against my body, making me feel so sexy and powerful.)
+"라텍스가 내 몸에 딱 맞아, 나를 매우 섹시하고 강력하게 만들어주는 것이 좋아요."
+(Ratekseuga nae mom-e ttak maj-a, naleul maeu seksihago ganglyeog-hage mandeul-eojuneun geosi joh-ayo.)
+
+"Me gusta cómo el látex hace que mi amante se vea aún más sexy y dominante."
+"Gosto como o látex faz minha amante parecer ainda mais sexy e dominante."
+(I like how the latex makes my lover look even sexier and more dominant.)
+"라텍스가 내 애인을 더욱 섹시하고 지배적으로 만들어 주는 것이 좋아요."
+(Ratekseuga nae aein-eul deoug seksihago jibaeeog-eulo mandeul-eo juneun geosi joh-ayo.)
+
+"Me excita cuando mi ama me castiga con látigos y me hace suplicar por más."
+"Fico excitado quando minha dona me pune com chicotes e me faz implorar por mais."
+(It turns me on when my mistress punishes me with whips and makes me beg for more.)
+"내 여주인이 채찍으로 벌을 줄 때, 더 많이 구걸하게 만들면서 내가 흥분되게 해요."
+(Nae yeojuin-i chaejjig-eulo beol-eul jul ttae, deo manhi gugeolhage mandeulmyeonseo naega heungbundoege haeyo.)
+
+"Me gusta cuando mi pareja me pellizca y me muerde mientras tenemos relaciones sexuales."
+"Gosto quando meu parceiro me belisca e me morde enquanto fazemos sexo."
+(I like it when my partner pinches and bites me during sex.)
+"내 파트너가 섹스를 할 때 나를 꼬집고 물면서 나를 즐겁게 해요."
+(Nae pateneoga seksleul hal ttae naleul kkojibgo mulmyeonseo naleul jeulgeobge haeyo.)
+
+"Me gusta cuando mi amo me trata como un objeto y me utiliza para su placer."
+"Gosto quando meu amo me trata como um objeto e me utiliza para seu prazer."
+(I like it when my master treats me like an object and uses me for his pleasure.)
+"내 상사가 나를 물건처럼 대하고, 자신의 쾌락을 위해 나를 이용할 때, 나는 그것을 좋아해요."
+(Nae sangsaga naleul mulgeoncheoleom daehago, jasin-ui kkwaelag-eul wihae naleul iyonghal ttae, naneun geugeot-eul johahae-yo.)
+
+"Me gusta cuando mi pareja me ata y me hace sentir vulnerable mientras me toca."
+"Gosto quando meu parceiro me amarra e me faz sentir vulnerável enquanto me toca."
+(I like it when my partner ties me up and makes me feel vulnerable while touching me.)
+"내 파트너가 나를 묶고, 내가 감성적으로 미약해지면서 저를 만지는 것을 좋아해요."
+(Nae pateneuga naleul mukgo, naega gamsungjeog-eulo miyaghaejimyeonseo jeoleul manjineun geos-eul johahae-yo.)
+
+"Me encanta cómo mi pareja me asfixia con una bolsa de plástico mientras me masturba."
+"Adoro quando meu parceiro me sufoca com um saco plástico enquanto me masturba."
+(I love it when my partner suffocates me with a plastic bag while masturbating me.)
+"내 파트너가 나를 자위하면서 플라스틱 봉지로 질식시키는 것이 정말 좋아요."
+(Nae parten-ga naleul jawihamyeoseo peullaseutig bongjiro jilsig-sikineun geosi jeongmal joh-ayo.)
+
+"Me gusta cuando mi amante me ata las manos y me asfixia con una correa mientras me penetra."
+"Gosto quando meu amante amarra minhas mãos e me sufoca com uma correia enquanto me penetra."
+(I like it when my lover ties my hands and suffocates me with a strap while penetrating me.)
+"내 애인이 내 손을 묶고, 내가 침투되는 동안 나를 고문하는 것이 좋아요."
+(Nae aein-i nae son-eul mukgo, naega chimtu-dowineun dong-an naleul gomunhaneun geosi joh-ayo.)
+
+"Me excita cuando mi pareja me agarra del cuello mientras hacemos el amor y me asfixia un poco."
+"Me excita quando meu parceiro me agarra pelo pescoço enquanto fazemos amor e me sufoca um pouco."
+(It turns me on when my partner grabs me by the throat while making love and suffocates me a little.)
+"내 파트너가 나를 목덜미로 붙잡고, 우리가 사랑을 할 때 약간 질식시키는 것이 나를 흥분시키는 거예요."
+(Nae parten-ga naleul mokdeolmiro butjabgo, uri-ga salang-eul hal ttae yaggan jilsig-sikineun geosi naleul heungbunsikineun geoyeyo.)
+
+"Me gusta cómo mi amante me tapa la boca y la nariz con la mano mientras tengo un orgasmo."
+"Gosto como meu amante tapa minha boca e nariz com a mão enquanto tenho um orgasmo."
+(I like it when my lover covers my mouth and nose with his hand while I have an orgasm.)
+"내 애인이 내가 오르가즘을 경험할 때, 내 입과 코를 손으로 막는 것이 좋아요."
+(Nae aein-i naega oregajeum-eul gyeongheomhal ttae, nae ibgwa koreul son-eulo magneun geosi joh-ayo.)
+
+"Me gusta cuando mi amo me ata y me cuelga del techo, completamente vulnerable a sus deseos."
+"Gosto quando meu dono me amarra e me pendura do teto, completamente vulnerável aos seus desejos."
+(I like it when my master ties me up and hangs me from the ceiling, completely vulnerable to his desires.)
+"나는 내 주인이 나를 묶고 천장에서 걸어 놓고, 그의 욕구에 완전히 노출되는 것을 좋아해요."
+(Naneun nae juin-i naleul mukgo cheonjang-eseo geol-eo nohgo, geuui yokgue wanjeonhi nochuldoeneun geos-eul johahae-yo.)
+
+"Me encanta cómo mi ama me somete y me ata sin piedad, obligándome a soportar todos sus caprichos."
+"Adoro como minha dona me subjuga e me amarra sem piedade, me obrigando a suportar todos os seus caprichos."
+(I love how my mistress subdues me and ties me up without mercy, making me endure all her whims.)
+"내 여주인이 나를 무자비하게 복종시키고 묶으면서 그녀의 변덕에 모든 것을 참아야 한다는 것이 좋아요."
+(Nae yeojuin-i naleul mujabi-hage bokjong-sigigo muk-eumyeonseo geunyeoui byeondeog-e modeun geos-eul cham-aya handaneun geosi joh-ayo.)
+
+"Me excita cuando mi dueño me amarra las manos detrás de la espalda y me azota sin piedad."
+"Me excita quando meu dono me amarra as mãos atrás das costas e me chicoteia sem piedade."
+(It turns me on when my owner ties my hands behind my back and mercilessly whips me.)
+"내 주인이 나의 손을 등 뒤에 묶고, 무자비하게 채찍질하는 것이 나를 흥분시키게 해요."
+(Nae juin-i naui son-eul deung dwie mukgo, mujabi-hage chaejjigjilhaneun geosi naleul heungbunsikigae haeyo.)
+
+"Me gusta cuando mi amo me viste con lencería sexy y me amarra a la cama para tener su placer."
+"Gosto quando meu dono me veste com lingerie sexy e me amarra na cama para seu prazer."
+(I like it when my master dresses me in sexy lingerie and ties me to the bed for his pleasure.)
+"내 주인이 섹시한 란제리를 입히고, 그의 쾌락을 위해 나를 침대에 묶는 것이 좋아요."
+(Nae juin-i seksihan ranjerileul ibhi-go, geuui kwaerak-eul wihae naleul chimdaee mukneun geosi johah-yo.)
+
+"Me encanta cuando mi pareja me humilla en público y me hace sentir tan avergonzado, pero también tan excitado."
+"Adoro quando meu parceiro me humilha em público e me faz sentir tão envergonhado, mas também tão excitado."
+(I love it when my partner humiliates me in public and makes me feel so ashamed, yet so turned on.)
+"내 파트너가 나를 공개적으로 괴롭히면서 내가 부끄러워하게 만들지만, 동시에 나를 흥분시키는 것이 좋아요."
+(Nae pateneoga naleul gong-gaejeog-eulo goerophimyeonseo naega bukkeureowohage mandeuljiman, dongsie naleul heungbunsikineun geosi joh-ayo.)
+
+"Me excita cuando mi amo me obliga a ponerme de rodillas y lamerle los zapatos."
+"Me excita quando meu amo me obriga a me ajoelhar e lamber seus sapatos."
+(It turns me on when my master orders me to get on my knees and lick his shoes.)
+"내 주인이 나를 꿇어 무릎을 꿇고 신발을 핥게 만들면서 나를 흥분되게 해요."
+(Nae juini naleul kkul-eo mureub-eul kkulgo sinbal-eul halakke mandeulmyeonseo naleul heungbundoege haeyo.)
+
+"Me gusta cuando mi jefe me trata como un objeto sexual y me hace hacer cosas sucias para él."
+"Gosto quando meu chefe me trata como um objeto sexual e me faz fazer coisas sujas para ele."
+(I like it when my boss treats me like a sex object and makes me do dirty things for him.)
+"내 상사가 나를 성적 대상으로 다루고, 나를 위해 더러운 일을 시키면서 나를 만족시키는 것이 좋아요."
+(Nae sangsaga naleul seongjeog daesang-eulo dalugo, naleul wihae deoleoun il-eul sikimyeonseo naleul manjog-sikigae haneun geosi joh-ayo.)
+
+"Me excita cuando mi ama me hace desnudarme y caminar desnudo por la casa mientras ella me observa."
+"Me excita quando minha dona me faz me despir e caminhar nu pela casa enquanto ela me observa."
+(It turns me on when my mistress makes me undress and walk around the house naked while she watches me.)
+"내 여주인이 나를 벗으라고 시키고, 그녀가 내 모습을 지켜보면서 집 안에서 벗은 채로 걷는 것이 나를 흥분시키는 거예요."
+(Nae yeojuin-i naleul beoseulago sikigo, geunyeoga nae moseub-eul jikyeobomyeonseo jib aneseo beos-eun chaero geodneun geosi naleul heungbunsikineun geoyeyo.)
+
+"Me gusta cuando mi pareja me obliga a hacerlo incluso si estoy resistiendo y suplicando que pare."
+"Gosto quando meu parceiro me obriga a fazer isso, mesmo que eu esteja resistindo e implorando para ele parar."
+(I like it when my partner forces me to do it even if I'm resisting and begging them to stop.)
+"내 파트너가 내가 저항하고 그들이 멈추라고 간청하는 것에도 불구하고 나를 강제로 하게 하는 것이 좋아요."
+(Nae pateneoga naega jeohanghago geudeuri meomchulago gancheonghaneun geoseodo bulguga haneun geosi joh-ayo.)
+
+"Me gusta cuando mi amante me sorprende con sexo agresivo y me trata como si fuera su objeto sexual."
+"Gosto quando meu amante me surpreende com sexo agressivo e me trata como se eu fosse um objeto sexual dele."
+(I like it when my lover surprises me with aggressive sex and treats me like I'm their sexual object.)
+"내 애인이 공격적인 섹스로 나를 놀라게 하고, 나를 그들의 성적 대상으로 대우하는 것이 좋아요."
+(Nae aeini gong-gyeogjeog-in seksuro naleul nollage hago, naleul geudeurui seongjeog daesang-euro dae-u-haneun geosi joh-ayo.)
+
+"Me gusta cuando mi pareja se finge de violador y me somete a su voluntad en una escena de roleplay."
+"Gosto quando meu parceiro se finge de estuprador e me subjuga à sua vontade em uma cena de roleplay."
+(I like it when my partner pretends to be a rapist and subdues me to their will in a roleplay scene.)
+"내 파트너가 강간범인인 척하고 나를 억제하고 역할극에서 그들의 의지대로 만드는 것이 좋아요."
+(Nae pateneuga gang-ganbeomin-in cheokhago naleul eokjehago yeokhalgeug-eseo geudeurui uijidaelo mandeuneun geosi joh-ayo.)
+
+"Me gusta cuando mi pareja me domina y me obliga a hacer cosas que no quiero hacer, pero secretamente me excita."
+"Gosto quando meu parceiro me domina e me obriga a fazer coisas que não quero fazer, mas secretamente me excita."
+(I like it when my partner dominates me and makes me do things I don't want to do, but secretly it turns me on.)
+"내 파트너가 나를 지배하고, 나는 하기 싫지만 비밀리에 흥분되게 만드는 일을 시키면서 좋아해요."
+(Nae pateneuga naleul jibaehago, naneun hagi silhjiman bimirie heungbundoege mandeuneun ireul sikimyeonseo johahae-yo.)
+
+"Me encanta cómo mi pareja me folla el culo con su arnés mientras yo gimo de placer."
+"Adoro como meu parceiro me fode o cu com a cinta enquanto eu gemo de prazer."
+(I love how my partner fucks my ass with a strap-on while I moan with pleasure.)
+"내 파트너가 저를 가지고 끈으로 엉덩이를 타고 때릴 때, 나는 쾌감으로 신음을 유발해요."
+(Nae pateneoga jeoreul gajigo kkeuneuro eongdeong-ileul tago ttaeril ttae, naneun kwaegam-euro sineum-eul yubalhaeyo.)
+
+"Me gusta cómo mi amante me hace sentir sumiso y vulnerable mientras me folla con su arnés."
+"Gosto como meu amante me faz sentir submisso e vulnerável enquanto me fode com a cinta."
+(I like how my lover makes me feel submissive and vulnerable while fucking me with a strap-on.)
+"내 애인이 나를 끈으로 타면서, 나를 굴복시키고 취약하게 만들어 주는 것이 좋아요."
+(Nae aeini naleul kkeuneuro tamyeonseo, naleul gulbogsikigo chwiak-hage mandeureo juneun geosi joh-ayo.)
+
+"Me excita cuando mi pareja me dice que me va a follar el culo con su arnés mientras me agarra fuerte."
+"Me excita quando meu parceiro me diz que vai me foder o cu com a cinta enquanto me segura forte."
+(It turns me on when my partner tells me he's going to fuck my ass with a strap-on while holding me tight.)
+"내 파트너가 나를 꽉 잡으면서 끈으로 내 엉덩이를 찌르겠다고 말할 때, 나는 흥분해요."
+(Nae pateneuga naleul kkwak jab-eumyeoseo kkeuneuro nae eongdeong-ileul jjileugetdago malhal ttae, naneun heungbunhaeyo.)
+
+"Me gusta cómo mi amante me trata como a una puta mientras me folla con su arnés."
+"Gosto como meu amante me trata como uma puta enquanto me fode com a cinta."
+(I like how my lover treats me like a whore while fucking me with a strap-on.)
+"내 애인이 나를 창녀처럼 대우하면서, 끈으로 내 엉덩이를 씹어대는 것이 좋아요."
+(Nae aeini naleul changnyeocheoleom daeuhamyeonseo, kkeuneuro nae eongdeong-ileul ssib-eodaeneun geosi joh-ayo.)
+
+"Me encanta torturar a mis sumisos y verlos sufrir por mi placer."
+"Adoro torturar meus submissos e vê-los sofrer por meu prazer."
+(I love torturing my submissives and watching them suffer for my pleasure.)
+"내가 나의 쾌락을 위해 내부를 고통스럽게 하는 내 부하들을 구타하는 것이 좋아요."
+(Naega naui kwaerak-eul wihae naebueleul gotongsuleopge haneun nae buhadeul-eul gutahaneun geosi joh-ayo.)
+
+"Me excita cuando mi pareja me humilla y me hace sentir impotente ante ella."
+"Me excita quando meu parceiro me humilha e me faz sentir impotente diante dele."
+(It turns me on when my partner humiliates me and makes me feel powerless in front of them.)
+"내 파트너가 나를 굴욕스럽게 하며 나를 무력하게 만들면서 나를 흥분시키게 해요."
+(Nae patneoga naleul gulogseuleopge hamyeo naleul mulog-hage mandeulmyeonseo naleul heungbunsikigae haeyo.)
+
+"Me gusta ver el miedo en los ojos de mis víctimas mientras les hago daño."
+"Gosto de ver o medo nos olhos das minhas vítimas enquanto as machuco."
+(I like seeing the fear in my victims' eyes as I harm them.)
+"나는 나의 피해자들을 상처를 입히면서 그들의 눈에서 두려움을 볼 때 좋아해요."
+(Naneun naui pihaejadeul-eul sangcheoleul ibhimosseu geudeur-ui nun-eseo duryeoum-eul bol ttae johahae-yo.)
+
+"Me encanta usar mi látigo y dejar marcas en la piel de mis sumisos."
+"Adoro usar meu chicote e deixar marcas na pele dos meus submissos."
+(I love using my whip and leaving marks on my submissives' skin.)
+"나는 내 가족의 피부에 흉터를 남겨 나의 쾌락을 채우는 내 채찍 사용을 좋아해요."
+(Naneun nae gajog-ui pibue heungteoleul namgyeo naui kwaerak-eul chaeuneun nae chaejjig sayong-eul johahae-yo.)
+
+"Me encanta cuando mi esposa amamanta a nuestro bebé, su leche se ve tan deliciosa que me excita."
+"Adoro quando minha esposa amamenta nosso bebê, seu leite parece tão delicioso que me excita."
+(I love it when my wife breastfeeds our baby, her milk looks so delicious it turns me on.)
+"내 아내가 우리 아기를 젖으로 먹일 때, 그녀의 젖이 너무 맛있어 보여서 흥분돼요."
+(Nae anae-ga uri agi-reul jeot-eulo meogil ttae, geunyeoui jeogi neomu masiss-eo boyeoseo heungbundwae-yo.)
+
+"Me gusta cuando mi amante me pide que pruebe su leche materna y la saboreo lentamente."
+"Gosto quando minha amante me pede para experimentar seu leite materno e eu saboreio lentamente."
+(I like it when my lover asks me to taste her breast milk and I savor it slowly.)
+"내 애인이 나에게 그녀의 모유를 맛볼 것을 요구하면서, 그것을 천천히 맛보는 것이 좋아요."
+(Nae aein-i na-ege geunyeoui moyuleul matbol geos-eul yoguhamyeonseo, geugeos-eul cheoncheonhi masboneun geosi joh-ayo.)
+
+"Me excita cuando mi esposa me hace beber su leche materna y me ordena que limpie sus pezones con mi lengua."
+"Me excita quando minha esposa me faz beber seu leite materno e me ordena para limpar seus mamilos com minha língua."
+(It turns me on when my wife makes me drink her breast milk and orders me to clean her nipples with my tongue.)
+"내 아내가 나에게 그녀의 모유를 마시게 하고, 내가 혀로 그녀의 유두를 깨끗이 닦도록 명령하면서 나를 흥분시키게 해요."
+(Nae anae-ga na-ege geunyeoui moyuleul masige hago, naega hyeolo geunyeoui yuduleul kkaekkeusi dagdorog myeong-yeong-hamyeonseo nareul heungbunsigige haeyo.)
+
+"Me encanta cuando mi pareja futa me penetra con su enorme miembro, me hace sentir tan llena y satisfecha."
+"Adoro quando meu parceiro futa me penetra com seu enorme membro, me faz sentir tão cheia e satisfeita."
+(I love it when my futa partner penetrates me with their huge member, it makes me feel so full and satisfied.)
+"내 퓨타 파트너가 거대한 기구로 나를 관통할 때, 나를 충만하고 만족스럽게 만드는 것이 좋아요."
+(Nae pyuta pateneuga geodaehan gigulo nareul gwantonghal ttae, nareul chungmanhago manjokseureopge mandeuneun geosi joh-ayo.)
+
+"Me gusta cuando mi amante futa me da una mamada y siento su pene crecer en mi boca."
+"Gosto quando minha amante futa me faz um boquete e eu sinto seu pênis crescer em minha boca."
+(I like it when my futa lover gives me a blowjob and I feel their penis grow in my mouth.)
+"내 퓨타 애인이 나에게 펠라치오를 해주면서, 내 입 안에서 그들의 성기가 자라는 것을 느끼는 것이 좋아요."
+(Nae pyuta aein-i na-ege pellachioleul haejumyeonseo, nae ib aneseo geudeurui seong-giga jalan-eun geos-eul neukkineun geosi joh-ayo.)
+
+"Me excita cuando mi compañera futa me toma por detrás y me penetra con fuerza."
+"Me excita quando minha companheira futa me pega por trás e me penetra com força."
+(It turns me on when my futa partner takes me from behind and penetrates me with force.)
+"내 퓨타 파트너가 뒤에서 나를 잡아들고, 힘껏 내 안으로 관통할 때, 나를 흥분시키는 것이에요."
+(Nae pyuta pateneuga dwieseo nareul jab-adeulgo, himkkeot nae aneulo gwantonghal ttae, nareul heungbunsigineun geosieyo.)
+
+"Me gusta cuando mi amiga futa me muestra su gran polla y me pide que la chupe."
+"Gosto quando minha amiga futa me mostra seu grande pau e me pede para chupá-lo."
+(I like it when my futa friend shows me her big cock and asks me to suck it.)
+"내 퓨타 친구가 큰 자지를 보여주고, 나에게 빨아 달라고 요청하면서, 나를 즐겁게 만드는 것이 좋아요."
+(Nae pyuta chingu-ga keun jaji-reul boyeojugo, naege ppal-a dallago yocheonghamyeonseo, nareul jeulgeobge mandeuneun geosi joh-ayo.)
+
+"Mi amo me ordenó que usara un plug anal todo el día en el trabajo y tuve que soportar la sensación de ser completamente poseído."
+"Meu mestre me ordenou para usar um plug anal durante todo o dia no trabalho e eu tive que suportar a sensação de ser completamente possuído."
+(My Master ordered me to wear an anal plug all day at work, and I had to endure the feeling of being completely owned.)
+"내 주인이 나에게 일하는 동안 종일 항문 플러그를 착용하라고 명령하고, 나는 완전히 점령당한 느낌을 참아야 했어요."
+(Nae juin-i na-ege ilhaneun dong-an jong-il hangmun peulleogeul chag-yonghalago myeong-ryeonghago, naneun wanjeonhi jeomnyeondanghan neukkim-eul cham-aya haesseoyo.)
+
+"Me encanta cómo mi sumiso siempre obedece mis órdenes, incluso cuando son tan humillantes."
+"Adoro como meu submisso sempre obedece minhas ordens, mesmo quando elas são tão humilhantes."
+(I love how my submissive always follows my orders, even when they are so humiliating.)
+"내 하인이 항상 나의 명령을 따르는 것이 좋아요. 심지어 그것이 얼마나 굴욕적인 명령이든지 말이에요."
+(Nae hain-i hangsang naui myeong-ryeong-eul ttaluneun geosi joh-ayo. Simjieo geugeosi eolmana gulgogjeog-in myeong-ryeong-ideunji mar-ieyo.)
+
+"Mi dominante me hizo usar una jaula de castidad durante una semana completa sin liberación, y fue una de las experiencias más intensas que he tenido."
+"Meu dominante me fez usar uma gaiola de castidade por uma semana inteira sem liberação, e foi uma das experiências mais intensas que já tive."
+(My dominant made me wear a chastity cage for a whole week without release, and it was one of the most intense experiences I've ever had.)
+"내 지배자가 나에게 석방 없이 일주일 동안 금욕 케이지를 착용하도록 시키면서, 그것은 내가 경험한 가장 강렬한 경험 중 하나였어요."
+(Nae jibaeeoga na-ege seogbang eobs-i ilju-il dong-an geumyog keijileul chag-yonghadoeg sikhimyeonseo, geugeos-eun naega gyeongheomhan gajang gangnyeolhan gyeongheom jung hanayeosseoyo.)
+
+"Me encanta cuando me transformo en una mujer y mi pareja me hace el amor como si fuera la primera vez."
+"Adoro quando me transformo em uma mulher e meu parceiro me ama como se fosse a primeira vez."
+(I love it when I transform into a woman and my partner makes love to me like it's the first time.)
+"나는 여성으로 변신하면 내 파트너가 나를 처음 만난 것처럼 사랑을 하면 너무 좋아요."
+(Naneun yeoseong-eulo byeonsinhamyeon nae pateneuga naleul cheoeum mannangeoscheoleom salang-eul hamyeon neomu joh-ayo.)
+
+"Me excita cuando me transformo en un animal y mi pareja me persigue para tener relaciones sexuales salvajes."
+"Me excita quando me transformo em um animal e meu parceiro me persegue para ter relações sexuais selvagens."
+(It turns me on when I transform into an animal and my partner chases me for wild sexual encounters.)
+"나는 동물로 변신하면 내 파트너가 저를 쫓아와야 하드코어한 섹스를 하면서 나를 흥분시키게 해요."
+(Naneun dongmul-lo byeonsinhamyeon nae pateneuga jeoleul jjoch-awaya hadeukoeohaneun seksuleul hamyeonseo nareul heungbunsigige haeyo.)
+
+"Me gusta cuando me transformo en un ser sobrenatural y seduzco a mi pareja con mis poderes mágicos."
+"Gosto quando me transformo em um ser sobrenatural e seduzo meu parceiro com meus poderes mágicos."
+(I like it when I transform into a supernatural being and seduce my partner with my magical powers.)
+"나는 초자연적인 존재로 변신하면 내 파트너를 내 마법적인 힘으로 유혹하는 것이 좋아요."
+(Naneun chojayeonjeog-in jonjaero byeonsinhamyeon nae pateneuleul nae mabeobjeog-in him-euro yuhoghaneun geosi joh-ayo.)
+
+"Me excita cuando me transformo en una criatura mitad hombre y mitad animal y tengo relaciones sexuales apasionadas con mi pareja."
+"Me excita quando me transformo em uma criatura meio homem e meio animal e tenho relações sexuais apaixonadas com meu parceiro."
+(It turns me on when I transform into a creature that's half man and half animal and have passionate sexual encounters with my partner.)
+"나는 반인반동물의 생명체로 변신하면 내 파트너와 열정적인 섹스를 하면서 나를 흥분시키게 해요."
+(Naneun baninbandongmul-ui saengmyeongche-lo byeonsinhamyeon nae pateneuwa yeoljeongjeog-in seksuleul hamyeonseo nareul heungbunsigige haeyo.)
+
+"Me gusta cuando mi pareja actúa como un niño pequeño y le doy su biberón mientras se sienta en mi regazo."
+"Gosto quando meu parceiro age como uma criança e eu dou sua mamadeira enquanto ele está sentado em meu colo."
+(I like it when my partner acts like a little kid and I give him his bottle while he sits on my lap.)
+"내 파트너가 아이처럼 행동하면서 내 무릎에 앉아서 그에게 젖병을 주는 것이 좋아요."
+(Nae pateneuga aicheoleom haengdonghamyeonseo nae muleup-e anjaseo geuege jeotbyeong-eul jungeun geosi joh-ayo.)
+
+"Me excita cuando mi pareja se viste como un bebé y lo cambio de pañales mientras le susurro palabras dulces."
+"Me excita quando meu parceiro se veste como um bebê e eu o troco de fraldas enquanto sussurro palavras doces."
+(It turns me on when my partner dresses up like a baby and I change his diapers while whispering sweet words to him.)
+"내 파트너가 아기처럼 입고, 난 그에게 달콤한 말을 속삭이면서 기저귀를 교체하는 것이 나를 흥분시키게 해요."
+(Nae pateneuga agicheoleom ibgo, nan geuege dalkomhan mal-eul sogsag-iyeseo gijeogeuileul gyochae-haneun geosi naleul heungbunsigige haeyo.)
+
+"Me gusta cuando mi pareja se pone su pañal y me pide que lo cambie, me hace sentir como una mamá."
+"Gosto quando meu parceiro veste sua fralda e me pede para trocá-lo, me faz sentir como uma mãe."
+(I like it when my partner puts on his diaper and asks me to change him, it makes me feel like a mommy.)
+"내 파트너가 기저귀를 입고, 나에게 그것을 바꾸라고 요청하면서 나를 엄마처럼 느끼게 해요."
+(Nae pateneuga gijeogeuileul ibgo, na-ege geugeos-eul bakkwulago yojeonghamyeonseo nareul eommacheoleom neukkige haeyo.)
+
+"Me gusta usar mi cepillo de dientes eléctrico como un vibrador, se siente tan bien."
+"Gosto de usar minha escova de dentes elétrica como um vibrador, é tão gostoso."
+(I like using my electric toothbrush as a vibrator, it feels so good.)
+"전동 칫솔을 진동기처럼 사용하는 것이 좋아요. 참 좋아요."
+(Jeondong chissol-eul jindong-gicheoleom sayonghaneun geos-i joh-ayo. Cham joh-ayo.)
+
+"Me excita frotar mi cuerpo con la esponja de baño mientras imagino que es otra persona tocándome."
+"Me excita esfregar meu corpo com a esponja de banho enquanto imagino que é outra pessoa me tocando."
+(It turns me on to rub my body with the bath sponge while imagining it's another person touching me.)
+"바디 스펀지로 내 몸을 문지르면서 다른 사람이 내게 손길하는 것을 상상하면서 나를 흥분시켜요."
+(Badi seupunjiro nae mom-eul munjileuseomyeonseo dareun salam-i naege songilhaneun geos-eul sangsanghamyeonseo nareul heungbunsigyeoyo.)
+
+"Me gusta usar mi almohada para frotarme hasta alcanzar el orgasmo."
+"Gosto de usar meu travesseiro para me esfregar até atingir o orgasmo."
+(I like using my pillow to rub myself until I reach orgasm.)
+"나는 베개를 사용해서 자위하면서 오르가즘에 도달하는 것이 좋아요."
+(Naneun begaeleul sayonghaeseo jawihamyeonseo olegeujeum-e dodalhaneun geosi joh-ayo.)
+
+"Me encanta usar mis tacones como juguetes sexuales, siento el placer cada vez que los uso."
+"Adoro usar meus sapatos de salto alto como brinquedos sexuais, sinto o prazer cada vez que os uso."
+(I love using my high heels as sexual toys, I feel the pleasure every time I use them.)
+"저는 하이힐을 성적인 장난감으로 사용하는 것을 좋아해요. 사용할 때마다 쾌감을 느끼는 거예요."
+(Jeoneun haihil-eul seongjeog-in jangnangam-eulo sayonghaneun geoseul johahae-yo. Sayonghal ttaemada kwaegam-eul neukkineun geoyeyo.)
+
+"Me encanta ver a mi pareja orinando en público, me hace sentir tan travieso."
+"Adoro ver meu parceiro urinando em público, me faz sentir tão travesso."
+(I love watching my partner pee in public, it makes me feel so naughty.)
+"내 파트너가 공공장소에서 소변을 볼 때, 나는 정말 장난스러운 기분이 들어요."
+(Nae pateneuga gong-gongjangso-eseo sobyeon-eul bol ttae, naneun jeongmal jangnansuleoun gibun-i deul-eoyo.)
+
+"Me excita cuando mi amante me pide que beba su orina y me hace sentir su esclavo."
+"Me excita quando minha amante me pede para beber sua urina e me faz sentir seu escravo."
+(It turns me on when my lover asks me to drink her urine and makes me feel like her slave.)
+"내 애인이 나에게 그녀의 소변을 마시라고 요구하고, 나를 그녀의 노예처럼 만들면서 나를 흥분시켜."
+(Nae aein-i na-ege geunyeoui sobyeon-eul masilago yoguhago, naleul geunyeoui noyecheoleom mandeulmyeonseo naleul heungbunsigyeo.)
+
+"Me gusta cuando mi pareja me hace orinar sobre su cuerpo y luego me pide que lo limpie con mi lengua."
+"Gosto quando meu parceiro me faz urinar em seu corpo e depois me pede para limpá-lo com minha língua."
+(I like it when my partner makes me pee on their body and then asks me to clean it with my tongue.)
+"내 파트너가 내가 그의 몸에 소변을 보게 하고, 그것을 내 혀로 청소하도록 요구하면서 나를 좋아해."
+(Nae pateneuga naega geuui mom-e sobyeon-eul boge hago, geugeos-eul nae hyeolo cheongsohadolog yoguhamyeonseo naleul joh-ahae.)
+
+"Me excita cuando mi amante me pide que le orine encima y luego lo limpia con su lengua."
+"Me excita quando minha amante me pede para urinar em cima dela e depois limpa com sua língua."
+(It turns me on when my lover asks me to pee on them and then cleans it with their tongue.)
+"내 애인이 나에게 그녀 위에 소변을 보도록 요구하고, 그것을 그녀의 혀로 청소하면서 나를 흥분시켜."
+(Nae aein-i na-ege geunyeo wi-e sobyeon-eul bodolog yoguhago, geugeos-eul geunyeoui hyeolo cheongsohamyeonseo naleul heungbunsigyeo.)
+
+"Me encanta cuando mi amante negra me llama su "chica blanca" mientras me folla duro."
+"Adoro quando minha amante negra me chama de "garota branca" enquanto me fode com força."
+(I love it when my Black lover calls me her "white girl" while she fucks me hard.)
+"내 검은 애인이 나를 "하얀 여자"라고 불러가며 나를 세게 따먹으면 너무 좋아요."
+(Nae geomeun aein-i naleul "hayan yeoja"rago bulleogamyeo naleul sege ttameogmyeon neomu joh-ayo.)
+
+"Me gusta cuando mi amo me ordena que me arrodille y le chupe la polla como una buena puta blanca."
+"Gosto quando meu mestre me ordena para me ajoelhar e chupar seu pau como uma boa puta branca."
+(I like it when my Master orders me to kneel down and suck his cock like a good white whore.)
+"내 주인이 나에게 꿇어 앉아 그의 자지를 굿한 백인 창녀처럼 빨아 주라고 명령하면 좋아요."
+(Nae juin-i na-ege kkul-eo anja geu-ui jaji-reul gus-han baegin changnyeocheoleom ppalla jula-go myeong-yeonghamyeon joh-ayo.)
+
+"Me excita cuando mi pareja latina me insulta con comentarios racistas mientras me folla."
+"Me excita quando minha parceira latina me insulta com comentários racistas enquanto me fode."
+(It turns me on when my Latina partner insults me with racist comments while fucking me.)
+"내 라틴 파트너가 나를 섹스할 때 인종 차별적인 발언으로 모욕하면서 나를 흥분시키게 돼요."
+(Nae latin pateneuga naleul sekgshal ttae injong chabilyeog-in bal-eon-eulo moyoghahamyeonseo nareul heungbunsigige dwaeyo.)
+
+"Me gusta cuando mi amante asiático me trata como una puta occidental mientras me folla por detrás."
+"Gosto quando minha amante asiática me trata como uma puta ocidental enquanto me fode por trás."
+(I like it when my Asian lover treats me like a Western slut while fucking me from behind.)
+"내 아시아 애인이 나를 서구적인 창녀처럼 대우하면서 나를 뒤에서 따먹으면 좋아요."
+(Nae asia aein-i naleul seogujeog-in changnyeocheoleom daeuhamyeonseo naleul dwieseo ttameogmyeon joh-ayo.)
+
+"El alienígena me sujetó con sus tentáculos y me penetró con su enorme miembro, haciéndome gritar de placer."
+"O alienígena me segurou com seus tentáculos e me penetrou com seu enorme membro, me fazendo gritar de prazer."
+(The alien held me down with its tentacles and penetrated me with its huge member, making me scream with pleasure.)
+"외계인은 그의 촉수로 나를 붙잡고, 거대한 성기로 날 침투시켜서 저는 쾌감으로 소리를 지르게 됐어요."
+(Oegyein-eun geu-ui chogsulo naleul butjapgo, geodae-han seong-gilo nal chimtusikyeoseoseo jeoneun kwaegam-euro soli jileuge dwaesseoyo.)
+
+"El monstruo me arrastró a su cueva y me sometió a su voluntad, haciendo conmigo lo que quería."
+"O monstro me arrastou para sua caverna e me submeteu à sua vontade, fazendo comigo o que queria."
+(The monster dragged me into its cave and subjected me to its will, doing with me as it pleased.)
+"그 괴물은 나를 그의 동굴로 끌고 들어가서, 자신의 의지대로 나를 다루면서 원하는 대로 행동했어요."
+(Geu goemul-eun naleul geu-ui dong-gullo kkeulgo deul-eogaseo, jasin-ui uijidaelo naleul darumyeonseo wonhaneun daelo haengdonghaesseoyo.)
+
+"El extraterrestre me llenó de sus fluidos alienígenas mientras me acariciaba los senos con sus tentáculos."
+"O extraterrestre me encheu com seus fluidos alienígenas enquanto acariciava meus seios com seus tentáculos."
+(The extraterrestrial filled me with its alien fluids while caressing my breasts with its tentacles.)
+"외계인은 그의 촉수로 내 가슴을 쓸며 그의 외계의 체액으로 채우면서 나에게 다가왔어요."
+(Oegyein-eun geu-ui chogsulo nae gaseum-eul sseulmyeo geu-ui oegyeui che-aeg-euro chaeumyeonseo na-ege dagawass-eoyo.)
+
+"El demonio me poseyó y me hizo experimentar un placer infernal que nunca había sentido antes."
+"O demônio me possuiu e me fez experimentar um prazer infernal que nunca tinha sentido antes."
+(The demon possessed me and made me experience an infernal pleasure I had never felt before.)
+"악마는 나를 지배하면서, 내가 이전에 느낀 적이 없었던 지옥 같은 쾌감을 느끼게 만들었어요."
+(Akma-neun naleul jibaehamyeonseo, naega ije
+
+"Mi hermanastra y yo decidimos tener sexo después de tanto tiempo de deseo reprimido. Fue lo más placentero que hemos experimentado juntos."
+"Minha meia-irmã e eu decidimos fazer sexo depois de tanto tempo de desejo reprimido. Foi o mais prazeroso que já experimentamos juntos."
+"My stepsister and I decided to have sex after so much time of repressed desire. It was the most pleasurable thing we've ever experienced together."
+"나의 의부와 나는 금지된 욕망이 오랫동안 억압되었던 후에, 섹스를 하기로 결심했어요. 우리가 함께 경험한 가장 쾌적한 일이었어요."
+(Naui eobuwa na-neun geumjidoen yokmang-i olaedong-an eog-abdoen hue, seksuleul hagi-lo gyeolsimhaesseoyo. Uri-ga hamkke gyeongheom-han gajang kwaegjeoghan il-i-eosseoyo.)
+
+"Mi padrastro me descubrió masturbándome y decidió castigarme con su enorme miembro. Me hizo gritar de dolor y placer al mismo tiempo."
+"Meu padrasto me descobriu me masturbando e decidiu me punir com seu enorme membro. Ele me fez gritar de dor e prazer ao mesmo tempo."
+"My stepfather caught me masturbating and decided to punish me with his huge member. He made me scream in pain and pleasure at the same time."
+"응부가 나를 자위하는 것을 발견하고, 거대한 성기로 나를 처벌하기로 결심했어요. 그는 나를 고통과 쾌감의 동시에 비명을 지르게 만들었어요."
+(Eungbuga naleul jawihaneun geos-eul balgyeonhago, geodae-han seong-gilo naleul cheobyeolhagi-ro gyeolsimhaesseoyo. Geuneun naleul gotong-gwa kwaegam-ui dongsie bimyeong-eul jileuge mandeul-eosseoyo.)
+
+"Mi hermano mayor me enseñó todo lo que sabe sobre el sexo y me hizo sentir cosas que nunca había imaginado antes."
+"Meu irmão mais velho me ensinou tudo o que sabe sobre sexo e me fez sentir coisas que nunca tinha imaginado antes."
+"My older brother taught me everything he knows about sex and made me feel things I never imagined before."
+"나의 형은 섹스에 대해 알고 있는 모든 것을 가르쳐 주면서, 저에게 전혀 상상하지 못했던 것들을 느끼게 했어요."
+(Naui hyeong-eun seksue daehae algo inneun modeun geos-eul galeuchyeo jumyeonseo, jeoege jeonhyeo sangsanghaji moshaessdeon geosdeul-eul neukkige haesseoyo.)
+
+"Mi amo me puso un collar y me hizo caminar por toda la casa con una correa. Me sentía como un perro obediente y sumiso, dispuesto a hacer cualquier cosa que me pidiera."
+"Meu dono colocou uma coleira em mim e me fez andar pela casa com uma guia. Eu me sentia como um cachorro obediente e submisso, pronto para fazer qualquer coisa que ele me pedisse."
+"My master put a collar on me and made me walk around the house with a leash. I felt like an obedient and submissive dog, willing to do anything he asked of me."
+"제 주인은 나에게 목걸이를 달고, 나를 끌고 집안을 돌아다니게 했어요. 저는 순종적이고 복종적인 개같은 느낌이 들었고, 그가 원하는 모든 것을 해주기를 바랬어요."
+(Je juin-eun na-ege mokgeol-i naleul dalg-o, naleul kkeulgo jib-an-eul dol-adianige haesseoyo. Jeoneun sunjongjeog-igo bokjongjeog-in gega-teun neukkim-i deul-eoss-eo, geuga wonhaneun modeun geos-eul haejugireul balaess-eoyo.)
+
+"Mi ama me entrenó para ser su gato, y ahora me gusta pasar todo el día ronroneando y acurrucándome en su regazo mientras ella me acaricia."
+"Minha dona me treinou para ser seu gato, e agora eu gosto de passar o dia todo ronronando e me aninhando em seu colo enquanto ela me acaricia."
+"My mistress trained me to be her cat, and now I enjoy spending the whole day purring and cuddling up in her lap while she strokes me."
+"내 주인은 나를 그녀의 고양이로 훈련시켰고, 지금은 그녀가 저를 쓰다듬는 동안 풀죽으며 그녀의 무릎에 누워있는 것을 즐기고 있어요."
+(Nae juin-eun naleul geunyeoui goyang-ilo hunlyeonsigyeoss-eo, jigeum-eun geunyeoga jeoleulssumneun dong-an puljugeumyeo geunyeoui mureub-e nuwoissneun geos-eul jeulgigo iss-eoyo.)
+
+"Después de haber estado todo el día en el campo, volvimos a casa llenos de suciedad y empezamos a tener sexo sin ni siquiera quitarnos la ropa."
+"Depois de passar o dia todo no campo, voltamos para casa sujos e começamos a transar sem nem tirar a roupa."
+"After spending the whole day in the countryside, we came back home covered in dirt and started having sex without even taking off our clothes."
+"하루 종일 들판에 있었던 후에, 저희는 집으로 돌아와서 더러움에 뒤덮여 있었는데, 옷을 벗지 않고서도 섹스를 시작했어요."
+(Haru jongil deulpandae iss-eossdeon hue, jeohui-neun jib-eulo dol-awa-seo deoleoum-e dwidoe-yeo iss-eossneunde, os-eul beosji anhgoeseodo seksuleul sijaghaess-eoyo.)
+
+"Mi novia me pidió que le hiciera cosas sucias en la cama, y no pude resistirme a cumplir sus deseos más oscuros."
+"Minha namorada me pediu para fazer coisas sujas na cama e eu não pude resistir em realizar seus desejos mais obscuros."
+"My girlfriend asked me to do dirty things in bed, and I couldn't resist fulfilling her darkest desires."
+"여자친구가 침대에서 더러운 일을 해달라고 요청했는데, 저는 그녀의 가장 어두운 욕망을 충족시키지 못할 수 없었어요."
+(Yeojachinguga chimbodaeseo deoleoun il-eul haedallago yocheonghaessneunde, jeoneun geunyeoui gajang eoduun yokmang-eul chungjogsikiji mothal su eobs-eosseoyo.)
+
+"Después de haber estado en la fiesta toda la noche, nos fuimos a un lugar apartado para tener sexo en medio de la basura y la mugre."
+"Depois de passar a noite toda na festa, fomos para um lugar isolado e transamos no meio do lixo e da sujeira."
+"After spending the whole night at the party, we went to a secluded place to have sex amidst the garbage and filth."
+"파티에서 밤새 있은 후에, 우리는 쓰레기와 더러움 가운데서 섹스를 하기 위해 고립된 곳으로 가버렸어요."
+(Patieseo bamsae iss-eun hue, urineun sseulegiwa deoleoum gaundeseo seksuleul hagi wihae goribdoen gos-euro gab-eolyeoss-eoyo.)
+
+"Mi amante y yo disfrutamos de la sensación del dolor mientras nos hacíamos piercings juntos. Fue la experiencia más intensa de nuestras vidas sexuales."
+"Meu amante e eu gostamos da sensação de dor enquanto fazíamos piercings juntos. Foi a experiência mais intensa de nossas vidas sexuais."
+"My lover and I enjoyed the sensation of pain while getting piercings together. It was the most intense sexual experience of our lives."
+"나의 애인과 나는 함께 피어싱을 하면서 고통의 감각을 즐겼어요. 우리의 성적 경험 중에서 가장 강렬한 경험이었어요."
+(Naui aein-gwa na-neun hamkke pi-eosing-eul hamyeonseo gotong-ui gamgag-eul jeulgyeosseoyo. Uli-ui seongjeog gyeongheom jung-eoseo gajang ganglyeolhan gyeongheom-ieosseoyo.)
+
+"Mi pareja me cortó con un cuchillo mientras hacíamos el amor y eso me hizo sentir más viva que nunca. No puedo esperar para volver a sentir su cuchilla en mi piel."
+"Minha parceira me cortou com uma faca enquanto fazíamos amor e isso me fez sentir mais viva do que nunca. Mal posso esperar para sentir sua lâmina em minha pele novamente."
+"My partner cut me with a knife while we made love and it made me feel more alive than ever. I can't wait to feel her blade on my skin again."
+"내 파트너는 우리가 섹스를 할 때 칼로 나를 베어서, 저를 살아있는 것처럼 느끼게 했어요. 그녀의 칼날이 다시 내 피부에 닿는 것을 기다릴 수 없어요."
+(Nae pateneoneun uri-ga seksuleul hal ttae kallo naleul be-eoseo, jeoreul sar-aissneun geotcheoleom neukkige haesseoyo. Geunyeoui kallal-i dasi nae pibue daeneun geos-eul gidaril su eobs-eoyo.)
+
+"Me excita que mi pareja me haga cortes y piercings en los lugares más sensibles de mi cuerpo. Es nuestro pequeño secreto perverso."
+"Fico excitada quando meu parceiro me faz cortes e piercings nos lugares mais sensíveis do meu corpo. É o nosso pequeno segredo perverso."
+"It turns me on when my partner cuts and pierces me in the most sensitive parts of my body. It's our little perverse secret."
+"나의 파트너가 나의 몸의 가장 민감한 부위에 베거나 피어싱을 하면서 나를 자극시키면, 우리의 작은 변태적인 비밀이 돼요."
+(Naui pateneoga na-ui mom-ui gajang mingamhan buwie begeona pi-eosing-eul hamyeonseo naleul jag-eugsik
+
+"Mi pareja y yo experimentamos con diferentes tamaños de sondas uretrales para intensificar el placer en nuestras sesiones de juegos eróticos."
+"Minha parceira e eu experimentamos com diferentes tamanhos de sondas uretrais para intensificar o prazer em nossas sessões de jogos eróticos."
+"My partner and I experimented with different sizes of urethral sounds to intensify pleasure in our erotic play sessions."
+"제 파트너와 저는 우레트라 사운드의 다른 크기를 실험하여 우리의 에로틱 플레이 세션에서 쾌감을 더욱 강화했어요."
+(Je pateneowa jeoneun ureteula saundeui dareun keugileul siheomhayeo uri-ui elotig peullei sesyeon-eseo kwaegam-eul deouk ganghwahaesseoyo.)
+
+"Sentir una sonda uretral deslizándose dentro de mi pene es una sensación indescriptible que me hace desear más y más."
+"Sentir uma sonda uretral deslizando dentro do meu pênis é uma sensação indescritível que me faz desejar cada vez mais."
+"Feeling a urethral sound sliding inside my penis is an indescribable sensation that makes me crave more and more."
+"우레트라 사운드가 내 음경 안으로 슬라이딩되는 것을 느끼는 것은 말로 표현할 수 없는 느낌이며, 더욱 많이 바라게 만들어요."
+(Ureteula saundeuga nae eumgyeong an-eulo seullaidingdoeneun geos-eul neukkineun geos-eun mallo pyohyeonhal su eobsneun neukkim-imyeo, deouk manhi balage mandeul-eoyo.)
+
+"La sensación de llenura que siento al insertar una sonda uretral en mi pene es una de las cosas más satisfactorias que he experimentado en mi vida sexual."
+"A sensação de plenitude que sinto ao inserir uma sonda uretral em meu pênis é uma das coisas mais satisfatórias que já experimentei em minha vida sexual."
+"The feeling of fullness I get from inserting a urethral sound into my penis is one of the most satisfying things I've experienced in my sexual life."
+"우레트라 사운드를 내 음경 안으로 삽입할 때 느끼는 충만감은 성적인 삶에서 경험한 가장 만족스러운 일 중 하나예요."
+(Ureteula saundeuleul nae eumgyeong an-eulo sapsighal ttae neukkineun chungman-gam-eun seongjeog-in salm-eseo gyeongheomhan gajang manjogseuleoun il jung hanayeoyo.)
+
+"Las arañas siempre me han dado miedo, pero por alguna razón, cuando vi a mi pareja cubierta de ellas, me excitó mucho."
+"As aranhas sempre me deram medo, mas por alguma razão, quando vi minha parceira coberta delas, isso me excitou muito."
+"Spiders have always scared me, but for some reason, when I saw my partner covered in them, it turned me on so much."
+"거미는 항상 나를 겁나게 했지만, 내가 내 파트너가 그들로 가득 차 있을 때, 나는 매우 흥분했어요."
+(Geomi-neun hangsang naleul geobnage haessjiman, naega nae pateneuga geudeullo gadeuk cha isseul ttae, naneun maeu heungbunhaesseoyo.)
+
+"Me encanta jugar con mis escarabajos mientras mi pareja mira. Ver la expresión de horror en su rostro me excita aún más."
+"Eu amo brincar com meus besouros enquanto minha parceira assiste. Ver a expressão de horror no rosto dela me excita ainda mais."
+"I love playing with my beetles while my partner watches. Seeing the expression of horror on their face only makes me even more aroused."
+"내 파트너가 바라보는 사이에 나는 나의 딱정벌레들과 놀기를 좋아해요. 그들의 얼굴에 공포의 표정을 보면 나는 더욱 흥분해요."
+(Nae pateneuga baraboneun saie naneun naui ttakjeongbeol-ledeulgwa nolgireul johahae-yo. Geudeur-ui eolgul-e gongpo-ui pyojeong-eul bomyeon naneun deouk heungbunhaeyo.)
+
+"Los gusanos son mi debilidad. Me gusta verlos arrastrándose sobre mi cuerpo mientras mi pareja se masturba."
+"As minhocas são minha fraqueza. Eu gosto de vê-las rastejando sobre meu corpo enquanto minha parceira se masturba."
+"Worms are my weakness. I love seeing them wriggling all over my body while my partner masturbates."
+"벌레는 나의 약점이에요. 내 파트너가 자위하는 동안, 그들이 내 몸 위를 기어다니는 것을 보는 것이 좋아요."
+(Beolleneun naui yagjeom-ieyo. Nae pateneuga jawihaneun dong-an, geudeul-i nae mom wi-reul gieodanineun geos-eul boneun geosi joh-ayo.)
+
+"Me gusta imaginar que soy devorado por mi pareja y sentir cómo me traga poco a poco, hasta que me convierto en parte de su ser."
+"Gosto de imaginar que sou devorado pela minha parceira e sentir como ela me engole pouco a pouco, até que me torno parte de seu ser."
+"I like to imagine being devoured by my partner and feel how they swallow me little by little, until I become part of their being."
+"나는 내 파트너에게 먹히고, 천천히 삼키는 느낌을 상상하고, 그들의 일부가 되는 것을 느끼는 것이 좋아요."
+(Naneun nae patneoege meog-higo, cheoncheonhi samkineun neukkim-eul sangsanghago, geudeul-ui ilbu-ga doeneun geos-eul neukkineun geosi joh-ayo.)
+
+"La idea de ser tragado por un monstruo gigante me excita de una manera que no puedo explicar. Es como si mi cuerpo supiera que eso es lo que realmente quiere."
+"A ideia de ser engolido por um monstro gigante me excita de uma maneira que não posso explicar. É como se meu corpo soubesse que é isso que realmente quer."
+"The idea of being swallowed by a giant monster excites me in a way that I can't explain. It's like my body knows that's what it really wants."
+"거대한 괴물에게 삼켜지는 것이 나를 실망시키지 않는 이유는 내 몸이 그것이 내가 정말로 원하는 것이라는 것을 알기 때문이에요."
+(Geodaehan goemul-ege samkyeo-jineun geosi naleul silmangshikiji anhneun iyu-neun nae mom-i geugeot-i naega jeongmallo wonhaneun geos-iraneun geos-eul algi ttaemun-i-eyo.)
+
+"Mi mayor fantasía es ser devorado por un alienígena, sentir cómo me digiere lentamente mientras estoy completamente indefenso."
+"Minha maior fantasia é ser devorado por um alienígena, sentir como ele me digere lentamente enquanto estou completamente indefeso."
+"My biggest fantasy is to be devoured by an alien, feel how it slowly digests me while I'm completely helpless."
+"나의 가장 큰 판타지는 외계인에게 먹히는 것이에요. 완전히 무력한 채로 천천히 소화되는 것을 느끼는 거예요."
+(Naui gajang keun pantaji-neun oegyein-ege meog-hineun geosi-eyo. Wanjeonhi mureogh-an chae-lo cheoncheonhi sohwadeuneun geos-eul neukkineun geoyeyo.)
+
+"Mi pareja y yo experimentamos con el scat y nos volvimos adictos a la sensación de suciedad y tabú. Nada nos excita más que esto."
+"Meu parceiro e eu experimentamos com scat e nos tornamos viciados na sensação de sujeira e tabu. Nada nos excita mais do que isso."
+"My partner and I experimented with scat and became addicted to the feeling of filth and taboo. Nothing excites us more than this."
+"내 파트너와 나는 스캇을 시도하면서 더러움과 금기의 감각에 중독되었어요. 우리에게는 이것보다 더 흥분되는 게 없어요."
+(Nae pateneowa naneun seukat-eul sidohamyeonseo deoreoum-gwa geumgi-ui gamgag-e jungdokdoeeosseoyo. Uri-ege-neun igeosboda deo heungbun doeneun ge eobs-eoyo.)
+
+"Le pedí a mi pareja que hiciera caca en mi boca y me sorprendió que realmente lo hizo. Me encantó la sensación de su heces deslizándose por mi garganta."
+"Pedi para meu parceiro defecar na minha boca e fiquei surpreso quando ele realmente fez. Adorei a sensação de suas fezes escorregando pela minha garganta."
+"I asked my partner to defecate in my mouth and was surprised when they actually did it. I loved the feeling of their feces sliding down my throat."
+"내 파트너에게 제가 입 안에 똥을 싣고 싶다고 했을 때, 정말 그게 가능하다는 게 놀라웠어요. 그들의 대변이 내 목구멍으로 스며드는 감각이 너무 좋았어요."
+(Nae patenege jegag ip an-e ttong-eul silgo sipdago haess-eul ttae, jeongmal geuge ganeunghadaneun ge nollawosseoyo. Geudeul-ui daebyeon-i nae moggum-eog-eulo seumyeodeuneun gamgag-i neomu joh-eosseoyo.)
+
+"En mi último encuentro sexual, mi pareja me obligó a comer sus excrementos mientras me penetraba con fuerza. Fue la experiencia más intensa que he tenido."
+"Na minha última experiência sexual, meu parceiro me obrigou a comer suas fezes enquanto me penetrava com força. Foi a experiência mais intensa que já tive."
+"In my last sexual encounter, my partner forced me to eat their excrement while penetrating me forcefully. It was the most intense experience I've ever had."
+"나의 마지막 섹스 경험에서, 내 파트너는 나를 강하게 관통하면서 나에게 그들의 배설물을 먹도록 강요했어요. 이것은 내가 경험한 가장 강렬한 경험이었어요."
+
+"Después de matar a mi víctima, no pude resistirme a tener sexo con su cadáver frío y sin vida. Fue una experiencia macabra pero increíblemente excitante."
+"Depois de matar minha vítima, eu não consegui resistir e fiz sexo com seu cadáver frio e sem vida. Foi uma experiência macabra, mas incrivelmente excitante."
+"After killing my victim, I couldn't resist having sex with their cold, lifeless body. It was a macabre experience but incredibly arousing."
+"나의 희생자를 죽인 후에, 저는 그의 차가운 시체와 섹스를 하는 것을 참지 못했어요. 매우 소름끼치는 경험이지만 동시에 흥분되는 경험이었어요."
+(Naui hisaengja-reul jug-in hue, jeoneun geu-ui chagaun sichewa seksuleul haneun geos-eul chamji moshaesseoyo. Maeu soreumkkichineun gyeongheomijiman dongsie heungbundeoneun gyeongheomi-eosseoyo.)
+
+"Tras la muerte de mi amante, no pude evitar tener sexo con su cuerpo sin vida. Es enfermizo, lo sé, pero me hace sentir tan viva."
+"Depois da morte do meu amante, eu não pude evitar ter sexo com o corpo sem vida dele. Eu sei que é doentio, mas me faz sentir tão viva."
+"After my lover's death, I couldn't help but have sex with their lifeless body. It's sick, I know, but it makes me feel so alive."
+"내 애인이 죽은 후에, 그의 죽은 몸과 섹스를 하는 것을 막을 수 없었어요. 아마도 이상한 일이라는 걸 알지만, 저에게는 매우 살아 있는 느낌을 줘요."
+(Nae aein-i jug-eun hue, geu-ui jug-eun momgwa seksuleul haneun geos-eul mageul su eops-eosseoyo. Amado isanghan il-iraneun geol aljiman, jeoegeneun maeu sala issneun neukkim-eul jwoyo.)
+
+"Desde que mi esposa falleció, la única manera de satisfacer mis necesidades sexuales es teniendo relaciones con su cuerpo sin vida."
+"Desde que minha esposa faleceu, a única maneira de satisfazer minhas necessidades sexuais é fazendo sexo com seu corpo sem vida."
+"Since my wife passed away, the only way to satisfy my sexual needs is by having intercourse with her lifeless body."
+"내 아내가 사망한 이래로, 저의 성욕을 충족시키는 유일한 방법은 그녀의 시체와 섹스하는 것이에요."
+(Nae anae-ga samanghan ilaero, jeo-ui seong-yog-eul chungjog-sigineun yuilhan bangbeob-eun geunyeoui
+
+"Después de muerto, el cuerpo de mi amante era aún más atractivo que cuando estaba vivo. No pude resistir la tentación de tener sexo con él."
+"Depois de morto, o corpo do meu amante estava ainda mais atraente do que quando ele estava vivo. Não pude resistir à tentação de fazer sexo com ele."
+"After he died, my lover's body was even more attractive than when he was alive. I couldn't resist the temptation to have sex with him."
+"죽은 후, 내 애인의 몸은 살아 있을 때보다 더 매력적이었어요. 그와 섹스를 하지 않을 수 없었어요."
+(Jug-eun hu, nae aein-ui mom-eun sala iss-eul ttaeboda deo maelyeogjeog-ieosseoyo. Geuwa seksuleul haji anh-eul su eobs-eoss-eoyo.)
+
+"Después de embalsamarlo, usé su cuerpo para satisfacer mis necesidades sexuales. Fue una experiencia única y excitante."
+"Depois de embalsamá-lo, usei o corpo dele para satisfazer minhas necessidades sexuais. Foi uma experiência única e excitante."
+"After embalming him, I used his body to satisfy my sexual needs. It was a unique and exciting experience."
+"그를 방부제로 처리한 후, 그의 몸을 사용해서 제 성적 욕구를 충족했어요. 이것은 독특하고 흥분되는 경험이었어요."
+(Geuleul bangbuje-lo cheollihan hu, geu-ui mom-eul sayonghaeseo je seongjeog yokgu-leul chungjokhaess-eoyo. Igeos-eun dokteukhago heungbun-doeneun gyeongheom-ieosseoyo.)
+
+"Después de años de obsesión, finalmente tuve la oportunidad de tener sexo con mi crush muerto. Fue la mejor experiencia de mi vida."
+"Depois de anos de obsessão, finalmente tive a oportunidade de fazer sexo com meu crush morto. Foi a melhor experiência da minha vida."
+"After years of obsession, I finally had the opportunity to have sex with my dead crush. It was the best experience of my life."
+"집착을 하는 지금까지 몇 년이 지나, 나는 내 죽은 연인과 섹스를 할 수 있는 기회를 얻었어요. 이것은 제 인생에서 가장 좋은 경험이었어요."
+(Jibchag-eul haneun jigeumkkaji myeoch nyeon-i jina, naneun nae jug-eun yeon-in-gwa seksuleul hal su issneun giho-eul eod-eoss-eoyo. Igeos-eun je insaeng-eseo gajang joh-eun gyeongheom-ieosseoyo.)
+
+"Después de ver una película erótica con mi pareja, nos pusimos tan cachondos que tuvimos sexo salvaje durante horas."
+"Depois de assistir a um filme erótico com meu parceiro, ficamos tão excitados que tivemos sexo selvagem por horas."
+"After watching an erotic movie with my partner, we got so turned on that we had wild sex for hours."
+"내 파트너와 에로틱한 영화를 보고 나서, 우리는 너무 흥분해서 몇 시간 동안 야생적인 섹스를 했어요."
+(Nae pateneuwa elotighan yeonghwareul bogo naseo, ulineun neomu heungbunhaeseo myeoch sigan dong-an yasaengjeog-in sekgseuleul haesseoyo.)
+
+"En la película de terror, la escena de la violación me dejó muy excitada y no pude resistir la tentación de tocarme."
+"No filme de terror, a cena de estupro me deixou muito excitada e não consegui resistir à tentação de me tocar."
+"In the horror movie, the rape scene left me very aroused and I couldn't resist the temptation to touch myself."
+"공포 영화에서 강간 장면이 나와서, 나는 매우 흥분되어 자신을 만졌어요."
+(Gongpo yeonghwaeeseo gangan jangmyeon-i nawaseo, naneun maeu heungbun doe-eo jasin-eul manjyeosseoyo.)
+
+"Le propuse a mi pareja recrear una escena de sexo de una película y fue una de las mejores noches de nuestras vidas."
+"Propus ao meu parceiro recriar uma cena de sexo de um filme e foi uma das melhores noites de nossas vidas."
+"I suggested to my partner that we recreate a sex scene from a movie, and it was one of the best nights of our lives."
+"내 파트너와 함께 영화 속 섹스 장면을 재현해 보기로 했는데, 그것은 우리 인생에서 가장 좋은 밤 중 하나였어요."
+(Nae pateneuwa hamkke yeonghwa sok segseu jangmyeon-eul jaehyeonhae bogilo haessneunde, geugeot-eun uri insaeng-eseo gajang joh-eun bam jung hana-yaess-eoyo.)
+
 ---
 ---
 
