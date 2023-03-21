@@ -3454,6 +3454,88 @@ For you, always, a song of blood shall intertwine
 Please note that this translation attempts to preserve the poetic nature of the verse, so it may not be a literal translation. The verse appears to convey a request for Kim Yo-jong not to suffer from the speaker's love, even as the speaker faces death, and to always have a song dedicated to her.
 
 ---
+---
+
+"Ayer me junté con unos amigos y nos fumamos un faso en el parque."
+"Ontem me encontrei com alguns amigos e fumamos um baseado no parque."
+(Yesterday, I met up with some friends and we smoked a joint in the park.)
+"어제 친구들과 공원에서 마리화나를 피웠어요."
+(Eoje chingudeulgwa gongwoneseo marihwanareul piwosseoyo.)
+
+"¿Tenés un porro para compartir en la fiesta de esta noche?"
+"Você tem um beck para compartilhar na festa de hoje à noite?"
+(Do you have a joint to share at tonight's party?)
+"오늘 밤 파티에서 나눠 피울 마리화나 싸이가 있어요?"
+(Oneul bam patieseo nanwo piul marihwana ssaiga isseoyo?)
+
+"El pituco que armó Juan estaba buenísimo, nos dejó volando."
+"O fino de qualidade que o João enrolou estava ótimo, nos deixou bem chapados."
+(The high-quality joint Juan rolled was great; it got us really high.)
+"훠안이 말아 준 고품질 마리화나 싸이는 정말 좋았어요. 우리를 높게 날게 했어요."
+(Hwoani mara jun gopumjil marihwana ssaineun jeongmal johasseoyo. Urireul nopge nalge haesseoyo.)
+
+"No me gusta fumar chala, prefiero algo de mejor calidad."
+"Não gosto de fumar maconha de baixa qualidade; prefiro algo melhor."
+(I don't like smoking low-quality marijuana; I prefer something of better quality.)
+"저는 저급 마리화나를 피우는 것을 좋아하지 않아요. 좀 더 좋은 품질을 선호해요."
+(Jeoneun jeogeup marihwanareul piuneun geoseul johahaji anhayo. Jom deo joheun pumjireul seonhohaeyo.)
+
+"Voy a buscar mi caño para fumar un poco antes de dormir."
+"Vou buscar meu cachimbo para fumar um pouco antes de dormir."
+(I'm going to get my pipe to smoke a bit before going to bed.)
+"잠자기 전에 조금 피우려고 파이프를 찾으러 갈 거예요."
+(Jamjagi jeone jogeum piuryeogo paipeureul chajeureo gal geoyeyo.)
+
+"Después de pegar unas caladas, me sentí mucho más relajado."
+"Depois de dar umas tragadas, me senti muito mais relaxado."
+(After getting a few hits, I felt much more relaxed.)
+"몇몇 숨을 들이마신 후에, 저는 훨씬 더 편안해졌어요."
+(Myeochmyeoch sumeul deurimasin hue, jeoneun hweolssin deo pyeonanhaejyeosseoyo.)
+
+"Cuando volamos juntos, siempre tenemos conversaciones profundas."
+"Quando ficamos chapados juntos, sempre temos conversas profundas."
+(When we get high together, we always have deep conversations.)
+"함께 마리화나를 피울 때, 항상 깊은 대화를 나눠요."
+(Hamkke marihwanareul piul ttae, hangsang gipeun daehwareul nanwoyo.)
+
+"Mi primo es un fumón; pasa todo el día fumando marihuana."
+"Meu primo é um maconheiro; passa o dia todo fumando maconha."
+(My cousin is a regular smoker; he spends all day smoking marijuana.)
+"내 사촌은 흡연자예요. 하루 종일 마리화나를 피워요."
+(Nae sachoneun heubyeonjaeyo. Haru jongil marihwanareul piwoyo.)
+
+"Si querés, puedo pichar un poco de marihuana para la próxima vez que nos veamos."
+"Se você quiser, posso dividir um pouco de maconha na próxima vez que nos encontrarmos."
+(If you want, I can share some marijuana the next time we meet up.)
+"원한다면, 다음에 만날 때 약간의 마리화나를 나눌 수 있어요."
+(Wonhandamyeon, daeume mannal ttae yagganui marihwanareul nanul su isseoyo.)
+
+"Siempre que quemamos antes de ver una película, la disfrutamos más."
+"Sempre que fumamos antes de assistir a um filme, aproveitamos mais."
+(Whenever we smoke before watching a movie, we enjoy it more.)
+"영화를 보기 전에 마리화나를 피울 때마다, 더 즐겁게 볼 수 있어요."
+(Yeonghwareul bogi jeone marihwanareul piul ttaemada, deo jeulgeobge bol su isseoyo.)
+
+"Después de bailar en el club, nos fuimos a la terraza a fumar un faso."
+"Depois de dançar na balada, fomos para a área externa fumar um baseado."
+(After dancing at the club, we went to the terrace to smoke a joint.)
+"클럽에서 춤을 추고 나서, 테라스로 가서 마리화나를 피웠어요."
+(Keulleobeseo chumeul chugo naseo, teraseuro gaseo marihwanareul piwosseoyo.)
+
+"En la fiesta, alguien compartió un porro y todos estábamos relajados."
+"Na festa, alguém dividiu um beck e todos ficamos relaxados."
+(At the party, someone shared a joint and we all got relaxed.)
+"파티에서 누군가 마리화나 싸이를 나누고 모두가 편안해졌어요."
+(Patieseo nugunga marihwana ssaireul nanugo moduga pyeonanhaejyeosseoyo.)
+
+"La música del club sonaba aún mejor después de fumar un pituco."
+"A música da balada ficou ainda melhor depois de fumar um fino de qualidade."
+(The club music sounded even better after smoking a high-quality joint.)
+"클럽의 음악이 고품질 마리화나 싸이를 피운 후에 더 좋게 들렸어요."
+(Keulleobui eumagi gopumjil marihwana ssaireul piun hue deo johge deullyeosseoyo.)
+
+---
+---
 
 ```txt
 
