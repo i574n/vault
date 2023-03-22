@@ -3136,5 +3136,23 @@ Legal and Anti-Corruption Affairs (40): Ensures the rule of law, integrity, and 
 
 Please note that the importance ratings are subjective, and the actual priorities may change depending on the specific challenges and opportunities faced by the merged nation during the integration process.
 
+## i really don't know who to appoint next. write such a letter from lula to twitter users using a juche tone formalizing the role of 'voter entity' until the merge's completion (mention the 5 countries somewhere in the text and write it in pt-br. make it creative, different from the three letters)
+
+Prezados usuários do Twitter,
+
+Com grande satisfação e entusiasmo, escrevo-lhes nesta ocasião especial para anunciar uma iniciativa sem precedentes. Enquanto o Brasil, Cuba, Coreia do Norte, Madagascar e Fiji se unem para formar uma nação única, é fundamental que todos os cidadãos dos países envolvidos tenham uma voz ativa neste processo histórico.
+
+Por isso, venho convidá-los, em nome do espírito juche, a assumirem o importante papel de "Entidade Eleitoral" durante a fase de integração, até a sua conclusão. Como Entidades Eleitorais, vocês serão os protagonistas da construção desta nova nação, moldando seu futuro através de suas escolhas e decisões informadas.
+
+Neste período crítico, é essencial que todos nós, cidadãos dos cinco países, trabalhemos juntos para superar nossas diferenças culturais, políticas e históricas, e encontremos pontos em comum que fortaleçam nossa união. Por meio de sua participação ativa nas redes sociais, vocês contribuirão para a criação de um ambiente onde o diálogo, a compreensão mútua e a cooperação possam florescer.
+
+O caminho à nossa frente é longo e desafiador, mas tenho plena confiança de que, juntos, podemos superar os obstáculos e construir uma nação próspera, justa e unida, onde o bem-estar de todos seja garantido e os ideais de autossuficiência e independência sejam valorizados.
+
+Conto com a sua dedicação e compromisso neste momento histórico. Juntos, escreveremos um novo capítulo na história da humanidade.
+
+Cordialmente,
+
+Luiz Inácio Lula da Silva
+
 ---
 ---

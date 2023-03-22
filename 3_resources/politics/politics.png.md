@@ -2,3 +2,4 @@
 ![Convite para assumir cargo de Embaixador Extraordinário e Plenipotenciário](https://bafybeichvww7td4ht555eyxgcxgh5bnkd7rbf54awqyicytnwkdykrb7re.ipfs.nftstorage.link/Screenshot%202023-03-22%20115559.png)
 ![Convite para assumir cargo de Ministra das Relações Exteriores](https://bafybeibond6y2qd7ukpryfuardac7fxfprxhzzbab66pmqak4iwk7dlnn4.ipfs.nftstorage.link/Screenshot%202023-03-22%20134836.png)
 ![외교장관 직무 수행 초빙](https://bafybeibond6y2qd7ukpryfuardac7fxfprxhzzbab66pmqak4iwk7dlnn4.ipfs.nftstorage.link/Screenshot%202023-03-22%20134856.png)
+![Convite para assumir cargo de Entidade Eleitoral](https://bafybeid5jll3mln6o4nn5qxpivcivp2cqercsaxeyh3n7ftehh3ale3pda.ipfs.nftstorage.link/Screenshot%202023-03-22%20141915.png)
