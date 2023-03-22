@@ -103,6 +103,20 @@ Vulnerability to exploitation: Individuals with severe schizophrenia may be more
 
 The most severe cases of schizophrenia can have a profound impact on an individual's life, making it essential to provide early intervention, accurate diagnosis, and appropriate treatment. Treatment for schizophrenia typically involves a combination of antipsychotic medications, psychosocial therapies, and support services to help manage symptoms, improve functioning, and enhance the individual's overall quality of life.
 
+## depict the most severe cases of erotomania on the spectrum
+
+< Erotomania, also known as de Clérambault's syndrome, is a rare delusional disorder characterized by the belief that a person, often of higher social status, is secretly in love with the individual suffering from erotomania. In the most severe cases of erotomania, the following symptoms and consequences may be observed:
+
+Intense and persistent delusions: Individuals with severe erotomania are firmly convinced that the object of their affection is in love with them, despite clear evidence to the contrary. These delusions can be highly resistant to any form of reason or logical argument, and they can persist for extended periods.
+
+Intrusive behaviors: People with severe erotomania may engage in stalking, harassment, or unwanted contact with the person they believe is in love with them. These behaviors can escalate and become more disruptive or threatening over time, potentially leading to legal consequences.
+
+Disrupted personal relationships: The obsession with the imagined romantic relationship can severely impact the individual's personal relationships, leading to social isolation, conflicts, and the breakdown of existing partnerships or friendships.
+
+Interference with daily functioning: Severe cases of erotomania can cause significant disruption in the individual's daily life, including work, school, and self-care. The person may neglect essential tasks and responsibilities in favor of pursuing the delusional relationship.
+
+Co-occurring mental health issues: Individuals with severe erotomania may also struggle with other mental health conditions, such as depression, anxiety, or substance abuse, which can further complicate their lives and exacerbate their symptoms.
+
 ## list the best known medications for severe schizophrenia and contrast its known effects with cbd and thc
 
 < The best-known medications for severe schizophrenia are antipsychotic drugs, which can be divided into two categories: first-generation (typical) antipsychotics and second-generation (atypical) antipsychotics. These medications primarily target the dopamine system in the brain, as well as other neurotransmitters like serotonin, to alleviate symptoms. Some of the most commonly prescribed antipsychotic medications include:
