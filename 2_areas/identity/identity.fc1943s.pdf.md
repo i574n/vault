@@ -6,13 +6,13 @@ style: height:50vh
 ```
 
 ```custom-frames
-urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/voting%20justification%20proof%206VOCUXJJKY%202020-11-15%20n1.pdf
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeih7pvcon54zlau6liw2sabfyndrxfus7xlm2ghjjnex4awjet5tre.ipfs.nftstorage.link/ctps%202023.pdf
 frame: https://
 style: height:50vh
 ```
 
 ```custom-frames
-urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/criminal%20record%20certificate%2044040002020%202020-08-14.pdf
+urlSuffix: mupdf.com/wasm/demo/view.html?file=https://bafybeicljn7wpac6a7fu54e65lnvbo7ife64r5sydsetgpnwjeh4gjem5e.ipfs.nftstorage.link/fatura-Mar%C3%A7o_23-0088303004.pdf
 frame: https://
 style: height:50vh
 ```
