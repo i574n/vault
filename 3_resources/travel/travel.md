@@ -9456,5 +9456,61 @@ Refillable toner cartridges: Refillable toner cartridges are designed to be used
 
 Overall, the environmental friendliness rating of toners can vary depending on the manufacturer and the specific type of toner. It is important to research the sustainability practices of toner manufacturers and consider eco-friendly alternatives when possible.
 
+## list each for what's used for, 0-1000 importance in a first aid, alternatives for each, average brl price, known reactions etc. use markdown table form
+
+Compound | Use | Importance (0-1000) | Alternatives | Avg. BRL Price | Known Reactions
+---------|-----|---------------------|--------------|----------------|----------------
+Iodopovidone (Povidone-iodine) | Antiseptic for wounds, cuts, and burns | 900 | Chlorhexidine, Hydrogen Peroxide | 10-20 | Skin irritation, rash, allergic reactions
+Neomycin | Topical antibiotic for skin infections | 800 | Bacitracin, Mupirocin | 20-35 | Skin irritation, rash, allergic reactions
+Silver sulfadiazine (Sulfadiazina de prata) | Topical antibiotic for burns | 700 | Mafenide Acetate, Bacitracin | 30-60 | Skin irritation, rash, allergic reactions
+Loratadine | Antihistamine for allergy symptoms | 600 | Cetirizine, Fexofenadine, Diphenhydramine | 15-30 | Drowsiness, dry mouth, headache
+Lidocaine | Topical anesthetic for pain relief | 800 | Benzocaine, Prilocaine, Tetracaine | 20-40 | Skin irritation, rash, allergic reactions
+Paracetamol (Acetaminophen) | Pain relief and fever reduction | 900 | Ibuprofen, Aspirin | 10-20 | Liver damage (in case of overdose)
+Ibuprofen | Anti-inflammatory, pain relief, fever reduction | 900 | Paracetamol, Naproxen, Aspirin | 10-25 | Stomach upset, nausea, allergic reactions
+Diclofenaco dietilamonio | Topical anti-inflammatory, pain relief | 750 | Piroxicam, Ketoprofen | 20-40 | Skin irritation, rash, allergic reactions
+Arnica | Topical pain relief, bruising, and swelling | 600 | Menthol, Camphor | 15-30 | Skin irritation, rash, allergic reactions
+Acetylcysteine (N-acetylcysteine) | Mucolytic, treats acetaminophen overdose | 300 | Guaifenesin, Ambroxol | 25-50 | Nausea, vomiting, rash, allergic reactions
+Adhesive bandages | Cover and protect small wounds, cuts, and scrapes | 950 | Gauze and medical tape | 10-25 | Skin irritation, allergic reactions
+Sterile gauze | Absorb blood, cover and protect larger wounds | 950 | Non-stick pads, wound dressings | 10-20 | Skin irritation, allergic reactions
+Antiseptic wipes | Clean and disinfect wounds, cuts, and scrapes | 950 | Iodopovidone, Hydrogen Peroxide | 10-20 | Skin irritation, rash, allergic reactions
+Tweezers | Remove splinters, ticks, and other foreign objects | 900 | Needle-nose pliers, hemostats | 15-40 | N/A
+Medical tape | Secure gauze or bandages to wounds | 900 | Adhesive bandages, self-adherent wrap | 10-20 | Skin irritation, allergic reactions
+Promethazine | Anti-nausea, motion sickness, antihistamine | 600 | Dimenhydrinate, Meclizine, Loratadine | 20-40 | Drowsiness, dry mouth, blurred vision
+Dipyrone (Metamizole) | Pain relief, fever reduction | 750 | Paracetamol, Ibuprofen, Aspirin | 15-30 | Allergic reactions, low blood pressure
+LSD (Lysergic Acid Diethylamide) | Experimental therapy for anxiety, PTSD, addiction | 200 | SSRIs, therapy, other psychedelics | N/A (illegal) | Hallucinations, anxiety, panic attacks
+Codeine | Pain relief, cough suppressant | 700 | Morphine, Hydrocodone, Oxycodone | 40-100 | Drowsiness, nausea, constipation, addiction
+MDMA (3,4-methylenedioxymethamphetamine) | Experimental therapy for PTSD, anxiety | 200 | SSRIs, therapy, other psychedelics | N/A (illegal) | Anxiety, increased heart rate, dehydration
+Cocaine | Rarely used as a local anesthetic for specific surgeries | 100 | Lidocaine, Benzocaine, Bupivacaine | N/A (illegal) | Increased heart rate, paranoia, addiction
+5-MeO-DMT | Experimental therapy for anxiety, depression | 200 | SSRIs, therapy, other psychedelics | N/A | Hallucinations, anxiety, panic attacks
+Adderall | Treatment of ADHD, narcolepsy | 800 | Ritalin, Concerta, Vyvanse | 80-200 | Insomnia, loss of appetite, increased heart rate
+Caffeine | Stimulant, relief of fatigue and drowsiness | 600 | Modafinil, Theacrine, Guarana | 10-30 | Insomnia, restlessness, rapid heartbeat
+Ephedrine | Treatment of asthma, nasal congestion | 500 | Pseudoephedrine, Phenylephrine | 40-80 | Increased heart rate, anxiety, dizziness
+THC (Tetrahydrocannabinol) | Pain relief, antiemetic, appetite stimulation | 500 | CBD, Marinol, other cannabinoids | N/A (varies) | Drowsiness, dry mouth, increased appetite
+CBD (Cannabidiol) | Pain relief, anxiety, inflammation, epilepsy | 600 | NSAIDs, anticonvulsants | 50-300 | Fatigue, dizziness, dry mouth
+N,N-DMT | Experimental therapy for mental health disorders | 100 | SSRIs, therapy, other psychedelics | N/A | Hallucinations, anxiety, panic attacks
+Methamphetamine | Rarely used for ADHD, narcolepsy (prescription form) | 200 | Adderall, Ritalin, Concerta | N/A (illegal) | Insomnia, loss of appetite, addiction
+DPT (Dipropyltryptamine) | Experimental therapy for mental health disorders | 100 | SSRIs, therapy, other psychedelics | N/A | Hallucinations, anxiety, panic attacks
+Methylone | No established medical use | 0 | N/A | N/A (illegal) | Anxiety, increased heart rate, dehydration
+Datura | Traditional medicine, antispasmodic, anti-inflammatory | 100 | Scopolamine, Atropine | N/A | Hallucinations, delirium, poisoning
+Barbiturates | Sedation, seizure control, anesthesia | 400 | Benzodiazepines, propofol | 50-100 | Drowsiness, respiratory depression, addiction
+Benzodiazepines | Anxiety, insomnia, seizure control, muscle relaxation | 800 | Barbiturates, non-benzodiazepine hypnotics | 25-100 | Drowsiness, dizziness, addiction
+Alcohol (Ethanol) | Antiseptic, disinfectant, rarely used as an antidote | 300 | Iodopovidone, hydrogen peroxide | 10-20 | Intoxication, drowsiness, liver damage
+Nitrous Oxide | Pain relief, dental procedures, anesthesia | 500 | Local anesthetics, general anesthesia | 50-150 | Dizziness, nausea, oxygen deprivation
+Fentanyl | Severe pain management, anesthesia | 700 | Morphine, Oxycodone, Hydromorphone | 100-300 | Respiratory depression, addiction, constipation
+Heroin | Not used in a medical context, has no legal medical use | 0 | Morphine, Oxycodone, Methadone | N/A (illegal) | Respiratory depression, addiction, constipation
+Morphine | Pain relief, severe pain management | 800 | Oxycodone, Fentanyl, Hydromorphone | 50-150 | Drowsiness, respiratory depression, addiction
+Bufotenin | No known medical use | 0 | N/A | N/A | Hallucinations, nausea, vomiting
+Methadone | Opioid addiction treatment, pain relief | 700 | Buprenorphine, Naltrexone | 50-150 | Respiratory depression, addiction, constipation
+Kratom | Experimental therapy for opioid withdrawal, pain relief | 200 | Methadone, Buprenorphine | 50-200 | Nausea, itching, addiction, constipation
+Oxycodone | Pain relief, moderate to severe pain management | 800 | Morphine, Fentanyl, Hydromorphone | 50-150 | Drowsiness, respiratory depression, addiction
+Nicotine | Smoking cessation, stimulant | 500 | Varenicline, bupropion, nicotine patches | 20-100 | Increased heart rate, addiction, nausea
+Modafinil | Narcolepsy, sleep disorders, off-label cognitive enhancement | 600 | Armodafinil, stimulants | 50-150 | Headache, nausea, insomnia
+Armodafinil | Promotes wakefulness, treats sleep disorders | 700 | Modafinil, Methylphenidate | 150-300 | Headache, dizziness, nausea
+Sertraline | Antidepressant, treats anxiety and depression | 800 | Fluoxetine, Paroxetine, Citalopram | 20-60 | Nausea, dizziness, dry mouth, insomnia
+Gabapentin | Treats nerve pain, seizures, and restless leg syndrome | 750 | Pregabalin, Carbamazepine | 40-80 | Dizziness, drowsiness, weight gain
+Ibogaine | Experimental therapy for addiction | 200 | Naltrexone, Methadone, Buprenorphine | N/A | Nausea, vomiting, hallucinations, cardiac risks
+Ritalin (Methylphenidate) | Treats ADHD, promotes focus and alertness | 800 | Amphetamine, Atomoxetine | 50-150 | Nervousness, increased heart rate, appetite loss
+Pregabalin | Treats nerve pain, anxiety, and seizures | 750 | Gabapentin, Carbamazepine | 40-100 | Dizziness, drowsiness, weight gain
+
 ---
 ---
