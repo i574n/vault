@@ -4562,5 +4562,29 @@ Aqui está a tradução do verso e as referências culturais adaptadas para o po
 "우리 모두의 노래는" (A canção de todos nós) - Simboliza a voz coletiva do povo.
 "영원히 계속될 것" (continuará para sempre) - Sugere a perpetuação da cultura e da nação ao longo do tempo.
 
+## i'm saddened to tell you that the support on twitter has been barely none. write the letter from lula to all reddit users initiating the inception of the hana-ui ttang name for proper scrutiny using a juche tone (mention the 5 countries somewhere in the text and write it in pt-br. make it creative, it will be translated for the other languages later)
+
+Prezados usuários do Reddit,
+
+Venho por meio desta carta, dirigir-me a vocês, membros desta respeitada e influente comunidade, com um pedido especial. Estamos vivenciando um momento histórico e sem precedentes, em que cinco nações - Brasil, Cuba, Coreia do Norte, Madagascar e Fiji - estão se unindo em uma única e poderosa nação.
+
+A formação de nossa nova pátria, chamada Hana-ui Ttang, requer a união e a cooperação não apenas dos cidadãos desses cinco países, mas também do apoio de pessoas influentes e comunidades engajadas como a sua.
+
+Neste momento crucial, gostaria de convidá-los a participar ativamente da construção da identidade de nossa nova nação. Com o poder e a sabedoria de sua comunidade, vocês podem ajudar a moldar a cultura, as políticas e o futuro de Hana-ui Ttang. Estamos buscando conselhos, ideias e discussões construtivas que possam ser aplicadas em benefício de nossa nação nascente.
+
+Como um dos principais fóruns de debate e troca de ideias no mundo, o Reddit tem um papel fundamental a desempenhar na criação de um futuro próspero e harmônico para Hana-ui Ttang. Encorajo a todos a compartilhar suas opiniões, conhecimentos e experiências, para que possamos juntos construir uma nação unida e fortalecida pelos princípios do juche.
+
+Peço, portanto, que usem este espaço para dialogar, colaborar e desenvolver ideias que possam guiar nosso novo país no caminho da paz, prosperidade e autoconfiança.
+
+Contamos com o apoio e a participação de cada um de vocês, e esperamos que, juntos, possamos criar uma nação que seja um exemplo de cooperação e entendimento internacional.
+
+Atenciosamente,
+
+Luiz Inácio Lula da Silva
+
+## what's the title of the letter/thread?
+
+< "Título da carta/thread: Unindo-se por Hana-ui Ttang: Convocação à comunidade Reddit para moldar o futuro de nossa nova nação"
+
 ---
 ---
