@@ -2,12 +2,12 @@
 
 Parameter | Value
 ----------|------
-Birth Time (local time)   | 1992-02-25 03:43 (Manually: GMT-03:00)
-Universal Time (UT/GMT)   | 1992-02-25 06:43
-Local Sidereal Time (LST) | 13:53:58
-Latitude                  | 23° 33' 28.116'' S
-Longitude                 | 46° 39' 27.936'' W
-Latitude, Longitude       | (-23.557810, -46.657760) Sao Paulo, Brazil
+Birth Time (local time) | 1992-02-25 03:43 (Manually: GMT-03:00)
+Universal Time (UT/GMT) | 1992-02-25 06:43
+Local Sidereal Time (LST) | 13:53:57
+Latitude | 23° 33' 28.116'' S
+Longitude | 46° 39' 27.936'' W
+Latitude, Longitude | (-23.557810, -46.657760) Sao Paulo, Brazil
 Altitude | 820.00 meters
 
 Parameter | Value
@@ -25,7 +25,6 @@ Sunrise | 6:02:58 (February 24)
 Sunset | 18:36:37 (February 24)
 Janma Ghatis | 54.1682
 Ayanamsa | 23-43-54.48
-Sidereal Time | 13:53:57
 
 Body | Longitude | Nakshatra | Pada | Rasi | Navamsa
 -----|-----------|-----------|------|------|--------
@@ -890,6 +889,325 @@ MBTI: Para o tipo de personalidade MBTI, o indivíduo parece se encaixar no perf
 Eneagrama: Quanto ao Eneagrama, o tipo mais provável para o indivíduo é o Tipo 5 (O Investigador). Os investigadores são pessoas curiosas, observadoras e analíticas. Eles buscam compreender o mundo e têm uma grande sede de conhecimento. O Tipo 5 tende a ser reservado e valoriza a independência e privacidade. Eles são especialistas em seus campos de interesse e gostam de aprofundar-se em temas específicos.
 
 Em suma, o indivíduo com este mapa natal segundo a Astrologia Nórdica parece ser uma pessoa analítica e estratégica, com um perfil de personalidade INTJ e Tipo 5 do Eneagrama.
+
+## make a detailed summarization in pt-br of the natal chart from western and vedic astrologies while picking one of the 16 mbti types and 9 types from enneagram
+
+< Resumo do Mapa Astral (Astrologia Ocidental e Védica) com MBTI e Eneagrama:
+
+Data de nascimento: 25 de fevereiro de 1992, às 3:43 (horário local)
+Local de nascimento: São Paulo, Brasil
+Coordenadas: Latitude 23° 33' 28.116" S, Longitude 46° 39' 27.936" W
+Altitude: 820 metros
+
+Astrologia Védica:
+
+Ano Lunar: Prajapati - Magha
+Tithi: Krishna Ashtami (Ra) (54,84% restantes)
+Dia da semana védico: segunda-feira (Mo)
+Nakshatra: Anuraadha (Sa) (37,97% restantes)
+Yoga: Harshana (Su) (96,58% restantes)
+Karana: Balava (Mo) (9,67% restantes)
+Hora Lord: Lua (5 min sign: Aq)
+Mahakala Hora: Lua (5 min sign: Aq)
+Kaala Lord: Sol (Mahakala: Sol)
+Nascer do sol: 6:02:58 (24 de fevereiro)
+Pôr do sol: 18:36:37 (24 de fevereiro)
+Janma Ghatis: 54,1682
+Ayanamsa: 23-43-54,48
+Personalidade (MBTI e Eneagrama):
+Considerando as informações do mapa astral, um possível tipo MBTI é o INFP, conhecido como "O Mediador". São pessoas introspectivas, criativas e idealistas, geralmente guiadas por seus valores e princípios. No Eneagrama, o tipo 4, chamado de "O Individualista", é uma possibilidade. Os tipo 4 são sensíveis, introspectivos e expressivos, buscando sua identidade e significado na vida.
+
+Lembrando que a astrologia é apenas uma das muitas ferramentas que podem ser usadas para entender a personalidade de uma pessoa, e nem sempre é precisa. A análise do tipo de personalidade de alguém pode variar com base em muitos outros fatores, como cultura, criação e experiências de vida.
+
+---
+---
+
+## Natal Chart Tables
+
+Parameter | Value
+----------|------
+Birth Time (local time) | 1990-10-31 15:10 (Manually: GMT-04:00)
+Universal Time (UT/GMT) | 1990-10-31 19:10
+Local Sidereal Time (LST) | 18:20:18
+Latitude | 15° 53' 00.000'' S
+Longitude | 52° 15' 00.000'' W
+Latitude, Longitude | (15.895409° S, 52.294165° W) Barra do Garcas, Brazil
+Altitude | 320.00 meters
+
+Parameter | Value
+----------|------
+Lunar Yr-Mo | Pramoda - Karthika
+Tithi | Sukla Trayodasi (Ju) (43.41% left)
+Vedic Weekday | Wednesday (Me)
+Nakshatra | Uttarabhadra (Sa) (11.12% left)
+Yoga | Harshana (Su) (53.17% left)
+Karana | Taitula (Me) (86.82% left)
+Hora Lord | Jupiter (5 min sign: Ta)
+Mahakala Hora | Saturn (5 min sign: Li)
+Kaala Lord | Mars (Mahakala: Mars)
+Sunrise | 4:56:20
+Sunset | 17:29:13
+Janma Ghatis | 25.5697
+Ayanamsa | 23-42-48.25
+Sidereal Time | 18:20:18
+
+Body | Longitude | Nakshatra | Pada | Rasi | Navamsa
+-----|-----------|-----------|------|------|--------
+Lagna  | 11 Pi 12' 33.94" | UBha | 3 | Pi | Li
+Sun - GK | 14 Li 23' 37.34" | Swat | 3 | Li | Aq
+Moon - PK | 15 Pi 11' 03.20" | UBha | 4 | Pi | Sc
+Mars (R) - MK | 19 Ta 57' 17.92" | Rohi | 3 | Ta | Ge
+Mercury - BK | 20 Li 27' 44.85" | Visa | 1 | Li | Ar
+Jupiter - PiK | 18 Cn 30' 40.64" | Asre | 1 | Cn | Sg
+Venus - DK | 14 Li 11' 16.52" | Swat | 3 | Li | Aq
+Saturn - AK | 26 Sg 11' 50.26" | PSha | 4 | Sg | Sc
+Rahu - AmK |  8 Cp 39' 26.95" | USha | 4 | Cp | Pi
+Ketu  |  8 Cn 39' 26.95" | Push | 2 | Cn | Vi
+Maandi  |  4 Cp 08' 45.73" | USha | 3 | Cp | Aq
+Gulika  | 23 Sg 33' 39.62" | PSha | 4 | Sg | Sc
+Bhava Lagna  | 17 Pi 23' 08.97" | Reva | 1 | Pi | Sg
+Hora Lagna  | 20 Le 48' 14.21" | PPha | 3 | Le | Li
+Ghati Lagna  |  1 Sg 03' 29.91" | Mool | 1 | Sg | Ar
+Vighati Lagna  | 22 Ar 19' 48.42" | Bhar | 3 | Ar | Li
+Varnada Lagna  | 11 Sg 12' 33.94" | Mool | 4 | Sg | Ta
+Sree Lagna  |  1 Aq 11' 00.21" | Dhan | 3 | Aq | Li
+
+## Vimsottari Dasa Table
+
+Planet | Sub-Period | Start Date | Sub-Period | Start Date | Sub-Period | Start Date | Sub-Period | Start Date | Sub-Period | Start Date
+-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
+Sat | Sat | 1973-12-10 | Merc | 1976-12-13 | Ket | 1979-08-24 | Ven | 1980-10-02 | Sun | 1983-12-02
+' | Moon | 1984-11-13 | Mars | 1986-06-12 | Rah | 1987-07-23 | Jup | 1990-05-28 |
+Merc | Merc | 1992-12-10 | Ket | 1995-05-06 | Ven | 1996-05-02 | Sun | 1999-03-03 | Moon | 2000-01-09
+' | Mars | 2001-06-09 | Rah | 2002-06-06 | Jup | 2004-12-25 | Sat | 2007-03-30 |  |
+Ket | Ket | 2009-12-10 | Ven | 2010-05-06 | Sun | 2011-07-08 | Moon | 2011-11-14 | Mars | 2012-06-12
+' | Rah | 2012-11-10 | Jup | 2013-11-28 | Sat | 2014-11-05 | Merc | 2015-12-14 |  |
+Ven | Ven | 2016-12-10 | Sun | 2020-04-08 | Moon | 2021-04-08 | Mars | 2022-12-10 | Rah | 2024-02-08
+' | Jup | 2027-02-07 | Sat | 2029-10-12 | Merc | 2032-12-10 | Ket | 2035-10-12 |  |
+Sun | Sun | 2036-12-10 | Moon | 2037-03-27 | Mars | 2037-09-29 | Rah | 2038-02-01 | Jup | 2038-12-28
+' | Sat | 2039-10-18 | Merc | 2040-09-29 | Ket | 2041-08-05 | Ven | 2041-12-10 |  |
+Moon | Moon | 2042-12-11 | Mars | 2043-10-12 | Rah | 2044-05-09 | Jup | 2045-11-11 | Sat | 2047-03-09
+' | Merc | 2048-10-11 | Ket | 2050-03-09 | Ven | 2050-10-12 | Sun | 2052-06-09 |  |
+Mars | Mars | 2052-12-10 | Rah | 2053-05-06 | Jup | 2054-05-25 | Sat | 2055-04-30 | Merc | 2056-06-09
+' | Ket | 2057-06-06 | Ven | 2057-11-05 | Sun | 2059-01-03 | Moon | 2059-05-10 |  |
+Rah | Rah | 2059-12-11 | Jup | 2062-08-24 | Sat | 2065-01-15 | Merc | 2067-11-23 | Ket | 2070-06-10
+' | Ven | 2071-06-29 | Sun | 2074-06-28 | Moon | 2075-05-22 | Mars | 2076-11-23 |  |
+Jup | Jup | 2077-12-11 | Sat | 2080-01-27 | Merc | 2082-08-11 | Ket | 2084-11-17 | Ven | 2085-10-24
+' | Sun | 2088-06-22 | Moon | 2089-04-08 | Mars | 2090-08-11 | Rah | 2091-07-18 |  |
+
+## Ashtakavarga of Rasi Chart Tables
+
+Planet | Sodhya Pinda | Rasi Pinda | Graha Pinda
+-------|--------------|------------|------------
+Lagna | 392 | 239 | 153
+Sun | 206 | 160 | 46
+Moon | 220 | 104 | 116
+Mars | 321 | 237 | 84
+Mercury | 205 | 165 | 40
+Jupiter | 122 | 94 | 28
+Venus | 193 | 132 | 61
+Saturn | 171 | 110 | 61
+
+House | Bhava Bala | In rupas | Lord's bala | DigBala | DrigBala
+------|------------|----------|-------------|---------|---------
+1st | 624.33 | 10.41 | 543.00 | 30.00 | 51.33
+2nd | 365.59 | 6.09 | 287.42 | 20.00 | 58.18
+3rd | 424.79 | 7.08 | 362.03 | 10.00 | 52.76
+4th | 528.37 | 8.81 | 461.02 | 30.00 | 37.35
+5th | 517.88 | 8.63 | 456.06 | 50.00 | 11.82
+6th | 363.54 | 6.06 | 359.04 | 20.00 | -15.50
+7th | 464.44 | 7.74 | 461.02 | 0.00 | 3.42
+8th | 411.79 | 6.86 | 362.03 | 10.00 | 39.76
+9th | 381.14 | 6.35 | 287.42 | 40.00 | 53.72
+10th | 587.25 | 9.79 | 543.00 | 30.00 | 14.25
+11th | 530.30 | 8.84 | 408.30 | 50.00 | 72.01
+12th | 529.20 | 8.82 | 408.30 | 50.00 | 70.90
+
+---
+
+## make a detailed summarization of the natal chart from western astrology in pt-br while picking one of the 16 mbti types and 9 types from enneagram
+
+Resumo detalhado do mapa astral (astrologia ocidental) em português:
+
+Nascido em 31 de outubro de 1990, às 15:10, em Barra do Garças, Brasil, o indivíduo tem o seguinte mapa astral:
+
+Signo solar: Libra
+Signo ascendente: Peixes
+Signo lunar: Peixes
+
+Principais aspectos do mapa astral:
+
+Sol em Libra: Indica uma pessoa equilibrada, diplomática, justa e com habilidades sociais. Pode ter um forte desejo de harmonia e cooperação em suas relações interpessoais.
+
+Ascendente em Peixes: A personalidade é moldada por uma natureza sensível, intuitiva, empática e sonhadora. Pode haver uma tendência à espiritualidade e uma inclinação artística.
+
+Lua em Peixes: Emoções intensas, imaginação vívida e sensibilidade são características marcantes. Pode haver também uma tendência a absorver as emoções dos outros e necessidade de se proteger emocionalmente.
+
+Com base nessas informações, uma possível combinação de MBTI e eneagrama pode ser:
+
+MBTI: INFP (Introvertido, Intuitivo, Sentimental, Perceptivo)
+Essa personalidade é caracterizada por ser idealista, sensível, criativa e orientada para valores. Os INFPs são naturalmente empáticos e buscam harmonia e compreensão em seus relacionamentos.
+
+Eneagrama: Tipo 9 (O Pacificador)
+O Tipo 9 é caracterizado por ser calmo, amável e compreensivo. O Pacificador busca harmonia em seus relacionamentos e procura evitar conflitos a todo custo. Essa personalidade tem uma forte tendência a se conectar com os outros e valorizar a paz e a estabilidade emocional.
+
+Combinando as características do mapa astral com o tipo de personalidade MBTI (INFP) e o eneagrama (Tipo 9), podemos inferir que esse indivíduo é uma pessoa sensível, empática e orientada para valores. Ele busca harmonia e cooperação em suas relações interpessoais e pode ter uma inclinação artística ou espiritual. Sua abordagem pacífica e compreensiva o torna uma pessoa agradável e fácil de conviver.
+
+## make a detailed summarization of the natal chart from western astrology in pt-br while picking one of the 16 mbti types and 9 types from enneagram (1)
+
+< Resumo do Mapa Astral (Astrologia Ocidental):
+
+Data de nascimento: 31 de outubro de 1990
+Hora de nascimento: 15:10 (GMT-04:00)
+Local de nascimento: Barra do Garças, Brasil
+
+Signo Solar: Libra (Equilíbrio, diplomacia, cooperação)
+Signo Ascendente (Lagna): Peixes (Empatia, sensibilidade, intuição)
+Signo Lunar: Peixes (Emoções profundas, compaixão, introspecção)
+
+Principais aspectos do mapa astral:
+
+Sol em Libra: Pessoa diplomática, justa e em busca de harmonia. Valoriza relacionamentos e parcerias, tendo habilidades sociais apuradas.
+
+Lua em Peixes: Emoções intensas e sensibilidade elevada. Pessoa intuitiva e empática, capaz de compreender profundamente os sentimentos dos outros.
+
+Ascendente em Peixes: Abordagem compassiva e empática perante a vida. Pode ser visto como uma pessoa sonhadora e espiritual, com uma natureza adaptável e sensível.
+
+Marte retrógrado em Touro: Determinação e persistência na busca pelos objetivos. Pode ser teimoso e resistente a mudanças.
+
+Júpiter em Câncer: Generosidade emocional, capacidade de nutrir e apoiar os outros. Pode buscar crescimento e expansão através de conexões familiares e domésticas.
+
+Vênus em Libra: Forte apreço pela beleza, arte e relacionamentos harmoniosos. Busca equilíbrio e justiça nas interações sociais.
+
+Saturno em Sagitário: Disciplina e responsabilidade aplicadas à busca pelo conhecimento e à expansão de horizontes. Pode ser cauteloso e pragmático em relação a viagens e educação.
+
+Tipo MBTI: INFP (Introvertido, Intuitivo, Sentimental, Perceptivo)
+
+Personalidade empática e sensível, com forte conexão emocional com os outros. Valoriza a harmonia e a compreensão mútua.
+Tipo Enneagram: Tipo 9 (Pacificador)
+
+Busca paz e harmonia em seus relacionamentos e ambiente. Evita conflitos e busca compreender os pontos de vista dos outros.
+
+## make a detailed summarization in pt-br of the natal chart from the common astrologies while picking one of the 16 mbti types and 9 types from enneagram
+
+< Resumo do mapa astral:
+
+Data de nascimento: 31 de outubro de 1990, às 15:10, horário local (GMT-4)
+Local de nascimento: Barra do Garças, Brasil (latitude 15°53'S, longitude 52°15'W)
+
+Signo solar: Libra (equilíbrio, cooperação, harmonia)
+Signo lunar: Peixes (sensibilidade, empatia, intuição)
+Ascendente: Peixes (espiritualidade, criatividade, compaixão)
+
+Principais aspectos do mapa astral:
+
+Sol em Libra: indica uma pessoa cooperativa, harmoniosa e com grande apreço pela justiça e pelos relacionamentos. Busca equilíbrio e pode ter dificuldade em tomar decisões.
+
+Lua em Peixes: sugere uma personalidade sensível, empática e intuitiva. Essa pessoa é provavelmente muito emocional e pode se conectar facilmente com os sentimentos dos outros.
+
+Ascendente em Peixes: reforça as características piscianas, como espiritualidade, criatividade e compaixão. O indivíduo pode ser visto como uma pessoa sonhadora e idealista.
+
+Considerando o mapa astral e a análise geral das características, o tipo MBTI que melhor se encaixa nesse perfil é o INFP (Introvertido, Intuitivo, Sentimental e Perceptivo). Os INFPs são conhecidos por serem sensíveis, idealistas e criativos, o que se alinha com as características apresentadas no mapa astral.
+
+No que diz respeito ao Eneagrama, o Tipo 9, chamado de Pacificador, pode ser uma boa opção. O Tipo 9 busca harmonia, é empático e compreensivo, e pode ter dificuldade em tomar decisões, características que combinam com os principais aspectos do mapa astral apresentado.
+
+## make a detailed summarization in pt-br of the natal chart from the main astrologies while picking one of the 16 mbti types and 9 types from enneagram
+
+< Resumo detalhado do mapa astral em português:
+
+Nascimento: 31 de outubro de 1990, às 15:10, em Barra do Garças, Brasil.
+Signo solar: Libra
+Signo lunar: Peixes
+Ascendente: Peixes
+
+Principais aspectos astrológicos do mapa natal:
+
+Sol em Libra: Indica uma pessoa equilibrada, diplomática, justa e que busca harmonia em todos os aspectos da vida. Pode ter habilidades artísticas e aprecia a beleza e a estética.
+
+Lua em Peixes: Sugere uma natureza emocional, sensível, intuitiva e empática. A pessoa pode ser imaginativa, sonhadora e possivelmente ter interesse em assuntos espirituais.
+
+Ascendente em Peixes: A personalidade pode ser caracterizada pela empatia, sensibilidade e uma natureza adaptável. Pode haver uma tendência a absorver as emoções dos outros e ter uma abordagem compassiva em relação aos outros.
+
+Marte retrógrado em Touro: Pode indicar uma abordagem mais lenta e determinada para alcançar objetivos. A pessoa pode ser teimosa, mas também persistente e prática.
+
+Júpiter em Câncer: Expansão emocional, generosidade e nutrição aos outros podem ser qualidades presentes. A pessoa pode ter uma abordagem protetora e acolhedora em relação à família e entes queridos.
+
+Vênus em Libra: Habilidade para formar relacionamentos harmoniosos e buscar parcerias equilibradas. Pode valorizar a beleza, a arte e o equilíbrio em seus relacionamentos.
+
+Saturno em Sagitário: Pode indicar uma abordagem séria e responsável para a busca do conhecimento, filosofia e crescimento espiritual. Há uma necessidade de estrutura e disciplina na exploração de ideias e crenças.
+
+Considerando os aspectos principais deste mapa astral, uma personalidade que pode ser associada a ele é a do tipo MBTI "INFP" (Introvertido, Intuitivo, Sentimental e Perceptivo). Essa personalidade tende a ser idealista, criativa e guiada por valores pessoais. Além disso, o tipo de eneagrama que pode estar relacionado a esse mapa astral é o tipo 9 - O Pacificador, que é caracterizado por ser compreensivo, paciente e busca harmonia em suas relações e ambiente.
+
+## make a detailed summarization in pt-br of the natal chart from the main astrologies while picking one of the 16 mbti types and 9 types from enneagram (1)
+
+< Resumo do Mapa Astral em Português:
+
+Nascido em 31 de outubro de 1990 às 15h10 (GMT-4), em Barra do Garças, Brasil, este indivíduo possui o signo solar em Libra, com Ascendente em Peixes e Lua em Peixes. O mapa astral também revela as posições dos planetas e casas astrológicas em relação aos signos do zodíaco, Nakshatras, Padas e Rasis.
+
+Algumas características notáveis ​​são:
+
+Sol em Libra, que sugere uma personalidade diplomática, justa e sociável.
+Ascendente em Peixes, que indica uma natureza sonhadora, intuitiva e compassiva.
+Lua em Peixes, que mostra emoções profundas, sensibilidade e empatia.
+De acordo com a tabela Vimsottari Dasa, o indivíduo passa por diferentes períodos planetários ao longo da vida, cada um com duração e influências específicas. Atualmente, está no subperíodo de Marte.
+
+As tabelas Ashtakavarga fornecem informações sobre a força das casas e planetas no mapa natal. A casa mais forte é a 10ª casa, que governa a carreira e o status social. O planeta mais fraco é Júpiter, o que pode indicar desafios na área de crescimento pessoal, sabedoria e espiritualidade.
+
+Com base nessas informações e na análise do mapa astral, uma combinação possível para o tipo MBTI seria INFP (Introvertido, Intuitivo, Sentimental e Perceptivo). Este tipo de personalidade é conhecido por ser idealista, criativo e sensível, o que se alinha com as características astrológicas observadas.
+
+Para o Eneagrama, o tipo 9, o Pacificador, parece ser uma escolha adequada. Os Pacificadores são pessoas que buscam harmonia, equilíbrio e paz em suas vidas. Eles evitam conflitos e são ótimos mediadores, características que se alinham com o Sol em Libra e a Lua e Ascendente em Peixes.
+
+## use calculus to verify if the tables correspond to the birth chart while explaining the sun relationship in the different astrologies
+
+< The tables provided give detailed information about the birth chart or natal chart of an individual born on October 31, 1990, at 15:10 local time in Barra do Garcas, Brazil. I will not use calculus to verify the tables, as astrology is not a mathematical science in that sense. However, I will examine the key points and discuss the Sun's relationship in different astrological systems.
+
+First, let's consider the Sun's placement in the natal chart. In Western astrology, the Sun is in the sign of Libra at 14°23'37.34", in the Swati nakshatra. In Vedic astrology, the Sun is also in Libra, but the nakshatras and rasis are slightly different due to the ayanamsa used (in this case, 23-42-48.25). However, the Sun's basic position in the chart remains the same across both systems.
+
+In both Western and Vedic astrology, the Sun represents one's core identity, ego, vitality, and life force. It is often associated with the father or dominant parental figure, authority, and personal power. The Sun's placement in a particular sign, house, and aspect to other planets can provide valuable insights into an individual's personality, strengths, and weaknesses.
+
+In Western astrology, the Sun sign is considered the primary factor in determining an individual's personality traits. In this case, the individual would be a Libra, known for their diplomatic, fair-minded, and sociable nature. They may also have a strong sense of aesthetics and balance in their lives.
+
+In Vedic astrology, the Sun is equally important, but there is more emphasis on the Moon sign and the Ascendant or Lagna. In this case, the Moon is in Pisces, and the Ascendant is also in Pisces, which adds a more sensitive, intuitive, and spiritual dimension to the individual's personality.
+
+It's worth noting that the Sun's placement in the Vimsottari Dasa table, which is a Vedic technique for predicting significant life events and periods. In this case, the Sun's sub-period occurred between April 8, 2021, and April 8, 2021, within the Venus major period (2016-12-10 to 2027-02-07). This sub-period might have been a time of increased focus on personal identity, creativity, or self-expression.
+
+In summary, while the astrological systems might differ in their approach, the Sun's placement in the chart plays a vital role in both Western and Vedic astrology. In this case, the Sun's position in Libra and its aspects to other planets can give valuable insights into the individual's personality, life path, and significant periods in their life.
+
+## for this birth chart, detail its relationship with scorpio in the different astrologies
+
+< In this birth chart, we will examine the relationship with Scorpio in both Western and Vedic astrology.
+
+Western Astrology:
+In Western astrology, the zodiac sign of Scorpio is directly after Libra, and it occupies the 8th house in the natural zodiac wheel. In this birth chart, the individual has a Libra Sun sign. Therefore, Scorpio would rule their 2nd house (the house of values, material possessions, and personal resources).
+
+However, we don't have the exact house cusps in the provided data. It is important to have the house cusps to determine the house placement of planets and the signs ruling each house for the native's chart.
+
+That said, the Moon's position in the Navamsa chart is in Scorpio. The Navamsa chart is a divisional chart used in both Western and Vedic astrology to provide deeper insights into an individual's life, particularly their relationships and marriage. In this case, having a Scorpio Moon in the Navamsa chart suggests a more intense, transformative, and passionate emotional nature in the context of close relationships.
+
+Vedic Astrology:
+In Vedic astrology, the focus is on the Moon sign and the Ascendant (Lagna). In this birth chart, the Moon is in Pisces, and the Ascendant is also in Pisces. Scorpio is the 9th sign from Pisces, so it rules the individual's 9th house (the house of higher learning, philosophy, spirituality, long-distance travel, and fortune).
+
+Saturn is placed in Scorpio at 26°11'50.26" in the Purva Shada nakshatra. This placement indicates a strong connection with Scorpio's transformative and intense energy. Saturn in Scorpio suggests a serious, disciplined, and sometimes secretive nature. The individual may have a strong interest in delving into the depths of life's mysteries, psychology, or spirituality. It also indicates that the person may face challenges in these areas, requiring them to develop resilience and inner strength.
+
+In this chart, Scorpio also plays a significant role in the Vimsottari Dasa system. For example, the Saturn major period (1973-12-10 to 1992-12-10) has the Moon in Scorpio as a sub-period from 1984-11-13 to 1986-06-12. In the Venus major period (2016-12-10 to 2027-02-07), the Moon in Scorpio appears again as a sub-period from 2021-04-08 to 2022-12-10. These periods could bring challenges or transformative experiences related to 9th house matters.
+
+In conclusion, Scorpio has a significant presence in this individual's birth chart in both Western and Vedic astrology. In Western astrology, it plays a role in the 2nd house and the Navamsa chart, while in Vedic astrology, it rules the 9th house and hosts Saturn. These connections with Scorpio can give insights into the person's values, relationships, higher learning, and spiritual pursuits.
+
+## make a detailed summarization in pt-br of the natal chart from western and vedic astrologies while picking one of the 16 mbti types and 9 types from enneagram (1)
+
+< Resumo do mapa astral (Astrologia Ocidental e Védica) e análise do tipo MBTI e Eneagrama:
+
+Data de nascimento: 31 de outubro de 1990 às 15:10, horário local, em Barra do Garças, Brasil.
+
+Na astrologia ocidental, o sol estava em Escorpião, o que indica uma personalidade intensa, emocional e determinada. A lua estava em Peixes, conferindo sensibilidade, empatia e intuição. Essa combinação sugere alguém que é apaixonado e compassivo, mas também misterioso e reservado.
+
+Na astrologia védica, o dia do nascimento foi uma quarta-feira, governado por Mercúrio, o que indica habilidades de comunicação e pensamento analítico. O Nakshatra era Uttarabhadra, relacionado a Saturno, sugerindo paciência, perseverança e responsabilidade. A pessoa pode ter uma abordagem séria e madura da vida.
+
+Com base nesses aspectos, é possível que a personalidade se encaixe no tipo MBTI INFJ (Introvertido, Intuitivo, Sentimento e Julgamento). Essas pessoas são conhecidas por serem empáticas, introspectivas e orientadas para o futuro. Elas também são altamente criativas e têm habilidades naturais para ajudar e guiar os outros.
+
+No Eneagrama, o tipo 4 (O Individualista) parece ser o mais adequado. O tipo 4 é caracterizado por uma busca constante pela identidade e significado, sendo profundamente emocional e introspectivo. Eles valorizam a autenticidade e a expressão pessoal e, muitas vezes, têm uma conexão profunda com a arte e a beleza.
+
+Portanto, a análise combinada do mapa astral, tanto na astrologia ocidental quanto védica, juntamente com o tipo MBTI e o Eneagrama, sugere uma personalidade do tipo INFJ e um tipo 4 no Eneagrama, destacando características como empatia, intuição, autenticidade e introspecção.
 
 ---
 ---
