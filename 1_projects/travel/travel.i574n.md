@@ -1,7 +1,7 @@
 ---
 ---
 
-[ ] cell chips
+- [ ] cell chips
 
 ---
 ---
