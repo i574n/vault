@@ -9512,5 +9512,137 @@ Ibogaine | Experimental therapy for addiction | 200 | Naltrexone, Methadone, Bup
 Ritalin (Methylphenidate) | Treats ADHD, promotes focus and alertness | 800 | Amphetamine, Atomoxetine | 50-150 | Nervousness, increased heart rate, appetite loss
 Pregabalin | Treats nerve pain, anxiety, and seizures | 750 | Gabapentin, Carbamazepine | 40-100 | Dizziness, drowsiness, weight gain
 
+## considering stores like leroy merlin, list the equipments necessary to craft a professional grade compound bow with proper specs using the metric system (only equipments now, we will discuss instructions later)
+
+< Crafting a professional-grade compound bow requires specialized equipment and materials. While some items might be available at stores like Leroy Merlin, you may need to source others from specialized suppliers or online retailers. Here's a list of equipment you'll need:
+
+Bow press: A bow press is essential for safely bending the bow limbs and installing or adjusting the bow's cables and strings.
+
+Measuring tools: You'll need a variety of measuring tools, such as a ruler, tape measure, and calipers, to ensure the correct dimensions and alignment of the bow components.
+
+Saw and/or Dremel tool: A saw or Dremel tool with cutting attachments will be necessary to cut and shape various components of the bow.
+
+Files and sandpaper: These are needed for smoothing and finishing the bow's edges and surfaces.
+
+Drill and drill bits: A drill with various-sized bits will be used to create holes for attaching components such as the riser, limbs, and cams.
+
+Vise and clamps: A sturdy vise and clamps will help secure the bow and its components during assembly and adjustments.
+
+String serving jig: This tool is used to create the serving on the bowstring, which protects it from wear and provides a secure nocking point.
+
+Bow square: A bow square is essential for checking and adjusting the brace height, nocking point, and tiller measurements.
+
+Allen wrench set: A set of Allen wrenches will be required for tightening and adjusting various screws and bolts on the bow.
+
+String wax: You'll need string wax to maintain and protect the bowstring from wear and damage.
+
+Bow sling: A bow sling is useful for safely securing the bow while working on it.
+
+## from this list, break down in markdown table form item needed, avg brl price, dimensions (metric system), remarks
+
+Item | Avg BRL Price | Dimensions | Remarks
+-----|---------------|------------|--------
+Bow press | 800 - 1,200 | Varies depending on model | Essential for bending bow limbs and adjusting cables and strings
+Measuring tools | 50 - 150 | Ruler (30cm), tape measure (3m), calipers (15cm) | Necessary for accurate measurements
+Saw / Dremel tool | 100 - 600 | Varies depending on model | Used to cut and shape bow components
+Files and sandpaper | 30 - 100 | Various grits and sizes | For smoothing and finishing edges and surfaces
+Drill and drill bits | 200 - 800 | Various sizes | Needed for creating holes for attaching components
+Vise and clamps | 100 - 500 | Various sizes | Helps secure bow and components during assembly and adjustments
+String serving jig | 50 - 200 | Varies depending on model | Used to create serving on bowstring
+Bow square | 50 - 150 | Standard L-shape (30cm x 20cm) | Essential for checking and adjusting brace height, nocking point, and tiller measurements
+Allen wrench set | 30 - 100 | Various sizes | Required for tightening and adjusting screws and bolts
+String wax | 10 - 50 | Small stick or tub (5cm-10cm length) | Protects and maintains bowstring
+Bow sling | 50 - 200 | Adjustable length (40cm-60cm) | Safely secures bow while working on it
+
+For a 171cm wielder, you'll need a compound bow with an appropriate draw length. The general rule for calculating draw length is to measure your wingspan (fingertip to fingertip) and divide it by 2.5. For a 171cm tall person, this would typically result in a draw length of around 26-28 inches (66-71cm). Consider this when selecting the bow's components, such as limbs and cams.
+
+## for the bow itself, list the table for component, avg brl price, exact specs like dimensions or weight when applicable, remarks and instructions
+
+Component | Avg BRL Price | Exact Specs/Dimensions | Remarks | Instructions
+----------|---------------|------------------------|---------|-------------
+Riser | 500 - 2,000 | Custom to user's draw length (approx. 66-71 cm) | Central part of the bow that connects the limbs and houses the grip | Choose a riser that fits the user's draw length and personal preferences for grip, material, and design
+Limbs | 300 - 1,500 | Custom to user's draw weight and draw length (approx. 66-71 cm) | Flexible parts of the bow that store energy | Select limbs that are compatible with the riser and have the desired draw weight
+Cams | 200 - 1,000 | Custom to user's draw length (approx. 66-71 cm) | Pulley system that controls the draw weight and smoothness of the draw | Choose cams that match the user's draw length, desired let-off, and the limb specifications
+Bowstring | 100 - 300 | Custom to bow's axle-to-axle length (approx. 81-86 cm) | Connects the limbs and transfers energy to the arrow | Select a high-quality bowstring material and ensure it's the correct length for the bow's axle-to-axle measurement
+String serving | 10 - 50 | Custom to bowstring's center serving length (approx. 12.7-15.2 cm) | Protective layer wrapped around the bowstring at the arrow's nocking point | Use a serving jig to tightly wrap the serving material around the center of the bowstring
+Nocking point | 10 - 30 | N/A | The point on the bowstring where the arrow is nocked | Install the nocking point on the bowstring using a bow square to ensure proper alignment with the arrow rest
+Arrow rest | 50 - 300 | N/A | The device that supports the arrow when it's nocked and during the draw and release | Choose an arrow rest that is compatible with the riser and install it according to the manufacturer's instructions
+Bow sight | 100 - 1,000 | N/A | Aiming device mounted on the riser that assists in accurate shot placement | Select a bow sight that meets the user's preferences and budget, and install it on the riser according to the manufacturer's instructions
+Bow stabilizer | 50 - 500 | Custom to user's preferences (approx. 15-30 cm) | Weighted device mounted on the riser to reduce bow vibration and improve balance during the shot | Choose a bow stabilizer that meets the user's preferences for weight and length, and install it on the riser according to the manufacturer's instructions
+
+## for the bow itself, list the table for component, brl price, dimensions using the metric system and remarks
+
+Component | Avg BRL Price | Dimensions | Remarks
+----------|---------------|------------|--------
+Riser | 800 - 2,000 | Length: 40-50cm, Width: 4-6cm | Main structural component of the bow, made of aluminum, carbon, or other materials
+Limbs | 500 - 1,500 | Length: 30-40cm, Width: 4-5cm | Flexible parts attached to the riser, responsible for storing energy during the draw
+Cams | 300 - 1,000 | Diameter: 5-10cm | Circular or elliptical mechanisms that convert linear draw force to stored energy in the limbs
+Bowstring | 100 - 300 | Length: custom based on draw length | High-strength material that connects the limbs, usually made of synthetic fibers
+Cables | 100 - 300 | Length: custom based on bow size | Connect the cams and limbs, transferring energy during the draw
+Peep sight | 20 - 100 | Diameter: 0.2-0.5cm | Small aperture installed on the bowstring to help with aiming
+Nocking points | 10 - 50 | Diameter: 0.2-0.3cm | Brass or plastic attachment on the bowstring to position the arrow nock
+Cable guard | 50 - 200 | Length: 20-30cm, Diameter: 0.5-1cm | Rod that keeps cables out of the arrow's path
+Arrow rest | 50 - 300 | Varies depending on model | Device that supports the arrow during the draw and release
+Bow sight | 100 - 1,000 | Varies depending on model | Adjustable aiming device attached to the riser
+Stabilizer | 100 - 800 | Length: 15-50cm, Diameter: 2-4cm | Weighted rod that helps balance the bow and reduce vibration
+
+These components are necessary for assembling a compound bow. Prices and dimensions may vary depending on the specific model and brand. Note that the dimensions listed are approximate and should be adjusted according to the bow's required specifications, such as draw length, for a 171cm tall person.
+
+## instead of a compound bow, for a normal but professional grade bow, list the table for component, brl price, dimensions using the metric system and remarks with total at the end
+
+Component | Avg BRL Price | Dimensions | Remarks
+----------|---------------|------------|--------
+Riser (handle) | 300 - 1,200 | 23cm - 25cm | Central part of the bow, where you grip and attach the limbs
+Limbs | 400 - 1,500 | 66cm, 68cm or 70cm length | Flexible parts of the bow that store energy when drawn; attached to riser
+Bowstring | 50 - 200 | Custom length to match bow | Connects the limb tips, made of high-performance synthetic materials
+Nocking points | 10 - 50 | Small brass or metal clamps | Placed on the bowstring to consistently position the arrow
+Arrow rest | 30 - 150 | Varies depending on model | Supports the arrow and guides it during the shot
+Bowstring serving kit | 50 - 200 | Varies depending on model | Used to create serving on bowstring
+Bow square | 50 - 150 | Standard L-shape (30cm x 20cm) | Essential for checking and adjusting brace height and nocking point measurements
+Bowstring wax | 10 - 50 | Small stick or tub (5cm-10cm length) | Protects and maintains bowstring
+Bow sling | 50 - 200 | Adjustable length (40cm-60cm) | Safely secures bow while working on it
+Armguard | 30 - 100 | Adjustable size | Protects the forearm from string slap
+Finger tab or glove | 20 - 100 | Sized to fit your hand | Protects fingers while drawing the bowstring
+
+Total estimated cost range: BRL 1,000 - 3,800
+
+For a 171cm tall person, a bow with a total length of 66-68 inches (168-173cm) would be appropriate. When selecting components, consider the appropriate length and size for your body measurements.
+
+## list the range of side cases for a xre 300 abs 2021 with proper dimensions in the metric system, brl price, material, etc
+
+< I am unable to provide real-time prices or specific product availability for side cases for a 2021 XRE 300 ABS. However, I can give you a general idea of some popular side case options, their dimensions, materials, and approximate price range in BRL. Keep in mind that prices and availability may vary depending on the retailer and region.
+
+Givi E22N Monokey:
+
+Dimensions: 47 x 22 x 37 cm (18.5 x 8.6 x 14.5 inches)
+Material: Polypropylene
+Approximate Price Range: 800 - 1,500 BRL
+Features: 22L capacity per case, quick-release mechanism, lockable
+SHAD SH23:
+
+Dimensions: 49 x 37 x 29 cm (19.3 x 14.5 x 11.4 inches)
+Material: Polypropylene
+Approximate Price Range: 1,000 - 1,800 BRL
+Features: 23L capacity per case, quick-release mechanism, lockable, waterproof
+TSW Adventure:
+
+Dimensions: 45 x 20 x 37 cm (17.7 x 7.8 x 14.5 inches)
+Material: Aluminum
+Approximate Price Range: 1,200 - 2,500 BRL
+Features: 30L capacity per case, quick-release mechanism, lockable, waterproof
+
+## list the range of side cases that aren't plastic or aluminum for a xre 300 abs 2021 with proper dimensions in the metric system, brl price, material, etc using markdown table format
+
+< While there might not be specific side cases designed for the Honda XRE 300 ABS 2021 that are neither plastic nor aluminum, you can consider universal-fit or custom-made side cases made from alternative materials. Here are some examples:
+
+Side Case Name | Material | Dimensions (cm) | Price Range (BRL) | Compatibility / Mounting System
+---------------|----------|-----------------|-------------------|--------------------------------
+Givi UT808 | Waterproof TPU | 42 x 28 x 22 | 700-900 | Universal / Givi PLX or PLR mounting system
+Kriega OS-32 | Hypalon & Cordura | 42 x 29 x 19 | 800-1200 | Universal / Kriega OS-Platform
+SW-Motech Legend Gear LC1/LC2 | Synthetic leather & waxed canvas | LC1: 31 x 26 x 14, LC2: 31 x 26 x 20 | 900-1500 | Universal / SLC Side Carrier
+Enduristan Monsoon 3 | Waterproof 3-layer fabric | 38 x 25 x 25 | 800-1200 | Universal / Enduristan Inferno or Rotopax mount
+
+Please note that the prices listed are approximate and may vary depending on the retailer or region. Additionally, compatibility with the Honda XRE 300 ABS 2021 may require specific mounting systems or adapters. Always verify compatibility with your motorcycle and consult with the side case manufacturer or a qualified professional for proper installation.
+
 ---
 ---
