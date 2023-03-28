@@ -7,5 +7,6 @@
   "remember-cursor-position",
   "oz-image-plugin",
   "obsidian-version-history-diff",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "babashka"
 ]

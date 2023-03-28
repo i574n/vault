@@ -1,0 +1,9 @@
+{
+  "bbDir": ".babashka",
+  "bbPath": "%scoop%/shims/bb",
+  "nbbPath": "%scoop%/apps/nvm/current/nodejs/nodejs/nbb",
+  "nodePath": "%scoop%/apps/nvm/current/nodejs/nodejs/nbb",
+  "limitOutput": true,
+  "bbnReplPort": 1667,
+  "nbbnReplPort": 1668
+}

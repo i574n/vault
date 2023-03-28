@@ -189,5 +189,24 @@
       ],
       "key": "ArrowRight"
     }
+  ],
+  "babashka:babashka-eval-codeblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
+  ],
+  "babashka:babashka-eval-codeblock-print-outside": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "B"
+    }
   ]
 }
