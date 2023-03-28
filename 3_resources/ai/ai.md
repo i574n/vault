@@ -1,3 +1,11 @@
+---
+---
+
+- clojure samples
+- facebook/twitter polls
+
+---
+
 ## when i had to type continue, you knew exactly the next word to type. explain the technicalities in nlp architecture jargon why the text stops streaming and how you have this state saved
 
 < As an AI language model developed by OpenAI, I am based on the Transformer architecture, which utilizes the attention mechanism to process and generate text. When you interact with me, I maintain a state that allows me to keep track of the conversation's context, which is stored in my internal memory.
