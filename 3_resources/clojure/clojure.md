@@ -58,11 +58,15 @@
 ```
 
 ```clojure
-(let [input-1 [0.1 0.2 0.3] input-2 [0.4 0.5 0.6] weights-1 [[0.1 0.2 0.3] [0.4 0.5 0.6] [0.7 0.8 0.9]] biases-1 [0.1 0.2 0.3] weights-2 [[0.1 0.2 0.3] [0.4 0.5 0.6]] biases-2 [0.1 0.2] activation-fn #(mapv #(Math/tanh %) %)] (for [input [input-1 input-2]] (->> input (mapv #(reduce + (map * % %2)) weights-1) (mapv + biases-1) activation-fn (mapv #(reduce + (map * % %2)) weights-2) (mapv + biases-2) activation-fn)))
+(let [input-1 [0.1 0.2 0.3] input-2 [0.4 0.5 0.6] weights-1 [[0.1 0.2 0.3] [0.4 0.5 0.6] [0.7 0.8 0.9]] biases-1 [0.1 0.2 0.3] weights-2 [[0.1 0.2 0.3] [0.4 0.5 0.6]] biases-2 [0.1 0.2] activation-fn #(mapv #(Math/tanh %) %)] (for [input [input-1 input-2]] (->> input (mapv (fn [w b] (+ (reduce + (map * input w)) b)) weights-1 biases-1) activation-fn (mapv (fn [w b] (+ (reduce + (map * % w)) b)) weights-2 biases-2) activation-fn)))
 
+;; ?
+```
 
+```clojure
+(defmacro defexpenses [name & expenses] `(def ~name (atom '~expenses))) (defn add-expense [atom-expense amount] (swap! atom-expense conj amount)) (defn sum-expenses [& atoms] (reduce + (map #(apply + @%) atoms))) (defexpenses person-1 1200 800 450) (defexpenses person-2 1000 600 300) (defexpenses person-3 1500 900 550) (add-expense person-1 200) (add-expense person-2 100) (add-expense person-3 150) (sum-expenses person-1 person-2 person-3) 
 
-
+;; 7750
 ```
 
 ---
