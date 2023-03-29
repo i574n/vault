@@ -1,6 +1,7 @@
 ---
 ---
 
+- [ ] aluminum foil
 - [ ] cell chips
 
 ---

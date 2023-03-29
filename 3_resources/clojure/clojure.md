@@ -64,32 +64,10 @@
 ```
 
 ```clojure
-(defmacro defexpenses [name & expenses] `(def ~name (atom '~expenses))) (defn add-expense [atom-expense amount] (swap! atom-expense conj amount)) (defn sum-expenses [& atoms] (reduce + (map #(apply + @%) atoms))) (defexpenses person-1 1200 800 450) (defexpenses person-2 1000 600 300) (defexpenses person-3 1500 900 550) (add-expense person-1 200) (add-expense person-2 100) (add-expense person-3 150) (sum-expenses person-1 person-2 person-3) 
+(defmacro defexpenses [name & expenses] `(def ~name (atom '~expenses))) (defn add-expense [atom-expense amount] (swap! atom-expense conj amount)) (defn sum-expenses [& atoms] (reduce + (map #(apply + @%) atoms))) (defexpenses person-1 1200 800 450) (defexpenses person-2 1000 600 300) (defexpenses person-3 1500 900 550) (add-expense person-1 200) (add-expense person-2 100) (add-expense person-3 150) (sum-expenses person-1 person-2 person-3)
 
 ;; 7750
 ```
 
 ---
 ---
-
-## generate a greeting using y combinator with clojurescript
-
-< ClojureScript is a dialect of Clojure that compiles to JavaScript, and the Y combinator is a higher-order function used to derive recursion in functional programming languages. Here's a simple greeting function using the Y combinator in ClojureScript:
-
-```clojure
-(defn y-combinator [f]
-  ((fn [x] (f (fn [v] ((x x) v))))
-   (fn [x] (f (fn [v] ((x x) v))))))
-
-(defn greeting-fn [recur-fn]
-  (fn [name]
-    (str "Hello, " name "!")))
-
-(def y-greeting (y-combinator greeting-fn))
-
-(println (y-greeting "John Doe"))
-```
-
-In this example, the y-combinator function takes a function f as its argument, and it is defined using anonymous functions. The greeting-fn function takes a recur-fn parameter, but in this case, we don't actually need recursion to generate a greeting, so it is not used.
-
-Finally, we apply the y-combinator to the greeting-fn to get the y-greeting function, which we can use to greet people. In the example, the function is called with the argument "John Doe", and it will print "Hello, John Doe!".
