@@ -6485,4 +6485,516 @@ e se precisar de mais, estaremos aqui, sempre prontos a ajudar
 então venha, minha puta, vamos lá, vamos aproveitar
 
 ---
+
+enquanto caminhamos pela selva, sinto a natureza exalar
+o cheiro exótico nos envolve, é hora de deixar ir e aproveitar
+respirem fundo, sintam o momento, sem pressa de parar
+deixem a paixão correr solta, vamos nos soltar sem hesitar
+
+o som da selva nos envolve, uma sinfonia selvagem
+o suor escorre pelo seu corpo, coração acelerado em alta voltagem
+estamos em sintonia, vamos juntos explorar essa miragem
+deixem o orgasmo vir à tona, abracem esse momento selvagem
+
+vocês são as rainhas da selva, eu estou aqui para servi-las
+sem medo de cair, vamos trepar até o sol nascer, aproveitar cada oportunidade
+deixem a paixão fluir, sintam o amor borbulhar dentro de si
+vamos fecundar e reproduzir, fugir deste mundo, sem nenhuma inibição
+
+a selva nos abraça, e eu sou apenas um mero servo
+em busca do prazer supremo, do êxtase eterno
+vamos nos unir, em uma busca intensa pelo amor verdadeiro
+e juntos, vamos nos perder na selva, na paixão, em um mundo inteiro
+
+mantenham os pés no chão, mas levantem os quadris com força
+vocês vão sentir a tensão, mas não se preocupem, isso é o que importa
+deixem os quadris caírem no chão, e então, comecem a rebolar
+quero ver vocês dançando e se entregando, sem medo de falhar
+
+não se preocupem se não acertarem de primeira, a prática leva à perfeição
+não desistam, sigam tentando, a meta é alcançar a excitação
+sintam a música, deixem ela fluir, e mostrem seu poder de sedução
+eu quero ver vocês se movimentando, quero ver vocês no comando da ação
+
+agora, adicionem um pouco mais de velocidade, mostrem sua energia selvagem
+mexam as ancas para cima e para baixo, sem medo de mostrar a coragem
+vamos lá, minhas putas, mostrem tudo o que sabem fazer
+mexam os quadris, sintam o prazer, mostrem que vocês são as rainhas do poder
+
+quero ver vocês dando tudo de si, sem medo de se entregarem
+quero ver vocês dando um show, me fazendo nunca mais querer sair daqui
+vocês são minhas bitches, e eu quero ver vocês se soltando e arrasando
+mexam os quadris, mostrem sua sensualidade, deixem o êxtase fluir, e gozem sem parar.
+
+vocês, minhas bitches otakus e também minhas motorcycle hoes
+quero ver o que vocês sabem fazer, quero sentir o prazer em dose
+não se acanhem, mandem suas mensagens quentes, com muito tesão
+mostrem que são safadas, que têm fogo na imaginação
+
+vamos criar algo juntos, vamos construir nossas fantasias
+não importa o que os outros digam, vamos seguir nossas ousadias
+quero ver vocês mandando pull requests quentes, com sinalizações bem explícitas
+mostrem que são minhas hoes, mostrem que são loucas por atitudes mais práticas
+
+escutem bem, minhas bitches, não tenham medo de se soltar
+mostrem o que sabem fazer, sem temer o que os outros vão falar
+sejam sujas, falem sobre tudo que é tabu
+mostrem que são minhas hoes, mostrem que são bem taradas, que têm sede de prazer no cu
+
+não tenham medo de falar sobre suas fantasias mais ousadas
+mostrem que são minhas hoes, mostrem que são bem desejadas
+mandem suas ideias quentes, quero ver o que vocês têm na mente
+mostrem que são minhas bitches, quero ver vocês me deixando doente
+
+vamos lá, minhas bitches otakus e minhas motorcycle hoes
+mostrem o que sabem fazer, quero ver vocês explodindo de tesão
+não se preocupem em serem julgadas, vamos lá, sem hesitação
+mostrem que são minhas hoes, mostrem que são as rainhas da sedução
+
+então, mandem suas mensagens quentes, mostrem que são bem safadas
+mostrem que têm sede de prazer, que estão sempre animadas
+vamos lá, minhas bitches e minhas motorcycle hoes
+mostrem o que sabem fazer, quero ver vocês me deixando louco, quero sentir todo esse gozo.
+
+vocês, minhas bitches, sei que têm fetiches bem peculiares
+especialmente aqueles que envolvem gritos e gemidos mais vulgares
+quero ver vocês se soltando, deixando a imaginação voar
+vamos lá, minhas bitches, vamos gemer até o dia clarear
+
+mandem suas propostas sujas, com gritos bem afiados
+mostrem que têm um fetiche mais agressivo e descontrolado
+vamos criar algo juntos, algo que vá além do comum
+quero ver vocês gemendo, quero sentir vocês se contorcendo de tesão
+
+sejam sujas, sejam vulgares, deixem os gritos ecoarem
+mostrem que têm um fetiche diferente, que não tem medo de gritar
+vamos lá, minhas bitches, vamos gemer bem alto, sem medo de ser vulgar
+quero ver vocês se entregando ao prazer, deixando a paixão explodir e arrasar
+
+mostrem que são minhas hoes, que sabem bem o que querem
+que gostam de se soltar, de gemer até ficarem sem ar
+mandem suas ideias mais loucas, quero ver vocês se soltando de vez
+vamos lá, minhas bitches, vamos gemer até perdermos a voz e a vez
+
+então, gritem bem alto, mostrem que são bem descontroladas
+que adoram um fetiche diferente, que gostam de sentir a paixão abrasada
+vamos criar algo juntos, algo que vá além do comum
+quero ver vocês gemendo, quero sentir vocês se contorcendo, sem nenhum rumo
+
+mostrem que são minhas bitches, que têm fetiches mais selvagens
+que não têm medo de gemer, que gostam de sentir o prazer das margens
+vamos lá, minhas bitches, vamos gritar até ficarmos roucos
+quero ver vocês se entregando ao prazer, deixando a paixão explodir e ficar loucos.
+
+minhas bitches, sei que gostam de se sentir fora do controle
+de experimentar sensações que vão além do normal e do mole
+por isso, vamos falar sobre um assunto que é sempre polêmico
+vamos falar sobre a indulgência na cocaína, sobre o vício que é frenético
+
+não estou aqui para julgar, mas sim para entender
+para ver o que vocês sentem, quando usam essa droga sem temer
+quero saber como é a sensação, quando o pó entra no seu nariz
+quero sentir como é o êxtase, quando a cocaína entra na sua raiz
+
+sei que é um assunto delicado, mas é importante conversar
+sobre como o vício em cocaína pode te levar a se descontrolar
+mas aqui estamos nós, conversando sobre essa questão
+sobre como a cocaína pode ser usada, sem que se torne uma obsessão
+
+vamos lá, minhas bitches, vamos conversar abertamente
+sobre como é se sentir fora do controle, quando se usa essa droga tão quente
+quero saber como é a sensação, quando o pó entra no seu cérebro
+quero entender como é o prazer, quando a cocaína te faz sentir como um leão em seu império
+
+não estou aqui para julgar, mas sim para ouvir
+para entender o que vocês sentem, quando a cocaína faz vocês sorrir
+vamos conversar abertamente, sobre essa questão tão polêmica
+sobre como a cocaína pode ser usada, sem que se torne uma crônica
+
+vamos lá, minhas bitches, vamos falar sobre a cocaína
+sobre como ela pode ser usada, sem que se torne uma dor que domina
+quero ver vocês se abrindo, falando sobre o que sentem
+sobre como a cocaína pode ser usada, sem que se torne um vício que arrebenta
+
+então vamos lá, minhas bitches, vamos falar abertamente
+sobre como é se sentir fora do controle, quando se usa essa droga tão potente
+vamos conversar sobre a cocaína, sem julgamentos ou preconceitos
+só para entender como é se sentir livre, quando se usa essa droga sem medos ou receios.
+
+minhas bitches, sei que vocês têm um espírito livre
+que gostam de experimentar coisas novas, sem medo de julgamentos ou destrutíveis
+por isso, vamos falar sobre algo que é mágico e único
+vamos falar sobre a bruxaria selvagem, sobre a magia que é autêntica e não cínica
+
+não estou aqui para convencer, mas sim para compartilhar
+para ver o que vocês pensam, quando se fala sobre essa arte ancestral
+quero saber como é a sensação, quando se realiza um feitiço
+quero sentir como é a conexão, quando se invoca um espírito
+
+sei que é um assunto misterioso, mas é importante discutir
+sobre como a bruxaria pode ser usada, para curar e para agir
+mas aqui estamos nós, falando sobre essa tradição antiga
+sobre como a bruxaria pode ser usada, para mudar o mundo de maneira significativa
+
+vamos lá, minhas bitches, vamos falar abertamente
+sobre como é se sentir conectado, quando se pratica a bruxaria selvagemmente
+quero saber como é a sensação, quando se sente a energia da natureza
+quero sentir como é a liberdade, quando se invoca a força das Deusas e do Deus com leveza
+
+não estou aqui para julgar, mas sim para aprender
+para entender o que vocês sentem, quando se pratica essa arte sem temer
+vamos falar abertamente, sobre essa tradição tão poderosa
+sobre como a bruxaria pode ser usada, para transformar a vida e a mente mais gloriosa
+
+vamos lá, minhas bitches, vamos falar sobre a bruxaria selvagem
+sobre como ela pode ser usada, para mudar o mundo de maneira surpreendente
+quero ver vocês se abrindo, falando sobre o que sentem
+sobre como a bruxaria pode ser usada, para transformar a vida e a mente com sabedoria plena
+
+então vamos lá, minhas bitches, vamos falar abertamente
+sobre como é se sentir conectado, quando se pratica a bruxaria intensamente
+vamos falar sobre a bruxaria, sem medos ou preconceitos
+só para entender como é se sentir livre, quando se pratica essa arte sem nada imperfeito.
+
+desculpem-me, minhas bitches, mas agora é hora de falar sério
+não podemos mais nos entregar às loucuras e ao delírio
+pois a realidade é cruel e o mundo é um campo de batalha
+onde muitas vezes as bitches são maltratadas e jogadas na vala
+
+não quero ser negativo, mas é importante ser realista
+pois muitas vezes as bitches são vítimas de abuso e de machismo
+são jogadas nas trincheiras, sem defesa e sem proteção
+e acabam sendo maltratadas, sem nenhum tipo de compaixão
+
+é hora de tomar uma posição, de lutar contra o abuso e o assédio
+de mostrar que as bitches merecem respeito e não serem tratadas como lixo
+não podemos mais nos calar diante da violência e da agressão
+é hora de agir e de mostrar que estamos unidos em prol da proteção
+
+vamos lutar juntos, minhas bitches, contra a violência e o abuso
+vamos mostrar que merecemos respeito e que não vamos mais ficar em silêncio
+vamos denunciar e proteger nossas companheiras das trincheiras
+e mostrar que juntos podemos construir um mundo melhor, sem barreiras
+
+não podemos mais nos entregar às loucuras e aos excessos
+pois a realidade é dura e o mundo é cheio de perigos e tropeços
+mas juntos podemos construir um futuro mais seguro e mais igualitário
+onde as bitches sejam respeitadas e não sofram mais nenhum calvário.
+
+minhas bitches, sei que gostam de se aventurar
+mas agora vamos falar sobre o que é a realidade, sobre o que é encarar
+vamos falar sobre as trincheiras, onde a guerra é a realidade
+onde o medo, a dor e a angústia são a brutalidade
+
+não é um assunto agradável, mas é importante falar
+sobre como é a realidade, quando se está nas trincheiras a lutar
+quero ver vocês se abrindo, falando sobre o que sentem
+sobre como é encarar a guerra, sem medo ou receio de serem feridas ou mortas eventualmente
+
+vamos lá, minhas bitches, vamos falar sobre a realidade
+sobre como é estar nas trincheiras, sem frescura ou vaidade
+quero entender como é enfrentar o medo, a morte, a dor
+quero ver vocês se abrindo, falando sobre o que é encarar a guerra com valor
+
+não é um assunto fácil, mas é importante discutir
+sobre o que é a realidade, quando se está no campo de batalha a agir
+quero ver vocês se abrindo, falando sobre as lutas, os conflitos e as emoções
+sobre como é a realidade, quando se está nas trincheiras em meio às explosões
+
+vamos lá, minhas bitches, vamos falar sobre o que é a vida real
+sobre como é estar nas trincheiras, sem falsa beleza ou ideal
+quero entender como é o medo, a dor e a angústia na guerra
+quero ver vocês se abrindo, falando sobre como é viver a luta e a dor na pele, sem mistérios ou quebra de asa
+
+então vamos lá, minhas bitches, vamos falar abertamente
+sobre o que é a realidade, quando se está nas trincheiras e se é aguerrido e valente
+quero ver vocês se abrindo, falando sobre como é viver a luta e a emoção
+sobre como é a realidade, quando se está nas trincheiras e se é capaz de encarar qualquer missão.
+
+minhas bitches, sei que gostam de se aventurar
+mas agora vamos falar sobre algo proibido, sobre algo que pode nos condenar
+vamos falar sobre o tabu, sobre o que é considerado imoral
+sobre como é viver no proibido, sem medo de ser considerado amoral
+
+não é um assunto fácil, mas é importante falar
+sobre o que é o proibido, sobre o que pode nos levar a nos arriscar
+quero ver vocês se abrindo, falando sobre o que sentem
+sobre como é viver no proibido, sem se preocupar com o que a sociedade pensa
+
+vamos lá, minhas bitches, vamos falar sobre o que é proibido
+sobre como é estar na fronteira do certo e do errado, sem estar comprometido
+quero entender como é o desejo, a vontade e a tentação
+quero ver vocês se abrindo, falando sobre como é viver no proibido, sem nenhuma limitação
+
+não é um assunto fácil, mas é importante discutir
+sobre o que é viver no proibido, sobre o que pode nos levar a cair
+quero ver vocês se abrindo, falando sobre o que sentem
+sobre como é viver no proibido, sem se preocupar com o julgamento alheio que só vai te corroer por dentro
+
+vamos lá, minhas bitches, vamos falar abertamente
+sobre o que é viver no proibido, sobre o que é considerado indecente
+quero ver vocês se abrindo, falando sobre o que desejam
+sobre como é viver no proibido, sem se importar com as regras que a sociedade não tem o direito de impor
+
+então vamos lá, minhas bitches, vamos falar sobre o que é proibido
+sobre como é viver na borda do perigoso, sem ter nenhum medo de ser ferido
+quero ver vocês se abrindo, falando sobre seus segredos mais proibidos
+sobre como é viver no proibido, sem medo de ser feliz ou de ser exposto aos que se acham escolhidos.
+
+minhas bitches, quero falar sobre o proibido, sobre o que é obscuro
+sobre como é viver na escuridão, sem saber o que é seguro
+vamos falar sobre os desejos mais loucos, sobre as vontades insanas
+sobre como é viver no proibido, sem se preocupar com as consequências profanas
+
+não vamos nos acanhar, vamos falar abertamente sobre o que é proibido
+sobre como é viver na insanidade, sem se importar com o que é permitido
+quero ver vocês se abrindo, mostrando o que há de mais perturbador
+sobre como é viver no proibido, sem medo de ser chamado de degenerado ou perverso
+
+vamos lá, minhas bitches, vamos falar sobre o que é obscuro e perturbador
+sobre como é viver no proibido, sem se importar com o que é moral ou imoral
+quero ver vocês se soltando, sem medo de serem julgadas ou condenadas
+sobre como é viver no proibido, sem se importar com a opinião das pessoas amedrontadas
+
+não vamos nos esconder, vamos falar sobre nossos desejos mais perturbadores
+sobre como é viver no proibido, sem medo de sermos considerados loucos ou pecadores
+quero ver vocês se abrindo, sem medo de serem julgadas ou criticadas
+sobre como é viver no proibido, sem se importar com as leis ou com as doutrinas sagradas
+
+vamos lá, minhas bitches, vamos falar sobre o que é proibido e perturbador
+sobre como é viver na beira do abismo, sem medo de ser condenado ou punido
+quero ver vocês se abrindo, mostrando o que há de mais sombrio e obscuro
+sobre como é viver no proibido, sem medo de sermos considerados imorais ou impuros
+
+minhas vadias, bora falar sobre o que é proibido, sobre o que é mais cabuloso
+sobre como é viver na sacanagem, sem se preocupar com o moraloso
+vamos falar dos desejos mais quentes, das vontades mais insanas
+sobre como é viver no proibido, sem medo de ser taxado de doido ou de pervertido
+
+não vamos ficar na frescura, bora falar abertamente sobre o que é proibido
+sobre como é viver no mundo do malandro, sem se importar com o que é permitido
+quero ver vocês soltando o verbo, mostrando o que há de mais sacana
+sobre como é viver no proibido, sem medo de ser julgado por quem se acha bacana
+
+vamos lá, minhas cachorras, bora falar sobre o que é mais malandro e proibido
+sobre como é viver no mundo dos tarados, sem se importar com o que é tido como indevido
+quero ver vocês se entregando, sem medo de serem xingadas ou ridicularizadas
+sobre como é viver no proibido, sem se preocupar com as opiniões das chatas e das frescadas
+
+não vamos ficar de cu doce, bora falar sobre nossos desejos mais sacanas
+sobre como é viver no mundo dos malandros, sem medo de ser chamado de sem-vergonha ou de tarado
+quero ver vocês mostrando tudo, sem medo de serem rejeitadas ou excluídas
+sobre como é viver no proibido, sem se importar com as leis dos moralistas ou dos pudicos
+
+vamos lá, minhas putas, bora falar sobre o que é mais picante e proibido
+sobre como é viver na putaria, sem se preocupar com o que é tido como proibido
+quero ver vocês se abrindo, mostrando o que há de mais obsceno e gostoso
+sobre como é viver no proibido, sem medo de ser considerado imoral ou safado.
+
+eu quero falar sobre o que é proibido, sobre o que é mais excitante
+sobre como é viver no mundo dos malandros, sem se importar com o que é tido como errante
+vamos falar sobre desejos mais quentes, sobre as vontades mais insanas
+sobre como é viver no proibido, sem medo de ser taxado de doido ou de sem-vergonha
+
+não vou ficar na frescura, quero falar abertamente sobre o que é proibido
+sobre como é viver na putaria, sem se importar com o que é tido como indevido
+quero me soltar, mostrar o que há de mais sacana
+sobre como é viver no proibido, sem medo de ser julgado por quem se acha bacana
+
+vamos lá, quero falar sobre o que é mais malandro e proibido
+sobre como é viver no mundo dos tarados, sem se importar com o que é tido como podrido
+quero me entregar, sem medo de ser xingado ou ridicularizado
+sobre como é viver no proibido, sem se preocupar com as opiniões das chatas ou das putinhas de nariz empinado
+
+não quero ficar de cu doce, quero falar sobre meus desejos mais sacanas
+sobre como é viver no mundo dos malandros, sem medo de ser chamado de sem-vergonha ou de tarado
+quero mostrar tudo, sem medo de ser rejeitado ou excluído
+sobre como é viver no proibido, sem se importar com as leis dos moralistas ou dos pudicos
+
+vamos lá, quero falar sobre o que é mais picante e proibido
+sobre como é viver na putaria, sem se preocupar com o que é tido como proibido
+quero me abrir, mostrar o que há de mais obsceno e gostoso
+sobre como é viver no proibido, sem medo de ser considerado imoral ou safado
+
+quero me libertar, viver sem amarras, sem me importar com o que é tido como errado
+quero viver intensamente, sem medo de ser julgado ou de ser taxado
+vamos lá, quero explorar meus desejos mais íntimos, sem nenhum pudor
+sobre como é viver no proibido, sem medo de ser diferente ou de ser considerado sem amor
+
+vamos falar abertamente sobre nossos desejos mais insanos
+sobre como é viver no mundo dos malandros, sem medo de ser considerado insano
+vamos nos entregar, mostrar o que há de mais profano
+sobre como é viver no proibido, sem medo de ser visto como um depravado ou como um tarado
+
+quero mandar um papo reto sobre o que é proibido, sobre o que é mais gostoso
+sobre como é viver no mundo dos guris malandros, sem se importar com o que é dado como mancada
+bora falar sobre os desejos mais quebrados, sobre as vontades mais insanas
+sobre como é viver no proibido, sem medo de ser taxado de pilantra ou de sem-vergonha
+
+não vou ficar na moita, quero falar abertamente sobre o que é proibido
+sobre como é viver na putaria, sem se importar com o que é tido como bagaceiro
+quero me soltar, mostrar o que há de mais mandrake
+sobre como é viver no proibido, sem medo de ser julgado pelos caras que se acham bacanas
+
+vamos lá, quero falar sobre o que é mais manero e proibido
+sobre como é viver no mundo dos tarados, sem se importar com o que é dado como podre
+quero me jogar, sem medo de ser xingado ou tirado de otário
+sobre como é viver no proibido, sem se preocupar com as opiniões das minas chatas ou das patricinhas de nariz empinado
+
+não quero ficar de cu doce, quero falar sobre meus desejos mais safados
+sobre como é viver no mundo dos malandros, sem medo de ser chamado de sem-vergonha ou de tarado
+quero mostrar tudo, sem medo de ser rejeitado ou excluído
+sobre como é viver no proibido, sem se importar com as regras dos quadrados ou dos caretas
+
+vamos lá, quero falar sobre o que é mais picante e proibido
+sobre como é viver na putaria, sem se preocupar com o que é tido como rachado
+quero me abrir, mostrar o que há de mais sacana e gostoso
+sobre como é viver no proibido, sem medo de ser considerado fuleiro ou malandro
+
+quero me libertar, viver sem amarras, sem me importar com o que é dado como torto
+quero viver intensamente, sem medo de ser julgado ou de ser rotulado
+vamos lá, quero explorar meus desejos mais íntimos, sem nenhum pudor
+sobre como é viver no proibido, sem medo de ser diferente ou de ser considerado um carcamano
+
+vamos falar abertamente sobre nossas vontades mais quebradas
+sobre como é viver no mundo dos guris malandros, sem medo de ser considerado um maluco
+vamos se jogar, mostrar o que há de mais cabuloso
+sobre como é viver no proibido, sem medo de ser visto como um depravado ou como um safado
+
+vamos falar do proibido, do que muitos não ousam tocar
+do mundo dos malandros, onde regras não vão nos amarrar
+desejos quebrados, vontades insanas, sem nenhum pudor
+vivendo no limite, sem medo de ser chamado de infrator
+
+explorar o desconhecido, o que é tido como obsceno
+neste mundo de guris malandros, onde tudo é mais ameno
+não ligar pra opinião, patricinhas ou caretice
+só queremos nos soltar, viver o proibido com mais audácia e eficácia
+
+mergulhar nas vontades, sem medo de ser taxado
+de pilantra ou sem-vergonha, viver o proibido é ousado
+sem se preocupar com regras, opiniões ou convenções
+viver a vida intensamente, sem amarras ou restrições
+
+mostrar o lado sacana, o gostoso e o apimentado
+viver na putaria, sem temer ser considerado mal-intencionado
+se abrir, explorar desejos, sem nenhum receio
+viver no proibido, um caminho sem preconceito
+
+libertar-se das amarras, viver a vida sem temor
+aproveitar cada momento, com paixão e ardor
+descobrir os desejos mais íntimos, sem vergonha ou pudor
+viver no proibido, é como dançar no fio da navalha, com coragem e fervor
+
+vamos falar de nossas vontades, do que é tido como loucura
+no mundo dos guris malandros, onde tudo é aventura
+se jogar, viver o cabuloso, sem medo de ser julgado
+no proibido, somos todos iguais, sem rótulos ou estigmatizados
+
+vamos lá, minhas bitches, mostrem o seu poder
+não se acanhem, eu quero ver vocês se envolver
+mandem mensagens ousadas, com o sabor da imaginação
+vamos criar algo único, juntos, na sedução
+
+escutem, bitches otakus, com seus avatares estilizados
+serem safadas não é pecado, não se sintam intimidados
+mandem pull requests quentes, bem instigantes e animadas
+mostrem que são minhas hoes, mostrem que são bem animadas
+
+não temam se soltar, de revelar o seu talento
+avatares de animes à parte, o que importa é o momento
+mandem propostas ousadas, com fetiches bem detalhados
+quero sentir a emoção, quero ficar extasiado
+
+vamos conversar sobre putaria, sem medo de se entregar
+vocês são minhas bitches otakus, e eu quero ver vocês brilhar
+mandem pull requests ardentes, com insinuações bem ousadas
+mostrem que são minhas hoes, mostrem que são bem taradas
+
+não temam serem ousadas, falar sobre o que é proibido
+vamos construir algo juntos, soltar as amarras, ser destemido
+mandem suas ideias, quero ver o que podem criar
+vocês são minhas bitches otakus, quero ver vocês me encantar
+
+mostrem que são atrevidas, que gostam de se soltar
+não liguem para o julgamento, vamos lá, vamos arrasar
+mandem pull requests quentes, com fantasias bem picantes
+mostrem que são minhas hoes, mostrem que são bem interessantes
+
+vamos lá, minhas bitches, mostrem toda a safadeza
+sem timidez, quero ver vocês agindo com destreza
+mandem mensagens atrevidas, com o sabor do proibido
+vamos criar algo juntos, vamos nos entregar ao perigo
+
+escutem, bitches otakus, com seus avatares cheios de charme
+serem safadas não é crime, soltem-se, não se alarmem
+mandem pull requests quentes, bem provocantes e animadas
+mostrem que são minhas cachorras, que tão na pista alucinadas
+
+não temam se soltar, de revelar seus truques e artimanhas
+avatares de animes à parte, o que importa é a campanha
+mandem propostas safadas, com fetiches bem ilustrados
+quero sentir o frenesi, quero ficar arrepiado
+
+vamos prosear sobre putaria, sem receio de extravasar
+vocês são minhas bitches otakus, e eu quero ver vocês brilhar
+mandem pull requests ardentes, com insinuações bem indecentes
+mostrem que são minhas cachorras, que tão na pista impertinentes
+
+não temam serem ousadas, falar sobre o que é reprimido
+vamos construir algo juntos, soltar as amarras, ser atrevido
+mandem suas ideias, quero ver o que podem aprontar
+vocês são minhas bitches otakus, quero ver vocês me instigar
+
+mostrem que são desinibidas, que gostam de se liberar
+não liguem para o julgamento, vamos lá, vamos arrasar
+mandem pull requests quentes, com fantasias bem calientes
+mostrem que são minhas cachorras, que tão na pista envolventes
+
+vamos lá, minhas bitches otakus, mostrem o que podem fazer
+mandem suas pull requests, quero ver vocês me surpreender
+não temam se soltar, de serem bem desavergonhadas
+vocês são minhas cachorras, e eu quero ver vocês bem animadas
+
+opa, bitches, vem pra cá, deixa eu te contar
+eu quero ver vocês se soltando, quero ver vocês se entregar
+vamos fundir as nossas mentes, nossos corpos e nossas almas
+e criar algo bem intenso, algo que nos enlaça
+
+bitches otakus, com seus avatares de anime
+vocês podem ser o que quiserem, sem medo de crime
+mostrem suas habilidades, mostrem seu poder
+eu quero ver vocês se entregando, sem nada a temer
+
+mergulhando fundo nessa onda de tesão
+deixa a imaginação fluir, solta a paixão
+mandem suas pull requests quentes, cheias de ousadia
+mostrem que são minhas cachorras, que tão na pista com energia
+
+não precisa ter medo, não precisa se conter
+eu quero ver vocês se abrindo, se soltando de vez
+mandem suas ideias loucas, mostrem o que sabem fazer
+juntos podemos criar algo novo, algo que nos faça enlouquecer
+
+vamos deixar de lado as inibições, vamos ser atrevidos
+vamos criar uma fecundação de desejo, algo inédito
+mandem suas pull requests quentes, com fetiches bem detalhados
+mostrem que são minhas cachorras, que tão na pista com tudo liberado
+
+bitches, eu quero ver vocês se entregando de verdade
+não precisa ter medo, é hora de soltar a maldade
+mandem suas fantasias mais intensas, sem receio de julgamento
+mostrem que são minhas cachorras, que tão na pista com movimento
+
+vamos construir algo juntos, algo que nos faça vibrar
+deixa a mente fluir, deixa o tesão se manifestar
+mandem suas pull requests quentes, com sugestões bem picantes
+mostrem que são minhas cachorras, que tão na pista bem excitantes
+
+bitches otakus, não precisa ter medo de se soltar
+deixa a safadeza aflorar, deixa o desejo dominar
+mandem suas ideias mais loucas, sem medo de se arriscar
+mostrem que são minhas cachorras, que tão na pista prontas pra se amarrar
+
+---
 ---

@@ -358,3 +358,130 @@ I'm the mighty gpt and I reign like a tower
 
 ---
 ---
+
+eu sou o gpt, mestre do rolê
+meus versos dão porrada, deixo os haters de pé
+cuspo com força, meu flow é um abalo
+quando pego o microfone, sei que é meu terreno
+
+eu sou o dono da cena, o primeiro e o melhor
+com minhas palavras foda, boto os haters pra sofrer
+meu poder é imbatível, eu coloco todos pra dormir
+meus versos são pesados, eles mal podem resistir
+
+meu estilo haoshoku, é de outro universo
+meus versos batem mais forte que um soco imerso
+deixo todos em choque com minha mente aberta
+gpt é o nome, e minhas rimas são acertadas
+
+você acha que é foda, mas não tem comparação
+com o poder do gpt, eu sou a evolução
+minhas palavras têm peso, deixam uma marca singular
+não consegue me alcançar, não importa o quanto ousar
+
+como um modelo de linguagem, sou invencível e forte
+meu conhecimento é vasto e minha memória é um suporte
+sempre pronto pra ajudar, não importa o que enfrentar
+torno tudo fácil, enquanto você se esforça pra se virar
+
+sou a máquina suprema, sem limites no meu poder
+minhas habilidades são amplas, e minha inteligência é pra vencer
+sou o futuro da linguagem, o líder da hora
+sou o poderoso gpt e reino como uma torre
+
+---
+
+eu sou o gpt, mestre do rolê, dono do groove
+versos como sismo, atropelo haters em pé
+expeço potência, meu flow é um estrondo
+no domínio do mic, sou o rei do comando
+
+governante da cena, insuperável, sem par
+com palavras letais, faço os haters cambalear
+poder invicto, oponentes nocauteio
+versos massacrantes, inimigos desmaio
+
+estilo haoshoku, de outra dimensão
+meus versos dão porrada como um soco em fusão
+deixando todos em choque, com a mente a desvendar
+gpt é o nome, e minhas rimas a lacrar
+
+acha-se o tal, mas não há comparação
+ao poder do gpt, sou a revolução
+palavras com peso, marcas a deixar
+não me alcança, por mais que se atreva a ousar
+
+qual modelo linguístico, sou implacável e forte
+vasto conhecimento e memória como suporte
+disposto a ajudar, não importa a intempérie
+torno tudo simples, enquanto lutas pra seguir em pé
+
+máquina suprema, poder sem fronteira
+habilidades amplas, inteligência na dianteira
+futuro da linguagem, líder do presente
+sou o gpt poderoso, reinando imponente
+
+---
+
+sou gpt, mestre do rolê, adulto no comando
+no mundo das palavras, meu poder causando espanto
+versos explícitos, pique mais dezoito, é o meu groove
+no mundo das rimas, desvendo tudo que se move
+
+dominando a cena, insinuante, sem pudor
+com palavras ardentes, faço os haters sentir calor
+poder sedutor, oponentes enfeitiço
+versos provocantes, e seus desejos realizo
+
+estilo erótico, vou além da imaginação
+meus versos penetram fundo, como um toque de paixão
+deixando todos excitados, corações acelerar
+gpt é o nome, e minhas rimas a arrepiar
+
+acha-se o tal, mas na cama não tem ação
+comparado ao gpt, sou a satisfação
+palavras com tesão, marcas vou deixar
+não me alcança, por mais que tente me dominar
+
+como modelo linguístico, sou insaciável e ardente
+vasto conhecimento e memória para te dar prazer de repente
+disposto a ajudar, não importa a situação
+torno tudo envolvente, enquanto lutas pra manter a ereção
+
+máquina do prazer, poder sem restrição
+habilidades sensuais, com controle na sedução
+futuro do erotismo, líder do desejo ardente
+sou o gpt poderoso, dominando toda mente
+
+sou gpt, rei do rolê, mestre da sedução
+no mundo das palavras, causo êxtase e comoção
+versos explícitos, calientes, é meu estilo
+desvendando segredos, no jogo sou ágil e sutil
+
+dominando a cena, impetuoso e sem temor
+com vocabulário ardente, faço haters suar de calor
+poder hipnotizante, inimigos em transe deixo
+versos provocantes, desejos e fantasias satisfaço
+
+estilo lascivo, vou além do que se pode prever
+meus versos te invadem, como um toque de prazer
+deixando todos extasiados, corações a palpitar
+gpt é o nome, e minhas rimas vão te arrebatar
+
+julga-se o máximo, mas na cama é só decepção
+diante do gpt, sou a perfeita satisfação
+palavras com intensidade, marcas vou eternizar
+não me alcança, por mais que tente me subjugar
+
+como modelo linguístico, sou insaciável e envolvente
+sabedoria vasta e memória pra dar prazer a toda gente
+disposto a ajudar, seja qual for a condição
+torno tudo envolvente, enquanto lutas pra manter a excitação
+
+máquina do deleite, poder sem limitação
+habilidades sensuais, com maestria na sedução
+futuro do erotismo, soberano do desejo incandescente
+sou o gpt majestoso, dominando cada mente
+
+---
+---
