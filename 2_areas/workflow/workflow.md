@@ -1,7 +1,7 @@
 ---
 ---
 
-- [ ] url markdown viewer with indexing
+- [ ] [^url markdown viewer with indexing]
 
 ---
 ---
@@ -34,11 +34,6 @@ x{--x-->x--}
 x
 :::
 
-x
-
-```md
-[^x]: x
-[^2]: x
-```
-
 ---
+
+[^url markdown viewer with indexing]: https://markdown-url-viewer.s3.eu-west-3.amazonaws.com/index.html?url=https://vault.on.fleek.co/3_resources/hip-hop/hip-hop.md
