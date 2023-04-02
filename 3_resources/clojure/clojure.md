@@ -3,22 +3,9 @@
 ---
 
 ```clojure
-(def x (-> (promise) (deliver "text")))
-@x
-
-;; #'user/x
-```
-
-```clojure
 (+ 1 2 3)
 
 ;; 6
-```
-
-```clojure
-(zero? 0)
-
-;; true
 ```
 
 ```clojure
@@ -31,6 +18,12 @@
 (range 10)
 
 ;; (0 1 2 3 4 5 6 7 8 9)
+```
+
+```clojure
+(zero? 0)
+
+;; true
 ```
 
 ```clojure
@@ -58,15 +51,22 @@
 ```
 
 ```clojure
+(defmacro defexpenses [name & expenses] `(def ~name (atom '~expenses))) (defn add-expense [atom-expense amount] (swap! atom-expense conj amount)) (defn sum-expenses [& atoms] (reduce + (map #(apply + @%) atoms))) (defexpenses person-1 1200 800 450) (defexpenses person-2 1000 600 300) (defexpenses person-3 1500 900 550) (add-expense person-1 200) (add-expense person-2 100) (add-expense person-3 150) (sum-expenses person-1 person-2 person-3)
+
+;; 7750
+```
+
+```clojure
 (defn dot-product [v1 v2] (reduce + (map * v1 v2))) (defn add-elements [v1 v2] (mapv + v1 v2)) (defn apply-weights [input layer-weights layer-biases] (mapv (fn [w b] (+ (dot-product input w) b)) layer-weights layer-biases)) (defn activation-function [input] (mapv #(Math/tanh %) input)) (defn neural-network [input weights biases activation-fn] (let [layer-outputs (map (fn [w b] (activation-fn (apply-weights input w b))) weights biases)] (last layer-outputs))) (def input-1 [0.1 0.2 0.3]) (def input-2 [0.4 0.5 0.6]) (def weights-1 [[0.1 0.2 0.3] [0.4 0.5 0.6] [0.7 0.8 0.9]]) (def biases-1 [0.1 0.2 0.3]) (def weights-2 [[0.1 0.2 0.3] [0.4 0.5 0.6]]) (def biases-2 [0.1 0.2]) (let [inputs [input-1 input-2] weights [weights-1 weights-2] biases [biases-1 biases-2]] (mapv #(neural-network % weights biases activation-function) inputs)) 
 
 ;; [[0.23549574953849794 0.47770001216849795] [0.39693043200507755 0.7487042869693086]]
 ```
 
 ```clojure
-(defmacro defexpenses [name & expenses] `(def ~name (atom '~expenses))) (defn add-expense [atom-expense amount] (swap! atom-expense conj amount)) (defn sum-expenses [& atoms] (reduce + (map #(apply + @%) atoms))) (defexpenses person-1 1200 800 450) (defexpenses person-2 1000 600 300) (defexpenses person-3 1500 900 550) (add-expense person-1 200) (add-expense person-2 100) (add-expense person-3 150) (sum-expenses person-1 person-2 person-3)
+(def x (-> (promise) (deliver "text")))
+@x
 
-;; 7750
+;; #'user/x
 ```
 
 ---
