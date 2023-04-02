@@ -50,5 +50,97 @@ Papel A4 Sulfite Hp Premium 210x297 75g - 1000 Folhas - R$ 60,99
 ---
 ---
 
++500 vendidos
+Jaqueta Motoqueiro Masculina Texx Ronin X11 Impermeável Full
+R$ 419,30
+
++100 vendidos
+Jaqueta Moto X11 Super Air Ventilada Proteção Masculina
+R$ 394,99
+
++1000 vendidos
+Jaqueta Masculino De Couro Impermeável Motoqueiro Colorido
+R$ 260,91
+
++100 vendidos
+Jaqueta Texx Corta Vento Neon Impermeável Moto Ciclismo
+R$ 259
+
++5mil vendidos
+Jaqueta Couro Grossa Moto Resiste Água Frio Forte Cortavento
+R$ 215,99
+
++500 vendidos
+Jaqueta Masculina À Prova De Vento E À Prova D'água
+R$ 154,56
+
++1000 vendidos
+Jaqueta De Couro Motoqueiro Masculina Impermeável Slim Top
+R$ 153,27
+
+-
+
++100 vendidos
+Calça Texx New Strike V2 Motociclista Masculina Impermeável
+R$ 749,25
+
++25 vendidos
+Calça Moto Jeans Kevlar Com Proteção Texx Garage
+R$ 479,20
+
++5 vendidos
+Calça Motociclista Helt Softshell Masculina C/ Proteção
+R$ 365
+
++50 vendidos
+Calça Jeans Masculina Texx Garage Basic Moto Motociclista
+R$ 279,30
+
++1000 vendidos
+Calça Jeans Impermeável Proteção Moto Joelheira Quadril
+R$ 199,90
+
++25 vendidos
+Conjunto Moto Texx Jaqueta E Calça Strike Impermeavel Chuva
+R$ 1.470
+
+-
+
++100 vendidos
+Luva X11 Dry Supertech Impermeavel Moto Motoqueiro
+R$ 259,63
+
++100 vendidos
+Luva X11 Dry Supertech Impermeavel Moto Motoqueiro
+R$ 273,30
+
++500 vendidos
+Luva X11 Dry Supertech Moto Impermeável Com Limpador Viseira
+R$ 277,10
+
++10mil vendidos
+Luva X11 Blackout Motoqueiro Moto Motociclista Proteção Full
+R$ 109,90
+
+-
+
++1000 vendidos
+Capa Para Calçados Tenis Bota Motoqueiro Moto Motoboy Chuva
+R$ 37,90
+
++5mil vendidos
+Capa Chuva Sapato Tênis Moto Protetor Silicone Calçado
+R$ 30,80
+
++500 vendidos
+Bota Chuva Impermeável Moto Motociclista Motoqueiro Motoboy
+R$ 109,88
+
+-
+
++1000 vendidos
+Capa Chuva Motoqueiro Couro Sintético Flex Todos Tamanhos
+R$ 144,90
+
 ---
 ---

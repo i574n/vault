@@ -58,9 +58,9 @@
 ```
 
 ```clojure
-(let [input-1 [0.1 0.2 0.3] input-2 [0.4 0.5 0.6] weights-1 [[0.1 0.2 0.3] [0.4 0.5 0.6] [0.7 0.8 0.9]] biases-1 [0.1 0.2 0.3] weights-2 [[0.1 0.2 0.3] [0.4 0.5 0.6]] biases-2 [0.1 0.2] activation-fn #(mapv #(Math/tanh %) %)] (for [input [input-1 input-2]] (->> input (mapv (fn [w b] (+ (reduce + (map * input w)) b)) weights-1 biases-1) activation-fn (mapv (fn [w b] (+ (reduce + (map * % w)) b)) weights-2 biases-2) activation-fn)))
+(defn dot-product [v1 v2] (reduce + (map * v1 v2))) (defn add-elements [v1 v2] (mapv + v1 v2)) (defn apply-weights [input layer-weights layer-biases] (mapv (fn [w b] (+ (dot-product input w) b)) layer-weights layer-biases)) (defn activation-function [input] (mapv #(Math/tanh %) input)) (defn neural-network [input weights biases activation-fn] (let [layer-outputs (map (fn [w b] (activation-fn (apply-weights input w b))) weights biases)] (last layer-outputs))) (def input-1 [0.1 0.2 0.3]) (def input-2 [0.4 0.5 0.6]) (def weights-1 [[0.1 0.2 0.3] [0.4 0.5 0.6] [0.7 0.8 0.9]]) (def biases-1 [0.1 0.2 0.3]) (def weights-2 [[0.1 0.2 0.3] [0.4 0.5 0.6]]) (def biases-2 [0.1 0.2]) (let [inputs [input-1 input-2] weights [weights-1 weights-2] biases [biases-1 biases-2]] (mapv #(neural-network % weights biases activation-function) inputs)) 
 
-;; ?
+;; [[0.23549574953849794 0.47770001216849795] [0.39693043200507755 0.7487042869693086]]
 ```
 
 ```clojure
