@@ -116,34 +116,34 @@ frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Emily Morse Teaches Sex & Communication
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeihet2ne2opnfkousrghvulanatjmblbjcqhuylvtqfhcbsxum7rby.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Garry Kasparov Teaches Chess
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeigb4edox3o642ufajgyfljw6nlt6xodtcsib2ynq4gfipq55r2y7e.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - RuPaul Teaches Self-Expression and Authenticity
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeigtr537orc6iv36maqvwmsyjvuyxwl5lqxrcueisa75f6x3kupegi.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Tony Hawk Teaches Skateboarding
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeif6gdzun7aj3nqljovyoqpliomxiza5oq4gz4erctzcbqbpyhntky.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```

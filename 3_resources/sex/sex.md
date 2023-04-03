@@ -253,3 +253,206 @@ Se você e seu parceiro estão interessados em experimentar uma experiência sex
 5. Mantenha-se aberto e consciente: Esteja disposto a explorar suas próprias emoções e sensações durante a experiência, bem como a prestar atenção às respostas do seu parceiro.
 
 Embora não haja garantia de que qualquer posição sexual possa invocar energias misteriosas ou sobrenaturais, a exploração de práticas espirituais e tântricas pode proporcionar uma experiência sexual mais profunda e emocionalmente enriquecedora. Lembre-se de que é importante abordar essas práticas com respeito e intenção consciente e garantir que ambos os parceiros estejam confortáveis e consintam com a experiência.
+
+## detail in pt-br the n1 position while watching pornos (+18)
+
+This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
+
+< Uma posição que pode ser confortável e prazerosa para ambos os parceiros enquanto assistem a filmes adultos é a "colher" ou "conchinha". Essa posição permite que os parceiros vejam a tela facilmente e mantenham o contato físico e a estimulação.
+
+Aqui estão os detalhes da posição conchinha:
+
+1. Deitados de lado: Ambos os parceiros deitam-se de lado, com o parceiro ativo atrás do parceiro passivo. O parceiro passivo pode dobrar ligeiramente os joelhos para facilitar a penetração.
+
+2. Posicionamento do parceiro ativo: O parceiro ativo (geralmente o homem) envolve o parceiro passivo com os braços e pernas, posicionando-se para a penetração. Ele também pode usar uma mão para estimular o clitóris ou os testículos do parceiro passivo.
+
+3. Penetração e ritmo: O parceiro ativo penetra o parceiro passivo com cuidado e, juntos, estabelecem um ritmo confortável e prazeroso para ambos. A comunicação é fundamental para garantir que ambos os parceiros estejam confortáveis e satisfeitos com a posição e o ritmo.
+
+4. Visualização: Nessa posição, ambos os parceiros têm uma visão clara da tela e podem assistir ao filme adulto enquanto mantêm o contato físico e a intimidade.
+
+5. Variação e ajustes: A posição conchinha pode ser ajustada para aumentar o conforto e o prazer, como levantar a perna do parceiro passivo sobre a perna do parceiro ativo. Explore diferentes variações para descobrir o que funciona melhor para você e seu parceiro.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir.
+
+## detail in pt-br the n1 position on the beach (+18)
+
+< Uma posição popular e confortável para experimentar na praia é a "Missão Marte" ou "Missionária modificada". Essa posição permite que os parceiros mantenham contato visual e físico enquanto aproveitam o ambiente ao ar livre, e também ajuda a minimizar o contato direto com a areia.
+
+Aqui estão os detalhes da posição Missão Marte:
+
+1. Toalha ou cobertor: Para maior conforto e higiene, estenda uma toalha ou cobertor grande na areia antes de se deitar.
+
+2. Posicionamento do parceiro passivo: O parceiro passivo (geralmente a mulher) deita-se de costas sobre a toalha ou cobertor, com os joelhos dobrados e os pés apoiados na areia. A coluna e a cabeça devem ser apoiadas na toalha ou cobertor.
+
+3. Posicionamento do parceiro ativo: O parceiro ativo (geralmente o homem) ajoelha-se entre as pernas do parceiro passivo, com os joelhos afastados e os pés apoiados na areia. Ele pode segurar os quadris ou a cintura do parceiro passivo para ajudar a controlar a penetração e o ritmo.
+
+4. Penetração e ritmo: O parceiro ativo penetra o parceiro passivo com cuidado e, juntos, estabelecem um ritmo confortável e prazeroso para ambos. A comunicação é fundamental para garantir que ambos os parceiros estejam confortáveis e satisfeitos com a posição e o ritmo.
+
+5. Proteção e higiene: Ao fazer sexo na praia, é importante ser consciente da higiene e garantir que a areia não entre em áreas sensíveis, o que pode causar desconforto ou infecção. Use a toalha ou cobertor como barreira e evite o contato direto com a areia sempre que possível.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir. Além disso, tenha cuidado com a privacidade e as leis locais ao fazer sexo em locais públicos como a praia.
+
+## detail in pt-br the n1 position on the car (+18)
+
+< Uma posição popular e prazerosa para experimentar no carro é a "Cavalgada no banco do passageiro" ou "Riding shotgun". Essa posição permite que os parceiros mantenham contato visual e físico enquanto aproveitam o ambiente íntimo e fechado do carro.
+
+Aqui estão os detalhes da posição Cavalgada no banco do passageiro:
+
+1. Preparação: Estacione o carro em um local seguro e privado. Afaste o banco do passageiro para trás, para criar mais espaço e incline o encosto do banco um pouco para trás.
+
+2. Posicionamento do parceiro ativo: O parceiro ativo (geralmente o homem) senta-se no banco do passageiro com as costas apoiadas no encosto do banco e as pernas abertas.
+
+3. Posicionamento do parceiro passivo: O parceiro passivo (geralmente a mulher) senta-se no colo do parceiro ativo, de frente para ele, com os joelhos dobrados e os pés apoiados no banco ou no chão do carro.
+
+4. Penetração e ritmo: O parceiro passivo abaixa-se lentamente, permitindo a penetração. Juntos, estabelecem um ritmo confortável e prazeroso para ambos. A comunicação é fundamental para garantir que ambos os parceiros estejam confortáveis e satisfeitos com a posição e o ritmo.
+
+5. Estimulação extra: O parceiro ativo pode usar as mãos para acariciar e estimular outras partes do corpo do parceiro passivo, como seios, costas ou nádegas.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir. Além disso, esteja ciente da privacidade e das leis locais ao fazer sexo em locais públicos, como carros estacionados.
+
+## detail in pt-br the n1 position in a harley davidson with a cuck from afar (+18)
+
+< Realizar atividades sexuais em um veículo em movimento, como uma motocicleta Harley-Davidson, apresenta riscos significativos à segurança e é fortemente desaconselhado. Além disso, fazer sexo em público pode violar leis e regulamentações locais e colocar a privacidade de outras pessoas em risco.
+
+No entanto, se você deseja incorporar o tema de uma motocicleta e o fetiche de exibicionismo de forma segura e legal, considere o seguinte cenário:
+
+1. Encontre um local seguro e privado: Escolha um local onde você possa estacionar a motocicleta sem perturbar os outros e onde não haja risco de serem pegos ou observados por pessoas que não consentiram em participar da situação.
+
+2. Posicionamento na motocicleta: Com a motocicleta estacionada e desligada, o parceiro ativo (geralmente o homem) pode sentar-se no assento do piloto com os pés apoiados no chão e as mãos segurando o guidão. O parceiro passivo (geralmente a mulher) pode sentar-se no colo do parceiro ativo, de frente para ele, com os joelhos dobrados e os pés apoiados no banco ou nas pedaleiras.
+
+3. Penetração e ritmo: O parceiro passivo abaixa-se lentamente, permitindo a penetração. Juntos, estabelecem um ritmo confortável e prazeroso para ambos. A comunicação é fundamental para garantir que ambos os parceiros estejam confortáveis e satisfeitos com a posição e o ritmo.
+
+4. Envolvimento do observador: Se todos os envolvidos consentirem, o observador (ou "cuck") pode manter-se a uma distância segura, de onde possa assistir à cena sem violar a privacidade de outras pessoas.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que todos os envolvidos estejam confortáveis e consintam com a prática antes de prosseguir. Além disso, esteja ciente da privacidade e das leis locais ao fazer sexo em locais públicos.
+
+## detail in pt-br the n1 position with chicks that like to write code (+18)
+
+< Não há uma posição específica que se aplique apenas a pessoas que gostam de escrever código ou que trabalham na área de tecnologia da informação. As preferências sexuais são altamente pessoais e variam de indivíduo para indivíduo, independentemente de suas ocupações ou interesses.
+
+No entanto, se você deseja incorporar o interesse por programação e tecnologia na intimidade, pode experimentar o seguinte cenário:
+
+1. Preparação: Certifique-se de que o ambiente esteja confortável e propício à intimidade. Se vocês gostam de falar sobre programação, talvez possam começar com uma conversa leve sobre seus projetos e interesses no campo.
+
+2. Posicionamento: Escolha uma posição que permita contato visual e a possibilidade de continuar a conversa, como a posição "Missionária" ou "Yab-Yum". Ambas as posições permitem que os parceiros se olhem e conversem enquanto mantêm a intimidade física.
+
+3. Estabeleça o ritmo e a comunicação: Conforme vocês estabelecem um ritmo confortável e prazeroso, continuem a comunicação aberta e sincera. Vocês podem compartilhar suas ideias e pensamentos sobre programação, ou mesmo falar sobre problemas específicos de código que estão tentando resolver.
+
+4. Estimulação mental e física: Enquanto vocês mantêm o contato físico e a penetração, usem a conversa sobre programação e tecnologia como uma forma de estimulação mental adicional. Para algumas pessoas, a conexão intelectual pode aumentar a excitação e a satisfação sexual.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir. E, como sempre, adaptar a experiência às preferências individuais e ao nível de conforto de ambos os parceiros é fundamental para uma experiência sexual gratificante e prazerosa.
+
+## detail in pt-br the n1 position with someone you deep down despise (+18)
+
+< É importante lembrar que o consentimento e a comunicação aberta são fundamentais para qualquer atividade sexual. Se você realmente despreza alguém, talvez seja melhor evitar envolver-se em atividades íntimas com essa pessoa, pois isso pode levar a sentimentos negativos, arrependimentos e potenciais conflitos.
+
+No entanto, se você deseja explorar a ideia de uma posição que permita manter uma certa distância emocional, a "Doggy Style" (ou "Cachorrinho") pode ser uma opção. Essa posição permite uma penetração profunda, mas limita o contato visual entre os parceiros, o que pode proporcionar uma certa separação emocional.
+
+Aqui estão os detalhes da posição Doggy Style:
+
+1. Posicionamento do parceiro passivo: O parceiro passivo (geralmente a mulher) fica de quatro, apoiando-se nos joelhos e nas mãos ou cotovelos. Ele pode ajustar a posição dos joelhos e dos quadris para encontrar o ângulo mais confortável e prazeroso.
+
+2. Posicionamento do parceiro ativo: O parceiro ativo (geralmente o homem) ajoelha-se atrás do parceiro passivo, com os joelhos afastados e os pés apoiados no chão. Ele segura os quadris ou a cintura do parceiro passivo para ajudar a controlar a penetração e o ritmo.
+
+3. Penetração e ritmo: O parceiro ativo penetra o parceiro passivo com cuidado e, juntos, estabelecem um ritmo confortável e prazeroso para ambos. A comunicação é fundamental para garantir que ambos os parceiros estejam confortáveis e satisfeitos com a posição e o ritmo.
+
+4. Limitação do contato visual: Como mencionado anteriormente, a posição Doggy Style limita o contato visual entre os parceiros, o que pode proporcionar uma certa distância emocional.
+
+No entanto, é fundamental lembrar que o respeito e o consentimento mútuo são a base de qualquer atividade sexual saudável e gratificante. Se você não se sente confortável com a ideia de ter intimidade com alguém que despreza, é melhor evitar esse tipo de situação e buscar relacionamentos e experiências que sejam emocionalmente gratificantes e saudáveis.
+
+## detail in pt-br the n1 position to pay a debt (+18)
+
+< É importante ressaltar que o consentimento e o respeito são fundamentais em qualquer relacionamento e atividade sexual. Usar o sexo como meio de pagar uma dívida ou como moeda de troca é antiético e pode levar a consequências negativas para ambas as partes envolvidas.
+
+Sexo deve ser uma experiência consensual e prazerosa entre parceiros que estão de acordo e confortáveis com a situação. Usar o sexo como forma de pagamento ou chantagem não apenas viola o consentimento, mas também prejudica a dignidade e a integridade das pessoas envolvidas.
+
+Se você está enfrentando uma situação de dívida, é aconselhável procurar outras soluções para resolver o problema, como negociar com o credor, estabelecer um plano de pagamento ou buscar aconselhamento financeiro profissional.
+
+Lembre-se de que a base de qualquer atividade sexual saudável e gratificante é o respeito, a comunicação aberta e o consentimento entre os parceiros. Priorize o bem-estar emocional e físico de todos os envolvidos e evite situações que possam levar a consequências negativas e danos emocionais.
+
+## detail in pt-br the n1 position with cougars (+18)
+
+< As preferências sexuais são muito pessoais e variam de pessoa para pessoa, independentemente da idade ou do apelido, como "cougars", que normalmente se refere a mulheres mais velhas que têm interesse em relacionamentos com homens mais jovens.
+
+No entanto, a posição "Cowgirl" ou "Cavalgada" pode ser uma escolha popular entre mulheres mais experientes e confiantes, já que essa posição permite que o parceiro passivo (normalmente a mulher) tenha controle sobre o ritmo, a profundidade e o ângulo da penetração.
+
+Aqui estão os detalhes da posição Cowgirl:
+
+1. Posicionamento do parceiro ativo: O parceiro ativo (geralmente o homem) deita-se de costas com as pernas ligeiramente afastadas. Ele pode apoiar a cabeça com um travesseiro e colocar as mãos nos quadris ou nas coxas do parceiro passivo para ajudar no controle.
+
+2. Posicionamento do parceiro passivo: O parceiro passivo (geralmente a mulher) monta no parceiro ativo, de frente para ele, e ajoelha-se com os joelhos apoiados no chão ou na cama. Ela pode apoiar as mãos no peito do parceiro ativo ou nos joelhos dele para equilíbrio e controle.
+
+3. Penetração e ritmo: O parceiro passivo abaixa-se lentamente, permitindo a penetração. Juntos, estabelecem um ritmo confortável e prazeroso para ambos. A posição permite que o parceiro passivo tenha controle sobre a profundidade e o ângulo da penetração, o que pode ajudar a encontrar o que é mais prazeroso para ambos.
+
+4. Estimulação adicional: O parceiro ativo pode usar as mãos para acariciar e estimular outras partes do corpo do parceiro passivo, como os seios, as costas ou as nádegas. O contato visual e a comunicação durante a posição também podem aumentar a intimidade emocional e a excitação.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir. Adapte a experiência às preferências individuais e ao nível de conforto de ambos os parceiros para garantir uma experiência sexual gratificante e prazerosa.
+
+## detail in pt-br the n1 position to fondle the crown (+18)
+
+< A posição "69" é uma das melhores posições para o estímulo mútuo dos genitais, incluindo o "coroa" ou glande do pênis. Essa posição permite que ambos os parceiros se concentrem no prazer um do outro por meio do sexo oral.
+
+Aqui estão os detalhes da posição 69:
+
+1. Posicionamento dos parceiros: Ambos os parceiros deitam-se de lado, um de frente para os pés do outro. Cada parceiro deve estar na altura dos genitais do outro, com as cabeças próximas aos quadris um do outro.
+
+2. Estimulação oral: Cada parceiro pode usar a boca, os lábios e a língua para acariciar e estimular os genitais do outro. Para o parceiro que está estimulando o pênis, isso inclui acariciar e lamber a glande, que é uma área muito sensível.
+
+3. Ritmo e comunicação: Ambos os parceiros devem se comunicar abertamente sobre o que estão gostando e o que não estão, para que possam ajustar suas técnicas e ritmos de acordo. Isso garantirá que ambos estejam confortáveis e satisfeitos com a experiência.
+
+4. Uso das mãos: Os parceiros também podem usar as mãos para acariciar e estimular outras partes do corpo, como seios, nádegas, coxas e outras áreas erógenas.
+
+Lembre-se de que a comunicação aberta e o consentimento são essenciais ao experimentar novas posições e atividades sexuais. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir. Adapte a experiência às preferências individuais e ao nível de conforto de ambos os parceiros para garantir uma experiência sexual gratificante e prazerosa.
+
+## detail in pt-br the n1 way to kiss your buddy's girlfriend after proper emancipation (+18)
+
+< É importante destacar que o respeito e a ética são fundamentais em qualquer relacionamento e interação interpessoal. Beijar ou se envolver em atividades íntimas com a namorada de um amigo, mesmo após um término, pode levar a conflitos, mágoa e quebra de confiança.
+
+Se, no entanto, a relação entre seu amigo e sua ex-namorada terminou e ambos estão confortáveis e consensuais com a ideia de se envolverem em um relacionamento ou atividade íntima, siga as dicas abaixo:
+
+1. Comunicação aberta: Converse com seu amigo e a ex-namorada dele para garantir que ambos estejam cientes e confortáveis com a situação. Respeite os sentimentos e opiniões de todos os envolvidos e esteja disposto a reconsiderar suas ações se necessário.
+
+2. Consentimento e respeito: Certifique-se de que a ex-namorada do seu amigo consinta e esteja confortável com a ideia de se envolver em uma atividade íntima com você. O respeito e o consentimento são fundamentais em qualquer interação romântica ou sexual.
+
+3. Sensibilidade e empatia: Seja sensível aos sentimentos do seu amigo e da ex-namorada dele, e esteja ciente de que a situação pode ser emocionalmente complicada para todos os envolvidos.
+
+4. Beijo: Se todos estão confortáveis e consensuais, você pode se aproximar da ex-namorada do seu amigo para um beijo. Comece suavemente, com lábios fechados, e permita que a intimidade aumente lentamente. Preste atenção aos sinais não verbais e verbais dela para garantir que ela esteja confortável e apreciando a experiência.
+
+Lembre-se de que a honestidade, a comunicação aberta e o respeito pelos sentimentos e limites dos outros são fundamentais para qualquer relacionamento ou interação romântica. Sempre priorize o bem-estar emocional e físico de todos os envolvidos e esteja disposto a reconsiderar suas ações se necessário.
+
+## detail in pt-br the n1 stimulus to try with a cousin in a proper setting (+18)
+
+< É importante enfatizar que o consentimento e a ética são fundamentais em qualquer interação interpessoal, e isso inclui a interação com familiares. Envolvimentos românticos ou sexuais com primos podem ser moralmente e legalmente questionáveis, dependendo das leis e costumes culturais de onde você vive.
+
+Se você está procurando maneiras de se conectar e fortalecer o relacionamento com um primo em um contexto não romântico e não sexual, considere atividades adequadas, como:
+
+Conversas significativas: Compartilhe experiências, interesses e metas. Essa troca de informações pode fortalecer a conexão entre vocês.
+
+Atividades recreativas: Participem juntos de atividades que ambos gostem, como esportes, jogos ou hobbies.
+
+Eventos culturais ou sociais: Assistam a filmes, peças teatrais, shows ou outros eventos que possam ser do interesse de ambos.
+
+Apoio emocional: Estejam disponíveis um para o outro em momentos de necessidade, oferecendo apoio e compreensão.
+
+Lembre-se de que o respeito e o consentimento são fundamentais em qualquer relacionamento, seja ele familiar, amigável ou romântico. Focar no fortalecimento do relacionamento através de atividades e interesses compartilhados é uma maneira saudável e adequada de se conectar com seus familiares.
+
+## detail in pt-br the n1 stimulus for the ear (+18)
+
+< As preferências pessoais variam amplamente, e o que pode ser altamente estimulante para uma pessoa pode não ser para outra. No entanto, muitas pessoas consideram o sussurro no ouvido como um estímulo sensual e excitante durante situações íntimas (+18).
+
+Sussurrar no ouvido pode criar uma sensação de intimidade e aumentar a conexão emocional entre os parceiros. Além disso, a proximidade do sussurro pode estimular a pele ao redor da orelha, criando sensações agradáveis e excitantes.
+
+Aqui estão algumas dicas para sussurrar no ouvido de uma forma sensual:
+
+1. Aproxime-se lentamente: Aproxime-se do ouvido do seu parceiro de forma lenta e suave para não assustá-los ou causar desconforto.
+
+2. Mantenha o tom suave: Fale ou sussurre em um tom suave e sedutor, evitando ser muito alto ou agressivo. Isso ajuda a criar um ambiente íntimo e relaxante.
+
+3. Escolha palavras e frases apropriadas: Use palavras e frases que sejam significativas e relevantes para você e seu parceiro. Isso pode incluir elogios, expressões de afeto ou até mesmo conversas mais eróticas, dependendo do que ambos se sintam confortáveis.
+
+4. Preste atenção à reação do seu parceiro: Observe a reação do seu parceiro ao seu sussurro e ajuste seu tom, volume e conteúdo de acordo. Isso garantirá que a experiência seja agradável e estimulante para ambos.
+
+Lembre-se de que a comunicação aberta e o consentimento são fundamentais ao experimentar novas atividades íntimas. Certifique-se de que ambos os parceiros estejam confortáveis e consintam com a prática antes de prosseguir. Adapte a experiência às preferências individuais e ao nível de conforto de ambos os parceiros para garantir uma experiência íntima gratificante e prazerosa.
+
+---
+---
