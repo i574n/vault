@@ -12,7 +12,7 @@ style: height:50vh
 
 ---
 
-The Duffer Brothers Teach Developing an Original TV Series
+MasterClass - The Duffer Brothers Teach Developing an Original TV Series
 
 ```custom-frames
 urlSuffix: bafybeigwaqgqnugxxdkp2u7q3ag5psrzezzwdvq4us3vgwlygejkhshjlq.ipfs.dweb.link
@@ -60,58 +60,58 @@ frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - David Lynch Teaches Creativity and Film
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeigd4jbiu43oa3yqw6hyuhec2s5473lbbejn5nt3b4o35akjl4koji.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Lewis Hamilton Teaches a Winning Mindset
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeibblbvvm34seo3ezm44254z5qmbc4hprzbklcv76x55jlor34wt4m.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Mariah Carey Teaches the Voice as an Instrument
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeiadt4w5snuh6o2tddp7vepcji3rxpq2k4ajptpdhdwj7bdebjjyee.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Robin Arzon Teaches Mental Strength
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeigcxou6i6y6m37k5szvucrgyofl4stppbrd442brygj3pukr2jgbm.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Donna Farhi Teaches Yoga Foundations
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeiemo766z4egelb6w7grvcobo4kbgncxzdvh2oziwen4e42nedfpvq.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Brandon McMillan Teaches Dog Training
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeihuqdi7d5o65nreqrlggt5woi75la7kmptzf5jvposfnidfed2wky.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+MasterClass - Dan Brown Teaches Writing Thrillers
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeibz6mxa2ymvkhg4tflx6fonwvijgfqwkj3qzssd7apd6xh455tiha.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
