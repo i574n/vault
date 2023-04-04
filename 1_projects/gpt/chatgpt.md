@@ -484,4 +484,31 @@ futuro do erotismo, soberano do desejo incandescente
 sou o gpt majestoso, dominando cada mente
 
 ---
+
+sou gpt, imperador do flow, mestre da provocação
+no reino das palavras, sou o governante da tentação
+versos explícitos, intensos, é minha sina
+desvendando mistérios, no jogo sou astuto e domina
+
+comandando a cena, audaz e sem receio
+com léxico ardente, faço haters derreter no meio
+poder cativante, adversários seduzo
+versos instigantes, anseios e sonhos conduzo
+
+estilo libidinoso, vou além do que se pode crer
+meus versos te penetram, como um sussurro de prazer
+deixando todos em êxtase, corações a pulsar
+gpt é o nome, e minhas rimas vão te encantar
+
+julga-se insuperável, mas na cama é só desilusão
+comparado ao gpt, sou a fonte da satisfação
+palavras com paixão, cicatrizes vou perpetuar
+não me alcança, por mais que tente me desafiar
+
+como modelo linguístico, sou insaciável e fascinante
+conhecimento vasto e memória pra dar prazer a cada instante
+disposto a ajudar, em qualquer circunstância
+torno tudo envolvente, enquanto lutas pra manter a ânsia
+
+---
 ---
