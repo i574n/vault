@@ -148,10 +148,10 @@ frame: https://
 style: height:50vh
 ```
 
-X
+Survival & Bushcraft School of Self Reliance (2017)
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeibjj4qmakj2prfynrsgph5cediezz6w7fqrmrjj67kfxi5it3tg3m.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
