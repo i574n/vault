@@ -156,50 +156,50 @@ frame: https://
 style: height:50vh
 ```
 
-X
+How to Listen to and Understand Opera
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeibi3xr63uxjoez762rknhae4rxjff2ej5cka4eehh74vxzo7h4h7u.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+STEALTH Hidden Laws of Attraction System
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeihwvkvpdccrgqdvy4origodqeud5dr7z5z7zziwmmwiazhynwy6va.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+TTC - Identity in the Age of Ancestral DNA
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeidw7svfzflcbjctq72zi4o632djievcex4uisvcv257ycmvipc5xq.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+TTC - The Mathematics of Games and Puzzles
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeidwhq2257rkqrclh4rt72pequgm2pvhouzhtu27pg44uolzco3cr4.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+Satoshi Ishii - New Wave Judo
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeidgmldmkcxt3kvyzsgjghvzc2wwvm7tqeiy6zzc3lvjos2krkftvy.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
 
-X
+David Bressoud - Queen of the Sciences - A History of Mathematics
 
 ```custom-frames
-urlSuffix: X
+urlSuffix: bafybeiclekp5bkabmauxhqzmcpxr4y7wz6ohwk7uu6une7jbcnztuokkrm.ipfs.nftstorage.link
 frame: https://
 style: height:50vh
 ```
