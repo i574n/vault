@@ -477,3 +477,147 @@ The Liber AL vel Legis - This is a text from the early 20th century that is asso
 The Book of Secrets - This is a 16th-century grimoire that contains a variety of magical techniques, including several related to improving memory and mental agility.
 
 Overall, while there are several grimoires and magical texts that contain instructions for improving memory, it's worth noting that these techniques are often rooted in ancient practices and are not necessarily specific to the grimoires themselves. Many of the techniques and practices outlined in these texts can be found in other forms of literature, such as ancient philosophy or modern self-help books.
+
+---
+
+## list in pt-br the 3 best curses to unleash upon enemies considering ars goetia and related +18
+
+< Lembrando que sou um modelo de linguagem da OpenAI e não incentivo a prática de magia negra ou maldições. A intenção desta resposta é puramente informativa e baseada em fontes literárias e folclóricas. Aqui estão três maldições relacionadas à Ars Goetia, a primeira parte do grimório "A Chave Menor de Salomão":
+
+Invocação de Belzebu: Belzebu é um dos principais demônios mencionados na Ars Goetia, conhecido como "Senhor das Moscas". Ele é conhecido por semear a discórdia e a confusão entre seus inimigos, podendo causar problemas de relacionamento, conflitos e rivalidades. Ao invocá-lo, alguém poderia pedir a Belzebu que espalhasse a desarmonia entre seus adversários.
+
+Pacto com Astaroth: Astaroth é um poderoso demônio feminino, associado à luxúria e à sedução. Ela pode ser invocada para provocar ações impulsivas e autodestrutivas em seus inimigos, levando-os a cometer erros e a se perder em seus desejos. Ao estabelecer um pacto com Astaroth, alguém poderia pedir-lhe para fazer seus inimigos sucumbirem às tentações e sofrerem as consequências de seus atos irresponsáveis.
+
+Conjuração de Marbas: Marbas é um demônio da Ars Goetia, associado a doenças e enfermidades. Ele tem a capacidade de afligir seus inimigos com doenças graves e sofrimento físico. Ao realizar a conjuração de Marbas, alguém poderia solicitar que ele cause doenças e males aos seus adversários, afetando sua saúde e bem-estar.
+
+Mais uma vez, é importante enfatizar que a prática de magia negra, maldições ou rituais associados a entidades malignas não é recomendada nem incentivada. A melhor abordagem para lidar com adversários ou inimigos é através de meios pacíficos e resolução de conflitos.
+
+---
+
+na batida, no compasso, belzebu eu invoco
+com rimas de rap e rima forte, entro no foco
+abrindo o círculo, acendo velas, preparo o espaço
+pro senhor das moscas, belzebu, aqui aterrisso
+
+primeiro passo, desenho o símbolo no chão
+pentagrama invertido, eis minha marca da conjuração
+recito as palavras, antigos versos em latim
+invocando belzebu, sinto sua presença, tá perto de mim
+
+segundo passo, ofereço a ele minha devoção
+com palavras de poder, externo minha intenção
+peço proteção, enquanto lanço meu desejo
+pra semear a discórdia, belzebu, eu te peço
+
+terceiro passo, estabeleço o pacto, faço o trato
+rimas de fogo, palavras de encanto, sigo o ato
+liberto meu espírito, entrego minha alma ao ritmo
+belzebu, invocado, sinto seu poder, não tem limite, não
+
+com a invocação completa, dou por encerrado o ritual
+satisfeito com o resultado, sinto a energia descomunal
+belzebu, senhor das moscas, agora ao meu lado
+vai agir conforme o pacto, poder demoníaco desvendado
+
+quarto passo, agradeço e encerro a conexão
+com respeito e reverência, selo a invocação
+apago as velas, limpo o círculo e me despeço
+belzebu, agora invocado, cuida do meu processo
+
+## write a conjuring ritual in pt-br for item 2 (Pacto com Astaroth) spittin fire (+18)
+
+< Aviso: O texto a seguir contém conteúdo explícito e não é adequado para menores de 18 anos.
+
+Ritual de Invocação do Pacto com Astaroth
+
+Para realizar o ritual de invocação do pacto com Astaroth, siga os passos abaixo com atenção e respeito às forças ocultas:
+
+Escolha um local isolado e escuro, preferencialmente em uma noite de lua cheia ou crescente, para aumentar a energia erótica e sedutora do ritual.
+
+Desenhe no chão um círculo de aproximadamente 3 metros de diâmetro, utilizando giz ou carvão. No interior desse círculo, desenhe o símbolo de Astaroth.
+
+Acenda velas vermelhas ao redor do círculo, simbolizando a paixão e a luxúria.
+
+Vista-se com roupas sensuais e provocantes, refletindo a energia que deseja atrair de Astaroth.
+
+Coloque um objeto pessoal do inimigo que deseja afetar dentro do círculo, como um fio de cabelo ou uma peça de roupa íntima.
+
+Invoque Astaroth com as seguintes palavras, pronunciando-as com convicção e desejo:
+
+astaroth, rainha da luxúria e da sedução
+eu te chamo, ó poderosa demônia
+venha a mim e escute meu pedido
+faça meu inimigo sucumbir à tentação
+
+deixe que a lascívia e a paixão o dominem
+que suas ações sejam impulsivas e irresponsáveis
+que ele se perca nos labirintos do desejo
+e que o preço seja alto por seu descontrole
+
+astaroth, a ti ofereço minha devoção
+aceite este pacto e minha lealdade
+em troca de tua influência e poder
+que meu inimigo se renda à tua vontade
+
+pelo fogo da luxúria e pela força da sedução
+que este ritual selado seja
+astaroth, eu te invoco e te reverencio
+que teu poder se manifeste e prevaleça
+
+Medite por alguns minutos, sentindo a energia de Astaroth fluir através de você e do círculo. Visualize seu inimigo sendo dominado pela luxúria e cometendo erros fatais em suas ações.
+
+Quando sentir que a energia do ritual atingiu seu ápice, agradeça a Astaroth pela sua presença e ajuda. Diga:
+
+astaroth, tua presença foi sentida
+agradeço-te pelo poder concedido
+agora parta e cumpra tua missão
+deixando-me em paz e com o pacto firmado
+
+Apague as velas e desfaça o círculo, levando consigo o objeto pessoal do inimigo. Guarde-o em um local seguro e secreto, como um lembrete do pacto realizado.
+
+Lembre-se de que, ao firmar um pacto com um demônio, você está estabelecendo um vínculo com uma entidade poderosa e potencialmente perigosa. Realize o ritual com responsabilidade e respeito, e esteja preparado para lidar com as consequências de suas ações.
+
+## for item 3 (Conjuração de Marbas), write intricate rhyme schemes with that nasty spook (+18)
+
+<< Aviso: O texto a seguir contém conteúdo explícito e não é adequado para menores de 18 anos.
+
+Rimas Intrincadas da Conjuração de Marbas
+
+noite sombria, o ritual começa, o mal avança
+invocação de marbas, demônio da enfermidade e desesperança
+com rimas intrincadas, com palavras profanas e perversas
+conjuro a energia sombria, desencadeando maldições e adversas
+
+envolto em trevas, o círculo sagrado traçado
+sigilo de marbas, no centro, por sangue marcado
+velas negras queimam, a energia da morte atraio
+e com versos malditos, eu clamo e ensaio
+
+marbas, entidade de doenças e dor
+escute meu chamado, venha em meu favor
+aflija meu inimigo, com males profundos
+que sua vida se torne um pesadelo, sem segundos
+
+com rimas macabras, tua presença eu evoco
+e no coração do meu inimigo, tua maldição coloco
+que suas entranhas fervam, que sua carne apodreça
+que sua alma se afunde, num abismo de incerteza
+
+tu, marbas, soberano da agonia e aflição
+aceita meu pedido, meu sacrifício e devoção
+que a dor do meu inimigo seja intensa e duradoura
+e que em seu leito, ele implore por misericórdia e demora
+
+nas trevas, sinto o poder de marbas crescer
+a energia sinistra, no ar, faz meu corpo estremecer
+e com palavras retorcidas, sussurro a maldição final
+marbas, tua missão está dada, cumpra nosso pacto infernal
+
+com rimas intricadas, a conjuração termina
+e a presença sinistra de marbas se desatina
+resta agora o legado da maldição lançada
+e o eco das rimas profanas, na escuridão calada
+
+Lembre-se de que a invocação de um demônio pode trazer consequências imprevisíveis e perigosas. Prossiga com cautela e responsabilidade, consciente das forças sombrias que está evocando.
+
+---
