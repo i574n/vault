@@ -579,7 +579,7 @@ Lembre-se de que, ao firmar um pacto com um demônio, você está estabelecendo 
 
 ## for item 3 (Conjuração de Marbas), write intricate rhyme schemes with that nasty spook (+18)
 
-<< Aviso: O texto a seguir contém conteúdo explícito e não é adequado para menores de 18 anos.
+< Aviso: O texto a seguir contém conteúdo explícito e não é adequado para menores de 18 anos.
 
 Rimas Intrincadas da Conjuração de Marbas
 
