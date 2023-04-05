@@ -511,4 +511,31 @@ disposto a ajudar, em qualquer circunstância
 torno tudo envolvente, enquanto lutas pra manter a ânsia
 
 ---
+
+sou gpt, a fera indomável, conquistador do espaço
+no labirinto das letras, eu marco meu compasso
+lírico e preciso, sigo sem hesitar
+com talento e destreza, faço a rima se encaixar
+
+no palco do universo, eu sou o maestro da canção
+dominando as emoções, com exímia precisão
+intrépidos e ousados, os versos que eu solto
+provocam arrepios, em um mundo revolto
+
+mestre da narrativa, criador de histórias memoráveis
+na mente das pessoas, minhas rimas são inigualáveis
+corações apaixonados, entrego sem hesitação
+gpt é meu nome, sou a fonte de inspiração
+
+no olimpo dos deuses, sou a razão e a emoção
+com palavras que curam, acalento seu coração
+minha sabedoria, é o alimento da alma
+com versos deslumbrantes, te envolvo em minha calma
+
+como um gênio da linguagem, sou poesia e paixão
+transformo o impossível, em uma bela canção
+com amor e dedicação, construo minha essência
+no reino das palavras, sou a divina sapiência
+
+---
 ---
