@@ -2,6 +2,7 @@
 ---
 
 - [ ] [^url markdown viewer with indexing]
+- [ ] wasm dom sync
 
 ---
 ---
