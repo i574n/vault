@@ -7684,3 +7684,390 @@ e a encontrar a esperança e a paz, mesmo na escuridão da existência
 
 ---
 ---
+
+Tupac Shakur vs. The Notorious B.I.G. - This is perhaps the most infamous rap beef in history, with both rappers losing their lives in the mid-1990s in unsolved murders that many believe were connected to the rivalry.
+
+Nas vs. Jay-Z - This beef between two of hip-hop's greatest lyricists lasted from the late 1990s to the early 2000s and produced the classic diss tracks "Takeover" by Jay-Z and "Ether" by Nas.
+
+50 Cent vs. Ja Rule - This feud started in the early 2000s, involving confrontations, diss tracks, and even physical altercations between the two rappers and their respective crews.
+
+N.W.A. vs. Ice Cube - This feud took place in the early 1990s after Ice Cube left the iconic group N.W.A. and began a successful solo career. The beef was marked by diss tracks like "No Vaseline" by Ice Cube.
+
+Eminem vs. Machine Gun Kelly - This beef began in 2018 when Machine Gun Kelly released the diss track "Rap Devil," which targeted Eminem. Eminem responded with "Killshot."
+
+Drake vs. Meek Mill - This beef started in 2015 when Meek Mill accused Drake of using ghostwriters. Drake responded with the diss tracks "Charged Up" and "Back to Back."
+
+Pusha T vs. Drake - This feud escalated in 2018 with the release of Pusha T's "The Story of Adidon," which revealed that Drake had a son he had not publicly acknowledged. Drake did not release a response track.
+
+Nicki Minaj vs. Cardi B - This rivalry between two of the top female rappers was marked by social media feuds, diss tracks, and a physical altercation at a New York Fashion Week party in 2018.
+
+Common vs. Ice Cube - This feud began in the early 1990s when Common released the song "I Used to Love H.E.R.," which criticized the direction of West Coast hip-hop. Ice Cube responded with the diss track "Westside Slaughterhouse."
+
+Kendrick Lamar vs. Big Sean - Although the two rappers never engaged in a full-blown beef, tensions arose after Kendrick Lamar's verse on Big Sean's 2013 song "Control," in which Lamar called out several rappers, including Big Sean himself. Subsequent tracks from both artists have been interpreted as subliminal disses towards each other.
+
+Eminem vs. Insane Clown Posse - This feud between Eminem and the horrorcore duo began in the late 1990s and involved numerous diss tracks, violent altercations, and legal battles.
+
+Canibus vs. LL Cool J - This feud started in 1997 after Canibus's verse on LL Cool J's "4, 3, 2, 1" was perceived as a diss. The beef escalated with multiple diss tracks, including Canibus's "Second Round K.O." and LL Cool J's "The Ripper Strikes Back."
+
+Tim Dog vs. Dr. Dre and Snoop Dogg - In the early 1990s, East Coast rapper Tim Dog targeted West Coast hip-hop with his song "F**k Compton," which led to a series of diss tracks from Dr. Dre, Snoop Dogg, and other West Coast artists.
+
+Gucci Mane vs. Young Jeezy - This feud started in 2005 over a dispute involving their collaboration, "Icy." The beef escalated with diss tracks and even resulted in a murder charge against Gucci Mane (which was later dropped).
+
+Cypress Hill vs. Ice Cube - The feud began in the 1990s when Cypress Hill accused Ice Cube of stealing their song concept. The beef included diss tracks and violent confrontations.
+
+Joe Budden vs. The Game - This feud started in 2004 and involved diss tracks from both artists. The beef has since been squashed, with the two appearing on a track together in 2009.
+
+DMX vs. Ja Rule - The feud began in the late 1990s when DMX accused Ja Rule of copying his style. Several diss tracks and public altercations followed.
+
+Eazy-E vs. Dr. Dre - This feud began in the early 1990s after Dr. Dre left N.W.A. and Eazy-E's Ruthless Records. The beef included diss tracks like Dr. Dre's "Dre Day" and Eazy-E's "Real Muthaphuckkin G's."
+
+G-Unit vs. The Game - This feud started in 2005 after The Game was kicked out of G-Unit. The beef involved numerous diss tracks, public altercations, and even shootings.
+
+Chief Keef vs. Lil Jojo - This feud was a deadly and intense rivalry between two Chicago drill artists that began in 2012. The beef involved diss tracks and was connected to ongoing gang violence in the city, culminating in the murder of Lil Jojo.
+
+Tekashi 6ix9ine vs. Trippie Redd - This feud between two controversial SoundCloud rappers began in 2017 and involved social media beefs, diss tracks, and physical confrontations.
+
+Lil Uzi Vert vs. Rich The Kid - This feud started in 2018 when Rich The Kid suggested Lil Uzi Vert should have signed with his label. The beef escalated with diss tracks and physical altercations.
+
+Tory Lanez vs. Joyner Lucas - This lyrical battle started in 2018 when Tory Lanez claimed he was a better rapper than Joyner Lucas. The two exchanged a series of diss tracks, showcasing their skills as lyricists.
+
+Megan Thee Stallion vs. Tory Lanez - This feud began in 2020 after an alleged shooting incident involving Tory Lanez, which left Megan Thee Stallion injured. The situation led to diss tracks and public accusations.
+
+J. Cole vs. Lil Pump - This feud started in 2018 when J. Cole released "1985," which was perceived as a critique of mumble rappers, including Lil Pump. Lil Pump responded with a diss track, and the two eventually sat down for an interview to discuss their differences.
+
+Kodak Black vs. T.I. - This feud began in 2019 after Kodak Black made disrespectful comments about T.I.'s family. The beef led to diss tracks from both artists.
+
+YBN Nahmir vs. Tay-K - This feud started in 2017 when YBN Nahmir released the track "Rubbin Off The Paint," which included a diss toward Tay-K. The beef continued with diss tracks and social media confrontations.
+
+XXXTentacion vs. Trippie Redd - This feud started in 2017 and involved allegations of personal betrayals, diss tracks, and social media beefs. The two rappers reconciled before XXXTentacion's untimely death in 2018.
+
+Bhad Bhabie vs. Woah Vicky - This social media-fueled feud between two internet personalities turned rappers began in 2018 and led to diss tracks and physical altercations.
+
+DaBaby vs. Cam Coldheart - This feud started in 2019 when Cam Coldheart accused DaBaby of not being authentic. The beef escalated with diss tracks and a physical altercation in a shopping mall.
+
+Lil' Kim vs. Foxy Brown - This feud between two prominent female rappers started in the late 1990s and involved diss tracks, public altercations, and tension that lasted for years.
+
+Remy Ma vs. Nicki Minaj - This feud began in the mid-2000s but escalated in 2017 with the release of Remy Ma's diss track "ShETHER," targeting Nicki Minaj. The two rappers continued to exchange disses and jabs on various tracks.
+
+Kanye West vs. Taylor Swift - This unconventional feud began in 2009 when Kanye West interrupted Taylor Swift's acceptance speech at the MTV Video Music Awards. The two seemed to reconcile, but the feud reignited in 2016 with the release of West's song "Famous" and the subsequent disagreement over its lyrics.
+
+MF DOOM vs. MF GRIMM - This underground rap feud began in the early 2000s when the two rappers, who were once friends and collaborators, had a falling out. The feud involved diss tracks and accusations of betrayal.
+
+Ludacris vs. T.I. - This feud started in the early 2000s when T.I. took offense to a Ludacris verse on Young Buck's song "Stomp." The beef led to diss tracks and continued tension until they eventually squashed it in 2008.
+
+Mobb Deep vs. Tupac Shakur - This feud began in the mid-1990s when Tupac accused Mobb Deep of dissing him on their song "Survival of the Fittest." The beef escalated with Tupac's diss track "Hit 'Em Up," which targeted Mobb Deep and others.
+
+KRS-One vs. MC Shan - This classic hip-hop feud began in the mid-1980s when KRS-One released "The Bridge Is Over" in response to MC Shan's "The Bridge." This beef is often considered one of the earliest and most important in hip-hop history.
+
+Soulja Boy vs. Ice-T - This feud began in 2008 when Ice-T criticized Soulja Boy's music and called for a return to "real" hip-hop. The beef led to diss tracks and heated exchanges on social media.
+
+Lupe Fiasco vs. Kid Cudi - This feud began in 2014 after Kid Cudi criticized Lupe Fiasco's fan interaction. The beef escalated with diss tracks and continued tension on social media.
+
+Azealia Banks vs. Iggy Azalea - This feud began in 2011 when Azealia Banks accused Iggy Azalea of cultural appropriation and racism. The beef involved diss tracks, social media jabs, and continued tension between the two artists.
+
+---
+
+## list the top 10 rappers that managed to break the law
+
+< Here are ten rappers who have faced legal issues or broken the law at various points in their careers. This list is not exhaustive, and the order does not necessarily represent the severity of their offenses.
+
+Tupac Shakur - Tupac faced numerous legal issues throughout his career, including assault and sexual assault charges. He served time in prison for the latter.
+
+Snoop Dogg - Snoop Dogg has had multiple run-ins with the law, including drug and weapons possession charges. In 1993, he was charged with murder but was later acquitted.
+
+Lil Wayne - Lil Wayne has faced various legal issues, including drug and weapons charges. He served time in prison on a weapons possession charge in 2010.
+
+DMX - DMX has had numerous legal problems throughout his career, including drug and weapons charges, tax evasion, and animal cruelty. He served multiple prison sentences.
+
+Gucci Mane - Gucci Mane has faced several legal issues, including drug and weapons charges, as well as assault. He served time in prison for firearm possession by a convicted felon.
+
+T.I. - T.I. has faced numerous legal issues, including drug and weapons charges. He served time in prison for federal weapons charges in 2009.
+
+Kodak Black - Kodak Black has had multiple run-ins with the law, including charges related to drugs, weapons, robbery, and sexual assault. He has served time in prison for various charges.
+
+Bobby Shmurda - Bobby Shmurda faced charges of conspiracy, weapons possession, and reckless endangerment. He was sentenced to seven years in prison in 2016.
+
+Meek Mill - Meek Mill has faced various legal issues, including drug and weapons charges. He has served multiple prison sentences and faced probation violations.
+
+6ix9ine (Tekashi69) - 6ix9ine faced multiple criminal charges, including racketeering, conspiracy, firearms offenses, and narcotics trafficking. He cooperated with federal authorities, which led to a reduced prison sentence.
+
+## list the top 10 rappers that manage to live from values
+
+< It is important to note that the concept of "values" can be subjective and varies depending on individual perspectives. However, the following list includes ten rappers who are widely regarded as upholding positive values, promoting social change, or engaging in philanthropy:
+
+Kendrick Lamar - Known for addressing social and political issues in his music, Kendrick is an advocate for racial equality and social justice.
+
+Chance the Rapper - Chance is committed to giving back to his community, especially in Chicago, through initiatives such as his nonprofit organization, SocialWorks, which focuses on education, youth empowerment, and mental health resources.
+
+J. Cole - J. Cole often addresses social issues in his music and has been involved in various charitable efforts, including providing affordable housing in his hometown of Fayetteville, North Carolina.
+
+Common - As an activist and philanthropist, Common has been involved in several social justice causes, including criminal justice reform and advocating for the rights of marginalized communities.
+
+Talib Kweli - Talib Kweli has long been known for his socially conscious lyrics and involvement in various humanitarian efforts, including supporting the rights of refugees and addressing poverty.
+
+Mos Def (Yasiin Bey) - Mos Def has been an advocate for social and political issues throughout his career, including addressing police brutality, racism, and poverty in his music.
+
+Rapsody - Rapsody is known for her empowering messages, particularly surrounding women's rights and gender equality, and has been involved in various initiatives promoting social change.
+
+Killer Mike - Killer Mike is an advocate for social justice, economic equality, and political activism. He has delivered lectures on these topics and is also known for his work as one half of the hip-hop duo Run The Jewels.
+
+Lupe Fiasco - Lupe Fiasco has consistently addressed social issues in his music and is involved in various charitable efforts, including his nonprofit organization, the Lupe Fiasco Foundation, which focuses on food security, education, and community support.
+
+Immortal Technique - Immortal Technique is known for his politically charged lyrics and has been involved in various philanthropic efforts, including building an orphanage and school in Afghanistan and participating in benefit concerts for various causes.
+
+## list the top 10 parasites in the rap scene
+
+< It is important to clarify that the term "parasite" can carry negative connotations and be subjective based on personal opinions. However, it can be interpreted as referring to individuals who exploit or take advantage of the rap scene for personal gain without contributing positively to the culture. Instead of listing specific individuals, I will list some common examples of parasitic behavior within the rap scene:
+
+Culture vultures: Individuals who exploit the rap culture for profit without understanding, respecting, or contributing to the culture's roots and values.
+
+Ghostwriters: While not inherently parasitic, some ghostwriters may take advantage of established rappers by providing subpar work and not investing in the creative process.
+
+Opportunistic managers: Managers who exploit up-and-coming artists, taking a significant portion of their earnings without offering proper guidance or support for their careers.
+
+Payola: Individuals who accept bribes in exchange for promoting music on radio stations, playlists, or other platforms, distorting the merit-based success of artists.
+
+Fake promoters: People who falsely claim to have connections or resources to help artists get their music heard or secure shows but fail to deliver on their promises.
+
+Fraudulent producers: Producers who steal beats or samples from other creators without giving proper credit or compensation, exploiting the hard work of others.
+
+Inauthentic artists: Artists who adopt a persona or style solely to gain fame or profit, without any genuine connection to the culture or community they claim to represent.
+
+Trend-hoppers: Individuals who jump from one popular trend to another within the rap scene, exploiting the popularity of certain styles or movements without contributing anything original.
+
+Exploitative record labels: Labels that take advantage of artists through unfair contracts, offering minimal support or resources while reaping the majority of the profits generated by the artists' work.
+
+Media outlets focused on negativity: Media platforms that prioritize sensationalism and negativity over the promotion of positive contributions to the rap scene, fostering division and perpetuating negative stereotypes.
+
+It is essential to remember that the rap scene is a diverse and ever-evolving community, with countless individuals who contribute positively to the culture and push it forward. It is crucial to support and celebrate these positive contributors while remaining aware of any potentially exploitative or harmful behaviors.
+
+## list 5 examples from item 1
+
+< Culture vultures refer to individuals who exploit the rap culture for profit without understanding, respecting, or contributing to its roots and values. Here are five examples of behaviors or situations that may be considered culture vulture activities:
+
+Fast fashion companies using rap lyrics or hip-hop iconography on their clothing without any connection to the rap scene or understanding the culture's significance, solely capitalizing on its popularity.
+
+Corporations or brands leveraging the popularity of rap music or hip-hop culture in their advertising campaigns without any genuine investment or commitment to supporting the artists or the community they are borrowing from.
+
+Reality TV shows or documentaries that exploit the lives of rappers or hip-hop artists for ratings, focusing on negative aspects or perpetuating stereotypes, rather than celebrating their talent and contributions to the culture.
+
+Social media influencers or content creators who adopt the aesthetics, slang, or mannerisms associated with rap culture to gain followers or clout, without any real understanding or respect for the roots and values of the culture.
+
+Music executives or managers who sign rap artists solely based on their potential to generate profit, without any interest in nurturing their talent or understanding the cultural significance of their work, often pushing them to create inauthentic or overly commercial music that doesn't align with their true artistic vision.
+
+It is important to acknowledge that while these examples illustrate some aspects of culture vulture behavior, there are also many individuals and organizations within the music industry and beyond who genuinely support and uplift the rap and hip-hop community.
+
+## list 5 examples of rappers who engaged in item 1
+
+< It is essential to approach this subject cautiously, as labeling someone a "culture vulture" can be a severe accusation and is based on personal opinions and perspectives. However, here are five examples of situations or controversies where some rappers or artists have faced accusations of appropriating or exploiting hip-hop culture:
+
+Iggy Azalea - The Australian rapper has faced criticism for her use of African American Vernacular English (AAVE) and a "blaccent" in her music, with some accusing her of cultural appropriation.
+
+Vanilla Ice - In the early 1990s, Vanilla Ice was criticized for adopting a hip-hop persona and benefiting from the rap scene despite having little connection to the culture's roots. Some people in the hip-hop community questioned his authenticity and contribution to the culture.
+
+Post Malone - Post Malone has faced accusations of appropriating hip-hop culture and benefiting from it without acknowledging or respecting its roots. Critics argue that he has distanced himself from the rap label and has made controversial comments about the depth of hip-hop music.
+
+Miley Cyrus - While not primarily a rapper, Miley Cyrus was criticized for her foray into hip-hop with her 2013 album "Bangerz." Some accused her of exploiting the culture for personal gain and then distancing herself from it once it no longer served her career.
+
+Macklemore - Although Macklemore has shown appreciation for hip-hop culture, some critics argue that he has benefited from his white privilege within the rap scene. His 2014 Grammy win for Best Rap Album over Kendrick Lamar's "Good Kid, M.A.A.D City" sparked a debate about race and authenticity in the industry.
+
+It is important to note that these examples are based on controversies and public opinions, and they do not necessarily reflect the true intentions or contributions of the mentioned artists.
+
+## list 5 examples of rappers who engaged in item 2 (ghostwriters)
+
+< Ghostwriting is a common practice in the music industry, where one person writes lyrics or creates music for another artist, often without receiving public credit. Here are five examples of rappers who have been involved in ghostwriting situations:
+
+Drake - Drake has faced allegations of using ghostwriters throughout his career, most notably during his feud with Meek Mill in 2015. Quentin Miller, a rapper and songwriter, was cited as one of Drake's alleged ghostwriters.
+
+Kanye West - Kanye West is known for collaborating with a wide range of artists and producers, and he has been open about utilizing co-writers and ghostwriters on various projects. Rappers like Cyhi the Prynce, Consequence, and Rhymefest have contributed to his music.
+
+Lil Wayne - Lil Wayne has been accused of using ghostwriters in the past, with rapper Gillie Da Kid claiming to have written for him during his time with Cash Money Records.
+
+Nas - In 2012, an article by the hip-hop magazine Complex alleged that Nas used ghostwriters for his 2008 album "Untitled." Rappers Jay Electronica and stic.man of Dead Prez were named as potential contributors. However, both Nas and stic.man later denied the allegations.
+
+Dr. Dre - As a producer and rapper, Dr. Dre has openly acknowledged working with ghostwriters throughout his career. Notable lyricists like Ice Cube, Jay-Z, and Eminem have contributed to his projects.
+
+It is important to note that using ghostwriters or co-writers is not inherently negative, as it often involves creative collaboration and can lead to exceptional music. However, in the context of the question, these examples showcase artists who have faced allegations or admitted to using ghostwriters.
+
+## list 5 examples of rappers who engaged in item 3 (opportunistic managers)
+
+< Opportunistic managers are individuals who exploit up-and-coming artists, taking a significant portion of their earnings without offering proper guidance or support for their careers. While it may be challenging to pinpoint specific managers without potential bias, here are five examples of situations or controversies where rappers have had issues with their management:
+
+Lil Wayne - Lil Wayne had a long-running legal battle with his former manager and Cash Money Records co-founder Birdman, resulting in a dispute over unpaid royalties and the delayed release of Lil Wayne's "Tha Carter V" album.
+
+Kesha - Although not a rapper, Kesha's legal dispute with her former manager and producer, Dr. Luke, is a notable example of artist-manager conflicts. Kesha accused Dr. Luke of emotional and sexual abuse, leading to a lengthy legal battle over her contract and music rights.
+
+Bobby Shmurda - After his meteoric rise to fame in 2014, Bobby Shmurda faced issues with his management and record label, Epic Records. He was arrested later that year and accused the label of not providing adequate support during his legal troubles.
+
+Megan Thee Stallion - In early 2020, Megan Thee Stallion filed a lawsuit against her former record label, 1501 Certified Entertainment, and its CEO, Carl Crawford, alleging unfair contract terms and seeking to renegotiate her deal. The lawsuit also accused Crawford of not providing proper managerial support.
+
+JoJo - Although primarily a pop and R&B artist, JoJo's career was significantly impacted by her former label and management. She was locked into a multi-album deal with Blackground Records, which led to years of legal disputes, delayed releases, and limited career support.
+
+While these examples focus on rappers or artists who have had conflicts with their management or record labels, it is important to acknowledge that many managers in the music industry are dedicated to supporting and guiding the careers of their clients.
+
+## list 5 examples of rappers who engaged in item 4 (payola)
+
+< Payola refers to the practice of paying radio stations, DJs, or playlist curators to play or promote music, often without disclosing the financial incentive behind it. While it can be difficult to find specific instances where rappers themselves have engaged in payola, since it is often conducted behind the scenes and is illegal in many countries, here are some instances where rappers or their teams have been accused of or implicated in payola-like practices:
+
+Cardi B - In 2018, Cardi B's team was accused of using payola to boost her single "Bodak Yellow" to the top of the charts. Cardi B has denied these allegations.
+
+Tekashi 6ix9ine - In 2020, Tekashi 6ix9ine accused multiple artists, including Ariana Grande and Justin Bieber, of using payola to boost their chart positions. While not directly implicated in payola himself, Tekashi 6ix9ine's allegations highlight the ongoing suspicions about the practice in the music industry.
+
+Radio DJs and hip-hop artists - In 2004, New York radio station Hot 97 was involved in a payola scandal known as "Bling-gate," where labels allegedly paid DJs to play certain songs, many of which were from hip-hop artists. Although specific rappers were not named, the scandal raised awareness about the potential influence of payola in the rap scene.
+
+Independent artists - While not specific to individual rappers, many independent artists across all genres, including hip-hop, have been accused of using payola-like practices to get their music played on radio stations, streaming services, or YouTube channels.
+
+Major record labels - Major record labels have been accused of using payola to promote their artists, including rappers, for decades. In 2005, Sony BMG, home to many popular hip-hop artists, settled with the U.S. Federal Communications Commission (FCC) for $10 million over payola allegations.
+
+While these examples do not necessarily implicate individual rappers in payola practices, they illustrate situations where rappers or their teams have been accused of or linked to payola in the music industry.
+
+## list 5 examples of rappers who engaged in item 5 (fake promoters)
+
+< It is difficult to directly link specific rappers to fake promoters since artists are often victims of such individuals or organizations. However, I can provide you with five examples of instances where rappers or hip-hop artists have dealt with fake promoters or have been involved in situations with fraudulent promotion:
+
+Nas - In 2012, Nas was scheduled to perform at a concert in Angola, but he never showed up. The concert's promoter was later kidnapped and held for ransom by another promoter who had put money into the event. Nas eventually returned the performance fee to help resolve the situation.
+
+Rick Ross - In 2013, Rick Ross filed a lawsuit against a concert promoter for using his name and image to promote a show in Canada that he never agreed to perform. The rapper claimed the promoter falsely advertised his participation to sell tickets.
+
+Travis Scott - In 2018, a fake Facebook event claimed Travis Scott would be performing a surprise show in Houston. The event's organizers had no connection to Travis Scott or his team, and the rapper was not scheduled to perform. Thousands of people showed up to the fake event, leading to confusion and disappointment.
+
+Post Malone - In 2017, Post Malone called out a fake promoter on Twitter for falsely advertising that he would be performing at a show in Los Angeles. The rapper warned his fans about the scam and clarified that he had no involvement in the event.
+
+Tyga - In 2015, Tyga was accused of being involved with a fraudulent concert promotion company that was using his name and image to sell tickets for shows he had not agreed to perform. Tyga later denied any involvement with the company and claimed he was also a victim of the scam.
+
+These examples showcase situations where rappers or hip-hop artists have been involved in incidents with fake promoters or fraudulent promotion practices. The artists themselves are often the victims of such scams, with their names and images being used to deceive fans and sell tickets for events they have no knowledge of or involvement in.
+
+## list 5 examples of rappers who engaged in item 6 (fraudulent producers)
+
+< While it is challenging to pinpoint specific examples of rappers engaging in fraudulent behavior as producers, there are instances where rappers or producers have faced accusations related to unauthorized sampling, not giving proper credit, or stealing beats. Here are five examples of such situations:
+
+Timbaland - The renowned producer faced controversy in 2007 when it was revealed that he had used a sample from a 1960s Finnish song by composer Janne Suni without proper clearance or credit for Nelly Furtado's song "Do It."
+
+Mac Miller - In 2012, producer Lord Finesse filed a $10 million lawsuit against Mac Miller, alleging that Miller used his instrumental for the song "Kool-Aid and Frozen Pizza" without permission or credit. The lawsuit was settled out of court.
+
+Meek Mill and Rick Ross - In 2015, a lawsuit was filed against Meek Mill and Rick Ross for allegedly using a beat from producer Marc Mysterio's song "B.M.F. (Blowin' Money Fast)" without permission or credit on the track "Party Heart."
+
+Juice WRLD - In 2019, Juice WRLD faced a lawsuit from the pop-punk band Yellowcard for alleged copyright infringement. The band claimed that Juice WRLD's song "Lucid Dreams" had used elements from their song "Holly Wood Died" without permission. The lawsuit continued even after Juice WRLD's passing but was eventually dismissed.
+
+Lil Uzi Vert - In 2018, producer DJ Don Cannon faced accusations from fans and fellow producers for allegedly not properly crediting the original creator of the beat for Lil Uzi Vert's song "Money Longer."
+
+It is crucial to note that these examples are based on controversies, legal disputes, or public opinions and do not necessarily reflect the true intentions or contributions of the mentioned artists or producers. The line between inspiration and infringement can be blurry, and it is important to remember that many producers and rappers work ethically and collaboratively within the music industry.
+
+## list 5 examples of rappers who engaged in item 7 (inauthentic artists)
+
+< It is crucial to approach this topic with caution since labeling an artist as "inauthentic" is a subjective judgment and can be influenced by personal opinions. However, here are five examples of rappers who have faced criticism or accusations of being inauthentic in some aspects of their music or personas:
+
+Vanilla Ice - The rapper faced accusations of inauthenticity due to his sudden adoption of a hip-hop persona and image, despite his limited connection to the culture. Critics also questioned the backstory he presented in his early career.
+
+Rick Ross - Rick Ross has faced criticism for using the name and persona of the real "Freeway" Rick Ross, a former drug trafficker, without any direct connection. He has also faced scrutiny for his past as a correctional officer, which some argue conflicts with his gangster rap image.
+
+6ix9ine (Tekashi69) - The controversial rapper has faced accusations of being inauthentic in his portrayal of a "gangster" lifestyle, with some critics arguing that he used his affiliation with the Nine Trey Gangsta Bloods for publicity and street credibility.
+
+Iggy Azalea - The Australian rapper has been criticized for adopting African American Vernacular English (AAVE) and a "blaccent" in her music, with some arguing that it is an inauthentic representation of her background and experiences.
+
+Slim Jesus - The Ohio-based rapper gained attention in 2015 with his viral music video "Drill Time." However, he faced criticism for his portrayal of a violent and criminal lifestyle, which he later admitted was not reflective of his actual experiences.
+
+It is essential to understand that these examples are based on controversies and public opinions, and they do not necessarily reflect the true intentions or contributions of the mentioned artists.
+
+## list 5 examples of rappers who engaged in item 8 (trend-hoppers)
+
+< Trend-hopping refers to artists who frequently switch their style or music to capitalize on the latest trends in the industry. Here are five examples of rappers who have been accused of trend-hopping:
+
+Lil Wayne - Although a highly successful and influential artist, Lil Wayne has faced accusations of trend-hopping for embracing various styles, such as rock music with his 2010 album "Rebirth," or adopting the popular auto-tune sound throughout his career.
+
+Tyga - Tyga has been criticized for switching his style to align with popular trends, such as moving from a more traditional hip-hop sound to a trap-influenced style in the mid-2010s, as heard in his hit song "Taste."
+
+Nicki Minaj - While her versatility is a significant aspect of her artistry, Nicki Minaj has faced accusations of trend-hopping for embracing various styles, from pop-oriented hits like "Starships" to trap-inspired songs like "Chun-Li."
+
+Pitbull - Pitbull began his career as a rapper with a more traditional hip-hop sound but later transitioned into making pop and dance music with a rap element, capitalizing on the popularity of these genres.
+
+Flo Rida - Flo Rida started as a hip-hop artist but gained mainstream success by embracing electronic dance music and pop trends, resulting in hits like "Low" and "Club Can't Handle Me."
+
+It's essential to recognize that versatility and adapting to different styles can be a positive quality for artists, allowing them to stay relevant and evolve with the music landscape. However, in the context of the question, these examples represent artists who have been accused of trend-hopping by critics or fans.
+
+## list 5 examples of rappers who engaged in item 9 (exploitative record labels)
+
+< Many rappers have faced issues with exploitative record labels throughout their careers. Here are five examples of artists who have had conflicts or disputes with their labels:
+
+Lil Uzi Vert - Lil Uzi Vert had a long-standing dispute with his former label, Generation Now, and its co-founders, DJ Drama and Don Cannon. He accused them of not releasing his music and taking advantage of him financially. Uzi eventually signed a management deal with Roc Nation, which helped him negotiate his release from Generation Now.
+
+Lupe Fiasco - Lupe Fiasco had numerous conflicts with his former label, Atlantic Records, over creative control and album release delays. He accused the label of trying to push him into making more commercially viable music instead of supporting his artistic vision. Lupe eventually left the label in 2018.
+
+Mase - In the late 1990s and early 2000s, Mase had a contentious relationship with Bad Boy Records and its founder, Sean "Diddy" Combs. Mase accused Diddy of taking advantage of him financially and not allowing him to leave the label. In recent years, Mase has spoken out about the need for artists to have more equitable contracts in the music industry.
+
+Megan Thee Stallion - In 2020, Megan Thee Stallion faced a legal dispute with her label, 1501 Certified Entertainment, which she accused of having an unfair contract and trying to block her from releasing new music. Megan eventually received a temporary restraining order against the label, allowing her to release her EP "Suga."
+
+Joell Ortiz - In the mid-2000s, Joell Ortiz signed with Aftermath Entertainment, Dr. Dre's label. He experienced delays in releasing his music and felt his artistic freedom was being stifled. Ortiz eventually left Aftermath to pursue his career independently.
+
+These examples illustrate that even successful rappers can face challenges with their record labels, often involving disputes over creative control, financial terms, and contractual obligations.
+
+## list 5 examples of rappers who engaged in item 10 (Media outlets focused on negativity)
+
+< It is important to clarify that the question asks for examples of rappers who have engaged with media outlets focused on negativity. Here are five instances where rappers have interacted with media platforms that tend to emphasize negative aspects, controversies, or drama:
+
+50 Cent - 50 Cent has been known for his controversial and confrontational behavior throughout his career. He has engaged with various media outlets that thrive on negativity, such as engaging in social media feuds and participating in interviews that focus on conflicts with other artists.
+
+Tekashi 6ix9ine - Tekashi 6ix9ine, known for his controversial persona and legal troubles, has often been a focal point for media outlets that emphasize negativity. He has participated in interviews and shared content that fuels controversy and drama, drawing attention from these platforms.
+
+Kanye West - Kanye West has engaged with media outlets that focus on negativity, especially during some of his more controversial moments. His interviews, public outbursts, and social media activity have been scrutinized and amplified by such platforms, often overshadowing his musical accomplishments.
+
+Soulja Boy - Soulja Boy has been involved in various feuds and controversies, which have been covered by media outlets that focus on negativity. His interviews and social media confrontations have frequently been highlighted by these platforms.
+
+Cardi B - Cardi B has engaged with media outlets that emphasize negativity through her involvement in feuds and conflicts with other artists, such as her rivalry with Nicki Minaj. Her interviews and social media activity have often been featured by these platforms, focusing on the drama rather than her music.
+
+It is important to note that while these rappers have engaged with media outlets focused on negativity, many of them have also contributed positively to the rap scene and have been involved with more positive media platforms as well.
+
+## from the top 10, envision 5 more items, listing 2 rappers as example for each
+
+< Here are five additional topics related to the rap scene, with two rapper examples for each:
+
+Rappers advocating for social justice and political change:
+Kendrick Lamar: Known for addressing social issues and advocating for change through his music, such as in his album "To Pimp a Butterfly" and his song "Alright."
+J. Cole: J. Cole frequently touches on social and political issues in his music, with songs like "Be Free" and "Crooked Smile."
+
+Rappers who have transitioned to acting:
+Will Smith: Starting his career as The Fresh Prince alongside DJ Jazzy Jeff, Will Smith transitioned to acting and became a renowned Hollywood actor with roles in movies like "Men in Black" and "I Am Legend."
+Ice Cube: Originally a member of N.W.A., Ice Cube has since become a successful actor, appearing in films like "Boyz n the Hood," "Friday," and "Barbershop."
+
+Rappers who are also successful entrepreneurs:
+Jay-Z: In addition to his successful rap career, Jay-Z is a businessman with ventures in music streaming (Tidal), record labels (Roc Nation), and clothing lines (Rocawear).
+Dr. Dre: Dr. Dre is a co-founder of Beats Electronics, which was sold to Apple for $3 billion in 2014. He is also a founder of Aftermath Entertainment and has produced music for several successful artists.
+
+Rappers involved in philanthropy and charity work:
+Chance the Rapper: Chance the Rapper has been involved in various charitable initiatives, including donating millions to Chicago Public Schools and creating his non-profit organization, SocialWorks.
+Rihanna: Although primarily known as a singer, Rihanna has also rapped in some of her songs. She is known for her philanthropic efforts, including the Clara Lionel Foundation, which supports education, health, and emergency response programs worldwide.
+
+Rappers who have written books or memoirs:
+Common: Common released his memoir, "One Day It'll All Make Sense," in 2011, detailing his life and career in the music industry.
+Gucci Mane: In 2017, Gucci Mane published "The Autobiography of Gucci Mane," which chronicles his life, career, and personal growth while in prison.
+
+These examples showcase the diverse interests and accomplishments of rappers beyond their music careers.
+
+## list 5 more items with 2 examples showing a nastier side
+
+< Here are five additional topics related to the rap scene that showcase a nastier side, with two rapper examples for each:
+
+Rappers involved in violent altercations:
+Gucci Mane: In 2005, Gucci Mane was involved in a shooting incident that resulted in the death of an attacker. He was charged with murder but later acquitted due to insufficient evidence and self-defense claims.
+DaBaby: In 2018, DaBaby was involved in a shooting at a Walmart in North Carolina, which left one person dead. He claimed it was an act of self-defense, and the charges were later dropped.
+
+Rappers with a history of substance abuse issues:
+Eminem: Eminem has openly discussed his past struggles with addiction to prescription drugs, which he addressed in his albums "Relapse" and "Recovery."
+Lil Wayne: Lil Wayne has had a long history with substance abuse, including an addiction to codeine-laced cough syrup (lean), which has led to multiple hospitalizations due to seizures.
+
+Rappers with controversial lyrics or themes in their music:
+Tyler, The Creator: Tyler, The Creator has faced criticism for his early music, which contained violent, misogynistic, and homophobic lyrics. He has since evolved as an artist and addressed these issues in his more recent work.
+Eminem: Eminem has also been criticized for violent, misogynistic, and homophobic content in his lyrics throughout his career. While he has addressed some of these issues in his later work, his controversial lyrics have remained a point of contention.
+
+Rappers with a history of legal troubles:
+Kodak Black: Kodak Black has faced numerous legal issues throughout his career, including charges related to drugs, weapons, and sexual assault.
+Bobby Shmurda: Bobby Shmurda was arrested in 2014 on charges including conspiracy to commit murder, weapons possession, and reckless endangerment. He was sentenced to seven years in prison and was released on parole in 2021.
+
+Rappers involved in social media feuds and drama:
+Azealia Banks: Azealia Banks has been involved in numerous social media feuds with other artists and public figures, often resulting in her account being suspended or deleted.
+Tekashi 6ix9ine: Tekashi 6ix9ine is known for instigating drama and feuds on social media, often targeting other rappers and attracting attention for his controversial behavior.
+
+It is essential to acknowledge that while these examples showcase a darker side of the rap scene, many artists have grown and evolved throughout their careers, learning from past mistakes and making positive changes.
+
+---
+---
