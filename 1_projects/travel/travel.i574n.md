@@ -62,6 +62,72 @@ R$ 30,80
 
 -
 
++5 vendidos
+Conjunto Capa De Chuva Givi Impermeável Nylon Motoboy Moto
+R$ 441,70
+
+4 vendidos
+Capa De Chuva Givi Preta Moto Impermeável
+R$ 399
+
++1000 vendidos
+Capa Chuva Motoqueiro Couro Sintético Flex Todos Tamanhos
+R$ 144,90
+
+-
+
+4 vendidos
+Carregador Energia Solar Usb Celular Portátil De 150w + Nf
+R$ 759
+
+4 vendidos
+Carregador Energia Solar Usb Celular Portátil De 100w + Nf (1)
+R$ 599
+
++5 vendidos
+Carregador Portátil Power Bank 99000mah Energia Solar No Br (2)
+R$ 598
+
++5 vendidos
+Carregador Portátil Por Indução Solar Power Bank 80.000mah
+R$ 549,99
+
++5 vendidos
+Painel Solar Portátil Dobrável Trekking Montanhismo Bike Edc (3)
+R$ 374,25
+
++100 vendidos
+Carregador Solar Portátil 60w (4)
+R$ 266,95
+
+2 vendidos
+Painel Solar Usb Dobrável 70w Cell Solar Cell Portable Foldi
+R$ 246,65
+
++5 vendidos
+Painel Solar 10w Portátil Dobrável C/ 2 Saídas Usb - Marrom
+R$ 230,47
+
+-
+
++100 vendidos
+Luva X11 Dry Supertech Impermeavel Moto Motoqueiro
+R$ 259,63
+
++100 vendidos
+Luva X11 Dry Supertech Impermeavel Moto Motoqueiro
+R$ 273,30
+
++500 vendidos
+Luva X11 Dry Supertech Moto Impermeável Com Limpador Viseira
+R$ 277,10
+
++10mil vendidos
+Luva X11 Blackout Motoqueiro Moto Motociclista Proteção Full
+R$ 109,90
+
+-
+
 +25 vendidos
 Calça Motociclista Tutto Moto Alumi Impermeável
 R$ 1.209
@@ -113,39 +179,6 @@ R$ 199,90
 -
 
 +100 vendidos
-Luva X11 Dry Supertech Impermeavel Moto Motoqueiro
-R$ 259,63
-
-+100 vendidos
-Luva X11 Dry Supertech Impermeavel Moto Motoqueiro
-R$ 273,30
-
-+500 vendidos
-Luva X11 Dry Supertech Moto Impermeável Com Limpador Viseira
-R$ 277,10
-
-+10mil vendidos
-Luva X11 Blackout Motoqueiro Moto Motociclista Proteção Full
-R$ 109,90
-
--
--
-
-+5 vendidos
-Conjunto Capa De Chuva Givi Impermeável Nylon Motoboy Moto
-R$ 441,70
-
-4 vendidos
-Capa De Chuva Givi Preta Moto Impermeável
-R$ 399
-
-+1000 vendidos
-Capa Chuva Motoqueiro Couro Sintético Flex Todos Tamanhos
-R$ 144,90
-
--
-
-+100 vendidos
 Bota Motociclista Texx Adventure V2 Impermeável
 R$ 1.148
 
@@ -186,6 +219,60 @@ R$ 325
 -
 
 +5 vendidos
+Intercomunicador Bluetooth Capacetes - Motocom Prime Fm Par
+R$ 2.150
+
++500 vendidos
+Par Comunidadores De Capacete V8 C/ Controle Remoto Guidão
+R$ 1.090
+
++50 vendidos (1)
+Par De Comunicadores Ejeas E6 Plus C/ 2 Controles De Guidão
+R$ 1.020
+
++100 vendidos (2)
+Par De Intercomunicador Q7 Evolução Do Comunicador V6 E E6
+R$ 800
+
++500 vendidos (1)
+Par De Comunicador Q7 Quick 7 Com Rádio Fm
+R$ 800
+
++100 vendidos
+Par De Intercomunicador E6 Ejeas.
+R$ 750
+
++25 vendidos
+Par De Comunicador Ejeas Q7 Quick 7 Moto Capacete Rádio Fm
+R$ 710,22
+
++50 vendidos (3)
+Par De Intercomunicadores De Capacete Comunicador V6 Plus
+R$ 643,50
+
++5 vendidos
+Par De Intercomunicador Ejeas - V6 Pro - Caixa C/02 Unidades
+R$ 624,90
+
++50 vendidos
+Par Intercomunicador Capacete Comunicador Moto V6 Qualidade
+R$ 588,90
+
++1000 vendidos
+Intercomunicador Capacete Comunicador Moto V6 Promoção!
+R$ 562,50
+
++50 vendidos (2)
+Fone E Intercom. Bluetooth Freedconn Tcom Capacete Moto
+R$ 401,40
+
++100 vendidos
+Fone Bluetooth Hedset Para Capacete Motociclista Gps Musica
+R$ 169
+
+-
+
++5 vendidos
 Mochila Notebook Impermeável Resistente Moto
 R$ 386,99
 
@@ -200,16 +287,6 @@ R$ 316,70
 +50 vendidos
 Mochila Aerodinamica Harley Davidson 100% Impermeável
 R$ 309,99
-
--
-
-+500 vendidos
-Jaqueta Motoqueiro Masculina Texx Ronin X11 Impermeável Full
-R$ 419,30
-
-+100 vendidos
-Jaqueta Moto X11 Super Air Ventilada Proteção Masculina
-R$ 394,99
 
 ---
 ---
