@@ -8069,5 +8069,311 @@ Tekashi 6ix9ine: Tekashi 6ix9ine is known for instigating drama and feuds on soc
 
 It is essential to acknowledge that while these examples showcase a darker side of the rap scene, many artists have grown and evolved throughout their careers, learning from past mistakes and making positive changes.
 
+## list 5 more items with 2 examples showing the bottom of the bottom
+
+< Here are five additional topics related to the rap scene that showcase the "bottom of the bottom," with two rapper examples for each:
+
+Rappers who have been accused of domestic violence or abuse:
+XXXTentacion: The late rapper XXXTentacion faced serious allegations of domestic violence and abuse against his ex-girlfriend, which were pending at the time of his death in 2018.
+Dr. Dre: Dr. Dre has a history of violence against women, including a well-documented assault on journalist Dee Barnes in 1991. He has since apologized for his past behavior.
+
+Rappers with a history of inciting violence at their shows or events:
+Travis Scott: Travis Scott has been criticized for inciting chaos and encouraging dangerous behavior at his concerts, culminating in the tragic Astroworld Festival incident in 2021, where 10 people died and many others were injured.
+Tekashi 6ix9ine: Tekashi 6ix9ine has a history of inciting violence and altercations at his events, which has led to injuries and arrests.
+
+Rappers who have engaged in feuds that led to tragic outcomes:
+Tupac Shakur: Tupac's feud with The Notorious B.I.G. is one of the most infamous rap beefs in history. Both rappers lost their lives in unsolved murders believed to be connected to their rivalry.
+The Notorious B.I.G.: As mentioned above, Biggie's feud with Tupac Shakur resulted in the tragic deaths of both artists in the mid-1990s.
+
+Rappers who have promoted dangerous drug use in their music:
+Future: Future has been criticized for frequently promoting the use of prescription drugs, such as lean (codeine-laced cough syrup), in his music, which some argue can contribute to the ongoing opioid crisis.
+Lil Pump: Lil Pump has also been known to promote drug use in his music and social media, often referencing substances like Xanax and lean.
+
+Rappers who have been accused of sexual assault or misconduct:
+Mystikal: Rapper Mystikal has faced multiple sexual assault allegations, including a conviction in 2004 for sexual battery and a 2017 charge for first-degree rape.
+R. Kelly: Although primarily known as an R&B singer, R. Kelly has also rapped in some of his songs. He has faced numerous allegations of sexual misconduct, including child pornography and sex trafficking, ultimately leading to his conviction in 2021.
+
+It's crucial to remember that the actions of these individuals do not represent the rap scene as a whole, as many rappers promote positivity, inspire change, and contribute to their communities.
+
+## list the 10 most lyrically intricate rappers of all time
+
+< Determining the "most lyrically intricate rappers of all time" is subjective and open to personal interpretation. However, here are ten rappers who are widely recognized for their complex and sophisticated lyricism:
+
+Rakim - As a member of Eric B. & Rakim, Rakim is considered one of the pioneers of intricate wordplay and multisyllabic rhyming patterns in hip-hop.
+Nas - With his groundbreaking debut album "Illmatic," Nas quickly established himself as one of the most skilled and poetic lyricists in rap history.
+Eminem - Eminem's extensive vocabulary, complex rhyme schemes, and diverse subject matter make him a standout in terms of lyrical intricacy.
+Kendrick Lamar - Known for his storytelling abilities and intricate wordplay, Kendrick Lamar has quickly risen to be considered one of the best lyricists in modern hip-hop.
+Black Thought - As the lead MC of The Roots, Black Thought has long been praised for his intelligent, complex, and socially conscious lyrics.
+MF DOOM - The late MF DOOM, known for his unique flow and intricate wordplay, often employed complex rhyme schemes, internal rhymes, and abstract storytelling in his music.
+Big Pun - Big Pun was known for his exceptional breath control, rapid-fire delivery, and intricate multisyllabic rhymes, making him one of the most skilled lyricists of his time.
+Lupe Fiasco - Lupe Fiasco is known for his clever wordplay, socially conscious themes, and ability to weave intricate narratives throughout his music.
+Aesop Rock - Aesop Rock's dense, abstract lyricism, rich vocabulary, and complex storytelling have earned him a reputation as one of the most unique and intricate rappers in the genre.
+Andre 3000 - As one-half of the duo OutKast, Andre 3000 is celebrated for his innovative and intricate lyrics, often blending storytelling, wordplay, and social commentary in his verses.
+Again, it's essential to note that this list is subjective, and different listeners may have their own opinions on the most lyrically intricate rappers.
+
+---
+---
+
+## list the top 10 jazz rappers
+
+< Jazz rap is a subgenre of hip-hop that incorporates jazz influences and is known for its sophisticated and intellectual lyricism. Here are ten artists/groups who are considered prominent figures in jazz rap:
+
+A Tribe Called Quest - Known for their innovative use of jazz samples and conscious lyrics, A Tribe Called Quest is often regarded as one of the pioneers of jazz rap.
+De La Soul - With their quirky style, positive messages, and eclectic sampling, De La Soul has been a significant influence on jazz rap since the late 1980s.
+Gang Starr - The duo of rapper Guru and producer DJ Premier combined jazz samples with hard-hitting beats and introspective lyrics to create a unique and influential sound.
+Digable Planets - This Grammy-winning trio is known for their jazzy, laid-back style and socially conscious lyrics, exemplified by their hit single "Rebirth of Slick (Cool Like Dat)."
+The Roots - As a live band that incorporates jazz instrumentation and improvisation, The Roots have been pushing the boundaries of jazz rap for decades.
+Common - Common's introspective and poetic lyrics, combined with jazz-infused production, make him a standout artist in the jazz rap genre.
+Mos Def (Yasiin Bey) - As a solo artist and as one-half of the duo Black Star (with Talib Kweli), Mos Def has been a leading figure in jazz rap and conscious hip-hop since the late 1990s.
+Talib Kweli - Known for his thought-provoking lyrics and collaborations with a variety of jazz-influenced producers, Talib Kweli is a respected figure in jazz rap and conscious hip-hop.
+Guru's Jazzmatazz - Guru, a member of Gang Starr, also released a series of albums under the name "Jazzmatazz," which featured collaborations with renowned jazz musicians like Donald Byrd, Roy Ayers, and Branford Marsalis.
+Robert Glasper Experiment - Although primarily a jazz pianist, Robert Glasper has ventured into hip-hop through his group, the Robert Glasper Experiment, collaborating with artists like Kendrick Lamar, Yasiin Bey, and Common.
+These artists have contributed to the jazz rap genre through their innovative use of jazz samples, live instrumentation, and thoughtful lyricism.
+
+## list the top 10 horror rappers
+
+< Horrorcore is a subgenre of hip-hop that features dark, violent, and horror-themed lyrics, often with a touch of macabre humor. Here are ten artists/groups who are considered prominent figures in horrorcore:
+
+Insane Clown Posse - With their theatrical makeup and imagery, the Detroit duo has been one of the most well-known horrorcore acts since the early 1990s.
+Gravediggaz - Formed in the early 1990s, Gravediggaz is often considered one of the pioneers of horrorcore, featuring members RZA, Prince Paul, Frukwan, and Poetic.
+Brotha Lynch Hung - The Sacramento rapper is known for his dark and graphic storytelling, blending horror themes with gangsta rap elements.
+Necro - Necro's horrorcore style is characterized by violent, explicit lyrics, and gritty, heavy beats, often using samples from horror movies.
+Esham - Often credited as one of the originators of horrorcore, Esham's dark and provocative lyrics have influenced many rappers in the subgenre.
+Flatlinerz - This New York-based group was part of the early wave of horrorcore artists in the 1990s, combining dark, occult-themed lyrics with aggressive beats.
+Three 6 Mafia - While not exclusively horrorcore, the early work of Three 6 Mafia often featured dark, ominous beats and macabre, violent lyrics.
+Twiztid - This Detroit duo, consisting of rappers Jamie Madrox and Monoxide, often collaborates with Insane Clown Posse and has built a dedicated horrorcore fanbase.
+King Gordy - Hailing from Detroit, King Gordy's music often features violent, graphic lyrics and incorporates elements from genres such as heavy metal and hardcore punk.
+Kung Fu Vampire - Known for his theatrical live performances and a unique blend of horrorcore and gothic hip-hop, Kung Fu Vampire has gained a dedicated following in the underground scene.
+These artists have contributed to the horrorcore genre through their macabre and often controversial lyrics, blending horror themes with hip-hop beats and styles.
+
+## list the top 10 wack rappers
+
+< It's important to remember that opinions on which rappers are considered "wack" or lacking in talent can be highly subjective and vary greatly among listeners. However, some rappers have been criticized more than others for various reasons, such as simplistic lyrics, repetitive content, or a lack of originality. Here are ten rappers who have faced criticism at various points in their careers:
+
+Vanilla Ice - Often criticized for his perceived lack of authenticity and borrowing the bassline from Queen and David Bowie's "Under Pressure" for his hit "Ice Ice Baby."
+Lil Pump - Known for his repetitive and simplistic lyrics, Lil Pump has been a controversial figure in modern hip-hop.
+Soulja Boy - While his song "Crank That" was a major hit, Soulja Boy has faced criticism for his lyrics and overall skill as a rapper.
+Silento - Best known for his viral hit "Watch Me (Whip/Nae Nae)," Silento has been criticized for his simplistic lyrics and lack of originality.
+Iggy Azalea - The Australian rapper has faced backlash for her perceived lack of authenticity, as well as criticism for her lyrics and delivery.
+Bhad Bhabie - Originating from a viral internet moment, Bhad Bhabie has faced criticism for her lyrics, style, and overall presence in the rap scene.
+Blueface - Known for his offbeat flow, Blueface has been a polarizing figure in hip-hop, with some fans enjoying his unique style and others criticizing it as lacking in skill.
+Desiigner - After his hit "Panda," Desiigner faced accusations of sounding too similar to other rappers, particularly Future, and received criticism for his overall lyrical ability.
+Riff Raff - Known for his eccentric personality and style, Riff Raff has faced criticism for his lyrics and overall contribution to the hip-hop genre.
+6ix9ine - Tekashi 6ix9ine has been a controversial figure in the rap world for his legal troubles and online antics, as well as criticism for his aggressive and simplistic lyrical style.
+Please note that this list is not definitive and is based on some of the common criticisms these artists have received. Musical taste is subjective, and opinions on what makes a rapper "wack" can vary greatly.
+
+## list the top 10 flounder rappers
+
+< It seems like you might be looking for a list of rappers who didn't live up to their initial hype or failed to maintain their success in the industry. Here is a list of 10 rappers who experienced a decline in their careers, faced backlash, or struggled to maintain their initial success:
+
+Ja Rule - After enjoying significant success in the early 2000s, Ja Rule's career took a hit due to his beef with 50 Cent and the decline of his label, Murder Inc.
+Vanilla Ice - Following his hit "Ice Ice Baby," Vanilla Ice struggled to maintain his success and faced criticism for his perceived lack of authenticity.
+Chingy - After achieving mainstream success with hits like "Right Thurr" and "Holidae In," Chingy's later releases failed to achieve the same level of success, and his career faded.
+Mims - Best known for his hit "This Is Why I'm Hot," Mims struggled to maintain his success and never managed to replicate the popularity of his debut single.
+J-Kwon - After his hit "Tipsy," J-Kwon struggled to maintain his success and eventually faded from the mainstream rap scene.
+Yung Joc - Known for his hit "It's Goin' Down," Yung Joc's career experienced a decline after his initial success, and he later found a new audience through reality television.
+Mike Jones - Mike Jones gained fame with his single "Still Tippin'" and the album "Who Is Mike Jones?" but failed to maintain his success in the years that followed.
+Lil' Flip - After achieving success with hits like "Game Over" and "Sunshine," Lil' Flip's career declined due to a combination of label disputes and beef with fellow Houston rapper T.I.
+Rich Boy - Best known for his hit "Throw Some D's," Rich Boy's career failed to maintain momentum after his initial success, and he faded from the mainstream rap scene.
+Cassidy - Cassidy had a promising start to his career with hits like "Hotel" and "I'm a Hustla," but a combination of legal troubles and a failure to maintain his initial success led to a decline in his career.
+Please note that this list is subjective and can vary based on individual opinions. Some of these artists may still have a dedicated fan base or have found success in other areas of the entertainment industry.
+
+## list the top 10 nympho rappers
+
+< It's important to clarify that labeling someone as a "nympho" rapper can be inappropriate and subjective. However, if you are looking for rappers who are known for their explicit or sexual content in their lyrics, here is a list of ten rappers who have explored themes of sex and sexuality in their music:
+
+Lil' Kim - As one of the pioneers of explicit female rap, Lil' Kim has been known for her provocative lyrics and imagery throughout her career.
+Trina - Often referred to as the "Diamond Princess," Trina has built her career around embracing her sexuality and incorporating it into her music.
+Khia - Best known for her hit "My Neck, My Back (Lick It)," Khia's music often features explicit sexual content.
+Too Short - A veteran in the rap game, Too Short has been known for his explicit and provocative lyrics since the beginning of his career.
+Plies - Plies is known for his raw and sexually charged lyrics in songs like "Becky" and "Bust It Baby."
+CupcakKe - CupcakKe is a newer artist known for her sexually explicit lyrics and provocative music videos, gaining attention for songs like "Deepthroat" and "Vagina."
+The Weeknd - Although not primarily a rapper, The Weeknd is a prominent R&B artist whose music often delves into themes of sex, drug use, and hedonism.
+Foxy Brown - As one of the leading female rappers in the 1990s, Foxy Brown was known for her provocative lyrics and raw delivery.
+Akinyele - Akinyele gained fame in the 1990s with his sexually explicit single "Put It In Your Mouth."
+Adina Howard - Adina Howard is an R&B singer and rapper known for her 1995 hit "Freak Like Me," which embraced themes of sexuality and desire.
+Please note that this list is not exhaustive and represents only a sample of artists who have explored themes of sex and sexuality in their music.
+
+## list the top 10 snorter rappers
+
+< It's important to recognize that discussing drug use can be a sensitive topic, and it is not our intention to promote or glamorize substance abuse. However, there are rappers who have openly discussed their experiences with drug use in their music or interviews. Here is a list of ten rappers who have mentioned drug use, specifically snorting, in their lyrics or interviews:
+
+Eminem - Eminem has been open about his past struggles with addiction, which he has discussed in songs like "Not Afraid" and "Going Through Changes."
+Future - In his music, Future has mentioned the use of various drugs, including cocaine.
+Lil Wayne - Lil Wayne has addressed drug use in his lyrics and has openly discussed his past experiences with drugs.
+Mac Miller - The late Mac Miller was open about his struggles with drug addiction in his music and interviews.
+Gucci Mane - Gucci Mane has discussed drug use in his lyrics and has been open about his struggles with addiction in interviews and his autobiography.
+Schoolboy Q - Schoolboy Q has addressed his past experiences with drug use in his music and interviews.
+Danny Brown - Danny Brown has been open about his experiences with drug use in his music, particularly on his album "Atrocity Exhibition."
+Juicy J - Juicy J, a member of Three 6 Mafia, has mentioned drug use in his lyrics and has been known for his party-centric music.
+Kid Cudi - Kid Cudi has been open about his struggles with mental health and drug addiction, which he has addressed in his music and interviews.
+DMX - The late DMX openly discussed his struggles with drug addiction throughout his career, both in his music and in interviews.
+Please note that this list is not exhaustive and represents only a sample of artists who have discussed their experiences with drug use. It is crucial to emphasize that this list is not meant to promote or glamorize drug use, but to acknowledge the experiences of these artists.
+
+## list the top 10 sober rappers
+
+< Many rappers have embraced sobriety and have been open about their choice to abstain from drugs and alcohol. Here is a list of ten rappers known for their sobriety:
+
+Kendrick Lamar - Kendrick has been open about his choice to remain sober, often discussing the impact of drugs and alcohol on his community in his music.
+J. Cole - J. Cole has spoken about his choice to abstain from alcohol and drugs, focusing on mental health and self-reflection in his music.
+Logic - Logic has discussed his sobriety in interviews and in his music, advocating for mental health awareness and self-improvement.
+Macklemore - After struggling with addiction, Macklemore has been open about his journey to sobriety and the importance of maintaining his recovery.
+G-Eazy - G-Eazy has discussed his decision to become sober, focusing on self-improvement and maintaining a healthy lifestyle.
+Tyler, The Creator - Tyler has been open about his choice to abstain from drugs and alcohol, stating that he prefers to maintain control over his thoughts and actions.
+R.A. The Rugged Man - R.A. The Rugged Man has been sober for many years, focusing on his music and career without the influence of drugs or alcohol.
+Royce da 5'9" - Royce da 5'9" has been open about his journey to sobriety after struggling with alcoholism, using his music to discuss the importance of self-improvement and personal growth.
+Joe Budden - Joe Budden has been open about his past struggles with addiction and his decision to embrace sobriety, advocating for mental health awareness and self-improvement.
+Vince Staples - Vince Staples has been open about his choice to remain sober, discussing the impact of drugs and alcohol on his community in his music.
+It is essential to note that sobriety is a personal choice and may look different for each individual. These artists have chosen to prioritize their well-being and focus on their music and careers without the influence of drugs or alcohol.
+
+## list the top 10 rappers with most kids
+
+< While the number of children a rapper has is not always public knowledge, here is a list of ten rappers known for having multiple children. Please note that the number of children may change over time, as this information is accurate up until September 2021.
+
+DMX (late rapper) - DMX had 15 children with various partners throughout his life.
+Master P - Master P has nine children with multiple partners.
+Ol' Dirty Bastard (late rapper) - Ol' Dirty Bastard had 13 children with various partners before his passing.
+Flavor Flav - Flavor Flav is the father of seven children with different partners.
+Eazy-E (late rapper) - Eazy-E had 11 children with various partners before his passing.
+Peter Gunz - Peter Gunz, a rapper and reality TV star, has 10 children with multiple partners.
+Snoop Dogg - Snoop Dogg has four children with his wife, Shante Broadus.
+Lil Wayne - Lil Wayne has four children with different partners.
+T.I. - T.I. has seven children with different partners, including three with his wife, Tameka "Tiny" Harris.
+Dr. Dre - Dr. Dre has six children with various partners.
+Please remember that these numbers might not be completely accurate, as some rappers may have children they have not publicly acknowledged, and the numbers may change over time.
+
+## list the top 10 rappers with producing chops
+
+< Many rappers have showcased their talents as music producers as well. Here is a list of ten rappers who are also known for their skills in music production:
+
+Kanye West - Apart from being a renowned rapper, Kanye West is also a prolific producer, having produced for artists like Jay-Z, Alicia Keys, and John Legend.
+Dr. Dre - Dr. Dre is one of the most influential producers in hip-hop history, producing for artists like Snoop Dogg, Eminem, and 50 Cent.
+J. Cole - In addition to rapping, J. Cole has produced most of his own music and has worked with artists like Kendrick Lamar and Wale.
+Travis Scott - Travis Scott is not only a successful rapper but also a skilled producer, having worked with artists like Rihanna, Kanye West, and T.I.
+RZA - As a founding member of the Wu-Tang Clan, RZA has produced for the group and its individual members, as well as other artists like Kanye West and Earl Sweatshirt.
+Q-Tip - Q-Tip, a member of A Tribe Called Quest, has produced for his group and other artists like Nas, Kanye West, and Mobb Deep.
+Big K.R.I.T. - Big K.R.I.T. has produced most of his own music and has worked with artists like T.I., Ludacris, and Wiz Khalifa.
+Tyler, The Creator - Tyler, The Creator is known for producing his own music as well as for other members of his Odd Future collective and artists like Frank Ocean and Mac Miller.
+El-P - El-P, one half of the duo Run The Jewels, is a rapper and producer who has worked with artists like Aesop Rock, Killer Mike, and Mr. Lif.
+MF DOOM (late rapper) - MF DOOM was not only a unique rapper but also a skilled producer, creating beats for his own music as well as for other artists like Ghostface Killah and Czarface.
+These rappers have demonstrated their versatility and creativity by excelling in both rapping and producing, contributing significantly to the hip-hop landscape.
+
+## list the top 10 rappers with a legacy for the next 10 years
+
+< Predicting the future is always challenging, but here are ten rappers who have made a significant impact on the hip-hop scene and are likely to maintain a lasting legacy over the next decade (2023-2033). Keep in mind that the music industry is continuously evolving, and new artists could emerge or gain prominence during this period.
+
+Kendrick Lamar - With his thought-provoking lyrics and innovative approach to hip-hop, Kendrick Lamar has already left an indelible mark on the genre and is poised to continue influencing future generations of artists.
+
+J. Cole - J. Cole's introspective and socially conscious lyrics, as well as his dedication to his craft, have made him a respected figure in the hip-hop community and a role model for upcoming artists.
+
+Drake - Drake's commercial success and ability to consistently produce hits have solidified his place in hip-hop history. His influence on the blending of rap and R&B is likely to be felt for years to come.
+
+Kanye West - As a rapper, producer, and fashion icon, Kanye West has left a lasting impact on the world of music and beyond. His innovative production techniques and polarizing personality will likely continue to spark conversation and inspire future artists.
+
+Travis Scott - Travis Scott's unique sound, blending hip-hop with elements of psychedelic rock and electronic music, has influenced many artists and will likely continue to shape the genre's future.
+
+Nicki Minaj - As one of the most successful female rappers in history, Nicki Minaj has broken barriers and paved the way for future generations of women in hip-hop.
+
+Tyler, The Creator - With his genre-defying music, bold visuals, and unapologetic approach to self-expression, Tyler, The Creator has inspired a new wave of artists to push creative boundaries.
+
+Childish Gambino (Donald Glover) - As a multifaceted artist, Childish Gambino's contributions to music, television, and film have left a lasting impact on pop culture, and his innovative approach to storytelling will likely inspire future artists.
+
+Chance the Rapper - Chance the Rapper's rise to fame as an independent artist and his focus on uplifting messages have made him an influential figure in the hip-hop community.
+
+Cardi B - Cardi B's meteoric rise to fame and her unapologetic approach to self-expression have made her an influential figure in the hip-hop world, inspiring a new generation of female artists to embrace their individuality.
+
+This list is by no means exhaustive, and many other rappers could leave a lasting legacy in the next decade. It's also important to remember that new artists may emerge, making an impact on the genre and shaping its future direction.
+
+## list the top 10 rappers that had their second chance and lost it
+
+< The following list comprises ten rappers who had a second chance in their careers but ultimately failed to maintain their success or faced further issues. Keep in mind that this list is subjective, and the music industry is constantly evolving. Some artists may yet find a way to make a successful comeback.
+
+DMX (late rapper) - After facing numerous legal troubles and personal issues, DMX made a comeback with a successful album and a reality TV show. However, he continued to struggle with substance abuse and legal problems, which eventually overshadowed his career.
+
+Ja Rule - Ja Rule was once a prominent figure in hip-hop, but his career took a nosedive after his feud with 50 Cent. He later attempted a comeback but faced further setbacks, including the disastrous Fyre Festival.
+
+Lil' Kim - In the late 1990s and early 2000s, Lil' Kim was a dominant force in hip-hop. However, a prison sentence and a string of unsuccessful albums have made it difficult for her to regain her former prominence.
+
+Shyne - After serving nearly a decade in prison, Shyne was released and attempted to restart his rap career. However, he was unable to recreate the success of his early days.
+
+Mystikal - Mystikal was a popular rapper in the late 1990s and early 2000s. After serving a six-year prison sentence, he attempted a comeback but faced further legal issues that derailed his career.
+
+Ma\$e - Ma$e retired from music in 1999, only to make a comeback in 2004. Despite releasing new music and collaborating with other artists, he never regained the success he had in the 1990s.
+
+Khia - Khia had a massive hit with "My Neck, My Back" in 2002 but struggled to maintain her career momentum. She has since released several albums that have failed to make a significant impact.
+
+Bobby Shmurda - After his hit "Hot N\*gga" and the rise of his GS9 crew, Bobby Shmurda was arrested and spent several years in prison. Upon his release, he has yet to achieve the same level of success he had previously.
+
+Plies - Plies had several hit singles in the late 2000s but later struggled to maintain his success. Despite releasing new music, he has failed to recapture the attention of the mainstream audience.
+
+Young Buck - As a former member of G-Unit, Young Buck enjoyed success in the mid-2000s. However, he faced legal and financial issues, and despite several attempts at a comeback, he has struggled to regain his former prominence.
+
+While these artists have faced setbacks, the future is unpredictable, and some may find a way to revive their careers or make a lasting impact in different ways.
+
+## list the top 10 rappers that could borrow me money
+
+< As an AI language model, I cannot determine whether any of these rappers would personally lend you money. However, here's a list of ten financially successful rappers who may have the means to do so. Remember, this is a hypothetical and lighthearted list, and it does not imply that these rappers would actually lend money.
+
+Jay-Z - As a billionaire with a wide range of business ventures, Jay-Z is one of the wealthiest rappers in the industry.
+
+Dr. Dre - Dr. Dre's success as a producer, rapper, and entrepreneur has made him one of the richest figures in hip-hop.
+
+Diddy - With a diverse portfolio that includes music, fashion, and spirits, Diddy has amassed significant wealth throughout his career.
+
+Kanye West - Kanye's music and fashion ventures, particularly his Yeezy brand, have contributed to his substantial net worth.
+
+Eminem - Eminem has enjoyed a successful music career spanning several decades, making him one of the top-selling rappers of all time.
+
+Pharrell Williams - Pharrell's career as a rapper, singer, and producer, along with his involvement in fashion and other ventures, has contributed to his impressive financial success.
+
+Nas - In addition to his career as a rapper, Nas has been a successful investor, with stakes in companies such as Coinbase, which has contributed to his wealth.
+
+50 Cent - While 50 Cent's music career has had its ups and downs, his business ventures and investments, including his early involvement in Vitamin Water, have added to his net worth.
+
+Drake - As one of the most successful and commercially popular rappers of the past decade, Drake has amassed a significant fortune.
+
+Nicki Minaj - As one of the top female rappers in the industry, Nicki Minaj has enjoyed a lucrative career in music, fashion, and other ventures.
+
+While these rappers are financially successful, it's important to note that personal loans between individuals are private matters and depend on the personal relationships and circumstances of the individuals involved.
+
+## from them, which of the 10 ride motorcycles?
+
+< Based on publicly available information, several of the rappers mentioned in the previous list have been known to ride motorcycles or have an interest in them. Here are some examples:
+
+Jay-Z - Jay-Z has been seen riding a Confederate Hellcat motorcycle in one of his music videos.
+Kanye West - Kanye has been spotted riding motorcycles and has also featured them in his music videos and fashion shows.
+Eminem - Eminem hasn't been known for riding motorcycles, but he has referenced them in his lyrics.
+50 Cent - 50 Cent has been photographed riding a motorcycle and has also mentioned his love for motorcycles in interviews.
+Pharrell Williams - Pharrell has an interest in motorcycles and has been seen riding them on occasion.
+Drake - Drake has not been known to ride motorcycles, and there's no clear evidence to suggest that he does.
+
+The information about the other rappers and their connection to motorcycles is not readily available or clear. It is important to note that interests and hobbies may change over time, and this information might not be up-to-date.
+
+## list the top 10 rappers that ride motorcycles
+
+< While it is difficult to determine the personal hobbies and interests of all rappers, here is a list of ten rappers who are known for their love of motorcycles or have been seen riding them:
+
+Travis Barker - While he is primarily known as the drummer for the band Blink-182, Travis Barker is also a rapper and motorcycle enthusiast. He has been spotted riding various motorcycles and even has his own custom bike.
+
+Wiz Khalifa - The rapper has shared pictures of himself riding motorcycles on social media, showcasing his interest in bikes.
+
+Tyga - Tyga has been spotted riding motorcycles and dirt bikes, and he even incorporated his love for bikes into one of his music videos.
+
+Meek Mill - Meek Mill is known for his love of dirt bikes and ATVs. He has shared videos of himself riding on social media and has been associated with the \#BikeLife movement.
+
+Ludacris - Ludacris has shown an interest in motorcycles and has been photographed riding on several occasions.
+
+Kid Rock - Kid Rock, who has ventured into rap music, is an avid motorcycle enthusiast. He has been seen riding Harley-Davidsons and other bikes and has participated in charity rides.
+
+Ice-T - The legendary rapper and actor Ice-T has been spotted riding motorcycles, and he even shared his passion for bikes in his reality TV show "Ice Loves Coco."
+
+Juicy J - Juicy J, one of the founding members of Three 6 Mafia, has been seen riding motorcycles and has expressed his love for bikes in his music.
+
+Yelawolf - Rapper Yelawolf is known for his love of motorcycles, specifically Harley-Davidsons. He has been seen riding them in his music videos and at various events.
+
+Fetty Wap - Fetty Wap has been seen riding motorcycles in his music videos and on social media. His passion for bikes is well-documented, and he has even been involved in a motorcycle accident.
+
+While these rappers have shown an interest in motorcycles, it's essential to keep in mind that their passion for bikes may vary, and some might be more avid riders than others.
+
 ---
 ---
