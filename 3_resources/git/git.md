@@ -1,3 +1,12 @@
+---
+---
+
+git diff --binary HEAD^ HEAD > ~/patchfile.patch
+git apply --binary ~/patchfile.patch
+
+---
+---
+
 ## for educational purposes, if git were rewritten from scratch (basic features), how would you start?
 
 < If I were to start from scratch and rewrite Git, one approach I might take would be to begin by designing a data structure to efficiently store the file system changes that Git tracks. This data structure, often called a "content-addressable file system," would use the contents of each file as a key to look up the file's metadata, such as its name, file type, and timestamps.
