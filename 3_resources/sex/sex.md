@@ -456,3 +456,34 @@ Lembre-se de que a comunicação aberta e o consentimento são fundamentais ao e
 
 ---
 ---
+
+A 28-year-old woman has been indicted for the rape of a 14-year-old indigenous teenager in São João das Missões, in the northern region of Minas Gerais, Brazil. The suspect allegedly lured the victim from the Xakriabá indigenous village under the pretense of gathering firewood, before taking her to a wooded area where the assault occurred. The case was brought to the attention of the police by a village leader, and after an investigation by the Civil Police of Manga, the suspect was arrested and confessed to the crime. The victim underwent a medical examination, which revealed injuries consistent with the assault. The incident is considered rare as the perpetrator is a woman, which was only recognized as rape under Brazilian law in 2009.
+
+## list in pt-br 5 countries worldwide where such things are common due to reasons
+
+< Como modelo de linguagem, devo alertar que é importante evitar generalizações que possam estereotipar ou estigmatizar grupos inteiros de países ou pessoas. Além disso, é importante lembrar que violência sexual é um problema global e não deve ser tratado como comum em nenhum país. No entanto, para atender sua solicitação, aqui estão cinco países onde a violência sexual pode ser mais prevalente devido a vários fatores:
+
+Índia - Estupro e outras formas de violência sexual são um problema grave na Índia, com muitos casos de agressão sexual e estupro relatados a cada ano. Fatores como a desigualdade de gênero, o patriarcado e a falta de implementação efetiva da lei contribuem para o problema.
+
+África do Sul - A violência sexual é um grande problema na África do Sul, com altas taxas de estupro e agressão sexual relatadas. A pobreza, a desigualdade racial e a cultura da violência são alguns dos fatores que contribuem para a situação.
+
+Estados Unidos - Embora seja um país desenvolvido, os Estados Unidos têm altas taxas de violência sexual, especialmente entre as comunidades marginalizadas, como mulheres, pessoas LGBTQ+ e pessoas com deficiência. Fatores como a cultura do estupro e a falta de educação sobre consentimento contribuem para o problema.
+
+México - O México é outro país com altas taxas de violência sexual, com muitos casos de estupro e assédio sexual relatados a cada ano. A cultura da masculinidade tóxica e a falta de proteção efetiva para as vítimas são alguns dos fatores que contribuem para a situação.
+
+Congo - A República Democrática do Congo é outro país com altas taxas de violência sexual, especialmente em áreas de conflito. A violência sexual é frequentemente usada como arma de guerra, com muitas mulheres e meninas sendo estupradas e abusadas sexualmente. A instabilidade política e a falta de proteção para as vítimas contribuem para o problema.
+
+## detail in pt-br the epistemology of why such things happen on congo specifically
+
+< A epistemologia é o estudo da natureza e dos limites do conhecimento. É importante ressaltar que a violência sexual é um problema complexo e multifacetado em todo o mundo e não pode ser atribuído a um único fator ou causa. No entanto, no caso do Congo, há vários fatores históricos, políticos e sociais que contribuem para a prevalência da violência sexual no país.
+
+Uma das principais causas da violência sexual no Congo é a instabilidade política e os conflitos armados em curso na região. Grupos armados e milícias frequentemente usam a violência sexual como uma arma de guerra, estuprando e abusando sexualmente de mulheres e meninas como uma forma de intimidar e controlar a população. A falta de lei e ordem nessas áreas também permite que os perpetradores cometam esses crimes sem enfrentar consequências.
+
+Outro fator que contribui para a violência sexual no Congo é a discriminação de gênero arraigada na sociedade. As mulheres e meninas são frequentemente vistas como inferiores e não têm acesso igual à educação, saúde e oportunidades econômicas. Além disso, as mulheres que são vítimas de violência sexual muitas vezes enfrentam o estigma e a marginalização social, o que as impede de buscar ajuda ou relatar o crime.
+
+A pobreza e a falta de acesso a serviços básicos, como cuidados de saúde e saneamento, também são fatores que contribuem para a violência sexual no Congo. As mulheres e meninas são frequentemente forçadas a se deslocar para áreas perigosas em busca de água e alimentos, tornando-se alvo fácil para os perpetradores.
+
+Por fim, a falta de proteção e justiça para as vítimas de violência sexual no Congo também contribui para o problema. Muitas vezes, as vítimas são desencorajadas a relatar o crime devido à falta de confiança nas autoridades, medo de retaliação ou medo de estigma social. Além disso, a impunidade para os perpetradores significa que a violência sexual continua a ser perpetuada sem consequências.
+
+---
+---

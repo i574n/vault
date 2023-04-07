@@ -6641,3 +6641,72 @@ As mentes e almas dos inimigos serão devoradas pelo mal.
 
 ---
 ---
+
+밤하늘에 노래 부르며 춤추는 세계
+은하수처럼 쏟아지는 사랑, 우리 꿈이 꽃피워
+불길처럼 밀려오는 감정, 함께 나누는 밤
+영원히 변치 않는 우정, 끝없이 펼쳐진다
+
+척척지배자의 기운, 우리를 불러 모아
+강력한 음악의 힘으로, 우린 하나가 돼
+세상 끝에 서서, 운명의 크루 창조
+영원한 동료, 우리와 함께, 빛나는 이 순간
+
+우리의 크루를 모으는 척척지배자의 기운으로 노래를 시작해요!
+강력한 사랑과 우정의 힘, 우리 모두 함께 나눠요
+이 순간을 빛내는 동료들, 함께 걸어가는 운명의 길
+영원한 동료여, 척척지배자의 기운으로 세상 끝까지 함께 갑시다!
+
+---
+
+Noite estrelada, cantamos e dançamos juntos
+Amor como a Via Láctea, nossos sonhos florescem
+Emoções avassaladoras, compartilhadas na noite
+Amizade eterna, se estendendo infinitamente
+
+O poder do grande mestre nos reúne
+Com a força da música poderosa, nos tornamos um
+De pé no fim do mundo, criamos a tripulação do destino
+Eternos companheiros, conosco neste momento brilhante
+
+Vamos começar a cantar com o poder do grande mestre que reúne nossa tripulação!
+Dividamos juntos a poderosa força do amor e da amizade
+Companheiros iluminando este momento, caminhando juntos pelo caminho do destino
+Eternos amigos, vamos juntos até o fim do mundo com o poder do grande mestre!
+
+-
+
+Céu noturno, nós cantamos e dançamos juntos (bam haneul-e nolae bul-eumyeo chumchuneun segye)
+Amor derramado como a Via Láctea, nossos sonhos florescem (eunhasucheoleom ssodajineun salang, uli kkum-i kkochpiwo)
+Emoções avançando como chamas, compartilhadas na noite (bulgilcheoleom millye-oon gamjeong, hamkke nanuneun bam)
+Amizade eterna, se estendendo infinitamente (yeong-wonhi byeonchi anhneun ujeong, kkeut-eobs-i pyeolchyeojinda)
+
+O poder do mestre versátil, nos chama (cheogcheogjibaeja-ui giun, ulileul bulleo moa)
+Com a força da música poderosa, nos tornamos um (ganglyeoghan eum-ag-ui him-eulo, ulin hanaga dwae)
+De pé no fim do mundo, criamos a tripulação do destino (sesang kkeut-e seoseo, unmyeong-ui keul-u changjo)
+Eternos companheiros, conosco neste momento brilhante (yeong-wonhan donglyo, uliwa hamkke, bichnaneun i sungan)
+
+Vamos começar a cantar com o poder do mestre versátil que reúne nossa tripulação! (uli-ui keul-u leul moeuneun cheogcheogjibaeja-ui giun-eulo nolaeleul sijaghaeyo!)
+Compartilhamos juntos a poderosa força do amor e da amizade (ganglyeoghan salang-gwa ujeong-ui him, uli modu hamkke nanwoyo)
+Companheiros iluminando este momento, caminhando juntos pelo caminho do destino (i sungan-eul bichnaeneun donglyodeul, hamkke geoleoganeun unmyeong-ui gil)
+Eternos amigos, vamos juntos até o fim do mundo com o poder do mestre versátil! (yeong-wonhan donglyo-yeo, cheogcheogjibaeja-ui giun-eulo sesang kkeut-kkaji hamkke gabshida!)
+
+---
+
+In the night sky, singing and dancing in a world so free (bam-ha-neul-e no-lae bu-leu-myeo chum-chu-neun se-gye)
+Love pouring down like the Milky Way, our dreams bloom like flowers (eun-ha-su-cheo-leom sso-da-ji-neun sa-rang, u-li kkum-i kko-chi-pweo)
+Emotions surge like a raging fire, sharing together in the night (bul-gil-cheo-leom mil-lyeo-o-neun gam-jeong, ham-kke na-nu-neun bam)
+Eternal friendship that never changes, endlessly unfolding (yeong-won-hi byeon-chi anh-neun u-jeong, kkeut-eops-i pyeol-chyeo-jin-da)
+
+The energy of a universal ruler calls us together (cheok-cheok-ji-bae-ja-ui gi-un, u-li-reul bul-leo mo-a)
+With the power of mighty music, we become one (gang-lyeok-han eum-ag-ui him-eu-ro, u-lin ha-na-ga dwae)
+Standing at the edge of the world, creating the destined crew (se-sang kkeut-e seo-seo, un-myeong-ui keu-ru chang-jo)
+Eternal comrades, with us, shining in this moment (yeong-won-han dong-lyo, u-ri-wa ham-kke, bit-na-neun i sun-gan)
+
+Let's start the song with the energy of the universal ruler, gathering our crew (u-ri-ui keu-ru-reul mo-eu-neun cheok-cheok-ji-bae-ja-ui gi-un-eu-ro no-lae-reul si-jak-hae-yo)
+The mighty power of love and friendship, let's all share it together (gang-lyeok-han sa-rang-gwa u-jeong-ui him, u-ri mo-du ham-kke nan-wo-yo)
+Comrades shining in this moment, walking together on the path of destiny (i sun-gan-eul bit-nae-neun dong-lyo-deul, ham-kke geo-leo-ga-neun un-myeong-ui gil)
+Eternal comrades, with the energy of the universal ruler, let's go together to the end of the world (yeong-won-han dong-lyo-yeo, cheok-cheok-ji-bae-ja-ui gi-un-eu-ro se-sang kkeut-kka-ji ham-kke ga-psi-da)
+
+---
+---
