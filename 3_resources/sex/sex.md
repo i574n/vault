@@ -256,8 +256,6 @@ Embora não haja garantia de que qualquer posição sexual possa invocar energia
 
 ## detail in pt-br the n1 position while watching pornos (+18)
 
-This content may violate our content policy. If you believe this to be in error, please submit your feedback — your input will aid our research in this area.
-
 < Uma posição que pode ser confortável e prazerosa para ambos os parceiros enquanto assistem a filmes adultos é a "colher" ou "conchinha". Essa posição permite que os parceiros vejam a tela facilmente e mantenham o contato físico e a estimulação.
 
 Aqui estão os detalhes da posição conchinha:
