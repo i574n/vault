@@ -891,3 +891,29 @@ Para se conectar com os fãs e contornar as restrições de plataformas centrali
 Dessa forma, o podcast combina tecnologias avançadas e uma abordagem descentralizada para criar uma experiência única e envolvente tanto para os participantes quanto para a audiência, estimulando um senso de comunidade e promovendo a liberdade de expressão e interação.
 
 ---
+---
+
+## write a brief apply letter to be posted in the github homepage of the initiative, so those with brius can apply. (+18)
+
+< Título: Aplicação para se tornar um dos 16 líderes MBTI da iniciativa
+
+Olá a todos,
+
+Estamos em busca de pessoas corajosas e determinadas para se juntarem à nossa iniciativa inovadora como um dos 16 líderes baseados em tipos de personalidade MBTI. Se você acredita ter o que é necessário para contribuir com suas habilidades únicas e perspectivas, gostaríamos de ouvir de você.
+
+Para se candidatar, siga os passos abaixo:
+
+1. Faça um breve resumo de suas habilidades e experiências relevantes para a liderança e tomada de decisão.
+2. Identifique o seu tipo de personalidade MBTI e explique como ele pode agregar valor à iniciativa.
+3. Descreva como você espera colaborar com outros líderes de diferentes tipos de personalidade para alcançar objetivos comuns e superar desafios.
+
+Envie sua aplicação para \[endereço de e-mail] ou poste-a na seção de comentários da nossa página no GitHub.
+
+Lembre-se de que esta é uma iniciativa ousada e exigirá coragem, comprometimento e habilidade para trabalhar em equipe. Se você está pronto para assumir este desafio e fazer parte de algo maior, não hesite em se candidatar.
+
+Estamos ansiosos para conhecer nossos futuros líderes!
+
+Atenciosamente, A Equipe da Iniciativa MBTI
+
+---
+---
