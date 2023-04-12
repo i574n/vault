@@ -8377,3 +8377,608 @@ While these rappers have shown an interest in motorcycles, it's essential to kee
 
 ---
 ---
+
+Name | Votes/Comments | MBTI | Enneagram
+-- | -- | -- | --
+Doja Cat | 4.8k/1.5k | ENFP | 7w6
+Andrew Tate | 6.2k/3.6k | ESTP | 8w7
+Nicki Minaj | 3.1k/610 | ESFP | 3w4
+Eminem | 3.1k/1.2k | ISTP | 6w5
+Kanye West | 3.4k/972 | ENFP | 4w3
+Will Smith | 1.8k/715 | ENFP | 3w2
+Tyler, the Creator | 2.1k/615 | ENFP | 7w8
+George “Joji” Miller | 1.7k/583 | INFP | 4w3
+The Weeknd | 1.7k/401 | ISFP | 4w3
+Rihanna | 1.7k/596 | ISFP | 9w8
+Beyoncé | 1.4k/250 | ISFJ | 3w4
+Kendrick Lamar | 1.5k/598 | INFJ | 4w5
+Cardi B | 1.4k/373 | ESFP | 7w8
+Lil Nas X | 1.4k/217 | ENFP | 7w6
+Tupac Shakur | 1.5k/376 | ENFJ | 8w7
+NF | 1.2k/297 | INFJ | 4w3
+6ix9ine | 1.2k/430 | ESFP | 8w7
+Drake | 1.1k/380 | ENFJ | 3w2
+Megan Thee Stallion | 1.3k/195 | ESTP | 8w7
+Jack Harlow | 679/331 | ISFP | 3w4
+XXXTENTACION | 1.2k/523 | ISFP | 4w3
+Azealia Banks | 1.2k/377 | ENTP | 8w7
+Lil Peep | 1.2k/234 | ISFP | 4w3
+Donald Glover (Childish Gambino) | 923/78 | ENFP | 4w3
+Travis Scott | 507/174 | ISFP | 9w8
+Snoop Dogg | 968/150 | ISTP | 9w8
+Frank Ocean | 952/116 | ISFP | 4w5
+Ayesha Erotica | 765/231 | ISFP | 4w3
+50 Cent | 635/323 | ESTP | 6w7
+JAY-Z | 675/211 | INTJ | 3w4
+Logic | 548/84 | ESFJ | 9w1
+Machine Gun Kelly | 726/248 | ESTP | 6w7
+Ashnikko | 805/104 | ESFP | 7w8
+Ice Spice | 583/318 | ISFP | 7w6
+Olajide William Olatunji (KSI) | 686/212 | ESTP | 7w8
+Playboi Carti | 618/216 | ISFP | 4w3
+Lizzo | 531/35 | ESFP | 3w2
+Jaden Smith | 586/97 | ENFP | 4w3
+Alicia Keys | 455/75 | INFP | 9w1
+Juice Wrld | 531/119 | INFP | 4w3
+Mac Miller | 529/73 | ENFP | 4w5
+A$AP Rocky | 485/62 | ESTP | 7w8
+Ghostemane | 511/135 | INTP | 5w4
+SZA | 566/155 | ENFP | 4w3
+M.I.A. | 448/82 | INTP | 5w6
+Danielle Bregoli (Bhad Bhabie) | 422/49 | ESFP | 8w7
+J. Cole | 378/112 | INFJ | 9w8
+Jennifer Lopez | 382/58 | ESFJ | 3w4
+MF DOOM | 529/96 | INTP | 5w4
+DaBaby | 486/38 | ESTP | 7w8
+Stefan Burnett "MC Ride" | 486/153 | INFP | 4w5
+Pitbull | 422/108 | ESTJ | 3w4
+BamBam (GOT7) | 357/85 | ESTP | 7w8
+Lil Pump | 371/76 | ESFP | 7w8
+Kid Cudi | 379/41 | INFP | 4w3
+The Notorious B.I.G. | 333/44 | ISFP | 9w8
+Brad Taste | 225/38 | INTP | 5w4
+Dr. Dre | 289/89 | ENTJ | 8w9
+Cupcakke | 344/173 | ENFP | 4w3
+Earl Sweatshirt | 378/74 | INTP | 5w4
+Iggy Azalea | 291/47 | ISTP | 3w4
+Rico Nasty | 292/45 | ESFP | 8w7
+Bones | 301/79 | INTP | 5w4
+DMX | 328/83 | ESFP | 8w7
+Lil Uzi Vert | 348/62 | ISFP | 4w3
+King Krule | 157/20 | INTP | 4w5
+Lil Darkie | 361/97 | ENFP | 4w3
+Yung Gravy | 269/19 | ENTP | 7w8
+Saweetie | 191/88 | ESTJ | 3w2
+André 3000 | 271/16 | ENFP | 4w3
+21 Savage | 273/29 | ISTP | 8w9
+Pharrell Williams | 194/19 | ISFP | 9w1
+Hopsin | 211/46 | INTJ | 4w3
+Aaliyah | 242/22 | ISFP | 9w1
+Lauryn Hill | 169/19 | INFJ | 4w3
+DJ Khaled | 222/40 | ESFP | 3w4
+Anderson Paak | 118/9 | ESFP | 7w6
+JPEGMAFIA | 290/58 | ENFP | 7w8
+Denzel Curry | 219/18 | ENFP | 6w7
+Nas | 201/37 | INFP | 6w5
+G-Eazy (Gerald Gillum) | 168/47 | ESTP | 3w4
+Ice Cube | 177/16 | ISTP | 6w5
+Young Thug | 181/56 | INFP | 4w3
+Pop Smoke | 184/37 | ISTP | 8w9
+Lil Wayne | 215/42 | ISTP | 9w8
+Jay Park | 185/32 | ESTP | 3w4
+Janelle Monáe | 203/29 | ENFJ | 4w3
+Chlöe | 157/55 | ESFP | 3w2
+Blackbear | 177/28 | ISFP | 4w3
+Future | 192/41 | ISTP | 3w4
+Vince Staples | 174/50 | ENTP | 5w6
+Macklemore | 149/19 | ENFP | 7w6
+Stokeley Goulbourne "Ski Mask the Slump God" | 192/16 | ENTP | 7w6
+Jhené Aiko | 133/25 | ISFP | 9w1
+Fergie | 137/13 | ESTP | 3w4
+Erykah Badu | 165/32 | INFP | 4w3
+Chris Brown | 192/20 | ESFP | 7w8
+Freddie Dredd | 157/19 | ESTP | 7w8
+Jorja Smith | 142/15 | ISFP | 9w8
+Eazy-E | 172/14 | ESTP | 8w7
+Flo Milli | 167/18 | ESTP | 8w7
+Keshi (Casey Luong) | 134/44 | ISFP | 4w3
+Joey Bada\$$ | 139/32 | ENFJ | 1w9
+Chief Keef | 154/47 | ISTP | 8w9
+J.I.D | 119/18 | INFP | 9w1
+Big Sean | 128/19 | ISTP | 9w8
+Steve Lacy | 152/16 | ISFP | 4w5
+ZillaKami | 128/17 | ISTP | 9w8
+Scarlxrd | 182/30 | ISFP | 4w3
+Mario Judah | 164/9 | ESFP | 8w7
+Dominic Fike | 125/12 | ISFP | 4w3
+Gabriella Wilson (H.E.R.) | 72/6 | INFJ | 1w9
+R. Kelly | 127/27 | ESFJ | 3w4
+Daveed Diggs | 116/4 | INFP | 6w7
+Matthew David Morris (MattyB) | 72/55 | ESFP | 7w6
+Summer Walker | 118/62 | ISTP | 5w4
+Daniel Caesar | 109/12 | INFP | 5w4
+Simbiatu Ajikawo \[Little Simz] | 112/28 | INFP | 4w5
+Danny Brown | 141/8 | ENFP | 7w6
+The Kid Laroi (Charlton Howard) | 120/19 | ISFP | 4w3
+Lil Yachty | 113/29 | ISFP | 4w3
+Chance the Rapper | 101/10 | ENFP | 2w3
+John Legend | 100/4 | ISFP | 9w1
+bbno$ | 126/10 | ISTP | 9w8
+Lil Dicky | 106/10 | ENFP | 7w6
+Baby Keem | 119/7 | INFP | 9w8
+Aesop Rock | 96/9 | INTP | 5w4
+YoungBoy Never Broke Again | 112/45 | ISTP | 8w9
+will.i.am | 107/4 | ENFP | 4w3
+Becky G | 89/13 | ESFP | 3w2
+Jason Derulo | 115/13 | ESFP | 3w4
+Missy Elliott | 121/7 | ENFP | 4w3
+Kevin Gates | 90/18 | INFP | 4w5
+Thundercat | 118/14 | INTP | 9w1
+Pusha T | 103/10 | ESTP | 8w9
+Khalid | 84/2 | ISFP | 9w1
+Yeat | 155/68 | ISTP | 9w8
+\$crim (\$uicideboy$) | 114/8 | ISTP | 9w8
+Wiz Khalifa | 109/6 | ISFP | 9w8
+Ludacris | 102/4 | ENTP | 7w8
+Joyner Lucas | 88/13 | ENTP | 3w4
+Kodak Black | 93/6 | ESTP | 7w8
+Russ | 79/13 | INTJ | 3w4
+Lil B/Based God | 96/23 | ENFP | 4w3
+Roddy Ricch | 84/20 | ISTP | 3w4
+Lil Baby | 103/34 | ISTP | 3w4
+Busta Rhymes | 100/12 | ENTJ | 8w7
+Brent Faiyaz | 88/11 | ISTP | 4w3
+Zheani Sparkes | 146/32 | ESFP | 8w7
+Comethazine | 78/16 | ISTP | 8w7
+Blueface | 85/10 | ESTP | 7w8
+Princess Nokia | 95/13 | ENTP | 7w8
+Kevin Abstract | 103/8 | INFP | 4w3
+Bobby Shmurda | 76/13 | ESFP | 7w8
+Coolio | 69/19 | ISTP | 8w9
+Night Lovell | 79/11 | ISFP | 8w7
+Sabrina Claudio | 84/8 | ENFJ | 3w4
+Lil Tecca | 66/18 | INTP | 6w5
+Ol' Dirty Bastard | 83/3 | ENFP | 4w3
+Trippie Redd | 86/11 | ESFP | 7w8
+Oliwka Brazil | 78/6 | ESFP | 3w4
+Aminé | 81/19 | ENFP | 7w8
+Freddie Gibbs | 79/16 | ISTP | 7w8
+Tinashe | 82/3 | ESFP | 7w6
+Powfu | 75/5 | ISFP | 4w3
+George Watsky | 54/4 | INFP | 4w3
+Nipsey Hussle | 79/19 | INTJ | 1w9
+Matt Champion | 71/4 | ISFP | 9w8
+Usher | 75/4 | ENFP | 4w3
+Kehlani Parrish | 81/4 | ENFP | 7w6
+Lil Tracy | 78/11 | ESFP | 4w3
+GZA | 83/4 | INTP | 5w6
+Viper | 88/21 | ENFP | 4w3
+slowthai | 86/3 | ESFP | 7w8
+Bazzi | 65/9 | ENFJ | 3w2
+Cordae | 59/7 | ENFJ | 3w2
+Lupe Fiasco | 71/21 | ENFP | 9w1
+Tay-K | 79/13 | ESTP | 8w7
+Ruby da Cherry (\$uicideboy$) | 88/23 | INFP | 4w5
+Sematary | 99/8 | ISFP | 4w3
+Lil Mariko (Kat Zhang 真莉子) | 81/11 | ESFP | 3w4
+070 Shake | 70/10 | ISFP | 7w6
+Tory Lanez | 75/14 | ESFP | 3w4
+Lil Timmy Tim | 70/8 | ENFP | 7w8
+Takeoff | 82/14 | ISTP | 9w8
+Labrinth | 69/3 | ENFP | 4w5
+Big Boi | 60/2 | ENFP | 9w8
+Sean Combs | 66/15 | ESTP | 3w4
+RZA | 63/1 | INFJ | 9w8
+Lil Xan (Diego Leanos) | 82/3 | ISFP | 9w8
+DeAndre Cortez Way ( Soulja Boy ) | 88/12 | ESTP | 3w4
+6LACK | 58/11 | ISFP | 5w4
+Lil' Kim | 85/16 | ESFP | 7w8
+Central Cee | 80/19 | ISTP | 9w8
+Method Man | 57/7 | ESTP | 9w8
+Ice-T | 65/0 | ENTJ | 8w7
+Solange | 65/4 | ISFP | 4w5
+Jay Kay | 69/0 | ENFP | 7w6
+Polo G | 66/12 | ISFP | 4w3
+LL Cool J | 52/5 | ENFP | 4w3
+Queen Latifah | 62/3 | ENFJ | 8w9
+Pouya | 57/0 | INTP | 9w8
+JOBA | 80/6 | INFP | 4w3
+K.Flay | 47/5 | ENTP | 6w5
+T.I. | 75/12 | ISTP | 7w6
+Kelly Rowland | 55/10 | ESFP | 7w6
+Iann Dior | 60/8 | ISFP | 4w3
+Common | 55/0 | INFJ | 9w8
+Ghostface Killah | 43/1 | ENTP | 6w5
+Dax | 55/2 | ENFP | 4w3
+A$AP Ferg | 45/4 | ESFP | 7w8
+Michael Render (Killer Mike) | 61/2 | ENFJ | 3w2
+24kGoldn | 68/17 | ESFP | 7w6
+T-Pain | 60/0 | ESFP | 7w6
+Immortal Technique | 75/4 | ENTJ | 8w9
+Q-Tip | 54/8 | ENFP | 7w6
+Mos Def | 49/2 | INFP | 4w5
+Parsalip | 35/4 | ENTP | 7w6
+Dave | 52/8 | INFP | 9w8
+Gunna | 41/15 | ISFJ | 3w4
+Hobo Johnson | 55/10 | ENFP | 4w5
+NLE Choppa | 60/15 | ESFP | 7w8
+Black Thought | 65/1 | INTP | 5w4
+Seal | 48/3 | ENFJ | 2w3
+Edy Edouard "$not" | 53/6 | ISTP | 8w9
+Tyga | 54/9 | ESTP | 7w8
+J Dilla | 53/13 | INFP | 4w5
+Pierre Bourne | 49/3 | ISFP | 4w3
+Stormzy | 47/3 | ISFP | 7w6
+Ken Carson | 32/5 | ESFP | 7w6
+Meek Mill | 62/0 | ESFP | 6w7
+Rick Ross | 62/11 | ESTP | 8w7
+Tech N9ne | 44/3 | ENTP | 7w8
+Mary J. Blige | 50/4 | ESFJ | 2w1
+Desiigner | 45/5 | ESFP | 7w6
+Skepta | 38/6 | ISTP | 8w7
+Robin Thicke | 42/5 | ESTP | 7w6
+YNW Melly | 52/4 | ISFP | 7w8
+Spaceghostpurrp | 54/8 | ISFP | 4w3
+Ciara | 45/1 | ISFP | 9w1
+Merlyn Wood | 45/2 | ESFP | 7w6
+Royce da 5'9" | 31/2 | ESTP | 9w8
+Brocasito | 48/12 | ENTJ | 3w4
+Big T | 53/2 | ESTP | 7w8
+ppcocaine | 53/9 | ESFP | 8w7
+Shygirl | 43/29 | ISTP | 7w8
+Akon | 37/4 | ESFP | 7w6
+Gucci Mane | 50/0 | ESTP | XwX
+Raekwon | 34/4 | ENTJ | 3w4
+Bearface | 51/0 | ISFP | 9w8
+Kid Rock | 39/1 | ESTP | 3w4
+Noname | 51/11 | INFP | 9w1
+Lamont Coleman (Big L) | 37/5 | ISTP | 8w7
+Swae Lee | 32/2 | ISFP | 9w1
+Action Bronson | 51/5 | ESTP | 7w8
+Vanilla Ice | 41/1 | ESTP | 7w8
+Snow Tha Product | 35/5 | ESTP | 7w8
+D'Angelo | 39/2 | INFJ | 4w5
+Ab-Soul | 36/4 | ENFP | 7w8
+Lucki | 50/13 | ISFP | 4w3
+The Game | 39/7 | ESTP | 8w7
+Tierra Whack | 33/9 | ENFP | 7w6
+Capital STEEZ | 50/2 | INFP | 4w5
+Jon Bellion | 40/4 | ENFP | 3w2
+Aries | 53/0 | ISFP | 4w5
+Raveena Aurora | 44/13 | INFP | 9w1
+Jessie Reyez | 39/1 | ISFP | 4w3
+Ari Lennox | 29/8 | INFP | 2w3
+Michael Dapaah (Big Shaq) | 30/5 | ENFP | 7w6
+Questlove | 42/4 | INTP | 5w6
+Otis Jackson Jr. (Madlib) | 38/0 | INTP | 5w4
+Jaime Meline (El-P) | 48/0 | ENTP | XwX
+R.A.P. Ferreira | 45/5 | INTP | 4w5
+JT (City Girls) | 32/4 | ESTP | 7w8
+Zack Fox | 35/3 | ENFP | 7w6
+Timbaland | 49/3 | ESFJ | 3w4
+Dom McLennon | 45/2 | INFP | 4w5
+UMI | 42/1 | INFP | 4w5
+nothing,nowhere. | 31/19 | INFP | 4w3
+Eyedea | 45/11 | INFJ | 4w5
+Aloe Blacc | 40/2 | INFP | 9w1
+Kreayshawn | 31/1 | ESFP | 7w8
+p4rkr/osquinn | 45/5 | ISFP | 4w3
+King Von | 42/23 | ISTP | 8w7
+Teyana Taylor | 42/0 | ENTJ | 8w7
+A Boogie Wit Da Hoodie | 30/4 | ISFP | 9w8
+Lil Skies | 29/1 | ISFP | 7w6
+Ne-Yo | 35/4 | ISFP | 4w3
+Brooke Candy | 45/0 | ESTP | 7w8
+Grandmaster Flash | 19/1 | ESTP | 5w6
+Destroy Lonely | 49/9 | ISFP | 4w3
+BabyTron | 48/4 | INTP | 9w8
+DDG | 33/4 | ENFJ | 3w4
+Ren | 33/9 | INTP | 4w5
+Giveon | 27/2 | ISFP | 4w3
+Bruno Major | 24/2 | INFJ | 4w5
+Lil Durk | 46/4 | ESTP | 6w7
+Aitch | 28/0 | ISFP | 7w6
+Lolo Zouai | 32/2 | ISFP | 4w3
+Flo Rida | 34/0 | ESTJ | 8w7
+Yelawolf | 32/0 | ISTP | 7w8
+Chuck D | 29/1 | ENTJ | 8w7
+Lisa "Left Eye" Lopes | 43/2 | ENFP | 7w8
+Mimi Mercedez | 37/7 | ESTP | 8w7
+iamjakehill | 29/9 | INFJ | 4w5
+Young M.A | 42/2 | ENTJ | 8w7
+Joseph Utsler (Shaggy 2 Dope) | 23/1 | ISTP | 9w8
+Alina Baraz | 27/1 | ISFP | 4w3
+TobyMac | 25/0 | ENFP | 4w3
+NASCAR ALOE | 34/3 | ISTP | 7w8
+Joanna “Jojo” Levesque | 34/0 | ESFP | 8w7
+ScHoolboy Q | 29/0 | ISFP | 8w9
+Wyclef Jean | 23/0 | ENFJ | 3w2
+Ghost Mountain | 34/1 | INFP | 5w4
+Saaheem Valdery (SahBabii) | 45/4 | INTP | 4w5
+Cochise | 39/4 | ENFP | 7w6
+Nav | 33/7 | INTP | 6w7
+SAINt JHN | 46/10 | ENTJ | 7w6
+Boosie Badazz | 37/12 | ESTP | 7w6
+Rod Wave | 25/3 | ISFP | 4w3
+Ameer Vann | 25/5 | ISTP | 8w9
+Saba | 26/3 | INFJ | 4w3
+Adym S. Evans (Verbalase) | 23/0 | ESFP | 7w6
+Billy Woods | 30/1 | INTP | 5w4
+Angel Haze | 22/1 | INTJ | 4w5
+Killstation | 29/0 | INTP | 4w5
+Waka Flocka Flame | 37/4 | ESTP | 7w8
+Offset | 27/3 | ISFP | 3w4
+Brandy | 31/2 | ENFJ | 3w2
+Isaiah Rashad | 34/7 | ISFP | 4w3
+Qveen Herby | 32/5 | ESTP | 3w4
+Afroman | 24/5 | ESFP | 7w6
+Quavo | 30/2 | ESTP | 7w6
+Ty Dolla Sign | 37/3 | ISFP | 5w4
+Del the Funky Homosapien | 19/1 | ENFP | 4w3
+Syd tha Kyd | 23/4 | ISFP | 9w1
+SosMula | 37/2 | ESTP | 8w7
+Lil Jon | 25/1 | ESFP | 7w8
+Be'O | 16/2 | INTJ | XwX
+Jennifer Hudson | 24/0 | ESFJ | 4w3
+Rakim | 19/4 | ISTP | 5w6
+DJ Shadow | 28/0 | INTP | 5w4
+Coi Leray | 27/4 | ESTP | 7w8
+Lil Mosey | 24/3 | ESFP | 7w8
+645AR | 22/4 | ENTP | 7w6
+Don Toliver | 19/0 | ISFP | 9w8
+Aaron Bruno | 24/0 | INFP | 4w5
+Matt Ox | 36/1 | ISFP | 4w3
+Travie McCoy | 29/1 | ENFP | 7w6
+Getter | 18/0 | ISFP | 4w3
+Biz Markie | 17/2 | ESFP | 7w6
+Toomaj Salehi | 17/3 | INFJ | XwX
+SoFaygo | 17/2 | ESFP | 4w3
+Masked Wolf | 24/3 | ISFP | 9w8
+BigKlit | 31/1 | ESFP | 7w8
+Bryson Tiller | 24/1 | INFP | 4w3
+JME | 25/1 | ENTP | XwX
+Cassie Ventura | 22/5 | ISFP | 9w1
+Kelis | 31/2 | ENFP | 4w3
+Benny the Butcher | 21/3 | ENTJ | 8w7
+Smokepurpp | 21/0 | ESTP | 9w8
+RiFF RAFF | 28/2 | ESTP | 7w8
+KRS-One | 20/2 | ENFJ | 1w2
+Inspectah Deck | 19/0 | ISTP | 9w8
+Token | 18/2 | ISTP | 6w5
+Sweet Pain | 26/1 | ENFP | XwX
+Sobel | 16/4 | ISFP | XwX
+Tyrese Gibson | 19/1 | ESTP | 9w8
+2 Chainz | 27/3 | ENFP | 7w6
+Miguel | 17/2 | ISFP | XwX
+Unknown P | 36/1 | ENTP | 3w2
+Audrey Nuna | 22/2 | ISTP | 9w8
+Remy Ma | 23/1 | ESTJ | 8w7
+Big K.R.I.T | 22/1 | ENTJ | 3w4
+Rag'n'Bone Man | 22/2 | ISFP | 9w8
+Joseph Bruce (Violent J) | 28/3 | ESTP | 8w7
+Tommy Genesis | 20/0 | INFJ | 4w3
+Bow Wow | 22/0 | ENFP | 9w1
+Afrika Bambaataa | 25/0 | INTP | 5w6
+Toni Braxton | 23/0 | ISFJ | 1w2
+DD Osama | 18/2 | ISTP | 9w8
+Murubutu | 23/1 | INFJ | 1w9
+Leon Faun | 25/0 | INFP | 4w5
+Lous and The Yakuza | 18/6 | INFJ | 4w3
+Josh A | 19/2 | ENTP | XwX
+\$WAGGOT | 29/1 | INFP | 4w3
+Jay Electronica | 21/1 | INTP | 9w8
+IceJJFish | 18/0 | ESFP | 7w6
+Abra (darkwaveduchess) | 20/2 | ISTP | 9w8
+Kilo Kish | 29/0 | ISFP | 4w5
+Xavier Wulf | 17/0 | ISTP | 9w8
+Open Mike Eagle | 19/0 | INFP | 4w5
+Nai Palm | 26/0 | ENFP | 4w3
+Canibus | 28/3 | INTJ | 5w4
+Lil Tjay | 23/6 | ESFP | XwX
+AKTHESAVIOR | 15/1 | INTJ | 4w5
+Deuce | 17/7 | ESFP | 6w7
+Vanessa Williams | 32/1 | ENTJ | 3w4
+Young Jeezy | 12/2 | ESTP | 6w7
+MC Hammer | 25/0 | ESFP | 7w6
+MCA | 20/1 | ISFP | 9w1
+MC Ren | 18/0 | ISTP | 9w8
+Hoodie Allen | 13/0 | ESTP | 7w6
+Doechii | 23/1 | ENFP | 7w8
+Menace Santana | 29/1 | INTP | 5w4
+Summrs | 37/9 | ESFP | 4w3
+BIA | 17/1 | ISFP | 3w4
+Saucy Santana | 28/1 | ESFP | 3w4
+DUCKWRTH | 24/1 | ENFP | 4w3
+Timothy Chantarangsu | 14/0 | ESTP | 7w6
+Ninho | 20/0 | ENFP | 7w8
+Mod Sun | 22/2 | ENFP | 4w3
+Rejjie Snow | 11/3 | ISFP | XwX
+Chika | 16/1 | ESTJ | 4w3
+Bryce Savage (Neffex) | 20/2 | ESFP | 7w8
+Flava Flav | 16/2 | ESFP | 7w6
+Akala | 24/3 | INFJ | XwX
+Big Pun | 15/1 | ESTP | 8w7
+Prodigy | 16/0 | ISTP | 6w7
+Ka | 25/1 | INFJ | 4w5
+Witt Lowry | 13/0 | INFP | 4w3
+KYLE "SuperDuperKyle" | 22/1 | ENFP | 7w6
+Sadistik | 26/3 | INTJ | 8w9
+K.A.A.N | 20/2 | INTP | 5w4
+Tommy Wright III | 29/2 | INTP | 6w5
+Chase Icon | 24/0 | ISFP | 8w7
+Zasko Master | 12/0 | ENTP | 8w9
+Weiland | 17/2 | ISFP | 4w3
+The Alchemist | 22/1 | ISTP | 9w8
+Young Dolph | 16/3 | ISTP | 8w9
+03 Greedo | 14/0 | ESFP | 6w5
+Gurldoll | 13/1 | INFP | 9w8
+Young Nudy | 17/7 | ISTP | 7w8
+Kiana Ledé | 23/2 | XXXX | 3w4
+Baby Tate | 19/0 | ENTJ | 3w2
+Regan Farquhar (Busdriver) | 17/0 | ENFP | 4w3
+Talib Kweli | 22/5 | INFJ | 5w4
+Nelly | 28/1 | ESTP | 7w8
+Kevin Olusola | 13/1 | ESTJ | 5w6
+Ceelo Green | 20/0 | ISFP | 4w3
+Justina Valentine | 12/1 | ESTP | 7w8
+Westside Gunn | 18/2 | ENFP | 3w4
+Tokyo's Revenge | 23/3 | ENTP | 7w8
+E-40 | 18/3 | ISTP | 6w5
+Ray J | 21/1 | ESTP | 7w8
+Ja Rule | 15/1 | ESFP | 7w6
+Lil Loaded | 19/0 | ISFP | 9w8
+YBN Nahmir | 10/4 | ESTP | 7w8
+Issa Gold (Solace) | 12/2 | INFJ | XwX
+Kool Keith | 19/1 | ENTP | 7w8
+Tionne "Tboz" Watkins | 14/0 | ISFJ | 2w1
+Solitario | 23/7 | INTJ | 5w4
+Ajs Nigrutin | 35/1 | ENTP | 9w8
+Black Kray | 18/0 | ISFP | 4w3
+Ramirez | 15/0 | ISTP | 8w7
+Lancey Foux | 22/0 | ISFP | 4w3
+ssgkobe | 18/4 | ESTJ | 3w4
+Haarper | 17/1 | ISTP | 8w9
+Jay Rock | 17/0 | ISTP | 9w8
+Shotgun Willy | 18/1 | ENTP | 7w8
+DJ Quik | 12/2 | ISTP | 9w8
+Lecrae | 17/1 | ENFP | 3w4
+Fetty Wap | 10/1 | ESFP | 6w7
+Joss Stone | 9/0 | ISFP | XwX
+Nate Dogg | 18/0 | ISTP | 9w8
+Master P | 13/2 | ENTJ | 3w4
+Celeste | 19/0 | INFP | 4w5
+Slug (Atmosphere) | 25/1 | INFP | 4w5
+Conway the Machine | 19/1 | ISTP | 8w9
+Redman | 14/2 | ENFP | 7w8
+Knxwledge | 14/1 | INTP | 5w4
+Ugly God | 17/1 | ENTP | 7w6
+Chris Travis | 11/0 | ISTP | 9w8
+Tamar Braxton | 13/1 | ESFP | 7w8
+Trey Songz | 11/1 | ESFP | 3w4
+Juicy J | 17/0 | ESFP | 7w8
+MAVI | 15/0 | INFP | 5w4
+Kiesza | 14/1 | ENFP | 7w8
+Tobi Lou | 16/0 | ENFP | 7w6
+Eve | 23/0 | ISTP | 6w7
+PARTYNEXTDOOR | 14/0 | ISFP | 4w5
+Samsa | 14/2 | ENFP | 7w6
+Tinie Tempah | 5/0 | ESFP | 9w8
+YG | 20/5 | ESTP | 8w9
+B-Real | 13/0 | ESTP | 7w8
+DRAM | 15/0 | ENFP | 7w6
+Fat Joe | 18/1 | ESFP | 7w6
+Bootsy Collins | 13/3 | ESFP | 4w3
+Mike Stud | 13/1 | ESFP | 8w7
+Hackle | 20/0 | ISTP | 9w8
+Joeyy | 18/7 | ISFP | 9w8
+Jakub Konopka Kukon | 16/0 | ISFP | 4w5
+Shenseea | 30/0 | ESFP | XwX
+Tirpa | 11/0 | ISFP | XwX
+Corbin Smidzik (Spooky Black) | 22/0 | ISFP | 4w3
+Donny Hathaway | 17/0 | INFJ | 4w3
+Sokodomo | 20/1 | INTP | 5w4
+Nardo Wick | 14/4 | ISTP | 8w9
+Wicca Phase Springs Eternal | 22/0 | INFP | 4w5
+Burna Boy | 13/1 | ENFP | 7w6
+Monaleo | 18/2 | INFP | 9w1
+Mach-Hommy | 27/4 | INTJ | 5w4
+Blu | 12/0 | INFP | 9w8
+Dizzee Rascal | 13/0 | INTJ | 8w9
+Still Woozy | 21/0 | INFP | 4w3
+Fox Stevenson | 17/3 | ENFP | 7w8
+Digga D | 13/6 | ISTP | 7w8
+Sybyr (Syringe) | 21/3 | ENFP | 4w3
+Bktherula | 17/1 | ISFP | 4w3
+Guardin | 18/0 | INFP | 4w3
+Vic Mensa | 15/1 | INFP | 6w7
+Masta Killa | 13/0 | INFP | 4w5
+Kelela | 18/1 | ISFP | 4w3
+Teejayx6 | 18/4 | ISTP | 8w7
+Chamillionaire | 10/0 | ENTP | 6w5
+Michelle Williams | 9/1 | ENFJ | 9w1
+Babyface | 17/0 | ISFP | 3w4
+Maxo Kream | 12/0 | ENTJ | 8w7
+Curtis Adams (Unkle Adams) | 18/1 | ESFJ | 4w3
+Mick Jenkins | 17/1 | INFJ | 9w1
+Wale | 10/0 | XXXX | 7w6
+Gnash | 10/1 | ISFP | 4w3
+Baby Goth (Bria Bueno) | 11/1 | ENFP | 7w6
+Saul Williams | 21/1 | ENTP | 5w4
+Smino | 20/4 | XXXX | 9w8
+O.T. Genasis | 20/0 | ENTP | 8w9
+Bizzy Bone | 14/4 | ENFP | 8w7
+Phife Dawg | 8/0 | ESFP | XwX
+KHALI | 56/0 | ENTP | 7w8
+EI-P | 18/0 | INTP | XwX
+TisaKorean | 12/5 | ENTP | 7w6
+Famous Dex | 13/0 | ESFP | 4w3
+Felix Kummer | 19/1 | ENTP | 7w6
+Deko | 11/0 | ENFP | XwX
+B.o.B | 1/0 | ENFP | 4w3
+Duwap Kaine | 9/6 | ENFP | 7w8
+Murda | 18/1 | ESFP | 7w6
+Arrdee | 17/1 | ESTP | 7w6
+Slick Rick | 10/0 | INTP | 5w6
+Genesis Owusu | 10/0 | ENFP | 4w3
+Sampha | 11/0 | INFP | 4w5
+\$tupid Young | 9/0 | INTP | 8w9
+Guapdad 4000 | 16/0 | ENTP | XwX
+Moneybagg Yo | 14/2 | ESTP | 8w9
+Andy Mineo | 11/0 | ENFP | 3w4
+Tion Wayne | 28/1 | ESTP | 8w9
+6 dogs | 13/1 | ISFP | 4w3
+Porcelain Black (Alaina Marie Beaton) | 18/0 | ESTP | 8w7
+AJ Tracey | 8/0 | ISTP | XwX
+JOHNNASCUS | 15/2 | INTP | 4w5
+Brennan Savage | 14/0 | ISTP | 4w3
+Stunna Girl | 18/2 | ESFP | 7w6
+Bexey | 11/0 | ISFP | 4w3
+Fredo Santana | 12/0 | ISTP | 8w9
+Mack 10 | 16/1 | ESTJ | 8w9
+MC Eiht | 10/0 | ISTP | 7w8
+Xzibit | 10/1 | ESTP | 7w8
+French Montana | 11/1 | ESFP | 3w4
+India.Arie | 7/0 | INFP | 4w3
+Ashanti | 20/0 | ESFP | 3w2
+G Herbo | 10/1 | ISFP | 6w7
+Meechy Darko | 9/1 | ENTJ | 7w6
+Lord Infamous | 17/0 | ISTP | 8w9
+Hazel English | 13/0 | INFP | 4w5
+Rich the Kid | 14/0 | ESTP | 3w4
+Quelle Chris | 11/1 | INFP | 4w5
+Jidenna | 11/0 | ENTP | 3w4
+Tulisa Contostavlos | 9/0 | ESTP | 7w6
+Fat Nick | 9/1 | ISTP | 6w5
+Krayzie Bone | 9/1 | ENFP | 4w3
+Masta Ace | 9/0 | ESTJ | 8w9
+Bobby Brown | 10/0 | ESTP | 8w9
+FOX IN OIL | 7/0 | XXXX | 2w3
+Buckshot | 17/1 | ENFP | 4w5
+grentperez | 7/0 | ENFP | XwX
+Teenage Disaster (Thorne Baker) | 6/2 | ENTP | 7w8
+Santan Dave | 10/2 | INFP | 9w8
+Mnak | 9/0 | ESFP | 7w6
+Latto | 15/0 | ESFP | 3w4
+Kinny Zimmer | 15/0 | INTP | 4w5
+Rubi Rose (Benton) | 9/8 | ISTP | XwX
+Boldy James | 10/0 | ISTP | 9w8
+Mariah the Scientist | 8/4 | INFP | 4w3
+ThouxanBanFauni | 13/1 | ISTP | 9w8
+Toosii | 10/0 | ISFP | XwX
+Curren$y | 18/0 | ISTP | 9w8
+4s4ki | 24/1 | ISFP | 4w3
+PLAZA (Michael Martin Kaminski) | 5/0 | ISTP | XwX
+Tkay Maidza | 8/1 | ISFP | 4w3
+aldn | 10/3 | INFP | 4w3
+Proof | 10/1 | ENFP | 7w6
+Pimp C | 5/0 | ESTJ | 8w7
+Snor | 13/8 | INFJ | 4w5
+Rory Gallagher | 10/1 | INFJ | 5w4
+Cities Aviv | 10/0 | INFP | XwX
+Sleepy Hallow | 14/1 | INTP | 6w5
+Joy Crookes | 8/1 | ESFJ | 6w7
+Fivio Foreign | 12/2 | ISTP | 9w8
+Safaree | 15/0 | ESTP | 7w6
+
+---
+---

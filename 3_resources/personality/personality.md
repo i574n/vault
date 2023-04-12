@@ -928,3 +928,136 @@ Além do MBTI, o Personality Database também apresenta outros sistemas de class
 
 ---
 ---
+
+## yeah, but this is from the personality database website, votes from users. can we consider that from now on as scientific method? answer in pt-br
+
+< Embora o Personality Database seja uma plataforma interessante e popular para a classificação de tipos de personalidade de celebridades e personagens fictícios, não podemos considerá-la um método científico. Isso ocorre porque o site depende principalmente de votos e opiniões de usuários, que são subjetivos e podem ser influenciados por vieses pessoais.
+
+Para um método científico, seria necessário conduzir estudos e pesquisas controladas, utilizando métodos estatísticos e ferramentas psicométricas validadas para determinar a personalidade de alguém. Além disso, a pesquisa deve ser revisada por pares e publicada em revistas científicas respeitáveis para garantir a qualidade e confiabilidade dos resultados.
+
+## using an e-meter alone, detail in pt-br three precise readings to consider such assessments scientific
+
+< O e-meter é um dispositivo eletrônico utilizado pela Igreja da Cientologia como uma ferramenta para medir a resposta galvânica da pele durante as sessões de aconselhamento chamadas de "auditorias". Alega-se que o e-meter é capaz de identificar mudanças no estado mental e emocional de uma pessoa. No entanto, não há evidências científicas sólidas para apoiar essas alegações.
+
+Para considerar uma avaliação baseada no uso de um e-meter como científica, seria necessário atender a pelo menos três critérios precisos:
+
+1. Reprodutibilidade: Os resultados obtidos com o uso do e-meter devem ser consistentes e reprodutíveis. Isso significa que, se o mesmo indivíduo for submetido a auditorias semelhantes em diferentes ocasiões, o e-meter deve fornecer leituras consistentes e comparáveis.
+2. Validade: A fim de provar a validade do e-meter como uma ferramenta científica, seria necessário demonstrar que ele é capaz de medir com precisão aquilo que alega medir. Isso envolveria a realização de estudos que correlacionam as leituras do e-meter com outras medidas científicas estabelecidas e validadas para a avaliação de estados mentais e emocionais.
+3. Revisão por pares: Para que os resultados sejam aceitos pela comunidade científica, é necessário que pesquisas relacionadas ao e-meter sejam publicadas em revistas científicas respeitáveis e revisadas por especialistas independentes da área. A revisão por pares é uma etapa crucial no processo científico, pois garante que os resultados sejam analisados e avaliados criticamente antes de serem aceitos como parte do conhecimento científico.
+
+Infelizmente, o e-meter não atende a esses critérios e, portanto, não pode ser considerado uma ferramenta científica confiável.
+
+## write a qna manifesto in pt-br with 5 questions, that when answered using an e-meter could contemplate the 3 required items while gauging the user's e/i type (considering the underlying cognitive functions)
+
+< Manifesto Q&A para Avaliação do Tipo E/I Utilizando um E-Meter
+
+Introdução: Este manifesto Q&A tem como objetivo propor um conjunto de perguntas a serem respondidas por meio do uso de um e-meter, visando contemplar os três critérios científicos (reprodutibilidade, validade e revisão por pares) para determinar o tipo E/I (Extrovertido ou Introvertido) de um indivíduo, com base nas funções cognitivas subjacentes.
+
+Pergunta 1: Quando você está em um ambiente social, prefere interagir com várias pessoas ou tende a se concentrar em conversas mais profundas com poucos indivíduos?
+
+Objetivo: Avaliar a preferência do indivíduo por interações sociais extrovertidas ou introvertidas, que podem ser correlacionadas com as funções cognitivas subjacentes.
+
+Pergunta 2: Em situações de tomada de decisão, você tende a confiar mais em suas próprias percepções e experiências pessoais ou considera a opinião e o feedback dos outros?
+
+Objetivo: Investigar se o indivíduo utiliza funções cognitivas extrovertidas ou introvertidas ao tomar decisões.
+
+Pergunta 3: Quando está diante de um problema complexo, você prefere analisá-lo sozinho e buscar soluções internamente ou discuti-lo com outras pessoas para obter novas perspectivas?
+
+Objetivo: Identificar se o indivíduo utiliza funções cognitivas extrovertidas ou introvertidas no processo de resolução de problemas.
+
+Pergunta 4: Como você lida com críticas ou feedback negativo? Prefere refletir internamente sobre a situação e avaliar sua própria conduta ou discutir o assunto com outras pessoas para obter conselhos e apoio?
+
+Objetivo: Compreender a tendência do indivíduo em processar emoções e reações de forma extrovertida ou introvertida.
+
+Pergunta 5: Em suas atividades de lazer, você prefere passar tempo sozinho, desfrutando de hobbies introspectivos, ou busca atividades sociais e interações com outras pessoas?
+
+Objetivo: Identificar a preferência do indivíduo por atividades de lazer que envolvam funções cognitivas extrovertidas ou introvertidas.
+
+Nota: Para que esse conjunto de perguntas possa ser considerado válido e científico ao utilizar um e-meter, é fundamental que sejam conduzidos estudos controlados e revisados por pares, que demonstrem a correlação entre as leituras do e-meter e as respostas dos indivíduos a estas perguntas, bem como a capacidade do e-meter de fornecer resultados consistentes e reprodutíveis.
+
+## write a qna manifesto in pt-br with 5 questions, that when answered using an e-meter could contemplate the 3 required items while gauging the user's s/n type (considering the underlying cognitive functions)
+
+< Manifesto Q&A para Avaliação do Tipo S/N Utilizando um E-Meter
+
+Introdução: Este manifesto Q&A tem como objetivo propor um conjunto de perguntas a serem respondidas por meio do uso de um e-meter, visando contemplar os três critérios científicos (reprodutibilidade, validade e revisão por pares) para determinar o tipo S/N (Sensorial ou Intuitivo) de um indivíduo, com base nas funções cognitivas subjacentes.
+
+Pergunta 1: Quando precisa tomar uma decisão, você se baseia principalmente em fatos concretos e experiências anteriores ou em ideias abstratas e possibilidades futuras?
+
+Objetivo: Avaliar a preferência do indivíduo por funções cognitivas sensoriais ou intuitivas ao tomar decisões.
+
+Pergunta 2: Ao aprender algo novo, você prefere receber informações detalhadas e passo a passo ou explorar conceitos gerais e conexões entre ideias?
+
+Objetivo: Investigar se o indivíduo utiliza funções cognitivas sensoriais ou intuitivas no processo de aprendizagem.
+
+Pergunta 3: Em suas conversas cotidianas, você se sente mais à vontade discutindo eventos e experiências do dia a dia ou ideias abstratas e teorias?
+
+Objetivo: Identificar se o indivíduo se inclina mais para funções cognitivas sensoriais ou intuitivas em suas interações sociais.
+
+Pergunta 4: Quando planeja suas metas e objetivos, você se concentra em etapas práticas e alcançáveis ou em visões ambiciosas e de longo prazo?
+
+Objetivo: Compreender se o indivíduo utiliza funções cognitivas sensoriais ou intuitivas ao estabelecer metas e objetivos.
+
+Pergunta 5: Em suas atividades de lazer, você prefere passatempos que envolvam experiências sensoriais (como esportes ou artesanato) ou atividades que estimulem a imaginação e a criatividade (como ler ou escrever)?
+
+Objetivo: Identificar a preferência do indivíduo por atividades de lazer que envolvam funções cognitivas sensoriais ou intuitivas.
+
+Nota: Para que esse conjunto de perguntas possa ser considerado válido e científico ao utilizar um e-meter, é fundamental que sejam conduzidos estudos controlados e revisados por pares, que demonstrem a correlação entre as leituras do e-meter e as respostas dos indivíduos a estas perguntas, bem como a capacidade do e-meter de fornecer resultados consistentes e reprodutíveis.
+
+## write a qna manifesto in pt-br with 5 questions, that when answered using an e-meter could contemplate the 3 required items while gauging the user's f/t type (considering the underlying cognitive functions)
+
+< Manifesto Q&A para Avaliação do Tipo F/T Utilizando um E-Meter
+
+Introdução: Este manifesto Q&A tem como objetivo propor um conjunto de perguntas a serem respondidas por meio do uso de um e-meter, visando contemplar os três critérios científicos (reprodutibilidade, validade e revisão por pares) para determinar o tipo F/T (Sentimento ou Pensamento) de um indivíduo, com base nas funções cognitivas subjacentes.
+
+Pergunta 1: Ao tomar decisões importantes, você tende a dar mais peso aos seus sentimentos e emoções ou aos fatos e à lógica?
+
+Objetivo: Avaliar a preferência do indivíduo por funções cognitivas baseadas em sentimentos ou pensamentos ao tomar decisões.
+
+Pergunta 2: Quando alguém próximo a você enfrenta um problema, você costuma oferecer apoio emocional e compreensão ou sugere soluções práticas e objetivas?
+
+Objetivo: Identificar se o indivíduo utiliza funções cognitivas relacionadas ao sentimento ou ao pensamento para ajudar os outros.
+
+Pergunta 3: Em um debate, você valoriza mais a harmonia e o consenso entre os participantes ou a busca pela verdade e pelo melhor argumento?
+
+Objetivo: Compreender a inclinação do indivíduo em priorizar funções cognitivas de sentimento ou pensamento durante discussões e debates.
+
+Pergunta 4: Quando se depara com uma situação de conflito, você tende a abordá-la de maneira empática e compreensiva ou com uma perspectiva lógica e racional?
+
+Objetivo: Investigar a tendência do indivíduo em lidar com conflitos utilizando funções cognitivas relacionadas ao sentimento ou ao pensamento.
+
+Pergunta 5: Ao avaliar o sucesso de um projeto, você considera mais importante a satisfação e o bem-estar das pessoas envolvidas ou a eficiência e a eficácia na realização dos objetivos?
+
+Objetivo: Identificar se o indivíduo prioriza funções cognitivas baseadas em sentimentos ou pensamentos ao avaliar o sucesso de uma iniciativa.
+
+Nota: Para que esse conjunto de perguntas possa ser considerado válido e científico ao utilizar um e-meter, é fundamental que sejam conduzidos estudos controlados e revisados por pares, que demonstrem a correlação entre as leituras do e-meter e as respostas dos indivíduos a estas perguntas, bem como a capacidade do e-meter de fornecer resultados consistentes e reprodutíveis.
+
+## write a qna manifesto in pt-br with 5 questions, that when answered using an e-meter could contemplate the 3 required items while gauging the user's j/p type (considering the underlying cognitive functions)
+
+< Manifesto Q&A para Avaliação do Tipo J/P Utilizando um E-Meter
+
+Introdução: Este manifesto Q&A tem como objetivo propor um conjunto de perguntas a serem respondidas por meio do uso de um e-meter, visando contemplar os três critérios científicos (reprodutibilidade, validade e revisão por pares) para determinar o tipo J/P (Julgador ou Perceptivo) de um indivíduo, com base nas funções cognitivas subjacentes.
+
+Pergunta 1: Em relação à organização e planejamento, você prefere estabelecer uma rotina estruturada e seguir um cronograma ou ser mais flexível e adaptável às circunstâncias?
+
+Objetivo: Avaliar a preferência do indivíduo por funções cognitivas de julgamento (J) ou percepção (P) no contexto de organização e planejamento.
+
+Pergunta 2: Ao enfrentar uma situação ambígua, você sente a necessidade de tomar uma decisão rápida e definir um curso de ação ou prefere coletar mais informações antes de se comprometer com uma escolha?
+
+Objetivo: Investigar se o indivíduo utiliza funções cognitivas de julgamento (J) ou percepção (P) ao abordar situações incertas.
+
+Pergunta 3: Quando trabalha em um projeto, você tende a se concentrar mais na conclusão das tarefas e no cumprimento dos prazos ou na exploração de novas ideias e possibilidades?
+
+Objetivo: Identificar se o indivíduo utiliza funções cognitivas de julgamento (J) ou percepção (P) no processo de realização de projetos.
+
+Pergunta 4: Como você lida com regras e expectativas sociais? Você tende a respeitá-las e segui-las ou questioná-las e buscar soluções alternativas?
+
+Objetivo: Compreender a tendência do indivíduo em abordar regras e normas utilizando funções cognitivas de julgamento (J) ou percepção (P).
+
+Pergunta 5: Em situações de conflito ou desentendimento, você prefere resolver rapidamente a questão e estabelecer uma solução definitiva ou explorar diferentes perspectivas e opiniões antes de chegar a um acordo?
+
+Objetivo: Identificar a preferência do indivíduo por abordagens de resolução de conflitos que envolvam funções cognitivas de julgamento (J) ou percepção (P).
+
+Nota: Para que esse conjunto de perguntas possa ser considerado válido e científico ao utilizar um e-meter, é fundamental que sejam conduzidos estudos controlados e revisados por pares, que demonstrem a correlação entre as leituras do e-meter e as respostas dos indivíduos a estas perguntas, bem como a capacidade do e-meter de fornecer resultados consistentes e reprodutíveis.
+
+---
+---
