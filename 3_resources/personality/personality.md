@@ -917,3 +917,14 @@ Atenciosamente, A Equipe da Iniciativa MBTI
 
 ---
 ---
+
+## talk about the personality database website in pt-br
+
+< O Personality Database é um site que reúne informações e discussões sobre personalidades, tipos psicológicos e teorias de personalidade. O site é mais conhecido por fornecer informações sobre os 16 tipos de personalidade do MBTI (Myers-Briggs Type Indicator), uma teoria baseada na tipologia de personalidade criada por Carl Gustav Jung.
+
+Além do MBTI, o Personality Database também apresenta outros sistemas de classificação de personalidade, como o Enneagrama e o Big Five, bem como discussões sobre celebridades, personagens fictícios e personalidades históricas e suas supostas categorizações. Os visitantes podem contribuir com suas opiniões sobre os tipos de personalidade dessas pessoas, criar listas e participar de discussões em fóruns para compartilhar ideias e aprender mais sobre teorias da personalidade.
+
+É importante notar que as informações contidas no site são baseadas na opinião e experiência dos usuários e não devem ser tomadas como verdades absolutas. A tipologia de personalidade é uma área complexa e em constante evolução, e é importante considerar diversas perspectivas e abordagens.
+
+---
+---
