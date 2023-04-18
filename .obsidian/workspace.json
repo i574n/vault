@@ -23,7 +23,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-03-28.md",
+                        "file": "2023-04-18.md",
                         "mode": "source",
                         "source": false
                       }
@@ -43,7 +43,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-03-28.md",
+                        "file": "2023-04-18.md",
                         "mode": "source",
                         "source": false
                       }
@@ -90,7 +90,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "1_projects/gpt3/rhyme 6.md",
+                        "file": "1_projects/gpt/rhyme 6.md",
                         "mode": "source",
                         "source": false
                       }
@@ -102,7 +102,7 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "1_projects/chatgpt/chatgpt.md",
+                        "file": "1_projects/gpt/chatgpt.md",
                         "mode": "source",
                         "source": false
                       }
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-03-28.md",
+                "file": "2023-04-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-03-28.md",
+                "file": "2023-04-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -221,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-03-28.md"
+                "file": "2023-04-18.md"
               }
             }
           },
@@ -241,7 +241,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -262,42 +263,42 @@
   },
   "active": "dc07dfe1a6bd2c0b",
   "lastOpenFiles": [
-    "2023-03-27.md",
-    "1_projects/travel/travel.i574n.md",
-    "2023-03-26.md",
-    "2023-03-28.md",
-    "3_resources/travel/travel.md",
-    "3_resources/music/music.md",
-    "1_projects/chatgpt/chatgpt.md",
-    "3_resources/dialects/korean.md",
-    "1_projects/gpt3/rhyme 6.md",
-    "1_projects/gpt3/gpt3.html.md",
-    "3_resources/hunting/hunting.md",
-    "3_resources/hunting",
-    "3_resources/motorcycle/motorcycle.md",
-    "3_resources/motorcycle",
-    "1_projects/mecha-haze/mecha-haze.html.md",
+    "2023-04-14.md",
+    "2023-04-18.md",
+    "3_resources/dialects/portuguese.md",
+    "3_resources/tech/tech.md",
+    "1_projects/gpt/chatgpt.md",
     "3_resources/ai/ai.md",
-    "3_resources/travel/travel.html.md",
-    "2_areas/identity/identity.fc1943s.pdf.md",
-    "2_areas/identity/identity.fc1943s.png.md",
-    "3_resources/hip-hop/hip-hop.md",
-    "3_resources/relationships/relationships.md",
-    "3_resources/sex/sex.md",
-    "3_resources/relationships",
-    "1_projects/travel/travel.i574n.html.md",
-    "2023-03-25.md",
-    "3_resources/astrology/astrology.html.md",
-    "3_resources/astrology/astrology.fc1943s.md",
+    "3_resources/politics/politics.md",
+    "3_resources/travel/maps.png.md",
+    "3_resources/travel/maps.md",
+    "3_resources/typing/typing.i574n.md",
+    "3_resources/travel/maps.html.md",
+    "3_resources/travel/travel.md",
+    "3_resources/typing/typing.md",
+    "2023-04-13.md",
+    "3_resources/typing/typing.html.md",
+    "3_resources/sex/sex.pdf.md",
+    "2023-04-12.md",
     "3_resources/ai/ai.pdf.md",
-    "3_resources/compilers/compilers.pdf.md",
-    "3_resources/ai",
-    "3_resources/math",
-    "3_resources/twitter",
-    "1_projects/travel",
-    "3_resources/navigation",
-    "3_resources/typing",
-    "3_resources/mercadolivre",
+    "3_resources/magic/magic.md",
+    "3_resources/hip-hop/hip-hop.md",
+    "3_resources/weather/weather.md",
+    "2023-04-11.md",
+    "3_resources/personality/personality.md",
+    "3_resources/drugs/drugs.md",
+    "3_resources/food/food.md",
+    "3_resources/dialects/dialects.md",
+    "3_resources/food",
+    "3_resources/martial-arts",
+    "3_resources/physics",
+    "3_resources/hardware",
+    "3_resources/dance",
+    "1_projects/hanauittang",
+    "2_areas/chores",
+    "3_resources/clojure",
+    "3_resources/hunting",
+    "3_resources/motorcycle",
     "3_resources/travel/attachments/Pasted image 20230301083934.png",
     "3_resources/travel/attachments/Pasted image 20230228135416.png",
     "3_resources/travel/attachments/Pasted image 20230227223718.png",
