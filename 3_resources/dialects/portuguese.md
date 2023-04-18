@@ -52,3 +52,47 @@ Além disso, a interferência externa em questões internas pode ser comparada �
 Por fim, a ideia de uma sociedade com valores explícitos e coesos em pleno exercício de sua soberania pode ser comparada à ideia de sistemas complexos adaptativos. Assim como em sistemas complexos, onde os agentes individuais interagem e se adaptam em resposta a mudanças no ambiente, uma sociedade com valores compartilhados e uma governança eficaz pode se adaptar e evoluir para enfrentar os desafios que surgem. Isso pode levar a mudanças estruturais que melhoram a resiliência e a eficiência do sistema como um todo.
 
 ---
+---
+
+## detail in pt-br the etymology of polyglot
+
+< A etimologia da palavra "poliglota" tem suas raízes em duas línguas antigas: o grego e o latim. A palavra é composta por duas partes: "poli-", que vem do grego "polýs" (πολύς), e "glota", que vem do grego "glôssa" (γλῶσσα) e do latim "glotta" ou "glossa".
+
+A parte "polýs" (πολύς) em grego antigo significa "muito" ou "muitos", e é comumente usada como prefixo em palavras que denotam uma grande quantidade ou diversidade. Por exemplo, "poliedro" (muitas faces) e "policultura" (muitas culturas agrícolas).
+
+A parte "glôssa" (γλῶσσα) em grego antigo e "glotta" ou "glossa" em latim significam "língua" ou "idioma". Essa palavra também é a raiz de outras palavras relacionadas à linguagem, como "glossário" (uma lista de termos e suas definições) e "glossolalia" (falar em línguas, geralmente em um contexto religioso).
+
+Combinando esses elementos, temos a palavra "poliglota", que literalmente significa "muitas línguas" ou "muitos idiomas". Um poliglota é, portanto, uma pessoa que tem conhecimento ou habilidade para falar e entender várias línguas.
+
+## detail in pt-br the etymology of authority
+
+< A etimologia da palavra "autoridade" também tem suas origens em línguas antigas, neste caso, especificamente no latim. A palavra "autoridade" vem do latim "auctoritas", que, por sua vez, deriva de "auctor".
+
+A palavra latina "auctor" refere-se a alguém que origina, cria ou promove algo, sendo muitas vezes traduzida como "autor" ou "criador". O termo "auctor" tem suas raízes no verbo latino "augere", que significa "aumentar", "desenvolver" ou "fazer crescer". Isso estabelece uma conexão com a noção de que a autoridade é algo que confere poder ou influência.
+
+A palavra "auctoritas" em latim descreve a qualidade ou o caráter de alguém que tem poder, influência ou comando, e pode ser traduzida como "autoridade" ou "prestígio". Além disso, "auctoritas" também pode se referir ao poder ou influência legal que alguém exerce, como no caso de uma figura governamental ou de um líder.
+
+Portanto, a etimologia da palavra "autoridade" está relacionada à ideia de poder, influência e comando, bem como à origem ou promoção de algo. Ao longo do tempo, a palavra evoluiu e se transformou em diferentes línguas, mas suas raízes latinas ainda são evidentes no português e em outras línguas românicas.
+
+## detail in pt-br the etymology of owner
+
+< A etimologia da palavra "proprietário" em português está relacionada às línguas antigas, principalmente ao latim. A palavra "proprietário" vem do termo latino "proprietarius", que por sua vez é derivado de "proprietas". Essa palavra latina é uma forma substantiva de "proprius", que significa "próprio" ou "pertencente a alguém".
+
+A palavra "proprius" em latim está relacionada ao conceito de posse, propriedade e exclusividade. Essa noção de posse pessoal e particular é refletida em outras palavras com raízes semelhantes, como "propriedade" (algo que pertence a alguém) e "apropriar" (tomar posse de algo ou torná-lo próprio).
+
+O termo "proprietarius" em latim era usado para descrever alguém que tinha posse ou controle sobre algo, seja um objeto, um animal ou um terreno. A palavra evoluiu ao longo do tempo e passou por mudanças fonéticas e gramaticais, resultando na palavra "proprietário" em português e suas variantes em outras línguas românicas, como "propietario" em espanhol e "propriétaire" em francês.
+
+Portanto, a etimologia da palavra "proprietário" está relacionada à ideia de posse, propriedade e exclusividade, com suas raízes no latim e uma evolução histórica que a levou a fazer parte do vocabulário do português e de outras línguas românicas.
+
+## detail in pt-br the etymology of slaughterer
+
+< A etimologia da palavra "abatedor" em português está relacionada ao latim e ao verbo "abater". O termo "abatedor" deriva desse verbo e é usado para descrever alguém que abate animais, principalmente para fins de consumo humano.
+
+O verbo "abater" tem suas raízes no latim "abbatere", que é uma combinação do prefixo "ab-", que indica separação ou afastamento, e do verbo "battere", que significa "bater" ou "golpear". Em conjunto, "abbatere" pode ser traduzido como "derrubar", "abater" ou "matar".
+
+Ao longo do tempo, o verbo "abbatere" evoluiu e se transformou em diferentes línguas. No português, ele se transformou no verbo "abater", que mantém o sentido original de derrubar, matar ou derrotar algo, como no contexto de abater um animal para consumo ou derrubar uma árvore.
+
+A palavra "abatedor", portanto, refere-se a alguém que realiza o ato de abater, geralmente no contexto de animais destinados ao consumo humano, como em um matadouro. A etimologia da palavra "abatedor" tem suas raízes no latim e no verbo "abater", com um significado relacionado à ação de derrubar, matar ou derrotar algo.
+
+---
+---
