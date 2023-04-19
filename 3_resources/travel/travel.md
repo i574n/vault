@@ -11180,3 +11180,78 @@ Lembre-se de que essas pontuações são estimativas aproximadas e podem não re
 
 ---
 ---
+
+## detail in pt-br the fish found in the lake chinchaycocha
+
+< O Lago Chinchaycocha, também conhecido como Lago Junín, está localizado na região central do Peru, na província de Junín. Este lago de alta altitude abriga diversas espécies de peixes, algumas das quais são endêmicas da região. As espécies encontradas no Lago Chinchaycocha incluem:
+
+1. Orestias cuvieri (boga): Esta espécie de peixe é endêmica do Lago Chinchaycocha e é caracterizada por seu corpo alongado e achatado, com uma boca superior proeminente. A boga é uma espécie importante para a pesca local, sendo utilizada como fonte de alimento e também na produção de farinha de peixe.
+2. Trucha (Oncorhynchus mykiss): Também conhecida como truta-arco-íris, a trucha é uma espécie de peixe de água doce que foi introduzida no lago. É uma espécie popular entre os pescadores esportivos e é apreciada por sua carne saborosa e textura firme.
+3. Pejerrey (Basilichthys bonariensis): O pejerrey é uma espécie de peixe de água doce encontrada em várias partes da América do Sul. Tem um corpo alongado e prateado, com uma linha escura ao longo de seu corpo e uma boca pequena e pontuda. O pejerrey é uma espécie popular entre os pescadores e é apreciado por seu sabor delicado.
+4. Carpa (Cyprinus carpio): A carpa é uma espécie de peixe de água doce que foi introduzida no Lago Chinchaycocha. É um peixe grande e resistente, com um corpo robusto e escamas grandes. A carpa é uma espécie invasora que pode competir com espécies nativas por recursos e espaço.
+5. Sapo (Gastrotheca riobambae): Embora não seja um peixe, o sapo Gastrotheca riobambae é uma espécie de anfíbio que vive nas áreas úmidas ao redor do Lago Chinchaycocha. Ele tem uma aparência única, com uma bolsa na parte de trás para carregar seus ovos e girinos.
+
+Além dessas espécies, o Lago Chinchaycocha também abriga uma rica diversidade de flora e fauna, incluindo aves aquáticas e plantas aquáticas, que desempenham um papel fundamental na manutenção do ecossistema do lago. A preservação deste ecossistema é crucial para a sobrevivência dessas espécies e para o bem-estar das comunidades locais que dependem do lago para seu sustento.
+
+## list in pt-br the largest fish in the lake with proper specs using the metric system and nutritional information
+
+< No Lago Chinchaycocha, as espécies de peixes de maior porte são a truta-arco-íris (Oncorhynchus mykiss) e a carpa (Cyprinus carpio). Vamos detalhar as especificações e informações nutricionais desses peixes:
+
+1\ Truta-arco-íris (Oncorhynchus mykiss)
+
+Tamanho e peso: As trutas-arco-íris adultas no Lago Chinchaycocha podem atingir até 60 cm de comprimento e pesar até 4 kg, embora a média seja de cerca de 30 cm e 1 kg.
+
+Informações nutricionais (por 100g de carne cozida):
+
+- Calorias: 142 kcal
+- Proteínas: 20,5 g
+- Gorduras: 6,2 g (das quais 1,3 g são gorduras saturadas)
+- Colesterol: 61 mg
+- Ômega-3: aproximadamente 1 g
+
+2\ Carpa (Cyprinus carpio)
+
+Tamanho e peso: As carpas adultas no Lago Chinchaycocha podem atingir até 120 cm de comprimento e pesar até 30 kg, embora a média seja de cerca de 60 cm e 5 kg.
+
+Informações nutricionais (por 100g de carne cozida):
+
+- Calorias: 127 kcal
+- Proteínas: 18,4 g
+- Gorduras: 5,6 g (das quais 1,2 g são gorduras saturadas)
+- Colesterol: 62 mg
+- Ômega-3: aproximadamente 0,3 g
+
+É importante observar que a qualidade da água e as condições ambientais podem afetar o tamanho e o peso dos peixes, bem como as informações nutricionais. Além disso, a carne de peixe é uma fonte de proteína de alta qualidade, com baixo teor de gordura saturada e colesterol, e rica em ácidos graxos ômega-3, que são benéficos para a saúde cardiovascular e cerebral.
+
+## list in pt-br the largest fish in the lake titicaca in bolivia with proper specs using the metric system and nutritional information
+
+< O Lago Titicaca, localizado na fronteira entre o Peru e a Bolívia, é o lago navegável mais alto do mundo e abriga várias espécies de peixes. Algumas das espécies de maior porte encontradas no Lago Titicaca são:
+
+1\ Truta-arco-íris (Oncorhynchus mykiss)
+
+Tamanho e peso: As trutas-arco-íris no Lago Titicaca podem atingir até 60 cm de comprimento e pesar até 4 kg, embora a média seja de cerca de 30 cm e 1 kg.
+
+Informações nutricionais (por 100g de carne cozida):
+
+- Calorias: 142 kcal
+- Proteínas: 20,5 g
+- Gorduras: 6,2 g (das quais 1,3 g são gorduras saturadas)
+- Colesterol: 61 mg
+- Ômega-3: aproximadamente 1 g
+
+2\ Peixe-rei (Orestias ispi)
+
+Tamanho e peso: Os peixes-rei no Lago Titicaca podem atingir até 18 cm de comprimento e pesar até 70 g.
+
+Informações nutricionais: Dados nutricionais específicos para o Orestias ispi não estão amplamente disponíveis, mas os peixes da família Orestias tendem a ser ricos em proteínas e possuem baixo teor de gordura.
+
+3\ Carachi (Trichomycterus rivulatus)
+
+Tamanho e peso: Os carachis no Lago Titicaca podem atingir até 20 cm de comprimento e pesar até 100 g.
+
+Informações nutricionais: Dados nutricionais específicos para o Trichomycterus rivulatus não estão amplamente disponíveis, mas os peixes desta família geralmente são ricos em proteínas e possuem baixo teor de gordura.
+
+É importante notar que a qualidade da água e as condições ambientais podem afetar o tamanho e o peso dos peixes, bem como as informações nutricionais. Além disso, a carne de peixe é uma fonte de proteína de alta qualidade, com baixo teor de gordura saturada e colesterol, e rica em ácidos graxos ômega-3, que são benéficos para a saúde cardiovascular e cerebral.
+
+---
+---

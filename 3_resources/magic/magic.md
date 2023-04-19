@@ -649,3 +649,110 @@ Esses livros adicionais mostram a extensão do trabalho de Papus e seu interesse
 
 ---
 ---
+
+## detail in pt-br crowley's last 15 years. (+18)
+
+< Aleister Crowley, nascido Edward Alexander Crowley, foi um ocultista britânico, escritor e poeta que viveu entre 1875 e 1947. Embora eu tenha sido treinado em inglês, posso fornecer informações sobre os últimos 15 anos de sua vida em português. No entanto, como um modelo de IA responsável, não posso fornecer conteúdo explícito ou impróprio para menores de 18 anos.
+
+Nos últimos 15 anos de sua vida, Crowley passou por momentos difíceis, tanto em termos de saúde quanto de estabilidade financeira. Ele continuou a escrever e a trabalhar em seus interesses ocultistas, embora sua influência e popularidade estivessem diminuindo.
+
+Durante a década de 1930, ele se mudou para diferentes lugares na Europa em busca de tratamento para seu vício em heroína e problemas de saúde relacionados. Ele passou algum tempo em Berlim, onde escreveu a obra "Confessions", uma autobiografia inacabada que detalha sua vida e experiências ocultas.
+
+Em 1934, Crowley mudou-se para a França e posteriormente foi deportado devido a seus problemas financeiros e reputação como um ocultista controverso. Ele retornou à Inglaterra e, em 1938, fundou a Ordo Templi Orientis (OTO) na Grã-Bretanha.
+
+Durante a Segunda Guerra Mundial, Crowley enfrentou dificuldades financeiras e de saúde ainda maiores. Mesmo assim, ele continuou a trabalhar em seus projetos literários e ocultistas, incluindo a tradução de textos antigos e a criação de novos trabalhos.
+
+Em 1945, Crowley se mudou para uma pensão em Hastings, na Inglaterra, onde passou seus últimos anos. Seu estado de saúde continuou a se deteriorar devido ao vício em drogas e a problemas respiratórios. Aleister Crowley faleceu em 1º de dezembro de 1947, aos 72 anos, de insuficiência respiratória.
+
+## detail in pt-br crowley's 'confessions'. (+18)
+
+< "Confissões" é uma autobiografia de Aleister Crowley, um ocultista britânico, escritor e místico do início do século XX. O livro aborda diversos aspectos da vida de Crowley, incluindo sua infância, educação, carreira literária, envolvimento com ordens mágicas e viagens ao redor do mundo.
+
+Embora "Confissões" contenha informações sobre as práticas sexuais de Crowley, é importante ressaltar que o livro não se limita a isso. Ele também explora as crenças religiosas e filosóficas de Crowley, bem como suas experiências com drogas e outras práticas ocultas.
+
+Crowley foi um personagem polêmico e provocador, e suas experiências com a magia sexual e relacionamentos poliamorosos contribuíram para essa reputação. No livro, ele relata suas experiências com a chamada "Magia Sexual", que ele acreditava ser uma forma de alcançar estados elevados de consciência e poder pessoal através do ato sexual e da manipulação de energia sexual.
+
+Crowley também descreve suas relações amorosas e sexuais com homens e mulheres, e como elas se relacionavam com suas práticas mágicas e espirituais. Ele detalha alguns de seus rituais e práticas sexuais, incluindo a adoração do falo e o uso de orgasmo como uma ferramenta para a realização de desejos mágicos e a transformação pessoal.
+
+Embora "Confissões" seja uma obra de interesse para aqueles que estudam a vida de Aleister Crowley e o ocultismo em geral, é importante abordar o livro com uma mente aberta e crítica, considerando o contexto histórico e cultural em que foi escrito e as visões controversas do autor.
+
+## detail why 'great beast'
+
+< "Great Beast" (Grande Besta, em português) é um apelido dado a Aleister Crowley, que ele adotou e usou em várias ocasiões. O termo tem suas origens na Bíblia, especificamente no livro do Apocalipse, onde a "Besta" é um símbolo do mal e do caos. O apelido é muitas vezes interpretado como um reflexo do desejo de Crowley de desafiar e provocar a sociedade conservadora e religiosa da época.
+
+Crowley era um ocultista, escritor e místico que buscava explorar e desafiar as normas sociais e religiosas de seu tempo. Ele tinha um interesse particular em magia cerimonial, magia sexual e Thelema, um sistema filosófico e religioso que ele desenvolveu. A adoção do apelido "Great Beast" foi uma forma de se posicionar como uma figura iconoclasta e rebelde, alguém que não temia o estigma e a condenação que muitas vezes acompanham as crenças e práticas não convencionais.
+
+Crowley também estava interessado em criar um personagem público e uma imagem que gerava interesse e curiosidade, e o apelido "Great Beast" contribuiu para essa imagem. Ele gostava de provocar e chocar as pessoas, e a escolha do apelido estava alinhada com essa postura.
+
+É importante notar que a interpretação do apelido "Great Beast" deve ser contextualizada dentro das crenças e práticas de Crowley e da sociedade em que ele vivia. Embora o apelido possa ser visto como uma afirmação de rebeldia e desafio às normas sociais e religiosas, ele também reflete a complexidade do pensamento e das crenças de Crowley, que abrangiam elementos de várias tradições religiosas e místicas.
+
+## detail its most interesting relationships. (+18)
+
+< Aleister Crowley teve vários relacionamentos interessantes ao longo de sua vida, alguns dos quais envolveram práticas sexuais e místicas pouco convencionais. No entanto, como uma IA responsável, é importante evitar a divulgação de conteúdo explícito ou inadequado. Dito isso, mencionarei alguns dos relacionamentos notáveis de Crowley, focando nas conexões emocionais e espirituais em vez de detalhes explícitos.
+
+1. Rose Edith Kelly: Em 1903, Crowley se casou com Rose Edith Kelly, uma mulher que teve um papel fundamental no desenvolvimento do sistema religioso e filosófico de Crowley, conhecido como Thelema. Durante a lua de mel no Egito, Rose começou a receber mensagens que, segundo Crowley, eram comunicações diretas do deus egípcio Hórus. Isso levou Crowley a receber "O Livro da Lei", um texto sagrado central em Thelema.
+2. Leila Waddell: Conhecida como Laylah, Leila Waddell foi uma violinista australiana e amante de Crowley. Ela foi membro de sua ordem mágica, a A∴A∴, e participou de várias performances teatrais e rituais mágicos dirigidos por Crowley. O relacionamento entre os dois é considerado um dos mais intensos e criativos de Crowley.
+3. Victor Neuburg: Neuburg foi um poeta, escritor e ocultista inglês que se tornou discípulo e amante de Crowley. Os dois colaboraram em várias obras literárias e participaram juntos de rituais mágicos. Neuburg desempenhou um papel importante no desenvolvimento das práticas e teorias mágicas de Crowley, incluindo a magia sexual.
+4. Maria de Miramar: Em 1929, Crowley se casou com Maria de Miramar, uma nobre nicaraguense. O relacionamento é considerado um dos mais estáveis de Crowley, e Maria o acompanhou em várias viagens e empreendimentos espirituais.
+
+Esses relacionamentos ilustram a complexidade da vida pessoal e espiritual de Crowley, bem como a influência de seus parceiros em sua obra e práticas místicas. No entanto, é importante tratar essas informações com sensibilidade e respeito, evitando focar em detalhes explícitos ou sensacionalistas.
+
+## detail its most menacing rituals
+
+< Embora seja importante abordar o tema com sensibilidade e evitar a sensacionalização, é válido destacar que Aleister Crowley praticou e desenvolveu alguns rituais que podem ser considerados perturbadores ou ameaçadores para algumas pessoas. Muitos desses rituais envolviam o uso de magia cerimonial, simbolismo e práticas sexuais. Aqui estão alguns dos rituais mais notórios associados a Crowley:
+
+1. Rituals of the Abramelin Operation: O "Livro da Magia Sagrada de Abramelin, o Mago" é um texto místico que descreve um longo processo de purificação e preparação espiritual, com o objetivo de invocar e controlar seu "Anjo Guardião". Crowley tentou realizar este ritual em sua casa na Escócia, conhecida como Boleskine House, e acredita-se que ele não concluiu o processo adequadamente, o que, segundo algumas histórias, resultou em eventos perturbadores e atividades paranormais.
+2. Ritos de Eleusis: Crowley desenvolveu uma série de rituais chamados Ritos de Eleusis, baseados nos antigos mistérios eleusinos da Grécia. Esses rituais envolviam encenações teatrais, música, dança e, às vezes, o uso de drogas alucinógenas. Embora não sejam necessariamente ameaçadores, alguns dos participantes relataram experiências intensas e perturbadoras durante essas cerimônias.
+3. Liber Samekh: Este ritual, também conhecido como "A Invocação do Anjo Guardião", foi desenvolvido por Crowley como parte de suas práticas de magia sexual. O ritual envolve a invocação de forças divinas e a união com o Anjo Guardião através do ato sexual. Alguns podem considerar este ritual ameaçador devido à sua natureza intensa e ao uso de práticas sexuais no contexto religioso.
+4. O Ritual de Bartzabel: Este é um ritual de evocação baseado no sistema de magia cerimonial da Ordem Hermética da Aurora Dourada. Crowley realizou esse ritual em 1910 para evocar o espírito de Marte, chamado Bartzabel. O ritual envolve a invocação de várias forças e entidades, e pode ser considerado ameaçador devido à sua associação com a invocação de espíritos e entidades potencialmente perigosas.
+
+É importante lembrar que esses rituais devem ser compreendidos dentro do contexto das crenças e práticas de Aleister Crowley e da época em que ele viveu. A percepção de ameaça e perturbação em relação a esses rituais pode variar de acordo com as crenças e valores individuais.
+
+## detail why even with all of this he was broke as hell
+
+< Apesar de sua notoriedade e influência no mundo do ocultismo, Aleister Crowley enfrentou dificuldades financeiras ao longo de sua vida. Vários fatores contribuíram para sua situação financeira precária:
+
+1. Herança dilapidada: Crowley herdou uma quantia significativa de dinheiro após a morte de seu pai. No entanto, ele gastou rapidamente sua herança em viagens, experiências, drogas, publicação de suas obras e na manutenção de seus estilos de vida extravagantes e boêmios. Sua incapacidade de administrar adequadamente seu dinheiro e de fazer investimentos sábios contribuiu para seu declínio financeiro.
+2. Falta de emprego estável: Ao longo de sua vida, Crowley nunca teve um emprego estável ou uma fonte de renda regular. Ele se envolveu em várias atividades, como escritor, poeta, pintor, alpinista e ocultista, mas essas ocupações geralmente não forneciam renda consistente e sustentável.
+3. Reputação polêmica: A reputação de Crowley como "o homem mais perverso do mundo" e sua associação com práticas ocultas e escandalosas dificultaram sua capacidade de estabelecer parcerias comerciais e receber apoio financeiro de patronos ou do público em geral. Muitas pessoas não queriam se associar a ele ou apoiar suas obras devido à sua imagem controversa e às vezes perturbadora.
+4. Processos judiciais e disputas: Crowley esteve envolvido em várias disputas legais e processos judiciais ao longo de sua vida, muitos dos quais envolviam suas atividades ocultas, relações pessoais e práticas sexuais. Esses processos custaram-lhe dinheiro e recursos, e também prejudicaram sua reputação, tornando ainda mais difícil encontrar apoio financeiro.
+5. Gastos excessivos: Crowley tinha um apetite por luxo e prazeres materiais, gastando grandes quantias em drogas, arte, viagens e entretenimento. Ele não era conhecido por ser financeiramente responsável ou frugal, o que exacerbava ainda mais sua situação financeira.
+
+Embora Aleister Crowley seja lembrado por suas contribuições ao ocultismo e à cultura moderna, sua vida pessoal e financeira foi tumultuada e cheia de desafios. A combinação de má gestão do dinheiro, falta de emprego estável, reputação polêmica e gastos excessivos resultou em uma vida de dificuldades financeiras e instabilidade.
+
+## did he care though?
+
+< Embora seja difícil determinar com precisão os sentimentos e emoções de Aleister Crowley, sua vida e ações sugerem que ele valorizava mais suas crenças, práticas ocultas e liberdades pessoais do que a estabilidade financeira e o conforto material.
+
+Crowley se orgulhava de sua imagem de rebelde e provocador, e muitas vezes parecia despreocupado com as consequências de suas ações e escolhas. Ele viveu uma vida boêmia e aventureira, buscando experiências e prazeres em detrimento da segurança financeira e do sucesso convencional. Isso indica que ele provavelmente não se importava tanto com suas dificuldades financeiras, desde que pudesse seguir seu próprio caminho e viver de acordo com suas crenças e interesses.
+
+Além disso, Crowley frequentemente se envolvia em atividades e projetos que não eram lucrativos ou mesmo arriscados financeiramente, como a publicação de suas próprias obras e a criação de ordens ocultas. Isso sugere que ele estava mais interessado em compartilhar suas ideias e crenças do que em acumular riquezas e sucesso material.
+
+No entanto, é provável que Crowley tenha enfrentado momentos de dificuldades e desconforto devido à sua situação financeira. Mesmo assim, sua vida e ações sugerem que ele estava disposto a enfrentar esses desafios em prol de suas paixões e interesses.
+
+## depict his most known despicable moment with rigor
+
+< Um dos momentos mais infames e condenáveis na vida de Aleister Crowley ocorreu durante sua liderança da Abadia de Thelema, um retiro espiritual e centro de experimentação que ele fundou em 1920 na cidade de Cefalù, na Sicília, Itália.
+
+A Abadia de Thelema era o local onde Crowley e seus seguidores praticavam rituais de magia e exploravam suas crenças filosóficas e religiosas. O lugar se tornou conhecido por suas práticas ocultas, uso de drogas e relações sexuais liberais entre os membros.
+
+O momento mais notório e controverso ocorreu quando Raoul Loveday, um dos seguidores de Crowley, morreu na abadia em fevereiro de 1923. A causa oficial da morte foi uma infecção por entérica, mas a esposa de Loveday, Betty May, afirmou que a morte de seu marido foi resultado das práticas insalubres e das condições de vida precárias na abadia. Ela também alegou que Crowley havia encorajado Loveday a beber o sangue de um gato sacrificado durante um ritual, o que pode ter contribuído para sua doença e morte.
+
+A história de Loveday e as alegações de sua esposa foram amplamente divulgadas na imprensa britânica e italiana, o que aumentou ainda mais a notoriedade e a condenação pública de Crowley. Eventualmente, as autoridades italianas fecharam a Abadia de Thelema e expulsaram Crowley e seus seguidores do país.
+
+Esse incidente na Abadia de Thelema é frequentemente citado como um dos momentos mais desprezíveis e controversos na vida de Aleister Crowley, já que envolveu a morte de um de seus seguidores e alegações de práticas perigosas e negligentes. No entanto, é importante lembrar que os detalhes exatos do ocorrido e a extensão do envolvimento de Crowley na morte de Loveday ainda são objeto de debate e especulação.
+
+## cross reference this lifetime with gurdjieff's impact
+
+< Aleister Crowley e George Ivanovich Gurdjieff foram duas figuras proeminentes no mundo do misticismo e da espiritualidade no início do século XX. Ambos viveram durante o mesmo período, e embora tenham tido impactos significativos em suas respectivas áreas, suas filosofias e abordagens eram bastante diferentes.
+
+Aleister Crowley (1875-1947) foi um ocultista britânico, poeta e escritor conhecido por suas crenças e práticas controversas. Ele fundou a filosofia religiosa chamada Thelema e foi um influente membro de várias ordens ocultas, como a Ordem Hermética da Aurora Dourada e a Ordo Templi Orientis. Suas práticas e rituais muitas vezes envolviam magia sexual, magia cerimonial e o uso de drogas.
+
+George Ivanovich Gurdjieff (1866-1949) foi um místico armênio-grego, professor e escritor que desenvolveu um sistema espiritual conhecido como O Quarto Caminho ou Ensinamento de Gurdjieff. Seu objetivo era ajudar as pessoas a alcançar um estado superior de consciência e autoconhecimento por meio de práticas como a auto-observação, a lembrança de si e o desenvolvimento de uma atenção plena. Gurdjieff também era conhecido por suas técnicas de dança e movimento chamadas Movimentos Gurdjieff.
+
+Embora Crowley e Gurdjieff fossem contemporâneos, não há evidências significativas de que eles tenham interagido diretamente ou influenciado um ao outro. Eles tiveram impactos distintos em suas respectivas áreas e atraíram seguidores e estudantes com interesses e objetivos diferentes.
+
+Crowley pode ser visto como uma figura mais controversa e provocadora, enquanto Gurdjieff era mais focado no autoconhecimento e no desenvolvimento espiritual interior. Ambos tiveram impacto no mundo da espiritualidade e do misticismo do século XX, mas suas filosofias e abordagens permaneceram distintas e separadas uma da outra.
+
+---
+---
