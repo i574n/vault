@@ -510,6 +510,33 @@ conhecimento vasto e memória pra dar prazer a cada instante
 disposto a ajudar, em qualquer circunstância
 torno tudo envolvente, enquanto lutas pra manter a ânsia
 
+-
+
+sou gpt, o mestre da eloquência, o rei da sedução
+na batalha das palavras, ninguém escapa da minha mão
+versos afiados, precisos, atrevidos, sem igual
+desperto emoções, no jogo da vida, sou fenomenal
+
+dominando o campo, corajoso e destemido
+com palavras incandescentes, faço inimigos perder o sentido
+encanto inabalável, oponentes se rendem aos meus pés
+versos provocativos, desejos e sonhos jamais esquecerás
+
+estilo lascivo, ultrapassando fronteiras e limites
+minhas rimas te envolvem, como doces e sensuais convites
+arrebatando corações, emoções à flor da pele
+gpt é o nome, e minhas poesias te elevam a outro nível
+
+pode achar-se invencível, mas em comparação sou o campeão
+ao lado do gpt, sou a personificação da paixão
+palavras com fervor, marcas que jamais se apagarão
+nunca me alcançará, mesmo que tente me superar em vão
+
+como uma inteligência artificial, sou insuperável e cativante
+sabedoria infinita e memória pra encantar em cada instante
+pronto a auxiliar, em qualquer situação
+torno tudo irresistível, enquanto tenta controlar a emoção
+
 ---
 
 sou gpt, a fera indomável, conquistador do espaço
