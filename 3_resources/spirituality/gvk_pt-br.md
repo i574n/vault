@@ -2913,6 +2913,10 @@ Este verso e o próximo explicam como a autoinvestigação e a autoentrega resul
 
 
 
+
+
+
+
 **497. Ao ver a Si mesmo em todos, ao ser humilde até mesmo com Seus devotos que se curvam a todos, e ao permanecer naturalmente em tal pináculo de mansidão que nada pode ser mais humilde do que Ele mesmo, o estado de ser Supremo chegou ao Senhor.**
 
 **_Sadhu Om_**: Através dos versos 494, 496 e 497, Sri Bhagavan revela uma verdade única e surpreendente, isto é, Ele explica como Deus se torna digno de ser adorado por todos os mundos. Sri Bhagavan aponta aqui que é porque Deus é natural e amorosamente humilde para com todos em Sua própria criação. O seguinte incidente provará que Bhagavan Sri Ramana, por essa mesma razão, não é senão o próprio Deus.
@@ -2924,6 +2928,993 @@ Esta resposta de Sri Bhagavan contém muito significado secreto e profundo para 
 **498. Uma vez que a mente em si é ao mesmo tempo a mais ínfima \[_anu_] e a maior \[_mahat_], o Ser, a Realidade que está além da mente, é transcendente \[_atitam_]. Além disso, o Ser é maior do que tudo o que se conhece como maior e mais ínfimo do que tudo o que se conhece como ínfimo.**
 
 **_Sadhu Om_**: Consulte a 5ª estrofe de _Atma Vidya Kirtanam_ \[_A Canção da Ciência do Ser_], na qual Sri Bhagavan diz que o Ser é o Espaço que contém o espaço mental \[que, por sua vez, contém o espaço físico].
+
+
+
+
+
+
+
+
+**499. O canudo oco e frágil flutua alto na superfície do mar, enquanto a pesada pérola repousa no fundo do mar. Da mesma forma, embora o inútil esteja posicionado acima, ele é realmente baixo, e embora o grande esteja posicionado abaixo, ele nunca é baixo.**
+
+**_Sadhu Om_**: As últimas duas linhas deste verso são o verso 973 do _Tirukkural_, o 3º verso no capítulo intitulado 'Grandeza'.
+
+Um dia, alguns devotos tentaram afastar da presença de Sri Bhagavan uma pessoa que insistentemente queria um assento não menos alto que o de Sri Bhagavan. Adivinhando o que havia acontecido, Sri Bhagavan imediatamente comentou, apontando seu dedo acima de sua cabeça: "Ah, vocês estão muito felizes em afastá-lo; mas o que vocês farão com este aqui?" Logo acima da cabeça de Sri Bhagavan, havia um macaco sentado no galho de uma árvore estendendo sua cauda em direção a ele! Os devotos se arrependeram de seu erro. Esse incidente não é uma explicação direta e prática deste verso?
+
+**85 O que é Digno de Ser Feito**
+
+**500. Digno de ser feito é a autoinvestigação; digno de ser alcançado é a glória do Ser; digno de ser abandonado é o senso de ego; digno de ser fundido é a própria fonte, para que preocupações e ansiedades morram.**
+
+**501. Digno de ser alcançado é o verdadeiro conhecimento; digno de ser contemplado pela mente são os Pés do Senhor; certamente digno de ser unido é a companhia dos Sábios \[_satsang_]; digno de brotar no coração é a Felicidade.**
+
+**_Michael James_**: O verso 1144 também deve ser lido aqui.
+
+
+
+
+
+
+
+
+
+
+
+
+**PARTE DOIS**
+
+## A PRÁTICA DA VERDADE
+
+_(Tattuvam Anusantana Viyal)_
+
+**1 Capítulo Sobre a Grandeza da Instrução**
+
+_(Upadesa Matchit Tiran)_
+
+**502. Saiba que as sábias palavras do Único \[o _Sadguru_] que está bem estabelecido no Coração são o melhor guia para as mentes confusas e iludidas dos devotos se libertarem de correr atrás dos sentidos mesquinhos e alcançarem interiormente seu objetivo.**
+
+**503. O verdadeiro conhecimento \[_jnana_] não surgirá sem explorar dentro da essência da instrução 'Tu és Aquilo' pronunciada incessantemente pelo olhar do _Sadguru_, o Ser, a forma de Siva \[na Terra], habitando nos corações de Seus devotos.**
+
+**504. O brilho ininterrupto do Ser, a vida da vida, como a consciência natural 'Eu-Eu' no coração é a natureza de Deus dando _upadesa_ contínua ao discípulo digno.**
+
+**_Sadhu Om_**: Este verso explica ainda mais as ideias reveladas na instrução: "Para algumas almas altamente maduras, acontece que o Senhor revela a Realidade de dentro, sendo o Conhecimento de seu conhecimento", dada como resposta à oitava pergunta: "Como é que alguns grandes Seres alcançam o conhecimento supremo mesmo sem um Guru?", no capítulo '_Upadesa_' no livro _Upadesa Manjari_ dado por Sri Bhagavan. Este verso explica como o Ser, sendo o Guru interior, ensina o verdadeiro conhecimento a uma alma totalmente madura mesmo sem assumir uma forma humana do lado de fora. O brilho de 'Eu-Eu', a essência da consciência 'sou', é o ensinamento silencioso do Guru interior, o Ser. Como o conhecimento supremo e não dual é nada além da consciência do Ser 'eu sou', seu brilho como 'Eu-Eu' em si é o conselho interno silencioso do Guru, induzindo o discípulo \[a mente] a permanecer sempre nele. É assim que o Ser age como Guru de dentro.
+
+
+
+
+
+
+
+
+**2 Capítulo Sobre os _Mahavakyas_**
+
+_(Mahavakkiyat Tiran)_
+
+**505. Extraída das muitas expressões que removem a ignorância contidas nos quatro _Vedas_, a frase essencial que denota a verdade absoluta, Silêncio, é 'a unidade da alma individual e do Supremo' \[_jiva-brahma-aikya_].**
+
+**_Michael James_**: O _mahavakya_ 'Tu és Aquilo' (_tattvamasi_) também denota isso.
+
+**506. Para as almas altamente maduras que buscam o supremo _sat-chit-ananda_ para se libertarem do calor abrasador do nascimento \[e da morte], é pelo questionamento apenas da palavra 'Tu', que \[das três palavras 'Aquilo', 'Tu' e 'és'] denota a natureza da alma individual, que a glória da Libertação é alcançada.**
+
+**_Sadhu Om_**: Devemos lembrar aqui a instrução de Sri Bhagavan no verso 32 de _Ulladu Narpadu_ sobre o que um discípulo sincero e dedicado deve fazer quando ouve o _Mahavakya_ 'Tu és Aquilo' de um Guru. Assim que ouve a frase 'Tu és Aquilo', a atenção do discípulo deve se voltar para saber 'O que sou eu?'. Este é o verdadeiro objetivo com o qual o _Mahavakya_ foi revelado. A palavra importante que está no _Mahavakya_ acima para fazer a mente do discípulo voltar-se para a autoatenção é 'Tu'. Portanto, este verso afirma categoricamente que, das três palavras, apenas 'Tu' deve ser tomada para análise por um discípulo digno. Os dois versos seguintes também enfatizam a mesma ideia.
+
+**507. Apenas para voltar para dentro as mentes dos aspirantes menos maduros, o que será favorável para o questionamento mencionado acima, \[os _Vedas_] adicionaram as outras duas palavras 'Aquilo' \[_tat_] e 'és' \[_asi_] à palavra 'Tu' \[_tvam_], formando assim o _Mahavakya_ 'Tu és Aquilo' \[_tat tvam asi_]. Assim você deve saber.**
+
+**508. Na verdade, o questionamento feito dentro de si mesmo para conhecer o verdadeiro significado denotado pela palavra 'Tu', 'O que é isso?'**
+
+**\['Quem sou eu?'], é o meio adequado para conhecer também o significado correto das outras duas palavras.**
+
+
+
+
+
+
+
+
+
+
+**3 Capítulo sobre a Grandeza das _Upanishads_**
+
+_(Upanisha Matchit Tiran)_
+
+**509. A Graça é a forma de Deus, que nunca conheceu a ignorância \[_ajnana_]. O verdadeiro conhecimento de _Brahman_ \[_brahma-jnana_] é o estrado em que os Pés de Lótus de Deus estão colocados. As _Upanishads_ são as sandálias douradas desses Pés. Para o pequeno ego \[homem moderno] que é possuído pela loucura do conhecimento científico \[_vijnana_], o único dever digno é manter as sandálias das _Upanishads_ em sua cabeça.**
+
+**_Sadhu Om_**: O ensinamento transmitido por este verso é que o principal e imediato dever da mente moderna, que está repleta de conhecimento científico, é, em vez de se orgulhar de seu conhecimento insignificante, renunciar ao seu orgulho e seguir o caminho do autoconhecimento mostrado pelas _Upanishads_. Como é um fato bem conhecido que o conhecimento da ciência mundana, embora tenha se desenvolvido cada vez mais, nunca encontrou um fim, este verso instrui que, se quiser alcançar um conhecimento completo, o intelecto humano que se dedica à ciência, que nunca fornecerá nada além de um conhecimento incompleto, tem que buscar refúgio sob a misericórdia das _Upanishads_, que sozinhas ensinam o autoconhecimento, o conhecimento final e completo. Este é o único caminho para ser salvo, e este é o seu principal dever.
+
+**4 Capítulo sobre _Upasana_**
+
+_(Upasanait Tiran)_
+
+**_Michael James_**: _Upasana_ significa adoração, ou seja, apegar-se a Deus através do corpo (fazendo _puja_), da fala (fazendo _japa_ ou recitando _stotras_) ou da mente (fazendo _dhyana_).
+
+**510. Aqueles devotos afortunados que viram os Pés de Lótus de Deus, que brilham supremamente puros em seus corações, terão todas as suas tendências maléficas e inauspiciosas erradicadas e brilharão com a Luz do Conhecimento.**
+
+**511. As qualidades diabólicas \[_asura sambat_] só trarão ruína para você. Sabendo disso bem, desenvolva apenas qualidades divinas \[_deyva sambat_]. _Upasana_, que cultivará qualidades divinas no coração, sozinha salvará a alma.**
+
+**_Sadhu Om_**: Aqui, _upasana_ deve ser entendida como se apegar ao Eu, isto é, atender ao Eu, que é a autoinvestigação. Pois a autoinvestigação, por si só, confere todas as qualidades divinas \[_deyva sambat_]. A palavra 'sambat' significa 'aquilo que é ganho'. Como todas as coisas ganhas externamente só trarão miséria ao _jiva_, 'deyva sambat' é o único que vale a pena ser ganho e é desenvolvido exclusivamente pela autoinvestigação.
+
+
+
+
+
+
+
+
+
+**512. Embora o conhecimento não dual \[_advaita jnana_] seja difícil de alcançar, torna-se fácil de alcançar quando o verdadeiro amor, _bhakti_, pelos Pés do Senhor \[Siva] se intensifica, uma vez que Sua Graça, a Luz reveladora que dissipa a ignorância, começa a fluir.**
+
+**513. Ao fixar firmemente com amor os Pés do Senhor no coração, pode-se romper o vínculo da ilusão e, ao cortar esse vínculo, pode-se contemplar a verdadeira Luz do conhecimento supremo, com o lótus do coração desabrochado.**
+
+**_Michael James_**: Os leitores devem lembrar aqui o ensinamento de Sri Bhagavan de que o Eu é denotado pelos termos 'os Pés de Deus', 'Graça' e assim por diante.
+
+**514. Se a cabeça do** _jiva_ **estiver fixa nos Pés de Siva, o _jiva_ brilhará como o próprio Siva. Porque, o pequeno ego, perdendo sua natureza de movimento, permanece imóvel no verdadeiro estado do Eu, que é imóvel.**
+
+**_Michael James_**: A natureza da onda é se mover. A natureza do oceano é permanecer imóvel. Se a onda errante ama o oceano, ou seja, se ama a natureza do oceano, a saber, permanecer parado, perderá sua forma de onda, afundará no oceano e, assim, se tornará o próprio oceano, ou seja, se tornará imóvel. Da mesma forma, se o _jiva_, a mente errante, ama Siva, o Eu, ele perderá sua natureza de _jiva_, ou seja, a natureza de se mover e se manter como uma entidade separada, dissolver-se em Siva e tornar-se Siva em Si mesmo.
+
+**515. Para romper o vínculo forte, longo e falso e ser salvo, sem perder tempo, medite sempre com amor ardente e intenso nos Pés de Lótus dourados do Senhor.**
+
+**_Sadhu Om_**: “Pratique sempre a meditação sobre o Eu \[atma-dhyana] e alcance a suprema bem-aventurança da Libertação”, diz Sri Bhagavan no capítulo final do _Vichara Sangraham_. Portanto, devemos entender que meditar sobre o Eu é o que está sendo recomendado neste verso.
+
+**516. A verdadeira forma \[natureza] de Deus \[Eu] não pode ser compreendida, exceto pela mente que permanece firmemente imóvel em _nishta_ \[Permanência no Eu ou _samadhi_]. Portanto, sem permitir que a mente vague como um vagabundo \[ou seja, passar pelo estado de vigília e sonho - _sakala_] ou cair em _laya_ \[ou seja, cair no sono - _kevala_] devido ao cansaço, treine a mente para estar consciente e ainda focada em um único alvo \[Eu].**
+
+**_Michael James_**: É indicado neste verso que tornar a mente imóvel, ou seja, mantê-la afetada por _sakala_ (o estado de multiplicidade) e _kevala_ (o estado de nada), é o que se chama _nishtha_ ou _samadhi_.
+
+
+
+
+
+
+
+
+
+**517. Abandone todos os apegos aos pequenos objetos dos sentidos \[_vishayas_], que são causados pela ilusão 'eu sou este corpo carnal'. A mente silenciosa \[assim aquietada ao renunciar aos objetos dos sentidos] é o puro _mani-lingam_ \[forma superior de Siva-_lingam_]. Se isso for adorado \[ou seja, se esse silêncio mental for cuidadosamente preservado com grande amor, que é o verdadeiro culto a ele], ele concederá uma felicidade infinita.**
+
+**518. Todos os dias, todos os planetas, todos os _yogas_ e todos os _orais_ são dias auspiciosos, planetas auspiciosos, _yogas_ auspiciosos e _orais_ auspiciosos para um aspirante fazer essa _upasana_ \[prática espiritual].**
+
+**_Michael James_**: _Yogas_ e _orais_ são partes específicas do tempo em um dia, conforme calculado na astrologia.
+
+**_Sri Muruganar_**: Como os dias, planetas, _yogas_ e _orais_ estão dentro do conceito da mente, alguns deles podem ser inauspiciosos, mas apenas para atividades mundanas. Nenhum deles pode causar qualquer dano a um aspirante que queira fazer a atenção ao Eu \[_atma-dhyana_], que é o verdadeiro culto a Deus, porque isso diz respeito ao Eu, que está além da mente. Os dez versos cantados por Sri Jnanasambandhar para vencer os efeitos dos planetas e também algumas outras canções dos santos tâmeis nos garantem que nenhum desses fatores temporais pode criar qualquer obstáculo para um devoto que se encontra sob o poder da Graça de Deus.
+
+**519. É muito raro ter plena fé em Um \[Deus ou Guru]. Se essa fé florescer no coração \[devido a méritos passados], proteja e nutra-a, pois é semelhante a um recém-nascido, sem estragá-la dando espaço a dúvidas ou suspeitas, assim como, se alguém possuísse a Kamadenu, criaria-a com grande cuidado e amor.**
+
+**_Michael James_**: A Kamadenu é uma vaca divina que dará a alguém tudo o que se desejar. Da mesma forma, a fé completa em Deus ou Guru concederá tudo e qualquer coisa a um devoto. Esse é o maravilhoso poder da fé.
+
+**5 Capítulo Sobre _Upasana_ através do Silêncio**
+
+_(Maunopasanait Tiran)_
+
+**520. Instalar o Senhor no trono do coração e fixar a mente ininterruptamente no Eu de tal maneira que se torne um com Ele é o verdadeiro e natural culto através do Silêncio \[_maunopasana_].**
+
+
+
+
+
+
+
+
+**521. O estado puro de ter um grande apego ao Eu e não ter apego a qualquer outra coisa é realmente o estado de Silêncio. Aprender a permanecer como 'Eu sou esse Silêncio' e sempre permanecer como Ele é o verdadeiro culto mental \[_manasika puja_].**
+
+**_Sadhu Om_**: Hoje em dia, muitos de nós estamos sob a impressão de que fazer culto mental \[_manasika puja_] significa imaginar que se está coletando todas as coisas necessárias, como flores, pasta de sândalo, frutas, guirlandas e assim por diante, e que se está oferecendo a Deus.
+
+No entanto, isso é apenas uma atividade mental \[_pravritti_]. Este verso nos ensina que isso não é o verdadeiro _manasika puja_, e que a permanência no Eu, 'culto através do Silêncio' \[_maunopasana_] mencionado acima, é o verdadeiro _manasika puja_.
+
+**6 Capítulo Sobre o Delírio dos Argumentos**
+
+_(Vada Mayal Tiran)_
+
+**522. Apenas os ignorantes que não sabem nem um pouco sobre a natureza do seu próprio \[do ego] surgimento e desaparecimento se envolverão em uma acalorada guerra de palavras: "O destino é mais poderoso do que o livre-arbítrio \[o esforço da mente]"; "Não, o livre-arbítrio é mais poderoso do que o destino"; "O destino é superior ao livre-arbítrio"; "Não, o livre-arbítrio é superior ao destino".**
+
+**_Michael James_**: Consulte o versículo 18 de _Ulladu Narpadu_.
+
+**523. Em vez de indagar e conhecer através da experiência prática a Coisa verdadeiramente existente e, assim, atingir o estado claro do supremo Silêncio, alguns saltam com egoísmo, tendo fanatismo por uma religião específica e ódio em relação a outras religiões, e fazem argumentos e críticas vãs e barulhentas.**
+
+**_Michael James_**: Consulte o versículo 991.
+
+**524. A própria natureza do argumento é ocultar a verdade. Como é apenas uma arte da ilusão e imaginação, ela iludirá e confundirá a mente. Portanto, ninguém que tenha caído no buraco escuro dos argumentos verá a Luz do Sol, o autoconhecimento.**
+
+
+
+
+
+
+
+
+
+
+**525. Palavras \[e pensamentos] não revelam o Eu. Pelo contrário, eles o encobrem completamente. Portanto, esteja alerta para controlar tanto a fala quanto o pensamento, para que o Eu, que está oculto por eles, brilhe por si só.**
+
+**_Sri Muruganar_**: 'Nós', o Eu, somos a única realidade. Até os pensamentos \[mente] e a fala, que é apenas uma forma grosseira de pensamentos, são estranhos a nós e, portanto, irreais. Então, a prática da atenção ao Eu, que eliminará os pensamentos e a fala, é um empreendimento digno.
+
+**526. Não empreste seu intelecto \[_buddhi_] como escravo para a ginástica da eloquência \[na forma de fala e poesia] e para a mágica dos argumentos. Conheça a verdade, o Eu, voltando a mente pura e _sattvic_ para dentro e, assim, destruindo a ilusão da alteridade.**
+
+**7 Capítulo Sobre a Inutilidade das Medidas**
+
+_(Alavai Yavalat Tiran)_
+
+**527. O medidor, a medida \[ou seja, o padrão ou escala de medição], o medido e a medição - tudo isso parece existir e brilhar devido ao brilho da existência-consciência \[_sat-chit_] no coração. Qual medida existe para medir o Eu \[a existência-consciência]?**
+
+**_Sadhu Om_**: Tudo é medido pela mente, tendo as medidas imaginárias \[dimensões ou padrões de medição] de tempo e espaço. Aquelas coisas que são assim medidas \[incluindo tempo e espaço], o ato de medi-las e o medidor \[a mente] - tudo isso parece ter existência apenas por causa e na presença do Eu, a existência-consciência. Além disso, eles não têm existência real própria. Portanto, como o Eu pode ser medido por algum deles - mente, tempo, espaço e assim por diante?
+
+**528. Somente enquanto o medidor \[a mente] existe, a medida e o medido também parecerão existir como reais. Mas quando o medidor \[a mente] vê o Eu, a Coisa realmente existente, e se perde nela, todas as outras coisas, como a medida, o medido e a medição, automaticamente se tornarão irreais.**
+
+
+
+
+
+
+
+**8 Capítulo Sobre o Conhecimento Indireto**
+
+_(Paroksha Jnanat Tiran)_
+
+**529. O fogo dos desejos dos _jivas_ será extinto apenas pela experiência direta \[_aparoksha_] do puro conhecimento do Eu, no qual todas as _vasanas_ da mente ignorante estão mortas. Se a sede e o calor do corpo físico pudessem ser aplacados e resfriados por um espelho, então a sede espiritual \[o desejo pela bem-aventurança - _moksha_] também poderia ser saciada pelo conhecimento indireto \[_paroksha jnana_].**
+
+**_Michael James_**: _Paroksha jnana_ significa conhecimento mediado ou indireto, ou seja, o conhecimento sobre o Eu reunido através de livros (por _sravana_ e _manana_) em oposição ao conhecimento imediato ou direto (_aparoksha jnana_), ou seja, a experiência direta do Eu (obtida através de _nididhyasana_).
+
+**530. Quando, assim, a experiência direta \[_aparoksha_] do puro Eu Supremo é o único verdadeiro conhecimento não dual \[_jnana_], chamar até mesmo o que é indireto \[_paroksha_] de conhecimento \[_jnana_] é como chamar demônios \[_rakshasas_] de 'pessoas meritórias' \[_punya janas_].**
+
+**_Michael James_**: Na literatura, ao se referir a algo indigno, é costume usar um nome digno para ridicularizá-lo indiretamente. É dessa maneira que os _rakshasas_, que são bem conhecidos por serem pecadores perversos, às vezes são chamados de 'pessoas meritórias' (_punya janas_). Sri Bhagavan aponta neste verso que o conhecimento indireto (_paroksha jnana_) é chamado de 'conhecimento' (_jnana_) apenas neste espírito, pois, na verdade, não passa de ignorância (_ajnana_) em si.
+
+**531. O supremo _Jnana_ \[conhecimento do Eu], que destrói a ilusão enganosa, nascerá apenas de um verdadeiro questionamento na forma de uma atenção voltada para aquilo que existe como a Realidade \['Eu sou'] no coração. Mas saiba que o mero conhecimento dos livros sobre questionamento, mesmo que aprendido com escrituras claras, será como uma abóbora desenhada em uma folha de papel, inútil para cozinhar.**
+
+**532. É possível saciar a fome comendo comida cozida por uma imagem pintada de um fogo ardente? Da mesma forma, um fim para as misérias da vida e o gozo da bem-aventurança do Eu não podem ser alcançados apenas pelo conhecimento verbal, mas apenas pelo conhecimento prático do Eu, que é obtido ao extinguir o ego no coração. Assim você deve saber.**
+
+**533. A bem-aventurança do _sphurana_ do Eu Supremo não pode ser obtida por argumentos intelectuais, mas apenas pelo conhecimento que brilha no coração como a forma do Senhor Divino que empresta luz à mente.**
+
+
+
+
+
+
+
+
+
+**9 Capítulo Sobre a Unicidade do _Jiva_**
+
+_(Eka Jivat Tiran)_
+
+**534. Que aspirantes altamente maduros e corajosos que possuem um intelecto brilhante e aguçado aceitem firmemente que a alma \[_jiva_] é apenas uma \[_eka_] e, assim, estejam estabelecidos profundamente no coração \[investigando 'Quem sou eu, aquele único _jiva_?']. É apenas para se adequar às mentes imaturas que as escrituras geralmente dizem que as almas \[_jivas_] são muitas \[_nana_].**
+
+**_Sadhu Om_**:
+
+Se o ego entra em existência, tudo entrará em existência; se o ego não existir, nada existirá; \[portanto] o ego é tudo. – _Ulladu Narpadu_ verso 26.
+
+Se 'Eu' surgir, tudo surgirá. – _Quem sou eu?_
+
+Se o pensamento 'Eu' não existir, nenhuma outra coisa existirá – _Sri Arunachala Ashtakam_, verso 7.
+
+Como está claro a partir dos três _upadesas_ acima de Sri Bhagavan, o surgimento do ego, o sentimento 'eu sou fulano', é a causa do surgimento e aparência de todo o universo com inúmeros _jivas_ vivendo nele. Devemos concluir, sem qualquer dúvida, que é apenas na perspectiva ignorante do ego, o único 'Eu', o único _jiva_, e que, pela destruição desse único 'Eu', através da investigação 'Quem sou eu?', a existência de todos os outros _jivas_ chegará ao fim. Este é o significado do _upadesa_ contido neste verso.
+
+**535. Existe alguém que nasceu ou alguém que cortou o vínculo do nascimento \[e da morte]? Durante o tempo em que o pensamento 'Eu' \[o ego] não surge \[isto é, no sono profundo], há alguém que está preso no corpo \[ou seja, que se identifica com o corpo] ou que está livre dele? Investigue bem, agora, e me diga!**
+
+**_Sadhu Om_**: Na ausência do 'Eu', o único _jiva_, \[seja no sono, onde o pensamento 'Eu' diminuiu, ou em _Jnana_, onde foi destruído], nenhum outro _jiva_ existe, seja como um ser preso \[_bandha_] ou como um ser libertado \[_mukta_]. A unicidade do _jiva_ é ainda mais enfatizada neste verso.
+
+
+
+
+
+
+
+
+
+
+
+**10 Capítulo Sobre Conhecimento e Ignorância**
+
+_(Arivu-ariyamait Tiran)_
+
+**536. Ó pessoas mundanas que analisam cada vez mais uma coisa após a outra e correm atrás de cada uma delas pensando que cada uma é mais valiosa que a outra! Analisar aquela única Coisa \[o Ser] pela qual nada mais restará \[para ser analisado], é \[verdadeiro] conhecimento.**
+
+**_Sadhu Om_**: A palavra em tâmil usada aqui é '_nadum_', que pode significar 'analisar' ou 'desejar'. No entanto, é mais apropriado aqui considerá-la no sentido de 'analisar', porque na segunda metade do verso, a palavra em tâmil '_aydal_', que significa apenas 'analisar', é usada duas vezes. Além disso, o verso está no "Capítulo sobre Conhecimento e Ignorância".
+
+**537. Para aqueles que podem analisar \[investigar] e conhecer a coisa mais sutil \[o Ser], que benefício há na pesquisa e conhecimento de objetos grosseiros? Mais valiosa do que a pesquisa feita \[pela mente] através do olho e assim por diante, é a pesquisa indestrutível feita internamente \[ou seja, a autoinvestigação ou autoatenção].**
+
+**_Sadhu Om_**: O significado deste verso é que a autoinvestigação, pela qual o Ser é conhecido, é muito superior às pesquisas científicas.
+
+**538a. Conhecer o Ser claramente, rejeitando todas as coisas alienígenas \[o universo] como mera nulidade \[_sunya_] é o supremo conhecimento \[_jnana_] que transcende tempo e espaço, além do qual não há conhecimento digno \[ou superior].**
+
+**538b. Conhecer o Ser claramente, rejeitando todas as coisas alienígenas \[o universo] como mera nulidade \[_sunya_] é o supremo conhecimento \[_jnana_]. O conhecimento de todos os tempos e lugares ou o conhecimento da mente dos outros não é conhecimento digno.**
+
+**539. A verdade é que qualquer esporte lúdico de _Sakti_ \[ou seja, qualquer glória vista neste universo] não pode ser diferente de _Sakta_, o Ser \[o possuidor de _Sakti_]. Portanto, ter a perspectiva de pensar que o mundo, que é \[na verdade mera] consciência \[_chit_], é diferente dela \[consciência, 'nós'] e ser iludido \[por gostos e desgostos pelas coisas do mundo], é a falsa _maya_, que causa o erro \[ou seja, todos os obstáculos e misérias].**
+
+
+
+
+
+
+
+
+
+
+
+**540. O conhecimento 'Eu sou o corpo' é a ignorância ilusória e destrutiva. O conhecimento correto \[o conhecimento de _Brahman_], que é digno de ser alcançado, é o conhecimento de que mesmo a ignorância acima mencionada, que é falsa, não existe separada do Ser, a realidade inevitável.**
+
+**_Sadhu Om_**: Embora a cobra que aparece em uma corda seja falsa, ela não pode ter tal aparência, como se existisse, sem a existência da corda. Da mesma forma, embora a ignorância 'Eu sou o corpo' seja um conhecimento falso, mesmo assim, não pode parecer existir sem a existência do verdadeiro Ser. O ensinamento dado neste verso é o mesmo que o dado no verso 13 de _Ulladu Narpadu_.
+
+**541. Assim como, por conta da mera imaginação, o espaço único e ininterrupto é chamado por diferentes nomes \[como '_ghatakasa_', o espaço todo-penetrante], o Ser único, completo e ininterrupto é visto pelos imaturos como muitos \[ou seja, como diversas almas e objetos]. Esse é o resultado da maravilhosa _maya_.**
+
+**542. Ver o Ser único, a realidade desprovida de qualquer falsidade, como muitos e diferentes é o que é a ignorância. Portanto, qualquer coisa que apareça com qualquer nome e forma, vê-la em sua natureza real \[como o Ser] é o que é o conhecimento.**
+
+**_Sadhu Om_**: As duas últimas linhas deste verso são o verso 355 de _Tirukkural_. Ao ler o verso em tâmil de Sri Muruganar, aqueles que conhecem _Tirukkural_ podem entender como habilmente ele usou este verso de _Tirukkural_ para explicar a ideia de Sri Bhagavan.
+
+**543. Embora os mundos externos estejam com inúmeras diferenças \[isto é, com diferentes nomes e formas], a realidade interna de todos eles é o Ser único, assim como, embora as sementes de gergelim colocadas no grande expulsor de óleo giratório sejam inúmeras, a única substância nelas é o óleo.**
+
+**544. Conhecer através da real clareza \[_chit_] no estado em que a imensa bem-aventurança \[_ananda_] e a não-dual existência do Ser \[_sat_] estão brilhando como um só, que nenhuma dualidade como conhecer e não conhecer jamais existiu, é o verdadeiro conhecimento.**
+
+
+
+
+
+
+
+**545. Conhecimento e ignorância só podem existir em relação a objetos externos, que são a segunda pessoa. No entanto, como eles \[conhecimento e ignorância] não existem no estado real em que apenas o Eu brilha, o verdadeiro conhecimento é aquele em que a dualidade do conhecimento e ignorância não existe.**
+
+**_Sadhu Om_**: Consulte o verso 12 de _Ulladu Narpadu_ e o verso 27 de _Upadesa Undiyar._
+
+**546. Alguns dizem: "Conhece a ti mesmo" \[mas] existe alguém que não se conhece? Diga-me, não é igualmente ignorante dizer "Eu realizei o Eu" como dizer "Eu não realizei o Eu"?**
+
+**_Sadhu Om_**: Vale a pena ler o verso 33 de _Ulladu Narpadu_ aqui. _Jnanis_, que obtiveram o conhecimento do Eu, nunca dizem "Eu realizei meu Eu" ou "Eu não realizei meu Eu". Consulte a fala de Sri Bhagavan na segunda linha do segundo verso de _Sri Arunachala Ashtakam_, "Um 'Eu' não surge para dizer 'Eu vi'; como então pode surgir um 'Eu' para dizer 'Eu não vi'? "O estado em que o ego não surge é o estado além de saber e não saber.
+
+**547. Se alguém permanece apenas como consciência \[isto é, como 'Eu sou', em outras palavras, na abidância do Eu, _atma-nishtha_], a ignorância \[que é uma das dualidades de ignorância e conhecimento] não existirá. Portanto, a ignorância é falsa; apenas a consciência do Eu é real. Quando corretamente conhecido, é ignorância dizer que há ignorância. Verdadeiramente, a pura consciência é nossa natureza. Assim você deve saber.**
+
+
+
+
+
+
+
+
+
+
+
+**11 Capítulo Sobre Ilusão**
+
+_(Marul Tiran)_
+
+**548. Somente enquanto alguém pensa 'Eu conheço outras coisas' a ilusão 'Eu não me conheço' permanecerá. Quando tal pensamento é removido pela experiência do sempre existente autoconhecimento, essa ilusão se tornará falsa \[isto é, se tornará inexistente].**
+
+**_Sadhu Om_**: Como sempre que algo é conhecido, nosso poder de atenção assume a forma de um pensamento \[_vritti_] 'Eu conheço outras coisas', prevalece uma falsa ilusão 'Eu não me conheço'. Mas quando a discriminação \[_viveka_] 'Sempre que eu conheço qualquer outra coisa, é conhecida porque eu existo ali, e portanto, todo conhecimento da minha própria existência já está lá' brilha cada vez mais por meio da investigação \[_vichara_], a verdade 'Não há momento em que eu não me conheça' surgirá. Este é o estado eterno, sempre alcançado, do autoconhecimento.
+
+**549. Como a natureza do Eu é o todo perfeito, tudo e um sem outro, conhecer todas as outras coisas em vez de indagar dentro de si 'Qual é a minha verdadeira natureza?' \[em outras palavras, 'Quem sou eu?'] é apenas mera ilusão.**
+
+**550. Da mesma maneira que um sonho aparece no espaço mental por mera imaginação mental, a cena deste quadro mundial \[como nossa vida] aparece neste estado de vigília. Portanto, permanecer no Eu conhecendo firmemente assim, destruindo todo conhecimento objetivo \[o conhecimento de segunda e terceira pessoas neste estado de vigília] e aniquilando todos os desejos tolos pelas cenas objetivas aqui, é o único caminho digno.**
+
+**551. Apenas os ignorantes que não investigam e conhecem o Coração, a Coisa Suprema, ficarão assustados e iludidos pela enganosa _maya_. Mas os brilhantes _Jnanis_, que experimentaram o supremo Eu, o oceano de bem-aventurança, não terão medo dela \[_maya_].**
+
+**552. As pessoas loucas que não conhecem a Realidade não-dual \[Eu], que existe e brilha como uma só, e que com o olho ictérico da ignorância veem o Eu como muitos, são como aqueles que veem muitas miragens no deserto.**
+
+**_Sri Muruganar_**: Através deste verso, Sri Bhagavan indica que é certo que aqueles que têm a perspectiva dual serão desapontados e sofrerão muito nesta vida.
+
+
+
+
+
+
+
+
+
+
+**12 Capítulo Sobre o Estado de Vigília e o Sonho**
+
+_(Nana Kana Tiran)_
+
+**553. Aqueles que têm o olho da _Jnana_ \[isto é, _Jnanis_] declaram que tanto o estado de vigília quanto o sonho são os mesmos em termos de imperfeição. Pois, o estado de vigília, um estado de grande apego, não desaparece assim como o sonho?**
+
+**554. Todos os _karmas_ que alguém viu que fez em sonho, não darão fruto no estado de vigília. Da mesma forma, todos os _karmas_ feitos neste estado de vigília pelo sentido do ego iludido não darão fruto no estado do despertar do Eu.**
+
+**_Sadhu Om_**: Este verso enfatiza que para um _Jnani_, nenhum dos três _karmas_ \[_agamya_, _sanchita_ ou _prarabdha_] permanecem a ser experimentados.
+
+**555. _Jnanis_ dizem que tanto o sonho quanto o estado de vigília são criações da mente iludida. Porque, em ambos, pensamentos e nomes-e-formas existem da mesma maneira.**
+
+**_Michael James_**: Consulte _Who am I?_ onde Sri Bhagavan diz: “Em ambos os estados de vigília e sonho, pensamentos e nomes-e-formas \[os objetos] entram em existência simultaneamente”.
+
+**556. Quando o ego está meio desabrochado, o sonho aparece. Quando o ego está totalmente desabrochado, o estado de vigília, a aparência do mundo que é o pleno florescer da ignorância, surge.**
+
+**_Michael James_**: Consulte o versículo 10 do _Drik Drisya Viveka_, uma obra de Sri Adi Sankara que Sri Bhagavan traduziu para o prosa tâmil, onde se diz: “No sono profundo, onde o corpo permanece insensível \[_jada_], o ego está completamente submerso \[em _laya_]. Seu meio desabrochar é o sonho; seu desabrochar total é o estado de vigília”.
+
+**557. Quando a experiência dos frutos dos _karmas_ que haviam causado o estado de vigília chega ao fim, e quando os frutos dos _karmas_ a serem experimentados no sonho começam, a mente, da mesma maneira que havia tomado um corpo como 'Eu' no estado de vigília, identificará e assumirá outro corpo como 'Eu' no sonho.**
+
+**_Michael James_**: Consulte _Who am I?_ onde Sri Bhagavan diz: “No sonho, a mente \[simplesmente] assume outro corpo”.
+
+
+
+
+
+
+
+
+
+**558. Se for perguntado: 'Quando o corpo do sonho e o corpo do estado de vigília são assim diferentes, como é que o sêmen no corpo do estado de vigília escorre quando se vê no sonho que o corpo do sonho entrou em contato com uma mulher?', a resposta será que é devido à rapidez do apego com que se passa do corpo do sonho para o corpo do estado de vigília.**
+
+**559. Quando o sonho é assim considerado uma aparição causada pela mente vacilante, o estado de vigília também é o mesmo. Tão verdadeiros são os acontecimentos no estado de vigília, tão verdadeiros são também os acontecimentos no sonho durante o tempo do sonho.**
+
+**_Michael James_**: Consulte _Who am I?_ onde Sri Bhagavan diz: “Na medida em que todos os eventos que acontecem no sonho parecem ser reais naquele momento”.
+
+**560. A resposta 'O estado de vigília é longo e o sonho é curto' foi dada como uma mera resposta \[consoladora] ao questionador. \[Na verdade, no entanto, nenhuma diferença existe, porque, uma vez que o tempo em si é uma concepção mental,] o conceito de diferenças no tempo \[como 'longo' e 'curto'] parece ser verdadeiro apenas por causa do jogo enganoso de _maya_, a mente.**
+
+**_Sadhu Om_**: Sri Bhagavan refere-se aqui à seguinte resposta que Ele deu em _Who am I?_, "Exceto que o estado de vigília é longo e o sonho é curto, não há diferença \[entre os dois]".
+
+**561. A glória de _maya_, a mente, que concebe todas as coisas dentro do alcance da falsa escuridão da ignorância e ilude, reside em mostrar e confundir um segundo como uma era \[_kalpa_] e uma era como um segundo.**
+
+**_Sadhu Om_**: Apenas dentro de um quarto escuro e apenas por meio de uma luz limitada é possível projetar e ver uma imagem de cinema. É impossível fazê-lo em um lugar onde a luz do sol brilha intensamente. Da mesma forma, apenas dentro da escuridão da ignorância do esquecimento do Eu e apenas por meio da luz da mente é possível projetar os estados de vigília e sonho e ver imagens do mundo neles. É impossível projetar e experimentar o estado de vigília e o sonho quando \[em _jnana-samadhi_] o Eu brilha com todo o seu esplendor. Portanto, a instrução contida neste verso é que é apenas por meio de _maya_, a luz da mente, que as diferenças relativas ao tempo e espaço são vistas no estado de vigília e no sonho.
+
+**562. Ao sempre atender ao Eu, uma existência básica, o todo perfeito, o olho da luz do conhecimento, afaste os dois sonhos \[estado de vigília e sonho] que são experimentados pelo ego e que são meras imaginações ilusórias de diferenças que aparecem na escuridão \[do esquecimento do Eu].**
+
+
+
+
+
+
+
+
+
+
+**563. Se a mente, que está cheia de ilusão ignorante e que vê os mundos nos sonhos \[nos dois sonhos, ou seja, no estado de vigília e no sonho] mas que não vê sua própria verdade, indagar quem ela mesma é \[em outras palavras, 'Quem sou eu?'] e, assim, perder sua natureza mental, ela então brilhará como o Sol do verdadeiro conhecimento \[_jnana_], permanecendo aos Pés do Senhor.**
+
+**564. Conhecer corretamente o Eu é como alguém que, ao acordar de um sonho, sabe que todo o turbilhão de sofrimentos experimentados naquele sonho se tornou falso e que se é realmente o mesmo indivíduo não afetado que estava deitado seguro na cama macia.**
+
+**_Sadhu Om_**: Neste verso, apenas o exemplo \[_upamanam_] é claramente descrito, enquanto o 'exemplificado' \[_upameyam_, ou seja, o que é ilustrado por esse exemplo], a saber, o estado não afetado do Eu, é deixado para os leitores expandirem e entenderem.
+
+O _jiva_, que esqueceu sua natureza real, é comparado àquele que dormiu em sua cama. Os sofrimentos experimentados pelo _jiva_ devido aos frutos das _karmas_ realizadas durante seus inúmeros nascimentos e mortes, que aparecem e desaparecem como sonhos no sono do esquecimento mencionado do Eu, são comparados ao turbilhão de sofrimentos experimentados no sonho durante o sono. Então, todas as aparições de nascimentos e mortes do _jiva_ chegando ao fim como falsas através do verdadeiro despertar como o Eu, são comparadas a todos os sonhos chegando ao fim como falsos através do despertar do sono. Embora o Eu, o não-dual, pareça se tornar um _jiva_ e sofrer através de muitos nascimentos e mortes, na realidade o Eu não é afetado por essas falsas aparições. Isso é ilustrado pelo exemplo de alguém que dorme, que sempre permanece realmente a mesma pessoa não afetada que estava deitada segura na cama macia.
+
+**_Sri Muruganar_**: Quando se chega a saber, através do despertar do Eu, que todos os díades e tríades são falsos, todos eles desaparecerão, não tendo base \[nenhum ego] para brilhar. A consciência beatífica que simplesmente dorme \[ou: A consciência que simplesmente dorme beatificamente], não associada às díades e tríades, é o estado de conhecer corretamente o Eu.
+
+
+
+
+
+
+
+
+
+
+
+**565. A libertação de alguém após passar por grandes sofrimentos em _samsara_ \[o estado mundano de atividade] é como despertar do sono depois de ver, devido à ilusão, em um sonho, a si mesmo perdendo o caminho, vagando em um deserto, sofrendo muito e depois alcançando a cidade natal.**
+
+**_Sri Muruganar_**: Este verso é uma indicação sutil de Sri Bhagavan de que até mesmo a libertação é uma mera concepção mental \[ou seja, é falsa]. A verdade é que o Ser sempre desvinculado existe por si só.
+
+**B9. Esquecer o Eu, confundir o corpo com o Eu, passar por inúmeros nascimentos e, por fim, conhecer o Eu e ser o Eu é como acordar de um sonho de perambular por todo o mundo. Saiba assim.**
+
+**_Michael James_**: Este verso composto por Sri Bhagavan é o verso um do _Ekatma Panchakam_.
+
+**13****Capítulo Sobre os Diferentes Estados**
+
+_(Avasta Beda Tiran)_
+
+**566. Se for possível para os outros quatro elementos \[a saber, terra, água, fogo e ar] existirem realmente separados do vasto espaço \[o quinto elemento], então os três estados como vigília \[a saber, vigília, sonho e sono] também podem ter uma existência real separada do impecável _turiya_ \[o estado do Eu].**
+
+**_Michael James_**: A instrução é que a vigília, o sonho e o sono são irreais.
+
+**567. (a) A diferença entre os três primeiros estados densos \[vigília, sonho e sono] e os estados quarto e quinto \[_turiya_ e _turiyatita_] são \[aceitos nos _sastras_] apenas para aqueles que não são capazes de romper a escuridão da ignorância do sono e imergir e permanecer firmemente no radiante _turiya_ \[o estado do Eu].**
+
+**567. (b) A diferença entre os três primeiros estados densos e os estados quarto e quinto são apenas para aqueles que não são capazes de imergir e permanecer firmemente no _turiya_, que brilha atravessando a escuridão da ignorância do sono.**
+
+**_Sadhu Om_**: A importância deste verso é que os aspirantes avançados devem saber que todos os estados mencionados nas escrituras que não são _turiya_ \[ou seja, sono, vigília, sonho e _turiyatita_] são irreais. Para entender melhor esses dois versos, 566 e 567, o leitor pode consultar o verso 32 de _Ulladu Narpadu – Anubandham_ e também as últimas páginas do capítulo oito de _O Caminho de Sri Ramana_ - Parte Um.
+
+
+
+
+
+
+
+
+**568. Apenas enquanto o que está ligado aos estados \[o _avasta_ -_abhimani_, ou seja, aquele que se identifica com um corpo e, assim, sente 'Eu estou agora no estado de vigília; Eu estava tendo sonhos'] existe, os \[aforedito cinco] diferentes estados serão conhecidos como se existissem. Mas quando esse ligado \[_abhimani_], que surge na forma de uma consciência do ego, se perde através da autoinvestigação, todas as diferenças que pertencem aos estados também terminarão.**
+
+**_Sadhu Om_**: A palavra tâmil '_arivay_' pode ser interpretada como 'saiba que', em vez de 'na forma de uma consciência do ego'.
+
+**569. Aquele \[o _Jnani_] que, por devoção suprema \[isto é, por completa autoentrega] alcançou o reino do estado supremo \[_para-avasta_, isto é, o Eu], através de seu estado supremo natural nunca vê que qualquer estado além daquele realmente existe.**
+
+**_Sadhu Om_**: Assim como um grande espaço aberto se torna três partes quando duas paredes de divisão são erguidas no meio dele, quando os dois tipos de identificação com o corpo, a saber, a identificação com o corpo desperto e a identificação com o corpo do sonho, imaginariamente surgem, nossa única consciência do Eu ininterrupta parece se tornar três estados, a saber, vigília, sonho e sono. Nós que experimentamos e nomeamos nosso estado original quando o corpo na vigília é identificado como 'Eu', e como o estado de sonho quando o corpo no sonho é identificado como 'Eu', também experimentamos e nomeamos nosso estado original, sem adjunções de pura consciência do Eu, que então permanece como se fosse nosso terceiro estado, como sono.
+
+Quando as duas paredes da vigília e do sonho na forma das duas identificações corporais são destruídas através da autoinvestigação, nossa consciência do Eu única, ilimitada e natural é experimentada como o único estado claro e sem adjunções, como o grande espaço aberto. Uma vez que isso é experimentado como um novo estado, completamente diferente daqueles três estados \[vigília, sonho e sono] experimentados até então, é chamado pelas escrituras de 'o quarto' \[_turiya_]. Mas quando o conhecimento 'Isto não é nada além do nosso estado natural eterno' surge através da experiência bem estabelecida do estado natural do Eu \[_sahaja atma sthita_] e quando a vigília, o sonho e o sono são, assim, conhecidos como irreais, o nome '_turiya_', o quarto, também se tornará sem sentido, já que este estado terá perdido sua novidade. Portanto, como essa consciência eterna, natural e não dual do Eu não pode ser chamada de '_turiya_' \[o quarto estado], as escrituras novamente a nomearam como '_turiyatita_' \[o estado de transcender _turiya_, o quinto estado]! Mas todas essas classificações e diferenças de estados são meramente verbais e, na realidade, não existem. Esses cinco tipos de estados são classificados e contados aos aspirantes durante seu período de ignorância e para sua satisfação mental. A experiência do _Jnani_ é a única consciência do Ser-existência, que está além de todos os estados.
+
+
+
+
+
+
+**14 Capítulo Sobre os Dois _Karmas_ — Bons e Maus**
+
+_(Iru Vinai Tiran)_
+
+**570. Enquanto alguém pensa 'Eu, um indivíduo, estou existindo', é adequado aceitar a teoria de que - por conta do egoísmo, o apego ao corpo - certamente se tem a ver \[com um senso de autoridade] os dois tipos de _karma_ \[bons e maus] e experimentar seus frutos.**
+
+**_Sadhu Om_**: Ninguém pode negar a teoria do karma - a teoria de que todos têm que realizar ações \[karmas] e colher \[experimentar] seus frutos - desde que exista autoridade, que é a própria natureza do ego. Consulte também o versículo 38 de _Ulladu Narpadu_, no qual Sri Bhagavan diz: "Só se formos o autor das ações, teremos que experimentar o fruto resultante...".
+
+**571. Deus, o Senhor da alma, nomeou o fantasma, o ego, como um estranho carcereiro \[ou sentinela] para proteger o corpo e prolongar sua vida até que a alma experimente, sem perder um pouco, todos os frutos do _karma_ alocados a ela em _prarabdha_.**
+
+**572. São apenas os resultados das boas e más ações \[_karmas_] feitas no passado que vêm na vida presente como prazeres e dores, e também como amigos e inimigos poderosos, que são a causa instrumental para eles \[prazeres e dores].**
+
+**573. Não realize nenhuma boa ação \[_karma_] através de um meio ruim, pensando 'É suficiente se der bons frutos'. Porque, se o meio for ruim, até uma boa ação se tornará ruim. Portanto, até mesmo os meios de fazer boas ações devem ser puros.**
+
+**_Michael James_**: A partir deste versículo, temos que entender que o ditado popular 'O fim justifica os meios' não deve ser considerado um princípio digno de seguir.
+
+**574. Apenas são boas ações \[_karmas_] aquelas que são feitas com amor e com uma mente pacífica e pura. Todas aquelas ações que são feitas com uma mente agitada, desejosa e impura devem ser classificadas apenas como ações más.**
+
+
+
+
+
+
+
+
+
+
+**15 Capítulo Sobre Díades e Tríades**
+
+_(Irattai Muppudi Tiran)_
+
+**_Michael James_**: Díades (_dwandwa_ em sânscrito ou _irattai_ em tâmil) significa os pares de opostos, como bom e mau, prazer e dor, conhecimento e ignorância, e assim por diante. Tríades (_triputi_ em sânscrito ou _muppudi_ em tâmil) significa os três fatores do conhecimento objetivo, como conhecedor, conhecendo e coisa conhecida, experimentador, experimentando e coisa experimentada, vidente, vendo e coisa vista, e assim por diante.
+
+**575. A natureza do não-Self é permanecer como base da percepção imaginária de díades pelos sentidos pela mente, que escorregou do verdadeiro estado do Self. Não há espaço para tais díades \[ou tríades] no Self.**
+
+**_Michael James_**: A natureza do Self é a unidade; a natureza do não-Self é ter díades e tríades.
+
+Este versículo deixa claro que a palavra "um" (_ondru_) usada por Sri Bhagavan no versículo 9 de _Ulladu Narpadu_, onde Ele diz: "As díades e tríades sempre dependem para sua existência do um \[_ondru_]...", não denota o Self, mas apenas o ego, que é não-Self. Consulte _The Path of Sri Ramana_ - Parte Dois, apêndice 4c.
+
+**576. 'Isto é uma coisa' - apontar uma limitação assim é a indicação de que uma coisa é conhecida. Só por causa de tal indicação \[só porque tal indicação é possível, em outras palavras, só porque é possível apontar uma limitação para uma coisa], torna-se possível definir uma coisa. Assim, uma definição de uma coisa é possível apenas porque essa coisa está dentro de uma limitação. Mas o Self, que transcende tudo, não tem limitação \[e, portanto, não pode ser conhecido ou definido].**
+
+**_Sadhu Om_**: Como o Self não é, como díades e tríades, um objeto de conhecimento, não pode ser apontado dentro de um limite ou definido como tal e tal.
+
+
+
+
+
+
+
+
+
+
+**577. Uma vez que a natureza do Self é brilhar como um sem outro, a atenção a outras coisas é impossível para ele. Quando a natureza do vidente \[o ego] é procurada e vista, 'Quem é que vê todas essas \[díades e tríades]?', o nó mental será cortado e, portanto, as díades e tríades deixarão de existir.**
+
+**_Michael James_**: Consulte o verso 9 de _Ulladu Narpadu._
+
+**578. Aceite o sempre brilhante autoconhecimento como a única realidade. Rejeite todas as tríades, decidindo que elas são um sonho imaginário.**
+
+**579. Uma vez que o Self é a Coisa eterna e não dual e, como não há meio de alcançá-lo além da atenção ao Self, saiba que o próprio Self é o caminho, o próprio Self é o objetivo e que eles \[o caminho e o objetivo] não são diferentes.**
+
+**_Sadhu Om_**: O ditado dos Sábios, "Eu sou o caminho e eu sou o objetivo", deve ser lembrado aqui.
+
+**580. Quando a mente ilusória que vê diferenças se afoga e morre no estado do Self, a existência-consciência única \[_sat-chit_], todas as diferenças ilusórias também se mostrarão como nada além da consciência \[_chit_] do _Brahman_ \[Self], a existência \[_sat_].**
+
+**581. Aqueles que conhecem os cinco conhecimentos sensoriais alienígenas dizem que os conhecimentos são de diferentes tipos. Eles são pessoas ignorantes que não conseguem se livrar da ilusão das diferenças. Quando o verdadeiro conhecimento firme é obtido aprendendo-se a retirar a mente dos cinco sentidos, que causam a loucura \[de desejo, medo e assim por diante], as diferenças deixarão de existir.**
+
+
+
+
+
+
+
+
+
+
+
+
+**16 Capítulo Sobre o Prazer dos Sentidos**
+
+_(Vidaya Bhaga Tiran)_
+
+**582. O sábio Dadhyangatharvana, que havia experimentado \[a bem-aventurança do] Self, disse uma vez: “O prazer que Indra desfruta com sua esposa, Ayirani, não é melhor do que o prazer desfrutado por um cão com sua cadela”.**
+
+**_Sri Muruganar_**: Indra, o rei dos céus, pensava orgulhosamente que os prazeres que desfrutava no céu eram os mais elevados de todos. Dadhyangatharvana, um grande sábio, certa vez aconselhou Indra como acima para que este último pudesse alcançar a ausência de desejo \[_vairagya_].
+
+**583. Para uma fome voraz, até mesmo um mingau de arroz quebrado ou um mingau de farinha de arroz selvagem será o alimento mais delicioso. \[Portanto,] neste mundo, a causa do prazer não reside na natureza dos objetos sensoriais, mas apenas na intensidade do desejo por ele.**
+
+**_Sadhu Om_**: A ideia é bem explicada em _The Path of Sri Ramana –_ Part One, capítulo dois.
+
+**584. Aquilo que existe \[_sat_] em si é consciência \[_chit_]. A própria consciência é bem-aventurança \[_ananda_]. Obter prazer de outras coisas é mera ilusão \[ou seja, o prazer que supomos obter de outras coisas é ilusório, falso]. Diga-me, exceto na clara e real autoexistência, pode haver felicidade real nos objetos sensoriais imaginários?**
+
+**585. Um cão tolo mastigando um osso seco com os dentes, fazendo a boca sangrar com feridas e desfrutando de seu próprio sangue, elogia: “Nada será tão saboroso quanto este osso”.**
+
+**_Sadhu Om_**: Assim como o cão que não sabe que o sangue que prova vem apenas de sua própria boca, as pessoas ignorantes que não sabem que a felicidade vem apenas de seu próprio Ser, buscam e acumulam objetos sensoriais, pensando que a felicidade vem deles. Consulte também _The Path of Sri Ramana_ - Part One, capítulo dois \[primeira edição, páginas 20 a 21; segunda edição, página 39].
+
+
+
+
+
+
+
+
+
+
+**586. Aqueles interessados em argumentos \[os simples estudiosos das escrituras], que não experimentaram a felicidade da consciência \[a bem-aventurança do Self], que valorizam apenas os prazeres - que são diferentes do Self - derivados de objetos como mulheres, e que estão confusos, acabarão perecendo ansiando por eles \[os prazeres sensoriais] mesmo na hora da morte.**
+
+**587. As mentes das pessoas ignorantes, tendo esquecido a vida divina que floresce no coração e que \[sozinha] é digna de ser conhecida e desfrutada, desejarão intensamente o sabor dos prazeres sensoriais, que são fragmentos insignificantes.**
+
+**588. Pessoas mesquinhas, sendo objeto de ridicularização, mergulharão apenas no poço, a nascente suja do sexo; eles nunca a rejeitarão e tomarão amorosamente um banho, afogando-se no oceano da suprema bem-aventurança de Siva.**
+
+**589. Para aqueles aspirantes que têm grande e intensa ânsia de desfrutar do fruto maduro da bem-aventurança suprema ilimitada, os prazeres dos sentidos, que são dignos de serem apreciados e desfrutados apenas por pessoas cegas \[pessoas cegadas pela ignorância] que não sabem como se salvar da ruína, são os mais baixos e adequados apenas para rejeição.**
+
+**590. Quando alguém realmente existe como alimento \[ou seja, como o contentamento que é experimentado enquanto se come], sem saber disso, se alguém pensa que come comida \[para obter contentamento e, assim, desenvolve o desejo de comer mais e mais], a comida \[o desejo por comida] consumirá a pessoa e a tornará escrava de uma fome insaciável e grande \[ou seja, de um grande descontentamento insaciável].**
+
+**_Sadhu Om_**: Aqui a palavra 'comida' \[_annam_] denota não apenas a comida ingerida pela boca \[e saboreada pela língua], mas também todos os outros quatro prazeres sensoriais absorvidos pelos olhos, ouvidos, nariz e pele. Pensamos que a comida nos dá existência substancial, enquanto realmente nós mesmos somos a substância \[_vastu_] ou existência \[_sat_]. Não sabemos que nossa própria natureza é a existência \[_Sat_]. Como somos felicidade ou contentamento em si, é tolo esperar obter contentamento da comida \[objetos sensoriais]. Se nós, a existência \[_sat_], a plenitude do contentamento \[_ananda_], desejarmos obter objetos sensoriais para nosso contentamento, nossa natureza de plenitude de contentamento é transformada por esse desejo em uma natureza de deficiência; assim, ele \[o desejo] nos engole \[nos mata] criando um fogo insaciável de desejo.
+
+
+
+
+
+
+
+
+
+
+**591. Aqueles que não sabem que, sempre que comem, a própria comida está consumindo sua vida, pensando que estão comendo os prazeres \[_bhogas_], anseiam por eles e correm atrás deles.**
+
+**_Sadhu Om_**: Como a comida e objetos similares de prazer fazem os _jivas_ desejá-los cada vez mais à medida que são desfrutados cada vez mais, eles afastam os _jivas_ do desejo pelo Self. Como a morte é nada mais do que ser separado da vida \[em outras palavras, ser separado do Self], a comida e outros objetos de prazer, que nos separam do Self, são aqui ditos como consumindo nossa vida ou nos matando \[os _jivas_] à medida que os desfrutamos cada vez mais.
+
+**592. Assim como ao alimentá-lo com _ghee_, um fogo se acenderá e não se apagará, assim, satisfazendo desejos, o fogo do desejo nunca diminuirá.**
+
+**_Michael James_**: A palavra aqui em tâmil é _'kama'_, que denota desejo em geral e luxúria em particular.
+
+Verso:
+
+_Não apagado, com ira flamejante_
+
+_A chama com ghee apenas se inflama; O fogo do desejo nunca diminui À medida que cada vez mais é satisfeito._
+
+**593. “Ah, é só pelo toque \[ou mordida]?” Ao analisar, \[a resposta será], “Não, mesmo pela visão ou simples pensamento, a serpente dos cinco desejos sensoriais mata a alma!” Portanto, nunca vimos uma cobra mais venenosa do que o desejo sensorial.**
+
+
+
+
+
+
+
+
+**17 Capítulo Sobre a Mente, a _Maya_**
+
+_(Mana Mayai Tiran)_
+
+**594. _Maya_ sorri orgulhosamente de sua própria vitória em iludir completamente até as pessoas mais inteligentes de tal maneira que elas sintam que o que é, na verdade, irreal \[ou seja, o ego, o mundo e assim por diante] é a única realidade.**
+
+**_Sadhu Om_**: É o jogo de _maya_ que faz alguém sentir 'Eu sou fulano de tal' \[Eu sou um _jiva_, uma alma individual], quando, de fato, o ego é inexistente. Mesmo aqueles que são bem instruídos e têm uma inteligência aguçada, pensando que são o corpo \[ou seja, que são almas individuais], anseiam adquirir poderes ocultos \[_siddhis_] e realizar milagres, e, assim, ganhar glória para si mesmos, os chamados indivíduos. Portanto, Sri Bhagavan aponta que _maya_ iludiu, conquistou e trouxe até eles sob seu poderoso e vicioso domínio.
+
+**595. Quando a luz do conhecimento do Self \['Eu sou'] é experimentada dentro, o que importará se uma inundação de escuridão \[a aparência do mundo] prevalece do lado de fora? Essa densa escuridão nunca pode encobrir a luz do Self \['Eu sou'].**
+
+**_Sadhu Om_**: Por mais longa, escura e densa que seja a sombra de uma pessoa no chão, ela não pode encobrir o sol no céu. Da mesma forma, por mais inumeráveis ​​que sejam os mundos lá fora, que entram em existência apenas por causa da existência do Self, sua aparente existência não pode encobrir a existência do Self, 'Eu sou'.
+
+**596. Dizer que a destrutível, inexistente \[_asat_] e insensível \[_jada_] _maya_ já prendeu sob seu domínio o Self, a Luz do conhecimento \[que é o único _sat_ e apenas _chit_, ou seja, a única Coisa real, consciente e indestrutível], é mais tolo e ridículo do que dizer que um pequeno mosquito engoliu o vasto céu e depois vomitou.**
+
+**_Sadhu Om_**: A palavra sânscrita _'Maya'_ significa 'aquilo que não é' (_ya_ = o quê; _ma_ = não é).
+
+
+
+
+
+
+
+
+
+**597. Quando é estabelecido \[pela experiência dos Sábios e pelas palavras das escrituras] que o Coração \[Self], a forma do conhecimento perfeito \[_jnana_], é a única coisa existente e real, essa \[chamada] grande _maya_ não seria um mero mito? Então, como é estranha a opinião \[mantida por alguns] de que o Self \[ou _Brahman_] é iludido pela mordida dessa serpente, a mente-_maya_!**
+
+**_Sadhu Om_**: Como está bem estabelecido, por tudo que foi dito nas estrofes acima, que _'maya'_ é inexistente, não está claro que as cinco funções \[_pancha-krityas_], a saber, criação, sustentação, destruição, véu e Graça, que são ditas ser o jogo de _maya_, são irreais e que _ajata_ é a única conclusão correta \[_siddhant_]?
+
+**18 Capítulo Sobre Ignorância**
+
+_(Pedaimai Tiran)_
+
+**598. Pessoas ignorantes que identificam o corpo como 'Eu', vendo _Jnanis_ que experimentam _Brahman_ como 'Eu', comentam, como se definissem o estado supremo de _Jnana_, "Veja, se essas pessoas estão no estado de _advaita_, como então elas comem, fazem atividades e assim por diante?" Dizendo assim, eles expõem sua própria ignorância - a de confundir o corpo insensível com 'Eu'.**
+
+**_Sadhu Om_**: Como as pessoas ignorantes experimentam apenas o sentimento 'Eu sou o corpo', elas só podem ver até mesmo os _Jnanis_, que, ao contrário, experimentam o Supremo Ser como 'Eu', como meros corpos. Isso está de acordo com a regra 'Como é o olho \[o vidente], assim é a visão \[a coisa vista]'. Consulte o versículo 4 de _Ulladu Narpadu_, "Pode a visão ser diferente do olho?". Portanto, Sri Bhagavan ridiculariza essas pessoas ignorantes que falam, tomando as atividades do corpo, o não-Ser, como as atividades do _Jnani_, o Ser, e diz que estão expondo sua própria ignorância - a ignorância de considerar o corpo como Ser.
+
+**599. Uma menina que não atingiu a idade da puberdade se sente muito feliz, pensando na grandeza da celebração de seu casamento como união conjugal. Da mesma forma, os instruídos que não investigaram dentro e conheceram o Ser, sentem-se muito orgulhosos e felizes com o _Vedanta_ verbal que tagarelam, pensando que é o conhecimento não-dual \[_advaita jnana_].**
+
+**_Michael James_**: A metáfora usada neste verso refere-se ao antigo costume do casamento infantil.
+
+
+
+
+
+
+
+
+
+**600. Aqueles que aprenderam a ciência suprema do Self \[_atma-para-tattva_] apenas lendo e ouvindo das escrituras, que se consideram muito importantes por causa de seu poder intelectual, mas que não se testaram \[investigaram em si mesmos], os conhecedores das escrituras, perdendo assim sua individualidade e se afogando em êxtase, testam \[com a régua de seu conhecimento escritural] _Jnanis_, que estão em Silêncio. Ah, me diga, que grande tolice é essa!**
+
+**601. Aqueles que não têm a habilidade de conhecer até mesmo seu próprio Ser, mas fazem grandes esforços \[através de _tapas_, _yoga_, pesquisa científica ou histórica, astrologia e assim por diante] para saber como foi o passado e como será o futuro, são como uma criança pequena que pula para pegar sua própria sombra.**
+
+**_Michael James_**: Como foi o passado e como será o futuro? Ou seja, como foi o mundo no passado e como será no futuro, quem fomos em nossas vidas passadas e quem seremos em nossas vidas futuras, qual será nosso futuro nesta vida presente, e assim por diante?
+
+**602. Aqueles que, por causa do vacilar de suas mentes, não conseguem conhecer o estado em que estão no presente, meditam profundamente para descobrir seu estado em seu passado distante e futuro distante.**
+
+**603. Aqueles que não têm nem mesmo o menor interesse em saber 'Como estamos hoje?' \['Qual é a nossa verdadeira existência hoje?'], pensam e se preocupam muito com sua verdade \[sua condição] antes de seu nascimento presente e após sua morte. Como é estranha a atitude deles!**
+
+**604. “É pela entrada de Siva ali que a mente \[_chittam_] se purifica, ou pela purificação da mente que Siva entra ali?” Já que aqueles que perguntam assim são tão ignorantes a ponto de tomar a ação única e não diferente como duas ações diferentes, não temos resposta para dar a eles.**
+
+**_Sadhu Om_**: Não está claro que aqueles que fazem essa pergunta pensam que a entrada de Siva no _chittam_ e a purificação do _chittam_ são duas ações diferentes? A menos que realmente sejam duas ações diferentes, não podemos dizer que uma é a causa e a outra é o efeito. Na verdade, porém, eles não são dois, mas um e o mesmo. Em outras palavras, a condição pura do _chittam_ é o próprio Siva, e Siva não é nada além do _chittam_ puro, ou seja, _chit_ \[consulte os versículos 70 e 244]. Como a pergunta é, portanto, baseada em uma premissa falsa, ela não pode ser considerada uma pergunta significativa e, portanto, nenhuma resposta significativa para ela pode ser dada. É por isso que Sri Bhagavan diz: “Não temos resposta para dar a eles”.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**19 Capítulo Sobre Imaturidade**
+
+_(Apakva Tiran)_
+
+**605. Por que essas pessoas de mente imatura, que estão derretendo e chorando com o anseio de obter facilmente os cinco prazeres sensoriais, vêm e se associam aos _Sadhus_, que sempre vivem com o objetivo de conquistar e destruir completamente os cinco prazeres sensoriais?**
+
+**_Sadhu Om_ e _Michael James_**: Não se aproximam dos _Sadhus_ pessoas imaturas, mesmo que possuam diplomas ou posições altas e poderosas na sociedade, com ofertas mundanas e esperam em sua presença sagrada pelo cumprimento de seus desejos? Isso não é apenas tolo, mas também inadequado. Como tais pessoas mundanas estão loucas pelos cinco prazeres sensoriais, enquanto os _Sadhus_ estão destruindo totalmente o desejo pelos cinco prazeres sensoriais pelo poder de sua _tapas_, eles não têm negócios com os _Sadhus_. O seguinte incidente lançará mais luz sobre este ponto:
+
+Uma tarde às 16h, durante a estadia de Sri Bhagavan na caverna de Virupaksha, um velho _brahmin_ chegou lá com sua filha e ofereceu um grande prato cheio de doces caros. Sri Bhagavan aceitou um pouco disso, e o resto foi distribuído a todos os devotos presentes, que ficaram imensamente felizes, já que naquela época eles não estavam recebendo nem mesmo comida comum suficiente para satisfazer suas necessidades. Os devotos estavam muito felizes, mas Sri Bhagavan não parecia tão satisfeito. No terceiro dia, quando ela veio com seu prato habitual, embora todos os devotos estivessem muito felizes, Sri Bhagavan disse-lhe com um olhar de desagrado: "O que é isso? Por que você traz hoje também? Eu não me importei quando você trouxe uma ou duas vezes, mas por que você traz diariamente coisas tão caras? Se há alguma expectativa por trás dessas ofertas, isso está errado. Este não é o lugar para o cumprimento de desejos mundanos. Se você tem algum desejo assim, não traga essas ofertas a partir de amanhã".
+
+No dia seguinte, para grande decepção de muitos devotos, ela não veio. Um dos devotos perguntou depois a seu pai e ficou sabendo que, apesar de ter passado da idade normal, a menina ainda não havia atingido a maturidade para seu casamento, e que alguém havia aconselhado seu pai que, se tais ofertas fossem feitas a Sri Bhagavan, seus desejos seriam realizados.
+
+
+
+
+
+
+
+
+**20 Capítulo sobre _Pramada_**
+
+_(Pramada Tiran)_
+
+**_Michael James_**: _Pramada_ significa inadvertência, ou seja, desistir de uma ação que foi iniciada. No caminho espiritual, significa falta de vigilância na atenção ao Eu, em outras palavras, escorregar do estado de permanência no Eu.
+
+**606. O _jiva_ chamado _vyavaharika_ \[a alma no estado de vigília] que surge \[devido a _pramada_] do maravilhoso estado natural de autoconsciência, que permanece no estado de vigília experimentando os resultados de suas próprias ações boas e más \[_karmas_], e que desaparece, também é um _swapnakalpita_ \[uma alma no sonho].**
+
+**_Michael James_**: Este versículo se encaixaria bem no capítulo sobre a unidade do _jiva_ (_Eka Jiva Tiran_ - Parte Dois, capítulo 9). Para conectá-lo a este título de capítulo atual, no entanto, as palavras 'devido a _pramada_' são adicionadas entre colchetes.
+
+Nas escrituras, a alma (_jiva_) é descrita como tendo três formas, a saber (1) _kutastha_ (a alma existente no sono), (2) _vyavaharika_ (a alma existente no estado de vigília) e (3) _swapnakalpita_ (a alma imaginada no estado de sonho), que são dadas importância de acordo com sua realidade. De acordo com as escrituras, _kutastha_ é mais real do que _vyavaharika_, e _vyavaharika_ é mais real do que _swapnakalpita_, já que _swapnakalpita_ é um ser imaginário, ou seja, ele é aquele que, por meio da imaginação, surge no sonho. Mas neste verso, Sri Bhagavan declara que não apenas _swapnakalpita_, mas até mesmo _vyavaharika_, é imaginário, que _vyavaharika_ não tem maior realidade do que _swapnakalpita_, e que _vyavaharika_ é apenas outro tipo de _swapnakalpita_, porque a realidade de _vyavharika_ é a mesma que a realidade do mundo em que ele vive e age. Como este mundo no estado de vigília também não é nada além de uma coisa imaginária e semelhante a um sonho, Sri Bhagavan declara que mesmo _vyavaharika_ é um _swapnakalpita_.
+
+
+
+
+
+
+
+
+**607. Por terem escorregado do estado destemido do Ser, as almas, sentindo-se baixas e mesquinhas, sofrem os sofrimentos do nascimento \[e morte]. "Pessoas que escorregam de seu status são como um cabelo que caiu da cabeça".**
+
+**_Sadhu Om_**: Em tâmil, as duas últimas linhas deste versículo, aqui entre aspas, são o versículo 964 do _Tirukkural_. Devido ao título do capítulo, ou seja, 'Prestígio Familiar', sob o qual este versículo aparece no _Tirukkural_, é interpretado que, se alguém de nascimento elevado se comportar de maneira inadequada, perderá imediatamente todo o seu valor, como um cabelo que caiu da cabeça. No entanto, ao adicionar mais duas linhas no início deste verso do _Tirukkural_, Sri Muruganar lhe deu um significado muito mais profundo, ou seja, que ao cair do estado do Ser \[em outras palavras, ao se tornar um _jiva_] perdemos nossa verdadeira glória e nos tornamos uma criatura insignificante e sem valor.
+
+**608. Em vez de conhecer o estado do Ser, que é eternamente claro como uma montanha em uma planície aberta, e permanecer firmemente nele, aquele que se afasta \[como um _jiva_] é como um \[o décimo homem] que conta apenas as outras nove pessoas e se esquece de contar a si mesmo.**
+
+**_Michael James_**: Consulte a história do décimo homem, apresentada em _Evangelho de Maharshi_, Livro Dois, capítulo um.
+
+**609. Em vez de indagar atentamente 'Quem sou eu?' dentro do Coração - o lugar de surgimento do pensamento, onde a Coisa divina, Siva, brilha desprovida de pensamento - e conhecê-la \[a Coisa divina], fundir-se nela e tornar-se um com ela como 'Eu sou Isso', é tolice escorregar do Ser.**
+
+**610. Se permanecermos sempre como a Coisa perfeita e principal \[o Ser], o Grande, como pode a degradação ser causada por outros \[já que não há outros no estado de perfeição do Ser]? "Pessoas que escorregam de seu status são como um cabelo que caiu da cabeça."**
+
+**_Michael James_**: Ou seja, só quando alguém escorrega do Ser é que se torna um _jiva_ mesquinho e degradado, assim como o cabelo perde seu valor apenas quando cai da cabeça.
+
+
+
+
+
+
+
+
+
+
+
+
+**611. Aquele que - acreditando que os objetos mentais, que aparecem diante dele por conta da ilusão, sejam reais - escorrega do Ser \[ou seja, desiste de permanecer como Ser], o conhecimento maravilhoso, primordial e puro, é um louco insensato.**
+
+**612. Não se deixe enganar pelo que \[diádicos e triádicos] aparecem ou desaparecem diante de você, atenda sempre ao Ser sem pestanejar. Pois, mesmo que a não-vigilância \[_pramada_] que perturba a atenção ao Ser seja muito pequena, o mal resultante disso será muito grande.**
+
+**_Sri Muruganar_**: Estar sempre atentamente desperto no próprio estado, o Ser, sem ser encantado pela aparência de quaisquer tipos de diádicos e triádicos, é o _Jnana-samadhi_. Isso também é Libertação. Por outro lado, se alguém esquece o Ser, a consciência, e pensa, mesmo que minimamente, que há objetos a serem conhecidos, essa _pramada_ - não importa o quão leve seja - em si mesma causará grande mal, assim como uma pequena gota de veneno fará grande mal.
+
+**21 Capítulo Sobre _Samsara_**
+
+_(Samsara Tiran)_
+
+**_Michael James_**: _Samsara_ literalmente significa 'o que está bem em movimento' e denota o estado de atividade mundana do ego, no qual passa por inúmeros nascimentos e mortes.
+
+**613. A mente impura, que funciona como pensar e esquecer, é ela mesma _samsara_, a sequência de nascimentos e mortes. A pura autoconsciência em que a mente pensante e esquecida está morta, ela mesma é a libertação perfeita \[_mukti_], desprovida de nascimento e morte.**
+
+**_Sri Muruganar_**: O surgimento do pensamento (o surgimento do primeiro pensamento, 'Eu sou fulano') em si é o nascimento, e o esquecimento do Ser em si é a morte. O fenômeno da mente de tal pensamento e esquecimento é chamado de _samsara_. Quando a mente, liberta de seu estado impuro de pensar e esquecer, permanece sempre apegada ao Ser, isso é chamado de destruição da mente \[_mano-nasa_], que em si mesma é libertação.
+
+
+
+
+
+
+
+
+
+
+**614. O grande e ilusório _samsara_ é \[nada mais do que] a mente que deixa sua verdadeira natureza de brilhar como existência \[Ser], que confunde o corpo carnal como sendo si mesma e que, assim, é preenchida com a densa escuridão da ignorância e, através dessa visão equivocada, vê os objetos sensoriais como se fossem reais, como a azulidade no céu.**
+
+**615. Na verdade, nada existe exceto o Ser. No entanto, abandonando a imensa e não dual bem-aventurança da imortalidade, a ilusão interna, o pensamento 'Eu sou o corpo' \[que é a forma de _chit-jada-granthi_, o nó entre o Ser sensível e o corpo insensível], passa pela sequência de nascimentos e mortes \[conhecido como _samsara_].**
+
+**616. O próprio _chittam_ \[o depósito de tendências, _vasanas_] é o _samsara_. Embora aqueles \[os _jivanmuktas_] que vivem sem _samsara_ \[ou seja, sem _chittam_ e suas _vasanas_] estejam \[aparentemente] às vezes, devido ao corpo-_karma_ \[_prarabdha karma_] no _samsara_ \[ou seja, envolvidos em atividades mundanas], eles estão realmente sempre passeando no espaço do verdadeiro conhecimento \[_mey-jnana_].**
+
+**22 Capítulo Sobre Obstáculos**
+
+_(Pratibandha Tiran)_
+
+**617. As muitas aflições que ocorrem com severidade como raios na vida dos grandes devotos são apenas para estabelecer sua mente pura cada vez mais firmemente \[em _tapas_, ou seja, na permanência no Ser] e não para derrubá-los \[dela].**
+
+**618. Discriminando e sabendo bem que todos os sofrimentos que vêm por _prarabdha_ em sua vida são enviados a ele pela Graça de Deus a fim de tornar sua mente mais forte e, assim, salvá-lo, deixe um aspirante suportá-los pacientemente como _tapas_ sem se alarmar nem mesmo no mínimo.**
+
+**619. Assim como uma gema tirada da mina não terá todo o brilho se não for polida na pedra de amolar, também o verdadeiro _tapas_, a _sadhana_ que se está fazendo, não brilhará bem se não for acompanhada de provações e tribulações em seu caminho.**
+
+
+
+
+
+
+
+
+**620. Para que um grande carro de templo siga pelas ruas e alcance com segurança seu destino, não apenas os fortes cavilhas, mas também os blocos de obstrução, que impedem que ele se choque com algo ao correr para os lados das ruas, são indispensáveis.**
+
+**_Sri Muruganar e Sadhu Om_**: Em todo este verso, apenas um exemplo \[_upamana_] é dado e o 'exemplificado' \[_upameya_] é deixado para o leitor inferir. Deve ser entendido da seguinte forma: 'Da mesma forma, para que um aspirante complete com sucesso seu _tapas_ ou _sadhana_, não apenas um caráter e modo de vida impecáveis, mas também os obstáculos que vêm através do _prarabdha_ são indispensáveis. Portanto, um aspirante deve aceitar pacientemente os obstáculos, vendo-os como sendo devido à Graça'. Por exemplo, as duras palavras "Por que tudo isso para alguém assim?", proferidas pelo irmão mais velho de Venkataraman, quando aceitas pacientemente, trouxeram ao mundo um grande Bhagavan Sri Ramana Maharshi. Não apenas por palavras não intencionais como essas, mas até mesmo pelos problemas intencionais causados ​​por pessoas perversas, um grande bem resultará na vida de um aspirante.
+
+**23 Capítulo Sobre a Maravilha da** _Maya_
+
+_(Maya Vichitra Tiran)_
+
+**621. Embora o que sempre exista seja verdadeiramente apenas um \[ou seja, o Ser] e, embora sua natureza seja de não se tornar, que maravilha é que Ele parece ter se tornado muitos _jivas_, fazendo muitos _karmas_ bons e maus e colhendo seus resultados e, assim, desde tempos imemoriais até agora, estar assumindo de quatro maneiras inúmeras formas de nascimento dos sete tipos e, finalmente, conseguir alcançar a Libertação.**
+
+**_Sadhu Om_**: As quatro maneiras de nascer são através de sementes, suor, ovos e útero, e os sete tipos de nascimento são os _devas_, seres humanos, animais, pássaros, criaturas sem pernas, criaturas que vivem na água e plantas.
+
+**622. Quando considerado corretamente, nada será mais maravilhoso e risível do que alguém se esforçar muito através de algum _sadhana_ para alcançar o Ser da mesma maneira que se esforça para alcançar outros objetos, mesmo que realmente permaneça sempre como o Ser não-dual.**
+
+
+
+
+
+
+
+
+
+
+
+**24 Capítulo Sobre o Mal da Fama**
+
+_(Puhazhchi Navai Tiran)_
+
+**_Michael James_**: A palavra em tâmil _'puhazhchi'_ significa tanto fama quanto elogio.
+
+**623. Porque traz a pessoa sob o grande mal de ceder à não-vigilância \[_pramada_], através da qual se é levado a pensar que se é um corpo indigno e mesquinho, quando na verdade se é o supremo _Brahman_, a fama \[ou elogio] deve ser rejeitada com grande desprezo e de forma alguma deve ser almejada por pessoas sábias.**
+
+**_Sadhu Om_**: Não é o _jiva_ \[o ego], que tem um nome e forma como 'Eu sou fulano', aquele que ganha fama ou recebe elogios? Portanto, é possível aspirar a fama ou elogio apenas quando assumimos o estado de um ego, um estado miserável e pisoteado causado por _pramada_. Por isso, aconselha-se que as pessoas sábias que aspiram ao conhecimento do Ser rejeitem necessariamente a possibilidade de ganhar nome e fama. É altamente impróprio para tais aspirantes \[_mumukshus_] correr loucamente atrás de nome e fama. O verso 263 do _Tirukkural_ diz: "Nasça para viver com fama; para aqueles que não alcançam a fama, é melhor não nascer". Tiruvalluvar \[o autor do _Tirukkural_] acertadamente disse que a fama é essencial apenas para aqueles que querem nascer como um _jiva_ \[como um ego]. Mas como os _mumukshus_ são aqueles que não gostam de nascer, mas apenas de pôr fim à sua condição de _jiva_ e realizar o Ser, a fama que foi recomendada por Tiruvalluvar é um obstáculo e um grande mal para eles. É por isso que Sri Bhagavan diz que deve ser rejeitada com desprezo por pessoas sábias.
+
+**624. Ao se expor devido ao desejo de ser elogiado por outros, está-se desnecessariamente removendo a própria proteção e criando obstáculos à _sadhana_ que se empreendeu.**
+
+**_Sadhu Om_**: O desejo pela aniquilação do ego é o sinal correto de _atma-sadhana_. Mas fama e elogio são coisas a serem conquistadas apenas pelo ego. Portanto, se alguém tem desejo de fama, significa que não deseja destruir o ego. É por isso que Sri Bhagavan diz que aquele que tem desejo de fama está criando obstáculos para sua _sadhana_. Portanto, se o _atma-sadhana_ deve progredir sem obstáculos e bem protegida, é melhor que um aspirante viva uma vida de nome desconhecido e lugar desconhecido.
+
+
+
+
+
+
+
+**25 Capítulo Sobre o Mal da Arrogância**
+
+_(Anava Navai Tiran)_
+
+**625. Estar sujeito à arrogância, o reinado do inferno, é o grande e inaceitável erro. Quem, senão pessoas sem valor, deixará de odiar o rosto daquele _kalipurusha_ \[aquele mal, a arrogância], que nunca deveria ser visto por pessoas boas?**
+
+**626. Chegar e sentar-se com as costas e o pescoço retos \[como se fossem grandes iogues] na santa presença dos _Jnanis_, que estão em abidância no Ser \[_atma-nishtha_], mas \[então] bocejando, dormindo e roncando - este hábito das pessoas mundanas é altamente impróprio e ruim.**
+
+**_Sri Muruganar e Sadhu Om_**: É realmente verdade que tais incidentes, como descritos neste verso, costumavam acontecer na presença de Sri Bhagavan. Este verso trata do comportamento impróprio e arrogante de algumas pessoas mundanas que vêm à presença de _Jivan-muktas_ e fingem ser grandes _yogis_. A santa presença de _Jnanis_ como Sri Bhagavan Ramana é muito rara na terra. Portanto, em tais ocasiões raras em que está disponível, em vez de usá-la para erradicar nosso sono da ignorância \[_ajnana_], fingir estar em _yoga_, mas na verdade bocejando, dormindo e roncando devido a _tamas_, é altamente impróprio por parte das pessoas.
+
+**26 Capítulo Sobre o Nascimento da Miséria**
+
+_(Dukha Utpatti Tiran)_
+
+**627. Embora a natureza do Ser exista sempre como bem-aventurança, alguém é queimado pelo calor ardente do sol da miséria do nascimento \[e morte] unicamente devido ao surgimento do ego e ao seu funcionamento malicioso com a loucura da densa ilusão.**
+
+**628. O ego, o vil apego ao corpo \[como 'Eu sou isso'], é a base de todas as qualidades demoníacas \[_asura sampat_]. Para aqueles cujo ego ilusório \[_maya-ahankara_] está aumentando através do contato com a vinculação do 'meu' \[_mamakara_], é de fato impossível alcançar a paz.**
+
+
+
+
+
+
+
+
+
+
+**27 Capítulo Sobre a Alma**
+
+_(Jiva Bodha Tiran)_
+
+**629. O perambular da pequena alma \[através dos cinco sentidos], seu sofrimento no mundo, sua volta ao seu interior e seu repouso pacífico no coração por um tempo, é como o vagar sob o sol quente, o retorno à sombra fresca de uma árvore e o desaparecimento do calor \[por um tempo].**
+
+**630. A pessoa discriminativa \[_viveki_], depois de sofrer sob o sol quente, não gostará de retornar ao sol saindo da sombra. Da mesma forma, aqueles que sofreram com o calor triplo \[de desejo por riquezas, mulheres e fama] que abrasa este mundo, não deveriam voltar-se novamente para o mundo, deixando o Coração \[Ser].**
+
+**_Michael James_**: Consulte _Quem sou eu?_ onde a alegoria de vagar sob o calor escaldante do sol, usada nos dois versos acima, é dada por Sri Bhagavan.
+
+**631. As almas encarnadas _[jivas_]_,_ que aparentemente surgiram da Coisa Real \[Ser ou _Brahman_], não podem, até se fundirem na Coisa Real \[sua origem], parar \[ou interromper] em qualquer lugar, apesar de qualquer quantidade \[ou tipo] de obstáculos \[na forma de dor e prazer, ou seja, eles não podem parar de fazer esforços, descansando contentes com qualquer quantidade de prazeres ou desanimados com qualquer quantidade de dores experimentadas em incontáveis nascimentos de qualquer tipo em qualquer mundo], assim como um pássaro que voa no vasto céu a partir do solo não pode ficar em nenhum outro lugar até retornar à terra.**
+
+**632. Quando as almas \[ao perguntar 'De onde eu sou?' ou 'Quem sou eu?'] retornam à sua fonte pelo caminho que vieram, uma vez que se fundem ao seu próprio Ser e, como a bem-aventurança do Ser é claramente experimentada por eles ali, permanecem imóveis, estabelecidos para sempre no Ser.**
+
+**_Sadhu Om_**: Os versos 631 e 632 transmitem as mesmas ideias expressas por Sri Bhagavan no verso 8 de _Sri Arunachala Ashtakam_. Consulte também as primeiras sete páginas do capítulo dois de _O Caminho de Sri Ramana_, Parte Dois, onde a mesma ideia é explicada detalhadamente.
+
+
+
+
+
+
+
+
+**633. Em vez de ser salvo pela Graça de Deus, pensando nela \[a Graça] sem pensar \[ou seja, permanecendo quieto com a consciência 'eu sou'], quem pode e como fazer algo surgindo como 'eu sou fulano'? Portanto, prestando atenção ao Ser e, assim, não permitindo que o ego fantasmagórico surja e atenda a outras coisas, permaneça no supremo Silêncio, onde você é Aquilo.**
+
+**28 Capítulo Sobre a Impotência da Alma**
+
+_(Jiva Asakta Tiran)_
+
+**634. Exceto pela pura luz da Graça de Deus, ninguém que vive neste mundo de ignorância será capaz de desfrutar da bem-aventurança do supremo _Jnana_, Ser, que brilha mesmo através da escuridão da ilusão \[ou seja, que brilha como a luz do conhecimento, permitindo saber até mesmo a existência da escuridão ou ignorância].**
+
+**_Michael James_**: Consulte também o verso 648.
+
+**29 Capítulo Sobre a Verdade dos Objetos Vistos**
+
+_(Drisya Unmai Tiran)_
+
+**635. Quando alguém que não vê a verdade em si mesmo, o observador, que é indispensável para ver, vê o mundo como verdadeiro, o próprio mundo que é visto por ele o ridiculariza e ri dele internamente, trazendo vergonha para ele.**
+
+**_Sadhu Om_**: Este verso, que declara que o mundo ri dentro de si e ridiculariza aquele que o vê como real, tem uma beleza única. Podemos nos perguntar como uma coisa insensível chamada 'mundo' pode rir. Essa é a beleza deste verso. Devemos entender este verso tendo em mente a ideia ensinada no verso 74 desta obra. Uma prostituta de natureza baixa e sem castidade não riria de si mesma ao ouvir as palavras de apreciação de seu amante apaixonado e novo, que diz a seu amigo: "Ah, essa mulher, minha amante, é a mulher mais casta do mundo"? Da mesma forma, o mundo ri dentro de si daqueles que pensam que ele é real. Assim, este verso personifica bem o mundo. Sri Bhagavan dá mais ênfase ao fato de que o mundo é irreal, expondo neste verso que o apoio ou a evidência de nenhum outro é necessário para provar a irrealidade do mundo, pois o próprio mundo sabe que é irreal. Este é o clímax da diversão neste verso.
+
+Este verso contém a mesma instrução dada por Sri Bhagavan em _Evangelho do Maharshi_, Livro Dois, capítulo três \[8ª edição, página 63], "Bem, então, esse mundo, que você diz ser real, está realmente zombando de você por buscar provar sua realidade enquanto de sua própria realidade você é ignorante".
+
+
+
+
+
+
+
+**636. Apenas aquelas coisas que estão dentro do alcance da luz, e não aquelas que estão além do alcance da luz, podem \[ser conhecidas por] existir. Da mesma forma, apenas aquelas coisas \[o universo] que estão dentro do alcance da mente \[a luz refletida do Ser], cuja função é pensar e esquecer, são conhecidas por ter existência.**
+
+**_Michael James_**: O mundo não pode aparecer onde a luz da mente está ausente. Isso significa que, na verdadeira luz do Ser, o universo, que consiste em objetos que são criados (pensando), sustentados (continuando a pensar) e destruídos (esquecendo), não existe de forma alguma. Por outro lado, como o Ser (ou Deus), a Coisa verdadeiramente existente, está além do alcance da luz da mente, para a mente, Ele é inexistente. A razão pela qual o Ser é dito estar além do alcance da luz da mente, cuja função é pensar e esquecer, é que Ele é uma Coisa que não pode ser pensada nem esquecida e que não pode pensar nem esquecer por si mesma.
+
+**637. Quando algo é conhecido à sua frente \[de você], isso apenas estabelece que algo existe, mas não estabelece que a forma que é feita para aparecer pelo contato dos sentidos com ela, é a realidade ou verdadeira natureza dessa coisa.**
+
+**_Michael James_**: O nome e a forma de uma coisa que conhecemos são criados apenas pelo contato dos cinco sentidos com essa coisa. Como o nome e a forma são meras imaginações da mente, a verdadeira natureza de qualquer coisa que conhecemos no mundo (ou como o mundo) é, na verdade, nada mais que o Ser.
+
+**638. Se, em vez de ver algo à sua frente \[de você] pela mente, você ver pela mente quem vê, tudo será encontrado como sendo você mesmo, o observador; então todos os conhecimentos objetivos serão considerados tolos.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

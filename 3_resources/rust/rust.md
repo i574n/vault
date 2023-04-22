@@ -498,3 +498,99 @@ This implementation uses the filter_map method to filter and map the lines, flat
 In this example, instead of using .push() to add elements to a vector, we use the filter_map method to filter the lines that contain the target string, and map them to a tuple of the current index and the next two indexes. The flatten method is then used to join the tuples of indices into a single vector of indices. The collect method is then used to convert the iterator into a vector, both for lines to delete and for lines to keep.
 
 This way we can avoid using .push(), \*var = value and for var in constructs and achieve the same goal.
+
+---
+---
+
+## detail performance and memory implications of heavy usage of String, &String, &str and str
+
+< In Rust, `String`, `&String`, `&str`, and `str` have different performance and memory implications, and using them correctly can have a significant impact on the performance and memory usage of your program.
+
+`String` is a heap-allocated string type that is growable and mutable. When you create a `String` and add characters to it, Rust will dynamically allocate memory to store the string data, and the string can grow or shrink as needed. Because `String` is heap-allocated, it can be slower to create and manipulate than stack-allocated types like `&str`. However, using `String` allows you to create strings of arbitrary length and to modify them in-place, which can be more efficient than repeatedly allocating new strings.
+
+`&String` is a reference to a `String` that is stored on the heap. Because it is a reference, it has very low memory overhead and can be passed around efficiently. However, when you create a `&String` from a `String`, you are still accessing the heap-allocated string data, so there may be some performance penalty associated with this.
+
+`&str` is a reference to a string slice, which can be created from a `String` using the `as_str()` method. `&str` is a stack-allocated type that represents a slice of the original string data. Because `&str` is stack-allocated, it can be faster to create and manipulate than heap-allocated types like `String`. However, `&str` is immutable, so you cannot modify the original string data in-place.
+
+`str` is a slice type that is similar to `&str`, but is not a reference. Instead, it is a fat pointer that contains both a pointer to the string data and its length. `str` is typically used when working with slices of strings that are stored in contiguous memory, such as when parsing text files or network protocols. Because `str` is a slice, it has very low memory overhead and can be passed around efficiently. However, creating a `str` requires copying the pointer and length information, which can be slightly slower than working with plain `&str` references.
+
+In summary, using `String` can be more efficient than repeatedly allocating new strings, but may be slower to create and manipulate. Using references like `&String` and `&str` can be more memory-efficient and faster to create and manipulate, but you cannot modify the original string data in-place. Using `str` can be more memory-efficient than `&str`, but requires copying the pointer and length information. The best choice of type to use depends on the specific use case and requirements of your program.
+
+## detail all possible use cases considering best practices
+
+< Here are some best practices and possible use cases for each of the four string types in Rust:
+
+1\ `String`: Use `String` when you need to create or modify a string dynamically at runtime. `String` is ideal for use cases where the length of the string is not known in advance and may need to grow or shrink dynamically. Here are some possible use cases:
+
+- Storing user input or other data entered at runtime
+- Building complex strings from smaller pieces, such as when constructing a complex SQL query or generating HTML code
+- Storing data from files or network streams where the length of the data is not known in advance
+
+When creating a new `String`, it is recommended to use the `String::new()` constructor instead of a literal string. This will allocate the correct amount of memory for the new string and avoid unnecessary reallocations.
+
+2\ `&String`: Use `&String` when you need to pass a reference to a `String` to a function or method that expects a reference to a string slice (`&str`). This is particularly useful when working with APIs or libraries that only accept string slices, or when you want to pass a large string to a function without incurring the overhead of copying the string data. Here are some possible use cases:
+
+- Passing `String` data to a function that accepts `&str`
+- Creating a substring of a larger `String` without copying the data
+
+When creating a `&String` reference, it is recommended to use the `as_str()` method to convert the `String` to a string slice. This avoids unnecessary allocations and allows the `&String` to be used in functions that expect a string slice.
+
+3\ `&str`: Use `&str` when you need to work with string slices that are known at compile time, or when you need to pass a reference to a string slice to a function or method. `&str` is a lightweight type that can be used efficiently and safely in Rust code. Here are some possible use cases:
+
+- Passing string literals or constant values to functions that accept `&str`
+- Working with static strings in Rust code
+- Parsing strings from files or network streams
+
+When working with string slices, it is recommended to use `&str` instead of `String` where possible, as it avoids unnecessary allocations and can be more efficient.
+
+4\ `str`: Use `str` when you need to work with slices of strings that are stored in contiguous memory, such as when parsing text files or network protocols. `str` is a fat pointer type that contains both a pointer to the string data and its length. Here are some possible use cases:
+
+- Parsing text files or network protocols that contain strings
+- Working with strings that are stored in contiguous memory, such as arrays or vectors of strings
+
+When working with `str`, it is recommended to use the `str::from_utf8()` method to convert raw bytes to a string slice. This will ensure that the string is valid UTF-8 and avoid potential runtime errors.
+
+## list all types of string manipulation besides these 4
+
+< In Rust, there are many different types of string manipulation beyond the four types you mentioned. Here are some additional types of string manipulation that you might encounter:
+
+1. Regular expressions: Regular expressions are a powerful tool for searching and manipulating strings. Rust provides a regular expression engine in the `regex` crate, which allows you to search for patterns in strings and replace them with other strings.
+
+2. Pattern matching: Rust's pattern matching syntax can be used to extract substrings from strings, check if a string contains a particular pattern, or transform strings in other ways. You can use `match` expressions or `if let` expressions to pattern match on strings.
+
+3. String parsing: Rust provides several methods for parsing strings into other types, such as integers or floating-point numbers. The `parse()` method can be used to convert a string to another type, and Rust also provides parsing methods for specific types, such as `parse::<i32>()` to parse a string as an integer.
+
+4. String formatting: Rust provides several methods for formatting strings, such as the `format!()` macro or the `write!()` macro. These macros allow you to insert values into a string at runtime and control the formatting of those values.
+
+5. Unicode manipulation: Rust's `unicode` crate provides functions for working with Unicode strings, such as converting between Unicode normalization forms or checking the properties of Unicode characters.
+
+6. String encoding: Rust provides several string encoding types and methods, such as UTF-8, ASCII, and ISO-8859-1. You can use these types and methods to convert strings between different encodings, or to check the encoding of a string.
+
+7. String hashing: Rust's `std::hash::Hasher` trait provides methods for hashing strings, which can be useful for storing and retrieving strings in hash tables or other data structures.
+
+These are just a few examples of the many different types of string manipulation available in Rust. The exact set of tools you will need will depend on your specific use case and requirements.
+
+## detail the implications of Option<&String>, Option\<String>, Option<&str> and Option\<str> considering the monadic fuckery that might happen with memory management
+
+< In Rust, `Option` is a type that is used to represent a value that may or may not be present. Rust provides several different types for representing optional string values, each with their own implications for memory management and monadic operations.
+
+1\. `Option<&String>`: This type represents an optional reference to a `String` value. It can be used to indicate that a function or method may or may not return a string reference. Because it is a reference, it has very low memory overhead and can be passed around efficiently. However, when using `Option<&String>`, you need to ensure that the referenced `String` value is still in scope when you use the reference.
+
+When working with `Option<&String>`, you can use the `map()` or `and_then()` methods to perform monadic operations on the optional value. These methods allow you to transform the optional value and propagate any errors that may occur.
+
+2\. `Option<String>`: This type represents an optional `String` value. It can be used to indicate that a function or method may or may not return a `String`. Because it is a heap-allocated type, it can be slower to create and manipulate than stack-allocated types like `&str`. However, using `Option<String>` allows you to create optional strings of arbitrary length and to modify them in-place, which can be more efficient than repeatedly allocating new strings.
+
+When working with `Option<String>`, you can use the `map()` or `and_then()` methods to perform monadic operations on the optional value. These methods allow you to transform the optional value and propagate any errors that may occur.
+
+3\. `Option<&str>`: This type represents an optional reference to a string slice (`&str`). It can be used to indicate that a function or method may or may not return a string slice. Because it is a stack-allocated type, it can be faster to create and manipulate than heap-allocated types like `String`. However, when using `Option<&str>`, you need to ensure that the referenced string slice is still in scope when you use the reference.
+
+When working with `Option<&str>`, you can use the `map()` or `and_then()` methods to perform monadic operations on the optional value. These methods allow you to transform the optional value and propagate any errors that may occur.
+
+4\. `Option<str>`: This type represents an optional slice type (`str`). It is similar to `Option<&str>`, but is not a reference. Instead, it is a fat pointer that contains both a pointer to the string data and its length. `Option<str>` is typically used when working with optional slices of strings that are stored in contiguous memory, such as when parsing text files or network protocols.
+
+When working with `Option<str>`, you need to be careful to ensure that the referenced string data is still in scope when you use the pointer. Because it is a slice, it has very low memory overhead and can be passed around efficiently.
+
+In general, when working with optional string values, it's important to carefully manage the lifetimes of any referenced data to avoid memory management issues. When using monadic operations with optional values, it's important to propagate any errors that may occur and handle them appropriately. Additionally, when using heap-allocated types like `String`, it's important to consider the potential performance implications of repeatedly allocating new strings.
+
+---
+---
