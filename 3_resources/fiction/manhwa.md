@@ -2892,43 +2892,44 @@ Ao longo de sua jornada, os heróis da favela devem enfrentar inimigos poderosos
 
 < Aqui está uma tabela redistribuindo as raças, classes, especializações, árvores de talentos, feitiços e profissões do WoW considerando os dezesseis tipos de personalidade do MBTI. Reutilizei os seis nomes já gerados e adicionei mais dez para completar os dezesseis tipos. Observe que algumas combinações podem não existir no WoW original, mas foram incluídas para representar os tipos de personalidade.
 
-Nome Tipo MBTI Classe Especialização Feitiço Principal Profissão
-João INTJ Mago Arcano Explosão Arcana Engenharia
-Camila ENFP Druida Restauração Crescimento Rápido Herborismo
-Pedro ISTP Guerreiro Armas Ataque Mortal Mineração
-Lívia ESFJ Sacerdote Sagrado Cura Célere Alfaiataria
-Mateus ENTP Bruxo Destruição Setas do Caos Encantamento
-Maria ISFJ Paladino Proteção Martelo do Ímpio Ferraria
-Rafael INFJ Cavaleiro da Morte Gelo Ataque da Morte Joalheria
-Beatriz ENFJ Xamã Elemental Surto de Raios Escrivania
-Lucas INTP Ladino Subterfúgio Eviscerar Couraria
-Isabela ESTP Caçador Sobrevivência Disparo Explosivo Esfolamento
-Felipe INFP Monge Tecelão da Névoa Envelopar em Névoa Culinária
-Ana ESTJ Guerreiro Fúria Rajada de Sangue Alquimia
-Paulo ISTJ Paladino Retribuição Julgamento Inscrição
-Gabriela ESFP Sacerdote Sombra Palavra Sombria: Dor Arqueologia
-Thiago ENFP Druida Equilíbrio Ira Solar Pesca
-Laura ENTJ Cavaleiro da Morte Profano Flagelo Profano Esgrimação
+Nome | Tipo MBTI | Classe | Especialização | Feitiço Principal | Profissão
+-----|-----------|--------|----------------|--------------------|----------
+João | INTJ | Mago | Arcano | Explosão Arcana | Engenharia
+Camila | ENFP | Druida | Restauração | Crescimento Rápido | Herborismo
+Pedro | ISTP | Guerreiro | Armas | Ataque Mortal | Mineração
+Lívia | ESFJ | Sacerdote | Sagrado | Cura Célere | Alfaiataria
+Mateus | ENTP | Bruxo | Destruição | Setas do Caos | Encantamento
+Maria | ISFJ | Paladino | Proteção | Martelo do Ímpio | Ferraria
+Rafael | INFJ | Cavaleiro da Morte | Gelo | Ataque da Morte | Joalheria
+Beatriz | ENFJ | Xamã | Elemental | Surto de Raios | Escrivania
+Lucas | INTP | Ladino | Subterfúgio | Eviscerar | Couraria
+Isabela | ESTP | Caçador | Sobrevivência | Disparo Explosivo | Esfolamento
+Felipe | INFP | Monge | Tecelão da Névoa | Envelopar em Névoa | Culinária
+Ana | ESTJ | Guerreiro | Fúria | Rajada de Sangue | Alquimia
+Paulo | ISTJ | Paladino | Retribuição | Julgamento | Inscrição
+Gabriela | ESFP | Sacerdote | Sombra | Palavra Sombria: Dor | Arqueologia
+Thiago | ENFP | Druida | Equilíbrio | Ira Solar | Pesca
+Laura | ENTJ | Cavaleiro da Morte | Profano | Flagelo Profano | Esgrimação
+
 Os nomes, tipos de personalidade, classes, especializações, feitiços principais e profissões foram atribuídos levando em consideração as características e preferências típicas dos dezesseis tipos de personalidade do MBTI.
 
 ## complete this list adding columns with remarks about game design, pvp/pve balance, personality and jyotish, etc)
 
 < Aqui está a tabela atualizada, incluindo as colunas adicionais de observações sobre design de jogo, equilíbrio PvP/PvE, personalidade e jyotish.
 
-Nome Tipo MBTI Classe Especialização Feitiço Principal Profissão Design de Jogo Equilíbrio PvP/PvE Personalidade Jyotish
-João INTJ Mago Arcano Explosão Arcana Engenharia Focado em habilidades de longo alcance Bom em ambos Estratégico e analítico Marte e Júpiter
-Camila ENFP Druida Restauração Crescimento Rápido Herborismo Versátil, capaz de curar e se transformar Melhor em PvE Carismático e inspirador Vênus e Mercúrio
-Pedro ISTP Guerreiro Armas Ataque Mortal Mineração Focado em ataques corpo a corpo e combos Bom em ambos Prático e adaptável Marte e Saturno
-Lívia ESFJ Sacerdote Sagrado Cura Célere Alfaiataria Habilidades de cura em área de efeito Melhor em PvE Empático e cuidadoso Lua e Vênus
-Mateus ENTP Bruxo Destruição Setas do Caos Encantamento Controle de demônios e dano em área Bom em ambos Inovador e curioso Mercúrio e Urano
-Maria ISFJ Paladino Proteção Martelo do Ímpio Ferraria Combina defesa com ataques corpo a corpo Melhor em PvE Protetor e leal Lua e Júpiter
-Rafael INFJ Cavaleiro da Morte Gelo Ataque da Morte Joalheria Focado em controle de grupo e dano em área Bom em ambos Intuitivo e idealista Netuno e Plutão
-Beatriz ENFJ Xamã Elemental Surto de Raios Escrivania Elemental e habilidades de controle do clima Bom em ambos Líder e motivador Sol e Vênus
-Lucas INTP Ladino Subterfúgio Eviscerar Couraria Furtividade e ataques rápidos de corpo a corpo Bom em ambos Criativo e lógico Mercúrio e Plutão
-Isabela ESTP Caçador Sobrevivência Disparo Explosivo Esfolamento Focado em armadilhas e dano de longo alcance Bom em ambos Oportunista e enérgico Marte e Urano
-Felipe INFP Monge
-
-| | Tecelão da Névoa | Envelopar em Névoa | Culinária | Habilidades de cura e suporte de combate próximo | Melhor em PvE | Sensível e idealista | Netuno e Lua |
+Nome | Tipo MBTI | Classe | Especialização | Feitiço Principal | Profissão | Design de Jogo | Equilíbrio PvP/PvE | Personalidade | Jyotish
+-----|-----------|--------|----------------|-------------------|-----------|----------------|--------------------|---------------|--------
+João | INTJ | Mago | Arcano | Explosão Arcana | Engenharia | Focado em habilidades de longo alcance | Bom em ambos | Estratégico e analítico | Marte e Júpiter
+Camila | ENFP | Druida | Restauração | Crescimento Rápido | Herborismo | Versátil, capaz de curar e se transformar | Melhor em PvE | Carismático e inspirador | Vênus e Mercúrio
+Pedro | ISTP | Guerreiro | Armas | Ataque Mortal | Mineração | Focado em ataques corpo a corpo e combos | Bom em ambos | Prático e adaptável | Marte e Saturno
+Lívia | ESFJ | Sacerdote | Sagrado | Cura Célere | Alfaiataria | Habilidades de cura em área de efeito | Melhor em PvE | Empático e cuidadoso | Lua e Vênus
+Mateus | ENTP | Bruxo | Destruição | Setas do Caos | Encantamento | Controle de demônios e dano em área | Bom em ambos | Inovador e curioso | Mercúrio e Urano
+Maria | ISFJ | Paladino | Proteção | Martelo do Ímpio | Ferraria | Combina defesa com ataques corpo a corpo | Melhor em PvE | Protetor e leal | Lua e Júpiter
+Rafael | INFJ | Cavaleiro da Morte | Gelo | Ataque da Morte | Joalheria | Focado em controle de grupo e dano em área | Bom em ambos | Intuitivo e idealista | Netuno e Plutão
+Beatriz | ENFJ | Xamã | Elemental | Surto de Raios | Escrivania | Elemental e habilidades de controle do clima | Bom em ambos | Líder e motivador | Sol e Vênus
+Lucas | INTP | Ladino | Subterfúgio | Eviscerar | Couraria | Furtividade e ataques rápidos de corpo a corpo | Bom em ambos | Criativo e lógico | Mercúrio e Plutão
+Isabela | ESTP | Caçador | Sobrevivência | Disparo Explosivo | Esfolamento | Focado em armadilhas e dano de longo alcance | Bom em ambos | Oportunista e enérgico | Marte e Urano
+Felipe | INFP | Monge | Tecelão da Névoa | Envelopar em Névoa | Culinária | Habilidades de cura e suporte de combate próximo | Melhor em PvE | Sensível e idealista | Netuno e Lua |
 | Ana | ESTJ | Guerreiro | Fúria | Rajada de Sangue | Alquimia | Ataques rápidos e dano sustentado em corpo a corpo | Bom em ambos | Organizado e assertivo | Sol e Saturno |
 | Paulo | ISTJ | Paladino | Retribuição | Julgamento | Inscrição | Combate corpo a corpo com habilidades de suporte | Bom em ambos | Responsável e leal | Lua e Mercúrio |
 | Gabriela | ESFP | Sacerdote | Sombra | Palavra Sombria: Dor | Arqueologia | Dano mágico sustentado e controle mental | Bom em ambos | Espontâneo e expressivo | Vênus e Júpiter |
@@ -2941,44 +2942,46 @@ Esta tabela atualizada inclui observações sobre design de jogo, equilíbrio Pv
 
 < Apologies for the confusion. Here's a new attempt to compress all classes, specs, and spells from various games into a new game with 16 classes inspired by World of Warcraft, using the MBTI types as a guide.
 
-Type MBTI Class Name Primary Role Secondary Role Signature Ability Description
-INTJ Archivist Ranged Damage Utility Arcane Torrent A scholarly mage who can manipulate time and space, unleashing powerful spells from a distance.
-INTP Shadowmancer Stealth Damage Control Shadowstep A master of shadows and deception, skilled in infiltration and disabling their enemies.
-ENTJ Warlord Melee Damage Leadership Commanding Shout A skilled tactician and leader, able to inspire and rally their allies in the heat of battle.
-ENTP Technomancer Ranged Damage Summoning Summon Mech A genius inventor who uses technology to summon mechanical minions and devastate enemies from afar.
-INFJ Empath Healer Crowd Control Soothing Light A compassionate healer who can sense allies' emotions and use their energy to heal and protect.
-INFP Dreamweaver Healer Support Healing Dream A mystical healer who draws upon the power of dreams to restore allies and control the battlefield.
-ENFJ Paragon Tank Leadership Bulwark of Hope A charismatic and inspiring defender who protects allies and leads them to victory.
-ENFP Spiritcaller Support Crowd Control Spirit Link Totem A versatile caster who can communicate with spirits, providing support and controlling enemies.
-ISTJ Justicar Tank Melee Damage Righteous Defense A disciplined warrior who excels at protecting allies and meting out justice on the battlefield.
-ISFJ Lifeguardian Healer Tank Life's Embrace A nurturing healer who specializes in damage mitigation and preserving the lives of their allies.
-ESTJ Executioner Melee Damage Tank Execute A relentless melee fighter focused on taking down enemies with precision and efficiency.
-ESFJ Lightbringer Healer Support Radiant Beacon A devoted healer who harnesses the power of light to mend wounds and bolster their allies.
-ISTP Bladestorm Melee Damage Utility Blade Flurry A nimble, dual-wielding warrior who excels in close-quarters combat and can adapt to any situation.
-ISFP Dervish Melee Damage Support Whirling Strikes A graceful and deadly melee fighter who can use dance-like movements to support and inspire allies.
-ESTP Skirmisher Ranged Damage Mobility Rapid Fire A swift and agile ranged attacker who can hit and run, keeping enemies at bay.
-ESFP Thespiomancer Support Crowd Control Curtain Call A charismatic performer who uses their charm and wit to manipulate enemies and empower allies.
-In this new game, each of the 16 classes represents an MBTI type and
+Type | MBTI Class Name | Primary Role | Secondary Role | Signature Ability | Description
+-----|-----------------|--------------|----------------|-------------------|------------
+INTJ | Archivist | Ranged Damage | Utility | Arcane Torrent | A scholarly mage who can manipulate time and space, unleashing powerful spells from a distance.
+INTP | Shadowmancer | Stealth Damage | Control | Shadowstep | A master of shadows and deception, skilled in infiltration and disabling their enemies.
+ENTJ | Warlord | Melee Damage | Leadership | Commanding Shout | A skilled tactician and leader, able to inspire and rally their allies in the heat of battle.
+ENTP | Technomancer | Ranged Damage | Summoning | Summon Mech | A genius inventor who uses technology to summon mechanical minions and devastate enemies from afar.
+INFJ | Empath | Healer | Crowd Control | Soothing Light | A compassionate healer who can sense allies' emotions and use their energy to heal and protect.
+INFP | Dreamweaver | Healer | Support | Healing Dream | A mystical healer who draws upon the power of dreams to restore allies and control the battlefield.
+ENFJ | Paragon | Tank | Leadership | Bulwark of Hope | A charismatic and inspiring defender who protects allies and leads them to victory.
+ENFP | Spiritcaller | Support | Crowd Control | Spirit Link Totem | A versatile caster who can communicate with spirits, providing support and controlling enemies.
+ISTJ | Justicar | Tank | Melee Damage | Righteous Defense | A disciplined warrior who excels at protecting allies and meting out justice on the battlefield.
+ISFJ | Lifeguardian | Healer | Tank | Life's Embrace | A nurturing healer who specializes in damage mitigation and preserving the lives of their allies.
+ESTJ | Executioner | Melee Damage | Tank | Execute | A relentless melee fighter focused on taking down enemies with precision and efficiency.
+ESFJ | Lightbringer | Healer | Support | Radiant Beacon | A devoted healer who harnesses the power of light to mend wounds and bolster their allies.
+ISTP | Bladestorm | Melee Damage | Utility | Blade Flurry | A nimble, dual-wielding warrior who excels in close-quarters combat and can adapt to any situation.
+ISFP | Dervish | Melee Damage | Support | Whirling Strikes | A graceful and deadly melee fighter who can use dance-like movements to support and inspire allies.
+ESTP | Skirmisher | Ranged Damage | Mobility | Rapid Fire | A swift and agile ranged attacker who can hit and run, keeping enemies at bay.
+ESFP | Thespiomancer | Support | Crowd Control | Curtain Call | A charismatic performer who uses their charm and wit to manipulate enemies and empower allies.
 
 ## translate this table to pt-br
 
-Tipo MBTI Nome da Classe Função Primária Função Secundária Habilidade Signature Descrição
-INTJ Arquivista Dano à Distância Utilidade Torrente Arcana Um mago estudioso que pode manipular o tempo e espaço, desencadeando feitiços poderosos à distância.
-INTP Sombramante Dano Furtivo Controle Passo Sombrio Um mestre das sombras e do engano, especializado em infiltração e neutralização de inimigos.
-ENTJ Senhor da Guerra Dano Corpo a Corpo Liderança Brado de Comando Um líder e estrategista habilidoso, capaz de inspirar e liderar seus aliados no calor da batalha.
-ENTP Tecnimante Dano à Distância Invocação Invocar Mecânico Um inventor genial que utiliza a tecnologia para invocar ajudantes mecânicos e devastar inimigos de longe.
-INFJ Empata Curandeiro Controle de Grupo Luz Calmante Um curandeiro compassivo que pode sentir as emoções dos aliados e usar sua energia para curar e proteger.
-INFP Tece-sonhos Curandeiro Suporte Sonho Curativo Um curandeiro místico que extrai o poder dos sonhos para restaurar aliados e controlar o campo de batalha.
-ENFJ Paragon Tanque Liderança Baluarte da Esperança Um defensor carismático e inspirador que protege aliados e os conduz à vitória.
-ENFP Invocador de Espíritos Suporte Controle de Grupo Totem de Elo Espiritual Um lançador versátil que pode se comunicar com espíritos, fornecendo suporte e controlando inimigos.
-ISTJ Justicar Tanque Dano Corpo a Corpo Defesa Justa Um guerreiro disciplinado que se destaca em proteger aliados e aplicar justiça no campo de batalha.
-ISFJ Guardião da Vida Curandeiro Tanque Abraço da Vida Um curandeiro dedicado que se especializa em mitigação de dano e na preservação da vida de seus aliados.
-ESTJ Carrasco Dano Corpo a Corpo Tanque Executar Um lutador corpo a corpo implacável focado em abater inimigos com precisão e eficiência.
-ESFJ Arauto da Luz Curandeiro Suporte Farol Radiante Um curandeiro devoto que utiliza o poder da luz para curar feridas e fortalecer seus aliados.
-ISTP Vórtice das Lâminas Dano Corpo a Corpo Utilidade Fúria das Lâminas Um guerreiro ágil e habilidoso com armas duplas que se destaca no combate corpo a corpo e adapta-se a qualquer situação.
-ISFP Dervixe Dano Corpo a Corpo Suporte Golpes Giratórios Um lutador ágil e mortal no corpo a corpo que usa movimentos semelhantes a dança para apoiar e inspirar aliados.
-ESTP Escaramuçador Dano à Distância Mobilidade Disparo Rápido Um atacante rápido e ágil à distância que utiliza técnicas de acertar e correr para manter inimigos à distância.
-ESFP Teatromante Suporte Controle de Grupo Chamada Final Um performer carismático que usa seu charme e perspicácia para manipular inimigos e fortalecer aliados.
+Tipo | MBTI Class Name | Função Primária | Função Secundária | Habilidade Signature | Descrição
+-----|-----------------|-----------------|-------------------|----------------------|----------
+INTJ | Arquivista | Dano à Distância | Utilidade | Torrente Arcana | Um mago estudioso que pode manipular o tempo e espaço, desencadeando feitiços poderosos à distância.
+INTP | Sombramante | Dano Furtivo | Controle | Passo Sombrio | Um mestre das sombras e do engano, especializado em infiltração e neutralização de inimigos.
+ENTJ | Senhor da Guerra | Dano Corpo a Corpo | Liderança | Brado de Comando | Um líder e estrategista habilidoso, capaz de inspirar e liderar seus aliados no calor da batalha.
+ENTP | Tecnimante | Dano à Distância | Invocação | Invocar Mecânico | Um inventor genial que utiliza a tecnologia para invocar ajudantes mecânicos e devastar inimigos de longe.
+INFJ | Empata | Curandeiro | Controle de Grupo | Luz Calmante | Um curandeiro compassivo que pode sentir as emoções dos aliados e usar sua energia para curar e proteger.
+INFP | Tece-sonhos | Curandeiro | Suporte | Sonho Curativo | Um curandeiro místico que extrai o poder dos sonhos para restaurar aliados e controlar o campo de batalha.
+ENFJ | Paragon | Tanque | Liderança | Baluarte da Esperança | Um defensor carismático e inspirador que protege aliados e os conduz à vitória.
+ENFP | Invocador de Espíritos | Suporte | Controle de Grupo | Totem de Elo Espiritual | Um lançador versátil que pode se comunicar com espíritos, fornecendo suporte e controlando inimigos.
+ISTJ | Justicar | Tanque | Dano Corpo a Corpo | Defesa Justa | Um guerreiro disciplinado que se destaca em proteger aliados e aplicar justiça no campo de batalha.
+ISFJ | Guardião da Vida | Curandeiro | Tanque | Abraço da Vida | Um curandeiro dedicado que se especializa em mitigação de dano e na preservação da vida de seus aliados.
+ESTJ | Carrasco | Dano Corpo a Corpo | Tanque | Executar | Um lutador corpo a corpo implacável focado em abater inimigos com precisão e eficiência.
+ESFJ | Arauto da Luz | Curandeiro | Suporte | Farol Radiante | Um curandeiro devoto que utiliza o poder da luz para curar feridas e fortalecer seus aliados.
+ISTP | Vórtice das Lâminas | Dano Corpo a Corpo | Utilidade | Fúria das Lâminas | Um guerreiro ágil e habilidoso com armas duplas que se destaca no combate corpo a corpo e adapta-se a qualquer situação.
+ISFP | Dervixe | Dano Corpo a Corpo | Suporte | Golpes Giratórios | Um lutador ágil e mortal no corpo a corpo que usa movimentos semelhantes a dança para apoiar e inspirar aliados. |
+| ESTP | Escaramuçador | Dano à Distância | Mobilidade | Disparo Rápido | Um atacante rápido e ágil à distância que utiliza técnicas de acertar e correr para manter inimigos à distância. |
+| ESFP | Teatromante | Suporte | Controle de Grupo | Chamada Final | Um performer carismático que usa seu charme e perspicácia para manipular inimigos e fortalecer aliados. |
+
 Neste formato atualizado, continuamos a lista de classes inspiradas no MBTI para o novo jogo, incluindo os tipos ISTP, ISFP, ESTP e ESFP, e suas respectivas habilidades e descrições.
 
 ---
