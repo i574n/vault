@@ -1,3 +1,39 @@
+## detail in pt-br how to restore old dusty books, a hair dryer blowing hot ait didn’t work
+
+< Restaurar livros antigos e empoeirados requer cuidado e paciência. O uso de um secador de cabelo com ar quente não é recomendado, pois pode danificar ainda mais o livro. Siga os passos abaixo para limpar e restaurar livros antigos com segurança:
+
+1. Prepare o local de trabalho: Escolha um local bem iluminado e limpo para trabalhar. Cubra a superfície de trabalho com uma toalha ou pano limpo que não solte fiapos.
+
+2. Use luvas de algodão: Para evitar danos adicionais às páginas e capas do livro, use luvas de algodão ou nitrilo antes de manuseá-lo.
+
+3. Remova o pó superficial: Use um pincel de cerdas macias, como um pincel de pintura ou pincel de maquiagem limpo, para remover cuidadosamente a poeira da capa e das páginas do livro. Faça movimentos suaves do centro para a borda do livro, tomando cuidado para não rasgar as páginas.
+
+4. Limpeza das páginas: Se as páginas estiverem muito sujas, use uma borracha branca ou um esfuminho de limpeza de arte para remover manchas e sujeira. Esfregue suavemente a borracha ou o esfuminho sobre as manchas, em seguida, use o pincel para remover os resíduos.
+
+5. Limpeza da capa: Se a capa do livro for de tecido, use uma esponja levemente umedecida com água e um pouco de detergente neutro para limpar suavemente a sujeira. Se a capa for de couro, use um pano macio e umedecido com água e álcool isopropílico na proporção de 1:1 para limpar a superfície. Seque completamente com um pano limpo e seco.
+
+6. Reparar rasgos e danos: Use fita adesiva de papel japonês e cola de metilcelulose para reparar rasgos e danos nas páginas e na capa. Aplique a cola na fita e cole-a no rasgo, alisando-a cuidadosamente com uma espátula.
+
+7. Remova odores: Se o livro tiver um odor desagradável, coloque-o dentro de uma caixa plástica hermética com um pouco de bicarbonato de sódio, carvão ativado ou giz branco. Feche a caixa e deixe o livro lá por alguns dias, verificando regularmente o odor.
+
+8. Armazenamento adequado: Após a limpeza e restauração, armazene o livro em um local fresco, seco e longe da luz direta do sol. Utilize estantes e capas protetoras para manter o livro seguro e em boas condições.
+
+Lembre-se de que, em caso de livros extremamente danificados ou de valor inestimável, é recomendável consultar um profissional de conservação e restauração para garantir a melhor abordagem.
+
+## detail item 7 with the whole range of possible products using the metric system
+
+< O item 7 descreve a remoção de odores desagradáveis dos livros. Aqui está uma descrição detalhada dos produtos mencionados e suas quantidades no sistema métrico:
+
+1. Bicarbonato de sódio: Espalhe uma camada de 5 a 10 milímetros de bicarbonato de sódio na base de uma caixa plástica hermética grande o suficiente para acomodar o livro. Coloque o livro aberto sobre uma folha de papel manteiga ou papelão, para evitar o contato direto com o bicarbonato de sódio, e coloque-o dentro da caixa. Feche bem a caixa e deixe o livro por 2 a 7 dias, verificando o odor regularmente. Se necessário, repita o processo com bicarbonato de sódio novo.
+
+2. Carvão ativado: Coloque 50 a 100 gramas de carvão ativado em um recipiente aberto ou saquinho de tecido poroso, como musselina, e coloque-o dentro da caixa plástica hermética junto com o livro. O carvão ativado absorverá os odores sem entrar em contato direto com o livro. Feche a caixa e deixe o livro por 2 a 7 dias, verificando o odor regularmente. Se necessário, repita o processo com carvão ativado novo.
+
+3. Giz branco: Disponha 10 a 20 pedaços de giz branco na base da caixa plástica hermética. Coloque o livro aberto sobre uma folha de papel manteiga ou papelão, para evitar contato direto com o giz, e coloque-o dentro da caixa. Feche bem a caixa e deixe o livro por 2 a 7 dias, verificando o odor regularmente. Se necessário, repita o processo com giz novo.
+
+Ao usar qualquer uma dessas opções, certifique-se de que a caixa plástica hermética esteja bem fechada para garantir a eficácia do processo de desodorização. Além disso, verifique o livro regularmente para ter certeza de que o odor está diminuindo e que não há danos causados pelo contato com os produtos. Lembre-se de que, em caso de livros extremamente danificados ou de valor inestimável, é recomendável consultar um profissional de conservação e restauração para garantir a melhor abordagem.
+
+---
+
 ## list a few forbidden texts
 
 < Here are a few examples of forbidden texts:
