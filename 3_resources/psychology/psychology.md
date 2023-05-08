@@ -153,3 +153,51 @@ It is important to note that CBD is not considered a primary treatment for schiz
 On the other hand, THC (tetrahydrocannabinol) is the psychoactive compound in cannabis that is responsible for the "high" experienced by users. High doses of THC have been associated with an increased risk of triggering psychotic symptoms, especially in individuals predisposed to schizophrenia or other psychotic disorders. Therefore, THC is not recommended for people with schizophrenia, as it may exacerbate symptoms or contribute to the development of the disorder in vulnerable individuals.
 
 In summary, antipsychotic medications are the primary treatment for severe schizophrenia, targeting the dopamine system and other neurotransmitters to manage symptoms. CBD has shown potential antipsychotic properties in preliminary research, but more extensive studies are needed.
+
+---
+---
+
+## detail in pt-br worldwide statistics about right and left handedness
+
+< As estatísticas mundiais sobre destros e canhotos são um tanto incertas, uma vez que a proporção de pessoas com uma ou outra preferência manual pode variar conforme a cultura e a localização geográfica. No entanto, com base em estudos e pesquisas disponíveis, podemos fornecer algumas estimativas aproximadas.
+
+Globalmente, cerca de 70-95% da população é destra, enquanto os canhotos representam aproximadamente 5-30%. A maioria das pesquisas indica que cerca de 10% da população mundial é canhota, embora essa porcentagem possa variar entre diferentes países e culturas.
+
+Fatores genéticos, ambientais e culturais podem influenciar a prevalência de destros e canhotos em uma população. Em algumas culturas, ser canhoto é desencorajado ou até mesmo considerado inadequado, o que pode levar a uma subnotificação do número real de canhotos nessas áreas.
+
+É importante notar que essas estatísticas são baseadas em estimativas e pesquisas disponíveis até setembro de 2021, e os números podem ter mudado desde então. Além disso, a lateralidade não é sempre estritamente dividida entre destros e canhotos, já que algumas pessoas podem ser ambidestras ou ter habilidades mistas, dependendo da tarefa realizada.
+
+## what the scientific method concluded so far about it?
+
+< O método científico é uma abordagem sistemática e lógica para investigar fenômenos e responder a perguntas. No caso da lateralidade (preferência por usar a mão direita ou esquerda), a ciência tem feito várias descobertas ao longo dos anos.
+
+1. Genética: Estudos demonstraram que a preferência manual tem uma base genética parcial. Isso significa que a probabilidade de ser canhoto ou destro pode ser influenciada pelos genes herdados dos pais. No entanto, a herança da lateralidade não segue um padrão simples de herança mendeliana e envolve múltiplos genes.
+
+2. Desenvolvimento fetal: Pesquisas sugerem que a preferência manual pode ser determinada antes do nascimento. Estudos de imagem mostraram que os fetos já apresentam preferências por um dos lados durante a gestação. Fatores hormonais e condições no útero também podem influenciar a lateralidade.
+
+3. Lateralização cerebral: A lateralidade está relacionada à lateralização cerebral, que se refere à especialização funcional de cada hemisfério do cérebro. Em geral, o hemisfério esquerdo do cérebro controla a linguagem e a mão direita, enquanto o hemisfério direito controla a percepção espacial e a mão esquerda. No entanto, essa divisão não é absoluta e pode variar entre indivíduos.
+
+4. Cultura e sociedade: A prevalência de destros e canhotos pode ser influenciada pela cultura e pela sociedade. Em algumas culturas, ser canhoto é desencorajado ou até mesmo considerado inadequado, o que pode afetar a prevalência da lateralidade nesses grupos.
+
+5. Desvantagens e vantagens: Canhotos podem enfrentar desafios em um mundo predominantemente projetado para destros, como a dificuldade de usar ferramentas e dispositivos específicos. Por outro lado, canhotos podem ter vantagens em certas atividades, como esportes e competições, devido à sua raridade e ao fator surpresa que isso pode representar para os adversários.
+
+É importante lembrar que a ciência é um processo contínuo e que novas descobertas podem ser feitas à medida que pesquisas adicionais são realizadas. Até o momento, essas são algumas das principais conclusões relacionadas à lateralidade e suas implicações.
+
+## list the best methods to test the side handedness
+
+< Há várias maneiras de avaliar a lateralidade ou preferência manual de uma pessoa. Os métodos a seguir são comumente usados para determinar se alguém é destro, canhoto ou ambidestro:
+
+1. Teste de preferência de mão: Peça à pessoa para realizar tarefas simples com as mãos, como escrever, usar uma tesoura, lançar uma bola ou segurar um copo. Observe qual mão ela usa para realizar cada atividade. Se a pessoa usar consistentemente uma mão para a maioria das tarefas, ela provavelmente é destra ou canhota, dependendo da mão que prefere. Se usar ambas as mãos igualmente, ela pode ser ambidestra.
+
+2. Questionário de lateralidade: Um questionário pode ser usado para avaliar a preferência manual de uma pessoa. O questionário de lateralidade de Edinburgh é um exemplo comum que inclui perguntas sobre qual mão a pessoa usa para realizar várias atividades. Os resultados podem ser analisados para determinar se a pessoa é destro, canhoto ou ambidestro.
+
+3. Teste de tempo de reação: Testes de tempo de reação podem ser usados para avaliar a preferência manual, medindo a rapidez com que uma pessoa responde a estímulos usando cada mão. A pessoa pode ser solicitada a pressionar um botão ou pegar um objeto quando um estímulo é apresentado. Se o tempo de reação for consistentemente mais rápido com uma mão, essa pode ser a mão preferida.
+
+4. Teste de destreza: Testes de destreza, como o Teste de Purdue Pegboard ou o Teste de Grooved Pegboard, exigem que os indivíduos coloquem pinos em pequenos orifícios usando cada mão separadamente e, em seguida, com ambas as mãos juntas. Os resultados podem ser usados para determinar a preferência manual e a habilidade motora fina de cada mão.
+
+5. Teste de força de preensão: A força de preensão pode ser medida usando um dinamômetro de mão. Peça à pessoa para apertar o dispositivo com cada mão e registre a força de preensão. A mão com a força de preensão mais forte geralmente é a mão preferida.
+
+Lembre-se de que a lateralidade pode ser específica da tarefa, o que significa que uma pessoa pode ter preferências diferentes para diferentes atividades. Portanto, é importante usar uma variedade de métodos para obter uma avaliação mais completa da lateralidade de uma pessoa.
+
+---
+---
