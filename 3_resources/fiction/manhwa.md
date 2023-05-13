@@ -2929,12 +2929,12 @@ Rafael | INFJ | Cavaleiro da Morte | Gelo | Ataque da Morte | Joalheria | Focado
 Beatriz | ENFJ | Xamã | Elemental | Surto de Raios | Escrivania | Elemental e habilidades de controle do clima | Bom em ambos | Líder e motivador | Sol e Vênus
 Lucas | INTP | Ladino | Subterfúgio | Eviscerar | Couraria | Furtividade e ataques rápidos de corpo a corpo | Bom em ambos | Criativo e lógico | Mercúrio e Plutão
 Isabela | ESTP | Caçador | Sobrevivência | Disparo Explosivo | Esfolamento | Focado em armadilhas e dano de longo alcance | Bom em ambos | Oportunista e enérgico | Marte e Urano
-Felipe | INFP | Monge | Tecelão da Névoa | Envelopar em Névoa | Culinária | Habilidades de cura e suporte de combate próximo | Melhor em PvE | Sensível e idealista | Netuno e Lua |
-| Ana | ESTJ | Guerreiro | Fúria | Rajada de Sangue | Alquimia | Ataques rápidos e dano sustentado em corpo a corpo | Bom em ambos | Organizado e assertivo | Sol e Saturno |
-| Paulo | ISTJ | Paladino | Retribuição | Julgamento | Inscrição | Combate corpo a corpo com habilidades de suporte | Bom em ambos | Responsável e leal | Lua e Mercúrio |
-| Gabriela | ESFP | Sacerdote | Sombra | Palavra Sombria: Dor | Arqueologia | Dano mágico sustentado e controle mental | Bom em ambos | Espontâneo e expressivo | Vênus e Júpiter |
-| Thiago | ENFP | Druida | Equilíbrio | Ira Solar | Pesca | Transformação em formas para adaptar ao combate | Bom em ambos | Entusiasta e criativo | Vênus e Urano |
-| Laura | ENTJ | Cavaleiro da Morte | Profano | Flagelo Profano | Esgrimação | Combate corpo a corpo com habilidades de dano em área | Bom em ambos | Líder e decidido | Sol e Plutão |
+Felipe | INFP | Monge | Tecelão da Névoa | Envelopar em Névoa | Culinária | Habilidades de cura e suporte de combate próximo | Melhor em PvE | Sensível e idealista | Netuno e Lua
+Ana | ESTJ | Guerreiro | Fúria | Rajada de Sangue | Alquimia | Ataques rápidos e dano sustentado em corpo a corpo | Bom em ambos | Organizado e assertivo | Sol e Saturno
+Paulo | ISTJ | Paladino | Retribuição | Julgamento | Inscrição | Combate corpo a corpo com habilidades de suporte | Bom em ambos | Responsável e leal | Lua e Mercúrio
+Gabriela | ESFP | Sacerdote | Sombra | Palavra Sombria: Dor | Arqueologia | Dano mágico sustentado e controle mental | Bom em ambos | Espontâneo e expressivo | Vênus e Júpiter
+Thiago | ENFP | Druida | Equilíbrio | Ira Solar | Pesca | Transformação em formas para adaptar ao combate | Bom em ambos | Entusiasta e criativo | Vênus e Urano
+Laura | ENTJ | Cavaleiro da Morte | Profano | Flagelo Profano | Esgrimação | Combate corpo a corpo com habilidades de dano em área | Bom em ambos | Líder e decidido | Sol e Plutão
 
 Esta tabela atualizada inclui observações sobre design de jogo, equilíbrio PvP/PvE, personalidade e jyotish para cada tipo de personalidade. As observações de design de jogo e equilíbrio PvP/PvE destacam as características únicas de cada classe e especialização, enquanto as informações de personalidade e jyotish fornecem insights adicionais sobre a natureza de cada tipo de personalidade do MBTI.
 
@@ -2979,8 +2979,8 @@ ESTJ | Carrasco | Dano Corpo a Corpo | Tanque | Executar | Um lutador corpo a co
 ESFJ | Arauto da Luz | Curandeiro | Suporte | Farol Radiante | Um curandeiro devoto que utiliza o poder da luz para curar feridas e fortalecer seus aliados.
 ISTP | Vórtice das Lâminas | Dano Corpo a Corpo | Utilidade | Fúria das Lâminas | Um guerreiro ágil e habilidoso com armas duplas que se destaca no combate corpo a corpo e adapta-se a qualquer situação.
 ISFP | Dervixe | Dano Corpo a Corpo | Suporte | Golpes Giratórios | Um lutador ágil e mortal no corpo a corpo que usa movimentos semelhantes a dança para apoiar e inspirar aliados. |
-| ESTP | Escaramuçador | Dano à Distância | Mobilidade | Disparo Rápido | Um atacante rápido e ágil à distância que utiliza técnicas de acertar e correr para manter inimigos à distância. |
-| ESFP | Teatromante | Suporte | Controle de Grupo | Chamada Final | Um performer carismático que usa seu charme e perspicácia para manipular inimigos e fortalecer aliados. |
+ESTP | Escaramuçador | Dano à Distância | Mobilidade | Disparo Rápido | Um atacante rápido e ágil à distância que utiliza técnicas de acertar e correr para manter inimigos à distância. |
+ESFP | Teatromante | Suporte | Controle de Grupo | Chamada Final | Um performer carismático que usa seu charme e perspicácia para manipular inimigos e fortalecer aliados. |
 
 Neste formato atualizado, continuamos a lista de classes inspiradas no MBTI para o novo jogo, incluindo os tipos ISTP, ISFP, ESTP e ESFP, e suas respectivas habilidades e descrições.
 
