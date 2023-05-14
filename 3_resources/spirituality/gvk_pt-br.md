@@ -3883,6 +3883,15 @@ Este verso contém a mesma instrução dada por Sri Bhagavan em _Evangelho do Ma
 
 
 
+**639. Se o observador [_drik_, o ego] e o observado [_drisya_, o mundo] fossem diferentes em sua realidade [_sat_], o ato de ver nunca seria possível. Mas, como ver é possível, saiba que eles [o observador e o observado] têm a mesma realidade.**
+
+**_Sadhu Om_**: Se agora virmos o versículo 636 através do olho da ideia dada neste versículo, entenderemos claramente que a razão pela qual foi dito lá que apenas aquelas coisas que estão dentro do alcance da mente são conhecidas por ter existência, é que 'ver' é possível apenas quando o observador e o observado estão no mesmo plano de realidade [_sat_].
+
+Neste versículo, nos é ensinada uma ideia única! Muitos de nós não dizem: "É fácil ver outras coisas, pois são diferentes de nós, o observador, mas é difícil para nós vermos o Ser, já que não é diferente de nós"? No entanto, se examinarmos o assunto de acordo com este versículo, descobriremos que a lei da natureza sobre o observador, o observado e a observação é bastante contrária a isso. É indiretamente, mas firmemente instruído aqui que conhecer o Ser é o mais fácil, porque a realidade [_sat_] do observador [o ego] é, na verdade, o Ser, a única realidade, que queremos ver ou conhecer.
+
+Também devemos considerar aqui o fato de que a visão de um sonho é possível apenas porque todos os objetos vistos nesse sonho têm a mesma realidade [_sat_] do sonhador que vê o sonho.
+
+Mais um ponto também deve ser entendido aqui. Uma vez que a realidade ou natureza do conhecedor, o ego, é a mesma que a realidade ou natureza de todos os objetos conhecidos [não apenas de todos os objetos conhecidos através dos olhos, ou seja, os objetos vistos, mas também de todos os objetos conhecidos pelos outros quatro sentidos, ou seja, os objetos ouvidos, cheirados, degustados e tocados], uma coisa como o mundo é conhecida por existir, o que não é nada além do conhecimento obtido através dos cinco sentidos. E uma vez que, porque surge e se põe, a natureza do ego é falsa, o mundo dos nomes e formas, que também tem a natureza de surgir e se pôr, também é dito ser falso. Mas quando a verdadeira natureza do ego, que vive apenas se alimentando dos nomes e formas, que surgem e se põem, é examinada [investigada] e encontrada como o Ser ou _Brahman_, a verdadeira realidade [_sat_], que não possui a natureza falsa de surgir e se pôr, então a realidade do mundo também será encontrada como o Ser. Refira-se aqui ao versículo 4 de _Ulladu Narpadu_, onde Sri Bhagavan pergunta: "Pode o observado ser diferente do olho (o observador)?". Somente então a verdade absoluta, ou seja, que até mesmo o mundo é real - que é o próprio _Brahman_ - será devidamente compreendida [refira-se aqui aos versículos 50 e 52 desta obra]. Até então, é indispensável [e, como ajudará a alcançar a realidade absoluta, também é altamente recomendável] para os aspirantes considerar a realidade [_sat_] do observador, o ego, como irreal ou _asat_, e também concluir que, como o mundo tem a mesma realidade [_sat_] que o observador, é irreal.
 
 
 
@@ -3890,8 +3899,15 @@ Este verso contém a mesma instrução dada por Sri Bhagavan em _Evangelho do Ma
 
 
 
+**30 Capítulo Sobre a Atenção Objetiva**
 
+_(Suttu Unarvu Tiran)_
 
+**640. Visto que a bem-aventurança divina é tal que brilhará por si só se alguém simplesmente permanecer quieto [permanecer como sua própria existência-consciência], em vez de indagar sobre si mesmo e saber que não é nada além do supremo Self, que é desprovido de vir e ir, e, assim, desfrutar dessa bem-aventurança, é, infelizmente, uma pena que alguém desnecessariamente vagueie [atendendo à segunda e terceira pessoas, isto é, que alguém trabalhe desnecessariamente muito nos caminhos do _puja_, _dhyana_ e assim por diante].**
+
+**_Michael James_**: Neste verso, é dito de uma maneira irônica que é inútil labutar e vaguear para obter a bem-aventurança, que estará sempre disponível se simplesmente ficarmos quietos, sem fazer nada!
+
+Este verso também pode ser interpretado para ter um segundo significado da seguinte forma: "Para a bem-aventurança que brilhará mesmo quando alguém permanece quieto, vagar na [_sadhana_] de conhecer-se orgulhosamente como o grande Self, que não tem vinda, é alcançar essa bem-aventurança". No entanto, uma vez que este segundo significado não é uma frase coerente e que o raciocínio nele não é consistente, ele não é um significado adequado. Além disso, quando os versos posteriores neste capítulo são lidos, fica claro que o objetivo deste capítulo é expor a futilidade da atenção objetiva (isto é, expor que o Self não pode ser alcançado pela atenção a objetos da segunda e terceira pessoa), e, portanto, apenas o primeiro significado dado acima será considerado adequado.
 
 
 
