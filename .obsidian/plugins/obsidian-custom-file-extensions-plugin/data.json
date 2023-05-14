@@ -1,0 +1,36 @@
+{
+  "additionalFileTypes": {
+    "markdown": [
+      "",
+      "txt",
+      "html",
+      "js",
+      "css",
+      "ts",
+      "jsx",
+      "tsx",
+      "yaml",
+      "yml",
+      "sass",
+      "scss",
+      "json",
+      "ps1",
+      "toml",
+      "out",
+      "png",
+      "rs",
+      "fs",
+      "fsx",
+      "spi",
+      "spir",
+      "mp3",
+      "m4b",
+      "mkv",
+      "mp4",
+      "pdf",
+      "epub",
+      "srt"
+    ]
+  },
+  "currentValueIsInvalidJson": false
+}

@@ -8,5 +8,7 @@
   "oz-image-plugin",
   "obsidian-version-history-diff",
   "obsidian-tasks-plugin",
-  "babashka"
+  "babashka",
+  "obsidian-html-plugin",
+  "obsidian-custom-file-extensions-plugin"
 ]
