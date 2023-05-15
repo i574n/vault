@@ -1,3 +1,13 @@
+---
+---
+
+```ps1
+yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=<ID>
+```
+
+---
+---
+
 ## list the top 10 in ear headphones for many hours usage
 
 < There are many great in-ear headphones available in the market for many hours of usage, and it's hard to select only ten as the best, but here are some great options to consider:
