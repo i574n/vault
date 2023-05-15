@@ -77,6 +77,53 @@ Hangul was a revolutionary development in Korean history, breaking down barriers
 
 Today, hangul remains a powerful symbol of Korean culture and identity, recognized around the world as one of the most efficient and effective writing systems ever created. Its legacy is a testament to the power of innovation and the determination of a people to overcome even the greatest challenges in pursuit of progress.
 
+## detail in pt-br what could be listened as hangul drills
+
+< Exercícios de Hangul, ou treinos de Hangul, são práticas destinadas a ajudar as pessoas a aprender e aperfeiçoar a escrita e a pronúncia do alfabeto coreano, conhecido como Hangul. Aqui está uma descrição detalhada do que pode ser ouvido em exercícios de Hangul:
+
+1. **Revisão do Alfabeto:** Os exercícios de Hangul geralmente começam com uma revisão dos caracteres Hangul. Existem 14 consoantes e 10 vogais no Hangul, e os exercícios podem apresentar cada letra, fornecendo o som que ela produz.
+
+2. **Combinação de Letras:** Depois de aprender as letras individuais, os exercícios de Hangul podem passar para a combinação de letras. O Hangul é único porque as letras são agrupadas em blocos para formar sílabas. Portanto, você pode ouvir exemplos de como diferentes letras são combinadas e como elas soam juntas.
+
+3. **Exercícios de Pronúncia:** Os exercícios de Hangul também podem incluir práticas de pronúncia. Isso pode envolver a audição e a repetição de palavras e frases em coreano. Estes exercícios ajudam a familiarizar-se com os sons do idioma coreano e a melhorar a pronúncia.
+
+4. **Leitura e Escrita:** Alguns exercícios de Hangul podem envolver a audição de uma palavra ou frase em coreano e, em seguida, ser solicitado a escrevê-la em Hangul. Isso pode ajudar a melhorar a sua habilidade de transcrever o que ouve em Hangul.
+
+5. **Vocabulário e Gramática:** À medida que você avança, os exercícios de Hangul podem começar a incorporar mais vocabulário e gramática. Você pode ouvir palavras e frases em coreano e ser solicitado a traduzi-las para o seu idioma nativo, ou vice-versa. Estes exercícios ajudam a construir o seu conhecimento do idioma coreano e a entender como as palavras e frases são construídas em Hangul.
+
+Lembre-se de que a prática regular é a chave para aprender qualquer novo idioma. Portanto, faça exercícios de Hangul consistentemente e tente se imergir no idioma tanto quanto possível para melhorar.
+
+## structure it better, as a tree with subitems
+
+< Claro, aqui está uma estrutura em árvore dos elementos que você poderia ouvir durante os exercícios de Hangul:
+
+1. **Revisão do Alfabeto**
+
+    - Apresentação das 14 consoantes.
+    - Apresentação das 10 vogais.
+    - Sons individuais de cada letra.
+2. **Combinação de Letras**
+
+    - Formação de blocos de sílabas.
+    - Combinação de diferentes consoantes e vogais.
+    - Sons produzidos por diferentes combinações de letras.
+3. **Exercícios de Pronúncia**
+
+    - Audição e repetição de palavras em coreano.
+    - Audição e repetição de frases em coreano.
+    - Foco na pronúncia correta e acentuação.
+4. **Leitura e Escrita**
+
+    - Audição de uma palavra ou frase em coreano e transcrição em Hangul.
+    - Prática de escrita de palavras e frases ouvidas.
+5. **Vocabulário e Gramática**
+
+    - Introdução a novas palavras e expressões.
+    - Explicação e prática de estruturas gramaticais.
+    - Tradução de palavras e frases do coreano para o seu idioma nativo e vice-versa.
+
+Lembre-se de que a consistência é a chave para aprender qualquer novo idioma. Pratique regularmente e tente se imergir no idioma tanto quanto possível para melhorar.
+
 ## draw out a hangul cheat sheet
 
 < Certainly! Here's a cheat sheet for Hangul:

@@ -204,6 +204,78 @@ frame: https://
 style: height:50vh
 ```
 
+Udemy - How to STOP male pattern hair loss & REGROW your own hair
+
+```custom-frames
+urlSuffix: bafybeigj47on6vxoanwof6sx6edgj2lahb7e5u6np5xgkflomlvljdi4jy.ipfs.nftstorage.link
+frame: https://
+style: height:50vh
+```
+
+Figma for Developers
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Figma%20for%20Developers
+frame: https://
+style: height:50vh
+```
+
+IO Music Academy Beyond Genres with Lusine TUTORiAL
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/IO%20Music%20Academy%20Beyond%20Genres%20with%20Lusine%20TUTORiAL
+frame: https://
+style: height:50vh
+```
+
+IO Music Academy How I Produce with Felipe Gordon TUTORiAL
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/IO%20Music%20Academy%20How%20I%20Produce%20with%20Felipe%20Gordon%20TUTORiAL
+frame: https://
+style: height:50vh
+```
+
+Ilias Iliadas - World Championship Judo
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Ilias%20Iliadas%20-%20World%20Championship%20Judo
+frame: https://
+style: height:50vh
+```
+
+Lynda - After Effects Guru - Templates for Premiere Pro and After Effects Jun 2017
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Lynda%20-%20After%20Effects%20Guru%20-%20Templates%20for%20Premiere%20Pro%20and%20After%20Effects%20Jun%202017
+frame: https://
+style: height:50vh
+```
+
+Shintaro Higashi - Judo Basics
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Shintaro%20Higashi%20-%20Judo%20Basics
+frame: https://
+style: height:50vh
+```
+
+pureMix - Recording with Al Schmitt
+
+```custom-frames
+urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/pureMix%20-%20Recording%20with%20Al%20Schmitt
+frame: https://
+style: height:50vh
+```
+
+X
+
+```custom-frames
+urlSuffix: X
+frame: https://
+style: height:50vh
+```
+
 X
 
 ```custom-frames
