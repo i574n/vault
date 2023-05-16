@@ -3911,6 +3911,190 @@ Este verso também pode ser interpretado para ter um segundo significado da segu
 
 
 
+**641. Mesmo que na verdade alguém sempre permaneça como o Self, os esforços para buscar o Self como se fosse algo diferente e para alcançar o Self, é para finalmente desaparecer ao saber que o Self ′Eu′ brilhando em qualquer um, embora agora pareça ser diferente de si mesmo, não é diferente de si mesmo.**
+
+**642. Pensar que o Self, que [na realidade] não é diferente de si mesmo, é outro e se esforçar muito para alcançá-lo através do próprio esforço [através de _sadhana_], é como correr atrás da própria sombra para pegá-la.**
+
+**643. Uma vez que a própria existência está claramente brilhando como a consciência 'Eu-Eu' no coração, essa realidade, o olho não falso [ou conhecimento], e não os objetos [_vishayas_] vistos pelo olho físico, é o único _sakshat_ [o que é visto diretamente]. Portanto, busque e conheça isso.**
+
+**644. Aqueles que não prestam atenção e não conhecem a consciência-existência que brilha sempre inalterada no coração, caem em _maya_ através da atenção objetiva causada pelo ego, que surge e ataca com intensa ilusão.**
+
+**31 Capítulo Sobre a Cessação da Atenção Objetiva**
+
+_(Suttu Aruttal Tiran)_
+
+**645. A verdadeira intenção das escrituras ao dizer "Conheça a verdade de si mesmo", não é nada mais do que fazer alguém abandonar a atenção objetiva, o falso conhecimento. Por quê? Porque a verdade de si mesmo sempre brilha em todos como 'Eu sou', como o sol.**
+
+**_Michael James_**: Como a verdade de si mesmo sempre brilha em todos como 'Eu sou', não é algo a ser conhecido de novo. Portanto, quando as escrituras dizem "Conheça a verdade de si mesmo", sua verdadeira intenção é simplesmente nos fazer voltar nossa atenção para o 'Eu sou' sempre conhecido, abandonando assim a atenção para objetos de segunda e terceira pessoa, pois tal atenção objetiva é o único conhecimento errado ou _ajnana_. Assim, a intenção das escrituras não é nos fazer conhecer algo novo, mas apenas nos fazer abandonar nosso conhecimento errado. Em outras palavras, se simplesmente abandonarmos nossa atenção objetiva, isso por si só nos mostrará que sempre conhecemos o Self.
+
+
+
+
+
+
+
+**646. O Self, o brilho da Graça, que não se revela quando procurado pela mente, que é apenas uma atenção objetiva [isto é, uma atenção para segunda e terceira pessoas], se revelará quando essa atenção objetiva [a mente] cessar de funcionar. "Quando eu olho para ela, a nova noiva apenas olha para o chão, mas quando eu não olho para ela, ela olha para mim com amor e sorri suavemente com alegria por dentro."**
+
+**_Michael James_**: As duas últimas linhas deste verso são uma citação do verso 1094 do _Tirukkural_. A maneira incomum de comparar o Self com a noiva e o ego com o noivo deve ser notada aqui.
+
+Quando se busca conhecer o Self como um objeto através da mente extrovertida, Ele não é revelado. Mas como a cessação da extroversão é em si mesma a introversão ou a orientação para o Self (_ahamukham_), o Self brilhará automaticamente quando a extroversão cessar.
+
+Aqui os leitores são advertidos para não interpretar a simile da seguinte maneira errada: 'A noiva olha para o noivo apenas quando ele não olha para ela. Portanto, o Self se revelará apenas quando não prestarmos atenção a Ele, isto é, apenas quando prestarmos atenção ao mundo externo'. Este não é o significado que se pretende ao dar esta simile. A interpretação correta deve ser: 'O Self não pode ser conhecido pela mente, mas Ele brilhará automaticamente quando, e apenas quando, a natureza da mente (ou seja, atender ou conhecer apenas objetos de segunda e terceira pessoa) for destruída'.
+
+**647. Não olhe para isto, não olhe para aquilo. Se você simplesmente permanecer sem olhar para nada, então por esse olhar poderoso para [o próprio] ser [isto é, por essa poderosa atenção ao Self, 'Eu sou'], você se tornará a realidade suprema que tem a perspectiva do espaço ilimitado da consciência [_chit-akasa_].**
+
+**648. Exceto pela Graça do Senhor, que começa a funcionar quando alguém se rende completamente a Seus Pés com devoção sincera, ela [a realidade] não pode ser cognoscida apenas pela habilidade da mente do _jiva._ Tão sutil é a realidade.**
+
+**_Michael James_**: Consulte também o verso 634.
+
+
+
+
+
+
+**649. Não procure e vague sem alcançar nenhum estado [digno] apesar de ter aprendido todas as artes e ter ouvido todas as [filosofias] que devem ser ouvidas. Simplesmente permanecer como amor Nele [o Senhor] que brilha como amor, é o estado supremo!**
+
+**_Michael James_**: Os versos 983 e 1023 também podem ser lidos junto com este capítulo.
+
+**32 Capítulo Sobre a Verdade do Amor**
+
+_(Anbu Unmai Tiran)_
+
+**650. Aqueles que não conhecem o gosto do amor, que de maneira alguma é inferior a qualquer um dos outros seis gostos, consideram o amor como o sétimo gosto. [Mas saiba que] o amor é o gosto básico que dá vida a todos os outros seis gostos diferentes classificados [no passado].**
+
+**_Michael James_**: Os seis gostos são doce, amargo, salgado, azedo, picante e adstringente, e o amor às vezes é classificado junto com estes como o sétimo gosto.
+
+**651. Apenas aqueles que não conhecem o gosto inexprimível do amor contarão o gosto como sete [como se o amor fosse um gosto como os outros seis gostos]. Mas como conhecemos bem o gosto do amor, o gosto real, declaramos que o amor é o único gosto feliz [e que nenhum desses outros são gostos de todo].**
+
+**652. Só quando o Self, a verdade do amor, é conhecido, o nó de todos os severos problemas da vida será cortado. Só quando o pináculo do amor [o amor supremo ou _para-bhakti_] é alcançado, pode-se dizer que mesmo a libertação foi alcançada. O amor é verdadeiramente o coração de todas as religiões.**
+
+**_Sadhu Om_**: Quando a verdadeira natureza do amor é realizada, ela cessará completamente de tomar a forma de desejo, que é a sua 'forma de _vritti_' [isto é, quando o amor está na forma de uma _vritti_ ou movimento]. Quando o desejo é assim removido, todos os seus cinco rebentos, a saber, raiva, avareza, delusão, arrogância e ciúmes, também cessarão de existir [referir ao verso 375]. Como todos os problemas da vida se baseiam apenas nestes seis vícios, diz-se que o nó de todos os problemas da vida será cortado ao se perceber a verdadeira natureza do amor. A verdade do amor não é nada além do Self. Como? Como a natureza real do Self é _asti-bhati-priya_ ou _sat-chit-ananda_, o amor [_priya_] ou _ananda_ não pode ser diferente do Self. É por isso que os sábios declaram que o amor é Deus.
+
+
+
+
+
+
+
+**653. A verdade por trás do dito dos sábios, "Quando se vai ver os Sábios, que são os tesouros do conhecimento verdadeiro e claro [_jnana_], deve-se levar alguma oferta e não se deve ir de mãos vazias", é que se deve ir com verdadeiro amor por eles no coração [ou seja, não se deve ir apenas para ver a vista ou testá-los].**
+
+**_Sri Muruganar_**: Como outros tipos de oferendas podem não estar disponíveis para todos e em todos os momentos, como até mesmo essas oferendas serão inúteis se não houver amor no coração, e como se o amor sozinho estiver presente, ele preencherá a deficiência criada pela ausência de todas as outras oferendas, o amor é aqui recomendado como a oferta suprema.
+
+**654. Não apenas pelo amor ser obstruído, mas também pelo amor ser forçado de maneira errada, todos os seres vivos são apanhados e consumidos por muitas misérias na vida.**
+
+**_Sadhu Om_**: O mal que acontece às coisas que gostamos é o que é mencionado aqui como 'amor sendo obstruído', enquanto ter coisas que não gostamos forçadas sobre nós é o que é mencionado aqui como 'amor sendo forçado de maneira errada'. Assim, quando o amor é permitido funcionar na forma de um movimento [_pravritti rupa_], isto é, como pequenos desejos - gostos e desgostos - os _jivas_ têm de passar por incontáveis misérias na vida. Portanto, manter o amor em sua forma pura, não permitindo que ele tome uma forma de _vritti_ como gostos e desgostos, é tanto (a) não permitir que o amor seja obstruído, e (2) não permitir que o amor seja forçado de maneira errada. É por isso que Sri Bhagavan disse na obra _Quem Sou Eu?_, "Gostos e desgostos devem ser desprezados".
+
+**655. A experiência do Self, que não é nada além da forma de [supremo] amor, é aquela em que os olhos só veem amor, a língua só prova amor e o toque só sente amor, que é a bem-aventurança.**
+
+**_Michael James_**: Este verso descreve que a natureza da experiência do Self é a essência ininterrupta [_ekarasa_] do amor, ou seja, explica que este mundo, que não é nada além da experiência ganha através dos cinco sentidos, é transformado em e experimentado como Self quando o amanhecer do conhecimento do Self acontece. O verso 62 desta obra deve ser lido novamente aqui.
+
+**_Sri Muruganar_**: O amor próprio que brilha naturalmente em tudo quando tudo é conhecido como Self, é completamente diferente do falso e ilusório sentimento de prazer que aparece através das experiências sensoriais mentais. Este êxtase divino, conhecido como _'prema'_ ou _'bhakti'_, é o que é expresso por Manikkavachagar em seu _Thiruvandappahuti_ como sua grande experiência.
+
+
+
+
+**33 Capítulo sobre a Forma**
+
+_(Sakala Tiran)_
+
+**656. Aqueles que dizem que a realidade não tem forma são aqueles que não conhecem a realidade. Pois a forma do Sábio [_sahaja nishtha_] que corretamente conhece e permanece na realidade, Self, cuja natureza é como a natureza do espaço [que tudo permeia], é veramente a forma da realidade. Saiba disso.**
+
+**_Sri Muruganar_**: Através deste verso, Sri Bhagavan refuta o dito, 'A realidade não tem forma'. Como? Uma vez que o Sábio [_sahaja nishtha_] que conheceu a realidade como ela é, não é outro senão a própria realidade, Ele mesmo é a verdadeira forma dessa realidade. Isso é o que se quer dizer com, _'Jnani_ Ele mesmo é o Self'.
+
+**_Michael James_**: Sri Muruganar se refere aqui à _Bhagavad Gita_, capítulo 7, verso 18, no qual Sri Krishna diz que o _Jnani_ é _Atma_.
+
+**657. A adoração do sem forma é possível apenas para aqueles que perderam a noção 'Eu sou esta forma [o corpo]'. Qualquer tipo de adoração [isto é, qualquer esforço na meditação sem forma] feita por aqueles que têm a noção 'Eu sou esta forma [o corpo]' é nada mais que uma adoração da forma. Saiba disso.**
+
+**_Michael James_**: Refira-se aqui ao verso 208 desta obra.
+
+**658. Adorar a realidade sem forma através do pensamento livre de pensamento [isto é, ao prestar atenção à autoconsciência livre de pensamento, 'Eu sou'] é o melhor. Se alguém é incapaz de fazer esta adoração sem forma a Deus, adorar a Deus na forma é apropriado.**
+
+
+
+
+**659. Que aqueles que se tornaram presa da ilusão da ação [_karma_], sendo incapazes de seguir o caminho original da luz do Self, existência-consciência, adorem a forma de seu Deus amado. Então, gradualmente perderão sua ilusão [em relação a nomes e formas e ação] e finalmente [pela Graça de Deus ou Guru] alcançarão o Supremo Self.**
+
+**_Sri Muruganar_**: A atenção ao Self é o único caminho descrito neste verso como 'o caminho original'. Mas que aqueles que são instigados à ação [_karma_], estando sob o domínio da ignorância [_avidya_], e que, portanto, são incapazes de seguir o caminho original, adotem pelo menos o caminho artificial de adorar Deus em forma; isto, em seu curso, finalmente os conduzirá à libertação.
+
+**660. Ó mente que realiza a adoração [_puja_] do Senhor Shiva em forma com grande Shiva-_bhakti_ tanto interna quanto externamente, faça isso conscientemente sem esquecer que Deus existe em todos os lugares na forma de consciência perfeita.**
+
+**_Sadhu Om_**: Sempre que nesta obra a palavra 'Siva', 'Hara' ou similar é usada, deve-se entender como referindo-se a Deus em geral e não como denotando apenas uma forma pessoal particular de Deus chamada Siva. Refira-se ao verso 1101 desta obra.
+
+**661. Se alguém adora diariamente o Siva-yogi [o Sábio que se tornou um com Siva, o Self], a mente se tornará unidirecionada, a autoinvestigação surgirá dentro, através da qual alguém será [abandonando a atenção objetiva] estabelecido no Self, a mera consciência [Eu sou], e assim a doença da ilusão do nascimento [e morte] desaparecerá.**
+
+**662. Se as observâncias prescritas nos _Vedas_ não lhe proporcionam abundantemente uma devoção real e unidirecionada aos Pés de Deus, saiba que todos os esforços árduos feitos por você para observá-los estritamente e infalivelmente são totalmente em vão.**
+
+**663. Aqueles que sempre adoram os pés santos de Allah [Deus] alcançarão todos os benefícios e a felicidade juntos, tendo extinguido todo o fogo do sofrimento da vida mental imaginária conduzida por eles em razão de ações [karmas] malignas e pecaminosas.**
+
+**_Sadhu Om_**: Como este é um conselho dado a alguns muçulmanos, Sri Bhagavan usou a palavra 'Allah' em vez de Deus.
+
+
+
+
+
+**664. Esqueça tudo o que deve ser obtido seja neste mundo ou no próximo, suporte perfeitamente e com paciência todos os obstáculos que surgem, e não se desanime com qualquer quantidade de pobreza que apareça, viva da maneira que a Graça de Deus o conduz.**
+
+**665. Para aqueles _sadhus_ de primeira classe que aspiram apenas a alcançar os Pés do Senhor Shiva [Deus], é melhor viver como um objeto digno de pena aos olhos das pessoas mundanas do que ser invejado.**
+
+**34 Capítulo Sobre as Cinco Funções de Deus**
+
+_(Pancha Kritya Tiran)_
+
+**666. Saiba que, de acordo com Sua vontade, lei e plano, todos os momentos de cada dia, as cinco funções de Deus [criação, sustentação, destruição, ocultação e Graça] estarão acontecendo perfeitamente e incessantemente no universo, que é cheio de objetos móveis e imóveis.**
+
+
+
+**667. Cada momento [ou seja, muitos milhões de vezes por segundo] cada átomo [no universo] é destruído e recém-criado. Como isso está acontecendo incessantemente, parece que eles [os objetos do universo] são os mesmos [objetos] existindo continuamente. Saiba disso.**
+
+**_Sadhu Om_**: Embora cada quadro de um filme de cinema que é projetado na tela consista em apenas uma imagem imóvel, como muitos desses quadros são projetados em um segundo e a velocidade de sua projeção é mais rápida do que a capacidade de compreensão de nossos olhos, parece para nós como se o filme contivesse uma imagem continuamente em movimento. Da mesma forma, como tudo neste universo, que está sob o domínio das cinco funções de Deus, é criado e destruído pelo inexprimível poder de Deus muitos crores de vezes por segundo, e como a velocidade com que são criados e destruídos é mais rápida do que a capacidade de compreensão de nossa mente [ou seja, como nossa mente é incapaz de captar o intervalo entre cada destruição e a subsequente nova criação], parece para nós como se o universo estivesse existindo continuamente.
+
+Será útil aqui notar o que de fato se entende neste versículo pela criação e destruição de cada átomo do universo. No verso 6 de _Ulladu Narpadu_, Sri Bhagavan pergunta, "Pode haver um mundo à parte da mente?" e em _Quem sou eu?_ Ele diz, "Além dos pensamentos, não há tal coisa como o mundo". Portanto, como o universo não é nada além de pensamentos, o surgimento dos pensamentos é a criação do universo e o desaparecimento dos pensamentos é a sua destruição. Todos os pensamentos, que não são nada além de segundas e terceiras pessoas, surgem e desaparecem apenas para a mente, que não é nada além do primeiro pensamento, 'Eu sou o corpo'. Portanto, como todos os outros pensamentos só podem surgir depois que a mente surge, e como devem desaparecer quando a mente desaparece, seu surgimento e desaparecimento devem necessariamente ser ainda mais rápidos do que o surgimento e desaparecimento da mente, o pensamento 'Eu', que, através do inexprimível e maravilhoso poder de Deus, por si só surge e desaparece muitos crores de vezes por segundo. Mas como a mente é tão inconstante que é incapaz de captar ou cognizar até mesmo o seu próprio surgimento e desaparecimento, como ela pode captar o surgimento e desaparecimento de outros pensamentos? É porque a mente é assim incapaz de captar a velocidade com que outros pensamentos surgem e desaparecem, que ela parece para a mente como se houvesse algo existindo continuamente como o universo. Somente quando a mente examina a si mesma, a primeira pessoa, com uma atenção aguda e sutil, e somente quando é capaz de cognizar seu próprio surgimento e desaparecimento, é que ela deixará de surgir e, em vez disso, tornar-se-á imóvel [_achala_]. E somente nesse estado de imobilidade, em que a mente não é mais uma mente mas o Self, é que ela será capaz de entender o surgimento e desaparecimento do mundo, os pensamentos de segunda e terceira pessoa, e terá o poder supremo de não permitir que qualquer pensamento surja. É porque Bhagavan Ramana é um tal que sempre permanece firmemente estabelecido no Self como Self, que Ele foi capaz de descobrir e assim revelar a verdade sobre a criação, sustentação, destruição e assim por diante.
+
+
+
+
+**35 Capítulo Sobre as Ações da Alma e de Deus**
+
+_(Jiveswara Seyal Tiran)_
+
+**668. Se considerarmos que todas as ações da alma [_jiva_] são as ações de Deus [Siva], então a _jiva_ pode existir como uma entidade individual separada de Siva? Mas se a _jiva_ se sente separada de Siva, então as ações da _jiva_ não podem ser as ações de Siva, e a _jiva_ também será independente de Siva.**
+
+**_Sadhu Om_**: Não conhecendo a interpretação correta das antigas palavras sagradas dos Sábios, "Tudo são ações de Deus; nem mesmo um átomo pode se mover sem a vontade de Deus", muitas pessoas dizem quando vêm misérias, "Tudo isso são resultados das ações de Deus", mas quando obtêm alguns prazeres na vida, dizem orgulhosamente, "Estes são os resultados de minhas ações meritórias passadas [_punya karmas_]". Para corrigir essa perspectiva equivocada das pessoas, Sri Bhagavan dá essa upadesa.
+
+**_Sri Muruganar_**: Este é um ponto muito sutil. Se as ações da _jiva_ são aceitas como sendo as ações de Siva, então a _jiva_ não deve permanecer diferente de Siva. Nesse estado, a _jiva_ perderá toda a sua existência individual e apenas Siva será independente. Quando a _jiva_ se rendeu dessa maneira, não haverá mais ego [_ahankara_] nela. O estado de rendição é o estado da completa destruição do ego. Se alguém age com egoísmo, mas ao mesmo tempo diz: "Tudo são ações de Siva", então deve-se entender que essa pessoa não se rendeu a Siva.
+
+
+
+
+
+**36 Capítulo Sobre a Criação da Alma e de Deus**
+
+_(Jiveswara Srishti Tiran)_
+
+**669. A criação de Deus não aprisiona: somente a criação da _jiva_, que é uma concepção mental, aprisiona. Isso é ilustrado pela história do pai do filho morto que estava feliz enquanto o pai do filho vivo lamentava.**
+
+**_Sadhu Om_**: A história mencionada neste versículo é a seguinte: dois vizinhos chamados Rama e Krishna, que viviam em uma pequena vila no sul da Índia, partiram em peregrinação a Kasi. No caminho, Rama morreu de febre e Krishna continuou sua peregrinação sozinho. Durante a viagem a Kasi, Krishna encontrou outro peregrino que estava retornando para o sul e pediu-lhe que levasse a notícia da morte de Rama aos seus pais. O peregrino chegou àquela vila, mas ao contar a notícia, disse, por esquecimento, que Krishna havia morrido e que Rama estava a caminho de Kasi. Os pais de Krishna choraram e lamentaram a perda do filho, que na verdade estava vivo, enquanto os pais de Rama estavam felizes pelo bem-estar do filho, que na verdade estava morto. Agora, o conhecimento errado dos pais não foi a causa de suas respectivas misérias e felicidades? Da mesma maneira, a causa das misérias de nascimento e morte experimentadas pelas _jivas_ é apenas o conhecimento errado, a concepção mental errada, de que se é o corpo. Portanto, a concepção 'eu sou o corpo', que é apenas uma criação da mente ou _jiva_, é a única causa do aprisionamento. É por isso que Sri Bhagavan diz neste versículo, “Somente a criação da _jiva_, que é uma concepção mental, aprisiona”.
+
+De acordo com sua maturidade, Deus não concede às _jivas_ o seu _prarabdha_ designado - os frutos selecionados e organizados de boas e más _karmas_ - para seu próprio desenvolvimento? Tudo o que vemos como nossa vida em um corpo e como um mundo em que vivemos, não é nada além do nosso _prarabdha_. Não pensamos que tal mundo, que é organizado de acordo com nossos _karmas_ e _vasanas_, é a criação de Deus? Portanto, o próprio propósito da aparência ou criação do mundo que vemos, é nos ensinar o _vairagya_ ao nos fazer experimentar dores e prazeres e, assim, voltar nossa mente para o Self. O estado em que a mente está sempre voltada para o Self é a libertação ou _moksha_. Portanto, o próprio propósito do mundo, que se diz ser a criação de Deus, não é nos aprisionar, mas apenas nos libertar. É por isso que se diz neste versículo, “A criação de Deus não aprisiona”.
+
+
+
+
+**670. A vasta criação de Deus provê o _Jnana_-Guru, Deus em forma humana, e possibilita alcançar a _Jnananishtha_, o estado desprovido de _vasanas_, e por isso está sempre ajudando as _jivas_ a atingirem a libertação.**
+
+**_Sadhu Om_**: A criação de Deus é devido à Sua Graça sem limites, e seu propósito é permitir que as _jivas_ alcancem a libertação [_mukti_]. Consulte o capítulo três, _'Karma'_, de _O Caminho de Sri Ramana_ - Parte Dois, onde é explicado detalhadamente como Deus, devido à Sua benigna Graça, distribui e organiza o _prarabdha_ de tal maneira a ajudar as _jivas_ - que estão sofrendo muito devido ao fato de que realizam _agamya karmas_ em todas as vidas - a atingirem a libertação.
+
+**37 Capítulo Sobre a Negação**
+
+_(Neti Seyal Tiran)_
+
+**671. O corpo carnal, o _prana_, os _indriyas_ [os órgãos sensoriais e o órgão de ação], a mente, o intelecto e o ego [_ahankara_] não são 'Eu'. Mesmo a ignorância [do sono profundo], em que apenas as tendências latentes para os conhecimentos sensoriais [_vishayavasanas_] permanecem e que está desprovida de todos os conhecimentos sensoriais e todas as ações, não é 'Eu'.**
+
+**_Sadhu Om_**: Consulte a obra _Quem sou Eu?_, onde as ideias deste verso são expressas em prosa por Sri Bhagavan.
+
+**672. Uma vez que todos estes [objetos alienígenas acima mencionados] perderão sua existência se não estiverem conectados comigo, a Realidade, e já que nenhum deles pode ter existência ou consciência à parte da Realidade, todos estes, que devem ser desprezados como inexistentes [_asat_] e insensíveis [_jada_], não são 'Eu'.**
+
+**_Michael James_**: Consulte a obra _Quem sou Eu?_, onde Sri Bhagavan diz: “Depois de negar como 'não Eu, não Eu' tudo o que foi mencionado acima, o conhecimento que permanece sozinho, ele mesmo é 'Eu' ”.
 
 
 
@@ -3920,6 +4104,15 @@ Este verso também pode ser interpretado para ter um segundo significado da segu
 
 
 
+**673. _Nota do Editor_**: Este verso foi omitido no manuscrito com o qual trabalhei, provavelmente devido a um descuido de digitação em algum momento na década de 1980 quando o original foi redigitado.
+
+**674. Seja o que for [entre os objetos alienígenas acima mencionados, que não são 'Eu'] que aja de qualquer maneira, permaneça alheio a essas atividades [isto é, à noção de que é 'Eu' que ajo] e simplesmente seja uma testemunha delas.**
+
+**_Sadhu Om_**: As instruções 'simplesmente seja uma testemunha delas' que Sri Bhagavan dá neste verso devem ser corretamente entendidas. A palavra 'testemunha' [_sakshi_] é usada nas escrituras Vedânticas em um sentido especial, e deve ser entendida de acordo. As escrituras explicam que o Eu ou _Brahman_ é uma testemunha de todas as atividades assim como o sol é uma testemunha de tudo o que acontece na terra, isto é, todas as atividades acontecem na e por causa da mera presença do Eu, assim como tudo o que acontece na terra ocorre na e por causa da mera presença do sol. No entanto, assim como o sol não se preocupa com [isto é, não atende a] tudo o que acontece na terra, o Eu também não se preocupa com [isto é, não atende a] todas as atividades que ocorrem na Sua presença. Refira-se aqui ao trabalho _Quem sou Eu?_ em que Sri Bhagavan claramente explicou esta semelhança com o sol, que não é afetado e não se preocupa com tudo o que acontece na terra.
+
+Portanto, quando Sri Bhagavan diz neste verso que devemos simplesmente ser uma testemunha de todas as coisas, Ele não quer dizer que devemos permanecer como o sol, desapegado e indiferente ao que acontece ou não acontece na nossa presença. É por isso que Ele também diz neste verso, 'permaneça alheio a eles', pois quem está realmente alheio a algo não se preocupa minimamente com essa coisa e não lhe dá atenção. Enquanto se presta atenção a algo, significa que se está preocupado com esse algo, em outras palavras, que se está apegado a ele. É por isso que na obra _Quem sou Eu?_ Sri Bhagavan define desapego, o estado de permanecer alheio ao não-Eu, assim, “Não prestar atenção ao que-é-outro [_anya_] é desapego [_vairagya_] ou ausência de desejo [_nirasa_]”.
+
+No entanto, infelizmente, hoje em dia, muitos escritores e palestrantes que apenas leram as escrituras Vedânticas, mas nunca entenderam a prática correta pela qual se pode separar-se do não-Eu, recomendam às pessoas que devem testemunhar ou observar [isto é, prestar atenção a] tudo o que acontece. Assim, eles criaram uma crença falsa na mente de muitos aspirantes de que testemunhar ou observar objetos é um _Jnana-sadhana_, e que ao testemunhar coisas pode-se desapegar-se delas. Na verdade, no entanto, tal atenção objetiva é apenas um meio de se apegar aos objetos, e nunca pode ser um meio de se desapegar deles. É por isso que Sri Bhagavan ensinou que a auto-investigação, que é uma atenção à primeira pessoa ou sujeito [ou seja, uma atenção não objetiva], é o único meio de conhecer o Eu e, assim, desapegar-se do não-Eu.
 
 
 
@@ -3927,20 +4120,128 @@ Este verso também pode ser interpretado para ter um segundo significado da segu
 
 
 
+**38 Capítulo Sobre o Estado Desprovido de Tendências**
+
+_(Nirvasanai Tiran)_
+
+**675. Em vez de aparar periodicamente os cabelos das tendências [_vasanas_], é melhor removê-los permanentemente pela permanência eterna no Eu [_atma-nishtha_], não permitindo que eles brotem na forma de pensamentos no cérebro. Essa é a glória [ou seja, o significado] do _mundanam_.**
+
+**676. Assim como um espinho que é usado para remover outro espinho que penetrou profundamente e está causando dor, as boas tendências [_subha vasanas_], após removerem as más tendências [_asubha vasanas_] no coração, também devem ser descartadas [já que também são uma forma de ligação].**
+
+**_Sadhu Om_**: As _vasanas_ que somos aconselhados a erradicar aqui são apenas as _vasanas subha_ e _asubha_, e não a _Sat-vasana_. A _sat-vasana_ é a força de gosto que nos permite permanecer cada vez mais firmemente em _Sat_, isto é, em _Brahmanishtha_. O verso 69 do _Sri Aruanchala Aksharamanamalai_ e o terceiro capítulo e os dois primeiros apêndices de _O Caminho de Sri Ramana_ – Parte Dois lançarão mais luz sobre este assunto.
+
+**677. As boas tendências [_subha vasanas_] serão úteis apenas até que todas as sujas más tendências [_asubha vasanas_] sejam destruídas. Mas o puro estado desprovido de tendências [_parisuddha nirvasana sthita_], no qual as inúmeras tendências de ambos os tipos [boas e más] são extintas, é o nosso objetivo supremo.**
+
+**_Sadhu Om_**: Não apenas as más tendências [_asubha vasanas_] mas também as boas tendências [_subha vasanas_] devem ser destruídas. Mas o leitor não deve confundir a palavra _subha vasana_ com a palavra _Sat-vasana_. _Sat-vasana_ é diferente de _subha vasana_, e sendo essencial para a permanência no Eu [_atma-nishtha_] deve ser almejada. É esta _Sat-vasana_ que Sri Bhagavan ora no verso 69 de _Aksharamanamalai._
+
+
+
+
+
+**39 Capítulo Sobre a Verdade do Jejum**
+
+_(Upavasa Unmai Tiran)_
+
+**_Michael James_**: A palavra _'upavasa'_ tem dois significados, a saber (1) seu significado literal, 'viver perto' (_upa_=perto; _vasa_=viver), ou seja, viver perto de Deus ou do Eu, e (2) o significado que é geralmente aplicado a ela, 'jejum'. Neste versículo, no entanto, Sri Bhagavan usa _upavasa_ em seu sentido literal, e Ele usa outra palavra, _unnavratam_, para jejum.
+
+**678. As pessoas sábias, sabendo que não ceder ao gosto pelos cinco prazeres dos sentidos é a verdade do jejum e que permanecer incessantemente no Eu é a verdade de _upavasa_ [vivendo perto de Deus], sempre observarão [tanto o jejum quanto _upavasa_] com grande amor.**
+
+**_Sadhu Om_**: O verdadeiro jejum não é abster-se de alimentar o estômago, mas abster-se de alimentar os cinco sentidos [não fornecendo a eles os objetos de prazer]. Como a palavra 'upavasa' literalmente significa 'viver perto', o verdadeiro _upavasa_ é sempre permanecer no Eu sem deixá-lo.
+
+
+
+
+
+**40 Capítulo Sobre a Regulação da Dieta**
+
+_(Ahara Niyama Tiran)_
+
+**679. Uma vez que a regulação da dieta desenvolve a qualidade _sattvic_ da mente, ela ajudará muito na Auto-investigação. Portanto, qual é a necessidade de alguém, devido à confusão, ansiar por quaisquer outras observâncias [_niyama_]? A regulação da dieta sozinha será suficiente.**
+
+**_Sadhu Om_**: Regulação da dieta [_ahara-niyama_] significa tomar apenas alimentos _sattvic_ em quantidades moderadas.
+
+**_Sri Muruganar_**: Aspirantes no caminho da Auto-investigação muitas vezes se preocupam com as muitas outras observâncias [_niyamas_] que podem auxiliar em seu _sadhana_. Mas a regulação da dieta sozinha será suficiente, pois é a mais alta de todas as observâncias.
+
+**41 Capítulo Sobre Acharas ou Limpeza**
+
+_(Tuytanmai Tiran)_
+
+**680. A razão pela qual as escrituras recomendam a limpeza do corpo [_acharas_] é apenas para fazer com que alguém abandone completamente o apego ao corpo através do _vairagya_ adquirido ao saber na prática que, apesar de ser repetidamente limpo, o corpo carnal e sujo se torna sujo novamente e novamente.**
+
+**_Sadhu Om_**: Uma história ilustrando a ideia neste versículo é dada em _O Caminho de Sri Ramana_ - Parte Dois, apêndice três, páginas 224 a 228.
+
+
+
+
+
+**681. Quando os _Vedas_ ordenam, "Case-se com uma garota", não é seu objetivo interno que se deve abandonar o desejo pelos prazeres triviais do sexo? Da mesma forma, quando os _Vedas_ ordenam às pessoas que façam _yagas_, por exemplo, não é seu objetivo oculto que se deve abandonar todo o desejo pelos prazeres do céu [que vêm como resultado de fazer _yagas_]?**
+
+**_Sadhu Om_**: Quando uma mãe quer dar um remédio para seu filho, ela o chama para dentro de casa mostrando-lhe alguns doces, pois sabe que ele não vai gostar do remédio, mas será atraído pelos doces. Da mesma forma, sabendo que as pessoas imaturas não vão apreciar a ideia de _Jnana_, mas serão atraídas se lhes forem oferecidos prazeres sensuais, os _Vedas_ primeiro [no _Karma Kanda_] mostram vários meios para obter vários prazeres. No entanto, assim como o objetivo secreto da mãe é dar o remédio ao seu filho quando ele entra em casa, o objetivo secreto dos _Vedas_ é preparar e amadurecer as pessoas para o _Jnana Kanda_ ao primeiro levá-las ao caminho da retidão. A mesma ideia também é expressa no versículo 31 de _Sri Ramana Pada Malai_ por Sri Sivaprakasam Pillai e também nos versículos 75 e 76 do segundo capítulo de Kaivalya Navanitam.
+
+**682. Aqueles que alegremente tomam como 'Eu' seu corpo carnal e sujo, que converte até mesmo o alimento puro em podridão logo após ser ingerido, são piores do que um porco, que se alimenta de sujeira.**
+
+**B10. Aqueles que tomam como 'Eu' seu corpo, que ingere alimento puro e o converte em sujeira, são piores do que um porco que ingere sujeira e a converte em sujeira.**
+
+**_Sadhu Om_**: Assim como um homem identifica seu corpo como 'Eu', assim um porco identifica seu corpo como 'Eu'. Embora ambos estejam igualmente errados em identificar um corpo como 'Eu', Sri Bhagavan aponta como o corpo de um porco é superior ao de um homem! Ou seja, o corpo de um porco come apenas sujeira e a excreta novamente como sujeira, enquanto o corpo de um ser humano come boa comida pura e a excreta como sujeira. Portanto, o veredicto de Sri Bhagavan é que aqueles que identificam um corpo humano como 'Eu' são piores do que porcos!
+
+
+
+
+
+**42 Capítulo sobre a Ausência de Motivação**
+
+_(Nishkamya Tiran)_
+
+**683. Adorar a Deus em busca de algum ganho é apenas adorar esse ganho em si. Portanto, para aqueles que desejam alcançar o estado de Siva [o estado de unidade com Deus], a completa destruição de até mesmo um único pensamento de qualquer ganho é indispensável.**
+
+**684. Pessoas boas nunca desperdiçarão seu elevado _tapas_, que é destinado a salvar sua alma, para a obtenção dos prazeres mundanos ilusórios [seja neste mundo ou no próximo]. Saiba que o ato daqueles que fazem _kamya tapas_ com o objetivo de alcançar os prazeres do céu, é semelhante a trocar uma joia muito preciosa por uma pobre papa.**
+
+**_Sadhu Om_**: O objetivo do _tapas_ deve ser a auto-realização e não qualquer outra coisa. Como o _tapas_ de muitos _asuras_ foi feito apenas com o objetivo de conquistar os mundos celestiais e desfrutar de seus prazeres lá, isso não levou à sua salvação. Da mesma forma, todo o _tapas_ feito por pessoas com objetivos que não a auto-realização [_atma-siddhi_] não levará à sua salvação. Essas pessoas são ignorantes e não sabem o que realmente é _tapas_.
+
+**43 Capítulo sobre o Controle dos _Karanas_ ou Instrumentos de Conhecimento**
+
+_(Karana Tanda Tiran)_
+
+**685. Se os instrumentos internos de conhecimento [os quatro _antahkaranas_, a saber, mente, intelecto, _chittam_ e ego] e os instrumentos externos de conhecimento [os cinco _bahihkaranas_, a saber, olhos, ouvidos, nariz, língua e pele] foram controlados dia e noite [ou seja, sempre], a suprema Realidade que brilha no inexprimível estado de _turiya_ surgirá.**
+
+**_Sri Muruganar_**: O declínio [ou seja, controle] de todos os instrumentos de conhecimento [_karanas_] naturalmente em todos os momentos só será possível quando o ego diminuir permanentemente. Portanto, os aspirantes devem visar apenas a destruição do ego. Tentar controlar cada um dos instrumentos mencionados individualmente não é o caminho direto.
 
 
 
 
 
 
+**686. Em vez de impedir que a mente flua para fora e mantê-la firmemente dentro, quebrar a trava [ou seja, ir contra as restrições estabelecidas pelos Sábios para o controle da mente] e permitir que a mente corra para fora através dos cinco sentidos, é um ato tão pecaminoso quanto causar a destruição de uma cidade ao quebrar as muralhas da cidade e romper as margens dos reservatórios de água.**
+
+**687. Foi apenas isso que foi ilustrado pela antiga história de Brahma e Vishnu que, desnecessariamente divergindo, argumentando e brigando entre si, tentaram testar a Coluna de Luz [Arunachala] com suas mentes confusas e falharam.**
+
+**_Sadhu Om_**: Como só experimentamos uma existência individual separada quando a consciência-existência do Self é extrovertida através dos cinco sentidos, é melhor que essa individualidade subsida como uma no Self, tendo controlado os cinco sentidos.
+
+**44 Capítulo sobre a Conquista dos _Karanas_**
+
+_(Karana Jaya Tiran)_
+
+**688. Pela morte do ego – a identificação com o corpo que é composto pelos cinco elementos – rejeitando com indiferença os defeitos causados pelos cinco elementos [terra, água, ar, fogo e espaço], que não pertencem ao Self, é a conquista dos elementos [_bhuta-jayam_].**
+
+**_Sadhu Om_**: Este versículo deveria estar sob um título de capítulo separado, 'A Conquista dos Elementos'.
+
+Muitas pessoas acreditam que a conquista dos cinco elementos [_bhuta-jayam_] significa a habilidade adquirida por alguns _siddhas_ para controlar e lidar com esses elementos, por exemplo, a habilidade de andar sobre água, fogo ou ar. No entanto, Sri Bhagavan declara neste verso que a verdadeira conquista dos cinco elementos não é nada além de não identificar como 'Eu' o corpo, que é composto por esses elementos.
 
 
 
 
 
+**689. A ideia de ‘Eu sou a mente [_chittam_]’ tendo desaparecido, e assim a confusão da intelectualidade [_buddhi_] tendo cessado e as noções de vinculação e liberação tendo se perdido, para alcançar a _siddhi_ de firmemente permanecer no conhecimento do Self é a conquista da mente [_chittam-jayam_].**
 
+**_Sadhu Om_**: A crença mantida por muitas pessoas de que a conquista da mente [_chitta-jayam_] significa adquirir o poder de alcançar o que se deseja, o poder de encantar as mentes dos outros, ou o poder de conduzir as mentes dos outros de acordo com os próprios motivos egoístas, está errada. Sri Bhagavan declara neste verso que o poder de _Jnana_ que destrói o próprio _chittam_ [mente ou o depósito de tendências] é o verdadeiro _chittam-jayam_.
 
+**45 Capítulo sobre _Asana_ ou Postura**
 
+_(Asana Tiran)_
+
+**690. Permanecer firme sem cair do conhecimento de que todo o universo tem apenas o Self, o supremo espaço de _Jnana_, como sua base [_asana_], é a postura firme e inabalável [_asana_] para o bom _samadhi_ [ou seja, _sahaja samadhi_].**
+
+**_Sadhu Om_**: Para as pessoas dos dias atuais que receberam a compreensão grosseira de que dobrar as pernas, endireitar as costas, direcionar os olhos para a ponta do nariz e permanecer como um tronco, é a postura do _yoga_ [_yoga asana_], Sri Bhagavan ensina neste verso a postura correta para o _yoga_ [_yoga-asana_] para _jnana-yoga_.
 
 
 
