@@ -4246,6 +4246,404 @@ _(Asana Tiran)_
 
 
 
+**46 Capítulo sobre o Poder do _Yoga_**
+
+_(Yoga Vali Tiran)_
+
+**691. Tendo feito o gosto de ver através dos sentidos enganadores diminuir e, assim, terminado o conhecimento objetivo malicioso da mente, o ego saltitante, para conhecer a luz sem luz [_prajna_ ou autoconsciência] e o som sem som [o _Atmasphurana_ ‘Eu sou’] no coração é o verdadeiro poder do _yoga_ [_yoga-sakti_].**
+
+**692. Como é apenas o esforço realizado em nascimentos passados que, depois de amadurecer, se torna o _prarabdha_ [dos nascimentos presentes e futuros], saiba que também é possível para si mesmo, que anteriormente fez esse esforço, mudar o _prarabdha_ através do esforço raro [de se voltar para o Self].**
+
+**_Michael James_**: As palavras 'o esforço raro' que Sri Bhagavan usa aqui devem ser entendidas como significando apenas o esforço de voltar a mente para o Self, pois este esforço é raramente feito pelos _jivas_ e, portanto, é o mais raro de todos os esforços. As palavras 'mudar _prarabdha_' devem ser entendidas como 'transcender _prarabdha'_, pois pelo esforço da autoatenção perde-se a individualidade (junto com o senso de ação e o de experiência, que são inerentes à individualidade) e, portanto, não se pode mais experimentar o _prarabdha_. Esta ideia é confirmada no próximo verso.
+
+**693. Não importa quais boas _karmas_ produzam quais prazeres ou quais más _karmas_ produzam quais dores como resultados, conquiste o poder de ambos afogando a mente no próprio Self, a suprema Realidade.**
+
+**_Sadhu Om_ e _Michael James_**: Quando a mente se afoga no Self, o sentido de ação e o de experiência são perdidos. Então, como não resta ninguém para experimentar o _prarabdha_, diz-se que o _prarabdha_ foi conquistado. Refira-se também ao verso 38 de _Ulladu Narpadu_ e ao verso 33 de _Ulladu Narpadu – Anubandham_.
+
+**694. Mesmo em assuntos mundanos, o sucesso é impossível sem o devido zelo [_shraddha_] em um esforço, não se deve permitir que o zelo [_shraddha_] na prática espiritual diminua até que se torne um com o Supremo ilimitado.**
+
+
+
+
+
+**695. Por mais graves que sejam os pecados do passado, se, em vez de pensar amargamente 'Eu sou um grande pecador' e lamentar-se por isso, mergulharmos no Self com grande firmeza, em breve alcançaremos a Bem-aventurança.**
+
+**_Sadhu Om_**: Este versículo transmite o mesmo ensinamento que Sri Bhagavan deu na obra _Quem sou eu?_ onde Ele diz: "Por maior que seja o pecador, se, não lamentando 'Oh, eu sou um pecador! Como posso alcançar a salvação?' mas abandonando completamente até o pensamento de que se é um pecador, se é firme na auto-atenção, certamente será salvo."
+
+**696. Aqueles que alcançaram a _Jnana-siddhi_ [a realização do conhecimento] neste mesmo nascimento através do poder da Graça de Deus e sem nenhum esforço de sua parte, como na ilustração do gatinho [_marjala-nyaya_], são aqueles que tiveram devoção a Deus em suas vidas passadas através de seu próprio esforço, como na ilustração do macaco [_markata-nyaya_].**
+
+**_Michael James_**: _Marjala-nyaya_ significa a ilustração do gatinho que, sem nenhum esforço de sua parte, é carregado aqui e ali por sua mãe, enquanto _markata-nyaya_ significa a ilustração do macaquinho que, por seu próprio esforço, se agarra à sua mãe.
+
+**697. Para aqueles que se concentram ininterruptamente no espaço ilimitado e onipresente da consciência [_chitrambalam_], não há nem mesmo um átomo de destino [_prarabdha_]. Isto é o que significa a expressão das escrituras, "O destino não existe para aqueles que buscam o céu".**
+
+**_Sadhu Om_**: Desta versão devemos entender que a palavra 'céu' na expressão das escrituras, "O destino não existe para aqueles que buscam o céu" não denota qualquer mundo de prazer, mas apenas o estado de libertação [_mukti_].
+
+**698. Saiba que _prarabdha_, que, como um redemoinho, gira sem falhas ao redor da mente que toma o corpo como 'Eu', não pode nem ao menos agitar a mente que se conhece e que brilha como o espaço puro da consciência.**
+
+**_Sadhu Om_**: A importância deste versículo é que não há _prarabdha_ para o _Jnani_.
+
+
+
+
+
+**699. Diga-me, meu coração, exceto a atenção [_dhyana_] ao Self [_swarupa_], que brilha ininterruptamente como o próprio ser, que estratagema existe para reduzir a cinzas o senso de ação [_kartrutva_], a mente perversa [ou ego], que afoga o _jiva_ no fundo do oceano de karmas.**
+
+**_Michael James_**: Este versículo ensina enfaticamente que não há meio de destruir a mente ou o ego além da atenção ao Self [_swarupa-dhyana_].
+
+**47 Capítulo Sobre o Controle da Respiração**
+
+_(Uyir Orukka Tiran)_
+
+**700. Abandonar o nome e a forma [os aspectos falsos] do mundo - que consiste em existência, consciência, bem-aventurança, nome e forma - é a exalação [_rechaka_], perceber a existência-consciência-bem-aventurança é a inalação [_puraka_], e permanecer sempre firmemente como existência-consciência-bem-aventurança é a retenção [_kumbhaka_]. Faça [tal _pranayama_].**
+
+**_Sadhu Om_**: _Pranayama_ significa a prática de regular a respiração. No _raja yoga_, exalar o ar é chamado de _rechaka_, inalar o ar é chamado de _puraka_, e reter o ar nos pulmões é chamado de _kumbhaka_. Neste versículo, o verdadeiro significado de _pranayama_ é descrito de acordo com o _jnana marga._ Refira-se também ao capítulo X, _‘Jnanashtanga’_, da obra _Vichara Sangraham_ de Sri Bhagavan, onde esta mesma ideia é dada.
+
+**_Sri Muruganar_**: Das cinco características do _Brahman_, nomeadamente existência, consciência, bem-aventurança, nome e forma [_sat_, _chit_, _ananda_, _nama_ e _rupa_], as características distintivas do mundo são o nome e a forma, e por isso abandonar completamente estes dois é _rechaka_. Quando o falso nome e forma são assim abandonados como uma imaginação de miragem, o que resta são os aspectos verdadeiros [_satya amsas_], a saber, existência, consciência e bem-aventurança. Como estas três, que são as características distintivas do Self, são a realidade do mundo, percebê-las é _puraka_. Permanecer sempre nessa realização é _kumbhaka_. Ou seja, destruir as tendências para o mundo [_loka-vasanas_], perceber o Self e permanecer sempre como Ele, é o significado de _Jnana-pranayama_. Embora _sat_, _chit_ e _ananda_ sejam nomeados como se fossem três coisas diferentes, na experiência eles são verdadeiramente um e o mesmo. Neste contexto, refira-se também ao versículo 979 desta obra.
+
+
+
+**701. Abandonar completamente a noção 'Eu sou o corpo' é _rechaka_; mergulhar dentro através do sutil escrutínio 'Quem sou eu?' é _puraka_; e permanecer como um com o Self como 'Eu sou Aquilo' é _kumbhaka_ - tal é o _jnana-pranayama_.**
+
+**_Sadhu Om_**: No versículo anterior, foi dito que abandonar os nomes e formas do mundo é _rechaka_. E como a atenção incessante ao Self é perceber a existência-consciência-bem-aventurança, que é a realidade tanto do mundo quanto de si mesmo, mergulhar dentro questionando 'Quem sou eu?' é aqui dito ser o correto _puraka_. Como existência, consciência e bem-aventurança não são realmente três coisas diferentes, mas o único Self, permanecer sempre como o Self é aqui dito ser o correto _kumbhaka_. Assim, neste versículo, o _jnana-pranayama_ de acordo com o caminho de Sri Ramana é explicado de uma maneira mais prática.
+
+**702. Quando aquele que estava iludido em se considerar a mente e que estava vagando [através de nascimentos e mortes], abandonando sua vida ilusória e semelhante a um sonho, questiona o Self, seu próprio estado, e permanece sempre como o Self, essa é a verdade do _pranayama_. Assim você deve saber.**
+
+**_Michael James_**: Neste versículo, abandonar a vida ilusória e semelhante a um sonho deve ser entendido como _rechaka_, questionar o Self, o próprio estado, deve ser entendido como _puraka_, e permanecer sempre como o Self deve ser entendido como _kumbhaka_.
+
+**48 Capítulo Sobre o Segredo da Ação**
+
+_(Karma Rahasya Tiran)_
+
+**B11. A mera investigação 'Para quem são esses defeitos, _karma_ [ou seja, _kamya karma_, ação realizada com desejo], _vibhakti_ [falta de devoção], _viyoga_ [separação de Deus] e _ajnana_ [ignorância]?' é em si _karma_, _bhakti yoga_ e _jnana_! [Como?] Quando assim indagado, 'Eu' é [encontrado para ser] inexistente, [e portanto] estes [quatro defeitos] são [também encontrados para ser] sempre inexistentes. A verdade é [então revelada] que sempre permanecemos como [o imaculado] Self.**
+
+**_Michael James_**: Este versículo também é o versículo 14 de _Ulladu Narpadu Anubandham_.
+
+**_Sadhu Om_**: Como todos os benefícios dos quatro yogas, que são traçados para a remoção desses quatro defeitos, são alcançados através do caminho da auto-investigação, 'Quem sou eu?', deve-se entender que se alguém se dedica à auto-investigação, nenhum dos quatro yogas é necessário. Consulte também _The Path of Sri Ramana_ - Parte Um, pp. 62 a 63.
+
+
+
+
+
+**703. A essência [_tattva_] do _karma_ é conhecer a verdade de si mesmo ao questionar 'Quem sou eu, o autor, que começa a fazer _karmas_?'. A menos que o autor dos _karmas_, o ego, seja aniquilado através da investigação, a perfeita paz da suprema bem-aventurança, que é o resultado do _karma yoga_, não pode ser alcançada.**
+
+**_Sadhu Om_**: O significado deste versículo é que o maior e mais importante _karma_ que um _karma yogi_ tem a fazer é investigar-se e assim ter o ego destruído, e que a auto-investigação é, portanto, o apropriado _karma yoga_.
+
+**704. Aquele que conheceu a verdade de [ou seja, a inexistência de] si mesmo, o autor, só é aquele que realizou todos os _karmas_ prescritos sem falhas. Pois além da suprema bem-aventurança [que é alcançada pela aniquilação do ego], que fruto se espera alcançar pela dura _tapas_ de realizar diariamente os _karmas_ com grande cuidado.**
+
+**_Sadhu Om_**: Este versículo revela o segredo de que aniquilar o ego através da auto-investigação não é apenas fazer um serviço social no espírito do _karma-yoga_, mas também é realizar todas as ações diárias prescritas [_karmanushtanas_] perfeitamente.
+
+**705. Uma vez que o conhecimento não-dual impecável [_advaita jnana_] só brilha como o objetivo da observância de todos os tipos de _dharmas_, o _Jnani_ sozinho é aquele que observou todos os _dharmas_.**
+
+**_Sadhu Om_**: Aqui Sri Bhagavan explica o significado correto das palavras 'o próprio _dharma'_ [_svadharma_] usadas por Sri Krishna no _Bhagavad Gita_, cap. 3, v. 35, enquanto ensina sobre _karmas_ e _dharmas_. '_Sva_' significa Self, e _dharma_ significa estar estabelecido nele. Portanto, a permanência no Self [_atma-nishtha_] sozinha é o verdadeiro _svadharma_, adequado a todas as pessoas. Assim, o segredo do _karma_ e do _dharma_ é ensinado neste capítulo.
+
+
+
+
+
+
+**49 Capítulo Sobre _Japa_**
+
+_(Japa Tiran)_
+
+**B12. Para aqueles que não conseguem alcançar através do _jnana-marga_ [ou seja, Auto-investigação] o lugar [fonte] onde 'Eu' existe, é melhor conhecer durante o _japa_ o lugar onde a Palavra suprema [_para-vak_] brilha.**
+
+**_Sadhu Om_**: Depois de ver o seguinte versículo composto por Sri Muruganar [que é um _venba_, um versículo de quatro linhas], Sri Bhagavan compôs o versículo acima [que é um _kural venba_, um versículo de duas linhas] dando a mesma ideia de forma mais concisa.
+
+**706. Para aqueles que não conseguem mergulhar profundamente dentro do silêncio, o conhecimento mais aguçado, buscando "Qual é a fonte da qual o 'Eu' se eleva?", é melhor examinar enquanto se faz mentalmente o _japa_ de onde vem a Palavra suprema [_para-vak_].**
+
+**_Sadhu Om_**: Nos dois versículos acima, Sri Bhagavan explicou o segredo por trás da segunda das duas instruções que ele deu a Kavyakantha Ganapati Sastri em 18 de novembro de 1907.
+
+Quando Ganapati Sastri se aproximou de Sri Bhagavan e orou por instruções sobre a natureza do verdadeiro _tapas_, Sri Bhagavan inicialmente permaneceu em silêncio e olhou calmamente para ele por cerca de quinze minutos. Então Ganapati Sastri novamente orou, "Eu li sobre tal _mouna-upadesa_ em _sastras_, mas não consigo entender. Graciosamente, instrua-me também através da fala". A primeira instrução então dada por Sri Bhagavan foi Seu ensino básico [_yathartha upadesa_] 'Quem sou eu?', ou seja, para atender à fonte de onde 'Eu' surge. Mas sendo desconcertado pela novidade deste _upadesa_, Ganapati Sastri perguntou novamente, "Esse mesmo estado pode ser alcançado através do _japa_ também?" Portanto, vendo que o devoto tinha uma grande inclinação pelo _japa_, Sri Bhagavan deu Sua segunda instrução, ou seja, "Se alguém repete um _mantra_ e se alguém observa de onde o som desse _mantra_ começa, a mente se acalmará; isso é _tapas_."
+
+Quando uma moeda de um real com uma cabeça impressa de um lado e uma flor impressa do outro é mostrada a uma criança pequena e quando seu pai pergunta, "Qual moeda você prefere, a que tem uma cabeça ou a que tem uma flor?", seja que a criança peça pela cabeça ou pela flor, ela será dada a mesma moeda por este pai, que simplesmente virará o lado que a criança gosta. Assim como o pai faz seu filho feliz, Sri Bhagavan fez Ganapati Sastri feliz ao lhe dar a mesma instrução uma segunda vez em uma forma diferente. Como? De onde mais o som de um _mantra_ começa, senão da pessoa que o repete? Portanto, observar a fonte de onde o som do _mantra_ começa significa nada mais do que atentar para o 'Eu', a primeira pessoa, que está fazendo o _japa_. Assim, escondendo gentilmente o fato de que sua segunda _upadesa_ era a mesma que a primeira, Sri Bhagavan deu ao seu devoto a mesma moeda de um real [Auto-investigação] com o outro lado virado para cima, como se ele estivesse recomendando o _japa-sadhana_.
+
+O fato de que Sri Bhagavan estava indiretamente recomendando apenas a Auto-investigação mesmo em sua segunda instrução, como explicado nesta nota, é confirmado neste versículo pelas palavras _'para-vak'_, pois no versículo 715 Sri Bhagavan explica que _para-vak_ significa nada mais do que 'Eu-Eu'.
+
+
+
+
+
+
+**707. Uma vez que você mesmo é a forma do _japa_, se você perguntar 'Quem sou eu?' e conhecer a sua natureza, ah, você descobrirá que o _japa_ que estava fazendo anteriormente com esforço estará sempre acontecendo sem esforço e incansavelmente no coração.**
+
+**_Sadhu Om_**: De todos os nomes de Deus, o nome silencioso 'Eu', a consciência singular da primeira pessoa, é o mais importante. Uma vez que Deus brilha igualmente e como um só em todos os seres vivos, e uma vez que todos os seres vivos se referem a si mesmos como 'Eu', fica claro que 'Eu' é a verdadeira natureza de Deus. É por isso que Sri Bhagavan diz: "Você mesmo [a consciência do Eu] é a forma do _japa_". Como a atividade na forma de esforço é destruída quando se analisa a própria natureza através da pergunta 'Quem sou eu?', o _japa sahaja_ [isto é, a consciência do Eu-Eu sempre brilhante] que então continua sem esforço é o que este verso declara 'estará sempre acontecendo sem esforço e incansavelmente no coração'.
+
+**708. Até que os objetos conhecidos se fundam completamente no sujeito conhecedor [ou seja, até que os conhecimentos sensoriais - díades e tríades - se fundam na mente e se tornem inexistentes] e até que se saiba firmemente qual é a natureza do verdadeiro Eu, de que adianta dizer vaidosamente pela boca, "Eu sou Deus, eu sou Deus"?**
+
+**_Sadhu Om_**: Como antes de conhecer o Eu, identifica-se a si mesmo com o corpo, se alguém diz 'Eu sou Deus' será o mesmo que dizer que o corpo é Deus, o que não é apenas falso, mas também perigoso, pois aumentará o falso sentimento de egoísmo. Portanto, antes de se abandonar a identificação com o corpo, é inútil e sem sentido repetir os _Mahavakyas_, tais como 'Eu sou _Brahman_' e 'Eu sou Ele'. Além disso, uma vez que após conhecer o Eu, permanece-se como _Brahman_ [Deus] apenas, é desnecessário repetir 'Eu sou _Brahman_, Eu sou _Brahman_', assim como é desnecessário para um homem repetir 'Eu sou homem, Eu sou homem'. Portanto, fazer _japa_ dos _Mahavakyas_ é perigoso antes da realização do Eu e é desnecessário após a realização do Eu.
+
+
+
+
+**709. Em vez de vagar repetindo [fazendo _japa_ de] 'Eu sou o Supremo', permaneça calmamente como o Supremo. Não é gritando em voz alta 'Eu sou Isso', mas apenas permanecendo como 'Eu sou Isso', que as misérias [de nascimento e morte] desaparecerão.**
+
+**710. As doenças não serão curadas apenas repetindo o nome do remédio, mas apenas ao tomar o remédio. Da mesma forma, os laços de nascimento [e morte] não nos deixarão apenas fazendo _japa_ de muitos _Mahavakyas_ como 'Eu sou Siva' [_Sivoham_].**
+
+**_Michael James_**: O que é significado pela frase 'ao tomar o remédio' não é mencionado neste verso, mas como o verso anterior nos instrui a 'permanecer calmamente como o Supremo', devemos entender que 'tomar o remédio' significa apenas 'permanecer como o Supremo'.
+
+**50****Capítulo Sobre o Verdadeiro Templo**
+
+_(Mey Koyil Tiran)_
+
+**711. Aqueles que não entendem vivamente que Deus é o templo [ou seja, o lugar de morada ou base] tanto do mundo quanto da alma, constroem templos para Deus e - limitando o Deus ilimitado como uma pequena divindade e assim o velando - o adoram.**
+
+**_Michael James_**: O objetivo por trás deste verso não é condenar a adoração em templos ou instruir os aspirantes a que não devem adorar Deus na forma de uma divindade de templo. Seu objetivo é apenas fazer com que eles entendam a limitação de tal adoração e ajudá-los a ir mais longe, voltando sua atenção para o Eu. No entanto, está claro a partir do verso 208 desta obra que Sri Bhagavan não condena a adoração em templos, que tem seu próprio valor enquanto o aspirante identifica seu corpo como 'Eu'.
+
+
+
+**51****Capítulo Sobre o Santo Nome**
+
+_(Tirunama Tiran)_
+
+**712. Ao escrutínio, quando a realidade, o Coração [_ullam_], aparentemente se expande a partir do coração na forma de consciência [‘Eu sou’] para assumir muitos milhares de nomes, o primeiro deles é ‘Eu’. Assim você deve saber.**
+
+**_Sadhu Om_**: Como a palavra tâmil _‘ullam’_, que significa ‘Coração’, também significa ‘sou’ - o brilho da Realidade, ‘Eu’ - a Realidade é chamada pelo nome _‘ullam’_. Compare isso com as palavras sagradas de Sri Bhagavan no 2º verso de _Sri Arunachala Pancharatnam_, “Como você brilha como ‘Eu’ no Coração, seu nome mesmo é Coração”.
+
+**713. Como sozinho com ‘Eu’, o primeiro nome acima mencionado [de Deus], ‘sou’ sempre brilha como a luz da Realidade ‘Eu’, ‘sou’ também é [um igualmente grande] nome [de Deus].**
+
+**714. De todos os muitos milhares de nomes, nenhum é tão verdadeiramente apto, tão realmente belo, como este nome [‘Eu’ ou ‘sou’] para Deus, que habita no coração sem pensamento.**
+
+**_Sri Muruganar_**: De todos os milhares de nomes de Deus adorados em muitas religiões diferentes e em muitas línguas diferentes, não há outro nome tão belo e verdadeiramente adequado a Deus como este ‘sou’. O nome ‘Jeová’ usado na língua hebraica para denotar Deus significa apenas isso.
+
+**715. De todos os nomes conhecidos de Deus, o nome ‘Eu-Eu’ sozinho brilhará triunfantemente quando o ego for destruído, surgindo como a Suprema Palavra silenciosa, [_mouna-para-vak_] no espaço do coração daqueles cuja atenção é introvertida.**
+
+**_Sadhu Om_**: Como fica claro a partir deste verso que o que Sri Bhagavan quer dizer com a palavra _‘para-vak’_ é apenas o _atma-sphurana_ ‘Eu-Eu’, o leitor pode entender que o que Ele quis dizer quando disse no verso Bhagavan-12 [B12, acima 706], deste trabalho, “_vak parai ar stanam terdal_” [conhecer o lugar onde o _para-vak_ brilha], era ‘prestar atenção à fonte onde ‘Eu-Eu’ brilha’, que é nada mais que o método de Auto-investigação. Assim, este verso confirma a ideia expressa na nota de rodapé do verso 706. Veja também o verso 1197.
+
+
+
+
+
+**716. Mesmo que alguém se lembre incessantemente desse nome divino ‘Eu-Eu’, ele conduzirá com segurança ao ponto de origem do qual os pensamentos surgem, destruindo assim o ego enraizado no corpo.**
+
+**_Sadhu Om_**: Este verso transmite o mesmo ensinamento que é dado por Sri Bhagavan na seguinte frase de _Quem sou eu?_: “Mesmo que se pense incessantemente ‘Eu, Eu’, isso levará a esse lugar [a fonte da mente].”
+
+**717. Embora a palavra ‘Eu’ pareça denotar a alma encarnada ou ego, saiba que, ao escrutínio, apenas o Self, a base da alma encarnada, é [considerado] o verdadeiro significado da palavra ‘Eu’.**
+
+**_Sadhu Om_**: Refira-se também ao verso 21 de _Upadesa Undiyar_.
+
+**52 Capítulo Sobre Devoção**
+
+_(Bhaktimai Tiran)_
+
+**718. O melhor devoto [_bhaktiman_] é apenas aquele herói que destrói a si mesmo [o ego], que é realmente um vazio inexistente e que é denotado pelo termo ‘tu’ [_twam_], em _Sadasiva_ [Self], que brilha como o significado do termo ‘_Aquilo_’ [_tat_], através da experiência ‘sou’, a consciência tranquila do Self denotada pelo termo ‘és’ [_asi_].**
+
+**_Sadhu Om_**: Aquele que se identifica com o corpo e que sente ‘Eu sou fulano’ é o _jiva_ ou ego, que é denotado pelo termo ‘tu’ [_twam_]. Aquilo que permanece fora de ‘Eu sou fulano’ depois que a parte do ego ‘fulano’ foi destruída na consciência feliz do Self, _Sadasiva_, é ‘Eu sou’, que é denotado pelo termo ‘Aquilo’ [tat]. Assim, neste verso, o _Mahavakya_ ‘_Aquilo tu és_’ [_tat twam asi_] do _Vedanta jnana-marga_ é explicado à luz do _Siddhanta bhakti-marga_. Portanto, deve-se entender que a destruição do ego, que é o objetivo do _jnana-marga_, também é o objetivo do _bhakti-marga_.
+
+
+
+
+
+
+**719. O melhor devoto é apenas aquele herói que, no insondável oceano de bem-aventurança [Self], destrói o falso ‘Eu’, a forma de pensamento que flutua como uma bolha na água.**
+
+**_Sadhu Om_**: A partir dos dois versos acima, fica claro que apenas o _Sahaja Jnani_ é um devoto perfeito de Deus.
+
+**720. Aqueles que, com mentes amadurecidas através da _bhakti_, beberam completamente a essência da _bhakti_, desejam apenas o néctar divino da suprema _bhakti_ como o fruto de [sua] _bhakti_.**
+
+**_Sadhu Om_**: Devotos de um nível exaltado nunca desejam alcançar _siddhis_ ou prazeres, seja neste mundo ou no céu, como fruto de sua devoção. Como eles provaram a essência da _bhakti_, eles irão orar ao Senhor para conceder-lhes apenas a dádiva de uma devoção sempre crescente para com Ele. Esse sutil segredo é revelado por Sri Bhagavan na última linha do 7º verso do _Sri Arunachala Navamanimalai_, onde Ele ora, “Ó meu querido Senhor, concede-me apenas um amor sempre crescente pelos Teus pés”.
+
+**721. O silêncio desprovido do surgimento agressivo do ego é Libertação [_mukti_]. A própria inadvertência maligna [de escorregar daquele estado de Silêncio] é a não devoção [_vibhakti_]. Permanecer como um [com o Self], com a mente subjugada sem surgir divisivamente [como outra], é a verdadeira _bhakti_ a Siva.**
+
+
+
+
+
+**53 A Não-diferença entre _Bhakti_ e _Jnana_**
+
+_(Bhakti Jnana Abheda Tiran)_
+
+**722. Após escrutínio, a suprema devoção [_parabhakti_] e a _Jnana_ são, por natureza, uma e a mesma coisa. Dizer que uma dessas duas é um meio para a outra é devido à falta de conhecimento da natureza de ambas.**
+
+**_Michael James_**: Como o estado de suprema devoção (_parabhakti_) é a perda da individualidade, nada mais é do que o estado de _Jnana_.
+
+**723. A razão pela qual mesmo aqueles que conhecem a verdade [que _bhakti_ e _jnana_ são uma e a mesma coisa], seguem apenas uma como se, ao contrário do que foi dito acima, fosse melhor que a outra, é para impedir que os aspirantes que estão seguindo essa, acreditando que seja melhor, a abandonem e saltem para a outra.**
+
+### 54 _Bhakti_ e _Vichara_
+
+_(Bhakti Vichara Tiran)_
+
+**724. A realização de Realização [_samadhi_], que resulta no final da prática de inquérito sobre o amado conhecimento verdadeiro [_mey-jnana vichara_], é unicamente devido à Graça de Deus, que brilha como o Self, como a própria realidade, a Alma da alma.**
+
+**_Michael James_**: Como o Self é a verdadeira vida ou alma da pseudo alma, o _jiva_, Ele é o verdadeiro Deus. Portanto, o inquérito, que é a atenção ao Self feita com grande amor ao Self, é a verdadeira adoração a Deus. Assim, apenas através da Graça de Deus, o Self, é que o inquiridor se estabelece firmemente em _samadhi_.
+
+
+
+
+
+**725. A menos que o Senhor [o Deus e Guru] que reside dentro [como Self], pelo poder de Sua Graça, puxe a mente para dentro, quem pode, pelo mero poder da mente furtiva e maliciosa, impedir sua natureza de saída e alcançar o Coração e descansar em paz?**
+
+**726. A Graça de Deus, cuja forma é oito vezes maior, não pode ser obtida sem a Graça do Guru. Nem pelas _vidyas_ [artes e aprendizado] nem por qualquer outro meio será obtida a Graça, mas apenas pela _bhakti_ [em direção ao Guru].**
+
+**_Michael James_**: Como o próprio Deus se encarna como Guru, a Graça de Deus é proclamada como nula sem a Graça do Guru. Como a _Guru-bhakti_ é ela mesma _God-bhakti_, ela sozinha, e nada mais, permitirá a alguém obter a Graça de Deus.
+
+**727. Não se deve duvidar se a Graça de Deus, o grande apoio, foi concedida a alguém ou não, pois o fato de a mente de alguém estar muito interessada em inquérito, tendo um grande gosto pela libertação da escravidão, é em si mesma prova suficiente [que a Graça de Deus foi concedida].**
+
+**728. Para dizer a verdade, a Graça de Deus e o inquérito 'Quem sou eu?', que é o meio para permanecer dentro, cada um sendo uma grande ajuda para o outro, juntos levam alguém ao estado de unidade com o Self supremo.**
+
+**729. A menos que a suprema Realidade [Deus ou Self] Se revele no Coração, a ilusão [_maya_] deste sonho mundial não terminará. O inquérito 'Quem sou eu que vê este sonho?' é a adoração [_upasana_] que traz [a Graça do Supremo para] essa revelação.**
+
+**_Sadhu Om_**: Portanto, a auto-investigação é a _upasana_ adequada que se deve fazer para ganhar a Graça de Deus e assim acordar deste sonho mundial.
+
+
+
+
+**730. Atenção ao próprio Self é dito ser a suprema devoção a Deus, que é inatingível pela mente e assim por diante, porque esses dois [o Self atendido pelo questionador e o Deus adorado pelos devotos] são por natureza [_swarupam_] um e o mesmo.**
+
+**_Sadhu Om_**: _Swarupam_, Self, Deus, Guru e Graça são todas palavras diferentes que denotam a mesma realidade.
+
+**731. Saiba que o caminho da _Jnana_ e o caminho da _bhakti_ estão inter-relacionados. Siga esses dois caminhos inseparáveis sem dividir um do outro.**
+
+**B13. Atenção ao Self é devoção ao Senhor supremo, porque o Senhor existe como Self.**
+
+**_Michael James_**: O verso 730 deve vir como 731 e vice-versa.
+
+**732. Se alguém vê 'Quem sou eu que anseia ganhar a Graça do Senhor?' o ego [_anava_] será destruído e assim a Graça do Senhor se revelará. Depois que o ego foi assim destruído, no espaço da Graça, que é o próprio Senhor, nenhuma outra impureza [_mala_] existirá.**
+
+**733. Uma vez que as outras duas impurezas [_karma_ e _maya_] crescem apenas dependendo do ego [_anava_], o [raiz] apego, quando o ego é destruído as outras duas não podem de forma alguma sobreviver.**
+
+**_Michael James_**: De acordo com _Saiva Siddhanta_, as três impurezas (malas) são _anava_, _karma_ e _maya_. A palavra _‘anava’_, que significa ego, é derivada da palavra _‘anu’_, que significa átomo, e a razão pela qual é assim chamada é explicada por Sri Muruganar abaixo.
+
+**_Sri Muruganar_**: A ilusão de identificar o corpo, que não é o Self, como 'Eu' é o apego interno ou primeiro apego. Como essa ilusão nos faz sentir o Self, que é de fato a consciência ininterrupta, como uma coisa semelhante a um átomo no corpo, ela é chamada _‘anavam’_.
+
+
+
+
+
+**55 Um único Ponto de Devoção**
+
+_(Ekagra-Bhakti Tiran)_
+
+**734. Aqueles que têm devoção unívoca para com Deus, como a agulha magnética [de uma bússola de navio] que sempre fica voltada para o norte, nunca ficarão perplexos e se desviarão no oceano do apego deste mundo.**
+
+**735. Aqueles que vivem no mundo, apegando-se de todo o coração a Deus, são como crianças que giram em torno de um pilar segurando-o firmemente. Como eles têm uma forte e inabalável fé em Deus, estão desprovidos de ego [_anava_] e, portanto, nunca cairão presa à ilusão do mundo.**
+
+**736. Se alguém fixa a mente firmemente naquela pura Suprema Realidade que permeia todas as atividades, não será afetado por qualquer número de atividades que são feitas.**
+
+**_Sadhu Om_**: Assim como a tela do cinema, que é a base que permeia todas as imagens, não é queimada por uma imagem de fogo ou encharcada por uma imagem de uma enchente, assim o Self, a Suprema Realidade que é a base que permeia todas as atividades, não é afetado por qualquer número de atividades. Portanto, uma vez que aquele que atende ao Self permanece como o próprio Self, ele não é afetado por qualquer número de atividades que possa parecer estar fazendo.
+
+**_Sri Muruganar_**: (i) As palavras 'todas as atividades' incluem tanto as atividades mundanas quanto as atividades religiosas. (ii) Como ele que se mantém na realidade [Self] perde seu senso de ação, diz-se 'ele não será afetado'. Portanto, embora [pareça como se] ele fizesse tudo, na verdade ele não faz nada.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
