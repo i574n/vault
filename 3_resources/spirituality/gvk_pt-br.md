@@ -5627,27 +5627,44 @@ _(Mano-Nigraha Tiran)_
 
 
 
+**917. Assim como o sol não pode ser visto em um céu densamente nublado, o próprio Self não pode ser visto em um céu mental que é escurecido por uma densa nuvem de pensamentos.**
 
+**918. Aquele que destruiu a mente é o imperador que cavalga no pescoço do elefante do supremo _Jnana_. Saiba com certeza que a agitação da mente é a única causa da miserável escravidão do cruel e feroz nascimento [e morte].**
 
+**_Sri Muruganar_**: Como a agitação da mente [_chitta-chalana_] é a raiz das misérias do nascimento, os pensamentos sozinhos são aqui ditos como escravidão. Como a própria natureza [Self] brilha assim que os pensamentos são destruídos, o que teve a mente assim destruída é glorificado de maneira figurativa como um imperador cavalgando no elefante do _Jnana_.
 
+**919. A clareza tranquila, desprovida de agitação mental, é o _samadhi_ que é essencial para a Liberação. [Portanto] tente sinceramente experimentar a consciência pacífica, a clareza do coração, destruindo a agitação enganosa [da mente].**
 
+**920. Sem a auto-realização [_atma-darsanam_], o ego não morrerá. Da mesma forma, sem a gloriosa morte da mente [ou ego], este cenário mundial de sonho miserável não desaparecerá. Saiba disso.**
 
+**_Sadhu Om_**: Se todas as misérias da vida devem chegar ao fim, a mente deve morrer. Se a mente deve morrer, a realização do Self deve ser alcançada. Portanto, apenas a auto-realização removerá todas as misérias.
 
+**921. [Ao confrontá-lo] ninguém pode destruir a [mente] natureza [de subir e saltar através dos sentidos]. [A única maneira de destruí-lo é] ignorá-lo como algo inexistente [ou seja, como uma mera falsa aparência]. Se você conhece e conscientemente permanece no Self, a base [para o surgimento e configuração] da [mente] natureza, a velocidade da [mente] natureza [ou seja, a velocidade com que ela se levanta e salta através dos sentidos] gradualmente chegará ao fim [já que não haverá ninguém para atendê-la].**
 
+**_Sadhu Om_**: Vali recebeu uma benção pela qual ganhou metade da força de qualquer oponente que o enfrentou, e, portanto, Ram teve que matá-lo sem enfrentá-lo cara a cara. Da mesma forma, se alguém tenta matar a _mind-maya_ confrontando-a diretamente [ou seja, lutando para controlar os pensamentos, a natureza ascendente e saltitante da mente], na verdade estará dando nova força a ela. Como a mente [ou seja, a natureza ascendente e saltitante da mente] é um objeto conhecido por nós, devemos tratá-la como uma segunda pessoa e ignorá-la, voltando nossa atenção para a primeira pessoa, o mero sentimento 'Eu'. A mente então perderá o poder da Graça [_anugraha-sakti_] e assim ela gradualmente se acalmará e morrerá por conta própria. Para uma explicação mais completa disso, consulte o capítulo 7 de _The Path of Sri Ramana_ - Parte Um, 2ª edição, páginas 101 a 105.
 
+**922. Ó pessoas que estão desejando e sofrendo tanto, sem conhecer de forma alguma os meios para destruir a mente para que ela não funcione mais, o meio é experimentar claramente que o visto [a aparência do mundo] e o observador [o _jiva_] não são nada além de si mesmo [o Self].**
 
+**_Michael James_**: Enquanto se experimenta uma diferença entre o observador e o observado, a mente não pode de forma alguma ser controlada. E até que se conheça a verdadeira natureza de si mesmo, não se pode experimentar que o observador e o observado são nada além de si mesmo e, portanto, não são diferentes. Portanto, o único meio de destruir a mente e assim controlá-la efetivamente é conhecer a verdadeira natureza de si mesmo.
 
+Em algumas traduções, este verso foi interpretado para significar que, para acabar com a inquietação da mente, deve-se "considerar todas as coisas que são perceptíveis e o percebedor como o Self" (veja _Guru Ramana Vachana Mala_, v. 207). No entanto, essa interpretação está errada, porque a menos que se conheça a verdadeira natureza do Self, é impossível considerar todas as coisas como Self. Tentar imaginar que tudo é Self seria apenas uma _bhavana_ mental, e portanto não seria um meio eficaz de fazer a natureza inquieta da mente se acalmar. A verdadeira experiência do conhecimento do Self é o único meio de acabar com a inquietação da mente.
 
 
 
 
 
 
+**923. Como ornamentos [vistos] em ouro, como água [vista] em uma miragem, e como uma cidade dos sonhos com ameias, tudo o que é visto não é nada além do Self. Tomá-los como sendo diferentes do Self está errado.**
 
+**_Michael James_**: Assim como na inspeção, os muitos tipos de ornamentos são encontrados como sendo nada além de ouro, a suposta água é encontrada como nada além de calor cintilante, e a cidade dos sonhos é encontrada como nada além da imaginação do adormecido, então, quando a verdade é realizada, a falsa aparência do mundo é encontrada como sendo nada além do Self.
 
+**8 A Mente Morta**
 
+_(Mrita Mana Tiran)_
 
+**924. Eu declaro com certeza que mesmo quando a mente é extinta e não funciona mais na forma de pensamentos, ainda existe uma realidade [Eu sou] como a morada de _Jnanananda_ [a bem-aventurança do verdadeiro conhecimento], que estava [anteriormente] escondida [como 'Eu sou este corpo'] como se fosse limitada pelo tempo e espaço.**
 
+**_Sadhu Om_**: Aqui Sri Bhagavan afirma que mesmo após a aniquilação do primeiro pensamento que brilhava todo esse tempo como 'Eu sou este corpo', existe um Self brilhando como _sat-chit-ananda_, 'Eu sou Eu'. Algumas escolas de Budismo dizem: "Finalmente não restará nada como Self; apenas um vazio [_sunya_] estará lá". Mas Sri Bhagavan refuta essa crença errada e declara enfaticamente a partir de sua própria experiência, "Certamente existe uma realidade [_sat-vastu_], que é _Jnanananda_; esse estado não é um vazio [_sunya_] mas um todo perfeito [_purna_]". Compare aqui o verso 20 de _Upadesa Undiyar_, "Onde 'Eu' [o ego-self] morre, aquele Único [o verdadeiro Self] brilha espontaneamente como 'Eu-Eu'; isso sozinho é o todo [_purna_]", e o verso 12 de _Ulladu Narpadu_, "O Self é o verdadeiro conhecimento; ele não é um vazio [embora desprovido de todo conhecimento objetivo]".
 
 
 
@@ -5655,60 +5672,92 @@ _(Mano-Nigraha Tiran)_
 
 
 
+**925. Aquele que é sempre alcançado [_nitya-siddha_] e que brilha pervadindo em todos os lugares, desprovido de [as diferenças tais como] 'agora' ou 'então', 'aqui' ou 'lá', 'existindo' ou 'não existindo', é o puro Siva.**
 
+**9 Onisciência**
 
+_(Mutrunarvu Tiran)_
 
+**926. Apenas o conhecimento absoluto que brilha indiviso porque não conhece nada existente além do Self, e não o conhecimento objetivo que sabe até [tudo o que acontece em todos] os três tempos [passado, presente e futuro], é a suprema onisciência. Saiba assim.**
 
+**_Sadhu Om_**: A habilidade de conhecer todas as outras coisas, como os acontecimentos do passado, presente e futuro, e a habilidade de dominar todas as sessenta e quatro artes, são glorificadas pelas pessoas como 'Onisciência' ou _‘sarvajnatvam’_. No entanto, uma vez que Sri Bhagavan diz no verso 13 de _Ulladu Narpadu_, "Conhecimento da multiplicidade é ignorância [_ajnana_]," e uma vez que Ele diz no verso 26 de _Ulladu Narpadu_, "Verdadeiramente o ego é tudo," todas essas coisas que são glorificadas como 'onisciência' devem de fato ser entendidas como mero conhecimento objetivo do ego, e portanto, como nada mais do que ignorância. No verso 13 de _Ulladu Narpad_u Sri Bhagavan diz, "Aquilo que sabe [multiplicidade ou alteridade] não pode ser verdadeiro conhecimento," porque na verdade não existe outra coisa para conhecer ou fazer conhecer. Portanto, o autoconhecimento não-dual que brilha por si mesmo como o todo [_purna_] sem conhecer qualquer outra coisa, é a única verdadeira onisciência ou _sarvajnatvam_.
 
+**927. Já que mesmo com seu pequeno conhecimento tantos males e misérias já estão repletos naqueles cujas mentes não se acalmaram, se eles ganharem onisciência eles não obterão nenhum benefício, mas apenas um aumento na densa escuridão da ilusão que já existe dentro deles.**
 
+**_Sadhu Om_**: Um aspirante cuja mente não se acalmou já estará confuso com todo o conhecimento objetivo que ele reuniu e assim estará sufocando, incapaz de suportar o pesado fardo de seus pensamentos oscilantes. Portanto, se ele for capaz de adquirir mais conhecimento, como o conhecimento de todos os eventos acontecendo em todos os tempos e todos os lugares, ele não estará ainda mais confuso e não estará sobrecarregado com ainda mais ondas de pensamentos? Portanto, não será impossível para ele aliviar-se de todos os pensamentos e permanecer pacificamente no Self? Portanto, essa suposta onisciência [o conhecimento de todos os objetos alienígenas] não é apenas inútil, mas também muito prejudicial.
 
 
 
 
 
 
+**928. A onisciência consistindo em uma inundação [de conhecimento relativo] é real apenas para aquele que, em vez de se conhecer como aquele que meramente existe, se engana ao se considerar um conhecedor [de outras coisas] e que assim vê o enganoso espetáculo [deste mundo]. Mas para um _Jnani_, que não tem tal ilusão, a onisciência [consistindo em tantos conhecimentos] é nada mais do que um conhecimento lunático.**
 
+**929. Só quando se está iludido [pensando] que se é o conhecedor [a mente], sente-se 'Eu sou um de pouco conhecimento'. Mas quando o verdadeiro conhecimento surge, a onisciência também perecerá completamente como o pouco conhecimento.**
 
+**_Sadhu Om_**: O que permanece como o conhecimento natural de nossa mera existência após o _Jnana-pralaya_, a grande dissolução na qual tudo é destruído, é a realidade. Portanto, assim como o pouco conhecimento, os vários tipos de onisciência também devem ser destruídos naquele momento. Assim, no estado supremo de autoconhecimento, nada restará exceto o único conhecimento real, o sentimento singular da primeira pessoa 'Eu sou'.
 
+**930. Os _Vedas_ glorificam Deus como 'onisciente' apenas para aqueles que se consideram pessoas de pouco conhecimento. [Mas] quando examinado de perto, [entender-se-á que] uma vez que Deus é por natureza o real Todo [do qual nenhum 'outro' pode existir para Ele saber], Ele não sabe de nada.**
 
+**931. “Visto que as experiências de ver [ouvir, provar e assim por diante] são, quando vivenciadas, as mesmas para os _Muktas_ [como para os outros], e visto que eles [os _Muktas_] estão assim experimentando as muitas diferenças que aparecem como resultado de ver [ouvir e assim por diante], eles estão experimentando a não-diferença [mesmo enquanto veem essas diferenças]” – dizer isso é errado.**
 
+**_Sadhu Om_**: As pessoas têm muitos conceitos errados sobre o estado de um _Jnani_ ou _Jivanmukta_, e um desses equívocos é refutado aqui. "O que as pessoas veem como água, o _Jivanmukta_ também vê como água, e o que elas veem como comida, Ele também vê como comida. Portanto, em Sua experiência dos objetos dos sentidos, o _Jivanmukta_ é o mesmo que outras pessoas. Mas mesmo enquanto o _Jivanmukta_ assim vê essas diferenças, Ele vê a não-diferença nelas" – não há muitos _pandits_ e palestrantes que falam e escrevem assim, mesmo que eles mesmos não tenham experiência de _Advaita_, mas apenas tenham lido sobre isso nos livros? Mas quem é a autoridade adequada para dizer qual é a experiência real de um _Jivanmukta_? Apenas um verdadeiro _Jivanmukta_! Assim Bhagavan Sri Ramana, que realmente experimentou a realidade e que é o verdadeiro Loka Maha Guru, declara neste verso que tais afirmações estão erradas, e no próximo verso Ele explica como e por que estão erradas. Consulte também o verso 1180.
 
 
 
 
 
+**932. O _Mukta_ é visto como se também estivesse vendo as muitas [diferentes] formas apenas na perspectiva iludida dos observadores que veem as muitas diferenças; mas [na verdade] Ele não é o vidente [ou qualquer coisa em absoluto].**
 
+**_Sadhu Om_**: O verso 119 desta obra deve ser lido novamente aqui. Enquanto se vê a si mesmo como um indivíduo que vê o mundo das diferenças, não se pode deixar de ver o _Jnani_ da mesma forma como um indivíduo que vê diferenças [veja _Ulladu Narpadu_ versículo 4, "Pode a visão ser diferente do olho?"] Mas, como o _jnani_ é de fato nada além do próprio _Jnana_ sem corpo e sem individualidade, vê-lo como um vidente e acreditar que até Ele está vendo diferenças como si mesmo, é verdade apenas na perspectiva dos _ajnanis_. A verdade absoluta, no entanto, é que o _Jnani_ não é um vidente e que Ele nunca vê diferenças, pois, como Sri Bhagavan diz no versículo 13 de _Ulladu Narpadu_, "O conhecimento da multiplicidade é apenas ignorância [_ajnana_]".
 
+Assim, nos dois versos acima, Sri Bhagavan refuta claramente a ideia errada expressa na nota ao final da introdução [_bhoomika_] para _Sat-Darshana-Bhashya_, 6ª ed. pp. 35 a 38, ou seja, a ideia de que um _Jnani_ ou alma libertada retém Sua individualidade apesar da destruição do ego, e que Ele "percebe a diversidade na unidade e experimenta a unidade na diversidade" [compare aqui pp. 160 a 164 de _Maha Yoga_, 7ª ed.]. Sobre esta teoria errônea do _bheda-abheda_ ou unidade na diversidade, Sri Bhagavan costumava dizer que se a menor diferença ou diversidade é percebida, significa que o ego ou individualidade está lá, então se a diferença é experimentada, a não-diferença ou unidade seria meramente uma proposição teórica e não uma experiência real [veja _The Golden Jubilee Souvenir_, 2ª ed., p. 295, e _The Mountain Path_, outubro de 1981, p. 224].
 
+**933. É apenas devido ao hábito errado de atender às segundas pessoas que se é iludido [pensando] que se tem pouco conhecimento. Quando se desiste dessa atenção para as segundas pessoas e conhece a verdade do próprio Eu através de _vichara_, o pequeno conhecimento morrerá e brilhará como o pleno [ou seja, como o pleno conhecimento ou verdadeira onisciência].**
 
 
 
 
 
 
+**934. Conhecer diretamente o Eu não-dual, que por causa da perspectiva errada aparece como todas estas muitas [nomes e] formas, [o universo], e nada mais, é [verdadeira] experiência.**
 
+**_Sadhu Om_**: Não existem algumas pessoas iludidas que pensam que este mundo foi erroneamente criado por Deus como uma mistura de dor e prazer, e que, portanto, tentam através de alguns tipos de yoga erradicar a dor e estabelecer o prazer e assim tornar o mundo um céu? Para apontar que seu modo de pensar é errado e seu objetivo é pura tolice, Sri Bhagavan começa este verso com as palavras "Por causa da sua perspectiva errada", implicando assim: "É apenas por causa da sua perspectiva errada que este mundo aparece para você dessa maneira; Deus nunca o criou assim; os erros que você vê no mundo são resultado de _drishti-dosha_ [um defeito na sua perspectiva] e não de _srishti-dosha_ [um defeito na criação de Deus]". Portanto, Sri Bhagavan ensina que a verdadeira onisciência ou _sarvajnatvam_ é apenas a remoção da perspectiva errada [_dosha-drishti_] através da obtenção de _Jnanadrishti_ [a perspectiva de _Jnana_].
 
+**935. Se todas as imagens mentais [que aparecem] no sonho não estivessem [já] habitando dentro de [um], elas não poderiam ser vistas. Sendo assim, para alcançar a experiência do Eu, no qual habitam todas estas [imagens mentais que aparecem] no estado de vigília, só isso é [verdadeira] onisciência.**
 
+**_Michael James_**: Tudo que se vê em sonho é apenas uma projeção dos _vasanas_ já habitando dentro de si. Da mesma forma, tudo que se vê mesmo neste estado de vigília é apenas uma projeção dos próprios _vasanas_ (veja o verso 84). Portanto, para conhecer tudo, basta conhecer a si mesmo. No entanto, uma vez que só o Eu (o Self) realmente existe e uma vez que o chamado 'tudo' é realmente inexistente e irreal, não haverá 'tudo' a ser conhecido quando se conhece a si mesmo. Como Sri Bhagavan diz na segunda linha do terceiro verso de _Atmavidya Kirtanam_, "O que [mais] há para conhecer depois que se conhece a si mesmo?"
 
 
 
 
 
 
+**936. Se não se adotar a vida iludida da civilização moderna, se rejeitar a inclinação para os conhecimentos mundanos inúteis [como ciências, artes e idiomas], e se eliminar o sentido de diferenciação [_bheda-buddhi_] entre Siva [ou _Paramatma_] e a alma [ou _jivatma_], então apenas o verdadeiro significado de Siva _Jnana Bodham_ brilhará.**
 
+**_Michael James_**: As palavras ‘_Siva Jnana Bodham_’ aqui dão dois significados; eles podem ser tomados para denotar um texto _Advaitic_ com esse nome, ou podem ser tomados para significar o conhecimento de _Siva_, a realidade suprema.
 
+**10 O Estado Transcendendo o Quarto**
 
+_(Turiyatita Tiran)_
 
+**937. Nos _Jnanis_, que destruíram o ego, os três estados [vigília, sonho e sono], que eram vistos anteriormente, desaparecerão, e o nobre estado de _turiya_ [o ‘quarto’] brilhará gloriosamente neles como _turiyatita_ [o estado transcendendo o ‘quarto’].**
 
+**938. O estado de _turiya_, que é o Self, puro _sat-chit_, é ele próprio o não-dual _turiyatita_. Saiba que os três estados são meras [falsas] aparências, e que o Self é a base de apoio para eles [ou seja, a base na qual eles aparecem e desaparecem].**
 
 
 
 
 
+**939. Só seria possível se os outros três estados [vigília, sonho e sono] fossem reais que o sono acordado [_jagratsushupti_], o puro _Jnana_, seria o quarto? Como esses três estados são [achados para ser] irreais em frente a _turiya_, isso [_turiya_] é o único estado; saiba [portanto] que isso [_turiya_] é ele mesmo _turiyatita_.**
 
+**_Michael James_**: As ideias expressas nos três versos acima foram resumidas por Sri Bhagavan no seguinte verso, que também é o verso 32 de _Ulladu Narpadu Anubandham_.
 
+**B18. Só é chamado de _turiya_ [o ‘quarto’] para aqueles que experimentam a vigília, o sonho e o sono, o estado do sono acordado, que está além [desses três estados]. Como aquele _turiya_ é o único que realmente existe e como os três estados aparentes não existem, ele [_turiya_] é ele mesmo _turiyatita_.**
 
+**_Sadhu Om_**: A palavra _‘turiya’_ significa literalmente o ‘quarto’. Como apenas os três estados de vigília, sonho e sono estão sob a experiência de todas as pessoas, o estado de _Jnana_ ou sono acordado [_jagratsushupti_], que não é nenhum desses três estados, é chamado de ‘quarto’ pelos _sastras_. Mas Sri Bhagavan pergunta aqui: “Por que esse estado deveria ser chamado de quarto ou _turiya_ quando, no momento da experiência desse estado, que é o estado eterno do despertar do Eu, os outros três estados [vigília, sonho e sono] são encontrados para ser verdadeiramente inexistentes?” Então esse estado não deveria ser considerado como o primeiro? Não, seria errado até mesmo considerá-lo como o primeiro, porque nenhum segundo estado existirá para ser experimentado depois que este estado, o único estado real, é experimentado. Portanto, em vez de chamá-lo de primeiro ou de quarto, ele realmente deveria ser chamado apenas de ‘_atita_’ [o estado que transcende tudo, _turiyatita_] – tal é o _upadesa_ dado neste verso.
 
+Mesmo os três estados de _jiva_ de vigília, sonho e sono, não são realmente três; são apenas dois, ou seja, _sakala_ [o estado de funcionamento da mente] e _kevala_ [o estado de não funcionamento da mente]. Mesmo esses dois têm apenas realidade relativa [_vyavakarika satya_]. Na verdade, o sono é a natureza de _turiya_ ou _turiyatita_. Para uma explicação mais completa deste ponto, leia as páginas 144 a 145 de _The Path of Sri Ramana_ - Parte Um, 2ª ed. Consulte também os versos 460 e 567 desta obra, e a resposta à questão 9 do capítulo 4 de _Upadesa Manjari_.
 
 
 
@@ -5716,30 +5765,151 @@ _(Mano-Nigraha Tiran)_
 
 
 
+**940. Seja chamado de um sono profundo desprovido de vigília, ou de uma única vigília intocada pelo sono que se insinua, caberá adequadamente ao venerável _Jnana-turiya_.**
 
+**_Sadhu Om_**: Este estado real pode ser adequadamente descrito de muitas maneiras diferentes, como sono vigilante, vigília sonolenta, sono não desperto, vigília não dormindo, morte sem nascimento ou nascimento sem morte.
 
+### 11 Akhanda Vritti
 
+_(Akhanda Vritti Tiran)_
 
+**941. Uma vez que cada _vritti_ [movimento da mente] é um fragmento [_khanda_], o grande _Akhanda_ [a realidade não fragmentada ou ininterrupta] é apenas um estado de _nivritti_ [um estado desprovido de movimento]. [Portanto] dizer que no estado supremo há _Akhandakara-vritti_ [movimento em uma forma ininterrupta] é como falar de um rio na forma de um oceano.**
 
+**_Sadhu Om_**: Para se adequar à pobre capacidade de compreensão de mentes imaturas, muitos termos inadequados são usados ​​nas escrituras. Sri Bhagavan às vezes apontava quão inapropriados são alguns desses termos escriturais, incluindo o termo _‘Akhandakara-vritti’_, que literalmente significa ‘movimento [_vritti_] em uma forma não fragmentada ou ininterrupta’. Este termo às vezes é usado para denotar o estado final de perfeita permanência no Eu, e também às vezes é usado para denotar certas práticas, como a meditação sobre o _Mahavakya_ 'Eu sou _Brahman_'. No entanto, Sri Bhagavan revela neste verso que este termo não se adequa nem ao estado de prática nem ao estado de realização, pois o estado de prática é um estado de _khanda_ [fragmentação], enquanto o estado de realização é um estado de _nivritti_. No estado supremo de _Akhanda_ [não fragmentação], não pode haver espaço para qualquer movimento ou _vritti_. Quando um rio se funde no oceano, ele perde sua identidade ou individualidade separada como um rio e se torna um com o oceano; portanto, seria inadequado chamá-lo de ‘rio na forma de um oceano’ [_samudrakara-nadi_]. Da mesma forma, quando todos os _vrittis_ [movimentos da mente] incluindo o primeiro _vritti_, o _aham-vritti_ ou pensamento ‘Eu’, se fundiram no estado ininterrupto de conhecimento do Eu, eles perdem sua identidade separada como _vrittis_ e se tornam um com aquele estado ininterrupto; portanto, em vez de chamar esse estado ininterrupto como mero _‘Akhanda’_, é inadequado tentar reter o termo _‘vritti’_ e chamar esse estado de um _‘vritti_ em uma forma ininterrupta’ [_akhandakara-vritti_].
 
 
 
 
+**12 Rompimento do Nó**
 
+_(Granthi-Bheda Tiran)_
 
+**942. O estado em que a mente não se despedaça de dor, no qual a mente não se imerge no prazer e no qual ela permanece igualmente indiferente e pacífica [tanto na dor quanto no prazer], é o sinal de _granthi-bheda_ [o rompimento do nó de identificação com o corpo].**
 
+**943. Não pensar sobre o que aconteceu no passado e não pensar sobre o que virá [no futuro], mas permanecer como uma testemunha desapegada mesmo para tudo que está acontecendo [no presente] e estar feliz por causa da abundante paz, é o sinal de _granthi-bheda_.**
 
+**944. Quaisquer pensamentos que possam vir, sua natureza é tal que eles não podem existir sem o indispensável Eu; portanto, não sucumbir à desatenção [_pramada_] tal como [fará alguém sentir], "Ai, o estado do Eu [permanência no Eu ou atenção ao Eu] foi perdido no caminho", também é isso [ou seja, também é o sinal de _granthi-bheda_].**
 
+**_Michael James_**: Mesmo que pensamentos devam surgir, o _Jnani_, (aquele em quem o nó ou _granthi_ foi rompido) saberá através de Sua inabalável experiência do Eu que eles não podem existir sem o Eu, e portanto qualquer quantidade de pensamentos não fará Ele sentir que Ele perdeu Seu controle sobre a atenção ao Eu ou permanência no Eu. Uma pessoa que pensa que as ondas são diferentes do oceano sentirá ao ver as ondas que elas estão velando o oceano, enquanto uma pessoa que sabe que as ondas não são outras que o oceano nunca se sentirá assim. Da mesma forma, o _ajnani_, que sente os pensamentos como algo diferente de si mesmo, sentirá que os pensamentos distraem sua atenção do Eu, enquanto o _Jnani_, que sabe que os pensamentos não são outros que Ele mesmo (ou seja, que sabe que os pensamentos não têm existência independente, mas parecem existir apenas dependendo de Sua própria existência), nunca sentirá que os pensamentos distraíram Sua atenção do Eu.
 
 
 
 
 
+**13 Ter Feito o Que Deveria Ser Feito**
 
+_(Krita-Kritya Tiran)_
 
+**945. Quem quer que tenha quaisquer experiências, onde quer que seja e através de quaisquer coisas, todas essas experiências são, após escrutínio, nada além de uma parte [refletida] da experiência do Eu.**
 
+**_Sadhu Om_**: Todas as experiências objetivas são nada mais que um reflexo falso da única verdadeira experiência do Eu, 'Eu sou'. Refira-se aqui ao verso 1074 desta obra, à sexta resposta no capítulo 2 de _Upadesa Manjari_, e às páginas 19 a 21 de _The Path of Sri Ramana_ – Parte Dois, 1ª ed.
 
+**946. Uma vez que o Eu atrai para dentro o primeiro pensamento [a mente], o experimentador [de felicidade], afoga-o no coração e não permite que sua cabeça se levante. Sua forma é pura _sukhatita_ [aquilo que transcende a felicidade]; chamá-Lo de _sukha-swarupa_ [a forma da felicidade] é errado.**
 
+**_Sadhu Om_**: Aquele que conhece o par 'felicidade e miséria' [_sukha-duhkha_] é apenas a mente. O Eu transcende todos os pares e não é afetado por eles. Uma vez que no momento da realização do Eu, a mente, que surge para classificar 'isso é felicidade' ou 'isso é miséria', não é permitido levantar sua cabeça nem mesmo um pouco, mas é arrastada para dentro e afogada no oceano do conhecimento do Eu [na consciência absoluta, que é mera existência], seria mais adequado chamar o Eu de 'aquele que transcende a felicidade' [_sukhatita_] ao invés de 'a forma da felicidade' [_sukha-swarupa_].
+
+**947. Depois de questionar e assim conhecer que o Eu é 'Eu sou isso [o Eu que transcende até mesmo a felicidade]', desejando que prazer dual para quem aquele verdadeiro e grande _Jnani_ teria anseio mental?**
+
+**_Sri Muruganar_**: Uma vez que Ele [o _Jnani_] é verdadeiramente o Eu, a bem-aventurança ininterrupta [_akhanda-ananda_], e uma vez que nem qualquer felicidade nem qualquer _jiva_ existem separados Dele, é dito "desejando que prazer dual para quem", e como nenhuma dor aparecerá sem desejo, é dito "desejando o que Ele teria anseio mental".
+
+
+
+
+
+
+**948. As injunções védicas que dizem: "Você tem que fazer isso", não se aplicam aos verdadeiros _Jnanis_, nos quais a escura ilusão de ser o executor está morta. A razão pela qual se diz [na ‘_Karma Kanda_’ dos _Vedas_] que mesmo os _Jnanis_ têm que realizar muitos _karmas_, é apenas para proteger o _vaidika dharma_ [e não para obrigar os _Jnanis_ a realizar _karmas_].**
+
+**_Michael James_**: Algumas escolas de pensamento acreditam que mesmo os _Jnanis_ têm que fazer algumas boas ações (_karmas_), por exemplo, que eles devem realizar sacrifícios (_yajnas_) para o bem-estar do mundo, ou que eles devem ajudar Deus a governar o universo. Tais coisas também são ditas na ‘_Karma Kanda’_ (aquela parte dos _Vedas_ que ensina ações ritualísticas para a realização de desejos), mas são ditas apenas para acalmar as mentes das pessoas ignorantes e para incentivá-las a seguir o caminho dos _karmas_, de modo que a indisciplina não floresça na sociedade. No entanto, uma vez que um _Jnani_ está desprovido de qualquer sentido de executor, é apenas na perspectiva dos _ajnanis_ que Ele pode às vezes parecer estar realizando tais bons _karmas_. Quando Sri Bhagavan foi questionado por devotos imaturos se os _Jnanis_ têm que escolher fazer algum tipo de trabalho ou _karma_, até Ele às vezes costumava responder: "Sim, alguns _Jnanis_ podem assumir um trabalho [_karma_], mas não todos" (veja _Maharshi’s Gospel_, Livro Um, cap.7, p. 39); no entanto, Ele deu tais respostas apenas para se adequar ao entendimento imaturo de tais devotos e para acalmar suas mentes.
+
+**949. Uma vez que não há nada a ser alcançado além do que já alcançaram, para os _Sukhatitars_ sem ego [aqueles que transcenderam a felicidade] não há nada mais a fazer. Uma vez que essa é a natureza deles, eles são os únicos que alcançaram o objetivo, tendo feito [tudo o que deveria ser feito].**
+
+**_Sadhu Om_**: Compare aqui o verso 15 de _Upadesa Undiyar_, "Para o grande Yogi que atingiu a realidade, tendo destruído sua forma-mente, não há uma única ação [restante a ser feita] ...," e o verso 31 de _Ulladu Narpadu_, "O que resta para Ele fazer que assim desfruta da bem-aventurança do Eu, que surgiu com a destruição de si mesmo [a mente ou o ego]...”.
+
+**_Sri Muruganar_**: O estado de ausência do ego é a pura quietude; ele é o que é chamado de 'aquele que transcende a felicidade' [_anandatita_] e 'aquele que transcende o quarto' [_turiyatita_]. Uma vez que para aqueles que alcançaram esse estado, que é _paratpara_ [o mais alto dos altos], não há mais nenhum estado que possa ser alcançado por esforço, eles são os únicos que são chamados de 'aqueles que fizeram o que deveria ser feito' [_krita-krityars_]. "Um pote cheio pode conter mais água? [Da mesma forma] como e para que aqueles que alcançaram o Silêncio bem estabelecido podem se esforçar?" canta Tayumanuvar.
+
+
+
+
+
+
+
+**950. Se alguém desaparecer sem o próprio esforço em _Sadasiva_, o próprio Ser, como o próprio Ser, então permanecerá em paz e bem-aventurança como alguém que já fez tudo e que não tem mais nada a fazer.**
+
+**951. Os _Jnanis_, que alcançaram a plenitude da experiência do Ser, saberão de algo além [do Ser]? Como pode a mente deludida e limitada imaginar a suprema bem-aventurança deles, que transcende a aparente dualidade [de felicidade e miséria]?**
+
+**_Sadhu Om_**: Compare aqui o versículo 31 de _Ulladu Narpadu_, "... Uma vez que Ele [o _Jnani_] não sabe nada além do Ser, quem pode e como conceber qual é o estado dele?" É impossível determinar o estado de um _Jnani_, e é errado tentar fazê-lo. Sua experiência de suprema bem-aventurança, que é _sukhatita_ [transcendendo até mesmo a felicidade], não pode ser medida nem mesmo por pessoas com intelectos muito aguçados, porque, como é possível para a mente julgar um estado de bem-aventurança que só brilhará após a destruição da mente?
+
+**14 A Inexistência da Miséria**
+
+_(Dukha-Abhava Tiran)_
+
+**952. A própria realidade [Ser], que brilha dentro de todos como o Coração, é o oceano de bem-aventurança pura. Portanto, a miséria, que é irreal como a azulidade do céu, realmente não existe exceto na mera imaginação.**
+
+**_Sadhu Om_**: Neste capítulo, a verdade proclamada pelo Sábio Appar, ou seja, "A bem-aventurança é a única existente, a miséria é sempre inexistente", é bem explicada. O que realmente existe é apenas a bem-aventurança, nossa verdadeira natureza. No passado, presente e futuro nunca houve e nunca haverá tal coisa como 'miséria' em absoluto. A dualidade 'prazer e dor' é uma ilusão ou imaginação que parece existir apenas por causa da perspectiva defeituosa do ego, cujo surgimento é em si irreal. Portanto, a miséria só pode ser tão real quanto o ego. Como o ego ou _jiva_ é uma falsa aparência que não tem existência real, as misérias que aparecem na perspectiva defeituosa do ego também são uma falsa aparência, como a aparência da cor azul vista no céu incolor.
+
+
+
+
+**953. Como a própria realidade, o sol da _Jnana_ que nunca viu a escuridão da ilusão, brilha por si mesma como felicidade, a confusão da miséria aparece apenas por causa do sentido irreal de individualidade [_jiva-bodha_]; mas na verdade ninguém passou por tal coisa [como 'miséria'].**
+
+**_Sadhu Om_**: Suponha que um homem que está dormindo felizmente, tendo feito uma refeição completa, sonha que está vagando sofrendo de fome. Quando ele acorda, ele não percebe que a fome e a miséria que ele experimentou no sonho são, na verdade, irreais e inexistentes? Da mesma forma, quando alguém acorda do sono do esquecimento do Ser, no qual o sonho da vida atual está ocorrendo, percebe-se que todas as misérias que se experimentou como _jiva_ são, na verdade, irreais e inexistentes [ver versículo 1 de _Ekatma Panchakam_]. Consulte também o exemplo dado por Sri Bhagavan no versículo 30 de _Ulladu Narpadu Anubandham_, "... embora deitado imóvel aqui [em sua cama], [um homem em sonho] sobe uma colina e cai num precipício". O ensinamento de Sri Bhagavan é que a miséria é irreal, sendo meramente mental.
+
+Ao longo deste capítulo, Sri Bhagavan expõe a verdade de que a miséria é inexistente para fortalecer a _titiksha_ [a tolerância ou capacidade de suportar a miséria] nos aspirantes, para que eles não se desencorajem e abandonem sua _sadhana_ por causa das várias misérias que ocorrem em sua vida.
+
+**954. Se [através da investigação 'Quem sou eu?'] alguém examinar [e conhecer] o próprio Ser, que é bem-aventurança auspiciosa, não haverá miséria alguma em sua vida. É devido à ilusão maligna que alguém sofre através da noção de que o corpo, que nunca é o próprio ser, é 'eu'.**
+
+**955. Aqueles que não se conhecem como o Ser [não-dual] único perecerão diariamente, sofrendo em vão de medo [porque veem o mundo como algo diferente de si mesmos]. [Portanto] destruindo a noção 'eu sou o corpo', a raiz [de toda miséria], através da firme compreensão de seu verdadeiro Ser, alcançada pela investigação 'Quem sou eu?', atinja o estado de não-dualidade [_advaita_].**
+
+
+
+
+
+**956. Se alguém se apegar apenas ao conhecimento [do próprio Ser] como o verdadeiro refúgio, então a miséria do nascimento [ou o nascimento da miséria], que é causada pela ignorância, chegará ao fim.**
+
+**15****A Onipresença do Sono**
+
+_(Sushupti Vyapaka Tiran)_
+
+**957. Não desanime e perca sua vitalidade mental pensando que [o estado de experimentar] o sono no sonho ainda não foi obtido. Se a força de [experimentar] o sono no atual estado de vigília for obtida, então [o estado de experimentar] o sono no sonho também será obtido.**
+
+**_Sadhu Om_**: As palavras 'sono no atual estado de vigília' [a_navum nanavil sushupti_] denotam o estado de sono vigilante [_jagrat-sushupti_] ou _turiya_, o estado de não experimentar diferenças durante a vigília. Para atingir esse estado, os aspirantes têm que fazer esforços no estado de vigília. No entanto, alguns aspirantes costumavam perguntar a Sri Bhagavan, "Também temos que fazer tais esforços no sonho, para que possamos atingir o estado de não experimentar diferenças mesmo durante o sonho?" Esta dúvida é respondida por Sri Bhagavan neste versículo.
+
+O sentimento 'Eu sou este corpo' [_dehatma-buddhi_] surge no corpo sutil durante o sonho apenas por causa do hábito de identificar o corpo bruto como 'Eu' durante a vigília. Portanto, se alguém pratica a auto-investigação no estado de vigília e, assim, erradica o _dehatma-buddhi_ [o hábito de identificar um corpo como 'Eu'] neste estado, isso por si só será suficiente para erradicar o _dehatma-buddhi_ no sonho também. Portanto, Sri Bhagavan aconselha no próximo versículo que, até que o _dehatma-buddhi_ seja completamente erradicado mesmo no sonho, não se deve abandonar a auto-investigação no estado de vigília. Consulte aqui o quarto parágrafo do primeiro capítulo de _Vichara Sangraham_, onde Sri Bhagavan diz: "Todos os três corpos [bruto, sutil e causal] constituídos pelos cinco invólucros estão incluídos no sentimento 'Eu sou o corpo'. Se esse [isto é, a identificação com o corpo bruto] for removido, todos [isto é, a identificação com os outros dois corpos] serão automaticamente removidos. Já que [a identificação com] os outros corpos [o sutil e o causal] sobrevivem apenas dependendo deste [a identificação com o corpo bruto], não há necessidade de removê-los um por um."
+
+As palavras _‘kanavil sushupti’_ [sono no sonho], que são usadas na primeira e última linhas deste verso, também podem ser entendidas como 'sono sem sonho', caso em que o seguinte significado alternativo pode ser dado: "Não desanime e perca sua vitalidade mental pensando que o sono sem sonho ainda não foi obtido. Se a força de [experimentar] o sono no estado de vigília atual for obtida, então o sono sem sonho também será obtido."
+
+
+
+
+
+**958. Até que o estado de sono na vigília [ou seja, o estado do sono consciente ou _jagrat-sushupti_] seja atingido, a autoinvestigação não deve ser abandonada. Além disso, até que o sono no sonho também seja atingido, é essencial persistir nessa investigação [ou seja, continuar tentando se apegar ao mero sentimento ‘Eu’].**
+
+**_Michael James_**: As ideias nos dois versos acima foram resumidas por Sri Bhagavan no seguinte verso.
+
+**B19. O estado do sono na vigília [_jagrat-sushupti_] resultará do constante escrutínio da investigação de si mesmo. Até que o sono permeie e brilhe na vigília e no sonho, continue essa investigação.**
+
+**16 Sono Consciente**
+
+_(Arituyil Tiran)_
+
+**959. Ó homens que, capturados pelas perigosas armadilhas do mundo e atingidos pelas afiadas flechas das cruéis misérias, estão sofrendo grandemente e estão vagando em busca da realização da suprema felicidade, o sono no qual não há perda de consciência [ou seja, o sono consciente ou _jagrat-sushupti_] é a única felicidade imperecível.**
+
+**_Sadhu Om_**: ‘O sono no qual não há perda de consciência’ [_arivu-azhiya tukkam_] significa apenas o estado do Autoconhecimento. Aqui, consciência [_arivu_] significa _prajna_ ou o conhecimento da própria existência, e não o conhecimento de outras coisas. Aquilo que conhece outras coisas não é o verdadeiro conhecimento [veja o verso 12 de _Ulladu Narpadu_]. O estado que chamamos de sono é o estado em que não conhecemos outras coisas, nem mesmo o corpo. O estado que chamamos de vigília é o estado em que, junto com o conhecimento da própria existência [Eu sou], também há conhecimento de outras coisas. O estado em que permanecemos conscientes apenas de nossa própria existência, como na vigília, mas em que a mente [o conhecedor de outras coisas] não surge, como no sono, é chamado de estado de sono consciente ou sono desperto. Como nenhuma outra coisa é conhecida neste estado, é um sono; e como a própria existência está brilhando claramente lá, é um estado de consciência ou vigília.
+
+
+
+
+
+
+**960. Aqueles que estão dormindo, tendo abandonado o hábito de [sair através] dos sentidos enganosos e tendo se estabelecido no lótus do coração, são aqueles que estão acordados na morada do conhecimento real [_meyjnana_]. Os outros são aqueles que estão adormecidos, imersos na densa escuridão deste mundo irreal [_poy-jnala_].**
+
+**17 Conhecimento Não-Dual**
+
+_(Advaita Jnana Tiran)_
+
+**961. Quando o 'Eu' morreu por _Sivaya Namah_ [completa obediência ao Senhor Siva] e está queimando no fogo da devoção inobstruída e ardente [_bhakti_], então na chama da auto-experiência brilhará a verdadeira clareza do infalível _Sivoham_ [a experiência 'Eu sou Siva'].**
+
+**_Sadhu Om_**: _'Sivoham'_ é o estado final de experiência que resulta da morte do ego. Mas o ego nunca morrerá simplesmente fazendo _japa_ de ou meditando _'Sivoham, Sivoham'_ [Eu sou Siva, Eu sou Siva]. Para fazer o ego morrer, a prática de _'Sivaya Namah'_ [completa obediência ao Senhor Siva, a Realidade Suprema] é necessária. E para fazer o ego prestar obediência [ou seja, render-se] ao Senhor Siva, deve-se atender à sua fonte e, assim, impedir que ele se levante [veja _Ulladu Narpadu_ versículo 27, "O estado em que 'Eu' não se levanta, é o estado 'Nós somos Isso'. A menos que se analise a fonte de onde 'Eu' surge, como alcançar o estado de ausência de ego, em que 'Eu' não se levanta?..."]. Portanto, a autoinvestigação, a verdadeira prática de '_Sivaya Namah_', é a única _sadhana_ que destruirá o ego e, assim, trará a verdadeira experiência de _'Sivoham'_.
 
 
 
