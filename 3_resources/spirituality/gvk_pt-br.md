@@ -5416,6 +5416,335 @@ _(Nitya-Aparoksha Tiran)_
 
 
 
+**883. Uma joia se tornará ouro apenas quando sua forma for destruída por fusão? Não é [na realidade] ouro mesmo enquanto está na forma de uma joia? Portanto, saiba que todas as três [irreais] entidades [o mundo, a alma e Deus] formadas pela mente, são igualmente [na realidade] nada mais que existência-consciência [Self].**
+
+**_Sadhu Om_**: Mesmo enquanto parecem ser muitas coisas diferentes, o mundo, a alma e Deus são na realidade nada mais que o único Self. É errado pensar que eles se tornarão Self apenas depois que suas formas diversas desaparecerem. Na verdade, apenas o Self, a substância ou realidade dessas formas diversas, é real, enquanto as próprias formas são sempre irreais.
+
+**884. A busca e a obtenção do Self no coração é como uma mulher procurando seu colar sendo iludida ao pensar que ela o havia perdido, embora ela estivesse [de fato] sempre usando-o em volta do pescoço, e [finalmente] o recuperando ao tocar o pescoço.**
+
+**_Michael James_**: Assim como a mulher nunca havia realmente perdido seu colar, o Self nunca é desconhecido. Portanto, pensar que o conhecimento do Self é algo a ser recém adquirido não é menos tolo do que pensar que a mulher havia recuperado seu colar apenas quando ela tocou o pescoço.
+
+**885. Exceto pelo [esforço feito através] do caminho de investigar o misterioso senso, [o ego], por qualquer esforço feito através de outros caminhos como o _karma_, é impossível alcançar e desfrutar do Self, o tesouro brilhando no coração.**
+
+**_Sadhu Om_**: Neste verso Sri Bhagavan claramente e enfaticamente dá Seu veredito de que por mais que se esforce em qualquer outro caminho como _karma, yoga, bhakti_ ou _jnana_, não se pode alcançar a felicidade do Self até que se pergunte 'Quem sou eu que me esforço nesses outros caminhos?' Compare o verso 14 de _Ulladu Narpadu_ - _Anubandham_ aqui.
+
+
+
+
+
+
+
+
+
+**886. Se esse estado incomparável que deve ser experimentado no futuro através do _tapas_ na forma de [os seis passos de] _sama_ e assim por diante é um estado real, ele deve existir [e ser experimentado] mesmo agora tanto quanto então.**
+
+**_Sadhu Om_**: Se dissermos que não experimentamos o Self agora e que só o experimentaremos em algum momento no futuro, seria o mesmo que dizer que o Self é inexistente em um momento e existente em outro. Se algo é inexistente em um momento e passa a existir em outro, não será inevitavelmente perdido novamente? Portanto, uma vez que não existe em todos os três tempos [passado, presente e futuro], como pode ser chamado de coisa real [_sat vastu_]? Portanto, uma vez que o autoconhecimento é a realidade, deve ser entendido como aqui, agora, sempre alcançado [_nitya-siddha_] e diretamente experimentado [_pratyaksha_]. A mesma ideia também é expressa no próximo verso.
+
+**887. Se esse estado não existe agora, mas virá [para a existência] apenas mais tarde, esse estado que virá não pode ser nosso estado natural, e portanto não permanecerá conosco permanentemente, mas irá [em algum momento] se afastar de nós.**
+
+**_Sri Muruganar_**: Veja o último ponto mencionado no verso anterior. Como um estado que chega a um momento e se vai em outro não é o estado final, não importa quão glorioso e feliz seja, ele não será eterno. Se o próprio estado natural for o estado final, então não haverá destruição para ele. É natural e justo que qualquer estado que não seja o próprio estado natural se afaste de alguém em algum momento.
+
+
+
+
+
+**888. Isso [_Brahman_] é o todo [_purnam_]; isto [a aparência do mundo] também é o todo. Mesmo quando [este] todo se funde em [aquele] todo, é o todo. Mesmo quando [este] todo sai [como se fosse uma realidade separada] de [aquele] todo, o todo sozinho permanece.**
+
+**_Michael James_**: Este verso é adaptado do famoso estrofe védica, "Purnamadah purnamidam...", que foi por vezes citado por Sri Bhagavan. Em alguns comentários sobre os ensinamentos de Sri Bhagavan, esta estrofe védica é erroneamente interpretada para apoiar a visão de que "é tanto falso quanto fútil afirmar que _Brahman_ sozinho é real e que o mundo [de nomes e formas] é irreal" (ver _Sat-Darshana Bhashya_, 6ª ed., pp. 6-7). No entanto, quando este estrofe diz, "Isso é todo e isto é todo", não deve ser entendido como significando que _Brahman_ é real e que o mundo como tal também é real. O ensinamento de Sri Bhagavan é que o mundo todo é irreal como mundo, mas real como _Brahman_, o todo (_purnam_), assim como a cobra é irreal como cobra, mas real como a corda, sua base. Portanto, este verso deve ser entendido da seguinte forma: "Aquilo [a corda] é a corda; isto [a cobra aparente] também é a corda. Mesmo quando esta cobra se funde [desaparece] naquela corda, é a corda. Mesmo quando esta cobra sai [como se fosse uma cobra] daquela corda, a corda sozinha permanece." Em outras palavras, assim como na verdade a corda sozinha existe, assim na verdade _Brahman_, o todo, sozinho existe; e assim como a cobra aparente é uma falsa aparição, assim o mundo aparente é uma falsa aparição. Nem a saída (manifestação) desta aparência mundial nem a sua fusão novamente em _Brahman_ são reais. _Brahman_ permanece sempre como o todo imutável e inalterável.
+
+**889. Aquilo [_Brahman_] é o espaço supremo; você também é o espaço supremo. Aquilo [o _Mahavakya_] que instrui que 'Você é Aquilo' também é o espaço supremo. [Por 'yoga' ou 'união'] nada é acrescentado de novo àquele todo real, que existe e brilha como o espaço comum, e [por '_neti-neti_' ou 'negação'] nada é removido dele.**
+
+**_Sri Muruganar_**: Este verso explica a ideia expressa no estrofe 29 de _Upadesa Undiyar_. Devemos saber que, na verdade, não há alcance da Liberação. Como a servidão é uma concepção mental falsa, a Liberação também não é nada além de uma concepção mental falsa. Além do Self, não existe _Jnani_ e nenhum _ajnani_; no estado da verdade absoluta, não há _jnanopadesa_ ou _Mahavakya_! Mesmo o pensamento de que o estado natural do Self foi perdido é falso; o _tapas_ feito para remover as misérias causadas por esse pensamento também é falso; até mesmo o estado de _Jnana_ em que se alcançou novamente a abidância [através do _tapas_] é falso! O _upadesa_ é que o Self sozinho sempre existe.
+
+
+
+
+
+
+
+**890. "Exceto pelo todo não-dual [Self], todas as multiplicidades mundanas impostas a Ele como 'isto' ou 'aquilo' não são reais nem um pouco; eles são todos nada além de uma completa ilusão sobreposta a Ele" - tal é o veredicto final [de todos os _Jnanis_].**
+
+**891. Uma vez que eles [_Jnanis_] dizem: "Embora o Único [aparentemente] se torne muitos [objetos deste mundo], [na verdade] Ele não se torna nada", e desde o início todos permanecem como aquele Único [Self], a obtenção do verdadeiro conhecimento [que nosso estado natural é assim sempre experimentado ou _nityaaparoksha_] é a Libertação.**
+
+**892. Depois de entender teoricamente [_através de sravana e manana_] que o Self é não-dual, e depois de vacilar repetidamente em seus esforços para atingir [_através de nididhyasana_] a experiência prática do verdadeiro Self, quando, [finalmente e com grande desolação] todos os esforços mentais cessam, o conhecimento que então brilha no coração é a natureza dessa realidade.**
+
+**_Sadhu Om_**: Este verso retrata claramente a experiência real de um aspirante. Não é a experiência de muitos aspirantes sinceros que, depois de aprender sobre a verdadeira natureza do Self através da audição [_sravana_] e da reflexão [_manana_], eles lutam arduamente na prática [_nididhyasana_] da atenção ao Self, mas falham repetidamente em suas tentativas, até finalmente se sentirem cansados e desolados, conhecendo sua própria incapacidade? Este verso encoraja tais aspirantes, apontando que quando a mente, que é a causa raiz de todos os esforços, assim chega a um completo impasse devido ao cansaço extremo, é exatamente o momento em que o Self irá brilhar claramente e sem obstrução. A canção Tamil _Konjam Poru_ [que foi traduzida para o inglês sob o título '_Wait a Little_' e impressa como canção No. 15 em '_A Selection of Songs from Sri Ramana Gitam_'] dá uma descrição gráfica e encorajadora do estado de espírito de um aspirante que alcança este estado.
+
+
+
+
+
+
+
+### 3Nirvikalpa samadhi
+
+_(Nirvikalpa samadhi Tiran)_
+
+**893. Apenas não estar ciente das diferenças [_vikalpas_] no mundo exterior não é o sinal do verdadeiro _nirvikalpa samadhi_. A inexistência de diferenças [_vikalpas_] na mente que está morta é o supremo _nirvikalpa samadhi_.**
+
+**_Sadhu Om_**: Muitas pessoas estão sob a impressão errada de que quem está em _nirvikalpa samadhi_ deve permanecer inerte como um tronco insensível, não conhecendo nem este corpo nem o mundo. Depois de permanecer por algum tempo [_seja dias, meses ou mesmo anos] em tal estado, que é chamado de _kashta nirvikalpa_ ou _kevala nirvikalpa samadhi_, a consciência do corpo retornará, momento em que a mente se tornará extrovertida e todos os vícios, como luxúria e raiva, surgirão devido às tendências passadas [_vasanas_]. Este tipo de _samadhi_, que é uma experiência que pode ocorrer durante as primeiras etapas da prática de certas _sadhanas_, é apenas uma suspensão temporária da mente [_manolaya_]. No entanto, o tipo correto de _nirvikalpa samadhi_ é apenas a aniquilação da mente [_mano-nasa_], a destruição permanente do primal _vikalpa_ 'Eu sou o corpo'. Este é o estado do verdadeiro conhecimento e é chamado de _sahaja nirvikalpa samadhi_.
+
+_Kashta nirvikalpa samadhi_ pode ser comparado ao estado de um pote amarrado com uma corda que fica submerso na água de um poço. Como o pote submerso na água, a mente está submersa em _laya_. Mas a qualquer momento o pote pode ser retirado pela corda. Da mesma forma, como a mente não é destruída, pode a qualquer momento ser novamente retirada por suas _vasanas_ e forçada a vagar sob seu domínio. Mas em _sahaja nirvikalpa samadhi_ a mente é dissolvida em Self e perde sua forma ou individualidade, como uma boneca de sal imersa no oceano. Portanto, não pode se levantar novamente. _Sahaja nirvikalpa samadhi_, no qual a mente é destruída, é o verdadeiro _samadhi_.
+
+**894. Permanecer na consciência natural, 'Eu sou', é _samadhi_. Sendo libertado da consciência mista com adjuntos [‘Eu sou assim e assado’, ‘Eu sou o corpo’, ‘Eu sou um homem’, ‘Eu sou isto ou aquilo’ e assim por diante], permaneça firmemente neste estado ilimitado [livre de adjuntos] [do real _samadhi_].**
+
+
+
+
+
+
+
+
+
+**895. Grandes Sábios dizem que o estado de equilíbrio que está desprovido de 'Eu' [o ego, 'Eu sou isso ou aquilo'] é o _mounasamadhi_, o ápice do conhecimento [_jnananta_]. Até que aquele _mouna-samadhi_, 'Eu sou aquele [Eu sou]', seja alcançado, busque como seu objetivo a aniquilação do ego.**
+
+**896. Ao contrário do 'Eu' que surge e se põe [o ego], o Self permanece sempre brilhando. Portanto, rejeite e, com isso, destrua a falsa primeira pessoa, 'Eu [sou assim e assado]', e brilhe como o verdadeiro 'Eu' [Self].**
+
+**_Sadhu Om_**: A consciência mista que surge como 'Eu sou fulano', 'Eu sou isso' ou 'Eu sou aquilo', é a falsa primeira pessoa ou ego. Mas a consciência-existência, que brilha sozinha como o puro 'Eu sou', é a verdadeira autoconsciência, que está desprovida de todas as três pessoas, primeira, segunda e terceira. Portanto, Sri Bhagavan nos instrui a permanecer como o Self, destruindo o ego.
+
+**897. Ó minha mente que está sofrendo [ou que perdeu sua verdadeira natureza] por pensar 'Eu sou um _jiva_', você será novamente enganada se pensar ou meditar 'Eu sou Deus' ['Eu sou _Brahman_' ou 'Eu sou Siva']. [Porque] no estado supremo nada existe como 'Eu [sou isto ou aquilo]' mas apenas o único Self [Eu sou], o Coração [que sempre existe como é].**
+
+**_Sadhu Om_**: O sentimento 'Eu sou um homem' é um mero pensamento. É a forma do ego. Consequentemente, se alguém começa a pensar ou meditar 'Eu sou _Brahman_' ou 'Eu sou Siva' ou 'Eu sou Ele', isso também será um mero pensamento, outra forma do mesmo ego. Portanto, já que isso é apenas outro tipo de pensamento, não se pode, através disso, ficar livre de pensamentos e atingir o estado do Self, cuja forma é a mera existência [_Sat_]. Por isso, Sri Bhagavan nos adverte que aquele que medita 'Eu sou _Brahman_' será enganado no final.
+
+**898. O estado bem estabelecido no qual a mente quieta [a mente desprovida de pensamentos] tem a experiência ininterrupta [de pura consciência] é** _samadhi_**. Tal mente estabilizada, que alcançou o ilimitado supremo Self, é a essência da Divindade.**
+
+**_Sadhu Om_**: Uma onda é uma onda enquanto se move; quando a mesma onda se acalma sem movimento, é o oceano. Da mesma forma, a mente é a mente enquanto se move e é limitada; quando a mente se torna imóvel e ilimitada, é Deus ou _Brahman_. A palavra Tamil _'Kadavul'_ [Deus] literalmente significa _'kadandu-ullavar'_ [Ele que existe transcendendo]; portanto, nosso próprio estado real, o Self, que transcende todos os adjuntos como 'isso' ou 'aquilo', é Deus [_Kadavul_].
+
+
+
+
+
+
+**899. Ouça a dica para alcançar a realidade que permanece [como 'Eu sou'] dentro do conhecimento [a mente] como o conhecimento para o conhecimento [ou seja, como o Self que dá luz à mente]: escrutinar e conhecer o conhecimento que conhece o objeto [a mente] por esse mesmo conhecimento [questionando 'O que é isso?' ou 'Quem sou eu?'] é o meio para permanecer dentro [como a realidade].**
+
+**_Sadhu Om_**: Refira-se à segunda linha do verso 5 de _Sri Arunachala Ashtakam_, no qual Sri Bhagavan canta, “Assim como uma gema é polida, se a mente for polida na pedra chamada mente para libertá-la de falhas, ela brilhará com o lustre da Tua Graça”. Ou seja, só quando a mente presta atenção a si mesma será libertada de falhas e assim brilhará como a realidade, o puro 'Eu sou'. Ao prestar atenção às segundas e terceiras pessoas, a mente só reunirá impurezas. Portanto, ao se envolver em qualquer atividade ou _sadhana_ que não seja a atenção ao Self, a mente nunca morrerá. Ela morrerá apenas quando prestar atenção à sua própria forma para descobrir 'O que sou eu?' ou 'Quem sou eu?' Esta verdade foi descoberta por Sri Bhagavan a partir de sua própria experiência direta. Meditar ou analisar qualquer coisa que não seja a mente não é nem introversão [_antarmukham_] nem um meio de conhecer a realidade. Apenas a auto-atenção - a prática da mente atendendo ao sentimento da primeira pessoa singular 'Eu' - afogará a mente no Self e assim a destruirá. Portanto, este é o único caminho para alcançar e permanecer como a realidade.
+
+**900. Permanecer firmemente como 'Eu sou eu', sem qualquer movimento da mente, é a realização da Divindade [_Sivatvasiddhi_]. [Porque] o brilho do verdadeiramente bem-estabelecido estado de conhecimento [Autoconhecimento] onde nada existe além disso [conhecimento] é puro Siva, não é?**
+
+**901. O esplendor da consciência-felicidade na forma de uma consciência brilhando igualmente dentro e fora é a realidade primal suprema e feliz cuja forma é o Silêncio e que é declarada pelos _Jnanis_ como o estado final e inobstrutível do verdadeiro conhecimento.**
+
+**_Sadhu Om_**: Porque o corpo, que é limitado no tempo e no espaço, é confundido com o 'Eu', todos têm a sensação 'Eu estou apenas dentro do corpo e não fora'. Se o corpo não for assim tomado como 'Eu', não haverá espaço para a sensação de diferença 'dentro' e 'fora' [ver verso 251]. Nesse estado, a autoconsciência 'Eu sou', que brilha como a única consciência desprovida de 'dentro' ou 'fora', é em si mesma o verdadeiro conhecimento [_mey-jnana_], a realidade primal inteira e perfeita.
+
+
+
+
+
+
+
+
+**902. Quem pode e como pensar na total realidade primordial, cuja finalidade é o Silêncio, como 'Eu sou Isso', e por que sofrer assim? Alcançar o Silêncio [livre de pensamento] é a permanência no Self [_nishtha_]; é [atingido pela] destruição de [o primeiro pensamento] 'Eu'. Quando 'Eu' é assim destruído, onde há espaço para pensar?**
+
+**_Sadhu Om_**: Quando a realidade é, na verdade, nada mais que o Silêncio inteiro e perfeito que existe além do alcance do pensamento, por que alguém deveria sofrer tentando em vão atingi-lo pensando 'Eu sou Isso'? Meditar 'Eu sou _Brahman_', 'Eu sou Ele' ou 'Eu sou Siva' é inútil e não é de todo uma _jnana-sadhana_ adequada. Segundo Sri Bhagavan, a única verdadeira _jnana-sadhana_ é perder 'Eu', o ego, através do questionamento 'Quem sou eu?'
+
+**4 Imutabilidade**
+
+_(Nirvkara Tiran)_
+
+**903. Ó grandes e raros sábios, qual é a natureza da mudança? A aparência e o desaparecimento de todas essas coisas estão realmente acontecendo continuamente, ou são apenas [aparentes mudanças] aparecendo e desaparecendo [na sempre inalterável realidade]?**
+
+**_Sadhu Om_**: Os versos 63, 64, 65 e 91 desta obra devem ser novamente referidos aqui. Alguns entre nós erroneamente acreditam que, embora este universo passe por inúmeras mudanças, como criação, crescimento, decadência e destruição, ele é uma realidade sempre existente, e que todas essas mudanças são, portanto, verdadeiras. Sri Bhagavan diz a essas pessoas que sua crença está errada, e explica que a razão pela qual elas têm essa crença errada é apenas por causa de sua perspectiva errada de ver o sempre inalterável Self como um universo com inúmeras mudanças. Ao longo deste capítulo, Sri Bhagavan continua a refutar essa crença errada com muitos argumentos, e, portanto, esses versos servem como uma condenação adequada de sua filosofia errônea.
+
+
+
+
+
+**904. O surgimento e o desaparecimento deste universo é um defeito [ou mudança] causado pelo nascimento e morte do corpo sujo e carnal. Atribuir essas mudanças ao Self, o espaço de _Jnana_, é uma ilusão, como atribuir o aparecimento e desaparecimento das nuvens ao céu.**
+
+**_Sadhu Om_**: O estado em que o mundo aparece e desaparece é pequeno e irreal, pois essas mudanças são vistas apenas pelo pequeno ego, que aparece e desaparece junto com o corpo.
+
+**905. Existe alguma ilusão pior do que a confusão de pensar que o Self, que sabe que o mundo aparentemente existente é completamente inexistente, está sujeito à mudança?**
+
+**_Sadhu Om_**: Refira-se aqui ao verso 4 de _Ulladu Narpadu_, onde Sri Bhagavan diz: “... Pode a visão [o visto] ser diferente do olho [o observador]? Na verdade, o Self é o Olho, o Olho ilimitado [e, portanto, imutável]". Em outras palavras, como é o olho, assim é a visão. Portanto, se, em vez de ver através dos defeituosos e mutáveis olhos físicos, se vê através do olho ilimitado e imutável do Self, o universo desaparecerá e o único Self será conhecido por existir sozinho. Quando a verdade é tal, pode haver alguma ilusão maior do que ver o Self, a realidade sempre imutável, como este mundo pequeno e mutável? Essa é a pergunta de Sri Bhagavan.
+
+**906. Saiba que nem mesmo o menor defeito [ou mudança] causado pelas atividades [no mundo] afetará o Self imutável, assim como nem mesmo o menor defeito [ou mudança] causado pelos outros [quatro] elementos, terra, água, vento e fogo, afetará o vasto espaço.**
+
+**_Sadhu Om_**: Consulte também _Quem sou eu?_ onde uma ideia semelhante é expressada por Sri Bhagavan.
+
+**907. De acordo com a perspectiva de diferentes pessoas, a mesma mulher é considerada esposa, irmã do marido, nora, esposa do cunhado, mãe e assim por diante. No entanto, na verdade, ela não sofre nenhuma mudança em sua forma.**
+
+**_Michael James_**: Da mesma forma, embora na perspectiva ignorante do _jiva_, o Self pareça ter passado pela mudança de se tornar muitos nomes e formas diferentes, como o mundo, a alma e Deus, na verdade, permanece sempre inalterado.
+
+
+
+
+
+
+
+**5 Solidão**
+
+_(Ekanta Tiran)_
+
+**908. Ao ser analisado, entre todas as muitas qualidades necessárias para aqueles que desejam alcançar a Libertação imperecível, é a atitude de um grande apreço por estar em solidão permanente que deve estar bem estabelecida em sua mente.**
+
+**_Sadhu Om_**: Sri Bhagavan costumava dizer: "Solidão [_ekantam_] não é um lugar; é uma atitude interior da mente" [veja _Evangelho de Maharshi_, Livro Um, cap. 2]. A mente de um _mumukshu_ deve sempre gostar de estar no estado de felicidade livre de todas as _vasanas_ ou pensamentos. Compare aqui o verso 912.
+
+**6 Desapego**
+
+_(Asanga Tiran)_
+
+**909. Ó mente [cuja verdadeira natureza é o Self], embora pelo poder de sua mera presença todos os _tattvas_ [os princípios irreais como a mente, os sentidos, o corpo e o mundo] se unam e causem estragos internamente, não se deixe confundir por eles, mas seja uma mera testemunha deles pela [força da] experiência do conhecimento do Self desapegado.**
+
+**_Michael James_**: Embora este verso seja dirigido à mente, ele deve ser entendido como sendo dirigido à mente em sua verdadeira natureza como Self. Isso quer dizer, este verso indiretamente diz à mente: "Você, na verdade, não é aquilo que é afetado por todos esses _tattvas_, você é o Self desapegado, em cuja presença e por cuja presença todos esses _tattvas_ funcionam. Portanto, seja como você realmente é (ou seja, permaneça em sua verdadeira natureza como Self)." Também deve ser observado que neste verso Sri Bhagavan instrui a mente sobre como permanecer como uma testemunha desapegada a todos esses _tattvas_ irreais. Imaginando-se como uma testemunha deles, a mente nunca pode permanecer verdadeiramente desapegada deles; apenas pela experiência do conhecimento do Self desapegado (_asanga-swarupa-jnananubhava_), ou seja, apenas conhecendo e sendo o verdadeiro e sempre desapegado Self, pode-se permanecer como uma testemunha desapegada a todos os irreais _tattvas_.
+
+
+
+
+
+
+
+
+**910. Seja o que for e o quanto for [bom ou mau] que venha [para alguém] ou vá [longe de alguém], permanecer como outro além do conhecedor deles e ser não afetado por eles, diferente de uma palha levada pelo vento, é _Jnana_.**
+
+**_Michael James_**: Seja o que for, bom ou mau, que chegue a um _Sahaja Jnani_, Ele permanece sempre não afetado por eles e desinteressado por eles, uma vez que Ele se conhece como o Self, que é outro além do experimentador do bom ou do mau. Seu estado pode ser comparado a uma tela de cinema, que não é queimada por imagens de fogo nem encharcada por imagens de água, embora seja o suporte de todas essas imagens. Esse estado completamente desapegado e desinteressado de verdadeiro conhecimento (_jnana_) foi bem ilustrado pela vida de Sri Bhagavan. Embora tantas coisas ruins tenham acontecido ao seu redor - embora alguns _sadhus_ falsos tenham tentado se passar por seu guru, embora, por ciúmes, tenham tentado matá-lo rolando pedras sobre ele, embora alguns devotos insinceros fingissem amá-lo, mas faziam maldades às suas costas, embora algumas pessoas lhe dessem drogas intoxicantes como _bhang_, embora um testamento tenha sido feito em seu nome, embora processos judiciais tenham sido movidos contra ele, embora um livro abusivo tenha sido escrito sobre ele, embora alguns de seus bons devotos como Sri Muruganar tenham sido maltratados e abusados, embora alguns supostos discípulos tenham até tentado deliberadamente interpretar mal seus ensinamentos, traduzindo-os erroneamente e escrevendo comentários falsos sobre eles, e assim por diante - e embora tantas coisas boas tenham acontecido ao seu redor - embora devotos sinceros tenham vindo a ele e o tenham louvado como o Senhor Supremo, embora seu Jayanti, Golden Jubilee e outras funções tenham sido celebrados de forma grandiosa, embora seu nome e fama tenham se espalhado pelo mundo inteiro, e assim por diante - Ele permaneceu sempre como uma mera testemunha, alheio a todas essas coisas.
+
+**911. A menos que alguém se perceba como o Self desapegado, que é como o espaço que não permanece nem um pouco apegado a nada, embora exista dentro, fora e permeando tudo, não se pode permanecer sem ilusões.**
+
+**_Sadhu Om_**: Sem o conhecimento do Self, ninguém pode viver neste mundo desapegado.
+
+
+
+
+
+**912. As tendências [_vasanas_] no coração são o verdadeiro apego [_sangam_] que deve ser descartado. Portanto, em qualquer sociedade [_sangam_] em que possam viver, nenhum mal acontecerá àqueles grandes que têm controle total sobre a mente enganadora [tendo destruído todos os seus _vasanas_ e, assim, alcançado _mano_-_nasa_].**
+
+**7 Controle da Mente**
+
+_(Mano-Nigraha Tiran)_
+
+**913. Para aqueles que permitem que sua mente vagueie para lá e para cá, tudo dará errado.**
+
+**_Sadhu Om_**: _A mente deve ser controlada e feita para se acalmar, e não deve ser permitido que seja arrastada para cá e para lá por suas vasanas._
+
+**914. Tornar a mente, que corre em todas as direções com tal velocidade que até o vento fica assustado, aleijada como um homem completamente coxo que não consegue se mover para lugar nenhum, e assim destruí-la, é alcançar a verdadeira imortalidade.**
+
+**_Sri Muruganar_**: Uma vez que o _samsara_ de nascimento e morte é na verdade apenas para a mente e não para o Self, se, em vez de se mover sozinho com a mente como se sua forma fosse a própria forma de alguém, se souber que ela é diferente de si mesmo e assim destruí-la, o estado de imortalidade será claramente conhecido como a própria realidade de alguém.
+
+**915. Erradicar as três desejos semelhantes a ervas daninhas [os desejos por mulheres, riqueza e fama] antes mesmo que eles brotem, e fazer com que a mente se acalme e permaneça calma como um oceano sem ondas criadas pelo vento, é _Jnana_.**
+
+**916. Quando a mente não se desvia nem um pouco por qualquer um dos sentidos, que são a causa que lança alguém na miséria, e quando a mente permanece submersa como um oceano tempestuoso que se acalmou completamente, isso é _Jnana_.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
