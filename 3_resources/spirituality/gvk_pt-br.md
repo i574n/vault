@@ -6776,6 +6776,534 @@ _(Nishkala Tiran)_
 
 
 
+**1100.** **Permanecer imóvel e atento à suprema realidade [Self] por meio do _para-vak_ [a palavra suprema 'Eu-Eu'] pronunciada pelo coração, sozinho, é louvar o Supremo primordial perfeito, que é a luz interior [do conhecimento] que brilha no coração e que é desprovida de nomes e formas, que são ilusões irreais como a azulidade do céu.**
+
+**_Sadhu Om_**: _Atma-anusandhana_, o estado de atenção e permanência como Self, sozinho é a maneira perfeita de louvar a Deus [veja os versos 730 e B13, onde se diz que _atma-anusandhana_ é a suprema devoção a Deus]. Por quê? Qual é o objetivo de todos os elogios ou _stotras_? Não é glorificar a verdadeira grandeza do Senhor? A única maneira de glorificar a grandeza do Senhor de maneira permanente e perfeita é fazer com que o ego se funda em Self para que não surja novamente. Ou seja, como a verdadeira grandeza de Deus reside no fato de que Ele sozinho existe, e como esse estado perfeito de unidade é prejudicado pelo surgimento do ego [sendo aparentemente dividido em duas entidades separadas, a alma e Deus], apenas quando se permanece em Self e, portanto, impede o ego de surgir, a verdadeira grandeza de Deus brilha em toda a sua glória. Portanto, a maneira perfeita de louvar a Deus é apenas permanecer em Self sem o menor surgimento do ego.
+
+**1101.** **O coração de qualquer tipo de louvor [_stuti_] cantado por aqueles que estão observando tal _Jnana-achara_ [ou seja, por _Jnanis_, que estão sempre permanecendo imóveis e atentos ao supremo como descrito no versículo anterior] é apenas aquela suprema realidade pura [Self], e de maneira alguma se limita a [um determinado] nome e forma.**
+
+**_Sadhu Om_**: Embora os _Jnanis_ louvem a Deus em nome e forma, deve-se entender que o que eles realmente estão louvando é apenas o Self, a suprema realidade sem nome e sem forma. Não se deve pensar que seus louvores se limitam a qualquer nome ou forma particular. A partir deste verso, fica claro que sempre que Sri Bhagavan usa os nomes 'Annamalai' ou 'Arunachala' em obras como _Sri Arunachala Stuti Panchakam_, Ele está de fato se referindo apenas ao Self. Da mesma forma, o Senhor Siva que é louvado nos versos de Santos Saivitas como Jnanasambandhar, e o Senhor Vishnu que é louvado por Santos Vaishnavitas como os Azhwars, são apenas o próprio Self.
+
+**_Sri Muruganar_**: O verdadeiro objeto de qualquer tipo de louvor [_stotra_] cantado por Sábios, que observam _Jnana-achara_ na forma de permanência em Self [_atma-anusandhana_], é apenas aquela suprema realidade que transcende a concepção mental, e não qualquer nome e forma particulares que eles manejam apenas como símbolos. Embora, numa visão superficial, esses _stotras_ pareçam estar relacionados a muitas religiões diferentes, aqueles que conseguem compreender com profundo discernimento, não deixarão de perceber a natureza comum de imparcialidade com que eles [os sábios] se comportam desprovidos dessa [preocupação com qualquer religião particular].
+
+**1102.** **O levantamento do gracioso Pé do Senhor Nataraja, que dança a amorosa investigação, [assim] abraçando Seus devotos para que eles possam alcançar o Coração, é um novo e maravilhoso mistério, assim como a lua e o sol se unindo juntos.**
+
+**_Michael James_**: A auto-investigação feita com grande amor por um devoto é nada mais do que o funcionamento da Graça do Senhor dentro dele. Portanto, é dito metaforicamente neste verso que o próprio Senhor dança a amorosa auto-investigação. A elevação do _sphurana_ 'Eu-Eu', que encanta e abraça a mente do devoto, levando-a ao Coração, é aqui comparada ao Senhor erguendo Seu Pé no clímax de Sua dança. Este surgimento do _sphurana_ é uma nova e maravilhosa experiência, e aqui é comparada à lua e ao sol se unindo ou se casando, porque a mente do devoto é uma luz refletida, como a luz da lua, enquanto o Coração é a luz ou consciência original, como a luz do sol, e portanto a fusão da mente no Coração é semelhante à luz da lua unindo-se e fundindo-se na luz do sol.
+
+Este verso revela, assim, que o verdadeiro significado da forma do Senhor Nataraja é apenas a experiência sem forma do _sphurana_ 'Eu-Eu'. Veja também o verso 1054.
+
+**1103.** **Ser enganado nesta vida, perambulando pelo mundo inteiro e experimentando miséria [por conta de um desejo por tantas coisas], é tolice. Permaneça nos Pés do Supremo Siva, o [estado de] Silêncio que é _Sadasiva_ e que destrói os movimentos [_chalanas_] causados pelo ego.**
+
+
+
+
+
+
+**1104.** **Exceto aqueles que desaparecem [e permanecem] no Coração com consciência [com lembrança da consciência-existência 'Eu sou'], ninguém pode alcançar o estado imaculado da realidade, [porque] a realidade é velada pelo esquecimento da mente e pensamento no sono e ao acordar respectivamente.**
+
+**42 Aquele que Permanece no Estado Natural**
+
+_(Sahaja Nishthar Tiran)_
+
+**1105.** **O _Jnani_, o inalterável, que está dormindo naturalmente dentro do corpo, não conhece Suas atividades [_vyavahara_] no mundo, Sua absorção [_nishtha_] e Seu sono, assim como aquele que está dormindo no carro não conhece o movimento do carro, sua parada e seu deitado [com os bois desatrelados].**
+
+**_Michael James_**: O versículo acima de Sri Muruganar foi reescrito por Sri Bhagavan na forma do seguinte versículo, que também está incluído em _Ulladu Narpadu – Anubandham_ como versículo 31.
+
+**B21. Para o conhecedor da realidade [_mey-jnani_], que está adormecido dentro do corpo carnal, que é [como] um carro, Suas atividades [no despertar e no sonho], Sua absorção [_nishtha_] e Seu sono são semelhantes ao movimento do carro, sua parada e o carro sendo desatrelado, para quem está dormindo no carro.**
+
+**_Sadhu Om_**: A vida corporal de um _Jnani_ parece ser real apenas na perspectiva dos outros. Assim, pessoas ignorantes [_ajnanis_] pensam: "Este _Jnani_ está realizando atividades aqui no estado de vigília". Mas como o _Jnani_ é, na verdade, sem corpo, Ele não conhece essas atividades; para Ele, o corpo e suas atividades são completamente inexistentes. Esse é o ensinamento dado neste versículo. Assim como o viajante que está dormindo num carro de boi não conhece o movimento do carro, e assim como uma criança adormecida não sabe que está se alimentando [ver versículo 1140], assim o _Jnani_ não conhece o estado em que o corpo, os sentidos e a mente estão ativos.
+
+Quando o corpo, os sentidos e a mente de um _Jnani_ permanecem sem atividades [_pravrittis_], as pessoas pensam: "Este _Jnani_ está em _samadhi_". Este é semelhante ao estado em que os bois permanecem atrelados ao carro, mas ficam sem se mover. Mesmo este estado de _samadhi_ ou _nishtha_ não é conhecido pelo _Jnani_; para Ele, é completamente inexistente.
+
+Quando as pessoas pensam: "Este _Jnani_ está dormindo", esse estado de aparente sono no qual seu corpo, sentidos e mente parecem estar inconscientes, é semelhante ao carro repousando com os bois desatrelados. Assim como mesmo o descanso do carro não é conhecido pelo viajante dormindo no carro, assim também o estado de sono não é conhecido pelo _Jnani_; para Ele, esse estado é completamente inexistente.
+
+Portanto, esses três diferentes estados na vida de um _Jnani_ parecem existir apenas na visão errada dos _ajnanis_, que veem o _Jnani_ sem corpo como um corpo. Para o _Jnani_, o estado de atividade [despertar e sonho], o estado de _samadhi_ e o estado de sono não existem de fato. É por isso que Sri Bhagavan diz no versículo 31 de _Ulladu Narpadu_, "Quem pode e como conceber qual é o estado Dele [o _Jnani_]?"
+
+**1106.** **A mente pura do _Jnani_, que existe e brilha como a testemunha [que não está ligada a nada], é um espelho claro que reflete todos os pensamentos defeituosos das mentes pervertidas de outros [que se aproximam Dele] e que [assim] ilude as mentes das pessoas fazendo-o [o _Jnani_] parecer defeituoso.**
+
+
+
+
+
+
+**1107.** **Aos olhos daqueles [pessoas ignorantes] que são iludidos pelo senso de autorrealização [_kartritva_], o _Sahaja Jnani_, que vive transcendendo até a _sattvaguna_, pode às vezes parecer como alguém que possui muita _rajo-guna_ enganosa. Por conta disso, não duvide [de sua _Jnana_, porque a _rajo-guna_ é apenas um reflexo dos pensamentos rajásicos do observador].**
+
+**1108.** **Se alguém fizer algo errado a um Grande Ser, um _Jivan-mukta_, que brilha e é conhecido como um tesouro de pureza, acumulará e carregará como um fardo uma vasta culpa e pecados para esta vida e futuras vidas [ou seja, culpa a ser experimentada nesta vida e pecados cujos frutos serão experimentados em vidas futuras].**
+
+**1109.** **Pessoas de mentalidade baixa cometem erros da mesma maneira com pessoas ruins e com grandes Sábios, não sabendo que eles são diferentes, assim como um cachorro que vive lambendo da mesma maneira o prensa de óleo e o _Siva-lingam_, sem saber [a diferença entre eles].**
+
+**_Michael James_**: Depois que o _puja_ foi realizado, o óleo permanecerá na superfície do _Siva-lingam_. Portanto, ignorando a santidade do _Siva-lingam_, cães vadios às vezes vêm e lambem o óleo dele da mesma forma que lambem o óleo derramado na parte externa de uma prensa de óleo. Da mesma forma, sendo ignorantes da verdadeira grandeza do _Jnani_, pessoas de mente baixa se comportarão em relação a Ele da mesma maneira errada e desrespeitosa que se comportam até mesmo com pessoas más.
+
+**1110.** **Embora um cachorro ladre para o sol, o insulto não afetará o sol. [Da mesma forma] as palavras mesquinhas de culpa [censura, ridicularização ou calúnia] das pessoas ignorantes não atingirão aquele que atingiu a luz do verdadeiro conhecimento [_mey-jnana_], que é brilhante como o sol.**
+
+
+
+
+
+
+
+**43 One who Firmly Abides as Pure Consciousness**
+
+_(Sthita Prajnar Tiran)_
+
+**1111.** **The _Jnani_ [literalmente, aquele que é o espaço da consciência], que sempre permanece apenas como o conhecimento brilhante [a mera consciência 'eu sou'] desprovida da diferença dos estados transitórios [de] atenção da introversão e extroversão, é o único _sthita-prajna_ imutável [aquele que firma firmemente como a pura consciência imutável].**
+
+**_Sadhu Om_**: Aquele que brilha desprovido do sentimento dual 'dentro' e 'fora' e que não experimenta o menor senso de diferença entre o estado de absorção [_samadhi_] alcançado através da introversão [_ahamukka_] e o estado de atividade [_vyavahara_] que resulta da extroversão [_bahirmukka_], é o único _sthita-prajna_ [aquele que firma firmemente como pura consciência] ou um _dridha-jnani_ [aquele que alcançou o conhecimento firme]. Aquele que experimenta o Eu apenas no estado de _samadhi_ e que experimenta o corpo e o mundo quando não está em _samadhi_, é apenas um aspirante [_abhyasi_] e não um _sthita-prajna_. Como essa diferença na experiência não existe para o _sthita-prajna_, Ele permanece sempre em _sahaja-nishtha_ [o estado natural de permanência do Eu].
+
+**1112.** **Saiba que Aquele que, através do verdadeiro conhecimento do Coração, brilha como a natureza de Siva [_Siva-swarupa_], que é o Eu e que é desprovido de 'Eu' [o ego], é o _sthita-prajna_ perfeitamente silencioso, que não é movido por nada.**
+
+**_Sadhu Om_**: De todos os movimentos [_chalanas_ e _vrittis_], o surgimento do ego como 'eu sou este corpo' é o primeiro. Portanto, todos os outros tipos de movimento [_chalana_] naturalmente se tornarão inexistentes para Aquele que alcançou o estado de Silêncio ao submergir e se conhecer como o Siva imóvel [_achala_], que é o Eu e que está completamente desprovido até mesmo do menor surgimento do ego, 'eu sou isto'. Tal estado firme de conhecimento é o único estado de _sthitaprajnatvam_ [firme permanência como pura consciência].
+
+
+
+
+
+
+**44 Aquele que Rompeu o Nó**
+
+_(Granthi Bhedittar Tiran)_
+
+**1113.** **Assim como as pessoas ignorantes [_ajnanis_] de mente volúvel veem [apenas] o mundo, que é um conjunto de objetos dos sentidos, em todo lugar devido ao [seu] conhecimento objetivo [o conhecimento pelo qual veem tudo como segunda e terceira pessoas, como objetos além de si mesmos], assim o Sábio que permanece [como o Eu] tendo rompido o nó [_chit-jada-granthi_ ou ego] e tendo [assim] renunciado [ao conhecimento objetivo] vê [apenas] o Eu, a consciência básica, existindo e brilhando em todos os lugares.**
+
+**1114.** **Apenas Ele é um Buda [um Sábio ou _Atma-jnani_] que sempre existe e brilha como o sol [_Jnana_] autoiluminado e diante do qual a dualidade do mundo-aparência, que surge como uma maravilha com tantas diferenças, não aparece e torna-se [completamente] inexistente.**
+
+**1115.** **Saiba que o conhecedor da realidade [_mey-jnani_], que está bem estabelecido no Coração e que sempre se alegra contentemente na grandeza do Eu, nem considerará o mundo como uma densa [irreal] ilusão, nem o considerará como algo além de Si mesmo.**
+
+**_Michael James_**: A declaração feita em _Sri Ramana Gita_, capítulo 1, versículo 11, e que é reiterada neste versículo presente, ou seja, que o _Jnani_ não considera o mundo nem irreal nem além de Si mesmo, foi mal interpretada por algumas pessoas para apoiar sua crença errônea de que o mundo de nomes e formas é real como tal. No entanto, o fato de tal interpretação ser errada é esclarecido no versículo anterior desta obra, onde se afirma que a dualidade do mundo-aparência (ou seja, o mundo de nomes e formas) é inexistente para o Buda ou _Jnani_, e também nos próximos dois versículos desta obra, onde é afirmado que o _Jnani_ sabe que a consciência é a única realidade do mundo, e que no estado de _Jnana_ ou pura consciência nada existe exceto aquela pura consciência.
+
+Ou seja, o _Jnani_ não se experimenta como o corpo, que é apenas um nome e forma, mas apenas como o Eu, que é existência-consciência-bem-aventurança (_sat-chit-ananda_), e portanto, de acordo com o princípio estabelecido no versículo 4 de _Ulladu Narpadu_, Ele não vê o mundo como nomes e formas, mas apenas como Si mesmo, a pura consciência sem nome e sem forma ou _sat-chit-ananda_ (veja _Ulladu Narpadu_ versículo 18, "... para aqueles que conhecem o Eu, a realidade brilha desprovida de forma como o substrato do mundo...").
+
+Assim, uma vez que o _Jnani_ sabe que Ele, a realidade, é a única existência, e que os nomes e formas irreais são completamente inexistentes, Ele não pode ver o mundo como algo irreal ou diferente de Si mesmo. Por outro lado, uma vez que o _ajnani_ vê o mundo como nomes e formas, é correto e necessário para ele discriminar entre os nomes e formas irreais e o real _sat-chit-ananda_, e considerar o mundo de nomes e formas como uma ilusão irreal criada pela mente, que é em si uma entidade irreal e inexistente. Consulte aqui _Maharshi’s Gospel_, Livro Dois, capítulo 3 (8a ed. p. 60), onde Sri Bhagavan diz, "Não há alternativa para você, a não ser aceitar o mundo como irreal, se você está buscando a Verdade e apenas a Verdade". Consulte também os versos 50 e 51 desta obra, onde Sri Bhagavan diz que a declaração 'o mundo é real' só pode ser corretamente compreendida pelo _Jnani_ e não pelo _ajnani_.
+
+**1116.** **O _Jnani_ sabe que o mundo inteiro, que aparece na consciência, é da natureza da consciência [o Eu]. Ele, o afortunado, permanecerá [sempre] no Eu, sabendo que além da consciência [o Eu] não há realidade para o mundo.**
+
+
+
+
+**1117.** **Aquele cuja mente foi destruída, tendo se afogado no todo não-dual [_advaita-purna_], nunca será perturbado nesta vida irreal de dualidade, [porque] nesse supremo estado de Graça, [o estado do] Eu, que é pura consciência [não misturada com quaisquer adjuntos como 'isso'], nada como 'Eu' [o ego ou sujeito] e 'isso' [o mundo ou objeto] existe exceto isso [Eu, a pura consciência 'Eu sou'] .**
+
+**_Michael James_**: A última linha também pode ser traduzida como, 'nada [nenhum sentimento-adjunto] como "Eu sou isso" existe'.
+
+No estado de pura consciência, nada existe exceto essa pura consciência, 'Eu sou'. Portanto, na verdadeira visão do _Jnani_, que sempre permanece como pura consciência, nada existe como 'Eu' [o ego] ou como 'isso' [o mundo].
+
+**1118.** **Como o _Jnani_ rompeu o nó do fazedor [_kartritva_], Ele não vê [nenhuma] ação que deve ser feita [por Ele]. Como em Seu estado de _Jnana_ nem mesmo um átomo aparecerá como um outro objeto insensível [um objeto insensível diferente de Si mesmo], nem mesmo um átomo de dúvida ou ilusão surgirá [para Ele].**
+
+**1119.** **Embora a mente [de um _Jnani_] que foi encantada pela verdadeira luz [do autoconhecimento] esteja [aparentemente] envolvida como antes nos cinco sentidos, que conhecem o gosto, o cheiro, a visão, o som e o toque, ela foi [de fato] cortada [destruída] pelo poder do intenso autoquestionamento.**
+
+**1120.** **Aquele que atingiu a vida de um _Jnani_ no coração, não obterá nem mesmo o menor prazer da vida do corpo carnal e dos pequenos [cinco] sentidos. Não é essa vida do Silêncio em si a experiência ilimitada e ininterrupta de [a bem-aventurança do] supremo _Brahman_?**
+
+**_Michael James_**: Portanto, diante dessa bem-aventurança ilimitada, o prazer insignificante derivado através dos cinco sentidos não se tornará completamente insignificante?
+
+
+
+
+
+**1121.** **Assim como um rio que se uniu e se tornou um com o oceano ondulado não se tornará separado [do oceano] por se transformar [novamente em um rio], assim para o _jiva_ que alcançou [e se tornou um com] o Eu, que é a forma do conhecimento, não haverá reencarnação por causa de sua ilusão.**
+
+**_Sadhu Om_**: Como a própria natureza do Eu é o conhecimento ou _Jnana_, e como o nascimento é nada mais que o falso conhecimento ou ignorância 'Eu sou o corpo', que parece existir apenas por causa da ilusão ou esquecimento do Eu, a alma que alcançou o verdadeiro autoconhecimento nunca mais nascerá.
+
+**1122.** **Entre aqueles cujas mentes estão possuídas pelo esquecimento [do Eu], aqueles que nascem morrerão e aqueles que morrem renascerão [novamente]. [Mas] saiba que aqueles cujas mentes estão mortas, tendo conhecido a gloriosa realidade suprema, permanecerão apenas lá, naquele estado elevado [de realidade], desprovido de [ambos] nascimento e morte.**
+
+**1123.** **Aquele que viu [a Si mesmo como] existência-consciência [_sat-chit_], viu _Sadasiva_; Ele viu a destruição da dualidade que cria medo; Ele viu Seu estado natural, que é o estado puro de _turiya_; Ele é o Grande; Ele não verá o nascimento [nunca mais].**
+
+**1124.** **Se em um momento anterior o nó original [o ego] foi cortado, não se estará mais preso em momento algum. Este [estado de libertação], que é a própria natureza, é o único estado de Deidade; este é o único Senhorio poderoso; este é o único paz abundante. Saiba assim.**
+
+
+
+
+
+
+**45 A Grandeza do Sábio**
+
+_(Sandror Matchi Tiran)_
+
+**1125.** **Quando Aquele que tem [_realizou_] Deus [_mahesan_] dentro de si como a grande realidade [como Seu próprio Eu] e que não tem nem um único apego, caminha, saiba que esse Deus, que existe e brilha como o Protetor do perigo, está caminhando.**
+
+**_Sadhu Om_**: Este versículo pode ser interpretado das seguintes duas maneiras:
+
+a) Quando o _Jnani_ caminha, saiba que é o próprio Deus quem está caminhando na forma daquele _Jnani_.
+
+b) Quando o _Jnani_ caminha, saiba que o próprio Deus está caminhando atrás Dele para proteger Seu corpo do perigo.
+
+A ideia expressa na versão (b) também é expressa em um versículo de _Kurundirattu_ ao qual Sri Bhagavan às vezes se referia [veja _Minhas Recordações de Bhagavan Sri Ramana_ por Devaraja Mudaliar, edição de 1970, pp. 31 a 32].
+
+**1126.** **Ele [o _Jnani_] que permanece como Siva, tendo destruído a mente [o conhecimento limitado 'Eu sou fulano de tal'], reside igualmente em todos os _jivas_ [como seu verdadeiro Eu, o conhecimento ilimitado 'Eu sou']. [Portanto] ao meditar na forma [_swarupa_] Dele, que claramente brilha como um _Mukta_, [por Sua Graça] a verdadeira luz [do autoconhecimento] brilhará de dentro [como o _sphurana_ 'Eu-Eu'].**
+
+**_Michael James_**: O _swarupa_ do _Jnani_ pode aqui ser interpretado como Sua forma física ou Sua verdadeira natureza. Mas como a verdadeira natureza do _Jnani_ é o Eu, a própria verdadeira natureza, que é comum a todos (_samanya_), e como este versículo aponta para o _swarupa_ do _Jnani_ em particular (_visesha_), é mais apropriado aqui interpretar a palavra _‘swarupa’_ como Sua forma física. Além disso, quando vemos os outros versos deste capítulo, podemos entender que todos eles estão preocupados com a grandeza da forma física do _Jnani_ e o benefício inestimável de se associar a essa forma.
+
+Sri Bhagavan costumava exaltar a grande eficácia do _sat-sang_ (associação ou contato com um _Jnani_), e Ele também costumava apontar que o contato mental é melhor do que o mero contato físico (veja _Dia a Dia_, 9-3-46). É por isso que Sri Bhagavan assegura neste versículo que ao pensar na forma do _Jnani_, a verdadeira luz do autoconhecimento brilhará de dentro. Essa também é a razão pela qual Sri Bhagavan afirmou que, ao se pensar apenas na forma de Arunachala, a _Mukti_ seria alcançada. Portanto, os devotos não precisam temer que o _sat-sang_ de Sri Bhagavan não está mais disponível agora que Sua forma física se foi; Seu _sat-sang_ está sempre disponível para aqueles que voltam sua mente para Ele.
+
+**_Sri Muruganar_**: O _swarupa_ de um _Mukta_ reside como o _swarupa_ de Siva em todos os _jivas_. Para revelar que a razão pela qual a verdadeira luz brilhará por si só no coração daqueles que praticam a meditação sobre Seu _swarupa_, é dito, "Aquele que permanece como o próprio Siva", e, "Ele está residindo igualmente em todos os _jivas_".
+
+
+
+
+
+
+**1127.** **O olhar Dele [o _Jnani_] que é rico em verdadeiro conhecimento [_mey-jnana_], que é a vida suprema que flui como o surgimento de cem sóis sem jamais diminuir, facilmente concederá a inigualável _Jnana_ àqueles que se banham nele, salvando-os e conduzindo-os ao objetivo da imortalidade.**
+
+**_Michael James_**: Muruganar indicou que o seguinte versículo de Bhagavan deveria ser incluído aqui. Ele apareceu originalmente como versículo 7 do apêndice de _Guru Vachaka Kovai_.
+
+Através de palestrantes, escrituras e virtuosas ações, nenhum estado pode ser alcançado igual a [aquele estado que é alcançado por] a pista [de auto-investigação ou auto-atenção] que é claramente alcançada dentro pela associação com um _Sadhu_ [aquele que permanece como a realidade ou _sat_]. [Sabendo disso com certeza,] vá.
+
+Neste versículo, Sri Bhagavan expressa em um metro de duas linhas (_kural-venba_) a mesma ideia que Ele expressou em um metro de quatro linhas (_venba_) no versículo 2 de _Ulladu Narpadu – Anubandham_.
+
+**1128.** **Aqueles [_Jnanis_] cujas mentes estão embebidas na essência do gozo de Siva [_Siva-bhoga-rasam_], o verdadeiro conhecimento [_mey-jnana_] que existe e brilha como o _eka-rasam_ [a única essência, o Self não-dual], converterão o vazio [a mente do _jiva_], que é um deserto ardente, a essência da ilusão [_moha-rasam_], em um lugar [frio e fértil] [que produz os frutos de _bhakti_ e _Jnana_] que é amado até mesmo pelos deuses.**
+
+**1129.** **As mentes de todos aqueles que vêm ao _Jnani_, cujo coração transborda de paz, tornar-se-ão bem-aventuradas [sendo preenchidas com Sua paz]. [Pois] não é Seu rosto fresco [semelhante à lua], que está embebido de alegria, o [totalmente desabrochado] lótus vermelho [_Jnana_] ao qual as abelhas [os devotos] são atraídos?**
+
+
+
+
+
+
+**46 A Glória do Grande**
+
+_(Periyar Matchi Tiran)_
+
+**1130.** **Se ele presta um santo serviço a um Grande [um _Jnani_], a alma iludida perderá sua ilusão, a riqueza bem estabelecida e permanente da Graça será alcançada [por ele] no coração, e ele viverá como a pessoa mais afortunada.**
+
+**47 Um cujas _Vasanas_ estão Mortas**
+
+_(Vasanai Mandar Tiran)_
+
+**1131.** **Como a agitação [ou confusão] nunca surgirá sem [o surgimento de] o sentimento 'Eu sou apenas o corpo' [o ego] no coração, aquele cujas tendências [_vasanas_] - [que são a forma de] o ego ou a mente - estão mortas, não serão mentalmente agitadas [ou confundidas] nem mesmo em sonho.**
+
+**1132.** **Criaturas baixas, como animais de quatro patas e pássaros, vivem sempre com mentes agitadas [ou errantes]. [Mas] o iluminado [o _Jnani_], cuja mente vive destituída de qualquer pensamento [como mera existência-consciência 'Eu sou'], [só] é aquele que [realmente] vive.**
+
+**_Michael James_**: A vida silenciosa na qual a mente está morta, sozinha é a vida adequada para um homem viver; a vida de um homem cuja mente está vagando, não é melhor do que a vida de pássaros e bestas.
+
+**1133.** **Embora eles empreendam e façam muitas ações [_vyvaharas_], aqueles cujas tendências mentais [_manavasanas_] estão mortas são como alguém que se senta por muito tempo [aparentemente] ouvindo histórias purânicas, mas que tem [na verdade] direcionado sua mente para longe.**
+
+
+
+
+
+
+
+
+**1134.** **Embora estejam [sentados] em silêncio, se suas tendências mentais [_mana-vasanas_] não forem destruídas, são de fato aqueles que fizeram tudo como o fazedor, assim como alguém que [sofre pensando] em sonho [que] escalou uma colina e está caindo de cabeça sobre um precipício, embora [na verdade seu corpo esteja] deitado silenciosamente [dormindo em sua cama].**
+
+**_Michael James_**: As ideias expressas nos dois versos acima por Sri Muruganar, que também são expressas no décimo primeiro capítulo de _Vichara Sangraham_, foram resumidas por Sri Bhagavan no seguinte verso, que também está incluído em _Ulladu Narpadu – Anubandham_ como o verso 30.
+
+**B22. Assim como alguém que está [aparentemente] ouvindo uma história quando sua mente foi [na verdade] longe, a mente [do _Jnani_] na qual as _vasanas_ foram apagadas, não fez [nada] embora [aparentemente] tenha feito [muitas coisas]. [Por outro lado] a mente [do _ajnani_] que está impregnada delas [as _vasanas_], fez [muitas coisas] embora [aparentemente] não tenha feito [nada], [assim como] alguém que [pensa] em sonho [que] escalou uma colina e está caindo sobre um precipício, embora [na verdade seu corpo esteja] deitado imóvel aqui [dormindo em sua cama].**
+
+**_Sadhu Om_**: Embora uma pessoa possa parecer a um observador estar sentada e ouvindo uma história, se sua mente não está prestando atenção na história, mas está absorvida em pensar em outras questões, na verdade ela não está ouvindo a história. Da mesma forma, embora um _Jnani_ possa parecer para nós observadores estar envolvido em muitas atividades, uma vez que suas _vasanas_ foram destruídas e, portanto, ele perdeu o senso de fazer, na verdade ele não está fazendo nada [referir-se também aos versos 1105, B21, 1140 e 1165].
+
+Embora o corpo de uma pessoa dormindo seja visto deitado tranquilamente em um lugar, ela pode estar sofrendo devido aos seus sonhos, acreditando que escalou uma colina e está caindo de um precipício. Da mesma forma, embora o corpo de um _ajnani_ seja visto sentado em silêncio por muito tempo em meditação ou _samadhi_, e embora pareça ter desistido de todas as atividades, uma vez que suas tendências para a ação [_karma-vasanas_] não foram destruídas e, portanto, ele mantém o senso de fazer, ele é na verdade quem está fazendo todos os tipos de _karmas_ e experimentando seus frutos.
+
+
+
+
+
+
+
+
+
+**48 O Libertado**
+
+_(Jivan-Muktar Tiran)_
+
+**1135-1136. “Embora sua ação tenha sido destruída, é apropriado chamar aqueles que estão usando um corpo, que estão comendo [ganhar a vida] por outras atividades e que estão fazendo ações [_karma-bandha_] de ‘libertado’? Também vemos que, sendo vítimas do _karma_ designado [ou seja, do seu _prarabdha karma_], até mesmo aqueles Grandes sofrem, [então como pode se dizer que eles estão livres da experiência do prazer e da dor, que são os resultados da ação?]” Se for perguntado assim, [a resposta é que] seus sofrimentos são meramente de acordo com a perspectiva [_drishti_] dos observadores [os _ajnanis_]; me diga, eles [os _Jivan-muktas_] dizem que estão sofrendo?**
+
+**_Sadhu Om_**: Como o _ajnani_ se considera um corpo [um indivíduo separado e finito], ele não pode deixar de ver até mesmo o _Jnani_ como um corpo; no entanto, em sua própria perspectiva, o _Jnani_ sabe que Ele é o Eu Infinito, que é sem corpo e completamente desprovido de individualidade. Devido à sua perspectiva defeituosa [_dosha-drishti_], as pessoas veem o _Jnani_ como um executor [_karta_] de ações e como o experimentador [_bhokta_] de seus frutos, que são designados como _prarabdha_. Mas como o _Jnani_ é como o espaço infinito e indivisível, que não tem individualidade separada, Ele não sente que está fazendo quaisquer ações ou que está desfrutando ou sofrendo de seus frutos. Tendo transcender o dualismo de prazer e dor, Ele é tanto um não executor [_akarta_] quanto um não experimentador [_abhokta_]. Assim, para o _Jnani_, nenhum dos três _karmas_ [_agamya_, _sanchita_ e _prarabdha_] existe sequer minimamente. Refira-se aqui aos versos 1144 e B23, e ao verso 33 de _Ulladu Narpadu – Anubandham_.
+
+Sri Bhagavan uma vez revelou sua própria experiência ao dizer: “O rádio canta e fala, mas se você o abrir, não encontrará ninguém lá dentro. Da mesma forma, minha existência é como o espaço; embora este corpo fale como o rádio, não há ninguém dentro como um executor.”
+
+
+
+
+
+
+**1137.** **Quando aqueles Grandes [os _jivan-muktas_] experienciam a realidade transcendente [Self] apenas como sua própria forma [_swarupa_], essas pessoas insensíveis [os _ajnanis_, que identificam o corpo insensível como 'eu'] vendo-os [os _Jivan-muktas_] como a forma do corpo sofredor, é apenas de acordo com a perspectiva dos observadores [esses _ajnanis_].**
+
+**1138.** **Saiba que o mérito [ou _punya_ que resulta das boas ações que os _jivan-muktas_ podem parecer fazer] vai para aqueles que se aproximam e elogiam com amor [aqueles] Grandes Libertados, que, tendo perdido o sentido de executor, vivem como ordenado por Deus, e que o demérito [ou _papa_ que resulta dos pecados que os _jivan-muktas_ podem parecer fazer] vai para aqueles que os vilipendiam ao invés de elogiá-los.**
+
+**_Michael James_**: Como a vida corporal de um _Jivan-mukta_ é uma mera aparência que existe apenas na perspectiva errada do _ajnani_, todas as ações de Seu corpo, fala e mente também são uma mera aparência. Portanto, uma vez que tais ações não existem em Sua perspectiva, Ele não pode ser afetado de maneira alguma por seus resultados.
+
+**1139.** **Se for perguntado, "Se eles [os _Jivan-muktas_] perderam o sentido de executor, como podem continuar as ações [do seu corpo, fala e mente]? Nós vemos [tais] ações em andamento", tenha certeza de que, uma vez que [seus] anexos internos morreram, eles têm o próprio Deus residindo em seus corações e fazendo [todas essas ações].**
+
+**_Sadhu Om_**: Como mencionado na nota do verso 1136, Sri Bhagavan uma vez comparou o corpo de um _Jivan-mukta_ a um rádio, que canta e fala, mas que não tem ninguém dentro dele. Assim como aquilo que faz o rádio cantar ou falar é a estação de transmissão, que está em algum lugar distante, então o executor que está falando e agindo no corpo de um _Jnani_ é o próprio Deus.
+
+
+
+
+
+
+
+
+
+
+**1140.** **As ações dos grandes _Jivan-muktas_ na intoxicação do Silêncio, que é desprovido de todo 'Eu' e 'meu', são como as crianças comendo em um sono muito profundo quando são feitas para se sentar e comer.**
+
+**_Sadhu Om_**: Sendo intoxicadas por seu estado de sono profundo e feliz, essas crianças não têm senso de executor, 'Eu estou comendo', e não têm senso de experienciador, 'Esta comida é saborosa', e ainda assim elas realizam a ação de comer. Da mesma forma, sendo intoxicados por seu estado feliz de Silêncio, o estado do sono sem sono, os _Jnanis_ não têm senso de executor ou de experienciador, mesmo que pareçam realizar ações. Assim como a criança está completamente inconsciente de sua alimentação, assim o _Jnani_ está completamente inconsciente de todas as ações de Seu corpo, fala e mente. Refira-se aqui aos versos 1105, B21, 1133, B22, 1148. B24 e 1165.
+
+**1141.** **Assim como um carregador carrega um fardo e felizmente o coloca no destino, assim também o grande conhecedor da realidade [_mey-jnani_] ficará feliz em colocar o fardo deste corpo.**
+
+**_Sadhu Om_**: Um carregador nunca sentirá qualquer apego na forma de 'Eu' ou 'meu' em relação ao fardo que está carregando. Da mesma forma, um _Jnani_ nunca sentirá qualquer apego em relação ao Seu corpo, seja na forma 'Eu sou este corpo' ou na forma 'este corpo é meu'. Assim como um prato de folha só serve para ser descartado depois que se comeu nele, assim o corpo só serve para ser descartado depois que o autoconhecimento - o fruto que deve ser obtido vivendo no corpo - foi alcançado. Com a morte do corpo, o _Jnani_ não incorrerá em nenhuma perda e não sentirá nenhuma tristeza. O objetivo do presente verso é apenas ensinar essa verdade, e não deve ser interpretado como se o _Jnani_ estivesse preso ao corpo até a hora da morte, ou que Ele sentisse o corpo como um fardo indesejado, ou que Ele estivesse sofrendo por viver no corpo.
+
+**_Michael James_**: O verso 8 do apêndice de _Guru Vachaka Kovai – Urai_ é incluído aqui. Neste verso Sri Bhagavan diz:
+
+**Quem conheceu o Self descartará o corpo assim como [se descarta] uma folha depois que a comida foi comida [a partir dela].**
+
+Neste verso de duas linhas, Sri Bhagavan resumiu a ideia expressa em um verso de quatro linhas em uma obra em tâmil chamada _Prabhulingalila_, capítulo 12, verso 11, de Sivaprakasa Swamigal. Consulte _Letters from Sri Ramanasramam_, p. 208, para mais detalhes. Nos últimos dias de Sua vida corporal, quando os devotos oravam a Ele, "Ó Bhagavan, você deveria viver neste corpo por muitos mais anos", Sri Bhagavan costumava se referir a este verso para fazê-los entender que, uma vez que não há mais benefício a ser obtido vivendo no corpo depois que o autoconhecimento foi alcançado, é apenas apropriado descartá-lo.
+
+**1142.** **A onda do oceano profundo permitirá que uma pequena criatura que caiu [nela] e que está à beira da morte, levante a cabeça? [Da mesma forma] diante da plena inundação do Silêncio do verdadeiro conhecimento [_mey-jnana-mouna_], é possível para o ego, 'Eu sou o corpo base e carnal', se erguer?**
+
+**_Sadhu Om_**: A experiência de um _Jivan-mukta_ é uma grande enchente do Silêncio do _Jnana_. Nesse fluxo ilimitado de Silêncio, o ego nunca pode se erguer novamente, e, portanto, é certo que para um _Jivan-mukta_ não haverá renascimento [não há ressurgimento do ego].
+
+
+
+
+
+**1143.** **Pode a mente [do _Jnani_] que conheceu a grandeza do seu próprio Eu, tendo perdido o 'Eu' [o ego, cuja forma é 'Eu sou isso'], ser enganada pela aparência enganosa e ilusória [deste mundo irreal]? Pode a percepção da aparência irreal da dualidade ser real em meio ao maravilhoso e puro espaço de _turiya_ [o espaço sem nome e sem forma da pura consciência]?**
+
+**1144.** **Para um _jiva_ que está sofrendo devido à morte e ao nascimento, a coisa mais digna de fazer e atingir com pleno amor, é [ter] a experiência do grande estado de _Jivan-mukta_, tendo submergido e conhecido [sua própria verdadeira natureza], para que o surgimento [do ego], que é o ganhar vida [do _jiva_] devido à [sua] esquecimento da sua própria realidade [Eu], possa morrer.**
+
+**_Michael James_**: O surgimento do ego como 'Eu sou fulano de tal', que acontece devido ao esquecimento do Eu, é o nascimento do _jiva_. Para que este _jiva_ possa morrer e para que a interminável miséria do nascimento e da morte chegue ao fim, a coisa mais digna para o _jiva_ fazer é atentar para si mesmo com grande amor e, assim, conhecer sua própria verdadeira natureza [Eu], e assim submergir em sua fonte e atingir a experiência de _Jivan-mukti_.
+
+Este verso pode ser lido junto com os versos 500 e 501 no capítulo sobre o que é digno de ser feito.
+
+
+
+
+
+
+
+**1145.** **Diga-me, quando o marido deles, que é o autor, morre - o sentido de autoria [\ _kartritva_] tendo sido destruído - em vez das esposas, que são suas três _karmas_, se tornarem viúvas de uma vez, duas delas podem se tornar viúvas e uma delas permanecer casada?**
+
+**_Sadhu Om_**: O _jiva_ não é apenas o autor das _karmas_, mas também o experimentador de seus frutos. Portanto, quando o _jiva_ é destruído pelo autoconhecimento, todos os três _karmas_ [\ _agamya_, _sanchita_ e _prarabdha_] se tornarão inexistentes, já que não há ninguém restante para fazer ou experimentar eles. Portanto, para o _Jnani_ não há _karma_ de forma alguma. Assim, quando algumas escrituras dizem que _agamya_ e _sanchita_ são destruídas e que _prarabdha_ permanecerá sozinha para o _Jnani_, o que elas dizem deve ser entendido como uma mera formalidade [\ _upachara_] e não deve ser considerado a verdade real.
+
+A ideia expressa no verso de quatro linhas acima por Sri Muruganar, foi resumida por Sri Bhagavan no seguinte verso de duas linhas. Mais tarde, quando este verso de duas linhas foi incluído em _Ulladu Narpadu - Anubandham_, Sri Bhagavan adicionou outras duas linhas a ele.
+
+**B23. Saiba que, assim como nenhuma esposa permanecerá casada quando o marido morrer, todas as três _karmas_ se tornarão inexistentes quando o autor morrer.**
+
+**_Michael James_**: Este verso são as duas últimas linhas do verso 33 de _Ulladu Narpadu - Anubandham_. Nas duas primeiras linhas desse verso, Sri Bhagavan diz: “Dizer que _sanchita_ e _agamya_ não aderirão a um _Jnani_, [\ mas] que _prarabdha_ permanece [\ para ser experimentado por Ele], é uma resposta superficial para ser dita às perguntas dos outros”. Consulte aqui _The Path of Sri Ramana -_ Part One, pp. 66 a 68, para uma explicação detalhada.
+
+
+
+
+
+
+
+
+
+
+**1146.** **Para o corpo, que nasceu por causa de _prarabdha_, esse _prarabdha_ nunca falhará [em dar fruto]. [Mas] o _Jivan-mukta_, que se separou [do corpo] cortando o _chit-jada-granthi_, transcendeu o próprio _prarabdha_.**
+
+**_Sri Muruganar_**: O princípio de _Visishtadvaita_ de que _prarabdha_ não deixará de dar frutos mesmo para o _Jivan-mukta_, é refutado aqui. Como?
+
+Como Ele perdeu a consciência corporal com o corte do _chit-jada-granthi_, as atividades do Seu corpo existem apenas na perspectiva dos outros.
+
+**1147.** **“Quando [é um fato que] a experiência do _karma_ [_prarabdha_] existe como o corpo, se não há experiência do _karma_ [_prarabdha_] para alguém, [mesmo que ele seja um _Jnani_] não morrerá [seu corpo]?” - se você perguntar assim, me diga corretamente por quem o corpo bruto é visto?**
+
+**_Michael James_**: É visto pelo próprio _Jnani_? Não é visto apenas pelos _ajnanis_?
+
+**_Sadhu Om_**: O _Jnani_, que não tem experiência de _prarabdha_, não vê um corpo existindo para Si mesmo. Assim como o corpo do sonho se torna inexistente assim que o sono termina, assim, na perspectiva do _Jnani_, Seu corpo se tornou inexistente assim que Ele alcançou o _Jnana_ [isto é, assim que Sua experiência de _prarabdha_ foi destruída]. Assim, o corpo do _Jnani_ parece existir apenas na perspectiva dos _ajnanis_, que são eles mesmos completamente inexistentes em Sua perspectiva. Portanto, é sem sentido dizer que o corpo de um _Jnani_ ainda está vivo.
+
+**_Michael James_**: O verso 9 do apêndice ao _Guru Vachaka Kovai – Urai_ é incluído aqui. Neste verso, Sri Bhagavan diz:
+
+**“Se a pomba capturada na mão do caçador for libertada, ela voará até mesmo da floresta [na qual foi capturada], [não voará?]” Se você perguntar assim, [a resposta é que] quando o caçador, voltando para casa, vai embora [da floresta deixando a pomba]), ela [a pomba] permanecerá [na floresta], já que até aquela floresta, que era [previamente considerada por ela como] alienígena, será [encontrada como sendo sua] casa.**
+
+Um dia, um devoto chamado K. V. Ramachandran compôs um verso de duas linhas (_kural venba_) no qual disse: "Se a pomba capturada na mão do caçador for libertada, ela voará até mesmo da floresta". Embora este verso pareça ser uma afirmação, na verdade pretendia ser uma pergunta em forma metafórica. Aqui 'o caçador' significa _maya_, 'a pomba' significa _jiva_, a libertação da pomba significa a libertação do _jiva_, e 'a floresta' significa o corpo bruto. Portanto, o significado implícito no verso de K. V. Ramachandran é: "Se o _jiva_, que está preso por _maya_, é libertado, ele deixará imediatamente o corpo [no qual estava preso], não deixará?"
+
+Sri Bhagavan deu Sua resposta a essa pergunta pegando o mesmo verso de duas linhas e o expandindo para um verso de quatro linhas (_venba_). O significado implícito em Sua resposta é o seguinte: "Se você perguntar assim, a resposta é que quando, prestando atenção a 'eu', _maya_ [que é nada mais que a mente] desaparece, sendo considerada inexistente, o _jiva_ [que assim realizou sua verdadeira natureza como o Ser] permanecerá no corpo bruto, pois mesmo aquele corpo, que anteriormente era considerado pelo _jiva_ como estranho ou diferente de si mesmo, será conhecido [através da experiência ininterrupta de _Jnana_] como nada mais que o Ser".
+
+Este significado implícito é tornado ainda mais explícito em tâmil pelo fato de Sri Bhagavan usar as palavras _'nadi aham'_, que significa tanto "Voltando para casa" quanto "prestando atenção a 'eu'".
+
+Portanto, o significado da resposta de Sri Bhagavan é que não há regra de que o corpo deve morrer quando se atinge _Jivan-mukta_. Além disso, uma vez que após a realização do Ser nada (nem o corpo, nem o mundo) pode existir como algo além da única consciência ininterrupta do Ser, até mesmo o conhecimento limitado 'o corpo não sou eu', que existia durante o período de _sadhana_, será removido, e o conhecimento ilimitado 'o corpo também sou eu' será alcançado. O verso 17 de _Ulladu Narpadu_ também pode ser lido aqui.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
