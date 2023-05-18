@@ -856,3 +856,34 @@ Embora essas aplicações de contratos inteligentes possam ter um impacto signif
 
 ---
 ---
+
+## detail in pt-br the etymology and lore of the word 'assassin'
+
+< Claro, vamos falar sobre a etimologia e a história do termo "assassino".
+
+A palavra "assassino" tem uma origem bastante interessante que remonta à Idade Média no Oriente Médio. Ela vem do árabe "ḥaššāšīn", que significa literalmente "os que usam ou comem haxixe", uma referência a membros de uma seita islâmica nizarita conhecida por seus hábitos de consumo de drogas e práticas de assassinato político.
+
+Esta seita, também conhecida como Ismailis Nizaris, era um grupo islâmico xiita que teve um papel importante na história política do Oriente Médio durante o período medieval. Seus membros eram conhecidos por seus atos de assassinato altamente teatralizados e estratégicos, usados como uma ferramenta para semear o medo e a incerteza entre seus inimigos. Para realizar esses assassinatos, os membros da seita passavam por um extenso treinamento e preparação, muitas vezes se infiltrando nas cortes de seus alvos por meses ou até anos para se colocarem na posição certa para o ataque.
+
+O líder da seita, Hassan-i Sabbah, supostamente fazia uso de haxixe para manipular seus seguidores, fazendo-os acreditar que eles iriam para o paraíso se morressem em serviço. Daí veio o termo "ḥaššāšīn", que foi mais tarde traduzido para o latim como "assassinus", dando origem à palavra "assassino" em muitas línguas modernas, incluindo o português.
+
+A imagem dos assassinos foi ainda mais mitificada nas narrativas ocidentais durante as Cruzadas, quando os europeus entraram em contato com a seita. As histórias de seus assassinatos altamente teatralizados e a aparente disposição dos membros da seita para morrer por sua causa causaram uma grande impressão no Ocidente, e muitas lendas e mitos se formaram em torno deles.
+
+A palavra "assassino" desde então entrou no uso comum para se referir a qualquer pessoa que mata outra intencionalmente e com premeditação.
+
+## detail in pt-br the tales in how hashish itself affected the period
+
+< O haxixe, um produto derivado da planta de cannabis, tem uma longa história de uso no Oriente Médio. Durante a Idade Média, era usado tanto para fins medicinais quanto recreativos. No entanto, a sua conexão com os "assassinos" (ḥaššāšīn) é talvez a mais infame.
+
+Os membros da seita nizarita eram frequentemente chamados de "usuários de haxixe", embora a extensão real do uso de haxixe pelos assassinos seja objeto de debate entre os estudiosos. Algumas fontes sugerem que o haxixe era usado como uma forma de manipulação pelo líder da seita, Hassan-i Sabbah, para induzir visões do paraíso nos seus seguidores e incentivá-los a cometer assassinatos.
+
+De acordo com essas histórias, os futuros assassinos eram drogados com haxixe e levados a um "jardim do paraíso" cheio de prazeres sensuais. Quando acordavam, eram informados de que haviam experimentado uma visão do paraíso e que retornariam lá se obedecessem aos comandos de Hassan-i Sabbah, incluindo a realização de assassinatos.
+
+No entanto, outros estudiosos questionam essa narrativa, sugerindo que o termo "usuários de haxixe" era mais provavelmente uma forma de difamação usada pelos inimigos da seita. Não há provas concretas de que o haxixe fosse usado sistematicamente na preparação dos assassinos, e é possível que as histórias de uso de drogas sejam mais mito do que realidade.
+
+Além disso, deve-se notar que o uso de haxixe não estava limitado aos supostos assassinos. A droga era conhecida em todo o Oriente Médio e era usada para uma variedade de propósitos. Em muitas culturas, o haxixe era usado em contextos religiosos e espirituais, assim como para fins medicinais.
+
+No geral, a influência do haxixe na história do Oriente Médio é complexa e multifacetada. Embora seja famoso pelo seu suposto papel na manipulação dos assassinos, o seu uso ia muito além dessa seita e desempenhava um papel em muitos aspectos da sociedade e da cultura medieval do Oriente Médio.
+
+---
+---
