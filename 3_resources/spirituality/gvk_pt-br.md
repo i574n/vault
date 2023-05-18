@@ -7117,21 +7117,32 @@ Portanto, o significado da resposta de Sri Bhagavan é que não há regra de que
 
 
 
+**1148.** **Aquele que está cego pela embriaguez não sabe se a roupa em seu corpo permanece ali ou caiu. [Da mesma forma] o _Siddha_ [ou seja, _Jnani_] que conhece [e está imerso na] forma da luz [Sua própria autoconsciência], que é [ilimitada e sutil como] o espaço, não sabe da conexão [a vida] ou a remoção [a morte] do corpo irreal e insensível.**
 
+**_Michael James_**: Este verso é uma tradução de um verso em sânscrito no _Bhagavatam (XI-13-36)_ que Sri Bhagavan às vezes costumava citar. A mesma ideia também é expressa por Sri Bhagavan no seguinte verso. Consulte aqui _Day by Day with Bhagavan_, 9-1-46 e 18-1-46 a 21-1-46.
 
+**B24. O corpo é transitório [e portanto irreal]. Seja [devido ao _prarabdha_] repousando ou movendo, seja devido ao _karma_ [_prarabdha_] agarrando-se [vivendo] ou deixado [morto], o _Siddha_ que conhece o Ser não conhece o corpo, assim como aquele que está cego pela intoxicação com aguardente [não conhece suas] roupas.**
 
+**_Sadhu Om_**: Só porque as palavras "seja repousando ou movendo, seja vivendo ou morto" são usadas aqui, não devemos concluir que para o _Jnani_ um corpo realmente nasce, vive, trabalha e morre. Devemos entender que para o _Jnani_ na verdade não existe tal coisa como nascimento, atividade e morte do corpo, e que estes parecem existir apenas na perspectiva errada do _ajnani_ que os vê.
 
+**1149.** **A forma do corpo vivo do perfeito _Jnanamukta_, que destruiu o defeito do ego, é como um tecido de seda vermelho [queimado], que permanece sem perder sua aparência mesmo que tenha perdido sua realidade, tendo se tornado cinzas.**
 
+**_Michael James_**: Quando um tecido de seda vermelho é queimado, ele mantém tanto sua forma quanto sua cor, mesmo que sua substância tenha se transformado em cinzas. Da mesma forma, depois que o ego foi queimado no fogo de _Jnana_, o corpo do _Jnani_ parecerá permanecer inalterado e aparentemente continuará a viver e a realizar atividades, mesmo que Sua consciência 'eu sou o corpo' (_dehatma-buddhi_) tenha sido completamente destruída.
 
 
 
 
 
 
+**1150.** **Assim como apenas uma cobra pode conhecer as pernas de uma cobra, apenas um _Jnani_ pode conhecer a natureza de um _Jnani_. A natureza de um _Jnani_ não pode ser conhecida corretamente por mais ninguém, mas apenas erroneamente [literalmente, como _viparita_].**
 
+**_Sri Muruganar_**: Como o conhecimento de quem possui apenas conhecimento de livros é um conhecimento iludido, ele só pode ver a realidade erroneamente e não como ela é, e portanto ele não pode conhecer claramente a verdadeira natureza de um _Jnani_. Mesmo nas escrituras que dão a definição [_lakshana_] de _Jivan-mukti_, é dito que os _Jnanis_ podem parecer loucos, pessoas possuídas por fantasmas ou crianças, e que não é possível para as pessoas ignorantes [_ajnanis_], nas quais a consciência do mundo não se perdeu, compreendê-los.
 
+**1151.** **A experiência suprema [_brahmanubhava_] - que tem a glória de não conhecer qualquer outra coisa - do grande apreciador da alegria do verdadeiro conhecimento [_meyjnana-maha-anandi_], que alcançou o estado de Silêncio [_mouna_], a forma Daquilo [_tadakara_] que brilha triunfante na destruição de si mesmo [o ego], não pode ser concebida por quem quer que seja.**
 
+**_Michael James_**: A ideia expressa neste verso é reexpressa por Sri Bhagavan em suas próprias palavras no seguinte verso, que também está incluído em _Ulladu Narpadu_ como verso 31.
 
+**B25. Para Ele que desfruta da bem-aventurança do Ser, que surgiu na destruição de si mesmo [o ego], que coisa única resta para fazer? Ele não sabe nada além do Ser; [portanto] quem pode e como conceber qual é o seu estado?**
 
 
 
@@ -7139,59 +7150,162 @@ Portanto, o significado da resposta de Sri Bhagavan é que não há regra de que
 
 
 
+**49 O _Jnani_**
 
+_(Jnaniyar Tiran)_
 
+**1152.** **É impossível expressar a grandeza de um _Jnani_. Ele sozinho conhece a natureza [ou beleza] de Sua existência. Ele é mais vasto que o espaço; Ele é mais firme que uma montanha. Tendo examinado e destruído o sentimento 'eu sou o corpo', conheça [esta verdade claramente].**
 
+**_Sri Muruganar_**: Enquanto tivermos a sensação 'eu sou o corpo' [_dehatma-buddhi_], mesmo o _Jnani_ parecerá ter um corpo e estar em servidão como nós, e, portanto, é impossível para nós conhecermos a grandeza do _Jnani_ como ela é. Somente quando perdemos essa ignorância [_ajnana_], o estado ininterrupto [_akhanda nilai_] do _Jnani_ brilhará.
 
+**1153.** **Saiba que o Muni que conheceu a verdadeira luz - que é o Ser, que permanecendo sem forma faz tudo [as formas do mundo] brilhar - brilhando intensamente e sem véu [_tirodhana_] como 'Eu' mesmo, é o rei que governa [todos] os céus [como _Brahma Loka_, _Vishnu Loka_ e _Siva Loka_].**
 
+**1154.** **A mente do _Jnani_, que dorme no Ser, tendo se estabelecido imóvel no oceano do perfeitamente natural êxtase [_nir-atisaya ananda_] do Silêncio indiferente do Ser [_swarupa-nirvikalpa-manna_], não sofrerá perdendo-se no mundo.**
 
+**_Michael James_**: Ou seja, ele não sofrerá no mundo, sendo capturado no desperdício da ilusão das falsas tríades ou triputis.
 
 
 
 
 
 
+**1155.** **Os sábios que, tendo escorregado [através de _pramada_] do Ser, que é o despertar [real], desejam o sonho ilusório do mundo que é visto, como [se fosse] o despertar [real], são diferentes, e os sábios que estão em clareza, tendo conhecido o Ser, são diferentes.**
 
+**_Sadhu Om_**: A palavra _‘pulavan’_ [sábio] significa 'aquele que sabe'. O primeiro tipo de sábio mencionado neste verso é o _ajnani_ erudito, que apenas adquiriu conhecimento através dos cinco sentidos, enquanto o segundo tipo é o verdadeiro _Jnani_ que alcançou o autoconhecimento. Uma vez que o conhecimento adquirido através dos cinco sentidos é um conhecimento falso, enquanto o conhecimento do Ser é o único conhecimento verdadeiro, esses dois tipos de sábios são completamente diferentes um do outro.
 
+**1156.** **Por mais atentamente que se olhe para as verdadeiras escrituras, elas só dirão para se examinar dentro de si mesmo [e assim conhecer quem realmente se é]. O propósito de olhar num espelho é apenas ficar feliz ao ver o belo rosto do homem, não é?**
 
+**_Sadhu Om_**: O propósito de olhar num espelho não é simplesmente desperdiçar o tempo, seja olhando o reflexo ou apreciando o espelho; o propósito é apenas experimentar a alegria de ver a beleza do próprio rosto. Da mesma forma, o propósito de ler as escrituras é apenas experimentar a verdadeira felicidade do autoconhecimento. Portanto, assim que alguém lê as escrituras, que revelam 'Você mesmo é aquele _Brahman_', deve-se fazer bom uso dessa informação e verificar a verdade dela a partir da própria experiência direta, examinando e conhecendo a si mesmo através da pergunta 'Quem sou eu?'. Consulte aqui a obra _Quem sou eu?_ onde Sri Bhagavan diz, “Como é dito em todas as escrituras que para alcançar a libertação deve-se controlar [ou seja, destruir] a mente, depois de saber que o controle da mente é a decisão final das escrituras, ler escrituras ilimitadamente é infrutífero” [veja o verso 141 desta obra].
 
+Depois de se envolver na _sadhana_ de conhecer o Ser, pesquisar nas escrituras não tem utilidade. As escrituras são úteis apenas para nos direcionar para o caminho da autoindagação e não têm mais utilidade para nós durante o tempo em que estamos envolvidos na prática ou _nididhyasana_. Isso é o que Sri Bhagavan quis dizer na obra _Quem sou eu?_ quando disse: “Para Rama saber que ele é Rama, é necessário um espelho? ... Tudo que se aprendeu terá que ser esquecido em algum momento."
 
 
 
 
 
+**1157.** **Entre aqueles que se aproximam do espelho - as verdadeiras _Jnana-sastras_ que revelam que o que deve ser conhecido é o Self - muitos [meramente] olham para as _sastras_ e os grandes comentários [sobre elas], enquanto poucos se salvam [como as escrituras recomendam] procurando [dentro de si] e conhecendo sua própria natureza [Self].**
 
+**1158.** **Se [a verdade é] dita, o conhecedor da realidade [_mey-jnani_] é diferente, e o estudioso [_vijnana_] que conhece as escrituras [que falam] sobre o verdadeiro conhecimento [_mey-jnana_] é diferente. Para aqueles que desejam romper a servidão da ignorância [_ajnana_], é necessário deixar os estudiosos e se associar com aqueles que permanecem como o supremo Self [_atma-para-nishthar_].**
 
+**_Sri Muruganar_**: Ele [Sri Bhagavan] diz isso porque o conhecimento experiencial [_anubhava-jnana_] não pode ser alcançado a menos que se associe com aqueles que permanecem como Self. O benefício que pode ser obtido pelo mero _vijnana_ [conhecimento scriptural] não é nada além do louvor e adoração do mundo.
 
+**1159.** **Saiba que as palavras [de _upadesa_] proferidas por um _Jnani_, que conheceu a realidade que sustenta tudo pelo poder de [sua] Graça, sempre serão um apoio salvador para as almas que foram iludidas por muito tempo sob o domínio da escuridão [mas que desejam ser salvas].**
 
+**_Sadhu Om_**: A razão pela qual se diz no verso 1158 que se deve deixar os estudiosos e associar-se em vez disso com aqueles que permanecem como o Self é explicada neste verso. Ao invés de todas as palestras e explicações dadas por estudiosos scripturais, em uma única palavra proferida por um _Jnani_, que [embora possa ser iletrado] conheceu a realidade suprema, há mais poder de autoridade [o poder da luz do Self] para dissipar a escuridão da ignorância [_ajnana_] em outros _jivas_. Portanto, é instruído aqui que devemos nos aproximar com amor de um _Jnani_ ao invés dos estudiosos scripturais.
 
 
 
 
+**50 A Ação dos _Jnanis_**
 
+_(Jnanigal Karma Tiran)_
 
+**1160.** **Se o veredito é que a inação sozinha é _Jnana_, [então significaria que] o veredito é que até a inação devida à lepra é _Jnana_! Saiba que aquele exaltado estado em que se abandonou gostos e aversões por ações [e por seus frutos] e que está desprovido de qualquer autoria [literalmente, responsabilidade] na mente, sozinho é o estado de _Jnana_.**
 
+**_Sadhu Om_**: Permanecer sem o surgimento de autoria, seja na forma de 'eu devo fazer ações' ou na forma de 'eu devo parar de fazer ações', é o verdadeiro estado de _Jnana_. Sri Bhagavan costumava dizer que fazer _nishkamya karma_ [ou seja, realizar ação sem desejo pelo fruto] significa verdadeiramente apenas permanecer no estado em que não se tem senso de autoria nas ações que são realizadas.
 
+**1161.** **Para aqueles que vivem no Self como a beleza desprovida de pensamento, não há nada a ser pensado. O que deve ser aderido é apenas a experiência do Silêncio [_mauna-anubhava-katchi_], [porque] naquele [supremo] estado nada existe para ser alcançado além de si mesmo.**
 
+**1162.** **Saiba que, embora façam muitas atividades imensas, aqueles que realizaram o majestoso estado de estar desprovido de pensamento, tendo conhecido que a mera existência [‘Eu sou’] sozinha é a sua verdadeira natureza, são não-fazedores [_akartas_] e [devido à firmeza de seu conhecimento ‘Eu sou aquele que existe, não aquele que faz’] não serão iludidos como se fossem os fazedores [_kartas_].**
 
 
 
 
+**1163.** **Mesmo a renúncia do caminho do _niyama_ [dever religioso] pelos grandes _Jivan-muktas_, que permanecem em sua transcendental natureza real [Self], tendo amadurecido no caminho do _dharma_, é tão bela quanto [sua] observância [do caminho do _niyama_] em [sua] vida externa.**
 
+**_Michael James_**: Como o mais alto de todos os _dharmas_ (deveres) é o _swadharma_, e como o verdadeiro significado do _swadharma_ é a permanência no Self, os _Jivan-muktas_ (ou seja, aqueles que alcançaram a perfeição na permanência no Self) estão sempre observando o verdadeiro e mais alto _dharma_. Portanto, não há erro, mesmo que eles renunciem a todos os outros _dharmas_, pois sua renúncia a eles é tão gloriosa quanto sua observância deles.
 
+Na perspectiva dos _ajnanis_, alguns _Jiva-muktas_ podem parecer estar fazendo todos os _dharmas_ e _karmas_ prescritos nos _dharmasastras_, enquanto outros _Jivan-muktas_ podem parecer como se não estivessem observando tais _dharmas_, mas estivessem se comportando como loucos, crianças ou tolos. Mas mesmo o seu comportamento será tão belo quanto a sua observância de todos os _dharmas_ e _karmas_ adequadamente.
 
+**1164.** **Saiba que o caminhar do grande _Mukta_, sem corpo e indivisível, como se [ele estivesse] tendo um corpo, é como se o espaço supremo [da consciência] estivesse caminhando [na terra], assim como o Senhor Vishnu, que percorreu [todos] os mundos como Seu domínio.**
 
+**_Michael James_**: Como o _Jivan-mukta_ percebeu que Ele não é o corpo limitado, Ele brilha desprovido do corpo como o Self indivisível e ilimitado. No entanto, na perspectiva dos _ajnanis_, Ele parece ter um corpo e estar caminhando na terra. Como é verdadeiramente nada além de um espaço sem forma de Self que parece estar caminhando na forma daquele corpo, é tão maravilhoso quanto o Senhor Vishnu, que assumiu uma forma vasta e cobriu todos os mundos em três passos, reivindicando-os como Seu domínio.
 
 
 
 
 
 
+**1165.** **Embora o _Jnani_ - que, tendo descartado a coleção de implementos [_karuvi_] e instrumentos [_karana_] como os agentes que realizam as ações, não tem contato com eles, que são os agentes - [aparentemente] faça [ações], Ele é um não-fazedor.**
 
+**_Sadhu Om_**: A palavra 'implementos' [_karuvi_] significa os cinco órgãos sensoriais [_jnanendriyas_], a saber, olhos, ouvidos, nariz, língua e pele, e os cinco órgãos de ação [_karmendriyas_], a saber, boca, pernas, mãos, ânus e genitais, enquanto a palavra 'instrumentos' [_karana_] significa os quatro órgãos internos [_antahkaranas_], a saber, a mente, intelecto, _chittam_ e ego. Sabendo que é apenas esses implementos e instrumentos que estão realizando todas as ações e sabendo que nenhum deles é 'Eu', o _Jnani_ os descartou e permanece sem ter o menor contato com eles, e, portanto, Ele sempre permanece sem qualquer sentido de autoria, mesmo que na perspectiva dos outros Ele pareça estar realizando ações. Refira-se aqui aos versos 1105, B21, 1133, B22 e 1140.
 
+**1166.** **Aqueles [os _Jnanis_] que estão alegremente contentes no coração com o que quer que venha [por conta própria devido ao _prarabdha_], que transcenderam todos os diádicos [_dvandvas_], que estão livres de inveja e que alcançaram o estado de paz em meio ao sucesso e fracasso, não serão presos pelas ações [_karmas_] que eles [parecem] fazer.**
 
+**_Michael James_**: O verso de quatro linhas acima de Sri Muruganar é uma paráfrase do verso 22 do capítulo 4 do _Bhagavad Gita_. A mesma ideia é expressa por Sri Bhagavan no verso 40 de _Bhagavad Gita Saram_ e também no seguinte verso de duas linhas.
 
+**B26. Saiba que Ele [o _Jnani_] que está equilibrado [tanto no sucesso quanto no fracasso], sendo feliz com o que quer que seja obtido [de acordo com o _prarabdha_], não tendo inveja e tendo descartado os diádicos [ou pares de opostos como dor e prazer, gostos e desgostos, e assim por diante], não é preso mesmo que Ele [aparentemente] faça ações.**
 
+
+
+
+
+**51 A Natureza daqueles que Permanecem como o Eu**
+
+_(Tanmayar Salbu Tiran)_
+
+**1167.** **Aqueles que escrutinam [e julgam] o _Jnani_ por sinais exteriores, voltarão tendo visto [Ele] como vazio, [porque] eles não veem a luz interior [do _Jnani_], que não pode ser conhecida pelo olho vazio [de carne] no rosto.**
+
+**_Sadhu Om_**: Algumas pessoas vão ver um _Jnani_ para ganhar mérito [_punya_]. No entanto, devido à imaturidade de suas mentes, elas veem apenas a aparência exterior do _Jnani_, e como essa aparência não está de acordo com suas noções preconcebidas maravilhosas de como um _Jnani_ deveria ser, eles retornam desapontados. Além disso, assim como uma pessoa que quer tomar banho retorna coberta de lama, tais pessoas imaturas às vezes até ridicularizam o _Jnani_ e, assim, voltam com fardos de pecados [_papas_] acumulados por vilipendiá-lo em vez de elogiá-lo [veja o verso 1138].
+
+Mesmo na vida de Sri Bhagavan havia algumas pessoas que costumavam ridicularizá-lo e encontrar defeito nele. Por exemplo, não sabendo como Sri Bhagavan havia vivido nos primeiros dias, completamente alheio ao Seu corpo e deitado ou sentado no chão de terra nua, algumas pessoas que o viram nos últimos dias vivendo uma vida aparentemente normal de atividade e sentado em um confortável sofá, costumavavam comentar, "O que é isso! Ele está sentado em um sofá apoiado por almofadas macias. Ele está comendo e se comportando como nós. Ele é um _Rishi_? Isso é _Jnana_?" Portanto, o presente verso é dado como um aviso a tais pessoas ignorantes que tentam julgar um _Jnani_ por Sua aparência exterior.
+
+
+
+
+
+
+
+**1168.** **Quando medido apenas por _siddhis_, a grandeza de um _Jivan-mukta_ será conhecida erroneamente. _Muktas_ brilharão com ou sem _siddhis_. [Portanto] aqueles que admiram _siddhis_ não podem conhecer [a verdadeira grandeza de um _Jivan-mukta_]. Saiba assim.**
+
+**_Sadhu Om_**: Um certo matemático que ganhou um Prêmio Nobel, tinha um filho de seis anos que tinha dificuldade em memorizar a tabuada do nove. Um dia, o pequeno menino perguntou ao pai se ele poderia repetir a tabuada do nove. Quando seu pai a repetiu corretamente, o menino ficou maravilhado e exclamou com orgulho, "Ah, quão sábio é meu pai! Por isso o mundo o honrou com um Prêmio Nobel! Realmente ele merece esse prêmio!" Pessoas mundanas que aprovam alguém como _Jnani_ apenas se ele for visto realizando _siddhis_, não são melhores do que esse menino, que aprovou o prêmio de seu pai apenas porque ele era capaz de repetir a tabuada do nove.
+
+**1169.** **O mundo está cheio de tolos que diminuem a grandeza de um _Jnani_, que existe e brilha longe [além da compreensão humana], imaginando [que eles veem nele] muitos _siddhis_, que são vistos apenas por sua mente completamente inapta e mesquinha.**
+
+**_Michael James_**: Os tolos pensam que estão glorificando um _Jnani_ quando imaginam que veem tantos _siddhis_ nele. Na verdade, no entanto, eles estão apenas diminuindo-o, porque os _siddhis_ que eles veem são pura imaginação mental, enquanto sua verdadeira grandeza está além da mente.
+
+**1170.** **Saiba que atribuir grandeza ao perfeito que permanece como o Eu por causa dos _siddhis_ [que Ele pode parecer realizar], é [como] louvar a grandeza do sol totalmente brilhante apenas glorificando a maravilhosa beleza de um átomo de um raio brilhante que entra em uma casa [através de um buraco no telhado].**
+
+
+
+
+
+
+**1171.** **Aquele que, enquanto continua a viver uma vida no corpo e no mundo, conheceu o corpo e o mundo como sendo [nada mais que] consciência [ou o Eu], vai iludir os outros como se estivesse preso ao corpo e ao mundo. [Portanto] quem pode conhecer [a verdadeira natureza de] um _Mukta_ por seu rosto [ou seja, vendo apenas sua aparência externa]?**
+
+**_Sadhu Om_**: “... Ele [que permanece como o Eu] não sabe de nada além do Eu; [portanto] quem pode e como conceber qual é o seu estado?” diz Sri Bhagavan no verso 31 de _Ulladu Narpadu_.
+
+**52 A Grandeza do Silêncio**
+
+_(Mauna Matchi Tiran)_
+
+**1172.** **A única letra - que é pura, que confere a glória do verdadeiro conhecimento [_mey-jnana_] e que é a fonte de todas as letras que têm um surgimento [na forma de som ou luz] - é aquela que sempre brilha por si só [ou como o Eu] no coração! Quem é capaz de escrevê-la?**
+
+**_Sadhu Om_**: Em 30 de setembro de 1937, um devoto chamado Somasundara Swami pediu a Sri Bhagavan para escrever “uma letra” [ou _ezhuttu_] em seu caderno. Sri Bhagavan graciosamente respondeu escrevendo um verso de duas linhas [_kural venba_], no qual ele disse: “A única letra [ou _ezhuttu_] é aquela que sempre brilha por si só [ou como o Eu] no coração! Quem é capaz de escrevê-la?” Posteriormente, quando Sri Bhagavan explicou a natureza dessa única letra, Sri Muruganar registrou sua explicação no verso acima, no qual ele incorporou o _kural venba_ de Sir Bhagavan como as duas últimas linhas. Mais tarde, Sri Bhagavan traduziu seu _kural venba_ para o sânscrito e telugu. Na versão em sânscrito, Ele disse: “A única letra [_ekam aksharam_] brilha ininterruptamente por si mesma no coração! Como pode ser escrita?”. Finalmente, em 21-9-1940, Sri Bhagavan transformou seu _kural venba_ em um _venba_ [um verso de quatro linhas] adicionando mais duas linhas no início, nas quais ele deu a razão pela qual o verso foi composto:
+
+**Aquilo [que é digno de ser chamado de] letra [_aksharam_] é a única letra [ou _ezhuttu_]. Você me pediu para escrever essa única letra [_aksharam_] neste livro. A única letra, que é imperecível [_aksharam_], é aquela que sempre brilha por si só [ou como o Eu] no coração! Quem é capaz de escrevê-la?”**
+
+A palavra _'aksharam'_, que é usada três vezes por Sri Bhagavan neste verso, significa tanto 'letra' quanto 'aquilo que é imperecível', e portanto a primeira frase pode alternativamente significar, “Aquilo que é imperecível [_aksharam_] é a única letra”.
+
+A única letra mencionada neste verso é o próprio Eu. Sua verdadeira forma é apenas o Silêncio [_mauna_], que é a definição correta de _Jnana_. A autoconsciência 'Eu-Eu' brilha transcendendo a luz e o som. Como brilha desprovida de som como o mero _sphurana_, transcende o som e, portanto, transcende a linguagem. Além disso, como o Eu é a pura consciência autoiluminada [_prajna_] que está além de todos os tipos de luzes grosseiras e sutis, transcende a luz, e portanto não pode ter a forma de uma letra escrita, já que todas as formas visíveis estão dentro do alcance da luz.
+
+A primeira expressão da verdadeira consciência da suprema realidade, o Eu, é o _sphurana_ 'Eu'. O _Pranava 'Om'_ é apenas a forma sonora dessa realidade, que surge posteriormente como uma expressão secundária dela. Mas como aquilo que brilha como a realidade do som '_Om_' é apenas o Eu ou 'Eu', Sri Bhagavan cantou no verso 13 de _Sri Arunachala Akshara Mana Malai_, “Ó Arunachala, realidade de 'Om', incomparável e insuperável! Quem pode te entender?”, e Ele costumava dizer que, mesmo antes de '_Om_', o nome natural da realidade é apenas a consciência 'Eu', que transcende tanto o som quanto a luz. Refira-se aqui aos versos 712 e 713 desta obra.
+
+Portanto, uma vez que o Eu, a principal realidade, é um [_ekam_] e como nada existe além dele, Sri Bhagavan pergunta quem pode escrevê-lo, e como ou onde poderia ser escrito. Assim, embora o devoto que pediu a Ele para escrever “uma letra” em seu caderno, Sri Bhagavan ensinou ao mundo inteiro que aquilo que brilha por si só no coração não pode de maneira alguma ser pensado, falado ou escrito, e que tudo o que se pode fazer é ser ele e conhecê-lo como ele é no coração.
+
+
+
+
+
+**1173.** **Se perguntado, "[Qual é] a [verdadeira] língua divina, que é a fonte de todas as línguas, que é real e que possui a maior clareza?" Essa língua é apenas o Silêncio [_mauna_], que o Senhor [Sri Dakshinamurti] que é a personificação do conhecimento [_jnana-swarupa_] sentado ao pé da árvore de bananeira, ensinou.**
+
+**_Michael James_**: O verso 10 do apêndice de _Guru Vachaka Kovai – Urai_ deve ser incluído aqui (ver nota para o verso 1027). Neste verso, Sri Bhagavan diz:
+
+**O Silêncio [_mauna_] é a forma [literalmente, estado] da Graça, a única língua [única, não-dual, incomparável e incomparável] que está [sempre] borbulhando dentro.**
+
+Um devoto uma vez escreveu um artigo sobre Sri Bhagavan intitulado 'Onde o Silêncio é um Sermão Inspirado'. Vendo isso, Sri Bhagavan escreveu o verso acima dando uma definição de Silêncio. "O Silêncio é a eloquência incessante... é o fluxo perene da 'linguagem' [a verdadeira linguagem da Graça]", diz Sri Bhagavan em _Maharshi’s Gospel_, Livro Um, capítulo 2.
+
+**1174.** **Uma vez que aquele grande _Brahman_, que não pode ser revelado mesmo por inúmeros comentários, é revelado apenas pelo Silêncio do Guru, que é raro de se alcançar, saiba que o comentário desse Silêncio é o melhor comentário.**
 
 
 
