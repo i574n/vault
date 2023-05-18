@@ -5918,6 +5918,926 @@ _(Advaita Jnana Tiran)_
 
 
 
+**962. Saiba que a luz brilhante do fogo que se acende dentro, acesa por mais e mais moagem interior da mente, que foi libertada de impurezas, na pedra do coração através [da indagação] 'Quem sou eu?', é o verdadeiro conhecimento “_Ana'l-Haq_” [Eu sou a realidade].**
+
+**_Sadhu Om_**: A ideia expressa no verso 341 desta obra deve ser notada aqui. Se uma religião é verdadeira, pelo menos uma declaração sagrada de _Mahavakya_ que revela a natureza transcendente do Self, deve ser encontrada em suas escrituras. Se tal _Mahavakya_ não fosse encontrado em suas escrituras, ela não seria uma religião verdadeira. Por exemplo, Sri Bhagavan costumava apontar a inigualável _Mahavakya_ 'Eu sou o que sou' que é revelada na Sagrada Bíblia. Da mesma forma, Ele também costumava apontar a declaração sagrada _‘Ana’l-Haq’_ na Religião Islâmica _al-Haq_ é um dos 99 nomes de Alá, e significa ‘a realidade’ ou ‘a verdade’; “_Ana’l-Haq_” significa ‘Eu sou a realidade’, e é uma declaração sagrada feita por Hallaj, um famoso Sábio Sufi]. Sri Bhagavan costumava explicar que o objetivo final de todas essas religiões é fazer com que alguém conheça o Self. [Consulte também o verso 663.]
+
+**963. Apenas a firmeza no conhecimento não-dual [_advaita jnana_] é heroísmo. Por outro lado, mesmo a conquista sobre [um] inimigo é, sob escrutínio, [encontrada para ser devido não ao heroísmo, mas apenas à] grande medo possuindo a mente, que é abalada pelo alvoroço do mundo irreal de dualidade. Saiba assim.**
+
+**_Sadhu Om_**: Só quando uma coisa é sentida como diferente de si mesmo, surgirá um medo dela ou um desejo por ela. Como nenhuma outra coisa existe no estado não-dual de autoconhecimento, não pode surgir nenhum medo ou desejo nesse estado, e, portanto, ele é o único estado de verdadeira coragem ou heroísmo. Mesmo que por sua própria força alguém seja capaz de conquistar e subjugar todos os seus inimigos poderosos, não se pode dizer que possua verdadeiro heroísmo, pois tenta conquistá-los apenas por causa do medo de que possam causar-lhe algum mal. O medo é a única causa que impulsiona alguém a conquistar seus inimigos, e o conhecimento da dualidade é a única causa do medo. Apenas o _Jnani_, que tem a experiência da não-dualidade, não tem medo, porque nada existe como outro além de si mesmo, e, portanto, ele sozinho é verdadeiramente o grande herói [_maha-dhira_].
+
+
+
+
+
+
+**964. Apenas aquele [estado] que está desprovido das diferenças criadas pelo ego, a grande e densa ilusão, é a realização da Unidade [_Kaivalya-darsanam_]. Essa consciência suprema, divina, silenciosa e transcendente, que penetra tudo, é a Morada Suprema [_param-dhana_] experimentada pelos grandes Sábios.**
+
+**18 Graça Divina**
+
+_(Tiruvarul Tiran)_
+
+**965. Se você, pensando Nele [Deus ou Guru], der um passo em direção a Ele, em resposta a isso, mais [graciosamente] do que até mesmo uma mãe, esse Senhor, pensando em você, virá Ele mesmo nove passos [em sua direção] e te receberá. Veja, tal é a Sua Graça!**
+
+
+
+
+**966. Quando a graça divina é apenas a realidade que brilha [no coração de cada _jiva_] como 'sou' [_ullam_], a culpa de desconsiderar [ou ser ingrato para com] a realidade será adequada apenas para os _jivas_ que não pensam nela [ou seja, que não se atentam a essa realidade que brilha como 'Eu sou'] derretendo-se interiormente [com amor]; como, ao contrário, pode a culpa de não conceder doce Graça ser adequada a essa realidade?**
+
+**_Sadhu Om_**: A consciência da primeira pessoa _‘sou’_ é a experiência de todos. Esta consciência de nossa existência existe em nós apenas porque Deus reside dentro de nós como o Eu devido à Sua insondável Graça. Assim, Deus está sempre concedendo Sua Graça a todos na forma da consciência 'sou'. Já que o brilho desta consciência 'sou' é a maior ajuda permitindo que os _jivas_ alcancem Deus e assim sejam salvos, essa consciência em si é aqui dita ser a graça divina de Deus. Portanto, é errado para os _jivas_ acusarem Deus de ser ingrato para com eles. Ao contrário, uma vez que os _jivas_ nunca se atentam ao Eu, a consciência de existência que brilha como 'Eu sou', mas sempre se atentam apenas a segunda e terceira pessoas, não é Deus, mas apenas os _jivas_ que devem ser acusados de serem ingratos.
+
+**_Sri Muruganar_**: Já que, para que os _jivas_ não tenham nem a menor dificuldade em conhecer e alcançar Deus, Ele existe e brilha devido à Sua infinita Graça em cada _jiva_, não como outro, mas apenas como o Eu, a realidade daqueles _jivas_, é dito: "A graça divina é apenas a realidade que brilha como 'sou'"; já que Deus está incessantemente concedendo Graça ao sempre brilhar nos corações de todos os _jivas_, dia e noite na forma do contínuo brilho de 'Eu-Eu', é dito: "Como pode a culpa de não conceder doce Graça ser adequada a essa realidade?"; já que, a menos que os _jivas_ se voltem para dentro em direção a Ele e se atentem a Ele, eles não podem entender a verdade de que Deus está sempre concedendo Graça a eles, e já que é assim um grande erro para os _jivas_ que não se atentam a Ele, cuja própria natureza é a Graça, acusá-lo de não conceder Graça a eles, é dito: "A culpa de desconsiderar a realidade será adequada apenas para os _jivas_ que não pensam nela, derretendo-se interiormente". Uma vez que, assim como a única realidade, o Eu, que existe e brilha como um sem um segundo no coração, em si [aparentemente] existe como muitos, então em todos os _jivas_, que são [aparentemente] muitos por causa dos adjuntos [_upadhis_], ele [aparentemente] brilha individualmente como 'Eu-Eu', saiba que o verbo da primeira pessoa do plural _‘ullam’_ [uma forma contraída de _‘ullom’_] é adequadamente usado aqui. Já que o coração [_hridayam_] é chamado de _‘ullam’_ em tâmil porque é o lugar onde isso [o Eu] assim existe e brilha, esta palavra _‘ullam’_ é usada aqui com um duplo significado [ou seja, ‘sou’ e ‘coração’], e portanto ambos os significados podem ser considerados aqui.
+
+
+
+
+
+
+**967. Embora a consciência-existência [_sat-chit_] que brilha abundantemente no [estado de] permanência - em que a mente se voltou para dentro [através da investigação 'Quem sou eu?'] e o ego [portanto] diminuiu - seja desprovida de características e qualidades e esteja além da mente, ela aparece como Guru, [tendo características como nome e forma]. [Tal é] a Graça de Deus, que é o Ser.**
+
+**_Sadhu Om_**: Neste verso, é claramente ensinado que o Ser é o único Guru, o Ser é o único Deus e o Ser é a única Graça. Embora o Ser, que é Deus, não tenha característica [_kuri_] ou qualidade [_guna_], devido à Sua abundante Graça para com os devotos, Ele assume características e qualidades e aparece na forma de um Guru para salvá-los. Assim, Graça, Deus, Guru e Ser são um e o mesmo.
+
+**968. O 'Eu' dos [aqueles] verdadeiros devotos que viram a forma [ou natureza] da Graça, brilhará como a forma da realidade suprema, uma vez que o ego, o irreal _chitjada-granthi_ [o nó entre o Ser consciente e o corpo insensível] que cria as agonias mentais ilusórias, morreu e não se levanta mais no coração.**
+
+**_Sadhu Om_**: A frase 'os verdadeiros devotos que viram a forma [ou natureza] da Graça' [_arul vannam kanda mey anbar_] pode ser entendida como significando tanto (1) aqueles verdadeiros devotos que viram o _Sadguru_, que é a encarnação da Graça [conforme explicado no versículo anterior], ou (2) aqueles verdadeiros devotos que realizaram o Ser, a verdadeira natureza da Graça, através da auto-investigação.
+
+
+
+
+**969. [Desde que, como explicado no verso 966, o Senhor está sempre e em todos os lugares concedendo Sua Graça a todos, brilhando neles como 'Eu sou'] _jivas_ permanecem imersos na enxurrada ambrosial da Graça; [quando é assim, sua] ilusão e sofrimento através da ilusão são tolices, [como] morrer [por causa de] não saber como saciar [sua] sede [mesmo estando] em meio à enchente de água do rio Ganga.**
+
+**_Michael James_**: Alguém que está com água até o pescoço na enchente do Ganges só precisa se abaixar para beber e saciar sua sede. Da mesma forma, como Deus ou o Guru está sempre nos concedendo Sua Graça ao brilhar dentro de nós como 'Eu sou', só precisamos voltar nossa atenção para dentro em direção a esse 'Eu sou' para beber e saciar nossa sede por Sua Graça.
+
+**970. Por que Deus imparcial, que concede [Seu] olhar gracioso a todos, descarta as pessoas más? O [divino] olho que surge como tudo, não descarta ninguém; [é apenas por causa de] a ilusão de sua perspectiva sombria e defeituosa [que parece rejeitar algumas pessoas].**
+
+**_Sadhu Om_**: A palavra em Tamil _‘kan’_, que significa 'olho', também é usada às vezes para significar 'conhecimento verdadeiro' ou _‘jnana’_. Portanto, as palavras 'o olho que surge como tudo' [_ellamay pongum kan_] também significam o conhecimento 'Eu sou' que brilha como tudo. Como o conhecimento 'Eu sou' está brilhando em todos como a verdadeira forma da Graça, nunca se pode dizer que o Olho da Graça está rejeitando alguém.
+
+Se tivermos que dizer: "Fulano não me viu", não podemos fazer isso apenas depois de procurar por essa pessoa? Da mesma forma, se formos acusar Deus de não conceder Seu olhar gracioso a nós, não podemos fazer isso apenas depois de nos voltarmos para dentro e olharmos para Ele, a autoconsciência que brilha dentro de nós como 'Eu sou'? Portanto, quando nunca prestamos atenção ao Ser, mas sempre permanecemos extrovertidos, não podemos justamente acusar Deus de não conceder Sua Graça a nós. "Voltando para dentro, veja-se diariamente com um olhar introvertido e será conhecido [que Ele está sempre concedendo Sua Graça]...", canta Sri Bhagavan no verso 44 do _Sri Arunachala Aksharamanamalai_. O olhar extrovertido das pessoas ignorantes que nunca se voltam para dentro, é descrito no presente verso como "a ilusão de sua perspectiva sombria e defeituosa" [_avar mangun kan malai mayakku_].
+
+**_Sri Muruganar_**: Quando Deus reside dentro de cada _jiva_ como o Ser e incessantemente sempre conhece todos eles como Ele mesmo, a menos que as _jivas_ o conheçam, elas não podem saber o fato de que Deus está concedendo Sua Graça a eles; portanto, é dito "a ilusão de sua perspectiva sombria e defeituosa".
+
+
+
+
+
+**19 Existência-Consciência-Bem-aventurança**
+
+_(Sat-Chit-Ananda Tiran)_
+
+**971. Quando, ao mudar [sua direção, ou seja, voltando-se para o Eu interior], o conhecimento iludido, o intelecto [_buddhi_] que conhece outras coisas, alcança [e se funde com] o Coração [Eu interior], que é a existência pura, essa existência-consciência-bem-aventurança [_mey-arivu-ananda_] será atingida.**
+
+**972. Quando [todos os seus] desvarios [ou movimentos] cessam, a mente [_chittam_], que é [em sua real natureza] a consciência [_chit_], verá a si mesma como a realidade [_sat_]. [Quando assim] a _chit-sakti_ [o poder da consciência ou poder do conhecimento] se torna uma com a realidade [_sat_], o que é a [resultante] suprema bem-aventurança [_paramananda_], a restante [das três aspectos de _Brahman_], além do próprio Eu?**
+
+**_Sadhu Om_**: Conhecer [_chit_] a si mesmo como a realidade [_sat_] é bem-aventurança [_ananda_]. Conhecer a si mesmo, o Eu, como o corpo é o conhecimento iludido chamado 'mente' [_chittam_]. É apenas por causa desse conhecimento errôneo que tal coisa como 'miséria' parece entrar em existência. No entanto, quando se conhece a si mesmo como o Eu [atman], já que o _chittam_ então perde sua natureza de movimento e adquire a natureza da consciência [_chit-rupa_], ele se conhece como a realidade [_sat_]. Como essa união de _sat_ e _chit_ é a plenitude de _ananda_, a miséria será conhecida como sempre inexistente e a verdade de que o Eu é _sat_, _chit_ e _ananda_ brilhará. O estado de suprema bem-aventurança [_paramananda_] que é experimentado quando o poder da consciência [_chit-sakti_] e o Senhor [Siva] cuja natureza é existência [_sat_] se tornam um, é o verdadeiro significado da forma de Ardhanariswara [o Senhor que é tanto Siva quanto Sakti].
+
+
+
+
+**973. Quando o ego insensível, o _jiva_ que é _chit-jada_ [uma combinação de consciência e insensibilidade], morre, ele brilhará como a natureza da consciência [_chit-swarupa_]. Já que a natureza da consciência permanece lá [naquele estado] como existência [_sat_] somente, a bem-aventurança [experimentada lá] é sempre o próprio Eu.**
+
+**_Sadhu Om_**: O ego ou _jiva_ é um conhecimento errôneo que atua como um falso nó ligando o Eu, que é consciência [_Chit_], e o corpo, que é insensível [_jada_]. Quando esse ego morre, ou seja, quando sua identificação errônea com o corpo insensível é destruída através da auto-investigação, sua natureza de insensibilidade [_jada-swarupa_] é removida e, portanto, ele permanece brilhando como a própria natureza da consciência [_chit-swarupa_]. Como não pode haver existência além dessa consciência, essa consciência [_chit_] permanece como a única existência [_sat_], que é o Eu. Como esse estado é um estado de não-dualidade, a bem-aventurança experimentada ali também é nada mais que o próprio Eu. Portanto, o conhecimento [_chit_] do Eu, a própria existência [_sat_], é em si a bem-aventurança [_ananda_].
+
+**_Sri Muruganar_**: A morte do ego insensível é o desfazer do _chit-jada-granthi_ [o nó entre a consciência e o corpo insensível]. Desfazer o _chit-jada-granthi_ significa separar, através da auto-investigação, o corpo e o Eu, que foram unidos pela ignorância [_avidya_]. "O Senhor da Montanha dançou e [assim] separou o corpo e o Eu", canta Sri Sundaramurti Nayanar. Aqui [no verso atual], o fruto do rompimento do nó [_granthi-bheda_] é descrito como "a bem-aventurança [que é] o próprio Eu" [_tan-mattira-inbam_], e a natureza da consciência, que resulta disso [a separação do nó], é descrita como "existência somente" [_sat-mattiram_].
+
+
+
+
+
+**974. Não esquecer a consciência [ou seja, não esquecer a própria autoconsciência devido à _pramada_ ou desatenção] é o caminho da devoção [_bhakti_], a relação do amor real inalterável, porque a verdadeira consciência do Eu, que brilha como a bem-aventurança suprema indissociável [não-dual] em si, surge como a natureza do amor [ou _bhakti_].**
+
+**_Sadhu Om_**: O verdadeiro conhecimento do Eu, que sempre brilha naturalmente, é a plenitude da bem-aventurança não-dual [_ananda_], porque brilha como a verdade do amor. Existência [_sat_], consciência [_chit_] e bem-aventurança [_ananda_] não são realmente três, mas uma e a mesma coisa. Devemos saber que estar consciente [_chit_] de nossa própria existência [_sat_] é em si a bem-aventurança [_ananda_]. O verso 979 deve ser referenciado aqui. O amor por si mesmo brilha em todos os _jivas_ porque o amor próprio é a própria natureza do Eu. Portanto, uma vez que o amor é a natureza do Eu, e uma vez que o Eu é a própria forma de felicidade suprema, é errado considerar a felicidade como sendo o resultado do amor; em vez de considerar o amor e a felicidade como causa e efeito, devemos entender que o amor é em si a felicidade. Uma vez que amando o Eu, se conhece o Eu e conhecendo o Eu, se ama o Eu, devemos entender também que o conhecimento em si é amor, que é felicidade. Uma vez que o Eu é a própria existência ou ser, ele nunca pode se tornar um objeto a ser conhecido, e por isso conhecer o Eu é nada mais que ser o Eu; assim devemos entender que o ser [_Sat_] em si é o conhecimento [_Chit_], que é tanto felicidade [_ananda_] quanto amor [_priyam_]. Portanto, o verdadeiro conhecimento 'Nós, a forma do amor ou felicidade, existimos sozinhos' é o estado de bem-aventurança perfeita, não-dual [_ananda_].
+
+
+
+
+
+
+**975. Quando o defeito egoísta carnal, a causa eficiente [da aparente existência da aparência do mundo], que é [ele mesmo] inexistente, for destruído, esse estado [do Eu] é a única existência [_sat_] que estava deitada [como uma base de apoio] para todos os mundos que pareciam existir, dependendo Dele [para sua aparente existência].**
+
+**_Sadhu Om_**: O ego é aqui descrito como impermanente, irreal e carnal porque identifica o corpo impermanente, irreal e carnal como 'Eu'. Como o ego é irreal [_asat_], os nomes e formas do mundo, que são vistos apenas pelo ego, também são irreais. No entanto, o ego parece ser real porque é uma mistura do nome irreal e forma do corpo e a consciência real do Eu. Portanto, é o Eu, o aspecto real do ego, que faz os nomes irreais e formas do mundo parecerem ser reais. Assim, o Eu é a única realidade desta aparente aparência do mundo.
+
+**976. Quando a louca ilusão do ego, o único _jiva_, que é [ele mesmo] insensível, é descartada, esse estado [do Eu] é a única consciência [_chit_] que estava deitada [como uma base de apoio] para todos os _jivas_, que apareciam como se tivessem sensibilidade, para saber [ou seja, para serem aparentemente sensíveis e conhecer outros objetos].**
+
+**977. Quando o miserável orgulho do ego, que é a única causa [de todo sofrimento] e que é [ele mesmo] infelicidade, for destruído, esse estado [do Eu] é a bem-aventurança [_ananda_] que estava deitada [como uma base de apoio] para todos os prazeres objetivos, que apareciam como se tivessem felicidade, para serem experimentados [como aparentemente prazerosos].**
+
+**_Sadhu Om_**: O ego é aqui descrito como o orgulho que causa toda a miséria porque se orgulha de identificar o corpo, que é completamente desprovido de felicidade, como 'Eu'
+
+Os três versos acima, de 975 a 977, devem ser lidos e refletidos juntos. Este mundo não parece ser uma realidade sempre existente [_sat_], todos os _jivas_ no mundo não parecem ser conscientes [_chit_], e todos os objetos no mundo não parecem nos dar felicidade [_ananda_]? O segredo por trás de tudo isso é revelado nestes versos.
+
+O corpo é impermanente [e, portanto, irreal ou _asat_], insensível [_jada_] e a fonte de todas as misérias, como doenças e assim por diante, enquanto a consciência 'Eu' é o brilho de _sat-chit-ananda_. O conhecimento errôneo que identifica este corpo como 'Eu' é o ego. É apenas durante o tempo do funcionamento do ego e apenas na perspectiva do ego, que assim confunde o corpo irreal, insensível e miserável como sendo real, consciente e uma fonte de felicidade [ou seja, como sendo _sat-chit-ananda_], que este mundo parece ser real [_sat_], os seres vivos nele parecem ser conscientes [_chit_] e os objetos nele parecem ser uma fonte de felicidade [_ananda_]. Esses três versos claramente afirmam que o ego é a única causa que faz os nomes e as formas [_nama-rupa_, os dois aspectos irreais de _Brahman_] parecerem como se fossem reais, conscientes e uma fonte de felicidade [_sat-chit-ananda_, os três aspectos reais de _Brahman_]. Impor a existência [_sat_], a consciência [_chit_] e a felicidade [_ananda_], que são reais, aos nomes e formas, que são irreais, e assim ver esses nomes e formas como reais, é a perspectiva errada [_dosha-drishti_] do ego. Quando este ego é destruído através do auto-inquérito, o aparente _sat-chit-ananda_ imposto ao mundo desaparecerá, e o real _sat-chit-ananda_, que é o Eu, a base ou suporte da aparência do mundo, sozinho brilhará. Somente quando o ego é assim destruído, a verdade será conhecida de que foi apenas por causa da existência [_sat_] do Eu que os nomes e formas do mundo pareceram como se realmente tivessem existência, que foi apenas por causa da consciência [_chit_] do Eu que os nomes e formas do mundo pareceram como se realmente tivessem consciência, e que foi apenas por causa da felicidade [_ananda_] do Eu que os nomes e formas do mundo pareceram como se realmente estivessem dando felicidade.
+
+Não apenas estes versos revelam esta verdade profunda, mas o fazem de uma maneira muito bela. As primeiras e últimas palavras de cada verso denotam respectivamente _sat_, _chit_ e _ananda_. No primeiro verso, o ego é descrito como sendo irreal, defeituoso e carnal [em contraste com a realidade ou _sat_], no segundo verso, ele é descrito como sendo insensível, iludido e louco [em contraste com a consciência ou _Chit_], e no terceiro verso, ele é descrito como sendo miserável, orgulhoso e desprovido de felicidade [em contraste com a bem-aventurança ou _ananda_]. Muitos outros pontos de beleza literária e linguística podem ser apontados nestes três versos, todos os quais ajudam a enfatizar a profunda verdade revelada neles.
+
+
+
+
+
+**978. Aqueles que dizem, “Se eles permanecerem como a realidade suprema, a forma de felicidade [_sukha-swarupa_], para eles não pode haver experiência de felicidade,” são aqueles que [assim] argumentam e afirmam que a forma de felicidade [ou seja, a realidade suprema, que é _sat-chit-ananda_] é meramente um objeto insensível como o açúcar.**
+
+**_Sadhu Om_**: Na intoxicação da devoção dualista, algumas pessoas costumavam dizer: “Eu não quero me tornar o próprio açúcar; prefiro permanecer como uma formiga ao lado do açúcar para provar a sua doçura”. Ou seja, existe uma crença errônea entre alguns devotos de que o estado de não-dualidade [_advaita_] no qual se funde e se torna um com _Brahman_ será um estado seco e vazio, desprovido de felicidade [_ananda_]. Somente aqueles que não alcançaram a experiência da devoção perfeita [_sampurna-bhakti_] podem acreditar ou falar assim. Consulte a página 152 de _The Path of Sri Ramana_ – Part Two, onde é explicado que o devoto perfeito [_sampurnabhaktiman_] é apenas aquele que tem 'amor sem outro' [_ananya-priti_].
+
+O açúcar é um objeto insensível [_jada-vastu_], enquanto uma formiga é sensível e, portanto, capaz de desfrutar da doçura do açúcar. Mas _Brahman_ não é assim; Ele não é um objeto insensível como o açúcar. _Brahman_, que é a realidade [_sat_], é também consciência [_chit_] e, portanto, capaz de se conhecer. Como _Brahman_ é também a felicidade [_ananda_], que é a própria natureza da consciência [_chit-swabhava_], nenhum outro objeto sensível [_chit-vastu_] é necessário para experimentar a felicidade de _Brahman_. Portanto, é tolo comparar o Eu, que não é apenas a felicidade, mas também a consciência que conhece a felicidade, a um objeto insensível como o açúcar.
+
+É completamente errado dizer, como algumas pessoas fazem, que essa comparação foi ensinada por Sri Ramakrishna. Sri Ramakrishna, que teve a experiência perfeita de _sat-chit-ananda_, nunca teria comparado _Brahman_ a um objeto insensível como o açúcar. Quando as pessoas dizem que Sri Ramakrishna costumava comparar _Brahman_ ao açúcar, devemos duvidar da precisão do registro de Seus ensinamentos.
+
+
+
+
+
+
+**979. Embora existência [_sat_], consciência [_chit_] e felicidade [_ananda_] sejam faladas como [se fossem] diferentes, quando realmente experimentadas, essas três são [encontradas como] uma [a saber, 'eu', o Eu] assim como as três qualidades harmoniosas, liquidez, doçura e frescor, são [em substância] apenas uma água.**
+
+**20 A Grandeza da Realidade**
+
+_(Unmai Matchi Tiran)_
+
+**980. Existir [literalmente, ser o que existe] é a natureza do Eu. Todas as coisas que não são essa [o Eu] são uma multidão de falsas imaginações [_kalpanas_] e não podem [realmente] existir. Todas elas se afastarão do Eu, mas essa [o Eu] nunca irá embora [ou seja, nunca se tornará inexistente].**
+
+**_Sadhu Om_**: A palavra 'existência' [_uladadal_] aqui denota nossa verdadeira existência-consciência [o sentimento de nosso ser] que está desprovida de corpo e mente. Embora a mente, o corpo e o mundo, sendo irreais, desapareçam durante o sono, a morte e a dissolução, nós [Eu ou _Brahman_] somos o que brilha como a indestrutível existência-consciência.
+
+**981. Ele [ou seja, o Eu] que existe como a forma de consciência, não se tornará inexistente. Se se permanece desprovido de outros conhecimentos, [isto é] se as imaginações enganosas, irreais e duais [superpostas] na consciência forem removidas, para si mesmo que [assim] existe como [mera] consciência não haverá destruição.**
+
+**_Sadhu Om_**: Apenas aquelas coisas que são conhecidas pela mente como objetos são passíveis de serem destruídas, enquanto nós, que somos existência-consciência, nunca podemos ser destruídos. Como a pura consciência 'eu sou' brilha mesmo depois que o ego, o conhecedor dos objetos, foi destruído, nunca pode haver destruição para nós.
+
+
+
+
+
+**982. O Eu, o Todo [_paripurnam_], parecerá completamente inexistente [_sunya_] para aqueles que têm _pramada_ [desatenção ao Eu], que assassina o Eu [e que surge] quando o 'Eu' surge [mesmo] um pouco devido à superposição [de adjuntos ou _upadhis_] sobre o próprio supremo Eu, que é a suprema Realidade.**
+
+**_Michael James_**: _Pramada_ ou desatenção ao Eu, o próprio ser, surge apenas quando o ego, o sentimento irreal 'Eu sou fulano', surge devido à superposição do adjunto [_upadhi_] 'fulano' sobre a pura consciência 'Eu sou'. Como a superposição deste adjunto oculta a verdadeira natureza do Eu, o puro 'Eu sou', e faz com que pareça como se não existisse, _pramada_ é dito assassinar o Eu.
+
+**_Sri Muruganar_**: Como o pensamento 'Eu' é o único ego, quando ele surge [mesmo] um pouco, o vínculo surge devido ao sentimento 'Eu sou o corpo' [_dehatma-buddhi_], e daí a ignorância [_ajnana_] conhecida como _pramada_, que é uma queda da [permanência como] Eu, nasce. Saiba que na verdade isso é o pecado de assassinar _Brahman_ [_brahma-hatja dosha_]. Para aqueles _jivas_ ligados que estão assim sob o domínio do _pramada_, o Todo parecerá ser um estado que não pode ser conhecido, e [assim] parecerá como se não existisse [_sunya_].
+
+**983. Aquele que se conhece como o grande, o estado real [do Eu], em vez de erroneamente se conhecer como o que vê objetos fora, alcançará o estado de plenitude de paz, tendo perdido através da [adequada discriminação] o desejo por todos os oito _siddhis_.**
+
+**_Sadhu Om_**: Este verso também pode ser lido junto com os versos 645 a 649 no capítulo 'A Cessação da Atenção Objetiva'.
+
+Apenas aquelas pessoas que estão iludidas pensando que objetos existem fora e são reais, considerarão que os oito poderes ocultos [_ashta-siddhis_] são maravilhosos e dignos de serem alcançados. Mas aquele que se conhece como o Eu, a existência-consciência, e que portanto desistiu do conhecimento objetivo, entenderá a inutilidade e a irrealidade de todos os _siddhis_, e assim ele os rejeitará como triviais e permanecerá na felicidade do Eu, a única realidade.
+
+
+
+
+
+**984. O Poderoso que [sempre] se apega à realidade nunca terá medo, devido à ilusão mental, de nada.**
+
+**_Sadhu Om_**: Uma sensação de medo só pode surgir em alguém enquanto se está iludido pensando que realmente existe algo além de si mesmo. Mas o Herói que alcançou a força da permanência no Eu [_nishta-bala_] tem a firme e inabalável experiência de que Ele, a realidade, é o único que existe. Portanto, já que nenhuma outra coisa existe em sua perspectiva, nem medo nem confusão podem surgir para Ele.
+
+**21 Tudo é _Brahman_**
+
+_(Sarvam Brahma Tiran)_
+
+**985. É apenas o Eu, o único conhecimento puro, que, como o conhecimento irreal [a mente], faz todas as diferenças [_vikalpas_] aparecerem. [Portanto] para aquele que conhece e alcança o Eu, que é o conhecimento harmonioso, todas essas outras coisas [a aparência completa do mundo] serão [encontradas como] da natureza do único Eu.**
+
+**_Michael James_**: Todas as diferenças, como nome e forma, tempo e espaço, sujeito e objeto, são feitas para aparecer apenas pela mente, que é verdadeiramente inexistente, sendo nada mais que uma aparência irreal no verdadeiro Eu. Assim como quando a corda real é vista, a cobra irreal e inexistente é encontrada como nada mais que essa corda, então quando o verdadeiro Eu é conhecido, a mente irreal e inexistente e todos os seus produtos (a aparência completa do mundo) são encontrados como nada mais que esse Eu. É apenas neste sentido que a aparência irreal do mundo é dita ser da natureza do único Eu ou _Brahman_.
+
+**986. Apenas o Eu sempre existente, além do qual nada existe e do qual nada é diferente, é a única realidade. Tudo o que é conhecido naquele Siva [aquela única realidade], que é o Supremo que existe e brilha como _sat-chit_, é apenas aquele Supremo e nada mais.**
+
+
+
+**987. Seja real ou irreal, seja conhecimento ou ignorância adquirida pelo intelecto, seja agradável ou desagradável para a mente, tudo é apenas _Brahman_ e nada mais.**
+
+**988. Fé [_shraddha_], descrença [_asraddha_], pensamento [_chinta_], ausência de pensamento [_achinta_], desapego [_virakti_], não desapego [_avirakti_], conhecível [_vedam_], desconhecível [_avedam_], eminência [_varam_], baixeza [_avaram_], louvável [_vaniyam_], desprezível [_avanidyam_] – tudo é apenas _Brahman_ e nada mais.**
+
+**_Sadhu Om_**: Os quatro versos deste capítulo enfatizam que o Eu ou _Brahman_ é a única realidade existente. Devemos entender que todos os díades ou pares de opostos mencionados nestes versos são na verdade inexistentes e que o único _Brahman_ é o que existe [veja nota no verso 985]. Não devemos interpretar estes versos como significando que, uma vez que até mesmo as díades são apenas _Brahman_, a perspectiva dual é apreciada, ou para significar que não há nada de errado em se estar imerso nessas díades.
+
+**22 Harmonia Entre as Religiões**
+
+_(Samarasa Tiran)_
+
+**989. Uma vez que o Silêncio, o ápice do conhecimento, é a natureza comum [de todas e cada uma das religiões], todas as religiões [_matas_] são aceitáveis como um meio para o verdadeiro _Advaita_, que brilha único e puro, e [portanto] não são contrárias ao maravilhoso _Vedanta_.**
+
+**_Sadhu Om_**: Qualquer conhecimento que qualquer religião proclame como o objetivo ou realização final, uma vez que o Silêncio é o limite ou fronteira de todo conhecimento, o conhecimento final de cada uma dessas religiões está contido no Silêncio. Uma vez que _Advaita Vedanta_ é um princípio comum tendo o Silêncio como seu objetivo, cada religião é um meio e é concordante com _Vedanta_. Refira-se aqui aos versos 1176 a 1179, 1235 e 1242.
+
+
+
+
+
+
+
+
+**990. Mesmo que [algumas] pessoas de mentalidade mesquinha e limitada inventem uma religião diferente devido à inimizade [com as religiões já existentes], saiba que até essa religião é aceitável para Siva, que brilha como a forma do conhecimento indivisível.**
+
+**991. Na religião em que você tem fé, siga essa religião com amor verdadeiro, voltando-se para dentro em vez de argumentar externamente contra outras religiões devido ao apego [_abhimani_] à sua própria religião.**
+
+**_Michael James_**: Todos os tipos de apego [_abhimani_], incluindo até mesmo o apego à própria religião [_matabhimana_], estão enraizados apenas no ego, o _dehabhimana_ ou apego ao próprio corpo como 'eu'. Portanto, se, devido ao apego à própria religião, alguém direciona sua atenção para o exterior para argumentar contra outras religiões, estará apenas fortalecendo seu _dehabhimana_ ou senso de identificação com o corpo. Como o objetivo final de todas as religiões é destruir o _dehabhimana_, deve-se voltar para dentro e conhecer a própria natureza verdadeira, erradicando assim o ego.
+
+**992. É melhor abandonar os vários argumentos sobre dualidade [_dvaita_], não-dualidade qualificada [_visishtadvaita_] e não-dualidade pura [_suddhadvaita_], e em vez disso pensar e adorar a Deus com amor maduro [_tapas_] para alcançar a riqueza da graça divina, e [assim] conhecer a realidade.**
+
+**993. A religião [_mata_] só existirá enquanto a mente [_mati_] existir. Depois que ela [a mente] se fundir no coração, voltando-se para dentro e examinando essa mente [perguntando 'Quem sou eu, essa mente?'], naquele Silêncio abundantemente pacífico nenhuma religião pode se sustentar.**
+
+**_Michael James_**: Em sânscrito e tâmil, a religião é chamada de _‘mata’_ porque só pode existir no âmbito da mente (_mati_). Portanto, quando a mente se funde no Eu, o estado de Silêncio Supremo, através da pergunta 'Quem sou eu?', nenhuma religião pode permanecer. Assim, os aspirantes devem entender que todas as diferenças e controvérsias criadas pelas várias religiões diferentes existem apenas na mente, e que essas diferenças e controvérsias só podem ser resolvidas quando a mente se volta para dentro e se funde no Eu, a realidade ou Silêncio que é (como revelado no verso 989) o fator comum e harmonioso em todas as religiões.
+
+
+
+
+
+**994. Entre a multitudinosa raça humana, apenas as crianças [ou seja, os Sábios infantis] que estão desprovidos da mente travessa, o sentido do ego, serão completamente protegidas do sofrimento pela Mãe-Pai [ou seja, Deus], que está sempre pensando nelas.**
+
+**995. Apenas os puros _mahatmas_ nos quais a mente mutável [_vikara manas_] não surge nem ao menos um pouco são pessoas afortunadas, porque a alegria de sentar e brincar para sempre no colo da Mãe, que é a fonte de felicidade, é a sua experiência completa.**
+
+**_Sadhu Om_**: Embora Deus seja tão compassivo que está sempre concedendo Sua Graça a todos por vontade própria, nós, o ego, obstruímos Sua Graça por nosso surgimento e nossas atividades travessas. Como os _Jnanis_, que estão desprovidos dessas atividades travessas do ego, são como bebês pequenos que não obstruem os esforços que seus pais fazem para protegê-los, eles são os únicos afortunados que sempre desfrutam da suprema bem-aventurança da Graça de Deus.
+
+**24 União com o Eu**
+
+_(Atma Muyakka Tiran)_
+
+**996. O estado que está desprovido da distinção dual 'Eu' e 'Ele' e no qual se tornou um com o Noivo, o Eu, que é o espaço do verdadeiro conhecimento [_mey-jnana_], o sentido do 'Eu' tendo caído, é em si a glória da castidade de ser um com Siva.**
+
+**_Sadhu Om_**: Se o verso 73 desta obra também for lido aqui, a expressão "a glória da castidade de ser um com Siva" será claramente compreendida.
+
+
+
+
+**997. Pode haver fala ou respiração naquela união silenciosa em que a perspectiva dual 'Eu' e 'Ele' [ou 'Eu sou Ele'] se funde em unidade? Quando 'Eu' é [assim] destruído, [ou seja] quando o olhar do olho se encontra com o olho, as palavras faladas não são de uso algum.**
+
+**_Sadhu Om_**: Os dois últimos versos deste verso são o verso 1100 de _Tirukkural_ [veja o verso 286 desta obra, onde o mesmo verso de _Tirukkural_ é usado]. Este verso de _Tirukkural_ descreve o encontro dos olhos de dois amantes, mas neste verso atual, Sri Muruganar usa o mesmo verso em um contexto espiritual.
+
+Quando o ego é destruído, todos os sentimentos duais como 'Deus e alma' [_Siva-jiva_] e 'Mestre e discípulo' [_Guru-sishya_] também serão completamente destruídos, e portanto apenas o Silêncio permanecerá. Só quando a diferença _'Siva_ e _jiva'_ existe pode o poder da fala ser usado para adorar Deus cantando _stotras_ e assim por diante, e só quando a diferença _'Guru_ e _sishya'_ existe pode o poder da fala ser usado para transmitir _upadesa_ ao discípulo. No entanto, uma vez que o propósito de todas as palavras faladas, como _stotras_ cantadas pelo devoto ou _upadesa_ dada pelo Guru, é apenas para destruir o ego e, assim, fazer a diferença 'Eu' e 'Ele' se fundir em unidade no estado de suprema Silêncio, naquele estado final palavras faladas não serão mais úteis.
+
+Como a palavra Tamil para 'olho' [_kan_] também significa conhecimento ou consciência, a frase "Quando o olhar do olho se encontra com o olho" deve ser entendida aqui para significar quando a atenção da consciência individual limitada [o ego] se encontra com e, assim, se funde na consciência suprema ilimitada [Self], assim como um rio se encontrando e se fundindo no oceano. Quando o ego assim se funde no Self, ele perde sua individualidade e é completamente destruído, e assim todas as dualidades e diferenças criadas por esse ego também são destruídas. Em tal estado de Silêncio perfeito, como pode haver até mesmo a menor fala ou respiração, ou qualquer outra coisa, aliás?
+
+
+
+
+
+
+
+**998. [Apenas] aqueles que se uniram [ao Self] podem conhecer a natureza daqueles que se uniram [ao Self]. Como aqueles que não se uniram [ao Self] podem conhecê-lo? A natureza daqueles que se uniram [ao Self], como uma abelha que bebeu mel, é tão grandiosa que eles não conhecem nada além do Self.**
+
+**_Michael James_**: Quando uma abelha bebe mel, ela fica tão intoxicada que não conhece mais nada. Da mesma forma, tendo-se tornado um com o Self, o _Jnani_ não conhece nada além do Self, e por isso a natureza de seu estado [ou seja, a natureza de sua existência, a natureza de sua consciência ou conhecimento, e a natureza de sua bem-aventurança] não pode ser conhecida por outros que não atingiram esse estado. Compare aqui o verso 31 de _Ulladu Narpadu_.
+
+**Sri Muruganar**: A natureza daqueles que se uniram à realidade, como uma abelha que bebeu mel, é tão grandiosa que não pode ser conhecida por outros. Isso ocorre porque eles não conhecem a alteridade. Apenas aqueles que se uniram podem conhecer a natureza daqueles que se uniram; aqueles que não se uniram não podem conhecê-la.
+
+
+
+
+
+
+
+**999. Mesmo por aqueles que se uniram [ao Self], a felicidade da união não pode ser pensada, mas apenas vivenciada. Aqueles que se uniram [não conseguem pensar nem mesmo no] método pelo qual alcançaram [aquele estado de] Silêncio, aniquilando o senso de ego naquele _anandatitam_ [aquele estado que transcende a felicidade].**
+
+**_Michael James_**: Embora apenas aqueles que alcançaram a união com o Self possam conhecer a natureza ou estado daqueles que alcançaram essa união, nem mesmo eles podem expressá-la para os outros, mas apenas vivenciá-la. Se então fosse perguntado: "Eles não podem expressá-la para os outros porque para eles não existem outros, mas pelo menos eles mesmos não podem pensar nesse estado e como o alcançaram?", a resposta seria que mesmo isso é impossível, porque para eles a mente pensante ou ego foi completamente destruído.
+
+Além disso, no estado de realidade absoluta que é vivenciado pelos _Jnanis_, o estado de _ajnana_ é percebido como sempre inexistente, e por isso é impossível para eles pensarem em um método pelo qual passaram do sempre inexistente estado de _ajnana_ para o estado de _Jnana_, a realidade única e sempre existente. É por isso que se diz no verso 413 desta obra que é impossível traçar o caminho pelo qual os _Jnanis_ alcançaram o Self. Como só existe o Self, não pode haver lugar ou estado (como o _ajnana_) fora do Self de onde ele possa ser alcançado e, portanto, não há caminho para alcançá-lo. Para um pássaro que está voando no céu, não pode haver um caminho para alcançar o céu, e para um peixe que está nadando na água, não pode haver um caminho para alcançar a água. Como somos verdadeiramente sempre o Self e apenas o Self, não pode haver um caminho ou método para alcançarmos o Self. No entanto, enquanto pensamos que não nos conhecemos como o Self, a única realidade existente, os Sábios têm que nos aconselhar a tentar descobrir quem ou o que realmente somos. Quando assim voltamos nossa atenção para nós mesmos para descobrir 'Quem sou eu?', descobriremos que somos sempre nada além do Self, e que o aparente ego ou individualidade que estamos erroneamente tomando como 'Eu' nunca existiu. Nesse estado, não podemos pensar que seguimos qualquer caminho ou método; apenas perceberemos que somos sempre como somos, e que nunca passamos por sequer a menor mudança ou movimento de qualquer tipo.
+
+
+
+
+
+
+**25 A Grandeza da Consciência**
+
+_(Chaitanya Matchi Tiran)_
+
+**1000. O conhecimento que vê o mundo como se fosse diferente [de si mesmo], o conhecimento objetivo que é o ego [_ahankara_], é meramente insensível [_jada_]. Quando [este] ego morre, a chama da pura não-dualidade [_suddhaadvaita_], que é o conhecimento da fonte da mente, brilhará.**
+
+**_Michael James_**: O ego, o conhecimento objetivo que vê o mundo como outro que não ele mesmo, é insensível [_jada_] e irreal [_asat_] porque identifica o corpo insensível e irreal como 'Eu'. Portanto, o conhecimento real puro não-dual irá brilhar apenas quando este ego insensível, o conhecimento irreal, for destruído.
+
+**1001. A existência [_sat_] por si só brilha como consciência [_chit_]. Portanto, até que a mente [_chittam_] seja completamente extinta e [portanto] se torne a existência-consciência absoluta [_kevala sat-chit_], é impossível para a pequena mente, que é uma falsa imaginação [_kalpana_], um reflexo da consciência [_chit_-_abhasa_], ver a realidade, que é a consciência suprema não-dual.**
+
+**1002. Apenas até que o sol apareça no horizonte oriental, a autoconceituação daquela lua [brilhará orgulhosamente] neste mundo. [Da mesma forma] apenas até que o conhecimento que é da natureza da consciência [_chinmaya-unarvu_ ou seja, Autoconhecimento] apareça, destruindo o conhecimento ilusório, o ego, a autoconceituação do conhecimento do _jiva_ [brilhará orgulhosamente]. Saiba assim.**
+
+**_Michael James_**: Ou seja, o conhecimento intelectual do _jiva_ e a habilidade nas várias artes e ciências.
+
+
+
+
+
+
+**1003. Na frente do grande sol, o Eu - [que sempre brilha] no Coração, o céu da consciência [_chitakasa_], sem nascer e pôr - a mente do _Atma-jnani_ é, no vasto mundo, como a lua vista em plena luz do dia.**
+
+**_Michael James_**: Durante a noite, a lua pode ser de alguma utilidade para permitir que se veja o mundo de forma tênue, mas depois que o sol nasceu, a lua não tem mais utilidade, mesmo que continue a ser vista no céu. Da mesma forma, no estado de _ajnana_, a mente, que é um mero reflexo da pura luz do Eu, pode parecer ser de alguma utilidade para iluminar o mundo, mas depois que o sol do autoconhecimento [_atma-jnana_] nasceu, a mente não tem mais utilidade do que a lua em plena luz do dia.
+
+**1004. Saiba que a mente que ilumina o mundo ilusório é [uma luz refletida] como a luz cintilante do espelho, refletindo a luz solar brilhante.**
+
+**_Michael James_**: O mundo ilusório de nomes e formas é projetado e iluminado apenas pela luz da mente, que é apenas um reflexo fraco da verdadeira luz do Eu. Assim como a pálida luz da lua é engolida quando a luz solar brilhante aparece, assim também a pálida luz da mente é engolida quando a brilhante luz do Eu surge (veja o verso 857). Quando a luz da mente é assim engolida, os nomes e formas ilusórios do mundo, que dependiam dessa luz solar para sua aparente existência, também desaparecerão, sendo encontrados como irreais diante da luz real da autoconsciência. (Veja o verso 114 desta obra).
+
+
+
+
+
+
+**1005.** **O estado em que não se vê um segundo objeto pessoa, o estado em que não se ouve um segundo objeto pessoa, o estado em que não se conhece um segundo objeto pessoa – saiba que esse estado é o infinito [_bhuma_].**
+
+**_Michael James_**: O _upadesa_ dado por Sri Bhagavan neste verso é o mesmo que o dado por Sanatkumara no _Chandoyga Upanishad_, 7.24.1, ou seja, “Esse [estado] em que não se vê o que-é-outro [_anya_], não se ouve o que-é-outro e não se sabe o que-é-outro, é o Infinito [_bhuma_], enquanto que [estado] em que se vê o que-é-outro, ouve o que-é-outro e sabe o que-é-outro, é finito [_alpa_]. O que é infinito [_bhuma_], sozinho é imortal [eterno e, portanto, real], enquanto o que é finito [_alpa_] é mortal [transitório e, portanto, irreal] ... ”. No mesmo _Upanishad_ 7.25.1 e 7.25.2, o Infinito [_bhuma_] é identificado como sendo sinônimo primeiro de 'Eu' (_aham_) e depois de Si mesmo (_atma_). Portanto, neste verso e no próximo, a palavra '_Bhuma_' deve ser entendida como significando Si mesmo ou _Brahman_, nosso verdadeiro estado de mero ser.
+
+A partir do presente verso, temos que entender que qualquer estado em que haja até mesmo o menor conhecimento de qualquer segundo ou terceiro objeto pessoa não é o verdadeiro estado do Eu, o verdadeiro despertar; é apenas outro sonho ocorrendo no sono do esquecimento de Si (consulte aqui _O Caminho de Sri Ramana_ – Parte Um, p. 143). Portanto, qualquer que seja o estado que possamos experimentar, mesmo que seja um estado divino ou celestial como viver em _Siva Loka_ ou _Vaikuntha_, desde que experimentemos qualquer coisa além da mera consciência do Eu 'Eu sou', devemos questionar 'Quem conhece essas outras coisas?' e, assim, voltar nossa atenção para o sentimento da primeira pessoa 'Eu'. Quando a atenção é assim fixada de forma cada vez mais intensa na primeira pessoa, o surgimento dessa primeira pessoa (o ego ou a mente que vê essas outras coisas) diminuirá cada vez mais, até finalmente se fundir para sempre em sua fonte, e então o verdadeiro estado do Eu, em que nada além da mera consciência do Eu 'Eu sou' é conhecido, será experimentado.
+
+
+
+
+
+
+**1006.** **Onde o que é visto, o que é ouvido e _pramada_ [ou seja, o ego, cuja natureza é _pramada_ ou desatenção para o Eu], que tem a grandeza de ver a finitude, são [todos] destruídos, [esse] imensurável _Bhuma_, [cuja forma é] o conhecimento não-dual [_advaita-jnana_], é a única a pura felicidade da paz abundante.**
+
+**_Michael James_**: O _upadesa_ dado por Sri Bhagavan neste verso é o mesmo que o dado por Sanatkumara no _Chandogya Upanishad_, 7.23.1, ou seja, "O que é infinito [_bhuma] é a única felicidade [_sukham_]. No finito [_alpa_] não há felicidade. O infinito é a única felicidade [_bhumaiva sukham_] ....” Mas no presente verso Sri Bhagavan revela mais sobre a natureza desse _Bhuma_, que é a única felicidade, ou seja, é o _Jnana_ não-dual que está desprovido de qualquer coisa vista ou ouvida, e que está desprovido até mesmo do ego, cuja natureza é pramada (desatenção para o Eu) e cuja chamada 'grandeza' está apenas em conhecer objetos finitos. A partir dos dois versos deste capítulo, devemos entender que a verdadeira felicidade está apenas no estado infinito, eterno e real do conhecimento não-dual, que está desprovido tanto da mente que conhece quanto dos objetos conhecidos, e que nem mesmo a menor felicidade real existe no estado finito, transitório e irreal do conhecimento dual, em que objetos são conhecidos.
+
+**27 O Espaço do _Jnana_**
+
+_(Jnana Veli Tiran)_
+
+**1007.** **Ó homens que – depois de correr por todo o mundo e depois de ver e adorar homens santos – estão pesquisando a verdade com grande amor, se vocês examinarem a suprema realidade que [aqueles] grandes _tapasvins_ claramente conhecem, [vocês descobrirão que é nada mais do que] o espaço aberto e vazio de _Jnana_.**
+
+**_Michael James_**: A realidade que é experimentada pelos _Jnanis_ é apenas o espaço vazio de _Jnana_ (o conhecimento da própria existência), isto é, a mera consciência 'Eu sou'. Este espaço de _Jnana_ é o mesmo que o _Bhuma_ descrito no capítulo anterior, e é dito aqui ser um espaço aberto e vazio porque é o estado que está completamente desprovido tanto de objetos para conhecer quanto de uma mente para conhecê-los.
+
+
+
+
+
+
+**1008.** **Quando examinado, aquilo que é mostrado e dado pelos Pais-Gurus [os gurus como pais] aos discípulos que procuram mestres espirituais, correndo ao redor do mundo, é apenas o maravilhoso espaço de _Jnana_ [a mera consciência ‘Eu sou’].**
+
+**1009.** **O objetivo eterno, que é o refúgio em que as errâncias cansativas aqui e ali chegam ao fim, [e que é dado por] o Guru-_Jnana_, que é Siva, a suprema realidade, que brilha triunfantemente como a existência-consciência sem defeitos [_sat-chit_], é apenas o maravilhoso espaço de _turiya_ [o vazio espaço de _Jnana_].**
+
+**_Michael James_**: As errâncias cansativas através de tantos nascimentos e mortes, bem como as errâncias cansativas do corpo e da mente em cada nascimento, chegam ao fim.
+
+**1010.** **Se, até o fim, se faz um esforço total para alcançar a permanência [como o Eu], que remove a escravidão [na forma] de desejos [_sankalpas_], assim como uma cobra remove sua pele, o que emerge é [apenas] o espaço aberto e vazio de _Jnana_.**
+
+**1011.** **A glória da luz do espaço da consciência[_chit-akasa jyoti_] é o crematório no qual o _jiva_, o reflexo ilimitado da consciência [_chit-abhasa_], está completamente morto [e está sendo queimado até as cinzas]. É como [um fogo] pegando uma densa floresta seca e se espalhando e queimando sem limite.**
+
+**_Michael James_**: O _jiva_, o reflexo da consciência, é aqui descrito como ilimitado porque é a causa-raiz de uma quantidade ilimitada de tendências (_vasanas_), as sementes que dão origem a todas as imaginações ignorantes (_ajnana-kalpanas_). Quando este _jiva_ é completamente destruído e está queimando junto com todas as suas _vasanas_ no fogo do conhecimento verdadeiro (_jnanagni_), o crematório no qual assim queima é a expansão da pura consciência (_chit-akasa_), cuja luz é como a expansão do fogo ardente que pega e se espalha instantaneamente por uma vasta, densa e seca floresta, reduzindo-a completamente a cinzas. Nesta simile, a madeira seca da vasta floresta deve ser entendida como sendo como as inúmeras _vasanas_ do _jiva_, que se tornaram secas como resultado da _vairagya_ do _jiva_ ou desatenção a elas, e que assim se tornaram combustível apto para o fogo do _Jnana_ (veja páginas 102 a 103 de _O Caminho de Sri Ramana – Parte Um_). A Luz da pura consciência, que aqui é dita ser como um incêndio florestal que se espalha por todo o lado e instantaneamente consome o ego e todos os seus produtos (a aparência total do mundo), é a mesma que o sol ardente de Arunachala (o sol do autoconhecimento) que, como descrito no verso 27 de _Sri Arunachala Aksharamanamalai_ e no verso 1 de _Sri Arunachala Pancharatna_, engole tudo por seus raios de luz brilhante que se espalham (veja o verso 114 deste trabalho).
+
+
+
+
+
+**1012.** **Saiba que aquilo que é digno [para ser alcançado] é apenas o Silêncio, que é mero Eu, o [errado] conhecimento 'Eu' tendo morrido como ignorância [_ajnana_]. Se você perguntar a verdade, "Por que [é assim]?", [é porque aquele estado de Silêncio é] o espaço [de _Jnana_] no qual nada existe para desejar e [portanto] ser uma causa de miséria.**
+
+**_Michael James_**: O desejo é a única causa da miséria e só pode surgir se algo diferente de si mesmo existir. Portanto, como o Silêncio, o estado do Eu, é o espaço da mera consciência em que nada além do Eu existe, ele sozinho é digno de ser alcançado. Para atingir este Silêncio, o ego, o conhecimento errado 'Eu sou o corpo', deve ser destruído, tendo sido encontrado como nada além de uma ignorância inexistente.
+
+**1013.** **Saiba que a glória do vasto espaço do verdadeiro conhecimento [_mey-jnana_], cuja grandeza não pode ser superada por nada mais, não pode ser facilmente vista por nenhum outro meio, senão pela Graça do Guru, que destrói [todos nossos] defeitos.**
+
+**1014.** **Aqueles que viram a glória de [aquele] vasto espaço [de _Jnana_] serão transformados em Siva supremamente feliz e silencioso, tendo destruído o nascimento [e a morte], que foram multiplicados cada vez mais por causa da vaidade do apego [ao corpo como 'Eu'] e a outra vaidade [de tomar os objetos deste mundo, incluindo o corpo, para serem 'meus'].**
+
+**1015.** **O assunto para _Parasakti_, que se apresenta como o predicado, tendo como objetos todas as coisas que são conhecidas pelos cinco - degustar, cheirar, ver, ouvir e tocar - é o espaço de _Jnana_, o estado maravilhoso.**
+
+**_Sadhu Om_**: Em uma frase, o objeto depende do predicado ou verbo principal, e o predicado depende do sujeito. Sem o predicado e objeto, o sujeito pode se manter, mas sem o sujeito, o predicado e objeto não podem se manter. Neste verso, toda a aparência do mundo, que consiste meramente no conhecimento adquirido através dos cinco sentidos, é comparada ao objeto de uma frase; _Parasakti_, o poder de _maya_ que cria esta aparência de mundo, é comparado ao predicado ou verbo principal de uma frase; e o espaço vazio de _Jnana_, o verdadeiro estado do Eu no qual tanto _Parasakti_ quanto Sua criação dependem para sua existência aparente, é comparado ao sujeito de uma frase. Assim, de uma forma humorística, Sri Bhagavan declara que todo este vasto universo e seu poderoso criador existem apenas dependendo de um mero espaço aberto e vazio.
+
+Outro significado oculto também é dado neste verso. A palavra tâmil para 'sujeito' é _‘ezhuvay’_, que também pode significar 'o lugar que surge'; a palavra tâmil para 'predicado' é _‘payanilay’_, que também pode significar 'inútil'; e a palavra tâmil para 'objeto' é '_seyyappadu porul'_, que significa 'a coisa feita'. Assim, Sri Bhagavan indiretamente adverte: "Se você se eleva do espaço de _Jnana_ e cria tantas coisas, não é de nenhum uso".
+
+Ao longo deste capítulo, dos versos 1007 a 1015, o estado de _Jnana_ - o supremo objetivo da vida [_parama-purushartha_] que finalmente deve ser alcançado por _sadhakas_ após praticar tantas _sadhanas_ e fazer tantos sacrifícios ao longo de muitos nascimentos - ao invés de ser glorificado como uma grande conquista, é descrito como "um espaço aberto e vazio, um mero espaço que não contém nada além que possa ser desejado ou alcançado, um mero estado de silêncio absoluto". No entanto, deve-se entender que a razão pela qual Sri Bhagavan aparentemente ridiculariza o estado de _Jnana_ desta maneira é apenas para nos permitir conhecer a verdadeira grandeza desse estado semelhante a um espaço vazio. Ou seja, Sri Bhagavan ensina nesses versos que, uma vez que não apenas todos os incontáveis objetos deste universo grande e vasto inimaginável, mas até a _parasakti_ que os cria e sustenta, surgem e se espalham apenas do espaço do autoconhecimento [_atma-jnanakasa_], que é a mera consciência 'Eu sou', o estado supremo e insuperável é apenas o estado de _Jnana_, o mero conhecimento de nossa própria existência, que é a base que suporta a onipotente _Parasakti_.
+
+Desde que, tendo surgido e abandonado o estado de mera existência-consciência [o conhecimento de seu próprio ser], as mentes de todos os _jivas_ sempre permanecem extrovertidas e se orgulham apenas do conhecimento objetivo, eles não estarão aptos a alcançar o estado de _moksha_ ou _Jnana_ a menos que renunciem a esse gosto pelo conhecimento objetivo e, em vez disso, adquiram um grande amor e encontrem completa satisfação no estado do mero ser. É apenas para ensinar essa verdade e, assim, instilar firme _vairagya_ nos corações de Seus devotos, que Sri Bhagavan glorifica o estado de _Jnana_ descrevendo-o neste capítulo como um mero espaço aberto e vazio. Também é apenas por essa mesma razão que Sri Bhagavan uma vez comentou humoristicamente: "Todos que vêm aqui dizem que vieram apenas para _moksha_. Mas se até mesmo uma pequena experiência de _moksha_ fosse dada como amostra, isso seria suficiente, e nem mesmo um único corvo ou pardal ficaria aqui; todos voariam para longe e eu ficaria sentado aqui completamente sozinho!"
+
+
+
+
+**28 O Espaço da Consciência**
+
+_(Chit-Ambara Tiran)_
+
+**1016.** **Vagar por aí em busca do espaço da consciência [_chit-ambara_], que existe e brilha em todos os lugares como o Eu, é como procurar com uma tocha flamejante pelo sol em plena luz do dia, que com sua supremacia faz a branca lua sentir vergonha.**
+
+**_Sri Muruganar_**: O espaço da consciência [_chitrambalam_ ou _chit-ambara_] é o que também é chamado de espaço do coração [_daharakasa_ ou _hridayakasa_], o espaço da consciência [_chidakasa_] e o espaço do conhecimento [_jnanakasa_]. Essa é a verdadeira forma de Deus, que brilha como o Eu.
+
+**1017.** **'Eu' [o ego] é irreal; isto [o mundo], que não é [esse 'Eu'], também é irreal; o conhecimento que sabe 'Que Eu sou isto [corpo]' também é completamente irreal [ou esse 'Eu', o conhecimento que sabe disso, também é completamente irreal]; a causa primordial [_mula-prakriti_] que faz o triângulo [_triputi_] aparecer, também é irreal. Apenas o maravilhoso espaço da consciência [_chit-ambara_] é real.**
+
+**_Michael James_**: A causa primordial (_mula-prakriti_) mencionada aqui é _maya_, a mente ou o ego. O espaço da consciência, que é o único real, é o mesmo que o _Bhuma_ descrito nos versos 1005 e 1006, cuja natureza é a mera existência-consciência e que está completamente desprovido do irreal triângulo - o conhecedor (o ego), o ato de conhecer e os objetos conhecidos.
+
+
+
+
+
+
+**1018.** **Aqueles que estão iludidos, pensando 'O que é conhecido através dos cinco sentidos é real', e que deixam de lado como irreal o seu próprio estado [do Eu], que é o espaço da consciência no qual todos os muitos mundos vastos e lotados aparecem [como imagens numa tela de cinema], não podem alcançar o benefício supremo [do autoconhecimento].**
+
+**1019.** **Quem mais além dos _Jnanis_, que brilham como o próprio Siva, tendo destruído as impurezas da mente [isto é, as tendências ou _vasanas_], pode conhecer claramente a grandeza do glorioso espaço da consciência [o estado do verdadeiro _Jnana_], que não é tocado por nenhum defeito ou deficiência?**
+
+**28 Revelação**
+
+_(Arivurutta Tiran)_
+
+**1020.** **"Portanto, esse espaço da consciência é em si mesmo o verdadeiro supremo Siva, que não pode ser descrito por ninguém" – dizendo assim, o divino Senhor Ramana, o supremo _Jnani_, revelou-me o estado do Eu, que é o próprio Siva.**
+
+**1021.** **O Eu mesmo revelou graciosamente e concedeu o Eu, que é a forma do Eu, no momento, que é a forma do Eu, e no lugar, que é a forma do Eu; para que o Eu possa atingir [a si mesmo], ele percebeu a si mesmo como a forma do Eu.**
+
+**_Sadhu Om_**: Nos dois versos acima, Sri Muruganar expressou a experiência do supremo _Jnana_ que lhe foi concedida pela Graça de Seu _Sadguru_, Bhagavan Sri Ramana. O estado de ausência de ego de Sri Muruganar pode ser claramente compreendido aqui pelo fato de ele dizer que o Eu percebeu a si mesmo, e não, "Eu percebi o Eu".
+
+Verdadeiramente, nenhum _jiva_ pode jamais perceber o Eu; é o Eu sozinho que se percebe [referir-se às páginas 105 a 106 de _O Caminho de Sri Ramana – Parte Um_]. Além disso, pelas palavras usadas no verso 1021, "no momento, que está na forma do Eu, e no lugar, que é a forma do Eu", devemos entender que o Eu não se percebe em nenhum momento ou lugar específico. Como o tempo e o espaço são ambos irreais, sendo nada mais que uma falsa aparência no verdadeiro Eu, a experiência de um _Jnani_ é que Ele, o Eu, sempre se conheceu em todos os momentos e em todos os lugares. Para Ele, a ignorância [_ajnana_] é algo que nunca existe, então, embora na perspectiva dos outros possa parecer que Ele atingiu _jnana_ em um momento e lugar específicos, em Sua própria perspectiva Ele não sente verdadeiramente que uma vez estava na ignorância e agora atingiu _Jnana_ [veja o verso 1085].
+
+
+
+
+
+
+**30 O Estado do Eu**
+
+_(Atma Nilai Tiran)_
+
+**1022.** **Quando o ego, que projeta o mundo mas se esconde [sendo incapaz de conhecer sua própria verdadeira natureza], entra no coração [ao indagar] assim 'Qual é a fonte brilhante de mim mesmo?', o supremo conhecimento que irradia triunfantemente e com vigor [na forma do _sphurana_ 'Eu-Eu'] é o interminável e real estado do Eu.**
+
+**_Sadhu Om_ e _Michael James_**: A própria natureza do ego é atender apenas a coisas diferentes de si mesmo. Portanto, o ego não sabe quem ou o que ele é. Essa ignorância de sua própria natureza (isto é, a ignorância do fato de que ele verdadeiramente não tem existência própria) é o que é significado aqui pelas palavras "o ego que se esconde" (_olikkum_ ahankaram). Mas se esse ego transitório e irreal, que surge na forma do conhecimento errado 'Eu sou isto' ou 'Eu sou aquilo', tenta desviar sua atenção do mundo das segundas e terceiras pessoas, que ele projeta através dos cinco sentidos, e para si mesmo, a primeira pessoa, para descobrir 'Quem sou eu?', ele subsistirá em sua fonte, o coração ou Eu, ondeupon o estado eterno e real brilhará por si só na forma do verdadeiro conhecimento 'Eu sou Eu'.
+
+**1023.** **Se - em vez de girar com desejo [por prazeres mundanos] por conhecer objetivamente outras coisas que aparecem diante dele devido à atenção objetiva - a mente perversa atende a si mesma, perguntando 'Quem sou eu que conheço objetos?', [ela alcançará aquele estado de] permanência em sua própria realidade que é o único verdadeiro estado [do Eu].**
+
+**1024.** **Independentemente de qual _asrama_ eles tenham entrado e de qual casta [_varna_] eles tenham nascido, os _Jnanis_ permanecerão sempre em seu próprio estado [o estado natural do Eu]. Apenas o próprio estado deles é o estado real; diga-me, por outro lado, não são todos os outros estados [como os _varnas_ e _asramas_] meramente estados irreais [uma vez que pertencem apenas ao corpo irreal]?**
+
+
+
+
+
+**1025.** **O estado do Eu é o único estado real e amável. Por outro lado, todos os estados de viver no céu, [que é] como um lótus do céu, são apenas estados mentais irreais que se alimentam cada vez mais de ilusão e que, como a água de uma miragem, aparecem [apenas] devido à imaginação.**
+
+**_Sadhu Om_**: As palavras 'como um lótus do céu' [_van-murali pol_] podem dar dois significados, a saber (i) '[céus] como o _Brahma-Loka_' [porque o trono de Brahma, cuja morada está no céu, é um lótus], e (ii) 'como um lótus imaginário no céu'. Assim como o lótus imaginário visto no céu e como a água imaginária vista numa miragem, todos os estados que não o estado do Eu são meras ilusões mentais e são verdadeiramente inexistentes. Até os prazeres de viver nos vários tipos de céus como o _Brahma Loka_ são triviais e irreais, e por isso eles não podem satisfazer nosso anseio por felicidade completa e perfeita, assim como a água de uma miragem não pode saciar nossa sede. Portanto, o único estado que é verdadeiramente digno de ser amado e aspirado é o estado do Eu.
+
+**1026.** **Embora a própria realidade natural de alguém exista [e seja experienciada diariamente no sono profundo] como a suprema felicidade, [a] busca pela felicidade e [portanto] o sofrimento com a mente iludida e enganosa sempre indo atrás do que-é-outro [o não-Eu], é em si a perda daquilo que é felicidade.**
+
+**_Sri Muruganar_**: Como a verdade atual de sua própria experiência é expressa por todos assim: "Eu acordei do sono; eu dormi felizmente", é concordado por todos que o Eu brilha como a forma de felicidade no estado natural do sono, onde a mente está vazia e desprovida de apego aos objetos dos sentidos. Se for perguntado por que essa felicidade, que existia como a própria natureza naquele estado, deixa de ser experimentada assim que o sono termina, é por causa do desejo de correr atrás de objetos sensoriais, tendo se separado do próprio estado. Portanto, é aconselhado que se atinja a felicidade inigualável que é a própria experiência verdadeira, mantendo a mente inabalável pelo desejo por objetos sensoriais, que surge devido à ilusão, conhecendo a si mesmo e brilhando sem desatenção [_pramada_], permanecendo pacífico mesmo no estado de vigília como no sono.
+
+
+
+
+
+**1027.** **Os _Jnanis_ sabem que o sabor do Eu [_atma-rasam_] é o melhor sabor [_ati-rasam_], e por isso permanecem no estado do Eu. Aqueles que não sabem que a felicidade do Eu é definitivamente a mais alta, permanecem no estado do mundo [ou seja, permanecem imersos na vida mundana buscando apenas prazeres mundanos].**
+
+**_Michael James_**: No apêndice de _Guru Vachaka Kovai – Urai_, Sri Sadhu Om incluiu onze versos avulsos de Sri Bhagavan e deu notas indicando onde cada um deveria ser incorporado no texto. No verso 6 desse apêndice, que deveria ser incorporado aqui, Sri Bhagavan diz:
+
+**Se [através da pergunta ‘Quem sou eu?’] se conhece a própria natureza no coração, [ela será encontrada como] existência-consciência-felicidade [_sat-chit-ananda_], que é a plenitude [inteireza ou perfeição] sem começo e sem fim.**
+
+No versículo acima, Sri Bhagavan parafraseou o versículo 28 de _Upadesa Undiyar_.
+
+**1028.** **Aqueles que não sabem que sua própria natureza é a felicidade, serão iludidos como um veado-almiscarado, [enquanto] aqueles que claramente conhecem sua própria natureza [como existência-consciência-felicidade], permanecerão em seu próprio estado [do Eu] sem prestar atenção ao mundo [e sem buscar felicidade nos objetos mundanos].**
+
+**_Michael James_**: O veado-almiscarado emite um odor agradável, mas não sabendo que o odor está vindo apenas de si mesmo, corre para lá e para cá em busca da fonte desse odor. Da mesma forma, não sabendo que toda a felicidade que desfrutam vem apenas do seu próprio Eu, cuja natureza é a felicidade, as pessoas ignorantes (_ajnanis_) correm atrás de objetos mundanos em busca de felicidade. Compare aqui o verso 585 desta obra, e as páginas 36 a 40 de _The Path of Sri Ramana –_ Parte Um.
+
+
+
+
+
+
+
+
+**1029.** **O que é chamado de felicidade é apenas a natureza do Eu; O Eu não é diferente da felicidade perfeita. Só existe o que é chamado de felicidade. Conhecendo esse fato e permanecendo nesse estado do Eu, desfrute da bem-aventurança eternamente.**
+
+**_Sadhu Om_**: Consulte a obra _Quem sou eu?_, onde Sri Bhagavan diz: "O que é chamado de felicidade é apenas a natureza do Eu; a felicidade e o Eu não são diferentes. A felicidade do Eu [_atma-sukha_] é a única que existe; só isso é real.”
+
+**31** **O Poder do Eu**
+
+_(Atma Vala Tiran)_
+
+**B20. Proclame assim, "Quem quer que tenha conquistado os sentidos pelo conhecimento [_jnana_], sendo um conhecedor do Eu [_atmavid_] que permanece como existência-consciência, é o fogo do conhecimento [_jnanagni_]; [Ele é] o portador do raio do conhecimento [_jnana-vajrayudha_]; Ele, Kala-kalan, é o herói que matou a morte.**
+
+**_Michael James_**: O portador do raio (_vajrayudha_) é Indra, o mais poderoso dos deuses, que é considerado por alguns seguidores do _karma-kanda_ (a parte dos _Vedas_ que ensina ações ritualísticas para o cumprimento dos desejos mundanos) como o Senhor Supremo do Universo. Portanto, neste verso, Sri Bhagavan diz a tais _karma-kandis_ que o verdadeiro Indra, o _JnanaIndra_, é apenas o _Atma-jnani_.
+
+A palavra _‘kala’_ significa ‘morte’ ou ‘tempo’, e é um nome de Yama, o Deus da morte. _Kala-karan_ significa ‘morte à morte’ ou ‘conquistador do tempo’, e é um nome do Senhor Shiva, que matou Yama.
+
+Assim, neste verso, Sri Bhagavan revela que o _Jnani_ não é meramente uma encarnação de qualquer Deus particular. O _Jnani_ é o próprio _Jnana_, e portanto Ele é nada menos que Indra, Senhor Shiva e todos os outros Deuses. Como o _Jnani_ conquistou os sentidos, através dos quais todo o universo é projetado, Ele conquistou, na verdade, o universo inteiro. Portanto, em todo o universo, não há poder maior que o poder da permanência do Eu do _Jnani_.
+
+O verso acima de Sri Bhagavan, que também está incluído em _Ulladu Narpadu –Anubandham_ como o verso 28, resume as ideias expressas nos dois versos seguintes de Sri Muruganar.
+
+
+
+
+
+
+
+**1030.** **Somente o poderoso _Jnani_, que conquistou os cinco [sentidos] pela permanência do Eu, que irrompe inobstruído [mesmo pela menor _pramada_], é o portador do raio de _Jnana_ que destruiu Yama, que nunca voltará vazio [de mãos vazias]; [Ele é] o sol de _Jnana_, que destrói [a escuridão da] aparência de [os seis inimigos internos, ou seja, desejo, raiva, avareza, ilusão, orgulho e] ciúme.**
+
+**1031.** **Saiba que Ele [o _Jnani_] que, irritadamente o fazendo voltar para o coração [através da atenção ao Eu], destrói o cruel Surapadma, o 'Eu' [ou ego], que possui o poder de criar e sustentar todos os mundos através dos seis sentidos, é Kumara [Senhor Subrahmanya], que se deleita na bem-aventurança suprema.**
+
+**_Sadhu Om_**: Uma vez que é apenas através da mente que se é capaz de conhecer o mundo através dos outros cinco sentidos, a mente às vezes é contada como um dos sentidos, fazendo com que eles sejam seis em número.
+
+O fato de que o verdadeiro _Jnani_, que conquistou e destruiu o ego, é a encarnação de todas as formas de Deus [_Iswara-murtis_], também é revelado por Sri Bhagavan no verso 6 de _Devikalottaram_, “Ele é o de Quatro Faces [Brahma], Siva e Vishnu; Ele é o rei dos _devas_ [Indra] e Guha [Senhor Subrahmanya]; Ele sozinho é o Guru de todos os _devas_; Ele é o grande Yogi e o possuidor da riqueza de todas as _tapas_.”
+
+
+
+
+
+
+**1032.** **Ó homens que estão [erroneamente acreditando] que este corpo, que é [insensível como] uma imagem, é 'Eu', uma imagem pode pensar em alguma coisa? Aquilo que pensa e aquilo que esquece é só a alma. Portanto, aquilo que é chamado 'Eu' é [não o corpo insensível, mas] só isso [a alma sensível].**
+
+**_Sadhu Om_**: Neste verso, o ego ou _jiva_, o falso 'Eu', é referido como se fosse o verdadeiro 'Eu'. Por quê? Já que o objetivo inicial de Sri Bhagavan é apenas provar que o ser sensível é apenas a _jiva_ ou mente que pensa e esquece. Ele então conclui que o corpo, que é insensível e que não pode pensar em nada, portanto, não é 'Eu'. Então, no próximo verso, Ele revela a verdade de que mesmo essa mente não é o verdadeiro 'Eu'. Assim, o método de ensino adotado por Sri Bhagavan nestes dois versos é o mesmo que o mencionado em _Kaivalya Navanitham_, capítulo 1, verso 18, a saber, "Como mostrar a lua crescente ao primeiro mostrar algumas árvores na terra, e como mostrar Arundhati [uma pequena estrela] ao primeiro mostrar algumas [maiores] estrelas no céu ... ".
+
+**1033.** **Quando esse corpo é [assim encontrado para ser] diferente [do‘Eu’], deve haver outra alma [ou vida] tendo como seu corpo a alma, cuja forma é 'Eu sou o corpo', brilhando dentro dessa alma. Quando isso é assim, exceto aquela [outra alma], que é a verdadeira alma, pode haver outras almas? Me diga.**
+
+**_Sadhu Om_**: A alma que pensa e esquece mencionada no verso anterior é a _jiva_, cuja forma é o pensamento 'Eu sou o corpo'. Mas já que aquele verso conclui que o corpo não é 'Eu', a _jiva_ ou ego é encontrada para não ter na verdade nenhuma forma. Em outras palavras, já que a _jiva_ não é nem o corpo insensível nem a consciência 'Eu sou', mas é apenas um elo falso que aparentemente entra em existência quando essas duas coisas diferentes são confundidas como sendo uma e a mesma, temos que concluir que a _jiva_ não tem existência real e que, portanto, ela não pode ser 'Eu', a verdadeira alma ou vida. Assim, devemos aceitar que existe outra alma [outra realidade sensível] que tem estado existindo todo este tempo dentro daquela _jiva_ insensível, ativando-a e tendo-a como seu abrigo. Esta outra alma [o Eu], que tem a _jiva_ como seu corpo e que é a consciência ou vida que faz aquela _jiva_ insensível parecer como se fosse sensível ou viva, é a única alma real. Quando o Eu [a verdadeira, pura consciência 'Eu sou'] é assim encontrado para ser a única realidade das _jivas_ [a consciência mista e irreal 'Eu sou o corpo'], como pode haver almas verdadeiramente existentes além do Eu? Assim, este verso ensina que, exceto o Eu, a única e verdadeira alma ou vida, nunca existe nenhuma alma em nenhum momento ou em nenhum lugar.
+
+**_Michael James_**: Consulte aqui o verso 1051.
+
+
+
+
+
+**1034.** **A realidade que brilha plenamente, sem miséria e sem um corpo, não só quando o mundo é conhecido, mas também quando o mundo não é conhecido [como no sono], é a sua verdadeira forma [_nija-swarupa_].**
+
+**1035.** **Deixe o mundo que é conhecido [através dos cinco sentidos] ser real ou descartado como uma imaginação da mente que conhece [o mundo], você não existe lá como a forma da consciência que conhece? Aquela, a pura consciência [‘Eu sou’], sozinha é a forma do Eu [_atma-swarupa_].**
+
+**1036.** **A realidade que é a mera consciência [da própria existência] que permanece quando a ignorância [dos objetos] é destruída junto com o conhecimento [dos objetos], só essa é o Eu [_atma_]. Naquela _Brahma-swarupa_, que é a plena autoconsciência [_prajnana_], não há a menor ignorância [_ajnana_]. Saiba assim.**
+
+**_Sadhu Om_**: As pessoas geralmente pensam que o estado de não conhecer outras coisas é um estado de ignorância [_ajnana_]. Mas isso não é correto. Na verdade, o conhecimento de outras coisas é em si mesmo a ignorância [veja _Ulladu Narpadu_, versículo 13]. Como mesmo durante a ausência do chamado conhecimento de outras coisas, que não é nada além de ignorância, o puro autoconhecimento 'Eu sou' é experimentado por todos, esse conhecimento da própria existência é apenas o conhecimento perfeito [_purna-jnana_]. Este conhecimento, que é diferente de outros conhecimentos, é referido neste verso como 'a realidade que é apenas [ou vazia] consciência' [v_etrarivana unmai_], 'Eu' [_atma_], 'Autoconsciência' [_prajnana_] e _‘Brahma-swarupa’_.
+
+
+
+
+
+**1037.** **Não é apenas aquilo que é desprovido de ignorância [_ajnana_], mas também o Eu, que é o conhecimento perfeito [_sujnana_]. Se não fosse o verdadeiro conhecimento [_sat-bodha_], como poderiam as diferenças do intelecto nascer dele?**
+
+**_Sadhu Om_**: A frase 'as diferenças do intelecto' [_vijnanabheda_] significa o conhecimento das diferenças [o conhecimento de díades e tríades] que brilha no intelecto ou _vijnanamaya-kosa_ e que é experienciado por todos os _jivas_. Embora este conhecimento qualificado [_visesha jnana_] seja irreal, a base da qual ele aparentemente surge ou nasce deve ser um conhecimento ou consciência real. Portanto, deve-se concluir que o Eu [_atma_], a fonte do intelecto, é da natureza do conhecimento [_jnana_]. Refira-se aqui ao verso 12 de _Ulladu Narpadu_, “... Saiba que o Eu é conhecimento, não um vazio”.
+
+**1038.** **Esse conhecimento não é uma qualidade [_guna_] do Eu, porque a natureza do Eu é _nirguna_ [desprovida de qualidades]. Além disso, o autoconhecimento não é um ato [de conhecimento], porque [o Eu é] sem ação [_akartritva_]. Portanto, o conhecimento é a própria natureza [do Eu].**
+
+**_Michael James_**: Como o Eu é a realidade não-dual, não há outra coisa para conhecer o Eu, e portanto é o Eu sozinho que se conhece. Mas como o Eu é por natureza sem ação e, portanto, sem ação, o conhecimento do Eu por si mesmo não é um ato de conhecimento; o Eu se conhece não por um ato de conhecimento, mas por ser ele mesmo [veja _Upadesa Undiyar_ versículo 26, "Ser o Eu é em si mesmo conhecer o Eu, porque o Eu é aquilo que é desprovido de dualidade ... "]. Portanto, segue-se que a própria natureza do Eu é o conhecimento, embora seja um conhecimento que está desprovido do ato de conhecer. É por isso que Sri Bhagavan diz no verso 12 de _Ulladu Narpadu_, “... Aquele que conhece não pode ser o [verdadeiro] conhecimento...". A mesma verdade também é expressa por Sri Muruganar no verso 831 de _Mey Tava Vilakkam_, onde ele diz, "O verdadeiro 'Eu' é tal conhecimento que não conhece nem outras coisas nem a si mesmo". Como o autoconhecimento é não-dual, é um conhecimento que brilha sem a tríade [triputi] - o conhecedor, o ato de conhecer e o objeto conhecido - e, portanto, é bastante diferente de outros tipos de conhecimento, todos os quais envolvem o ato de conhecer. Veja também _O Caminho de Sri Ramana –_ Parte Dois, apêndice 4 (c), p. 236.
+
+
+
+
+
+
+
+**1039.** **Esse conhecimento sem adjunções, que é puramente existência poderosa, que brilha por si só como o indestrutível 'Eu sou', e que não depende nem um pouco de qualquer outra coisa, é apenas a natureza da própria realidade inabalável [Eu].**
+
+**1040.** **Como conhecer a própria realidade, que [como descrito no verso anterior] existe como o brilho do _Jnana_, como [se conhece] objetos de percepção insignificantes [segunda e terceira pessoas]? [Mas] se alguém permanecer pacificamente no Eu, [assim] destruindo a falsa primeira pessoa 'Eu' [o ego que surge misturado com adjunções como 'Eu sou isso, Eu sou assim'], a verdadeira primeira pessoa [Eu, o verdadeiro 'Eu'] brilhará por si só.**
+
+**1041.** **Entre os muitos grupos que são tríades [_triputis_ ou os três fatores do conhecimento objetivo], nenhum fator [_puti_] pode existir sem o Eu. No entanto, nem mesmo um entre esses fatores é o Eu. Apenas aquilo que permanece como a base de todos esses [fatores] é o estado real do Eu.**
+
+**_Sadhu Om_**: O grupo de três fatores, o observador, o ato de ver e o objeto visto, é uma tríade [_triputi_]. 'Eu sou o observador', 'Eu estou vendo' e 'esses objetos são vistos por mim' - nenhum desses três conhecimentos pode existir sem um 'Eu'. Mas esse 'Eu', o observador, não é o Eu; é apenas o ego. Portanto, é dito neste verso que nenhum dos três fatores que constituem uma tríade é o Eu. Ações ou _pravrittis_ como ver não são a natureza do Eu. 'Eu estou vendo' é a natureza do conhecimento do ego. O conhecimento da própria existência, 'Eu sou', é apenas a natureza do Eu. Se não existisse o conhecimento básico, 'Eu sou', o conhecimento qualificado 'Eu estou vendo' não poderia surgir para o ego. Portanto, é dito neste verso que nenhum dos fatores de uma tríade pode existir sem o Eu, e também que, uma vez que o conhecimento objetivo não existe para o Eu, nenhum desses fatores é o Eu.
+
+
+
+
+
+
+**1042.** **O próprio Eu, cuja grandeza é a eternidade e a perfeição completa, não é de modo algum dualidade [outra coisa] a ser alcançada. Unir-se [atingir o yoga com] o Eu é conhecer [a própria] existência [_sat_] e não é conhecer qualquer outra coisa. Esse conhecimento [o conhecimento da própria existência] é a verdadeira forma do Eu.**
+
+**_Michael James_**: O verdadeiro _yoga_ é apenas a união com o Eu, que não é o estado de conhecer outras coisas, mas apenas o estado de conhecer a própria existência. Como para conhecer algo precisamos prestar atenção nele, o único caminho para alcançar o verdadeiro _yoga_ é a auto-atenção e não a atenção a qualquer outra coisa. Quando, pela auto-atenção, se alcança o _yoga_ ou união com o próprio Eu, ver-se-á que essa auto-atenção (a consciência da própria existência) é ela própria a verdadeira forma ou natureza do Eu.
+
+**1043.** **O único conhecimento supremo ininterrupto que existe como base para o surgimento de todos os dyads [_dvandvas_ ou pares de opostos] que são vistos, como sutis [_sukshama_] e grossos [_sthula_], vazio [_sunya_] e pleno [_purna_], e desalento [surgindo do desejo] e alegria livre de desejo, é só 'Eu' [a verdadeira forma ou natureza do Eu].**
+
+**1044.** **A única consciência real [_chinmaya_] que existe como base para o surgimento dos muitos eus irreais [egos] e para [seus] sofrimentos, sem sofrer ela mesma devido às misérias produzidas pela mente, que existe sem realizar os dois _karmas_ [bom e mau], é só o Eu.**
+
+**1045.** **Saiba que o espaço do Coração que, como o sol, existe e brilha por si só como a simples natureza [da existência] 'Eu sou' e como a verdadeira clareza [da consciência], que está livre do orgulho de [apego ao] corpo, é só o Eu.**
+
+
+
+
+
+
+
+
+**1046.** **Aquilo que é o denso Silêncio, a verdadeira consciência, a luz mais sutil, que não é o ego que conhece objetivamente as coisas à sua frente como 'isso', e sobre o qual a mente se desanima e lamenta, "Eu não sei isso", só pode ser o Eu, a consciência-existência.**
+
+**1047.** **Todos os mundos são um espetáculo de imagens em movimento, [enquanto] o Eu é a [tela] imóvel da verdadeira consciência.**
+
+**_Michael James_**: Compare aqui o verso 1218.
+
+**1048.** **[Assim como em um filme de cinema] esses triados [_triputis_] são projetados na tela dessa realidade [o Eu], que é a forma da consciência.**
+
+**1049.** **Assim como a nota fundamental [_sruti_], que é a nota [invariável] misturada e indispensável para todas as sete notas [variáveis], e assim como a tela, que é a base [imóvel] para as imagens que estão se movendo [nela] devido à energia elétrica, aquilo que existe livre dos defeitos [de mudança e movimento] é o Eu, a realidade.**
+
+**_Michael James_**: Embora as outras notas estejam sempre mudando, a nota fundamental (_sruti_) permanece sempre inalterada; da mesma forma, embora a mente e seus produtos, o corpo e o mundo, estejam sempre passando por inúmeras mudanças, o Eu, a consciência básica 'Eu sou', permanece sempre inalterado. E embora as imagens na tela estejam sempre se movendo, impulsionadas pela energia elétrica do projetor, a própria tela permanece sempre imóvel; da mesma forma, embora a mente e seus produtos estejam sempre em movimento, impulsionados pelo poder do _prarabdha_, o Eu, a consciência básica na qual eles aparecem, permanece sempre imóvel. Assim, como a nota fundamental e a tela de cinema, o Eu não é afetado nem um pouco por quaisquer mudanças ou movimentos que possam parecer ocorrer nele.
+
+
+
+
+
+
+
+**1050.** **Aquilo que sempre existe em todos os lugares sem características como ir e vir [ou nascer e pôr], e que, devido ao seu brilho dentro de cada coisa irreal, faz com que essas coisas irreais, que são muitas e diferentes, apareçam como se fossem reais, só pode ser o Eu, a suprema realidade [_para vastu_].**
+
+**1051.** **Aquele que é desconhecido embora resida dentro de cada _jiva_, e que está incessantemente, incansavelmente e eficientemente ativando todas essas _jivas_, tendo-as como Seus corpos, só pode ser o imortal Eu interior [_antaratma_].**
+
+**_Michael James_**: Consulte aqui o verso 1033 e sua nota.
+
+**1052.** **Saiba que o Eu é apenas [como] o eixo imóvel no meio [da roda], e não [como] os raios da roda giratória, que são [similares às] almas-ego, sempre sofrendo [ou sempre vagando], cuja natureza é nascer e perecer [pôr].**
+
+**_Sadhu Om_**: Neste capítulo, os versos 1033, 1046, 1051, 1052 e 1057 mostram claramente a diferença entre o _jiva_ [a alma individual ou ego] e o _atma_ [o verdadeiro Eu].
+
+Embora em algumas escolas religiosas de pensamento, como Saiva Siddhanta e Budismo, a _jiva_ sofredora seja chamada de _‘atma’_ [ou _jivatma_], nos ensinamentos de Sri Ramana e em muitos escritos _Advaitic_, a palavra _‘atma’_ não é usada para denotar o _jiva_ [o ego ou alma irreal] mas apenas para denotar a realidade suprema. Portanto, os leitores devem entender que a diferença entre essas várias escolas de pensamento reside apenas no significado dado à palavra _‘atma’_, e não em sua conclusão final sobre a irrealidade da alma individual.
+
+
+
+
+
+
+
+**1053.** **Aquilo que aparece [seja o que for], deixe aparecer; aquilo que desaparece [seja o que for], deixe desaparecer. O que [perda ou ganho] isso é para o autoconhecimento? O que permanece depois que tudo entrou e deixou de existir na unidade [_kevalam_] de Siva - que surge como o Todo [_purnam_] - só pode ser o Eu, a própria natureza.**
+
+**_Sadhu Om_ e _Michael James_**: Tudo o que aparece e desaparece existe apenas na perspectiva errada do ego, e não na verdadeira perspectiva do Eu. Portanto, o Eu não é afetado nem um pouco por qualquer coisa que apareça ou desapareça, e por isso neste verso e no verso 6 do _Sri Arunachala Ashtakam_, Sri Bhagavan diz: "Deixe-os aparecer ou deixe-os desaparecer". O que permanece inalterado de qualquer forma, seja pela aparência deste universo ou pelo seu desaparecimento (como no sono), e que permanece brilhando como o único Todo perfeito mesmo depois de toda essa aparência ter sido destruída no momento da dissolução (_pralaya_) - só isso é o Eu, só isso é 'nós', só isso é Siva.
+
+**1054.** **O conhecimento puro que brilha [como o _sphurana_ 'Eu-Eu'] quando esse ego enganoso é examinado [através da investigação 'Quem é este Eu?'] e destruído, que os _Upanishads_ elogiam como a gloriosa _darshan_ da dança de Siva e que é a verdadeira clareza da Graça de Deus, só pode ser a forma do Eu.**
+
+**_Michael James_**: Neste verso, Sri Bhagavan revela que o verdadeiro significado de Nataraja, a forma dançante do Senhor Siva, é o brilho do Eu na forma do _sphurana_, 'Eu-Eu'.
+
+**1055.** **Saiba que a natureza do _Brahma-swarupa_, que é [um] sem outro [ou seja, que é não-dual], é a antiga glória. Embora essa antiga _swarupa_ [Eu ou _Brahman_] pareça ser como um vazio [_sunya_] ela não é um vazio; [é] a única existência-consciência [_sat-chit_], que é a própria realidade total.**
+
+**_Michael James_**: Consulte também o verso 12 de _Ulladu Narpadu_.
+
+
+
+
+
+
+**1056.** **Os sábios dizem que o estado [ou lugar] no qual opensamento 'Eu' [o ego] não surge nem um pouco, só pode ser o Silêncio [_mouna_] ou o Eu [_swarupa_]. [Esse] Eu silencioso só pode ser Deus; o Eu só pode ser o _jiva_; o Eu só pode ser este mundo antigo.**
+
+**_Sadhu Om_**: A mesma ideia também é expressa por Sri Bhagavan nas seguintes duas passagens de _Quem sou eu?_: “O lugar [ou estado] onde o menor traço do pensamento 'Eu' não existe, só pode ser o Eu [_swarupa_]. Isso só pode ser chamado de Silêncio [_mouna_] .... O Eu só é o mundo; o Eu só é 'Eu'; o Eu só é Deus; tudo é o Supremo Eu [_Siva-swarupa_].” Consulte também a nota do verso 985, onde se explica em que sentido tudo é o Eu ou _Brahman_.
+
+**1057.** **A realidade - a mera existência que é para o mundo,a alma e Deus como o espaço é para todos os objetos - só pode ser a natureza do Eu, que é o supremo Siva, e que é elogiado como a suprema morada [_param-dhama_] que transcende a mente.**
+
+**33 A Grandeza do Eu**
+
+_(Atma_Matchi Tiran)_
+
+**1058.** **Uma vez que a grandeza da natureza da unidade é queo vidente só pode ser o visto, a própria realidade [Eu] é a maior coisa [_mahat_]. A primeira pessoa silenciosa e radiante [que brilha] depois que o ego, a primeira pessoa que é o vidente, foi completamente destruído, só pode ser o Eu, a consciência suprema.**
+
+**_Sadhu Om_**: Todos os objetos que são vistos não são nada além de uma expansão do ego, a falsa primeira pessoa que os vê. Portanto, a realidade tanto do vidente [o ego] quanto do visto [o universo vasto inteiro] é apenas uma. Essa realidade é nada menos que o Eu, a própria existência-consciência, que é a verdadeira primeira pessoa que permanece brilhando como autoconsciência radiante no estado de Silêncio no qual o ego, a falsa primeira pessoa, foi completamente destruído. Portanto, como o ego ou vidente não é nada além de um reflexo irreal, pequeno e atômico do Eu, a própria realidade, só o Eu é a maior de todas as coisas.
+
+
+
+
+
+**1059.** **Aqueles que mergulham profundamente fixando sua mente [ou atenção] no Eu - a morada da felicidade da consciência, o vasto oceano de paz, a maior coisa [_mahat_] - alcançarão a Graça do Eu, o tesouro interminável.**
+
+**1060.** **O Eu sozinho é a maior coisa [_mahat_]; de fato, não existe outro _mahat_ maior que o Eu. Portanto, por qualquer tipo de meio [ou _tapas_] que seja, não vimos qualquer outra coisa digna de ser adquirida em troca do Eu.**
+
+**_Sadhu Om_**: Não há realização maior do que a realização do Eu; portanto, é tolice abandonar a realização do Eu para alcançar qualquer outra coisa, como os oito _siddhis_. No entanto, existem alguns chamados _mahatmas_ hoje em dia que ridicularizam a realização do Eu, dizendo que ela não é a maior realização e que, mesmo depois de alcançá-la, há muitas coisas maiores que se pode alcançar praticando alguns tipos peculiares de _yoga_. Portanto, para refutar tais crenças errôneas, neste verso Sri Bhagavan, o maior de todos os _tapasvins_, declara enfaticamente a verdade que Ele realizou a partir de Sua própria experiência, ou seja, que, por mais que se faça qualquer tipo de _tapas_, não se pode alcançar nada maior do que a realização do Eu.
+
+**1061.** **Exceto a gloriosa realização do Eu supremo,que é a maior coisa [_mahat_], não há [digna] realização nesta vida. Para conhecer e experimentá-lo [o Eu supremo], destrua o inútil ego-self através do questionamento [ou escrutínio] feito no coração.**
+
+**1062.** **Se, ao questionar ['Quem sou eu?'] no coração, alguém alcança a rara riqueza do Eu, que é a bela joia do verdadeiro conhecimento [_mey-jnana_] que é [sempre] existente e brilhante, a pobreza na forma de densa ilusão morrerá, [assim] destruindo a miséria do nascimento [e morte], que é a raiz de [todo] sofrimento.**
+
+
+
+
+
+**1063.** **Sendo ignorantes do valor dessa joia [de _Jnana_], os tolos morrem preguiçosamente [sem tentar alcançá-la]. [Por outro lado] aqueles que, conhecendo o método [da auto-investigação], alcançaram essa [joia de _Jnana_], que é a posse legítima de todos, são os Grandes, aqueles que alcançaram a suprema felicidade. Adorem-nos.**
+
+**1064.** **Em vez de permanecer na consciência do próprio Eu, examinando pacificamente assim, 'Quem sou eu, a forma da consciência?', por que sofrer [saindo] através dos sentidos perversos, confundindo-se com o reflexo da consciência [_chit-abhasa_], que, sendo separado [da verdadeira autoconsciência], é a forma da mente [_chittam_]?**
+
+**1065.** **Mesmo que alguém tenha alcançado abundantemente e completamente [todos] os poderes ocultos [_siddhis_] começando por _anima_, que são amados [tanto] pelas pessoas mundanas tolas, todo o aprendizado aprendido por aquele que não alcançou a joia perfeita do Eu, cortando o nó primal [o _chit-jada-granthi_ ou ego], é vazio.**
+
+**_Michael James_**: _Anima_, o primeiro dos oito _siddhis_, é a habilidade de se tornar pequeno como um átomo.
+
+**1066.** **Eles [os Sábios] dizem que o tesouro da Graça Silenciosa, o pensamento nunca ausente do divino Siva [isto é, o estado ininterrupto de atenção ao Eu] - é a verdadeira riqueza. Esse supremo tesouro resplandecente, que é difícil de alcançar, é a riqueza que é [disponível] apenas para aqueles que têm o amor para destruir [todos] os pensamentos.**
+
+**1067.** **Assim como [um mergulhador de pérolas] mergulha no oceano, [onde as pérolas estão] escondidas, com uma mente focada e com uma pedra [amarrada à cintura], obtém a pérola preciosa e [assim] se torna feliz, mergulhe no coração com desapego [_vairagya_], alcance o tesouro do Eu e [assim] fique livre da miséria.**
+
+**_Sadhu Om_**: A mesma ideia também é expressada por Sri Bhagavan na seguinte passagem de _Quem sou eu?_: "Assim como um mergulhador de pérolas, amarrando uma pedra à cintura, mergulha no oceano e pega a pérola que está no fundo, todos, mergulhando profundamente em si mesmos com desapego [_vairagya_], podem alcançar a pérola do Eu."
+
+
+
+
+
+
+**1068.** **A consciência da experiência do Eu extremamente pura - que silenciosamente existe desprovida de 'eu' e 'meu' no próprio Eu, que é a única realidade brilhante, aquilo que existe desprovido de defeitos - sozinha é o que brilha acima de [tudo].**
+
+**34 A Supremacia do Eu**
+
+_(Atma Para Tiran)_
+
+**1069.** **A existência-consciência [_sat-bodha_] que brilha sem [nunca] se tornar irreal, sozinha é o Eu, que transcende a mente e no qual o intelecto e a alma se regozijam. Esse Supremo gracioso, que é um monte de paz extrema, sozinho é o remédio para fazer a mente que conhece [ou pensa] [diminuir e tornar-se] pacífica.**
+
+**1070.** **Aqueles que não se conhecem [como] o Eu, que é a realidade não contaminada por [mesmo a menor] irrealidade, mas [se conhecem como] apenas o corpo, que é transitório e irreal, se sentirão mentalmente felizes ao verem com entusiasmo muitos tipos de formas de Deus.**
+
+**1071.** **Se alguém se aproxima e adora qualquer outro [qualquer Deus além do Eu], pode-se obter todas as outras coisas [todas as coisas além do Eu]. Mas que ser insignificante [que Deus insignificante] pode conceder ao _jiva_ a vida no estado divino de Siva, que é a suprema consciência eterna e real?**
+
+**_Sadhu Om_**: Se alguém deseja alcançar coisas além do Eu, como riqueza, saúde, fama, prazeres celestiais e assim por diante, pode alcançá-las adorando Deuses que não o Eu. Mas se alguém deseja alcançar a realização do Eu, o estado de Siva, a consciência suprema, o caminho direto é adorar o Eu através da prática da autoatenção. Por si só, a adoração a qualquer um dos nomes e formas de Deus não é suficiente para permitir que alguém alcance a realização do Eu, e é por isso que Sri Bhagavan diz neste verso, “Que Deus insignificante pode conceder ao _jiva_ a vida no estado divino de Siva?". A adoração a Deus em nome e forma só pode purificar a mente e, assim, levar indiretamente ao caminho da auto-investigação.
+
+A partir deste verso, o leitor pode entender que o verdadeiro significado pretendido por Sri Bhagavan no verso 8 de _Ulladu Narpadu_ quando ele usou as palavras “_peruruvil_” é apenas 'em nome e forma' e não 'sem nome e forma'. Consulte aqui o apêndice 4 (b) de _O Caminho de Sri Ramana –_ Parte Dois.
+
+
+
+
+
+
+
+**1072.** **Aqueles que não conhecem o próprio Eu como a testemunha tanto daquilo que é conhecido no estado de vigília [o estado de _sakala_ ou multiplicidade] quanto daquilo que não é conhecido nem no mínimo no sono envolvente [o estado de _kevala_ ou unicidade], serão iludidos [ou angustiados] como se tivessem [em algum momento] atingido [uma visão de Deus] mas tivessem [mais tarde] perdido [ela].**
+
+**_Sadhu Om_**: Assim como os objetos do mundo aparecem durante o estado de vigília e desaparecem durante o sono, assim as visões de Deus aparecem em um momento e desaparecem em outro. Portanto, essas visões de Deus não têm mais realidade do que o mundo e os objetos nele. Mas aquilo que sempre brilha [na forma da autoconsciência 'eu sou'] tanto na vigília [quando os objetos são conhecidos] quanto no sono [quando os objetos não são conhecidos] é o Eu. Só porque eles não atendem e percebem a natureza sempre brilhante do Eu como ele é, alguns aspirantes se sentem felizes em um momento como se tivessem visto Deus e se sentem angustiados em outros momentos como se tivessem perdido essa visão de Deus. Mas aqueles que conhecem o Eu, que nem aparece nem desaparece, nunca terão motivo para experimentar tal angústia.
+
+**1073.** **Uma vez que muitos Deuses que são vistos devido à [força da] adoração [_upasana_] realizada, passam por [a mudança de] aparecimento e desaparecimento, a própria natureza [o Eu], que é aquilo que sempre existe e é conhecido, é o real e supremo Deus, que permanece [para sempre] sem mudar.**
+
+**_Sadhu Om_**: A natureza da realidade é sempre brilhar, sem mudar ou desaparecer, enquanto as visões de Deus aparecem e desaparecem. Mesmo antes desse Deus aparecer, o conhecimento de nossa existência [nossa consciência-existência, _sat-chit_] estava brilhando; mesmo enquanto esse Deus estava aparecendo, nossa existência estava brilhando na forma 'Eu, que vejo este Deus, existo'; e mesmo depois que esse Deus desapareceu, nossa experiência foi que existíamos para conhecer esse desaparecimento. Portanto, uma vez que aquilo que estava brilhando em todos os três tempos sem mudar ou desaparecer era apenas nossa própria consciência-existência, este verso afirma que essa consciência-existência [_sat-chit_], que é o Eu, sozinha é o supremo Deus [_para-deva_] e o real Deus [_nija-deva_].
+
+
+
+
+
+**1074.** **Aqui ou lá, como isso ou aquilo, o que quer que seja conhecido em qualquer lugar como uma segunda pessoa devido a [uma] olhar através do conhecimento objetivo [a mente] - todos eles em todos os lugares são [nada mais que] o espaço puro de luz [o espaço da consciência], a própria realidade que existe e brilha como o Eu.**
+
+**_Sadhu Om_**: Na resposta à pergunta 6 do capítulo dois de _Upadesa Manjari_, Sri Bhagavan diz: "Onde quer que quaisquer objetos sejam conhecidos, é o Eu que se conhece lá como esses objetos". Consulte também o verso 945, e a p.19 de _O Caminho de Sri Ramana – Parte Dois_.
+
+**1075.** **Sabendo que o que quer que seja conhecido objetivamente como 'isso' ou 'aquilo' é [nada mais que] uma imaginação da mente, se alguém permanece imóvel [_summa irukka_] naquilo que é neutro [ou seja, se alguém permanece meramente como 'eu sou', a consciência neutra que não conhece objetivamente nenhuma segunda ou terceira pessoa], aquela realidade que [então] brilha sozinha é a existência-consciência [_satchit_], o Eu supremo e grande.**
+
+**1076.** **Ficar confuso ao escrutinar, devido à ilusão, princípios [_tattvas_] que não o princípio supremo, o Eu, é como passar pela dor de examinar minuciosamente o lixo inútil de um barbeiro em vez de descartá-lo coletivamente.**
+
+**_Sadhu Om_**: A mesma ideia é expressa por Sri Bhagavan na seguinte passagem de _Quem sou eu?_: "Assim como é infrutífero escrutinar o lixo que deve ser descartado coletivamente, assim é infrutífero para aquele que deve conhecer a si mesmo contar o número e escrutinar as propriedades dos _tattvas_ [os princípios que constituem o mundo, a alma e Deus] que estão velando a si mesmo, em vez de descartar todos eles coletivamente." Sri Bhagavan aqui condena a maneira como os eruditos desperdiçam seu tempo lendo, aprendendo de cor, discutindo e discutindo interminavelmente sobre os detalhes de como o universo é criado a partir dos cinco elementos, sobre o funcionamento dos _pranas_, _jnanendriyas_, _karmendriyas_, _nadis_ e assim por diante no corpo, sobre os vários tipos de _jivas_, e sobre todas as outras inúmeras classificações dadas nas escrituras. Uma vez que todos esses princípios ou _tattvas_ são apenas a segunda ou terceira pessoa, o não-Eu [_anatma_], não se deve perder tempo escrutinando-os, mas sim escrutinar o Eu, o único princípio real, através da indagação 'Quem sou eu?'
+
+
+
+
+
+
+**1077.** **Saiba que para aqueles que permanecem dentro com amor fiel [para o Eu], a felicidade aumentará cada vez mais. Felicidade, amor, Siva, Eu, Graça, conhecimento, paz e libertação - todos estes são [apenas nomes para] a própria natureza real.**
+
+**35 O Estado de Intrepidez**
+
+_(Abhaya Nilai Tiran)_
+
+**1078.** **Por causa da ignorância da mente experimentando um sentido de diferença [_bheda-buddhi_] no Eu, [até mesmo] grandes _devas_ são perturbados pelo medo. [Portanto] é sábio permanecer sem medo no estado supremo da não-dualidade, tendo atingido a realidade, o próprio Eu, através da negação [do não-Eu].**
+
+**_Sadhu Om_**: A natureza do _jiva_ é pensar que o medo será removido apenas quando houver outra pessoa com ele. Mas essa ideia é tola. Como pode haver causa para o medo no estado do Eu, onde nada mais existe? Só em um estado onde existe algo além de si mesmo é possível que se tenha desejo por essa coisa ou que se tenha medo dela. Portanto, a verdadeira intrepidez só pode ser alcançada no estado não-dual do Eu, onde nada mais existe.
+
+Para ilustrar como a intrepidez só pode ser alcançada quando se atinge o estado do Eu, Sri Bhagavan costumava narrar a seguinte história: Depois que o Senhor Vishnu matou Hiranya, o filho de Hiranya, Prahlada, estava governando o reino com felicidade. Mas depois de algum tempo, um medo surgiu em Prahlada. "Porque o Senhor Vishnu é bondoso comigo, estou vivendo com segurança. Mas se um dia Ele se enfurecer comigo, Ele me matará assim como matou meu pai", pensou Prahlada. Sendo um grande devoto do Senhor Vishnu, Prahlada não tinha para quem se voltar, então ele orou a Ele. O Senhor imediatamente apareceu diante de Prahlada, que então explicou seu medo e orou pelo estado de intrepidez. "Sim", disse o Senhor Vishnu, "Você está correto. Ao me ver assim em nome e forma, você não pode se livrar do medo. Você deve me ver dentro de si mesmo. Só quando você me perceber como não sendo diferente de si mesmo, alcançará o estado de intrepidez". Então o Senhor lhe ensinou o caminho da Auto-investigação. Quando Prahlada seguiu as instruções do Senhor e percebeu o Eu, ele alcançou o estado de intrepidez. Essa história ilustra assim que mesmo Deus não pode servir como refúgio permanente do medo, desde que se mantenha o senso de diferença [_bheda-buddhi_]. Só alcançando o Eu não-dual é que se pode se tornar verdadeira e permanentemente livre do medo.
+
+
+
+
+
+**1079.** **Só quando se atinge a liberdade do Eu [o estado de auto-realização] se obterá a abundante paz de espírito na qual se regozijará infinitamente. Na experiência dessa monarquia [o reino do Eu], que é o real e o espaço-como [estado de] não-dualidade, não haverá o menor desejo dual pelo medo.**
+
+**_Sadhu Om_**: Somente neste único estado não-dual do Eu, será conhecida praticamente a verdade das palavras de Saint Appar, "Agora não há nada a temer, e nada virá para causar medo".
+
+**34 Não-Dualidade**
+
+_(Advaita Tiran)_
+
+**1080.** **Uma vez que a única existência-consciência-felicidade é vista como Deus e a alma - assim como por causa de um pote ou de uma sala o único espaço aberto é visto como este ou aquele espaço [como um espaço de pote ou um espaço de sala] - a sua existência [a existência real de Deus e da alma] não pode ser diferente. Saiba assim.**
+
+**_Michael James_**: O espaço em um pote [_ghatakasa_] e o espaço em uma sala [_mathakasa_] parecem ser diferentes apenas por causa dos adjuntos limitantes do pote e da sala, pois na realidade o espaço é apenas um. Da mesma forma, Deus e o _jiva_ parecem ser diferentes apenas por causa de seus adjuntos limitantes, pois em sua natureza real, que é a existência-consciência-felicidade, eles são um e o mesmo. Refira-se ao versículo 24 de _Upadesa Undiyar_, onde Sri Bhagavan diz: "Em [sua real] natureza [que brilha] como existência, Deus e as almas são apenas uma substância [_vastu_]. [Seu] senso de adjuntos [_upadhis_] é que é diferente."
+
+
+
+
+
+**1081.** **Na realidade [a real consciência 'eu sou'] é possível que duas coisas diferentes venham à existência como _jiva_ e Siva? Se há alguma diferença [em substância] entre a boneca-mestra e a boneca-escrava, ambas feitas da ambrosia obtida, me diga?**
+
+**_Michael James_**: A única diferença entre duas bonecas feitas de ambrosia, uma na forma de mestra e a outra na forma de escrava, são seus nomes e formas. Sua substância, a ambrosia (_amrita_) ou néctar da imortalidade, é uma e a mesma. Da mesma forma, a substância ou realidade de ambos, Deus (_Siva_) e a alma (_jiva_), é o único Eu imortal, e a aparente diferença entre eles reside apenas em seus nomes e formas.
+
+**37 Ateísmo**
+
+_(Nastika Tiran)_
+
+**1082.** **Não será apenas ele que se confunde por ser aquilo que não existe [isto é, ser o corpo, que na verdade é inexistente] que declara Você [Deus] como inexistente? Como pode ele que conhece sua própria realidade como ela é [isto é, como a mera consciência-existência 'eu sou'] negar Você, que é aquela [mesma] realidade, dizendo que Você é inexistente?**
+
+**_Michael James_**: Uma nota no texto em tâmil afirma que este versículo é dirigido a Deus, e que ele trata da crença do ateu que acredita que Deus não existe. _‘Asattu’_ significa aquilo que não existe. _‘Mey’_ significa a realidade. Ou seja, 'Como pode alguém que sabe que existe dizer que Deus, que não é diferente dessa existência ou realidade, não existe?'
+
+**_Sadhu Om_**: Sri Bhagavan conclui o versículo 20 de Ulladu Narpadu dizendo, " ... porque o Eu não é diferente de Deus". Assim, o ateu que nega a existência de Deus está negando a existência de seu próprio Eu. Como ninguém pode verdadeiramente negar sua própria existência, aqueles que desejam negar a existência de Deus deveriam primeiro tentar indagar e conhecer a verdadeira natureza de sua própria existência, 'Qual é a verdade de minha existência? Quem sou eu?' Se o fizerem, eles automaticamente virão a conhecer a verdade da existência de Deus. Portanto, devemos entender que aqueles que percebem a sua própria existência como ela é, nunca negarão a existência de Deus, e que, como ninguém pode realmente negar a sua própria existência, ninguém é realmente um ateu. Mas quem é o verdadeiro teísta será explicado no versículo 1084.
+
+
+
+
+
+**38 Teísmo**
+
+_(Astika Tiran)_
+
+**1083.** **Para aqueles que dizem que Ele [Deus] existe, Ele existe em [seus] corações como consciência. [Mas] na mente venenosa [daqueles que não acreditam Nele], Ele nunca existirá [isto é, Ele nunca brilhará ou será conhecido]. Se, purificando a mente venenosa, alguém vê sem ilusão, Ele brilhará triunfantemente e sem liga como o Eu.**
+
+**1084.** **Saiba que o Buda [o Sábio ou _Atma-jnani_], que experimentou a realidade pura [o Eu], tendo claramente conhecido 'Esta é a natureza da consciência', é verdadeiramente digno do nome 'teísta' [_Astika_].**
+
+**_Sadhu Om_**: Como o mundo, a alma e Deus aparecem, existem e desaparecem simultaneamente, todos têm o mesmo grau de realidade [_sama-satya_] entre si. Portanto, se se aceita a própria existência como uma alma ou _jiva_, isso equivale a aceitar a existência das outras duas entidades, o mundo e Deus. É por isso que se concluiu na nota do versículo 1082 que ninguém é verdadeiramente ateu. Mas quem é o verdadeiro teísta? Todos que dizem que Deus existe não são verdadeiros teístas. Apenas o _Jnani_, que realizou a si mesmo como o supremo Eu, tendo abandonado o conhecimento errado de que ele é um indivíduo ou _jiva_, é apto a ser chamado de verdadeiro teísta [_Astika_]. Assim, a beleza dos versículos 1082 e 1084 reside em sua conclusão final, a saber, que qualquer um que não possa negar sua própria existência não é um ateu, e que qualquer um que não tenha realizado o Eu não é um teísta.
+
+
+
+
+
+
+
+**39 Liberdade Sem Começo da Impureza**
+
+_(Anadi Mala Mukta Tiran)_
+
+**1085.** **Uma vez que a escuridão da ilusão de [identificar] o corpo [como 'Eu'] nunca existiu [seja no passado, presente ou futuro] para Aquele que conhece Sua verdadeira natureza, que é o sol do verdadeiro conhecimento [_mey-jnana_], e que tem o espaço [de consciência] como Seu corpo, saiba que a escuridão [da ignorância ou _ajnana_] existe apenas para aquele que é cegado por [identificar] o corpo [como 'Eu'].**
+
+**_Sadhu Om_**: É apenas de acordo com a perspectiva do _jiva_, a alma irreal, que se diz nas _sastras_ que a servidão existe na forma de impurezas como o ego, _maya_, a escuridão da ignorância, e assim por diante, e que a libertação será alcançada quando tal servidão for removida pelo _sadhana_ e pela Graça divina. No entanto, neste capítulo é revelado que, uma vez que este _jiva_ é apenas uma entidade inexistente e falsa, para você, que é o Eu, a realidade, nunca existe tal coisa como impureza, _maya_ ou servidão, e que a liberdade da impureza [_mala-mukti_] é a sua natureza real sem começo [_anadi swabhava_].
+
+**1086.** **A investigação que deve ser feita e o _Jnana_ que deve ser alcançado, são aplicáveis apenas ao _jiva_, que é afligido pela ilusão de apego [ao corpo como 'Eu']. A ilusão do conhecimento errado [_mala bodha_] não é aplicável a [o _Jnani_, que é] o Eu não-dual, que é desprovido de ilusão e livre sem começo de impureza [_mala_].**
+
+**1087.** **É possível para o Eu, que existe permeando tudo como a essência real [_nija rasam_], ser preso por _maya_, que é uma falsa aparência? [Portanto] não se perturbe como se você estivesse preso, [mas em vez disso] investigue calmamente e conheça calmamente [essa verdade].**
+
+
+
+
+
+
+
+
+**1088.** **Por que você está desnecessariamente em turbulência ao pensar mentalmente em si mesmo como o limite do adjunto [o corpo]? Saiba que sua realidade [Self] existe [e brilha] sem obstáculos até mesmo no sono, onde você se funde desprovido de [qualquer] adjunto misturado, [e assim esteja livre da miséria].**
+
+**40 A Vida Vivida de Acordo com a Realidade**
+
+_(Sat-Achara Vazhkkai Tiran)_
+
+**1089.** **Ó homens que desejam viver para sempre, vocês não sabem qual é o caminho para viver [assim]. Vendo um devaneio através da [escuridão da] ilusão que brota do vazio [de _maya_], vocês se orgulham de pensar e argumentar que o que caiu [sua vida presente caída, seu chamado estado de vigília] é a [real] vida. [Ao se apegar à autoconsciência 'Eu sou' e assim] perfurando o vazio [que é a causa para a falsa ilusão deste estado de vigília], alcance a vida real [o estado sempre imperecível do Self].**
+
+**1090.** **Observar a indiferença para com tudo, prevenindo a raiva perversa e o desejo para que a confusão da ilusão da mente defeituosa [_manamaya_] possa ser destruída, é a melhor vida vivida de acordo com a realidade [_sat-achara vazhkkai_]. Observe [tal vida].**
+
+**1091.** **A vida verdadeira, cheia de amor, de permanecer inabalavelmente no coração como a própria realidade, é a única beleza do _Jnana_, o gozo da natureza de [_Siva_swarupa-bhoga_], na qual o ego irreal e ilusório, que prevaleceu [anteriormente], foi destruído.**
+
+**1092.** **O _Jnani_, que brilha como a intensa beleza [ou felicidade] do Self, vivendo a vida majestosa de indiferença [_udasina_], tendo colocado todo o seu fardo aos pés do Senhor Siva, é verdadeiramente belo [ou feliz] e afortunado.**
+
+
+
+
+
+**1093.** **A felicidade irá surgir no coração que está mergulhado na experiência do verdadeiro conhecimento impregnado de amor [mey-jnana]. Lá não existirá o desejo causador de miséria e causado pela ilusão. Essa vida natural extremamente pura do Self será cheia de paz.**
+
+**1094.** **Aquilo que é digno de ser seu alvo é o Self, o conhecimento que é a pura felicidade. A vida perfeita é existir diretamente como aquele [Self], habitando no coração através do conhecimento inesquecível [‘Eu sou’].**
+
+**1095.** **A vida divina [de permanecer como Self] é a única vida da realidade suprema. Por outro lado, a vida no mundo que é visto, é uma vida de ilusão. Que ilusão [maya] é viver uma vida de medo [temendo a morte]. Não é essa [vida de medo] meramente [sua] afogamento no jogo da ilusão da mente [mano-maya]?**
+
+**1096.** **Nenhum tapas é necessário para aqueles que permanecem [firmemente em Self] desprovidos da travessura do jiva de capturar o mundo de [nomes e] formas ilusórias pela atenção que surge nos pequenos objetos sensoriais [devido a] acreditar no mundo que é visto através dos cinco sentidos para ser real.**
+
+**_Sadhu Om_**: O que é significado neste verso pelas palavras 'travessura do jiva' [uyir-cheshtai] é apenas a atividade extrovertida [pravritti] da mente indo para o mundo através dos cinco sentidos. A verdadeira 'observância da realidade' [sat-achara] é impedir que a mente corra atrás da segunda e da terceira pessoa e fazer com que ela permaneça no Self, a verdadeira consciência da primeira pessoa.
+
+
+
+
+
+
+**1097.** **Para aqueles que estão estabelecidos na Graça e que experimentam [ou governam] todos os mundos como o Self, tendo perdido a vida do ego emergente e conquistado os duais como dor e prazer, nenhum [outro] tapas precisa ser feito.**
+
+**_Sadhu Om_**: Para fazer qualquer tipo de tapas, um ego ou indivíduo 'Eu' deve surgir como o executor. Mas o fruto perfeito de todos os tapas é a destruição desse 'Eu'. Uma vez que o 'Eu' é destruído, que outro tapas deve ser feito e quem deve fazê-lo? É por isso que, para estabelecer que qualquer yoga diferente da destruição do ego é inútil, Sri Tayumanuvar cantou: "Quando você permanecer quieto [summa irukka], a felicidade surgirá; por que então [fazer qualquer] yoga ilusória [maya-yoga]? É possível [atingir a felicidade] através da sua atenção objetiva? Não diga mais nada, ó karma-nishtha [um imerso em karma], ó você criança pequena."
+
+**41 Sem forma**
+
+_(Nishkala Tiran)_
+
+**1098.** **Se alguém é uma forma [o corpo], até mesmo o Self, a fonte que é o Senhor, também aparecerá dessa maneira [ou seja, também aparecerá como uma forma]. Se alguém não é uma forma, já que não pode haver conhecimento de outras coisas [nesse estado], será que essa afirmação [que Deus tem uma forma] será correta?**
+
+**_Sadhu Om_**: Este capítulo lida com a questão de saber se Deus tem ou não uma forma. Enquanto alguém pensar que tem um nome e uma forma, o corpo, deve aceitar que Deus também tem um nome e uma forma. Só depois de perder o senso de ego, 'Eu sou o corpo', pode-se conhecer Deus como sem forma. Até então, não se deve discutir que Deus tem forma ou que não tem forma. O verso 4 de Ulladu Narpadu também deve ser lido aqui.
+
+
+
+
+
+
+
+
+
+**1099.** **Ele [Deus] assume [qualquer] forma imaginada pelo devoto através do pensamento repetido em meditação prolongada [bhavana]. Embora Ele [assim] assuma inúmeros nomes e formas por [Sua aparente identificação com] adjuntos ilusórios [maya-upadhi], a real consciência sem forma é o único Hara [Deus].**
+
+**_Sadhu Om_**: O jiva projeta suas próprias vasanas, que estão armazenadas em seu chittam, através dos cinco sentidos e as vê do lado de fora como o mundo de nomes e formas. Visões de Deus em nome e forma são vistas da mesma maneira. Sri Bhagavan costumava explicar que até mesmo o viswarupa darshan [a visão da forma cósmica de Deus] mostrado por Sri Krishna a Arjuna no Bhagavan Gita era apenas uma projeção das próprias vasanas de Arjuna. Sri Krishna deu a Arjuna a visão divina [divya-drishti] para permitir que ele visse Nele as ideias auspiciosas [bhavanas] sobre Deus que Arjuna já havia armazenado na forma de vasanas dentro de seu chittam. Esta divya-drishti não era jnana-drishti, como alguns comentaristas erroneamente afirmaram, mas era apenas a capacidade de projetar certas vasanas auspiciosas que existiam em uma forma sutil em seu chittam e vê-las como objetos grosseiros do lado de fora. Em jnana-drishti, Jnana sozinho brilhará e nenhum nome e formas serão vistos. O que Sri Krishna disse foi apenas: "Eu te dou o olho divino" [divyam dadami te chakshuh – XI.8]. Além disso, Ele disse: "Veja em mim o que mais você quiser ver" [y_ach chanyad drashtum ichchasi_ – XI. 7], e não "Veja-me como eu realmente sou"! O que deve ser entendido aqui é que Sri Krishna simplesmente permitiu que Arjuna projetasse e visse em uma forma grosseira as ideias passadas [bhavanas] sobre os nomes e formas de Deus que já estavam armazenados em seu chittam.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
