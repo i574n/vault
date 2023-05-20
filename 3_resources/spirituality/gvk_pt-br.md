@@ -7919,23 +7919,37 @@ No entanto, esta verdade absoluta não pode ser compreendida por pessoas que est
 
 
 
+**1228.** **Uma vez que é possível apenas na [luz fraca da] irrealidade [ou ignorância] fazer o que existe [parecer ser] inexistente e fazer o que não existe [parecer ser] o que existe, mas impossível [fazer isso] na clara [luz da] verdade, na certeza que é a verdade, tudo é consciência [_chit_].**
 
+**_Michael James_**: Uma corda pode parecer uma cobra apenas em uma luz fraca, e não na escuridão completa ou na luz clara. Da mesma forma, o sempre existente Self ou _Brahman_ pode parecer as formas e nomes inexistentes [o mundo, alma e Deus] apenas na luz fraca da ignorância [a luz da mente], e não na escuridão completa do sono ou na luz clara do autoconhecimento. Portanto, já que o que existe [Self ou _Brahman_] não pode parecer o que não existe [os muitos nomes e formas] na luz clara da verdade, nessa luz clara será realizado que tudo o que parecia existir no estado de ignorância é verdadeiramente nada além de consciência, que é o que realmente existe. Ou seja, assim como a corda sempre existe, tanto quando parece ser a cobra inexistente quanto quando é vista como é, a consciência sempre existe, tanto quando parece ser os nomes e formas inexistentes quanto quando brilha como é.
 
+**1229.** **Saiba que tudo o que é dito sobre a alma e Deus –[como] aquilo que é a alma que tem o vínculo do apego se tornará Deus quando o vínculo for removido, assim como o arroz se torna arroz quando a casca é removida – é [apenas] uma imaginação da mente defeituosa [superposta] em Self, a forma dessa consciência.**
 
+**_Michael James_**: Embora as escrituras digam inicialmente, "Assim como o arroz se torna arroz quando sua casca é removida, assim a alma [ou _jivatma_] se tornará Deus [_paramatma_] quando seu vínculo de apego for removido", a suprema verdade [_paramartha_] é que não existe alma, Deus, vínculo ou libertação, e que esses são todos meras imaginações mentais superpostas em Self, que é a única realidade sempre existente.
 
+**59 A Realidade Perfeita**
 
+_(Semporul Tiran)_
 
+**1230.** **Tudo que você pensa [ou conhece] com a mente para ser o que existe é, na verdade, o que não existe. Aquele [Self] que você não pode ter em sua mente [ou seja, que você não pode pensar] para ser o que existe ou ser o que não existe, é sozinho o que existe [_ulladu_].**
 
+**_Sadhu Om_**: Como a mente é em si uma entidade irreal e inexistente, tudo que é conhecido pela mente como real ou existente é, de fato, irreal e inexistente. Portanto, se o Self fosse algo que pudesse ser conhecido pela mente, também seria irreal, não seria? Mas, como os Sábios declaram que o Self é aquilo que não pode ser conhecido pela mente, ele é o único que realmente existe e é real.
 
 
 
 
 
+**1231. Diga, é possível pela imaginação [a mente] negar a grandeza [e realidade] do Supremo, que é onipresente e transcende, que engole completamente em si mesmo os defeitos e diferenças causados pela multidão de todos os tipos de conhecimento?**
 
+**1232. Saiba que a consciência que sempre brilha no coração como o Self sem forma e sem nome, 'Eu', [e que é conhecido] por [um] ser ainda sem pensar [sobre qualquer coisa] como existente ou não existente, sozinho é a realidade perfeita.**
 
+**1233. Entre as seis doutrinas declaradas sem começo, apenas a não-dualidade [_advaita_] é sem fim, enquanto as outras cinco doutrinas têm um fim. Tenha isso em mente, saiba claramente.**
 
+**_Sadhu Om_**: As seis doutrinas mencionadas neste verso são os _shad-darsanas_, as seis escolas ortodoxas da filosofia indiana, a saber, a escola _Nyaya_ de Gautama, a escola _Vaiseshika_ de Kanada, a escola _Sankhya_ de Kapila, a escola _Yoga_ de Patanjali, a escola _Purva Mimamsa_ de Jaimini e a escola _Vedanta_ de Vyasa. A doutrina referida neste verso como _Advaita_ é a doutrina do _Vedanta_, cuja conclusão final é que o Self ou _Brahman_ não-dual, que transcende a _maya_, sozinho é a realidade sempre existente, que não tem nem começo nem fim. Por outro lado, as conclusões das outras cinco escolas estão todas relacionadas com o que está dentro do alcance da _maya_. Portanto, assim como _maya_ é dita não ter começo, mas ter um fim, essas cinco escolas de filosofia também são ditas não ter começo, mas ter um fim, uma vez que não podem permanecer quando a verdade [Self] é realizada e quando _maya_ chega ao fim. Como todas as doutrinas além da _Advaita_ são assim invalidadas quando o conhecimento do Self desperta, _Advaita_ é a única verdade que existe e brilha para sempre sem começo nem fim.
 
+**1234. Quando conhecido [corretamente], o que é dito ser real é apenas um. Saiba que aquela firme, completa realidade perfeita sozinha é a que é descrita de várias maneiras pelos _Brahma-jnanis_, que a conhecem ao entrar silenciosamente no coração com um intelecto muito sutil.**
 
+**_Michael James_**: Embora os sábios que revelaram as seis doutrinas (_shad-darsanas_) do hinduísmo e que pavimentaram as várias religiões diferentes no mundo, todos tenham realizado a realidade perfeita não-dual, eles a descreveram de várias maneiras de acordo com a maturidade das mentes daqueles que vieram até eles. No entanto, aspirantes maduros devem entender que, embora a realidade seja assim descrita pelos sábios de muitas maneiras diferentes, ela é na verdade uma e não-dual.
 
 
 
@@ -7943,26 +7957,42 @@ No entanto, esta verdade absoluta não pode ser compreendida por pessoas que est
 
 
 
+**1235.** **A verdade da não-dualidade [_advaita-tattva_], que é a mais elevada de todas as religiões, que são tão numerosas, é a única realidade silenciosa, cuja natureza é a consciência desprovida do insubstancial e fantasmagórico ego, a semente das diferentes religiões.**
 
+**_Michael James_**: Consulte os versos 989 a 993, 1176 a 1179 e 1242.
 
+**1236.** **Aqueles que conhecem a realidade perfeita - que não tem começo nem fim, que é desprovida de mudança, causa ou mesmo objeto de comparação, e que é aquilo que não pode ser conhecido pelo enganoso senso de individualidade [o ego] - [só] alcançarão a glória.**
 
+**60 Transcendência do Pensamento**
 
+_(Bhavanatita Tiran)_
 
+**1237.** **A glória do _Advaita_ brilhará nos corações dos _Jnanis_ como o Self inalterado após os enganadores triads [_triputis_] terem desaparecido, mas não pode ser alcançada por aqueles que pensam [nisso] com a mente como [eles pensam dos] objetos de senso imaginário, irreal, dual e insignificante.**
 
+**1238.** **O Siva livre de pensamento, que é o Self, a consciência real, não pode ser conhecido por aqueles que têm uma mente que pensa, mas apenas pelos heróis livres de pensamento que têm uma mente que, devido à consciência interior [ou Self], entrou e permanece na fonte do pensamento, [sua mente pensante] tendo morrido.**
 
+**1239.** **Ó vocês [aspirantes altamente maduros] que têm uma loucura intensa pela [experiência] da grandeza da não-dualidade [_advaita_]! [A experiência da] não-dualidade é apenas para aqueles que permanecem no estado de realidade, tendo alcançado a paz de espírito perfeita [que resulta da completa subsídio de todos os pensamentos que surgem na mente]. Digam, qual é o benefício para as pessoas atrasadas que não buscam a permanência direta na realidade.**
 
+**_Michael James_**: O único benefício verdadeiro a ser alcançado é a experiência da não-dualidade, que só pode ser alcançada por aqueles aspirantes maduros que através da autoinvestigação buscam e alcançam a paz perfeita de espírito, que é o estado de permanência em Self, a realidade, e não por aquelas pessoas imaturas que nem sequer desejam seguir o caminho direto da autoinvestigação e assim alcançar o estado de permanência em Self.
 
 
 
 
 
 
+**61 Narração da Experiência**
 
+_(Anubhavam Uraitta Tiran)_
 
+**1240.** **Quando contamos a experiência [alcançada por causa] dos ensinamentos do Guru [Sri Ramana], [é a experiência de que] tudo o que foi visto como uma floresta de apego [ou ligação] não é nada além do inefável espaço do Silêncio do verdadeiro Conhecimento [_mey-jnanamauna_] e [que] todo conhecimento inferior é um sonho.**
 
+**_Sadhu Om_**: Neste capítulo [versos 1240 a 1248] Sri Muruganar descreve a experiência de _Jnana_ que ele alcançou pela Graça de seu _Sadguru_, Sri Ramana.
 
+**1241.** **Eu conheci, eu conheci o estado de suprema verdade, que é pleno de transcendente existência-consciência [e no qual se sabe] que na verdadeira realidade não há nem mesmo a menor aquisição do que é chamado de ligação, libertação e assim por diante, [que tudo aparece apenas devido a] ter-se confundido [a si mesmo] para ser outro [que não o Self].**
 
+**_Sadhu Om_**: Quando o estado de suprema verdade [_paramartha sthiti_] é conhecido, percebe-se que nunca se confundiu realmente a si mesmo como sendo algo diferente do Self, e que, consequentemente, nunca se esteve em ligação e nunca se alcançou algo como a libertação.
 
+**_Sri Muruganar_**: ‘Permanecer neste estado, tendo alcançado a suprema bem-aventurança que é desprovida de ligação e libertação...' é um dito de Sri Bhagavan [no verso 29 de _Upadesa Undiyar_]. Ele também disse [no verso 37 de _Ulladu Narpadu_], “Mesmo a afirmação de que há dualidade durante a prática e não-dualidade após a realização, não é verdade...”. Se o estado de suprema verdade é conhecido como ele é, saiba que mesmo a sensação de libertação não existirá lá; já que a ligação é sempre inexistente, a natureza do Self é aquela que está completamente desprovida de até mesmo o conhecimento 'Eu sou um _Mukta'_.
 
 
 
@@ -7970,27 +8000,152 @@ No entanto, esta verdade absoluta não pode ser compreendida por pessoas que est
 
 
 
+**1242.** **Embora olhemos para qualquer religião e embora escutemos qualquer doutrina [proposta por essas religiões], vemos claramente que todas as doutrinas dessas religiões definitivamente proclamam apenas um objetivo, que brilha desprovido de diferenças.**
 
+**_Michael James_**: Em sua experiência de _Jnana_, Sri Muruganar percebeu que, embora diferentes religiões pareçam proclamar diferentes objetivos, todos esses objetivos aparentemente diferentes são, na verdade, apenas um, a saber, o estado do conhecimento do Self, que brilha sem diferenças. No entanto, essa verdadeira harmonia e unidade entre as religiões só pode prevalecer no estado de Silêncio, e não pode prevalecer apenas devido ao intelecto pensando 'Todas as religiões são uma', porque enquanto o intelecto existir, não pode deixar de ver diferenças entre uma religião e outra. Consulte aqui os versos 989 a 993, 1176 a 1179, e 1235.
 
+**_Sri Muruganar_**: Na verdade, a harmonia [entre religiões] só pode existir em Silêncio [_mauna_], e não pode existir [meramente] devido à sutileza do intelecto. Após alcançar a experiência do Silêncio [_maunaanubhava_], saberá tão claramente quanto uma fruta na palma da mão que todas as religiões e doutrinas têm como objetivo a realização do Self, sem quaisquer diferenças entre si.
 
+**1243.** **Ao entrar e permanecer no Todo [_purna_], que é da natureza da consciência [_chinmaya_], que brilha ali nos inquestionáveis _Vedas_ como a realidade, então é impossível ver os três tempos [passado, presente e futuro], os três lugares [a primeira, segunda e terceira pessoas] e as tríades [o conhecedor, o ato de conhecer e o objeto conhecido].**
 
+**_Michael James_**: Para uma explicação sobre o significado de 'os três lugares', consulte a nota para o verso 447.
 
+**1244.** **Quando conhecida, a verdade sutil revelada [nesta obra] é [o que eu aprendi através] da elucidação silenciosa [_maunavyakhyana_] que foi alegremente concedida [a mim] por _Jnana_-Ramana-Guru-Nathan, que me ensinou [me] tendo saído à minha frente como o verdadeiro Brahmin principal.**
 
+**_Sri Muruganar_**: Uma vez que a verdade sutil dos versos acima [ou seja, a totalidade desta obra] só pode ser compreendida na experiência de _Jnana_, o que o _Jnana-Guru_ me concedeu foi apenas a essência da experiência do Silêncio [_mauna-anubhava-sara_]. As palavras "tendo saído à minha frente" denotam que, embora o _Jnana-Guru_ sempre exista dentro [como o Self], Ele me tomou como Seu próprio aparecendo na brincadeira de _maya_ com um corpo físico humano como nós.
 
+ Como a clareza [de entendimento dos ensinamentos de Sri Bhagavan] é fortalecida apenas através do Silêncio, é dito "a elucidação silenciosa" [_mauna vyakhyana_].
 
 
 
 
 
 
+**1245.** **Em minha perspectiva [não-dual] [na qual eu existo sozinho como a realidade], você não existe, apenas eu; na sua perspectiva [não-dual] [quando você percebe que só você existe como a realidade], eu não existo, apenas você; na perspectiva de alguém [não-dual] [quando se percebeu a verdade], os outros não existem, apenas o próprio eu. Quando [a verdade é assim] conhecida, todos eles [eu, você, o próprio eu e os outros] são [nada mais que] 'eu' [o Self].**
 
+**1246.** **Saiba que eu não sou nem uma posse nem sou um possuidor; eu não sou nem um escravo [um devoto] nem um mestre [o Senhor]; Eu não tenho o senso de dever [o senso de dever que faz alguém sentir 'eu tenho um dever de fazer tais e tais coisas'] e eu não tenho o senso de experiência; eu não sou de todo um fazedor.**
 
+**1247.** **Como o Self me considerou como seu próprio, aparecendo aqui como o Guru [Sri Ramana] na frente do meu conhecimento objetivo [minha mente], que estava lamentando como se estivesse preso por _maya_, [eu pago] mais digna reverência apenas para o meu Self infinito, que brilha como o sol.**
 
+**1248.** **Saiba que, apesar de [qualquer quantidade de] miséria miserável que possa acontecer [com ele], [este] Murugan [Sri Muruganar] nunca cederá ao poder da ilusão [_maya_-_sakti_] do mundo vazio, mas apenas ao poder da consciência [_chit-sakti_] do Supremo Ramana, que é Siva.**
 
+**_Michael James_**: Na vida externa de Sri Muruganar, vimos claramente como ele viveu perfeitamente a verdade que expressa neste versículo. Apesar das incontáveis misérias e dificuldades indescritíveis que ele teve que passar desde o dia em que veio a Sri Bhagavan até o dia em que deixou o corpo, Sri Muruganar nunca foi abalado e nunca cedeu nem um pouco às ameaças poderosas e tentações da _maya_ mundana que o cercava.
 
+**62 O Estado de Igualdade**
 
+_(Sama Nilai Tiran)_
 
+**1249.** **Para aqueles que permanecem na auto-permanência [_jnana-atmanishtha_], que é o principal _dharma_, não há nem mesmo [quaisquer diferenças como] casta, linhagem ou religião. Não há diferenças [como estas] no Self, mas apenas para o corpo sem valor, irreal.**
 
+**_Sadhu Om_**: Os cinco versos neste capítulo final registram todos os ditos reais de Sri Bhagavan.
+
+Como a auto-permanência é em si mesma o principal _dharma_ e a fonte de todos os _dharmas_, e como os vários outros _dharmas_ ou deveres ordenados de acordo com as diferentes castas, linhagens e religiões existem apenas para o corpo e não para o Self, aqueles que permanecem como o Self não precisam desempenhar qualquer outro _dharma_.
+
+
+
+
+
+
+
+
+**1250.** **Saiba que a visão de ver a igualdade – que é [a experiência] de que o Self é a única realidade em tudo que é conhecido [através dos sentidos] – é a única 'visão igual' [_sama-darsana_] que é proclamada lucidamente pelos Sábios, [que alcançaram] o verdadeiro conhecimento [_mey-jnana_] que abunda em igualdade [_samarasa_].**
+
+**_Michael James_**: As palavras '_sama-darsana_' [visão igual] e '_sama-drishiti_' [perspectiva igual] são geralmente tomadas pelas pessoas para significar ver todas as pessoas, todas as criaturas e todas as coisas como iguais. Mas neste verso, Sri Bhagavan revela que o verdadeiro significado de '_sama-darsana_' ou '_sama-drishti_' é apenas a experiência do _Jnani_, que sabe que Seu próprio Self é a única realidade por trás da aparência do mundo inteiro. Enquanto a multiplicidade e a diversidade forem conhecidas, a desigualdade definitivamente permanecerá; apenas no estado de perfeita unidade não-dual, na qual se sabe que apenas o Self existe, a verdadeira igualdade pode ser experienciada.
+
+**1251.** **Ele [o _Jnani_] que está cheio de paz perfeita, que é a experiência do Self imóvel, que está desprovido do ego, é aquele cuja mente não está alegremente satisfeita com elogios e nunca descontente com a culpa.**
+
+**_Michael James_**: Refira-se ao verso 38 de _Ulladu Narpadu Anubandham_.
+
+**1252.** **Para o conhecedor da realidade [_mey-jnani_] – que não imagina erroneamente ser real uma vida de glória, que é de acordo com _prarabdha_, no mundo atraente, que aparece apenas no vazio não-manifesto como o prazer da água clara [visto devido a uma miragem] no calor escaldante [de um deserto] – até uma vida de degradação [pobreza ou miséria] será [experienciada como] uma grande alegria.**
+
+**1253.** **Saiba que todo o _tapas_ que os grandes Sábios divinos naturalmente fazem sem desejos egoístas, é benéfico para [todas] as pessoas deste mundo antigo, proporcionando-lhes bela auspiciosidade.**
+
+**_Michael James_**: Como Sri Bhagavan disse no verso 30 de _Upadesa Undiyar_, “Saber o que sobrevive à destruição de ‘Eu’ [o ego], é o excelente _tapas_...” devemos entender que os _Jnanis_ estão sempre, por sua própria natureza, fazendo o _tapas_ mais perfeito. Refira-se ao verso 303 desta obra, onde Sri Bhagavan diz que a mera existência de um _Jnani_ na terra é suficiente para remover todos os pecados do mundo, e para _Day to Day with Bhagavan_, 9-3-1946, onde Sri Bhagavan diz, “Se um _Jnani_ existe no mundo, sua influência beneficiará todas as pessoas no mundo”.
+
+
+
+
+
+
+## Elogios
+
+### (Vazhttu)
+
+
+**1254. Glória a Arunagiri; glória ao Guru Ramana; glória aos devotos que vivem pela única [inigualável] palavra [ensinamentos de Sri Ramana]; glória a esta 'Luz da Suprema Verdade' [_paramartha dipam_], que é um belo colar [_Kovai_] dos ditos [_Vachaka_] do Gurumurti [Sri Ramana], ao dar [seu] fruto [Autoconhecimento]!**
+
+**Sri Ramanarpanamastu**
+
+**utu**
+
+**APÊNDICE**
+
+**_Michael James_**: No apêndice de _Guru Vachaka Kovai – Urai_, a renderização em prosa Tamil de _Guru Vachaka Kovai_ de Sri Sadhu Om, os seguintes onze versos dispersos de Sri Bhagavan foram adicionados, uma vez que são versos contendo instruções ou _upadesa_. No final da nota de cada verso, é indicado onde no texto de _Guru Vachaka Kovai_ ele deve ser incorporado.
+
+**1. Por causa da perspectiva de ver [este mundo] como um efeito [_karya_] que consiste em feminino, masculino, neutro e assim por diante, um executor que cria [isto] existe como a causa [_karana_] deste mundo. Ele destrói e cria este mundo. Saiba [que] executor ser Hara [Senhor Siva].**
+
+**_Sadhu Om_**: Este verso é uma adaptação de Sri Bhagavan do verso em sânscrito, “_Stri-pum-napumsaka-aditvat jagatah karya-darsanat, Asti karta sah hritva-etat-srijati-asmat-prabhuh-harah_”, que é o primeiro verso de _Siva-Jnana-Bodham_.
+
+Causa e efeito são um díade [_dvandva_], pois cada um tem um significado apenas por causa do outro. O propósito deste verso é ensinar que, uma vez que a aparência do mundo é vista como um efeito, deve existir um Deus como causa dele. Consulte também o primeiro verso de _Ulladu Narpadu_.
+
+Enquanto o mundo for considerado um efeito, é necessário aceitar que ele tem uma causa. Mas quando o autoconhecimento desponta, a aparência do mundo será conhecida como nada mais que o Self, e a díade de causa e efeito, portanto, deixará de existir. Quando o mundo não é mais visto como um efeito, mas apenas como o Self incausado, não criado e imutável, Deus não será mais conhecido como uma causa ou executor – uma entidade separada – mas brilhará como aquele único Self indivisível.
+
+Este verso deve ser incorporado ao texto após o verso 114.
+
+
+
+
+
+
+
+
+**2. Ó filho, o ilusionista [_indrajalikan_] engana as pessoas deste mundo sem se enganar, enquanto o _siddha_ engana as pessoas deste mundo e [ao mesmo tempo] engana a si mesmo. Que grande maravilha é essa!**
+
+**_Sadhu Om_**: Este verso é uma adaptação de Sri Bhagavan de um verso na _Rama Gita_, “_Aindrajalikakarta-api bhrantan-bhramayati svayam, Abhrantak eva siddhastu svabhratah bhramayatyah_o”.
+
+O ilusionista que entretém as pessoas realizando truques nas ruas sabe que seus truques não são reais. O _siddha_, por outro lado, acredita que os poderes ocultos [_siddhis_] que ele exibe são reais, e portanto é enganado ao pensar que realmente se tornou grande. No entanto, seus _siddhis_ não são mais reais do que os truques do ilusionista. Portanto, embora o _siddha_ e o ilusionista sejam iguais em sua arte de enganar os outros, o _siddha_ é inferior ao ilusionista porque nem mesmo tem a clareza de mente para entender que seus poderes são irreais.
+
+Este verso deve ser incorporado ao texto após o verso 224.
+
+**3. Ó minha alma problemática, você não me dá descanso, ao estômago, por [mesmo] um _nazhigai_ [vinte e quatro minutos]; você não para de comer por um _nazhigai_ em um dia; você nunca sabe do meu sofrimento. É difícil viver com você.**
+
+**_Sadhu Om_**: No dia de _Chitra-purnima_ no ano Tamil _Sukla_ [o dia da lua cheia em abril-maio de 1929], um farto banquete foi servido no Ashram, como resultado do qual muitos devotos reclamaram de desconforto no estômago. Então um devoto citou um famoso verso Tamil cantado pela Santa Avaiyar, no qual ela se dirige ao estômago e diz: “Ó meu estômago problemático, se te pedem para abandonar a comida por um dia, você não abandona [isso]; se te pedem para pegar [comida suficiente] para dois dias, você não pega [isso]; você nunca sabe do meu sofrimento. É difícil viver com você.”
+
+Ouvindo isso, Sri Bhagavan comentou que, nas circunstâncias, era injusto culpar o estômago citando o verso de Avaiyar, já que era apenas a alma ou ego que, para sua própria satisfação, enchia o estômago além de sua capacidade. “Pelo contrário,” disse Sri Bhagavan, “agora seria justo para o estômago reclamar contra a alma,” e assim Ele compôs o verso acima. Porque Avaiyar vivia de esmolas e frequentemente tinha que passar fome por dias a fio, ela podia justamente reclamar dos problemas que o estômago lhe causava. Mas através deste verso, Sri Bhagavan instruiu de forma humorada Seus discípulos que aquelas pessoas que mimam o sentido do paladar comendo demais não têm o direito de reclamar contra o estômago.
+
+Este verso deve ser incorporado ao texto após o verso 492.
+
+
+
+
+
+
+
+**4. Ó você que faz uma grande celebração [sobre um suposto aniversário], [você sabe] qual é o [verdadeiro aniversário]? O [verdadeiro] aniversário é apenas aquele dia quando, ao examinar 'Onde nós nascemos?' [isto é, "De onde ou de que surgiu o ego, a falsa noção 'Eu sou este corpo'?"], nascemos na realidade [Self], que sempre brilha sem nascimento ou morte como o único.**
+
+**_Sadhu Om_**: Em 1912, quando os devotos começaram a celebrar seu aniversário [_Jayanti_], Sri Bhagavan compôs este verso e o seguinte.
+
+No verso 11 do _Ulladu Narpadu Anubandham_, Sri Bhagavan deu uma resposta à pergunta: "Quem realmente nasce?" Da mesma forma, neste verso Ele deu uma resposta à pergunta: "Qual é o verdadeiro aniversário?" Identificar o corpo como 'Eu' devido ao apego [_dehabhimana_] é o nascimento do _jiva_. Mas este é de fato um falso nascimento, pois identificar o corpo como 'Eu' é a morte do nosso verdadeiro estado. Por outro lado, uma vez que permanecer como Self é a única vida verdadeira, a realização de Self-knowledge - que é obtida ao analisar Self, a fonte do ego - é o nosso verdadeiro nascimento.
+
+Este verso e o próximo devem ser incluídos no texto após o verso 603.
+
+**5. Subsindo [e se fundindo no Self] ao conhecer a si mesmo - [tendo discriminado] assim, "Realizar uma celebração de aniversário em vez de chorar sobre [o próprio] nascimento [como 'Eu sou este corpo'] pelo menos no [próprio] aniversário, é como decorar um cadáver" - sozinho é [verdadeiro] conhecimento [ou sabedoria].**
+
+**_Sadhu Om_**: Depois de revelar no verso anterior que a realização do Self é o verdadeiro nascimento, neste verso Sri Bhagavan ensina que é ignorância celebrar o próprio falso aniversário, o dia em que se nasceu neste mundo como um corpo. Mesmo que em outros dias alguém se esqueça de lamentar, "Ai de mim, eu nasci neste mundo identificando este corpo como 'Eu'", pelo menos no aniversário de alguém deve-se lembrar de lamentar assim e se arrepender por esse erro. Se em vez disso alguém celebra o próprio aniversário com grande pompa, é como decorar felizmente um cadáver - este corpo - em vez de descartá-lo com aversão como não 'Eu'.
+
+Este verso e o anterior devem ser incorporados ao texto após o verso 603.
+
+**_Nota do editor_**: Há onze versos neste apêndice. No manuscrito de Michael, os versos 6-11 já foram incorporados ao texto nos lugares apropriados. Eles podem ser encontrados nas notas dos versos 1027, 1127,1141, 1147, 1172, 1173.
+
+**_Michael James_**: O seguinte verso foi encontrado entre os manuscritos de Sri Muruganar com uma nota "Para ser adicionado em
+
+ _Guru Vachaka Kovai_", e por isso foi incluído no final do apêndice de _Guru Vachaka Kovai – Urai_. Este verso deve ser incorporado ao texto após o verso 592.
+
+**592a. Como a morte [_yama-tattva_] vem na forma de esquecimento [do Self], para as mentes daqueles que [buscam] alcançar uma vida de imortalidade, os cinco objetos dos sentidos, cuja natureza é _tamas_ e que funcionam juntos, é mais perigoso do que [qualquer] veneno mortal e cruel.**
+
+**_Michael James_**: Conhecer objetos através de qualquer um dos cinco sentidos faz com que se perca a atenção do Self, em outras palavras, esquecer o Self. Tal esquecimento (_pramada_) ou perda de atenção do Self é declarado pelos Sábios como sendo a morte (veja o verso 394 desta obra, e os versos 321 a 329 do _Vivekachudamani_). Portanto, aqueles que estão praticando a auto-investigação a fim de alcançar o estado imortal do Self, devem ter cuidado para não permitir nem mesmo o menor espaço em seu coração para o desejo por objetos sensoriais.
+
+utu
 
 
 

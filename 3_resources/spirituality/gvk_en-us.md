@@ -5374,7 +5374,9 @@ _(Semporul Tiran)_
 
 **1230.** **Whatever by the mind you think \[or know] to be thatwhich exists is in truth that which does not exist. That one \[Self] which you cannot have in your mind \[i.e. which you cannot think] either to be that which exists or to be that which does not exist, alone is that which exists \[_ulladu_].**
 
-**_Sadhu Om_**: Since the mind is itself an unreal and non-existent entity, everything which is known by the mind as real or existent, is in fact unreal and non-existent. Hence, if Self were something which could be known by the mind, it would also be unreal, would it not? But since Self is declared by Sages to be that which cannot be known by the mind, it alone is that which truly exists and is real. **1231. Say, is it possible by the imagination \[the mind] to deny the greatness \[and reality] of the widely pervading and transcendent Supreme, which completely swallows within itself the defects and differences caused by the crowd of all kinds of knowledge?**
+**_Sadhu Om_**: Since the mind is itself an unreal and non-existent entity, everything which is known by the mind as real or existent, is in fact unreal and non-existent. Hence, if Self were something which could be known by the mind, it would also be unreal, would it not? But since Self is declared by Sages to be that which cannot be known by the mind, it alone is that which truly exists and is real.
+
+**1231. Say, is it possible by the imagination \[the mind] to deny the greatness \[and reality] of the widely pervading and transcendent Supreme, which completely swallows within itself the defects and differences caused by the crowd of all kinds of knowledge?**
 
 **1232.** **Know that the consciousness which always shines inthe heart as the formless and nameless Self, ‘I’, \[and which is known] by \[one’s] being still without thinking \[about anything] as existent or non-existent, alone is the perfect reality.**
 
