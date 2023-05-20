@@ -7311,30 +7311,47 @@ Um devoto uma vez escreveu um artigo sobre Sri Bhagavan intitulado 'Onde o Silê
 
 
 
+**1175.** **O sentido 'eu sou o corpo' [_alaya-vijnana_] é a base de apoio para o mundo, que aparece como se fosse muito real. A pedra fundamental imperecível para o _alayavijnana_ é o Silêncio [_mauna_], a realidade primordial antiga.**
 
+**_Sadhu Om_**: Sri Muruganar explicou que, como o mundo aparece num momento [_kshanika_] e desaparece num momento, a palavra _‘kshanika’_ é usada neste verso para denotar o mundo. Ele também explicou que _alaya-vijnana_ é a consciência corporal que continua no corpo até a morte do corpo, ou seja, é a mente, cuja forma é o sentido 'eu sou o corpo' [_dehatma-buddhi_].
 
+A base na qual o mundo e o corpo aparecem é a mente, a consciência 'eu sou o corpo', e a base na qual a mente aparece é o Self, a consciência pura, que é o Silêncio. Portanto, o Silêncio indestrutível sozinho é a base para todos os tipos de conhecimento.
 
+**1176.** **Em vez de argumentar com a agudeza da intelectualidade [_mati_], que [sobe e] diminui, "Isso [a realidade] existe", "Não existe", "Tem forma", "É sem forma", "É um [não-dual] ", "É dois [dual]", o Silêncio da existência-consciência-felicidade [_sat-chitananda_], que é a experiência que nunca falha, é a única verdadeira religião [_mata_].**
 
+**_Sadhu Om_**: Usar a agudeza do pequeno e transitório intelecto, cuja natureza é subir e descer, para argumentar sobre a existência ou a natureza da realidade suprema eterna, não é a verdadeira religião. A experiência sempre existente do Silêncio, em que todos esses argumentos foram abandonados, é a única verdadeira religião. Refira-se aqui ao verso 34 de _Ulladu Narpadu_, e aos versos 989 a 993 e 1235 desta obra.
 
 
 
 
 
+**1177.** **Quando o _Jnana_ não surge pela vida divina do Silêncio, a glorificada e transcendente religião primordial [_adi-mata_], tomando posse do coração, será que o sentido de diferença [_bheda-mati_] será removido minimamente sequer pelos pensamentos de ilusórias práticas de casta e religião?**
 
+**_Sadhu Om_**: O estado de desigualdade causado por diferenças como alta e baixa só pode ser removido permanentemente e completamente no Silêncio, o estado de permanência do Self, e nunca pode ser removido nem minimamente por um número qualquer de reformas feitas nas práticas religiosas e de casta.
 
+**1178.** **Assim como muitos rios que correm e se fundem no [único] grande oceano [são todos da natureza da água], assim todas as religiões – que fluem apenas em direção ao oceano de Shiva, a abundante consciência-felicidade [_chit-ananda_], como seu alvo – são Shiva-_mayam_ [da natureza de Shiva]. Portanto, não há lugar para diferenças [no objetivo final de todas as religiões].**
 
+**1179.** **Como, quando se mergulha internamente tendo como [único] objetivo a inclinação [para saber] assim, 'Quem sou eu que noto as diferenças nos preceitos [das várias religiões]?', o 'eu' [a individualidade ou _jiva_] morre e se torna inexistente, deixando apenas o sempre existente Self [que sempre brilha sem diferenças], nesse Silêncio pode o sentido de diferença permanecer?**
 
+**1180.** **“Se o sentido de diferença não permanecerá nesse Silêncio, o sentido oposto [o sentido de não-diferença] pode permanecer sozinho?” – se assim for perguntado, [a resposta é que] o sentido de não-diferença [_abhedabuddhi_] glorificado pelos conhecedores da realidade é apenas a perda do sentido de diferença [_bheda-buddhi_].**
 
+**_Michael James_**: Quando _Jnanis_ falam da experiência de não-diferença, o que eles querem dizer é apenas a não-experiência de diferença, porque no estado do Silêncio nenhuma diferença existe para ser experimentada. No entanto, tendo lido o termo _abheda-buddhi_ [sentido de não-diferença] nas escrituras, muitas pessoas erroneamente imaginam que o _Jnani_ conhece todas as diferenças, mas experimenta a não-diferença nessas diferenças. Consulte o verso 931 e 932, onde essa ideia errônea é refutada.
 
 
 
 
 
+**1181.** **As perguntas e respostas grosseiras [ou defeituosas] são [aparentemente] reais na linguagem da dualidade [_dvaita_], mas quando conhecidas [corretamente], essas perguntas e respostas não existem nem minimamente na linguagem perfeita da não-dualidade [_advaita_], que é o Silêncio.**
 
+**_Michael James_**: O verso de quatro linhas acima é uma adaptação de um verso em _Panchadasi (2-39)_. A mesma ideia também é expressa por Sri Bhagavan no seguinte verso de duas linhas.
 
+**B27. Perguntas e respostas existem apenas na linguagem desta dualidade [_dvaita_]; na não-dualidade elas não existem.**
 
+**1182.** **Quando examinada, a verdadeira conversa em andamento sem interrupção entre eles [o Guru e o discípulo], que estão tendo a alegria de perguntas astutas [e respostas] que alcançam a perfeição, é apenas alcançar e permanecer lá [no estado de Silêncio livre de mente] onde, se alcançarem e permanecerem, ambas as suas mentes se unirão.**
 
+**_Sadhu Om_**: O objetivo de uma conversa na forma de perguntas e respostas entre um Guru e um discípulo é permitir que o discípulo alcance o estado perfeito da realidade. Mas como as perguntas e respostas só podem existir no reino da dualidade, elas nunca podem levar alguém ao estado não-dual de perfeição. Portanto, a verdadeira e perfeita 'conversa' entre um Guru e um discípulo [_guru-sishya samvada_] é apenas alcançar e permanecer no estado de Silêncio, no qual ambas as suas mentes se uniram e se tornaram uma.
 
+A maneira perfeita pela qual um discípulo pode 'questionar' e aprender com o Guru é permanecer em Silêncio, pois o verdadeiro _Sadguru_ está sempre 'respondendo' e ensinando através da linguagem não-dual do Silêncio. Se o discípulo não permanece no estado livre de pensamentos do Silêncio, ele não pode entender corretamente o _Jnana-upadesa_ ensinado pelo Guru através da linguagem do Silêncio. Apenas nesse estado de Silêncio o _Brahman_ será verdadeiramente revelado. "O Silêncio é a eloquência que nunca cessa; é a linguagem mais perfeita. É um fluxo perene da linguagem da Graça. As palavras obstruem a linguagem do Silêncio [_mauna-bhasha_]. As palestras orais nunca podem ser tão eloquentes quanto o Silêncio", diz Sri Bhagavan. [Consulte _Maharshi’s Gospel_, Livro Um, cap.2, de onde esta citação é parafraseada].
 
 
 
@@ -7343,48 +7360,77 @@ Um devoto uma vez escreveu um artigo sobre Sri Bhagavan intitulado 'Onde o Silê
 
 
 
+**53 O Puro Silêncio**
 
+_(Suddha Mauna Tiran)_
 
+**1183.** **Saiba que o Ser, que deve ser investigado e alcançado no coração como o estado de felicidade através do _tapas_ necessário [ou Atenção-Self], é apenas o estado do Silêncio [_mauna_], que é experimentado ao remover o conhecimento ilusório e inútil das diferenças [junto com sua raiz, a ignorância ou conhecimento errado 'Eu sou este corpo'].**
 
+**_Sadhu Om_**: O Ser, que é o fruto a ser alcançado através do questionamento ou _vichara_, é apenas o Silêncio desprovido do conhecimento errado 'Eu sou o corpo'.
 
+**1184.** **O estado da experiência do único Silêncio não-dual [_eka advaita mouna anubhuti_], que é alcançado como a experiência do conhecimento verdadeiro ilimitado [_mey-jnana_], é apenas o brilho [de si mesmo] como o espaço vazio desprovido da falsa imaginação que é o surgimento da malévola mente-ego.**
 
+**_Sadhu Om_**: O Silêncio é apenas o estado em que o ego ou a mente, que são meramente uma falsa imaginação, foram destruídos.
 
+**1185.** **Uma vez que o Silêncio do Ser, que brilha através da mente pura [a pura existência-consciência que é desprovida de todos os pensamentos], é a única porta para a Libertação, mesmo que sigam qualquer caminho que seja agradável [para eles], essa porta é o último refúgio.**
 
+**_Sadhu Om_**: Por qualquer caminho que alguém possa seguir em direção ao estado de Libertação, só se pode finalmente entrar nesse estado através do portal do Silêncio - o portal da ausência de ego ou ausência de mente. Sri Bhagavan costumava dizer: "Por qualquer estrada que se possa se aproximar da cidade da libertação, para entrar nessa cidade é preciso pagar a taxa do pedágio. Essa taxa do pedágio é a destruição do próprio ego ou mente."
 
 
 
 
 
 
+**1186.** **Atender incessantemente e com uma mente totalmente [concentrada] ao Ser, que é a realidade perfeita não-dual, é o único e supremo Silêncio puro; por outro lado, a mera preguiça [sem pensar] da mente lenta não é nada além de uma delusão defeituosa [_tamasic_]. Saiba assim.**
 
+**_Sadhu Om_**: A preguiça ou lentidão da mente não é verdadeiro Silêncio. Apenas a auto-atenção é o verdadeiro e puro Silêncio.
 
+**1187.** **Saiba que o Silêncio interior – a força inabalável de louvar e adorar incessantemente, sem adorar, os Pés do Senhor Shiva pela bela Palavra Suprema [_para-vak_], que é o puro discurso não emergente [isto é, adorando pela auto-atenção, o não surgimento do ego] – é a única e verdadeira adoração natural [da realidade].**
 
+**1188.** **Apenas aqueles que conheceram sua realidade como Shiva [o Ser], são aqueles que estão imersos no estado perfeito e natural do Silêncio. [Portanto] tendo removido o 'eu'-sentido em qualquer coisa que não seja Shiva [isto é, tendo desistido da identificação com todos os adjuntos, como o corpo], permaneça sem ação em Shiva.**
 
+**1189.** **A glória do estado do Silêncio – no qual alguém se fundiu e morreu no verdadeiro princípio [_mey-tattva_], Deus, que é o Ser sem ego, ao questionar 'Quem sou eu, a falsa primeira pessoa?' – é a única natureza da observância da auto-entrega [_sarangati-dharma_].**
 
+**_Michael James_**: A verdadeira prática de auto-entrega é para alguém diminuir através da pergunta 'Quem sou eu?' e assim se fundir e permanecer no Ser, o estado de Silêncio que está desprovido do mínimo surgimento do ego, o primeiro pensamento 'Eu sou isso'. Consulte também o verso 482.
 
+**_Sri Muruganar_**: Note que a ideia deste verso, ou seja, que o Silêncio, que é o objetivo do auto-questionamento, é a verdade da perfeita auto-entrega, também é expressa pelo grande Santo Vaishnavite Nammazhwar no seguinte verso dele: “Não me conhecendo, eu vivia como 'Eu' e 'meu' [como se 'Eu' fosse este corpo e estas posses fossem 'minhas']; Ó Senhor dos seres celestiais que é adorado pelos deuses, eu sou Você e minhas posses são Suas.”
 
 
 
 
 
 
+**1190.** **De acordo com o _prarabdha_ [do _jiva_], o Supremo faz o _jiva_ agir até que ele [o _prarabdha_] chegue ao fim. Esforços feitos serão em vão devido ao _prarabdha_; mesmo [apesar de] obstruções, ele [o _prarabdha_] dará frutos. [Portanto] permanecer em silêncio [sem tentar opor-se ao seu _prarabdha_] é o melhor.**
 
+**_Sadhu Om_**: Este verso expressa o mesmo _upadesa_ que Sri Bhagavan deu à Sua mãe em 1898, quando ela estava implorando a Ele para retornar a Madurai, ou seja, "De acordo com o destino [_prarabdha_] de cada pessoa, o Ordenador, estando em cada lugar, faz com que eles ajam. Aquilo que nunca deveria acontecer não acontecerá, por mais esforço que seja feito; aquilo que deve acontecer não parará, por mais obstrução que seja feita. Isto é certo. Portanto, permanecer em silêncio é o melhor." Este e o próximo verso podem ser lidos junto com os versos 150 e 151.
 
+**1191.** **Não é possível para ninguém fazer nada contrário ao decreto [_niyati_] de Deus, que tem a habilidade de fazer [qualquer coisa e] tudo. [Portanto] permanecer em silêncio aos Pés [de Deus], tendo desistido de todas as ansiedades da mente má, defeituosa e ilusória, é o melhor.**
 
+**1192.** **Se examinarmos [qual] o método [é] para acabar [para sempre] com os movimentos da mente oscilante ou ego, que é [como] um reflexo na água [ondulante], [descobriremos que] o método é para alguém permanecer em silêncio atendendo apenas a si mesmo, e não para alguém atender a isso [a mente oscilante], o que fará alguém escorregar do estado [do Ser].**
 
+**_Sadhu Om_**: O único método para acalmar a mente errante permanentemente é para alguém atender silenciosamente a si mesmo [a primeira pessoa, 'Eu'], e não para alguém atender à mente errante, que não é nada mais do que um pacote de pensamentos em constante mudança relacionados a segunda e terceira pessoas. No entanto, não ouvimos hoje que muitos pretendentes a gurus estão aconselhando aspirantes, "Continue observando os pensamentos da mente", como se isso fosse um verdadeiro método de prática espiritual [_jnana-abhyasa_]? Uma vez que todos os pensamentos da mente não são nada mais do que segundas e terceiras pessoas sem valor, prestar atenção a esses pensamentos é um método inútil que é recomendado apenas por Vedantins que carecem de verdadeira experiência. Para revelar que este método não serve para silenciar [ou seja, destruir] a mente permanentemente, Sri Bhagavan diz neste verso, "O método [correto] é para alguém permanecer silenciosamente atendendo a si mesmo [a primeira pessoa] sozinho, e não para alguém prestar atenção à mente oscilante [que é um conjunto de objetos de segunda e terceira pessoa]". Consulte as páginas 101 a 102 de _O Caminho de Sri Ramana –_ Parte Um para uma explicação mais completa.
 
+No verso 17 de _Upadesa Undiyar_, Sri Bhagavan diz que se alguém vigiar atentamente a forma da mente, descobrirá que não existe tal coisa como a mente. Esse ensinamento é mal interpretado por algumas pessoas para significar que se deve prestar atenção ou observar a mente, ou seja, os pensamentos relacionados a objetos de segunda e terceira pessoa. No entanto, deve-se entender que sempre que Sri Bhagavan nos recomenda a examinar a mente, Ele não quer dizer que devemos prestar atenção aos pensamentos relacionados a segunda ou terceira pessoa, mas apenas que devemos prestar atenção e examinar a primeira pessoa ou ego, o pensamento raiz 'Eu'. Se assim atendermos ao pensamento 'Eu', ele automaticamente se extinguirá e desaparecerá, enquanto que se atendermos a outros pensamentos, eles se multiplicarão e aumentarão em força. Portanto, no presente verso, Sri Bhagavan revela que, se prestarmos atenção aos pensamentos da mente oscilante, estaremos nos desviando de nosso estado natural de permanência no Ser, no qual nenhuma segunda ou terceira pessoa pode ser conhecida.
 
+Ele não quer dizer que devemos prestar atenção aos pensamentos relacionados a segunda ou terceira pessoa, mas apenas que devemos prestar atenção e examinar a primeira pessoa ou ego, o pensamento raiz 'Eu'. Se assim atendermos ao pensamento 'Eu', ele automaticamente se extinguirá e desaparecerá, enquanto que se atendermos a outros pensamentos, eles se multiplicarão e aumentarão em força. Portanto, no presente verso, Sri Bhagavan revela que, se prestarmos atenção aos pensamentos da mente oscilante, estaremos nos desviando de nosso estado natural de permanência no Ser, no qual nenhuma segunda ou terceira pessoa pode ser conhecida.
 
 
 
 
 
+**1193.** **Os que têm conhecimento perfeito dizem que o estado do verdadeiro conhecimento [_mey-jnana-samadhi_], em que se permanece sem 'Eu' [o ego], é o único _mauna-tapas_. Para experimentar [esse] silêncio [_mauna_], que é desprovido do pensamento corporal [o sentimento 'Eu sou este corpo'], apegar-se ao Ser no coração é o _sadhana_.**
 
+**1194.** **O Silêncio puro que brilha quando o sentido 'Eu' [o ego] se perde ao se permanecer no coração, conhecendo o próprio estado real de existência em vez de sair ao exterior acalentando e atendendo a outras coisas, é o único limite do _Jnana_.**
 
+**_Michael James_**: O estado de _Jnana_ é aquele que é desprovido de qualquer limite e além de todas as definições. Se ao menos um limite ou definição é para ser dado para _Jnana_, é apenas o Silêncio puro que permanece brilhando após o ego ser destruído.
 
+**1195.** **Uma vez que, assim como as atividades vistas dentro [e por] uma pessoa sonhando se tornam risíveis e inexistentes na perspectiva da pessoa acordada, até as atividades do _jiva_ [como seu nascimento e morte], que são uma imaginação [vista por ele] dentro de si mesmo, tornam-se inexistentes em [a verdadeira visão despertada de] conhecimento do Ser, todas [essas atividades, incluindo sua servidão e libertação] são irreais [e são um mero jogo de _maya_].**
 
+**1196.** **Quando o Supremo gracioso puro revela a natureza do Ser, aquele que estava no quarto escuro [de _ajnana_] se fundirá no Silêncio da permanência no Ser, se afogando em Siva-_bodha_ [conhecimento de Deus ou existência-consciência], que é a beleza da realidade.**
 
+**1197.** **Saiba que o Silêncio - que é o conhecimento perfeito da forma do Ser e que brilha dentro de nós quando o ego atinge o coração rejeitando todas as ilusões dos pensamentos [_sankalpa-jalas_], que raramente são rejeitados - é a gloriosa Palavra Suprema [_para-vak_].**
 
+**_Sadhu Om_**: Este verso revela o verdadeiro significado da palavra _‘para-vak’_, que foi usada por Sri Bhagavan nos versos B12, 706 e 715.
 
 
 
@@ -7392,18 +7438,26 @@ Um devoto uma vez escreveu um artigo sobre Sri Bhagavan intitulado 'Onde o Silê
 
 
 
+**1198.** **Apenas aqueles que não escutaram atentamente a linguagem da Graça do Senhor [Silêncio], que é a Palavra Suprema [_para-vak_], [que brilha] quando a mente errante se acalma, dirão que [o som de] uma flauta é doce, que [o som de] uma _veena_ é doce, ou que o discurso balbuciante de seus próprios filhos balbuciantes é muito doce.**
 
+**_Sadhu Om_**: Como a linguagem da Graça do _Sadguru_ - a _para-vak_ ou o Silêncio que brilha no coração quando a mente errante se acalma e é destruída ali - concede a bem-aventurança imortal e perfeita, é mais doce do que até mesmo o som mais doce neste mundo.
 
+Como o sábio Tiruvalluvar escreveu o _Tirukkural_ para dar conselhos a todos os tipos de pessoas de acordo com seu próprio nível de maturidade, no verso 66 [no capítulo sobre ter filhos, que vem na seção que trata da vida dos chefes de família] ele disse: "Apenas aqueles que não ouviram o discurso balbuciante de seus próprios filhos, dirão que [o som de] uma flauta é doce ou que [o som de] uma _veena_ é doce". Mas apenas porque Tiruvalluvar disse isso, não devemos de maneira alguma concluir que ouvir o discurso balbuciante dos próprios filhos é a experiência mais doce de todas. Como ouvir o balbucio de crianças pode dar apenas um prazer transitório, Sri Bhagavan se dirige aos aspirantes que estão envolvidos na prática espiritual mais elevada e diz neste verso que a doçura do supremo Silêncio do _Sadguru_, que está sempre brilhando dentro do coração, é maior e mais real do que a doçura do som dos próprios filhos balbuciando.
 
+No entanto, os leitores não devem concluir a partir deste verso que Tiruvalluvar foi um daqueles "que não escutaram atentamente a linguagem da Graça do Senhor, que é a Palavra Suprema, [que brilha] quando a mente errante se acalma", mas devem entender que, como ele mesmo nunca teve filhos, ele compôs aquele verso apenas para o bem dos chefes de família que buscam prazeres mundanos.
 
 
 
 
 
 
+**1199.** **Se o barulho dos pensamentos [_sankalpas_] surgindo [incessantemente] dentro não cessar, o inefável estado de Silêncio não será revelado. Aqueles cujos pensamentos [_vrittis_] se acalmaram internamente, não abandonarão o forte e perfeito [estado de] Silêncio, mesmo em um grande campo de batalha.**
 
+**_Sadhu Om_**: Assim como o doce som de uma música suave e melodiosa não pode ser ouvido em um lugar onde há um grande barulho, como a confusão de um mercado ou o rugido das ondas de um oceano, assim o doce ensino silencioso [_mouna-upadesa_] do _Sadguru_, que está sempre acontecendo profundamente dentro do coração, não pode ser ouvido pelas pessoas comuns por causa do barulho dos milhões de pensamentos que estão incessantemente surgindo em suas mentes. Por outro lado, por causa da força de Seu Silêncio, mesmo o grande barulho de um campo de batalha permanecerá desconhecido para um _Jnani_, que aniquilou a mente destruindo todos os pensamentos ou _sankalpas_. Porque o _ajnani_ presta atenção apenas à confusão de pensamentos, ele não percebe o Silêncio sempre brilhante dentro, enquanto porque o _Jnani_ presta atenção apenas no Silêncio dentro, Ele não sabe mesmo o maior barulho que pode estar acontecendo do lado de fora.
 
+**1200.** **Diga-me, não é o silêncio vocal observado por aqueles que não se envolvem na auto-investigação [_jnana-swavichara_] e que não conhecem o verdadeiro objetivo, que é o Silêncio [que brilha] quando o ego, 'eu sou o corpo sujo e carnal', se acalma e atinge o coração, um [mero] esforço mental [_chitta-vyapara_]?**
 
+**_Sadhu Om_**: O esforço daqueles que meramente observam o silêncio vocal em vez de se envolverem na auto-investigação ou auto-atenção, que é o verdadeiro estado de Silêncio da mente, é inútil.
 
 
 
@@ -7414,18 +7468,450 @@ Um devoto uma vez escreveu um artigo sobre Sri Bhagavan intitulado 'Onde o Silê
 
 
 
+**1201.** **A vida do Eu - o verdadeiro conhecimento [_mey-jnana_] que brilha desprovido do senso do ego devido ao afogamento [do ego] em sua fonte quando a loucura do desejo pelos pequenos objetos ilusórios e delusivos dos sentidos foi completamente destruída - é a única coisa que pode [verdadeiramente] satisfazer a mente.**
 
+**1202.** **Aqueles cujos corações estão transbordando de alegria ao experimentar o sempre novo néctar [_amrita_] do Eu, que brilha intensamente no puro Silêncio, não serão estragados no mundo ao experimentar os pequenos objetos dos sentidos, que dão um pequeno prazer louco causado pela ilusão mental.**
 
+**1203.** **A realidade que é muito claramente conhecida pelos Sábios como o objetivo [_siddhanta_] de todos os _Vedas_ e _Agamas_, e a observância da realidade [_sat-achara_] recomendada por todos os _dharma-upadesas_, é [nada mais que] o Silêncio, o estado de suprema paz.**
 
+**_Sadhu Om_**: O objetivo final que é ensinado em todos os _Vedas_, _Agamas_, _dharma-sastras_ e outras escrituras é apenas o estado de perfeito Silêncio [_pari-purna-mauna_], que não é nada além da destruição da mente [_mano-nasa_]. Consulte a obra _Quem sou eu?_ onde Sri Bhagavan diz que todas as escrituras concluem finalmente que, para atingir a libertação, é necessário acalmar a mente.
 
 
 
 
 
 
+**1204.** **O completo abandono de todos [os outros três _purusharthas_] começando com _dharma_, é o glorioso estado de paz, que é a natureza da libertação [o quarto _purushartha_, o único verdadeiro _purushartha_]. [Portanto] abandonando completamente [todo] o pensamento dos outros [os três falsos _purusharthas_], apegue-se apenas ao Silêncio, o conhecimento do supremo Eu, que é Siva.**
 
+**_Sadhu Om_**: O verdadeiro _purushartha_ ou objetivo da vida humana é o estado pacífico de libertação, que só pode ser alcançado quando se desiste completamente do desejo pelos outros três chamados _purusharthas_, a saber, _dharma_, _artha_ e _kama_. Portanto, deve-se abandonar até mesmo o pensamento desses outros três _purusharthas_ e deve-se permanecer firmemente no Silêncio, o supremo estado de autoconhecimento, que sozinho é a libertação. Refira-se aqui ao verso 8 desta obra.
 
+**54 Devoção Suprema**
 
+_(Para-Bhakti Tiran)_
+
+**1205.** **Quando alguém se entregou completamente aos pés de Siva e se tornou da natureza do Eu, a [resultante] abundante paz, na qual não há nem mesmo o menor espaço no coração [para alguém] para reclamar sobre [seus] defeitos e deficiências, sozinho é a natureza da suprema devoção.**
+
+**_Sadhu Om_**: Se alguém se entregou completamente a Deus, será impossível para essa pessoa orar até mesmo pela libertação. Refira-se aqui ao verso 7 do _Sri Arunachala Navamani-malai._
+
+**1206.** **No coração que existe e brilha como a verdadeira e perfeita bem-aventurança, tendo se tornado um alvo para a Graça de Deus, pode haver as pequenas deficiências da mente, que são um sinal do sentido egoico carnal [o sentimento 'Eu sou este corpo carnal'], que é a ignorância?**
+
+
+
+
+
+**1207.** **Só enquanto houver outros pensamentos no coração, pode haver um pensamento de Deus concebido pela mente. A morte até mesmo desse pensamento \[de Deus] devido à morte de \[todos os] outros pensamentos \[incluindo o pensamento raiz 'Eu'], só isso é o verdadeiro pensamento \[de Deus], o pensamento impensado.**
+
+**_Sadhu Om_**: Só enquanto houver outros pensamentos na mente de alguém, pode-se pensar ou meditar em Deus. Mas o verdadeiro pensamento ou meditação em Deus, que é o "pensamento impensado", é apenas aquele estado em que todos os outros pensamentos, incluindo o primeiro pensamento 'Eu sou este corpo', morreram através da auto-entrega.
+
+Só depois do surgimento do ego ou do pensador, o primeiro pensamento 'Eu sou o corpo', podem surgir outros pensamentos sobre o mundo e Deus. Depois do surgimento desses pensamentos, já que se sente então que Deus é diferente de si mesmo, só se pode meditar nele como um objeto de pensamento. Mas quando o ego, o pensamento raiz 'Eu', morre através da auto-entrega, não só todos os pensamentos sobre o mundo desaparecerão, mas até mesmo o pensamento de Deus, que tem a mesma realidade \[_sama-satya_] que os outros pensamentos, também desaparecerá. Este estado, que é desprovido de todo pensamento de mundo, alma e Deus, e no qual se brilha como a suprema realidade livre de pensamentos, só é a verdadeira meditação ou _Brahma-dhyana_.
+
+**1208.** **Se você perguntar, "Diga-me, por que o 'estar quieto' \[o estado do mero ser descrito no verso anterior], que está desprovido de até mesmo um único pensamento ascendente, é chamado de 'pensamento' \[ou 'meditação']?", saiba que é por causa do brilho da consciência sempre inesquecível da realidade \[‘Eu sou’].**
+
+**_Sadhu Om_**: Pensar e esquecer são uma dualidade \[_dvandva_] ou par de opostos. Como a consciência sempre inesquecível da realidade \[‘Eu sou’] brilha perfeitamente no estado de 'estar quieto' - o estado de auto-atenção ou permanência em si mesmo - esse estado é por vezes referido como um estado de 'pensamento' ou 'meditação' \[_dhyana_]. Isto é, como a realidade não é esquecida nesse estado livre de pensamentos, ela é descrita de forma frouxa como um estado de 'pensar em' ou 'meditar sobre' a realidade. É só neste sentido que Sri Bhagavan descreveu o estado de auto-atenção como 'pensamento do Eu' \[_atma-chintanai_] em _Quem sou eu_? e no verso 482 desta obra.
+
+
+
+
+
+**1209.** **O amor que brota dentro, no lugar [o coração] onde a paz clara é alcançada devido à luz [_Jnana_], que surge quando a mente ilusória, que está cheia da escuridão venenosa [_ajnana_], é destruída e quando o coração se torna aberto como o espaço, só isso é o verdadeiro amor [_meybhakti_] por Siva.**
+
+**1210.** **Apenas aqueles afortunados que vivem sempre dependendo apenas do Self [que é a verdadeira forma de Deus] como o melhor refúgio, alcançarão sua própria realidade. Para os outros, a libertação, essa Morada Suprema [_param-dhama_] infindável e graciosa, é inalcançável por qualquer meio que seja.**
+
+**1211.** **Os verdadeiros devotos que de todas as maneiras permanecem sujeitos [_adhina_] apenas ao Self [Deus], [só] são _tadiyars_ [aqueles que pertencem ao Senhor]. Saiba que apenas para eles [esses verdadeiros devotos], em quem há um amor incessante, será uma conquista completa a Morada Suprema [_param-dhama_], que triunfa como transcendente.**
+
+**55 A Conquista do _Jnana_**
+
+_(Jnana-Siddhi Tiran)_
+
+**1212.** **Embora os _siddhis_ sejam ditos ser muitos e diferentes, _Jnana_ sozinho é o mais alto desses muitos _siddhis_ diferentes, [porque] aqueles que alcançaram outros _siddhis_ desejam _Jnana_, [enquanto] aqueles que alcançaram _Jnana_ não desejam outros [_siddhis_]. [Portanto] aspire [apenas para _Jnana_].**
+
+
+
+
+
+
+**1213.** **Aquele que alcançou o Self [_atma-swarupa-siddha_] é aquele que alcançou todos os outros [_siddhis_] juntos, já que esse [Auto-realização ou _atma-siddhi_] é o _siddhi_ supremo. Assim como [todos] os planetas estão dentro do espaço, [seja] manifestos ou não manifestos, todos eles [todos os _siddhis_] estarão em quem alcançou o conhecimento do Self [_atma-jnana-siddha_].**
+
+**1214.** **Se, mergulhando profundamente, se atinge o fundo do coração, o sentimento de vileza [a sensação 'eu sou um pequeno _jiva_'] deixará e perecerá, e a vida de ser o Senhor do _Jnana_, aos pés de quem até o rei dos céus [Indra] abaixará a cabeça, virá a ser vivida [por alguém].**
+
+### 56Brahman
+
+_(Brahman Tiran)_
+
+**1215.** **O princípio real silencioso e bem-aventurado [Self ou _Brahman_] sozinho é o palco ou base para a _Maya_ - que é o grande poder da consciência [_maha-chit-sakti_], que não é diferente do princípio perfeito real - jogar [seu] jogo para sempre, tendo os três princípios [o mundo, a alma e Deus] como [seus] brinquedos. Que maravilha é!**
+
+**_Sadhu Om_**: A partir deste verso, devemos entender que, além de _Brahman_, _Maya_ não tem existência real própria. Os três princípios, o mundo, a alma e Deus, são os brinquedos com os quais ela realiza seu jogo ilusório [_maya-lila_] de criação, sustentação e destruição. Mas o jogo que ela joga com esses três não poderia acontecer se não tivesse o Self ou _Brahman_, a realidade perfeita, como sua base. A verdade de que o Self permanece para sempre como a base na qual _Maya_ joga, é o que é indicado pelos _Saktas_ quando retratam figurativamente a Deusa Kali dançando no corpo deitado do Senhor Siva. O que deve ser entendido aqui é que a aparência do mundo, da alma e de Deus, e de sua criação, sustentação e destruição, são todos um jogo irreal de _Maya_, que não tem realidade própria. É com o ensinamento dado neste verso que o primeiro capítulo da segunda parte de _O Caminho de Sri Ramana_ começa.
+
+
+
+
+
+
+**1216.** **Se eles veem as muitas imagens em movimento, eles não veem a tela única e imóvel, a base. Aqueles que veem a tela imóvel não veem nenhuma das imagens. Essa é a natureza de um cinema.**
+
+**_Michael James_**: Quando as imagens são projetadas numa tela de cinema, elas, na prática, escondem essa tela. Da mesma forma, quando as imagens de nomes e formas - o mundo, a alma e Deus - são vistas, elas, na prática, escondem sua base, o Self ou _Brahman_. Portanto, assim como a tela é vista como ela é apenas quando as imagens não são vistas, o Self é visto como ele é apenas quando o mundo, a alma e Deus não são vistos. Portanto, se o mundo, a alma e Deus são vistos, o Self não será visto, e se o Self é visto, o mundo, a alma e Deus não serão vistos. Veja também os versos 46, 876 e 877, onde a mesma verdade é expressa.
+
+**1217.** **Em um cinema, sem a tela imóvel não pode haver nenhuma imagem em movimento. Quando escrutinado, essa única tela imóvel é diferente das imagens em movimento na tela.**
+
+**1218.** **A tela, a base imóvel, sozinha é _Brahman_ [ou Self]. A alma, Deus e os mundos são apenas as imagens em movimento nessa tela imóvel. [Portanto] saiba que tudo o que é visto [naquela tela] é uma ilusão [_maya_].**
+
+**_Michael James_**: Os três versos acima revelam que o mundo, a alma e Deus só podem ser vistos quando _Brahman_ não é visto, mas que sem _Brahman_ não pode haver mundo, alma ou Deus, e que, embora _Brahman_ seja assim a realidade ou base na qual eles aparecem, é diferente deles. Portanto, este verso conclui tirando a inferência, "Tudo o que é visto (ou seja, o mundo, a alma e Deus) é uma ilusão". Compare aqui o verso 160 e 1047 e 1049.
+
+
+
+
+
+
+**1219.** **Ele que, no mundo da imagem, pensa e anseia não apenas pelo mundo da imagem - que se move com almas da imagem, que se movem como ele mesmo - mas também pelo Deus da imagem [que cria, sustenta e destrói o mundo da imagem e as almas da imagem], é apenas a alma [_jiva_], que é uma imagem em movimento.**
+
+**_Sadhu Om_**: O mundo, a alma e Deus são meras imagens em movimento; eles não podem ser a tela, a base. A alma ou homem, que é uma entre as imagens em movimento, vê o mundo e Deus, os outros dois entre as imagens em movimento, e sofre por ter gostos ou desgostos em relação a eles. Ou seja, muitas pessoas veem e desejam os objetos do mundo e sofrem com o anseio de obtê-los, enquanto outras sofrem com o anseio de ver e alcançar Deus. O primeiro tipo de pessoas é chamado de pessoas mundanas, enquanto o segundo tipo é chamado de devotos de Deus. No entanto, este verso ensina que, uma vez que ambos esses tipos de anseio e sofrimento que as pessoas passam são parte do jogo de _maya_, eles não têm significado algum e são ambos meramente ocorrências irreais resultantes da ignorância de não conhecer o Self ou _Brahman_, a realidade suprema que é a base sobre a qual _maya_ joga dessa maneira.
+
+**1220.** **Para o pensamento [_chitta-vritti_] que sofre pensando em si mesmo - que é [em sua natureza real nada mais que] a tela, a base imóvel - ser uma imagem em movimento [a alma ou _jiva_], a coisa apropriada a fazer é permanecer firmemente no estado de Silêncio, tendo completamente submerso [através da auto-atenção].**
+
+**_Sadhu Om_**: O _chitta-vritti_ mencionado neste verso é a alma, o ego ou o 'eu'-pensamento [_aham-vritti_], cuja natureza real é apenas o Self, a base imóvel, mas que se identifica erroneamente como um corpo, uma das imagens em movimento na tela, e que, assim, vê e deseja as outras imagens, o mundo e Deus.
+
+No verso anterior, até mesmo o nobre esforço de um devoto que anseia ver e alcançar Deus, foi considerado falho, não foi? Quando é assim, não é necessário ensinar a essa nobre alma o que é apropriado para ela fazer? Portanto, neste verso Sri Bhagavan ensina que a melhor e mais nobre coisa para a alma fazer é submergir e permanecer firmemente no estado de Silêncio, conhecendo e permanecendo como Self, a base imóvel na qual as imagens em movimento do mundo, alma e Deus aparecem. Como [conforme afirmado no verso 1216] aquele que vê a tela não pode ver as imagens, quando alguém assim conhece a sua natureza real, não verá as imagens do mundo, da alma e de Deus, e, portanto, alcançará a paz suprema que está desprovida da ilusão de ser louco após essas imagens.
+
+
+
+
+**55 A Natureza da Libertação**
+
+_(Mukti Uru Tiran)_
+
+**1221.** **O conhecimento da própria verdadeira natureza - que permanece no coração quando até mesmo o pensamento de ser salvo da escravidão é destruído devido à remoção completa do pensamento dessa escravidão na mente que se vê [ao examinar] assim 'Quem sou eu que estou preso?' - é a única natureza da libertação.**
+
+**_Michael James_**: Quando a mente vê sua própria verdadeira natureza ao questionar 'Quem sou eu que estou preso?', ela perceberá que, na verdade, nunca esteve presa. Portanto, uma vez que o pensamento de escravidão é assim completamente destruído, o pensamento contrário de libertação também desaparecerá, porque escravidão e libertação são um díade [_dvandva_] ou par de opostos, cada um dos quais tem um significado por causa do outro. Este verso parafraseia e explica a ideia expressada por Sri Bhagavan em _Quem sou eu?_ quando Ele disse, "Questionar 'Quem sou eu que estou em escravidão?', e [assim] conhecer a própria verdadeira natureza, só isso é a libertação".
+
+**1222.** **Aquilo que é a paz cheia de consciência [_bodhamaya-santa_] que brilha como aquilo que permanece [quando os pensamentos de escravidão e libertação são assim removidos pela auto-investigação], é o único _Sada-sivam_ [a realidade eterna]. O Silêncio sem ego [que brilha] como [o verdadeiro conhecimento] 'Aquilo [_Sada-sivam_], que é o Supremo sempre existente, é o único "Eu",' é a única finalidade da libertação.**
+
+**_Sadhu Om_**: Deve-se ler e entender aqui o verso 40 de _Ulladu Narpadu Anubandham_.
+
+
+
+
+
+**1173.** **Se perguntado, "[Qual é] a [verdadeira] língua divina, que é a fonte de todas as línguas, que é real e que possui a maior clareza?" Essa língua é apenas o Silêncio [_mauna_], que o Senhor [Sri Dakshinamurti] que é a personificação do conhecimento [_jnana-swarupa_] sentado ao pé da árvore de bananeira, ensinou.**
+
+**_Michael James_**: O verso 10 do apêndice de _Guru Vachaka Kovai – Urai_ deve ser incluído aqui (ver nota para o verso 1027). Neste verso, Sri Bhagavan diz:
+
+**O Silêncio [_mauna_] é a forma [literalmente, estado] da Graça, a única língua [única, não-dual, incomparável e incomparável] que está [sempre] borbulhando dentro.**
+
+Um devoto uma vez escreveu um artigo sobre Sri Bhagavan intitulado 'Onde o Silêncio é um Sermão Inspirado'. Vendo isso, Sri Bhagavan escreveu o verso acima dando uma definição de Silêncio. "O Silêncio é a eloquência incessante... é o fluxo perene da 'linguagem' [a verdadeira linguagem da Graça]", diz Sri Bhagavan em _Maharshi’s Gospel_, Livro Um, capítulo 2.
+
+**1174.** **Uma vez que aquele grande _Brahman_, que não pode ser revelado mesmo por inúmeros comentários, é revelado apenas pelo Silêncio do Guru, que é raro de se alcançar, saiba que o comentário desse Silêncio é o melhor comentário.**
+
+
+
+
+
+**1175.** **O sentimento de 'eu sou o corpo' [_alaya-vijnana_] é a base de apoio para o mundo, que aparece como se fosse muito real. A pedra fundamental imperishável para o _alayavijnana_ é o Silêncio [_mauna_], a antiga realidade primordial.**
+
+**_Sadhu Om_**: Sri Muruganar explicou que, uma vez que o mundo aparece em um momento [_kshanika_] e desaparece em um momento, a palavra _‘kshanika’_ é usada neste verso para denotar o mundo. Ele também explicou que _alaya-vijnana_ é a consciência do corpo que continua no corpo até a morte do corpo, isto é, que é a mente, cuja forma é o sentimento 'eu sou o corpo' [_dehatma-buddhi_].
+
+A base na qual o mundo e o corpo aparecem é a mente, a consciência 'eu sou o corpo', e a base na qual a mente aparece é o Ser, a pura consciência, que é o Silêncio. Portanto, o Silêncio indestrutível é a base para todos os tipos de conhecimento.
+
+**1176.** **Em vez de argumentar com a agudeza do intelecto[_mati_], que [sobe e] se acalma, “Ele [a realidade] existe”, “Ele não existe”, “Ele tem forma”, “Ele é sem forma”, “Ele é um [não-dual]”, “Ele é dois [dual]”, o Silêncio da existência-consciência-felicidade [_sat-chitananda_], que é a experiência que nunca falha, é a única verdadeira religião [_mata_].**
+
+**_Sadhu Om_**: Usar a agudeza do pequeno e transitório intelecto, cuja natureza é subir e acalmar, para discutir a existência ou a natureza da eterna suprema realidade, não é verdadeira religião. A experiência sempre existente do Silêncio, na qual todos esses argumentos foram abandonados, é a única verdadeira religião. Consulte aqui o verso 34 de _Ulladu Narpadu_, e os versos 989 a 993 e 1235 desta obra.
+
+**1177.** **Quando a _Jnana_ não se eleva pela vida divina do Silêncio, a glorificada e transcendente religião primordial [_adi-mata_], tomando posse do coração, o senso de diferença [_bheda-mati_] será removido mesmo que seja pelas práticas de castas e religiões ilusórias?**
+
+**_Sadhu Om_**: O estado de desigualdade causado por diferenças como alto e baixo pode ser removido permanentemente e completamente apenas no Silêncio, o estado de Permanência do Ser, e ele nunca pode ser removido mesmo minimamente por qualquer número de reformas feitas em práticas religiosas e de castas.
+
+
+
+
+
+
+**1178.** **Assim como muitos rios que correm e se fundem no [um] grande oceano \[são todos da natureza da água], assim todas as religiões - que fluem apenas em direção ao oceano de Siva, a abundante consciência-felicidade \[_chit-ananda_], como seu alvo - são Siva-_mayam_ \[da natureza de Siva]. Portanto, não há lugar para diferenças \[no objetivo final de todas as religiões].**
+
+**1179.** **Uma vez que, quando alguém mergulha interiormente tendo como \[único] objetivo a curiosidade \[para saber] assim, ‘Quem sou eu que noto as diferenças nas doutrinas \[das várias religiões]?', o 'eu' \[a individualidade ou _jiva_] morre e se torna inexistente, deixando apenas o sempre existente Ser \[que sempre brilha desprovido de diferenças], nesse Silêncio o senso de diferença pode permanecer?**
+
+**1180.** **“Se o senso de diferença não permanecerá nesse Silêncio, o senso oposto \[o senso de não-diferença] pode permanecer sozinho?” - se for perguntado assim, \[a resposta é que] o senso de não-diferença \[_abhedabuddhi_] glorificado pelos conhecedores da realidade é apenas a perda do senso de diferença \[_bheda-buddhi_].**
+
+**_Michael James_**: Quando _Jnanis_ falam da experiência de não-diferença, o que eles querem dizer é apenas a não-experiência da diferença, porque no estado do Silêncio não existem diferenças a serem experimentadas. No entanto, tendo lido o termo _abheda-buddhi_ \[senso de não-diferença] nas escrituras, muitas pessoas erroneamente imaginam que o _Jnani_ conhece todas as diferenças mas experimenta a não-diferença nessas diferenças. Refira-se ao verso 931 e 932, onde essa ideia errada é refutada.
+
+**1181.** **As perguntas e respostas grosseiras \[ou defeituosas] são \[aparentemente] reais na linguagem da dualidade \[_dvaita_], mas quando conhecidas \[corretamente], essas perguntas e respostas não existem nem um pouco na linguagem perfeita da não-dualidade \[_advaita_], que é o Silêncio.**
+
+**_Michael James_**: O versículo acima de quatro linhas é uma adaptação de um versículo em _Panchadasi (2-39)_. A mesma ideia também é expressa por Sri Bhagavan no seguinte versículo de duas linhas.
+
+
+
+
+
+
+
+**B27. Perguntas e respostas existem apenas na linguagem desta dualidade \[_dvaita_]; na não-dualidade elas não existem.**
+
+**1182.** **Quando escrutinada, a verdadeira conversa que ocorre sem interrupção entre eles \[o Guru e o discípulo], que estão tendo a alegria de perguntas perspicazes \[e respostas] que alcançam a perfeição, é apenas alcançar e permanecer ali \[no estado de Silêncio livre de mente] onde, se eles alcançarem e permanecerem, ambas as suas mentes se unirão.**
+
+**_Sadhu Om_**: O objetivo de uma conversa na forma de perguntas e respostas entre um Guru e um discípulo é permitir que o discípulo alcance o estado perfeito da realidade. Mas, como perguntas e respostas só podem existir no reino da dualidade, elas nunca podem levar a um estado de perfeição não-dual. Portanto, a verdadeira e perfeita 'conversa' entre um Guru e um discípulo \[_guru-sishya samvada_] é apenas eles alcançarem e permanecerem no estado do Silêncio, no qual ambas as suas mentes se uniram e se tornaram uma.
+
+A maneira perfeita pela qual um discípulo pode 'questionar' e aprender com o Guru é permanecer em Silêncio, pois o verdadeiro _Sadguru_ está sempre 'respondendo' e ensinando através da linguagem não-dual do Silêncio. Se o discípulo não permanecer no estado de Silêncio livre de pensamentos, ele não pode entender corretamente o _Jnana-upadesa_ ensinado pelo Guru através da linguagem do Silêncio. Apenas nesse estado de Silêncio, _Brahman_ será verdadeiramente revelado. "O Silêncio é uma eloquência sempre incessante; é a linguagem mais perfeita. É um fluxo perene da linguagem da Graça. Palavras obstruem a linguagem do Silêncio \[_mauna-bhasha_]. Palestras orais nunca podem ser tão eloquentes quanto o Silêncio", diz Sri Bhagavan. \[Consulte _Maharshi’s Gospel_, Livro Um, cap.2, de onde esta citação é parafraseada].
+
+**53 O Puro Silêncio**
+
+_(Suddha Mauna Tiran)_
+
+**1183.** **Saiba que o Self, que deve ser investigado e alcançado no coração como o estado de felicidade através do necessário _tapas_ \[ou auto-atenção], é apenas o estado de Silêncio \[_mauna_], que é experienciado removendo o conhecimento ilusório e inútil das diferenças \[juntamente com a sua raiz, a ignorância ou o conhecimento errado 'eu sou este corpo'].**
+
+**_Sadhu Om_**: O Self, que é o fruto a ser alcançado através do inquérito ou _vichara_, é apenas o Silêncio desprovido do conhecimento errôneo 'eu sou o corpo'.
+
+
+
+
+
+
+**1184.** **O estado da experiência do único Silêncio não-dual [_eka advaita mouna anubhuti_], que é alcançado como a experiência do verdadeiro conhecimento ilimitado [_mey-jnana_], é apenas o brilho [de si mesmo] como o espaço vazio desprovido da falsa imaginação que é o surgimento da mente egoísta.**
+
+**_Sadhu Om_**: O Silêncio é apenas o estado em que o ego ou a mente, que é meramente uma falsa imaginação, foi destruído.
+
+**1185.** **Uma vez que o Silêncio do Self, que brilha através da mente pura [a existência-consciência pura que está desprovida de todos os pensamentos], sozinho se revela como a porta para a Libertação, mesmo que eles prossigam por qualquer caminho que seja agradável [para eles], essa porta sozinha é o refúgio final.**
+
+**_Sadhu Om_**: Por qualquer caminho que alguém possa seguir em direção ao estado de Libertação, só é possível finalmente entrar nesse estado através da porta do Silêncio – a porta da ausência do ego ou da mente. Sri Bhagavan costumava dizer: "Por qualquer estrada que se possa abordar a cidade da libertação, para entrar nessa cidade é preciso pagar a taxa do pedágio. Essa taxa do pedágio é a destruição do próprio ego ou mente."
+
+**1186.** **Atender incessantemente e com uma mente totalmente [concentrada] ao Self, que é a realidade perfeita não-dual, é o puro supremo Silêncio; por outro lado, a mera [despensadora] preguiça da mente letárgica não é nada além de uma [_tamasic_] ilusão defeituosa. Saiba assim.**
+
+**_Sadhu Om_**: A preguiça ou lentidão da mente não é o verdadeiro Silêncio. A auto-atenção é o verdadeiro e puro Silêncio.
+
+**1187.** **Saiba que o Silêncio interior – a força inabalável de louvar e adorar incessantemente, sem adorar, os Pés do Senhor Siva pela bela Suprema Palavra [_para-vak_], que é o puro discurso não surgido [isto é, adorar pela auto-atenção, o não surgimento do ego] – é a verdadeira e natural adoração [da realidade].**
+
+**1188.** **Apenas aqueles que conhecem sua realidade como Siva [o Self], são aqueles que estão imersos no estado perfeito e natural do Silêncio. [Portanto] tendo removido o ‘eu’-sentido em qualquer coisa que não seja Siva [isto é, tendo desistido da identificação com todos os adjuntos como o corpo], permaneça sem ação em Siva.**
+
+
+
+
+
+
+
+
+**1189.** **A glória do estado de Silêncio – no qual alguém se fundiu e morreu no verdadeiro princípio [_mey-tattva_], Deus, que é o Self sem ego, indagando 'Quem sou eu, a falsa primeira pessoa?' – é a natureza da prática da auto-entrega [_sarangati-dharma_].**
+
+**_Michael James_**: A verdadeira prática da auto-entrega é que alguém diminua através da pergunta 'Quem sou eu?' e, assim, fundir-se e permanecer no Self, o estado de Silêncio que está desprovido do menor surgimento do ego, o primeiro pensamento 'Eu sou isso'. Consulte também o verso 482.
+
+**_Sri Muruganar_**: Observe que a ideia deste verso, ou seja, que o Silêncio, que é o objetivo da auto-indagação, é a verdade da perfeita auto-entrega, também é expressa pelo grande Santo Vaishnavite Nammazhwar no seguinte verso: "Não me conhecendo, vivi como 'Eu' e 'meu' [como se 'Eu' fosse este corpo e esses pertences fossem 'meus']; Ó Senhor dos seres celestiais que é adorado pelos deuses, eu sou Você e meus pertences são Seus."
+
+**1190.** **De acordo com o _prarabdha_ [do _jiva_], o Supremo faz o _jiva_ agir até que ele [o _prarabdha_] chegue ao fim. Os esforços serão em vão devido ao _prarabdha_; mesmo [apesar de] obstruções, ele [o _prarabdha_] dará frutos. [Portanto] permanecer em silêncio [sem tentar se opor ao próprio _prarabdha_] é o melhor.**
+
+**_Sadhu Om_**: Este verso expressa o mesmo _upadesa_ que Sri Bhagavan deu à Sua mãe em 1898, quando ela estava implorando para Ele voltar a Madurai, ou seja, "De acordo com o destino [_prarabdha_] de cada pessoa, o Ordenador, estando em cada lugar, faz com que eles ajam. O que nunca deve acontecer não acontecerá, por mais esforço que se faça; o que deve acontecer não vai parar, por mais obstrução que se faça. Isso é certo. Portanto, permanecer em silêncio é o melhor." Este e o próximo verso podem ser lidos junto com os versos 150 e 151.
+
+**1191.** **Não é possível para ninguém fazer nada contrário à ordenação [_niyati_] de Deus, que tem a capacidade de fazer [qualquer coisa e] tudo. [Portanto] permanecer em silêncio aos Pés [de Deus], tendo abandonado [todas] as ansiedades da mente perversa, defeituosa e ilusória, é o melhor.**
+
+
+
+
+
+
+**1192.** **Se examinarmos [qual é] o método para terminar [para sempre] os movimentos da mente oscilante ou ego, que é [como] um reflexo na [onda] água, [descobriremos que] o método é para alguém permanecer em silêncio atendendo a si mesmo, e não para alguém atender a isso [a mente oscilante], que fará com que se caia do estado [do Self].**
+
+**_Sadhu Om_**: O único método para aquietar a mente errante permanentemente é para alguém atender silenciosamente a si mesmo [a primeira pessoa, 'Eu'], e não para alguém atender à mente errante, que não é nada mais do que um pacote de pensamentos sempre mudando pertencentes a segunda e terceira pessoas. No entanto, não ouvimos hoje em dia que muitos aspirantes a gurus estão aconselhando os aspirantes: "Continue observando os pensamentos da mente", como se este fosse um verdadeiro método de prática espiritual [_jnana-abhyasa_]? Como todos os pensamentos da mente não são nada mais do que pessoas de segunda e terceira ordem sem valor, prestar atenção a esses pensamentos é um método inútil que é recomendado apenas por Vedantinos que não possuem verdadeira experiência. Para revelar que este método não serve para aquietar [ou seja, destruir] a mente de forma permanente, Sri Bhagavan diz neste verso: "O [correto] método é para alguém permanecer silenciosamente atendendo a si mesmo [a primeira pessoa] sozinho, e não para alguém atender à mente oscilante [que é um pacote de objetos de segunda e terceira pessoas]". Consulte as pp. 101 a 102 de _The Path of Sri Ramana –_ Part One para uma explicação mais completa.
+
+No verso 17 do _Upadesa Undiyar_, Sri Bhagavan diz que, se alguém examinar vigilante a forma da mente, descobrirá que não há tal coisa como mente. Este ensinamento é mal interpretado por algumas pessoas como se significasse que alguém deveria atender ou observar a mente, ou seja, os pensamentos relacionados a objetos de segunda e terceira pessoas. No entanto, deve-se entender que sempre que Sri Bhagavan nos recomenda examinar a mente, Ele não quer dizer que devemos atender a pensamentos relacionados a segunda ou terceira pessoas, mas apenas que devemos atender e examinar a primeira pessoa ou ego, o pensamento raiz 'Eu'. Se assim prestarmos atenção ao pensamento 'Eu', ele automaticamente diminuirá e desaparecerá, enquanto se prestarmos atenção a outros pensamentos, eles multiplicarão e aumentarão em força. Portanto, no presente verso, Sri Bhagavan revela que, se atendermos aos pensamentos da mente oscilante, estaremos nos desviando de nosso estado natural de permanência no Self, no qual nenhuma segunda ou terceira pessoa pode ser conhecida.
+
+Ele não quer dizer que devemos atender a pensamentos relacionados a segunda ou terceira pessoas, mas apenas que devemos atender e examinar a primeira pessoa ou ego, o pensamento raiz 'Eu'. Se assim prestarmos atenção ao pensamento 'Eu', ele automaticamente diminuirá e desaparecerá, enquanto se prestarmos atenção a outros pensamentos, eles multiplicarão e aumentarão em força. Portanto, no presente verso, Sri Bhagavan revela que, se atendermos aos pensamentos da mente oscilante, estaremos nos desviando de nosso estado natural de permanência no Self, no qual nenhuma segunda ou terceira pessoa pode ser conhecida.
+
+
+
+
+
+
+
+
+**1193.** **Aqueles que têm conhecimento perfeito dizem que o estado de verdadeiro conhecimento [_mey-jnana-samadhi_], no qual se permanece sem 'Eu' [o ego], sozinho é _mauna-tapas_. Para experimentar [esse] silêncio [_mauna_], que é desprovido do pensamento do corpo [o sentimento 'Eu sou este corpo'], apegar-se ao Self no coração é o _sadhana_.**
+
+**1194.** **O puro Silêncio que irradia quando o sentido 'Eu' [o ego] é perdido por [um] permanecer no coração, conhecendo o próprio estado real de existência em vez de sair para valorizar e atender a outras coisas, sozinho é o limite do _Jnana_.**
+
+**_Michael James_**: O estado de _Jnana_ é aquele que é desprovido de qualquer limite e além de todas as definições. Se for para ser dado um limite ou definição para _Jnana_, é apenas o puro Silêncio que permanece brilhando após a destruição do ego.
+
+**1195.** **Uma vez que, assim como as atividades vistas dentro [e por] uma pessoa sonhando se tornam risíveis e inexistentes na perspectiva da pessoa acordada, até mesmo as atividades do _jiva_ [como seu nascimento e morte], que são uma imaginação [vista por ele] dentro dele mesmo, tornam-se inexistentes em [a verdadeira perspectiva despertada do] autoconhecimento, todas [essas atividades, incluindo sua servidão e libertação] são irreais [e são uma mera brincadeira de _maya_].**
+
+**1196.** **Quando o puro gracioso Supremo revela a natureza do Self, ele que estava no quarto escuro [de _ajnana_] se fundirá no Silêncio da permanência do Self, afogando-se em Siva-_bodha_ [conhecimento de Deus ou existência-consciência], que é a beleza da realidade.**
+
+**1197.** **Saiba que o Silêncio - que é o perfeito conhecimento da forma do Self e que brilha internamente quando o ego chega ao coração rejeitando todas as manobras dos pensamentos [_sankalpa-jalas_], que raramente são rejeitados - sozinho é a gloriosa Palavra Suprema [_para-vak_].**
+
+**_Sadhu Om_**: Este verso revela o verdadeiro significado da palavra _'para-vak'_, que foi usada por Sri Bhagavan nos versos B12, 706 e 715.
+
+
+
+
+
+**1198.** **Apenas aqueles que não escutaram atentamente a linguagem da Graça do Senhor [Silêncio], que é a Palavra Suprema [_para-vak_], [que surge] quando a mente errante se acalma, dirão que [o som de] uma flauta é doce, que [o som de] uma _veena_ é doce, ou que o discurso tagarela de seus próprios filhos tagarelas é muito doce.**
+
+**_Sadhu Om_**: Como a linguagem da Graça do _Sadguru_ - a _para-vak_ ou Silêncio que brilha no coração quando a mente errante se acalma e é destruída ali - concede a bem-aventurança imortal e perfeita, é mais doce do que até mesmo o som mais doce deste mundo.
+
+Porque o Sábio Tiruvalluvar escreveu o _Tirukkural_ para dar conselhos a todos os tipos de pessoas de acordo com o próprio nível de maturidade, no verso 66 [no capítulo sobre ter filhos, que vem na seção que trata da vida dos chefes de família] ele disse, "Só aqueles que não ouviram o discurso tagarela de seus próprios filhos, dirão que [o som de] uma flauta é doce ou que [o som de] uma _veena_ é doce". Mas apenas porque Tiruvalluvar disse isso, não devemos de forma alguma chegar à conclusão de que ouvir o discurso tagarela de seus próprios filhos é a experiência mais doce de todas. Como ouvir o tagarelar de crianças pode dar a alguém apenas um prazer transitório, Sri Bhagavan se dirige a aspirantes que estão envolvidos na prática espiritual mais elevada e diz neste verso que a doçura do supremo Silêncio do _Sadguru_, que está sempre brilhando dentro do coração, é maior e mais real do que a doçura do som de seus filhos tagarelas.
+
+No entanto, os leitores não devem concluir a partir deste verso que Tiruvalluvar foi um daqueles "que não ouviram atentamente a linguagem da Graça do Senhor, que é a Palavra Suprema, [que surge] quando a mente errante se acalma", mas devem entender que, como ele nunca teve filhos, ele compôs aquele verso apenas para o bem dos chefes de família que buscam prazeres mundanos.
+
+**1199.** **Se o ruído dos pensamentos [_sankalpas_] surgindo [incessantemente] dentro de si não se acalmar, o estado inefável de Silêncio não será revelado. Aqueles cujos pensamentos [_vrittis_] se acalmaram dentro, não deixarão o forte e perfeito [estado de] Silêncio mesmo em um grande campo de batalha.**
+
+**_Sadhu Om_**: Assim como o som doce da música suave e melodiosa não pode ser ouvido em um lugar onde há um grande ruído como o burburinho de um mercado ou o rugido das ondas de um oceano, assim o doce ensino silencioso [_mouna-upadesa_] do _Sadguru_, que está sempre acontecendo profundamente dentro do coração, não pode ser ouvido por pessoas comuns por causa do ruído dos milhões de pensamentos que estão incessantemente surgindo em suas mentes. Por outro lado, por causa da força de Seu Silêncio, mesmo o grande ruído do campo de batalha permanecerá desconhecido para um _Jnani_, que aniquilou a mente ao destruir todos os pensamentos ou _sankalpas_. Como o _ajnani_ atende apenas ao burburinho dos pensamentos, ele não percebe o Silêncio sempre brilhante dentro, enquanto porque o _Jnani_ atende apenas ao Silêncio dentro, Ele não sabe nem mesmo o maior ruído que pode estar acontecendo do lado de fora.
+
+
+
+
+
+**1200.** **Diga-me, não é o silêncio vocal observado por aqueles que não se envolvem na autoinvestigação [_jnana-swavichara_] e que não conhecem o verdadeiro objetivo, que é o Silêncio [que surge] quando o ego, 'Eu sou o corpo carnal e sujo', se acalma e chega ao coração, um [mero] esforço mental [_chitta-vyapara_]?**
+
+**_Sadhu Om_**: O esforço daqueles que meramente observam o silêncio vocal ao invés de se envolverem na autoinvestigação ou autoatenção, que é o verdadeiro estado de silêncio da mente, é inútil.
+
+**1201.** **A vida do Eu - o verdadeiro conhecimento [_mey-jnana_] que surge desprovido do senso de ego devido ao afogamento [do ego] em sua fonte quando a loucura de desejo pelos objetos de sentido pequenos, ilusórios e enganosos foi completamente destruída - é a única que pode [verdadeiramente] satisfazer a mente.**
+
+**1202.** **Aqueles cujos corações estão transbordando de alegria ao experimentar o sempre novo néctar [_amrita_] do Eu, que brilha intensamente no Silêncio puro, não serão prejudicados no mundo ao experimentar os objetos de sentido insignificantes, que dão um pequeno prazer louco causado pela ilusão mental.**
+
+**1203.** **A realidade que é muito claramente conhecida pelos Sábios como o objetivo [_siddhanta_] de todos os _Vedas_ e _Agamas_, e a observância da realidade [_sat-achara_] recomendada por todos os _dharma-upadesas_, é [nada mais do que] Silêncio, o estado de suprema paz.**
+
+**_Sadhu Om_**: O objetivo final que é ensinado em todos os _Vedas_, _Agamas_, _dharma-sastras_ e outras escrituras é apenas o estado de Silêncio perfeito [_pari-purna-mauna_], que não é nada além da destruição da mente [_mano-nasa_]. Consulte a obra _Quem sou eu?_ onde Sri Bhagavan diz que todas as escrituras concluem finalmente que para alcançar a liberação deve-se acalmar a mente.
+
+**1204.** **O completo abandono de todos [os outros três _purusharthas_] começando com _dharma_, é o glorioso estado de paz, que é a natureza da libertação [o quarto _purushartha_, o único verdadeiro _purushartha_]. [Portanto] desistindo completamente [de todos] o pensamento dos outros [os três falsos _purusharthas_], apegue-se apenas ao Silêncio, o conhecimento do supremo Eu, que é Siva.**
+
+**_Sadhu Om_**: O verdadeiro _purushartha_ ou objetivo da vida humana é o estado pacífico da liberação, que só pode ser alcançado quando se desiste completamente do desejo pelos outros três chamados _purusharthas_, a saber, _dharma_, _artha_ e _kama_. Portanto, deve-se abandonar até mesmo o pensamento desses outros três _purusharthas_ e deve-se firmemente permanecer no Silêncio, o estado supremo do Autoconhecimento, que é a única liberação. Consulte aqui o verso 8 desta obra.
+
+
+
+
+
+
+
+
+
+**54 Suprema Devoção**
+
+_(Para-Bhakti Tiran)_
+
+**1205.** **Quando alguém se rendeu completamente aos Pés de Shiva e se tornou da natureza do Eu, a [resultante] abundante paz, na qual não há nem o menor espaço dentro do coração [para alguém] para fazer qualquer reclamação sobre [seus] defeitos e deficiências, só isso é a natureza da suprema devoção.**
+
+**_Sadhu Om_**: Se alguém se rendeu completamente a Deus, será impossível para essa pessoa orar até mesmo pela libertação. Refira-se aqui ao verso 7 de _Sri Arunachala Navamani-malai._
+
+**1206.** **No coração que existe e brilha como a verdadeira e perfeita felicidade, tendo se tornado um alvo para a Graça de Deus, pode haver as pequenas deficiências da mente, que são um sinal do sentido do ego carnal [o sentimento 'Eu sou este corpo carnal'], que é ignorância?**
+
+**1207.** **Apenas enquanto existem outros pensamentos no coração, pode haver um pensamento de Deus concebido pela própria mente. A morte até mesmo desse pensamento [de Deus] devido à morte de [todos] os outros pensamentos [incluindo o pensamento raiz 'Eu'], sozinho é o verdadeiro pensamento [de Deus], o pensamento impensado.**
+
+**_Sadhu Om_**: Só enquanto houver outros pensamentos na mente de alguém, pode-se pensar ou meditar sobre Deus. Mas o verdadeiro pensamento de ou meditação sobre Deus, que é o "pensamento impensado", é apenas aquele estado em que todos os outros pensamentos, incluindo o primeiro pensamento 'Eu sou este corpo', morreram através da auto-entrega.
+
+Só depois do surgimento do ego ou pensador, o primeiro pensamento 'Eu sou o corpo', outros pensamentos podem surgir sobre o mundo e Deus. Depois do surgimento desses pensamentos, já que se sente então que Deus é diferente de si mesmo, só se pode meditar sobre Ele como um objeto de pensamento. Mas quando o ego, o pensamento raiz 'Eu', morre através da auto-entrega, não só todos os pensamentos sobre o mundo desaparecerão, mas até mesmo o pensamento de Deus, que tem a mesma realidade [_sama-satya_] que os outros pensamentos, também desaparecerá. Este estado, que está desprovido de todo pensamento do mundo, alma e Deus, e no qual se brilha como a suprema realidade livre de pensamentos, sozinho é a verdadeira meditação ou _Brahma-dhyana_.
+
+
+
+
+
+???
+**1208.** **Se você perguntar, "Diga-me, por que 'ser ainda' [o estado de mero ser descrito no verso anterior], que está desprovido de até mesmo um único pensamento emergente, é chamado de 'pensamento' [ou 'meditação']?", saiba que é por causa do brilho da consciência sempre inesquecível da realidade ['Eu sou'].**
+
+**_Sadhu Om_**: Pensar e esquecer são um par de opostos. Como a consciência sempre inesquecível da realidade ['Eu sou'] brilha perfeitamente no estado de 'ser ainda' - o estado de auto-atenção ou auto-permanência - esse estado às vezes é referido como um estado de 'pensamento' ou 'meditação' [_dhyana_]. Isto é, como a realidade não é esquecida nesse estado livre de pensamentos, é descrita de forma solta como um estado de 'pensar em' ou 'meditar sobre' a realidade. É só neste sentido que Sri Bhagavan descreveu o estado de auto-atenção como 'pensamento do Eu' [_atma-chintanai_] em _Quem sou eu?_ e no verso 482 desta obra.
+
+**1209.** **O amor que brota dentro, no lugar [o coração] onde a paz clara é alcançada devido à luz [de _Jnana_], que surge quando a mente delusiva, que está cheia da escuridão venenosa [_ajnana_], é destruída e quando o coração se torna aberto como o espaço, só isso é o verdadeiro amor [_meybhakti_] por Shiva.**
+
+**1210.** **Apenas aqueles afortunados que vivem sempre dependendo apenas do Eu [que é a verdadeira forma de Deus] como o melhor refúgio, alcançarão sua própria realidade. Para os outros, a libertação, essa Suprema Morada graciosa e infindável [_param-dhama_], é inatingível por qualquer meio que seja.**
+
+**1211.** **Os verdadeiros devotos que de todas as formas permanecem subjugados [_adhina_] apenas ao Eu [Deus], [só] são _tadiyars_ [aqueles que pertencem ao Senhor]. Saiba que apenas para eles [esses verdadeiros devotos], em quem há um amor incessante, a Suprema Morada [_param-dhama_], que triunfa como transcendente, será uma realização completa.**
+
+**55 A Realização de _Jnana_**
+
+_(Jnana-Siddhi Tiran)_
+
+**1212.** **Embora se diga que _siddhis_ são muitos e diferentes, _Jnana_ sozinho é o mais alto desses muitos _siddhis_ diferentes, [porque] aqueles que alcançaram outros _siddhis_ desejarão _Jnana_, [enquanto] aqueles que alcançaram _Jnana_ não desejarão outros [_siddhis_]. [Portanto] aspire [apenas para _Jnana_].**
+
+
+
+
+
+**1213.** **Quem alcançou o Eu [_atma-swarupa-siddha_] é quem alcançou todos os outros [_siddhis_] juntos, já que aquele [Auto-realização ou _atma-siddhi_] é o mais alto _siddhi_. Assim como [todos] os planetas estão dentro do espaço, [sejam] manifestos ou não manifestos, todos eles [todos os _siddhis_] estarão em quem alcançou o autoconhecimento [_atma-jnana-siddha_].**
+
+**1214.** **Se ao mergulhar profundamente se alcança o fundo do coração, o senso de baixeza [o sentimento 'Eu sou um _jiva_ insignificante'] irá deixar e perecer, e a vida de ser o Senhor de _Jnana_, aos pés de quem até o rei do céu [Indra] irá curvar sua cabeça, virá a ser vivida [por alguém].**
+
+### 56 Brahman
+
+_(Brahman Tiran)_
+
+**1215.** **O princípio real silencioso e feliz [_Brahman_] sozinho é o palco ou base para _Maya_ - que é o grande poder da consciência [_maha-chit-sakti_], que não é outra senão o princípio real perfeito - para jogar [sua] jogo para sempre, tendo os três princípios [o mundo, a alma e Deus] como [seus] brinquedos. Que maravilha é!**
+
+**_Sadhu Om_**: A partir deste verso, devemos entender que, além de _Brahman_, _Maya_ não tem existência real própria. Os três princípios, o mundo, a alma e Deus, são os brinquedos com os quais ela encena seu jogo ilusório [_maya-lila_] de criação, sustentação e destruição. Mas o jogo que ela joga com esses três não poderia acontecer se não tivesse o Eu ou _Brahman_, a realidade perfeita, como sua base. A verdade de que o Eu permanece para sempre como a base na qual _Maya_ joga, é o que é indicado pelos _Saktas_ quando eles figurativamente retratam a Deusa Kali dançando no corpo deitado do Senhor Shiva. O que deve ser entendido aqui é que a aparência do mundo, da alma e de Deus, e de sua criação, sustentação e destruição, são todos um jogo irreal de _Maya_, que não tem realidade própria. É com o ensinamento dado neste verso que o primeiro capítulo da segunda parte de _O Caminho de Sri Ramana_ começa.
+
+
+
+
+
+**1216.** **Se eles veem os muitos filmes em movimento, eles não veem a tela única e imóvel, a base. Aqueles que veem a tela imóvel não veem nenhum dos filmes. Essa é a natureza de um cinema.**
+
+**_Michael James_**: Quando as imagens são projetadas em uma tela de cinema, elas efetivamente escondem aquela tela. Da mesma forma, quando as imagens de nomes e formas - o mundo, a alma e Deus - são vistas, elas efetivamente escondem sua base, o Self ou _Brahman_. Portanto, assim como a tela é vista como ela é apenas quando as imagens não são vistas, assim o Self é visto como ele é apenas quando o mundo, a alma e Deus não são vistos. Portanto, se o mundo, a alma e Deus são vistos, o Self não será visto, e se o Self é visto, o mundo, a alma e Deus não serão vistos. Veja também os versos 46, 876 e 877, onde a mesma verdade é expressa.
+
+**1217.** **Em um cinema, sem a tela imóvel não pode haver nenhum filme em movimento. Quando examinada, aquela única tela imóvel é diferente dos filmes em movimento na tela.**
+
+**1218.** **A tela, a base imóvel, sozinha é _Brahman_ [ou Self]. A alma, Deus e os mundos são apenas os filmes em movimento nessa tela imóvel. [Portanto] saiba que tudo o que é visto [nessa tela] é uma ilusão [_maya_].**
+
+**_Michael James_**: Os três versos acima revelam que o mundo, a alma e Deus só podem ser vistos quando _Brahman_ não é visto, mas que sem _Brahman_ não pode haver nenhum mundo, alma ou Deus, e que, embora _Brahman_ seja assim a realidade ou base na qual eles aparecem, é diferente deles. Portanto, este verso conclui tirando a inferência, “Tudo o que é visto (ou seja, o mundo, a alma e Deus) é uma ilusão”. Compare aqui o verso 160 e 1047 e 1049.
+
+**1219.** **Aquele que, no mundo das imagens, pensa e anseia não apenas pelo mundo das imagens - que se move com almas de imagem, que se movem como ele mesmo - mas também pelo Deus da imagem [que cria, sustenta e destrói o mundo e as almas das imagens], é apenas a alma [_jiva_], que é uma imagem em movimento.**
+
+**_Sadhu Om_**: O mundo, a alma e Deus são meros filmes em movimento; eles não podem ser a tela, a base. A alma ou o homem, que é uma entre as imagens em movimento, vê o mundo e Deus, os outros dois entre as imagens em movimento, e sofre tendo gostos ou desgostos por eles. Ou seja, muitas pessoas veem e desejam os objetos do mundo e sofrem com o desejo de obtê-los, enquanto outras sofrem com o desejo de ver e alcançar Deus. O primeiro tipo de pessoas é chamado de pessoas mundanas, enquanto o segundo tipo é chamado de devotos de Deus. No entanto, este verso ensina que, uma vez que ambos os tipos de desejo e sofrimento que as pessoas passam fazem parte do jogo de _maya_, eles não têm significado algum e são ambos apenas ocorrências irreais resultantes da ignorância de não conhecer o Self ou _Brahman_, a suprema realidade que é a base na qual _maya_ joga assim.
+
+
+
+
+
+
+
+
+
+
+**1220.** **Para o pensamento [_chitta-vritti_] que sofre pensando em si mesmo - que é [em sua verdadeira natureza nada além de] a tela, a base imóvel - como uma imagem em movimento [a alma ou _jiva_], a coisa adequada a fazer é permanecer firmemente no estado de Silêncio, tendo completamente diminuído [através da auto-atenção].**
+
+**_Sadhu Om_**: O _chitta-vritti_ mencionado neste verso é a alma, o ego ou o pensamento 'eu' [_aham-vritti_], cuja verdadeira natureza é apenas o Self, a base imóvel, mas que erroneamente se identifica como um corpo, uma das imagens em movimento na tela, e que assim vê e deseja as outras imagens, o mundo e Deus.
+
+No verso anterior, até mesmo o nobre esforço de um devoto que anseia ver e alcançar Deus foi considerado falho, não é? Quando é assim, não é necessário ensinar a essa nobre alma o que é apropriado para ela fazer? Portanto, neste verso Sri Bhagavan ensina que a coisa mais nobre e melhor para a alma fazer é diminuir e permanecer firmemente no estado de Silêncio, conhecendo e permanecendo como o Self, a base imóvel na qual as imagens em movimento do mundo, alma e Deus aparecem. Uma vez que [como afirmado no verso 1216] quem vê a tela não pode ver as imagens, quando se conhece a própria verdadeira natureza, não se verão as imagens do mundo, alma e Deus, e assim se alcançará a suprema paz que é desprovida da ilusão de estar louco por essas imagens.
+
+**55 A Natureza da Libertação**
+
+_(Mukti Uru Tiran)_
+
+**1221.** **O conhecimento da própria verdadeira natureza - que permanece no coração quando até mesmo o pensamento de ser salvo da escravidão é destruído devido à remoção completa do pensamento dessa escravidão na mente que se vê [analisando] assim 'Quem sou eu que estou preso?' - só isso é a natureza da libertação.**
+
+**_Michael James_**: Quando a mente vê sua própria verdadeira natureza ao questionar 'Quem sou eu que estou preso?', ela perceberá que na verdade nunca esteve presa. Portanto, como o pensamento de escravidão é assim completamente destruído, o pensamento contrário de libertação também desaparecerá, porque a escravidão e a libertação são um díade [_dvandva_] ou par de opostos, cada um dos quais tem um significado por causa do outro. Este verso parafraseia e explica a ideia expressa por Sri Bhagavan em _Quem sou eu?_ quando Ele disse, "Questionando 'Quem sou eu que estou em escravidão?', e [assim] conhecendo a própria natureza real, só isso é a libertação".
+
+
+
+
+
+
+
+**1222.** **Aquilo que é a paz repleta de consciência [_bodhamaya-santa_] que brilha como aquilo que permanece [quando os pensamentos de escravidão e libertação são assim removidos pela auto-investigação], é _Sada-sivam_ [a realidade eterna]. O Silêncio sem ego [que brilha] como [o verdadeiro conhecimento] ‘Aquele [_Sada-sivam_], que é o Supremo sempre existente, é "Eu"’, é a finalidade da libertação.**
+
+**_Sadhu Om_**: O verso 40 de _Ulladu Narpadu Anubandham_ deve ser lido e compreendido aqui.
+
+**1223.** **Desistir de tudo [permanecendo firmemente] sem ser abalado do estado [de pacífica auto-permanência] por causa da frouxidão [_pramada_] na [quele estado de] paz, que surge devido à investigação do Self, que é a consciência básica na qual tudo [o mundo, a alma e Deus] aparece - só isso é a libertação.**
+
+**1224.** **A menos que o conhecimento objetivo [a mente que conhece objetos de segunda e terceira pessoa] seja completamente destruído, o apego ao mundo, que é formado pelos sentidos, que amarram a alma, não pode ser cortado. A destruição desse conhecimento [objetivo] por [seu] permanecer no estado do Self, que é _nishtha_, só isso é a natureza da libertação que se desfruta.**
+
+**1225.** **Apenas ser [como 'Eu sou'] - tendo conhecido o caminho que destrói o apego, o inimigo que é a mãe da escravidão do nascimento [e morte], que dá espaço para o riso [ou seja, que é ridicularizado pelos Sábios], e tendo alcançado essa desapego - só isso é libertação.**
+
+**_Sadhu Om_**: “O caminho que destrói o apego, o inimigo” é [como mostrado no verso anterior] permanecer no Self, tendo abandonado o conhecimento objetivo, em outras palavras, atentar apenas para o Self e não para objetos de segunda ou terceira pessoa. "Apenas ser" significa permanecer quieto com a mera consciência 'Eu sou' e sem conhecer qualquer outra coisa.
+
+**1226.** **A afirmação, “A conquista de uma vida de pura autoconsciência, que brilha apenas como existência ['Eu sou'], é o estado de libertação, que é a luz do conhecimento supremo [_para-jnana_]”, é o veredicto firme dos Videntes da realidade, que é a coroa dos _Vedas_.**
+
+
+
+
+
+
+**1227.** **Não existe criação, nem também destruição, o oposto [da criação]; não há pessoas em cativeiro, e também não há pessoas em absoluto praticando _sadhana_; não há pessoas que buscam o mais alto [ou seja, a libertação], e também não há pessoas que tenham alcançado a libertação. Saiba que isso sozinho é a suprema verdade [_paramartha_]!**
+
+**_Sadhu Om_**: Este verso é adaptado do _sloka_ sânscrito, "_Na nirodha na cha utpattih na baddhah na cha sadhakah, Na mumukshuh na vai muktah iti esha paramarthata_", que Sri Bhagavan frequentemente citava, e que está incluído no _Amritabindu Upanishad [Verso 10]_, no _Atma Upanishad [verso 30]_, nas _Mandukya Karikas [2.32]_ e no _Vivekachudamani [verso 574]_. Depois de ver este verso de quatro linhas composto por Sri Muruganar, Sri Bhagavan expressou a mesma ideia no seguinte verso de duas linhas.
+
+**B28. Não há criação [criação], destruição, cativeiro, desejo de cortar [cativeiro], esforço [feito para a libertação] para aqueles que alcançaram [a libertação]. Saiba que isso é a suprema verdade [_paramartha_]!**
+
+**_Sadhu Om_**: Criação, destruição, cativeiro, o desejo de cortar o cativeiro, aquele que busca a libertação e aquele que alcançou a libertação, todos existem apenas na perspectiva da mente. Portanto, todos têm o mesmo grau de realidade [_sama-satya_] que a mente que os conhece. Mas como Sri Bhagavan revela no verso 17 de _Upadesa Undiyar_, quando a forma da mente é cuidadosamente escrutinada, será encontrado que não há tal coisa como mente em absoluto. Portanto, quando a mente é assim encontrada para ser inexistente, toda a falsa aparência de criação, destruição, cativeiro, libertação e assim por diante, também será encontrada para ser completamente inexistente. Portanto, a verdade absoluta experimentada por um _Jnani_, que conheceu o Self e que assim percebeu a inexistência da mente, é apenas _ajata_ - a verdade de que nunca houve, é ou será qualquer criação, nascimento ou devir.
+
+As cinco funções divinas [_panchakrityas_], a saber, criação, sustentação, destruição, velamento e Graça, são todas coisas que estão preocupadas apenas com o mundo, a alma e Deus, que [como revelado no verso 1215] são meros brinquedos de _maya_. Portanto, tudo o que parece ser real dentro do alcance dessas cinco funções, não pode ser a verdade absoluta. Como o cativeiro, a libertação, o _sadhaka_, o _sadhana_, a realização e assim por diante, pertencem apenas ao mundo, à alma e a Deus, todos eles são irreais. Isto é, como o mundo, a alma e Deus são brinquedos de _maya_, todos os conhecimentos a eles relacionados são irreais. [Ver _Ulladu Narpadu_ verso 13, "Conhecimento de multiplicidade é ignorância, que é irreal".] Quando é assim, apenas aquele conhecimento que brilha transcendendo _maya_, e que é um conhecimento não de muitos, mas apenas de um, pode ser a verdade suprema e absoluta [_paramartha_]. A natureza exata dessa verdade suprema só pode ser conhecida por _Jnanis_, que firmemente permanecem como aquela única realidade que tudo transcende. A experiência deles sozinhos pode ser considerada a verdade absoluta.
+
+Devemos recordar aqui que no verso 100 desta obra, é afirmado que, embora Sri Bhagavan tenha ensinado diversas doutrinas diferentes para se adequar à maturidade de cada um que veio até Ele, Ele revelou que Sua própria experiência era apenas _ajata_. Para mostrar que Sua própria experiência também era a experiência dos antigos _Rishis_ que deram os _Upanishads_, Sri Bhagavan costumava citar o _sloka_ do qual o presente verso é uma tradução.
+
+O significado literal da palavra _‘maya’_ é _‘ma-ya’_ [o que não é], porque quando o autoconhecimento surge, a atividade [_vritti_] de _maya_, ou seja, seu referido jogo, será encontrada para ser completamente inexistente. Assim como a cobra inexistente se funde e se torna uma com a corda sempre existente assim que essa corda é vista como é, assim a _maya_ inexistente se fundirá e se tornará uma com o Self sempre existente e autoiluminado assim que esse Self for conhecido como é. Portanto, embora _maya_ não seja outra coisa senão _Brahman_ ou Self, e embora se diga que é sem começo como _Brahman_, ela tem um fim, já que é encontrada para ser inexistente na clara luz do autoconhecimento. Portanto, nós [Self], que permanecemos brilhando mesmo no estado em que _maya_ é assim encontrada para ser inexistente, somos a verdade suprema e absoluta [_paramartha_].
+
+Assim, como a conclusão final desta obra, _Guru Vachaka Kovai,_ que também é conhecida como '_A Luz da Verdade Suprema_' [_paramartha dipam_], Sri Bhagavan revela que Self - que sempre brilha sem começo ou fim e sem qualquer mudança como a única, existência-consciência-felicidade não dual [_sat-chit-ananda_] na forma 'Eu sou' - sozinho é a verdade suprema [_paramartha_], e que tudo o mais é uma mera brincadeira de _maya_ e, portanto, completamente irreal e inexistente.
+
+No entanto, esta verdade absoluta não pode ser compreendida por pessoas que estão sob a influência de _maya_ e, portanto, são iludidas pelo defeito do ego. Portanto, ignorando esta verdade suprema, elas imaginam muitos objetivos diferentes, como imortalizar o corpo, tornar o céu na terra, ir para mundos celestiais, alcançar poderes [_siddhis_]  e assim por diante, e acreditando que tais objetivos são a verdade suprema [_paramartha_], em nome do _yoga_ ou religião, elas traçam diferentes caminhos para alcançar esses diferentes objetivos, escrevem livros volumosos sobre seus próprios objetivos e métodos, e se envolvem em argumentos elaborados sobre eles. No entanto, todos esses esforços são inúteis, pois são possíveis apenas dentro do alcance do jogo irreal de _maya_. Referir-se aqui ao verso 34 de _Ulladu Narpadu_, onde Sri Bhagavan diz que discutir sobre a natureza da realidade, em vez de se fundir dentro e conhecê-la como é, é apenas ignorância nascida de _maya_.
 
 
 
