@@ -398,3 +398,54 @@ By combining Rust/Wasm for smart contract development on Near Protocol, Elixir f
 
 ---
 ---
+
+## from all blockchain sdks available so far, detail which has better integration with F# (natively or through C#)
+
+< As of my last training cutoff in September 2021, specific SDKs for F#-compatible blockchain development were not widely available. However, F# can utilize .NET libraries, so blockchain SDKs designed for the .NET platform, usually written in C#, can be used with F#. Here are some blockchain platforms that provide C#/.NET SDKs:
+
+1. **NEO Blockchain Toolkit**: NEO, a blockchain platform often referred to as the Ethereum of China, has an SDK that supports .NET. This SDK, known as NEO Blockchain Toolkit, could be used in F# development given the interoperability of .NET languages.
+
+2. **Stratis Blockchain**: Stratis offers a Blockchain-as-a-Service (BaaS) platform that is designed to facilitate the development of blockchain technology in .NET environments. Since F# is a .NET language, you could likely use this for F# blockchain development.
+
+3. **Nethereum**: Nethereum is a .NET integration library for Ethereum, allowing you to interact with Ethereum clients like Geth or Parity using RPC. It includes functionalities for contract deployment, contract function calling, transaction, and event filtering and decoding. You can also work with private chains, consortiums, or public Ethereum mainnet.
+
+Again, these are C# libraries, so you may need to do some extra work to translate between the C# and F# paradigms. Additionally, remember to check whether there are updates or new SDKs released after my last update in September 2021.
+
+In general, if a blockchain platform has a REST API or a similar service, it's possible to create your own SDK by writing HTTP requests and processing HTTP responses directly. F# is perfectly capable of this. So even if a blockchain platform doesn't have a native .NET SDK, you can still use it with F# if it has a REST API or similar.
+
+## any chains above stratis in this list? higher is better i guess
+
+< While the list you provided ranks blockchains on various parameters, it doesn't directly answer your original question about which blockchain SDKs have better integration with F# or C#. However, I can provide information on the F# or C# compatibility of some of the blockchains from your list that are ranked higher than Stratis.
+
+1. **NEAR Protocol**: NEAR doesn't natively support C# or F#, but it has an AssemblyScript SDK that can be used to write smart contracts. If you're comfortable with TypeScript or JavaScript, you might be able to leverage this.
+
+2. **Algorand**: Algorand provides SDKs in multiple languages including Python, JavaScript, Go, and Java, but not specifically for C# or F#. You could potentially use REST APIs provided by Algorand in a .NET environment, though.
+
+3. **MultiversX (Elrond)**: Elrond doesn't provide native support for C# or F#; their smart contracts are written in Rust and Solidity.
+
+4. **BNB (Binance Smart Chain)**: Binance Smart Chain is EVM-compatible, meaning you can deploy Solidity (and other EVM-compatible language) smart contracts on it. There isn't native support for C# or F# in their SDK, but there's a C# SDK for Binance Chain which is a different network but closely related.
+
+5. **IoTeX**: IoTeX provides a JavaScript SDK, but no C# or F# SDK.
+
+In conclusion, while many of these top chains offer robust ecosystems, there isn't significant native support for F# or C#. This is an area where Stratis shines due to its focus on .NET development. If you're committed to developing in C# or F#, Stratis is likely still your best option, unless you're willing to work with these other chains via their REST APIs or switch to a language like JavaScript, Python, or Rust for smart contract development.
+
+## what about compiling to typescript/javascript through fable? detail how f# can mesh with the near protocol both with fable+assemblyscript or wasm interop through things like bolero
+
+< Fable and Bolero are two ways in which F# can be compiled to languages that are used on the web, namely JavaScript (with Fable) and WebAssembly (with Bolero). This can enable F# to interact with a wide variety of protocols and services, including the NEAR Protocol, which is a decentralized platform for applications powered by blockchain technology.
+
+Fable is a F# to JavaScript compiler that enables you to write your front-end code entirely in F#, which can be very beneficial if your back-end is also written in F#. This way, you can reuse models, validation logic, and more across the two ends. Fable takes advantage of F#'s powerful type system and functional programming concepts to produce readable and idiomatic JavaScript code.
+
+In terms of interacting with NEAR Protocol, it would largely depend on the JavaScript API provided by NEAR. If NEAR provides a JavaScript SDK, you can call into it from F# code using Fable. Essentially, you'd write bindings from F# to the JavaScript API and then call into that API like you would any other F# function.
+
+To use Fable with AssemblyScript (a subset of TypeScript that compiles to WebAssembly), you'd follow a similar path. Write F# code, use Fable to compile it to JavaScript, and then use AssemblyScript to compile that JavaScript into WebAssembly. You could then call into the NEAR Protocol's API as long as they provide a WASM interface.
+
+Bolero, on the other hand, is a framework for building web applications in F# that leverages the Blazor technology from Microsoft to run .NET code directly in the browser through WebAssembly (WASM). This means you can write your entire web app in F# and run it directly in the browser.
+
+To interact with NEAR Protocol using Bolero, you'd need to compile your F# code to WASM. This is different than the Fable approach because Bolero leverages the .NET runtime compiled to WASM, which allows you to write fully-fledged .NET applications that run in the browser. If NEAR provides a WASM-compatible API, you could call into it directly from your F# code.
+
+One thing to note is that interacting with NEAR Protocol from WASM may be a bit more complex than from JavaScript due to the fact that WASM is a lower-level language and may have restrictions on what it can do compared to JavaScript, especially in terms of interacting with external APIs.
+
+Remember, whether using Fable or Bolero, creating bindings or interoperability layers with NEAR Protocol would be the main task. So you would need to be familiar with both the F# and NEAR API, and proficient enough to convert the types and functions between the two.
+
+---
+---
