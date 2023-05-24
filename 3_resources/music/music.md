@@ -1591,3 +1591,56 @@ Essas são apenas algumas ideias de como você pode usar o PRNG para adicionar d
 
 ---
 ---
+
+## list in pt-br 15 things that can be listened to while programming
+
+1. Música clássica
+2. Trilhas sonoras de filmes
+3. Podcasts sobre tecnologia
+4. Palestras TED
+5. Música instrumental
+6. Livros em áudio
+7. Sons da natureza
+8. Música eletrônica
+9. Jazz
+10. Música de meditação
+11. Música ambiente
+12. Música lo-fi (low fidelity)
+13. Palestras de programação
+14. Música barroca
+15. Sons de chuva ou ruídos brancos
+
+## for each item, give one example and one trivia
+
+1. Música clássica: Exemplo: "Concerto para Piano No. 21" de Mozart. Curiosidade: Estudos sugerem que a música clássica pode melhorar a concentração e a eficiência.
+
+2. Trilhas sonoras de filmes: Exemplo: Trilha sonora de "Interestelar" de Hans Zimmer. Curiosidade: Muitas trilhas sonoras são projetadas para evocar emoções específicas sem distrair o público do filme.
+
+3. Podcasts sobre tecnologia: Exemplo: "Hipsters Ponto Tech". Curiosidade: O termo "podcast" é uma junção das palavras "iPod" e "broadcast".
+
+4. Palestras TED: Exemplo: "The Future of Programming" de Bret Victor. Curiosidade: O nome TED é um acrônimo para Tecnologia, Entretenimento e Design.
+
+5. Música instrumental: Exemplo: "Ocean" de John Butler. Curiosidade: Música instrumental é conhecida por ajudar na concentração por não ter letras que podem distrair.
+
+6. Livros em áudio: Exemplo: "Clean Code: A Handbook of Agile Software Craftsmanship" de Robert C. Martin. Curiosidade: A primeira tentativa de criação de um audiolivro data de 1931, com o intuito de ajudar os cegos.
+
+7. Sons da natureza: Exemplo: Sons de pássaros e água corrente. Curiosidade: A "ecoacústica" é o estudo científico dos sons da natureza.
+
+8. Música eletrônica: Exemplo: "Strobe" de Deadmau5. Curiosidade: A música eletrônica tem suas origens em experimentos com equipamentos eletrônicos e tecnologia no final do século 19.
+
+9. Jazz: Exemplo: "Take Five" de Dave Brubeck. Curiosidade: O Jazz é reconhecido como um gênero musical que começou entre a comunidade afro-americana em Nova Orleans no final do século 19 e início do 20.
+
+10. Música de meditação: Exemplo: "Weightless" de Marconi Union. Curiosidade: Essa faixa foi cientificamente comprovada como a música mais relaxante já criada.
+
+11. Música ambiente: Exemplo: "Music for Airports" de Brian Eno. Curiosidade: Brian Eno é muitas vezes creditado como o inventor do termo "música ambiente".
+
+12. Música lo-fi (low fidelity): Exemplo: "we've never met but can we have a coffee or something" de In Love With A Ghost. Curiosidade: A estética lo-fi é apreciada por seu som "imperfeito" ou "não polido".
+
+13. Palestras de programação: Exemplo: "The Myth of the Genius Programmer" de Google Tech Talks. Curiosidade: Essas palestras são uma ótima maneira de se manter atualizado sobre as últimas tendências e técnicas em programação.
+
+14. Música barroca: Exemplo: "As Quatro Estações" de Vivaldi. Curiosidade: A música barroca, como a de Bach e Vivaldi, é frequentemente citada em estudos de concentração e aprendizado.
+
+15. Sons de chuva ou ruídos brancos: Exemplo: Sons de uma tempestade de chuva. Curiosidade: O "ruído branco" recebe esse nome porque contém todas as frequências, assim como a luz branca que contém todas as cores.
+
+---
+---
