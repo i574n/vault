@@ -3,6 +3,11 @@
 
 ```ps1
 yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=<ID>
+
+
+for i in *.mp3; do echo "file '$i'" >> files.txt; done
+ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3
+
 ```
 
 ---
