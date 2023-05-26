@@ -1,4 +1,4 @@
-rhyme scheme stretching in latent space (AAAAA ABBB BBCC)
+rhyme scheme stretching in latent space (AAAAA ABBB BBCC ?????)
 
 
 hint: give no care 'bout who you fuck, she know I'm a gangster (en-us)
@@ -54,7 +54,7 @@ and though my physical won't reap the benefits
 the energy that carry on emits still
 
 
-hint: ano passado eu morri mas esse ano eu não morro (pt-br)
+hint: last year I died but this year I won't die (pt-br)
 
 figurinha premiada, brilho no escuro
 desde a quebrada avulso
@@ -77,7 +77,7 @@ que o "memo" império canalha que não te leva a sério
 interfere pra te levar à lona
 
 
-hint: sereia mais doida do mar (pt-br)
+hint: craziest mermaid of the sea (pt-br)
 
 bag de Jesus Christ
 salve meu tio, Tião
@@ -153,6 +153,6 @@ once I act like lumberjack when im hackin him up with that
 what was that dial 911 someone is comin in from the back
 
 
-hint: ? (en-us)
+hint: ? ()
 
 click
