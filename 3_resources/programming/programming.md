@@ -132,3 +132,133 @@ Essas linguagens representam novas abordagens e filosofias na programação. O i
 
 ---
 ---
+
+## if actions used toml, convert this yaml to toml to test
+
+< The YAML content provided represents a GitHub Actions workflow file. It is defined in a specific structure expected by GitHub.
+
+TOML (Tom's Obvious, Minimal Language) is a simple language that provides a configuration file format. However, as of my knowledge cutoff in September 2021, GitHub Actions does not natively support TOML for defining workflows, hence the conversion might not be useful in practice. Nevertheless, here's how the provided YAML might look in TOML:
+
+```toml
+[name]
+value = "Release"
+
+[on]
+[on.push]
+branches = ["main"]
+
+[jobs]
+[jobs.deploy-widgets]
+runs-on = "ubuntu-latest"
+name = "Make a function call on mainnet"
+
+[jobs.deploy-widgets.env]
+NEAR_NETWORK_CONNECTION = "mainnet"
+NEAR_CONTRACT_ACCOUNT_ID = "${{ vars.NEAR_CONTRACT_ACCOUNT_ID }}"
+NEAR_SIGNER_ACCOUNT_ID = "${{ vars.NEAR_SIGNER_ACCOUNT_ID }}"
+NEAR_SIGNER_ACCOUNT_PUBLIC_KEY = "${{ vars.NEAR_SIGNER_ACCOUNT_PUBLIC_KEY }}"
+NEAR_SIGNER_ACCOUNT_PRIVATE_KEY = "${{ secrets.NEAR_SIGNER_ACCOUNT_PRIVATE_KEY }}"
+
+[[jobs.deploy-widgets.steps]]
+name = "Checkout repository"
+uses = "actions/checkout@v2"
+
+[[jobs.deploy-widgets.steps]]
+name = "Install near CLI"
+run = '''
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/download/v0.3.1/near-cli-rs-v0.3.1-installer.sh | sh
+'''
+
+[[jobs.deploy-widgets.steps]]
+name = "Call some function"
+run = '''
+near contract call-function as-transaction "$NEAR_CONTRACT_ACCOUNT_ID" 'function_name_here' json-args '{}' prepaid-gas '100 TeraGas' attached-deposit '0 NEAR' sign-as "$NEAR_SIGNER_ACCOUNT_ID" network-config "$NEAR_NETWORK_CONNECTION" sign-with-plaintext-private-key --signer-public-key "$NEAR_SIGNER_ACCOUNT_PUBLIC_KEY" --signer-private-key "$NEAR_SIGNER_ACCOUNT_PRIVATE_KEY" send
+'''
+```
+
+Keep in mind that GitHub Actions won't recognize this TOML configuration. It's simply a demonstration of how the YAML could be translated to TOML.
+
+## how to make the conversion even more concise? considering toml's idiomatic features
+
+< The TOML format is indeed designed to be more human-readable and concise, but it doesn't provide a way to shorten or simplify the content of your specific YAML configuration, because the nature of the data being represented is still the same.
+
+However, you can try to structure the TOML to reduce visual clutter, even though it may not reduce the line count significantly. Here is another attempt, which groups related keys:
+
+```toml
+[name]
+value = "Release"
+
+[on.push]
+branches = ["main"]
+
+[jobs.deploy-widgets]
+runs-on = "ubuntu-latest"
+name = "Make a function call on mainnet"
+
+[jobs.deploy-widgets.env]
+NEAR_NETWORK_CONNECTION = "mainnet"
+NEAR_CONTRACT_ACCOUNT_ID = "${{ vars.NEAR_CONTRACT_ACCOUNT_ID }}"
+NEAR_SIGNER_ACCOUNT_ID = "${{ vars.NEAR_SIGNER_ACCOUNT_ID }}"
+NEAR_SIGNER_ACCOUNT_PUBLIC_KEY = "${{ vars.NEAR_SIGNER_ACCOUNT_PUBLIC_KEY }}"
+NEAR_SIGNER_ACCOUNT_PRIVATE_KEY = "${{ secrets.NEAR_SIGNER_ACCOUNT_PRIVATE_KEY }}"
+
+[jobs.deploy-widgets.steps.checkout]
+name = "Checkout repository"
+uses = "actions/checkout@v2"
+
+[jobs.deploy-widgets.steps.install]
+name = "Install near CLI"
+run = '''
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/download/v0.3.1/near-cli-rs-v0.3.1-installer.sh | sh
+'''
+
+[jobs.deploy-widgets.steps.call]
+name = "Call some function"
+run = '''
+near contract call-function as-transaction "$NEAR_CONTRACT_ACCOUNT_ID" 'function_name_here' json-args '{}' prepaid-gas '100 TeraGas' attached-deposit '0 NEAR' sign-as "$NEAR_SIGNER_ACCOUNT_ID" network-config "$NEAR_NETWORK_CONNECTION" sign-with-plaintext-private-key --signer-public-key "$NEAR_SIGNER_ACCOUNT_PUBLIC_KEY" --signer-private-key "$NEAR_SIGNER_ACCOUNT_PRIVATE_KEY" send
+'''
+```
+
+This way, each step has its own unique section, but it's less idiomatic than the previous version because TOML arrays are typically used to represent multiple similar objects.
+
+Remember, GitHub Actions as of my knowledge cutoff in September 2021, won't recognize this TOML configuration.
+
+## if an official implementation were to be implemented, turn the yaml sample into the most concise toml equivalent
+
+< If GitHub Actions were to support TOML and considering the language's features for conciseness, the configuration might look something like this:
+
+```toml
+name = "Release"
+
+[on.push]
+branches = ["main"]
+
+[jobs.deploy-widgets]
+runs-on = "ubuntu-latest"
+name = "Make a function call on mainnet"
+
+[jobs.deploy-widgets.env]
+NEAR_NETWORK_CONNECTION = "mainnet"
+NEAR_CONTRACT_ACCOUNT_ID = "${{ vars.NEAR_CONTRACT_ACCOUNT_ID }}"
+NEAR_SIGNER_ACCOUNT_ID = "${{ vars.NEAR_SIGNER_ACCOUNT_ID }}"
+NEAR_SIGNER_ACCOUNT_PUBLIC_KEY = "${{ vars.NEAR_SIGNER_ACCOUNT_PUBLIC_KEY }}"
+NEAR_SIGNER_ACCOUNT_PRIVATE_KEY = "${{ secrets.NEAR_SIGNER_ACCOUNT_PRIVATE_KEY }}"
+
+[[jobs.deploy-widgets.steps]]
+name = "Checkout repository"
+uses = "actions/checkout@v2"
+
+[[jobs.deploy-widgets.steps]]
+name = "Install near CLI"
+run = '''
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/download/v0.3.1/near-cli-rs-v0.3.1-installer.sh | sh
+'''
+
+[[jobs.deploy-widgets.steps]]
+name = "Call some function"
+run = '''
+near contract call-function as-transaction "$NEAR_CONTRACT_ACCOUNT_ID" 'function_name_here' json-args '{}' prepaid-gas '100 TeraGas' attached-deposit '0 NEAR' sign-as "$NEAR_SIGNER_ACCOUNT_ID" network-config "$NEAR_NETWORK_CONNECTION" sign-with-plaintext-private-key --signer-public-key "$NEAR_SIGNER_ACCOUNT_PUBLIC_KEY" --signer-private-key "$NEAR_SIGNER_ACCOUNT_PRIVATE_KEY" send
+'''
+```
+
+This configuration is similar to the previous examples, but it drops some of the nesting (like the 'on' table) for a more flattened and concise format. Note that this would only be possible with changes to the underlying software interpreting the configuration files, which as of my knowledge cutoff in September 2021, does not support TOML in GitHub Actions.

@@ -695,3 +695,733 @@ Please keep in mind that these ratings are not definitive and should be consider
 
 ---
 ---
+
+## considering the decision process of such language development as a whole, detail the architecture of a smart contract suite (using rust) to fully replace their under the hood process
+
+< Desenvolver um conjunto de smart contracts para substituir o processo de tomada de decisão em um projeto de código aberto como Rust é uma tarefa desafiadora, pois envolveria a conversão de processos humanos complexos e sutis em regras codificadas. Isso poderia incluir questões de governança, seleção de recursos, revisão de código e muito mais. O objetivo seria criar um sistema descentralizado onde todas as decisões importantes são tomadas de maneira transparente e verificável.
+
+Antes de começarmos, é importante entender que o Rust é uma linguagem de programação complexa, e qualquer conjunto de smart contracts escrito em Rust deve ser cuidadosamente auditado para garantir a segurança. Isso é especialmente crítico porque os contratos inteligentes geralmente controlam ativos valiosos e não podem ser modificados depois de implantados.
+
+Aqui está uma descrição de alto nível de como esse sistema poderia ser projetado:
+
+1. **Governança:** Podemos ter um contrato de governança que permite aos membros votar em propostas. Cada membro poderia ter uma certa quantidade de votos baseados em sua participação no projeto, o que poderia ser determinado por vários fatores, como contribuições de código, tempo de envolvimento no projeto, etc.
+
+2. **Propostas de Recursos:** Os membros poderiam propor novos recursos enviando uma transação para um contrato de proposta de recursos. Cada proposta poderia incluir uma descrição do recurso, código relevante, testes, etc.
+
+3. **Revisão de Código:** Uma vez que uma proposta de recurso seja submetida, poderia haver um período de revisão onde outros membros poderiam examinar o código, realizar testes e votar na proposta.
+
+4. **Implantação de Recursos:** Se uma proposta receber votos suficientes, ela poderia ser automaticamente fundida com a base de código principal. Isso poderia ser realizado por meio de um contrato de implantação que tem a capacidade de fazer alterações na base de código.
+
+5. **Resolução de Conflitos:** Em caso de disputas, um sistema de arbitragem on-chain poderia ser usado para resolver conflitos. Isso poderia ser governado por um contrato de resolução de disputas.
+
+Este é apenas um exemplo simplificado e o design real de tal sistema seria muito mais complexo e teria que lidar com uma variedade de questões adicionais, incluindo segurança, privacidade, desempenho e custo. Além disso, existem limitações técnicas e práticas significativas a serem superadas ao tentar aplicar a tecnologia blockchain a problemas como este. A interação humana e o julgamento são elementos críticos em muitos aspectos do desenvolvimento de software, e não é claro se eles podem ser efetivamente substituídos por código em todos os casos.
+
+## detail such architecture if the code itself were to be stored on chain for ai tools to settle all these assignments
+
+< Armazenar o código-fonte diretamente na blockchain é uma tarefa desafiadora, principalmente devido ao grande tamanho dos repositórios de código-fonte e à natureza imutável da blockchain. No entanto, é possível armazenar hashes de versões específicas do código na blockchain para rastrear as alterações e manter a transparência. Em vez de armazenar todo o código na blockchain, você pode armazenar o código em algum outro lugar e colocar na blockchain um hash que representa aquele estado do código.
+
+O uso de inteligência artificial (IA) para resolver tarefas de desenvolvimento de software é uma ideia interessante, mas ainda está em seus estágios iniciais e enfrenta muitos desafios. A IA pode ser usada para ajudar em tarefas como revisão de código, teste de software e até mesmo codificação, mas atualmente não é capaz de substituir completamente a necessidade de desenvolvedores humanos.
+
+Aqui está um esboço de uma arquitetura possível, combinando esses conceitos:
+
+1. **Governança**: Assim como na descrição anterior, um contrato de governança poderia ser estabelecido para permitir votações sobre propostas de mudanças.
+
+2. **Propostas de alterações de código**: Para propor uma alteração de código, um desenvolvedor envia uma transação com um hash da alteração proposta. O código atualizado em si poderia ser armazenado em uma plataforma de armazenamento de código externa como o GitHub, GitLab ou um sistema de armazenamento descentralizado como o IPFS.
+
+3. **Revisão de Código com IA**: As ferramentas de IA poderiam ser usadas para realizar uma análise preliminar do código proposto, procurando problemas comuns e possíveis melhorias. Os resultados dessa análise poderiam ser apresentados aos votantes para informar sua decisão.
+
+4. **Votação e Implementação**: Se a proposta receber votos suficientes, o contrato de governança poderia enviar uma transação para um contrato de implantação que atualiza o hash do código-fonte atual para o novo hash.
+
+5. **Verificação de Código com IA**: Após uma mudança ser aprovada, ferramentas de IA poderiam ser usadas para executar testes automatizados e verificar a integridade do novo código.
+
+6. **Resolução de Conflitos**: Da mesma forma que na descrição anterior, um sistema de arbitragem on-chain poderia ser usado para resolver disputas.
+
+Ainda assim, vale lembrar que os algoritmos de IA atuais não podem substituir totalmente o julgamento humano quando se trata de tarefas complexas como o desenvolvimento de software. Enquanto eles podem ser capazes de identificar certos tipos de problemas e ajudar a automatizar tarefas repetitivas, ainda há muitas tarefas que exigem a capacidade humana de entender e resolver problemas complexos.
+
+## detail how the intricacies of the voting system should work considering all complexity involved
+
+< Criar um sistema de votação na blockchain que seja tanto justo quanto seguro é um desafio significativo. Existem muitos fatores a serem considerados e muitas maneiras diferentes de projetar o sistema. Aqui estão alguns elementos que podem ser considerados para um sistema de votação para propostas de mudanças de código em uma plataforma descentralizada:
+
+1. **Elegibilidade para votação**: Primeiramente, deve-se decidir quem terá direito a votar. Pode ser qualquer pessoa que possua um certo token, qualquer pessoa que tenha contribuído para o projeto, ou um grupo mais restrito de pessoas escolhidas de alguma forma. Cada uma dessas abordagens tem suas vantagens e desvantagens.
+
+2. **Ponderação de votos**: Os votos podem ser ponderados de várias maneiras. Pode-se optar por um voto por pessoa, independentemente de quão envolvidos eles estejam no projeto, ou pode-se ponderar os votos com base em algum critério, como o número de tokens que alguém possui, o tempo que eles têm estado envolvidos no projeto, ou a quantidade de contribuições de código que eles fizeram.
+
+3. **Mecanismo de votação**: Existem várias maneiras de implementar o mecanismo de votação em si. Pode-se usar um sistema simples de maioria, onde a proposta com a maioria dos votos vence, ou pode-se usar algum tipo de sistema de consenso mais complexo. Além disso, pode-se implementar algum tipo de mecanismo de veto, onde uma certa porcentagem de votos contrários pode bloquear uma proposta.
+
+4. **Período de votação**: O período de tempo durante o qual as votações estão abertas deve ser suficientemente longo para permitir que todos os eleitores elegíveis tenham a chance de votar, mas não tão longo a ponto de atrasar indevidamente a implementação de mudanças.
+
+5. **Privacidade da votação**: Embora a transparência seja uma das principais vantagens da blockchain, também pode ser importante garantir que os votos sejam privados para evitar coerção ou outras formas de manipulação de votos. Isso pode ser difícil de alcançar na prática, mas existem técnicas criptográficas, como a prova de conhecimento zero, que podem ser usadas para este fim.
+
+6. **Proteção contra ataques**: Deve-se tomar medidas para proteger o sistema de votação contra vários tipos de ataques, como ataques Sybil, onde uma pessoa cria várias identidades para ganhar votos adicionais, e ataques de 51%, onde alguém com uma grande quantidade de poder de votação tenta tomar o controle do sistema.
+
+7. **Transparência e auditoria**: As votações devem ser transparentes e auditáveis para garantir a justiça do processo. Isso pode ser facilitado pelo uso da blockchain, que cria um registro permanente e imutável de todas as transações. No entanto, deve-se tomar cuidado para garantir que a privacidade dos votantes seja protegida.
+
+É importante lembrar que não existe um "tamanho único" para um sistema de votação na blockchain. O design do sistema deve ser adaptado às necessidades específicas do projeto e da comunidade.
+
+## if such wallet pipeline were to be developed using the near protocol, detail all steps that an e2e test should take to validate a patch followed by regression then redeploy
+
+< A realização de testes end-to-end (E2E) e testes de regressão é fundamental para garantir a qualidade do código e a funcionalidade adequada dos aplicativos ou sistemas. No caso de uma carteira na blockchain construída com o protocolo NEAR, o processo para validar um patch, realizar testes de regressão e, em seguida, reimplantar o aplicativo pode incluir os seguintes passos:
+
+1. **Ambiente de Teste**: Primeiro, um ambiente de teste adequado deve ser configurado. Este ambiente deve ser o mais próximo possível do ambiente de produção. Isso pode envolver a configuração de uma rede de blockchain NEAR de teste.
+
+2. **Patch de Código**: Após a aplicação do patch de código, é essencial verificar se o código ainda compila sem erros e se todos os testes unitários ainda passam.
+
+3. **Testes E2E**: Os testes E2E são projetados para verificar se todo o sistema funciona conforme esperado do início ao fim. No caso de uma carteira na blockchain, isso pode envolver criar uma nova transação, assiná-la, enviá-la para a rede e verificar se ela foi incluída no blockchain e se os saldos de tokens foram atualizados corretamente. Os testes E2E também podem envolver a interação com a interface do usuário para garantir que tudo esteja funcionando corretamente do ponto de vista do usuário.
+
+4. **Testes de Regressão**: Os testes de regressão são projetados para garantir que o patch de código não introduziu novos bugs no sistema. Isso envolve reexecutar todos os testes existentes (incluindo testes unitários, testes de integração e testes E2E) para verificar se eles ainda passam. Se algum teste falhar, isso pode indicar um problema com o patch de código.
+
+5. **Revisão de Código**: Antes de reimplantar o código, pode ser útil realizar uma revisão de código para verificar se o patch de código segue as melhores práticas de codificação e se não contém erros ou problemas de segurança.
+
+6. **Redeploy**: Após a validação bem-sucedida do patch e a conclusão dos testes de regressão, o código pode ser reimplantado no ambiente de produção. Isso pode envolver a compilação do código em um contrato inteligente, a implantação do contrato na rede blockchain NEAR e a atualização de quaisquer interfaces de usuário ou APIs necessárias.
+
+7. **Monitoramento**: Após a reimplantação, é importante monitorar o aplicativo para garantir que ele esteja funcionando corretamente. Isso pode envolver o monitoramento de logs de erros, métricas de desempenho e feedback do usuário.
+
+Esses passos devem ser automatizados o máximo possível para tornar o processo de teste e reimplantação mais eficiente e reduzir a possibilidade de erros humanos. Além disso, os testes devem ser projetados de forma que cubram o maior número possível de cenários de uso para maximizar a probabilidade de encontrar e corrigir bugs.
+
+## detail the e2e pipeline for the simplest voting circuits, detailing all transactions involved from the parties. provide it as a sample using powershell syntax (ps1 file) that would probably be in the root of a project, building frontends, apis, deploying contracts on neardev, etc
+
+< Implementing a detailed E2E pipeline using PowerShell for a simple voting circuit on NEAR protocol involves multiple steps such as setting up the environment, compiling and deploying the smart contracts, preparing the frontend and backend APIs, and running the tests.
+
+Here is a simplified example in PowerShell. This script assumes you have NEAR CLI, Node.js and other dependencies already installed in your environment.
+
+Please note, this is a high-level abstraction of what the script could look like and it's not fully functional. Please use it as a guide to write your own script according to your project's specific needs.
+
+```powershell
+# Script.ps1
+# Ensure Error on Fail
+$ErrorActionPreference = "Stop"
+
+# Step 1: Compile smart contract
+Write-Output "Compiling smart contract..."
+Set-Location .\contract
+& cargo build --release
+Set-Location ..
+
+# Step 2: Deploy smart contract to NEAR testnet
+Write-Output "Deploying smart contract to NEAR testnet..."
+& near dev-deploy .\contract\target\wasm32-unknown-unknown\release\contract.wasm
+
+# Step 3: Prepare API Server
+Write-Output "Installing API server dependencies..."
+Set-Location .\api-server
+& npm install
+Write-Output "Starting API server..."
+Start-Process "npm" -ArgumentList "start" -NoNewWindow
+Set-Location ..
+
+# Step 4: Prepare Frontend
+Write-Output "Installing frontend dependencies..."
+Set-Location .\frontend
+& npm install
+Write-Output "Starting frontend..."
+Start-Process "npm" -ArgumentList "start" -NoNewWindow
+Set-Location ..
+
+# Step 5: Run E2E tests
+Write-Output "Running E2E tests..."
+& npm run e2e
+
+# Check for any errors during the process
+if ($LASTEXITCODE -ne 0) {
+    Write-Output "An error occurred during the E2E testing process"
+    exit $LASTEXITCODE
+}
+
+Write-Output "E2E tests completed successfully. Voting circuit is functioning as expected."
+```
+
+This script includes basic steps, but real-world scenarios would certainly be more complex. They would likely involve additional considerations such as transaction handling, test case setup and teardown, error handling, and perhaps even orchestration using continuous integration (CI) pipelines.
+
+Note that NEAR's dev-deploy command will deploy the contract to a new account on the test network. If you want to deploy to a specific account, you'll need to use a different command and ensure that the account has sufficient funds for the deployment.
+
+Also, remember to create appropriate tests under your npm run e2e script in your package.json. These tests should involve interaction with your frontend, APIs, and smart contracts to fully validate your voting circuit.
+
+Lastly, please ensure that you follow the best practices for PowerShell scripting such as using strict mode, handling and logging errors appropriately, and securing any sensitive information.
+
+## now detail the unit test for the contract itself
+
+< Unit testing for Rust smart contracts on the NEAR protocol can be done with the near-sdk-sim crate, which allows for fast and reliable unit testing.
+
+Below is an example of a unit test for a simple voting contract:
+
+```rust
+use near_sdk::json_types::U128;
+use near_sdk::serde_json::json;
+use near_sdk_sim::{call, deploy, init_simulator, to_yocto, view, ContractAccount, UserAccount};
+
+// Load in contract bytes at runtime
+near_sdk_sim::lazy_static_include::lazy_static_include_bytes! {
+    CONTRACT_BYTES => "res/voting_contract.wasm",
+}
+
+// Initialize the simulator
+#[test]
+fn init() {
+    let context = init_simulator(None);
+    let contract_id = context.accounts[0].account_id().to_string();
+    let contract = deploy! {
+        contract: voting_contract,
+        contract_id: contract_id,
+        bytes: &CONTRACT_BYTES,
+        signer_account: context.accounts[0],
+    };
+
+    // Verify that the contract was deployed correctly
+    let total_votes: U128 = view!(contract.get_total_votes()).unwrap_json();
+    assert_eq!(total_votes.0, 0);
+
+    // Create a new vote
+    let res = call!(
+        context.accounts[0],
+        contract.create_vote(json!({ "vote": "Vote 1" })),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok());
+
+    // Verify that the vote was created correctly
+    let total_votes: U128 = view!(contract.get_total_votes()).unwrap_json();
+    assert_eq!(total_votes.0, 1);
+}
+```
+
+This test will initialize a voting contract, verify its initial state, create a new vote, and then verify that the vote was correctly created.
+
+Note that in order for this to work, your contract will need to have a method create_vote that accepts a JSON object with a single "vote" field and a get_total_votes method that returns the total number of votes. Also, please replace "res/voting_contract.wasm" with the path to your compiled contract.
+
+Keep in mind that this is a very basic example, and actual unit tests would likely be much more complex and cover many more edge cases. Also, it's good practice to write tests not only for successful cases but also for cases where you expect failures to ensure that your contract behaves correctly in these situations as well.
+
+## provide all assertions related to such circuit considering the rust language team deliberations
+
+< To write assertions for a voting system that's designed to handle Rust language team deliberations, we need to consider a few aspects:
+
+1. **Different Voting Types**: The Rust language team may require different voting types, such as simple majority, supermajority, or unanimity, depending on the decision at hand.
+
+2. **Eligibility to Vote**: Not everyone may be eligible to vote on all matters. It could be that only team members can vote, or perhaps only contributors with a certain level of involvement.
+
+3. **Proposing Decisions**: There needs to be a system in place for proposing decisions to be voted on.
+
+4. **Conflict Resolution**: In case of a tie, there needs to be a mechanism for breaking the deadlock.
+
+5. **Timeframes**: There could be a time limit within which votes must be cast.
+
+Here's a basic example of what the assertions might look like:
+
+```rust
+#[test]
+fn vote() {
+    // Initialize the contract and create a new decision
+    let decision = "New feature proposal";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok());
+
+    // Verify the decision was created
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.name, decision);
+    assert_eq!(decision_data.vote_count, 0);
+    assert_eq!(decision_data.status, DecisionStatus::Open);
+
+    // Cast a vote
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_ok());
+
+    // Verify the vote was recorded
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.vote_count, 1);
+
+    // Verify that the vote tally is updated
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 1);
+    assert_eq!(vote_tally.no_votes, 0);
+
+    // Try to vote twice, should fail
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision, Vote::No),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err());
+
+    // Verify that the vote tally is still the same
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 1);
+    assert_eq!(vote_tally.no_votes, 0);
+}
+```
+
+These assertions ensure that the decision creation, voting, and vote tallying processes are functioning correctly. They also ensure that each user can only vote once per decision. There would be additional tests required to ensure all parts of the contract work correctly, such as eligibility checking, decision expiry, vote type handling, and conflict resolution.
+
+## provide a testset with 40 assertions. if the text cut i'll click in 'continue response'
+
+Building on the previous example, we can expand the test set to cover more functionalities of the smart contract. Here are some additional assertions for the smart contract:
+
+```rust
+#[test]
+fn extensive_vote_test() {
+    // Initialize the contract and create a new decision
+    let decision = "New feature proposal";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "1. Create decision failed");
+
+    // Verify the decision was created
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.name, decision, "2. Decision name incorrect");
+    assert_eq!(decision_data.vote_count, 0, "3. Initial vote count incorrect");
+    assert_eq!(decision_data.status, DecisionStatus::Open, "4. Decision status incorrect");
+
+    // Cast a vote
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_ok(), "5. First vote failed");
+
+    // Verify the vote was recorded
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.vote_count, 1, "6. Vote count incorrect after first vote");
+
+    // Verify that the vote tally is updated
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 1, "7. Yes vote tally incorrect after first vote");
+    assert_eq!(vote_tally.no_votes, 0, "8. No vote tally incorrect after first vote");
+
+    // Try to vote twice, should fail
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision, Vote::No),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "9. Double voting allowed");
+
+    // Verify that the vote tally is still the same
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 1, "10. Yes vote tally incorrect after double vote attempt");
+    assert_eq!(vote_tally.no_votes, 0, "11. No vote tally incorrect after double vote attempt");
+
+    // Cast a no vote
+    let res = call!(
+        context.accounts[2],
+        contract.vote(decision, Vote::No),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_ok(), "12. Second vote failed");
+
+    // Verify the vote was recorded
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.vote_count, 2, "13. Vote count incorrect after second vote");
+
+    // Verify that the vote tally is updated
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 1, "14. Yes vote tally incorrect after second vote");
+    assert_eq!(vote_tally.no_votes, 1, "15. No vote tally incorrect after second vote");
+
+    // Verify that a decision can't be closed early
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "16. Decision was able to be closed early");
+
+    // Cast a final yes vote
+    let res = call!(
+        context.accounts[3],
+        contract.vote(decision, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_ok(), "17. Final vote failed");
+
+    // Verify the vote was recorded
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.vote_count, 3, "18. Vote count incorrect after final vote");
+
+    // Verify that the vote tally is updated
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 2, "19. Yes vote tally incorrect after final vote");
+    assert_eq!(vote_tally.no_votes, 1, "20. No vote tally incorrect after final vote");
+
+    // Close the decision
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "21. Closing decision failed");
+
+    // Verify the decision was closed
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.status, DecisionStatus::Closed, "22. Decision status incorrect after closing");
+
+    // Verify that voting on a closed decision fails
+    let res = call!(
+        context.accounts[4],
+        contract.vote(decision, Vote::No),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "23. Voting allowed on closed decision");
+
+    // Verify that the vote tally is unchanged
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision)).unwrap_json();
+    assert_eq!(vote_tally.yes_votes, 2, "24. Yes vote tally incorrect after attempt to vote on closed decision");
+    assert_eq!(vote_tally.no_votes, 1, "25. No vote tally incorrect after attempt to vote on closed decision");
+
+    // Verify that closing a decision twice fails
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "26. Decision able to be closed twice");
+
+    // Create another decision
+    let decision_2 = "Another feature proposal";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision_2),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "27. Create second decision failed");
+
+    // Verify the second decision was created
+    let decision_data: Decision = view!(contract.get_decision(decision_2)).unwrap_json();
+    assert_eq!(decision_data.name, decision_2, "28. Second decision name incorrect");
+    assert_eq!(decision_data.vote_count, 0, "29. Initial vote count incorrect for second decision");
+    assert_eq!(decision_data.status, DecisionStatus::Open, "30. Second decision status incorrect");
+
+    // Verify that the first decision is unchanged
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.name, decision, "31. First decision name incorrect after second decision created");
+    assert_eq!(decision_data.vote_count, 3, "32. First decision vote count incorrect after second decision created");
+    assert_eq!(decision_data.status, DecisionStatus::Closed, "33. First decision status incorrect after second decision created");
+
+    // Try to create a decision with the same name, should fail
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "34. Able to create decision with same name");
+
+    // Verify that the first decision is unchanged
+    let decision_data: Decision = view!(contract.get_decision(decision)).unwrap_json();
+    assert_eq!(decision_data.name, decision, "35. First decision name incorrect after attempt to create decision with same name");
+    assert_eq!(decision_data.vote_count, 3, "36. First decision vote count incorrect after attempt to create decision with same name");
+    assert_eq!(decision_data.status, DecisionStatus::Closed, "37. First decision status incorrect after attempt to create decision with same name");
+
+    // Try to vote on a non-existent decision, should fail
+    let non_existent_decision = "Non-existent decision";
+    let res = call!(
+        context.accounts[1],
+        contract.vote(non_existent_decision, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "38. Able to vote on non-existent decision");
+
+    // Try to get a non-existent decision, should fail
+    let res = view!(contract.get_decision(non_existent_decision));
+    assert!(res.is_err(), "39. Able to get non-existent decision");
+
+    // Try to get vote tally of a non-existent decision, should fail
+    let res = view!(contract.get_vote_tally(non_existent_decision));
+    assert!(res.is_err(), "40. Able to get vote tally of non-existent decision");
+}
+    // 41. Try to close a non-existent decision, should fail
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(non_existent_decision),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "41. Able to close non-existent decision");
+
+    // 42. Try to create a decision without a deposit, should fail
+    let decision_3 = "Third decision proposal";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision_3)
+    );
+    assert!(res.is_err(), "42. Able to create decision without a deposit");
+
+    // 43. Try to vote without a deposit, should fail
+    let res = call!(
+        context.accounts[2],
+        contract.vote(decision_2, Vote::No)
+    );
+    assert!(res.is_err(), "43. Able to vote without a deposit");
+
+    // 44. Verify that a user cannot vote more than once on the same decision
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision_2, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_ok(), "44. User not able to vote first time");
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision_2, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "45. User able to vote more than once");
+
+    // 46. Verify that the voting limit is enforced
+    for i in 4..15 {
+        let res = call!(
+            context.accounts[i],
+            contract.vote(decision_2, Vote::Yes),
+            deposit = to_yocto("0.1")
+        );
+        if i < 10 {
+            assert!(res.is_ok(), "46. User not able to vote within limit");
+        } else {
+            assert!(res.is_err(), "47. Voting limit not enforced");
+        }
+    }
+
+    // 48. Create a decision with a large number of votes, verify that the contract can handle it
+    let decision_4 = "Large decision proposal";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision_4),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "48. Create large decision failed");
+    for i in 1..100 {
+        let res = call!(
+            context.accounts[i % 10],
+            contract.vote(decision_4, if i % 2 == 0 { Vote::Yes } else { Vote::No }),
+            deposit = to_yocto("0.1")
+        );
+        assert!(res.is_ok(), "49. Voting on large decision failed");
+    }
+
+    // 50. Close the large decision
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision_4),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "50. Closing large decision failed");
+
+    // 51. Verify that the final vote count and tallies are correct for the large decision
+    let decision_data: Decision = view!(contract.get_decision(decision_4)).unwrap_json();
+    assert_eq!(decision_data.vote_count, 99, "51. Vote count incorrect for large decision");
+    let vote_tally: VoteTally = view!(contract.get_vote_tally(decision_4)).unwrap_json();
+    assert_eq!(vote_tally.yes, 50, "52. Yes vote tally incorrect for large decision");
+    assert_eq!(vote_tally.no, 49, "53. No vote tally incorrect for large decision");
+    assert_eq!(vote_tally.abstain, 0, "54. Abstain vote tally incorrect for large decision");
+
+    // 55. Try to vote after the decision has been closed, should fail
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision_4, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "55. Able to vote after decision closed");
+
+    // 56. Create a new decision and try to close it immediately, should fail
+    let decision_5 = "Early closure decision";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision_5),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "56. Create early closure decision failed");
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision_5),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "57. Able to close decision immediately after creation");
+
+    // 58. Try to create a decision with an empty name, should fail
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(""),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "58. Able to create decision with empty name");
+
+    // 59. Try to vote with an empty vote, should fail
+    let res = call!(
+        context.accounts[1],
+        contract.vote(decision_2, ""),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "59. Able to vote with empty vote");
+
+    // 60. Create a new decision, then attempt to vote on it as the creator, should fail
+    let decision_6 = "Creator voting decision";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision_6),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "60. Create creator voting decision failed");
+    let res = call!(
+        context.accounts[0],
+        contract.vote(decision_6, Vote::Yes),
+        deposit = to_yocto("0.1")
+    );
+    assert!(res.is_err(), "61. Creator able to vote on their own decision");
+
+    // 62. Try to close a decision that has already been closed, should fail
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision_2),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "62. Able to close decision that has already been closed");
+
+    // 63. Attempt to get the vote tally before the decision has been closed, should fail
+    let res = view!(contract.get_vote_tally(decision_6));
+    assert!(res.is_err(), "63. Able to get vote tally before decision closed");
+
+    // 64. Try to create a decision with a very long name, should fail
+    let long_name = "a".repeat(256);
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(&long_name),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "64. Able to create decision with very long name");
+
+    // 65. Try to create a decision with a name that contains special characters, should fail
+    let special_name = "Test & Decision %1";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(&special_name),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_err(), "65. Able to create decision with special characters in name");
+
+    // 66. Verify that the total votes do not exceed the voting limit for a decision
+    let decision_7 = "Voting limit decision";
+    let res = call!(
+        context.accounts[0],
+        contract.create_decision(decision_7),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "66. Create voting limit decision failed");
+    for i in 0..101 {
+        let res = call!(
+            context.accounts[i % 10],
+            contract.vote(decision_7, if i % 2 == 0 { Vote::Yes } else { Vote::No }),
+            deposit = to_yocto("0.1")
+        );
+        if i < 100 {
+            assert!(res.is_ok(), "67. Voting within limit failed");
+        } else {
+            assert!(res.is_err(), "68. Able to vote beyond limit");
+        }
+    }
+
+    // 69. Close the voting limit decision
+    let res = call!(
+        context.accounts[0],
+        contract.close_decision(decision_7),
+        deposit = to_yocto("1")
+    );
+    assert!(res.is_ok(), "69. Closing voting limit decision failed");
+
+    // 70. Verify that the final vote count and tallies are correct for the voting limit decision
+    let decision_data: Decision = view!(contract.get_decision(decision_7)).unwrap_json();
+    assert_eq!(decision_data.vote_count, 100, "70. Vote count incorrect for voting limit decision");
+}
+```
+
+I must reiterate that these are generalized test cases and there might be specific situations or requirements in your codebase that need to be tested accordingly.
+
+## write from 71 to 90 the most important property based tests using appropriate crates for it considering such intricate voting system
+
+< Property-based testing involves generating random inputs and verifying that certain properties hold, rather than checking the result for a specific input. It's more about the behavior of your program given a large amount of data and less about the correctness of specific results. In Rust, the proptest crate is typically used for property-based testing.
+
+```rust
+use proptest::prelude::*;
+use crate::contract::{Contract, Vote, Decision};
+use near_sdk::AccountId;
+use near_sdk_sim::to_yocto;
+
+// 71. Test that decision name length is always valid
+proptest! {
+    #[test]
+    fn prop_decision_name_length(s in "\\PC*") {
+        let contract = Contract::new();
+        let res = contract.create_decision(&s, deposit = to_yocto("1"));
+        prop_assert!(s.len() <= 255, "71. Decision name too long");
+    }
+}
+
+// 72. Test that vote types are always valid
+proptest! {
+    #[test]
+    fn prop_vote_type(vote in any::<Vote>()) {
+        prop_assert!(vote == Vote::Yes || vote == Vote::No || vote == Vote::Abstain, "72. Invalid vote type");
+    }
+}
+
+// 73. Test that deposit amount is always valid for decision creation
+proptest! {
+    #[test]
+    fn prop_decision_deposit_amount(deposit in any::<u128>()) {
+        let contract = Contract::new();
+        let res = contract.create_decision("decision", deposit = deposit);
+        prop_assert!(deposit >= to_yocto("1"), "73. Deposit too small for decision creation");
+    }
+}
+
+// 74. Test that deposit amount is always valid for voting
+proptest! {
+    #[test]
+    fn prop_vote_deposit_amount(deposit in any::<u128>()) {
+        let contract = Contract::new();
+        contract.create_decision("decision", deposit = to_yocto("1")).unwrap();
+        let res = contract.vote("decision", Vote::Yes, deposit = deposit);
+        prop_assert!(deposit >= to_yocto("0.1"), "74. Deposit too small for voting");
+    }
+}
+
+// 75. Test that decision cannot be closed immediately after creation
+proptest! {
+    #[test]
+    fn prop_decision_close_timing(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        let res = contract.close_decision(&s, deposit = to_yocto("1"));
+        prop_assert!(res.is_err(), "75. Decision closed immediately after creation");
+    }
+}
+
+// 76. Test that creator cannot vote on their own decision
+proptest! {
+    #[test]
+    fn prop_creator_cannot_vote(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        let res = contract.vote(&s, Vote::Yes, deposit = to_yocto("0.1"));
+        prop_assert!(res.is_err(), "76. Creator voted on their own decision");
+    }
+}
+
+// 77. Test that vote count does not exceed the voting limit for a decision
+proptest! {
+    #[test]
+    fn prop_vote_count_limit(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        for i in 0..101 {
+            let res = contract.vote(&s, if i % 2 == 0 { Vote::Yes } else { Vote::No }, deposit = to_yocto("0.1"));
+```
+
+---
+---
