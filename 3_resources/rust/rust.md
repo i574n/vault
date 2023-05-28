@@ -1421,7 +1421,140 @@ proptest! {
         contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
         for i in 0..101 {
             let res = contract.vote(&s, if i % 2 == 0 { Vote::Yes } else { Vote::No }, deposit = to_yocto("0.1"));
+            if i < 100 {
+                prop_assert!(res.is_ok(), "77. Voting within limit failed");
+            } else {
+                prop_assert!(res.is_err(), "78. Able to vote beyond limit");
+            }
+        }
+    }
+}
+
+// 79. Test that the final vote count and tallies are correct for a decision
+proptest! {
+    #[test]
+    fn prop_final_vote_count(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        for i in 0..100 {
+            contract.vote(&s, if i % 2 == 0 { Vote::Yes } else { Vote::No }, deposit = to_yocto("0.1")).unwrap();
+        }
+        contract.close_decision(&s, deposit = to_yocto("1")).unwrap();
+        let decision_data: Decision = contract.get_decision(&s).unwrap();
+        prop_assert_eq!(decision_data.vote_count, 100, "79. Vote count incorrect for decision");
+    }
+}
+
+// 80. Test that the total deposited amount is correct for a decision
+proptest! {
+    #[test]
+    fn prop_total_deposit(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        for i in 0..100 {
+            contract.vote(&s, if i % 2 == 0 { Vote::Yes } else { Vote::No }, deposit = to_yocto("0.1")).unwrap();
+        }
+        let decision_data: Decision = contract.get_decision(&s).unwrap();
+        prop_assert_eq!(decision_data.total_deposit, to_yocto("10") + to_yocto("1"), "80. Total deposit incorrect for decision");
+    }
+}
+
+// 81. Test that the voting results are always correct
+proptest! {
+    #[test]
+    fn prop_voting_results(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        for i in 0..100 {
+            contract.vote(&s, if i % 2 == 0 { Vote::Yes } else { Vote::No }, deposit = to_yocto("0.1")).unwrap();
+        }
+        contract.close_decision(&s, deposit = to_yocto("1")).unwrap();
+        let decision_data: Decision = contract.get_decision(&s).unwrap();
+        let expected_yes_votes = 50;
+        let expected_no_votes = 50;
+        prop_assert_eq!(decision_data.yes_votes, expected_yes_votes, "81. Yes votes incorrect for decision");
+        prop_assert_eq!(decision_data.no_votes, expected_no_votes, "82. No votes incorrect for decision");
+    }
+}
+
+// 83. Test that only the creator can close the decision
+proptest! {
+    #[test]
+    fn prop_only_creator_can_close(s in "\\PC*", id in any::<AccountId>()) {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        let res = contract.as(id).close_decision(&s, deposit = to_yocto("1"));
+        prop_assert!(res.is_err(), "83. Non-creator closed decision");
+    }
+}
+
+// 84. Test that votes cannot be cast after decision is closed
+proptest! {
+    #[test]
+    fn prop_no_votes_after_close(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        contract.close_decision(&s, deposit = to_yocto("1")).unwrap();
+        let res = contract.vote(&s, Vote::Yes, deposit = to_yocto("0.1"));
+        prop_assert!(res.is_err(), "84. Able to vote after decision closed");
+    }
+}
+
+// 85. Test that the final decision outcome is correct based on the majority of votes
+proptest! {
+    #[test]
+    fn prop_final_decision_outcome(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        for i in 0..60 {
+            contract.vote(&s, Vote::Yes, deposit = to_yocto("0.1")).unwrap();
+        }
+        for i in 0..40 {
+            contract.vote(&s, Vote::No, deposit = to_yocto("0.1")).unwrap();
+        }
+        contract.close_decision(&s, deposit = to_yocto("1")).unwrap();
+        let decision_data: Decision = contract.get_decision(&s).unwrap();
+        prop_assert_eq!(decision_data.outcome, Some(Vote::Yes), "85. Decision outcome incorrect");
+    }
+}
+
+// 86. Test that contract calls fail with insufficient funds
+proptest! {
+    #[test]
+    fn prop_insufficient_funds(s in "\\PC*") {
+        let contract = Contract::new();
+        let res = contract.create_decision(&s, deposit = 0);
+        prop_assert!(res.is_err(), "86. Decision created with insufficient funds");
+        let res = contract.vote(&s, Vote::Yes, deposit = 0);
+        prop_assert!(res.is_err(), "87. Vote cast with insufficient funds");
+        let res = contract.close_decision(&s, deposit = 0);
+        prop_assert!(res.is_err(), "88. Decision closed with insufficient funds");
+    }
+}
+
+// 89. Test that decision names are always unique
+proptest! {
+    #[test]
+    fn prop_unique_decision_name(s in "\\PC*") {
+        let contract = Contract::new();
+        contract.create_decision(&s, deposit = to_yocto("1")).unwrap();
+        let res = contract.create_decision(&s, deposit = to_yocto("1"));
+        prop_assert!(res.is_err(), "89. Duplicate decision name");
+    }
+}
+
+// 90. Test that decision name cannot be empty
+proptest! {
+    #[test]
+    fn prop_non_empty_decision_name(s in "\\PC*") {
+        let contract = Contract::new();
+        let res = contract.create_decision("", deposit = to_yocto("1"));
+        prop_assert!(res.is_err(), "90. Empty decision name");
+    }
+}
 ```
+
+Remember, these are just examples and need to be modified based on the actual contract details and business requirements. Property-based testing can be a powerful tool in your testing arsenal, helping you catch corner cases and unexpected behavior that might not be covered by traditional unit tests.
 
 ---
 ---
