@@ -21,3 +21,41 @@
 <audio controls>
   <source src="https://bafybeihlwtg5mlngqa3l7qs2n2p6ij6wmuqqfmdndsx3kplen5h64xhclq.ipfs.dweb.link/John%20White%20-%20Raspberry%20Pi%204%20Projects%20for%20the%20Evil%20Genius/Raspberry%20Pi%204%20Projects%20for%20the%20Evil%20Genius.m4b" type="audio/mpeg">
 </audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Anthony%20Williams%20-%20C++%20Concurrency%20in%20Action%20%5BSecond%20Edition%5D/Anthony%20Williams%20-%20C++%20Concurrency%20in%20Action,%20Second%20Edition.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Computer%20Book/Isaac%20D.%20Cody%20-%20C++%20and%20Linux%20Operating%20System%202/C++%20and%20Linux%20Operating%20System%202%20Bundle%20Manuscript.m4b" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Designing_Data-Intensive_Applications/Designing_Data-Intensive_Applications.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="
+https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Douglas%20McIlwraith,%20Haralambos%20Marmanis,%20Dmitry%20Babenko%20-%20Algorithms%20of%20the%20Intelligent%20Web/Douglas%20McIlwraith,%20Haralambos%20Marmanis,%20Dmitry%20Babenko%20-%20Algorithms%20of%20the%20Intelligent%20Web.mp3
+" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Felienne%20Hermans%20-%20The%20Programmer%27s%20Brain/The%20Programmer%27s%20Brain%20-%20What%20Every%20Programmer%20Needs%20to%20Know%20About%20Cognition.m4b" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Marco%20Faella%20-%20Seriously%20Good%20Software%20Code%20That%20Works,%20Survives,%20and%20Wins/Marco%20Faella%20-%20Seriously%20Good%20Software%20Code%20That%20Works,%20Survives,%20and%20Wins.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Roy%20Osherove%20-%20The%20Art%20of%20Unit%20Testing%20With%20Examples%20in%20C%23/Roy%20Osherove%20-%20The%20Art%20of%20Unit%20Testing%20With%20Examples%20in%20C%23.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiganj4md2wwt5uy6ayylkdj4hilv32kje6gkvuvmhhpwfmnplwmqe.ipfs.dweb.link/Software%20Wasteland.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/William%20Kennedy%2C%20Brian%20Ketelsen%2C%20Erik%20St.%20Martin%20-%20Go%20in%20Action/William%20Kennedy%2C%20Brian%20Ketelsen%20-%20contributor%2C%20Erik%20St.%20Martin%20-%20contributor%20-%20Go%20in%20Action.mp3" type="audio/mpeg">
+</audio>
