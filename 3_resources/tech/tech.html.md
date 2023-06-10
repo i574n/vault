@@ -22,3 +22,27 @@ urlsuffix: wheregoes.com
 frame: https://
 style: height:40vh
 ```
+
+```custom-frames
+urlsuffix: www.webtoolhub.com/tn561411-url-expander.aspx
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlsuffix: urlexpander.net
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlsuffix: linkexpander.com
+frame: https://
+style: height:40vh
+```
+
+```custom-frames
+urlsuffix: redirhub.com/tool/url-expander
+frame: https://
+style: height:40vh
+```
