@@ -15,7 +15,7 @@
       "scss",
       "json",
       "ps1",
-      "tml",
+      "toml",
       "out",
       "png",
       "rs",
@@ -27,7 +27,7 @@
       "m4b",
       "mkv",
       "mp4",
-      "pdf",
+      "_pdf",
       "epub",
       "srt"
     ]

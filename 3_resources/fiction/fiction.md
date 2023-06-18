@@ -802,3 +802,16 @@ JAMES (Tremendo) Emma, precisamos sair daqui.
 
 ---
 ---
+
+1. **A Darker Shade of Magic por VE Schwab**: Nesta história, apenas alguns magos selecionados podem viajar entre os três Londons - Red, Grey e White - e Kell é um deles. Ele opera secretamente como um contrabandista entre os mundos, mas quando é roubado por Lila, uma ladra de Grey London, os dois se deparam com o lado sombrio da magia.
+
+2. **The Ten Thousand Doors of January por Alix E Harrow**: January Scaller se sente presa na mansão do parceiro de negócios de seu pai, um homem que coleta objetos mágicos e incomuns. Até que o pai de January desaparece e ela descobre um livro misterioso, e uma porta ainda mais misteriosa que pode levá-la a outros mundos.
+
+3. **The Future of Another Timeline por Annalee Newitz**: Tess é uma rebelde viajante do tempo determinada a destruir um grupo de misóginos viajantes do tempo que querem tirar os direitos e a autonomia das mulheres. Quando Tess chega a um concerto punk na Califórnia de 1992, ela conhece Beth, uma garota normal em busca de liberdade. À medida que as meninas se aproximam, elas devem enfrentar a ameaça de guerra que se estende por suas linhas do tempo e defender o passado para salvar o futuro.
+
+4. **The Light Brigade por Kameron Hurley**: The Light Brigade é o apelido para os soldados traumatizados da guerra com Marte. Mas o que realmente está acontecendo com esses soldados? Quando Dietz se junta à guerra e começa a experimentar lapsos na realidade - memórias que não se alinham com as do pelotão, ordens que não levam a nada - o novo recruta é forçado a se perguntar sobre o que realmente é essa guerra.
+
+5. **This is How You Lose the Time War por Amal El-Mohtar e Max Gladstone**: Red faz parte de uma utopia tecnológica cintilante; Blue é membro de uma consciência coletiva orgânica. Quando Red encontra a carta de Blue no fim do mundo, começa uma correspondência que atravessa o tempo e o espaço, conectando os dois através de diferentes linhas do tempo até o amargo fim. Enquanto começam como inimigos, Red e Blue lentamente percebem que quando você é o último humano na terra, as únicas pessoas em que você pode confiar são uma na outra.
+
+---
+---
