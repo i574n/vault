@@ -6,7 +6,7 @@ style: height:50vh
 ```
 
 ```custom-frames
-urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeie633eyjd6nvzcguxtqyvoqqjt6vz7747mrmvsyrq2boldfalkaau.ipfs.dweb.link/?filename=Sylvain+Kerkour+-+Black+Hat+Rust_+Applied+offensive+security+with+the+Rust+programming+language-https___kerkour.com_black-hat-rust+%282022%29.pdf#page=1
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeib3f3tt5pvjkkohisrtndwcdje2iwaswfhgsp3b7v74sbjtgi62ai.ipfs.dweb.link/?filename=Sylvain+Kerkour+-+Black+Hat+Rust_+Applied+offensive+security+with+the+Rust+programming+language+%282022%29+-+libgen.li.pdf#page=1
 frame: https://
 style: height:50vh
 ```

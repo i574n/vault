@@ -66,4 +66,10 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihu3uefmyukblbrvmwvtigxwmxihkjs4hjjosfoc73mb2uophdscu.ipfs.dweb.link/?filename=Papus+-+Tratado+elementar+de+magia+pr%C3%A1tica.pdf#page=1
+frame: https://
+style: height:50vh
+```
+
 ---
