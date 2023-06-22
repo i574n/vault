@@ -4,51 +4,51 @@
     "type": "split",
     "children": [
       {
-        "id": "448b38a972686561",
+        "id": "c148112e48735919",
         "type": "split",
         "children": [
           {
-            "id": "37ae66c65239621b",
+            "id": "2c9f36fe9d0a1264",
             "type": "split",
-            "dimension": 64.11526339486717,
+            "dimension": 45.28023598820059,
             "children": [
               {
-                "id": "2e9cbfc04f8590ff",
+                "id": "827a871d1df9834e",
                 "type": "tabs",
-                "dimension": 48.184176394293125,
+                "dimension": 50,
                 "children": [
                   {
-                    "id": "dc07dfe1a6bd2c0b",
+                    "id": "1e4247a357993666",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-04-18.md",
+                        "file": "data/spirituality/ressurection_pt-br.md",
                         "mode": "source",
-                        "source": false
+                        "source": true
                       }
                     },
-                    "group": "eece6a3cc1f6db5b"
+                    "group": "898bedda2532efba"
                   }
                 ]
               },
               {
-                "id": "ae111eccd8551ab5",
+                "id": "324240d2f1b88acc",
                 "type": "tabs",
-                "dimension": 51.81582360570688,
+                "dimension": 50,
                 "children": [
                   {
-                    "id": "e3a6351f403cf6d3",
+                    "id": "55df00fd14ac860b",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "2023-04-18.md",
+                        "file": "data/spirituality/ressurection_pt-br.md",
                         "mode": "source",
                         "source": false
                       }
                     },
-                    "group": "eece6a3cc1f6db5b"
+                    "group": "898bedda2532efba"
                   }
                 ]
               }
@@ -56,14 +56,13 @@
             "direction": "vertical"
           },
           {
-            "id": "f62a3abd7076771c",
+            "id": "62da1f3c53d64baa",
             "type": "split",
-            "dimension": 35.88473660513282,
+            "dimension": 54.71976401179941,
             "children": [
               {
                 "id": "015491a4973bd437",
                 "type": "tabs",
-                "dimension": 48.05447470817121,
                 "children": [
                   {
                     "id": "fd183899b74415ee",
@@ -71,18 +70,17 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "3_resources/dialects/korean.md",
+                        "file": "data/spirituality/file_cache/ressurection_en-us.md",
                         "mode": "source",
-                        "source": false
+                        "source": true
                       }
                     }
                   }
                 ]
               },
               {
-                "id": "e4ee6bec1d9537dc",
+                "id": "a5f5658258ba861c",
                 "type": "tabs",
-                "dimension": 51.94552529182879,
                 "children": [
                   {
                     "id": "c186d0d6ccec40d3",
@@ -90,26 +88,13 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "1_projects/gpt/rhyme 6.md",
+                        "file": "data/ai/chatgpt.toml",
                         "mode": "source",
-                        "source": false
-                      }
-                    }
-                  },
-                  {
-                    "id": "5a1f4bae50f63903",
-                    "type": "leaf",
-                    "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "1_projects/gpt/chatgpt.md",
-                        "mode": "source",
-                        "source": false
+                        "source": true
                       }
                     }
                   }
-                ],
-                "currentTab": 1
+                ]
               }
             ],
             "direction": "vertical"
@@ -144,7 +129,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "papus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,6 +143,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e0086965fbbcc4f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -181,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-04-18.md",
+                "file": "data/spirituality/file_cache/ressurection_en-us.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +191,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-04-18.md",
+                "file": "data/spirituality/file_cache/ressurection_en-us.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -221,7 +214,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-04-18.md"
+                "file": "data/spirituality/file_cache/ressurection_en-us.md"
               }
             }
           },
@@ -246,62 +239,68 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-custom-frames:Open https_dark://": false,
-      "obsidian-custom-frames:Open http://": false,
+      "random-note:Open random note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "terminal:Open terminal": false
+      "obsidian-custom-frames:Open https_dark://": false,
+      "obsidian-custom-frames:Open http://": false
     }
   },
-  "active": "dc07dfe1a6bd2c0b",
+  "active": "fd183899b74415ee",
   "lastOpenFiles": [
-    "2023-04-14.md",
-    "2023-04-18.md",
-    "3_resources/dialects/portuguese.md",
-    "3_resources/tech/tech.md",
-    "1_projects/gpt/chatgpt.md",
-    "3_resources/ai/ai.md",
-    "3_resources/politics/politics.md",
-    "3_resources/travel/maps.png.md",
-    "3_resources/travel/maps.md",
-    "3_resources/typing/typing.i574n.md",
-    "3_resources/travel/maps.html.md",
-    "3_resources/travel/travel.md",
-    "3_resources/typing/typing.md",
-    "2023-04-13.md",
-    "3_resources/typing/typing.html.md",
-    "3_resources/sex/sex.pdf.md",
-    "2023-04-12.md",
-    "3_resources/ai/ai.pdf.md",
-    "3_resources/magic/magic.md",
-    "3_resources/hip-hop/hip-hop.md",
-    "3_resources/weather/weather.md",
-    "2023-04-11.md",
-    "3_resources/personality/personality.md",
-    "3_resources/drugs/drugs.md",
-    "3_resources/food/food.md",
-    "3_resources/dialects/dialects.md",
-    "3_resources/food",
-    "3_resources/martial-arts",
-    "3_resources/physics",
-    "3_resources/hardware",
-    "3_resources/dance",
-    "1_projects/hanauittang",
-    "2_areas/chores",
-    "3_resources/clojure",
-    "3_resources/hunting",
-    "3_resources/motorcycle",
-    "3_resources/travel/attachments/Pasted image 20230301083934.png",
-    "3_resources/travel/attachments/Pasted image 20230228135416.png",
-    "3_resources/travel/attachments/Pasted image 20230227223718.png",
-    "3_resources/travel/attachments/Pasted image 20230227223418.png"
+    "data/spirituality/ressurection_pt-br.md",
+    "data/spirituality/file_cache/ressurection_en-us.md",
+    "data/ai/chatgpt.toml",
+    "data/workflow/file_cache",
+    "data/spirituality/file_cache/~WRD0002.tmp",
+    "data/spirituality/spirituality.pdf.md",
+    "data/spirituality/file_cache/~$ruvasaga_Kovai - ta-in - 1254.pdf",
+    "data/magic/magic.pdf.md",
+    "data/gaming/gaming.7z.md",
+    "data/spirituality/file_cache/Paul Selig - Resurrection_ A Channeled Text_ (Book One of the Manifestation Trilogy)-St. Martin's Publishing Group (2022).pdf",
+    "data/tech/tech.html.md",
+    "data/spirituality/file_cache/Guruvasaga_Kovai - ta-in - 1254.pdf",
+    "data/spirituality/file_cache/Sri Muruganar - Guru Vachaka Kovai-Ramakrishna Vedanta Study Circle (2004) - en-us - Sadhu Om and Michael James - 1254.pdf",
+    "data/spirituality/file_cache/Sri Muruganar - Guru Vachaka Kovai-Ramakrishna Vedanta Study Circle (2004) - 1254.pdf",
+    "data/sex/sex.pdf.md",
+    "data/religion/religion.pdf.md",
+    "data/programming/rust.pdf.md",
+    "data/gamedev/gamedev.pdf.md",
+    "data/gaming",
+    "data/politics/politics.pdf.md",
+    "data/ai/chatgpt.html.md",
+    "data/ai/ai.md",
+    "README.md",
+    "3_resources/web3/web3.pdf.md",
+    "data/dialects/file_cache/Learn Korean While You Sleep ★ Sleep Learning ★ Studying Korean Numbers [-Zp-3TAiK38].webm",
+    "data/identity/file_cache/marriage certificate 084442 01 55 2019 2 00057 107 0015664 37 - 2019-05-10.jpg",
+    "data/cliparts/file_cache/windows avatar.jpg",
+    "data/cliparts/file_cache/i574n avatar.png",
+    "data/cliparts/file_cache/prima avatar.png",
+    "data/writing/writing.html.md",
+    "data/writing/writing.md",
+    "data/windows/windows.html.md",
+    "data/windows/windows.md",
+    "data/workflow/workflow.md",
+    "data/workflow/vault.md",
+    "data/workflow/vault.html.md",
+    "data/workflow/test.md",
+    "data/workflow/tasks.md",
+    "data/work/work.fc1943s.pdf.md",
+    "3_resources/identity/file_cache/marriage certificate 084442 01 55 2019 2 00057 107 0015664 37 - 2019-05-10.jpg",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/transfer.png",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/token-default.svg",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/success.svg",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/standards.png",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/smart-contracts.png"
   ]
 }

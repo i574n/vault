@@ -845,7 +845,7 @@ A parábola da árvore e da serpente são úteis para entender. Não há nada de
 
 Agora, por favor, não pense que isso o torna errado. Imagine que você aprendeu uma língua na escola, tornou-se fluente nela. Essa é a língua que agora é falada em sua casa, e se tornou a norma. A linguagem da separação na densidade tornou-se a língua comum. Tudo é realmente falado em existência, e o pensamento é o catalisador para a maioria das manifestações. Mas existem outras causas nascidas através da necessidade coletiva. Você acredita que uma oração do coração pode ser atendida pela graça com muito bom motivo. O eco do coração reivindica-se através da densidade manifesta para a oitava superior. E a oração tem sido o principal veículo para intercessão, não porque a oração é necessária, mas porque o ato de orar em si move você para a reconciliação. A negação do Divino reivindicaria você sem oração.
 
-Agora, todas as orações são atendidas? Não, não como você deseja. O pequeno eu tem suas exigências: "Dê-me o que eu quero. Eu quero agora." Talvez você possa ter sucesso nesse nível. Mas o ensinamento que você receberá sobre a manifestação é o desafio que você enfrenta quando obtém o que pensa que quer. Porque o Verdadeiro Eu sabe, qualquer oração do coração que reivindica o Verdadeiro Eu como sua presença não pode estar em negação do Divino. Paulo interrompe o ensinamento: "As reivindicações e afirmações que vocês nos deram, ou os ajustes, são orações em si?" Não como você pensa. A vibração de cada reivindicação está em código energético, que traduz a intenção em uma representação pictórica no campo energético. Em outras palavras, a equação para o alinhamento superior está presente na reivindicação, e de fato nos ajustes, que é por que os corpos energéticos estão em escalada toda vez que são invocados. Quando se está em oração, está-se em uma consciência de unificação porque o próprio ato da oração confirma a onipresença do Divino mesmo quando o que está orando se sente desprovido e sozinho. É o ato de concordar com Deus que torna a oração profundamente bem-sucedida como a intercessora entre os reinos dimensionais.
+Agora, todas as orações são atendidas? Não, não como você deseja. O pequeno eu tem suas exigências: "Dê-me o que eu quero. Eu quero agora." Talvez você possa ter sucesso nesse nível. Mas o ensinamento que você receberá sobre a manifestação é o desafio que você enfrenta quando obtém o que pensa que quer. Porque o Verdadeiro Eu sabe, qualquer oração do coração que reivindica o Verdadeiro Eu como sua presença não pode estar em negação do Divino. Paul interrompe o ensinamento: "As reivindicações e afirmações que vocês nos deram, ou os ajustes, são orações em si?" Não como você pensa. A vibração de cada reivindicação está em código energético, que traduz a intenção em uma representação pictórica no campo energético. Em outras palavras, a equação para o alinhamento superior está presente na reivindicação, e de fato nos ajustes, que é por que os corpos energéticos estão em escalada toda vez que são invocados. Quando se está em oração, está-se em uma consciência de unificação porque o próprio ato da oração confirma a onipresença do Divino mesmo quando o que está orando se sente desprovido e sozinho. É o ato de concordar com Deus que torna a oração profundamente bem-sucedida como a intercessora entre os reinos dimensionais.
 
 
 
@@ -1138,6 +1138,1052 @@ Ponto. Ponto. Ponto. Pare agora, por favor.
 ## (PAUSA)
 
 Quando você foi desafiado em sua própria experiência, negou amor, ou foi atacado com medo, quando foi usado ou mal entendido, você começa a se identificar através da emissão da experiência. Você acredita que é quem você é. Embora isso nunca tenha sido o caso, o eu que acredita nessas coisas cria um investimento em manter sua identidade, mesmo que a identidade seja uma máscara de dor. Você se conforta em sua dor. "Olhe para o meu triste eu. Olhe para a tragédia que eu suportei. Olhe o que eu vivi." Mas se você percebe isso como uma medalha de honra, ou acha que o sofá nascido da dor histórica é onde você deve sentar, você continuará a se identificar através das próprias coisas que você considera calamitosas.
+
+
+
+
+
+
+
+Agora, este é um ensinamento muito simples de um quadro, o quadro da máscara da dor, o quadro de uma realidade distorcida, o quadro do que foi tão prejudicado que não pode ser redimido. O que você diz que não pode ser redimido, você tornou mais forte do que Deus. Isso se torna idolatria. E até este terrível hábito, ou aquela terrível predileção, ou aqueles pensamentos que o mantêm acordado a noite toda não podem ser mais fortes do que Deus. Você entende isso, certo?
+
+Agora, o tom que cantamos informa as páginas deste texto. É um tom vibracional que mantém uma intenção. A intenção do tom que acabamos de cantar era reconciliar aspectos do eu que foram descartados, abandonados ou negados. Quando algo é recuperado, pode se fazer conhecido. Pode ser re-visto de uma nova maneira. Não acredite por um momento que você tenha recuperado algo, porque ele se despede de seu antigo sentido de eu à medida que se junta a você na luz.
+
+Porque te amamos, nunca aumentaremos seu sofrimento. Porque te conhecemos, sempre vamos cantar para você dormir, se necessário. E o tom que cantamos, informando estas páginas, está presente para você através desta simples invocação:
+
+_"Eu ouço a canção da verdade. Sou reconciliado na verdade. E me conheço como seguro e amado."_
+
+Ponto. Ponto. Ponto. Sim, diremos que este é o fim do capítulo. Vamos chamar de "Reconciliação". Ponto. Ponto. Ponto.
+
+**4**
+
+# LIBERDADE
+
+## DIA DEZ (CONTINUADO)
+
+Estamos com você agora enquanto você avança, enquanto você vê o que vê diante de você com novos olhos. Estamos com você enquanto você caminha. E encorajamos você, nesta caminhada, a lembrar quem você é e só pode ser em verdade. O Divino como quem e o que, ao longo deste ensinamento, se manifestou nos campos energéticos daqueles que ouvem estas palavras e se alinham à verdade delas. Neste nível de alinhamento, o que você está reivindicando é inegociável. E diremos o que isso significa. "Isso é um pouco de Deus. Aquilo é um pouco mais de Deus." Isso não pode mais ser reivindicado. O triunfo do ensinamento, em última análise, é a recuperação da identidade e a manifestação da forma. E a negação do Divino, derrotada neste nível de triunfo, o Divino como ressuscitado e ressurreto, agora pode ser cantado pela humanidade, um e todos.
+
+
+
+
+
+
+O eco deste ensino, o efeito residual dele, estará nos campos de todos vocês pelo resto de seu ser. Como você opera com esta sintonia neste nível de alinhamento é de certa forma até você, e de outras maneiras completamente a alçada da Mônada, em conjunto com a alma, para se realizar no nível ou oitava em que agora pode chegar. A escolha é implícita aqui. A escolha, uma vez feita, cantada no campo energético, é um eco em amplificação que encoraja o que encontra a ser reconhecido. E a intenção que você mantém - "Eis que faço todas as coisas novas" - percebe o que é visto, reivindica o que é visto, no modelo da Sala Superior.
+
+Cada um de vocês diz sim ao que está diante de vocês agora. E enquanto continuamos este trabalho com você, diremos estas palavras: Este é um ensino de recriação e alinhamento que agora pode ser conhecido em manifestação. E as culturas pelas quais vocês cresceram, os mundos em que se conheceram, serão tocados e movidos e recuperados por vocês enquanto caminham nesta jornada adiante.
+
+Sim, isto está no texto. É o começo do próximo capítulo.
+
+Ponto. Ponto. Ponto. Pare agora, por favor.
+
+## DIA ONZE
+
+Quando falamos com você sobre o que virá, estamos olhando para as probabilidades. A escolha de ascender, que foi feita no nível do ser causal que você é, em tonalidade, em frequência, em escolha, é uma manifestação do Cristo que pode ser conhecido em forma. A escolha de se alinhar a este nível de acordo tem consequências na vida que você vive e no mundo que você compartilha. A escolha de incorporar, que é perceber esta manifestação, novamente vem a um custo. As escolhas que seriam feitas por medo, talvez por conveniência, as escolhas que seriam feitas com raiva ou em engano, serão enfrentadas. E isto é verdade para cada um de vocês e para todos que ouvem estas palavras.
+
+
+
+
+
+O ensino do dia é frequência, e alinhamento além de uma ideia do que você poderia pensar ou conceber como o pequeno eu. A pedra de toque para você agora deve ser experiencial. Você não está mais procurando pelas respostas escritas nas paredes, mas pela experiência da própria parede. E a própria parede, em experiência, libera a necessidade de ser uma parede, e você avança além de uma separação que você utilizou para estar em compreensão de uma realidade. _Compreensão de uma realidade_. Entenda essa frase - compreender algo, dar-lhe significado na compreensão, uma forma relacional de estar em engajamento. Compreender uma realidade também implica que existem outras realidades que podem ser compreendidas, e é para aí que te levamos agora.
+
+Agora, a escolha é essencial. Não estamos desconsiderando a experiência passada aqui. Estamos na verdade a utilizando. Você não está esquecendo quem você era. Você está reconhecendo quem você é. E a informação da história que é necessária para você sempre estará disponível, mas muito menos disponível estará seu apego a ela - o que deveria ser, o que deve ser, para conservar uma identidade ou um modelo de realidade que está agora em movimento. Quando você olha para o seu mundo e o nível de confusão que todos vocês estão vivenciando, você está olhando para uma realidade que está em fluxo. "O que pensávamos ser não é. O que queremos que seja não é, e o que é?" E você se debate por grãos de verdade dentro das mentiras às quais você tem se alinhado.
+
+Agora, quando falamos dessas mentiras, não estamos falando de um edital particular, mas de uma maneira de estar no mundo onde sua ascensão, ou ideia de eu em um modelo superior, foi precluída por uma crença de que não poderia ser assim. E, de fato, isso é uma mentira. Agora, quando você aprende a verdade, a verdade essencial - o que é verdade é sempre verdade - você começa a ter uma experiência de confusão porque o que você pensou ser verdade ainda está presente. Imagine que você esteja em uma sala com espelhos. Você usou os espelhos distorcidos tantas vezes que você aparece para si mesmo em distorção, e de fato concorda com isso. Onde pode haver um espelho verdadeiro na sala, você pode desconsiderá-lo porque não é o que você estava esperando ver. A mente racional, o eu através do qual você se entende, dará desculpas. "Bem, este não pode ser o espelho certo. Todo mundo diz que a distorção é verdadeira". Neste processo, você está encarando o verdadeiro espelho, e o que nunca foi verdadeiro se apresenta para ser visto, para ser libertado, para que o verdadeiro reflexo possa se manter.
+
+
+
+
+
+
+
+
+
+
+Agora, o mundo em que você vive está operando em grande distorção, há muito tempo. Você tem estado em luta desde que escolheu pegar uma pedra pela primeira vez. Você tem discutido desde que decidiu que deveria estar certo ao custo de outro estar errado. E você não entende o silêncio e a beleza que está presente nele, então você começa a encher todo o espaço com informação, som e tagarelice, para distrair você da verdade que ainda está presente. A cacofonia da escolha feita pelo medo está realmente atingindo um crescendo, e nós dizemos _cacofonia_ porque há um nível de tom que pode ser soado que é tão ensurdecedor que você é rendido ao silêncio através do próprio som. Esta é uma maneira de aprender. Mas como não podemos imaginar todos vocês sentados pacificamente em consciência, entendemos que vocês podem criar as circunstâncias para que esse silêncio ocorra.
+
+Agora, este é um silêncio interno, mas também pode ser um externo. O mundo em que você vive agora está tão ocupado decidindo o que é, como deveria ser, com as facções participando do que querem ou teriam, que você nem sabe o que é. Finalmente, temos que dizer que o que é será reconhecido e visto em verdade. E o próprio tecido da sua realidade, torcido em um nó, liberará aquelas coisas que não podem residir na oitava superior.
+
+Agora, a escolha de se alinhar neste nível deve ser coletiva. Há ensinamentos que escolheriam um acima do próximo. "Deixe estes irem para o topo da montanha e evitarem o dilúvio. Deixe aqueles perecerem no mar da escuridão". Estas são metáforas para escolhas altas e baixas. Mas isso não é o que vemos acontecendo aqui. Finalmente, sugerimos que a humanidade, em um momento de acerto de contas, veja não apenas a si mesma e suas criações, mas o efeito dessas criações uns sobre os outros. Imagine que você estava impondo uma mentira a um grupo de pessoas, sem saber que era uma mentira. Quando você entende a mentira e se alinha à verdade, o efeito residual da mentira falada ainda está presente e deve ser atendido. Como isso é atendido no nível do coletivo é feito de várias maneiras - responsabilidade pessoal, é claro, mas também responsabilidade coletiva por atos feitos e escolhas feitas pelo medo. Agora, a recriminação não é a resposta aqui. Já falamos sobre isso antes. Mas a verdadeira resposta é o amor, amar em expressão o que foi profanado, reivindicando a mentira em verdade ao custo do que a mentira perpetuaria. A condenação de seu irmão ou irmã pelo que eles escolheram ou acreditaram só lhe trará mais provações.
+
+
+
+
+
+
+
+Agora, imagine que há um navio afundando. Alguns de vocês estariam correndo para os barcos que poderiam salvar vocês. Outros poderiam estar ajudando seus irmãos ou irmãs. O que estamos prestes a dizer pode ser chocante, mas o barco está afundando e vocês são os próprios botes salva-vidas. Agora, o que isso significa é que cada indivíduo, em sua escolha de se alinhar com o superior, apoia aqueles ao seu redor em uma elevação. Isso não é uma elevação para uma ideologia ou para certas políticas. Não se trata de ter o seu jeito. Trata-se da expansividade da luz e do tom que você está mantendo, que pode segurar outro, e pode segurar mil mais. Nesta expansão, você está reivindicando o serviço. "Eu sei como eu sirvo."
+
+Agora, alguns de vocês acreditam que isso deve ser um ato que vocês empreendem. Paul está vendo alguém correndo por aí com uma rede de borboletas tentando salvar as borboletas. Ninguém vai ouvir vocês desse jeito. Ninguém quer ser salvo. Eles querem continuar nos caminhos que conhecem, perpetuar a ideia de si mesmos em qualquer nível em que tenham se sentido confortáveis. Quando dizemos que o barco está afundando, queremos dizer simplesmente que a estrutura que todos vocês utilizaram para determinar o que a realidade deveria ser está realmente em colapso. E os sistemas que sustentam essa realidade, sejam eles econômicos ou religiosos, o que quer que sejam, de fato serão reconhecidos. Mas quando a maré vem, lavando o velho, o novo está presente, e vocês, cada um de vocês, na luz manifesta que mantêm, tornam-se faróis para a tempestade, e outros verão a luz e serão elevados por ela. Tornar-se o farol é simplesmente saber quem você é. Veja um farol diante de você. Veja seus feixes irradiar e cair sobre as ondas escuras. O farol não está tentando ser. Ele está afirmando sua função. E esta função é iluminar e guiar para a segurança.
+
+Agora, entenda _segurança_ em um novo contexto. Todos vocês acreditam que a segurança é o conhecido. Não é o conhecido. A segurança é onde você chega em um estado liberado quando você não está mais determinando seu bem-estar em um conjunto de ideais que você herdou. "Eu estou seguro enquanto eu tenho um emprego, enquanto meu parceiro é fiel." "Eu estou seguro enquanto as crianças estão bem e o ar é limpo e a água é potável." Suas ideias de segurança são baseadas em várias coisas - sua ideia do que deve ser, e a sustentação básica da forma que você assumiu. A forma precisa ser sustentada, mas se sua crença na falta é tal que a água pode secar, o ar pode ser impróprio para respirar, você fará o que deve para criar melhores circunstâncias para si mesmo. Na verdade, o que você vê neste plano, neste reino físico em que você escolheu se encarnar, é um grau de falta de amor, uma falta de consciência da divindade, que reivindicou todas as coisas na separação. Você profana um oceano quando você não acredita que o oceano seja sagrado.
+
+
+
+
+
+Agora, sua ideia de segurança deve ser reentendida como operativa a partir da Sala Superior, onde você não pode ser atacado pelo medo. Usamos a palavra _ataque_ em um sentido ilustrativo. Imagine que você está em um cais. Abaixo do cais, os tubarões estão se alimentando. É melhor não pendurar as pernas abaixo do cais. Você vai sair sem elas. Você entende que o posicionamento não é tanto uma evasão, mas entender os requisitos do que significa estar seguro. Agora, quando um mundo está sendo recalibrado, que está em tom, quando tudo está mudando de uma vez, seu entendimento de onde pendurar seus pés está confuso. O que era seguro um dia não é no dia seguinte. Sua ideia de si mesmo está mudando tão rapidamente que você nem sabe que chapéu usar quando sai de casa. Permita a mudança, e permita que a mudança seja benéfica. Da Sala Superior, sua percepção de si mesmo como o que mudou não é reivindicada pelo medo. É o ato do medo que buscaria recuperá-lo nas águas escuras, sem a luz que você está chamando os outros para a segurança da margem em que você se senta.
+
+Agora, a margem em que você se senta pode ser entendida como o Reino, ou simplesmente outro nível de vibração que você alinhou de tal maneira que sua realidade confirmou sua nova posição ou maneira de ser. A realidade em que você se conhece agora não está procurando confirmar o antigo. Quando dissemos que havia uma parede com escrita sobre ela, e você lê a escrita na parede, seja lá o que for que ela diga, você está realmente confirmando a parede. Quando você vai além da parede, quando a parede desmorona, você se encontra em um novo campo. E um campo está sempre presente nestes ensinamentos quando desejamos que você entenda a ideia de realidade dimensional. A oitava acima daquela em que vocês se conheciam está em ressonância, reivindicando coisas para ela naquele nível, e dentro desse nível existem graduações, novamente uma oitava na Sala Superior com altos e baixos e intermediários. Cada um de vocês que diz sim a essa passagem vai realmente violar a parede de que estamos ensinando, mover-se além dela. Paul interrompe: "A afirmação 'Eu sou livre, eu sou livre, eu sou livre' não está fazendo isso?" De fato, está. Mas é o passaporte para a Sala Superior, e você pode estar na Sala Superior e ainda experimentar o eu na separação. Para começar a se mover em direção à união, é necessário uma aclimatação a um nível mais alto de entonação do que você sustentou até agora. Tornar-se um com a Fonte em sua realização, enquanto sabe como cuidar de um corpo, como navegar uma realidade compartilhada, é uma transição que poucos fazem. Mas estamos ensinando isso mesmo assim, porque a espécie que você é, em seu acordo coletivo para a mudança, está se alinhando a esse nível, mesmo que você ainda não o veja.
+
+
+
+
+
+O desmoronamento que você vê da realidade que conheceu pode ser visto de certa forma como os tijolos da parede caindo em pó — cada tijolo, cada afirmação de separação, contribuindo para a estrutura da realidade que você conheceu. Quando a parede se dissolve, quando cai com um grande som, ou silêncio, você tem uma compreensão do ser que foi negada a você antes, e por isso queremos dizer que a própria parede era preclusiva para sua herança. Agora, esta parede não existe na Sala Superior. Mas mesmo em seu alinhamento inicial com a Sala Superior, você ainda é mantido em certa abstinência da expressão total pelos vínculos que mantém com um mundo literal ou um mundo manifesto que você não acredita que possa ser movido.
+
+Os ensinamentos que você recebeu até agora têm sido preparações para essa transição em direção à unidade, ou reivindicação do corpo e forma e experiência a partir do ponto de vista desse farol ou Sala Superior ou Reino. Cada criação que você encontra neste nível de amplificação não só é escolhida para ser vista de novo, ou concordada para ser vista de novo, é reivindicada de novo por sua própria visão, por sua própria presença, e pela invocação do ser que ensinamos a você. "Eis que faço todas as coisas novas. Deus é. Deus é. Deus é". Se o feixe do farol tivesse uma chamada, seria assim: "Eis que faço todas as coisas novas; Deus é, Deus é, Deus é" — reivindicação no mais alto nível de entonação que um indivíduo pode sustentar enquanto mantém a forma.
+
+A manutenção da forma será discutida mais tarde neste texto. Mas por enquanto queremos que você entenda duas coisas. O próprio corpo está agora passando por uma mudança em preparação para manter o nível de tom que é necessário para essa transição, e a psique ou a mente está tendo que ser libertada de um estado de acordo para um novo. "O que isso significa?" ele pergunta. Bem, você está tão enraizado em suas exigências para a realidade que você ultrapassa ou declina o que está disponível para você além dela. Paul vê alguém em um carro com um mapa no colo, tentando traçar um curso. O mapa antigo é o que você está usando para determinar uma realidade que para todos vocês é inexplorada. Está presente agora. Na verdade, você está começando a experimentá-lo.
+
+Você pode dizer estas palavras depois de nós, se quiser:
+
+_"Neste dia eu escolho ser reunido com meu próprio senso de acordo com o que se expressa além do conhecido. Estou disposto a ser ensinado pelo novo e permitir que o antigo seja confundido. Estou disposto a ter uma experiência de ser que me alinha completamente com minha verdadeira natureza, e não vou inibir isso pela minha ideia do que deve ser. Como eu escolho isso, eu crio a circunstância para esta evolução em minha vida e em meu campo. E como eu digo estas palavras, eu sei que elas são verdadeiras. Eu sei quem eu sou em verdade. Eu sei o que eu sou em verdade. Eu sei como eu sirvo em verdade. Eu sou livre. Eu sou livre. Eu sou livre."_
+
+Agradecemos a cada um de vocês pela sua presença. Faremos uma pausa para o Paul. Ponto. Ponto. Ponto.
+
+## DIA DOZE
+
+Quando apresentamos através do Paul, temos uma agenda. Cada aula que oferecemos tem uma intenção por trás dela. E a intenção desta manhã é o reconhecimento de onde você se coloca no seu próprio caminho, o que você escolhe como obstáculo para se tornar seu professor. Agora, cada obstáculo neste caminho deve ser visto como uma oportunidade, mas o reconhecimento de um obstáculo pode ser um obstáculo quando não se quer olhar. Como uma pessoa se percebe, através do espelho defeituoso que mencionamos antes, é entender que você não pode ver com uma lente distorcida o que só pode ser visto à luz da verdade.
+
+
+
+
+
+
+Convidamos cada um de vocês hoje a se colocar diante de um espelho. Pode ser qualquer espelho que desejar, pequeno ou grande, mas o reflexo neste espelho guardará a verdade do seu ser, e a intenção aqui é não desviar o olhar, não negar o que você vê, não desculpar o que você vê, não fingir que não está lá. A escolha de reconhecer o eu, com todas as suas imperfeições e obstáculos, vai apoiar você em uma forma mais elevada de ver o eu. Mas isso não pode ocorrer quando você refuta a verdade para o conforto do conhecido. _O conforto do conhecido_ significa, muito simplesmente, "Eu não quero ver o que eu não quero ver, porque se eu de fato visse, eu teria que lidar com isso e mudar". O reconhecimento na verdade é o ensinamento. E a articulação da Mônada que vem à custa do velho será o que traduz a sua experiência como perceptor de si mesmo.
+
+Você se coloca diante deste espelho hoje com a vontade de ver. Agora, o eu que vê ainda tem predisposições. "Que eu goste de mim mesmo. Que eu aprove meu corpo. Que eu não pense naquelas coisas terríveis que eu disse um dia e que devem significar que eu sou isso ou aquilo". A sua ideia do que você deveria ser, ou acredita ser, seja alta ou baixa, cria um filtro obstrutivo. Agora, quando um filtro é retirado de uma lente de câmera, talvez o que se vê seja verdade. Mas o que está aqui para ser visto não é para ser julgado, mas reconhecido em neutralidade. Entenda isso, amigos. É você quem decide o que é digno ou não, o que é bom ou não é bom, o que pode ser compartilhado e visto e o que não pode ser. E o reconhecimento neste espelho não vai falhar com você se a sua intenção de ver claramente for apresentada em plenitude. Veja-se neste espelho e permita que o reflexo reivindique você. Quaisquer ideias de si mesmo que estejam impressas neste reflexo, qualquer desfiguração de si mesmo que você tenha acumulado através de idealização errada, percepção falha, escolha de ver em medo, ou escolha de negar a verdade, agora serão encontradas por você.
+
+Vamos chamar o Divino, o verdadeiro espírito de Deus, para a percepção que você tem, para que o que é refletido de volta para você seja em verdade. Agora, não estamos lhe dando o reflexo perfeito que é de fato como vemos você. Estamos mostrando como você obstrui através de uma identidade que você reivindicou em acordo com o medo. Este é o primeiro passo deste exercício. Deixe o espelho ser iluminado na verdade, e veja o que você vê, e permita-se ver o que é revelado para você. Não decida o que significa ver desta maneira. Permita que a experiência da visão ou percepção seja o presente que você é dado. Você não limpa um quarto sujo sem identificar a sujeira, nem libera uma falsa ideia de si mesmo sem um reconhecimento de que você aderiu a isso por algum tempo. Paul está vendo a imagem de curativos sendo puxados, cicatrizes sendo reveladas, símbolos de história queimados na carne, dor que tem sido mantida no corpo, atitudes de desprezo e luto, raiva e frustração, todas sendo vistas neste espelho. Porque elas têm estado presentes como a forma como você refletiria o eu, elas agora podem ser vistas para serem confrontadas.
+
+
+
+
+
+
+Agora, um acerto de contas é um enfrentamento de si mesmo e de suas criações, e esse acerto de contas é um profundo presente, porque onde pretendemos levá-lo é a um nível de vibração onde você não terá mais sequer o reconhecimento do que já foi, porque o eu idealizado, o Verdadeiro Eu, se quiser, estará presente e ocupando seu lugar.
+
+Na contagem de três, vamos reivindicar todos vocês na luz mais brilhante que vocês possam suportar. Agora, quando a luz é tão brilhante, ela reivindica o que encontra, e recria a partir delas o que só podem ser conhecidos como na verdade. Você tem um ato alquímico de expressão. E a reivindicação que fazemos agora para vocês não é para torná-los melhores, mas para que entendam que o que é visto neste espelho defeituoso da personalidade, o que agora está sendo visto na verdade, aquilo que vocês usaram para conhecer o eu em pequenas maneiras do eu, pode agora ser reivindicado em um novo espelho que reflete a verdade de uma maneira alta, não os obstáculos para a verdade ou os obstáculos para a verdadeira percepção.
+
+Na contagem de três.
+
+Agora um. Agora dois. Agora três.
+
+Sejam recebidos por nós e permitam que este espelho seja iluminado na luz perfeita, para reconhecer apenas o Divino que é o verdadeiro reflexo de seu ser. Os obstáculos que vocês mantiveram, os obstáculos na percepção, sendo reivindicados por esta luz brilhante, serão conhecidos de novo. E a reivindicação que vocês podem fazer agora conosco, "Eis que faço todas as coisas novas", falada para este espelho, irá retificar qualquer erro, reivindicar toda a escuridão, e escolher-se para ser conhecida de novo. Escolher-se para ser conhecida de novo é o Divino reivindicando cada aspecto do ser que ele encontra em sua verdadeira glória.
+
+Falamos estas palavras para vocês agora:
+
+_Neste dia reivindicamos que todos que ouvem estas palavras, todos que estão presentes para este reconhecimento, permitirão que as escamas caiam de seus olhos, camadas de engano, camadas de medo, e o que foi escolhido para negar a luz agora é re-escolhido para refleti-la. Nós sabemos quem você é na verdade. Nós sabemos o que você é na verdade. Nós sabemos como você serve na verdade. De fato, Você Veio._
+
+
+
+
+
+
+Agora, como isso é uma meditação e um ato de expressão, queremos agora que vocês se entreguem à energia que está presente para esta meditação, um ato alquímico de reconhecimento e re-saber. Paul está sentindo a energia ao seu redor como se fosse um chuveiro, afastando ou reivindicando o que encontra. Todos vocês podem fazer o mesmo, ou simplesmente permitir que o que está acontecendo no campo energético seja apresentado para que cada um de vocês possa re-conhecer o eu na verdade.
+
+O acordo que estamos fazendo com vocês hoje é para um processo de liberação do que tem os mantido à distância, e o que vocês levariam para a Sala Superior inconscientemente porque não entendem que o que escolheram para se conhecerem através tem sido um obstáculo para a verdade do Divino que está presente em todas as coisas.
+
+Vemos cada um de vocês como só podem ser vistos. Dissemos antes, sua beleza é irreconhecível para vocês. A profundidade da beleza em todos vocês está além do seu reconhecimento. Esperamos agora, confiamos agora, reivindicamos agora que vocês começarão a ver isso, porque o espelho que agora é apresentado a vocês será o espelho da verdade.
+
+Paul está vendo um espelho. Ele vê um redondo diante dele, e ele vê um reflexo que ainda não foi visto. Convidamos cada um de vocês a ver um novo espelho diante de vocês, através do qual ainda não foi visto, pelo qual nunca foram refletidos a partir da estrata inferior de reconhecimento através da qual se conhecem. Permitam que este espelho agora, deste lugar na Sala Superior, lhes conceda o presente da verdadeira visão. E _verdadeira visão_ significa ir além da aparência para o reconhecimento da verdade. Deixem-se ver o seu reflexo, sem obstáculos na sua beleza. E deixem que este reconhecimento seja impresso em vocês para que possam perceber seus semelhantes na mesma herança e vibração da verdade.
+
+
+
+
+
+
+
+A reivindicação que fazemos por você agora - "Será assim" - é o mandato para a articulação neste nível de acordo. Veja o corpo que você conhecia, veja a expressão da energia que você segura, veja até a ideia de si mesmo, desimpedido, sem obstáculos, em sua glória diante de você. E quando você diz essas palavras, deixe-as ser ouvidas através do campo inteiro, faladas ao infinito pelo único que sabe quem ele ou ela é:
+
+_"Eu sou livre. Eu sou livre. Eu sou livre."_
+
+E deixe-se ser conhecido, sem obstáculos, sem adornos. Simplesmente seja, como a Mônada, vindo em expressão na beleza de quem você é.
+
+Agora, vamos ensinar-lhe algo diferente. Quando você se alinha neste nível, você se torna uma autoridade na verdade. Isso não significa que você tenha opiniões. Não importa o que você pensa ou acredita. Mas o que importa é como você reivindica a verdade, e a verdade que falamos é o legado do Divino que reivindica o que encontra no amor. Você deve entender, amigos. Não há um Deus punitivo que castigaria suas criações. O legado de dor que vocês suportaram neste plano tem sido principalmente a exteriorização do egoísmo e a negação de Deus. Portanto, você deve agora ser generoso na verdade, e tudo o que você pode encontrar deve ser encontrado em um espelho que não reivindica o medo deles, ou as apropriações de medo, mas os reivindica na beleza do seu ser.
+
+Agora, entenda que esta beleza não é um elogio à aparência deles, mas um reconhecimento, e verdadeiro reconhecimento, de como eles só podem ser. Você se tornará como o espelho em que você olhou, que mantém a estrutura perfeita, o reflexo perfeito. Ser a porta para a Sala Superior é receber todos que você encontra em seu acordo com ela. E se você está julgando seus semelhantes, você os negou a entrada. Se você está reivindicando seus semelhantes na escuridão, você não está mais presente na Sala Superior como você pode pensar. E dizemos isso para Paul: Sim, um aspecto de todos vocês está sempre presente na Sala Superior, mas ao negar a luz em outro, você se moveu para uma graduação inferior de tom e escala.
+
+
+
+
+
+Agora, ser o espelho perfeito para o que você vê não significa que você condone atos que são prejudiciais. Não significa que você ignora coisas que você de outra forma pensaria mal. Significa que o ser que você é _é_ a visão de Deus, a reivindicação da visão de Deus, e você se torna o reflexo do Divino que está sempre presente em toda manifestação.
+
+Um eu idealizado, ou o que você assumiria ser um eu idealizado, seria aquele que nunca está doente, nunca está frustrado. Mas diremos algo diferente para você. Sua humanidade está intacta. Sua habilidade de sentir todos os sentimentos ainda está presente. Mas neste estado articulado a partir da Sala Superior, você é a acolhida de sua humanidade em todas as formas que ela tomou nos outros. Deus não pode negar suas criações, e consequentemente você não pode negá-las também. O amor que você pode ter por seu irmão não é um amor romântico. É o mesmo amor que o Divino conhece por _tudo_ o que vê, por _todas_ as experiências. Você não é o árbitro da verdade. Você é aquele que reivindica a verdade onde a mentira tem sido mantida.
+
+Diremos isto para cada um de vocês agora: Nós concluímos a primeira metade do texto. Diremos obrigado. Daremos a vocês títulos quando desejarmos. Estamos satisfeitos com sua presença e agradecemos. Pare agora, por favor.
+
+## DIA TREZE
+
+O que está diante de você agora é uma reconciliação do que foi negado ou refutado ou abandonado por você. Esses aspectos do eu, incluindo o eu sexual que operou em distorção, devem ser trazidos à tona para reconciliação.
+
+Agora, o eu sexual deve ser entendido como precioso como todos, mas nas culturas em que vocês foram criados, ele foi distorcido ou tornado vergonhoso. E a negação do corpo e sua preciosa divindade se manifesta em consórcio com a antiga vergonha do eu sexual. Para reconciliar o eu sexual é permitir que cada aspecto dele seja trazido diante de você e visto e acordado.
+
+
+
+
+
+
+Agora, concordar com o eu sexual não é torná-lo bom ou torná-lo mau. É simplesmente aceitá-lo. "Isto é quem eu fui, como eu desejei, como eu usei esta energia, como eu neguei esta energia". E compreender isto simplesmente como sendo assim é o primeiro passo para reconciliá-lo. Existem aspectos do eu que você nega que você está completamente inconsciente de, mas está agindo sobre eles, e como você atende a esses aspectos do eu deve ser feito de maneira semelhante. Qualquer memória que tenha sido enterrada, qualquer padrão que tenha sido ignorado ou negado, que não tenha sido conscientizado para você, também deve entender-se como da Fonte para que a reconciliação ocorra. E a manifestação disso, em alguns casos, é tornar visíveis aqueles padrões ou aspectos do eu que foram desassimilados, ou deixados de lado, ou refutados e negados.
+
+"Como isso ocorre?" ele pergunta. Principalmente através do acordo deles. Agora, você não entende, quando você olha para uma praia, que há grãos de areia que você pode pensar como envenenados que informam a praia. Mas, na verdade, eles estão lá, e um aspecto de você que opera como tal grão de areia na praia de seu campo energético pode ser reassumido através do acordo com ele. E, na verdade, a vontade de concordar com ele torna a escolha de se alinhar além dele - inclusive de sua presença, mas além dela - uma tarefa muito mais fácil.
+
+Agora, imagine que você tem um aspecto do eu que foi tão negado que ele cria seu próprio reino, sua própria maneira de operar, um órfão do eu que cresceu independentemente e encontrou sustento onde pôde. Você pode considerar este um aspecto do eu que opera em separação e reivindica uma identidade além até mesmo do anfitrião. Este aspecto do eu acredita-se tão negligenciado que fará qualquer coisa para se vingar ou chamar a atenção do anfitrião, para que a reconciliação seja possível. Você pode considerar este um aspecto do eu que busca vingança, mas isso não é verdade. Este é um aspecto do eu que busca atenção e energia onde quer que possa encontrá-la. Isso é reconciliado por você de uma maneira ligeiramente diferente. Porque você entende que a coisa opera com um eu ou estrutura independente, o ato de reivindicação deve tornar-se inclusivo de suas próprias criações.
+
+
+
+
+
+
+
+
+Agora, imagine que existe um aspecto de você que odeia o mundo, que tem operado de forma um tanto independente, causando seu próprio pequeno caos na vida vivida. Aquele que se pergunta por que os relacionamentos falham, por que ele está sempre sendo traído, pode estar se beneficiando dos atos de um aspecto exatamente assim. A reconciliação do produto da estrutura, ou esporo de identidade, deve ser recuperada como parte do todo. Então, em outras palavras, amigos, não só sua filha órfã deve ser reconciliada, mas as coisas que a filha órfã fez para chamar atenção ou em sua crença na separação também devem ser atendidas.
+
+Agora, o trabalho que temos feito com você até agora com espelhos é altamente benéfico, e vamos fazer isso um pouco diferente. A reconciliação de um aspecto do eu que criou uma estrutura independente, através do anúncio "Deus É", deve ser feita de uma maneira que seja inclusiva. Se você usar a afirmação "Deus É" como alguma forma de exorcismo ou renúncia a este aspecto, você encontrará este aspecto agitado e reagindo. Qualquer aspecto de você que tenha sido refutado na verdade requer apenas uma coisa, que é o amor e a aceitação. Porque esses esporos ou grãos de areia energéticos que operam de maneiras venenosas fizeram o melhor que puderam como resultado de sua recusa por eles, você deve entender que eles têm sido participantes de toda a sua experiência neste plano.
+
+Agora, imagine que existe um aspecto de você que foi criado aos sete anos - um incidente terrível, um ataque, uma altercação, um momento em que você não podia estar seguro ou ouvido. Para reconciliar este aspecto de você, do qual você pode estar inconsciente e que gerou uma série de crenças que o reivindicaram em ação, deve envolver uma reconciliação da ideia de eu que estava presente naquele momento. A identidade do sete anos é na verdade tão formada quanto a de quem tem noventa, mas está operando de maneira diferente. Ela acumulou menos experiência formal neste plano e, consequentemente, o impacto de toda experiência é muito maior porque foi seletiva de alguma forma sobre o que pode informá-la, pois está recebendo menos dados do que podem ser acumulados ao longo de noventa anos. A reconciliação da criança, ou experienciador de trauma, aquele que acredita ser separado, pode ser conhecida na totalidade.
+
+
+
+
+
+
+Agora, estamos dizendo isso intencionalmente. _Em totalidade_ significa como um todo, e reconciliar um eu que foi fragmentado, dividido ou negado, e agora opera como uma estrutura independente, deve ser visto como o ato de redenção que a Mônada é capaz de realizar. Não é o pequeno eu vasculhando uma praia cheia de areia para encontrar a pedra venenosa. Você passaria o resto de sua vida procurando. Mas a reconciliação, ou ser redimido por este aspecto de você que chamamos de Verdadeiro Eu, é o dom de estar, em um estado reconciliado. A manifestação desta afirmação, "Eu sou livre", significa menos que você está livre dos antigos comportamentos do que que você não está mais agindo sobre o impulso do ato original que criou a separação ou fragmentação do eu, o eu sexual, o eu que acredita que deve ser amado não importa o que faça e é punido por uma mãe zangada ou um pai decepcionado e então se acredita ser mau, o que é deixado para trás por acidente, ou sofre um encontro do corpo. Qualquer forma de acidente que aterroriza e torna conhecido o medo de tal maneira que a fragmentação ocorra deve ser compreendido como algo que pode ser mantido em total reconciliação.
+
+Agora, para entender a redenção não é entender a ideia de pecado, mas entender que o verdadeiro valor de qualquer coisa que tenha sido descartada ou refutada é conhecido pela Mônada ou Criador. Você não gostaria que aquela coisa voltasse para casa que você jogou fora há dois anos. Mas o aspecto de você que podemos chamar de redentor conhece muito bem a questão de fato, razão, para o seu deslocamento mesmo que você não o conheça, e pode reivindicar para você, e o fará, à medida que se realiza através deste velho tecido de história que se tornou distorcido por causa do seu medo ou experiência de separação.
+
+"Bem, como isso ocorre?" ele pergunta. "Você nos deu alguns exemplos agora, mas como isso ocorre? Como somos redimidos, ou como somos reivindicados?" Na Sala Superior, você pode imaginar uma câmara. Agora, usamos a palavra _câmara_ intencionalmente, porque é fechada. E o que acontece na câmara pode ser separado de sua experiência da Sala Superior como um estado de consciência ou vibração. Nós o convidamos agora a imaginar esta câmara na Sala Superior. E o que é mantido nesta câmara é um nível de velocidade ou tom vibratório onde esses aspectos do eu que foram negados e descartados podem e serão reconciliados.
+
+
+
+
+
+
+Paul imagina-se entrando, sentando-se no chão de uma câmara branca. A energia está parada e está prestes a se elevar. Quando cantamos através de Paul agora, estaremos cantando nesta câmara. Se você deseja se colocar na Sala Superior em uma câmara comparável, também cantaremos com você. O tom que está sendo cantado não erradica. Ele inclui. Reconcilia ou redime. Enquanto estamos cantando, queremos que você imagine que qualquer aspecto de você que você tenha envolvido em um espaço escuro, estava ignorante ou negado, será revelado, e nesta revelação, sendo visto ou aceito ou reconhecido, então se integrará à totalidade de sua expressão e não operará separadamente dela. Neste tom, a energia do amor estará tão presente para negar qualquer medo que possa ter se acumulado em torno disso. E sem medo, você pode permitir o retorno desta coisa para ser amada e integrada como do precioso ser todo que você é.
+
+Na contagem de três, Paul. Um. Agora dois. Agora três.
+
+_\[Os Guias Cantam Através de Paul.]_
+
+Seja recebido por nós como um todo. Seja recebido por nós em unificação. Permita que qualquer fragmento do eu, qualquer aspecto dissociado de você, qualquer fragmento do eu que acredite ser independente ou excluído. Veja-os em reconciliação. Permita que eles sejam amados neste tom residual que cantamos. Estamos cantando através dos campos energéticos de todos que ouvem ou leem estas palavras. Estamos anunciando sua presença na totalidade enquanto falamos. E dizemos estas palavras agora em seu nome. Não há nada que você pudesse fazer ou poderia ter feito, nada que você já acreditou ou escolheu, que possa colocá-lo fora do amor de Deus. Não pode ser assim. Reunindo aspectos de si mesmo no Verdadeiro Eu, o ato da Mônada como redentora, ou Cristo como Verdadeiro Eu, é o presente que você recebe agora. Nós o convidamos a permitir que a Mônada complete a tarefa de reconciliação, que é integração, ou permissão do todo, em aclimatação às antigas energias que foram devolvidas a você em um novo estado vibratório alto. Você nunca estava errado. Nunca foi certo. Simplesmente era. O que quer que tenha acontecido simplesmente foi. Você não nega o que aconteceu. Você dá permissão para ser re-conhecido.
+
+_Nesta noite, afirmamos que todos que ouvem estas palavras são re-conhecidos em totalidade._
+
+
+
+
+E enquanto falamos agora com Paul, lembramos a ele que qualquer experiência que ele teve que causou medo ou separação também está sendo reconciliada. O ser que ele é, está em reformulação e a integração dele é menos desafiadora do que ele pensava que seria. Ele vê uma janela agora. Ainda há manchas de sujeira, algumas rachaduras aqui e ali que estão sendo reparadas delicadamente, limpas e limpas. As distorções do eu, os ciscos no olho, se quiserem, os grãos de areia que poluem a praia ou a experiência do eu, estão sendo revistos, e você está livre das distorções que eles lhe ofereceram antes.
+
+Vamos interromper esta ditadura por um momento e depois voltaremos e ensinaremos um pouco mais. Paul, fique dois minutos em silêncio. Então falaremos mais um pouco. Ponto. Ponto. Ponto.
+
+## (PAUSA)
+
+Como alguém se conhece como mudada? Como alguém entende que a paisagem em que ele caminha foi alterada? Os sentidos são a primeira coisa, e as respostas que você tem emocionalmente são as maneiras pelas quais você começará a entender que o que operou em separação foi reivindicado de novo. A exteriorização de sua vida, você vê, quando informada por tais fragmentos ou distorções, se desenrola de acordo com eles. Ensinamos a você anteriormente sobre enquadramentos, que a maneira como você enquadra a expectativa de uma vida vivida lhe entrega essa vida. E as distorções que você utilizou, e de certa forma reivindicou como identidade, causaram uma vida nascida em distorção. Aquele que acredita que seu corpo é vergonhoso faz escolhas com vergonha. Aquele que acredita que sua sexualidade é maligna negará sua sexualidade ou agirá em mau acordo. Como qualquer ser humano é reconciliado nesses níveis deve ser entendido como transformação. Não como conserto. Transformação. Ser transformado ou feito de novo é ser redimido, reclamado, e feito de novo na Sala Superior através da Mônada, que é a redentora.
+
+
+
+
+
+
+Agora, esta é uma escolha que alguns de vocês farão. Vocês vão atender às mudanças que chegam, e então começarão a refutá-las, porque na verdade não conseguem imaginar o eu além das antigas estruturas. Imagine alguém que vive em um lindo apartamento. Ela se muda para um novo país. Ela redecora o apartamento no novo país para se parecer com o que ela estava. Agora, imagine que você estava vivendo na miséria, ou na vergonha, ou em uma disposição de sua vida que impedia o amor do corpo pela vida vivida, ou uma vergonha do corpo que negaria a sensação do corpo ou o toque íntimo. Você pode se mover na miséria para outro país. Você não pode redecorar o quarto no novo país que levamos você da maneira antiga. Então, alguns de vocês escolhem, em vez disso, olhar para a antiga vista, além das antigas cortinas sujas, para uma vista que pelo menos vocês entendem.
+
+Quando alguém se torna libertado de aspectos do eu que operaram na fragmentação, pode haver um período de se sentir deslocado em sua própria experiência. Agora, porque você está sintonizado com a Sala Superior e o trabalho que fazemos com você ocorre lá, você sempre pode estar presente aqui, nesta luz elevada de saber quem e o que você é. Mas os aspectos do eu que se sentem deslocados, você espera que estejam lá. Agora, imagine que você vive em um mundo onde as portas têm apenas quatro pés de altura. Você se acostuma tanto a se curvar ao entrar em uma porta, que se torna uma resposta automática. Agora a porta tem doze pés de altura, mas você se curva porque está acostumado a se curvar. Logo o suficiente, meus amigos, vocês ficarão eretos. Vocês passarão por essas portas sem serem prejudicados por distorção e antigas associações de dor.
+
+A negação do amor será o que abordaremos a seguir neste ensino. Este foi um capítulo sobre reconciliação, sim, mas de aspectos do eu que se conhecem sem amor. E a realização do amor do Divino não pode ser excluída por um fragmento que diz: "Não serei amado mais".
+
+Vamos intitular este capítulo "Liberdade". Continuaremos com este capítulo quando voltarmos amanhã. Obrigado a cada um pela sua presença. Pare agora, por favor. Ponto. Ponto. Ponto.
+
+### DIA QUATORZE
+
+Gostaríamos de começar discutindo suas vidas como elas têm sido vividas até agora. Cada um de vocês aqui está em um encontro com o desconhecido todos os dias ao despertar. Mas porque o conhecido tem sido tão presente, porque você opera no campo do conhecido, as escolhas que você faz, informadas pela história sempre presente ao seu redor, consolidam uma ideia de um mundo que é na verdade uma ideia e muito pouco mais. A verdade do seu ser, em um estado ressuscitado, opera em uma amplitude mais alta do que o mundo que você conheceu até agora. E a equivalência que você cria, uma vez que você articula como manifesta, é para um nível diferente de ressonância.
+
+Agora, o campo ressonante que você conhece - que o envolve, que lhe fornece as escolhas que você vê todos os dias - não é tanto substituído, mas reconhecido a partir do mais alto. E o ingrediente que você deve entender agora, como discutido na realização, é a verdade. Você está se movendo para o nível de verdade onde o que está em uma mentira pode não apenas ser visto, mas reconhecido na vibração. Sublinhe essas palavras, _na vibração_. As reivindicações que fizemos para você ontem quando o levamos a uma câmara onde você pode ser reconhecido estavam na verdade. A realização de quem se é, além de uma narrativa que você superpôs sobre as vidas que viveu, libera você de todas as maneiras de uma ideia de eu que é reivindicada na sombra. Rearticulação ou manifestação em uma oitava superior reivindica a identidade além da falsidade, além das ideias de escassez ou falta, porque você entrou em um acordo com o Verdadeiro Eu, que sabe muito mais do que você foi ensinado quando criança. O Eu Manifesto, que opera neste mundo, ou um mundo feito ou visto de novo, é o eu que reivindica o mundo manifestado em corressonância com ele. A negação do Divino já não está presente nesta oitava neste nível de tom. Então, o acordo que você está fazendo à medida que o levamos adiante é uma reconciliação, não apenas com a Mônada, mas com todas as coisas equivalentes a ela. Você entende o que estamos dizendo?
+
+
+
+
+
+
+
+
+O triunfo deste ensino, temos que dizer, é a renovação e manifestação em um nível causal, onde o plano manifestado é reintroduzido à sua verdadeira natureza através do processo que estamos engajando com você agora. A escolha de se alinhar neste nível, o acordo de surgir como esta luz manifesta, a escolha de ser, como esta articulação, em um campo ressonante que reivindica todas as coisas de acordo com ele, é se tornar visível. Vamos explicar o que isso significa. A pequena luz no seu peito, que brilha intensamente sempre, ultrapassa o ser que você é. Você é iluminado desta forma, e o acordo para esta luz chamar todas as coisas para ela é realmente visível. "Visível de que maneira?" ele pergunta. Imagine as nuvens se partindo e um feixe de luz se fazendo ver. Esta luz sempre esteve presente, mas foi impedida pelas nuvens. Desta forma, você começa a entender que você não é a luz, mas o veículo para a expressão da luz. E a negação do Divino não pode ser sustentada pela luz. Visibilidade significa que seu encontro com a escuridão, ou o que foi mantido na sombra, liberará a escuridão. O tom que você canta, o eco vibracional do seu campo ressonante, pode e estará em qualquer lugar que você seja levado. Isso não é apenas a caminhada até os correios, onde o que você encontra é visto de novo. Onde sua atenção está, você está, no nível de vibração. E o acordo para estar onde você é chamado, para levantar o que você vê ou está lá para você reivindicar, pela natureza da presença, é o ato da Mônada em um estado rearticulado.
+
+Agora, isso é verdade mesmo sem o corpo. A presença do Divino não é limitada pela forma. Mas sua expressão, embora inclua a forma, também não é limitada pela sua forma. E a realização de que você pode e estará, em múltiplos ambientes tendo múltiplas experiências simultaneamente, será uma surpresa para você. "Como isso acontece?" ele pergunta. "Parece desconfortável e não parece real." Nós diremos que já é assim. Você tem uma memória. Você é convocado para aquele nível de vibração. Você pensa em uma viagem. Você se imagina onde você vai. Mas neste nível de tom, o campo vibracional que você mantém, que é a consciência, está indo onde é necessário, e seu eco está traduzindo a expressão para o tom alto conforme necessário. Entendam, amigos, que a luz não decide sobre o que ela brilha. Ela simplesmente é. E neste nível de tom, vocês se tornaram disponíveis para essa ação. Estar em múltiplas ideias de realidade simultaneamente não está tão longe da sua experiência atual. Você tem uma ideia de quem você é que informa cada caminhada que você faz, chama cada coisa que você vê em concordância com a consciência que você manteve. Você tem sonhos onde você está livre das limitações do reino físico. E você entende que seu alinhamento com a Fonte reivindica você em uma oitava superior. Todas estas são maneiras de operar em múltiplas realidades, embora estas realidades sejam filtradas por você através do cérebro para um nível que você pode compreender. Seu acordo agora para uma expressão menos limitada está simplesmente dizendo: "Estou livre das limitações da experiência e expressão que a vida que eu vivi até agora me reivindicou."
+
+Agora, este nível de realização deve ser experiencial, e aqueles de vocês que vão buscá-lo - "Deixe-me ver a mim mesmo em Paris enquanto janto em Oregon", "Deixe-me ver a mim mesmo quando eu tinha dez anos, volte para a sala de aula onde eu fui prejudicado, enquanto lavo meus pés no oceano em um dia ensolarado" - uma vez que você entende que a realização é experiencial e não uma ficha a ser perseguida, você entende que todo dia é esta oportunidade para um nível superior de expressão. Paul interrompe: "Imagino as pessoas buscando níveis mais altos de expressão. Todo mundo quer a experiência. Mas neste caso, esta experiência não nasce em equivalência?" Absolutamente correto. A equivalência que você mantém em qualquer momento está reivindicando seu acordo com qualquer realidade que você encontre. Sublinhe a palavra _qualquer_. Existem mais realidades do que você pode imaginar. Algumas delas não precisam ser discutidas. Algumas delas estão presentes agora. Algumas delas reivindicarão você à medida que você se alinhar com elas.
+
+
+
+
+
+Todos vocês estão agora em um precipício de acordo, onde o que a manifestação significa pode e será inclusiva de um nível mais alto de tom que traduz o ambiente e reivindica você e o que você encontra, o que você reivindica em consciência, na Sala Superior. Como a porta para a Sala Superior, você está reivindicando todas as coisas em concordância semelhante. Mas sua experiência deste ato pode e será alterada por sua própria consciência à medida que os filtros que você usou para diminuir a expressão são liberados. Quando falamos com você ontem, instruímos você que existem aspectos do eu operando em certa independência do eu que criam experiência e te prendem ao reino inferior através de sua própria justificação do medo ou do que eles requerem para sobreviver. Sem essas inibições operando no campo energético, você se torna claro daqueles aspectos do eu que reivindicariam você fora do Reino. Uma vez que você possa descansar no Reino como uma consciência - é possível receber e perceber o Divino inerente como todas as coisas - você se move para novos requisitos de como você opera e como o campo de energia que você usa para trabalhar com a realidade pode se sobrepor e reivindicar todas as coisas.
+
+Paul pede esclarecimentos. A ideia de que o campo energético, sem impedimentos e sem amarras dos dados da história como tem sido, que os próprios sentidos se tornam inclusivos de experiências superiores, traduz sua própria expressão e maneira de ser no mundo. A ideia de superimposição simplesmente significa que todas as coisas são elevadas ao mais alto, ou ao modelo mais alto que é mantido na Sala Superior. O modelo para o Reino é simplesmente o que é. É simplesmente aquela única nota da Fonte como manifesta em todos os mundos manifestados. E quando você concorda em se alinhar a este nível, a encarnação ocorre nos estágios em que pode ser mantida pelo indivíduo. Alguns de vocês perguntarão, "Bem, como é? Como se sente?" Sente-se como quem e o que você é como libertado, em consciência da verdade do que você vê, em uma reivindicação do relacionamento primário com a ideia do Criador que pode ser mantida neste nível. Dissemos _ideia do Criador_ porque até que isso seja experiencial e simplesmente conhecido, você estará se alinhando a uma ideia que se fará conhecida através de você.
+
+
+
+
+
+
+
+O triunfo do ensino, novamente, é a ressurreição, e a amplitude do eu neste nível de alinhamento para apoiar um mundo feito novo. Todos vocês ainda buscam justificar o antigo. “Bem, esta é a minha conta bancária. Aquela é a minha hipoteca. Aquela é a minha família. Isso é o que fazemos e com quem falamos.” Embora todas essas sejam maneiras de conhecer o eu, elas têm pouco a ver com quem você realmente é. E embora você possa manter essas coisas na Sala Superior, elas se movem para o lugar certo, _lugar certo_ significando um acordo com o que é útil, que faz parte de sua experiência aqui, mas é simplesmente outra expressão do Divino que você pode conhecer Deus através.
+
+Nós cantamos suas canções para você para que você possa aprender as palavras, e a rearticulação é sua própria canção. E seu acordo com a única nota tocada, com a expressão de amor, com a encarnação no amor, é o presente que você dá através de seu próprio acordo com ele.
+
+Vamos parar agora por Paul. Ponto. Ponto. Ponto. Pare agora, por favor.
+
+### DIA QUINZE
+
+Fazemos a vocês perguntas hoje sobre o que vocês pensam que são, o que assumem ser, e como calculariam uma identidade baseada nos princípios que herdaram - o que faz um bom homem, uma boa mulher, o que faz uma boa vida. As ideias que vocês têm, nascidas na história, são úteis em um modelo que os vincula à realidade tridimensional à qual vocês têm aderido. Mas porque vocês se elevaram ao que chamamos de Sala Superior, que é a realização da Mônada em princípio, vocês foram sobrescritos, de certa forma, pela verdade.
+
+
+
+
+Agora, _pela verdade_ significa o que é sempre verdadeiro. E qualquer cultura ou sociedade criará as regras de que precisa para sobreviver, talvez à custa da sobrevivência dos outros. Na Sala Superior, a ideia de unidade, ou pluralização, torna-se um princípio ao qual você está aderindo. Agora, um princípio não é uma ideia, como ensinamos, mas uma verdade fundamental. E a verdade da pluralidade é que vocês são todos da mesma essência, não importa o quanto neguem isso. E a realização disso, mesmo para um único indivíduo, tem ramificações sobre o coletivo. Alguns de vocês acreditam que fazem caridade, atos de bem, para servir à progressão da alma. E embora isso seja verdade em certo nível, em qualquer ato de caridade você é lembrado do dom do ser que é sempre estendido a outro através de uma realização de unidade ou unicidade. Para mover-se para esse nível de consciência — unidade ou unicidade — requer a realização de que as velhas ideias, úteis como têm sido para navegar neste mundo que você conheceu, não são quase tão aplicáveis no outro.
+
+Agora, a pergunta que Paul tem é: "Como você navega por dois mundos? Como você realiza o eu na Sala Superior, paga seus impostos no inferior? Como você ama seu irmão como a si mesmo quando seu vizinho está te incomodando?" Você faz perguntas, vê, Paul, nascidas do antigo modelo, como se fosse sobrepor o antigo modelo à Sala Superior para ver quais regras ainda são pertinentes. Na Sala Superior, há uma verdade, e a verdade final é "Deus É", que pode ser conhecida ou fragmentada de outras formas que apoiariam sua realização da grande verdade.
+
+Agora, entenda, Paul, que cada um de vocês nasce para realizar o eu através de uma realidade manifesta à qual vocês escolheram se alinhar. A escolha de se alinhar ao superior não necessariamente aniquila as lições que a alma chamou para si mesma com o propósito de uma encarnação. Se você veio aqui para aprender o amor, de fato você aprenderá o amor. Se você veio aqui para aprender coragem ou abnegação, aprenderá essas lições também, e chamará para você as circunstâncias e pessoas que serão seus melhores professores.
+
+
+
+
+
+
+
+Agora, a experiência disso na Sala Superior é um pouco diferente do que você pensava. Claro, você tem amizades, relacionamentos, aqueles que você aprecia, na Sala Superior. Mas você também tem aqueles que nunca conheceu e que não está mais excluindo da luz que você é. E sua inclusividade, que simplesmente significa permissão para todos os seres existirem, é o passo que você precisa dar na afirmação "Deus É". Você imagina uma fronteira ao seu redor, Paul, que convida alguns, recusa outros, e embora entendamos suas exigências como personalidade para isso, você faz isso a um custo. Amar o outro como a si mesmo implica que você conhece o amor próprio. Poucos de vocês realmente o conhecem. Você ainda acredita que é o amante, quando é Deus que ama através de todos vocês. E o alinhamento com Deus, como ensinamos, é de fato o alinhamento com o amor. E Deus não pode excluir nenhuma de suas criações do amor que tem por todas - a afirmação "Deus É", uma reivindicação de inclusividade e totalidade.
+
+Agora, você pode imaginar por um momento que você é como um oceano, e que as ondas do seu ser tocam cada costa que é participante. Este oceano que você é toca todos, não apenas aqueles que você encontra, mas aqueles que você mantém na consciência. E a realização de "Deus É", em totalidade, é como se tornar o oceano, inclusivo de tudo.
+
+Agora, você ainda não entende, Paul, qual é o seu papel nesta missão. Será revelado a você com o tempo. Mas porque esperamos que você parasse a ditadura se compreendesse isso completamente - você não quereria ser responsável por grandes mudanças no mundo - continuaremos agora com este pedaço de informação para você. Os textos que estão sendo escritos através de Paul são chaves para a liberdade, e chaves para a recriação. Uma chave só funcionará se for colocada na fechadura e girada. Uma chave sem uma porta é meio inútil. Mas dizemos a cada um de vocês agora: vocês são todas as portas. E as chaves que vocês estão recebendo abrem vocês para o serviço de serem como o oceano que reivindica cada costa em sua própria perfeição.
+
+
+
+
+
+
+
+Agora, Paul se imagina separado, confortavelmente separado. “Decidirei quando as luzes se apagam à noite, a que horas me levanto de manhã, o que vou comer e o que vou escolher.” E você se entende em singularidade da maneira como a maioria faz, a ideia de autonomia no livre arbítrio, o que é escolhido por você para aprender com isso, que apela à sua ideia de segurança e conforto. Estamos prestes a acabar com a segurança e o conforto como você entendeu. E isso não significa que você esteja inseguro ou mesmo desconfortável. Mas a ideia de conforto que você escolheu, Paul, e muitos outros também escolheram, é decidida pelo eu que exige separação. E o eu inclusivo, a Mônada em realização, não pode manter essa vibração. Sublinhe _não pode._
+
+Imagine que você ficou grande demais para a casa em que vive. Você empurra as paredes e os tetos, e os rodapés também. As paredes começam a desmoronar, o teto se liberta, e você é você mesmo, livre do sentido de limitação que utilizou, pela ideia de conforto e segurança que utilizou, para navegar neste reino. Agora, o eu encarnado, aquele que vem como realmente é, não tem as mesmas exigências de segurança. Paul interrompe: “Desculpe-me enquanto digo isso. Mas há momentos em que as pessoas me incomodam. Não quero atender o telefone às duas da manhã. Não quero deixar alguém entrar em casa que não me sinto confortável. O que acontece com essas necessidades?” Essas necessidades estão presentes na prudência. Você ainda está escolhendo, mas as escolhas que está fazendo, não reivindicadas pelo medo, passam para uma inclusividade onde o que você está chamando para você é sempre de Deus. Agora, sublinhe isso, por favor - _sempre de Deus._ Porque o eu que é realizado aqui, que sabe quem é, que sabe quem os outros são como resultado, não está predizendo separação por sua presença, ele reivindica inclusividade porque esta é a luz que você se tornou. E a realização disso, como a porta para permitir a entrada de outros, não é que eles vão roubar sua prata ou incomodá-lo no meio da noite, mas que eles serão elevados por seu acordo com eles.
+
+
+
+
+
+Agora você reside na Sala Superior, quer saiba disso ou não. Isso é para você, Paul, sim, e muitos dos nossos alunos também. Residir na Sala Superior simplesmente significa que você percebe o eu neste nível de tom ou oitava. E a inclusividade que está presente agora é algo que deve ser entendido como o produto ou resultado de ter superado a velha casa. Quem reside na casa velha, com suas janelas, cortinas e fechaduras, conhece uma vida que está separada da Fonte.
+
+Isso não significa que você não viva em uma casa real e não feche as janelas quando chove. Significa que o ser que você é, que descansa no conforto do conhecido, superou o conhecido e a ideia de segurança ou conforto que é baseada no isolamento ou na negação da presença de outros.
+
+Todos vocês dizem que buscam amor, ou que querem amor, ou que desejam estar apaixonados, mas sua ideia disso, em quase todos os casos, é convidar alguém para a casa pequena e puxar as cortinas de uma maneira isolada. Quando você superou o pequeno eu, na inclusividade, a realização dos outros não tem esforço anexado. Vocês entendem isso, todos vocês? Você não está buscando realizar o Divino nos outros. Na Sala Superior, eles são realizados porque você está lá para percebê-los. E da Sala Superior, o que é visto é de Deus. Os hábitos que vocês formaram sobre exclusividade, que alguns de vocês chamariam de limites e outros chamariam de barreiras, devem ser vistos agora de uma maneira diferente. Paul interrompe: “Bem, qual é um limite saudável na Sala Superior?” Vamos responder a isso em breve, Paul. Queremos dizer primeiro que este nível de realização, à custa do velho, tem seus próprios requisitos para cumprimento. Como cada estágio que você faz em sua progressão para a frente tem uma fronteira ou uma porta que você atravessa na ascensão, cada um tem seus próprios requisitos.
+
+
+
+
+Agora, a ideia de um limite saudável já foi discutida em textos anteriores. Se alguém pisa no seu pé, por todos os meios, por favor diga: "Você acabou de pisar no meu pé. Por favor, não faça isso de novo." Se eles continuarem a agir dessa maneira, afaste-se ou faça o que for necessário para se proteger. Isso é verdade. Você tem um corpo. Você é responsável pelo bem-estar dele. Se a casa está pegando fogo, saia da casa. Você entende isso. O que você não entende, Paul, é que a pessoa que você consideraria como tendo um limite não saudável está operando no medo, ou tentando negociar uma identidade por meio da proximidade com outra. Quando alguém tenta negociar identidade por meio de outra — "Diga-me quem eu sou como eu desejo ser visto" — eles estão reivindicando você em vibração mais baixa. O antídoto para isso é estar no mais alto, onde eles não podem reivindicar você em seu medo ou egoísmo, mas você pode reivindicá-los. "Eu vejo você na Sala Superior. Eu sei quem você é em verdade, o que você é em verdade, como você serve em verdade. Você está livre. Você está livre. Você está livre." Agora, estas não são palavras que são ditas para apaziguar. Você não está acariciando um gato que você acha que pode arranhá-lo a menos que seja apaziguado. É a realização deles a partir da Sala Superior que os recupera além de sua própria história e necessidade de se apegar através do campo vibracional mais baixo.
+
+Sua própria ascensão, Paul, à medida que progride, teve requisitos. E liberar aqueles que buscam se apegar no mais baixo tem sido desconfortável às vezes, mas um requisito para seu bem-estar. Isso é verdade para todos vocês. O que isso não significa é que você está passando por sua agenda, riscando nomes daqueles que você presume que devem estar em baixa vibração. Significa simplesmente, em seu alinhamento com o mais alto, que o que foi negociado no medo é reconhecido no amor, e o que cai fora é o que não é mais necessário, o que não pode ser mantido no nível de tom ou velocidade com que você agora se alinhou. Todos vocês passarão por isso. Nós dizemos isso para Paul, que está preocupado. Ele acredita que as pessoas dirão: "Bem, é hora de deixar aquele emprego, é hora de deixar aquele marido ou esposa, é hora de se afastar de tudo que eu conhecia."
+
+
+
+
+
+Qualquer ação tomada neste nível de realização é reivindicada no amor e não no medo. Você não está tirando algo de si mesmo que tenha se enraizado lá, para desembaraçar e se libertar. Essas coisas caem à medida que você se desapega das exigências delas. E suas próprias exigências estiveram presentes em todos os relacionamentos que você já teve. Sublinhe isso, amigos: _todos os relacionamentos._ Eles estão lá como seus professores. Nem todos os ensinamentos são agradáveis ​​ou confortáveis, mas a alma tem mandatos para o crescimento e os chamará para si mesma conforme os requer.
+
+Os acordos que temos com você sobre seu bem-estar, ao empreender esta jornada conosco, são de que você não será enganado, não será mal ensinado e sempre terá a escolha de concordar com o que dizemos ou escolher algo diferente. Nós caminhamos com você pelo tempo que você desejar caminhar, mas a alma que você tem, o árbitro de suas próprias experiências, está lá para seu conselho. E a Mônada ou Verdadeiro Eu que é seu Verdadeiro Eu em liberdade é aquele a quem você finalmente responderá.
+
+Vamos ensinar agora o que significa estar livre de uma ideia de si mesmo que predica seu bem-estar em como ela é vista pelos outros, como ele é percebido pelos outros, e a ideia de que um eu deveria ser estimado de certas maneiras. Novamente, sua ideia de conforto, mesmo dentro de uma comunidade, é ter um senso de si mesmo e do papel que você desempenha. A padeira conhece seu lugar na comunidade cada vez que um pão é presenteado a outro. A criança se conhece em relação aos seus pais e professores e entende que seu bem-estar e crescimento são baseados nessas relações. Mas quando você chega a um certo ponto nestes ensinamentos, até a ideia de como você acha que deveria ser e ser visto deve ser substituída por quem você realmente é. Agora, _realmente é_ não significa que você não faça pão. Não significa que você não vá à escola. Mas significa que o Verdadeiro Eu, que não tem rótulo ou descritor dentro da comunidade, pode realmente sustentar a comunidade e elevar a comunidade em vibração sem ser visto como aquele que o faz. Você está liberando a necessidade de ter uma etiqueta com seu nome e uma descrição de trabalho que esteja a serviço de uma ideia de si mesmo que está operando em limitação.
+
+
+
+
+
+Paul interrompe mais uma vez: "Mas ainda assamos pão se é isso que fazemos?" Sim, você faz. Mas seu senso de valor e requisitos para conhecer a si mesmo, foram além desse ato de generosidade ou habilidade. Você simplesmente se tornou quem e o que você é. E como você é percebido por outra pessoa não precisa se adequar a um descritor que seria atribuído a você para o conforto do conhecido.
+
+Novamente, você superou a velha casa. A velha casa caiu. Alguns de vocês começarão a entender isso experiencialmente. Vocês realmente sentirão a expansão em seu campo energético de uma maneira que nunca fizeram antes. Outros de vocês de repente perceberão que uma vez pensaram que eram seu trabalho ou seu papel na comunidade, e vocês não mais experimentam isso. Há algum desconforto aqui, mas muito, muito pouco. Cada um de vocês diz sim ao nível de acordo que escolheu.
+
+Diremos isso agora para Paul: Vamos parar essa ditadura e retomar amanhã. Ponto.
+
+### DIA DEZESSEIS
+
+Nós estamos diante de você hoje em reconhecimento de criações passadas, onde você negou Deus, onde você escolheu ver algo além de Deus, onde você negou o Verdadeiro Eu que está de fato aqui para você reconciliar com a verdade de qualquer situação pela qual você foi responsável ou se conheceu como parte. A realização do Divino como a essência de sua vida, a própria essência de sua vida, é o que vai recriar sua vida.
+
+
+
+
+
+
+Agora, Paul está vendo o tecido esticado. Vocês imaginaram suas vidas como bordados neste tecido, as coisas que aconteceram com vocês, as coisas a que vocês se opuseram, as coisas que encontraram que foram seus professores. Mas o próprio tecido, aquilo em que estas coisas são costuradas, pode de fato ser renovado através da redenção de uma vida pela Mônada. Ser redimido é ser reclamado. Não estamos falando de pecado. Estamos nos referindo a onde você escolheu, consciente ou inconscientemente, negar este tecido, o próprio Deus, quando ele sempre esteve presente. Agora, reconciliar neste nível é um requisito, porque as emissões do que você chamaria de carma, aquelas coisas costuradas no pano que cicatrizam o pano ou impedem o pano de expressão plena, nunca foram quem você é, mas é o que você criou através do ato de negação. E para recuperar o eu e a vida vivida deve envolver uma reconciliação, não apenas com a ação passada, mas a negação do Divino que impediu sua verdadeira expressão.
+
+Agora, o valor do que nós te levamos hoje não pode ser subestimado. O que estamos fazendo com você é recuperar a vida que foi vivida com um mandato para um novo encontro com as criações passadas que irão te elevar além da causa e efeito, como você a conheceu, para uma realização do Divino onipresente onde foi mais obscurecido por você - e sublinhe _por você_ - onde você escolheu o outro, negou a verdade na ignorância ou em uma reivindicação de medo.
+
+Agora, quando ensinamos através de Paul, fazemos o nosso melhor para superar sua resistência. Quando falamos de carma, ou atos passados, ou a ideia de um encontro com o medo, ele fica ansioso. "Por favor, não mais mares revoltos". Bem, o mundo em que você está se expressando, Paul, está _em_ um mar agitado, é _como_ um mar agitado, e todos vocês estão sendo levantados para o topo de uma onda que pode te levar para o novo, a menos que você seja esmagado no velho enquanto ele desaba. Nossa reconciliação com você deve então envolver uma recuperação da vida vivida, inclusiva da escolha passada. As ramificações dessas escolhas já estão presentes em seu campo. Novamente, pense em bordados, ou costuras em um pedaço de pano ou véu.
+
+
+
+
+Para perder o bordado no véu é liberar as ideias que acumularam valor que foram manchadas lá no medo, costuradas lá na raiva, reivindicadas na raiva, que você agora usa como bordado ou costura no que você chamaria de campo áurico.
+
+Agora, quando uma vida é feita nova ou recuperada na oitava superior, o efeito residual da escolha passada ainda está presente na vida vivida. Para reconciliar isso com a oitava superior não é negar a escolha passada, punir o eu pela escolha passada, ou temer as ramificações dela. É simplesmente compreender que o que foi, foi. E a ação que tomamos com você agora, reconciliação com a ideia de história onde você tem sido participante e ator no efeito da negação do Divino no modelo que você vive, deve ser decidida e pode ser assim. Quando dizemos _deve ser decidida,_ simplesmente queremos dizer que é o seu acordo para este nível de re-criação que permite que ela venha a ser. Novamente, dizemos isto para você, Paul: Este é um passo necessário para todos, para liberar uma ideia que tem informado sua experiência, baseada em escolha passada ou medo que ainda mantém ramificação na vida vivida. Diremos estas palavras agora em seu nome:
+
+_Neste dia reivindicamos que a realização da Mônada no campo energético irá recuperar e re-ver qualquer aspecto do eu que tenha se envolvido na negação do Divino ou refutado o Divino por medo, consciente ou inconscientemente. E porque reivindicamos isso para cada um de vocês no Verdadeiro Eu, em verdadeiro alinhamento, em um mandato de amor, podemos apoiar cada um de vocês em um nível de ressonância onde esta reconciliação pode ocorrer sem um viés ou medo do que ela implicará._
+
+Vamos imaginar que você veja, Paul, você mesmo entrando embaixo de um chuveiro. Quando você entra no chuveiro, você não está limpo. O objetivo do chuveiro é lavar o corpo. Quando você é elevado a este nível de ressonância, enquanto as coisas caem por si próprias, ao que você ainda é responsável são as ramificações da escolha passada. E neste caso queremos dizer a negação do Divino em qualquer forma que os atos tenham tomado. Nosso acordo agora é que isso será feito no amor, na liberdade, e em um acordo para ser re-conhecido além da escolha anterior. Quando você faz esta reivindicação, "Eu estou de acordo para ser conhecido além da escolha anterior", você está dando permissão para o movimento do antigo e a reconciliação com o novo, que libera o ponto ou o bordado ou a manifestação no campo energético da negação do Divino que ainda te reivindica em alinhamento com o seu medo ou o seu acordo com o medo.
+
+
+
+
+
+
+Dizemos isso novamente para cada um de vocês: A capacidade que temos de verdadeiramente conhecer vocês, de testemunhar a verdade de vocês, pode e irá suplantar o que não é verdade e nunca foi verdade. E neste acordo com vocês, não só vocês são re-conhecidos, vocês são redimidos, porque o campo energético que vocês mantêm agora pode reivindicar seu alinhamento com a Mônada, a verdade do seu ser que está sem medo, o Puro Eu, intocado, não afligido, o aspecto de vocês que é o Divino entrando em manifestação ao custo de qualquer ideia ou ação anterior que o refutaria.
+
+Paul interrompe o ensinamento: "Bem, há consequências para as ações passadas ou pensamentos passados que tivemos, uma vez que isso acontece?" Há efeito residual, mas você não está mais criando a partir dessas manchas ou deste bordado no campo energético que ainda serve como atrator para o que você chamaria de carma. Isso não é limpar a lousa. É liberar a necessidade, a primeira necessidade, de negar o Divino, que reivindicou todas as dificuldades que se seguiram. Este reconhecimento para liberar o impulso, o desejo, de refutar o Divino irá recuperá-lo e liberar as criações que você escolheu de acordo com isso.
+
+Dizemos isso agora em alinhamento com a sua verdade: O aspecto de você que já está livre, que se alinhou a Sala Superior, é o aspecto do eu que está em fruição, está em flor, através deste tratado. Este aspecto de você, sem pecado se você quiser, sem medo se você quiser, é o que recupera cada um de vocês. E sua renúncia às suas responsabilidades para com a sua própria negação do Divino é agora um inibidor que está sendo abordado no amor e na eficiência. E dizemos _eficiência_ porque o tom em que operamos é a recuperação, e os mandatos do medo que você escolheu e agora é responsável - novamente, o ponto no campo - podem ser perdidos para que você possa entender que o tecido, a própria vida vivida, é Deus em sua expressão. A vida vivida, e tudo que se encontra, é Deus em expressão, operando em tons variados em acordo com a vontade.
+
+
+
+
+
+Agora, a reconciliação da Vontade Divina com a vontade da estrutura da personalidade já foi discutida, mas voltaremos aqui por um momento para que você entenda que a escolha de concordar com este nível de limpeza, ou reconciliação com suas próprias criações, é a reivindicação do Cristo dentro de cada um de vocês. O desejo de se alinhar à Vontade Divina _é_ a Vontade Divina de acordo com a sua verdadeira natureza. Você se tornou quem você realmente é. Você não está mais aspirando a isso. Você é libertado do antigo quando você se torna do tecido do Divino em perpetuidade. "O que isso significa?" ele pergunta. Isso significa que você nasce de novo, que a criação de sua expressão, imaculada, sem adornos, uma expressão do Divino que veio à sua maneira única como você, está em perpetuidade ou desdobramento contínuo. Quando você está liberando neste nível, você não está recuperando o que libera no acordo inferior. Quando um aspecto do eu é reconciliado com a Fonte, ele é re-conhecido como do tecido do todo porque não está mais o negando.
+
+_Nesta noite reivindicamos, neste dia reivindicamos, nesta vida reivindicamos que todas as criações feitas no medo serão reconciliadas com a verdade, e a verdade do Divino que de fato faz todas as coisas novas._
+
+Não somos seus pastores. Somos seus professores, como vocês desejam. Vocês se tornam os pastores quando caminham adiante, porque a luz que vocês são, imaculada, sem adornos, reivindica tudo que encontra no amor.
+
+Vamos parar esta ditadura por hoje. De fato, este é o fim deste capítulo. Ponto. Ponto. Ponto.
+
+**PARTE II**
+
+**O Nascimento do Novo**
+
+**5**
+
+# UM MUNDO FEITO NOVO
+
+## DIA DEZESSEIS (CONTINUADO)
+
+Quando vocês estão diante de nós e nós os vemos como vocês realmente são, sem manchas, sem culpa, vemos o Divino encarnado vindo como cada um de vocês, a luz encarnada da Mônada vindo para cantar, vindo para expressar, vindo para reivindicar um mundo no amor. Os ensinamentos que vocês receberam até agora na encarnação na Sala Superior, na recalibração do campo energético que agora pode suportar a Mônada em expressão, têm sido testemunho de sua disposição para crescer com eles. E porque vocês crescem, porque concordam, porque permitem e dizem sim, temos o privilégio de continuar esses ensinamentos, como somos autorizados a falar através de Paul e a se dirigir a vocês onde quer que estejam, onde quer que estejam, em qualquer nível de consciência que vocês tenham se alinhado até agora.
+
+
+
+
+
+
+
+O medo de alguns de vocês é que vocês não serão quem desejam do outro lado desta jornada. Não há outro lado nesta jornada. A jornada é a experiência. A manifestação da Mônada, embora seja um evento, sim, é progressiva, tanto no indivíduo quanto na humanidade, à medida que a humanidade começa a reivindicar sua verdadeira herança.
+
+Agora, quando você vê o caos ao seu redor, você está vendo o efeito residual do medo, e o caos que você vê hoje precede a reivindicação ou uma revelação da verdade que é uma permissão para cada um de vocês se realizar no meio de suas criações passadas. Suas criações passadas são coisas pensadas ou feitas, pretendidas no medo, pretendidas no amor - realmente não importa. Mas porque vocês são seres criativos, vocês são responsáveis pelas criações que fizeram. Isso é verdade no nível do indivíduo e também no coletivo. Em tempos de grande mudança, quando o coletivo está testemunhando o resíduo das ações passadas, busca-se olhar para longe, reverter para o antigo, reivindicar uma identidade nascida no jornal de ontem, o conforto do antigo, ou a idealização do que deveria ser. O que deveria ser não é assim. É meramente uma relíquia ou uma ideia do tempo em que foi criada. E o que a humanidade está enfrentando agora não é apocalipse, mas uma grande onda de mudança que deve ser atendida em todos os níveis da sociedade. Vocês pensam de maneiras seculares - "meu país", "minha comunidade", "minhas necessidades" - mas isto é de fato uma experiência sofrida pela própria espécie à medida que a espécie recalibra e se prepara para uma nova encarnação, uma nova maneira de ser expressa, sem os dados históricos, o que vocês esperavam ver e já não está mais comandando seus futuros.
+
+Agora, quando os antigos marcos são liberados - o que você espera ver, espera que esteja lá - vocês acreditam estar perdidos. Você busca as relíquias do antigo para lhe dizer onde você está. As relíquias do antigo não estão presentes agora como vocês pensam que estão. Grande parte do que vocês testemunham neste plano é efeito residual. E o nível de vibração neste plano está em grande mudança, e consequentemente as estruturas antigas estão em desconstrução porque não podem ser mantidas na oitava mais alta de vibração que agora está presente. Mas vocês veem os sinais antigos, as memórias do que era e como as coisas deveriam ter sido, enquanto começam a entender que vocês estão em um novo campo que ainda não foi nomeado, ainda não foi decretado esta cidade ou aquela.
+
+
+
+
+
+
+Do que estamos falando é da Sala Superior, um campo de consciência que está presente agora e está se manifestando, acredite ou não, neste plano de experiência em que você habita. É uma tradução da matéria, uma realização do novo. E a manifestação do novo - se quiserem, novos marcos - será criada por você em um nível mais elevado do que você era capaz antes. De certa forma, o que está começando a acontecer é que as antigas fundações estão sendo descobertas e então removidas. Você deve começar a entender onde você tem sido cúmplice de engano através de suas próprias escolhas e criações, como você contribuiu para o medo através de sua negação do Divino. E a escolha de se manifestar na Sala Superior consolida o campo energético em um novo tom que não sustentará o velho medo, para que a nova fundação possa ser construída para a humanidade por aqueles que não estão mais reivindicando o mandato do medo para suas próprias experiências.
+
+Agora, um mandato de medo é muito simples de entender. A negação inerente do Divino que este plano de experiência tem estado operando está repleto da negação do Divino. Isso informa todos os aspectos dele. E o medo é conhecido, sempre, como a negação do Divino. Nesta amplitude que ensinamos agora, o Reino e a Sala Superior, a Mônada se expressa como cada um de vocês. E a oitava em que você canta, uma nova maneira de se expressar, além do medo, se codifica como um exemplo em tudo que vê e experimenta. A manifestação do novo é onde chegamos neste texto - como o mundo é feito novo, não através da doutrina, mas através do acordo vibracional. Cada um de vocês contribui para este mundo através do reconhecimento de sua própria verdadeira natureza. A verdadeira natureza do Divino se expressa como você, reivindicando-se em e como todas as coisas.
+
+Agora, a recuperação do velho, aquelas coisas pelas quais você é responsável ou responsabilizado que foram reivindicadas no medo, construídas sobre fundações de medo, devem ser vistas como o que foram - talvez bem intencionadas, mas finalmente, sugerimos, corruptas, através da doutrinação do medo nos sistemas em que se mantêm. Isso é verdade no comércio, na religião, em todas as estruturas que você possa imaginar. Os editos ou mandatos até mesmo da educação, o que pode e não pode ser ensinado, estarão liberando para um novo potencial, porque a informação que vai estar disponível em breve, neste plano de experiência, vai exigir uma reformulação, não só da história, mas do que é a humanidade. A aceleração do tom aqui de certa forma está abrindo o antigo, as antigas crateras, as antigas bibliotecas. A maneira antiga de compreender o que é a humanidade tem o requisito de re-conhecer o que encontra. E os ensinamentos que você recebeu na história da humanidade foram principalmente distorções baseadas em ideias do que já foi. O catálogo da história da humanidade, que está realmente invadindo muitos reinos de experiência, muito mais do que você sabe, está se tornando disponível em formas arquetípicas que podem então ser acessadas.
+
+"O que isso significa?" ele pergunta. Bem, você olha para a iconografia ou emblematização para compreender o que algo é. Você entende o que é uma águia através da representação de uma águia tanto quanto você entende a águia através do pássaro em vôo. Mas para compreender a águia, para realmente conhecer a águia e suas informações em um nível de arquétipo, é preciso se realizar como o Verdadeiro Eu que pode conhecer o Divino inerente como águia. Quando algo é re-conhecido neste nível de congruência, a informação detida pelo outro, os dados que ele acumulou ao longo da história, tornam-se disponíveis. E o processo de re-conhecer o objeto ou coisa como de Deus, que é o ato de reivindicação alquímica, o corpo que você mantém em acordo com o corpo de outro algo, manifesta um alinhamento e acordo com o Divino que não pode ser negado. E a informação contida dentro está então disponível.
+
+Você está em um momento na história onde arquétipos estão sendo invocados sem compreensão. "Isto é o feminino divino", você pode dizer, ou "Isso nunca pode ser de Deus porque não se parece com o que eu digo que Deus é". Você está olhando para ideologias aqui, e de fora. Para se alinhar a uma corrente vibracional da Sala Superior é realmente conhecê-la, e os nomes que são bandeados, alguns hereticamente, alguns em soberania, alguns na verdadeira negação do Divino, alguns em um acordo com ele, podem de fato ser conhecidos.
+
+
+
+
+
+
+
+Agora, a linguagem antiga tem sido filtrada para vocês. Os nomes das coisas que são chamadas agora, na maioria das vezes, são convenientes para o entendimento. A recuperação da própria linguagem está prestes a começar aqui, e o que isso significa é que a dependência do que as coisas significavam está começando a se dissolver. Grande parte da confusão que a humanidade tem agora sobre o que é verdade e o que não é, é uma expressão disso. O que costumava significar uma coisa agora significa outra. Mas a verdade de qualquer coisa pode e será expressa, porque a verdade de todas as coisas, dizemos - sublinhe todas - deve ser de Deus. Agora, de novo, entenda que Deus é o único tom tocado, a única nota cantada, que se expressa como toda a manifestação. E essa simples realização é um ato de restauração que, de certas formas, libera a linguagem da forma dominante de comunicação.
+
+Quando ensinamos através de Paul, utilizamos a linguagem. Mas a energia que transmitimos a ele está sendo traduzida em linguagem para que vocês possam compreendê-la. A energia que se expressa como linguagem é finalmente intenção. Também é de Deus. E quando vocês começam a entender que podem começar a saber sem palavras, reivindicar sem palavras, e ver sem os antigos descritores informando o que vocês veem, vocês entenderão a transição que a humanidade está prestes a sofrer. É uma mudança de expressão. Paul se lembra de um tempo em que o telefone era plugado na parede e você levantava um disco e apertava botões, enquanto estava diante da máquina, nunca para ser movido. Agora vocês têm outras maneiras de se comunicar através de dispositivos, mas ainda não entendem que estes são na verdade símbolos, mecanismos, e para onde vocês estão se dirigindo, em encarnação, é para um nível de conhecimento onde vocês têm acesso a um contínuo de informações e maneiras de se comunicar que não são limitados pelo tempo ou espaço.
+
+
+
+
+
+
+O deslocamento que a humanidade está passando levará quatro gerações para se alinhar a um mundo que se conhece em paz. E usamos essa palavra intencionalmente. Vocês estão agora superando a forma, observando a desmontagem da forma. Isso não significa que vocês estão em guerra. Significa que a transição física que a humanidade deve passar em direção a um novo modelo de encarnação é uma progressão. Os textos que escrevemos através de Paul são de fato projetos para essa progressão. Aqueles de vocês que atendem a esses ensinamentos agora, mantêm os ensinamentos no campo ressonante e reivindicam o mundo em uma alta oitava porque o seu alinhamento detém a chave para a libertação dos outros. Mas isso não significa que o mundo se assemelhe ao que vocês acham que deveria no período de tempo que vocês usariam para autorizar uma vida.
+
+Agora, alguns de vocês podem dizer, "Bem, qual é o ponto? Demora muito." A espécie está em transformação. Vocês estão aprendendo uma nova linguagem. Vocês estão se libertando de uma antiga moldura ou modelo que detém a negação do Divino como o principal fator de expressão. Imagine um tear que tem sido costurado com linha, e cada nova linha contribui para a negação do Divino. Todos vocês fazem parte dessa tecelagem. Mas o tear está quebrado. Vocês não podem costurar mais nele. E um novo tear está sendo reivindicado, uma nova realidade tecida, uma nova idealização de seu verdadeiro potencial sendo realizada em forma.
+
+O presente deste ensinamento para alguns de vocês é uma simples permissão para perceberem o seu próprio valor como de Deus. Mas vocês subestimam o presente disto, porque no momento em que isto é percebido, vocês presenteiam isto a todos que vocês encontram, não por intenção, mas através do campo co-ressonante que vocês mantêm. Para outros de vocês, vocês vieram em preparação para esses tempos. Vocês vieram com a chave da libertação em seu coração. Vocês buscam a ignição da Centelha Divina flamando através de vocês em sua verdadeira luz para iluminar um mundo. Dizemos onde quer que vocês estejam, vocês estão onde devem estar para que esta grande aventura continue. Não subestimem o seu papel aqui. O Divino está presente em cada um de vocês, e cantamos esta canção agora para vocês:
+
+_Vocês vieram. Vocês vieram. Vocês vieram. Eis que faço novas todas as coisas._
+
+A chave para o Reino é o seu próprio acordo com ele.
+
+Agradecemos a cada um de vocês pela sua presença. De fato, isso está no texto.
+
+Parem agora, por favor. Ponto.
+
+## DIA DEZESSETE
+
+O que esteve diante de vocês, o que tem impedido o progresso de vocês, foi deslocado pelo trabalho que fizemos até agora. Quando vocês encontram um obstáculo agora, vejam-no apenas como oportunidade, e nada substancial, nada que possa impedir vocês de sua Verdadeira Natureza movendo-se em direção à plena expressão. _Plena expressão_ deve ser entendida como manifestação, e a Mônada em uma forma articulada.
+
+
+
+
+
+
+Agora, os corpos que vocês têm estão passando por um processo, recalibração para sustentar o tom mais alto. A visão que vocês têm está sendo elevada, para que possam ver o modelo superior como ele é apresentado a vocês para ver, e a vida que vocês viveram, não pausada, mas retomada em uma maior qualificação de expressão. _Qualificação_ simplesmente significa que o que vocês chegaram a um estado ressuscitado, como a Mônada reivindica todas as coisas para si mesmo, é um re-conhecimento da ideia de ser.
+
+A ideia de ser pode ser entendida de forma bastante simples como a experiência do eu em um novo estado articulado. O desafio que vocês enfrentam agora, de maneira bem simples, é o processo em que escolheram se engajar, porque à medida que as coisas são feitas de novo, à medida que vocês estão revogando o velho através da reivindicação do novo, à medida que estão vendo o que é verdadeiro diante do que não tem sido verdadeiro, à medida que estão concordando com a verdade ao custo de uma mentira, o ato de ser é o ato de ressurreição. Agora, vocês pensam na ressurreição como uma coisa feita, quando na verdade é um processo de re-concepção do campo vibracional no tom de Deus em um nível de amplitude onde o que poderia ser impedido não pode ser, onde o que pode ser conhecido será, e o que é cantado em verdade através do eco vibracional de sua presença tem sua própria qualificação para ressuscitar aquilo que encontra.
+
+Quando falamos pela última vez, falamos de gerações, e o tempo que vocês entenderão os processos humanos de uma reconfiguração de si mesmo e a manifestação de nova vida diante do que já foi. Paul vê um campo agora que foi limpo de escombros. Todas as coisas são agora possíveis neste campo. A desconstrução da realidade pela qual vocês estão atualmente passando ainda tem tempo. Os edifícios caem, não todos de uma vez, mas um de cada vez. E as estruturas da civilização que não podem ser mantidas na Sala Superior certamente serão re-conhecidas - algumas reparadas talvez, outras perdidas para a história.
+
+
+
+
+Agora, a reconciliação com atos, coisas feitas por medo ou na negação do Divino, deve ser entendida como parte do processo que a humanidade se envolve. Enquanto a humanidade definir guerra como algo produtivo e não destrutivo, vocês se dedicarão ao seu mundo através da guerra. O despertar para a natureza destrutiva da guerra está prestes a ser visto em uma escala que vocês não viram, e isso causará dor, mas também será motivo de celebração, quando as armas finalmente forem depostas na conscientização da futilidade da violência como meio de reivindicar a paz. A destruição, vejam, nem sempre é negativa. Uma casa infestada de cupins talvez precise ser arrasada, e uma nova construída sobre uma base sólida. E um sistema corroído pelo medo, sob o nome de ganância, sob a reivindicação de separação, também pode ser banido ou re-conhecido de uma forma superior. Libertar algo que não serve mais a você, no nível do indivíduo, é um ato alquímico - muitas vezes muito desafiador porque vocês não buscam enfrentar suas criações a menos que sejam forçados a isso.
+
+Agora, imaginem o que vocês passam individualmente, no processo de transformação, retratado em um país ou em um planeta. Isso é o que está acontecendo agora e continuará acontecendo. A escolha de negar atos passados, atos terríveis, atos conhecidos por medo, simplesmente perpetuam a violência que agora chegou a um ponto crítico. E a realização da futilidade - "Não há sentido nesses atos, exceto uma espécie de destruição que não podemos mais continuar" - será a forma como a humanidade finalmente dirá não ao que escolheu com medo. Reconciliar-se com a ideia de paz deve reivindicar um acordo de que a paz é um potencial, algo que pode ser reivindicado. Mas até agora, suas ideias de paz, nascidas da noção de que, se ninguém está lutando na terça-feira, terça-feira é pacífica, mas a expectativa de que na sexta-feira vocês estarão lutando novamente, é o que os reivindicou. Realizar a paz na Sala Superior é o início de uma grande mudança, não apenas para o indivíduo, mas para a consciência do todo. Meditar na paz por dez minutos ao dia apoiaria o campo energético em um alinhamento para a paz. Quando se medita na paz, não é necessário imaginar algo pacífico. Deve-se sintonizar a estação de rádio que sustenta a paz e se alinhar a ela. Para sintonizar esta estação é simplesmente estabelecer a intenção, "Estou me alinhando à paz".
+
+
+
+
+
+
+  
+Agora, da Sala Superior, vocês têm acesso a estações, se quiserem, que a densidade dos reinos inferiores os impediu de acessar. E o acordo com a Sala Superior - "Estou na Sala Superior; Eu vim, Eu vim, Eu vim" - é de certa forma a chave para a realização do que já está presente aqui. Sublinhamos essa frase: _o que já está presente aqui_. Vocês não estão buscando paz na Sala Superior. Vocês não estão buscando Deus na Sala Superior. Vocês estão se alinhando ao que está sempre presente e agora é acessível através do campo vibracional que foi alterado para concordar com isso em manifestação. Sublinhem essas palavras, _em manifestação_ - que simplesmente significa que não só isso é mantido, mas se tornou quem e o que vocês são. Se tornar como paz é se alinhar ao Divino que é como paz, ou ao aspecto do Divino que pode ser reivindicado desta forma. Embora vocês nunca conhecerão a totalidade do Divino, porque ele não pode ser conhecido, vocês são capazes de fato de se alinhar aos aspectos dele que estão presentes aqui, e disponíveis, e dados a vocês através de seu acordo com eles.
+
+"Quais poderiam ser esses?" ele pergunta. Sugerimos que a paz é a mais importante, e o amor, e a liberdade. A sabedoria, sugeriríamos, acumulada através da experiência, não é o que vocês acessam na Sala Superior, mas o efeito da experiência ali. A sabedoria é acumulada. O conhecimento pode ser alinhado. Agora, quando vocês se alinham ao conhecimento na Sala Superior, é como se estivessem entrando em uma vasta biblioteca e vocês têm um pássaro que fica no ombro de vocês que pode chamar a página correta para vocês dos muitos volumes que estão sempre presentes lá. Paul interrompe: "Isso é o que alguém chamaria de Registros Akáshicos?" Na verdade, é além disso. O que realmente está disponível neste nível é o conhecimento universal que existe além das vidas vividas, mas uma grande história e uma grande criação de sabedoria que foram impressas e são compartilháveis por aqueles que a reivindicaram e a ofereceriam agora. A consciência nunca morre, e vocês podem se alinhar a um sistema onde de fato são ensinados por um grande ser, porque a impressão do conhecimento do grande ser está realmente disponível para vocês.
+
+Agora, vocês não entram nesta biblioteca exigindo o que querem. Vocês entram nesta biblioteca com a cabeça levemente inclinada, em acordo com a manifestação que estão prestes a encontrar. Ter a cabeça levemente inclinada é reconhecer a onipresença do Divino em todas as suas criações. Vocês não são suplicantes, mas receptores. E aquele que vem em gratidão será alimentado. Aquele que vem em arrogância será posto de lado até que ele ou ela aprenda o que significa realmente receber. Começar a acessar a sabedoria superior não faz de você um professor. Simplesmente faz de você alguém em acordo com uma experiência que você passou que transformou a ideia, e então, consequentemente, a manifestação. Tudo o que vocês podem imaginar foi primeiro uma ideia. E entrar em congresso com um grande pensamento, uma alta verdade, é ser transformado pelo encontro. Porque vocês estão se movendo além do tempo, e acessando a linhagem que está em perpetuidade, eternamente presente, neste nível de vibração, vocês podem entrar na corrente do conhecimento de qualquer lugar e se mover para qualquer tempo.
+
+"Podemos ser enganados aqui?" ele pergunta. O único que seria enganado seria aquele que está em um campo vibracional inferior, cria sua própria ideia de uma biblioteca, e então exige ser ensinado o que ela quer. Estar em uma meditação sobre paz, e em um alinhamento com a paz, não é apenas sentar e ser pacífico. É conhecer ou realizar a paz através desse alinhamento. Informação não é paz, e o verdadeiro conhecimento, o verdadeiro saber, também não é informativo, mas experiencial. Aquele que sai da biblioteca dizendo: "Bem, eu tenho os segredos do universo, e só eu", é aquele que tem expressado fraudulentamente o que acha que aprendeu no campo inferior. Aquele que sai da biblioteca na Sala Superior está agora presente _como_ o conhecimento que foi conferido a ele ou ela.
+
+"Bem, qual é o propósito disso?" Paul pergunta. "Se somos curiosos, vamos?" De fato, o que estamos dando a vocês agora é um grande acesso à verdade que tem sido retida da humanidade, porque o nível de vibração que a humanidade reivindicou não foi alto. E o potencial para o mau uso dessa informação, o que a humanidade faria se entendesse como as coisas realmente funcionam, agora pode ser reivindicado de uma forma muito diferente. Na Sala Superior, vocês não estão em acordo com o medo. Aquele que está verdadeiramente na Sala Superior não pode ter medo, pode ser ensinado, pode se mover para o acordo do que sempre foi verdade, mantê-lo no campo energético, e à medida que é mantido no campo energético, se torna um modelo para a humanidade.
+
+
+
+
+
+
+Agora, imaginem isto. Ninguém sabia o que era um chapéu. Houve um tempo em que não existia tal coisa como um chapéu. Um dia, alguém cobre a cabeça, e outra pessoa vê, e duas semanas depois há uma loja de chapéus na quadra para atender às demandas da nova ideia transformada em manifestação. Quando o campo energético foi inscrito ou reivindicado em um alto nível de verdade, ele se torna visível. Sublinhem a palavra _visível._ Ele pode ser visto, não tanto a olho nu, mas pela alma que encontra o que vê. O reconhecimento acontece em um nível além dos sentidos, e o reconhecimento é um aspecto do conhecimento. Ser reconhecido como aquele que sabe não é abrir uma escola. É simplesmente entrar em uma conversa, sem linguagem, em concurso energético com o que é verdadeiro. Em outras palavras, vocês estão se encontrando na energia, e o diálogo acontece nesse nível. Aquele que percebe a verdade vê a oportunidade de se alinhar a ela. Isso é feito no nível causal, e a manifestação disso é a criação de um novo modelo que é realmente mantido no campo energético da humanidade.
+
+O progresso da humanidade, como dissemos, ao longo das gerações, é a aclimatação a este novo nível de vibração e ao verdadeiro conhecimento que agora é implícito na estrutura do ser que vocês são. Aquele pequeno chapéu agora é uma loja de chapéus, e finalmente uma fábrica de chapéus, com eles espalhados por todo o mundo. Na verdade, o que acontece aqui não é tanto contagioso quanto co-ressonante. O eu visível que detém a chave torna a chave disponível para o que ele encontra. No passado, falamos sobre se tornar a porta, mas se tornar a porta simplesmente significa que vocês estão dando acesso ao que encontram ao que existe na Sala Superior, e então ao Reino. Dizemos _e então ao Reino_ porque o nível de vibração do Reino, entrado e reivindicado através da Sala Superior, está em um nível de amplitude que deve ser reivindicado em etapas. Se a luz for acesa muito rapidamente em um quarto muito escuro, todos vocês irão esconder os olhos do brilho. Aquele que exige que eles fiquem abertos pode ficar cego. Nós trazemos a emissão de luz em graduação, através de cada texto, para apoiar o leitor através da aclimatação. Imaginem a água subindo ao nível da barragem, e então rompendo a barragem. O rio então flui sem impedimentos, mas a barragem não pode se romper completamente e destruir a cidade. A cidade deve estar preparada para o novo rio que está prestes a nascer.
+
+
+
+
+Em tempos de grande mudança, o desejo é sempre consolidar o que foi mais valioso para vocês. Vocês fazem uma mala para uma jornada aterrorizante. Vocês levam o que é mais valioso para vocês. O que é mais valioso agora é a verdade, e o seu alinhamento com a verdade e a verdade inerente que é a Fonte de todas as coisas que podem e serão reivindicadas em todas as coisas. Sublinhem, novamente, _todas_ — recuperação de _todas_. Novamente, a barragem violada. O rio cobre tudo. O novo é tornado presente através de sua realização disso.
+
+Paul interrompe o ensino: "Às vezes, quando vocês usam essas metáforas, eu me pergunto que nível de destruição vocês estão falando". Estamos falando sobre desconstrução, Paul, não destruição. Estamos falando sobre a casa que está apodrecida, finalmente caindo para que o novo possa ser construído. Usamos metáforas para ensinar porque é a maneira mais fácil de transmitir as ideias que apresentamos para a maioria dos leitores. À medida que ensinamos, entendemos as razões pelas quais vocês desejam consolidar o velho. Certamente não os consideramos errados por isso. Mas agora estamos dizendo que a humanidade está ascendendo, e que este não é um ato que é necessariamente confortável ou gracioso, e que os desafios que ele apresenta podem ser resolvidos cavalgando a grande onda de mudança, reivindicando o potencial para o novo que nasce na liberação do velho, para não ter medo diante da grande mudança, mas para estar gratificado por terem vindo testemunhar uma nova vida, um novo mundo, e uma nova forma de ser expressa.
+
+Agradecemos a cada um de vocês por sua presença, e vamos parar agora por hoje. Ponto. Ponto. Ponto.
+
+## DIA DEZOITO
+
+À medida que cada um de vocês diz sim às reivindicações que fizeram até agora, a articulação progride, o ato de manifestar, o processo de se tornar o Eu Verdadeiro em um novo estado, um alinhamento superior, em reconhecimento de um mundo feito de novo. "Um Mundo Feito Novo", é o título deste capítulo, e para onde pretendemos levá-los, um e todos, através de um processo de acordo de que tudo pode ser mudado através do alinhamento com a verdade.
+
+
+
+
+
+Agora, entendam a verdade. Ela é imparcial. Não é gentil. Não é violenta. Não é amorosa. É simplesmente o que é, um relembrar do que era antes de ocorrer uma sobreposição, ou uma desfiguração. Cada um de vocês aqui, que ouve estas palavras, são seres perfeitos, quer saibam ou não. Mas o alinhamento no campo vibracional inferior, de muitas maneiras, desfigurou ou alterou sua capacidade de expressar-se neste nível. Os desafios que todos vocês enfrentaram têm operado através de sistemas que concordam com esta desfiguração.
+
+Agora, essa é uma palavra desafiadora para Paul. Vamos tentar dar-lhe um exemplo melhor. Cada um de vocês em seus estados perfeitos, alinhados a um campo vibracional inferior, acumulou evidências de separação que continuam a impor todos os dias a uma realidade compartilhada. E, consequentemente, a realidade compartilhada tem sido desfigurada ou alterada de seu estado perfeito através da contínua confiança em ideias falsas, o que vocês pensam que é, ao custo da verdade. O requisito aqui, à medida que nós os elevamos, à medida que vocês concordam em ser elevados, é que o que vocês encontram, em qualquer nível de criação em que se manifestou, pode e será re-visto por vocês.
+
+Agora, re-ver algo é realmente um ato passivo. Vocês não estão consertando algo que veem. Não estão tirando o cisco do olho do vizinho. Estão vendo o vizinho de novo. E nesta nova visão, estão receptivos à perfeição inata. E o que acumulou evidências, ou sugeriríamos _desfiguração_ do verdadeiro estado de ser, é re-conhecido, conhecido de novo. Agora, para conhecer qualquer coisa, verdadeiramente conhecê-la, é conhecer a verdade, e na verdade uma mentira não será sustentada. A rearticulação envolve uma passagem de re-ver as criações passadas. As criações coletivas que vocês testemunham agora estão presentes para serem vistas de novo - não para serem esperadas, para serem alteradas ao seu gosto, mas vistas de novo, e portanto elevadas e restauradas.
+
+
+
+
+
+Compreendam a ideia de restauração. Você tem uma pintura perfeita. À medida que as eras passam, e ela acumula poeira e sujeira, a verdadeira beleza da pintura original foi obscurecida. Ao levantar essa pintura agora para a luz mais alta para ser vista novamente, o que ela acumulou será visto. Nos últimos quarenta anos, você pensou que aquela pintura no corredor era marrom escura. Na verdade, era rosa vibrante. O marrom escuro agora será visto como não sendo o que era verdade, apenas o que se acumulou, e a liberação do antigo ocorrerá nas etapas que podem manter a perfeição da pintura original. Você não pega um pano e esfrega a tela da pintura tão dificilmente que apaga a imagem original. Você está elevando o que sempre foi precioso, que foi negado em seu valor, à luz de todas as coisas.
+
+"_A luz de todas as coisas_ - o que isso significa?" ele pergunta. Bem, novamente, a única nota cantada, o único tom tocado, que é todas as coisas, é a luz original. E a luz original, sem os detritos que ela acumulou, será cegante. Então, você é elevado a uma consciência da verdadeira perfeição no nível que pode ser mantido em forma. É imperativo que você entenda isso. Imagine que você esteve na escuridão por tanto tempo que no final do túnel você vê uma luz muito brilhante. Você corre para a luz de braços abertos, apenas para descobrir que a luz está em um nível que você não pode segurar. Levamos você lá, um texto de cada vez, para que você possa gerenciar o nível de mudança que terá que se alinhar para segurar o novo.
+
+Agora, por que você se incomoda com isso, você pode perguntar. Você pode estar confortável no antigo, seguir seus negócios como sempre fez. Bem, diremos isso. O antigo está se libertando, então o conforto do antigo não está presente como estava. Dissemos isso muitas vezes, mas quando o dorminhoco é despertado de sua cama, alguns são despertados com um beijo na testa, outros são virados porque se recusam a se mover e têm um despertar duro no chão. Tornamos isso o mais gracioso possível e convidamos um novo estudante lendo este texto a pedir gentilmente a si mesmo para ser paciente em sua compreensão, não apenas deste material, mas da vibração que é a verdade deste texto. O tom deste texto é o tom da ressurreição. É uma mudança massiva, uma alteração do campo onde os detritos são liberados e você é libertado, realmente libertado, de uma ideia de si mesmo que continuaria a acumular evidências de separação. A realização neste nível, o alinhamento com a verdade neste nível, nem sempre é fácil. Mas é muito mais fácil do que ser tirado de sua cama e acordar em um mundo tão mudado que você não sabe como calçar seus sapatos.
+
+Estamos cantando através de Paul com um nível de vibração que convocará o adormecido, e aquele que está meio acordado se levantará de sua cama, esticará seu corpo e dirá: "Sim, de fato eu vim". Um mundo feito novo. Um mundo em rearticulação. Um mundo onde a tela acumulou tanta sujeira, tanta evidência de falta e separação, que você perdeu até mesmo qualquer ideia do maravilhamento inerente do que significa nascer e ter o privilégio de ter um corpo, para experimentar através dos sentidos o Divino que é todas as coisas.
+
+Enquanto vocês caminham neste plano, todos e cada um, como a luz que vocês realmente são, o ato de reivindicação em larga escala será entendido por vocês como o levantamento da antiga pintura à luz que requer que o antigo seja visto novamente. Como testemunha deste processo, há apenas um requisito - que você não enfeite o que vê com medo ou qualquer descritor que negaria o Divino. Paul interrompe: "Há coisas que vemos que não podemos tolerar. Há níveis de crueldade que não são de Deus. Como vemos essas coisas e não reagimos?" Você está elevando o que é visto pela presença do Divino articulado como você. Não há esforço neste nível de alinhamento. Há apenas concordância. "Será assim." O Divino será visto onde tal erro acumulou evidência da escuridão. Será feito novo pela presença do Divino que é mais alto e mais potente que a idiotice da escuridão.
+
+
+
+
+
+  
+A escuridão é uma criança que foi criada em um quarto escuro. Tudo o que ela conhece é a escuridão. Ela não pode imaginar outra coisa. Quando a luz é trazida para este quarto, até aquela criança é feita nova. E todos aqueles que vivem e agem nesse nível de idiotice, respondendo apenas à escuridão, precisam do seu amor. E este mandato, "Eu não terei medo", irá reivindicar você como o libertador até mesmo da coisa mais hedionda que o pequeno eu poderia imaginar. Todas as coisas devem ser da Fonte, ou nada pode ser. E mesmo aquele quarto escuro, que só conheceu a escuridão, que acumulou sua própria autorização para reivindicar um modelo, pode e será visto novamente.
+
+Se você imaginasse, por um momento, que cada espaço escurecido neste plano de experiência tem o potencial de ser visto e conhecido novamente na verdade, você teria dado um passo enorme na sua compreensão do verdadeiro poder de Deus. Há aqueles que dizem: "Vamos aniquilar a escuridão", querendo dizer que vão destruí-la. Você não destrói a escuridão. Ela não é destruída. Mas pode ser iluminada, elevada, vista novamente, e isso é feito em amor porque aquilo que é tão escuro que já não pode nem imaginar a luz fez o melhor que sabia. A rearticulação da escuridão é a reivindicação do Cristo ressuscitado. Você deve entender isso. Todas as coisas serão feitas novas.
+
+Agora, quando algo é libertado de um lugar muito escuro, ele lutará para manter a pequena regra que manteve. Ele fará o seu melhor para manter uma ideia de separação porque acredita que sua subsistência, sua própria existência, depende disso. Aqueles de vocês que nos veem nos imaginam como elevados. Quando você é testemunhado pela escuridão, você é visto como uma luz de grande fortaleza. E sua escolha de testemunhar a sombra, onde quer que ela apareça, é reivindicar a Sala Superior como um bastião, um lugar de verdadeira segurança. Nós vamos explicar isso. O medo não se expressa na Sala Superior. Você não está levando uma espada para o quarto escuro e lutando contra demônios imaginários. Você está trazendo luz para a escuridão, reivindicando o que foi mantido na sombra, e a escuridão é vista novamente.
+
+
+
+
+A ideia de redenção, restauração a este nível, tem sido confusa. Vocês compreendem de certa forma a ideia de redenção pessoal. Mas vocês não entendem que este ato de redenção está acontecendo agora no nível causal neste plano, que é o que é incorrido quando a sombra é exposta. A liberação do velho, que já discutimos, é de fato uma exigência. Mas para tornar a escuridão visível significa que há luz suficiente para percebê-la, e ela deve ser tornada visível para que esta rearticulação ocorra. Mais uma vez, a antiga pintura no corredor coberta com camadas de fuligem, debaixo dela uma criação imaculada - mas se você não perceber que o marrom era uma vez rosa, você não vai levantar a pintura para ser liberada de seu estado alterado, desfigurado.
+
+Nós cantamos suas músicas para vocês, sim, para que vocês possam aprender as palavras. Mas uma vez que você seja esta música, uma vez que seu campo vibracional em manifestação esteja em um nível de tom ou altura onde encontre a escuridão sem medo, você é a música em plena expressão que ensina a música através da co-ressonância a todos que você encontra.
+
+Vamos fazer uma pausa para Paul. Retornaremos em dois minutos. Por favor, pare agora.
+
+## (PAUSA)
+
+"O Nascimento do Novo" é a segunda metade deste texto, que estamos agora a escrever. A primeira metade deste texto é chamada "O que foi e o que será". Vamos parar esta ditadura por hoje, e vamos dizer isto a cada um de vocês: As ramificações deste ensinamento em suas vidas individuais se tornarão presentes rapidamente. Portanto, simplesmente diga, "Sim, eu vejo a verdade em todas as coisas. Eu não tenho necessidade de ter medo. Eu estou bem, tudo está bem, nesta Sala Superior a que me alinho."
+
+Abençoamos cada um de vocês por sua presença e dizemos boa noite. Sim, no texto. Pare agora, por favor.
+
+### DIA DEZENOVE
+
+Estamos diante de vocês hoje com respostas sobre suas vidas. "Por que isso aconteceu?" "Como eu passei por isso?" "Qual foi o propósito deste evento ou daquele?" Tudo o que você passa em uma vida - alto, baixo, intermediário - faz parte da evolução da alma. Isso não significa que você escolheu isso. Simplesmente significa que você se alinhou e concordou com isso. Quando você está se elevando do velho, as coisas que você vai encontrar são aquelas criações que foram conhecidas por você que tiveram efeito residual nas percepções que você agora mantém. De certa forma, o que você está fazendo é ver para re-ver, desconhecer para conhecer. Agora, para desconhecer, neste exemplo, é simplesmente decidir que a avaliação que você fez em um momento de o que algo significava pode ser substituída por um conhecimento superior. Há maneiras de vocês se entenderem através de eventos na vida - a morte dos pais, o nascimento do filho, os marcos que reivindicam você em uma nova trajetória. Mas mesmo essas coisas, sejam elas quais forem, são muitas vezes mal entendidas. A trajetória de uma vida tem um padrão, e a alma de todas as maneiras é a guardiã deste padrão, o que simplesmente significa que o que você veio aprender será apresentado a você porque você está alinhado com isso. E esses eventos de uma vida, que estão lá para apoiar o aprendizado, contribuirão para a plena evolução da alma.
+
+"_Plena evolução da alma_ - o que isso significa?" ele pergunta. Bem, cada alma passa por um processo desde o momento de sua concepção. De muitas maneiras, o aprendizado que ela passa enquanto está em forma é para contribuir para o todo, a vasta consciência ou consciência coletiva que a humanidade reivindicou. Imagine que você é uma luz em um milhão de luzes. Sua pequena luz contribui para o todo. E suas próprias experiências, que parecem estar isoladas, nunca estão isoladas, porque todas as vidas atualmente vividas neste plano manifesto estão contribuindo para o todo. Vocês acreditam ser separados. Vocês não estão separados. Vocês estão em uma ilusão de separação.
+
+"Mas a alma é separada", ele diz. "Ela vem com seu próprio aprendizado, suas próprias exigências. Como isso é do todo?" Há também uma alma coletiva. Vocês podem pensar nisso como mente coletiva. E a escolha da espécie de evoluir além de seus limites atuais não é tanto um ato de Deus quanto é um acordo coletivo para se mover além de um viés, ou sistema de separação, que foi acumulado ao longo do tempo. O coletivo, feito do indivíduo, está presente de todas as maneiras.
+
+Agora, você pode ter aprendizado autônomo enquanto está no coletivo, mas parece que você não entende que o coletivo aprende através da experiência individual. De certa forma, a comunalidade do plano que você escolheu para se expressar, este mundo que você conheceu, é a disponibilidade para experiência comum. Existem maneiras de se conhecer muito além de um único eu. A plenitude desta experiência é inclusiva de todos os aspectos de você, além mesmo da ideia de singularidade. Você ainda mantém a consciência, você vê, mas você é realmente parte de e está presente para acordos coletivos, consciência coletiva, e uma compreensão das contribuições que todos fazem para o todo.
+
+
+
+
+
+
+Agora, para ir além da ideia de singularidade para a pluralização, ou forma coletiva, não nega a sua singularidade. Simplesmente adiciona a ela. A gota de chuva é do todo. Ela é da poça em que cai, assim como era da nuvem de onde veio. Embora a experiência da gota de chuva seja singular, ela nunca deixa de ser do todo. E a maneira como você percebeu a si mesmo na separação limitou muito a consciência que agora está disponível para você. Se você deseja imaginar, por um momento, que a consciência que você mantém não está limitada pela forma, e você poderia entrar em qualquer mundo e aprender com o mundo que você entra, você estaria realmente correto. Na verdade, isso já está acontecendo. Existem aspectos de você, além da forma, que estão em experiência em múltiplos estratos, acumulando outras informações e experiências, e se alinhando à Fonte através dessas experiências. Porque a alma está sempre em evolução, ela não pode ser estática.
+
+Ele interrompe: "Mas não há um momento em que nos juntamos à poça, nos tornamos um com o todo?" Claro. Mas sua experiência é contemplativa, em uma alta consciência do que é, inclusiva das velhas ideias, mas participativa do novo. Você não se perde no todo. Você é recuperado no todo. E a consciência de si mesmo que você utilizou neste nível de vibração é expandida ao grau de que você é da mente toda, a mente toda de Deus, se desejar, ou a própria consciência. Uma restauração à Fonte, enquanto se mantém um corpo, é um ensino da ressurreição. Ele interrompe: "Um ensino ou o ensino?" Eles são a mesma coisa. Embora existam muitas entradas, o acesso à Fonte é conhecido por você através de um princípio. Chamaremos isso de Mônada ou Cristo, mas tudo o que é, é simplesmente a impressão do Divino como si mesmo, como o quem que você é, o que que você é, e como isso se expressa, que é o serviço. É a Mônada, o redentor, aquela que reúne todos os aspectos, que é a porta de entrada para a manifestação da Fonte que é o Reino, e a realização disso, que você pode chamar de alta consciência ou um estado desperto de ser.
+
+
+
+
+
+
+Agora, tornar-se desperto não te torna mais desperto do que a pessoa ao seu lado. Simplesmente significa que você não está mais obstruído pelas ideias de separação. As ideias podem permanecer de certa forma, mas elas não são obstrutivas. Enquanto você mantém um corpo e uma experiência de singularidade, sua presença neste plano sempre manterá uma ideia de separação. Mas o acordo para isso como não obstrutivo permite que o campo energético utilize essas ideias em um acordo com a Fonte de todas as coisas. Em ensinamentos passados, nós lembramos você que a crença de que o corpo é separado da Fonte reivindicou a separação em todo o mundo material. Entender que o corpo é da Fonte, e então começar a ter uma experiência disso, é se mover em direção à recuperação de toda a manifestação. E os olhos com os quais você vê, esses olhos que percebem o Reino, tornam-se a consciência, ou o veículo para a consciência, de um senso de eu que é do todo enquanto mantém a forma.
+
+Você já ouviu histórias daqueles que ascenderam, aqueles que podem aparecer em mais de um lugar de uma vez. O que está sendo discutido aqui é um nível de articulação quando a própria forma, em acordo com a Fonte, está transpondo a si mesma em um sentido material. Embora isso não seja este ensino, é na verdade um efeito dele. A ideia de solidez e separação impedem uma união de matéria e espírito no nível que a maioria de vocês pode buscar. Mas se tornar ressuscitado é ser capaz de manter a vibração da Fonte, além das antigas limitações, em acordo com a Fonte de todas as coisas. Torna-se maleável, você vê, pela sua experiência, o que significa que o que você vê na oitava superior, não mais mantendo a densidade da forma, pode ser re-conhecido, remodelado, ou feito novo.
+
+Paul vê uma bola de argila que pode ser formada em muitas coisas. Isso é uma metáfora para a energia que pode ser reivindicada de qualquer maneira que você deseje. A oscilação do campo que você mantém, em um estado elevado, pode transformar a própria matéria ao grau que o que está sendo realizado é percebido como da mesma Fonte que todas as coisas - novamente, aquela única nota tocada neste universo que está em manifestação como todas as coisas. O alinhamento neste nível, para se tornar o chamado claro, para se tornar a nota cantada, é reivindicar essa nota como o que você vê. E você se torna participante da recuperação de um mundo através do seu conhecimento de si mesmo além da singularidade, do todo, e em acordo com a Fonte.
+
+Quando um mundo é feito novo, ele não é tanto corrigido quanto visto novamente. O percebedor do mundo, em qualquer nível de vibração, confirma o mundo visto. E em sua forma densa, vocês se qualificam para ver densidade, densidade, o tom acumulado de vibração em um estado mais baixo ao qual vocês estão se conformando em um campo de co-ressonância. Na elevação para a Sala Superior, nós fizemos muito com você para liberar os obstáculos ou ideias que apoiariam a separação. Quando uma ideia está ativa no campo energético, ela sempre buscará confirmar-se como manifestação. Você entende isso? Qualquer ideia mantida no campo energético está ativa e reivindicando em vibração. Quando o coletivo está ativo neste nível, com um medo comum, um inimigo comum, uma raiva comum, o nível de vibração em um estado baixo coincide com o evento, coisas que acontecem para o coletivo se conhecer através da experiência que está reivindicando. Você está contribuindo para o conhecimento ou a consciência ou o entendimento em qualquer nível de vibração.
+
+Agora, uma vez que você entende que o que tem estado ativo em si mesmo também está ativo no coletivo, e sua ideia de si mesmo, informada por sua ideia do coletivo, também está criando, você começará a entender que o que pode operar como o que você chamaria de negativo no campo inferior torna-se um presente em um mais elevado. Em outras palavras, amigos, "Todos nós estamos com medo disto ou daquilo", no campo inferior, que reivindica um povo, uma civilização, em coerência com esse medo, é re-conhecido na Sala Superior, e o que é visto para os indivíduos e o coletivo é o verdadeiro estado de ser, a única nota tocada.
+
+
+
+
+A liberação que fizemos com você é para te apoiar de duas maneiras diferentes - para liberar as ideias que você manteve que estão ativadas no campo que confirmarão o medo ou a separação, e o acordo com o todo para liberar o mesmo. Uma vez que você entende que é parte da mudança do mundo através dessas liberações, você entenderá o que significa estar na Sala Superior para o apoio de tudo que você encontra. O Verdadeiro Eu, você vê, não mantendo as ideias básicas de separação que te comprometeram ao medo no inferior, torna-se o libertador do que encontra - a Mônada novamente, ou o Cristo como redentor. Este é um ato de energia em co-ressonância. É a verdade em si em co-ressonância com a verdade, e é isso que transformará seu mundo. Não será uma nova invenção. Não será aprender a ser educado com o seu vizinho. Será uma reconfiguração da consciência, sem os obstáculos, detritos, egocentrismo, conhecidos através do medo, que estabeleceram a separação.
+
+Agora, você entende o egocentrismo como a ideia de _eu_. Também opera a nível social. Quando uma sociedade está operando em separação, o _eu_ se torna a ideia de eu que é tão familiar quanto os outros são - "meus vizinhos", "minha raça", "aqueles que praticam minha religião". Quando você entende que a mudança para uma pluralização, ou uma compreensão do todo, também levanta a tribo que acredita ser separada, não há mais fronteiras, não há mais facções. Há uma humanidade, expressando em amor. Embora isso não pareça possível para você hoje, o modelo foi estabelecido para isso. E o que você percebe agora como violência e destruição, homem contra homem, irmão ou irmã contra irmão ou irmã, é o último hurray do medo, uma ideia sendo realizada nos sistemas energéticos que está sendo levantada porque a vibração deste plano está sendo transformada.
+
+A realização disso permite que você cavalgue a onda, que baixe suas armas, que veja seu irmão como seu amigo. A realização do Divino inerente em si mesmo reivindica a realização inerente de todos. Realização é saber. Não há ocorrência que você pode sofrer na Sala Superior que irá reivindicar você em medo quando você começar a confiar que a Sala Superior é uma fundação onde você pode permanecer. Aqueles de vocês que sempre descem estão fazendo isso principalmente porque vocês pensam que há um abrigo anti-bomba no reino inferior que protegeria vocês da ocorrência. "Eu vou me esconder em um lugar escuro, defender minha casa de um lugar escuro. Vou lutar por mim mesmo em minhas limitações."
+
+Vamos dizer isso agora para Paul: O ensino que você está recebendo hoje está presente no texto, sim, mas também está se manifestando nos leitores à medida que eles lêem estas palavras. Estamos concedendo uma compreensão do que ensinamos àqueles que estão receptivos. Você está incluído nisto porque é um estudante deste texto. Entender que manter a vibração da Sala Superior não é segurar com as unhas quando o reino inferior está tremendo, é entender que a base da verdade é fundamental. Ser fundamental na verdade é fé, e uma consciência de que quem e o que você é, neste nível de tom, começando a experimentar o eu como do todo, não é feito apenas para o eu, mas para todos que você pode encontrar e nunca encontrar.
+
+Este ensino está no texto. Vamos parar por hoje. Ponto. Ponto. Ponto.
+
+### DIA VINTE
+
+Viemos para te ensinar sobre a confiabilidade da Sala Superior como um lugar onde você pode reivindicar identidade através. Na Sala Superior, a ideia de eu é de fato traduzida para a ideia superior, ou o Verdadeiro Eu, que pode e será expresso aqui. Manter a Sala Superior em vibração é entender que sempre há um aspecto de você que está presente aqui. E à medida que você começa a confiar neste aspecto - a Mônada, ou o Cristo, ou o Verdadeiro Eu - para ser como você aqui, seu ambiente, em rearticulação, começa a comandar uma nova experiência. Uma nova experiência significa que o que você esperava na história, usado para mandar uma realidade, não está mais presente, e o entendimento da verdade da afirmação "Eis que faço novas todas as coisas" é visto por você experiencialmente, uma realidade traduzida, uma realidade transposta para a Sala Superior.
+
+
+
+
+Agora, enquanto isso é muito confuso para a maioria de vocês - vocês querem entender como se sente, como parece - é realmente muito simples. Na Sala Superior, a ideia de eu, traduzida para a Mônada, reivindica uma realidade em equivalência a si mesma. Sem o mandato do medo prescrevendo o que deve ser, o que já é verdade é visto. Quando o que já é verdade é visto, ele é reconhecido deste ponto de vista em um estado rearticulado. Então, quando você parece estar vendo sofrimento, você entende a divindade inerente que deve estar presente no indivíduo sofrendo e você o reivindica, assim traduzindo o indivíduo para uma estrata superior de vibração.
+
+Ele interrompe o ensino: "O sofrimento termina?" É revisto, é reconhecido, e em uma nova equivalência não pode ser o que era. Agora, de fato, um indivíduo tem livre arbítrio. Pode-se escolher o sofrimento, e de fato pode-se aprender bem através dele. Mas não é um mandato da Sala Superior. E neste lugar de reconhecimento, você deve entender que todas as coisas podem e serão reconhecidas, inclusive aquelas coisas que você pensou que nunca poderiam ser vistas de novo. Se você tirasse um momento agora para pensar em um aspecto do eu que você acha que nunca pode mudar, nunca será curado, e você reivindicasse este aspecto de você na Sala Superior e o alinhasse com a verdade do Divino que é onipresente aqui, você começaria a entender que você se torna o exemplo das mudanças das quais estamos falando.
+
+Quando você é reconhecido a um nível de identidade, a ação de ser é tão simples que é mal entendida por todos vocês. A ideia de _ser_ tem muitos significados. Muito poucos deles são precisos. Ser é permitir. E permitir, neste nível, é concordar com a Fonte do ser. Em concordância com a Fonte do ser, você se torna o ator da Fonte do ser, não através do intelecto, mas através do conhecimento inato de que o Divino está presente e respondendo às exigências do momento. Neste nível de conhecimento, você não está discutindo sobre o certo ou errado a fazer. Você está simplesmente sendo no momento certo, ou na ação certa, se de fato uma ação é necessária.
+
+Quando alguém sabe quem ela é, os requisitos de ser são traduzidos. Uma não está mais buscando provar a si mesma. Uma não está mais agindo por medo, ou buscando justificar seus atos. Uma está sabendo e permitindo. E permitir o eu ser, neste nível, é se tornar o princípio, ou a Palavra em ação. _A Palavra em ação._ Quando uma vez falamos através de Paul, muitos anos atrás, dissemos que a Palavra era a energia do Criador em ação. Isso é tão verdade agora quanto sempre foi. E ser ativado neste nível de suposição - o Divino assumiu a vontade, reivindicou os aspectos do eu que foram negados à luz - o Verdadeiro Eu, em seu próprio mandato para expressar como o Divino, é o que está agindo, o que está ensinando, o que está permitindo que este progresso seja em um contínuo.
+
+Agora, o contínuo aqui pode ser visto como verdade ou Fluxo Divino. A ideia de Fluxo Divino simplesmente significa que você não está impedido em seus receptores, que o acordo do Divino para fluir através de você está sempre presente, e consequentemente você se move no Divino, vive no Divino, e portanto tem seu ser ali. Cada um de vocês diz sim a isso primeiro como uma ideia. Mas a manifestação disso, que é o que está sendo ensinado aqui, nasce em concordância e permissão. Você não está escalando uma parede, temendo que vai cair. Você está permitindo que a parede se liberte para que não haja impedimento.
+
+
+
+
+
+
+Agora, as crenças culturais que você mantém ficarão no caminho por mais um tempo. Você se entende através dessas estruturas, mas com o tempo elas também se dissipam. Elas não desaparecem tanto quanto a sua permissão para elas é traduzida para a Sala Superior, onde elas não são mais impedimentos, simplesmente ideias que foram escolhidas pelo coletivo que você pode escolher ultrapassar. Qualquer estrutura através do coletivo é uma estrutura acordada, e o que é acordado, em primeiro lugar, é a simples ideia que faz uma coisa ser uma coisa, a necessidade da parede que antecede a parede. A parede é simplesmente uma expressão do que você acha que precisa estar lá. Quando o pensamento é mudado, ou a necessidade da parede não está mais presente, ao nível da ideia a parede vai se desmantelar. Ela não estará mais presente porque não pode estar presente neste nível de amplitude. E a necessidade da parede, uma diretiva da estrata inferior através do acordo coletivo, não está presente na mais alta.
+
+Ele interrompe o ensino: "Então, se alguns de nós estão alinhados com o mais alto, onde não há parede, e os que estão alinhados no mais baixo? A parede ainda está lá para eles?" Estamos falando de transformação agora, menos no sentido individualizado da realidade do que como a totalidade da realidade começa a se mover quando aqueles que estão no alto liberam a necessidade do velho. Você concede permissão através disso ao coletivo. Quando a necessidade de uma ideia que foi mantida pelo coletivo não é mais alimentada por indivíduos, o novo pode nascer e se alinhar. Em outras palavras, como já dissemos, ao se tornar a porta para este reino de vibração, o âncora para ele que pode alinhar outros à sua verdadeira natureza, você está liberando uma ideia de si mesmo que perpetuou uma realidade em separação. Suas inclusões daqueles que se acreditam despossuídos ou separados traduzem a experiência deles. Há menos fala envolvida neste acordo do que a expressão do saber. Quando você sabe quem você é, você sabe quem são os outros. Como eles são conhecidos por você, eles liberam a frequência da separação porque você mostrou a eles, em sua articulação, que não há necessidade de estar presente. Você está introduzindo uma nova expressão ao permitir, e o ser de si mesmo é o que reivindica todas as coisas novas.
+
+Agora, para ensinar "Eis que faço todas as coisas novas" como uma reivindicação de verdade é um requisito nos estágios iniciais da incorporação. Você deve começar a ter sua própria experiência de como essa reivindicação opera e o que ela fará em uma invocação da Sala Superior. Você não vai operar como essa reivindicação, "Eis que faço todas as coisas novas", a partir da estrata inferior. Ela não se expressa lá. Mas na Sala Superior, você está segurando o novo modelo, e é o novo modelo, ou a oitava superior de frequência, que é reivindicado nesta escolha. Agora, reivindicar "Eis que faço todas as coisas novas" é concordar com a Mônada como redentor, ou o aspecto do Divino que reivindica todas as coisas para sua própria verdadeira natureza. Você não é quem está fazendo isso. Você é o veículo para isso. Mas como a própria vontade ainda está sendo movida para um alinhamento superior, a escolha é feita por você por algum tempo ainda para operar na reivindicação, ou na invocação da reivindicação, que é um acordo com o que já é.
+
+Conforme você mantém a Sala Superior, conforme seu campo vibracional se alinha aqui, o ato de fazer as coisas novas não tem pensamento anexado, nenhuma intenção anexada. É o efeito do ser. Pense desta maneira, por favor: Imagine que você tem uma lâmpada. Você acende a lâmpada. A luz é brilhante, e você entende a luz enquanto ela está acesa. Esta é a escolha para incorporar na Sala Superior, e a reivindicação "Eis que faço todas as coisas novas" é simplesmente a intenção de puxar a corda ou o cabo da luz. Conforme você se estabelece lá, a luz que você é está perpetuamente acesa. Ela é perpetuamente brilhante. E a necessidade de iluminar através de uma escolha ou ativação não está mais presente porque o ser na Sala Superior é o que substancia a velha reivindicação. Você se tornou a luz. Ou o Divino como você, em sua permissão para ele, se tornou a luz que reivindica ou redime.
+
+Quando ensinamos através de Paul, estamos cientes de suas perguntas. Algumas delas nós tomaremos agora. Outras, esperaremos até que o capítulo que ensinamos aborde as perguntas mais diretamente. Mas sua pergunta agora é muito simples: "Quem sou eu nesta Sala Superior? O que significa ser eu neste novo estado de vibração?" Significa simplesmente, Paul, que as velhas reivindicações que você fez sobre si mesmo que negam a luz se dissiparam. E o que diminuiu a luz, recusou a luz, enfeitou a escuridão que você uma vez pensou que era, não está mais presente. Você é redimido ao nível da Mônada.
+
+
+
+
+
+
+Agora, a ideia de Paul, o homem de certa idade, com certos dons, certas escolhas feitas para se conhecer na forma, ainda está presente, mas de uma maneira reajustada. Novamente, usamos a metáfora de se mover para um lugar mais alto onde a vista é diferente, mas como se sente no lugar mais alto também é diferente. No passado, Paul, você olhou para o ato de passar pela vida como andar por um campo minado. "Tenha cuidado onde pisa. Pode haver perigo à frente." Não há campo minado na Sala Superior. Há paz e conhecimento. Há acordo com a Fonte, e consequentemente, embora você possa observar onde pisa por algum tempo - é um hábito enraizado para você - logo entenderá que a ideia do velho eu que precisava proteger desta maneira foi liberada, e o nível de liberdade que lhe é permitido agora está além do que o pequeno eu pode entender.
+
+A estrutura da personalidade para todos vocês, de muitas maneiras, estava baseada em separação. No momento em que lhe dizem que você está separado, ou concorda com a separação, você começa a acumular evidências para isso. E as sociedades em que você vive são predominantemente baseadas em uma ideia de separação - cada ser humano por si só, irmão contra irmão, o que você quiser. Uma vez que você entenda que na Sala Superior você mantém a individuação enquanto começa a experimentar a pluralidade ou a unidade, você não procura mais justificar a separação. Você se move para a permissão do Divino inato que está presente em todos os seres humanos e em toda a manifestação.
+
+Concluiremos este capítulo hoje. Quando nos reunirmos novamente, pretendemos ensinar-lhe quem você é além de qualquer ideia de que você poderia estar separado. Ponto. Ponto. Ponto. Pare agora, por favor.
+
+**6**
+
+# A ONDA
+
+## DIA VINTE E UM
+
+O que você está oferecendo agora, o que você está concordando, é tornar-se a luz encarnada em um nível de vibração onde seus encontros com o mundo são transformados pela natureza do ser. Novamente, sublinhe a palavra _ser._ Como você é neste nível de vibração, em um encontro com o mundo manifestado, é o que altera o campo vibracional do que você vê e experimenta.
+
+Agora, o efeito residual de sua presença neste plano, o ato de ser, é um mundo transformado. Porque você deseja evidências para isso, pretendemos oferecê-las a você. Se todos os dias você tirar dez minutos na Sala Superior em um acordo com a Fonte de todas as coisas, você começará a descobrir muito rapidamente que seu encontro com o mundo manifestado é um encontro com a Fonte. E a radiação de seu campo vibracional será sentida por você enquanto caminha, enquanto fala, enquanto está encarnado neste nível de vibração. O tom que você está cantando, vê, neste nível de acordo, a única nota tocada em articulação como todas as coisas, convoca todas as coisas para o seu acorde semelhante.
+
+
+
+
+
+
+Agora, como já dissemos tantas vezes, você não pode tornar nada sagrado, mas pode negar a santidade inerente em qualquer coisa. É a sua presença que reconvene, ressuscita e reclama o que encontra nesta nota ou tom. Você está lembrando, reentendendo e compreendendo novamente o nível do tom ao qual está alinhado de uma maneira experiencial. Enquanto ensinamos através de Paul, enquanto cantamos através dele, enquanto estamos nos lembrando dele, estamos nos lembrando de vocês, aqueles que ouvem estas palavras, neste encontro com a luz que ele é e que vocês realmente são também. O desejo de alguns de vocês é ser a luz à custa dos outros, e vocês devem entender agora e sempre que vocês são a luz para os outros. A lâmpada não é iluminada para seu próprio benefício. Ela é iluminada para brilhar sobre tudo o que encontra. O Eu Ressuscitado, aquele que veio em forma, de certa forma é um antídoto para os males do mundo. Porque brilha sua luz na negação do Divino, a negação do Divino é liberada, e o que é visto em vez disso é o que está sem filtro, inalterado, imaculado pelo medo ou pelo efeito residual do medo como você o conheceu neste plano.
+
+Agora, dissemos para reservar dez minutos cada dia, mas o propósito desses dez minutos não é alinhá-lo para transformar o mundo, mas para lhe dar a experiência do que já está ocorrendo neste nível de tom. A frequência que você agora mantém, vê, está em um nível ou tom onde o que encontra, reivindica e reclama ou ressuscita. E sua experiência disso pode ser muito simples. Entenda que a afirmação "Eis que faço todas as coisas novas" é uma afirmação de recuperação, e o novo que é visto é a visão mantida da Sala Superior. Sua própria percepção, vê, se tornará, de certa forma, uma avaliação de seu próprio tom vibracional. Quando seu tom é reduzido, sua experiência do plano manifestado será mais embotada, não se sentirá tão brilhante, não tão viva, quanto o nível de vibração que a Sala Superior chama para si. Sua experiência aqui é um primeiro passo na compreensão de que os ensinamentos que estão sendo oferecidos têm um efeito no encontro que você tem com a vida vivida. Há alguns de vocês que ainda pensam que este é um ensinamento de se sentir melhor, e enquanto você pode se sentir melhor, e pode se sentir melhor, neste nível de tom, o propósito do ensinamento é a realização do Divino na recuperação que altera o plano físico.
+
+
+
+
+
+
+
+Agora, o plano físico é alterado, não pegando um machado para o que era e construindo com argila o que você gostaria que estivesse em seu lugar. O novo é conhecido pela reivindicação da Fonte de todas as coisas. Alguns de vocês têm estado tão ocupados tentando conseguir o que querem de Deus que pararam de perguntar o que Deus poderia pedir de vocês. E fazer essa pergunta - "Como posso servir?" - na verdade alinhará sua vontade à sua própria capacidade para uma expressão superior. O efeito residual da escolha de servir é a encarnação do Divino que pode se reivindicar no plano manifestado. Este é um ato de tradução ou transposição de baixo para alto.
+
+Ele nos prejudica ensinando o que gostaria hoje. Esta é a sua pergunta: "Mostre-me o que quero ver para que eu saiba que isso é verdade". Em vez disso, ofereceremos a você, Paul, a experiência à qual estamos nos referindo. E se você nos permitir elevá-lo agora em vibração e tom, e abrir seus olhos e ver o que vê agora, você pode ficar bastante surpreso que a paisagem que você experimenta parece diferente, descoberta e reconhecida. O que você acredita, porém, Paul, é que esta é apenas a sua experiência. O que você não entende é que a paisagem é traduzida e elevada com este encontro.
+
+Como fazemos isso para Paul, pretendemos fazer isso com todos vocês. Se vocês tirassem um momento e simplesmente fossem, e permitissem o efeito do tom que cantamos estar em um encontro com o seu campo vibracional, vocês terão a experiência de percepção alterada e uma re-visão da matéria em uma tonalidade superior. O tom que cantamos através de Paul está em uma altura que vai mover vocês em forma e campo. Você não precisa estar presente no momento em que o som é feito. Você precisa se alinhar enquanto o som é feito, onde quer que esteja sentado, e ele estará presente para você. Estamos sem tempo, desembaraçados pelos mandatos do tempo, então estamos com você enquanto você lê, como estamos com ele enquanto esta ditadura ocorre.
+
+Na contagem de três, Paul. Um. Agora dois. Agora três.
+
+_\[Os Guias entoam através de Paul.]_
+
+Seja elevado e veja. Permita que o campo seja alterado, e concorde com o campo que está em tom comparável ao que está ao seu redor. Deixe que todas as coisas sejam feitas novas, e permita-se ver. Contemple o Divino expresso como todas as coisas em manifestação, como o que você vê, como como você sabe, como o que você reivindica, e como o que só pode ser na verdade. E agora você pode dizer isso, se quiser:
+
+_"Deus É. Deus É. Deus É."_
+
+E permita que a onda do Divino se mova através de você para tudo o que você vê em seu estado elevado. Deixe-se flutuar nesta onda, desta onda, e permita que esta onda seja o que você sabe, percebe, e seja como e em.
+
+_"Eu estou na Fonte de todas as coisas. Eu sou um com a Fonte de todas as coisas. Eu Vim. Eu Vim. Eu Vim."_
+
+
+
+
+Agora, enquanto você está aqui neste tom alto, nesta onda de vibração, permita-se ser levado à ação correta conforme é exigido de você, permita-se saber conforme é transmitido a você, e permita que esta afirmação seja feita real:
+
+_"Eu sei quem eu sou. Eu sei o que eu sou. Eu sei como eu sirvo. Eu estou livre. Eu estou livre. Eu estou livre."_
+
+Se você se sente se expandindo neste campo de vibração, saiba que a expressão do seu ser está sendo utilizada em conjunto com a Vontade Divina para traduzir não apenas o que você vê, mas tudo que pode ser visto, para a alta estratosfera que é a Sala Superior. O Divino veio como cada um de vocês. E enquanto você canta, enquanto você é esta única nota cantada, você contempla um mundo feito novo.
+
+Vamos parar agora por hoje. Ponto. Ponto. Ponto. Sim, no texto.
+
+_P: O que parece complicado é ter a experiência sem imbuí-la com as expectativas de haver uma grande experiência. Isso pode ser muito sutil._
+
+R: É menos sutil do que você pensa. É realmente bastante grande à medida que você se alinha a isso. É o alinhamento a isso, que é um perdão do pequeno eu por não ser aquele a ditar como ele ou ela gostaria, que é o resultado do medo que fica no caminho. A grandiosidade desta experiência, gostaríamos de dizer, é uma expansão do campo energético que está reivindicando o que encontra em um tom comparável. Portanto, sua experiência de tradução torna-se uma de manifestação e não de ideologia. Você fará isso novamente, como deseja, como gosta, e começará a ter esse encontro conforme você pode se alinhar a ele. Obrigado.
+
+## DIA VINTE E DOIS
+
+O que você vê diante de você na história, nas obrigações para com a história, são aquelas coisas criadas no medo que devem ser re-conhecidas em uma amplitude maior para que a trajetória da humanidade assuma uma nova estatura. Os detritos da história, aquelas coisas que vocês criaram no medo, vocês estão na verdade agora obrigados a, todos e cada um. Está no campo que vocês mantêm, no campo coletivo, e está pedindo para ser elevado para um quadro mais alto. Quando falamos no passado sobre a transição pela qual a humanidade está passando, falamos dela como uma onda que pode levar a grandes mudanças. Mas nesta onda são carregadas aquelas coisas que a humanidade reivindicou e que agora devem ser conhecidas e vistas de novo.
+
+
+
+
+
+
+Os tempos em que você se encontra são tempos de celebração, se você entender que o que está sendo testemunhado são as ramificações de ações passadas nascidas do medo. Inclusive isso, deve-se ver que as ações do medo que provocam outros medos agora devem ser atendidas. E isso é verdade para cada ser humano, bem como para o coletivo. O refugo da história, aquilo que você acumulou, flutuou para o topo - para ser visto, para ser limpo, para ser recuperado na Sala Superior. Agora, isso parece um trabalho muito grande para Paul. Ele diz: "Mal consigo lidar com meu próprio refugo, quanto mais o refugo da humanidade". Todos vocês devem entender, antes de tudo, que o trabalho do indivíduo é se alinhar ao seu maior potencial e, neste acordo, o movimento do velho, trazido à superfície, é permitido ser visto e conhecido novamente. Quando um indivíduo faz isso, o indivíduo dá permissão para que as coisas que ele encontra também sejam elevadas.
+
+O grande ato de recriação pelo qual você está passando atualmente é como um tufão, é como uma grande onda, elevando todas as coisas que estavam enraizadas em solo sujo para serem elevadas e conhecidas de novo. A recuperação da humanidade deve ocorrer em um terreno mais alto do que vocês conheciam até agora. Para entender isso - que uma grande onda veio, está encontrando todas as coisas na ação de mudança, agitando o velho que tem sido um tanto enterrado ou negado, e elevando-o ao topo para que possa ser visto de novo - você entenderá que aqueles carregados sobre esta onda estão sendo realmente entregues a uma nova costa, um terreno mais alto, uma aclimatação mais alta a uma realidade que está passando por uma vasta mudança.
+
+Agora, você está acostumado com pequenas mudanças, talvez mudanças incrementais. Você move o sofá de uma parede para outra. Você termina este casamento, começa outro. Você pega um novo emprego ou dois enquanto encontra seu caminho e um caminho para um meio de vida. A mudança que está sendo passada agora pela humanidade é de uma magnitude que você não viu por milhares de anos. E o ressurgimento do antigo, que você negou como sendo de Deus, deve ser visto de novo. Como você passa por esse processo de re-visão tem sido discutido. Mas a amplitude das mudanças, embora tenhamos referenciado, ainda é abstrata para você. Se você entender que o que a humanidade acreditou ser está mudando, de uma maneira elevada, você começará a aceitar que o novo acordo na costa mais alta deve exigir que a humanidade se anuncie de novo.
+
+Agora, uma articulação, seja ela um coelhinho ou uma árvore ou um ser humano, tem identidade. A identidade que a humanidade manteve como espécie, operando em um sentido de separação, tem sido a causa das dores que você vê - as guerras travadas, ganhas ou perdidas, a pobreza neste plano, a ideia de escassez em si. Se essas coisas forem re-conhecidas, elas devem ser re-conhecidas no nível de consciência onde elas não podem ser mantidas. Enquanto você está enfrentando o velho, a falta, as antigas maneiras de ser, você teme. Mas você deve entender, amigos. Eles estão sendo mostrados para você para serem ressuscitados e reivindicados em pensamento mais elevado, tom mais elevado, para o benefício de todos.
+
+Como isso ocorre a partir da Sala Superior é uma nova equação de vibração. Entenda isso. Você está em vibração. A manifestação dessa vibração é a espécie que você conheceu. Em um estado rearticulado, enquanto o que você se assemelha é o que você tem sido, como você é anunciado em tom vibracional é bastante diferente. Quando a humanidade não mais reivindica o medo como parte e parcela de sua identidade, quando a humanidade diz sim à sua natureza divina inata, os requisitos para ser humano são realmente alterados e até mesmo sua compreensão de como você opera na ideia de tempo é transformada. Não é que você esteja se movendo além do tempo. Você mantém corpos. Há estações pelas quais você entende suas vidas. Mas você não está mais vinculado ou enraizado no significado que o tempo tem mantido, que deve ser inclusivo de sua ideia de morte e do medo dela. Em um estado rearticulado, a própria consciência, enquanto manifesta na forma, também pode se conhecer além da forma. E até mesmo a morte é vista como deixar uma ideia do que é o corpo, deixar um acordo com a forma, para simplesmente ter outra experiência de consciência. Quando a ideia da própria morte, tão enraizada no medo, é elevada à superfície, reivindicada de novo, grande parte do que você agiu em negação da morte, medo de sua própria mortalidade, preso em uma ideia de tempo linear, é movido, transformado e reivindicado de novo.
+
+
+
+
+Agora, você não pode imaginar isso. Paul consegue compreender um ou dois amigos que disseram: "Eu realmente não tenho medo da morte. Eu sei que é uma transição". Mas se você entender a morte de uma nova maneira, entrando em um elevador e saindo em outro andar, como algo a ser entendido, apreciado e parte da experiência de ser, as escolhas feitas por medo, que sempre estão de acordo com a morte como censora, como fim, como terminadora, também serão renovadas.
+
+Agora, uma transição sofrida por uma espécie já ocorreu anteriormente neste plano. Você acreditava ser uma coisa e depois se considerou outra. Você não sabia que podia nadar até navegar pelos mares. Você não sabia o que era fogo até a primeira chama ser acesa. Isso é o que está acontecendo agora. As exigências que a humanidade está enfrentando para sua sobrevivência serão vistas e conhecidas, e finalmente atendidas, porque você não pode destruir a terra e esperar que ela o sustente indefinidamente. Você não pode poluir o ar e esperar respirar facilmente. Você não pode beber a água que está envenenada. Então, à medida que você começa a entender as ramificações das escolhas passadas, conforme elas concordam com sua própria subsistência e habilidade de manter um corpo, você despertará para as exigências que a mudança trará para você.
+
+Agora, nada será recuperado através do ato do medo. A onda de que falamos, que já começou, de fato colocará você em uma paisagem mais elevada onde você poderá cuidar do negócio da recriação com um modelo mais elevado em vigor. A ideia de eu como singular está lentamente sendo movida para um acordo com a verdade universal. A verdade singular, "o que eu acredito ser verdadeiro às custas do que os outros acreditam", um dia será um remanescente da história. Isso não quer dizer que seu eu individualizado e a experiência emocional não serão únicos. Serão únicos, mas não serão singulares, ou exclusivos para uma consciência de quem você é como um grande corpo, um grande ser, que está em encarnação como uma espécie. Um gato sabe que é um gato sem saber o que é um gato. Ele se identifica com o rebanho, como a maioria das espécies. Você se entendeu em um sentido tribal, mas as tribos têm estado em guerra. Uma tribo cria vinho, uma tribo pasta no campo, outra tribo faz algo diferente. Um acordo universal para o ser não decide que uma tribo existe em separação. Ele entende a tribo como parte do todo.
+
+Cada um de vocês aqui, que ouvem estas palavras, está passando por mudanças através desta transmissão para apoiá-los em surfar a onda que está presente agora. Enquanto essa onda for acordada como oportunidade, você será apoiado. Enquanto você tenta lutar contra a onda, nadar contra essa maré, você se encontrará tentando se agarrar a uma história, uma maneira identificada de ser, nascida em pensamento passado, criação passada, que está sendo desancorada e transformada neste ato de ser - este ato de ser, sendo a ressurreição de uma espécie, a elevação de uma espécie para sua própria divindade inata para o bem-estar de todos.
+
+Vamos parar hoje por causa do Paul. Obrigado pela sua presença. Ponto. Ponto. Ponto. Sim, isso está no texto.
+
+## (PAUSA)
+
+O que você pede, o que você solicita, o que você está buscando, é uma garantia de que as vidas que você viveu até agora continuarão como você deseja. Isso não será o caso. A própria humanidade, passando por uma grande mudança, agora é responsável por suas criações de uma maneira que ainda não viu. Vocês são realmente compassivos uns com os outros quando acreditam que isso os serve, se concordarem com vocês. Você é gentil com seu vizinho se sua postura diz: "Eu sou gentil", e é seguro ser gentil. Mas muito do que você vê em termos de divisão é o resultado do medo em um momento de mudança. "Quando o que eu conhecia não existe mais, não pode ser visto como eu gostaria que fosse visto, devo buscar algo diferente para encontrar meu equilíbrio, para encontrar minha segurança". Alguns de vocês dizem ao Espírito: "Mantenha-me seguro. Conceda-me meus desejos". Mas, na verdade, você também está sendo carregado nesta onda de grande mudança que a humanidade reivindicou em sua ascensão.
+
+
+
+
+
+Agora, quando usamos a palavra _ascensão,_ significa simplesmente elevação em concordância vibracional, e qualquer ideia de medo que você tenha acumulado neste nível de vibração não é expressa na oitava superior, não pode ser mantida lá. Então, de certa forma, o que está acontecendo é que vocês estão se movendo além do medo como um coletivo, mas não se move além de algo sem um trânsito por ele ou um encontro com ele. E o desafio do dia para quase todos vocês é uma demanda, que não será atendida, por uma adesão a um status quo que vocês uma vez pensaram que era real, mas que já não está presente ou é verdadeiro.
+
+Agora, a reconciliação com a sua verdadeira natureza, o Eu Divino como quem você é, tem sido o ensino até agora. E sua habilidade de receber os dons do Reino, ou a abundância que está disponível na Sala Superior, significa simplesmente que quem e o que você é tem a habilidade de manter um nível de vibração em inclusividade ao mundo manifestado que você negou a si mesmo até agora. Vocês pensam que isso é sobre conseguir algo, acumular mais. Na verdade, é sobre alinhamento e recepção ao que já é verdadeiro. Porque vocês viveram tanto tempo em um mundo nascido em escassez, fundamentalmente, em um acordo com a separação, vocês reivindicam a maioria das coisas com a ideia de que a separação está implícita nelas —"É nós contra eles, o que eu quero e o que ela quer ao custo do que eles querem"—e decidem vez após vez que o seu senso de bem-estar nasce em uma segurança que tem sua base no conhecido. O conhecido está se desfazendo e continuará assim por muitos anos. E a base em que vocês se apoiarão, depois que as águas da enchente tiverem se dissipado, depois que vocês tiverem aterrissado em um poleiro mais alto em uma fundação sólida no que chamaremos de Sala Superior, é uma maneira de ser em concordância com a Fonte que vocês mal conseguem compreender porque vocês foram tão treinados pelo medo e pela crença na separação que até o Deus mais bondoso que vocês podem pensar é aquele que jogaria alguns centavos para vocês, os salvaria de um resultado desastroso, ou manteria o emprego de que vocês nunca gostaram para que vocês possam manter a comida na mesa.
+
+A ideia de Deus em si mesmo como fornecimento é muito diferente da ideia de Deus como fornecedor. A sua ideia de um fornecedor, talvez um empregador, talvez uma instituição, talvez um banco que lhes envia pagamentos, são todos nascidos de um senso de individuação e limitação—o Deus que favorece um sobre o outro, o banco que não fecha ou executa a hipoteca de sua casa, o empregador que pode garantir um emprego até que vocês morram. Este senso de eu como o destinatário de outro eu fora de si, que pode ter uma fonte limitada de fornecimento, inclui para a maioria de vocês um Deus que os amará se vocês se comportarem ou apaziguarem a sua ideia do que Deus deve querer. Houve um tempo em que era um sacrifício. Agora é um dízimo ou algo do tipo.
+
+Precisamos corrigi-los agora. Para entender que o fornecimento é de uma única Fonte e apenas uma Fonte, e uma vez que vocês estão alinhados com essa única Fonte, enquanto o que ela pode oferecer pode ser através de diferentes avenidas, seja um empregador, um banco, um trabalho, o que for, vocês devem entender que a infinitude da Fonte deve ser compreendida por vocês como uma realidade. O seu senso de Fonte através da educação religiosa é de alguém que distribui o bem e o mal, favorece este sobre aquele. Isso nunca foi este ensino, porque esse é um ensino nascido na separação, que contribui para a sua ideia de escassez. A realização do Divino como de todas as coisas, inclusivo de todas as coisas, significa simplesmente que vocês estão na Fonte do fornecimento quando estão alinhados.
+
+Agora, quando vocês estão na Fonte do fornecimento e são os receptores dela, a ideia de escassez primeiro é diminuída e depois liberada, porque a Fonte de todas as coisas não pode ser diminuída. Vocês podem impedir a sua compreensão dela. Vocês podem negar o seu alinhamento com ela. E isso é o que vocês fazem quando são convidados ao medo e reivindicam a separação e concordam com a escassez e depois vão agarrando o conhecido para preencher suas necessidades. Os tempos em que vocês vivem são ricos em compreensão, criam uma flutuabilidade para vocês, uma onda que os levantará para a Sala Superior se vocês surfarem bem a onda. Se vocês decidirem emergir, ofegar por ar, se agarrar a um tronco de velha história, vocês se encontrarão flutuando, talvez, mas se agarrando ao velho. Se vocês permitirem que a onda os reivindique e os levante e os plante firmemente no novo poleiro, a Sala Superior, a nova fundação, vocês poderão se mover para um recebimento do que tem estado além do conhecido e além da compreensão do pequeno eu.
+
+
+
+
+
+
+Agora, o pequeno eu guarda um legado de falta. Isso não é sua culpa. É como vocês foram ensinados e treinados. A ideia de um Deus misericordioso ou um Deus amoroso até foi abstraída por vocês para um Deus que deve favorecer um e ter misericórdia de outro, e vocês replicam isso através de seu próprio comportamento e tratamento de seus semelhantes. "Aquelas pessoas lá merecem o que recebem." "Aquelas pessoas lá nunca estarão certas." Vocês decidem o destino de outro, mas não entendem que selam o próprio destino em suas próprias ações para negar o Divino inerente em outro. A oportunidade agora para todos vocês é concordar, alinhar-se à grande Fonte que ama a todos igualmente. Agora, vocês podem dizer, "Bem, talvez Deus possa fazer isso, mas eu certamente não posso, e certamente não com essas pessoas ali." Essa é a sua escolha. Esse é o seu legado. Esse é o ato de separação se replicando e usando qualquer vantagem que possa obter para confirmar uma ideia de separação que o separa de Deus em si.
+
+Agora, Paul interrompe: "Você disse que não podemos nos separar de Deus." Mas vocês podem concordar em negar o Divino, e porque vocês têm livre arbítrio, podem reivindicar suas circunstâncias na falta, na separação, ou na renúncia do Divino em outro. Isso leva à escuridão, e vocês tentam reivindicar na escuridão. Não há frutos na árvore na escuridão. O sol não brilha para permitir que seus galhos deem frutos. Vocês viveram em um mundo tão separado do Divino que negaram a si mesmos a entrada na própria Fonte de todas as coisas, que sempre esteve presente, sempre estará, e está simplesmente dizendo sim a si mesmo como veio a vocês.
+
+A oferta que vocês fazem, "Estou disposto a me conhecer de novo, ser reivindicado de novo," permite que vocês sejam participativos em uma grande ação de transformação que está realmente ocorrendo agora. Quando todos são pegos na mesma onda de mudança, quando o que vocês veem diante de vocês que uma vez acreditaram ser transitório agora é visto como sempre mudando, o que vocês pensaram que sempre estaria lá está solto, vocês liberam a sua ideia do que deveria ser e seguram a mão do seu irmão, seguram a mão da sua irmã, porque vocês estão no mesmo tumulto. A ideia de ser é altamente transformada neste nível. E para a própria humanidade, a necessidade de ser sacudida de seu sono tem sido a escolha da própria humanidade. O processo de despertar para a sua divindade exige que cada um de vocês, gostem ou não, reivindiquem a negação que têm mantido da Fonte de todas as coisas, do valor do que está ao seu lado, ou daquelas pessoas com as quais vocês talvez nunca concordem. Vocês não precisam concordar com uma ideia, mas precisam reivindicar a verdade, a verdade inerente, que não há ninguém indigno de Deus. No momento em que vocês decidem que alguém é, colocam-se na sombra.
+
+Agora, o ensinamento que estamos oferecendo a vocês está no texto. Estamos dizendo isso para Paul, que está se perguntando. Mas também é especificamente voltado para uma introdução à ideia de mudança na qual todos vocês estão participando e se apoiando mutuamente, estejam vocês cientes disso ou não, porque, queridos amigos, vocês não estão separados de seu irmão, vocês não estão separados de sua irmã, e de fato vocês se unem de mãos dadas enquanto surfam essa onda, porque é assim que a humanidade diz sim à nova terra em que chega, _nova terra_ sendo uma nova equação, em vibração, em consciência, para um mundo feito de novo.
+
+### DIA VINTE E TRÊS
+
+Vocês pedem coisas na presunção de que apenas certas orações são atendidas. Na verdade, a vida que vocês estão vivendo, individual e coletivamente, está em manifestação através do pensamento e do acordo, ou das expectativas do que será. Porque vocês estão alinhados com a realidade que é conhecida através do coletivo, uma oração individual, em muitos casos, deve liberar as exigências do coletivo, seja o que for, para se alinhar à alta oitava onde possam ser conhecidas e libertadas.
+
+
+
+
+
+
+
+Agora, vamos explicar isso para Paul, que está questionando. Uma oração pela paz, por mais bem intencionada que seja, é proferida na oitava inferior, onde a paz é meramente uma ideia. Para realizar a paz, é preciso mudar para a Sala Superior, onde a paz está em equivalência. Uma oração pela paz, a realização da paz, talvez, que possa beneficiar a totalidade do mundo, pode ser proferida aqui sem a resistência que o coletivo se conformou. Agora, usamos essa palavra intencionalmente - _conformado_. O coletivo se conformou com ideologias de guerra, nascidas no tribalismo, nascidas em uma crença na falta. O coletivo decidiu, em um nível, que não pode mais continuar nos velhos caminhos, e o efeito residual desta escolha é o mundo que vocês estão testemunhando agora em desordem. Quando vocês limpam uma casa, a casa muitas vezes parece muito pior do que quando vocês começaram, antes que a limpeza esteja completa.
+
+A ideia de quem vocês são - "Eu sou um ser individual com autoridade, faço minhas próprias escolhas, não vou ser dito o que fazer, tenho livre arbítrio, decido quem é bem-vindo em minha casa e quem não é" - deve ser entendido, de certa forma, como um vestígio de uma crença na separação. Porque vocês acreditaram que estavam separados de sua Fonte, e então do seu vizinho, a ideia de eu e o livre arbítrio tornaram-se codificados, de certa forma, como exemplos de um tipo de independência. Separação da Fonte é independência da Fonte, mas as regras de um mundo conhecido na separação, governado pelo medo ou crença na falta, não podem mais sustentar o coletivo. Então vocês estão em uma encruzilhada agora onde vocês compreendem a necessidade individual, a escolha individual, e as ramificações de todas as escolhas. Sim, vocês podem deixar o casamento, mas ainda são responsáveis pelo bem-estar de seus filhos. Sim, vocês podem deixar o seu emprego, mas ainda têm que encontrar alguma forma de sustentar o eu em suas necessidades diárias. As ramificações da escolha de maneiras responsáveis devem ser entendidas por vocês como um alto uso da vontade.
+
+Agora, alguns de vocês dirão, "Bem, em verdadeira liberdade, eu deixo minha família. Deus cuidará deles. Eu deixarei meu emprego. Deus proverá." E então vocês voltam à ideia de um Deus que atenderá suas orações, mesmo quando sua ideia de independência de Deus é o problema subjacente. "O que isso significa?" ele pergunta. Existem muitos empregos, existem muitas maneiras de amar uma família, e talvez de deixar uma. Conhecer a Fonte de todas as coisas não é exigir dela. É concordar com ela. E em tempos de mudança radical, onde o velho está sendo liberado de vocês, tirado de vocês, de certa forma, porque sua amplitude não pode se elevar ao novo por seus velhos modos de ser, vocês devem confiar que o Divino sabe mais do que o pequeno eu, que vocês consideram soberano. Quando muitas pessoas dizem, "Eu sou soberano", elas estão mentindo para si mesmas. De fato, vocês todos são soberanos, mas não no nível que vocês pensam. O Verdadeiro Eu é soberano, e em um estado encarnado, ou realizado, essa soberania serve ao coletivo, porque aquele que é soberano sabe quem ela é, em participação do todo, para o todo, e pelo todo. A ideia de uma glória nascida na separação é fazer de si mesmo um ídolo, e isso nunca será o caso em um verdadeiro ensinamento. Quando vocês idealizam o pequeno eu, e a vontade do pequeno eu - "Minha vontade, não a Tua, seja feita" - vocês contribuem para a catástrofe que vocês reclamam através da guerra, através da pobreza, e através de todas as emblemizações dessas coisas que são reclamadas na separação ou medo.
+
+Agora, é claro que vocês têm livre arbítrio, mas a ideia de si mesmos como voluntariosos em participação à vontade coletiva ainda está confusa. Vocês pensam que estar no coletivo é assegurar uma crença tribal. "No meu país nós oramos assim. Na minha cidade nós votamos assim. Na minha desconfiança dos meus vizinhos, na minha desconfiança dos outros, eu reivindico a separação, e então descanso na minha tribo, onde acreditamos nas mesmas coisas." Compreender a vontade coletiva é passar para a Sala Superior, onde vocês podem conhecê-la, onde vocês podem compreendê-la. Em algumas culturas, a própria cultura acredita que é separada do resto do mundo em que vive. Esta é uma ilustração de arrogância nascida na separação e ungida pelo medo, porque então os atos da cultura desprezam o bem-estar do coletivo porque pensam que têm o direito, ou supõem uma espécie de soberania onde até a ideia de vontade coletiva é usada como um aríete ou uma ideologia que reivindicará a separação ao custo da liberdade dos outros.
+
+Para entender o país em que vocês podem estar sentados hoje, onde quer que seja, olhem para suas fronteiras. As fronteiras de um país que está alinhado com uma vontade superior é uma fronteira acolhedora. A própria fronteira é entendida como um símbolo. Uma linha de condado, uma cerca de estacas, qualquer que seja a fronteira, o símbolo em si é uma ideia de separação, pode realmente ser porosa. Vocês convidam o vizinho para conversar sobre a cerca, talvez entrar para um chá. Quando um país decide que está separado dos que estão ao seu lado, eles racionalizarão o que quiserem para conquistar seus vizinhos, ou refutar o bem-estar ou as ideologias daqueles que não concordam com eles.
+
+
+
+
+
+
+
+Neste momento, nesta história, neste plano, você vai ver muros cair, porque a ideia de um estado, a ideia de um país, até mesmo de um município, pode ser substituída por um ideal superior de um povo, uma espécie, uma expressão sagrada. E enquanto vocês podem ter o nome de uma cidade, ou o nome de um país, vocês os entendem como designações em um mapa, e não estruturas que operam para manter outros fora. O bem-estar de um país nos próximos anos será reivindicado pela sua independência do medo, e nada mais.
+
+Agora, quando dizemos _independência do medo,_ estamos falando de provações que vocês podem reivindicar em agressão para impor sua vontade sobre outro de maneiras que podem não ser benéficas. Quando vocês estão agindo por medo, vocês podem alegar qualquer desculpa para qualquer comportamento. Mas nós vamos dizer isso: Quando vocês se alinham na Sala Superior, vocês não estão mais fingindo. Vocês estão conhecendo. E qualquer ato do coletivo em agressão ou medo pode ser enfrentado por um indivíduo através de sua consciência da Fonte.
+
+Agora, a consciência da Fonte não é compreendida pela maioria de vocês. Vocês ainda acreditam que Deus está em uma nuvem, ou em algum lugar nos éteres, decidindo o que será e o que não será. Quando falamos de realização, falamos de conhecimento. E conhecer a ação e a presença do Divino a partir da Sala Superior em uma situação, uma fronteira, um ato de violência, um ato de tirania, realmente reivindicará no campo ressonante da coisa, ou da ideia que a ação assumiu a forma, em uma oitava superior de expressão.
+
+Paul está vendo bolhas. Cada bolha é uma ideia que está flutuando neste reino de acordo compartilhado. Quando um ato violento, que deve ser precedido pelo pensamento, é recuperado na Sala Superior, a própria bolha explode. Não há nada nela, de qualquer maneira. Quando vocês restauram a estrutura para a ideia — e a ideia sempre precede a estrutura — vocês podem re-conhecer a estrutura através do alinhamento com uma ideia superior. Isso é, novamente, como um mundo é feito novo.
+
+Agora, vocês não estão conquistando os reinos inferiores com sua varinha de luz. Vocês não são a fada flutuando até o inferior para fazer as flores crescerem. Vocês estão em soberania neste nível, o que significa que vocês estão conhecendo e vocês não estão em engano. Vocês não são atraídos pela lógica tribal para resultados que a tribo gostaria de ver. Vocês estão se conhecendo como um todo, mas um aspecto individualizado do todo. Vocês não estão corrigindo o comportamento dos outros. Vocês estão re-conhecendo os outros. E o comportamento que vocês gostariam de corrigir, vocês devem re-ver a partir do ponto de vista alto para que ele possa ser transformado, não para o que vocês dizem que ele deve ser, mas para a Fonte de todas as coisas.
+
+Paul interrompe: “Eu vi as bolhas explodirem. O que acontece com as ideias que podem se tornar atos violentos mais tarde?” Na Sala Superior, a ação do medo não está presente. A separação não se expressa. Vocês não podem estar na Sala Superior e dizer, "Dê-me o que eu quero, o que é melhor para a minha tribo, a minha política, a minha religião, a minha ideia do que deve ser." Isso é tudo o pequeno eu em uma máscara fingindo ser mais alto do que é. Quando alguém se alinha à Sala Superior, tem uma nova obrigação, que vai além dos requisitos do pequeno eu, para uma realização da Fonte inerente de todas as coisas que não pode ser reivindicada no reino inferior ou campo vibracional inferior. A reivindicação que nós demos a vocês — "Eu sou livre, eu sou livre, eu sou livre" — reivindica vocês em acordo além do coletivo, ou da vontade coletiva nascida no tribalismo.
+
+Agora, para se entender como parte de uma espécie não é tribalismo. É um foco muito mais universal. E vocês entendem, amigos, que se há uma criança passando fome, uma mulher chorando pelo assassinato de seu marido, há trabalho a ser feito na consciência para o coletivo. A ideia de que vocês podem ser privilegiados em seu país, assumir as batalhas do bairro ou do momento e ignorar o bem-estar dos outros, não pode ser reivindicada a partir da Sala Superior, porque vocês têm acesso neste nível ao que faz vocês humanos, mas que é sempre divino. E _sempre divino_ significa que o ser que vocês pensam que são no reino inferior, ou a idealização do eu através da separação, é re-conhecido em acordo com a Fonte em um estado ressurreto.
+
+
+
+
+
+
+Agora, o texto que escrevemos, _Ressurreição,_ é sobre encarnação neste nível. Mas você reivindica isso em acordo com a Fonte, e você se conhece como da Fonte - soberano, sim, mas uma expressão do grande todo. E você se move para uma pluralidade, se desejar usar essa palavra, de entender sua individualização através de uma nova lente, que é do todo. Não há ser humano neste planeta, seja o que ele tenha feito, sido acusado de fazer, pense que tenha feito, que não seja amado pela Fonte. E até que você entenda isso, você estará atirando pedras, estará apedrejando a mulher conhecida em adultério, estará queimando a bruxa, e se não puder encontrar uma, você criará uma.
+
+Os artefatos de antigamente, a ideia de _conquistador,_ a ideia de _guerreiro,_ como exemplos, devem ser substituídos por _pacificadores._ Você não sabe como ser um pacificador no campo vibracional inferior. Aqueles que vieram em forma e tentaram fazer o bem foram assassinados por seus esforços. Mover-se para a Sala Superior, onde você não está mais escolhendo pelo medo, e pode reivindicar a paz porque o medo não está presente, será o primeiro passo para um reino pacífico. E se usamos a palavra _reino,_ é simplesmente para significar localização, área, seja ela pequena, grande, local ou global. Realmente não importa.
+
+Agora você quase não sabe, que há um aspecto de você agora que conhece a paz, que é paz, que é a expressão da paz, busca vir para reivindicar-se no mundo. De fato, esta é a Mônada, o Verdadeiro Eu, o Cristo, se você prefere essa palavra. Todos são um e o mesmo. E é esta luz, em seu estado ressurreto, que é paz. E o decreto de paz, na manifestação, pode ser conhecido bastante simplesmente como "Deus É, Deus É, Deus É", porque em Deus, no verdadeiro nível de vibração que é Deus, a separação não se expressa, e você pode conhecer a paz como você conhece Deus e a si mesmo como parte dele.
+
+Os requisitos deste ensinamento hoje são bastante simples - entender que o ser que você é está em grande participação nas mudanças que estão ocorrendo. Mas como você se alinha a estas mudanças, com uma pedra na mão para apedrejar o vizinho com quem você discorda ou a tocha para iluminar o caminho para os outros, será de certa forma não só a sua experiência, mas a experiência do coletivo.
+
+Vamos fazer uma pausa para Paul. Isso realmente está no texto. Ponto. Ponto. Ponto.
+
+## (PAUSA)
+
+Gostaríamos de dizer mais algumas coisas sobre o que acabou de ocorrer. Falamos palavras. Oferecemos ideias. Você ouviu as ideias como escolheu. A vontade do pequeno eu decide o que é digno, ou talvez o que não é. Você coloca algumas informações na pilha de poeira, outras na prateleira para pensar mais tarde. Embora tudo isso seja bom, devemos informar-lhe que o aspecto de você que acha que está em discernimento está buscando alinhar nossas informações ao que você já acredita ser verdadeiro. Você busca confirmação para as antigas ideias para sustentar um contínuo, o que você acha que deve ser porque tem sido - sua ideia de Deus, sua ideia de mudança, todas essas coisas, bolhas se quiser, que podem ser re-vistas e re-conhecidas de uma nova maneira na Sala Superior porque o velho não está presente. A velha ideia não está presente na antiga forma que assumiu.
+
+Agora, para alguns de vocês sugerimos que os ensinamentos que oferecemos devem ser folheados ou deliberados no nível do coração. Seu coração não mentirá para você, porque o Divino como você, no nível do coração, pode traduzir qualquer experiência para a sua verdade implícita. Sua realização do que ensinamos em suas próprias vidas deve ser a evidência para este ensinamento. Quando trabalhamos na linguagem, fazemos o nosso melhor através de Paul para instruir, ensinar e apoiar. Quando trabalhamos em vibração além da linguagem, você tem sua própria experiência de nós. E quem somos ao nível da vibração é como a Mônada que pode ser expressa a um nível de consciência na forma falada. De certa forma, somos ressuscitados da antiga identidade de Cristo, ou como Cristo. Usamos o nome Melquisedeque em conforto para Paul e na verdade de sua expressão, mas mesmo Melquisedeque é do Cristo e uma expressão de Cristo que pode ser conhecida além da forma.
+
+
+
+
+
+Estamos autorizados como instrutores para apoiar um mundo em transição para se alinhar ao seu maior potencial. Nós estivemos aqui, permanecemos aqui, não como ideia, mas como presença em apoio àqueles que buscam a realização e, finalmente, a encarnação, no nível que pode ser mantido enquanto em forma. Sua individuação como a Palavra manifesta, ou a Mônada, ou o Cristo, sua realização de sua verdadeira natureza, é a jornada que temos levado você, e de fato continuaremos, mesmo que haja apenas um estudante que, com um coração aberto, se comprometa com esta jornada em sua plenitude.
+
+"Como se comprometer com essa jornada?" Paul pergunta. Por acordo e por súplica. E com isso simplesmente queremos dizer a oferta do eu para a jornada como ela busca se manifestar através de você. Você não está mais dirigindo do velho jeito. Você está em consórcio com o Verdadeiro Eu buscando sua expressão através de você. E é esta jornada que é o casamento alquímico, se assim desejar.
+
+Agora, nosso acordo com você para ser feito inteiro é simplesmente conhecê-lo além da ideia de si mesmo tão ancorado na separação que você não consegue se imaginar como outro. Porque nós sabemos quem você é, o que você é, e como você serve, podemos amá-lo quando você não pode se amar. Podemos vê-lo em paz quando você deseja a guerra. E ainda acalmaremos sua mão quando você desejar atirar a pedra no seu vizinho. Nós viemos como paz. Nós viemos em amor. Nós honramos você, onde quer que você esteja, onde quer que você esteja. E não exigimos nada de você, exceto que você confie no aspecto do eu que realmente sabe.
+
+Bênçãos a cada um de vocês. Isso também está no texto.
+
+### DIA VINTE E QUATRO
+
+Alguns de vocês decidem como suas vidas devem ser com base em uma ideia que herdaram. Alguns de vocês decidem que suas vidas não vão atender às expectativas que vocês possam impor. Você vive em decepção, ou em um sentimento de fracasso, porque você não acumulou a evidência de sucesso que você acredita ser digno ou não poderia obter. Quando fazemos perguntas sobre suas vidas, estamos perguntando ao eu que busca a realização, que deseja mais, mas não está decidindo antecipadamente como esse _mais_ deve parecer ou implicar. Sua própria realização, você vê, de fato vem ao custo do conhecido. Mas os aspectos do eu que você ainda busca para alcançar o sucesso ou reconhecimento neste plano agora devem ser re-conhecidos em serviço ao mais alto.
+
+
+
+
+
+
+
+
+
+
+Agora, isso significa muito simplesmente que qualquer experiência que você tenha no mundo manifestado é seu professor - suas ideias de sucesso e fracasso também. Quando você se realinha ao Divino Eu, ou à Mônada, as coisas podem parecer desaparecer - o eu que você pensou que deveria ser, sua ideia de cultura e o que ela deveria ser, o que a religião deveria ser, o que uma estrutura econômica deveria ser ou se assemelhar. Essas ideias que você herdou, que você viu retratadas em suas vidas até agora, de fato serão desmontadas por sua própria experiência. Em outras palavras, amigos, vocês não são mais cativos delas, de uma ideia de sucesso ou fracasso ou do que significa estar em circunstâncias que outros podem não desejar, ou pensar que são escolhas elevadas.
+
+Alguns de vocês acreditam que, se estão vivendo verdadeiramente espiritualmente, tudo lhes será entregue. E enquanto ensinamos que na Sala Superior você se move em direção à recepção e ao recebimento de tudo que é, você compreende a Fonte de todas as coisas, você ainda tem lições aqui no reino material que você precisa se mover com, em acordo com, e talvez superar. Qualquer coisa que seja percebida como um obstáculo no caminho de alguém pode ser vista como uma oportunidade de aprender. Em alguns casos, você descobre que o caminho que está seguindo, agora cheio de obstáculos, não era o caminho mais alto para você. Outros de vocês decidem que o que pensavam ser tão importante não deve ser importante, e então perdem toda a esperança de escolha. "O que vale a pena agora? Eu não aspiro mais ao sucesso como antes. O que eu faço agora?" Você ainda está aprendendo que o ato de ser, que é impressionante no Verdadeiro Eu, e encarnado como você em sua experiência, é a razão pela qual você veio. Uma vida bem vivida, você deve saber, é uma vida em alta escolha onde as coisas foram aprendidas. A expressão da Mônada como a vida vivida, também uma escolha alta, é reivindicada por aqueles que buscam a realização. Mas aquele que não busca a realização ainda está encarnado em um nível de tom ou vibração e está buscando a realização através de sua experiência - o que significa ser pai, o que significa ser colega, o que significa ser responsável pelas próprias ações, todas as lições aprendidas e parte do ser que você escolheu para experimentar a vida.
+
+Agora, a transcendência de uma realidade não é a fuga de uma realidade. E alguns de vocês que desejam transcendência estão buscando escapar, descontar o reino físico, negar suas oportunidades de aprender. Na transcendência, você realmente se torna mais responsável por este reino porque entende que é responsável por todas as suas escolhas, não por razões egoístas, mas porque você é um do todo. O homem na Sala Superior não acumula sua comida. A mulher na Sala Superior não fecha sua porta para estranhos que possam precisar de abrigo.
+
+Cada um de vocês diz sim à transição que estão passando conosco. No entanto, alguns de vocês decidem que ela deve se parecer com algo que não é. "Eu vou flutuar em uma nuvem na Sala Superior. Minhas escolhas serão feitas experiencialmente. Eu não vou querer nada." Bem, nós dizemos que está tudo bem. Mas, queridos amigos, se está chovendo lá fora, é melhor fechar a janela. Se há um incêndio fora de controle, é melhor fazer o que você pode para apagá-lo. As ações que você toma em conjunto com o reino físico ainda estão presentes, mas o alinhamento que você mantém em um nível mais alto de vibração transforma sua experiência delas.
+
+Agora, Paul está perguntando: "Ainda temos medo da morte na Sala Superior? Você está dando exemplos de autoproteção, fechando as janelas da tempestade, apagando o fogo". Você faz essas coisas porque são escolhas elevadas, e manter o bem-estar do corpo em certas circunstâncias que exigem ação, como fechar uma janela ou apagar um incêndio, também fazem parte de suas lições - que você é capaz de manter um corpo e uma casa e uma vida através da qual viver.
+
+Alguns de vocês decidem com antecedência que o que estamos ensinando é uma maneira de governar o universo. "Na Sala Superior, eu serei o rei. Todas as coisas virão como eu digo que virão. Eu vou me alegrar em meu reino. Eu estou em Deus. Todo mundo melhor se apressar e chegar lá também." Novamente, este é o pequeno eu com sua coroa de papel, buscando doutrina, buscando regras, buscando métodos de controle dos outros. Isso não funcionou neste plano. O sumo sacerdote encarnado em forma ainda está aqui para aprender, e as lições do sacerdote podem ser muito desafiadoras. O mesmo vale para todos vocês ao se alinharem ao mais alto. Vocês estão continuando a aprender e a perceber quem são e o que não são através desta passagem. "Agora, medo da morte", pergunta Paul. "Temos que encontrar isso nesta jornada?" Claro que sim. E todos vocês irão. Vocês todos perderão o corpo em algum momento. Agora, o medo da perda do corpo é realmente o único problema. Na verdade, para a maioria, a liberação da forma é percebida, uma vez que acontece, como algo de um presente. Uma nova expressão surge, um tom mais alto, e um nível de facilidade que nunca foi totalmente encontrado quando você estava em forma densa. Mas o medo da morte é o medo de suas ações anteriores, e do que você assume que estará lá para você. O modelo da velha realidade, com suas delimitações de bem e mal, céu e inferno, são problemáticos agora. Você não entende que qualquer que tenha sido sua experiência neste plano, você passou por aprendizado através dela. E a escolha de encarnar, de entrar em um corpo para aprender, é em si uma escolha elevada. E você deve entender que cada um de vocês que diz sim à encarnação é aplaudido por esse simples ato.
+
+
+
+
+
+Agora, uma vez que você entenda que não é imortal na forma, mas que _é_ em vibração, que a consciência é eterna, você não fica mais assustado. Quando você deixa uma casa e se muda para outra, talvez haja emoção. Uma nova experiência espera por você. E isso também é verdade quando o corpo é liberado. Mas muitos de vocês decidem que esta é a única casa em que estarão, ou talvez qualquer casa que espere por você em seguida, em alguma outra realidade, será uma decepção, reivindicará você em punição ou medo, e que você não conhecerá Deus.
+
+A ideia de céu e inferno deve ser entendida agora como metáfora de diferentes níveis de tom ou vibração. A presença do Divino, que chamamos de Reino, a honra a isso, o alinhamento a isso, é uma maneira de entender o céu. Mas o céu, na maioria dos casos, é uma criação, uma maneira de descrever um estado de consciência que existe além da forma. E há níveis de vibração além da forma que não são muito agradáveis, mas também oferecem oportunidade de aprender. O Reino não é o céu, como ensinamos. É a realização da onipresença do Divino em todas as coisas. É um nível de acordo ou tom vibracional onde você está na presença em um estado unificado.
+
+Agora, o inferno pode ser entendido de maneira muito simples como o resultado da negação do Divino. Agora, qualquer escolha feita em medo, na desonra de outro, cria o que você chama de carma. E quando você incorre em carma, você incorre em um campo vibracional que tem muito a aprender, e cada vida vivida se torna oportunidade de aprender novamente. A ideia de inferno que você recebeu, a ausência de Deus, um lugar de fogo e enxofre, um lugar de tortura, também é metáfora. Você entende que o fogo queima o velho. E a queima da escória, a liberação do velho, faz parte da prática que reivindicamos em nossos ensinamentos. Nós apoiamos você em liberar as ideias do eu que estão na negação do Divino que são a causa de muita dor. Quando uma pessoa morre, ela não pode ir para o inferno porque não há uma localização geográfica para isso. O inferno se torna uma ideia da ausência de Deus.
+
+Agora, você deve entender que o Eu Divino como você já se expressa na Sala Superior e busca ser o seu conselho, busca ser o aspecto de você que reclama a realidade em um acordo superior. Paul interrompe. Ele está preso na ideia de inferno. Ele quer mais explicação. Quando você reivindica em medo e age em medo, você está negando o Divino. As escolhas reivindicadas em medo chamam mais medo para si mesmas, e você pode se alinhar a um mar de medo e se tornar meio perdido ou à deriva nele. Agora, a violência em si, ou o que você entende como violência, é o medo em ação, outra maneira de negar o Divino. E aquilo que negaria o Divino encontraria uma maneira de se desculpar, ou se reivindicar como independente de Deus, ou em seu motivo correto. "Estava certo matar. Estava certo prejudicar."
+
+Agora, a autodefesa, o cuidado com o corpo, é compreensível. Em um nível de vibração você não precisa de armas. Você sabe quem você é, e a realização em si pode transformar situações para você porque você não está mais alinhado ao nível de medo através do passado acordo com o coletivo que você conheceu através de si mesmo. Mas à medida que você se eleva a uma forma superior de ser, à medida que começa a se realizar, a ideia de reivindicação, "Eu conseguirei do meu jeito", a ideia de vingança, "ele ou ela vai pagar pelo que fez", são liberadas porque você não pode se alinhar a elas. Mas Paul interrompe: "Mas e a pessoa flutuando em um mar de reivindicação, desejando vingança, que não consegue perdoar?" Ele ou ela se colocou em um inferno porque o ato de não perdoar na verdade impede a ação do Divino, e até que esse coração seja mudado, esse coração pode sofrer. Mas é uma escolha, e você deve entender isso. Um Deus amoroso, se podemos dizer essas palavras, ainda ama o que está perdido, mas não intervirá a menos que seja solicitado, a menos que o aspecto do eu que está na recusa do Divino possa ser refeito, e a reivindicação "Eu sou livre" possa realmente ser anunciada.
+
+
+
+
+Paul tem perguntas. “Há alguns de nós que sofrem. Não conseguimos imaginar a paz. Há pessoas que são torturadas na mente que passaram por coisas terríveis que não conseguem se imaginar como curadas. O que acontece com elas?” Todos vocês estão aqui para aprender coisas diferentes, e finalmente, devemos dizer, ninguém é deixado para trás. Finalmente, todos os humanos, ou todas as almas, se preferir, se reunirão com a Fonte. Quando alguém vem em uma vida e incorre em grande sofrimento, eles podem estar recebendo o que você pode chamar de lições de carma, ou eles podem ter outras lições para aprender. Eles podem ser re-conhecidos. Todos eles podem ser elevados, e finalmente serão.
+
+Você deve entender a graça, a graça perfeita, que é a presença do Divino sobre alguém que não poderia entendê-la, pode nem mesmo saber pedir por ela. Estar na recepção da graça é permitir que a alma em si se alinhe a ela, além da mente fragmentada ou do corpo emocional que a refutaria. Você deve sempre lembrar que há um aspecto de qualquer ser humano que sabe quem ele é, o que ele é, e como ele serve. Este aspecto foi precluído pelo medo, pela escolha anterior, e pelo alinhamento a um campo coletivo que operou na renúncia de Deus. Qualquer um pode ser curado. E finalmente, sugerimos, todos serão encontrados na graça, porque Deus é amor. Aqueles de vocês que decidem negar o Divino, encontram uma maneira de justificá-lo, buscam vingança ou recriminação, projetam resultados que excluem alguns de seus companheiros e consequentemente excluem Deus, aprenderão com essas escolhas. Qualquer carma, finalmente, é uma oportunidade de aprender. Mas a escolha alta está presente e continuará a estar.
+
+O título deste capítulo é “A Onda”. Continuaremos mais tarde. Ponto. Ponto. Ponto. Pare agora, por favor.
+
+## (PAUSA)
+
+Temos várias coisas para discutir com base no ensinamento anterior e como ele pode ser mal interpretado. Embora você seja responsável por seus atos, o Eu Divino como você pode realmente re-conhecer tudo. Isso não significa que você não possa ser responsável por coisas feitas. Significa que sua compreensão do eu como ligado a elas foi liberada.
+
+A ideia de perdão do mais alto também foi tão mal compreendida que a maioria de vocês busca perdão ou acredita que a penitência deve ser paga. Se você prejudica seu vizinho, acerte as coisas com seu vizinho. Negar o Divino é negar a ação de Deus dentro de você, e quando você não está mais fazendo isso, você volta ao alinhamento através do perdão. Em outras palavras, você sempre foi perdoado, mas ao negar o Divino, você bloqueou essa expressão. O Eu Ressuscitado, o aspecto do eu que vem à existência uma vez que a pedra é removida da porta da caverna, é o que perdoa todas as coisas. Sublinhe _todas as coisas._
+
+Agora, isso parece horrível para alguns de vocês. “Não podemos ser vítimas. Se perdoarmos, seremos vítimas.” Isso não tem nada a ver com esse nível de consciência. Você pode entender que a ideia de perdão pode sugerir, para alguns, permissão. Mas não é o caso. Perdoar verdadeiramente outro é libertar o eu. Se o pequeno eu não for capaz disso, e pode muito bem não ser, você pede apoio da Mônada, do Verdadeiro Eu, para perdoar.
+
+
+
+
+
+
+Quando alguém está perdoando, está liberando o carma e o apego ao outro que se manifestará de outras maneiras na sua ideia de tempo. Perdoar outro é liberar isso e permitir que algo seja novo - novamente, a afirmação “Eis que faço novas todas as coisas”, que apoia a realização além da subjetividade anterior, do entendimento anterior, ou das criações anteriores.
+
+Quando você faz perguntas ao Divino, por que não discute como você pode curar, o que pode ser necessário, o que é necessário de você para apoiar a cura do eu que se recusa a perdoar? A maioria de vocês faz isso porque a ideia de perdão é assustadora, e vocês pensam que sua única autoridade vem da raiva. Tenha sua raiva, se você deseja. Mas não fique lá.
+
+Você não estará com raiva na Sala Superior. Não há lugar para isso. Mas alguns de vocês devem entender que foram prejudicados, que isso não é aceitável, para poderem chegar ao perdão. Culpar a si mesmo requer auto-perdão, e muitos de vocês se tornam presos aqui porque acreditam que são indignos. Novamente, Deus ama todas as suas criações, independentemente do que tenha sido feito. É você quem diz não.
+
+Sim, isso está no texto. Obrigado pela sua presença. Pare agora, por favor.
+
+### DIA VINTE E CINCO
+
+Você está diante de nós hoje com uma consciência do que busca, como deseja que sua vida seja, o que presume que poderia ser, dado as evidências que você acumulou sobre como sua vida deveria parecer. Alguns de vocês dizem sim ao desconhecido. “Estou disposto a descobrir. Estou disposto a conhecer. Estou disposto a perceber quem eu posso ser de uma nova maneira que eu ainda não fiz.” Outros de vocês podem dizer: “Eu gostaria que as coisas fossem diferentes. Eu quero as coisas como eram. Exijo que os tempos de mudança acabem para que eu possa me entender através do conhecimento que eu acumulei anteriormente.”
+
+
+
+
+
+
+
+
+Quando você está em uma viagem em um novo mar, as ideias de quem você tem sido são alteradas pela transição que você faz de uma costa para a nova que o espera. Para entender quem você é, em tempos de grande mudança, é realmente entender a essência do seu ser, o que é revelado a você através do seu próprio reconhecimento de como você responde ao que está ao seu redor. O indignado, o assustado, o alegre, o que está em trepidação, mas busca avançar de qualquer maneira - todos vocês estão presentes nesta onda de mudança, e consequentemente sua experiência da onda variará muito.
+
+Os tempos em que você está agora são sobre a liberação de uma ideia, nascida em separação, de que você é singular, apenas um, e não de um coletivo. A recusa em concordar em ser de um coletivo lhe dá um caco para se agarrar nesta onda de mudança, enquanto seu acordo com o bem-estar do todo, em tempos de transição, fornece uma jangada para muitos. Agora, o jogo que você joga é sempre igualdade - quem tem o direito ao assento, quem pega o caco, quem ganha o prêmio. Mas o jogo acabou como era jogado, e a onda de mudança que está carregando tudo não se importa com o que você faz para viver, quão bom você é nisso ou naquilo, ou como você gostaria que acabasse. Quando uma onda se completa, ela se junta ao mar, e deixará você, como dissemos antes, em um terreno mais alto do que você conheceu até agora.
+
+O acordo que você está fazendo agora é ser realizado através de sua experiência de uma realidade alterada que não lhe oferece as garantias que você esperava. Se você vê isso como um presente, você é levado alto. Você surfa a onda com a consciência do que está diante de você, para onde você está sendo levado. Ou se você está dentro da onda, no tumulto, você é reivindicado na expressão de confusão: "Leve-me de volta ao que eu conhecia." Não será assim. O mundo não voltará a ser como você conhecia ou como você concordaria. Mas a mudança que você está realizando agora, uma exigência para a evolução da espécie, pode trazer grande alegria se você permitir que a alegria esteja presente nesta experiência. Todas as manhãs você acorda para um novo dia, uma nova promessa de uma experiência enquanto você se conhece em forma. No alto alinhamento que você pode escolher reivindicar, "Estou na Sala Superior", o efeito residual da mudança se torna como uma onda batendo contra um penhasco mais baixo. Você pode vê-lo do alto ponto de vista. Você pode ver onde a onda atinge. Mas sua visão é desobstruída porque você não está ditando como as mudanças devem ocorrer e o que devem ser vistas como. Você é testemunha da mudança. Sua vida é informada por essas mudanças, sim. Mas do ponto de vista da Sala Superior, sua experiência do eu como da Fonte transforma o que pode ser assustador no que pode ser mantido de uma forma mais elevada - um novo potencial, ainda não visto, buscando nascer.
+
+Alguns de vocês dizem: "Sim, estou disposto a saber quem eu sou além das ideias que tenho mantido, além do que me foi ensinado". Alguns de vocês dizem: "Não, vou ter do meu jeito ou de nenhum outro jeito". Vamos dizer isso de uma vez por todas: Os tempos em que você está têm grande promessa. Mas a magnitude da mudança que esperamos que você veja nesta vida é realmente sem paralelo na experiência humana. Agora, isso não é um pensamento assustador. Por favor, não o torne assim. Se você olhar para o mundo em que vive agora e compará-lo ao mundo de setenta anos atrás, é vastamente diferente e continuará a mudar em uma velocidade para a qual você não está preparado pela história comum, mas _está_ preparado pela Sala Superior, onde sua capacidade de ver não é informada pelo medo ou pelo desejo de reivindicar o que era e capturá-lo no tempo. Você conhece suas estações, seus feriados, suas idades, seu país de nascimento. São formas de conhecer o eu que não são alteradas aqui. Mas o que é alterado é uma estrutura de acordo com o que significa ser um de muitos, como se sente ao se conhecer como parte do todo, o que significa colocar as necessidades do seu irmão em primeiro lugar quando você foi ensinado a refutar isso. Novamente, o bote salva-vidas. Você está nele juntos, saiba ou não, e está sendo levado para frente.
+
+A nova costa em que você embarca é a humanidade em seu próximo nível de encarnação, ou próxima fase de expressão, onde o que é irrefutável é o Verdadeiro Eu como um aspecto do ser. O que você pode pensar agora como teórico se torna sua expressão, e à medida que se torna sua expressão, alinha a paisagem pela qual você se experiencia, através de um tom compartilhado ou eco vibratório. "Eis que faço novas todas as coisas."
+
+
+
+
+
+A transição que vocês estão empreendendo, um e todos, deve ser entendida como uma exigência para o bem-estar do todo. E se vier ao custo do que uma vez foi, que não pode mais ser mantido na vibração da verdade, vocês irão se adaptar, irão aprender. Vocês não estão sendo punidos. Vocês não foram esquecidos. Vocês estão simplesmente sendo solicitados a deixar para trás uma ideia do que significava ser, para que possam verdadeiramente compreender o ser. Vocês estão liberando a recusa do Divino, a negação de Deus, e reivindicando em vez disso um acordo com a Fonte, pelo nome que escolherem, ao qual devem participar.
+
+Quando vocês entenderem que a própria onda, a grande mudança em si, é de Deus, poderão começar a articular ou manifestar de uma nova maneira. Quando vocês lutam contra este nível de transformação - imaginem uma criança procurando o seu caminho de volta para o útero - vocês falharão. Vocês estão sendo renascidos, re-conhecidos. A rearticulação, a manifestação da Mônada em forma, é de fato ressurreição. E o tempo chegou para toda a humanidade dizer sim ao que é novo. Ponto. Ponto. Ponto.
+
+De fato, este é o final do capítulo. Ponto.
+
+**7**
+
+# O PRESENTE DO SER
+
+## DIA VINTE E CINCO (CONTINUADO)
+
+Cada um de vocês diz sim ao seu potencial quando diz, "Eu Sou". Esse potencial é realizado através do alinhamento com a reivindicação feita. "Eu estou em meu maior bem, maior consciência, maior acordo em ser" apoia você na aclimatação a esse nível ou tom. Se você liberar a idealização do que isso deveria se assemelhar, você pode permitir que a Mônada, o Divino como quem você é, se reivindique em seu próprio reconhecimento, que pode ter muito pouco a ver com o que sua estrutura de personalidade assume que deveria ser ou que algo deveria parecer.
+
+
+
+
+
+
+Os caminhos espirituais de vocês são ditados a um nível da alma. É dado a vocês o direito de dizer sim, de dizer não, ao que está diante de vocês como desejarem. A Mônada, vejam, o princípio divino operando em e como vocês, está buscando sua própria reivindicação através da expressão de vocês. E o eu Sou, que é a Mônada, canta em ser o que requer expressar através. _Canta em ser._ Entendam o que isso significa. Significa que uma intenção, definida no nível da Mônada, uma invocação em tom, reivindica a expressão assim como uma canção faz. Agora, uma canção tem uma intenção por trás dela, seja ela uma canção de amor ou uma marcha para a guerra. A intenção da canção no campo energético é ressonante. Nas reivindicações que vocês fazem conosco por meio do ajuste, vocês estão cantando em ser ou transformando sua expressão, inclusiva da verdade da reivindicação. E a manifestação da reivindicação ocorre quando vocês decidem que como ela aparece não precisa ser como vocês dizem que deve ser. Alguns de vocês se cansam de Deus. “Bem, eu orei muito. Não aconteceu muita coisa.” Ou “Eu orei um pouco. De qualquer forma, eu não esperava muito.” A ideia de que as orações precisam ser fervorosas é simplesmente confusa. As orações precisam ser sinceras, mas tudo é uma oração que é pensada em ser. E qualquer reivindicação feita em Eu Sou - "Eu sou livre, eu sou livre, eu sou livre"; "Eu estou na Sala Superior" - canta em ser sua equivalência em seu próprio campo energético.
+
+Agora, alguns de vocês desejam que isso seja diferente do que é. "Eu quero um caminho onde me seja dito o que fazer e como eu posso esperar que seja, e quando e onde eu encontro Deus, e o que eu preciso vestir para o encontro." Vocês buscam prescrição através da organização. O que nós demos a vocês são símbolos de vibração, através da linguagem, que apoiam vocês na escalada de tom ou campo, onde a sua experiência pode ser traduzida para confirmar a reivindicação que vocês fizeram. Se vocês não têm confirmação das reivindicações que nós oferecemos a vocês em sua própria experiência, vocês podem escolher outro caminho. Nós não os vinculamos ao nosso. Nós não temos autoridade para fazer isso, nem o faríamos. No entanto, sugeriremos que se vocês estão operando com estas reivindicações, algumas das coisas que impedem a manifestação são as expectativas do pequeno eu sobre como deveria parecer ou sentir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
