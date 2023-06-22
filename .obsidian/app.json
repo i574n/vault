@@ -1,10 +1,18 @@
 {
   "vimMode": true,
   "promptDelete": false,
-  "attachmentFolderPath": "./attachments",
+  "attachmentFolderPath": "./file_cache",
   "newLinkFormat": "absolute",
   "newFileLocation": "current",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "spellcheckLanguages": [
+    "en-US",
+    "pt-BR",
+    "ko"
+  ],
+  "livePreview": false,
+  "showFrontmatter": false,
+  "showLineNumber": true
 }
