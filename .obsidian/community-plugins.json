@@ -10,5 +10,6 @@
   "obsidian-tasks-plugin",
   "babashka",
   "obsidian-html-plugin",
-  "obsidian-custom-file-extensions-plugin"
+  "obsidian-custom-file-extensions-plugin",
+  "obsidian-plugin-toc"
 ]
