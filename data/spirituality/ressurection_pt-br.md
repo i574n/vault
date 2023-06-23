@@ -1,28 +1,26 @@
 # RESSURREIÇÃO
 
 Um Texto Canalizado por Paul Selig
-Livro Um da Trilogia da Manifestação
 
--
+Livro Um da Trilogia da Manifestação
 
 O que se segue são as transcrições não editadas das sessões de canalização conduzidas por Paul Selig em Maui entre 22 de julho de 2021 e 11 de setembro de 2021, perante estudantes em seminários online e presenciais, e um pequeno grupo online convocado para receber esse ditado. Perguntas selecionadas dos estudantes foram incluídas.
 
--
-
 ## CONTEÚDO
 
-- [INTRODUÇÃO](#INTRODU%C3%87%C3%83O)
-- [PARTE I - O QUE FOI E O QUE SERÁ](#PARTE%20I%20-%20O%20QUE%20FOI%20E%20O%20QUE%20SER%C3%81)
-  - [1. PREPARAÇÃO](#1.%20PREPARA%C3%87%C3%83O)
-  - [2. NOVA EXPERIÊNCIA](#2.%20NOVA%20EXPERI%C3%8ANCIA)
-  - [3. RECONCILIAÇÃO](#3.%20RECONCILIA%C3%87%C3%83O)
-  - [4. LIBERDADE](#4.%20LIBERDADE)
-- [PARTE II -  O NASCIMENTO DO NOVO](#PARTE%20II%20-%20%20O%20NASCIMENTO%20DO%20NOVO)
-  - [5. UM MUNDO FEITO NOVO](#5.%20UM%20MUNDO%20FEITO%20NOVO)
-  - [6. A ONDA](#6.%20A%20ONDA)
-  - [7. O DOM DE SER](#7.%20O%20DOM%20DE%20SER)
-  - [8. UNIDADE](#8.%20UNIDADE)
-- [EPILOGO](#EPILOGO)
+- [CONTEÚDO](#conteúdo)
+- [INTRODUÇÃO](#introdução)
+- [PARTE I - O QUE FOI E O QUE SERÁ](#parte-i---o-que-foi-e-o-que-será)
+  - [1. PREPARAÇÃO](#1-preparação)
+  - [2. NOVA EXPERIÊNCIA](#2-nova-experiência)
+  - [3. RECONCILIAÇÃO](#3-reconciliação)
+  - [4. LIBERDADE](#4-liberdade)
+- [PARTE II - O NASCIMENTO DO NOVO](#parte-ii---o-nascimento-do-novo)
+  - [5. UM MUNDO FEITO NOVO](#5-um-mundo-feito-novo)
+  - [6. A ONDA](#6-a-onda)
+  - [7. O DOM DE SER](#7-o-dom-de-ser)
+  - [8. UNIDADE](#8-unidade)
+- [EPILOGO](#epilogo)
 
 ---
 
@@ -998,7 +996,7 @@ Não somos seus pastores. Somos seus professores, como vocês desejam. Vocês se
 
 Vamos parar este ditado por hoje. De fato, este é o fim deste capítulo. Ponto. Ponto. Ponto.
 
-## PARTE II -  O NASCIMENTO DO NOVO
+## PARTE II - O NASCIMENTO DO NOVO
 
 ### 5. UM MUNDO FEITO NOVO
 
