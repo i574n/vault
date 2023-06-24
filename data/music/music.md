@@ -4,9 +4,33 @@
 ```ps1
 yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=<ID>
 
+---
+
+for file in ./*\'*.mp3; do mv "$file" "${file//\'/}"; done
 
 for i in *.mp3; do echo "file '$i'" >> files.txt; done
 ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3
+rm files.txt
+
+---
+
+declare -A files_map
+
+for file in ./*\'*.mp3; do
+    new_file="${file//\'/}"
+    mv "$file" "$new_file"
+    files_map["$new_file"]="$file"
+    echo "file '$new_file'" >> files.txt
+done
+
+ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3
+
+for new_file in "${!files_map[@]}"; do
+    mv "$new_file" "${files_map[$new_file]}"
+done
+
+rm files.txt
+
 
 ```
 

@@ -25,3 +25,7 @@
 <audio controls>
   <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/Stuart%20Russell%20-%20Human%20Compatible/Human%20Compatible.mp3" type="audio/mpeg">
 </audio>
+
+<audio controls>
+  <source src="https://bafybeiacozgnazjsqupmjokothlta43d4c6lm2aaa7qc5qwc2cdbn6n754.ipfs.dweb.link/?filename=Artificial+Intelligence+and+the+Future+of+Power%EA%9E%89+5+Battlegrounds+-+Rajiv+Malhotra.mp3" type="audio/mpeg">
+</audio>

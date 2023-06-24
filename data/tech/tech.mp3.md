@@ -21,3 +21,39 @@
 <audio controls>
   <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.nftstorage.link/Sara%20Wachter-Boettcher-Technically%20Wrong/Technically%20Wrong%20Sexist%20Apps%2C%20Biased%20Algorithms%2C%20and%20Other%20Threats%20of%20Toxic%20Tech.m4b" type="audio/mpeg">
 </audio>
+
+<audio controls>
+  <source src="https://bafybeiciwkm3wk6gwb24hobsf5skio2lyzijfqw5ovo22eku4bb6zp7n3a.ipfs.dweb.link/?filename=Hacking_for_Dummies_7th_Edition.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeihkra3ieeap4x67hqtzeowlgvkzi6jwoyxzlft3gybr3pz5aozx3a.ipfs.dweb.link/?filename=Blockchain+Chicken+Farm.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeicnhywcl4cstpg3hfr2t3lz5pmnck5lwd6v7z5utcgwaxawdcqm7q.ipfs.dweb.link/?filename=The+Smart+Wife+Why+Siri%2C+Alexa%2C+and+Other+Smart+Home+Devices+Need+a+Feminist+Reboot.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeicaphckkk2xam3ejf3r7tppk3fanoig7k3xfokobffwu4wc565xp4.ipfs.dweb.link/?filename=Nina+Jankowicz-How+to+be+a+Woman+Online.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeibfnfn5mgezcy7wlfttrwbjoxvko3oy7mfdsfchbsk5cwi4ivhmnq.ipfs.dweb.link/?filename=Darknet+A+Beginners+Guide+to+Staying+Anonymous+Online.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeichbzoxp45ppnemv6t5xxtdz4vlulxiz6pk5bgc65mef6h5nab7ke.ipfs.dweb.link/?filename=Phishing+Dark+Waters+The+Offensive+and+Defensive+Sides+of+Malicious+E-mails.m4b" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeib6o3ml4yd2dkobneolekzzrj4yzqoscvphr24x3g4im55rp4z36m.ipfs.dweb.link/?filename=Scott+J.+Shapiro+-+Fancy+Bear+Goes+Phshng.m4b" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeigy6v4i2pwrywio4b6mxwilsoympeo4xpdj67o7mepxebloj577cm.ipfs.dweb.link/?filename=Brian+Merchant+-+The+One+Device.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeibpu2hyx3x7d733bup6wirswrqon2d7rhoypnlk2p222gyz5nm2xu.ipfs.dweb.link/?filename=Max+Fisher+-+The+Chaos+Machine+-+Peter+Ganim.m4b" type="audio/mpeg">
+</audio>

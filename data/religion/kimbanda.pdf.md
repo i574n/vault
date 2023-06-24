@@ -103,4 +103,10 @@ frame: https://
 style: height:50vh
 ```
 
+```custom-frames
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihom5swb25i2ljebdcmwcc65ajy6ycwqsmfpzyapv53l36qiwvl3a.ipfs.nftstorage.link/UMBANDA%20A%20PROTO%20SINTESE%20COSMICA.pdf#page=1
+frame: https://
+style: height:50vh
+```
+
 ---
