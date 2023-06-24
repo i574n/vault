@@ -59,3 +59,19 @@ https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.li
 <audio controls>
   <source src="https://bafybeiffqwhhns3fbnhvfq2tjoixlqllukhoaxqcufzwijvkxtrn7qtzxa.ipfs.dweb.link/William%20Kennedy%2C%20Brian%20Ketelsen%2C%20Erik%20St.%20Martin%20-%20Go%20in%20Action/William%20Kennedy%2C%20Brian%20Ketelsen%20-%20contributor%2C%20Erik%20St.%20Martin%20-%20contributor%20-%20Go%20in%20Action.mp3" type="audio/mpeg">
 </audio>
+
+<audio controls>
+  <source src="https://bafybeiau44agswu5nofka2srwm2sz6uwczqayjsf6tidjwvxuwytiqr75y.ipfs.dweb.link/?filename=Nathan+Marz%2C+James+Warren+-+Big+Data+Principles+and+Best+Practices+of+Scalable+Realtime+Data+Systems.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiavzpisxv76ed3kgvbg534dd6mxxbji5ugmk4kbtyzfgfh23zi4d4.ipfs.dweb.link/?filename=Danilo+Poccia+-+AWS+Lambda+in+Action+Event-Driven+Serverless+Applications.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeib7vzcwol6tzme2swiwgotz42jqzvidnbjjkjyy65c5xt5pp23t3y.ipfs.dweb.link/?filename=Jeff+Nickoloff+-+Docker+in+Action.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiftsojfjidu2r67riub7yhd4egul7e3behl5oihxadmhjgumyzcxa.ipfs.dweb.link/?filename=John+Sonmez+-+Soft+Skills+The+Software+Developer%27s+Life+Manual.mp3" type="audio/mpeg">
+</audio>

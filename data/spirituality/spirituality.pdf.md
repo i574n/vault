@@ -16,3 +16,9 @@ urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiegium3sb
 frame: https://
 style: height:50vh
 ```
+
+```custom-frames
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihom5swb25i2ljebdcmwcc65ajy6ycwqsmfpzyapv53l36qiwvl3a.ipfs.nftstorage.link/Jane%20Roberts%2C%20Robert%20F.%20Butts%20-%20Seth%20Speaks_%20The%20Eternal%20Validity%20of%20the%20Soul-Amber-Allen%20Publ.%2C%20New%20World%20Library%20(1994).pdf#page=1
+frame: https://
+style: height:50vh
+```
