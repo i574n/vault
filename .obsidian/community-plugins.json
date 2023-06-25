@@ -11,5 +11,6 @@
   "babashka",
   "obsidian-html-plugin",
   "obsidian-custom-file-extensions-plugin",
-  "obsidian-plugin-toc"
+  "obsidian-plugin-toc",
+  "better-word-count"
 ]

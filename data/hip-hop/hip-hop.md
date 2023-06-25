@@ -10356,3 +10356,314 @@ Eu sou a matéria devorada, uma história que se reforma.
 
 ---
 ---
+
+Vivo no ritmo do samba, da vida, eu levo a trama,
+Sou um sujeito de sorte, de festa, um apaixonado da alma.
+Esporte é meu prazer, viajar é meu dever,
+De amanhã não sei dizer, do passado, não quero saber.
+
+Passeio em dimensões, sob a luz de milhões de estrelas,
+Sou amigo das baleias, escalo montanhas gêmeas.
+Falo com plantas, danço com fantasmas,
+Meu jantar são placas tectônicas, meu sobremesa, o magma.
+
+Sonho de unicórnios em órbita, na luz da lua purpura,
+Nado com os sapos no Mar de Marte, bebo a bruma da aurora.
+Decifro os códigos dos astros, sigo a trilha das constelações,
+Fui adotado por alienígenas, somos uma grande reunião.
+
+Saudades de casa? Ah, essa é uma estranha canção,
+Minha verdadeira morada é na escuridão do vazio, na vastidão.
+Entre quasares e supernovas, encontro a minha paz,
+E você? Você aceita fazer parte desta farsa que me satisfaz?
+
+Ah, antes que eu esqueça, na verdade aqui só estou,
+Procurando por gatas que vendam maconha, e essa é a minha dor.
+Compreenda, minha amiga, minha busca é simples, veja,
+Não me leve a mal, só busco por safadas que vendam erva.
+
+-
+
+Viajo além do horizonte, amante da vida, de rima forte,
+Sou a sorte em forma de gente, no esporte, no norte, na morte.
+
+Falo com estrelas, beijo quasares, encontro paz nas nebulosas,
+Sou o misterioso dançarino do cosmos, e as baleias são minhas esposas.
+
+Sonho com unicórnios, mergulho em magma, minha casa é a vastidão,
+E nessa dança cósmica, busco alguém especial na imensidão.
+
+Saudade, ah, essa estranha canção, que me leva a uma busca além,
+Por um amor de outra dimensão, vendendo erva, num vaivém.
+
+-
+
+Bem-vindo ao meu mundo, no amor não há veto,
+Coração de poeta, mas com um quê de atleta.
+Amante da natureza, adepto da caminhada,
+Vivo na simplicidade, na cidade ou na estrada.
+
+Vou para o cinema, sou de ver o amanhecer,
+Especialista em café, pode me escolher pra beber.
+Acredito no destino, mas também no acaso,
+Viver é uma arte, e eu pinto cada traço.
+
+Mas agora fica estranho, minha bio se transforma,
+Sob a luz da lua, minha realidade se deforma.
+Nem tudo é o que parece, cada palavra tem dois lados,
+Entendidos e maliciosos, eis meus versos camuflados.
+
+Busco garotas liberais, em roupas leves, transparentes,
+Em praças ou becos, suas luzes tão fulgurantes.
+Elas vendem alegria, em um pacote bem verdinho,
+Compartilham o verde, um segredo nosso, miudinho.
+
+Amor, me acharás no meio do nevoeiro,
+Cuidado, pois ando com as danadas do dinheiro.
+E se decifraste o enigma, me chame de poeta,
+Espero por você, na rua, na praia, na sarjeta.
+
+Mas antes de você ir, quero que você entenda,
+Meu jogo de palavras, minha verdade tremenda.
+Não sou apenas um poeta, um atleta, um amante,
+Sou alguém peculiar, um trovador intrigante.
+
+-
+
+Simples e normal, gosto de café com chantilly,
+Gosto de jazz, guitarra e um samba de quintal.
+Muito bem educado, em Oxford estudei,
+E na Universidade, minha alma deixei.
+
+Agora, a coisa fica estranha, minha amada,
+Estou à procura da sua alma envenenada,
+Solitária, aberta e desesperada,
+Com um ar de mistério e uma risada levada.
+
+Ousada e sensual, adora jogar o jogo,
+Acende um baseado, e a mente voa alto.
+Vende um pouco de verde, para ganhar a vida,
+Mas a noite cai, e a festa fica perdida.
+
+E aí está a questão, querida ninfeta,
+És a traficante de amor que me completa?
+Um entendimento sensual, num riso solto,
+Serás tu a solitária puta que procuro, no fundo?
+
+Estou à procura da garota perdida,
+Com um pouco de erva e uma vida dividida.
+Então, desliza para a direita, querida desconhecida,
+E vamos desvendar esse jogo da vida.
+
+-
+
+"Solitária e afável, no jogo do amor eu sou implacável,
+Mando bem nas rimas, mesmo quando não são palpáveis.
+Não sou santa, mas quem me dera, cada encontro é uma quimera.
+
+Em noites frias, procuro uma paixão solitária,
+Uma dama que entre nas regras do meu itinerário.
+Não julgo pelo visual, quero apenas um contato unitário,
+Se quiser mais que isso, meu caro, você é um visionário.
+
+Vendo sonhos embrulhados em folhas verdes e belas,
+Meu aroma te embriaga, te leva a estrelas.
+Não sou traficante, apenas a Jardineira singela,
+Cultivo amor, sentimentos, e ervas tão belas.
+
+Chamo-me enigma, adorável sedutora,
+Espero por ti, meu belo e bravo explorador.
+Não sou qualquer uma, sou tua melhor tutora,
+De todos os teus desejos, sou a melhor produtora.
+
+Nas entrelinhas deste jogo, ofereço mais que palavras,
+Um mundo novo, por onde sua imaginação malabarista lavra.
+Para os entendedores, um olhar vale mais que mil disparadas,
+Quem sabe, nesse aplicativo, você encontre a sua amada."
+
+-
+
+"Um lobo solitário, atrevido e até um pouco esquivo,
+Procura por alguém, tão incrível quanto um hieroglifo.
+Nas rimas de minha vida, jogo charme sem ser intrusivo,
+Procuro por você, meu bem, algo mais que um objetivo.
+
+No mercado da solidão, adquirindo ervas pra sobreviver,
+Um produto verde, suave, pra noite bem viver.
+Não sou um delinquente, mas estou pronto pra receber,
+Só um pouquinho de amor, se é isso que você tem pra vender.
+
+Nas noites de luar, procuro um sorriso desinibido,
+Um parceiro de aventuras, nunca antes conhecido.
+Não busco um santo, mas sim alguém compreendido,
+Na arte de amar, de viver, e no mundo do proibido.
+
+Nas entrelinhas de um Tinder, eu faço a minha jogada,
+Na esperança de encontrar a conexão tão desejada.
+Se você for a certa, nossa história será contada,
+Um enigma, uma paixão, na madrugada prolongada."
+
+-
+
+"Poeta em vestes rebeldes, o mundo é meu palco.
+Encanto com meu falar doce, mistério no espaço.
+Na noite danço, sem compromisso, sem laço,
+Buscando uma loba solitária, que se perdeu no meu passo.
+
+Vejo em teus olhos a chama, a busca, o desejo,
+Partilhamos do mesmo vício, no segredo do nosso beijo.
+Embalado pelo verde do nosso sonho, pego leve, não me apresso,
+Da planta da alegria, sou um vendedor confesso.
+
+Versos tecidos em duplo sentido, jogo de palavras,
+Cautela, linda dama, não sou de contos de fadas.
+Sou mistério e promessa, sou doce e sou ardor,
+Procurando por uma parceira, nessa dança de amor.
+
+Rimas complicadas, entendimento sutil,
+Atrás de almas solitárias, mas meu coração é instável, frágil.
+Nessa vida rápida, sem amarras, onde tudo é possível,
+Serei eu, o trovador, a fazer-te irresistível?"
+
+-
+
+Uma alma perspicaz na dança da sedução,
+Versos entrelaçados com picante tentação.
+Busco as safadinhas, despretensiosas em seu viver,
+Aquelas com um 'stash' de verdinhas para compartilhar e acender.
+
+Poeta noturno, rimador do absurdo,
+Nas entrelinhas, um jogo de palavras, sem pudor, sem escudo.
+As sinuosidades da vida me fazem gargalhar,
+Nas curvas de suas ancas, um convite para explorar.
+
+O charme reside na promessa velada,
+Na sutileza do flerte, na conquista encoberta e ousada.
+Porém, sejamos francos neste jogo de amor e fumaça,
+Procuro uma erva daninha, donzela audaciosa, com erva na bolsa.
+
+Compartilhamos a risada, a volúpia e o trago,
+Em linhas entrelaçadas, nos perdemos em cada afago.
+Se seu coração é livre e seu 'stash' é repleto,
+Dê um swipe à direita, vamos fazer este encontro perfeito.
+
+-
+
+Aqui está, um amante de rimas e jogos,
+Desafiando o destino, navegando entre fogo e fumos.
+Na essência, um charme encoberto, um capricho oculto,
+Busca aqueles que acendem, que brilham, que o conduzem ao assunto.
+
+Não me defino pelas convenções, porém pela transgressão,
+Busco a sutileza do prazer, a profunda conexão.
+Nas sombras da noite, com a lua como testemunha,
+Procurando por um coração aberto, por uma mão que em verdinhas se afunilha.
+
+O palco da sedução é vasto e colorido,
+Nos bastidores, desejos acendem, cobiça e ganja compartilhados.
+Não se engane, esta é uma arte sofisticada,
+Na busca por aquelas destemidas, que mantêm sua erva estocada.
+
+Em meu jardim de versos, floresce a exuberância,
+Cada pétala, uma promessa, uma ardente esperança.
+Porém, aprecio as ervas daninhas, aquelas que se rebelam,
+Com seu charme inegável, seus segredos que anseio desvendar.
+
+A dança da sedução, tão complexa quanto uma teia de aranha,
+Neste balé intrincado, procuro a parceira com verdinhas na arca.
+Se isso lhe soa como um convite agradável, um jogo divertido,
+Deslize à direita, vamos acender o pavio desta paixão, este enigma resolvido.
+
+-
+
+Como um falcão solitário em sua solene vigília,
+Busco aquela de olhar fogoso e erva na mochila.
+No mar da sedução, sou um velejador atrevido,
+Na onda do flerte, seu aroma de ganja é meu abrigo.
+
+Vida de ousadia, de palavras e fumaça entrelaçadas,
+Procurando por rebeldes, por damas bem acostumadas.
+No baile do destino, onde cada rima é um código,
+Busco uma parceira com verdinhas, uma dama sem um apóstrofo.
+
+E assim eu danço na melodia do desconhecido,
+Um jogo de palavras, onde o prêmio é um enigma resolvido.
+Com a lua como minha lanterna, a noite como minha capa,
+Procuro uma erva daninha, uma dama que a minha alma arrebata.
+
+Entre rimas e ritmos, num jogo de sutileza,
+Eu navego em busca de você, minha preciosa princesa.
+Então, se a erva em sua bolsa é densa e exuberante,
+Deslize à direita, vamos compartilhar o fogo, este encontro deslumbrante.
+
+-
+
+Através de sombras dançantes, uma rima sedutora se desenha,
+Procurando uma dama ardente, que em sua bolsa, verdinhas prenha.
+Nesta tela de encantos, eu pinto a minha missão,
+Com pinceladas de desejo, busco você, minha paixão.
+
+Na tapeçaria do destino, onde cada linha é um flerte,
+Anseio por sua chama, uma fogueira onde meus desejos se convertem.
+Em seu olhar fogoso, encontro minha rima,
+Em sua erva escondida, um convite, a sinfonia do clima.
+
+Com versos sutis e toques quentes, sou um caçador na noite,
+A busca por uma dama ousada, a fumaça que me açoite.
+No labirinto da luxúria, onde cada passo é um enigma,
+Anseio por seu toque, minha musa, meu abrigo.
+
+Nesta dança do desejo, cada rima um gemido,
+A paixão inflama, em nosso abraço escondido.
+Então, se em sua bolsa, a erva é verde e fresca,
+Deslize à direita, vamos acender a chama, nossa saga pitoresca.
+
+-
+
+sou o mestre da sutileza
+conquisto com firmeza entre a malícia e a destreza
+daquela que possui a riqueza de uma linda fortaleza
+guardada por sua beleza e repleta da natureza
+
+na pureza do desejo revelo o meu ensejo
+com um tesouro escondido em meio ao seu abrigo
+que traz o paraíso do fumo bem-sucedido
+
+se a erva é tua missão, vem, completa minha canção
+revela tua localização, sem muito papo ou ilusão no espírito da diversão
+na total dispensação de formal conversação
+
+sem conversas fiadas, sem promessas infladas
+busca as coordenadas, apaga as estradas, descobre as escadas
+aonde a lua prateada sempre te deixará embriagada
+
+se acaso esta prosa te cativar, se na tua mente ecoar
+sem mais delongas, é só enviar a morada do teu lar,
+sem medo de revelar aonde poderemos nos encontrar
+
+-
+
+Em busca de doce aventura, trago rima de alta estatura,
+E se minha figura, no teu peito causar fissura,
+Não hesite, seja pura, e encare a mais louca viagem segura.
+
+Numa dança de sutileza, conquisto com firmeza,
+Na pureza do meu desejo, é teu arrojo meu ensejo,
+Se a erva é tua missão, completa então minha canção,
+Revela tua localização, sem demora ou ilusão.
+
+No espírito da diversão, sem papo ou discussão,
+Envia-me as coordenadas, apaga todas as estradas,
+Revela a escada para teu lar, aonde a erva nos fará viajar.
+
+Pode crer, sem conversa fiada, nem promessa inflada,
+No teu endereço guardado, encontro o paraíso almejado,
+Onde juntos, lado a lado, seremos pelo destino abençoados.
+
+Se a prosa te encantar, e o desejo te instigar,
+Agora, sem mais delongas, é só me endereçar,
+O local onde podemos, na noite, nos encontrar,
+E na fumaça das estrelas, juntos vamos dançar.
+
+---
+---
