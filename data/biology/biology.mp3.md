@@ -5,3 +5,11 @@
 <audio controls>
   <source src="https://bafybeifxw2wqmeykvimqkwe7puf4rorsxy54xbhm7ggmasi5can3cauvkq.ipfs.dweb.link/?filename=Sy+Montgomery+-+How+to+Be+a+Good+Creature.m4b" type="audio/mpeg">
 </audio>
+
+<audio controls>
+  <source src="https://bafybeieym6pu36soq5pj5xuyzdqzte3wkrk67v7xeba4k72xyecehitrey.ipfs.dweb.link/?filename=The+Great+Dead+Body+Teachers+A.m4b" type="audio/mpeg">
+</audio>
+
+<audio controls>
+  <source src="https://bafybeiex3yoted7jbgdmzizzx442rxucfem4bbilb5o4own6u5fxzxvxhy.ipfs.dweb.link/?filename=The+Heartbeat+of+Trees+A.mp3" type="audio/mpeg">
+</audio>
