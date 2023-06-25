@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: mv .obsidian obsidian
+      - run: mv .obsidian _.obsidian
 
       - uses: actions/upload-artifact@v2
         with:
