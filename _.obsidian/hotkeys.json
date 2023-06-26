@@ -208,12 +208,6 @@
       "modifiers": [
         "Mod"
       ],
-      "key": "O"
-    },
-    {
-      "modifiers": [
-        "Mod"
-      ],
       "key": "P"
     }
   ],
@@ -234,6 +228,34 @@
         "Shift"
       ],
       "key": "G"
+    }
+  ],
+  "markdown:toggle-preview": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "R"
+    }
+  ],
+  "editor:open-search": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod",
+        "Shift"
+      ],
+      "key": "F"
+    }
+  ],
+  "editor:toggle-bold": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "B"
     }
   ]
 }
