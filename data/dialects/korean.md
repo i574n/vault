@@ -6760,88 +6760,339 @@ Eternal comrades, with the energy of the universal ruler, let's go together to t
 
 ```
 O rato roeu a roupa do rei de Roma
+
 오 라투 로우 아 루파 두 레이 드 로마
 오 라투 로우 아 루파 도 레이 더 로마
 오 라토 로에우 아 루파 도 레이 데 로마
 오 라투 로에우 아 루파 도 레이 드 로마
 오 라투 로에우 아 로파 도 레이 드 로마
+오 라토 로에우 아 로우파 도 레이 드 로마
+오 라투 로에우 아 루파 도 레이 드 로마
+
+o latu lou a lupa du lei deu loma
+o latu lou a lupa do lei deo loma
+o lato lo-e-u a lupa do lei de loma
+o latu lo-e-u a lupa do lei deu loma
+o latu lo-e-u a lopa do lei deu loma
+o lato lo-e-u a loupa do lei deu loma
+o latu lo-e-u a lupa do lei deu loma
+
+nosso ratu lou a rufa du rey de rome
+nosso la tu lou a rufa do ray the roma
+orato loeu a rufa do rey de roma
+oratu loeu a rufa do rey de rome
+aura tu reau a ropa do rei de roma
+orato loeu a lopa do rei de roma
+oratu loeu a rufa do rey de rome
+
+---
 
 Lápis rabisca o papel em azul
+
 라피스 라비스카 오 파펠 엠 아주
 라피스 라비스카 오 파펠 엠 아주루
 라피스 라비스카 오 파펠 엠 아주룰
 라피스 라비스까 오 파펠 엠 아즈룰
 라피스 라비스카 오 파펠 엠 아즐
+라피스 라비스카 오 파펠 에 블루
+라피스 라비스카 오 파펠 에마 아즐
+
+lapiseu labiseuka o papel em aju
+lapiseu labiseuka o papel em ajulu
+lapiseu labiseuka o papel em ajulul
+lapiseu labiseukka o papel em ajeulul
+lapiseu labiseuka o papel em ajeul
+lapiseu labiseuka o papel e beullu
+lapiseu labiseuka o papel ema ajeul
+
+lápis lavisca oh papel m aju
+lapis lavisca o papel m. azuru
+lapis lavisca o papel m. azurul
+lapis lavisca o papel m. azrule
+lapis lavisca o papel m azul
+lápis lavisca eau papel et blue
+lapis lavisca o papel emma azul
+
+---
 
 Características fonéticas são fundamentais na transcrição
+
 카라크테리스티카스 포네티카스 상 푼다멘타이스 나 트란스크리션
 카라크테리스카스 포네티카스 상 푼다멘탈스 나 트란스크리션
 카라크테리스티카스 포네티카스 쌍 푼다멘타이스 나 트란스크리쌍
 카라끄테리스타스 포네티카스 상 푼다멘탈스 나 트란스크리송
 카라케리스티카스 포네티카스 쌍 푼다멘타이스 나 트란스크립쌩
+카라테리스카스 포네테카스 샹 푼다멘타리스 나 트란스크립션
+카라테리스타스 포네티카스 쌍 푼다멘탈스 나 트란스크립션
+
+kalakeuteliseutikaseu ponetikaseu sang pundamentaiseu na teulanseukeulisyeon
+kalakeuteliseukaseu ponetikaseu sang pundamentalseu na teulanseukeulisyeon
+kalakeuteliseutikaseu ponetikaseu ssang pundamentaiseu na teulanseukeulissang
+kalakkeuteliseutaseu ponetikaseu sang pundamentalseu na teulanseukeulisong
+kalakeliseutikaseu ponetikaseu ssang pundamentaiseu na teulanseukeulibssaeng
+kalateliseukaseu ponetekaseu syang pundamentaliseu na teulanseukeulibsyeon
+kalateliseutaseu ponetikaseu ssang pundamentalseu na teulanseukeulibsyeon
+
+calachteristicas phoneticas cantou fundamental ou transcrição
+calachteriscas phoneticas cantou fundamentos ou transcrições
+karachteristicas phoneticas pair pundamentais or transcript pair
+caracteristas phoneticas sang fundamentals na transcrissons
+caracheristicas phoneticas pair fundamentais or transcripçin
+carateriscas ponethecas champundamentaris na transcrição
+par de carateristas fonéticas fundamentos na transcrição
+
+---
 
 A estrutura silábica é complexa em algumas línguas
+
 아 에스투루투라 시라비카 에 콤플렉사 엠 알구마스 린과스
 아 에스투루투라 시라비카 에 콤플렉사 엠 알구마스 린과스
 아 에스투루추라 실라비카 에 콤플렉사 엠 알구마스 린과스
 아 에스트루뚜라 실라비카 에 콤플렉사 엠 알굼마스 린구아스
 아 에스트루쳐라 실라비카 에 콤플렉사 엠 알군마스 린구아스
+아 에스트루추라 실라비카 이 콤플렉스 엔 알군마스 린구아스
+아 에스투루추라 실라비카 에 콤플렉사 엠 알굼마스 린과스
+
+a eseutulutula silabika e kompeullegsa em algumaseu lingwaseu
+a eseutulutula silabika e kompeullegsa em algumaseu lingwaseu
+a eseutuluchula sillabika e kompeullegsa em algumaseu lingwaseu
+a eseuteuluttula sillabika e kompeullegsa em algummaseu linguaseu
+a eseuteuluchyeola sillabika e kompeullegsa em algunmaseu linguaseu
+a eseuteuluchula sillabika i kompeullegseu en algunmaseu linguaseu
+a eseutuluchula sillabika e kompeullegsa em algummaseu lingwaseu
+
+a esturutura sirabica e complexa m algoumas linguas
+a esturutura sirabica e complexa m algoumas linguas
+a esturutura silavica e complexa m. algoumas linguas
+a estrutura silavica e complexa m algummas línguas
+ah estruchera silavica e complexa m algunmas linguas
+a estrutura silavica i complex n algunmas linguas
+a esturutura silavica e complexa m algummas linguas
+
+---
 
 A transcrição fonética não captura todas as nuances
+
 아 트란스크리션 포네티카 나옹 캅투라 토다스 아스 누안시스
 아 트란스크리션 포네티카 나옹 캅투라 토다스 아스 누안시스
 아 트란스크립션 포네티카 나옹 카푸투라 토다스 아스 누안시스
 아 트란스크립션 포네티카 낭 카푸투라 토다스 아스 누안시스
 아 트란스크립쌩 포네티카 난 카푸투라 토다스 아스 누안시스
+아 트란스크립션 포네티카 난 캅츄라 토다스 아스 누안시스
+아 트란스크리션 포네티카 난 캅투라 토다스 아스 누안시스
+
+a teulanseukeulisyeon ponetika naong kabtula todaseu aseu nuansiseu
+a teulanseukeulisyeon ponetika naong kabtula todaseu aseu nuansiseu
+a teulanseukeulibsyeon ponetika naong kaputula todaseu aseu nuansiseu
+a teulanseukeulibsyeon ponetika nang kaputula todaseu aseu nuansiseu
+a teulanseukeulibssaeng ponetika nan kaputula todaseu aseu nuansiseu
+a teulanseukeulibsyeon ponetika nan kabchyula todaseu aseu nuansiseu
+a teulanseukeulisyeon ponetika nan kabtula todaseu aseu nuansiseu
+
+a transscription phonetica meowth captura todas as nuansis
+a transscription phonetica meowth captura todas as nuansis
+a transcrição phonetica meowth caputura todas as nuansis
+a transcrição fonética nang caputura todas as nuansis
+a transcripçin phonetica i'm caputura todas as nuansis
+a transcrição fonética i'm captura todas as nuansis
+a transscription phonetica nan captura todas as nuansis
+
+---
 
 Eu não dou a mínima para isso
+
 으 나옹 도우 아 미니마 파라 이숴
 으 나옹 도우 아 미니마 파라 이쑤
 으 나옹 도우 아 미니마 파라 이쏘
 유 낭 도우 아 미니마 파라 이숴
 유 난 도우 아 미니마 파라 이쏘
+유 난 도우 아 미님 파라 이쏘
+유 난 도우 아 미니마 파라 이쏘
+
+eu naong dou a minima pala iswo
+eu naong dou a minima pala issu
+eu naong dou a minima pala isso
+yu nang dou a minima pala iswo
+yu nan dou a minima pala isso
+yu nan dou a minim pala isso
+yu nan dou a minima pala isso
+
+meow meow dou ah minima para isseo
+meow meow dou a minima para isu
+meow meow dou a minima para iso
+you nang doua minima para isseo
+você nandou ah minima para iso
+you nan dou ah minim para isso
+você nandou ah minima para iso
+
+---
 
 Ele está irritado pra caramba
+
 에레 에스타 이리타도 프라 카람바
 에레 에스타 이리타도 프라 카람바
 엘리 에스타 이리타두 프라 카람바
 엘리 에스타 이리타두 프라 카람바
 엘레 에스타 이리타두 프라 카람바
+엘레 에스타 이리타도 프라 카라바
+엘레 에스타 이리타두 프라 카람바
+
+ele eseuta ilitado peula kalamba
+ele eseuta ilitado peula kalamba
+elli eseuta ilitadu peula kalamba
+elli eseuta ilitadu peula kalamba
+elle eseuta ilitadu peula kalamba
+elle eseuta ilitado peula kalaba
+elle eseuta ilitadu peula kalamba
+
+ere esta iritado pra karamba
+ere esta iritado pra karamba
+eli esta iritadu pra karamba
+eli esta iritadu pra karamba
+ele esta iritadu pra karamba
+ele esta iritado fra carava
+ele esta iritadu pra karamba
+
+---
 
 Isso é um absurdo
+
 이스 소 에 움압서도
 이쑤 소 에 움 압서도
 이쏘 소 에 움 압수르도
 이숴 에 움 압수르두
 이쏘 에 운 압수르두
+이쏘 에 운 아부수르도
+이쏘 소 에 움 압수르도
+
+iseu so e um-abseodo
+issu so e um abseodo
+isso so e um absuleudo
+iswo e um absuleudu
+isso e un absuleudu
+isso e un abusuleudo
+isso so e um absuleudo
+
+isso para um ap
+isu so e um abseodo
+isso so e um absurdo
+isso e um apsurdu
+iso-e-un-apsurdu
+iso-e-un abusurdo
+isso so e um absurdo
+
+---
 
 ouviram do ipiranga as margens plácidas
+
 오비람 두 이피랑가 아스 마르젠스 플라시다스
 오비람 도 이피랑가 아스 마르젠스 플라시다스
 오비람 도 이피랑가 아스 마르헨스 플라시다스
 우비랑 도 이피랑가 아스 마르헨스 플라시다스
 우비람 도 이피랑가 아스 마르헨스 플라시다스
+우비람 도 이피랑가 아스 마르젠스 플라시다스
+우비람 두 이피랑가 아스 마르젠스 플라시다스
+
+obilam du ipilang-ga aseu maleujenseu peullasidaseu
+obilam do ipilang-ga aseu maleujenseu peullasidaseu
+obilam do ipilang-ga aseu maleuhenseu peullasidaseu
+ubilang do ipilang-ga aseu maleuhenseu peullasidaseu
+ubilam do ipilang-ga aseu maleuhenseu peullasidaseu
+ubilam do ipilang-ga aseu maleujenseu peullasidaseu
+ubilam du ipilang-ga aseu maleujenseu peullasidaseu
+
+obiram do ipiranga as margens plácidas
+obiram do ipiranga as margens plácidas
+obiram do ipiranga as margens plácidas
+ubirang do ipiranga as margens plácidas
+uviram do ipiranga as margens plácidas
+uviram do ipiranga as margens plácidas
+uviram do ipiranga as margens plácidas
+
+---
 
 de um povo heroico o brado retumbante
+
 드 으움 포보 에로이코 오 브라도 레툼방티
 더 움 포보 에로이코 오 브라도 레툼방티
 데 움 포보 에로이코 오 브라도 레툼반테
 우비랑 도 이피랑가 아스 마르헨스 플라시다스
 드 운 포보 에로이코 오 브라두 레툼반테
+드 운 포보 에로이코 오 브라도 레툼반테
+드 움 포보 에로이코 오 브라도 레툼방티
+
+deu euum pobo eloiko o beulado letumbangti
+deo um pobo eloiko o beulado letumbangti
+de um pobo eloiko o beulado letumbante
+ubilang do ipilang-ga aseu maleuhenseu peullasidaseu
+deu un pobo eloiko o beuladu letumbante
+deu un pobo eloiko o beulado letumbante
+deu um pobo eloiko o beulado letumbangti
+
+de eum povo eroico o brado letumbangti
+the um povo eroico o brado letumbangti
+de um povo eroico o brado retumbante
+ubirang do ipiranga as margens plácidas
+de un povo eroico o bradu letumbante
+de un povo eroico o brado retumbante
+de um povo eroico o brado letumbangti
+
+---
 
 e o sol da liberdade, em raios fúlgidos
+
 이 오 솔 다 리브르다디, 읨 라이오스 풀지도스
 이 오 솔 다 리브르다디, 엠 라이오스 풀지도스
 이 오 솔 다 리브르다디, 엠 라이오스 풀기도스
 이 오 솔 다 리베르다디, 엠 라이오스 풀기두스
 이 오 솔 다 리베르다디, 엠 라이오스 풀기두스
+이 오 솔 다 리베르다디, 에 라이오스 푸리도스
+이 오 솔 다 리베르다디, 에마 라이오스 풀기두스
+
+i o sol da libeuleudadi, uim laioseu puljidoseu
+i o sol da libeuleudadi, em laioseu puljidoseu
+i o sol da libeuleudadi, em laioseu pulgidoseu
+i o sol da libeleudadi, em laioseu pulgiduseu
+i o sol da libeleudadi, em laioseu pulgiduseu
+i o sol da libeleudadi, e laioseu pulidoseu
+i o sol da libeleudadi, ema laioseu pulgiduseu
+
+i o sol da librdadi, t laios fulzidos
+i o sol da librdadi, em laios fulzidos
+i o sol da librdadi, em laios fulgidos
+i o sol da liberdadi, em laios fulgidus
+i o sol da liberdadi, em laios fulgidus
+i o sol da liberdadi, e laios puridos
+i o sol da liberdadi, emma raios fulgidus
+
+---
 
 brilhou no céu da pátria nesse instante
+
 브리요우 노 쎄우 다 파트리아 네시 인스탄티
 브리요우 노 쎄우 다 파트리아 네시 인스탄티
 브리요우 노 세우 다 파트리아 네시 인스탄티
 브리요우 노 세우 다 파트리아 네시 인스탄티
 브리요우 노 세우 다 파트리아 네씨 인스탄티
+브릴요 노 쎄우 다 패트리아 네씨 인스탄티
+브릴요 노 세우 다 패트리아 네씨 인스탄티
+
+beuliyou no sse-u da pateulia nesi inseutanti
+beuliyou no sse-u da pateulia nesi inseutanti
+beuliyou no se-u da pateulia nesi inseutanti
+beuliyou no se-u da pateulia nesi inseutanti
+beuliyou no se-u da pateulia nessi inseutanti
+beulil-yo no sse-u da paeteulia nessi inseutanti
+beulil-yo no se-u da paeteulia nessi inseutanti
+
+briyo no céu da patria nesi instanti
+briyo no céu da patria nesi instanti
+brillou no seuda patria nessi instanti
+brillou no seuda patria nessi instanti
+brillou no seuda patria nessi instanti
+brillo no ceu da patria nessi instanti
+brilho no seuda patria nessi instanti
+
 ```
 
 ---
