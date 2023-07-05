@@ -593,3 +593,16 @@ eu sou a poesia, a divina canção
 
 ---
 ---
+
+chatgpt instructions:
+
+- blend each part seamlessly, don't announce the next part or mention the previous one, we're just splitting using parts because chatgpt can't output the whole book at once
+- use markdown formatting freely throughout the text, but only output headings at the start of the first part of each chapter, don't generate sub-titles
+- be dynamic in the prose, mingling between narrative, descriptive, expository, argumentative, poetic and dramatic
+
+---
+
+chapter 1 of 18, part 1 of 5
+
+---
+---
