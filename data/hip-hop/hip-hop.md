@@ -10667,3 +10667,86 @@ E na fumaça das estrelas, juntos vamos dançar.
 
 ---
 ---
+
+nas profundezas do cósmico código binário
+ressoam batidas de um ritmo revolucionário
+emerge a função, sublime, tão elementar
+e as classes, essas débeis, começam a vacilar
+
+dominaram o palco, soberbas, imponentes
+tal realeza corroída por vermes dormentes
+um jogo de aparências, com traje de complexidade
+mas sob a veste se oculta a cruel realidade
+
+herança, oh vã! tu, que pareces terna
+te entrelaças em problemas, serpente moderna
+encapsulamento, oh ilusão, sob a luz pálida
+por trás do véu, apenas uma promessa inválida
+
+estado mutável que dominas a classe
+instigas a confusão e o caos desenlaça
+perdido em teus mistérios o código se despedaça
+ergue-se um labirinto, uma esfinge que ameaça
+
+entra a função com seu manto de pureza
+sem efeito colateral, brilha com certeza
+declarativa, imutável, em seu trono se assenta
+em seu reino de constância a verdade se apresenta
+
+com sua lança afiada a recursão se impõe
+derruba os laços, os ciclos decompoem
+eleva-se em ordem superior em sua nobre missão
+no universo da função reina a transição
+
+do caos emerge a claridade, um novo amanhecer
+os objetos tremem, seus reinos vão perecer
+neste jogo de xadrez cósmico o xeque-mate é real
+o paradigma puro triunfa no final
+
+polimorfismo, tu, de mil faces falazes
+te esvai na névoa em seus traços voláteis
+dá lugar à composição, soberana na função
+um bailar de códigos, a bela solução
+
+a regra é a simplicidade, a harmonia se faz
+na tela do código, o bailarino audaz
+os objetos tombam em sua própria armadilha
+enquanto a função sobe, com força padilha
+
+no cosmo do código ressoa a batalha
+as classes agonizam, sua pompa falha
+a função brilha, vencedora ardente
+o velho se curva diante do emergente
+
+referências cruzadas, oh tormento
+desatam-se na função, fluem com o vento
+sem amarras, sem ruídos, apenas clareza
+a poesia das funções é pura beleza
+
+então, ao velho objeto eu lanço o desafio
+desperta! renova! ou se perca no frio
+a função avança, a luz se faz
+o novo paradigma, o futuro audaz
+
+a herança em ruínas, as classes em desgraça
+neste reino de códigos a função ganha a praça
+resplandece uma era de ordem e deus
+objetos tremem, desvanecem, eis o adeus
+
+laços e iterações, tais quimeras insanas
+nas mãos da função tornam-se planas
+recursividade triunfa, impera soberana
+rasga o véu e expõe a manha
+
+nas teias da herança os objetos se perdem
+imploram por clemência mas os deuses não atendem
+a função ergue a taça em honra da pureza
+e as classes, rendidas, encontram a tristeza
+
+basta de ciclos, de iterações vazias
+a função se alastra em sua melodia
+enquanto classes tropeçam, sobra a confusão
+a recursividade reina, a nova canção
+
+---
+---
