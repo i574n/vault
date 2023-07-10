@@ -597,8 +597,11 @@ eu sou a poesia, a divina canção
 chatgpt instructions:
 
 - blend each part seamlessly, don't announce the next part or mention the previous one, we're just splitting using parts because chatgpt can't output the whole book at once
+- use a schizophrenic first-person singular/plural//second-person//third-person limited/omniscient/objective style. the style should be consistent, yet flexible enough to adapt to the tone and mood of the table of contents
+- be dynamic in the pt-br prose, mingling between narrative, descriptive, expository, argumentative, poetic and dramatic
+- devices such as metaphor, simile, alliteration, personification, irony, and foreshadowing should be used judiciously for enhancement. slang, jargon, or dialects can be incorporated to add authenticity
+- the characterization when applicable should be revealed through dialogue, thoughts, actions, physical descriptions and interactions
 - use markdown formatting freely throughout the text, but only output headings at the start of the first part of each chapter, don't generate sub-titles
-- be dynamic in the prose, mingling between narrative, descriptive, expository, argumentative, poetic and dramatic
 
 ---
 
