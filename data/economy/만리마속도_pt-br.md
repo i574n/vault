@@ -108,165 +108,197 @@
     - [5 Integração de Educação, Pesquisa Científica e Produção](#5-integração-de-educação-pesquisa-científica-e-produção)
     - [6 Instituto de Desenvolvimento de Tecnologia Avançada](#6-instituto-de-desenvolvimento-de-tecnologia-avançada)
   - [6 Alguns problemas e desafios que estão sendo resolvidos](#6-alguns-problemas-e-desafios-que-estão-sendo-resolvidos)
+    - [1 Alguns problemas em andamento](#1-alguns-problemas-em-andamento)
+      - [1-1 Consciência do protagonismo](#1-1-consciência-do-protagonismo)
+      - [1-2 Egocentrismo](#1-2-egocentrismo)
+      - [1-3 Mediocridade](#1-3-mediocridade)
+      - [1-4 Problema de Preços](#1-4-problema-de-preços)
+      - [1-5 Problema da Moeda](#1-5-problema-da-moeda)
+    - [2 Desafios](#2-desafios)
+      - [2-1 Dificuldade Interna](#2-1-dificuldade-interna)
+      - [2-2 Dificuldades externas](#2-2-dificuldades-externas)
+  - [7 8ª Conferência do Partido dos Trabalhadores da Coreia](#7-8ª-conferência-do-partido-dos-trabalhadores-da-coreia)
+    - [1 Autoexame completo](#1-autoexame-completo)
+    - [2 Direção para Melhoria](#2-direção-para-melhoria)
+    - [3 4ª Reunião Plenária do 8º Período](#3-4ª-reunião-plenária-do-8º-período)
+  - [Apêndice - Material de referência](#apêndice---material-de-referência)
+    - [1 República Popular Democrática da Coreia](#1-república-popular-democrática-da-coreia)
+    - [2 Sistema de liderança única do Partido dos Trabalhadores](#2-sistema-de-liderança-única-do-partido-dos-trabalhadores)
+    - [3 As massas populares em primeiro lugar](#3-as-massas-populares-em-primeiro-lugar)
+    - [4 O poder da unidade](#4-o-poder-da-unidade)
+    - [5 O Congresso Representativo e a Conferência Representativa do Partido dos Trabalhadores da Coreia](#5-o-congresso-representativo-e-a-conferência-representativa-do-partido-dos-trabalhadores-da-coreia)
+    - [6 Luta pela vitória final do socialismo](#6-luta-pela-vitória-final-do-socialismo)
+    - [7 O socialismo forte que a Coreia está construindo](#7-o-socialismo-forte-que-a-coreia-está-construindo)
+    - [8 Construção de uma Potência Econômica](#8-construção-de-uma-potência-econômica)
+    - [9 Plano de Desenvolvimento Econômico Nacional da Coreia](#9-plano-de-desenvolvimento-econômico-nacional-da-coreia)
+    - [10 Recursos e infraestrutura básica da Coreia](#10-recursos-e-infraestrutura-básica-da-coreia)
+    - [11 Orçamento Nacional](#11-orçamento-nacional)
+    - [12 Melhoria da estrutura do setor econômico, garantindo o equilíbrio entre setores](#12-melhoria-da-estrutura-do-setor-econômico-garantindo-o-equilíbrio-entre-setores)
+    - [13 Modernização e Informatização da Economia Nacional](#13-modernização-e-informatização-da-economia-nacional)
+    - [14 Construção econômica na era Songun da Coréia](#14-construção-econômica-na-era-songun-da-coréia)
+    - [15 Vamos seguir sorrindo mesmo que o caminho seja difícil](#15-vamos-seguir-sorrindo-mesmo-que-o-caminho-seja-difícil)
+    - [16 "Marcha de Dificuldades" e "Marcha Forçada"](#16-marcha-de-dificuldades-e-marcha-forçada)
+    - [17 Lutas de 70 dias, 200 dias, 80 dias](#17-lutas-de-70-dias-200-dias-80-dias)
+    - [18 Deixe o som de "Viva ao Partido do Trabalho" ecoar a partir da mesa de jantar](#18-deixe-o-som-de-viva-ao-partido-do-trabalho-ecoar-a-partir-da-mesa-de-jantar)
+    - [19 eliminar a dependência das importações também é uma defesa do socialismo](#19-eliminar-a-dependência-das-importações-também-é-uma-defesa-do-socialismo)
+    - [20 Mantenha os pés em sua própria terra e os olhos no mundo](#20-mantenha-os-pés-em-sua-própria-terra-e-os-olhos-no-mundo)
+    - [21 Sistema bancário comercial da Coreia](#21-sistema-bancário-comercial-da-coreia)
+    - [22 Sistema empresarial alternativo e espírito de Cheongsanri](#22-sistema-empresarial-alternativo-e-espírito-de-cheongsanri)
+    - [23 Jovem Nação Poderosa](#23-jovem-nação-poderosa)
+    - [24 Universidade Kim Il-sung](#24-universidade-kim-il-sung)
+    - [25 Educação de Talentos na Coreia](#25-educação-de-talentos-na-coreia)
+    - [26 Proteção de Marcas na Coreia do Norte](#26-proteção-de-marcas-na-coreia-do-norte)
+    - [27 Proteção dos direitos autorais da Coreia](#27-proteção-dos-direitos-autorais-da-coreia)
+    - [28 Guia de Política de Investimento da Coreia](#28-guia-de-política-de-investimento-da-coreia)
 
-Prólogo da Recomendação
+(Índice)
 
-Parte 1
-Características Atuais da Coreia do Norte
-
-1] Espírito e velocidade
-    1] A missão da política militar-primeiro
-    2] O espírito da época
-        2-1] Velocidade de Masikryong
-        2-2] Velocidade de Manrima
-        2-3] Velocidade da Coreia do Norte
-        2-4] Velocidade de Pyongyang
-        2-5] Espírito de Gangwon-do
-    3] Discurso de Ano Novo
-2] Mudanças na situação política
-    1] Testes nucleares e lançamentos de mísseis
-    2] Pressão de sanções internacionais
-    3] A economia da Coreia do Norte sob sanções
-    4] A resolução do "Segundo Marcha Árdua"
-    5] Melhora das relações internacionais
-    6] Desafios encontrados
-3] Transição da economia
-    1] Promoção da modernização e da indigenização
-    2] Impulsionar fortemente o desenvolvimento da indústria de TI
-    3] Construção em grande escala
-    4] Construção de casas
-    5] Construção de instalações para cultura e esportes
-    6] Inovação em design
-
-Parte 2
-A economia da Coreia do Norte na era da política de linha paralela
-
-1] Método de gestão econômica socialista da Coreia do Norte
-    1] Novo método de gestão de empresas
-    2] Sistema de gestão de responsabilidade de empresas socialistas
-    3] Sistema de responsabilidade em uma escala de trabalho
-    4] Princípio de distribuição
-    5] Respeito pelas leis econômicas objetivas
-2] Estratégia de desenvolvimento econômico e função econômica do Estado
-    1] Plano estratégico quinquenal de desenvolvimento econômico nacional
-        1-1] Resolver o problema da energia
-        1-2] Desenvolvimento concentrado da indústria do carvão, metalúrgica e transporte ferroviário
-        1-3] Transição no setor de maquinaria, indústria química, construção e materiais de construção
-        1-4] Lançamento de produção nos setores de agricultura, pesca e indústria leve
-        1-5] Promover ativamente o projeto de gestão do território nacional
-        1-6] Expandir as relações econômicas externas
-    2] Função do gabinete
-3] Diversos aspectos das fábricas, empresas e fazendas
-    1] Fábrica de alimentos integrais Kim Jong Un
-    2] "Primavera Perfumada" e "Via Láctea"
-    3] Fábrica de cogumelos de Pyongyang
-    4] Fábrica de alimentos para crianças de Pyongyang
-    5] Fábrica de grãos de Pyongyang
-    6] Fazenda cooperativa especializada em aves de Jangchon
-    7] Fazenda cooperativa de cereais
-4] Vida das pessoas
-    1] Sistema de fornecimento de alimentos
-    2] Rede comercial
-    3] Mercado
-    4] Telefone celular
-    5] Táxi
-    6] Restaurantes e casas de banho
-    7] Cerveja Daedonggang
-    8] Exposições e feiras de produtos
-    9] Playground
-    10] Esportes populares
-    11] Artes e cultura
-    12] Cerimônia de casamento
-5] Economia externa
-    1] Política de atração de investimento estrangeiro
-    2] Zonas econômicas especiais e zonas de desenvolvimento econômico
-    3] Joint ventures
-    4] Comércio geral
-    5] Comércio de processamento, comércio de tecnologia, comércio de serviços
-    6] Cooperação externa de fábricas e empresas
-    7] Indústria do turismo
-    8] Situação de investimento estrangeiro
-    9] Cooperação econômica inter-coreana
-        9-1] Distrito Industrial de Kaesong
-        9-2] Turismo internacional do Monte Kumgang
-    10] Sistema tributário
-    11] Escritórios de advocacia
-
-Parte 3
-Economia após a conclusão da política de linha paralela
-
-1] Conferência de abril
-    1] 3ª Conferência de Delegados Completos do 7º Comitê Central do Partido dos Trabalhadores da Coreia
-    2] Conclusão da missão da política de linha paralela
-    3] A principal tarefa do partido é a construção econômica
-    4] Economia autônoma
-    5] Política de promoção de ciência, tecnologia e educação
-2] Adesão aos princípios socialistas na construção econômica
-    1] Forma de propriedade dos meios de produção
-    2] Natureza do trabalho coletivo
-3] Enfatizando a criatividade das empresas na gestão econômica
-    1] Sistema de autonomia financeira de fábricas e empresas
-    2] Autonomia na produção
-    3] Competição socialista
-    4] Respeito aos princípios econômicos
-4] Autossuficiência é o núcleo do desenvolvimento econômico
-    1] Fortalecendo a independência sob sanções
-    2] Primeira prioridade para a autossuficiência
-5] Impulsionando o desenvolvimento econômico com ciência e tecnologia como a força motriz
-    1] Política de priorizar a ciência, talento e educação
-    2] Ciência e tecnologia e a economia do conhecimento
-    3] Palácio da Ciência e Tecnologia
-    4] Expansão do ensino à distância
-    5] Integração da educação, pesquisa científica e produção
-    6] Centro de desenvolvimento de tecnologia avançada
-6] Alguns problemas e desafios em processo de melhoria
-    1] Alguns problemas durante o processo de melhoria
-        1-1] Consciência protagonista
-        1-2] Dogmatismo
-        1-3] Mediocrismo
-        1-4] Problemas de preços
-        1-5] Problemas de moeda
-    2] Desafios
-        2-1] Dificuldades internas
-        2-2] Dificuldades externas
-7] 8ª Conferência do Partido dos Trabalhadores da Coreia
-    1] Revisão completa
-    2] Direção de melhoria
-
-Apêndice - Referências
-    1] República Popular Democrática da Coreia
-    2] Sistema de liderança única do Partido do Trabalho
-    3] Prioridade ao povo
-    4] O poder da unidade
-    5] Conferências representativas históricas do partido e reuniões de representantes do partido
-    6] A luta pela vitória final do socialismo
-    7] A Coreia que está construindo um estado socialista forte
-    8] A linha de construção de uma potência econômica
-    9] Plano de desenvolvimento econômico da Coreia
-    10] Recursos e infraestrutura da Coreia
-    11] Orçamentação do Estado
-    12] Melhoria da estrutura econômica, garantindo o equilíbrio entre os setores
-    13] Modernização e informatização da economia nacional
-    14] Linha de construção econômica na era militar da Coreia
-    15] Mesmo se a estrada for difícil, vamos continuar sorrindo
-    16] "A Marcha Árdua" e "A Marcha Rápida"
-    17] 70 dias de batalha, 200 dias de batalha, 80 dias de batalha
-    18] Faça com que os aplausos ao Partido do Trabalho ecoem da mesa de jantar
-    19] Eliminar doenças importadas também é uma luta para proteger o socialismo
-    20] Mantenha os pés no próprio território e observe o mundo
-    21] Banco Comercial da Coreia
-    22] Sistema empresarial alternativo e espírito de Cheongsanri
-    23] País forte de jovens
-    24] Universidade Kim Il Sung
-    25] Educação de talentos na Coreia
-    26] Proteção de marca registrada na Coreia
-    27] Proteção de direitos autorais na Coreia
-    28] Guia de política de investimento da Coreia
-    29] Relações econômicas e comerciais entre China e Coreia
-    30] Relações entre Norte e Sul
-
-Apêndice - Bibliografia
-    Palavras finais
+- Parte 1] Características Atuais da Coreia do Norte
+  - 1] Espírito e velocidade
+    - 1] A missão da política militar-primeiro
+    - 2] O espírito da época
+      - 2-1] Velocidade de Masikryong
+      - 2-2] Velocidade de Manrima
+      - 2-3] Velocidade da Coreia do Norte
+      - 2-4] Velocidade de Pyongyang
+      - 2-5] Espírito de Gangwon-do
+    - 3] Discurso de Ano Novo
+  - 2] Mudanças na situação política
+    - 1] Testes nucleares e lançamentos de mísseis
+    - 2] Pressão de sanções internacionais
+    - 3] A economia da Coreia do Norte sob sanções
+    - 4] A resolução do "Segundo Marcha Árdua"
+    - 5] Melhora das relações internacionais
+    - 6] Desafios encontrados
+  - 3] Transição da economia
+    - 1] Promoção da modernização e da indigenização
+    - 2] Impulsionar fortemente o desenvolvimento da indústria de TI
+    - 3] Construção em grande escala
+    - 4] Construção de casas
+    - 5] Construção de instalações para cultura e esportes
+    - 6] Inovação em design
+- Parte 2] A economia da Coreia do Norte na era da política de linha paralela
+  - 1] Método de gestão econômica socialista da Coreia do Norte
+    - 1] Novo método de gestão de empresas
+    - 2] Sistema de gestão de responsabilidade de empresas socialistas
+    - 3] Sistema de responsabilidade em uma escala de trabalho
+    - 4] Princípio de distribuição
+    - 5] Respeito pelas leis econômicas objetivas
+  - 2] Estratégia de desenvolvimento econômico e função econômica do Estado
+    - 1] Plano estratégico quinquenal de desenvolvimento econômico nacional
+      - 1-1] Resolver o problema da energia
+      - 1-2] Desenvolvimento concentrado da indústria do carvão, metalúrgica e transporte ferroviário
+      - 1-3] Transição no setor de maquinaria, indústria química, construção e materiais de construção
+      - 1-4] Lançamento de produção nos setores de agricultura, pesca e indústria leve
+      - 1-5] Promover ativamente o projeto de gestão do território nacional
+      - 1-6] Expandir as relações econômicas externas
+    - 2] Função do gabinete
+  - 3] Diversos aspectos das fábricas, empresas e fazendas
+    - 1] Fábrica de alimentos integrais Kim Jong Un
+    - 2] "Primavera Perfumada" e "Via Láctea"
+    - 3] Fábrica de cogumelos de Pyongyang
+    - 4] Fábrica de alimentos para crianças de Pyongyang
+    - 5] Fábrica de grãos de Pyongyang
+    - 6] Fazenda cooperativa especializada em aves de Jangchon
+    - 7] Fazenda cooperativa de cereais
+  - 4] Vida das pessoas
+    - 1] Sistema de fornecimento de alimentos
+    - 2] Rede comercial
+    - 3] Mercado
+    - 4] Telefone celular
+    - 5] Táxi
+    - 6] Restaurantes e casas de banho
+    - 7] Cerveja Daedonggang
+    - 8] Exposições e feiras de produtos
+    - 9] Playground
+    - 10] Esportes populares
+    - 11] Artes e cultura
+    - 12] Cerimônia de casamento
+  - 5] Economia externa
+    - 1] Política de atração de investimento estrangeiro
+    - 2] Zonas econômicas especiais e zonas de desenvolvimento econômico
+    - 3] Joint ventures
+    - 4] Comércio geral
+    - 5] Comércio de processamento, comércio de tecnologia, comércio de serviços
+    - 6] Cooperação externa de fábricas e empresas
+    - 7] Indústria do turismo
+    - 8] Situação de investimento estrangeiro
+    - 9] Cooperação econômica inter-coreana
+      - 9-1] Distrito Industrial de Kaesong
+      - 9-2] Turismo internacional do Monte Kumgang
+    - 10] Sistema tributário
+    - 11] Escritórios de advocacia
+- Parte 3] Economia após a conclusão da política de linha paralela
+  - 1] Conferência de abril
+    - 1] 3ª Conferência de Delegados Completos do 7º Comitê Central do Partido dos Trabalhadores da Coreia
+    - 2] Conclusão da missão da política de linha paralela
+    - 3] A principal tarefa do partido é a construção econômica
+    - 4] Economia autônoma
+    - 5] Política de promoção de ciência, tecnologia e educação
+  - 2] Adesão aos princípios socialistas na construção econômica
+    - 1] Forma de propriedade dos meios de produção
+    - 2] Natureza do trabalho coletivo
+  - 3] Enfatizando a criatividade das empresas na gestão econômica
+    - 1] Sistema de autonomia financeira de fábricas e empresas
+    - 2] Autonomia na produção
+    - 3] Competição socialista
+    - 4] Respeito aos princípios econômicos
+  - 4] Autossuficiência é o núcleo do desenvolvimento econômico
+    - 1] Fortalecendo a independência sob sanções
+    - 2] Primeira prioridade para a autossuficiência
+  - 5] Impulsionando o desenvolvimento econômico com ciência e tecnologia como a força motriz
+    - 1] Política de priorizar a ciência, talento e educação
+    - 2] Ciência e tecnologia e a economia do conhecimento
+    - 3] Palácio da Ciência e Tecnologia
+    - 4] Expansão do ensino à distância
+    - 5] Integração da educação, pesquisa científica e produção
+    - 6] Centro de desenvolvimento de tecnologia avançada
+  - 6] Alguns problemas e desafios em processo de melhoria
+    - 1] Alguns problemas durante o processo de melhoria
+      - 1-1] Consciência protagonista
+      - 1-2] Dogmatismo
+      - 1-3] Mediocrismo
+      - 1-4] Problemas de preços
+      - 1-5] Problemas de moeda
+    - 2] Desafios
+      - 2-1] Dificuldades internas
+      - 2-2] Dificuldades externas
+  - 7] 8ª Conferência do Partido dos Trabalhadores da Coreia
+    - 1] Revisão completa
+    - 2] Direção de melhoria
+- Apêndice - Referências
+  - 1] República Popular Democrática da Coreia
+  - 2] Sistema de liderança única do Partido do Trabalho
+  - 3] Prioridade ao povo
+  - 4] O poder da unidade
+  - 5] Conferências representativas históricas do partido e reuniões de representantes do partido
+  - 6] A luta pela vitória final do socialismo
+  - 7] A Coreia que está construindo um estado socialista forte
+  - 8] A linha de construção de uma potência econômica
+  - 9] Plano de desenvolvimento econômico da Coreia
+  - 10] Recursos e infraestrutura da Coreia
+  - 11] Orçamentação do Estado
+  - 12] Melhoria da estrutura econômica, garantindo o equilíbrio entre os setores
+  - 13] Modernização e informatização da economia nacional
+  - 14] Linha de construção econômica na era militar da Coreia
+  - 15] Mesmo se a estrada for difícil, vamos continuar sorrindo
+  - 16] "A Marcha Árdua" e "A Marcha Rápida"
+  - 17] 70 dias de batalha, 200 dias de batalha, 80 dias de batalha
+  - 18] Faça com que os aplausos ao Partido do Trabalho ecoem da mesa de jantar
+  - 19] Eliminar doenças importadas também é uma luta para proteger o socialismo
+  - 20] Mantenha os pés no próprio território e observe o mundo
+  - 21] Banco Comercial da Coreia
+  - 22] Sistema empresarial alternativo e espírito de Cheongsanri
+  - 23] País forte de jovens
+  - 24] Universidade Kim Il Sung
+  - 25] Educação de talentos na Coreia
+  - 26] Proteção de marca registrada na Coreia
+  - 27] Proteção de direitos autorais na Coreia
+  - 28] Guia de política de investimento da Coreia
+  - 29] Relações econômicas e comerciais entre China e Coreia
+  - 30] Relações entre Norte e Sul
+- Apêndice - Bibliografia
+  - Palavras finais
 
 ## Prefácio
 
@@ -290,7 +322,7 @@ Quando soube que este livro também seria publicado na Coreia do Sul, senti que 
 
 Acho que é hora de as duas Coreias mudarem um pouco a visão de cerca. Chegou a hora de desenhar uma imagem em um quadro maior e atuar em um palco maior. A comunicação começa com o desejo de conhecer, e só quando tentamos entender um ao outro podemos nos aproximar. Nesse sentido, espero que este livro possa desempenhar um papel catalisador.
 
-Associação de Desenvolvimento Econômico China-Ásia
+Associação de Desenvolvimento Econômico China-Ásia,
 Presidente: Kwon Soon-gi
 
 ## Prólogo
@@ -355,7 +387,7 @@ Gostaria de agradecer a todos que ajudaram a publicar este livro. Em particular,
 
 Para publicar este livro, me sinto um tanto aliviado pelo esforço que despendi. Estou feliz que os vários anos de preparação resultaram em um produto final e sinto algum consolo no fato de que posso ser de alguma ajuda para os leitores interessados na Coreia do Norte.
 
-Lee Chun-il
+Lee Chun-il,
 Em Pequim
 
 ## Parte 1 Características da Coreia atual
@@ -2395,6 +2427,851 @@ O Instituto de Desenvolvimento de Tecnologia Avançada da Universidade Kim Il-su
 Com a chegada da era da transformação na Coreia do Norte, começaram a aparecer mudanças sem precedentes, especialmente muitos novos fenômenos na economia. É natural que haja contradições entre o que muda e o que não muda, mas é mais importante identificar e resolver essas contradições de forma precisa. É necessária uma mudança de pensamento que esteja em consonância com o espírito dos tempos, bem como uma perspicácia para entender as mudanças internacionais. Em vez de adotar cegamente o estilo de gestão da economia de mercado, é necessário encontrar um método de gestão econômica que se adeque às realidades da Coreia do Norte. Portanto, a Coreia do Norte deve acolher com otimismo as novas mudanças e avançar juntos sob a liderança única do partido para alcançar a vitória final no campo econômico.
 
 No início de 2021, na 8ª Conferência do Partido dos Trabalhadores da Coreia, o presidente Kim Jong-un, pela primeira vez, repreendeu severamente os graves problemas que surgem na construção econômica da Coreia do Norte e revelou as causas do fracasso em cumprir a estratégia de desenvolvimento econômico. O fato do líder supremo da Coreia do Norte se arrepender publicamente na conferência do partido é sem precedentes. O arrependimento do líder supremo causou grandes ondas não apenas em todo o partido e na sociedade, mas também atraiu a atenção da comunidade internacional. Esses problemas foram identificados após pesquisa suficiente pelo grupo de investigação do partido central antes da 8ª conferência do partido, então eles foram apontados como coisas que definitivamente precisam ser resolvidas. O fato de Kim Jong-un formalizar os problemas internos mostra a atitude pragmática do líder, e também mostra que há muitos problemas que precisam ser definitivamente melhorados na construção econômica. Na Coreia do Norte, um movimento de crítica e auto-crítica entre os funcionários está em andamento, e esforços estão sendo feitos para resolver problemas que foram formados ao longo de muitos anos.
+
+Não há dúvida de que os esforços para identificar e corrigir problemas ajudarão no progresso do campo econômico. Vamos destacar alguns dos problemas que estão sendo resolvidos e as dificuldades encontradas.
+
+#### 1 Alguns problemas em andamento
+
+Embora a perspectiva do norte seja majoritariamente positiva, também há uma série de desafios difíceis diante da Coreia. Vamos discutir quais são os problemas específicos que precisam ser resolvidos. Embora o progresso esteja claro com a implementação de novas políticas econômicas e a melhoria da eficiência do trabalho, ainda há desafios notáveis, como a consciência do protagonismo, o dogmatismo, o igualitarismo, problemas de preços e questões monetárias. No passado, esses problemas não poderiam ser mencionados. Por causa da visão dominante de que problemas de progresso sempre existem e que tais problemas não são nada sérios. No entanto, hoje, vemos uma vontade positiva de reconhecer e abordar esses problemas baseados em fatos, e não de evitá-los. Os problemas continuam à medida que os regulamentos e políticas do passado são revisados e complementados. Se você não evitar o problema e aceitá-lo enquanto procura soluções, novas soluções surgirão.
+
+##### 1-1 Consciência do protagonismo
+
+"O sistema social da República Popular Democrática da Coreia é um sistema social em que o povo trabalhador é o mestre e tudo serve ao povo trabalhador, com o homem no centro." Como o povo é o mestre do país, é um direito conferido pela constituição da Coreia que eles percebam profundamente sua consciência como mestres e realizem corretamente seu papel como tal. Como mestres do país, as pessoas devem exercer a consciência de protagonistas na política, economia e vida cultural, contribuindo para a construção do socialismo. Na vida real, os critérios para medir a consciência do protagonismo são responsabilidade e autoridade. Os funcionários são um cargo dado pelo povo. O futuro do desenvolvimento nacional depende de como os funcionários executam adequadamente a responsabilidade e autoridade. O que o estado enfatiza principalmente é o papel dos membros e funcionários do partido, e é apropriado responsabilizar aqueles que perdem sua posição como mestres, exploram os funcionários e causam danos à propriedade pública ou reduzem a eficiência da produção.
+
+Na Coreia, hoje, são introduzidos sistemas como a gestão responsável das empresas socialistas na gestão econômica, e são tomadas medidas ativas para fortalecer a responsabilidade e o papel dos produtores como os reais proprietários da produção nas atividades produtivas. À medida que a consciência de ser mestre está sendo destacada com base nos resultados, também está havendo um aumento na eficácia econômica.
+
+No entanto, no 8º Congresso do Partido dos Trabalhadores da Coreia, o presidente Kim Jong Un enfatizou que o Partido dos Trabalhadores deve ser "um partido que trabalha, um partido que luta, um partido com força de combate" e que os funcionários devem sempre estar na vanguarda. Especificamente, "Os líderes revolucionários devem cumprir suas responsabilidades e deveres na vanguarda do avanço. O destino de uma unidade, um setor, depende da capacidade e do papel do trabalhador." Em outras palavras, ele destacou o fato de que o papel de liderança dos funcionários está longe das demandas do povo.
+
+Os líderes devem liderar demonstrando uma consciência de protagonismo, sendo íntegros e economizando os recursos do país e contribuindo mais para a construção do estado. "Agora é precisamente o momento em que precisamos de trabalhadores que se esforcem para aliviar mesmo que um pouco das preocupações e problemas do partido e do estado, trabalhadores que só conhecem a revolução, o trabalho, que correm por aí prometendo fazer algo pelo povo, trabalhadores que, quando recebem uma tarefa, trabalham incansavelmente e destacam-se pelo trabalho duro."A consciência de protagonismo dos líderes está relacionada ao sucesso ou fracasso da construção socialista, e as habilidades dos membros do partido estão relacionadas à qualidade da construção de um estado poderoso. O que o presidente Kim Jong Un enfatiza repetidamente é que toda o partido, todo o país, todas as pessoas precisam fortalecer a educação e a disciplina e punir severamente todos os atos criminosos que abusam do poder e cometem corrupção.
+
+##### 1-2 Egocentrismo
+
+O fenômeno do egocentrismo ocorre quando os líderes priorizam e protegem seus próprios interesses e não compartilham recursos com os outros. O problema é não olhar para as coisas de uma perspectiva global e objetiva e não começar a partir de uma estratégia de desenvolvimento geral. Este fenômeno não é exceção na Coréia do Norte. Embora todas as empresas sejam empresas estatais, possuem relativa autonomia em termos de gestão, e o desempenho e sucesso da empresa estão diretamente relacionados à competência do responsável. Embora seja natural que o fenômeno do egocentrismo surja nesse contexto, o egocentrismo que busca monopolizar apenas os privilégios de sua própria unidade leva ao monopólio e desperdício de recursos nacionais. Por isso, existe o medo de que os outros conheçam seus segredos e recursos e acaba-se escondendo-os uns dos outros.
+
+O egocentrismo é expresso quando se coloca o interesse individual acima do interesse coletivo e o interesse do setor acima do interesse geral. É fácil para indivíduos e grupos terem esse pensamento. Na Coreia do Norte, um país que enfatiza especialmente o interesse do grupo, não se permite fenômenos que busquem mais o interesse de grupos menores ou de setores específicos. Instituições privilegiadas tentam preservar mais seus direitos existentes, expandir sua influência ou agir de maneira míope, buscando apenas seus próprios interesses e apropriando-se dos recursos sociais. Alguns líderes buscam expandir sua rede de relações para manter sua posição atual e buscam oportunidades de promoção. Muitas unidades de base estão apenas preocupadas com seus próprios interesses econômicos, tentando obter o máximo com o mínimo esforço.
+
+O fenômeno do egocentrismo está sendo detectado em todos os lugares. Por exemplo, quando você vai a qualquer centro de serviço em Pyongyang, mesmo que seja pequeno, geralmente você vê que ele tem de tudo. Eles acreditam que se não tiverem um mix de todos os tipos de serviços, como lojas, restaurantes, banhos, cafés, academias, etc., perderão clientes para outros. É originário do pensamento de que tudo deve ser resolvido em um só lugar. Eles acham que quem vem para comer também precisa comprar algo e fazer exercícios. Assim, em vez de se destacar em uma coisa, eles tentam atrair clientes oferecendo um pouco de tudo. Em outras palavras, eles não parecem ter a capacidade de se diferenciar ou aumentar sua competitividade por meio de estratégias especializadas e focadas. Os clientes ficam insatisfeitos com o serviço, a qualidade diminui, e eles não percebem que sua competitividade está realmente diminuindo. Em outras palavras, se não há vontade de compartilhar recursos e a estratégia de negócios para destacar suas vantagens é fraca, no final, você acaba se prejudicando. Ao tentar cuidar apenas do que é seu, você acaba perdendo o que tem. Agora que a era de buscar locais famosos abriu na Coreia do Norte, para ser competitivo, é necessário descobrir o que faz melhor do que os outros e aumentar o reconhecimento. Se você se preocupa apenas com o que é seu, você acaba não pensando no quadro maior e acaba circulando apenas dentro de suas próprias fronteiras.
+
+Portanto, a Coreia do Norte vê o formalismo como um obstáculo ao desenvolvimento nacional e o critica fortemente, exigindo a ampla promoção de uma competição socialista de grupo baseada em métodos de intercâmbio como aprendizado, liderança e troca de experiências. A razão pela qual o líder do país criticou duramente o formalismo na reunião do partido foi principalmente para apontar que precisamos resolver o problema da melhoria da qualidade dos dirigentes.
+
+Se as empresas estabelecerem estratégias corporativas e de gestão adequadas para melhorar suas capacidades e realizar atividades empresariais, poderão aumentar seus lucros econômicos. É necessário um dirigente capaz que não apenas se movimente dentro de seu próprio território, mas também realize seu trabalho adequadamente. Um excelente dirigente, como mencionado pela Coreia do Norte, é aquele que mostra resultados, e se quiser ser reconhecido, deve obter resultados trabalhando diligentemente, e não apenas esperar por uma oportunidade astuta. O formalismo não desaparece da noite para o dia. Precisamos supervisionar cada pessoa e aumentar as demandas diariamente para erradicá-lo.
+
+##### 1-3 Mediocridade
+
+A mediocridade geralmente aparece facilmente em ambientes coletivos e, ao enfatizar a justiça, acaba reduzindo a eficiência do trabalho. O socialismo está implementando uma política tão igualitária quanto possível com o pressuposto de que todas as pessoas devem desfrutar de uma vida igual. Como todos são donos do país, têm direitos políticos iguais, e portanto devem eliminar as diferenças na vida material e no consumo. No entanto, o princípio da distribuição socialista, que recompensa de acordo com o trabalho realizado, pode ser violado se adotarmos a mediocridade na distribuição do trabalho. A mediocridade na distribuição do trabalho causa insatisfação mútua, cria malandros e diminui a eficiência do trabalho, prejudicando o desenvolvimento econômico.
+
+Na Coreia do Norte, a fim de resolver alguns problemas causados pela mediocridade, estão sendo implementadas políticas sociais para resolver as diferenças na vida de consumo com base no princípio de distribuição de acordo com a quantidade e qualidade do trabalho. Em outras palavras, estão fazendo todos os esforços para resolver os efeitos negativos gerados pela mediocridade. Claro, embora possa ser fácil resolver o problema da mediocridade na distribuição, é difícil fazer todos viverem bem juntos e eliminar as diferenças na vida de consumo.
+
+Por exemplo, à medida que o negócio de telecomunicações móveis na Coreia do Norte cresceu rapidamente, a demanda por celulares aumentou drasticamente. Além disso, a variedade de produtos também está aumentando, tornando esses produtos não mais suprimentos, mas bens de consumo. Há uma grande diferença de preço entre um celular de boa qualidade e bem projetado e um celular que só pode fazer chamadas normais. Os consumidores só podem escolher dentro de suas possibilidades financeiras. Se o preço for o mesmo, eles naturalmente vão querer o de melhor desempenho. No entanto, na vida real, a qualidade está relacionada ao preço, então inevitavelmente surgirão comparações. As pessoas querem o que os outros têm. Se a capacidade de compra for baixa, há casos em que as pessoas pegam dinheiro emprestado para comprar um celular que parece caro. A taxa de telefone também não pode ser a mesma para todos. Se você usar mais do que o tempo de chamada fornecido dentro do limite estipulado, será cobrada uma taxa adicional. Mesmo os habitantes locais podem comprar cartões se pagarem custos adicionais de acordo com a demanda, então a quantidade de uso nunca pode ser a mesma. As pessoas que fazem negócios ganham mais, mas também usam mais celulares. Portanto, na prática, é difícil viver uma vida média. Se essa diferença aumenta, a disparidade de riqueza aumenta e aqueles que não têm podem se tornar insatisfeitos com a sociedade, aumentando a probabilidade de insatisfação social.
+
+A tarefa de superar a mediocridade e reduzir a disparidade de riqueza permanece para o governo norte-coreano.
+
+Em uma era focada na construção econômica, é natural que algumas pessoas fiquem mais ricas do que outras e, consequentemente, a diferença entre ricos e pobres aumentará gradualmente. Este é um problema enfrentado por todos os países em desenvolvimento, mas para a Coreia do Norte, que mantém uma sociedade socialista, a pressão só pode aumentar.
+
+Para resolver esse problema, a questão da distribuição também está em jogo. A distribuição baseada na mediocridade diminui a motivação para o trabalho e, se o que ganhou mais receber mais, é inevitável que haja uma diferença entre ricos e pobres. A Coreia do Norte, que distribuiu baseado na mediocridade por um longo tempo, não conseguiu aumentar a motivação geral para o trabalho. Se de repente houver uma diferença na distribuição, a disparidade de riqueza aumentará rapidamente. A escolha diante da Coreia do Norte já está inclinada para o último. Embora seja um problema enfrentado por todos os países, é ainda mais sério para os países que implementam um sistema socialista.
+
+##### 1-4 Problema de Preços
+
+A Coreia do Norte é um país que implementa uma economia planejada. Portanto, era comum que o estado estabelecesse todos os preços. No entanto, na prática, existem preços estabelecidos pelo estado e preços de mercado, o que resulta em uma situação confusa. Mesmo para produtos do mesmo tipo, aqueles vendidos em lojas estatais ou fornecidos à população são vendidos e fornecidos a preços estatais muito baixos, enquanto os produtos vendidos nos mercados são vendidos a preços de mercado muito mais altos. Isso cria situações em que as diferenças de preço são exploradas. O preço de fornecimento do estado é quase o mesmo que o estado distribuir subsidiado, mas o preço de mercado é o custo mais o lucro, portanto nunca pode ser o mesmo. Como o estado não consegue satisfazer o fornecimento e o valor das matérias-primas continua aumentando, é natural que o preço dos produtos aumente. Como o estado não coleta impostos, é difícil manter as finanças estatais, e há um limite para o que pode ser fornecido. Mesmo com o mesmo nível de fornecimento, o fardo do estado aumenta a cada ano. À medida que a demanda das pessoas aumenta e o suprimento diminui, é inevitável que o mercado se suplemente. No momento atual, apenas fornecer o suficiente para resolver os problemas básicos de consumo das pessoas a preços estatais e atender ao restante da demanda através do mercado é equivalente a reconhecer os preços de mercado, e o estado acaba tendo que aceitar preços duplos.
+
+A Coreia do Norte, através de medidas para melhorar a gestão econômica, permitiu que empresas estabelecessem preços para bens de consumo diário não diretamente relacionados à vida das pessoas, minimizando assim as perdas das empresas. Esse fenômeno só aumentou o número de produtos no mercado e, consequentemente, os preços de mercado. Se as empresas tiverem muitas perdas, a produtividade não surgirá, por isso, não importa quão duro o estado pressione, as empresas terão dificuldade em aumentar a eficiência.
+
+Para resolver esse paradoxo, o estado implementou preços cooperativos, que estão entre os preços estabelecidos pelo estado e os preços de mercado. O fornecimento e a demanda são negociados sob supervisão estatal para estabelecer um preço adequado. Isso inevitavelmente leva a eventos incontroláveis, como especulação ou engano de números. O estado considera esses fenômenos como fenômenos anti-socialistas e toma medidas severas contra aqueles que estão engajados em tais atividades. Enquanto houver diferenças de preço, erradicar esses fenômenos não é uma tarefa fácil.
+
+A questão de quem deve ter o poder de estabelecer preços, o estado ou as empresas, tornou-se um problema. O Comitê de Estabelecimento de Preços do Estado é a autoridade para estabelecer preços, mas se os preços estiverem abaixo dos custos de produção das empresas, a produtividade das empresas diminuirá. Mas se todo o poder de estabelecer preços for dado às empresas, isso poderia levar a um aumento abrupto dos preços, o que acabaria sendo um fardo para as pessoas. Na Coreia do Norte, após muita deliberação, o Comitê de Estabelecimento de Preços do Estado foi alterado para o Comitê de Supervisão de Preços do Estado, e as empresas foram autorizadas a propor preços com base nos custos de produção, que seriam então revisados e aprovados pelo Comitê de Supervisão. Com a oferta limitada do estado e o baixo nível de renda das pessoas, o problema dos preços é uma questão importante para a estabilidade do estado.
+
+O preço é a base do cálculo econômico e o cálculo econômico é uma parte essencial das operações comerciais. Portanto, resolver corretamente o problema dos preços é um problema prático muito importante. Na Coreia do Norte, estão sendo tomadas várias medidas para melhorar os negócios em áreas como finanças, enfatizando o uso correto de espaços econômicos como preços e custos de acordo com os princípios e leis econômicas.
+
+##### 1-5 Problema da Moeda
+
+A moeda é um meio indispensável no processo de circulação e também um barômetro do desenvolvimento socioeconômico. O valor da moeda é o indicador mais importante que reflete a situação econômica, e a condição da moeda é usada para diagnosticar a situação econômica de um país. A moeda norte-coreana mostra uma situação extremamente instável, e há sinais de alerta em áreas como uso de moeda, valor da moeda e taxa de câmbio.
+
+A Coreia do Norte, por ser um país onde o estado é responsável por garantir os princípios básicos de moradia, educação, saúde e vida cotidiana, tem menos transações financeiras realizadas pelos cidadãos em comparação com os países de economia de mercado total. Assim, os cidadãos não costumavam sentir grande inconveniência no uso de dinheiro. No entanto, à medida que a política econômica do estado foi ajustada, as transações de matérias-primas entre empresas mudaram principalmente. As transações que eram feitas através de cheques começaram a ser feitas em dinheiro, e os produtos produzidos precisavam ser trocados por dinheiro no processo de circulação no mercado. Os cidadãos precisavam ter dinheiro em mãos para comprar itens, e as empresas entraram em um ciclo onde utilizavam o dinheiro da compra para a reprodução.
+
+O problema é que muitos produtos precisam ser comprados diretamente em moeda estrangeira, tornando a moeda norte-coreana inútil em alguns casos. É preciso pagar 100% em moeda estrangeira para abastecer um carro numa estação de gasolina, e para pagar taxas adicionais de celular ou comprar produtos eletrônicos de alta qualidade, todas as transações são feitas diretamente em moeda estrangeira. Há casos em que táxis e refeições são pagos em moeda estrangeira, e esses produtos são aplicados principalmente aos setores que importam do exterior ou fazem joint ventures com o exterior.
+
+Como é necessário ter moeda estrangeira para importar produtos do exterior e reembolsar o investimento dos investidores estrangeiros, o fenômeno é lucrativo do ponto de vista das empresas, mas não é fácil para o cidadão comum obter moeda estrangeira. Portanto, torna-se difícil realizar atividades de consumo normais e é perigoso ver uma tendência em que a própria moeda do país está sendo ignorada.
+
+A moeda norte-coreana está se desvalorizando e a inflação está se espalhando, de modo que as instituições comerciais e as pessoas sentem que é um fardo manter a moeda norte-coreana. Isso é porque elas têm que viver com a incerteza de quando o valor irá cair. Em 2009, a Coreia do Norte realizou uma reforma monetária que impedia as pessoas de terem moeda estrangeira e excesso de moeda norte-coreana. No entanto, a reforma monetária falhou em dois meses. O estado proíbe o uso de moeda estrangeira em mercados e supermercados gerais. No entanto, é extremamente normal que um mercado negro surja em uma situação onde o uso de moeda estrangeira é frequente. A fim de reprimir o mercado negro, o estado instalou casas de câmbio em mercados e lojas, e o estado começou a trocar moeda diretamente.
+
+Até agora, as pessoas na Coreia do Norte tendem a não confiar nos bancos, e como os bancos têm falta de fundos, às vezes é impossível sacar dinheiro a tempo quando solicitado.
+
+Os estrangeiros que visitam a Coreia do Norte não sentem grande inconveniente porque podem usar moeda estrangeira diretamente no local, mas os estrangeiros que fazem negócios na Coreia do Norte tendem a sentir grande inconveniente.
+
+A questão mais confusa para os estrangeiros na Coreia do Norte é que a taxa de câmbio oficial do governo e a taxa de câmbio de mercado são aplicadas simultaneamente. A taxa de câmbio de mercado muda de acordo com a demanda do mercado e, especialmente porque o valor da moeda norte-coreana está sendo depreciação a uma taxa de 15~20% ao ano, a diferença na taxa de câmbio também muda significativamente a cada ano. Os preços exibidos em lojas e restaurantes são baseados na taxa de câmbio oficial do governo, mas na verdade, durante o processo de circulação, eles devem ser convertidos à taxa de câmbio de mercado, o que causa confusão.
+
+Por exemplo, com base em 2019, a taxa de câmbio oficial do governo da Coreia do Norte é de 106.03 won norte-coreano por dólar. No entanto, a taxa de câmbio de mercado era de 8250 won norte-coreano por dólar, uma diferença de 80 vezes. Há um jeito fácil de calcular, que é adicionar dois "0"s ao preço que está na etiqueta na loja ou hotel, e geralmente se tornará o preço em dólar. Na verdade, o preço marcado na Coreia do Norte é o preço em euros. Este preço não é o preço de circulação, é apenas um número de câmbio. Os estrangeiros estão usando um método de conversão quase inacreditável.
+
+Restaurantes e balcões de hotéis acessíveis a estrangeiros exibem todos uma tabela de taxas de câmbio. Em outras palavras, lugares que não têm essa tabela de taxas de câmbio proíbem a entrada de estrangeiros. Estrangeiros na Coreia do Norte calculam todos os seus gastos, como o custo do quarto do hotel, refeições e recargas de cartão telefônico, com base nesta tabela de taxas de câmbio. No entanto, no centro comercial de Gwangbok Street e no Mercado Unificado, a moeda local, o won norte-coreano, é usada, então é necessário trocar dinheiro nas cooperativas de câmbio de acordo com a taxa de câmbio do mercado.
+
+O won norte-coreano tem notas de 5000, 2000, 500, 200 e 100. No entanto, muitas vezes não há troco em moeda estrangeira quando se paga em hotéis e restaurantes, então eles normalmente dão troco em won norte-coreano convertido à taxa de câmbio do mercado. O problema é que há poucos lugares onde os estrangeiros podem usar o won norte-coreano, e mesmo que tentem levar o won norte-coreano como lembrança, geralmente é confiscado na alfândega do aeroporto. Isso deixa os estrangeiros muitas vezes em uma situação muito desconfortável.
+
+Atualmente, como medida nacional, as cooperativas de câmbio estão operando, trocando moedas estrangeiras e o won norte-coreano a uma taxa de câmbio cooperativa. Presumivelmente, essa é uma medida para diminuir a diferença entre a taxa de câmbio oficial e a de mercado e implementar uma taxa de câmbio unificada. No entanto, pode ser necessário passar por maiores dificuldades para eliminar a grande diferença que já surgiu no valor da moeda.
+
+#### 2 Desafios
+
+O presidente Kim Jong-un fez um longo discurso de nove horas no 8º Congresso do Partido dos Trabalhadores da Coreia, onde analisou principalmente os problemas internos e fatores externos que a Coreia do Norte está enfrentando. Quando comparado em termos de volume, ele mencionou mais os problemas internos do que os fatores externos, e apresentou análises para encontrar a origem dos problemas.
+
+Antes de anunciar a estratégia quinquenal de desenvolvimento nacional no 8º Congresso do Partido dos Trabalhadores da Coreia, o Presidente Kim Jong-un resumiu as principais razões para não conseguir realizar os objetivos estratégicos propostos no 7º Congresso do Partido. Primeiro, os objetivos estratégicos não foram estabelecidos cientificamente e foram estabelecidos cegamente. Segundo, a ciência e a tecnologia não conseguiram desempenhar adequadamente seu papel em liderar o setor econômico e foram apenas proclamadas como um slogan. Terceiro, não foi possível corrigir o sistema e a ordem da construção econômica. No 8º Congresso do Partido, o objetivo geral da estratégia econômica foi apresentado da seguinte forma: "É necessário corrigir o sistema de negócios econômicos e recuperar a ligação orgânica com os setores relacionados para fortalecer a base econômica independente, de modo que a economia possa funcionar normalmente, sem ser afetada pelo exterior."
+
+A dificuldade interna é resolver adequadamente o problema de fortalecer a capacidade de controle do estado sobre a construção econômica, ao mesmo tempo em que melhora a capacidade de autogestão das empresas. Há um problema originado da falta de experiência na gestão das empresas e um problema de ajuste entre o comando unificado do estado e os princípios e flexibilidade. A dificuldade externa é principalmente a influência do ambiente internacional e a obtenção de confiança internacional.
+
+##### 2-1 Dificuldade Interna
+
+A Coreia do Norte tem promovido consistentemente o estilo coreano de gestão econômica por muitos anos, trazendo mudanças significativas para fábricas, empresas e fazendas. A vontade de produzir aumentou e a qualidade do produto também melhorou. No entanto, a base é tão frágil que é extremamente difícil mudar tudo em um curto espaço de tempo. Sob o sistema atual, o desafio de aumentar a produção e a eficiência não pode ser nada menos do que um problema difícil, e as agências de controle econômico do estado estão fazendo muitos esforços para superar a situação atual. O problema é que, ao resolver isso, surge um problema de igualdade com outras coisas, e esses conflitos estão se tornando cada vez mais frequentes e sérios.
+
+A economia ganha força de desenvolvimento por meio da política, e o desenvolvimento só pode ser alcançado com o apoio financeiro, e o comércio cresce mantendo o crédito. A Coreia do Norte está enfrentando dificuldades em todos esses três aspectos e é também o elo mais fraco.
+
+Primeiramente, é uma questão de como estabelecer a direção das políticas econômicas. O método de gestão econômica socialista da Coreia do Norte é uma política lançada após a Coreia do Norte mudar de direção para a construção econômica, portanto, deve ser visto como uma medida tática. Embora a direção geral tenha sido estabelecida, como a transição para a economia foi recente, a implementação de regras detalhadas ainda é insuficiente. Cada vez que uma nova política é introduzida, há contradições com as regras existentes, tornando o fardo de introduzir novas políticas significativo. No entanto, se políticas concretas não forem lançadas, as organizações subordinadas terão uma base insuficiente para a implementação. Na fase atual, com uma base legal insuficiente, os executivos que implementam as políticas são indecisos ou cautelosos, o que é um obstáculo para a implementação agressiva. Há casos em que os executivos não fazem porque não sabem, casos em que sabem mas não fazem porque não sabem com precisão, e situações em que pensam que é melhor não fazer nada. Na Coreia do Norte, há um ditado que diz "se um trabalhador não trabalha, ele se torna um problema". Em certo sentido, isso pode representar o estado psicológico dos executivos. Se menos executivos tomarem a iniciativa de procurar trabalho, será difícil encontrar uma saída para a economia. Se houver muitos executivos problemáticos, eles podem se tornar um obstáculo para o crescimento econômico.
+
+No 8º Congresso do Partido, analisamos as razões para não conseguirmos alcançar os objetivos estratégicos de desenvolvimento econômico nacional estabelecidos no 7º Congresso do Partido, vendo problemas tanto na estratégia quanto na tática. Um erro estratégico inevitavelmente leva a uma falha tática. O 8º Congresso do Partido lançou uma nova estratégia quinquenal e esperamos que medidas táticas correspondentes sejam lançadas. A primeira coisa lançada foram medidas para resolver o problema da agricultura. Esta é a primeira tentativa de abordar e resolver o problema da agricultura de forma concentrada. Parece que foram lançadas medidas substanciais com base nos modestos sucessos alcançados na agricultura no ano passado. Segue-se a falta de fundos. Como a economia geral do país ainda está em um estágio baixo, mesmo que a autoridade seja concedida às empresas, elas não têm capital suficiente para operar. Mesmo que tentem realizar a modernização das instalações da fábrica, o fato de terem que resolver por conta própria sem o apoio do estado tornou-se comum, tornando impossível comprar equipamentos avançados. Assim, eles trazem peças principais e modernizam, ou trazem equipamentos usados do exterior para superar a crise atual. Eles estão confrontados com a realidade de não terem coragem de ver tecnologia e equipamentos avançados. Mesmo que o equipamento seja realizado através de investimento, o fato de não terem fundos para operar as máquinas está se tornando uma preocupação para os gerentes das empresas. Não são apenas uma ou duas empresas que estão de mãos atadas por falta de fundos.
+
+Do ponto de vista das finanças do estado, não há impostos, as exportações estão bloqueadas e está sendo difícil aumentar a receita fiscal de forma racional. No cenário em que as finanças do estado são asseguradas através do plano nacional que as empresas pagam em vez de impostos, como cada empresa não está bem, a quantidade paga atinge seu limite. Outra fonte é atrair empresas estrangeiras para joint ventures, mas na situação atual, onde as sanções contra a Coreia do Norte não foram levantadas, é difícil obter resultados a curto prazo.
+
+Finalmente, há o crédito. O mais importante na atividade empresarial é precisamente o crédito. Sem crédito, não pode haver cooperação substancial. As empresas estão sempre com falta de fundos. Portanto, não é fácil pedir dinheiro emprestado e, mesmo se eles conseguirem, muitas vezes não podem pagar de volta no prazo, então ninguém se atreverá a emprestar. Mas isso não significa que não existem oportunidades. Empresas estrangeiras que acreditam que a Coreia do Norte logo se abrirá estão de olho nas oportunidades de investimento na Coreia do Norte. Mesmo que os estrangeiros queiram investir, procurarão uma empresa na Coreia do Norte que possa preservar o crédito. Em outras palavras, se a Coreia do Norte quiser atrair capital, primeiro deve aprender a preservar o crédito. Como houve rumores de que os norte-coreanos roubaram o dinheiro dos estrangeiros no passado, todos terão que se aproximar com cautela.
+
+No caso da Coreia do Norte, a ideia de expandir a produção sempre que possível, sem priorizar a devolução do capital inicial, é predominante. Isto pode levar à perda de crédito. Se este fenômeno ocorre em uma ou duas empresas, pode ser resolvido, mas se se torna uma convenção geral, pode ser tratado como um problema no ambiente de investimento do país. Apesar do governo enfatizar que, aconteça o que acontecer, o dinheiro emprestado deve ser devolvido, a implementação dessa ideia parece falhar nas empresas.
+
+Obviamente, há muitos exemplos de empresas coreanas que valorizam o crédito e alcançaram o sucesso. No entanto, se procurarmos tais empresas, perceberemos que a confiança é construída apenas no processo de enfrentamento. Nesse sentido, parece que as empresas coreanas precisam se esforçar mais.
+
+##### 2-2 Dificuldades externas
+
+A Coreia do Norte, sob o controle dos países ocidentais liderados pelos Estados Unidos por um longo tempo, enfrentou desafios rigorosos para seu sistema de planejamento socialista, especialmente em um contexto onde também estava sendo afetada pela economia de mercado. A economia planejada é um princípio que a Coreia do Norte sempre defendeu, mas quando enfrenta dificuldades internas e externas, a função de ajuste através do mercado é ativada para aliviar os negócios. Além disso, os efeitos pós-sistema de planejamento altamente ineficiente estão cada vez mais evidentes, e a economia coreana, que sofre sanções internacionais, está se atrasando cada vez mais na globalização.
+
+As sanções internacionais contra a Coreia do Norte levaram à destruição da ordem econômica normal e do comércio internacional do país. Essa não é uma questão que pode ser explicada em poucas palavras. É um problema histórico e, recentemente, um dos mais sensíveis. A Coreia do Norte conduziu testes nucleares e de lançamento de mísseis para garantir a defesa nacional, e como resultado, enfrentou sanções internacionais. O dilema entre a exigência da comunidade internacional de abandonar as armas nucleares em troca do alívio das sanções e a priorização da segurança pela Coreia do Norte mantém a situação em impasse. Algumas pessoas preveem que a situação será resolvida em breve, mas na realidade, não há sinais de que isso vá acontecer em breve.
+
+As fábricas e empresas da Coreia do Norte estão se esforçando para ativar o comércio com o exterior, mas a entrada real de capital estrangeiro ainda não ocorre, e nem a compra de vários equipamentos e materiais necessários pode ser realizada normalmente. Para piorar, a Coreia do Norte está enfrentando várias dificuldades, como aumento dos custos, qualidade limitada e falta de fundos.
+
+Antes do surto da COVID-19, muitos investidores estrangeiros visitaram a Coreia do Norte, demonstrando interesse em vários aspectos e alimentando grandes expectativas entre os norte-coreanos. No entanto, após expressarem a intenção de investir, muitos desses investidores retornam ao seu país e nada acontece. Tal situação tem se repetido com frequência, gradualmente esfriando as expectativas. Não é possível culpar os investidores estrangeiros. A realidade é que eles têm dificuldades para investir imediatamente. A maioria deles pretende considerar seriamente apenas quando as sanções forem aliviadas.
+
+Existem questões a serem consideradas também no modelo de joint ventures com empresas estrangeiras. Legalmente, a Coreia do Norte permite uma variedade de investimentos estrangeiros, incluindo empresas independentes, acordos de colaboração e joint ventures, mas na prática, a Coreia do Norte prefere joint ventures a acordos de colaboração. Também é incentivado a nível nacional a optar por joint ventures em vez de colaborações. Isso é consistente com a nacionalização e autonomia promovidas pelo estado, e as empresas veem uma oportunidade de ganhar mais reconhecimento político ao fazer progressos na modernização. No entanto, a questão é como os investidores estrangeiros podem confiar na Coreia do Norte e investir lá.
+
+Os investidores estrangeiros preferem fazer negócios com empresas mais estáveis e de longo prazo. Por outro lado, a Coreia do Norte precisa, por enquanto, apenas de equipamentos e capital para superar as dificuldades imediatas. Embora seja difícil no momento, acredita-se que trabalhar com estrangeiros por meio de joint ventures se torna mais um fardo. Na fase atual, a Coreia do Norte ainda tem regras rigorosas para estrangeiros e as regulamentações fiscais para empresas estrangeiras são diferentes, portanto, muitas empresas acreditam que é melhor evitar inconveniências. O desafio é como resolver essa contradição. Todos entendem que considerar apenas seus interesses é lógico, mas se desejam capital e investimento estrangeiro, precisam se preparar e planejar para se alinhar com a psicologia dos investidores, não apenas por um curto período de tempo. Pedir dinheiro para superar um obstáculo imediato será um grande obstáculo para realizar grandes coisas juntos.
+
+Em suma, tudo se resume a quanto a parte investidora e a parte receptora confiam mutuamente para compartilhar os benefícios. Uma joint venture que busca benefícios unilaterais não durará muito tempo. Joint ventures em uma escala maior ocorrerão quando ambas as partes virem os benefícios e sentirem relativa bondade e estabilidade.
+
+### 7 8ª Conferência do Partido dos Trabalhadores da Coreia
+
+Em 5 de janeiro de 2021, a 8ª Conferência do Partido dos Trabalhadores da Coreia foi realizada regularmente pela primeira vez em cinco anos desde a 7ª Conferência. Isso também prova que a função de liderança do Partido dos Trabalhadores está funcionando normalmente. Especialmente, gostaria de avaliar a 8ª Conferência como uma que é claramente acompanhada por esforços para resolver problemas reais, não apenas para realizar a conferência. Parece que a conferência expressou a vontade do Partido dos Trabalhadores de refletir e melhorar problemas existentes com uma atitude prática.
+
+A 8ª Conferência do Partido dos Trabalhadores da Coreia foi realizada no momento certo para resumir a situação após a conclusão das tarefas estratégicas de cinco anos propostas na 7ª Conferência. No entanto, também foi um momento em que as sanções internacionais estavam em vigor, o mundo estava enfrentando a COVID-19, e a Coreia do Norte estava enfrentando o pior tufão da história. A dificuldade que a Coreia do Norte enfrenta não se deve apenas a uma ou duas coisas, mas a uma combinação de fatores complexos internos e externos.
+
+Na 8ª Conferência, o Presidente Kim Jong-un apresentou a direção estratégica e tática para a construção socialista, a reunificação do país e o avanço das relações externas, e as principais tarefas para fortalecer o trabalho do Partido em seu relatório de nove horas. Ele resumiu as realizações e problemas dos últimos cinco anos e, especialmente, analisou os problemas existentes e propôs direções para melhorias.
+
+Após a 7ª Conferência, muitas realizações foram feitas. Primeiro, afirmou que o jucheismo popular foi incorporado na política, no estilo do partido e no estilo nacional. Penetrou profundamente na população, desenterrou a força motriz para o desenvolvimento da revolução e provocou o entusiasmo revolucionário das massas. O poder do jucheismo popular foi demonstrado ao mobilizar ao máximo a força mental e a criatividade das massas, mesmo diante de dificuldades e mudanças de situação.
+
+Embora não tenha alcançado os objetivos estratégicos da construção econômica, avalia-se que, com seu próprio esforço, preparou uma valiosa base econômica autônoma para impulsionar o desenvolvimento econômico no futuro. Atribui-se o significado de ter mantido a base material para a sobrevivência do socialismo coreano e sua linha de vida, e de ter protegido a fundação e o fluxo de vida da economia socialista.
+
+A Coreia alega que durante o período de construção paralela da economia e das forças nucleares, executou o projeto de construção de forças nucleares e, ao mudar o foco para a construção econômica, o caminho a seguir ficou claro. Além de estabelecer uma direção, tem-se investido em melhorar as relações internacionais e avalia-se que grandes conquistas foram alcançadas no campo diplomático. Especialmente, atribui-se grande significado à restauração das relações China-Coreia.
+
+O Partido dos Trabalhadores da Coreia conseguiu adquirir valiosos ativos durante o processo de liderar e lutar arduamente com o povo, e é uma grande conquista criada pela união de todo o país, implementando completamente a política e diretrizes do partido. Ao mesmo tempo, no 8º Congresso do Partido, questões profundas foram analisadas e novos desafios foram identificados nos problemas enfrentados na construção econômica, construção de defesa, gestão social estatal e atividades de organizações populares.
+
+No relatório, o Presidente Kim Jong-un analisou a complexa situação internacional e doméstica e levantou as lições aprendidas ao enfrentar desafios sem precedentes. O principal problema é que não conseguiram realizar melhorias revolucionárias no projeto de construção econômica e o país não conseguiu atingir os objetivos de crescimento econômico estabelecidos, e não houve grande progresso na melhoria da vida do povo. Acredita-se que esses problemas, que surgem à medida que entramos em uma nova fase de desenvolvimento e avançamos na empresa socialista, podem ser superados com a sabedoria e capacidade da Coreia.
+
+#### 1 Autoexame completo
+
+A característica mais marcante do 8º Congresso dos Representantes do Partido dos Trabalhadores da Coreia é que um autoexame completo foi realizado em nível nacional. Com o líder supremo admitindo abertamente os problemas que surgem no processo de implementação da estratégia de desenvolvimento econômico nacional, uma campanha de autoexame completo foi lançada em todo o partido e em todo o país.
+
+A influência que os fatores externos trouxeram para a Coreia não é pequena. No entanto, atribuir todas as causas do fracasso a fatores externos é uma prática muito perigosa. Mesmo que os fatores externos sejam resolvidos, se não forem ajustados adequadamente internamente, nada será realizado. O significado importante da convocação do 8º Congresso do Partido é que foram analisadas e sintetizadas seriamente as razões para não atingir os objetivos estratégicos de desenvolvimento levantados no 7º Congresso do Partido. Ressaltou-se que se torna uma grande lição se não corrigir as percepções e conceitos errôneos que têm prevalecido até hoje, e se continuar a insistir no mesmo estilo de trabalho irresponsável.
+
+Existem vários problemas também em termos de execução. As organizações de partido de todos os níveis, que devem desempenhar o papel de um organizador e executor da política do partido, não conseguem cumprir adequadamente seu papel. Os membros e executivos do partido tendem a ser passivos e possuem uma mentalidade de adesão cega, o que se torna um obstáculo para a realização da estratégia política e precisa ser corrigido a tempo. Na nova era do progresso revolucionário, os executivos com posições mais altas devem sentir uma maior responsabilidade e desempenhar um papel exemplar, adaptando-se aos tempos de grande mudança, para cumprir as tarefas importantes definidas pelo partido.
+
+"As unidades são membros da liderança da revolução. Planejar, operar e liderar negócios também é uma unidade, assim como amarrar as massas ao partido e mobilizar a organização para a realização da política do partido. Não se pode absolutamente permitir fenômenos como uma unidade com uma alta sensação de responsabilidade pelo partido, negociando tarefas confiadas pelo partido, ponderando os limites da responsabilidade, trabalhando apenas o suficiente sem pesquisa e criatividade na execução da política do partido, ou apenas cuidando dos próprios interesses de negócios. Ousadia, proatividade, infinita devoção e força vêm apenas de um alto sentido de responsabilidade para com o partido." A Coreia do Norte enfrenta muitos problemas graves. Os executivos do partido não devem evitar responsabilidades ao enfrentar esses problemas. Eles devem ousadamente assumir a missão concedida pelo povo, servir ao povo com um alto espírito de patriotismo e demonstrar suas habilidades através de ações reais.
+
+#### 2 Direção para Melhoria
+
+A 8ª Assembleia Representativa do Partido dos Trabalhadores da Coreia fez uma revisão geral dos problemas que impediram o alcance dos objetivos de desenvolvimento econômico nacional propostos na 7ª Assembleia, e apresentou uma nova estratégia de desenvolvimento econômico nacional para os próximos cinco anos.
+
+Esta estratégia visa "organizar e fortalecer de forma ordenada" para alcançar os objetivos estratégicos e colocar um foco especial na consolidação da base econômica independente. A Coreia do Norte está exigindo que todas as pessoas e todas as partes construam um sistema econômico independente sob o sistema econômico planejado, priorizando a ciência e a tecnologia, valorizando o talento, realizando bem as tarefas de construção e modernização de fábricas, elevando o nível de suas habilidades técnicas e fortalecendo a base econômica independente com seu próprio poder.
+
+"Devemos transformar firmemente todas as operações do partido e do estado para promover a inovação, a criação ousada e o avanço persistente, e tomar medidas para eliminar os velhos sistemas de negócios que estão restringindo nosso avanço, bem como os métodos de negócios irracionais e ineficientes, e obstáculos." As principais tarefas do novo plano de desenvolvimento econômico nacional de cinco anos proposto na 8ª Assembleia do Partido incluem o seguinte: fazer da indústria metalúrgica e química o ponto chave para o desenvolvimento, promover o desenvolvimento econômico saltando através da relação orgânica entre os principais setores industriais, aumentar a base técnica e material do setor agrícola, e aumentar a proporção de localização do setor de indústria leve para elevar o nível de vida do povo.
+
+Na indústria metalúrgica, o objetivo é completar o sistema de produção de ferro Juche para expandir a capacidade de produção e finalmente aumentar a produção de aço. Para atingir a meta de produção de aço refletida na nova estratégia de cinco anos, foi apontada a necessidade de modernizar os processos de produção existentes com tecnologia avançada em principais fábricas de ferro e aço, construir fornos de ferro de economia de energia para expandir a capacidade de produção, revitalizar a produção de lingotes de aço e resolver problemas técnicos e científicos para utilizar o carvão do norte para produção de ferro.
+
+A indústria química é a base para a construção de uma economia independente e a melhoria da vida das pessoas, e é uma indústria importante para o estado. A indústria química deve estabelecer um sistema de indústria química Juche no processo de usar a ciência e a tecnologia de ponta para mudar a estrutura da indústria química do país e resolver o problema dos materiais domésticos.
+
+As indústrias de energia, carvão, máquinas, mineração, florestal, transporte e outros setores são indústrias básicas do país. Elas devem adotar uma abordagem científica para encontrar maneiras seguras e eficazes de melhorar a capacidade de gestão e satisfazer as necessidades do povo.
+
+As demandas para o setor de construção foram colocadas de forma bastante específica. No novo quinquênio, deve-se construir 50.000 casas em Pyongyang e 25.000 casas no distrito de Geumdeok. Com o inevitável aumento da demanda por materiais de construção, é necessário construir uma base de produção de cimento de 8 milhões de toneladas para resolver o problema de materiais de acabamento de alto padrão.
+
+No setor de serviços, como lojas estatais e restaurantes, deve-se considerar a preservação das funções socialistas, garantir a vida do povo, promover o bem-estar material e restaurar a verdadeira natureza do comércio socialista que serve ao povo. Isso é devido ao enfraquecimento da função de garantir a vida do povo, pois esses setores de serviço se concentraram apenas em ganhar dinheiro e competir uns com os outros.
+
+No setor econômico externo, o foco foi colocado principalmente nos problemas relacionados à ativação da indústria do turismo. Devemos cuidar bem dos destinos turísticos, promover eficazmente o negócio de promoção do turismo, equipar as rotas turísticas e melhorar as qualificações dos guias. Há uma demanda especial para construir bem a área turística de Geumgangsan. A construção deve ser realizada de acordo com o plano anual e em etapas, e deve ser construída como uma área de cultura turística moderna da Coreia, onde a natureza e as características nacionais estão bem integradas.
+
+A exigência fundamental para melhorar a gestão econômica é reduzir custos e melhorar a qualidade, priorizando as necessidades de vida e os interesses do povo. A economia da Coreia é definida como uma economia autossuficiente, planejada, que serve ao povo. O estado deve melhorar a função de organização econômica, tomar a promoção do bem-estar do povo como princípio e realizar a gestão unificada da produção. Dentro do escopo da economia popular em geral, a produção deve ser reorganizada de forma racional para aumentar a eficiência econômica. Devemos encontrar os elos fracos dos setores econômicos e fortalecer os setores que são essenciais para o desenvolvimento equilibrado da economia.
+
+No novo período do plano quinquenal, devemos trazer uma mudança real que as pessoas podem sentir em resolver o problema da comida e roupas do povo.
+
+Devemos promover a produção agrícola e aumentar a produção de alimentos, resolver o problema dos alimentos e o problema de comer do povo. O problema da agricultura deve ser colocado na agenda importante e o problema de cultivar cientificamente deve ser resolvido. Principalmente, devemos melhorar sementes, fertilizantes, irrigação e mecanização. Precisamos promover a agricultura, pecuária e fruticultura para realizar a autossuficiência alimentar e fornecer condições para a vida próspera e civilizada do povo. A indústria pesqueira deve ser incluída como uma das três principais indústrias diretamente relacionadas à dieta do povo, e várias empresas de pesca devem ser estabelecidas e a aquicultura deve ser amplamente expandida.
+
+No setor de indústria leve, o foco deve ser a resolução do problema de nacionalização e reutilização de matérias-primas, melhorando a qualidade dos produtos com base no princípio de "primeiro a qualidade, depois a quantidade" e concentrando-se no desenvolvimento de novos produtos.
+
+Na revitalização da economia local, devemos seguir a política, aproveitar os recursos locais, construir o campo socialista, melhorar o trabalho de gestão da cidade e permitir o desenvolvimento equilibrado de áreas rurais e urbanas.
+
+No novo período do plano quinquenal, devemos construir a defesa nacional em um nível mais alto, cultivar talentos excelentes ao tratar a ciência e a tecnologia e a educação como links importantes e acumular novas forças para a vitória final da revolução. Devemos desenvolver intensivamente o negócio de saúde socialista, fornecer serviços de saúde mais superiores ao povo, equipar instalações e equipamentos médicos modernos e melhorar o nível de atendimento médico.
+
+No processo de construção de uma cultura socialista, devemos eliminar fenômenos anti-socialistas e não socialistas, e formar um espírito resoluto para construir uma sociedade civil socialista à moda da Coreia. Princípios foram estabelecidos também em relação à questão da unificação nacional e às relações norte-sul, pedindo que cessem todas as hostilidades contra a outra parte e que sejam fielmente implementados os conteúdos acordados pelas duas Coreias.
+
+O relatório pediu a expansão e o desenvolvimento das relações externas, destacando a direção abrangente e a posição política da Coreia. Enfatizou que em atividades externas, o princípio da autonomia deve ser mantido. Especialmente em relação aos Estados Unidos, deve-se adotar o princípio do igual por igual, o bem por bem, e estabelecer a posição internacional da Coreia.
+
+Para alcançar esses objetivos, é essencial confiar no poder da ciência e tecnologia e avançar na modernização e na nacionalização. O sistema de gestão econômica deve ser melhorado para aumentar a capacidade de gestão do estado na economia. A Coreia reconhece que há muitos problemas a serem resolvidos no setor econômico e está se esforçando para colocar a economia de volta nos trilhos o mais rápido possível. Em geral, deve-se reforçar a função de comando do gabinete sob a liderança do Partido dos Trabalhadores, reorganizar o sistema de comando da frente econômica, estabelecer medidas práticas e implementar a liderança do gabinete na economia, melhorando as medidas de gestão econômica e recuperando o sistema de gestão econômica.
+
+As empresas devem fazer os ajustes necessários para reforçar a capacidade de sobrevivência de seus negócios, mudar o pensamento de depender cegamente do exterior e encontrar uma maneira eficaz de gerir. Para isso, é preciso projetar uma estratégia para realizar o salto na economia e construir uma base material de maneira diligente.
+
+O desenvolvimento da economia muda de acordo com a política, assim como o sistema de responsabilidade de gestão econômica foi adotado no passado para encontrar uma maneira de gerir a economia, uma política mais nova deve ser introduzida para incentivar a autonomia e a proatividade das empresas. Se esses problemas aparecerem e negarem os resultados alcançados anteriormente ou retornarem ao antigo método, poderia sufocar os brotos que estavam prestes a brotar, possivelmente levando a uma diminuição da proatividade das empresas. A análise correta das experiências e lições acumuladas até agora, preservando o que precisa ser preservado e corrigindo o que precisa ser corrigido no desenvolvimento econômico, é uma importante tarefa pendente.
+
+"Devemos estudar as experiências eficazes de gestão nas empresas e encontrar o melhor método de gestão econômica adequado à nossa realidade." Hoje, a Coreia está passando por sérios desafios internos e externos. O presidente Kim Jong-un tem uma fórmula para a crise e está determinado a fazer mudanças. Para reviver a economia, é necessário encontrar um método de gestão adequado ao estágio atual da Coreia, e só então as empresas poderão contribuir mais na direção desejada pelo estado.
+
+O presidente Kim Jong-un apelou para vários setores da economia popular da seguinte forma: "Vamos avançar com novas inovações e criatividade audaz, quebrando todos os conceitos ultrapassados." A reunião criticou severamente as ações passivas e conservadoras que apareceram no processo de definição de objetivos pelas agências de orientação econômica do estado, enfatizando que sem erradicar a atitude passiva e a mentalidade de derrotismo, é impossível implementar a política do partido e cumprir as promessas feitas ao povo.
+
+A estratégia de desenvolvimento econômico do país é um mandato do partido e um decreto legal. Portanto, é necessário elaborar detalhadamente as regulamentações legais no processo de formulação e implementação da estratégia de desenvolvimento econômico do país, supervisionar do ponto de vista legal e remover todos os obstáculos que aparecem ao conduzir a estratégia de desenvolvimento econômico através de meios legais. É necessário fortalecer a função do órgão legal do país para erradicar completamente as práticas ilegais e criminosas no campo econômico e ao mesmo tempo, fazer com que cada setor exerça sua proatividade e também tenha uma força vinculante legal.
+
+O ano de 2021 é o primeiro ano de implementação da nova estratégia de desenvolvimento nacional de cinco anos apresentada na 8ª Conferência Representativa do Partido dos Trabalhadores da Coreia. A Coreia, através de uma crítica aprofundada e autocrítica, espera estimular a economia de forma mais eficaz com seus novos objetivos de desenvolvimento.
+
+#### 3 4ª Reunião Plenária do 8º Período
+
+No dia 1º de janeiro de 2022, o "Rodong Sinmun" relatou o conteúdo da 4ª Reunião Plenária do 8º Período do Partido dos Trabalhadores da Coreia, realizada de 27 a 31 de dezembro de 2021. O destaque foi a discussão intensiva dos problemas agrícolas e a apresentação de tarefas urgentes para resolver os problemas rurais da Coreia. A questão da agricultura na Coreia não é uma questão de um ou dois dias, mas o que foi apresentado desta vez é o resultado de superar várias crises na agricultura de 2021 e ganhar confiança nos resultados. A questão alimentar, a questão da alimentação é considerada um assunto sério que viola as promessas ao povo, a menos que seja verdadeiramente resolvida.
+
+A conferência, que foi uma declaração para resolver solidamente o problema alimentar do povo, também foi uma conferência que transmitiu a vontade do partido de armar os agricultores com políticas e transformar a zona rural em uma zona rural socialista próspera equipada com tecnologia moderna e civilização moderna. O fato de o secretário-geral Kim Jong Un ter dito "Avanço na Agricultura" em seu relatório "Vamos abrir uma grande nova era para o desenvolvimento de nossa agricultura socialista" pode ser interpretado como uma intenção de estabelecer uma nova linha de frente para superar a dura realidade que a Coreia enfrenta, consolidar a fé das pessoas através da resolução dos problemas agrícolas e ver resultados reais.
+
+A tarefa central da estratégia de desenvolvimento rural atual é reformar todos os trabalhadores agrícolas para se tornarem trabalhadores agrícolas revolucionários adequados para a era do Partido dos Trabalhadores, resolver completamente o problema alimentar do país, e lutar vigorosamente para melhorar drasticamente o ambiente de vida dos moradores rurais e estabelecer o desenvolvimento rural em uma trajetória de desenvolvimento contínuo. Na conferência, foi estabelecido que a tarefa básica da estratégia de desenvolvimento rural é aumentar a produção agrícola para resolver completamente o problema alimentar do país e revelou os objetivos de produção de grãos, produtos pecuários, frutas, aves, plantas ornamentais e metas de produção de pesca que devem ser conquistadas gradualmente ao longo dos próximos 10 anos.
+
+O estado deve se esforçar para melhorar o nível de educação e serviços médicos nas áreas rurais e propagar e expandir constantemente a cultura da capital, a cultura da classe trabalhadora e a cultura exemplar da época nas áreas provinciais e rurais, impulsionando a revolução cultural rural. Foi enfatizado que os agricultores devem reforçar seus esforços para a conversão do pensamento, a melhoria da tecnologia e a civilização da cultura, seguindo o método da Tripla Revolução.
+
+Foi proposto um modesto objetivo de "mudar a cultura alimentar do povo para se concentrar em arroz branco e alimentos à base de farinha de trigo", mudar a estrutura de produção de grãos do país e promover fortemente a agricultura de arroz e trigo. Com isso, é necessário pesquisar novos métodos de cultivo, questões de simplificação mecanizada do método de cultivo, expandir instalações de secagem, aumentar a capacidade de processamento de trigo e outros métodos concretos foram apresentados. ("Relatório sobre a 4ª Reunião Plenária" "Rodong Sinmun", 1º de janeiro de 2022)
+
+Ao enfatizar o apoio estatal ao campo, foi destacado que uma análise eficaz do investimento nacional deve preceder a realização de melhorias na administração rural, mecanização, quimização e eletrificação. É necessário revisar e reforçar completamente o sistema de irrigação nacional que não é abalado nem mesmo pelas grandes chuvas, e encontrar maneiras de resolver efetivamente os problemas de sementes e fertilizantes.
+
+Além disso, foi salientada a necessidade de expandir corajosamente setores como pecuária, pesca, fruticultura, criação de pássaros para enriquecer a mesa, e a necessidade de supervisionar para que não haja exageros por parte dos líderes rurais. Em última análise, o apoio do estado é necessário para resolver problemas rurais, mas se a qualidade dos líderes primários rurais não acompanhar, isso não levará ao desenvolvimento contínuo.
+
+"O camarada secretário geral analisou detalhadamente a situação financeira geral das fazendas cooperativas que estão operando em condições difíceis e, como parte importante da política para permitir que nossas áreas rurais se levantem e reforcem a base econômica das fazendas, declarou que todas as dívidas que as fazendas cooperativas não conseguiram reembolsar ao estado seriam isentas."
+
+O problema de sustentar as famílias dos agricultores também foi mencionado, salientando que a criatividade, modernidade, cultura e política devem ser garantidas na construção rural com base nas experiências adquiridas no processo de construção de Samjiyon.
+
+Esta conferência, que pode ser vista como a proposta do novo Regulamento de Construção Rural Socialista, foi avaliada como definindo o aprofundamento e desenvolvimento do socialismo rural coreano, alimentando vigorosamente as chamas da revolução rural, e possuindo um significado transformador na realização do renascimento total do socialismo e na realização rápida do desejo século do povo.
+
+Na conferência, foi mencionado novamente a construção de 50.000 residências propostas na 8ª Conferência do Partido, anunciando que a construção de 10.000 casas em Pyongyang, atualmente em andamento em Songshin e Songhwa, já entrou na fase final. O terceiro desenvolvimento da região de Samjiyon foi normalmente promovido e a boa notícia da conclusão da construção de 5.000 casas na região de Kumchon foi anunciada, juntamente com a determinação de continuar expandindo o escopo da nova construção de habitações.
+
+Em 21 de janeiro, a Suprema Assembleia Popular da República Popular Democrática da Coreia decidiu promover o Ministério da Agricultura para Comitê de Agricultura, anunciado oficialmente. Isso pode ser interpretado como um grande impulso no setor agrícola. É difícil afirmar se a determinação do país de transformar o rosto do campo em 10 anos se realizará conforme planejado, mas vendo o resultado da construção de casas impulsionada pelo poder do estado, parece promissor.
+
+O "Rodong Sinmun" relatou em 13 de fevereiro que a cerimônia de início da construção de 10.000 unidades habitacionais em Pyongyang Hwasung District ocorreu no dia 12. Para atingir o objetivo de construir 50.000 unidades habitacionais, a construção de 10.000 unidades foi iniciada no ano passado, o que parece possível para atingir o objetivo geral. Hwasung District está localizado ao norte de Pyongyang em uma área rural, e parece que um grande complexo habitacional será construído aqui. Isso pode significar a formação de uma nova cidade, mas também parece estar expandindo Pyongyang para as áreas rurais. No passado, o desenvolvimento se concentrava na reconstrução do interior de Pyongyang, mas agora parece que está introduzindo o conceito de construção de novas cidades ao lado da reconstrução, mostrando a imagem de uma Coreia em desenvolvimento.
+
+Em 7 de fevereiro de 2022, a Agência Central de Notícias da Coreia divulgou um relatório intitulado "A Grande Era da Construção que Abre um Futuro Brilhante para a Civilização Socialista - Sobre a Grande Revolução na Construção nos Últimos 10 Anos Sob a Excelente Liderança do Grande Partido Central". A Coreia apresentou os resultados alcançados no campo da arquitetura durante os 10 anos do governo de Kim Jong Un, e avaliou esses 10 anos como "A Era da Arquitetura do Povo Primeiro, A Era do Desenvolvimento Sobre-humano da Arte Arquitetônica Juche, A Era da Grande Revolução que Criou a Lenda da Construção que Derrota o Tempo".
+
+Continuando a era de ouro da construção da capital, abriu a era de mudança nas províncias e declarou um grande plano para provocar uma nova revolução na construção para mudar fundamentalmente o ambiente de vida de todo o povo do país nos próximos 20 a 30 anos.
+
+Na Coreia, a frase "Se o Partido decide, nós fazemos!" é popular. Uma vez que o Partido dos Trabalhadores da Coreia decidiu, o que resta é para o partido inteiro, o exército inteiro e todas as pessoas se unirem e executar de forma completa e meticulosa.
+
+### Apêndice - Material de referência
+
+#### 1 República Popular Democrática da Coreia
+
+A República Popular Democrática da Coreia foi fundada em 9 de setembro de 1948. A área total da península coreana é de 223.936 km², e a área da parte norte é de 123.138 km². A geografia consiste em 80% de montanhas, a temperatura média anual é de 8~12°C. A precipitação média anual é de 1000~1200 mm e a duração média anual da luz do sol é de 2280~2780 horas. A população total é de 25.287.000, e a população de Pyongyang é de 3.160.300.
+
+As divisões administrativas são compostas por 9 províncias e 3 cidades metropolitanas. As províncias são Pyongan do Sul, Pyongan do Norte, Hwanghae do Sul, Hwanghae do Norte, Gangwon, Jagang, Ryanggang, Hamgyong do Sul, Hamgyong do Norte. As cidades metropolitanas são Pyongyang, Nampo, e Rason.
+
+A política da Coreia é política do povo que organiza e lidera de maneira unificada todos os setores da sociedade de acordo com os interesses da classe trabalhadora. Consistentemente, a filosofia Juche é a única filosofia guia, que é composta pelo princípio filosófico centrado no homem, o princípio sociológico das massas populares, o princípio de liderança da revolução e da construção. A ideologia militar é baseada no princípio do militarismo e da precedência militar, dando prioridade ao fortalecimento militar e considerando as forças revolucionárias como a principal força e pilar para promover a causa do socialismo.
+
+O Presidente Kim Jong-un tem vigorosamente impulsionado a linha de construção econômica e de força nuclear, recebendo o legado político dos líderes antecessores, e defende a autossuficiência e a força própria como núcleos fundamentais da construção do estado socialista ao estilo coreano.
+
+A Coreia do Norte insiste incansavelmente no sistema de liderança única do partido e do líder, com o Partido dos Trabalhadores da Coreia definindo-se como "um novo tipo de partido revolucionário que segue o grande Kim Il-sung e Kim Jong-ilismo como sua orientação principal".
+
+O órgão supremo de soberania na Coreia do Norte é a Assembleia Popular Suprema e seu órgão permanente é o Comitê Permanente da Assembleia Popular Suprema. O órgão supremo de soberania formula as leis e políticas do estado, organiza diretamente os órgãos de execução administrativa e judiciária, e supervisiona e controla suas atividades.
+
+O Comitê de Estado da Coreia do Norte é o principal órgão de liderança do estado. O Gabinete, como o órgão de execução administrativa central, é o órgão responsável pela organização e implementação diretas dos projetos nacionais, com poderes delegados pelo órgão soberano. O órgão de execução administrativa local é o órgão responsável pela organização e implementação das decisões e instruções do órgão soberano local, e das tarefas políticas, econômicas, culturais e outras em sua área de jurisdição.
+
+Na Coreia do Norte, o Ministério Público Supremo e o Supremo Tribunal são os órgãos judiciais, com os ministérios públicos locais e tribunais locais desempenhando funções correspondentes abaixo deles.
+
+A Coreia do Norte possui organizações trabalhistas como a Liga Juvenil Kim Il-sung-Kim Jong-il, a Confederação Geral dos Sindicatos da Coreia, a Liga dos Trabalhadores Agrícolas da Coreia, e a Liga das Mulheres Democráticas da Coreia.
+
+A economia norte-coreana é uma economia planejada que opera com base na propriedade socialista dos meios de produção, com uma combinação orgânica de liderança unificada do estado e relativa independência e criatividade das empresas. É uma economia nacional independente que avança com base em seus próprios recursos e tecnologia. A propriedade socialista é composta de propriedade de todo o povo e propriedade cooperativa. A propriedade privada dos meios de produção não é permitida.
+
+As fábricas e empresas implementam um sistema de gestão responsável socialista ao estilo norte-coreano, enquanto as cooperativas agrícolas implementam um sistema de gestão responsável na fazenda. O sistema de gestão responsável na fazenda contém dois pontos principais: a questão das cooperativas agrícolas exercendo o poder de gestão real e a implementação de um sistema de responsabilidade responsável por campo no sistema de gestão por parcela. Hoje, o método norte-coreano de gestão econômica socialista está despertando o entusiasmo do trabalho dos trabalhadores e permitindo que a Coreia do Norte registre um crescimento econômico positivo mesmo quando as sanções internacionais estão se aprofundando.
+
+Certamente, ainda existem muitos problemas econômicos a serem resolvidos. O principal problema é que, como já revelado na 8ª Assembleia de Representantes do Partido dos Trabalhadores da Coreia, os objetivos estratégicos estabelecidos na 7ª Assembleia não foram alcançados. A razão para isso pode ser encontrada tanto em fatores externos quanto internos. Fatores externos incluem a continuação das sanções contra a Coreia do Norte pela comunidade internacional, graves desastres naturais e o impacto da pandemia global COVID-19. Os fatores internos incluem a falta de realismo ou fundamentação científica ao estabelecer novos planos de desenvolvimento por departamentos com várias funções, ou a tendência do estado a tentar resolver problemas com importações sempre que é acometido pela "doença das importações". A 8ª Assembleia manifestou a vontade de reorganizar a ordem e a capacidade internas e superar todos os obstáculos. É apelado que nenhum setor desfrute de privilégios e que todos devem se unir para abrir um caminho para a construção do estado socialista. A Coreia do Norte enfatiza que deve avançar com espírito de autoconfiança e tecnologia científica para alcançar os objetivos estratégicos estabelecidos pelo partido, completar a construção da economia socialista, melhorar a vida das pessoas e recuperar o atraso até agora.
+
+A cultura da Coreia do Norte possui características distintas que não podem ser encontradas em nenhum outro país. A cultura socialista norte-coreana é criada e apreciada pelo povo, incluindo a classe trabalhadora, e contribui para o feito socialista. A cultura socialista, ou seja, a cultura norte-coreana, é caracterizada pela estreita combinação de formas nacionais e conteúdo socialista.
+
+A cultura da Coreia do Norte abrange áreas da vida cultural espiritual das pessoas, como educação, ciência, literatura e arte, saúde, esportes, publicação e notícias. Em um sentido mais amplo, também inclui a riqueza material alcançada no processo de construção socialista.
+
+A Coreia do Norte está implementando um sistema de educação obrigatória gratuita de 12 anos e enfatiza a ciência e a tecnologia. Na literatura e na arte, eles estão incentivando a criação de muitas obras que refletem as formas tradicionais nacionais. Nos esportes, eles enfatizam a popularização e a vida diária, e na saúde, estão implementando um sistema de tratamento gratuito. No campo da publicação e das notícias, a mídia central e local, incluindo o "Rodong Sinmun", "Minju Joson" e "Chongnyon Jonwi", está desempenhando fielmente o papel de propagar a voz do partido.
+
+A Coreia do Norte é rica em recursos subterrâneos e biológicos, e também tem recursos turísticos e humanos superiores. Eles exigem que esses recursos sejam desenvolvidos e utilizados de maneira científica e racional. A Coreia do Norte é rica em recursos subterrâneos, com mais de 200 tipos de minerais úteis depositados. Existem minerais de metal preto e colorido, como ferro, chumbo, zinco, ouro, prata, cobre, molibdênio, manganês, bem como minerais não metálicos, como carvão, calcário, magnesita e grafite. Entre eles, a magnesita e o grafite têm a maior quantidade de reservas. Esses recursos minerais da Coreia do Norte se tornaram um importante produto de exportação que traz moeda estrangeira, mas as exportações foram bloqueadas devido às sanções internacionais dos últimos anos.
+
+O Conselho de Segurança da ONU aprovou a Resolução 2270 contra a Coreia do Norte em 2 de março de 2016, definindo ouro, titânio, vanádio, minerais de terras raras da Coreia do Norte como itens proibidos para exportação, e incluiu carvão, aço e minério de ferro da Coreia do Norte, exceto para fins de subsistência, em itens proibidos para exportação. Em 30 de novembro de 2016, o Conselho de Segurança da ONU aprovou a Resolução 2321, adicionando cobre, níquel, prata e zinco da Coreia do Norte aos itens proibidos para exportação. Em 6 de agosto de 2017, o Conselho de Segurança da ONU aprovou a Resolução 2371, aumentando a intensidade das sanções ao proibir completamente a exportação de carvão, aço, minério de chumbo, zinco e minério de zinco da Coreia do Norte. Finalmente, em 12 de setembro de 2017, o Conselho de Segurança da ONU aprovou a Resolução 2375, proibindo a Coreia do Norte de importar produtos petrolíferos, exportar gás natural liquefeito e proibindo a exportação de produtos refinados para a Coreia do Norte.
+
+Os recursos biológicos consistem principalmente de recursos animais e vegetais. Entre os recursos animais, há 97 espécies de animais domésticos e 394 espécies de aves. Recursos marinhos são especialmente abundantes porque o mar fica a leste, e existem mais de 850 tipos de frutos do mar. Além disso, existem mais de 100 tipos de plantas de madeira, mais de 900 tipos de plantas medicinais, mais de 300 tipos de frutas selvagens, mais de 170 tipos de plantas aromáticas e mais de 100 tipos de plantas alimentícias.
+
+Os recursos turísticos incluem muitos pontos turísticos bonitos de montanhas, lagos e mares, como "Samcheonli Geumsugangsan". As famosas montanhas incluem Baekdusan, Geumgangsan, Myohyangsan, Guwolsan, Chilbosan, etc., e Ryongmundaegul é famoso. Além disso, existem locais históricos da revolução, locais de batalhas revolucionárias, relíquias históricas, grandes monumentos, como a base de educação da tradição revolucionária. Existem costumes únicos, estilos de vida, patrimônio cultural, literatura e arte, festivais, exposições, e teatros famosos, museus, zoológicos, jardins botânicos, praças, empresas, fazendas, pomares, universidades, palácios juvenis, e muitos outros recursos turísticos sociais. Esses lugares oferecem uma variedade de pontos turísticos após a modernização e a abertura.
+
+Os recursos humanos são especiais e também demonstram um potencial infinito. É um país que valoriza o conhecimento e o talento, e que implementa a educação obrigatória por 12 anos. Não apenas existem trabalhadores inteligentes, diligentes e informados prontos, mas cada pessoa passou pela vida militar e organizacional, sabendo como criar a força do grupo e cooperar. A península coreana, assim como a Terra, vive com a dor da divisão enterrada no coração, e os esforços que desejam a unificação nunca foram negligenciados, passando longos 70 anos. A flor nacional da Coreia é a magnólia, a ave nacional é o gavião, a árvore nacional é o pinheiro e o cão nacional é o cão Pungsan.
+
+#### 2 Sistema de liderança única do Partido dos Trabalhadores
+
+O Partido dos Trabalhadores da Coreia é o partido no poder na Coreia, liderando o povo coreano e construindo um estado socialista. Em 28 de fevereiro de 2014, Kim Jong-un propôs que se estabelecesse um sistema de liderança única do Partido dos Trabalhadores na 8ª reunião dos empreendedores do pensamento do Partido dos Trabalhadores. A Coreia estabeleceu um objetivo de estabelecer um sistema de liderança única do Partido dos Trabalhadores em todo o partido e em todo o país, com o objetivo de fortalecer as forças de combate unidas, implementar as instruções dos líderes anteriores e realizar a aspiração de que o povo coreano possa desfrutar de uma vida abundante.
+
+A Coreia sempre enfatizou a unificação do Partido dos Trabalhadores, o líder e o povo, e afirmou que unir o pensamento do povo em todo o partido e todo o país é a política do partido e a condição básica para expressar o espírito de incondicionalidade. No 8º Congresso, o Partido dos Trabalhadores da Coreia elegeu Kim Jong-un como secretário-geral, tornando-o de fato o líder supremo do Partido dos Trabalhadores da Coreia e do povo. O secretário-geral deve estabelecer firmemente o sistema de liderança única do Partido dos Trabalhadores no partido para fortalecer a liderança do partido e realizar a ideologia política do povo em primeiro lugar.
+
+Organizações do partido e executivos devem sempre proteger a dignidade e a reputação do centro do partido e nenhum fenômeno que viole isso deve aparecer. Todos os esforços devem ser concentrados para fortalecer a força principal do partido e aumentar as qualidades ideológicas dos executivos do partido para manter a pureza da liderança do partido.
+
+Qualquer coisa irracional no sistema e método de negócios do partido deve ser melhorada para verdadeiramente refletir o povo e a realidade, estabelecer a dignidade do partido entre as massas populares e unir firmemente as massas populares no partido. Os membros do partido e os executivos não podem tolerar fenômenos em que usam sua autoridade, se apegam ao burocratismo e buscam seus próprios interesses, e as organizações do partido não devem ser tratadas generosamente e devem lutar sem comprometer a integridade. Os membros do partido e os executivos devem refletir seriamente sobre os problemas existentes com um alto senso de responsabilidade do partido, encontrar a causa, segurar alto a bandeira do Juche de Kim Il-sung-Kim Jong-il, unir-se firmemente em torno do centro do partido, alcançar uma vitória decisiva na construção socialista e lutar pelo país e pelo povo.
+
+#### 3 As massas populares em primeiro lugar
+
+A ideologia de colocar as massas populares em primeiro lugar é a ideologia governamental que o presidente Kim Jong-un enfatiza mais e reflete a ideologia dos líderes coreanos de amar o povo. A ideologia das massas populares em primeiro lugar foi enfatizada várias vezes nos discursos do presidente Kim Jong-un e foi reforçada no 8º Congresso do Partido dos Trabalhadores da Coreia que foi realizado recentemente. Ele se tornou o estilo político atual da Coreia. Deve ser visto como a política do povo dos novos líderes, distinta da política militar dos líderes anteriores.
+
+No início de seu mandato, o presidente Kim Jong-un enfatizou que deveria servir o povo até a morte. Isso significa que você deve estar disposto a morrer para servir o povo, se tornar a comida do povo e dedicar seu corpo e mente para o país.
+
+Os líderes ancestrais da Coreia exigiram que os oficiais não deveriam se postar diante do povo e se tornar autoritários, mas deveriam servir ao povo e se tornarem servos leais do povo. O atual líder também insiste que os oficiais devem se dedicar a servir o povo sem perder a si mesmos, e devem sempre pensar no povo, tornando-se oficiais que o povo pode confiar.
+
+Em 10 de outubro de 2015, a Coreia comemorou o 70º aniversário da fundação do Partido dos Trabalhadores, realizando um desfile militar em Pyongyang. O Presidente Kim Jong-un fez um discurso, dizendo que "servir o povo até o fim é a razão de ser do Partido dos Trabalhadores da Coreia e a fonte de sua força invencível". O Partido dos Trabalhadores da Coreia enfatizou que deve apoiar o povo como o céu, respeitar o povo, amar o povo e considerar o povo como seu mestre. A história do partido é o caminho percorrido pelo povo, e a força do partido é a força do povo. A grandeza do partido se deve à grandeza do povo, e as conquistas do partido são vitórias do grande povo.
+
+"Apelo a todos os camaradas do partido para servirem ao grande povo até o fim." "Tudo deve ser feito para o povo e deve ser baseado no povo." Estes slogans expressam a forte vontade do líder da Coreia de se dedicar ao povo, e refletem a ideologia de valorização, respeito e amor ao povo.
+
+Na Coreia, é considerado o veneno ideológico mais perigoso usar a autoridade para promover privilégios. Devemos lutar ferozmente contra essa tendência. A verdadeira natureza de um membro do partido e de um oficial não é buscar nenhum privilégio, mas compartilhar a alegria e a dor com o povo e dar tudo de si pelo povo.
+
+Na 8ª Conferência do Partido, o Presidente Kim Jong-un propôs que o princípio do povo em primeiro lugar deve ser uma exigência fundamental para melhorar as qualidades dos oficiais. "Agora é a hora de precisarmos de excelentes oficiais. Precisamos de oficiais que se preocupem com o partido e o estado e se dediquem ao trabalho. Excelentes oficiais não hesitam em trabalhar para a revolução, trabalham para o povo e, quando recebem uma tarefa, a levam até o fim. Todos os oficiais não devem decepcionar as expectativas do povo e devem executar fielmente as tarefas que lhes foram atribuídas a cada momento, esforçando-se ainda mais."
+
+#### 4 O poder da unidade
+
+O slogan "Unidos como um" é o mais visível em toda a Coreia. Significa que todo o povo se reúne com uma força unificada e exala um poder forte. Na Coreia, diz-se que o líder, o partido e o povo são uma só entidade. O amor e a fé do líder e do partido pelo povo são definidos como o modo básico de política do socialismo e são implementados nas atividades do partido e do estado. Implementar o princípio do povo em primeiro lugar em todas as atividades do partido e do estado mostra o amor e a confiança infinitos no povo. A visão do povo do Presidente Kim Jong-un é de valorização, respeito e amor ao povo, e de unificação com o povo.
+
+"A razão pela qual a Coreia não se curvou sob as sanções de longo prazo e está subindo cada vez mais é porque seus objetivos e princípios, política e realidade, são completamente unificados com o povo como principal. Nesse sentido, a unidade entre o líder e o povo pode ser chamada de força produtiva única da Coreia. A unidade da Coreia tem suas raízes no amor do líder pelo povo, é uma verdade, a fé do povo no líder é absoluta e é irresistível, e seu objetivo geral é o socialismo centrado no povo, que é irreversível. As pessoas da Coreia estão convencidas de que não há nada neste mundo que não possam fazer e de que não há nada a temer. Isso é porque eles têm um tesouro chamado unidade, que eles se orgulham de ser mais forte do que uma bomba atômica."
+
+O Dr. Kim Il menciona que a "unidade unificada é a força produtiva única da Coreia". Isso se deve ao fato de que a unidade unificada está mostrando seu poder até mesmo na economia. Inúmeras criações surgiram na Coreia durante a era Kim Jong Un. Ao observar muitas construções recém-criadas, como a Zona de Habitação dos Cientistas de Satélite, a Estação de Esqui Masikryong, o Orfanato de Wonsan, a Usina Jovem Herói do Monte Baekdu, a Sala de Ciência e Tecnologia, a Rua dos Cientistas Futuros, Rua Ryomyong, fica claro que uma grande transformação está ocorrendo na Coreia nos últimos anos. Todos esses resultados foram alcançados pela unificação de todo o povo.
+
+No 8º Congresso do Partido dos Trabalhadores da Coreia, foi novamente enfatizado que devemos lembrar os nobres princípios de "Pátria Acima de Tudo", "Unidade Unificada" e "Autossuficiência" e alcançar novas vitórias na construção do socialismo à maneira coreana.
+
+#### 5 O Congresso Representativo e a Conferência Representativa do Partido dos Trabalhadores da Coreia
+
+O Partido dos Trabalhadores da Coreia estabelece novos objetivos para o partido em cada período por meio do congresso do partido, revisando e complementando os estatutos do partido e reformando a organização do partido para o desenvolvimento saudável do partido. O Congresso do Partido é o órgão de liderança superior do partido, que decide as estratégias e táticas do partido, elegendo membros do Comitê Central e modificando os estatutos do partido.
+
+O primeiro Congresso do Partido dos Trabalhadores da Coreia aconteceu de 20 a 30 de agosto de 1946, onde ocorreram relatórios sobre a fundação do partido e os estatutos do partido, e a eleição dos membros do Comitê Central e do Comitê Central de Inspeção.
+
+O segundo Congresso do Partido aconteceu de 27 a 30 de abril de 1948, onde houve um relatório sobre os trabalhos do partido e uma revisão dos estatutos do partido, bem como a eleição dos órgãos centrais de direção.
+
+O terceiro Congresso do Partido aconteceu de 23 a 29 de abril de 1956, e a "Para a Reunificação Pacífica da Pátria" foi adotada no relatório do trabalho central do partido.
+
+O quarto Congresso do Partido aconteceu de 11 a 18 de setembro de 1961, onde foi anunciado o Plano de Desenvolvimento Econômico Popular de Sete Anos.
+
+O quinto Congresso do Partido aconteceu de 2 a 13 de novembro de 1970, onde o Plano de Desenvolvimento Econômico Popular de Seis Anos foi anunciado e foi declarada a realização do objetivo de construir uma nação industrial socialista.
+
+O sexto Congresso do Partido aconteceu de 10 a 14 de outubro de 1980, onde foi apresentado o Plano Econômico dos Dez Anos de 1980 e a proposta para a fundação da República Democrática Popular da Coreia foi declarada. Kim Jong Il foi confirmado como sucessor.
+
+O sétimo Congresso do Partido aconteceu de 6 a 9 de maio de 2016, onde o Congresso do Partido foi retomado após 36 anos e foi apresentada a Estratégia de Cinco Anos para o Desenvolvimento Econômico Nacional.
+
+O oitavo Congresso do Partido aconteceu de 5 a 12 de janeiro de 2021, onde foram estabelecidos novos objetivos para o desenvolvimento econômico nacional e os estatutos do partido foram revisados. Uma nova liderança foi eleita e Kim Jong Un foi nomeado Secretário-Geral do Partido dos Trabalhadores. Os estatutos modificados especificam que o congresso do partido será realizado a cada cinco anos e que a construção organizacional do partido será institucionalizada e formalizada.
+
+Entre as sessões do partido e as reuniões de representantes do partido, o centro do partido pode convocar reuniões de representantes do partido conforme necessário para discutir a linha e a estratégia do partido ou para decidir importantes nomeações de pessoal. Embora seja de caráter temporário, desempenha um papel complementar importante nas sessões do partido.
+
+A primeira reunião de representantes do partido ocorreu de 3 a 6 de março de 1958, onde o primeiro plano quinquenal de desenvolvimento econômico popular foi estabelecido e os problemas para fortalecer a unidade e a solidariedade do partido foram discutidos. A segunda reunião de representantes do partido aconteceu de 5 a 12 de outubro de 1966, onde a situação atual e as tarefas do partido foram apresentadas e a linha de desenvolvimento paralelo de defesa nacional e economia foi adotada. As tarefas iminentes de construção econômica socialista e a extensão do plano de sete anos para o desenvolvimento econômico popular por três anos foram anunciados. Também foi aprovada a decisão de reorganizar o problema da organização partidária para o sistema de secretários-gerais.
+
+A terceira reunião de representantes do partido ocorreu em 28 de setembro de 2010, onde Kim Jong Un foi promovido a vice-presidente do Comitê Militar do Partido dos Trabalhadores da Coreia.
+
+A quarta reunião de representantes do partido aconteceu em 11 de abril de 2012, onde foi decidido eternamente honrar o presidente Kim Jong Il como secretário-geral do Partido dos Trabalhadores da Coreia e promover o presidente Kim Jong Un como o primeiro secretário.
+
+#### 6 Luta pela vitória final do socialismo
+
+Em seu discurso no 100º aniversário do nascimento do presidente Kim Il Sung em 2012, o presidente Kim Jong Un propôs o slogan "Para a vitória final!" e apelou para avançar juntos para melhorar a vida das pessoas.
+
+A Coreia, armada com a ideia Juche estabelecida pelo Presidente Kim Il Sung, tornou-se um estado poderoso em pensamento, e a política militar do Presidente Kim Jong Il fez da Coreia uma nação militarmente poderosa. Agora, a política das pessoas do Presidente Kim Jong Un está fazendo da Coreia uma nação economicamente forte. Se a história de 70 anos da Coreia fosse facilmente ilustrada, seria caracterizada por três líderes. Ou seja, o Presidente Kim Il Sung é o fundador que estabeleceu o país, o Presidente Kim Jong Il é o líder que defendeu a montanha socialista, e o Presidente Kim Jong Un é o líder que constrói uma nação socialista poderosa.
+
+Como país que mantém rigorosamente o sistema socialista, a Coreia passou por severas "marchas árduas" e "marchas forçadas", mas manteve a faísca do socialismo. Apesar de qualquer pressão externa, a Coreia segue firmemente o caminho do socialismo, e a determinação de Kim Jong Un para construir a economia tem trazido recuperação econômica para a Coreia. As pessoas da Coreia acreditam firmemente que, se suportarem um pouco mais, poderão alcançar a vitória final do socialismo.
+
+Não há outra escolha a não ser seguir o caminho do socialismo até o fim. Apenas o socialismo pode oferecer uma sociedade onde todos são mestres, então não há desistência ou busca por um caminho diferente por ser difícil. Acredita-se que o sistema socialista, que tem sido mantido por mais de 70 anos, agora superará todas as tempestades e adversidades e mostrará seus frutos.
+
+No entanto, isso não significa que o socialismo alcançará a vitória final por si só. Dada a intensa pressão externa para destruir o socialismo, é necessário ter uma determinação robusta para superá-lo e construir um socialismo mais forte. Não deve haver hesitação ou rendição à pressão, e todo o povo deve se unir e correr vigorosamente para um objetivo, esforçando-se ao máximo.
+
+Então, devemos nos concentrar totalmente na construção econômica, e apenas a construção de um socialismo que esteja prosperando economicamente pode demonstrar que é uma verdadeira sociedade socialista. A Coreia considera a defesa do socialismo como a verdade e acredita que o caminho para a realização do verdadeiro socialismo não está distante, convocando a mobilização total para antecipar esse dia.
+
+#### 7 O socialismo forte que a Coreia está construindo
+
+A expressão "socialismo forte" surgiu durante o tempo do Presidente Kim Jong Il. Inicialmente, a expressão "estado forte" era comumente usada, mas agora a expressão "socialismo forte" é mais utilizada, que é um termo contemporâneo que indica o tipo de país que a Coreia está tentando construir.
+
+O socialismo forte que a Coreia se refere é uma superpotência onde o poder do país é forte e floresce incessantemente, permitindo que as pessoas desfrutem plenamente de uma vida feliz que é invejável neste mundo. A imagem do socialismo forte pode ser dividida em uma superpotência política e militar, uma superpotência científica e tecnológica, uma superpotência econômica e uma superpotência cultural. Uma superpotência política e militar inclui o significado de um estado forte em termos de ideologia política e um estado militarmente forte. Um estado forte em termos de ideologia política é uma expressão simbólica que indica um país onde todo o povo está unido em termos de ideologia e vontade. A força política e ideológica é a maior força nacional porque a política desempenha um papel decisivo no desenvolvimento social e o poder ilimitado da ideologia garante o desenvolvimento e a prosperidade do país e da nação. Um país onde uma ideologia, a ideologia de autossuficiência, domina a sociedade e, com base nisso, todo o povo está firmemente unido, e um país que pratica política independente tanto interna quanto externamente com base no poder do povo unido como uma única força política é realmente uma superpotência que possui uma poderosa força política e ideológica. Um estado militarmente forte pode ser facilmente compreendido em termos relativos. Sem uma forte força militar, não é possível proteger a soberania e o direito de existência da nação e do socialismo. Especialmente porque a trágica realidade de que o Norte e o Sul ainda estão em um estado de confronto e vivem dispersos por mais de 70 anos está diante de nós, a força militar é enfatizada ainda mais. Um estado militarmente forte é um país onde o exército está preparado como um exército revolucionário invencível que é superior em termos de ideologia política e técnica militar, todo o povo está armado, todo o país está fortificado, e tem uma indústria de defesa autônoma e modernizada.
+
+A superpotência científica e tecnológica que a Coreia se refere é um país onde todos os setores científicos e tecnológicos do país estão no nível mais alto do mundo e, com base nessa ciência e tecnologia, todos os setores, incluindo economia e defesa, cultura, etc., estão se desenvolvendo. Hoje, na Coreia, a ciência e a educação são colocadas em primeiro lugar acima de tudo, e esforços estão sendo feitos para fortalecer esses setores. Isso mostra que eles estão determinados a alcançar rapidamente o nível internacional e revitalizar a economia da Coreia.
+
+A superpotência econômica que a Coreia se refere tem dois significados: construir um país que tem uma economia autônoma e com forte soberania e uma economia onde a ciência e a tecnologia se tornam a força produtiva básica. Uma superpotência econômica é um país que possui uma economia avançada que pode garantir plenamente uma vida material e cultural próspera e abundante sem igual no mundo para o povo, que são os mestres do país e da sociedade, e que pode garantir a política independente e a força militar autodefesa em termos materiais e econômicos. A fim de desenvolver a economia nacional autossuficiente e construir uma economia moderna e informatizada, eles afirmam que é necessário criar uma estrutura econômica na qual todos os setores estejam equipados com a mais recente tecnologia moderna e todas as atividades de produção e gestão sejam baseadas na ciência e tecnologia modernas.
+
+A superpotência cultural que a Coreia deseja construir é um país onde todo o povo possui alta criatividade e nível cultural e desfruta da melhor civilização no nível mais alto.
+
+Eles argumentam que cidades e aldeias, fábricas e locais de trabalho devem ser modernizados para atender às aspirações e demandas do povo que deseja viver em um ambiente de vida civilizado, e que todo o país deve ser florestado e reflorestado por meio de um movimento de participação popular.
+
+Assim, a construção da potência nacional que a Coreia propõe tem um objetivo claro e exige que todos os partidos, todas as forças armadas e todos os cidadãos se unam para alcançar este objetivo.
+
+#### 8 Construção de uma Potência Econômica
+
+O presidente Kim Jong Un, no 7º Congresso do Partido dos Trabalhadores da Coreia, propôs em seu relatório do projeto do Comitê Central que o Partido e o Estado devem concentrar todas as suas capacidades na construção de uma potência econômica socialista como linha de frente básica. Uma potência econômica socialista, essencialmente, é a estratégia do Partido para a construção de uma potência econômica.
+
+《A estratégia do nosso Partido para construir uma potência econômica é firmemente baseada no espírito de autossuficiência e tecnologia científica, realizando a altíssima nacionalização, modernização e cientifização da economia nacional, e proporcionando uma vida cultural rica e civilizada para as pessoas.》Ele enfatiza que uma potência socialista é uma sociedade onde o poder nacional é forte e se desenvolve de forma constante e as pessoas desfrutam livremente de uma vida feliz sem igual no mundo. Ele acredita que, quando uma potência socialista é construída, não apenas o nível de desenvolvimento da produtividade e a renda nacional aumentarão no campo da vida econômica, mas também garantirá uma vida rica e civilizada para o povo.
+
+Na Coreia, a potência econômica que se pretende construir é, essencialmente, um país que se desenvolve com forte autossuficiência e autodeterminação, e que baseia a tecnologia científica como sua força produtiva básica. Em outras palavras, é uma potência econômica autossuficiente que garante a produção de meios materiais necessários para a construção da defesa e da economia, e a vida do povo, e é uma potência econômica baseada no conhecimento onde a ciência e a tecnologia estão integradas com a produção e a indústria de alta tecnologia desempenha um papel principal na economia.
+
+As tarefas para consolidar a estratégia de construção de uma potência econômica incluem:
+
+1 Fortalecer a autossuficiência e a autodeterminação da economia popular, especificamente, realizar a nacionalização de matérias-primas e combustíveis, equipamentos, resolver o problema da energia, o problema alimentar, possuir e melhorar uma estrutura econômica abrangente e multifacetada.
+
+2 Realizar a modernização e informatização da economia popular, transformando a economia do país em uma economia baseada no conhecimento, especificamente, automatizar e inteligentizar todos os processos de produção, despersonificar as fábricas e empresas, renovar a economia popular com tecnologia moderna, elevar todos os setores para um nível de ponta, realizar a integração da ciência e tecnologia e produção em todos os setores da economia popular, estabelecendo em grande escala a indústria de alta tecnologia.
+
+3 Orientar o desenvolvimento econômico para que o povo desfrute de uma vida rica e civilizada, especificamente, que o desenvolvimento econômico do país seja para a melhoria do bem-estar do povo, resolver todos os problemas que surgem na construção econômica com base nas demandas autônomas e nos interesses do povo, fornecer excelentes condições de vida e trabalho e condições de vida material e cultural para os trabalhadores, enfocar e concentrar esforços no desenvolvimento da agricultura, pesca, e indústria leve, que servem diretamente à vida do povo.
+
+#### 9 Plano de Desenvolvimento Econômico Nacional da Coreia
+
+O estabelecimento do sistema de gestão econômica socialista na Coreia começou com o direcionamento do Presidente Kim Il Sung. Seguindo a direção de recuperação e desenvolvimento da economia popular do Partido dos Trabalhadores da Coreia, a Coreia deu grande impulso à construção econômica do país, estabelecendo o plano econômico popular de um único ano em 1947 e 1948 e o plano econômico popular de dois anos de 1949 a 1950, para revigorar e desenvolver a economia popular e estabelecer a base para a economia nacional autônoma.
+
+O plano econômico popular de 1947 visava eliminar o caráter colonial resultante do longo domínio colonial do Japão e estabelecer a base para o desenvolvimento autônomo da economia nacional. O plano econômico popular de 1948 visava garantir a recuperação da indústria pesada enquanto promovia a indústria leve, especialmente a indústria local, produzindo em massa os bens de primeira necessidade para a população, acelerando rapidamente o desenvolvimento da economia rural para garantir os alimentos dos residentes e as matérias-primas industriais.
+
+Durante a fase de execução do plano econômico do povo de dois anos de 1949 a 1950, o objetivo era preparar o terreno para uma economia nacional independente, mas o plano teve que ser interrompido devido ao início da Guerra da Coreia. Além disso, em 1951, um plano econômico de guerra foi estabelecido para restaurar e desenvolver a economia popular destruída e garantir a produção de suprimentos militares e agrícolas. Para isso, um plano anual foi estabelecido a cada ano. A partir de 1954, um plano econômico popular de três anos pós-guerra foi estabelecido e a reconstrução pós-guerra foi intensificada. Como resultado das grandes construções industriais e obras de reconstrução realizadas pelo enorme investimento do estado durante este período, o setor industrial se desenvolveu rapidamente.
+
+Com base nesses fundamentos, foi estabelecido um plano de desenvolvimento econômico popular de cinco anos (1957-1961) para completar a construção básica do socialismo a partir do período de recuperação da economia popular até o período de reforma técnica. Graças à execução bem-sucedida deste plano, a base para a industrialização socialista foi estabelecida na Coreia, e a Coreia transformou-se num estado industrial-agrícola socialista.
+
+Em setembro de 1961, no 4º Congresso do Partido, o 1º plano de sete anos foi anunciado, e após sete anos de luta intensa, a industrialização socialista foi realizada e o sistema econômico nacional independente foi estabelecido. Com base nisso, entramos no período de execução do plano de seis anos para realizar tarefas mais altas, e tanto a produção industrial como a agrícola ultrapassaram o plano, conseguindo resultados satisfatórios em termos de quantidade e qualidade.
+
+Durante o período do 2º plano de sete anos (1978-1984), houve um progresso notável no aumento do rendimento rural e do volume de carga, e acontecimentos revolucionários ocorreram no desenvolvimento da indústria nacional, como a construção de usinas termelétricas, produção de ferro, aço e chapas de aço.
+
+Ao entrar nos anos 90 do século XX, a Coreia enfrentou seu período mais difícil, cuja adversidade era difícil de imaginar do exterior. Durante a "Marcha da Fome" e a "Marcha Forçada", a economia nacional chegou a um ponto em que era impossível implementar o plano econômico, e a economia sofreu um golpe fatal. O povo teve que superar as dificuldades apertando o cinto. Foi neste momento que apareceram os modelos que mantiveram a linha econômica da era militar, como o "Espírito de Resistência" e o "Fogo de Vitoriosa Ascensão".
+
+Desde então, a Coreia teve que superar várias pressões do exterior e foi difícil estabelecer uma estratégia econômica de longo prazo. No final dos anos 80, o Presidente Kim Jong Il exigiu que o plano fosse algo que pudesse ser implementado, o que significa que o plano pode ser corrigido. Embora os números planejados existam, os números conhecidos no exterior são apenas relativos. Os números absolutos são mantidos secretos do exterior. Esta medida originou-se do desejo de não dar ao mundo externo um espaço para pressionar a Coreia. Em 2016, com a realização do 7º Congresso do Partido dos Trabalhadores da Coreia, a economia coreana atingiu um ponto de viragem significativo e foi estabelecida uma nova estratégia de desenvolvimento econômico de cinco anos. Foi recuperada a era em que a economia nacional poderia ser promovida de acordo com o plano. O Presidente Kim Jong Un enfatizou repetidamente que o plano econômico da Coreia deve ser implementado sob a liderança unificada do gabinete. O Comitê de Planejamento Estadual da Coreia é o órgão responsável pela implementação concreta.
+
+#### 10 Recursos e infraestrutura básica da Coreia
+
+A Coreia está adjacente ao continente chinês e a linha de fronteira tem 1.369,37 km de comprimento. A península coreana tem três lados, oeste, leste e sul, em contato com o mar. No oeste, está de frente para a China com o Mar Amarelo no meio, no leste, está de frente para as ilhas japonesas com o Mar do Leste no meio, e no sul, está em contato com o Mar do Sul. Essas condições geográficas são favoráveis para a conexão com o continente, o desenvolvimento do transporte marítimo e a indústria pesqueira.
+
+As características geográficas da Coreia do Norte incluem muitas montanhas e rios, além de uma longa linha costeira. As áreas montanhosas ocupam 80% do território nacional, sendo a maioria delas formada por colinas e terrenos de baixa montanha, enquanto as terras de média e alta montanha ocupam uma menor parte.
+
+A Coreia do Norte é um país riquíssimo em recursos minerais subterrâneos. Até agora, foram descobertos cerca de 400 tipos de minerais, dos quais pelo menos 200 têm valor econômico. Há muitos minerais metálicos e não metálicos, incluindo ouro, cobre, chumbo, zinco, magnesita, grafite, fluorita e calcário.
+
+A diversidade e abundância de recursos minerais subterrâneos é uma das características marcantes da Coreia do Norte. Existem milhares de minas de diferentes minerais, o que é incomum para um país de pequena área como a Coreia do Norte. As principais minas de metais ferrosos incluem Musan, Hye Ryong, Lee Won, Heocheon, Deokseong, Deokhyeon, Cheondong, Ryongwon, Eunryul, Jaeryong, Taetan, Songrim, Heungsan, Cheonggye e Sinwon.
+
+As minas de metais não ferrosos estão distribuídas por todo o país. As minas de ouro estão localizadas em Bucheon, Seoncheon, Geumya-Jeongpyeong, Woonsan, Dongchang, Daeyudong, Cheonma, Sooan, Holdong, Woongjin, Rokyeon e Hoechang. As minas de cobre estão localizadas em Hyesan, Gapsan, Shinpa, Holdong, Unheung, Ryongam, Bupo e Sangnong. As minas de chumbo e zinco estão localizadas em Geomdeok, Sungcheon, Eunpa, Majeon, Changpyeong e Rokyeon. As minas de níquel estão localizadas em Buyoon, Samhae, Jeongpyeong, PanGyo e Ongjin. As minas de pedra estão localizadas em Manpo, Unheung e Gapsan. As minas de manganês estão localizadas em Kimhwa, Cheolwon, Buryeong, Myeongcheon, Suncheon e Junghwa.
+
+Existem também muitos minerais não metálicos. O grafite pode ser encontrado nas minas de 8 de Agosto, Taechon e Deokseong. A fluorita pode ser encontrada nas minas de Namgye, Lee Won, Daehung e Geumcheon. O talco pode ser encontrado nas minas de Sinwon e Pyeongsan. O amianto pode ser encontrado na mina de Gwangcheon. A tiza pode ser encontrada na mina dos jovens de 5 de Dezembro. O calcário pode ser encontrado nas minas de Sukju, Youngyu, Dongam, Ssangyong, Ryongyang, Daehung, Baekbawi, Namgye, Jangsan, Suncheon, Seongsan, Munmuri, Cheongnyong, Sangwon e Buraesan.
+
+As florestas ocupam cerca de 80% do território da Coreia do Norte, com cerca de 65% delas sendo florestas de coníferas. Na Coreia do Norte, a criação de florestas é a primeira etapa do desenvolvimento florestal, e a área de recursos florestais tem aumentado a cada ano através do plantio de árvores. Os principais locais de exploração florestal incluem Ryeongsu e Yugok em Samjiyon, Yupyeong e Yeonam em Baekam, Daepyeong e Baekja em Bocheon, Sangjang em Eunheung, Pungseo e Gapsan.
+
+Os recursos pesqueiros, especialmente o desenvolvimento de recursos marinhos, também estão progredindo ativamente. Existem recursos biológicos marinhos, como peixes, caranguejos, camarões, polvos, moluscos, mamíferos marinhos e vegetação marinha. Além disso, existem recursos minerais marinhos, como ilmenita e hematita, recursos minerais sedimentares e recursos minerais de rochas básicas, como carvão, bauxita e magnesita. Existem mais de 80 tipos de elementos químicos marinhos, incluindo sal. Os recursos espaciais marinhos incluem a superfície do mar, o espaço subaquático, o leito do mar e o espaço costeiro para a construção de portos, cidades marítimas e terras recuperadas. Há também recursos energéticos marinhos (também conhecidos como energias renováveis), como energia das marés, energia das ondas e correntes marinhas. Na Coreia do Norte, uma nação marítima, a indústria pesqueira está sendo desenvolvida de forma abrangente, com a pesca, a maricultura e a aquicultura sendo desenvolvidas juntas, e a produção e o processamento de frutos do mar estão intimamente ligados para equilibrar o desenvolvimento da indústria pesqueira.
+
+Cerca de 80% da produção pesqueira da Coreia do Norte ocorre no Mar do Leste. As espécies mais comuns pescadas no Mar do Leste incluem bacalhau-polar, anchova, flatfish, puffer, carpa prateada, goby, arenque, truta, lula, etc. No Mar do Oeste, anchovas, gobies, sardinhas, sardinhas espanholas, linguados, polvos e moluscos como ostras, mexilhões e amêijoas são comumente capturados. Além disso, a pesca marinha no Mar do Oeste é complementada por algas marinhas e outros frutos do mar.
+
+Os meios de transporte na Coreia do Norte são principalmente assegurados por ferrovias, rodovias e portos. As ferrovias estão conectadas por todo o país e a eletrificação das ferrovias foi alcançada, completando gradualmente a rede ferroviária. Existem fábricas e empresas relacionadas à ferrovia, como a Kim Jong-tae Electric Locomotive Joint Venture, a Wonsan Railway Vehicle Joint Venture, a Raheung Railway Factory, a Raheung Concrete Sleep Factory, a Chongjin Railway Factory, a Chongjin Vehicle Parts Factory, a Kujeon Railway Factory, a Pyeongyang Vehicle Repair Factory.
+
+As rodovias incluem as rodovias Pyeongyang-Wonsan (década de 1970), Pyeongyang-Kaesong (década de 1980), Pyeongyang-Hyangsan (década de 1990) e Pyeongyang-Nampo (início dos anos 2000). As estradas de primeira classe incluem Pyeongyang-Sinuiju, Pyeongyang-Manpo, Sariwon-Haeju, Wonsan-Uoam (Sunbong), Wonsan-Goseong, Wonsan-Kimhwa e North Chong-Hyesan. As estradas de segunda classe são entre as sedes provinciais, as estradas de terceira classe são entre as sedes provinciais e as sedes de condados, as estradas de quarta classe são entre as sedes de condados e as sedes de distritos, as estradas de quinta classe são entre as sedes de distritos e as estradas de sexta classe são entre vilas em distritos.
+
+Os portos incluem Rajin, Chongjin, Heungnam e Wonsan no Mar do Leste, e Nampho e Haeju no Mar do Oeste. As rotas fluviais mais utilizadas são os rios Amrok, Daedong, Chongchon e Jaeryong. A indústria de energia é sempre enfatizada como um projeto de construção importante, principalmente usinas hidrelétricas e térmicas.
+
+Existem várias usinas hidrelétricas, incluindo a usina de Jangjin, a usina de Bujon, a usina de Heocheon, a usina de Geumjin e a usina de Kumenya em Hamgyeong do Sul, a usina de Buryeong, a usina de Seodusu e a usina de Orangcheon em Hamgyeong do Norte, e a usina de Tongcheon, a usina de Anbyeon Youth, a usina de Naepyeong, a usina de Wonsan Youth e a usina de Wonsan Civil em Gangwon. A província de Ryanggang tem a usina de Samsu e a usina de Baekdu Mountain Hero Youth, e a província de Jagang tem a usina de Jangja, a usina de Ganggye Youth, a usina de Unbong, a usina de Wiwon, a usina de Heungju e a usina de Huicheon. Pyeongan do Norte tem a usina de Sufung e a usina de Taechon, Pyeongan do Sul tem a usina de Daedong e a usina de Ryongwon, Pyongyang tem a usina de Namgang, e Hwanghae do Norte tem a usina de Ryeseonggang.
+
+Usinas térmicas incluem a usina de Chongjin e a usina de Sunbong na região leste, enquanto a região oeste possui usinas hidrelétricas e térmicas, com as usinas térmicas sendo mais prevalentes. Em Pyongyang, existe a usina de Pyeongyang e a usina de Dongpyeongyang, e em Pyeongan do Sul existem a usina de Bukchang, a usina de Cheongcheongang e a usina de Suncheon.
+
+Existem também usinas de comporta como a usina de Seongcheon, a usina de Bonghwa, a usina de Suncheon, a usina de Mirim e a usina de Hyangsan.
+
+Além disso, muitas pequenas usinas foram construídas em todas as cidades e condados.
+
+No setor de telecomunicações, a Coreia do Norte começou a instalar dispositivos de comutação automática de telecomunicações em todas as províncias desde o início dos anos 90, após a conclusão da produção interna dos dispositivos e a implementação do software de sistema. O Centro Internacional de Telecomunicações é responsável pela função de telecomunicações internacionais, e o Escritório de Correios Internacionais realiza o intercâmbio internacional de correio.
+
+No século 21, o sistema de telefonia móvel também foi estabelecido, e o número de assinantes está aumentando. Atualmente, já existem 7 milhões de assinantes, tornando-se um importante meio de comunicação.
+
+#### 11 Orçamento Nacional
+
+O sistema financeiro da Coreia do Norte é um sistema financeiro socialista, no qual o Ministério das Finanças elabora o orçamento nacional e estabelece um sistema de gestão financeira para as empresas de acordo com o sistema financeiro socialista. Isso é realizado através de um plano financeiro básico, que inclui o orçamento central e o orçamento local.
+
+O sistema financeiro é dividido em finanças nacionais e cooperativas, dependendo da diferença de propriedade. As finanças nacionais são baseadas na propriedade nacional, que representa as finanças socialistas. As finanças nacionais consistem no orçamento nacional, nas finanças setoriais e empresariais da economia popular. As finanças cooperativas são compostas por finanças de cooperativas agrícolas, finanças de cooperativas de produção, finanças de cooperativas pesqueiras e finanças de cooperativas de conveniência. Além disso, é dividido em finanças centralizadas e locais, dependendo da afiliação administrativa.
+
+No sistema de gestão financeira da Coreia do Norte, todos os departamentos de gestão financeira, desde o Ministério das Finanças do Gabinete até o departamento de gestão financeira de instituições e empresas, formam um único sistema e se movem juntos de acordo com as regras e a ordem estabelecidas pelo Estado. O Ministério das Finanças conduz a orientação unificada e o negócio geral para a elaboração, execução, liquidação e consolidação do orçamento nacional com base na linha e política do partido.
+
+O orçamento do Estado socialista se torna o plano financeiro básico que regula a economia geral do país. O sistema orçamentário nacional deve ser organizado com base no princípio da centralização, e a relativa independência e criatividade das localidades devem ser garantidas na composição e alocação dos fundos orçamentários. Além disso, é organizado de acordo com a estrutura dos órgãos de soberania de cada nível.
+
+A estrutura do orçamento nacional diz de onde vem a receita do orçamento nacional. Na sociedade socialista, a receita orçamentária tem como fonte a acumulação interna da economia popular, a renda pessoal e outras rendas. Entre eles, a acumulação interna da economia popular forma a base, e essa parte é principalmente a acumulação interna formada pelas empresas estatais.
+
+A fonte de receita do orçamento nacional é principalmente a acumulação interna do setor industrial. No entanto, os impostos não são a fonte de receita do orçamento nacional. Na Coreia do Norte, onde o sistema tributário foi completamente abolido em 1974, é importante notar que se tornou um país sem impostos.
+
+As formas de receita do orçamento nacional incluem receita de transações, lucro de empresas estatais, lucro de cooperativas, receita de aluguel de imóveis, contribuição do seguro social, receita de venda de propriedades e diferenças de preços, e outras receitas.
+
+O dispêndio do orçamento nacional também é importante. O gasto do orçamento do Estado socialista é composto por despesas de defesa, despesas da economia popular, despesas de políticas socioculturais e despesas de gestão nacional. A elaboração do orçamento nacional envolve a preparação e submissão de planos financeiros e orçamentos de despesas de instituições, empresas e setores da economia popular, a elaboração e revisão de projetos de orçamento de órgãos do governo central e local, e a deliberação e aprovação de projetos de orçamento pelos órgãos de soberania supremos e locais.
+
+Os números de receitas e despesas do orçamento nacional anunciados pela Coreia do Norte em 2018 podem ser úteis. Ou seja, "A receita do orçamento nacional foi executada em 101,4% e a despesa do orçamento nacional foi executada em 99,9%."
+
+"47,6% do total dos gastos foram revertidos para o desenvolvimento da economia popular, expandindo a capacidade de produção de energia e ampliando os resultados da autonomia nos setores de metalurgia e indústria química, aumentando a produção de carvão e cereais, e contribuindo para elevar o nível qualitativo de vários equipamentos elétricos e produtos da indústria leve." "Com um investimento nacional de 104,9% em comparação com o ano anterior para expandir grandes projetos de construção, a construção da cidade de Samjiyon, a construção da área turística costeira de Wonsan Kalma, a construção das usinas de Orangchon e Puchon foram fortemente promovidas, e a construção de modernos ranchos de ovelhas em ilhas é apenas o início do apoio financeiro para a construção de importantes metas nacionais." "O investimento no setor científico e tecnológico aumentou 107,4% em comparação com o ano anterior, promovendo o desenvolvimento da ciência e tecnologia e contribuindo para a ativação da economia popular, produzindo resultados de pesquisa valiosos."
+
+"Destinou 36,4% do total de gastos para o pleno desenvolvimento da cultura socialista, melhorando as condições e o ambiente de educação, reforçando o setor de saúde e contribuindo para o desenvolvimento do esporte e das artes literárias."
+
+"Direcionou 15,8% do total de gastos para fortalecer a defesa nacional e proteger firmemente a soberania do país e a causa socialista, contribuindo para o fortalecimento do poder de combate das forças revolucionárias e a modernização da estrutura produtiva autônoma e dos processos produtivos da indústria militar."
+
+#### 12 Melhoria da estrutura do setor econômico, garantindo o equilíbrio entre setores
+
+A estrutura econômica da Coreia é multifacetada, abrangendo todos os setores da economia, como indústria pesada, indústria leve e economia rural, e a indústria de defesa ocupa um lugar importante na estrutura econômica coreana.
+
+Na era do presidente Kim Il-sung, priorizou-se o desenvolvimento da indústria pesada, enquanto a indústria leve e a agricultura também foram desenvolvidas simultaneamente, como um pilar fundamental da construção econômica socialista.
+
+Na era do presidente Kim Jong-il, na Coreia, a política militarista foi implementada, concentrando todos os esforços na construção da defesa. A diretriz para a construção econômica dessa época era o desenvolvimento prioritário da indústria de defesa, enquanto a indústria leve e a agricultura também eram desenvolvidas simultaneamente.
+
+A indústria de defesa se desenvolveu com base no desenvolvimento da indústria pesada já estabelecida. A indústria pesada, incluindo carvão, eletricidade, metalurgia, maquinaria, química e processamento de madeira, garante a produção autônoma de todos os meios de produção necessários para a defesa e o desenvolvimento econômico do país. Portanto, a indústria pesada da Coreia ocupa a parte mais importante no sistema industrial da Coreia. Recentemente, a indústria da informação também está sendo amplamente aceita como um importante setor econômico.
+
+A indústria leve na Coreia está distribuída equitativamente entre as regiões centrais e periféricas, e setores como têxteis, calçados, cerâmica e alimentos são basicamente autossuficientes. No entanto, em comparação com a indústria pesada, a indústria leve está significativamente atrasada, e a qualidade dos produtos da indústria leve ainda está no nível antigo, não conseguindo fornecer os produtos nacionais que as pessoas precisam. Nos últimos anos, o desempenho do setor de indústria leve tem melhorado constantemente, e o desenvolvimento do setor de alimentos é particularmente rápido. No entanto, em geral, ainda está em um estágio inicial.
+
+A questão agrícola é a área que o país mais enfatiza. O problema da alimentação tem sido uma dor de cabeça para o governo coreano. A maior parte da Coreia é montanhosa, a área agrícola é gravemente insuficiente, e embora a reforma do solo esteja em andamento, a autossuficiência em alimentos ainda é uma tarefa pendente. A Coreia enfatiza a produção de alimentos de acordo com as condições locais, organizando o cultivo de arroz em áreas planas e de batatas e milho em áreas montanhosas. No entanto, devido à degradação das sementes e à grave escassez de fertilizantes químicos, não foi possível atingir a meta de produção de alimentos. Recentemente, mais esforços têm sido dedicados à indústria pecuária, com gado, cabras, porcos, patos, galinhas, coelhos e avestruzes desempenhando um papel complementar na alimentação. A fruticultura também começou a receber atenção, e a produção de frutas, como maçãs, tem aumentado em várias áreas, ajudando a diversificar a dieta.
+
+Ao olhar a estrutura econômica geral, cada setor está se esforçando para melhorar as condições e maximizar a funcionalidade do setor. No entanto, a produção nacional total não está aumentando porque o desenvolvimento de cada setor não está em equilíbrio. Isso leva à falta de finanças do Estado e afeta diretamente os gastos normais de cada setor. Se os setores não conseguem garantia do Estado, eles têm que encontrar maneiras de resolver o problema por conta própria, o que torna a vida ainda mais difícil ao serem ofuscados por alguns setores especiais. Quando os setores especiais monopolizam a maior parte dos recursos do Estado, a parte que retorna para cada setor diminui e o equilíbrio inevitavelmente se desfaz.
+
+O presidente Kim Jong-un teve um relatório na 8ª Conferência Representativa do Partido dos Trabalhadores da Coréia, "Vamos reorganizar completamente nossa força interna e abrir um novo caminho para avançar ao superar todas as dificuldades". Ele ordenou que o comportamento privilegiado do setor especial fosse proibido e que o gabinete deveria regular exclusivamente os recursos do Estado e acelerar a construção econômica do país.
+
+#### 13 Modernização e Informatização da Economia Nacional
+
+O termo mais usado na Coréia do Norte é modernização e informatização. Isso pode ser interpretado como uma forte ênfase e promoção ativa a nível nacional. Modernizar a economia do povo significa melhorar a tecnologia atrasada com tecnologia avançada e aumentar o nível de equipamentos técnicos da economia do povo. Informatizar a economia do povo significa aceitar e aplicar a tecnologia da informação em todas as atividades econômicas, incluindo produção e gestão.
+
+A 7ª Conferência Representativa do Partido dos Trabalhadores da Coréia destacou a estratégia de desenvolvimento de cinco anos para cada setor no futuro, isto é, a indústria elétrica, a indústria do carvão, a indústria metalúrgica, o transporte ferroviário, a indústria de máquinas, a indústria química, a construção e a indústria de materiais de construção, todos os campos devem realizar a modernização e informatização.
+
+À medida que a modernização e a informatização estão sendo promovidas rapidamente em todos os setores da economia do povo neste momento, a demanda por equipamentos modernos está aumentando. A modernização enfatizada pela Coréia do Norte não é a modernização por força de outros, mas a modernização baseada em sua própria força e tecnologia, e é a modernização que garante a produção de quantidade e qualidade com pouca mão de obra. Portanto, cada setor da economia do povo deve desenvolver e garantir a produção de mais equipamentos de ponta para realmente realizar a modernização e informatização.
+
+O indicador concreto para transformar a economia do país em uma economia do conhecimento é automatizar, inteligenciar e desumanizar o processo de produção e fazer da indústria de alta tecnologia a indústria pilar da economia do conhecimento.
+
+O termo mais usado nas fábricas e empresas da Coréia do Norte é "renovação moderna". O termo mais usado na universidade é "informatização". A modernização e a informatização se tornaram palavras quase comuns, e os resultados da renovação moderna são exibidos com orgulho. Embora o autor, que é leigo em tecnologia, não tenha qualificação para avaliar o nível de modernização e informatização, é claro que eles têm um objetivo e estão correndo juntos para realizá-lo.
+
+#### 14 Construção econômica na era Songun da Coréia
+
+A chamada era Songun da Coréia se refere à era da política Songun realizada durante o governo do presidente Kim Jong-il. A construção econômica na era Songun deu origem à construção econômica Songun. A linha de construção econômica Songun, em resumo, é "desenvolver principalmente a indústria de defesa e desenvolver a indústria leve e a agricultura ao mesmo tempo".
+
+Para entender como a era Songun da Coréia começou e como a linha foi estabelecida para salvar a economia nela, é necessário primeiro olhar para o contexto histórico. O presidente Kim Jong-il propôs a linha revolucionária Songun, continuando a direção revolucionária Songun do presidente Kim Il-sung. Em outras palavras, ele definiu este período como o período de construção do socialismo com o princípio de priorizar o militar e antecipar o militar, e a cortina da era Songun se abriu desde então.
+
+No final do século XX, por volta da década de 80 até o início da década de 90, países que mantinham um sistema socialista em todo o mundo enfrentaram crises de colapso. Isso causou um impacto significativo na economia da Coreia do Norte. Naquela época, a Coreia do Norte dependia principalmente do mercado socialista para resolver matérias-primas e materiais necessários para a construção econômica, e por isso não prestava atenção em mercados fora do bloco socialista. No contexto da desaparição súbita do mercado socialista, surgiram muitos problemas ao tentar adaptar-se e lidar com mercados de economia de mercado para a obtenção das mesmas necessidades. Tiveram que ajustar a estrutura de exportação e enfrentaram várias complicações no método de transação, bem como em termos de conceitos e aspectos técnicos, incapazes de acompanhar as demandas dos tempos.
+
+Por outro lado, as forças imperialistas lideradas pelos Estados Unidos concentraram seus ataques na Coreia do Norte, que continuou a defender a autonomia e o socialismo, e intensificaram gradualmente o bloqueio econômico, uma forma de isolar e reprimir a Coreia do Norte. A mudança de situação e condições teve um grande impacto no desenvolvimento econômico e na vida das pessoas na Coreia do Norte. Além disso, após vários desastres naturais consecutivos, a Coreia do Norte teve que passar pela chamada "Marcha da adversidade".
+
+Completei meu doutorado em economia na Universidade Kim Il Sung e escrevi uma tese chamada "Construção econômica da era militar da Coreia do Norte e prática". Se resumirmos a linha de construção econômica da era militar, é a apresentação dos requisitos principais e as práticas para resolver corretamente a combinação de construção de defesa, construção econômica e questões da vida do povo em um momento de crise doméstica e externa.
+
+O período de implementação da linha de construção econômica da era militar pode ser visto como o principal período de liderança de Kim Jong-il desde meados dos anos 90 até a fase completa de liderança de Kim Jong-un em 2017. Em 21 de abril de 2018, na 3ª reunião do 7º Comitê Central do Partido dos Trabalhadores da Coreia, foi declarado que a missão da linha de paralelismo entre a construção de força nuclear e a construção econômica foi concluída, e assim terminou a era militar.
+
+A linha paralela de construção de forças nucleares e construção econômica também deve ser vista como uma continuação e desenvolvimento da política militar de Kim Jong-il. Entrando em uma nova fase de desenvolvimento, apresentou novos métodos de acordo com as demandas dos tempos e deu direção para concentrar todos os esforços na construção econômica. A Coreia do Norte pode ser vista como tendo feito uma grande transição da política militar para a política civil, demonstrando a vontade de concentrar todos os esforços na construção econômica. Portanto, chegamos a um ponto onde não temos escolha a não ser construir a economia. Em qualquer caso, a construção econômica é uma tarefa importante que a Coreia do Norte deve necessariamente realizar. Claro, a Coreia do Norte ainda enfatiza a importância da indústria de defesa, que se alinha com a teoria de que não pode prosseguir com a construção econômica sem depender de uma poderosa força de defesa.
+
+#### 15 Vamos seguir sorrindo mesmo que o caminho seja difícil
+
+"Vamos seguir sorrindo mesmo que o caminho seja difícil" é um slogan que reflete bem a realidade da Coreia do Norte. Ao mesmo tempo que revela a vontade indomável do povo norte-coreano, cheia de serenidade mesmo diante das dificuldades, também encoraja a crença de que eles podem superar qualquer obstáculo. Os norte-coreanos, mesmo passando pela "Marcha da adversidade", mantiveram-se unidos sob o slogan "Se o Partido decide, nós fazemos", e têm lutado e superado as dificuldades.
+
+Um exemplo típico é o início dos anos 90, quando a Coreia do Norte estava passando pela "Marcha da adversidade", e os jovens de Pyongyang foram totalmente mobilizados para transportar cargas pesadas, construindo uma rodovia de 42 km de Pyongyang até Nampo com as próprias mãos. Este caminho, criado superando o período mais difícil, foi chamado de "Estrada dos Heróis da Juventude", e foi então que o slogan "Vamos seguir sorrindo mesmo que o caminho seja difícil" surgiu.
+
+A determinação inabalável dos jovens da força de assalto, que não se retiram diante das dificuldades, mas resistem com boca fechada, tem encorajado as pessoas em todo o país. Uma forma de propaganda surgiu para apoiar os membros da força de assalto juvenil, que envolvia realizar performances em locais de trabalho para aumentar o moral. Os grupos de arte nacionais também organizaram vários shows, um método que alivia a fadiga do trabalho e incentiva a eficiência. O som de canções ressoando em locais de trabalho pode ser considerado uma maneira única de incentivar o trabalho na Coreia. É um slogan que permite vislumbrar a intenção de superar todas as adversidades e vencer o bloqueio internacional com alegria.
+
+A Coreia do Norte está trabalhando para estabelecer uma economia auto-suficiente, construindo bases para matérias-primas, combustível e energia, e modernizando e digitalizando fábricas e empresas para estabelecer um sistema de produção independente. As áreas pioneiras da economia popular e as áreas de indústria básica foram capazes de encontrar seus próprios nichos e alcançar sucesso um após o outro. Em condições onde não se pode confiar na ajuda externa, não há escolha a não ser confiar na própria força. No campo, foi estabelecida uma base para satisfazer a demanda por grãos, e na indústria leve, a tecnologia foi atualizada e a nacionalização de matérias-primas e suprimentos foi ativamente promovida para garantir a produção de bens de consumo de alta qualidade para o povo. Os norte-coreanos sempre dizem: "Estamos sob sanções há muito tempo, nunca esperamos ajuda ou mudança de estrangeiros". É uma expressão concreta do espírito de autossuficiência baseada na ideologia Juche, e mostra o espírito de alegria em encontrar alegria e prazer nela.
+
+#### 16 "Marcha de Dificuldades" e "Marcha Forçada"
+
+A Coreia do Norte enfrentou severas dificuldades econômicas no final dos anos 90 do século XX. Desastres naturais contínuos foram a principal causa, mas o impacto do fim da Guerra Fria foi igualmente devastador. No final dos anos 80 e início dos anos 90, países socialistas, incluindo a União Soviética e a Europa Oriental, abandonaram o socialismo e escolheram o caminho da economia de mercado, enquanto a Coreia do Norte aderiu mais firmemente ao socialismo. Os países ocidentais, liderados pelos Estados Unidos, impuseram várias sanções e pressões, mas a Coreia do Norte, que defende a independência e a autossuficiência, não dobrou sua vontade de manter o socialismo, tornando-se o principal alvo dos Estados Unidos.
+
+Além disso, a maioria da mídia previu que a Coreia do Norte logo entraria em colapso após a morte do presidente Kim Il-sung em 1994. Além disso, em 1994, 1995 e 1996, o país sofreu danos consecutivos de desastres naturais. Enfrentando dificuldades econômicas internamente e vários bloqueios e sanções externamente, a Coreia do Norte teve que superar severas dificuldades econômicas. A falta de alimentos era tão grande que as pessoas estavam descascando e comendo a casca de árvores, e algumas pessoas estavam fervendo e comendo as raízes do arroz. A escassez de alimentos foi seguida por uma escassez de energia, o que paralisou a produção e o transporte ferroviário, que não pôde operar normalmente, colocando o país em uma situação extremamente difícil. Em resumo, o país estava em um estado de paralisia.
+
+Em 1 de janeiro de 1996, na virada do ano novo, três grandes meios de comunicação da Coreia do Norte, o Rodong Sinmun, a Korean People's Army e o Chongnyon Jonwi, emitiram um editorial conjunto de Ano Novo. No editorial, eles discutiram a "Marcha de Dificuldades", pedindo às pessoas que "superassem as dificuldades atuais, lembrando-se do espírito inabalável e das lágrimas da resistência contra o exército japonês, dividindo o pouco alimento que tinham".
+
+Esta luta dolorosa para superar obstáculos continuou por mais de três anos, até que a vida atingiu o fundo do poço. O esforço para superar isso foi extremamente árduo. O país estava em crise, o povo tinha que superar todos os tipos de dor, e a dificuldade era indescritível.
+
+Desde então, 1997 e 1998 foram anos de situação um pouco melhorada, mas como a Coreia do Norte sofreu grandes golpes anteriormente, a "Marcha Forçada" inevitavelmente teve que acontecer. Durante a época da "Marcha Forçada", a Coreia do Norte teve que se apoiar apenas no poder de autossuficiência e unidade do povo para superar todas as dificuldades. Os norte-coreanos dizem que não têm outra opção a não ser trabalhar ainda mais para evitar que os desafios voltem a acontecer, pois a "Marcha da Tribulação" e a "Marcha Forçada" são nada menos que períodos de grande sofrimento que eles prefeririam esquecer.
+
+#### 17 Lutas de 70 dias, 200 dias, 80 dias
+
+Dentro do sistema de economia planejada, a Coreia do Norte costuma conduzir ofensivas em momentos cruciais, mobilizando a população nacional para atingir os objetivos pré-estabelecidos e gerando efeitos positivos em eventos significativos do partido e do país.
+
+Os confrontos de 70 dias, 200 dias, entre outros, são campanhas conduzidas nacionalmente para atingir objetivos de produção intensiva. Durante esses períodos de campanha, grandes avanços são feitos na construção econômica popular, com a mobilização do partido e do povo. A abordagem é definir um objetivo de batalha e elaborar medidas para sua realização.
+
+A Batalha de 70 dias foi realizada em preparação para o 7º Congresso do Partido dos Trabalhadores da Coreia e aconteceu de 23 de fevereiro a 2 de maio de 2016. Durante este período, o objetivo não era apenas a construção de novos edifícios, mas também o treinamento intensivo de membros do partido, funcionários e trabalhadores na ideologia e fé. Portanto, unidades que alcançaram resultados inovadores durante o período de 70 dias foram celebradas e incentivadas com cartas de felicitações do Comitê Central do Partido, promovendo competição, aprendizado e troca de experiências.
+
+Durante este período, muitas fábricas e empresas anteciparam a implementação do plano econômico popular do primeiro semestre do ano. Houve um aumento na produção industrial de 144% em comparação com o mesmo período do ano anterior, um aumento de 1,6 vezes na produção industrial.
+
+"Em todo o país, mais de 1.640 unidades de produção ultrapassaram a meta de 70 dias estabelecida pelo Partido, das quais mais de 560 anteciparam a implementação do plano econômico popular do primeiro semestre do ano e mais de 70 cumpriram o plano econômico popular do ano inteiro. Em comparação com o início de abril, o número de unidades que cumpriram a meta de 70 dias aumentou em mais de 850, e o número de unidades que cumpriram o plano econômico popular do primeiro semestre e do ano inteiro aumentou em mais de 230 e 50, respectivamente."
+
+Após a Batalha de 70 dias, a Coreia do Norte entrou diretamente na Batalha de 200 dias, que ocorreu de 1º de junho a 15 de dezembro. Isso foi praticamente o equivalente a realizar um movimento de trabalho durante quase um ano inteiro. Durante este período, a região norte de Hamgyong do Norte sofreu danos inesperados por inundação, o que inevitavelmente forçou a mudança do foco principal da Batalha de 200 dias para a recuperação da inundação. A Coreia do Norte mobilizou todos os recursos do país e, em apenas dois meses, construiu mais de 11.900 casas, resolvendo o problema do inverno para as pessoas das áreas afetadas. Portanto, a Batalha de 200 dias foi concluída mais cedo do que o esperado.
+
+No fervor da autossuficiência, matérias-primas, materiais e equipamentos foram desenvolvidos e produzidos em todo o país, a modernização à moda norte-coreana foi promovida e mais produtos de indústria leve com marcas norte-coreanas foram produzidos, fortalecendo o alicerce da economia independente, que tem autossuficiência como seu sustento.
+
+"A produção na área industrial superou a meta de produção do plano de batalha de 200 dias em 119% durante o período de luta de 200 dias, e milhares de empresas industriais superaram o plano econômico anual do povo antes do prazo. Na Combinação de Mineração de Carvão de Kujang, 136,3% do valor total da produção industrial e 117% do plano de produção de carvão foram alcançados em um período de batalha de 70 dias, e 119,8% do plano econômico do povo e 118,4% do montante da contribuição orçamentária do estado foram superados em um período de batalha de 200 dias. Na Combinação de Cimento de Suncheon, o valor total da produção industrial superou 154,7% e o montante da contribuição orçamentária do estado excedeu 215,2%. Em Gangwon, o Plano de Produção Industrial total juntamente com a Usina de Energia Popular de Wonsan superou 151%, o plano de receita do orçamento local 120,5%, e o plano de produção nacional de grãos foi cumprido. Em Hweryong, a produção industrial excedeu 120%, e a receita do orçamento local aumentou 104%. A Usina de Energia de Heecheon também cumpriu o plano de produção de energia em relação ao ano anterior em 106,8% e o plano de contribuição orçamentária do estado em 169%. No setor de transporte ferroviário, o plano de transporte de carga ferroviária foi superado em 121%, na indústria de máquinas, o valor total da produção industrial superou 142,7%, e a contribuição orçamentária do estado foi excedida em 126,6%"
+
+A batalha de 80 dias, que começou em 12 de outubro de 2020 e durou até o final do ano, foi outra grande batalha econômica para dar as boas-vindas ao 8º Congresso do Partido dos Trabalhadores da Coreia. Na época, a Coreia estava focada em projetos de controle de epidemias, mas quando o tufão nº 9 atingiu toda a Coreia, a região de Geomdeok em Hamgyong do Sul foi seriamente danificada. Para complicar, havia grandes dificuldades em lidar com a COVID-19 e a reconstrução de áreas danificadas pelo tufão ao mesmo tempo, mas a tarefa desafiadora de alcançar os objetivos estratégicos econômicos estabelecidos no 7º Congresso do Partido estava à vista.
+
+O jornal "Rodong Sinmun" publicou um editorial no dia 13 apelando a todos os membros do partido, funcionários e trabalhadores para lutarem com determinação. "A primeira tarefa da batalha de 80 dias é conter a epidemia e tomar o controle da reconstrução de áreas atingidas por tufões e chuvas fortes, e cumprir a tarefa de aumentar a produção na agricultura e na indústria."
+
+Através da batalha de 80 dias, a Coreia não só quebrou o recorde de zero infecções ao reforçar as medidas de controle de epidemias, como também construiu 20 mil novas casas nas áreas atingidas, protegendo a vida e a segurança do povo. Apesar dos grandes danos à economia, o país superou dificuldades sem precedentes através da unidade de todos. "Esta conquista será inscrita no registro de batalhas de nosso partido, deixando uma página de orgulho."
+
+#### 18 Deixe o som de "Viva ao Partido do Trabalho" ecoar a partir da mesa de jantar
+
+O presidente Kim Jong Un enfatizou na cerimônia de concessão de comendas do Partido e do Estado aos participantes da 3ª Conferência de entusiastas do setor de pesca do Exército do Povo Coreano em 28 de dezembro de 2015 que "o som da colheita marítima deve ressoar no mar transformado em um mar dourado, e o cheiro do mar deve preencher todas as casas do país, e o som de 'Viva ao socialismo', 'Viva ao Partido do Trabalho' deve vir da mesa de jantar do povo".
+
+Isso é um apelo para realizar a instrução dos líderes ancestrais de fornecer carne e arroz ao povo, e para tornar a vida cotidiana simples do povo mais próspera.
+
+No meio da vida difícil que continua, resolver o ressentimento no coração do povo que experimentou a marcha de dificuldades é o trabalho que o partido deve fazer. A ideia é criar uma sociedade onde as pessoas possam sentar-se à mesa de jantar, comer até ficarem satisfeitas e apreciar a comida.
+
+Isso é para ensinar aos membros do partido, funcionários de instituições e líderes de empresas o princípio de que não é suficiente apenas falar para as pessoas seguirem o partido, deve-se inspirá-las a fazer isso de dentro de seus corações. O poder do povo só pode crescer se emergir do coração das pessoas, e simplesmente gritar slogans não pode ganhar seus corações. Portanto, os líderes do partido devem trabalhar com um coração que pensa no povo.
+
+O presidente Kim Jong-un não apenas apela para a prática de respeito e amor pelo povo, mas também ordena que toda a sociedade se esforce junto. Ele exige que os líderes tomem a iniciativa de apresentar políticas para o povo e se preocupem com todos os aspectos da vida do povo. Só se o povo seguir o partido de coração é que o partido pode liderar o povo e correr em direção a metas mais altas.
+
+Espera-se que as demandas específicas do presidente Kim Jong-un para construir "o país do povo" e enfatizar o serviço abnegado para o povo sejam implementadas na prática.
+
+#### 19 eliminar a dependência das importações também é uma defesa do socialismo
+
+Fortalecer a autossuficiência é uma exigência que o país sempre enfatiza. Olhando para a realidade das empresas, é mais rápido e melhor importar produtos acabados do exterior quando se trata de encurtar o tempo e melhorar a eficácia da modernização e reconstrução de máquinas e equipamentos. A produção doméstica ainda não é suficiente para satisfazer a crescente demanda do povo. A produção é escassa e é ainda mais difícil fazer produtos de boa qualidade. Além disso, há uma grave escassez de bons materiais brutos na Coreia, o que é uma realidade com a qual muitas empresas se deparam. Neste contexto difícil, as empresas têm o direito de importar, e a primeira coisa que pensam é na importação. Se você depende apenas da importação, desenvolverá o mau hábito de não querer mudar a situação com suas próprias mãos. Em outras palavras, quanto maior a dependência das importações, maior a distância do caminho de fortalecer a própria força e de fazer o próprio. No final, só levantando seu próprio sistema industrial é que você pode produzir mais produtos que atendam aos gostos do povo.
+
+Na transição onde a demanda do estado e a realidade da empresa se contradizem, as empresas tendem a garantir a qualidade e a rentabilidade das importações. Além disso, com o reforço das sanções internacionais, o custo das importações está aumentando e o custo original está aumentando significativamente. A demanda para fazer seus próprios produtos com suas próprias matérias-primas e materiais é justa, e isso é necessário para resgatar economicamente a vida insuficiente de forma planejada. Mesmo que seja desconfortável, as empresas devem se concentrar em economizar dinheiro e aumentar a taxa de nacionalização, para que possam realmente melhorar suas habilidades, mesmo que demore um pouco.
+
+Aumentar os impostos não é a solução. O importante é institucionalizar as unidades que precisam importar, para que apenas as coisas absolutamente necessárias e as coisas que não podem ser feitas por si mesmas sejam importadas, e assim, cultivar o hábito de fazer as coisas com sua própria força.
+
+O estado tomou a grande decisão de corrigir o problema de dependência das importações pelas empresas, e assim, o vento da nacionalização começou a soprar, e exemplos disso estão ocorrendo em vários setores. No caso dos materiais de construção, a fábrica de azulejos Chollima começou a operar e, com exceção de um pequeno número de azulejos, a proibição de importação foi emitida, e como resultado, os azulejos domésticos estão vendendo bem no mercado.
+
+Para usar alimentos como exemplo, muitas fábricas e empresas já estão produzindo alimentos, o que melhorou a qualidade dos produtos. Agora, a maioria dos alimentos vendidos em supermercados e lojas são produzidos localmente. Esses esforços acabaram por aumentar a qualidade dos produtos e a confiança do povo nos produtos nacionais.
+
+Essas mudanças são medidas necessárias para manter o sistema socialista, através do qual estamos aprimorando nossa tecnologia e aumentando nossa capacidade produtiva.
+
+Dependendo das importações em uma situação onde matérias-primas, equipamentos e tecnologia são escassos, pode ser a maneira mais rápida de normalizar a produção. No entanto, a Coreia do Norte insiste que se não curar a "doença da importação", não poderá desenvolver a economia nacional para sempre. Embora haja algumas contradições, no nível nacional, é inevitável encorajar a nacionalização. Isso é especialmente verdadeiro em uma situação onde as sanções estrangeiras não estão sendo suspensas. Mesmo se cooperarmos em nível nacional, as indústrias que precisam de equipamentos e matérias-primas estão sendo restringidas. Se o produto precisa ser importado do exterior mesmo após o fim do prazo de cooperação, ele também não pode realizar a nacionalização completa. O pedido é reduzir a dependência de países estrangeiros tanto quanto possível. Por outro lado, para introduzir tecnologia avançada, deve-se considerar o efeito da nacionalização e o aprimoramento da qualidade para fazer a melhor escolha na premissa de que é possível trazer matérias-primas e equipamentos estrangeiros.
+
+#### 20 Mantenha os pés em sua própria terra e os olhos no mundo
+
+Entrando no saguão da Biblioteca Eletrônica da Universidade Kim Il Sung, a caligrafia do Presidente Kim Jong Il chama a atenção: "Mantenha os pés em sua própria terra e os olhos no mundo". Este slogan foi o conteúdo de uma carta escrita pelo presidente Kim Jong Il para a universidade em preparação para a inauguração da biblioteca em abril de 2010. Ele enfatiza a importância de ter uma perspectiva global, mesmo com um fundo de patriotismo. Este é um apelo para entender rapidamente os avanços científicos e tecnológicos do mundo e trabalhar para realizar conquistas científicas e tecnológicas em nosso próprio caminho para a construção de uma potência socialista, mantendo um forte espírito de auto-estima nacional.
+
+Atualmente, esse slogan está sendo amplamente aplicado em todos os campos do país, não apenas nas universidades. Na Coreia do Norte, onde o termo "perspectiva global" é usado como um clichê, isso significa que não devemos ser como um sapo no fundo de um poço, devemos ir ao exterior para ver e ler muito sobre materiais avançados estrangeiros.
+
+Os professores e cientistas da universidade agora são solicitados a publicar artigos de pesquisa em publicações internacionais de autoridade de classe SCI e a realizar ativamente intercâmbios acadêmicos internacionais para adotar avanços de pesquisa avançados até alcançar o nível internacional. Obviamente, a adoção de tal maneira não é suficiente, é enfatizado que é ainda mais importante torná-lo nosso.
+
+Quando eu estava cursando o doutorado na Universidade Kim Il Sung, fiz várias propostas à universidade sobre a troca acadêmica internacional. Em 2011, a universidade organizou uma conferência acadêmica internacional para celebrar o seu 60º aniversário, e eu também ajudei ativamente a organizar esse fórum. Naquela época, convidamos mais de 80 acadêmicos estrangeiros de 14 países, incluindo China, Rússia, Vietnã e Alemanha. Além da Universidade Kim Il Sung, acadêmicos de instituições renomadas na Coreia, como a Academia de Ciências Sociais da Coreia e a Universidade Kim Chaek de Tecnologia, participaram.
+
+O fórum foi dividido em nove subseções e foi a primeira vez na história da Coreia que uma conferência acadêmica internacional dessa escala foi realizada. No início, havia preocupações, mas após o término do fórum, ele recebeu avaliações positivas em nível nacional e a Universidade Kim Il Sung passou a organizar uma conferência acadêmica internacional todos os anos. Além disso, começou a formar relações de irmandade com universidades famosas de outros países e a estimular a troca entre universidades, e os acadêmicos coreanos começaram a se adaptar ao ambiente acadêmico internacional. Os apresentadores coreanos inicialmente pareciam rígidos, mas depois se tornaram naturais em suas apresentações e, ao se tornarem fluentes em inglês, provocaram reações positivas dos acadêmicos estrangeiros.
+
+Ao mesmo tempo, a Universidade Kim Il Sung participa anualmente de fóruns acadêmicos internacionais realizados no exterior, sendo o mais representativo deles o "Fórum do Rio Tumen", organizado pela Universidade de Yanbian, na China. A Academia de Ciências Sociais da Coreia também envia pesquisadores para o exterior todos os anos para participar regularmente de fóruns internacionais organizados pela Associação de Estudos Coreanos. Tem havido uma tendência de ativação, tanto convidando acadêmicos estrangeiros quanto enviando acadêmicos locais para o exterior para criar uma atmosfera de intercâmbio acadêmico. Palestras especiais também são organizadas convidando especialistas e acadêmicos estrangeiros no Salão de Ciência e Tecnologia da Coreia e na Universidade Popular, e é comum ver a participação ativa do mundo acadêmico coreano. Além disso, é uma prática comum enviar especialistas e acadêmicos para o exterior para treinamento ou estudo de curto prazo, e esta é uma forma organizada pelas universidades ou instituições do país anfitrião.
+
+O Ministério do Comércio da China convidou gestores envolvidos em aduanas e comércio na Coreia para intercâmbios de curta duração que combinam educação e inspeção, e a Universidade de Yanbian estabeleceu um programa de médio prazo para treinar executivos no campo econômico da Coreia. Algumas universidades e instituições de pesquisa estão enviando especialistas para o exterior para desenvolver projetos específicos juntos, e há casos em que estão trazendo projetos estrangeiros para a Coreia para serem concluídos por especialistas coreanos. Em resumo, acadêmicos e especialistas coreanos estão fazendo progressos em várias áreas, como melhorar suas habilidades por meio do intercâmbio acadêmico internacional, publicar artigos em revistas acadêmicas internacionais e criar apresentações de alta qualidade para conferências.
+
+#### 21 Sistema bancário comercial da Coreia
+
+O sistema financeiro da Coreia foi estabelecido dentro da estrutura básica da economia socialista, baseado no princípio centralizado, e o Banco Central está conduzindo negócios de financiamento de forma planejada.
+
+O sistema bancário estabeleceu uma rede de agências bancárias que vai do centro para as províncias, cidades e condados, e está organizando e operando negócios financeiros em sua própria região sob a orientação unificada do Banco Central. O sistema bancário é composto pelo Banco Central e pelo Banco de Comércio, considerando as funções domésticas e estrangeiras. O Banco Central, como um banco emissor, especializa-se principalmente em negócios financeiros domésticos e mantém contato com outros bancos emissores estrangeiros. O Banco de Comércio é uma instituição bancária que se especializa em negócios financeiros estrangeiros, gerencia unificadamente moedas estrangeiras e realiza negócios de liquidação internacional e crédito com outros bancos estrangeiros. Para realizar a especialização em transações bancárias financeiras, bancos como o Banco Agrícola e o Banco de Financiamento da Construção foram estabelecidos.
+
+Mudanças recentes também estão sendo observadas no sistema financeiro da Coreia do Norte, com a aparição de bancos comerciais operados em joint ventures com o exterior. Esses bancos não fazem parte do sistema bancário existente, mas são instituições financeiras criadas por meio de transações com o exterior por entidades influentes. Os principais bancos comerciais incluem o Banco de Comércio, Banco Daesung, Banco Comercial Koreano, Banco Internacional Ilsim, Banco de Desenvolvimento da Unificação Coreana e o Banco do Triângulo Dourado. Além disso, existem vários outros bancos conjuntos, como o Banco Hana, Banco Comercial Popular, Banco Continental e Banco Comercial Manduk. Atualmente, existem mais de 30 bancos comerciais, e sua função principal parece ser a atração de capital estrangeiro, concedendo empréstimos a projetos relevantes para o desenvolvimento econômico sob a sua instituição. Embora a quantidade de fundos seja limitada por enquanto, a utilização de um banco para abrir o negócio financeiro internacional contribuirá para melhorar a segurança e a credibilidade.
+
+Na Coreia do Norte, o limiar para estabelecer um banco comercial ainda não é muito alto, então algumas empresas podem procurar uma maneira de garantir a segurança do capital estrangeiro, não investindo diretamente nas empresas através da joint venture, mas por meio de um banco conjunto, que realiza análises de possibilidade de investimento. As empresas estrangeiras também estão interessadas nesse sistema financeiro e estão interessadas em investir na Coreia do Norte, pois mesmo empresas com pouco interesse na produção de produtos podem se envolver em negócios financeiros com um pequeno capital.
+
+#### 22 Sistema empresarial alternativo e espírito de Cheongsanri
+
+O sistema de negócios alternativos e o espírito de Cheongsanri são um modelo que estabelece o sistema de desenvolvimento econômico da Coreia do Norte e a raiz do desenvolvimento econômico como um representante típico da indústria e da agricultura que surgiram durante a era do presidente Kim Il Sung.
+
+Cheongsanri é uma fazenda cooperativa típica que o presidente Kim Il Sung apresentou na frente agrícola em 1960, e as aldeias rurais em todo o país aumentaram a produção de grãos, seguindo o espírito e o método de Cheongsanri. O espírito de Cheongsanri foi apresentado em 5 de fevereiro de 1960 e foi oficialmente proclamado no 20º aniversário da fundação do partido, em 10 de janeiro de 1965.
+
+A Fazenda Cooperativa Cheongsanri é uma fazenda histórica que o presidente Kim Il Sung orientou 85 vezes. Atrás desta vila, um grande slogan que pode ser visto de longe ainda está gravado. "Vida longa ao espírito e ao método de Cheongsanri!" O espírito e o método de Cheongsanri são a ideia e o método de liderança de uma revolução agrícola cientificamente sintetizada. É um resultado prático que implementa e desenvolve o método de trabalho tradicional do Partido dos Trabalhadores da Coreia, com base na ideia de Juche e na linha de massa revolucionária, de acordo com a nova realidade da construção socialista.
+
+As exigências básicas do espírito e do método de Cheongsanri são: primeiro, ajudar a instituição inferior pela instituição superior, e a pessoa inferior pela pessoa superior, para que todos juntos possam implementar a linha e a política do partido. Segundo, sempre descer para o local, entender a situação real e estabelecer a direção correta para resolver os problemas. Terceiro, em todos os negócios, priorizar os negócios políticos e os negócios com as pessoas, mobilizar a consciência entusiasmada e a criatividade das massas para realizar a tarefa revolucionária proposta.
+
+Diz-se que o presidente Kim Il Sung, que desceu à fazenda, sempre se sentava com os agricultores e ouvia suas opiniões. Os agricultores levantaram a questão de trabalhar o ano inteiro e não conseguir dar dinheiro no final do ano. Kim Il Sung disse que os membros da fazenda não deveriam ser forçados a trabalhar inutilmente e tomou medidas para garantir que os membros da fazenda pudessem levar pelo menos 400 kg por ano, há uma anedota sobre isso.
+
+O sistema alternativo de negócios foi uma nova estrutura de gestão da indústria socialista proposta em 1961 para resolver os problemas do setor industrial, com base na experiência obtida com o espírito e o método Chongsanri que o Presidente Kim Il Sung implementou pela primeira vez em 1960. O presidente Kim Il Sung visitou a fábrica de energia alternativa e analisou as deficiências do sistema empresarial existente e as falhas manifestadas nos métodos de negócios, estabelecendo um sistema de gestão industrial adequado à realidade coreana, que desde então tem sido amplamente usado na frente industrial.
+
+O conteúdo básico do sistema alternativo de negócios é que as fábricas e empresas realizam todas as atividades de negócios sob a orientação coletiva do Comitê do Partido, priorizando o trabalho político e mobilizando as massas produtoras para realizar as tarefas econômicas propostas, e que o superior ajuda o inferior de forma responsável. Em outras palavras, é um sistema de gestão econômica que combina a liderança única do Partido e a direção centralizada e planejada do Estado com as linhas de massas. Aqui, o sistema de gestão de orientação nacional refere-se ao sistema de gestão centrado no gabinete. E todas as fábricas e empresas de todas as áreas industriais devem se alinhar com a direção de desenvolvimento econômico popular proposta pelo Partido e o Estado, recebendo a orientação organizacional do Comitê de Planejamento do Estado.
+
+A nova estrutura de gestão industrial é um método de gestão eficaz para a administração e operação da economia popular, que está de acordo com a natureza do sistema socialista e é apoiado pelas massas trabalhadoras sob a liderança do Partido. É também um método de gestão econômica que está em consonância com o espírito coletivista.
+
+Desta forma, o sistema alternativo de negócios foi estabelecido na gestão industrial, e os Comitês de Gestão Agrícola de Kumpho e os Comitês de Gestão Rural foram estabelecidos como sistemas de orientação agrícola. Juntamente com isso, um sistema unificado que pode garantir a singularidade do planejamento da economia popular sob a direção unificada do Comitê de Planejamento do Estado de central para regional, todos os setores e todas as unidades foi estabelecido, e a especificação do plano foi realizada.
+
+Com o estabelecimento do novo sistema de gestão econômica, foi possível implementar corretamente as exigências das leis econômicas socialistas na gestão econômica e combinar corretamente os incentivos morais políticos e materiais, a direção unificada e a democracia, e foi possível superar o subjetivismo, o formalismo e os preconceitos à esquerda e à direita na gestão econômica.
+
+#### 23 Jovem Nação Poderosa
+
+A ênfase da Coreia no papel dos jovens é mais proeminente do que em outros países. Em todos os canteiros de obras da Coreia, vemos muitos jovens, incluindo construtores militares. Existem milhões de jovens nas organizações de vanguarda juvenil e na Liga da Juventude, e a nação socialista está sendo construída e animada pela juventude fervente dos jovens que desempenham um papel de vanguarda e de ataque.
+
+A Liga da Juventude da Coreia foi fundada em 1946 e foi inicialmente chamada de "Liga da Juventude Democrática da Coreia do Norte". Em 1951, fundiu-se com a "Liga da Juventude Democrática da Coreia do Sul" para se tornar a "Liga da Juventude Democrática da Coreia". Foi renomeada como "Liga da Juventude do Trabalho Socialista" em 1964 e "Liga da Juventude Socialista Kim Il Sung" em 1996. Em 2016, foi novamente renomeada como "Liga da Juventude Kim Il Sung-Kim Jong Il".
+
+No dia 19 de abril de 2015, o presidente Kim Jong Un visitou o canteiro de obras da Usina de Energia Juvenil de Paektu e elogiou o papel dos jovens trabalhadores de assalto. Os jovens trabalhadores de assalto completaram a estrutura do corpo principal da construção da barragem de concreto da primeira usina e a construção do túnel de água da segunda usina, apesar das condições e ambientes desfavoráveis, e construíram as casas dos residentes da área alagada. O presidente Kim Jong Un elogiou a contribuição notável dos jovens trabalhadores de assalto para resolver o problema de energia do país.
+
+Os jovens membros do esquadrão de ataque da Usina de Geração de Energia dos Jovens do Monte Paektu atenderam ao chamado do líder, despertando um forte patriotismo e construindo a usina com suas próprias mãos. Contribuíram para resolver a situação energética do país através de ações concretas, mostrando a imagem da forte nação juvenil única da Coreia. A Coreia definiu o espírito criado pelos jovens durante a construção da Usina de Geração de Energia dos Jovens Heróis do Monte Paektu como "Cultura Juvenil da Arma" e a difundiu por todo o país. Na Coreia, estão inspirando o patriotismo para se tornarem exemplos de tempos que mostram o mundo espiritual dos jovens, o estilo de luta, o grito de guerra contra o Japão, e o idealismo revolucionário.
+
+O apelo do presidente Kim Jong-un, "Confio nos jovens, os jovens confiam em mim, vamos acelerar a construção da nação juntos", despertou grande paixão no trabalho dos jovens de todo o país.
+
+Na Coreia, eles estão pedindo que os jovens não caiam na decadência ou na corrupção, não se tornem pessoas que só conhecem dinheiro, criem uma cultura saudável para os jovens, cantem e dancem de acordo com o sentimento nacional, e mesmo que queiram ser estilosos, devem ser jovens com estilo coreano.
+
+A Cultura Juvenil da Arma define que quanto mais difícil for, mais alto deve-se cantar a canção revolucionária e avançar com vigor. Os guerrilheiros anti-japoneses continuaram vencendo enquanto cantavam a canção revolucionária, mesmo suportando o vento frio e mesmo na montanha onde a bomba explodiu. Os membros do esquadrão de ataque dos Jovens Heróis do Monte Paektu herdaram a tradição dos guerrilheiros anti-japoneses e cantaram "Vamos ao Monte Paektu" e "Não vamos abandonar o espírito revolucionário mesmo se morrermos", mostrando o calor revolucionário, a paixão de luta e o patriotismo. Dizem que quando o óleo se esgotou e a máquina parou, os jovens carregavam a viga no ombro, e quando faltava a broca, quebravam a pedra com a pá, mostrando a paixão patriótica dos jovens ao completar a construção da usina a tempo.
+
+A "cultura juvenil" referida pela Coreia é a cultura da vida socialista, e uma nação juvenil forte significa um país onde essa cultura saudável e abundante existe.
+
+A Coreia se autodenomina uma nação forte em ideologia política, força militar e juventude, e diz que a nação jovem ocupa o lugar mais importante. Isso significa que eles valorizam os jovens e veem o problema dos jovens como o maior problema, assumindo a educação dos jovens. Eles enfatizam que a "fidelidade infinita ao pensamento e obra do líder" e o "espírito de dedicação ao líder" são o núcleo fundamental do caráter espiritual que os jovens devem ter. Além disso, é a política do Partido do Trabalho aumentar a organização dos jovens, a unidade e a capacidade de combate para crescerem como soldados da nova era, sucessores da revolução, tropas de ataque do partido, reservas de comando supremo e estrelas em ascensão.
+
+A 10ª Conferência de Representantes da Liga Juvenil da Coreia foi concluída em 29 de abril de 2021, e em 3 de maio, o editorial do "Rodong Sinmun" avaliou que esta conferência foi um ponto importante que elevou o movimento juvenil coreano a um novo nível. Eles encorajaram o auge do movimento juvenil, dizendo: "Levar o movimento juvenil coreano atual a um novo estágio de desenvolvimento é uma demanda urgente de nossa revolução".
+
+No editorial, foi destacado que "devemos iniciar uma nova fase de crescimento e transformação na revolução, seguindo o caminho apontado pela 8ª Conferência do Partido, e o movimento juvenil deve desempenhar um forte papel combativo". Foi também apontado que "no processo de abrir uma nova fase de crescimento e mudança na revolução, seguindo o curso estabelecido pela conferência do partido, o movimento juvenil deve necessariamente desempenhar um forte papel combativo. Quando o poder enorme da juventude, a força mais vigorosa da sociedade, é totalmente liberado e o movimento juvenil é transformado em uma poderosa força motriz para a construção socialista, a marcha de hoje para a implementação da decisão da conferência do partido se tornará ainda mais vigorosa". Na conferência, foi aprovada uma resolução para alterar o nome da Liga da Juventude, anunciando a remoção da "Ideologia Kim Il-sung - Kim Jong-il" do nome original. Na resolução anunciada em 30 de abril, foi declarado: "O camarada Kim Jong-un percebeu as novas demandas de nossa revolução nacional e do desenvolvimento do movimento juvenil, e instruiu que o nome da Liga da Juventude deveria ser mudado para a Liga da Juventude Patriótica Socialista, refletindo a vontade unânime e a aspiração dos membros da Liga da Juventude".
+
+#### 24 Universidade Kim Il-sung
+
+A Universidade Kim Il-sung foi fundada em 1 de outubro de 1946, sob a iniciativa direta e orientação do Presidente Kim Il-sung, como a primeira universidade do povo na Coreia. Na época, a base do país era muito frágil, mas houve um apelo em todo o país para apoiar a construção da universidade com uma mente e coração unidos para educar os talentos do país.
+
+No momento da fundação, a universidade tinha 7 faculdades, cerca de 60 professores e cerca de 1.500 estudantes. A universidade agora se tornou a maior instituição de educação Juche, com 9 faculdades especializadas, incluindo a Faculdade de Economia, História, Matemática e Física, além de 42 faculdades, 28 institutos de pesquisa e mais de 570 palestras e laboratórios de pesquisa.
+
+Atualmente, a universidade conta com cerca de 3.500 portadores de graus acadêmicos, incluindo 9 acadêmicos, 39 candidatos a acadêmicos e mais de 700 professores e estudiosos do nível de doutorado, e cerca de 6.000 professores e pesquisadores estão envolvidos na educação e na ciência. Na universidade, atualmente existem cerca de 20.000 estudantes de graduação e cerca de 4.000 estudantes de pós-graduação, além de outros estudantes de educação continuada. O curso de graduação é de 4 anos e 6 meses, o mestrado é de 3 anos, o doutorado é de 3 anos, e o programa de pós-doutorado é de 3 anos.
+
+Em 8 de setembro de 1974, uma estátua do Presidente Kim Il-sung foi erguida em Ryongnam Hill, e em 1 de outubro de 2013, uma nova estátua do Presidente Kim Jong-il foi erguida no pátio da biblioteca eletrônica. O campus universitário inclui o Museu Histórico Revolucionário da Universidade Kim Il-sung, a biblioteca eletrônica, as faculdades 1, 2, 3 e 4, o museu de história natural, o ginásio, a piscina e o dormitório dos estudantes.
+
+A atual biblioteca eletrônica foi originalmente fundada pelo Presidente Kim Il-sung em Ryongnam Hill em setembro de 1947, e ele participou da cerimônia de inauguração em outubro de 1948, onde cortou a fita do prédio principal. Esse edifício foi a declaração ao mundo da fundação da Universidade Kim Il-sung. Sob o cuidado do Presidente Kim Jong-il, o edifício principal foi inaugurado como uma biblioteca eletrônica em abril de 2010 por sua direção, tornando-se um símbolo da universidade avançando para o padrão mundial.
+
+O Presidente Kim Jong-il entrou na Faculdade de Economia da Universidade Kim Il-sung em setembro de 1960 e se formou em março de 1964. Isso se tornou o maior orgulho da universidade e está detalhadamente exposto no Museu Histórico da universidade. Durante seus anos de estudante, ele publicou mais de 1.400 trabalhos e concluiu seus estudos com excelentes notas, conforme registrado.
+
+Está escrito no Salão do Histórico que o presidente Kim Il-sung deu mais de 100 orientações no local e mais de 900 diretrizes para o fortalecimento da Universidade de Kim Il-sung. O Presidente Kim Jong-il deu 27 orientações no local e mais de 1.900 ensinamentos valiosos.
+
+Os prédios acadêmicos da Universidade Kim Il-sung são nomeados de acordo com o ano de construção e a ordem numérica. O Edifício 1 foi concluído em 1965, com uma área de construção anual de 46.000 m² e consiste em cinco blocos. A biblioteca de ciências foi concluída em 1970, com uma área de construção anual de 11.900 m², 1.200 lugares para leitura e mais de 2 milhões de volumes. Possui mais de 10 salas de leitura para ciências sociais, ciências naturais e outros. O Edifício 2 foi concluído em 1972, com uma área de construção anual de 52.000 m² e 22 andares, sendo o edifício mais alto de Pyongyang na época. O Museu de História Natural foi inaugurado em 15 de abril de 1976, em comemoração ao 30º aniversário da fundação da universidade, com uma área de construção anual de 2.000 m² e é um prédio de 3 andares.
+
+O ginásio foi concluído em 21 de junho de 1989, possui um andar subterrâneo e 3 andares acima do solo, com uma área total de 100.000 m² e uma área de construção anual de cerca de 20.000 m². Tem 2.000 lugares e o chão pode acomodar 3.000 cadeiras, permitindo grandes reuniões e eventos na universidade. O ginásio permite a prática de vôlei, lonball, softball, netball, tênis de mesa, boxe e wrestling, e também está modernamente equipado para ginástica artística e ginástica aparelhos. Os andares 2 e 3 têm um salão de esportes de 1.500 m², 4 salas de treinamento e mais de 120 grandes e pequenas salas.
+
+O complexo de piscinas foi concluído em 19 de março de 2009, possui um andar subterrâneo e 2 andares acima do solo, com uma área total de 25.000 m² e uma área de construção anual de cerca de 8.300 m², com 760 assentos. Dentro do complexo, há uma piscina com 8 raias e uma piscina infantil que pode realizar competições domésticas e internacionais. Além disso, possui instalações como um playground de água para professores, banheiras de hidromassagem, chuveiros e salas de tratamento. Este complexo é um centro de fitness onde professores e estudantes universitários podem nadar e também é um local de visitação para a universidade, sendo utilizado como roteiro para turistas estrangeiros que visitam Pyongyang.
+
+O Presidente Kim Jong-un visitou a universidade cinco vezes para fortalecê-la e desenvolvê-la como uma universidade de primeira classe mundial, e sugeriu a direção que a universidade deve seguir. Em outubro de 2013, quando a universidade comemorou seu 67º aniversário, ele presenteou 300 casas modernas para professores e pesquisadores na universidade e tirou uma foto comemorativa com os professores e pesquisadores que receberam os presentes. Em 2017, após a conclusão da construção da Rua Ryomyong, ele deu mais de 1.700 novas casas modernas para professores e pesquisadores. Além disso, durante a construção da Rua Ryomyong, ele construiu o Edifício 3, o Edifício 4, o Edifício da Faculdade de Química, o Dormitório 15, o Dormitório 16 e o Restaurante 6 para a universidade.
+
+Em 2016, no 70º aniversário da fundação da universidade, ele enviou uma carta a todos os professores, funcionários e estudantes intitulada "Sobre a missão fundamental da Universidade Kim Il-sung na era da revolução Juche". Na carta, ele sugeriu a direção da construção universitária, dizendo: "A Universidade Kim Il-sung deve manter fielmente a natureza da universidade de nosso líder e nosso general, e da universidade do Partido, e deve cumprir seu dever e missão na luta para antecipar a vitória final da causa da revolução Juche".
+
+A universidade tem todas as disciplinas necessárias e é dividida em ciências sociais e ciências naturais, incluindo departamentos principais e faculdades.
+
+As ciências sociais incluem departamentos de economia, história, filosofia, faculdade de humanidades, direito, estudos estrangeiros, finanças, entre outros. As ciências naturais incluem departamentos de matemática, física, energia, ciências da informação, ciências biológicas, química, ciências ambientais e da terra, geologia, história, ciências dos materiais, automação eletrônica e faculdade de ciências florestais, bem como uma universidade à distância e um departamento de educação.
+
+As universidades abrangentes têm uma tendência crescente de expansão de várias instituições de pesquisa. Estas incluem institutos de pesquisa em tecnologia da informação, materiais eletrônicos, energia, catálise, equipamentos de experimentação científica, análise, indústria biológica, indústria de telecomunicações, nanotecnologia, ciências da educação, entre outros.
+
+O Instituto de Pesquisa da Indústria Biológica tem uma história de 20 anos, consistindo em um grupo de pesquisa com sete professores renomados, incluindo doutores, e mais de 20 jovens e talentosos pesquisadores. O instituto possui instalações experimentais e analíticas de bioquímica, microbiologia, fisiologia, engenharia genética de 1.500m² e uma fábrica de produção de 2.000m² equipada com processos de produção de medicamentos, alimentos saudáveis e cosméticos. No centro de pesquisa, profissionais especializados estão desenvolvendo e pesquisando produtos biológicos e bioprodutos funcionais, e a fábrica está produzindo produtos em três turnos.
+
+No Instituto de Pesquisa da Indústria Biológica, enzimas como fibrinolítico e protease de várias origens e microorganismos benéficos para o corpo humano têm sido produzidos como componentes principais para medicamentos para tratamento e prevenção de doenças do sistema vascular cerebral e do sistema digestivo. A fábrica de farmacêutica do instituto recebeu a certificação GMP de medicamentos da República Popular Democrática da Coreia e também foi altamente avaliada pela CERTIPHARM, uma organização de certificação francesa organizada pela OMC. Está também atuando como uma agência nacional de teste de qualidade para medicamentos, alimentos e cosméticos. Além disso, o Instituto de Pesquisa da Indústria Biológica também desenvolveu produtos de engenharia genética, como uroquinase recombinante, peptídeos ativos do fígado de tubarão e fator de crescimento insulin-like-1, peptídeos analgésicos, que estão atualmente em fase de testes clínicos.
+
+#### 25 Educação de Talentos na Coreia
+
+A Coreia é conhecida como um país que implementa 12 anos de educação gratuita, mas isso é apenas um indicador do nível de educação geralmente recebido pelos jovens. Ao mesmo tempo que implementa a educação obrigatória, a Coreia também se concentra na formação de talentos especiais, tendo estabelecido um sistema de educação para talentos. A Coreia implementa uma educação sistemática que garante firmemente o desenvolvimento do grupo e desenvolve a aptidão e o talento de cada pessoa, desempenhando um grande papel na promoção de talentos excepcionais em campos especializados e na elevação do nível geral da educação em ciência e tecnologia.
+
+Há um sistema de educação para talentos desde a educação geral até a educação superior. No campo da educação geral, é composto pelas Escolas Secundárias Nº 1 em Pyongyang e em cada província.
+
+Na era do Presidente Kim Jong Il, a Coreia estabeleceu uma base de formação de talentos em tecnologia da informação moderna para a formação de talentos em computação, selecionando estudantes talentosos em todo o país para receberem educação profissional em computação desde tenra idade. O sistema da Escola Secundária Nº 1 da Coreia, que está totalmente equipado desde o centro até as regiões, produz resultados nas universidades que oferecem educação especializada. Por exemplo, a Escola Secundária Nº 1 de Pyongyang e as Escolas Secundárias Nº 1 de cada província podem ser vistas como escolas que oferecem educação para talentos no campo da educação geral. Não é surpresa que os alunos da Escola Secundária Nº 1 ganhem a Olimpíada Internacional de Matemática. A maioria dos alunos que se formam na Escola Secundária Nº 1 avança para universidades famosas como a Universidade Kim Il Sung e a Universidade Kim Chaek de Tecnologia, onde recebem uma educação especializada e se tornam talentos importantes para o país.
+
+Todas as universidades, incluindo a Universidade Kim Il Sung, têm cursos de ciências naturais e ajustam o ano letivo de acordo com a realidade. Após a conclusão do curso na universidade, os excelentes alunos que se formaram na Escola Secundária Nº 1 entram no doutorado, onde continuam a receber educação sem interrupção. É comum que os graduados desta escola se tornem doutores aos vinte ou trinta anos, formando a espinha dorsal do avanço científico e tecnológico do país e desempenhando um papel crucial na construção nacional.
+
+Após a libertação, quase 3 milhões de intelectuais foram formados como resultado do esforço em educar talentos desde tenra idade. Este grupo de intelectuais, este exército de talentos em ciência e tecnologia, é a espinha dorsal na construção nacional que visa a plena capacitação científica e tecnológica do povo.
+
+#### 26 Proteção de Marcas na Coreia do Norte
+
+Na Coreia do Norte, existe uma lei de marcas, e os proprietários de marcas registradas têm o direito de proteger seus interesses. A marca registrada é de propriedade de uma organização, empresa, entidade ou cidadão que registrou a marca na autoridade de registro de marcas. As marcas registradas em nome comum são de propriedade conjunta.
+
+A Lei de Marcas da República Democrática Popular da Coreia define os direitos dos proprietários de marcas registradas da seguinte maneira:
+
+- Direito de usar a marca registrada
+- Direito de transferir ou conceder permissão para usar toda ou parte da marca registrada
+- Direito de interromper a violação da marca e de reivindicar indenização por danos
+- Direito de cancelar a marca registrada
+
+O período de proteção da marca é de 10 anos a partir do dia do pedido de registro e pode ser prorrogado. A marca registrada durante o período de proteção pode ser transferida, mas se o registro da marca for cancelado ou a marca não for utilizada por 5 anos a partir do dia do registro, a eficácia do direito da marca será perdida.
+
+Para ter uma marca reconhecida, deve-se registrar durante o período de gestão.
+
+1 Pedido de Registro de Marca
+
+Instituições, empresas, entidades ou cidadãos que desejam registrar uma marca devem criar um documento de solicitação de registro de marca e enviá-lo diretamente ou por correio à autoridade de registro de marcas. Em caso de impossibilidade, pode ser submetido por meios de comunicação eletrônicos, como e-mail ou fax.
+
+Corporações ou cidadãos estrangeiros que desejam registrar uma marca na Coreia do Norte devem enviar um documento de solicitação em coreano à autoridade de registro de marcas por meio de uma agência intermediária. Neste caso, a agência intermediária deve fornecer uma procuração. A data da solicitação de registro da marca é a data em que a autoridade de registro de marcas recebeu o documento de solicitação.
+
+Se uma marca foi exibida em uma feira ou exposição realizada na Coreia do Norte, ela tem prioridade no pedido de registro. Portanto, um pedido de prioridade deve ser feito à autoridade de registro de marcas dentro de 3 meses a partir do dia em que a marca foi exibida.
+
+O direito de prioridade para o registro de uma marca recebido em seu próprio país por uma corporação ou cidadão de outro país é eficaz se os documentos relevantes forem entregues à organização de registro de marca da Coreia dentro de 6 meses a partir do dia em que o recebeu.
+
+O pedido de registro de uma marca que teve seu registro cancelado ou cujo período de proteção expirou é válido um ano após a data de cancelamento do registro ou do fim do período de proteção.
+
+2 Revisão do registro de marca
+
+A organização de registro de marcas faz uma revisão dentro de 6 meses a partir do dia em que recebeu o pedido de registro de marca.
+
+- Símbolos e indicações que não podem ser registrados como marcas
+- Símbolos iguais ou semelhantes a marcas já registradas
+- Símbolos feitos com o nome do país ou seu acrônimo, ou símbolos feitos na forma de emblemas nacionais, bandeiras, medalhas e formas semelhantes
+- Símbolos contrários às leis e moralidade pública da Coreia
+- Símbolos que contêm informações falsas sobre produtos ou serviços
+- Indicações que contêm apenas o nome do produto, composição, características
+- Símbolos de inspeção ou simples numéricos, geométricos
+- Símbolos iguais ou semelhantes a marcas exibidas em exposições, feiras
+- Símbolos que são ou quebram a lei internacional e costumes internacionais como símbolos de organizações internacionais membros da Coreia
+- Símbolos iguais ou semelhantes a produtos bem conhecidos, marcas famosas
+
+Marcas decididas para registro são registradas no Registro de Marcas do Estado e um certificado de registro de marca é emitido para instituições, empresas, organizações e cidadãos que solicitaram o registro de marcas. As marcas registradas são divulgadas através do anúncio oficial de marcas.
+
+#### 27 Proteção dos direitos autorais da Coreia
+
+Na Coreia, os direitos autorais são protegidos pelas leis relacionadas à Constituição Socialista e aos direitos autorais.
+
+1 Escopo dos trabalhos protegidos
+
+Os trabalhos protegidos pela lei de direitos autorais da Coreia são os seguintes.
+
+- Obras criativas como dissertações científicas, romances, poesias
+- Direitos autorais musicais
+- Direitos autorais de artes cênicas como teatro, drama, arte marcial, dança
+- Direitos autorais de artes cênicas como filmes, programas de televisão
+- Direitos autorais de arte como pintura, escultura, artesanato, caligrafia, design
+- Direitos autorais fotográficos
+- Direitos autorais gráficos como mapas, gráficos, desenhos, esquemas, modelos
+- Direitos autorais de software de computador
+
+2 Proteção dos direitos do autor
+
+O titular dos direitos autorais é a pessoa que criou diretamente a obra, ou a pessoa que recebeu os direitos daquele, possuindo direitos morais e patrimoniais sobre a obra.
+
+a) Direitos morais do autor
+
+- O direito de decidir a publicação da obra
+- O direito de revelar seu nome na obra
+- O direito de impedir alterações no título, conteúdo e formato da obra
+
+Os direitos morais do autor pertencem apenas à pessoa que criou a obra e não podem ser transferidos ou herdados, sendo protegidos indefinidamente.
+
+b) Direitos patrimoniais do autor
+
+- O direito de copiar, executar e transmitir a obra
+- O direito de exibir ou distribuir o original ou cópias da obra
+- O direito de criar uma nova obra adaptando a obra por meio de métodos como revisão, arranjo, adaptação, colorização, versão, tradução
+- O direito de editar a obra
+- Os direitos patrimoniais do autor podem ser transferidos total ou parcialmente ou herdados.
+
+c) Período de proteção patrimonial da obra
+
+A obra é protegida até 50 anos após a morte do autor, e o período de proteção dos direitos patrimoniais sobre obras corporativas é de 50 anos a partir da data da publicação da obra. O início do período de proteção é a partir de 1º de janeiro do ano seguinte à publicação da obra ou à morte do autor.
+
+3 Principais conteúdos da proteção de direitos autorais ao utilizar a obra
+
+- Quando empresas, organizações e cidadãos que não são detentores de direitos autorais usam a obra, é necessária a permissão do titular dos direitos autorais.
+- Quando instituições, empresas, organizações e cidadãos receberam permissão ou aprovação para usar a obra, eles devem pagar ao titular dos direitos autorais a taxa estipulada para que o direito de uso possa ser transferido.
+- Em caso de violação dos direitos autorais, é necessário compensar os danos ou assumir a responsabilidade administrativa e criminal.
+
+#### 28 Guia de Política de Investimento da Coreia
+
+1 Legislação Relacionada ao Investimento Estrangeiro (Comitê Permanente da Assembleia Popular Suprema)
+
+- Lei de Investimento Estrangeiro da República Popular Democrática da Coreia (1992.10.5.)
+- Lei de Empresa Conjunta da República Popular Democrática da Coreia (1984.9.8.)
+- Lei de Empresas Conjuntas da República Popular Democrática da Coreia (1992.10.5.)
+- Lei de Empresas Estrangeiras da República Popular Democrática da Coreia (1992.10.5.)
+- Lei de Registro de Empresas de Investimento Estrangeiro da República Popular Democrática da Coreia (2016.1.25.)
+- Lei de Contabilidade de Empresas de Investimento Estrangeiro da República Popular Democrática da Coreia (2016.10.25.)
+- Lei de Arrendamento de Terras da República Popular Democrática da Coreia (1993.10.27.)
+- Lei de Bancos de Investimento Estrangeiro da República Popular Democrática da Coreia (1993.11.24.)
+- Lei de Imposto de Empresas de Investimento Estrangeiro e Estrangeiros da República Popular Democrática da Coreia (1993.1.31.)
+- Lei de Falência de Empresas de Investimento Estrangeiro da República Popular Democrática da Coreia (2000.4.19.)
+- Lei de Controle de Câmbio da República Popular Democrática da Coreia (1993.1.31.)
+- Regulamento de Designação de Nome de Empresas de Investimento Estrangeiro (1999.3.13. Gabinete)
+- Regulamento de Trabalho de Empresas de Investimento Estrangeiro (1999.5.8. Gabinete)
+- Regulamento de Gerenciamento Financeiro de Empresas de Investimento Estrangeiro (1999.12.4. Gabinete)
+- Lei da Zona de Comércio Econômico de Rason da República Popular Democrática da Coreia (1993.1.31.)
+- Lei da Zona Econômica de Hwanggumpyong e Wihwa Island da República Popular Democrática da Coreia (2011.12.3.)
+- Lei da Zona Industrial de Kaesong da República Popular Democrática da Coreia (2002.11.20.)
+- Lei da Zona Turística de Mount Kumgang da República Popular Democrática da Coreia (2002.11.23.)
+- Lei de Zonas de Desenvolvimento Econômico da República Popular Democrática da Coreia (2013.5.29.)
+- Lei de Contratos Econômicos Externos da República Popular Democrática da Coreia (1995.2.22)
+- Lei de Arbitragem Econômica Externa da República Popular Democrática da Coreia (1999.7.21.)
+- Regulamento de Introdução de Tecnologia Avançada para Empresas de Investimento Estrangeiro (2001.8.24. Gabinete)
+- Regulamento para Estabelecimento e Operação de Escritórios de Direito de Investimento Estrangeiro (2004.11.17.)
+
+2 Objetivo da formulação da política de investimento estrangeiro
+
+A política constante da República Popular Democrática da Coreia é expandir a cooperação e o intercâmbio econômico com personalidades de todo o mundo que respeitem a soberania da Coreia e sejam amigáveis, com base nos princípios de independência, paz, amizade e benefícios mútuos.
+
+O objetivo da política de investimento estrangeiro estabelecida na República Popular Democrática da Coreia é desenvolver a economia nacional e melhorar a vida das pessoas ao atrair investimentos estrangeiros com base na economia nacional autônoma e absorver tecnologia avançada.
+
+3 Setores permitidos para investimento estrangeiro, setores incentivados e políticas de incentivo correspondentes
+
+Investidores estrangeiros podem investir em vários setores, como indústria, agricultura, construção, transporte, comunicações, ciência e tecnologia, turismo, comércio, finanças, etc., da República Popular Democrática da Coreia.
+
+Os setores de investimento estrangeiro e políticas preferenciais encorajados pelo governo são claramente definidos em leis e regulamentos relacionados, como a "Lei de Investimento Estrangeiro", "Lei de Empresa Conjunta", "Lei de Empresas Conjuntas" e "Lei de Empresas Estrangeiras".
+
+Especialmente, os setores de investimento incentivados incluem setores de tecnologia avançada, infraestrutura, pesquisa científica e desenvolvimento tecnológico, e produção de produtos com competitividade internacional. Após o registro como uma empresa incentivada para investimento estrangeiro, é possível receber benefícios, como isenções de imposto de renda, preferência no uso da terra e prioridade em empréstimos bancários.
 
 ...
 
