@@ -80,6 +80,34 @@
     - [9 Cooperação Econômica Norte-Sul](#9-cooperação-econômica-norte-sul)
       - [9-1 Distrito Industrial de Kaesong](#9-1-distrito-industrial-de-kaesong)
       - [9-2 Turismo Internacional de Kumgangsan](#9-2-turismo-internacional-de-kumgangsan)
+    - [10 Sistema Fiscal](#10-sistema-fiscal)
+    - [11 Escritórios de Advocacia](#11-escritórios-de-advocacia)
+- [Parte 3: Economia da Coreia após a conclusão da linha de progresso paralelo](#parte-3-economia-da-coreia-após-a-conclusão-da-linha-de-progresso-paralelo)
+  - [1 Reunião de Abril](#1-reunião-de-abril)
+    - [1 Terceira Reunião do 7º Comitê Central do Partido dos Trabalhadores da Coreia](#1-terceira-reunião-do-7º-comitê-central-do-partido-dos-trabalhadores-da-coreia)
+    - [2 Conclusão da missão do caminho Byungjin](#2-conclusão-da-missão-do-caminho-byungjin)
+    - [3 A principal tarefa do partido é a construção econômica](#3-a-principal-tarefa-do-partido-é-a-construção-econômica)
+    - [4 Economia Autossuficiente](#4-economia-autossuficiente)
+    - [5 Política de fomento à ciência, tecnologia e educação](#5-política-de-fomento-à-ciência-tecnologia-e-educação)
+  - [2 Aderência ao princípio socialista na construção econômica](#2-aderência-ao-princípio-socialista-na-construção-econômica)
+    - [1 Formas de posse dos meios de produção](#1-formas-de-posse-dos-meios-de-produção)
+    - [2 Características do trabalho coletivo](#2-características-do-trabalho-coletivo)
+  - [3 Enfatizando a criatividade corporativa na gestão econômica](#3-enfatizando-a-criatividade-corporativa-na-gestão-econômica)
+    - [1 Sistema de custos independentes para fábricas e empresas](#1-sistema-de-custos-independentes-para-fábricas-e-empresas)
+    - [2 Autonomia na produção](#2-autonomia-na-produção)
+    - [3 Competição Socialista](#3-competição-socialista)
+    - [4 Respeito pelos princípios econômicos](#4-respeito-pelos-princípios-econômicos)
+  - [4 Autoconfiança é a chave para o desenvolvimento econômico](#4-autoconfiança-é-a-chave-para-o-desenvolvimento-econômico)
+    - [1 Autonomia sob sanções](#1-autonomia-sob-sanções)
+    - [2 Supremacia da Autossuficiência](#2-supremacia-da-autossuficiência)
+  - [5 Impulsionando o Desenvolvimento Econômico com Ciência e Tecnologia como Força Motriz](#5-impulsionando-o-desenvolvimento-econômico-com-ciência-e-tecnologia-como-força-motriz)
+    - [1 Enfatizando a ciência, o talento, a educação](#1-enfatizando-a-ciência-o-talento-a-educação)
+    - [2 Ciência, Tecnologia e Economia do Conhecimento](#2-ciência-tecnologia-e-economia-do-conhecimento)
+    - [3 Palácio da Ciência e Tecnologia](#3-palácio-da-ciência-e-tecnologia)
+    - [4 Ampliação da Educação à Distância](#4-ampliação-da-educação-à-distância)
+    - [5 Integração de Educação, Pesquisa Científica e Produção](#5-integração-de-educação-pesquisa-científica-e-produção)
+    - [6 Instituto de Desenvolvimento de Tecnologia Avançada](#6-instituto-de-desenvolvimento-de-tecnologia-avançada)
+  - [6 Alguns problemas e desafios que estão sendo resolvidos](#6-alguns-problemas-e-desafios-que-estão-sendo-resolvidos)
 
 Prólogo da Recomendação
 
@@ -1883,6 +1911,490 @@ Finalmente, os símbolos da cooperação econômica entre o Norte e o Sul, o Com
 No discurso de Ano Novo de 2019, o presidente Kim Jong-un declarou sua disposição de retomar o Complexo Industrial de Kaesong e o turismo no Monte Kumgang sem quaisquer pré-condições ou compensações. O presidente Moon Jae-in também tem pesquisado maneiras de evitar sanções para reabrir o Complexo de Kaesong, mas não conseguiu obter permissão dos EUA e, finalmente, não conseguiu apresentar uma solução. Em 12 de junho de 2018, a primeira reunião histórica entre a Coreia do Norte e os EUA ocorreu em Singapura, abrindo a porta para a compreensão mútua. No entanto, a segunda reunião, realizada em Hanói, Vietnã, de 27 a 28 de fevereiro de 2019, terminou em colapso, extinguindo a chama da esperança.
 
 As relações intercoreanas também congelaram rapidamente. A Coreia do Norte expressou várias insatisfações com a Coreia do Sul, acreditando que o Sul não estava cumprindo os acordos intercoreanos por não impedir os desertores de lançar balões e por danificar a dignidade da Coreia do Norte. Em 16 de junho de 2020, a Coreia do Norte demoliu o prédio do escritório de ligação intercoreano construído no Complexo Industrial de Kaesong, cortando todas as relações entre o Norte e o Sul. Alguns meios de comunicação estrangeiros acreditam que isso se originou da avaliação da Coreia do Norte de que não pode confiar na cooperação da Coreia do Sul. O Sul não cumpriu as "Declarações de Panmunjom 4.27" e "Pyongyang 9.19", apesar de ter assinado, e o "Escritório de Comunicação Conjunta Intercoreana" se tornou um "objeto de decoração" sem função, do ponto de vista norte-coreano. Desde então, o presidente dos EUA mudou, mas ainda não apresentou uma política clara para a Coreia do Norte. Além disso, não parece fácil encontrar um ponto de acordo entre o Norte e o Sul em um curto período de tempo, dado que o mandato do presidente Moon Jae-in está quase no fim.
+
+Segundo uma reportagem da Agência Central de Notícias da Coreia do Norte de 23 de outubro de 2019, o presidente Kim Jong Un, durante uma visita às instalações turísticas do distrito de Kumgangsan, declarou que "os edifícios construídos em nossa terra devem ser construções coreanas com forte identidade nacional e devem ser criados de acordo com nossos sentimentos e hobbies". Nesse sentido, apontou que os hotéis e instalações turísticas construídos anteriormente com investimento sul-coreano estão "tão desgastados que só de olhar para eles o humor se deteriora", e instruiu que todos devem ser demolidos. Em seu lugar, devem ser construídas novas instalações de serviço modernas ao estilo coreano, que harmonizem com a beleza natural de Kumgangsan.
+
+Ao mesmo tempo, ele corrigiu o equívoco de que Kumgangsan é um símbolo e um bem compartilhado das relações Norte-Sul, enfatizando que Kumgangsan é um recurso turístico da Coreia do Norte. Ele criticou duramente a gestão negligente da Área Cultural e Turística, que causou grandes danos à paisagem. Enquanto recebia com prazer a visita dos compatriotas do sul para ver Kumgangsan, ele repreendeu a ideia errônea de deixar a gestão para o sul.
+
+O presidente Kim Jong Un apontou a necessidade de construir o Distrito de Turismo Marítimo de Kosung, o Distrito de Turismo de Escalada de Pirobong, o Parque Costeiro de Haegumgang e a Área de Cultura e Esportes. Ele pediu primeiro que fosse elaborado um plano de desenvolvimento abrangente para a Área de Turismo de Kumgangsan, revisado e construído em 3 a 4 etapas por ano. A área de turismo de Kumgangsan deve ser construída como um famoso ponto turístico mundial, e deve ser conectada à área de turismo costeiro de Kalmahae e à pista de esqui de Masikryong para criar uma área de turismo cultural.
+
+#### 10 Sistema Fiscal
+
+A Coreia do Norte aboliu o sistema fiscal em 1974 e desde então não utiliza o conceito de impostos para seus cidadãos. Não há imposto de renda a ser pago por empresas ou indivíduos. No entanto, o sistema fiscal é implementado para empresas estrangeiras que investem na Coreia do Norte. No entanto, como o número de empresas estrangeiras oficialmente registradas e ativas na Coreia do Norte é pequeno, é difícil dizer que o sistema fiscal foi generalizado ou normalizado.
+
+A Coreia do Norte tem regulamentações legais claras sobre o sistema fiscal para empresas estrangeiras e investidores. Os tipos de impostos incluem imposto de renda corporativo, imposto sobre vendas, imposto comercial, imposto sobre recursos, imposto de renda individual, imposto sobre propriedade, imposto sobre heranças e impostos locais. Se investir em setores incentivados pelo governo norte-coreano, uma política de incentivos fiscais é aplicada.
+
+Os tipos e taxas de impostos estabelecidos na "Lei de Impostos para Empresas Estrangeiras e Investidores" são os seguintes:
+
+Imposto de renda corporativo: em geral, aplica-se uma taxa de 25% sobre o lucro líquido, 14% nas Zonas Econômicas Especiais e 10% nos setores incentivados.
+
+Imposto de renda individual: uma taxa de 5 a 30% é aplicada sobre a renda.
+
+Imposto comercial: uma taxa de 2 a 10% é aplicada sobre a receita total. Varia de acordo com o setor.
+
+Construção, transporte, setor de energia: 2 a 4% da receita total
+
+Setor financeiro e de seguros: 3 a 5% da receita total
+
+Comércio, comércio, entretenimento, alimentação, recreação, serviços de conveniência como setor de serviços: 4 a 10% da receita total
+
+Imposto sobre vendas: de 1 a 15% da receita de vendas de produtos ou da receita de entrega de construção
+
+Os impostos sobre vendas de produtos e bens de luxo restritos pelo estado são de 16 a 50% da receita de vendas de produtos.
+
+Imposto sobre heranças: uma taxa de 6 a 30% é aplicada ao valor herdado.
+
+Imposto sobre a propriedade: aplicado de acordo com o valor da propriedade registrada. 1% para edifícios, 1,4% para navios e aviões
+
+Imposto sobre recursos: determinado pelo gabinete de acordo com o tipo de recurso, geralmente de 0,1 a 1%
+
+O imposto sobre recursos restritos pelo estado é de 2 a 8%.
+
+Minério de ferro: 25%
+
+Imposto Municipal: empresas estrangeiras pagam 1% do total mensal da folha de pagamento, estrangeiros pagam 1% do total da renda mensal
+
+Imposto sobre veículos: dependendo do número de assentos ou da capacidade de carga, de 1.500 a 15.000 won (na moeda norte-coreana)
+
+#### 11 Escritórios de Advocacia
+
+Há atualmente quatro escritórios de advocacia na Coreia do Norte, além de dois escritórios de patentes e marcas registradas. Os escritórios de advocacia incluem o Escritório de Advogados Koryo, o Escritório de Consultoria Jurídica de Economia Externa da Coreia do Norte, o Centro de Serviços Jurídicos Externos, e o Escritório de Advogados Ryongnamsan. O Escritório de Advogados Koryo é uma organização sob o Judiciário da Coreia do Norte, o Escritório de Consultoria Jurídica de Economia Externa da Coreia do Norte é uma organização sob o Ministério da Economia Externa, o Centro de Serviços Jurídicos Externos é uma organização sob a Academia de Ciências Sociais da Coreia do Norte e o Escritório de Advogados Ryongnamsan é uma organização sob a Universidade Kim Il Sung.
+
+Essas organizações estão atualmente em uma fase em que um pequeno número de advogados começou a trabalhar, e ainda não há muitos advogados em tempo integral. A aquisição da qualificação de advogado é constituída por pessoas que se especializaram em direito na universidade. Advogados coreanos raramente defendem em tribunais domésticos, mas há casos em que representaram individualmente a Coreia como advogados em instituições internacionais de arbitragem. Prevê-se que um sistema de exames para a profissão de advogado será introduzido em breve, à medida que aumentam os casos de cooperação com investidores estrangeiros e os conflitos.
+
+Geralmente, a representação de patentes e direitos autorais são vistas juntas, sendo os representantes mais notáveis a Agência de Intercâmbio de Recursos Intelectuais de Pyongyang, sob a Comissão Nacional de Ciência e Tecnologia, e o Escritório de Patentes e Marcas de Moranbong. Essas empresas de serviços jurídicos estão em um estágio de pioneirismo em seus negócios, iniciando intercâmbios com escritórios de advogados estrangeiros e faculdades de direito, e estabelecendo relações de cooperação mútua. Eles também estão organizando atividades de intercâmbio e ampliando seu círculo de conexões. Especialmente no campo do registro de marcas, é um setor que pode começar imediatamente e já se sabe que empresas relacionadas estão visitando Pyongyang, realizando palestras e estabelecendo acordos de negócios concretos.
+
+Na Universidade Kim Il Sung, há a única faculdade de direito da Coreia. A Faculdade de Direito é responsável por redigir todas as propostas de leis relacionadas às leis da Coreia, e todos os membros encarregados da lei do Comitê Jurídico do Supremo Conselho Popular também são graduados da Faculdade de Direito da Universidade Kim Il Sung. O pessoal de instituições relevantes como tribunais, procuradorias e alfândegas da Coreia são todos graduados da Faculdade de Direito da Universidade Kim Il Sung, assim como os advogados.
+
+Em particular, em caso de disputa no campo econômico externo e a transição para a fase de arbitragem, antes apenas poderia ser deixado ao veredito do tribunal, mas agora a Coreia reconhece que um julgamento justo deve ser dado com a participação de advogados para tranquilizar os investidores estrangeiros. É claro, levará bastante tempo para que esse sistema se estabeleça, mas essas tentativas, quando vistas como medidas que respondem às demandas da nova geração, são dignas de expectativa.
+
+## Parte 3: Economia da Coreia após a conclusão da linha de progresso paralelo
+
+A economia da Coreia após a conclusão da linha de progresso paralelo refere-se à economia a partir do momento em que se concentrou totalmente na construção econômica após a reunião plenária de abril. 2017 pode ser chamado de ano inaugural, quando a Coreia declarou a conclusão da força nuclear na reunião plenária de abril e baixou a cortina da política militar primeiro, começando a se dedicar à construção econômica. Em 2018, quando começou uma grande mudança na política interna e uma fase de relaxamento na situação do Nordeste Asiático, a Coreia declarou dentro e fora do país que o partido, o exército e o povo se concentrarão todas as suas energias na construção econômica e claramente manifestaram sua vontade de impulsionar a construção econômica.
+
+Devido ao longo período de conflito com a comunidade internacional, é improvável que a visão cética sobre a vontade de desnuclearização da Coreia desapareça facilmente. Para resolver o problema da desnuclearização na península coreana, é necessário estabelecer relações de confiança entre os países relacionados e fazer esforços conjuntos. A Coreia já fez várias declarações claras e tentou confirmar essa vontade novamente, mas a comunidade internacional, ao enfatizar a prioridade da renúncia à força nuclear, não aceita a demanda da Coreia por um alívio gradual, e a luta de forças continua. Não se sabe quanto tempo levará, mas se os esforços dos países relacionados continuarem, acredita-se que chegará o dia em que um ponto de compromisso será encontrado.
+
+Dizem que começar é metade da batalha. A Coreia do Norte já iniciou internamente um novo começo e deseja fortalecer a cooperação e confiança com a comunidade internacional. Esse novo início da Coreia do Norte é algo que não vimos antes e parece que eles realmente esperam decolar o desenvolvimento econômico e alcançar um progresso real.
+
+No dia 12 de abril de 2019, é necessário prestar atenção ao discurso de política doméstica e externa do governo da República Democrática Popular da Coreia sobre a construção do socialismo na fase atual, apresentado pelo presidente Kim Jong-un na primeira sessão da 14ª Assembleia Popular Suprema da Coreia do Norte.
+
+O discurso político é dividido em três partes. A primeira parte enfatiza a adoção da ideologia nacional construída por Kim Il-sung e Kim Jong-il em todos os empreendimentos. A segunda parte ordena a situação e as áreas a serem melhoradas no campo econômico na fase atual. A terceira parte expressa alegações sobre política doméstica e externa. Aqui, é necessário focar na segunda parte, que se refere à autossuficiência econômica.
+
+Neste capítulo, vamos desenvolver o conteúdo sobre como a Coreia do Norte está planejando o desenvolvimento econômico internamente e se tais perspectivas de desenvolvimento são viáveis.
+
+### 1 Reunião de Abril
+
+A terceira reunião do 7º Comitê Central do Partido dos Trabalhadores da Coreia foi realizada em abril de 2018, portanto, também é chamada de Reunião de Abril. O ponto chave da Reunião de Abril é se concentrar na construção da economia socialista. Eles se comprometem a construir uma economia socialista de maneira autônoma, independente e criativa.
+
+A Coreia do Norte declarou a conclusão de sua força nuclear após cinco anos de implementação da Linha Byungjin e, finalmente, encerrou a política militar primeiro. Presidente Kim Jong-un ordenou que os cientistas e engenheiros se tornassem a força principal na construção econômica, já que deve avançar com a ciência e a tecnologia à frente. Além disso, ele pediu para proteger o futuro através da educação, por isso solicitou que todas as instituições educacionais, desde jardins de infância a escolas primárias, secundárias e universidades, desempenhassem um papel maior.
+
+As pessoas de todo o país estão se esforçando para realizar a normalização da produção em alta velocidade e aumentar a construção econômica para um novo nível, impulsionando a modernização, cientificação e informatização da indústria.
+
+#### 1 Terceira Reunião do 7º Comitê Central do Partido dos Trabalhadores da Coreia
+
+No dia 20 de abril de 2018, a Terceira Reunião do 7º Comitê Central do Partido dos Trabalhadores da Coreia foi realizada em Pyongyang. A reunião discutiu três itens: as tarefas do partido para fortalecer a construção do socialismo de acordo com as demandas de um novo estágio mais alto de desenvolvimento revolucionário; provocar uma transformação revolucionária nos negócios de educação científica; e questões organizacionais.
+
+O presidente Kim Jong-un enfatizou na conferência que, na dura jornada de implementação da Linha Byungjin, o Partido dos Trabalhadores só conseguiu superar desafios e adversidades com a justiça de sua própria causa e firme fé no povo. Ele afirmou que o imenso poder da unidade do partido e do povo é a força motriz e o segredo fundamental que permitiu a reencarnação da Coreia do Norte como uma potência nuclear e a colocou orgulhosamente no centro do cenário político mundial.
+
+Em 2013, foi declarada a brilhante conclusão do histórico caminho Byungjin proposto, abrindo perspectivas para a conclusão da economia autossuficiente e a criação de condições para que a economia geral entre em uma trajetória ascendente. Eles enviaram uma grande homenagem ao logo que os cientistas, técnicos e trabalhadores do setor militar-industrial contribuíram nos últimos 5 anos. Foi sugerido que, como a missão histórica já foi concluída, a partir de agora, o partido e o país devem se concentrar no desenvolvimento da economia socialista.
+
+A 3ª reunião plenária do 7º Comitê Central do Partido dos Trabalhadores da Coreia tornou-se uma oportunidade para a Coreia declarar que está mudando o foco de seu trabalho para a construção econômica, destacando que fazer um bom trabalho na construção econômica é o cerne da política do povo.
+
+#### 2 Conclusão da missão do caminho Byungjin
+
+A Coreia do Norte afirmou que todo o processo de desenvolvimento nuclear foi realizado de forma científica e sequencial, e que o desenvolvimento de veículos de entrega também foi cientificamente realizado, verificando a conclusão da nuclearização. Agora, não há necessidade de qualquer teste nuclear ou teste de lançamento de mísseis balísticos intercontinentais de médio e longo alcance, e por isso declararam que a instalação de testes nucleares do norte cumpriu sua missão.
+
+Na reunião plenária de abril, foi adotada a resolução "Sobre a Proclamação da Grande Vitória do Caminho Byungjin da Construção Econômica e da Construção da Força Nuclear". A resolução contém o seguinte conteúdo:
+
+Primeiro, executou-se fielmente a nuclearização em sequência, através de testes nucleares subterrâneos e a miniaturização, leveza, e desenvolvimento de veículos de entrega para armas nucleares super grandes, no processo de luta para implementar a linha Byungjin do partido.
+
+Em segundo lugar, a partir de 21 de abril de 2018 (ano 107 do Juche), pararemos com os testes nucleares e os testes de lançamento de mísseis balísticos intercontinentais. Para garantir a transparência da interrupção dos testes nucleares, a instalação de testes nucleares do norte será desmantelada.
+
+Em terceiro lugar, a interrupção dos testes nucleares é um importante passo para o desarmamento nuclear global, e a Coreia do Norte se juntará aos esforços e orientações internacionais para uma interrupção completa dos testes nucleares.
+
+Em quarto lugar, a Coreia do Norte nunca usará armas nucleares, a menos que haja uma ameaça nuclear ou provocação nuclear contra ela, e em nenhum caso transferirá armas nucleares ou tecnologia nuclear.
+
+Em quinto lugar, todas as forças serão concentradas na luta para aumentar drasticamente a vida do povo, mobilizando os recursos humanos e materiais do país para erguer uma poderosa economia socialista.
+
+Em sexto lugar, estabelecerá um ambiente internacional favorável para a construção da economia socialista, dialogará ativamente com os países vizinhos e a comunidade internacional e manterá laços estreitos para proteger a paz e a estabilidade na península da Coreia e no mundo. A Coreia do Norte declarou a conclusão da histórica missão do caminho Byungjin e da política militar do primeiro.
+
+#### 3 A principal tarefa do partido é a construção econômica
+
+Dado que a linha Byungjin da construção econômica e da construção da força nuclear cumpriu sua missão, a Coreia do Norte apelou para acelerar a velocidade de progresso dos negócios revolucionários com fé e se concentrar no desenvolvimento da economia socialista em todo o país e em todo o partido em direção à vitória final.
+
+Acreditava-se que a linha estratégica de se concentrar na construção econômica ao estabelecer uma base sólida para a economia nacional independente, no estado em que o campo científico e técnico que completou a construção da força nuclear foi assegurado, é a linha revolucionária que prioriza a ciência.
+
+O objetivo imediato para a realização da nova linha estratégica é concluir a normalização da produção em todas as fábricas e empresas durante o período de implementação da estratégia quinquenal de desenvolvimento econômico nacional e saudar uma colheita rica em todos os campos do campo. A perspectiva é realizar a subjetividade, modernização, informatização e cientificação da economia popular em alto nível, permitindo que as pessoas vivam uma vida próspera e civilizada que não seja inferior à dos outros. No processo de realização desta linha estratégica, deve-se basear necessariamente no espírito de autossuficiência e na ciência e tecnologia, e deve-se aumentar a força autossuficiente para conseguir um salto na produção o mais rápido possível.
+
+O papel do partido e o trabalho organizacional devem ser bem realizados no processo de construção econômica, e é necessário estabelecer um sistema de implementação incondicional que obedeça à orientação unificada do gabinete.
+
+O conteúdo principal da resolução "Sobre a Concentração de Todos os Esforços na Construção da Economia Socialista de Acordo com as Exigências de um Novo Alto Estágio de Desenvolvimento Revolucionário", adotada na reunião plenária de abril, é o seguinte:
+
+Primeiro, o partido e o estado irão concentrar todas as suas operações na construção econômica socialista e mobilizar todas as suas forças.
+
+Segundo, o papel dos sindicatos de trabalho e organizações partidárias, instituições governamentais, instituições judiciais e militares será intensificado na luta para concentrar todos os esforços na construção da economia socialista.
+
+Terceiro, todas as instituições partidárias e políticas em todos os níveis implementarão rigorosamente as normas de execução da decisão da terceira sessão plenária do sétimo comitê central do partido, enquanto dominam e implementam normalmente.
+
+Quarto, o Comitê Permanente da Assembleia Popular Suprema e o Gabinete tomarão medidas legais, administrativas e práticas para implementar as tarefas apresentadas na decisão do Comitê Central do Partido.
+
+A transformação fundamental do trabalho central do partido mostra que a intenção do Partido dos Trabalhadores de satisfazer o desejo de construção econômica e a demanda por melhoria da vida do povo é forte.
+
+#### 4 Economia Autossuficiente
+
+Em 11 de abril de 2019, o presidente Kim Jong Un enfatizou repetidamente em seu discurso na primeira sessão do 14º Partido dos Trabalhadores da Coréia que a tarefa central do capítulo é concentrar todos os esforços na construção econômica.
+
+"A tarefa central que se apresenta à nossa república na luta atual para a construção de uma forte nação socialista é concentrar todas as forças do país na construção econômica para estabelecer firmemente a base material do socialismo."
+
+"Autossuficiência econômica" é a segunda palavra-chave que o presidente Kim Jong Un enfatizou em seu discurso.
+
+"A autossuficiência econômica é a garantia material e a premissa para a construção de um estado independente. Somente por meio de um poder econômico autossuficiente e forte, a dignidade do estado pode ser protegida e a força política e militar pode ser continuamente fortalecida."
+
+O atual fluxo político requer que a Coréia aumente ainda mais o lema da autossuficiência e do auto-reforço. Exige-se que os vários setores da economia popular continuem a ordenar a subjetividade, a modernização, a informatização e a cientificação que foram feitas antes, e que o potencial da economia socialista autossuficiente seja desdobrado no desenvolvimento econômico local e na ativação da economia externa. Em particular, enquanto mantém a economia nacional autossuficiente, é exigido que a cooperação econômica externa, a troca de tecnologia e as atividades comerciais sejam desenvolvidas de maneira multilateral e proativa.
+
+A força motriz básica de uma economia autossuficiente é o talento humano e a ciência e a tecnologia, enfatiza-se. Deve-se criar uma cultura nacional de valorização do talento humano e da ciência e tecnologia, encontrar talentos em toda parte e colocá-los nos lugares certos, e liderar o desenvolvimento da produção e tecnologia. O investimento nacional contínuo no campo da ciência e tecnologia também é constantemente solicitado.
+
+No que diz respeito a este ponto, o autor vê uma reivindicação diferente da auto-restauração anterior. Em outras palavras, no passado, havia uma intenção de resistir apenas com recursos internos em um estado de não estar preparado para a cooperação econômica externa, mas agora, parece que há um significado tático de produzir resultados no caminho da nacionalização sob a premissa de aceitar mais ativamente a tecnologia avançada estrangeira. A Coreia do Norte não está fechando suas portas, mas está tentando encontrar maneiras de promover intercâmbio internacional e atrair investimentos, ou encontrar maneiras de cooperar em uma situação em que a comunidade internacional está limitando o acesso à Coreia do Norte. Claro, a cooperação não deve ser restrita à tecnologia estrangeira, mas parece um sinal para acelerar o processo de "coreanização" da tecnologia estrangeira.
+
+Sair ousadamente do quadro de intercâmbio externo fechado do passado e tentar expandir amplamente o contato com o exterior é um processo de busca de maneiras para a Coreia do Norte sair e parece ser uma manifestação de vontade de expandir a captação de investimentos e diversificar os métodos de cooperação econômica através de um amplo intercâmbio internacional.
+
+Se a Coreia do Norte conseguir abrir caminho através desses esforços depende do impacto do ambiente internacional e da continuidade da política doméstica. E o timing também é um fator importante. Parece que o fator internacional terá um papel mais importante do que o fator doméstico, e espera-se que a Coreia do Norte aumente seus esforços para melhorar as relações internacionais após o fim do coronavírus.
+
+#### 5 Política de fomento à ciência, tecnologia e educação
+
+A Coreia do Norte apresentou o conceito de que a construção econômica é realizada em dois pilares básicos: ciência e tecnologia e educação. O presidente Kim Jong-un apresentou o slogan estratégico "Vamos saltar com a ciência e garantir o futuro com a educação" na 3ª reunião do 7º Comitê Central do Partido dos Trabalhadores da Coreia. Se você quiser acompanhar rapidamente o nível avançado internacional a partir do ponto atual, que está atrás do nível internacional de desenvolvimento, a ciência e a tecnologia devem ser melhoradas primeiro e a educação que garante o futuro deve ser enfatizada. É um apelo para que todas as pessoas do país dominem o conhecimento de ciência e tecnologia e cada pessoa tenha a dignidade e o talento da independência para poder verdadeiramente receber o futuro da Coreia.
+
+"Ciência e educação são a base da construção do estado e um importante indicador que determina o poder nacional. Só aumentando a nossa capacidade de ciência e tecnologia e o nível de educação podemos realizar o grandioso objetivo da construção de uma nação autônoma e forte."
+
+A era atual é a era da ciência e tecnologia, a era da economia do conhecimento, e o destino da nação e do país depende do papel dos talentos em ciência e tecnologia. Por isso, chama-se a era da valorização do talento.
+
+"Devemos criar uma cultura de valorização da ciência e tecnologia em toda a sociedade, levantar alto o slogan de 'cientistas e tecnólogos de todo o povo', e fazer com que todos os trabalhadores e trabalhadores aprendam entusiasticamente a ciência e tecnologia moderna."
+
+O pensamento político de Kim Jong-un, que enfatiza a necessidade de ter a ciência e a tecnologia em uma mão e a educação na outra, está ressoando em toda a sociedade. O fato de todo o país estar adorando os cientistas e respeitando os educadores e a criação de uma cultura que valoriza os cientistas e os educadores mostra que a Coreia do Norte está promovendo muito fortemente a importância da ciência e tecnologia. Apoiada por políticas que valorizam os cientistas e educadores e dão importância ao cultivo de talentos em ciência e tecnologia, a febre da disseminação da ciência e tecnologia está varrendo todo o país.
+
+Educar os indivíduos que formam a base do poder de um país é a missão do campo da educação. Em todo o país, uma revolução na educação está ocorrendo para promover o desenvolvimento científico e tecnológico e o fortalecimento dos recursos humanos. O governo está investindo pesadamente na educação e impulsionando a melhoria da qualidade e da responsabilidade dos professores para criar excelentes talentos.
+
+Na 7ª terceira sessão plenária do Partido do Trabalho da Coreia, a "Resolução sobre a mudança revolucionária nos negócios da educação científica" foi adotada, e seu conteúdo principal pode ser resumido da seguinte maneira:
+
+Primeiro, vamos abrir o caminho para a construção de uma economia forte com base no poder da ciência e da tecnologia.
+
+Segundo, de acordo com as exigências da era tecnológica e econômica, vamos transformar a Coreia em uma potência da educação socialista e dos recursos humanos.
+
+Terceiro, no campo da educação científica, devemos promover uma grande campanha para pegar, aprender e trocar experiências, eliminando completamente o dogmatismo.
+
+Quarto, o Estado deve aumentar significativamente o investimento na ciência e tecnologia e na educação, e toda a sociedade deve estabelecer um respeito pela ciência e educação.
+
+Quinto, todas as organizações partidárias devem desenvolver medidas específicas para implementar a resolução do Comitê Central do Partido, analisar regularmente a situação da implementação e resumir as experiências e lições a tempo.
+
+Sexto, o Gabinete deve desenvolver medidas administrativas para implementar a resolução do Comitê Central do Partido.
+
+Este ambiente trouxe grandes mudanças no sistema educacional da Coreia. Em primeiro lugar, um sistema universitário abrangente foi introduzido em todas as universidades do país e, de acordo com as especialidades e regiões, eles passaram por fusões e ajustes e foram promovidos a universidades abrangentes. Este projeto de ajuste levou cerca de 3 anos, começando em 2015 e concluindo em 2017. Todas as outras universidades, exceto a Universidade Kim Il Sung e a Universidade Kim Chaek de Tecnologia, alcançaram a unificação nacional do conteúdo e do nível de educação. A Universidade de Construção abrangente absorveu todas as instituições de ensino sob o Ministério da Construção, e as universidades regionais, como a Universidade de Pyeongbuk, integraram os recursos da ciência agrícola de acordo com as características de cada província.
+
+A Universidade Kim Il Sung está produzindo gerentes econômicos com uma visão estratégica necessária para o estado, e a Universidade Wonsan Economics está treinando gerentes de empresas para as unidades de produção.
+
+A Coreia também reformou seu sistema de crédito acadêmico e graus, ajustando as regulamentações consideradas irracionalidades no passado. Por exemplo, antes, quando um aluno se formava, recebia um diploma e um certificado de graduação, mas agora apenas um diploma é emitido, e o certificado de profissão só pode ser obtido após passar por um teste após entrar no local de trabalho. Antes, quando um aluno se formava na Faculdade de Direito da Universidade Kim Il Sung, ele recebia um diploma e se tornava automaticamente um advogado, mas agora só recebe um diploma e deve passar em um exame posterior para se tornar um advogado. Após a graduação, os alunos excelentes são selecionados para a pesquisa avançada, e podem entrar no curso de graduação por meio de recomendação. O grau de bacharel mencionado na Coreia é equivalente ao mestrado na China, e depois de concluir os créditos e passar na tese de graduação, você pode receber um diploma de bacharel.
+
+O presidente Kim Jong-un insiste que a chave para a realização de uma sociedade que valoriza a ciência, a educação e o talento, como ele propõe, está na liderança exemplar de seus líderes.
+
+"Hoje, nosso maior problema não é a escassez de alimentos ou outras dificuldades da vida, mas a pobreza de conhecimento de nossos trabalhadores, que não conseguem se libertar da falta de conhecimento". A Coréia do Norte está fortemente exigindo que todos os seus líderes se tornem altamente qualificados e talentosos em ciência e tecnologia, sem os quais não podem liderar a ideologia do Partido de fazer todos os cidadãos talentosos em ciência e tecnologia, e também não podem cumprir corretamente sua missão revolucionária. Mais explicações sobre ciência e educação serão dadas no Capítulo 5 abaixo.
+
+### 2 Aderência ao princípio socialista na construção econômica
+
+A Coréia do Norte insiste na posse social dos meios de produção como princípio fundamental. Pessoas de países que valorizam a propriedade privada dos meios de produção têm dificuldade em entender a economia norte-coreana, pois suas relações de produção são completamente diferentes.
+
+Existem cinco princípios básicos para a gestão da economia socialista na Coréia do Norte. Primeiro, aderir ao princípio socialista; em segundo lugar, combinar corretamente a liderança unificada do estado com a emergência das unidades intermediárias; em terceiro lugar, combinar corretamente a democracia com o comando único; em quarto lugar, combinar corretamente incentivos morais políticos com incentivos materiais; em quinto lugar, garantir o maior benefício.
+
+Portanto, o sistema de gestão da economia socialista deve ser estabelecido de acordo com a natureza do sistema econômico socialista, e o sistema de gestão empresarial também deve cumprir os princípios e leis básicos da gestão da economia socialista.
+
+#### 1 Formas de posse dos meios de produção
+
+Os meios de produção na Coréia do Norte são de propriedade do povo e cooperativas. Sob esta circunstância de propriedade social dos meios de produção, exige-se que os princípios de gestão econômica unificada sejam estabelecidos. A Coréia do Norte vê a sociedade capitalista como privada porque a gestão não é unificada, mas é operada à vontade de cada indivíduo.
+
+"O sistema de propriedade socialista é um sistema de propriedade coletiva dos trabalhadores. As características do sistema de propriedade socialista são, em primeiro lugar, a posse dos trabalhadores onde a posse e o trabalho estão combinados, e também a posse comum do grupo social ligado pelo conceito de coletivismo. Aqui, a propriedade e o trabalho estão combinados em unidades do grupo social." Devido à posse social dos meios de produção, todos os membros afiliados têm o status de donos do país. A missão de um proprietário é o direito e a responsabilidade de proteger, operar e desenvolver esses meios de produção em comum.
+
+A economia socialista baseada na propriedade social exige o controle unificado de todos os recursos humanos e materiais da sociedade em uma escala social e seu uso planejado para realizar um propósito comum.
+
+Na economia planejada, importantes indicadores econômicos como a velocidade do desenvolvimento econômico na economia popular como um todo e em setores econômicos individuais e regiões, o volume e a estrutura da produção de produtos importantes, a formação, acumulação e distribuição de renda nacional, o equilíbrio entre a produção de meios de produção e a produção de bens de consumo, o desenvolvimento da ciência e da tecnologia, e o crescimento da produtividade do trabalho são definidos pelo plano. Além disso, as principais áreas de atividade econômica, como relações econômicas entre cidades e zonas rurais, diferentes regiões, melhorias na vida das pessoas, finanças, relações econômicas externas, são apresentadas no plano estadual.
+
+Na Coréia do Norte, o plano estadual é um comando do Partido e do Estado, e reflete a demanda autônoma e os interesses das massas populares. Portanto, as pessoas consideram o cumprimento do plano estadual como um sagrado dever legal e lutam para cumpri-lo sem condições.
+
+A questão crucial é que tipo de entidade constitui essa comunidade e até que ponto pode desempenhar o papel de proprietária. Na Coreia do Norte, a propriedade individual não é permitida em uma sociedade socialista. Este problema é o fator fundamental que impede os estrangeiros de entenderem a Coreia do Norte.
+
+Mobilizar ao máximo o entusiasmo de trabalho das pessoas, aumentar os benefícios econômicos enquanto se mantém a qualidade socialista, é algo que deve ser considerado e orientado em uma escala nacional. Portanto, uma melhoria nos métodos de gestão da economia socialista é necessária.
+
+#### 2 Características do trabalho coletivo
+
+Em uma sociedade socialista, os meios de produção são de propriedade social, então as pessoas se tornam os donos dos meios de produção. Portanto, em termos de gestão econômica, presume-se que as demandas coletivas serão realizadas através de métodos de gestão coletivista, baseados na unidade e cooperação do grupo social e incentivando a criatividade dos membros do grupo.
+
+Embora os meios de produção sejam de propriedade social e os trabalhadores tenham o direito de serem proprietários, nem todos os trabalhadores se tornam gerentes. Os gerentes devem ser capazes de garantir o bem comum do povo e os trabalhadores devem ter um trabalho criativo baseado no trabalho coletivo, protegendo os interesses do grupo em torno do gerente da empresa ou organização à qual pertencem.
+
+Como maximizar a produtividade do trabalho coletivo depende de como a gestão econômica é orientada em uma escala nacional e como os meios de mobilização são usados. A quantidade e qualidade do trabalho, a natureza do trabalho, a mecanização, a automação e o papel dos trabalhadores quando automatizados são temas que devem ser constantemente pesquisados. Encontrar maneiras de aumentar a produtividade e melhorar a vida de todos os trabalhadores é ainda mais importante.
+
+Assim, surge a gestão econômica socialista à maneira da Coreia do Norte, bem como fábricas e empresas que adotam um sistema de gestão de responsabilidades corporativas e fazendas cooperativas que operam sob um sistema de responsabilidade de divisões, como a carga de trabalho designada. A natureza do trabalho coletivo não muda, mas os meios e métodos de organização do trabalho estão surgindo de forma nova. O objetivo final é maximizar o entusiasmo e a criatividade dos trabalhadores.
+
+### 3 Enfatizando a criatividade corporativa na gestão econômica
+
+A gestão econômica socialista organiza e dirige as atividades produtivas autônomas e criativas dos trabalhadores para desenvolver a economia, e promove a consciência e a criatividade da população na luta contra a natureza, de modo que eles possam desempenhar melhor suas responsabilidades e papéis como produtores e gerentes. Esta é a essência da gestão econômica socialista defendida pela Coreia do Norte.
+
+Em uma sociedade onde as massas produtoras são os mestres da sociedade e da gestão econômica, a função de comando se torna uma função social para melhorar e promover a autonomia, a criatividade e a consciência das pessoas. A gestão econômica, sendo uma função de comando das atividades econômicas das pessoas, tem grande impacto na ordem das atividades econômicas das pessoas. É reconhecido que o sistema econômico baseado na propriedade privada dos meios de produção é dominado pelo individualismo, enquanto o sistema econômico baseado na propriedade social dos meios de produção é mantido pelo coletivismo.
+
+A função de comando nas atividades econômicas inclui a função de organizar e mobilizar pessoas. Existem métodos políticos e estímulos materiais para mobilizar pessoas para atividades econômicas. Se os estímulos materiais são excessivos, a tendência individualista pode aumentar e distorcer o sistema econômico socialista baseado no coletivismo. No entanto, se a gestão econômica não for bem feita, a superioridade socialista pode ser enfraquecida, portanto, é necessário um método científico de gestão econômica que possa aumentar a produtividade e manter bem um sistema de distribuição e fornecimento popular.
+
+Na sociedade capitalista, cada empresa tem seu próprio estilo de gestão, enquanto na sociedade socialista, todos os setores e unidades têm um único sistema e método de gestão econômica.
+
+O método de gestão econômica socialista é assegurar firmemente a liderança do partido, receber a orientação unificada do estado, e permitir que as empresas tenham poder real de gestão e conduzam proativamente e criativamente a produção e a gestão.
+
+Receber orientação unificada do estado não significa que se deva negar a independência relativa das fábricas e empresas. Considerando que essa independência é necessária para maximizar a produtividade, adotou-se um método de gestão econômica como o sistema de custos independentes.
+
+#### 1 Sistema de custos independentes para fábricas e empresas
+
+O sistema de custos independentes na Coreia do Norte é na verdade um método de gestão econômica que foi implementado desde o tempo de Kim Il-sung. A melhoria contínua e aperfeiçoamento do sistema e método de gestão econômica socialista foram intensificados durante o tempo de Kim Jong-il. Foi introduzido um novo método de gestão econômica que implementa o sistema de custos independentes duplos e a orientação da produção diária e da unificação financeira.
+
+O sistema de custos independentes que a Coreia do Norte implementa permite que o estado garanta força de trabalho e meios de produção para as empresas, dê-lhes tarefas de planejamento e equilibre receitas e despesas por si mesmas. É um método de gestão de empresas racional baseado no princípio do interesse material, que permite usar a força de trabalho social de forma razoável e incentiva a obter mais receitas com menos despesas. Essa política faz com que as empresas tenham interesse na produção ao aumentar a receita e reduzir as despesas, e usem a força de trabalho social de maneira razoável. Em outras palavras, o sistema de custos independentes significa equilibrar receitas e despesas através de suas próprias atividades de produção e gestão.
+
+É importante para as empresas usarem princípios e leis econômicas e ajustarem indicadores econômicos e técnicos de acordo com os requisitos científicos e técnicos para planejar e quantificar o trabalho, viver ou salário, preço, custo, lucro e outros espaços de valor. Durante o tempo de Kim Jong-il, as empresas foram capazes de descobrir suas bases técnicas e materiais e potenciais e melhorar significativamente o nível de gestão operacional com base no sistema de custos independentes.
+
+Kim Jong-un, em uma reunião com os responsáveis ​​pelas instituições econômicas do estado em 30 de maio de 2014, apresentou demandas para ajustar o sistema de custos independentes de acordo com as necessidades realistas de hoje e implementar o sistema de gestão responsável por empresas.
+
+O sistema de gestão responsável por empresas socialistas destacado por Kim Jong-un é que, sob a orientação unificada do estado, fábricas, empresas e cooperativas têm poder real de gestão, e conduzem atividades empresariais de forma proativa e criativa, de modo que todos os trabalhadores possam assumir a responsabilidade e papel de proprietários na produção e gestão.
+
+Fábricas, empresas e cooperativas, sob a força de trabalho e meios de produção garantidos pelo estado e o poder de gestão independente, realizam atividades empresariais, compensam despesas com sua própria receita, fornecem lucro ao estado, e são empresas socialistas que têm a obrigação de contribuir ativamente para o desenvolvimento econômico e a melhoria da vida do povo.
+
+A Coreia do Norte gerencia e opera empresas de uma maneira que garante a orientação unificada do estado e permite que elas encontrem suas reservas e possibilidades nas condições e ambientes específicos dados, e realizem atividades de gestão de forma proativa e criativa.
+
+Um desses métodos de gestão de empresas é justamente o sistema de custos independentes. O sistema de custos independentes presume que o estado assume total responsabilidade e garante tudo necessário para as atividades empresariais das empresas, como instalações, materiais e força de trabalho, mesmo em condições econômicas relativamente grandes e favoráveis ​​para o comércio exterior.
+
+Quando as empresas geram grande receita com suas operações, a parcela disponível para eles aumenta, permitindo expandir a produção, desenvolver a tecnologia e investir mais em programas culturais e de bem-estar para os funcionários. Além disso, os trabalhadores, como proprietários da produção e gestão, devem usar de forma econômica e racional os bens da nação e da sociedade, visando maximizar os benefícios para o estado e a sociedade.
+
+No entanto, devido às características da sociedade socialista, os trabalhadores não têm consciência suficiente para cuidar e economizar os bens da nação e da sociedade como se fossem seus. Em tais condições, se apenas for garantido um certo nível de força de trabalho e meios de produção, os produtores podem não utilizá-los efetivamente. Isso pode levar a uma eficiência de produção mais baixa e dificultar a implementação dos planos estabelecidos pelo Estado. Para superar isso, a autonomia na gestão foi concedida com base no princípio do interesse material.
+
+Durante o período em que o sistema de produção independente foi implementado, com o estado fornecendo todas as instalações e matérias-primas, as empresas apenas precisavam produzir. Não havia grande dificuldade em exercer o direito de gestão independente da empresa. No entanto, a situação atual é diferente; se as empresas não conseguem gerir a compra de equipamentos e matérias-primas necessárias para as suas operações por si próprias, torna-se difícil manter um equilíbrio entre receitas e despesas.
+
+O método atual de gestão econômica na Coréia do Norte inclui a capacidade de estabelecer planos, ajustar a força de trabalho, desenvolver produtos e determinar preços e vendas, além de gerenciar talentos, comércio e joint ventures. Muitas dessas funções, que anteriormente eram aplicadas de forma unificada pelo estado, foram incluídas nos direitos de gestão autônoma das empresas.
+
+As empresas que receberam maiores direitos de gestão devem mobilizar todos os seus recursos e possibilidades para ativamente desenvolver suas operações nas condições e ambientes atuais. Só quando as empresas geram lucro podem contribuir mais para o estado. As empresas estão aproveitando essa política para gerar mais lucros e expandir as oportunidades que podem controlar.
+
+#### 2 Autonomia na produção
+
+O estado garante legal e institucionalmente a autonomia das empresas na produção de produtos e implementa regras para o sistema de gestão de responsabilidade das empresas socialistas.
+
+A autonomia das empresas na produção de produtos se manifesta basicamente na escolha do tipo e quantidade de produtos. No passado, o tipo e a quantidade de produtos produzidos pelas empresas eram determinados pelos planos estabelecidos pelo estado. No entanto, agora as empresas ajustam e determinam o tipo e a quantidade de produtos com base nos planos do estado e nas condições de produção. O que resta é como as empresas vão usar seus direitos de gestão autônoma para aumentar a produção, melhorar a qualidade do produto e equilibrar a receita e as despesas.
+
+Já muitas empresas estão ativamente se movendo em condições desconstruídas, com a variedade de produtos em produção aumentando e a qualidade dos produtos melhorando, e estão agitadas para criar produtos mais competitivos por meio da competição mútua.
+
+Os gerentes de várias empresas que presenciei estão correndo mais do que nunca para salvar suas empresas. A eficiência da produção e o nível de serviço aumentaram dramaticamente com o esforço que eles fizeram. As antigas empresas estatais tinham apenas 20-30% de taxa de operação e todos eram produtores passivos. Agora, os gerentes de empresas estatais não têm tempo para ficar parados. Se os executivos não correm ativamente e usam suas mentes, eles não podem manter sua "base". Essa pressão vem de dentro da fábrica porque, quando os trabalhadores veem que outras empresas estão indo bem e sua própria empresa está atrasada, eles veem que há um problema com a habilidade do gerente. Como as empresas de produção são avaliadas pela qualidade de seus produtos e as unidades de serviço pelo número de clientes, se o gerente errar, não será capaz de realizar corretamente a tarefa nacional nem ganhar a confiança dos funcionários.
+
+#### 3 Competição Socialista
+
+Após o direito de gestão real ser concedido à empresa, foi responsabilidade da própria empresa equilibrar a receita e as despesas. Isso ocorre porque, dependendo da competitividade da empresa, pode-se obter uma vantagem na competição com outras empresas. As empresas descobriram que vivem em um mundo diferente do passado, quando a safra ocorreria independentemente das chuvas ou da seca, e que o único caminho para a sobrevivência é garantir a competitividade através de pensamento estratégico.
+
+Recentemente, essa competição tem ocorrido em todos os lugares, e a qualidade está melhorando e a variedade de produtos está aumentando através da competição. Claro, esta competição é uma competição socialista, uma competição coletivista. Embora seja uma competição ao estilo coreano, diferente da competição total do mercado livre, a paixão pela produção que a competição traz não pode deixar de ser um fator positivo.
+
+A Fábrica de Alimentos de Pyongyang é originalmente uma empresa estatal antiga que produzia grandes quantidades de poucos tipos de alimentos. Como estava produzindo apenas um tipo de produto em grandes quantidades, não havia muito com que se preocupar.
+
+No entanto, novos alimentos estão inundando a rede comercial, a variedade está aumentando e a qualidade está melhorando dia após dia. Como uma das principais empresas produtoras de alimentos do país, não teve escolha a não ser acompanhar a demanda e as tendências dos consumidores. Por isso, teve que desenvolver produtos que atendessem ao nível do mercado de consumo, mesmo além de completar a variedade e a quantidade de produtos designados originalmente pelo estado, e teve que optar pelo caminho da produção de pequenas quantidades de vários tipos de produtos.
+
+A competição de preços também é feroz. Se o preço for conveniente, a demanda tende a aumentar. Mesmo que seja um produto do mesmo tipo, se o preço for um pouco mais baixo, a escolha recai sobre ele, mostrando que é muito melhor do que os produtos de outras empresas. Para atender a essa demanda e obter lucros, o único caminho é economizar no custo. As pessoas, que costumavam receber e gastar o que o estado dava, passaram a comprar mercadorias gastando o próprio dinheiro, tornando-se consumidores mais exigentes. Em outras palavras, os tempos mudaram.
+
+A razão pela qual a Fábrica de Alimentos e Bebidas Desportivas Gyeongbeop conseguiu estar no topo da indústria alimentícia é devido a um esforço notável. Primeiramente, eles compraram em todas as mercearias vendidas no centro de Pyongyang para comparar os preços, e de acordo com isso, estabeleceram um preço adequado para seus produtos, encontrando assim a demanda apropriada.
+
+A competição por matérias-primas também é intensa. Embora se possa obter um produto de qualidade superior ao usar materiais únicos ou ingredientes de alta qualidade, na Coreia, isso chegou a um limite. Parece que há uma possibilidade de cobrar um preço alto se a qualidade for boa. O restaurante Taedonggang 2, que eu conheço bem, é especializado em cordeiro, mas não é fácil conseguir cordeiro na Coreia. O bom cordeiro tem que ser importado da China. A importação de carneiro da Mongólia Interior, iniciada com minha ajuda, se tornou uma vantagem competitiva para eles. Não há muitos concorrentes seguindo essa estratégia de negócios única. Como carne de cordeiro de boa qualidade é fornecida regularmente, os clientes que a procuram se tornam frequentadores, visitando a cada período regular.
+
+A competição para atrair talentos também não é fácil. Atualmente, novos restaurantes estão sendo inaugurados em todos os lugares, e se houver rumores de que a comida de um lugar é boa ou que um chef é decente, os donos de restaurantes secretamente vão lá para experimentar como clientes. Em alguns lugares, eles organizam estratégias para atrair o chef se gostarem da comida. Portanto, chefs experientes são muito populares hoje em dia. Há muitos restaurantes querendo contratá-los como chef principal.
+
+À medida que os produtos internos aumentam, tornou-se necessário se preocupar com o design do produto. Mesmo que sejam apenas alimentos, agora há centenas de produtos no mercado, então todas as empresas têm que se preocupar com a embalagem. Assim, a indústria de impressão de embalagens entrou na competição. Embora haja designers nas fábricas, as impressoras também começaram a garantir clientes, fornecendo designs atraentes por meio de seus engenheiros de projeto. As impressoras da companhia de importação e exportação de publicações também imprimem calendários para venda, além de cumprir as tarefas do país, então a competição para criar melhores calendários está ocorrendo.
+
+A mochila do livro "Gildongmu", que mencionei antes, também mobilizou todos os seus recursos para desenvolver mais de 240 variedades de produtos. Não só os designers da fábrica, mas também os funcionários gerais estão sendo encorajados a competir para apresentar ideias, então cada vez mais pessoas estão participando do desenvolvimento de novos produtos dia após dia. Esses esforços aumentaram a competitividade da fábrica e tiveram o efeito de satisfazer a variedade de preferências dos estudantes.
+
+A competição também ocorre dentro das empresas. Planos de trabalho são atribuídos e um sistema de avaliação é implementado, gerando competição e mostrando esforços para fazer melhor. Quando vejo os times jogando vôlei, a vontade de vencer leva a aprender táticas, coletar informações sobre quem está jogando e analisar essas informações para formular contramedidas, iniciando assim o treinamento silencioso em preparação para a competição.
+
+#### 4 Respeito pelos princípios econômicos
+
+O novo método de gestão econômica proposto pela Coreia é visto como uma medida que se ajusta às leis econômicas, seguindo os princípios econômicos. A adoção dos princípios básicos de oferta e procura na gestão económica na Coreia é um ponto de viragem. No passado, o país estava concentrado apenas na produção para o fornecimento, mas agora entrou numa fase em que está a produzir produtos de que as pessoas necessitam, de acordo com a procura dos consumidores. A emergência de métodos de gestão econômica adequados à era é um sinal de que eles entendem a necessidade de respeitar os princípios da economia e gerir a economia de acordo com o fluxo natural da economia.
+
+Se falamos de princípios econômicos, primeiramente, a oferta é fornecida de acordo com a demanda. No passado, a gestão econômica era centrada na oferta, mas agora produz-se de acordo com a demanda. Não adianta produzir itens que não são vendidos ou produtos para os quais não há demanda, apenas acarretará em desperdício. É essencial entender a demanda do consumidor e desenvolver e produzir produtos que correspondam à demanda crescente para acompanhar os benefícios econômicos.
+
+Recentemente, a Coreia tem se concentrado muito no desenvolvimento de novos produtos, porque a demanda dos consumidores se diversificou, e as fábricas estão adotando um sistema de produção de baixo volume e alta variedade. Essa demanda tende a aumentar com o tempo e os produtores devem continuar a focar no desenvolvimento de novos produtos para atender essa demanda. Em outras palavras, as pessoas estão diminuindo a dependência do suprimento do estado e começando a comprar os produtos de que precisam.
+
+A "Loja do Futuro" no centro de Pyongyang introduziu um novo método de vendas. É um método de vendas que combina fornecimento e auto-compra, onde os bônus emitidos para professores e cientistas são recebidos em forma de cartão, e eles podem escolher e comprar os produtos que desejam na loja. Se não tiverem dinheiro suficiente no cartão, podem complementar com o próprio dinheiro. Esta é uma escolha completamente diferente da época em que recebíamos os mesmos produtos, quer precisássemos deles ou não. Isso mostra que a produção apenas para suprimento está ficando para trás e que, à medida que nos tornamos mais prósperos, é natural que nossa dependência do simples fornecimento diminua.
+
+Outra mudança importante no respeito à objetividade da economia é começar a respeitar os princípios do dinheiro. O objetivo de uma empresa é também aumentar a receita financeira. Se você tem dinheiro, pode expandir a produção e atualizar os novos equipamentos da empresa, e assim, melhorar o tratamento dos funcionários. Para fazer isso, é necessário colaborar com pessoas ou empresas que possuam recursos e isso deve ser baseado na confiança mútua. Os empresários coreanos perceberam que as joint ventures sem crédito não duram muito e não podem crescer muito, e que o dinheiro segue o crédito. O esforço das empresas para manter o crédito está se tornando um valioso know-how de negócios.
+
+A Glória dos Móveis da Coreia é mais um exemplo de sucesso. A história de crescimento da Glória dos Móveis mostra que muitos benefícios foram obtidos por manter o crédito. A primeira empresa que forneceu fundos iniciais foi uma empresa em Changchun, China. Glória dos Móveis, que trabalhou duro para reembolsar o investimento, impressionou o investidor chinês e, consequentemente, recebeu cada vez mais investimentos. O pessoal financeiro que a parte chinesa havia enviado para controlar a gestão da outra parte foi retirado, e a Glória dos Móveis conseguiu crescer com base na confiança. A Glória dos Móveis conseguiu crescer ainda mais a cada ano e já se tornou a fábrica de móveis mais famosa na Coreia.
+
+### 4 Autoconfiança é a chave para o desenvolvimento econômico
+
+Autoconfiança é também um modo de vida único da Coreia. O presidente Kim Jong-un disse: "A única coisa em que podemos confiar é a nossa própria força, ninguém tentará nos ajudar. Se confiarmos em nossa própria força, uma jornada de mil milhas parece estar bem próxima, mas se confiarmos na força dos outros, mesmo uma jornada curta parece ser uma jornada de mil milhas." A construção de uma base de gado na província de Gangwon com sua própria força é um exemplo de autoconfiança. Mesmo na situação em que as sanções internacionais lideradas pelos Estados Unidos estão se intensificando, o fato de que a base de gado foi construída é uma prova da autoconfiança, que não depende da força externa e não se deixa abater pela pressão externa, dizem os coreanos.
+
+Os norte-coreanos estão sentindo fortemente que nem a paz nem a prosperidade vêm naturalmente. Não importa quão árduo seja o caminho, eles concordam que não devem abandonar sua crença no socialismo e na autossuficiência.
+
+#### 1 Autonomia sob sanções
+
+As pessoas na Coreia do Norte costumam dizer: "Estamos enfrentando sanções há apenas um ou dois dias?" Isto significa que "é impossível fazer a Coreia do Norte se render através de sanções internacionais". Durante mais de 70 anos de bloqueio, eles agora têm a capacidade de resistir a uma série de sanções sem sentir dor. Em meio a complexas relações internacionais, a Coreia do Norte internalizou a dor e, com uma mentalidade forte, continua a criar uma nova história.
+
+A filosofia norte-coreana, que valoriza a ideologia Juche acima de tudo, também deu origem a uma história de autossuficiência. A Coreia do Norte, que gritou a slogan de construir o socialismo por seus próprios esforços durante décadas, está confiante nesse caminho e acredita firmemente que é o único caminho para a sobrevivência. Portanto, o povo norte-coreano está se esforçando arduamente para ser inteligente e diligente na criação de suas próprias coisas.
+
+É comum ver professores universitários e especialistas técnicos trabalhando juntos na fábrica para resolver problemas difíceis através de pesquisa e desenvolvimento noturno durante o processo de modernização da fábrica. Apesar de muitos desafios, os resultados de sua determinação e esforço continuam a gerar novos sucessos. Isso pode ser uma luta para sobreviver sob o bloqueio, mas a realidade norte-coreana que foi temperada nesse ambiente considera a autossuficiência como uma crença e está praticando-a.
+
+#### 2 Supremacia da Autossuficiência
+
+Kim Jong Un disse em seu discurso de Ano Novo em 2016:
+
+"Na construção de um poderoso estado socialista, devemos defender a supremacia da autossuficiência. Dependência e servilismo aos poderosos é o caminho para a ruína, e apenas o caminho da autossuficiência pode salvar nossa nação e abrir o caminho para a revolução e a construção". O que isso significa é que devemos realizar o grande trabalho de construção de um poderoso estado socialista e realizar os belos sonhos e aspirações do povo com nossa própria força, tecnologia e recursos, com fé e apego ao que é nosso, e com orgulho e autoestima.
+
+Este foco surgiu quando Kim Jong-tae, da Central Electric Locomotive Integrated Enterprise, foi altamente avaliado por fabricar seus próprios metrôs subterrâneos em novembro de 2015. "Hoje, tudo em que podemos confiar é apenas em nossa própria força. Ninguém está disposto a nos ajudar, então precisamos do espírito de autossuficiência para superar todos os desafios e dificuldades e alcançar os melhores resultados mesmo nas piores condições."
+
+O básico da supremacia da autossuficiência é que a revolução do próprio país deve ser feita com sua própria força, e que apenas eles podem salvar a si mesmos. O país acredita que a única maneira de sobreviver sob a pressão das sanções é através da autossuficiência.
+
+A Coreia do Norte é um país que depende muito do petróleo, pois não produz uma única gota de óleo. Portanto, eles estão se concentrando na carbonização da indústria química e no desenvolvimento de tecnologia. Uma nova área química está sendo construída na área de Suncheon para substituir o Complexo 2.8 Vinylon. Na 8ª Conferência do Partido dos Trabalhadores da Coreia, foi enfatizado que a indústria química deveria ser desenvolvida prioritariamente, a ponto de dizer que a solução para a economia norte-coreana depende da indústria química.
+
+A Coreia do Norte sempre enfatiza a regeneração pelo próprio esforço sob a inspiração do Juche, intensificando sua luta. "Vamos construir uma potência socialista com nossa força, nossa tecnologia, nossos recursos" é a demanda e o caminho de vida do Partido dos Trabalhadores da Coreia. Dentro deste slogan, cada setor econômico está enfatizando a autossuficiência e disseminando amplamente experiências que demonstram essa autossuficiência. Se olharmos para os artigos publicados no "Rodong Sinmun", existem inúmeras notícias transmitindo que durante um ano, cada campo alcançou a meta de aumento de produção por meio da cientificação da produção por sua própria força.
+
+A ideia de produzir e vender produtos acabados com matérias-primas próprias, em outras palavras, é manter a consistência com "o nosso". No entanto, mesmo que se diga para se armar com "nossa tecnologia" do ponto de vista econômico, não é tudo. O que é necessário é também a exigência de fazer o "nosso" o mais rápido possível, aprendendo o que deve ser aprendido através da conexão com o exterior.
+
+Na indústria de energia, eles estão acumulando experiências de geração de energia construindo usinas de energia de pequeno e médio porte por conta própria. Usinas famosas como a Usina de Heecheon, a Usina de Heróis Jovens de Baekdu Mountain estão liderando o caminho, e empresas como a Usina de Jovens de Ganggye, a Usina de Jovens de Wonsan, a Usina de Bucheon, a Usina de Seodosu, a Usina de Jangjin, a Usina de Eorang, a Usina de Heocheon, a Usina de Wiwon, a Usina de Cidadãos do Exército de Geumya, a Usina de Taecheon, a Usina de Jangjagang, a Usina de Daedong estão seguindo os passos, insistindo na autossuficiência e tentando a geração de energia por conta própria.
+
+As usinas termoelétricas também desempenham um papel importante. Existe um artigo no "Rodong Sinmun" que diz: "A empresa de energia termelétrica de Bukchang melhorou qualitativamente 20 turbinas a vapor, aumentando a produção por unidade em mais de 8.000kw do que antes, e introduziu 30 dispositivos modernos, aumentando a capacidade de geração de centenas de milhares de kw." A usina termelétrica de Cheongcheon River está superando os vieses que aparecem no cálculo e avaliação dos indicadores técnico-econômicos das instalações existentes de geração de energia termelétrica e está implementando a cientificação da produção. A usina termelétrica de Suncheon também está aumentando a quantidade de energia gerada por meio da inovação técnica e aumentando a produção a cada dia.
+
+Pyongyang depende de usinas termelétricas, com a empresa de energia termelétrica de Pyongyang, a usina termelétrica de Dongpyeong, etc., fornecendo energia para Pyongyang. A situação energética de Pyongyang melhorou muito em comparação com o passado, mas devido ao envelhecimento do equipamento, a poeira não é filtrada, especialmente perto das usinas termelétricas, muita poeira é lançada no ar, causando muitos inconvenientes quando entra nos olhos. Portanto, há rumores de que essas duas usinas precisam ser movidas para longe de Pyongyang, mas a ideia de movê-las em uma situação de escassez de eletricidade soa como um boato pouco realista. No entanto, não há dúvida de que em algum momento eles terão que ser movidos.
+
+Outro desafio no setor de energia da Coreia do Norte é a grande perda de transmissão devido à corrosão das linhas de transmissão. O setor de energia está se esforçando para melhorar de todas as maneiras possíveis e os casos de sucesso estão sendo relatados no "Rodong Sinmun".
+
+"Na Administração de Transmissão e Transformação de Energia, estão empenhados em manter e melhorar centenas de grandes transformadores de forma qualitativa, aumentando o nível de tensão em 2 a 3 vezes em relação ao anterior, a fim de reduzir as perdas de dezenas de milhares de kW no meio do processo."
+
+"Os respectivos departamentos do Ministério da Energia Elétrica também estão trabalhando diligentemente para desenvolver um programa que permita fornecer energia elétrica em escala nacional de acordo com a demanda de maneira científica, concluindo o projeto de implementação dentro do primeiro trimestre. Ao mesmo tempo, eles aceitaram quase 50 mil novos medidores de energia de cartão para tornar a gestão de energia mais eficiente através da organização econômica. Na província de Hwanghae do Sul, eles estão adotando um sistema de fornecimento de energia flexível para fornecer energia de maneira confiável."
+
+Desde abril de 2018, a introdução de medidores elétricos em todo o país e a adoção de uma política de cobrança com base no uso de energia em empresas e residências aumentaram significativamente a capacidade de produção de energia. A economia está se beneficiando deste método de circulação, garantindo o fornecimento de carvão e a geração contínua de energia termoelétrica.
+
+"Há notícias de que minas e siderúrgicas estão avançando em reformas tecnológicas e movimentos inovadores, superando o plano econômico das pessoas. Nas minas, há boas notícias de que todos cumpriram 100% a 200% de seus planos por meio de métodos científicos de exploração, com o objetivo de atingir as metas estabelecidas no discurso de Ano Novo. A mina de Jeonnam aumentou significativamente a produção de carvão e está fornecendo para a base de produção de energia de Bukchang. A mina de Maengsan também está aumentando drasticamente a produção de carvão."
+
+"O Complexo Combinado de Ferro e Aço de Kim Chaek está aumentando sua produção, encontrando métodos de trabalho racionais para reduzir o tempo de fusão do forno e aumentar a produção de carga por carga desde a operação do alto-forno de oxigênio. O Complexo Combinado de Ferro e Aço de Chollima também superou seus planos, com os rolos do alto forno nº 1 trabalhando arduamente na luta de produção, criativa e destrutiva. As fábricas de aço de Sariwon e Moon também adiantaram e cumpriram seus planos de produção de aço e laminação, respectivamente."
+
+Outros relatórios incluem o aumento da produção em várias fazendas cooperativas desde a implementação do sistema de responsabilidade por safra.
+
+Essas conquistas parecem possíveis devido à melhoria da situação da eletricidade, mas se a linha de transmissão não for completamente melhorada, até mesmo a energia produzida será desperdiçada, então um grande esforço é necessário. Embora haja esforços nesse sentido no setor de energia elétrica, é um projeto que requer um grande investimento e parece difícil resolver completamente o problema no futuro próximo.
+
+### 5 Impulsionando o Desenvolvimento Econômico com Ciência e Tecnologia como Força Motriz
+
+Em janeiro de 2014, o Presidente Kim Jong-un disse durante sua orientação no local na Academia Nacional de Ciências: "Devemos levar a locomotiva da ciência e tecnologia para fazer todos os setores correrem poderosamente em direção ao mundo."
+
+"Hoje, a frente científica é a linha de frente na defesa do socialismo. Devemos lutar contra as forças lideradas pelos Estados Unidos com o poder da ciência e tecnologia autônoma e defender e iluminar o sistema socialista com realizações científicas e tecnológicas." Um dos problemas que a Coreia do Norte se concentra é a ciência e tecnologia espacial. Há um desejo implícito de impulsionar avanços na ciência e tecnologia em geral, como foi feito com a tecnologia espacial, para aumentar a posição internacional do país em um curto período de tempo e estabelecer a Coreia do Norte como uma potência científica e tecnológica.
+
+Na década de 1980, cientistas e engenheiros adotaram o objetivo de conquista espacial proposto pelo presidente Kim Il Sung. Eles intensificaram as pesquisas sobre ciência e tecnologia espacial. O primeiro satélite, o "Kwangmyongsong-1", foi lançado em 31 de agosto de 1998 e o segundo, o satélite de comunicação "Kwangmyongsong-2", foi lançado em 5 de abril de 2009. O presidente Kim Jong Il, durante o lançamento do "Kwangmyongsong-2", afirmou que, para desenvolver a ciência e a tecnologia do país, é necessário lançar satélites práticos como os meteorológicos e de comunicação. Sob a liderança de Kim Jong Un, o progresso continuou. Relatou-se que o "Kwangmyongsong-3" foi lançado com sucesso em 14 de abril de 2012, e o "Kwangmyongsong-4" em 7 de fevereiro de 2017. O governo da Coreia do Norte tem enfatizado a importância da ciência e tecnologia em todos os setores e tem se esforçado para elevar o nível de ciência e tecnologia através de avanços inovadores.
+
+A Coreia do Norte está se concentrando em aplicar os resultados da ciência e tecnologia espacial, já assegurados, na construção econômica o mais rápido possível. Esse esforço não é apenas uma responsabilidade dos cientistas da defesa, mas também dos especialistas e técnicos econômicos que aprendem rapidamente essas tecnologias. Todos devem elevar o nível da ciência e tecnologia para cumprir a difícil tarefa da construção econômica. O estado está orientando a construção da rede nacional de disseminação da ciência e tecnologia, a fim de corrigir a situação estratégica em geral e realizar o objetivo estratégico de popularizar a ciência e tecnologia.
+
+Naturalmente, o cultivo de talentos deve ser baseado em instituições educacionais, por isso, o ponto crucial para determinar a qualidade dos talentos é melhorar a organização educacional e as habilidades dos professores.
+
+#### 1 Enfatizando a ciência, o talento, a educação
+
+A era atual é a era da ciência e da tecnologia. O desenvolvimento da ciência e da tecnologia impulsiona o desenvolvimento em todos os setores, e o nível de desenvolvimento e a velocidade de toda a sociedade são determinados pelo nível da ciência e da tecnologia. O poder de um país também pode ser fortalecido pela ciência e tecnologia avançada.
+
+O trabalho de pesquisa científica deve contribuir plenamente para a manifestação do poder da economia nacional autossuficiente e deve permitir a plena expressão da criatividade dos cientistas e tecnólogos, ajudando a resolver as dificuldades encontradas nas atividades práticas de gestão. Os resultados da pesquisa científica e tecnológica devem ser aplicados na prática em tempo hábil, e as teorias que estão desconectadas da realidade são tão inúteis quanto os livros na biblioteca. A pesquisa científica deve ser conduzida com a combinação estreita de teoria e prática para ter realismo.
+
+Kim Jong Un apresentou tarefas e métodos concretos para a construção de um país poderoso em ciência e tecnologia na 7ª Conferência do Partido dos Trabalhadores da Coreia. Ele especificou questões como a promoção vigorosa de avanços na ciência e tecnologia, o papel da ciência e tecnologia na construção de uma economia poderosa, a importância dos talentos e a realização da popularização da ciência e tecnologia entre as pessoas, a correção da direção e gestão nacionais para o desenvolvimento da ciência e tecnologia do país, e o estabelecimento de um sistema de pesquisa e desenvolvimento científico.
+
+Em novembro de 2013, Kim Jong Un realizou a conferência nacional de cientistas e técnicos. Ele mobilizou todos os cientistas e técnicos do país para se esforçarem com base nos resultados alcançados pelos cientistas e técnicos do campo espacial, e não apenas seguir os caminhos percorridos por outros, mas dar saltos para realizar um desenvolvimento avançado.
+
+O talento é um recurso valioso para a nação e o povo, sendo fundamental na construção de uma nação forte em ciência e tecnologia. É enfatizado que, para elevar a posição da Coreia para uma nação forte em ciência e tecnologia, precisamos valorizar o talento e realizar a popularização da ciência e tecnologia entre todas as pessoas. A popularização da ciência e tecnologia significa que não apenas cientistas e engenheiros específicos, mas todos, incluindo trabalhadores e agricultores, devem ter acesso e utilizar a ciência e a tecnologia modernas. Isso representa um grande projeto que estabelece um objetivo elevado de conhecimento equivalente ao nível universitário.
+
+O presidente Kim Jong Un declarou 2017 como o Ano da Educação Científica e exigiu esforços para renovar as instalações e o ambiente de educação científica em todo o país. Ele enfatizou que deve haver salas de difusão de ciência e tecnologia em fábricas, empresas e fazendas cooperativas, e que todos os funcionários e fazendeiros devem receber educação em ciência e tecnologia moderna.
+
+O Instituto Nacional de Ciência e o Salão de Ciência e Tecnologia devem ser melhorados para realizar pesquisas e divulgação de ciência e tecnologia adequadas ao século XXI.
+
+Em 7 de fevereiro de 2016, a Coreia do Norte anunciou seu sucesso no lançamento do satélite de observação da Terra "Kwangmyongsong-4" e se tornou o décimo país do mundo a garantir a tecnologia de satélite artificial. Este feito deu esperança e fé aos cientistas e engenheiros de todo o país e foi considerado o fruto da política de valorização da ciência e tecnologia do partido. Os cientistas e engenheiros foram instigados a trabalhar ainda mais para se destacar como uma nação forte em ciência e tecnologia.
+
+Sem ciência, não há futuro. Não há nada demais para os cientistas, e todos os esforços devem ser feitos para garantir as atividades de vida e pesquisa dos cientistas e engenheiros. O estado rapidamente construiu um resort científico no Lago Yeonpung para que os cientistas e engenheiros pudessem descansar.
+
+Sob a liderança específica do presidente Kim Jong Un, foram feitos investimentos maciços em recursos materiais e humanos para resolver o problema da habitação para cientistas e engenheiros, e toda a sociedade estabeleceu um clima de respeito por cientistas e educadores. Além disso, o futuro dos cientistas, a rua das estrelas, as casas de educação da Universidade Kim Il Sung, o distrito habitacional de cientistas de satélites, as casas de educação da Universidade Industrial Kim Chaek, a rua Ryomyong e mais de 1.700 casas foram fornecidas para professores e pesquisadores da Universidade Kim Il Sung, aumentando a reputação da universidade e motivando todos os professores e pesquisadores.
+
+Na era da economia do conhecimento, em que a ciência e a tecnologia desempenham um papel decisivo no desenvolvimento social e o desenvolvimento da potência e cultura econômica do país depende do talento, é ainda mais necessário desenvolver a educação e elevá-la ao nível das principais universidades internacionais. Se a chave para a era da economia do conhecimento é a ciência e a tecnologia e o fator crítico é o talento, então a base para o cultivo do talento é a educação. O nível de civilização de um país é determinado pela altura da criatividade e do nível cultural das pessoas que vivem na sociedade. A criatividade e o nível cultural das pessoas aumentam por meio de uma educação sistemática.
+
+Em setembro de 2014, a Coreia do Norte convocou a 13ª Conferência Nacional de Educação e estabeleceu o objetivo de criar uma revolução educacional no novo século para fazer do nosso país uma nação educacional e um país forte em talentos. Ele apelou para criar todos os estudantes jovens como soldados confiáveis do estado forte e preparar um sistema educacional e ambiente onde todos possam receber educação superior e aprender ao longo da vida. Ele disse que as universidades deveriam estabelecer um sistema de educação à distância e que mais trabalhadores deveriam receber educação superior enquanto trabalham.
+
+O governo da Coreia tem pedido que as universidades responsáveis pelo ensino superior estabeleçam objetivos científicos de treinamento e de tipo de talentos, ajustando adequadamente sistemas, faculdades, departamentos e cursos para atender às demandas reais. Universidades principais, como a Universidade Kim Il Sung, Universidade de Engenharia Kim Chaek, Universidade de Arquitetura de Pyongyang, foram ordenadas a estabelecer novas instituições focadas em pesquisa acadêmica, informação, serviços de dados, e educação à distância. Essas universidades devem não só servir os professores e funcionários, mas também pessoas fora do campus. É necessário estabelecer um sistema mais completo de educação à distância que permita o aprendizado enquanto se trabalha e abrir as portas das universidades para toda a sociedade, inclusive para trabalhadores da construção civil e camponeses. Devem ser criadas universidades nas fábricas, fazendas e vilas de pescadores, fornecendo oportunidades para os jovens entusiasmados com o aprendizado receberem educação de alto nível no local de trabalho.
+
+Em setembro de 2012, a 6ª sessão da 12ª Assembleia Popular Suprema da República Popular Democrática da Coreia adotou uma lei para implementar uma educação compulsória de 12 anos em todo o país. Esta extensão de um ano da educação obrigatória de 11 anos não é simplesmente um aumento no tempo, mas uma medida para melhorar a qualidade da educação secundária, fortalecendo o sistema de educação, melhorando o conteúdo e os métodos de ensino, bem como as condições e ambiente educacional, para que os estudantes possam adquirir conhecimentos e habilidades práticas e formar uma base sólida para o aprendizado ao longo da vida. Acredita-se que a Coreia, que leva 10 anos para cultivar uma árvore e 100 anos para educar um talento, colherá frutos maravilhosos no futuro com seus esforços na educação.
+
+De fato, não é fácil estender o período de educação por um ano com toda a despesa suportada pelo estado em todo o país. Se apenas os indicadores econômicos fossem considerados, teria sido difícil tomar tal decisão. Implementar gratuitamente uma educação compulsória de 12 anos em todo o país, mesmo quando as sanções internacionais estão se intensificando e a situação econômica do país está difícil, onde cada watt de eletricidade, cada grama de carvão, cada gota de água deve ser usada ao máximo, é quase inimaginável. O sistema de educação obrigatória de 12 anos aumenta o sistema de ensino primário para 6 anos, divide o ensino secundário em ensino secundário inferior de 3 anos e ensino secundário superior de 3 anos. Na Coreia, seja na cidade ou no campo, quando chega a idade de estudar, é possível receber educação obrigatória de 12 anos fornecida pelo estado sem gastar um centavo.
+
+O apoio social à educação está crescendo, e é considerado uma responsabilidade natural. A Fábrica de Material Didático Dandelion da Coreia é uma base de produção especializada que produz materiais de aprendizagem para crianças e estudantes, desde jardins de infância até universidades, e distribui 50 milhões de materiais de aprendizagem gratuitamente em todo o país todos os anos.
+
+#### 2 Ciência, Tecnologia e Economia do Conhecimento
+
+A construção econômica da Coreia enfatiza claramente o desenvolvimento por meio da ciência. Não apenas em palavras, mas o país frequentemente organiza várias palestras especiais e conferências acadêmicas em nível nacional. Esse fenômeno, que não era tão comum no passado, dá a impressão de que uma nova tendência acadêmica está surgindo na comunidade acadêmica.
+
+Em 28 de novembro de 2017, um dia antes do anúncio do grande sucesso do teste de lançamento do novo foguete balístico intercontinental, a "Conferência de Ciência e Tecnologia Espacial - 2017" foi inaugurada no Palácio de Ciência e Tecnologia. Instituições de pesquisa, incluindo a Universidade Kim Il Sung, a Universidade Politécnica Kim Chaek, a Academia Nacional de Ciências, a Academia de Ciências Sociais, a Telecommunications Ministry e o Ministério de Proteção Ambiental, participaram da conferência organizada pelo Comitê Central da Liga de Ciência e Tecnologia da Coreia.
+
+O "Rodong Sinmun" relatou que "a conferência apresentou mais de 280 valiosos documentos, incluindo os significados e a importância do desenvolvimento espacial pacífico, a produção e tecnologia de controle dos satélites terrestres artificiais, e os resultados e experiências aplicadas conquistadas na conquista do espaço".
+
+A conferência foi dividida em subseções de satélite terrestre artificial, materiais e elementos espaciais, ciências básicas, aplicações e ciências sociais, e houve exibições de materiais editados por meio de filmes, além de palestras sobre "O ambiente espacial", "Materiais espaciais", e "Conquista do espaço".
+
+A Coreia é um país que prioriza a educação. Em particular, entrando no século 21, considerando a característica da época da economia do conhecimento, o país implementou a política de educação gratuita de 12 anos, defendendo o conhecimento. Na economia, também enfatiza a importância do conhecimento, afirmando que não pode haver economia sem conhecimento.
+
+A economia do conhecimento é enfatizada globalmente e tem características que a distinguem da economia de tempos econômicos anteriores que foram liderados por elementos físicos criadores de riqueza. O desenvolvimento econômico na era da economia do conhecimento não pode ser considerado sem o conhecimento, as informações e a tecnologia de ponta. A economia do conhecimento é uma economia que cria mais riqueza material com menos mão de obra, menos recursos e menos energia, com base na ciência e tecnologia de ponta. O mundo já entrou na era da economia do conhecimento centrada na ciência e tecnologia de ponta. Na Coreia, a expressão "economia do conhecimento" é comumente ouvida, indicando a vontade de não ficar para trás.
+
+Com a industrialização da ciência e tecnologia de ponta, os custos de pesquisa e desenvolvimento e de produção de novos produtos inevitavelmente aumentarão. O número de pessoas envolvidas em projetos de pesquisa científica também está aumentando continuamente, e eventualmente, a questão do financiamento se torna um obstáculo à industrialização de alta tecnologia. Para resolver este problema, a Coreia está mobilizando várias empresas comerciais para criar fundos para o desenvolvimento da ciência e tecnologia, além do apoio em nível nacional. Esses fundos são usados como despesas de pesquisa e são apoiados por universidades e instituições de pesquisa.
+
+Os principais setores da indústria de alta tecnologia atual incluem a indústria da informação, nanotecnologia, biotecnologia, indústria de novos materiais, indústria de energia nova, indústria espacial, indústria de tecnologia nuclear e indústria marinha. A quantidade de produtos estratégicos principais mostra o nível de desenvolvimento da indústria de alta tecnologia do país, o nível de conhecimento da economia como um todo e o nível de conhecimento das economias fortes.
+
+A Coreia reconhece que a base material e tecnológica da economia socialista na era da economia do conhecimento depende da modernização e informatização dos meios de trabalho e que seu nível de desenvolvimento depende inteiramente da altura da ciência e tecnologia. Portanto, é necessário formar uma estrutura econômica centrada na indústria de ciência e tecnologia de ponta e se tornar uma economia do conhecimento poderosa que se desenvolve com a força da ciência e tecnologia e da economia do conhecimento.
+
+#### 3 Palácio da Ciência e Tecnologia
+
+O Palácio da Ciência e Tecnologia foi construído para desempenhar a função de uma base de difusão da ciência e tecnologia adequada para a era da economia do conhecimento. Foi inaugurado em 25 de outubro de 2015, e a cerimônia de conclusão ocorreu no primeiro dia do Ano Novo de 2016. O Presidente Kim Jong Un iniciou a orientação no local do Ano Novo cortando a fita de conclusão e abriu a porta da ciência como o primeiro projeto do Ano Novo.
+
+Hoje, o Salão de Ciência e Tecnologia, juntamente com a Universidade Popular, serve como um novo salão de estudos para cientistas, tecnólogos, pesquisadores, estudantes universitários e toda a população, onde todos podem aprender livremente. Em particular, está sendo utilizado como uma base para a disseminação da ciência entre os jovens. O Salão de Ciência e Tecnologia recebe dezenas de milhares de visitantes todos os dias, e os instrutores que explicam aos visitantes guiam também os visitantes estrangeiros em vários idiomas. Os visitantes podem experimentar algumas das instalações diretamente e também podem pesquisar os materiais científicos desejados usando computadores.
+
+O Salão de Ciência e Tecnologia também serve como um local para intercâmbio internacional de ciência e tecnologia. Organizando eventos como debates internacionais e palestras especiais com convidados, especialistas de todo o país se reúnem para discussões acadêmicas. O Salão de Ciência e Tecnologia, que atua como uma janela e plataforma para troca de conhecimento científico, permite a conexão com a rede internacional de internet, tornando-se um local frequentemente visitado por acadêmicos e especialistas. Estão fazendo grandes esforços para convidar acadêmicos e especialistas famosos do exterior, organizar palestras especiais e promover interações.
+
+O Salão de Ciência e Tecnologia, que pode ser utilizado tanto por especialistas quanto pelo público em geral, se apressa em propor diversas ideias para ativar mais as funções de intercâmbio e disseminação de ciência e tecnologia.
+
+O Salão de Ciência e Tecnologia é uma biblioteca eletrônica abrangente que fornece informações científicas e tecnológicas atualizadas e possui uma grande instalação de serviços de telecomunicações eletrônicas. Está dividido em áreas como a "Sala dos Sonhos das Crianças", a "Sala de Leitura para Deficientes", a "Sala de Ciência Básica", a "Sala de Ciência e Tecnologia Avançada" e a "Sala de Ciência e Tecnologia Aplicada", onde se pode ver e experimentar os resultados da ciência e tecnologia, incluindo a tecnologia de satélites artificiais. O modelo do satélite "Galaxy-3" está instalado no centro do salão, permitindo que se veja de perto os últimos resultados da ciência e tecnologia da defesa.
+
+Além disso, opera uma rede de disseminação de ciência e tecnologia que pode ser acessada remotamente em todo o país, e também fornece respostas a perguntas relacionadas ao conhecimento de ciência e tecnologia a qualquer momento. Em todo o país, salas de disseminação de ciência e tecnologia estão sendo estabelecidas e um sistema de serviço formal está sendo estabelecido para disseminar materiais de ciência e tecnologia desde o centro até o local mais remoto.
+
+#### 4 Ampliação da Educação à Distância
+
+A educação à distância é bastante enfatizada na Coreia, e pude confirmar que a disseminação da ciência e tecnologia por meio da educação à distância está ocorrendo em todo o país. A educação à distância conduzida pela Universidade Kim Il Sung e pela Universidade Kim Chaek de Tecnologia para toda a sociedade é, em uma palavra, um sistema de estudos para todos. É possível cursar qualquer disciplina, seja ciências sociais ou ciências naturais, e você pode receber educação gratuitamente em qualquer sala de disseminação de ciência e tecnologia em fábricas ou áreas rurais.
+
+A educação à distância é uma forma de educação que está se tornando popular e mostrando resultados práticos à medida que a Coreia introduz um sistema educacional internacional para realizar a disseminação e educação do conhecimento científico em todo o país. O sistema de educação à distância instalado na biblioteca eletrônica da Universidade Kim Il Sung permite que você se matricule em qualquer lugar do país. Em todas as fábricas, empresas e cooperativas agrícolas, salas de disseminação que permitem receber este tipo de educação à distância estão preparadas. Na fábrica, os trabalhadores podem complementar o conhecimento que falta no processo de modernização ou se inscrever em um curso universitário e receber educação, e se passarem no exame, também podem receber um diploma universitário. Os agricultores estão na mesma situação. Depois da estação de plantio, os jovens vêm aqui para estudar e expandir seu conhecimento, e os jovens com grandes sonhos estão concluindo seus estudos universitários enquanto trabalham. A educação à distância é uma forma de receber a mesma educação em qualquer lugar do país, então você pode assistir a palestras de professores sem ir diretamente à universidade, independentemente de sua estrutura de conhecimento ou curso.
+
+No caso das Faculdades de Educação, elas são instituições que formam professores de jardins de infância e escolas primárias em todo o país. As 15 faculdades de educação em todo o país possuem um sistema que permite a realização de educação regular à distância, unificando o nível de ensino em todo o país e permitindo que qualquer pessoa receba a mesma educação em tempo real, independente de onde esteja. Portanto, acredita-se que a educação à distância já se tornou uma ferramenta de ensino essencial na Coreia.
+
+#### 5 Integração de Educação, Pesquisa Científica e Produção
+
+Em outubro de 2016, em comemoração ao 70º aniversário da Universidade Kim Il Sung, uma carta pessoal do Presidente Kim Jong Un foi entregue à universidade. Essa carta delineou o caminho a ser seguido pela universidade. Ou seja, houve uma importante mudança na direção de focar apenas na educação e pesquisa científica na universidade para a realização de uma integração que pudesse ser aplicada à produção. Em outras palavras, não é ensinar conhecimento morto, mas conhecimento aplicável à produção real.
+
+Isso é interpretado como um pedido para a área de educação em ciência e tecnologia para aplicar os resultados da pesquisa científica à realidade da construção econômica, que está focada em concentrar todos os esforços. Portanto, institutos de pesquisa de alta tecnologia capazes de introduzir os resultados da pesquisa na produção foram estabelecidos na Universidade Kim Il Sung e na Universidade Kim Chaek de Tecnologia, e edifícios independentes foram construídos para abrigar bases de pesquisa que podem ser aplicadas à produção.
+
+Os resultados das pesquisas científicas dos professores da Universidade Kim Il Sung estão sendo aplicados à produção na prática, e há cada vez mais casos disso. Os professores estão resolvendo problemas diretamente nas empresas de fábricas e os efeitos estão sendo reconhecidos. No entanto, espera-se que mais resultados de pesquisas científicas e tecnológicas surjam na construção de um poderoso estado socialista, e é preciso produzir talentos mais criativos e práticos para resolver rapidamente os desafios tecnológicos desatualizados. Os professores universitários estão se esforçando para combinar organicamente a educação e a aplicação, transmitindo suas experiências resolvidas no campo da produção em suas palestras na universidade.
+
+Em conclusão, a universidade deve realizar a integração de educação, pesquisa científica e produção. A Universidade Kim Il Sung e a Universidade Kim Chaek de Tecnologia estão liderando os esforços para produzir mais resultados de pesquisa de professores, enfatizando o papel do Instituto de Pesquisa e Desenvolvimento Avançado, que tem como objetivo a conversão tecnológica e estabeleceu uma base aplicada. O Instituto de Pesquisa e Desenvolvimento Avançado tem múltiplos objetivos, incluindo a realização da função de incubadora de produtos de ciência e tecnologia e contribuir para sua aplicação à produção.
+
+Na conferência do 8º Partido dos Trabalhadores da Coreia, encerrada no ano passado, o Presidente Kim Jong Un enfatizou a importância do impacto da ciência e tecnologia na construção econômica, dizendo: "Devemos aumentar o nível de ciência e tecnologia de nosso país durante o novo plano quinquenal, e fortalecer a cooperação criativa entre cientistas, técnicos e produtores para resolver de maneira pragmática os problemas científicos e técnicos que surgem na construção econômica e na melhoria da vida das pessoas."
+
+#### 6 Instituto de Desenvolvimento de Tecnologia Avançada
+
+O Instituto de Desenvolvimento de Tecnologia Avançada parece ser uma base industrial recentemente introduzida na Coreia. Começou a operar a todo vapor a partir de 2017, e em 2019, os edifícios dos Institutos de Desenvolvimento de Tecnologia Avançada da Universidade Kim Il Sung e da Universidade Kim Chaek de Tecnologia foram concluídos simultaneamente. Com uma área de cerca de 20.000 metros quadrados, o Instituto de Desenvolvimento de Tecnologia Avançada atualmente abriga vários laboratórios e experimenta a produção relacionada a setores como biologia, design eletrônico e usinagem.
+
+Seu objetivo é se tornar uma incubadora científica e tecnológica que combina pesquisa e produção com o objetivo de novas produtividades. No caso da Universidade Kim Il Sung, empresas afiliadas à universidade, como a Inteligência Comercial e a Jiheung Science and Technology Company, estão conduzindo atividades comerciais. A partir de agora, vários institutos de pesquisa industrial e bases de produção estão se unindo para realizar pesquisas em conjunto e tentar converter para a tecnologia aplicada.
+
+Estão fazendo esforços para promover negociações comerciais, dispostos a promover ativamente negócios de cooperação científica e tecnológica com empresas estrangeiras, viajar para o exterior e convidar especialistas e investidores estrangeiros. A vantagem da universidade é que possui uma forte equipe de pesquisa e itens concretos de industrialização no estágio de pré-industrialização com os resultados de suas pesquisas. Obviamente, a industrialização não é apenas com os resultados de sua própria pesquisa. Estão previstos para realizar trabalhos de conversão tecnológica adequada à realidade coreana, aceitando rapidamente os resultados da pesquisa de ciências avançadas líderes no mundo.
+
+Ao entrar no Instituto de Desenvolvimento de Tecnologia Avançada da Universidade Kim Il Sung, esta frase está escrita na entrada: "Competir com o mundo, desafiar o mundo, liderar o mundo." Isso é uma proposição exigida pelo Presidente Kim Jong Un para a equipe de ciência e tecnologia.
+
+Esses esforços também estão sendo realizados na Universidade Técnica Kim Chaek, que é a universidade que realiza a maior quantidade de pesquisas práticas, portanto, as expectativas do país são altamente elevadas. Outras universidades e organizações de pesquisa também começaram a seguir o exemplo dessas duas universidades, prestando muita atenção no desenvolvimento de tecnologia aplicada e na transferência de tecnologia. Em 2014, a Coreia do Norte incorporou 440 institutos de pesquisa em tecnologia aplicada ao gabinete, implementando a diretiva do presidente Kim Jong-un de realizar a integração de produção e ciência e tecnologia.
+
+Novas demandas foram levantadas para cada universidade e instituto de pesquisa. Ou seja, eles são incentivados a publicar artigos em revistas especializadas (SCI) de todo o mundo. Antes, eles ficavam satisfeitos apenas com a publicação de resultados de pesquisa em suas próprias publicações, mas agora são encorajados a pesquisar em uma perspectiva internacional. Portanto, todas as universidades e organizações de pesquisa estão se esforçando para encontrar revistas SCI de campo por campo. Afinal, eles devem pelo menos tentar chegar a um nível internacional. Eles devem conhecer o nível das tecnologias avançadas do mundo e até onde chegaram para poderem realizar pesquisas e obter resultados nesse nível. Alguns artigos de estudiosos norte-coreanos já começaram a ser publicados em publicações internacionais, e espera-se que mais artigos de pesquisa de estudiosos norte-coreanos sejam publicados, embora o número ainda seja limitado.
+
+O Instituto de Desenvolvimento de Tecnologia Avançada da Universidade Kim Il-sung já teve seu primeiro caso de colaboração internacional, onde uma empresa chinesa de Tianjin solicitou uma parceria na área de design de peças de automóveis e está fazendo pedidos personalizados. Embora ainda não haja muitos trabalhos, parece ser uma oportunidade para ganhar nova experiência para o desenvolvimento da indústria automobilística norte-coreana.
+
+### 6 Alguns problemas e desafios que estão sendo resolvidos
+
+Com a chegada da era da transformação na Coreia do Norte, começaram a aparecer mudanças sem precedentes, especialmente muitos novos fenômenos na economia. É natural que haja contradições entre o que muda e o que não muda, mas é mais importante identificar e resolver essas contradições de forma precisa. É necessária uma mudança de pensamento que esteja em consonância com o espírito dos tempos, bem como uma perspicácia para entender as mudanças internacionais. Em vez de adotar cegamente o estilo de gestão da economia de mercado, é necessário encontrar um método de gestão econômica que se adeque às realidades da Coreia do Norte. Portanto, a Coreia do Norte deve acolher com otimismo as novas mudanças e avançar juntos sob a liderança única do partido para alcançar a vitória final no campo econômico.
+
+No início de 2021, na 8ª Conferência do Partido dos Trabalhadores da Coreia, o presidente Kim Jong-un, pela primeira vez, repreendeu severamente os graves problemas que surgem na construção econômica da Coreia do Norte e revelou as causas do fracasso em cumprir a estratégia de desenvolvimento econômico. O fato do líder supremo da Coreia do Norte se arrepender publicamente na conferência do partido é sem precedentes. O arrependimento do líder supremo causou grandes ondas não apenas em todo o partido e na sociedade, mas também atraiu a atenção da comunidade internacional. Esses problemas foram identificados após pesquisa suficiente pelo grupo de investigação do partido central antes da 8ª conferência do partido, então eles foram apontados como coisas que definitivamente precisam ser resolvidas. O fato de Kim Jong-un formalizar os problemas internos mostra a atitude pragmática do líder, e também mostra que há muitos problemas que precisam ser definitivamente melhorados na construção econômica. Na Coreia do Norte, um movimento de crítica e auto-crítica entre os funcionários está em andamento, e esforços estão sendo feitos para resolver problemas que foram formados ao longo de muitos anos.
 
 ...
 
