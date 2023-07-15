@@ -973,3 +973,77 @@ Lembre-se de que esses valores de IG são aproximados e podem variar dependendo 
 
 ---
 ---
+
+|Alimento|Porção|Proteína|Carboidratos|Gorduras|Fibras|Calorias|% de Calorias Totais|% IDR Proteína|% IDR Carboidratos|% IDR Gorduras|% IDR Fibras|Índice de Importância|Relevância de Micronutrientes|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Atum enlatado em água|1 lata|39g|0g|1g|0g|179|8.95%|75%|0%|1.5%|0%|Alta|Alta (Ômega-3, Vit. D, Selênio)|
+|Sardinha enlatada|1 lata|23g|0g|11g|0g|191|9.55%|44%|0%|16%|0%|Alta|Alta (Ômega-3, Vit. D, Cálcio)|
+|Barra de proteína|50g|20g|20g|7g|5g|230|11.5%|38%|7%|10%|20%|Alta|Média|
+|Jerky|28g|9g|7g|1g|0g|80|4%|17%|2.5%|1.5%|0%|Média|Baixa|
+|Pão integral|1 fatia|4g|15g|1g|2g|80|4%|7.5%|5%|1.5%|8%|Média|Alta (B-Vit, Ferro, Magnésio)|
+|Nozes|28g|5g|4g|18g|2g|200|10%|9.5%|1.5%|27%|8%|Alta|Alta (Ômega-3, Vit. E, Magnésio, Cobre)|
+|Sementes|28g|6g|7g|15g|8g|200|10%|11%|2.5%|22%|32%|Alta|Alta (Ômega-3, Magnésio, Ferro, Zinco)|
+|Manteiga de amendoim|2 colheres de sopa|7g|6g|16g|2g|180|9%|13%|2%|23%|8%|Alta|Média (B-Vit, Magnésio, Vit. E)|
+|Abacate|1/2 médio|2g|12g|15g|10g|160|8%|3.8%|4%|22%|40%|Alta|Alta (Vit. K, Fibras, Ômega-3)|
+|Banana|1 média|1g|27g|0g|3g|105|5.25%|1.9%|9%|0%|12%|Média|Alta (Potássio, Vit. C, B6, Magnésio)|
+|Maçã|1 média|0g|25g|0g|4g|95|4.75%|0%|8%|0%|16%|Média|Alta (Vit. C, Potássio, Fibras)|
+|Azeitonas|30g|0g|3g|3g|1g|40|2%|0%|1%|4.5%|4%|Baixa|Média (Vit. E, Ferro)|
+|Farinha de aveia|1/2 xícara|5g|27g|3g|4g|150|7.5%|9.5%|9%|4.5%|16%|Alta|Alta (Fibras, Magnésio, Fósforo)|
+|Iogurte grego sem gordura|170g|17g|6g|0g|0g|100|5%|32%|2%|0%|0%|Alta|Alta (Cálcio, Probióticos, Vit. B12)|
+|Queijo cottage|1/2 xícara|14g|6g|1g|0g|80|4%|27%|2%|1.5%|0%|Alta|Alta (Cálcio, Vit. B12)|
+|Chocolate amargo|1 barra (40g)|2g|17g|12g|3g|210|10.5%|3.8%|5.7%|18%|12%|Média|Média (Ferro, Antioxidantes)|
+|Leite em pó|1 colher de sopa|2g|12g|0g|0g|60|3%|3.8%|4%|0%|0%|Média|Alta (Cálcio, Vit. D)|
+|Feijão enlatado|1/2 xícara|7g|20g|1g|8g|110|5.5%|13%|7%|1.5%|32%|Alta|Alta (Ferro, Fibras, Potássio)|
+|Ervilhas enlatadas|1/2 xícara|4g|11g|0g|4g|60|3%|7.5%|4%|0%|16%|Alta|Alta (Vit. A, Vit. C, Fibras)|
+|Cereais integrais|1 xícara|5g|25g|3g|3g|160|8%|9.5%|8.3%|4.5%|12%|Média|Média|
+|Granola|1/2 xícara|5g|35g|7g|4g|210|10.5%|9.5%|11.7%|10.5%|16%|Média|Média (Ferro, Vit. E)|
+|Frutas secas|1/4 xícara|1g|30g|0g|2g|120|6%|1.9%|10%|0%|8%|Média|Alta (Potássio, Vit. C)|
+|Bolachas de arroz|1 unidade|1g|7g|0g|1g|35|1.75%|1.9%|2.3%|0%|4%|Baixa|Baixa|
+
+|Alimento|Porção|Proteína|Carboidratos|Gorduras|Fibras|Calorias|% de Calorias Totais|% IDR Proteína|% IDR Carboidratos|% IDR Gorduras|% IDR Fibras|Índice de Importância|Relevância de Micronutrientes|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|McDonald's - Big Mac|1 sanduíche|25g|45g|29g|3g|540|27%|48%|15%|43.5%|12%|Alta|Baixa|
+|McDonald's - McNuggets (10 unidades)|10 unidades|23g|26g|28g|2g|440|22%|44%|8.7%|42%|8%|Alta|Baixa|
+|McDonald's - McChicken|1 sanduíche|16g|40g|16g|2g|370|18.5%|30.5%|13.3%|24%|8%|Alta|Baixa|
+|Burger King - Whopper|1 sanduíche|28g|49g|40g|2g|660|33%|53.8%|16.3%|60%|8%|Alta|Baixa|
+|Burger King - Chicken Fries (9 unidades)|9 unidades|16g|26g|15g|1g|290|14.5%|30.5%|8.7%|22.5%|4%|Alta|Baixa|
+|Burger King - BK Stacker Triplo|1 sanduíche|39g|50g|69g|2g|1030|51.5%|74.5%|16.7%|103.5%|8%|Alta|Baixa|
+|Subway - Frango Teriyaki|1 sanduíche|36g|58g|9g|5g|540|27%|69.2%|19.3%|13.5%|20%|Alta|Média (Vit. A, Vit. C)|
+|Subway - Italiano|1 sanduíche|20g|44g|18g|6g|410|20.5%|38.5%|14.7%|27%|24%|Alta|Média (Vit. A, Vit. C)|
+|KFC - Balde de Frango (6 pedaços)|6 pedaços|60g|18g|69g|0g|930|46.5%|115%|6%|103.5%|0%|Alta|Baixa|
+|KFC - Sanduíche de Frango Crocante|1 sanduíche|23g|37g|19g|2g|420|21%|44%|12.3%|28.5%|8%|Alta|Baixa|
+|Habib's - Esfiha de Carne|1 unidade|6g|9g|5g|1g|90|4.5%|11.5%|3%|7.5%|4%|Média|Média|
+|Habib's - Beirute de Frango|1 sanduíche|33g|57g|33g|4g|650|32.5%|63.5%|19%|49.5%|16%|Alta|Média|
+
+|Alimento|Porção|Proteína|Carboidratos|Gorduras|Fibras|Calorias|% de Calorias Totais|% IDR Proteína|% IDR Carboidratos|% IDR Gorduras|% IDR Fibras|Índice de Importância|Relevância de Micronutrientes|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Subway - Sanduíche de Atum|1 sanduíche|20g|44g|18g|6g|480|24%|38.5%|14.7%|27%|24%|Alta|Alta (Ômega-3, Vit. D, Selênio)|
+|Subway - Sanduíche de Frango Teriyaki|1 sanduíche|36g|58g|9g|5g|540|27%|69.2%|19.3%|13.5%|20%|Alta|Alta (Vit. A, Vit. C)|
+|Subway - Salada de Frango|1 porção|12g|11g|2.5g|3g|140|7%|23%|3.7%|3.75%|12%|Alta|Alta (Vit. A, Vit. C)|
+|McDonald's - Salada César com Frango Grelhado|1 porção|27g|9g|8g|3g|230|11.5%|51.5%|3%|12%|12%|Alta|Alta (Vit. A, Vit. C)|
+|McDonald's - Wrap de Frango Grelhado|1 unidade|24g|33g|13g|3g|360|18%|46%|11%|19.5%|12%|Alta|Alta (Vit. A, Vit. C)|
+|Burger King - Salada de Frango Grelhado|1 porção|25g|7g|7g|3g|210|10.5%|48%|2.3%|10.5%|12%|Alta|Alta (Vit. A, Vit. C)|
+|Habib's - Salada de Tabule|1 porção|2g|30g|5g|5g|150|7.5%|3.8%|10%|7.5%|20%|Alta|Alta (Vit. A, Vit. C, Fibras)|
+|Habib's - Quibe de Forno|1 unidade|8g|20g|7g|3g|160|8%|15.4%|6.7%|10.5%|12%|Alta|Alta (Vit. B, Zinco, Ferro)|
+|KFC - Salada de Frango Grelhado|1 porção|24g|10g|6g|3g|180|9%|46%|3.3%|9%|12%|Alta|Alta (Vit. A, Vit. C)|
+|Pizza Hut - Pizza de Frango com Requeijão (1 fatia)|1 fatia|10g|25g|9g|2g|210|10.5%|19.2%|8.3%|13.5%|8%|Alta|Média (Cálcio, Vit. B12)|
+|Bob's - Sanduíche Natural de Atum|1 sanduíche|15g|31g|8g|2g|260|13%|28.8%|10.3%|12%|8%|Alta|Média (Ômega-3, Vit. D, Selênio)|
+|Bob's - Salada de Frango Grelhado|1 porção|23g|11g|4g|2g|180|9%|44.2%|3.7%|6%|8%|Alta|Alta (Vit. A, Vit. C)|
+
+|Alimento|Porção|Proteína|Carboidratos|Gorduras|Fibras|Calorias|% de Calorias Totais|% IDR Proteína|% IDR Carboidratos|% IDR Gorduras|% IDR Fibras|Índice de Importância|Relevância de Micronutrientes|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|Burger King - Combo Mega Stacker Catupiry|1 combo|54g|135g|130g|6g|2060|103%|103.8%|45%|195%|24%|Baixa|Baixa|
+|McDonald's - Combo Big Tasty|1 combo|46g|114g|110g|5g|1620|81%|88.5%|38%|165%|20%|Baixa|Baixa|
+|Bob's - Combo Big Bob Picanha|1 combo|52g|130g|85g|5g|1480|74%|100%|43.3%|127.5%|20%|Baixa|Baixa|
+|Habib's - Combo Beirute de Carne|1 combo|42g|120g|80g|4g|1360|68%|80.8%|40%|120%|16%|Baixa|Baixa|
+|McDonald's - Combo McFritas Mega|1 combo|15g|115g|80g|9g|1210|60.5%|28.8%|38.3%|120%|36%|Baixa|Baixa|
+|Subway - Combo Steak Cheddar Cremoso|1 combo|48g|140g|50g|6g|1180|59%|92.3%|46.7%|75%|24%|Média|Baixa|
+|Burger King - Combo BK Stacker Quad|1 combo|62g|103g|60g|6g|1120|56%|119.2%|34.3%|90%|24%|Baixa|Baixa|
+|KFC - Combo Balde de Frango com Batatas|1 combo|54g|100g|60g|5g|1060|53%|103.8%|33.3%|90%|20%|Baixa|Baixa|
+|Pizza Hut - Pizza Pepperoni (1 pizza grande)|8 fatias|88g|208g|104g|16g|2320|116%|169.2%|69.3%|156%|64%|Baixa|Baixa|
+|Burger King - Combo BK Chicken Fries|1 combo|45g|100g|50g|7g|960|48%|86.5%|33.3%|75%|28%|Baixa|Baixa|
+|McDonald's - Combo McRib|1 combo|40g|104g|48g|6g|950|47.5%|76.9%|34.7%|72%|24%|Baixa|Baixa|
+|Bob's - Combo Cheddar Australiano|1 combo|46g|91g|48g|5g|920|46%|88.5%|30.3%|72%|20%|Baixa|Baixa|
+
+---
+---
