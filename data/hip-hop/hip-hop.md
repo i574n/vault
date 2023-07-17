@@ -10750,3 +10750,46 @@ a recursividade reina, a nova canção
 
 ---
 ---
+
+sobe o som, abre o olho, aqui a parada é clima
+babilônia em desafio, escuta essa rima
+cento e quarenta bilhões de cheirosas na terra a se plantar
+no xadrez do c.o.2 o jogo começa a virar
+
+dançam as plantas no compasso do carbono a sugar
+vinte e dois gramas por dia, não tem como disfarçar
+um por cento de terras cultiváveis no front a marchar
+gigatoneladas, quatro e sessenta a menos a pairar
+
+cada hectare vira arena, cada planta um soldado
+dez mil guerreiras verdes a cada metro quadrado
+sessenta dias de batalha sob o sol a se lutar
+mais trinta de prorrogação no ciclo a vingar
+
+a água é o ouro, sem ela nada vai rolar
+duzentos e vinte litros pra cada planta se alimentar
+vinte por cento do líquido do mar vamos saquear
+seis trilhões de litros com fissão a se transformar
+
+de treze a vinte e duas usinas a provocar
+potência nuclear na veia pra água dessalinizar
+terawatts-hora de energia no peito a palpitar
+no núcleo do átomo o futuro a germinar
+
+colheita na mão, é hora do cânhamo bailar
+seca ao vento, ao sol, ao sabor do ar
+depois do trampo a fibra vem a brilhar
+papel, tecido, construção, um novo mundo a criar
+
+mas cola aqui mano, isso é só o esboço do trilhar
+um rascunho, um plano, a história a se desenhar
+o jogo é sinistro, muita onda pra surfar
+biodiversidade, legislação, sociedade a respeitar
+
+então bota fé, a missão é de arrepiar
+o desafio é monstro mas não dá pra se acovardar
+o planeta tá na linha, a gente tem que se ligar
+na pegada do carbono é a hora de virar
+
+---
+---
