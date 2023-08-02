@@ -13,7 +13,7 @@
 </video>
 
 <video controls>
-  <source src="https://dweb.link/ipfs/bafybeibt4f25ce7dj5ngvauhltmdkwtegbymv3iwpjau5gekx3njplv5ue?filename=Riget%2520S01E04.mkv" type="video/mp4">
+  <source src="https://bafybeibt4f25ce7dj5ngvauhltmdkwtegbymv3iwpjau5gekx3njplv5ue.ipfs.dweb.link/?filename=Riget+S01E04.mkv" type="video/mp4">
 </video>
 
 <video controls>
