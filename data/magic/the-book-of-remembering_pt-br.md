@@ -100,13 +100,13 @@ Ah, eu tenho tantos contos intermináveis para contar!
 
 ---
 
-[^1] No antigo panteão romano, Janus é o Deus da transição, do tempo, dos portões. Ele é um Deus de duas cabeças ou duas faces. Cada face está voltada na direção oposta e, dessa forma, ele pode ser considerado um Deus que olha para FORA e também para DENTRO simultaneamente. Ele é, portanto, o Deus de todos os começos, ele é o Deus que se conhece completamente, tanto o exterior quanto o interior, e está consciente de ambos. Ele é um deus que sabe e ensina como conhecer a totalidade de si mesmo.
+[^1]: No antigo panteão romano, Janus é o Deus da transição, do tempo, dos portões. Ele é um Deus de duas cabeças ou duas faces. Cada face está voltada na direção oposta e, dessa forma, ele pode ser considerado um Deus que olha para FORA e também para DENTRO simultaneamente. Ele é, portanto, o Deus de todos os começos, ele é o Deus que se conhece completamente, tanto o exterior quanto o interior, e está consciente de ambos. Ele é um deus que sabe e ensina como conhecer a totalidade de si mesmo.
 
 O sonhador aspira conhecer e lembrar como ele. Todos nós temos duas faces: um aspecto de nós mesmos olha para o mundo físico, e outra face (outro aspecto de nossos eus totais) que olha para as vastas dimensões interiores; as dimensões dos sonhos. Cada face pode esquecer a outra, então a pessoa média tem dois eus individuais distintos; o conhecido que olha para fora e a face desconhecida que olha para dentro. A batalha do sonhador, do projetista, é encontrar algum lugar no meio, algum 'portão' entre ambas as faces onde cada uma possa conhecer a outra. Janus é realmente o Deus do projetista e também o Deus daqueles que desejam lembrar. Ser como Janus, adorar Janus, é ser alguém que entende a totalidade de si mesmo, alguém que pode ver para fora e para dentro simultaneamente, alguém que conseguiu lembrar e manter uma posição cognitiva totalmente nova e expandida.
 
 ## INTRODUÇÃO
 
-**Na sublime guerra do homem contra a Realidade, o homem tem apenas uma arma, a imaginação.**
+**Na sublime guerra do homem contra a Realidade, o homem tem apenas uma arma, a imaginação.**  
 _― BENJAMIN DE CASSERES_
 
 Ao longo de todo o meu trabalho, tentei apresentar aos meus leitores a ação interior.
@@ -173,9 +173,9 @@ Quando você se sentir pesado, quando seu foco parecer um pouco esgotado, é min
 
 ## CAPÍTULO 1: PALAVRAS SÃO O PORTAL ESTELAR, ELAS AJUDAM VOCÊ A LEMBRAR
 
-**Porta: Por que, é simplesmente intransponível!**
-**Alice: Quer dizer, você não quer dizer impossível?**
-**Porta: Não, eu quero dizer intransponível. (gargalhadas) Nada é impossível!**
+**Porta: Por que, é simplesmente intransponível!**  
+**Alice: Quer dizer, você não quer dizer impossível?**  
+**Porta: Não, eu quero dizer intransponível. (gargalhadas) Nada é impossível!**  
 _― ALICE NO PAÍS DAS MARAVILHAS, FILME DE 1951_
 
 Meu desafio como orador e escritor moderno é começar a me adaptar a todas as mudanças tecnológicas disponíveis para nós agora. Isso não é uma coisa fácil, e tem havido desafios a esse respeito para todos nós.
@@ -196,9 +196,9 @@ Além disso, tais citações podem, por si mesmas, especialmente quando você se
 
 É a única magia que conta e, de certa forma, realmente se torna o primeiro entendimento/conhecimento daquelas chaves ocultas e daquele 'coelho branco' a que tenho me referido, que é, aliás, uma alusão a um personagem criado por um daqueles grandes escritores (e as obras grandemente inspiradas por eles) que às vezes cito, Lewis Carroll.
 
-**A Lagarta e Alice olharam uma para a outra por algum tempo em silêncio: finalmente, a Lagarta tirou o narguilé da boca e dirigiu-se a ela com uma voz lânguida e sonolenta.**
-**"Quem é você?" disse a Lagarta.**
-**Não foi um começo encorajador para uma conversa. Alice respondeu, meio envergonhada, "Eu – eu mal sei, senhor, neste momento – pelo menos eu sei quem eu era quando me levantei esta manhã, mas acho que devo ter mudado várias vezes desde então."**
+**A Lagarta e Alice olharam uma para a outra por algum tempo em silêncio: finalmente, a Lagarta tirou o narguilé da boca e dirigiu-se a ela com uma voz lânguida e sonolenta.**  
+**"Quem é você?" disse a Lagarta.**  
+**Não foi um começo encorajador para uma conversa. Alice respondeu, meio envergonhada, "Eu – eu mal sei, senhor, neste momento – pelo menos eu sei quem eu era quando me levantei esta manhã, mas acho que devo ter mudado várias vezes desde então."**  
 _― LEWIS CARROLL. AS AVENTURAS DE ALICE NO PAÍS DAS MARAVILHAS_
 
 Uma citação como esta, com tal verdade e intensidade ocultas, pode ser um verdadeiro mapa invertido, no sentido de que dentro da força desse pacote de informação, pode-se, se tiver o nível de energia certo, encontrar reinos inteiros ocultos. Esse é o segredo de algumas das chaves a serem encontradas por aqueles que podem entender e manipular, em um grau ou outro, esses espaços interiores que são o sustento do alquimista interior e que são a predileção de cada ser humano neste planeta, se apenas estiverem dispostos a arriscar e olhar para dentro com foco suficiente e implacável.
@@ -793,7 +793,7 @@ Isso, claro, é apenas a ponta do iceberg. Nossas verdadeiras capacidades estão
 
 ---
 
-**A coisa engraçada é que, enquanto a ciência pode dizer que verificou, para sua própria conclusão, que de fato somos muito menos do que imaginamos, essas mesmas verdades foram defendidas por místicos e escolas antigas de pensamento por milhares de anos. Se esses velhos dogmas são agora considerados nossa realidade pela ciência moderna, quais outras ideias antigas também podem ser verdadeiras?**
+**A coisa engraçada é que, enquanto a ciência pode dizer que verificou, para sua própria conclusão, que de fato somos muito menos do que imaginamos, essas mesmas verdades foram defendidas por místicos e escolas antigas de pensamento por milhares de anos. Se esses velhos dogmas são agora considerados nossa realidade pela ciência moderna, quais outras ideias antigas também podem ser verdadeiras?**  
 _― O LÓGICO LOUCO_
 
 ---
@@ -876,13 +876,13 @@ PRESTE ATENÇÃO À SUA ATENÇÃO!
 
 ---
 
-[^2] Deep Thought é um supercomputador extremamente poderoso, de fato sobrenatural, programado para calcular a resposta para a Pergunta Fundamental da "Vida, do Universo e de Tudo". Ele é apresentado na série de livros de ficção científica de Douglas Adams, O Guia do Mochileiro das Galáxias.
+[^2]: Deep Thought é um supercomputador extremamente poderoso, de fato sobrenatural, programado para calcular a resposta para a Pergunta Fundamental da "Vida, do Universo e de Tudo". Ele é apresentado na série de livros de ficção científica de Douglas Adams, O Guia do Mochileiro das Galáxias.
 
 ## CAPÍTULO 2: OS SERVIDORES
 
-**O Unicórnio olhou sonhadoramente para Alice e disse: "Fale, criança."**
-**Alice não pôde evitar que seus lábios se curvassem em um sorriso ao começar: "Sabe, eu sempre achei que Unicórnios fossem monstros fabulosos, também? Nunca vi um vivo antes!"**
-**"Bem, agora que nos vimos", disse o Unicórnio, "Se você acreditar em mim, eu acreditarei em você. É um trato?"**
+**O Unicórnio olhou sonhadoramente para Alice e disse: "Fale, criança."**  
+**Alice não pôde evitar que seus lábios se curvassem em um sorriso ao começar: "Sabe, eu sempre achei que Unicórnios fossem monstros fabulosos, também? Nunca vi um vivo antes!"**  
+**"Bem, agora que nos vimos", disse o Unicórnio, "Se você acreditar em mim, eu acreditarei em você. É um trato?"**  
 _― LEWIS CARROLL, ATRAVÉS DO ESPELHO_
 
 Todos os ensinamentos da alquimia interna estão conectados.
@@ -1158,7 +1158,7 @@ A: Muito obrigado!
 
 Aqui está uma pequena citação que você pode apreciar, da qual eu gosto muito:
 
-**O que precisamos fazer para permitir que a magia se apodere de nós é banir as dúvidas de nossas mentes. Uma vez que as dúvidas são banidas, tudo é possível.**
+**O que precisamos fazer para permitir que a magia se apodere de nós é banir as dúvidas de nossas mentes. Uma vez que as dúvidas são banidas, tudo é possível.**  
 _― DON JUAN MATUS_
 
 ---
@@ -1429,12 +1429,12 @@ A: Você pode recompensar seu servidor prestando mais atenção a ele e sendo ge
 
 ---
 
-[^3] _Magia e Mistério no Tibete_, 1929
+[^3]: _Magia e Mistério no Tibete_, 1929
 
 ## CAPÍTULO 3: A GRANDE OBRA
 
-**‘Bem, em NOSSO país,’ disse Alice, ainda ofegante, ‘geralmente você chega a outro lugar – se correr muito rápido por muito tempo, como temos feito.’**
-**‘Um país meio lento!’ disse a Rainha. ‘Agora, AQUI, você vê, leva toda a corrida que VOCÊ pode fazer, para ficar no mesmo lugar. Se você quer chegar a outro lugar, deve correr pelo menos o dobro dessa velocidade!’**
+**‘Bem, em NOSSO país,’ disse Alice, ainda ofegante, ‘geralmente você chega a outro lugar – se correr muito rápido por muito tempo, como temos feito.’**  
+**‘Um país meio lento!’ disse a Rainha. ‘Agora, AQUI, você vê, leva toda a corrida que VOCÊ pode fazer, para ficar no mesmo lugar. Se você quer chegar a outro lugar, deve correr pelo menos o dobro dessa velocidade!’**  
 _― LEWIS CARROLL, ATRAVÉS DO ESPELHO_
 
 Transmutação, que no mundo moderno pode ser chamada de uma espécie de manifestação, é algo muito importante para os alquimistas.
@@ -1739,7 +1739,7 @@ Você deve sempre se esforçar para entrar em contato com essa fonte interna dir
 
 ## CAPÍTULO 4: PROJETANDO ALÉM DAS SEIS PAREDES DO CUBO
 
-**"Se eu tivesse um mundo só meu, tudo seria um absurdo. Nada seria o que é, porque tudo seria o que não é. E ao contrário, o que é, não seria. E o que não seria, seria. Entende?"**
+**"Se eu tivesse um mundo só meu, tudo seria um absurdo. Nada seria o que é, porque tudo seria o que não é. E ao contrário, o que é, não seria. E o que não seria, seria. Entende?"**  
 _― ALICE NO PAÍS DAS MARAVILHAS, FILME DE 1951_
 
 Na perspectiva da pessoa moderna média - que neste caso pode significar a insistência moderna em um mundo material e racional que tem muito pouco espaço para a imaginação, para o mito, para os sonhos, para o espírito - o mundo está cheio de limitações.
@@ -1990,7 +1990,7 @@ E sim, é possível que tal conhecimento seja trazido de outro lugar. Em muitos 
 
 ## CAPÍTULO 5: ALÉM DO CICLO DA VIDA E DA MORTE, E ESCAPANDO DO SOL NEGRO
 
-**'Ele está sonhando agora,' disse Tweedledee: 'e o que você acha que ele está sonhando?' Alice disse 'Ninguém pode adivinhar isso.' 'Por que, sobre VOCÊ!' Tweedledee exclamou, batendo palmas triunfantemente. 'E se ele parasse de sonhar com você, onde você acha que estaria?' 'Onde estou agora, é claro,' disse Alice. 'Não você!' Tweedledee retrucou com desprezo. 'Você não estaria em lugar nenhum. Por quê, você é apenas uma espécie de coisa em seu sonho!' 'Se aquele Rei acordasse,' acrescentou Tweedledum, 'você se apagaria — bum! — como uma vela!'**
+**'Ele está sonhando agora,' disse Tweedledee: 'e o que você acha que ele está sonhando?' Alice disse 'Ninguém pode adivinhar isso.' 'Por que, sobre VOCÊ!' Tweedledee exclamou, batendo palmas triunfantemente. 'E se ele parasse de sonhar com você, onde você acha que estaria?' 'Onde estou agora, é claro,' disse Alice. 'Não você!' Tweedledee retrucou com desprezo. 'Você não estaria em lugar nenhum. Por quê, você é apenas uma espécie de coisa em seu sonho!' 'Se aquele Rei acordasse,' acrescentou Tweedledum, 'você se apagaria — bum! — como uma vela!'**  
 _― LEWIS CARROLL, ATRAVÉS DO ESPELHO_
 
 Qual é o nosso maior desafio?
@@ -2295,7 +2295,7 @@ Este é um ponto incrivelmente difícil de expressar em palavras porque o tempo 
 
 ## CAPÍTULO 6: O ESTRANHO
 
-**“Eu me pergunto se fui mudado durante a noite. Deixe-me pensar. Eu era o mesmo quando me levantei esta manhã? Quase acho que posso me lembrar de ter me sentido um pouco diferente. Mas se eu não sou o mesmo, a próxima pergunta é 'Quem no mundo sou eu?' Ah, esse é o grande enigma!”**
+**“Eu me pergunto se fui mudado durante a noite. Deixe-me pensar. Eu era o mesmo quando me levantei esta manhã? Quase acho que posso me lembrar de ter me sentido um pouco diferente. Mas se eu não sou o mesmo, a próxima pergunta é 'Quem no mundo sou eu?' Ah, esse é o grande enigma!”**  
 _― LEWIS CARROLL, AS AVENTURAS DE ALICE NO PAÍS DAS MARAVILHAS_
 
 A natureza da alquimia interior é tal que deve abranger um espectro incrivelmente amplo de fazer e ser. Eu poderia dizer isso de outra maneira, dizendo que para um alquimista interior ser bem-sucedido, ele não só deve entender um amplo espectro da realidade, mas também deve aprender a manipular em tantos locais dimensionais quanto possível.
@@ -2344,10 +2344,10 @@ Assim, o caminho da alquimia interior é variado. É um caminho que contém dent
 
 O mundo do alquimista interior é, portanto, um mundo estranho, e o teatro operacional de tal adepto varia e aumenta em variação, à medida que o adepto se torna cada vez mais poderoso. Assim, como um palestrante eu mesmo, há uma ampla gama de possíveis perguntas que eu posso ter que responder, que respondi, e algumas delas podem fornecer um certo tipo de iluminação para você. Mas, mais importante, é minha esperança que elas permitam que aquela esfera interior, aquele ponto de acumulação, se reúna em torno dessas perguntas e respostas, e dessa maneira se torne mais coesa e estacionária em posições novas e estranhas, que esperançosamente permitirão que sua esfera de acumulação se torne cada vez mais coesa ao longo do tempo. E é minha esperança que com o tempo tal coesão permita que você viaje através da infinitude de possíveis pontos perceptivos disponíveis para você.
 
-**Acho bem provável que sejamos a única civilização dentro de várias centenas de anos-luz; caso contrário, teríamos ouvido ondas de rádio.**
+**Acho bem provável que sejamos a única civilização dentro de várias centenas de anos-luz; caso contrário, teríamos ouvido ondas de rádio.**  
 _― STEPHEN HAWKING_
 
-**O poder do rádio não é que ele fala para milhões, mas que ele fala intimamente e privadamente para cada um desses milhões.**
+**O poder do rádio não é que ele fala para milhões, mas que ele fala intimamente e privadamente para cada um desses milhões.**  
 _― HALLIE FLANAGAN_
 
 ### Perguntas e Respostas
@@ -2806,9 +2806,9 @@ Quanto ao porquê de meu trabalho não ser censurado, é porque realmente não s
 
 ---
 
-[^4] “Grok” é uma palavra cunhada por Robert A. Heinlein no livro _Um Estranho numa Terra Estranha_. Em um sentido fundamental, significa entender algo em um nível profundo e intuitivo; ter uma espécie de conexão e comunicação jubilosa com o outro.
+[^4]: “Grok” é uma palavra cunhada por Robert A. Heinlein no livro _Um Estranho numa Terra Estranha_. Em um sentido fundamental, significa entender algo em um nível profundo e intuitivo; ter uma espécie de conexão e comunicação jubilosa com o outro.
 
-[^5] “Loosh” é um termo cunhado por Robert Monroe para se referir à energia espiritual ou psíquica que um indivíduo (homem ou animal) produz na luta. Loosh é uma fonte de alimento usada por certos seres transdimensionais para prolongar suas próprias vidas.
+[^5]: “Loosh” é um termo cunhado por Robert Monroe para se referir à energia espiritual ou psíquica que um indivíduo (homem ou animal) produz na luta. Loosh é uma fonte de alimento usada por certos seres transdimensionais para prolongar suas próprias vidas.
 
 ## CONCLUSÃO
 
@@ -2870,15 +2870,15 @@ Essas passagens têm o objetivo de ajudá-lo nesse sentido. Para ajudá-lo a lem
 
 Lembre-se sempre, lembre-se.
 
-**Uma vez que o foco da atenção se torna implacável, tudo é possível.**
+**Uma vez que o foco da atenção se torna implacável, tudo é possível.**  
 _― ALGUM ALQUIMISTA INTERNO_
 
-**“Você poderia me dizer, por favor, para qual caminho devo ir daqui?"**
-**"Isso depende muito de onde você quer chegar," disse o Gato.**
-**"Eu não me importo muito com o lugar -" disse Alice.**
-**"Então não importa o caminho que você tome," disse o Gato.**
-**"- contanto que eu chegue EM ALGUM LUGAR," Alice acrescentou como explicação.**
-**"Ah, você com certeza fará isso," disse o Gato, "se você apenas caminhar o suficiente."**
+**“Você poderia me dizer, por favor, para qual caminho devo ir daqui?"**  
+**"Isso depende muito de onde você quer chegar," disse o Gato.**  
+**"Eu não me importo muito com o lugar -" disse Alice.**  
+**"Então não importa o caminho que você tome," disse o Gato.**  
+**"- contanto que eu chegue EM ALGUM LUGAR," Alice acrescentou como explicação.**  
+**"Ah, você com certeza fará isso," disse o Gato, "se você apenas caminhar o suficiente."**  
 _― LEWIS CARROLL, AS AVENTURAS DE ALICE NO PAÍS DAS MARAVILHAS_
 
 ---
