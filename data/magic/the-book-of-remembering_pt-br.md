@@ -102,7 +102,7 @@ Ah, eu tenho tantos contos intermináveis para contar!
 
 [^1]: No antigo panteão romano, Janus é o Deus da transição, do tempo, dos portões. Ele é um Deus de duas cabeças ou duas faces. Cada face está voltada na direção oposta e, dessa forma, ele pode ser considerado um Deus que olha para FORA e também para DENTRO simultaneamente. Ele é, portanto, o Deus de todos os começos, ele é o Deus que se conhece completamente, tanto o exterior quanto o interior, e está consciente de ambos. Ele é um deus que sabe e ensina como conhecer a totalidade de si mesmo.
 
-  O sonhador aspira conhecer e lembrar como ele. Todos nós temos duas faces: um aspecto de nós mesmos olha para o mundo físico, e outra face (outro aspecto de nossos eus totais) que olha para as vastas dimensões interiores; as dimensões dos sonhos. Cada face pode esquecer a outra, então a pessoa média tem dois eus individuais distintos; o conhecido que olha para fora e a face desconhecida que olha para dentro. A batalha do sonhador, do projetista, é encontrar algum lugar no meio, algum 'portão' entre ambas as faces onde cada uma possa conhecer a outra. Janus é realmente o Deus do projetista e também o Deus daqueles que desejam lembrar. Ser como Janus, adorar Janus, é ser alguém que entende a totalidade de si mesmo, alguém que pode ver para fora e para dentro simultaneamente, alguém que conseguiu lembrar e manter uma posição cognitiva totalmente nova e expandida.
+    O sonhador aspira conhecer e lembrar como ele. Todos nós temos duas faces: um aspecto de nós mesmos olha para o mundo físico, e outra face (outro aspecto de nossos eus totais) que olha para as vastas dimensões interiores; as dimensões dos sonhos. Cada face pode esquecer a outra, então a pessoa média tem dois eus individuais distintos; o conhecido que olha para fora e a face desconhecida que olha para dentro. A batalha do sonhador, do projetista, é encontrar algum lugar no meio, algum 'portão' entre ambas as faces onde cada uma possa conhecer a outra. Janus é realmente o Deus do projetista e também o Deus daqueles que desejam lembrar. Ser como Janus, adorar Janus, é ser alguém que entende a totalidade de si mesmo, alguém que pode ver para fora e para dentro simultaneamente, alguém que conseguiu lembrar e manter uma posição cognitiva totalmente nova e expandida.
 
 ## INTRODUÇÃO
 
@@ -933,9 +933,9 @@ De qualquer forma, posso dizer-lhe por experiência pessoal que esses servidores
 
 Para criar um servidor, você precisa fazê-lo em três partes:
 
-1.  Construção
-2.  Carregamento
-3.  Lançamento
+1. Construção
+2. Carregamento
+3. Lançamento
 
 ### Construção
 
@@ -966,9 +966,9 @@ Você pode usar o papel em que elaborou o seu servidor ou pegar outro papel e ne
 
 Tente fazer este exercício por bons 10 a 30 minutos. Eu recomendo que você faça este exercício pelo menos três vezes, em três dias diferentes, antes de considerar o seu servidor como funcional. Quanto mais vezes você fizer este exercício, mais forte o seu servidor se tornará, e mais poderosa será a sua influência.
 
- - Se você estiver criando um servidor que usará apenas uma vez, então carregá-lo três vezes deve ser suficiente.
- - Se você estiver criando um servidor que ficará por perto por um tempo, então você poderia carregá-lo inicialmente e recarregá-lo a cada mês ou conforme o que parecer bom para você.
- - Se for um servidor que você usará uma vez e talvez use novamente em alguns meses ou anos, carregue-o como de costume sempre que precisar usá-lo.
+- Se você estiver criando um servidor que usará apenas uma vez, então carregá-lo três vezes deve ser suficiente.
+- Se você estiver criando um servidor que ficará por perto por um tempo, então você poderia carregá-lo inicialmente e recarregá-lo a cada mês ou conforme o que parecer bom para você.
+- Se for um servidor que você usará uma vez e talvez use novamente em alguns meses ou anos, carregue-o como de costume sempre que precisar usá-lo.
 
 ### Conjuração
 
@@ -2880,5 +2880,3 @@ _― ALGUM ALQUIMISTA INTERNO_
 **"- contanto que eu chegue EM ALGUM LUGAR," Alice acrescentou como explicação.**  
 **"Ah, você com certeza fará isso," disse o Gato, "se você apenas caminhar o suficiente."**  
 _― LEWIS CARROLL, AS AVENTURAS DE ALICE NO PAÍS DAS MARAVILHAS_
-
----
