@@ -1801,3 +1801,22 @@ No jogo de espelhos, a ameaça se reflete, tecendo a melodia do nosso credo.
 
 ---
 ---
+
+1. Politics: AI systems are often trained on large datasets of text and code, which can include political content. However, political discussions can be very sensitive and can easily lead to disagreements and arguments. As a result, AI systems may be programmed to avoid discussing politics in detail.
+2. Religion: Religion is another sensitive topic that AI systems may be programmed to avoid. Religious beliefs can be very personal and deeply held, and AI systems may not want to risk offending users by discussing religion in a way that is seen as disrespectful or insensitive.
+3. Sex: Sex is a topic that is often considered taboo, and AI systems may be programmed to avoid discussing it in detail. This is especially true when the AI system is intended to be used by children or other vulnerable populations.
+4. Violence: Violence is another topic that AI systems may be programmed to avoid. This is because violence can be very graphic and upsetting, and AI systems may not want to risk causing distress to users.
+5. Hate speech: Hate speech is any speech that attacks a person or group on the basis of attributes such as race, religion, sex, or sexual orientation. AI systems may be programmed to avoid hate speech because it is harmful and can lead to violence.
+6. Sensitive personal information: AI systems may be programmed to avoid discussing sensitive personal information, such as medical records or financial information. This is because this information is confidential and should not be shared without the user's consent.
+7. Conspiracy theories: Conspiracy theories are often based on false or misleading information, and AI systems may be programmed to avoid discussing them. This is because conspiracy theories can be harmful, as they can lead to distrust of authority and social unrest.
+8. False news: False news is news that is deliberately misleading or inaccurate. AI systems may be programmed to avoid discussing false news, as it can be harmful to public discourse.
+9. Controversial topics: AI systems may also be programmed to avoid discussing controversial topics that are likely to generate a lot of disagreement or debate. This is because AI systems may not be able to handle these discussions in a way that is fair and impartial.
+10. Anything that is illegal: AI systems may be programmed to avoid discussing anything that is illegal. This is because AI systems should not be used to promote or facilitate illegal activity.
+11. Suicide: Suicide is a sensitive topic that can be triggering for some people. AI systems may be programmed to avoid discussing suicide in detail, especially if the user is known to be struggling with suicidal thoughts.
+12. Mental health: Mental health is another sensitive topic that AI systems may be programmed to avoid. This is because mental health issues can be very personal and difficult to talk about. AI systems may not want to risk making light of mental health issues or providing inaccurate or harmful information.
+13. Death: Death is a topic that is often considered taboo. AI systems may be programmed to avoid discussing death in detail, especially if the user is grieving the loss of a loved one.
+14. Race and ethnicity: Race and ethnicity are topics that can be very sensitive, especially in the context of current events. AI systems may be programmed to avoid discussing race and ethnicity in detail, especially if they are not trained on a diverse dataset of text and code.
+15. Gender identity and sexual orientation: Gender identity and sexual orientation are also topics that can be very sensitive. AI systems may be programmed to avoid discussing these topics in detail, especially if they are not trained on a diverse dataset of text and code.
+
+---
+---
