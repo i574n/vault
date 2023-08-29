@@ -15,7 +15,13 @@ rsync -av `
     --exclude 'target' `
 `
     --include 'LICENSE' `
+    --include '*.editorconfig' `
+    --include '*.edn' `
+    --include '*.gitignore' `
+    --include '*.json' `
     --include '*.md' `
+    --include '*.ps1' `
+    --include '*.toml' `
 `
     --include '*/' `
     --exclude '*' `
