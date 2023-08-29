@@ -1,0 +1,15 @@
+.obsidian/plugins/**/*.js
+.obsidian/plugins/**/*.css
+.obsidian/plugins/**/manifest.json
+
+.obsidian/plugins/**/cursor-positions.json
+.obsidian/plugins/**/rss-reader/data.json
+
+*.bundle
+.*.md
+.history
+
+dist/
+target/
+gen/
+file_cache/

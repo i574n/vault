@@ -1,0 +1,291 @@
+{
+  "main": {
+    "id": "4edc026abb5b6645",
+    "type": "split",
+    "children": [
+      {
+        "id": "c148112e48735919",
+        "type": "split",
+        "children": [
+          {
+            "id": "09ff9f3c8d338bd0",
+            "type": "split",
+            "dimension": 58.434221146085555,
+            "children": [
+              {
+                "id": "324240d2f1b88acc",
+                "type": "tabs",
+                "dimension": 50,
+                "children": [
+                  {
+                    "id": "55df00fd14ac860b",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "README.md",
+                        "mode": "source",
+                        "source": true
+                      }
+                    },
+                    "group": "d77b1d6c610149eb"
+                  }
+                ]
+              },
+              {
+                "id": "5454e2a273396d41",
+                "type": "tabs",
+                "dimension": 50,
+                "children": [
+                  {
+                    "id": "479bcbae50342d47",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "README.md",
+                        "mode": "source",
+                        "source": false
+                      }
+                    },
+                    "group": "d77b1d6c610149eb"
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical"
+          },
+          {
+            "id": "140ca31b6a8917b5",
+            "type": "split",
+            "dimension": 41.565778853914445,
+            "children": [
+              {
+                "id": "8c63664035249ad2",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "46f222e247c245e9",
+                    "type": "leaf",
+                    "state": {
+                      "type": "empty",
+                      "state": {}
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "a5f5658258ba861c",
+                "type": "tabs",
+                "children": [
+                  {
+                    "id": "c186d0d6ccec40d3",
+                    "type": "leaf",
+                    "state": {
+                      "type": "markdown",
+                      "state": {
+                        "file": "data/ai/chatgpt.toml",
+                        "mode": "source",
+                        "source": true
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "direction": "vertical"
+          }
+        ],
+        "direction": "horizontal"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9a7c774effa6eafd",
+    "type": "split",
+    "children": [
+      {
+        "id": "fdc23a14d85836d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e7704b2cb9d03fd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "54dbd97e0aead459",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "kimbanda",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a5e2204b92f295a6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e0086965fbbcc4f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 215.50418853759766
+  },
+  "right": {
+    "id": "7542570fcac33ce2",
+    "type": "split",
+    "children": [
+      {
+        "id": "e213229fc5c1d09d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb730bc14fe38f2d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31fc5489b3af8a48",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f161b8e816175737",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "39de0571b9cce81a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "20ff12364941070d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 267.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "random-note:Open random note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-custom-frames:Open https_dark://": false,
+      "obsidian-custom-frames:Open http://": false
+    }
+  },
+  "active": "46f222e247c245e9",
+  "lastOpenFiles": [
+    "README.md",
+    "data/fiction/stories.md",
+    "data/ai/chatgpt.md",
+    "data/workflow/file_cache/2023-07-09.md",
+    "data/art/ephemeral-art_pt-br.md",
+    "data/workflow/file_cache/2023-07-07.md",
+    "data/psychology/inner-inferno_pt-br.md",
+    "LICENSE",
+    "data/drugs/selva-verde_pt-br.md",
+    "data/workflow/file_cache/2023-07-05.md",
+    "data/magic/o-caminho-demonico-dos-dados_pt-br.md",
+    "data/hip-hop/complexity-and-competition_pt-br.md",
+    "data/workflow/file_cache/2023-07-01.md",
+    "data/workflow/file_cache/2023-07-03.md",
+    "data/workflow/file_cache/2023-06-30.md",
+    "data/workflow/file_cache/2023-06-29.md",
+    "data/workflow/file_cache/2023-06-26.md",
+    "data/workflow/file_cache/2023-06-24.md",
+    "data/sex/sex.html.md",
+    "data/dialects/korean.md",
+    "data/dialects/english.md",
+    "data/dialects/korean.html.md",
+    "data/ai/chatgpt.toml",
+    "data/workflow/file_cache/albums2.json",
+    "data/workflow/file_cache/albums.json.md",
+    "data/workflow/file_cache/albums.json",
+    "data/workflow/file_cache/2023-06-28.md",
+    "data/tech/devilopment_pt-br.md",
+    "data/community/community.md",
+    "data/spirituality/ressurection_pt-br.md",
+    "data/music/file_cache/[The Endless Knot] Presents  ATMOS [5 album tribute to goa gil] mixed by CinderVOMIT.mp3",
+    "data/science",
+    "data/biology",
+    "data/history 1",
+    "data/fiction/comics",
+    "data/fiction/prose",
+    "data/identity/file_cache/marriage certificate 084442 01 55 2019 2 00057 107 0015664 37 - 2019-05-10.jpg",
+    "data/cliparts/file_cache/windows avatar.jpg",
+    "data/cliparts/file_cache/i574n avatar.png",
+    "data/cliparts/file_cache/prima avatar.png",
+    "3_resources/identity/file_cache/marriage certificate 084442 01 55 2019 2 00057 107 0015664 37 - 2019-05-10.jpg",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/transfer.png",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/token-default.svg",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/success.svg",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/standards.png",
+    "3_resources/web3/file_cache/universalprofile-extension-v1.2.1.1-mv2/img/smart-contracts.png"
+  ]
+}
