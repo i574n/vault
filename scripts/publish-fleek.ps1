@@ -1,3 +1,14 @@
+param(
+    $ScriptDir = $PSScriptRoot
+)
+Set-Location $ScriptDir
+$ErrorActionPreference = "Stop"
+
+
+npm i -g @fleekxyz/cli
+
+Set-Location ..
+
 $a = fleek sites deploy
 Write-Output $a
 $a = $a | grep "Site IPFS CID"

@@ -9,5 +9,7 @@
 .*.md
 .history
 
+dist/
+target/
 gen/
 file_cache/

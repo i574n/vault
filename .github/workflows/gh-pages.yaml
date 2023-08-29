@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: mv .obsidian _.obsidian
+      - run: pwsh scripts/publish.ps1
 
       - uses: actions/upload-artifact@v2
         with:
           name: gh-pages
-          path: .
+          path: dist
           retention-days: 30
 
   push:
@@ -50,7 +50,5 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm i -g @fleekxyz/cli
-
       - if: ${{ steps.hash.outputs.hash != github.event.before }}
-        run: cd gh-pages && pwsh publish.ps1
+        run: pwsh gh-pages/scripts/publish-fleek.ps1
