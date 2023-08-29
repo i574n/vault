@@ -22,6 +22,7 @@ jobs:
 
   push:
     needs: build
+    timeout-minutes: 60
     runs-on: ubuntu-latest
     env:
       FLEEK_TOKEN: ${{ secrets.FLEEK_TOKEN }}
