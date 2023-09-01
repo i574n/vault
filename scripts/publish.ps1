@@ -42,10 +42,17 @@ Invoke-WebRequest $url -OutFile $path -ErrorAction SilentlyContinue
 
 . ../target/scripts/core.ps1
 
-$url = "https://i574n.github.io/polyglot/apps/dir-tree-html/target/dist/DirTreeHtml"
-$path = "../target/DirTreeHtml"
-Invoke-WebRequest $url -OutFile $path -ErrorAction SilentlyContinue
+$fileName = "DirTreeHtml$(GetExecutableSuffix)"
+$cidUrl = "https://i574n.github.io/polyglot/apps/dir-tree-html/target/dist/$fileName.cid"
+Write-Output "cidUrl: '$cidUrl'"
+$cid = Invoke-WebRequest $cidUrl -ErrorAction SilentlyContinue
+$cid = $cid.ToString().Trim()
+Write-Output "cid: '$cid'"
+
+$dwebUrl = "https://dweb.link/ipfs/$cid"
+$path = "../target/$fileName"
+Invoke-WebRequest $dwebUrl -OutFile $path -ErrorAction SilentlyContinue
 
 { chmod +x $path } | Invoke-Block -Linux
 
-{ . $path --dir ../dist --html ../dist/index.html } | Invoke-Block -Linux
+{ . $path --dir ../dist --html ../dist/index.html } | Invoke-Block
