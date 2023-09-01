@@ -45,7 +45,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: gh-pages
-          publish_branch: gh-pages
 
       - uses: actions/setup-node@v3
         with:
