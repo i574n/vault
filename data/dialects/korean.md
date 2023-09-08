@@ -6940,3 +6940,573 @@ a | b | c
 
 ---
 ---
+
+Consoantes:
+
+1. ㄱ (giyeok)
+2. ㄴ (nieun)
+3. ㄷ (digeut)
+4. ㄹ (rieul)
+5. ㅁ (mieum)
+6. ㅂ (bieup)
+7. ㅅ (siot)
+8. ㅇ (ieung)
+9. ㅈ (jieut)
+10. ㅊ (chieut)
+11. ㅋ (kieuk)
+12. ㅌ (tieut)
+13. ㅍ (pieup)
+14. ㅎ (hieut)
+
+Vogais:
+
+1. ㅏ (a)
+2. ㅑ (ya)
+3. ㅓ (eo)
+4. ㅕ (yeo)
+5. ㅗ (o)
+6. ㅛ (yo)
+7. ㅜ (u)
+8. ㅠ (yu)
+9. ㅡ (eu)
+10. ㅣ (i)
+
+---
+
+**Português Brasileiro (pt-BR)**
+
+- Vogais Nasais:
+
+1. ã (como em "pão")
+2. õ (como em "cão")
+3. ẽ (como em "têm")
+4. ĩ (como em "aqui")
+5. ũ (como em "ungir")
+
+- Ditongos:
+
+1. ãe (como em "mãe")
+2. õe (como em "põe")
+3. ão (como em "mão")
+
+- Consoantes:
+
+1. lh (como em "olho")
+2. nh (como em "banho")
+
+- Sílabas com R:
+
+1. ra, re, ri, ro, ru (com 'r' gutural, como em "rato")
+2. rra, rre, rri, rro, rru (como em "carro")
+
+**Inglês Americano (en-US)**
+
+- Vogais:
+
+1. æ (como em "cat")
+2. ɑː (como em "car")
+3. ə (como em "banana")
+4. ɜː (como em "bird")
+5. ɔ (como em "dog")
+
+- Consoantes:
+
+1. θ (como em "think")
+2. ð (como em "this")
+3. ŋ (como em "song")
+
+- Sílabas com TH:
+
+1. tha, the, thi, tho, thu (como em "thick, them")
+2. tha, the, thi, tho, thu (como em "this, that")
+
+- Sílabas com R:
+
+1. ra, re, ri, ro, ru (com 'r' retroflexo, como em "red")
+2. rra, rre, rri, rro, rru (como em "carrot")
+
+|Idioma|Tipo de Som|Exemplos de Sílabas / Palavras|Descrição|
+|---|---|---|---|
+|**pt-BR**|Vogais Nasais|ã (pão, mã), õ (cão, põe), ẽ (bem, também), ĩ (príncipe), ũ (ungir, comum)|Vogais nasais podem não ter representações diretas em Hangul, criando um desafio na transcrição.|
+||Ditongos|ãe (mãe, cães), õe (põe, corações), ão (mão, pão), ei (reino, peixe), ou (roupa, louro), ai (pai, caixa), au (auto, causa)|Ditongos nasais e orais em pt-BR apresentam uma variedade de sons que podem ser desafiadores para transcrever em Hangul.|
+||Consoantes|lh (olho, brilho), nh (banho, sonho), rr (carro, barro), ss (passo, pressa), ch (chave, chapéu), gu (guerra, águia), qu (quente, queijo)|Consoantes e conjuntos consonantais específicos do português podem não ter equivalentes diretos em coreano.|
+||R Gutural|ra (rato, prado), re (rede, cereja), ri (riso, brilho), ro (roda, carro), ru (rubi, cruel), rar (raro, amarrar), rir (rir, sorrir), rur (rural, cerrado)|A guturalidade de certos sons "r" no português pode ser difícil de representar exatamente em Hangul.|
+||S Vogais|sa (sala), se (selo), si (silva), so (solo), su (suco), sar (sarado), ser (sereno), sir (sirene), sor (sorriso), sur (surdo)|A variabilidade dos sons de "s" pode criar nuances que são desafiantes para transcrever.|
+|**en-US**|Vogais|æ (cat, bat), ɑː (car, star), ə (banana, sofa), ɜː (bird, hurt), ɔ (dog, log), ʊ (foot, good), ɪ (bit, sit), ɛ (bed, red), ʌ (strut, luck), oʊ (go, so)|O inglês contém uma série de vogais e ditongos que podem ser difíceis de representar de forma precisa em Hangul.|
+||Consoantes|θ (think, thin), ð (this, there), ŋ (song, long), ʒ (measure, pleasure), ʃ (shush, wish), zh (azure, seizure), v (vase, live), z (zoo, size)|As consoantes em inglês podem apresentar características únicas que não são facilmente transcritas para o Hangul.|
+||TH|tha (thank, bath), the (them, breathe), thi (thick, health), tho (though, cloth), thu (thunder, thump), thy (thyme, rhythm), thr (three, through)|As variantes do som "th" podem ser particularmente desafiadoras de representar em Hangul, dado sua especificidade.|
+||R Retroflexo|ra (rat, range), re (red, respect), ri (rib, ring), ro (robot, road), ru (ruby, rule), rar (rare, barrel), rer (terror, merrier), rir (mirror, terror), ror (roar, snore), rur (rural, juror)|Os sons retroflexos "r" no inglês são distintos e podem ser difíceis de transcrever precisamente para o Hangul.|
+||Lateral e Líquida|la (lamb, play), le (let, delay), li (limb, blink), lo (low, follow), lu (lure, salute), lar (large, alarm), ler (alert, shelter), lir (lyric, spiral), lor (lore, explore), lur (lurch, blur)|Os sons laterais e líquidos no inglês podem ser desafiantes de transcrever devido às suas nuances fonéticas distintas.|
+
+**pt-BR**
+
+1. Vogais Nasais:
+    - pão: 팡
+    - mã: 망
+    - cão: 카옹
+    - põe: 퐁
+    - bem: 벰
+    - também: 탐빰
+    - príncipe: 프린시페
+    - ungir: 운지르
+    - comum: 코문
+2. Ditongos:
+    - mãe: 맹
+    - cães: 칸스
+    - põe: 푸엥
+    - corações: 코라손스
+    - mão: 망
+    - pão: 파옹
+    - reino: 레이누
+    - peixe: 페이쉬
+    - roupa: 호우파
+    - pai: 파이
+    - caixa: 카이샤
+    - auto: 아우토
+    - causa: 카우사
+3. Consoantes:
+    - olho: 올류
+    - brilho: 브릴류
+    - banho: 반뉴
+    - sonho: 손뉴
+    - carro: 카루
+    - barro: 바루
+    - passo: 파쑤
+    - pressa: 프레사
+    - chave: 샤비
+    - chapéu: 샤펠우
+    - guerra: 게하
+    - águia: 아구이아
+    - quente: 퀸치
+    - queijo: 퀴주
+4. R Gutural:
+    - rato: 라투
+    - prado: 프라두
+    - rede: 레디
+    - cereja: 세레자
+    - riso: 리쑤
+    - brilho: 브릴류
+    - roda: 호다
+    - carro: 카루
+    - rubi: 루비
+    - cruel: 크루엘
+    - raro: 하루
+    - amarrar: 아마하르
+    - rir: 리르
+    - sorrir: 소리르
+    - rural: 루랄
+    - cerrado: 세하두
+5. S Vogais:
+    - sala: 사라
+    - selo: 셀루
+    - silva: 실바
+    - solo: 쏠루
+    - suco: 수코
+    - sarado: 사라두
+    - sereno: 세레누
+    - sirene: 시레네
+    - sorriso: 소리쏘
+    - surdo: 수르두
+
+**en-US**
+
+1. Vogais:
+    - cat: 캣
+    - bat: 뱃
+    - car: 카
+    - star: 스타
+    - banana: 바나나
+    - sofa: 소파
+    - bird: 버드
+    - hurt: 허트
+    - dog: 독
+    - log: 로그
+    - foot: 풋
+    - good: 굿
+    - bit: 빗
+    - sit: 시트
+    - bed: 베드
+    - red: 레드
+    - strut: 스트럿
+    - luck: 럭
+    - go: 고
+    - so: 소
+2. Consoantes:
+    - think: 싱크
+    - thin: 신
+    - this: 디스
+    - there: 데얼
+    - song: 송
+    - long: 롱
+    - measure: 메쥬어
+    - pleasure: 플레쥬어
+    - shush: 스숴
+    - wish: 위시
+    - azure: 아주어
+    - seizure: 시저
+    - vase: 베이즈
+    - live: 립
+    - zoo: 주
+    - size: 사이즈
+3. TH:
+    - thank: 땡크
+    - bath: 바쓰
+    - them: 뎀
+    - breathe: 브리쓰
+    - thick: 틱
+    - health: 헬쓰
+    - though: 도
+    - cloth: 클롯
+    - thunder: 턴더
+    - thump: 썸프
+    - thyme: 타임
+    - rhythm: 리뎀
+    - three: 쓰리
+    - through: 스루
+4. R Retroflexo:
+    - rat: 랏
+    - range: 레인지
+    - red: 레드
+    - respect: 리스펙트
+    - rib: 리브
+    - ring: 린그
+    - robot: 로봇
+    - road: 로드
+    - ruby: 루비
+    - rule: 룰
+    - rare: 레어
+    - barrel: 배럴
+    - terror: 테러
+    - merrier: 메리어
+    - mirror: 미러
+    - terror: 테러
+    - roar: 로어
+    - snore: 스노어
+    - rural: 루럴
+    - juror: 주러
+5. Lateral e Líquida:
+    - lamb: 람
+    - play: 플레이
+    - let: 렛
+    - delay: 딜레이
+    - limb: 림
+    - blink: 블링크
+    - low: 로
+    - follow: 팔로우
+    - lure: 루어
+    - salute: 살루트
+    - large: 라지
+    - alarm: 알라름
+    - alert: 얼러트
+    - shelter: 쉘터
+    - lyric: 릴릭
+    - spiral: 스파이럴
+    - lore: 로어
+    - explore: 익스플로어
+    - lurch: 럴치
+    - blur: 블러
+
+pt-BR:
+
+Encontros Consonantais Complexos:
+
+1. Transcendente: 트란스쎤데씨
+2. Substancial: 숭스탄씨알
+3. Excepcional: 이쎠피씬알
+4. Intransigente: 잉트란씨젠테
+
+Palavras com Sons Únicos:
+
+1. Oftalmologista: 오프탈뭘로지스타
+2. Dermatologista: 더마톨로지스타
+
+en-US:
+
+Palavras com Combinações de Vogais Complexas:
+
+1. Entrepreneurial: 엔트레프레누리얼
+2. Unquestionable: 언퀘스쳔어블
+
+Palavras com Encontros Consonantais Complexos:
+
+1. Strengths: 스트렝쓰
+2. Twelfths: 트웰프쓰
+
+pt-BR:
+
+1. Excepcionalmente: 엑셉씨오날멘치
+2. Consequencialmente: 콘씨쿠엔씨알멘치
+3. Inconstitucionalidade: 잉콘스티뚜씨오날리다지
+4. Desproporcionalidade: 데스프로포르씨오날리다지
+5. Interdisciplinaridade: 잉테르디스플린아리다지
+6. Anticonstitucionalidade: 안티콘스티뚜씨오날리다지
+7. Infraestrutural: 잉프라에스뚜루찰
+8. Intertransmissibilidade: 잉테르트란스미씨빌리다지
+9. Intransigentemente: 잉트란시젠트멘치
+10. Interconexão: 잉테르코넥션
+11. Subdesenvolvimento: 수브데스엔볼비멘뚜
+12. Suplementaridade: 스루플레멘타리다지
+13. Autossuficiência: 아우토스수피씨엔씨아
+14. Instrumentalização: 잉스트루멘탈리자빙
+15. Multiplicabilidade: 무리플리카빌리다지
+16. Pneumoultramicroscopicosilicovolcanoconiose: 느우무울트라미크로스코피코실리코볼카노코니오씨
+17. Contraindicação: 콘트라인디카송
+18. Inquestionável: 잉퀘스뚜이온블
+19. Circunstancialidade: 씨르쿤스뚜안씨알리다지
+20. Interdependência: 잉테르데펜데니아
+
+en-US:
+
+1. Unscrupulousness: 언스크루퓨러스네스
+2. Counterproductive: 카운터프로덕티브
+3. Individualization: 인디비주얼리제이션
+4. Interconnectedness: 인터커넥티드네스
+5. Interchangeability: 인터체인지어빌리티
+6. Internationalization: 인터내쇼널리제이션
+7. Irrefutability: 이레퓨타빌리티
+8. Irresponsibility: 이레스폰시빌리티
+9. Microaggression: 마이크로어그레션
+10. Multidimensional: 멀티디멘셔널
+11. Nonrepresentational: 논레프리젠테이셔널
+12. Overexaggeration: 오버엑저제레이션
+13. Oversimplification: 오버심플리피케이션
+14. Photodegradation: 포토디그레이션
+15. Supersensitivity: 수퍼센시티비티
+16. Unquestionableness: 언퀘스쳔어블네스
+17. Unsatisfactoriness: 언새터스팩터리네스
+18. Antidisestablishmentarianism: 앤티디스이스타블리쉬멘터리어니즘
+19. Hyperindividualistic: 하이퍼인디비주얼리스틱
+20. Psychotherapeutically: 사이코테라퓨틱리
+
+pt-BR:
+
+1. Lavar a louça: 라바르 아 로우사
+2. Varrer o chão: 바레르 오 챤
+3. Passar a roupa: 파사르 아 로우파
+4. Limpar as janelas: 림파르 아스 자넬라스
+5. Trocar a roupa de cama: 트로카르 아 로우파 데 카마
+6. Regar as plantas: 레가르 아스 플란타스
+7. Lavar a roupa: 라바르 아 로우파
+8. Tirar o pó: 티라르 오 포
+9. Limpar os banheiros: 림파르 오스 바뇨이로스
+10. Organizar a despensa: 오르가니자르 아 데스펜사
+11. Lavar o carro: 라바르 오 카로
+12. Cortar a grama: 코르타르 아 그라마
+13. Fazer a cama: 파제르 아 카마
+14. Limpar a geladeira: 림파르 아 젤라데이라
+15. Esvaziar a lixeira: 에스바지아르 아 리셰이라
+16. Limpar o fogão: 림파르 오 포꽝
+17. Desentupir a pia: 데센튀피르 아 피아
+18. Aspirar o carpete: 아스피라르 오 카르페떼
+19. Limpar a piscina: 림파르 아 피시나
+20. Podar as árvores: 포다르 아스 아르보레스
+
+en-US:
+
+1. Washing dishes: 와싱 디시즈
+2. Sweeping the floor: 스위핑 더 플로어
+3. Ironing clothes: 아이러닝 클로즈
+4. Cleaning the windows: 클리닝 더 윈도우즈
+5. Changing the bed linens: 체인징 더 베드 리넨스
+6. Watering the plants: 워터링 더 플랜츠
+7. Doing the laundry: 두잉 더 론드리
+8. Dusting the furniture: 더스팅 더 퍼니쳐
+9. Scrubbing the bathrooms: 스크럽빙 더 바스룸스
+10. Organizing the pantry: 오르간이징 더 팬트리
+11. Washing the car: 와싱 더 카
+12. Mowing the lawn: 모윙 더 론
+13. Making the bed: 메이킹 더 베드
+14. Cleaning the refrigerator: 클리닝 더 리프리져레이터
+15. Emptying the trash bin: 엠프티잉 더 트래쉬 빈
+16. Cleaning the stove: 클리닝 더 스토브
+17. Unclogging the sink: 언클로깅 더 싱크
+18. Vacuuming the carpet: 바쿠밍 더 카펫
+19. Cleaning the pool: 클리닝 더 풀
+20. Pruning the trees: 프루닝 더 트리즈
+
+pt-BR:
+
+1. Arroz: 아로즈
+2. Feijão: 페이존
+3. Açúcar: 아써까르
+4. Sal: 살
+5. Óleo: 오렐유
+6. Ovos: 오보스
+7. Leite: 레이테
+8. Queijo: 케이조
+9. Pão: 페온
+10. Carne: 카르네
+11. Frango: 프랑고
+12. Peixe: 페이셰
+13. Legumes: 레구메스
+14. Frutas: 프루타스
+15. Verduras: 베르두라스
+16. Massas: 마사스
+17. Biscoitos: 비스코이토스
+18. Cereais: 세레아이스
+19. Iogurte: 이오구르테
+20. Manteiga: 만테이가
+
+en-US:
+
+1. Rice: 라이스
+2. Beans: 빈스
+3. Sugar: 쉬거
+4. Salt: 솔트
+5. Oil: 오일
+6. Eggs: 에그스
+7. Milk: 밀크
+8. Cheese: 치즈
+9. Bread: 브레드
+10. Meat: 미트
+11. Chicken: 치킨
+12. Fish: 피쉬
+13. Vegetables: 베지터블스
+14. Fruits: 프루츠
+15. Greens: 그린스
+16. Pasta: 파스타
+17. Cookies: 쿠키스
+18. Cereals: 시리얼스
+19. Yogurt: 요거트
+20. Butter: 버터
+
+pt-BR:
+
+1. Agachamentos (Squats): 아가차멘토스
+2. Flexões (Push-ups): 플렉송스
+3. Abdominais (Sit-ups): 아브도미네이스
+4. Elevação de pernas (Leg raises): 엘레바상 데 페르나스
+5. Supino reto (Bench press): 수피노 레토
+6. Rosca direta (Bicep curls): 로스카 디레타
+7. Puxada no Pulley (Lat pull-down): 푸자다 노 풀레이
+8. Esteira (Treadmill): 에스테이라
+9. Levantamento terra (Deadlift): 레반타멘토 테라
+10. Remo (Rowing machine): 레모
+11. Prancha (Plank): 프란차
+12. Barra fixa (Pull-ups): 바라 픽사
+13. Extensão de quadril (Hip extensions): 엑스텐상 데 콰드릴
+14. Elevação lateral (Lateral raises): 엘레바상 라떼랄
+15. Rosca martelo (Hammer curls): 로스카 마르텔로
+16. Tríceps no banco (Tricep dips): 트리셉스 노 반코
+17. Desenvolvimento de ombros (Shoulder press): 데센볼비멘토 데 옴브로스
+18. Remada baixa (Low row): 레마다 바이샤
+19. Abdução de pernas (Leg abduction): 아브둭상 데 페르나스
+20. Elevação de calcanhar (Calf raises): 엘레바상 데 칼칸하르
+
+en-US:
+
+1. Squats: 스콰츠
+2. Push-ups: 푸시업스
+3. Sit-ups: 시트업스
+4. Leg raises: 레그 레이즈
+5. Bench press: 벤치 프레스
+6. Bicep curls: 바이셉 컬즈
+7. Lat pull-down: 랫 풀다운
+8. Treadmill: 트레드밀
+9. Deadlift: 데드리프트
+10. Rowing machine: 로잉 머신
+11. Plank: 플랭크
+12. Pull-ups: 풀업스
+13. Hip extensions: 힙 익스텐션즈
+14. Lateral raises: 라테랄 레이즈
+15. Hammer curls: 해머 컬즈
+16. Tricep dips: 트라이셉 딥스
+17. Shoulder press: 숄더 프레스
+18. Low row: 로우 로우
+19. Leg abduction: 레그 압덕션
+20. Calf raises: 카프 레이즈
+
+pt-BR:
+
+1. Sofá: 소파
+2. Cadeira: 카데이라
+3. Mesa: 메사
+4. Armário: 아르마리오
+5. Estante: 에스탄테
+6. Cama: 카마
+7. Criado-mudo: 크리아도 무도
+8. Guarda-roupa: 가르다 로우파
+9. Rack para TV: 라크 파라 티비
+10. Poltrona: 폴트로나
+11. Penteadeira: 펜테아데이라
+12. Espelho: 에스펠호
+13. Cômoda: 코모다
+14. Aparador: 아파라도르
+15. Nicho: 니초
+16. Puff: 푸프
+17. Cabideiro: 카비데이로
+18. Mesa de centro: 메사 데 센트로
+19. Banco: 반코
+20. Lustre: 루스트레
+
+en-US:
+
+1. Sofa: 소파
+2. Chair: 체어
+3. Table: 테이블
+4. Cabinet: 캐비닛
+5. Bookshelf: 북셀프
+6. Bed: 베드
+7. Nightstand: 나이트스탠드
+8. Wardrobe: 워드로브
+9. TV stand: 티비 스탠드
+10. Armchair: 암체어
+11. Vanity: 바니티
+12. Mirror: 미러
+13. Dresser: 드레서
+14. Sideboard: 사이드보드
+15. Wall shelf: 월 셸프
+16. Ottoman: 오토만
+17. Coat rack: 코트 랙
+18. Coffee table: 커피 테이블
+19. Stool: 스툴
+20. Chandelier: 샹들리어
+
+pt-BR:
+
+1. Comunicação clara (코뮤니카상 클라라)
+2. Respeito mútuo (레스페이토 무투오)
+3. Confiança (콘피안사)
+4. Apoio emocional (아포이오 이모시오날)
+5. Compromisso (콤프로미쏘)
+6. Fidelidade (피델리다데)
+7. Intimidade (인티미다데)
+8. Tolerância (톨레란시아)
+9. Parceria (파르세리아)
+10. Autonomia (아우토노미아)
+11. Paciência (파시엔시아)
+12. Empatia (엠파티아)
+13. Romantismo (로만티즈모)
+14. Educação financeira conjunta (에두카상 피난시에이라 콘준타)
+15. Crescimento pessoal (크레시멘토 페르쏘알)
+16. Lealdade (레알다데)
+17. Preservação da individualidade (프레세르바상 다 인디비두아리다데)
+18. Honestidade (오네스티다데)
+19. Distribuição equitativa das tarefas domésticas (디스트리부이상 에끼타티바 다스 타레파스 도메스티카스)
+20. Comprometimento com o crescimento conjunto (콤프로메티멘토 콤 오 크레시멘토 콘준토)
+
+en-US:
+
+1. Clear communication (클리어 커뮤니케이션)
+2. Mutual respect (뮤추얼 리스펙트)
+3. Trust (트러스트)
+4. Emotional support (이모셔널 서포트)
+5. Commitment (커미트먼트)
+6. Faithfulness (페이스풀니스)
+7. Intimacy (인티메이시)
+8. Tolerance (톨러런스)
+9. Partnership (파트너쉽)
+10. Autonomy (아우토노미)
+11. Patience (페이션스)
+12. Empathy (엠패시)
+13. Romance (로맨스)
+14. Joint financial education (조인트 파이낸셜 에듀케이션)
+15. Personal growth (퍼스널 그로스)
+16. Loyalty (로열티)
+17. Preservation of individuality (프리저베이션 오브 인디비주얼리티)
+18. Honesty (어니스티)
+19. Equitable distribution of household chores (에퀴터블 디스트리뷰션 오브 하우스홀드 초어스)
+20. Commitment to joint growth (커미트먼트 투 조인트 그로스)
+
+---
+---
