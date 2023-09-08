@@ -873,3 +873,51 @@ Estes são apenas alguns exemplos. Muitos outros movimentos religiosos emergiram
 
 ---
 ---
+
+**Salmo 91:**
+
+1. Morar com Deus é como ter um esconderijo secreto onde você pode descansar seguro.
+2. Eu digo que Deus é como um super-herói para mim, Ele sempre me protege.
+3. Ele vai te proteger como um pássaro protege seus filhotes de coisas perigosas.
+4. Deus vai te cobrir como um pássaro cobre seus filhotes com suas asas, mantendo você seguro.
+5. Você não precisa ter medo de coisas assustadoras à noite ou de problemas durante o dia.
+6. Você não precisa ter medo de doenças ou de coisas ruins que acontecem quando o sol está alto.
+7. Mesmo que muitas pessoas ao seu redor estejam em apuros, você estará seguro.
+8. Você verá que as pessoas más acabarão recebendo o que merecem.
+9. Porque você confia em Deus, você está seguro com Ele.
+10. Nada de ruim vai acontecer com você, e nenhum problema vai chegar perto de você.
+11. Deus pede aos anjos para cuidar de você o tempo todo.
+12. Os anjos vão te segurar para que você não se machuque.
+13. Você será tão forte que poderá vencer coisas grandes e perigosas.
+14. Deus vai te salvar porque você o ama muito.
+15. Quando você chamar Deus, Ele vai responder e estar com você quando você estiver triste, e vai te fazer feliz de novo.
+16. Deus vai te dar uma vida longa e feliz, e vai te mostrar como Ele pode salvar você.
+
+**Salmo 121:**
+
+1. Quando olho para as montanhas, me pergunto de onde virá minha ajuda.
+2. Minha ajuda vem de Deus, que fez tudo, inclusive o céu e a terra.
+3. Ele não vai deixar você tropeçar e cair, Ele está sempre acordado para te proteger.
+4. Deus, que protege todas as pessoas, nunca dorme; está sempre atento.
+5. Deus está sempre com você para te proteger, dia e noite.
+6. Você não será machucado pelo calor do sol durante o dia ou pela luz da lua à noite.
+7. Deus vai te proteger de todas as coisas ruins; Ele vai cuidar de você.
+8. Deus está olhando por você o tempo todo, desde agora e para sempre.
+
+**Salmo 143:**
+
+1. Deus, por favor, escute a minha oração e me responda porque você é bom e justo.
+2. Por favor, não me julgue, porque ninguém é perfeito diante de você.
+3. Eu fui muito machucado por pessoas más, me sinto como se estivesse em um lugar escuro e triste.
+4. Estou me sentindo muito para baixo e meu coração está confuso.
+5. Eu estou pensando em todos os momentos bons do passado e em todas as coisas boas que você fez.
+6. Estou pedindo sua ajuda, Deus, porque me sinto como um deserto seco e preciso de você.
+7. Por favor, me ajude logo, Deus, estou me sentindo muito fraco. Não se esconda de mim, senão vou me sentir ainda pior.
+8. Me dê esperança toda manhã, pois confio em você. Me mostre o caminho certo a seguir, pois estou contando com você.
+9. Me proteja das pessoas más, Deus, porque só em você posso encontrar segurança.
+10. Me ensine a fazer as coisas do seu jeito, porque você é meu Deus. Que seu espírito me guie por caminhos seguros.
+11. Por causa do seu grande nome, Deus, me dê vida e me salve dos momentos difíceis.
+12. Por favor, acabe com as pessoas que querem me machucar e me proteja, porque eu sou seu servo.
+
+---
+---

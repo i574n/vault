@@ -47,5 +47,8 @@
     "obsidian-git:view-file-on-github",
     "obsidian-git:view-history-on-github"
   ],
-  "useTab": false
+  "useTab": false,
+  "userIgnoreFilters": [
+    "dist/"
+  ]
 }
