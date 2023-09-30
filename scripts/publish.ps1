@@ -58,7 +58,7 @@ while ($retryCount -lt 5) {
     }
 
     $fileName = "DirTreeHtml$(GetExecutableSuffix)"
-    $cidUrl = "https://i574n.github.io/polyglot/apps/dir-tree-html/target/dist/$fileName.cid"
+    $cidUrl = "https://i574n.github.io/polyglot/apps/dir-tree-html/dist/$fileName.cid"
     Write-Output "cidUrl: '$cidUrl'"
     try {
         $cid = Invoke-WebRequest $cidUrl
