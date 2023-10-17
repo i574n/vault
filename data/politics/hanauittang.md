@@ -1,5 +1,3 @@
----
----
 
 ## sort the top 20 polynesian islands by population, trying to break by islands as much as possible instead of country borders while disclosing where independence belongs
 

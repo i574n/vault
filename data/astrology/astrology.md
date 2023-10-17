@@ -1,5 +1,3 @@
----
----
 
 Vedic astrology, also known as Jyotisha, is an ancient system of astrology that originated in India over 3,000 years ago. It is based on the belief that the positions and movements of celestial bodies at the time of a person's birth can provide insight into their personality and future.
 It has a more complex system of planetary influences than Western astrology, it not only considers the influence of the 7 traditional planets, but also the influence of the "shadow planets" Rahu and Ketu and sometimes it also includes the outer planets Uranus, Neptune, and Pluto.

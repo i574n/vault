@@ -1,5 +1,3 @@
----
----
 
 ## detail in pt-br which combination and amount of dices can emulate the most complex forms of cowrie shell divination
 

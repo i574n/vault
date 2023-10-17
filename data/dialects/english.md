@@ -1,5 +1,3 @@
----
----
 
 Eminem woke up in a cold sweat, his heart pounding in his chest. He had been dreaming about Lucca and the violent scene he had witnessed. It had felt all too real, and Eminem was still shaking from the intensity of the dream.
 

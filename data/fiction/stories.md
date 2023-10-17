@@ -1,5 +1,3 @@
----
----
 
 ## from written manhwa so far, if a generator with gpt5 capabilities were to output 10 stories, summary them briefly (english) with their name (english and korean)
 

@@ -1,8 +1,3 @@
----
----
-
-
-
 
 ## detail in pt-br the intricacies of multitasking considering the brain sides
 
