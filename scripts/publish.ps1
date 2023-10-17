@@ -19,6 +19,7 @@ rsync -av `
     --include '*.edn' `
     --include '*.gitignore' `
     --include '*.json' `
+    --include '*.html' `
     --include '*.md' `
     --include '*.ps1' `
     --include '*.toml' `
@@ -32,6 +33,10 @@ rsync -av `
 
 Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(".") } | ForEach-Object {
     Rename-Item -Path $_.FullName -NewName "_$($_.Name)"
+}
+
+Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Extension -eq ".md" } | ForEach-Object {
+    crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add "`" body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } `""
 }
 
 New-Item -ItemType Directory -Path "../target/scripts" -Force | Out-Null

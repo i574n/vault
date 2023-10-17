@@ -1,4 +1,6 @@
-# O LIVRO DA INOCÊNCIA
+---
+title: O LIVRO DA INOCÊNCIA
+---
 
 Um Texto Canalizado por Paul Selig
 

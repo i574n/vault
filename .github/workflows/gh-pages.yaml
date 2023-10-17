@@ -12,6 +12,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - uses: ATiltedTree/setup-rust@v1
+        with:
+          rust-version: nightly
+          components: clippy rust-src rustfmt
+
+      - uses: actions/cache@v3
+        with:
+            path: |
+                ~/.cargo/bin/
+                ~/.cargo/registry/index/
+                ~/.cargo/registry/cache/
+                ~/.cargo/git/db/
+                target/
+            key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            restore-keys: ${{ runner.os }}-cargo-
+
+      - run: pwsh scripts/init.ps1
+
       - run: pwsh scripts/publish.ps1
 
       - uses: actions/upload-artifact@v2
