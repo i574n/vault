@@ -1,5 +1,3 @@
----
----
 
 It's important to note that assigning a numerical rating to the weather of a city is a highly subjective task, and it will depend on personal preferences and the criteria used to make the assessment. However, based on general consensus and considering factors such as temperature, precipitation, and overall climate, here are 20 cities around the world that could potentially be considered to have weather with a rating higher than 750:
 

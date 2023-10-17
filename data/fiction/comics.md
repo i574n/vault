@@ -1,6 +1,3 @@
----
----
-
 ## from written manhwa so far, try breaking them down using pt-br into as many subgenres as available
 
 < I apologize for the oversight. Here's an expanded list of manhwa subgenres in Portuguese (pt-br):

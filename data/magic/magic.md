@@ -1,5 +1,3 @@
----
----
 
 In addition to the Victorian Era, other relevant time periods for obscure charms and talismans include:
 

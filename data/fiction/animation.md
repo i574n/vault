@@ -1,6 +1,3 @@
----
----
-
 ## detail in pt-br how the prison school anime was assimilated in japanese culture
 
 < "Prison School" (Kangoku Gakuen) é um anime e manga bastante conhecido que se destaca pela sua comédia obscena e humor escatológico, mas também pela sua narrativa interessante e personagens bem desenvolvidos.

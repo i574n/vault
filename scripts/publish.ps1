@@ -3,6 +3,7 @@ param(
 )
 Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
+. ../target/scripts/core.ps1
 
 
 Remove-Item ../dist -Recurse -Force -ErrorAction Ignore
@@ -35,11 +36,8 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
     Rename-Item -Path $_.FullName -NewName "_$($_.Name)"
 }
 
-Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Extension -eq ".md" } | ForEach-Object {
-    crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add "`" body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } `""
-}
-
-New-Item -ItemType Directory -Path "../target/scripts" -Force | Out-Null
+{ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Extension -eq ".md" } | ForEach-Object {
+    crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add '" body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } "' } } | Invoke-Block
 
 $retryCount = 0
 Write-Host "## 1"
@@ -49,18 +47,6 @@ while ($retryCount -lt 5) {
     }
     $Error.Clear()
     Write-Host "## 2"
-
-
-    $url = "https://i574n.github.io/polyglot/scripts/core.ps1"
-    $path = "../target/scripts/core.ps1"
-    try {
-        Invoke-WebRequest $url -OutFile $path
-        . ../target/scripts/core.ps1
-    } catch {
-        Write-Host "Exception: '$_' / Error: '$Error'"
-        $retryCount++
-        continue
-    }
 
     $fileName = "DirTreeHtml$(GetExecutableSuffix)"
     $cidUrl = "https://i574n.github.io/polyglot/apps/dir-tree-html/dist/$fileName.cid"

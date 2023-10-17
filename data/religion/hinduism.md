@@ -1,5 +1,3 @@
----
----
 
 Forms of Vishnu:
 

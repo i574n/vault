@@ -1,5 +1,3 @@
----
----
 
 Please note that the following list of controversial doujinshi titles may contain mature themes, graphic content, or offensive material. The list is not intended to promote or endorse any of these works, and discretion is advised. Here are the top 10 controversial doujinshi titles:
 

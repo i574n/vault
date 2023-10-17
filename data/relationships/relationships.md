@@ -1,5 +1,3 @@
----
----
 
 App | Description | Users | Target | Similarity
 ----|-------------|-------|--------|-----------
