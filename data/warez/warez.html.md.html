@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <pre><span style="color:#323232;">urlSuffix: 1337x.to/top-100</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><pre><span style="color:#323232;">urlSuffix: 1337x.to/trending</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p class = "rule">***</p>
+<p id = "para-1">MasterClass - The Duffer Brothers Teach Developing an Original TV Series</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeigwaqgqnugxxdkp2u7q3ag5psrzezzwdvq4us3vgwlygejkhshjlq.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-2">MasterClass - Natalie Portman Teaches Acting</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeicvu74l4ufm33jdwexqfhfiwvhl4kijwzitlcwgxjzzx76bqqcokm.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-3">MasterClass - Alicia Keys Teaches Songwriting and Producing</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeifam7ihur4zj5l7scpxo6mhtxa5rb5svshkkf7il37f7pmqlf6u4i.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-4">MasterClass - James Cameron Teaches Filmmaking</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeid2ipeuhg3slnupk3cdof2rpjazjstlaoegnzv3hf3bivnejmcl6m.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-5">MasterClass - Jodie Foster Teaches Filmmaking</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeicd6o5vcfjllnydonseornq7rjgc4t7f2fwijsib3sdng4dlnt3mq.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-6">MasterClass - Metallica Teaches Being a Band</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeid5ibmeka6rjujzqobxbt5p7a4dofh7vxx4u7mdhgrr34azomb2ai.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-7">MasterClass - David Lynch Teaches Creativity and Film</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeigd4jbiu43oa3yqw6hyuhec2s5473lbbejn5nt3b4o35akjl4koji.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-8">MasterClass - Lewis Hamilton Teaches a Winning Mindset</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeibblbvvm34seo3ezm44254z5qmbc4hprzbklcv76x55jlor34wt4m.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-9">MasterClass - Mariah Carey Teaches the Voice as an Instrument</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeiadt4w5snuh6o2tddp7vepcji3rxpq2k4ajptpdhdwj7bdebjjyee.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-10">MasterClass - Robin Arzon Teaches Mental Strength</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeigcxou6i6y6m37k5szvucrgyofl4stppbrd442brygj3pukr2jgbm.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-11">MasterClass - Donna Farhi Teaches Yoga Foundations</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeiemo766z4egelb6w7grvcobo4kbgncxzdvh2oziwen4e42nedfpvq.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-12">MasterClass - Brandon McMillan Teaches Dog Training</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeihuqdi7d5o65nreqrlggt5woi75la7kmptzf5jvposfnidfed2wky.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-13">MasterClass - Dan Brown Teaches Writing Thrillers</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeibz6mxa2ymvkhg4tflx6fonwvijgfqwkj3qzssd7apd6xh455tiha.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-14">MasterClass - Emily Morse Teaches Sex &amp; Communication</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeihet2ne2opnfkousrghvulanatjmblbjcqhuylvtqfhcbsxum7rby.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-15">MasterClass - Garry Kasparov Teaches Chess</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeigb4edox3o642ufajgyfljw6nlt6xodtcsib2ynq4gfipq55r2y7e.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-16">MasterClass - RuPaul Teaches Self-Expression and Authenticity</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeigtr537orc6iv36maqvwmsyjvuyxwl5lqxrcueisa75f6x3kupegi.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-17">MasterClass - Tony Hawk Teaches Skateboarding</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeif6gdzun7aj3nqljovyoqpliomxiza5oq4gz4erctzcbqbpyhntky.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-18">Survival &amp; Bushcraft School of Self Reliance (2017)</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeibjj4qmakj2prfynrsgph5cediezz6w7fqrmrjj67kfxi5it3tg3m.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-19">How to Listen to and Understand Opera</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeibi3xr63uxjoez762rknhae4rxjff2ej5cka4eehh74vxzo7h4h7u.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-20">STEALTH Hidden Laws of Attraction System</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeihwvkvpdccrgqdvy4origodqeud5dr7z5z7zziwmmwiazhynwy6va.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-21">TTC - Identity in the Age of Ancestral DNA</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeidw7svfzflcbjctq72zi4o632djievcex4uisvcv257ycmvipc5xq.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-22">TTC - The Mathematics of Games and Puzzles</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeidwhq2257rkqrclh4rt72pequgm2pvhouzhtu27pg44uolzco3cr4.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-23">Satoshi Ishii - New Wave Judo</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeidgmldmkcxt3kvyzsgjghvzc2wwvm7tqeiy6zzc3lvjos2krkftvy.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-24">David Bressoud - Queen of the Sciences - A History of Mathematics</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeiclekp5bkabmauxhqzmcpxr4y7wz6ohwk7uu6une7jbcnztuokkrm.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-25">Udemy - How to STOP male pattern hair loss &amp; REGROW your own hair</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeigj47on6vxoanwof6sx6edgj2lahb7e5u6np5xgkflomlvljdi4jy.ipfs.nftstorage.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-26">Figma for Developers</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Figma%20for%20Developers</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-27">IO Music Academy Beyond Genres with Lusine TUTORiAL</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/IO%20Music%20Academy%20Beyond%20Genres%20with%20Lusine%20TUTORiAL</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-28">IO Music Academy How I Produce with Felipe Gordon TUTORiAL</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/IO%20Music%20Academy%20How%20I%20Produce%20with%20Felipe%20Gordon%20TUTORiAL</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-29">Ilias Iliadas - World Championship Judo</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Ilias%20Iliadas%20-%20World%20Championship%20Judo</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-30">Lynda - After Effects Guru - Templates for Premiere Pro and After Effects Jun 2017</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Lynda%20-%20After%20Effects%20Guru%20-%20Templates%20for%20Premiere%20Pro%20and%20After%20Effects%20Jun%202017</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-31">Shintaro Higashi - Judo Basics</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/Shintaro%20Higashi%20-%20Judo%20Basics</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-32">pureMix - Recording with Al Schmitt</p>
+<pre><span style="color:#323232;">urlSuffix: bafybeie6cii7dfz266f5745svwh5huj2xhytgwyoojttzti7f3yfevtyhm.ipfs.dweb.link/pureMix%20-%20Recording%20with%20Al%20Schmitt</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-33">X</p>
+<pre><span style="color:#323232;">urlSuffix: X</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-34">X</p>
+<pre><span style="color:#323232;">urlSuffix: X</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-35">X</p>
+<pre><span style="color:#323232;">urlSuffix: X</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><p id = "para-36">X</p>
+<pre><span style="color:#323232;">urlSuffix: X</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre><div class = "table">
+    <table>
+<tr>
+<th>Folder</th><th>Size</th></tr>
+<tr>
+<td>25 способов добыть огонь в экстремальных условиях</td><td>1.3 GB</td></tr>
+<tr>
+<td>Become an amazing Math Magician The secret of Mental Math</td><td>115 MB</td></tr>
+<tr>
+<td>Budo - The Art of Killing</td><td>421 MB</td></tr>
+<tr>
+<td>Coursera - Introduction to Mathematical Thinking</td><td>1.9 GB</td></tr>
+<tr>
+<td>Double Your Job Hunting Success &amp; Land Your Dream Job</td><td>549 MB</td></tr>
+<tr>
+<td>Double Your Social Skills</td><td>1.4 GB</td></tr>
+<tr>
+<td>Groove3 Bitwig Studio 4 Explained</td><td>507 MB</td></tr>
+<tr>
+<td>Hacking Dating, Attraction, and Badass Seduction Techniques</td><td>97 MB</td></tr>
+<tr>
+<td>Ivanov_prostata</td><td>1.3 GB</td></tr>
+<tr>
+<td>Ivanov_taz</td><td>1.7 GB</td></tr>
+<tr>
+<td>Jason Julious - Extreme Sex Drive Complete</td><td>894 MB</td></tr>
+<tr>
+<td>Jenskaya Samooborona</td><td>5.3 GB</td></tr>
+<tr>
+<td>Left Hand Crochet Tutorials</td><td>267 MB</td></tr>
+<tr>
+<td>MOTOR_bublik</td><td>45 MB</td></tr>
+<tr>
+<td>Mastering Uchi Mata by Travis Stevens</td><td>2.2 GB</td></tr>
+<tr>
+<td>O’Reilly - Success Skills for Introverts</td><td>1.8 GB</td></tr>
+<tr>
+<td>Ray Floro QKS</td><td>1.7 GB</td></tr>
+<tr>
+<td>Sambo The Top Game - A Blue Print For Smeshing by Khabib Nurmagomedov</td><td>2.1 GB</td></tr>
+<tr>
+<td>Shishonin</td><td>223 MB</td></tr>
+<tr>
+<td>Shooting with the GoPro HERO - Car and Motorcycle Mounts {AceMerlin}</td><td>1.0 GB</td></tr>
+<tr>
+<td>Sing Professionally - From Amateur to Pro in 30 Days</td><td>2.5 GB</td></tr>
+<tr>
+<td>Skillbox.learning.videos</td><td>2.4 GB</td></tr>
+<tr>
+<td>Survival Basics</td><td>1.6 GB</td></tr>
+<tr>
+<td>Teaching aids</td><td>3.8 GB</td></tr>
+<tr>
+<td>UDEMY LEARN 20 POWERFUL HYPNOTIC WORDS FOR INFLUENCE AND PERSUASION TUTORIAL</td><td>409 MB</td></tr>
+<tr>
+<td>UDEMY-Mind Maps and Mind Mapping</td><td>185 MB</td></tr>
+<tr>
+<td>Udemy Adobe Premiere Pro CC in JUST 1.5 hrs Learn Premiere Pro</td><td>406 MB</td></tr>
+<tr>
+<td>Yanagiryu 5 DivX</td><td>2.6 GB</td></tr>
+<tr>
+<td>creativeLIVE - Gabriel Wyner -Become Fluent in Any Language</td><td>5.1 GB</td></tr>
+<tr>
+<td>cryptography</td><td>4.0 GB</td></tr>
+<tr>
+<td>iaido roshukai</td><td>429 MB</td></tr>
+<tr>
+<td>kalligraf</td><td>210 MB</td></tr>
+<tr>
+<td>tantra</td><td>2.6 GB</td></tr>
+<tr>
+<td>Алекс Мэй - Секреты точки Джи (2011)</td><td>1.6 GB</td></tr>
+<tr>
+<td>Видео</td><td>3.4 GB</td></tr>
+<tr>
+<td>Довлатов. Увеличение скорости чтения в 100 раз!</td><td>6.4 GB</td></tr>
+<tr>
+<td>Инфопродукт 09 - Вода, болезни обезвоживания, Лимфа, Почки (неполный)</td><td>1.6 GB</td></tr>
+<tr>
+<td>Инфопродукт 10 - Печень, желчный пузырь, поджелудочная железа (неполный)</td><td>627 MB</td></tr>
+<tr>
+<td>Инфопродукт 12 - Выживание, подготовка к кризисам, бедствиям, катастрофам, войнам (неточный)</td><td>12 GB</td></tr>
+<tr>
+<td>Полигамия</td><td>1.9 GB</td></tr>
+<tr>
+<td>Радислав Гандапас - Камасутра для оратора</td><td>3.6 GB</td></tr>
+
+    </table>
+</div>
+<pre><span style="color:#323232;">urlSuffix: bafybeiapdce5cc35md5aigib76g5nk3rkjcflsyg3i6s42tn6wtldjf42u.ipfs.dweb.link</span>
+<span style="color:#323232;">frame: https://</span>
+<span style="color:#323232;">style: height:50vh</span>
+
+</pre>
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

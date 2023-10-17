@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">if i wanted to print many copies of map-books containing 500 a4 recycled pages of screenshotted map software with many different routes, zoom levels, tracks, features, regions, etc., which would be sold in a xre 300 2021 targeting 4x4 car owners in the road of south america. which technology has the best quality and cost benefit? toners? detail the budget using pt-br and brl considering a very good profit margin</a></li>
+      <li><a href="#link-2">for the paper, ‘Papel Ofício A4 Reciclado Chamex 75g Pacote 1500 Folhas Eco R$ 141,99’ would be used to print 3 book copies (back to back there would be 1000 pages considering paint then). list 5 models of printers using markdown table format with specs and average brl price for such paper</a></li>
+      <li><a href="#link-3">list printers better than the Hl-l8360cdw considering many copies of map-books containing 500 a4 recycled pages of screenshotted map software with many different routes, zoom levels, tracks, features, regions, etc., which would be sold in a xre 300 2021 targeting 4x4 car owners in the road of south america. detail the budget using pt-br and brl considering a 300% profit margin</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">if i wanted to print many copies of map-books containing 500 a4 recycled pages of screenshotted map software with many different routes, zoom levels, tracks, features, regions, etc., which would be sold in a xre 300 2021 targeting 4x4 car owners in the road of south america. which technology has the best quality and cost benefit? toners? detail the budget using pt-br and brl considering a very good profit margin</h2>
+<p id = "para-1">&lt; Se você deseja imprimir muitas cópias de livros de mapas contendo 500 páginas A4 recicladas com capturas de tela de software de mapas, com várias rotas, níveis de zoom, trilhas, recursos e regiões diferentes, e pretende vendê-los para proprietários de carros 4x4 na América do Sul, você deve considerar a impressão offset e a impressão digital como opções de tecnologia de impressão.</p>
+<p id = "para-2">A impressão offset tem um custo inicial mais alto, mas é mais econômica para grandes tiragens, enquanto a impressão digital tem custos mais baixos de configuração e pode ser mais adequada para tiragens menores. A qualidade de ambas as tecnologias de impressão é geralmente alta.</p>
+<p id = "para-3">Aqui está uma estimativa de orçamento usando a moeda BRL (Real Brasileiro) e considerando uma margem de lucro significativa:</p>
+<p id = "para-4">Impressão Offset: Custo inicial (incluindo chapas e configuração): R$ 5.000 Custo por livro (supondo uma tiragem de 1.000 cópias): R$ 20 Custo total: R$ 25.000 Margem de lucro: 100%</p>
+<p id = "para-5">Preço de venda: R$ 40 Receita total: R$ 40.000 Lucro: R$ 15.000 Impressão digital: Custo por livro (supondo uma tiragem de 1.000 cópias): R$ 30 Custo total: R$ 30.000 Margem de lucro: 100%</p>
+<p id = "para-6">Preço de venda: R$ 60 Receita total: R$ 60.000 Lucro: R$ 30.000 Ambas as opções têm margens de lucro significativas, mas a impressão digital oferece um lucro maior. No entanto, a escolha entre as duas opções dependerá de suas necessidades específicas, como a quantidade de cópias que você deseja imprimir e a qualidade da impressão que você espera. Lembre-se de que esses números são apenas estimativas e podem variar de acordo com a qualidade do papel reciclado, as condições de mercado e outros fatores.</p>
+<h2 id = "link-2">for the paper, ‘Papel Ofício A4 Reciclado Chamex 75g Pacote 1500 Folhas Eco R$ 141,99’ would be used to print 3 book copies (back to back there would be 1000 pages considering paint then). list 5 models of printers using markdown table format with specs and average brl price for such paper</h2>
+<p id = "para-7">&lt; Aqui estão cinco modelos de impressoras, incluindo suas especificações e preços médios em BRL, que você pode considerar para imprimir seus livros de mapas usando o papel “Papel Ofício A4 Reciclado Chamex 75g Pacote 1500 Folhas Eco R$ 141,99”. Lembre-se de que os preços e disponibilidade dos modelos de impressoras podem variar com o tempo e a localização.</p>
+<div class = "table">
+    <table>
+<tr>
+<th>Modelo da Impressora</th><th>Tipo de Impressora</th><th>Velocidade de Impressão</th><th>Resolução Máxima</th><th>Preço Médio (BRL)</th></tr>
+<tr>
+<td>HP Color LaserJet Pro M454dw</td><td>Laser colorida</td><td>Até 28 ppm</td><td>Até 600 x 600 dpi</td><td>R$ 3.200</td></tr>
+<tr>
+<td>Epson WorkForce Pro WF-C5790</td><td>Jato de tinta colorida</td><td>Até 25 ppm</td><td>Até 4800 x 1200 dpi</td><td>R$ 3.000</td></tr>
+<tr>
+<td>Xerox Phaser 6510/DNI</td><td>Laser colorida</td><td>Até 30 ppm</td><td>Até 1200 x 2400 dpi</td><td>R$ 3.500</td></tr>
+<tr>
+<td>Brother HL-L8260CDW</td><td>Laser colorida</td><td>Até 33 ppm</td><td>Até 2400 x 600 dpi</td><td>R$ 2.800</td></tr>
+<tr>
+<td>Canon imageCLASS LBP612Cdw</td><td>Laser colorida</td><td>Até 19 ppm</td><td>Até 600 x 600 dpi</td><td>R$ 2.500</td></tr>
+
+    </table>
+</div>
+<p id = "para-8">É importante observar que a velocidade de impressão mencionada acima é para páginas em preto e branco, e a velocidade de impressão em cores pode ser um pouco menor. Além disso, a escolha da impressora ideal dependerá de suas necessidades específicas, como a quantidade de cópias que você deseja imprimir e a qualidade da impressão que você espera.</p>
+<h2 id = "link-3">list printers better than the Hl-l8360cdw considering many copies of map-books containing 500 a4 recycled pages of screenshotted map software with many different routes, zoom levels, tracks, features, regions, etc., which would be sold in a xre 300 2021 targeting 4x4 car owners in the road of south america. detail the budget using pt-br and brl considering a 300% profit margin</h2>
+<p id = "para-9">&lt; Considerando as suas necessidades e o público-alvo, aqui estão três impressoras que podem ser melhores do que a HL-L8360CDW para imprimir livros de mapas com 500 páginas A4 em papel reciclado:</p>
+<p id = "para-10">Epson WorkForce Pro WF-C869R HP Color LaserJet Enterprise M553dn Xerox VersaLink C7000 Vamos detalhar o orçamento em PT-BR e BRL considerando uma margem de lucro de 300%.</p>
+<p id = "para-11">Epson WorkForce Pro WF-C869R: Preço da impressora: R$ 15.000,00 Custo por página: R$ 0,10 Custo total para 500 páginas: R$ 50,00 Preço de venda com margem de lucro de 300%: R$ 200,00</p>
+<p id = "para-12">HP Color LaserJet Enterprise M553dn: Preço da impressora: R$ 12.000,00 Custo por página: R$ 0,12 Custo total para 500 páginas: R$ 60,00 Preço de venda com margem de lucro de 300%: R$ 240,00</p>
+<p id = "para-13">Xerox VersaLink C7000: Preço da impressora: R$ 17.000,00 Custo por página: R$ 0,08 Custo total para 500 páginas: R$ 40,00 Preço de venda com margem de lucro de 300%: R$ 160,00</p>
+<p id = "para-14">Lembrando que esses valores são apenas estimativas e podem variar dependendo das condições locais, negociações com fornecedores e flutuações cambiais. Além disso, é importante considerar outros custos, como papel reciclado, encadernação e distribuição.</p>
+<p id = "para-15">As três opções acima apresentam recursos avançados e maior eficiência energética em comparação com a HL-L8360CDW. Elas são ideais para a impressão de grandes volumes de livros de mapas com diferentes níveis de zoom, rotas e regiões, atendendo às necessidades do público 4x4 na América do Sul.</p>
+<p class = "rule">***</p>
+<p id = "para-16">Impressora Laser Hll8360cdw Brother, Colorida, Wi-fi, 110v R$ 6.889 - 0 vendidos</p>
+<p id = "para-17">Impressora a cor multifuncional Epson WorkForce Pro WF-C5710 com wifi branca e preta 100V/240V WF-C5710DWF R$ 6.620,90 - +1000 vendidos</p>
+<p id = "para-18">Impressora Brother 8360 Hl-l8360cdw Laser Color R$ 6.309 - 0 vendidos</p>
+<p id = "para-19">Impressora Brother Hl-l8360cdw Laser Color R$ 6.309 - 0 vendidos</p>
+<p id = "para-20">Impressora a cor multifuncional Epson EcoTank L8180 com wifi preta 100V R$ 5.703 - +100 vendidos</p>
+<p id = "para-21">Impressora Brother Laser Colorida Wifi Hl-l8360cdw L8360 R$ 5.090 - +25 vendidos</p>
+<p id = "para-22">Impressora a cor função única Brother HL-L8360CDW com wifi branca e preta 120V R$ 4.999 - +100 vendidos</p>
+<p id = "para-23">Impressora a cor multifuncional Epson EcoTank L14150 com wifi preta 100V/240V R$ 4.955 - +1000 vendidos</p>
+<p id = "para-24">Impressora Brother Hl-l8360cdw Laser Colorida Sem Fio L8360 R$ 4.810 - +50 vendidos</p>
+<p id = "para-25">Kit Toner Original Brother Tn-419 Tn419 L8900 L8610 L8360 R$ 3.369,90 - 4 vendidos</p>
+<p id = "para-26">Kit Toner Original Brother L8360 Mfc-l8610 Mfc-l8900 Tn-419 R$ 3.299 - +5 vendidos</p>
+<p id = "para-27">Kit Toner Original Brother Tn-419 Tn419 L8900 L8610 L8360 R$ 3.144,80 - +5 vendidos</p>
+<p id = "para-28">Kit 4 Toner Compativel Tn419 419 L8360 L8610 L8900 L9570 9k R$ 459,99 - +5 vendidos</p>
+<p id = "para-29">Kit 04 Toner Compativel Tn-419 - 04 Cores R$ 347,82 - 3 vendidos</p>
+<p id = "para-30">4 Cilindro Refil Dr-411 L8360cdw L8610cdw L8900cdw L9570cdw R$ 179,99 - +50 vendidos</p>
+<p id = "para-31">4 Cilindro Refil Dr-411 L8360cdw L8610cdw L8900cdw L9570cdw R$ 179,99 - +50 vendidos</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

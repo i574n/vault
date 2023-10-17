@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(case (mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">%1 </span><span style="color:#0086b3;">6</span><span style="color:#323232;">) </span><span style="color:#0086b3;">11</span><span style="color:#323232;">) </span><span style="color:#0086b3;">91</span><span style="color:#323232;">) </span><span style="color:#0086b3;">0 1 12 6 </span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">%)) [</span><span style="color:#0086b3;">10 22 21 10</span><span style="color:#323232;">])</span>
+
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">%1 </span><span style="color:#0086b3;">6</span><span style="color:#323232;">) </span><span style="color:#0086b3;">11</span><span style="color:#323232;">) </span><span style="color:#0086b3;">91</span><span style="color:#323232;">)) [</span><span style="color:#0086b3;">10 22 21 10</span><span style="color:#323232;">])</span>
+<span style="color:#323232;">(</span><span style="color:#183691;">&quot;G&quot; &quot;4&quot; &quot;.&quot; &quot;G&quot;</span><span style="color:#323232;">)</span>
+
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[c (mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">6</span><span style="color:#323232;">) </span><span style="color:#0086b3;">35</span><span style="color:#323232;">) </span><span style="color:#0086b3;">91</span><span style="color:#323232;">)] (</span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">c </span><span style="color:#0086b3;">35</span><span style="color:#323232;">) </span><span style="color:#0086b3;">\# </span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">c))) [</span><span style="color:#0086b3;">10 22 21 10</span><span style="color:#323232;">])</span>
+
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">10 10</span><span style="color:#323232;">) </span><span style="color:#0086b3;">10</span><span style="color:#323232;">) </span><span style="color:#0086b3;">10</span><span style="color:#323232;">)) [</span><span style="color:#0086b3;">10 10 10 10</span><span style="color:#323232;">])</span>
+
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">3 14 0 14</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">7</span><span style="color:#323232;">) </span><span style="color:#0086b3;">97</span><span style="color:#323232;">) </span><span style="color:#0086b3;">256</span><span style="color:#323232;">))))</span>
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">23 1 12 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">19 29</span><span style="color:#323232;">) </span><span style="color:#0086b3;">124</span><span style="color:#323232;">) </span><span style="color:#0086b3;">127</span><span style="color:#323232;">))))</span>
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">23 1 12 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">19 29</span><span style="color:#323232;">) </span><span style="color:#0086b3;">97</span><span style="color:#323232;">) </span><span style="color:#0086b3;">127</span><span style="color:#323232;">))))</span>
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 12 0 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 </span><span style="color:#323232;">% </span><span style="color:#0086b3;">2 3</span><span style="color:#323232;">]) % </span><span style="color:#0086b3;">31</span><span style="color:#323232;">) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">) </span><span style="color:#0086b3;">127</span><span style="color:#323232;">))))</span>
+
+
+<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">2 1 13 1</span><span style="color:#323232;">] (</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 2 3</span><span style="color:#323232;">]) (</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">31</span><span style="color:#323232;">) (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#0086b3;">96</span><span style="color:#323232;">) (mod </span><span style="color:#0086b3;">127</span><span style="color:#323232;">) (</span><span style="color:#62a35c;">char</span><span style="color:#323232;">))</span>
+
+
+
+<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">7</span><span style="color:#323232;">) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
+<span style="color:#323232;">(</span><span style="color:#183691;">&quot;g&quot; &quot;g&quot; &quot;»&quot; &quot;g&quot;</span><span style="color:#323232;">)</span>
+
+<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% (</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">take </span><span style="color:#323232;">% (</span><span style="font-weight:bold;color:#a71d5d;">iterate </span><span style="color:#62a35c;">inc </span><span style="color:#0086b3;">2</span><span style="color:#323232;">)))) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
+<span style="color:#323232;">(</span><span style="color:#183691;">&quot;b&quot; &quot;b&quot; &quot;ࡠ&quot; &quot;b&quot;</span><span style="color:#323232;">)</span>
+
+<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(</span><span style="color:#62a35c;">bit-and </span><span style="color:#323232;">% </span><span style="color:#0086b3;">23</span><span style="color:#323232;">) (</span><span style="color:#62a35c;">bit-or </span><span style="color:#323232;">% </span><span style="color:#0086b3;">23</span><span style="color:#323232;">)) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
+<span style="color:#323232;">(</span><span style="color:#183691;">&quot;w&quot; &quot;w&quot; &quot;û&quot; &quot;w&quot;</span><span style="color:#323232;">)</span>
+
+<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">f </span><span style="color:#323232;">[n] (</span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&lt;= </span><span style="color:#323232;">n </span><span style="color:#0086b3;">0</span><span style="color:#323232;">) </span><span style="color:#0086b3;">1 </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">n (f (</span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">n </span><span style="color:#0086b3;">1</span><span style="color:#323232;">))))) (</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(f %) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
+<span style="color:#323232;">(</span><span style="color:#183691;">&quot;a&quot; &quot;a&quot; &quot;챠&quot; &quot;a&quot;</span><span style="color:#323232;">)</span>
+
+<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[m1 [[</span><span style="color:#0086b3;">1 2</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">3 4</span><span style="color:#323232;">]] m2 [[</span><span style="color:#0086b3;">5 6</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">7 8</span><span style="color:#323232;">]]] (</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% (</span><span style="color:#62a35c;">get-in </span><span style="color:#323232;">m1 [</span><span style="color:#0086b3;">0 0</span><span style="color:#323232;">])) (</span><span style="color:#62a35c;">get-in </span><span style="color:#323232;">m2 [</span><span style="color:#0086b3;">0 1</span><span style="color:#323232;">]) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">)))))</span>
+<span style="color:#323232;">(</span><span style="color:#183691;">&quot;g&quot; &quot;g&quot; &quot;s&quot; &quot;g&quot;</span><span style="color:#323232;">)</span>
+
+</pre><pre><span style="color:#323232;">[2, 4, 6, 8] |&gt; Enum.map(&amp;(&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}&quot; |&gt; byte_size() |&gt; to_string() &lt;&gt; to_string(&amp;1 * &amp;1 * 7 + &amp;1 + 95)) |&gt; String.to_charlist()) |&gt; IO.inspect()</span>
+
+
+<span style="color:#323232;">elixir -e &quot;[2, 4, 6, 8] |&gt; Enum.map(&amp;(\&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}\&quot; |&gt; byte_size() |&gt; to_string() |&gt; (fn x -&gt; Integer.parse(to_string(x)) |&gt; elem(0) end).() |&gt; (fn y -&gt; to_string(y * y * 7 + y + 95) end).())) |&gt; IO.inspect()&quot;</span>
+
+
+<span style="color:#323232;">elixir -e &#39;input = [97, 109, 97]</span>
+<span style="color:#323232;">  coeffs = Enum.reverse(input)</span>
+
+<span style="color:#323232;">  with acc &lt;- 1..4</span>
+<span style="color:#323232;">          |&gt; Enum.map(fn x -&gt; x * x * x * (coeffs |&gt; Enum.at(0)) + x * x * (coeffs |&gt; Enum.at(1)) + x * (coeffs |&gt; Enum.at(2)) + (coeffs |&gt; Enum.at(3)) end)</span>
+<span style="color:#323232;">          |&gt; Enum.sum(),</span>
+<span style="color:#323232;">       codepoint &lt;- rem(acc, 1111) + 770,</span>
+<span style="color:#323232;">       do: IO.puts(:&quot;\##{codepoint}&quot;)&#39;</span>
+
+
+
+
+
+<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([97, 109, 97, 35], fn x -&gt; (x + 6) * (x + 4) * (x + 2) * x |&gt; rem(26) |&gt; Kernel.+(97) end) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
+
+<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([97, 109, 97, 35], fn x -&gt; ((x + 6) * (x + 4) * (x + 2) * x) |&gt; rem(26) |&gt; Kernel.+(97) |&gt; :erlang.int_to_char end) |&gt; List.to_string()}\&quot;&quot;</span>
+
+
+
+<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; :erlang.integer_to_list()</span>
+<span style="color:#323232;">#         || [109] ++ Enum.map([2,3],fn x-&gt; 97+((2*x-7)*rem(13))||99end )</span>
+<span style="color:#323232;">#            ||[97]|&gt; List.foldl(&amp;List::flatten/1,[])</span>
+<span style="color:#323232;">#            ||:unicode.characters_to_binary()}\&quot;&quot;</span>
+<span style="color:#323232;"># ama</span>
+
+<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
+
+
+<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
+
+
+
+
+
+
+
+<span style="color:#323232;"># Encode function</span>
+<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#323232;">encoded = plaintext</span>
+<span style="color:#323232;">|&gt; String.downcase()</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97)) * 8 |&gt; Kernel.+(11)</span>
+<span style="color:#323232;">  |&gt; rem(26)</span>
+<span style="color:#323232;">  |&gt; Kernel.+(97)</span>
+<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(encoded)</span>
+
+<span style="color:#323232;"># Decode function</span>
+<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#323232;">decoded = ciphertext</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97) |&gt; Kernel.-(11))</span>
+<span style="color:#323232;">  |&gt; rem(26 * 8)</span>
+<span style="color:#323232;">  |&gt; rem(26)</span>
+<span style="color:#323232;">  |&gt; Kernel.+(97)</span>
+<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(decoded)</span>
+
+
+
+
+
+
+
+<span style="color:#323232;"># Encode function</span>
+<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#323232;">encoded = plaintext</span>
+<span style="color:#323232;">|&gt; String.downcase()</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97)) |&gt; Kernel.*(8) |&gt; Kernel.+(11)</span>
+<span style="color:#323232;">  |&gt; rem(26)</span>
+<span style="color:#323232;">  |&gt; Kernel.+(97)</span>
+<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(encoded)</span>
+
+<span style="color:#323232;"># Decode function</span>
+<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#323232;">decoded = ciphertext</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd()</span>
+<span style="color:#323232;">   |&gt; Kernel.-(97)</span>
+<span style="color:#323232;">   |&gt; Kernel.-(11)</span>
+<span style="color:#323232;">   |&gt; rem(26 * 8)</span>
+<span style="color:#323232;">   |&gt; rem(26)</span>
+<span style="color:#323232;">   |&gt; Kernel.+(97)</span>
+<span style="color:#323232;">   |&gt; Integer.to_string()</span>
+<span style="color:#323232;">   |&gt; :erlang.binary_to_integer())</span>
+<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(decoded)</span>
+
+
+
+<span style="color:#323232;">elixi</span>
+<span style="color:#323232;">r -e &#39;# Encode function</span>
+<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#323232;">encoded = plaintext</span>
+<span style="color:#323232;">|&gt; String.downcase()</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(&amp;(&amp;1 |&gt; String.to_charlist() |&gt; hd() |&gt; (&amp;1 - 97 - 11) |&gt; rem(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; Integer.to_string() |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt;))</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(encoded)</span>
+
+<span style="color:#323232;"># Decode function</span>
+<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#323232;">decoded = ciphertext</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(&amp;(&amp;1 |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt; |&gt; String.to_integer() |&gt; (&amp;1 - 97 + 11) |&gt; rem(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; Integer.to_string() |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt;))</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(decoded)&#39;</span>
+<span style="color:#323232;">** (CompileError) nofile:6: nested captures are not allowed. You cannot define a function using  the capture operator &amp; inside another function defined via &amp;. Got invalid nested capture: &amp;(&amp;1 + 97)</span>
+<span style="color:#323232;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
+<span style="color:#323232;">    (stdlib 4.2) lists.erl:1463: :lists.mapfoldl_1/3</span>
+<span style="color:#323232;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
+<span style="color:#323232;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
+<span style="color:#323232;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
+<span style="color:#323232;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
+<span style="color:#323232;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
+<span style="color:#323232;">    (elixir 1.14.3) expanding macro: Kernel.|&gt;/2</span>
+
+
+
+
+
+
+<span style="color:#323232;"># Encode function</span>
+<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#323232;">encoded = plaintext</span>
+<span style="color:#323232;">|&gt; String.downcase()</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  c = hd(String.to_charlist(x))</span>
+<span style="color:#323232;">  c = c - 97 - 11</span>
+<span style="color:#323232;">  c = rem(c, 26)</span>
+<span style="color:#323232;">  c = c + 97</span>
+<span style="color:#323232;">  c = Integer.to_string(c)</span>
+<span style="color:#323232;">  &lt;&lt;c::utf8&gt;&gt;</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(encoded)</span>
+
+<span style="color:#323232;"># Decode function</span>
+<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#323232;">decoded = ciphertext</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  c = String.to_integer(x |&gt; then(fn x -&gt; &lt;&lt;x::utf8&gt;&gt; end))</span>
+<span style="color:#323232;">  c = c - 97 + 11</span>
+<span style="color:#323232;">  c = rem(c, 26)</span>
+<span style="color:#323232;">  c = c + 97</span>
+<span style="color:#323232;">  c = Integer.to_string(c)</span>
+<span style="color:#323232;">  &lt;&lt;c::utf8&gt;&gt;</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(decoded)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:#323232;"># Encode function</span>
+<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#323232;">encoded = plaintext</span>
+<span style="color:#323232;">|&gt; String.downcase()</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  hd(String.to_charlist(x)) - 97 - 11</span>
+<span style="color:#323232;">  |&gt; rem(26)</span>
+<span style="color:#323232;">  |&gt; &amp; &amp;1 + 97</span>
+<span style="color:#323232;">  |&gt; Integer.to_string()</span>
+<span style="color:#323232;">  |&gt; List.to_string()</span>
+<span style="color:#323232;">  |&gt; String.codepoints()</span>
+<span style="color:#323232;">  |&gt; Enum.filter(&amp;String.printable?/1)</span>
+<span style="color:#323232;">  |&gt; List.to_string()</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(encoded)</span>
+
+<span style="color:#323232;"># Decode function</span>
+<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#323232;">decoded = ciphertext</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  x</span>
+<span style="color:#323232;">  |&gt; String.codepoints()</span>
+<span style="color:#323232;">  |&gt; List.to_string()</span>
+<span style="color:#323232;">  |&gt; String.to_integer()</span>
+<span style="color:#323232;">  |&gt; &amp; &amp;1 - 97 + 11</span>
+<span style="color:#323232;">  |&gt; rem(26)</span>
+<span style="color:#323232;">  |&gt; &amp; &amp;1 + 97</span>
+<span style="color:#323232;">  |&gt; Integer.to_string()</span>
+<span style="color:#323232;">  |&gt; List.to_string()</span>
+<span style="color:#323232;">  |&gt; String.codepoints()</span>
+<span style="color:#323232;">  |&gt; Enum.filter(&amp;String.printable?/1)</span>
+<span style="color:#323232;">  |&gt; List.to_string()</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">IO.puts(decoded)</span>
+
+
+
+
+
+
+
+<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#323232;">encoded = plaintext</span>
+<span style="color:#323232;">|&gt; String.downcase()</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  %{value: char} = List.first(String.codepoints(x))</span>
+<span style="color:#323232;">  char = char - ?a + 11 |&gt; rem(26) |&gt; Kernel.+(?a)</span>
+<span style="color:#323232;">  Integer.to_string(char)</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">|&gt; String.replace(&quot;[]&quot;, &quot;&quot;)</span>
+<span style="color:#323232;">|&gt; IO.puts()</span>
+
+<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#323232;">decoded = ciphertext</span>
+<span style="color:#323232;">|&gt; String.graphemes()</span>
+<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#323232;">  %{value: char} = List.first(String.codepoints(x))</span>
+<span style="color:#323232;">  char = char - ?a |&gt; rem(26) |&gt; Kernel.+(?a)</span>
+<span style="color:#323232;">  Integer.to_string(char)</span>
+<span style="color:#323232;">end)</span>
+<span style="color:#323232;">|&gt; List.to_string()</span>
+<span style="color:#323232;">|&gt; String.replace(&quot;[]&quot;, &quot;&quot;)</span>
+<span style="color:#323232;">|&gt; IO.puts()</span>
+
+
+
+
+
+
+
+
+<span style="color:#323232;">shift_poly = [1, 0, 1]</span>
+
+<span style="color:#323232;">modular_inverse = fn f -&gt;</span>
+<span style="color:#323232;">  fn a, n -&gt;</span>
+<span style="color:#323232;">    case rem(n, a) do</span>
+<span style="color:#323232;">      0 -&gt; {1, 0, a}</span>
+<span style="color:#323232;">      b -&gt;</span>
+<span style="color:#323232;">        {y, x, d} = f.(b, a)</span>
+<span style="color:#323232;">        {x - div(n, a) * y, y, d}</span>
+<span style="color:#323232;">    end</span>
+<span style="color:#323232;">  end</span>
+<span style="color:#323232;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
+
+<span style="color:#323232;">poly_shift_character = fn {char, _rest}, {a, b, c} -&gt;</span>
+<span style="color:#323232;">  shifted_val = a * char * char + b * char + c</span>
+<span style="color:#323232;">  &lt;&lt;shifted_val::utf8&gt;&gt;</span>
+<span style="color:#323232;">end</span>
+
+<span style="color:#323232;">encode = fn f -&gt;</span>
+<span style="color:#323232;">  fn [char | tail], key_poly -&gt;</span>
+<span style="color:#323232;">    [poly_shift_character.({char, 0}, key_poly) | f.(tail, key_poly)]</span>
+<span style="color:#323232;">  end.([], &amp;1)</span>
+<span style="color:#323232;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
+
+<span style="color:#323232;">decode = fn f -&gt;</span>
+<span style="color:#323232;">  fn [a, b | tail], {a_coeff, b_coeff, c_coeff} -&gt;</span>
+<span style="color:#323232;">    inv_a = modular_inverse.(a_coeff, 256) |&gt; elem(0)</span>
+<span style="color:#323232;">    _inv_b = 256 - b_coeff</span>
+<span style="color:#323232;">    sqrt_term = round(:math.sqrt(b_coeff * b_coeff - 4 * a_coeff * c_coeff))</span>
+<span style="color:#323232;">    inv_c = rem(inv_a * (b_coeff * b_coeff - 4 * a_coeff * c_coeff), 256)</span>
+
+<span style="color:#323232;">    char_val = rem(inv_a * (256 + b_coeff - sqrt_term), 256)</span>
+<span style="color:#323232;">                  |&gt; rem(&amp;(&amp;1 in 32..126))</span>
+
+<span style="color:#323232;">    [&lt;&lt;char_val::utf8&gt;&gt; | f.(tail, {a_coeff, b_coeff, c_coeff})]</span>
+<span style="color:#323232;">  end.([], &amp;1)</span>
+<span style="color:#323232;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
+
+<span style="color:#323232;">plaintext = &quot;Hello World!&quot;</span>
+<span style="color:#323232;">key_poly = shift_poly</span>
+
+<span style="color:#323232;">ciphertext = encode.(String.graphemes(plaintext), key_poly) |&gt; List.to_string()</span>
+<span style="color:#323232;">decoded = decode.(String.codepoints(ciphertext), key_poly) |&gt; List.to_string()</span>
+
+<span style="color:#323232;"># Output the results</span>
+<span style="color:#323232;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
+<span style="color:#323232;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
+<span style="color:#323232;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span style="color:#323232;">defmodule Cipher do</span>
+<span style="color:#323232;">  def shift_character(&lt;&lt;char::utf8&gt;&gt; = _input, shift) do</span>
+<span style="color:#323232;">    shifted_val = char + shift</span>
+<span style="color:#323232;">    &lt;&lt;shifted_val :: utf8&gt;&gt;</span>
+<span style="color:#323232;">  end</span>
+
+<span style="color:#323232;">  def encode(plaintext, key) do</span>
+<span style="color:#323232;">    plaintext</span>
+<span style="color:#323232;">    |&gt; String.codepoints()</span>
+<span style="color:#323232;">    |&gt; Enum.map(&amp;shift_character(&amp;1, key))</span>
+<span style="color:#323232;">    |&gt; List.to_string()</span>
+<span style="color:#323232;">  end</span>
+
+<span style="color:#323232;">  def decode(ciphertext, key) do</span>
+<span style="color:#323232;">    ciphertext</span>
+<span style="color:#323232;">    |&gt; String.codepoints()</span>
+<span style="color:#323232;">    |&gt; Enum.map(&amp;shift_character(&amp;1, -key))</span>
+<span style="color:#323232;">    |&gt; List.to_string()</span>
+<span style="color:#323232;">  end</span>
+<span style="color:#323232;">end</span>
+
+
+<span style="color:#323232;">plaintext = &quot;Hello World!&quot;</span>
+<span style="color:#323232;">k = 3</span>
+<span style="color:#323232;">ciphertext = Cipher.encode(plaintext, k)</span>
+<span style="color:#323232;">decoded = Cipher.decode(ciphertext, k)</span>
+
+<span style="color:#323232;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
+<span style="color:#323232;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
+<span style="color:#323232;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
+
+
+
+
+
+
+
+
+
+
+<span style="color:#323232;">defmodule ShiftCipher do</span>
+<span style="color:#323232;">  defp modular_inverse(_a, 0), do: {1, 0, 0}</span>
+<span style="color:#323232;">  defp modular_inverse(a, n) when rem(n, a) != 0 do</span>
+<span style="color:#323232;">    {y, x, d} = modular_inverse(rem(n, a), a)</span>
+<span style="color:#323232;">    {x - div(n, a) * y, y, d}</span>
+<span style="color:#323232;">  end</span>
+
+<span style="color:#323232;">  defp poly_shift_character(char, {a, b, c}) do</span>
+<span style="color:#323232;">    a * String.to_integer(char) * String.to_integer(char) + b * String.to_integer(char) + c |&gt; rem(256)</span>
+<span style="color:#323232;">  end</span>
+
+<span style="color:#323232;">  def encode(plaintext, key_poly) do</span>
+<span style="color:#323232;">    plaintext</span>
+<span style="color:#323232;">    |&gt; String.codepoints()</span>
+<span style="color:#323232;">    |&gt; Enum.map(&amp;poly_shift_character(&amp;1, key_poly))</span>
+<span style="color:#323232;">  end</span>
+
+<span style="color:#323232;">  def decode(ciphertext, key_poly) do</span>
+<span style="color:#323232;">    ciphertext</span>
+<span style="color:#323232;">    |&gt; String.codepoints()</span>
+<span style="color:#323232;">    |&gt; Enum.chunk_every(2, 1, :discard)</span>
+<span style="color:#323232;">    |&gt; Enum.map(&amp;decode_character(&amp;1, key_poly))</span>
+<span style="color:#323232;">    |&gt; (fn x -&gt; List.to_string(x) end).()</span>
+<span style="color:#323232;">  end</span>
+
+<span style="color:#323232;">  defp decode_character([a, b], {a_coeff, b_coeff, c_coeff}) do</span>
+<span style="color:#323232;">    inv_a = modular_inverse(a_coeff, 256) |&gt; elem(0)</span>
+<span style="color:#323232;">    discriminant = b_coeff * b_coeff - 4 * a_coeff * c_coeff</span>
+<span style="color:#323232;">    case discriminant do</span>
+<span style="color:#323232;">      d when d &lt; 0 -&gt; 0</span>
+<span style="color:#323232;">      _ -&gt;</span>
+<span style="color:#323232;">        root1 = (-b_coeff + :math.sqrt(discriminant)) * inv_a |&gt; rem(256)</span>
+<span style="color:#323232;">        root2 = (-b_coeff - :math.sqrt(discriminant)) * inv_a |&gt; rem(256)</span>
+<span style="color:#323232;">        decoded =</span>
+<span style="color:#323232;">          case rem(a, 2) do</span>
+<span style="color:#323232;">            0 -&gt;</span>
+<span style="color:#323232;">              if rem(a * root1 * root1 + b * root1 + c_coeff, 256) == a do</span>
+<span style="color:#323232;">                root1</span>
+<span style="color:#323232;">              else</span>
+<span style="color:#323232;">                root2</span>
+<span style="color:#323232;">              end</span>
+<span style="color:#323232;">            _ -&gt;</span>
+<span style="color:#323232;">              if b &gt;= 0 do</span>
+<span style="color:#323232;">                root1</span>
+<span style="color:#323232;">              else</span>
+<span style="color:#323232;">                root2</span>
+<span style="color:#323232;">              end</span>
+<span style="color:#323232;">          end</span>
+<span style="color:#323232;">        Integer.to_charlist(decoded)</span>
+<span style="color:#323232;">    end</span>
+<span style="color:#323232;">  end</span>
+<span style="color:#323232;">end</span>
+
+<span style="color:#323232;">plaintext = &quot;Hello World!&quot;</span>
+<span style="color:#323232;">key_poly = {1, 0, 1}</span>
+
+<span style="color:#323232;">ciphertext = ShiftCipher.encode(plaintext, key_poly)</span>
+<span style="color:#323232;">decoded = ShiftCipher.decode(ciphertext, key_poly)</span>
+
+<span style="color:#323232;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
+<span style="color:#323232;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
+<span style="color:#323232;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
+
+
+
+</pre>
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

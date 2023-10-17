@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">explain the y-combinator in pt-br with the techniques used</a></li>
+      <li><a href="#link-2">detail in pt-br 10 programming language ecosystems today in the benchmarking game, breaking down relevant categories</a></li>
+      <li><a href="#link-3">but in which categories these ecosystems compete using intricate tools in the entire range of algorithms and techniques</a></li>
+      <li><a href="#link-4">list 10 languages released after 2015 detailing intricate details in how they can affect future benchmarks</a></li>
+      <li><a href="#link-5">if actions used toml, convert this yaml to toml to test</a></li>
+      <li><a href="#link-6">how to make the conversion even more concise? considering toml’s idiomatic features</a></li>
+      <li><a href="#link-7">if an official implementation were to be implemented, turn the yaml sample into the most concise toml equivalent</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">explain the y-combinator in pt-br with the techniques used</h2>
+<p id = "para-1">&lt; O Y-combinator é uma técnica poderosa da programação funcional, que permite a implementação de recursão anônima em linguagens que não possuem suporte nativo para essa funcionalidade. O conceito do Y-combinator foi introduzido por Haskell Curry e recebeu esse nome em referência ao matemático combinator Alonzo Church.</p>
+<p id = "para-2">Para entender o Y-combinator, primeiro precisamos entender a ideia de recursão anônima. A recursão anônima é um tipo de recursão em que uma função se chama a si mesma sem referenciar seu próprio nome. Isso pode ser um desafio em linguagens funcionais que exigem que as funções sejam nomeadas.</p>
+<p id = "para-3">O truque do Y-combinator está em criar uma função de ordem superior que aceita uma função e retorna uma versão recursiva dessa função, permitindo que ela se chame a si mesma. Essa função de ordem superior é chamada de combinator Y.</p>
+<p id = "para-4">Vamos explicar o Y-combinator passo a passo, usando uma linguagem funcional imaginária chamada L.</p>
+<ol>
+<li><p id = "para-5">Definimos uma função auxiliar chamada Y, que recebe uma função <code>f</code> como argumento: <code>Y = fun(f) =&gt;</code></p>
+</li>
+<li><p id = "para-6">Dentro da função <code>Y</code>, retornamos uma nova função anônima que aceita um argumento <code>x</code>: <code>fun(x) =&gt;</code></p>
+</li>
+<li><p id = "para-7">Agora, dentro dessa função anônima, chamamos a função <code>f</code>, mas ao invés de passar <code>x</code> diretamente, passamos uma chamada recursiva para <code>Y</code> passando <code>x</code> como argumento: <code>f(Y(f))(x)</code></p>
+</li>
+<li><p id = "para-8">Fechamos todas as chaves e parênteses: <code>Y = fun(f) =&gt; (fun(x) =&gt; f(Y(f))(x))</code></p>
+</li>
+</ol>
+<p id = "para-9">Agora, podemos usar o Y-combinator para implementar recursão anônima em nossa linguagem L. Suponha que desejamos calcular o fatorial de um número usando recursão anônima. Podemos fazer isso da seguinte maneira:</p>
+<ol>
+<li><p id = "para-10">Definimos uma função <code>fatorial</code> que recebe uma função <code>f</code> e um número <code>n</code>: <code>fatorial = fun(f) =&gt; fun(n) =&gt;</code></p>
+</li>
+<li><p id = "para-11">Em seguida, verificamos se <code>n</code> é igual a zero. Se for, retornamos 1, caso contrário, chamamos a função <code>f</code> passando <code>n - 1</code> como argumento e multiplicamos o resultado por <code>n</code>: <code>if (n == 0) then 1 else n * f(n - 1)</code></p>
+</li>
+<li><p id = "para-12">Fechamos todas as chaves e parênteses: <code>fatorial = fun(f) =&gt; fun(n) =&gt; if (n == 0) then 1 else n * f(n - 1)</code></p>
+</li>
+</ol>
+<p id = "para-13">Agora, podemos usar o Y-combinator para obter uma versão recursiva da função <code>fatorial</code>: <code>fatorialRecursivo = Y(fatorial)</code></p>
+<p id = "para-14">A função <code>fatorialRecursivo</code> será uma versão recursiva da função <code>fatorial</code> que pode ser chamada sem referenciar seu próprio nome.</p>
+<p id = "para-15">Essa é uma breve explicação do Y-combinator e como ele pode ser usado para implementar recursão anônima em linguagens funcionais. Essa técnica é fundamental na programação funcional e pode ser usada para resolver problemas complexos que requerem recursão.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-2">detail in pt-br 10 programming language ecosystems today in the benchmarking game, breaking down relevant categories</h2>
+<ol>
+<li><p id = "para-16">Python:</p>
+<ul>
+<li><p id = "para-17">A linguagem de programação Python é extremamente popular devido à sua sintaxe clara e fácil de aprender. É amplamente utilizado em ciência de dados, aprendizado de máquina e desenvolvimento web. No Jogo de Benchmarking, Python tende a ter um desempenho inferior em termos de velocidade em comparação com linguagens como C ou Java, mas sua eficiência de desenvolvimento geralmente supera essas deficiências.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-18">Java:</p>
+<ul>
+<li><p id = "para-19">Java é uma linguagem orientada a objetos que é amplamente usada em desenvolvimento empresarial e aplicativos Android. Tem um bom desempenho no Jogo de Benchmarking devido à sua eficiência e velocidade, especialmente com o uso da Máquina Virtual Java (JVM).</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-20">JavaScript:</p>
+<ul>
+<li><p id = "para-21">JavaScript é a linguagem de programação principal para desenvolvimento web front-end. Com a introdução do Node.js, JavaScript também se tornou popular para o desenvolvimento back-end. No Jogo de Benchmarking, pode não ser a linguagem mais rápida, mas sua universalidade e versatilidade tornam-na indispensável.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-22">C:</p>
+<ul>
+<li><p id = "para-23">C é uma das linguagens de programação mais antigas e ainda é amplamente usada hoje, especialmente em sistemas operacionais e hardware de baixo nível. É conhecida por sua velocidade e eficiência, tendo um desempenho forte no Jogo de Benchmarking.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-24">C++:</p>
+<ul>
+<li><p id = "para-25">C++ é uma extensão de C que adiciona recursos de programação orientada a objetos. É amplamente usado em software de alto desempenho, como jogos. No Jogo de Benchmarking, C++ geralmente tem um desempenho muito bom, oferecendo um bom equilíbrio entre eficiência de código e velocidade de execução.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-26">Ruby:</p>
+<ul>
+<li><p id = "para-27">Ruby é uma linguagem de programação de script de alto nível conhecida por sua sintaxe clara e limpa. É mais famoso pelo framework de desenvolvimento web, Ruby on Rails. No Jogo de Benchmarking, o desempenho de Ruby pode não ser o mais forte, mas a facilidade de uso e a produtividade do desenvolvedor são seus pontos fortes.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-28">Swift:</p>
+<ul>
+<li><p id = "para-29">Swift é a linguagem de programação primária para desenvolvimento no ecossistema Apple, incluindo iOS, MacOS, watchOS e tvOS. Embora seja uma linguagem mais recente, ela foi projetada para ter um bom desempenho, com melhorias notáveis sobre seu predecessor, Objective-C, no Jogo de Benchmarking.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-30">Go:</p>
+<ul>
+<li><p id = "para-31">Go é uma linguagem de programação desenvolvida pelo Google que se destaca pela concorrência eficiente e facilidade de uso. No Jogo de Benchmarking, Go geralmente tem um bom desempenho, com um tempo de execução rápido e uso eficiente dos recursos do sistema.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-32">Rust:</p>
+<ul>
+<li><p id = "para-33">Rust é uma linguagem de sistema que se destaca pela segurança de memória e desempenho. É projetado para ser uma alternativa mais segura a C e C++. No Jogo de Benchmarking, Rust normalmente apresenta desempenho superior em termos de velocidade e eficiência.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-34">Kotlin:</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-35">Kotlin é uma linguagem de programação moderna que é totalmente interoperável com Java e é agora a linguagem recomendada para o desenvolvimento de aplicativos Android. No Jogo de Benchmarking, Kotlin tende a ter um desempenho semelhante ao Java, pois ambos funcionam na JVM.</p>
+</li>
+</ul>
+<p id = "para-36">Lembre-se de que o desempenho no Jogo de Benchmarking é apenas uma das muitas métricas que podem ser usadas para avaliar uma linguagem de programação. A escolha da linguagem de programação também deve levar em consideração outros fatores, como a natureza do projeto, a equipe de desenvolvimento e o ecossistema da linguagem.</p>
+<h2 id = "link-3">but in which categories these ecosystems compete using intricate tools in the entire range of algorithms and techniques</h2>
+<p id = "para-37">&lt; Os ecossistemas de linguagens de programação competem em uma variedade de categorias, incluindo, mas não se limitando a:</p>
+<ol>
+<li><p id = "para-38">Desempenho: Algumas linguagens, como C e Rust, são projetadas para ter alto desempenho. Elas são frequentemente usadas em aplicações onde a velocidade é crucial, como sistemas operacionais, jogos e processamento de dados em grande escala.</p>
+</li>
+<li><p id = "para-39">Facilidade de uso: Linguagens como Python e Ruby são famosas por sua sintaxe clara e intuitiva. Elas são muitas vezes escolhidas para o protótipo rápido ou para a introdução de novatos na programação.</p>
+</li>
+<li><p id = "para-40">Segurança: Linguagens como Rust e Swift foram projetadas com um forte enfoque na segurança, incluindo prevenção de erros comuns, como acesso à memória após a liberação (dangling pointers).</p>
+</li>
+<li><p id = "para-41">Concorrência: Go e Rust são notáveis por suas funcionalidades de concorrência. A linguagem Go apresenta goroutines, enquanto Rust oferece uma abordagem de propriedade única para gerenciar o acesso à memória em cenários concorrentes.</p>
+</li>
+<li><p id = "para-42">Versatilidade: Algumas linguagens, como JavaScript e Python, são usadas em uma ampla gama de aplicações, desde o desenvolvimento web até a ciência de dados e aprendizado de máquina.</p>
+</li>
+<li><p id = "para-43">Suporte a bibliotecas e frameworks: A disponibilidade de bibliotecas e frameworks pode tornar o desenvolvimento mais rápido e fácil. Python é famoso por sua vasta gama de bibliotecas para ciência de dados e aprendizado de máquina, enquanto JavaScript possui numerosos frameworks para o desenvolvimento web.</p>
+</li>
+<li><p id = "para-44">Portabilidade: Linguagens como Java e Python são altamente portáveis, com a capacidade de executar o mesmo código em diferentes plataformas.</p>
+</li>
+<li><p id = "para-45">Comunidade e suporte: Uma comunidade forte pode fazer uma grande diferença em termos de suporte e disponibilidade de recursos de aprendizado. Linguagens como JavaScript e Python possuem grandes comunidades de desenvolvedores.</p>
+</li>
+<li><p id = "para-46">Interoperabilidade: Linguagens como Kotlin e TypeScript oferecem interoperabilidade com Java e JavaScript, respectivamente, permitindo que os desenvolvedores tirem proveito das características dessas linguagens enquanto aproveitam os benefícios das novas.</p>
+</li>
+<li><p id = "para-47">Orientação a objetos vs funcional: Algumas linguagens, como Java e C++, são fortemente orientadas a objetos, enquanto outras, como Haskell, são fortemente orientadas ao funcional. Ainda outras, como JavaScript e Python, suportam ambos os paradigmas.</p>
+</li>
+</ol>
+<h2 id = "link-4">list 10 languages released after 2015 detailing intricate details in how they can affect future benchmarks</h2>
+<p id = "para-48">&lt; Desde 2015, várias novas linguagens de programação foram lançadas, cada uma trazendo recursos e inovações únicos que poderiam impactar futuros benchmarks. Aqui estão 10 linguagens notáveis lançadas após 2015:</p>
+<ol>
+<li><p id = "para-49">Ballerina (2017):</p>
+<ul>
+<li><p id = "para-50">Ballerina é uma linguagem de programação de código aberto projetada para a era da nuvem. Ela introduz um novo paradigma que une o código e a infraestrutura. Em benchmarks futuros, isso poderia alterar a forma como medimos o desempenho do código, considerando também a configuração da infraestrutura.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-51">Elm (2016):</p>
+<ul>
+<li><p id = "para-52">Elm é uma linguagem de programação funcional que compila para JavaScript. É conhecida pela sua forte garantia de ausência de erros de tempo de execução. Em futuros benchmarks, Elm pode influenciar a maneira como medimos a confiabilidade do código, além da performance.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-53">Zig (2016):</p>
+<ul>
+<li><p id = "para-54">Zig é uma linguagem de programação de uso geral e de sistema projetada para otimizar a manutenção de software e melhorar a produtividade do desenvolvedor. Suas características de segurança de memória e simplicidade podem afetar futuros benchmarks de desempenho e produtividade.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-55">Julia (2018):</p>
+<ul>
+<li><p id = "para-56">Julia é uma linguagem de programação de alto nível e alto desempenho para computação técnica. Tem a ambição de combinar a velocidade de C com a usabilidade de Python. Isso poderia mudar a forma como comparamos linguagens de programação em termos de desempenho e facilidade de uso em benchmarks futuros.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-57">ReasonML (2016):</p>
+<ul>
+<li><p id = "para-58">ReasonML é uma nova sintaxe para OCaml, criada pelo Facebook. É projetada para ser acessível para desenvolvedores JavaScript e tem forte interoperabilidade com o JavaScript. Isso pode influenciar futuros benchmarks de linguagens que se integram a ecossistemas existentes.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-59">Crystal (2019):</p>
+<ul>
+<li><p id = "para-60">Crystal é uma linguagem de programação de propósito geral inspirada em Ruby, mas com desempenho e eficiência semelhantes a C. A combinação de uma sintaxe amigável com desempenho de alto nível pode impactar futuros benchmarks, especialmente na comparação entre eficiência de desenvolvimento e desempenho.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-61">Dark (2019):</p>
+<ul>
+<li><p id = "para-62">Dark é uma linguagem de programação orientada a serviços, projetada para tornar a implantação de código uma coisa do passado. Seu impacto em futuros benchmarks pode ser na forma como medimos a eficiência da implantação e manutenção do código.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-63">Gleam (2020):</p>
+<ul>
+<li><p id = "para-64">Gleam é uma linguagem de programação estática e fortemente tipada que roda na Erlang VM. Suas características poderiam influenciar futuros benchmarks, especialmente no contexto de sistemas distribuídos e concorrentes.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-65">Odin (2016):</p>
+<ul>
+<li><p id = "para-66">Odin é uma linguagem de programação de propósito geral, de alto desempenho e estática, projetada com o objetivo de produzir código eficiente. Ela pode influenciar futuros benchmarks em termos de eficiência de desempenho e código.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-67">V (2019):</p>
+<ul>
+<li><p id = "para-68">V é uma linguagem de programação de sistema simples e rápida, semelhante a Go. Ela promete segurança, simplicidade e eficiência, o que pode afetar futuros benchmarks em termos de desempenho e segurança.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p id = "para-69">Essas linguagens representam novas abordagens e filosofias na programação. O impacto delas em futuros benchmarks dependerá de como essas filosofias e características serão valorizadas e medidas.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-5">if actions used toml, convert this yaml to toml to test</h2>
+<p id = "para-70">&lt; The YAML content provided represents a GitHub Actions workflow file. It is defined in a specific structure expected by GitHub.</p>
+<p id = "para-71">TOML (Tom’s Obvious, Minimal Language) is a simple language that provides a configuration file format. However, as of my knowledge cutoff in September 2021, GitHub Actions does not natively support TOML for defining workflows, hence the conversion might not be useful in practice. Nevertheless, here’s how the provided YAML might look in TOML:</p>
+<pre><span style="color:#323232;">[name]</span>
+<span style="color:#323232;">value = &quot;Release&quot;</span>
+
+<span style="color:#323232;">[on]</span>
+<span style="color:#323232;">[on.push]</span>
+<span style="color:#323232;">branches = [&quot;main&quot;]</span>
+
+<span style="color:#323232;">[jobs]</span>
+<span style="color:#323232;">[jobs.deploy-widgets]</span>
+<span style="color:#323232;">runs-on = &quot;ubuntu-latest&quot;</span>
+<span style="color:#323232;">name = &quot;Make a function call on mainnet&quot;</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets.env]</span>
+<span style="color:#323232;">NEAR_NETWORK_CONNECTION = &quot;mainnet&quot;</span>
+<span style="color:#323232;">NEAR_CONTRACT_ACCOUNT_ID = &quot;${{ vars.NEAR_CONTRACT_ACCOUNT_ID }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_ID = &quot;${{ vars.NEAR_SIGNER_ACCOUNT_ID }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_PUBLIC_KEY = &quot;${{ vars.NEAR_SIGNER_ACCOUNT_PUBLIC_KEY }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_PRIVATE_KEY = &quot;${{ secrets.NEAR_SIGNER_ACCOUNT_PRIVATE_KEY }}&quot;</span>
+
+<span style="color:#323232;">[[jobs.deploy-widgets.steps]]</span>
+<span style="color:#323232;">name = &quot;Checkout repository&quot;</span>
+<span style="color:#323232;">uses = &quot;actions/checkout@v2&quot;</span>
+
+<span style="color:#323232;">[[jobs.deploy-widgets.steps]]</span>
+<span style="color:#323232;">name = &quot;Install near CLI&quot;</span>
+<span style="color:#323232;">run = &#39;&#39;&#39;</span>
+<span style="color:#323232;">curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/download/v0.3.1/near-cli-rs-v0.3.1-installer.sh | sh</span>
+<span style="color:#323232;">&#39;&#39;&#39;</span>
+
+<span style="color:#323232;">[[jobs.deploy-widgets.steps]]</span>
+<span style="color:#323232;">name = &quot;Call some function&quot;</span>
+<span style="color:#323232;">run = &#39;&#39;&#39;</span>
+<span style="color:#323232;">near contract call-function as-transaction &quot;$NEAR_CONTRACT_ACCOUNT_ID&quot; &#39;function_name_here&#39; json-args &#39;{}&#39; prepaid-gas &#39;100 TeraGas&#39; attached-deposit &#39;0 NEAR&#39; sign-as &quot;$NEAR_SIGNER_ACCOUNT_ID&quot; network-config &quot;$NEAR_NETWORK_CONNECTION&quot; sign-with-plaintext-private-key --signer-public-key &quot;$NEAR_SIGNER_ACCOUNT_PUBLIC_KEY&quot; --signer-private-key &quot;$NEAR_SIGNER_ACCOUNT_PRIVATE_KEY&quot; send</span>
+<span style="color:#323232;">&#39;&#39;&#39;</span>
+
+</pre><p id = "para-72">Keep in mind that GitHub Actions won’t recognize this TOML configuration. It’s simply a demonstration of how the YAML could be translated to TOML.</p>
+<h2 id = "link-6">how to make the conversion even more concise? considering toml’s idiomatic features</h2>
+<p id = "para-73">&lt; The TOML format is indeed designed to be more human-readable and concise, but it doesn’t provide a way to shorten or simplify the content of your specific YAML configuration, because the nature of the data being represented is still the same.</p>
+<p id = "para-74">However, you can try to structure the TOML to reduce visual clutter, even though it may not reduce the line count significantly. Here is another attempt, which groups related keys:</p>
+<pre><span style="color:#323232;">[name]</span>
+<span style="color:#323232;">value = &quot;Release&quot;</span>
+
+<span style="color:#323232;">[on.push]</span>
+<span style="color:#323232;">branches = [&quot;main&quot;]</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets]</span>
+<span style="color:#323232;">runs-on = &quot;ubuntu-latest&quot;</span>
+<span style="color:#323232;">name = &quot;Make a function call on mainnet&quot;</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets.env]</span>
+<span style="color:#323232;">NEAR_NETWORK_CONNECTION = &quot;mainnet&quot;</span>
+<span style="color:#323232;">NEAR_CONTRACT_ACCOUNT_ID = &quot;${{ vars.NEAR_CONTRACT_ACCOUNT_ID }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_ID = &quot;${{ vars.NEAR_SIGNER_ACCOUNT_ID }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_PUBLIC_KEY = &quot;${{ vars.NEAR_SIGNER_ACCOUNT_PUBLIC_KEY }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_PRIVATE_KEY = &quot;${{ secrets.NEAR_SIGNER_ACCOUNT_PRIVATE_KEY }}&quot;</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets.steps.checkout]</span>
+<span style="color:#323232;">name = &quot;Checkout repository&quot;</span>
+<span style="color:#323232;">uses = &quot;actions/checkout@v2&quot;</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets.steps.install]</span>
+<span style="color:#323232;">name = &quot;Install near CLI&quot;</span>
+<span style="color:#323232;">run = &#39;&#39;&#39;</span>
+<span style="color:#323232;">curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/download/v0.3.1/near-cli-rs-v0.3.1-installer.sh | sh</span>
+<span style="color:#323232;">&#39;&#39;&#39;</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets.steps.call]</span>
+<span style="color:#323232;">name = &quot;Call some function&quot;</span>
+<span style="color:#323232;">run = &#39;&#39;&#39;</span>
+<span style="color:#323232;">near contract call-function as-transaction &quot;$NEAR_CONTRACT_ACCOUNT_ID&quot; &#39;function_name_here&#39; json-args &#39;{}&#39; prepaid-gas &#39;100 TeraGas&#39; attached-deposit &#39;0 NEAR&#39; sign-as &quot;$NEAR_SIGNER_ACCOUNT_ID&quot; network-config &quot;$NEAR_NETWORK_CONNECTION&quot; sign-with-plaintext-private-key --signer-public-key &quot;$NEAR_SIGNER_ACCOUNT_PUBLIC_KEY&quot; --signer-private-key &quot;$NEAR_SIGNER_ACCOUNT_PRIVATE_KEY&quot; send</span>
+<span style="color:#323232;">&#39;&#39;&#39;</span>
+
+</pre><p id = "para-75">This way, each step has its own unique section, but it’s less idiomatic than the previous version because TOML arrays are typically used to represent multiple similar objects.</p>
+<p id = "para-76">Remember, GitHub Actions as of my knowledge cutoff in September 2021, won’t recognize this TOML configuration.</p>
+<h2 id = "link-7">if an official implementation were to be implemented, turn the yaml sample into the most concise toml equivalent</h2>
+<p id = "para-77">&lt; If GitHub Actions were to support TOML and considering the language’s features for conciseness, the configuration might look something like this:</p>
+<pre><span style="color:#323232;">name = &quot;Release&quot;</span>
+
+<span style="color:#323232;">[on.push]</span>
+<span style="color:#323232;">branches = [&quot;main&quot;]</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets]</span>
+<span style="color:#323232;">runs-on = &quot;ubuntu-latest&quot;</span>
+<span style="color:#323232;">name = &quot;Make a function call on mainnet&quot;</span>
+
+<span style="color:#323232;">[jobs.deploy-widgets.env]</span>
+<span style="color:#323232;">NEAR_NETWORK_CONNECTION = &quot;mainnet&quot;</span>
+<span style="color:#323232;">NEAR_CONTRACT_ACCOUNT_ID = &quot;${{ vars.NEAR_CONTRACT_ACCOUNT_ID }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_ID = &quot;${{ vars.NEAR_SIGNER_ACCOUNT_ID }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_PUBLIC_KEY = &quot;${{ vars.NEAR_SIGNER_ACCOUNT_PUBLIC_KEY }}&quot;</span>
+<span style="color:#323232;">NEAR_SIGNER_ACCOUNT_PRIVATE_KEY = &quot;${{ secrets.NEAR_SIGNER_ACCOUNT_PRIVATE_KEY }}&quot;</span>
+
+<span style="color:#323232;">[[jobs.deploy-widgets.steps]]</span>
+<span style="color:#323232;">name = &quot;Checkout repository&quot;</span>
+<span style="color:#323232;">uses = &quot;actions/checkout@v2&quot;</span>
+
+<span style="color:#323232;">[[jobs.deploy-widgets.steps]]</span>
+<span style="color:#323232;">name = &quot;Install near CLI&quot;</span>
+<span style="color:#323232;">run = &#39;&#39;&#39;</span>
+<span style="color:#323232;">curl --proto &#39;=https&#39; --tlsv1.2 -LsSf https://github.com/near/near-cli-rs/releases/download/v0.3.1/near-cli-rs-v0.3.1-installer.sh | sh</span>
+<span style="color:#323232;">&#39;&#39;&#39;</span>
+
+<span style="color:#323232;">[[jobs.deploy-widgets.steps]]</span>
+<span style="color:#323232;">name = &quot;Call some function&quot;</span>
+<span style="color:#323232;">run = &#39;&#39;&#39;</span>
+<span style="color:#323232;">near contract call-function as-transaction &quot;$NEAR_CONTRACT_ACCOUNT_ID&quot; &#39;function_name_here&#39; json-args &#39;{}&#39; prepaid-gas &#39;100 TeraGas&#39; attached-deposit &#39;0 NEAR&#39; sign-as &quot;$NEAR_SIGNER_ACCOUNT_ID&quot; network-config &quot;$NEAR_NETWORK_CONNECTION&quot; sign-with-plaintext-private-key --signer-public-key &quot;$NEAR_SIGNER_ACCOUNT_PUBLIC_KEY&quot; --signer-private-key &quot;$NEAR_SIGNER_ACCOUNT_PRIVATE_KEY&quot; send</span>
+<span style="color:#323232;">&#39;&#39;&#39;</span>
+
+</pre><p id = "para-78">This configuration is similar to the previous examples, but it drops some of the nesting (like the ‘on’ table) for a more flattened and concise format. Note that this would only be possible with changes to the underlying software interpreting the configuration files, which as of my knowledge cutoff in September 2021, does not support TOML in GitHub Actions.</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

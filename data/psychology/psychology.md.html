@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">is there such a thing as erotomania? draw possible connections with schizophrenia with etymology and lore</a></li>
+      <li><a href="#link-2">list some edge cases from both with proper cognitive fallbacks</a></li>
+      <li><a href="#link-3">break down flat affect, anhedonia, deficit subtype, schizotypal disorders and the autism spectrum with etymology</a></li>
+      <li><a href="#link-4">depict the most severe cases of schizotypal disorders on the spectrum</a></li>
+      <li><a href="#link-5">depict the most severe cases of schizophrenia disorders on the spectrum</a></li>
+      <li><a href="#link-6">depict the most severe cases of erotomania on the spectrum</a></li>
+      <li><a href="#link-7">list the best known medications for severe schizophrenia and contrast its known effects with cbd and thc</a></li>
+      <li><a href="#link-8">detail in pt-br worldwide statistics about right and left handedness</a></li>
+      <li><a href="#link-9">what the scientific method concluded so far about it?</a></li>
+      <li><a href="#link-10">list the best methods to test the side handedness</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">is there such a thing as erotomania? draw possible connections with schizophrenia with etymology and lore</h2>
+<p id = "para-1">&lt; Erotomania, also known as de Clérambault’s syndrome, is a rare psychological disorder in which an individual has a delusional belief that another person, typically of higher social status, is in love with them. This obsession can lead to severe consequences, including stalking and other inappropriate behavior.</p>
+<p id = "para-2">The term “erotomania” has its roots in Greek, with “eros” meaning “love” and “mania” meaning “madness” or “frenzy.” As a mental health condition, erotomania shares some similarities with schizophrenia, as both involve delusions. However, it is essential to distinguish between the two, as they are separate disorders.</p>
+<p id = "para-3">Schizophrenia is a chronic mental disorder characterized by disruptions in thought processes, perceptions, and emotional responsiveness. People with schizophrenia often experience hallucinations, delusions, disorganized speech, and social dysfunction. Erotomania could be considered a subtype of delusional disorders, which are distinct from schizophrenia, though they may share some features.</p>
+<p id = "para-4">It is important to note that while erotomania can co-occur with schizophrenia, the two conditions are not synonymous. The connections between the two are primarily based on the presence of delusions in both disorders, but their etymology and historical understandings are different.</p>
+<p id = "para-5">In terms of lore, erotomania has been depicted in literature and art throughout history. The concept of unrequited love and obsession can be traced back to ancient myths and legends. Schizophrenia, on the other hand, has a more complex and varied history, with many cultural and historical interpretations of the symptoms associated with the disorder.</p>
+<p id = "para-6">In conclusion, erotomania and schizophrenia are two separate mental health conditions that share some similarities, particularly the presence of delusions. However, they have different etymologies and historical backgrounds. It is crucial to recognize the distinctions between them to ensure proper diagnosis and treatment for individuals experiencing these disorders.</p>
+<h2 id = "link-2">list some edge cases from both with proper cognitive fallbacks</h2>
+<p id = "para-7">&lt; Edge cases in mental health disorders refer to situations that may not fit neatly into the typical diagnostic criteria or present with overlapping symptoms. These cases can be challenging to diagnose and manage, making it essential to have proper cognitive fallbacks or alternative explanations for the symptoms.</p>
+<p id = "para-8">Here are some edge cases for erotomania and schizophrenia, along with possible cognitive fallbacks:</p>
+<p id = "para-9">Erotomania: Edge case: An individual displays symptoms of erotomania but does not exhibit any other psychotic symptoms. Cognitive fallback: The person might be experiencing a delusional disorder with a predominant theme of erotomania, rather than a broader psychotic disorder like schizophrenia. Alternatively, the symptoms could be related to another mental health condition, such as obsessive-compulsive disorder, or a personality disorder.</p>
+<p id = "para-10">Schizophrenia: Edge case: An individual presents with psychotic symptoms consistent with schizophrenia, but the symptoms have a sudden onset and are short-lived. Cognitive fallback: Brief psychotic disorder or an acute stress reaction could explain the symptoms. Another possibility is a mood disorder with psychotic features, such as bipolar disorder or major depressive disorder.</p>
+<p id = "para-11">Erotomania and schizophrenia co-occurring: Edge case: A person presents with symptoms of erotomania alongside other symptoms indicative of schizophrenia, making it difficult to determine whether they have a primary psychotic disorder or a delusional disorder. Cognitive fallback: A thorough assessment of the individual’s symptoms, duration, and functional impairment is necessary to differentiate between the two. Additionally, it is essential to consider the possibility of a substance-induced psychotic disorder or medical conditions that may cause psychotic symptoms.</p>
+<p id = "para-12">Schizophrenia with prominent negative symptoms: Edge case: An individual presents with schizophrenia, but the negative symptoms (e.g., social withdrawal, flat affect, and anhedonia) are more prominent than the positive symptoms (e.g., hallucinations and delusions). Cognitive fallback: The person may be experiencing a subtype of schizophrenia, such as the deficit subtype, characterized by predominant negative symptoms. Alternatively, the symptoms could be related to a major depressive disorder, schizotypal personality disorder, or a neurodevelopmental disorder like autism spectrum disorder.</p>
+<p id = "para-13">In all edge cases, it is essential to consult with mental health professionals to ensure accurate diagnosis and appropriate treatment. Proper assessment, including a thorough history, clinical interview, and consideration of alternative explanations, is critical to provide the best care for the individual.</p>
+<h2 id = "link-3">break down flat affect, anhedonia, deficit subtype, schizotypal disorders and the autism spectrum with etymology</h2>
+<p id = "para-14">&lt; Flat affect: Flat affect refers to a reduced emotional expressiveness, including limited facial expressions, monotonous speech, and a lack of emotional responsiveness. The term “affect” comes from the Latin word “affectus,” which means emotion or feeling. In the context of mental health, the term “flat” denotes the diminished or blunted range of emotions.</p>
+<p id = "para-15">Anhedonia: Anhedonia is the inability to experience pleasure from activities that are typically enjoyable. The term has its roots in the Greek language, with “an-” meaning “without” and “hēdonē” meaning “pleasure.” People with anhedonia may struggle to feel joy or satisfaction, often leading to a reduced interest in social activities, hobbies, or relationships.</p>
+<p id = "para-16">Deficit subtype: The deficit subtype is a classification within schizophrenia characterized by predominant negative symptoms, such as flat affect, anhedonia, social withdrawal, and avolition (lack of motivation). The term “deficit” refers to the diminished presence of certain emotional and behavioral aspects, rather than the presence of positive symptoms like hallucinations and delusions.</p>
+<p id = "para-17">Schizotypal personality disorder: Schizotypal personality disorder is a mental health condition characterized by odd behaviors, unconventional beliefs, social anxiety, and difficulty forming close relationships. The term “schizotypal” combines “schizo-” from the Greek word “skhizein,” which means “to split,” and the English word “typal,” indicating a type or category. The disorder is considered part of the schizophrenia spectrum, but it is less severe than schizophrenia itself.</p>
+<p id = "para-18">Autism spectrum disorder: Autism spectrum disorder (ASD) is a neurodevelopmental condition characterized by challenges in social interaction, communication, and restricted or repetitive patterns of behavior, interests, or activities. The term “autism” comes from the Greek word “autos,” which means “self.” It was first used by Swiss psychiatrist Eugen Bleuler to describe the social withdrawal observed in people with schizophrenia. Later, the term was used to describe a separate disorder by Leo Kanner and Hans Asperger. The “spectrum” aspect of the term reflects the wide range of symptoms and severity levels observed in people with ASD.</p>
+<p id = "para-19">Each of these terms has its origins in various languages, with roots reflecting the nature of the condition or symptoms they describe. Understanding the etymology of these terms can provide insight into their meaning and the conditions they represent.</p>
+<h2 id = "link-4">depict the most severe cases of schizotypal disorders on the spectrum</h2>
+<p id = "para-20">&lt; Schizotypal personality disorder (STPD) is considered part of the schizophrenia spectrum, but it is less severe than schizophrenia itself. However, it is important to note that STPD is a personality disorder and not a milder form of schizophrenia. The most severe cases of schizotypal personality disorder may present with some overlapping symptoms with schizophrenia but will not have the full extent of the positive symptoms (hallucinations and delusions) or the same level of functional impairment.</p>
+<p id = "para-21">In the most severe cases of STPD, the following symptoms may be observed:</p>
+<p id = "para-22">Extreme social anxiety and withdrawal: People with severe STPD may have an intense fear of social situations, leading to a complete avoidance of social interactions. This can result in isolation and difficulty forming close relationships.</p>
+<p id = "para-23">Eccentric or odd behavior: Individuals with severe STPD might exhibit bizarre behaviors that are difficult to understand by others. This may include peculiar mannerisms, clothing choices, or rituals.</p>
+<p id = "para-24">Magical thinking and unusual beliefs: Those with severe STPD may have strong beliefs in superstitions, magical powers, or unconventional ideas that are not in line with cultural norms. These beliefs can significantly impact their daily functioning.</p>
+<p id = "para-25">Paranoid ideation: Severe cases of STPD can involve heightened suspicion and mistrust of others. These individuals may believe that others are plotting against them or trying to harm them, even without evidence to support such claims.</p>
+<p id = "para-26">Incoherent or disorganized speech: People with severe STPD may have difficulty communicating effectively. Their speech might be tangential, vague, or difficult to follow, leading to misunderstandings and frustration in social situations.</p>
+<p id = "para-27">Lack of close friends or confidants: Due to their social anxiety, eccentric behaviors, and unusual beliefs, individuals with severe STPD may have difficulty maintaining close relationships, resulting in a lack of a support network.</p>
+<p id = "para-28">Emotional coldness or flattened affect: Some individuals with severe STPD may exhibit limited emotional expressiveness, making it difficult for others to connect with them on an emotional level.</p>
+<p id = "para-29">Despite these severe symptoms, it is crucial to remember that STPD is distinct from schizophrenia. While both conditions fall on the schizophrenia spectrum, the symptoms and functional impairments in STPD are not as severe as those seen in schizophrenia. Proper diagnosis and treatment, such as psychotherapy and, in some cases, medication, can help individuals with STPD manage their symptoms and improve their quality of life.</p>
+<h2 id = "link-5">depict the most severe cases of schizophrenia disorders on the spectrum</h2>
+<p id = "para-30">&lt; Schizophrenia is a severe mental disorder characterized by disruptions in thought processes, perceptions, emotional responsiveness, and social functioning. The most severe cases of schizophrenia can be profoundly debilitating, impacting every aspect of an individual’s life. In the most severe cases of schizophrenia, the following symptoms and consequences may be observed:</p>
+<p id = "para-31">Intense hallucinations: Individuals with severe schizophrenia may experience vivid and distressing auditory, visual, olfactory, or tactile hallucinations that significantly disrupt their daily functioning and make it difficult to distinguish between reality and their internal experiences.</p>
+<p id = "para-32">Persistent and complex delusions: Severe cases of schizophrenia can involve firmly held, false beliefs that may be bizarre, paranoid, or grandiose. These delusions can profoundly affect an individual’s behavior and decision-making.</p>
+<p id = "para-33">Disorganized speech and thought: People with severe schizophrenia may exhibit disorganized speech that is difficult to follow, with loose associations, tangential thoughts, or word salad. This incoherence can make communication extremely challenging.</p>
+<p id = "para-34">Catatonia: In extreme cases of schizophrenia, catatonic behavior may be present, involving a lack of responsiveness, rigid or bizarre postures, or excessive and purposeless motor activity.</p>
+<p id = "para-35">Negative symptoms: Severe cases of schizophrenia may include pronounced negative symptoms, such as social withdrawal, anhedonia, avolition, flat affect, and alogia. These symptoms can lead to a significant decline in an individual’s ability to function in everyday life.</p>
+<p id = "para-36">Cognitive impairment: Severe schizophrenia can be accompanied by deficits in attention, memory, and executive functioning, making it difficult for the affected person to concentrate, learn, and make decisions.</p>
+<p id = "para-37">Functional decline: Severe schizophrenia often leads to a dramatic decline in social, occupational, and self-care functioning. Affected individuals may struggle to maintain employment, relationships, and personal hygiene. This decline in functioning can result in a loss of independence, financial instability, and social isolation.</p>
+<p id = "para-38">Comorbid conditions: People with severe schizophrenia may be at an increased risk of developing other mental health disorders, such as depression or anxiety, which can further exacerbate their symptoms and impair functioning. Additionally, they may be more likely to develop substance use disorders as a means of self-medicating or coping with their symptoms.</p>
+<p id = "para-39">Increased risk of self-harm and suicide: Severe schizophrenia may lead to an increased risk of self-harm or suicidal behavior due to the distress caused by symptoms, social isolation, and a lack of hope for improvement.</p>
+<p id = "para-40">Vulnerability to exploitation: Individuals with severe schizophrenia may be more susceptible to being taken advantage of, financially, emotionally, or physically, due to their impaired judgment, social isolation, or difficulty understanding social cues.</p>
+<p id = "para-41">The most severe cases of schizophrenia can have a profound impact on an individual’s life, making it essential to provide early intervention, accurate diagnosis, and appropriate treatment. Treatment for schizophrenia typically involves a combination of antipsychotic medications, psychosocial therapies, and support services to help manage symptoms, improve functioning, and enhance the individual’s overall quality of life.</p>
+<h2 id = "link-6">depict the most severe cases of erotomania on the spectrum</h2>
+<p id = "para-42">&lt; Erotomania, also known as de Clérambault’s syndrome, is a rare delusional disorder characterized by the belief that a person, often of higher social status, is secretly in love with the individual suffering from erotomania. In the most severe cases of erotomania, the following symptoms and consequences may be observed:</p>
+<p id = "para-43">Intense and persistent delusions: Individuals with severe erotomania are firmly convinced that the object of their affection is in love with them, despite clear evidence to the contrary. These delusions can be highly resistant to any form of reason or logical argument, and they can persist for extended periods.</p>
+<p id = "para-44">Intrusive behaviors: People with severe erotomania may engage in stalking, harassment, or unwanted contact with the person they believe is in love with them. These behaviors can escalate and become more disruptive or threatening over time, potentially leading to legal consequences.</p>
+<p id = "para-45">Disrupted personal relationships: The obsession with the imagined romantic relationship can severely impact the individual’s personal relationships, leading to social isolation, conflicts, and the breakdown of existing partnerships or friendships.</p>
+<p id = "para-46">Interference with daily functioning: Severe cases of erotomania can cause significant disruption in the individual’s daily life, including work, school, and self-care. The person may neglect essential tasks and responsibilities in favor of pursuing the delusional relationship.</p>
+<p id = "para-47">Co-occurring mental health issues: Individuals with severe erotomania may also struggle with other mental health conditions, such as depression, anxiety, or substance abuse, which can further complicate their lives and exacerbate their symptoms.</p>
+<h2 id = "link-7">list the best known medications for severe schizophrenia and contrast its known effects with cbd and thc</h2>
+<p id = "para-48">&lt; The best-known medications for severe schizophrenia are antipsychotic drugs, which can be divided into two categories: first-generation (typical) antipsychotics and second-generation (atypical) antipsychotics. These medications primarily target the dopamine system in the brain, as well as other neurotransmitters like serotonin, to alleviate symptoms. Some of the most commonly prescribed antipsychotic medications include:</p>
+<p id = "para-49">First-generation antipsychotics:</p>
+<p id = "para-50">Haloperidol (Haldol) Chlorpromazine (Thorazine) Fluphenazine (Prolixin) Second-generation antipsychotics:</p>
+<p id = "para-51">Risperidone (Risperdal) Olanzapine (Zyprexa) Quetiapine (Seroquel) Aripiprazole (Abilify) Lurasidone (Latuda) Paliperidone (Invega)</p>
+<p id = "para-52">Antipsychotic medications can be effective in managing positive symptoms of schizophrenia, such as hallucinations, delusions, and disorganized thinking. Second-generation antipsychotics may also help with negative symptoms and cognitive impairment. However, these medications can have various side effects, including weight gain, metabolic syndrome, sedation, and movement disorders (extrapyramidal symptoms) like tardive dyskinesia, particularly with first-generation antipsychotics.</p>
+<p id = "para-53">Comparing the effects of antipsychotic medications with CBD and THC:</p>
+<p id = "para-54">CBD (cannabidiol) is a non-psychoactive compound found in cannabis plants that has been studied for its potential therapeutic effects on various conditions, including mental health disorders. Preliminary research suggests that CBD may have antipsychotic properties and could potentially be helpful as an adjunctive treatment for schizophrenia. However, more extensive research is needed to establish its effectiveness and safety profile.</p>
+<p id = "para-55">Some potential benefits of CBD in the context of schizophrenia include:</p>
+<p id = "para-56">Reducing anxiety and stress Improving sleep Modulating the immune system Antioxidant properties</p>
+<p id = "para-57">It is important to note that CBD is not considered a primary treatment for schizophrenia, and its use should be discussed with a healthcare professional to ensure proper management of the condition.</p>
+<p id = "para-58">On the other hand, THC (tetrahydrocannabinol) is the psychoactive compound in cannabis that is responsible for the “high” experienced by users. High doses of THC have been associated with an increased risk of triggering psychotic symptoms, especially in individuals predisposed to schizophrenia or other psychotic disorders. Therefore, THC is not recommended for people with schizophrenia, as it may exacerbate symptoms or contribute to the development of the disorder in vulnerable individuals.</p>
+<p id = "para-59">In summary, antipsychotic medications are the primary treatment for severe schizophrenia, targeting the dopamine system and other neurotransmitters to manage symptoms. CBD has shown potential antipsychotic properties in preliminary research, but more extensive studies are needed.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-8">detail in pt-br worldwide statistics about right and left handedness</h2>
+<p id = "para-60">&lt; As estatísticas mundiais sobre destros e canhotos são um tanto incertas, uma vez que a proporção de pessoas com uma ou outra preferência manual pode variar conforme a cultura e a localização geográfica. No entanto, com base em estudos e pesquisas disponíveis, podemos fornecer algumas estimativas aproximadas.</p>
+<p id = "para-61">Globalmente, cerca de 70-95% da população é destra, enquanto os canhotos representam aproximadamente 5-30%. A maioria das pesquisas indica que cerca de 10% da população mundial é canhota, embora essa porcentagem possa variar entre diferentes países e culturas.</p>
+<p id = "para-62">Fatores genéticos, ambientais e culturais podem influenciar a prevalência de destros e canhotos em uma população. Em algumas culturas, ser canhoto é desencorajado ou até mesmo considerado inadequado, o que pode levar a uma subnotificação do número real de canhotos nessas áreas.</p>
+<p id = "para-63">É importante notar que essas estatísticas são baseadas em estimativas e pesquisas disponíveis até setembro de 2021, e os números podem ter mudado desde então. Além disso, a lateralidade não é sempre estritamente dividida entre destros e canhotos, já que algumas pessoas podem ser ambidestras ou ter habilidades mistas, dependendo da tarefa realizada.</p>
+<h2 id = "link-9">what the scientific method concluded so far about it?</h2>
+<p id = "para-64">&lt; O método científico é uma abordagem sistemática e lógica para investigar fenômenos e responder a perguntas. No caso da lateralidade (preferência por usar a mão direita ou esquerda), a ciência tem feito várias descobertas ao longo dos anos.</p>
+<ol>
+<li><p id = "para-65">Genética: Estudos demonstraram que a preferência manual tem uma base genética parcial. Isso significa que a probabilidade de ser canhoto ou destro pode ser influenciada pelos genes herdados dos pais. No entanto, a herança da lateralidade não segue um padrão simples de herança mendeliana e envolve múltiplos genes.</p>
+</li>
+<li><p id = "para-66">Desenvolvimento fetal: Pesquisas sugerem que a preferência manual pode ser determinada antes do nascimento. Estudos de imagem mostraram que os fetos já apresentam preferências por um dos lados durante a gestação. Fatores hormonais e condições no útero também podem influenciar a lateralidade.</p>
+</li>
+<li><p id = "para-67">Lateralização cerebral: A lateralidade está relacionada à lateralização cerebral, que se refere à especialização funcional de cada hemisfério do cérebro. Em geral, o hemisfério esquerdo do cérebro controla a linguagem e a mão direita, enquanto o hemisfério direito controla a percepção espacial e a mão esquerda. No entanto, essa divisão não é absoluta e pode variar entre indivíduos.</p>
+</li>
+<li><p id = "para-68">Cultura e sociedade: A prevalência de destros e canhotos pode ser influenciada pela cultura e pela sociedade. Em algumas culturas, ser canhoto é desencorajado ou até mesmo considerado inadequado, o que pode afetar a prevalência da lateralidade nesses grupos.</p>
+</li>
+<li><p id = "para-69">Desvantagens e vantagens: Canhotos podem enfrentar desafios em um mundo predominantemente projetado para destros, como a dificuldade de usar ferramentas e dispositivos específicos. Por outro lado, canhotos podem ter vantagens em certas atividades, como esportes e competições, devido à sua raridade e ao fator surpresa que isso pode representar para os adversários.</p>
+</li>
+</ol>
+<p id = "para-70">É importante lembrar que a ciência é um processo contínuo e que novas descobertas podem ser feitas à medida que pesquisas adicionais são realizadas. Até o momento, essas são algumas das principais conclusões relacionadas à lateralidade e suas implicações.</p>
+<h2 id = "link-10">list the best methods to test the side handedness</h2>
+<p id = "para-71">&lt; Há várias maneiras de avaliar a lateralidade ou preferência manual de uma pessoa. Os métodos a seguir são comumente usados para determinar se alguém é destro, canhoto ou ambidestro:</p>
+<ol>
+<li><p id = "para-72">Teste de preferência de mão: Peça à pessoa para realizar tarefas simples com as mãos, como escrever, usar uma tesoura, lançar uma bola ou segurar um copo. Observe qual mão ela usa para realizar cada atividade. Se a pessoa usar consistentemente uma mão para a maioria das tarefas, ela provavelmente é destra ou canhota, dependendo da mão que prefere. Se usar ambas as mãos igualmente, ela pode ser ambidestra.</p>
+</li>
+<li><p id = "para-73">Questionário de lateralidade: Um questionário pode ser usado para avaliar a preferência manual de uma pessoa. O questionário de lateralidade de Edinburgh é um exemplo comum que inclui perguntas sobre qual mão a pessoa usa para realizar várias atividades. Os resultados podem ser analisados para determinar se a pessoa é destro, canhoto ou ambidestro.</p>
+</li>
+<li><p id = "para-74">Teste de tempo de reação: Testes de tempo de reação podem ser usados para avaliar a preferência manual, medindo a rapidez com que uma pessoa responde a estímulos usando cada mão. A pessoa pode ser solicitada a pressionar um botão ou pegar um objeto quando um estímulo é apresentado. Se o tempo de reação for consistentemente mais rápido com uma mão, essa pode ser a mão preferida.</p>
+</li>
+<li><p id = "para-75">Teste de destreza: Testes de destreza, como o Teste de Purdue Pegboard ou o Teste de Grooved Pegboard, exigem que os indivíduos coloquem pinos em pequenos orifícios usando cada mão separadamente e, em seguida, com ambas as mãos juntas. Os resultados podem ser usados para determinar a preferência manual e a habilidade motora fina de cada mão.</p>
+</li>
+<li><p id = "para-76">Teste de força de preensão: A força de preensão pode ser medida usando um dinamômetro de mão. Peça à pessoa para apertar o dispositivo com cada mão e registre a força de preensão. A mão com a força de preensão mais forte geralmente é a mão preferida.</p>
+</li>
+</ol>
+<p id = "para-77">Lembre-se de que a lateralidade pode ser específica da tarefa, o que significa que uma pessoa pode ter preferências diferentes para diferentes atividades. Portanto, é importante usar uma variedade de métodos para obter uma avaliação mais completa da lateralidade de uma pessoa.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

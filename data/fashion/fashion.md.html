@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">how head shaving is viewed in korean culture? also compare with other regions</a></li>
+      <li><a href="#link-2">be specific with history contrasting head shaving in korean culture</a></li>
+      <li><a href="#link-3">be specific with history contrasting head shaving in buddhist culture</a></li>
+      <li><a href="#link-4">be specific with history contrasting head shaving in hindu culture</a></li>
+      <li><a href="#link-5">be specific with history contrasting head shaving in western culture</a></li>
+      <li><a href="#link-6">list the fashion canon from the punk and alternative subcultures</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">how head shaving is viewed in korean culture? also compare with other regions</h2>
+<p id = "para-1">&lt; In Korean culture, head shaving is often associated with mourning and funerals. When a family member or close relative dies, it is traditional for the immediate family members to shave their heads as a sign of respect and mourning. This is known as “baengnyeon” or “paengnyeon” in Korean. Head shaving may also be performed as part of religious or spiritual practices, such as in Buddhism or Confucianism.</p>
+<p id = "para-2">In other regions and cultures, the significance and meaning of head shaving can vary widely. Here are some examples:</p>
+<p id = "para-3">Buddhist Culture: In many Buddhist cultures, head shaving is a sign of renunciation and commitment to a monastic or spiritual life. Buddhist monks and nuns typically shave their heads as a symbol of their detachment from material desires and dedication to spiritual pursuits.</p>
+<p id = "para-4">Hindu Culture: In Hindu culture, head shaving is often associated with purification and renewal. It is common for Hindus to shave their heads as part of religious rituals and ceremonies, such as before a pilgrimage or after the death of a family member.</p>
+<p id = "para-5">Western Culture: In Western culture, head shaving may be associated with a variety of meanings and contexts. For example, some men may choose to shave their heads as a fashion statement or to combat hair loss. Women may also choose to shave their heads for personal or political reasons, such as to express solidarity with cancer patients or as a form of protest.</p>
+<p id = "para-6">Overall, while head shaving may have different meanings and significance in various cultures, it often carries a strong symbolic value and can be a deeply meaningful act for those who choose to do it.</p>
+<h2 id = "link-2">be specific with history contrasting head shaving in korean culture</h2>
+<p id = "para-7">&lt; In Korean culture, head shaving has a long history and is primarily associated with mourning and funeral rituals. It is believed that the tradition of head shaving dates back to the Three Kingdoms period (57 BC – AD 668), when it was a common practice for family members of the deceased to shave their heads as a sign of respect and grief.</p>
+<p id = "para-8">During the Joseon Dynasty (1392-1910), head shaving became a more formalized practice and was often accompanied by other mourning rituals, such as wearing white mourning clothes and abstaining from meat and alcohol. The practice was also extended to include other family members and close friends of the deceased, not just immediate family members.</p>
+<p id = "para-9">In the early 20th century, head shaving began to decline in popularity in Korea as the country underwent modernization and Westernization. However, the tradition of head shaving for mourning purposes remains a strong cultural practice in contemporary Korea.</p>
+<p id = "para-10">In contrast, head shaving has different cultural significance and history in other regions. For example, in Buddhist cultures, head shaving is associated with renunciation and commitment to a monastic or spiritual life, and has been a practice for thousands of years. In Hindu culture, head shaving is associated with purification and renewal, and is often performed as part of religious ceremonies and rituals.</p>
+<p id = "para-11">Overall, the practice of head shaving in Korean culture has a long and rich history, and is deeply connected to the traditions of mourning and respect for the deceased.</p>
+<h2 id = "link-3">be specific with history contrasting head shaving in buddhist culture</h2>
+<p id = "para-12">&lt; In Buddhist culture, head shaving has a long history and is closely tied to the tradition of monasticism. The Buddha himself is said to have shaved his head when he renounced his princely status and became a wandering ascetic seeking enlightenment.</p>
+<p id = "para-13">The practice of head shaving as a symbol of renunciation and commitment to a monastic or spiritual life has been a part of Buddhist tradition for thousands of years. Buddhist monks and nuns typically shave their heads as a sign of their detachment from material desires and dedication to spiritual pursuits.</p>
+<p id = "para-14">In addition to the symbolic significance of head shaving, practical considerations also play a role in the practice. In ancient India, for example, head shaving was seen as a practical solution for maintaining personal hygiene in a hot and humid climate.</p>
+<p id = "para-15">Over time, the practice of head shaving in Buddhist culture has become associated not only with monasticism, but also with lay practitioners who wish to make a formal commitment to the Buddhist path. Lay people may choose to shave their heads as part of a retreat or pilgrimage, or simply as a way of demonstrating their devotion to the teachings of the Buddha.</p>
+<p id = "para-16">In contrast to the specific cultural context of head shaving for mourning in Korean culture, head shaving in Buddhist culture is closely tied to spiritual practice and has a long and multifaceted history that encompasses both symbolism and practical considerations.</p>
+<h2 id = "link-4">be specific with history contrasting head shaving in hindu culture</h2>
+<p id = "para-17">&lt; Head shaving has a significant and varied history in Hindu culture, with different regions and traditions attaching different meanings and practices to the act of shaving one’s head.</p>
+<p id = "para-18">One common practice in Hindu culture is “mundan,” a ritual head shaving ceremony for infants and young children. This ceremony is typically performed between the ages of six months and three years, and is believed to have several benefits, including purification, protection from evil spirits, and promotion of healthy hair growth. It is also believed to mark a child’s entry into the world of learning and spiritual growth.</p>
+<p id = "para-19">In addition to mundan, head shaving is also performed as part of various religious ceremonies and pilgrimages in Hindu culture. For example, it is common for Hindus to shave their heads before visiting holy sites such as the Tirupati temple in South India or the Kumbh Mela pilgrimage.</p>
+<p id = "para-20">Head shaving also has a significant role in Hindu mythology and history. In the Ramayana, one of the two major Hindu epics, Lord Rama is said to have shaved his head as a sign of mourning when his wife Sita was kidnapped by the demon king Ravana. In the Mahabharata, another major Hindu epic, the warrior Arjuna shaves his head as a sign of repentance for killing his own family members.</p>
+<p id = "para-21">Overall, head shaving in Hindu culture has a rich and varied history, with different practices and beliefs attached to the act in different regions and traditions. From mundan ceremonies to religious pilgrimages and mythological stories, head shaving remains an important part of Hindu cultural practices to this day.</p>
+<h2 id = "link-5">be specific with history contrasting head shaving in western culture</h2>
+<p id = "para-22">&lt; In Western culture, the history and significance of head shaving are quite different from those in Korean culture. While head shaving has been practiced in the West for centuries, it has often been associated with a wide range of different meanings and contexts, depending on the time and place.</p>
+<p id = "para-23">In ancient Greece and Rome, for example, head shaving was a common practice for soldiers and athletes, as well as for slaves and prisoners. In medieval Europe, head shaving was sometimes used as a form of punishment or humiliation for criminals, heretics, and prostitutes.</p>
+<p id = "para-24">In more recent times, head shaving has taken on a variety of different meanings and contexts in Western culture. For example:</p>
+<p id = "para-25">Religious Traditions: In some Christian sects, such as the Amish and Mennonites, men are expected to keep their hair and beards uncut as a sign of religious devotion. Similarly, in the Jewish tradition, some Orthodox men may shave their heads as a symbol of mourning or spiritual devotion.</p>
+<p id = "para-26">Fashion and Beauty: In the 20th century, head shaving became a popular fashion statement among young men and women, particularly in the punk and alternative subcultures. In more recent times, head shaving has also become more popular as a beauty trend, particularly for women who choose to shave their heads as a form of self-expression or to raise awareness for issues such as cancer research.</p>
+<p id = "para-27">Practical Considerations: Finally, head shaving may be performed for practical reasons, such as to combat hair loss or to prepare for certain medical treatments, such as chemotherapy.</p>
+<p id = "para-28">Overall, while head shaving has a long and varied history in Western culture, its meanings and significance have often been more fluid and context-dependent than in Korean culture, where it is primarily associated with mourning and funeral rituals.</p>
+<h2 id = "link-6">list the fashion canon from the punk and alternative subcultures</h2>
+<p id = "para-29">&lt; The punk and alternative subcultures have been influential in shaping the fashion landscape of the past few decades. While these subcultures have evolved and changed over time, there are certain elements that are considered part of the fashion canon. Here are some examples:</p>
+<p id = "para-30">Leather and Studs: Leather jackets, pants, and accessories such as belts and bracelets adorned with metal studs are a common feature of punk and alternative fashion. This look is often associated with a rebellious and tough attitude.</p>
+<p id = "para-31">Denim: Denim is another key element of punk and alternative fashion, with ripped or distressed denim jackets, jeans, and shorts being a popular choice. Patchwork and embellishments are often added to denim pieces to give them a more individualized and DIY feel.</p>
+<p id = "para-32">Band T-Shirts: Wearing t-shirts featuring the logos or album art of punk and alternative bands is a way to show one’s allegiance to the subculture. These t-shirts are often worn with ripped jeans or leather pants for a classic punk look.</p>
+<p id = "para-33">Combat Boots: Chunky, lace-up combat boots are a staple of punk and alternative fashion, and are often worn with leggings, tights, or fishnet stockings.</p>
+<p id = "para-34">Neon Hair and Makeup: Bold hair colors such as bright pink, blue, or green are a common feature of punk and alternative fashion. Heavy black eyeliner and dark lipstick are also often used to create a bold, dramatic look.</p>
+<p id = "para-35">DIY and Upcycling: The punk and alternative subcultures are known for their DIY ethos, with many followers customizing or upcycling their clothing to make it more individualized and unique. This can include patchwork, embroidery, and other embellishments.</p>
+<p id = "para-36">Overall, the punk and alternative subcultures have had a significant impact on fashion, with their emphasis on individualism, DIY, and rebellion influencing a wide range of designers and styles.</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p id = "para-1"><img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/passport%20FO881007.png" title = "" alt = "passport FO881007" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/passport%20FO881007%20200k.png" title = "" alt = "passport FO881007 200k" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/driver's%20license%20open%202031-04-29.png" title = "" alt = "driver’s license open 2031-04-29" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/driver's%20license%20open%202021-02-03.png" title = "" alt = "driver’s license open 2021-02-03" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/driver's%20license%20front%202021-02-03.png" title = "" alt = "driver’s license front 2021-02-03" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/driver's%20license%20back%202021-02-03.png" title = "" alt = "driver’s license back 2021-02-03" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/driver's%20license%20selfie%202021-02-03.JPG" title = "" alt = "driver’s license selfie 2021-02-03" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/marriage%20certificate%20084442%2001%2055%202019%202%2000057%20107%200015664%2037%20-%202019-05-10.jpg" title = "" alt = "marriage certificate 084442 01 55 2019 2 00057 107 0015664 37 - 2019-05-10" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/titulo%20eleitor%20voter%20card%20front%200320%204983%201880%20%20Z%20046%20S%200129.jpg" title = "" alt = "titulo eleitor voter card front 0320 4983 1880 Z 046 S 0129" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/titulo%20eleitor%20voter%20card%20back%200320%204983%201880%20%20Z%20046%20S%200129.jpg" title = "" alt = "titulo eleitor voter card back 0320 4983 1880 Z 046 S 0129" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/diploma%20front.jpg" title = "" alt = "diploma front" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/diploma%20back.jpg" title = "" alt = "diploma back" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/rg%20national%20id%20front%201943288-7%202005-01-04.jpg" title = "" alt = "rg national id front 1943288-7 2005-01-04" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/rg%20national%20id%20back%201943288-7%202005-01-04.jpg" title = "" alt = "rg national id back 1943288-7 2005-01-04" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/military%20certificate%20front%20534246%20T%20300752534903%202011-02-07.jpg" title = "" alt = "military certificate front 534246 T 300752534903 2011-02-07" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/military%20certificate%20back%20534246%20T%20300752534903%202011-02-07.jpg" title = "" alt = "military certificate back 534246 T 300752534903 2011-02-07" /> <img src = "https://bafybeiaifpxqy7u2gcxkkckc53jiky7phafswlzgaxpise5zziduebwnti.ipfs.nftstorage.link/certidao%20nascimento%20front.png" title = "" alt = "certidao nascimento front" /> <img src = "https://bafybeiaifpxqy7u2gcxkkckc53jiky7phafswlzgaxpise5zziduebwnti.ipfs.nftstorage.link/certidao%20nascimento%20back.png" title = "" alt = "certidao nascimento back" /> <img src = "https://bafybeiaifpxqy7u2gcxkkckc53jiky7phafswlzgaxpise5zziduebwnti.ipfs.nftstorage.link/certidao%20nascimento%20old.png" title = "" alt = "certidao nascimento old" /> <img src = "https://bafybeiaifpxqy7u2gcxkkckc53jiky7phafswlzgaxpise5zziduebwnti.ipfs.nftstorage.link/cartao%20do%20cidadao%2020654464027%2004.png" title = "" alt = "cartao do cidadao 20654464027 04" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/cpf%20ssn%20front.jpg" title = "" alt = "cpf ssn front" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/cpf%20ssn%20back.jpeg" title = "" alt = "cpf ssn back" /></p>
+<p id = "para-2"><img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/ctps%20work%20card%20front%200050359%2000023%20MT.jpg" title = "" alt = "ctps work card front 0050359 00023 MT" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/ctps%20work%20card%20back%200050359%2000023%20MT.jpg" title = "" alt = "ctps work card back 0050359 00023 MT" /> <img src = "https://bafybeifvvty6wpjuckgi6i24giescgfl6hpkxwmlwtb7deaq5i6rs5fyza.ipfs.nftstorage.link/nis%202065446402-7%200050359-00023_mt.png" title = "" alt = "nis social integration program 2065446402-7 0050359 00023 MT" /></p>
+<p id = "para-3"><img src = "https://bafybeifwjayrjisq4hqa3t73thz3yp2a3lessbc5aurjum4p56jcfjpm7m.ipfs.nftstorage.link/criminal%20record%20br.png" title = "" alt = "criminal record br" /> <img src = "https://bafybeifwjayrjisq4hqa3t73thz3yp2a3lessbc5aurjum4p56jcfjpm7m.ipfs.nftstorage.link/criminal%20record%20mt.png" title = "" alt = "criminal record mt" /></p>
+<p id = "para-4"><img src = "https://bafybeibdw6xgoswnjzswtsasqqweeq6isxpy7bkrjbbs6q5xoqik4zfede.ipfs.nftstorage.link/votacao%201%20turno%202014.png" title = "" alt = "votacao 1 turno 2014" /> <img src = "https://bafybeibdw6xgoswnjzswtsasqqweeq6isxpy7bkrjbbs6q5xoqik4zfede.ipfs.nftstorage.link/justificativa%201%20turno%202016.png" title = "" alt = "justificativa 1 turno 2016" /> <img src = "https://bafybeibdw6xgoswnjzswtsasqqweeq6isxpy7bkrjbbs6q5xoqik4zfede.ipfs.nftstorage.link/justificativa%201%20turno.png" title = "" alt = "justificativa 1 turno" /> <img src = "https://bafybeibdw6xgoswnjzswtsasqqweeq6isxpy7bkrjbbs6q5xoqik4zfede.ipfs.nftstorage.link/justificativa%202%20turno.png" title = "" alt = "justificativa 2 turno" /> <img src = "https://bafybeibdw6xgoswnjzswtsasqqweeq6isxpy7bkrjbbs6q5xoqik4zfede.ipfs.nftstorage.link/vacina%202016-01-25%20febre%20amarela%20172VFCx2xx%20F-cruz%2002-20.png" title = "" alt = "vacina 2016-01-25 febre amarela 172VFCx2xx F-cruz 02-20" /> <img src = "https://bafybeibdw6xgoswnjzswtsasqqweeq6isxpy7bkrjbbs6q5xoqik4zfede.ipfs.nftstorage.link/vacina%202018-05%20influenza%20b%20h1n1%20h3n2.png" title = "" alt = "vacina 2018-05 influenza b h1n1 h3n2" /> <img src = "https://bafybeidtpgetmie4tauohlwzbupr5lfgjfoizn7vlg55nyjgmhjjojwxda.ipfs.nftstorage.link/vacina%202021-07%20covid.png" title = "" alt = "vacina 2021-07 covid" /></p>
+<p id = "para-5"><img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/signature.png" title = "" alt = "signature" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/pic1.png" title = "" alt = "pic1" /> <img src = "https://bafybeibqvk7rffmmlrz2vet3f2wpzierbxds5zbbrjpophj6r6hwe2p3om.ipfs.nftstorage.link/pic2.png" title = "" alt = "pic2" /> <img src = "https://bafybeiaifpxqy7u2gcxkkckc53jiky7phafswlzgaxpise5zziduebwnti.ipfs.nftstorage.link/Untitled-4.png" title = "" alt = "Untitled-4" /></p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

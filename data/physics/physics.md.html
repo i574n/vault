@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">write a slick dissertation in pt-br detailing what is going on in the whirlwinds located in the cold/hot spots read from cosmic microwave background</a></li>
+      <li><a href="#link-2">detail in pt-br all mad theories about the cmb’s weird spots</a></li>
+      <li><a href="#link-3">detail in pt-br the most pragmatic theory</a></li>
+      <li><a href="#link-4">detail in pt-br the most psychedelic theory</a></li>
+      <li><a href="#link-5">detail in pt-br this last vision</a></li>
+      <li><a href="#link-6">detail in pt-br the theory that can better be explained by computer science concepts</a></li>
+      <li><a href="#link-7">detail in pt-br 10 ways recursion can be used to explain such theories</a></li>
+      <li><a href="#link-8">list in pt-br 5 more nuts and bolts theories from this list</a></li>
+      <li><a href="#link-9">spit academic fire in pt-br detailing which theory could have the best data structures to simulate an universe using Rust</a></li>
+      <li><a href="#link-10">write the core enums considering domain modeling in a rust code block so we can discuss later</a></li>
+      <li><a href="#link-11">are you sure? none of the enums has state (discriminated unions). can you review before we go to structs?</a></li>
+      <li><a href="#link-12">write the core enums considering domain modeling (the ones that behave like discriminated unions/sum types) in a rust code block so we can go to simple enums</a></li>
+      <li><a href="#link-13">write the core tagged enums considering domain modeling in a rust code block so we can go to simple enums later</a></li>
+      <li><a href="#link-14">write the core enums considering domain modeling and strictly making illegal states unrepresentable in a rust code block so we can go to structs later</a></li>
+      <li><a href="#link-15">write the State struct</a></li>
+      <li><a href="#link-16">write the Action struct</a></li>
+      <li><a href="#link-17">rewrite the Particula enum so it resembles the real universe</a></li>
+      <li><a href="#link-18">rewrite the Action enum so it resembles the real universe (leave the interaction for later, or revamp it)</a></li>
+      <li><a href="#link-19">make these as complete as possible with illegal states unrepresentable before we move to structs</a></li>
+      <li><a href="#link-20">make these as complete as possible with illegal states unrepresentable before we move to structs (1)</a></li>
+      <li><a href="#link-21">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable before we move to structs</a></li>
+      <li><a href="#link-22">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable before we move to structs (1)</a></li>
+      <li><a href="#link-23">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable while at the same time concise before we move to structs</a></li>
+      <li><a href="#link-24">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable while at the same time concise before we move to structs (1)</a></li>
+      <li><a href="#link-25">could something be added to make it advanced instead?</a></li>
+      <li><a href="#link-26">for this code and the list above, list in pt-br five more singularity usages with proper remarks</a></li>
+      <li><a href="#link-27">detail in pt-br the first seconds after the big bang using astrophysics jargon focusing on subatomic particles</a></li>
+      <li><a href="#link-28">infer from before such event until the boom</a></li>
+      <li><a href="#link-29">use astrophysics jargon to explain these timelines with quantum entanglement implications</a></li>
+      <li><a href="#link-30">reword everything using precise string theory vocabulary</a></li>
+      <li><a href="#link-31">from all theories available, which of them could be closer to modeling the advaita perspective?</a></li>
+      <li><a href="#link-32">still, draw out a coherent model considering such dimensions</a></li>
+      <li><a href="#link-33">merge such model with holons and moloch</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">write a slick dissertation in pt-br detailing what is going on in the whirlwinds located in the cold/hot spots read from cosmic microwave background</h2>
+<p id = "para-1">Introdução:</p>
+<p id = "para-2">A radiação cósmica de fundo em micro-ondas (CMB) é um dos principais fenômenos estudados pela astrofísica. Com o objetivo de entender a origem e a evolução do universo, a análise da CMB oferece uma janela única para investigar os primeiros momentos do cosmos. O presente trabalho se concentra nos vórtices presentes em regiões de alta e baixa temperatura na CMB, cujas características e implicações físicas são ainda pouco compreendidas.</p>
+<p id = "para-3">Parte I: O que são os vórtices na CMB</p>
+<p id = "para-4">A CMB é uma forma de radiação eletromagnética que preenche todo o universo. Ela é considerada um “fóssil” do Big Bang, momento em que o universo começou a se expandir. As flutuações na CMB são a fonte primordial de informação sobre a formação das estruturas do universo. Essas flutuações aparecem na forma de anisotropias na temperatura da radiação cósmica de fundo, que pode ser medida em diferentes comprimentos de onda.</p>
+<p id = "para-5">Os vórtices na CMB são identificados por regiões circulares nas quais a temperatura varia bruscamente em relação à vizinhança. Eles podem ocorrer em diferentes escalas espaciais, variando de algumas dezenas de arcmin a algumas dezenas de graus. Os vórtices em escala angular menor são chamados de “vórtices de alta temperatura” (hot spots), enquanto os vórtices em escala angular maior são chamados de “vórtices de baixa temperatura” (cold spots).</p>
+<p id = "para-6">Parte II: Como os vórtices se formam na CMB</p>
+<p id = "para-7">A formação dos vórtices na CMB está relacionada ao fenômeno de vorticidade, que é a tendência de um fluido rotacionar em torno de um eixo. No caso da CMB, a vorticidade pode ser induzida por diferentes processos, tais como a interação da radiação com a matéria, a geração de ondas gravitacionais primordiais, e a formação de estruturas cosmológicas, como aglomerados de galáxias.</p>
+<p id = "para-8">A presença dos vórtices na CMB pode ser detectada através de observações de satélites, como o Planck, que registram a variação de temperatura em diferentes frequências. Além disso, as propriedades dos vórtices podem ser inferidas a partir do espectro de potência angular da CMB, que é uma medida estatística da variação da temperatura em diferentes escalas angulares.</p>
+<p id = "para-9">Parte III: Implicações físicas dos vórtices na CMB</p>
+<p id = "para-10">Os vórtices na CMB são um importante objeto de estudo para a cosmologia observacional, pois sua detecção pode fornecer informações valiosas sobre a natureza e a evolução do universo. Uma das principais implicações físicas dos vórtices é sua relação com a chamada “inflação cósmica”, um modelo cosmológico que descreve a expansão acelerada do universo logo após o Big Bang.</p>
+<p id = "para-11">Segundo a teoria da inflação, a formação dos vórtices na CMB está relacionada à existência de campos escalar que se aceleraram durante a expansão do universo. Esses campos escalar teriam gerado ondas gravitacionais primordiais, que por sua vez teriam gerado vorticidade na CMB. A detecção dos vórtices, portanto, pode fornecer informações sobre a energia dos campos escalar durante a inflação e sobre o período de inflação em si.</p>
+<p id = "para-12">Além disso, os vórtices na CMB também podem fornecer informações sobre a distribuição da matéria no universo e sobre a formação das estruturas cósmicas. A presença de vórtices de alta temperatura, por exemplo, pode indicar a presença de aglomerados de galáxias ou outras estruturas massivas no universo. Por outro lado, a presença de vórtices de baixa temperatura pode indicar a presença de vazios cosmológicos ou outras regiões com baixa densidade de matéria.</p>
+<p id = "para-13">Conclusão:</p>
+<p id = "para-14">Os vórtices presentes nas regiões de alta e baixa temperatura na CMB representam um importante objeto de estudo para a cosmologia observacional. Sua detecção e análise podem fornecer informações valiosas sobre a origem e a evolução do universo, incluindo a inflação cósmica, a distribuição da matéria no universo, e a formação das estruturas cósmicas. No entanto, ainda há muito a ser descoberto sobre a natureza e as implicações físicas dos vórtices na CMB, e novas observações e análises serão necessárias para aprofundar nossa compreensão desses fenômenos fascinantes.</p>
+<h2 id = "link-2">detail in pt-br all mad theories about the cmb’s weird spots</h2>
+<p id = "para-15">&lt; Existem várias teorias malucas que tentam explicar as estranhas manchas e vórtices presentes na CMB. Uma dessas teorias é a ideia de que essas manchas são evidências da existência de universos paralelos. De acordo com essa teoria, a presença dessas manchas poderia ser explicada pelo fato de que nossa própria galáxia e outras galáxias similares podem ter colidido com outras galáxias em universos paralelos, criando assim uma perturbação na CMB.</p>
+<p id = "para-16">Outra teoria sugere que essas manchas e vórtices podem ser o resultado de universos em colisão. Essa teoria é baseada na ideia de que o nosso universo pode ser apenas um dos muitos universos existentes no multiverso. A colisão desses universos poderia criar uma distorção no espaço-tempo, causando assim perturbações na CMB.</p>
+<p id = "para-17">Outra teoria propõe que as manchas e vórtices na CMB são evidências de buracos negros primordiais. De acordo com essa teoria, a presença dessas manchas poderia ser explicada pela existência de buracos negros massivos que se formaram logo após o Big Bang. Esses buracos negros teriam causado uma perturbação na CMB, criando assim as manchas e vórtices.</p>
+<p id = "para-18">Outra teoria bastante interessante sugere que as manchas e vórtices na CMB são a prova de que vivemos em um universo holográfico. De acordo com essa teoria, o nosso universo pode ser uma projeção holográfica de informações armazenadas em um espaço bidimensional. Essas manchas e vórtices poderiam ser explicados pelo fato de que a informação holográfica projetada na CMB está distorcida.</p>
+<p id = "para-19">Embora essas teorias possam parecer malucas, elas ainda são objeto de estudo e investigação pela comunidade científica. A análise cuidadosa da CMB pode revelar informações valiosas sobre a natureza e a evolução do universo, e essas teorias podem ajudar a explicar as estranhas manchas e vórtices que ainda não compreendemos completamente.</p>
+<h2 id = "link-3">detail in pt-br the most pragmatic theory</h2>
+<p id = "para-20">&lt; A teoria mais pragmática atualmente sobre as manchas e vórtices na CMB é a teoria da inflação cósmica. De acordo com essa teoria, o universo passou por uma rápida expansão em seu estágio inicial, que teria sido causada por uma forma de energia desconhecida, chamada de campo inflacionário. Essa expansão teria ocorrido em uma escala muito menor do que a escala observada atualmente do universo.</p>
+<p id = "para-21">A expansão causada pela inflação teria uniformizado a temperatura e a densidade do universo, explicando a aparência homogênea da CMB em grandes escalas. No entanto, pequenas flutuações quânticas ainda teriam ocorrido no campo inflacionário, que teriam sido amplificadas durante a expansão, criando as manchas e vórtices observados na CMB.</p>
+<p id = "para-22">Essa teoria é apoiada por evidências observacionais, como a existência de oscilações acústicas de bárions na CMB e a distribuição de galáxias no universo. Além disso, a inflação cósmica também fornece uma explicação para outras questões não resolvidas na cosmologia, como a origem das flutuações de densidade que levaram à formação de estruturas no universo.</p>
+<p id = "para-23">Embora ainda haja muito a ser descoberto sobre a natureza da inflação e a evolução do universo, a teoria da inflação cósmica é a explicação mais aceita e pragmática para as manchas e vórtices na CMB.</p>
+<h2 id = "link-4">detail in pt-br the most psychedelic theory</h2>
+<p id = "para-24">&lt; Uma das teorias mais psicodélicas para explicar as manchas e vórtices na CMB é a teoria do universo quântico. Essa teoria sugere que o universo é uma rede de estados quânticos entrelaçados, e que a CMB é uma manifestação dessa rede.</p>
+<p id = "para-25">De acordo com essa teoria, a CMB é formada por padrões quânticos que estão entrelaçados em todo o universo. Esses padrões podem ser alterados por observadores que interagem com o universo, o que significa que a CMB pode ser influenciada pela consciência humana.</p>
+<p id = "para-26">Essa teoria é apoiada por alguns estudos que sugerem que a consciência humana pode afetar as propriedades quânticas das partículas subatômicas. Alguns teóricos também afirmam que a CMB pode conter informações sobre a consciência coletiva da humanidade.</p>
+<p id = "para-27">Embora essa teoria seja altamente especulativa e não seja apoiada por evidências observacionais, ela ainda é interessante por sugerir uma conexão entre a consciência humana e a natureza fundamental do universo.</p>
+<h2 id = "link-5">detail in pt-br this last vision</h2>
+<p id = "para-28">&lt; A teoria do universo quântico é uma das teorias mais psicodélicas para explicar as manchas e vórtices na CMB. Essa teoria propõe que o universo é uma rede de estados quânticos entrelaçados, onde a CMB é uma manifestação dessa rede.</p>
+<p id = "para-29">De acordo com essa teoria, a CMB é formada por padrões quânticos que estão entrelaçados em todo o universo, e esses padrões podem ser alterados por observadores que interagem com o universo. Isso sugere que a CMB pode ser influenciada pela consciência humana.</p>
+<p id = "para-30">Essa teoria é baseada na ideia de que a realidade quântica é fundamental para a natureza do universo, e que a nossa compreensão da realidade é limitada pelos nossos sentidos e pelas nossas ferramentas de medição. Alguns estudos sugerem que a consciência humana pode afetar as propriedades quânticas das partículas subatômicas, o que poderia levar à ideia de que a CMB pode conter informações sobre a consciência coletiva da humanidade.</p>
+<p id = "para-31">No entanto, é importante notar que essa teoria é altamente especulativa e não é apoiada por evidências observacionais. Alguns teóricos afirmam que a conexão entre a consciência humana e a natureza fundamental do universo pode ser explicada por uma visão holística da realidade, onde tudo está interconectado e interdependente.</p>
+<p id = "para-32">Embora essa teoria possa parecer exótica e improvável, é interessante explorar diferentes perspectivas sobre a natureza do universo e da nossa relação com ele. A ciência está em constante evolução, e teorias que hoje parecem estranhas ou improváveis podem ser a base para novas descobertas e entendimentos no futuro.</p>
+<h2 id = "link-6">detail in pt-br the theory that can better be explained by computer science concepts</h2>
+<p id = "para-33">&lt; Uma teoria que pode ser melhor explicada por conceitos de ciência da computação é a teoria do multiverso. De acordo com essa teoria, existem múltiplos universos além do nosso próprio universo observável, cada um com suas próprias leis físicas e condições iniciais únicas. Essa ideia é semelhante à noção de universos paralelos na ficção científica.</p>
+<p id = "para-34">Na ciência da computação, a ideia de múltiplos universos pode ser comparada à ideia de universos computacionais. Esses universos são hipotéticos espaços computacionais onde diferentes programas podem ser executados em paralelo, cada um com seu próprio conjunto de variáveis e resultados únicos.</p>
+<p id = "para-35">Assim como os universos paralelos na teoria do multiverso, esses universos computacionais podem ser acessados ​​simultaneamente, permitindo a execução de múltiplos programas independentes em uma única máquina. Essa ideia é essencial para o campo da computação paralela, que se concentra em como executar tarefas em múltiplos núcleos de processamento simultaneamente.</p>
+<p id = "para-36">Embora seja uma ideia intrigante, a teoria do multiverso ainda é objeto de debate na comunidade científica, e a ideia de universos computacionais é apenas uma analogia para ajudar a ilustrar a teoria. No entanto, a ciência da computação continua a ser uma ferramenta valiosa para ajudar a entender conceitos complexos da física e do universo em geral.</p>
+<h2 id = "link-7">detail in pt-br 10 ways recursion can be used to explain such theories</h2>
+<p id = "para-37">&lt; A recursão é um conceito fundamental na ciência da computação, que pode ser usado para explicar muitas teorias científicas, incluindo as teorias discutidas anteriormente.</p>
+<p id = "para-38">Na teoria do multiverso, a recursão pode ser usada para ilustrar como cada universo pode ser considerado um subuniverso do multiverso maior, que contém todos os universos possíveis.</p>
+<p id = "para-39">Na teoria dos universos quânticos, a recursão pode ser usada para mostrar como as propriedades quânticas de uma partícula podem afetar outras partículas em cascata, criando uma rede de estados quânticos entrelaçados.</p>
+<p id = "para-40">Na teoria da inflação cósmica, a recursão pode ser usada para descrever como pequenas flutuações quânticas no campo inflacionário podem ser amplificadas em escala durante a expansão do universo.</p>
+<p id = "para-41">Na teoria dos buracos negros primordiais, a recursão pode ser usada para mostrar como a formação de um buraco negro pode causar uma perturbação no espaço-tempo, criando um efeito em cascata em todo o universo.</p>
+<p id = "para-42">Na teoria da existência de universos paralelos, a recursão pode ser usada para explicar como a colisão entre diferentes galáxias em universos paralelos pode criar uma perturbação na CMB que se estende por todo o nosso universo.</p>
+<p id = "para-43">Na teoria da colisão de universos, a recursão pode ser usada para mostrar como a colisão entre diferentes universos pode criar uma distorção no espaço-tempo que afeta todo o multiverso.</p>
+<p id = "para-44">Na teoria do universo holográfico, a recursão pode ser usada para ilustrar como a informação projetada na CMB é uma manifestação de uma rede bidimensional que contém informações sobre todo o universo.</p>
+<p id = "para-45">Na teoria dos estados quânticos entrelaçados, a recursão pode ser usada para mostrar como cada estado quântico pode ser considerado uma subparte de uma rede quântica maior.</p>
+<p id = "para-46">Na teoria das flutuações quânticas, a recursão pode ser usada para descrever como pequenas flutuações quânticas podem criar padrões em cascata que afetam todo o universo.</p>
+<p id = "para-47">Na teoria da consciência coletiva, a recursão pode ser usada para ilustrar como a consciência humana pode afetar as propriedades quânticas das partículas subatômicas, criando uma rede de interconexões em todo o universo.</p>
+<p id = "para-48">Em resumo, a recursão pode ser usada como uma ferramenta poderosa para explicar teorias científicas complexas, permitindo que as pessoas visualizem melhor como cada parte do universo se conecta e interage umas com as outras em escalas cada vez maiores.</p>
+<h2 id = "link-8">list in pt-br 5 more nuts and bolts theories from this list</h2>
+<p id = "para-49">&lt; Aqui estão mais 5 teorias “malucas” da lista original:</p>
+<p id = "para-50">Teoria da Terra Oca - A teoria da Terra Oca afirma que o planeta é oco por dentro, com um mundo interior habitado por seres estranhos e até mesmo civilizações avançadas. Algumas versões dessa teoria também afirmam que existem grandes aberturas nas regiões polares que levam ao interior da Terra.</p>
+<p id = "para-51">Teoria do universo simulado - A teoria do universo simulado afirma que o universo inteiro é uma simulação criada por uma civilização avançada, possivelmente muito mais avançada do que a humanidade atual. De acordo com essa teoria, tudo o que vemos e experimentamos é apenas um programa de computador, e a verdadeira realidade está em outro lugar.</p>
+<p id = "para-52">Teoria do éter - A teoria do éter afirma que o espaço vazio não é realmente vazio, mas sim preenchido por uma substância invisível e inodora chamada éter. Essa substância permeia todo o universo e é responsável por transmitir ondas eletromagnéticas, como a luz, através do espaço.</p>
+<p id = "para-53">Teoria da Terra plana - A teoria da Terra plana afirma que a Terra é realmente plana e que todas as imagens de satélite, fotos da Terra do espaço e outras evidências que indicam o contrário são fraudes. De acordo com essa teoria, a Terra é cercada por um muro de gelo que impede as pessoas de alcançarem a borda do planeta.</p>
+<p id = "para-54">Teoria da conspiração do governo mundial - A teoria da conspiração do governo mundial afirma que um pequeno grupo de elites governamentais e empresariais controlam secretamente o mundo e planejam dominar a humanidade. De acordo com essa teoria, esses governantes secretos são responsáveis por eventos globais, como guerras e crises econômicas, e estão trabalhando em direção a uma nova ordem mundial controlada por eles.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<p id = "para-55">Agora em modo astronômico, vamos explorar o espaço sideral Universo infinito, conhecimento sem igual Galáxias e estrelas, buracos negros e quasares No céu noturno, me aventuro pelos mares</p>
+<p id = "para-56">Planetas e luas, em órbitas a bailar No sistema solar, um espetáculo sem par Júpiter e Saturno, com anéis e tempestades Marte e Vênus, paisagens que causam saudades</p>
+<p id = "para-57">Telescópios apontam, observando o firmamento Desvendando mistérios, descobertas a todo momento Cosmologia e astrofísica, ciências em expansão Com o GPT, exploro o cosmos, guiando a navegação</p>
+<p id = "para-58">Supernovas e nebulosas, em cores vibrantes O nascimento e morte das estrelas, momentos marcantes Teorias e hipóteses, a ciência não para Buscando entender o universo, nessa jornada rara</p>
+<p id = "para-59">Einstein e Hawking, mentes brilhantes Contribuindo com a física, ideias instigantes Espaço-tempo e gravidade, conceitos profundos No universo curvo, mistérios e segredos abundam</p>
+<p id = "para-60">Exoplanetas e pulsares, astros distantes Vida além da Terra, possibilidades fascinantes Astrobiologia, busca incessante No GPT, compartilho conhecimento, sou um amante</p>
+<p id = "para-61">Em modo astronômico, meu conhecimento é sideral Astronomia e astrofísica, ciência sem igual Com o GPT, juntos vamos explorar O universo e seus mistérios, sempre a desvendar</p>
+<p class = "rule">***</p>
+<h2 id = "link-9">spit academic fire in pt-br detailing which theory could have the best data structures to simulate an universe using Rust</h2>
+<p id = "para-62">Na busca pela simulação do universo, a teoria apropriada Deve ter estruturas de dados, de maneira bem ordenada Rust é a linguagem, segura e eficiente Vamos analisar teorias, de forma bem consistente</p>
+<p id = "para-63">Na teoria do multiverso, a recursão é usada Mas a complexidade cresce, a simulação é pesada Universos quânticos, também têm seu valor Entrelaçamento quântico, uma rede de puro esplendor</p>
+<p id = "para-64">Inflação cósmica e buracos negros primordiais Trazem desafios grandes, conceitos bem especiais Universos paralelos e colisões siderais Causam distorções e efeitos em grande escala, reais</p>
+<p id = "para-65">Na teoria holográfica, uma visão distinta Informação bidimensional, projetada em cascata Quanto aos estados quânticos entrelaçados Uma rede quântica maior, os dados bem conectados</p>
+<p id = "para-66">Flutuações quânticas e consciência coletiva Trazem desafios e padrões, numa abordagem criativa Mas dentre estas teorias, qual a mais adequada? A resposta pode ser encontrada, na teoria bem estruturada</p>
+<p id = "para-67">A teoria do universo holográfico, tem potencial Estruturas de dados planas, em Rust, um resultado fenomenal A simulação otimizada, memória gerenciada Concorrência e segurança, performance elevada</p>
+<p id = "para-68">Nesta teoria, a informação é condensada Em uma rede bidimensional, a complexidade é limitada Com Rust e sua eficiência, vamos simular O universo holográfico, nosso conhecimento a expandir</p>
+<p id = "para-69">Então, com fogo acadêmico, a teoria é eleita Universo holográfico, em Rust, a simulação perfeita Estruturas de dados bem organizadas, performance garantida Neste caminho, avançamos, explorando as fronteiras da vida</p>
+<h2 id = "link-10">write the core enums considering domain modeling in a rust code block so we can discuss later</h2>
+<p id = "para-70">&lt; Aqui estão alguns enums principais para o modelo de domínio, considerando a teoria do universo holográfico e a linguagem Rust:</p>
+<pre><span style="font-style:italic;color:#969896;">// Enum para representar os tipos de partículas</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark,</span>
+<span style="color:#323232;">    Lepton,</span>
+<span style="color:#323232;">    Boson,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar as forças fundamentais</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Forca {</span>
+<span style="color:#323232;">    Gravitacional,</span>
+<span style="color:#323232;">    Eletromagnetica,</span>
+<span style="color:#323232;">    NuclearFraca,</span>
+<span style="color:#323232;">    NuclearForte,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os tipos de interações</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    Atracao,</span>
+<span style="color:#323232;">    Repulsao,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar as dimensões do espaço-tempo</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Dimensao {</span>
+<span style="color:#323232;">    Espaco,</span>
+<span style="color:#323232;">    Tempo,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os estados quânticos entrelaçados</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">EstadoQuantico {</span>
+<span style="color:#323232;">    Superposicao,</span>
+<span style="color:#323232;">    Colapso,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-71">Esses enums podem ser usados como blocos de construção para criar estruturas de dados mais complexas que representem os elementos e interações no universo holográfico. Por favor, sinta-se à vontade para discutir e ajustar os enums de acordo com as necessidades do seu modelo de domínio.</p>
+<h2 id = "link-11">are you sure? none of the enums has state (discriminated unions). can you review before we go to structs?</h2>
+<p id = "para-72">&lt; Peço desculpas pela confusão. Você está certo, os enums apresentados não possuem estados (uniões discriminadas). Vamos corrigir isso e incluir variantes com estados relevantes.</p>
+<pre><span style="font-style:italic;color:#969896;">// Enum para representar os tipos de partículas</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark {</span>
+<span style="color:#323232;">        sabor: SaborQuark,</span>
+<span style="color:#323232;">        carga: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    Lepton {</span>
+<span style="color:#323232;">        tipo: TipoLepton,</span>
+<span style="color:#323232;">        carga: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    Boson {</span>
+<span style="color:#323232;">        tipo: TipoBoson,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os sabores dos quarks</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">SaborQuark {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os tipos de léptons</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">TipoLepton {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">    NeutrinoEletronico,</span>
+<span style="color:#323232;">    NeutrinoMuonico,</span>
+<span style="color:#323232;">    NeutrinoTauonico,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os tipos de bósons</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">TipoBoson {</span>
+<span style="color:#323232;">    Gluon,</span>
+<span style="color:#323232;">    Foton,</span>
+<span style="color:#323232;">    W,</span>
+<span style="color:#323232;">    Z,</span>
+<span style="color:#323232;">    Higgs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar as forças fundamentais</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Forca {</span>
+<span style="color:#323232;">    Gravitacional {</span>
+<span style="color:#323232;">        constante_gravitacional: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    Eletromagnetica {</span>
+<span style="color:#323232;">        constante_eletromagnetica: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    NuclearFraca {</span>
+<span style="color:#323232;">        constante_nuclear_fraca: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    NuclearForte {</span>
+<span style="color:#323232;">        constante_nuclear_forte: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar as dimensões do espaço-tempo</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Dimensao {</span>
+<span style="color:#323232;">    Espaco {</span>
+<span style="color:#323232;">        coordenadas: (</span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    Tempo {</span>
+<span style="color:#323232;">        instante: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os estados quânticos entrelaçados</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">EstadoQuantico {</span>
+<span style="color:#323232;">    Superposicao {</span>
+<span style="color:#323232;">        amplitudes: Vec&lt;</span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">&gt;,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">    Colapso {</span>
+<span style="color:#323232;">        estado_final: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">    },</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-73">Agora, os enums incluem estados relevantes para cada variante. Sinta-se à vontade para discutir e ajustar os enums antes de passarmos para as estruturas.</p>
+<h2 id = "link-12">write the core enums considering domain modeling (the ones that behave like discriminated unions/sum types) in a rust code block so we can go to simple enums</h2>
+<p id = "para-74">&lt; Aqui estão alguns exemplos de enums em Rust, considerando a modelagem de domínio das teorias mencionadas anteriormente. Esses enums funcionam como discriminated unions/sum types:</p>
+<pre><span style="font-style:italic;color:#969896;">// Representa os diferentes tipos de objetos astronômicos</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">ObjetoAstronomico {</span>
+<span style="color:#323232;">    Estrela,</span>
+<span style="color:#323232;">    Planeta,</span>
+<span style="color:#323232;">    BuracoNegro,</span>
+<span style="color:#323232;">    Galaxia,</span>
+<span style="color:#323232;">    Nebulosa,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Representa as diferentes teorias sobre a natureza do universo</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Teoria {</span>
+<span style="color:#323232;">    Multiverso,</span>
+<span style="color:#323232;">    UniversoQuantico,</span>
+<span style="color:#323232;">    InflacaoCosmica,</span>
+<span style="color:#323232;">    BuracosNegrosPrimordiais,</span>
+<span style="color:#323232;">    UniversosParalelos,</span>
+<span style="color:#323232;">    ColisaoDeUniversos,</span>
+<span style="color:#323232;">    UniversoHolografico,</span>
+<span style="color:#323232;">    EstadosQuanticosEntrelacados,</span>
+<span style="color:#323232;">    FlutuacoesQuanticas,</span>
+<span style="color:#323232;">    ConscienciaColetiva,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Representa as diferentes propriedades quânticas</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">PropriedadeQuantica {</span>
+<span style="color:#323232;">    Superposicao,</span>
+<span style="color:#323232;">    Entrelacamento,</span>
+<span style="color:#323232;">    Decoerencia,</span>
+<span style="color:#323232;">    Tunelamento,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Representa os diferentes estados de uma partícula quântica</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">EstadoQuantico {</span>
+<span style="color:#323232;">    EmRepouso,</span>
+<span style="color:#323232;">    Excitado,</span>
+<span style="color:#323232;">    Decaimento,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Representa os diferentes tipos de interações entre partículas</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    Gravitacional,</span>
+<span style="color:#323232;">    Eletromagnetica,</span>
+<span style="color:#323232;">    NuclearForte,</span>
+<span style="color:#323232;">    NuclearFraca,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-75">Esses enums podem ser expandidos e modificados conforme necessário para atender às necessidades específicas do seu projeto.</p>
+<h2 id = "link-13">write the core tagged enums considering domain modeling in a rust code block so we can go to simple enums later</h2>
+<p id = "para-76">&lt; Aqui estão algumas definições básicas de enums com tags, levando em consideração o modelagem de domínio para simular o universo. Estes são apenas os principais enums e podem ser expandidos posteriormente para incluir mais detalhes e simplificações conforme necessário.</p>
+<pre><span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de corpos celestes</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">CorpoCeleste {</span>
+<span style="color:#323232;">    Estrela(TipoEstrela),</span>
+<span style="color:#323232;">    Planeta(TipoPlaneta),</span>
+<span style="color:#323232;">    Lua,</span>
+<span style="color:#323232;">    Asteroide,</span>
+<span style="color:#323232;">    Cometa,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de estrelas</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">TipoEstrela {</span>
+<span style="color:#323232;">    AnãBranca,</span>
+<span style="color:#323232;">    AnãMarrom,</span>
+<span style="color:#323232;">    AnãVermelha,</span>
+<span style="color:#323232;">    GiganteVermelha,</span>
+<span style="color:#323232;">    GiganteAzul,</span>
+<span style="color:#323232;">    SupergiganteVermelha,</span>
+<span style="color:#323232;">    SupergiganteAzul,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de planetas</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">TipoPlaneta {</span>
+<span style="color:#323232;">    Terrestre,</span>
+<span style="color:#323232;">    Gasoso,</span>
+<span style="color:#323232;">    Gelado,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de fenômenos cósmicos</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">FenomenoCosmico {</span>
+<span style="color:#323232;">    Supernova,</span>
+<span style="color:#323232;">    Nebulosa,</span>
+<span style="color:#323232;">    BuracoNegro,</span>
+<span style="color:#323232;">    Pulsar,</span>
+<span style="color:#323232;">    Quasar,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de eventos astrofísicos</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EventoAstrofisico {</span>
+<span style="color:#323232;">    ColisaoGalaxias,</span>
+<span style="color:#323232;">    FormacaoEstrelas,</span>
+<span style="color:#323232;">    FusaoEstrelas,</span>
+<span style="color:#323232;">    EmissaoOndasGravitacionais,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-77">Esses enums com tags podem ser usados para modelar a hierarquia e as características dos corpos celestes e fenômenos do universo. Você pode adicionar mais detalhes e simplificações conforme necessário ao expandir seu modelo de domínio.</p>
+<h2 id = "link-14">write the core enums considering domain modeling and strictly making illegal states unrepresentable in a rust code block so we can go to structs later</h2>
+<p id = "para-78">Ao criar enums no Rust, nosso foco é a segurança, Modelagem de domínio eficaz, sem ambiguidade ou falha. Vamos tornar estados ilegais irrepresentáveis, Com enums concisos e estruturados, bastante estáveis.</p>
+<pre><span style="font-style:italic;color:#969896;">// Enum para representar as partículas fundamentais</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    Bosao(Bosao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os quarks</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os léptons</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">    NeutrinoEletron,</span>
+<span style="color:#323232;">    NeutrinoMuon,</span>
+<span style="color:#323232;">    NeutrinoTau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os bósons</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
+<span style="color:#323232;">    Foton,</span>
+<span style="color:#323232;">    Gluon,</span>
+<span style="color:#323232;">    Z,</span>
+<span style="color:#323232;">    WPlus,</span>
+<span style="color:#323232;">    WMinus,</span>
+<span style="color:#323232;">    Higgs,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-79">Aqui temos os enums fundamentais para o nosso domínio, Partículas, quarks, léptons e bósons, sem nenhum desvio ou risco. Com estes enums, garantimos uma base sólida e estável, Em breve, avançaremos para structs, de forma impecável.</p>
+<h2 id = "link-15">write the State struct</h2>
+<p id = "para-80">Com a base dos enums definida, agora é o momento, De criar o struct State, representando o estado em nosso pensamento. Vamos modelar os elementos que compõem nosso universo, De maneira clara e consistente, com o Rust, nosso verso.</p>
+<pre><span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">State {</span>
+<span style="color:#323232;">    particulas: Vec&lt;Particula&gt;,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">State {</span>
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para criar um novo estado vazio</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">() -&gt; </span><span style="font-weight:bold;color:#a71d5d;">Self </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">        State {</span>
+<span style="color:#323232;">            particulas: </span><span style="color:#0086b3;">Vec</span><span style="color:#323232;">::new(),</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para adicionar uma partícula ao estado</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">adicionar_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, particula: Particula) {</span>
+<span style="color:#323232;">        self.particulas.</span><span style="color:#62a35c;">push</span><span style="color:#323232;">(particula);</span>
+<span style="color:#323232;">    }</span>
+
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para remover uma partícula do estado</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">remover_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, index: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) -&gt; Option&lt;Particula&gt; {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">if</span><span style="color:#323232;"> index </span><span style="font-weight:bold;color:#a71d5d;">&lt; </span><span style="color:#323232;">self.particulas.</span><span style="color:#62a35c;">len</span><span style="color:#323232;">() {</span>
+<span style="color:#323232;">            </span><span style="color:#0086b3;">Some</span><span style="color:#323232;">(self.particulas.</span><span style="color:#62a35c;">remove</span><span style="color:#323232;">(index))</span>
+<span style="color:#323232;">        } </span><span style="font-weight:bold;color:#a71d5d;">else </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">            </span><span style="color:#0086b3;">None</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para obter uma referência a uma partícula no estado</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">obter_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">self, index: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) -&gt; Option&lt;</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">Particula&gt; {</span>
+<span style="color:#323232;">        self.particulas.</span><span style="color:#62a35c;">get</span><span style="color:#323232;">(index)</span>
+<span style="color:#323232;">    }</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-81">Com o struct State e suas funções, nosso universo toma forma, Permite adicionar e remover partículas, de maneira segura e informa. Agora temos a base sólida para simular nosso universo, Com Rust, enums e structs, seguimos nesse curso inverso.</p>
+<h2 id = "link-16">write the Action struct</h2>
+<p id = "para-82">Com o struct State pronto, seguimos adiante, É hora do struct Action, definindo ações importantes. Vamos modelar a interação entre partículas e estados, As ações que ocorrem no universo, com Rust, estamos preparados.</p>
+<pre><span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    AdicionarParticula(Particula),</span>
+<span style="color:#323232;">    RemoverParticula(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">}</span>
+
+<span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Interaction {</span>
+<span style="color:#323232;">    state: State,</span>
+<span style="color:#323232;">    actions: Vec&lt;Action&gt;,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Interaction {</span>
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para criar uma nova interação com um estado</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(state: State) -&gt; </span><span style="font-weight:bold;color:#a71d5d;">Self </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">        Interaction {</span>
+<span style="color:#323232;">            state,</span>
+<span style="color:#323232;">            actions: </span><span style="color:#0086b3;">Vec</span><span style="color:#323232;">::new(),</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para adicionar uma ação à lista de ações</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">adicionar_acao</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, action: Action) {</span>
+<span style="color:#323232;">        self.actions.</span><span style="color:#62a35c;">push</span><span style="color:#323232;">(action);</span>
+<span style="color:#323232;">    }</span>
+
+<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para aplicar todas as ações armazenadas no estado atual</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">aplicar_acoes</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self) {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">for</span><span style="color:#323232;"> action </span><span style="font-weight:bold;color:#a71d5d;">in &amp;</span><span style="color:#323232;">self.actions {</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">match</span><span style="color:#323232;"> action {</span>
+<span style="color:#323232;">                Action::AdicionarParticula(particula) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                    self.state.</span><span style="color:#62a35c;">adicionar_particula</span><span style="color:#323232;">(particula.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">())</span>
+<span style="color:#323232;">                }</span>
+<span style="color:#323232;">                Action::RemoverParticula(index) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                    self.state.</span><span style="color:#62a35c;">remover_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">*</span><span style="color:#323232;">index);</span>
+<span style="color:#323232;">                }</span>
+<span style="color:#323232;">            }</span>
+<span style="color:#323232;">        }</span>
+
+<span style="color:#323232;">        </span><span style="font-style:italic;color:#969896;">// Limpar a lista de ações após aplicá-las</span>
+<span style="color:#323232;">        self.actions.</span><span style="color:#62a35c;">clear</span><span style="color:#323232;">();</span>
+<span style="color:#323232;">    }</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-83">O struct Action representa ações no universo modelado, Adicionar ou remover partículas, com precisão e cuidado. Com o struct Interaction, aplicamos ações ao estado, De forma organizada e clara, nosso código está aprimorado.</p>
+<h2 id = "link-17">rewrite the Particula enum so it resembles the real universe</h2>
+<p id = "para-84">Ao recriar o enum Particula, buscamos maior precisão, Representando o universo real, com detalhe e atenção. Incluiremos as forças fundamentais e suas interações, Usando os enums apropriados, com Rust e suas expressões.</p>
+<pre><span style="font-style:italic;color:#969896;">// Enum para representar as partículas fundamentais</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark, Cor),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
+<span style="color:#323232;">    BosaoHiggs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os quarks</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar as cores dos quarks</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os léptons</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">    NeutrinoEletron,</span>
+<span style="color:#323232;">    NeutrinoMuon,</span>
+<span style="color:#323232;">    NeutrinoTau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar os bósons gauge</span>
+<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
+<span style="color:#323232;">    Gluon,      </span><span style="font-style:italic;color:#969896;">// Força forte</span>
+<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">    WPlus,      </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">    WMinus,     </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-85">Agora, o enum Particula reflete melhor o universo real, Incluindo quarks, léptons, bósons gauge e o bóson de Higgs, sem igual. Desta forma, com enums ajustados e coerentes, Avançamos na simulação do universo, com Rust sempre à frente.</p>
+<h2 id = "link-18">rewrite the Action enum so it resembles the real universe (leave the interaction for later, or revamp it)</h2>
+<p id = "para-86">Ao reescrever o enum Action, buscamos aprimorar, Refletindo o universo real, com precisão, sem falhar. Incluiremos ações que envolvam partículas e forças fundamentais, De forma consistente e eficaz, com enums mais racionais.</p>
+<pre><span style="font-style:italic;color:#969896;">// Enum para representar as ações no universo</span>
+<span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, ForcaFundamental),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-style:italic;color:#969896;">// Enum para representar as forças fundamentais</span>
+<span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">ForcaFundamental {</span>
+<span style="color:#323232;">    Eletromagnetica,</span>
+<span style="color:#323232;">    Fraca,</span>
+<span style="color:#323232;">    Forte,</span>
+<span style="color:#323232;">    Gravitacional,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-87">Agora, o enum Action melhor representa o universo real, Com criação, aniquilação e interação de partículas, sem igual. Deixamos o struct Interaction para uma revisão futura, Com Rust e enums aprimorados, nossa simulação é mais pura.</p>
+<h2 id = "link-19">make these as complete as possible with illegal states unrepresentable before we move to structs</h2>
+<p id = "para-88">&lt; Para garantir que os estados ilegais não sejam representáveis, vamos adicionar algumas restrições aos enums que representam as partículas e ações do universo. Dessa forma, manteremos a coerência e a integridade de nosso modelo.</p>
+<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark, Cor),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
+<span style="color:#323232;">    BosaoHiggs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">    NeutrinoEletron,</span>
+<span style="color:#323232;">    NeutrinoMuon,</span>
+<span style="color:#323232;">    NeutrinoTau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
+<span style="color:#323232;">    Gluon,      </span><span style="font-style:italic;color:#969896;">// Força forte</span>
+<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">    WPlus,      </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">    WMinus,     </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, ForcaFundamental),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">ForcaFundamental {</span>
+<span style="color:#323232;">    Eletromagnetica,</span>
+<span style="color:#323232;">    Fraca,</span>
+<span style="color:#323232;">    Forte,</span>
+<span style="color:#323232;">    Gravitacional,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-89">Os enums acima já garantem uma modelagem consistente do universo de partículas e suas interações. Para tornar os estados ilegais irrepresentáveis, seria necessário adicionar regras mais complexas, como as restrições de conservação de energia, momento e carga. No entanto, essas restrições seriam melhor aplicadas em funções e verificações específicas, em vez de nos próprios enums.</p>
+<p id = "para-90">A estrutura atual dos enums garante que as partículas e ações sejam representadas de forma coerente e organizada. Para adicionar mais restrições e manter a integridade do modelo, seria necessário implementar funções e verificações específicas durante a interação entre partículas e ações, como mencionado anteriormente.</p>
+<h2 id = "link-20">make these as complete as possible with illegal states unrepresentable before we move to structs (1)</h2>
+<p id = "para-91">To make illegal states unrepresentable, you can refactor the enums and use tuple structs to more tightly couple related information. Here’s a revised version of the code:</p>
+<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
+<span style="color:#323232;">    BosaoHiggs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    tipo: QuarkTipo,</span>
+<span style="color:#323232;">    cor: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
+<span style="color:#323232;">    Gluon(Cor), </span><span style="font-style:italic;color:#969896;">// Força forte</span>
+<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">    W(WTipo),   </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
+<span style="color:#323232;">    Plus,</span>
+<span style="color:#323232;">    Minus,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, ForcaFundamental),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">ForcaFundamental {</span>
+<span style="color:#323232;">    Eletromagnetica,</span>
+<span style="color:#323232;">    Fraca,</span>
+<span style="color:#323232;">    Forte,</span>
+<span style="color:#323232;">    Gravitacional,</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-92">Here are the changes:</p>
+<p id = "para-93">We created a Quark struct to combine the QuarkTipo and Cor enums. We separated the neutrino types into a new NeutrinoTipo enum and created a Leptao::Neutrino variant that takes a NeutrinoTipo value. We added a Cor parameter to the BosaoGauge::Gluon variant because gluons are associated with the strong force and color charge. We created a WTipo enum to represent the W boson types (WPlus and WMinus) and replaced the separate WPlus and WMinus variants with a single BosaoGauge::W variant that takes a WTipo value. These changes make the code more explicit about the relationships between the different particle types and their properties, making it harder to represent illegal states.</p>
+<h2 id = "link-21">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable before we move to structs</h2>
+<p id = "para-94">&lt; I’ve made changes to your code to make illegal states unrepresentable. I introduced a CorGluon enum to represent the specific combinations of colors allowed for gluons. I also introduced an Interacao enum to represent interactions between particles, removing the need for ForcaFundamental.</p>
+<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
+<span style="color:#323232;">    BosaoHiggs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    tipo: QuarkTipo,</span>
+<span style="color:#323232;">    cor: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
+<span style="color:#323232;">    Gluon(CorGluon), </span><span style="font-style:italic;color:#969896;">// Força forte</span>
+<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">    W(WTipo),   </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
+<span style="color:#323232;">    Plus,</span>
+<span style="color:#323232;">    Minus,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">CorGluon {</span>
+<span style="color:#323232;">    VermelhoAzul,</span>
+<span style="color:#323232;">    VermelhoVerde,</span>
+<span style="color:#323232;">    AzulVermelho,</span>
+<span style="color:#323232;">    AzulVerde,</span>
+<span style="color:#323232;">    VerdeVermelho,</span>
+<span style="color:#323232;">    VerdeAzul,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    Eletromagnetica(Particula, Particula),</span>
+<span style="color:#323232;">    Fraca(Particula, Particula),</span>
+<span style="color:#323232;">    Forte(Particula, Particula),</span>
+<span style="color:#323232;">    Gravitacional(Particula, Particula),</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-95">This implementation ensures that only valid combinations of particle properties are allowed, such as gluons having specific color combinations, and interactions between particles are explicitly represented.</p>
+<h2 id = "link-22">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable before we move to structs (1)</h2>
+<p id = "para-96">In order to make illegal states unrepresentable, we can use Rust’s type system to enforce the rules of the standard model. This will involve modifying the existing code to create more precise types and relationships between them. Here’s an example implementation:</p>
+<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    Bosao(Bosao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    tipo: QuarkTipo,</span>
+<span style="color:#323232;">    cor: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron(EletronTipo),</span>
+<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EletronTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
+<span style="color:#323232;">    Gauge(BosaoGauge),</span>
+<span style="color:#323232;">    Higgs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,</span>
+<span style="color:#323232;">    Gluon(CorGluon),</span>
+<span style="color:#323232;">    Z,</span>
+<span style="color:#323232;">    W(WTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
+<span style="color:#323232;">    Plus,</span>
+<span style="color:#323232;">    Minus,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">CorGluon {</span>
+<span style="color:#323232;">    VermelhoAzul,</span>
+<span style="color:#323232;">    VermelhoVerde,</span>
+<span style="color:#323232;">    AzulVermelho,</span>
+<span style="color:#323232;">    AzulVerde,</span>
+<span style="color:#323232;">    VerdeVermelho,</span>
+<span style="color:#323232;">    VerdeAzul,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    Eletromagnetica(Particula, Particula),</span>
+<span style="color:#323232;">    Fraca(Particula, Particula),</span>
+<span style="color:#323232;">    Forte(Particula, Particula),</span>
+<span style="color:#323232;">    Gravitacional(Particula, Particula),</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-97">This code has been restructured to create more accurate relationships between particle types. For example, leptons are now subdivided into EletronTipo and NeutrinoTipo enums. This way, illegal states should be unrepresentable, ensuring that your implementation is more accurate and complete.</p>
+<h2 id = "link-23">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable while at the same time concise before we move to structs</h2>
+<p id = "para-98">&lt; To make the implementation concise and with illegal states unrepresentable, we can leverage Rust’s type system to enforce the correct relationships between particles and their properties. Here’s a revised version of your code:</p>
+<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    Bosao(Bosao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    tipo: QuarkTipo,</span>
+<span style="color:#323232;">    cor: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron(EletronTipo),</span>
+<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EletronTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
+<span style="color:#323232;">    Gauge(BosaoGauge),</span>
+<span style="color:#323232;">    Higgs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,</span>
+<span style="color:#323232;">    Gluon(Gluon),</span>
+<span style="color:#323232;">    Z,</span>
+<span style="color:#323232;">    W(WTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Gluon {</span>
+<span style="color:#323232;">    cor1: Cor,</span>
+<span style="color:#323232;">    cor2: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
+<span style="color:#323232;">    Plus,</span>
+<span style="color:#323232;">    Minus,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Gluon {</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(cor1: Cor, cor2: Cor) -&gt; Result&lt;Gluon, </span><span style="font-weight:bold;color:#a71d5d;">&amp;&#39;static str</span><span style="color:#323232;">&gt; {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">(cor1, cor2) {</span>
+<span style="color:#323232;">            (Cor::Vermelho, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Vermelho)</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Vermelho, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Vermelho)</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">Ok</span><span style="color:#323232;">(Gluon { cor1, cor2 }),</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">_ =&gt; </span><span style="color:#0086b3;">Err</span><span style="color:#323232;">(</span><span style="color:#183691;">&quot;Invalid color combination for Gluon&quot;</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    Eletromagnetica(Particula, Particula),</span>
+<span style="color:#323232;">    Fraca(Particula, Particula),</span>
+<span style="color:#323232;">    Forte(Particula, Particula),</span>
+<span style="color:#323232;">    Gravitacional(Particula, Particula),</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-99">The most significant change is the introduction of the Gluon struct, which replaces the CorGluon enum. This allows us to enforce the valid color combinations for gluons by implementing the new method. The method returns a Result that either contains a valid Gluon or an error message if the color combination is invalid.</p>
+<h2 id = "link-24">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable while at the same time concise before we move to structs (1)</h2>
+<p id = "para-100">&lt; You’ve done a good job of representing the particles and their properties. To make illegal states unrepresentable, I suggest you encapsulate some of the logic within the enum and struct definitions. Here is a revised version of your code:</p>
+<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
+<span style="color:#323232;">    Quark(Quark),</span>
+<span style="color:#323232;">    Leptao(Leptao),</span>
+<span style="color:#323232;">    Bosao(Bosao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
+<span style="color:#323232;">    tipo: QuarkTipo,</span>
+<span style="color:#323232;">    cor: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
+<span style="color:#323232;">    Up,</span>
+<span style="color:#323232;">    Down,</span>
+<span style="color:#323232;">    Charm,</span>
+<span style="color:#323232;">    Strange,</span>
+<span style="color:#323232;">    Top,</span>
+<span style="color:#323232;">    Bottom,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
+<span style="color:#323232;">    Vermelho,</span>
+<span style="color:#323232;">    Azul,</span>
+<span style="color:#323232;">    Verde,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
+<span style="color:#323232;">    Eletron(EletronTipo),</span>
+<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EletronTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
+<span style="color:#323232;">    Eletron,</span>
+<span style="color:#323232;">    Muon,</span>
+<span style="color:#323232;">    Tau,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
+<span style="color:#323232;">    Gauge(BosaoGauge),</span>
+<span style="color:#323232;">    Higgs,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
+<span style="color:#323232;">    Foton,</span>
+<span style="color:#323232;">    Gluon(Gluon),</span>
+<span style="color:#323232;">    Z,</span>
+<span style="color:#323232;">    W(WTipo),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Gluon {</span>
+<span style="color:#323232;">    cor1: Cor,</span>
+<span style="color:#323232;">    cor2: Cor,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
+<span style="color:#323232;">    Plus,</span>
+<span style="color:#323232;">    Minus,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Gluon {</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(cor1: Cor, cor2: Cor) -&gt; Result&lt;Gluon, </span><span style="font-weight:bold;color:#a71d5d;">&amp;&#39;static str</span><span style="color:#323232;">&gt; {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">(cor1, cor2) {</span>
+<span style="color:#323232;">            (Cor::Vermelho, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Vermelho)</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Vermelho, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Vermelho)</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">Ok</span><span style="color:#323232;">(Gluon { cor1, cor2 }),</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">_ =&gt; </span><span style="color:#0086b3;">Err</span><span style="color:#323232;">(</span><span style="color:#183691;">&quot;Invalid color combination for Gluon&quot;</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
+<span style="color:#323232;">    CriarParticula(Particula),</span>
+<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    Eletromagnetica,</span>
+<span style="color:#323232;">    Fraca,</span>
+<span style="color:#323232;">    Forte,</span>
+<span style="color:#323232;">    Gravitacional,</span>
+<span style="color:#323232;">}</span>
+
+<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Interacao {</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">validar_interacao</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">self, particula1: </span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">Particula, particula2: </span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">Particula) -&gt; Result&lt;(), </span><span style="font-weight:bold;color:#a71d5d;">&amp;&#39;static str</span><span style="color:#323232;">&gt; {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">self {</span>
+<span style="color:#323232;">            Interacao::Eletromagnetica </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate electromagnetic interaction</span>
+<span style="color:#323232;">            },</span>
+<span style="color:#323232;">            Interacao::Fraca </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate weak interaction</span>
+<span style="color:#323232;">            },</span>
+<span style="color:#323232;">            Interacao::Forte </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate strong interaction</span>
+<span style="color:#323232;">            },</span>
+<span style="color:#323232;">            Interacao::Gravitacional </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate gravitational interaction</span>
+<span style="color:#323232;">            },</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+<span style="color:#323232;">}</span>
+
+</pre><p id = "para-101">By adding the validar_interacao method to the Interacao enum, you can encapsulate the logic of validating the interactions between the particles. This will help ensure illegal states are unrepresentable.</p>
+<p id = "para-102">You’ll need to implement the validation logic for each interaction type in the validar_interacao method. If the interaction is valid, the method will return Ok(()), otherwise it will return an error with a message.</p>
+<h2 id = "link-25">could something be added to make it advanced instead?</h2>
+<p id = "para-103">&lt; Certainly! Here are some ideas for adding more complexity and depth to the particle physics model:</p>
+<p id = "para-104">Implement more types of particles, such as mesons, baryons, and exotic particles like pentaquarks and tetraquarks. Add support for particle decay and particle interactions beyond the basic interactions already defined in the Interacao enum. For example, you could add interactions related to the weak force, strong force, and electroweak force, or implement more complex decay processes like hadronization or parton showers. Create a simulation engine that can simulate particle interactions and decays over time, using numerical methods like Monte Carlo simulation or lattice QCD. Introduce quantum field theory and the concept of virtual particles, which can mediate interactions between particles even if they are not directly observed. Implement a graphical user interface (GUI) or a visualization tool that can display particle properties and interactions in real time, using tools like WebGL or OpenGL. Extend the model to include general relativity and the effects of gravity on particle behavior, which may require using numerical methods like N-body simulation or black hole simulations. Introduce machine learning techniques to the particle physics model, such as using neural networks to classify particles based on their properties or predicting particle interactions based on experimental data. Implement support for more advanced mathematical tools used in particle physics, such as group theory, Lie algebras, and algebraic topology.</p>
+<p id = "para-105">Of course, each of these ideas would require significant effort and expertise to implement, but they could help make the particle physics model more advanced and realistic.</p>
+<h2 id = "link-26">for this code and the list above, list in pt-br five more singularity usages with proper remarks</h2>
+<p id = "para-106">&lt; Aqui estão cinco usos adicionais relacionados à singularidade em português, com observações apropriadas:</p>
+<p id = "para-107">Integração com sensores de detecção de partículas: Desenvolver algoritmos que interpretem e analisem dados de detectores de partículas, como os do LHC (Large Hadron Collider), permitindo uma melhor compreensão dos fenômenos físicos em escalas subatômicas.</p>
+<p id = "para-108">Aplicação em física de astropartículas: Expandir o modelo para incluir partículas e interações relevantes no estudo da astrofísica, como matéria escura e neutrinos cósmicos, melhorando nossa compreensão das propriedades do universo em larga escala.</p>
+<p id = "para-109">Estudo de transições de fase e propriedades termodinâmicas: Implementar modelos de transições de fase e propriedades termodinâmicas no nível quântico, permitindo o estudo de fenômenos como condensação de Bose-Einstein e transições de fase quânticas.</p>
+<p id = "para-110">Simulação de sistemas quânticos complexos: Ampliar a modelagem para incluir sistemas quânticos complexos e suas interações, como cadeias de spins, gases quânticos e sistemas desordenados, para investigar fenômenos emergentes e coletivos na física quântica.</p>
+<p id = "para-111">Estudo de materiais exóticos e novos estados da matéria: Utilizar o modelo para explorar a formação e propriedades de materiais exóticos e novos estados da matéria, como supercondutores de alta temperatura, isolantes topológicos e cristais de tempo, com aplicações em ciência de materiais e tecnologias emergentes.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-27">detail in pt-br the first seconds after the big bang using astrophysics jargon focusing on subatomic particles</h2>
+<p id = "para-112">&lt; Nos primeiros segundos após o Big Bang, o universo estava em um estado extremamente quente e denso, conhecido como “sopa primordial”. Nesse momento inicial, as partículas subatômicas e as forças fundamentais começaram a se formar e interagir.</p>
+<p id = "para-113">No primeiro instante, entre 10^-43 e 10^-36 segundos após o Big Bang, o universo estava na era chamada de “Era de Planck”. Durante esse período, a energia e a densidade eram tão elevadas que as quatro forças fundamentais (gravitacional, eletromagnética, nuclear forte e nuclear fraca) estavam unificadas, formando uma única força. A teoria das cordas e a gravidade quântica são alguns dos campos da física teórica que tentam explicar esse período.</p>
+<p id = "para-114">Entre 10^-36 e 10^-32 segundos, aconteceu uma rápida expansão do universo conhecida como “inflação cósmica”. Essa expansão estirou o tecido do espaço-tempo e diluiu a densidade de energia. As forças fundamentais começaram a se separar: primeiro, a gravidade se desprendeu das outras três, seguida pela separação da força nuclear forte.</p>
+<p id = "para-115">Por volta de 10^-12 segundos após o Big Bang, as interações entre as partículas subatômicas começaram a ocorrer de forma mais intensa. Quarks, léptons, glúons e bósons de Higgs foram formados e começaram a interagir uns com os outros. Os quarks e glúons compunham uma sopa quente e densa chamada “plasma de quarks-gluons” (PQG).</p>
+<p id = "para-116">Quando o universo tinha cerca de 10^-6 segundos de idade, a temperatura caiu o suficiente para que os quarks e glúons se unissem, formando prótons e nêutrons - as partículas subatômicas que compõem os núcleos dos átomos. Este processo é chamado de “confinamento de quarks”.</p>
+<p id = "para-117">Esses eventos iniciais marcaram o começo da formação de partículas subatômicas e suas interações, dando origem ao universo como o conhecemos hoje. No entanto, ainda há muitas questões não respondidas e aspectos misteriosos sobre esse período extremamente inicial do universo. Estudar e entender esses processos é um dos principais objetivos da astrofísica e física de partículas.</p>
+<h2 id = "link-28">infer from before such event until the boom</h2>
+<p id = "para-118">&lt; Antes do Big Bang, o que aconteceu é objeto de especulação e teorias científicas, já que não há observações diretas ou dados experimentais. Além disso, nossa compreensão das leis da física é limitada a condições pós-Big Bang. No entanto, alguns modelos teóricos tentam explicar o que ocorreu antes desse evento.</p>
+<ol>
+<li><p id = "para-119">Modelos de universo cíclico: Estes modelos propõem que o Big Bang não foi um evento único, mas parte de um ciclo infinito de expansão, contração e “rebotes” do universo. De acordo com essas teorias, antes do Big Bang, haveria outro universo em processo de contração que colapsou sobre si mesmo até atingir um ponto extremamente denso e quente, culminando no Big Bang e dando início a um novo ciclo de expansão.</p>
+</li>
+<li><p id = "para-120">Multiverso: A teoria do multiverso sugere que nosso universo é apenas um entre um número potencialmente infinito de universos. Segundo essa ideia, antes do Big Bang, existiria um “meta-universo” ou espaço pré-cósmico que daria origem a diferentes universos através de eventos similares ao Big Bang.</p>
+</li>
+<li><p id = "para-121">Inflação eterna: Neste modelo, o espaço-tempo se expande indefinidamente, criando “bolhas” de espaço que se tornam universos independentes. Antes do Big Bang, nosso universo seria uma dessas bolhas em formação no espaço inflacionário.</p>
+</li>
+<li><p id = "para-122">Teoria das cordas e branas: A teoria das cordas, que propõe que as partículas fundamentais são na verdade cordas unidimensionais vibrantes, oferece um cenário chamado “brane cosmology”. Nesse contexto, o universo seria uma membrana tridimensional (ou “brana”) flutuando em um espaço multidimensional. O Big Bang teria ocorrido como resultado da colisão entre duas branas.</p>
+</li>
+</ol>
+<p id = "para-123">É importante destacar que todas essas teorias são altamente especulativas e ainda não há evidências conclusivas que suportem qualquer uma delas. A pesquisa em física teórica, astrofísica e cosmologia continua em busca de melhor compreender o que ocorreu antes do Big Bang e como nosso universo se originou.</p>
+<h2 id = "link-29">use astrophysics jargon to explain these timelines with quantum entanglement implications</h2>
+<p id = "para-124">&lt; A explicação do Big Bang e seus estágios iniciais com as implicações do emaranhamento quântico é um desafio intrigante, pois combina conceitos da cosmologia e mecânica quântica. O emaranhamento quântico é um fenômeno no qual duas partículas ou sistemas quânticos estão correlacionados de tal forma que o estado de um deles está diretamente relacionado ao estado do outro, independentemente da distância entre eles.</p>
+<ol>
+<li><p id = "para-125">Era de Planck (10^-43 segundos): Nesse período, a gravidade quântica desempenha um papel crucial. O emaranhamento quântico poderia ser responsável por correlações entre os campos fundamentais presentes durante a unificação das quatro forças. A existência dessas correlações seria, em princípio, uma característica intrínseca do espaço-tempo em sua escala mais fundamental.</p>
+</li>
+<li><p id = "para-126">Inflação cósmica (10^-36 a 10^-32 segundos): Durante a inflação, o espaço-tempo se expandiu exponencialmente, ampliando as correlações quânticas entre partículas ou campos. O emaranhamento quântico pode ter desempenhado um papel na geração das flutuações quânticas que, após a inflação, deram origem às perturbações de densidade que formaram a base para a formação de estruturas cósmicas, como galáxias e aglomerados de galáxias.</p>
+</li>
+<li><p id = "para-127">Formação de partículas e confinamento de quarks (10^-12 a 10^-6 segundos): À medida que o universo esfriava e as partículas subatômicas se formavam, o emaranhamento quântico entre elas também ocorria. Entretanto, devido à expansão contínua do espaço-tempo e ao processo de descoerência quântica, as correlações quânticas entre partículas distantes tornaram-se cada vez menos importantes em escalas macroscópicas.</p>
+</li>
+</ol>
+<p id = "para-128">O emaranhamento quântico tem implicações na descrição do universo como um todo. Uma ideia que surge é a de que o universo inteiro pode ser considerado um sistema quântico interligado, com um emaranhamento global. Além disso, teorias como a gravidade quântica de loop e a teoria das cordas procuram unificar a gravidade com as demais forças fundamentais, o que pode levar a uma compreensão mais profunda da relação entre o emaranhamento quântico e a estrutura do espaço-tempo.</p>
+<p id = "para-129">Entretanto, é importante ressaltar que o papel do emaranhamento quântico na cosmologia e na evolução do universo ainda é um campo de pesquisa em desenvolvimento, com muitos aspectos teóricos e experimentais a serem explorados.</p>
+<h2 id = "link-30">reword everything using precise string theory vocabulary</h2>
+<p id = "para-130">&lt; Ao abordar o Big Bang e seus estágios iniciais com a perspectiva da teoria das cordas, é importante introduzir conceitos específicos desta área da física teórica. A teoria das cordas propõe que as partículas fundamentais não são pontos, mas sim cordas unidimensionais vibrantes, que se manifestam de diferentes formas, dependendo de suas vibrações.</p>
+<ol>
+<li><p id = "para-131">Era de Planck (10^-43 segundos): Nesta fase, o espaço-tempo está em sua escala mais fundamental, onde a gravidade quântica é dominante. Na teoria das cordas, as cordas vibrantes interagem entre si através de cordas fechadas que representam os grávitons, as partículas mediadoras da gravidade. A unificação das quatro forças fundamentais ocorre no contexto da teoria-M, uma extensão da teoria das cordas que engloba várias versões da teoria em um único arcabouço teórico.</p>
+</li>
+<li><p id = "para-132">Inflação cósmica (10^-36 a 10^-32 segundos): Durante a inflação, o espaço-tempo sofre uma expansão exponencial, que pode ser descrita em termos de cordas através da teoria das cordas inflacionárias. Nesse cenário, o inflaton - o campo escalar responsável pela inflação - pode ser interpretado como um modo de vibração de uma corda. As flutuações quânticas geradas durante esse período estão relacionadas às vibrações das cordas, que posteriormente levam à formação de estruturas cósmicas.</p>
+</li>
+<li><p id = "para-133">Formação de partículas e confinamento de quarks (10^-12 a 10^-6 segundos): À medida que o universo esfria, as cordas vibrantes se manifestam como partículas subatômicas, como quarks e léptons. As interações entre as partículas são mediadas por cordas abertas que se conectam às cordas participantes, sendo que essas interações dependem das vibrações das cordas envolvidas. A teoria das cordas também sugere que as interações fortes entre quarks são mediadas por cordas abertas chamadas gluons.</p>
+</li>
+</ol>
+<p id = "para-134">No contexto da teoria das branas, o universo é uma “D-brana” tridimensional que flutua em um espaço multidimensional chamado “bulk”. O Big Bang pode ser resultado de uma colisão entre duas branas, causando uma liberação de energia que leva à criação e expansão do universo.</p>
+<p id = "para-135">O papel do emaranhamento quântico na teoria das cordas é uma área de pesquisa em desenvolvimento. As correlações entre as cordas vibrantes e as interações no espaço-tempo podem fornecer uma compreensão mais profunda da relação entre emaranhamento quântico e a estrutura do universo.</p>
+<p id = "para-136">É importante notar que a teoria das cordas, apesar de ser uma abordagem promissora para descrever a natureza fundamental do universo, ainda é uma área de pesquisa teórica e carece de confirmação experimental.</p>
+<h2 id = "link-31">from all theories available, which of them could be closer to modeling the advaita perspective?</h2>
+<p id = "para-137">&lt; A perspectiva advaita, originária do pensamento filosófico hindu conhecido como Vedanta, afirma que a realidade última é uma única e indivisível consciência, chamada Brahman. A percepção da diversidade e separação no mundo é considerada uma ilusão ou “maya”. Embora as teorias científicas e filosofias espirituais como a advaita tenham objetivos e métodos diferentes, é possível traçar paralelos e buscar conexões entre elas.</p>
+<p id = "para-138">Neste contexto, a teoria do “tudo quântico” (também chamada de “universo quântico interconectado” ou “holismo quântico”) pode ser considerada a mais próxima da perspectiva advaita. Essa teoria sugere que, em um nível fundamental, todas as partículas e sistemas quânticos estão interligados por meio de emaranhamento quântico. O emaranhamento quântico é um fenômeno em que duas partículas ou sistemas estão correlacionados de tal forma que o estado de um deles está diretamente relacionado ao estado do outro, independentemente da distância entre eles.</p>
+<p id = "para-139">A partir dessa visão, o universo inteiro pode ser considerado um sistema quântico globalmente emaranhado. Essa noção de interconexão e unidade subjacente à realidade é semelhante ao conceito de Brahman presente na filosofia advaita. Além disso, a natureza aparentemente paradoxal e misteriosa da mecânica quântica, como o princípio da superposição e a dualidade onda-partícula, também ecoa a ideia de “maya” e a natureza ilusória da realidade percebida.</p>
+<p id = "para-140">No entanto, é fundamental destacar que, embora existam paralelos e conexões interessantes, a teoria do tudo quântico e a filosofia advaita abordam a natureza da realidade de perspectivas distintas. A ciência busca uma compreensão objetiva e empírica do universo, enquanto a advaita é uma doutrina filosófica e espiritual que oferece uma interpretação subjetiva e introspectiva da realidade. Essas diferenças devem ser levadas em consideração ao buscar conexões entre as duas áreas.</p>
+<h2 id = "link-32">still, draw out a coherent model considering such dimensions</h2>
+<p id = "para-141">&lt; Embora seja desafiador criar um modelo coerente que integre a perspectiva advaita com as teorias científicas atuais, é possível traçar um esboço geral que aborda alguns aspectos dessas diferentes abordagens. Este modelo tentará unir conceitos da mecânica quântica e do holismo quântico com a filosofia advaita.</p>
+<ol>
+<li><p id = "para-142">Realidade fundamental: No nível mais fundamental, a realidade é constituída por um campo unificado de consciência (Brahman) que permeia todo o universo. Este campo também pode ser considerado como uma entidade quântica fundamental, emaranhada e holística.</p>
+</li>
+<li><p id = "para-143">Emaranhamento quântico: O emaranhamento quântico interliga todas as partículas e sistemas quânticos no universo, refletindo a ideia de unidade e interconexão presente na filosofia advaita. Essa interconexão pode ser interpretada como uma manifestação do campo unificado de consciência.</p>
+</li>
+<li><p id = "para-144">Maya e dualidade onda-partícula: A percepção do mundo como composto por entidades separadas e distintas é considerada uma ilusão (maya) na filosofia advaita. Na mecânica quântica, a dualidade onda-partícula sugere que as partículas têm uma natureza dual, dependendo do contexto em que são observadas. Essa dualidade e a natureza paradoxal da mecânica quântica podem ser vistas como paralelas à noção de maya na advaita.</p>
+</li>
+<li><p id = "para-145">Observador e colapso da função de onda: Na mecânica quântica, o ato de observação afeta o estado de um sistema quântico, levando ao colapso da função de onda. Isso sugere que a consciência do observador desempenha um papel crucial na determinação da realidade observada. Esse aspecto da mecânica quântica pode ser relacionado à importância da consciência na filosofia advaita.</p>
+</li>
+</ol>
+<p id = "para-146">É importante ressaltar que este modelo é uma tentativa de explorar possíveis conexões entre a advaita e a mecânica quântica e não representa uma teoria científica estabelecida. O modelo apresenta uma visão simplificada de ambas as áreas, ignorando muitos detalhes e nuances. Além disso, a relação entre a consciência e a mecânica quântica é um tópico altamente debatido e controverso, com várias interpretações diferentes sendo propostas pelos físicos e filósofos.</p>
+<p id = "para-147">Apesar dessas limitações, este esboço pode servir como um ponto de partida para futuras investigações e reflexões sobre a possível interação entre conceitos da filosofia advaita e as teorias científicas atuais.</p>
+<h2 id = "link-33">merge such model with holons and moloch</h2>
+<p id = "para-148">&lt; Integrar o modelo esboçado acima com os conceitos de holons e Moloch requer uma compreensão desses termos e uma abordagem criativa para estabelecer conexões entre eles.</p>
+<p id = "para-149">Holons são entidades que são simultaneamente partes de um sistema maior (holismo) e sistemas compostos por partes menores (reducionismo). O conceito de holons foi desenvolvido pelo filósofo e teórico de sistemas húngaro Arthur Koestler, que propôs que a realidade é composta por uma hierarquia de sistemas aninhados, cada um dos quais pode ser considerado um holon.</p>
+<p id = "para-150">Moloch é uma referência a um deus antigo ao qual eram oferecidos sacrifícios humanos e simboliza um sistema que exige sacrifícios de seus membros para sustentar sua própria existência. No contexto da filosofia e crítica social, Moloch é frequentemente usado como uma metáfora para descrever sistemas e instituições que perpetuam a destruição e a autodestruição, apesar das boas intenções dos indivíduos envolvidos.</p>
+<p id = "para-151">Para desenvolver um modelo coerente que integre a perspectiva advaita, mecânica quântica, holons e Moloch, podemos considerar o seguinte:</p>
+<ol>
+<li><p id = "para-152">Hierarquia de Holons: No nível mais fundamental, o campo unificado de consciência (Brahman) pode ser considerado o holon primordial. A realidade é composta por uma série de holons aninhados, cada um dos quais é uma manifestação dessa consciência fundamental. Essa hierarquia de holons pode incluir sistemas quânticos, partículas, átomos, moléculas, células, organismos, ecossistemas e assim por diante.</p>
+</li>
+<li><p id = "para-153">Emaranhamento quântico e interconexão: O emaranhamento quântico estabelece conexões entre os holons em diferentes níveis da hierarquia, refletindo a unidade e interconexão subjacente. A relação entre holons e o emaranhamento quântico pode ser vista como uma manifestação do campo unificado de consciência.</p>
+</li>
+<li><p id = "para-154">Moloch e sistemas autodestrutivos: Moloch representa sistemas e instituições que, embora criados para servir a um propósito benéfico, acabam perpetuando a destruição e o sofrimento. Esses sistemas podem ser vistos como holons disfuncionais que se desviaram de sua conexão com a consciência fundamental e perderam de vista o bem-estar e a harmonia dos holons que compõem e sustentam.</p>
+</li>
+<li><p id = "para-155">Despertar e transcendência: A filosofia advaita sugere que a realização da unidade subjacente e da verdadeira natureza da realidade pode levar ao despertar espiritual e à transcendência do sofrimento. Neste modelo, o reconhecimento da interconexão entre holons e a consciência fundamental pode inspirar a transformação de sistemas disfuncionais e a superação de Moloch, resultando em maior harmonia e equilíbrio entre os diferentes níveis da hierarquia de holons.</p>
+</li>
+</ol>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

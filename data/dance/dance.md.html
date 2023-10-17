@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">list in pt-br the top 10 coolest dances worldwide</a></li>
+      <li><a href="#link-2">list in pt-br the top dances in brazil</a></li>
+      <li><a href="#link-3">list in pt-br the top dances in cuba</a></li>
+      <li><a href="#link-4">list in pt-br the top dances in north korea</a></li>
+      <li><a href="#link-5">list in pt-br the top dances in madagascar</a></li>
+      <li><a href="#link-6">list in pt-br the top dances in fiji</a></li>
+      <li><a href="#link-7">detail in pt-br with academic rigor how samba works</a></li>
+      <li><a href="#link-8">detail in pt-br how samba is related to kimbanda pantheon-wise</a></li>
+      <li><a href="#link-9">detail in pt-br with academic rigor comparing tango and salsa</a></li>
+      <li><a href="#link-10">detail in pt-br with academic rigor detailing nuance between tango and milonga</a></li>
+      <li><a href="#link-11">detail in pt-br how ganggangsullae works</a></li>
+      <li><a href="#link-12">detail in pt-br the three main dances from madagascar</a></li>
+      <li><a href="#link-13">detail in pt-br the dance from fiji that could be considered more promiscuous</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">list in pt-br the top 10 coolest dances worldwide</h2>
+<p id = "para-1">&lt; Aqui estão as 10 danças mais legais ao redor do mundo, em português:</p>
+<p id = "para-2">Samba (Brasil) Tango (Argentina) Flamenco (Espanha) Hip-hop (Estados Unidos) Breakdance (Estados Unidos) Salsa (Cuba e Porto Rico) Ballet (Rússia e França) Dança do ventre (Oriente Médio) Hula (Havaí, Estados Unidos) Capoeira (Brasil)</p>
+<h2 id = "link-2">list in pt-br the top dances in brazil</h2>
+<p id = "para-3">&lt; Aqui estão algumas das principais danças do Brasil, em português:</p>
+<p id = "para-4">Samba Forró Frevo Axé Capoeira Carimbó Maracatu Lambada Xote Funk Carioca</p>
+<h2 id = "link-3">list in pt-br the top dances in cuba</h2>
+<p id = "para-5">&lt; Aqui estão algumas das danças mais populares e tradicionais de Cuba, em português:</p>
+<p id = "para-6">Salsa Cubana (também conhecida como Casino) Rumba (incluindo os estilos Guaguancó, Yambú e Columbia) Son Cubano Mambo Cha-cha-chá Danzón Bolero Timba Reggaeton Cubano Conga (ou Comparsa)</p>
+<h2 id = "link-4">list in pt-br the top dances in north korea</h2>
+<p id = "para-7">&lt; Na Coreia do Norte, as danças mais populares estão relacionadas à cultura e tradição do país. Aqui estão algumas das principais danças na Coreia do Norte, em português:</p>
+<p id = "para-8">Dança Folclórica Coreana (também conhecida como “Minyo”) Buchaechum (Dança do leque) Talchum (Dança das máscaras) Ganggangsullae (Dança tradicional feminina realizada sob a lua cheia) Seungmu (Dança dos monges budistas) Pungmul (Dança baseada em percussão) Geommu (Dança da espada) Sogo Odori (Dança do tambor pequeno)</p>
+<p id = "para-9">É importante mencionar que muitas dessas danças são compartilhadas com a cultura da Coreia do Sul, já que ambas as nações têm raízes culturais comuns. Além disso, o governo norte-coreano controla rigorosamente as expressões artísticas, o que pode limitar a diversidade e a evolução das danças no país.</p>
+<h2 id = "link-5">list in pt-br the top dances in madagascar</h2>
+<p id = "para-10">&lt; Em Madagascar, as danças tradicionais são ricas e diversas, refletindo a história e a cultura do país. Aqui estão algumas das principais danças de Madagascar, em português:</p>
+<p id = "para-11">Afindrafindrao Hira Gasy Salegy Tsapika Baoabao (ou Bao) Antosy Beko Betroka Cada uma dessas danças tem suas próprias características e variações, e muitas delas são praticadas em diferentes regiões de Madagascar. As danças tradicionais malgaxes são normalmente acompanhadas por música ao vivo e envolvem movimentos e ritmos distintos.</p>
+<h2 id = "link-6">list in pt-br the top dances in fiji</h2>
+<p id = "para-12">&lt; Em Fiji, a cultura e tradição das ilhas são refletidas em suas danças. Aqui estão algumas das danças mais populares e tradicionais de Fiji, em português:</p>
+<p id = "para-13">Meke: Dança tradicional de Fiji que combina dança e canto. Existem dois tipos principais de Meke, o Meke Wesi (dança do machado de guerra) e o Meke Iri (dança com leques). Seasea: Uma dança típica das mulheres fijianas, realizada com leques e vestimentas coloridas. Taralala: Dança tradicional masculina que celebra a bravura e as habilidades dos guerreiros fijianos. Bole: Dança típica das ilhas Lau, realizada em eventos especiais e celebrações. Vucu: Uma dança de saudação e boas-vindas realizada para receber visitantes importantes e marcar o início das cerimônias. As danças em Fiji muitas vezes têm um significado cultural e histórico profundo, e são uma parte importante da herança das ilhas.</p>
+<h2 id = "link-7">detail in pt-br with academic rigor how samba works</h2>
+<p id = "para-14">&lt; O samba é uma forma de dança e música originária do Brasil, com raízes na cultura africana e influências indígenas e europeias. O samba é caracterizado por seu ritmo animado, movimentos corporais expressivos e complexos padrões de percussão. A seguir, descreverei o samba com rigor acadêmico, focando em seus aspectos musicais, coreográficos e históricos.</p>
+<p id = "para-15">Aspectos musicais:</p>
+<p id = "para-16">O samba é tocado em um ritmo de 2/4, com ênfase no segundo tempo do compasso. A música é baseada em um padrão rítmico chamado “clave”, que consiste em três notas no primeiro tempo e duas no segundo. A instrumentação típica de uma banda de samba inclui:</p>
+<p id = "para-17">Surdo: um tambor grande e grave que fornece a base rítmica do samba. Tamborim: um pequeno tambor de mão, tocado com uma vareta e responsável pelo contraponto rítmico. Pandeiro: um tipo de tamborim com platinelas, que adiciona um som agudo e brilhante à música. Agogô: um instrumento de percussão de metal com dois sinos, que é tocado com uma vareta e ajuda a marcar a clave. Reco-reco: um raspador de metal ou madeira, que produz um som de raspagem e contribui para a textura rítmica. Cuíca: um tambor friccionado que produz um som característico, semelhante a um gemido. Cavaquinho: um instrumento de cordas semelhante ao ukelele, que fornece harmonias e melodia. Aspectos coreográficos:</p>
+<p id = "para-18">A dança do samba é tão expressiva quanto a música e inclui movimentos rápidos dos pés, quadris e ombros. Alguns elementos chave da dança do samba são:</p>
+<p id = "para-19">Samba no pé: um passo básico de samba, no qual os dançarinos alternam entre tocar a bola do pé no chão e levantar o calcanhar. Volta: um passo em que os dançarinos giram em torno de si mesmos, mudando o peso entre os pés. Bota-fogo: um passo em que os dançarinos cruzam os pés e trocam o peso do corpo de um pé para o outro. Deslocamento lateral: um passo de deslocamento lateral com ênfase no movimento dos quadris. História e contexto cultural:</p>
+<p id = "para-20">O samba se desenvolveu no final do século XIX e início do século XX nas comunidades afro-brasileiras das áreas urbanas do Rio de Janeiro. O samba tem suas raízes nas tradições musicais e de dança dos escravos africanos trazidos ao Brasil, especialmente dos povos Bantu e Yoruba. Além disso, o samba também foi influenciado por outras formas de música brasileira, como o maxixe, lundu e a modinha.</p>
+<p id = "para-21">O samba tornou-se um símbolo da cultura brasileira e é especialmente associado ao Carnaval do Rio de Janeiro, onde escolas de samba desfilam e competem com base em suas performances musicais e coreográficas. Além do samba tradicional, várias outras formas de samba foram desenvolvidas ao longo do tempo, incluindo o samba-enredo, o samba de gafieira, o samba de roda, o samba-canção e o samba-reggae.</p>
+<p id = "para-22">O samba-enredo é uma forma de samba criada especificamente para as escolas de samba desfilarem no Carnaval. Ele é caracterizado por letras que contam uma história ou um tema, e é executado por uma bateria com muitos músicos e cantores.</p>
+<p id = "para-23">O samba de gafieira é uma forma de samba que é dançada em pares, com movimentos e passos mais elaborados, e tem sua origem nos salões de dança do Brasil. O samba de gafieira é mais suave e melódico, e tem uma influência maior da música popular brasileira.</p>
+<p id = "para-24">O samba de roda é uma forma mais tradicional de samba, originária da Bahia. É caracterizado por uma roda de músicos e dançarinos que se revezam no centro, improvisando movimentos e cantando. O samba de roda tem uma forte conexão com as tradições religiosas afro-brasileiras, como o candomblé.</p>
+<p id = "para-25">O samba-canção é um estilo mais lento e melódico de samba, com letras poéticas e românticas. Ele foi popularizado nos anos 1940 e 1950 e é uma forma mais intimista do samba, geralmente executada por pequenos grupos ou cantores solo.</p>
+<p id = "para-26">O samba-reggae é um estilo mais recente que combina elementos do samba e do reggae jamaicano. Ele foi criado na Bahia nos anos 1970 e 1980 e é caracterizado por ritmos sincopados e mensagens sociais e políticas em suas letras.</p>
+<p id = "para-27">O samba tem desempenhado um papel importante na identidade cultural brasileira e é apreciado tanto como uma expressão artística quanto como uma forma de entretenimento e celebração. Ele também tem influenciado e sido influenciado por outros estilos de dança e música ao redor do mundo, contribuindo para a riqueza e diversidade das tradições de dança global.</p>
+<h2 id = "link-8">detail in pt-br how samba is related to kimbanda pantheon-wise</h2>
+<p id = "para-28">&lt; A relação entre o samba e o panteão da religião Kimbanda no Brasil é complexa e multifacetada. A Kimbanda é uma religião afro-brasileira que se originou no século XX e tem suas raízes nas tradições religiosas africanas, bem como nas influências do catolicismo e do espiritismo. O panteão da Kimbanda é composto por entidades conhecidas como Exus e Pombagiras, que são consideradas intermediárias entre os seres humanos e os Orixás (divindades africanas). Essas entidades têm características ambíguas, sendo capazes de ajudar ou prejudicar os seres humanos, e são frequentemente associadas à magia, sexualidade e transgressão social.</p>
+<p id = "para-29">Embora o samba em si não seja diretamente relacionado ao panteão da Kimbanda, ambos compartilham algumas conexões culturais e históricas. O samba tem suas origens nas comunidades afro-brasileiras e nas tradições culturais dos povos africanos escravizados trazidos ao Brasil, incluindo os povos Bantu e Yoruba. Assim como a Kimbanda, o samba também incorporou elementos das tradições religiosas e culturais brasileiras, como o catolicismo e a música popular.</p>
+<p id = "para-30">Em algumas comunidades afro-brasileiras e em certos contextos, o samba pode ser usado como uma forma de expressão religiosa e espiritual, e pode ser tocado e dançado em cerimônias e rituais. Nesses casos, o samba pode ser visto como uma forma de conexão com os ancestrais e com os espíritos, incluindo as entidades do panteão da Kimbanda.</p>
+<p id = "para-31">Além disso, a música e a dança são elementos importantes em muitas religiões afro-brasileiras, incluindo a Kimbanda, o Candomblé e a Umbanda. O samba de roda, por exemplo, é uma forma de samba que tem uma conexão mais profunda com as tradições religiosas afro-brasileiras e pode ser usado em contextos rituais. É importante notar, no entanto, que o samba de roda está mais diretamente relacionado ao Candomblé do que à Kimbanda.</p>
+<p id = "para-32">Em resumo, embora o samba não seja diretamente relacionado ao panteão da Kimbanda, ele compartilha algumas conexões culturais e históricas com a religião. Em determinados contextos e comunidades, o samba pode ser usado como uma forma de expressão espiritual e pode estar relacionado às entidades e tradições da Kimbanda. No entanto, essa relação é complexa e multifacetada e pode variar dependendo das tradições e crenças específicas de cada comunidade.</p>
+<h2 id = "link-9">detail in pt-br with academic rigor comparing tango and salsa</h2>
+<p id = "para-33">&lt; O tango e a salsa são duas formas distintas de dança e música, originárias de diferentes regiões da América Latina. Ambos têm raízes culturais ricas e complexas e se tornaram populares em todo o mundo. A seguir, apresentarei uma análise acadêmica rigorosa comparando o tango e a salsa, abordando suas origens, características musicais e coreográficas e contextos sociais.</p>
+<p id = "para-34">Origens:</p>
+<p id = "para-35">O tango se originou na Argentina e no Uruguai no final do século XIX, principalmente nas áreas urbanas de Buenos Aires e Montevidéu. Ele nasceu nas comunidades de imigrantes europeus, africanos e crioulos, e foi influenciado por uma variedade de estilos musicais, incluindo a habanera cubana, o candombe afro-uruguaio e a milonga.</p>
+<p id = "para-36">A salsa, por outro lado, tem suas raízes em Cuba e Porto Rico e se desenvolveu a partir de uma combinação de ritmos e estilos musicais, como o son cubano, a rumba, a guaracha e o cha-cha-chá. A salsa também foi influenciada pela música afro-cubana e pelos ritmos caribenhos, como o mambo e o boogaloo.</p>
+<p id = "para-37">Características musicais:</p>
+<p id = "para-38">O tango é caracterizado por um ritmo de 2/4 ou 4/4 e é tocado em um andamento moderado. A instrumentação típica do tango inclui o bandoneon (um tipo de acordeão), violino, piano e contrabaixo. A música do tango é muitas vezes melódica e expressiva, com linhas melódicas sincopadas e uma ênfase na tensão e resolução harmônica.</p>
+<p id = "para-39">A salsa, em contraste, tem um ritmo animado e é tocada em um andamento rápido. A instrumentação da salsa geralmente inclui trompetes, trombones, saxofones, piano, baixo, bongôs, congas, timbales e outros instrumentos de percussão. A música salsa é caracterizada por padrões rítmicos complexos e uma forte ênfase na percussão, com uma estrutura de chamada e resposta entre os instrumentos e os vocais.</p>
+<p id = "para-40">Características coreográficas:</p>
+<p id = "para-41">O tango é uma dança de pares, caracterizada por movimentos elegantes e fluidos, posturas fechadas e conexão íntima entre os dançarinos. A dança inclui caminhadas, giros e movimentos de pernas conhecidos como “ganchos” e “barridas”. O tango também enfatiza a improvisação e a comunicação entre os dançarinos, e cada performance de tango é única.</p>
+<p id = "para-42">A salsa, por outro lado, é uma dança social e alegre, com passos rápidos e movimentos animados de quadris e ombros. A dança pode ser realizada em pares ou em grupos e inclui passos básicos, voltas e padrões de movimentos mais complexos. A salsa é dançada em um ritmo de 8 tempos, com os dançarinos alternando entre passos rápidos e pausas.</p>
+<p id = "para-43">Contextos sociais:</p>
+<p id = "para-44">O tango e a salsa têm diferentes contextos sociais e históricos. O tango era originalmente associado às classes trabalhadoras e aos bordéis das áreas urbanas de Buenos Aires e Montevidéu. No entanto, com o tempo, o tango ganhou popularidade e aceitação entre as classes média e alta, tanto na América Latina quanto na Europa. Hoje, o tango é apreciado como uma forma de arte sofisticada e é praticado em salões de dança e eventos culturais em todo o mundo.</p>
+<p id = "para-45">A salsa, por outro lado, se desenvolveu como uma forma de música e dança popular nas comunidades afro-caribenhas de Cuba e Porto Rico. A salsa foi posteriormente popularizada nos Estados Unidos, especialmente em Nova York, onde foi adotada e adaptada por imigrantes latinos. A salsa é hoje uma dança social praticada em clubes noturnos, festas e eventos comunitários em todo o mundo, e também é uma forma competitiva de dança de salão.</p>
+<p id = "para-46">Em resumo, o tango e a salsa são duas formas distintas de música e dança latino-americanas, com origens, características musicais e coreográficas e contextos sociais diferentes. O tango é originário da Argentina e do Uruguai e é caracterizado por movimentos elegantes e fluidos, improvisação e uma conexão íntima entre os dançarinos. A salsa, por sua vez, tem suas raízes em Cuba e Porto Rico e é caracterizada por passos rápidos, movimentos animados de quadris e ombros e uma forte ênfase na percussão. Ambas as danças têm contribuído para a riqueza e diversidade das tradições de dança e música latino-americanas e são apreciadas em todo o mundo como formas de arte e expressão cultural.</p>
+<h2 id = "link-10">detail in pt-br with academic rigor detailing nuance between tango and milonga</h2>
+<p id = "para-47">&lt; O tango e a milonga são duas formas distintas de dança e música originárias da Argentina e do Uruguai, ambas com raízes culturais ricas e complexas. A seguir, apresentarei uma análise acadêmica rigorosa detalhando as nuances entre o tango e a milonga, abordando suas origens, características musicais e coreográficas e contextos sociais.</p>
+<p id = "para-48">Origens:</p>
+<p id = "para-49">O tango e a milonga compartilham origens semelhantes, sendo ambos desenvolvidos nas áreas urbanas de Buenos Aires e Montevidéu no final do século XIX. As duas danças nasceram nas comunidades de imigrantes europeus, africanos e crioulos e foram influenciadas por uma variedade de estilos musicais, incluindo a habanera cubana, o candombe afro-uruguaio e a música folclórica argentina.</p>
+<p id = "para-50">Características musicais:</p>
+<p id = "para-51">A música do tango é caracterizada por um ritmo de 2/4 ou 4/4 e é tocada em um andamento moderado. A instrumentação típica do tango inclui o bandoneon (um tipo de acordeão), violino, piano e contrabaixo. A música do tango é muitas vezes melódica e expressiva, com linhas melódicas sincopadas e uma ênfase na tensão e resolução harmônica.</p>
+<p id = "para-52">A milonga, por outro lado, é geralmente tocada em um ritmo mais rápido e tem um ritmo mais animado do que o tango. A música da milonga é caracterizada por um ritmo sincopado e repetitivo chamado “habanera”, que é um padrão rítmico de três notas seguido por uma pausa. A instrumentação da milonga é semelhante à do tango, embora possa ser mais simplificada, com ênfase no bandoneon, guitarra e, às vezes, violino.</p>
+<p id = "para-53">Características coreográficas:</p>
+<p id = "para-54">Ambas as danças, tango e milonga, são danças de pares, mas têm diferenças significativas em termos de movimento e estilo. O tango é caracterizado por movimentos elegantes e fluidos, posturas fechadas e conexão íntima entre os dançarinos. A dança inclui caminhadas, giros e movimentos de pernas conhecidos como “ganchos” e “barridas”. O tango também enfatiza a improvisação e a comunicação entre os dançarinos, e cada performance de tango é única.</p>
+<p id = "para-55">A milonga, por outro lado, tem um estilo de dança mais leve e animado, com passos rápidos e mais saltitantes. A milonga também inclui passos típicos, como o traspie, no qual os dançarinos trocam rapidamente o peso do corpo entre os pés. Embora a milonga também envolva improvisação, ela geralmente tem uma estrutura coreográfica mais simples e menos ornamentada do que o tango.</p>
+<p id = "para-56">Contextos sociais:</p>
+<p id = "para-57">Historicamente, o tango e a milonga foram associados a diferentes contextos sociais e culturais. O tango era originalmente associado às classes trabalhadoras e aos bordéis das áreas urbanas de Buenos Aires e Montevidéu. No entanto, com o tempo, o tango ganhou popularidade e aceitação entre as classes média e alta, tanto na América Latina quanto na Europa. Hoje, o tango é apreciado como uma forma de arte sofisticada e é praticado em salões de dança e eventos culturais em todo o mundo.</p>
+<p id = "para-58">A milonga, por sua vez, tem suas raízes nas tradições rurais e nas músicas folclóricas da Argentina e do Uruguai. Originalmente, a milonga era associada a eventos sociais e comunitários, como celebrações e encontros em áreas rurais e suburbanas. Com o tempo, a milonga também se infiltrou nas áreas urbanas e se fundiu com o tango e outras formas de música e dança locais.</p>
+<p id = "para-59">Nas últimas décadas, a milonga também passou a ser conhecida como um evento social onde as pessoas se reúnem para dançar o tango e a milonga, bem como outras danças relacionadas, como a vals criolla (um tipo de valsa). Esses eventos, chamados “milongas”, ocorrem em salões de dança, clubes e outros espaços comunitários e são caracterizados por um ambiente descontraído e animado, onde os dançarinos se revezam para dançar com diferentes parceiros ao longo da noite.</p>
+<p id = "para-60">Em resumo, o tango e a milonga são duas formas distintas de música e dança originárias da Argentina e do Uruguai, com diferenças significativas em termos de estilo, ritmo e contexto social. O tango é caracterizado por movimentos elegantes e fluidos e uma conexão íntima entre os dançarinos, enquanto a milonga tem um estilo de dança mais leve e animado, com passos rápidos e mais saltitantes. A milonga também tem suas raízes nas tradições rurais e nas músicas folclóricas da Argentina e do Uruguai e, ao longo do tempo, evoluiu para se tornar uma dança popular em eventos sociais conhecidos como “milongas”, onde as pessoas se reúnem para dançar e se divertir em um ambiente descontraído e animado.</p>
+<h2 id = "link-11">detail in pt-br how ganggangsullae works</h2>
+<p id = "para-61">&lt; Ganggangsullae é uma dança tradicional coreana que remonta ao período da dinastia Joseon (1392-1897). É uma dança circular realizada principalmente por mulheres durante festivais e celebrações, como o Chuseok, que é uma festa de colheita coreana. Ganggangsullae é conhecida por seu significado cultural e histórico e por ser uma expressão alegre e comunitária.</p>
+<p id = "para-62">Características e estrutura da dança:</p>
+<p id = "para-63">Ganggangsullae consiste em uma série de movimentos e formações coreografados, realizados em círculos concêntricos. As dançarinas se dão as mãos ou seguram as roupas umas das outras enquanto movem-se em círculo, geralmente no sentido horário. A dança tem um ritmo lento e constante, com passos simples que são repetidos ao longo da música.</p>
+<p id = "para-64">A dança começa com a líder do grupo (chamada “sobe”) cantando uma canção chamada “jangdan”, que estabelece o ritmo e o tom para a dança. As outras dançarinas respondem em uníssono, criando uma estrutura de chamada e resposta. À medida que a dança progride, a música acelera, e os movimentos das dançarinas se tornam mais animados e energéticos.</p>
+<p id = "para-65">Além dos movimentos circulares, Ganggangsullae também inclui uma variedade de formações e padrões coreográficos, como fileiras, colunas e espirais. As dançarinas também podem realizar movimentos acrobáticos, como saltos e giros, enquanto dançam.</p>
+<p id = "para-66">Significado cultural e histórico:</p>
+<p id = "para-67">Ganggangsullae tem uma rica história cultural e desempenhou um papel importante na sociedade coreana ao longo dos séculos. Acredita-se que a dança tenha sido usada originalmente como um ritual xamânico para orar por uma colheita abundante e afastar os maus espíritos.</p>
+<p id = "para-68">Durante o período da dinastia Joseon, Ganggangsullae também adquiriu um significado político e militar. Reza a lenda que a dança foi usada como uma estratégia de guerra durante a invasão japonesa da Coreia em 1592. As mulheres vestiam-se com uniformes militares e realizavam a dança à noite para enganar os invasores japoneses, fazendo-os pensar que as forças coreanas eram muito maiores do que realmente eram.</p>
+<p id = "para-69">Hoje, Ganggangsullae é apreciada como uma forma de arte folclórica e uma expressão de identidade e tradição cultural coreanas. A dança é ensinada nas escolas e realizada em eventos culturais e festivais em toda a Coreia. Em 2009, a Ganggangsullae foi inscrita na lista do Patrimônio Cultural Imaterial da UNESCO, destacando sua importância como uma tradição cultural viva e significativa.</p>
+<h2 id = "link-12">detail in pt-br the three main dances from madagascar</h2>
+<p id = "para-70">&lt; Madagascar, uma ilha localizada no Oceano Índico, possui uma rica tradição cultural e uma história única devido à sua mistura de influências africanas, asiáticas e europeias. A música e a dança desempenham um papel importante na vida cotidiana e nas celebrações em Madagascar, e o país possui várias danças tradicionais. Vamos explorar três das principais danças de Madagascar:</p>
+<p id = "para-71">Afindrafindrao: A Afindrafindrao é uma dança tradicional de Madagascar, originária das terras altas centrais da ilha. A dança é frequentemente associada à tradição Merina, um dos maiores grupos étnicos de Madagascar. A Afindrafindrao é geralmente realizada durante cerimônias de casamento, festivais e outras celebrações.</p>
+<p id = "para-72">A dança é realizada por pares de homens e mulheres vestidos com trajes tradicionais coloridos. Os dançarinos se movem em passos coordenados, realizando movimentos graciosos e fluidos. Os movimentos são acompanhados por música, geralmente tocada por uma banda composta por instrumentos como a valiha (um tipo de cítara tubular feita de bambu) e o kabosy (um pequeno instrumento de cordas semelhante ao violão).</p>
+<p id = "para-73">Salegy: O Salegy é uma dança e estilo musical popular originário da região costeira noroeste de Madagascar. O Salegy tem suas raízes na música tradicional de Madagascar, mas também incorpora elementos da música moderna e ocidental, como o rock e o pop. A dança é conhecida por seu ritmo animado e contagiante e é frequentemente realizada em festas, clubes e eventos culturais.</p>
+<p id = "para-74">A dança Salegy envolve movimentos rápidos e enérgicos, com muita ênfase nos quadris e ombros. Os dançarinos se movem individualmente ou em grupos, seguindo o ritmo da música. A música Salegy é caracterizada por um ritmo sincopado e repetitivo, geralmente tocado por instrumentos de percussão, guitarra elétrica e teclados.</p>
+<p id = "para-75">Hira Gasy: O Hira Gasy, também conhecido como “ópera malgaxe”, é uma forma de teatro musical e dança originária das terras altas centrais de Madagascar. O Hira Gasy tem raízes na tradição Merina e é realizado por grupos itinerantes de artistas que viajam pelas aldeias e cidades, apresentando histórias e narrativas com música, dança e oratória.</p>
+<p id = "para-76">A dança Hira Gasy é caracterizada por movimentos acrobáticos, saltos e giros, e é realizada por homens e mulheres vestidos com trajes tradicionais coloridos. A música Hira Gasy é tocada por uma banda composta por instrumentos como a valiha, o kabosy e a percussão. As performances de Hira Gasy também incluem elementos de sátira política e social, poesia e canto.</p>
+<p id = "para-77">Essas três danças, Afindrafindrao, Salegy e Hira Gasy, são apenas algumas das muitas formas de expressão cultural e artística presentes em Madagascar. Cada uma delas reflete aspectos únicos da história, tradições e influências culturais.</p>
+<h2 id = "link-13">detail in pt-br the dance from fiji that could be considered more promiscuous</h2>
+<p id = "para-78">&lt; A dança Meke, originária das ilhas Fiji, é uma forma tradicional de dança e música que pode ser realizada de maneira mais expressiva e, em alguns casos, até mesmo considerada mais “promíscua” quando comparada a outras danças da região. A Meke combina movimentos de dança e narração de histórias, celebrando a história, a cultura e as lendas das ilhas Fiji.</p>
+<p id = "para-79">A Meke é dividida em duas partes principais: a primeira é chamada de “wese”, que consiste no canto e na narração de histórias, enquanto a segunda parte é chamada de “vate”, que é a parte da dança. A dança Meke é realizada tanto por homens quanto por mulheres, geralmente em grupos separados por gênero.</p>
+<p id = "para-80">Os movimentos de dança na Meke variam de acordo com a história ou o tema que está sendo retratado. Em algumas apresentações, os dançarinos podem incorporar movimentos mais sensuais e expressivos, como o uso exagerado dos quadris e movimentos corporais sugestivos. Essas danças são consideradas mais promíscuas em comparação com outras formas mais conservadoras de dança das ilhas Fiji.</p>
+<p id = "para-81">No entanto, é importante observar que a dança Meke, em geral, não é inerentemente promíscua. A dança é uma forma de expressão artística e cultural que celebra a rica herança das ilhas Fiji e sua diversidade. Os movimentos de dança e a intensidade das performances podem variar dependendo do contexto e da história específica que está sendo compartilhada.</p>
+<p id = "para-82">Portanto, embora algumas apresentações de Meke possam ser consideradas mais promíscuas do que outras, a dança em si é uma celebração da cultura e da tradição das ilhas Fiji e não deve ser reduzida a um único aspecto de sua expressão.</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

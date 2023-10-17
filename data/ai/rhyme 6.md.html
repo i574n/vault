@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p id = "para-1">rhyme scheme stretching in latent space (AAAAA ABBB BBCC ?????)</p>
+<p id = "para-2">hint: give no care ’bout who you fuck, she know I’m a gangster (en-us)</p>
+<p id = "para-3">I know you slime, I know you ain’t lackin’, you violent them niggas ran down on yo’ homie, now you slidin’ if I don’t pick up when you call, you gon’ be wildin’ but, I just pray you make it home</p>
+<p id = "para-4">ayy, yo, and we still on that get-back poppin’ chains, don’t give shit back backshots get that grip back, go down, get yo’ lick back real niggas don’t play with a bad bitch, he ain’t finna risk that soon as I give it to him, he finna get my name on his next tat’</p>
+<p id = "para-5">go against me, where your suicide letter? bitch wanna kill theyself, then I let her soon as he say it’s go-time, I get her told that bitch, “Bow down,” when I met her</p>
+<p id = "para-6">you a amateur, ho, I’m in the league point guard, tongue out, oh, look at the speed I don’t lick the rims on shots, I all net her jumpshot wetter, NBA better</p>
+<p id = "para-7">hint: I want the hood to want me back, look what I done for you (en-us)</p>
+<p id = "para-8">I seen the pain in your pupil when that trigger had squeezed and though you did me gruesome, I was surely relieved I completed my mission, wasn’t ready to leave but fulfilled my days, my Creator was pleased</p>
+<p id = "para-9">I can’t stress how I love y’all I don’t need to be in flesh just to hug y’all the memories recollect just because y’all celebrate me with respect the unity we protect is above all</p>
+<p id = "para-10">and Sam, I’ll be watchin’ over you make sure my kids watch all my interviews make sure you live out our dreams we produced keep that genius in your brain on the move</p>
+<p id = "para-11">and to my neighborhood, let the good prevail make sure them babies and the leaders outta jail look for salvation when troubles get real cause you can’t help the world until you help yourself</p>
+<p id = "para-12">and I can’t blame the hood the day that I was killed y’all had to see it, that’s the only way to feel and though my physical won’t reap the benefits the energy that carry on emits still</p>
+<p id = "para-13">hint: last year I died but this year I won’t die (pt-br)</p>
+<p id = "para-14">figurinha premiada, brilho no escuro desde a quebrada avulso de gorro, alto do morro e os camarada tudo de peça no forro e os piores impulsos</p>
+<p id = "para-15">só eu e Deus sabe o que é num ter nada, ser expulso ponho linhas no mundo, mas já quis pôr no pulso sem o torro, nossa vida não vale a de um cachorro, triste “hoje cedo” não era um hit, era um pedido de socorro</p>
+<p id = "para-16">mano, rancor é igual um tumor, envenena a raiz onde a plateia só deseja ser feliz (ser feliz) com uma presença aérea onde a última tendência é depressão com aparência de férias</p>
+<p id = "para-17">vovó diz: odiar o diabo é mó boi difícil é viver no inferno, e vem à tona que o “memo” império canalha que não te leva a sério interfere pra te levar à lona</p>
+<p id = "para-18">hint: craziest mermaid of the sea (pt-br)</p>
+<p id = "para-19">bag de Jesus Christ salve meu tio, Tião tô levando minha vida na light pisciano tranquilão</p>
+<p id = "para-20">ela é Mad Max gasolina teu namorado é mó cuzão é por isso que ela pega mina vai sentando com o bundão no chão</p>
+<p id = "para-21">o quê que você quer, Regina? quase que eu te amo, opa acho que era dopamina joga esse bundão, cretina</p>
+<p id = "para-22">supra, supra hype me conhece de outras rua te conheço de outras vida ela quer me dar alguma coisa, toda linda nada feito, eu vim de Sepetiba</p>
+<p id = "para-23">hint: the things that shaped me, and I don’t like to reminisce (en-us)</p>
+<p id = "para-24">when you high as me you get highly critiqued hopped on a beat, purposefully soundin’ like nine-three none quite like me, so haters can S-M-D when they bitter like black licorice, my life still sweet</p>
+<p id = "para-25">I went for the cash grab, crack cash was my math class fresh white tee, two diamond crosses, look like a hashtag news is fake, never knew I’d soon relate to Tom Brady goin’ for seven in Tampa Bay</p>
+<p id = "para-26">it’s that crazy, I ain’t never been bothered, that bothered you you ain’t born for this shit, bein’ great is too hard for you that’s a hater problem, they try to say it first what you might say about ‘em why you stuck in the past? I stay vibin’</p>
+<p id = "para-27">can’t just reminisce only, gotta live in the moment talked my shit at the MOMA with The Weeknd performin’ I’m chosen got off the big Boeing in Rick Owens Rick owe us, peep how different it look on us</p>
+<p id = "para-28">hint: dark and violent world of power struggles (en-us)</p>
+<p id = "para-29">but I tried to stay wide awake coud u might be found dead by the lake soon as you let me bound to sleep bitch so long ima try to take play for lite today rite to way why do they try to fight today i must make them pay twice as much mite as well put the knife away</p>
+<p id = "para-30">now I use power tools how bout now why u in the shower scower u for 6 hours till ill teach you power outlets how did ya figure out I was down in your basement now ya musta just heard the sound of my stomach growlin from down there</p>
+<p id = "para-31">positive theres no one fowla down here thats how they found ya face down in the tub I drown you with powtha down as around ya such a style that impowers such powers look how you cower jumped out on you now like I was a jaawa from fuckn star wars</p>
+<p id = "para-32">jabba the hut be de ba ba be de ba ba its time to die die aught to not even botha to scream it dont even matta amazing when raising skin with these razor blades he raves at ya not ya everyday damien bathe me holy water</p>
+<p id = "para-33">notin like somethin to say so please undastand theres no runnin him wheres the thrill in a hunt theres no fun in that here I come wit axe once I act like lumberjack when im hackin him up with that what was that dial 911 someone is comin in from the back</p>
+<p id = "para-34">hint: ? ()</p>
+<p id = "para-35">click</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

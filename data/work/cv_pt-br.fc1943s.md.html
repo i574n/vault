@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h1 id = "link-1"></h1><p id = "para-1"><a href = "https://github.com/fc1943s">https://github.com/fc1943s</a><br />
+<a href = "mailto:fc1943s@gmail.com">fc1943s@gmail.com</a><br />
+<a href = "https://linkedin.com/in/fc1943s">https://linkedin.com/in/fc1943s</a><br />
++55 11 97891 3198</p>
+<p id = "para-2">* O texto deste documento foi gerado usando o ChatGPT da OpenAI.</p>
+<h2 id = "link-2">EXPERIÊNCIA PROFISSIONAL</h2>
+<p id = "para-3"><b>Opção Virtual</b><br />
+Jan 2022 – Ago 2022<br />
+Engenheiro de Dados</p>
+<p id = "para-4">Trabalhou em um projeto para analisar o comportamento do cliente e prever tendências de vendas usando diversas fontes de dados, realizando experimentos no Google Colab para cálculos eficientes. Utilizou Elixir e Ecto para extrair dados de bancos de dados Oracle e os pré-processou usando o Explorer, armazenando-os em formato Parquet para análise eficiente. Utilizou NVTabular e pandas para preparação de dados, fast.ai e PyTorch para otimizar modelos de machine learning, e Vega-Lite para criar visualizações interativas no Livebook e Phoenix.</p>
+<p id = "para-5">Tecnologias utilizadas: Elixir, Livebook, Ecto, Explorer, Phoenix, Vega-Lite, Oracle, Parquet, Python, PyTorch, fast.ai, NVTabular, pandas, Colab.</p>
+<p id = "para-6"><b>BairesDev</b><br />
+Ago 2020 – Mar 2021<br />
+Engenheiro de Frontend</p>
+<p id = "para-7">Liderou o desenvolvimento frontend de um simulador de hipotecas voltado para o cliente e a arquitetura inicial de uma reescrita frontend de um ERP interno de hipotecas SaaS para uma startup americana. Participou de reuniões remotas de Scrum que foram conduzidas em inglês em uma equipe multi-fuso horário. A implementação foi baseada em React funcional e a interface foi construída usando Chakra UI. A aplicação incluiu funcionalidade complexa de auto-salvamento, proteção de informações sensíveis do cliente e gráficos interativos com cálculos de preços usando sliders e campos de entrada. Os mockups de tela foram criados usando Sketch e Figma e estavam disponíveis através do InVision. A lógica frontend foi gerada usando arquivos TypeScript das classes de modelo de negócios do backend em C# e foi documentada usando Storybook. As aplicações foram desenvolvidas com suporte completo para temas claros e escuros e incluíam testes unitários com Jest e testes de integração com Cypress. O gerenciamento de estado foi construído usando Recoil.js e o fluxo de envio e recebimento de dados foi construído usando SWR e Axios. As aplicações e pacotes frontend foram organizados usando Lerna em um monorepositório da empresa.</p>
+<p id = "para-8">Tecnologias utilizadas: TypeScript, React, Recoil.js, Chakra UI, airbnb/visx, d3, Jest, Cypress, InVision, Storybook, Lerna, Scrum, REST, JWT, ASP.NET Core, C#, BitBucket, NSwag, Git.</p>
+<p id = "para-9"><b>BTG Pactual</b><br />
+Mai 2020 – Jul 2020<br />
+Engenheiro de Software</p>
+<p id = "para-10">Trabalhou na unidade de risco de crédito desenvolvendo o sistema de negociação que emite empréstimos solicitados pelos clientes do banco. Auxiliou na reescrita do algoritmo gerador de fluxo de caixa na interface para suportar um novo tipo de cronograma de amortização e desenvolveu uma ingestão massiva de dados a partir de um modelo de Excel. Também colaborou na criação de novos algoritmos de testes e2e para a arquitetura do backend usando xUnit e a funcionalidade InMemory da biblioteca MassTransit (RabbitMQ). O backend armazenava dados no SQL Server com NHibernate e utilizava PostgreSQL, fornecendo dados através de OData e JSON, consumidos pela interface com componentes DevExpress. Trabalhou remotamente seguindo a metodologia Scrum e o pipeline de CI já estava configurado.</p>
+<p id = "para-11">Tecnologias utilizadas: Angular, ASP.NET Core, AWS, Azure DevOps, C#, CQRS, DDD, DevExpress, Git, NgRx, NHibernate, OData, PostgreSQL, RabbitMQ, Scrum, SQL Server, TypeScript.</p>
+<p id = "para-12"><b>HBSIS / Ambev</b><br />
+Nov 2016 – Ago 2018<br />
+Arquiteto de Software Sênior</p>
+<p id = "para-13">Desenvolveu a arquitetura do gerenciador de frota de veículos da Ambev para as unidades de distribuição em âmbito nacional. O projeto foi uma reescrita de um aplicativo antigo que não suportava o número de solicitações simultâneas nas manhãs e finais de tarde. Foi responsável pelo backend e pelos pipelines de DevOps, que incluíam configuração e monitoramento de cluster Docker, hospedado localmente com o parceiro de nuvem privada da Ambev. A arquitetura não tinha elasticidade, então o foco foi no gerenciamento do ciclo de vida para garantir clusters simultâneos de diferentes projetos operando com separação de ambiente adequada. Os scripts foram inicialmente escritos em bash, mas depois reestruturados em um projeto CLI Node.js que interagia com a API Docker através de solicitações HTTP assíncronas. O CLI era usado em máquinas de desenvolvedores e pelo Jenkins para facilitar o deploy da aplicação entre diferentes clusters Docker.</p>
+<p id = "para-14">Tecnologias utilizadas: Docker, Linux, C#, ASP.NET Core, Entity Framework Core, PostgreSQL, TypeScript, Angular, Node.js, CQRS, DDD, Jenkins DSL, Git, Grafana, Prometheus, Scrum.</p>
+<p id = "para-15"><b>Evolucional</b><br />
+Jun 2016 – Nov 2016<br />
+Engenheiro de Software Sênior</p>
+<p id = "para-16">Como engenheiro full-stack, trabalhou no produto central da empresa, que era uma plataforma de teste de simulação para estudantes preverem suas notas no exame nacional de ingresso na universidade (ENEM). Participou tanto do frontend quanto do backend, incluindo a UI para os estudantes realizarem o teste e a lógica de negócios que calculava suas notas utilizando o modelo matemático de teoria de resposta ao item. Também trabalhou em uma pequena aplicação que analisava imagens digitalizadas de testes. Seguiu a metodologia Scrum e colaborou com uma talentosa equipe de designers de frontend, hospedando em instâncias AWS EC2 e armazenando imagens no S3. Os algoritmos para extração de dados foram implementados em serviços ASP.NET MVC, com resultados de cálculos armazenados em cache no Redis para relatórios rápidos.</p>
+<p id = "para-17">Tecnologias utilizadas: C#, Entity Framework, SQL Server, Redis, JavaScript, AngularJS, HTML, CSS, AWS.</p>
+<p id = "para-18"><b>ESX</b><br />
+Jan 2016 – Jun 2016<br />
+Engenheiro de Aplicações Móveis</p>
+<p id = "para-19">Como parte de uma equipe de três desenvolvedores, desenvolveu um aplicativo móvel do zero até a produção para uma grande empresa de seguro saúde. O aplicativo fornecia aos clientes acesso ao seu plano atual, tickets de suporte, localizações de consultas médicas, contas mensais e mais. Possuía autenticação interna e suporte para login no Facebook. Esteve envolvido tanto no frontend quanto no backend, e o app foi publicado tanto na Play Store quanto na Apple Store. Participou de reuniões presenciais de Scrum, incluindo planejamento, retrospectivas e revisões com o cliente, que atuava como o proprietário do produto. O backend era uma aplicação ASP.NET MVC que servia como uma API REST para o aplicativo móvel, conectando-se a um banco de dados SQL Server alimentado por outro grande projeto. O frontend foi construído utilizando AngularJS v1 para estruturação e OnsenUI com SASS para componentes, com o Apache Cordova encapsulando o código JS para responsividade.</p>
+<p id = "para-20">Tecnologias utilizadas: JavaScript, Apache Cordova, AngularJS, HTML, CSS, C#, ASP.NET MVC, Entity Framework, SQL Server, BDD, Git, OnsenUI, SASS, Scrum.</p>
+<p id = "para-21"><b>Opção Virtual</b><br />
+Abr 2012 – Dez 2015<br />
+Arquiteto de Software Sênior</p>
+<p id = "para-22">Durante os primeiros seis meses, desenvolveu um aplicativo Android nativo para pontos de venda, integrando com o principal produto ERP da empresa. O backend foi escrito em Java e compartilhava código de negócios com o aplicativo Android. Também trabalhou na solução ERP, concentrando-se em arquitetura e DevOps. Implementou o Git em toda a empresa e orientou a equipe até que se sentissem confortáveis com isso. Também implementou metodologias Scrum e configurou o Jira para a equipe. O ERP era uma grande aplicação desktop usada por centenas de empresas, compartilhando código entre Delphi e C#, apresentando desafios importantes para a integração contínua, incluindo a atualização de binários para todos os clientes. Desenvolveu uma solução para atualizar automaticamente o produto para cada cliente, rastreando versões para diagnóstico.</p>
+<p id = "para-23">Tecnologias utilizadas: Android, C#, Continuous Integration, Delphi, DevExpress, Git, Java, Jira, Maven, Oracle, SVN.</p>
+<p id = "para-24"><b>H7 Tecnologia da Informação</b><br />
+Ago 2011 – Abr 2012<br />
+Engenheiro de Software</p>
+<p id = "para-25">Trabalhou principalmente no desenvolvimento de backend para sites usando PHP e Zend Framework. Os sites variavam de aplicações de uma única página a sistemas completos com ferramentas de administração personalizadas, atendendo aos clientes existentes do ERP. Com designers prototipando os layouts no Photoshop, o foco no frontend era traduzir as imagens em uma estrutura compatível com os endpoints de backend.</p>
+<p id = "para-26">Tecnologias utilizadas: CSS, HTML, JavaScript, jQuery, MySQL, PHP, SQLite, SVN, Visual Basic.</p>
+<p id = "para-27"><b>HE Sistemas Empresariais</b><br />
+Dez 2010 – Jun 2011<br />
+Engenheiro de Software</p>
+<p id = "para-28">Desenvolveu um site para um dos clientes do ERP da empresa que se integrava ao ERP através de APIs REST, sincronizando informações de produtos como preços e imagens. Também corrigiu problemas no ERP escrito em Visual Basic e em um aplicativo de ponto de venda para Windows Phone escrito em C#.</p>
+<p id = "para-29">Tecnologias utilizadas: JavaScript, jQuery, HTML, CSS, MySQL, PHP, SQLite, SVN, Visual Basic, C#.</p>
+<p id = "para-30"><b>Interactive Studio Web</b><br />
+Ago 2007 – Mar 2008<br />
+Desenvolvedor Web</p>
+<p id = "para-31">Desenvolveu o backend em PHP para sites em Flash e parte do código ActionScript do frontend. Os sites eram altamente interativos e animados, e os clientes variavam de lojas de móveis a cantores de música sertaneja.</p>
+<p id = "para-32">Tecnologias utilizadas: ActionScript, Flash, PHP.</p>
+<h2 id = "link-3">EXPERIÊNCIA INDEPENDENTE</h2>
+<p id = "para-33"><b>Spiral Wasm Template</b><br />
+Mai 2022 – Jan 2023<br />
+<a href = "https://github.com/fc1943s/tictactoe/blob/main/lib_spi/client/client.rs">https://github.com/fc1943s/tictactoe/blob/main/lib_spi/client/client.rs</a></p>
+<p id = "para-34">Trabalhou em um template que utiliza Rust para construir uma plataforma web de alta performance.</p>
+<p id = "para-35">Tecnologias utilizadas: Spiral, F#, Fable, Rust, Dominator, WebAssembly, Playwright, Bun, Vite.</p>
+<p id = "para-36"><b>Mecha Haze</b><br />
+Ago 2018 – Abr 2020<br />
+<a href = "https://github.com/fc1943s/mechahaze">https://github.com/fc1943s/mechahaze</a></p>
+<p id = "para-37">Neste projeto teve a oportunidade de aplicar novas tecnologias como programação funcional e aprender os conceitos básicos de aprendizado profundo. O projeto foi escrito em F#, exceto pelo código da rede neural que foi escrito em Python. O resultado final foi uma representação em vídeo de qualquer música baseada em BPM, com parâmetros totalmente personalizáveis, como formas e cores ligadas a características como volume, tom, notas e melodias. A rede neural foi treinada novamente usando transfer learning com um conjunto de dados personalizado de amigos produtores musicais. Cada camada das músicas (bateria, sintetizadores e vocais) foi treinada separadamente e transformada em metadados para renderização.</p>
+<p id = "para-38">A aplicação foi projetada para funcionar em tempo real, com três microserviços trabalhando juntos - um processo de escuta de áudio que ouve a saída de áudio global do dispositivo, um backend que recebe comandos do frontend e atualiza o estado do cluster usando mensagens RabbitMQ, e um processo de despacho de características que renderiza a representação visual da música detectada no Resolume Arena. O frontend foi escrito em React e F# e utilizou Elmish, um padrão semelhante ao Redux, para gerenciar o estado compartilhado. A comunicação entre o frontend e o backend era através de WebSockets, onde o frontend recebia a posição atual da música em milissegundos. Cada camada de áudio podia ser conectada a características de som interativamente através de um componente chamado react-diagrams. O frontend foi construído para funcionar em navegadores e podia ser empacotado usando Electron para otimizações.</p>
+<p id = "para-39">Tecnologias utilizadas: F#, RabbitMQ, React, Bulma, LMDB, OSC, peaks.js, plotly.js, Python, PyTorch, Resolume Arena, Git.</p>
+<p id = "para-40"><b>Desenvolvimento Web Freelance</b><br />
+Mar 2008 – Nov 2012</p>
+<p id = "para-41">Trabalhou como desenvolvedor web freelance, onde desenvolveu principalmente o backend e o frontend de sites que já haviam sido projetados por um amigo. Também trabalhou diretamente com clientes no design e prototipagem de alguns sites.</p>
+<p id = "para-42">Tecnologias utilizadas: CSS, HTML, JavaScript, jQuery, MySQL, PHP, SQLite, Zend Framework.</p>
+<h2 id = "link-4">CURSOS &amp; TREINAMENTOS</h2>
+<p id = "para-43"><b>Fast.ai</b><br />
+Practical Deep Learning for Coders (v1, v2, v3), 2019</p>
+<p id = "para-44"><b>Coursera</b><br />
+Learning How to Learn, 2019<br />
+Mindshift, 2019</p>
+<h2 id = "link-5">EDUCAÇÃO</h2>
+<p id = "para-45"><b>Anhanguera Educacional</b><br />
+Bacharelado em Sistemas de Informação, 2014</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

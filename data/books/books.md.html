@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">detail in pt-br how to restore old dusty books, a hair dryer blowing hot ait didn’t work</a></li>
+      <li><a href="#link-2">detail item 7 with the whole range of possible products using the metric system</a></li>
+      <li><a href="#link-3">list a few forbidden texts</a></li>
+      <li><a href="#link-4">make a bullet list with the relevant spans, also containing things like religious texts. group by year-level time span (each item with year and nature)</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">detail in pt-br how to restore old dusty books, a hair dryer blowing hot ait didn’t work</h2>
+<p id = "para-1">&lt; Restaurar livros antigos e empoeirados requer cuidado e paciência. O uso de um secador de cabelo com ar quente não é recomendado, pois pode danificar ainda mais o livro. Siga os passos abaixo para limpar e restaurar livros antigos com segurança:</p>
+<ol>
+<li><p id = "para-2">Prepare o local de trabalho: Escolha um local bem iluminado e limpo para trabalhar. Cubra a superfície de trabalho com uma toalha ou pano limpo que não solte fiapos.</p>
+</li>
+<li><p id = "para-3">Use luvas de algodão: Para evitar danos adicionais às páginas e capas do livro, use luvas de algodão ou nitrilo antes de manuseá-lo.</p>
+</li>
+<li><p id = "para-4">Remova o pó superficial: Use um pincel de cerdas macias, como um pincel de pintura ou pincel de maquiagem limpo, para remover cuidadosamente a poeira da capa e das páginas do livro. Faça movimentos suaves do centro para a borda do livro, tomando cuidado para não rasgar as páginas.</p>
+</li>
+<li><p id = "para-5">Limpeza das páginas: Se as páginas estiverem muito sujas, use uma borracha branca ou um esfuminho de limpeza de arte para remover manchas e sujeira. Esfregue suavemente a borracha ou o esfuminho sobre as manchas, em seguida, use o pincel para remover os resíduos.</p>
+</li>
+<li><p id = "para-6">Limpeza da capa: Se a capa do livro for de tecido, use uma esponja levemente umedecida com água e um pouco de detergente neutro para limpar suavemente a sujeira. Se a capa for de couro, use um pano macio e umedecido com água e álcool isopropílico na proporção de 1:1 para limpar a superfície. Seque completamente com um pano limpo e seco.</p>
+</li>
+<li><p id = "para-7">Reparar rasgos e danos: Use fita adesiva de papel japonês e cola de metilcelulose para reparar rasgos e danos nas páginas e na capa. Aplique a cola na fita e cole-a no rasgo, alisando-a cuidadosamente com uma espátula.</p>
+</li>
+<li><p id = "para-8">Remova odores: Se o livro tiver um odor desagradável, coloque-o dentro de uma caixa plástica hermética com um pouco de bicarbonato de sódio, carvão ativado ou giz branco. Feche a caixa e deixe o livro lá por alguns dias, verificando regularmente o odor.</p>
+</li>
+<li><p id = "para-9">Armazenamento adequado: Após a limpeza e restauração, armazene o livro em um local fresco, seco e longe da luz direta do sol. Utilize estantes e capas protetoras para manter o livro seguro e em boas condições.</p>
+</li>
+</ol>
+<p id = "para-10">Lembre-se de que, em caso de livros extremamente danificados ou de valor inestimável, é recomendável consultar um profissional de conservação e restauração para garantir a melhor abordagem.</p>
+<h2 id = "link-2">detail item 7 with the whole range of possible products using the metric system</h2>
+<p id = "para-11">&lt; O item 7 descreve a remoção de odores desagradáveis dos livros. Aqui está uma descrição detalhada dos produtos mencionados e suas quantidades no sistema métrico:</p>
+<ol>
+<li><p id = "para-12">Bicarbonato de sódio: Espalhe uma camada de 5 a 10 milímetros de bicarbonato de sódio na base de uma caixa plástica hermética grande o suficiente para acomodar o livro. Coloque o livro aberto sobre uma folha de papel manteiga ou papelão, para evitar o contato direto com o bicarbonato de sódio, e coloque-o dentro da caixa. Feche bem a caixa e deixe o livro por 2 a 7 dias, verificando o odor regularmente. Se necessário, repita o processo com bicarbonato de sódio novo.</p>
+</li>
+<li><p id = "para-13">Carvão ativado: Coloque 50 a 100 gramas de carvão ativado em um recipiente aberto ou saquinho de tecido poroso, como musselina, e coloque-o dentro da caixa plástica hermética junto com o livro. O carvão ativado absorverá os odores sem entrar em contato direto com o livro. Feche a caixa e deixe o livro por 2 a 7 dias, verificando o odor regularmente. Se necessário, repita o processo com carvão ativado novo.</p>
+</li>
+<li><p id = "para-14">Giz branco: Disponha 10 a 20 pedaços de giz branco na base da caixa plástica hermética. Coloque o livro aberto sobre uma folha de papel manteiga ou papelão, para evitar contato direto com o giz, e coloque-o dentro da caixa. Feche bem a caixa e deixe o livro por 2 a 7 dias, verificando o odor regularmente. Se necessário, repita o processo com giz novo.</p>
+</li>
+</ol>
+<p id = "para-15">Ao usar qualquer uma dessas opções, certifique-se de que a caixa plástica hermética esteja bem fechada para garantir a eficácia do processo de desodorização. Além disso, verifique o livro regularmente para ter certeza de que o odor está diminuindo e que não há danos causados pelo contato com os produtos. Lembre-se de que, em caso de livros extremamente danificados ou de valor inestimável, é recomendável consultar um profissional de conservação e restauração para garantir a melhor abordagem.</p>
+<p class = "rule">***</p>
+<h2 id = "link-3">list a few forbidden texts</h2>
+<p id = "para-16">&lt; Here are a few examples of forbidden texts:</p>
+<ol>
+<li><p id = "para-17">The Satanic Verses by Salman Rushdie: This novel was banned in many countries due to its perceived blasphemy and its depiction of the Islamic prophet Muhammad.</p>
+</li>
+<li><p id = "para-18">Mein Kampf by Adolf Hitler: This political manifesto, which outlines Hitler’s ideology and plans for the Nazi party, was banned in Germany after World War II and is still restricted in some countries due to its association with the Holocaust.</p>
+</li>
+<li><p id = "para-19">The Communist Manifesto by Karl Marx and Friedrich Engels: This political pamphlet, which outlines the principles of communism, was banned in many countries during the 20th century due to its association with the political ideology.</p>
+</li>
+<li><p id = "para-20">The Diary of Anne Frank: This personal diary, written by a Jewish girl during the Holocaust, was banned in some countries due to its depiction of the atrocities committed during the war.</p>
+</li>
+<li><p id = "para-21">The Anarchist Cookbook by William Powell: This book, which contains instructions on making bombs and other weapons, was banned in some countries due to its potential use by terrorists.</p>
+</li>
+</ol>
+<p id = "para-22">These are just a few examples of forbidden texts, and the reasons for their censorship or restriction can vary widely, ranging from political or religious objections to concerns about safety or national security. In many cases, such books are banned or restricted to protect the interests of a particular group or to maintain social order.</p>
+<h2 id = "link-4">make a bullet list with the relevant spans, also containing things like religious texts. group by year-level time span (each item with year and nature)</h2>
+<p id = "para-23">&lt; Here is a bullet list of the most relevant time spans in documented fiction, grouped by year-level time span:</p>
+<ul>
+<li><p id = "para-24">Pre-8th century BCE:</p>
+<ul>
+<li><p id = "para-25">Ancient Greek epic poems such as the “Iliad” and the “Odyssey”</p>
+</li>
+<li><p id = "para-26">Ancient Indian epic “Mahabharata”</p>
+</li>
+<li><p id = "para-27">Ancient Egyptian “Tales of the Shipwrecked Sailor”</p>
+</li>
+<li><p id = "para-28">Sumerian Epic of Gilgamesh</p>
+</li>
+<li><p id = "para-29">Hindu Vedas and Puranas</p>
+</li>
+<li><p id = "para-30">Chinese classical novels such as “Romance of the Three Kingdoms”</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-31">8th century BCE - 18th century CE:</p>
+<ul>
+<li><p id = "para-32">Hindu epic “Ramayana”</p>
+</li>
+<li><p id = "para-33">Chinese classic “Journey to the West”</p>
+</li>
+<li><p id = "para-34">One Thousand and One Nights (Arabian Nights)</p>
+</li>
+<li><p id = "para-35">Divine Comedy by Dante Alighieri</p>
+</li>
+<li><p id = "para-36">Don Quixote by Miguel de Cervantes</p>
+</li>
+<li><p id = "para-37">The Decameron by Giovanni Boccaccio</p>
+</li>
+<li><p id = "para-38">Tales from the Genji by Murasaki Shikibu</p>
+</li>
+<li><p id = "para-39">The Tale of Genji by Lady Murasaki</p>
+</li>
+<li><p id = "para-40">Shakespearean plays</p>
+</li>
+<li><p id = "para-41">religious texts such as the Bible and the Quran</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-42">Late 18th century - Early 19th century:</p>
+<ul>
+<li><p id = "para-43">Pride and Prejudice by Jane Austen</p>
+</li>
+<li><p id = "para-44">Frankenstein by Mary Shelley</p>
+</li>
+<li><p id = "para-45">Wuthering Heights by Emily Bronte</p>
+</li>
+<li><p id = "para-46">Dracula by Bram Stoker</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-47">19th century - 20th century:</p>
+<ul>
+<li><p id = "para-48">Crime and Punishment by Fyodor Dostoevsky</p>
+</li>
+<li><p id = "para-49">War and Peace by Leo Tolstoy</p>
+</li>
+<li><p id = "para-50">To Kill a Mockingbird by Harper Lee</p>
+</li>
+<li><p id = "para-51">The Adventures of Huckleberry Finn by Mark Twain</p>
+</li>
+<li><p id = "para-52">The Picture of Dorian Gray by Oscar Wilde</p>
+</li>
+<li><p id = "para-53">Sherlock Holmes by Arthur Conan Doyle</p>
+</li>
+<li><p id = "para-54">The War of the Worlds by H.G. Wells</p>
+</li>
+<li><p id = "para-55">The Wizard of Oz by L. Frank Baum</p>
+</li>
+<li><p id = "para-56">The Hobbit by J.R.R. Tolkien</p>
+</li>
+<li><p id = "para-57">1984 by George Orwell</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-58">21st century:</p>
+<ul>
+<li><p id = "para-59">The Hunger Games by Suzanne Collins</p>
+</li>
+<li><p id = "para-60">Harry Potter by J.K. Rowling</p>
+</li>
+<li><p id = "para-61">A Song of Ice and Fire by George R.R. Martin</p>
+</li>
+<li><p id = "para-62">The Girl with the Dragon Tattoo by Stieg Larsson</p>
+</li>
+<li><p id = "para-63">The Fault in Our Stars by John Green</p>
+</li>
+<li><p id = "para-64">The Maze Runner by James Dashner</p>
+</li>
+<li><p id = "para-65">The Hunger Games by Suzanne Collins</p>
+</li>
+</ul>
+</li>
+</ul>
+<p id = "para-66">Note: This is not an exhaustive list, but rather a representative sample of the diverse and rich history of documented fiction.</p>
+<p id = "para-67">&lt; Here are 15 controversial titles sorted by complexity:</p>
+<p id = "para-68">Mein Kampf by Adolf Hitler - A controversial book written by the leader of the Nazi Party, promoting his political and racial ideologies.</p>
+<p id = "para-69">The Satanic Verses by Salman Rushdie - A controversial novel that explores themes of religion, identity, and cultural conflict, leading to protests and even death threats against the author.</p>
+<p id = "para-70">Lolita by Vladimir Nabokov - A controversial novel that depicts the taboo relationship between a middle-aged man and a young girl.</p>
+<p id = "para-71">American Psycho by Bret Easton Ellis - A controversial novel that explores themes of violence, consumerism, and identity in modern society.</p>
+<p id = "para-72">The Catcher in the Rye by J.D. Salinger - A controversial novel that explores themes of teenage rebellion, alienation, and mental health.</p>
+<p id = "para-73">Brave New World by Aldous Huxley - A controversial dystopian novel that explores themes of technology, conformity, and individuality.</p>
+<p id = "para-74">The Communist Manifesto by Karl Marx and Friedrich Engels - A controversial political text that promotes socialist and communist ideals, leading to debates and conflicts across the world.</p>
+<p id = "para-75">The Bible - A controversial religious text that has been interpreted and reinterpreted throughout history, leading to numerous debates, conflicts, and controversies.</p>
+<p id = "para-76">Fifty Shades of Grey by E.L. James - A controversial novel that explores themes of BDSM, sexual desire, and power dynamics in relationships.</p>
+<p id = "para-77">The Quran - A controversial religious text that has been interpreted and reinterpreted throughout history, leading to numerous debates, conflicts, and controversies.</p>
+<p id = "para-78">The Anarchist Cookbook by William Powell - A controversial book that provides instructions for creating homemade explosives, leading to debates about free speech, censorship, and public safety.</p>
+<p id = "para-79">The Turner Diaries by William Pierce - A controversial novel that promotes white supremacist and anti-Semitic ideologies, leading to debates about hate speech, violence, and extremism.</p>
+<p id = "para-80">The Origin of Species by Charles Darwin - A controversial scientific text that proposed the theory of evolution, leading to debates about science, religion, and education.</p>
+<p id = "para-81">The Protocols of the Elders of Zion - A controversial anti-Semitic text that promotes conspiracy theories about a Jewish global domination, leading to debates about hate speech, propaganda, and freedom of expression.</p>
+<p id = "para-82">The Talmud - A controversial religious text that has been interpreted and reinterpreted throughout history, leading to numerous debates, conflicts, and controversies.</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

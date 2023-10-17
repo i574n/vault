@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">detail ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’ historically</a></li>
+      <li><a href="#link-2">from all the thousand kubernetes implementations, which could be the best options for such e2e testing using the near sandbox?</a></li>
+      <li><a href="#link-3">i meant distributions on github compatible with windows, with optional or even missing clustering features</a></li>
+      <li><a href="#link-4">which of them actually has the native windows builds from go sources? detail the architecture of the 3 most suitable tools</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <pre><span style="color:#323232;">cat (Get-PSReadlineOption).HistorySavePath</span>
+
+<span style="color:#323232;">nircmd monitor off detectmove</span>
+
+<span style="color:#323232;">rclone sync &quot;C:/&quot; &quot;Z:/c&quot; -v --ignore-errors --progress --links</span>
+<span style="color:#323232;">rclone sync &quot;/&quot; &quot;/mnt/x/y/z&quot; -v --ignore-errors --progress --links</span>
+<span style="color:#323232;">rclone move &quot;C:/x&quot; &quot;Z:/x&quot; -v --ignore-errors --progress --links</span>
+
+
+</pre><p class = "rule">***</p>
+<h2 id = "link-1">detail ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’ historically</h2>
+<p id = "para-1">&lt; The folder ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’ historically refers to a location in the Windows operating system where user-pinned items were stored on the taskbar. However, it is important to note that this folder has undergone changes in recent versions of Windows, and its functionality has been replaced by a different approach.</p>
+<p id = "para-2">In previous versions of Windows, such as Windows 7 and earlier, the taskbar in Windows Explorer had a Quick Launch toolbar where users could pin frequently used applications and shortcuts for quick access. The ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’ folder was the location where these pinned items were stored. Each pinned item was represented by a shortcut file with the extension ‘.lnk’.</p>
+<p id = "para-3">When a user pinned an item to the taskbar, Windows would create a shortcut file in the ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’ folder. This folder was typically located within the user’s profile directory, specifically in the ‘AppData’ folder, which is a hidden system folder. The ‘%AppData%’ portion of the path represents the user’s AppData folder, which is typically located at ‘C:\Users\Username\AppData\Roaming’, where ‘Username’ is the name of the user account.</p>
+<p id = "para-4">The Quick Launch folder and its associated user-pinned items remained intact until Windows 7. With the release of Windows 8, Microsoft introduced a new taskbar and Start menu design, eliminating the Quick Launch toolbar. Instead, they introduced a new way of pinning applications and shortcuts directly to the taskbar.</p>
+<p id = "para-5">In the newer versions of Windows, including Windows 8, Windows 8.1, and Windows 10, the user-pinned items are stored in a different location. The taskbar pins and other taskbar-related settings are now stored in a database file called ‘IconStreams’ located at ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’. This file contains binary data representing the taskbar layout and pinned items.</p>
+<p id = "para-6">It’s important to note that the ‘%AppData%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar’ folder is still present in newer versions of Windows for backward compatibility, but it no longer serves the same purpose as it did in earlier versions. The new taskbar design allows users to pin items directly to the taskbar without using the Quick Launch folder.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-2">from all the thousand kubernetes implementations, which could be the best options for such e2e testing using the near sandbox?</h2>
+<p id = "para-7">&lt; There are numerous Kubernetes distributions and platforms available, and the best one for your end-to-end (e2e) testing using the <code>near-sandbox</code> depends on various factors including your infrastructure requirements, team expertise, and budget. Here are a few options that are popularly used for such scenarios:</p>
+<ol>
+<li><p id = "para-8"><b>Google Kubernetes Engine (GKE)</b>: GKE is a managed, production-ready environment for deploying containerized applications. It’s quite easy to set up and use and has deep integration with other Google Cloud services.</p>
+</li>
+<li><p id = "para-9"><b>Amazon Elastic Kubernetes Service (EKS)</b>: Amazon EKS gives you the flexibility to start, run, and scale Kubernetes applications in the AWS cloud or on-premises.</p>
+</li>
+<li><p id = "para-10"><b>Azure Kubernetes Service (AKS)</b>: AKS simplifies the deployment, management, and scaling of containerized applications using Kubernetes, an open and popular container orchestration system.</p>
+</li>
+<li><p id = "para-11"><b>IBM Cloud Kubernetes Service</b>: A managed Kubernetes offering to deliver powerful tools, an intuitive user experience, and built-in security and isolation to enable rapid delivery of applications, all while leveraging Cloud Services and cognitive capabilities from Watson.</p>
+</li>
+<li><p id = "para-12"><b>OpenShift</b>: Red Hat’s enterprise-ready Kubernetes platform, OpenShift, could also be a good option if you’re looking for advanced features like automated operations, service mesh, and a serverless architecture.</p>
+</li>
+<li><p id = "para-13"><b>Rancher</b>: Rancher is an open-source platform that enables organizations to run and manage Docker and Kubernetes in production.</p>
+</li>
+<li><p id = "para-14"><b>DigitalOcean Kubernetes (DOKS)</b>: DOKS is a managed Kubernetes service that lets you deploy, manage, and scale your applications using Kubernetes.</p>
+</li>
+</ol>
+<p id = "para-15">These all have their unique strengths and weaknesses, and the choice really depends on your specific needs and the environment you are most comfortable with.</p>
+<p id = "para-16">Remember to check the hardware and software requirements of <code>near-sandbox</code> and make sure the chosen Kubernetes platform satisfies those requirements. Also, consider how easy it is to integrate the platform with your existing CI/CD (Continuous Integration/Continuous Deployment) pipelines and the costs associated with the infrastructure.</p>
+<h2 id = "link-3">i meant distributions on github compatible with windows, with optional or even missing clustering features</h2>
+<p id = "para-17">&lt; If you’re looking for Kubernetes distributions or implementations that are compatible with Windows and available on GitHub, you may want to consider the following options:</p>
+<ol>
+<li><p id = "para-18"><b>Kind (Kubernetes in Docker)</b>: Kind is a tool for running local Kubernetes clusters using Docker container “nodes”. It was primarily designed for testing Kubernetes itself, but may be used for local development or CI. However, it does require Docker, which on Windows implies a virtualized Linux OS layer.</p>
+<ul>
+<li><p id = "para-19">GitHub: <a href = "https://github.com/kubernetes-sigs/kind">https://github.com/kubernetes-sigs/kind</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-20"><b>Minikube</b>: Minikube is a tool that makes it easy to run Kubernetes locally. It runs a single-node Kubernetes cluster on your personal computer (including Windows) so you can try out Kubernetes or use it for daily development work.</p>
+<ul>
+<li><p id = "para-21">GitHub: <a href = "https://github.com/kubernetes/minikube">https://github.com/kubernetes/minikube</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-22"><b>MicroK8s</b>: MicroK8s is a small, fast, secure, single-node Kubernetes that installs on just about any Linux box. Use it for offline development, prototyping, testing, or use it on IoT devices. It’s also available on Windows via Multipass, but again this involves a virtualized Linux OS layer.</p>
+<ul>
+<li><p id = "para-23">GitHub: <a href = "https://github.com/ubuntu/microk8s">https://github.com/ubuntu/microk8s</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-24"><b>Rancher Desktop</b>: Rancher Desktop provides Kubernetes and container management to the desktop. It’s available for Windows.</p>
+<ul>
+<li><p id = "para-25">GitHub: <a href = "https://github.com/rancher-sandbox/rancher-desktop">https://github.com/rancher-sandbox/rancher-desktop</a></p>
+</li>
+</ul>
+</li>
+<li><p id = "para-26"><b>K3s</b>: K3s is a highly available, certified Kubernetes distribution designed for production workloads in unattended, resource-constrained, remote locations or inside IoT appliances. However, you’ll need WSL2 on Windows.</p>
+<ul>
+<li><p id = "para-27">GitHub: <a href = "https://github.com/k3s-io/k3s">https://github.com/k3s-io/k3s</a></p>
+</li>
+</ul>
+</li>
+</ol>
+<p id = "para-28">These tools can help you create local Kubernetes environments on your Windows machine for development and testing purposes. Remember, most of them would require some level of virtualization or emulation to create a Linux-like environment for Kubernetes to run.</p>
+<p id = "para-29">The best option for you will depend on your specific needs and constraints.</p>
+<h2 id = "link-4">which of them actually has the native windows builds from go sources? detail the architecture of the 3 most suitable tools</h2>
+<p id = "para-30">&lt; Currently, as of my knowledge cutoff in September 2021, there are no Kubernetes distributions that natively run on Windows from Go sources. Kubernetes primarily runs on Linux because it depends on several Linux kernel features. However, there are ways to run Kubernetes on Windows, typically involving some form of virtualization or containerization to run a lightweight Linux OS.</p>
+<p id = "para-31">Here are details on three popular tools which can help you run Kubernetes on a Windows machine:</p>
+<ol>
+<li><p id = "para-32"><b>Minikube</b>: Minikube is a tool that runs a single-node Kubernetes cluster on a personal computer for users looking to try out Kubernetes or develop with it day-to-day. It supports a variety of VM drivers, as well as Docker.</p>
+<ul>
+<li><p id = "para-33"><b>Architecture</b>: Minikube creates a virtual machine on your PC, and inside that VM, it sets up a single-node Kubernetes cluster. It’s primarily designed to run on systems that support VirtualBox or similar virtualization software.</p>
+</li>
+<li><p id = "para-34"><b>How it works with Windows</b>: On Windows, Minikube requires a hypervisor like VirtualBox or Hyper-V, which in turn runs a lightweight Linux distribution, on top of which Minikube deploys a Docker daemon and the Kubernetes components.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-35"><b>Kind (Kubernetes in Docker)</b>: Kind is a tool for running local Kubernetes clusters using Docker container “nodes”. It’s primarily designed for testing Kubernetes itself but may be used for local development or continuous integration.</p>
+<ul>
+<li><p id = "para-36"><b>Architecture</b>: Kind uses Docker to create a set of containers that emulate a Kubernetes cluster. Each container acts as a node and they communicate with each other to form a cluster.</p>
+</li>
+<li><p id = "para-37"><b>How it works with Windows</b>: On Windows, Kind requires Docker. Docker for Windows uses a Linux VM under the hood, so there’s still a Linux layer involved. Inside the Docker environment, Kind deploys Kubernetes components across one or more Docker containers to form a cluster.</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-38"><b>Rancher Desktop</b>: Rancher Desktop is an open-source project to bring Kubernetes and container management to the desktop.</p>
+<ul>
+<li><p id = "para-39"><b>Architecture</b>: Rancher Desktop is a desktop application that provides a complete Kubernetes development cluster on your personal computer. It’s designed with a simple-to-use UI and provides the ability to switch between Kubernetes versions easily.</p>
+</li>
+<li><p id = "para-40"><b>How it works with Windows</b>: Rancher Desktop uses containerd in a tiny VM to provide a full-featured Kubernetes, on Windows. It provides an easy way to package applications, deploy them, and manage versions of the applications and their dependencies.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p id = "para-41">While these tools all facilitate running Kubernetes on Windows, it’s worth noting again that they still involve a Linux layer via virtualization or containerization, as Kubernetes requires a Linux environment to run. The development environments provided by these tools aim to be as seamless and integrated as possible with the host OS (Windows, in this case).</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

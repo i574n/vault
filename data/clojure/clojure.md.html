@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p class = "rule">***</p>
+<p class = "rule">***</p>
+<pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#0086b3;">1 2 3</span><span style="color:#323232;">)</span>
+
+<span style="font-style:italic;color:#969896;">;; 6</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[x </span><span style="color:#0086b3;">1 </span><span style="color:#323232;">y </span><span style="color:#0086b3;">2 </span><span style="color:#323232;">z </span><span style="color:#0086b3;">3</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">x y z))</span>
+
+<span style="font-style:italic;color:#969896;">;; 6</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">range </span><span style="color:#0086b3;">10</span><span style="color:#323232;">)</span>
+
+<span style="font-style:italic;color:#969896;">;; (0 1 2 3 4 5 6 7 8 9)</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="color:#62a35c;">zero</span><span style="font-weight:bold;color:#a71d5d;">? </span><span style="color:#0086b3;">0</span><span style="color:#323232;">)</span>
+
+<span style="font-style:italic;color:#969896;">;; true</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="color:#62a35c;">ns </span><span style="color:#323232;">ns1) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">average </span><span style="color:#323232;">[</span><span style="font-weight:bold;color:#a71d5d;">&amp; </span><span style="color:#323232;">nums] (</span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#323232;">(</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">nums) (</span><span style="color:#62a35c;">count </span><span style="color:#323232;">nums))) [(average </span><span style="color:#0086b3;">4 11</span><span style="color:#323232;">) (average </span><span style="color:#0086b3;">3.0 72 9.6 33</span><span style="color:#323232;">)]</span>
+
+<span style="font-style:italic;color:#969896;">;; [15/2 29.4]</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">println </span><span style="color:#323232;">(((</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[f] ((</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[x] (f (</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[v] ((x x) v)))) (</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[x] (f (</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[v] ((x x) v)))))) (</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[g] (</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[</span><span style="color:#62a35c;">name</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">str </span><span style="color:#183691;">&quot;Hello, &quot; </span><span style="color:#62a35c;">name </span><span style="color:#183691;">&quot;!&quot;</span><span style="color:#323232;">)))) </span><span style="color:#183691;">&quot;John Doe&quot;</span><span style="color:#323232;">))</span>
+
+<span style="font-style:italic;color:#969896;">;; Hello, John Doe!</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="color:#62a35c;">require </span><span style="color:#0086b3;">&#39;</span><span style="color:#323232;">[</span><span style="color:#62a35c;">clojure.set </span><span style="font-weight:bold;color:#a71d5d;">:</span><span style="color:#323232;">as s]) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">a-vowels #</span><span style="color:#323232;">{</span><span style="color:#0086b3;">\a \e \i \o \u \x \y \z</span><span style="color:#323232;">}) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">b-vowels #</span><span style="color:#323232;">{</span><span style="color:#0086b3;">\a \e \i \o \u</span><span style="color:#323232;">}) [(s</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#62a35c;">difference </span><span style="color:#323232;">a-vowels b-vowels) (s</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#62a35c;">union </span><span style="color:#323232;">a-vowels b-vowels) (s</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#62a35c;">intersection </span><span style="color:#323232;">a-vowels b-vowels)]</span>
+
+<span style="font-style:italic;color:#969896;">;; [#{\x \y \z} #{\a \e \i \o \u \x \y \z} #{\a \e \i \o \u}]</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">bhaskara </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[a b c] (</span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="color:#62a35c;">or </span><span style="color:#323232;">(</span><span style="color:#62a35c;">nil</span><span style="font-weight:bold;color:#a71d5d;">? </span><span style="color:#323232;">a) (</span><span style="color:#62a35c;">nil</span><span style="font-weight:bold;color:#a71d5d;">? </span><span style="color:#323232;">b) (</span><span style="color:#62a35c;">nil</span><span style="font-weight:bold;color:#a71d5d;">? </span><span style="color:#323232;">c)) </span><span style="color:#0086b3;">nil </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[delta (</span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">b b) (</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">4 </span><span style="color:#323232;">a c))] (</span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&lt; </span><span style="color:#323232;">delta </span><span style="color:#0086b3;">0</span><span style="color:#323232;">) </span><span style="color:#0086b3;">nil </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">list </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">b) (Math</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#323232;">sqrt delta)) (</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">2 </span><span style="color:#323232;">a)) (</span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">b) (Math</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#323232;">sqrt delta)) (</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">2 </span><span style="color:#323232;">a)))))))) (bhaskara </span><span style="color:#0086b3;">1 -5 6</span><span style="color:#323232;">)</span>
+
+<span style="font-style:italic;color:#969896;">;; (3.0 2.0)</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">defmacro </span><span style="font-weight:bold;color:#62a35c;">defexpenses </span><span style="color:#323232;">[</span><span style="color:#62a35c;">name </span><span style="font-weight:bold;color:#a71d5d;">&amp; </span><span style="color:#323232;">expenses] </span><span style="font-weight:bold;color:#a71d5d;">`</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">def ~</span><span style="font-weight:bold;color:#62a35c;">name </span><span style="color:#323232;">(</span><span style="color:#62a35c;">atom </span><span style="color:#0086b3;">&#39;</span><span style="font-weight:bold;color:#a71d5d;">~</span><span style="color:#323232;">expenses))) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">add-expense </span><span style="color:#323232;">[atom-expense amount] (</span><span style="font-weight:bold;color:#a71d5d;">swap! </span><span style="color:#323232;">atom-expense </span><span style="font-weight:bold;color:#a71d5d;">conj </span><span style="color:#323232;">amount)) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">sum-expenses </span><span style="color:#323232;">[</span><span style="font-weight:bold;color:#a71d5d;">&amp; </span><span style="color:#323232;">atoms] (</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">apply </span><span style="font-weight:bold;color:#a71d5d;">+ @</span><span style="color:#323232;">%) atoms))) (</span><span style="color:#62a35c;">defexpenses </span><span style="color:#323232;">person-1 </span><span style="color:#0086b3;">1200 800 450</span><span style="color:#323232;">) (</span><span style="color:#62a35c;">defexpenses </span><span style="color:#323232;">person-2 </span><span style="color:#0086b3;">1000 600 300</span><span style="color:#323232;">) (</span><span style="color:#62a35c;">defexpenses </span><span style="color:#323232;">person-3 </span><span style="color:#0086b3;">1500 900 550</span><span style="color:#323232;">) (add-expense person-1 </span><span style="color:#0086b3;">200</span><span style="color:#323232;">) (add-expense person-2 </span><span style="color:#0086b3;">100</span><span style="color:#323232;">) (add-expense person-3 </span><span style="color:#0086b3;">150</span><span style="color:#323232;">) (sum-expenses person-1 person-2 person-3)</span>
+
+<span style="font-style:italic;color:#969896;">;; 7750</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">dot-product </span><span style="color:#323232;">[v1 v2] (</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map * </span><span style="color:#323232;">v1 v2))) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">add-elements </span><span style="color:#323232;">[v1 v2] (mapv </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">v1 v2)) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">apply-weights </span><span style="color:#323232;">[input layer-weights layer-biases] (mapv (</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[w b] (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(dot-product input w) b)) layer-weights layer-biases)) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">activation-function </span><span style="color:#323232;">[input] (mapv </span><span style="font-weight:bold;color:#a71d5d;">#</span><span style="color:#323232;">(Math</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#323232;">tanh %) input)) (</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">neural-network </span><span style="color:#323232;">[input weights biases activation-fn] (</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[layer-outputs (</span><span style="font-weight:bold;color:#a71d5d;">map </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="color:#323232;">[w b] (activation-fn (apply-weights input w b))) weights biases)] (</span><span style="color:#62a35c;">last </span><span style="color:#323232;">layer-outputs))) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">input-1 </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0.1 0.2 0.3</span><span style="color:#323232;">]) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">input-2 </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0.4 0.5 0.6</span><span style="color:#323232;">]) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">weights-1 </span><span style="color:#323232;">[[</span><span style="color:#0086b3;">0.1 0.2 0.3</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">0.4 0.5 0.6</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">0.7 0.8 0.9</span><span style="color:#323232;">]]) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">biases-1 </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0.1 0.2 0.3</span><span style="color:#323232;">]) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">weights-2 </span><span style="color:#323232;">[[</span><span style="color:#0086b3;">0.1 0.2 0.3</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">0.4 0.5 0.6</span><span style="color:#323232;">]]) (</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">biases-2 </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0.1 0.2</span><span style="color:#323232;">]) (</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[inputs [input-1 input-2] weights [weights-1 weights-2] biases [biases-1 biases-2]] (mapv </span><span style="font-weight:bold;color:#a71d5d;">#</span><span style="color:#323232;">(neural-network % weights biases activation-function) inputs)) </span>
+
+<span style="font-style:italic;color:#969896;">;; [[0.23549574953849794 0.47770001216849795] [0.39693043200507755 0.7487042869693086]]</span>
+
+</pre><pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">def </span><span style="font-weight:bold;color:#795da3;">x </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt; </span><span style="color:#323232;">(promise) (deliver </span><span style="color:#183691;">&quot;text&quot;</span><span style="color:#323232;">)))</span>
+<span style="color:#323232;">@x</span>
+
+<span style="font-style:italic;color:#969896;">;; #&#39;user/x</span>
+
+</pre><p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

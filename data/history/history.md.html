@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">detail jeong myeong-seok’s case in pt-br</a></li>
+      <li><a href="#link-2">depict the case’s last 3 years</a></li>
+      <li><a href="#link-3">list 10 other cases like or worse than this one so we can scrutinize later</a></li>
+      <li><a href="#link-4">list the most notorious lost civilizations contrasting with the nature of these cases</a></li>
+      <li><a href="#link-5">which of these civilizations are the most disgraceful of all, with the menacing nuance involved</a></li>
+      <li><a href="#link-6">infer these sea people</a></li>
+      <li><a href="#link-7">regardless of mistery, list the most insane civilizations of all</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-1">detail jeong myeong-seok’s case in pt-br</h2>
+<p id = "para-1">&lt; Jeong Myeong-seok é um líder religioso sul-coreano e fundador do movimento religioso JMS (Jesus Morning Star), também conhecido como Setsuri ou A Seita da Salvação. Ele nasceu em 1945 e fundou sua igreja em 1980.</p>
+<p id = "para-2">Em 1999, Myeong-seok começou a ser investigado pelas autoridades sul-coreanas após alegações de abuso sexual de suas seguidoras. Ele fugiu para a China e, posteriormente, foi preso pela Interpol em 2007. Em 2009, Jeong Myeong-seok foi condenado a 10 anos de prisão por estupro e abuso sexual de várias mulheres, incluindo menores de idade.</p>
+<p id = "para-3">As vítimas afirmaram que Myeong-seok as convenceu de que a “purificação espiritual” ocorreria por meio de relações sexuais com ele, e ele se referia a si mesmo como o “verdadeiro Messias”. Além das acusações de estupro e abuso sexual, Jeong Myeong-seok também foi acusado de fraude e desvio de recursos do movimento religioso.</p>
+<p id = "para-4">O caso de Jeong Myeong-seok causou uma grande repercussão na mídia, e seu movimento religioso foi fortemente criticado por suas práticas de culto e manipulação psicológica. Apesar da prisão de seu líder, o movimento JMS continua a existir, com seguidores em vários países, incluindo Coreia do Sul, Japão e Filipinas.</p>
+<h2 id = "link-2">depict the case’s last 3 years</h2>
+<p id = "para-5">&lt; Como o meu conhecimento se estende apenas até setembro de 2021, vou descrever os eventos relacionados ao caso de Jeong Myeong-seok nos últimos três anos até 2021.</p>
+<p id = "para-6">2018-2019: Durante este período, Jeong Myeong-seok continuou a cumprir sua pena de 10 anos de prisão. Enquanto estava preso, ele ainda liderava o movimento JMS por meio de mensagens e diretrizes enviadas aos seus seguidores. A organização continuou a enfrentar críticas por suas práticas e foi monitorada pelas autoridades sul-coreanas devido à preocupação com o bem-estar de seus membros.</p>
+<p id = "para-7">2020: Apesar da pandemia de COVID-19, o movimento JMS continuou a atrair novos seguidores e a expandir suas atividades em países como Coreia do Sul, Japão e Filipinas. A organização também começou a usar as redes sociais e outras plataformas digitais para espalhar sua mensagem e recrutar novos membros.</p>
+<p id = "para-8">2021: Jeong Myeong-seok foi libertado em fevereiro de 2021, após cumprir sua pena de 10 anos. A libertação gerou controvérsia, e muitos críticos expressaram preocupação com a possibilidade de ele retomar suas atividades no JMS. Após sua libertação, Myeong-seok manteve um perfil relativamente discreto, e não se sabe exatamente qual foi o seu envolvimento com o movimento religioso desde então.</p>
+<p id = "para-9">Vale ressaltar que, após a minha data limite de conhecimento em setembro de 2021, não tenho informações sobre os desenvolvimentos do caso nos anos de 2022 e 2023.</p>
+<h2 id = "link-3">list 10 other cases like or worse than this one so we can scrutinize later</h2>
+<p id = "para-10">&lt; Aqui estão 10 outros casos envolvendo líderes religiosos ou seitas que enfrentaram acusações semelhantes ou mais graves que o caso de Jeong Myeong-seok:</p>
+<ol>
+<li><p id = "para-11">David Koresh (Branch Davidians) - Um líder religioso americano que liderou a seita Branch Davidians em Waco, Texas. Em 1993, um cerco de 51 dias terminou com um incêndio no complexo da seita, resultando na morte de Koresh e mais de 70 seguidores. Koresh enfrentou acusações de abuso sexual e poligamia.</p>
+</li>
+<li><p id = "para-12">Jim Jones (Templo do Povo) - Um líder religioso americano que orquestrou o suicídio em massa de mais de 900 membros do Templo do Povo em Jonestown, Guiana, em 1978.</p>
+</li>
+<li><p id = "para-13">Shoko Asahara (Aum Shinrikyo) - Fundador da seita japonesa Aum Shinrikyo, responsável pelo ataque mortal com gás sarin no metrô de Tóquio em 1995. Asahara foi condenado à morte e executado em 2018.</p>
+</li>
+<li><p id = "para-14">Warren Jeffs (Igreja Fundamentalista de Jesus Cristo dos Santos dos Últimos Dias) - Líder da seita polígama nos Estados Unidos, condenado à prisão perpétua por abuso sexual de menores e casamentos forçados.</p>
+</li>
+<li><p id = "para-15">Marshall Applewhite (Porta do Céu) - Líder da seita Porta do Céu, que cometeu suicídio em massa junto com 38 seguidores em 1997, acreditando que seriam transportados para uma nave espacial.</p>
+</li>
+<li><p id = "para-16">Charles Manson (Família Manson) - Líder de um culto nos Estados Unidos que orquestrou uma série de assassinatos em 1969, incluindo a atriz Sharon Tate. Manson foi condenado à prisão perpétua e morreu na prisão em 2017.</p>
+</li>
+<li><p id = "para-17">Joseph Kibweteere (Movimento para a Restauração dos Dez Mandamentos de Deus) - Líder religioso ugandense que liderou um culto apocalíptico responsável pelo massacre de mais de 700 membros em 2000.</p>
+</li>
+<li><p id = "para-18">Keith Raniere (NXIVM) - Fundador do grupo de autoajuda e suposta seita NXIVM, condenado a 120 anos de prisão em 2020 por tráfico sexual, extorsão e outros crimes.</p>
+</li>
+<li><p id = "para-19">Gurmeet Ram Rahim Singh (Dera Sacha Sauda) - Líder espiritual indiano condenado a 20 anos de prisão por estupro e 20 anos adicionais por homicídio em 2017 e 2019, respectivamente.</p>
+</li>
+<li><p id = "para-20">Sun Myung Moon (Igreja da Unificação) - Fundador da Igreja da Unificação, também conhecida como “Moonies”. A seita foi acusada de lavagem cerebral e exploração de seus membros. Embora nunca tenha sido condenado por abuso sexual, Moon enfrentou acusações de fraude fiscal e foi preso nos Estados Unidos em 1982.</p>
+</li>
+</ol>
+<p id = "para-21">Esses casos variam em gravidade e contexto, mas todos envolvem líderes religiosos ou de seitas acusados de abuso, exploração ou crimes violentos.</p>
+<h2 id = "link-4">list the most notorious lost civilizations contrasting with the nature of these cases</h2>
+<p id = "para-22">&lt; As civilizações perdidas são culturas e sociedades antigas que desapareceram ou foram misteriosamente extintas. Essas civilizações são notórias devido ao seu legado histórico e mistérios não resolvidos. Embora essas civilizações não estejam diretamente relacionadas aos casos de líderes religiosos ou seitas mencionados anteriormente, elas são fascinantes por sua própria natureza. Aqui estão algumas das civilizações perdidas mais notórias:</p>
+<ol>
+<li><p id = "para-23">Atlântida - Descrita pela primeira vez pelo filósofo grego Platão, Atlântida é uma lendária ilha ou continente que teria afundado no oceano em um único dia e noite de desastres catastróficos. A localização e a existência real da Atlântida são objeto de debate e especulação.</p>
+</li>
+<li><p id = "para-24">Lemúria - Uma suposta civilização perdida que teria existido no Oceano Índico ou no Pacífico. A teoria da Lemúria foi proposta pela primeira vez no século XIX para explicar a distribuição de certos animais e plantas em diferentes continentes, mas a existência de Lemúria nunca foi comprovada.</p>
+</li>
+<li><p id = "para-25">Mu - Outra suposta civilização perdida, semelhante à Lemúria, que teria existido no Oceano Pacífico. A teoria de Mu foi popularizada no início do século XX, mas não há evidências arqueológicas ou geológicas que a sustentem.</p>
+</li>
+<li><p id = "para-26">Sodoma e Gomorra - Cidades bíblicas notórias por sua imoralidade e destruição divina. A localização exata e a existência histórica dessas cidades são incertas e objeto de debate acadêmico.</p>
+</li>
+<li><p id = "para-27">El Dorado - Uma cidade lendária supostamente rica em ouro e joias, buscada por exploradores europeus durante a era das conquistas na América do Sul. Embora nunca tenha sido encontrada, a lenda de El Dorado foi usada como uma alegoria para a busca incessante por riquezas e poder.</p>
+</li>
+<li><p id = "para-28">Povos do Mar - Um termo usado para se referir a grupos de guerreiros e saqueadores que assolaram o Mediterrâneo Oriental durante o final da Idade do Bronze (cerca de 1200 a.C.). A identidade e origem dos Povos do Mar permanecem um mistério.</p>
+</li>
+<li><p id = "para-29">Anasazi - Uma antiga cultura indígena norte-americana que habitava a região dos atuais estados do Colorado, Utah, Arizona e Novo México. Os Anasazi construíram elaboradas moradias em penhascos e cidades, mas a civilização entrou em declínio por volta do século XIII, provavelmente devido à seca e à pressão demográfica.</p>
+</li>
+<li><p id = "para-30">Civilização Harappan (Indus Valley) - Uma das primeiras civilizações urbanas do mundo, localizada no que é hoje o Paquistão e a Índia. A civilização Harappan entrou em declínio por volta de 1900 a.C., e as razões exatas para o seu colapso permanecem desconhecidas.</p>
+</li>
+<li><p id = "para-31">Civilização Minoica - Uma civilização avançada da Idade do Bronze que floresceu na ilha de Creta entre 2600 a.C. e 1400 a.C. A Civilização Minoica é famosa por seus palácios e artefatos, como o afresco do Touro Saltitante e o Disco de Festos. A civilização entrou em declínio após uma série de desastres naturais, incluindo possivelmente a erupção vulcânica de Tera (atual Santorini) e invasões de outros povos.</p>
+</li>
+<li><p id = "para-32">Civilização Maia - Uma antiga civilização mesoamericana que se estendia do que é hoje o México, Belize, Guatemala e Honduras. A civilização maia floresceu entre 250 e 900 d.C., construindo grandes cidades com pirâmides e templos, e desenvolvendo um sistema de escrita hieroglífica. O colapso clássico maia ocorreu por volta de 900 d.C., e as razões para o declínio são multifacetadas, incluindo fatores como mudanças climáticas, guerras internas, esgotamento de recursos e instabilidade política.</p>
+</li>
+</ol>
+<p id = "para-33">Essas civilizações perdidas são marcadas por seu legado histórico e cultural, bem como pelos mistérios que as cercam. Embora não estejam diretamente relacionadas aos casos de líderes religiosos ou seitas mencionados anteriormente, elas oferecem um contraste interessante e uma perspectiva mais ampla sobre a história e a evolução das sociedades humanas.</p>
+<h2 id = "link-5">which of these civilizations are the most disgraceful of all, with the menacing nuance involved</h2>
+<p id = "para-34">&lt; É importante notar que o termo “desonroso” pode ser subjetivo e que a história é complexa, tornando difícil rotular uma civilização inteira como desonrosa. No entanto, algumas civilizações são notórias por certos aspectos negativos ou eventos trágicos.</p>
+<p id = "para-35">Dentre as civilizações mencionadas anteriormente, Sodoma e Gomorra são provavelmente as mais associadas a um caráter ameaçador e desonroso. Segundo a tradição bíblica, essas cidades foram destruídas pela ira divina devido à sua imoralidade e perversão. Embora não haja consenso acadêmico sobre a existência histórica ou a localização exata de Sodoma e Gomorra, elas se tornaram símbolos de pecado e destruição ao longo da história.</p>
+<p id = "para-36">Outra civilização que pode ser considerada desonrosa devido às suas práticas violentas e destrutivas são os Povos do Mar. Esses guerreiros e saqueadores contribuíram para o colapso de várias civilizações durante o final da Idade do Bronze. No entanto, pouco se sabe sobre a identidade e as origens desses povos, e as teorias sobre sua natureza variam.</p>
+<p id = "para-37">É essencial abordar as civilizações antigas com uma compreensão contextualizada e uma perspectiva equilibrada, reconhecendo suas realizações e falhas, bem como o contexto cultural e histórico em que existiam.</p>
+<h2 id = "link-6">infer these sea people</h2>
+<p id = "para-38">&lt; Os Povos do Mar são um termo coletivo usado para descrever um grupo de guerreiros, saqueadores e migrantes que aterrorizaram o Mediterrâneo Oriental durante o final da Idade do Bronze, por volta de 1200 a.C. Eles são frequentemente associados ao colapso de várias civilizações, como os hititas, micênicos e o Antigo Egito do Novo Reino.</p>
+<p id = "para-39">A identidade e a origem dos Povos do Mar são um mistério para os historiadores e arqueólogos. As evidências para a existência dos Povos do Mar vêm principalmente de inscrições egípcias, como os relevos do templo de Medinet Habu e os registros do faraó Ramessés III. Essas fontes descrevem uma série de batalhas entre os egípcios e os Povos do Mar, nas quais os egípcios afirmam ter derrotado os invasores.</p>
+<p id = "para-40">Devido à falta de informações diretas e à natureza fragmentada das evidências, várias teorias foram propostas sobre a identidade e a origem dos Povos do Mar. Algumas dessas teorias incluem:</p>
+<ol>
+<li><p id = "para-41">Invasores do Mediterrâneo Ocidental: Alguns estudiosos propõem que os Povos do Mar se originaram na região do Mediterrâneo Ocidental, incluindo lugares como a Itália, a Sicília e a Sardenha.</p>
+</li>
+<li><p id = "para-42">Migrantes dos Bálcãs ou da Anatólia: Outra teoria sugere que os Povos do Mar vieram dos Bálcãs ou da Anatólia, possivelmente como resultado da instabilidade política ou de mudanças climáticas que afetaram suas terras natais.</p>
+</li>
+<li><p id = "para-43">Micênicos ou hititas deslocados: Os Povos do Mar também foram propostos como sendo originários de civilizações em colapso, como os micênicos ou hititas, que buscavam novas terras após a destruição de seus próprios reinos.</p>
+</li>
+<li><p id = "para-44">Uma coalizão de grupos diversos: É possível que os Povos do Mar fossem uma coalizão de grupos diversos, unidos por circunstâncias comuns, como a necessidade de saquear para sobreviver.</p>
+</li>
+</ol>
+<p id = "para-45">O mistério em torno dos Povos do Mar persiste até hoje, e sua identidade e origem continuam sendo temas de debate entre historiadores e arqueólogos. No entanto, é inegável que sua presença e atividades tiveram um impacto significativo no Mediterrâneo Oriental durante o final da Idade do Bronze, contribuindo para o colapso de várias civilizações e o início de uma nova era na região.</p>
+<h2 id = "link-7">regardless of mistery, list the most insane civilizations of all</h2>
+<p id = "para-46">&lt; É importante ressaltar que usar o termo “insano” para descrever civilizações inteiras pode ser inapropriado e simplista, uma vez que cada sociedade é formada por uma diversidade de crenças, práticas e tradições. No entanto, algumas civilizações se destacam por suas práticas ou eventos peculiares e notáveis. Aqui estão algumas delas:</p>
+<ol>
+<li><p id = "para-47">Cultura Maia: Os maias são conhecidos por sua prática de sacrifícios humanos e rituais de sangue como parte de suas cerimônias religiosas. Eles acreditavam que os sacrifícios eram necessários para apaziguar seus deuses e garantir a fertilidade e a prosperidade.</p>
+</li>
+<li><p id = "para-48">Império Asteca: Semelhante aos maias, os astecas praticavam sacrifícios humanos em larga escala, acreditando que o sangue humano era necessário para alimentar o sol e garantir a continuação da vida.</p>
+</li>
+<li><p id = "para-49">Civilização Minoica: A civilização minoica é famosa pelo mito do Minotauro, um ser meio humano e meio touro que habitava um labirinto e era alimentado com jovens sacrifícios humanos. Embora a existência real do Minotauro seja duvidosa, a história reflete aspectos interessantes da cultura e da religião minoicas.</p>
+</li>
+<li><p id = "para-50">Spartans (Grécia Antiga): A sociedade espartana era focada na criação de guerreiros altamente disciplinados e destemidos. Os bebês considerados fracos ou deformados eram abandonados, e os meninos eram submetidos a um rigoroso treinamento militar desde a infância.</p>
+</li>
+<li><p id = "para-51">Mongóis (Império Mongol): Liderados por Genghis Khan, os mongóis construíram um dos maiores impérios da história, conquistando terras da China à Europa Oriental. Eles são conhecidos por sua brutalidade e táticas de guerra impiedosas, como a “estratégia da terra arrasada”.</p>
+</li>
+<li><p id = "para-52">Cultura Viking: Os vikings eram guerreiros e exploradores nórdicos conhecidos por suas incursões violentas e saques. Eles também praticavam rituais de sacrifício humano e eram adeptos da magia nórdica conhecida como Seiðr.</p>
+</li>
+</ol>
+<p id = "para-53">Embora essas civilizações tenham práticas ou eventos peculiares, é importante lembrar que elas também possuíam realizações culturais, tecnológicas e artísticas significativas. Uma perspectiva equilibrada é essencial ao analisar a história e o legado dessas sociedades antigas.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

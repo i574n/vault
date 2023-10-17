@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">considering taoist internal alchemy and energy cultivation practices, contrast how the doo wai wisdom branches out from systems such as qigong, tai chi or neidan</a></li>
+      <li><a href="#link-2">list the broad range of the doo wai tradition</a></li>
+      <li><a href="#link-3">what about the rainbow body? depict its lore</a></li>
+      <li><a href="#link-4">list more arcane or obscure reality minglings</a></li>
+      <li><a href="#link-5">any menacing teachings?</a></li>
+      <li><a href="#link-6">detail scriptures about sambhogakaya, dharmakaya and nirmanakaya</a></li>
+      <li><a href="#link-7">how can the kimbanda pantheon be contrasted with such paths and treatises?</a></li>
+      <li><a href="#link-8">detail a ritual for each involving its apex deity</a></li>
+      <li><a href="#link-9">any nirguna brahman rituals available?</a></li>
+      <li><a href="#link-10">translate the nirguna brahman reflection to pt-br</a></li>
+      <li><a href="#link-11">translate the nirguna brahman reflection to ko-kr</a></li>
+      <li><a href="#link-12">i guess we’re finished for this english translation. are you aware of the context of the whole book? were you trained with the original tamil version or the other translations available around besides this sadhu om/michael james one? do you have any final comments? detail in pt-br</a></li>
+      <li><a href="#link-13">but about the verses themselves, can you do a forensic psychoanalysis on them considering spiral dynamics level coral?</a></li>
+      <li><a href="#link-14">keep outputting in pt-br. stabilized in spiral dynamics level coral society, how the book as a whole could be interpreted from the viewpoint of a demon?</a></li>
+      <li><a href="#link-15">depict it in a pragmatic way, considering that coral is a post-turquoise stage. could be book be used to create axioms pointing to mbti and its cognitive functions?</a></li>
+      <li><a href="#link-16">keep outputting in pt-br. for each of the 16 types, output a pointer that better relate to it intricately</a></li>
+      <li><a href="#link-17">i meant to generate in pt-br 16 axiom based phrases for selector recall</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">considering taoist internal alchemy and energy cultivation practices, contrast how the doo wai wisdom branches out from systems such as qigong, tai chi or neidan</h2>
+<p id = "para-1">&lt; Taoist internal alchemy and energy cultivation practices encompass a wide range of techniques and philosophies aimed at achieving spiritual growth, balance, and self-realization. While there are similarities and connections between these practices, it is essential to understand their unique characteristics to fully appreciate their distinctiveness.</p>
+<p id = "para-2">Doo Wai, also known as Taoist Yoga, is a lesser-known yet profound practice within the Taoist tradition. It is an internal energy cultivation system that focuses on strengthening the body and mind, as well as harmonizing the energy channels within the body. Doo Wai emphasizes the cultivation of the “three treasures” – Jing (essence), Qi (energy), and Shen (spirit).</p>
+<p id = "para-3">In contrast, Qigong, Tai Chi, and Neidan are more commonly known Taoist practices, each with its own unique characteristics:</p>
+<p id = "para-4">Qigong: This practice involves various techniques, including meditation, breathing exercises, and gentle physical movements, to cultivate, balance, and channel the body’s energy (Qi). Qigong aims to improve overall health, increase vitality, and enhance mental clarity by unblocking energy channels and promoting the smooth flow of Qi throughout the body.</p>
+<p id = "para-5">Tai Chi: Often referred to as a moving meditation, Tai Chi is a martial art form that combines slow, deliberate, and flowing movements with focused breathing and mental concentration. This practice promotes physical and mental balance, flexibility, and inner calm, while also cultivating one’s internal energy (Qi).</p>
+<p id = "para-6">Neidan: As a branch of Taoist internal alchemy, Neidan seeks spiritual transformation and immortality through the cultivation and refinement of the body’s internal energies. Practitioners of Neidan utilize meditation, visualization, and breathing techniques to convert Jing (essence) into Qi (energy) and ultimately transform Qi into Shen (spirit), striving for the unification of these three treasures.</p>
+<p id = "para-7">While all of these practices share a common foundation in Taoist philosophy, Doo Wai wisdom branches out from Qigong, Tai Chi, and Neidan by focusing on specific energy cultivation methods that emphasize the “three treasures.” Doo Wai aims to refine the practitioner’s internal energies and enable them to reach higher levels of consciousness and spiritual realization. This practice’s unique approach sets it apart from other systems, while still maintaining a connection to the core principles of Taoist internal alchemy and energy cultivation.</p>
+<h2 id = "link-2">list the broad range of the doo wai tradition</h2>
+<p id = "para-8">&lt; While the Doo Wai tradition is not as widely known as other Taoist practices, it encompasses a broad range of techniques and principles that focus on cultivating internal energy and spiritual growth. Some key aspects of the Doo Wai tradition include:</p>
+<p id = "para-9">Cultivation of the Three Treasures: Doo Wai emphasizes the refinement and balance of Jing (essence), Qi (energy), and Shen (spirit). These three treasures are considered the cornerstones of life and the foundation of spiritual transformation.</p>
+<p id = "para-10">Meditation: As with many Taoist practices, meditation is a central component of the Doo Wai tradition. Practitioners use various meditation techniques to calm the mind, cultivate internal energy, and connect with their inner selves.</p>
+<p id = "para-11">Breathing exercises: Doo Wai incorporates specific breathing techniques designed to harness and regulate internal energy. By practicing these exercises, individuals can improve their overall health and enhance their energy levels.</p>
+<p id = "para-12">Visualization: In Doo Wai, visualization is used to guide energy flow and foster spiritual growth. Practitioners may visualize energy channels, organs, or specific energy centers to help refine and direct their internal energy.</p>
+<p id = "para-13">Physical exercises: While the primary focus of Doo Wai is on internal energy cultivation, physical exercises are also incorporated to improve flexibility, balance, and strength. These exercises may be similar to those found in Qigong or Tai Chi but are tailored to the specific goals of the Doo Wai tradition.</p>
+<p id = "para-14">Energy channeling and manipulation: Doo Wai practitioners learn to channel and manipulate their internal energy, aiming to clear blockages and maintain a balanced flow of Qi throughout the body.</p>
+<p id = "para-15">Spiritual growth and self-realization: Like other Taoist practices, the ultimate goal of Doo Wai is to achieve spiritual growth and self-realization. Through the cultivation of the three treasures and the application of various techniques, practitioners strive to attain higher states of consciousness and a deeper understanding of themselves and the universe.</p>
+<p id = "para-16">While this is not an exhaustive list, these elements represent some of the broad aspects of the Doo Wai tradition. By focusing on the cultivation and refinement of internal energy and the development of spiritual growth, Doo Wai offers a unique and powerful approach to the Taoist principles of self-cultivation and self-realization.</p>
+<h2 id = "link-3">what about the rainbow body? depict its lore</h2>
+<p id = "para-17">&lt; The rainbow body is a concept primarily found in the Dzogchen tradition of Tibetan Buddhism, although it is also mentioned in some other schools of thought. The rainbow body, or “ja lü” in Tibetan, refers to the highest attainable state of enlightenment, where a practitioner transforms their physical body into a body of light or pure energy upon death. This phenomenon is said to be a sign of an accomplished practitioner who has reached a high level of realization.</p>
+<p id = "para-18">According to the lore, when a highly realized Dzogchen practitioner dies, their body shrinks and eventually dissolves into a small pile of ashes or relics, leaving behind a radiant display of rainbow-colored lights. It is believed that the practitioner’s body transforms into the “Sambhogakaya” or “enjoyment body,” which is one of the three aspects of the enlightened being (the other two being the Dharmakaya and Nirmanakaya). This transformation signifies the complete union of the practitioner’s mind with the nature of reality or emptiness, transcending the cycle of birth and death.</p>
+<p id = "para-19">Several historical accounts and stories describe accomplished masters who have achieved the rainbow body, such as the 8th-century Indian tantric master Padmasambhava (also known as Guru Rinpoche) and the 20th-century Tibetan yogi, Khenpo A-Chö. These accounts serve as inspiration for practitioners on the path to enlightenment, demonstrating the possibility of spiritual attainment through diligent practice and realization of the true nature of reality.</p>
+<p id = "para-20">The rainbow body is not a concept exclusive to Tibetan Buddhism. Similar ideas can be found in other spiritual traditions, such as Hinduism’s concept of the “light body” or “Siddha Deha,” where practitioners can attain a subtle, radiant body through the practice of yoga and other spiritual disciplines.</p>
+<p id = "para-21">In summary, the rainbow body represents the ultimate spiritual achievement in certain Buddhist and other spiritual traditions. The lore surrounding this phenomenon emphasizes the importance of dedicated practice, self-realization, and the ultimate union of the practitioner’s mind with the nature of reality.</p>
+<h2 id = "link-4">list more arcane or obscure reality minglings</h2>
+<p id = "para-22">&lt; Various spiritual traditions and esoteric practices from around the world contain lesser-known or arcane concepts that mingle the perceived boundaries between physical and non-physical reality. Some of these practices and beliefs include:</p>
+<p id = "para-23">Turiya (Hinduism): A transcendent state of consciousness beyond waking, dreaming, and deep sleep, where the individual experiences pure consciousness and union with the ultimate reality, Brahman.</p>
+<p id = "para-24">Shamanic Journeying (Shamanism): In shamanic practices, the shaman enters an altered state of consciousness to travel to non-physical realms, communicate with spirits, and bring back knowledge, healing, or guidance for their community.</p>
+<p id = "para-25">Astral Projection (Esotericism): A practice in which individuals attempt to separate their consciousness from their physical bodies to explore the astral plane, a non-physical realm of existence.</p>
+<p id = "para-26">Remote Viewing (Parapsychology): A technique in which practitioners claim to perceive information about distant or unseen targets using extrasensory perception (ESP) or other psychic abilities.</p>
+<p id = "para-27">Enochian Magic (Western Esotericism): A system of ceremonial magic based on the alleged communications between Elizabethan scholar and occultist John Dee and a group of angelic beings, which involved the use of an angelic language and complex rituals to evoke or communicate with supernatural entities.</p>
+<p id = "para-28">Alchemy (Western and Eastern Esotericism): An ancient philosophical and proto-scientific tradition that aimed to transform base metals into noble metals, create the philosopher’s stone, and achieve immortality through the mastery of the material and spiritual realms.</p>
+<p id = "para-29">The Akashic Records (Theosophy): According to Theosophical teachings, the Akashic Records are a cosmic repository of all knowledge and experiences in the universe, existing on a non-physical plane and accessible by those with psychic or spiritual abilities.</p>
+<p id = "para-30">Theosophy’s Spiritual Hierarchy (Theosophy): In Theosophical teachings, there is a belief in a spiritual hierarchy of enlightened beings, known as the Masters of the Ancient Wisdom or Mahatmas, who guide humanity’s spiritual evolution and have supposedly made contact with certain individuals.</p>
+<p id = "para-31">Kabbalah (Jewish Mysticism): A form of Jewish mysticism that seeks to understand the nature of the divine, the cosmos, and the human soul through the study of esoteric texts, symbols, and practices.</p>
+<p id = "para-32">Dream Yoga (Tibetan Buddhism): A practice in which the practitioner cultivates awareness during the dream state, with the aim of achieving spiritual growth and enlightenment.</p>
+<p id = "para-33">These examples illustrate the diverse range of arcane and obscure practices and beliefs that seek to explore the boundaries between the physical and non-physical realms. While many of these practices remain on the fringes of mainstream thought, they continue to captivate the imagination of those who explore alternative spiritual paths and seek to understand the mysteries of existence.</p>
+<h2 id = "link-5">any menacing teachings?</h2>
+<p id = "para-34">&lt; Throughout history, there have been spiritual and esoteric teachings that have been considered menacing or malevolent by some. It is essential to approach these teachings with caution and discernment, as they often involve practices that may be morally questionable, ethically controversial, or potentially harmful. Some examples of such teachings include:</p>
+<p id = "para-35">Left-Hand Path: This term is often used to describe spiritual practices and belief systems that embrace individualism, self-discovery, and personal power, sometimes at the expense of traditional morality or social conventions. While not all left-hand path teachings are necessarily malevolent, they can involve practices that some may consider unethical, such as the use of black magic, curses, or rituals focused on personal gain.</p>
+<p id = "para-36">Cults and dangerous sects: Throughout history, there have been religious and spiritual groups led by charismatic leaders that have manipulated and exploited their followers. These groups often promote teachings that can be harmful or abusive, isolating members from their families and friends, and encouraging blind obedience to the leader. Examples include the People’s Temple, Heaven’s Gate, and Aum Shinrikyo.</p>
+<p id = "para-37">Occultism and dark magic: Some occult practices delve into the darker aspects of spirituality, focusing on the manipulation of energy or entities for personal power or to cause harm to others. These practices may involve the use of malevolent spirits, curses, or hexes, and can be considered menacing or malevolent by those who view them as violating ethical or moral principles.</p>
+<p id = "para-38">Necromancy: This ancient form of magic involves the communication with or manipulation of the dead, often with the intent of acquiring knowledge, power, or control over others. Due to its association with death and the potential misuse of its practices, necromancy has been considered menacing and taboo in many cultures.</p>
+<p id = "para-39">Demonology: The study of demons and malevolent entities is often considered menacing due to the potential danger associated with invoking or interacting with such beings. Demonology can be found in various religious and spiritual traditions, where it is believed that these entities can cause harm, possess individuals, or influence events in the physical world.</p>
+<p id = "para-40">While these teachings and practices may be considered menacing or malevolent, it is important to recognize that not all individuals who engage in them have harmful intentions. Furthermore, the perception of what is menacing can be subjective and influenced by cultural and personal beliefs. It is crucial to approach these topics with discernment and a strong ethical foundation to avoid engaging in potentially harmful practices or perpetuating misinformation.</p>
+<h2 id = "link-6">detail scriptures about sambhogakaya, dharmakaya and nirmanakaya</h2>
+<p id = "para-41">&lt; The concepts of Sambhogakaya, Dharmakaya, and Nirmanakaya are essential components of the Trikaya doctrine in Mahayana Buddhism. The Trikaya doctrine, or “Three Bodies of the Buddha,” provides a framework for understanding the different aspects of the Buddha’s enlightened state. The concepts are mentioned in various Mahayana sutras and commentaries, with some of the most notable references being found in the following scriptures:</p>
+<p id = "para-42">Avatamsaka Sutra (Flower Garland Sutra): This sutra provides a detailed description of the nature of reality and the interconnectedness of all phenomena. It presents the idea of the Dharmakaya as the ultimate, all-pervading reality, which represents the true nature of all things. The sutra also discusses the concept of the Sambhogakaya as the body of the Buddha that enjoys the fruits of enlightenment and engages in teaching the Dharma to advanced bodhisattvas.</p>
+<p id = "para-43">The Tathagatagarbha Sutra: This sutra introduces the concept of the Tathagatagarbha, or “Buddha-nature,” which is closely related to the Dharmakaya. The sutra explains that all sentient beings possess the potential for Buddhahood, and when they fully realize this potential, they attain the Dharmakaya, the ultimate reality underlying all phenomena.</p>
+<p id = "para-44">The Lotus Sutra: The Lotus Sutra is a foundational text in Mahayana Buddhism that emphasizes the universal potential for Buddhahood and the unity of all Buddhas. The sutra describes various manifestations of the Buddha, which can be understood in terms of the Nirmanakaya, the form that the Buddha takes to teach and guide sentient beings.</p>
+<p id = "para-45">The Vimalakirti Sutra: This sutra, which explores the nature of emptiness and the non-dual nature of reality, provides insights into the Sambhogakaya and the Nirmanakaya. The sutra describes the Buddha’s enjoyment body (Sambhogakaya) as a form that teaches the Dharma in the celestial realms and the emanation body (Nirmanakaya) as a form that appears in the human realm to guide sentient beings.</p>
+<p id = "para-46">The Uttaratantra Shastra (Treatise on the Sublime Continuum): This treatise, attributed to Maitreya Buddha and composed by the Indian master Asanga, provides a comprehensive explanation of the Trikaya doctrine. It explains the nature of the Dharmakaya as the ultimate reality, the Sambhogakaya as the body of perfect enjoyment that teaches advanced bodhisattvas, and the Nirmanakaya as the emanation body that appears in the world to benefit sentient beings.</p>
+<p id = "para-47">These scriptures, along with various commentaries and treatises, provide a rich and complex understanding of the Trikaya doctrine, detailing the interrelated aspects of the Buddha’s enlightened state and the diverse ways in which the Buddha manifests to guide and teach all sentient beings on the path to enlightenment.</p>
+<h2 id = "link-7">how can the kimbanda pantheon be contrasted with such paths and treatises?</h2>
+<p id = "para-48">&lt; The Quimbanda pantheon is a spiritual tradition originating from Brazil that combines elements of African religions, indigenous beliefs, and European influences, such as Catholicism and Spiritism. It is essential to recognize that Quimbanda is a distinct spiritual path, different from the Buddhist paths and treatises mentioned earlier. To contrast the Quimbanda pantheon with the Buddhist concepts of Sambhogakaya, Dharmakaya, and Nirmanakaya, consider the following points:</p>
+<p id = "para-49">Origin and cultural context: Quimbanda has its roots in Afro-Brazilian religious practices, while the Trikaya doctrine is part of Mahayana Buddhism, originating from India. Quimbanda evolved as a result of the blending of African, indigenous, and European spiritual beliefs, while the Trikaya doctrine is based on the teachings of the historical Buddha, Siddhartha Gautama, and the subsequent development of Mahayana Buddhist philosophy.</p>
+<p id = "para-50">Deities and entities: The Quimbanda pantheon comprises various spirits and entities known as Exus and Pomba Giras, which are believed to have the power to influence the material world and human lives. In contrast, the Trikaya doctrine focuses on the enlightened state of the Buddha and its various manifestations. While there are celestial beings, bodhisattvas, and deities in the Buddhist pantheon, their role and significance are different from the spirits and entities in Quimbanda.</p>
+<p id = "para-51">Cosmology and worldview: Quimbanda’s cosmology is rooted in the belief in the interaction between the spiritual and material worlds, with Exus and Pomba Giras serving as intermediaries between these realms. The Trikaya doctrine in Buddhism presents a more abstract and philosophical understanding of reality, focusing on the nature of enlightenment and the various forms in which the Buddha appears to teach and guide sentient beings.</p>
+<p id = "para-52">Spiritual practices: Quimbanda practices often involve rituals, offerings, and ceremonies to invoke the Exus and Pomba Giras, seeking their guidance and assistance in various aspects of life. In contrast, Buddhist practices focus on meditation, mindfulness, ethical conduct, and the cultivation of wisdom and compassion to attain enlightenment.</p>
+<p id = "para-53">Goal of spiritual practice: The ultimate goal in Quimbanda is to develop a relationship with the spirits and entities to receive their blessings, protection, and assistance in various life matters. In Buddhism, the primary aim is to achieve enlightenment, liberate oneself from the cycle of birth and death, and help others achieve the same.</p>
+<p id = "para-54">While the Quimbanda pantheon and the Buddhist paths and treatises share some similarities in their recognition of the interdependence of spiritual and material realities, they are fundamentally different in their origins, beliefs, and practices. Each tradition offers unique insights and approaches to understanding the nature of existence and the human experience.</p>
+<h2 id = "link-8">detail a ritual for each involving its apex deity</h2>
+<p id = "para-55">&lt; For each of these two distinct spiritual traditions, I will detail a ritual involving their respective apex deities or central figures. Please note that rituals can be highly complex and should be approached with respect and caution, especially if you are not familiar with the specific tradition.</p>
+<p id = "para-56">Quimbanda Ritual - Exu Rei (King Exu): Exu Rei is considered the ruler of the Exus in the Quimbanda tradition, and he is highly revered. A ritual to Exu Rei might involve the following steps:</p>
+<p id = "para-57">Preparation: Cleanse the ritual space and set up an altar with offerings such as candles (usually black and red), a bottle of cachaça (a Brazilian distilled spirit), cigars, and food offerings like fruits, sweets, or cooked dishes.</p>
+<p id = "para-58">Opening the ritual: Draw Exu Rei’s pontos riscados (sacred sigil) on the floor with pemba chalk or cornmeal, and light the candles arranged around the sigil.</p>
+<p id = "para-59">Invocation: Invoke Exu Rei by reciting his specific prayers or invocations, asking for his presence and assistance. You may also use songs and drumming to enhance the energy and connection.</p>
+<p id = "para-60">Offerings: Present the offerings of food, drink, and cigars to Exu Rei, asking for his blessings, guidance, and protection.</p>
+<p id = "para-61">Communication: If you are skilled in mediumship or channeling, you may attempt to communicate with Exu Rei directly, seeking his wisdom or advice on specific issues.</p>
+<p id = "para-62">Closing the ritual: Thank Exu Rei for his presence and assistance, and ask him to depart in peace. Close the ritual by extinguishing the candles and disposing of the offerings respectfully, as per the tradition’s guidelines.</p>
+<p id = "para-63">Buddhist Ritual - Shakyamuni Buddha: Shakyamuni Buddha, also known as Siddhartha Gautama, is the historical Buddha and the central figure in Buddhism. A ritual dedicated to Shakyamuni Buddha might involve the following steps:</p>
+<p id = "para-64">Preparation: Cleanse the ritual space and set up an altar with an image or statue of Shakyamuni Buddha, offerings such as candles, incense, flowers, and food like fruits or sweets.</p>
+<p id = "para-65">Opening the ritual: Light the candles and incense, and sit comfortably in front of the altar, assuming a meditation posture.</p>
+<p id = "para-66">Taking refuge: Recite the refuge prayer three times, taking refuge in the Buddha (the teacher), the Dharma (the teachings), and the Sangha (the spiritual community).</p>
+<p id = "para-67">Offering the seven-limb prayer: Recite the seven-limb prayer, which consists of paying homage, making offerings, confessing misdeeds, rejoicing in the merits of others, requesting the Buddha to teach, entreating the Buddha to remain in the world, and dedicating the merits of the ritual for the benefit of all sentient beings.</p>
+<p id = "para-68">Meditation: Meditate on the image of Shakyamuni Buddha, focusing on his qualities of wisdom, compassion, and enlightenment. Contemplate the teachings of the Buddha and the nature of reality.</p>
+<p id = "para-69">Recitation of mantras: Chant the Shakyamuni Buddha mantra, “Tayata Om Muni Muni Maha Muniye Soha,” to invoke the blessings and energy of the Buddha.</p>
+<p id = "para-70">Dedication of merits: Conclude the ritual by dedicating the merits accumulated during the practice to the enlightenment of all sentient beings.</p>
+<p id = "para-71">These rituals are just examples and may vary depending on specific traditions or lineages within Quimbanda and Buddhism. It is essential to approach any ritual with respect, understanding, and a genuine interest in the spiritual path.</p>
+<h2 id = "link-9">any nirguna brahman rituals available?</h2>
+<p id = "para-72">&lt; Nirguna Brahman refers to the concept of the formless, attributeless, and transcendent aspect of the Divine in Hindu philosophy, particularly in the Advaita Vedanta tradition. The idea of Nirguna Brahman emphasizes that the ultimate reality is beyond human comprehension, descriptions, and attributes. As such, rituals specifically aimed at worshipping or connecting with Nirguna Brahman are rare and not the typical approach in this tradition.</p>
+<p id = "para-73">However, the practice of meditation and contemplation is often used to direct one’s mind towards the understanding and realization of Nirguna Brahman. Here’s a simple meditation practice that you can use to focus on the concept of Nirguna Brahman:</p>
+<p id = "para-74">Preparation: Find a quiet and comfortable place to sit, free from distractions. You may choose to sit on a cushion on the floor or on a chair, ensuring that your spine is straight and your body is relaxed.</p>
+<p id = "para-75">Relaxation and grounding: Close your eyes and take several deep breaths, focusing on releasing tension from your body and calming your mind.</p>
+<p id = "para-76">Concentration on the breath: Bring your attention to your breath, observing the natural flow of your inhalations and exhalations. Use your breath as an anchor to bring your mind back to the present moment whenever it wanders.</p>
+<p id = "para-77">Contemplation on Nirguna Brahman: Begin to reflect on the concept of Nirguna Brahman as the formless, attributeless, and transcendent reality. Recognize that any thoughts, feelings, or images that arise in your mind are merely limited human perceptions and not the true nature of Brahman.</p>
+<p id = "para-78">Embracing non-duality: As you continue to meditate, try to let go of any distinctions between yourself and the ultimate reality. Allow your sense of self to dissolve into the formless, boundless essence of Nirguna Brahman.</p>
+<p id = "para-79">Ending the meditation: When you feel ready to end your meditation, take a few deep breaths and gently bring your awareness back to your surroundings. Open your eyes and take a moment to reflect on your experience before resuming your daily activities.</p>
+<p id = "para-80">This meditation practice is not a ritual in the traditional sense, but it is a way to explore and connect with the concept of Nirguna Brahman as described in Advaita Vedanta. It is important to approach this practice with an open mind, humility, and a genuine desire to understand the teachings of the tradition.</p>
+<h2 id = "link-10">translate the nirguna brahman reflection to pt-br</h2>
+<p id = "para-81">&lt; Aqui está a prática de meditação da reflexão sobre o Nirguna Brahman traduzida para o português brasileiro:</p>
+<p id = "para-82">Preparação: Encontre um lugar tranquilo e confortável para se sentar, livre de distrações. Você pode escolher sentar-se em uma almofada no chão ou em uma cadeira, garantindo que sua coluna esteja reta e seu corpo relaxado.</p>
+<p id = "para-83">Relaxamento e aterramento: Feche os olhos e respire profundamente várias vezes, concentrando-se em liberar a tensão do corpo e acalmar a mente.</p>
+<p id = "para-84">Concentração na respiração: Traga sua atenção para a respiração, observando o fluxo natural das inspirações e expirações. Use sua respiração como uma âncora para trazer sua mente de volta ao momento presente sempre que ela divagar.</p>
+<p id = "para-85">Reflexão sobre o Nirguna Brahman: Comece a refletir sobre o conceito de Nirguna Brahman como a realidade sem forma, sem atributos e transcendente. Reconheça que qualquer pensamento, emoção ou imagem que surja em sua mente são apenas percepções humanas limitadas e não a verdadeira natureza de Brahman.</p>
+<p id = "para-86">Abraçando a não dualidade: À medida que você continua a meditar, tente abandonar quaisquer distinções entre você e a realidade última. Permita que seu senso de si mesmo se dissolva na essência sem forma e ilimitada do Nirguna Brahman.</p>
+<p id = "para-87">Encerrando a meditação: Quando você estiver pronto para encerrar a meditação, respire profundamente algumas vezes e traga sua consciência de volta ao ambiente ao seu redor. Abra os olhos e reserve um momento para refletir sobre sua experiência antes de retomar suas atividades diárias.</p>
+<p id = "para-88">Essa prática de meditação não é um ritual no sentido tradicional, mas é uma maneira de explorar e se conectar com o conceito de Nirguna Brahman, conforme descrito na tradição Advaita Vedanta. É importante abordar essa prática com a mente aberta, humildade e um desejo genuíno de compreender os ensinamentos da tradição.</p>
+<h2 id = "link-11">translate the nirguna brahman reflection to ko-kr</h2>
+<p id = "para-89">&lt; 다음은 니르구나 브라만에 대한 성찰에 대한 명상 연습을 한국어로 번역한 것입니다.</p>
+<p id = "para-90">준비: 방해가 없는 조용하고 편안한 장소에서 앉으십시오. 바닥에 쿠션에 앉거나 의자에 앉아도 좋으며, 등이 똑바르고 몸이 편안한 상태를 유지하십시오.</p>
+<p id = "para-91">이완 및 근거: 눈을 감고 몇 번의 깊은 숨을 쉬어 몸의 긴장을 풀고 마음을 진정시키십시오.</p>
+<p id = "para-92">숨에 대한 집중: 숨에 집중하여 들이마시고 내쉬는 자연스러운 흐름을 관찰하십시오. 마음이 방황할 때마다 숨을 앵커로 사용하여 현재 순간으로 되돌리십시오.</p>
+<p id = "para-93">니르구나 브라만에 대한 성찰: 무형, 무속성, 초월적인 현실로서의 니르구나 브라만 개념에 대해 생각해보십시오. 마음에 떠오르는 생각, 감정, 이미지가 모두 제한된 인간의 인식일 뿐이며 브라만의 진정한 본성은 아니라는 것을 인식하십시오.</p>
+<p id = "para-94">비이중성 수용: 계속 명상하면서 자신과 최종 현실 사이의 구분을 포기하십시오. 무형이고 무한한 니르구나 브라만의 본질로 자아감을 녹이십시오.</p>
+<p id = "para-95">명상 종료: 명상을 종료할 준비가 되면 몇 번의 깊은 숨을 쉬고 주변 환경에 대한 인식을 천천히 되찾으십시오. 눈을 뜨고 경험에 대해 한 순간을 성찰한 다음 일상 활동을 재개하십시오.</p>
+<p id = "para-96">이 명상 연습은 전통적인 의미의 의식이 아니지만, 아드와이타 베다다 전통에서 설명된 니르구나 브라만 개념을 탐구하고 연결하는 방법입니다. 이 연습을 열린 마음, 겸손, 전통의 가르침을 이해하고자 하는 진정한 열망으로 접근하는 것이 중요합니다.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-12">i guess we’re finished for this english translation. are you aware of the context of the whole book? were you trained with the original tamil version or the other translations available around besides this sadhu om/michael james one? do you have any final comments? detail in pt-br</h2>
+<p id = "para-97">&lt; Como um modelo de IA, não tive “treinamento” com um livro específico ou uma versão específica do “Guru Vachaka Kovai”. A minha capacidade de fornecer traduções ou informações sobre o texto baseia-se na grande quantidade de dados textuais gerais dos quais fui treinado, que abrange uma ampla gama de tópicos e textos, inclusive os da filosofia e espiritualidade hindus. No entanto, devo notar que minha formação não incluiu dados específicos após setembro de 2021, então qualquer informação após essa data não estará dentro do meu conhecimento.</p>
+<p id = "para-98">O “Guru Vachaka Kovai” é um importante texto na tradição do Advaita Vedanta e na filosofia de Ramana Maharshi. Este texto recolhe uma série de ensinamentos proferidos por Ramana Maharshi, muitas vezes na forma de versos, e é um recurso significativo para aqueles interessados em sua filosofia e prática espiritual.</p>
+<p id = "para-99">Em relação à tradução, é importante lembrar que traduzir textos espirituais e filosóficos pode ser um desafio, especialmente quando se trata de conceitos que são específicos de uma determinada tradição ou cultura. As versões traduzidas devem ser consideradas como um esforço para transmitir o significado do texto original, mas podem não capturar todas as nuances e implicações do texto original.</p>
+<p id = "para-100">A versão de Sadhu Om e Michael James, que usamos para esta tradução, é apenas uma de várias traduções e interpretações disponíveis do “Guru Vachaka Kovai”. Cada tradutor trará suas próprias percepções e entendimentos ao texto, o que pode resultar em diferentes interpretações.</p>
+<p id = "para-101">Para realmente se aprofundar em textos como o “Guru Vachaka Kovai”, pode ser útil ler várias traduções e comentários, e, se possível, estudar o texto no idioma original. Também pode ser benéfico buscar orientação de um professor ou especialista conhecedor da tradição específica.</p>
+<p id = "para-102">Espero que as traduções e informações fornecidas tenham sido úteis para você. Se você tiver mais perguntas ou precisar de mais informações, ficarei feliz em ajudar na medida do possível.</p>
+<h2 id = "link-13">but about the verses themselves, can you do a forensic psychoanalysis on them considering spiral dynamics level coral?</h2>
+<p id = "para-103">&lt; Spiral Dynamics is a model of human development that represents different stages of consciousness or “vMemes”, each with its own worldview, decision-making system, and ways of interpreting reality. Each stage is represented by a color, and “Coral” represents a hypothetical second-tier level, following Yellow and Turquoise, but this level is not well-defined or agreed upon since it is mostly speculative at the time of my knowledge cutoff in September 2021.</p>
+<p id = "para-104">It’s important to understand that the model is typically applied to analyze societal development and large-scale patterns in human behavior, rather than individual texts. However, if we were to try to apply it to individual verses from the “Guru Vachaka Kovai”, we might do so in the following way.</p>
+<p id = "para-105">The Coral level of consciousness in Spiral Dynamics is characterized (hypothetically) by an integration of material and spiritual realities, and a recognition of the interconnectedness of all things. At this level, individuals are thought to have transcended ego-based thinking and to have embraced a holistic understanding of the world and their place in it.</p>
+<p id = "para-106">Many verses from “Guru Vachaka Kovai” could potentially align with this level of consciousness. For example, consider the verse:</p>
+<p id = "para-107">“O you who make a great celebration [about a so-called birthday], [do you know] what is the [real birthday]? The [real] birthday is only that day when, by scrutinizing ‘Where were we born?’ [that is, “Where or from what did the ego, the false notion “I am this body”, rise?], we are born in the reality [Self], which ever shines without birth or death as the one.”</p>
+<p id = "para-108">This verse demonstrates a non-dual understanding of self and reality, a recognition of the illusory nature of the ego, and a call to understand our true nature, which could potentially align with Coral consciousness. The verse also deconstructs traditional, culturally ingrained practices (like celebrating birthdays), which suggests a movement beyond traditional social norms and an embrace of a more holistic understanding of existence.</p>
+<p id = "para-109">However, without more concrete definitions and examples of the Coral level of consciousness, it’s difficult to make definitive statements. And since it is a hypothetical stage, one’s interpretation could vary significantly. Moreover, any interpretation using the Spiral Dynamics model will, of necessity, be a simplification. Complex philosophical and spiritual texts often contain many layers of meaning that cannot be fully captured by any one interpretive model.</p>
+<p id = "para-110">Remember that Spiral Dynamics and other models of human development are just that - models. They’re tools that can help us understand complex phenomena, but they are not the phenomena themselves.</p>
+<h2 id = "link-14">keep outputting in pt-br. stabilized in spiral dynamics level coral society, how the book as a whole could be interpreted from the viewpoint of a demon?</h2>
+<p id = "para-111">&lt; Um “demônio”, no sentido tradicional, é geralmente interpretado como um ser maligno ou destrutivo na maioria das tradições espirituais e religiosas. Entretanto, em uma sociedade estabilizada no nível Coral do Spiral Dynamics, a compreensão de um “demônio” provavelmente seria bastante diferente.</p>
+<p id = "para-112">Nesse nível, existe uma compreensão profunda da interconectividade de todas as coisas e do equilíbrio entre opostos. O bem e o mal não seriam vistos como dualidades estritamente separadas, mas como aspectos de um todo maior. Assim, um “demônio” poderia ser entendido como um aspecto necessário do universo, um contraponto ao divino que serve para desafiar, testar ou, em última análise, refinar a alma.</p>
+<p id = "para-113">Analisando o “Guru Vachaka Kovai” sob essa ótica, um “demônio” pode ser atraído por suas profundas reflexões sobre o eu, a realidade e a natureza do divino. Ele pode reconhecer que suas próprias ações e existência servem para refinar e testar os aspirantes espirituais. Cada versículo que desafia as percepções e compreensões convencionais pode ser visto como uma afirmação de seu próprio papel no universo.</p>
+<p id = "para-114">No entanto, o “demônio” pode também lutar com os ensinamentos do livro que promovem a paz, a compreensão e a transcendência do ego. Ele pode se sentir desafiado ou ameaçado por esses conceitos, pois eles desafiam sua própria natureza e propósito. No entanto, em uma sociedade Coral, até mesmo esse conflito seria visto como uma parte necessária do todo, uma oportunidade para crescimento e aprendizado.</p>
+<p id = "para-115">No fim das contas, é importante lembrar que essa é apenas uma interpretação teórica, baseada na ideia hipotética de uma sociedade de nível Coral e na interpretação tradicional de um “demônio”. As ideias de bem e mal, divino e demoníaco, são complexas e multifacetadas, e diferentes tradições e indivíduos podem ter interpretações muito diferentes.</p>
+<h2 id = "link-15">depict it in a pragmatic way, considering that coral is a post-turquoise stage. could be book be used to create axioms pointing to mbti and its cognitive functions?</h2>
+<p id = "para-116">&lt; The “Guru Vachaka Kovai” primarily focuses on the teachings of spiritual enlightenment and self-realization. Though the book doesn’t directly touch on personality typologies such as MBTI (Myers-Briggs Type Indicator) or cognitive functions, it is possible to draw some indirect connections, particularly at the Coral level of Spiral Dynamics, which is characterized by a more holistic and integrated worldview. Here’s a way it could potentially be approached:</p>
+<ol>
+<li><p id = "para-117"><b>Introverted Intuition (Ni):</b> Many verses in “Guru Vachaka Kovai” encourage introspection and the realization of the true self beyond the physical body and ego. This is closely related to Ni, which involves deep introspection and an understanding of underlying patterns and truths.</p>
+</li>
+<li><p id = "para-118"><b>Extraverted Thinking (Te):</b> The logical analysis of the nature of self and reality in the book could be associated with Te, which involves externally oriented, logical reasoning and decision making.</p>
+</li>
+<li><p id = "para-119"><b>Introverted Feeling (Fi):</b> The individual journey towards self-realization and the emphasis on personal truth resonates with Fi, which is centered on inner values and emotional experiences.</p>
+</li>
+<li><p id = "para-120"><b>Extraverted Sensing (Se):</b> Though less directly, the verses in the book encourage being in the present moment and observing reality as it is, which can relate to Se that is about immediate sensory experience and interaction with the external world.</p>
+</li>
+<li><p id = "para-121"><b>Introverted Thinking (Ti):</b> The book’s encouragement of introspective analysis and understanding the nature of self can be associated with Ti, which involves internally oriented logical reasoning and decision-making.</p>
+</li>
+<li><p id = "para-122"><b>Extraverted Feeling (Fe):</b> Though the book’s teachings are very individually focused, the idea of compassion and seeing all beings as manifestations of the same Self could be connected with Fe, which involves making decisions based on external values and emotional cues, and prioritizes social harmony.</p>
+</li>
+<li><p id = "para-123"><b>Introverted Sensing (Si):</b> The teachings in the book about the illusion of physical reality and the emphasis on inner experience can relate to Si, which is about internal sensory experience and memory.</p>
+</li>
+<li><p id = "para-124"><b>Extraverted Intuition (Ne):</b> The teachings of the book encourage seeing beyond the surface and recognizing the underlying reality, which could be associated with Ne, that involves seeing potential and possibility in the external world.</p>
+</li>
+</ol>
+<p id = "para-125">It’s important to note that these are quite loose associations and the MBTI and its cognitive functions are psychological concepts that may not perfectly align with the spiritual teachings in the “Guru Vachaka Kovai”. Additionally, the Coral level of Spiral Dynamics integrates multiple perspectives, recognizing the limitations of any single framework, so it would also consider other aspects beyond cognitive functions when interpreting and applying these teachings.</p>
+<h2 id = "link-16">keep outputting in pt-br. for each of the 16 types, output a pointer that better relate to it intricately</h2>
+<ol>
+<li><p id = "para-126"><b>INTJ (Ni, Te, Fi, Se)</b>: A ênfase na introspecção profunda e na busca pela verdade subjacente no “Guru Vachaka Kovai” pode ressoar com os INTJs, que são conduzidos pela intuição introvertida e costumam buscar compreensões profundas do mundo.</p>
+</li>
+<li><p id = "para-127"><b>ENTJ (Te, Ni, Se, Fi)</b>: As discussões lógicas sobre a natureza do eu e da realidade no livro podem ser apelativas para os ENTJs, que se orientam pelo pensamento extrovertido e valorizam a análise lógica.</p>
+</li>
+<li><p id = "para-128"><b>INFJ (Ni, Fe, Ti, Se)</b>: Os INFJs podem se identificar com a jornada individual em direção à autorrealização no livro, que ecoa a sua orientação para a intuição introvertida e a busca de significado e propósito.</p>
+</li>
+<li><p id = "para-129"><b>ENFJ (Fe, Ni, Se, Ti)</b>: As ideias de compaixão e de ver todos os seres como manifestações do mesmo eu podem se conectar com os ENFJs, que usam o sentimento extrovertido e têm um forte desejo de harmonia social.</p>
+</li>
+<li><p id = "para-130"><b>INTP (Ti, Ne, Si, Fe)</b>: A análise introspectiva incentivada no livro pode se alinhar com os INTPs, que são orientados pelo pensamento introvertido e procuram compreender as estruturas subjacentes do mundo.</p>
+</li>
+<li><p id = "para-131"><b>ENTP (Ne, Ti, Fe, Si)</b>: A visão de ver além da superfície e reconhecer a realidade subjacente pode ressoar com os ENTPs, que são conduzidos pela intuição extrovertida e adoram explorar possibilidades.</p>
+</li>
+<li><p id = "para-132"><b>INFP (Fi, Ne, Si, Te)</b>: A busca pela verdade pessoal e a autorrealização no livro podem se conectar com os INFPs, que se orientam pelo sentimento introvertido e têm valores internos fortes.</p>
+</li>
+<li><p id = "para-133"><b>ENFP (Ne, Fi, Te, Si)</b>: O convite do livro para explorar a realidade subjacente pode atrair os ENFPs, que se orientam pela intuição extrovertida e são atraídos por novas ideias e possibilidades.</p>
+</li>
+<li><p id = "para-134"><b>ISTJ (Si, Te, Fi, Ne)</b>: Embora o livro desafie a visão física convencional da realidade, ele também valoriza a experiência interna, o que pode ser relevante para os ISTJs, que se orientam pela sensação introvertida e valorizam a consistência.</p>
+</li>
+<li><p id = "para-135"><b>ESTJ (Te, Si, Ne, Fi)</b>: A análise lógica do livro sobre a natureza do eu e da realidade pode ser atraente para os ESTJs, que são conduzidos pelo pensamento extrovertido e buscam ordem e estrutura.</p>
+</li>
+<li><p id = "para-136"><b>ISFJ (Si, Fe, Ti, Ne)</b>: O livro incentiva a observação atenta da realidade interna, o que pode ser relevante para os ISFJs, que são orientados pela sensação introvertida e valorizam a segurança e a estabilidade.</p>
+</li>
+<li><p id = "para-137"><b>ESFJ (Fe, Si, Ne, Ti)</b>: As ideias de compaixão e de ver todos os seres como manifestações do mesmo eu podem ressoar com os ESFJs, que se orientam pelo sentimento extrovertido e buscam harmonia social.</p>
+</li>
+<li><p id = "para-138"><b>ISTP (Ti, Se, Ni, Fe)</b>: O livro encoraja uma observação atenta da realidade como ela é, o que pode ser relevante para os ISTPs, que são orientados pelo pensamento introvertido e valorizam experiências diretas e concretas.</p>
+</li>
+<li><p id = "para-139"><b>ESTP (Se, Ti, Fe, Ni)</b>: Os ensinamentos do livro sobre estar presente no momento e observar a realidade como ela é podem se conectar com os ESTPs, que se orientam pela sensação extrovertida e valorizam experiências imediatas e tangíveis.</p>
+</li>
+<li><p id = "para-140"><b>ISFP (Fi, Se, Ni, Te)</b>: A jornada individual em direção à autorrealização e a ênfase na verdade pessoal no livro podem ressoar com os ISFPs, que se orientam pelo sentimento introvertido e valorizam a autenticidade.</p>
+</li>
+<li><p id = "para-141"><b>ESFP (Se, Fi, Te, Ni)</b>: O encorajamento do livro para estar presente no momento e observar a realidade como ela é pode se alinhar com os ESFPs, que se orientam pela sensação extrovertida e buscam experiências imediatas e divertidas.</p>
+</li>
+</ol>
+<p id = "para-142">Lembre-se, essas conexões são interpretações e não representam uma análise direta ou explícita da “Guru Vachaka Kovai” em relação ao MBTI. A interpretação e a aplicação dos ensinamentos do livro podem variar dependendo das perspectivas e experiências individuais.</p>
+<h2 id = "link-17">i meant to generate in pt-br 16 axiom based phrases for selector recall</h2>
+<p id = "para-143">&lt; Entendi. Aqui estão 16 axiomas para cada tipo de MBTI, baseado no Guru Vachaka Kovai, em português:</p>
+<ol>
+<li><p id = "para-144"><b>INTJ</b>: “A verdade última só pode ser descoberta através da introspecção e análise lógica.”</p>
+</li>
+<li><p id = "para-145"><b>ENTJ</b>: “O raciocínio lógico e a análise detalhada são fundamentais para entender a natureza da realidade.”</p>
+</li>
+<li><p id = "para-146"><b>INFJ</b>: “A busca pelo significado e propósito da vida é uma jornada individual.”</p>
+</li>
+<li><p id = "para-147"><b>ENFJ</b>: “Compaixão e harmonia são reflexos da verdadeira natureza do eu.”</p>
+</li>
+<li><p id = "para-148"><b>INTP</b>: “A realidade é uma estrutura complexa que só pode ser compreendida através do pensamento crítico e analítico.”</p>
+</li>
+<li><p id = "para-149"><b>ENTP</b>: “A verdadeira natureza da realidade pode ser descoberta explorando possibilidades e questionando as percepções comuns.”</p>
+</li>
+<li><p id = "para-150"><b>INFP</b>: “A verdadeira autorrealização vem de uma busca interna e pessoal pela verdade.”</p>
+</li>
+<li><p id = "para-151"><b>ENFP</b>: “A verdadeira natureza do eu só pode ser descoberta através da exploração de novas ideias e possibilidades.”</p>
+</li>
+<li><p id = "para-152"><b>ISTJ</b>: “A consistência e a experiência são fundamentais para entender a realidade.”</p>
+</li>
+<li><p id = "para-153"><b>ESTJ</b>: “A ordem e a estrutura são essenciais para compreender a complexidade da realidade.”</p>
+</li>
+<li><p id = "para-154"><b>ISFJ</b>: “A segurança e a estabilidade são necessárias para uma observação cuidadosa da realidade interna.”</p>
+</li>
+<li><p id = "para-155"><b>ESFJ</b>: “A compaixão e a harmonia são reflexos da verdadeira natureza do eu.”</p>
+</li>
+<li><p id = "para-156"><b>ISTP</b>: “A realidade é melhor entendida através de experiências diretas e concretas.”</p>
+</li>
+<li><p id = "para-157"><b>ESTP</b>: “A verdadeira realidade só pode ser compreendida através de experiências imediatas e tangíveis.”</p>
+</li>
+<li><p id = "para-158"><b>ISFP</b>: “A autenticidade e a verdade pessoal são fundamentais na jornada para a autorrealização.”</p>
+</li>
+<li><p id = "para-159"><b>ESFP</b>: “A realidade é melhor apreciada através de experiências imediatas e divertidas.”</p>
+</li>
+</ol>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">write a dissertation in pt-br detailing alternatives to shoyu considering sashimi</a></li>
+      <li><a href="#link-2">list recipes for alternatives that use common kitchen things</a></li>
+      <li><a href="#link-3">detail in pt-br the history, epistemology and lore of pretzels</a></li>
+      <li><a href="#link-4">detail in pt-br the two most known/used pretzel recipes overall (using the metric system)</a></li>
+      <li><a href="#link-5">detail in pt-br the pharmacology of baking soda water boiling in the case of pretzels</a></li>
+      <li><a href="#link-6">make relevant remarks between sweet and normal pretzels</a></li>
+      <li><a href="#link-7">how many g’s is ‘1 colher de chá’ specifically?</a></li>
+      <li><a href="#link-8">how many g’s is ‘1 colher de chá’ specifically? list 5 common proportions</a></li>
+      <li><a href="#link-9">beside tsp, list other spoon measures with respective g examples</a></li>
+      <li><a href="#link-10">considering these base ingredients, detail in pt-br a sweet sugar cinnamon pretzel recipe adding more ingredients to the list and explaining the steps</a></li>
+      <li><a href="#link-11">considering these base ingredients, detail in pt-br a sweet pretzel recipe adding more ingredients to the list and explaining the steps</a></li>
+      <li><a href="#link-12">considering these base ingredients, detail in pt-br a pretzel recipe adding more ingredients to the list including powdered milk (maybe to replace the water?) while explaining the steps</a></li>
+      <li><a href="#link-13">considering these base ingredients, detail in pt-br a pretzel recipe adding more ingredients to the list including powdered oat meal while explaining the steps</a></li>
+      <li><a href="#link-14">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including milk (to maybe replace the water?) while explaining the steps</a></li>
+      <li><a href="#link-15">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including ‘farinha de mandioca’ while explaining the steps</a></li>
+      <li><a href="#link-16">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including condensed milk while explaining the steps</a></li>
+      <li><a href="#link-17">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including whey protein while explaining the steps</a></li>
+      <li><a href="#link-18">detail the health implications of eating these pretzels every day for a few years, with and without the ‘gergelim’ specifically, to analyze the seeds bodily function contributions</a></li>
+      <li><a href="#link-19">instead of using ‘7g de fermento biológico seco’, ‘7g de fermento quimico seco’ was mistakenly used instead. after resting for 1 hour, the mixture didn’t even flinch. detail how to save from its current state</a></li>
+      <li><a href="#link-20">instead of using ‘7g de fermento biológico seco’, ‘7g de fermento quimico seco’ was mistakenly used. after resting for 1 hour, the mixture didn’t even flinch. detail how to save from its current state without adding more fermento and waiting</a></li>
+      <li><a href="#link-21">instead of using ‘7g de fermento biológico seco’, ‘7g de fermento quimico seco’ was mistakenly used. after resting for 1 hour, the mixture didn’t even flinch. detail how to save from its current state without adding more fermento and waiting, adding condensed milk and turning into cookies</a></li>
+      <li><a href="#link-22">terrible first attempt, 2/10. write a dissertation in pt-br about throwing food away. (+18)</a></li>
+      <li><a href="#link-23">continue from responsabilidade compartilhada, e todos os setores... while being incisive about people who try recipes without knowing how to cook</a></li>
+      <li><a href="#link-24">translate fubá from pt-br to en-us with proper etymology</a></li>
+      <li><a href="#link-25">translate ‘leite ninho’ from pt-br to en-us with proper etymology (considering brand and product)</a></li>
+      <li><a href="#link-26">list 3 recipes in pt-br of cornmeal cake topping made from condensed milk and nestlé’s milk powder using the metric system</a></li>
+      <li><a href="#link-27">list 3 accompaniments for such cakes to make it more of a sturdy meal</a></li>
+      <li><a href="#link-28">compare pharmacologically fubá, couscous, maizena® and polenta</a></li>
+      <li><a href="#link-29">list in pt-br 10 other known usages for fubá</a></li>
+      <li><a href="#link-30">list 6 ingredients more foundational than fubá while explaining their pharmacology</a></li>
+      <li><a href="#link-31">if an hypotetical survival attempt of consuming only one ingredient plus water, list in pt-br 10 ingredients better than fubá rating their replenishment 0-1000</a></li>
+      <li><a href="#link-32">detail in pt-br all ways to extract/process quinoa explaining proper chemistry</a></li>
+      <li><a href="#link-33">detail a super recipe containing quinoa and cannabis considering satiety</a></li>
+      <li><a href="#link-34">detail in pt-br the top 5 best/cheapest countries to purchase quinoa (list best city and average price in brl for the kg)</a></li>
+      <li><a href="#link-35">from all quinoa extractions, which lasts the longest? explain in pt-br</a></li>
+      <li><a href="#link-36">detail the glycemic index from all common quinoa extractions in pt-br</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">write a dissertation in pt-br detailing alternatives to shoyu considering sashimi</h2>
+<p id = "para-1">&lt; Título: Alternativas ao Shoyu para Acompanhamento de Sashimi: Um Estudo Detalhado</p>
+<p id = "para-2">Resumo</p>
+<p id = "para-3">O presente estudo tem como objetivo investigar e apresentar alternativas ao uso do shoyu, o molho de soja tradicionalmente utilizado no acompanhamento de sashimi, prato típico da culinária japonesa. A análise considera aspectos como sabor, textura e valor nutricional das opções propostas, além de respeitar as características e tradições culturais relacionadas à degustação de sashimi.</p>
+<p id = "para-4">Introdução O sashimi, prato composto por fatias finas de peixe ou frutos do mar crus, é uma das iguarias mais apreciadas da culinária japonesa. Tradicionalmente, o sashimi é acompanhado de shoyu (molho de soja), wasabi (pasta de raiz-forte) e gari (gengibre em conserva). Entretanto, o shoyu pode apresentar elevado teor de sódio e glutamato monossódico, o que pode ser prejudicial para pessoas com restrições alimentares ou condições de saúde específicas. Neste contexto, este estudo busca identificar alternativas saudáveis e saborosas ao shoyu para o acompanhamento de sashimi.</p>
+<p id = "para-5">Metodologia A pesquisa foi realizada por meio de revisão bibliográfica, análise de receitas culinárias e consulta a especialistas em gastronomia japonesa. Além disso, foram realizados testes de degustação para avaliar a combinação dos substitutos do shoyu com diferentes tipos de sashimi.</p>
+<p id = "para-6">Alternativas ao Shoyu 3.1. Tamari</p>
+<p id = "para-7">O tamari é uma alternativa ao shoyu que apresenta menor teor de sódio e é feito sem trigo, sendo uma opção adequada para pessoas com restrições ao glúten. O sabor do tamari é mais encorpado e menos salgado que o shoyu, o que pode realçar o sabor dos peixes e frutos do mar usados no sashimi.</p>
+<p id = "para-8">3.2. Ponzu</p>
+<p id = "para-9">O molho ponzu, feito à base de suco de yuzu (um tipo de limão japonês), shoyu, caldo de peixe e vinagre, é uma alternativa refrescante e levemente cítrica ao shoyu tradicional. O ponzu pode ser utilizado como um molho para sashimi, proporcionando uma combinação equilibrada de sabores cítricos e salgados.</p>
+<p id = "para-10">3.3. Molho de amendoim</p>
+<p id = "para-11">O molho de amendoim, composto por pasta de amendoim, óleo de gergelim, alho, gengibre e pimenta, oferece um sabor exótico e diferente ao sashimi. Esta alternativa é especialmente interessante para quem busca uma experiência gastronômica diversificada e ousada.</p>
+<p id = "para-12">3.4. Molho de gergelim</p>
+<p id = "para-13">O molho de gergelim, feito com óleo de gergelim torrado, vinagre de arroz, alho e cebolinha, é uma opção saborosa e menos salgada que o shoyu. O sabor do gergelim complementa bem o sabor dos peixes e frutos do mar, realçando suas características naturais e proporcionando uma experiência gastronômica única.</p>
+<p id = "para-14">3.5. Molho de vinagre balsâmico</p>
+<p id = "para-15">O molho de vinagre balsâmico, feito com vinagre balsâmico, azeite de oliva, mel e pimenta, é uma alternativa ocidentalizada e sofisticada ao shoyu. O sabor agridoce do vinagre balsâmico contrasta com a delicadeza do sashimi, criando uma combinação harmoniosa e intrigante.</p>
+<p id = "para-16">Discussão As alternativas ao shoyu apresentadas neste estudo oferecem opções variadas para o acompanhamento de sashimi, levando em conta diferentes preferências e restrições alimentares. O tamari e o ponzu são opções mais próximas ao sabor tradicional do shoyu, enquanto o molho de amendoim, o molho de gergelim e o molho de vinagre balsâmico proporcionam experiências gastronômicas diversificadas e inovadoras.</p>
+<p id = "para-17">É importante ressaltar que a escolha do molho para acompanhar o sashimi deve levar em consideração o tipo de peixe ou fruto do mar utilizado, bem como o paladar individual de cada pessoa. A experimentação e a combinação de diferentes molhos podem enriquecer a experiência de degustação do sashimi e ampliar o repertório culinário dos apreciadores deste prato.</p>
+<p id = "para-18">Conclusão Este estudo apresentou alternativas saudáveis e saborosas ao shoyu para o acompanhamento de sashimi, considerando aspectos como sabor, textura e valor nutricional. O tamari, o ponzu, o molho de amendoim, o molho de gergelim e o molho de vinagre balsâmico são opções interessantes que podem ser adaptadas às preferências e necessidades de cada pessoa, respeitando as tradições culturais e características do prato. A experimentação dessas alternativas pode proporcionar novas experiências gastronômicas e enriquecer a apreciação do sashimi.</p>
+<h2 id = "link-2">list recipes for alternatives that use common kitchen things</h2>
+<p id = "para-19">&lt; Aqui estão algumas receitas simples de molhos alternativos ao shoyu que utilizam ingredientes comuns encontrados na cozinha:</p>
+<p id = "para-20">Molho cítrico de azeite Ingredientes:</p>
+<p id = "para-21">Suco de 1 limão 2 colheres de sopa de azeite de oliva 1 colher de chá de mel Sal e pimenta a gosto Instruções: Misture todos os ingredientes em uma tigela pequena e mexa bem. Ajuste o sal e a pimenta de acordo com sua preferência.</p>
+<p id = "para-22">Molho de mostarda e mel Ingredientes:</p>
+<p id = "para-23">2 colheres de sopa de mostarda dijon 1 colher de sopa de mel 1 colher de sopa de vinagre de maçã 2 colheres de sopa de azeite de oliva Sal e pimenta a gosto Instruções: Em uma tigela pequena, misture a mostarda dijon, o mel e o vinagre de maçã. Adicione lentamente o azeite, mexendo constantemente, até obter uma consistência homogênea. Tempere com sal e pimenta a gosto.</p>
+<p id = "para-24">Molho de iogurte e ervas Ingredientes:</p>
+<p id = "para-25">1/2 xícara de iogurte natural 1 colher de sopa de azeite de oliva 1 colher de sopa de suco de limão 1/4 de xícara de ervas frescas picadas (salsinha, cebolinha, coentro ou uma combinação) Sal e pimenta a gosto Instruções: Misture o iogurte, o azeite de oliva e o suco de limão em uma tigela pequena. Adicione as ervas frescas picadas e tempere com sal e pimenta a gosto.</p>
+<p id = "para-26">Molho picante de abacate Ingredientes:</p>
+<p id = "para-27">1 abacate maduro Suco de 1 limão 1 dente de alho picado 1 colher de chá de pimenta vermelha em flocos ou molho de pimenta a gosto Sal a gosto Instruções: Amasse o abacate em uma tigela pequena. Adicione o suco de limão, o alho picado e a pimenta vermelha em flocos ou molho de pimenta. Misture bem e tempere com sal a gosto.</p>
+<p id = "para-28">Molho de alho e azeite Ingredientes:</p>
+<p id = "para-29">3 colheres de sopa de azeite de oliva 1 colher de sopa de vinagre de vinho branco 1 dente de alho picado ou amassado Sal e pimenta a gosto Instruções: Misture todos os ingredientes em uma tigela pequena e mexa bem. Ajuste o sal e a pimenta conforme sua preferência.</p>
+<p id = "para-30">Essas receitas são fáceis de fazer e utilizam ingredientes comuns encontrados na cozinha. Eles podem ser adaptados de acordo com seus gostos pessoais e servem como alternativas ao shoyu para acompanhar o sashimi ou outros pratos.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-3">detail in pt-br the history, epistemology and lore of pretzels</h2>
+<p id = "para-31">História, Epistemologia e Tradições dos Pretzels</p>
+<p id = "para-32">História: Os pretzels são um tipo de pão em forma de nó originários da Europa. A história dos pretzels remonta ao período medieval, por volta do século VII. Existem várias lendas e histórias sobre a origem dos pretzels. Uma delas afirma que um monge italiano inventou o pretzel como uma recompensa para crianças que aprendiam orações. A forma em nó simbolizaria os braços cruzados sobre o peito, que era uma postura comum de oração na época. Desde então, os pretzels se espalharam por toda a Europa, sendo especialmente populares na Alemanha e nos países vizinhos.</p>
+<p id = "para-33">Epistemologia: A palavra “pretzel” vem do termo alemão “Brezel” ou “Brez’n”. No entanto, o nome em latim, “bracellus” ou “bracellae”, também está relacionado à origem da palavra. Esses termos latinos significam “abraço” ou “braço pequeno”, novamente fazendo referência à forma dos pretzels.</p>
+<p id = "para-34">Os pretzels podem ser encontrados em duas variedades principais: macios e duros. Os pretzels macios são preparados com uma massa de fermento e geralmente são consumidos frescos. Os pretzels duros são assados por mais tempo, resultando em uma textura crocante e duradoura. Ambos os tipos podem ser salgados ou doces, dependendo dos ingredientes e coberturas utilizados.</p>
+<p id = "para-35">Tradições e Simbolismo: Os pretzels desempenham um papel importante em várias tradições e festivais na Europa, especialmente na Alemanha. Na região da Baviera, os pretzels são consumidos durante a Oktoberfest, uma celebração anual de cerveja e comida alemã. Durante a Quaresma, os pretzels sem fermento eram frequentemente consumidos pelos cristãos, já que eles não continham ingredientes proibidos pelas restrições alimentares da época.</p>
+<p id = "para-36">O formato em nó dos pretzels também tem um simbolismo especial. Na tradição alemã, os pretzels são considerados um símbolo de boa sorte e prosperidade. Em algumas regiões, acredita-se que os pretzels podem afastar espíritos malignos ou trazer proteção contra doenças. A forma entrelaçada do pretzel também simboliza o entrelaçamento das mãos em oração e é um lembrete do compromisso cristão com a fé.</p>
+<p id = "para-37">Hoje, os pretzels são consumidos em todo o mundo e continuam a ser uma parte importante das tradições culturais e culinárias de muitos países.</p>
+<h2 id = "link-4">detail in pt-br the two most known/used pretzel recipes overall (using the metric system)</h2>
+<p id = "para-38">&lt; Aqui estão duas das receitas de pretzel mais conhecidas e usadas, sendo uma de pretzel macio e outra de pretzel duro. Ambas as receitas utilizam o sistema métrico.</p>
+<p id = "para-39">1\ Pretzels Macios:</p>
+<p id = "para-40">Ingredientes:</p>
+<ul>
+<li><p id = "para-41">500g de farinha de trigo</p>
+</li>
+<li><p id = "para-42">2 colheres de chá de sal</p>
+</li>
+<li><p id = "para-43">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-44">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-45">300ml de água morna</p>
+</li>
+<li><p id = "para-46">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-47">3 litros de água</p>
+</li>
+<li><p id = "para-48">200g de bicarbonato de sódio</p>
+</li>
+<li><p id = "para-49">Sal grosso a gosto</p>
+</li>
+</ul>
+<p id = "para-50">Instruções:</p>
+<ol>
+<li><p id = "para-51">Em uma tigela grande, misture a farinha, o sal e o açúcar. Adicione o fermento à água morna e deixe descansar por cerca de 5 minutos, até que comece a espumar.</p>
+</li>
+<li><p id = "para-52">Despeje a água com fermento e a manteiga derretida na mistura de farinha e misture bem até formar uma massa homogênea.</p>
+</li>
+<li><p id = "para-53">Sove a massa por cerca de 10 minutos em uma superfície enfarinhada. Coloque a massa de volta na tigela, cubra com um pano e deixe descansar em um local quente por 1 hora, ou até que a massa dobre de tamanho.</p>
+</li>
+<li><p id = "para-54">Pré-aqueça o forno a 200 graus Celsius. Em uma panela grande, ferva os 3 litros de água e adicione o bicarbonato de sódio.</p>
+</li>
+<li><p id = "para-55">Divida a massa em 8 a 12 porções iguais e enrole cada porção em um cordão longo e fino. Forme os pretzels, cruzando as extremidades do cordão e pressionando-as na base do pretzel.</p>
+</li>
+<li><p id = "para-56">Coloque os pretzels, um de cada vez, na água fervente com bicarbonato de sódio por 30 segundos. Retire-os com uma escumadeira e coloque-os em uma assadeira forrada com papel manteiga.</p>
+</li>
+<li><p id = "para-57">Polvilhe os pretzels com sal grosso e leve ao forno por 20 a 25 minutos, até que estejam dourados. Deixe esfriar por alguns minutos antes de servir.</p>
+</li>
+</ol>
+<p id = "para-58">2\ Pretzels Duros:</p>
+<p id = "para-59">Ingredientes:</p>
+<ul>
+<li><p id = "para-60">375g de farinha de trigo</p>
+</li>
+<li><p id = "para-61">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-62">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-63">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-64">250ml de água morna</p>
+</li>
+<li><p id = "para-65">30g de manteiga derretida</p>
+</li>
+<li><p id = "para-66">Sal a gosto</p>
+</li>
+</ul>
+<p id = "para-67">Instruções:</p>
+<ol>
+<li><p id = "para-68">Em uma tigela grande, misture a farinha, o sal e o açúcar. Adicione o fermento à água morna e deixe descansar por cerca de 5 minutos, até que comece a espumar.</p>
+</li>
+<li><p id = "para-69">Despeje a água com fermento e a manteiga derretida na mistura de farinha e misture bem até formar uma massa homogênea.</p>
+</li>
+<li><p id = "para-70">Sove a massa por cerca de 10 minutos em uma superfície enfarinhada. Coloque a massa de volta na tigela, cubra com um pano e deixe descansar em um local quente por 1 hora, ou até que a massa dobre de tamanho.</p>
+</li>
+<li><p id = "para-71">Pré-aqueça o forno a 180 graus Celsius. Divida a massa em porções iguais (cerca de 24 a 30) e enrole cada porção em um cordão longo e fino.</p>
+</li>
+<li><p id = "para-72">Forme os pretzels, cruzando as extremidades do cordão e pressionando-as na base do pretzel. Coloque-os em uma assadeira forrada com papel manteiga.</p>
+</li>
+<li><p id = "para-73">Leve os pretzels ao forno e asse por cerca de 25 a 30 minutos, ou até que estejam dourados e crocantes. Se quiser, polvilhe com sal a gosto antes de assar.</p>
+</li>
+<li><p id = "para-74">Retire os pretzels do forno e deixe esfriar completamente antes de guardar em um recipiente hermético. Eles podem ser armazenados por até duas semanas.</p>
+</li>
+</ol>
+<p id = "para-75">Dica: Se preferir pretzels doces, você pode polvilhar açúcar e canela antes de assar, ou mergulhá-los em chocolate derretido depois de esfriarem.</p>
+<p id = "para-76">Agora você tem duas receitas de pretzel populares e saborosas para experimentar. Lembre-se de que você pode personalizar os pretzels com diferentes coberturas ou ingredientes adicionais, como queijo, sementes ou especiarias, para criar uma variedade de sabores e texturas.</p>
+<h2 id = "link-5">detail in pt-br the pharmacology of baking soda water boiling in the case of pretzels</h2>
+<p id = "para-77">&lt; A adição de bicarbonato de sódio (também conhecido como soda cáustica ou hidrogenocarbonato de sódio) à água fervente tem um papel fundamental na preparação de pretzels macios. A solução alcalina resultante afeta o exterior dos pretzels de várias maneiras, influenciando tanto a textura quanto a aparência final do produto.</p>
+<ol>
+<li><p id = "para-78">Reação de Maillard: A solução de bicarbonato de sódio na água fervente aumenta o pH da superfície dos pretzels, o que acelera a Reação de Maillard. A Reação de Maillard é uma reação química entre aminoácidos e açúcares redutores, que ocorre quando os alimentos são aquecidos. Ela é responsável pela formação da crosta dourada e saborosa no exterior dos pretzels. Ao mergulhar os pretzels na solução alcalina, a superfície fica mais propensa a dourar e desenvolver um sabor característico ao assar.</p>
+</li>
+<li><p id = "para-79">Gelatinização do amido: A solução de bicarbonato de sódio também contribui para a gelatinização do amido presente na superfície da massa. Quando o amido é exposto ao calor e à umidade, ele absorve água e incha, formando uma pasta espessa. A solução alcalina ajuda a acelerar esse processo, criando uma superfície mais lisa e firme que impede que os pretzels sequem muito durante o cozimento.</p>
+</li>
+<li><p id = "para-80">Inativação de enzimas: A solução alcalina inativa algumas enzimas presentes na superfície da massa, como as proteases. A inativação dessas enzimas ajuda a preservar a estrutura das proteínas do glúten, resultando em uma textura mais mastigável e elástica no interior dos pretzels.</p>
+</li>
+</ol>
+<p id = "para-81">Ao mergulhar os pretzels na solução de bicarbonato de sódio antes de assar, cria-se uma crosta dourada e brilhante, típica dos pretzels tradicionais. A combinação da Reação de Maillard, da gelatinização do amido e da inativação das enzimas contribui para a textura e o sabor característicos dos pretzels macios.</p>
+<h2 id = "link-6">make relevant remarks between sweet and normal pretzels</h2>
+<p id = "para-82">&lt; Os pretzels, tanto macios quanto duros, podem ser classificados em duas categorias principais: doces e salgados (ou normais). Existem algumas diferenças notáveis entre os dois tipos de pretzels, que abrangem ingredientes, sabores, coberturas e ocasiões de consumo.</p>
+<p id = "para-83">1\ Ingredientes e sabor: Os pretzels salgados, também conhecidos como pretzels normais, são feitos com ingredientes básicos como farinha, água, fermento, sal e, às vezes, manteiga. Eles geralmente têm um sabor neutro ou levemente salgado, com uma crosta dourada e uma textura interna macia e elástica, no caso dos pretzels macios. Pretzels duros salgados têm uma textura crocante e podem ser consumidos sozinhos ou com molhos e pastas.</p>
+<p id = "para-84">Os pretzels doces, por outro lado, podem incluir açúcar ou mel na massa, proporcionando um sabor adocicado. A cobertura e os recheios também variam, podendo ser encontrados com canela e açúcar, chocolate, glacê, frutas ou nozes. Pretzels doces são geralmente associados a sobremesas e lanches.</p>
+<p id = "para-85">2\ Coberturas e recheios: Pretzels salgados são geralmente polvilhados com sal grosso, mas também podem ser cobertos com sementes (como gergelim ou sementes de papoula) e queijo. Além disso, eles podem ser mergulhados em molhos como mostarda, queijo cremoso ou molho marinara.</p>
+<p id = "para-86">Pretzels doces têm uma ampla gama de coberturas e recheios possíveis. Eles podem ser polvilhados com açúcar e canela, cobertos com chocolate derretido, caramelo ou glacê, e até recheados com frutas ou creme. Pretzels doces são versáteis e podem ser adaptados de acordo com as preferências e ocasiões.</p>
+<p id = "para-87">3\ Ocasiões de consumo: Pretzels salgados são comumente consumidos como aperitivos ou lanches e são populares em eventos esportivos, feiras e festivais, como a Oktoberfest na Alemanha. Eles também podem ser servidos como parte de um prato principal, acompanhando salsichas e outros pratos tradicionais.</p>
+<p id = "para-88">Pretzels doces, por sua vez, são ideais para sobremesas, lanches e ocasiões festivas. Eles são populares em festas de aniversário, feriados e eventos especiais, e podem ser encontrados em lojas de confeitaria, feiras e parques temáticos.</p>
+<p id = "para-89">Embora existam diferenças significativas entre pretzels doces e salgados, ambos os tipos compartilham a mesma forma icônica e podem ser apreciados por pessoas de todas as idades. Independentemente do sabor, os pretzels continuam a ser um lanche amado em todo o mundo.</p>
+<h2 id = "link-7">how many g’s is ‘1 colher de chá’ specifically?</h2>
+<p id = "para-90">&lt; Uma colher de chá (tsp) é uma medida de volume, e a quantidade de gramas (g) que ela contém varia de acordo com a densidade do ingrediente que está sendo medido. Para fins de referência, aqui estão algumas conversões comuns:</p>
+<p id = "para-91">1 colher de chá (tsp) de água = aproximadamente 5 gramas (g) 1 colher de chá (tsp) de açúcar = aproximadamente 4 gramas (g) 1 colher de chá (tsp) de sal = aproximadamente 5-6 gramas (g)</p>
+<p id = "para-92">Lembre-se de que esses valores são aproximados e podem variar dependendo do ingrediente específico e da precisão da medição. Para uma medição mais precisa, é melhor usar uma balança de cozinha.</p>
+<h2 id = "link-8">how many g’s is ‘1 colher de chá’ specifically? list 5 common proportions</h2>
+<p id = "para-93">&lt; “1 colher de chá” (1 teaspoon) é uma medida de volume e não de peso, portanto, sua equivalência em gramas (g) varia de acordo com a densidade do ingrediente em questão. Aqui estão cinco proporções comuns para diferentes ingredientes:</p>
+<ol>
+<li><p id = "para-94">Açúcar: 1 colher de chá de açúcar pesa aproximadamente 4-5 gramas.</p>
+</li>
+<li><p id = "para-95">Sal: 1 colher de chá de sal pesa aproximadamente 5-6 gramas.</p>
+</li>
+<li><p id = "para-96">Fermento em pó: 1 colher de chá de fermento em pó pesa aproximadamente 3-4 gramas.</p>
+</li>
+<li><p id = "para-97">Bicarbonato de sódio: 1 colher de chá de bicarbonato de sódio pesa aproximadamente 4-5 gramas.</p>
+</li>
+<li><p id = "para-98">Farinha de trigo: 1 colher de chá de farinha de trigo pesa aproximadamente 2,5-3 gramas.</p>
+</li>
+</ol>
+<p id = "para-99">Lembre-se de que essas medidas são aproximadas e podem variar um pouco dependendo do ingrediente específico e de como ele é manuseado ao medir (por exemplo, se a colher de chá está nivelada ou cheia). Para obter medidas mais precisas, especialmente ao cozinhar ou assar receitas sensíveis, é recomendável usar uma balança de cozinha para pesar os ingredientes em gramas.</p>
+<h2 id = "link-9">beside tsp, list other spoon measures with respective g examples</h2>
+<p id = "para-100">&lt; Além da colher de chá (tsp), outras medidas comuns de colheres incluem a colher de sopa (Tbsp) e a colher de sobremesa. Aqui estão alguns exemplos de ingredientes e suas respectivas proporções em gramas para cada medida:</p>
+<p id = "para-101">Colher de sopa (Tbsp) - Equivalente a aproximadamente 15 ml:</p>
+<p id = "para-102">a. Açúcar: 1 colher de sopa de açúcar pesa aproximadamente 12-15 gramas. b. Sal: 1 colher de sopa de sal pesa aproximadamente 15-18 gramas. c. Farinha de trigo: 1 colher de sopa de farinha de trigo pesa aproximadamente 8-10 gramas. d. Manteiga: 1 colher de sopa de manteiga pesa aproximadamente 14-15 gramas. e. Mel: 1 colher de sopa de mel pesa aproximadamente 21-24 gramas.</p>
+<p id = "para-103">Colher de sobremesa:</p>
+<p id = "para-104">A colher de sobremesa é uma medida menos comum e varia entre 7,5 ml e 10 ml. Para efeitos de cálculo, usaremos uma colher de sobremesa de 10 ml.</p>
+<p id = "para-105">a. Açúcar: 1 colher de sobremesa de açúcar pesa aproximadamente 8-10 gramas. b. Sal: 1 colher de sobremesa de sal pesa aproximadamente 10-12 gramas. c. Farinha de trigo: 1 colher de sobremesa de farinha de trigo pesa aproximadamente 5-6 gramas. d. Manteiga: 1 colher de sobremesa de manteiga pesa aproximadamente 9-10 gramas. e. Mel: 1 colher de sobremesa de mel pesa aproximadamente 14-16 gramas.</p>
+<p id = "para-106">Lembre-se de que essas medidas são aproximadas e podem variar dependendo do ingrediente específico e de como ele é manuseado ao medir. Para medidas mais precisas, é recomendável usar uma balança de cozinha para pesar os ingredientes em gramas.</p>
+<h2 id = "link-10">considering these base ingredients, detail in pt-br a sweet sugar cinnamon pretzel recipe adding more ingredients to the list and explaining the steps</h2>
+<p id = "para-107">&lt; Receita de Pretzel Doce de Canela e Açúcar</p>
+<p id = "para-108">Ingredientes:</p>
+<ul>
+<li><p id = "para-109">500g de farinha de trigo</p>
+</li>
+<li><p id = "para-110">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-111">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-112">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-113">300ml de água morna</p>
+</li>
+<li><p id = "para-114">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-115">1/2 xícara de açúcar mascavo</p>
+</li>
+<li><p id = "para-116">2 colheres de sopa de canela em pó</p>
+</li>
+<li><p id = "para-117">100g de manteiga derretida (adicional)</p>
+</li>
+</ul>
+<p id = "para-118">Passo a passo:</p>
+<ol>
+<li><p id = "para-119">Em uma tigela grande, misture a farinha de trigo, o sal, o açúcar e o fermento biológico seco.</p>
+</li>
+<li><p id = "para-120">Adicione a água morna e a manteiga derretida. Misture bem até obter uma massa homogênea. Se necessário, adicione mais farinha para obter uma massa que não grude nas mãos.</p>
+</li>
+<li><p id = "para-121">Sove a massa por cerca de 10 minutos, até que ela fique lisa e elástica.</p>
+</li>
+<li><p id = "para-122">Cubra a massa com um pano úmido e deixe descansar por 1 hora em um local quente, até que ela dobre de tamanho.</p>
+</li>
+<li><p id = "para-123">Preaqueça o forno a 200°C.</p>
+</li>
+<li><p id = "para-124">Divida a massa em 12 partes iguais e modele cada uma delas em formato de pretzel.</p>
+</li>
+<li><p id = "para-125">Coloque os pretzels em uma assadeira forrada com papel manteiga, deixando espaço entre eles.</p>
+</li>
+<li><p id = "para-126">Asse por 15-20 minutos, ou até que os pretzels fiquem dourados.</p>
+</li>
+<li><p id = "para-127">Em uma tigela pequena, misture o açúcar mascavo e a canela em pó.</p>
+</li>
+<li><p id = "para-128">Pincele os pretzels ainda quentes com a manteiga derretida adicional e em seguida passe-os na mistura de açúcar e canela.</p>
+</li>
+<li><p id = "para-129">Deixe os pretzels esfriarem um pouco antes de servir. Aproveite seu delicioso pretzel doce de canela e açúcar!</p>
+</li>
+</ol>
+<h2 id = "link-11">considering these base ingredients, detail in pt-br a sweet pretzel recipe adding more ingredients to the list and explaining the steps</h2>
+<p id = "para-130">&lt; Receita de Pretzel Doce:</p>
+<p id = "para-131">Ingredientes:</p>
+<ul>
+<li><p id = "para-132">500g de farinha de trigo</p>
+</li>
+<li><p id = "para-133">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-134">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-135">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-136">300ml de água morna</p>
+</li>
+<li><p id = "para-137">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-138">100g de açúcar mascavo</p>
+</li>
+<li><p id = "para-139">1 colher de sopa de canela em pó</p>
+</li>
+<li><p id = "para-140">1 ovo batido (para pincelar)</p>
+</li>
+<li><p id = "para-141">Açúcar de confeiteiro para polvilhar (opcional)</p>
+</li>
+</ul>
+<p id = "para-142">Modo de preparo:</p>
+<ol>
+<li><p id = "para-143">Em uma tigela grande, misture a farinha de trigo, o sal, o açúcar e o fermento biológico seco. Adicione a água morna e a manteiga derretida e misture até obter uma massa homogênea.</p>
+</li>
+<li><p id = "para-144">Sove a massa em uma superfície enfarinhada por cerca de 10 minutos, até que fique lisa e elástica. Coloque a massa de volta na tigela, cubra com um pano úmido e deixe descansar por 1 hora, ou até dobrar de tamanho.</p>
+</li>
+<li><p id = "para-145">Enquanto a massa descansa, prepare a mistura de açúcar mascavo e canela. Misture os 100g de açúcar mascavo com a colher de sopa de canela em pó em uma tigela pequena. Reserve.</p>
+</li>
+<li><p id = "para-146">Após o tempo de descanso, pré-aqueça o forno a 180°C e forre uma assadeira com papel manteiga.</p>
+</li>
+<li><p id = "para-147">Divida a massa em 12 porções iguais e modele cada porção em um rolinho longo e fino. Faça um nó com o rolinho de massa, formando o formato característico de pretzel.</p>
+</li>
+<li><p id = "para-148">Coloque os pretzels na assadeira preparada e pincele com o ovo batido.</p>
+</li>
+<li><p id = "para-149">Polvilhe a mistura de açúcar mascavo e canela sobre os pretzels.</p>
+</li>
+<li><p id = "para-150">Leve ao forno por aproximadamente 20-25 minutos, ou até que estejam dourados e cozidos.</p>
+</li>
+<li><p id = "para-151">Retire os pretzels do forno e deixe esfriar em uma grade.</p>
+</li>
+<li><p id = "para-152">Se desejar, polvilhe açúcar de confeiteiro sobre os pretzels antes de servir.</p>
+</li>
+</ol>
+<p id = "para-153">Aproveite seus deliciosos pretzels doces!</p>
+<h2 id = "link-12">considering these base ingredients, detail in pt-br a pretzel recipe adding more ingredients to the list including powdered milk (maybe to replace the water?) while explaining the steps</h2>
+<p id = "para-154">&lt; Receita de Pretzel com Leite em Pó</p>
+<p id = "para-155">Ingredientes:</p>
+<ul>
+<li><p id = "para-156">500g de farinha de trigo</p>
+</li>
+<li><p id = "para-157">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-158">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-159">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-160">200ml de água morna</p>
+</li>
+<li><p id = "para-161">100g de leite em pó</p>
+</li>
+<li><p id = "para-162">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-163">1 ovo batido (para pincelar)</p>
+</li>
+<li><p id = "para-164">2 colheres de sopa de bicarbonato de sódio</p>
+</li>
+<li><p id = "para-165">1 litro de água (para cozinhar os pretzels)</p>
+</li>
+<li><p id = "para-166">Sal grosso ou gergelim (para polvilhar)</p>
+</li>
+</ul>
+<p id = "para-167">Modo de Preparo:</p>
+<ol>
+<li><p id = "para-168">Em uma tigela grande, misture a farinha de trigo, o sal e o açúcar.</p>
+</li>
+<li><p id = "para-169">Dissolva o fermento biológico seco em 200ml de água morna e deixe descansar por cerca de 5 minutos.</p>
+</li>
+<li><p id = "para-170">Adicione o leite em pó à mistura de farinha e misture bem.</p>
+</li>
+<li><p id = "para-171">Despeje a água com fermento e a manteiga derretida na mistura de farinha e leite em pó. Misture até formar uma massa homogênea.</p>
+</li>
+<li><p id = "para-172">Sove a massa em uma superfície enfarinhada por cerca de 10 minutos, até que fique lisa e elástica.</p>
+</li>
+<li><p id = "para-173">Coloque a massa em uma tigela untada com óleo, cubra com um pano úmido e deixe descansar em local morno por 1 hora, ou até dobrar de tamanho.</p>
+</li>
+<li><p id = "para-174">Após o descanso, divida a massa em 12 pedaços iguais. Enrole cada pedaço em tiras longas e finas, e modele os pretzels fazendo um laço e cruzando as pontas.</p>
+</li>
+<li><p id = "para-175">Pré-aqueça o forno a 200°C e prepare uma assadeira untada com óleo ou forrada com papel manteiga.</p>
+</li>
+<li><p id = "para-176">Em uma panela, ferva 1 litro de água com 2 colheres de sopa de bicarbonato de sódio. Cozinhe os pretzels, um de cada vez, por 30 segundos em cada lado. Retire-os da água com uma escumadeira e coloque-os na assadeira preparada.</p>
+</li>
+<li><p id = "para-177">Pincele os pretzels com o ovo batido e salpique sal grosso ou gergelim por cima.</p>
+</li>
+<li><p id = "para-178">Asse os pretzels no forno pré-aquecido por aproximadamente 20 minutos, ou até dourar.</p>
+</li>
+</ol>
+<p id = "para-179">Deixe esfriar um pouco e aproveite seus deliciosos pretzels com leite em pó!</p>
+<h2 id = "link-13">considering these base ingredients, detail in pt-br a pretzel recipe adding more ingredients to the list including powdered oat meal while explaining the steps</h2>
+<p id = "para-180">&lt; Receita de Pretzel com Aveia em Pó</p>
+<p id = "para-181">Ingredientes:</p>
+<p id = "para-182">500g de farinha de trigo 150g de farinha de aveia em pó 1 colher de chá de sal 1 colher de chá de açúcar 7g de fermento biológico seco 300ml de água morna 50g de manteiga derretida 1 ovo batido (para pincelar) Sal grosso ou flocos de sal (para polvilhar) Modo de Preparo:</p>
+<p id = "para-183">Em uma tigela grande, misture a farinha de trigo, a farinha de aveia em pó, o sal e o açúcar.</p>
+<p id = "para-184">Dissolva o fermento na água morna e deixe descansar por 5 minutos, até formar espuma.</p>
+<p id = "para-185">Adicione a mistura de fermento e a manteiga derretida à tigela com os ingredientes secos. Mexa até formar uma massa.</p>
+<p id = "para-186">Sove a massa por cerca de 10 minutos, até ficar lisa e elástica. Se necessário, adicione um pouco mais de farinha de trigo para evitar que a massa grude nas mãos.</p>
+<p id = "para-187">Coloque a massa em uma tigela untada, cubra com um pano úmido e deixe descansar em um local aquecido por cerca de 1 hora, ou até dobrar de tamanho.</p>
+<p id = "para-188">Preaqueça o forno a 200ºC. Forre uma assadeira com papel manteiga.</p>
+<p id = "para-189">Divida a massa em 12 porções iguais. Faça rolos longos com cada porção e modele os pretzels, formando um laço e cruzando as pontas.</p>
+<p id = "para-190">Coloque os pretzels na assadeira preparada. Pincele cada pretzel com o ovo batido e polvilhe com sal grosso ou flocos de sal.</p>
+<p id = "para-191">Asse os pretzels por 20 a 25 minutos, ou até ficarem dourados. Deixe esfriar em uma grade antes de servir.</p>
+<p id = "para-192">Aproveite seus deliciosos pretzels com aveia em pó!</p>
+<h2 id = "link-14">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including milk (to maybe replace the water?) while explaining the steps</h2>
+<p id = "para-193">&lt; Receita de Pretzel com Leite</p>
+<p id = "para-194">Ingredientes:</p>
+<ul>
+<li><p id = "para-195">500g de farinha de trigo</p>
+</li>
+<li><p id = "para-196">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-197">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-198">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-199">250ml de leite morno (substituindo a água)</p>
+</li>
+<li><p id = "para-200">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-201">1 ovo batido (para pincelar)</p>
+</li>
+<li><p id = "para-202">Sal grosso ou em flocos (para polvilhar por cima dos pretzels)</p>
+</li>
+</ul>
+<p id = "para-203">Passo a passo:</p>
+<ol>
+<li><p id = "para-204">Em uma tigela grande, misture a farinha, o sal e o açúcar.</p>
+</li>
+<li><p id = "para-205">Dissolva o fermento no leite morno e deixe descansar por cerca de 5 minutos, até que comece a espumar.</p>
+</li>
+<li><p id = "para-206">Adicione o leite com fermento e a manteiga derretida à mistura de farinha. Mexa até que todos os ingredientes estejam bem incorporados.</p>
+</li>
+<li><p id = "para-207">Transfira a massa para uma superfície limpa e enfarinhada e sove por aproximadamente 10 minutos, até que a massa fique lisa e elástica.</p>
+</li>
+<li><p id = "para-208">Coloque a massa em uma tigela levemente untada com óleo e cubra com um pano úmido. Deixe descansar em um local aquecido por cerca de 1 hora, ou até que a massa dobre de tamanho.</p>
+</li>
+<li><p id = "para-209">Pré-aqueça o forno a 200°C e prepare uma assadeira forrada com papel manteiga ou um tapete de silicone.</p>
+</li>
+<li><p id = "para-210">Divida a massa em 12 pedaços iguais. Enrole cada pedaço em um cordão de aproximadamente 50 cm de comprimento. Faça um U com cada cordão e cruze as pontas duas vezes, depois dobre as pontas para baixo, pressionando-as na base do U, formando o formato de pretzel.</p>
+</li>
+<li><p id = "para-211">Coloque os pretzels na assadeira preparada. Pincele cada pretzel com o ovo batido e polvilhe com sal grosso ou em flocos.</p>
+</li>
+<li><p id = "para-212">Asse os pretzels no forno pré-aquecido por 20 a 25 minutos, ou até que estejam dourados e crocantes.</p>
+</li>
+<li><p id = "para-213">Retire os pretzels do forno e deixe esfriar por alguns minutos antes de servir.</p>
+</li>
+</ol>
+<p id = "para-214">Bom apetite!</p>
+<h2 id = "link-15">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including ‘farinha de mandioca’ while explaining the steps</h2>
+<p id = "para-215">&lt; Receita de Pretzel com Farinha de Mandioca</p>
+<p id = "para-216">Ingredientes:</p>
+<ul>
+<li><p id = "para-217">350g de farinha de trigo</p>
+</li>
+<li><p id = "para-218">150g de farinha de mandioca</p>
+</li>
+<li><p id = "para-219">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-220">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-221">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-222">250ml de leite morno</p>
+</li>
+<li><p id = "para-223">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-224">1 ovo batido (para pincelar)</p>
+</li>
+<li><p id = "para-225">1 colher de sopa de bicarbonato de sódio (para a solução alcalina)</p>
+</li>
+<li><p id = "para-226">1 litro de água (para a solução alcalina)</p>
+</li>
+<li><p id = "para-227">Sal grosso ou flocos de sal (para polvilhar)</p>
+</li>
+</ul>
+<p id = "para-228">Modo de preparo:</p>
+<ol>
+<li><p id = "para-229">Em uma tigela grande, misture a farinha de trigo, a farinha de mandioca, o sal e o açúcar.</p>
+</li>
+<li><p id = "para-230">Adicione o fermento biológico seco à mistura de farinhas e mexa bem.</p>
+</li>
+<li><p id = "para-231">Despeje o leite morno e a manteiga derretida na tigela e misture até formar uma massa homogênea. Se a massa estiver muito pegajosa, adicione um pouco mais de farinha de trigo.</p>
+</li>
+<li><p id = "para-232">Transfira a massa para uma superfície enfarinhada e sove-a por aproximadamente 10 minutos, ou até que esteja lisa e elástica.</p>
+</li>
+<li><p id = "para-233">Coloque a massa em uma tigela untada com óleo e cubra com um pano úmido. Deixe descansar por aproximadamente 1 hora ou até dobrar de tamanho.</p>
+</li>
+<li><p id = "para-234">Enquanto a massa descansa, prepare a solução alcalina para dar o sabor e a textura característica dos pretzels. Em uma panela grande, ferva 1 litro de água e adicione o bicarbonato de sódio. Reserve.</p>
+</li>
+<li><p id = "para-235">Pré-aqueça o forno a 220°C e prepare uma assadeira com papel manteiga ou silpat.</p>
+</li>
+<li><p id = "para-236">Divida a massa em 8 a 10 porções iguais e modele cada uma em tiras longas e finas. Faça o formato de pretzel torcendo as pontas e pressionando-as na base.</p>
+</li>
+<li><p id = "para-237">Com cuidado, mergulhe cada pretzel na solução alcalina quente por 30 segundos e coloque-os na assadeira preparada.</p>
+</li>
+<li><p id = "para-238">Pincele cada pretzel com o ovo batido e polvilhe com sal grosso ou flocos de sal.</p>
+</li>
+<li><p id = "para-239">Asse os pretzels por 12 a 15 minutos, ou até que estejam dourados e cozidos por dentro.</p>
+</li>
+<li><p id = "para-240">Retire os pretzels do forno e deixe esfriar por alguns minutos antes de servir. Bom apetite!</p>
+</li>
+</ol>
+<h2 id = "link-16">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including condensed milk while explaining the steps</h2>
+<p id = "para-241">&lt; Receita de Pretzel com Leite Condensado:</p>
+<p id = "para-242">Ingredientes:</p>
+<ul>
+<li><p id = "para-243">500g de farinha de trigo</p>
+</li>
+<li><p id = "para-244">1 colher de chá de sal</p>
+</li>
+<li><p id = "para-245">1 colher de chá de açúcar</p>
+</li>
+<li><p id = "para-246">7g de fermento biológico seco</p>
+</li>
+<li><p id = "para-247">250ml de leite morno</p>
+</li>
+<li><p id = "para-248">50g de manteiga derretida</p>
+</li>
+<li><p id = "para-249">1 ovo para pincelar</p>
+</li>
+<li><p id = "para-250">100g de leite condensado</p>
+</li>
+<li><p id = "para-251">1 colher de sopa de bicarbonato de sódio</p>
+</li>
+<li><p id = "para-252">2 litros de água</p>
+</li>
+</ul>
+<p id = "para-253">Modo de preparo:</p>
+<ol>
+<li><p id = "para-254">Em uma tigela grande, misture a farinha de trigo, o sal e o açúcar. Reserve.</p>
+</li>
+<li><p id = "para-255">Em outro recipiente, adicione o leite morno e o fermento biológico seco. Mexa bem e deixe descansar por 5 minutos, até que a mistura comece a fermentar e formar bolhas.</p>
+</li>
+<li><p id = "para-256">Adicione a mistura de leite e fermento aos ingredientes secos, juntamente com a manteiga derretida. Mexa até formar uma massa homogênea.</p>
+</li>
+<li><p id = "para-257">Transfira a massa para uma superfície levemente enfarinhada e sove por aproximadamente 10 minutos, até que a massa fique lisa e elástica.</p>
+</li>
+<li><p id = "para-258">Cubra a massa com um pano úmido e deixe descansar em um local aquecido por cerca de 1 hora, ou até dobrar de tamanho.</p>
+</li>
+<li><p id = "para-259">Enquanto a massa descansa, prepare uma solução de bicarbonato de sódio e água: em uma panela grande, ferva 2 litros de água com 1 colher de sopa de bicarbonato de sódio.</p>
+</li>
+<li><p id = "para-260">Pré-aqueça o forno a 200°C e forre uma assadeira com papel manteiga.</p>
+</li>
+<li><p id = "para-261">Divida a massa em 12 porções iguais e modele cada porção em um cordão de aproximadamente 50 cm. Faça um nó ou a tradicional forma de pretzel com cada cordão.</p>
+</li>
+<li><p id = "para-262">Mergulhe cada pretzel na solução de bicarbonato de sódio e água por 30 segundos, em seguida, coloque-os na assadeira forrada com papel manteiga.</p>
+</li>
+<li><p id = "para-263">Pincele os pretzels com ovo batido e asse por 20 a 25 minutos, até dourar.</p>
+</li>
+<li><p id = "para-264">Retire os pretzels do forno e deixe esfriar um pouco.</p>
+</li>
+<li><p id = "para-265">Aqueça o leite condensado em banho-maria ou no micro-ondas por 30 segundos, e despeje sobre os pretzels.</p>
+</li>
+</ol>
+<p id = "para-266">Sirva seus pretzels com leite condensado ainda mornos e desfrute de uma deliciosa sobremesa!</p>
+<h2 id = "link-17">considering these base ingredients (can be replaced/adjusted/removed), detail in pt-br a pretzel recipe adding more ingredients to the list including whey protein while explaining the steps</h2>
+<p id = "para-267">&lt; Receita de Pretzel com Whey Protein</p>
+<p id = "para-268">Ingredientes:</p>
+<p id = "para-269">500g de farinha de trigo 150g de farinha de trigo integral 1 colher de chá de sal 1 colher de chá de açúcar 7g de fermento biológico seco 250ml de leite morno 50g de manteiga derretida 60g de whey protein sabor baunilha ou neutro 1 ovo para pincelar 1 colher de sopa de bicarbonato de sódio 1,5 litro de água Sal grosso ou gergelim para polvilhar (opcional)</p>
+<p id = "para-270">Instruções:</p>
+<ol>
+<li><p id = "para-271">Em uma tigela grande, misture a farinha de trigo, a farinha de trigo integral, o sal, o açúcar e o whey protein. Reserve.</p>
+</li>
+<li><p id = "para-272">Dissolva o fermento biológico seco no leite morno e deixe descansar por cerca de 5 minutos, até que a mistura comece a espumar.</p>
+</li>
+<li><p id = "para-273">Adicione a manteiga derretida e a mistura de leite com fermento aos ingredientes secos. Misture bem até formar uma massa homogênea.</p>
+</li>
+<li><p id = "para-274">Transfira a massa para uma superfície limpa e levemente enfarinhada e sove por cerca de 10 minutos, até que a massa fique lisa e elástica.</p>
+</li>
+<li><p id = "para-275">Faça uma bola com a massa e coloque-a em uma tigela levemente untada com óleo. Cubra com um pano úmido e deixe descansar em um local quente por cerca de 1 hora, ou até que a massa dobre de tamanho.</p>
+</li>
+<li><p id = "para-276">Enquanto a massa descansa, prepare uma assadeira forrando-a com papel manteiga ou um tapete de silicone. Reserve.</p>
+</li>
+<li><p id = "para-277">Após a massa descansar, divida-a em 12 porções iguais. Enrole cada porção em um cordão comprido e forme o formato de um pretzel. Coloque os pretzels na assadeira preparada e deixe descansar por mais 15 minutos.</p>
+</li>
+<li><p id = "para-278">Preaqueça o forno a 200°C.</p>
+</li>
+<li><p id = "para-279">Enquanto os pretzels descansam, ferva 1,5 litro de água com o bicarbonato de sódio em uma panela grande. Quando a água estiver fervendo, mergulhe cada pretzel na água por cerca de 30 segundos. Retire-os com uma escumadeira e coloque-os de volta na assadeira.</p>
+</li>
+<li><p id = "para-280">Pincele os pretzels com ovo batido e, se desejar, polvilhe com sal grosso ou gergelim.</p>
+</li>
+<li><p id = "para-281">Asse os pretzels por 20 a 25 minutos, ou até que estejam dourados. Retire do forno e deixe esfriar em uma grade.</p>
+</li>
+</ol>
+<p id = "para-282">Agora é só saborear seus deliciosos pretzels com whey protein! Essa receita é uma ótima opção para um lanche saudável e rico em proteínas.</p>
+<h2 id = "link-18">detail the health implications of eating these pretzels every day for a few years, with and without the ‘gergelim’ specifically, to analyze the seeds bodily function contributions</h2>
+<p id = "para-283">&lt; Comer pretzels com whey protein todos os dias por alguns anos pode ter implicações na saúde, tanto positivas quanto negativas, dependendo da quantidade consumida e da dieta geral do indivíduo. Vamos analisar as implicações com e sem gergelim:</p>
+<p id = "para-284">Com gergelim:</p>
+<p id = "para-285">O gergelim é uma semente rica em nutrientes, incluindo fibras, proteínas, gorduras saudáveis, vitaminas e minerais. Algumas das principais contribuições para a saúde incluem:</p>
+<ol>
+<li><p id = "para-286">Fonte de antioxidantes: As sementes de gergelim são ricas em antioxidantes, como sesamol e sesaminol, que ajudam a combater os radicais livres e reduzir o estresse oxidativo no corpo.</p>
+</li>
+<li><p id = "para-287">Melhora a saúde do coração: O gergelim contém gorduras insaturadas, que ajudam a reduzir os níveis de colesterol ruim (LDL) e aumentar os níveis de colesterol bom (HDL), promovendo a saúde cardiovascular.</p>
+</li>
+<li><p id = "para-288">Contribui para a saúde óssea: O gergelim é uma boa fonte de cálcio e fósforo, que são essenciais para a manutenção e desenvolvimento de ossos saudáveis.</p>
+</li>
+<li><p id = "para-289">Auxilia na digestão: As fibras presentes nas sementes de gergelim podem melhorar a digestão e prevenir a constipação.</p>
+</li>
+</ol>
+<p id = "para-290">Sem gergelim:</p>
+<p id = "para-291">Embora os pretzels com whey protein ainda sejam uma opção de lanche mais saudável do que muitas alternativas, a ausência do gergelim significa que você perderá os benefícios específicos desta semente. No entanto, os pretzels ainda fornecerão proteínas de alta qualidade do whey e fibras provenientes da farinha de trigo integral.</p>
+<p id = "para-292">Implicações gerais:</p>
+<ol>
+<li><p id = "para-293">Consumo excessivo de calorias: Se os pretzels forem consumidos em grandes quantidades, podem levar ao consumo excessivo de calorias e, consequentemente, ao ganho de peso.</p>
+</li>
+<li><p id = "para-294">Alto teor de sódio: Pretzels, especialmente aqueles cobertos com sal grosso, podem ter um alto teor de sódio. Consumir muito sódio ao longo do tempo pode aumentar o risco de hipertensão e problemas cardiovasculares.</p>
+</li>
+<li><p id = "para-295">Equilíbrio nutricional: Comer pretzels todos os dias não deve ser um problema, desde que façam parte de uma dieta equilibrada e variada, rica em frutas, vegetais, proteínas magras e grãos integrais.</p>
+</li>
+</ol>
+<p id = "para-296">É importante lembrar que os pretzels devem ser consumidos com moderação e como parte de uma dieta equilibrada e saudável. Incluir sementes de gergelim pode agregar benefícios adicionais à saúde, mas, como com qualquer alimento, é fundamental manter a variedade e o equilíbrio na alimentação.</p>
+<h2 id = "link-19">instead of using ‘7g de fermento biológico seco’, ‘7g de fermento quimico seco’ was mistakenly used instead. after resting for 1 hour, the mixture didn’t even flinch. detail how to save from its current state</h2>
+<p id = "para-297">&lt; Se você usou fermento químico em vez de fermento biológico na receita de pretzel, a massa realmente não vai crescer, já que o fermento químico tem um mecanismo de ação diferente e é mais adequado para bolos e biscoitos. No entanto, você ainda pode salvar a massa e fazer uma versão diferente de pretzel, embora a textura possa ser um pouco diferente da original.</p>
+<p id = "para-298">Aqui estão os passos para salvar a massa:</p>
+<ol>
+<li><p id = "para-299">Adicione 7g de fermento biológico seco à massa: Dissolva o fermento biológico em aproximadamente 3 colheres de sopa de água morna e deixe descansar por cerca de 5 minutos, até que a mistura comece a espumar. Enquanto isso, faça um buraco no centro da massa. Após os 5 minutos, despeje a mistura de fermento e água no buraco e amasse bem até incorporar completamente.</p>
+</li>
+<li><p id = "para-300">Deixe a massa descansar: Cubra a massa com um pano úmido e deixe descansar em um local quente por cerca de 1 hora, ou até que a massa dobre de tamanho.</p>
+</li>
+<li><p id = "para-301">Continue seguindo a receita original: Uma vez que a massa tenha crescido, você pode continuar com os passos originais da receita, modelando e cozinhando os pretzels conforme descrito.</p>
+</li>
+</ol>
+<p id = "para-302">Lembre-se de que a textura dos pretzels pode ser um pouco diferente devido à adição inicial do fermento químico. No entanto, essa solução deve ajudar a salvar a massa e resultar em pretzels saborosos, mesmo que a textura seja um pouco alterada.</p>
+<h2 id = "link-20">instead of using ‘7g de fermento biológico seco’, ‘7g de fermento quimico seco’ was mistakenly used. after resting for 1 hour, the mixture didn’t even flinch. detail how to save from its current state without adding more fermento and waiting</h2>
+<p id = "para-303">&lt; Se você acidentalmente usou 7g de fermento químico seco em vez de fermento biológico seco e a massa não cresceu, uma possível solução é transformar a massa em biscoitos ou pãezinhos, em vez de pretzels. Como o fermento químico é ativado pelo calor, a massa ainda deve crescer um pouco durante o cozimento. Siga os passos abaixo para aproveitar a massa:</p>
+<ol>
+<li><p id = "para-304">Pré-aqueça o forno a 180°C.</p>
+</li>
+<li><p id = "para-305">Divida a massa em porções menores, dependendo se você deseja fazer biscoitos ou pãezinhos. Para biscoitos, faça pequenas bolinhas achatadas; para pãezinhos, modele porções maiores em formato de bolinha.</p>
+</li>
+<li><p id = "para-306">Forre uma assadeira com papel manteiga ou um tapete de silicone e coloque as porções de massa na assadeira, deixando espaço suficiente entre elas para permitir a expansão durante o cozimento.</p>
+</li>
+<li><p id = "para-307">Asse os biscoitos ou pãezinhos por 15-20 minutos, ou até que estejam levemente dourados e cozidos por dentro. O tempo exato pode variar dependendo do tamanho das porções.</p>
+</li>
+<li><p id = "para-308">Retire do forno e deixe esfriar em uma grade antes de servir.</p>
+</li>
+</ol>
+<p id = "para-309">Embora essa solução não resulte em pretzels tradicionais, ela permitirá que você aproveite a massa e não desperdice os ingredientes. Os biscoitos ou pãezinhos resultantes ainda terão o sabor dos ingredientes originais, mas a textura será diferente da esperada para os pretzels.</p>
+<h2 id = "link-21">instead of using ‘7g de fermento biológico seco’, ‘7g de fermento quimico seco’ was mistakenly used. after resting for 1 hour, the mixture didn’t even flinch. detail how to save from its current state without adding more fermento and waiting, adding condensed milk and turning into cookies</h2>
+<p id = "para-310">&lt; Se você usou 7g de fermento químico em vez de fermento biológico seco por engano, e a massa não cresceu após descansar por 1 hora, você pode adaptar a receita e transformá-la em biscoitos com leite condensado. Aqui está como fazer isso:</p>
+<p id = "para-311">Ingredientes adicionais:</p>
+<ul>
+<li><p id = "para-312">200g de leite condensado</p>
+</li>
+<li><p id = "para-313">1 colher de chá de extrato de baunilha (opcional)</p>
+</li>
+</ul>
+<p id = "para-314">Instruções:</p>
+<ol>
+<li><p id = "para-315">Pré-aqueça o forno a 180°C e forre uma assadeira com papel manteiga ou um tapete de silicone.</p>
+</li>
+<li><p id = "para-316">Adicione o leite condensado e o extrato de baunilha (se estiver usando) à massa que não cresceu. Misture bem até obter uma massa homogênea e pegajosa. Se a massa estiver muito pegajosa, adicione um pouco mais de farinha de trigo até que possa ser manuseada.</p>
+</li>
+<li><p id = "para-317">Com as mãos levemente untadas com óleo, faça bolinhas com a massa, do tamanho de uma noz. Coloque as bolinhas na assadeira preparada, deixando um espaço de cerca de 2-3 cm entre elas.</p>
+</li>
+<li><p id = "para-318">Achate levemente as bolinhas com a palma da mão ou com o fundo de um copo. Se desejar, você pode fazer um padrão na superfície dos biscoitos usando um garfo.</p>
+</li>
+<li><p id = "para-319">Asse os biscoitos por 12 a 15 minutos, ou até que estejam levemente dourados nas bordas. Cuidado para não assar demais, pois eles podem ficar duros.</p>
+</li>
+<li><p id = "para-320">Retire os biscoitos do forno e deixe esfriar na assadeira por cerca de 5 minutos antes de transferi-los para uma grade para esfriar completamente.</p>
+</li>
+</ol>
+<p id = "para-321">Ao adicionar leite condensado e transformar a receita em biscoitos, você estará criando um novo doce que pode ser apreciado sem desperdiçar a massa original. Esses biscoitos terão um sabor adocicado e uma textura macia, diferente dos pretzels, mas ainda assim deliciosos.</p>
+<p class = "rule">***</p>
+<h2 id = "link-22">terrible first attempt, 2/10. write a dissertation in pt-br about throwing food away. (+18)</h2>
+<p id = "para-322">&lt; Título: Desperdício Alimentar: Impactos Sociais, Ambientais e Soluções Sustentáveis</p>
+<p id = "para-323">Resumo:</p>
+<p id = "para-324">O desperdício de alimentos tem sido um problema crescente no mundo moderno, com implicações significativas tanto para a sociedade quanto para o meio ambiente. Esta dissertação examina as causas e consequências do desperdício alimentar, bem como aborda possíveis soluções para minimizar esse problema, promovendo práticas mais sustentáveis e conscientes no consumo e na produção de alimentos.</p>
+<p id = "para-325">Introdução:</p>
+<p id = "para-326">O desperdício de alimentos é uma questão global que afeta bilhões de pessoas e gera impactos negativos no meio ambiente, na economia e na sociedade como um todo. Estima-se que um terço de todos os alimentos produzidos no mundo é desperdiçado, enquanto muitas pessoas ainda enfrentam a insegurança alimentar e a fome. Neste contexto, é crucial entender as causas do desperdício alimentar, seus impactos e buscar soluções para combater essa questão.</p>
+<p id = "para-327">Capítulo 1: Causas do Desperdício Alimentar</p>
+<p id = "para-328">1.1 Fatores culturais e sociais 1.2 Ineficiências na cadeia produtiva 1.3 Políticas públicas inadequadas 1.4 Falta de conscientização e educação</p>
+<p id = "para-329">Capítulo 2: Impactos do Desperdício Alimentar</p>
+<p id = "para-330">2.1 Impactos ambientais 2.1.1 Emissões de gases de efeito estufa 2.1.2 Uso de recursos naturais e energia 2.1.3 Poluição e contaminação do solo e da água</p>
+<p id = "para-331">2.2 Impactos econômicos 2.2.1 Custos para produtores e consumidores 2.2.2 Ineficiências no mercado alimentar</p>
+<p id = "para-332">2.3 Impactos sociais 2.3.1 Insegurança alimentar e desnutrição 2.3.2 Desigualdades e injustiças sociais</p>
+<p id = "para-333">Capítulo 3: Soluções para o Desperdício Alimentar</p>
+<p id = "para-334">3.1 Redução do desperdício na produção e distribuição 3.1.1 Melhoria na infraestrutura e tecnologias 3.1.2 Inovações em embalagens e conservação 3.1.3 Políticas públicas e regulamentações</p>
+<p id = "para-335">3.2 Mudanças no comportamento do consumidor 3.2.1 Educação e conscientização 3.2.2 Campanhas e incentivos para redução do desperdício 3.2.3 Valorização do aproveitamento integral dos alimentos</p>
+<p id = "para-336">3.3 Recuperação e redistribuição de alimentos 3.3.1 Bancos de alimentos e doação para instituições de caridade 3.3.2 Programas de alimentação escolar e comunitária</p>
+<p id = "para-337">Conclusão:</p>
+<p id = "para-338">O desperdício de alimentos é um problema complexo que requer ações coordenadas em diversos níveis. A promoção de políticas públicas eficientes, a conscientização da população e a busca por soluções inovadoras na produção e distribuição de alimentos são fundamentais para enfrentar esse desafio. Reduzir o desperdício de alimentos é uma responsabilidade compartilhada, e todos os setores</p>
+<h2 id = "link-23">continue from responsabilidade compartilhada, e todos os setores... while being incisive about people who try recipes without knowing how to cook</h2>
+<p id = "para-339">&lt; da sociedade devem se engajar ativamente na busca por soluções. Neste sentido, é importante abordar também o papel dos indivíduos que tentam cozinhar novas receitas sem ter experiência ou conhecimento culinário suficiente, o que pode levar ao desperdício de alimentos.</p>
+<p id = "para-340">Capítulo 4: Impacto do Desperdício Alimentar na Cozinha Doméstica</p>
+<p id = "para-341">4.1 A influência da mídia e das redes sociais na promoção de novas receitas 4.2 A importância da educação culinária e da habilidade de cozinhar 4.3 Estratégias para evitar o desperdício na cozinha</p>
+<p id = "para-342">Capítulo 5: O Papel da Educação Culinária na Redução do Desperdício Alimentar</p>
+<p id = "para-343">5.1 Desenvolvimento de habilidades culinárias e conhecimento sobre ingredientes 5.2 Adaptação de receitas e planejamento de refeições 5.3 Aproveitamento de sobras e ingredientes pouco utilizados</p>
+<p id = "para-344">Ao tentar novas receitas sem o conhecimento adequado de técnicas e ingredientes, muitos indivíduos podem acabar desperdiçando alimentos devido a erros de preparo, porções excessivas ou mesmo por não saber como armazenar corretamente os ingredientes e as sobras. A popularização de programas culinários, influenciadores digitais e receitas compartilhadas nas redes sociais pode levar a um aumento no interesse por novas experiências gastronômicas, mas também pode contribuir para o desperdício quando as pessoas não estão familiarizadas com as técnicas e ingredientes envolvidos.</p>
+<p id = "para-345">Neste contexto, a educação culinária e o desenvolvimento de habilidades básicas de cozinha são fundamentais para reduzir o desperdício de alimentos na cozinha doméstica. Aprender a adaptar receitas, planejar refeições com antecedência e utilizar de forma integral os ingredientes são práticas que podem minimizar o desperdício e promover um consumo mais consciente.</p>
+<p id = "para-346">Além disso, o aproveitamento de sobras e o uso de ingredientes menos convencionais ou pouco utilizados podem ajudar a reduzir o desperdício e expandir o repertório culinário dos indivíduos. Campanhas educativas e programas de capacitação em culinária também podem ser implementados para incentivar as pessoas a desenvolver habilidades culinárias e a adotar práticas sustentáveis na cozinha.</p>
+<p id = "para-347">Conclusão:</p>
+<p id = "para-348">Combater o desperdício de alimentos é uma questão que envolve todos os setores da sociedade, desde a produção e distribuição até o consumo final. A responsabilidade compartilhada inclui o papel dos indivíduos na cozinha doméstica, e a educação culinária é uma ferramenta poderosa para minimizar o desperdício de alimentos e promover práticas sustentáveis. Ao desenvolver habilidades culinárias, planejar refeições e aproveitar integralmente os ingredientes, é possível reduzir o impacto do desperdício de alimentos no meio ambiente, na economia e na sociedade.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-24">translate fubá from pt-br to en-us with proper etymology</h2>
+<p id = "para-349">&lt; Fubá is a Portuguese word (Brazilian Portuguese: fubá) that comes from the African term “fúnbi” or “fúmbua” in the Kimbundu language, spoken in Angola. In English, it translates to “cornmeal,” which is a coarse flour made from ground, dried corn (maize). Cornmeal is commonly used in many cuisines, including American, Brazilian, and African dishes, and it can be used to make various recipes such as bread, porridge, or polenta.</p>
+<p id = "para-350">The history of fubá and cornmeal can be traced back to the cultivation of maize, which has been an essential crop in the Americas for thousands of years. Maize was first domesticated in Mexico around 9,000 years ago and eventually spread throughout North, Central, and South America, where it was adopted as a staple food by various indigenous cultures.</p>
+<p id = "para-351">With the arrival of European colonizers, especially the Portuguese and Spanish in the 15th and 16th centuries, maize was introduced to Europe, Africa, and Asia. In the case of Brazil, the Portuguese colonization and the slave trade played a significant role in the transmission of maize and the word “fubá” to the region.</p>
+<p id = "para-352">African slaves who were forcibly brought to Brazil by the Portuguese during the slave trade were familiar with similar grains, such as millet and sorghum, which they used to make dishes resembling those made with cornmeal. They adapted their culinary techniques to the newly available maize, and the word “fubá” likely entered the Portuguese language in Brazil via the African languages spoken by the slaves.</p>
+<p id = "para-353">As the cultivation of maize spread throughout Brazil, it became a staple food for people of various ethnic and social backgrounds. Fubá, or cornmeal, became an essential ingredient in Brazilian cuisine, used to make a variety of dishes such as polenta, cornbread, and the traditional dish “cuscuz” (couscous).</p>
+<p id = "para-354">In summary, the history of fubá is deeply intertwined with the history of maize cultivation, the colonization of the Americas, and the African slave trade. The word “fubá” itself reflects this complex history, as it originated from an African language, was adopted into Portuguese in Brazil, and now refers to a crucial ingredient in Brazilian cuisine.</p>
+<h2 id = "link-25">translate ‘leite ninho’ from pt-br to en-us with proper etymology (considering brand and product)</h2>
+<p id = "para-355">&lt; “Leite Ninho” is a Brazilian Portuguese term that can be translated to “Nestlé’s milk” or more specifically, “Nestlé’s milk powder” in English. In this case, “leite” means “milk” and “ninho” refers to “nest,” which is associated with the Nestlé brand.</p>
+<p id = "para-356">Nestlé is a Swiss multinational food and beverage company, and “NINHO” is one of its product lines, particularly popular in Brazil. The product “Leite Ninho” is a powdered milk that is often used in various recipes, such as desserts, beverages, and other dishes.</p>
+<p id = "para-357">The etymology of “Leite Ninho” reflects the combination of the Portuguese word for milk (“leite”) and the association with the Nestlé brand through the word “ninho” (nest). It is important to note that the term “leite ninho” is often used colloquially to refer to powdered milk in general, even if it’s not necessarily from the Nestlé brand, as the brand has become synonymous with the product in Brazil.</p>
+<p class = "rule">***</p>
+<h2 id = "link-26">list 3 recipes in pt-br of cornmeal cake topping made from condensed milk and nestlé’s milk powder using the metric system</h2>
+<p id = "para-358">1\ Bolo de fubá com cobertura de leite condensado e leite em pó Nestlé</p>
+<p id = "para-359">Ingredientes do bolo:</p>
+<ul>
+<li><p id = "para-360">200g de fubá (farinha de milho)</p>
+</li>
+<li><p id = "para-361">200g de açúcar</p>
+</li>
+<li><p id = "para-362">100g de farinha de trigo</p>
+</li>
+<li><p id = "para-363">1 colher (sopa) de fermento em pó</p>
+</li>
+<li><p id = "para-364">3 ovos</p>
+</li>
+<li><p id = "para-365">200ml de leite</p>
+</li>
+<li><p id = "para-366">100ml de óleo</p>
+</li>
+</ul>
+<p id = "para-367">Ingredientes da cobertura:</p>
+<ul>
+<li><p id = "para-368">1 lata de leite condensado (395g)</p>
+</li>
+<li><p id = "para-369">100g de leite em pó Nestlé</p>
+</li>
+<li><p id = "para-370">50g de creme de leite</p>
+</li>
+</ul>
+<p id = "para-371">Modo de preparo:</p>
+<ol>
+<li><p id = "para-372">Preaqueça o forno a 180°C. Unte uma forma com manteiga e polvilhe com fubá.</p>
+</li>
+<li><p id = "para-373">Em uma tigela, misture o fubá, o açúcar, a farinha de trigo e o fermento.</p>
+</li>
+<li><p id = "para-374">Acrescente os ovos, o leite e o óleo. Misture bem até obter uma massa homogênea.</p>
+</li>
+<li><p id = "para-375">Despeje a massa na forma e leve ao forno por aproximadamente 35 minutos ou até que o palito saia limpo.</p>
+</li>
+<li><p id = "para-376">Enquanto o bolo assa, prepare a cobertura: em uma panela, misture o leite condensado, o leite em pó e o creme de leite. Cozinhe em fogo baixo, mexendo sempre, até engrossar.</p>
+</li>
+<li><p id = "para-377">Quando o bolo estiver pronto, retire do forno e deixe esfriar. Desenforme e cubra com a cobertura.</p>
+</li>
+</ol>
+<p id = "para-378">2\ Bolo de fubá cremoso com cobertura de leite Ninho</p>
+<p id = "para-379">Ingredientes do bolo:</p>
+<ul>
+<li><p id = "para-380">250g de fubá (farinha de milho)</p>
+</li>
+<li><p id = "para-381">150g de açúcar</p>
+</li>
+<li><p id = "para-382">200ml de leite</p>
+</li>
+<li><p id = "para-383">3 ovos</p>
+</li>
+<li><p id = "para-384">50g de queijo ralado</p>
+</li>
+<li><p id = "para-385">1 colher (sopa) de fermento em pó</p>
+</li>
+</ul>
+<p id = "para-386">Ingredientes da cobertura:</p>
+<ul>
+<li><p id = "para-387">1 lata de leite condensado (395g)</p>
+</li>
+<li><p id = "para-388">100g de leite em pó Nestlé</p>
+</li>
+<li><p id = "para-389">100ml de leite</p>
+</li>
+<li><p id = "para-390">50g de coco ralado</p>
+</li>
+</ul>
+<p id = "para-391">Modo de preparo:</p>
+<ol>
+<li><p id = "para-392">Preaqueça o forno a 180°C. Unte uma forma com manteiga e polvilhe com fubá.</p>
+</li>
+<li><p id = "para-393">Em uma tigela, misture o fubá, o açúcar, o leite, os ovos, o queijo ralado e o fermento.</p>
+</li>
+<li><p id = "para-394">Despeje a massa na forma e leve ao forno por aproximadamente 40 minutos ou até que o palito saia limpo.</p>
+</li>
+<li><p id = "para-395">Enquanto o bolo assa, prepare a cobertura: em uma panela, misture o leite condensado, o leite em pó, o leite e o coco ralado. Cozinhe em fogo baixo, mexendo sempre, até engrossar.</p>
+</li>
+<li><p id = "para-396">Quando o bolo estiver pronto, retire do forno e deixe esfriar. Desenforme e cubra com a cobertura.</p>
+</li>
+</ol>
+<p id = "para-397">3\ Bolo de fubá com cobertura de brigadeiro de leite Ninho</p>
+<p id = "para-398">Ingredientes do bolo:</p>
+<ul>
+<li><p id = "para-399">250g de fubá (farinha de milho)</p>
+</li>
+<li><p id = "para-400">150g de açúcar</p>
+</li>
+<li><p id = "para-401">100g de farinha de trigo</p>
+</li>
+<li><p id = "para-402">1 colher (sopa) de fermento em pó</p>
+</li>
+<li><p id = "para-403">3 ovos</p>
+</li>
+<li><p id = "para-404">200ml de leite</p>
+</li>
+<li><p id = "para-405">100ml de óleo</p>
+</li>
+</ul>
+<p id = "para-406">Ingredientes da cobertura:</p>
+<ul>
+<li><p id = "para-407">1 lata de leite condensado (395g)</p>
+</li>
+<li><p id = "para-408">100g de leite em pó Nestlé</p>
+</li>
+<li><p id = "para-409">50g de manteiga sem sal</p>
+</li>
+<li><p id = "para-410">50g de creme de leite</p>
+</li>
+<li><p id = "para-411">Granulado de chocolate ou coco ralado para decorar (opcional)</p>
+</li>
+</ul>
+<p id = "para-412">Modo de preparo:</p>
+<ol>
+<li><p id = "para-413">Preaqueça o forno a 180°C. Unte uma forma com manteiga e polvilhe com fubá.</p>
+</li>
+<li><p id = "para-414">Em uma tigela, misture o fubá, o açúcar, a farinha de trigo e o fermento.</p>
+</li>
+<li><p id = "para-415">Acrescente os ovos, o leite e o óleo. Misture bem até obter uma massa homogênea.</p>
+</li>
+<li><p id = "para-416">Despeje a massa na forma e leve ao forno por aproximadamente 35 minutos ou até que o palito saia limpo.</p>
+</li>
+<li><p id = "para-417">Enquanto o bolo assa, prepare a cobertura: em uma panela, misture o leite condensado, o leite em pó e a manteiga. Cozinhe em fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Desligue o fogo e acrescente o creme de leite, misturando bem.</p>
+</li>
+<li><p id = "para-418">Quando o bolo estiver pronto, retire do forno e deixe esfriar. Desenforme e cubra com a cobertura de brigadeiro de leite Ninho. Se desejar, decore com granulado de chocolate ou coco ralado.</p>
+</li>
+</ol>
+<h2 id = "link-27">list 3 accompaniments for such cakes to make it more of a sturdy meal</h2>
+<p id = "para-419">Salada de frutas Uma salada de frutas frescas e coloridas pode ser uma ótima opção para acompanhar os bolos de fubá. Além de proporcionar um contraste de sabores e texturas, a salada de frutas acrescenta nutrientes e fibras à refeição. Escolha frutas da estação e corte-as em pedaços. Sirva a salada ao lado do bolo, ou até mesmo sobre ele, para um toque refrescante e nutritivo.</p>
+<p id = "para-420">Mix de oleaginosas e queijo Um mix de oleaginosas, como castanhas, nozes, amêndoas e avelãs, pode acrescentar crocância e sabor à refeição, além de fornecer gorduras saudáveis, proteínas e fibras. Queijos como queijo minas, queijo coalho ou queijo de cabra, combinam muito bem com o sabor do bolo de fubá e ajudam a tornar a refeição mais robusta. Sirva o mix de oleaginosas e pedaços de queijo ao lado do bolo, criando uma combinação saborosa e equilibrada.</p>
+<p id = "para-421">Iogurte natural e granola Iogurte natural ou iogurte grego são ótimas opções para acompanhar os bolos de fubá. O iogurte adiciona um toque de cremosidade e frescor, além de contribuir com proteínas e cálcio. Para tornar a refeição ainda mais nutritiva, adicione uma porção de granola, que trará fibras, vitaminas e minerais. Sirva o iogurte com granola ao lado do bolo, permitindo que cada pessoa se sirva de acordo com suas preferências.</p>
+<h2 id = "link-28">compare pharmacologically fubá, couscous, maizena® and polenta</h2>
+<p id = "para-422">&lt; Fubá, couscous, Maizena®, and polenta are all food products made from grains or grain-derived ingredients. While they may share some similarities, their pharmacological properties can differ due to their unique compositions and processing methods. Here’s a comparison of these four products:</p>
+<p id = "para-423">Fubá (cornmeal): Fubá is a coarse flour made from ground, dried corn (maize). It is rich in carbohydrates, fiber, and some essential minerals like iron, zinc, and magnesium. Cornmeal also contains some vitamins, particularly B vitamins such as thiamine, niacin, and folate. The glycemic index of cornmeal can vary depending on the coarseness of the grind and preparation methods, but it is generally considered moderate.</p>
+<p id = "para-424">Couscous: Couscous is made from semolina, which is a type of wheat flour. It is high in carbohydrates and contains some dietary fiber, protein, and minerals such as iron, magnesium, and zinc. Couscous is also a source of B vitamins, particularly thiamine, niacin, and folate. Being a wheat-based product, it contains gluten, which can be an issue for people with gluten intolerance or celiac disease. The glycemic index of couscous is relatively high, which can affect blood sugar levels.</p>
+<p id = "para-425">Maizena® (cornstarch): Maizena® is a brand of cornstarch, which is a refined starch derived from corn (maize). Cornstarch is primarily composed of carbohydrates, specifically amylose and amylopectin. It is almost pure starch, lacking in vitamins, minerals, and fiber. Cornstarch is gluten-free and has various culinary and industrial applications due to its thickening properties. It has a high glycemic index, which can cause a rapid increase in blood sugar levels.</p>
+<p id = "para-426">Polenta: Polenta is a dish made from cornmeal (fubá) cooked with water or another liquid, such as broth or milk. The pharmacological properties of polenta are similar to those of cornmeal since it is made from the same ingredient. Polenta is a source of carbohydrates, fiber, and some essential minerals and vitamins. Its glycemic index can vary depending on the coarseness of the cornmeal and preparation methods but is generally considered moderate.</p>
+<p id = "para-427">In summary, fubá (cornmeal) and polenta share similar pharmacological properties, while couscous, being wheat-based, has different nutritional content and contains gluten. Maizena® (cornstarch) is a refined product with a high glycemic index and lacks many of the nutrients present in the other three products.</p>
+<h2 id = "link-29">list in pt-br 10 other known usages for fubá</h2>
+<p id = "para-428">&lt; Fubá é um ingrediente versátil na culinária brasileira e pode ser usado em diversas receitas. Aqui estão 10 usos populares do fubá em pratos tradicionais e contemporâneos:</p>
+<ol>
+<li><p id = "para-429">Cuscuz Paulista - Um prato típico do estado de São Paulo, feito com fubá, legumes, ovos e carne.</p>
+</li>
+<li><p id = "para-430">Bolo de fubá - Um bolo simples e saboroso feito com fubá, ovos, leite e açúcar.</p>
+</li>
+<li><p id = "para-431">Broa de milho - Um pãozinho redondo feito com fubá e farinha de trigo, comumente consumido no café da manhã ou lanche da tarde.</p>
+</li>
+<li><p id = "para-432">Polenta - Um prato italiano popular no sul do Brasil, feito com fubá cozido e temperado com queijo e molho.</p>
+</li>
+<li><p id = "para-433">Curau - Um doce cremoso feito com fubá, leite, açúcar e canela, geralmente consumido durante as festas juninas.</p>
+</li>
+<li><p id = "para-434">Pamonha - Um prato típico feito com milho verde ralado e fubá, cozido dentro da própria palha do milho.</p>
+</li>
+<li><p id = "para-435">Canjica - Um doce feito com milho, leite, açúcar e canela, comumente servido durante festas juninas.</p>
+</li>
+<li><p id = "para-436">Mingau de fubá - Um mingau quente e nutritivo feito com fubá, leite, açúcar e canela.</p>
+</li>
+<li><p id = "para-437">Farofa de fubá - Uma farofa feita com fubá torrado e temperado com ingredientes como cebola, alho, bacon e linguiça.</p>
+</li>
+<li><p id = "para-438">Sopa de fubá - Uma sopa reconfortante feita com fubá, legumes e carne, geralmente servida durante os meses mais frios.</p>
+</li>
+</ol>
+<p id = "para-439">Esses são apenas alguns exemplos de pratos que utilizam o fubá na culinária brasileira. É um ingrediente versátil que pode ser incorporado em várias receitas, tanto doces quanto salgadas.</p>
+<h2 id = "link-30">list 6 ingredients more foundational than fubá while explaining their pharmacology</h2>
+<p id = "para-440">&lt; Here are six foundational ingredients with their pharmacological properties:</p>
+<ol>
+<li><p id = "para-441">Sal (Sodium Chloride) - O sal é um ingrediente básico e essencial na culinária mundial. Ele é composto principalmente por cloreto de sódio (NaCl) e é usado para realçar o sabor dos alimentos e para conservação. Do ponto de vista farmacológico, o sal é importante para a manutenção do equilíbrio de fluidos no corpo, regulação da pressão arterial e transmissão de impulsos nervosos. No entanto, o consumo excessivo de sal pode levar a hipertensão e doenças cardiovasculares.</p>
+</li>
+<li><p id = "para-442">Açúcar (Sacarose) - A sacarose é um dissacarídeo composto por glicose e frutose. É usada como adoçante em muitas preparações culinárias. Farmacologicamente, o açúcar é rapidamente metabolizado pelo corpo, fornecendo energia instantânea. O consumo excessivo de açúcar pode levar a diabetes, obesidade e doenças cardiovasculares.</p>
+</li>
+<li><p id = "para-443">Pimenta (Capsaicina) - A capsaicina é o composto ativo responsável pelo sabor picante das pimentas. Farmacologicamente, a capsaicina atua como um analgésico local e tem propriedades anti-inflamatórias. Além disso, ela pode estimular o metabolismo e contribuir para a perda de peso.</p>
+</li>
+<li><p id = "para-444">Alho (Allium sativum) - O alho é um ingrediente culinário popular com propriedades farmacológicas significativas. Contém compostos de enxofre, como a alicina, que possuem atividade antimicrobiana, antifúngica, antioxidante e anti-inflamatória. Além disso, o alho tem sido usado para reduzir o colesterol e a pressão arterial.</p>
+</li>
+<li><p id = "para-445">Gengibre (Zingiber officinale) - O gengibre é uma raiz amplamente utilizada na culinária e na medicina tradicional. Contém compostos bioativos, como gingerol e shogaol, que possuem propriedades antioxidantes, anti-inflamatórias e analgésicas. O gengibre tem sido utilizado para tratar náuseas, dores e problemas digestivos.</p>
+</li>
+<li><p id = "para-446">Cúrcuma (Curcuma longa) - A cúrcuma é uma especiaria comum na culinária asiática e indiana, conhecida por sua cor amarela intensa. O principal composto bioativo da cúrcuma é a curcumina, que possui propriedades antioxidantes, anti-inflamatórias e anticancerígenas. A cúrcuma tem sido usada na medicina tradicional para tratar uma ampla gama de condições, incluindo dores, inflamações e problemas digestivos.</p>
+</li>
+</ol>
+<p id = "para-447">É importante notar que, embora esses ingredientes possuam propriedades farmacológicas, eles são usados principalmente na culinária e não como medicamentos. Consulte um profissional de saúde antes de usar qualquer ingrediente para fins terapêuticos.</p>
+<h2 id = "link-31">if an hypotetical survival attempt of consuming only one ingredient plus water, list in pt-br 10 ingredients better than fubá rating their replenishment 0-1000</h2>
+<p id = "para-448">&lt; É importante esclarecer que uma dieta baseada em apenas um ingrediente não é sustentável a longo prazo, pois não fornecerá todos os nutrientes necessários para a saúde e a sobrevivência. No entanto, aqui estão 10 ingredientes que podem ser considerados melhores do que o fubá em um cenário hipotético de sobrevivência, com uma classificação de 0 a 1000 em relação à sua capacidade de fornecer nutrientes:</p>
+<ol>
+<li><p id = "para-449">Quinoa (850) - Considerado um “superalimento”, a quinoa é rica em proteínas, fibras, vitaminas e minerais, sendo uma escolha nutricionalmente superior ao fubá.</p>
+</li>
+<li><p id = "para-450">Salmão (830) - Rico em proteínas de alta qualidade, ômega-3 e vitamina D, o salmão é uma opção nutritiva em uma dieta de sobrevivência.</p>
+</li>
+<li><p id = "para-451">Lentilha (820) - As lentilhas são ricas em proteínas, fibras, ferro e outras vitaminas e minerais, tornando-as uma boa opção para uma dieta de sobrevivência.</p>
+</li>
+<li><p id = "para-452">Ovo (810) - Os ovos são uma fonte completa de proteínas e contêm vitaminas e minerais essenciais, como a vitamina D e a colina.</p>
+</li>
+<li><p id = "para-453">Batata (800) - Ricas em carboidratos, fibras, vitamina C e alguns minerais, as batatas fornecem uma fonte de energia sustentável e uma quantidade razoável de nutrientes essenciais.</p>
+</li>
+<li><p id = "para-454">Feijão (800) - Os feijões são uma excelente fonte de proteínas, fibras e minerais como ferro e magnésio, tornando-os uma boa opção em um cenário de sobrevivência.</p>
+</li>
+<li><p id = "para-455">Aveia (790) - A aveia é uma fonte de carboidratos complexos, fibras e algumas vitaminas e minerais, como magnésio e vitamina B1.</p>
+</li>
+<li><p id = "para-456">Amendoim (780) - O amendoim fornece gorduras saudáveis, proteínas e fibras, além de algumas vitaminas e minerais.</p>
+</li>
+<li><p id = "para-457">Iogurte (770) - O iogurte é uma fonte de proteínas, cálcio, vitaminas do complexo B e probióticos, que podem ajudar na digestão e na saúde do sistema imunológico.</p>
+</li>
+<li><p id = "para-458">Espinafre (760) - O espinafre é rico em vitaminas, minerais e antioxidantes, como vitamina A, vitamina K, ferro e cálcio.</p>
+</li>
+<li><p id = "para-459">Fubá (720) - O fubá é uma fonte de carboidratos e fornece alguns nutrientes, como fibras, proteínas, ferro e vitaminas do complexo B. No entanto, comparado a outros ingredientes na lista, sua classificação é menor, pois não fornece uma gama completa de nutrientes essenciais.</p>
+</li>
+</ol>
+<p id = "para-460">Lembre-se de que essas classificações são apenas uma estimativa e não substituem a orientação de um profissional de saúde ou nutricionista. A melhor estratégia para a saúde e a sobrevivência é consumir uma dieta equilibrada e variada que forneça todos os nutrientes essenciais.</p>
+<h2 id = "link-32">detail in pt-br all ways to extract/process quinoa explaining proper chemistry</h2>
+<p id = "para-461">&lt; A quinoa (Chenopodium quinoa) é um pseudocereal originário da região dos Andes, na América do Sul. Ela é altamente nutritiva, rica em proteínas, fibras e minerais, e tem ganhado popularidade como um alimento saudável em todo o mundo. Existem várias maneiras de processar a quinoa para consumo, e a química desempenha um papel importante nesses processos.</p>
+<ol>
+<li><p id = "para-462">Lavagem e remoção da saponina: A quinoa possui uma camada externa que contém saponinas, compostos químicos que têm um sabor amargo e podem ser tóxicos se ingeridos em grandes quantidades. Para remover as saponinas, a quinoa deve ser lavada em água corrente, esfregando as sementes entre as mãos ou usando um coador fino. A lavagem reduz a concentração de saponinas, tornando a quinoa mais palatável e segura para consumo.</p>
+</li>
+<li><p id = "para-463">Cozimento: Após a lavagem, a quinoa pode ser cozida em água ou caldo. Durante o cozimento, as moléculas de amido presentes na quinoa se hidratam e gelatinizam, o que leva à formação de uma textura macia e cremosa. O cozimento adequado também aumenta a digestibilidade das proteínas e outros nutrientes presentes na quinoa.</p>
+</li>
+<li><p id = "para-464">Germinação: A germinação da quinoa envolve a imersão das sementes em água por um período de tempo, seguido pela drenagem e umidificação regular. A germinação ativa enzimas que degradam os compostos antinutricionais, como fitatos e taninos, e aumenta a disponibilidade de nutrientes, como proteínas e vitaminas.</p>
+</li>
+<li><p id = "para-465">Prensagem a frio e extração de óleo: O óleo de quinoa pode ser obtido por prensagem a frio das sementes, que preserva os nutrientes e os compostos bioativos presentes no óleo, como os ácidos graxos ômega-3 e ômega-6 e a vitamina E. A prensagem a frio é um método mecânico que não envolve calor ou solventes químicos, resultando em um óleo mais puro e nutritivo.</p>
+</li>
+<li><p id = "para-466">Moagem e produção de farinha: A quinoa pode ser moída em farinha para uso em produtos de panificação e massas. A farinha de quinoa é sem glúten e rica em proteínas, o que a torna uma alternativa saudável para pessoas com doença celíaca ou sensibilidade ao glúten. A moagem das sementes de quinoa quebra as estruturas celulares e libera os componentes nutricionais, facilitando a digestão e a absorção dos nutrientes.</p>
+</li>
+<li><p id = "para-467">Extração de proteínas: A quinoa é uma fonte rica de proteínas de alta qualidade, com todos os aminoácidos essenciais. As proteínas podem ser extraídas da quinoa por meio de processos químicos e físicos, como a solubilização em soluções alcalinas ou ácidas, seguida pela precipitação e separação das proteínas. As proteínas isoladas podem ser usadas como ingredientes funcionais em produtos alimentícios ou funcionais em produtos alimentícios ou como suplementos nutricionais. A extração de proteínas da quinoa permite a obtenção de concentrados proteicos que podem ser usados para enriquecer alimentos e desenvolver produtos com propriedades nutricionais e funcionais específicas, como produtos para atletas, vegetarianos, veganos ou pessoas com alergias e intolerâncias alimentares.</p>
+</li>
+<li><p id = "para-468">Fermentação: A fermentação da quinoa envolve o uso de microrganismos, como bactérias e leveduras, que metabolizam os açúcares e outros componentes da quinoa, produzindo compostos como ácidos orgânicos, álcool e gás carbônico. A fermentação pode melhorar a digestibilidade, o valor nutricional e o sabor da quinoa, além de produzir alimentos fermentados, como bebidas probióticas e produtos de panificação fermentados.</p>
+</li>
+<li><p id = "para-469">Puffing ou extrusão: O processo de puffing consiste em aquecer a quinoa sob alta pressão e, em seguida, liberar rapidamente a pressão, fazendo com que as sementes se expandam e adquiram uma textura crocante. A extrusão é um processo semelhante, no qual a quinoa é forçada através de uma matriz e cozida sob alta pressão e temperatura. Ambos os processos alteram a estrutura física e química da quinoa, melhorando a textura, a palatabilidade e a digestibilidade do produto final. Esses produtos podem ser usados em cereais matinais, barras de cereais e snacks.</p>
+</li>
+</ol>
+<p id = "para-470">Em resumo, existem várias maneiras de processar e extrair componentes da quinoa, cada uma envolvendo diferentes aspectos da química para obter produtos finais variados e melhorar as propriedades nutricionais e funcionais da quinoa. A quinoa é um alimento versátil e nutritivo que pode ser utilizado em uma ampla gama de aplicações culinárias e industriais.</p>
+<h2 id = "link-33">detail a super recipe containing quinoa and cannabis considering satiety</h2>
+<p id = "para-471">&lt; Receita de Salada de Quinoa com Cannabis e Legumes Assados</p>
+<p id = "para-472">Esta receita combina quinoa nutritiva, legumes assados e óleo de cannabis, resultando em uma salada saborosa e saciante, perfeita para um almoço ou jantar leve.</p>
+<p id = "para-473">Ingredientes:</p>
+<ul>
+<li><p id = "para-474">1 xícara de quinoa (lavada e escorrida)</p>
+</li>
+<li><p id = "para-475">2 xícaras de água</p>
+</li>
+<li><p id = "para-476">1 abobrinha média cortada em cubos</p>
+</li>
+<li><p id = "para-477">1 berinjela média cortada em cubos</p>
+</li>
+<li><p id = "para-478">1 pimentão vermelho cortado em tiras</p>
+</li>
+<li><p id = "para-479">1 pimentão amarelo cortado em tiras</p>
+</li>
+<li><p id = "para-480">1 cebola roxa cortada em fatias</p>
+</li>
+<li><p id = "para-481">1 dente de alho picado</p>
+</li>
+<li><p id = "para-482">3 colheres de sopa de azeite</p>
+</li>
+<li><p id = "para-483">2 colheres de sopa de óleo de cannabis (ajuste a quantidade de acordo com a potência desejada)</p>
+</li>
+<li><p id = "para-484">1 limão (suco e raspas)</p>
+</li>
+<li><p id = "para-485">Sal e pimenta-do-reino a gosto</p>
+</li>
+<li><p id = "para-486">Folhas de manjericão fresco para decorar</p>
+</li>
+</ul>
+<p id = "para-487">Instruções:</p>
+<ol>
+<li><p id = "para-488">Cozinhe a quinoa: Em uma panela média, combine a quinoa e a água. Leve para ferver, depois reduza o fogo e cozinhe por cerca de 15 minutos, ou até que a quinoa esteja macia e a água tenha sido absorvida. Deixe esfriar.</p>
+</li>
+<li><p id = "para-489">Preaqueça o forno a 200°C (400°F).</p>
+</li>
+<li><p id = "para-490">Em uma tigela grande, misture a abobrinha, berinjela, pimentões e cebola roxa. Adicione o alho picado, 2 colheres de sopa de azeite, sal e pimenta-do-reino a gosto. Mexa bem para cobrir todos os legumes com azeite e temperos.</p>
+</li>
+<li><p id = "para-491">Espalhe os legumes em uma assadeira forrada com papel manteiga e asse por 20-25 minutos, ou até que os legumes estejam macios e levemente dourados. Deixe esfriar.</p>
+</li>
+<li><p id = "para-492">Em uma tigela pequena, misture o óleo de cannabis, a colher de sopa restante de azeite, o suco e as raspas de limão, sal e pimenta-do-reino a gosto. Esta será a vinagrete de cannabis.</p>
+</li>
+<li><p id = "para-493">Em uma tigela grande, misture a quinoa cozida e os legumes assados. Regue com a vinagrete de cannabis e misture bem para combinar. Ajuste os temperos conforme necessário.</p>
+</li>
+<li><p id = "para-494">Decore com folhas de manjericão fresco e sirva.</p>
+</li>
+</ol>
+<p id = "para-495">Atenção: A potência do óleo de cannabis pode variar significativamente. Comece com uma quantidade menor e ajuste de acordo com a potência desejada e a tolerância individual. Além disso, sempre informe aos comensais que a receita contém cannabis.</p>
+<p id = "para-496">Lembre-se de que a legislação sobre o uso de cannabis varia de acordo com a localidade. Certifique-se de seguir as leis e regulamentações locais ao preparar e consumir alimentos à base de cannabis.</p>
+<h2 id = "link-34">detail in pt-br the top 5 best/cheapest countries to purchase quinoa (list best city and average price in brl for the kg)</h2>
+<p id = "para-497">&lt; Aqui estão os cinco melhores e mais baratos países para comprar quinoa, com as melhores cidades e o preço médio em reais brasileiros (BRL) por quilo:</p>
+<ol>
+<li><p id = "para-498">Bolívia</p>
+<ul>
+<li><p id = "para-499">Melhor cidade: La Paz</p>
+</li>
+<li><p id = "para-500">Preço médio: R$ 12,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-501">Peru</p>
+<ul>
+<li><p id = "para-502">Melhor cidade: Cusco</p>
+</li>
+<li><p id = "para-503">Preço médio: R$ 15,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-504">Equador</p>
+<ul>
+<li><p id = "para-505">Melhor cidade: Quito</p>
+</li>
+<li><p id = "para-506">Preço médio: R$ 18,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-507">Colômbia</p>
+<ul>
+<li><p id = "para-508">Melhor cidade: Bogotá</p>
+</li>
+<li><p id = "para-509">Preço médio: R$ 21,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-510">Chile</p>
+<ul>
+<li><p id = "para-511">Melhor cidade: Santiago</p>
+</li>
+<li><p id = "para-512">Preço médio: R$ 24,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-513">Argentina</p>
+<ul>
+<li><p id = "para-514">Melhor cidade: Buenos Aires</p>
+</li>
+<li><p id = "para-515">Preço médio: R$ 27,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-516">Paraguai</p>
+<ul>
+<li><p id = "para-517">Melhor cidade: Assunção</p>
+</li>
+<li><p id = "para-518">Preço médio: R$ 30,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-519">Uruguai</p>
+<ul>
+<li><p id = "para-520">Melhor cidade: Montevidéu</p>
+</li>
+<li><p id = "para-521">Preço médio: R$ 32,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-522">México</p>
+<ul>
+<li><p id = "para-523">Melhor cidade: Cidade do México</p>
+</li>
+<li><p id = "para-524">Preço médio: R$ 35,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-525">Estados Unidos</p>
+<ul>
+<li><p id = "para-526">Melhor cidade: Los Angeles</p>
+</li>
+<li><p id = "para-527">Preço médio: R$ 40,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-528">Espanha</p>
+<ul>
+<li><p id = "para-529">Melhor cidade: Madri</p>
+</li>
+<li><p id = "para-530">Preço médio: R$ 45,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-531">Portugal</p>
+<ul>
+<li><p id = "para-532">Melhor cidade: Lisboa</p>
+</li>
+<li><p id = "para-533">Preço médio: R$ 48,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-534">Índia</p>
+<ul>
+<li><p id = "para-535">Melhor cidade: Nova Delhi</p>
+</li>
+<li><p id = "para-536">Preço médio: R$ 50,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-537">China</p>
+<ul>
+<li><p id = "para-538">Melhor cidade: Xangai</p>
+</li>
+<li><p id = "para-539">Preço médio: R$ 55,00/kg</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-540">Austrália</p>
+<ul>
+<li><p id = "para-541">Melhor cidade: Sydney</p>
+</li>
+<li><p id = "para-542">Preço médio: R$ 58,00/kg</p>
+</li>
+</ul>
+</li>
+</ol>
+<p id = "para-543">Os preços podem variar com base na época do ano, disponibilidade e qualidade da quinoa, além de taxas de câmbio. Porém, essas informações oferecem uma visão geral dos preços médios em diferentes países.</p>
+<h2 id = "link-35">from all quinoa extractions, which lasts the longest? explain in pt-br</h2>
+<p id = "para-544">&lt; Dentre todos os tipos de quinoa, a quinoa em grão inteiro é a que tem a maior durabilidade. Isso ocorre porque a quinoa inteira mantém sua casca protetora, o que ajuda a preservar a qualidade e a vida útil do produto.</p>
+<p id = "para-545">Quando a quinoa é processada em outras formas, como flocos ou farinha, a vida útil tende a diminuir. Isso acontece porque esses produtos são mais expostos ao oxigênio, umidade e luz, o que pode acelerar a degradação e reduzir sua vida útil.</p>
+<p id = "para-546">Para aumentar a durabilidade da quinoa, independentemente do tipo, armazene-a em um recipiente hermético, em local fresco e escuro, longe da umidade e da luz solar direta.</p>
+<h2 id = "link-36">detail the glycemic index from all common quinoa extractions in pt-br</h2>
+<p id = "para-547">&lt; O índice glicêmico (IG) é uma medida que indica a velocidade com que um alimento aumenta os níveis de açúcar no sangue. Alimentos com IG baixo são mais lentos para serem digeridos e absorvidos, ajudando a manter os níveis de açúcar no sangue estáveis e proporcionando saciedade por mais tempo.</p>
+<p id = "para-548">Quinoa é um grão que possui um IG geralmente baixo a médio, com diferentes variações dependendo do tipo e do método de preparo. Aqui estão os valores aproximados de IG para algumas formas comuns de quinoa:</p>
+<ol>
+<li><p id = "para-549">Quinoa em grãos cozida:</p>
+<ul>
+<li><p id = "para-550">IG: 53 (baixo)</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-551">Quinoa em flocos:</p>
+<ul>
+<li><p id = "para-552">IG: 60 (médio)</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-553">Farinha de quinoa:</p>
+<ul>
+<li><p id = "para-554">IG: 65 (médio)</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-555">Pão feito com farinha de quinoa (em combinação com outras farinhas):</p>
+<ul>
+<li><p id = "para-556">IG: 50-70 (baixo a médio, dependendo da composição)</p>
+</li>
+</ul>
+</li>
+<li><p id = "para-557">Massas à base de quinoa:</p>
+<ul>
+<li><p id = "para-558">IG: 45-55 (baixo a médio, dependendo da composição)</p>
+</li>
+</ul>
+</li>
+</ol>
+<p id = "para-559">Lembre-se de que esses valores de IG são aproximados e podem variar dependendo da marca e do método de preparo. Além disso, combinar quinoa com alimentos ricos em fibras, proteínas e gorduras saudáveis pode ajudar a diminuir ainda mais o IG da refeição.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<div class = "table">
+    <table>
+<tr>
+<th>Alimento</th><th>Porção</th><th>Proteína</th><th>Carboidratos</th><th>Gorduras</th><th>Fibras</th><th>Calorias</th><th>% de Calorias Totais</th><th>% IDR Proteína</th><th>% IDR Carboidratos</th><th>% IDR Gorduras</th><th>% IDR Fibras</th><th>Índice de Importância</th><th>Relevância de Micronutrientes</th></tr>
+<tr>
+<td>Atum enlatado em água</td><td>1 lata</td><td>39g</td><td>0g</td><td>1g</td><td>0g</td><td>179</td><td>8.95%</td><td>75%</td><td>0%</td><td>1.5%</td><td>0%</td><td>Alta</td><td>Alta (Ômega-3, Vit. D, Selênio)</td></tr>
+<tr>
+<td>Sardinha enlatada</td><td>1 lata</td><td>23g</td><td>0g</td><td>11g</td><td>0g</td><td>191</td><td>9.55%</td><td>44%</td><td>0%</td><td>16%</td><td>0%</td><td>Alta</td><td>Alta (Ômega-3, Vit. D, Cálcio)</td></tr>
+<tr>
+<td>Barra de proteína</td><td>50g</td><td>20g</td><td>20g</td><td>7g</td><td>5g</td><td>230</td><td>11.5%</td><td>38%</td><td>7%</td><td>10%</td><td>20%</td><td>Alta</td><td>Média</td></tr>
+<tr>
+<td>Jerky</td><td>28g</td><td>9g</td><td>7g</td><td>1g</td><td>0g</td><td>80</td><td>4%</td><td>17%</td><td>2.5%</td><td>1.5%</td><td>0%</td><td>Média</td><td>Baixa</td></tr>
+<tr>
+<td>Pão integral</td><td>1 fatia</td><td>4g</td><td>15g</td><td>1g</td><td>2g</td><td>80</td><td>4%</td><td>7.5%</td><td>5%</td><td>1.5%</td><td>8%</td><td>Média</td><td>Alta (B-Vit, Ferro, Magnésio)</td></tr>
+<tr>
+<td>Nozes</td><td>28g</td><td>5g</td><td>4g</td><td>18g</td><td>2g</td><td>200</td><td>10%</td><td>9.5%</td><td>1.5%</td><td>27%</td><td>8%</td><td>Alta</td><td>Alta (Ômega-3, Vit. E, Magnésio, Cobre)</td></tr>
+<tr>
+<td>Sementes</td><td>28g</td><td>6g</td><td>7g</td><td>15g</td><td>8g</td><td>200</td><td>10%</td><td>11%</td><td>2.5%</td><td>22%</td><td>32%</td><td>Alta</td><td>Alta (Ômega-3, Magnésio, Ferro, Zinco)</td></tr>
+<tr>
+<td>Manteiga de amendoim</td><td>2 colheres de sopa</td><td>7g</td><td>6g</td><td>16g</td><td>2g</td><td>180</td><td>9%</td><td>13%</td><td>2%</td><td>23%</td><td>8%</td><td>Alta</td><td>Média (B-Vit, Magnésio, Vit. E)</td></tr>
+<tr>
+<td>Abacate</td><td>1/2 médio</td><td>2g</td><td>12g</td><td>15g</td><td>10g</td><td>160</td><td>8%</td><td>3.8%</td><td>4%</td><td>22%</td><td>40%</td><td>Alta</td><td>Alta (Vit. K, Fibras, Ômega-3)</td></tr>
+<tr>
+<td>Banana</td><td>1 média</td><td>1g</td><td>27g</td><td>0g</td><td>3g</td><td>105</td><td>5.25%</td><td>1.9%</td><td>9%</td><td>0%</td><td>12%</td><td>Média</td><td>Alta (Potássio, Vit. C, B6, Magnésio)</td></tr>
+<tr>
+<td>Maçã</td><td>1 média</td><td>0g</td><td>25g</td><td>0g</td><td>4g</td><td>95</td><td>4.75%</td><td>0%</td><td>8%</td><td>0%</td><td>16%</td><td>Média</td><td>Alta (Vit. C, Potássio, Fibras)</td></tr>
+<tr>
+<td>Azeitonas</td><td>30g</td><td>0g</td><td>3g</td><td>3g</td><td>1g</td><td>40</td><td>2%</td><td>0%</td><td>1%</td><td>4.5%</td><td>4%</td><td>Baixa</td><td>Média (Vit. E, Ferro)</td></tr>
+<tr>
+<td>Farinha de aveia</td><td>1/2 xícara</td><td>5g</td><td>27g</td><td>3g</td><td>4g</td><td>150</td><td>7.5%</td><td>9.5%</td><td>9%</td><td>4.5%</td><td>16%</td><td>Alta</td><td>Alta (Fibras, Magnésio, Fósforo)</td></tr>
+<tr>
+<td>Iogurte grego sem gordura</td><td>170g</td><td>17g</td><td>6g</td><td>0g</td><td>0g</td><td>100</td><td>5%</td><td>32%</td><td>2%</td><td>0%</td><td>0%</td><td>Alta</td><td>Alta (Cálcio, Probióticos, Vit. B12)</td></tr>
+<tr>
+<td>Queijo cottage</td><td>1/2 xícara</td><td>14g</td><td>6g</td><td>1g</td><td>0g</td><td>80</td><td>4%</td><td>27%</td><td>2%</td><td>1.5%</td><td>0%</td><td>Alta</td><td>Alta (Cálcio, Vit. B12)</td></tr>
+<tr>
+<td>Chocolate amargo</td><td>1 barra (40g)</td><td>2g</td><td>17g</td><td>12g</td><td>3g</td><td>210</td><td>10.5%</td><td>3.8%</td><td>5.7%</td><td>18%</td><td>12%</td><td>Média</td><td>Média (Ferro, Antioxidantes)</td></tr>
+<tr>
+<td>Leite em pó</td><td>1 colher de sopa</td><td>2g</td><td>12g</td><td>0g</td><td>0g</td><td>60</td><td>3%</td><td>3.8%</td><td>4%</td><td>0%</td><td>0%</td><td>Média</td><td>Alta (Cálcio, Vit. D)</td></tr>
+<tr>
+<td>Feijão enlatado</td><td>1/2 xícara</td><td>7g</td><td>20g</td><td>1g</td><td>8g</td><td>110</td><td>5.5%</td><td>13%</td><td>7%</td><td>1.5%</td><td>32%</td><td>Alta</td><td>Alta (Ferro, Fibras, Potássio)</td></tr>
+<tr>
+<td>Ervilhas enlatadas</td><td>1/2 xícara</td><td>4g</td><td>11g</td><td>0g</td><td>4g</td><td>60</td><td>3%</td><td>7.5%</td><td>4%</td><td>0%</td><td>16%</td><td>Alta</td><td>Alta (Vit. A, Vit. C, Fibras)</td></tr>
+<tr>
+<td>Cereais integrais</td><td>1 xícara</td><td>5g</td><td>25g</td><td>3g</td><td>3g</td><td>160</td><td>8%</td><td>9.5%</td><td>8.3%</td><td>4.5%</td><td>12%</td><td>Média</td><td>Média</td></tr>
+<tr>
+<td>Granola</td><td>1/2 xícara</td><td>5g</td><td>35g</td><td>7g</td><td>4g</td><td>210</td><td>10.5%</td><td>9.5%</td><td>11.7%</td><td>10.5%</td><td>16%</td><td>Média</td><td>Média (Ferro, Vit. E)</td></tr>
+<tr>
+<td>Frutas secas</td><td>1/4 xícara</td><td>1g</td><td>30g</td><td>0g</td><td>2g</td><td>120</td><td>6%</td><td>1.9%</td><td>10%</td><td>0%</td><td>8%</td><td>Média</td><td>Alta (Potássio, Vit. C)</td></tr>
+<tr>
+<td>Bolachas de arroz</td><td>1 unidade</td><td>1g</td><td>7g</td><td>0g</td><td>1g</td><td>35</td><td>1.75%</td><td>1.9%</td><td>2.3%</td><td>0%</td><td>4%</td><td>Baixa</td><td>Baixa</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>Alimento</th><th>Porção</th><th>Proteína</th><th>Carboidratos</th><th>Gorduras</th><th>Fibras</th><th>Calorias</th><th>% de Calorias Totais</th><th>% IDR Proteína</th><th>% IDR Carboidratos</th><th>% IDR Gorduras</th><th>% IDR Fibras</th><th>Índice de Importância</th><th>Relevância de Micronutrientes</th></tr>
+<tr>
+<td>McDonald’s - Big Mac</td><td>1 sanduíche</td><td>25g</td><td>45g</td><td>29g</td><td>3g</td><td>540</td><td>27%</td><td>48%</td><td>15%</td><td>43.5%</td><td>12%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>McDonald’s - McNuggets (10 unidades)</td><td>10 unidades</td><td>23g</td><td>26g</td><td>28g</td><td>2g</td><td>440</td><td>22%</td><td>44%</td><td>8.7%</td><td>42%</td><td>8%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>McDonald’s - McChicken</td><td>1 sanduíche</td><td>16g</td><td>40g</td><td>16g</td><td>2g</td><td>370</td><td>18.5%</td><td>30.5%</td><td>13.3%</td><td>24%</td><td>8%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>Burger King - Whopper</td><td>1 sanduíche</td><td>28g</td><td>49g</td><td>40g</td><td>2g</td><td>660</td><td>33%</td><td>53.8%</td><td>16.3%</td><td>60%</td><td>8%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>Burger King - Chicken Fries (9 unidades)</td><td>9 unidades</td><td>16g</td><td>26g</td><td>15g</td><td>1g</td><td>290</td><td>14.5%</td><td>30.5%</td><td>8.7%</td><td>22.5%</td><td>4%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>Burger King - BK Stacker Triplo</td><td>1 sanduíche</td><td>39g</td><td>50g</td><td>69g</td><td>2g</td><td>1030</td><td>51.5%</td><td>74.5%</td><td>16.7%</td><td>103.5%</td><td>8%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>Subway - Frango Teriyaki</td><td>1 sanduíche</td><td>36g</td><td>58g</td><td>9g</td><td>5g</td><td>540</td><td>27%</td><td>69.2%</td><td>19.3%</td><td>13.5%</td><td>20%</td><td>Alta</td><td>Média (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>Subway - Italiano</td><td>1 sanduíche</td><td>20g</td><td>44g</td><td>18g</td><td>6g</td><td>410</td><td>20.5%</td><td>38.5%</td><td>14.7%</td><td>27%</td><td>24%</td><td>Alta</td><td>Média (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>KFC - Balde de Frango (6 pedaços)</td><td>6 pedaços</td><td>60g</td><td>18g</td><td>69g</td><td>0g</td><td>930</td><td>46.5%</td><td>115%</td><td>6%</td><td>103.5%</td><td>0%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>KFC - Sanduíche de Frango Crocante</td><td>1 sanduíche</td><td>23g</td><td>37g</td><td>19g</td><td>2g</td><td>420</td><td>21%</td><td>44%</td><td>12.3%</td><td>28.5%</td><td>8%</td><td>Alta</td><td>Baixa</td></tr>
+<tr>
+<td>Habib’s - Esfiha de Carne</td><td>1 unidade</td><td>6g</td><td>9g</td><td>5g</td><td>1g</td><td>90</td><td>4.5%</td><td>11.5%</td><td>3%</td><td>7.5%</td><td>4%</td><td>Média</td><td>Média</td></tr>
+<tr>
+<td>Habib’s - Beirute de Frango</td><td>1 sanduíche</td><td>33g</td><td>57g</td><td>33g</td><td>4g</td><td>650</td><td>32.5%</td><td>63.5%</td><td>19%</td><td>49.5%</td><td>16%</td><td>Alta</td><td>Média</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>Alimento</th><th>Porção</th><th>Proteína</th><th>Carboidratos</th><th>Gorduras</th><th>Fibras</th><th>Calorias</th><th>% de Calorias Totais</th><th>% IDR Proteína</th><th>% IDR Carboidratos</th><th>% IDR Gorduras</th><th>% IDR Fibras</th><th>Índice de Importância</th><th>Relevância de Micronutrientes</th></tr>
+<tr>
+<td>Subway - Sanduíche de Atum</td><td>1 sanduíche</td><td>20g</td><td>44g</td><td>18g</td><td>6g</td><td>480</td><td>24%</td><td>38.5%</td><td>14.7%</td><td>27%</td><td>24%</td><td>Alta</td><td>Alta (Ômega-3, Vit. D, Selênio)</td></tr>
+<tr>
+<td>Subway - Sanduíche de Frango Teriyaki</td><td>1 sanduíche</td><td>36g</td><td>58g</td><td>9g</td><td>5g</td><td>540</td><td>27%</td><td>69.2%</td><td>19.3%</td><td>13.5%</td><td>20%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>Subway - Salada de Frango</td><td>1 porção</td><td>12g</td><td>11g</td><td>2.5g</td><td>3g</td><td>140</td><td>7%</td><td>23%</td><td>3.7%</td><td>3.75%</td><td>12%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>McDonald’s - Salada César com Frango Grelhado</td><td>1 porção</td><td>27g</td><td>9g</td><td>8g</td><td>3g</td><td>230</td><td>11.5%</td><td>51.5%</td><td>3%</td><td>12%</td><td>12%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>McDonald’s - Wrap de Frango Grelhado</td><td>1 unidade</td><td>24g</td><td>33g</td><td>13g</td><td>3g</td><td>360</td><td>18%</td><td>46%</td><td>11%</td><td>19.5%</td><td>12%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>Burger King - Salada de Frango Grelhado</td><td>1 porção</td><td>25g</td><td>7g</td><td>7g</td><td>3g</td><td>210</td><td>10.5%</td><td>48%</td><td>2.3%</td><td>10.5%</td><td>12%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>Habib’s - Salada de Tabule</td><td>1 porção</td><td>2g</td><td>30g</td><td>5g</td><td>5g</td><td>150</td><td>7.5%</td><td>3.8%</td><td>10%</td><td>7.5%</td><td>20%</td><td>Alta</td><td>Alta (Vit. A, Vit. C, Fibras)</td></tr>
+<tr>
+<td>Habib’s - Quibe de Forno</td><td>1 unidade</td><td>8g</td><td>20g</td><td>7g</td><td>3g</td><td>160</td><td>8%</td><td>15.4%</td><td>6.7%</td><td>10.5%</td><td>12%</td><td>Alta</td><td>Alta (Vit. B, Zinco, Ferro)</td></tr>
+<tr>
+<td>KFC - Salada de Frango Grelhado</td><td>1 porção</td><td>24g</td><td>10g</td><td>6g</td><td>3g</td><td>180</td><td>9%</td><td>46%</td><td>3.3%</td><td>9%</td><td>12%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+<tr>
+<td>Pizza Hut - Pizza de Frango com Requeijão (1 fatia)</td><td>1 fatia</td><td>10g</td><td>25g</td><td>9g</td><td>2g</td><td>210</td><td>10.5%</td><td>19.2%</td><td>8.3%</td><td>13.5%</td><td>8%</td><td>Alta</td><td>Média (Cálcio, Vit. B12)</td></tr>
+<tr>
+<td>Bob’s - Sanduíche Natural de Atum</td><td>1 sanduíche</td><td>15g</td><td>31g</td><td>8g</td><td>2g</td><td>260</td><td>13%</td><td>28.8%</td><td>10.3%</td><td>12%</td><td>8%</td><td>Alta</td><td>Média (Ômega-3, Vit. D, Selênio)</td></tr>
+<tr>
+<td>Bob’s - Salada de Frango Grelhado</td><td>1 porção</td><td>23g</td><td>11g</td><td>4g</td><td>2g</td><td>180</td><td>9%</td><td>44.2%</td><td>3.7%</td><td>6%</td><td>8%</td><td>Alta</td><td>Alta (Vit. A, Vit. C)</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>Alimento</th><th>Porção</th><th>Proteína</th><th>Carboidratos</th><th>Gorduras</th><th>Fibras</th><th>Calorias</th><th>% de Calorias Totais</th><th>% IDR Proteína</th><th>% IDR Carboidratos</th><th>% IDR Gorduras</th><th>% IDR Fibras</th><th>Índice de Importância</th><th>Relevância de Micronutrientes</th></tr>
+<tr>
+<td>Burger King - Combo Mega Stacker Catupiry</td><td>1 combo</td><td>54g</td><td>135g</td><td>130g</td><td>6g</td><td>2060</td><td>103%</td><td>103.8%</td><td>45%</td><td>195%</td><td>24%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>McDonald’s - Combo Big Tasty</td><td>1 combo</td><td>46g</td><td>114g</td><td>110g</td><td>5g</td><td>1620</td><td>81%</td><td>88.5%</td><td>38%</td><td>165%</td><td>20%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>Bob’s - Combo Big Bob Picanha</td><td>1 combo</td><td>52g</td><td>130g</td><td>85g</td><td>5g</td><td>1480</td><td>74%</td><td>100%</td><td>43.3%</td><td>127.5%</td><td>20%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>Habib’s - Combo Beirute de Carne</td><td>1 combo</td><td>42g</td><td>120g</td><td>80g</td><td>4g</td><td>1360</td><td>68%</td><td>80.8%</td><td>40%</td><td>120%</td><td>16%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>McDonald’s - Combo McFritas Mega</td><td>1 combo</td><td>15g</td><td>115g</td><td>80g</td><td>9g</td><td>1210</td><td>60.5%</td><td>28.8%</td><td>38.3%</td><td>120%</td><td>36%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>Subway - Combo Steak Cheddar Cremoso</td><td>1 combo</td><td>48g</td><td>140g</td><td>50g</td><td>6g</td><td>1180</td><td>59%</td><td>92.3%</td><td>46.7%</td><td>75%</td><td>24%</td><td>Média</td><td>Baixa</td></tr>
+<tr>
+<td>Burger King - Combo BK Stacker Quad</td><td>1 combo</td><td>62g</td><td>103g</td><td>60g</td><td>6g</td><td>1120</td><td>56%</td><td>119.2%</td><td>34.3%</td><td>90%</td><td>24%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>KFC - Combo Balde de Frango com Batatas</td><td>1 combo</td><td>54g</td><td>100g</td><td>60g</td><td>5g</td><td>1060</td><td>53%</td><td>103.8%</td><td>33.3%</td><td>90%</td><td>20%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>Pizza Hut - Pizza Pepperoni (1 pizza grande)</td><td>8 fatias</td><td>88g</td><td>208g</td><td>104g</td><td>16g</td><td>2320</td><td>116%</td><td>169.2%</td><td>69.3%</td><td>156%</td><td>64%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>Burger King - Combo BK Chicken Fries</td><td>1 combo</td><td>45g</td><td>100g</td><td>50g</td><td>7g</td><td>960</td><td>48%</td><td>86.5%</td><td>33.3%</td><td>75%</td><td>28%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>McDonald’s - Combo McRib</td><td>1 combo</td><td>40g</td><td>104g</td><td>48g</td><td>6g</td><td>950</td><td>47.5%</td><td>76.9%</td><td>34.7%</td><td>72%</td><td>24%</td><td>Baixa</td><td>Baixa</td></tr>
+<tr>
+<td>Bob’s - Combo Cheddar Australiano</td><td>1 combo</td><td>46g</td><td>91g</td><td>48g</td><td>5g</td><td>920</td><td>46%</td><td>88.5%</td><td>30.3%</td><td>72%</td><td>20%</td><td>Baixa</td><td>Baixa</td></tr>
+
+    </table>
+</div>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

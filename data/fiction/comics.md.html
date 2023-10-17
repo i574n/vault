@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">from written manhwa so far, try breaking them down using pt-br into as many subgenres as available</a></li>
+      <li><a href="#link-2">detail in pt-br the manhwa canon so far and which subgenres they fit in</a></li>
+      <li><a href="#link-3">list 5 more</a></li>
+      <li><a href="#link-4">list the most relevant litrpg manhwa detailing its mechanics</a></li>
+      <li><a href="#link-5">list 5 more around this theme</a></li>
+      <li><a href="#link-6">any worthy mentions in this genre? before we move on</a></li>
+      <li><a href="#link-7">list titles from the josei subgenre with proper details</a></li>
+      <li><a href="#link-8">what about isekai, ecchi, demons, virtual reality, gender, etc</a></li>
+      <li><a href="#link-9">which manhwa has factors of randomness in the plot or mechanics?</a></li>
+      <li><a href="#link-10">which manhwa explored these tangents already?</a></li>
+      <li><a href="#link-11">could solo leveling be considered canon in the manhwa pantheon? detail the genre and its graphed branches</a></li>
+      <li><a href="#link-12">if you were to abstractly rate isekai from 0-1000, how solo leveling could be placed?</a></li>
+      <li><a href="#link-13">trying to increase precision since you left an open range of 100. list 10 manwha isekai 950+</a></li>
+      <li><a href="#link-14">list 10 manhwa from 22h-02h with a brief plot summary</a></li>
+      <li><a href="#link-15">any manhwa?</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">from written manhwa so far, try breaking them down using pt-br into as many subgenres as available</h2>
+<p id = "para-1">&lt; I apologize for the oversight. Here’s an expanded list of manhwa subgenres in Portuguese (pt-br):</p>
+<ol>
+<li><p id = "para-2">Ação (Action)</p>
+</li>
+<li><p id = "para-3">Aventura (Adventure)</p>
+</li>
+<li><p id = "para-4">Comédia (Comedy)</p>
+</li>
+<li><p id = "para-5">Drama (Drama)</p>
+</li>
+<li><p id = "para-6">Escolar (School life)</p>
+</li>
+<li><p id = "para-7">Fantasia (Fantasy)</p>
+</li>
+<li><p id = "para-8">Ficção Científica (Sci-fi)</p>
+</li>
+<li><p id = "para-9">Histórico (Historical)</p>
+</li>
+<li><p id = "para-10">Horror (Horror)</p>
+</li>
+<li><p id = "para-11">Isekai (Isekai)</p>
+</li>
+<li><p id = "para-12">Mistério (Mystery)</p>
+</li>
+<li><p id = "para-13">Psicológico (Psychological)</p>
+</li>
+<li><p id = "para-14">Romance (Romance)</p>
+</li>
+<li><p id = "para-15">Slice of Life (Slice of Life)</p>
+</li>
+<li><p id = "para-16">Sobrenatural (Supernatural)</p>
+</li>
+<li><p id = "para-17">Suspense (Thriller)</p>
+</li>
+<li><p id = "para-18">Tragédia (Tragedy)</p>
+</li>
+<li><p id = "para-19">Esporte (Sports)</p>
+</li>
+<li><p id = "para-20">Yaoi (Boys’ Love)</p>
+</li>
+<li><p id = "para-21">Yuri (Girls’ Love)</p>
+</li>
+<li><p id = "para-22">Harem (Harem)</p>
+</li>
+<li><p id = "para-23">Reverse Harem (Reverse Harem)</p>
+</li>
+<li><p id = "para-24">Mecha (Mecha, involving robots or machines)</p>
+</li>
+<li><p id = "para-25">Magia (Magic)</p>
+</li>
+<li><p id = "para-26">Vida Virtual (Virtual Reality)</p>
+</li>
+<li><p id = "para-27">Artes Marciais (Martial Arts)</p>
+</li>
+<li><p id = "para-28">Musical (Musical)</p>
+</li>
+<li><p id = "para-29">Paródia (Parody)</p>
+</li>
+<li><p id = "para-30">Policial (Crime)</p>
+</li>
+<li><p id = "para-31">Pós-Apocalíptico (Post-Apocalyptic)</p>
+</li>
+<li><p id = "para-32">Ecchi (Ecchi, mild sexual content)</p>
+</li>
+<li><p id = "para-33">Jogo (Game, related to video games or board games)</p>
+</li>
+<li><p id = "para-34">Gender Bender (Gender Bender, changing of one’s gender)</p>
+</li>
+<li><p id = "para-35">Seinen (Seinen, aimed at young adult male audience)</p>
+</li>
+<li><p id = "para-36">Shoujo (Shoujo, aimed at young female audience)</p>
+</li>
+<li><p id = "para-37">Shounen (Shounen, aimed at young male audience)</p>
+</li>
+<li><p id = "para-38">Josei (Josei, aimed at adult female audience)</p>
+</li>
+<li><p id = "para-39">Super-Heróis (Superheroes)</p>
+</li>
+<li><p id = "para-40">Vampiros (Vampires)</p>
+</li>
+<li><p id = "para-41">Zumbis (Zombies)</p>
+</li>
+<li><p id = "para-42">Demônios (Demons)</p>
+</li>
+<li><p id = "para-43">Espaço (Space)</p>
+</li>
+</ol>
+<p id = "para-44">It’s important to note that manhwas can be a mix of multiple subgenres, and this list may not cover every possible subgenre, as new themes and trends emerge over time.</p>
+<h2 id = "link-2">detail in pt-br the manhwa canon so far and which subgenres they fit in</h2>
+<p id = "para-45">&lt; “Manhwa” é um termo coreano usado para descrever histórias em quadrinhos e animações originárias da Coreia do Sul. Embora os manhwas possuam semelhanças com os mangás japoneses, eles têm um estilo único e características culturais distintas.</p>
+<p id = "para-46">Aqui estão alguns manhwas populares e seus respectivos subgêneros:</p>
+<p id = "para-47">Solo Leveling (Ação, Aventura, Fantasia, Jogo): Solo Leveling é um manhwa de ação e fantasia que conta a história de Sung Jin-Woo, um caçador de rank E, considerado o mais fraco. No entanto, após uma experiência quase fatal, ele adquire habilidades únicas e passa a subir rapidamente de nível, tornando-se um dos caçadores mais fortes do mundo.</p>
+<p id = "para-48">Tower of God (Ação, Aventura, Drama, Fantasia, Mistério): Tower of God acompanha a jornada de Twenty-Fifth Bam, um jovem que entra em uma misteriosa torre para encontrar sua amiga de infância Rachel. À medida que ele avança pelos andares da torre, enfrenta diversos desafios e descobre a verdade por trás dessa estrutura misteriosa.</p>
+<p id = "para-49">The God of High School (Ação, Artes Marciais, Aventura, Comédia, Sobrenatural): The God of High School segue a história de Jin Mo-Ri, um jovem lutador de artes marciais que se junta a um torneio chamado “O Deus do Ensino Médio”, onde os participantes lutam usando habilidades sobrenaturais e artes marciais para obter o título de Deus do Ensino Médio e ter seu desejo concedido.</p>
+<p id = "para-50">Noblesse (Ação, Drama, Sobrenatural, Vampiros): Noblesse conta a história de Cadis Etrama Di Raizel, um nobre vampiro que acorda após 820 anos de sono e tenta se adaptar ao mundo moderno. Junto com seus amigos e servos, ele enfrenta várias ameaças e inimigos, enquanto descobre a verdade sobre seu passado.</p>
+<p id = "para-51">UnOrdinary (Ação, Drama, Escolar, Romance, Sobrenatural): UnOrdinary é um manhwa ambientado em um mundo onde quase todos possuem habilidades sobrenaturais. A história segue John, um estudante que aparentemente não possui habilidades, mas tem um passado misterioso e habilidades ocultas que desafiam o status quo de sua sociedade.</p>
+<p id = "para-52">Esses são apenas alguns exemplos de manhwas populares e seus respectivos subgêneros. Os manhwas cobrem uma ampla variedade de temas e estilos, oferecendo histórias únicas e envolventes para os leitores.</p>
+<h2 id = "link-3">list 5 more</h2>
+<p id = "para-53">&lt; Aqui estão mais cinco manhwas populares e seus respectivos subgêneros:</p>
+<p id = "para-54">Sweet Home (Horror, Suspense, Pós-Apocalíptico): Sweet Home é um manhwa de horror e suspense que conta a história de Cha Hyun-soo, um estudante solitário e recluso que se muda para um novo apartamento após a morte de sua família. Logo, ele descobre que os moradores estão se transformando em monstros sedentos por sangue e deve lutar para sobreviver neste mundo pós-apocalíptico.</p>
+<p id = "para-55">Killing Stalking (Drama, Horror, Psicológico, Tragédia, Mistério): Killing Stalking segue a história de Yoon Bum, um jovem com problemas mentais que se apaixona por Sangwoo, um homem charmoso e atraente. No entanto, ao entrar na casa de Sangwoo para se aproximar dele, Yoon Bum descobre que ele é um assassino em série. O manhwa explora temas sombrios, como obsessão, abuso e violência.</p>
+<p id = "para-56">Orange Marmalade (Drama, Romance, Escolar, Sobrenatural, Vampiros): Orange Marmalade é um manhwa de romance e drama que acompanha a vida de Baek Ma Ri, uma jovem vampira que tenta viver discretamente entre os humanos. Ela conhece Jung Jae Min, um popular estudante humano, e eles começam a se apaixonar, enfrentando preconceitos e desafios em um mundo onde vampiros e humanos coexistem.</p>
+<p id = "para-57">Lookism (Comédia, Drama, Escolar, Psicológico, Slice of Life): Lookism é um manhwa que explora a discriminação e os preconceitos relacionados à aparência física. A história segue Park Hyung Suk, um estudante que sofre bullying devido à sua aparência pouco atraente. No entanto, ele acorda um dia em um corpo atraente e descobre que pode alternar entre os dois corpos, o que o leva a questionar os padrões de beleza e a importância da aparência.</p>
+<p id = "para-58">Dice: The Cube That Changes Everything (Ação, Drama, Fantasia, Psicológico, Escolar): Dice é um manhwa de fantasia e ação que segue Dongtae, um estudante impopular e sem habilidades que descobre um dado mágico que pode alterar a realidade. Ao rolar o dado, os usuários podem ganhar habilidades e poderes sobrenaturais, mas à custa de consequências imprevisíveis. A história explora o impacto dessas mudanças na vida dos personagens e as implicações morais de usar o dado.</p>
+<p id = "para-59">Esses manhwas adicionais demonstram a diversidade de temas e estilos encontrados nos quadrinhos coreanos, oferecendo experiências únicas e envolventes para os leitores.</p>
+<h2 id = "link-4">list the most relevant litrpg manhwa detailing its mechanics</h2>
+<p id = "para-60">&lt; Aqui estão alguns dos manhwas mais relevantes do gênero LitRPG (Literature Role Playing Game) e uma breve descrição de suas mecânicas:</p>
+<p id = "para-61">Solo Leveling (Ação, Aventura, Fantasia, Jogo): Mecânicas: Solo Leveling apresenta um sistema de níveis e habilidades típico dos RPGs. Sung Jin-Woo, o protagonista, possui um “sistema” único que lhe permite subir de nível e adquirir habilidades. Ele também pode invocar sombras para ajudá-lo em batalhas e completar missões, semelhante a um jogo de RPG.</p>
+<p id = "para-62">The Gamer (Ação, Aventura, Comédia, Fantasia, Jogo): Mecânicas: O protagonista, Han Jee-Han, ganha a habilidade de ver o mundo como um jogo. Ele pode ver o nível, as estatísticas e as habilidades das pessoas e melhorar suas próprias habilidades por meio de um sistema de pontos de habilidade. Além disso, ele pode adquirir novas habilidades ao interagir com outros jogadores, completar missões e enfrentar inimigos.</p>
+<p id = "para-63">Hardcore Leveling Warrior (Ação, Aventura, Fantasia, Jogo): Mecânicas: O protagonista, conhecido como Hardcore Leveling Warrior, é um jogador de alto nível em um jogo de realidade virtual chamado Lucid Adventure. Ele perde todas as suas habilidades e itens após ser derrotado e deve começar do zero. O manhwa apresenta um sistema de classes, habilidades e atributos semelhantes aos RPGs, além de um sistema de economia e de guildas.</p>
+<p id = "para-64">Overgeared (Ação, Aventura, Fantasia, Jogo): Mecânicas: Overgeared segue a história de Shin Youngwoo, um jogador do jogo de realidade virtual chamado Satisfy. Ele adquire habilidades únicas relacionadas à criação de itens e forja uma classe lendária chamada “Mestre Ferreiro”. O manhwa apresenta um sistema de classes, habilidades, atributos e um sistema de fabricação detalhado, que permite aos jogadores criar e aprimorar equipamentos.</p>
+<p id = "para-65">Legendary Moonlight Sculptor (Ação, Aventura, Comédia, Fantasia, Jogo): Mecânicas: Baseado em um romance coreano, Legendary Moonlight Sculptor segue a história de Lee Hyun, um jogador pobre que decide ganhar dinheiro no jogo de realidade virtual Royal Road. Ele escolhe a classe escultor, uma classe incomum com habilidades únicas de escultura e criação. O manhwa apresenta um sistema de progressão de personagens, habilidades, missões e um mundo de jogo vasto e imersivo.</p>
+<p id = "para-66">Esses manhwas LitRPG destacam-se por suas mecânicas de jogo únicas e atraentes, que combinam elementos de jogos de RPG com narrativas envolventes e personagens cativantes.</p>
+<h2 id = "link-5">list 5 more around this theme</h2>
+<p id = "para-67">&lt; Aqui estão mais cinco manhwas relacionados ao tema LitRPG (Literature Role Playing Game) e uma breve descrição de suas mecânicas:</p>
+<p id = "para-68">The Live (Ação, Aventura, Drama, Jogo, Suspense): Mecânicas: Após perder sua família, Yoon-Jae, o protagonista, descobre um jogo de realidade virtual chamado “The Live”. O jogo apresenta missões perigosas que o jogador deve completar para obter recompensas no mundo real. As mecânicas incluem habilidades, itens e missões, típicos dos RPGs.</p>
+<p id = "para-69">Ranker Who Lives a Second Time (Ação, Aventura, Fantasia, Jogo, Sobrenatural): Mecânicas: Yeon-woo, o protagonista, reencarna em um mundo de jogo semelhante a um RPG após a morte de seu irmão gêmeo. Ele herda a memória e o conhecimento de seu irmão, o que o ajuda a entender as mecânicas do jogo, como classes, habilidades, missões e um sistema de rankings baseado em níveis.</p>
+<p id = "para-70">Dungeon Reset (Ação, Aventura, Comédia, Fantasia, Jogo): Mecânicas: O protagonista, Daun, fica preso em um calabouço misterioso que se “reseta” periodicamente. O manhwa apresenta um sistema de níveis, habilidades e atributos, além de mecânicas de criação de itens e uma variedade de monstros para enfrentar.</p>
+<p id = "para-71">Second Life Ranker (Ação, Aventura, Fantasia, Jogo): Mecânicas: O protagonista, Yeon-woo, decide entrar no jogo de realidade virtual chamado “The Tower” após a morte de seu irmão. O jogo possui um sistema de rankings baseado em níveis, classes, habilidades e itens. Os jogadores devem enfrentar desafios e inimigos em cada andar da torre para subir no ranking.</p>
+<p id = "para-72">Leveling Up, by Only Eating! (Ação, Aventura, Comédia, Fantasia, Jogo): Mecânicas: O protagonista, Kim Kibong, entra em um jogo de realidade virtual chamado “Mythic Ocean” e descobre que pode aumentar seu nível apenas comendo. O manhwa apresenta um sistema de níveis, habilidades, atributos e classes. A mecânica única de subir de nível através da alimentação adiciona um elemento de comédia à história.</p>
+<p id = "para-73">Esses manhwas adicionais do gênero LitRPG oferecem histórias envolventes e mecânicas de jogo interessantes que combinam elementos dos jogos de RPG com tramas intrigantes e personagens cativantes.</p>
+<h2 id = "link-6">any worthy mentions in this genre? before we move on</h2>
+<p id = "para-74">&lt; Claro! Aqui estão mais algumas menções notáveis no gênero LitRPG que valem a pena conferir:</p>
+<p id = "para-75">Returner’s Magic Should Be Special (Ação, Aventura, Fantasia, Jogo, Magia): Mecânicas: O protagonista, Desir Arman, retorna no tempo depois que a humanidade é derrotada em um conflito apocalíptico. Ele usa seu conhecimento do futuro para melhorar suas habilidades mágicas e enfrentar desafios em calabouços e instâncias de jogo, semelhantes aos encontrados em RPGs.</p>
+<p id = "para-76">Auto Hunting (Ação, Aventura, Ficção Científica, Jogo): Mecânicas: Em um mundo onde todos têm habilidades de jogo, o protagonista, Jinwoo, ganha a habilidade de “caça automática”, que permite que ele derrote inimigos e suba de nível sem esforço consciente. O manhwa apresenta um sistema de níveis, habilidades e atributos que os personagens podem aprimorar ao longo do tempo.</p>
+<p id = "para-77">Bug Player (Ação, Aventura, Fantasia, Jogo): Mecânicas: O protagonista, Shin, é um jogador habilidoso que descobre um “bug” no jogo de realidade virtual “New World”. Esse bug lhe concede habilidades e poderes especiais que ele pode usar para explorar o mundo do jogo e enfrentar inimigos. O manhwa apresenta mecânicas típicas de RPG, como níveis, habilidades e classes.</p>
+<p id = "para-78">Murim Login (Ação, Aventura, Artes Marciais, Jogo): Mecânicas: A história segue Hanbin, um jogador que acidentalmente se conecta a um mundo de artes marciais chamado Murim. O manhwa combina elementos de RPG, como níveis, habilidades e atributos, com temas de artes marciais. Hanbin deve se adaptar a esse novo mundo e aprender a dominar suas habilidades para enfrentar os desafios que encontra.</p>
+<p id = "para-79">Max Level Returner (Ação, Aventura, Fantasia, Jogo): Mecânicas: O protagonista, Jee-Han, retorna ao passado depois de alcançar o nível máximo em um jogo de realidade virtual e decide usar seu conhecimento do futuro para mudar seu destino. O manhwa apresenta mecânicas de RPG, como níveis, habilidades e atributos, que os personagens podem aprimorar ao longo do tempo.</p>
+<p id = "para-80">Essas menções notáveis no gênero LitRPG apresentam histórias interessantes e mecânicas de jogo envolventes que agradam aos fãs de RPG e manhwa.</p>
+<h2 id = "link-7">list titles from the josei subgenre with proper details</h2>
+<p id = "para-81">&lt; Aqui estão alguns títulos populares do subgênero josei, que é voltado para um público adulto feminino, juntamente com uma breve descrição de cada obra:</p>
+<p id = "para-82">Chihayafuru (Drama, Romance, Esporte, Slice of Life): Chihayafuru segue a história de Chihaya Ayase, uma jovem que é apaixonada pelo jogo de cartas tradicional japonês, Karuta. O manhwa explora a amizade, o amor e a rivalidade entre Chihaya e seus amigos enquanto eles competem em torneios de Karuta e lidam com os desafios da vida cotidiana.</p>
+<p id = "para-83">Kuragehime (Comédia, Drama, Romance, Slice of Life): Kuragehime, também conhecido como Princess Jellyfish, conta a história de Tsukimi Kurashita, uma jovem otaku que vive em um apartamento com outras mulheres otakus. A vida de Tsukimi muda quando ela conhece Kuranosuke Koibuchi, um homem atraente e estiloso que se revela um travesti. O manhwa explora temas como a amizade, a aceitação e a autoconfiança.</p>
+<p id = "para-84">Nodame Cantabile (Comédia, Drama, Musical, Romance, Slice of Life): Nodame Cantabile acompanha a vida de Megumi Noda (apelidada de Nodame), uma estudante talentosa de piano, e Shinichi Chiaki, um aspirante a maestro. A história gira em torno de seu relacionamento romântico e musical, e os altos e baixos que enfrentam enquanto perseguem seus sonhos no mundo da música clássica.</p>
+<p id = "para-85">Honey and Clover (Comédia, Drama, Romance, Slice of Life): Honey and Clover segue a vida de um grupo de estudantes universitários que estudam arte e design. A história explora seus relacionamentos, ambições e dificuldades enquanto enfrentam os desafios da vida adulta. Com foco no amor, na amizade e no crescimento pessoal, o manhwa aborda questões com as quais muitos jovens adultos podem se identificar.</p>
+<p id = "para-86">Usagi Drop (Comédia, Drama, Slice of Life): Usagi Drop conta a história de Daikichi, um homem solteiro de 30 anos que decide adotar Rin, a filha ilegítima de seu falecido avô. A história acompanha a vida de Daikichi e Rin enquanto enfrentam os desafios e as alegrias de criar uma criança. Usagi Drop aborda temas como a paternidade, a responsabilidade e os laços familiares.</p>
+<p id = "para-87">Esses títulos josei apresentam histórias emocionantes e personagens bem desenvolvidos que lidam com temas relacionados ao amor, à amizade e à vida adulta. O subgênero josei é conhecido por tratar de questões mais maduras e complexas em comparação com outros subgêneros de mangá e manhwa.</p>
+<h2 id = "link-8">what about isekai, ecchi, demons, virtual reality, gender, etc</h2>
+<p id = "para-88">&lt; Aqui estão alguns títulos populares de manhwa em diferentes subgêneros, como isekai, ecchi, demônios, realidade virtual, gênero e outros temas relacionados:</p>
+<p id = "para-89">Isekai:</p>
+<p id = "para-90">The Beginning After the End (Ação, Aventura, Fantasia, Isekai): A história segue um rei poderoso que reencarna como um garoto comum em um mundo diferente. Ele busca entender seu novo mundo e aprender a usar suas habilidades mágicas para proteger sua família e amigos. Ecchi:</p>
+<p id = "para-91">Sweet Guy (Comédia, Ecchi, Romance, Sobrenatural): O protagonista, Ho-Sang, adquire a habilidade de fazer as pessoas se sentirem bem com um simples toque. Essa habilidade afeta sua vida de várias maneiras, principalmente na forma como ele se relaciona com as mulheres ao seu redor. Demônios:</p>
+<p id = "para-92">The Devil’s Boy (Ação, Demônios, Sobrenatural): A história segue um jovem chamado Jun que faz um pacto com um demônio para obter poder e proteção contra bullying. Ele enfrenta vários desafios e inimigos sobrenaturais enquanto lida com as consequências de seu acordo. Realidade Virtual:</p>
+<p id = "para-93">Omniscient Reader’s Viewpoint (Ação, Aventura, Fantasia, Vida Virtual): Kim Dokja é um ávido leitor de um romance online que acaba se tornando realidade. Ele usa seu conhecimento do romance para navegar no novo mundo e lutar contra inimigos e desafios. Gender Bender:</p>
+<p id = "para-94">Boku Girl (Comédia, Ecchi, Gender Bender, Romance): A história segue Mizuki, um estudante universitário que é transformado em uma garota pelo deus do caos, Loki. Mizuki luta para se adaptar à sua nova vida e identidade de gênero, enquanto tenta encontrar uma maneira de reverter a transformação. Outros temas relacionados:</p>
+<p id = "para-95">Skeleton Soldier Couldn’t Protect the Dungeon (Ação, Aventura, Demônios, Fantasia): Um soldado esqueleto fracassa em proteger seu calabouço e é enviado de volta no tempo com suas memórias intactas. Ele busca se tornar mais forte para proteger o calabouço e seus habitantes das ameaças futuras. Esses títulos apresentam uma variedade de subgêneros e temas, desde aventuras em mundos diferentes até histórias envolvendo demônios, realidade virtual e questões de identidade de gênero. Cada um oferece uma perspectiva única e cativante em seu respectivo subgênero.</p>
+<h2 id = "link-9">which manhwa has factors of randomness in the plot or mechanics?</h2>
+<p id = "para-96">&lt; Aqui está um manhwa que apresenta elementos de aleatoriedade em sua trama ou mecânicas:</p>
+<p id = "para-97">Dice: The Cube That Changes Everything (Ação, Drama, Fantasia, Psicológico, Romance, Sobrenatural): Dice segue a história de Dongtae, um estudante do ensino médio que vive uma vida monótona e sem sorte até encontrar misteriosos cubos chamados “Dices”. Esses cubos têm o poder de conceder habilidades e melhorias de atributos aos usuários, mas a natureza das habilidades e as melhorias são, muitas vezes, aleatórias.</p>
+<p id = "para-98">Os Dices são adquiridos ao completar missões, que também são geradas aleatoriamente. Consequentemente, os personagens enfrentam uma variedade de desafios e situações imprevisíveis enquanto buscam coletar mais Dices e aumentar seus poderes. A aleatoriedade dos Dices e das missões adiciona um elemento de suspense e imprevisibilidade à trama, tornando a história ainda mais envolvente.</p>
+<p id = "para-99">Além de Dice, outras histórias podem apresentar elementos de aleatoriedade em menor grau, como habilidades adquiridas por acaso ou eventos que ocorrem de forma inesperada. No entanto, Dice é um exemplo notável de um manhwa em que a aleatoriedade desempenha um papel central na trama e nas mecânicas da história.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-10">which manhwa explored these tangents already?</h2>
+<p id = "para-100">&lt; Vários manhwas (quadrinhos coreanos) exploraram temas relacionados a realidades virtuais, sociedades futuristas e mundos alternativos. Algumas séries notáveis incluem:</p>
+<ol>
+<li><p id = "para-101">“Solo Leveling” (나 혼자만 레벨업) de Chu-Gong: Esta série segue a história de Sung Jin-Woo, um caçador de masmorras em um mundo onde portais misteriosos levam a masmorras habitadas por monstros. A história evolui para incluir elementos de realidades alternativas e poderes únicos.</p>
+</li>
+<li><p id = "para-102">“Dice” (다이스) de Yun Hyun-seok: Em “Dice”, as pessoas podem mudar suas habilidades e aparências usando dados mágicos. A história explora o impacto que essa capacidade tem na sociedade e nas relações humanas, destacando os perigos da busca pelo poder e perfeição.</p>
+</li>
+<li><p id = "para-103">“The Gamer” (더 게이머) de Sung Sang-Young e Sang-Ah: Nesta série, o protagonista Han Jee-Han adquire a habilidade de viver sua vida como um personagem de videogame. A história explora os desafios e oportunidades que essa habilidade única apresenta enquanto ele navega em um mundo cheio de habilidades e poderes sobrenaturais.</p>
+</li>
+<li><p id = "para-104">“Tower of God” (신의 탑) de SIU: “Tower of God” se passa em um mundo onde as pessoas podem escalar uma torre misteriosa para obter riqueza, poder e conhecimento. A série apresenta uma variedade de personagens e explora temas de amizade, traição e busca pelo poder.</p>
+</li>
+</ol>
+<p id = "para-105">Embora esses manhwas possam não explorar diretamente todos os aspectos das realidades virtuais, sociedades futuristas e mundos alternativos mencionados anteriormente, eles apresentam histórias e temas relacionados que podem ser interessantes para quem deseja explorar essas ideias no contexto dos quadrinhos coreanos.</p>
+<h2 id = "link-11">could solo leveling be considered canon in the manhwa pantheon? detail the genre and its graphed branches</h2>
+<p id = "para-106">&lt; “Solo Leveling” certamente pode ser considerado um manhwa de destaque dentro do “panteão” dos quadrinhos coreanos. Ele se tornou muito popular e tem uma base de fãs leal e crescente. O gênero principal de “Solo Leveling” é a fantasia de ação, com elementos de aventura e RPG (Role Playing Game). Dentro deste gênero, várias ramificações podem ser identificadas:</p>
+<ol>
+<li><p id = "para-107">Isekai: Isekai é um subgênero no qual os personagens são transportados para outro mundo, geralmente com elementos de fantasia ou RPG. Embora “Solo Leveling” não seja estritamente um isekai, ele compartilha algumas semelhanças com o subgênero, como a existência de masmorras e o sistema de níveis e habilidades típicos dos jogos de RPG.</p>
+</li>
+<li><p id = "para-108">LitRPG: A LitRPG é uma subcategoria da literatura de ficção científica e fantasia que combina elementos de jogos de RPG com narrativas tradicionais. “Solo Leveling” pode ser considerado um manhwa LitRPG, pois apresenta mecânicas de jogo, como atributos, habilidades e sistemas de níveis integrados à narrativa.</p>
+</li>
+<li><p id = "para-109">Crescimento/Progressão do personagem: “Solo Leveling” também pode ser categorizado dentro da narrativa de crescimento e progressão do personagem, onde o protagonista evolui de um personagem fraco para alguém extremamente poderoso. A história acompanha a jornada do personagem principal enquanto ele se torna mais forte e adquire novas habilidades.</p>
+</li>
+<li><p id = "para-110">Fantasia de ação e aventura: “Solo Leveling” é, em sua essência, uma fantasia de ação e aventura. A história segue o protagonista enquanto ele enfrenta inúmeros desafios e combates em um mundo cheio de monstros e perigos. A ação é um aspecto central da narrativa e atrai muitos leitores.</p>
+</li>
+</ol>
+<p id = "para-111">Essas ramificações do gênero demonstram a diversidade de temas e estilos encontrados em “Solo Leveling”. Essa mistura de gêneros e subgêneros, juntamente com sua narrativa envolvente e arte impressionante, contribui para o status de “Solo Leveling” como uma obra de destaque no mundo dos manhwas.</p>
+<h2 id = "link-12">if you were to abstractly rate isekai from 0-1000, how solo leveling could be placed?</h2>
+<p id = "para-112">&lt; Avaliar “Solo Leveling” como um isekai pode ser um pouco complicado, já que não é um isekai típico. Em vez disso, possui elementos de isekai e LitRPG, mas o protagonista não é transportado para um mundo totalmente diferente. Dito isso, se ainda quiséssemos avaliá-lo em uma escala de 0 a 1000, levando em consideração sua popularidade, narrativa envolvente e arte impressionante, poderíamos atribuir uma classificação de cerca de 700-800.</p>
+<p id = "para-113">Essa classificação reflete o fato de que “Solo Leveling” compartilha algumas características com o gênero isekai, como um mundo de fantasia, masmorras, habilidades e um sistema de níveis. No entanto, também leva em consideração que o manhwa não é um isekai puro e pode não satisfazer completamente os leitores que buscam especificamente esse subgênero.</p>
+<p id = "para-114">É importante lembrar que essa avaliação é subjetiva e pode variar dependendo das preferências individuais dos leitores. Além disso, a escala de 0 a 1000 é uma simplificação e pode não refletir com precisão a complexidade e a diversidade das opiniões dos leitores.</p>
+<h2 id = "link-13">trying to increase precision since you left an open range of 100. list 10 manwha isekai 950+</h2>
+<p id = "para-115">&lt; Peço desculpas pelo equívoco anterior ao tentar classificar “Solo Leveling” como um isekai. Como mencionado anteriormente, “Solo Leveling” não é um isekai puro. Dito isso, aqui estão 10 manhwas isekai populares que poderiam ser considerados 950+ em termos de popularidade e qualidade. Lembre-se de que essa classificação é subjetiva e pode variar dependendo das preferências individuais dos leitores:</p>
+<ol>
+<li><p id = "para-116">“The Beginning After The End” (끝이 아닌 시작) de TurtleMe e Fuyuki23</p>
+</li>
+<li><p id = "para-117">“A Returner’s Magic Should Be Special” (돌아온 마법사의 회귀마법은 특별해야 합니다) de Yu So-Nan e Wook-Jae-Yong</p>
+</li>
+<li><p id = "para-118">“I Am the Sorcerer King” (나는 마도왕이다) de Decaspell e Miro</p>
+</li>
+<li><p id = "para-119">“The Scholar’s Reincarnation” (학사재생) de Soo Yu Hyun e Yum Jack-aj</p>
+</li>
+<li><p id = "para-120">“The Dungeon Master” (던전 씹어먹는 마스터) de Park Jin-Hwan e Bang Seung-ho</p>
+</li>
+<li><p id = "para-121">“Overgeared” (템빨) de Park Saenal e Yoon Jun</p>
+</li>
+<li><p id = "para-122">“Second Life Ranker” (두 번 사는 랭커) de Nong Nong e Sa Doyeon</p>
+</li>
+<li><p id = "para-123">“The Great Mage Returns After 4000 Years” (4천년만에 귀환한 대마도사) de Yoo Shi-Hun e Lee Gyuntak</p>
+</li>
+<li><p id = "para-124">“The Live” (더 라이브) de Ant Studio e Hyeong Eun</p>
+</li>
+<li><p id = "para-125">“Omniscient Reader’s Viewpoint” (전지적 독자 시점) de Sing-Shong e UMI</p>
+</li>
+</ol>
+<p id = "para-126">Esses manhwas são amplamente populares e bem recebidos, com histórias envolventes, arte impressionante e elementos isekai. Como sempre, as preferências pessoais podem afetar a classificação, mas essas séries são geralmente consideradas de alta qualidade dentro do gênero isekai.</p>
+<h2 id = "link-14">list 10 manhwa from 22h-02h with a brief plot summary</h2>
+<p id = "para-127">&lt; Aqui estão 10 manhwas com classificações mais maduras e uma breve descrição da trama, adequados para serem exibidos entre 22h e 02h:</p>
+<ol>
+<li><p id = "para-128">Killing Stalking - Classificação: 18 anos Resumo: Um jovem chamado Yoon Bum torna-se obcecado por Sangwoo, um colega de faculdade popular e atraente. Quando Bum invade a casa de Sangwoo, ele descobre um segredo sombrio e é arrastado para um jogo psicológico perturbador.</p>
+</li>
+<li><p id = "para-129">Bastard - Classificação: 18 anos Resumo: Jin, o filho de um CEO de uma grande empresa, descobre que seu pai é um serial killer. Ele precisa decidir se vai proteger seu pai ou ajudar as vítimas, enquanto enfrenta seus próprios demônios internos.</p>
+</li>
+<li><p id = "para-130">Sweet Home - Classificação: 18 anos Resumo: Depois de perder sua família em um acidente, Hyun Cha se muda para um novo apartamento e se depara com monstros assustadores que assumem a forma dos medos e desejos humanos.</p>
+</li>
+<li><p id = "para-131">HIVE - Classificação: 18 anos Resumo: Em um mundo dominado por gigantescas abelhas assassinas, um homem luta para sobreviver e proteger sua família, enquanto tenta descobrir a verdade por trás do desastre.</p>
+</li>
+<li><p id = "para-132">The Lady and Her Butler - Classificação: 18 anos Resumo: Sooha, uma mulher independente, encontra Taesik, um homem que perdeu tudo, dormindo na chuva. Ela o leva para casa, e um relacionamento inesperado começa a se desenvolver entre os dois.</p>
+</li>
+<li><p id = "para-133">UnTouchable - Classificação: 18 anos Resumo: Sia Lee é uma vampira moderna que se alimenta da energia humana em vez de sangue. Quando ela se apaixona por Jiho, um humano que é imune aos seus poderes, Sia enfrenta desafios para se aproximar dele e lutar contra seus próprios instintos.</p>
+</li>
+<li><p id = "para-134">Melo Holic - Classificação: 18 anos Resumo: Um homem com o poder de ler os pensamentos das pessoas se apaixona por uma mulher com múltiplas personalidades. Eles enfrentam uma série de desafios enquanto tentam compreender e aceitar um ao outro.</p>
+</li>
+<li><p id = "para-135">The Breaker - Classificação: 18 anos Resumo: Shi-Woon Yi é um estudante que enfrenta bullying e acaba encontrando um mestre de artes marciais chamado Chun-Woo Han. O mestre o introduz ao mundo das artes marciais e o ajuda a se tornar mais forte, tanto física quanto mentalmente.</p>
+</li>
+<li><p id = "para-136">I Love Yoo - Classificação: 16 anos Resumo: Shin-Ae Yoo, uma jovem que enfrenta dificuldades na vida, se envolve em um triângulo amoroso com dois irmãos ricos. A trama explora temas como amizade, amor, família e trauma.</p>
+</li>
+<li><p id = "para-137">Dr. Frost - Classificação: 16 anos Resumo: O Dr. Frost é um brilhante psicólogo que perdeu suas emoções após um acidente. Junto com sua assistente, ele usa sua habilidade de compreender a mente humana para resolver casos complexos e</p>
+</li>
+</ol>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-15">any manhwa?</h2>
+<p id = "para-138">&lt; Manhwas, ou quadrinhos coreanos, também não costumam ter referências diretas a Azathoth ou ao universo Lovecraftiano. No entanto, existem alguns títulos que contêm elementos de horror, fantasia, ou ciência que podem evocar alguns aspectos da mitologia de Lovecraft. Aqui estão três exemplos:</p>
+<ol>
+<li><p id = "para-139"><b>“Tower of God”</b>: Este manhwa é conhecido por seu mundo complexo e vasto, cheio de criaturas monstruosas e seres divinos. Embora não seja uma história de horror, a magnitude do universo e a insignificância dos personagens em relação a ele podem ser comparadas à escala cósmica do universo de Lovecraft.</p>
+</li>
+<li><p id = "para-140"><b>“Bastard”</b>: Este manhwa de suspense e horror conta a história de um estudante do ensino médio cujo pai é um serial killer. O uso de horror psicológico e o tema da maldade escondida podem ser comparados aos aspectos mais sombrios das histórias de Lovecraft.</p>
+</li>
+<li><p id = "para-141"><b>“Sweet Home”</b>: Este manhwa de horror conta a história de um jovem recluso que deve sobreviver depois que seus vizinhos começam a se transformar em monstros. A transformação em monstros pode ser vista como similar às transformações horríveis frequentemente encontradas em histórias de Lovecraft.</p>
+</li>
+</ol>
+<p id = "para-142">Novamente, estas são interpretações, e as conexões com Azathoth ou Lovecraft não são necessariamente explícitas ou intencionais pelos criadores. É importante notar que a influência de Lovecraft na cultura pop coreana pode não ser tão pronunciada quanto na cultura pop ocidental.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

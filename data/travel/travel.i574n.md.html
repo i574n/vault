@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <ul>
+<input type = "checkbox" disabled = "" /><p id = "para-1">aluminum foil</p>
+<input type = "checkbox" disabled = "" /><p id = "para-2">cell chips</p>
+</ul>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<p id = "para-3">Rua Adolfo Reile, 286, Ap. 83 A - Jardim Celeste, São Paulo - SP, 04195-070 Avenida do Cursino, 6667, Ap. 83 A - Vila Moraes, São Paulo - SP, 04169-000</p>
+<p class = "rule">***</p>
+<p id = "para-4">City: Ushuaia Region/Province: Tierra Del Fuego Postal code/Zip code: 9410 Country: Argentina</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<p id = "para-5">Saco De Dormir Mummy 1ºc A 8ºc Camping Viagem 230cm Nautika R$ 271,89</p>
+<p class = "rule">***</p>
+<p id = "para-6">Kit 3 Camisa Térmica Segunda Pele Frio Neve Com Lã/flanelado R$ 199,90</p>
+<p class = "rule">***</p>
+<p id = "para-7">Lanterna Fenix Hl60r 950 Lumens R$ 1.206,36 Tikka Core - Lanterna Cabeça Recarregável 450 Lm - Petzl R$ 582,32 Bindi - Lanterna De Cabeça Recarregável Ultra Compacta - R$ 442,21 Tikka Core Lanterna De Cabeça Recarregável 300 Lumens Petzl R$ 406,46 Lanterna Cabeça Sensor Infravermelho Recarregável Jy 8916 Fg R$ 109,90 Farol De Pesca Poderoso Sensor De Movimento Infravermelha 600mA R$ 75</p>
+<p class = "rule">***</p>
+<p id = "para-8">Conjunto Balde Dobrável 10 L Bacia Retrátil 8 L Flash Limp R$ 140,39</p>
+<p class = "rule">***</p>
+<p id = "para-9">Papel Ofício A4 Reciclado Chamex 75g Pacote 1500 Folhas Eco R$ 141,99 Papel Sulfite Report 75g Premium 1000 Folhas - 2 Pcts C/ 500 R$ 134,90 Kit 3 Papel Sulfite 500 Folhas Premium (total 1500 Folhas) Report - R$ 107,90 Papel Ofício A4 Reciclado Chamex 75g Pacote 1000 Folhas Eco R$ 104,99 Papel A4 Sulfite Hp Premium 210x297 75g - 1000 Folhas - R$ 60,99</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<p id = "para-10">Luva X11 Dry Supertech Impermeavel Moto Motoqueiro R$ 259,63 - +100 vendidos</p>
+<p id = "para-11">Luva X11 Dry Supertech Impermeavel Moto Motoqueiro R$ 273,30 - +100 vendidos</p>
+<p id = "para-12">Luva X11 Dry Supertech Moto Impermeável Com Limpador Viseira R$ 277,10 - +500 vendidos</p>
+<p id = "para-13">Luva X11 Blackout Motoqueiro Moto Motociclista Proteção Full R$ 109,90 - +10mil vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-14">Calça Motociclista Tutto Moto Alumi Impermeável R$ 1.209 - +25 vendidos</p>
+<p id = "para-15">Calça Tutto Titanium Preta Masculina R$ 1.186,83 - +5 vendidos</p>
+<p id = "para-16">Calça Motociclista Alpinestars Ast 1 Wp Preto À Vista Moto R$ 999,90 - 0 vendidos</p>
+<p id = "para-17">Calca Moto Alpinestars Bregenz Drystar Preto R$ 882,55 - 0 vendidos</p>
+<p id = "para-18">Calça Texx New Strike V2 Motociclista Masculina Impermeável R$ 749,25 - +100 vendidos</p>
+<p id = "para-19">Calça Moto Camuflada Racing Rabbit Impermeável (tutto X11) R$ 708 - +100 vendidos</p>
+<p id = "para-20">Calça Impermeável Moto Com Proteção Racing Rabbit Zero R$ 673 - +25 vendidos</p>
+<p id = "para-21">Calça Masculina X11 Versa Air Impermeável Moto Motociclista R$ 649 - +100 vendidos</p>
+<p id = "para-22">Calça Moto Jeans Kevlar Com Proteção Texx Garage R$ 479,20 - +25 vendidos</p>
+<p id = "para-23">Calça Motociclista Helt Softshell Masculina C/ Proteção R$ 365 - +5 vendidos</p>
+<p id = "para-24">Calça Jeans Masculina Texx Garage Basic Moto Motociclista R$ 279,30 - +50 vendidos</p>
+<p id = "para-25">Calça Jeans Impermeável Proteção Moto Joelheira Quadril R$ 199,90 - +1000 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-26">Bota Motociclista Texx Adventure V2 Impermeável R$ 1.148 - +100 vendidos</p>
+<p id = "para-27">Bota Motociclista Impermeável Couro Tutto Moto Evolution @# R$ 805 - +25 vendidos</p>
+<p id = "para-28">Bota Motociclista Moto Impermeavel Texx Strike V2 R$ 758 - +50 vendidos</p>
+<p id = "para-29">Bota Masculino Impermeável X11 Fuse2 Moto Motociclista R$ 649 - +25 vendidos</p>
+<p id = "para-30">Bota Semi-impremeavel As Racing Luxo Original Nota Fiscal Já R$ 537,04 - +5 vendidos</p>
+<p id = "para-31">Bota Motociclista Moto 80% Impermeável Cano Com Ziper Couro R$ 319,60 - +5 vendidos</p>
+<p id = "para-32">Bota Chuva Impermeável Moto Motociclista Motoqueiro Motoboy R$ 109,88 - +500 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-33">Bolha Defletor Xre 300 Lander 250 Gs 1250 1200 850 Tiger 900 R$ 255,55 - 0 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-34">Protetor Cárter Xre 300 Xre300 2019 2020 2021 2022 Chapam R$ 229,98 - +5 vendidos</p>
+<p id = "para-35">Protetor De Carter Xre 300 + Proteção De Farol 19 À 22 R$ 199,90 - +5 vendidos</p>
+<p id = "para-36">Protetor Carter Aço Carbono Honda Xre 300 2010 / 2021 Top R$ 149,90 - +500 vendidos</p>
+<p id = "para-37">Protetor De Carter Xre 300 2018 2019 2020 2021 2022 R$ 108,46 - +500 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-38">Bolsa De Tanque Givi St611 Tanklock 6l R$ 1.190 - +5 vendidos</p>
+<p id = "para-39">Kit Bolsa Tanque 5l Givi Ea123 C/engate Bf64 Honda Xre 300 R$ 858 - 0 vendidos</p>
+<p id = "para-40">Bolsa De Tanque Givi 5l Encaixe +flange Xre300 Apartir De 19 R$ 799 - 1 vendido</p>
+<p id = "para-41">Bolsa Mochila Tanque Moto Givi Magnética 6 L Touch Ea106b R$ 732,99 - 1 vendido</p>
+<p id = "para-42">Bolsa De Tanque Magnetica Givi Crm103 8 L Original R$ 687 - 1 vendido</p>
+<p id = "para-43">Bolsa Mala Tanque Magnética Kappa (givi) Moto 24 L Xre 300 R$ 680,86 - 0 vendidos</p>
+<p id = "para-44">Bolsa Mala Tanque Moto Givi Magnética 6 Litros Ea106b Tiger R$ 533,70 - +5 vendidos</p>
+<p id = "para-45">Mala Tanque Tankbag Gift 8 Litros Honda Xre 300 Xre300 R$ 489 - 0 vendidos</p>
+<p id = "para-46">Mala Tanque Ferro Black 14 Litros Com Imã Moto Honda Xre 300 R$ 459,90 - 1 vendido</p>
+<p id = "para-47">Bolsa Mala Tanque 7l Front Side 1040 Xre300 190 Tornado Bros R$ 359 - 2 vendidos</p>
+<p id = "para-48">Bolsa Mochila Tanque De Moto C Ima Alforge Tanque Magnetico R$ 258,90 - +100 vendidos</p>
+<p id = "para-49">Mala Alforge Central Scooter Viagem Moto Honda Sh 150i 2019 R$ 231,40 - +5 vendidos</p>
+<p id = "para-50">Bolsa Tanque Xre 300 Moto Alforge Motociclista R$ 219,90 - +5 vendidos</p>
+<p id = "para-51">Bolsa Magnética Tanque Mochila Alforge Honda Cbx 250 Twiste R$ 199 - +5 vendidos</p>
+<p id = "para-52">Flange Givi Bf64br Bolsa Tanque Tanklock Honda Xre 300 2019+ R$ 199,90 - 0 vendidos</p>
+<p id = "para-53">Alforge Tanque Moto Bolsa Tanque Lançamento Modelo R$ 169,99 - +100 vendidos</p>
+<p id = "para-54">Bolsa Tanque Mala Moto Alforge Imã Mochila Mini Pochete R$ 159,99 - +100 vendidos</p>
+<p id = "para-55">Flange Givi Bf64br Bolsa Tanque Tanklock Honda Xre 300 2019+ R$ 126,63 - 0 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-56">Bolsa Moto P/ Protetor Carenagem Impermeável Frontside R$ 368,55 - 4 vendidos</p>
+<p id = "para-57">Mala Tanque Lateral Ferramenta Bolsa Bmw 1250 Gs Adventure R$ 251,10 - +25 vendidos</p>
+<p id = "para-58">Mala Ferramenta Moto Bmw Gs 1200 1250 850 Tiger 900 Xre 300 R$ 134,10 - +5 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-59">Mochila Givi Conversível Em Bolsa Traseira Moto Crm101 18lts R$ 977 - 0 vendidos</p>
+<p id = "para-60">Bolsa Givi Ea115bk 100% Impermeável 40 Litros Mala Traseira R$ 478,80 - 4 vendidos</p>
+<p id = "para-61">Bolsa Camuflada Lona Impermeável Super Resistente P/ Motos R$ 325 - 2 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-62">Gimbal Estabilizador Feiyu Tech G6 Max 1,2kg R$ 1.620 - +100 vendidos</p>
+<p id = "para-63">Suporte Celular Até 6¨- Ram-b-149z-un7bu- Ram Mount Original R$ 720 - +100 vendidos</p>
+<p id = "para-64">Suporte Celular Médio/grande - Ram Mount - Ram-hol-pd4u R$ 435 - +5 vendidos</p>
+<p id = "para-65">Estabilizador Imagem P/ Celular Feiyutech Vimble One Gimbal R$ 267 - +25 vendidos</p>
+<p id = "para-66">Suporte Ram Mount Ram-hol-ap18u iPhone 6 R$ 200,34 - 3 vendidos</p>
+<p id = "para-67">Bolsa Magnética Impermeável Para Celular Fixa No Tanque Moto R$ 78,90 - +5 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-68">Câmera Dji Osmo Action 3 Adventure Combo 4k/120fps Black R$ 3.499 - +25 vendidos</p>
+<p id = "para-69">Câmera Gopro Hero 11 Black 5,3k 27mp Chdhx-111-rw R$ 3.479 - +100 vendidos</p>
+<p id = "para-70">Câmera Sportiva Dji Osmo Action 4k Ac001 Gray | Imediato!! R$ 3.000 - +5 vendidos</p>
+<p id = "para-71">Câmera De Ação Dji Osmo Action 3 Combo R$ 2490 À Vista R$ 2.757 - 2 vendidos</p>
+<p id = "para-72">Câmera GoPro Hero10 5.3K CHDHX-101 NTSC/PAL preta R$ 2.721 - +1000 vendidos</p>
+<p id = "para-73">Câmera GoPro Hero7 4K CHDHX-701 NTSC/PAL black R$ 2.474 - +10mil vendidos</p>
+<p id = "para-74">Câmera de vídeo DJI Osmo Pocket 4K OT110 black R$ 2.299 - +500 vendidos</p>
+<p id = "para-75">Câmera GoPro Hero8 4K CHDHX-801 NTSC/PAL black R$ 2.171 - +1000 vendidos</p>
+<p id = "para-76">Suporte Armação Moldura Frame Case Aberta Gopro Hero 5 Black R$ 89,91 - +5 vendidos</p>
+<p id = "para-77">Suporte Peito Celular Câmera Esportiva Peitoral Moto Bike R$ 67,41 - +100 vendidos</p>
+<p id = "para-78">Gopro Suporte Peito Cinta Peitoral Go Pro Hero Acessorios R$ 29,31 - +100 vendidos</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-79">Mochila Notebook Impermeável Resistente Moto R$ 386,99 - +5 vendidos</p>
+<p id = "para-80">Mochila Para Moto Aerodinâmica Cupim Rígido Impermeável R$ 359,99 - +25 vendidos</p>
+<p id = "para-81">Mochila Moto Speed Impermeável Rígida Usb Weekend 320 R$ 316,70 - +50 vendidos</p>
+<p id = "para-82">Mochila Aerodinamica Harley Davidson 100% Impermeável R$ 309,99 - +50 vendidos</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<p id = "para-83">Multicortadora 18V CMT18LD Dexter R$ 529,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-84">Ferro de Solda Machadinha 180W 220V Worker R$ 279,90</p>
+<p id = "para-85">Pistola de Solda 45W 21K027 220V Hikari R$ 150,30</p>
+<p id = "para-86">Ferro de Solda a Gás 3 em 1 125W 21J185 Hikari R$ 145,90</p>
+<p id = "para-87">Ferro de Solda 90W 21K018 127V (110V) Hikari R$ 129,99</p>
+<p id = "para-88">Ferro de Solda 70W 220V Tramontina R$ 94,90</p>
+<p id = "para-89">Ferro de Solda 50W 21K405 127V (110V) Hikari R$ 57,40</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-90">Serra Tico-Tico 18V GST 185-LI Bosch R$ 1.389,00</p>
+<p id = "para-91">Serra Tico Tico A Bateria 12v Sem Bateria Jv101dz Makita R$ 689,90</p>
+<p id = "para-92">Serra Tico-tico 500W DW300 127V (110V) Dewalt R$ 512,90</p>
+<p id = "para-93">Serra Tico-Tico 850W WS3772 220V Wesco R$ 299,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-94">Serra Sabre 900W 127V (110V) Dexter R$ 399,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-95">Serra Circular 9.1/4" 2000W 5902B 220V Makita R$ 1.619,90</p>
+<p id = "para-96">Serra Circular 7.1/4" 1800W 5007N 220V Makita R$ 1.119,90</p>
+<p id = "para-97">Serra Circular 7.1/4" 1500W GKS 150 com 1 Disco e Guia 127V (110V) Bosch R$ 674,90</p>
+<p id = "para-98">Serra Circular 7.1/4" 1100W SC1100 220V Hammer R$ 294,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-99">Pirógrafo Cabo Plástico 30W 220V PI-07 Western R$ 75,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-100">Retifica A Bateria 1.1/2" 20v Sem Bateria Dewalt Dcg426b Dcg426b R$ 1.279,99</p>
+<p id = "para-101">Combo Micro Retífica e Ferro de Solda MAKERX WX988 Worx R$ 999,90</p>
+<p id = "para-102">Micro Retífica 12V WS2539.9 41 acessórios Wesco R$ 239,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-103">Lixadeira De Cinta 900w 127v Stanley Sb90-br R$ 638,10</p>
+<p id = "para-104">Lixadeira Roto-Orbital a bateria TE-RS 18 Li Solo 18V Einhell R$ 409,00</p>
+<p id = "para-105">Lixadeira Delta TE-OS 18/1 Solo 18V Einhell R$ 206,90</p>
+<p id = "para-106">Lixadeira Roto Orbital 5 Pol 20v Max Brushless Dewalt Dcw210b R$ 838,95</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-107">Esmerilhadeira Angular À Bat 4.1/2 20v Max Dcg413b Dewalt R$ 1.044,75</p>
+<p id = "para-108">Esmerilhadeira Profissional 42/1" GWS 180-LI 700W Bosch R$ 794,90</p>
+<p id = "para-109">Esmerilhadeira Angular 4.1/2" 18V AXXIO 18/115 Q Einhell R$ 775,00</p>
+<p id = "para-110">Esmerilhadeira Angular 4.1/2" TE-AG 18/115 Li Solo 18V Linha POWER X-CHANGE Einhell R$ 509,90</p>
+<p id = "para-111">Esmerilhadeira Vonder Aldo Solar 6004180800 Esmerilhadeira 4.1/2´´ A Bateria De Lítio 18v (opcional) R$ 497,14</p>
+<p id = "para-112">Esmerilhadeira A Bateria 1500mah 21v 6488 Biv Titanium R$ 449,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-113">Lixadeira e Politriz 7/9" 1250W DWP849X-B2 220V Dewalt R$ 1.109,90</p>
+<p id = "para-114">Politriz e Lixadeira Elétrica 7" 1100W CC-PO 1100/2 E 220V com 3 Lixas Einhell R$ 664,90</p>
+<p id = "para-115">Politriz Angular 7’’ 1250W 07188-DP 220V Dexter R$ 499,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-116">Plaina Elétrica 620W KP0800 220V Makita R$ 799,90</p>
+<p id = "para-117">Plaina Elétrica 3.1/4" 800W 220V Dexter R$ 349,90</p>
+<ul>
+<li></li>
+</ul>
+<p id = "para-118">Gerador de Energia à Gasolina 0,8Kva Partida Manual Retrátil Motor 3,50HP 2T 4L MG-950 220V Motomil R$ 864,90</p>
+<p id = "para-119">Gerador de Energia à Gasolina 2,5Kva Partida Manual Retrátil Motor 6,50HP 4T 15L MG-3000CL Bivolt Motomil R$ 2.519,90</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

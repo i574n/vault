@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">list the top 5 tools available today to recreate images using AI without login (dall e 2 was tested and still suboptimal)</a></li>
+      <li><a href="#link-2">compare after effects, lightroom, premiere and photoshop (2023 and more)</a></li>
+      <li><a href="#link-3">make the difference clear between premiere pro and after effects, depicting examples of what cant be achieved on the other</a></li>
+      <li><a href="#link-4">premiere is more like ableton, after effects is more like flash?</a></li>
+      <li><a href="#link-5">for after effects and premiere pro, list 5 practical final examples of each in modern works overall</a></li>
+      <li><a href="#link-6">since autodesk has many products, list the most edgy and worthwhile by 2021 rating 0-1000</a></li>
+      <li><a href="#link-7">compare between autodesk alias, flame, netfabb and vred</a></li>
+      <li><a href="#link-8">rate each of the 4 0-1000 in the ability to make money detailing the various ways</a></li>
+      <li><a href="#link-9">talk why maya was above 3ds max</a></li>
+      <li><a href="#link-10">list the best ways to import or reuse maya works</a></li>
+      <li><a href="#link-11">talk more about the scene concept and adjacent methods of compound storage</a></li>
+      <li><a href="#link-12">list 5 websites to find such bundles</a></li>
+      <li><a href="#link-13">list 5 more undeground alternatives</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">list the top 5 tools available today to recreate images using AI without login (dall e 2 was tested and still suboptimal)</h2>
+<p id = "para-1">&lt; As an AI language model, I cannot authenticate to third-party tools nor perform exhaustive tests on their efficacy. However, I can list some popular AI-powered image generation tools that are publicly available and do not require login. Here are five such tools:</p>
+<p id = "para-2">Artbreeder: Artbreeder is a web-based tool that uses AI to generate and manipulate images. It allows users to create new images by combining and evolving existing ones, and provides a wide range of controls for adjusting the style, color, and shape of the images.</p>
+<p id = "para-3">Deep Dream Generator: Deep Dream Generator is another web-based tool that uses neural networks to generate and manipulate images. It allows users to upload their own images and apply various styles and effects, including psychedelic and surrealistic patterns.</p>
+<p id = "para-4">GANBreeder: GANBreeder is a tool that uses generative adversarial networks (GANs) to generate new images by evolving and crossbreeding existing ones. It provides a simple and intuitive interface for users to explore the space of possible images.</p>
+<p id = "para-5">Let’s Enhance: Let’s Enhance is an online tool that uses AI to enhance the quality and resolution of images. It allows users to upload their own images and choose from a range of enhancement options, such as upscaling, denoising, and color correction.</p>
+<p id = "para-6">NeuralStyler: NeuralStyler is a tool that uses neural networks to apply artistic styles to images. It allows users to upload their own images and choose from a variety of styles inspired by famous artists, such as Van Gogh, Picasso, and Munch.</p>
+<p id = "para-7">It’s important to note that the effectiveness and quality of these tools may vary depending on the input image and the desired output. Users should carefully evaluate and compare the results of different tools to choose the best option for their specific needs.</p>
+<h2 id = "link-2">compare after effects, lightroom, premiere and photoshop (2023 and more)</h2>
+<p id = "para-8">&lt; After Effects, Lightroom, Premiere, and Photoshop are all powerful software tools designed for creative professionals. While they share some similarities, they each have unique features and capabilities that make them well-suited for different tasks.</p>
+<p id = "para-9">After Effects is a motion graphics and visual effects software that is used for creating animations, compositing footage, and adding visual effects to video. It has a vast array of tools for keyframe animation, tracking, and 3D rendering, making it a popular choice for animators and motion graphics designers.</p>
+<p id = "para-10">Lightroom is a photo editing software that is primarily used for organizing, editing, and processing digital photos. It has a wide range of tools for adjusting exposure, color balance, contrast, and other aspects of a photo’s appearance. It also has features for managing and organizing large photo libraries, making it a great choice for photographers.</p>
+<p id = "para-11">Premiere is a video editing software that is designed for professional video editing. It allows for seamless integration between video and audio editing, as well as advanced features for color correction, audio mixing, and visual effects. It is a popular choice for filmmakers, video editors, and content creators.</p>
+<p id = "para-12">Photoshop is an image editing software that is widely used for editing and manipulating digital images. It has a vast array of tools for retouching photos, creating digital art, and designing graphics. It is often used by graphic designers, digital artists, and photographers.</p>
+<p id = "para-13">In summary, each of these software tools is designed for a specific purpose, and choosing the right one will depend on your specific needs as a creative professional. After Effects is best for motion graphics and visual effects, Lightroom for photo editing and organization, Premiere for professional video editing, and Photoshop for digital image editing and graphic design.</p>
+<h2 id = "link-3">make the difference clear between premiere pro and after effects, depicting examples of what cant be achieved on the other</h2>
+<p id = "para-14">&lt; While Premiere Pro and After Effects are both Adobe software tools used for video editing, they have different capabilities and are better suited for different tasks.</p>
+<p id = "para-15">Premiere Pro is a non-linear video editing software that is primarily used for assembling and editing video footage, adding audio tracks, and creating video sequences. It has features such as trimming, cutting, and adding transitions to video clips, and is widely used for editing documentaries, films, and other types of video content.</p>
+<p id = "para-16">After Effects, on the other hand, is a motion graphics and visual effects software that is used for creating animations, compositing footage, and adding visual effects to video. It has a vast array of tools for keyframe animation, tracking, and 3D rendering, making it a popular choice for animators and motion graphics designers.</p>
+<p id = "para-17">Here are some examples of tasks that are best suited for one software tool over the other:</p>
+<p id = "para-18">Compositing: After Effects is designed for creating complex composites by layering multiple elements and applying visual effects. It can be used to create green screen effects, motion graphics, and add special effects such as explosions or fire. Premiere Pro has some compositing tools, but it is not as comprehensive as After Effects.</p>
+<p id = "para-19">Motion Graphics: After Effects is the better tool for creating complex motion graphics that require keyframe animation, tracking, and 3D rendering. Premiere Pro has some limited motion graphics capabilities, but it is not as robust as After Effects.</p>
+<p id = "para-20">Color Correction: Premiere Pro is designed for professional color correction and grading, including features such as Lumetri Color controls, which allow you to adjust color balance, saturation, and contrast. While After Effects does have some color correction tools, it is not as comprehensive as Premiere Pro.</p>
+<p id = "para-21">Audio Editing: While both Premiere Pro and After Effects have audio editing capabilities, Premiere Pro is better suited for audio editing tasks such as noise reduction, audio leveling, and audio mixing.</p>
+<p id = "para-22">In summary, Premiere Pro is better suited for editing and assembling video footage, while After Effects is designed for creating motion graphics and visual effects. While both software tools have some overlapping capabilities, they are better suited for different tasks and are often used together to create professional video content.</p>
+<h2 id = "link-4">premiere is more like ableton, after effects is more like flash?</h2>
+<p id = "para-23">&lt; While there are some similarities between Premiere Pro and Ableton Live, and between After Effects and Adobe Flash, it is important to note that each software tool has unique features and capabilities that make them distinct.</p>
+<p id = "para-24">Premiere Pro is primarily used for non-linear video editing, and has a timeline-based interface that allows you to assemble and edit video clips, add transitions and effects, and mix audio tracks. Ableton Live, on the other hand, is a digital audio workstation (DAW) that is designed for music production and live performance, and has a session view that allows you to arrange and manipulate audio clips in a nonlinear way.</p>
+<p id = "para-25">After Effects is a motion graphics and visual effects software that is used for creating animations, compositing footage, and adding visual effects to video. It has a powerful animation system with keyframe controls, and allows you to work with 2D and 3D layers to create complex motion graphics. Adobe Flash, on the other hand, is a multimedia software platform that was used for creating animations, interactive websites, and mobile applications. While Flash has some animation capabilities, it is not as comprehensive as After Effects.</p>
+<p id = "para-26">In summary, while there are some similarities between Premiere Pro and Ableton Live, and between After Effects and Adobe Flash, each software tool has unique features and capabilities that make them well-suited for different tasks. Premiere Pro is best for non-linear video editing, Ableton Live for music production and live performance, After Effects for motion graphics and visual effects, and Adobe Flash (now obsolete) was used for creating interactive web content.</p>
+<h2 id = "link-5">for after effects and premiere pro, list 5 practical final examples of each in modern works overall</h2>
+<p id = "para-27">&lt; Here are 5 practical final examples of both After Effects and Premiere Pro in modern works:</p>
+<p id = "para-28">After Effects:</p>
+<p id = "para-29">Motion Graphics: After Effects is widely used for creating motion graphics for advertisements, titles, and other visual content. For example, the animated graphics and titles in news broadcasts are often created in After Effects.</p>
+<p id = "para-30">Visual Effects: After Effects is also used extensively for creating visual effects in movies and TV shows. For instance, the special effects in sci-fi movies such as Star Wars or Marvel’s Avengers are often created using After Effects.</p>
+<p id = "para-31">3D Animations: After Effects is capable of creating 3D animations, which can be useful for creating product visualizations or explainer videos. For example, an architectural firm could use After Effects to create a flythrough animation of a new building design.</p>
+<p id = "para-32">Compositing: After Effects is used to composite multiple video clips or images together, to create a seamless final output. For example, an advertising agency might use After Effects to composite footage of a product into a video of a celebrity endorsing it.</p>
+<p id = "para-33">Typography Animation: After Effects has a wide range of tools for animating text, making it a popular choice for creating kinetic typography animations. For example, a music video might feature animated lyrics that move in sync with the music.</p>
+<p id = "para-34">Premiere Pro:</p>
+<p id = "para-35">Film and TV Editing: Premiere Pro is widely used for editing films and TV shows, such as the movie Gone Girl or the TV series Breaking Bad.</p>
+<p id = "para-36">Social Media Content: Premiere Pro is used for creating content for social media platforms such as YouTube, TikTok, and Instagram. For example, vloggers or content creators might use Premiere Pro to edit their videos and add transitions or effects.</p>
+<p id = "para-37">Music Videos: Premiere Pro is used for editing music videos, such as the music videos for the songs “All the Stars” by Kendrick Lamar and SZA, or “Stupid Love” by Lady Gaga.</p>
+<p id = "para-38">Documentaries: Premiere Pro is also used for editing documentaries, such as the documentary “13th” by Ava DuVernay, or “Free Solo” about rock climber Alex Honnold.</p>
+<p id = "para-39">Commercials: Premiere Pro is used for editing commercials and advertisements, such as the Nike “Dream Crazy” campaign featuring Colin Kaepernick, or the Old Spice “The Man Your Man Could Smell Like” campaign.</p>
+<p class = "rule">***</p>
+<h2 id = "link-6">since autodesk has many products, list the most edgy and worthwhile by 2021 rating 0-1000</h2>
+<p id = "para-40">&lt; As an AI language model, I don’t have real-time data for specific ratings of Autodesk products. However, I can provide you with a list of some of the most popular and cutting-edge Autodesk software up to 2021. Please note that the ratings provided are subjective and should be taken as a general guide rather than an absolute ranking.</p>
+<p id = "para-41">Autodesk Fusion 360 (Rating: 950/1000): A cloud-based 3D CAD, CAM, and CAE tool that is popular for its powerful and intuitive design capabilities. Autodesk AutoCAD (Rating: 930/1000): A widely-used 2D and 3D CAD software for various industries, including architecture, engineering, and construction. Autodesk Revit (Rating: 920/1000): A building information modeling (BIM) software for architects, engineers, and construction professionals. Autodesk Inventor (Rating: 910/1000): A 3D mechanical design, documentation, and product simulation tool used in the field of mechanical engineering. Autodesk Maya (Rating: 900/1000): A high-end 3D animation, modeling, simulation, and rendering software used in the film, TV, and game industries. Autodesk 3ds Max (Rating: 890/1000): A 3D modeling, animation, and rendering software used for game development, film, and TV production. Autodesk Civil 3D (Rating: 880/1000): A civil engineering design and documentation software that supports BIM processes. Autodesk Tinkercad (Rating: 860/1000): A browser-based 3D design and modeling tool, suitable for beginners and educators. Autodesk SketchBook (Rating: 850/1000): A digital painting and drawing software for artists and designers. Autodesk BIM 360 (Rating: 840/1000): A cloud-based construction management platform that connects teams and data throughout the construction project lifecycle.</p>
+<p id = "para-42">Please remember that these ratings are subjective, and the best software for you will depend on your specific needs and requirements.</p>
+<h2 id = "link-7">compare between autodesk alias, flame, netfabb and vred</h2>
+<p id = "para-43">&lt; Autodesk offers a diverse range of software products catering to various industries and disciplines. Here’s a comparison of Autodesk Alias, Flame, Netfabb, and VRED, each serving different purposes and fields:</p>
+<p id = "para-44">Autodesk Alias: Purpose: Industrial Design and Surface Modeling Industry: Automotive, Industrial Design, Product Design Alias is a professional industrial design software that provides a comprehensive set of tools for sketching, modeling, and visualization. It’s particularly popular in the automotive industry for creating Class-A surfaces and concept modeling. Alias offers a wide range of tools for surface modeling, surface evaluation, and surface-related tasks.</p>
+<p id = "para-45">Autodesk Flame: Purpose: Visual Effects, Compositing, and Color Grading Industry: Film, Television, and Video Production Flame is a high-end visual effects and compositing software that provides a comprehensive set of tools for 3D compositing, visual effects, editorial finishing, and color grading. It’s widely used in film and television post-production, helping artists create high-quality visual effects and meet tight deadlines. Flame offers a node-based compositing environment, 3D visual effects tools, and advanced color grading capabilities.</p>
+<p id = "para-46">Autodesk Netfabb: Purpose: Additive Manufacturing and 3D Printing Industry: Manufacturing, Engineering, and Product Design Netfabb is a specialized software for additive manufacturing, focused on streamlining the workflow for 3D printing and design optimization. It offers tools for design, simulation, and optimization of 3D printed parts, as well as build preparation and machine control. Netfabb helps users reduce production time, minimize material waste, and ensure optimal print quality.</p>
+<p id = "para-47">Autodesk VRED: Purpose: 3D Visualization, Virtual Prototyping, and Design Review Industry: Automotive, Industrial Design, and Product Design VRED is a 3D visualization and virtual prototyping software that helps designers and engineers create high-quality visualizations, animations, and virtual prototypes for design review and decision-making purposes. VRED offers real-time rendering, materials and environment editing, and support for VR and AR experiences. It’s often used in the automotive industry for design evaluation, virtual prototyping, and marketing purposes.</p>
+<p id = "para-48">In summary, each of these Autodesk products serves a different purpose and is tailored to specific industries. Alias is best for industrial design and surface modeling, Flame excels in visual effects and post-production, Netfabb is ideal for additive manufacturing and 3D printing, and VRED focuses on 3D visualization and virtual prototyping.</p>
+<h2 id = "link-8">rate each of the 4 0-1000 in the ability to make money detailing the various ways</h2>
+<p id = "para-49">&lt; Each of the four Autodesk products can be rated for their potential to generate income in their respective industries. However, it’s important to note that these ratings are subjective and the actual earning potential will depend on an individual’s skills, expertise, and market demand. Here is a breakdown of the earning potential for each software:</p>
+<p id = "para-50">Autodesk Alias (Rating: 850/1000): Alias is popular in the automotive, industrial design, and product design industries. Professionals can use Alias to create high-quality Class-A surfaces, concept models, and detailed designs. The primary ways to generate income with Alias include: Working as a freelance industrial designer or automotive designer. Landing a job in a design studio or automotive company. Providing consultancy services in surface modeling and industrial design. Autodesk Flame (Rating: 900/1000): Flame is widely used in the film, television, and video production industries for visual effects, compositing, and color grading. Flame artists can generate income in various ways, including: Working as a freelance visual effects artist, compositor, or colorist. Securing a job at a post-production house or visual effects studio. Offering specialized training in Flame software. Autodesk Netfabb (Rating: 800/1000): Netfabb’s primary application is in additive manufacturing and 3D printing. Income generation opportunities with Netfabb include: Working as a freelance 3D printing consultant or engineer. Securing a job in a company that specializes in additive manufacturing. Offering training and consultancy services related to 3D printing and additive manufacturing. Autodesk VRED (Rating: 750/1000): VRED is focused on 3D visualization, virtual prototyping, and design review in industries like automotive, industrial design, and product design. Earning opportunities with VRED include: Working as a freelance 3D visualization artist or virtual prototyping specialist. Landing a job in a design studio, automotive company, or product design firm that uses VRED. Providing training and consultancy services in 3D visualization and virtual prototyping. Keep in mind that these ratings are subjective and can vary depending on an individual’s skills, expertise, and market demand. Ultimately, the ability to generate income with these tools will depend on how well you can leverage your knowledge and skills in the respective industries.</p>
+<h2 id = "link-9">talk why maya was above 3ds max</h2>
+<p id = "para-51">&lt; In the previous response, Autodesk Maya was given a slightly higher rating than Autodesk 3ds Max. The ratings are subjective and should not be taken as definitive rankings. However, there are a few reasons why Maya might be considered to have an edge over 3ds Max in certain aspects:</p>
+<p id = "para-52">Industry preference: Maya is often the preferred software in the film, television, and VFX industries due to its advanced animation, rigging, and simulation tools. While 3ds Max is also used in these industries, its primary focus is on the architectural visualization, game development, and motion graphics sectors.</p>
+<p id = "para-53">Animation and rigging capabilities: Maya is known for its robust animation and rigging tools, which are essential for character animation and visual effects. Maya’s animation tools are generally more advanced and flexible compared to those in 3ds Max, making it a better choice for complex character animation projects.</p>
+<p id = "para-54">Simulation tools: Maya includes powerful simulation tools for creating realistic cloth, hair, fur, and fluid effects. While 3ds Max also offers some simulation capabilities, Maya’s tools are often considered more advanced and versatile for creating high-quality visual effects.</p>
+<p id = "para-55">Scripting and customization: Maya uses Python and MEL (Maya Embedded Language) for scripting, which allows for extensive customization and integration with other software. While 3ds Max also supports scripting through its own language, MAXScript, and Python, the scripting ecosystem in Maya is generally considered more mature and flexible.</p>
+<p id = "para-56">Linux support: Maya supports Linux operating systems, which are commonly used in the VFX and animation industries for their stability and performance. In contrast, 3ds Max is only available for Windows operating systems, which may limit its use in some production pipelines.</p>
+<p id = "para-57">That said, 3ds Max has its own strengths, such as its powerful modeling tools, extensive modifier stack, and user-friendly interface. The choice between Maya and 3ds Max ultimately depends on the specific needs of the project and the user’s familiarity with each software. Both programs are highly capable and widely used across various industries for different purposes.</p>
+<h2 id = "link-10">list the best ways to import or reuse maya works</h2>
+<p id = "para-58">&lt; There are several ways to import or reuse assets and works created in Autodesk Maya for different purposes, such as rendering, animation, or collaboration with other software. Here are some of the best methods to import or reuse Maya works:</p>
+<p id = "para-59">File Formats: When sharing Maya assets with other software, it’s essential to use compatible file formats. Some common file formats that can be exported from Maya and imported into other programs include: OBJ (Wavefront Object): A widely supported format for 3D models, suitable for static meshes. FBX (Filmbox): A versatile format that can store 3D models, textures, animations, and other scene data. FBX is compatible with many 3D software applications and game engines. Alembic (.abc): A format that efficiently stores complex animated geometry and simulations, commonly used in VFX and animation pipelines. Maya References: Maya allows you to create references, which are instances of external Maya files that can be imported into a scene without actually merging the content. References are useful for collaborating with multiple artists, managing large projects, or reusing assets like characters, props, and environments. Any updates made to the original referenced file will be reflected in all scenes where the reference is used.</p>
+<p id = "para-60">Importing and Exporting Scenes: You can import an entire Maya scene or parts of a scene into another Maya project using the “Import” and “Export Selection” functions. This method allows you to transfer objects, materials, animations, and other scene elements between different Maya projects.</p>
+<p id = "para-61">Asset Libraries and Maya’s Content Browser: You can create custom asset libraries in Maya to store and organize your models, materials, and other scene elements. These libraries can be accessed through Maya’s Content Browser, allowing you to quickly reuse assets in different projects.</p>
+<p id = "para-62">Plug-ins and Scripts: There are various third-party plug-ins and scripts available that can help streamline the process of importing and reusing Maya assets in other software. These tools can improve compatibility, handle batch importing, and automate repetitive tasks.</p>
+<p id = "para-63">When importing or reusing Maya works, it’s essential to consider the purpose, compatibility, and efficiency of the chosen method. The best approach will depend on the specific needs of the project and the software being used.</p>
+<h2 id = "link-11">talk more about the scene concept and adjacent methods of compound storage</h2>
+<p id = "para-64">&lt; In 3D software like Autodesk Maya, a “scene” refers to the collection of objects, materials, lights, cameras, animations, and other elements that make up a 3D project. Scenes are essential because they define the virtual environment in which all the components of a project interact and are rendered.</p>
+<p id = "para-65">To manage the complexity and organization of scenes, especially in large projects, artists and studios use various methods of compound storage and scene management. Here are some of the adjacent methods and concepts:</p>
+<p id = "para-66">Layered Scenes: Layered scenes allow artists to organize and manage different elements of a scene by placing them on separate layers. Each layer can be controlled individually, enabling artists to hide, lock, or modify specific parts of a scene without affecting the rest. Layered scenes are useful for organizing large projects, collaborating with multiple artists, and simplifying the rendering process.</p>
+<p id = "para-67">Scene Assembly: Scene assembly is a method for managing multiple scene representations and switching between them efficiently. In Maya, Scene Assembly uses Assembly Definition nodes to create various representations of assets, such as low-resolution proxy models, high-resolution models, or bounding boxes. Artists can switch between these representations during the production process, improving viewport performance and simplifying scene management.</p>
+<p id = "para-68">Namespaces: Namespaces in Maya help organize and manage objects in a scene, especially when importing or referencing external files. Namespaces act like containers, preventing naming conflicts between objects from different files. When importing or referencing an external file, Maya can automatically create a namespace based on the file name, ensuring that objects from different sources don’t overwrite each other.</p>
+<p id = "para-69">File Referencing: As mentioned earlier, file referencing is a method to import external Maya files into a scene without merging their content. Instead, the referenced file remains separate, and any changes made to it will automatically update in all scenes where the reference is used. File referencing is a powerful way to manage large projects, share assets among multiple artists, and maintain a non-destructive workflow.</p>
+<p id = "para-70">Asset Libraries: Asset libraries are collections of reusable models, materials, and other scene elements that can be accessed and imported into various projects. Asset libraries help streamline workflows, improve consistency across different projects, and reduce the time spent on repetitive tasks. In Maya, asset libraries can be created and managed using the Content Browser.</p>
+<p id = "para-71">These methods and concepts help artists and studios manage the complexity of 3D scenes, optimize workflows, and collaborate more efficiently. By using compound storage and scene management techniques, artists can focus on the creative aspects of their work and maintain a structured, organized production pipeline.</p>
+<h2 id = "link-12">list 5 websites to find such bundles</h2>
+<p id = "para-72">&lt; There are several websites where you can find bundled 3D assets, models, materials, and other resources that can be used in 3D projects like Autodesk Maya. Here are five popular websites to explore:</p>
+<p id = "para-73">TurboSquid (<a href = "https://www.turbosquid.com/">https://www.turbosquid.com/</a>): TurboSquid is one of the largest online marketplaces for 3D models and assets. They offer a wide range of high-quality models, textures, and other resources, including bundles and collections for various industries and applications.</p>
+<p id = "para-74">CGTrader (<a href = "https://www.cgtrader.com/">https://www.cgtrader.com/</a>): CGTrader is another popular online marketplace for 3D models and assets. They offer a variety of 3D models, materials, and bundles from different artists and creators, catering to various industries such as architecture, gaming, and product design.</p>
+<p id = "para-75">Sketchfab (<a href = "https://sketchfab.com/">https://sketchfab.com/</a>): Sketchfab is a platform that allows users to upload, share, and sell 3D models and assets. They offer a diverse collection of 3D assets, including bundled packs for various applications, such as game assets, architectural visualization, and more.</p>
+<p id = "para-76">3DExport (<a href = "https://3dexport.com/">https://3dexport.com/</a>): 3DExport is an online marketplace for buying and selling 3D models, textures, and other digital assets. They offer a wide range of bundled 3D assets for various applications and industries, including game development, animation, and architectural visualization.</p>
+<p id = "para-77">Creative Market (<a href = "https://creativemarket.com/">https://creativemarket.com/</a>): Creative Market is an online marketplace for digital design assets, including 3D models, textures, and other resources. They offer a variety of bundled 3D assets and collections created by independent artists and designers for various industries and applications.</p>
+<p id = "para-78">When using 3D assets from these websites, make sure to check the licensing terms and compatibility with your preferred 3D software, such as Autodesk Maya. Additionally, it’s essential to respect the intellectual property rights of the creators and adhere to the usage restrictions specified in the licenses.</p>
+<h2 id = "link-13">list 5 more undeground alternatives</h2>
+<p id = "para-79">&lt; Here are five lesser-known or underground alternatives for finding 3D models and assets. While these platforms may not be as widely known as the larger marketplaces, they still offer a variety of resources for your 3D projects:</p>
+<p id = "para-80">Blend Swap (<a href = "https://www.blendswap.com/">https://www.blendswap.com/</a>): Blend Swap is a community-driven platform primarily focused on Blender 3D assets. Users can find a variety of 3D models, materials, and other resources, many of which are available for free. Although primarily for Blender, many assets can be converted and used in other software like Maya.</p>
+<p id = "para-81">Free3D (<a href = "https://free3d.com/">https://free3d.com/</a>): Free3D is a platform that offers a mix of free and paid 3D models and assets. While the selection may not be as extensive as other marketplaces, you can still find a range of assets for various applications.</p>
+<p id = "para-82">ShareCG (<a href = "https://www.sharecg.com/">https://www.sharecg.com/</a>): ShareCG is a lesser-known platform for sharing 3D models, textures, and other digital assets. While it may not have the extensive catalog of more prominent marketplaces, you can still find a variety of free assets for your projects.</p>
+<p id = "para-83">RenderHub (<a href = "https://www.renderhub.com/">https://www.renderhub.com/</a>): RenderHub is an online marketplace offering 3D models, textures, and other digital assets. While not as well-known as the larger marketplaces, it still provides a variety of resources for various industries and applications.</p>
+<p id = "para-84">Yobi3D (<a href = "https://www.yobi3d.com/">https://www.yobi3d.com/</a>): Yobi3D is a 3D model search engine that aggregates assets from various sources. While not a marketplace itself, it serves as a useful tool for discovering 3D models from lesser-known websites and communities.</p>
+<p id = "para-85">When using assets from lesser-known websites or underground sources, make sure to check the licensing terms, compatibility with your preferred 3D software, and the quality of the models. Additionally, respect the intellectual property rights of the creators and adhere to the usage restrictions specified in the licenses.</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

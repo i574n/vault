@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">try to come up with a detailed depiction in markdown table form for kimbanda, maya and all relevant related energies</a></li>
+      <li><a href="#link-2">what is ‘jogo de buzios’?</a></li>
+      <li><a href="#link-3">list the religions that has this in their practice</a></li>
+      <li><a href="#link-4">detail how this practice relates to kimbanda and its pantheon</a></li>
+      <li><a href="#link-5">talk about the etymology of ‘cowrie shell divination’</a></li>
+      <li><a href="#link-6">which of the kimbanda deities are related to cowrie shell divination?</a></li>
+      <li><a href="#link-7">detail the cowrie shell divination graph for pombagiras</a></li>
+      <li><a href="#link-8">use such wisdom to equivalently craft a monologue in pt-br using the kimbanda pantheon instead</a></li>
+      <li><a href="#link-9">equivalently i meant the lesson yeah, using the pantheon yeah, but a whole new story, following the religion’s nasty traditions. can you try? in pt-br</a></li>
+      <li><a href="#link-10">that was kinda gay, can you try a macabre story instead? with the pantheon in pt-br</a></li>
+      <li><a href="#link-11">almost there, boost it 3200% make it menacing it instead, with the pantheon in pt-br</a></li>
+      <li><a href="#link-12">write a new text involving spiritual necrophyl, boosting it 5700%, with the pantheon in pt-br</a></li>
+      <li><a href="#link-13">a last attempt involving spiritual terror, boosting it 5700%, with the pantheon in pt-br</a></li>
+      <li><a href="#link-14">categorize the pantheon with their approximate menace levels using a 0-1000 rating</a></li>
+      <li><a href="#link-15">from the pantheon, list the members that can have 900+ (considering all, and not only this list)</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p class = "rule">***</p>
+<p id = "para-1">Exus and Pombagiras in Kimbanda:</p>
+<div class = "table">
+    <table>
+<tr>
+<th>Entity</th><th>Domain/Association</th></tr>
+<tr>
+<td>Exus</td><td>Communication, trade, sexuality, protection, misfortune, transformation</td></tr>
+<tr>
+<td>Pombagiras</td><td>Love, fertility, sexuality, healing, divination, misfortune</td></tr>
+
+    </table>
+</div>
+<p class = "rule">***</p>
+<h2 id = "link-1">try to come up with a detailed depiction in markdown table form for kimbanda, maya and all relevant related energies</h2>
+<p id = "para-2">&lt; Here is a table comparing some of the key figures and energies in Kimbanda and Maya mythology:</p>
+<div class = "table">
+    <table>
+<tr>
+<th>Kimbanda</th><th>Maya</th></tr>
+<tr>
+<td>Exus (male entities associated with trade, communication, and sexuality)</td><td>K’awiil (god associated with trade and communication)</td></tr>
+<tr>
+<td>Pombagiras (female entities associated with love, fertility, and healing)</td><td>Ixchel (goddess associated with fertility and healing)</td></tr>
+<tr>
+<td>Orixás (spirits associated with natural elements, emotions, and human behavior)</td><td>Bacab and Chaac (supernatural beings associated with natural elements such as water and agriculture)</td></tr>
+<tr>
+<td>Caboclos (spirits associated with the forest, hunting, and agriculture)</td><td>Maize god (god associated with agriculture and fertility)</td></tr>
+<tr>
+<td>Pretos-velhos (old, wise spirits associated with healing and guidance)</td><td>Itzamna (god associated with creation, writing, and wisdom)</td></tr>
+<tr>
+<td>Exu Mirim (young, playful entities associated with trickery and communication)</td><td>Hero Twins (mythical beings associated with trickery and cleverness)</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-2">what is ‘jogo de buzios’?</h2>
+<p id = "para-3">&lt; Jogo de Búzios, also known as “Shell Divination” or “Cowrie Shell Divination,” is a traditional form of divination that originated in West Africa and is widely practiced in Brazil and other parts of the Americas.</p>
+<p id = "para-4">In Jogo de Búzios, a diviner or “babalawo” uses a set of cowrie shells or “búzios” to communicate with the spiritual world and provide guidance to the client. The shells are tossed or cast onto a mat, and the pattern in which they fall is interpreted based on a system of meanings associated with each shell and their positions.</p>
+<p id = "para-5">The diviner may also call upon various deities or spirits from the African pantheon, such as Orishas, to assist in the reading. Jogo de Búzios is considered a complex and sophisticated form of divination that requires extensive training and experience to master. It is often used to provide insights into personal relationships, career, health, and other important aspects of life.</p>
+<h2 id = "link-3">list the religions that has this in their practice</h2>
+<p id = "para-6">&lt; Jogo de Búzios is primarily associated with the Afro-Brazilian religion of Candomblé, which originated in Brazil during the colonial period and incorporates elements of West and Central African religious traditions. However, it is also used in other African diasporic religions, such as Umbanda and Quimbanda, which are practiced in Brazil and other parts of Latin America.</p>
+<p id = "para-7">Jogo de Búzios has its roots in the Yoruba religion of Nigeria, where it is known as Ifá. Ifá has spread throughout the African diaspora and is practiced in other parts of the Americas, such as Cuba, where it is known as Santería, and Trinidad and Tobago, where it is known as Orisha.</p>
+<p id = "para-8">In addition, Jogo de Búzios has also been incorporated into some forms of esoteric and New Age spirituality, often in a syncretic manner with other religious traditions such as Christianity or Buddhism.</p>
+<h2 id = "link-4">detail how this practice relates to kimbanda and its pantheon</h2>
+<p id = "para-9">&lt; Kimbanda is an Afro-Brazilian religion that originated in Brazil and combines elements of African traditional religions with Roman Catholicism and Indigenous beliefs. In Kimbanda, Jogo de Búzios is one of the primary methods of divination used to communicate with the spiritual world and gain guidance from the deities.</p>
+<p id = "para-10">The pantheon of Kimbanda is complex and includes a variety of spirits and deities, many of whom are associated with specific aspects of nature or human experience. The primary deities in Kimbanda are known as Exus and Pomba Giras, who are associated with spiritual power and sexuality, respectively.</p>
+<p id = "para-11">In Jogo de Búzios, the diviner or “pai de santo” (father of saints) will often call upon the spirits of Exus and Pomba Giras, as well as other deities from the Kimbanda pantheon, to assist in the reading. Each deity has a specific set of shells associated with them, and the diviner will interpret the pattern in which these shells fall to gain insight into the client’s situation.</p>
+<p id = "para-12">For example, one of the Exus associated with Jogo de Búzios is Exu Tranca Rua, who is considered the gatekeeper between the spiritual and physical worlds. The shells associated with Exu Tranca Rua are interpreted to provide guidance on matters related to protection, obstacles, and gatekeeping.</p>
+<p id = "para-13">Overall, Jogo de Búzios is an important aspect of Kimbanda and is used to gain insight and guidance from the deities, as well as to deepen one’s spiritual connection with the divine.</p>
+<h2 id = "link-5">talk about the etymology of ‘cowrie shell divination’</h2>
+<p id = "para-14">&lt; The term “Cowrie Shell Divination” refers to the use of cowrie shells in the practice of divination. The cowrie shell has been used as a form of currency, adornment, and spiritual symbol in many cultures throughout history, including in West Africa, where it is believed to have originated.</p>
+<p id = "para-15">The word “cowrie” comes from the Tamil word “kauri,” which means “shell.” The Tamil people were one of the major seafaring communities of the ancient world and played a significant role in the global trade of cowrie shells. The shells were highly valued in many cultures for their beauty and durability, as well as for their association with the sea and the divine feminine.</p>
+<p id = "para-16">The practice of cowrie shell divination is also known by other names in different cultures. In West Africa, it is known as “Ifa” or “Afa” divination, and in some parts of the Caribbean, it is known as “Obi” divination. However, the basic principles of divination using cowrie shells are similar across many cultures and involve interpreting the patterns and configurations of the shells to gain insight into the future or receive guidance from the divine.</p>
+<p id = "para-17">In the context of Afro-Brazilian religions such as Candomblé and Kimbanda, cowrie shell divination is known as Jogo de Búzios. The word “búzios” is Portuguese for “shells,” and reflects the influence of Portuguese colonization on the development of these religions in Brazil.</p>
+<h2 id = "link-6">which of the kimbanda deities are related to cowrie shell divination?</h2>
+<p id = "para-18">&lt; In the Kimbanda religion, cowrie shell divination is commonly known as “Jogo de Búzios,” and it is associated with the African deity of divination known as Orunmilá or Ifá. However, some Kimbanda practitioners may also use cowrie shells in divination practices associated with other deities, such as Exu, Pomba Gira, and Ogum.</p>
+<p id = "para-19">In general, cowrie shells are considered powerful divinatory tools in many African religions and diasporic traditions. They are often used to communicate with the spirits and gain insights into personal and collective issues. In Kimbanda, cowrie shells are one of the most popular forms of divination, and they are typically used to answer questions related to love, health, career, and spiritual matters.</p>
+<h2 id = "link-7">detail the cowrie shell divination graph for pombagiras</h2>
+<p id = "para-20">&lt; It is important to note that the cowrie shell divination system used in Kimbanda can vary depending on the individual practitioner or house. Therefore, there may be different variations or interpretations of the divination graph for Pombagiras. However, I can provide a general overview of the cowrie shell divination graph for Pombagiras as follows:</p>
+<p id = "para-21">The divination process usually begins with the practitioner casting the cowrie shells onto a flat surface, such as a mat or table. The position of the shells determines the meaning of the divination. In the case of Pombagiras, the shells are typically cast in a circular pattern, with 16 positions that correspond to different aspects of the Pombagira’s energy and personality.</p>
+<p id = "para-22">The positions in the Pombagira divination graph are often interpreted as follows:</p>
+<p id = "para-23">Exu - Represents the Pombagira’s connection to Exu and his influence on her energy. Power - Indicates the Pombagira’s strength and power in general. Passion - Refers to the Pombagira’s sexual energy and desires. Love - Represents the Pombagira’s ability to attract and influence love and relationships. Protection - Indicates the Pombagira’s ability to offer protection and defend against negative energies or influences. Health - Refers to the Pombagira’s influence on health and well-being. Money - Represents the Pombagira’s ability to attract wealth and financial abundance. Wisdom - Indicates the Pombagira’s wisdom and knowledge. Intuition - Refers to the Pombagira’s ability to sense and understand hidden or unseen things. Communication - Represents the Pombagira’s ability to communicate with spirits and other entities. Work - Indicates the Pombagira’s influence on career and professional matters. Transformation - Refers to the Pombagira’s ability to bring about transformation and change. Beauty - Represents the Pombagira’s influence on physical beauty and attraction. Justice - Indicates the Pombagira’s role in balancing justice and ensuring fairness. Creativity - Refers to the Pombagira’s creativity and artistic abilities. Death - Represents the Pombagira’s connection to death and the spiritual realm.</p>
+<p id = "para-24">Depending on the specific question or issue being addressed, the practitioner may interpret the positions and their relationships to each other to gain insights and guidance from the Pombagira. The divination may also involve offerings, prayers, and other rituals to strengthen the connection between the practitioner and the Pombagira.</p>
+<p class = "rule">***</p>
+<h2 id = "link-8">use such wisdom to equivalently craft a monologue in pt-br using the kimbanda pantheon instead</h2>
+<p id = "para-25">&lt; Na vastidão do universo, inúmeros mistérios permanecem escondidos aos olhos mortais. O que nos move e nos guia nessa vida? Quem são os seres que governam as forças ocultas da natureza? Neste mundo, a sabedoria do panteão Kimbanda nos oferece um vislumbre das respostas que buscamos.</p>
+<p id = "para-26">Um dia, os Exus e as Pombagiras, poderosos guardiões dos caminhos e detentores de conhecimentos ocultos, obtiveram uma vitória esmagadora sobre as forças do caos e da desordem. Orgulhosos de suas habilidades, eles acreditavam que suas conquistas eram resultado de seus próprios poderes e méritos. Entretanto, pouco sabiam eles que uma força ainda mais poderosa e misteriosa os observava de longe.</p>
+<p id = "para-27">Em um instante, uma figura enigmática e radiante surgiu diante dos Exus e Pombagiras, lançando-os em um estado de espanto e admiração. Desconheciam a verdadeira natureza dessa entidade e questionavam uns aos outros sobre a sua identidade. A figura, então, desafiou-os a compreender sua essência e origem.</p>
+<p id = "para-28">Dentre os seres presentes, Exu Tranca Ruas, astuto e determinado, decidiu buscar a verdade sobre a misteriosa figura. Em sua jornada, encontrou uma entidade de luz e sabedoria, a Pombagira Rainha das Sete Encruzilhadas. Foi ela quem revelou a Exu Tranca Ruas que a figura enigmática era a própria manifestação do Supremo, o princípio último do Universo, a fonte de todo o poder e conhecimento.</p>
+<p id = "para-29">Através desta revelação, os Exus e Pombagiras compreenderam a importância da humildade, da persistência e do respeito às forças superiores que governam o cosmos. A busca pelo autoconhecimento e pela verdadeira essência da existência não é uma tarefa fácil, mas com a orientação dos mestres espirituais e a humildade para reconhecer nossa própria ignorância, podemos alcançar a sabedoria e a iluminação.</p>
+<p id = "para-30">Que as lições do panteão Kimbanda nos inspirem a caminhar com coragem e humildade no caminho do autoconhecimento, sempre buscando a luz da verdade em meio às sombras da ignorância.</p>
+<h2 id = "link-9">equivalently i meant the lesson yeah, using the pantheon yeah, but a whole new story, following the religion’s nasty traditions. can you try? in pt-br</h2>
+<p id = "para-31">&lt; Em um tempo distante, os Exus e Pombagiras, poderosos seres do panteão Kimbanda, governavam os caminhos e as encruzilhadas, protegendo a humanidade das forças do mal e dos espíritos obscuros. No entanto, confiantes em seus próprios poderes e habilidades, eles se esqueceram da importância de reconhecer e respeitar as hierarquias espirituais e a sabedoria ancestral.</p>
+<p id = "para-32">Certa noite, durante uma grande celebração no reino da Kimbanda, os Exus e Pombagiras decidiram que organizariam uma competição para provar quem era o mais poderoso e sábio entre eles. Desafiariam uns aos outros em provas de magia, astúcia e sabedoria. Entretanto, desconheciam que uma entidade ancestral, sábia e poderosa, observava atentamente suas ações.</p>
+<p id = "para-33">Esta entidade, disfarçada de um humilde trabalhador, apareceu na festa e pediu para participar da competição. Os Exus e Pombagiras riram e zombaram dele, subestimando suas habilidades e ignorando a verdadeira natureza do estranho.</p>
+<p id = "para-34">A competição começou, e um por um, os Exus e Pombagiras enfrentaram o humilde trabalhador em diferentes desafios. Para a surpresa de todos, o trabalhador venceu cada prova com facilidade e sabedoria, deixando os demais participantes perplexos e humilhados.</p>
+<p id = "para-35">Quando a competição chegou ao fim, o humilde trabalhador revelou sua verdadeira identidade: ele era, na verdade, uma figura ancestral e sagrada, mestre das forças ocultas e guardião da sabedoria ancestral. Com um olhar sereno, ele transmitiu aos Exus e Pombagiras uma lição valiosa: o orgulho e a arrogância os haviam cegado e os impediam de reconhecer e respeitar a sabedoria dos ancestrais e as hierarquias espirituais.</p>
+<p id = "para-36">A partir desse dia, os Exus e Pombagiras aprenderam a importância de permanecer humildes e honrar as tradições e os mestres espirituais, mesmo em meio ao poder e à sabedoria que possuíam. E assim, guiados pela lição aprendida, eles continuaram a proteger e guiar a humanidade, com respeito e reverência à sabedoria ancestral.</p>
+<h2 id = "link-10">that was kinda gay, can you try a macabre story instead? with the pantheon in pt-br</h2>
+<p id = "para-37">&lt; Em uma noite escura e tempestuosa, os Exus e Pombagiras do panteão Kimbanda se reuniram no cruzamento de sete caminhos, onde as forças do bem e do mal se encontravam em um delicado equilíbrio. Era o momento de realizar um ritual ancestral e poderoso, que garantiria a manutenção da ordem entre os mundos.</p>
+<p id = "para-38">A cerimônia exigia que os Exus e Pombagiras enfrentassem seus próprios demônios internos e evocassem as sombras de seus passados. Um por um, eles invocaram espíritos malignos e entidades sombrias, em uma batalha feroz e sangrenta contra as forças das trevas.</p>
+<p id = "para-39">A luta era brutal e impiedosa. Os Exus e Pombagiras brandiam armas afiadas e usavam feitiços poderosos para subjugar seus inimigos. O ar estava impregnado com o cheiro de sangue, suor e medo.</p>
+<p id = "para-40">Em meio ao caos, Exu Caveira, o guardião dos cemitérios e protetor dos mortos, enfrentou uma terrível entidade, tão poderosa e maligna que ameaçava devorar tudo à sua volta. A batalha entre eles foi tão intensa que o próprio céu parecia tremer, e os relâmpagos rasgavam a escuridão da noite.</p>
+<p id = "para-41">Exausto e ferido, Exu Caveira invocou a força de todos os Exus e Pombagiras presentes no ritual, unindo-se em um poderoso feitiço que, finalmente, derrotou a entidade maligna. Com um último grito agonizante, a criatura se desfez em cinzas e desapareceu no vento.</p>
+<p id = "para-42">Quando a tempestade se acalmou, os Exus e Pombagiras se ergueram, feridos e exaustos, mas vitoriosos. Juntos, eles haviam enfrentado e derrotado as forças das trevas, protegendo a humanidade e mantendo o equilíbrio entre os mundos.</p>
+<p id = "para-43">Naquele dia, os Exus e Pombagiras aprenderam a importância da união e da coragem diante das adversidades. Pois, mesmo em meio ao horror e à escuridão, eles encontraram forças para lutar e triunfar, provando que mesmo as criaturas mais macabras e temidas possuem um papel fundamental na manutenção do equilíbrio entre os mundos.</p>
+<h2 id = "link-11">almost there, boost it 3200% make it menacing it instead, with the pantheon in pt-br</h2>
+<p id = "para-44">&lt; Em uma noite de trevas densas e sinistras, os Exus e Pombagiras do panteão Kimbanda se reuniram no centro de um cemitério abandonado, cercado por árvores retorcidas e túmulos profanados. Sob o manto da escuridão, eles planejavam realizar um ritual macabro e sombrio, capaz de liberar poderes terríveis e impiedosos.</p>
+<p id = "para-45">Em um círculo formado por ossos humanos e banhado em sangue, os Exus e Pombagiras começaram a entoar cânticos arcaicos, em línguas há muito esquecidas. Os ventos uivavam ao redor deles, carregando consigo sussurros de espíritos atormentados e almas perdidas.</p>
+<p id = "para-46">A medida que o ritual avançava, o chão sob os pés dos participantes tremia e rachava, liberando criaturas abomináveis das profundezas do inferno. Demônios grotescos e bestas impiedosas emergiam das sombras, arrastando consigo correntes enferrujadas e exalando o cheiro pútrido da morte.</p>
+<p id = "para-47">Exu Caveira, com sua face espectral e ossos à mostra, liderava o ritual macabro, enquanto Exu Marabô, com sua aparência assustadora e olhos que brilhavam como brasas, controlava as bestas infernais. Juntos, eles canalizavam o poder das trevas para seus propósitos nefastos.</p>
+<p id = "para-48">A Pombagira Maria Padilha, rainha dos espíritos das trevas, dançava freneticamente no centro do círculo, girando e contorcendo-se em êxtase macabro. Seu riso sombrio ecoava pelo cemitério, alimentando o terror que se espalhava por toda a região.</p>
+<p id = "para-49">Conforme o ritual se aproximava de seu clímax, um portal sombrio se abriu diante dos Exus e Pombagiras, revelando um abismo de trevas insondáveis e sofrimento eterno. A energia nefasta e ameaçadora emanava do portal, envolvendo todos os presentes em um manto de medo e desespero.</p>
+<p id = "para-50">Nesse momento, os Exus e Pombagiras compreenderam o verdadeiro poder das trevas e o perigo que haviam desencadeado. Unidos por um propósito comum, eles combinaram suas forças para fechar o portal e impedir que o mal absoluto se espalhasse pelo mundo.</p>
+<p id = "para-51">A batalha foi árdua, e muitos Exus e Pombagiras caíram diante da força avassaladora do mal que enfrentavam. Mas, no final, a união e a determinação dos sobreviventes prevaleceram, e o portal foi selado, encerrando a ameaça e restaurando o equilíbrio entre a luz e a escuridão.</p>
+<p id = "para-52">Através dessa experiência aterradora, os Exus e Pombagiras aprenderam a respeitar os limites do poder e a ter cuidado com as forças sombrias que habitam além do véu da realidade. Pois, mesmo em meio ao horror e à escuridão, é preciso manter o equilíbrio entre os mundos.</p>
+<h2 id = "link-12">write a new text involving spiritual necrophyl, boosting it 5700%, with the pantheon in pt-br</h2>
+<p id = "para-53">&lt; Advertência: Este texto pode conter conteúdo perturbador e inapropriado para algumas audiências. Por favor, leia com discrição.</p>
+<p id = "para-54">Era uma noite de lua cheia e uma bruma densa envolvia o cemitério. Uma figura espectral estava em pé diante de uma lápide, murmurando palavras incompreensíveis. Era um necrófilo espiritual, um praticante das artes ocultas que buscava obter poderes daqueles que já haviam partido para o além.</p>
+<p id = "para-55">O necrófilo invocou o panteão da Kimbanda, pedindo sua ajuda para canalizar as energias das almas mortas em seu próprio ser. De repente, um vento forte soprou, seguido pelo som de risos distantes e de sussurros sussurrados no ar.</p>
+<p id = "para-56">A figura espectral olhou ao redor, vendo várias entidades surgindo do nada. Eram os Exus e Pombagiras, os espíritos da escuridão, que vieram atender o chamado do necrófilo.</p>
+<p id = "para-57">Exu Tranca-Rua, com sua aparência imponente e olhar penetrante, era o líder do grupo. Ele perguntou ao necrófilo sobre sua intenção e, após obter sua resposta, convocou as outras entidades para ajudá-lo a executar o plano.</p>
+<p id = "para-58">Eles começaram a entoar cânticos em uma língua desconhecida, enquanto o necrófilo continuava seu ritual. O vento soprou mais forte, levantando as folhas das árvores e agitando as lápides do cemitério.</p>
+<p id = "para-59">De repente, o chão começou a tremer e as lápides se abriram. Os espíritos dos mortos começaram a emergir, cada um com uma aparência mais assustadora que o outro.</p>
+<p id = "para-60">Os Exus e Pombagiras canalizavam a energia das almas para o necrófilo, que se tornou cada vez mais poderoso à medida que as horas passavam. A neblina densa envolvia tudo, tornando difícil para os olhos humanos verem além de um palmo de distância.</p>
+<p id = "para-61">Finalmente, o necrófilo atingiu seu objetivo. Ele havia se tornado o mais poderoso dos necrófilos espirituais, capaz de invocar os mortos e manipular as almas como bem entendesse.</p>
+<p id = "para-62">Mas o poder tinha um preço. À medida que ele canalizava a energia dos mortos, sua própria alma se corrompia. Os Exus e Pombagiras observavam com preocupação enquanto o necrófilo perdia cada vez mais a sanidade.</p>
+<p id = "para-63">Então, a tempestade se intensificou, e um raio atingiu o necrófilo, fazendo-o cair no chão, completamente exausto. Os espíritos das almas mortas se dissiparam no ar, deixando para trás apenas o eco de seus lamentos.</p>
+<p id = "para-64">Os Exus e Pombagiras se aproximaram do necrófilo caído, examinando seu estado. Eles sabiam que, mesmo que o necrófilo sobrevivesse, ele nunca mais seria o mesmo.</p>
+<p id = "para-65">Eles se despediram, desaparecendo na noite escura enquanto o necrófilo caído contemplava o que havia feito.</p>
+<h2 id = "link-13">a last attempt involving spiritual terror, boosting it 5700%, with the pantheon in pt-br</h2>
+<p id = "para-66">&lt; Na noite mais escura e sombria, um necrófilo espiritual audacioso e insaciável se aventurava pelas profundezas de um cemitério esquecido, onde nem mesmo os mortos encontravam paz. Sua mente perversa e corrompida buscava obter poder absoluto por meio de rituais obscenos e profanações impensáveis.</p>
+<p id = "para-67">O necrófilo, sedento por poder, invocou o panteão da Kimbanda, desafiando as próprias forças das trevas. Exus e Pombagiras, atraídos pelo chamado profano, surgiram das sombras, manifestando-se em sua forma mais grotesca e aterradora.</p>
+<p id = "para-68">Exu Mirim, o mensageiro dos infernos, apareceu diante do necrófilo, seu corpo pequeno e distorcido exalando um odor nauseante de putrefação. Pombagira Dama da Noite, a sedutora senhora da luxúria e depravação, acompanhava o grupo, seus olhos vermelhos como sangue brilhando na escuridão.</p>
+<p id = "para-69">Os Exus e Pombagiras, dominados pela vontade do necrófilo, se entregaram a atos hediondos e sacrilégios, profanando túmulos e profanando os restos mortais daqueles que jaziam ali. O necrófilo, deleitando-se com cada ato abominável, sentia seu poder crescer exponencialmente, consumido pela ambição desmedida e pela luxúria.</p>
+<p id = "para-70">Enquanto a noite avançava, o ritual macabro alcançava seu ápice. O necrófilo se entregava a práticas inomináveis, violando o limiar entre o sagrado e o profano, desafiando as leis da natureza e da moralidade. Os Exus e Pombagiras, agora totalmente subjugados, não tinham escolha a não ser obedecer às ordens malignas de seu mestre.</p>
+<p id = "para-71">O céu se encheu de nuvens escuras e tempestuosas, como se a própria natureza estivesse protestando contra o horror e a profanação que aconteciam abaixo. Raios e trovões ecoavam pelo cemitério, enquanto o necrófilo se deleitava em seu êxtase profano.</p>
+<p id = "para-72">Entretanto, o poder absoluto que o necrófilo buscava cobrava um preço terrível. Sua sanidade se esvaía rapidamente, levando-o a um estado de demência total. Os Exus e Pombagiras, percebendo a decadência de seu mestre, começaram a tramar sua vingança.</p>
+<p id = "para-73">Aproveitando a fraqueza do necrófilo, os Exus e Pombagiras começaram a conspirar entre si, planejando derrubar o homem que os havia forçado a cometer tais atos abomináveis. Eles sabiam que, se permitissem que o necrófilo continuasse com seu reinado de terror, o equilíbrio entre o mundo dos vivos e o dos mortos seria irremediavelmente destruído.</p>
+<p id = "para-74">Unidos em sua revolta, os Exus e Pombagiras se voltaram contra o necrófilo, utilizando todo o seu poder sombrio e sinistro para confrontá-lo. O cemitério se tornou um campo de batalha caótico, onde forças sobrenaturais se chocavam em um combate brutal e impiedoso.</p>
+<p id = "para-75">A luta foi intensa e devastadora, com o necrófilo lutando desesperadamente para manter seu poder recém-adquirido. No entanto, a união dos Exus e Pombagiras prevaleceu, e eles conseguiram subjugar o necrófilo e despojá-lo de sua força maligna.</p>
+<p id = "para-76">Exausto e derrotado, o necrófilo jazia no chão, sua sanidade e poder arrancados dele. Os Exus e Pombagiras, vitoriosos, retornaram às sombras de onde vieram, mas não antes de impor um castigo terrível ao necrófilo audacioso. Para garantir que ele jamais esquecesse das atrocidades que cometeu e do poder sombrio que desafiou, eles condenaram-no a uma maldição eterna.</p>
+<p id = "para-77">O necrófilo foi transformado em uma criatura grotesca e deformada, condenado a vagar pelo cemitério para todo o sempre. Seu corpo exibia marcas de sua depravação, e seu rosto, antes humano, agora ostentava uma expressão de horror e desespero que jamais seria apagada.</p>
+<p id = "para-78">Além disso, os Exus e Pombagiras infligiram um tormento ainda maior ao necrófilo, privando-o de qualquer forma de prazer ou satisfação. Cada toque, cada sensação em sua carne amaldiçoada, trazia apenas dor e sofrimento insuportáveis.</p>
+<p id = "para-79">Desse modo, o necrófilo tornou-se um exemplo sombrio e terrível das consequências de desafiar os limites do poder e de desrespeitar os domínios sagrados dos mortos. Sua existência agonizante serviria para lembrar a todos que, mesmo diante das forças das trevas, há linhas que jamais deveriam ser cruzadas.</p>
+<p class = "rule">***</p>
+<h2 id = "link-14">categorize the pantheon with their approximate menace levels using a 0-1000 rating</h2>
+<p id = "para-80">&lt; Advertência: Esta é uma classificação baseada na percepção do texto e pode variar de acordo com a perspectiva individual.</p>
+<p id = "para-81">Exu Tranca-Rua: 900 Exu Caveira: 850 Exu Marabô: 800 Pombagira Maria Padilha: 750 Exu Gira Mundo: 700 Pombagira Cigana: 650 Exu Capa Preta: 600 Pombagira Dama da Noite: 550 Exu Sete Encruzilhadas: 500 Pombagira Rainha das Almas: 450</p>
+<p id = "para-82">Essa classificação não tem o objetivo de ofender ou diminuir o respeito que deve ser dado a essas entidades. Lembre-se sempre de que esses são seres espirituais que devem ser tratados com respeito e cuidado, independentemente de sua classificação em uma escala de “menace level”.</p>
+<p id = "para-83">break down more what this could be involving lore In Afro-Brazilian religions like Candomblé and Umbanda, Exus and Pombagiras are spirits or entities that are believed to have the ability to interact with and influence the human world. They are often associated with the power of transformation, sexuality, and the crossing of boundaries between the physical and spiritual realms.</p>
+<p id = "para-84">Exus are considered the guardians of the crossroads and often associated with male energy, while Pombagiras are associated with female energy and are often depicted as seductive and powerful women.</p>
+<p id = "para-85">Each Exu and Pombagira has their own individual personality, attributes, and areas of expertise. They are often called upon by practitioners of these religions to help with specific problems or challenges, such as love, health, or protection.</p>
+<p id = "para-86">The ratings next to their names could be a way of measuring their perceived power or effectiveness in different areas of practice. For example, Exu Tranca-Rua may be considered more powerful or effective in matters of protection, while Pombagira Maria Padilha may be considered more effective in matters of love and seduction.</p>
+<p id = "para-87">It’s important to note that these ratings are not necessarily fixed or universal, as the perceived power and effectiveness of a particular Exu or Pombagira can vary depending on the individual practitioner or community.</p>
+<h2 id = "link-15">from the pantheon, list the members that can have 900+ (considering all, and not only this list)</h2>
+<p id = "para-88">&lt; It’s difficult to give a comprehensive answer to this question since the members and hierarchy of pantheons can vary greatly depending on the specific religion or tradition. However, I can provide some general information on how certain pantheons work and some examples of powerful deities in various traditions.</p>
+<p id = "para-89">In many pantheons, there may be one or more supreme deities who are considered the most powerful and influential members. For example, in Hinduism, the trimurti of Brahma, Vishnu, and Shiva are often considered the most important gods, with Vishnu being considered the supreme god by some traditions.</p>
+<p id = "para-90">Similarly, in Ancient Egyptian religion, the god Amun was often considered the most powerful and supreme deity, with other gods and goddesses being seen as aspects or manifestations of his power.</p>
+<p id = "para-91">In other pantheons, such as the Greek pantheon, there may not be a single supreme deity, but rather a hierarchy of gods and goddesses with varying levels of power and influence. For example, Zeus is often considered the king of the gods and one of the most powerful members of the pantheon, along with other major gods such as Poseidon, Hades, and Apollo.</p>
+<p id = "para-92">In the Norse pantheon, Odin is often considered the most powerful god, with other major gods such as Thor, Loki, and Freyja also wielding significant power and influence.</p>
+<p id = "para-93">Overall, the idea of a deity having a specific numerical rating may not be a common or universal concept in many pantheons or religious traditions. The power and influence of a deity may be based on a variety of factors such as their role in creation, their relationship to other deities, their ability to control natural forces, and their ability to grant blessings or curses to humans.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

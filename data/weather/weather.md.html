@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">generate a list of 20 English-speaking cities with a pleasant overall yearly weather rating, considering that inhabitants live in the streets with no access to air conditioning or heating, each with a rating of 0-1000</a></li>
+      <li><a href="#link-2">which city that due to circumstances (geographic probably) have a very high population and an unusual bad weather. capiche?</a></li>
+      <li><a href="#link-3">can you rate them for context?</a></li>
+      <li><a href="#link-4">generate a new list from scratch, with the goal ‘yearly pleasant weather overall’, but only considering english speaking cities and that the inhabitant live in the streets (no ac or heating etc). 20 items with rating</a></li>
+      <li><a href="#link-5">list the 20 coldest brazilian cities with a population of &gt;3000 (with yearly average)</a></li>
+      <li><a href="#link-6">Here are 20 coldest Brazilian cities (with state) with a population of more than 3000 people and the average temperature for the year</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p id = "para-1">It’s important to note that assigning a numerical rating to the weather of a city is a highly subjective task, and it will depend on personal preferences and the criteria used to make the assessment. However, based on general consensus and considering factors such as temperature, precipitation, and overall climate, here are 20 cities around the world that could potentially be considered to have weather with a rating higher than 750:</p>
+<p id = "para-2">Honolulu, Hawaii (USA) - 800 San Diego, California (USA) - 790 Santa Cruz de Tenerife, Canary Islands (Spain) - 780 Sydney, Australia - 780 San Francisco, California (USA) - 780 Miami, Florida (USA) - 780 Gold Coast, Australia - 780 Perth, Australia - 780 Adelaide, Australia - 780 Cairns, Australia - 780 Auckland, New Zealand - 775 Los Angeles, California (USA) - 775 Barcelona, Spain - 775 Rio de Janeiro, Brazil - 770 Valencia, Spain - 770 Nice, France - 770 Lisbon, Portugal - 770 San José, Costa Rica - 770 Cape Town, South Africa - 765 Durban, South Africa - 765</p>
+<p id = "para-3">Note that this list is a selection of cities with a high rating, there are many other cities that could have a high rating as well.</p>
+<p class = "rule">***</p>
+<p id = "para-4">Sure, here is a list of 20 cities known for their pleasant weather overall, with a rating out of 1000.</p>
+<p id = "para-5">San Diego, California, USA - 900 Honolulu, Hawaii, USA - 890 Santa Barbara, California, USA - 880 San Francisco, California, USA - 870 Sydney, Australia - 860 Perth, Australia - 850 Gold Coast, Australia - 840 Adelaide, Australia - 830 Auckland, New Zealand - 820 Christchurch, New Zealand - 810 Wellington, New Zealand - 800 Vancouver, Canada - 790 Victoria, Canada - 780 Toronto, Canada - 770 Halifax, Canada - 760 Dublin, Ireland - 750 Cork, Ireland - 740 Galway, Ireland - 730 Edinburgh, Scotland, UK - 720 Bristol, England, UK - 710</p>
+<p id = "para-6">It’s worth noting that, as with any list of this nature, the rankings are somewhat subjective and may vary depending on individual preferences and what people are used to. Also, some of the cities are not exclusively English speaking, but have a significant proportion of English speakers and have English as the official language.</p>
+<p class = "rule">***</p>
+<p id = "para-7">Here is a list of 20 English-speaking cities with a pleasant overall yearly weather rating, considering that inhabitants live in the streets with no access to air conditioning or heating:</p>
+<p id = "para-8">San Diego, California (USA) - rating: 800 Honolulu, Hawaii (USA) - rating: 800 Santa Barbara, California (USA) - rating: 780 Sydney, Australia - rating: 780 Gold Coast, Australia - rating: 770 San Francisco, California (USA) - rating: 760 Brisbane, Australia - rating: 760 Perth, Australia - rating: 750 Adelaide, Australia - rating: 750 Auckland, New Zealand - rating: 750 Wellington, New Zealand - rating: 740 Toronto, Canada - rating: 740 Vancouver, Canada - rating: 740 Victoria, Canada - rating: 730 Cape Town, South Africa - rating: 730 Durban, South Africa - rating: 720 Edinburgh, Scotland (UK) - rating: 720 Dublin, Ireland - rating: 710 Glasgow, Scotland (UK) - rating: 700 London, England (UK) - rating: 700</p>
+<h2 id = "link-1">generate a list of 20 English-speaking cities with a pleasant overall yearly weather rating, considering that inhabitants live in the streets with no access to air conditioning or heating, each with a rating of 0-1000</h2>
+<p id = "para-9">&lt; San Diego, California (USA) - Rating: 900 Sydney, Australia - Rating: 890 Honolulu, Hawaii (USA) - Rating: 880 Barcelona, Spain - Rating: 870 Auckland, New Zealand - Rating: 860 San Francisco, California (USA) - Rating: 850 Rio de Janeiro, Brazil - Rating: 840 Miami, Florida (USA) - Rating: 830 Cape Town, South Africa - Rating: 820 Los Angeles, California (USA) - Rating: 810 Melbourne, Australia - Rating: 800 Perth, Australia - Rating: 790 Honolulu, Hawaii (USA) - Rating: 780 Toronto, Canada - Rating: 770 Vancouver, Canada - Rating: 760 San Juan, Puerto Rico (USA) - Rating: 750 Adelaide, Australia - Rating: 740 Brisbane, Australia - Rating: 730 San Diego, California (USA) - Rating: 720 Perth, Australia - Rating: 710</p>
+<h2 id = "link-2">which city that due to circumstances (geographic probably) have a very high population and an unusual bad weather. capiche?</h2>
+<p id = "para-10">&lt; I understand your question now. There are many cities around the world that have a high population and experience difficult weather conditions due to their geography. Some examples include:</p>
+<p id = "para-11">Moscow, Russia: With a population of over 12 million people, Moscow is one of the largest cities in Europe and is known for its cold and snowy winters. The city’s location in the heart of Russia makes it susceptible to freezing temperatures, with average lows in January reaching -11°C (12°F). Osaka, Japan: With a population of over 19 million people, Osaka is one of the largest cities in Japan and is known for its hot and humid summers. The city’s location on the coast and its proximity to the ocean make it susceptible to typhoons and high humidity, with average temperatures in August reaching 31°C (88°F). Mumbai, India: With a population of over 21 million people, Mumbai is one of the largest cities in India and is known for its heavy monsoon rains. The city’s location on the coast makes it susceptible to flooding and landslides during the rainy season, which typically runs from June to September. Mexico City, Mexico: With a population of over 21 million people, Mexico City is one of the largest cities in Mexico and is known for its high altitude and pollution. The city is located 2,240 meters (7350 ft) above sea level and has a problem with air pollution, which can make it difficult to breathe for some people. It’s important to note that each city has its own set of unique challenges and opportunities, and people living in these cities have adapted to their conditions over time.</p>
+<h2 id = "link-3">can you rate them for context?</h2>
+<p id = "para-12">&lt; Sure, I can rate them based on the weather conditions they experience: Moscow, Russia: I would rate the weather in Moscow as around 550 out of 1000, taking into account the cold and snowy winters, as well as the relatively mild summers. Osaka, Japan: I would rate the weather in Osaka as around 600 out of 1000, taking into account the hot and humid summers, as well as the occasional typhoons. Mumbai, India: I would rate the weather in Mumbai as around 550 out of 1000, taking into account the heavy monsoon rains and the heat and humidity during the rest of the year. Mexico City, Mexico: I would rate the weather in Mexico City as around 600 out of 1000, taking into account the high altitude and pollution, which can make it difficult to breathe for some people. Keep in mind that this is a relative rating and it’s based on the information I have. This rating may vary depending on individual preferences and what people are used to.</p>
+<h2 id = "link-4">generate a new list from scratch, with the goal ‘yearly pleasant weather overall’, but only considering english speaking cities and that the inhabitant live in the streets (no ac or heating etc). 20 items with rating</h2>
+<p id = "para-13">&lt; Here is a list of 20 English-speaking cities with a pleasant overall yearly weather rating, considering that inhabitants live in the streets with no access to air conditioning or heating:</p>
+<p id = "para-14">San Diego, California (USA) - rating: 800 Honolulu, Hawaii (USA) - rating: 800 Santa Barbara, California (USA) - rating: 780 Sydney, Australia - rating: 780 Gold Coast, Australia - rating: 770 San Francisco, California (USA) - rating: 760 Brisbane, Australia - rating: 760 Perth, Australia - rating: 750 Adelaide, Australia - rating: 750 Auckland, New Zealand - rating: 750 Wellington, New Zealand - rating: 740 Toronto, Canada - rating: 740 Vancouver, Canada - rating: 740 Victoria, Canada - rating: 730 Cape Town, South Africa - rating: 730 Durban, South Africa - rating: 720 Edinburgh, Scotland (UK) - rating: 720 Dublin, Ireland - rating: 710 Glasgow, Scotland (UK) - rating: 700 London, England (UK) - rating: 700</p>
+<p id = "para-15">This list considers factors such as temperature, humidity, and precipitation to rate the pleasantness of the weather. It should be noted that this list is based on a general assessment and individual preferences may vary. Also, it’s important to remember that living in the streets with no access to air conditioning or heating can make the weather experience more difficult and the score may be different.</p>
+<h2 id = "link-5">list the 20 coldest brazilian cities with a population of &gt;3000 (with yearly average)</h2>
+<p id = "para-16">&lt; Brazil is mostly located in the tropics, so its cities do not generally have extremely cold temperatures. However, there are some places in Brazil that have cooler climates, here are 20 Brazilian cities with a population of over 3000 that have the lowest average temperatures, listed in ascending order:</p>
+<p id = "para-17">São Joaquim - population: 13,000 - average temperature: 8°C (46°F) Urupema - population: 4,000 - average temperature: 8.5°C (47°F) Urubici - population: 7,000 - average temperature: 9°C (48°F) Bombinhas - population: 12,000 - average temperature: 10°C (50°F) Pomerode - population: 36,000 - average temperature: 10.5°C (51°F) São Francisco de Paula - population: 7,000 - average temperature: 11°C (52°F) Canela - population: 27,000 - average temperature: 11.5°C (53°F) Lages - population: 300,000 - average temperature: 12°C (54°F) Cambará - population: 7,000 - average temperature: 12.5°C (55°F) Torres - population: 18,000 - average temperature: 13°C (55°F) Garopaba - population: 15,000 - average temperature: 13.5°C (56°F) Campos do Jordão - population: 50,000 - average temperature: 14°C (57°F) Blumenau - population: 500,000 - average temperature: 14.5°C (58°F) Bento Gonçalves - population: 100,000 - average temperature: 15°C (59°F) Caxias do Sul - population: 500,000 - average temperature: 15.5°C (60°F) Joinville - population: 500,000 - average temperature: 16°C (61°F) Gramado - population: 27,000 - average temperature: 16.5°C (62°F) Florianópolis - population: 500,000 - average temperature: 17°C (63°F) Pelotas - population: 300,000 - average temperature: 17.5°C (64°F) Santa Maria - population: 300,000 - average temperature: 18°C (64°F)</p>
+<p id = "para-18">Please note that the population data is approximate and based on my knowledge cutoff and this data might not be accurate.</p>
+<h2 id = "link-6">Here are 20 coldest Brazilian cities (with state) with a population of more than 3000 people and the average temperature for the year</h2>
+<p id = "para-19">São Joaquim, Santa Catarina - Average temperature: 6.5 °C Urupema, Santa Catarina - Average temperature: 7.3 °C Ponte Nova, Minas Gerais - Average temperature: 7.5 °C Urubici, Santa Catarina - Average temperature: 8.1 °C São José dos Ausentes, Rio Grande do Sul - Average temperature: 8.1 °C São Bento do Sapucaí, São Paulo - Average temperature: 8.4 °C Cambará, Paraná - Average temperature: 8.5 °C Campos do Jordão, São Paulo - Average temperature: 8.6 °C São Francisco de Paula, Rio Grande do Sul - Average temperature: 8.7 °C Campina Grande do Sul, Paraná - Average temperature: 8.7 °C São Miguel do Oeste, Santa Catarina - Average temperature: 8.8 °C Monte Verde, Minas Gerais - Average temperature: 8.9 °C Pouso Redondo, Santa Catarina - Average temperature: 9.0 °C São Francisco de Sales, Minas Gerais - Average temperature: 9.1 °C Poços de Caldas, Minas Gerais - Average temperature: 9.1 °C São José do Cedro, Santa Catarina - Average temperature: 9.1 °C São Lourenço, Minas Gerais - Average temperature: 9.2 °C São José do Cerrito, Santa Catarina - Average temperature: 9.2 °C Cambuquira, Minas Gerais - Average temperature: 9.3 °C São Lourenço do Oeste, Santa Catarina - Average temperature: 9.3 °C</p>
+<p id = "para-20">Please note that the temperature data is approximate and based on my knowledge cutoff and this data might not be accurate.</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>
