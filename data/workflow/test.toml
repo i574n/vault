@@ -110,7 +110,7 @@ metadata = { title = "A token", description = "A unique token", media = "ipfs://
 
 [nft.token."2"]
 owner_id = "bob.near"
-metadata = { title = "Another token", description = "Another unique token", media = "ipfs://67890", media_hash = "8JIkpq...", copies = 1 }
+metadata = { title = "Another token", description = "Another unique token", media = "ipfs://67890", media_hash = "8JIkpr...", copies = 1 }
 
 [nft.owner."alice.near"]
 tokens = ["1"]
