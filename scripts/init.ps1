@@ -5,6 +5,8 @@ Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
 
 
+sudo apt install -y texlive-xetex
+
 try {
     cargo +nightly install crowbook
 } catch {
