@@ -5,14 +5,6 @@ Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
 
 
-sudo apt install -y texlive-xetex
-
-try {
-    cargo +nightly install crowbook
-} catch {
-    Write-Host "Exception: '$_' / Error: '$Error'"
-}
-
 New-Item -ItemType Directory -Path "../target/scripts" -Force | Out-Null
 
 $retryCount = 0
@@ -51,3 +43,9 @@ if ($Error.Count -gt 0) {
     throw "Failed to download files / Error: '$Error'"
     exit 1
 }
+
+
+{ sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
+{ sudo apt install -y texlive-xetex } | Invoke-Block -Linux -Distro ubuntu
+
+{ cargo +nightly install crowbook } | Invoke-Block -OnError Continue
