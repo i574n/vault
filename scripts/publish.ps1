@@ -39,6 +39,7 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
 }
 
 git fetch --prune --all --verbose
+git fetch --prune --all --verbose
 git clone --branch gh-pages --single-branch .. ../target/gh-pages
 
 $distRoot = (Resolve-Path ../dist/).Path
