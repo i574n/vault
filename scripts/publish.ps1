@@ -39,8 +39,11 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
 }
 
 git fetch --prune --all --verbose
-git fetch --prune --all --verbose
-git clone --branch gh-pages --single-branch .. ../target/gh-pages
+
+$ghPages = "../target/gh-pages"
+if (!(Test-Path $ghPages)) {
+    git clone --single-branch (Resolve-Path ..) --branch gh-pages "$ghPages"
+}
 
 $distRoot = (Resolve-Path ../dist/).Path
 
@@ -58,9 +61,17 @@ Get-ChildItem -Path ../dist -Recurse -Force `
         crowbook --single "$($_.FullName)" --output "$($_.FullName).pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
         crowbook --single "$($_.FullName)" --output "$($_.FullName).epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
     } else {
-        Move-Item "../target/gh-pages/$relative.html" "../dist/$relative.html"
-        Move-Item "../target/gh-pages/$relative.pdf" "../dist/$relative.pdf"
-        Move-Item "../target/gh-pages/$relative.epub" "../dist/$relative.epub"
+        $files = @(
+            @("$ghPages/$relative.html", "../dist/$relative.html"),
+            @("$ghPages/$relative.pdf", "../dist/$relative.pdf"),
+            @("$ghPages/$relative.epub", "../dist/$relative.epub")
+        )
+
+        foreach ($file in $files) {
+            if ((Test-Path $file[0]) -and !(Test-Path $file[1])) {
+                Copy-Item $file[0] $file[1]
+            }
+        }
     }
 }
 
