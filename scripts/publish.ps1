@@ -44,18 +44,13 @@ $distRoot = (Resolve-Path ../dist/).Path
 Get-ChildItem -Path ../dist -Recurse -Force `
 | Where-Object { $_.Extension -eq ".md" } `
 | ForEach-Object {
-    Write-Output "$($_.FullName)"
-
     $relative = $_.FullName.Replace($distRoot, '').Replace("\", "/")
-    echo "relative: $relative"
 
     $originHash = git ls-tree --format='%(objectname)' origin/gh-pages ../$relative
-    echo "originHash: $originHash"
-
     $localGitHash = git hash-object $_.FullName
-    echo "localGitHash: $localGitHash"
 
     if ($localGitHash -ne $originHash) {
+        Write-Output "$($_.FullName)"
         crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
         crowbook --single "$($_.FullName)" --output "$($_.FullName).pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
         crowbook --single "$($_.FullName)" --output "$($_.FullName).epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
