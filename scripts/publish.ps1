@@ -39,6 +39,8 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
 }
 
 git fetch --prune --all --verbose
+git clone --branch gh-pages --single-branch .. ../target/gh-pages
+
 $distRoot = (Resolve-Path ../dist/).Path
 
 Get-ChildItem -Path ../dist -Recurse -Force `
@@ -54,6 +56,10 @@ Get-ChildItem -Path ../dist -Recurse -Force `
         crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
         crowbook --single "$($_.FullName)" --output "$($_.FullName).pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
         crowbook --single "$($_.FullName)" --output "$($_.FullName).epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+    } else {
+        Move-Item "../target/gh-pages/$relative.html" "../dist/$relative.html"
+        Move-Item "../target/gh-pages/$relative.pdf" "../dist/$relative.pdf"
+        Move-Item "../target/gh-pages/$relative.epub" "../dist/$relative.epub"
     }
 }
 
