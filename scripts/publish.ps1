@@ -18,10 +18,12 @@ rsync -av `
     --include 'LICENSE' `
     --include '*.editorconfig' `
     --include '*.edn' `
+    --include '*.epub' `
     --include '*.gitignore' `
     --include '*.json' `
     --include '*.html' `
     --include '*.md' `
+    --include '*.pdf' `
     --include '*.ps1' `
     --include '*.toml' `
 `
@@ -36,7 +38,11 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
     Rename-Item -Path $_.FullName -NewName "_$($_.Name)"
 }
 
-Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Extension -eq ".md" } | ForEach-Object { crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } ''' }
+Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Extension -eq ".md" } | ForEach-Object {
+    crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+    crowbook --single "$($_.FullName)" --output "$($_.FullName).pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+    crowbook --single "$($_.FullName)" --output "$($_.FullName).epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+}
 
 $retryCount = 0
 Write-Host "## 1"
