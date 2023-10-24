@@ -38,6 +38,8 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
     Rename-Item -Path $_.FullName -NewName "_$($_.Name)"
 }
 
+git fetch --prune --all --verbose
+
 $ghPages = "../target/gh-pages"
 if (!(Test-Path $ghPages)) {
     git clone $(git ls-remote --get-url origin) --branch gh-pages "$ghPages"
