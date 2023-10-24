@@ -38,10 +38,44 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
     Rename-Item -Path $_.FullName -NewName "_$($_.Name)"
 }
 
-Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Extension -eq ".md" } | ForEach-Object {
-    crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
-    crowbook --single "$($_.FullName)" --output "$($_.FullName).pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
-    crowbook --single "$($_.FullName)" --output "$($_.FullName).epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+git fetch --prune --all --verbose
+
+$ghPages = "../target/gh-pages"
+if (!(Test-Path $ghPages)) {
+    git clone $(git ls-remote --get-url origin) --branch gh-pages "$ghPages"
+    if (!(Test-Path $ghPages)) {
+        exit 1
+    }
+}
+
+$distRoot = (Resolve-Path ../dist/).Path
+
+Get-ChildItem -Path ../dist -Recurse -Force `
+| Where-Object { $_.Extension -eq ".md" } `
+| ForEach-Object {
+    $relative = $_.FullName.Replace($distRoot, '').Replace("\", "/")
+
+    $originHash = git ls-tree --format='%(objectname)' origin/gh-pages ../$relative
+    $localGitHash = git hash-object $_.FullName
+
+    if ($localGitHash -ne $originHash) {
+        Write-Output "$($_.FullName)"
+        crowbook --single "$($_.FullName)" --output "$($_.FullName).html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+        crowbook --single "$($_.FullName)" --output "$($_.FullName).pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+        crowbook --single "$($_.FullName)" --output "$($_.FullName).epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
+    } else {
+        $files = @(
+            @("$ghPages/$relative.html", "../dist/$relative.html"),
+            @("$ghPages/$relative.pdf", "../dist/$relative.pdf"),
+            @("$ghPages/$relative.epub", "../dist/$relative.epub")
+        )
+
+        foreach ($file in $files) {
+            if ((Test-Path $file[0]) -and !(Test-Path $file[1])) {
+                Copy-Item $file[0] $file[1]
+            }
+        }
+    }
 }
 
 $retryCount = 0
