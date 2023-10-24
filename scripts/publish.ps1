@@ -38,11 +38,12 @@ Get-ChildItem -Path ../dist -Recurse -Force | Where-Object { $_.Name.StartsWith(
     Rename-Item -Path $_.FullName -NewName "_$($_.Name)"
 }
 
-git fetch --prune --all --verbose
-
 $ghPages = "../target/gh-pages"
 if (!(Test-Path $ghPages)) {
-    git clone --single-branch (Resolve-Path ..) --branch gh-pages "$ghPages"
+    git clone $(git ls-remote --get-url origin) --branch gh-pages "$ghPages"
+    if (!(Test-Path $ghPages)) {
+        exit 1
+    }
 }
 
 $distRoot = (Resolve-Path ../dist/).Path
