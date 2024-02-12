@@ -49,6 +49,8 @@
   ],
   "useTab": false,
   "userIgnoreFilters": [
-    "dist/"
+    "dist/",
+    "target/",
+    "/^dist\\/.*?$/"
   ]
 }

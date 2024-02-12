@@ -3,11 +3,14 @@
   "addToContextMenu": true,
   "createInstanceNearExistingOnes": true,
   "errorNoticeTimeout": 0,
+  "exposeInternalModules": true,
+  "focusOnNewInstance": true,
   "hideStatusBar": "focused",
   "language": "",
-  "lastReadChangelogVersion": "3.3.0",
   "newInstanceBehavior": "newHorizontalSplit",
   "noticeTimeout": 5,
+  "openChangelogOnUpdate": true,
+  "pinNewInstance": true,
   "preferredRenderer": "webgl",
   "profiles": {
     "darwinExternalDefault": {
@@ -19,6 +22,13 @@
       "platforms": {
         "darwin": true
       },
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "external"
     },
     "darwinIntegratedDefault": {
@@ -29,11 +39,25 @@
         "darwin": true
       },
       "pythonExecutable": "python3",
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "integrated",
       "useWin32Conhost": true
     },
     "developerConsole": {
       "name": "",
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "developerConsole"
     },
     "linuxExternalDefault": {
@@ -43,6 +67,13 @@
       "platforms": {
         "linux": true
       },
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "external"
     },
     "linuxIntegratedDefault": {
@@ -53,6 +84,13 @@
         "linux": true
       },
       "pythonExecutable": "python3",
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "integrated",
       "useWin32Conhost": true
     },
@@ -63,6 +101,13 @@
       "platforms": {
         "win32": true
       },
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "external"
     },
     "win32IntegratedDefault": {
@@ -73,9 +118,15 @@
         "win32": true
       },
       "pythonExecutable": "python3",
+      "restoreHistory": true,
+      "successExitCodes": [
+        "0",
+        "SIGINT",
+        "SIGTERM"
+      ],
+      "terminalOptions": {},
       "type": "integrated",
       "useWin32Conhost": true
     }
-  },
-  "recovery": {}
+  }
 }
