@@ -7,8 +7,11 @@ on:
 
 jobs:
   build:
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v4
 
@@ -20,6 +23,12 @@ jobs:
       - uses: ATiltedTree/setup-rust@v1
         with:
           rust-version: nightly
+
+      - uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget2-${{ hashFiles('**/paket.lock') }}
+          restore-keys: ${{ runner.os }}-nuget2-
 
       - uses: actions/cache@v3
         with:

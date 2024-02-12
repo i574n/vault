@@ -78,15 +78,5 @@ Get-ChildItem -Path ../dist -Recurse -Force `
     }
 }
 
-
-Set-Location (New-Item -ItemType Directory -Path "../.." -Force)
-git clone --recurse-submodules https://github.com/i574n/polyglot.git
-Set-Location polyglot
-git pull
-
-pwsh apps/dir-tree-html/build.ps1
-
-Set-Location $ScriptDir
-
 $fileName = "DirTreeHtml$(GetExecutableSuffix)"
 { . ../../polyglot/apps/dir-tree-html/dist/$fileName --dir ../dist --html ../dist/index.html } | Invoke-Block
