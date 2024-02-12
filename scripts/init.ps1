@@ -12,6 +12,9 @@ git pull
 
 pwsh scripts/init.ps1
 
+pwsh apps/builder/build.ps1
+pwsh apps/parser/build.ps1
+pwsh lib/fsharp/build.ps1
 pwsh apps/dir-tree-html/build.ps1
 
 Set-Location $ScriptDir
