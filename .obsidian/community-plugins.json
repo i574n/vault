@@ -9,7 +9,21 @@
   "obsidian-tasks-plugin",
   "babashka",
   "obsidian-html-plugin",
-  "obsidian-custom-file-extensions-plugin",
   "obsidian-plugin-toc",
-  "better-word-count"
+  "better-word-count",
+  "novel-word-count",
+  "reveal-active-file-button",
+  "file-indicators",
+  "obsidian-custom-file-extensions-plugin",
+  "obsidian-prominent-starred-files",
+  "key-promoter",
+  "dataview",
+  "obsidian-kanban",
+  "calendar",
+  "obsidian-mind-map",
+  "obsidian-day-planner",
+  "recent-files-obsidian",
+  "obsidian-annotator",
+  "obsidian-checklist-plugin",
+  "obsidian-linter"
 ]

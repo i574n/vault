@@ -1,0 +1,27 @@
+{
+  "showUnassigned": true,
+  "showAssigned": true,
+  "threshold": 0,
+  "notificationTimeout": 5,
+  "template": "{{commandId}} - {{commandName}} - {{hotkey}}",
+  "descriptionOfActions": false,
+  "mouseStatistics": {
+    "editor:open-link-in-new-leaf": 2,
+    "workspace:new-tab": 2,
+    "app:toggle-default-new-pane-mode": 2,
+    "workspace:undo-close-pane": 3,
+    "obsidian-git:backup-and-close": 3,
+    "workspace:close": 3,
+    "workspace:close-window": 3,
+    "workspace:close-others": 3,
+    "workspace:close-tab-group": 3,
+    "workspace:close-others-tab-group": 3,
+    "workspace:copy-path": 22,
+    "workspace:copy-url": 22,
+    "file-explorer:duplicate-file": 22,
+    "obsidian-linter:paste-as-plain-text": 1
+  },
+  "keyboardStatistics": {
+    "file-explorer:new-file": 3
+  }
+}
