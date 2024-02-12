@@ -3,7 +3,7 @@ param(
 )
 Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
-. ../target/scripts/core.ps1
+. ../../polyglot/scripts/core.ps1
 
 
 Remove-Item ../dist -Recurse -Force -ErrorAction Ignore
