@@ -1,11 +1,9 @@
 # Filipe Carvalho
 
 <https://github.com/fc1943s>  
-fc1943s@gmail.com  
+<fc1943s@gmail.com>  
 <https://linkedin.com/in/fc1943s>  
-+55 11 97891 3198
-
-\* The wording used in this text was generated using OpenAI's ChatGPT.
++55 19 99516 8079
 
 ## PROFESSIONAL EXPERIENCE
 
@@ -13,117 +11,177 @@ fc1943s@gmail.com
 Jan 2022 – Aug 2022  
 Data Engineer
 
-I worked on a project aimed at analyzing customer behavior and predicting sales trends. I conducted experiments using Google Colab for efficient computation. I used Elixir and Ecto to extract data from Oracle databases and preprocessed it with Explorer, storing it in Parquet format for later analysis. For data preparation, I employed NVTabular and pandas, and I used fast.ai and PyTorch for optimizing machine learning models. I also created interactive visualizations using Vega-Lite in Livebook and Phoenix.
+- Worked on a project aimed at analyzing customer behavior and predicting sales trends.
+- Used Elixir and Ecto to extract data from Oracle databases and preprocessed it with Explorer, storing it in Parquet format for speedy analysis.
+- Utilized fast.ai and PyTorch for optimizing deep learning models.
+- Employed pandas and NVTabular for data preparation.
+- Conducted experiments using Google Colab for GPU computation.
+- Created interactive visualizations using Vega-Lite in Livebook and Phoenix.
 
-Technologies used: Elixir, Livebook, Ecto, Explorer, Phoenix, Vega-Lite, Oracle, Parquet, Python, PyTorch, fast.ai, NVTabular, pandas, Colab.
+Technologies used: Elixir, Livebook, Explorer, Vega-Lite, Ecto, Phoenix, Oracle, Parquet, Python, PyTorch, fast.ai, NVTabular, pandas, Colab.
+
+<br />
 
 **BairesDev**  
 Aug 2020 – Mar 2021  
 Frontend Engineer
 
-I led the frontend development of a customer-facing mortgage simulator and initiated the architecture for a frontend rewrite of an internal mortgage ERP SaaS for a US startup. My team and I worked remotely, conducting Scrum meetings in English across multiple time zones. I implemented the project using functional React and built the interface with Chakra UI. The application featured complex auto-save functionality, secure handling of customer-sensitive information and interactive charts with price calculations. I used Sketch and Figma for screen mockups, which were accessible through InVision. The frontend logic was generated from TypeScript files that modeled the business classes from the C# backend and was documented using Storybook. I also built the applications with full support for dark and light themes and included unit tests using Jest and integration tests with Cypress. For state management, I used Recoil.js and for data fetching I used SWR and Axios. Finally, I organized frontend applications and packages using Lerna in a company-wide monorepo.
+- Led the frontend development of a customer-facing mortgage simulator and initiated the architecture for a frontend rewrite of an internal mortgage ERP SaaS for a US startup.
+- Collaborated with a remote team across multiple time zones, conducting Scrum meetings in English.
+- Implemented the project using functional React and developed the interface with Chakra UI. The components were documented with Storybook for clear and interactive visualization.
+- Ensured the application featured auto-save functionality, secure handling of customer-sensitive information, and interactive charts with price calculations.
+- The designers used Sketch and Figma for creating screen mockups, making them accessible through InVision.
+- Automated the generation of TypeScript files from C# business classes for the frontend logic.
+- Built the applications with full support for dark and light themes, including unit tests with Jest and integration tests with Cypress.
+- Employed Recoil.js for state management and used SWR and Axios for data fetching.
+- Organized the frontend packages using Lerna in a company-wide monorepo.
 
-Technologies used: TypeScript, React, Recoil.js, Chakra UI, airbnb/visx, d3, Jest, Cypress, InVision, Storybook, Lerna, Scrum, REST, JWT, ASP.NET Core, C#, BitBucket, NSwag, Git.
+Technologies used: TypeScript, React, Chakra UI, Recoil.js, visx, d3, Jest, Cypress, InVision, Storybook, Lerna, JWT, C#, NSwag.
+
+<br />
 
 **BTG Pactual**  
 May 2020 – Jul 2020  
 Software Engineer
 
-I worked in the credit risk unit developing the trading system that emits loans requested by customers of the bank. I helped rewriting the cash flow generator algorithm in the frontend to support a new type of amortization schedule and developed a bulk data ingestion from an Excel template. I also helped write new e2e testing algorithms for the backend architecture using xUnit and InMemory features of the MassTransit (RabbitMQ) library. The backend stored data in SQL Server with NHibernate and used PostgreSQL, providing data through OData and JSON, consumed by the frontend with DevExpress components. I worked remotely following the Scrum methodology and the CI pipeline was already configured.
+- Worked in the credit risk unit on the development of a trading system for emitting loans requested by bank customers.
+- Contributed to rewriting the cash flow generator algorithm in the frontend to support a new type of amortization schedule. Also developed a method for bulk data ingestion from an Excel template.
+- Assisted in writing new end-to-end testing algorithms for the backend architecture using xUnit and the InMemory features of the MassTransit (RabbitMQ) library.
+- Storage solutions used SQL Server with NHibernate and PostgreSQL for data provision through OData and JSON, consumed by the frontend with DevExpress components.
+- Worked remotely, adhering to the Scrum methodology.
 
-Technologies used: Angular, ASP.NET Core, AWS, Azure DevOps, C#, CQRS, DDD, DevExpress, Git, NgRx, NHibernate, OData, PostgreSQL, RabbitMQ, Scrum, SQL Server, TypeScript.
+Technologies used: TypeScript, Angular, AWS, Azure, C#, SQL Server, CQRS, DevExpress, NgRx, PostgreSQL, RabbitMQ.
+
+<br />
 
 **HBSIS / Ambev**  
 Nov 2016 – Aug 2018  
 Senior Software Architect
 
-Developed the architecture of Ambev's vehicle fleet manager for the distribution units nationally, the project was a rewrite of an old application that was not supporting the number of simultaneous requests in the morning and late afternoon. I was responsible for the back-end and the DevOps pipelines, which included Docker cluster configuration and monitoring, hosted on-premises with Ambev's private cloud partner. The architecture lacked elasticity, so we focused on lifecycle management to make sure there were simultaneous clusters of different projects working with proper environment separation. The scripts were initially written in bash, but were later restructured into a Node.js CLI project that interacted with the Docker API through HTTP async requests. The CLI was used on developer machines and by Jenkins to easily deploy the application between different Docker clusters.
+- Developed the architecture for Ambev's vehicle fleet manager, aimed at improving request handling capacity during peak morning and late afternoon times for distribution units nationally, entailing in a rewrite of an older application to enhance performance.
+- Took responsibility for the back-end and DevOps pipelines, focusing on Docker cluster configuration and monitoring. These were hosted on-premises in collaboration with Ambev's private infrastructure partner.
+- Addressed the architecture's lack of elasticity by concentrating on lifecycle management, ensuring proper environment separation and simultaneous operation of clusters for different projects.
+- Initiated with scripts written in bash, later transitioning to a more structured approach by developing a Node.js CLI project. These tools facilitated interaction with the Docker and Jenkins APIs through HTTP async requests, enhancing deployment processes.
 
-Technologies used: Docker, Linux, C#, ASP.NET Core, Entity Framework Core, PostgreSQL, TypeScript, Angular, Node.js, CQRS, DDD, Jenkins DSL, Git, Grafana, Prometheus, Scrum.
+Technologies used: C#, PostgreSQL, On-prem DevOps, Grafana, Prometheus, Jenkins, TypeScript, Angular, Node.js.
+
+<br />
 
 **Evolucional**  
 Jun 2016 – Nov 2016  
 Senior Software Engineer
 
-As a full-stack engineer, I worked on the core product of the company, which was a simulation test platform for students predicting their grades in the national university admission exam (ENEM). I participated in both the front and backend, including the UI for students to take the test and the business logic that rated their grades using the item response theory mathematical model. I also worked on a small application that parsed scanned images of tests. I followed the Scrum methodology and collaborated with a talented team of frontend designers, hosted on AWS EC2 instances, and stored images on S3. The algorithms for extracting data were implemented in ASP.NET MVC services, with calculation results cached inside Redis for fast reporting.
+- Served as an engineer on the company's core product, a simulation test platform for students to predict their grades in the national university admission exam (ENEM).
+- Engaged in the development of both frontend and backend components, including the user interface for student assessments and the implementation of business logic using the item response theory (IRT) mathematical model.
+- Developed a specialized application for parsing scanned images of tests, enhancing the platform's functionality.
+- Adhered to the Scrum methodology within a collaborative environment, working closely with a team of frontend designers and DBAs.
+- Hosting used AWS EC2 instances with S3 for image storage, optimizing resource utilization and data management.
+- Implemented data extraction algorithms in ASP.NET services, with calculation results efficiently cached in Redis to ensure rapid reporting capabilities.
 
-Technologies used: C#, Entity Framework, SQL Server, Redis, JavaScript, AngularJS, HTML, CSS, AWS.
+Technologies used: C#, SQL Server, Redis, JavaScript, Angular, AWS.
+
+<br />
 
 **ESX**  
 Jan 2016 – Jun 2016  
 Mobile Engineer
 
-As part of a three-developer team, I developed a mobile app from scratch to production for a large health insurance company. The app provided customers with access to their current plan, support tickets, doctor appointment locations, monthly bills, and more. It had internal authentication and Facebook login support. I was involved in both the front and backend, and we published the app on both the Play and Apple stores. I participated in on-site Scrum meetings, including planning, retrospective, and review meetings with the client, who served as the product owner. The backend was an ASP.NET MVC application serving as a REST API for the mobile app, connecting to a SQL Server database populated by another large project. The frontend was built using AngularJS v1 for structure and OnsenUI with SASS for components, with Apache Cordova wrapping the JS code for responsivity.
+- Collaborated as part of a three-developer team to develop and launch a mobile app for a large health insurance company, covering the entire development lifecycle from concept to production.
+- The app offered customers access to their current plan, support tickets, doctor appointment locations, monthly bills, among other features.
+- Integrated internal authentication mechanisms and Facebook login support.
+- Played a key role in both frontend and backend development, contributing to the app's availability on both the Play Store and Apple Store.
+- Traveled for on-site Scrum meetings, including planning, retrospective, and review sessions with the client, who acted as the product owner.
+- The backend was developed as an ASP.NET application, functioning as a REST API for the mobile app and interfacing with a SQL Server database linked to another extensive project.
+- Frontend development utilized Angular for structural framework and OnsenUI with SASS for component design, with Apache Cordova employed to wrap the JavaScript code, ensuring app responsiveness across devices.
 
-Technologies used: JavaScript, Apache Cordova, AngularJS, HTML, CSS, C#, ASP.NET MVC, Entity Framework, SQL Server, BDD, Git, OnsenUI, SASS, Scrum.
+Technologies used: JavaScript, Cordova, Angular, C#, SQL Server, BDD, OnsenUI.
+
+<br />
 
 **Opção Virtual**  
 Apr 2012 – Dec 2015  
 Senior Software Architect
 
-During the first six months, I developed a native Android app for point-of-sale, integrating with their main ERP product. The backend was written in Java and shared business code with the Android app. I also worked on the ERP solution, focusing on architecture and DevOps. I implemented Git company-wide and guided the team until they became comfortable with it. I also implemented Scrum methodologies and set up Jira for the team. The ERP was a large desktop application used by hundreds of companies, sharing code between Delphi and C#, presenting important challenges for continuous integration, including updating binaries for all customers. I developed a solution to automatically update the product for each customer, tracking versions for diagnosis.
+- Contributed mainly to the ERP solution, with a focus on refining coding standards and reuse across all screens and calculation routines.
+- Led the company-wide implementation of Git, providing training and support to ensure the team's proficiency and comfort with the version control system.
+- Introduced and implemented Scrum methodologies to improve project management and collaboration, further integrating Jira for enhanced team coordination and task tracking.
+- Addressed the challenges of continuous integration for the desktop ERP application, which involved sharing code between Delphi and C# and required sophisticated solutions for updating binaries across all customer installations.
+- Engineered an automated update mechanism for the products, ensuring efficient version tracking and diagnosis for each customer, significantly reducing manual oversight.
 
-Technologies used: Android, C#, Continuous Integration, Delphi, DevExpress, Git, Java, Jira, Maven, Oracle, SVN.
+Technologies used: Delphi, DevExpress, Oracle, On-prem DevOps.
+
+<br />
 
 **H7 Tecnologia da Informação**  
 Aug 2011 – Apr 2012  
 Software Engineer
 
-I worked mainly on backend development for websites using PHP and Zend Framework. The websites ranged from single-page applications to full-fledged systems with custom administration tools, serving existing ERP customers. With designers prototyping the layouts in Photoshop, my front-end focus was on translating the images into a structure compatible with the backend endpoints.
+- Specialized in development for a variety of websites, utilizing PHP and Zend Framework. The projects spanned from single-page applications to comprehensive systems equipped with custom administration tools, aimed at enhancing the experience for existing ERP customers.
+- Collaborated closely with designers who prototyped website layouts in Photoshop, focusing on translating these designs into structures compatible for integration between frontend and backend functionalities.
 
-Technologies used: CSS, HTML, JavaScript, jQuery, MySQL, PHP, SQLite, SVN, Visual Basic.
+Technologies used: PHP, SQLite, JavaScript, VB, MySQL.
+
+<br />
 
 **HE Sistemas Empresariais**  
 Dec 2010 – Jun 2011  
 Software Engineer
 
-I developed a website for one of the company’s ERP customers that integrated with the ERP through REST APIs, synchronizing product information such as prices and images. I also fixed issues in the ERP written in Visual Basic and in a Windows Phone point-of-sale app written in C#.
+- Developed a website for an ERP customer, achieving seamless integration with the ERP system through REST APIs. This integration facilitated the synchronization of essential product information, including prices and images.
+- Addressed and resolved issues within the ERP system, which was written in Visual Basic.
+- Contributed to the maintenance of a Windows Phone point-of-sale application written in C#.
 
-Technologies used: JavaScript, jQuery, HTML, CSS, MySQL, PHP, SQLite, SVN, Visual Basic, C#.
+Technologies used: VB, MySQL, PHP, SQLite, JavaScript, C#.
+
+<br />
 
 **Interactive Studio Web**  
 Aug 2007 – Mar 2008  
 Web Developer
 
-I developed the backend in PHP for Flash websites and some of the ActionScript code of the frontend. The websites were highly interactive and animated and the clients ranged from furniture stores to country music singers.
+- Developed the backend in PHP for highly immersive and interactive Flash websites.
+- Contributed to the frontend by writing ActionScript code, enhancing user engagement through sophisticated animations.
 
-Technologies used: ActionScript, Flash, PHP.
+Technologies used: PHP, ActionScript, Flash.
 
 ## INDEPENDENT EXPERIENCE
 
-**Spiral Wasm Template**  
-May 2022 – Jan 2023  
-<https://github.com/fc1943s/tictactoe/blob/main/lib_spi/client/client.rs>
+**i574n**  
+Sep 2022 – Present  
+<https://github.com/i574n>
 
-Working on a template that uses Rust to build a high-performance web-based platform.
+- Led architectural efforts for a polyglot programming approach, embracing literate programming principles and leveraging Spiral in a unified compilation pipeline for software engineering innovations.
+- Integrated functional programming with modern software development techniques, focusing on cross-platform, cross-language compatibility, including F# and Rust compilation.
+- Published smart contracts with Spiral on blockchain platforms like NEAR Protocol, showcasing the language's readiness for market immersion.
+- Implemented web frontends based on Spiral and Rust WebAssembly libraries like Leptos, highlighting cross-language compilation capabilities.
+- Spearheaded educational initiatives with comprehensive documentation, tutorials, and real-world test cases for Spiral, including complex physics simulations and domain modeling utilizing recursive discriminated union relationships.
+- Forked and contributed to significant open-source projects such as the Fable compiler, .NET Interactive, .NET REPL, and the Spiral compiler itself, demonstrating a commitment to advancing software development tools and languages.
 
-Technologies used: Spiral, F#, Fable, Rust, Dominator, WebAssembly, Playwright, Bun, Vite.
+Technologies used: F#, Spiral, Rust, PowerShell, Jupyter, NEAR Protocol, Leptos, WebAssembly, Tailwind, Playwright.
+
+<br />
 
 **Mecha Haze**  
 Aug 2018 – Apr 2020  
 <https://github.com/fc1943s/mechahaze>
 
-On the project I had the opportunity to apply new technologies such as functional programming and learn the basics of deep learning. The project was written in F#, except for the neural network code which was written in Python. The end result was a video representation of any BPM-based song, with fully customizable parameters such as shapes and colors linked to features like volume, pitch, notes, and melodies. The neural network was retrained using transfer learning with a custom dataset from music producer friends. Each layer of the songs (drums, synthesizers, and vocals) were trained separately and transformed into metadata for real-time rendering.
+- Utilized functional programming with F# for the project's main development, with the neural network component coded in Python with the Open-Unmix library.
+- Achieved a video representation output for BPM-based songs, featuring fully customizable visual parameters such as shapes and colors that respond to music features like volume, pitch, notes, and melodies.
+- Employed transfer learning to retrain the neural network, utilizing a custom dataset provided by music producer colleagues. This approach facilitated the separate training of each song layer (drums, synthesizers, vocals) and their transformation into metadata for real-time rendering.
+- Designed the application for real-time operation through the integration of three microservices: an audio listener daemon for device-wide audio output monitoring, a backend for command reception and cluster state updates via RabbitMQ messages, and a feature dispatcher daemon for the visual rendering of songs in Resolume Arena using OSC.
+- Developed the frontend using React and F#, implementing Elmish — a pattern akin to Redux — for state management. Ensured communication between frontend and backend via WebSockets, enabling live updates of song positions. Every audio layer connected interactively with sound features through a react-diagrams component.
 
-The application was designed to work in real-time, with three microservices working together - an audio listener daemon that listens to the device's global audio output, a backend that receives commands from the frontend and updates the cluster state using RabbitMQ messages, and a feature dispatcher daemon that renders the visual representation of the detected song in Resolume Arena. The frontend was written in React and F# and used Elmish, a pattern similar to Redux, to manage the shared state. Communication between the frontend and backend was through WebSockets, where the frontend receives the current song position in milliseconds. Every audio layer could be connected to sound features interactively using a component called react-diagrams. The frontend was built to run on browsers and could be built using Electron for optimizations.
+Technologies used: F#, RabbitMQ, React, Bulma, LMDB, OSC, peaks.js, plotly.js, Python, PyTorch, Resolume Arena.
 
-Technologies used: F#, RabbitMQ, React, Bulma, LMDB, OSC, peaks.js, plotly.js, Python, PyTorch, Resolume Arena, Git.
+<br />
 
 **Freelance Web Development**  
 Mar 2008 – Nov 2012
 
-I worked as a freelance web developer, where I mostly developed the backend and frontend of websites that were already designed by a friend. I also worked directly with clients on the design and prototyping of a few websites.
+- Served as a freelance web developer, specializing in the implementation of both backend and frontend components for websites designed by a professional colleague.
+- Engaged directly with clients in the design and prototyping phases for a select number of websites, showcasing versatility in both technical development and client interaction.
 
-Technologies used: CSS, HTML, JavaScript, jQuery, MySQL, PHP, SQLite, Zend Framework.
-
-## COURSES & TRAININGS
-
-**Fast.ai**  
-Practical Deep Learning for Coders (v1, v2, v3), 2019
-
-**Coursera**  
-Learning How to Learn, 2019  
-Mindshift, 2019
+Technologies used: PHP, Zend, MySQL, SQLite, JavaScript.
 
 ## EDUCATION
 

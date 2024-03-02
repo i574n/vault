@@ -4,6 +4,8 @@
 
 .obsidian/plugins/**/cursor-positions.json
 .obsidian/plugins/**/rss-reader/data.json
+.obsidian/plugins/**/novel-word-count/data.json
+.obsidian/plugins/**/recent-files-obsidian/data.json
 
 *.bundle
 .*.md
