@@ -16,13 +16,16 @@
   "timestampFormat": "HH:mm",
   "hourFormat": "H",
   "dataviewSource": "",
-  "showDataviewMigrationWarning": true,
   "extendDurationUntilNext": false,
   "defaultDurationMinutes": 30,
   "showTimestampInTaskBlock": false,
-  "unscheduledTasksHeight": 100,
   "showUncheduledTasks": true,
   "showUnscheduledNestedTasks": true,
   "showNow": true,
-  "showNext": true
+  "showNext": true,
+  "pluginVersion": "0.18.0",
+  "showCompletedTasks": true,
+  "showSubtasksInTaskBlocks": true,
+  "showDataviewMigrationWarning": true,
+  "unscheduledTasksHeight": 100
 }

@@ -1,0 +1,16 @@
+{
+  "defaultColor": "#8A5CF5",
+  "defaultShape": "CIRCLE",
+  "indicators": [
+    {
+      "dataPath": "data/workflow/tasks.md",
+      "color": "#5e33c1",
+      "shape": "SQUARE"
+    },
+    {
+      "dataPath": "data/workflow/test.md",
+      "color": "#8A5CF5",
+      "shape": "FRAME"
+    }
+  ]
+}
