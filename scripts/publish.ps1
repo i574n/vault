@@ -42,8 +42,9 @@ if (!$SkipSync) {
         Move-Item $_.FullName "$($_.FullName | Split-Path)/_$($_.Name)" -Force
     }
 }
-
-$targetDir = (Resolve-Path "../target/gh-pages").Path
+$targetDir = "../target/gh-pages"
+New-Item $targetDir -ItemType Directory -Force | Out-Null
+$targetDir = (Resolve-Path $targetDir).Path
 
 Write-Output "targetDir: $targetDir"
 
