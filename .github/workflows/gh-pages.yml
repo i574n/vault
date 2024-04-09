@@ -28,10 +28,11 @@ jobs:
         with:
           dotnet-version: 9
 
-      - uses: ATiltedTree/setup-rust@v1
+      - uses: moonrepo/setup-rust@v1
         with:
-          rust-version: nightly
-          components: clippy rust-src rustfmt
+          inherit-toolchain: true
+
+      - uses: actions/setup-go@v5
 
       - uses: actions/setup-python@v4
         with:
