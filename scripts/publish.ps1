@@ -43,15 +43,13 @@ if (!$SkipSync) {
     }
 }
 $targetDir = "../target/gh-pages"
-New-Item $targetDir -ItemType Directory -Force | Out-Null
-$targetDir = (Resolve-Path $targetDir).Path
-
-Write-Output "targetDir: $targetDir"
-
-git clone $(git ls-remote --get-url origin) --branch gh-pages "$targetDir"
+Set-Location (New-Item -ItemType Directory -Path "../target" -Force)
+git clone $(git ls-remote --get-url origin) --branch gh-pages gh-pages
 if (!(Test-Path $targetDir)) {
     exit 1
 }
+$targetDir = (Resolve-Path $targetDir).Path
+Write-Output "targetDir: $targetDir"
 Set-Location $targetDir
 if (!$fast) {
     git reset --hard
@@ -185,4 +183,5 @@ Get-ChildItem -Path ../dist -Recurse -Force `
     }
 }
 
-{ . ../../polyglot/apps/dir-tree-html/dist/DirTreeHtml$(GetExecutableSuffix) --dir ../dist --html ../dist/index.html } | Invoke-Block
+$fileName = "DirTreeHtml$(GetExecutableSuffix)"
+{ . ../../polyglot/apps/dir-tree-html/dist/$fileName --dir ../dist --html ../dist/index.html } | Invoke-Block
