@@ -1061,30 +1061,16 @@ mod module_2555ccf7 {
                 Documents::closure6((), ())
             )
         }
-        pub fn closure26(unitVar: (), unitVar_1: ()) -> string {
-            string("documents.run / vec_map")
-        }
-        pub fn closure27(v0_1: std::string::String, unitVar: ()) -> string {
-            sprintf!("file: {} / {}", v0_1, Documents::closure6((), ()))
-        }
         pub fn closure25(
             unitVar: (),
             v0_1: std::string::String,
         ) -> Result<std::string::String, std::string::String> {
-            Documents::method13(
-                Documents::US1::US1_0,
-                Func0::new(move || Documents::closure26((), ())),
-                Func0::new({
-                    let v0_1 = v0_1.clone();
-                    move || Documents::closure27(v0_1.clone(), ())
-                }),
-            );
-            Ok::<std::string::String, std::string::String>(v0_1.clone())
+            Ok::<std::string::String, std::string::String>(v0_1)
         }
-        pub fn closure28(unitVar: (), unitVar_1: ()) -> string {
+        pub fn closure26(unitVar: (), unitVar_1: ()) -> string {
             string("documents.run")
         }
-        pub fn closure29(
+        pub fn closure27(
             v0_1: Vec<Result<std::string::String, std::string::String>>,
             unitVar: (),
         ) -> string {
@@ -1165,10 +1151,10 @@ mod module_2555ccf7 {
                                     rayon::iter::ParallelIterator::collect(v39);
                                 Documents::method13(
                                     Documents::US1::US1_0,
-                                    Func0::new(move || Documents::closure28((), ())),
+                                    Func0::new(move || Documents::closure26((), ())),
                                     Func0::new({
                                         let v41 = v41.clone();
-                                        move || Documents::closure29(v41.clone(), ())
+                                        move || Documents::closure27(v41.clone(), ())
                                     }),
                                 );
                                 {

@@ -1042,24 +1042,13 @@ and closure24 (v0 : Vec<std_string_String>) () : string =
     let v3 : (unit -> string) = closure6()
     let v4 : string = $"files_len: {v2} / {v3 ()}"
     v4
-and closure26 () () : string =
-    let v0 : string = "documents.run / vec_map"
-    v0
-and closure27 (v0 : std_string_String) () : string =
-    let v1 : (unit -> string) = closure6()
-    let v2 : string = $"file: {v0} / {v1 ()}"
-    v2
 and closure25 () (v0 : std_string_String) : Result<std_string_String, std_string_String> =
-    let v1 : US1 = US1_0
-    let v2 : (unit -> string) = closure26()
-    let v3 : (unit -> string) = closure27(v0)
-    method13(v1, v2, v3)
-    let v4 : Result<std_string_String, std_string_String> = Ok v0
-    v4
-and closure28 () () : string =
+    let v1 : Result<std_string_String, std_string_String> = Ok v0
+    v1
+and closure26 () () : string =
     let v0 : string = "documents.run"
     v0
-and closure29 (v0 : Vec<Result<std_string_String, std_string_String>>) () : string =
+and closure27 (v0 : Vec<Result<std_string_String, std_string_String>>) () : string =
     let v1 : string = @$"format!(""{{:#?}}"", $0)"
     let v2 : std_string_String = Fable.Core.RustInterop.emitRustExpr v0 v1
     let v3 : (unit -> string) = closure6()
@@ -1131,8 +1120,8 @@ and method22 (v0 : string, v1 : string) : std_pin_Pin<Box<Dyn<std_future_Future<
     let v40 : string = "rayon::iter::ParallelIterator::collect(v39)"
     let v41 : Vec<Result<std_string_String, std_string_String>> = Fable.Core.RustInterop.emitRustExpr () v40
     let v42 : US1 = US1_0
-    let v43 : (unit -> string) = closure28()
-    let v44 : (unit -> string) = closure29(v41)
+    let v43 : (unit -> string) = closure26()
+    let v44 : (unit -> string) = closure27(v41)
     method13(v42, v43, v44)
     let v45 : Result<unit, std_string_String> = Ok ()
     let v46 : Result<unit, std_string_String> = method32(v45)

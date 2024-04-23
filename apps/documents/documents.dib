@@ -125,10 +125,6 @@ inl run { dir hangul_spec }
         files
         |> async.into_par_iter
         |> async.par_map fun file =>
-            trace Verbose
-                fun () => $'"documents.run / vec_map"'
-                fun () =>
-                    $'$"file: {!file} / {!_locals ()}"'
             (file |> Ok |> resultm.box) : _ _ sm'.std_string
         |> async.par_collect
 
