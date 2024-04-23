@@ -18,6 +18,7 @@ if (!$SkipSync) {
         --exclude 'file_cache' `
         --exclude 'target' `
         --exclude 'deps' `
+        --exclude 'dist' `
     `
         --include 'LICENSE' `
         --include '*.editorconfig' `
@@ -42,30 +43,28 @@ if (!$SkipSync) {
         Move-Item $_.FullName "$($_.FullName | Split-Path)/_$($_.Name)" -Force
     }
 }
+$distDir = (Resolve-Path ../dist).Path
+
 $targetDir = "../target/gh-pages"
-Set-Location (New-Item -ItemType Directory -Path "../target" -Force)
-git clone $(git ls-remote --get-url origin) --branch gh-pages gh-pages
+New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
+$targetDir = (Resolve-Path $targetDir).Path
+Write-Output "publish / targetDir: $targetDir / distDir: $distDir"
 if (!(Test-Path $targetDir)) {
     exit 1
 }
-$targetDir = (Resolve-Path $targetDir).Path
-Write-Output "targetDir: $targetDir"
+Set-Location "../target"
+git clone $(git ls-remote --get-url origin) --branch gh-pages gh-pages
 Set-Location $targetDir
-if (!$fast) {
-    git reset --hard
-    git clean -fd
-}
 git pull --rebase -Xtheirs
 Set-Location $ScriptDir
+
+
+. ../apps/documents/target/release/documents$(_exe) --dir $distDir --hangul-spec por-br
 
 Get-ChildItem -Path ../dist -Recurse -Force `
 | Where-Object { $_.Extension -eq ".md" -and !$_.Name.EndsWith(".hangul.md") } `
 | ForEach-Object {
-    . ../../polyglot/scripts/core.ps1
-
-    $distDir = (Resolve-Path ../dist).Path
-    $targetDir = (Resolve-Path "../target/gh-pages").Path
-    # $hangulize = $(Resolve-Path "../deps/hangulize/cmd/hangulize/hangulize$(GetExecutableSuffix)").Path
+    # $hangulize = $(Resolve-Path "../deps/hangulize/cmd/hangulize/hangulize$(_exe)").Path
 
     $relativePath = $_.FullName.Replace($distDir, "").Replace("\", "/")
     $relativePathWithoutExt = $relativePath.Substring(0, $relativePath.LastIndexOf("."))
@@ -89,6 +88,9 @@ Get-ChildItem -Path ../dist -Recurse -Force `
 
         if (!$hash2 -or $hash1 -ne $hash2) {
             Write-Output "relativePathWithoutExt: $relativePathWithoutExt / relativePath: $relativePath / fullPath: $fullPath / targetPath: $targetPath / originHash: $originHash / localGitHash: $localGitHash / hash1: $hash1 / hash2: $hash2"
+
+            # . ../apps/hangulize/target/release/hangulize$(_exe) por-br $fullPath
+
             crowbook --single "$fullPath" --output "$fullPath.html" --to html --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
             crowbook --single "$fullPath" --output "$fullPath.pdf" --to pdf --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
             crowbook --single "$fullPath" --output "$fullPath.epub" --to epub --set rendering.num_depth 6 html.css.add ''' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '''
@@ -183,5 +185,5 @@ Get-ChildItem -Path ../dist -Recurse -Force `
     }
 }
 
-$fileName = "DirTreeHtml$(GetExecutableSuffix)"
+$fileName = "DirTreeHtml$(_exe)"
 { . ../../polyglot/apps/dir-tree-html/dist/$fileName --dir ../dist --html ../dist/index.html } | Invoke-Block

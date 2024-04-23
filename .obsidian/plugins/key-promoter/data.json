@@ -16,12 +16,18 @@
     "workspace:close-others": 12,
     "workspace:close-tab-group": 12,
     "workspace:close-others-tab-group": 12,
-    "workspace:copy-path": 160,
-    "workspace:copy-url": 161,
-    "file-explorer:duplicate-file": 160,
+    "workspace:copy-path": 161,
+    "workspace:copy-url": 162,
+    "file-explorer:duplicate-file": 161,
     "obsidian-linter:paste-as-plain-text": 11,
     "app:go-back": 9,
-    "open-with-default-app:show": 1
+    "open-with-default-app:show": 1,
+    "obsidian-git:delete-repo": 1,
+    "obsidian-git:delete-branch": 1,
+    "app:delete-file": 1,
+    "editor:delete-paragraph": 1,
+    "editor:table-row-delete": 1,
+    "editor:table-col-delete": 1
   },
   "keyboardStatistics": {
     "file-explorer:new-file": 3

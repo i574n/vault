@@ -11,4 +11,4 @@ git clone --recurse-submodules https://github.com/hangulize/hangulize.git
 Set-Location hangulize
 git pull
 
-go build -C cmd/hangulize
+{ go build -C cmd/hangulize } | Invoke-Block

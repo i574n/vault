@@ -19,14 +19,15 @@ if (!$fast) {
 
 . ./scripts/core.ps1
 
-pwsh apps/builder/build.ps1 -fast 1
-pwsh apps/parser/build.ps1 -fast 1
-pwsh lib/fsharp/build.ps1 -fast 1
-pwsh apps/dir-tree-html/build.ps1 -fast 1
+{ pwsh apps/builder/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh apps/parser/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh lib/fsharp/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
 
 Set-Location $ScriptDir
 
-pwsh dep_hangulize.ps1 -fast 1
+{ pwsh dep_hangulize.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../apps/documents/build.ps1 } | Invoke-Block
 
 { sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
 { sudo apt install -y texlive-xetex } | Invoke-Block -Linux -Distro ubuntu

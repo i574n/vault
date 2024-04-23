@@ -1,0 +1,152 @@
+// // # documents
+open file_system_operators
+open sm'_operators
+open rust_operators
+
+// // ## types
+inl types () =
+    rust.types ()
+    am'.types ()
+    sm'.types ()
+    file_system.types ()
+    runtime.types ()
+    async.types ()
+
+// // ## args
+inl get_args () =
+    {
+        dir = "dir"
+        hangul_spec = "hangul-spec"
+    }
+
+// // ## get_command
+let get_command () =
+    ##"command"
+    |> runtime.new_command
+    |> runtime.command_arg (
+        runtime.new_arg ##(get_args () .dir)
+        |> runtime.arg_short 'd'
+        |> runtime.arg_long ##(get_args () .dir)
+        |> runtime.arg_required true
+    )
+    |> runtime.command_arg (
+        runtime.new_arg ##(get_args () .hangul_spec)
+        |> runtime.arg_short 's'
+        |> runtime.arg_long ##(get_args () .hangul_spec)
+        |> runtime.arg_required true
+    )
+
+// // ## run
+inl run { dir hangul_spec }
+    : async.future_pin (resultm.result' () sm'.std_string) = async.future_init (6, 5) 1 fun () =>
+    inl dir = dir |> file_system.get_full_path
+    
+    trace Verbose
+        fun () => $'"documents.run"'
+        fun () => $'$"dir: %A{!dir} / hangul_spec: %A{!hangul_spec} / {!_locals ()}"'
+
+    inl files =
+        dir
+        |> file_system.new_walk_dir
+        |> file_system.walk_dir_filter fun entry => async.future_init_send (2, 1) 1 fun () =>
+            entry
+            |> file_system.dir_entry_file_type
+            |> async.await_send
+            |> resultm.map_error' sm'.format'
+            |> resultm.unbox
+            |> function
+                | Ok file_type when file_type |> file_system.file_type_is_dir =>
+                    file_system.Ignore
+                | _ =>
+                    inl path =
+                        entry
+                        |> file_system.dir_entry_path
+                        |> file_system.path_buf_display
+                        |> sm'.from_std_string
+                    if (path |> sm'.ends_with ".md" |> not) || (path |> sm'.ends_with ".hangul.md")
+                    then file_system.Ignore
+                    else file_system.Continue
+        |> file_system.stream_filter_map fun entry =>
+            match entry |> resultm.map_error' sm'.format' |> resultm.unbox with
+            | Ok entry =>
+                entry
+                |> file_system.dir_entry_path
+                |> file_system.path_buf_display
+                |> Some
+            | Error error =>
+                trace Critical
+                    fun () => $'"documents.run / stream_filter_map"'
+                    fun () => $'$"error: {!error} / {!_locals ()}"'
+                None
+            |> optionm'.box
+
+    trace Verbose
+        fun () => $'"documents.run"'
+        fun () =>
+            inl files_len = files |> am'.vec_len
+            $'$"files_len: {!files_len} / {!_locals ()}"'
+    
+    inl result =
+        files
+        |> async.into_par_iter
+        |> async.par_map fun file =>
+            trace Verbose
+                fun () => $'"documents.run / vec_map"'
+                fun () =>
+                    $'$"file: {!file} / {!_locals ()}"'
+            (file |> Ok |> resultm.box) : _ _ sm'.std_string
+        |> async.par_collect
+
+    trace Verbose
+        fun () => $'"documents.run"'
+        fun () =>
+            inl result_log = result |> sm'.format_pretty'
+            $'$"result: {!result_log} / {!_locals ()}"'
+
+    Ok () |> resultm.box
+
+// // ## tests
+inl tests () =
+    rust.run_tests [
+        "verify_app", fun _ =>
+            get_command () |> runtime.command_debug_assert
+    ]
+
+// // ## main
+// // rust=
+
+inl main (args : array_base string) =
+    inl repository_root = file_system.get_repository_root ()
+    inl current_dir = file_system.get_current_directory ()
+
+    trace Info
+        fun () => $'$"documents.main"'
+        fun () => $'$"args: {!args} / current_dir: {!current_dir} / repository_root: {!repository_root} / {!_locals ()}"'
+
+    inl command = get_command ()
+    inl arg_matches = command |> runtime.command_get_matches
+
+    inl dir =
+        arg_matches
+        |> runtime.matches_get_one (get_args () .dir)
+        |> optionm'.unbox
+        |> optionm.value
+        |> sm'.from_std_string
+
+    inl hangul_spec =
+        arg_matches
+        |> runtime.matches_get_one (get_args () .hangul_spec)
+        |> optionm'.unbox
+        |> optionm.value
+        |> sm'.from_std_string
+    
+    run { dir hangul_spec }
+    |> async.block_on
+    |> resultm.unwrap'
+
+    0i32
+
+inl main () =
+    types ()
+    $"let tests () = !tests ()" : ()
+    $"let main args = !main args" : ()

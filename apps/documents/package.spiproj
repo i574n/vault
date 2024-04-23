@@ -1,0 +1,6 @@
+packageDir: ../../../polyglot/lib
+packages:
+    |core-
+    spiral-
+modules:
+    documents
