@@ -12,7 +12,7 @@ $ErrorActionPreference = "Stop"
 $projectName = "documents"
 
 if (!$fast -and !$SkipNotebook) {
-    { . apps/spiral/dist/Supervisor$(_exe) --execute-command "pwsh -c `"scripts/invoke-dib.ps1 ../vault/apps/$projectName/$projectName.dib`"" } | Invoke-Block -Retries 5 -Location ../../../polyglot
+    { . ./apps/spiral/dist/Supervisor$(_exe) --execute-command "pwsh -c `"scripts/invoke-dib.ps1 ../vault/apps/$projectName/$projectName.dib`"" } | Invoke-Block -Retries 5 -Location ../../../polyglot
 }
 
 { . ../../../polyglot/apps/parser/dist/DibParser$(_exe) "$projectName.dib" spi } | Invoke-Block
