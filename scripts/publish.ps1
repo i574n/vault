@@ -43,9 +43,11 @@ if (!$SkipSync) {
         Move-Item $_.FullName "$($_.FullName | Split-Path)/_$($_.Name)" -Force
     }
 }
-$distDir = (Resolve-Path ../dist).Path
 
-$targetDir = "../target/gh-pages"
+$vaultDir = (Resolve-Path ..).Path
+$distDir = "$vaultDir/dist"
+
+$targetDir = "$vaultDir/target/gh-pages"
 New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
 $targetDir = (Resolve-Path $targetDir).Path
 Write-Output "publish / targetDir: $targetDir / distDir: $distDir"
@@ -59,10 +61,12 @@ git pull --rebase -Xtheirs
 Set-Location $ScriptDir
 
 
-. ../apps/documents/target/release/documents$(_exe) --dir $distDir --hangul-spec por-br
+. ../apps/documents/target/release/documents$(_exe) --source-dir $vaultDir --dist-dir $distDir --cache-dir $targetDir --hangul-spec por-br
+
+exit 1
 
 Get-ChildItem -Path ../dist -Recurse -Force `
-| Where-Object { $_.Extension -eq ".md" -and !$_.Name.EndsWith(".hangul.md") } `
+| Where-Object { $false -and $_.Extension -eq ".md" -and !$_.Name.EndsWith(".hangul.md") } `
 | ForEach-Object {
     # $hangulize = $(Resolve-Path "../deps/hangulize/cmd/hangulize/hangulize$(_exe)").Path
 

@@ -8,7 +8,9 @@ edition = "2021"
 [dependencies]
 fable_library_rust = { path = "../../../polyglot/lib/rust/fable/fable_modules/fable-library-rust", default-features = false, features = ["static_do_bindings", "datetime", "guid", "threaded"] }
 inline_colorization = "~0.1"
+regex = "~1.10"
 clap = "~4.5"
+chrono = "~0.4"
 async-std = "~1.12"
 futures = "~0.3"
 futures-lite = "~2.3"

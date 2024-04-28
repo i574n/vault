@@ -15,7 +15,9 @@ inl types () =
 // // ## args
 inl get_args () =
     {
-        dir = "dir"
+        source_dir = "source-dir"
+        dist_dir = "dist-dir"
+        cache_dir = "cache-dir"
         hangul_spec = "hangul-spec"
     }
 
@@ -24,9 +26,21 @@ let get_command () =
     ##"command"
     |> runtime.new_command
     |> runtime.command_arg (
-        runtime.new_arg ##(get_args () .dir)
+        runtime.new_arg ##(get_args () .source_dir)
+        |> runtime.arg_short 's'
+        |> runtime.arg_long ##(get_args () .source_dir)
+        |> runtime.arg_required true
+    )
+    |> runtime.command_arg (
+        runtime.new_arg ##(get_args () .dist_dir)
         |> runtime.arg_short 'd'
-        |> runtime.arg_long ##(get_args () .dir)
+        |> runtime.arg_long ##(get_args () .dist_dir)
+        |> runtime.arg_required true
+    )
+    |> runtime.command_arg (
+        runtime.new_arg ##(get_args () .cache_dir)
+        |> runtime.arg_short 'c'
+        |> runtime.arg_long ##(get_args () .cache_dir)
         |> runtime.arg_required true
     )
     |> runtime.command_arg (
@@ -37,69 +51,188 @@ let get_command () =
     )
 
 // // ## run
-inl run { dir hangul_spec }
-    : async.future_pin (resultm.result' () sm'.std_string) = async.future_init (6, 5) 1 fun () =>
-    inl dir = dir |> file_system.get_full_path
-    
-    trace Verbose
-        fun () => $'"documents.run"'
-        fun () => $'$"dir: %A{!dir} / hangul_spec: %A{!hangul_spec} / {!_locals ()}"'
+inl run { source_dir dist_dir cache_dir hangul_spec }
+    : async.future_pin (resultm.result' () sm'.std_string) =
 
-    inl files =
-        dir
-        |> file_system.new_walk_dir
-        |> file_system.walk_dir_filter fun entry => async.future_init_send (2, 1) 1 fun () =>
-            entry
-            |> file_system.dir_entry_file_type
-            |> async.await_send
-            |> resultm.map_error' sm'.format'
-            |> resultm.unbox
-            |> function
-                | Ok file_type when file_type |> file_system.file_type_is_dir =>
-                    file_system.Ignore
-                | _ =>
-                    inl path =
-                        entry
-                        |> file_system.dir_entry_path
-                        |> file_system.path_buf_display
-                        |> sm'.from_std_string
-                    if (path |> sm'.ends_with ".md" |> not) || (path |> sm'.ends_with ".hangul.md")
-                    then file_system.Ignore
-                    else file_system.Continue
-        |> file_system.stream_filter_map fun entry =>
-            match entry |> resultm.map_error' sm'.format' |> resultm.unbox with
-            | Ok entry =>
+    inl source_dir = source_dir |> file_system.get_full_path
+    inl dist_dir = dist_dir |> file_system.get_full_path
+    inl cache_dir = cache_dir |> file_system.get_full_path
+    
+    trace Debug
+        fun () => $'"documents.run"'
+        fun () => $'$"source_dir: {!source_dir} / dist_dir: {!dist_dir} / cache_dir: {!cache_dir} / hangul_spec: %A{!hangul_spec} / {!_locals ()}"'
+    
+    fun () =>
+        inl files =
+            dist_dir
+            |> file_system.new_walk_dir
+            |> file_system.walk_dir_filter fun entry => async.future_init_send (2, 1) 1 fun () =>
                 entry
-                |> file_system.dir_entry_path
-                |> file_system.path_buf_display
-                |> Some
-            | Error error =>
-                trace Critical
-                    fun () => $'"documents.run / stream_filter_map"'
-                    fun () => $'$"error: {!error} / {!_locals ()}"'
-                None
-            |> optionm'.box
+                |> file_system.dir_entry_file_type
+                |> async.await_send
+                |> resultm.map_error' sm'.format'
+                |> resultm.unbox
+                |> function
+                    | Ok file_type when file_type |> file_system.file_type_is_dir =>
+                        file_system.Ignore
+                    | _ =>
+                        inl path =
+                            entry
+                            |> file_system.dir_entry_path
+                            |> file_system.path_buf_display
+                            |> sm'.format'
+                            |> sm'.from_std_string
+                        if (path |> sm'.ends_with ".md" |> not) || (path |> sm'.ends_with ".hangul.md")
+                        then file_system.Ignore
+                        else file_system.Continue
+            |> file_system.stream_filter_map fun entry =>
+                match entry |> resultm.map_error' sm'.format' |> resultm.unbox with
+                | Ok entry =>
+                    entry
+                    |> file_system.dir_entry_path
+                    |> file_system.path_buf_display
+                    |> sm'.format'
+                    |> sm'.from_std_string
+                    |> Some
+                | Error error =>
+                    trace Critical
+                        fun () => $'"documents.run / stream_filter_map"'
+                        fun () => $'$"error: {!error} / {!_locals ()}"'
+                    None
+                |> optionm'.box
 
-    trace Verbose
-        fun () => $'"documents.run"'
-        fun () =>
-            inl files_len = files |> am'.vec_len
-            $'$"files_len: {!files_len} / {!_locals ()}"'
-    
-    inl result =
-        files
-        |> async.into_par_iter
-        |> async.par_map fun file =>
-            (file |> Ok |> resultm.box) : _ _ sm'.std_string
-        |> async.par_collect
+        trace Debug
+            fun () => $'"documents.run"'
+            fun () =>
+                inl files_len = files |> am'.vec_len
+                $'$"files_len: {!files_len} / {!_locals ()}"'
 
-    trace Verbose
-        fun () => $'"documents.run"'
-        fun () =>
-            inl result_log = result |> sm'.format_pretty'
-            $'$"result: {!result_log} / {!_locals ()}"'
+        inl result =
+            files
+            |> async.into_par_iter
+            |> async.par_map fun file =>
+                inl file = file |> file_system.get_full_path
 
-    Ok () |> resultm.box
+                inl relative_path =
+                    file
+                    |> sm'.to_std_string
+                    |> file_system.new_path_buf
+                    |> file_system.path_buf_display
+                    |> sm'.format'
+                    |> sm'.from_std_string
+                    |> sm'.replace dist_dir ""
+                    |> sm'.replace "\\" "/"
+                    |> fun s => $'$".{!s}"'
+
+                inl real_path = source_dir </> relative_path |> file_system.normalize_path
+
+                inl origin_hash_exit_code, origin_hash =
+                    runtime.execution_options fun x => { x with
+                        command = $'$"git ls-tree --format=\'%%(objectname)\' origin/gh-pages \\"{!real_path}\\""'
+                        working_directory = source_dir |> Some |> optionm'.box
+                    }
+                    |> runtime.execute_with_options
+                
+                inl dist_path = dist_dir </> relative_path |> file_system.normalize_path
+
+                inl local_git_hash_exit_code, local_git_hash =
+                    runtime.execution_options fun x => { x with
+                        command = $'$"git hash-object \\"{!dist_path}\\""'
+                        working_directory = dist_dir |> Some |> optionm'.box
+                    }
+                    |> runtime.execute_with_options
+
+                inl files =
+                    if origin_hash |> sm'.contains local_git_hash |> not then
+                        inl get_file_hash (path : string) : string =
+                            inl path = path |> file_system.normalize_path
+                            inl exit_code, result =
+                                runtime.execution_options fun x => { x with
+                                    command = $'$"pwsh -c \\\"(Get-FileHash \\\\\\"{!path}\\\\\\" -Algorithm SHA256).Hash\\\""'
+                                }
+                                |> runtime.execute_with_options
+                            result
+
+                        inl hash1 = dist_path |> get_file_hash
+                        inl cache_path = cache_dir </> relative_path |> file_system.normalize_path
+                        inl hash2 =
+                            if cache_path |> file_system.file_exists
+                            then cache_path |> get_file_hash
+                            else ""
+
+                        trace Info
+                            fun () => $'"documents.run / par_map"'
+                            fun () => $'$"file: {!file} / real_path: {!real_path} / relative_path: {!relative_path} / origin_hash_exit_code: {!origin_hash_exit_code} / origin_hash: {!origin_hash} / local_git_hash_exit_code: {!local_git_hash_exit_code} / local_git_hash: {!local_git_hash} / hash1: {!hash1} / hash2: %A{!hash2} / {!_locals ()}"'
+
+                        if hash1 <>. hash2 then
+                            inl crowbook (ext : string) =
+                                inl output_path = $'$"{!dist_path}.{!ext}"'
+                                inl output_cache_path = $'$"{!cache_path}.{!ext}"'
+                                inl equal =
+                                    if file_system.file_exists output_path
+                                        && file_system.file_exists output_cache_path then
+                                        inl output_hash = output_path |> get_file_hash
+                                        inl output_cache_hash = output_cache_path |> get_file_hash
+                                        output_hash = output_cache_hash
+                                    else false
+
+                                if not equal then
+                                    inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
+
+                                    inl exit_code, result =
+                                        runtime.execution_options fun x => { x with
+                                            command
+                                            working_directory = dist_dir |> Some |> optionm'.box
+                                        }
+                                        |> runtime.execute_with_options
+
+                                    trace Info
+                                        fun () => $'"documents.run / par_map / crowbook"'
+                                        fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+
+                                    if exit_code <>. 0 || (result |> sm'.contains "ERROR")
+                                    then (output_path, result) |> Error |> Some
+                                    else
+                                        output_path |> file_system.file_copy output_cache_path
+                                        output_path |> Ok |> Some
+                                else None
+
+                            inl files = [
+                                "html", crowbook
+                                "pdf", crowbook
+                                "epub", crowbook
+                                "hangul.md", fun ext =>
+                                    None
+                            ]
+
+                            inl files =
+                                files
+                                |> listm.map fun ext, fn =>
+                                    fn ext
+                                |> listm'.box
+                                |> listm'.to_array'
+
+                            trace Info
+                                fun () => $'"documents.run / par_map / files"'
+                                fun () => $'$"files: %A{!files} / {!_locals ()}"'
+
+                            dist_path |> file_system.file_copy cache_path
+
+                            files
+                        else ;[]
+                    else ;[]
+
+                ((file, files) |> Ok |> resultm.box) : _ _ sm'.std_string
+            |> async.par_collect
+
+        trace Debug
+            fun () => $'"documents.run"'
+            fun () =>
+                inl result_len = result |> am'.vec_len
+                $'$"result_len: {!result_len} / {!_locals ()}"'
+
+        Ok () |> resultm.box
+    |> async.future_init (4, 3) 1
 
 // // ## tests
 inl tests () =
@@ -112,19 +245,36 @@ inl tests () =
 // // rust=
 
 inl main (args : array_base string) =
-    inl repository_root = file_system.get_repository_root ()
+    inl trace_state = get_trace_state ()
+    inl trace_level = trace_state.level
+    trace_level <- Info
+
     inl current_dir = file_system.get_current_directory ()
 
     trace Info
         fun () => $'$"documents.main"'
-        fun () => $'$"args: {!args} / current_dir: {!current_dir} / repository_root: {!repository_root} / {!_locals ()}"'
+        fun () => $'$"args: {!args} / current_dir: {!current_dir} / {!_locals ()}"'
 
     inl command = get_command ()
     inl arg_matches = command |> runtime.command_get_matches
 
-    inl dir =
+    inl source_dir =
         arg_matches
-        |> runtime.matches_get_one (get_args () .dir)
+        |> runtime.matches_get_one (get_args () .source_dir)
+        |> optionm'.unbox
+        |> optionm.value
+        |> sm'.from_std_string
+
+    inl dist_dir =
+        arg_matches
+        |> runtime.matches_get_one (get_args () .dist_dir)
+        |> optionm'.unbox
+        |> optionm.value
+        |> sm'.from_std_string
+
+    inl cache_dir =
+        arg_matches
+        |> runtime.matches_get_one (get_args () .cache_dir)
         |> optionm'.unbox
         |> optionm.value
         |> sm'.from_std_string
@@ -136,7 +286,7 @@ inl main (args : array_base string) =
         |> optionm.value
         |> sm'.from_std_string
     
-    run { dir hangul_spec }
+    run { source_dir dist_dir cache_dir hangul_spec }
     |> async.block_on
     |> resultm.unwrap'
 
