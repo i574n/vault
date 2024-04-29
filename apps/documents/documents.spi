@@ -52,7 +52,7 @@ let get_command () =
 
 // // ## run
 inl run { source_dir dist_dir cache_dir hangul_spec }
-    : async.future_pin (resultm.result' () sm'.std_string) =
+    : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
 
     inl source_dir = source_dir |> file_system.get_full_path
     inl dist_dir = dist_dir |> file_system.get_full_path
@@ -124,6 +124,8 @@ inl run { source_dir dist_dir cache_dir hangul_spec }
                     |> sm'.replace "\\" "/"
                     |> fun s => $'$".{!s}"'
 
+                inl file = file |> file_system.normalize_path
+
                 inl real_path = source_dir </> relative_path |> file_system.normalize_path
 
                 inl origin_hash_exit_code, origin_hash =
@@ -160,11 +162,8 @@ inl run { source_dir dist_dir cache_dir hangul_spec }
                             then cache_path |> get_file_hash
                             else ""
 
-                        trace Info
-                            fun () => $'"documents.run / par_map"'
-                            fun () => $'$"file: {!file} / real_path: {!real_path} / relative_path: {!relative_path} / origin_hash_exit_code: {!origin_hash_exit_code} / origin_hash: {!origin_hash} / local_git_hash_exit_code: {!local_git_hash_exit_code} / local_git_hash: {!local_git_hash} / hash1: {!hash1} / hash2: %A{!hash2} / {!_locals ()}"'
-
                         if hash1 <>. hash2 then
+
                             inl crowbook (ext : string) =
                                 inl output_path = $'$"{!dist_path}.{!ext}"'
                                 inl output_cache_path = $'$"{!cache_path}.{!ext}"'
@@ -186,15 +185,14 @@ inl run { source_dir dist_dir cache_dir hangul_spec }
                                         }
                                         |> runtime.execute_with_options
 
-                                    trace Info
-                                        fun () => $'"documents.run / par_map / crowbook"'
-                                        fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
-
-                                    if exit_code <>. 0 || (result |> sm'.contains "ERROR")
-                                    then (output_path, result) |> Error |> Some
+                                    if exit_code <>. 0 || (result |> sm'.contains "ERROR") then
+                                        trace Info
+                                            fun () => $'"documents.run / par_map / crowbook"'
+                                            fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+                                        new_pair output_path result |> Error |> resultm.box |> Some
                                     else
                                         output_path |> file_system.file_copy output_cache_path
-                                        output_path |> Ok |> Some
+                                        output_path |> Ok |> resultm.box |> Some
                                 else None
 
                             inl files = [
@@ -208,21 +206,22 @@ inl run { source_dir dist_dir cache_dir hangul_spec }
                             inl files =
                                 files
                                 |> listm.map fun ext, fn =>
-                                    fn ext
+                                    fn ext |> optionm'.box
                                 |> listm'.box
                                 |> listm'.to_array'
 
                             trace Info
-                                fun () => $'"documents.run / par_map / files"'
-                                fun () => $'$"files: %A{!files} / {!_locals ()}"'
+                                fun () => $'"documents.run / par_map"'
+                                fun () => $'$"file: {!file} / real_path: {!real_path} / relative_path: {!relative_path} / origin_hash_exit_code: {!origin_hash_exit_code} / origin_hash: {!origin_hash} / local_git_hash_exit_code: {!local_git_hash_exit_code} / local_git_hash: {!local_git_hash} / hash1: {!hash1} / hash2: %A{!hash2} / files: %A{!files} / {!_locals ()}"'
 
                             dist_path |> file_system.file_copy cache_path
 
                             files
-                        else ;[]
-                    else ;[]
+                        else a ;[]
+                    else a ;[]
 
-                ((file, files) |> Ok |> resultm.box) : _ _ sm'.std_string
+                inl files = files |> fun (a x : _ i32 _) => x |> am'.to_vec
+                (new_pair file files |> Ok |> resultm.box) : _ _ sm'.std_string
             |> async.par_collect
 
         trace Debug
@@ -231,7 +230,7 @@ inl run { source_dir dist_dir cache_dir hangul_spec }
                 inl result_len = result |> am'.vec_len
                 $'$"result_len: {!result_len} / {!_locals ()}"'
 
-        Ok () |> resultm.box
+        result |> Ok |> resultm.box
     |> async.future_init (4, 3) 1
 
 // // ## tests
@@ -289,6 +288,7 @@ inl main (args : array_base string) =
     run { source_dir dist_dir cache_dir hangul_spec }
     |> async.block_on
     |> resultm.unwrap'
+    |> ignore
 
     0i32
 

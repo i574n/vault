@@ -17,13 +17,13 @@ if (!$fast) {
 
 . ../../polyglot/scripts/core.ps1
 
-{ . ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
-{ . ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
-{ . ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
-{ . ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block
-{ . ../../polyglot/lib/fsharp/build.ps1 -fast 1 } | Invoke-Block
-{ . ../../polyglot/lib/spiral/build.ps1 -fast 1 } | Invoke-Block
-{ . ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
+{ . ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
+{ . ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
+{ . ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
+{ . ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block -Location $ScriptDir
+{ . ../../polyglot/lib/fsharp/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
+{ . ../../polyglot/lib/spiral/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
+{ . ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
 
 { . dep_hangulize.ps1 -fast 1 } | Invoke-Block
 { . ../apps/documents/build.ps1 } | Invoke-Block
