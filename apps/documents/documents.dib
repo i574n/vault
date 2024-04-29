@@ -307,23 +307,16 @@ run {
         Ok (
             (dist_dir </> file_name |> file_system.absolute_path),
             ;[
-                Some (
-                    Ok (
-                        (dist_dir </> $'$"{!file_name}.html"' |> file_system.absolute_path)
-                    )
-                )
-                Some (
-                    Error (
-                        new_pair
-                            (dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path)
-                            "CROWBOOK 0.16.1\nERROR Error during temporary files editing: xelatex didn't return succesfully"
-                    )
-                )
-                Some (
-                    Ok (
-                        (dist_dir </> $'$"{!file_name}.epub"' |> file_system.absolute_path)
-                    )
-                )
+                dist_dir </> $'$"{!file_name}.html"' |> file_system.absolute_path |> Ok |> Some
+                if runtime.is_windows () |> not
+                then dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path |> Ok
+                else
+                    new_pair
+                        (dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path)
+                        "CROWBOOK 0.16.1\nERROR Error during temporary files editing: xelatex didn't return succesfully"
+                    |> Error
+                |> Some
+                dist_dir </> $'$"{!file_name}.epub"' |> file_system.absolute_path |> Ok |> Some
                 None
             ]
             |> am'.to_vec |> am'.vec_map ((optionm.map resultm.box) >> optionm'.box)
