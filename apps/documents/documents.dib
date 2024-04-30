@@ -201,7 +201,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                         if hash1 <>. hash2 then
 
-                            inl crowbook { ext output_path output_cache_path } =
+                            inl crowbook { ext output_path } =
                                 inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
 
                                 inl exit_code, result =
@@ -218,15 +218,19 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                     (exit_code, result) |> Error
                                 else (exit_code, result) |> Ok
 
-                            inl hangul { ext output_path output_cache_path } =
-                                inl text =
+                            inl hangul { ext output_path } =
+                                inl lines =
                                     dist_path
                                     |> file_system.read_all_text
                                     |> sm'.split "\n"
                                     |> fun x => a x : _ i32 _
+                                    |> am.map sm'.trim
+                                inl text =
+                                    lines
                                     |> am.filter ((<>.) "")
                                     |> seq.of_array'
                                     |> sm'.concat "\n"
+                                    |> fun x => $'$"{!x}\n\n"'
 
                                 inl exit_code, result =
                                     runtime.execution_options fun x => { x with
@@ -246,7 +250,32 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                     }
                                     |> runtime.execute_with_options
 
-                                (exit_code, result) |> Error
+                                inl result : string =
+                                    inl result =
+                                        result
+                                        |> sm'.split "\n"
+                                        |> fun x => a x : _ i32 _
+                                    inl result_len = result |> am'.length
+
+                                    (("", (0i32, 0i32)), lines)
+                                    ||> am.fold fun (acc, (i, n)) x =>
+                                        if x = ""
+                                        then $'$"{!acc}\n"', (i + 1, n + 1)
+                                        else
+                                            inl acc =
+                                                inl i = i - n
+                                                if i >= result_len
+                                                then acc
+                                                else
+                                                    inl line = result |> am'.index i
+                                                    if i = result_len - 1
+                                                    then $'$"{!acc}{!line}"'
+                                                    else $'$"{!acc}{!line}\n"'
+                                            acc, (i + 1, n)
+                                    |> fst
+
+                                result |> file_system.write_all_text output_path
+                                (exit_code, result) |> Ok
                                 |> fun x => x : result (i32 * string) (i32 * string)
 
                             inl files_fn fn ext =
@@ -276,7 +305,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                                 if not equal
                                 then
-                                    match fn { ext output_path output_cache_path } with
+                                    match fn { ext output_path } with
                                     | Ok (exit_code, result) when exit_code <>. 0 =>
                                         trace Info
                                             fun () => $'"documents.run / par_map / files_fn"'
@@ -353,7 +382,7 @@ source_dir |> file_system.create_directory' |> ignore
 dist_dir |> file_system.create_directory' |> ignore
 cache_dir |> file_system.create_directory' |> ignore
 
-inl text = "# a\n\n## b\n\n---\n\nabc\n\n---\n"
+inl text = "# a\n\n## b\n\n---\n\nabc\nabc\n\nabc\n\nabc\n"
 text |> file_system.write_all_text (source_dir </> file_name)
 text |> file_system.write_all_text (dist_dir </> file_name)
 
@@ -389,10 +418,7 @@ result
                     |> Error
                 |> Some
                 epub_path |> Ok |> Some
-                new_pair
-                    hangul_path
-                    "# 아\n## 브\n---\n아브크"
-                |> Error |> Some
+                hangul_path |> Ok |> Some
             ]
             |> am'.to_vec |> am'.vec_map ((optionm.map resultm.box) >> optionm'.box)
         )
@@ -440,12 +466,16 @@ result
 
 html_path
 |> file_system.read_all_text
-|> _assert_string_contains "<p class = \"rule\">***</p>\n<p id = \"para-1\">abc</p>"
+|> _assert_string_contains "<p class = \"rule\">***</p>\n<p id = \"para-1\">abc abc</p>"
 
 epub_path
 |> file_system.read_all_bytes
 |> sm'.slice_contains "application/epub+zip"
 |> _assert_eq true
+
+hangul_path
+|> file_system.read_all_text
+|> _assert_eq "# 아\n\n## 브\n\n---\n\n아브크\n아브크\n\n아브크\n\n아브크\n"
 
 #!markdown
 

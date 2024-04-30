@@ -166,7 +166,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                         if hash1 <>. hash2 then
 
-                            inl crowbook { ext output_path output_cache_path } =
+                            inl crowbook { ext output_path } =
                                 inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
 
                                 inl exit_code, result =
@@ -183,17 +183,65 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                     (exit_code, result) |> Error
                                 else (exit_code, result) |> Ok
 
-                            inl hangul { ext output_path output_cache_path } =
-                                runtime.execution_options fun x => { x with
-                                    command =
-                                        inl hangulize_path =
-                                            inl _exe = runtime.get_executable_suffix ()
-                                            repository_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
-                                        $'$"{!hangulize_path} {!hangul_spec}"'
-                                }
-                                |> runtime.execute_with_options
-                                |> Ok
-                                |> fun x => x : _ _ ()
+                            inl hangul { ext output_path } =
+                                inl lines =
+                                    dist_path
+                                    |> file_system.read_all_text
+                                    |> sm'.split "\n"
+                                    |> fun x => a x : _ i32 _
+                                    |> am.map sm'.trim
+                                inl text =
+                                    lines
+                                    |> am.filter ((<>.) "")
+                                    |> seq.of_array'
+                                    |> sm'.concat "\n"
+                                    |> fun x => $'$"{!x}\n\n"'
+
+                                inl exit_code, result =
+                                    runtime.execution_options fun x => { x with
+                                        command =
+                                            inl hangulize_path =
+                                                inl _exe = runtime.get_executable_suffix ()
+                                                repository_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
+                                            $'$"{!hangulize_path} {!hangul_spec}"'
+                                        stdin =
+                                            fun stdin =>
+                                                inl stdin =
+                                                    stdin
+                                                    |> threading.arc_mutex_lock
+                                                    |> resultm.unwrap'
+                                                text |> runtime.stdin_write_all stdin
+                                            |> Some |> optionm'.box
+                                    }
+                                    |> runtime.execute_with_options
+
+                                inl result : string =
+                                    inl result =
+                                        result
+                                        |> sm'.split "\n"
+                                        |> fun x => a x : _ i32 _
+                                    inl result_len = result |> am'.length
+
+                                    (("", (0i32, 0i32)), lines)
+                                    ||> am.fold fun (acc, (i, n)) x =>
+                                        if x = ""
+                                        then $'$"{!acc}\n"', (i + 1, n + 1)
+                                        else
+                                            inl acc =
+                                                inl i = i - n
+                                                if i >= result_len
+                                                then acc
+                                                else
+                                                    inl line = result |> am'.index i
+                                                    if i = result_len - 1
+                                                    then $'$"{!acc}{!line}"'
+                                                    else $'$"{!acc}{!line}\n"'
+                                            acc, (i + 1, n)
+                                    |> fst
+
+                                result |> file_system.write_all_text output_path
+                                (exit_code, result) |> Ok
+                                |> fun x => x : result (i32 * string) (i32 * string)
 
                             inl files_fn fn ext =
                                 inl output_path =
@@ -222,15 +270,18 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                                 if not equal
                                 then
-                                    match fn { ext output_path output_cache_path } with
+                                    match fn { ext output_path } with
                                     | Ok (exit_code, result) when exit_code <>. 0 =>
                                         trace Info
                                             fun () => $'"documents.run / par_map / files_fn"'
                                             fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
                                         new_pair output_path result |> Error |> resultm.box |> Some
+                                    | Error (exit_code, result) =>
+                                        new_pair output_path result |> Error |> resultm.box |> Some
                                     | _ =>
                                         if output_path |> file_system.file_exists
                                         then output_path |> file_system.file_copy output_cache_path
+                                        else failwith $'$"documents.run / files_fn / {!output_path} should exist"'
                                         output_path |> Ok |> resultm.box |> Some
                                 else None
 
