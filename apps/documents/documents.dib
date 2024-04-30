@@ -88,6 +88,8 @@ let get_command () =
 
 let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
+    
+    inl repository_root = file_system.get_repository_root ()
 
     inl source_dir = source_dir |> file_system.get_full_path
     inl dist_dir = dist_dir |> file_system.get_full_path
@@ -199,9 +201,71 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                         if hash1 <>. hash2 then
 
-                            inl crowbook (ext : string) =
-                                inl output_path = $'$"{!dist_path}.{!ext}"'
-                                inl output_cache_path = $'$"{!cache_path}.{!ext}"'
+                            inl crowbook { ext output_path output_cache_path } =
+                                inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
+
+                                inl exit_code, result =
+                                    runtime.execution_options fun x => { x with
+                                        command
+                                        working_directory = dist_dir |> Some |> optionm'.box
+                                    }
+                                    |> runtime.execute_with_options
+
+                                if result |> sm'.contains "ERROR" then
+                                    trace Info
+                                        fun () => $'"documents.run / par_map / crowbook"'
+                                        fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+                                    (exit_code, result) |> Error
+                                else (exit_code, result) |> Ok
+
+                            inl hangul { ext output_path output_cache_path } =
+                                inl text =
+                                    dist_path
+                                    |> file_system.read_all_text
+                                    |> sm'.split "\n"
+                                    |> fun x => a x : _ i32 _
+                                    |> am.filter ((<>.) "")
+                                    |> seq.of_array'
+                                    |> sm'.concat "\n"
+
+                                inl exit_code, result =
+                                    runtime.execution_options fun x => { x with
+                                        command =
+                                            inl hangulize_path =
+                                                inl _exe = runtime.get_executable_suffix ()
+                                                repository_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
+                                            $'$"{!hangulize_path} {!hangul_spec}"'
+                                        stdin =
+                                            fun stdin =>
+                                                inl stdin =
+                                                    stdin
+                                                    |> threading.arc_mutex_lock
+                                                    |> resultm.unwrap'
+                                                text |> runtime.stdin_write_all stdin
+                                            |> Some |> optionm'.box
+                                    }
+                                    |> runtime.execute_with_options
+
+                                (exit_code, result) |> Error
+                                |> fun x => x : result (i32 * string) (i32 * string)
+
+                            inl files_fn fn ext =
+                                inl output_path =
+                                    if ext |> sm'.ends_with ".md" |> not
+                                    then $'$"{!dist_path}.{!ext}"'
+                                    else
+                                        inl dist_path_no_ext =
+                                            dist_path
+                                            |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
+                                        $'$"{!dist_path_no_ext}.{!ext}"'
+                                inl output_cache_path =
+                                    if ext |> sm'.ends_with ".md" |> not
+                                    then $'$"{!cache_path}.{!ext}"'
+                                    else
+                                        inl cache_path_no_ext =
+                                            cache_path
+                                            |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
+                                        $'$"{!cache_path_no_ext}.{!ext}"'
                                 inl equal =
                                     if file_system.file_exists output_path
                                         && file_system.file_exists output_cache_path then
@@ -210,40 +274,41 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                         output_hash = output_cache_hash
                                     else false
 
-                                if not equal then
-                                    inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
-
-                                    inl exit_code, result =
-                                        runtime.execution_options fun x => { x with
-                                            command
-                                            working_directory = dist_dir |> Some |> optionm'.box
-                                        }
-                                        |> runtime.execute_with_options
-
-                                    if exit_code <>. 0 || (result |> sm'.contains "ERROR") then
+                                if not equal
+                                then
+                                    match fn { ext output_path output_cache_path } with
+                                    | Ok (exit_code, result) when exit_code <>. 0 =>
                                         trace Info
-                                            fun () => $'"documents.run / par_map / crowbook"'
+                                            fun () => $'"documents.run / par_map / files_fn"'
                                             fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
                                         new_pair output_path result |> Error |> resultm.box |> Some
-                                    else
-                                        output_path |> file_system.file_copy output_cache_path
+                                    | Error (exit_code, result) =>
+                                        new_pair output_path result |> Error |> resultm.box |> Some
+                                    | _ =>
+                                        if output_path |> file_system.file_exists
+                                        then output_path |> file_system.file_copy output_cache_path
+                                        else failwith $'$"documents.run / files_fn / {!output_path} should exist"'
                                         output_path |> Ok |> resultm.box |> Some
                                 else None
 
+
                             inl files = [
-                                "html", crowbook
-                                "pdf", crowbook
-                                "epub", crowbook
-                                "hangul.md", fun ext =>
-                                    None
+                                "html", crowbook |> files_fn
+                                "pdf", crowbook |> files_fn
+                                "epub", crowbook |> files_fn
+                                "hangul.md", hangul |> files_fn
                             ]
 
                             inl files =
                                 files
-                                |> listm.map fun ext, fn =>
-                                    fn ext |> optionm'.box
                                 |> listm'.box
                                 |> listm'.to_array'
+                                |> fun (a x : _ i32 _) => x
+                                |> am'.to_vec
+                                |> async.into_par_iter
+                                |> async.par_map fun ext, fn =>
+                                    fn ext |> optionm'.box
+                                |> async.par_collect
 
                             trace Info
                                 fun () => $'"documents.run / par_map"'
@@ -252,10 +317,9 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                             dist_path |> file_system.file_copy cache_path
 
                             files
-                        else a ;[]
-                    else a ;[]
+                        else ;[] |> am'.to_vec
+                    else ;[] |> am'.to_vec
 
-                inl files = files |> fun (a x : _ i32 _) => x |> am'.to_vec
                 (new_pair file files |> Ok |> resultm.box) : _ _ sm'.std_string
             |> async.par_collect
 
@@ -278,7 +342,8 @@ types ()
 inl source_dir = join "../vault/target/documents"
 inl dist_dir = source_dir </> "dist"
 inl cache_dir = source_dir </> "cache"
-inl file_name = join "test.md"
+inl file_name_no_ext = "test"
+inl file_name = join $'$"{!file_name_no_ext}.md"'
 
 source_dir |> file_system.directory_delete true
 dist_dir |> file_system.directory_delete true
@@ -288,12 +353,13 @@ source_dir |> file_system.create_directory' |> ignore
 dist_dir |> file_system.create_directory' |> ignore
 cache_dir |> file_system.create_directory' |> ignore
 
-inl text = "# a\n\n## b\n\n\n---\n\nabc\n\n---\n"
+inl text = "# a\n\n## b\n\n---\n\nabc\n\n---\n"
 text |> file_system.write_all_text (source_dir </> file_name)
 text |> file_system.write_all_text (dist_dir </> file_name)
 
 inl html_path = dist_dir </> $'$"{!file_name}.html"' |> file_system.absolute_path
 inl epub_path = dist_dir </> $'$"{!file_name}.epub"' |> file_system.absolute_path
+inl hangul_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md"' |> file_system.absolute_path
 
 inl result =
     run {
@@ -323,7 +389,10 @@ result
                     |> Error
                 |> Some
                 epub_path |> Ok |> Some
-                None
+                new_pair
+                    hangul_path
+                    "# 아\n## 브\n---\n아브크"
+                |> Error |> Some
             ]
             |> am'.to_vec |> am'.vec_map ((optionm.map resultm.box) >> optionm'.box)
         )
@@ -359,7 +428,12 @@ result
     ]
     |> am'.to_vec
     |> am'.vec_map resultm.box
-    |> fun x => x : am'.vec (resultm.result' (string * am'.vec (optionm'.option' (resultm.result' string string))) sm'.std_string)
+    |> fun x =>
+        x : am'.vec (
+            resultm.result'
+                (string * am'.vec (optionm'.option' (resultm.result' string string)))
+                sm'.std_string
+        )
     |> sm'.format_debug'
     |> sm'.from_std_string
 )
