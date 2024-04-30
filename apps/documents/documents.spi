@@ -51,7 +51,7 @@ let get_command () =
     )
 
 // // ## run
-inl run { source_dir dist_dir cache_dir hangul_spec }
+let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
 
     inl source_dir = source_dir |> file_system.get_full_path

@@ -86,7 +86,7 @@ let get_command () =
 
 #!spiral
 
-inl run { source_dir dist_dir cache_dir hangul_spec }
+let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
 
     inl source_dir = source_dir |> file_system.get_full_path
@@ -275,7 +275,7 @@ inl run { source_dir dist_dir cache_dir hangul_spec }
 // // print_code=false
 
 types ()
-inl source_dir = "../vault/target/documents"
+inl source_dir = join "../vault/target/documents"
 inl dist_dir = source_dir </> "dist"
 inl cache_dir = source_dir </> "cache"
 inl file_name = join "test.md"
@@ -288,18 +288,24 @@ source_dir |> file_system.create_directory' |> ignore
 dist_dir |> file_system.create_directory' |> ignore
 cache_dir |> file_system.create_directory' |> ignore
 
-inl text = "\n---\n\nb"
+inl text = "# a\n\n## b\n\n\n---\n\nabc\n\n---\n"
 text |> file_system.write_all_text (source_dir </> file_name)
 text |> file_system.write_all_text (dist_dir </> file_name)
 
-run {
-    source_dir = source_dir
-    dist_dir = dist_dir
-    cache_dir = cache_dir
-    hangul_spec = "por-br"
-}
-|> async.block_on
-|> resultm.unwrap'
+inl html_path = dist_dir </> $'$"{!file_name}.html"' |> file_system.absolute_path
+inl epub_path = dist_dir </> $'$"{!file_name}.epub"' |> file_system.absolute_path
+
+inl result =
+    run {
+        source_dir = source_dir
+        dist_dir = dist_dir
+        cache_dir = cache_dir
+        hangul_spec = "por-br"
+    }
+    |> async.block_on
+    |> resultm.unwrap'
+
+result
 |> sm'.format_debug'
 |> sm'.from_std_string
 |> _assert_eq (
@@ -307,7 +313,7 @@ run {
         Ok (
             (dist_dir </> file_name |> file_system.absolute_path),
             ;[
-                dist_dir </> $'$"{!file_name}.html"' |> file_system.absolute_path |> Ok |> Some
+                html_path |> Ok |> Some
                 if runtime.is_windows () |> not
                 then dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path |> Ok
                 else
@@ -316,7 +322,7 @@ run {
                         "CROWBOOK 0.16.1\nERROR Error during temporary files editing: xelatex didn't return succesfully"
                     |> Error
                 |> Some
-                dist_dir </> $'$"{!file_name}.epub"' |> file_system.absolute_path |> Ok |> Some
+                epub_path |> Ok |> Some
                 None
             ]
             |> am'.to_vec |> am'.vec_map ((optionm.map resultm.box) >> optionm'.box)
@@ -328,6 +334,44 @@ run {
     |> sm'.format_debug'
     |> sm'.from_std_string
 )
+
+inl result =
+    run {
+        source_dir = source_dir
+        dist_dir = dist_dir
+        cache_dir = cache_dir
+        hangul_spec = "por-br"
+    }
+    |> async.block_on
+    |> resultm.unwrap'
+
+result
+|> sm'.format_debug'
+|> sm'.from_std_string
+|> _assert_eq (
+    ;[
+        Ok (
+            (dist_dir </> file_name |> file_system.absolute_path),
+            ;[
+            ]
+            |> am'.to_vec |> am'.vec_map ((optionm.map resultm.box) >> optionm'.box)
+        )
+    ]
+    |> am'.to_vec
+    |> am'.vec_map resultm.box
+    |> fun x => x : am'.vec (resultm.result' (string * am'.vec (optionm'.option' (resultm.result' string string))) sm'.std_string)
+    |> sm'.format_debug'
+    |> sm'.from_std_string
+)
+
+html_path
+|> file_system.read_all_text
+|> _assert_string_contains "<p class = \"rule\">***</p>\n<p id = \"para-1\">abc</p>"
+
+epub_path
+|> file_system.read_all_bytes
+|> sm'.slice_contains "application/epub+zip"
+|> _assert_eq true
 
 #!markdown
 
