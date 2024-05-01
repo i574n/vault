@@ -23,7 +23,7 @@ if (!$fast) {
 { pwsh ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block
 { pwsh ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
 
-{ pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block
+{ pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
 { pwsh ../apps/documents/build.ps1 } | Invoke-Block
 
 { sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu

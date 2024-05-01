@@ -50,6 +50,142 @@ let get_command () =
         |> runtime.arg_required true
     )
 
+// // ## crowbook
+let crowbook { ext dist_dir dist_path output_path } =
+    inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
+
+    inl exit_code, result =
+        runtime.execution_options fun x => { x with
+            command
+            working_directory = dist_dir |> Some |> optionm'.box
+        }
+        |> runtime.execute_with_options
+
+    if result |> sm'.contains "ERROR" then
+        trace Info
+            fun () => $'"documents.crowbook / result contains ERROR"'
+            fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+        (exit_code, result) |> Error
+    else (exit_code, result) |> Ok
+
+// // ## hangul
+let hangul repository_root hangul_spec { ext dist_dir dist_path output_path } =
+    inl lines =
+        dist_path
+        |> file_system.read_all_text
+        |> sm'.split "\n"
+        |> fun x => a x : _ i32 _
+        |> am.map sm'.trim
+    inl text =
+        lines
+        |> am.filter ((<>.) "")
+        |> seq.of_array'
+        |> sm'.concat "\n"
+        |> fun x => $'$"{!x}\n\n"'
+
+    inl exit_code, result =
+        runtime.execution_options fun x => { x with
+            command =
+                inl hangulize_path =
+                    inl _exe = runtime.get_executable_suffix ()
+                    repository_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
+                $'$"{!hangulize_path} {!hangul_spec}"'
+            stdin =
+                fun stdin =>
+                    inl stdin =
+                        stdin
+                        |> threading.arc_mutex_lock
+                        |> resultm.unwrap'
+                    text |> runtime.stdin_write_all stdin
+                |> Some |> optionm'.box
+        }
+        |> runtime.execute_with_options
+
+    inl result : string =
+        inl result =
+            result
+            |> sm'.split "\n"
+            |> fun x => a x : _ i32 _
+        inl result_len = result |> am'.length
+
+        (("", (0i32, 0i32)), lines)
+        ||> am.fold fun (acc, (i, n)) x =>
+            if x = ""
+            then $'$"{!acc}\n"', (i + 1, n + 1)
+            else
+                inl acc =
+                    inl i = i - n
+                    if i >= result_len
+                    then acc
+                    else
+                        inl line = result |> am'.index i
+                        if i = result_len - 1
+                        then $'$"{!acc}{!line}"'
+                        else $'$"{!acc}{!line}\n"'
+                acc, (i + 1, n)
+        |> fst
+
+    result |> file_system.write_all_text output_path
+
+    trace Info
+        fun () => $'"documents.hangul"'
+        fun () =>
+            inl result_len : i32 = result |> sm'.length
+            $'$"exit_code: %A{!exit_code} / result_len: {!result_len} / {!_locals ()}"'
+
+    (exit_code, result) |> Ok
+    |> fun x => x : result (i32 * string) (i32 * string)
+
+// // ## fix_paths
+let fix_paths { cache_dir dist_path ext } =
+    inl file_name = dist_path |> file_system.get_file_name
+    inl cache_path = cache_dir </> file_name
+    inl dist_path_no_ext =
+        dist_path
+        |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
+    inl cache_path_no_ext =
+        cache_path
+        |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
+
+    inl is_md = ext |> sm'.ends_with ".md"
+    inl output_path : string =
+        if is_md |> not
+        then $'$"{!dist_path}.{!ext}"'
+        else $'$"{!dist_path_no_ext}.{!ext}"'
+    inl output_cache_path : string =
+        if is_md |> not
+        then $'$"{!cache_path}.{!ext}"'
+        else $'$"{!cache_path_no_ext}.{!ext}"'
+    { output_path output_cache_path }
+
+// // ## files_fn
+inl files_fn { dist_dir cache_dir } fn dist_path ext =
+    inl { output_path output_cache_path } = fix_paths { cache_dir dist_path ext }
+    inl equal =
+        if file_system.file_exists output_path
+            && file_system.file_exists output_cache_path then
+            inl output_hash = output_path |> crypto.get_file_hash |> resultm.get
+            inl output_cache_hash = output_cache_path |> crypto.get_file_hash |> resultm.get
+            output_hash = output_cache_hash
+        else false
+
+    if not equal
+    then
+        match fn { ext dist_dir dist_path output_path } with
+        | Ok (exit_code, result) when exit_code <>. 0 =>
+            trace Info
+                fun () => $'"documents.files_fn / error"'
+                fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+            new_pair output_path result |> Error |> resultm.box |> Some
+        | Error (exit_code, result) =>
+            new_pair output_path result |> Error |> resultm.box |> Some
+        | _ =>
+            if output_path |> file_system.file_exists
+            then output_path |> file_system.file_copy output_cache_path
+            else failwith $'$"documents.files_fn / {!output_path} should exist"'
+            output_path |> Ok |> resultm.box |> Some
+    else None
+
 // // ## run
 let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
@@ -146,193 +282,80 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                     }
                     |> runtime.execute_with_options
 
-                inl files =
-                    if origin_hash |> sm'.contains local_git_hash |> not then
-                        inl get_file_hash (path : string) : string =
-                            inl path = path |> file_system.normalize_path
-                            inl exit_code, result =
-                                runtime.execution_options fun x => { x with
-                                    command = $'$"pwsh -c \\\"(Get-FileHash \\\\\\"{!path}\\\\\\" -Algorithm SHA256).Hash\\\""'
-                                }
-                                |> runtime.execute_with_options
-                            result
+                inl cache_path = cache_dir </> relative_path |> file_system.normalize_path
 
-                        inl hash1 = dist_path |> get_file_hash
-                        inl cache_path = cache_dir </> relative_path |> file_system.normalize_path
+                inl files =
+                    inl files_fn = files_fn { dist_dir cache_dir }
+                    inl files = [
+                        "hangul.md", dist_path, hangul repository_root hangul_spec |> files_fn
+                    ]
+
+                    inl { output_path } = fix_paths { dist_path cache_dir ext = "hangul.md" }
+
+                    inl files' = [
+                        "html", dist_path, crowbook |> files_fn
+                        "pdf", dist_path, crowbook |> files_fn
+                        "epub", dist_path, crowbook |> files_fn
+                        "html", output_path, crowbook |> files_fn
+                        "pdf", output_path, crowbook |> files_fn
+                        "epub", output_path, crowbook |> files_fn
+                    ]
+
+                    [ files; files' ]
+
+                inl files' =
+                    if origin_hash |> sm'.contains local_git_hash |> not then
+                        inl hash1 = dist_path |> crypto.get_file_hash |> resultm.get
                         inl hash2 =
                             if cache_path |> file_system.file_exists
-                            then cache_path |> get_file_hash
-                            else ""
+                            then cache_path |> crypto.get_file_hash |> resultm.ok
+                            else None
 
-                        if hash1 <>. hash2 then
-
-                            inl crowbook { ext dist_path output_path } =
-                                inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
-
-                                inl exit_code, result =
-                                    runtime.execution_options fun x => { x with
-                                        command
-                                        working_directory = dist_dir |> Some |> optionm'.box
-                                    }
-                                    |> runtime.execute_with_options
-
-                                if result |> sm'.contains "ERROR" then
-                                    trace Info
-                                        fun () => $'"documents.run / par_map / crowbook"'
-                                        fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
-                                    (exit_code, result) |> Error
-                                else (exit_code, result) |> Ok
-
-                            inl hangul { ext dist_path output_path } =
-                                inl lines =
-                                    dist_path
-                                    |> file_system.read_all_text
-                                    |> sm'.split "\n"
-                                    |> fun x => a x : _ i32 _
-                                    |> am.map sm'.trim
-                                inl text =
-                                    lines
-                                    |> am.filter ((<>.) "")
-                                    |> seq.of_array'
-                                    |> sm'.concat "\n"
-                                    |> fun x => $'$"{!x}\n\n"'
-
-                                inl exit_code, result =
-                                    runtime.execution_options fun x => { x with
-                                        command =
-                                            inl hangulize_path =
-                                                inl _exe = runtime.get_executable_suffix ()
-                                                repository_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
-                                            $'$"{!hangulize_path} {!hangul_spec}"'
-                                        stdin =
-                                            fun stdin =>
-                                                inl stdin =
-                                                    stdin
-                                                    |> threading.arc_mutex_lock
-                                                    |> resultm.unwrap'
-                                                text |> runtime.stdin_write_all stdin
-                                            |> Some |> optionm'.box
-                                    }
-                                    |> runtime.execute_with_options
-
-                                inl result : string =
-                                    inl result =
-                                        result
-                                        |> sm'.split "\n"
-                                        |> fun x => a x : _ i32 _
-                                    inl result_len = result |> am'.length
-
-                                    (("", (0i32, 0i32)), lines)
-                                    ||> am.fold fun (acc, (i, n)) x =>
-                                        if x = ""
-                                        then $'$"{!acc}\n"', (i + 1, n + 1)
-                                        else
-                                            inl acc =
-                                                inl i = i - n
-                                                if i >= result_len
-                                                then acc
-                                                else
-                                                    inl line = result |> am'.index i
-                                                    if i = result_len - 1
-                                                    then $'$"{!acc}{!line}"'
-                                                    else $'$"{!acc}{!line}\n"'
-                                            acc, (i + 1, n)
-                                    |> fst
-
-                                result |> file_system.write_all_text output_path
-                                (exit_code, result) |> Ok
-                                |> fun x => x : result (i32 * string) (i32 * string)
-
-                            inl files_fn dist_path fn ext =
-                                inl is_hangul = dist_path |> sm'.ends_with ".hangul.md"
-                                inl is_md = ext |> sm'.ends_with ".md"
-                                inl dist_path_no_ext =
-                                    dist_path
-                                    |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
-                                inl cache_path_no_ext =
-                                    cache_path
-                                    |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
-                                inl output_path =
-                                    if is_md |> not
-                                    then $'$"{!dist_path}.{!ext}"'
-                                    else $'$"{!dist_path_no_ext}.{!ext}"'
-                                inl output_cache_path =
-                                    if is_md |> not
-                                    then $'$"{!cache_path}.{!ext}"'
-                                    else $'$"{!cache_path_no_ext}.{!ext}"'
-                                inl equal =
-                                    if file_system.file_exists output_path
-                                        && file_system.file_exists output_cache_path then
-                                        inl output_hash = output_path |> get_file_hash
-                                        inl output_cache_hash = output_cache_path |> get_file_hash
-                                        output_hash = output_cache_hash
-                                    else false
-
-                                if not equal
-                                then
-                                    match fn { ext dist_path output_path } with
-                                    | Ok (exit_code, result) when exit_code <>. 0 =>
-                                        trace Info
-                                            fun () => $'"documents.run / par_map / files_fn"'
-                                            fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
-                                        new_pair output_path result |> Error |> resultm.box |> Some
-                                    | Error (exit_code, result) =>
-                                        new_pair output_path result |> Error |> resultm.box |> Some
-                                    | _ =>
-                                        if output_path |> file_system.file_exists
-                                        then output_path |> file_system.file_copy output_cache_path
-                                        else failwith $'$"documents.run / files_fn / {!output_path} should exist"'
-                                        output_path |> Ok |> resultm.box |> Some
-                                else None
-
-                            inl process_files files =
-                                files
-                                |> listm'.box
-                                |> listm'.to_array'
-                                |> fun (a x : _ i32 _) => x
-                                |> am'.to_vec
-                                |> async.into_par_iter
-                                |> async.par_map fun ext, fn =>
-                                    fn ext |> optionm'.box
-                                |> async.par_collect
-
-                            inl files = [
-                                "html", crowbook |> files_fn dist_path
-                                "pdf", crowbook |> files_fn dist_path
-                                "epub", crowbook |> files_fn dist_path
-                                "hangul.md", hangul |> files_fn dist_path
-                            ]
-
-                            inl files =
-                                files
-                                |> process_files
-
-                            inl dist_path_no_ext =
-                                dist_path
-                                |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
-                            inl output_path' = $'$"{!dist_path_no_ext}.hangul.md"'
-
-                            inl files' = [
-                                "html", crowbook |> files_fn output_path'
-                                "pdf", crowbook |> files_fn output_path'
-                                "epub", crowbook |> files_fn output_path'
-                            ]
-
-                            inl files' =
-                                files'
-                                |> process_files
-                            
-                            inl files = files |> am'.vec_extend files'
-
+                        if hash2 = None || hash1 <>. (hash2 |> optionm.value) then
                             trace Info
-                                fun () => $'"documents.run / par_map"'
-                                fun () => $'$"file: {!file} / real_path: {!real_path} / relative_path: {!relative_path} / origin_hash_exit_code: {!origin_hash_exit_code} / origin_hash: {!origin_hash} / local_git_hash_exit_code: {!local_git_hash_exit_code} / local_git_hash: {!local_git_hash} / hash1: {!hash1} / hash2: %A{!hash2} / files: %A{!files} / {!_locals ()}"'
-
+                                fun () => $'"documents.run / par_map / origin_hash |> sm\'.contains local_git_hash |> not / hash2 = None || hash1 <>. (hash2 |> optionm.value)"'
+                                fun () => $'$"file: {!file} / real_path: {!real_path} / relative_path: {!relative_path} / origin_hash_exit_code: {!origin_hash_exit_code} / origin_hash: {!origin_hash} / local_git_hash_exit_code: {!local_git_hash_exit_code} / local_git_hash: {!local_git_hash} / hash1: {!hash1} / hash2: %A{!hash2} / dist_path: {!dist_path} / cache_path: {!cache_path} / {!_locals ()}"'
                             dist_path |> file_system.file_copy cache_path
-
                             files
-                        else ;[] |> am'.to_vec
-                    else ;[] |> am'.to_vec
+                        else []
+                    else []
+                    
+                inl files' =
+                    if files' <> []
+                    then files'
+                    else
+                        files
+                        |> listm.map fun files =>
+                            files
+                            |> listm'.filter fun ext, path, fn =>
+                                inl { output_path output_cache_path } =
+                                    fix_paths { cache_dir dist_path = path; ext }
+                                if output_path |> file_system.file_exists |> not then
+                                    if file_system.file_exists output_cache_path then
+                                        trace Info
+                                            fun () => $'"documents.run / par_map / files\' = [] / listm.iter"'
+                                            fun () => $'$"output_path: %A{!output_path} / output_cache_path: {!output_cache_path} / {!_locals ()}"'
+                                        output_cache_path |> file_system.file_copy output_path
+                                        false
+                                    else true
+                                else true
+
+                inl files =
+                    files'
+                    |> listm'.box
+                    |> listm'.to_array'
+                    |> fun (a x : _ i32 _) => x
+                    |> am'.to_vec
+                    |> am'.vec_collect fun files =>
+                        files
+                        |> listm'.box
+                        |> listm'.to_array'
+                        |> fun (a x : _ i32 _) => x
+                        |> am'.to_vec
+                        |> async.into_par_iter
+                        |> async.par_map fun ext, path, fn =>
+                            fn path ext |> optionm'.box
+                        |> async.par_collect
 
                 (new_pair file files |> Ok |> resultm.box) : _ _ sm'.std_string
             |> async.par_collect
