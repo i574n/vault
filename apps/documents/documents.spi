@@ -166,7 +166,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                         if hash1 <>. hash2 then
 
-                            inl crowbook { ext output_path } =
+                            inl crowbook { ext dist_path output_path } =
                                 inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
 
                                 inl exit_code, result =
@@ -183,7 +183,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                     (exit_code, result) |> Error
                                 else (exit_code, result) |> Ok
 
-                            inl hangul { ext output_path } =
+                            inl hangul { ext dist_path output_path } =
                                 inl lines =
                                     dist_path
                                     |> file_system.read_all_text
@@ -243,23 +243,23 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                 (exit_code, result) |> Ok
                                 |> fun x => x : result (i32 * string) (i32 * string)
 
-                            inl files_fn fn ext =
+                            inl files_fn dist_path fn ext =
+                                inl is_hangul = dist_path |> sm'.ends_with ".hangul.md"
+                                inl is_md = ext |> sm'.ends_with ".md"
+                                inl dist_path_no_ext =
+                                    dist_path
+                                    |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
+                                inl cache_path_no_ext =
+                                    cache_path
+                                    |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
                                 inl output_path =
-                                    if ext |> sm'.ends_with ".md" |> not
+                                    if is_md |> not
                                     then $'$"{!dist_path}.{!ext}"'
-                                    else
-                                        inl dist_path_no_ext =
-                                            dist_path
-                                            |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
-                                        $'$"{!dist_path_no_ext}.{!ext}"'
+                                    else $'$"{!dist_path_no_ext}.{!ext}"'
                                 inl output_cache_path =
-                                    if ext |> sm'.ends_with ".md" |> not
+                                    if is_md |> not
                                     then $'$"{!cache_path}.{!ext}"'
-                                    else
-                                        inl cache_path_no_ext =
-                                            cache_path
-                                            |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
-                                        $'$"{!cache_path_no_ext}.{!ext}"'
+                                    else $'$"{!cache_path_no_ext}.{!ext}"'
                                 inl equal =
                                     if file_system.file_exists output_path
                                         && file_system.file_exists output_cache_path then
@@ -270,7 +270,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                                 if not equal
                                 then
-                                    match fn { ext output_path } with
+                                    match fn { ext dist_path output_path } with
                                     | Ok (exit_code, result) when exit_code <>. 0 =>
                                         trace Info
                                             fun () => $'"documents.run / par_map / files_fn"'
@@ -285,15 +285,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                         output_path |> Ok |> resultm.box |> Some
                                 else None
 
-
-                            inl files = [
-                                "html", crowbook |> files_fn
-                                "pdf", crowbook |> files_fn
-                                "epub", crowbook |> files_fn
-                                "hangul.md", hangul |> files_fn
-                            ]
-
-                            inl files =
+                            inl process_files files =
                                 files
                                 |> listm'.box
                                 |> listm'.to_array'
@@ -303,6 +295,34 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                 |> async.par_map fun ext, fn =>
                                     fn ext |> optionm'.box
                                 |> async.par_collect
+
+                            inl files = [
+                                "html", crowbook |> files_fn dist_path
+                                "pdf", crowbook |> files_fn dist_path
+                                "epub", crowbook |> files_fn dist_path
+                                "hangul.md", hangul |> files_fn dist_path
+                            ]
+
+                            inl files =
+                                files
+                                |> process_files
+
+                            inl dist_path_no_ext =
+                                dist_path
+                                |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
+                            inl output_path' = $'$"{!dist_path_no_ext}.hangul.md"'
+
+                            inl files' = [
+                                "html", crowbook |> files_fn output_path'
+                                "pdf", crowbook |> files_fn output_path'
+                                "epub", crowbook |> files_fn output_path'
+                            ]
+
+                            inl files' =
+                                files'
+                                |> process_files
+                            
+                            inl files = files |> am'.vec_extend files'
 
                             trace Info
                                 fun () => $'"documents.run / par_map"'

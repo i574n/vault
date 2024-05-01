@@ -201,7 +201,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                         if hash1 <>. hash2 then
 
-                            inl crowbook { ext output_path } =
+                            inl crowbook { ext dist_path output_path } =
                                 inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
 
                                 inl exit_code, result =
@@ -218,7 +218,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                     (exit_code, result) |> Error
                                 else (exit_code, result) |> Ok
 
-                            inl hangul { ext output_path } =
+                            inl hangul { ext dist_path output_path } =
                                 inl lines =
                                     dist_path
                                     |> file_system.read_all_text
@@ -278,23 +278,23 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                 (exit_code, result) |> Ok
                                 |> fun x => x : result (i32 * string) (i32 * string)
 
-                            inl files_fn fn ext =
+                            inl files_fn dist_path fn ext =
+                                inl is_hangul = dist_path |> sm'.ends_with ".hangul.md"
+                                inl is_md = ext |> sm'.ends_with ".md"
+                                inl dist_path_no_ext =
+                                    dist_path
+                                    |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
+                                inl cache_path_no_ext =
+                                    cache_path
+                                    |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
                                 inl output_path =
-                                    if ext |> sm'.ends_with ".md" |> not
+                                    if is_md |> not
                                     then $'$"{!dist_path}.{!ext}"'
-                                    else
-                                        inl dist_path_no_ext =
-                                            dist_path
-                                            |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
-                                        $'$"{!dist_path_no_ext}.{!ext}"'
+                                    else $'$"{!dist_path_no_ext}.{!ext}"'
                                 inl output_cache_path =
-                                    if ext |> sm'.ends_with ".md" |> not
+                                    if is_md |> not
                                     then $'$"{!cache_path}.{!ext}"'
-                                    else
-                                        inl cache_path_no_ext =
-                                            cache_path
-                                            |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
-                                        $'$"{!cache_path_no_ext}.{!ext}"'
+                                    else $'$"{!cache_path_no_ext}.{!ext}"'
                                 inl equal =
                                     if file_system.file_exists output_path
                                         && file_system.file_exists output_cache_path then
@@ -305,7 +305,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                                 if not equal
                                 then
-                                    match fn { ext output_path } with
+                                    match fn { ext dist_path output_path } with
                                     | Ok (exit_code, result) when exit_code <>. 0 =>
                                         trace Info
                                             fun () => $'"documents.run / par_map / files_fn"'
@@ -320,15 +320,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                         output_path |> Ok |> resultm.box |> Some
                                 else None
 
-
-                            inl files = [
-                                "html", crowbook |> files_fn
-                                "pdf", crowbook |> files_fn
-                                "epub", crowbook |> files_fn
-                                "hangul.md", hangul |> files_fn
-                            ]
-
-                            inl files =
+                            inl process_files files =
                                 files
                                 |> listm'.box
                                 |> listm'.to_array'
@@ -338,6 +330,34 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                 |> async.par_map fun ext, fn =>
                                     fn ext |> optionm'.box
                                 |> async.par_collect
+
+                            inl files = [
+                                "html", crowbook |> files_fn dist_path
+                                "pdf", crowbook |> files_fn dist_path
+                                "epub", crowbook |> files_fn dist_path
+                                "hangul.md", hangul |> files_fn dist_path
+                            ]
+
+                            inl files =
+                                files
+                                |> process_files
+
+                            inl dist_path_no_ext =
+                                dist_path
+                                |> sm'.slice 0 ((dist_path |> sm'.last_index_of ".") - 1)
+                            inl output_path' = $'$"{!dist_path_no_ext}.hangul.md"'
+
+                            inl files' = [
+                                "html", crowbook |> files_fn output_path'
+                                "pdf", crowbook |> files_fn output_path'
+                                "epub", crowbook |> files_fn output_path'
+                            ]
+
+                            inl files' =
+                                files'
+                                |> process_files
+                            
+                            inl files = files |> am'.vec_extend files'
 
                             trace Info
                                 fun () => $'"documents.run / par_map"'
@@ -387,8 +407,12 @@ text |> file_system.write_all_text (source_dir </> file_name)
 text |> file_system.write_all_text (dist_dir </> file_name)
 
 inl html_path = dist_dir </> $'$"{!file_name}.html"' |> file_system.absolute_path
+inl pdf_path = dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path
 inl epub_path = dist_dir </> $'$"{!file_name}.epub"' |> file_system.absolute_path
 inl hangul_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md"' |> file_system.absolute_path
+inl hangul_html_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md.html"' |> file_system.absolute_path
+inl hangul_pdf_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md.pdf"' |> file_system.absolute_path
+inl hangul_epub_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md.epub"' |> file_system.absolute_path
 
 inl result =
     run {
@@ -400,6 +424,8 @@ inl result =
     |> async.block_on
     |> resultm.unwrap'
 
+inl windows_pdf_error = "CROWBOOK 0.16.1\nERROR Error during temporary files editing: xelatex didn't return succesfully"
+
 result
 |> sm'.format_debug'
 |> sm'.from_std_string
@@ -410,15 +436,17 @@ result
             ;[
                 html_path |> Ok |> Some
                 if runtime.is_windows () |> not
-                then dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path |> Ok
-                else
-                    new_pair
-                        (dist_dir </> $'$"{!file_name}.pdf"' |> file_system.absolute_path)
-                        "CROWBOOK 0.16.1\nERROR Error during temporary files editing: xelatex didn't return succesfully"
-                    |> Error
+                then pdf_path |> Ok
+                else new_pair pdf_path windows_pdf_error |> Error
                 |> Some
                 epub_path |> Ok |> Some
                 hangul_path |> Ok |> Some
+                hangul_html_path |> Ok |> Some
+                if runtime.is_windows () |> not
+                then hangul_pdf_path |> Ok
+                else new_pair hangul_pdf_path windows_pdf_error |> Error
+                |> Some
+                hangul_epub_path |> Ok |> Some
             ]
             |> am'.to_vec |> am'.vec_map ((optionm.map resultm.box) >> optionm'.box)
         )
@@ -476,6 +504,15 @@ epub_path
 hangul_path
 |> file_system.read_all_text
 |> _assert_eq "# 아\n\n## 브\n\n---\n\n아브크\n아브크\n\n아브크\n\n아브크\n"
+
+hangul_html_path
+|> file_system.read_all_text
+|> _assert_string_contains "<p class = \"rule\">***</p>\n<p id = \"para-1\">아브크 아브크</p>"
+
+hangul_epub_path
+|> file_system.read_all_bytes
+|> sm'.slice_contains "application/epub+zip"
+|> _assert_eq true
 
 #!markdown
 
