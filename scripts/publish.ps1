@@ -61,7 +61,6 @@ git pull --rebase -Xtheirs
 Set-Location $ScriptDir
 
 
-. ../apps/documents/target/release/documents$(_exe) --source-dir $vaultDir --dist-dir $distDir --cache-dir $targetDir --hangul-spec por-br
+{ . ../apps/documents/target/release/documents$(_exe) --source-dir $vaultDir --dist-dir $distDir --cache-dir $targetDir --hangul-spec por-br } | Invoke-Block
 
-$fileName = "DirTreeHtml$(_exe)"
-{ . ../../polyglot/apps/dir-tree-html/dist/$fileName --dir ../dist --html ../dist/index.html } | Invoke-Block
+{ . ../../polyglot/apps/dir-tree-html/dist/DirTreeHtml$(_exe) --dir ../dist --html ../dist/index.html } | Invoke-Block

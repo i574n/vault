@@ -17,14 +17,14 @@ if (!$fast) {
 
 . ../../polyglot/scripts/core.ps1
 
-{ . ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
-{ . ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
-{ . ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
-{ . ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block -Location $ScriptDir
-{ . ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
+{ pwsh ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block
+{ pwsh ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
 
-{ . ./dep_hangulize.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
-{ . ../apps/documents/build.ps1 } | Invoke-Block -Location $ScriptDir
+{ pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../apps/documents/build.ps1 } | Invoke-Block
 
 { sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
 { sudo apt install -y texlive-xetex } | Invoke-Block -Linux -Distro ubuntu
