@@ -12,25 +12,19 @@ if (!$fast) {
     Set-Location polyglot
     git pull
     Set-Location $ScriptDir
-    . ../../polyglot/scripts/init.ps1
+    pwsh ../../polyglot/scripts/init.ps1
 }
 
 . ../../polyglot/scripts/core.ps1
 
-Write-Output "#1 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
-{ pwsh ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
-Write-Output "#2 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
-{ pwsh ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
-Write-Output "#3 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
-{ pwsh ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
-Write-Output "#4 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
-{ pwsh ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block
-Write-Output "#5 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
-{ pwsh ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
-Write-Output "#6 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
 
-{ pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block -Location $ScriptDir
-Write-Output "#7 / ScriptDir: $ScriptDir / Location: $(Get-Location)"
+{ pwsh ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block
+{ pwsh ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
+
+{ pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block
 { pwsh ../apps/documents/build.ps1 } | Invoke-Block
 
 { sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
