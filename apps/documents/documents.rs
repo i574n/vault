@@ -3878,101 +3878,105 @@ mod module_2555ccf7 {
                             > = std::sync::Arc::new(v93);
                             let v97: std::thread::JoinHandle<()> = std::thread::spawn(move || {
                                 //;
-                                let v99: std::io::Lines<
+                                let v99: std::process::ChildStdout =
+                                    v63.lock().unwrap().take().unwrap();
+                                let v101: std::io::BufReader<std::process::ChildStdout> =
+                                    std::io::BufReader::new(v99);
+                                let v103: std::io::Lines<
                                     std::io::BufReader<std::process::ChildStdout>,
-                                > = std::io::BufRead::lines(std::io::BufReader::new(
-                                    v63.lock().unwrap().take().unwrap(),
-                                ));
-                                let v102: std::sync::Mutex<
+                                > = std::io::BufRead::lines(v101);
+                                let v106: std::sync::Mutex<
                                     std::io::Lines<std::io::BufReader<std::process::ChildStdout>>,
-                                > = Documents::method60(std::sync::Mutex::new(v99));
-                                let v104: std::sync::Arc<
+                                > = Documents::method60(std::sync::Mutex::new(v103));
+                                let v108: std::sync::Arc<
                                     std::sync::Mutex<
                                         std::io::Lines<
                                             std::io::BufReader<std::process::ChildStdout>,
                                         >,
                                     >,
-                                > = std::sync::Arc::new(v102);
-                                let v105 = Documents::method61(v88);
-                                let v107: bool = true;
-                                for line in v104.lock().unwrap().by_ref() {
-                                    v105(line)
+                                > = std::sync::Arc::new(v106);
+                                let v109 = Documents::method61(v88);
+                                let v111: bool = true;
+                                for line in v108.lock().unwrap().by_ref() {
+                                    v109(line)
                                 }
-                                let v109: bool = true;
+                                let v113: bool = true;
                             });
-                            let v111: std::thread::JoinHandle<()> = std::thread::spawn(move || {
+                            let v115: std::thread::JoinHandle<()> = std::thread::spawn(move || {
                                 //;
-                                let v113: std::io::Lines<
+                                let v117: std::process::ChildStderr =
+                                    v69.lock().unwrap().take().unwrap();
+                                let v119: std::io::BufReader<std::process::ChildStderr> =
+                                    std::io::BufReader::new(v117);
+                                let v121: std::io::Lines<
                                     std::io::BufReader<std::process::ChildStderr>,
-                                > = std::io::BufRead::lines(std::io::BufReader::new(
-                                    v69.lock().unwrap().take().unwrap(),
-                                ));
-                                let v116: std::sync::Mutex<
+                                > = std::io::BufRead::lines(v119);
+                                let v124: std::sync::Mutex<
                                     std::io::Lines<std::io::BufReader<std::process::ChildStderr>>,
-                                > = Documents::method62(std::sync::Mutex::new(v113));
-                                let v118: std::sync::Arc<
+                                > = Documents::method62(std::sync::Mutex::new(v121));
+                                let v126: std::sync::Arc<
                                     std::sync::Mutex<
                                         std::io::Lines<
                                             std::io::BufReader<std::process::ChildStderr>,
                                         >,
                                     >,
-                                > = std::sync::Arc::new(v116);
-                                let v119 = Documents::method63(v86);
-                                let v121: bool = true;
-                                for line in v118.lock().unwrap().by_ref() {
-                                    v119(line)
+                                > = std::sync::Arc::new(v124);
+                                let v127 = Documents::method63(v86);
+                                let v129: bool = true;
+                                for line in v126.lock().unwrap().by_ref() {
+                                    v127(line)
                                 }
-                                let v123: bool = true;
+                                let v131: bool = true;
                             });
-                            let v126: Documents::US14 = defaultValue(
+                            let v134: Documents::US14 = defaultValue(
                                 Documents::US14::US14_1,
                                 map(Documents::method64(), v4),
                             );
-                            match &v126 {
-                                Documents::US14::US14_0(v126_0_0) => {
-                                    let v129: Option<std::process::ChildStdin> =
+                            match &v134 {
+                                Documents::US14::US14_0(v134_0_0) => {
+                                    let v137: Option<std::process::ChildStdin> =
                                         v75.lock().unwrap().take();
-                                    let v132: Option<
+                                    let v140: Option<
                                         std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>,
-                                    > = v129.map(|x| {
+                                    > = v137.map(|x| {
                                         Func1::new(move |v_2: std::process::ChildStdin| {
                                             Documents::closure42((), v_2)
                                         })(x)
                                     });
-                                    let v135: Documents::US15 = defaultValue(
+                                    let v143: Documents::US15 = defaultValue(
                                         Documents::US15::US15_1,
-                                        map(Documents::method66(), v132),
+                                        map(Documents::method66(), v140),
                                     );
-                                    match &v135 {
-                                        Documents::US15::US15_0(v135_0_0) => {
-                                            let v136: std::sync::Arc<
+                                    match &v143 {
+                                        Documents::US15::US15_0(v143_0_0) => {
+                                            let v144: std::sync::Arc<
                                                 std::sync::Mutex<std::process::ChildStdin>,
-                                            > = match &v135 {
+                                            > = match &v143 {
                                                 Documents::US15::US15_0(x) => x.clone(),
                                                 _ => unreachable!(),
                                             };
-                                            (match &v126 {
+                                            (match &v134 {
                                                 Documents::US14::US14_0(x) => x.clone(),
                                                 _ => unreachable!(),
                                             })(
-                                                v136.clone()
+                                                v144.clone()
                                             );
                                             {
-                                                let v138: Result<
+                                                let v146: Result<
                                                     std::sync::MutexGuard<std::process::ChildStdin>,
                                                     std::sync::PoisonError<
                                                         std::sync::MutexGuard<
                                                             std::process::ChildStdin,
                                                         >,
                                                     >,
-                                                > = v136.lock();
-                                                let v141: std::sync::MutexGuard<
+                                                > = v144.lock();
+                                                let v149: std::sync::MutexGuard<
                                                     std::process::ChildStdin,
-                                                > = Documents::method67(v138.unwrap());
-                                                let v143: bool = true;
-                                                let mut v141 = v141;
-                                                let v145: bool = true;
-                                                std::io::Write::flush(&mut *v141).unwrap();
+                                                > = Documents::method67(v146.unwrap());
+                                                let v151: bool = true;
+                                                let mut v149 = v149;
+                                                let v153: bool = true;
+                                                std::io::Write::flush(&mut *v149).unwrap();
                                                 ()
                                             }
                                         }
@@ -3982,38 +3986,38 @@ mod module_2555ccf7 {
                                 _ => (),
                             }
                             {
-                                let v147: Result<std::process::Output, std::io::Error> =
+                                let v155: Result<std::process::Output, std::io::Error> =
                                     v51.lock().unwrap().take().unwrap().wait_with_output();
-                                let v148 = Documents::method33();
-                                let v150: Result<std::process::Output, std::string::String> =
-                                    v147.map_err(|x| v148(x));
-                                let v152: bool = true;
+                                let v156 = Documents::method33();
+                                let v158: Result<std::process::Output, std::string::String> =
+                                    v155.map_err(|x| v156(x));
+                                let v160: bool = true;
                                 v97.join().unwrap();
-                                let v154: bool = true;
-                                v111.join().unwrap();
-                                let v157: Documents::US16 = match &v150 {
-                                    Err(v150_1_0) => Documents::closure45((), v150_1_0.clone()),
-                                    Ok(v150_0_0) => Documents::closure44((), v150_0_0.clone()),
+                                let v162: bool = true;
+                                v115.join().unwrap();
+                                let v165: Documents::US16 = match &v158 {
+                                    Err(v158_1_0) => Documents::closure45((), v158_1_0.clone()),
+                                    Ok(v158_0_0) => Documents::closure44((), v158_0_0.clone()),
                                 };
-                                match &v157 {
-                                    Documents::US16::US16_0(v157_0_0) => (
-                                        v157_0_0.clone().status.code().unwrap(),
+                                match &v165 {
+                                    Documents::US16::US16_0(v165_0_0) => (
+                                        v165_0_0.clone().status.code().unwrap(),
                                         Documents::US3::US3_1,
                                         Documents::US12::US12_0(v95),
                                     ),
-                                    Documents::US16::US16_1(v157_1_0) => {
-                                        let v163: std::string::String = v157_1_0.clone();
+                                    Documents::US16::US16_1(v165_1_0) => {
+                                        let v171: std::string::String = v165_1_0.clone();
                                         Documents::method3(
                                             Documents::US0::US0_4,
                                             Func0::new({
-                                                let v163 = v163.clone();
-                                                move || Documents::closure46(v163.clone(), ())
+                                                let v171 = v171.clone();
+                                                move || Documents::closure46(v171.clone(), ())
                                             }),
                                             Func0::new(move || Documents::closure6((), ())),
                                         );
                                         (
                                             -2_i32,
-                                            Documents::US3::US3_0(v163.clone()),
+                                            Documents::US3::US3_0(v171.clone()),
                                             Documents::US12::US12_1,
                                         )
                                     }
@@ -4021,28 +4025,28 @@ mod module_2555ccf7 {
                             }
                         }
                         Documents::US11::US11_1(v49_1_0) => {
-                            let v175: std::string::String = v49_1_0.clone();
+                            let v183: std::string::String = v49_1_0.clone();
                             Documents::method3(
                                 Documents::US0::US0_4,
                                 Func0::new({
-                                    let v175 = v175.clone();
-                                    move || Documents::closure33(v175.clone(), ())
+                                    let v183 = v183.clone();
+                                    move || Documents::closure33(v183.clone(), ())
                                 }),
                                 Func0::new(move || Documents::closure6((), ())),
                             );
                             (
                                 -1_i32,
-                                Documents::US3::US3_0(v175.clone()),
+                                Documents::US3::US3_0(v183.clone()),
                                 Documents::US12::US12_1,
                             )
                         }
                     };
-                    let v186: Documents::US12 = patternInput_1.2.clone();
-                    let v185: Documents::US3 = patternInput_1.1.clone();
-                    let v184: i32 = patternInput_1.0.clone();
-                    let v193: Documents::US3 = match &v186 {
-                        Documents::US12::US12_0(v186_0_0) => Documents::US3::US3_0(
-                            match &v186 {
+                    let v194: Documents::US12 = patternInput_1.2.clone();
+                    let v193: Documents::US3 = patternInput_1.1.clone();
+                    let v192: i32 = patternInput_1.0.clone();
+                    let v201: Documents::US3 = match &v194 {
+                        Documents::US12::US12_0(v194_0_0) => Documents::US3::US3_0(
+                            match &v194 {
                                 Documents::US12::US12_0(x) => x.clone(),
                                 _ => unreachable!(),
                             }
@@ -4054,7 +4058,16 @@ mod module_2555ccf7 {
                         ),
                         _ => Documents::US3::US3_1,
                     };
-                    let v200: Documents::US4 = match &v193 {
+                    let v208: Documents::US4 = match &v201 {
+                        Documents::US3::US3_0(v201_0_0) => Documents::US4::US4_0(
+                            fable_library_rust::String_::fromString(match &v201 {
+                                Documents::US3::US3_0(x) => x.clone(),
+                                _ => unreachable!(),
+                            }),
+                        ),
+                        _ => Documents::US4::US4_1,
+                    };
+                    let v215: Documents::US4 = match &v193 {
                         Documents::US3::US3_0(v193_0_0) => Documents::US4::US4_0(
                             fable_library_rust::String_::fromString(match &v193 {
                                 Documents::US3::US3_0(x) => x.clone(),
@@ -4063,43 +4076,34 @@ mod module_2555ccf7 {
                         ),
                         _ => Documents::US4::US4_1,
                     };
-                    let v207: Documents::US4 = match &v185 {
-                        Documents::US3::US3_0(v185_0_0) => Documents::US4::US4_0(
-                            fable_library_rust::String_::fromString(match &v185 {
-                                Documents::US3::US3_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            }),
-                        ),
-                        _ => Documents::US4::US4_1,
-                    };
-                    let v211: string = match &v207 {
-                        Documents::US4::US4_0(v207_0_0) => match &v207 {
+                    let v219: string = match &v215 {
+                        Documents::US4::US4_0(v215_0_0) => match &v215 {
                             Documents::US4::US4_0(x) => x.clone(),
                             _ => unreachable!(),
                         },
                         _ => string(""),
                     };
-                    let v214: string = match &v200 {
-                        Documents::US4::US4_0(v200_0_0) => match &v200 {
+                    let v222: string = match &v208 {
+                        Documents::US4::US4_0(v208_0_0) => match &v208 {
                             Documents::US4::US4_0(x) => x.clone(),
                             _ => unreachable!(),
                         },
-                        _ => v211,
+                        _ => v219,
                     };
                     Documents::method3(
                         Documents::US0::US0_0,
                         Func0::new({
-                            let v184 = v184.clone();
-                            let v214 = v214.clone();
-                            move || Documents::closure47(v184, v214.clone(), ())
+                            let v192 = v192.clone();
+                            let v222 = v222.clone();
+                            move || Documents::closure47(v192, v222.clone(), ())
                         }),
                         Func0::new(move || Documents::closure6((), ())),
                     );
                     {
-                        let v218: LrcPtr<(i32, string)> = LrcPtr::new((v184, v214.clone()));
-                        let v219: LrcPtr<(i32, string)> =
-                            Documents::method68(v218.0.clone(), v218.1.clone());
-                        v219
+                        let v226: LrcPtr<(i32, string)> = LrcPtr::new((v192, v222.clone()));
+                        let v227: LrcPtr<(i32, string)> =
+                            Documents::method68(v226.0.clone(), v226.1.clone());
+                        v227
                     }
                 }
             });

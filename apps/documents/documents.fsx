@@ -171,6 +171,54 @@ type chrono_Utc = class end
 #endif
 type std_time_Duration = class end
 #if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("async_std::io::BufReader<$0>")>]
+#endif
+type async_std_io_BufReader<'T> = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::io::BufReader<$0>")>]
+#endif
+type std_io_BufReader<'T> = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::io::Error")>]
+#endif
+type std_io_Error = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::io::Lines<$0>")>]
+#endif
+type std_io_Lines<'T> = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::fs::File")>]
+#endif
+type std_fs_File = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::fs::FileType")>]
+#endif
+type std_fs_FileType = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::path::Display")>]
+#endif
+type std_path_Display = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::path::Path")>]
+#endif
+type std_path_Path = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::path::PathBuf")>]
+#endif
+type std_path_PathBuf = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("async_walkdir::DirEntry")>]
+#endif
+type async_walkdir_DirEntry = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("async_walkdir::Filtering")>]
+#endif
+type async_walkdir_Filtering = class end
+#if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("async_walkdir::WalkDir")>]
+#endif
+type async_walkdir_WalkDir = class end
+#if FABLE_COMPILER
 [<Fable.Core.Erase; Fable.Core.Emit("std::future::Future<Output = $0>")>]
 #endif
 type std_future_Future<'T> = class end
@@ -227,22 +275,6 @@ type clap_Command = class end
 #endif
 type clap_ArgMatches = class end
 #if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::io::Error")>]
-#endif
-type std_io_Error = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::io::Lines<$0>")>]
-#endif
-type std_io_Lines<'T> = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("async_std::io::BufReader<$0>")>]
-#endif
-type async_std_io_BufReader<'T> = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::io::BufReader<$0>")>]
-#endif
-type std_io_BufReader<'T> = class end
-#if FABLE_COMPILER
 [<Fable.Core.Erase; Fable.Core.Emit("std::process::Child")>]
 #endif
 type std_process_Child = class end
@@ -278,34 +310,6 @@ type std_sync_mpsc_Receiver<'T> = class end
 [<Fable.Core.Erase; Fable.Core.Emit("std::sync::mpsc::Sender<$0>")>]
 #endif
 type std_sync_mpsc_Sender<'T> = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::fs::FileType")>]
-#endif
-type std_fs_FileType = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::path::Display")>]
-#endif
-type std_path_Display = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::path::Path")>]
-#endif
-type std_path_Path = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("std::path::PathBuf")>]
-#endif
-type std_path_PathBuf = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("async_walkdir::DirEntry")>]
-#endif
-type async_walkdir_DirEntry = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("async_walkdir::Filtering")>]
-#endif
-type async_walkdir_Filtering = class end
-#if FABLE_COMPILER
-[<Fable.Core.Erase; Fable.Core.Emit("async_walkdir::WalkDir")>]
-#endif
-type async_walkdir_WalkDir = class end
 module State = let mutable trace_state = None
 type IPathJoin = abstract join: [<System.ParamArray>] paths: string[] -> string
 type IFsExistsSync = abstract existsSync: path: string -> bool
@@ -2687,16 +2691,16 @@ and method48 (v0 : System.Threading.CancellationToken option, v1 : string, v2 : 
     let v47 : (std_sync_Arc<std_sync_Mutex<std_process_Child option>> -> US11) = closure31()
     let v48 : (std_string_String -> US11) = closure32()
     let v49 : US11 = match v46 with Ok x -> v47 x | Error x -> v48 x
-    let struct (v184 : int32, v185 : US3, v186 : US12) =
+    let struct (v192 : int32, v193 : US3, v194 : US12) =
         match v49 with
-        | US11_1(v175) -> (* Error *)
-            let v176 : US0 = US0_4
-            let v177 : (unit -> string) = closure33(v175)
-            let v178 : (unit -> string) = closure6()
-            method3(v176, v177, v178)
-            let v179 : US3 = US3_0(v175)
-            let v180 : US12 = US12_1
-            struct (-1, v179, v180)
+        | US11_1(v183) -> (* Error *)
+            let v184 : US0 = US0_4
+            let v185 : (unit -> string) = closure33(v183)
+            let v186 : (unit -> string) = closure6()
+            method3(v184, v185, v186)
+            let v187 : US3 = US3_0(v183)
+            let v188 : US12 = US12_1
+            struct (-1, v187, v188)
         | US11_0(v50) -> (* Ok *)
             let v51 : std_sync_Arc<std_sync_Mutex<std_process_Child option>> = method53(v50)
             let v52 : string = "v51.lock().unwrap().as_mut().unwrap().stdout.take().unwrap()"
@@ -2744,139 +2748,147 @@ and method48 (v0 : System.Threading.CancellationToken option, v1 : string, v2 : 
             let v95 : std_sync_Arc<std_sync_Mutex<std_sync_Arc<std_sync_mpsc_Receiver<std_string_String>>>> = Fable.Core.RustInterop.emitRustExpr () v94
             let v96 : string = "std::thread::spawn(move || { //"
             let v97 : std_thread_JoinHandle<unit> = Fable.Core.RustInterop.emitRustExpr () v96
-            let v98 : string = "std::io::BufRead::lines(std::io::BufReader::new(v63.lock().unwrap().take().unwrap()))"
-            let v99 : std_io_Lines<std_io_BufReader<std_process_ChildStdout>> = Fable.Core.RustInterop.emitRustExpr () v98
-            let v100 : string = "std::sync::Mutex::new($0)"
-            let v101 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStdout>>> = Fable.Core.RustInterop.emitRustExpr v99 v100
-            let v102 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStdout>>> = method60(v101)
-            let v103 : string = "std::sync::Arc::new(v102)"
-            let v104 : std_sync_Arc<std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStdout>>>> = Fable.Core.RustInterop.emitRustExpr () v103
-            let v105 : (Result<std_string_String, std_io_Error> -> unit) = method61(v88)
-            let v106 : string = "true; for line in $0.lock().unwrap().by_ref() { v105(line) }"
-            let v107 : bool = Fable.Core.RustInterop.emitRustExpr v104 v106
-            let v108 : string = "true; })"
-            let v109 : bool = Fable.Core.RustInterop.emitRustExpr () v108
-            let v110 : string = "std::thread::spawn(move || { //"
-            let v111 : std_thread_JoinHandle<unit> = Fable.Core.RustInterop.emitRustExpr () v110
-            let v112 : string = "std::io::BufRead::lines(std::io::BufReader::new(v69.lock().unwrap().take().unwrap()))"
-            let v113 : std_io_Lines<std_io_BufReader<std_process_ChildStderr>> = Fable.Core.RustInterop.emitRustExpr () v112
-            let v114 : string = "std::sync::Mutex::new($0)"
-            let v115 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStderr>>> = Fable.Core.RustInterop.emitRustExpr v113 v114
-            let v116 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStderr>>> = method62(v115)
-            let v117 : string = "std::sync::Arc::new(v116)"
-            let v118 : std_sync_Arc<std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStderr>>>> = Fable.Core.RustInterop.emitRustExpr () v117
-            let v119 : (Result<std_string_String, std_io_Error> -> unit) = method63(v86)
-            let v120 : string = "true; for line in $0.lock().unwrap().by_ref() { v119(line) }"
-            let v121 : bool = Fable.Core.RustInterop.emitRustExpr v118 v120
-            let v122 : string = "true; })"
-            let v123 : bool = Fable.Core.RustInterop.emitRustExpr () v122
-            let v124 : ((std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) -> US14) = method64()
-            let v125 : US14 = US14_1
-            let v126 : US14 = v4 |> Option.map v124 |> Option.defaultValue v125 
-            match v126 with
+            let v98 : string = "v63.lock().unwrap().take().unwrap()"
+            let v99 : std_process_ChildStdout = Fable.Core.RustInterop.emitRustExpr () v98
+            let v100 : string = "std::io::BufReader::new(v99)"
+            let v101 : std_io_BufReader<std_process_ChildStdout> = Fable.Core.RustInterop.emitRustExpr () v100
+            let v102 : string = "std::io::BufRead::lines(v101)"
+            let v103 : std_io_Lines<std_io_BufReader<std_process_ChildStdout>> = Fable.Core.RustInterop.emitRustExpr () v102
+            let v104 : string = "std::sync::Mutex::new($0)"
+            let v105 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStdout>>> = Fable.Core.RustInterop.emitRustExpr v103 v104
+            let v106 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStdout>>> = method60(v105)
+            let v107 : string = "std::sync::Arc::new(v106)"
+            let v108 : std_sync_Arc<std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStdout>>>> = Fable.Core.RustInterop.emitRustExpr () v107
+            let v109 : (Result<std_string_String, std_io_Error> -> unit) = method61(v88)
+            let v110 : string = "true; for line in $0.lock().unwrap().by_ref() { v109(line) }"
+            let v111 : bool = Fable.Core.RustInterop.emitRustExpr v108 v110
+            let v112 : string = "true; })"
+            let v113 : bool = Fable.Core.RustInterop.emitRustExpr () v112
+            let v114 : string = "std::thread::spawn(move || { //"
+            let v115 : std_thread_JoinHandle<unit> = Fable.Core.RustInterop.emitRustExpr () v114
+            let v116 : string = "v69.lock().unwrap().take().unwrap()"
+            let v117 : std_process_ChildStderr = Fable.Core.RustInterop.emitRustExpr () v116
+            let v118 : string = "std::io::BufReader::new(v117)"
+            let v119 : std_io_BufReader<std_process_ChildStderr> = Fable.Core.RustInterop.emitRustExpr () v118
+            let v120 : string = "std::io::BufRead::lines(v119)"
+            let v121 : std_io_Lines<std_io_BufReader<std_process_ChildStderr>> = Fable.Core.RustInterop.emitRustExpr () v120
+            let v122 : string = "std::sync::Mutex::new($0)"
+            let v123 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStderr>>> = Fable.Core.RustInterop.emitRustExpr v121 v122
+            let v124 : std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStderr>>> = method62(v123)
+            let v125 : string = "std::sync::Arc::new(v124)"
+            let v126 : std_sync_Arc<std_sync_Mutex<std_io_Lines<std_io_BufReader<std_process_ChildStderr>>>> = Fable.Core.RustInterop.emitRustExpr () v125
+            let v127 : (Result<std_string_String, std_io_Error> -> unit) = method63(v86)
+            let v128 : string = "true; for line in $0.lock().unwrap().by_ref() { v127(line) }"
+            let v129 : bool = Fable.Core.RustInterop.emitRustExpr v126 v128
+            let v130 : string = "true; })"
+            let v131 : bool = Fable.Core.RustInterop.emitRustExpr () v130
+            let v132 : ((std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) -> US14) = method64()
+            let v133 : US14 = US14_1
+            let v134 : US14 = v4 |> Option.map v132 |> Option.defaultValue v133 
+            match v134 with
             | US14_1 -> (* None *)
                 ()
-            | US14_0(v127) -> (* Some *)
-                let v128 : string = "v75.lock().unwrap().take()"
-                let v129 : std_process_ChildStdin option = Fable.Core.RustInterop.emitRustExpr () v128
-                let v130 : string = "$0.map(|x| $1(x))"
-                let v131 : (std_process_ChildStdin -> std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>>) = closure42()
-                let v132 : std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> option = Fable.Core.RustInterop.emitRustExpr struct (v129, v131) v130
-                let v133 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> US15) = method66()
-                let v134 : US15 = US15_1
-                let v135 : US15 = v132 |> Option.map v133 |> Option.defaultValue v134 
-                match v135 with
+            | US14_0(v135) -> (* Some *)
+                let v136 : string = "v75.lock().unwrap().take()"
+                let v137 : std_process_ChildStdin option = Fable.Core.RustInterop.emitRustExpr () v136
+                let v138 : string = "$0.map(|x| $1(x))"
+                let v139 : (std_process_ChildStdin -> std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>>) = closure42()
+                let v140 : std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> option = Fable.Core.RustInterop.emitRustExpr struct (v137, v139) v138
+                let v141 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> US15) = method66()
+                let v142 : US15 = US15_1
+                let v143 : US15 = v140 |> Option.map v141 |> Option.defaultValue v142 
+                match v143 with
                 | US15_1 -> (* None *)
                     ()
-                | US15_0(v136) -> (* Some *)
-                    v127 v136
-                    let v137 : string = "$0.lock()"
-                    let v138 : Result<std_sync_MutexGuard<std_process_ChildStdin>, std_sync_PoisonError<std_sync_MutexGuard<std_process_ChildStdin>>> = Fable.Core.RustInterop.emitRustExpr v136 v137
-                    let v139 : string = "$0.unwrap()"
-                    let v140 : std_sync_MutexGuard<std_process_ChildStdin> = Fable.Core.RustInterop.emitRustExpr v138 v139
-                    let v141 : std_sync_MutexGuard<std_process_ChildStdin> = method67(v140)
-                    let v142 : string = "true; let mut v141 = v141"
-                    let v143 : bool = Fable.Core.RustInterop.emitRustExpr () v142
-                    let v144 : string = "true; std::io::Write::flush(&mut *$0).unwrap()"
-                    let v145 : bool = Fable.Core.RustInterop.emitRustExpr v141 v144
+                | US15_0(v144) -> (* Some *)
+                    v135 v144
+                    let v145 : string = "$0.lock()"
+                    let v146 : Result<std_sync_MutexGuard<std_process_ChildStdin>, std_sync_PoisonError<std_sync_MutexGuard<std_process_ChildStdin>>> = Fable.Core.RustInterop.emitRustExpr v144 v145
+                    let v147 : string = "$0.unwrap()"
+                    let v148 : std_sync_MutexGuard<std_process_ChildStdin> = Fable.Core.RustInterop.emitRustExpr v146 v147
+                    let v149 : std_sync_MutexGuard<std_process_ChildStdin> = method67(v148)
+                    let v150 : string = "true; let mut v149 = v149"
+                    let v151 : bool = Fable.Core.RustInterop.emitRustExpr () v150
+                    let v152 : string = "true; std::io::Write::flush(&mut *$0).unwrap()"
+                    let v153 : bool = Fable.Core.RustInterop.emitRustExpr v149 v152
                     ()
-            let v146 : string = "v51.lock().unwrap().take().unwrap().wait_with_output()"
-            let v147 : Result<std_process_Output, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v146
-            let v148 : (std_io_Error -> std_string_String) = method33()
-            let v149 : string = "$0.map_err(|x| $1(x))"
-            let v150 : Result<std_process_Output, std_string_String> = Fable.Core.RustInterop.emitRustExpr struct (v147, v148) v149
-            let v151 : string = "true; v97.join().unwrap()"
-            let v152 : bool = Fable.Core.RustInterop.emitRustExpr () v151
-            let v153 : string = "true; v111.join().unwrap()"
-            let v154 : bool = Fable.Core.RustInterop.emitRustExpr () v153
-            let v155 : (std_process_Output -> US16) = closure44()
-            let v156 : (std_string_String -> US16) = closure45()
-            let v157 : US16 = match v150 with Ok x -> v155 x | Error x -> v156 x
-            match v157 with
-            | US16_1(v163) -> (* Error *)
-                let v164 : US0 = US0_4
-                let v165 : (unit -> string) = closure46(v163)
-                let v166 : (unit -> string) = closure6()
-                method3(v164, v165, v166)
-                let v167 : US3 = US3_0(v163)
-                let v168 : US12 = US12_1
-                struct (-2, v167, v168)
-            | US16_0(v158) -> (* Ok *)
-                let v159 : string = "$0.status.code().unwrap()"
-                let v160 : int32 = Fable.Core.RustInterop.emitRustExpr v158 v159
-                let v161 : US3 = US3_1
-                let v162 : US12 = US12_0(v95)
-                struct (v160, v161, v162)
-    let v193 : US3 =
-        match v186 with
+            let v154 : string = "v51.lock().unwrap().take().unwrap().wait_with_output()"
+            let v155 : Result<std_process_Output, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v154
+            let v156 : (std_io_Error -> std_string_String) = method33()
+            let v157 : string = "$0.map_err(|x| $1(x))"
+            let v158 : Result<std_process_Output, std_string_String> = Fable.Core.RustInterop.emitRustExpr struct (v155, v156) v157
+            let v159 : string = "true; v97.join().unwrap()"
+            let v160 : bool = Fable.Core.RustInterop.emitRustExpr () v159
+            let v161 : string = "true; v115.join().unwrap()"
+            let v162 : bool = Fable.Core.RustInterop.emitRustExpr () v161
+            let v163 : (std_process_Output -> US16) = closure44()
+            let v164 : (std_string_String -> US16) = closure45()
+            let v165 : US16 = match v158 with Ok x -> v163 x | Error x -> v164 x
+            match v165 with
+            | US16_1(v171) -> (* Error *)
+                let v172 : US0 = US0_4
+                let v173 : (unit -> string) = closure46(v171)
+                let v174 : (unit -> string) = closure6()
+                method3(v172, v173, v174)
+                let v175 : US3 = US3_0(v171)
+                let v176 : US12 = US12_1
+                struct (-2, v175, v176)
+            | US16_0(v166) -> (* Ok *)
+                let v167 : string = "$0.status.code().unwrap()"
+                let v168 : int32 = Fable.Core.RustInterop.emitRustExpr v166 v167
+                let v169 : US3 = US3_1
+                let v170 : US12 = US12_0(v95)
+                struct (v168, v169, v170)
+    let v201 : US3 =
+        match v194 with
         | US12_1 -> (* None *)
             US3_1
-        | US12_0(v187) -> (* Some *)
-            let v188 : string = "$0.lock().unwrap().iter().collect::<Vec<String>>().join(\"\\n\")"
-            let v189 : std_string_String = Fable.Core.RustInterop.emitRustExpr v187 v188
-            US3_0(v189)
-    let v200 : US4 =
+        | US12_0(v195) -> (* Some *)
+            let v196 : string = "$0.lock().unwrap().iter().collect::<Vec<String>>().join(\"\\n\")"
+            let v197 : std_string_String = Fable.Core.RustInterop.emitRustExpr v195 v196
+            US3_0(v197)
+    let v208 : US4 =
+        match v201 with
+        | US3_1 -> (* None *)
+            US4_1
+        | US3_0(v202) -> (* Some *)
+            let v203 : string = "fable_library_rust::String_::fromString($0)"
+            let v204 : string = Fable.Core.RustInterop.emitRustExpr v202 v203
+            US4_0(v204)
+    let v215 : US4 =
         match v193 with
         | US3_1 -> (* None *)
             US4_1
-        | US3_0(v194) -> (* Some *)
-            let v195 : string = "fable_library_rust::String_::fromString($0)"
-            let v196 : string = Fable.Core.RustInterop.emitRustExpr v194 v195
-            US4_0(v196)
-    let v207 : US4 =
-        match v185 with
-        | US3_1 -> (* None *)
-            US4_1
-        | US3_0(v201) -> (* Some *)
-            let v202 : string = "fable_library_rust::String_::fromString($0)"
-            let v203 : string = Fable.Core.RustInterop.emitRustExpr v201 v202
-            US4_0(v203)
-    let v211 : string =
-        match v207 with
+        | US3_0(v209) -> (* Some *)
+            let v210 : string = "fable_library_rust::String_::fromString($0)"
+            let v211 : string = Fable.Core.RustInterop.emitRustExpr v209 v210
+            US4_0(v211)
+    let v219 : string =
+        match v215 with
         | US4_1 -> (* None *)
-            let v209 : string = ""
-            v209
-        | US4_0(v208) -> (* Some *)
-            v208
-    let v214 : string =
-        match v200 with
+            let v217 : string = ""
+            v217
+        | US4_0(v216) -> (* Some *)
+            v216
+    let v222 : string =
+        match v208 with
         | US4_1 -> (* None *)
-            v211
-        | US4_0(v212) -> (* Some *)
-            v212
-    let v215 : US0 = US0_0
-    let v216 : (unit -> string) = closure47(v184, v214)
-    let v217 : (unit -> string) = closure6()
-    method3(v215, v216, v217)
-    let v218 : (int32 * string) = v184, v214
-    let v219 : (int32 * string) = method68(v218)
-    let v220 : string = "v219 }}})"
-    Fable.Core.RustInterop.emitRustExpr () v220
-    let v221 : string = "{{ //"
-    Fable.Core.RustInterop.emitRustExpr () v221
-    let v222 : string = "__result"
-    let v223 : std_pin_Pin<Box<Dyn<std_future_Future<(int32 * string)>>>> = Fable.Core.RustInterop.emitRustExpr () v222
-    v223
+            v219
+        | US4_0(v220) -> (* Some *)
+            v220
+    let v223 : US0 = US0_0
+    let v224 : (unit -> string) = closure47(v192, v222)
+    let v225 : (unit -> string) = closure6()
+    method3(v223, v224, v225)
+    let v226 : (int32 * string) = v192, v222
+    let v227 : (int32 * string) = method68(v226)
+    let v228 : string = "v227 }}})"
+    Fable.Core.RustInterop.emitRustExpr () v228
+    let v229 : string = "{{ //"
+    Fable.Core.RustInterop.emitRustExpr () v229
+    let v230 : string = "__result"
+    let v231 : std_pin_Pin<Box<Dyn<std_future_Future<(int32 * string)>>>> = Fable.Core.RustInterop.emitRustExpr () v230
+    v231
 and closure48 (v0 : System.Threading.CancellationToken option, v1 : string, v2 : (struct (string * string) []), v3 : (struct (bool * string * int32) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : string option) () : string =
     let v6 : string = $"execute_with_options_async / options: %A{struct (v0, v1, v2, v3, v4, v5)}"
     v6
