@@ -63,6 +63,10 @@ type MutCell<'T> = class end
 #endif
 type std_any_Any = class end
 #if FABLE_COMPILER
+[<Fable.Core.Erase; Fable.Core.Emit("std::borrow::Cow<$0>")>]
+#endif
+type std_borrow_Cow<'T> = class end
+#if FABLE_COMPILER
 [<Fable.Core.Erase; Fable.Core.Emit("std::cell::RefCell<$0>")>]
 #endif
 type std_cell_RefCell<'T> = class end
@@ -574,10 +578,10 @@ and closure4 () () : string =
 and closure6 () () : string =
     let v0 : string = ""
     v0
-and closure5 (v0 : (string []), v1 : string) () : string =
-    let v2 : (unit -> string) = closure6()
-    let v3 : string = $"args: {v0} / current_dir: {v1} / {v2 ()}"
-    v3
+and closure5 (v0 : (string [])) () : string =
+    let v1 : (unit -> string) = closure6()
+    let v2 : string = $"args: {v0} / {v1 ()}"
+    v2
 and closure8 () (v0 : int64) : US2 =
     US2_0(v0)
 and method4 () : (int64 -> US2) =
@@ -3306,11 +3310,11 @@ and method79 (v0 : string) : string =
 and closure62 () () : string =
     let v0 : string = "documents.hangul"
     v0
-and closure63 (v0 : int32, v1 : string) () : string =
-    let v2 : int32 = v1 |> String.length
-    let v3 : (unit -> string) = closure6()
-    let v4 : string = $"exit_code: %A{v0} / result_len: {v2} / {v3 ()}"
-    v4
+and closure63 (v0 : string, v1 : int32, v2 : string) () : string =
+    let v3 : int32 = v2 |> String.length
+    let v4 : (unit -> string) = closure6()
+    let v5 : string = $"exit_code: %A{v1} / result_len: {v3} / output_path: {v0} / {v4 ()}"
+    v5
 and method74 (v0 : string, v1 : string, v2 : string, v3 : string) : US21 =
     let v4 : string option = None
     let v5 : bool = true in let mutable _v4 = v4
@@ -4077,7 +4081,7 @@ and method74 (v0 : string, v1 : string, v2 : string, v3 : string) : US21 =
     _v338.Value
     let v342 : US0 = US0_2
     let v343 : (unit -> string) = closure62()
-    let v344 : (unit -> string) = closure63(v305, v335)
+    let v344 : (unit -> string) = closure63(v2, v305, v335)
     method3(v342, v343, v344)
     US21_0(v305, v335)
 and closure64 () () : string =
@@ -4214,8 +4218,8 @@ and closure60 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v58 : string = method22()
             let v59 : string = method23(v7)
             let v60 : string = method24()
-            let v61 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v62 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v58, v59, v60) v61
+            let v61 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v62 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v58, v59, v60) v61
             let v63 : string = "String::from($0)"
             let v64 : std_string_String = Fable.Core.RustInterop.emitRustExpr v62 v63
             let v65 : string = "fable_library_rust::String_::fromString($0)"
@@ -4778,8 +4782,8 @@ and closure60 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v313 : string = method22()
             let v314 : string = method23(v6)
             let v315 : string = method24()
-            let v316 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v317 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v313, v314, v315) v316
+            let v316 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v317 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v313, v314, v315) v316
             let v318 : string = "String::from($0)"
             let v319 : std_string_String = Fable.Core.RustInterop.emitRustExpr v317 v318
             let v320 : string = "fable_library_rust::String_::fromString($0)"
@@ -5459,10 +5463,10 @@ and closure59 (v0 : string, v1 : string, v2 : string, v3 : string) (v4 : string)
 and closure68 () () : string =
     let v0 : string = "documents.crowbook / result contains ERROR"
     v0
-and closure69 (v0 : string, v1 : int32) () : string =
-    let v2 : (unit -> string) = closure6()
-    let v3 : string = $"exit_code: %A{v1} / result: {v0} / {v2 ()}"
-    v3
+and closure69 (v0 : string, v1 : string, v2 : int32) () : string =
+    let v3 : (unit -> string) = closure6()
+    let v4 : string = $"exit_code: %A{v2} / result: {v1} / output_path: {v0} / {v3 ()}"
+    v4
 and method80 (v0 : string, v1 : string, v2 : string, v3 : string) : US21 =
     let v4 : string = $"crowbook --single \"{v1}\" --output \"{v0}\" --to {v3} --set rendering.num_depth 6 html.css.add \\\"''' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} '''\\\""
     let v5 : string option = None
@@ -5972,7 +5976,7 @@ and method80 (v0 : string, v1 : string, v2 : string, v3 : string) : US21 =
     if v229 then
         let v230 : US0 = US0_2
         let v231 : (unit -> string) = closure68()
-        let v232 : (unit -> string) = closure69(v227, v226)
+        let v232 : (unit -> string) = closure69(v0, v227, v226)
         method3(v230, v231, v232)
         US21_1(v226, v227)
     else
@@ -6104,8 +6108,8 @@ and closure67 (v0 : string, v1 : string, v2 : string) (v3 : string) : US19 =
             let v56 : string = method22()
             let v57 : string = method23(v5)
             let v58 : string = method24()
-            let v59 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v60 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v56, v57, v58) v59
+            let v59 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v60 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v56, v57, v58) v59
             let v61 : string = "String::from($0)"
             let v62 : std_string_String = Fable.Core.RustInterop.emitRustExpr v60 v61
             let v63 : string = "fable_library_rust::String_::fromString($0)"
@@ -6668,8 +6672,8 @@ and closure67 (v0 : string, v1 : string, v2 : string) (v3 : string) : US19 =
             let v311 : string = method22()
             let v312 : string = method23(v4)
             let v313 : string = method24()
-            let v314 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v315 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v311, v312, v313) v314
+            let v314 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v315 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v311, v312, v313) v314
             let v316 : string = "String::from($0)"
             let v317 : std_string_String = Fable.Core.RustInterop.emitRustExpr v315 v316
             let v318 : string = "fable_library_rust::String_::fromString($0)"
@@ -7500,8 +7504,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v51 : string = method22()
             let v52 : string = method23(v48)
             let v53 : string = method24()
-            let v54 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v55 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v51, v52, v53) v54
+            let v54 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v55 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v51, v52, v53) v54
             let v56 : string = "String::from($0)"
             let v57 : std_string_String = Fable.Core.RustInterop.emitRustExpr v55 v56
             let v58 : string = "fable_library_rust::String_::fromString($0)"
@@ -7807,8 +7811,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let v205 : string = method22()
     let v206 : string = method23(v173)
     let v207 : string = method24()
-    let v208 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-    let v209 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v205, v206, v207) v208
+    let v208 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+    let v209 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v205, v206, v207) v208
     let v210 : string = "String::from($0)"
     let v211 : std_string_String = Fable.Core.RustInterop.emitRustExpr v209 v210
     let v212 : string = "fable_library_rust::String_::fromString($0)"
@@ -7855,8 +7859,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let v226 : string = method22()
     let v227 : string = method23(v223)
     let v228 : string = method24()
-    let v229 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-    let v230 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v226, v227, v228) v229
+    let v229 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+    let v230 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v226, v227, v228) v229
     let v231 : string = "String::from($0)"
     let v232 : std_string_String = Fable.Core.RustInterop.emitRustExpr v230 v231
     let v233 : string = "fable_library_rust::String_::fromString($0)"
@@ -8404,8 +8408,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let v469 : string = method22()
     let v470 : string = method23(v466)
     let v471 : string = method24()
-    let v472 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-    let v473 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v469, v470, v471) v472
+    let v472 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+    let v473 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v469, v470, v471) v472
     let v474 : string = "String::from($0)"
     let v475 : std_string_String = Fable.Core.RustInterop.emitRustExpr v473 v474
     let v476 : string = "fable_library_rust::String_::fromString($0)"
@@ -8952,8 +8956,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let v711 : string = method22()
     let v712 : string = method23(v708)
     let v713 : string = method24()
-    let v714 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-    let v715 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v711, v712, v713) v714
+    let v714 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+    let v715 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v711, v712, v713) v714
     let v716 : string = "String::from($0)"
     let v717 : std_string_String = Fable.Core.RustInterop.emitRustExpr v715 v716
     let v718 : string = "fable_library_rust::String_::fromString($0)"
@@ -9004,8 +9008,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v735 : string = method22()
             let v736 : string = method23(v485)
             let v737 : string = method24()
-            let v738 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v739 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v735, v736, v737) v738
+            let v738 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v739 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v735, v736, v737) v738
             let v740 : string = "String::from($0)"
             let v741 : std_string_String = Fable.Core.RustInterop.emitRustExpr v739 v740
             let v742 : string = "fable_library_rust::String_::fromString($0)"
@@ -9620,8 +9624,8 @@ and closure25 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
                     let v1009 : string = method22()
                     let v1010 : string = method23(v727)
                     let v1011 : string = method24()
-                    let v1012 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-                    let v1013 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v1009, v1010, v1011) v1012
+                    let v1012 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+                    let v1013 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v1009, v1010, v1011) v1012
                     let v1014 : string = "String::from($0)"
                     let v1015 : std_string_String = Fable.Core.RustInterop.emitRustExpr v1013 v1014
                     let v1016 : string = "fable_library_rust::String_::fromString($0)"
@@ -11661,8 +11665,8 @@ and method12 (v0 : string, v1 : string, v2 : string, v3 : string) : std_pin_Pin<
             let v55 : string = method22()
             let v56 : string = method23(v52)
             let v57 : string = method24()
-            let v58 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v59 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v55, v56, v57) v58
+            let v58 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v59 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v55, v56, v57) v58
             let v60 : string = "String::from($0)"
             let v61 : std_string_String = Fable.Core.RustInterop.emitRustExpr v59 v60
             let v62 : string = "fable_library_rust::String_::fromString($0)"
@@ -12015,8 +12019,8 @@ and method12 (v0 : string, v1 : string, v2 : string, v3 : string) : std_pin_Pin<
             let v223 : string = method22()
             let v224 : string = method23(v220)
             let v225 : string = method24()
-            let v226 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v227 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v223, v224, v225) v226
+            let v226 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v227 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v223, v224, v225) v226
             let v228 : string = "String::from($0)"
             let v229 : std_string_String = Fable.Core.RustInterop.emitRustExpr v227 v228
             let v230 : string = "fable_library_rust::String_::fromString($0)"
@@ -12369,8 +12373,8 @@ and method12 (v0 : string, v1 : string, v2 : string, v3 : string) : std_pin_Pin<
             let v391 : string = method22()
             let v392 : string = method23(v388)
             let v393 : string = method24()
-            let v394 : string = $"&regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
-            let v395 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr struct (v391, v392, v393) v394
+            let v394 : string = $"regex::Regex::new(&$0).unwrap().replace_all(&$1, &*$2)"
+            let v395 : std_borrow_Cow<Str> = Fable.Core.RustInterop.emitRustExpr struct (v391, v392, v393) v394
             let v396 : string = "String::from($0)"
             let v397 : std_string_String = Fable.Core.RustInterop.emitRustExpr v395 v396
             let v398 : string = "fable_library_rust::String_::fromString($0)"
@@ -12622,165 +12626,82 @@ and closure1 () (v0 : (string [])) : int32 =
     let struct (v2 : Mut0, v3 : Mut1, v4 : Mut2, v5 : int64 option, v6 : Mut3) = State.trace_state.Value
     let v7 : US0 = US0_2
     v4.l0 <- v7
-    let v8 : string option = None
-    let v9 : bool = true in let mutable _v8 = v8
-    
-#if FABLE_COMPILER || WASM || CONTRACT
-    
-#if FABLE_COMPILER_RUST && !WASM && !CONTRACT
-    let v10 : string = "std::env::current_dir()"
-    let v11 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v10
-    let v12 : string = "$0.unwrap()"
-    let v13 : std_path_PathBuf = Fable.Core.RustInterop.emitRustExpr v11 v12
-    let v14 : string = "$0.display()"
-    let v15 : std_path_Display = Fable.Core.RustInterop.emitRustExpr v13 v14
-    let v16 : std_string_String option = None
-    let v17 : bool = true in let mutable _v16 = v16
-    
-#if FABLE_COMPILER || WASM || CONTRACT
-    
-#if FABLE_COMPILER_RUST && !WASM && !CONTRACT
-    let v18 : string = @$"format!(""{{}}"", $0)"
-    let v19 : std_string_String = Fable.Core.RustInterop.emitRustExpr v15 v18
-    v19
-#endif
-    
-#if FABLE_COMPILER_RUST && WASM
-    let v20 : string = @$"format!(""{{}}"", $0)"
-    let v21 : std_string_String = Fable.Core.RustInterop.emitRustExpr v15 v20
-    v21
-#endif
-    
-#if FABLE_COMPILER_RUST && CONTRACT
-    let v22 : string = @$"format!(""{{}}"", $0)"
-    let v23 : std_string_String = Fable.Core.RustInterop.emitRustExpr v15 v22
-    v23
-#endif
-    
-#if FABLE_COMPILER_TYPESCRIPT
-    let v24 : std_string_String = null |> unbox<std_string_String>
-    v24
-#endif
-    
-#if FABLE_COMPILER_PYTHON
-    let v25 : std_string_String = null |> unbox<std_string_String>
-    v25
-#endif
-    
-#else
-    let v26 : std_string_String = null |> unbox<std_string_String>
-    v26
-#endif
-    |> fun x -> _v16 <- Some x
-    let v27 : std_string_String = _v16.Value
-    let v28 : string = "fable_library_rust::String_::fromString($0)"
-    let v29 : string = Fable.Core.RustInterop.emitRustExpr v27 v28
-    v29
-#endif
-    
-#if FABLE_COMPILER_RUST && WASM
-    let v30 : string = null |> unbox<string>
-    v30
-#endif
-    
-#if FABLE_COMPILER_RUST && CONTRACT
-    let v31 : string = null |> unbox<string>
-    v31
-#endif
-    
-#if FABLE_COMPILER_TYPESCRIPT
-    let v32 : string = null |> unbox<string>
-    v32
-#endif
-    
-#if FABLE_COMPILER_PYTHON
-    let v33 : string = null |> unbox<string>
-    v33
-#endif
-    
-#else
-    let v34 : (unit -> string) = System.IO.Directory.GetCurrentDirectory
-    let v35 : string = v34 ()
-    v35
-#endif
-    |> fun x -> _v8 <- Some x
-    let v36 : string = _v8.Value
-    let v37 : US0 = US0_2
-    let v38 : (unit -> string) = closure4()
-    let v39 : (unit -> string) = closure5(v0, v36)
-    method3(v37, v38, v39)
-    let v40 : clap_Command = method0()
-    let v41 : string = "clap::Command::get_matches($0)"
-    let v42 : clap_ArgMatches = Fable.Core.RustInterop.emitRustExpr v40 v41
-    let v43 : string = method7()
-    let v44 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
-    let v45 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v43 v44
-    let v46 : string = "clap::ArgMatches::get_one(&v42, v45).cloned()"
-    let v47 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v46
-    let v48 : (std_string_String -> US3) = method8()
-    let v49 : US3 = US3_1
-    let v50 : US3 = v47 |> Option.map v48 |> Option.defaultValue v49 
-    let v54 : std_string_String =
-        match v50 with
+    let v8 : US0 = US0_2
+    let v9 : (unit -> string) = closure4()
+    let v10 : (unit -> string) = closure5(v0)
+    method3(v8, v9, v10)
+    let v11 : clap_Command = method0()
+    let v12 : string = "clap::Command::get_matches($0)"
+    let v13 : clap_ArgMatches = Fable.Core.RustInterop.emitRustExpr v11 v12
+    let v14 : string = method7()
+    let v15 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
+    let v16 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v14 v15
+    let v17 : string = "clap::ArgMatches::get_one(&v13, v16).cloned()"
+    let v18 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v17
+    let v19 : (std_string_String -> US3) = method8()
+    let v20 : US3 = US3_1
+    let v21 : US3 = v18 |> Option.map v19 |> Option.defaultValue v20 
+    let v25 : std_string_String =
+        match v21 with
         | US3_1 -> (* None *)
             failwith<std_string_String> "Option does not have a value."
-        | US3_0(v51) -> (* Some *)
-            v51
-    let v55 : string = "fable_library_rust::String_::fromString($0)"
-    let v56 : string = Fable.Core.RustInterop.emitRustExpr v54 v55
-    let v57 : string = method9()
-    let v58 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
-    let v59 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v57 v58
-    let v60 : string = "clap::ArgMatches::get_one(&v42, v59).cloned()"
-    let v61 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v60
-    let v62 : (std_string_String -> US3) = method8()
-    let v63 : US3 = US3_1
-    let v64 : US3 = v61 |> Option.map v62 |> Option.defaultValue v63 
-    let v68 : std_string_String =
-        match v64 with
+        | US3_0(v22) -> (* Some *)
+            v22
+    let v26 : string = "fable_library_rust::String_::fromString($0)"
+    let v27 : string = Fable.Core.RustInterop.emitRustExpr v25 v26
+    let v28 : string = method9()
+    let v29 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
+    let v30 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v28 v29
+    let v31 : string = "clap::ArgMatches::get_one(&v13, v30).cloned()"
+    let v32 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v31
+    let v33 : (std_string_String -> US3) = method8()
+    let v34 : US3 = US3_1
+    let v35 : US3 = v32 |> Option.map v33 |> Option.defaultValue v34 
+    let v39 : std_string_String =
+        match v35 with
         | US3_1 -> (* None *)
             failwith<std_string_String> "Option does not have a value."
-        | US3_0(v65) -> (* Some *)
-            v65
-    let v69 : string = "fable_library_rust::String_::fromString($0)"
-    let v70 : string = Fable.Core.RustInterop.emitRustExpr v68 v69
-    let v71 : string = method10()
-    let v72 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
-    let v73 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v71 v72
-    let v74 : string = "clap::ArgMatches::get_one(&v42, v73).cloned()"
-    let v75 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v74
-    let v76 : (std_string_String -> US3) = method8()
-    let v77 : US3 = US3_1
-    let v78 : US3 = v75 |> Option.map v76 |> Option.defaultValue v77 
-    let v82 : std_string_String =
-        match v78 with
+        | US3_0(v36) -> (* Some *)
+            v36
+    let v40 : string = "fable_library_rust::String_::fromString($0)"
+    let v41 : string = Fable.Core.RustInterop.emitRustExpr v39 v40
+    let v42 : string = method10()
+    let v43 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
+    let v44 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v42 v43
+    let v45 : string = "clap::ArgMatches::get_one(&v13, v44).cloned()"
+    let v46 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v45
+    let v47 : (std_string_String -> US3) = method8()
+    let v48 : US3 = US3_1
+    let v49 : US3 = v46 |> Option.map v47 |> Option.defaultValue v48 
+    let v53 : std_string_String =
+        match v49 with
         | US3_1 -> (* None *)
             failwith<std_string_String> "Option does not have a value."
-        | US3_0(v79) -> (* Some *)
-            v79
-    let v83 : string = "fable_library_rust::String_::fromString($0)"
-    let v84 : string = Fable.Core.RustInterop.emitRustExpr v82 v83
-    let v85 : string = method11()
-    let v86 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
-    let v87 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v85 v86
-    let v88 : string = "clap::ArgMatches::get_one(&v42, v87).cloned()"
-    let v89 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v88
-    let v90 : (std_string_String -> US3) = method8()
-    let v91 : US3 = US3_1
-    let v92 : US3 = v89 |> Option.map v90 |> Option.defaultValue v91 
-    let v96 : std_string_String =
-        match v92 with
+        | US3_0(v50) -> (* Some *)
+            v50
+    let v54 : string = "fable_library_rust::String_::fromString($0)"
+    let v55 : string = Fable.Core.RustInterop.emitRustExpr v53 v54
+    let v56 : string = method11()
+    let v57 : string = "fable_library_rust::String_::LrcStr::as_str(&$0)"
+    let v58 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v56 v57
+    let v59 : string = "clap::ArgMatches::get_one(&v13, v58).cloned()"
+    let v60 : std_string_String option = Fable.Core.RustInterop.emitRustExpr () v59
+    let v61 : (std_string_String -> US3) = method8()
+    let v62 : US3 = US3_1
+    let v63 : US3 = v60 |> Option.map v61 |> Option.defaultValue v62 
+    let v67 : std_string_String =
+        match v63 with
         | US3_1 -> (* None *)
             failwith<std_string_String> "Option does not have a value."
-        | US3_0(v93) -> (* Some *)
-            v93
-    let v97 : string = "fable_library_rust::String_::fromString($0)"
-    let v98 : string = Fable.Core.RustInterop.emitRustExpr v96 v97
-    let v99 : std_pin_Pin<Box<Dyn<std_future_Future<Result<Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>>, std_string_String>>>>> = method12(v98, v84, v70, v56)
-    let v100 : string = "futures_lite::future::block_on($0)"
-    let v101 : Result<Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>>, std_string_String> = Fable.Core.RustInterop.emitRustExpr v99 v100
-    let v102 : string = "$0.unwrap()"
-    let v103 : Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>> = Fable.Core.RustInterop.emitRustExpr v101 v102
+        | US3_0(v64) -> (* Some *)
+            v64
+    let v68 : string = "fable_library_rust::String_::fromString($0)"
+    let v69 : string = Fable.Core.RustInterop.emitRustExpr v67 v68
+    let v70 : std_pin_Pin<Box<Dyn<std_future_Future<Result<Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>>, std_string_String>>>>> = method12(v69, v55, v41, v27)
+    let v71 : string = "futures_lite::future::block_on($0)"
+    let v72 : Result<Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>>, std_string_String> = Fable.Core.RustInterop.emitRustExpr v70 v71
+    let v73 : string = "$0.unwrap()"
+    let v74 : Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>> = Fable.Core.RustInterop.emitRustExpr v72 v73
     0
 let v0 : (unit -> unit) = closure0()
 let tests () = v0 ()

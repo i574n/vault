@@ -1062,13 +1062,8 @@ mod module_2555ccf7 {
         pub fn closure6(unitVar: (), unitVar_1: ()) -> string {
             string("")
         }
-        pub fn closure5(v0_1: Array<string>, v1_1: string, unitVar: ()) -> string {
-            sprintf!(
-                "args: {} / current_dir: {} / {}",
-                v0_1,
-                v1_1,
-                Documents::closure6((), ())
-            )
+        pub fn closure5(v0_1: Array<string>, unitVar: ()) -> string {
+            sprintf!("args: {} / {}", v0_1, Documents::closure6((), ()))
         }
         pub fn closure8(unitVar: (), v0_1: i64) -> Documents::US2 {
             Documents::US2::US2_0(v0_1)
@@ -4336,11 +4331,12 @@ mod module_2555ccf7 {
         pub fn closure62(unitVar: (), unitVar_1: ()) -> string {
             string("documents.hangul")
         }
-        pub fn closure63(v0_1: i32, v1_1: string, unitVar: ()) -> string {
+        pub fn closure63(v0_1: string, v1_1: i32, v2: string, unitVar: ()) -> string {
             sprintf!(
-                "exit_code: {:?} / result_len: {} / {}",
+                "exit_code: {:?} / result_len: {} / output_path: {} / {}",
+                v1_1,
+                length(v2),
                 v0_1,
-                length(v1_1),
                 Documents::closure6((), ())
             )
         }
@@ -4639,7 +4635,8 @@ mod module_2555ccf7 {
                                                     let v335: string = matchValue_3;
                                                     let _v338: MutCell<Option<()>> =
                                                         MutCell::new(None::<()>);
-                                                    std::fs::write(&*v2, &*v335.clone()).unwrap();
+                                                    std::fs::write(&*v2.clone(), &*v335.clone())
+                                                        .unwrap();
                                                     _v338.set(Some(()));
                                                     getValue(_v338.get().clone());
                                                     Documents::method3(
@@ -4648,10 +4645,12 @@ mod module_2555ccf7 {
                                                             Documents::closure62((), ())
                                                         }),
                                                         Func0::new({
+                                                            let v2 = v2.clone();
                                                             let v305 = v305.clone();
                                                             let v335 = v335.clone();
                                                             move || {
                                                                 Documents::closure63(
+                                                                    v2.clone(),
                                                                     v305,
                                                                     v335.clone(),
                                                                     (),
@@ -4728,7 +4727,8 @@ mod module_2555ccf7 {
                 let v58: string = Documents::method22();
                 let v59: string = Documents::method23(v7.clone());
                 let v60: string = Documents::method24();
-                let v62: &str = &regex::Regex::new(&v58).unwrap().replace_all(&v59, &*v60);
+                let v62: std::borrow::Cow<str> =
+                    regex::Regex::new(&v58).unwrap().replace_all(&v59, &*v60);
                 let v64: std::string::String = String::from(v62);
                 {
                     let x_2: string = fable_library_rust::String_::fromString(v64);
@@ -4866,8 +4866,8 @@ mod module_2555ccf7 {
                                 let v313: string = Documents::method22();
                                 let v314: string = Documents::method23(v6.clone());
                                 let v315: string = Documents::method24();
-                                let v317: &str =
-                                    &regex::Regex::new(&v313).unwrap().replace_all(&v314, &*v315);
+                                let v317: std::borrow::Cow<str> =
+                                    regex::Regex::new(&v313).unwrap().replace_all(&v314, &*v315);
                                 let v319: std::string::String = String::from(v317);
                                 {
                                     let x_4: string = fable_library_rust::String_::fromString(v319);
@@ -5118,9 +5118,10 @@ mod module_2555ccf7 {
         pub fn closure68(unitVar: (), unitVar_1: ()) -> string {
             string("documents.crowbook / result contains ERROR")
         }
-        pub fn closure69(v0_1: string, v1_1: i32, unitVar: ()) -> string {
+        pub fn closure69(v0_1: string, v1_1: string, v2: i32, unitVar: ()) -> string {
             sprintf!(
-                "exit_code: {:?} / result: {} / {}",
+                "exit_code: {:?} / result: {} / output_path: {} / {}",
+                v2,
                 v1_1,
                 v0_1,
                 Documents::closure6((), ())
@@ -5129,7 +5130,7 @@ mod module_2555ccf7 {
         pub fn method80(v0_1: string, v1_1: string, v2: string, v3: string) -> Documents::US21 {
             let v4: string =
                 sprintf!("crowbook --single \"{}\" --output \"{}\" --to {} --set rendering.num_depth 6 html.css.add \\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\"",
-                         v1_1, v0_1, v3);
+                         v1_1, v0_1.clone(), v3);
             let v6: Option<CancellationToken> = None::<CancellationToken>;
             let v7: Array<(string, string)> = new_empty::<(string, string)>();
             let v8 = None::<Func1<(bool, string, i32), Arc<Async<()>>>>;
@@ -5232,9 +5233,12 @@ mod module_2555ccf7 {
                                 Documents::US0::US0_2,
                                 Func0::new(move || Documents::closure68((), ())),
                                 Func0::new({
+                                    let v0_1 = v0_1.clone();
                                     let v226 = v226.clone();
                                     let v227 = v227.clone();
-                                    move || Documents::closure69(v227.clone(), v226, ())
+                                    move || {
+                                        Documents::closure69(v0_1.clone(), v227.clone(), v226, ())
+                                    }
                                 }),
                             );
                             Documents::US21::US21_1(v226, v227.clone())
@@ -5284,7 +5288,8 @@ mod module_2555ccf7 {
                 let v56: string = Documents::method22();
                 let v57: string = Documents::method23(v5.clone());
                 let v58: string = Documents::method24();
-                let v60: &str = &regex::Regex::new(&v56).unwrap().replace_all(&v57, &*v58);
+                let v60: std::borrow::Cow<str> =
+                    regex::Regex::new(&v56).unwrap().replace_all(&v57, &*v58);
                 let v62: std::string::String = String::from(v60);
                 {
                     let x_2: string = fable_library_rust::String_::fromString(v62);
@@ -5422,8 +5427,8 @@ mod module_2555ccf7 {
                                 let v311: string = Documents::method22();
                                 let v312: string = Documents::method23(v4.clone());
                                 let v313: string = Documents::method24();
-                                let v315: &str =
-                                    &regex::Regex::new(&v311).unwrap().replace_all(&v312, &*v313);
+                                let v315: std::borrow::Cow<str> =
+                                    regex::Regex::new(&v311).unwrap().replace_all(&v312, &*v313);
                                 let v317: std::string::String = String::from(v315);
                                 {
                                     let x_4: string = fable_library_rust::String_::fromString(v317);
@@ -5811,8 +5816,8 @@ mod module_2555ccf7 {
                             let v51: string = Documents::method22();
                             let v52: string = Documents::method23(v48);
                             let v53: string = Documents::method24();
-                            let v55: &str =
-                                &regex::Regex::new(&v51).unwrap().replace_all(&v52, &*v53);
+                            let v55: std::borrow::Cow<str> =
+                                regex::Regex::new(&v51).unwrap().replace_all(&v52, &*v53);
                             let v57: std::string::String = String::from(v55);
                             {
                                 let x_2: string = fable_library_rust::String_::fromString(v57);
@@ -6000,7 +6005,8 @@ mod module_2555ccf7 {
                     let v205: string = Documents::method22();
                     let v206: string = Documents::method23(v173);
                     let v207: string = Documents::method24();
-                    let v209: &str = &regex::Regex::new(&v205).unwrap().replace_all(&v206, &*v207);
+                    let v209: std::borrow::Cow<str> =
+                        regex::Regex::new(&v205).unwrap().replace_all(&v206, &*v207);
                     let v211: std::string::String = String::from(v209);
                     {
                         let x_7: string = fable_library_rust::String_::fromString(v211);
@@ -6022,8 +6028,8 @@ mod module_2555ccf7 {
                         let v226: string = Documents::method22();
                         let v227: string = Documents::method23(v223);
                         let v228: string = Documents::method24();
-                        let v230: &str =
-                            &regex::Regex::new(&v226).unwrap().replace_all(&v227, &*v228);
+                        let v230: std::borrow::Cow<str> =
+                            regex::Regex::new(&v226).unwrap().replace_all(&v227, &*v228);
                         let v232: std::string::String = String::from(v230);
                         {
                             let x_8: string = fable_library_rust::String_::fromString(v232);
@@ -6159,7 +6165,7 @@ mod module_2555ccf7 {
                                         let v469: string = Documents::method22();
                                         let v470: string = Documents::method23(v466);
                                         let v471: string = Documents::method24();
-                                        let v473: &str = &regex::Regex::new(&v469)
+                                        let v473: std::borrow::Cow<str> = regex::Regex::new(&v469)
                                             .unwrap()
                                             .replace_all(&v470, &*v471);
                                         let v475: std::string::String = String::from(v473);
@@ -6311,9 +6317,10 @@ mod module_2555ccf7 {
                                                         let v712: string =
                                                             Documents::method23(v708);
                                                         let v713: string = Documents::method24();
-                                                        let v715: &str = &regex::Regex::new(&v711)
-                                                            .unwrap()
-                                                            .replace_all(&v712, &*v713);
+                                                        let v715: std::borrow::Cow<str> =
+                                                            regex::Regex::new(&v711)
+                                                                .unwrap()
+                                                                .replace_all(&v712, &*v713);
                                                         let v717: std::string::String =
                                                             String::from(v715);
                                                         {
@@ -6367,12 +6374,11 @@ mod module_2555ccf7 {
                                                                         );
                                                                     let v737: string =
                                                                         Documents::method24();
-                                                                    let v739: &str =
-                                                                        &regex::Regex::new(&v735)
-                                                                            .unwrap()
-                                                                            .replace_all(
-                                                                                &v736, &*v737,
-                                                                            );
+                                                                    let v739: std::borrow::Cow<
+                                                                        str,
+                                                                    > = regex::Regex::new(&v735)
+                                                                        .unwrap()
+                                                                        .replace_all(&v736, &*v737);
                                                                     let v741: std::string::String =
                                                                         String::from(v739);
                                                                     {
@@ -6652,8 +6658,8 @@ mod module_2555ccf7 {
                                                                                                         string =
                                                                                                     Documents::method24();
                                                                                                 let v1013:
-                                                                                                        &str =
-                                                                                                    &regex::Regex::new(&v1009).unwrap().replace_all(&v1010, &*v1011);
+                                                                                                        std::borrow::Cow<str> =
+                                                                                                    regex::Regex::new(&v1009).unwrap().replace_all(&v1010, &*v1011);
                                                                                                 let v1015:
                                                                                                         std::string::String =
                                                                                                     String::from(v1013);
@@ -8637,8 +8643,8 @@ mod module_2555ccf7 {
                             let v55: string = Documents::method22();
                             let v56: string = Documents::method23(v52);
                             let v57: string = Documents::method24();
-                            let v59: &str =
-                                &regex::Regex::new(&v55).unwrap().replace_all(&v56, &*v57);
+                            let v59: std::borrow::Cow<str> =
+                                regex::Regex::new(&v55).unwrap().replace_all(&v56, &*v57);
                             let v61: std::string::String = String::from(v59);
                             {
                                 let x_2: string = fable_library_rust::String_::fromString(v61);
@@ -8829,8 +8835,8 @@ mod module_2555ccf7 {
                                 let v223: string = Documents::method22();
                                 let v224: string = Documents::method23(v220);
                                 let v225: string = Documents::method24();
-                                let v227: &str =
-                                    &regex::Regex::new(&v223).unwrap().replace_all(&v224, &*v225);
+                                let v227: std::borrow::Cow<str> =
+                                    regex::Regex::new(&v223).unwrap().replace_all(&v224, &*v225);
                                 let v229: std::string::String = String::from(v227);
                                 {
                                     let x_8: string = fable_library_rust::String_::fromString(v229);
@@ -9030,7 +9036,7 @@ mod module_2555ccf7 {
                                     let v391: string = Documents::method22();
                                     let v392: string = Documents::method23(v388);
                                     let v393: string = Documents::method24();
-                                    let v395: &str = &regex::Regex::new(&v391)
+                                    let v395: std::borrow::Cow<str> = regex::Regex::new(&v391)
                                         .unwrap()
                                         .replace_all(&v392, &*v393);
                                     let v397: std::string::String = String::from(v395);
@@ -9257,131 +9263,76 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                 ) = getValue(Documents::State::trace_state().get().clone());
                 (patternInput.2.clone()).l0.set(Documents::US0::US0_2);
+                Documents::method3(
+                    Documents::US0::US0_2,
+                    Func0::new(move || Documents::closure4((), ())),
+                    Func0::new({
+                        let v0_1 = v0_1.clone();
+                        move || Documents::closure5(v0_1.clone(), ())
+                    }),
+                );
                 {
-                    let _v8: MutCell<Option<string>> = MutCell::new(None::<string>);
-                    let v11: Result<std::path::PathBuf, std::io::Error> = std::env::current_dir();
-                    let v13: std::path::PathBuf = v11.unwrap();
-                    let v15: std::path::Display = v13.display();
-                    let _v16: MutCell<Option<std::string::String>> =
-                        MutCell::new(None::<std::string::String>);
-                    {
-                        let x: std::string::String = format!("{}", v15);
-                        _v16.set(Some(x))
-                    }
-                    {
-                        let v27: std::string::String = getValue(_v16.get().clone());
-                        {
-                            let x_1: string = fable_library_rust::String_::fromString(v27);
-                            _v8.set(Some(x_1))
-                        }
-                        {
-                            let v36: string = getValue(_v8.get().clone());
-                            Documents::method3(
-                                Documents::US0::US0_2,
-                                Func0::new(move || Documents::closure4((), ())),
-                                Func0::new({
-                                    let v0_1 = v0_1.clone();
-                                    let v36 = v36.clone();
-                                    move || Documents::closure5(v0_1.clone(), v36.clone(), ())
-                                }),
-                            );
-                            {
-                                let v40: clap::Command = Documents::method0();
-                                let v42: clap::ArgMatches = clap::Command::get_matches(v40);
-                                let v43: string = Documents::method7();
-                                let v45: &str = fable_library_rust::String_::LrcStr::as_str(&v43);
-                                let v47: Option<std::string::String> =
-                                    clap::ArgMatches::get_one(&v42, v45).cloned();
-                                let v50: Documents::US3 = defaultValue(
-                                    Documents::US3::US3_1,
-                                    map(Documents::method8(), v47),
-                                );
-                                let v54: std::string::String = match &v50 {
-                                    Documents::US3::US3_0(v50_0_0) => match &v50 {
-                                        Documents::US3::US3_0(x) => x.clone(),
-                                        _ => unreachable!(),
-                                    },
-                                    _ => panic!("{}", string("Option does not have a value."),),
-                                };
-                                let v56: string = fable_library_rust::String_::fromString(v54);
-                                let v57: string = Documents::method9();
-                                let v59: &str = fable_library_rust::String_::LrcStr::as_str(&v57);
-                                let v61: Option<std::string::String> =
-                                    clap::ArgMatches::get_one(&v42, v59).cloned();
-                                let v64: Documents::US3 = defaultValue(
-                                    Documents::US3::US3_1,
-                                    map(Documents::method8(), v61),
-                                );
-                                let v68: std::string::String = match &v64 {
-                                    Documents::US3::US3_0(v64_0_0) => match &v64 {
-                                        Documents::US3::US3_0(x) => x.clone(),
-                                        _ => unreachable!(),
-                                    },
-                                    _ => panic!("{}", string("Option does not have a value."),),
-                                };
-                                let v70: string = fable_library_rust::String_::fromString(v68);
-                                let v71: string = Documents::method10();
-                                let v73: &str = fable_library_rust::String_::LrcStr::as_str(&v71);
-                                let v75: Option<std::string::String> =
-                                    clap::ArgMatches::get_one(&v42, v73).cloned();
-                                let v78: Documents::US3 = defaultValue(
-                                    Documents::US3::US3_1,
-                                    map(Documents::method8(), v75),
-                                );
-                                let v82: std::string::String = match &v78 {
-                                    Documents::US3::US3_0(v78_0_0) => match &v78 {
-                                        Documents::US3::US3_0(x) => x.clone(),
-                                        _ => unreachable!(),
-                                    },
-                                    _ => panic!("{}", string("Option does not have a value."),),
-                                };
-                                let v84: string = fable_library_rust::String_::fromString(v82);
-                                let v85: string = Documents::method11();
-                                let v87: &str = fable_library_rust::String_::LrcStr::as_str(&v85);
-                                let v89: Option<std::string::String> =
-                                    clap::ArgMatches::get_one(&v42, v87).cloned();
-                                let v92: Documents::US3 = defaultValue(
-                                    Documents::US3::US3_1,
-                                    map(Documents::method8(), v89),
-                                );
-                                let v96: std::string::String = match &v92 {
-                                    Documents::US3::US3_0(v92_0_0) => match &v92 {
-                                        Documents::US3::US3_0(x) => x.clone(),
-                                        _ => unreachable!(),
-                                    },
-                                    _ => panic!("{}", string("Option does not have a value."),),
-                                };
-                                let v99: std::pin::Pin<
-                                    Box<
-                                        dyn std::future::Future<
-                                            Output = Result<
-                                                Vec<
-                                                    Result<
-                                                        LrcPtr<(
-                                                            string,
-                                                            Vec<
-                                                                Option<
-                                                                    Result<
-                                                                        string,
-                                                                        LrcPtr<(string, string)>,
-                                                                    >,
-                                                                >,
-                                                            >,
-                                                        )>,
-                                                        std::string::String,
-                                                    >,
-                                                >,
-                                                std::string::String,
-                                            >,
-                                        >,
-                                    >,
-                                > = Documents::method12(
-                                    fable_library_rust::String_::fromString(v96),
-                                    v84,
-                                    v70,
-                                    v56,
-                                );
-                                let v101: Result<
+                    let v11: clap::Command = Documents::method0();
+                    let v13: clap::ArgMatches = clap::Command::get_matches(v11);
+                    let v14: string = Documents::method7();
+                    let v16: &str = fable_library_rust::String_::LrcStr::as_str(&v14);
+                    let v18: Option<std::string::String> =
+                        clap::ArgMatches::get_one(&v13, v16).cloned();
+                    let v21: Documents::US3 =
+                        defaultValue(Documents::US3::US3_1, map(Documents::method8(), v18));
+                    let v25: std::string::String = match &v21 {
+                        Documents::US3::US3_0(v21_0_0) => match &v21 {
+                            Documents::US3::US3_0(x) => x.clone(),
+                            _ => unreachable!(),
+                        },
+                        _ => panic!("{}", string("Option does not have a value."),),
+                    };
+                    let v27: string = fable_library_rust::String_::fromString(v25);
+                    let v28: string = Documents::method9();
+                    let v30: &str = fable_library_rust::String_::LrcStr::as_str(&v28);
+                    let v32: Option<std::string::String> =
+                        clap::ArgMatches::get_one(&v13, v30).cloned();
+                    let v35: Documents::US3 =
+                        defaultValue(Documents::US3::US3_1, map(Documents::method8(), v32));
+                    let v39: std::string::String = match &v35 {
+                        Documents::US3::US3_0(v35_0_0) => match &v35 {
+                            Documents::US3::US3_0(x) => x.clone(),
+                            _ => unreachable!(),
+                        },
+                        _ => panic!("{}", string("Option does not have a value."),),
+                    };
+                    let v41: string = fable_library_rust::String_::fromString(v39);
+                    let v42: string = Documents::method10();
+                    let v44: &str = fable_library_rust::String_::LrcStr::as_str(&v42);
+                    let v46: Option<std::string::String> =
+                        clap::ArgMatches::get_one(&v13, v44).cloned();
+                    let v49: Documents::US3 =
+                        defaultValue(Documents::US3::US3_1, map(Documents::method8(), v46));
+                    let v53: std::string::String = match &v49 {
+                        Documents::US3::US3_0(v49_0_0) => match &v49 {
+                            Documents::US3::US3_0(x) => x.clone(),
+                            _ => unreachable!(),
+                        },
+                        _ => panic!("{}", string("Option does not have a value."),),
+                    };
+                    let v55: string = fable_library_rust::String_::fromString(v53);
+                    let v56: string = Documents::method11();
+                    let v58: &str = fable_library_rust::String_::LrcStr::as_str(&v56);
+                    let v60: Option<std::string::String> =
+                        clap::ArgMatches::get_one(&v13, v58).cloned();
+                    let v63: Documents::US3 =
+                        defaultValue(Documents::US3::US3_1, map(Documents::method8(), v60));
+                    let v67: std::string::String = match &v63 {
+                        Documents::US3::US3_0(v63_0_0) => match &v63 {
+                            Documents::US3::US3_0(x) => x.clone(),
+                            _ => unreachable!(),
+                        },
+                        _ => panic!("{}", string("Option does not have a value."),),
+                    };
+                    let v70: std::pin::Pin<
+                        Box<
+                            dyn std::future::Future<
+                                Output = Result<
                                     Vec<
                                         Result<
                                             LrcPtr<(
@@ -9396,20 +9347,37 @@ mod module_2555ccf7 {
                                         >,
                                     >,
                                     std::string::String,
-                                > = futures_lite::future::block_on(v99);
-                                let v103: Vec<
-                                    Result<
-                                        LrcPtr<(
-                                            string,
-                                            Vec<Option<Result<string, LrcPtr<(string, string)>>>>,
-                                        )>,
-                                        std::string::String,
-                                    >,
-                                > = v101.unwrap();
-                                0_i32
-                            }
-                        }
-                    }
+                                >,
+                            >,
+                        >,
+                    > = Documents::method12(
+                        fable_library_rust::String_::fromString(v67),
+                        v55,
+                        v41,
+                        v27,
+                    );
+                    let v72: Result<
+                        Vec<
+                            Result<
+                                LrcPtr<(
+                                    string,
+                                    Vec<Option<Result<string, LrcPtr<(string, string)>>>>,
+                                )>,
+                                std::string::String,
+                            >,
+                        >,
+                        std::string::String,
+                    > = futures_lite::future::block_on(v70);
+                    let v74: Vec<
+                        Result<
+                            LrcPtr<(
+                                string,
+                                Vec<Option<Result<string, LrcPtr<(string, string)>>>>,
+                            )>,
+                            std::string::String,
+                        >,
+                    > = v72.unwrap();
+                    0_i32
                 }
             }
         }

@@ -14,7 +14,7 @@ open rust_operators
 
 #!spiral
 
-// // test
+//// test
 
 open testing
 
@@ -426,9 +426,9 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
 #!spiral
 
-// // test
-// // rust=true
-// // print_code=false
+//// test
+//// print_code=false
+///! rust
 
 types ()
 inl repository_root = file_system.get_repository_root ()
@@ -459,9 +459,9 @@ inl hangul_pdf_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md.pdf"' |> fi
 inl hangul_epub_path = dist_dir </> $'$"{!file_name_no_ext}.hangul.md.epub"' |> file_system.absolute_path
 
 run {
-    source_dir = source_dir
-    dist_dir = dist_dir
-    cache_dir = cache_dir
+    source_dir
+    dist_dir
+    cache_dir
     hangul_spec = "por-br"
 }
 |> async.block_on
@@ -580,18 +580,16 @@ inl tests () =
 
 #!spiral
 
-// // rust=
+///! 
 
 inl main (args : array_base string) =
     inl trace_state = get_trace_state ()
     inl trace_level = trace_state.level
     trace_level <- Info
 
-    inl current_dir = file_system.get_current_directory ()
-
     trace Info
         fun () => $'$"documents.main"'
-        fun () => $'$"args: {!args} / current_dir: {!current_dir} / {!_locals ()}"'
+        fun () => $'$"args: {!args} / {!_locals ()}"'
 
     inl command = get_command ()
     inl arg_matches = command |> runtime.command_get_matches

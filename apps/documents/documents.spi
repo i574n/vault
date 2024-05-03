@@ -1,9 +1,9 @@
-// // # documents
+/// # documents
 open file_system_operators
 open sm'_operators
 open rust_operators
 
-// // ## types
+/// ## types
 inl types () =
     rust.types ()
     am'.types ()
@@ -12,7 +12,7 @@ inl types () =
     runtime.types ()
     async.types ()
 
-// // ## args
+/// ## args
 inl get_args () =
     {
         source_dir = "source-dir"
@@ -21,7 +21,7 @@ inl get_args () =
         hangul_spec = "hangul-spec"
     }
 
-// // ## get_command
+/// ## get_command
 let get_command () =
     ##"command"
     |> runtime.new_command
@@ -50,7 +50,7 @@ let get_command () =
         |> runtime.arg_required true
     )
 
-// // ## crowbook
+/// ## crowbook
 let crowbook { ext dist_dir dist_path output_path } =
     inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
 
@@ -64,11 +64,11 @@ let crowbook { ext dist_dir dist_path output_path } =
     if result |> sm'.contains "ERROR" then
         trace Info
             fun () => $'"documents.crowbook / result contains ERROR"'
-            fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+            fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / output_path: {!output_path} / {!_locals ()}"'
         (exit_code, result) |> Error
     else (exit_code, result) |> Ok
 
-// // ## hangul
+/// ## hangul
 let hangul repository_root hangul_spec { ext dist_dir dist_path output_path } =
     inl lines =
         dist_path
@@ -131,12 +131,12 @@ let hangul repository_root hangul_spec { ext dist_dir dist_path output_path } =
         fun () => $'"documents.hangul"'
         fun () =>
             inl result_len : i32 = result |> sm'.length
-            $'$"exit_code: %A{!exit_code} / result_len: {!result_len} / {!_locals ()}"'
+            $'$"exit_code: %A{!exit_code} / result_len: {!result_len} / output_path: {!output_path} / {!_locals ()}"'
 
     (exit_code, result) |> Ok
     |> fun x => x : result (i32 * string) (i32 * string)
 
-// // ## fix_paths
+/// ## fix_paths
 let fix_paths { cache_dir dist_path ext } =
     inl file_name = dist_path |> file_system.get_file_name
     inl cache_path = cache_dir </> file_name
@@ -158,7 +158,7 @@ let fix_paths { cache_dir dist_path ext } =
         else $'$"{!cache_path_no_ext}.{!ext}"'
     { output_path output_cache_path }
 
-// // ## files_fn
+/// ## files_fn
 inl files_fn { dist_dir cache_dir } fn dist_path ext =
     inl { output_path output_cache_path } = fix_paths { cache_dir dist_path ext }
     inl equal =
@@ -186,7 +186,7 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
             output_path |> Ok |> resultm.box |> Some
     else None
 
-// // ## run
+/// ## run
 let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
     
@@ -369,26 +369,24 @@ let run { source_dir dist_dir cache_dir hangul_spec }
         result |> Ok |> resultm.box
     |> async.future_init (4, 3) 1
 
-// // ## tests
+/// ## tests
 inl tests () =
     rust.run_tests [
         "verify_app", fun _ =>
             get_command () |> runtime.command_debug_assert
     ]
 
-// // ## main
-// // rust=
+/// ## main
+///! 
 
 inl main (args : array_base string) =
     inl trace_state = get_trace_state ()
     inl trace_level = trace_state.level
     trace_level <- Info
 
-    inl current_dir = file_system.get_current_directory ()
-
     trace Info
         fun () => $'$"documents.main"'
-        fun () => $'$"args: {!args} / current_dir: {!current_dir} / {!_locals ()}"'
+        fun () => $'$"args: {!args} / {!_locals ()}"'
 
     inl command = get_command ()
     inl arg_matches = command |> runtime.command_get_matches
