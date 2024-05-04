@@ -244,7 +244,7 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
 
 let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
-    
+
     inl repository_root = file_system.get_repository_root ()
 
     inl source_dir = source_dir |> file_system.get_full_path
@@ -254,7 +254,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
     trace Debug
         fun () => $'"documents.run"'
         fun () => $'$"source_dir: {!source_dir} / dist_dir: {!dist_dir} / cache_dir: {!cache_dir} / hangul_spec: %A{!hangul_spec} / {!_locals ()}"'
-    
+
     fun () =>
         inl files =
             dist_dir
@@ -319,7 +319,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                 inl file = file |> file_system.normalize_path
 
-                inl real_path = source_dir </> relative_path |> file_system.normalize_path
+                inl real_path = source_dir </> relative_path |> file_system.standardize_path
 
                 inl origin_hash_exit_code, origin_hash =
                     runtime.execution_options fun x => { x with
@@ -328,7 +328,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                     }
                     |> runtime.execute_with_options
                 
-                inl dist_path = dist_dir </> relative_path |> file_system.normalize_path
+                inl dist_path = dist_dir </> relative_path |> file_system.standardize_path
 
                 inl local_git_hash_exit_code, local_git_hash =
                     runtime.execution_options fun x => { x with
@@ -337,7 +337,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                     }
                     |> runtime.execute_with_options
 
-                inl cache_path = cache_dir </> relative_path |> file_system.normalize_path
+                inl cache_path = cache_dir </> relative_path |> file_system.standardize_path
 
                 inl files =
                     inl files_fn = files_fn { dist_dir cache_dir }
