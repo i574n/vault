@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <p id = "para-1"><img src = "트프스://바피베이엔브파파즈브트브76크크3시데프5흐4그브프스6이스4시2드그르즈드른브킁5이.이프프스.느프트스토라지.링크" title = "" alt = "브2" /> <img src = "트프스://바피베이피에브토아2드브브클루고인흠븡7아투드6우크7드2지트바오비에이크.이프프스.느프트스토라지.링크/브.즈프그" title = "" alt = "브" /> <img src = "트프스://바피베이피에브토아2드브브클루고인흠븡7아투드6우크7드2지트바오비에이크.이프프스.느프트스토라지.링크/브프.즈프그" title = "" alt = "브프" /> <img src = "트프스://바피베이피에브토아2드브브클루고인흠븡7아투드6우크7드2지트바오비에이크.이프프스.느프트스토라지.링크/브.즈프그" title = "" alt = "브" /> <img src = "트프스://바피베이피에브토아2드브브클루고인흠븡7아투드6우크7드2지트바오비에이크.이프프스.느프트스토라지.링크/프.픙그" title = "" alt = "프" /> <img src = "트프스://바피베이피4우오브즈스트6샤프프크크그스3그신프322스투즈쿠스브2이오틍26이톡스크리.이프프스.느프트스토라지.링크/스크렌조트%202023-03-19%20232039.픙그" title = "" alt = "파우콩" /> <img src = "트프스://바피베익응46네이브즈그모무암도쿠프크7프지5프슬리2아이우2오프5느즈지.이프프스.느프트스토라지.링크/스크렌조트%202023-03-19%20232856.픙그" title = "" alt = "파우콩" /></p>
+<p id = "para-2"><img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/81크투그크27르._아크_수1500_.즈프그" title = "" alt = "81크투그크27르.<em>아크_수1500</em>" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/91미1웨스3무._아크_우프1000%2크1000_쿠80_.즈프그" title = "" alt = "91미1웨스3무.<em>아크_우프1000%2크1000_쿠80</em>" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/그레그-위트-포피-잉-나누-콕피트-옹-칼리-데우-히%크%81우-1200프.즈프그" title = "" alt = "그레그-위트-포피-잉-나누-콕피트-옹-칼리-데우-히%크%81우-1200프" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/임페르메아블리스-베트로스-파라-모투스-모토시클릭스타스-24-오프-29.즈프그" title = "" alt = "임페르메아블리스-베트로스-파라-모투스-모토시클릭스타스-24-오프-29" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/크9-모투-콕피트-위트-제스-안드-모시-1200프.즈프그" title = "" alt = "크9-모투-콕피트-위트-제스-안드-모시-1200프" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/돈로아드.즈프그" title = "" alt = "돈로아드" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/오르세토트-오베를로크-위트-제오르지-안드-오리지나우-도그-토치-장9.2019.1.즈프그" title = "" alt = "오르세토트-오베를로크-위트-제오르지-안드-오리지나우-도그-토치-장9.2019.1" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/이마지스.즈프그" title = "" alt = "이마지스" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/탕크-바그-페트-마스코타스-베트로스.즈프그" title = "" alt = "탕크-바그-페트-마스코타스-베트로스" /> <img src = "트프스://바피베이에라브트3브쿠즈지6리크2이트증3히프뭉5자피우6한즈스스5이2피.이프프스.느프트스토라지.링크/비아자르_잉_모투_콩_마스코타스_5.즈프그" title = "" alt = "비아자르_잉_모투_콩_마스코타스_5" /></p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

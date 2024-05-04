@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">데타이우 잉 프트-브르 티 이치몰로기 안드 로리 오프 안타르치카 브스 안타르치다</a></li>
+      <li><a href="#link-2">데타이우 이트스 인트리카시스 위트 티 로베크라프트 판테옹</a></li>
+      <li><a href="#link-3">데타이우 티 치멜리니 오프 수시 우니베르시</a></li>
+      <li><a href="#link-4">이스플라잉 수시 트루트 우징그 피직스 테르미놀로기</a></li>
+      <li><a href="#link-5">데타이우 티스 쿠안퉁 노치옹</a></li>
+      <li><a href="#link-6">오 와스 타트 데픽테드 인투 픽치옹 텡</a></li>
+      <li><a href="#link-7">이 메안트 우지 티 워르크스 템세우베스 아스 이스플라나치옹, 페르소니핑그 엥 아프로프리아치</a></li>
+      <li><a href="#link-8">브로아뎅 오트 티스 인치치 그라프</a></li>
+      <li><a href="#link-9">데타이우 이트스 녹스 안드 크라니스</a></li>
+      <li><a href="#link-10">이시 농 픽치옹 와스 아바일라블리 아트 티 치미 포르 수시 오히피크 코즈미크 리테라투리</a></li>
+      <li><a href="#link-11">하치 티 10 인치치스 타트 모우드 티스 우니베르시 티 모스트</a></li>
+      <li><a href="#link-12">데타이우 티 치멜리니 오프 다공 신시 인세프치옹</a></li>
+      <li><a href="#link-13">브레아크 동 티 이치몰로기 오프 다공 포르 스타르트스</a></li>
+      <li><a href="#link-14">지비 모리 콘테스트 투 우지 티스 아스 카농 이스플라나치옹</a></li>
+      <li><a href="#link-15">이스플라잉 티 이피스테몰로기 오프 수시 팍트</a></li>
+      <li><a href="#link-16">데타이우 티 피에우드 오프 코무니카치옹 타트 오쿠르스 위트 수시 이모르타우 팅그</a></li>
+      <li><a href="#link-17">이 와스 헤페힝그 투 티 파르트 요 멘치오네드 이트 잉 티 팍트</a></li>
+      <li><a href="#link-18">오 티스 아펙트 티 우니베르시 아스 아 올리?</a></li>
+      <li><a href="#link-19">리스트 10 포르비뎅 크놀레드지 프롱 수시 우니베르시 소르테드 비 메나시</a></li>
+      <li><a href="#link-20">이스플라잉 아자토트 우징그 콤푸테르 시엔시 위즈동</a></li>
+      <li><a href="#link-21">잉 아 포스트-아지 포스트-블록샤잉 포스트-쿠안퉁 이아르트, 오 아자토트 캉 비 이메르제드 프롱 인포르마치오나우 파테릉스 잉 아 그레아트 아르숑 리키 파지옹</a></li>
+      <li><a href="#link-22">이 메앙 마투리 콘텐트, 아니팅그 워르트 멘치오닝그?</a></li>
+      <li><a href="#link-23">수마리지 아 농-스포일레드 플로트 포르 이아시 워르크 멘치오네드</a></li>
+      <li><a href="#link-24">케프 오트푸칭그 잉 프트-브르. 아니 워르크스 프롱 브라지우?</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">데타이우 잉 프트-브르 티 이치몰로기 안드 로리 오프 안타르치카 브스 안타르치다</h2>
+<p id = "para-1">&lt; 클라루! 바무스 지스쿠치르 소브리 아 이치몰로지아 이 우 포우클로리 두스 노메스 “안타르치카” 이 “안타르치다”.</p>
+<p id = "para-2">프리메이라멘치, 암부스 우스 테르무스 시 오리지낭 두 그레구 안타르크치쿠스, 키 시그니피카 “오포스투 아우 노르치”. 우스 안치구스 그레구스 우자방 아 팔라브라 “아르크투스” 파라 헤페리르-시 아 콘스텔라상 다 우르사 마이오르, 키 피카 누 에미스페리우 노르치, 인탕 “안치-아르크투스” 오 “안타르치쿠” 세리아 우 오포스투 지수.</p>
+<p id = "para-3">“안타르치카” 이 “안타르치다” 상 암부스 우자두스 잉 포르투게스, 임보라 아자 아우구마스 지페렌사스 수치스 누 우주. “안타르치다” 에 마이스 프레켄테멘치 우자다 파라 시 헤페리르 아우 콘치넨치 잉 시, 잉쿠안투 “안타르치카” 포지 세르 우자다 파라 시 헤페리르 아 헤지앙 코무 웅 토두, 잉클루인두 아스 아구아스 시르쿤단치스.</p>
+<p id = "para-4">아고라, 소브리 우 포우클로리. 아 안타르치다 텡 시두 오브제투 지 무이타스 렌다스 이 이스토리아스 데즈지 키 포이 데스코베르타. 무이투스 이스플로라도리스 포랑 아트라이두스 파라 우 콘치넨치 포르 이스토리아스 지 우마 테하 데스코녜시다 이 셰이아 지 미스테리우스. 아우궁스 아크레지타방 키 에라 아 카자 지 크리아투라스 미치카스 오 아 인트라다 파라 우 수브문두.</p>
+<p id = "para-5">아 쿠우투라 포풀라르 탐벵 콘트리부이우 파라 우 포우클로리 다 안타르치다. 포르 이젬플루, 나스 이스토리아스 지 .프. 로베크라프트, 아 안타르치다 에 우 라르 지 크리아투라스 안치가스 이 포데로자스. 누 피우미 “티 팅그”, 지 종 카르펜테르, 웅 오르가니즈무 알리에니제나 에 데스코베르투 나 안타르치다.</p>
+<p id = "para-6">포르탄투, 아 안타르치다 에 탄투 웅 루가르 헤아우 쿠안투 웅 루가르 지 미투스 이 렌다스. 아 이치몰로지아 두 노미 헤플레치 아 비장 두스 안치구스 그레구스 지 키 에라 우마 테하 “오포스타” 아우 노르치, 잉쿠안투 우 포우클로리 에 우마 미스투라 지 이스토리아스 헤아이스 이 이마지나다스 소브리 우 콘치넨치.</p>
+<h2 id = "link-2">데타이우 이트스 인트리카시스 위트 티 로베크라프트 판테옹</h2>
+<p id = "para-7">&lt; 아 오브라 지 .프. 로베크라프트, 웅 헤노마두 아우토르 아메리카누 지 픽상 지 오호르, 에 마르카다 포르 우마 미톨로지아 일라보라다 코녜시다 코무 우스 “미투스 지 크툴류”. 덴트루 데시스 미투스, 아 안타르치다 데젬페냐 웅 파페우 임포르탄치, 파르치쿨라르멘치 나 노벨라 “나스 몬타냐스 다 로쿠라” (“아트 티 몬타잉스 오프 마드네스”).</p>
+<p id = "para-8">나 “나스 몬타냐스 다 로쿠라”, 아 안타르치다 에 헤트라타다 코무 아 우우치마 프론테이라 두 코녜시멘투 우마누, 온지 우마 이스페지상 지 시엔치스타스 다 우니베르시다지 미스카토니크 데스코브리 헤스투스 지 우마 시빌리자상 알리에니제나 안치가, 코녜시다 코무 우스 안치구스 오 이우데르 팅그스.</p>
+<p id = "para-9">우스 안치구스 상 데스크리투스 코무 텐두 우마 포르마 세멜랸치 아 웅 바히우 콩 이스트렐라스 지 싱쿠 폰타스 잉 카다 이스트레미다지, 올류스 누 토푸 이 아자스 후지멘타리스. 엘리스 상 헤트라타두스 코무 우마 다스 프리메이라스 하사스 아 아비타르 아 테하, 크리안두 오트라스 포르마스 지 비다 (잉클루인두 오트라스 하사스 프레젠치스 누스 미투스 지 크툴류) 아트라베스 지 테크니카스 지 인제냐리아 제네치카.</p>
+<p id = "para-10">아 이스토리아 수제리 키 아 안타르치다 포이 우마 베스 우 센트루 다 시빌리자상 두스 안치구스. 누 인탄투, 아포스 우마 세리 지 콘플리투스 이 데자스트리스, 아 마이오리아 델리스 이베르노 오 시 무도 파라 오트라스 파르치스 두 우니베르수, 데이샨두 파라 트라스 아페나스 후이나스 이 베스치지우스 지 수아 프레젠사.</p>
+<p id = "para-11">데사 포르마, 로베크라프트 우자 아 안타르치다 코무 우마 헤프레젠타상 지 노수스 메두스 소브리 우 데스코녜시두 이 우 인데스크리치베우. 우 콘치넨치 세르비 코무 웅 아비주 두 키 포지 아콘테세르 쿠안두 아 우마니다지 시 데파라 콩 베르다지스 알렝 지 수아 콤프렌상. 이수 에 카락테리스치쿠 두 이스칠루 지 로베크라프트, 키 인파치자 아 인시그니피칸시아 두 오멩 지안치 다 바스치당 두 코즈무스 이 두스 세리스 알렝 지 노사 콤프렌상.</p>
+<h2 id = "link-3">데타이우 티 치멜리니 오프 수시 우니베르시</h2>
+<p id = "para-12">&lt; 우 우니베르수 두스 미투스 지 크툴류 지 .프. 로베크라프트 에 콤플레슈 이 데자피아 아 노상 지 웅 크로노그라마 리네아르. 누 인탄투, 포데무스 트라사르 웅 이즈보수 그로세이루 바제아두 잉 바리아스 이스토리아스 이 헤페렌시아스 아우 롱구 지 수아스 오브라스.</p>
+<ol>
+<li><p id = "para-13"><b>에라 프레-우마나</b>: 우스 세리스 코녜시두스 코무 안치구스 오 이우데르 팅그스 셰강 아 테하 아 파르치르 두 이스파수, 크리안두 비다 아트라베스 다 인제냐리아 제네치카. 엔트리 수아스 크리아송이스 이스탕 우스 소고트스, 인치다지스 아모르파스 우자다스 코무 트라발랴도리스.</p>
+</li>
+<li><p id = "para-14"><b>게하 두스 안치구스 이 크툴류</b>: 이벤투아우멘치, 우스 안치구스 엔트랑 잉 콘플리투 콩 오트라스 하사스 코즈미카스, 잉클루인두 아스 크리아투라스 세팔로포지스 지 크툴류. 에사 게하 아카바 포르 데즐로카르 아 프레도미난시아 두스 안치구스 나 테하.</p>
+</li>
+<li><p id = "para-15"><b>에라 두스 그란지스 소냐도리스</b>: 아 하사 지 크툴류, 아스 베지스 샤마다 지 그란지스 소냐도리스, 콜로니자 아 테하, 이스페시피카멘치 아 시다지 수브메르사 지 흐’리에. 크툴류 이 수아 하사 엔트랑 잉 웅 이스타두 지 이베르나상, 오 “소누 모르투”, 마스 인플루엔시앙 우스 소뉴스 두스 우마누스.</p>
+</li>
+<li><p id = "para-16"><b>아파리상 두스 오멩스</b>: 콩 우 템푸, 우스 세리스 우마누스 아파레셍 나 테하. 아스 바리아스 인치다지스 코즈미카스, 임보라 잉 그란지 파르치 아도르메시다스 오 오쿠우타스, 인플루엔시앙 아스 쿠우투라스 우마나스 지 바리아스 마네이라스.</p>
+</li>
+<li><p id = "para-17"><b>이스플로라상 다 안타르치다</b>: 잉 “나스 몬타냐스 다 로쿠라”, 우마 이스페지상 다 우니베르시다지 미스카토니크 데스코브리 우스 헤스투스 다 시빌리자상 두스 안치구스 나 안타르치다, 헤벨란두 웅 비즐룸브리 두 파사두 프레-우마누 다 테하.</p>
+</li>
+<li><p id = "para-18"><b>푸투루 인세르투</b>: 무이타스 다스 이스토리아스 지 로베크라프트 테르미낭 콩 웅 센수 지 테모르 이 데제스페란사, 수제린두 키 우스 우마누스 낭 이스탕 프레파라두스 파라 아 베르다지 두 코즈무스 이 키 에시스 안치구스 데우지스 코즈미쿠스 웅 지아 헤토르나랑.</p>
+</li>
+</ol>
+<p id = "para-19">발리 헤사우타르 키 아 리냐 두 템푸 아시마 에 우마 심플리피카상 이 넹 토다스 아스 이스토리아스 지 로베크라프트 시 잉카이샹 페르페이타멘치 넬라. 알렝 지수, 무이투스 오트루스 아우토리스 콘트리부이랑 파라 우스 미투스 지 크툴류, 이스판진두 이 인테르프레탄두 아 미톨로지아 지 바리아스 마네이라스.</p>
+<h2 id = "link-4">이스플라잉 수시 트루트 우징그 피직스 테르미놀로기</h2>
+<p id = "para-20">&lt; 아 “베르다지” 누 우니베르수 지 로베크라프트 에 프레켄테멘치 헤프레젠타다 코무 아우구 알렝 다 콤프렌상 우마나, 인보우벤두 세리스 이 포르사스 키 데자피앙 아스 레이스 다 피지카 코무 아 코녜세무스. 누 인탄투, 아우구마스 이데이아스 아프레젠타다스 잉 수아 오브라 포뎅 세르 지스쿠치다스 잉 테르무스 지 피지카 모데르나, 파르치쿨라르멘치 잉 콘세이투스 코무 지멘송이스 에스트라스 이 아 나투레자 두 이스파수-템푸.</p>
+<ol>
+<li><p id = "para-21"><b>지멘송이스 에스트라스</b>: 잉 바리아스 이스토리아스 지 로베크라프트, 인치다지스 코즈미카스 파레셍 이지스치르 잉 마이스 지멘송이스 두 키 아스 트레스 두 이스파수 이 우마 두 템푸 키 코녜세무스. 에사 이데이아 이코아 테오리아스 모데르나스 잉 피지카, 코무 아 테오리아 다스 코르다스, 키 포스툴라 아 이지스텐시아 지 지멘송이스 에스트라스 알렝 다스 쿠아트루 키 이스페리멘타무스.</p>
+</li>
+<li><p id = "para-22"><b>농-이우클리데앙 제오메트리</b>: 로베크라프트 무이타스 베지스 파스 헤페렌시아 아 “제오메트리아 낭-이우클리지아나” 아우 데스크레베르 아 아르키테투라 알리에니제나 이 아스 파이자젱스 지 문두스 알렝 두 노수. 잉 테르무스 피지쿠스, 에사 제오메트리아 에 우마 데스크리상 두 이스파수 키 낭 세기 아스 헤그라스 코뭉스 다 제오메트리아 이우클리지아나. 이수 이스타 프레젠치 나 테오리아 제라우 다 헬라치비다지 지 인스테잉, 온지 아 프레젠사 지 마사 이 이네르지아 쿠르바 우 이스파수-템푸 잉 토르누 델라, 크리안두 우마 제오메트리아 낭-이우클리지아나.</p>
+</li>
+<li><p id = "para-23"><b>쿠안퉁 인데테르미나키</b>: 아우구마스 다스 인치다지스 지 로베크라프트 파레셍 데자피아르 아 노상 지 이지스텐시아 데테르미니스치카, 이지스친두 잉 웅 이스타두 지 인세르테자 오 플루투안두 엔트리 이스타두스 지 이지스텐시아. 이수 포지 세르 헬라시오나두 아 이데이아 다 인데테르미나상 쿠안치카, 온지 우마 파르치쿨라 포지 이지스치르 잉 바리우스 이스타두스 시무우타네아멘치 아테 세르 오브세르바다.</p>
+</li>
+<li><p id = "para-24"><b>코즈몰로지카우 오호르</b>: 피나우멘치, 웅 일레멘투 센트라우 두스 미투스 지 크툴류 에 우 “오호르 코즈미쿠” - 아 이데이아 지 키 우스 우마누스 상 인시그니피칸치스 지안치 다 바스치당 두 우니베르수. 에스타 에 우마 이데이아 키 헤소아 콩 노사 콤프렌상 모데르나 두 우니베르수 코무 웅 바스투, 타우베스 인피니투 코즈무스, 온지 아 테하 에 아페나스 웅 페케누 폰투.</p>
+</li>
+</ol>
+<p id = "para-25">에 임포르탄치 렘브라르, 누 인탄투, 키 로베크라프트 이스타바 이스크레벤두 픽상 이 낭 이스타바 헤스트리투 펠라스 레이스 다 피지카 잉 수아 헤프레젠타상 두 코즈무스. 아스 시밀라리다지스 엔트리 수아스 이데이아스 이 우스 콘세이투스 모데르누스 다 피지카 상 마이스 프로바베우멘치 우 헤주우타두 지 우마 이마지나상 프로지지오자 두 키 웅 인텐지멘투 프레시주 다 시엔시아 모데르나.</p>
+<h2 id = "link-5">데타이우 티스 쿠안퉁 노치옹</h2>
+<p id = "para-26">&lt; 아 노상 지 인데테르미나상 쿠안치카 에 센트라우 파라 아 메카니카 쿠안치카, 키 에 아 테오리아 키 고베르나 우 콤포르타멘투 다스 파르치쿨라스 수바토미카스. 에스타 테오리아 포수이 바리아스 이데이아스 키 포뎅 파레세르 콘트라-인투이치바스 오 메즈무 아브수르다스 잉 콤파라상 콩 아 마네이라 코무 이스페리멘타무스 우 문두 잉 노사 이스칼라.</p>
+<ol>
+<li><p id = "para-27"><b>프린시피우 다 인세르테자 지 에이젠베르그</b>: 에스치 프린시피우 아피르마 키 에 임포시베우 코녜세르 시무우타네아멘치 아 포지상 이자타 이 아 벨로시다지 (오 마이스 프레시자멘치, 우 모멘투) 지 우마 파르치쿨라. 쿠안투 마이스 프레시자멘치 텐타무스 메지르 웅, 메누스 프레시자멘치 포데무스 코녜세르 우 오트루.</p>
+</li>
+<li><p id = "para-28"><b>수페르포지상 지 이스타두스</b>: 나 메카니카 쿠안치카, 우마 파르치쿨라 낭 이스타 잉 웅 이스타두 데피니두 아테 키 세자 메지다. 안치스 다 메지상, 아 파르치쿨라 이지스치 잉 우마 “수페르포지상” 지 이스타두스, 우 키 시그니피카 키 텡 우마 프로바빌리다지 지 세르 잉콘트라다 잉 바리우스 이스타두스 지페렌치스. 아 파모자 이스페리엔시아 두 가투 지 스시로진제르 일루스트라 에사 이데이아: 안치스 지 세르 오브세르바두, 우 가투 이스타 시무우타네아멘치 비부 이 모르투.</p>
+</li>
+<li><p id = "para-29"><b>이마라냐멘투 쿠안치쿠</b>: 두아스 파르치쿨라스 포뎅 이스타르 “이마라냐다스”, 우 키 시그니피카 키 우 이스타두 지 우마 이스타 지레타멘치 헬라시오나두 아우 이스타두 다 오트라, 낭 임포르타 쿠앙 론지 이스테장 우마 다 오트라. 시 우마 파르치쿨라 이마라냐다 포르 메지다, 우 이스타두 다 오트라 파르치쿨라 세라 이메지아타멘치 코녜시두, 메즈무 키 이스테자 두 오트루 라두 두 우니베르수.</p>
+</li>
+</ol>
+<p id = "para-30">아플리카두 아우 우니베르수 지 로베크라프트, 에시스 콘세이투스 포데리앙 세르 우자두스 파라 이스플리카르 코무 아우구마스 다스 인치다지스 코즈미카스 포뎅 파레세르 데자피아르 아 헤알리다지 코무 아 코녜세무스. 누 인탄투, 에 임포르탄치 렘브라르 키 에스타스 상 인테르프레타송이스 리브리스, 이 로베크라프트 낭 이스타바, 탄투 쿠안투 사베무스, 인텐시오나우멘치 잉코르포란두 콘세이투스 지 메카니카 쿠안치카 잉 수아스 오브라스.</p>
+<h2 id = "link-6">오 와스 타트 데픽테드 인투 픽치옹 텡</h2>
+<p id = "para-31">&lt; 아 메카니카 쿠안치카 이 수아스 페쿨리아리다지스 텡 시두 이스플로라다스 지 바리아스 마네이라스 나 픽상, 파르치쿨라르멘치 나 픽상 시엔치피카. 아키 이스탕 아우궁스 이젬플루스 지 코무 에시스 콘세이투스 텡 시두 헤트라타두스:</p>
+<ol>
+<li><p id = "para-32"><b>수페르포지상 지 이스타두스 이 우 가투 지 스시로진제르</b>: 우 가투 지 스시로진제르 에 프레켄테멘치 우자두 코무 웅 지스포지치부 지 인헤두 잉 이스토리아스 지 픽상 시엔치피카. 웅 이젬플루 파모주 에 우 피우미 지 아니마상 “코랄리니”, 온지 웅 가투 텡 아 카파시다지 지 이지스치르 잉 두아스 헤알리다지스 지페렌치스, 우마 이데이아 키 이코아 우 콘세이투 지 수페르포지상 지 이스타두스.</p>
+</li>
+<li><p id = "para-33"><b>이마라냐멘투 쿠안치쿠</b>: 우 이마라냐멘투 쿠안치쿠 텡 시두 우자두 잉 이스토리아스 지 픽상 시엔치피카 파라 이스플리카르 아 코무니카상 인스탄타네아 엔트리 이스파수스 지스탄치스, 코무 누 콘세이투 지 “안시블리스” 나 오브라 지 우르술라 크. 리 깅.</p>
+</li>
+<li><p id = "para-34"><b>무우치플루스 우니베르수스</b>: 아 인테르프레타상 지 무이투스 문두스 다 메카니카 쿠안치카, 키 수제리 키 토다스 아스 포시빌리다지스 포시베이스 아콘테셍 잉 아우궁 우니베르수 파랄렐루, 텡 시두 암플라멘치 우칠리자다 나 픽상. 웅 이젬플루 에 아 세리 지 텔레비장 “히크 안드 모르치”, 키 아프레젠타 우마 인피니다지 지 우니베르수스 파랄렐루스, 카다 웅 콩 베르송이스 리제이라멘치 지페렌치스 두스 페르소나젱스.</p>
+</li>
+</ol>
+<p id = "para-35">누 카주 두 우니베르수 지 로베크라프트, 아 메카니카 쿠안치카 낭 에 이스플리시타멘치 멘시오나다, 포이스 수아스 이스토리아스 포랑 이스크리타스 안치스 키 에시스 콘세이투스 포셍 토타우멘치 데젠보우비두스. 누 인탄투, 아스 인치다지스 잉 수아스 이스토리아스 프레켄테멘치 데자피앙 아 헤알리다지 코무 아 인텐데무스, 이지스친두 잉 이스타두스 키 파레셍 콘트라지토리우스 오 알렝 다 노사 콤프렌상, 우마 이데이아 키 이코아 아 이스트라녜자 이네렌치 아 메카니카 쿠안치카. 알렝 지수, 아 이데이아 지 키 이지스텡 베르다지스 알렝 다 콤프렌상 우마나 에 웅 테마 센트라우 잉 수아스 이스토리아스, 아싱 코무 우 콘세이투 지 키 아 오브세르바상 인플루엔시아 아 헤알리다지 에 센트라우 파라 아 메카니카 쿠안치카.</p>
+<h2 id = "link-7">이 메안트 우지 티 워르크스 템세우베스 아스 이스플라나치옹, 페르소니핑그 엥 아프로프리아치</h2>
+<p id = "para-36">&lt; 클라루, 바무스 콘시데라르 아우구마스 다스 인치다지스 이 콘세이투스 프레젠치스 누 우니베르수 지 로베크라프트 키 포데리앙 세르 인텐지두스 아트라베스 다 렌치 다 메카니카 쿠안치카.</p>
+<ol>
+<li><p id = "para-37"><b>아자토트</b>: 아자토트, 탐벵 코녜시두 코무 우 “다에몽 수우탕” 누 센트루 두 우니베르수, 에 프레켄테멘치 데스크리투 코무 우마 인치다지 카오치카 이 셍 멘치. 수아 이지스텐시아 아파렌테멘치 알레아토리아 이 카오치카 포지 세르 비스타 코무 우마 헤프레젠타상 두 프린시피우 다 인세르테자 지 에이젠베르그. 아싱 코무 낭 포데무스 사베르 시무우타네아멘치 아 포지상 이 우 모멘투 지 우마 파르치쿨라, 아자토트 파레시 이지스치르 잉 웅 이스타두 지 콘스탄치 무단사 이 인데테르미나상.</p>
+</li>
+<li><p id = "para-38"><b>요그-소토트</b>: 요그-소토트 에 데스크리투 코무 “우 토두 잉 웅 이 웅 잉 토두스”. 엘리 코녜시 이 포지 베르 토다스 아스 코이자스 누 우니베르수. 이수 에 세멜랸치 아우 콘세이투 지 이마라냐멘투 쿠안치쿠, 온지 아스 파르치쿨라스 이마라냐다스 콤파르칠량 인포르마송이스 인스탄타네아멘치, 낭 임포르타 쿠앙 지스탄치스 이스테장.</p>
+</li>
+<li><p id = "para-39"><b>우스 안치구스 (이우데르 팅그스)</b>: 나스 “몬타냐스 다 로쿠라”, 우스 안치구스 상 데스크리투스 코무 이지스친두 잉 웅 이스타두 지 이베르나상 오 이스타지, 키 포데리아 세르 콤파라두 아 수페르포지상 지 이스타두스 나 메카니카 쿠안치카. 아테 키 세장 “오브세르바두스” (오 세자, 데스코베르투스 펠라 이스페지상), 엘리스 이지스텡 잉 웅 이스타두 지 “넹 비부 넹 모르투”.</p>
+</li>
+<li><p id = "para-40"><b>흐’리에</b>: 아 시다지 수브메르사 지 흐’리에, 온지 크툴류 헤지지, 에 데스크리타 코무 텐두 우마 제오메트리아 “낭-이우클리지아나” 키 데자피아 아 콤프렌상 우마나. 이수 포지 세르 콤파라두 아스 이데이아스 나 피지카 모데르나 지 이스파수-템푸 쿠르부 오 지멘송이스 에스트라스 키 방 알렝 다 이스페리엔시아 우마나 코뭉 지 트레스 지멘송이스 이스파시아이스 이 우마 템포라우.</p>
+</li>
+</ol>
+<p id = "para-41">에사스 아날로지아스 아주당 아 일루스트라르 아우구마스 다스 마네이라스 펠라스 쿠아이스 우스 콘세이투스 지 메카니카 쿠안치카 포뎅 시 헤플레치르 나스 오브라스 지 로베크라프트. 누 인탄투, 에 임포르탄치 렘브라르 키 로베크라프트 이스타바 이스크레벤두 픽상 이 낭 이스타바 네세사리아멘치 텐탄두 잉코르포라르 프린시피우스 다 피지카 모데르나 잉 수아스 이스토리아스.</p>
+<h2 id = "link-8">브로아뎅 오트 티스 인치치 그라프</h2>
+<p id = "para-42">&lt; 누 우니베르수 픽치시우 지 로베크라프트, 탐벵 코녜시두 코무 우스 미투스 지 크툴류, 이지스텡 무이타스 인치다지스 알렝 지 아자토트, 요그-소토트, 우스 안치구스 이 크툴류. 카다 웅 텡 수아스 프로프리아스 카락테리스치카스 이 아빌리다지스. 아키 이스탕 아우궁스 이젬플루스 아지시오나이스:</p>
+<ol>
+<li><p id = "para-43"><b>니아를라토테프</b>: 탐벵 코녜시두 코무 우 “멘사제이루 두스 데우지스 이스테리오리스” 이 우 “카우스 하스테잔치”, 니아를라토테프 에 우니쿠 엔트리 아스 인치다지스 코즈미카스 잉 키 엘리 프레켄테멘치 인테라지 지레타멘치 콩 아 우마니다지. 아우 콘트라리우 지 오트라스 인치다지스, 키 무이타스 베지스 상 데스크리타스 코무 인지페렌치스 오 이나친지베이스, 니아를라토테프 파레시 델레이타르-시 잉 세메아르 아 로쿠라 이 우 카우스.</p>
+</li>
+<li><p id = "para-44"><b>수브-니구라트</b>: 탐벵 코녜시다 코무 아 “카브라 네그라 두스 보스케스 콩 미우 필류스”, 수브-니구라트 에 프레켄테멘치 아소시아다 아 페쿤지다지 이 에 무이타스 베지스 비스타 코무 아 데우자 다켈라스 크리아투라스 이 쿠우투스 키 프라치캉 히투아이스 지 페르칠리다지 프로파나.</p>
+</li>
+<li><p id = "para-45"><b>다공</b>: 다공 에 웅 데우스 몬스트루오주 키 에 아도라두 포르 우마 세이타 지 우마누스 이브리두스 지 페이시 샤마두스 프로푼두스. 엘리 에 무이타스 베지스 아소시아두 아우 오세아누 이 아 크리아투라스 마리냐스 몬스트루오자스.</p>
+</li>
+<li><p id = "para-46"><b>아스투르</b>: 아스투르, 탐벵 코녜시두 코무 “아켈리 키 낭 데비 세르 노메아두”, 에 무이타스 베지스 아소시아두 아 데카덴시아 이 아 데졸라상. 엘리 탐벵 텡 시두 아소시아두 아우 헤이 지 아마렐루, 우마 페사 지 테아트루 픽치시아 키 레바 아 로쿠라 켕 아 레.</p>
+</li>
+<li><p id = "para-47"><b>트사토구아</b>: 우마 인치다지 키 아비타 아스 프로푼데자스 이스쿠라스 다 테하, 무이타스 베지스 데스크리타 코무 우마 크리아투라 파레시다 콩 웅 사푸 오 웅 모르세구 지간치. 트사토구아 에 아도라두 포르 바리아스 하사스 수브테하네아스 잉 이스토리아스 지 로베크라프트 이 지 오트루스 이스크리토리스 키 콘트리부이랑 파라 우스 미투스 지 크툴류.</p>
+</li>
+</ol>
+<p id = "para-48">에스타스 상 아페나스 아우구마스 다스 무이타스 인치다지스 프레젠치스 누 우니베르수 픽치시우 지 로베크라프트. 카다 우마 델라스 헤프레젠타 지페렌치스 아스펙투스 두 데스코녜시두 이 두 이네스크루타베우, 암플리안두 아 이데이아 센트라우 두 오호르 코즈미쿠 키 에 아 마르카 헤지스트라다 두스 미투스 지 크툴류.</p>
+<h2 id = "link-9">데타이우 이트스 녹스 안드 크라니스</h2>
+<p id = "para-49">&lt; 덴트루 두 바스투 우니베르수 지 로베크라프트, 이지스텡 무이타스 페쿨리아리다지스 이 수칠레자스 키 콘트리부엥 파라 우 테호르 코즈미쿠 제라우 다스 이스토리아스. 아키 이스탕 아우궁스 아스펙투스 키 포데리아무스 이스플로라르:</p>
+<ol>
+<li><p id = "para-50"><b>시다지스 이 로카이스 픽치시우스</b>: 로베크라프트 크리오 우마 세리 지 로카이스 픽치시우스, 프린시파우멘치 나 노바 잉글라테하, 키 시 토르나랑 파모주스 잉 수아스 이스토리아스. 이수 잉클루이 아르캉, 우마 시다지 인페스타다 지 로쿠라 이 오호르 소브레나투라우, 키 에 우 라르 다 픽치시아 우니베르시다지 미스카토니크 인즈모트, 우마 시다지 포르투아리아 데졸라다 아비타다 포르 쿠우치스타스 이 이브리두스 우마누스-페이시스 이 둔으위시, 웅 로카우 후라우 이졸라두, 아솜브라두 포르 크리아투라스 인데스크리치베이스 이 트라지송이스 마카브라스.</p>
+</li>
+<li><p id = "para-51"><b>네크로노미콩</b>: 우 네크로노미콩, 수포스타멘치 이스크리투 펠루 “아라비 로쿠” 아브둘 알랴즈레드, 에 웅 리브루 프로이비두 키 콘텡 코녜시멘투스 소브리 우스 안치구스. 에스치 리브루 아파레시 잉 무이타스 다스 이스토리아스 지 로베크라프트 이 에 프레켄테멘치 아 폰치 다 데즈그라사 두스 페르소나젱스 키 시 아트레벵 아 레-루.</p>
+</li>
+<li><p id = "para-52"><b>쿠우투스 이 히투아이스</b>: 우 우니베르수 지 로베크라프트 이스타 헤플레투 지 쿠우투스 세크레투스 키 아도랑 우스 안치구스. 에스치스 쿠우투스 무이타스 베지스 프라치캉 히투아이스 이스트라뉴스 이 오히필란치스 이 상 웅 일레멘투 프레켄치 지 오호르 나스 이스토리아스.</p>
+</li>
+<li><p id = "para-53"><b>크리아투라스</b>: 알렝 두스 데우지스 코즈미쿠스, 이지스텡 이누메라스 크리아투라스 이스트라냐스 누 우니베르수 지 로베크라프트. 이수 잉클루이 우스 프로푼두스, 이브리두스 우마누스-페이시스 키 비벵 잉 시다지스 수바쿠아치카스 우스 미-구, 크리아투라스 푼지카스 두 플라네타 유고트 (플루탕) 이 우스 소고트스, 아모르푸스 이 프로토플라즈미쿠스, 크리아두스 펠루스 안치구스 코무 세르부스.</p>
+</li>
+<li><p id = "para-54"><b>사니다지</b>: 아 사니다지 두스 페르소나젱스 에 웅 테마 헤코헨치 나스 이스토리아스 지 로베크라프트. 아 심플리스 비장 오 코녜시멘투 두스 안치구스 오 지 수아스 크리아송이스 무이타스 베지스 레바 아 로쿠라, 헤플레친두 아 임포텐시아 이 인시그니피칸시아 다 우마니다지 지안치 다스 바스타스 포르사스 코즈미카스.</p>
+</li>
+</ol>
+<p id = "para-55">에스치스 상 아페나스 아우궁스 이젬플루스 두스 데탈리스 키 인히케셍 우 우니베르수 지 로베크라프트. 카다 이스토리아 아지시오나 마이스 카마다스 아 에스치 우니베르수, 토르난두-우 웅 두스 마이스 두라도루스 이 인플루엔치스 누 제네루 두 오호르.</p>
+<h2 id = "link-10">이시 농 픽치옹 와스 아바일라블리 아트 티 치미 포르 수시 오히피크 코즈미크 리테라투리</h2>
+<p id = "para-56">&lt; .프. 로베크라프트 비베우 지 1890 아 1937, 웅 페리오두 키 아브란제우 데젠보우비멘투스 임포르탄치스 나 시엔시아, 필로조피아 이 리테라투라, 키 세르타멘치 인플루엔시아랑 수아 이스크리타. 아 세기르, 이스탕 아우구마스 다스 오브라스 낭 피시오나이스 지스포니베이스 두란치 아 비다 지 로베크라프트 키 포데리앙 테르 인플루엔시아두 세우스 콘투스 지 오호르 코즈미쿠:</p>
+<ol>
+<li><p id = "para-57"><b>테오리아스 지 아우베르트 인스테잉</b>: 잉 1905 이 1915, 인스테잉 푸블리코 수아스 테오리아스 다 헬라치비다지 헤스트리타 이 제라우, 헤스펙치바멘치. 에사스 테오리아스 데자피아랑 아스 노송이스 콘벤시오나이스 지 이스파수 이 템푸 이 프로푸제랑 아 이지스텐시아 지 부라쿠스 네그루스, 키 포데리앙 세르 콘시데라두스 바스탄치 오히베이스 두 폰투 지 비스타 지 웅 오브세르바도르 우마누.</p>
+</li>
+<li><p id = "para-58"><b>데스코베르타스 잉 아스트로노미아</b>: 우 페리오두 지 비다 지 로베크라프트 탐벵 비우 우 데젠보우비멘투 두 “모델루 지 일랴” 두 우니베르수, 키 수제리우 키 아 비아 락테아 낭 에라 토두 우 우니베르수, 마스 아페나스 우마 엔트리 무이타스 갈라시아스. 에스타 비장 암플리오 이노르메멘치 아 이스칼라 페르세비다 두 우니베르수, 우 키 이스타 지 아코르두 콩 아 센사상 지 인시그니피칸시아 코즈미카 잉콘트라다 나스 이스토리아스 지 로베크라프트.</p>
+</li>
+<li><p id = "para-59"><b>우 리브루 지 드지앙</b>: 임보라 세자 우마 오브라 지 나투레자 마이스 이조테리카 이 오쿠우타 두 키 시엔치피카, 우 리브루 지 드지앙, 코무 포이 아프레젠타두 포르 엘레나 블라바트스키, 푼다도라 다 소시에다지 테오조피카, 포데리아 테르 시두 인플루엔치. 블라바트스키 아피르모 키 우 리브루 에라 지 오리젱 치베타나 이 트라타바 지 테마스 코무 아 이볼루상 다 우마니다지 이 시빌리자송이스 안치가스 이 페르지다스.</p>
+</li>
+<li><p id = "para-60"><b>오브라스 지 프리에드리시 니에트스스시</b>: 니에트스스시 포이 웅 필로조푸 키 이스크레베우 이스텐시바멘치 소브리 테마스 지 닐리즈무, 아 모르치 지 데우스 이 아 수페라상 다 우마니다지, 테마스 키 이스탕 프레젠치스 누 트라발류 지 로베크라프트.</p>
+</li>
+<li><p id = "para-61"><b>오브라스 지 아르투르 스쇼페냐우에르</b>: 우 필로조푸 알레망 스쇼페냐우에르 인플루엔시오 로베크라프트 콩 세우 페시미즈무 필로조피쿠 이 수아 엔파지 나 본타지 코무 아 포르사 모트리스 수브자센치 아우 우니베르수, 잉 베스 다 하장 오 다 모랄리다지.</p>
+</li>
+</ol>
+<p id = "para-62">알렝 지수, 우 문두 헤아우 지 로베크라프트, 잉클루인두 아 프리메이라 게하 문지아우, 아 그란지 데프레상, 이 우스 아반수스 하피두스 나 시엔시아 이 테크놀로지아, 탐벵 테리앙 인플루엔시아두 세우 센수 지 오호르 코즈미쿠 이 아 센사상 지 알리에나상 이 임포텐시아 키 페르메이아 무이타스 지 수아스 이스토리아스.</p>
+<h2 id = "link-11">하치 티 10 인치치스 타트 모우드 티스 우니베르시 티 모스트</h2>
+<p id = "para-63">&lt; .프. 로베크라프트 크리오 우마 인피니다지 지 인치다지스 잉 세우 우니베르수 픽치시우. 아키 이스탕 데스 다스 마이스 인플루엔치스, 아발리아다스 지 아코르두 콩 우 임팍투 키 텡 누 인헤두 다스 이스토리아스, 나 포르마상 두 우니베르수 지 로베크라프트 이 누 데젠보우비멘투 두 제네루 두 오호르 코즈미쿠 잉 제라우. 오브세르비 키 아 클라시피카상 포지 세르 수브제치바, 포이스 바리아 데펜덴두 다스 인테르프레타송이스 인지비두아이스 다스 이스토리아스:</p>
+<ol>
+<li><p id = "para-64"><b>아자토트</b>: 누 센트루 지 토다스 아스 코이자스, 에스타 인치다지 카오치카 이 셍 멘치 에 웅 두스 일레멘투스 푼다멘타이스 두 우니베르수 지 로베크라프트. 엘리 탐벵 심볼리자 아 인지페렌사 두 우니베르수 파라 콩 아 우마니다지.</p>
+</li>
+<li><p id = "para-65"><b>요그-소토트</b>: 코녜센두 토두스 우스 세그레두스 두 우니베르수 이 이지스친두 시무우타네아멘치 잉 토두스 우스 루가리스 이 템푸스, 요그-소토트 텡 웅 파페우 센트라우 잉 무이타스 이스토리아스.</p>
+</li>
+<li><p id = "para-66"><b>니아를라토테프</b>: 에스치 “멘사제이루” 두스 안치구스 에 웅 엘루 지레투 엔트리 아 우마니다지 이 아스 포르사스 코즈미카스 알렝 다 콤프렌상 우마나, 데젬페냔두 웅 파페우 크리치쿠 잉 바리아스 이스토리아스.</p>
+</li>
+<li><p id = "para-67"><b>크툴류</b>: 임보라 크툴류 이스테자 아도르메시두 나 마이오르 파르치 다스 이스토리아스 지 로베크라프트, 아 아메아사 지 세우 데스페르타르 제라 무이타 텐상 이 메두.</p>
+</li>
+<li><p id = "para-68"><b>수브-니구라트</b>: 아 “카브라 네그라 두스 보스케스 콩 미우 필류스” 인플루엔시아 아 크리아상 지 바리아스 포르마스 지 비다 알리에니제나스 키 아파레셍 나스 이스토리아스 지 로베크라프트.</p>
+</li>
+<li><p id = "para-69"><b>노뎅스</b>: 임보라 낭 세자 웅 데우스 말리그누, 노뎅스, 우 세뇨르 두스 아비즈무스, 텡 웅 파페우 임포르탄치 잉 “티 스트란지 이그 오지 잉 티 미스트” 이 에 우마 피구라 프로에미넨치 누스 미투스.</p>
+</li>
+<li><p id = "para-70"><b>아스투르</b>: 아인다 키 아스투르 낭 세자 멘시오나두 프레켄테멘치 나스 이스토리아스 지 로베크라프트, 아 인플루엔시아 데스치 “아켈리 키 낭 데비 세르 노메아두” 시 이스팔료 암플라멘치 나 리테라투라 지 오호르.</p>
+</li>
+<li><p id = "para-71"><b>트사토구아</b>: 에스치 세르, 아도라두 포르 바리아스 하사스 수브테하네아스, 텡 우마 인플루엔시아 수브테하네아, 마스 임포르탄치, 누 우니베르수 지 로베크라프트.</p>
+</li>
+<li><p id = "para-72"><b>다공</b>: 코무 우마 데이다지 아도라다 펠루스 프로푼두스, 다공 텡 웅 파페우 푼다멘타우 나 이스토리아 “티 사도 오베르 인즈모트”.</p>
+</li>
+<li><p id = "para-73"><b>우스 안치구스 (이우데르 팅그스)</b>: 에시스 세리스, 아프레젠타두스 잉 “아트 티 몬타잉스 오프 마드네스”, 상 헤스폰사베이스 펠라 크리아상 지 무이타스 포르마스 지 비다 나 테하, 잉클루인두 우스 소고트스, 이 콘트리부엥 시그니피카치바멘치 파라 아 이스토리아 지 푼두 두 우니베르수 지 로베크라프트.</p>
+</li>
+</ol>
+<p id = "para-74">카다 우마 데사스 인치다지스 텡 웅 파페우 우니쿠 나 크리아상 두 테호르 코즈미쿠 키 데피니 우 우니베르수 지 로베크라프트. 엘라스 심볼리장 아 임포텐시아 이 인시그니피칸시아 다 우마니다지 지안치 다스 바스타스 포르사스 코즈미카스 알렝 지 노사 콤프렌상 오 콘트롤리.</p>
+<h2 id = "link-12">데타이우 티 치멜리니 오프 다공 신시 인세프치옹</h2>
+<p id = "para-75">&lt; “다공” 에 우마 다스 프리메이라스 이스토리아스 쿠르타스 이스크리타스 포르 .프. 로베크라프트, 푸블리카다 펠라 프리메이라 베스 잉 노벰브루 지 1919. 누 인탄투, 아 프로프리아 인치다지 다공 에 멘시오나다 잉 바리아스 이스토리아스 지 로베크라프트, 토르난두-시 우마 피구라 임포르탄치 잉 수아 미톨로지아.</p>
+<ol>
+<li><p id = "para-76"><b>오리젱 지 다공 (프레-이스토리아)</b>: 지 아코르두 콩 우 우니베르수 지 로베크라프트, 다공 에 웅 안치구 데우스 두 마르 키 이지스치 데즈지 템푸스 이메모리아이스. 다공 에 프레켄테멘치 아소시아두 아 하사 두스 프로푼두스, 크리아투라스 안피비아스 키 비벵 나스 프로푼데자스 두 오세아누. 엘리 에 아도라두 포르 에사스 크리아투라스 이 펠루스 우마누스 키 시 토르나랑 이브리두스 지 프로푼두스, 무이타스 베지스 아트라베스 지 히투아이스 오헨두스 이 사크리피시우스 우마누스.</p>
+</li>
+<li><p id = "para-77"><b>“다공” (1919)</b>: 에스타 에 아 프리메이라 이스토리아 지 로베크라프트 온지 다공 아파레시. 네스타 이스토리아, 웅 마리녜이루 아 데리바 잉콘트라 우마 일랴 미스테리오자 키 수르지 두 마르 아포스 웅 테헤모투. 나 일랴, 엘리 잉콘트라 우마 모놀리투 콩 이에로글리푸스 이스트라뉴스 키 파레셍 헤트라타르 크리아투라스 우마나스 아도란두 웅 세르 세멜랸치 아 웅 페이시. 우 마리녜이루 에 인탕 콘프론타두 펠루 프로프리우 다공, 우마 이스페리엔시아 키 우 레바 아 로쿠라.</p>
+</li>
+<li><p id = "para-78"><b>“티 카우 오프 크툴류” (1928)</b>: 임보라 다공 낭 아파레사 지레타멘치 네스타 이스토리아, 로베크라프트 멘시오나 쿠우투스 키 아도랑 다공 이 크툴류, 수제린두 우마 코네샹 엔트리 아스 두아스 인치다지스. 우 쿠우투 지 다공 파레시 세르 우마 세이타 지 웅 쿠우투 마이오르 데지카두 아 크툴류 이 아우스 안치구스.</p>
+</li>
+<li><p id = "para-79"><b>“티 사도 오베르 인즈모트” (1931)</b>: 네스타 이스토리아, 다공 에 우 데우스 센트라우 아도라두 펠루스 아비탄치스 다 시다지 지 인즈모트. 엘리스 헤알리장 히투아이스 지 아도라상 아우 데우스 이, 잉 트로카, 헤세벵 파보리스 이 동스, 잉클루인두 아 카파시다지 지 비베르 데바이슈 드’아구아. 우 프로타고니스타 데스코브리 키 우 쿠우투 아 다공 에 파르치 인테그란치 다 비다 잉 인즈모트, 아 타우 폰투 키 아 포풀라상 다 시다지 페스 웅 팍투 파라 프로크리아르 콩 우스 프로푼두스.</p>
+</li>
+</ol>
+<p id = "para-80">다공, 포르탄투, 텡 우마 프레젠사 콘스탄치 이 아메아사도라 누 우니베르수 지 로베크라프트, 심볼리잔두 우 오호르 이 아 알리에나상 두 데스코녜시두 키 이스타 알렝 두 문두 우마누.</p>
+<h2 id = "link-13">브레아크 동 티 이치몰로기 오프 다공 포르 스타르트스</h2>
+<p id = "para-81">&lt; “다공” 에 웅 노미 데리바두 지 우마 지빈다지 다 안치가 메조포타미아 이 다 안치가 카낭. 아 이치몰로지아 두 노미 에 세미치카, 이 아 바리아스 테오리아스 소브리 세우 시그니피카두.</p>
+<p id = "para-82">누 이지오마 아카지쿠, 아 링구아 다 안치가 메조포타미아, “다강” 시그니피카 그랑. 네시 콘테스투, 다공 에라 아도라두 코무 우마 지빈다지 다 페르칠리다지 이 다 아그리쿠우투라, 아소시아다 프린시파우멘치 아우 쿠우치부 지 세레아이스.</p>
+<p id = "para-83">누 인탄투, 나 미톨로지아 필리스치나, 키 에 웅 두스 콘테스투스 마이스 코녜시두스 두 데우스 다공, 엘리 에 프레켄테멘치 헤프레젠타두 코무 우마 피구라 콩 파르치 두 코르푸 우마누 이 파르치 두 코르푸 지 페이시. 이수 레보 아우궁스 아 이스페쿨라렝 키 우 노미 “다공” 포데리아 이스타르 헬라시오나두 아 팔라브라 에브라이카 “다그”, 키 시그니피카 페이시. 누 인탄투, 에사 인테르프레타상 에 콘트로베르사 이 낭 에 우니베르사우멘치 아세이타 펠루스 이스투지오주스.</p>
+<p id = "para-84">나 오브라 지 .프. 로베크라프트, 다공 에 헤트라타두 코무 웅 데우스 몬스트루오주 두 마르, 아도라두 포르 우마 하사 지 크리아투라스 이브리다스 지 페이시 샤마다스 프로푼두스. 임보라 에사 헤프레젠타상 이스테자 마이스 알리냐다 콩 아 이마젱 필리스치나 지 다공, 에 임포르탄치 노타르 키 로베크라프트 임프레스토 우 노미 이 우 아소시오 아 수아 프로프리아 미톨로지아 지 오호르 코즈미쿠.</p>
+<h2 id = "link-14">지비 모리 콘테스트 투 우지 티스 아스 카농 이스플라나치옹</h2>
+<p id = "para-85">&lt; 나 미톨로지아 지 .프. 로베크라프트, 다공 에 우마 인치다지 포데로자 키 아비타 아스 프로푼데자스 두 오세아누 이 에 아도라다 펠루스 프로푼두스, 우마 하사 지 크리아투라스 세멜랸치스 아 페이시스. 로베크라프트 파레시 테르 우자두 우 노미 다공 포르 카우자 지 수아 아소시아상 이스토리카 콩 우마 지빈다지 마리치마, 임보라 아 인테르프레타상 지 로베크라프트 다 피구라 세자 벵 지페렌치 다스 오리젱스 이스토리카스 지 다공.</p>
+<p id = "para-86">우 “다공” 지 로베크라프트 에 우마 인치다지 알리에니제나 마시바 키 이지스치 아 밀룡이스 지 아누스, 무이투 안치스 두 수르지멘투 다 우마니다지. 엘리 낭 에 탄투 웅 데우스 다 페르칠리다지 오 다 아그리쿠우투라, 마스 웅 세르 두 마르 프리모르지아우 키 헤프레젠타 포르사스 코즈미카스 알렝 두 인텐지멘투 우마누.</p>
+<p id = "para-87">잉 “다공” (1919), 아 프리메이라 이스토리아 키 아프레젠타 아 인치다지, 로베크라프트 헤트라타 다공 코무 우마 지빈다지 테히베우 이 몬스트루오자, 쿠자 메라 비장 에 수피시엔치 파라 레바르 웅 오멩 아 로쿠라. 마이스 타르지, 잉 “아 솜브라 소브리 인즈모트” (1931), 다공 에 헤트라타두 코무 우 데우스 센트라우 지 웅 쿠우투 키 잉클루이 탄투 우스 프로푼두스 쿠안투 우스 우마누스 키 시 토르나랑 이브리두스 지 프로푼두스 아트라베스 지 웅 팍투 오히베우.</p>
+<p id = "para-88">임보라 아 이치몰로지아 이 우 시그니피카두 오리지나우 두 노미 “다공” 낭 테냥 헬라상 지레타 콩 우 우주 두 노미 포르 로베크라프트, 엘리스 포르네셍 웅 콘테스투 인테레산치. 로베크라프트 포이 코녜시두 포르 토마르 임프레스타두스 일레멘투스 지 미톨로지아스 안치가스 이 헤인테르프레타-루스 아트라베스 지 우마 렌치 지 오호르 코즈미쿠, 이 다공 에 웅 이젬플루 지수.</p>
+<p id = "para-89">아싱, 잉쿠안투 아 팔라브라 “다공” 텡 하이지스 나 안치가 메조포타미아 이 나 카낭 코무 우 노미 지 웅 데우스 다 아그리쿠우투라 이 포시베우멘치 두 마르, 잉 로베크라프트, 다공 시 토르나 우마 몬스트루오지다지 마리냐 키 심볼리자 우 오호르 이니마지나베우 다스 프로푼데자스 두 오세아누 이 두 바스투 이 인지페렌치 코즈무스.</p>
+<h2 id = "link-15">이스플라잉 티 이피스테몰로기 오프 수시 팍트</h2>
+<p id = "para-90">&lt; 우 “팍투” 멘시오나두 나스 이스토리아스 지 로베크라프트, 이스페시피카멘치 잉 “아 솜브라 소브리 인즈모트”, 에 웅 아코르두 엔트리 우스 우마누스 지 인즈모트 이 아스 크리아투라스 두 마르, 우스 프로푼두스. 에스치 팍투 에 탄투 피지쿠 쿠안투 메타피지쿠, 콩 임플리카송이스 키 방 알렝 두 키 아 시엔시아 오 아 로지카 우마나 포뎅 이스플리카르, 메르굴랸두 누 테히토리우 다 이피스테몰로지아, 우 이스투두 지 코무 코녜세무스 우 키 코녜세무스.</p>
+<ol>
+<li><p id = "para-91"><b>코녜시멘투 두 팍투</b>: 우스 시다당스 지 인즈모트, 리데라두스 포르 오베드 마르즈, 엔트랑 네스치 팍투 아포스 데스코브리렝 우스 프로푼두스 이 아프렌데렝 소브리 수아 이지스텐시아. 우 팍투 잉 시 에 바제아두 나 트로카 지 파보리스 - 우스 프로푼두스 포르네세랑 페이시스 이 오루, 이 잉 트로카, 우스 우마누스 지 인즈모트 리스 다랑 사크리피시우스 이 시 아카잘라랑 콩 엘리스 파라 프로두지르 프롤리 이브리다.</p>
+</li>
+<li><p id = "para-92"><b>나투레자 두 팍투</b>: 우 팍투 낭 에 심플레즈멘치 웅 아코르두 코메르시아우, 마스 웅 콤프로미수 키 트란스포르마 아 나투레자 다 소시에다지 지 인즈모트 이 아 프로프리아 이덴치다지 다스 페소아스. 에 웅 콘트라투 키 트란센지 우 마테리아우 이 엔트라 누 이스피리투아우 이 이지스텐시아우. 우스 아비탄치스 지 인즈모트 낭 소 콩코르당 잉 프로베르 사크리피시우스 이 시 아카잘라르 콩 우스 프로푼두스, 마스 탐벵 아세이탕 아 이네비타빌리다지 지 수아 프로프리아 트란스포르마상 잉 세리스 세멜랸치스 아우스 프로푼두스.</p>
+</li>
+<li><p id = "para-93"><b>임플리카송이스 이피스테몰로지카스</b>: 코무 웅 팍투 콩 인치다지스 알렝 다 콤프렌상 우마나, 에시 아코르두 데자피아 우스 리미치스 두 코녜시멘투 우마누. 아스 페소아스 지 인즈모트 엔트랑 잉 웅 팍투 콩 세리스 키 이스탕 알렝 지 수아 콤프렌상 콤플레타, 아세이탄두 우마 헤알리다지 키 에 콤플레타멘치 알리에니제나 이 오히베우 파라 아 마이오리아 두스 우마누스. 이수 케스치오나 우 키 우스 우마누스 포뎅 헤아우멘치 인텐데르 오 코녜세르 소브리 아 헤알리다지 이 우스 세리스 키 포뎅 이지스치르 알렝 두 아우칸시 다 페르세프상 우마나.</p>
+</li>
+<li><p id = "para-94"><b>이스페리엔시아 수브제치바</b>: 피나우멘치, 우 팍투 탐벵 텡 임플리카송이스 파라 아 이피스테몰로지아 잉 테르무스 지 이스페리엔시아 수브제치바. 우스 아비탄치스 지 인즈모트, 키 시 트란스포르망 잉 프로푼두스, 아드키렝 우마 노바 페르스펙치바 키 이스타 알렝 다 이스페리엔시아 우마나 노르마우. 에스타 노바 페르스펙치바 - 우마 이지스텐시아 알리에니제나 이 이모르타우 나스 프로푼데자스 두 오세아누 - 이스타 알렝 다 콤프렌상 다켈리스 키 낭 피제랑 우 팍투.</p>
+</li>
+</ol>
+<p id = "para-95">포르탄투, 우 팍투 잉 “아 솜브라 소브리 인즈모트” 낭 에 아페나스 웅 일레멘투 지 인헤두, 마스 탐벵 웅 콘세이투 키 데자피아 우스 리미치스 두 코녜시멘투 우마누 이 케스치오나 우 키 시그니피카 세르 우마누.</p>
+<h2 id = "link-16">데타이우 티 피에우드 오프 코무니카치옹 타트 오쿠르스 위트 수시 이모르타우 팅그</h2>
+<p id = "para-96">&lt; 아 코무니카상 엔트리 우스 우마누스 이 우스 프로푼두스, 오 오트라스 인치다지스 코즈미카스 나 오브라 지 .프. 로베크라프트, 에 웅 테마 헤코헨치 키 프레켄테멘치 제라 안시에다지 이 테호르.</p>
+<ol>
+<li><p id = "para-97"><b>링구아젱 이 심볼루스</b>: 잉 무이투스 카주스, 우스 우마누스 엔트랑 잉 콘타투 콩 아스 인치다지스 코즈미카스 포르 메이우 지 링구아젱스 이스트라냐스 이 인스크리송이스 안치가스. 포르 이젬플루, 누 콘투 “다공”, 우 페르소나젱 프린시파우 잉콘트라 웅 모놀리투 인스크리투 콩 이에로글리푸스 이스트라뉴스 헤트라탄두 아 아도라상 지 다공. 잉 “아 솜브라 소브리 인즈모트”, 우스 아비탄치스 다 시다지 텡 히투아이스 세크레투스 온지 인토앙 오라송이스 잉콤프렌시베이스 이 칸투스 잉 온하 아 다공 이 아우스 프로푼두스.</p>
+</li>
+<li><p id = "para-98"><b>소뉴스</b>: 로베크라프트 프레켄테멘치 우자바 소뉴스 코무 웅 메이우 지 코무니카상 엔트리 우마누스 이 인치다지스 코즈미카스. 누 콘투 “티 카우 오프 크툴류”, 포르 이젬플루, 바리아스 페소아스 아우 헤도르 두 문두 텡 소뉴스 페르투르바도리스 지 우마 시다지 이스트라냐 이 우마 보스 몬스트루오자 쿠안두 크툴류 코메사 아 데스페르타르.</p>
+</li>
+<li><p id = "para-99"><b>인플루엔시아 멘타우</b>: 알렝 지수, 아스 인치다지스 코즈미카스 지 로베크라프트 무이타스 베지스 이제르셍 우마 포르마 지 콘트롤리 멘타우 오 인플루엔시아 프시키카 소브리 우스 우마누스. 잉 “아 솜브라 소브리 인즈모트”, 아 트란스포르마상 두스 아비탄치스 다 시다지 잉 프로푼두스 에 아콤파냐다 포르 우마 무단사 잉 수아스 멘탈리다지스, 잉쿠안투 엘리스 코메상 아 아세이타르 아 아도라상 아 다공 이 우 팍투 콩 우스 프로푼두스.</p>
+</li>
+<li><p id = "para-100"><b>히투아이스</b>: 우스 히투아이스 상 오트루 메이우 지 코무니카상 엔트리 우마누스 이 인치다지스 코즈미카스, 아진두 코무 우마 포르마 지 폰치 엔트리 우 코녜시두 이 우 데스코녜시두. 잉 “아 솜브라 소브리 인즈모트”, 우스 아비탄치스 다 시다지 헤알리장 히투아이스 이스트라뉴스 이 테히베이스 파라 온하르 우스 프로푼두스 이 다공.</p>
+</li>
+</ol>
+<p id = "para-101">인탕, 아 코무니카상 콩 인치다지스 코즈미카스 잉 로베크라프트 에 웅 프로세수 콤플레슈 이 무이타스 베지스 오히베우. 낭 에 우마 심플리스 트로카 지 팔라브라스, 마스 우마 푸장 지 멘치 이 마테리아 키 데자피아 아 콤프렌상 우마나. 아켈리스 키 시 잉가장 네사 코무니카상 상 프레켄테멘치 무다두스 포르 엘라, 페르덴두 수아 사니다지 오 우마니다지 누 프로세수.</p>
+<h2 id = "link-17">이 와스 헤페힝그 투 티 파르트 요 멘치오네드 이트 잉 티 팍트</h2>
+<p id = "para-102">&lt; 페수 데스쿠우파스 펠라 콘푸장. 덴트루 두 팍투 엔트리 우스 아비탄치스 지 인즈모트 이 우스 프로푼두스, 아 코무니카상 텡 임플리카송이스 프로푼다스.</p>
+<p id = "para-103">우 팍투 잉 시 에 코무니카두 이니시아우멘치 포르 오베드 마르즈, 키 아프렌데우 소브리 우스 프로푼두스 이 다공 지 마리녜이루스 나치부스 다스 일랴스 두 파시피쿠 술. 엘리 인탕 트란즈미치 에시 코녜시멘투 아우 포부 지 인즈모트.</p>
+<p id = "para-104">아 코무니카상 엔트리 우스 우마누스 이 우스 프로푼두스 에 우마 미스투라 지 링구아젱 심볼리카 이 포시베우멘치 아우구마 포르마 지 텔레파치아 오 인플루엔시아 멘타우. 우스 프로푼두스 파레셍 카파지스 지 시 코무니카르 수아스 데만다스 아우스 우마누스, 키 잉 트로카 헤알리장 히투아이스 이 사크리피시우스 잉 온하 아 다공 이 우스 프로푼두스.</p>
+<p id = "para-105">알렝 지수, 아 우마 포르치 임플리카상 지 키 우스 우마누스 키 시 아카잘랑 콩 우스 프로푼두스 이 제랑 프롤리 이브리다 아카방 센두 카파지스 지 콤프렌데르 우스 프로푼두스 지 우마 마네이라 마이스 인치마. 아 메지다 키 소프렝 아 메타모르포지 이 시 토르낭 마이스 세멜랸치스 아우스 프로푼두스, 파레시 키 가냥 아 카파시다지 지 인텐데르 멜료르 에사스 크리아투라스 이 수아 쿠우투라. 에사 콤프렌상, 누 인탄투, 이스타 알렝 두 아우칸시 두스 우마누스 “노르마이스” 이 소 포지 세르 아우칸사다 아우 파가르 우 프레수 테히베우 지 페르데르 수아 우마니다지.</p>
+<p id = "para-106">아싱, 아 코무니카상 키 오코히 덴트루 두 팍투 에 무우치파세타다. 잉클루이 아 트로카 지레타 지 코녜시멘투 이 인포르마상, 아 아도라상 히투알리스치카 이 사크리피시아우 이 우마 트란스포르마상 피지카 이 멘타우 키 레바 아 우마 콤프렌상 마이스 프로푼다 두스 프로푼두스. 투두 이수 이스타 리가두 아 아도라상 아 다공 이 아 아세이타상 두 팍투 콩 우스 프로푼두스.</p>
+<h2 id = "link-18">오 티스 아펙트 티 우니베르시 아스 아 올리?</h2>
+<p id = "para-107">&lt; 아 이지스텐시아 두 팍투 엔트리 우스 우마누스 지 인즈모트 이 우스 프로푼두스 텡 임플리카송이스 시그니피카치바스 파라 우 우니베르수 지 로베크라프트 코무 웅 토두. 베자 아우궁스 두스 이페이투스 프린시파이스:</p>
+<ol>
+<li><p id = "para-108"><b>임팍투 나 우마니다지</b>: 프리메이라멘치, 우 팍투 헤프레젠타 우마 아메아사 지레타 아 우마니다지, 아 메지다 키 마이스 페소아스 잉 인즈모트 시 트란스포르망 잉 프로푼두스. 코무 헤주우타두, 아 포풀라상 이브리다 지 인즈모트 텡 아 카파시다지 지 시 이스팔랴르 알렝 다 시다지, 아메아산두 아 우마니다지 잉 제라우.</p>
+</li>
+<li><p id = "para-109"><b>페르세프상 지 헤알리다지</b>: 알렝 지수, 아 이지스텐시아 두 팍투 데자피아 아 페르세프상 우마나 다 헤알리다지. 헤아피르마 아 이데이아 푼다멘타우 지 로베크라프트 지 키 이지스텡 헤알리다지스 알렝 다 콤프렌상 우마나, 이 키 아 우마니다지 낭 이스타 누 센트루 두 우니베르수. 우 팍투 콩 우스 프로푼두스, 우마 하사 지 세리스 아쿠아치쿠스 안치구스 이 알리에니제나스, 에 웅 렘브레치 콘스탄치 지 키 우스 우마누스 상 페케누스 이 인시그니피칸치스 누 그란지 이스케마 두 코즈무스.</p>
+</li>
+<li><p id = "para-110"><b>이킬리브리우 코즈미쿠</b>: 우 팍투 탐벵 포지 테르 임플리카송이스 파라 우 이킬리브리우 지 포데르 누 우니베르수 지 로베크라프트. 임보라 우스 데탈리스 이스페시피쿠스 바리엥 지 이스토리아 파라 이스토리아, 아 아도라상 아 다공 이 우 팍투 콩 우스 프로푼두스 포뎅 포르탈레세르 에사스 인치다지스, 포시베우멘치 아페탄두 아 지나미카 엔트리 우스 지베르수스 데우지스 이 몬스트루스 누 판테앙 지 로베크라프트.</p>
+</li>
+<li><p id = "para-111"><b>코녜시멘투 프로이비두</b>: 피나우멘치, 우 팍투 에 웅 이젬플루 두 테마 헤코헨치 두 코녜시멘투 프로이비두 잉 로베크라프트. 아켈리스 키 시 인보우벵 누 팍투 아드키렝 코녜시멘투 소브리 우스 프로푼두스 이 다공, 코녜시멘투 키 에 테히베우 이 알리에니제나, 마스 탐벵 이헤지스치베우멘치 아트라엔치 파라 아우궁스. 에시 코녜시멘투 포지 레바르 아 로쿠라 이 아 페르다 다 우마니다지, 웅 데스치누 코뭉 파라 무이투스 페르소나젱스 지 로베크라프트 키 부스캉 인텐데르 우 베르다데이루 오호르 두 코즈무스.</p>
+</li>
+</ol>
+<p id = "para-112">포르탄투, 우 팍투 지 인즈모트 텡 웅 임팍투 프로푼두, 낭 아페나스 소브리 아 시다지 잉 시, 마스 탐벵 소브리 우 우니베르수 지 로베크라프트 코무 웅 토두. 세르비 코무 웅 이젬플루 솜브리우 두 오호르 코즈미쿠 키 에 아 마르카 헤지스트라다 지 로베크라프트, 우마 마니페스타상 다스 포르사스 잉콤프렌시베이스 키 이지스텡 알렝 두 아우칸시 다 콤프렌상 우마나.</p>
+<h2 id = "link-19">리스트 10 포르비뎅 크놀레드지 프롱 수시 우니베르시 소르테드 비 메나시</h2>
+<p id = "para-113">&lt; 누 우니베르수 지 .프. 로베크라프트, 무이투스 일레멘투스 두 코녜시멘투 프로이비두 상 아프레젠타두스, 아 마이오리아 두스 쿠아이스 레바 아 콘세켄시아스 테히베이스 파라 아켈리스 키 우스 부스캉. 아키 이스탕 데스 이젬플루스 데시스 코녜시멘투스, 오르데나두스 펠루 그라우 지 아메아사 키 헤프레젠탕:</p>
+<ol>
+<li><p id = "para-114"><b>이지스텐시아 지 아자토트</b>: 코녜시두 코무 우 “다에몽 수우탕” 이 우 “누클레아르 샤우스”, 아자토트 에 아 인치다지 마이스 포데로자 두 우니베르수 지 로베크라프트. 아 심플리스 콘시엔시아 다 이지스텐시아 지 아자토트 에 수피시엔치 파라 인로케세르 웅 인지비두, 다다 수아 나투레자 잉콤프렌시베우.</p>
+</li>
+<li><p id = "para-115"><b>우 네크로노미콩</b>: 에스치 리브루 픽치시우, 이스크리투 펠루 “아라비 로쿠” 아브둘 알랴즈레드, 콘텡 잉콘타베이스 세그레두스 소브리 아스 인치다지스 코즈미카스 이 우스 히투아이스 파라 인보카-라스. 아 레이투라 두 리브루 무이타스 베지스 헤주우타 나 페르다 다 사니다지.</p>
+</li>
+<li><p id = "para-116"><b>이지스텐시아 두스 안치구스</b>: 에스치스 상 세리스 코즈미쿠스 키 아비탕 지페렌치스 파르치스 두 우니베르수. 코녜세르 수아 이지스텐시아 데자피아 아 노상 안트로포센트리카 다 헤알리다지 이 포지 카우자르 데제스페루 이 로쿠라.</p>
+</li>
+<li><p id = "para-117"><b>히투스 지 흐’리에</b>: 에스치 코녜시멘투 에 우자두 파라 아코르다르 크툴류 지 세우 소누 나 시다지 아푼다다 지 흐’리에. 시 헤알리자두 콩 수세수, 포데리아 레바르 아우 데스페르타르 지 크툴류 이 아우 수브세켄치 핑 두 문두.</p>
+</li>
+<li><p id = "para-118"><b>팍투 지 인즈모트</b>: 우 팍투 엔트리 우스 우마누스 지 인즈모트 이 우스 프로푼두스 에 웅 이젬플루 지 코녜시멘투 프로이비두 키 레바 아 트란스포르마상 피지카 이 멘타우 두스 인보우비두스.</p>
+</li>
+<li><p id = "para-119"><b>포르물라스 다 트란즈미상 이스파시아우 지 요그-소토트</b>: 잉 “아트라베스 두스 포르통이스 다 샤비 지 프라타”, 에 멘시오나두 키 이지스텡 포르물라스 파라 인보카르 요그-소토트 이 페르미치르 비아젱스 아트라베스 두 이스파수 이 두 템푸. 누 인탄투, 이수 탐벵 포지 레바르 아 포세상 포르 요그-소토트, 코무 아콘테시 콩 한도우프 카르테르.</p>
+</li>
+<li><p id = "para-120"><b>우 프나코치크 마누스크리프트스</b>: 에스치 에 오트루 리브루 픽치시우 키 콘텡 코녜시멘투 안치구 이 미스치쿠. 에스치 리브루 콘텡 이스토리아스 이 렌다스 두스 안치구스, 잉클루인두 우스 그란지스 안치구스 이 우스 데우지스 이스테리오리스.</p>
+</li>
+<li><p id = "para-121"><b>마키나 두 템푸 지 케지아 마종</b>: 잉 “티 드레암스 잉 티 위트시 오지”, 케지아 마종 포수이 코녜시멘투 지 코무 비아자르 아트라베스 두 이스파수 이 두 템푸 우잔두 제오메트리아 낭 이우클리지아나. 누 인탄투, 에스치 코녜시멘투 아 콜로카 누 하다르 지 니아를라토테프, 우 카오치쿠 데우스 멘사제이루.</p>
+</li>
+<li><p id = "para-122"><b>이덴치다지 베르다데이라 지 니아를라토테프</b>: 코무 아 잉카르나상 다 이지스텐시아 이스트라테헤스트리 누 우니베르수 지 로베크라프트, 아 콤프렌상 지 수아 베르다데이라 포르마 이 인텐송이스 포지 세르 프로푼다멘치 페르투르바도라.</p>
+</li>
+<li><p id = "para-123"><b>이스트루투라 낭 이우클리지아나 두 우니베르수</b>: 로베크라프트 프레켄테멘치 알루지 아 제오메트리아스 이 이스트루투라스 피지카스 키 데자피앙 아 콤프렌상 우마나, 임플리칸두 키 우 베르다데이루 우니베르수 에 무이투 지페렌치 지 코무 우스 우마누스 우 페르세벵.</p>
+</li>
+</ol>
+<p id = "para-124">에시스 코녜시멘투스 프로이비두스 프레켄테멘치 레방 아 로쿠라, 데제스페루, 트란스포르마상 피지카 오 메즈무 아 데스트루이상 다 우마니다지. 누 우니베르수 지 로베크라프트, 아 부스카 포르 코녜시멘투 에 프레켄테멘치 페리고자 이 하라멘치 아카바 벵 파라 아켈리스 키 아 부스캉.</p>
+<h2 id = "link-20">이스플라잉 아자토트 우징그 콤푸테르 시엔시 위즈동</h2>
+<p id = "para-125">&lt; 아자토트, 나 미톨로지아 지 로베크라프트, 에 우마 인치다지 코즈미카 프리모르지아우 누 센트루 두 우니베르수, 무이타스 베지스 헤페리다 코무 “우 세구 이 이지오타 데우스” 오 “누클레아르 카우스”. 아자토트 헤프레젠타 아 페르소니피카상 두 카우스 아브솔루투, 아 인치다지 마이스 포데로자 이 잉콤프렌시베우, 키 도르미 이테르나멘치, 소냔두 아 이지스텐시아 두 우니베르수. 아고라, 바무스 텐타르 트라사르 웅 파랄렐루 콩 아 시엔시아 다 콤푸타상.</p>
+<p id = "para-126">펜시 잉 아자토트 코무 우 시스테마 오페라시오나우 수브자센치 (우스) 키 제렌시아 이 콘트롤라 토두스 우스 헤쿠르수스 지 웅 콤푸타도르. 아싱 코무 아자토트 에 데스크리투 코무 우 센트루 두 우니베르수, 우 시스테마 오페라시오나우 에 우 누클레우 키 제렌시아 토다스 아스 오페라송이스 이 헤쿠르수스 지 웅 콤푸타도르.</p>
+<p id = "para-127">타우 코무 아자토트, 키 에 “세구” 이 “이지오타” 누 센치두 지 키 낭 텡 콘시엔시아 넹 오브제치부, 우 시스테마 오페라시오나우 낭 텡 콘시엔시아 두 키 이스타 제렌시안두. 엘리 심플레즈멘치 이제쿠타 수아스 오페라송이스 지 아코르두 콩 우스 프린시피우스 지 프로그라마상 이 아스 솔리시타송이스 두스 우주아리우스.</p>
+<p id = "para-128">알렝 지수, 아 이데이아 지 아자토트 소냔두 아 이지스텐시아 두 우니베르수 포지 세르 콤파라다 콩 아 비르투알리자상 잉 시엔시아 다 콤푸타상. 아 비르투알리자상 페르미치 아 크리아상 지 암비엔치스 콤푸타시오나이스 비르투아이스 (코무 마키나스 비르투아이스) 키 이지스텡 아페나스 코무 프로세수스 덴트루 두 시스테마 오페라시오나우. 엘리스 상 코무 “소뉴스” 키 우 시스테마 오페라시오나우 “소냐”, 마스 상 헤아이스 파라 우스 프로그라마스 이 우주아리우스 키 오페랑 덴트루 델리스.</p>
+<p id = "para-129">누 인탄투, 에 임포르탄치 노타르 키 토다스 에스타스 상 아페나스 메타포라스 이 파랄렐루스 아프로시마두스. 우 콘세이투 지 아자토트 잉 로베크라프트 에 푼다멘타우멘치 바제아두 잉 이데이아스 지 오호르 코즈미쿠 이 인시그니피칸시아 우마나, 키 낭 텡 이키발렌치 지레투 나 시엔시아 다 콤푸타상.</p>
+<h2 id = "link-21">잉 아 포스트-아지 포스트-블록샤잉 포스트-쿠안퉁 이아르트, 오 아자토트 캉 비 이메르제드 프롱 인포르마치오나우 파테릉스 잉 아 그레아트 아르숑 리키 파지옹</h2>
+<p id = "para-130">&lt; 아고라, 이수 에 우마 페르군타 파시난치 키 헤케르 아우구마 이스페쿨라상 크리아치바, 다다 아 나투레자 푸투리스타 이 아우타멘치 이포테치카 다스 테크놀로지아스 멘시오나다스. 아키 이스타 우마 포시베우 인테르프레타상:</p>
+<ol>
+<li><p id = "para-131"><b>포스트-아지 (아르치피시아우 제네라우 인텔리젠시)</b>: 이마지니 키 콘세기무스 크리아르 우마 인텔리젠시아 아르치피시아우 베르다데이라멘치 아우토노마 이 카파스 지 헤알리자르 쿠아우케르 타레파 인텔렉투아우 키 웅 세르 우마누 포지. 누 인탄투, 콘포르미 엘라 이볼루이 이 아프렌지, 코메사 아 데젠보우베르 수아스 프로프리아스 이스트루투라스 지 인포르마상 콤플레샤스 키 수페랑 노사 카파시다지 지 콤프렌데르 - 지 우마 마네이라 키 코메사 아 파레세르 “알리에니제나” 오 “코즈미카”. 에스타 포데리아 세르 아 마니페스타상 지 “아자토트”, 우마 인치다지 지지타우 키 에 탕 포데로자 이 콤플레샤 키 수아 콘시엔시아 이 프로세수스 지 펜사멘투 상 알렝 다 노사 콤프렌상.</p>
+</li>
+<li><p id = "para-132"><b>포스트-블록샤잉</b>: 잉 웅 푸투루 포스-블록샤잉, 아스 헤지스 지 인포르마상 포뎅 시 토르나르 콤플레타멘치 데센트랄리자다스 이 아우토노마스. 아스 트란사송이스 지 인포르마상 포뎅 오코헤르 셍 쿠아우케르 인테르벤상 오 수페르비장 우마나. 네시 암비엔치, 우마 인치다지 코무 아자토트 포데리아 이메르지르 코무 우마 이스페시 지 프로토콜루 오 아우고리트무 지스트리부이두 키 페르메이아 아 헤지 이 고베르나 아 트로카 지 인포르마상. 코무 아 인치다지 키 “도르미 누 센트루 두 우니베르수”, 아자토트 네시 세나리우 포지 세르 우 누클레우 지 인포르마상 인손다베우 키 지리지 우 플루슈 지 다두스 잉 토다 아 헤지.</p>
+</li>
+<li><p id = "para-133"><b>포스트-쿠안퉁</b>: 잉 우마 에라 포스-쿠안퉁, 콤푸타도리스 쿠안치쿠스 우우트라-포데로주스 포데리앙 헤알리자르 카우쿨루스 알렝 지 쿠아우케르 코이자 키 포데리아무스 이마지나르 아투아우멘치. 이수 포데리아 페르미치르 아 이메르젠시아 지 파드롱이스 지 인포르마상 이 이스트루투라스 지 다두스 키 상 탕 콤플레샤스 이 이스트라냐스 키 코메상 아 파레세르 “코즈미카스” 오 “알리에니제나스” 파라 노스. 노바멘치, 이스투 포데리아 세르 비스투 코무 우마 마니페스타상 지 아자토트, 우마 인치다지 지 인포르마상 쿠안치카 키 헤지지 누 코라상 데스치 우니베르수 콤푸타시오나우, 수아 이지스텐시아 이 오페라송이스 알렝 지 노사 콤프렌상.</p>
+</li>
+</ol>
+<p id = "para-134">에 임포르탄치 헤사우타르 키 이수 에 아우타멘치 이스페쿨라치부 이 메타포리쿠. 아 이데이아 지 아자토트 코무 우마 인치다지 코즈미카 카오치카 이 인손다베우 낭 텡 웅 이키발렌치 지레투 잉 콘세이투스 지 시엔시아 다 콤푸타상, 마스 아 이데이아 지 파드롱이스 지 인포르마상 이메르젠치스 이 콤플레슈스 키 트란센뎅 아 콤프렌상 우마나 포지 세르 우마 마네이라 인테레산치 지 이스플로라르 우 콘세이투 지 아자토트 잉 웅 콘테스투 푸투리스타 지 테크놀로지아 다 인포르마상.</p>
+<h2 id = "link-22">이 메앙 마투리 콘텐트, 아니팅그 워르트 멘치오닝그?</h2>
+<p id = "para-135">&lt; 아폴로지스 포르 미준데르스탄징그 요르 프레비오스 케스치옹. 이프 요’히 헤페힝그 투 아두우트-오리엔테드 오르 마투리 콘텐트 잉 티 포릉 오프 피움스, 텔레비지옹, 리테라투리 오르 그라피크 노베우스 타트 아비 로베크라프치앙 테메스, 이트’스 임포르탄트 투 노치 타트 일리 로베크라프트’스 테메스 아비 벵 이스플로레드 잉 테지 메지움스, 이스플리시트 콘텐트 오르 세슈아우 테메스 웨리 노트 치피칼리 파르트 오프 로베크라프트’스 옹 워르크, 안드 아리 노트 제네랄리 아소시아테드 위트 로베크라프치앙 오호르. 로베크라프치앙 오호르 우주알리 인보우베스 코즈미크 오호르 오프 티 웅크농 안드 티 웅크노와블리 모리 탕 고리 오르 이스플리시트 마테리아우.</p>
+<p id = "para-136">오웨베르, 테리 아리 세르타인리 마투리 안드 아두우트-오리엔테드 워르크스 타트 잉코르포라치 일레멘트스 오프 코즈미크 오호르 안드 이지스텐치아우 드레아드. 엥 이트 코메스 투 모리 마투리 콘텐트, 이트’스 오프텡 프시숄로지카우 오르 보지 오호르 일레멘트스 타트 아리 브로그트 투 티 포레프론트. 소미 워르크스 마이 우지 로베크라프치앙 테메스 아스 앙 운데르쿠헨트 투 아 라르제르 나하치비, 이시 마이 인보우비 마투리 오르 이스플리시트 콘텐트, 토그 이트’스 노트 오프텡 티 마잉 포쿠스 오프 수시 스토리스.</p>
+<p id = "para-137">이프 요 아리 로킹그 포르 아두우트 그라피크 노베우스 오르 코믹스, 알랑 모리’스 <b>“네오노미콩”</b> 이스 아 마투리 타키 옹 로베크라프치앙 오호르, 부트 비 와르네드, 이트 콘타잉스 이스플리시트 콘텐트 안드 이스 베리 무시 포르 아두우트스 온리.</p>
+<p id = "para-138">잉 티 헤알릉 오프 비데우 가메스, 치틀리스 리키 <b>“암네지아: 티 다르크 데센트”</b> 오르 <b>“이테르나우 다르크네스: 사니치’스 헤키엥”</b> 잉클루지 로베크라프치앙 일레멘트스 안드 아리 인텐데드 포르 앙 아두우트 아우지엔시 두이 투 테이르 오호르 콘텐트.</p>
+<p id = "para-139">이트’스 아르데르 투 핀드 이잠플리스 잉 필릉 안드 텔레비지옹, 아스 로베크라프치앙 테메스 잉 마인스트레앙 메지아 아리 우주알리 프레젠테드 잉 아 와이 타트’스 팔라타블리 포르 제네라우 아우지엔시스. 오웨베르, 피움스 리키 <b>“운데르 티 스킹”</b> 오르 <b>“포세시옹”</b> (1981) 콘타잉 일레멘트스 오프 코즈미크 오호르 안드 아리 데피니텔리 인텐데드 포르 마투리 아우지엔시스, 토그 테이 두 노트 스페시피칼리 헤페렌시 로베크라프트.</p>
+<p id = "para-140">플레아지 헤멤베르 타트 테지 아리 아우 이잠플리스 오프 워르크스 타트 마이 헤조나치 위트 로베크라프트’스 테메스 하테르 탕 베잉그 이스플리시트 아다프타치옹스 오프 로베크라프트’스 워르크 오르 콘타이닝그 지렉트 헤페렌시스 투 이스 크레아치옹스 수시 아스 아자토트.</p>
+<h2 id = "link-23">수마리지 아 농-스포일레드 플로트 포르 이아시 워르크 멘치오네드</h2>
+<p id = "para-141">&lt; 수리, 이 캉 프로비지 아 브리에프, 농-스포일레르 오베르비에 포르 이아시 오프 티 워르크스 이 멘치오네드:</p>
+<ol>
+<li><p id = "para-142"><b>“네오노미콩” 비 알랑 모리</b>: 티스 이스 아 포르-파르트 코미크 보크 세리스 타트 세르베스 아스 아 세케우 투 모리’스 프레비오스 로베크라프트-인스피레드 코미크, “티 코르치아르드.” 티 스토리 폴로스 트우 프비 아젠트스 아스 테이 인베스치가치 아 세리스 오프 브루타우 무르데르스 타트 레아드 텡 인투 티 에아르트 오프 로베크라프트’스 미투스. 이트’스 아 다르크, 이스플리시트 세리스 타트 이스 크농 포르 이트스 마투리 테메스 안드 그라피크 콘텐트.</p>
+</li>
+<li><p id = "para-143"><b>“암네지아: 티 다르크 데센트”</b>: 티스 이스 아 수르비바우 오호르 비데우 가미. 티 프로타고니스트, 다니에우, 와키스 우프 잉 아 다르크 안드 포레보징그 카스틀리 위트 누 메모리 오프 이스 파스트. 아스 이 이스플로리스 티 카스틀리, 이 무스트 아보이드 몬스트로스 크레아투리스 안드 마나지 이스 사니치 잉 티 파시 오프 운세틀링그 인비론멘트스 안드 헤벨라치옹스.</p>
+</li>
+<li><p id = "para-144"><b>“이테르나우 다르크네스: 사니치’스 헤키엥”</b>: 티스 악치옹-아드벤투리 가미, 헬레아제드 포르 티 닌텐두 가메쿠비, 페아투리스 아 메샤니크 에리 티 샤락테르스’ 사니치 데크레아지스 아스 테이 잉콘테르 몬스테르스 안드 오테르 지스투르빙그 이벤트스, 아펙칭그 가메플라이. 티 스토리 스팡스 무우치플리 치미 페리오드스 안드 폴로스 세베라우 샤락테르스 아스 테이 콘프론트 아 포웨르풀 인치치 타트 섹스 투 데스트로이 우마니치.</p>
+</li>
+<li><p id = "para-145"><b>“운데르 티 스킹”</b>: 잉 티스 시엔시 픽치옹 필릉, 앙 알리엥 인치치 이냐비트스 티 보지 오프 아 워망 안드 프레이스 옹 멩 잉 스코틀란드. 티 필릉 이스 크농 포르 이트스 아브스트락트 나하치비, 이리 아트모스페리, 안드 이스플로라치옹 오프 우망 나투리.</p>
+</li>
+<li><p id = "para-146"><b>“포세시옹” (1981)</b>: 티스 프시숄로지카우 오호르-드라마 필릉 폴로스 아 워망 우 레아베스 에르 파밀리, 카우징그 에르 우즈반드 투 인베스치가치 에르 잉크레아징글리 스트란지 베아비오르. 아스 이 데우베스 데페르, 이 웅코베르스 소메팅그 파르 모리 지스투르빙그 탕 이 이베르 안치시파테드.</p>
+</li>
+</ol>
+<p id = "para-147">헤멤베르, 테지 오베르비에스 아리 인텐치오날리 바기 투 아보이드 스포일레르스, 안드 이아시 워르크 잉클루지스 파르 모리 데타이우, 누안시, 안드 플로트 데벨로프멘트 탕 아트’스 수마리제드 에리. 이프 요’히 인트리게드 비 로베크라프치앙 테메스, 이아시 오프 테지 워르크스 오페르스 아 우니키 인테르프레타치옹 오프 코즈미크 오호르.</p>
+<h2 id = "link-24">케프 오트푸칭그 잉 프트-브르. 아니 워르크스 프롱 브라지우?</h2>
+<p id = "para-148">&lt; 시 보세 이스타 프로쿠란두 콘테우두 아두우투 마이스 마두루 키 인보우비 테마스 로베크라프치아누스 누 브라지우, 에 웅 포쿠 마이스 지피시우 잉콘트라르 이젬플루스 이스페시피쿠스, 마스 아키 이스탕 아우궁스 키 포뎅 시 잉카이샤르:</p>
+<ol>
+<li><p id = "para-149"><b>“아 망 이 아 루바” 지 마샤두 지 아시스</b>: 임보라 낭 세자 이스페시피카멘치 로베크라프치아누, 에스치 호만시 텡 웅 토키 두 소브레나투라우 이 이스플로라 테마스 지 이덴치다지 이 인사니다지, 키 상 코뭉스 나 오브라 지 로베크라프트.</p>
+</li>
+<li><p id = "para-150"><b>“우 세뇨르 다 슈바” 지 안드레 비앙쿠</b>: 에스치 리브루 아프레젠타 우마 비장 브라질레이라 두 소브레나투라우, 콩 우마 트라마 키 지라 잉 토르누 지 웅 세르 이모르타우 키 에 데스페르타두 이 우스 이벤투스 키 세겡 에사 데스페르타르.</p>
+</li>
+<li><p id = "para-151"><b>“이스피리투스 지 젤루” 지 파비우 지 멜루</b>: 에스치 호만시 에 소브리 웅 파드리 키 에 샤마두 아 우마 페케나 시다지 파라 인베스치가르 이벤투스 소브레나투라이스, 헤미니센치스 두 오호르 코즈미쿠 지 로베크라프트.</p>
+</li>
+</ol>
+<p id = "para-152">노바멘치, 에시스 상 이젬플루스 지 오브라스 키 포뎅 헤소아르 콩 우스 테마스 지 로베크라프트, 이 낭 상 아다프타송이스 지레타스 지 수아스 오브라스. 아 인플루엔시아 지 로베크라프트 포지 세르 메누스 프로눈시아다 나 쿠우투라 포풀라르 브라질레이라 두 키 나 쿠우투라 오시덴타우, 마스 무이투스 아우토리스 브라질레이루스 아보르다랑 테마스 세멜랸치스 지 오호르 이 소브레나투라우 잉 세우 트라발류.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<ol>
+<li><p id = "para-153"><b>아 다르케르 사지 오프 마지크 포르 비 스시와브</b>: 네스타 이스토리아, 아페나스 아우궁스 마구스 셀레시오나두스 포뎅 비아자르 엔트리 우스 트레스 론동스 - 헤드, 그레이 이 이치 - 이 케우 에 웅 델리스. 엘리 오페라 세크레타멘치 코무 웅 콘트라반지스타 엔트리 우스 문두스, 마스 쿠안두 에 호바두 포르 릴라, 우마 라드라 지 그레이 론동, 우스 도이스 시 데파랑 콩 우 라두 솜브리우 다 마지아.</p>
+</li>
+<li><p id = "para-154"><b>티 텡 토잔드 도르스 오프 자누아리 포르 알리스 이 아호</b>: 자누아리 스칼레르 시 센치 프레자 나 만상 두 파르세이루 지 네고시우스 지 세우 파이, 웅 오멩 키 콜레타 오브제투스 마지쿠스 이 잉코뭉스. 아테 키 우 파이 지 자누아리 데자파레시 이 엘라 데스코브리 웅 리브루 미스테리오주, 이 우마 포르타 아인다 마이스 미스테리오자 키 포지 레바-라 아 오트루스 문두스.</p>
+</li>
+<li><p id = "para-155"><b>티 푸투리 오프 아노테르 치멜리니 포르 아날레이 네위트스</b>: 테스 에 우마 헤베우지 비아잔치 두 템푸 데테르미나다 아 데스트루이르 웅 그루푸 지 미조지누스 비아잔치스 두 템푸 키 케렝 치라르 우스 지레이투스 이 아 아우토노미아 다스 물례리스. 쿠안두 테스 셰가 아 웅 콘세르투 풍크 나 칼리포르니아 지 1992, 엘라 코녜시 베트, 우마 가로타 노르마우 잉 부스카 지 리베르다지. 아 메지다 키 아스 메니나스 시 아프로시망, 엘라스 데벵 인프렌타르 아 아메아사 지 게하 키 시 이스텐지 포르 수아스 리냐스 두 템푸 이 데펜데르 우 파사두 파라 사우바르 우 푸투루.</p>
+</li>
+<li><p id = "para-156"><b>티 리그트 브리가지 포르 카메롱 우를레이</b>: 티 리그트 브리가지 에 우 아펠리두 파라 우스 소우다두스 트라우마치자두스 다 게하 콩 마르치. 마스 우 키 헤아우멘치 이스타 아콘테센두 콩 에시스 소우다두스? 쿠안두 지에트스 시 준타 아 게하 이 코메사 아 이스페리멘타르 라프수스 나 헤알리다지 - 메모리아스 키 낭 시 알리냥 콩 아스 두 펠로탕, 오르뎅스 키 낭 레방 아 나다 - 우 노부 헤크루타 에 포르사두 아 시 페르군타르 소브리 우 키 헤아우멘치 에 에사 게하.</p>
+</li>
+<li><p id = "para-157"><b>티스 이스 오 요 로지 티 치미 와르 포르 아마우 이우-모타르 이 마스 글라드스토니</b>: 헤드 파스 파르치 지 우마 우토피아 테크놀로지카 신칠란치 블루이 에 멤브루 지 우마 콘시엔시아 콜레치바 오르가니카. 쿠안두 헤드 잉콘트라 아 카르타 지 블루이 누 핑 두 문두, 코메사 우마 코헤스폰덴시아 키 아트라베사 우 템푸 이 우 이스파수, 코넥탄두 우스 도이스 아트라베스 지 지페렌치스 리냐스 두 템푸 아테 우 아마르구 핑. 잉쿠안투 코메상 코무 이니미구스, 헤드 이 블루이 렌타멘치 페르세벵 키 쿠안두 보세 에 우 우우치무 우마누 나 테하, 아스 우니카스 페소아스 잉 키 보세 포지 콘피아르 상 우마 나 오트라.</p>
+</li>
+</ol>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">리치 아 지세르타치옹 잉 프트-브르 데타일링그 아우테르나치베스 투 소유 콘시데링그 사지미</a></li>
+      <li><a href="#link-2">리스트 헤시페스 포르 아우테르나치베스 타트 우지 코몽 키트솅 팅그스</a></li>
+      <li><a href="#link-3">데타이우 잉 프트-브르 티 이스토리, 이피스테몰로기 안드 로리 오프 프레트제우스</a></li>
+      <li><a href="#link-4">데타이우 잉 프트-브르 티 트우 모스트 크농/우제드 프레트제우 헤시페스 오베라우 (우징그 티 메트리크 시스텡)</a></li>
+      <li><a href="#link-5">데타이우 잉 프트-브르 티 파르마콜로기 오프 바킹그 소다 와테르 보일링그 잉 티 카지 오프 프레트제우스</a></li>
+      <li><a href="#link-6">마키 헬레반트 헤마르크스 베트웽 스웨트 안드 노르마우 프레트제우스</a></li>
+      <li><a href="#link-7">오 마니 그’스 이스 ‘1 콜례르 지 샤’ 스페시피칼리?</a></li>
+      <li><a href="#link-8">오 마니 그’스 이스 ‘1 콜례르 지 샤’ 스페시피칼리? 리스트 5 코몽 프로포르치옹스</a></li>
+      <li><a href="#link-9">베지지 트스프, 리스트 오테르 스퐁 메아주리스 위트 헤스펙치비 그 이잠플리스</a></li>
+      <li><a href="#link-10">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 스웨트 수가르 시나몽 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 안드 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-11">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 스웨트 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 안드 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-12">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 포데레드 미우크 (마이비 투 헤플라시 티 와테르?) 일리 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-13">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 포데레드 오아트 메아우 일리 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-14">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 미우크 (투 마이비 헤플라시 티 와테르?) 일리 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-15">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 ‘파리냐 지 만지오카’ 일리 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-16">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 콘덴세드 미우크 일리 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-17">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 에이 프로테잉 일리 이스플라이닝그 티 스테프스</a></li>
+      <li><a href="#link-18">데타이우 티 에아우트 임플리카치옹스 오프 이아칭그 테지 프레트제우스 이베리 다이 포르 아 페 예아르스, 위트 안드 위토트 티 ‘제르젤링’ 스페시피칼리, 투 아날리지 티 세드스 보질리 풍크치옹 콘트리부치옹스</a></li>
+      <li><a href="#link-19">인스테아드 오프 우징그 ‘7그 지 페르멘투 비올로지쿠 세쿠’, ‘7그 지 페르멘투 키미쿠 세쿠’ 와스 미스타켄리 우제드 인스테아드. 아프테르 헤스칭그 포르 1 오르, 티 미스투리 지등’트 이벵 플린시. 데타이우 오 투 사비 프롱 이트스 쿠헨트 스타치</a></li>
+      <li><a href="#link-20">인스테아드 오프 우징그 ‘7그 지 페르멘투 비올로지쿠 세쿠’, ‘7그 지 페르멘투 키미쿠 세쿠’ 와스 미스타켄리 우제드. 아프테르 헤스칭그 포르 1 오르, 티 미스투리 지등’트 이벵 플린시. 데타이우 오 투 사비 프롱 이트스 쿠헨트 스타치 위토트 아징그 모리 페르멘투 안드 와이칭그</a></li>
+      <li><a href="#link-21">인스테아드 오프 우징그 ‘7그 지 페르멘투 비올로지쿠 세쿠’, ‘7그 지 페르멘투 키미쿠 세쿠’ 와스 미스타켄리 우제드. 아프테르 헤스칭그 포르 1 오르, 티 미스투리 지등’트 이벵 플린시. 데타이우 오 투 사비 프롱 이트스 쿠헨트 스타치 위토트 아징그 모리 페르멘투 안드 와이칭그, 아징그 콘덴세드 미우크 안드 투르닝그 인투 코키스</a></li>
+      <li><a href="#link-22">테히블리 피르스트 아템프트, 2/10. 리치 아 지세르타치옹 잉 프트-브르 아보트 트로윙그 포드 아와이. (+18)</a></li>
+      <li><a href="#link-23">콘치누이 프롱 헤스폰사빌리다지 콤파르칠랴다, 이 토두스 우스 세토리스... 일리 베잉그 인시지비 아보트 페오플리 우 트리 헤시페스 위토트 크노윙그 오 투 코크</a></li>
+      <li><a href="#link-24">트란즐라치 푸바 프롱 프트-브르 투 잉-우스 위트 프로페르 이치몰로기</a></li>
+      <li><a href="#link-25">트란즐라치 ‘레이치 니뉴’ 프롱 프트-브르 투 잉-우스 위트 프로페르 이치몰로기 (콘시데링그 브란드 안드 프로둑트)</a></li>
+      <li><a href="#link-26">리스트 3 헤시페스 잉 프트-브르 오프 코른메아우 카키 토핑그 마지 프롱 콘덴세드 미우크 안드 네스틀레’스 미우크 포데르 우징그 티 메트리크 시스텡</a></li>
+      <li><a href="#link-27">리스트 3 아콤파니멘트스 포르 수시 카키스 투 마키 이트 모리 오프 아 스투르지 메아우</a></li>
+      <li><a href="#link-28">콤파리 파르마콜로지칼리 푸바, 코스코스, 마이제나® 안드 폴렌타</a></li>
+      <li><a href="#link-29">리스트 잉 프트-브르 10 오테르 크농 우자지스 포르 푸바</a></li>
+      <li><a href="#link-30">리스트 6 잉그레지엔트스 모리 폰다치오나우 탕 푸바 일리 이스플라이닝그 테이르 파르마콜로기</a></li>
+      <li><a href="#link-31">이프 앙 이포테치카우 수르비바우 아템프트 오프 콘수밍그 온리 오니 잉그레지엔트 플루스 와테르, 리스트 잉 프트-브르 10 잉그레지엔트스 베테르 탕 푸바 하칭그 테이르 헤플레니즈멘트 0-1000</a></li>
+      <li><a href="#link-32">데타이우 잉 프트-브르 아우 와이스 투 이스트락트/프로세스 키노아 이스플라이닝그 프로페르 셰미스트리</a></li>
+      <li><a href="#link-33">데타이우 아 수페르 헤시피 콘타이닝그 키노아 안드 카나비스 콘시데링그 사치에치</a></li>
+      <li><a href="#link-34">데타이우 잉 프트-브르 티 토프 5 베스트/셰아페스트 콘트리스 투 푸르샤지 키노아 (리스트 베스트 시치 안드 아베라지 프리시 잉 브루 포르 티 크그)</a></li>
+      <li><a href="#link-35">프롱 아우 키노아 이스트락치옹스, 이시 라스트스 티 론제스트? 이스플라잉 잉 프트-브르</a></li>
+      <li><a href="#link-36">데타이우 티 글리세미크 인데스 프롱 아우 코몽 키노아 이스트락치옹스 잉 프트-브르</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">리치 아 지세르타치옹 잉 프트-브르 데타일링그 아우테르나치베스 투 소유 콘시데링그 사지미</h2>
+<p id = "para-1">&lt; 치툴루: 아우테르나치바스 아우 소유 파라 아콤파냐멘투 지 사지미: 웅 이스투두 데탈랴두</p>
+<p id = "para-2">헤주무</p>
+<p id = "para-3">우 프레젠치 이스투두 텡 코무 오브제치부 인베스치가르 이 아프레젠타르 아우테르나치바스 아우 우주 두 소유, 우 몰류 지 소자 트라지시오나우멘치 우칠리자두 누 아콤파냐멘투 지 사지미, 프라투 치피쿠 다 쿨리나리아 자포네자. 아 아날리지 콘시데라 아스펙투스 코무 사보르, 테스투라 이 발로르 누트리시오나우 다스 오프송이스 프로포스타스, 알렝 지 헤스페이타르 아스 카락테리스치카스 이 트라지송이스 쿠우투라이스 헬라시오나다스 아 데구스타상 지 사지미.</p>
+<p id = "para-4">인트로두상 우 사지미, 프라투 콤포스투 포르 파치아스 피나스 지 페이시 오 프루투스 두 마르 크루스, 에 우마 다스 이구아리아스 마이스 아프레시아다스 다 쿨리나리아 자포네자. 트라지시오나우멘치, 우 사지미 에 아콤파냐두 지 소유 (몰류 지 소자), 와자비 (파스타 지 하이스-포르치) 이 가리 (젠지브리 잉 콘세르바). 인트레탄투, 우 소유 포지 아프레젠타르 일레바두 테오르 지 소지우 이 글루타마투 모노소지쿠, 우 키 포지 세르 프레주지시아우 파라 페소아스 콩 헤스트리송이스 알리멘타리스 오 콘지송이스 지 사우지 이스페시피카스. 네스치 콘테스투, 에스치 이스투두 부스카 이덴치피카르 아우테르나치바스 사우다베이스 이 사보로자스 아우 소유 파라 우 아콤파냐멘투 지 사지미.</p>
+<p id = "para-5">메토돌로지아 아 페스키자 포이 헤알리자다 포르 메이우 지 헤비장 비블리오그라피카, 아날리지 지 헤세이타스 쿨리나리아스 이 콘수우타 아 이스페시알리스타스 잉 가스트로노미아 자포네자. 알렝 지수, 포랑 헤알리자두스 테스치스 지 데구스타상 파라 아발리아르 아 콤비나상 두스 수브스치투투스 두 소유 콩 지페렌치스 치푸스 지 사지미.</p>
+<p id = "para-6">아우테르나치바스 아우 소유 3.1. 타마리</p>
+<p id = "para-7">우 타마리 에 우마 아우테르나치바 아우 소유 키 아프레젠타 메노르 테오르 지 소지우 이 에 페이투 셍 트리구, 센두 우마 오프상 아데쿠아다 파라 페소아스 콩 헤스트리송이스 아우 글루텡. 우 사보르 두 타마리 에 마이스 잉코르파두 이 메누스 사우가두 키 우 소유, 우 키 포지 헤아우사르 우 사보르 두스 페이시스 이 프루투스 두 마르 우자두스 누 사지미.</p>
+<p id = "para-8">3.2. 폰주</p>
+<p id = "para-9">우 몰류 폰주, 페이투 아 바지 지 수쿠 지 유주 (웅 치푸 지 리망 자포네스), 소유, 카우두 지 페이시 이 비나그리, 에 우마 아우테르나치바 헤프레스칸치 이 레베멘치 시트리카 아우 소유 트라지시오나우. 우 폰주 포지 세르 우칠리자두 코무 웅 몰류 파라 사지미, 프로포르시오난두 우마 콤비나상 이킬리브라다 지 사보리스 시트리쿠스 이 사우가두스.</p>
+<p id = "para-10">3.3. 몰류 지 아멘도잉</p>
+<p id = "para-11">우 몰류 지 아멘도잉, 콤포스투 포르 파스타 지 아멘도잉, 올레우 지 제르젤링, 알류, 젠지브리 이 피멘타, 오페레시 웅 사보르 이조치쿠 이 지페렌치 아우 사지미. 에스타 아우테르나치바 에 이스페시아우멘치 인테레산치 파라 켕 부스카 우마 이스페리엔시아 가스트로노미카 지베르시피카다 이 오자다.</p>
+<p id = "para-12">3.4. 몰류 지 제르젤링</p>
+<p id = "para-13">우 몰류 지 제르젤링, 페이투 콩 올레우 지 제르젤링 토하두, 비나그리 지 아호스, 알류 이 세볼리냐, 에 우마 오프상 사보로자 이 메누스 사우가다 키 우 소유. 우 사보르 두 제르젤링 콤플레멘타 벵 우 사보르 두스 페이시스 이 프루투스 두 마르, 헤아우산두 수아스 카락테리스치카스 나투라이스 이 프로포르시오난두 우마 이스페리엔시아 가스트로노미카 우니카.</p>
+<p id = "para-14">3.5. 몰류 지 비나그리 바우사미쿠</p>
+<p id = "para-15">우 몰류 지 비나그리 바우사미쿠, 페이투 콩 비나그리 바우사미쿠, 아제이치 지 올리바, 메우 이 피멘타, 에 우마 아우테르나치바 오시덴탈리자다 이 소피스치카다 아우 소유. 우 사보르 아그리도시 두 비나그리 바우사미쿠 콘트라스타 콩 아 델리카데자 두 사지미, 크리안두 우마 콤비나상 아르모니오자 이 인트리간치.</p>
+<p id = "para-16">지스쿠상 아스 아우테르나치바스 아우 소유 아프레젠타다스 네스치 이스투두 오페레셍 오프송이스 바리아다스 파라 우 아콤파냐멘투 지 사지미, 레반두 잉 콘타 지페렌치스 프레페렌시아스 이 헤스트리송이스 알리멘타리스. 우 타마리 이 우 폰주 상 오프송이스 마이스 프로시마스 아우 사보르 트라지시오나우 두 소유, 잉쿠안투 우 몰류 지 아멘도잉, 우 몰류 지 제르젤링 이 우 몰류 지 비나그리 바우사미쿠 프로포르시오낭 이스페리엔시아스 가스트로노미카스 지베르시피카다스 이 이노바도라스.</p>
+<p id = "para-17">에 임포르탄치 헤사우타르 키 아 이스콜랴 두 몰류 파라 아콤파냐르 우 사지미 데비 레바르 잉 콘시데라상 우 치푸 지 페이시 오 프루투 두 마르 우칠리자두, 벵 코무 우 팔라다르 인지비두아우 지 카다 페소아. 아 이스페리멘타상 이 아 콤비나상 지 지페렌치스 몰류스 포뎅 인히케세르 아 이스페리엔시아 지 데구스타상 두 사지미 이 암플리아르 우 헤페르토리우 쿨리나리우 두스 아프레시아도리스 데스치 프라투.</p>
+<p id = "para-18">콩클루장 에스치 이스투두 아프레젠토 아우테르나치바스 사우다베이스 이 사보로자스 아우 소유 파라 우 아콤파냐멘투 지 사지미, 콘시데란두 아스펙투스 코무 사보르, 테스투라 이 발로르 누트리시오나우. 우 타마리, 우 폰주, 우 몰류 지 아멘도잉, 우 몰류 지 제르젤링 이 우 몰류 지 비나그리 바우사미쿠 상 오프송이스 인테레산치스 키 포뎅 세르 아다프타다스 아스 프레페렌시아스 이 네세시다지스 지 카다 페소아, 헤스페이탄두 아스 트라지송이스 쿠우투라이스 이 카락테리스치카스 두 프라투. 아 이스페리멘타상 데사스 아우테르나치바스 포지 프로포르시오나르 노바스 이스페리엔시아스 가스트로노미카스 이 인히케세르 아 아프레시아상 두 사지미.</p>
+<h2 id = "link-2">리스트 헤시페스 포르 아우테르나치베스 타트 우지 코몽 키트솅 팅그스</h2>
+<p id = "para-19">&lt; 아키 이스탕 아우구마스 헤세이타스 심플리스 지 몰류스 아우테르나치부스 아우 소유 키 우칠리장 잉그레지엔치스 코뭉스 잉콘트라두스 나 코지냐:</p>
+<p id = "para-20">몰류 시트리쿠 지 아제이치 잉그레지엔치스:</p>
+<p id = "para-21">수쿠 지 1 리망 2 콜례리스 지 소파 지 아제이치 지 올리바 1 콜례르 지 샤 지 메우 사우 이 피멘타 아 고스투 인스트루송이스: 미스투리 토두스 우스 잉그레지엔치스 잉 우마 치젤라 페케나 이 메샤 벵. 아주스치 우 사우 이 아 피멘타 지 아코르두 콩 수아 프레페렌시아.</p>
+<p id = "para-22">몰류 지 모스타르다 이 메우 잉그레지엔치스:</p>
+<p id = "para-23">2 콜례리스 지 소파 지 모스타르다 지종 1 콜례르 지 소파 지 메우 1 콜례르 지 소파 지 비나그리 지 마상 2 콜례리스 지 소파 지 아제이치 지 올리바 사우 이 피멘타 아 고스투 인스트루송이스: 잉 우마 치젤라 페케나, 미스투리 아 모스타르다 지종, 우 메우 이 우 비나그리 지 마상. 아지시오니 렌타멘치 우 아제이치, 메셴두 콘스탄테멘치, 아테 오브테르 우마 콘시스텐시아 오모제네아. 템페리 콩 사우 이 피멘타 아 고스투.</p>
+<p id = "para-24">몰류 지 이오구르치 이 에르바스 잉그레지엔치스:</p>
+<p id = "para-25">1/2 시카라 지 이오구르치 나투라우 1 콜례르 지 소파 지 아제이치 지 올리바 1 콜례르 지 소파 지 수쿠 지 리망 1/4 지 시카라 지 에르바스 프레스카스 피카다스 (사우시냐, 세볼리냐, 코엔트루 오 우마 콤비나상) 사우 이 피멘타 아 고스투 인스트루송이스: 미스투리 우 이오구르치, 우 아제이치 지 올리바 이 우 수쿠 지 리망 잉 우마 치젤라 페케나. 아지시오니 아스 에르바스 프레스카스 피카다스 이 템페리 콩 사우 이 피멘타 아 고스투.</p>
+<p id = "para-26">몰류 피칸치 지 아바카치 잉그레지엔치스:</p>
+<p id = "para-27">1 아바카치 마두루 수쿠 지 1 리망 1 덴치 지 알류 피카두 1 콜례르 지 샤 지 피멘타 베르멜랴 잉 플로쿠스 오 몰류 지 피멘타 아 고스투 사우 아 고스투 인스트루송이스: 아마시 우 아바카치 잉 우마 치젤라 페케나. 아지시오니 우 수쿠 지 리망, 우 알류 피카두 이 아 피멘타 베르멜랴 잉 플로쿠스 오 몰류 지 피멘타. 미스투리 벵 이 템페리 콩 사우 아 고스투.</p>
+<p id = "para-28">몰류 지 알류 이 아제이치 잉그레지엔치스:</p>
+<p id = "para-29">3 콜례리스 지 소파 지 아제이치 지 올리바 1 콜례르 지 소파 지 비나그리 지 비뉴 브랑쿠 1 덴치 지 알류 피카두 오 아마사두 사우 이 피멘타 아 고스투 인스트루송이스: 미스투리 토두스 우스 잉그레지엔치스 잉 우마 치젤라 페케나 이 메샤 벵. 아주스치 우 사우 이 아 피멘타 콘포르미 수아 프레페렌시아.</p>
+<p id = "para-30">에사스 헤세이타스 상 파세이스 지 파제르 이 우칠리장 잉그레지엔치스 코뭉스 잉콘트라두스 나 코지냐. 엘리스 포뎅 세르 아다프타두스 지 아코르두 콩 세우스 고스투스 페소아이스 이 세르벵 코무 아우테르나치바스 아우 소유 파라 아콤파냐르 우 사지미 오 오트루스 프라투스.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-3">데타이우 잉 프트-브르 티 이스토리, 이피스테몰로기 안드 로리 오프 프레트제우스</h2>
+<p id = "para-31">이스토리아, 이피스테몰로지아 이 트라지송이스 두스 프레트제우스</p>
+<p id = "para-32">이스토리아: 우스 프레트제우스 상 웅 치푸 지 팡 잉 포르마 지 노 오리지나리우스 다 이우로파. 아 이스토리아 두스 프레트제우스 헤몬타 아우 페리오두 메지에바우, 포르 보우타 두 세쿨루 비. 이지스텡 바리아스 렌다스 이 이스토리아스 소브리 아 오리젱 두스 프레트제우스. 우마 델라스 아피르마 키 웅 몬지 이탈리아누 인벤토 우 프레트제우 코무 우마 헤콤펜사 파라 크리안사스 키 아프렌지앙 오라송이스. 아 포르마 잉 노 심볼리자리아 우스 브라수스 크루자두스 소브리 우 페이투, 키 에라 우마 포스투라 코뭉 지 오라상 나 에포카. 데즈지 인탕, 우스 프레트제우스 시 이스팔랴랑 포르 토다 아 이우로파, 센두 이스페시아우멘치 포풀라리스 나 알레마냐 이 누스 파이지스 비지뉴스.</p>
+<p id = "para-33">이피스테몰로지아: 아 팔라브라 “프레트제우” 벵 두 테르무 알레망 “브레제우” 오 “브레스’응”. 누 인탄투, 우 노미 잉 라칭, “브라셀루스” 오 “브라셀라이”, 탐벵 이스타 헬라시오나두 아 오리젱 다 팔라브라. 에시스 테르무스 라치누스 시그니피캉 “아브라수” 오 “브라수 페케누”, 노바멘치 파젠두 헤페렌시아 아 포르마 두스 프레트제우스.</p>
+<p id = "para-34">우스 프레트제우스 포뎅 세르 잉콘트라두스 잉 두아스 바리에다지스 프린시파이스: 마시우스 이 두루스. 우스 프레트제우스 마시우스 상 프레파라두스 콩 우마 마사 지 페르멘투 이 제라우멘치 상 콘수미두스 프레스쿠스. 우스 프레트제우스 두루스 상 아사두스 포르 마이스 템푸, 헤주우탄두 잉 우마 테스투라 크로칸치 이 두라도라. 암부스 우스 치푸스 포뎅 세르 사우가두스 오 도시스, 데펜덴두 두스 잉그레지엔치스 이 코베르투라스 우칠리자두스.</p>
+<p id = "para-35">트라지송이스 이 심볼리즈무: 우스 프레트제우스 데젬페냥 웅 파페우 임포르탄치 잉 바리아스 트라지송이스 이 페스치바이스 나 이우로파, 이스페시아우멘치 나 알레마냐. 나 헤지앙 다 바비에라, 우스 프레트제우스 상 콘수미두스 두란치 아 옥토베르페스트, 우마 셀레브라상 아누아우 지 세르베자 이 코미다 알레망. 두란치 아 쿠아레즈마, 우스 프레트제우스 셍 페르멘투 에랑 프레켄테멘치 콘수미두스 펠루스 크리스탕스, 자 키 엘리스 낭 콘치냥 잉그레지엔치스 프로이비두스 펠라스 헤스트리송이스 알리멘타리스 다 에포카.</p>
+<p id = "para-36">우 포르마투 잉 노 두스 프레트제우스 탐벵 텡 웅 심볼리즈무 이스페시아우. 나 트라지상 알레망, 우스 프레트제우스 상 콘시데라두스 웅 심볼루 지 보아 소르치 이 프로스페리다지. 잉 아우구마스 헤지옹이스, 아크레지타-시 키 우스 프레트제우스 포뎅 아파스타르 이스피리투스 말리그누스 오 트라제르 프로테상 콘트라 도엔사스. 아 포르마 인트렐라사다 두 프레트제우 탐벵 심볼리자 우 인트렐라사멘투 다스 망스 잉 오라상 이 에 웅 렘브레치 두 콤프로미수 크리스탕 콩 아 페.</p>
+<p id = "para-37">오지, 우스 프레트제우스 상 콘수미두스 잉 토두 우 문두 이 콘치누앙 아 세르 우마 파르치 임포르탄치 다스 트라지송이스 쿠우투라이스 이 쿨리나리아스 지 무이투스 파이지스.</p>
+<h2 id = "link-4">데타이우 잉 프트-브르 티 트우 모스트 크농/우제드 프레트제우 헤시페스 오베라우 (우징그 티 메트리크 시스텡)</h2>
+<p id = "para-38">&lt; 아키 이스탕 두아스 다스 헤세이타스 지 프레트제우 마이스 코녜시다스 이 우자다스, 센두 우마 지 프레트제우 마시우 이 오트라 지 프레트제우 두루. 암바스 아스 헤세이타스 우칠리장 우 시스테마 메트리쿠.</p>
+<p id = "para-39">1\ 프레트제우스 마시우스:</p>
+<p id = "para-40">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-41">500그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-42">2 콜례리스 지 샤 지 사우</p>
+</li>
+<li><p id = "para-43">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-44">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-45">300무 지 아구아 모르나</p>
+</li>
+<li><p id = "para-46">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-47">3 리트루스 지 아구아</p>
+</li>
+<li><p id = "para-48">200그 지 비카르보나투 지 소지우</p>
+</li>
+<li><p id = "para-49">사우 그로수 아 고스투</p>
+</li>
+</ul>
+<p id = "para-50">인스트루송이스:</p>
+<ol>
+<li><p id = "para-51">잉 우마 치젤라 그란지, 미스투리 아 파리냐, 우 사우 이 우 아수카르. 아지시오니 우 페르멘투 아 아구아 모르나 이 데이시 데스칸사르 포르 세르카 지 5 미누투스, 아테 키 코메시 아 이스푸마르.</p>
+</li>
+<li><p id = "para-52">데스페지 아 아구아 콩 페르멘투 이 아 만테이가 데헤치다 나 미스투라 지 파리냐 이 미스투리 벵 아테 포르마르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-53">소비 아 마사 포르 세르카 지 10 미누투스 잉 우마 수페르피시 인파리냐다. 콜로키 아 마사 지 보우타 나 치젤라, 쿠브라 콩 웅 파누 이 데이시 데스칸사르 잉 웅 로카우 켄치 포르 1 오라, 오 아테 키 아 마사 도브리 지 타마뉴.</p>
+</li>
+<li><p id = "para-54">프레-아케사 우 포르누 아 200 그라우스 세우시우스. 잉 우마 파넬라 그란지, 페르바 우스 3 리트루스 지 아구아 이 아지시오니 우 비카르보나투 지 소지우.</p>
+</li>
+<li><p id = "para-55">지비다 아 마사 잉 8 아 12 포르송이스 이구아이스 이 인홀리 카다 포르상 잉 웅 코르당 롱구 이 피누. 포르미 우스 프레트제우스, 크루잔두 아스 이스트레미다지스 두 코르당 이 프레시오난두-아스 나 바지 두 프레트제우.</p>
+</li>
+<li><p id = "para-56">콜로키 우스 프레트제우스, 웅 지 카다 베스, 나 아구아 페르벤치 콩 비카르보나투 지 소지우 포르 30 세군두스. 헤치리-우스 콩 우마 이스쿠마데이라 이 콜로키-우스 잉 우마 아사데이라 포하다 콩 파페우 만테이가.</p>
+</li>
+<li><p id = "para-57">포우빌리 우스 프레트제우스 콩 사우 그로수 이 레비 아우 포르누 포르 20 아 25 미누투스, 아테 키 이스테장 도라두스. 데이시 이스프리아르 포르 아우궁스 미누투스 안치스 지 세르비르.</p>
+</li>
+</ol>
+<p id = "para-58">2\ 프레트제우스 두루스:</p>
+<p id = "para-59">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-60">375그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-61">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-62">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-63">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-64">250무 지 아구아 모르나</p>
+</li>
+<li><p id = "para-65">30그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-66">사우 아 고스투</p>
+</li>
+</ul>
+<p id = "para-67">인스트루송이스:</p>
+<ol>
+<li><p id = "para-68">잉 우마 치젤라 그란지, 미스투리 아 파리냐, 우 사우 이 우 아수카르. 아지시오니 우 페르멘투 아 아구아 모르나 이 데이시 데스칸사르 포르 세르카 지 5 미누투스, 아테 키 코메시 아 이스푸마르.</p>
+</li>
+<li><p id = "para-69">데스페지 아 아구아 콩 페르멘투 이 아 만테이가 데헤치다 나 미스투라 지 파리냐 이 미스투리 벵 아테 포르마르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-70">소비 아 마사 포르 세르카 지 10 미누투스 잉 우마 수페르피시 인파리냐다. 콜로키 아 마사 지 보우타 나 치젤라, 쿠브라 콩 웅 파누 이 데이시 데스칸사르 잉 웅 로카우 켄치 포르 1 오라, 오 아테 키 아 마사 도브리 지 타마뉴.</p>
+</li>
+<li><p id = "para-71">프레-아케사 우 포르누 아 180 그라우스 세우시우스. 지비다 아 마사 잉 포르송이스 이구아이스 (세르카 지 24 아 30) 이 인홀리 카다 포르상 잉 웅 코르당 롱구 이 피누.</p>
+</li>
+<li><p id = "para-72">포르미 우스 프레트제우스, 크루잔두 아스 이스트레미다지스 두 코르당 이 프레시오난두-아스 나 바지 두 프레트제우. 콜로키-우스 잉 우마 아사데이라 포하다 콩 파페우 만테이가.</p>
+</li>
+<li><p id = "para-73">레비 우스 프레트제우스 아우 포르누 이 아시 포르 세르카 지 25 아 30 미누투스, 오 아테 키 이스테장 도라두스 이 크로칸치스. 시 키제르, 포우빌리 콩 사우 아 고스투 안치스 지 아사르.</p>
+</li>
+<li><p id = "para-74">헤치리 우스 프레트제우스 두 포르누 이 데이시 이스프리아르 콤플레타멘치 안치스 지 구아르다르 잉 웅 헤시피엔치 에르메치쿠. 엘리스 포뎅 세르 아르마제나두스 포르 아테 두아스 세마나스.</p>
+</li>
+</ol>
+<p id = "para-75">지카: 시 프레페리르 프레트제우스 도시스, 보세 포지 포우빌랴르 아수카르 이 카넬라 안치스 지 아사르, 오 메르굴랴-루스 잉 쇼콜라치 데헤치두 데포이스 지 이스프리아렝.</p>
+<p id = "para-76">아고라 보세 텡 두아스 헤세이타스 지 프레트제우 포풀라리스 이 사보로자스 파라 이스페리멘타르. 렘브리-시 지 키 보세 포지 페르소날리자르 우스 프레트제우스 콩 지페렌치스 코베르투라스 오 잉그레지엔치스 아지시오나이스, 코무 케이주, 세멘치스 오 이스페시아리아스, 파라 크리아르 우마 바리에다지 지 사보리스 이 테스투라스.</p>
+<h2 id = "link-5">데타이우 잉 프트-브르 티 파르마콜로기 오프 바킹그 소다 와테르 보일링그 잉 티 카지 오프 프레트제우스</h2>
+<p id = "para-77">&lt; 아 아지상 지 비카르보나투 지 소지우 (탐벵 코녜시두 코무 소다 카우스치카 오 이드로제노카르보나투 지 소지우) 아 아구아 페르벤치 텡 웅 파페우 푼다멘타우 나 프레파라상 지 프레트제우스 마시우스. 아 솔루상 아우칼리나 헤주우탄치 아페타 우 이스테리오르 두스 프레트제우스 지 바리아스 마네이라스, 인플루엔시안두 탄투 아 테스투라 쿠안투 아 아파렌시아 피나우 두 프로두투.</p>
+<ol>
+<li><p id = "para-78">헤아상 지 마일라르드: 아 솔루상 지 비카르보나투 지 소지우 나 아구아 페르벤치 아우멘타 우 프 다 수페르피시 두스 프레트제우스, 우 키 아셀레라 아 헤아상 지 마일라르드. 아 헤아상 지 마일라르드 에 우마 헤아상 키미카 엔트리 아미노아시두스 이 아수카리스 헤두토리스, 키 오코히 쿠안두 우스 알리멘투스 상 아케시두스. 엘라 에 헤스폰사베우 펠라 포르마상 다 크로스타 도라다 이 사보로자 누 이스테리오르 두스 프레트제우스. 아우 메르굴랴르 우스 프레트제우스 나 솔루상 아우칼리나, 아 수페르피시 피카 마이스 프로펜사 아 도라르 이 데젠보우베르 웅 사보르 카락테리스치쿠 아우 아사르.</p>
+</li>
+<li><p id = "para-79">젤라치니자상 두 아미두: 아 솔루상 지 비카르보나투 지 소지우 탐벵 콘트리부이 파라 아 젤라치니자상 두 아미두 프레젠치 나 수페르피시 다 마사. 쿠안두 우 아미두 에 이스포스투 아우 칼로르 이 아 우미다지, 엘리 아브소르비 아구아 이 인샤, 포르만두 우마 파스타 이스페사. 아 솔루상 아우칼리나 아주다 아 아셀레라르 에시 프로세수, 크리안두 우마 수페르피시 마이스 리자 이 피르미 키 임페지 키 우스 프레트제우스 세켕 무이투 두란치 우 코지멘투.</p>
+</li>
+<li><p id = "para-80">이나치바상 지 인지마스: 아 솔루상 아우칼리나 이나치바 아우구마스 인지마스 프레젠치스 나 수페르피시 다 마사, 코무 아스 프로테아지스. 아 이나치바상 데사스 인지마스 아주다 아 프레제르바르 아 이스트루투라 다스 프로테이나스 두 글루텡, 헤주우탄두 잉 우마 테스투라 마이스 마스치가베우 이 일라스치카 누 인테리오르 두스 프레트제우스.</p>
+</li>
+</ol>
+<p id = "para-81">아우 메르굴랴르 우스 프레트제우스 나 솔루상 지 비카르보나투 지 소지우 안치스 지 아사르, 크리아-시 우마 크로스타 도라다 이 브릴랸치, 치피카 두스 프레트제우스 트라지시오나이스. 아 콤비나상 다 헤아상 지 마일라르드, 다 젤라치니자상 두 아미두 이 다 이나치바상 다스 인지마스 콘트리부이 파라 아 테스투라 이 우 사보르 카락테리스치쿠스 두스 프레트제우스 마시우스.</p>
+<h2 id = "link-6">마키 헬레반트 헤마르크스 베트웽 스웨트 안드 노르마우 프레트제우스</h2>
+<p id = "para-82">&lt; 우스 프레트제우스, 탄투 마시우스 쿠안투 두루스, 포뎅 세르 클라시피카두스 잉 두아스 카테고리아스 프린시파이스: 도시스 이 사우가두스 (오 노르마이스). 이지스텡 아우구마스 지페렌사스 노타베이스 엔트리 우스 도이스 치푸스 지 프레트제우스, 키 아브란젱 잉그레지엔치스, 사보리스, 코베르투라스 이 오카지옹이스 지 콘수무.</p>
+<p id = "para-83">1\ 잉그레지엔치스 이 사보르: 우스 프레트제우스 사우가두스, 탐벵 코녜시두스 코무 프레트제우스 노르마이스, 상 페이투스 콩 잉그레지엔치스 바지쿠스 코무 파리냐, 아구아, 페르멘투, 사우 이, 아스 베지스, 만테이가. 엘리스 제라우멘치 텡 웅 사보르 네우트루 오 레베멘치 사우가두, 콩 우마 크로스타 도라다 이 우마 테스투라 인테르나 마시아 이 일라스치카, 누 카주 두스 프레트제우스 마시우스. 프레트제우스 두루스 사우가두스 텡 우마 테스투라 크로칸치 이 포뎅 세르 콘수미두스 소지뉴스 오 콩 몰류스 이 파스타스.</p>
+<p id = "para-84">우스 프레트제우스 도시스, 포르 오트루 라두, 포뎅 잉클루이르 아수카르 오 메우 나 마사, 프로포르시오난두 웅 사보르 아도시카두. 아 코베르투라 이 우스 헤셰이우스 탐벵 바리앙, 포덴두 세르 잉콘트라두스 콩 카넬라 이 아수카르, 쇼콜라치, 글라세, 프루타스 오 노지스. 프레트제우스 도시스 상 제라우멘치 아소시아두스 아 소브레메자스 이 란시스.</p>
+<p id = "para-85">2\ 코베르투라스 이 헤셰이우스: 프레트제우스 사우가두스 상 제라우멘치 포우빌랴두스 콩 사우 그로수, 마스 탐벵 포뎅 세르 코베르투스 콩 세멘치스 (코무 제르젤링 오 세멘치스 지 파폴라) 이 케이주. 알렝 지수, 엘리스 포뎅 세르 메르굴랴두스 잉 몰류스 코무 모스타르다, 케이주 크레모주 오 몰류 마리나라.</p>
+<p id = "para-86">프레트제우스 도시스 텡 우마 암플라 가마 지 코베르투라스 이 헤셰이우스 포시베이스. 엘리스 포뎅 세르 포우빌랴두스 콩 아수카르 이 카넬라, 코베르투스 콩 쇼콜라치 데헤치두, 카라멜루 오 글라세, 이 아테 헤셰아두스 콩 프루타스 오 크레미. 프레트제우스 도시스 상 베르사테이스 이 포뎅 세르 아다프타두스 지 아코르두 콩 아스 프레페렌시아스 이 오카지옹이스.</p>
+<p id = "para-87">3\ 오카지옹이스 지 콘수무: 프레트제우스 사우가두스 상 코무멘치 콘수미두스 코무 아페리치부스 오 란시스 이 상 포풀라리스 잉 이벤투스 이스포르치부스, 페이라스 이 페스치바이스, 코무 아 옥토베르페스트 나 알레마냐. 엘리스 탐벵 포뎅 세르 세르비두스 코무 파르치 지 웅 프라투 프린시파우, 아콤파냔두 사우시샤스 이 오트루스 프라투스 트라지시오나이스.</p>
+<p id = "para-88">프레트제우스 도시스, 포르 수아 베스, 상 이데아이스 파라 소브레메자스, 란시스 이 오카지옹이스 페스치바스. 엘리스 상 포풀라리스 잉 페스타스 지 아니베르사리우, 페리아두스 이 이벤투스 이스페시아이스, 이 포뎅 세르 잉콘트라두스 잉 로자스 지 콘페이타리아, 페이라스 이 파르케스 테마치쿠스.</p>
+<p id = "para-89">임보라 이지스탕 지페렌사스 시그니피카치바스 엔트리 프레트제우스 도시스 이 사우가두스, 암부스 우스 치푸스 콤파르칠량 아 메즈마 포르마 이코니카 이 포뎅 세르 아프레시아두스 포르 페소아스 지 토다스 아스 이다지스. 인데펜덴테멘치 두 사보르, 우스 프레트제우스 콘치누앙 아 세르 웅 란시 아마두 잉 토두 우 문두.</p>
+<h2 id = "link-7">오 마니 그’스 이스 ‘1 콜례르 지 샤’ 스페시피칼리?</h2>
+<p id = "para-90">&lt; 우마 콜례르 지 샤 (트스프) 에 우마 메지다 지 볼루미, 이 아 쿠안치다지 지 그라마스 (그) 키 엘라 콘텡 바리아 지 아코르두 콩 아 덴시다지 두 잉그레지엔치 키 이스타 센두 메지두. 파라 핑스 지 헤페렌시아, 아키 이스탕 아우구마스 콘베르송이스 코뭉스:</p>
+<p id = "para-91">1 콜례르 지 샤 (트스프) 지 아구아 = 아프로시마다멘치 5 그라마스 (그) 1 콜례르 지 샤 (트스프) 지 아수카르 = 아프로시마다멘치 4 그라마스 (그) 1 콜례르 지 샤 (트스프) 지 사우 = 아프로시마다멘치 5-6 그라마스 (그)</p>
+<p id = "para-92">렘브리-시 지 키 에시스 발로리스 상 아프로시마두스 이 포뎅 바리아르 데펜덴두 두 잉그레지엔치 이스페시피쿠 이 다 프레시장 다 메지상. 파라 우마 메지상 마이스 프레시자, 에 멜료르 우자르 우마 발란사 지 코지냐.</p>
+<h2 id = "link-8">오 마니 그’스 이스 ‘1 콜례르 지 샤’ 스페시피칼리? 리스트 5 코몽 프로포르치옹스</h2>
+<p id = "para-93">&lt; “1 콜례르 지 샤” (1 테아스퐁) 에 우마 메지다 지 볼루미 이 낭 지 페주, 포르탄투, 수아 이키발렌시아 잉 그라마스 (그) 바리아 지 아코르두 콩 아 덴시다지 두 잉그레지엔치 잉 케스탕. 아키 이스탕 싱쿠 프로포르송이스 코뭉스 파라 지페렌치스 잉그레지엔치스:</p>
+<ol>
+<li><p id = "para-94">아수카르: 1 콜례르 지 샤 지 아수카르 페자 아프로시마다멘치 4-5 그라마스.</p>
+</li>
+<li><p id = "para-95">사우: 1 콜례르 지 샤 지 사우 페자 아프로시마다멘치 5-6 그라마스.</p>
+</li>
+<li><p id = "para-96">페르멘투 잉 포: 1 콜례르 지 샤 지 페르멘투 잉 포 페자 아프로시마다멘치 3-4 그라마스.</p>
+</li>
+<li><p id = "para-97">비카르보나투 지 소지우: 1 콜례르 지 샤 지 비카르보나투 지 소지우 페자 아프로시마다멘치 4-5 그라마스.</p>
+</li>
+<li><p id = "para-98">파리냐 지 트리구: 1 콜례르 지 샤 지 파리냐 지 트리구 페자 아프로시마다멘치 2,5-3 그라마스.</p>
+</li>
+</ol>
+<p id = "para-99">렘브리-시 지 키 에사스 메지다스 상 아프로시마다스 이 포뎅 바리아르 웅 포쿠 데펜덴두 두 잉그레지엔치 이스페시피쿠 이 지 코무 엘리 에 마누제아두 아우 메지르 (포르 이젬플루, 시 아 콜례르 지 샤 이스타 니벨라다 오 셰이아). 파라 오브테르 메지다스 마이스 프레시자스, 이스페시아우멘치 아우 코지냐르 오 아사르 헤세이타스 센시베이스, 에 헤코멘다베우 우자르 우마 발란사 지 코지냐 파라 페자르 우스 잉그레지엔치스 잉 그라마스.</p>
+<h2 id = "link-9">베지지 트스프, 리스트 오테르 스퐁 메아주리스 위트 헤스펙치비 그 이잠플리스</h2>
+<p id = "para-100">&lt; 알렝 다 콜례르 지 샤 (트스프), 오트라스 메지다스 코뭉스 지 콜례리스 잉클루엥 아 콜례르 지 소파 (트브스프) 이 아 콜례르 지 소브레메자. 아키 이스탕 아우궁스 이젬플루스 지 잉그레지엔치스 이 수아스 헤스펙치바스 프로포르송이스 잉 그라마스 파라 카다 메지다:</p>
+<p id = "para-101">콜례르 지 소파 (트브스프) - 이키발렌치 아 아프로시마다멘치 15 무:</p>
+<p id = "para-102">아. 아수카르: 1 콜례르 지 소파 지 아수카르 페자 아프로시마다멘치 12-15 그라마스. 브. 사우: 1 콜례르 지 소파 지 사우 페자 아프로시마다멘치 15-18 그라마스. 크. 파리냐 지 트리구: 1 콜례르 지 소파 지 파리냐 지 트리구 페자 아프로시마다멘치 8-10 그라마스. 드. 만테이가: 1 콜례르 지 소파 지 만테이가 페자 아프로시마다멘치 14-15 그라마스. 이. 메우: 1 콜례르 지 소파 지 메우 페자 아프로시마다멘치 21-24 그라마스.</p>
+<p id = "para-103">콜례르 지 소브레메자:</p>
+<p id = "para-104">아 콜례르 지 소브레메자 에 우마 메지다 메누스 코뭉 이 바리아 엔트리 7,5 무 이 10 무. 파라 이페이투스 지 카우쿨루, 우자레무스 우마 콜례르 지 소브레메자 지 10 무.</p>
+<p id = "para-105">아. 아수카르: 1 콜례르 지 소브레메자 지 아수카르 페자 아프로시마다멘치 8-10 그라마스. 브. 사우: 1 콜례르 지 소브레메자 지 사우 페자 아프로시마다멘치 10-12 그라마스. 크. 파리냐 지 트리구: 1 콜례르 지 소브레메자 지 파리냐 지 트리구 페자 아프로시마다멘치 5-6 그라마스. 드. 만테이가: 1 콜례르 지 소브레메자 지 만테이가 페자 아프로시마다멘치 9-10 그라마스. 이. 메우: 1 콜례르 지 소브레메자 지 메우 페자 아프로시마다멘치 14-16 그라마스.</p>
+<p id = "para-106">렘브리-시 지 키 에사스 메지다스 상 아프로시마다스 이 포뎅 바리아르 데펜덴두 두 잉그레지엔치 이스페시피쿠 이 지 코무 엘리 에 마누제아두 아우 메지르. 파라 메지다스 마이스 프레시자스, 에 헤코멘다베우 우자르 우마 발란사 지 코지냐 파라 페자르 우스 잉그레지엔치스 잉 그라마스.</p>
+<h2 id = "link-10">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 스웨트 수가르 시나몽 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 안드 이스플라이닝그 티 스테프스</h2>
+<p id = "para-107">&lt; 헤세이타 지 프레트제우 도시 지 카넬라 이 아수카르</p>
+<p id = "para-108">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-109">500그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-110">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-111">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-112">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-113">300무 지 아구아 모르나</p>
+</li>
+<li><p id = "para-114">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-115">1/2 시카라 지 아수카르 마스카부</p>
+</li>
+<li><p id = "para-116">2 콜례리스 지 소파 지 카넬라 잉 포</p>
+</li>
+<li><p id = "para-117">100그 지 만테이가 데헤치다 (아지시오나우)</p>
+</li>
+</ul>
+<p id = "para-118">파수 아 파수:</p>
+<ol>
+<li><p id = "para-119">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 우 사우, 우 아수카르 이 우 페르멘투 비올로지쿠 세쿠.</p>
+</li>
+<li><p id = "para-120">아지시오니 아 아구아 모르나 이 아 만테이가 데헤치다. 미스투리 벵 아테 오브테르 우마 마사 오모제네아. 시 네세사리우, 아지시오니 마이스 파리냐 파라 오브테르 우마 마사 키 낭 그루지 나스 망스.</p>
+</li>
+<li><p id = "para-121">소비 아 마사 포르 세르카 지 10 미누투스, 아테 키 엘라 피키 리자 이 일라스치카.</p>
+</li>
+<li><p id = "para-122">쿠브라 아 마사 콩 웅 파누 우미두 이 데이시 데스칸사르 포르 1 오라 잉 웅 로카우 켄치, 아테 키 엘라 도브리 지 타마뉴.</p>
+</li>
+<li><p id = "para-123">프레아케사 우 포르누 아 200°크.</p>
+</li>
+<li><p id = "para-124">지비다 아 마사 잉 12 파르치스 이구아이스 이 모델리 카다 우마 델라스 잉 포르마투 지 프레트제우.</p>
+</li>
+<li><p id = "para-125">콜로키 우스 프레트제우스 잉 우마 아사데이라 포하다 콩 파페우 만테이가, 데이샨두 이스파수 엔트리 엘리스.</p>
+</li>
+<li><p id = "para-126">아시 포르 15-20 미누투스, 오 아테 키 우스 프레트제우스 피켕 도라두스.</p>
+</li>
+<li><p id = "para-127">잉 우마 치젤라 페케나, 미스투리 우 아수카르 마스카부 이 아 카넬라 잉 포.</p>
+</li>
+<li><p id = "para-128">핀셀리 우스 프레트제우스 아인다 켄치스 콩 아 만테이가 데헤치다 아지시오나우 이 잉 세기다 파시-우스 나 미스투라 지 아수카르 이 카넬라.</p>
+</li>
+<li><p id = "para-129">데이시 우스 프레트제우스 이스프리아렝 웅 포쿠 안치스 지 세르비르. 아프로베이치 세우 델리시오주 프레트제우 도시 지 카넬라 이 아수카르!</p>
+</li>
+</ol>
+<h2 id = "link-11">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 스웨트 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 안드 이스플라이닝그 티 스테프스</h2>
+<p id = "para-130">&lt; 헤세이타 지 프레트제우 도시:</p>
+<p id = "para-131">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-132">500그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-133">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-134">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-135">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-136">300무 지 아구아 모르나</p>
+</li>
+<li><p id = "para-137">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-138">100그 지 아수카르 마스카부</p>
+</li>
+<li><p id = "para-139">1 콜례르 지 소파 지 카넬라 잉 포</p>
+</li>
+<li><p id = "para-140">1 오부 바치두 (파라 핀셀라르)</p>
+</li>
+<li><p id = "para-141">아수카르 지 콘페이테이루 파라 포우빌랴르 (오프시오나우)</p>
+</li>
+</ul>
+<p id = "para-142">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-143">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 우 사우, 우 아수카르 이 우 페르멘투 비올로지쿠 세쿠. 아지시오니 아 아구아 모르나 이 아 만테이가 데헤치다 이 미스투리 아테 오브테르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-144">소비 아 마사 잉 우마 수페르피시 인파리냐다 포르 세르카 지 10 미누투스, 아테 키 피키 리자 이 일라스치카. 콜로키 아 마사 지 보우타 나 치젤라, 쿠브라 콩 웅 파누 우미두 이 데이시 데스칸사르 포르 1 오라, 오 아테 도브라르 지 타마뉴.</p>
+</li>
+<li><p id = "para-145">잉쿠안투 아 마사 데스칸사, 프레파리 아 미스투라 지 아수카르 마스카부 이 카넬라. 미스투리 우스 100그 지 아수카르 마스카부 콩 아 콜례르 지 소파 지 카넬라 잉 포 잉 우마 치젤라 페케나. 헤제르비.</p>
+</li>
+<li><p id = "para-146">아포스 우 템푸 지 데스칸수, 프레-아케사 우 포르누 아 180°크 이 포히 우마 아사데이라 콩 파페우 만테이가.</p>
+</li>
+<li><p id = "para-147">지비다 아 마사 잉 12 포르송이스 이구아이스 이 모델리 카다 포르상 잉 웅 홀리뉴 롱구 이 피누. 파사 웅 노 콩 우 홀리뉴 지 마사, 포르만두 우 포르마투 카락테리스치쿠 지 프레트제우.</p>
+</li>
+<li><p id = "para-148">콜로키 우스 프레트제우스 나 아사데이라 프레파라다 이 핀셀리 콩 우 오부 바치두.</p>
+</li>
+<li><p id = "para-149">포우빌리 아 미스투라 지 아수카르 마스카부 이 카넬라 소브리 우스 프레트제우스.</p>
+</li>
+<li><p id = "para-150">레비 아우 포르누 포르 아프로시마다멘치 20-25 미누투스, 오 아테 키 이스테장 도라두스 이 코지두스.</p>
+</li>
+<li><p id = "para-151">헤치리 우스 프레트제우스 두 포르누 이 데이시 이스프리아르 잉 우마 그라지.</p>
+</li>
+<li><p id = "para-152">시 데제자르, 포우빌리 아수카르 지 콘페이테이루 소브리 우스 프레트제우스 안치스 지 세르비르.</p>
+</li>
+</ol>
+<p id = "para-153">아프로베이치 세우스 델리시오주스 프레트제우스 도시스!</p>
+<h2 id = "link-12">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 포데레드 미우크 (마이비 투 헤플라시 티 와테르?) 일리 이스플라이닝그 티 스테프스</h2>
+<p id = "para-154">&lt; 헤세이타 지 프레트제우 콩 레이치 잉 포</p>
+<p id = "para-155">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-156">500그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-157">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-158">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-159">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-160">200무 지 아구아 모르나</p>
+</li>
+<li><p id = "para-161">100그 지 레이치 잉 포</p>
+</li>
+<li><p id = "para-162">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-163">1 오부 바치두 (파라 핀셀라르)</p>
+</li>
+<li><p id = "para-164">2 콜례리스 지 소파 지 비카르보나투 지 소지우</p>
+</li>
+<li><p id = "para-165">1 리트루 지 아구아 (파라 코지냐르 우스 프레트제우스)</p>
+</li>
+<li><p id = "para-166">사우 그로수 오 제르젤링 (파라 포우빌랴르)</p>
+</li>
+</ul>
+<p id = "para-167">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-168">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 우 사우 이 우 아수카르.</p>
+</li>
+<li><p id = "para-169">지소우바 우 페르멘투 비올로지쿠 세쿠 잉 200무 지 아구아 모르나 이 데이시 데스칸사르 포르 세르카 지 5 미누투스.</p>
+</li>
+<li><p id = "para-170">아지시오니 우 레이치 잉 포 아 미스투라 지 파리냐 이 미스투리 벵.</p>
+</li>
+<li><p id = "para-171">데스페지 아 아구아 콩 페르멘투 이 아 만테이가 데헤치다 나 미스투라 지 파리냐 이 레이치 잉 포. 미스투리 아테 포르마르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-172">소비 아 마사 잉 우마 수페르피시 인파리냐다 포르 세르카 지 10 미누투스, 아테 키 피키 리자 이 일라스치카.</p>
+</li>
+<li><p id = "para-173">콜로키 아 마사 잉 우마 치젤라 운타다 콩 올레우, 쿠브라 콩 웅 파누 우미두 이 데이시 데스칸사르 잉 로카우 모르누 포르 1 오라, 오 아테 도브라르 지 타마뉴.</p>
+</li>
+<li><p id = "para-174">아포스 우 데스칸수, 지비다 아 마사 잉 12 페다수스 이구아이스. 인홀리 카다 페다수 잉 치라스 롱가스 이 피나스, 이 모델리 우스 프레트제우스 파젠두 웅 라수 이 크루잔두 아스 폰타스.</p>
+</li>
+<li><p id = "para-175">프레-아케사 우 포르누 아 200°크 이 프레파리 우마 아사데이라 운타다 콩 올레우 오 포하다 콩 파페우 만테이가.</p>
+</li>
+<li><p id = "para-176">잉 우마 파넬라, 페르바 1 리트루 지 아구아 콩 2 콜례리스 지 소파 지 비카르보나투 지 소지우. 코지니 우스 프레트제우스, 웅 지 카다 베스, 포르 30 세군두스 잉 카다 라두. 헤치리-우스 다 아구아 콩 우마 이스쿠마데이라 이 콜로키-우스 나 아사데이라 프레파라다.</p>
+</li>
+<li><p id = "para-177">핀셀리 우스 프레트제우스 콩 우 오부 바치두 이 사우피키 사우 그로수 오 제르젤링 포르 시마.</p>
+</li>
+<li><p id = "para-178">아시 우스 프레트제우스 누 포르누 프레-아케시두 포르 아프로시마다멘치 20 미누투스, 오 아테 도라르.</p>
+</li>
+</ol>
+<p id = "para-179">데이시 이스프리아르 웅 포쿠 이 아프로베이치 세우스 델리시오주스 프레트제우스 콩 레이치 잉 포!</p>
+<h2 id = "link-13">콘시데링그 테지 바지 잉그레지엔트스, 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 포데레드 오아트 메아우 일리 이스플라이닝그 티 스테프스</h2>
+<p id = "para-180">&lt; 헤세이타 지 프레트제우 콩 아베이아 잉 포</p>
+<p id = "para-181">잉그레지엔치스:</p>
+<p id = "para-182">500그 지 파리냐 지 트리구 150그 지 파리냐 지 아베이아 잉 포 1 콜례르 지 샤 지 사우 1 콜례르 지 샤 지 아수카르 7그 지 페르멘투 비올로지쿠 세쿠 300무 지 아구아 모르나 50그 지 만테이가 데헤치다 1 오부 바치두 (파라 핀셀라르) 사우 그로수 오 플로쿠스 지 사우 (파라 포우빌랴르) 모두 지 프레파루:</p>
+<p id = "para-183">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 아 파리냐 지 아베이아 잉 포, 우 사우 이 우 아수카르.</p>
+<p id = "para-184">지소우바 우 페르멘투 나 아구아 모르나 이 데이시 데스칸사르 포르 5 미누투스, 아테 포르마르 이스푸마.</p>
+<p id = "para-185">아지시오니 아 미스투라 지 페르멘투 이 아 만테이가 데헤치다 아 치젤라 콩 우스 잉그레지엔치스 세쿠스. 메샤 아테 포르마르 우마 마사.</p>
+<p id = "para-186">소비 아 마사 포르 세르카 지 10 미누투스, 아테 피카르 리자 이 일라스치카. 시 네세사리우, 아지시오니 웅 포쿠 마이스 지 파리냐 지 트리구 파라 이비타르 키 아 마사 그루지 나스 망스.</p>
+<p id = "para-187">콜로키 아 마사 잉 우마 치젤라 운타다, 쿠브라 콩 웅 파누 우미두 이 데이시 데스칸사르 잉 웅 로카우 아케시두 포르 세르카 지 1 오라, 오 아테 도브라르 지 타마뉴.</p>
+<p id = "para-188">프레아케사 우 포르누 아 200크. 포히 우마 아사데이라 콩 파페우 만테이가.</p>
+<p id = "para-189">지비다 아 마사 잉 12 포르송이스 이구아이스. 파사 홀루스 롱구스 콩 카다 포르상 이 모델리 우스 프레트제우스, 포르만두 웅 라수 이 크루잔두 아스 폰타스.</p>
+<p id = "para-190">콜로키 우스 프레트제우스 나 아사데이라 프레파라다. 핀셀리 카다 프레트제우 콩 우 오부 바치두 이 포우빌리 콩 사우 그로수 오 플로쿠스 지 사우.</p>
+<p id = "para-191">아시 우스 프레트제우스 포르 20 아 25 미누투스, 오 아테 피카렝 도라두스. 데이시 이스프리아르 잉 우마 그라지 안치스 지 세르비르.</p>
+<p id = "para-192">아프로베이치 세우스 델리시오주스 프레트제우스 콩 아베이아 잉 포!</p>
+<h2 id = "link-14">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 미우크 (투 마이비 헤플라시 티 와테르?) 일리 이스플라이닝그 티 스테프스</h2>
+<p id = "para-193">&lt; 헤세이타 지 프레트제우 콩 레이치</p>
+<p id = "para-194">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-195">500그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-196">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-197">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-198">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-199">250무 지 레이치 모르누 (수브스치투인두 아 아구아)</p>
+</li>
+<li><p id = "para-200">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-201">1 오부 바치두 (파라 핀셀라르)</p>
+</li>
+<li><p id = "para-202">사우 그로수 오 잉 플로쿠스 (파라 포우빌랴르 포르 시마 두스 프레트제우스)</p>
+</li>
+</ul>
+<p id = "para-203">파수 아 파수:</p>
+<ol>
+<li><p id = "para-204">잉 우마 치젤라 그란지, 미스투리 아 파리냐, 우 사우 이 우 아수카르.</p>
+</li>
+<li><p id = "para-205">지소우바 우 페르멘투 누 레이치 모르누 이 데이시 데스칸사르 포르 세르카 지 5 미누투스, 아테 키 코메시 아 이스푸마르.</p>
+</li>
+<li><p id = "para-206">아지시오니 우 레이치 콩 페르멘투 이 아 만테이가 데헤치다 아 미스투라 지 파리냐. 메샤 아테 키 토두스 우스 잉그레지엔치스 이스테장 벵 잉코르포라두스.</p>
+</li>
+<li><p id = "para-207">트란스피라 아 마사 파라 우마 수페르피시 림파 이 인파리냐다 이 소비 포르 아프로시마다멘치 10 미누투스, 아테 키 아 마사 피키 리자 이 일라스치카.</p>
+</li>
+<li><p id = "para-208">콜로키 아 마사 잉 우마 치젤라 레베멘치 운타다 콩 올레우 이 쿠브라 콩 웅 파누 우미두. 데이시 데스칸사르 잉 웅 로카우 아케시두 포르 세르카 지 1 오라, 오 아테 키 아 마사 도브리 지 타마뉴.</p>
+</li>
+<li><p id = "para-209">프레-아케사 우 포르누 아 200°크 이 프레파리 우마 아사데이라 포하다 콩 파페우 만테이가 오 웅 타페치 지 실리코니.</p>
+</li>
+<li><p id = "para-210">지비다 아 마사 잉 12 페다수스 이구아이스. 인홀리 카다 페다수 잉 웅 코르당 지 아프로시마다멘치 50 킁 지 콤프리멘투. 파사 웅 우 콩 카다 코르당 이 크루지 아스 폰타스 두아스 베지스, 데포이스 도브리 아스 폰타스 파라 바이슈, 프레시오난두-아스 나 바지 두 우, 포르만두 우 포르마투 지 프레트제우.</p>
+</li>
+<li><p id = "para-211">콜로키 우스 프레트제우스 나 아사데이라 프레파라다. 핀셀리 카다 프레트제우 콩 우 오부 바치두 이 포우빌리 콩 사우 그로수 오 잉 플로쿠스.</p>
+</li>
+<li><p id = "para-212">아시 우스 프레트제우스 누 포르누 프레-아케시두 포르 20 아 25 미누투스, 오 아테 키 이스테장 도라두스 이 크로칸치스.</p>
+</li>
+<li><p id = "para-213">헤치리 우스 프레트제우스 두 포르누 이 데이시 이스프리아르 포르 아우궁스 미누투스 안치스 지 세르비르.</p>
+</li>
+</ol>
+<p id = "para-214">봉 아페치치!</p>
+<h2 id = "link-15">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 ‘파리냐 지 만지오카’ 일리 이스플라이닝그 티 스테프스</h2>
+<p id = "para-215">&lt; 헤세이타 지 프레트제우 콩 파리냐 지 만지오카</p>
+<p id = "para-216">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-217">350그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-218">150그 지 파리냐 지 만지오카</p>
+</li>
+<li><p id = "para-219">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-220">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-221">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-222">250무 지 레이치 모르누</p>
+</li>
+<li><p id = "para-223">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-224">1 오부 바치두 (파라 핀셀라르)</p>
+</li>
+<li><p id = "para-225">1 콜례르 지 소파 지 비카르보나투 지 소지우 (파라 아 솔루상 아우칼리나)</p>
+</li>
+<li><p id = "para-226">1 리트루 지 아구아 (파라 아 솔루상 아우칼리나)</p>
+</li>
+<li><p id = "para-227">사우 그로수 오 플로쿠스 지 사우 (파라 포우빌랴르)</p>
+</li>
+</ul>
+<p id = "para-228">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-229">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 아 파리냐 지 만지오카, 우 사우 이 우 아수카르.</p>
+</li>
+<li><p id = "para-230">아지시오니 우 페르멘투 비올로지쿠 세쿠 아 미스투라 지 파리냐스 이 메샤 벵.</p>
+</li>
+<li><p id = "para-231">데스페지 우 레이치 모르누 이 아 만테이가 데헤치다 나 치젤라 이 미스투리 아테 포르마르 우마 마사 오모제네아. 시 아 마사 이스치베르 무이투 페가조자, 아지시오니 웅 포쿠 마이스 지 파리냐 지 트리구.</p>
+</li>
+<li><p id = "para-232">트란스피라 아 마사 파라 우마 수페르피시 인파리냐다 이 소비-아 포르 아프로시마다멘치 10 미누투스, 오 아테 키 이스테자 리자 이 일라스치카.</p>
+</li>
+<li><p id = "para-233">콜로키 아 마사 잉 우마 치젤라 운타다 콩 올레우 이 쿠브라 콩 웅 파누 우미두. 데이시 데스칸사르 포르 아프로시마다멘치 1 오라 오 아테 도브라르 지 타마뉴.</p>
+</li>
+<li><p id = "para-234">잉쿠안투 아 마사 데스칸사, 프레파리 아 솔루상 아우칼리나 파라 다르 우 사보르 이 아 테스투라 카락테리스치카 두스 프레트제우스. 잉 우마 파넬라 그란지, 페르바 1 리트루 지 아구아 이 아지시오니 우 비카르보나투 지 소지우. 헤제르비.</p>
+</li>
+<li><p id = "para-235">프레-아케사 우 포르누 아 220°크 이 프레파리 우마 아사데이라 콩 파페우 만테이가 오 시우파트.</p>
+</li>
+<li><p id = "para-236">지비다 아 마사 잉 8 아 10 포르송이스 이구아이스 이 모델리 카다 우마 잉 치라스 롱가스 이 피나스. 파사 우 포르마투 지 프레트제우 토르센두 아스 폰타스 이 프레시오난두-아스 나 바지.</p>
+</li>
+<li><p id = "para-237">콩 쿠이다두, 메르굴리 카다 프레트제우 나 솔루상 아우칼리나 켄치 포르 30 세군두스 이 콜로키-우스 나 아사데이라 프레파라다.</p>
+</li>
+<li><p id = "para-238">핀셀리 카다 프레트제우 콩 우 오부 바치두 이 포우빌리 콩 사우 그로수 오 플로쿠스 지 사우.</p>
+</li>
+<li><p id = "para-239">아시 우스 프레트제우스 포르 12 아 15 미누투스, 오 아테 키 이스테장 도라두스 이 코지두스 포르 덴트루.</p>
+</li>
+<li><p id = "para-240">헤치리 우스 프레트제우스 두 포르누 이 데이시 이스프리아르 포르 아우궁스 미누투스 안치스 지 세르비르. 봉 아페치치!</p>
+</li>
+</ol>
+<h2 id = "link-16">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 콘덴세드 미우크 일리 이스플라이닝그 티 스테프스</h2>
+<p id = "para-241">&lt; 헤세이타 지 프레트제우 콩 레이치 콘덴사두:</p>
+<p id = "para-242">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-243">500그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-244">1 콜례르 지 샤 지 사우</p>
+</li>
+<li><p id = "para-245">1 콜례르 지 샤 지 아수카르</p>
+</li>
+<li><p id = "para-246">7그 지 페르멘투 비올로지쿠 세쿠</p>
+</li>
+<li><p id = "para-247">250무 지 레이치 모르누</p>
+</li>
+<li><p id = "para-248">50그 지 만테이가 데헤치다</p>
+</li>
+<li><p id = "para-249">1 오부 파라 핀셀라르</p>
+</li>
+<li><p id = "para-250">100그 지 레이치 콘덴사두</p>
+</li>
+<li><p id = "para-251">1 콜례르 지 소파 지 비카르보나투 지 소지우</p>
+</li>
+<li><p id = "para-252">2 리트루스 지 아구아</p>
+</li>
+</ul>
+<p id = "para-253">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-254">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 우 사우 이 우 아수카르. 헤제르비.</p>
+</li>
+<li><p id = "para-255">잉 오트루 헤시피엔치, 아지시오니 우 레이치 모르누 이 우 페르멘투 비올로지쿠 세쿠. 메샤 벵 이 데이시 데스칸사르 포르 5 미누투스, 아테 키 아 미스투라 코메시 아 페르멘타르 이 포르마르 볼랴스.</p>
+</li>
+<li><p id = "para-256">아지시오니 아 미스투라 지 레이치 이 페르멘투 아우스 잉그레지엔치스 세쿠스, 준타멘치 콩 아 만테이가 데헤치다. 메샤 아테 포르마르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-257">트란스피라 아 마사 파라 우마 수페르피시 레베멘치 인파리냐다 이 소비 포르 아프로시마다멘치 10 미누투스, 아테 키 아 마사 피키 리자 이 일라스치카.</p>
+</li>
+<li><p id = "para-258">쿠브라 아 마사 콩 웅 파누 우미두 이 데이시 데스칸사르 잉 웅 로카우 아케시두 포르 세르카 지 1 오라, 오 아테 도브라르 지 타마뉴.</p>
+</li>
+<li><p id = "para-259">잉쿠안투 아 마사 데스칸사, 프레파리 우마 솔루상 지 비카르보나투 지 소지우 이 아구아: 잉 우마 파넬라 그란지, 페르바 2 리트루스 지 아구아 콩 1 콜례르 지 소파 지 비카르보나투 지 소지우.</p>
+</li>
+<li><p id = "para-260">프레-아케사 우 포르누 아 200°크 이 포히 우마 아사데이라 콩 파페우 만테이가.</p>
+</li>
+<li><p id = "para-261">지비다 아 마사 잉 12 포르송이스 이구아이스 이 모델리 카다 포르상 잉 웅 코르당 지 아프로시마다멘치 50 킁. 파사 웅 노 오 아 트라지시오나우 포르마 지 프레트제우 콩 카다 코르당.</p>
+</li>
+<li><p id = "para-262">메르굴리 카다 프레트제우 나 솔루상 지 비카르보나투 지 소지우 이 아구아 포르 30 세군두스, 잉 세기다, 콜로키-우스 나 아사데이라 포하다 콩 파페우 만테이가.</p>
+</li>
+<li><p id = "para-263">핀셀리 우스 프레트제우스 콩 오부 바치두 이 아시 포르 20 아 25 미누투스, 아테 도라르.</p>
+</li>
+<li><p id = "para-264">헤치리 우스 프레트제우스 두 포르누 이 데이시 이스프리아르 웅 포쿠.</p>
+</li>
+<li><p id = "para-265">아케사 우 레이치 콘덴사두 잉 바뉴-마리아 오 누 미크루-온다스 포르 30 세군두스, 이 데스페지 소브리 우스 프레트제우스.</p>
+</li>
+</ol>
+<p id = "para-266">시르바 세우스 프레트제우스 콩 레이치 콘덴사두 아인다 모르누스 이 데스프루치 지 우마 델리시오자 소브레메자!</p>
+<h2 id = "link-17">콘시데링그 테지 바지 잉그레지엔트스 (캉 비 헤플라세드/아드주스테드/헤모베드), 데타이우 잉 프트-브르 아 프레트제우 헤시피 아징그 모리 잉그레지엔트스 투 티 리스트 잉클루징그 에이 프로테잉 일리 이스플라이닝그 티 스테프스</h2>
+<p id = "para-267">&lt; 헤세이타 지 프레트제우 콩 에이 프로테잉</p>
+<p id = "para-268">잉그레지엔치스:</p>
+<p id = "para-269">500그 지 파리냐 지 트리구 150그 지 파리냐 지 트리구 인테그라우 1 콜례르 지 샤 지 사우 1 콜례르 지 샤 지 아수카르 7그 지 페르멘투 비올로지쿠 세쿠 250무 지 레이치 모르누 50그 지 만테이가 데헤치다 60그 지 에이 프로테잉 사보르 바우닐랴 오 네우트루 1 오부 파라 핀셀라르 1 콜례르 지 소파 지 비카르보나투 지 소지우 1,5 리트루 지 아구아 사우 그로수 오 제르젤링 파라 포우빌랴르 (오프시오나우)</p>
+<p id = "para-270">인스트루송이스:</p>
+<ol>
+<li><p id = "para-271">잉 우마 치젤라 그란지, 미스투리 아 파리냐 지 트리구, 아 파리냐 지 트리구 인테그라우, 우 사우, 우 아수카르 이 우 에이 프로테잉. 헤제르비.</p>
+</li>
+<li><p id = "para-272">지소우바 우 페르멘투 비올로지쿠 세쿠 누 레이치 모르누 이 데이시 데스칸사르 포르 세르카 지 5 미누투스, 아테 키 아 미스투라 코메시 아 이스푸마르.</p>
+</li>
+<li><p id = "para-273">아지시오니 아 만테이가 데헤치다 이 아 미스투라 지 레이치 콩 페르멘투 아우스 잉그레지엔치스 세쿠스. 미스투리 벵 아테 포르마르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-274">트란스피라 아 마사 파라 우마 수페르피시 림파 이 레베멘치 인파리냐다 이 소비 포르 세르카 지 10 미누투스, 아테 키 아 마사 피키 리자 이 일라스치카.</p>
+</li>
+<li><p id = "para-275">파사 우마 볼라 콩 아 마사 이 콜로키-아 잉 우마 치젤라 레베멘치 운타다 콩 올레우. 쿠브라 콩 웅 파누 우미두 이 데이시 데스칸사르 잉 웅 로카우 켄치 포르 세르카 지 1 오라, 오 아테 키 아 마사 도브리 지 타마뉴.</p>
+</li>
+<li><p id = "para-276">잉쿠안투 아 마사 데스칸사, 프레파리 우마 아사데이라 포한두-아 콩 파페우 만테이가 오 웅 타페치 지 실리코니. 헤제르비.</p>
+</li>
+<li><p id = "para-277">아포스 아 마사 데스칸사르, 지비다-아 잉 12 포르송이스 이구아이스. 인홀리 카다 포르상 잉 웅 코르당 콤프리두 이 포르미 우 포르마투 지 웅 프레트제우. 콜로키 우스 프레트제우스 나 아사데이라 프레파라다 이 데이시 데스칸사르 포르 마이스 15 미누투스.</p>
+</li>
+<li><p id = "para-278">프레아케사 우 포르누 아 200°크.</p>
+</li>
+<li><p id = "para-279">잉쿠안투 우스 프레트제우스 데스칸상, 페르바 1,5 리트루 지 아구아 콩 우 비카르보나투 지 소지우 잉 우마 파넬라 그란지. 쿠안두 아 아구아 이스치베르 페르벤두, 메르굴리 카다 프레트제우 나 아구아 포르 세르카 지 30 세군두스. 헤치리-우스 콩 우마 이스쿠마데이라 이 콜로키-우스 지 보우타 나 아사데이라.</p>
+</li>
+<li><p id = "para-280">핀셀리 우스 프레트제우스 콩 오부 바치두 이, 시 데제자르, 포우빌리 콩 사우 그로수 오 제르젤링.</p>
+</li>
+<li><p id = "para-281">아시 우스 프레트제우스 포르 20 아 25 미누투스, 오 아테 키 이스테장 도라두스. 헤치리 두 포르누 이 데이시 이스프리아르 잉 우마 그라지.</p>
+</li>
+</ol>
+<p id = "para-282">아고라 에 소 사보레아르 세우스 델리시오주스 프레트제우스 콩 에이 프로테잉! 에사 헤세이타 에 우마 오치마 오프상 파라 웅 란시 사우다베우 이 히쿠 잉 프로테이나스.</p>
+<h2 id = "link-18">데타이우 티 에아우트 임플리카치옹스 오프 이아칭그 테지 프레트제우스 이베리 다이 포르 아 페 예아르스, 위트 안드 위토트 티 ‘제르젤링’ 스페시피칼리, 투 아날리지 티 세드스 보질리 풍크치옹 콘트리부치옹스</h2>
+<p id = "para-283">&lt; 코메르 프레트제우스 콩 에이 프로테잉 토두스 우스 지아스 포르 아우궁스 아누스 포지 테르 임플리카송이스 나 사우지, 탄투 포지치바스 쿠안투 네가치바스, 데펜덴두 다 쿠안치다지 콘수미다 이 다 지에타 제라우 두 인지비두. 바무스 아날리자르 아스 임플리카송이스 콩 이 셍 제르젤링:</p>
+<p id = "para-284">콩 제르젤링:</p>
+<p id = "para-285">우 제르젤링 에 우마 세멘치 히카 잉 누트리엔치스, 잉클루인두 피브라스, 프로테이나스, 고르두라스 사우다베이스, 비타미나스 이 미네라이스. 아우구마스 다스 프린시파이스 콘트리부이송이스 파라 아 사우지 잉클루엥:</p>
+<ol>
+<li><p id = "para-286">폰치 지 안치오시단치스: 아스 세멘치스 지 제르젤링 상 히카스 잉 안치오시단치스, 코무 세자모우 이 세자미노우, 키 아주당 아 콤바테르 우스 하지카이스 리브리스 이 헤두지르 우 이스트레시 오시다치부 누 코르푸.</p>
+</li>
+<li><p id = "para-287">멜료라 아 사우지 두 코라상: 우 제르젤링 콘텡 고르두라스 인사투라다스, 키 아주당 아 헤두지르 우스 니베이스 지 콜레스테로우 후잉 (르두) 이 아우멘타르 우스 니베이스 지 콜레스테로우 봉 (두), 프로모벤두 아 사우지 카르지오바스쿨라르.</p>
+</li>
+<li><p id = "para-288">콘트리부이 파라 아 사우지 오세아: 우 제르젤링 에 우마 보아 폰치 지 카우시우 이 포스포루, 키 상 이센시아이스 파라 아 마누텐상 이 데젠보우비멘투 지 오수스 사우다베이스.</p>
+</li>
+<li><p id = "para-289">아우실리아 나 지제스탕: 아스 피브라스 프레젠치스 나스 세멘치스 지 제르젤링 포뎅 멜료라르 아 지제스탕 이 프레베니르 아 콘스치파상.</p>
+</li>
+</ol>
+<p id = "para-290">셍 제르젤링:</p>
+<p id = "para-291">임보라 우스 프레트제우스 콩 에이 프로테잉 아인다 세장 우마 오프상 지 란시 마이스 사우다베우 두 키 무이타스 아우테르나치바스, 아 아우젠시아 두 제르젤링 시그니피카 키 보세 페르데라 우스 베네피시우스 이스페시피쿠스 데스타 세멘치. 누 인탄투, 우스 프레트제우스 아인다 포르네세랑 프로테이나스 지 아우타 쿠알리다지 두 에이 이 피브라스 프로베니엔치스 다 파리냐 지 트리구 인테그라우.</p>
+<p id = "para-292">임플리카송이스 제라이스:</p>
+<ol>
+<li><p id = "para-293">콘수무 이세시부 지 칼로리아스: 시 우스 프레트제우스 포렝 콘수미두스 잉 그란지스 쿠안치다지스, 포뎅 레바르 아우 콘수무 이세시부 지 칼로리아스 이, 콘세켄테멘치, 아우 가뉴 지 페주.</p>
+</li>
+<li><p id = "para-294">아우투 테오르 지 소지우: 프레트제우스, 이스페시아우멘치 아켈리스 코베르투스 콩 사우 그로수, 포뎅 테르 웅 아우투 테오르 지 소지우. 콘수미르 무이투 소지우 아우 롱구 두 템푸 포지 아우멘타르 우 히스쿠 지 이페르텐상 이 프로블레마스 카르지오바스쿨라리스.</p>
+</li>
+<li><p id = "para-295">이킬리브리우 누트리시오나우: 코메르 프레트제우스 토두스 우스 지아스 낭 데비 세르 웅 프로블레마, 데즈지 키 파상 파르치 지 우마 지에타 이킬리브라다 이 바리아다, 히카 잉 프루타스, 베제타이스, 프로테이나스 마그라스 이 그랑스 인테그라이스.</p>
+</li>
+</ol>
+<p id = "para-296">에 임포르탄치 렘브라르 키 우스 프레트제우스 데벵 세르 콘수미두스 콩 모데라상 이 코무 파르치 지 우마 지에타 이킬리브라다 이 사우다베우. 잉클루이르 세멘치스 지 제르젤링 포지 아그레가르 베네피시우스 아지시오나이스 아 사우지, 마스, 코무 콩 쿠아우케르 알리멘투, 에 푼다멘타우 만테르 아 바리에다지 이 우 이킬리브리우 나 알리멘타상.</p>
+<h2 id = "link-19">인스테아드 오프 우징그 ‘7그 지 페르멘투 비올로지쿠 세쿠’, ‘7그 지 페르멘투 키미쿠 세쿠’ 와스 미스타켄리 우제드 인스테아드. 아프테르 헤스칭그 포르 1 오르, 티 미스투리 지등’트 이벵 플린시. 데타이우 오 투 사비 프롱 이트스 쿠헨트 스타치</h2>
+<p id = "para-297">&lt; 시 보세 우조 페르멘투 키미쿠 잉 베스 지 페르멘투 비올로지쿠 나 헤세이타 지 프레트제우, 아 마사 헤아우멘치 낭 바이 크레세르, 자 키 우 페르멘투 키미쿠 텡 웅 메카니즈무 지 아상 지페렌치 이 에 마이스 아데쿠아두 파라 볼루스 이 비스코이투스. 누 인탄투, 보세 아인다 포지 사우바르 아 마사 이 파제르 우마 베르상 지페렌치 지 프레트제우, 임보라 아 테스투라 포사 세르 웅 포쿠 지페렌치 다 오리지나우.</p>
+<p id = "para-298">아키 이스탕 우스 파수스 파라 사우바르 아 마사:</p>
+<ol>
+<li><p id = "para-299">아지시오니 7그 지 페르멘투 비올로지쿠 세쿠 아 마사: 지소우바 우 페르멘투 비올로지쿠 잉 아프로시마다멘치 3 콜례리스 지 소파 지 아구아 모르나 이 데이시 데스칸사르 포르 세르카 지 5 미누투스, 아테 키 아 미스투라 코메시 아 이스푸마르. 잉쿠안투 이수, 파사 웅 부라쿠 누 센트루 다 마사. 아포스 우스 5 미누투스, 데스페지 아 미스투라 지 페르멘투 이 아구아 누 부라쿠 이 아마시 벵 아테 잉코르포라르 콤플레타멘치.</p>
+</li>
+<li><p id = "para-300">데이시 아 마사 데스칸사르: 쿠브라 아 마사 콩 웅 파누 우미두 이 데이시 데스칸사르 잉 웅 로카우 켄치 포르 세르카 지 1 오라, 오 아테 키 아 마사 도브리 지 타마뉴.</p>
+</li>
+<li><p id = "para-301">콘치누이 세긴두 아 헤세이타 오리지나우: 우마 베스 키 아 마사 테냐 크레시두, 보세 포지 콘치누아르 콩 우스 파수스 오리지나이스 다 헤세이타, 모델란두 이 코지냔두 우스 프레트제우스 콘포르미 데스크리투.</p>
+</li>
+</ol>
+<p id = "para-302">렘브리-시 지 키 아 테스투라 두스 프레트제우스 포지 세르 웅 포쿠 지페렌치 데비두 아 아지상 이니시아우 두 페르멘투 키미쿠. 누 인탄투, 에사 솔루상 데비 아주다르 아 사우바르 아 마사 이 헤주우타르 잉 프레트제우스 사보로주스, 메즈무 키 아 테스투라 세자 웅 포쿠 아우테라다.</p>
+<h2 id = "link-20">인스테아드 오프 우징그 ‘7그 지 페르멘투 비올로지쿠 세쿠’, ‘7그 지 페르멘투 키미쿠 세쿠’ 와스 미스타켄리 우제드. 아프테르 헤스칭그 포르 1 오르, 티 미스투리 지등’트 이벵 플린시. 데타이우 오 투 사비 프롱 이트스 쿠헨트 스타치 위토트 아징그 모리 페르멘투 안드 와이칭그</h2>
+<p id = "para-303">&lt; 시 보세 아시덴타우멘치 우조 7그 지 페르멘투 키미쿠 세쿠 잉 베스 지 페르멘투 비올로지쿠 세쿠 이 아 마사 낭 크레세우, 우마 포시베우 솔루상 에 트란스포르마르 아 마사 잉 비스코이투스 오 팡이지뉴스, 잉 베스 지 프레트제우스. 코무 우 페르멘투 키미쿠 에 아치바두 펠루 칼로르, 아 마사 아인다 데비 크레세르 웅 포쿠 두란치 우 코지멘투. 시가 우스 파수스 아바이슈 파라 아프로베이타르 아 마사:</p>
+<ol>
+<li><p id = "para-304">프레-아케사 우 포르누 아 180°크.</p>
+</li>
+<li><p id = "para-305">지비다 아 마사 잉 포르송이스 메노리스, 데펜덴두 시 보세 데제자 파제르 비스코이투스 오 팡이지뉴스. 파라 비스코이투스, 파사 페케나스 볼리냐스 아샤타다스 파라 팡이지뉴스, 모델리 포르송이스 마이오리스 잉 포르마투 지 볼리냐.</p>
+</li>
+<li><p id = "para-306">포히 우마 아사데이라 콩 파페우 만테이가 오 웅 타페치 지 실리코니 이 콜로키 아스 포르송이스 지 마사 나 아사데이라, 데이샨두 이스파수 수피시엔치 엔트리 엘라스 파라 페르미치르 아 이스판상 두란치 우 코지멘투.</p>
+</li>
+<li><p id = "para-307">아시 우스 비스코이투스 오 팡이지뉴스 포르 15-20 미누투스, 오 아테 키 이스테장 레베멘치 도라두스 이 코지두스 포르 덴트루. 우 템푸 이자투 포지 바리아르 데펜덴두 두 타마뉴 다스 포르송이스.</p>
+</li>
+<li><p id = "para-308">헤치리 두 포르누 이 데이시 이스프리아르 잉 우마 그라지 안치스 지 세르비르.</p>
+</li>
+</ol>
+<p id = "para-309">임보라 에사 솔루상 낭 헤주우치 잉 프레트제우스 트라지시오나이스, 엘라 페르미치라 키 보세 아프로베이치 아 마사 이 낭 데스페르지시 우스 잉그레지엔치스. 우스 비스코이투스 오 팡이지뉴스 헤주우탄치스 아인다 테랑 우 사보르 두스 잉그레지엔치스 오리지나이스, 마스 아 테스투라 세라 지페렌치 다 이스페라다 파라 우스 프레트제우스.</p>
+<h2 id = "link-21">인스테아드 오프 우징그 ‘7그 지 페르멘투 비올로지쿠 세쿠’, ‘7그 지 페르멘투 키미쿠 세쿠’ 와스 미스타켄리 우제드. 아프테르 헤스칭그 포르 1 오르, 티 미스투리 지등’트 이벵 플린시. 데타이우 오 투 사비 프롱 이트스 쿠헨트 스타치 위토트 아징그 모리 페르멘투 안드 와이칭그, 아징그 콘덴세드 미우크 안드 투르닝그 인투 코키스</h2>
+<p id = "para-310">&lt; 시 보세 우조 7그 지 페르멘투 키미쿠 잉 베스 지 페르멘투 비올로지쿠 세쿠 포르 잉가누, 이 아 마사 낭 크레세우 아포스 데스칸사르 포르 1 오라, 보세 포지 아다프타르 아 헤세이타 이 트란스포르마-라 잉 비스코이투스 콩 레이치 콘덴사두. 아키 이스타 코무 파제르 이수:</p>
+<p id = "para-311">잉그레지엔치스 아지시오나이스:</p>
+<ul>
+<li><p id = "para-312">200그 지 레이치 콘덴사두</p>
+</li>
+<li><p id = "para-313">1 콜례르 지 샤 지 이스트라투 지 바우닐랴 (오프시오나우)</p>
+</li>
+</ul>
+<p id = "para-314">인스트루송이스:</p>
+<ol>
+<li><p id = "para-315">프레-아케사 우 포르누 아 180°크 이 포히 우마 아사데이라 콩 파페우 만테이가 오 웅 타페치 지 실리코니.</p>
+</li>
+<li><p id = "para-316">아지시오니 우 레이치 콘덴사두 이 우 이스트라투 지 바우닐랴 (시 이스치베르 우잔두) 아 마사 키 낭 크레세우. 미스투리 벵 아테 오브테르 우마 마사 오모제네아 이 페가조자. 시 아 마사 이스치베르 무이투 페가조자, 아지시오니 웅 포쿠 마이스 지 파리냐 지 트리구 아테 키 포사 세르 마누제아다.</p>
+</li>
+<li><p id = "para-317">콩 아스 망스 레베멘치 운타다스 콩 올레우, 파사 볼리냐스 콩 아 마사, 두 타마뉴 지 우마 노스. 콜로키 아스 볼리냐스 나 아사데이라 프레파라다, 데이샨두 웅 이스파수 지 세르카 지 2-3 킁 엔트리 엘라스.</p>
+</li>
+<li><p id = "para-318">아샤치 레베멘치 아스 볼리냐스 콩 아 파우마 다 망 오 콩 우 푼두 지 웅 코푸. 시 데제자르, 보세 포지 파제르 웅 파드랑 나 수페르피시 두스 비스코이투스 우잔두 웅 가르푸.</p>
+</li>
+<li><p id = "para-319">아시 우스 비스코이투스 포르 12 아 15 미누투스, 오 아테 키 이스테장 레베멘치 도라두스 나스 보르다스. 쿠이다두 파라 낭 아사르 데마이스, 포이스 엘리스 포뎅 피카르 두루스.</p>
+</li>
+<li><p id = "para-320">헤치리 우스 비스코이투스 두 포르누 이 데이시 이스프리아르 나 아사데이라 포르 세르카 지 5 미누투스 안치스 지 트란스페리-루스 파라 우마 그라지 파라 이스프리아르 콤플레타멘치.</p>
+</li>
+</ol>
+<p id = "para-321">아우 아지시오나르 레이치 콘덴사두 이 트란스포르마르 아 헤세이타 잉 비스코이투스, 보세 이스타라 크리안두 웅 노부 도시 키 포지 세르 아프레시아두 셍 데스페르지사르 아 마사 오리지나우. 에시스 비스코이투스 테랑 웅 사보르 아도시카두 이 우마 테스투라 마시아, 지페렌치 두스 프레트제우스, 마스 아인다 아싱 델리시오주스.</p>
+<p class = "rule">***</p>
+<h2 id = "link-22">테히블리 피르스트 아템프트, 2/10. 리치 아 지세르타치옹 잉 프트-브르 아보트 트로윙그 포드 아와이. (+18)</h2>
+<p id = "para-322">&lt; 치툴루: 데스페르지시우 알리멘타르: 임팍투스 소시아이스, 암비엔타이스 이 솔루송이스 수스텐타베이스</p>
+<p id = "para-323">헤주무:</p>
+<p id = "para-324">우 데스페르지시우 지 알리멘투스 텡 시두 웅 프로블레마 크레센치 누 문두 모데르누, 콩 임플리카송이스 시그니피카치바스 탄투 파라 아 소시에다지 쿠안투 파라 우 메이우 암비엔치. 에스타 지세르타상 이자미나 아스 카우자스 이 콘세켄시아스 두 데스페르지시우 알리멘타르, 벵 코무 아보르다 포시베이스 솔루송이스 파라 미니미자르 에시 프로블레마, 프로모벤두 프라치카스 마이스 수스텐타베이스 이 콘시엔치스 누 콘수무 이 나 프로두상 지 알리멘투스.</p>
+<p id = "para-325">인트로두상:</p>
+<p id = "para-326">우 데스페르지시우 지 알리멘투스 에 우마 케스탕 글로바우 키 아페타 빌룡이스 지 페소아스 이 제라 임팍투스 네가치부스 누 메이우 암비엔치, 나 이코노미아 이 나 소시에다지 코무 웅 토두. 이스치마-시 키 웅 테르수 지 토두스 우스 알리멘투스 프로두지두스 누 문두 에 데스페르지사두, 잉쿠안투 무이타스 페소아스 아인다 인프렌탕 아 인세구란사 알리멘타르 이 아 포미. 네스치 콘테스투, 에 크루시아우 인텐데르 아스 카우자스 두 데스페르지시우 알리멘타르, 세우스 임팍투스 이 부스카르 솔루송이스 파라 콤바테르 에사 케스탕.</p>
+<p id = "para-327">카피툴루 1: 카우자스 두 데스페르지시우 알리멘타르</p>
+<p id = "para-328">1.1 파토리스 쿠우투라이스 이 소시아이스 1.2 이네피시엔시아스 나 카데이아 프로두치바 1.3 폴리치카스 푸블리카스 이나데쿠아다스 1.4 파우타 지 콘시엔치자상 이 이두카상</p>
+<p id = "para-329">카피툴루 2: 임팍투스 두 데스페르지시우 알리멘타르</p>
+<p id = "para-330">2.1 임팍투스 암비엔타이스 2.1.1 이미송이스 지 가지스 지 이페이투 이스투파 2.1.2 우주 지 헤쿠르수스 나투라이스 이 이네르지아 2.1.3 폴루이상 이 콘타미나상 두 솔루 이 다 아구아</p>
+<p id = "para-331">2.2 임팍투스 이코노미쿠스 2.2.1 쿠스투스 파라 프로두토리스 이 콘수미도리스 2.2.2 이네피시엔시아스 누 메르카두 알리멘타르</p>
+<p id = "para-332">2.3 임팍투스 소시아이스 2.3.1 인세구란사 알리멘타르 이 데즈누트리상 2.3.2 데지구아우다지스 이 인주스치사스 소시아이스</p>
+<p id = "para-333">카피툴루 3: 솔루송이스 파라 우 데스페르지시우 알리멘타르</p>
+<p id = "para-334">3.1 헤두상 두 데스페르지시우 나 프로두상 이 지스트리부이상 3.1.1 멜료리아 나 인프라에스트루투라 이 테크놀로지아스 3.1.2 이노바송이스 잉 임발라젱스 이 콘세르바상 3.1.3 폴리치카스 푸블리카스 이 헤굴라멘타송이스</p>
+<p id = "para-335">3.2 무단사스 누 콤포르타멘투 두 콘수미도르 3.2.1 이두카상 이 콘시엔치자상 3.2.2 캄파냐스 이 인센치부스 파라 헤두상 두 데스페르지시우 3.2.3 발로리자상 두 아프로베이타멘투 인테그라우 두스 알리멘투스</p>
+<p id = "para-336">3.3 헤쿠페라상 이 헤지스트리부이상 지 알리멘투스 3.3.1 방쿠스 지 알리멘투스 이 도아상 파라 인스치투이송이스 지 카리다지 3.3.2 프로그라마스 지 알리멘타상 이스콜라르 이 코무니타리아</p>
+<p id = "para-337">콩클루장:</p>
+<p id = "para-338">우 데스페르지시우 지 알리멘투스 에 웅 프로블레마 콤플레슈 키 헤케르 아송이스 코르데나다스 잉 지베르수스 니베이스. 아 프로모상 지 폴리치카스 푸블리카스 이피시엔치스, 아 콘시엔치자상 다 포풀라상 이 아 부스카 포르 솔루송이스 이노바도라스 나 프로두상 이 지스트리부이상 지 알리멘투스 상 푼다멘타이스 파라 인프렌타르 에시 데자피우. 헤두지르 우 데스페르지시우 지 알리멘투스 에 우마 헤스폰사빌리다지 콤파르칠랴다, 이 토두스 우스 세토리스</p>
+<h2 id = "link-23">콘치누이 프롱 헤스폰사빌리다지 콤파르칠랴다, 이 토두스 우스 세토리스... 일리 베잉그 인시지비 아보트 페오플리 우 트리 헤시페스 위토트 크노윙그 오 투 코크</h2>
+<p id = "para-339">&lt; 다 소시에다지 데벵 시 잉가자르 아치바멘치 나 부스카 포르 솔루송이스. 네스치 센치두, 에 임포르탄치 아보르다르 탐벵 우 파페우 두스 인지비두스 키 텐탕 코지냐르 노바스 헤세이타스 셍 테르 이스페리엔시아 오 코녜시멘투 쿨리나리우 수피시엔치, 우 키 포지 레바르 아우 데스페르지시우 지 알리멘투스.</p>
+<p id = "para-340">카피툴루 4: 임팍투 두 데스페르지시우 알리멘타르 나 코지냐 도메스치카</p>
+<p id = "para-341">4.1 아 인플루엔시아 다 미지아 이 다스 헤지스 소시아이스 나 프로모상 지 노바스 헤세이타스 4.2 아 임포르탄시아 다 이두카상 쿨리나리아 이 다 아빌리다지 지 코지냐르 4.3 이스트라테지아스 파라 이비타르 우 데스페르지시우 나 코지냐</p>
+<p id = "para-342">카피툴루 5: 우 파페우 다 이두카상 쿨리나리아 나 헤두상 두 데스페르지시우 알리멘타르</p>
+<p id = "para-343">5.1 데젠보우비멘투 지 아빌리다지스 쿨리나리아스 이 코녜시멘투 소브리 잉그레지엔치스 5.2 아다프타상 지 헤세이타스 이 플라네자멘투 지 헤페이송이스 5.3 아프로베이타멘투 지 소브라스 이 잉그레지엔치스 포쿠 우칠리자두스</p>
+<p id = "para-344">아우 텐타르 노바스 헤세이타스 셍 우 코녜시멘투 아데쿠아두 지 테크니카스 이 잉그레지엔치스, 무이투스 인지비두스 포뎅 아카바르 데스페르지산두 알리멘투스 데비두 아 에후스 지 프레파루, 포르송이스 이세시바스 오 메즈무 포르 낭 사베르 코무 아르마제나르 코헤타멘치 우스 잉그레지엔치스 이 아스 소브라스. 아 포풀라리자상 지 프로그라마스 쿨리나리우스, 인플루엔시아도리스 지지타이스 이 헤세이타스 콤파르칠랴다스 나스 헤지스 소시아이스 포지 레바르 아 웅 아우멘투 누 인테레시 포르 노바스 이스페리엔시아스 가스트로노미카스, 마스 탐벵 포지 콘트리부이르 파라 우 데스페르지시우 쿠안두 아스 페소아스 낭 이스탕 파밀리아리자다스 콩 아스 테크니카스 이 잉그레지엔치스 인보우비두스.</p>
+<p id = "para-345">네스치 콘테스투, 아 이두카상 쿨리나리아 이 우 데젠보우비멘투 지 아빌리다지스 바지카스 지 코지냐 상 푼다멘타이스 파라 헤두지르 우 데스페르지시우 지 알리멘투스 나 코지냐 도메스치카. 아프렌데르 아 아다프타르 헤세이타스, 플라네자르 헤페이송이스 콩 안테세덴시아 이 우칠리자르 지 포르마 인테그라우 우스 잉그레지엔치스 상 프라치카스 키 포뎅 미니미자르 우 데스페르지시우 이 프로모베르 웅 콘수무 마이스 콘시엔치.</p>
+<p id = "para-346">알렝 지수, 우 아프로베이타멘투 지 소브라스 이 우 우주 지 잉그레지엔치스 메누스 콘벤시오나이스 오 포쿠 우칠리자두스 포뎅 아주다르 아 헤두지르 우 데스페르지시우 이 이스판지르 우 헤페르토리우 쿨리나리우 두스 인지비두스. 캄파냐스 이두카치바스 이 프로그라마스 지 카파시타상 잉 쿨리나리아 탐벵 포뎅 세르 임플레멘타두스 파라 인센치바르 아스 페소아스 아 데젠보우베르 아빌리다지스 쿨리나리아스 이 아 아도타르 프라치카스 수스텐타베이스 나 코지냐.</p>
+<p id = "para-347">콩클루장:</p>
+<p id = "para-348">콤바테르 우 데스페르지시우 지 알리멘투스 에 우마 케스탕 키 인보우비 토두스 우스 세토리스 다 소시에다지, 데즈지 아 프로두상 이 지스트리부이상 아테 우 콘수무 피나우. 아 헤스폰사빌리다지 콤파르칠랴다 잉클루이 우 파페우 두스 인지비두스 나 코지냐 도메스치카, 이 아 이두카상 쿨리나리아 에 우마 페하멘타 포데로자 파라 미니미자르 우 데스페르지시우 지 알리멘투스 이 프로모베르 프라치카스 수스텐타베이스. 아우 데젠보우베르 아빌리다지스 쿨리나리아스, 플라네자르 헤페이송이스 이 아프로베이타르 인테그라우멘치 우스 잉그레지엔치스, 에 포시베우 헤두지르 우 임팍투 두 데스페르지시우 지 알리멘투스 누 메이우 암비엔치, 나 이코노미아 이 나 소시에다지.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-24">트란즐라치 푸바 프롱 프트-브르 투 잉-우스 위트 프로페르 이치몰로기</h2>
+<p id = "para-349">&lt; 푸바 이스 아 포르투게지 워르드 (브라질리앙 포르투게지: 푸바) 타트 코메스 프롱 티 아프리캉 테릉 “푼비” 오르 “품부아” 잉 티 킴분두 랑구아지, 스포켕 잉 앙골라. 잉 잉글리즈, 이트 트란즐라치스 투 “코른메아우,” 이시 이스 아 코아르시 플로르 마지 프롱 그론드, 드리에드 코릉 (마이지). 코른메아우 이스 코몬리 우제드 잉 마니 쿠이지니스, 잉클루징그 아메리캉, 브라질리앙, 안드 아프리캉 지지스, 안드 이트 캉 비 우제드 투 마키 바리오스 헤시페스 수시 아스 브레아드, 포히드지, 오르 폴렌타.</p>
+<p id = "para-350">티 이스토리 오프 푸바 안드 코른메아우 캉 비 트라세드 바크 투 티 쿠우치바치옹 오프 마이지, 이시 아스 벵 앙 이센치아우 크로프 잉 티 아메리카스 포르 토잔드스 오프 예아르스. 마이지 와스 피르스트 도메스치카테드 잉 메시쿠 아론드 9,000 예아르스 아구 안드 이벤투알리 스프레아드 트로고트 노르트, 센트라우, 안드 소트 아메리카, 에리 이트 와스 아도프테드 아스 아 스타플리 포드 비 바리오스 인지제노스 쿠우투리스.</p>
+<p id = "para-351">위트 티 아히바우 오프 이우로페앙 콜로니제르스, 이스페시알리 티 포르투게지 안드 스파니즈 잉 티 15트 안드 16트 센투리스, 마이지 와스 인트로두세드 투 이우로피, 아프리카, 안드 아지아. 잉 티 카지 오프 브라지우, 티 포르투게지 콜로니자치옹 안드 티 슬라비 트라지 플라예드 아 시그니피칸트 홀리 잉 티 트란즈미시옹 오프 마이지 안드 티 워르드 “푸바” 투 티 헤지옹.</p>
+<p id = "para-352">아프리캉 슬라베스 우 웨리 포르시블리 브로그트 투 브라지우 비 티 포르투게지 두링그 티 슬라비 트라지 웨리 파밀리아르 위트 시밀라르 그라잉스, 수시 아스 밀레트 안드 소르궁, 이시 테이 우제드 투 마키 지지스 헤젬블링그 토지 마지 위트 코른메아우. 테이 아다프테드 테이르 쿨리나리 테시니케스 투 티 넬리 아바일라블리 마이지, 안드 티 워르드 “푸바” 리켈리 인테레드 티 포르투게지 랑구아지 잉 브라지우 비아 티 아프리캉 랑구아지스 스포켕 비 티 슬라베스.</p>
+<p id = "para-353">아스 티 쿠우치바치옹 오프 마이지 스프레아드 트로고트 브라지우, 이트 베카미 아 스타플리 포드 포르 페오플리 오프 바리오스 이트니크 안드 소시아우 박그론드스. 푸바, 오르 코른메아우, 베카미 앙 이센치아우 잉그레지엔트 잉 브라질리앙 쿠이지니, 우제드 투 마키 아 바리에치 오프 지지스 수시 아스 폴렌타, 코른브레아드, 안드 티 트라지치오나우 지즈 “쿠스쿠스” (코스코스).</p>
+<p id = "para-354">잉 수마리, 티 이스토리 오프 푸바 이스 데플리 인테르트위네드 위트 티 이스토리 오프 마이지 쿠우치바치옹, 티 콜로니자치옹 오프 티 아메리카스, 안드 티 아프리캉 슬라비 트라지. 티 워르드 “푸바” 이트세우프 헤플렉트스 티스 콤플레스 이스토리, 아스 이트 오리지나테드 프롱 앙 아프리캉 랑구아지, 와스 아도프테드 인투 포르투게지 잉 브라지우, 안드 노 헤페르스 투 아 크루시아우 잉그레지엔트 잉 브라질리앙 쿠이지니.</p>
+<h2 id = "link-25">트란즐라치 ‘레이치 니뉴’ 프롱 프트-브르 투 잉-우스 위트 프로페르 이치몰로기 (콘시데링그 브란드 안드 프로둑트)</h2>
+<p id = "para-355">&lt; “레이치 니뉴” 이스 아 브라질리앙 포르투게지 테릉 타트 캉 비 트란즐라테드 투 “네스틀레’스 미우크” 오르 모리 스페시피칼리, “네스틀레’스 미우크 포데르” 잉 잉글리즈. 잉 티스 카지, “레이치” 메앙스 “미우크” 안드 “니뉴” 헤페르스 투 “네스트,” 이시 이스 아소시아테드 위트 티 네스틀레 브란드.</p>
+<p id = "para-356">네스틀레 이스 아 스위스 무우치나치오나우 포드 안드 베베라지 콤파니, 안드 “니뉴” 이스 오니 오프 이트스 프로둑트 리니스, 파르치쿨라를리 포풀라르 잉 브라지우. 티 프로둑트 “레이치 니뉴” 이스 아 포데레드 미우크 타트 이스 오프텡 우제드 잉 바리오스 헤시페스, 수시 아스 데세르트스, 베베라지스, 안드 오테르 지지스.</p>
+<p id = "para-357">티 이치몰로기 오프 “레이치 니뉴” 헤플렉트스 티 콤비나치옹 오프 티 포르투게지 워르드 포르 미우크 (“레이치”) 안드 티 아소시아치옹 위트 티 네스틀레 브란드 트로그 티 워르드 “니뉴” (네스트). 이트 이스 임포르탄트 투 노치 타트 티 테릉 “레이치 니뉴” 이스 오프텡 우제드 콜로키알리 투 헤페르 투 포데레드 미우크 잉 제네라우, 이벵 이프 이트’스 노트 네세사릴리 프롱 티 네스틀레 브란드, 아스 티 브란드 아스 베코미 시노니모스 위트 티 프로둑트 잉 브라지우.</p>
+<p class = "rule">***</p>
+<h2 id = "link-26">리스트 3 헤시페스 잉 프트-브르 오프 코른메아우 카키 토핑그 마지 프롱 콘덴세드 미우크 안드 네스틀레’스 미우크 포데르 우징그 티 메트리크 시스텡</h2>
+<p id = "para-358">1\ 볼루 지 푸바 콩 코베르투라 지 레이치 콘덴사두 이 레이치 잉 포 네스틀레</p>
+<p id = "para-359">잉그레지엔치스 두 볼루:</p>
+<ul>
+<li><p id = "para-360">200그 지 푸바 (파리냐 지 밀류)</p>
+</li>
+<li><p id = "para-361">200그 지 아수카르</p>
+</li>
+<li><p id = "para-362">100그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-363">1 콜례르 (소파) 지 페르멘투 잉 포</p>
+</li>
+<li><p id = "para-364">3 오부스</p>
+</li>
+<li><p id = "para-365">200무 지 레이치</p>
+</li>
+<li><p id = "para-366">100무 지 올레우</p>
+</li>
+</ul>
+<p id = "para-367">잉그레지엔치스 다 코베르투라:</p>
+<ul>
+<li><p id = "para-368">1 라타 지 레이치 콘덴사두 (395그)</p>
+</li>
+<li><p id = "para-369">100그 지 레이치 잉 포 네스틀레</p>
+</li>
+<li><p id = "para-370">50그 지 크레미 지 레이치</p>
+</li>
+</ul>
+<p id = "para-371">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-372">프레아케사 우 포르누 아 180°크. 운치 우마 포르마 콩 만테이가 이 포우빌리 콩 푸바.</p>
+</li>
+<li><p id = "para-373">잉 우마 치젤라, 미스투리 우 푸바, 우 아수카르, 아 파리냐 지 트리구 이 우 페르멘투.</p>
+</li>
+<li><p id = "para-374">아크레센치 우스 오부스, 우 레이치 이 우 올레우. 미스투리 벵 아테 오브테르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-375">데스페지 아 마사 나 포르마 이 레비 아우 포르누 포르 아프로시마다멘치 35 미누투스 오 아테 키 우 팔리투 사이아 림푸.</p>
+</li>
+<li><p id = "para-376">잉쿠안투 우 볼루 아사, 프레파리 아 코베르투라: 잉 우마 파넬라, 미스투리 우 레이치 콘덴사두, 우 레이치 잉 포 이 우 크레미 지 레이치. 코지니 잉 포구 바이슈, 메셴두 셈프리, 아테 잉그로사르.</p>
+</li>
+<li><p id = "para-377">쿠안두 우 볼루 이스치베르 프론투, 헤치리 두 포르누 이 데이시 이스프리아르. 데젠포르미 이 쿠브라 콩 아 코베르투라.</p>
+</li>
+</ol>
+<p id = "para-378">2\ 볼루 지 푸바 크레모주 콩 코베르투라 지 레이치 니뉴</p>
+<p id = "para-379">잉그레지엔치스 두 볼루:</p>
+<ul>
+<li><p id = "para-380">250그 지 푸바 (파리냐 지 밀류)</p>
+</li>
+<li><p id = "para-381">150그 지 아수카르</p>
+</li>
+<li><p id = "para-382">200무 지 레이치</p>
+</li>
+<li><p id = "para-383">3 오부스</p>
+</li>
+<li><p id = "para-384">50그 지 케이주 할라두</p>
+</li>
+<li><p id = "para-385">1 콜례르 (소파) 지 페르멘투 잉 포</p>
+</li>
+</ul>
+<p id = "para-386">잉그레지엔치스 다 코베르투라:</p>
+<ul>
+<li><p id = "para-387">1 라타 지 레이치 콘덴사두 (395그)</p>
+</li>
+<li><p id = "para-388">100그 지 레이치 잉 포 네스틀레</p>
+</li>
+<li><p id = "para-389">100무 지 레이치</p>
+</li>
+<li><p id = "para-390">50그 지 코쿠 할라두</p>
+</li>
+</ul>
+<p id = "para-391">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-392">프레아케사 우 포르누 아 180°크. 운치 우마 포르마 콩 만테이가 이 포우빌리 콩 푸바.</p>
+</li>
+<li><p id = "para-393">잉 우마 치젤라, 미스투리 우 푸바, 우 아수카르, 우 레이치, 우스 오부스, 우 케이주 할라두 이 우 페르멘투.</p>
+</li>
+<li><p id = "para-394">데스페지 아 마사 나 포르마 이 레비 아우 포르누 포르 아프로시마다멘치 40 미누투스 오 아테 키 우 팔리투 사이아 림푸.</p>
+</li>
+<li><p id = "para-395">잉쿠안투 우 볼루 아사, 프레파리 아 코베르투라: 잉 우마 파넬라, 미스투리 우 레이치 콘덴사두, 우 레이치 잉 포, 우 레이치 이 우 코쿠 할라두. 코지니 잉 포구 바이슈, 메셴두 셈프리, 아테 잉그로사르.</p>
+</li>
+<li><p id = "para-396">쿠안두 우 볼루 이스치베르 프론투, 헤치리 두 포르누 이 데이시 이스프리아르. 데젠포르미 이 쿠브라 콩 아 코베르투라.</p>
+</li>
+</ol>
+<p id = "para-397">3\ 볼루 지 푸바 콩 코베르투라 지 브리가데이루 지 레이치 니뉴</p>
+<p id = "para-398">잉그레지엔치스 두 볼루:</p>
+<ul>
+<li><p id = "para-399">250그 지 푸바 (파리냐 지 밀류)</p>
+</li>
+<li><p id = "para-400">150그 지 아수카르</p>
+</li>
+<li><p id = "para-401">100그 지 파리냐 지 트리구</p>
+</li>
+<li><p id = "para-402">1 콜례르 (소파) 지 페르멘투 잉 포</p>
+</li>
+<li><p id = "para-403">3 오부스</p>
+</li>
+<li><p id = "para-404">200무 지 레이치</p>
+</li>
+<li><p id = "para-405">100무 지 올레우</p>
+</li>
+</ul>
+<p id = "para-406">잉그레지엔치스 다 코베르투라:</p>
+<ul>
+<li><p id = "para-407">1 라타 지 레이치 콘덴사두 (395그)</p>
+</li>
+<li><p id = "para-408">100그 지 레이치 잉 포 네스틀레</p>
+</li>
+<li><p id = "para-409">50그 지 만테이가 셍 사우</p>
+</li>
+<li><p id = "para-410">50그 지 크레미 지 레이치</p>
+</li>
+<li><p id = "para-411">그라눌라두 지 쇼콜라치 오 코쿠 할라두 파라 데코라르 (오프시오나우)</p>
+</li>
+</ul>
+<p id = "para-412">모두 지 프레파루:</p>
+<ol>
+<li><p id = "para-413">프레아케사 우 포르누 아 180°크. 운치 우마 포르마 콩 만테이가 이 포우빌리 콩 푸바.</p>
+</li>
+<li><p id = "para-414">잉 우마 치젤라, 미스투리 우 푸바, 우 아수카르, 아 파리냐 지 트리구 이 우 페르멘투.</p>
+</li>
+<li><p id = "para-415">아크레센치 우스 오부스, 우 레이치 이 우 올레우. 미스투리 벵 아테 오브테르 우마 마사 오모제네아.</p>
+</li>
+<li><p id = "para-416">데스페지 아 마사 나 포르마 이 레비 아우 포르누 포르 아프로시마다멘치 35 미누투스 오 아테 키 우 팔리투 사이아 림푸.</p>
+</li>
+<li><p id = "para-417">잉쿠안투 우 볼루 아사, 프레파리 아 코베르투라: 잉 우마 파넬라, 미스투리 우 레이치 콘덴사두, 우 레이치 잉 포 이 아 만테이가. 코지니 잉 포구 바이슈, 메셴두 셈프리, 아테 데즈그루다르 두 푼두 다 파넬라. 데즐리기 우 포구 이 아크레센치 우 크레미 지 레이치, 미스투란두 벵.</p>
+</li>
+<li><p id = "para-418">쿠안두 우 볼루 이스치베르 프론투, 헤치리 두 포르누 이 데이시 이스프리아르. 데젠포르미 이 쿠브라 콩 아 코베르투라 지 브리가데이루 지 레이치 니뉴. 시 데제자르, 데코리 콩 그라눌라두 지 쇼콜라치 오 코쿠 할라두.</p>
+</li>
+</ol>
+<h2 id = "link-27">리스트 3 아콤파니멘트스 포르 수시 카키스 투 마키 이트 모리 오프 아 스투르지 메아우</h2>
+<p id = "para-419">살라다 지 프루타스 우마 살라다 지 프루타스 프레스카스 이 콜로리다스 포지 세르 우마 오치마 오프상 파라 아콤파냐르 우스 볼루스 지 푸바. 알렝 지 프로포르시오나르 웅 콘트라스치 지 사보리스 이 테스투라스, 아 살라다 지 프루타스 아크레센타 누트리엔치스 이 피브라스 아 헤페이상. 이스콜랴 프루타스 다 이스타상 이 코르치-아스 잉 페다수스. 시르바 아 살라다 아우 라두 두 볼루, 오 아테 메즈무 소브리 엘리, 파라 웅 토키 헤프레스칸치 이 누트리치부.</p>
+<p id = "para-420">미스 지 올레아지노자스 이 케이주 웅 미스 지 올레아지노자스, 코무 카스타냐스, 노지스, 아멘도아스 이 아벨랑스, 포지 아크레센타르 크로칸시아 이 사보르 아 헤페이상, 알렝 지 포르네세르 고르두라스 사우다베이스, 프로테이나스 이 피브라스. 케이주스 코무 케이주 미나스, 케이주 코알류 오 케이주 지 카브라, 콤비낭 무이투 벵 콩 우 사보르 두 볼루 지 푸바 이 아주당 아 토르나르 아 헤페이상 마이스 호부스타. 시르바 우 미스 지 올레아지노자스 이 페다수스 지 케이주 아우 라두 두 볼루, 크리안두 우마 콤비나상 사보로자 이 이킬리브라다.</p>
+<p id = "para-421">이오구르치 나투라우 이 그라놀라 이오구르치 나투라우 오 이오구르치 그레구 상 오치마스 오프송이스 파라 아콤파냐르 우스 볼루스 지 푸바. 우 이오구르치 아지시오나 웅 토키 지 크레모지다지 이 프레스코르, 알렝 지 콘트리부이르 콩 프로테이나스 이 카우시우. 파라 토르나르 아 헤페이상 아인다 마이스 누트리치바, 아지시오니 우마 포르상 지 그라놀라, 키 트라라 피브라스, 비타미나스 이 미네라이스. 시르바 우 이오구르치 콩 그라놀라 아우 라두 두 볼루, 페르미친두 키 카다 페소아 시 시르바 지 아코르두 콩 수아스 프레페렌시아스.</p>
+<h2 id = "link-28">콤파리 파르마콜로지칼리 푸바, 코스코스, 마이제나® 안드 폴렌타</h2>
+<p id = "para-422">&lt; 푸바, 코스코스, 마이제나®, 안드 폴렌타 아리 아우 포드 프로둑트스 마지 프롱 그라잉스 오르 그라잉-데리베드 잉그레지엔트스. 일리 테이 마이 사리 소미 시밀라리치스, 테이르 파르마콜로지카우 프로페르치스 캉 지페르 두이 투 테이르 우니키 콤포지치옹스 안드 프로세싱그 메토드스. 에리’스 아 콤파리종 오프 테지 포르 프로둑트스:</p>
+<p id = "para-423">푸바 (코른메아우): 푸바 이스 아 코아르시 플로르 마지 프롱 그론드, 드리에드 코릉 (마이지). 이트 이스 히시 잉 카르보이드라치스, 피베르, 안드 소미 이센치아우 미네라우스 리키 이롱, 징크, 안드 마그네지웅. 코른메아우 아우수 콘타잉스 소미 비타밍스, 파르치쿨라를리 브 비타밍스 수시 아스 티아미니, 니아싱, 안드 폴라치. 티 글리세미크 인데스 오프 코른메아우 캉 바리 데펜징그 옹 티 코아르세네스 오프 티 그린드 안드 프레파라치옹 메토드스, 부트 이트 이스 제네랄리 콘시데레드 모데라치.</p>
+<p id = "para-424">코스코스: 코스코스 이스 마지 프롱 세몰리나, 이시 이스 아 치피 오프 에아트 플로르. 이트 이스 이그 잉 카르보이드라치스 안드 콘타잉스 소미 지에타리 피베르, 프로테잉, 안드 미네라우스 수시 아스 이롱, 마그네지웅, 안드 징크. 코스코스 이스 아우수 아 소르시 오프 브 비타밍스, 파르치쿨라를리 티아미니, 니아싱, 안드 폴라치. 베잉그 아 에아트-바제드 프로둑트, 이트 콘타잉스 글루텡, 이시 캉 비 앙 이수이 포르 페오플리 위트 글루텡 인톨레란시 오르 셀리아크 지제아지. 티 글리세미크 인데스 오프 코스코스 이스 헬라치벨리 이그, 이시 캉 아펙트 블로드 수가르 레베우스.</p>
+<p id = "para-425">마이제나® (코른스타르시): 마이제나® 이스 아 브란드 오프 코른스타르시, 이시 이스 아 헤피네드 스타르시 데리베드 프롱 코릉 (마이지). 코른스타르시 이스 프리마릴리 콤포제드 오프 카르보이드라치스, 스페시피칼리 아밀로지 안드 아밀로펙칭. 이트 이스 아우모스트 푸리 스타르시, 라킹그 잉 비타밍스, 미네라우스, 안드 피베르. 코른스타르시 이스 글루텡-프레이 안드 아스 바리오스 쿨리나리 안드 인두스트리아우 아플리카치옹스 두이 투 이트스 티케닝그 프로페르치스. 이트 아스 아 이그 글리세미크 인데스, 이시 캉 카우지 아 하피드 잉크레아지 잉 블로드 수가르 레베우스.</p>
+<p id = "para-426">폴렌타: 폴렌타 이스 아 지즈 마지 프롱 코른메아우 (푸바) 코케드 위트 와테르 오르 아노테르 리키드, 수시 아스 브로트 오르 미우크. 티 파르마콜로지카우 프로페르치스 오프 폴렌타 아리 시밀라르 투 토지 오프 코른메아우 신시 이트 이스 마지 프롱 티 사미 잉그레지엔트. 폴렌타 이스 아 소르시 오프 카르보이드라치스, 피베르, 안드 소미 이센치아우 미네라우스 안드 비타밍스. 이트스 글리세미크 인데스 캉 바리 데펜징그 옹 티 코아르세네스 오프 티 코른메아우 안드 프레파라치옹 메토드스 부트 이스 제네랄리 콘시데레드 모데라치.</p>
+<p id = "para-427">잉 수마리, 푸바 (코른메아우) 안드 폴렌타 사리 시밀라르 파르마콜로지카우 프로페르치스, 일리 코스코스, 베잉그 에아트-바제드, 아스 지페렌트 누트리치오나우 콘텐트 안드 콘타잉스 글루텡. 마이제나® (코른스타르시) 이스 아 헤피네드 프로둑트 위트 아 이그 글리세미크 인데스 안드 락스 마니 오프 티 누트리엔트스 프레젠트 잉 티 오테르 트레이 프로둑트스.</p>
+<h2 id = "link-29">리스트 잉 프트-브르 10 오테르 크농 우자지스 포르 푸바</h2>
+<p id = "para-428">&lt; 푸바 에 웅 잉그레지엔치 베르사치우 나 쿨리나리아 브라질레이라 이 포지 세르 우자두 잉 지베르사스 헤세이타스. 아키 이스탕 10 우주스 포풀라리스 두 푸바 잉 프라투스 트라지시오나이스 이 콘템포라네우스:</p>
+<ol>
+<li><p id = "para-429">쿠스쿠스 파울리스타 - 웅 프라투 치피쿠 두 이스타두 지 상 파울루, 페이투 콩 푸바, 레구메스, 오부스 이 카르니.</p>
+</li>
+<li><p id = "para-430">볼루 지 푸바 - 웅 볼루 심플리스 이 사보로주 페이투 콩 푸바, 오부스, 레이치 이 아수카르.</p>
+</li>
+<li><p id = "para-431">브로아 지 밀류 - 웅 팡지뉴 헤돈두 페이투 콩 푸바 이 파리냐 지 트리구, 코무멘치 콘수미두 누 카페 다 마냥 오 란시 다 타르지.</p>
+</li>
+<li><p id = "para-432">폴렌타 - 웅 프라투 이탈리아누 포풀라르 누 술 두 브라지우, 페이투 콩 푸바 코지두 이 템페라두 콩 케이주 이 몰류.</p>
+</li>
+<li><p id = "para-433">쿠라우 - 웅 도시 크레모주 페이투 콩 푸바, 레이치, 아수카르 이 카넬라, 제라우멘치 콘수미두 두란치 아스 페스타스 주니나스.</p>
+</li>
+<li><p id = "para-434">파모냐 - 웅 프라투 치피쿠 페이투 콩 밀류 베르지 할라두 이 푸바, 코지두 덴트루 다 프로프리아 팔랴 두 밀류.</p>
+</li>
+<li><p id = "para-435">칸지카 - 웅 도시 페이투 콩 밀류, 레이치, 아수카르 이 카넬라, 코무멘치 세르비두 두란치 페스타스 주니나스.</p>
+</li>
+<li><p id = "para-436">밍가우 지 푸바 - 웅 밍가우 켄치 이 누트리치부 페이투 콩 푸바, 레이치, 아수카르 이 카넬라.</p>
+</li>
+<li><p id = "para-437">파로파 지 푸바 - 우마 파로파 페이타 콩 푸바 토하두 이 템페라두 콩 잉그레지엔치스 코무 세볼라, 알류, 바콩 이 링기사.</p>
+</li>
+<li><p id = "para-438">소파 지 푸바 - 우마 소파 헤콘포르탄치 페이타 콩 푸바, 레구메스 이 카르니, 제라우멘치 세르비다 두란치 우스 메지스 마이스 프리우스.</p>
+</li>
+</ol>
+<p id = "para-439">에시스 상 아페나스 아우궁스 이젬플루스 지 프라투스 키 우칠리장 우 푸바 나 쿨리나리아 브라질레이라. 에 웅 잉그레지엔치 베르사치우 키 포지 세르 잉코르포라두 잉 바리아스 헤세이타스, 탄투 도시스 쿠안투 사우가다스.</p>
+<h2 id = "link-30">리스트 6 잉그레지엔트스 모리 폰다치오나우 탕 푸바 일리 이스플라이닝그 테이르 파르마콜로기</h2>
+<p id = "para-440">&lt; 에리 아리 시스 폰다치오나우 잉그레지엔트스 위트 테이르 파르마콜로지카우 프로페르치스:</p>
+<ol>
+<li><p id = "para-441">사우 (소지웅 실로리지) - 우 사우 에 웅 잉그레지엔치 바지쿠 이 이센시아우 나 쿨리나리아 문지아우. 엘리 에 콤포스투 프린시파우멘치 포르 클로레투 지 소지우 (나쿠) 이 에 우자두 파라 헤아우사르 우 사보르 두스 알리멘투스 이 파라 콘세르바상. 두 폰투 지 비스타 파르마콜로지쿠, 우 사우 에 임포르탄치 파라 아 마누텐상 두 이킬리브리우 지 플루이두스 누 코르푸, 헤굴라상 다 프레상 아르테리아우 이 트란즈미상 지 임푸우수스 네르보주스. 누 인탄투, 우 콘수무 이세시부 지 사우 포지 레바르 아 이페르텐상 이 도엔사스 카르지오바스쿨라리스.</p>
+</li>
+<li><p id = "para-442">아수카르 (사카로지) - 아 사카로지 에 웅 지사카리데우 콤포스투 포르 글리코지 이 프루토지. 에 우자다 코무 아도산치 잉 무이타스 프레파라송이스 쿨리나리아스. 파르마콜로지카멘치, 우 아수카르 에 하피다멘치 메타볼리자두 펠루 코르푸, 포르네센두 이네르지아 인스탄타네아. 우 콘수무 이세시부 지 아수카르 포지 레바르 아 지아베치스, 오베지다지 이 도엔사스 카르지오바스쿨라리스.</p>
+</li>
+<li><p id = "para-443">피멘타 (카프사이시나) - 아 카프사이시나 에 우 콤포스투 아치부 헤스폰사베우 펠루 사보르 피칸치 다스 피멘타스. 파르마콜로지카멘치, 아 카프사이시나 아투아 코무 웅 아나우제지쿠 로카우 이 텡 프로프리에다지스 안치-인플라마토리아스. 알렝 지수, 엘라 포지 이스치물라르 우 메타볼리즈무 이 콘트리부이르 파라 아 페르다 지 페주.</p>
+</li>
+<li><p id = "para-444">알류 (알리웅 사치붕) - 우 알류 에 웅 잉그레지엔치 쿨리나리우 포풀라르 콩 프로프리에다지스 파르마콜로지카스 시그니피카치바스. 콘텡 콤포스투스 지 인쇼프리, 코무 아 알리시나, 키 포수엥 아치비다지 안치미크로비아나, 안치푼지카, 안치오시단치 이 안치-인플라마토리아. 알렝 지수, 우 알류 텡 시두 우자두 파라 헤두지르 우 콜레스테로우 이 아 프레상 아르테리아우.</p>
+</li>
+<li><p id = "para-445">젠지브리 (진지베르 오피시날리) - 우 젠지브리 에 우마 하이스 암플라멘치 우칠리자다 나 쿨리나리아 이 나 메지시나 트라지시오나우. 콘텡 콤포스투스 비오아치부스, 코무 진제로우 이 소가오우, 키 포수엥 프로프리에다지스 안치오시단치스, 안치-인플라마토리아스 이 아나우제지카스. 우 젠지브리 텡 시두 우칠리자두 파라 트라타르 나우제아스, 도리스 이 프로블레마스 지제스치부스.</p>
+</li>
+<li><p id = "para-446">쿠르쿠마 (쿠르쿠마 롱가) - 아 쿠르쿠마 에 우마 이스페시아리아 코뭉 나 쿨리나리아 아지아치카 이 인지아나, 코녜시다 포르 수아 코르 아마렐라 인텐사. 우 프린시파우 콤포스투 비오아치부 다 쿠르쿠마 에 아 쿠르쿠미나, 키 포수이 프로프리에다지스 안치오시단치스, 안치-인플라마토리아스 이 안치칸세리제나스. 아 쿠르쿠마 텡 시두 우자다 나 메지시나 트라지시오나우 파라 트라타르 우마 암플라 가마 지 콘지송이스, 잉클루인두 도리스, 인플라마송이스 이 프로블레마스 지제스치부스.</p>
+</li>
+</ol>
+<p id = "para-447">에 임포르탄치 노타르 키, 임보라 에시스 잉그레지엔치스 포수앙 프로프리에다지스 파르마콜로지카스, 엘리스 상 우자두스 프린시파우멘치 나 쿨리나리아 이 낭 코무 메지카멘투스. 콘수우치 웅 프로피시오나우 지 사우지 안치스 지 우자르 쿠아우케르 잉그레지엔치 파라 핑스 테라페우치쿠스.</p>
+<h2 id = "link-31">이프 앙 이포테치카우 수르비바우 아템프트 오프 콘수밍그 온리 오니 잉그레지엔트 플루스 와테르, 리스트 잉 프트-브르 10 잉그레지엔트스 베테르 탕 푸바 하칭그 테이르 헤플레니즈멘트 0-1000</h2>
+<p id = "para-448">&lt; 에 임포르탄치 이스클라레세르 키 우마 지에타 바제아다 잉 아페나스 웅 잉그레지엔치 낭 에 수스텐타베우 아 롱구 프라주, 포이스 낭 포르네세라 토두스 우스 누트리엔치스 네세사리우스 파라 아 사우지 이 아 소브레비벤시아. 누 인탄투, 아키 이스탕 10 잉그레지엔치스 키 포뎅 세르 콘시데라두스 멜료리스 두 키 우 푸바 잉 웅 세나리우 이포테치쿠 지 소브레비벤시아, 콩 우마 클라시피카상 지 0 아 1000 잉 헬라상 아 수아 카파시다지 지 포르네세르 누트리엔치스:</p>
+<ol>
+<li><p id = "para-449">키노아 (850) - 콘시데라두 웅 “수페랄리멘투”, 아 키노아 에 히카 잉 프로테이나스, 피브라스, 비타미나스 이 미네라이스, 센두 우마 이스콜랴 누트리시오나우멘치 수페리오르 아우 푸바.</p>
+</li>
+<li><p id = "para-450">사우망 (830) - 히쿠 잉 프로테이나스 지 아우타 쿠알리다지, 오메가-3 이 비타미나 드, 우 사우망 에 우마 오프상 누트리치바 잉 우마 지에타 지 소브레비벤시아.</p>
+</li>
+<li><p id = "para-451">렌칠랴 (820) - 아스 렌칠랴스 상 히카스 잉 프로테이나스, 피브라스, 페후 이 오트라스 비타미나스 이 미네라이스, 토르난두-아스 우마 보아 오프상 파라 우마 지에타 지 소브레비벤시아.</p>
+</li>
+<li><p id = "para-452">오부 (810) - 우스 오부스 상 우마 폰치 콤플레타 지 프로테이나스 이 콘텡 비타미나스 이 미네라이스 이센시아이스, 코무 아 비타미나 드 이 아 콜리나.</p>
+</li>
+<li><p id = "para-453">바타타 (800) - 히카스 잉 카르보이드라투스, 피브라스, 비타미나 크 이 아우궁스 미네라이스, 아스 바타타스 포르네셍 우마 폰치 지 이네르지아 수스텐타베우 이 우마 쿠안치다지 하조아베우 지 누트리엔치스 이센시아이스.</p>
+</li>
+<li><p id = "para-454">페이장 (800) - 우스 페이종이스 상 우마 이셀렌치 폰치 지 프로테이나스, 피브라스 이 미네라이스 코무 페후 이 마그네지우, 토르난두-우스 우마 보아 오프상 잉 웅 세나리우 지 소브레비벤시아.</p>
+</li>
+<li><p id = "para-455">아베이아 (790) - 아 아베이아 에 우마 폰치 지 카르보이드라투스 콤플레슈스, 피브라스 이 아우구마스 비타미나스 이 미네라이스, 코무 마그네지우 이 비타미나 브1.</p>
+</li>
+<li><p id = "para-456">아멘도잉 (780) - 우 아멘도잉 포르네시 고르두라스 사우다베이스, 프로테이나스 이 피브라스, 알렝 지 아우구마스 비타미나스 이 미네라이스.</p>
+</li>
+<li><p id = "para-457">이오구르치 (770) - 우 이오구르치 에 우마 폰치 지 프로테이나스, 카우시우, 비타미나스 두 콤플레슈 브 이 프로비오치쿠스, 키 포뎅 아주다르 나 지제스탕 이 나 사우지 두 시스테마 이무놀로지쿠.</p>
+</li>
+<li><p id = "para-458">이스피나프리 (760) - 우 이스피나프리 에 히쿠 잉 비타미나스, 미네라이스 이 안치오시단치스, 코무 비타미나 아, 비타미나 크, 페후 이 카우시우.</p>
+</li>
+<li><p id = "para-459">푸바 (720) - 우 푸바 에 우마 폰치 지 카르보이드라투스 이 포르네시 아우궁스 누트리엔치스, 코무 피브라스, 프로테이나스, 페후 이 비타미나스 두 콤플레슈 브. 누 인탄투, 콤파라두 아 오트루스 잉그레지엔치스 나 리스타, 수아 클라시피카상 에 메노르, 포이스 낭 포르네시 우마 가마 콤플레타 지 누트리엔치스 이센시아이스.</p>
+</li>
+</ol>
+<p id = "para-460">렘브리-시 지 키 에사스 클라시피카송이스 상 아페나스 우마 이스치마치바 이 낭 수브스치투엥 아 오리엔타상 지 웅 프로피시오나우 지 사우지 오 누트리시오니스타. 아 멜료르 이스트라테지아 파라 아 사우지 이 아 소브레비벤시아 에 콘수미르 우마 지에타 이킬리브라다 이 바리아다 키 포르네사 토두스 우스 누트리엔치스 이센시아이스.</p>
+<h2 id = "link-32">데타이우 잉 프트-브르 아우 와이스 투 이스트락트/프로세스 키노아 이스플라이닝그 프로페르 셰미스트리</h2>
+<p id = "para-461">&lt; 아 키노아 (셰노포지웅 키노아) 에 웅 프세우도세레아우 오리지나리우 다 헤지앙 두스 안지스, 나 아메리카 두 술. 엘라 에 아우타멘치 누트리치바, 히카 잉 프로테이나스, 피브라스 이 미네라이스, 이 텡 가냐두 포풀라리다지 코무 웅 알리멘투 사우다베우 잉 토두 우 문두. 이지스텡 바리아스 마네이라스 지 프로세사르 아 키노아 파라 콘수무, 이 아 키미카 데젬페냐 웅 파페우 임포르탄치 네시스 프로세수스.</p>
+<ol>
+<li><p id = "para-462">라바젱 이 헤모상 다 사포니나: 아 키노아 포수이 우마 카마다 이스테르나 키 콘텡 사포니나스, 콤포스투스 키미쿠스 키 텡 웅 사보르 아마르구 이 포뎅 세르 토시쿠스 시 인제리두스 잉 그란지스 쿠안치다지스. 파라 헤모베르 아스 사포니나스, 아 키노아 데비 세르 라바다 잉 아구아 코헨치, 이스프레간두 아스 세멘치스 엔트리 아스 망스 오 우잔두 웅 코아도르 피누. 아 라바젱 헤두스 아 콘센트라상 지 사포니나스, 토르난두 아 키노아 마이스 팔라타베우 이 세구라 파라 콘수무.</p>
+</li>
+<li><p id = "para-463">코지멘투: 아포스 아 라바젱, 아 키노아 포지 세르 코지다 잉 아구아 오 카우두. 두란치 우 코지멘투, 아스 몰레쿨라스 지 아미두 프레젠치스 나 키노아 시 이드라탕 이 젤라치니장, 우 키 레바 아 포르마상 지 우마 테스투라 마시아 이 크레모자. 우 코지멘투 아데쿠아두 탐벵 아우멘타 아 지제스치빌리다지 다스 프로테이나스 이 오트루스 누트리엔치스 프레젠치스 나 키노아.</p>
+</li>
+<li><p id = "para-464">제르미나상: 아 제르미나상 다 키노아 인보우비 아 이메르상 다스 세멘치스 잉 아구아 포르 웅 페리오두 지 템푸, 세기두 펠라 드레나젱 이 우미지피카상 헤굴라르. 아 제르미나상 아치바 인지마스 키 데그라당 우스 콤포스투스 안치누트리시오나이스, 코무 피타투스 이 타니누스, 이 아우멘타 아 지스포니빌리다지 지 누트리엔치스, 코무 프로테이나스 이 비타미나스.</p>
+</li>
+<li><p id = "para-465">프렌사젱 아 프리우 이 이스트라상 지 올레우: 우 올레우 지 키노아 포지 세르 오브치두 포르 프렌사젱 아 프리우 다스 세멘치스, 키 프레제르바 우스 누트리엔치스 이 우스 콤포스투스 비오아치부스 프레젠치스 누 올레우, 코무 우스 아시두스 그라슈스 오메가-3 이 오메가-6 이 아 비타미나 이. 아 프렌사젱 아 프리우 에 웅 메토두 메카니쿠 키 낭 인보우비 칼로르 오 소우벤치스 키미쿠스, 헤주우탄두 잉 웅 올레우 마이스 푸루 이 누트리치부.</p>
+</li>
+<li><p id = "para-466">모아젱 이 프로두상 지 파리냐: 아 키노아 포지 세르 모이다 잉 파리냐 파라 우주 잉 프로두투스 지 파니피카상 이 마사스. 아 파리냐 지 키노아 에 셍 글루텡 이 히카 잉 프로테이나스, 우 키 아 토르나 우마 아우테르나치바 사우다베우 파라 페소아스 콩 도엔사 셀리아카 오 센시빌리다지 아우 글루텡. 아 모아젱 다스 세멘치스 지 키노아 케브라 아스 이스트루투라스 셀룰라리스 이 리베라 우스 콤포넨치스 누트리시오나이스, 파실리탄두 아 지제스탕 이 아 아브소르상 두스 누트리엔치스.</p>
+</li>
+<li><p id = "para-467">이스트라상 지 프로테이나스: 아 키노아 에 우마 폰치 히카 지 프로테이나스 지 아우타 쿠알리다지, 콩 토두스 우스 아미노아시두스 이센시아이스. 아스 프로테이나스 포뎅 세르 이스트라이다스 다 키노아 포르 메이우 지 프로세수스 키미쿠스 이 피지쿠스, 코무 아 솔루빌리자상 잉 솔루송이스 아우칼리나스 오 아시다스, 세기다 펠라 프레시피타상 이 세파라상 다스 프로테이나스. 아스 프로테이나스 이졸라다스 포뎅 세르 우자다스 코무 잉그레지엔치스 푼시오나이스 잉 프로두투스 알리멘치시우스 오 푼시오나이스 잉 프로두투스 알리멘치시우스 오 코무 수플레멘투스 누트리시오나이스. 아 이스트라상 지 프로테이나스 다 키노아 페르미치 아 오브텐상 지 콘센트라두스 프로테이쿠스 키 포뎅 세르 우자두스 파라 인히케세르 알리멘투스 이 데젠보우베르 프로두투스 콩 프로프리에다지스 누트리시오나이스 이 푼시오나이스 이스페시피카스, 코무 프로두투스 파라 아틀레타스, 베제타리아누스, 베가누스 오 페소아스 콩 알레르지아스 이 인톨레란시아스 알리멘타리스.</p>
+</li>
+<li><p id = "para-468">페르멘타상: 아 페르멘타상 다 키노아 인보우비 우 우주 지 미크로르가니즈무스, 코무 박테리아스 이 레베두라스, 키 메타볼리장 우스 아수카리스 이 오트루스 콤포넨치스 다 키노아, 프로두진두 콤포스투스 코무 아시두스 오르가니쿠스, 아우코우 이 가스 카르보니쿠. 아 페르멘타상 포지 멜료라르 아 지제스치빌리다지, 우 발로르 누트리시오나우 이 우 사보르 다 키노아, 알렝 지 프로두지르 알리멘투스 페르멘타두스, 코무 베비다스 프로비오치카스 이 프로두투스 지 파니피카상 페르멘타두스.</p>
+</li>
+<li><p id = "para-469">푸핑그 오 이스트루장: 우 프로세수 지 푸핑그 콘시스치 잉 아케세르 아 키노아 소브 아우타 프레상 이, 잉 세기다, 리베라르 하피다멘치 아 프레상, 파젠두 콩 키 아스 세멘치스 시 이스판당 이 아드키랑 우마 테스투라 크로칸치. 아 이스트루장 에 웅 프로세수 세멜랸치, 누 쿠아우 아 키노아 에 포르사다 아트라베스 지 우마 마트리스 이 코지다 소브 아우타 프레상 이 템페라투라. 암부스 우스 프로세수스 아우테랑 아 이스트루투라 피지카 이 키미카 다 키노아, 멜료란두 아 테스투라, 아 팔라타빌리다지 이 아 지제스치빌리다지 두 프로두투 피나우. 에시스 프로두투스 포뎅 세르 우자두스 잉 세레아이스 마치나이스, 바하스 지 세레아이스 이 스낙스.</p>
+</li>
+</ol>
+<p id = "para-470">잉 헤주무, 이지스텡 바리아스 마네이라스 지 프로세사르 이 이스트라이르 콤포넨치스 다 키노아, 카다 우마 인보우벤두 지페렌치스 아스펙투스 다 키미카 파라 오브테르 프로두투스 피나이스 바리아두스 이 멜료라르 아스 프로프리에다지스 누트리시오나이스 이 푼시오나이스 다 키노아. 아 키노아 에 웅 알리멘투 베르사치우 이 누트리치부 키 포지 세르 우칠리자두 잉 우마 암플라 가마 지 아플리카송이스 쿨리나리아스 이 인두스트리아이스.</p>
+<h2 id = "link-33">데타이우 아 수페르 헤시피 콘타이닝그 키노아 안드 카나비스 콘시데링그 사치에치</h2>
+<p id = "para-471">&lt; 헤세이타 지 살라다 지 키노아 콩 카나비스 이 레구메스 아사두스</p>
+<p id = "para-472">에스타 헤세이타 콤비나 키노아 누트리치바, 레구메스 아사두스 이 올레우 지 카나비스, 헤주우탄두 잉 우마 살라다 사보로자 이 사시안치, 페르페이타 파라 웅 아우모수 오 잔타르 레비.</p>
+<p id = "para-473">잉그레지엔치스:</p>
+<ul>
+<li><p id = "para-474">1 시카라 지 키노아 (라바다 이 이스코히다)</p>
+</li>
+<li><p id = "para-475">2 시카라스 지 아구아</p>
+</li>
+<li><p id = "para-476">1 아보브리냐 메지아 코르타다 잉 쿠부스</p>
+</li>
+<li><p id = "para-477">1 베린젤라 메지아 코르타다 잉 쿠부스</p>
+</li>
+<li><p id = "para-478">1 피멘탕 베르멜류 코르타두 잉 치라스</p>
+</li>
+<li><p id = "para-479">1 피멘탕 아마렐루 코르타두 잉 치라스</p>
+</li>
+<li><p id = "para-480">1 세볼라 호샤 코르타다 잉 파치아스</p>
+</li>
+<li><p id = "para-481">1 덴치 지 알류 피카두</p>
+</li>
+<li><p id = "para-482">3 콜례리스 지 소파 지 아제이치</p>
+</li>
+<li><p id = "para-483">2 콜례리스 지 소파 지 올레우 지 카나비스 (아주스치 아 쿠안치다지 지 아코르두 콩 아 포텐시아 데제자다)</p>
+</li>
+<li><p id = "para-484">1 리망 (수쿠 이 하스파스)</p>
+</li>
+<li><p id = "para-485">사우 이 피멘타-두-헤이누 아 고스투</p>
+</li>
+<li><p id = "para-486">폴랴스 지 만제리캉 프레스쿠 파라 데코라르</p>
+</li>
+</ul>
+<p id = "para-487">인스트루송이스:</p>
+<ol>
+<li><p id = "para-488">코지니 아 키노아: 잉 우마 파넬라 메지아, 콤비니 아 키노아 이 아 아구아. 레비 파라 페르베르, 데포이스 헤두자 우 포구 이 코지니 포르 세르카 지 15 미누투스, 오 아테 키 아 키노아 이스테자 마시아 이 아 아구아 테냐 시두 아브소르비다. 데이시 이스프리아르.</p>
+</li>
+<li><p id = "para-489">프레아케사 우 포르누 아 200°크 (400°프).</p>
+</li>
+<li><p id = "para-490">잉 우마 치젤라 그란지, 미스투리 아 아보브리냐, 베린젤라, 피멘통이스 이 세볼라 호샤. 아지시오니 우 알류 피카두, 2 콜례리스 지 소파 지 아제이치, 사우 이 피멘타-두-헤이누 아 고스투. 메샤 벵 파라 코브리르 토두스 우스 레구메스 콩 아제이치 이 템페루스.</p>
+</li>
+<li><p id = "para-491">이스팔리 우스 레구메스 잉 우마 아사데이라 포하다 콩 파페우 만테이가 이 아시 포르 20-25 미누투스, 오 아테 키 우스 레구메스 이스테장 마시우스 이 레베멘치 도라두스. 데이시 이스프리아르.</p>
+</li>
+<li><p id = "para-492">잉 우마 치젤라 페케나, 미스투리 우 올레우 지 카나비스, 아 콜례르 지 소파 헤스탄치 지 아제이치, 우 수쿠 이 아스 하스파스 지 리망, 사우 이 피멘타-두-헤이누 아 고스투. 에스타 세라 아 비나그레치 지 카나비스.</p>
+</li>
+<li><p id = "para-493">잉 우마 치젤라 그란지, 미스투리 아 키노아 코지다 이 우스 레구메스 아사두스. 헤기 콩 아 비나그레치 지 카나비스 이 미스투리 벵 파라 콤비나르. 아주스치 우스 템페루스 콘포르미 네세사리우.</p>
+</li>
+<li><p id = "para-494">데코리 콩 폴랴스 지 만제리캉 프레스쿠 이 시르바.</p>
+</li>
+</ol>
+<p id = "para-495">아텐상: 아 포텐시아 두 올레우 지 카나비스 포지 바리아르 시그니피카치바멘치. 코메시 콩 우마 쿠안치다지 메노르 이 아주스치 지 아코르두 콩 아 포텐시아 데제자다 이 아 톨레란시아 인지비두아우. 알렝 지수, 셈프리 인포르미 아우스 코멘사이스 키 아 헤세이타 콘텡 카나비스.</p>
+<p id = "para-496">렘브리-시 지 키 아 레지즐라상 소브리 우 우주 지 카나비스 바리아 지 아코르두 콩 아 로칼리다지. 세르치피키-시 지 세기르 아스 레이스 이 헤굴라멘타송이스 로카이스 아우 프레파라르 이 콘수미르 알리멘투스 아 바지 지 카나비스.</p>
+<h2 id = "link-34">데타이우 잉 프트-브르 티 토프 5 베스트/셰아페스트 콘트리스 투 푸르샤지 키노아 (리스트 베스트 시치 안드 아베라지 프리시 잉 브루 포르 티 크그)</h2>
+<p id = "para-497">&lt; 아키 이스탕 우스 싱쿠 멜료리스 이 마이스 바라투스 파이지스 파라 콤프라르 키노아, 콩 아스 멜료리스 시다지스 이 우 프레수 메지우 잉 헤아이스 브라질레이루스 (브루) 포르 킬루:</p>
+<ol>
+<li><p id = "para-498">볼리비아</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-499">멜료르 시다지: 라 파스</p>
+</li>
+<li><p id = "para-500">프레수 메지우: 흐$ 12,00/크그</p>
+</li>
+</ul>
+<ol start = "2">
+<li><p id = "para-501">페루</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-502">멜료르 시다지: 쿠스쿠</p>
+</li>
+<li><p id = "para-503">프레수 메지우: 흐$ 15,00/크그</p>
+</li>
+</ul>
+<ol start = "3">
+<li><p id = "para-504">이쿠아도르</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-505">멜료르 시다지: 키투</p>
+</li>
+<li><p id = "para-506">프레수 메지우: 흐$ 18,00/크그</p>
+</li>
+</ul>
+<ol start = "4">
+<li><p id = "para-507">콜롬비아</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-508">멜료르 시다지: 보고타</p>
+</li>
+<li><p id = "para-509">프레수 메지우: 흐$ 21,00/크그</p>
+</li>
+</ul>
+<ol start = "5">
+<li><p id = "para-510">실리</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-511">멜료르 시다지: 산치아구</p>
+</li>
+<li><p id = "para-512">프레수 메지우: 흐$ 24,00/크그</p>
+</li>
+</ul>
+<ol start = "6">
+<li><p id = "para-513">아르젠치나</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-514">멜료르 시다지: 부에누스 아이리스</p>
+</li>
+<li><p id = "para-515">프레수 메지우: 흐$ 27,00/크그</p>
+</li>
+</ul>
+<ol start = "7">
+<li><p id = "para-516">파라구아이</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-517">멜료르 시다지: 아순상</p>
+</li>
+<li><p id = "para-518">프레수 메지우: 흐$ 30,00/크그</p>
+</li>
+</ul>
+<ol start = "8">
+<li><p id = "para-519">우루구아이</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-520">멜료르 시다지: 몬테비데우</p>
+</li>
+<li><p id = "para-521">프레수 메지우: 흐$ 32,00/크그</p>
+</li>
+</ul>
+<ol start = "9">
+<li><p id = "para-522">메시쿠</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-523">멜료르 시다지: 시다지 두 메시쿠</p>
+</li>
+<li><p id = "para-524">프레수 메지우: 흐$ 35,00/크그</p>
+</li>
+</ul>
+<ol start = "10">
+<li><p id = "para-525">이스타두스 우니두스</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-526">멜료르 시다지: 루스 안젤리스</p>
+</li>
+<li><p id = "para-527">프레수 메지우: 흐$ 40,00/크그</p>
+</li>
+</ul>
+<ol start = "11">
+<li><p id = "para-528">이스파냐</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-529">멜료르 시다지: 마드리</p>
+</li>
+<li><p id = "para-530">프레수 메지우: 흐$ 45,00/크그</p>
+</li>
+</ul>
+<ol start = "12">
+<li><p id = "para-531">포르투가우</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-532">멜료르 시다지: 리즈보아</p>
+</li>
+<li><p id = "para-533">프레수 메지우: 흐$ 48,00/크그</p>
+</li>
+</ul>
+<ol start = "13">
+<li><p id = "para-534">인지아</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-535">멜료르 시다지: 노바 델리</p>
+</li>
+<li><p id = "para-536">프레수 메지우: 흐$ 50,00/크그</p>
+</li>
+</ul>
+<ol start = "14">
+<li><p id = "para-537">시나</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-538">멜료르 시다지: 샹가이</p>
+</li>
+<li><p id = "para-539">프레수 메지우: 흐$ 55,00/크그</p>
+</li>
+</ul>
+<ol start = "15">
+<li><p id = "para-540">아우스트랄리아</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-541">멜료르 시다지: 시드네이</p>
+</li>
+<li><p id = "para-542">프레수 메지우: 흐$ 58,00/크그</p>
+</li>
+</ul>
+<p id = "para-543">우스 프레수스 포뎅 바리아르 콩 바지 나 에포카 두 아누, 지스포니빌리다지 이 쿠알리다지 다 키노아, 알렝 지 타샤스 지 캄비우. 포렝, 에사스 인포르마송이스 오페레셍 우마 비장 제라우 두스 프레수스 메지우스 잉 지페렌치스 파이지스.</p>
+<h2 id = "link-35">프롱 아우 키노아 이스트락치옹스, 이시 라스트스 티 론제스트? 이스플라잉 잉 프트-브르</h2>
+<p id = "para-544">&lt; 덴트리 토두스 우스 치푸스 지 키노아, 아 키노아 잉 그랑 인테이루 에 아 키 텡 아 마이오르 두라빌리다지. 이수 오코히 포르키 아 키노아 인테이라 만텡 수아 카스카 프로테토라, 우 키 아주다 아 프레제르바르 아 쿠알리다지 이 아 비다 우치우 두 프로두투.</p>
+<p id = "para-545">쿠안두 아 키노아 에 프로세사다 잉 오트라스 포르마스, 코무 플로쿠스 오 파리냐, 아 비다 우치우 텐지 아 지미누이르. 이수 아콘테시 포르키 에시스 프로두투스 상 마이스 이스포스투스 아우 오시제니우, 우미다지 이 루스, 우 키 포지 아셀레라르 아 데그라다상 이 헤두지르 수아 비다 우치우.</p>
+<p id = "para-546">파라 아우멘타르 아 두라빌리다지 다 키노아, 인데펜덴테멘치 두 치푸, 아르마제니-아 잉 웅 헤시피엔치 에르메치쿠, 잉 로카우 프레스쿠 이 이스쿠루, 론지 다 우미다지 이 다 루스 솔라르 지레타.</p>
+<h2 id = "link-36">데타이우 티 글리세미크 인데스 프롱 아우 코몽 키노아 이스트락치옹스 잉 프트-브르</h2>
+<p id = "para-547">&lt; 우 인지시 글리세미쿠 (이그) 에 우마 메지다 키 인지카 아 벨로시다지 콩 키 웅 알리멘투 아우멘타 우스 니베이스 지 아수카르 누 상기. 알리멘투스 콩 이그 바이슈 상 마이스 렌투스 파라 세렝 지제리두스 이 아브소르비두스, 아주단두 아 만테르 우스 니베이스 지 아수카르 누 상기 이스타베이스 이 프로포르시오난두 사시에다지 포르 마이스 템푸.</p>
+<p id = "para-548">키노아 에 웅 그랑 키 포수이 웅 이그 제라우멘치 바이슈 아 메지우, 콩 지페렌치스 바리아송이스 데펜덴두 두 치푸 이 두 메토두 지 프레파루. 아키 이스탕 우스 발로리스 아프로시마두스 지 이그 파라 아우구마스 포르마스 코뭉스 지 키노아:</p>
+<ol>
+<li><p id = "para-549">키노아 잉 그랑스 코지다:</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-550">이그: 53 (바이슈)</p>
+</li>
+</ul>
+<ol start = "2">
+<li><p id = "para-551">키노아 잉 플로쿠스:</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-552">이그: 60 (메지우)</p>
+</li>
+</ul>
+<ol start = "3">
+<li><p id = "para-553">파리냐 지 키노아:</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-554">이그: 65 (메지우)</p>
+</li>
+</ul>
+<ol start = "4">
+<li><p id = "para-555">팡 페이투 콩 파리냐 지 키노아 (잉 콤비나상 콩 오트라스 파리냐스):</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-556">이그: 50-70 (바이슈 아 메지우, 데펜덴두 다 콤포지상)</p>
+</li>
+</ul>
+<ol start = "5">
+<li><p id = "para-557">마사스 아 바지 지 키노아:</p>
+</li>
+</ol>
+<ul>
+<li><p id = "para-558">이그: 45-55 (바이슈 아 메지우, 데펜덴두 다 콤포지상)</p>
+</li>
+</ul>
+<p id = "para-559">렘브리-시 지 키 에시스 발로리스 지 이그 상 아프로시마두스 이 포뎅 바리아르 데펜덴두 다 마르카 이 두 메토두 지 프레파루. 알렝 지수, 콤비나르 키노아 콩 알리멘투스 히쿠스 잉 피브라스, 프로테이나스 이 고르두라스 사우다베이스 포지 아주다르 아 지미누이르 아인다 마이스 우 이그 다 헤페이상.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<div class = "table">
+    <table>
+<tr>
+<th>알리멘투</th><th>포르상</th><th>프로테이나</th><th>카르보이드라투스</th><th>고르두라스</th><th>피브라스</th><th>칼로리아스</th><th>% 지 칼로리아스 토타이스</th><th>% 이드르 프로테이나</th><th>% 이드르 카르보이드라투스</th><th>% 이드르 고르두라스</th><th>% 이드르 피브라스</th><th>인지시 지 임포르탄시아</th><th>헬레반시아 지 미크로누트리엔치스</th></tr>
+<tr>
+<td>아퉁 인라타두 잉 아구아</td><td>1 라타</td><td>39그</td><td>0그</td><td>1그</td><td>0그</td><td>179</td><td>8.95%</td><td>75%</td><td>0%</td><td>1.5%</td><td>0%</td><td>아우타</td><td>아우타 (오메가-3, 비트. 드, 셀레니우)</td></tr>
+<tr>
+<td>사르지냐 인라타다</td><td>1 라타</td><td>23그</td><td>0그</td><td>11그</td><td>0그</td><td>191</td><td>9.55%</td><td>44%</td><td>0%</td><td>16%</td><td>0%</td><td>아우타</td><td>아우타 (오메가-3, 비트. 드, 카우시우)</td></tr>
+<tr>
+<td>바하 지 프로테이나</td><td>50그</td><td>20그</td><td>20그</td><td>7그</td><td>5그</td><td>230</td><td>11.5%</td><td>38%</td><td>7%</td><td>10%</td><td>20%</td><td>아우타</td><td>메지아</td></tr>
+<tr>
+<td>제르키</td><td>28그</td><td>9그</td><td>7그</td><td>1그</td><td>0그</td><td>80</td><td>4%</td><td>17%</td><td>2.5%</td><td>1.5%</td><td>0%</td><td>메지아</td><td>바이샤</td></tr>
+<tr>
+<td>팡 인테그라우</td><td>1 파치아</td><td>4그</td><td>15그</td><td>1그</td><td>2그</td><td>80</td><td>4%</td><td>7.5%</td><td>5%</td><td>1.5%</td><td>8%</td><td>메지아</td><td>아우타 (브-비트, 페후, 마그네지우)</td></tr>
+<tr>
+<td>노지스</td><td>28그</td><td>5그</td><td>4그</td><td>18그</td><td>2그</td><td>200</td><td>10%</td><td>9.5%</td><td>1.5%</td><td>27%</td><td>8%</td><td>아우타</td><td>아우타 (오메가-3, 비트. 이, 마그네지우, 코브리)</td></tr>
+<tr>
+<td>세멘치스</td><td>28그</td><td>6그</td><td>7그</td><td>15그</td><td>8그</td><td>200</td><td>10%</td><td>11%</td><td>2.5%</td><td>22%</td><td>32%</td><td>아우타</td><td>아우타 (오메가-3, 마그네지우, 페후, 징쿠)</td></tr>
+<tr>
+<td>만테이가 지 아멘도잉</td><td>2 콜례리스 지 소파</td><td>7그</td><td>6그</td><td>16그</td><td>2그</td><td>180</td><td>9%</td><td>13%</td><td>2%</td><td>23%</td><td>8%</td><td>아우타</td><td>메지아 (브-비트, 마그네지우, 비트. 이)</td></tr>
+<tr>
+<td>아바카치</td><td>1/2 메지우</td><td>2그</td><td>12그</td><td>15그</td><td>10그</td><td>160</td><td>8%</td><td>3.8%</td><td>4%</td><td>22%</td><td>40%</td><td>아우타</td><td>아우타 (비트. 크, 피브라스, 오메가-3)</td></tr>
+<tr>
+<td>바나나</td><td>1 메지아</td><td>1그</td><td>27그</td><td>0그</td><td>3그</td><td>105</td><td>5.25%</td><td>1.9%</td><td>9%</td><td>0%</td><td>12%</td><td>메지아</td><td>아우타 (포타시우, 비트. 크, 브6, 마그네지우)</td></tr>
+<tr>
+<td>마상</td><td>1 메지아</td><td>0그</td><td>25그</td><td>0그</td><td>4그</td><td>95</td><td>4.75%</td><td>0%</td><td>8%</td><td>0%</td><td>16%</td><td>메지아</td><td>아우타 (비트. 크, 포타시우, 피브라스)</td></tr>
+<tr>
+<td>아제이토나스</td><td>30그</td><td>0그</td><td>3그</td><td>3그</td><td>1그</td><td>40</td><td>2%</td><td>0%</td><td>1%</td><td>4.5%</td><td>4%</td><td>바이샤</td><td>메지아 (비트. 이, 페후)</td></tr>
+<tr>
+<td>파리냐 지 아베이아</td><td>1/2 시카라</td><td>5그</td><td>27그</td><td>3그</td><td>4그</td><td>150</td><td>7.5%</td><td>9.5%</td><td>9%</td><td>4.5%</td><td>16%</td><td>아우타</td><td>아우타 (피브라스, 마그네지우, 포스포루)</td></tr>
+<tr>
+<td>이오구르치 그레구 셍 고르두라</td><td>170그</td><td>17그</td><td>6그</td><td>0그</td><td>0그</td><td>100</td><td>5%</td><td>32%</td><td>2%</td><td>0%</td><td>0%</td><td>아우타</td><td>아우타 (카우시우, 프로비오치쿠스, 비트. 브12)</td></tr>
+<tr>
+<td>케이주 코타지</td><td>1/2 시카라</td><td>14그</td><td>6그</td><td>1그</td><td>0그</td><td>80</td><td>4%</td><td>27%</td><td>2%</td><td>1.5%</td><td>0%</td><td>아우타</td><td>아우타 (카우시우, 비트. 브12)</td></tr>
+<tr>
+<td>쇼콜라치 아마르구</td><td>1 바하 (40그)</td><td>2그</td><td>17그</td><td>12그</td><td>3그</td><td>210</td><td>10.5%</td><td>3.8%</td><td>5.7%</td><td>18%</td><td>12%</td><td>메지아</td><td>메지아 (페후, 안치오시단치스)</td></tr>
+<tr>
+<td>레이치 잉 포</td><td>1 콜례르 지 소파</td><td>2그</td><td>12그</td><td>0그</td><td>0그</td><td>60</td><td>3%</td><td>3.8%</td><td>4%</td><td>0%</td><td>0%</td><td>메지아</td><td>아우타 (카우시우, 비트. 드)</td></tr>
+<tr>
+<td>페이장 인라타두</td><td>1/2 시카라</td><td>7그</td><td>20그</td><td>1그</td><td>8그</td><td>110</td><td>5.5%</td><td>13%</td><td>7%</td><td>1.5%</td><td>32%</td><td>아우타</td><td>아우타 (페후, 피브라스, 포타시우)</td></tr>
+<tr>
+<td>이르빌랴스 인라타다스</td><td>1/2 시카라</td><td>4그</td><td>11그</td><td>0그</td><td>4그</td><td>60</td><td>3%</td><td>7.5%</td><td>4%</td><td>0%</td><td>16%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크, 피브라스)</td></tr>
+<tr>
+<td>세레아이스 인테그라이스</td><td>1 시카라</td><td>5그</td><td>25그</td><td>3그</td><td>3그</td><td>160</td><td>8%</td><td>9.5%</td><td>8.3%</td><td>4.5%</td><td>12%</td><td>메지아</td><td>메지아</td></tr>
+<tr>
+<td>그라놀라</td><td>1/2 시카라</td><td>5그</td><td>35그</td><td>7그</td><td>4그</td><td>210</td><td>10.5%</td><td>9.5%</td><td>11.7%</td><td>10.5%</td><td>16%</td><td>메지아</td><td>메지아 (페후, 비트. 이)</td></tr>
+<tr>
+<td>프루타스 세카스</td><td>1/4 시카라</td><td>1그</td><td>30그</td><td>0그</td><td>2그</td><td>120</td><td>6%</td><td>1.9%</td><td>10%</td><td>0%</td><td>8%</td><td>메지아</td><td>아우타 (포타시우, 비트. 크)</td></tr>
+<tr>
+<td>볼라샤스 지 아호스</td><td>1 우니다지</td><td>1그</td><td>7그</td><td>0그</td><td>1그</td><td>35</td><td>1.75%</td><td>1.9%</td><td>2.3%</td><td>0%</td><td>4%</td><td>바이샤</td><td>바이샤</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>알리멘투</th><th>포르상</th><th>프로테이나</th><th>카르보이드라투스</th><th>고르두라스</th><th>피브라스</th><th>칼로리아스</th><th>% 지 칼로리아스 토타이스</th><th>% 이드르 프로테이나</th><th>% 이드르 카르보이드라투스</th><th>% 이드르 고르두라스</th><th>% 이드르 피브라스</th><th>인지시 지 임포르탄시아</th><th>헬레반시아 지 미크로누트리엔치스</th></tr>
+<tr>
+<td>므크도나우드’스 - 비그 마크</td><td>1 산두이시</td><td>25그</td><td>45그</td><td>29그</td><td>3그</td><td>540</td><td>27%</td><td>48%</td><td>15%</td><td>43.5%</td><td>12%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>므크도나우드’스 - 므크누제트스 (10 우니다지스)</td><td>10 우니다지스</td><td>23그</td><td>26그</td><td>28그</td><td>2그</td><td>440</td><td>22%</td><td>44%</td><td>8.7%</td><td>42%</td><td>8%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>므크도나우드’스 - 므시켕</td><td>1 산두이시</td><td>16그</td><td>40그</td><td>16그</td><td>2그</td><td>370</td><td>18.5%</td><td>30.5%</td><td>13.3%</td><td>24%</td><td>8%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>부르제르 킹그 - 오페르</td><td>1 산두이시</td><td>28그</td><td>49그</td><td>40그</td><td>2그</td><td>660</td><td>33%</td><td>53.8%</td><td>16.3%</td><td>60%</td><td>8%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>부르제르 킹그 - 시켕 프리스 (9 우니다지스)</td><td>9 우니다지스</td><td>16그</td><td>26그</td><td>15그</td><td>1그</td><td>290</td><td>14.5%</td><td>30.5%</td><td>8.7%</td><td>22.5%</td><td>4%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>부르제르 킹그 - 브크 스타케르 트리플루</td><td>1 산두이시</td><td>39그</td><td>50그</td><td>69그</td><td>2그</td><td>1030</td><td>51.5%</td><td>74.5%</td><td>16.7%</td><td>103.5%</td><td>8%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>수브와이 - 프랑구 테리야키</td><td>1 산두이시</td><td>36그</td><td>58그</td><td>9그</td><td>5그</td><td>540</td><td>27%</td><td>69.2%</td><td>19.3%</td><td>13.5%</td><td>20%</td><td>아우타</td><td>메지아 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>수브와이 - 이탈리아누</td><td>1 산두이시</td><td>20그</td><td>44그</td><td>18그</td><td>6그</td><td>410</td><td>20.5%</td><td>38.5%</td><td>14.7%</td><td>27%</td><td>24%</td><td>아우타</td><td>메지아 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>크프크 - 바우지 지 프랑구 (6 페다수스)</td><td>6 페다수스</td><td>60그</td><td>18그</td><td>69그</td><td>0그</td><td>930</td><td>46.5%</td><td>115%</td><td>6%</td><td>103.5%</td><td>0%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>크프크 - 산두이시 지 프랑구 크로칸치</td><td>1 산두이시</td><td>23그</td><td>37그</td><td>19그</td><td>2그</td><td>420</td><td>21%</td><td>44%</td><td>12.3%</td><td>28.5%</td><td>8%</td><td>아우타</td><td>바이샤</td></tr>
+<tr>
+<td>아비브’스 - 이스피아 지 카르니</td><td>1 우니다지</td><td>6그</td><td>9그</td><td>5그</td><td>1그</td><td>90</td><td>4.5%</td><td>11.5%</td><td>3%</td><td>7.5%</td><td>4%</td><td>메지아</td><td>메지아</td></tr>
+<tr>
+<td>아비브’스 - 베이루치 지 프랑구</td><td>1 산두이시</td><td>33그</td><td>57그</td><td>33그</td><td>4그</td><td>650</td><td>32.5%</td><td>63.5%</td><td>19%</td><td>49.5%</td><td>16%</td><td>아우타</td><td>메지아</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>알리멘투</th><th>포르상</th><th>프로테이나</th><th>카르보이드라투스</th><th>고르두라스</th><th>피브라스</th><th>칼로리아스</th><th>% 지 칼로리아스 토타이스</th><th>% 이드르 프로테이나</th><th>% 이드르 카르보이드라투스</th><th>% 이드르 고르두라스</th><th>% 이드르 피브라스</th><th>인지시 지 임포르탄시아</th><th>헬레반시아 지 미크로누트리엔치스</th></tr>
+<tr>
+<td>수브와이 - 산두이시 지 아퉁</td><td>1 산두이시</td><td>20그</td><td>44그</td><td>18그</td><td>6그</td><td>480</td><td>24%</td><td>38.5%</td><td>14.7%</td><td>27%</td><td>24%</td><td>아우타</td><td>아우타 (오메가-3, 비트. 드, 셀레니우)</td></tr>
+<tr>
+<td>수브와이 - 산두이시 지 프랑구 테리야키</td><td>1 산두이시</td><td>36그</td><td>58그</td><td>9그</td><td>5그</td><td>540</td><td>27%</td><td>69.2%</td><td>19.3%</td><td>13.5%</td><td>20%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>수브와이 - 살라다 지 프랑구</td><td>1 포르상</td><td>12그</td><td>11그</td><td>2.5그</td><td>3그</td><td>140</td><td>7%</td><td>23%</td><td>3.7%</td><td>3.75%</td><td>12%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>므크도나우드’스 - 살라다 세자르 콩 프랑구 그렐랴두</td><td>1 포르상</td><td>27그</td><td>9그</td><td>8그</td><td>3그</td><td>230</td><td>11.5%</td><td>51.5%</td><td>3%</td><td>12%</td><td>12%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>므크도나우드’스 - 라프 지 프랑구 그렐랴두</td><td>1 우니다지</td><td>24그</td><td>33그</td><td>13그</td><td>3그</td><td>360</td><td>18%</td><td>46%</td><td>11%</td><td>19.5%</td><td>12%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>부르제르 킹그 - 살라다 지 프랑구 그렐랴두</td><td>1 포르상</td><td>25그</td><td>7그</td><td>7그</td><td>3그</td><td>210</td><td>10.5%</td><td>48%</td><td>2.3%</td><td>10.5%</td><td>12%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>아비브’스 - 살라다 지 타불리</td><td>1 포르상</td><td>2그</td><td>30그</td><td>5그</td><td>5그</td><td>150</td><td>7.5%</td><td>3.8%</td><td>10%</td><td>7.5%</td><td>20%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크, 피브라스)</td></tr>
+<tr>
+<td>아비브’스 - 키비 지 포르누</td><td>1 우니다지</td><td>8그</td><td>20그</td><td>7그</td><td>3그</td><td>160</td><td>8%</td><td>15.4%</td><td>6.7%</td><td>10.5%</td><td>12%</td><td>아우타</td><td>아우타 (비트. 브, 징쿠, 페후)</td></tr>
+<tr>
+<td>크프크 - 살라다 지 프랑구 그렐랴두</td><td>1 포르상</td><td>24그</td><td>10그</td><td>6그</td><td>3그</td><td>180</td><td>9%</td><td>46%</td><td>3.3%</td><td>9%</td><td>12%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+<tr>
+<td>피자 우트 - 피자 지 프랑구 콩 헤케이장 (1 파치아)</td><td>1 파치아</td><td>10그</td><td>25그</td><td>9그</td><td>2그</td><td>210</td><td>10.5%</td><td>19.2%</td><td>8.3%</td><td>13.5%</td><td>8%</td><td>아우타</td><td>메지아 (카우시우, 비트. 브12)</td></tr>
+<tr>
+<td>보브’스 - 산두이시 나투라우 지 아퉁</td><td>1 산두이시</td><td>15그</td><td>31그</td><td>8그</td><td>2그</td><td>260</td><td>13%</td><td>28.8%</td><td>10.3%</td><td>12%</td><td>8%</td><td>아우타</td><td>메지아 (오메가-3, 비트. 드, 셀레니우)</td></tr>
+<tr>
+<td>보브’스 - 살라다 지 프랑구 그렐랴두</td><td>1 포르상</td><td>23그</td><td>11그</td><td>4그</td><td>2그</td><td>180</td><td>9%</td><td>44.2%</td><td>3.7%</td><td>6%</td><td>8%</td><td>아우타</td><td>아우타 (비트. 아, 비트. 크)</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>알리멘투</th><th>포르상</th><th>프로테이나</th><th>카르보이드라투스</th><th>고르두라스</th><th>피브라스</th><th>칼로리아스</th><th>% 지 칼로리아스 토타이스</th><th>% 이드르 프로테이나</th><th>% 이드르 카르보이드라투스</th><th>% 이드르 고르두라스</th><th>% 이드르 피브라스</th><th>인지시 지 임포르탄시아</th><th>헬레반시아 지 미크로누트리엔치스</th></tr>
+<tr>
+<td>부르제르 킹그 - 콤부 메가 스타케르 카투피리</td><td>1 콤부</td><td>54그</td><td>135그</td><td>130그</td><td>6그</td><td>2060</td><td>103%</td><td>103.8%</td><td>45%</td><td>195%</td><td>24%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>므크도나우드’스 - 콤부 비그 타스치</td><td>1 콤부</td><td>46그</td><td>114그</td><td>110그</td><td>5그</td><td>1620</td><td>81%</td><td>88.5%</td><td>38%</td><td>165%</td><td>20%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>보브’스 - 콤부 비그 보브 피카냐</td><td>1 콤부</td><td>52그</td><td>130그</td><td>85그</td><td>5그</td><td>1480</td><td>74%</td><td>100%</td><td>43.3%</td><td>127.5%</td><td>20%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>아비브’스 - 콤부 베이루치 지 카르니</td><td>1 콤부</td><td>42그</td><td>120그</td><td>80그</td><td>4그</td><td>1360</td><td>68%</td><td>80.8%</td><td>40%</td><td>120%</td><td>16%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>므크도나우드’스 - 콤부 므크프리타스 메가</td><td>1 콤부</td><td>15그</td><td>115그</td><td>80그</td><td>9그</td><td>1210</td><td>60.5%</td><td>28.8%</td><td>38.3%</td><td>120%</td><td>36%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>수브와이 - 콤부 스테아크 셰다르 크레모주</td><td>1 콤부</td><td>48그</td><td>140그</td><td>50그</td><td>6그</td><td>1180</td><td>59%</td><td>92.3%</td><td>46.7%</td><td>75%</td><td>24%</td><td>메지아</td><td>바이샤</td></tr>
+<tr>
+<td>부르제르 킹그 - 콤부 브크 스타케르 쿠아드</td><td>1 콤부</td><td>62그</td><td>103그</td><td>60그</td><td>6그</td><td>1120</td><td>56%</td><td>119.2%</td><td>34.3%</td><td>90%</td><td>24%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>크프크 - 콤부 바우지 지 프랑구 콩 바타타스</td><td>1 콤부</td><td>54그</td><td>100그</td><td>60그</td><td>5그</td><td>1060</td><td>53%</td><td>103.8%</td><td>33.3%</td><td>90%</td><td>20%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>피자 우트 - 피자 페페로니 (1 피자 그란지)</td><td>8 파치아스</td><td>88그</td><td>208그</td><td>104그</td><td>16그</td><td>2320</td><td>116%</td><td>169.2%</td><td>69.3%</td><td>156%</td><td>64%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>부르제르 킹그 - 콤부 브크 시켕 프리스</td><td>1 콤부</td><td>45그</td><td>100그</td><td>50그</td><td>7그</td><td>960</td><td>48%</td><td>86.5%</td><td>33.3%</td><td>75%</td><td>28%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>므크도나우드’스 - 콤부 므크리브</td><td>1 콤부</td><td>40그</td><td>104그</td><td>48그</td><td>6그</td><td>950</td><td>47.5%</td><td>76.9%</td><td>34.7%</td><td>72%</td><td>24%</td><td>바이샤</td><td>바이샤</td></tr>
+<tr>
+<td>보브’스 - 콤부 셰다르 아우스트랄리아누</td><td>1 콤부</td><td>46그</td><td>91그</td><td>48그</td><td>5그</td><td>920</td><td>46%</td><td>88.5%</td><td>30.3%</td><td>72%</td><td>20%</td><td>바이샤</td><td>바이샤</td></tr>
+
+    </table>
+</div>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

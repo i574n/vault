@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">나타우 샤르트</a></li>
+      <li><a href="#link-2">빔소타리 다자</a></li>
+      <li><a href="#link-3">아즈타카바르가 오프 하지 샤르트</a></li>
+      <li><a href="#link-4">아즈토타리 다자 (콘지치오나우 낙사트라 다자)</a></li>
+      <li><a href="#link-5">칼라샤크라 다자 (프롱 몽 오프 드-1, 아파자비아, 파라마유즈: 83 이르, 데아: 크프, 지바: 지)</a></li>
+      <li><a href="#link-6">몰라 다자 (다자 소윙그 티 호트 오프 이벤트스 - 파스트 카르마)</a></li>
+      <li><a href="#link-7">나라야나 다자 오프 드-1 샤르트 (아 베르사칠리 팔리타 하지 다자)</a></li>
+      <li><a href="#link-8">수다자 (팔리타 다자 소윙그 락스미’스 블레싱그스)</a></li>
+      <li><a href="#link-9">라그나 켄드라지 하지 다자 오프 드-1 (프룩치피카치옹 오프 요가스)</a></li>
+      <li><a href="#link-10">드리그다자 오프 드-1 (헬리지오스 안드 스피리투아우 악치비치스)</a></li>
+      <li><a href="#link-11">솔라 다자 (트로블리스 안드 데아트)</a></li>
+      <li><a href="#link-12">니리아나 솔라 다자 (데아트)</a></li>
+      <li><a href="#link-13">빔소타리 다자 - 트리바지 바리아치옹</a></li>
+      <li><a href="#link-14">요지니 다자 (위트 플라네트스 헤플라싱그 요지니스)</a></li>
+      <li><a href="#link-15">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 콘시데링그 웨스테릉 아스트롤로기 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스</a></li>
+      <li><a href="#link-16">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 콘시데링그 웨스테릉 아스트롤로기 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스 (1)</a></li>
+      <li><a href="#link-17">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 이네아그랑</a></li>
+      <li><a href="#link-18">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 스타르칭그 위트 티 사도 아스펙트스 콘시데링그 웨스테릉 아스트롤로기 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스</a></li>
+      <li><a href="#link-19">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 이네아그랑. 텡 콩클루지 티 웨스테릉 파르트</a></li>
+      <li><a href="#link-20">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 스타르칭그 위트 티 웨스테릉 아스트롤로기 파르트 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스</a></li>
+      <li><a href="#link-21">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-22">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 아우 아스트롤로지스 콘시데링그 티스 비르트 다치 크로스 헤페렌싱그 텡</a></li>
+      <li><a href="#link-23">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</a></li>
+      <li><a href="#link-24">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 아우 아스트롤로지스 콘시데링그 티스 비르트 다치 크로스 헤페렌싱그 텡 (1)</a></li>
+      <li><a href="#link-25">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 아우 아스트롤로지스 콘시데링그 티스 비르트 다치 크로스 헤페렌싱그 텡 안드 텡 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-26">노 데우비 데프 잉 티 지오치자 아스펙트 오프 티 셀레스치아우 플라세멘트스</a></li>
+      <li><a href="#link-27">아니팅그 프롱 티 안시엔트 아스트롤로지스?</a></li>
+      <li><a href="#link-28">아니 헤아징그스 포르 티 샤르트?</a></li>
+      <li><a href="#link-29">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 시네지 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-30">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 노르지크 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-31">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 웨스테릉 안드 베지크 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-32">나타우 샤르트 타블리스</a></li>
+      <li><a href="#link-33">빔소타리 다자 타블리</a></li>
+      <li><a href="#link-34">아즈타카바르가 오프 하지 샤르트 타블리스</a></li>
+      <li><a href="#link-35">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 웨스테릉 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-36">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 웨스테릉 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</a></li>
+      <li><a href="#link-37">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 티 코몽 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-38">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 티 마잉 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</a></li>
+      <li><a href="#link-39">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 티 마잉 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</a></li>
+      <li><a href="#link-40">우지 카우쿨루스 투 베리피 이프 티 타블리스 코헤스폰드 투 티 비르트 샤르트 일리 이스플라이닝그 티 숭 헬라치온지프 잉 티 지페렌트 아스트롤로지스</a></li>
+      <li><a href="#link-41">포르 티스 비르트 샤르트, 데타이우 이트스 헬라치온지프 위트 스코르피우 잉 티 지페렌트 아스트롤로지스</a></li>
+      <li><a href="#link-42">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 웨스테릉 안드 베지크 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</a></li>
+      <li><a href="#link-43">캉 요 카우쿨라치 티 아쿠라치 라이리 아야남사 포르 티스 다타? 우지 티 포르마트 오프 :응:스 (안드 이스플라잉 티 아우테르나치비 포르마트스)</a></li>
+      <li><a href="#link-44">캉 요 카우쿨라치 티 아쿠라치 라이리 아야남사 포르 티스 다타? 우지 티 포르마트 오프 :응:스 (안드 이스플라잉 티 아우테르나치비 포르마트스) (1)</a></li>
+      <li><a href="#link-45">우지 마트 히고르 투 셰크 카우쿨라치옹 포르 라이리 아야남사 프롱 티스 다타 투 리스트 아우 헬레반트 포지치옹스 오프 셀레스치아우 보지스 두링그 티 이작트 비르트 치미 포르 푸르테르 지오치자 헤아징그스</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">나타우 샤르트</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>파라메테르</th><th>발루이</th></tr>
+<tr>
+<td>비르트 치미 (로카우 치미)</td><td>1992-02-25 03:43 (마누알리: 금트-03:00)</td></tr>
+<tr>
+<td>우니베르사우 치미 (우트/금트)</td><td>1992-02-25 06:43</td></tr>
+<tr>
+<td>로카우 시데레아우 치미 (르스트)</td><td>13:53:57</td></tr>
+<tr>
+<td>라치투지</td><td>23° 33’ 28.116’’ 스</td></tr>
+<tr>
+<td>론지투지</td><td>46° 39’ 27.936’’</td></tr>
+<tr>
+<td>라치투지, 론지투지</td><td>(-23.557810, -46.657760) 사우 파울루, 브라지우</td></tr>
+<tr>
+<td>아우치투지</td><td>820.00 메테르스</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>파라메테르</th><th>발루이</th></tr>
+<tr>
+<td>루나르 이르-무</td><td>프라자파치 - 마가</td></tr>
+<tr>
+<td>치티</td><td>크리즈나 아즈타미 (하) (54.84% 레프트)</td></tr>
+<tr>
+<td>베지크 웩다이</td><td>몬다이 (무)</td></tr>
+<tr>
+<td>낙사트라</td><td>아누라다 (사) (37.97% 레프트)</td></tr>
+<tr>
+<td>요가</td><td>아르자나 (수) (96.58% 레프트)</td></tr>
+<tr>
+<td>카라나</td><td>발라바 (무) (9.67% 레프트)</td></tr>
+<tr>
+<td>오라 로르드</td><td>몽 (5 밍 시긍: 아크)</td></tr>
+<tr>
+<td>마아칼라 오라</td><td>몽 (5 밍 시긍: 아크)</td></tr>
+<tr>
+<td>칼라 로르드</td><td>숭 (마아칼라: 숭)</td></tr>
+<tr>
+<td>순히지</td><td>6:02:58 (페브루아리 24)</td></tr>
+<tr>
+<td>순세트</td><td>18:36:37 (페브루아리 24)</td></tr>
+<tr>
+<td>잔마 가치스</td><td>54.1682</td></tr>
+<tr>
+<td>아야남사</td><td>23-43-54.48</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>보지</th><th>론지투지</th><th>낙사트라</th><th>파다</th><th>하지</th><th>나밤사</th></tr>
+<tr>
+<td>라그나</td><td>11 크프 04’ 40.86"</td><td>스하브</td><td>1</td><td>크프</td><td>아르</td></tr>
+<tr>
+<td>숭 - 프크</td><td>12 아크 11’ 05.56"</td><td>사타</td><td>2</td><td>아크</td><td>크프</td></tr>
+<tr>
+<td>몽 - 드크</td><td>11 스크 36’ 16.03"</td><td>아누</td><td>3</td><td>스크</td><td>리</td></tr>
+<tr>
+<td>마르스 - 그크</td><td>11 크프 42’ 15.96"</td><td>스하브</td><td>1</td><td>크프</td><td>아르</td></tr>
+<tr>
+<td>메르쿠리 - 아크</td><td>22 아크 58’ 54.86"</td><td>프바</td><td>1</td><td>아크</td><td>아르</td></tr>
+<tr>
+<td>주피테르 (흐) - 므크</td><td>16 리 25’ 53.21"</td><td>파</td><td>1</td><td>리</td><td>리</td></tr>
+<tr>
+<td>베누스 - 피크</td><td>14 크프 23’ 47.48"</td><td>스하브</td><td>2</td><td>크프</td><td>타</td></tr>
+<tr>
+<td>사투릉 - 암크</td><td>18 크프 36’ 19.82"</td><td>스하브</td><td>3</td><td>크프</td><td>지</td></tr>
+<tr>
+<td>하우 - 브크</td><td>13 스그 08’ 34.21"</td><td>모우</td><td>4</td><td>스그</td><td>킁</td></tr>
+<tr>
+<td>케투</td><td>13 지 08’ 34.21"</td><td>아르드르</td><td>2</td><td>지</td><td>크프</td></tr>
+<tr>
+<td>만지</td><td>24 비 39’ 46.77"</td><td>시트</td><td>1</td><td>비</td><td>리</td></tr>
+<tr>
+<td>굴리카</td><td>10 비 21’ 24.11"</td><td>아스트</td><td>1</td><td>비</td><td>아르</td></tr>
+<tr>
+<td>바바 라그나</td><td>6 크프 17’ 08.00"</td><td>우자</td><td>3</td><td>크프</td><td>아크</td></tr>
+<tr>
+<td>오라 라그나</td><td>1 스그 17’ 40.20"</td><td>모우</td><td>1</td><td>스그</td><td>아르</td></tr>
+<tr>
+<td>가치 라그나</td><td>16 리 19’ 16.81"</td><td>파</td><td>1</td><td>리</td><td>리</td></tr>
+<tr>
+<td>비가치 라그나</td><td>1 피 27’ 19.85"</td><td>프바</td><td>4</td><td>피</td><td>킁</td></tr>
+<tr>
+<td>바르나다 라그나</td><td>11 리 04’ 40.86"</td><td>스와트</td><td>2</td><td>리</td><td>타</td></tr>
+<tr>
+<td>스헤이 라그나</td><td>24 리 23’ 53.78"</td><td>파</td><td>4</td><td>리</td><td>스크</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-2">빔소타리 다자</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th></tr>
+<tr>
+<td>사트</td><td>사트</td><td>1980-05-13</td><td>메르크</td><td>1983-05-17</td><td>케트</td><td>1986-01-24</td><td>벵</td><td>1987-03-04</td><td>숭</td><td>1990-05-04’</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>1991-04-16</td><td>마르스</td><td>1992-11-17</td><td>하</td><td>1993-12-26</td><td>주프</td><td>1996-11-02</td><td></td><td></td></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>1999-05-14</td><td>케트</td><td>2001-10-13</td><td>벵</td><td>2002-10-10</td><td>숭</td><td>2005-08-09</td><td>몽</td><td>2006-06-14</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2007-11-15</td><td>하</td><td>2008-11-11</td><td>주프</td><td>2011-05-29</td><td>사트</td><td>2013-09-06</td><td></td><td></td></tr>
+<tr>
+<td>케트</td><td>케트</td><td>2016-05-13</td><td>벵</td><td>2016-10-12</td><td>숭</td><td>2017-12-11</td><td>몽</td><td>2018-04-16</td><td>마르스</td><td>2018-11-18</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2019-04-13</td><td>주프</td><td>2020-05-01</td><td>사트</td><td>2021-04-06</td><td>메르크</td><td>2022-05-17</td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2023-05-14</td><td>숭</td><td>2026-09-16</td><td>몽</td><td>2027-09-16</td><td>마르스</td><td>2029-05-13</td><td>하</td><td>2030-07-15</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2033-07-15</td><td>사트</td><td>2036-03-13</td><td>메르크</td><td>2039-05-14</td><td>케트</td><td>2042-03-13</td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2043-05-14</td><td>몽</td><td>2043-09-04</td><td>마르스</td><td>2044-03-01</td><td>하</td><td>2044-07-08</td><td>주프</td><td>2045-06-01</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2046-03-19</td><td>메르크</td><td>2047-03-02</td><td>케트</td><td>2048-01-08</td><td>벵</td><td>2048-05-13</td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2049-05-13</td><td>마르스</td><td>2050-03-13</td><td>하</td><td>2050-10-16</td><td>주프</td><td>2052-04-12</td><td>사트</td><td>2053-08-15</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>2055-03-14</td><td>케트</td><td>2056-08-15</td><td>벵</td><td>2057-03-13</td><td>숭</td><td>2058-11-15</td><td></td><td></td></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>2059-05-14</td><td>하</td><td>2059-10-13</td><td>주프</td><td>2060-10-31</td><td>사트</td><td>2061-10-07</td><td>메르크</td><td>2062-11-15</td></tr>
+<tr>
+<td>'</td><td>케트</td><td>2063-11-13</td><td>벵</td><td>2064-04-06</td><td>숭</td><td>2065-06-07</td><td>몽</td><td>2065-10-16</td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2066-05-14</td><td>주프</td><td>2069-01-25</td><td>사트</td><td>2071-06-21</td><td>메르크</td><td>2074-04-25</td><td>케트</td><td>2076-11-15</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2077-12-03</td><td>숭</td><td>2080-12-03</td><td>몽</td><td>2081-10-28</td><td>마르스</td><td>2083-04-25</td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2084-05-13</td><td>사트</td><td>2086-07-03</td><td>메르크</td><td>2089-01-13</td><td>케트</td><td>2091-04-19</td><td>벵</td><td>2092-03-25</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>2094-11-27</td><td>몽</td><td>2095-09-16</td><td>마르스</td><td>2097-01-13</td><td>하</td><td>2097-12-21</td><td></td><td></td></tr>
+
+    </table>
+</div>
+<h2 id = "link-3">아즈타카바르가 오프 하지 샤르트</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>소디아 핀다</th><th>하지 핀다</th><th>그라아 핀다</th></tr>
+<tr>
+<td>라그나</td><td>153</td><td>93</td><td>60</td></tr>
+<tr>
+<td>숭</td><td>183</td><td>88</td><td>95</td></tr>
+<tr>
+<td>몽</td><td>205</td><td>160</td><td>45</td></tr>
+<tr>
+<td>마르스</td><td>195</td><td>95</td><td>100</td></tr>
+<tr>
+<td>메르쿠리</td><td>277</td><td>112</td><td>165</td></tr>
+<tr>
+<td>주피테르</td><td>79</td><td>59</td><td>20</td></tr>
+<tr>
+<td>베누스</td><td>101</td><td>86</td><td>15</td></tr>
+<tr>
+<td>사투릉</td><td>165</td><td>125</td><td>40</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>오지</th><th>바바 발라</th><th>잉 후파스</th><th>로르드’스 발라</th><th>지그발라</th><th>드리그발라</th></tr>
+<tr>
+<td>1스트</td><td>392.78</td><td>6.55</td><td>348.39</td><td>30.00</td><td>14.39</td></tr>
+<tr>
+<td>2느드</td><td>458.80</td><td>7.65</td><td>348.39</td><td>50.00</td><td>60.41</td></tr>
+<tr>
+<td>3흐드</td><td>537.10</td><td>8.95</td><td>443.43</td><td>50.00</td><td>43.67</td></tr>
+<tr>
+<td>4트</td><td>463.11</td><td>7.72</td><td>416.75</td><td>0.00</td><td>46.36</td></tr>
+<tr>
+<td>5트</td><td>467.47</td><td>7.79</td><td>405.76</td><td>10.00</td><td>51.71</td></tr>
+<tr>
+<td>6트</td><td>482.17</td><td>8.04</td><td>431.08</td><td>10.00</td><td>41.10</td></tr>
+<tr>
+<td>7트</td><td>548.98</td><td>9.15</td><td>512.36</td><td>30.00</td><td>6.61</td></tr>
+<tr>
+<td>8트</td><td>399.45</td><td>6.66</td><td>349.41</td><td>40.00</td><td>10.04</td></tr>
+<tr>
+<td>9트</td><td>482.52</td><td>8.04</td><td>431.08</td><td>20.00</td><td>31.45</td></tr>
+<tr>
+<td>10트</td><td>463.62</td><td>7.73</td><td>405.76</td><td>30.00</td><td>27.86</td></tr>
+<tr>
+<td>11트</td><td>490.04</td><td>8.17</td><td>416.75</td><td>20.00</td><td>53.28</td></tr>
+<tr>
+<td>12트</td><td>556.57</td><td>9.28</td><td>443.43</td><td>50.00</td><td>63.14</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>사드발라</th><th>잉 후파스</th><th>% 스트렝그트</th><th>이즈타팔라</th><th>카즈타팔라</th></tr>
+<tr>
+<td>숭</td><td>349.41</td><td>5.82</td><td>116.47</td><td>29.75</td><td>27.16</td></tr>
+<tr>
+<td>몽</td><td>512.36</td><td>8.54</td><td>142.32</td><td>9.31</td><td>41.27</td></tr>
+<tr>
+<td>마르스</td><td>416.75</td><td>6.95</td><td>138.92</td><td>25.52</td><td>16.16</td></tr>
+<tr>
+<td>메르쿠리</td><td>431.08</td><td>7.18</td><td>102.64</td><td>13.18</td><td>43.74</td></tr>
+<tr>
+<td>주피테르</td><td>443.43</td><td>7.39</td><td>113.70</td><td>52.01</td><td>4.45</td></tr>
+<tr>
+<td>베누스</td><td>405.76</td><td>6.76</td><td>122.96</td><td>24.37</td><td>32.41</td></tr>
+<tr>
+<td>사투릉</td><td>348.39</td><td>5.81</td><td>116.13</td><td>15.08</td><td>39.39</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>바이제지캄사스</th><th>다자 바르가 (10)</th><th>소다자 바르가 (16)</th></tr>
+<tr>
+<td>숭</td><td>'</td><td>4-나가푸루자</td></tr>
+<tr>
+<td>몽</td><td>2-파리자타</td><td>3-쿠주마</td></tr>
+<tr>
+<td>마르스</td><td>3-우타마</td><td>7-카우파브릭사</td></tr>
+<tr>
+<td>메르쿠리</td><td>2-파리자타</td><td>4-나가푸루자</td></tr>
+<tr>
+<td>주피테르</td><td>2-파리자타</td><td>2-베다카</td></tr>
+<tr>
+<td>베누스</td><td>5-심아자나</td><td>6-케랄라</td></tr>
+<tr>
+<td>사투릉</td><td>4-고푸라</td><td>5-칸두카</td></tr>
+<tr>
+<td>하우</td><td>'</td><td>3-쿠주마</td></tr>
+<tr>
+<td>케투</td><td>2-파리자타</td><td>2-베다카</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>빔소파카</th><th>다자 바르가 (10)</th><th>소다자 바르가 (16)</th><th>사프타 바르가 (7)</th><th>사드 바르가 (6)</th></tr>
+<tr>
+<td>숭</td><td>8.90 (44.50%)</td><td>9.18 (45.88%)</td><td>9.05 (45.25%)</td><td>8.65 (43.25%)</td></tr>
+<tr>
+<td>몽</td><td>13.38 (66.88%)</td><td>12.05 (60.25%)</td><td>15.05 (75.25%)</td><td>13.65 (68.25%)</td></tr>
+<tr>
+<td>마르스</td><td>12.17 (60.87%)</td><td>13.15 (65.75%)</td><td>12.18 (60.88%)</td><td>12.50 (62.50%)</td></tr>
+<tr>
+<td>메르쿠리</td><td>13.05 (65.25%)</td><td>12.50 (62.50%)</td><td>11.45 (57.25%)</td><td>11.45 (57.25%)</td></tr>
+<tr>
+<td>주피테르</td><td>12.63 (63.13%)</td><td>11.30 (56.50%)</td><td>12.73 (63.63%)</td><td>12.70 (63.50%)</td></tr>
+<tr>
+<td>베누스</td><td>15.88 (79.38%)</td><td>15.30 (76.50%)</td><td>13.45 (67.25%)</td><td>14.45 (72.25%)</td></tr>
+<tr>
+<td>사투릉</td><td>16.70 (83.50%)</td><td>16.23 (81.13%)</td><td>14.80 (74.00%)</td><td>16.05 (80.25%)</td></tr>
+<tr>
+<td>하우</td><td>8.57 (42.88%)</td><td>8.63 (43.13%)</td><td>10.10 (50.50%)</td><td>9.25 (46.25%)</td></tr>
+<tr>
+<td>케투</td><td>7.93 (39.63%)</td><td>7.82 (39.13%)</td><td>7.58 (37.88%)</td><td>7.95 (39.75%)</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>악치비치</th></tr>
+<tr>
+<td>숭</td><td>느히치알리프사 (데지로스 오프 단싱그)</td></tr>
+<tr>
+<td>몽</td><td>우파베자나 (시칭그)</td></tr>
+<tr>
+<td>마르스</td><td>느히치알리프사 (데지로스 오프 단싱그)</td></tr>
+<tr>
+<td>메르쿠리</td><td>우파베자나 (시칭그)</td></tr>
+<tr>
+<td>주피테르</td><td>보자나 (이아칭그)</td></tr>
+<tr>
+<td>베누스</td><td>느히치알리프사 (데지로스 오프 단싱그)</td></tr>
+<tr>
+<td>사투릉</td><td>느히치알리프사 (데지로스 오프 단싱그)</td></tr>
+<tr>
+<td>하우</td><td>아가마나 (코밍그)</td></tr>
+<tr>
+<td>케투</td><td>느히치알리프사 (데지로스 오프 단싱그)</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>아지</th><th>알레르트네스 (드-1)</th><th>모드 (드-1)</th></tr>
+<tr>
+<td>숭</td><td>유바 (용그)</td><td>수주프타 (아즐레프)</td><td>데나 (사드), 칼라 (미스시에보스)</td></tr>
+<tr>
+<td>몽</td><td>브리다 (오우드)</td><td>스와프나 (드레아밍그)</td><td>산타 (페아세풀), 칼라 (미스시에보스)</td></tr>
+<tr>
+<td>마르스</td><td>브리다 (오우드)</td><td>자그리타 (아와키)</td><td>데프타 (글로윙그), 두키타 (지스트레세드), 칼라 (미스시에보스), 가르비타 (프로드)</td></tr>
+<tr>
+<td>메르쿠리</td><td>브리다 (오우드)</td><td>스와프나 (드레아밍그)</td><td>산타 (페아세풀), 칼라 (미스시에보스)</td></tr>
+<tr>
+<td>주피테르</td><td>유바 (용그)</td><td>스와프나 (드레아밍그)</td><td>데나 (사드), 칼라 (미스시에보스)</td></tr>
+<tr>
+<td>베누스</td><td>유바 (용그)</td><td>스와프나 (드레아밍그)</td><td>데나 (사드), 비칼라 (크리플레드), 칼라 (미스시에보스)</td></tr>
+<tr>
+<td>사투릉</td><td>쿠마라 (아돌레센트)</td><td>자그리타 (아와키)</td><td>스와스타 (콤포르타블리), 칼라 (미스시에보스)</td></tr>
+<tr>
+<td>하우</td><td>유바 (용그)</td><td>스와프나 (드레아밍그)</td><td>두키타 (지스트레세드)</td></tr>
+<tr>
+<td>케투</td><td>유바 (용그)</td><td>스와프나 (드레아밍그)</td><td>두키타 (지스트레세드)</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-4">아즈토타리 다자 (콘지치오나우 낙사트라 다자)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>1988-08-23</td><td>사트</td><td>1991-04-24</td><td>주프</td><td>1992-11-22</td><td>하</td><td>1995-11-19</td><td>벵</td><td>1997-10-10</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>2001-01-26</td><td>몽</td><td>2002-01-07</td><td>마르스</td><td>2004-05-17</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>사트</td><td>사트</td><td>2005-08-23</td><td>주프</td><td>2006-07-26</td><td>하</td><td>2008-04-27</td><td>벵</td><td>2009-06-07</td><td>숭</td><td>2011-05-18</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>2011-12-09</td><td>마르스</td><td>2013-04-27</td><td>메르크</td><td>2014-01-24</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2015-08-24</td><td>하</td><td>2018-12-25</td><td>벵</td><td>2021-02-02</td><td>숭</td><td>2024-10-16</td><td>몽</td><td>2025-11-06</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2028-06-25</td><td>메르크</td><td>2029-11-22</td><td>사트</td><td>2032-11-19</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2034-08-23</td><td>벵</td><td>2035-12-22</td><td>숭</td><td>2038-04-20</td><td>몽</td><td>2038-12-22</td><td>마르스</td><td>2040-08-23</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>2041-07-12</td><td>사트</td><td>2043-06-01</td><td>주프</td><td>2044-07-12</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2046-08-24</td><td>숭</td><td>2050-09-23</td><td>몽</td><td>2051-11-23</td><td>마르스</td><td>2054-10-24</td><td>메르크</td><td>2056-05-11</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2059-09-03</td><td>주프</td><td>2061-08-13</td><td>하</td><td>2065-04-20</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2067-08-24</td><td>몽</td><td>2067-12-23</td><td>마르스</td><td>2068-10-23</td><td>메르크</td><td>2069-03-31</td><td>사트</td><td>2070-03-11</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2070-10-04</td><td>하</td><td>2071-10-24</td><td>벵</td><td>2072-06-21</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2073-08-23</td><td>마르스</td><td>2075-09-24</td><td>메르크</td><td>2076-11-03</td><td>사트</td><td>2079-03-11</td><td>주프</td><td>2080-08-02</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2083-03-22</td><td>벵</td><td>2084-11-22</td><td>숭</td><td>2087-10-24</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>2088-08-23</td><td>메르크</td><td>2089-03-24</td><td>사트</td><td>2090-06-29</td><td>주프</td><td>2091-03-25</td><td>하</td><td>2092-08-23</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2093-07-13</td><td>숭</td><td>2095-01-31</td><td>몽</td><td>2095-07-13</td><td></td><td></td><td></td><td></td></tr>
+
+    </table>
+</div>
+<h2 id = "link-5">칼라샤크라 다자 (프롱 몽 오프 드-1, 아파자비아, 파라마유즈: 83 이르, 데아: 크프, 지바: 지)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>타</td><td>지</td><td>1984-06-14</td><td>리</td><td>1986-02-22</td><td>킁</td><td>1987-02-01</td><td>비</td><td>1991-01-15</td><td>리</td><td>1992-09-27</td></tr>
+<tr>
+<td>'</td><td>스크</td><td>1995-10-02</td><td>피</td><td>1997-01-23</td><td>아크</td><td>1998-12-13</td><td>크프</td><td>1999-09-15</td><td></td><td></td></tr>
+<tr>
+<td>아르</td><td>스그</td><td>2000-06-14</td><td>스크</td><td>2001-02-23</td><td>리</td><td>2001-08-24</td><td>비</td><td>2002-10-08</td><td>리</td><td>2003-05-23</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2003-10-01</td><td>지</td><td>2005-03-17</td><td>타</td><td>2005-11-06</td><td>아르</td><td>2006-12-19</td><td></td><td></td></tr>
+<tr>
+<td>피</td><td>피</td><td>2007-06-14</td><td>아크</td><td>2008-08-14</td><td>크프</td><td>2009-01-29</td><td>스그</td><td>2009-07-19</td><td>스크</td><td>2010-09-18</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2011-07-11</td><td>비</td><td>2013-05-19</td><td>리</td><td>2014-06-05</td><td>킁</td><td>2015-01-05</td><td></td><td></td></tr>
+<tr>
+<td>아크</td><td>지</td><td>2017-06-14</td><td>타</td><td>2017-11-21</td><td>아르</td><td>2018-08-30</td><td>스그</td><td>2018-12-30</td><td>크프</td><td>2019-06-24</td></tr>
+<tr>
+<td>'</td><td>아크</td><td>2019-09-04</td><td>피</td><td>2019-11-13</td><td>아르</td><td>2020-05-04</td><td>타</td><td>2020-09-08</td><td></td><td></td></tr>
+<tr>
+<td>크프</td><td>지</td><td>2021-06-14</td><td>리</td><td>2021-11-18</td><td>킁</td><td>2022-02-09</td><td>비</td><td>2023-02-05</td><td>리</td><td>2023-07-11</td></tr>
+<tr>
+<td>'</td><td>스크</td><td>2024-04-09</td><td>피</td><td>2024-08-10</td><td>아크</td><td>2025-01-27</td><td>크프</td><td>2025-04-05</td><td></td><td></td></tr>
+<tr>
+<td>스그</td><td>스그</td><td>2025-06-14</td><td>스크</td><td>2026-06-14</td><td>리</td><td>2027-02-24</td><td>비</td><td>2028-10-04</td><td>리</td><td>2029-08-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2030-02-24</td><td>지</td><td>2032-04-01</td><td>타</td><td>2033-02-24</td><td>아르</td><td>2034-10-05</td><td></td><td></td></tr>
+<tr>
+<td>아르</td><td>아르</td><td>2035-06-15</td><td>타</td><td>2035-12-12</td><td>지</td><td>2037-01-23</td><td>킁</td><td>2037-09-12</td><td>리</td><td>2039-02-28</td></tr>
+<tr>
+<td>'</td><td>비</td><td>2039-07-07</td><td>리</td><td>2040-02-21</td><td>스크</td><td>2041-04-04</td><td>스그</td><td>2041-10-04</td><td></td><td></td></tr>
+<tr>
+<td>타</td><td>크프</td><td>2042-06-14</td><td>아크</td><td>2043-03-15</td><td>피</td><td>2043-12-18</td><td>스크</td><td>2045-11-05</td><td>리</td><td>2047-02-26</td></tr>
+<tr>
+<td>'</td><td>비</td><td>2050-03-02</td><td>킁</td><td>2051-11-14</td><td>리</td><td>2055-10-28</td><td>지</td><td>2056-10-06</td><td></td><td></td></tr>
+<tr>
+<td>지</td><td>타</td><td>2058-06-15</td><td>아르</td><td>2060-03-08</td><td>피</td><td>2060-12-13</td><td>아크</td><td>2062-01-12</td><td>크프</td><td>2062-06-19</td></tr>
+<tr>
+<td>'</td><td>스그</td><td>2062-11-26</td><td>아르</td><td>2063-12-26</td><td>타</td><td>2064-09-30</td><td>지</td><td>2066-06-24</td><td></td><td></td></tr>
+
+    </table>
+</div>
+<h2 id = "link-6">몰라 다자 (다자 소윙그 티 호트 오프 이벤트스 - 파스트 카르마)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>1992-02-25</td><td>사트</td><td>1992-04-03</td><td>벵</td><td>1992-11-24</td><td>케트</td><td>1993-04-12</td><td>하</td><td>1993-05-21</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>1993-12-28</td><td>숭</td><td>1994-05-04</td><td>주프</td><td>1994-07-22</td><td>몽</td><td>1994-12-24</td><td></td><td></td></tr>
+<tr>
+<td>사트</td><td>사트</td><td>1995-02-24</td><td>벵</td><td>1998-12-20</td><td>케트</td><td>2001-04-16</td><td>하</td><td>2001-12-07</td><td>메르크</td><td>2005-07-13</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>2007-08-27</td><td>주프</td><td>2008-12-03</td><td>몽</td><td>2011-06-17</td><td>마르스</td><td>2012-07-09</td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2013-02-24</td><td>케트</td><td>2014-07-31</td><td>하</td><td>2014-12-20</td><td>메르크</td><td>2017-02-28</td><td>숭</td><td>2018-06-17</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2019-03-26</td><td>몽</td><td>2020-10-17</td><td>마르스</td><td>2021-06-08</td><td>사트</td><td>2021-10-30</td><td></td><td></td></tr>
+<tr>
+<td>케트</td><td>케트</td><td>2024-02-25</td><td>하</td><td>2024-04-03</td><td>메르크</td><td>2024-11-12</td><td>숭</td><td>2025-03-17</td><td>주프</td><td>2025-06-04</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>2025-11-08</td><td>마르스</td><td>2026-01-09</td><td>사트</td><td>2026-02-16</td><td>벵</td><td>2026-10-09</td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2027-02-25</td><td>메르크</td><td>2030-07-23</td><td>숭</td><td>2032-07-22</td><td>주프</td><td>2033-10-05</td><td>몽</td><td>2036-02-25</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2037-02-24</td><td>사트</td><td>2037-10-05</td><td>벵</td><td>2041-05-08</td><td>케트</td><td>2043-07-23</td><td></td><td></td></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>2044-02-25</td><td>숭</td><td>2045-04-29</td><td>주프</td><td>2046-01-14</td><td>몽</td><td>2047-06-13</td><td>마르스</td><td>2048-01-14</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2048-05-21</td><td>벵</td><td>2050-07-05</td><td>케트</td><td>2051-10-23</td><td>하</td><td>2052-02-25</td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2054-02-25</td><td>주프</td><td>2054-08-01</td><td>몽</td><td>2055-06-04</td><td>마르스</td><td>2055-10-14</td><td>사트</td><td>2055-12-29</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2057-04-04</td><td>케트</td><td>2058-01-14</td><td>하</td><td>2058-03-31</td><td>메르크</td><td>2059-06-13</td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2060-02-25</td><td>몽</td><td>2061-11-08</td><td>마르스</td><td>2062-07-23</td><td>사트</td><td>2062-12-24</td><td>벵</td><td>2065-07-09</td></tr>
+<tr>
+<td>'</td><td>케트</td><td>2067-01-27</td><td>하</td><td>2067-07-01</td><td>메르크</td><td>2069-11-25</td><td>숭</td><td>2071-04-21</td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2072-02-25</td><td>마르스</td><td>2072-06-12</td><td>사트</td><td>2072-08-18</td><td>벵</td><td>2073-09-09</td><td>케트</td><td>2074-04-30</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2074-07-05</td><td>메르크</td><td>2075-07-05</td><td>숭</td><td>2076-02-04</td><td>주프</td><td>2076-06-12</td><td></td><td></td></tr>
+
+    </table>
+</div>
+<h2 id = "link-7">나라야나 다자 오프 드-1 샤르트 (아 베르사칠리 팔리타 하지 다자)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>크프</td><td>크프</td><td>1992-02-25</td><td>아크</td><td>1993-02-24</td><td>피</td><td>1994-02-24</td><td>아르</td><td>1995-02-24</td><td>타</td><td>1996-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>1998-02-24</td><td>리</td><td>1999-02-24</td><td>비</td><td>2000-02-25</td><td>리</td><td>2001-02-24</td><td>스크</td><td>2002-02-24</td></tr>
+<tr>
+<td>아크</td><td>크프</td><td>2004-02-25</td><td>스그</td><td>2004-03-26</td><td>스크</td><td>2004-04-25</td><td>리</td><td>2004-05-26</td><td>비</td><td>2004-06-27</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2004-08-28</td><td>지</td><td>2004-09-28</td><td>타</td><td>2004-10-29</td><td>아르</td><td>2004-11-27</td><td>피</td><td>2004-12-27</td></tr>
+<tr>
+<td>피</td><td>아크</td><td>2005-02-24</td><td>피</td><td>2005-09-29</td><td>아르</td><td>2006-04-26</td><td>타</td><td>2006-11-28</td><td>지</td><td>2007-06-28</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2008-08-28</td><td>비</td><td>2009-03-26</td><td>리</td><td>2009-10-29</td><td>스크</td><td>2010-05-27</td><td>스그</td><td>2010-12-27</td></tr>
+<tr>
+<td>아르</td><td>크프</td><td>2012-02-25</td><td>스그</td><td>2012-12-27</td><td>스크</td><td>2013-10-29</td><td>리</td><td>2014-08-29</td><td>비</td><td>2015-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2017-02-24</td><td>지</td><td>2017-12-27</td><td>타</td><td>2018-10-29</td><td>아르</td><td>2019-08-29</td><td>피</td><td>2020-06-27</td></tr>
+<tr>
+<td>타</td><td>크프</td><td>2022-02-24</td><td>스그</td><td>2022-10-29</td><td>스크</td><td>2023-06-28</td><td>리</td><td>2024-02-25</td><td>비</td><td>2024-10-29</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2026-02-24</td><td>지</td><td>2026-10-29</td><td>타</td><td>2027-06-28</td><td>아르</td><td>2028-02-25</td><td>피</td><td>2028-10-29</td></tr>
+<tr>
+<td>지</td><td>아크</td><td>2030-02-24</td><td>크프</td><td>2030-10-29</td><td>스그</td><td>2031-06-28</td><td>스크</td><td>2032-02-25</td><td>리</td><td>2032-10-29</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2034-02-24</td><td>킁</td><td>2034-10-29</td><td>지</td><td>2035-06-28</td><td>타</td><td>2036-02-25</td><td>아르</td><td>2036-10-29</td></tr>
+<tr>
+<td>킁</td><td>크프</td><td>2038-02-24</td><td>아크</td><td>2038-09-29</td><td>피</td><td>2039-04-26</td><td>아르</td><td>2039-11-28</td><td>타</td><td>2040-06-27</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2041-08-29</td><td>리</td><td>2042-03-27</td><td>비</td><td>2042-10-29</td><td>리</td><td>2043-05-27</td><td>스크</td><td>2043-12-28</td></tr>
+<tr>
+<td>리</td><td>크프</td><td>2045-02-24</td><td>스그</td><td>2045-08-29</td><td>스크</td><td>2046-02-25</td><td>리</td><td>2046-08-29</td><td>비</td><td>2047-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2048-02-25</td><td>지</td><td>2048-08-29</td><td>타</td><td>2049-02-24</td><td>아르</td><td>2049-08-29</td><td>피</td><td>2050-02-25</td></tr>
+<tr>
+<td>비</td><td>아크</td><td>2051-02-25</td><td>피</td><td>2051-09-29</td><td>아르</td><td>2052-04-26</td><td>타</td><td>2052-11-28</td><td>지</td><td>2053-06-27</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2054-08-29</td><td>비</td><td>2055-03-27</td><td>리</td><td>2055-10-30</td><td>스크</td><td>2056-05-27</td><td>스그</td><td>2056-12-27</td></tr>
+<tr>
+<td>리</td><td>크프</td><td>2058-02-25</td><td>스그</td><td>2058-05-27</td><td>스크</td><td>2058-08-29</td><td>리</td><td>2058-11-28</td><td>비</td><td>2059-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2059-08-30</td><td>지</td><td>2059-11-28</td><td>타</td><td>2060-02-25</td><td>아르</td><td>2060-05-27</td><td>피</td><td>2060-08-29</td></tr>
+<tr>
+<td>스크</td><td>크프</td><td>2061-02-24</td><td>스그</td><td>2061-05-27</td><td>스크</td><td>2061-08-29</td><td>리</td><td>2061-11-28</td><td>비</td><td>2062-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2062-08-29</td><td>지</td><td>2062-11-28</td><td>타</td><td>2063-02-25</td><td>아르</td><td>2063-05-28</td><td>피</td><td>2063-08-30</td></tr>
+<tr>
+<td>스그</td><td>아크</td><td>2064-02-25</td><td>크프</td><td>2064-10-29</td><td>스그</td><td>2065-06-27</td><td>스크</td><td>2066-02-25</td><td>리</td><td>2066-10-29</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2068-02-25</td><td>킁</td><td>2068-10-29</td><td>지</td><td>2069-06-27</td><td>타</td><td>2070-02-25</td><td>아르</td><td>2070-10-29</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-8">수다자 (팔리타 다자 소윙그 락스미’스 블레싱그스)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>아크</td><td>아크</td><td>1992-02-25</td><td>피</td><td>1992-03-01</td><td>아르</td><td>1992-03-07</td><td>타</td><td>1992-03-12</td><td>지</td><td>1992-03-18</td></tr>
+<tr>
+<td>'</td><td>리</td><td>1992-03-29</td><td>비</td><td>1992-04-04</td><td>리</td><td>1992-04-10</td><td>스크</td><td>1992-04-15</td><td>스그</td><td>1992-04-21</td></tr>
+<tr>
+<td>타</td><td>스크</td><td>1992-05-03</td><td>리</td><td>1993-01-03</td><td>비</td><td>1993-09-05</td><td>리</td><td>1994-05-03</td><td>킁</td><td>1995-01-03</td></tr>
+<tr>
+<td>'</td><td>타</td><td>1996-05-03</td><td>아르</td><td>1997-01-03</td><td>피</td><td>1997-09-05</td><td>아크</td><td>1998-05-03</td><td>크프</td><td>1999-01-03</td></tr>
+<tr>
+<td>리</td><td>아크</td><td>2000-05-03</td><td>피</td><td>2000-11-05</td><td>아르</td><td>2001-05-03</td><td>타</td><td>2001-11-05</td><td>지</td><td>2002-05-03</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2003-05-04</td><td>비</td><td>2003-11-06</td><td>리</td><td>2004-05-03</td><td>스크</td><td>2004-11-05</td><td>스그</td><td>2005-05-03</td></tr>
+<tr>
+<td>스크</td><td>스크</td><td>2006-05-03</td><td>리</td><td>2006-08-05</td><td>비</td><td>2006-11-05</td><td>리</td><td>2007-02-02</td><td>킁</td><td>2007-05-04</td></tr>
+<tr>
+<td>'</td><td>타</td><td>2007-11-06</td><td>아르</td><td>2008-02-02</td><td>피</td><td>2008-05-03</td><td>아크</td><td>2008-08-05</td><td>크프</td><td>2008-11-05</td></tr>
+<tr>
+<td>지</td><td>지</td><td>2009-05-03</td><td>타</td><td>2010-01-03</td><td>아르</td><td>2010-09-05</td><td>피</td><td>2011-05-04</td><td>아크</td><td>2012-01-04</td></tr>
+<tr>
+<td>'</td><td>스그</td><td>2013-05-03</td><td>스크</td><td>2014-01-03</td><td>리</td><td>2014-09-05</td><td>비</td><td>2015-05-04</td><td>리</td><td>2016-01-04</td></tr>
+<tr>
+<td>비</td><td>비</td><td>2017-05-03</td><td>리</td><td>2017-12-05</td><td>킁</td><td>2018-07-05</td><td>지</td><td>2019-02-02</td><td>타</td><td>2019-09-06</td></tr>
+<tr>
+<td>'</td><td>피</td><td>2020-11-05</td><td>아크</td><td>2021-06-03</td><td>크프</td><td>2022-01-03</td><td>스그</td><td>2022-08-05</td><td>스크</td><td>2023-03-04</td></tr>
+<tr>
+<td>스그</td><td>지</td><td>2024-05-03</td><td>타</td><td>2025-01-03</td><td>아르</td><td>2025-09-05</td><td>피</td><td>2026-05-03</td><td>아크</td><td>2027-01-04</td></tr>
+<tr>
+<td>'</td><td>스그</td><td>2028-05-03</td><td>스크</td><td>2029-01-03</td><td>리</td><td>2029-09-05</td><td>비</td><td>2030-05-03</td><td>리</td><td>2031-01-04</td></tr>
+<tr>
+<td>피</td><td>비</td><td>2032-05-03</td><td>리</td><td>2032-12-05</td><td>킁</td><td>2033-07-05</td><td>지</td><td>2034-02-02</td><td>타</td><td>2034-09-06</td></tr>
+<tr>
+<td>'</td><td>피</td><td>2035-11-06</td><td>아크</td><td>2036-06-03</td><td>크프</td><td>2037-01-03</td><td>스그</td><td>2037-08-05</td><td>스크</td><td>2038-03-04</td></tr>
+<tr>
+<td>크프</td><td>크프</td><td>2039-05-04</td><td>아크</td><td>2040-05-03</td><td>피</td><td>2041-05-03</td><td>아르</td><td>2042-05-04</td><td>타</td><td>2043-05-04</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2045-05-03</td><td>리</td><td>2046-05-04</td><td>비</td><td>2047-05-04</td><td>리</td><td>2048-05-03</td><td>스크</td><td>2049-05-03</td></tr>
+<tr>
+<td>아르</td><td>리</td><td>2051-05-04</td><td>스크</td><td>2052-03-03</td><td>스그</td><td>2053-01-03</td><td>크프</td><td>2053-11-05</td><td>아크</td><td>2054-09-06</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2056-05-03</td><td>타</td><td>2057-03-04</td><td>지</td><td>2058-01-04</td><td>킁</td><td>2058-11-06</td><td>리</td><td>2059-09-06</td></tr>
+<tr>
+<td>킁</td><td>크프</td><td>2061-05-03</td><td>아크</td><td>2061-12-05</td><td>피</td><td>2062-07-05</td><td>아르</td><td>2063-02-02</td><td>타</td><td>2063-09-06</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2064-11-05</td><td>리</td><td>2065-06-04</td><td>비</td><td>2066-01-04</td><td>리</td><td>2066-08-06</td><td>스크</td><td>2067-03-04</td></tr>
+<tr>
+<td>리</td><td>리</td><td>2068-05-03</td><td>스크</td><td>2068-08-05</td><td>스그</td><td>2068-11-05</td><td>크프</td><td>2069-02-02</td><td>아크</td><td>2069-05-03</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2069-11-05</td><td>타</td><td>2070-02-02</td><td>지</td><td>2070-05-04</td><td>킁</td><td>2070-08-06</td><td>리</td><td>2070-11-06</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-9">라그나 켄드라지 하지 다자 오프 드-1 (프룩치피카치옹 오프 요가스)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>크프</td><td>크프</td><td>1992-02-25</td><td>아크</td><td>1993-02-24</td><td>피</td><td>1994-02-24</td><td>아르</td><td>1995-02-24</td><td>타</td><td>1996-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>1998-02-24</td><td>리</td><td>1999-02-24</td><td>비</td><td>2000-02-25</td><td>리</td><td>2001-02-24</td><td>스크</td><td>2002-02-24</td></tr>
+<tr>
+<td>아르</td><td>크프</td><td>2004-02-25</td><td>스그</td><td>2004-12-27</td><td>스크</td><td>2005-10-29</td><td>리</td><td>2006-08-29</td><td>비</td><td>2007-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2009-02-24</td><td>지</td><td>2009-12-27</td><td>타</td><td>2010-10-29</td><td>아르</td><td>2011-08-29</td><td>피</td><td>2012-06-27</td></tr>
+<tr>
+<td>킁</td><td>크프</td><td>2014-02-24</td><td>아크</td><td>2014-09-29</td><td>피</td><td>2015-04-26</td><td>아르</td><td>2015-11-28</td><td>타</td><td>2016-06-27</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2017-08-29</td><td>리</td><td>2018-03-26</td><td>비</td><td>2018-10-29</td><td>리</td><td>2019-05-27</td><td>스크</td><td>2019-12-28</td></tr>
+<tr>
+<td>리</td><td>크프</td><td>2021-02-24</td><td>스그</td><td>2021-05-27</td><td>스크</td><td>2021-08-29</td><td>리</td><td>2021-11-28</td><td>비</td><td>2022-02-24</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2022-08-29</td><td>지</td><td>2022-11-28</td><td>타</td><td>2023-02-25</td><td>아르</td><td>2023-05-27</td><td>피</td><td>2023-08-29</td></tr>
+<tr>
+<td>아크</td><td>크프</td><td>2024-02-25</td><td>스그</td><td>2024-03-26</td><td>스크</td><td>2024-04-25</td><td>리</td><td>2024-05-27</td><td>비</td><td>2024-06-27</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2024-08-29</td><td>지</td><td>2024-09-28</td><td>타</td><td>2024-10-29</td><td>아르</td><td>2024-11-28</td><td>피</td><td>2024-12-27</td></tr>
+<tr>
+<td>타</td><td>크프</td><td>2025-02-24</td><td>스그</td><td>2025-10-29</td><td>스크</td><td>2026-06-27</td><td>리</td><td>2027-02-25</td><td>비</td><td>2027-10-29</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2029-02-24</td><td>지</td><td>2029-10-29</td><td>타</td><td>2030-06-27</td><td>아르</td><td>2031-02-25</td><td>피</td><td>2031-10-29</td></tr>
+<tr>
+<td>리</td><td>크프</td><td>2033-02-24</td><td>스그</td><td>2033-08-29</td><td>스크</td><td>2034-02-24</td><td>리</td><td>2034-08-29</td><td>비</td><td>2035-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2036-02-25</td><td>지</td><td>2036-08-29</td><td>타</td><td>2037-02-24</td><td>아르</td><td>2037-08-29</td><td>피</td><td>2038-02-24</td></tr>
+<tr>
+<td>스크</td><td>크프</td><td>2039-02-25</td><td>스그</td><td>2039-05-27</td><td>스크</td><td>2039-08-29</td><td>리</td><td>2039-11-28</td><td>비</td><td>2040-02-25</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2040-08-29</td><td>지</td><td>2040-11-28</td><td>타</td><td>2041-02-24</td><td>아르</td><td>2041-05-27</td><td>피</td><td>2041-08-29</td></tr>
+<tr>
+<td>피</td><td>아크</td><td>2042-02-24</td><td>피</td><td>2042-09-29</td><td>아르</td><td>2043-04-26</td><td>타</td><td>2043-11-28</td><td>지</td><td>2044-06-27</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2045-08-29</td><td>비</td><td>2046-03-27</td><td>리</td><td>2046-10-29</td><td>스크</td><td>2047-05-27</td><td>스그</td><td>2047-12-28</td></tr>
+<tr>
+<td>지</td><td>아크</td><td>2049-02-24</td><td>크프</td><td>2049-10-29</td><td>스그</td><td>2050-06-28</td><td>스크</td><td>2051-02-25</td><td>리</td><td>2051-10-30</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2053-02-24</td><td>킁</td><td>2053-10-29</td><td>지</td><td>2054-06-28</td><td>타</td><td>2055-02-25</td><td>아르</td><td>2055-10-30</td></tr>
+<tr>
+<td>비</td><td>아크</td><td>2057-02-24</td><td>피</td><td>2057-09-29</td><td>아르</td><td>2058-04-26</td><td>타</td><td>2058-11-28</td><td>지</td><td>2059-06-28</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2060-08-29</td><td>비</td><td>2061-03-26</td><td>리</td><td>2061-10-29</td><td>스크</td><td>2062-05-27</td><td>스그</td><td>2062-12-28</td></tr>
+<tr>
+<td>스그</td><td>아크</td><td>2064-02-25</td><td>크프</td><td>2064-10-29</td><td>스그</td><td>2065-06-27</td><td>스크</td><td>2066-02-25</td><td>리</td><td>2066-10-29</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2068-02-25</td><td>킁</td><td>2068-10-29</td><td>지</td><td>2069-06-27</td><td>타</td><td>2070-02-25</td><td>아르</td><td>2070-10-29</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-10">드리그다자 오프 드-1 (헬리지오스 안드 스피리투아우 악치비치스)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>비</td><td>비</td><td>1992-02-25</td><td>지</td><td>1992-11-27</td><td>피</td><td>1993-08-29</td><td>스그</td><td>1994-05-27</td><td>타</td><td>1995-02-24</td></tr>
+<tr>
+<td>'</td><td>스크</td><td>1996-08-28</td><td>리</td><td>1997-05-27</td><td>크프</td><td>1998-02-24</td><td>리</td><td>1998-11-28</td><td>킁</td><td>1999-08-29</td></tr>
+<tr>
+<td>지</td><td>지</td><td>2001-02-24</td><td>비</td><td>2001-11-28</td><td>스그</td><td>2002-08-29</td><td>피</td><td>2003-05-27</td><td>리</td><td>2004-02-25</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2005-08-29</td><td>킁</td><td>2006-05-27</td><td>아크</td><td>2007-02-24</td><td>타</td><td>2007-11-28</td><td>리</td><td>2008-08-28</td></tr>
+<tr>
+<td>피</td><td>비</td><td>2010-02-24</td><td>지</td><td>2010-11-28</td><td>피</td><td>2011-08-29</td><td>스그</td><td>2012-05-26</td><td>타</td><td>2013-02-24</td></tr>
+<tr>
+<td>'</td><td>스크</td><td>2014-08-29</td><td>리</td><td>2015-05-27</td><td>크프</td><td>2016-02-25</td><td>리</td><td>2016-11-27</td><td>킁</td><td>2017-08-29</td></tr>
+<tr>
+<td>스그</td><td>지</td><td>2019-02-25</td><td>비</td><td>2019-11-28</td><td>스그</td><td>2020-08-29</td><td>피</td><td>2021-05-27</td><td>리</td><td>2022-02-24</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2023-08-29</td><td>킁</td><td>2024-05-27</td><td>아크</td><td>2025-02-24</td><td>타</td><td>2025-11-28</td><td>리</td><td>2026-08-29</td></tr>
+<tr>
+<td>리</td><td>리</td><td>2028-02-25</td><td>스크</td><td>2028-09-28</td><td>스그</td><td>2029-04-26</td><td>크프</td><td>2029-11-28</td><td>아크</td><td>2030-06-27</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2031-08-29</td><td>타</td><td>2032-03-26</td><td>지</td><td>2032-10-29</td><td>킁</td><td>2033-05-27</td><td>리</td><td>2033-12-27</td></tr>
+<tr>
+<td>리</td><td>아크</td><td>2035-02-25</td><td>킁</td><td>2035-10-30</td><td>스그</td><td>2036-06-27</td><td>타</td><td>2037-02-24</td><td>리</td><td>2037-10-29</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2039-02-25</td><td>크프</td><td>2039-10-30</td><td>지</td><td>2040-06-27</td><td>스크</td><td>2041-02-24</td><td>아르</td><td>2041-10-29</td></tr>
+<tr>
+<td>타</td><td>스크</td><td>2043-02-25</td><td>지</td><td>2043-10-30</td><td>크프</td><td>2044-06-27</td><td>리</td><td>2045-02-24</td><td>피</td><td>2045-10-29</td></tr>
+<tr>
+<td>'</td><td>타</td><td>2047-02-25</td><td>스그</td><td>2047-10-30</td><td>킁</td><td>2048-06-27</td><td>아크</td><td>2049-02-24</td><td>비</td><td>2049-10-29</td></tr>
+<tr>
+<td>아크</td><td>아크</td><td>2051-02-25</td><td>킁</td><td>2051-10-30</td><td>스그</td><td>2052-06-27</td><td>타</td><td>2053-02-24</td><td>리</td><td>2053-10-29</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2055-02-25</td><td>크프</td><td>2055-10-30</td><td>지</td><td>2056-06-27</td><td>스크</td><td>2057-02-24</td><td>아르</td><td>2057-10-29</td></tr>
+<tr>
+<td>스크</td><td>스크</td><td>2059-02-25</td><td>지</td><td>2059-10-30</td><td>크프</td><td>2060-06-27</td><td>리</td><td>2061-02-24</td><td>피</td><td>2061-10-29</td></tr>
+<tr>
+<td>'</td><td>타</td><td>2063-02-25</td><td>스그</td><td>2063-10-30</td><td>킁</td><td>2064-06-27</td><td>아크</td><td>2065-02-24</td><td>비</td><td>2065-10-29</td></tr>
+<tr>
+<td>크프</td><td>크프</td><td>2067-02-25</td><td>스그</td><td>2067-09-29</td><td>스크</td><td>2068-04-26</td><td>리</td><td>2068-11-28</td><td>비</td><td>2069-06-27</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2070-08-29</td><td>지</td><td>2071-03-27</td><td>타</td><td>2071-10-30</td><td>아르</td><td>2072-05-27</td><td>피</td><td>2072-12-27</td></tr>
+<tr>
+<td>아르</td><td>리</td><td>2074-02-25</td><td>스크</td><td>2074-09-29</td><td>스그</td><td>2075-04-27</td><td>크프</td><td>2075-11-29</td><td>아크</td><td>2076-06-27</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2077-08-29</td><td>타</td><td>2078-03-27</td><td>지</td><td>2078-10-30</td><td>킁</td><td>2079-05-28</td><td>리</td><td>2079-12-28</td></tr>
+<tr>
+<td>킁</td><td>크프</td><td>2081-02-24</td><td>스그</td><td>2081-09-29</td><td>스크</td><td>2082-04-26</td><td>리</td><td>2082-11-28</td><td>비</td><td>2083-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2084-08-29</td><td>지</td><td>2085-03-27</td><td>타</td><td>2085-10-29</td><td>아르</td><td>2086-05-27</td><td>피</td><td>2086-12-28</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-11">솔라 다자 (트로블리스 안드 데아트)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>크프</td><td>크프</td><td>1992-02-25</td><td>아크</td><td>1992-11-27</td><td>피</td><td>1993-08-29</td><td>아르</td><td>1994-05-27</td><td>타</td><td>1995-02-24</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>1996-08-28</td><td>리</td><td>1997-05-27</td><td>비</td><td>1998-02-24</td><td>리</td><td>1998-11-28</td><td>스크</td><td>1999-08-29</td></tr>
+<tr>
+<td>아크</td><td>아크</td><td>2001-02-24</td><td>피</td><td>2001-11-28</td><td>아르</td><td>2002-08-29</td><td>타</td><td>2003-05-27</td><td>지</td><td>2004-02-25</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2005-08-29</td><td>비</td><td>2006-05-27</td><td>리</td><td>2007-02-24</td><td>스크</td><td>2007-11-28</td><td>스그</td><td>2008-08-28</td></tr>
+<tr>
+<td>피</td><td>비</td><td>2010-02-24</td><td>리</td><td>2010-11-28</td><td>스크</td><td>2011-08-29</td><td>스그</td><td>2012-05-26</td><td>크프</td><td>2013-02-24</td></tr>
+<tr>
+<td>'</td><td>피</td><td>2014-08-29</td><td>아르</td><td>2015-05-27</td><td>타</td><td>2016-02-25</td><td>지</td><td>2016-11-27</td><td>킁</td><td>2017-08-29</td></tr>
+<tr>
+<td>아르</td><td>리</td><td>2019-02-25</td><td>스크</td><td>2019-11-28</td><td>스그</td><td>2020-08-29</td><td>크프</td><td>2021-05-27</td><td>아크</td><td>2022-02-24</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2023-08-29</td><td>타</td><td>2024-05-27</td><td>지</td><td>2025-02-24</td><td>킁</td><td>2025-11-28</td><td>리</td><td>2026-08-29</td></tr>
+<tr>
+<td>타</td><td>스크</td><td>2028-02-25</td><td>스그</td><td>2028-11-28</td><td>크프</td><td>2029-08-29</td><td>아크</td><td>2030-05-27</td><td>피</td><td>2031-02-25</td></tr>
+<tr>
+<td>'</td><td>타</td><td>2032-08-29</td><td>지</td><td>2033-05-27</td><td>킁</td><td>2034-02-24</td><td>리</td><td>2034-11-28</td><td>비</td><td>2035-08-29</td></tr>
+<tr>
+<td>지</td><td>지</td><td>2037-02-24</td><td>킁</td><td>2037-11-28</td><td>리</td><td>2038-08-29</td><td>비</td><td>2039-05-27</td><td>리</td><td>2040-02-25</td></tr>
+<tr>
+<td>'</td><td>스그</td><td>2041-08-29</td><td>크프</td><td>2042-05-27</td><td>아크</td><td>2043-02-25</td><td>피</td><td>2043-11-28</td><td>아르</td><td>2044-08-29</td></tr>
+<tr>
+<td>킁</td><td>크프</td><td>2046-02-25</td><td>아크</td><td>2046-11-28</td><td>피</td><td>2047-08-29</td><td>아르</td><td>2048-05-27</td><td>타</td><td>2049-02-24</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2050-08-29</td><td>리</td><td>2051-05-27</td><td>비</td><td>2052-02-25</td><td>리</td><td>2052-11-28</td><td>스크</td><td>2053-08-29</td></tr>
+<tr>
+<td>리</td><td>아크</td><td>2055-02-25</td><td>피</td><td>2055-11-28</td><td>아르</td><td>2056-08-29</td><td>타</td><td>2057-05-27</td><td>지</td><td>2058-02-25</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2059-08-30</td><td>비</td><td>2060-05-27</td><td>리</td><td>2061-02-24</td><td>스크</td><td>2061-11-28</td><td>스그</td><td>2062-08-29</td></tr>
+<tr>
+<td>비</td><td>비</td><td>2064-02-25</td><td>리</td><td>2064-11-28</td><td>스크</td><td>2065-08-29</td><td>스그</td><td>2066-05-27</td><td>크프</td><td>2067-02-25</td></tr>
+<tr>
+<td>'</td><td>피</td><td>2068-08-29</td><td>아르</td><td>2069-05-27</td><td>타</td><td>2070-02-25</td><td>지</td><td>2070-11-28</td><td>킁</td><td>2071-08-30</td></tr>
+<tr>
+<td>리</td><td>리</td><td>2073-02-24</td><td>스크</td><td>2073-11-28</td><td>스그</td><td>2074-08-29</td><td>크프</td><td>2075-05-28</td><td>아크</td><td>2076-02-25</td></tr>
+<tr>
+<td>'</td><td>아르</td><td>2077-08-29</td><td>타</td><td>2078-05-27</td><td>지</td><td>2079-02-25</td><td>킁</td><td>2079-11-29</td><td>리</td><td>2080-08-29</td></tr>
+<tr>
+<td>스크</td><td>스크</td><td>2082-02-25</td><td>스그</td><td>2082-11-28</td><td>크프</td><td>2083-08-30</td><td>아크</td><td>2084-05-27</td><td>피</td><td>2085-02-25</td></tr>
+<tr>
+<td>'</td><td>타</td><td>2086-08-29</td><td>지</td><td>2087-05-28</td><td>킁</td><td>2088-02-25</td><td>리</td><td>2088-11-28</td><td>비</td><td>2089-08-29</td></tr>
+<tr>
+<td>스그</td><td>지</td><td>2091-02-25</td><td>킁</td><td>2091-11-29</td><td>리</td><td>2092-08-29</td><td>비</td><td>2093-05-27</td><td>리</td><td>2094-02-25</td></tr>
+<tr>
+<td>'</td><td>스그</td><td>2095-08-30</td><td>크프</td><td>2096-05-27</td><td>아크</td><td>2097-02-25</td><td>피</td><td>2097-11-28</td><td>아르</td><td>2098-08-30</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-12">니리아나 솔라 다자 (데아트)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>하지</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th><th>하지</th><th>스타르트 다치</th></tr>
+<tr>
+<td>아크</td><td>크프</td><td>1992-02-25</td><td>스그</td><td>1992-10-28</td><td>스크</td><td>1993-06-27</td><td>리</td><td>1994-02-24</td><td>비</td><td>1994-10-29</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>1996-02-25</td><td>지</td><td>1996-10-29</td><td>타</td><td>1997-06-27</td><td>아르</td><td>1998-02-24</td><td>피</td><td>1998-10-29</td></tr>
+<tr>
+<td>피</td><td>아크</td><td>2000-02-25</td><td>피</td><td>2000-11-27</td><td>아르</td><td>2001-08-29</td><td>타</td><td>2002-05-27</td><td>지</td><td>2003-02-24</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2004-08-28</td><td>비</td><td>2005-05-27</td><td>리</td><td>2006-02-24</td><td>스크</td><td>2006-11-28</td><td>스그</td><td>2007-08-29</td></tr>
+<tr>
+<td>아르</td><td>크프</td><td>2009-02-24</td><td>스그</td><td>2009-09-29</td><td>스크</td><td>2010-04-26</td><td>리</td><td>2010-11-28</td><td>비</td><td>2011-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2012-08-29</td><td>지</td><td>2013-03-26</td><td>타</td><td>2013-10-29</td><td>아르</td><td>2014-05-27</td><td>피</td><td>2014-12-27</td></tr>
+<tr>
+<td>타</td><td>크프</td><td>2016-02-25</td><td>스그</td><td>2016-10-29</td><td>스크</td><td>2017-06-27</td><td>리</td><td>2018-02-24</td><td>비</td><td>2018-10-29</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2020-02-25</td><td>지</td><td>2020-10-29</td><td>타</td><td>2021-06-27</td><td>아르</td><td>2022-02-24</td><td>피</td><td>2022-10-29</td></tr>
+<tr>
+<td>지</td><td>아크</td><td>2024-02-25</td><td>크프</td><td>2024-11-28</td><td>스그</td><td>2025-08-29</td><td>스크</td><td>2026-05-27</td><td>리</td><td>2027-02-25</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2028-08-29</td><td>킁</td><td>2029-05-27</td><td>지</td><td>2030-02-24</td><td>타</td><td>2030-11-28</td><td>아르</td><td>2031-08-29</td></tr>
+<tr>
+<td>킁</td><td>크프</td><td>2033-02-24</td><td>아크</td><td>2033-09-29</td><td>피</td><td>2034-04-26</td><td>아르</td><td>2034-11-28</td><td>타</td><td>2035-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2036-08-29</td><td>리</td><td>2037-03-26</td><td>비</td><td>2037-10-29</td><td>리</td><td>2038-05-27</td><td>스크</td><td>2038-12-28</td></tr>
+<tr>
+<td>리</td><td>크프</td><td>2040-02-25</td><td>스그</td><td>2040-10-29</td><td>스크</td><td>2041-06-27</td><td>리</td><td>2042-02-24</td><td>비</td><td>2042-10-29</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2044-02-25</td><td>지</td><td>2044-10-29</td><td>타</td><td>2045-06-27</td><td>아르</td><td>2046-02-25</td><td>피</td><td>2046-10-29</td></tr>
+<tr>
+<td>비</td><td>아크</td><td>2048-02-25</td><td>피</td><td>2048-11-28</td><td>아르</td><td>2049-08-29</td><td>타</td><td>2050-05-27</td><td>지</td><td>2051-02-25</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2052-08-29</td><td>비</td><td>2053-05-27</td><td>리</td><td>2054-02-25</td><td>스크</td><td>2054-11-28</td><td>스그</td><td>2055-08-30</td></tr>
+<tr>
+<td>리</td><td>크프</td><td>2057-02-24</td><td>스그</td><td>2057-09-29</td><td>스크</td><td>2058-04-26</td><td>리</td><td>2058-11-28</td><td>비</td><td>2059-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2060-08-29</td><td>지</td><td>2061-03-26</td><td>타</td><td>2061-10-29</td><td>아르</td><td>2062-05-27</td><td>피</td><td>2062-12-28</td></tr>
+<tr>
+<td>스크</td><td>크프</td><td>2064-02-25</td><td>스그</td><td>2064-10-29</td><td>스크</td><td>2065-06-27</td><td>리</td><td>2066-02-25</td><td>비</td><td>2066-10-29</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2068-02-25</td><td>지</td><td>2068-10-29</td><td>타</td><td>2069-06-27</td><td>아르</td><td>2070-02-25</td><td>피</td><td>2070-10-29</td></tr>
+<tr>
+<td>스그</td><td>아크</td><td>2072-02-25</td><td>크프</td><td>2072-11-28</td><td>스그</td><td>2073-08-29</td><td>스크</td><td>2074-05-27</td><td>리</td><td>2075-02-25</td></tr>
+<tr>
+<td>'</td><td>리</td><td>2076-08-29</td><td>킁</td><td>2077-05-27</td><td>지</td><td>2078-02-25</td><td>타</td><td>2078-11-28</td><td>아르</td><td>2079-08-30</td></tr>
+<tr>
+<td>크프</td><td>크프</td><td>2081-02-24</td><td>아크</td><td>2081-09-29</td><td>피</td><td>2082-04-26</td><td>아르</td><td>2082-11-28</td><td>타</td><td>2083-06-28</td></tr>
+<tr>
+<td>'</td><td>킁</td><td>2084-08-29</td><td>리</td><td>2085-03-27</td><td>비</td><td>2085-10-29</td><td>리</td><td>2086-05-27</td><td>스크</td><td>2086-12-28</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-13">빔소타리 다자 - 트리바지 바리아치옹</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>다자 로르드</th><th>수브-페리오드 로르드</th><th>스타르트 다치 오프 티 수브-페리오드</th><th>다자 로르드</th><th>스타르트 다치 오프 티 수브-페리오드</th><th>수브-페리오드 로르드</th><th>스타르트 다치 오프 티 수브-페리오드</th><th>다자 로르드</th><th>스타르트 다치 오프 티 수브-페리오드</th><th>수브-페리오드 로르드</th><th>스타르트 다치 오프 티 수브-페리오드</th></tr>
+<tr>
+<td>사</td><td>사</td><td>1988-03-21</td><td>미</td><td>1989-03-23</td><td>키</td><td>1990-02-14</td><td>비</td><td>1990-06-30</td><td>수</td><td>1991-07-21</td></tr>
+<tr>
+<td>'</td><td>무</td><td>1991-11-15</td><td>마</td><td>1992-05-23</td><td>하</td><td>1992-10-08</td><td>주</td><td>1993-09-20</td><td></td><td></td></tr>
+<tr>
+<td>미</td><td>미</td><td>1994-07-24</td><td>키</td><td>1995-05-11</td><td>비</td><td>1995-09-12</td><td>수</td><td>1996-08-22</td><td>무</td><td>1996-12-03</td></tr>
+<tr>
+<td>'</td><td>마</td><td>1997-05-22</td><td>하</td><td>1997-09-23</td><td>주</td><td>1998-07-29</td><td>사</td><td>1999-04-29</td><td></td><td></td></tr>
+<tr>
+<td>키</td><td>키</td><td>2000-03-21</td><td>비</td><td>2000-05-10</td><td>수</td><td>2000-10-03</td><td>무</td><td>2000-11-14</td><td>마</td><td>2001-01-22</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2001-03-12</td><td>주</td><td>2001-07-20</td><td>사</td><td>2001-11-11</td><td>미</td><td>2002-03-23</td><td></td><td></td></tr>
+<tr>
+<td>비</td><td>비</td><td>2002-07-24</td><td>수</td><td>2003-09-04</td><td>무</td><td>2004-01-02</td><td>마</td><td>2004-07-24</td><td>하</td><td>2004-12-13</td></tr>
+<tr>
+<td>'</td><td>주</td><td>2005-12-13</td><td>사</td><td>2006-11-04</td><td>미</td><td>2007-11-24</td><td>키</td><td>2008-11-03</td><td></td><td></td></tr>
+<tr>
+<td>수</td><td>수</td><td>2009-03-22</td><td>무</td><td>2009-04-27</td><td>마</td><td>2009-06-29</td><td>하</td><td>2009-08-12</td><td>주</td><td>2009-11-29</td></tr>
+<tr>
+<td>'</td><td>사</td><td>2010-03-04</td><td>미</td><td>2010-06-29</td><td>키</td><td>2010-10-13</td><td>비</td><td>2010-11-24</td><td></td><td></td></tr>
+<tr>
+<td>무</td><td>무</td><td>2011-03-22</td><td>마</td><td>2011-07-03</td><td>하</td><td>2011-09-14</td><td>주</td><td>2012-03-11</td><td>사</td><td>2012-08-24</td></tr>
+<tr>
+<td>'</td><td>미</td><td>2013-03-02</td><td>키</td><td>2013-08-24</td><td>비</td><td>2013-11-03</td><td>수</td><td>2014-05-22</td><td></td><td></td></tr>
+<tr>
+<td>마</td><td>마</td><td>2014-07-24</td><td>하</td><td>2014-09-13</td><td>주</td><td>2015-01-17</td><td>사</td><td>2015-05-09</td><td>미</td><td>2015-09-25</td></tr>
+<tr>
+<td>'</td><td>키</td><td>2016-01-21</td><td>비</td><td>2016-03-09</td><td>수</td><td>2016-08-01</td><td>무</td><td>2016-09-14</td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2016-11-23</td><td>주</td><td>2017-10-18</td><td>사</td><td>2018-08-06</td><td>미</td><td>2019-07-18</td><td>키</td><td>2020-05-22</td></tr>
+<tr>
+<td>'</td><td>비</td><td>2020-09-30</td><td>수</td><td>2021-09-30</td><td>무</td><td>2022-01-16</td><td>마</td><td>2022-07-18</td><td></td><td></td></tr>
+<tr>
+<td>주</td><td>주</td><td>2022-11-24</td><td>사</td><td>2023-08-10</td><td>미</td><td>2024-06-12</td><td>키</td><td>2025-03-14</td><td>비</td><td>2025-07-07</td></tr>
+<tr>
+<td>'</td><td>수</td><td>2026-05-27</td><td>무</td><td>2026-09-04</td><td>마</td><td>2027-02-10</td><td>하</td><td>2027-06-04</td><td></td><td></td></tr>
+<tr>
+<td>사</td><td>사</td><td>2028-03-22</td><td>미</td><td>2029-03-23</td><td>키</td><td>2030-02-14</td><td>비</td><td>2030-06-30</td><td>수</td><td>2031-07-21</td></tr>
+<tr>
+<td>'</td><td>무</td><td>2031-11-15</td><td>마</td><td>2032-05-23</td><td>하</td><td>2032-10-08</td><td>주</td><td>2033-09-20</td><td></td><td></td></tr>
+<tr>
+<td>미</td><td>미</td><td>2034-07-24</td><td>키</td><td>2035-05-11</td><td>비</td><td>2035-09-12</td><td>수</td><td>2036-08-22</td><td>무</td><td>2036-12-03</td></tr>
+<tr>
+<td>'</td><td>마</td><td>2037-05-22</td><td>하</td><td>2037-09-23</td><td>주</td><td>2038-07-30</td><td>사</td><td>2039-04-29</td><td></td><td></td></tr>
+<tr>
+<td>키</td><td>키</td><td>2040-03-22</td><td>비</td><td>2040-05-11</td><td>수</td><td>2040-10-03</td><td>무</td><td>2040-11-14</td><td>마</td><td>2041-01-22</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2041-03-12</td><td>주</td><td>2041-07-20</td><td>사</td><td>2041-11-12</td><td>미</td><td>2042-03-23</td><td></td><td></td></tr>
+<tr>
+<td>비</td><td>비</td><td>2042-07-24</td><td>수</td><td>2043-09-04</td><td>무</td><td>2044-01-02</td><td>마</td><td>2044-07-24</td><td>하</td><td>2044-12-13</td></tr>
+<tr>
+<td>'</td><td>주</td><td>2045-12-13</td><td>사</td><td>2046-11-04</td><td>미</td><td>2047-11-24</td><td>키</td><td>2048-11-03</td><td></td><td></td></tr>
+<tr>
+<td>수</td><td>수</td><td>2049-03-22</td><td>무</td><td>2049-04-28</td><td>마</td><td>2049-06-29</td><td>하</td><td>2049-08-12</td><td>주</td><td>2049-11-30</td></tr>
+<tr>
+<td>'</td><td>사</td><td>2050-03-04</td><td>미</td><td>2050-06-29</td><td>키</td><td>2050-10-13</td><td>비</td><td>2050-11-24</td><td></td><td></td></tr>
+<tr>
+<td>무</td><td>무</td><td>2051-03-22</td><td>마</td><td>2051-07-04</td><td>하</td><td>2051-09-15</td><td>주</td><td>2052-03-12</td><td>사</td><td>2052-08-24</td></tr>
+<tr>
+<td>'</td><td>미</td><td>2053-03-02</td><td>키</td><td>2053-08-25</td><td>비</td><td>2053-11-04</td><td>수</td><td>2054-05-23</td><td></td><td></td></tr>
+<tr>
+<td>마</td><td>마</td><td>2054-07-24</td><td>하</td><td>2054-09-13</td><td>주</td><td>2055-01-17</td><td>사</td><td>2055-05-09</td><td>미</td><td>2055-09-25</td></tr>
+<tr>
+<td>'</td><td>키</td><td>2056-01-21</td><td>비</td><td>2056-03-10</td><td>수</td><td>2056-08-01</td><td>무</td><td>2056-09-14</td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2056-11-23</td><td>주</td><td>2057-10-19</td><td>사</td><td>2058-08-06</td><td>미</td><td>2059-07-18</td><td>키</td><td>2060-05-22</td></tr>
+<tr>
+<td>'</td><td>비</td><td>2060-09-30</td><td>수</td><td>2061-10-01</td><td>무</td><td>2062-01-16</td><td>마</td><td>2062-07-18</td><td></td><td></td></tr>
+<tr>
+<td>주</td><td>주</td><td>2062-11-24</td><td>사</td><td>2063-08-11</td><td>미</td><td>2064-06-12</td><td>키</td><td>2065-03-14</td><td>비</td><td>2065-07-08</td></tr>
+<tr>
+<td>'</td><td>수</td><td>2066-05-27</td><td>무</td><td>2066-09-04</td><td>마</td><td>2067-02-11</td><td>하</td><td>2067-06-05</td><td></td><td></td></tr>
+<tr>
+<td>사</td><td>사</td><td>2068-03-22</td><td>미</td><td>2069-03-23</td><td>키</td><td>2070-02-14</td><td>비</td><td>2070-06-30</td><td>수</td><td>2071-07-22</td></tr>
+<tr>
+<td>'</td><td>무</td><td>2071-11-15</td><td>마</td><td>2072-05-23</td><td>하</td><td>2072-10-08</td><td>주</td><td>2073-09-20</td><td></td><td></td></tr>
+<tr>
+<td>미</td><td>미</td><td>2074-07-25</td><td>키</td><td>2075-05-12</td><td>비</td><td>2075-09-13</td><td>수</td><td>2076-08-22</td><td>무</td><td>2076-12-03</td></tr>
+<tr>
+<td>'</td><td>마</td><td>2077-05-23</td><td>하</td><td>2077-09-24</td><td>주</td><td>2078-07-30</td><td>사</td><td>2079-04-29</td><td></td><td></td></tr>
+<tr>
+<td>키</td><td>키</td><td>2080-03-22</td><td>비</td><td>2080-05-11</td><td>수</td><td>2080-10-03</td><td>무</td><td>2080-11-15</td><td>마</td><td>2081-01-23</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2081-03-12</td><td>주</td><td>2081-07-20</td><td>사</td><td>2081-11-12</td><td>미</td><td>2082-03-23</td><td></td><td></td></tr>
+<tr>
+<td>비</td><td>비</td><td>2082-07-25</td><td>수</td><td>2083-09-05</td><td>무</td><td>2084-01-03</td><td>마</td><td>2084-07-24</td><td>하</td><td>2084-12-13</td></tr>
+<tr>
+<td>'</td><td>주</td><td>2085-12-14</td><td>사</td><td>2086-11-04</td><td>미</td><td>2087-11-24</td><td>키</td><td>2088-11-04</td><td></td><td></td></tr>
+<tr>
+<td>수</td><td>수</td><td>2089-03-22</td><td>무</td><td>2089-04-28</td><td>마</td><td>2089-06-29</td><td>하</td><td>2089-08-12</td><td>주</td><td>2089-11-30</td></tr>
+<tr>
+<td>'</td><td>사</td><td>2090-03-04</td><td>미</td><td>2090-06-30</td><td>키</td><td>2090-10-13</td><td>비</td><td>2090-11-24</td><td></td><td></td></tr>
+<tr>
+<td>무</td><td>무</td><td>2091-03-23</td><td>마</td><td>2091-07-04</td><td>하</td><td>2091-09-15</td><td>주</td><td>2092-03-12</td><td>사</td><td>2092-08-24</td></tr>
+<tr>
+<td>'</td><td>미</td><td>2093-03-02</td><td>키</td><td>2093-08-25</td><td>비</td><td>2093-11-04</td><td>수</td><td>2094-05-23</td><td></td><td></td></tr>
+<tr>
+<td>마</td><td>마</td><td>2094-07-25</td><td>하</td><td>2094-09-14</td><td>주</td><td>2095-01-17</td><td>사</td><td>2095-05-10</td><td>미</td><td>2095-09-25</td></tr>
+<tr>
+<td>'</td><td>키</td><td>2096-01-21</td><td>비</td><td>2096-03-10</td><td>수</td><td>2096-08-02</td><td>무</td><td>2096-09-14</td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2096-11-24</td><td>주</td><td>2097-10-19</td><td>사</td><td>2098-08-06</td><td>미</td><td>2099-07-19</td><td>키</td><td>2100-05-23</td></tr>
+<tr>
+<td>'</td><td>비</td><td>2100-10-02</td><td>수</td><td>2101-10-02</td><td>무</td><td>2102-01-17</td><td>마</td><td>2102-07-19</td><td></td><td></td></tr>
+<tr>
+<td>주</td><td>주</td><td>2102-11-25</td><td>사</td><td>2103-08-12</td><td>미</td><td>2104-06-13</td><td>키</td><td>2105-03-15</td><td>비</td><td>2105-07-09</td></tr>
+<tr>
+<td>'</td><td>수</td><td>2106-05-28</td><td>무</td><td>2106-09-05</td><td>마</td><td>2107-02-12</td><td>하</td><td>2107-06-06</td><td></td><td></td></tr>
+
+    </table>
+</div>
+<h2 id = "link-14">요지니 다자 (위트 플라네트스 헤플라싱그 요지니스)</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th><th>플라네트</th><th>스타르트 다치</th></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>1989-09-05</td><td>메르크</td><td>1990-02-11</td><td>사트</td><td>1990-09-05</td><td>벵</td><td>1991-05-03</td><td>하</td><td>1992-02-11</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>1993-01-02</td><td>숭</td><td>1993-02-11</td><td>주프</td><td>1993-05-02</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>1993-09-05</td><td>사트</td><td>1994-05-13</td><td>벵</td><td>1995-03-13</td><td>하</td><td>1996-03-02</td><td>몽</td><td>1997-04-12</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>1997-06-03</td><td>주프</td><td>1997-09-15</td><td>마르스</td><td>1998-02-11</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>사트</td><td>사트</td><td>1998-09-05</td><td>벵</td><td>1999-09-05</td><td>하</td><td>2000-11-04</td><td>몽</td><td>2002-03-03</td><td>숭</td><td>2002-05-03</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2002-09-05</td><td>마르스</td><td>2003-03-03</td><td>메르크</td><td>2003-11-05</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2004-09-04</td><td>하</td><td>2006-01-13</td><td>몽</td><td>2007-08-05</td><td>숭</td><td>2007-10-16</td><td>주프</td><td>2008-03-02</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2008-10-05</td><td>메르크</td><td>2009-07-15</td><td>사트</td><td>2010-07-04</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2011-09-05</td><td>몽</td><td>2013-06-13</td><td>숭</td><td>2013-09-05</td><td>주프</td><td>2014-02-11</td><td>마르스</td><td>2014-10-16</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>2015-09-05</td><td>사트</td><td>2016-10-15</td><td>벵</td><td>2018-02-11</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2019-09-05</td><td>숭</td><td>2019-09-16</td><td>주프</td><td>2019-10-06</td><td>마르스</td><td>2019-11-05</td><td>메르크</td><td>2019-12-15</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2020-02-02</td><td>벵</td><td>2020-04-02</td><td>하</td><td>2020-06-13</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2020-09-05</td><td>주프</td><td>2020-10-15</td><td>마르스</td><td>2020-12-14</td><td>메르크</td><td>2021-03-03</td><td>사트</td><td>2021-06-13</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2021-10-16</td><td>하</td><td>2022-03-03</td><td>몽</td><td>2022-08-15</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2022-09-05</td><td>마르스</td><td>2022-12-05</td><td>메르크</td><td>2023-04-02</td><td>사트</td><td>2023-09-05</td><td>벵</td><td>2024-03-03</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2024-10-05</td><td>몽</td><td>2025-06-03</td><td>숭</td><td>2025-07-04</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>2025-09-05</td><td>메르크</td><td>2026-02-11</td><td>사트</td><td>2026-09-05</td><td>벵</td><td>2027-05-03</td><td>하</td><td>2028-02-12</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>2029-01-03</td><td>숭</td><td>2029-02-11</td><td>주프</td><td>2029-05-03</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>2029-09-05</td><td>사트</td><td>2030-05-13</td><td>벵</td><td>2031-03-13</td><td>하</td><td>2032-03-03</td><td>몽</td><td>2033-04-12</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>2033-06-03</td><td>주프</td><td>2033-09-15</td><td>마르스</td><td>2034-02-11</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>사트</td><td>사트</td><td>2034-09-05</td><td>벵</td><td>2035-09-05</td><td>하</td><td>2036-11-04</td><td>몽</td><td>2038-03-03</td><td>숭</td><td>2038-05-03</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2038-09-05</td><td>마르스</td><td>2039-03-03</td><td>메르크</td><td>2039-11-05</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2040-09-05</td><td>하</td><td>2042-01-13</td><td>몽</td><td>2043-08-05</td><td>숭</td><td>2043-10-16</td><td>주프</td><td>2044-03-03</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2044-10-05</td><td>메르크</td><td>2045-07-15</td><td>사트</td><td>2046-07-05</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2047-09-05</td><td>몽</td><td>2049-06-13</td><td>숭</td><td>2049-09-05</td><td>주프</td><td>2050-02-11</td><td>마르스</td><td>2050-10-16</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>2051-09-05</td><td>사트</td><td>2052-10-16</td><td>벵</td><td>2054-02-11</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2055-09-05</td><td>숭</td><td>2055-09-16</td><td>주프</td><td>2055-10-06</td><td>마르스</td><td>2055-11-05</td><td>메르크</td><td>2055-12-15</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2056-02-02</td><td>벵</td><td>2056-04-02</td><td>하</td><td>2056-06-13</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2056-09-05</td><td>주프</td><td>2056-10-16</td><td>마르스</td><td>2056-12-14</td><td>메르크</td><td>2057-03-03</td><td>사트</td><td>2057-06-13</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2057-10-16</td><td>하</td><td>2058-03-03</td><td>몽</td><td>2058-08-16</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2058-09-05</td><td>마르스</td><td>2058-12-05</td><td>메르크</td><td>2059-04-03</td><td>사트</td><td>2059-09-06</td><td>벵</td><td>2060-03-03</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2060-10-05</td><td>몽</td><td>2061-06-03</td><td>숭</td><td>2061-07-04</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>2061-09-05</td><td>메르크</td><td>2062-02-11</td><td>사트</td><td>2062-09-05</td><td>벵</td><td>2063-05-03</td><td>하</td><td>2064-02-12</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>2065-01-03</td><td>숭</td><td>2065-02-11</td><td>주프</td><td>2065-05-03</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>2065-09-05</td><td>사트</td><td>2066-05-14</td><td>벵</td><td>2067-03-14</td><td>하</td><td>2068-03-03</td><td>몽</td><td>2069-04-12</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>2069-06-03</td><td>주프</td><td>2069-09-15</td><td>마르스</td><td>2070-02-11</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>사트</td><td>사트</td><td>2070-09-05</td><td>벵</td><td>2071-09-06</td><td>하</td><td>2072-11-05</td><td>몽</td><td>2074-03-03</td><td>숭</td><td>2074-05-03</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2074-09-05</td><td>마르스</td><td>2075-03-04</td><td>메르크</td><td>2075-11-05</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2076-09-05</td><td>하</td><td>2078-01-13</td><td>몽</td><td>2079-08-05</td><td>숭</td><td>2079-10-16</td><td>주프</td><td>2080-03-03</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2080-10-06</td><td>메르크</td><td>2081-07-15</td><td>사트</td><td>2082-07-05</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2083-09-06</td><td>몽</td><td>2085-06-14</td><td>숭</td><td>2085-09-05</td><td>주프</td><td>2086-02-12</td><td>마르스</td><td>2086-10-16</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>2087-09-06</td><td>사트</td><td>2088-10-16</td><td>벵</td><td>2090-02-12</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2091-09-06</td><td>숭</td><td>2091-09-16</td><td>주프</td><td>2091-10-06</td><td>마르스</td><td>2091-11-06</td><td>메르크</td><td>2091-12-15</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2092-02-02</td><td>벵</td><td>2092-04-02</td><td>하</td><td>2092-06-13</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2092-09-05</td><td>주프</td><td>2092-10-16</td><td>마르스</td><td>2092-12-14</td><td>메르크</td><td>2093-03-03</td><td>사트</td><td>2093-06-14</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2093-10-16</td><td>하</td><td>2094-03-04</td><td>몽</td><td>2094-08-16</td><td></td><td></td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2094-09-05</td><td>마르스</td><td>2094-12-05</td><td>메르크</td><td>2095-04-03</td><td>사트</td><td>2095-09-06</td><td>벵</td><td>2096-03-03</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2096-10-06</td><td>몽</td><td>2097-06-03</td><td>숭</td><td>2097-07-05</td><td></td><td></td><td></td><td></td></tr>
+
+    </table>
+</div>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<div class = "table">
+    <table>
+<tr>
+<th>아야남사</th><th>발루이</th><th>Δ 지프 프롱 가우. 이크. 5° 사그</th><th>시데레아우</th><th></th><th></th><th>드9 나밤사</th><th></th><th></th></tr>
+<tr>
+<td>'</td><td>'</td><td>'</td><td>숭</td><td>몽</td><td>아스크</td><td>숭</td><td>몽</td><td>아스크</td></tr>
+<tr>
+<td>사사니앙</td><td>19°52’</td><td>-5°00’</td><td>아쿠아리우스 16°</td><td>스코르피우 15°</td><td>카프리코릉 14°</td><td>아쿠아리우스</td><td>스코르피우</td><td>타우루스</td></tr>
+<tr>
+<td>트루이 헤바치</td><td>19°55’</td><td>-4°57’</td><td>아쿠아리우스 15°</td><td>스코르피우 15°</td><td>카프리코릉 14°</td><td>아쿠아리우스</td><td>스코르피우</td><td>타우루스</td></tr>
+<tr>
+<td>우자 사지</td><td>19°56’</td><td>-4°56’</td><td>아쿠아리우스 15°</td><td>스코르피우 15°</td><td>카프리코릉 14°</td><td>아쿠아리우스</td><td>스코르피우</td><td>타우루스</td></tr>
+<tr>
+<td>이파르슈스</td><td>20°08’</td><td>-4°45’</td><td>아쿠아리우스 15°</td><td>스코르피우 15°</td><td>카프리코릉 14°</td><td>아쿠아리우스</td><td>스코르피우</td><td>타우루스</td></tr>
+<tr>
+<td>하망</td><td>22°18’</td><td>-2°35’</td><td>아쿠아리우스 13°</td><td>스코르피우 13°</td><td>카프리코릉 12°</td><td>아쿠아리우스</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>육테즈와르</td><td>22°22’</td><td>-2°31’</td><td>아쿠아리우스 13°</td><td>스코르피우 12°</td><td>카프리코릉 12°</td><td>아쿠아리우스</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>즈.응. 바징</td><td>22°39’</td><td>-2°14’</td><td>아쿠아리우스 13°</td><td>스코르피우 12°</td><td>카프리코릉 12°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>크프 오우드</td><td>23°39’</td><td>-1°14’</td><td>아쿠아리우스 12°</td><td>스코르피우 11°</td><td>카프리코릉 11°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>크리즈나무르치 파다치 (크프)</td><td>23°39’</td><td>-1°14’</td><td>아쿠아리우스 12°</td><td>스코르피우 11°</td><td>카프리코릉 11°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>크프 네</td><td>23°39’</td><td>-1°14’</td><td>아쿠아리우스 12°</td><td>스코르피우 11°</td><td>카프리코릉 11°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>트루이 시트라 0°리브</td><td>23°44’</td><td>-1°09’</td><td>아쿠아리우스 12°</td><td>스코르피우 11°</td><td>카프리코릉 11°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>라이리</td><td>23°44’</td><td>-1°08’</td><td>아쿠아리우스 12°</td><td>스코르피우 11°</td><td>카프리코릉 11°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>타크라</td><td>24°23’</td><td>-0°29’</td><td>아쿠아리우스 11°</td><td>스코르피우 10°</td><td>카프리코릉 10°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>트루이 물라 0°사그</td><td>24°28’</td><td>-0°24’</td><td>아쿠아리우스 11°</td><td>스코르피우 10°</td><td>카프리코릉 10°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>파강-브라들레이</td><td>24°37’</td><td>-0°15’</td><td>아쿠아리우스 11°</td><td>스코르피우 10°</td><td>카프리코릉 10°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>아우데바랑 15 타우루스</td><td>24°38’</td><td>-0°14’</td><td>아쿠아리우스 11°</td><td>스코르피우 10°</td><td>카프리코릉 10°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>바빌로니앙</td><td>24°40’</td><td>-0°12’</td><td>아쿠아리우스 11°</td><td>스코르피우 10°</td><td>카프리코릉 10°</td><td>카프리코릉</td><td>리브라</td><td>아리스</td></tr>
+<tr>
+<td>갈락치크 이쿠아토르 5° 사그</td><td>24°53’</td><td>±0°00’</td><td>아쿠아리우스 11°</td><td>스코르피우 10°</td><td>카프리코릉 9°</td><td>카프리코릉</td><td>리브라</td><td>피시스</td></tr>
+<tr>
+<td>지 루시</td><td>27°41’</td><td>+2°48’</td><td>아쿠아리우스 8°</td><td>스코르피우 7°</td><td>카프리코릉 7°</td><td>사지타리우스</td><td>비르구</td><td>피시스</td></tr>
+<tr>
+<td>라히 일리</td><td>27°53’</td><td>+3°00’</td><td>아쿠아리우스 8°</td><td>스코르피우 7°</td><td>카프리코릉 6°</td><td>사지타리우스</td><td>비르구</td><td>피시스</td></tr>
+<tr>
+<td>드즈아우 쿨</td><td>28°14’</td><td>+3°21’</td><td>아쿠아리우스 7°</td><td>스코르피우 7°</td><td>카프리코릉 6°</td><td>사지타리우스</td><td>비르구</td><td>아쿠아리우스</td></tr>
+
+    </table>
+</div>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-15">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 콘시데링그 웨스테릉 아스트롤로기 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스</h2>
+<p id = "para-1">&lt; 바제드 옹 티 프로비데드 나타우 샤르트 인포르마치옹 안드 콘시데링그 웨스테릉 아스트롤로기, 에리 이스 아 수마리 오프 티 시그니피칸트 아스펙트스:</p>
+<p id = "para-2">숭 잉 아쿠아리우스: 베잉그 보릉 위트 티 숭 잉 아쿠아리우스, 요 아리 리켈리 투 포세스 쿠알리치스 수시 아스 오리지날리치, 인데펜덴시, 안드 아 스트롱그 센시 오프 소시아우 주스치시. 요 아리 아 비지오나리 팅케르 우 인조이스 이스플로링그 웅콘벤치오나우 이데아스 안드 이스 노트 아프라이드 투 샬렌지 티 스타투스 쿠.</p>
+<p id = "para-3">몽 잉 스코르피우: 위트 티 몽 잉 스코르피우, 요 아비 앙 인텐시 안드 이모치오나우 나투리. 요 아리 파시오나치, 인투이치비, 안드 데플리 코넥테드 투 요르 이네르 워루드. 요 마이 비 세크레치비 안드 미스테리오스, 부트 요르 이모치오나우 스트렝그트 알로스 요 투 나비가치 트로그 리피’스 샬렌지스 위트 헤질리엔시.</p>
+<p id = "para-4">마르스 잉 카프리코릉: 마르스 잉 카프리코릉 인지카치스 아 스트롱그 드리비 투 아시에비 요르 고아우스 안드 수세드 잉 요르 인데아보르스. 요 아리 지시플리네드, 헤스폰시블리, 안드 페르시스텐트, 마킹그 요 아 헬리아블리 안드 아르드-워르킹그 인지비두아우. 요 아비 아 나투라우 탈렌트 포르 오르가니자치옹 안드 스트라테기, 이시 에우프스 요 이세우 잉 레아데르지프 홀리스.</p>
+<p id = "para-5">메르쿠리 잉 아쿠아리우스: 위트 메르쿠리 잉 아쿠아리우스, 요 아비 아 이글리 인텔렉투아우 안드 이노바치비 민드. 요 아리 앙 이셀렌트 코무니카토르 안드 인조이 잉가징그 잉 토그트-프로보킹그 콘베르사치옹스. 요 아리 드랑 투 우니키 이데아스 안드 아비 티 아빌리치 투 팅크 오트시지 티 보스, 마킹그 요 아 비지오나리 프로블렝 소우베르.</p>
+<p id = "para-6">주피테르 잉 레우 (헤트로그라지): 주피테르’스 플라세멘트 잉 레우 수제스트스 타트 요 아리 제네로스, 와릉-에아르테드, 안드 아비 아 스트롱그 데지리 포르 페르소나우 그로트 안드 세우프-이스프레시옹. 티 헤트로그라지 모치옹 마이 인지카치 타트 요 아비 소미 샬렌지스 잉 풀리 이스프레싱그...</p>
+<h2 id = "link-16">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 콘시데링그 웨스테릉 아스트롤로기 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스 (1)</h2>
+<p id = "para-7">나타우 샤르트 수마리 - 웨스테릉 아스트롤로기</p>
+<p id = "para-8">다치 오프 비르트: 페브루아리 25, 1992 치미 오프 비르트: 03:43 (로카우 치미) 플라시 오프 비르트: 상 파울루, 브라지우 라치투지: 23° 33’ 28.116’’ 스 론지투지: 46° 39’ 27.936’’</p>
+<p id = "para-9">숭 시긍: 피시스 몽 시긍: 스코르피우 히징그 시긍 (아센단트): 카프리코릉</p>
+<p id = "para-10">숭 이스 잉 아쿠아리우스 (12°11’05.56") 안드 로카테드 잉 티 2느드 오지, 인지카칭그 아 프로그레시비 안드 우마니타리앙 나투리, 위트 아 포쿠스 옹 피난시아우 마테르스 안드 페르소나우 발루이스.</p>
+<p id = "para-11">몽 이스 잉 스코르피우 (11°36’16.03") 안드 로카테드 잉 티 11트 오지, 수제스칭그 앙 인텐시 안드 이모치오나우 페르소날리치, 드랑 투 데프 코넥치옹스, 안드 아 스트롱그 잉클리나치옹 토와르드스 프리엔드지프스 안드 그로프 악치비치스.</p>
+<p id = "para-12">아센단트 이스 잉 카프리코릉 (11°04’40.86"), 마킹그 요 아페아르 지시플리네드, 프락치카우, 안드 고아우-오리엔테드, 위트 아 스트롱그 센시 오프 헤스폰시빌리치 안드 암비치옹.</p>
+<p id = "para-13">마르스 이스 콘중크트 티 아센단트 잉 카프리코릉, 아징그 이네르기, 아세르치베네스, 안드 드리비 투 아시에비 고아우스. 티스 플라세멘트 캉 아우수 마키 요 아 스트롱그 레아데르 안드 스트라테지크 팅케르.</p>
+<p id = "para-14">메르쿠리 이스 잉 아쿠아리우스, 스치물라칭그 앙 인텔렉투아우 안드 인벤치비 민드세트, 위트 이셀렌트 코무니카치옹 스키우스 안드 오리지나우 이데아스.</p>
+<p id = "para-15">주피테르 이스 헤트로그라지 잉 레우 안드 로카테드 잉 티 8트 오지, 수제스칭그 아 포텐치아우 포르 그로트 안드 이스판시옹 잉 아레아스 헬라테드 투 사레드 헤조르시스, 트란스포르마치옹, 안드 프시숄로지카우 운데르스탄징그.</p>
+<p id = "para-16">베누스 이스 잉 카프리코릉, 프로모칭그 아 카우치오스 안드 프라그마치크 아프로아시 투 로비 안드 헬라치온지프스</p>
+<h2 id = "link-17">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 이네아그랑</h2>
+<p id = "para-17">&lt; 바제드 옹 티 인포르마치옹 프로비데드 잉 티 나타우 샤르트, 티 모스트 리켈리 므브치 치피 워우드 비 인트즈 (인트로베르테드, 인투이치비, 팅킹그, 주드징그) 안드 이네아그랑 치피 3 (티 아시에베르).</p>
+<p id = "para-18">티 인트즈 치피 이스 셀렉테드 두이 투 티 스트롱그 카프리코릉 안드 아쿠아리우스 인플루엔시, 인지카칭그 아 지시플리네드, 암비치오스, 스트라테지크 팅케르 위트 아 포쿠스 옹 프락치칼리치 안드 오리지나우 이데아스. 티 이네아그랑 치피 3 이스 쇼젱 베카우지 오프 티 암비치오스, 고아우-오리엔테드, 안드 드리벵 나투리 셍 잉 티 샤르트, 위트 아 스트롱그 임파지스 옹 페르소나우 그로트 안드 아시에베멘트.</p>
+<h2 id = "link-18">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 스타르칭그 위트 티 사도 아스펙트스 콘시데링그 웨스테릉 아스트롤로기 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스</h2>
+<p id = "para-19">&lt; 티스 나타우 샤르트 헤플렉트스 티 인지비두아우’스 아스트롤로지카우 플라세멘트스 아트 티 치미 오프 테이르 비르트. 잉 웨스테릉 아스트롤로기, 티 케이 아스펙트스 오프 티 나타우 샤르트 캉 비 수마리제드 아스 폴로스:</p>
+<p id = "para-20">숭 잉 아쿠아리우스: 티 인지비두아우’스 코리 세우프 안드 이덴치치 아리 샤락테리제드 비 테이르 인데펜덴시, 우마니타리앙 발루이스, 안드 오리지나우 팅킹그. 테이 아리 리켈리 투 세크 오트 웅콘벤치오나우 파트스 안드 마이 아비 아 스트롱그 네드 포르 프레동 안드 아우토노미.</p>
+<p id = "para-21">몽 잉 스코르피우: 테이르 이모치오나우 나투리 이스 인텐시 안드 데프. 테이 마이 비 세크레치비 안드 아비 아 스트롱그 인투이치옹. 테이 아리 리켈리 투 포릉 스트롱그 이모치오나우 본드스 안드 이스페리엔시 포웨르풀 이모치옹스, 이시 캉 소메치메스 레아드 투 포세시베네스 오르 제알로지.</p>
+<p id = "para-22">마르스 잉 카프리코릉: 테이르 이네르기 안드 드리비 아리 지렉테드 토와르드스 아시에빙그 고아우스 안드 암비치옹스. 테이 아리 지시플리네드, 파치엔트, 안드 아비 아 스트롱그 워르크 이티크. 테이 아리 리켈리 투 비 스트라테지크 안드 프라그마치크 잉 테이르 아프로아시 투 샬렌지스.</p>
+<p id = "para-23">메르쿠리 잉 아쿠아리우스: 테이르 코무니카치옹 스칠리 안드 토그트 프로세시스 아리 이노바치비, 인텔렉투아우, 안드 프로그레시비. 테이 마이 아비 아 탈렌트 포르 아브스트락트 팅킹그 안드 마이 비 드랑 투 웅콘벤치오나우 이데아스 오르 피에우드스 오프 스투지.</p>
+<p id = "para-24">주피테르 (흐) 잉 레우: 테이르 그로트 안드 이스판시옹 아리 인플루엔세드 비 테이르 네드 포르 세우프-이스프레시옹, 크레아치비치, 안드 레아데르지프. 테이 마이 아비 아 스트롱그 데지리 포르 헤코그니치옹 안드 마이 비 제네로스 안드 와릉-에아르테드. 티 헤트로그라지 모치옹 오프 주피테르 수제스트스 타트 테지 쿠알리치스 마이 네드 투 비 헤발루아테드 오르 헤피네드 오베르 치미.</p>
+<p id = "para-25">베누스 잉 카프리코릉: 테이르 아프로아시 투 로비 안드 헬라치온지프스 이스 그론데드, 스타블리, 안드 코미테드. 테이 마이 발루이 롱그-테릉 파르트네르지프스 안드 마이 비 아트락테드 투 마투리, 헤스폰시블리, 안드 고아우-오리엔테드 인지비두아우스. 테이 마이 이스프레스 테이르 로비 잉 프락치카우 와이스 안드 세크 세쿠리치 안드 스타빌리치 잉 헬라치온지프스.</p>
+<p id = "para-26">사투릉 잉 카프리코릉: 테이르 센시 오프 헤스폰시빌리치, 지시플리니, 안드 스트룩투리 이스 에이그테네드 잉 테이르 리피. 테이 마이 파시 샬렌지스 헬라테드 투 이스타블리징그 아 솔리드 폰다치옹 안드 마이 네드 투 워르크 아르드 투 아시에비 테이르 고아우스. 테이 아리 리켈리 투 비 암비치오스 안드 마이 아비 아 스트롱그 센시 오프 두치 안드 코미트멘트.</p>
+<p id = "para-27">하우 잉 사지타리우스: 테이르 데지리 포르 그로트, 이스판시옹, 안드 크놀레드지 이스 암플리피에드. 테이 마이 비 아트락테드 투 트라베우, 이게르 이두카치옹, 안드 필로조피카우 오르 스피리투아우 푸르수이트스. 테이 마이 아우수 아비 아 헤스틀레스 나투리 안드 아 텐뎅키 투 세크 네 이스페리엔시스.</p>
+<p id = "para-28">케투 잉 제미니: 테이르 파스트 리피 이스페리엔시스 마이 아비 인보우베드 코무니카치옹, 레아르닝그, 안드 쿠리오지치. 테이 마이 네드 투 레트 구 오프 수페르피시아우 크놀레드지 오르 인테레스트스 안드 포쿠스 옹 데페닝그 테이르 운데르스탄징그 잉 세르타잉 아레아스 오프 테이르 리피.</p>
+<p id = "para-29">잉 수마리, 티스 인지비두아우 아스 아 스트롱그 잉클리나치옹 토와르드스 오리지날리치, 인데펜덴시, 안드 우마니타리앙 발루이스, 위트 아 데프 안드 인텐시 이모치오나우 나투리. 테이르 드리비 안드 암비치옹 아리 지렉테드 토와르드스 아시에빙그 테이르 고아우스, 안드 테이 아비 아 그론데드 아프로아시 투 로비 안드 헬라치온지프스. 테이르 그로트 안드 이스판시옹 아리 인플루엔세드 비 크레아치비치 안드 세우프-이스프레시옹, 일리 테이르 데지리 포르 그로트 안드 크놀레드지 마이 레아드 텡 투 세크 네 이스페리엔시스 안드 이스플로리 필로조피카우 오르 스피리투아우 푸르수이트스.</p>
+<h2 id = "link-19">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 이네아그랑. 텡 콩클루지 티 웨스테릉 파르트</h2>
+<p id = "para-30">&lt; 바제드 옹 티 웨스테릉 아스트롤로기 아날리지스, 티 인지비두아우 마이 헤조나치 위트 티 인프즈 (인트로베르테드, 인투이치비, 펠링그, 주드징그) 페르소날리치 치피 잉 티 미에르스-브리그스 치피 인지카토르 (므브치). 티스 페르소날리치 치피 이스 크농 포르 테이르 데프 인시그트스, 임파티, 안드 스트롱그 센시 오프 발루이스. 테이 아리 오프텡 드랑 투 에우핑그 오테르스 안드 마이 아비 아 스트롱그 인테레스트 잉 우마니타리앙 카우지스, 시밀라르 투 티 테메스 셍 잉 티 인지비두아우’스 아쿠아리우스 숭 안드 스코르피우 몽 플라세멘트스.</p>
+<p id = "para-31">아스 포르 티 이네아그랑, 티 인지비두아우 마이 알리긍 위트 치피 4, “티 인지비두알리스트.” 티스 치피 이스 샤락테리제드 비 아 데지리 포르 세우프-이스프레시옹, 크레아치비치, 안드 운데르스탄징그 오프 테이르 우니키 이덴치치. 테이 마이 아비 아 데프 안드 인텐시 이모치오나우 나투리, 아스 셍 잉 테이르 스코르피우 몽, 안드 아 스트롱그 드리비 투 아시에비 테이르 고아우스, 아스 인지카테드 비 테이르 카프리코릉 플라세멘트스.</p>
+<p id = "para-32">잉 콩클루지옹, 티 웨스테릉 아스트롤로기 아날리지스 수제스트스 타트 티스 인지비두아우 아스 아 우니키 블렌드 오프 크레아치비치, 데프트, 안드 임파티, 위트 아 스트롱그 드리비 포르 페르소나우 그로트 안드 아 코미트멘트 투 테이르 발루이스. 테이 마이 헤조나치 위트 티 인프즈 페르소날리치 치피 안드 티 이네아그랑 치피 4, 이시 토제테르 파인트 아 픽투리 오프 아 센시치비, 인시그트풀, 안드 암비치오스 페르송 우 섹스 투 마키 아 메아닝그풀 임팍트 잉 티 워루드.</p>
+<h2 id = "link-20">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 스타르칭그 위트 티 웨스테릉 아스트롤로기 파르트 베포리 위 스타르트 위트 티 지오치자 인테르프레타치옹스</h2>
+<p id = "para-33">&lt; 티스 나타우 샤르트 이스 포르 앙 인지비두아우 보릉 옹 페브루아리 25트, 1992, 아트 03:43 로카우 치미 잉 상 파울루, 브라지우. 에리 이스 아 수마리 오프 티 케이 아스펙트스 오프 티 웨스테릉 아스트롤로기 파르트 오프 티 샤르트:</p>
+<p id = "para-34">아센단트 (히징그 시긍): 카프리코릉 티 아센단트, 오르 히징그 시긍, 인지카치스 오 티 인지비두아우 프레젠트스 템세우베스 투 티 워루드. 잉 티스 카지, 티 아센단트 이스 잉 티 시긍 오프 카프리코릉, 수제스칭그 아 페르송 우 이스 암비치오스, 헤스폰시블리, 안드 지시플리네드.</p>
+<p id = "para-35">숭: 아쿠아리우스 티 숭 헤프레젠트스 티 인지비두아우’스 코리 이덴치치 안드 리피 푸르포지. 티스 페르송’스 숭 이스 잉 아쿠아리우스, 인지카칭그 아 페르소날리치 타트 이스 인데펜덴트, 이노바치비, 안드 포르와르드-팅킹그.</p>
+<p id = "para-36">몽: 스코르피우 티 몽 헤프레젠트스 티 페르송’스 이모치오나우 나투리 안드 이네르 세우프. 잉 티스 샤르트, 티 몽 이스 잉 스코르피우, 수제스칭그 아 데프, 인텐시, 안드 트란스포르마치비 이모치오나우 나투리.</p>
+<p id = "para-37">메르쿠리: 아쿠아리우스 메르쿠리 헤프레젠트스 티 인지비두아우’스 코무니카치옹 스칠리 안드 인텔렉투아우 아빌리치스. 잉 티스 카지, 메르쿠리 이스 잉 아쿠아리우스, 수제스칭그 아 페르송 우 이스 인텔렉투알리 쿠리오스, 인벤치비, 안드 인조이스 이스플로링그 웅콘벤치오나우 이데아스.</p>
+<p id = "para-38">베누스: 카프리코릉 베누스 헤프레젠트스 티 인지비두아우’스 아프로아시 투 로비 안드 헬라치온지프스, 아스 웨우 아스 테이르 발루이스 안드 아에스테칙스. 잉 티스 샤르트, 베누스 이스 잉 카프리코릉, 인지카칭그 아 페르송 우 이스 카우치오스 안드 프라그마치크 잉 로비, 위트 아 스트롱그 센시 오프 두치 안드 헤스폰시빌리치 잉 헬라치온지프스.</p>
+<p id = "para-39">마르스: 카프리코릉 마르스 헤프레젠트스 티 인지비두아우’스 드리비, 이네르기, 안드 아세르치베네스. 잉 티스 샤르트, 마르스 이스 잉 카프리코릉, 수제스칭그 아 페르송 우 이스 지시플리네드, 포쿠제드, 안드 암비치오스 잉 푸르수잉그 테이르 고아우스.</p>
+<p id = "para-40">주피테르 (헤트로그라지): 레우 주피테르 헤프레젠트스 헤프레젠트스 그로트, 이스판시옹, 안드 위즈동. 잉 티스 샤르트, 주피테르 이스 잉 레우 안드 헤트로그라지, 인지카칭그 아 페르송 우 섹스 세우프-이스프레시옹, 크레아치비치, 안드 헤코그니치옹 잉 테이르 케스트 포르 페르소나우 그로트. 티 헤트로그라지 모치옹 수제스트스 타트 테이 마이 네드 투 헤비지트 안드 헤발루아치 파스트 이스페리엔시스 안드 벨리에프스 잉 오르데르 투 가잉 아 데페르 운데르스탄징그 오프 템세우베스 안드 테이르 리피’스 푸르포지.</p>
+<p id = "para-41">사투릉: 카프리코릉 사투릉 헤프레젠트스 지시플리니, 스트룩투리, 안드 리미타치옹스. 잉 티스 샤르트, 사투릉 이스 잉 이트스 오미 시긍 오프 카프리코릉, 수제스칭그 아 페르송 우 이스 질리젠트, 헤스폰시블리, 안드 아블리 투 오베르코미 오브스타클리스 트로그 아르드 워르크 안드 데테르미나치옹.</p>
+<p id = "para-42">우라누스: 카프리코릉 우라누스 헤프레젠트스 샨지, 이노바치옹, 안드 헤벨리옹. 잉 티스 샤르트, 우라누스 이스 잉 카프리코릉, 수제스칭그 아 페르송 우 브링그스 아보트 샨지 안드 이노바치옹 트로그 지시플리네드, 스트룩투레드, 안드 프락치카우 메앙스.</p>
+<p id = "para-43">네프투니: 카프리코릉 네프투니 헤프레젠트스 드레암스, 일루지옹스, 안드 스피리투알리치. 잉 티스 샤르트, 네프투니 이스 잉 카프리코릉, 인지카칭그 아 페르송 우 섹스 투 마니페스트 테이르 드레암스 안드 이데아우스 트로그 프락치카우 메앙스 안드 아 스트롱그 워르크 이티크.</p>
+<p id = "para-44">플루투: 스코르피우 플루투 헤프레젠트스 트란스포르마치옹, 포웨르, 안드 헤제네라치옹. 잉 티스 샤르트, 플루투 이스 잉 이트스 오미 시긍 오프 스코르피우, 수제스칭그 아 페르송 우 이스페리엔시스 데프, 트란스포르마치비 샨지스 안드 포세시스 아 스트롱그 데지리 포르 페르소나우 그로트 안드 세우프-마스테리.</p>
+<p id = "para-45">오베라우, 티스 나타우 샤르트 수제스트스 아 스트롱그 임파지스 옹 암비치옹, 지시플리니, 안드 프락치칼리치, 위트 아 드리비 포르 그로트 안드 트란스포르마치옹. 티 인지비두아우 이스 리켈리 투 비 인데펜덴트 안드 이노바치비, 위트 아 데프 이모치오나우 나투리 안드 아 포쿠스 옹 아르드 워르크 안드 헤스폰시빌리치 잉 테이르 헬라치온지프스 안드 페르소나우 푸르수이트스.</p>
+<h2 id = "link-21">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-46">&lt; 바제드 옹 티 인포르마치옹 프로비데드 잉 티 나타우 샤르트, 티 인지비두아우’스 므브치 치피 워우드 리켈리 비 이스트즈 (인트로베르테드, 센싱그, 팅킹그, 주드징그) 안드 테이르 이네아그랑 치피 워우드 리켈리 비 치피 3 (티 아시에베르).</p>
+<p id = "para-47">티 이스트즈 치피 피트스 웨우 위트 티 페르송’스 지시플리네드, 헤스폰시블리, 안드 프락치카우 나투리, 아스 웨우 아스 테이르 스트롱그 워르크 이티크 안드 포쿠스 옹 스트룩투리. 테이 아리 리켈리 투 비 데타이우-오리엔테드, 로지카우, 안드 발루이 트라지치옹 안드 스타빌리치.</p>
+<p id = "para-48">이네아그랑 치피 3, 티 아시에베르, 알리긍스 위트 티 인지비두아우’스 드리비 포르 수세스, 암비치옹, 안드 데지리 포르 헤코그니치옹. 치피 3스 아리 고아우-오리엔테드, 아르드워르킹그, 안드 아다프타블리, 이시 콤플레멘트스 티 카프리코릉 안드 스코르피우 인플루엔시스 셍 잉 티 나타우 샤르트.</p>
+<h2 id = "link-22">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 아우 아스트롤로지스 콘시데링그 티스 비르트 다치 크로스 헤페렌싱그 텡</h2>
+<p id = "para-49">&lt; 바제드 옹 티 인포르마치옹 프로비데드, 에리 이스 아 수마리 오프 티 케이 포인트스 잉 티 나타우 샤르트 프롱 바리오스 아스트롤로지카우 시스템스:</p>
+<p id = "para-50">웨스테릉 아스트롤로기: 숭 잉 피시스: 티스 플라세멘트 인지카치스 임파티, 인투이치옹, 안드 크레아치비치. 인지비두아우스 위트 아 피시스 숭 오프텡 아비 아 스트롱그 코넥치옹 투 테이르 이모치옹스 안드 캉 비 키치 센시치비. 몽 잉 스코르피우: 티스 플라세멘트 수제스트스 스트롱그 이모치옹스 안드 인텐시 펠링그스. 페오플리 위트 아 스코르피우 몽 마이 이스페리엔시 이모치오나우 이스트레메스 안드 아리 오프텡 데플리 파시오나치. 아센단트 잉 카프리코릉: 위트 아 카프리코릉 아센단트, 티 인지비두아우 이스 리켈리 투 비 헤스폰시블리, 지시플리네드, 안드 고아우-오리엔테드. 테이 텐드 투 비 아르드워르킹그 안드 포쿠제드 옹 아시에빙그 수세스. 베지크 아스트롤로기: 라그나 (아센단트) 잉 카프리코릉: 티스 헤인포르시스 티 쿠알리치스 오프 헤스폰시빌리치, 지시플리니, 안드 고아우-오리엔타치옹 멘치오네드 이아를리에르. 티 인지비두아우 위우 리켈리 아비 아 스트롱그 워르크 이티크 안드 비 데테르미네드 투 아시에비 테이르 암비치옹스. 숭 잉 아쿠아리우스: 페오플리 위트 앙 아쿠아리우스 숭 잉 베지크 아스트롤로기 아리 오프텡 이노바치비, 인데펜덴트, 안드 우마니타리앙. 테이 캉 비 셍 아스 이센트리크 안드 웅콘벤치오나우 비 오테르스. 몽 잉 스코르피우: 티스 플라세멘트 헤인포르시스 티 인텐시 이모치오나우 나투리 안드 데프 파시옹 멘치오네드 잉 티 웨스테릉 아스트롤로기 아날리지스. 인지비두아우스 위트 아 스코르피우 몽 마이 비 세크레치비 안드 포세시비 잉 헬라치온지프스. 헤트로그라지 주피테르 잉 레우: 티스 플라세멘트 수제스트스 타트 티 인지비두아우 마이 아비 투 워르크 아르데르 투 데벨로프 테이르 위즈동, 스피리투알리치, 안드 센시 오프 오프치미증. 테이 마이 비 드랑 투 레아데르지프 홀리스 안드 아비 아 스트롱그 데지리 포르 레아데르지프 홀리스 안드 아비 아 스트롱그 데지리 포르 헤코그니치옹 안드 헤스펙트. 티 헤트로그라지 모치옹 인지카치스 타트 티 인지비두아우 마이 네드 투 헤비지트 안드 헤발루아치 테이르 벨리에프스 안드 아프로아시 투 그로트 트로고트 테이르 리피.</p>
+<p id = "para-51">아즈타카바르가: 티 스트렝그트 오프 티 플라네트스 잉 티 나타우 샤르트 수제스트스 타트 베누스 안드 사투릉 아리 파르치쿨라를리 스트롱그, 인지카칭그 아 포텐치아우 포르 수세스 잉 아레아스 헬라테드 투 헬라치온지프스, 베아우치, 안드 지시플리니. 주피테르 안드 티 몽 아리 아우수 헬라치벨리 스트롱그, 수제스칭그 앙 임파지스 옹 위즈동, 이스판시옹, 안드 이모치오나우 이스프레시옹. 사드발라: 티 플라네타리 스트렝그트스 잉 사드발라 인지카치 타트 사투릉, 베누스, 안드 티 몽 아비 티 이게스트 스트렝그트, 임파지징그 티 임포르탄시 오프 지시플리니, 헬라치온지프스, 안드 이모치오나우 이스프레시옹 잉 티 인지비두아우’스 리피. 주피테르 안드 마르스 아우수 포세스 아 노타블리 스트렝그트, 이글리그칭그 티 시그니피칸시 오프 위즈동, 그로트, 안드 아세르치베네스. 빔소파카 발라: 잉 빔소파카 발라, 사투릉 안드 베누스 아비 티 이게스트 스코리스, 푸르테르 헤인포르싱그 테이르 시그니피칸시 잉 티 인지비두아우’스 리피. 티스 수제스트스 타트 티 페르송 마이 아시에비 수세스 트로그 페르세베란시, 아르드 워르크, 안드 앙 아프레시아치옹 포르 베아우치 안드 아르모니. 티 몽 안드 마르스 아우수 아비 헬라치벨리 이그 스코리스, 임파지징그 이모치오나우 데프트 안드 티 포텐치아우 포르 스트롱그 아세르치베네스 오르 이벵 아그레시옹 엥 네세사리. 플라네타리 악치비치스: 모스트 오프 티 플라네트스 아리 이테르 시칭그 오르 데지로스 오프 단싱그, 이시 인지카치스 아 미스 오프 인트로스펙치옹 안드 아 데지리 포르 악치옹 오르 이스프레시옹. 티 숭, 마르스, 베누스, 사투릉, 안드 케투 아리 데지로스 오프 단싱그, 수제스칭그 아 스트롱그 드리비 포르 세우프-이스프레시옹 안드 모베멘트 잉 바리오스 아스펙트스 오프 리피. 티 몽, 메르쿠리, 안드 주피테르 아리 시칭그, 이시 임플리스 아 모리 콘템플라치비 안드 인트로스펙치비 아프로아시 투 이모치오나우 이스프레시옹, 코무니카치옹, 안드 위즈동.</p>
+<p id = "para-52">아지 안드 모드:</p>
+<p id = "para-53">티 플라네트스’ 아지스 안드 모드스 오페르 푸르테르 인시그트 인투 티 인지비두아우’스 템페라멘트 안드 리피 이스페리엔시스. 티 숭 안드 주피테르 아리 용그, 일리 티 몽, 마르스, 안드 메르쿠리 아리 오우드, 수제스칭그 아 블렌드 오프 요트풀 이네르기 안드 마투리 위즈동 잉 테이르 푸르수이트스. 사투릉 이스 잉 이트스 아돌레센트 파지, 헤플렉칭그 티 네드 포르 그로트 안드 레아르닝그 트로그 샬렌지스.</p>
+<p id = "para-54">잉 테름스 오프 모드, 티 숭, 주피테르, 안드 베누스 아리 사드 오르 미스시에보스, 인지카칭그 소미 이모치오나우 플룩투아치옹스 안드 포텐치아우 포르 마니풀라치옹. 티 몽 안드 메르쿠리 아리 페아세풀 예트 미스시에보스, 수제스칭그 아 칼릉 데메아노르 위트 아 플라이풀 오르 쿠닝그 시지. 마르스 이스 글로윙그, 지스트레세드, 미스시에보스, 안드 프로드, 헤플렉칭그 아 콤플레스 이모치오나우 란드스카피 안드 스트롱그 데테르미나치옹. 사투릉 이스 콤포르타블리 안드 미스시에보스, 인지카칭그 스타빌리치 안드 지시플리니, 부트 아우수 아 포텐치아우 포르 데세이트 오르 마니풀라치옹.</p>
+<p id = "para-55">잉 수마리, 티스 나타우 샤르트 헤프레젠트스 아 페르송 위트 아 스트롱그 드리비 포르 수세스, 레아데르지프, 안드 헤코그니치옹. 테이 마이 이스페리엔시 그로트 트로그 샬렌지스 안드 아리 리켈리 투 비 드랑 투 헬라치온지프스 안드 베아우치. 티 인지비두아우 마이 포세스 아 블렌드 오프 요트풀 이네르기 안드 마투리 위즈동, 위트 아 콤플레스 이모치오나우 란드스카피 타트 잉클루지스 아 펜샨트 포르 미스시에프. 테이 소우드 포쿠스 옹 아르네싱그 테이르 스트렝그트스 안드 핀징그 발란시 잉 테이르 푸르수이트스 투 아시에비 페르소나우 안드 프로페시오나우 수세스.</p>
+<h2 id = "link-23">프롱 티스, 피크 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</h2>
+<p id = "para-56">&lt; 바제드 옹 티 인포르마치옹 프롱 티 나타우 샤르트, 이트’스 이센치아우 투 노치 타트 아스트롤로지카우 인포르마치옹 카노트 지렉틀리 코헬라치 위트 므브치 오르 이네아그랑 치페스. 오웨베르, 이 캉 프로비지 아 수제스치옹 바제드 옹 티 샤르트’스 제네라우 테메스.</p>
+<p id = "para-57">므브치 치피: 인트즈 (티 코만데르)</p>
+<p id = "para-58">티스 치피 이스 샤락테리제드 비 스트롱그 레아데르지프 아빌리치스, 아 포쿠스 옹 아시에빙그 고아우스, 안드 베잉그 오르가니제드 안드 스트라테지크 잉 테이르 아프로아시. 테이 아리 암비치오스, 아세르치비, 안드 아비 아 나투라우 아빌리치 투 마나지 안드 모치바치 오테르스. 이네아그랑 치피: 3 (티 아시에베르)</p>
+<p id = "para-59">티스 치피 이스 아시에베멘트-오리엔테드, 드리벵 비 수세스, 안드 포쿠제드 옹 페르소나우 안드 프로페시오나우 그로트. 테이 아리 아다프타블리, 이피시엔트, 안드 세크 투 마키 아 포지치비 임프레시옹 옹 오테르스. 테이 마이 스트루글리 위트 워르크-리피 발란시 안드 페르펙치오니증. 플레아지 헤멤베르 타트 티스 수제스치옹 이스 스페쿨라치비 안드 소우드 노트 비 타켕 아스 앙 아쿠라치 헤프레젠타치옹 오프 티 인지비두아우’스 페르소날리치. 티 므브치 안드 이네아그랑 아리 바제드 옹 세우프-아세스멘트 안드 페르소나우 헤플렉치옹, 안드 오니 소우드 이스플로리 테지 시스템스 푸르테르 투 데테르미니 테이르 치피 모리 아쿠라텔리.</p>
+<h2 id = "link-24">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 아우 아스트롤로지스 콘시데링그 티스 비르트 다치 크로스 헤페렌싱그 텡 (1)</h2>
+<p id = "para-60">&lt; 바제드 옹 티 지벵 나타우 샤르트 안드 콘시데링그 무우치플리 아스트롤로지카우 시스템스, 티 폴로윙그 수마리 아스 벵 데리베드:</p>
+<p id = "para-61">숭 시긍: 티 인지비두아우 와스 보릉 운데르 티 숭 시긍 오프 피시스, 이시 마키스 텡 인투이치비, 임파테치크, 안드 콤파시오나치. 테이 마이 아비 아 스트롱그 코넥치옹 투 티 스피리투아우 워루드 안드 아 데프 운데르스탄징그 오프 오테르스’ 이모치옹스.</p>
+<p id = "para-62">아센단트 시긍: 카프리코릉 이스 티 히징그 시긍 오르 라그나, 이시 인지카치스 아 헤스폰시블리, 지시플리네드, 안드 암비치오스 나투리. 테지 인지비두아우스 아리 리켈리 투 아비 아 스트롱그 워르크 이티크 안드 비 고아우-오리엔테드.</p>
+<p id = "para-63">몽 시긍: 티 몽 이스 잉 스코르피우, 이시 수제스트스 앙 인텐시 안드 이모치오나우 나투리. 테지 인지비두아우스 마이 이스페리엔시 데프 펠링그스 안드 비 드랑 투 트란스포르마치비 이스페리엔시스 잉 테이르 리베스.</p>
+<p id = "para-64">플라네타리 플라세멘트스:</p>
+<p id = "para-65">마르스, 베누스, 안드 사투릉 아리 콘중크트 잉 카프리코릉, 인지카칭그 아 스트롱그 드리비 포르 수세스, 암비치옹, 안드 아 프락치카우 아프로아시 투 리피. 주피테르 이스 잉 레우, 수제스칭그 아 스트롱그 센시 오프 프리지, 콘피덴시, 안드 아 제네로스 나투리. 메르쿠리 이스 잉 아쿠아리우스, 이시 캉 인지카치 앙 이노바치비 안드 프로그레시비 팅케르 우 발루이스 인텔렉투아우 프레동 안드 우니키 이데아스. 하우 이스 잉 사지타리우스, 안드 케투 이스 잉 제미니, 소윙그 아 드리비 포르 이스플로라치옹, 레아르닝그, 안드 아 데지리 투 브레아크 프레이 프롱 리미칭그 벨리에프스. 아즈타카바르가: 바제드 옹 티 지벵 타블리, 베누스 안드 사투릉 아비 티 이게스트 스트렝그트, 인지카칭그 타트 테지 플라네트스 마이 아비 아 시그니피칸트 인플루엔시 잉 티 나치비’스 리피. 베누스 헤프레젠트스 로비, 베아우치, 안드 헬라치온지프스, 일리 사투릉 헤프레젠트스 지시플리니, 헤스폰시빌리치, 안드 카르미크 레송스. 테지 인플루엔시스 수제스트 타트 티 인지비두아우 마이 플라시 그레아트 임포르탄시 옹 보트 테이르 페르소나우 안드 프로페시오나우 헬라치온지프스, 아스 웨우 아스 테이르 두치스 안드 오블리가치옹스.</p>
+<p id = "para-66">사드발라: 잉 티 지벵 샤르트, 티 몽 안드 사투릉 아비 티 이게스트 스트렝그트, 임파지징그 티 임포르탄시 오프 이모치오나우 인텔리젠시 안드 헤스폰시빌리치 잉 티 페르송’스 리피. 테이 마이 비 파르치쿨라를리 센시치비 투 티 이모치오나우 클리마치 아론드 텡 안드 아블리 투 나비가치 샬렌징그 시투아치옹스 위트 헤질리엔시 안드 프락치칼리치.</p>
+<p id = "para-67">빔소파카 발라: 사투릉 아스 티 이게스트 스트렝그트 아크로스 지페렌트 바르가 샤르트스, 헤이테라칭그 이트스 인플루엔시 옹 티 나치비’스 리피. 티스 헤인포르시스 티 테메스 오프 지시플리니, 헤스폰시빌리치, 안드 레아르닝그 프롱 리피’스 샬렌지스.</p>
+<p id = "para-68">플라네타리 악치비치: 티 마조리치 오프 플라네트스, 잉클루징그 티 숭, 마르스, 베누스, 사투릉, 안드 케투, 아리 잉 아 스타치 오프 “느히치알리프사,” 이시 메앙스 테이 아리 데지로스 오프 단싱그. 티스 캉 인지카치 아 페르송 우 이스 파시오나치, 이네르제치크, 안드 이스프레시비 잉 바리오스 아스펙트스 오프 테이르 리피.</p>
+<p id = "para-69">플라네타리 아지 안드 모드: 티 숭 안드 주피테르 아리 콘시데레드 용그, 일리 티 몽, 마르스, 안드 메르쿠리 아리 셍 아스 오우드. 사투릉 이스 콘시데레드 앙 아돌레센트 잉 티스 샤르트. 티스 미스 오프 플라네타리 이네르지스 캉 콘트리부치 투 아 발란시 오프 요트풀 인투지아증, 위즈동, 안드 프락치칼리치 잉 티 인지비두아우’스 리피.</p>
+<p id = "para-70">잉 콩클루지옹, 티 나치비’스 나타우 샤르트 수제스트스 아 스트롱그 임파지스 옹 암비치옹, 지시플리니, 헤스폰시빌리치, 안드 이모치오나우 인텔리젠시. 테이 마이 비 파시오나치, 이네르제치크, 안드 이스프레시비 잉 바리오스 아스펙트스 오프 테이르 리피, 일리 아우수 발루잉그 페르소나우 안드 프로페시오나우 헬라치온지프스. 발란싱그 요트풀 인투지아증, 위즈동, 안드 프락치칼리치, 티 인지비두아우 이스 리켈리 투 나비가치 리피’스 샬렌지스 위트 헤질리엔시.</p>
+<p id = "para-71">타킹그 인투 콘시데라치옹 티 프로미넨트 아스트롤로지카우 인플루엔시스, 오니 포시블리 므브치 치피 타트 코우드 마트시 티스 인지비두아우 이스 티 이스트즈 (인트로베르테드, 센싱그, 팅킹그, 주드징그). 이스트즈스 아리 크농 포르 테이르 센시 오프 두치, 헤스폰시빌리치, 안드 프라그마치증. 테이 오프텡 프레페르 스트룩투리 안드 오르가니자치옹, 발루이 트라지치옹스, 안드 아비 아 스트롱그 워르크 이티크.</p>
+<p id = "para-72">아스 포르 티 이네아그랑 치피, 치피 1 (티 페르펙치오니스트) 셈스 투 알리긍 웨우 위트 티 인지비두아우’스 샤락테리스칙스. 치피 1스 아리 크농 포르 테이르 스트롱그 센시 오프 두치, 헤스폰시빌리치, 안드 테이르 데지리 포르 오르데르 안드 임프로베멘트. 테이 아리 오프텡 이티카우, 콘시엔치오스, 안드 헬리아블리, 콘스탄틀리 스트리빙그 포르 페르소나우 안드 프로페시오나우 그로트.</p>
+<p id = "para-73">케프 잉 민드 타트 므브치 안드 이네아그랑 치페스 아리 노트 앙 이작트 시엔시, 안드 티 인지비두아우’스 페르소날리치 안드 베아비오르 마이 바리 프롱 티 제네라우 샤락테리스칙스 오프 테지 치페스. 이트 이스 아우와이스 이센치아우 투 콘시데르 티 우니키 리피 이스페리엔시스 안드 페르소나우 그로트 오프 티 인지비두아우 엥 이발루아칭그 테이르 페르소날리치.</p>
+<h2 id = "link-25">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 아우 아스트롤로지스 콘시데링그 티스 비르트 다치 크로스 헤페렌싱그 텡 안드 텡 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-74">&lt; 바제드 옹 티 프로비데드 나타우 샤르트 안드 콘시데링그 바리오스 아스트롤로지카우 아스펙트스, 위 캉 아템프트 투 수마리지 티 페르소날리치 트라이트스 안드 수제스트 아 포텐치아우 므브치 안드 이네아그랑 치피. 오웨베르, 플레아지 노치 타트 테지 인테르프레타치옹스 아리 노트 데피니치비, 안드 인지비두아우 이스페리엔시스 안드 페르소나우 그로트 캉 인플루엔시 오니’스 페르소날리치 베욘드 테지 아스트롤로지카우 팍토르스.</p>
+<p id = "para-75">티 나치비 와스 보릉 운데르 티 시긍 오프 아쿠아리우스 위트 카프리코릉 아센단트. 테이 아비 아 스트롱그 사투릉 안드 베누스 인플루엔시, 아스 웨우 아스 아 시그니피칸트 프레젠시 오프 마르스. 티 샤르트 수제스트스 아 쿠리오스, 인텔리젠트, 안드 암비치오스 인지비두아우 위트 아 크나크 포르 오리지나우 팅킹그 안드 앙 잉클리나치옹 토와르드스 소시아우 카우지스.</p>
+<p id = "para-76">티 페르송 마이 포세스 아 스트롱그 센시 오프 두치 안드 헤스폰시빌리치, 위트 아 솔리드 워르크 이티크 안드 아 프락치카우 아프로아시 투 프로블렝-소우빙그. 테이 아리 리켈리 투 비 지시플리네드 안드 오르가니제드, 위트 아 카파시치 포르 스트라테지크 플라닝그 안드 티 아빌리치 투 아시에비 롱그-테릉 고아우스.</p>
+<p id = "para-77">티 나치비 이스 아우수 리켈리 투 비 크레아치비, 아프레시아치비 오프 베아우치, 안드 인테레스테드 잉 아에스테칙스. 테이 미그트 아비 앙 아피니치 포르 아르트, 무지크, 오르 오테르 포름스 오프 크레아치비 이스프레시옹. 테이르 헬라치온지프스 코우드 비 임포르탄트, 안드 테이 마이 세크 아르모니 안드 발란시 잉 테이르 페르소나우 리피.</p>
+<p id = "para-78">바제드 옹 테지 트라이트스, 이트 셈스 타트 티 모스트 피칭그 므브치 치피 포르 티 나치비 코우드 비 인트즈 (인트로베르테드, 인투이치비, 팅킹그, 주드징그). 티스 치피 이스 크농 포르 테이르 스트라테지크 팅킹그, 스트롱그 인투이치옹, 안드 아빌리치 투 투릉 이데아스 인투 헤알리치. 테이 아리 암비치오스 안드 데테르미네드, 오프텡 푸르수잉그 테이르 고아우스 위트 아 헬렌틀레스 포쿠스.</p>
+<p id = "para-79">포르 티 이네아그랑 치피, 이트 셈스 타트 치피 1 (티 페르펙치오니스트) 오르 치피 3 (티 아시에베르) 코우드 비 아 수이타블리 마트시. 치피 1 인지비두아우스 아리 크농 포르 테이르 스트롱그 센시 오프 헤스폰시빌리치, 인테그리치, 안드 이티카우 스탄다르드스. 테이 아리 드리벵 투 임프로비 템세우베스 안드 티 워루드 아론드 텡, 오프텡 스트리빙그 포르 페르펙치옹 잉 테이르 인데아보르스.</p>
+<p id = "para-80">옹 티 오테르 안드, 치피 3 인지비두아우스 아리 고아우-오리엔테드, 수세스-드리벵, 안드 이피시엔트. 테이 이세우 아트 세칭그 안드 아시에빙그 오브젝치베스 안드 아리 모치바테드 비 티 데지리 포르 페르소나우 그로트 안드 아콤플리즈멘트. 테이 아리 아다프타블리 안드 캉 비 이글리 스킬레드 아트 나비가칭그 소시아우 시투아치옹스, 토그 테이 마이 소메치메스 포쿠스 토 무시 옹 테이르 이마지 안드 이스테르나우 발리다치옹.</p>
+<p id = "para-81">바제드 옹 티 나타우 샤르트, 티 나치비 마이 레앙 모리 토와르드스 치피 1 두이 투 티 스트롱그 사투릉 인플루엔시, 이시 임파지지스 지시플리니, 헤스폰시빌리치, 안드 아 스트롱그 워르크 이티크. 오웨베르, 테이르 크레아치비 안드 아르모니오스 베누스 인플루엔시 코우드 아우수 수제스트 아 블렌드 오프 치피 3 샤락테리스칙스.</p>
+<p id = "para-82">잉 콩클루지옹, 티 모스트 리켈리 므브치 안드 이네아그랑 치페스 포르 티스 인지비두아우, 바제드 옹 티 프로비데드 나타우 샤르트, 코우드 비 인트즈 안드 아 콤비나치옹 오프 이네아그랑 치피 1 (티 페르펙치오니스트) 안드 치피 3 (티 아시에베르). 오웨베르, 이트 이스 임포르탄트 투 헤멤베르 타트 아스트롤로기 캉 온리 프로비지 아 제네라우 오베르비에 오프 페르소날리치 트라이트스, 안드 페르소나우 이스페리엔시스 안드 그로트 캉 아우수 플라이 아 시그니피칸트 홀리 잉 사핑그 오니’스 페르소날리치.</p>
+<h2 id = "link-26">노 데우비 데프 잉 티 지오치자 아스펙트 오프 티 셀레스치아우 플라세멘트스</h2>
+<p id = "para-83">&lt; 잉 티 지오치즈 (베지크 아스트롤로기) 시스텡, 위 위우 아날리지 티 나치비’스 나타우 샤르트 포쿠징그 옹 티 셀레스치아우 플라세멘트스 안드 테이르 임플리카치옹스.</p>
+<p id = "para-84">라그나 (아센단트) 이스 잉 카프리코릉, 이시 마키스 티 나치비 프락치카우, 지시플리네드, 안드 고아우-오리엔테드. 테이 마이 포세스 스트롱그 오르가니자치오나우 스키우스 안드 아 데테르미네드 민드세트, 오프텡 스트리빙그 포르 스트룩투리 안드 스타빌리치 잉 리피.</p>
+<p id = "para-85">티 숭 이스 잉 아쿠아리우스, 마킹그 티 나치비 이노바치비, 인텔리젠트, 안드 인데펜덴트. 테이 발루이 테이르 프레동 안드 텐드 투 팅크 오트 오프 티 보스. 테이 마이 아비 아 스트롱그 인테레스트 잉 우마니타리앙 카우지스 안드 소시아우 이수이스.</p>
+<p id = "para-86">티 몽 이스 잉 스코르피우, 이시 아드스 이모치오나우 데프트 안드 인텐시치 투 티 나치비’스 페르소날리치. 테이 마이 이스페리엔시 스트롱그 파시옹스 안드 펠링그스, 안드 테이르 인투이치옹 이스 오프텡 에이그테네드. 테이 마이 아우수 아비 아 텐뎅키 투 비 세크레치비 안드 인트로스펙치비.</p>
+<p id = "para-87">마르스 이스 잉 카프리코릉, 지빙그 티 나치비 아 그레아트 데아우 오프 데테르미나치옹 안드 암비치옹. 테이 아리 드리벵 투 수세드 안드 아비 티 이네르기 안드 포쿠스 투 아시에비 테이르 고아우스. 티스 플라세멘트 아우수 이냔시스 테이르 레아데르지프 아빌리치스 안드 카파시치 포르 아르드 워르크.</p>
+<p id = "para-88">메르쿠리 이스 잉 아쿠아리우스, 이시 인지카치스 앙 인텔렉투아우 안드 프로그레시비 민드세트. 티 나치비 이스 리켈리 투 비 아 고드 코무니카토르 위트 웅콘벤치오나우 이데아스 안드 앙 인테레스트 잉 아드반세드 테시놀로지스 오르 푸투리스치크 콘세프트스.</p>
+<p id = "para-89">주피테르 이스 헤트로그라지 잉 레우, 수제스칭그 아 스트롱그 네드 포르 세우프-이스프레시옹 안드 헤코그니치옹. 티 나치비 마이 포세스 앙 오프치미스치크 안드 제네로스 스피리트 부트 마이 아우수 스트루글리 위트 에구 안드 프리지. 티 헤트로그라지 모치옹 마이 레아드 투 아 모리 인트로스펙치비 아프로아시 투 스피리투알리치 안드 페르소나우 그로트.</p>
+<p id = "para-90">베누스 이스 잉 카프리코릉, 마킹그 티 나치비 프라그마치크 안드 카우치오스 잉 로비 안드 헬라치온지프스. 테이 발루이 스타빌리치 안드 코미트멘트 안드 마이 타키 아 프락치카우 아프로아시 투 마테르스 오프 티 에아르트. 티스 플라세멘트 아우수 인지카치스 앙 아프레시아치옹 포르 베아우치, 아르트, 안드 트라지치옹.</p>
+<p id = "para-91">사투릉 이스 잉 카프리코릉, 이시 푸르테르 임파지지스 티 나치비’스 센시 오프 지시플리니, 헤스폰시빌리치, 안드 프락치칼리치. 티스 플라세멘트 스트렝그텡스 테이르 아빌리치 투 워르크 아르드, 페르세베리, 안드 크레아치 아 솔리드 폰다치옹 포르 테이르 리피. 오웨베르, 이트 캉 아우수 레아드 투 펠링그스 오프 리미타치옹 오르 아 페아르 오프 파일루리.</p>
+<p id = "para-92">하우 이스 잉 사지타리우스, 이시 캉 마키 티 나치비 아드벤투로스, 쿠리오스, 안드 이아제르 투 이스플로리 네 오리종스. 테이 마이 비 드랑 투 트라베우, 필로조피, 안드 이게르 레아르닝그. 오웨베르, 하우’스 인플루엔시 캉 아우수 카우지 헤스틀레스네스 안드 아 콘스탄트 데지리 포르 샨지.</p>
+<p id = "para-93">케투 이스 잉 제미니, 이시 캉 인지카치 아 스트롱그 인텔렉투아우 쿠리오지치 안드 아 네드 포르 바리에치 잉 리피. 티 나치비 마이 아비 아 탈렌트 포르 코무니카치옹 안드 마이 이세우 잉 아레아스 타트 헤키리 아다프타빌리치 안드 무우치타스킹그. 오웨베르, 케투’스 프레젠시 캉 아우수 크레아치 아 센시 오프 데타시멘트 오르 콘푸지옹 잉 페르소나우 헬라치온지프스 안드 데시지옹-마킹그.</p>
+<p id = "para-94">티 아즈타카바르가 시스텡 이글리그트스 티 스트렝그트스 안드 웨아크네시스 오프 티 플라네트스 잉 티 나타우 샤르트. 티 나치비 아스 아 스트롱그 사투릉, 폴로웨드 비 베누스 안드 몽, 인지카칭그 아 스트롱그 센시 오프 헤스폰시빌리치, 지시플리니, 안드 데지카치옹 투 헬라치온지프스 안드 이모치오나우 웨우-베잉그.</p>
+<p id = "para-95">잉 테름스 오프 티 바바 (오지) 스트렝그트스, 티 12트, 7트, 안드 3흐드 오지스 아리 파르치쿨라를리 스트롱그. 티스 수제스트스 타트 티 나치비 마이 아비 아 스트롱그 포쿠스 옹 스피리투아우 그로트, 파르트네르지프스, 안드 코무니카치옹.</p>
+<h2 id = "link-27">아니팅그 프롱 티 안시엔트 아스트롤로지스?</h2>
+<p id = "para-96">&lt; 안시엔트 아스트롤로지카우 시스템스 수시 아스 바빌로니앙, 이기프치앙, 안드 마양 아스트롤로기 아우수 오페르 우니키 페르스펙치베스 옹 셀레스치아우 플라세멘트스.</p>
+<p id = "para-97">바빌로니앙 아스트롤로기: 티 바빌로니앙스 웨리 아몽그 티 피르스트 투 데벨로프 아 시스테마치크 아프로아시 투 아스트롤로기, 안드 테이르 인플루엔시 이스 스치우 이비덴트 잉 모데릉 웨스테릉 아스트롤로기.</p>
+<p id = "para-98">티 나치비’스 샤르트 워우드 비 아날리제드 잉 테름스 오프 티 조지아크 시긍스, 플라네트스, 안드 루나르 노지스. 케이 아스펙트스 프롱 티 바빌로니앙 시스텡 잉클루지 티 몽’스 파지 아트 티 치미 오프 비르트 안드 티 포지치옹스 오프 티 플라네트스 잉 헬라치옹 투 티 피셰드 스타르스. 잉 티스 카지, 티 나치비 와스 보릉 두링그 아 와닝그 크레센트 몽, 수제스칭그 아 페르소날리치 타트 이스 인트로스펙치비 안드 포쿠제드 옹 이네르 그로트.</p>
+<p id = "para-99">이기프치앙 아스트롤로기: 이기프치앙 아스트롤로기 헤보우베스 아론드 티 데캉스 오르 36 수브지비지옹스 오프 티 조지아크. 이아시 데캉 코헤스폰드스 투 아 10-데그레이 세그멘트 오프 티 이클리프치크, 안드 이아시 이스 훌레드 비 아 파르치쿨라르 데이치. 티 나치비’스 히징그 데캉 이스 아소시아테드 위트 티 데이치 프타, 우 이스 티 고드 오프 크라프트스만지프, 아르시텍투리, 안드 크레아치옹. 티스 코우드 인지카치 아 탈렌트 포르 부이우징그, 데지긍, 오르 아르치스치크 인데아보르스.</p>
+<p id = "para-100">마양 아스트롤로기: 티 마양 칼렌다르 콤프리지스 바리오스 키클리스, 잉클루징그 티 트조우크’잉, 아 260-다이 사크레드 칼렌다르. 잉 티스 시스텡, 이아시 다이 이스 아소시아테드 위트 아 스페시피크 콤비나치옹 오프 아 눔베르 (1 투 13) 안드 아 다이-시긍, 이시 포름스 아 우니키 이네르기 파테릉.</p>
+<p id = "para-101">티 나치비 와스 보릉 옹 5 멩 (이아글리) 잉 티 마양 칼렌다르, 이시 헤프레젠트스 아 페르송 우 이스 암비치오스, 비지오나리, 안드 포쿠제드 옹 티 푸투리. 테이 마이 아비 아 켕 센시 오프 주스치시 안드 아 나투라우 아빌리치 투 세이 티 비제르 픽투리 잉 리피.</p>
+<h2 id = "link-28">아니 헤아징그스 포르 티 샤르트?</h2>
+<p id = "para-102">&lt; 바제드 옹 티 셀레스치아우 플라세멘트스 잉 티 나치비’스 샤르트 안드 타킹그 인투 콘시데라치옹 티 바리오스 아스트롤로지카우 시스템스 멘치오네드 이아를리에르, 티 폴로윙그 헤아징그스 캉 비 데리베드:</p>
+<p id = "para-103">페르소날리치: 티 나치비 아스 아 스트롱그 센시 오프 지시플리니, 헤스폰시빌리치, 안드 프락치칼리치. 테이 아리 암비치오스, 비지오나리, 안드 고아우-오리엔테드, 위트 아 켕 포쿠스 옹 크레아칭그 아 스타블리 안드 스트룩투레드 리피. 티 나치비’스 이모치오나우 데프트 안드 인텐시치 아리 이비덴트, 위트 아 에이그테네드 인투이치옹 안드 아 텐뎅키 투 비 인트로스펙치비.</p>
+<p id = "para-104">카레르: 티 나치비 마이 이세우 잉 카레르스 타트 헤키리 스트롱그 오르가니자치오나우 스키우스, 포쿠스, 안드 데테르미나치옹. 테이 아리 리켈리 투 수세드 잉 레아데르지프 홀리스 안드 마이 아비 앙 인테레스트 잉 아르시텍투리, 크라프트스만지프, 오르 아르치스치크 인데아보르스. 테이르 이노바치비 안드 인텔렉투아우 민드세트 코우드 아우수 레아드 텡 투 이세우 잉 피에우드스 헬라테드 투 테시놀로기, 시엔시, 오르 소시아우 이수이스.</p>
+<p id = "para-105">헬라치온지프스: 잉 로비 안드 헬라치온지프스, 티 나치비 발루이스 스타빌리치, 코미트멘트, 안드 프락치칼리치. 테이 마이 타키 아 카우치오스 안드 프라그마치크 아프로아시 투 마테르스 오프 티 에아르트, 안드 테이르 헬라치온지프스 코우드 비 샤락테리제드 비 스트롱그 이모치오나우 본드스 안드 로야우치. 코무니카치옹 위우 플라이 아 비타우 홀리 잉 마인타이닝그 아르모니 잉 테이르 헬라치온지프스.</p>
+<p id = "para-106">페르소나우 그로트: 티 나치비’스 스피리투아우 조르네이 마이 비 마르케드 비 인트로스펙치옹 안드 아 스트롱그 포쿠스 옹 이네르 그로트. 테이 마이 비 드랑 투 이스플로리 네 오리종스, 보트 피지칼리 안드 멘탈리, 트로그 트라베우, 필로조피, 오르 이게르 레아르닝그. 발란싱그 테이르 암비치오스 나투리 위트 우밀리치 안드 세우프-아와레네스 위우 비 이센치아우 포르 페르소나우 그로트 안드 푸우피우멘트.</p>
+<p id = "para-107">샬렌지스: 티 나치비 마이 파시 샬렌지스 헬라테드 투 펠링그스 오프 리미타치옹 오르 아 페아르 오프 파일루리 두이 투 테이르 스트롱그 센시 오프 지시플리니 안드 헤스폰시빌리치. 테이 마이 아우수 스트루글리 위트 데타시멘트 오르 콘푸지옹 잉 페르소나우 헬라치온지프스 안드 데시지옹-마킹그. 쿠우치바칭그 아 에아우티 발란시 베트웽 테이르 이모치오나우 네드스 안드 테이르 드리비 포르 수세스 위우 비 크루시아우.</p>
+<h2 id = "link-29">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 시네지 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-108">&lt; 헤주무 데탈랴두 두 마파 아스트라우 시네스 잉 포르투게스:</p>
+<p id = "para-109">나시두 누 아누 두 마카쿠 지 아구아 (1992), 우 나치부 데스치 마파 아스트라우 포수이 우마 페르소날리다지 마르칸치 이 베르사치우. 우 마카쿠 지 아구아 에 코녜시두 포르 수아 인텔리젠시아, 크리아치비다지 이 아다프타빌리다지, 우 키 포지 콘트리부이르 파라 우 수세수 잉 바리아스 아레아스 다 비다. 알렝 지수, 아스 페소아스 나시다스 소브 에스치 시그누 상 나투라우멘치 소시아베이스, 이스트로베르치다스 이 코무니카치바스.</p>
+<p id = "para-110">아날리잔두 우 마파 나타우 아트라베스 두 시스테마 지 페르소날리다지 므브치, 우 인지비두 포지 세르 클라시피카두 코무 웅 치푸 인트프 (이스트로베르상, 인투이상, 펜사멘투, 페르세프상). 우스 인트프스 상 코녜시두스 포르 세렝 이노바도리스, 쿠리오주스 이 아날리치쿠스, 부스칸두 셈프리 노바스 이데이아스 이 페르스펙치바스. 엘리스 상 이셀렌치스 코무니카도리스 이 포수엥 아빌리다지스 파라 크리아르 코네숑이스 콩 오트라스 페소아스, 우 키 포지 세르 우마 그란지 반타젱 잉 암비엔치스 소시아이스 이 프로피시오나이스.</p>
+<p id = "para-111">누 시스테마 지 이네아그라마, 우 나치부 포지 세르 이덴치피카두 코무 치푸 7 - 우 인투지아스타. 에스치 치푸 에 카락테리자두 포르 세르 오치미스타, 아벤투레이루 이 셈프리 잉 부스카 지 노바스 이스페리엔시아스 이 코녜시멘투스. 아스 페소아스 두 치푸 7 텡 우마 이네르지아 콘타지안치 이 아 카파시다지 지 시 아다프타르 하피다멘치 아 지페렌치스 시투아송이스, 토르난두-아스 플레시베이스 이 아베르타스 아 무단사스.</p>
+<h2 id = "link-30">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 노르지크 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-112">&lt; 헤주무 두 마파 아스트라우 세군두 아 아스트롤로지아 노르지카:</p>
+<p id = "para-113">다타 지 나시멘투: 25 지 페베레이루 지 1992 오라: 03:43 (오라리우 로카우) 로카우: 상 파울루, 브라지우</p>
+<p id = "para-114">콩 바지 누 마파 아스트라우 이 나 아스트롤로지아 노르지카, 우 인지비두 포수이 아스 세긴치스 카락테리스치카스 프린시파이스:</p>
+<p id = "para-115">아센덴치 잉 카프리코르니우 소우 잉 아쿠아리우 루아 잉 이스코르피앙 마르치 잉 카프리코르니우 메르쿠리우 잉 아쿠아리우 주피테르 (흐) 잉 레앙 베누스 잉 카프리코르니우 사투르누 잉 카프리코르니우 하우 잉 사지타리우 케투 잉 제메우스 아즈타카바르가 (포르사 두스 플라네타스):</p>
+<p id = "para-116">소우: 116,47% 루아: 142,32% 마르치: 138,92% 메르쿠리우: 102,64% 주피테르: 113,70% 베누스: 122,96% 사투르누: 116,13% 아치비다지스 두스 플라네타스:</p>
+<p id = "para-117">소우: 데제조주 지 단사르 루아: 센타두 마르치: 데제조주 지 단사르 메르쿠리우: 센타두 주피테르: 코멘두 베누스: 데제조주 지 단사르 사투르누: 데제조주 지 단사르 페르소날리다지 세군두 므브치 이 이네아그라마:</p>
+<p id = "para-118">콘시데란두 아 아날리지 두 마파 나타우 이 아스 카락테리스치카스 두스 플라네타스 이 시그누스, 포데무스 인페리르 웅 페르피우 지 페르소날리다지 파라 우 인지비두. 누 인탄투, 에 임포르탄치 렘브라르 키 아 아스트롤로지아 에 아페나스 우마 페하멘타 이 낭 데비 세르 우자다 코무 우니카 헤페렌시아 파라 데테르미나르 아 페르소날리다지 지 아우겡.</p>
+<p id = "para-119">므브치: 파라 우 치푸 지 페르소날리다지 므브치, 우 인지비두 파레시 시 잉카이샤르 누 페르피우 지 인트즈 (인트로베르치두, 인투이치부, 펜사도르 이 주우가도르). 에스타 페르소날리다지 에 카락테리자다 포르 세르 아날리치카, 인데펜덴치 이 이스트라테지카. 인트즈스 상 코녜시두스 포르 세렝 비지오나리우스 이 고스타렝 지 플라네자르 이 이제쿠타르 이스트라테지아스 파라 아우칸사르 세우스 오브제치부스. 엘리스 상 헤제르바두스 이 프레페렝 트라발랴르 소지뉴스 오 콩 웅 페케누 그루푸 지 페소아스 지 콘피안사.</p>
+<p id = "para-120">이네아그라마: 쿠안투 아우 이네아그라마, 우 치푸 마이스 프로바베우 파라 우 인지비두 에 우 치푸 5 (우 인베스치가도르). 우스 인베스치가도리스 상 페소아스 쿠리오자스, 오브세르바도라스 이 아날리치카스. 엘리스 부스캉 콤프렌데르 우 문두 이 텡 우마 그란지 세지 지 코녜시멘투. 우 치푸 5 텐지 아 세르 헤제르바두 이 발로리자 아 인데펜덴시아 이 프리바시다지. 엘리스 상 이스페시알리스타스 잉 세우스 캄푸스 지 인테레시 이 고스탕 지 아프로푼다르-시 잉 테마스 이스페시피쿠스.</p>
+<p id = "para-121">잉 수마, 우 인지비두 콩 에스치 마파 나타우 세군두 아 아스트롤로지아 노르지카 파레시 세르 우마 페소아 아날리치카 이 이스트라테지카, 콩 웅 페르피우 지 페르소날리다지 인트즈 이 치푸 5 두 이네아그라마.</p>
+<h2 id = "link-31">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 웨스테릉 안드 베지크 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-122">&lt; 헤주무 두 마파 아스트라우 (아스트롤로지아 오시덴타우 이 베지카) 콩 므브치 이 이네아그라마:</p>
+<p id = "para-123">다타 지 나시멘투: 25 지 페베레이루 지 1992, 아스 3:43 (오라리우 로카우) 로카우 지 나시멘투: 상 파울루, 브라지우 코르데나다스: 라치투지 23° 33’ 28.116" 스, 론지투지 46° 39’ 27.936" 아우치투지: 820 메트루스</p>
+<p id = "para-124">아스트롤로지아 베지카:</p>
+<p id = "para-125">아누 루나르: 프라자파치 - 마가 치티: 크리즈나 아즈타미 (하) (54,84% 헤스탄치스) 지아 다 세마나 베지쿠: 세군다-페이라 (무) 낙사트라: 아누라다 (사) (37,97% 헤스탄치스) 요가: 아르자나 (수) (96,58% 헤스탄치스) 카라나: 발라바 (무) (9,67% 헤스탄치스) 오라 로르드: 루아 (5 밍 시긍: 아크) 마아칼라 오라: 루아 (5 밍 시긍: 아크) 칼라 로르드: 소우 (마아칼라: 소우) 나세르 두 소우: 6:02:58 (24 지 페베레이루) 포르 두 소우: 18:36:37 (24 지 페베레이루) 잔마 가치스: 54,1682 아야남사: 23-43-54,48 페르소날리다지 (므브치 이 이네아그라마): 콘시데란두 아스 인포르마송이스 두 마파 아스트라우, 웅 포시베우 치푸 므브치 에 우 인프프, 코녜시두 코무 “우 메지아도르”. 상 페소아스 인트로스펙치바스, 크리아치바스 이 이데알리스타스, 제라우멘치 기아다스 포르 세우스 발로리스 이 프린시피우스. 누 이네아그라마, 우 치푸 4, 샤마두 지 “우 인지비두알리스타”, 에 우마 포시빌리다지. 우스 치푸 4 상 센시베이스, 인트로스펙치부스 이 이스프레시부스, 부스칸두 수아 이덴치다지 이 시그니피카두 나 비다.</p>
+<p id = "para-126">렘브란두 키 아 아스트롤로지아 에 아페나스 우마 다스 무이타스 페하멘타스 키 포뎅 세르 우자다스 파라 인텐데르 아 페르소날리다지 지 우마 페소아, 이 넹 셈프리 에 프레시자. 아 아날리지 두 치푸 지 페르소날리다지 지 아우겡 포지 바리아르 콩 바지 잉 무이투스 오트루스 파토리스, 코무 쿠우투라, 크리아상 이 이스페리엔시아스 지 비다.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-32">나타우 샤르트 타블리스</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>파라메테르</th><th>발루이</th></tr>
+<tr>
+<td>비르트 치미 (로카우 치미)</td><td>1990-10-31 15:10 (마누알리: 금트-04:00)</td></tr>
+<tr>
+<td>우니베르사우 치미 (우트/금트)</td><td>1990-10-31 19:10</td></tr>
+<tr>
+<td>로카우 시데레아우 치미 (르스트)</td><td>18:20:18</td></tr>
+<tr>
+<td>라치투지</td><td>15° 53’ 00.000’’ 스</td></tr>
+<tr>
+<td>론지투지</td><td>52° 15’ 00.000’’</td></tr>
+<tr>
+<td>라치투지, 론지투지</td><td>(15.895409° 스, 52.294165° ) 바하 두 가르카스, 브라지우</td></tr>
+<tr>
+<td>아우치투지</td><td>320.00 메테르스</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>파라메테르</th><th>발루이</th></tr>
+<tr>
+<td>루나르 이르-무</td><td>프라모다 - 카르티카</td></tr>
+<tr>
+<td>치티</td><td>수클라 트라요다지 (주) (43.41% 레프트)</td></tr>
+<tr>
+<td>베지크 웩다이</td><td>웨드네즈다이 (미)</td></tr>
+<tr>
+<td>낙사트라</td><td>우타라바드라 (사) (11.12% 레프트)</td></tr>
+<tr>
+<td>요가</td><td>아르자나 (수) (53.17% 레프트)</td></tr>
+<tr>
+<td>카라나</td><td>타이툴라 (미) (86.82% 레프트)</td></tr>
+<tr>
+<td>오라 로르드</td><td>주피테르 (5 밍 시긍: 타)</td></tr>
+<tr>
+<td>마아칼라 오라</td><td>사투릉 (5 밍 시긍: 리)</td></tr>
+<tr>
+<td>칼라 로르드</td><td>마르스 (마아칼라: 마르스)</td></tr>
+<tr>
+<td>순히지</td><td>4:56:20</td></tr>
+<tr>
+<td>순세트</td><td>17:29:13</td></tr>
+<tr>
+<td>잔마 가치스</td><td>25.5697</td></tr>
+<tr>
+<td>아야남사</td><td>23-42-48.25</td></tr>
+<tr>
+<td>시데레아우 치미</td><td>18:20:18</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>보지</th><th>론지투지</th><th>낙사트라</th><th>파다</th><th>하지</th><th>나밤사</th></tr>
+<tr>
+<td>라그나</td><td>11 피 12’ 33.94"</td><td>우바</td><td>3</td><td>피</td><td>리</td></tr>
+<tr>
+<td>숭 - 그크</td><td>14 리 23’ 37.34"</td><td>스와트</td><td>3</td><td>리</td><td>아크</td></tr>
+<tr>
+<td>몽 - 프크</td><td>15 피 11’ 03.20"</td><td>우바</td><td>4</td><td>피</td><td>스크</td></tr>
+<tr>
+<td>마르스 (흐) - 므크</td><td>19 타 57’ 17.92"</td><td>호이</td><td>3</td><td>타</td><td>지</td></tr>
+<tr>
+<td>메르쿠리 - 브크</td><td>20 리 27’ 44.85"</td><td>비자</td><td>1</td><td>리</td><td>아르</td></tr>
+<tr>
+<td>주피테르 - 피크</td><td>18 킁 30’ 40.64"</td><td>아스히</td><td>1</td><td>킁</td><td>스그</td></tr>
+<tr>
+<td>베누스 - 드크</td><td>14 리 11’ 16.52"</td><td>스와트</td><td>3</td><td>리</td><td>아크</td></tr>
+<tr>
+<td>사투릉 - 아크</td><td>26 스그 11’ 50.26"</td><td>프사</td><td>4</td><td>스그</td><td>스크</td></tr>
+<tr>
+<td>하우 - 암크</td><td>8 크프 39’ 26.95"</td><td>우자</td><td>4</td><td>크프</td><td>피</td></tr>
+<tr>
+<td>케투</td><td>8 킁 39’ 26.95"</td><td>푸즈</td><td>2</td><td>킁</td><td>비</td></tr>
+<tr>
+<td>만지</td><td>4 크프 08’ 45.73"</td><td>우자</td><td>3</td><td>크프</td><td>아크</td></tr>
+<tr>
+<td>굴리카</td><td>23 스그 33’ 39.62"</td><td>프사</td><td>4</td><td>스그</td><td>스크</td></tr>
+<tr>
+<td>바바 라그나</td><td>17 피 23’ 08.97"</td><td>헤바</td><td>1</td><td>피</td><td>스그</td></tr>
+<tr>
+<td>오라 라그나</td><td>20 리 48’ 14.21"</td><td>파</td><td>3</td><td>리</td><td>리</td></tr>
+<tr>
+<td>가치 라그나</td><td>1 스그 03’ 29.91"</td><td>모우</td><td>1</td><td>스그</td><td>아르</td></tr>
+<tr>
+<td>비가치 라그나</td><td>22 아르 19’ 48.42"</td><td>바르</td><td>3</td><td>아르</td><td>리</td></tr>
+<tr>
+<td>바르나다 라그나</td><td>11 스그 12’ 33.94"</td><td>모우</td><td>4</td><td>스그</td><td>타</td></tr>
+<tr>
+<td>스헤이 라그나</td><td>1 아크 11’ 00.21"</td><td>당</td><td>3</td><td>아크</td><td>리</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-33">빔소타리 다자 타블리</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th><th>수브-페리오드</th><th>스타르트 다치</th></tr>
+<tr>
+<td>사트</td><td>사트</td><td>1973-12-10</td><td>메르크</td><td>1976-12-13</td><td>케트</td><td>1979-08-24</td><td>벵</td><td>1980-10-02</td><td>숭</td><td>1983-12-02</td></tr>
+<tr>
+<td>'</td><td>몽</td><td>1984-11-13</td><td>마르스</td><td>1986-06-12</td><td>하</td><td>1987-07-23</td><td>주프</td><td>1990-05-28</td><td></td><td></td></tr>
+<tr>
+<td>메르크</td><td>메르크</td><td>1992-12-10</td><td>케트</td><td>1995-05-06</td><td>벵</td><td>1996-05-02</td><td>숭</td><td>1999-03-03</td><td>몽</td><td>2000-01-09</td></tr>
+<tr>
+<td>'</td><td>마르스</td><td>2001-06-09</td><td>하</td><td>2002-06-06</td><td>주프</td><td>2004-12-25</td><td>사트</td><td>2007-03-30</td><td></td><td></td></tr>
+<tr>
+<td>케트</td><td>케트</td><td>2009-12-10</td><td>벵</td><td>2010-05-06</td><td>숭</td><td>2011-07-08</td><td>몽</td><td>2011-11-14</td><td>마르스</td><td>2012-06-12</td></tr>
+<tr>
+<td>'</td><td>하</td><td>2012-11-10</td><td>주프</td><td>2013-11-28</td><td>사트</td><td>2014-11-05</td><td>메르크</td><td>2015-12-14</td><td></td><td></td></tr>
+<tr>
+<td>벵</td><td>벵</td><td>2016-12-10</td><td>숭</td><td>2020-04-08</td><td>몽</td><td>2021-04-08</td><td>마르스</td><td>2022-12-10</td><td>하</td><td>2024-02-08</td></tr>
+<tr>
+<td>'</td><td>주프</td><td>2027-02-07</td><td>사트</td><td>2029-10-12</td><td>메르크</td><td>2032-12-10</td><td>케트</td><td>2035-10-12</td><td></td><td></td></tr>
+<tr>
+<td>숭</td><td>숭</td><td>2036-12-10</td><td>몽</td><td>2037-03-27</td><td>마르스</td><td>2037-09-29</td><td>하</td><td>2038-02-01</td><td>주프</td><td>2038-12-28</td></tr>
+<tr>
+<td>'</td><td>사트</td><td>2039-10-18</td><td>메르크</td><td>2040-09-29</td><td>케트</td><td>2041-08-05</td><td>벵</td><td>2041-12-10</td><td></td><td></td></tr>
+<tr>
+<td>몽</td><td>몽</td><td>2042-12-11</td><td>마르스</td><td>2043-10-12</td><td>하</td><td>2044-05-09</td><td>주프</td><td>2045-11-11</td><td>사트</td><td>2047-03-09</td></tr>
+<tr>
+<td>'</td><td>메르크</td><td>2048-10-11</td><td>케트</td><td>2050-03-09</td><td>벵</td><td>2050-10-12</td><td>숭</td><td>2052-06-09</td><td></td><td></td></tr>
+<tr>
+<td>마르스</td><td>마르스</td><td>2052-12-10</td><td>하</td><td>2053-05-06</td><td>주프</td><td>2054-05-25</td><td>사트</td><td>2055-04-30</td><td>메르크</td><td>2056-06-09</td></tr>
+<tr>
+<td>'</td><td>케트</td><td>2057-06-06</td><td>벵</td><td>2057-11-05</td><td>숭</td><td>2059-01-03</td><td>몽</td><td>2059-05-10</td><td></td><td></td></tr>
+<tr>
+<td>하</td><td>하</td><td>2059-12-11</td><td>주프</td><td>2062-08-24</td><td>사트</td><td>2065-01-15</td><td>메르크</td><td>2067-11-23</td><td>케트</td><td>2070-06-10</td></tr>
+<tr>
+<td>'</td><td>벵</td><td>2071-06-29</td><td>숭</td><td>2074-06-28</td><td>몽</td><td>2075-05-22</td><td>마르스</td><td>2076-11-23</td><td></td><td></td></tr>
+<tr>
+<td>주프</td><td>주프</td><td>2077-12-11</td><td>사트</td><td>2080-01-27</td><td>메르크</td><td>2082-08-11</td><td>케트</td><td>2084-11-17</td><td>벵</td><td>2085-10-24</td></tr>
+<tr>
+<td>'</td><td>숭</td><td>2088-06-22</td><td>몽</td><td>2089-04-08</td><td>마르스</td><td>2090-08-11</td><td>하</td><td>2091-07-18</td><td></td><td></td></tr>
+
+    </table>
+</div>
+<h2 id = "link-34">아즈타카바르가 오프 하지 샤르트 타블리스</h2>
+<div class = "table">
+    <table>
+<tr>
+<th>플라네트</th><th>소디아 핀다</th><th>하지 핀다</th><th>그라아 핀다</th></tr>
+<tr>
+<td>라그나</td><td>392</td><td>239</td><td>153</td></tr>
+<tr>
+<td>숭</td><td>206</td><td>160</td><td>46</td></tr>
+<tr>
+<td>몽</td><td>220</td><td>104</td><td>116</td></tr>
+<tr>
+<td>마르스</td><td>321</td><td>237</td><td>84</td></tr>
+<tr>
+<td>메르쿠리</td><td>205</td><td>165</td><td>40</td></tr>
+<tr>
+<td>주피테르</td><td>122</td><td>94</td><td>28</td></tr>
+<tr>
+<td>베누스</td><td>193</td><td>132</td><td>61</td></tr>
+<tr>
+<td>사투릉</td><td>171</td><td>110</td><td>61</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>오지</th><th>바바 발라</th><th>잉 후파스</th><th>로르드’스 발라</th><th>지그발라</th><th>드리그발라</th></tr>
+<tr>
+<td>1스트</td><td>624.33</td><td>10.41</td><td>543.00</td><td>30.00</td><td>51.33</td></tr>
+<tr>
+<td>2느드</td><td>365.59</td><td>6.09</td><td>287.42</td><td>20.00</td><td>58.18</td></tr>
+<tr>
+<td>3흐드</td><td>424.79</td><td>7.08</td><td>362.03</td><td>10.00</td><td>52.76</td></tr>
+<tr>
+<td>4트</td><td>528.37</td><td>8.81</td><td>461.02</td><td>30.00</td><td>37.35</td></tr>
+<tr>
+<td>5트</td><td>517.88</td><td>8.63</td><td>456.06</td><td>50.00</td><td>11.82</td></tr>
+<tr>
+<td>6트</td><td>363.54</td><td>6.06</td><td>359.04</td><td>20.00</td><td>-15.50</td></tr>
+<tr>
+<td>7트</td><td>464.44</td><td>7.74</td><td>461.02</td><td>0.00</td><td>3.42</td></tr>
+<tr>
+<td>8트</td><td>411.79</td><td>6.86</td><td>362.03</td><td>10.00</td><td>39.76</td></tr>
+<tr>
+<td>9트</td><td>381.14</td><td>6.35</td><td>287.42</td><td>40.00</td><td>53.72</td></tr>
+<tr>
+<td>10트</td><td>587.25</td><td>9.79</td><td>543.00</td><td>30.00</td><td>14.25</td></tr>
+<tr>
+<td>11트</td><td>530.30</td><td>8.84</td><td>408.30</td><td>50.00</td><td>72.01</td></tr>
+<tr>
+<td>12트</td><td>529.20</td><td>8.82</td><td>408.30</td><td>50.00</td><td>70.90</td></tr>
+
+    </table>
+</div>
+<p class = "rule">***</p>
+<h2 id = "link-35">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 웨스테릉 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-127">헤주무 데탈랴두 두 마파 아스트라우 (아스트롤로지아 오시덴타우) 잉 포르투게스:</p>
+<p id = "para-128">나시두 잉 31 지 오투브루 지 1990, 아스 15:10, 잉 바하 두 가르사스, 브라지우, 우 인지비두 텡 우 세긴치 마파 아스트라우:</p>
+<p id = "para-129">시그누 솔라르: 리브라 시그누 아센덴치: 페이시스 시그누 루나르: 페이시스</p>
+<p id = "para-130">프린시파이스 아스펙투스 두 마파 아스트라우:</p>
+<p id = "para-131">소우 잉 리브라: 인지카 우마 페소아 이킬리브라다, 지플로마치카, 주스타 이 콩 아빌리다지스 소시아이스. 포지 테르 웅 포르치 데제주 지 아르모니아 이 코페라상 잉 수아스 헬라송이스 인테르페소아이스.</p>
+<p id = "para-132">아센덴치 잉 페이시스: 아 페르소날리다지 에 모우다다 포르 우마 나투레자 센시베우, 인투이치바, 임파치카 이 소냐도라. 포지 아베르 우마 텐덴시아 아 이스피리투알리다지 이 우마 잉클리나상 아르치스치카.</p>
+<p id = "para-133">루아 잉 페이시스: 이모송이스 인텐사스, 이마지나상 비비다 이 센시빌리다지 상 카락테리스치카스 마르칸치스. 포지 아베르 탐벵 우마 텐덴시아 아 아브소르베르 아스 이모송이스 두스 오트루스 이 네세시다지 지 시 프로테제르 이모시오나우멘치.</p>
+<p id = "para-134">콩 바지 네사스 인포르마송이스, 우마 포시베우 콤비나상 지 므브치 이 이네아그라마 포지 세르:</p>
+<p id = "para-135">므브치: 인프프 (인트로베르치두, 인투이치부, 센치멘타우, 페르세프치부) 에사 페르소날리다지 에 카락테리자다 포르 세르 이데알리스타, 센시베우, 크리아치바 이 오리엔타다 파라 발로리스. 우스 인프프스 상 나투라우멘치 임파치쿠스 이 부스캉 아르모니아 이 콤프렌상 잉 세우스 헬라시오나멘투스.</p>
+<p id = "para-136">이네아그라마: 치푸 9 (우 파시피카도르) 우 치푸 9 에 카락테리자두 포르 세르 카우무, 아마베우 이 콤프렌시부. 우 파시피카도르 부스카 아르모니아 잉 세우스 헬라시오나멘투스 이 프로쿠라 이비타르 콘플리투스 아 토두 쿠스투. 에사 페르소날리다지 텡 우마 포르치 텐덴시아 아 시 코넥타르 콩 우스 오트루스 이 발로리자르 아 파스 이 아 이스타빌리다지 이모시오나우.</p>
+<p id = "para-137">콤비난두 아스 카락테리스치카스 두 마파 아스트라우 콩 우 치푸 지 페르소날리다지 므브치 (인프프) 이 우 이네아그라마 (치푸 9), 포데무스 인페리르 키 에시 인지비두 에 우마 페소아 센시베우, 임파치카 이 오리엔타다 파라 발로리스. 엘리 부스카 아르모니아 이 코페라상 잉 수아스 헬라송이스 인테르페소아이스 이 포지 테르 우마 잉클리나상 아르치스치카 오 이스피리투아우. 수아 아보르다젱 파시피카 이 콤프렌시바 우 토르나 우마 페소아 아그라다베우 이 파시우 지 콘비베르.</p>
+<h2 id = "link-36">마키 아 데타일레드 수마리자치옹 오프 티 나타우 샤르트 프롱 웨스테릉 아스트롤로기 잉 프트-브르 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</h2>
+<p id = "para-138">&lt; 헤주무 두 마파 아스트라우 (아스트롤로지아 오시덴타우):</p>
+<p id = "para-139">다타 지 나시멘투: 31 지 오투브루 지 1990 오라 지 나시멘투: 15:10 (금트-04:00) 로카우 지 나시멘투: 바하 두 가르사스, 브라지우</p>
+<p id = "para-140">시그누 솔라르: 리브라 (이킬리브리우, 지플로마시아, 코페라상) 시그누 아센덴치 (라그나): 페이시스 (임파치아, 센시빌리다지, 인투이상) 시그누 루나르: 페이시스 (이모송이스 프로푼다스, 콤파이샹, 인트로스펙상)</p>
+<p id = "para-141">프린시파이스 아스펙투스 두 마파 아스트라우:</p>
+<p id = "para-142">소우 잉 리브라: 페소아 지플로마치카, 주스타 이 잉 부스카 지 아르모니아. 발로리자 헬라시오나멘투스 이 파르세리아스, 텐두 아빌리다지스 소시아이스 아푸라다스.</p>
+<p id = "para-143">루아 잉 페이시스: 이모송이스 인텐사스 이 센시빌리다지 일레바다. 페소아 인투이치바 이 임파치카, 카파스 지 콤프렌데르 프로푼다멘치 우스 센치멘투스 두스 오트루스.</p>
+<p id = "para-144">아센덴치 잉 페이시스: 아보르다젱 콤파시바 이 임파치카 페란치 아 비다. 포지 세르 비스투 코무 우마 페소아 소냐도라 이 이스피리투아우, 콩 우마 나투레자 아다프타베우 이 센시베우.</p>
+<p id = "para-145">마르치 헤트로그라두 잉 토루: 데테르미나상 이 페르시스텐시아 나 부스카 펠루스 오브제치부스. 포지 세르 테이모주 이 헤지스텐치 아 무단사스.</p>
+<p id = "para-146">주피테르 잉 칸세르: 제네로지다지 이모시오나우, 카파시다지 지 누트리르 이 아포이아르 우스 오트루스. 포지 부스카르 크레시멘투 이 이스판상 아트라베스 지 코네숑이스 파밀리아리스 이 도메스치카스.</p>
+<p id = "para-147">베누스 잉 리브라: 포르치 아프레수 펠라 벨레자, 아르치 이 헬라시오나멘투스 아르모니오주스. 부스카 이킬리브리우 이 주스치사 나스 인테라송이스 소시아이스.</p>
+<p id = "para-148">사투르누 잉 사지타리우: 지시플리나 이 헤스폰사빌리다지 아플리카다스 아 부스카 펠루 코녜시멘투 이 아 이스판상 지 오리존치스. 포지 세르 카우텔로주 이 프라그마치쿠 잉 헬라상 아 비아젱스 이 이두카상.</p>
+<p id = "para-149">치푸 므브치: 인프프 (인트로베르치두, 인투이치부, 센치멘타우, 페르세프치부)</p>
+<p id = "para-150">페르소날리다지 임파치카 이 센시베우, 콩 포르치 코네샹 이모시오나우 콩 우스 오트루스. 발로리자 아 아르모니아 이 아 콤프렌상 무투아. 치푸 이네아그랑: 치푸 9 (파시피카도르)</p>
+<p id = "para-151">부스카 파스 이 아르모니아 잉 세우스 헬라시오나멘투스 이 암비엔치. 이비타 콘플리투스 이 부스카 콤프렌데르 우스 폰투스 지 비스타 두스 오트루스.</p>
+<h2 id = "link-37">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 티 코몽 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-152">&lt; 헤주무 두 마파 아스트라우:</p>
+<p id = "para-153">다타 지 나시멘투: 31 지 오투브루 지 1990, 아스 15:10, 오라리우 로카우 (금트-4) 로카우 지 나시멘투: 바하 두 가르사스, 브라지우 (라치투지 15°53’스, 론지투지 52°15’)</p>
+<p id = "para-154">시그누 솔라르: 리브라 (이킬리브리우, 코페라상, 아르모니아) 시그누 루나르: 페이시스 (센시빌리다지, 임파치아, 인투이상) 아센덴치: 페이시스 (이스피리투알리다지, 크리아치비다지, 콤파이샹)</p>
+<p id = "para-155">프린시파이스 아스펙투스 두 마파 아스트라우:</p>
+<p id = "para-156">소우 잉 리브라: 인지카 우마 페소아 코페라치바, 아르모니오자 이 콩 그란지 아프레수 펠라 주스치사 이 펠루스 헬라시오나멘투스. 부스카 이킬리브리우 이 포지 테르 지피쿠우다지 잉 토마르 데시종이스.</p>
+<p id = "para-157">루아 잉 페이시스: 수제리 우마 페르소날리다지 센시베우, 임파치카 이 인투이치바. 에사 페소아 에 프로바베우멘치 무이투 이모시오나우 이 포지 시 코넥타르 파시우멘치 콩 우스 센치멘투스 두스 오트루스.</p>
+<p id = "para-158">아센덴치 잉 페이시스: 헤포르사 아스 카락테리스치카스 피시아나스, 코무 이스피리투알리다지, 크리아치비다지 이 콤파이샹. 우 인지비두 포지 세르 비스투 코무 우마 페소아 소냐도라 이 이데알리스타.</p>
+<p id = "para-159">콘시데란두 우 마파 아스트라우 이 아 아날리지 제라우 다스 카락테리스치카스, 우 치푸 므브치 키 멜료르 시 잉카이샤 네시 페르피우 에 우 인프프 (인트로베르치두, 인투이치부, 센치멘타우 이 페르세프치부). 우스 인프프스 상 코녜시두스 포르 세렝 센시베이스, 이데알리스타스 이 크리아치부스, 우 키 시 알리냐 콩 아스 카락테리스치카스 아프레젠타다스 누 마파 아스트라우.</p>
+<p id = "para-160">누 키 지스 헤스페이투 아우 이네아그라마, 우 치푸 9, 샤마두 지 파시피카도르, 포지 세르 우마 보아 오프상. 우 치푸 9 부스카 아르모니아, 에 임파치쿠 이 콤프렌시부, 이 포지 테르 지피쿠우다지 잉 토마르 데시종이스, 카락테리스치카스 키 콤비낭 콩 우스 프린시파이스 아스펙투스 두 마파 아스트라우 아프레젠타두.</p>
+<h2 id = "link-38">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 티 마잉 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑</h2>
+<p id = "para-161">&lt; 헤주무 데탈랴두 두 마파 아스트라우 잉 포르투게스:</p>
+<p id = "para-162">나시멘투: 31 지 오투브루 지 1990, 아스 15:10, 잉 바하 두 가르사스, 브라지우. 시그누 솔라르: 리브라 시그누 루나르: 페이시스 아센덴치: 페이시스</p>
+<p id = "para-163">프린시파이스 아스펙투스 아스트롤로지쿠스 두 마파 나타우:</p>
+<p id = "para-164">소우 잉 리브라: 인지카 우마 페소아 이킬리브라다, 지플로마치카, 주스타 이 키 부스카 아르모니아 잉 토두스 우스 아스펙투스 다 비다. 포지 테르 아빌리다지스 아르치스치카스 이 아프레시아 아 벨레자 이 아 이스테치카.</p>
+<p id = "para-165">루아 잉 페이시스: 수제리 우마 나투레자 이모시오나우, 센시베우, 인투이치바 이 임파치카. 아 페소아 포지 세르 이마지나치바, 소냐도라 이 포시베우멘치 테르 인테레시 잉 아순투스 이스피리투아이스.</p>
+<p id = "para-166">아센덴치 잉 페이시스: 아 페르소날리다지 포지 세르 카락테리자다 펠라 임파치아, 센시빌리다지 이 우마 나투레자 아다프타베우. 포지 아베르 우마 텐덴시아 아 아브소르베르 아스 이모송이스 두스 오트루스 이 테르 우마 아보르다젱 콤파시바 잉 헬라상 아우스 오트루스.</p>
+<p id = "para-167">마르치 헤트로그라두 잉 토루: 포지 인지카르 우마 아보르다젱 마이스 렌타 이 데테르미나다 파라 아우칸사르 오브제치부스. 아 페소아 포지 세르 테이모자, 마스 탐벵 페르시스텐치 이 프라치카.</p>
+<p id = "para-168">주피테르 잉 칸세르: 이스판상 이모시오나우, 제네로지다지 이 누트리상 아우스 오트루스 포뎅 세르 쿠알리다지스 프레젠치스. 아 페소아 포지 테르 우마 아보르다젱 프로테토라 이 아콜례도라 잉 헬라상 아 파밀리아 이 엔치스 케리두스.</p>
+<p id = "para-169">베누스 잉 리브라: 아빌리다지 파라 포르마르 헬라시오나멘투스 아르모니오주스 이 부스카르 파르세리아스 이킬리브라다스. 포지 발로리자르 아 벨레자, 아 아르치 이 우 이킬리브리우 잉 세우스 헬라시오나멘투스.</p>
+<p id = "para-170">사투르누 잉 사지타리우: 포지 인지카르 우마 아보르다젱 세리아 이 헤스폰사베우 파라 아 부스카 두 코녜시멘투, 필로조피아 이 크레시멘투 이스피리투아우. 아 우마 네세시다지 지 이스트루투라 이 지시플리나 나 이스플로라상 지 이데이아스 이 크렌사스.</p>
+<p id = "para-171">콘시데란두 우스 아스펙투스 프린시파이스 데스치 마파 아스트라우, 우마 페르소날리다지 키 포지 세르 아소시아다 아 엘리 에 아 두 치푸 므브치 “인프프” (인트로베르치두, 인투이치부, 센치멘타우 이 페르세프치부). 에사 페르소날리다지 텐지 아 세르 이데알리스타, 크리아치바 이 기아다 포르 발로리스 페소아이스. 알렝 지수, 우 치푸 지 이네아그라마 키 포지 이스타르 헬라시오나두 아 에시 마파 아스트라우 에 우 치푸 9 - 우 파시피카도르, 키 에 카락테리자두 포르 세르 콤프렌시부, 파시엔치 이 부스카 아르모니아 잉 수아스 헬라송이스 이 암비엔치.</p>
+<h2 id = "link-39">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 티 마잉 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</h2>
+<p id = "para-172">&lt; 헤주무 두 마파 아스트라우 잉 포르투게스:</p>
+<p id = "para-173">나시두 잉 31 지 오투브루 지 1990 아스 1510 (금트-4), 잉 바하 두 가르사스, 브라지우, 에스치 인지비두 포수이 우 시그누 솔라르 잉 리브라, 콩 아센덴치 잉 페이시스 이 루아 잉 페이시스. 우 마파 아스트라우 탐벵 헤벨라 아스 포지송이스 두스 플라네타스 이 카자스 아스트롤로지카스 잉 헬라상 아우스 시그누스 두 조지아쿠, 낙사트라스, 파다스 이 하지스.</p>
+<p id = "para-174">아우구마스 카락테리스치카스 노타베이스 상:</p>
+<p id = "para-175">소우 잉 리브라, 키 수제리 우마 페르소날리다지 지플로마치카, 주스타 이 소시아베우. 아센덴치 잉 페이시스, 키 인지카 우마 나투레자 소냐도라, 인투이치바 이 콤파시바. 루아 잉 페이시스, 키 모스트라 이모송이스 프로푼다스, 센시빌리다지 이 임파치아. 지 아코르두 콩 아 타벨라 빔소타리 다자, 우 인지비두 파사 포르 지페렌치스 페리오두스 플라네타리우스 아우 롱구 다 비다, 카다 웅 콩 두라상 이 인플루엔시아스 이스페시피카스. 아투아우멘치, 이스타 누 수브페리오두 지 마르치.</p>
+<p id = "para-176">아스 타벨라스 아즈타카바르가 포르네셍 인포르마송이스 소브리 아 포르사 다스 카자스 이 플라네타스 누 마파 나타우. 아 카자 마이스 포르치 에 아 10 카자, 키 고베르나 아 카헤이라 이 우 스타투스 소시아우. 우 플라네타 마이스 프라쿠 에 주피테르, 우 키 포지 인지카르 데자피우스 나 아레아 지 크레시멘투 페소아우, 사베도리아 이 이스피리투알리다지.</p>
+<p id = "para-177">콩 바지 네사스 인포르마송이스 이 나 아날리지 두 마파 아스트라우, 우마 콤비나상 포시베우 파라 우 치푸 므브치 세리아 인프프 (인트로베르치두, 인투이치부, 센치멘타우 이 페르세프치부). 에스치 치푸 지 페르소날리다지 에 코녜시두 포르 세르 이데알리스타, 크리아치부 이 센시베우, 우 키 시 알리냐 콩 아스 카락테리스치카스 아스트롤로지카스 오브세르바다스.</p>
+<p id = "para-178">파라 우 이네아그라마, 우 치푸 9, 우 파시피카도르, 파레시 세르 우마 이스콜랴 아데쿠아다. 우스 파시피카도리스 상 페소아스 키 부스캉 아르모니아, 이킬리브리우 이 파스 잉 수아스 비다스. 엘리스 이비탕 콘플리투스 이 상 오치무스 메지아도리스, 카락테리스치카스 키 시 알리냥 콩 우 소우 잉 리브라 이 아 루아 이 아센덴치 잉 페이시스.</p>
+<h2 id = "link-40">우지 카우쿨루스 투 베리피 이프 티 타블리스 코헤스폰드 투 티 비르트 샤르트 일리 이스플라이닝그 티 숭 헬라치온지프 잉 티 지페렌트 아스트롤로지스</h2>
+<p id = "para-179">&lt; 티 타블리스 프로비데드 지비 데타일레드 인포르마치옹 아보트 티 비르트 샤르트 오르 나타우 샤르트 오프 앙 인지비두아우 보릉 옹 옥토베르 31, 1990, 아트 15:10 로카우 치미 잉 바하 두 가르카스, 브라지우. 이 위우 노트 우지 카우쿨루스 투 베리피 티 타블리스, 아스 아스트롤로기 이스 노트 아 마테마치카우 시엔시 잉 타트 센시. 오웨베르, 이 위우 이자미니 티 케이 포인트스 안드 지스쿠스 티 숭’스 헬라치온지프 잉 지페렌트 아스트롤로지카우 시스템스.</p>
+<p id = "para-180">피르스트, 레트’스 콘시데르 티 숭’스 플라세멘트 잉 티 나타우 샤르트. 잉 웨스테릉 아스트롤로기, 티 숭 이스 잉 티 시긍 오프 리브라 아트 14°23’37.34", 잉 티 스와치 낙사트라. 잉 베지크 아스트롤로기, 티 숭 이스 아우수 잉 리브라, 부트 티 낙사트라스 안드 하지스 아리 슬리그틀리 지페렌트 두이 투 티 아야남사 우제드 (잉 티스 카지, 23-42-48.25). 오웨베르, 티 숭’스 바지크 포지치옹 잉 티 샤르트 헤마잉스 티 사미 아크로스 보트 시스템스.</p>
+<p id = "para-181">잉 보트 웨스테릉 안드 베지크 아스트롤로기, 티 숭 헤프레젠트스 오니’스 코리 이덴치치, 에구, 비탈리치, 안드 리피 포르시. 이트 이스 오프텡 아소시아테드 위트 티 파테르 오르 도미난트 파렌타우 피구리, 아우토리치, 안드 페르소나우 포웨르. 티 숭’스 플라세멘트 잉 아 파르치쿨라르 시긍, 오지, 안드 아스펙트 투 오테르 플라네트스 캉 프로비지 발루아블리 인시그트스 인투 앙 인지비두아우’스 페르소날리치, 스트렝그트스, 안드 웨아크네시스.</p>
+<p id = "para-182">잉 웨스테릉 아스트롤로기, 티 숭 시긍 이스 콘시데레드 티 프리마리 팍토르 잉 데테르미닝그 앙 인지비두아우’스 페르소날리치 트라이트스. 잉 티스 카지, 티 인지비두아우 워우드 비 아 리브라, 크농 포르 테이르 지플로마치크, 파이르-민데드, 안드 소시아블리 나투리. 테이 마이 아우수 아비 아 스트롱그 센시 오프 아에스테칙스 안드 발란시 잉 테이르 리베스.</p>
+<p id = "para-183">잉 베지크 아스트롤로기, 티 숭 이스 이쿠알리 임포르탄트, 부트 테리 이스 모리 임파지스 옹 티 몽 시긍 안드 티 아센단트 오르 라그나. 잉 티스 카지, 티 몽 이스 잉 피시스, 안드 티 아센단트 이스 아우수 잉 피시스, 이시 아드스 아 모리 센시치비, 인투이치비, 안드 스피리투아우 지멘시옹 투 티 인지비두아우’스 페르소날리치.</p>
+<p id = "para-184">이트’스 워르트 노칭그 타트 티 숭’스 플라세멘트 잉 티 빔소타리 다자 타블리, 이시 이스 아 베지크 테시니키 포르 프레직칭그 시그니피칸트 리피 이벤트스 안드 페리오드스. 잉 티스 카지, 티 숭’스 수브-페리오드 오쿠헤드 베트웽 아프리우 8, 2021, 안드 아프리우 8, 2021, 위팅 티 베누스 마조르 페리오드 (2016-12-10 투 2027-02-07). 티스 수브-페리오드 미그트 아비 벵 아 치미 오프 잉크레아제드 포쿠스 옹 페르소나우 이덴치치, 크레아치비치, 오르 세우프-이스프레시옹.</p>
+<p id = "para-185">잉 수마리, 일리 티 아스트롤로지카우 시스템스 미그트 지페르 잉 테이르 아프로아시, 티 숭’스 플라세멘트 잉 티 샤르트 플라이스 아 비타우 홀리 잉 보트 웨스테릉 안드 베지크 아스트롤로기. 잉 티스 카지, 티 숭’스 포지치옹 잉 리브라 안드 이트스 아스펙트스 투 오테르 플라네트스 캉 지비 발루아블리 인시그트스 인투 티 인지비두아우’스 페르소날리치, 리피 파트, 안드 시그니피칸트 페리오드스 잉 테이르 리피.</p>
+<h2 id = "link-41">포르 티스 비르트 샤르트, 데타이우 이트스 헬라치온지프 위트 스코르피우 잉 티 지페렌트 아스트롤로지스</h2>
+<p id = "para-186">&lt; 잉 티스 비르트 샤르트, 위 위우 이자미니 티 헬라치온지프 위트 스코르피우 잉 보트 웨스테릉 안드 베지크 아스트롤로기.</p>
+<p id = "para-187">웨스테릉 아스트롤로기: 잉 웨스테릉 아스트롤로기, 티 조지아크 시긍 오프 스코르피우 이스 지렉틀리 아프테르 리브라, 안드 이트 오쿠피스 티 8트 오지 잉 티 나투라우 조지아크 에우. 잉 티스 비르트 샤르트, 티 인지비두아우 아스 아 리브라 숭 시긍. 테레포리, 스코르피우 워우드 훌리 테이르 2느드 오지 (티 오지 오프 발루이스, 마테리아우 포세시옹스, 안드 페르소나우 헤조르시스).</p>
+<p id = "para-188">오웨베르, 위 동’트 아비 티 이작트 오지 쿠스프스 잉 티 프로비데드 다타. 이트 이스 임포르탄트 투 아비 티 오지 쿠스프스 투 데테르미니 티 오지 플라세멘트 오프 플라네트스 안드 티 시긍스 훌링그 이아시 오지 포르 티 나치비’스 샤르트.</p>
+<p id = "para-189">타트 사이드, 티 몽’스 포지치옹 잉 티 나밤사 샤르트 이스 잉 스코르피우. 티 나밤사 샤르트 이스 아 지비지오나우 샤르트 우제드 잉 보트 웨스테릉 안드 베지크 아스트롤로기 투 프로비지 데페르 인시그트스 인투 앙 인지비두아우’스 리피, 파르치쿨라를리 테이르 헬라치온지프스 안드 마히아지. 잉 티스 카지, 아빙그 아 스코르피우 몽 잉 티 나밤사 샤르트 수제스트스 아 모리 인텐시, 트란스포르마치비, 안드 파시오나치 이모치오나우 나투리 잉 티 콘테스트 오프 클로지 헬라치온지프스.</p>
+<p id = "para-190">베지크 아스트롤로기: 잉 베지크 아스트롤로기, 티 포쿠스 이스 옹 티 몽 시긍 안드 티 아센단트 (라그나). 잉 티스 비르트 샤르트, 티 몽 이스 잉 피시스, 안드 티 아센단트 이스 아우수 잉 피시스. 스코르피우 이스 티 9트 시긍 프롱 피시스, 수 이트 훌리스 티 인지비두아우’스 9트 오지 (티 오지 오프 이게르 레아르닝그, 필로조피, 스피리투알리치, 롱그-지스탄시 트라베우, 안드 포르투니).</p>
+<p id = "para-191">사투릉 이스 플라세드 잉 스코르피우 아트 26°11’50.26" 잉 티 푸르바 사다 낙사트라. 티스 플라세멘트 인지카치스 아 스트롱그 코넥치옹 위트 스코르피우’스 트란스포르마치비 안드 인텐시 이네르기. 사투릉 잉 스코르피우 수제스트스 아 세리오스, 지시플리네드, 안드 소메치메스 세크레치비 나투리. 티 인지비두아우 마이 아비 아 스트롱그 인테레스트 잉 데우빙그 인투 티 데프트스 오프 리피’스 미스테리스, 프시숄로기, 오르 스피리투알리치. 이트 아우수 인지카치스 타트 티 페르송 마이 파시 샬렌지스 잉 테지 아레아스, 헤키링그 텡 투 데벨로프 헤질리엔시 안드 이네르 스트렝그트.</p>
+<p id = "para-192">잉 티스 샤르트, 스코르피우 아우수 플라이스 아 시그니피칸트 홀리 잉 티 빔소타리 다자 시스텡. 포르 이잠플리, 티 사투릉 마조르 페리오드 (1973-12-10 투 1992-12-10) 아스 티 몽 잉 스코르피우 아스 아 수브-페리오드 프롱 1984-11-13 투 1986-06-12. 잉 티 베누스 마조르 페리오드 (2016-12-10 투 2027-02-07), 티 몽 잉 스코르피우 아페아르스 아가잉 아스 아 수브-페리오드 프롱 2021-04-08 투 2022-12-10. 테지 페리오드스 코우드 브링그 샬렌지스 오르 트란스포르마치비 이스페리엔시스 헬라테드 투 9트 오지 마테르스.</p>
+<p id = "para-193">잉 콩클루지옹, 스코르피우 아스 아 시그니피칸트 프레젠시 잉 티스 인지비두아우’스 비르트 샤르트 잉 보트 웨스테릉 안드 베지크 아스트롤로기. 잉 웨스테릉 아스트롤로기, 이트 플라이스 아 홀리 잉 티 2느드 오지 안드 티 나밤사 샤르트, 일리 잉 베지크 아스트롤로기, 이트 훌리스 티 9트 오지 안드 오스트스 사투릉. 테지 코넥치옹스 위트 스코르피우 캉 지비 인시그트스 인투 티 페르송’스 발루이스, 헬라치온지프스, 이게르 레아르닝그, 안드 스피리투아우 푸르수이트스.</p>
+<h2 id = "link-42">마키 아 데타일레드 수마리자치옹 잉 프트-브르 오프 티 나타우 샤르트 프롱 웨스테릉 안드 베지크 아스트롤로지스 일리 피킹그 오니 오프 티 16 므브치 치페스 안드 9 치페스 프롱 이네아그랑 (1)</h2>
+<p id = "para-194">&lt; 헤주무 두 마파 아스트라우 (아스트롤로지아 오시덴타우 이 베지카) 이 아날리지 두 치푸 므브치 이 이네아그라마:</p>
+<p id = "para-195">다타 지 나시멘투: 31 지 오투브루 지 1990 아스 15:10, 오라리우 로카우, 잉 바하 두 가르사스, 브라지우.</p>
+<p id = "para-196">나 아스트롤로지아 오시덴타우, 우 소우 이스타바 잉 이스코르피앙, 우 키 인지카 우마 페르소날리다지 인텐사, 이모시오나우 이 데테르미나다. 아 루아 이스타바 잉 페이시스, 콘페린두 센시빌리다지, 임파치아 이 인투이상. 에사 콤비나상 수제리 아우겡 키 에 아파이쇼나두 이 콤파시부, 마스 탐벵 미스테리오주 이 헤제르바두.</p>
+<p id = "para-197">나 아스트롤로지아 베지카, 우 지아 두 나시멘투 포이 우마 쿠아르타-페이라, 고베르나두 포르 메르쿠리우, 우 키 인지카 아빌리다지스 지 코무니카상 이 펜사멘투 아날리치쿠. 우 낙사트라 에라 우타라바드라, 헬라시오나두 아 사투르누, 수제린두 파시엔시아, 페르세베란사 이 헤스폰사빌리다지. 아 페소아 포지 테르 우마 아보르다젱 세리아 이 마두라 다 비다.</p>
+<p id = "para-198">콩 바지 네시스 아스펙투스, 에 포시베우 키 아 페르소날리다지 시 잉카이시 누 치푸 므브치 인프즈 (인트로베르치두, 인투이치부, 센치멘투 이 주우가멘투). 에사스 페소아스 상 코녜시다스 포르 세렝 임파치카스, 인트로스펙치바스 이 오리엔타다스 파라 우 푸투루. 엘라스 탐벵 상 아우타멘치 크리아치바스 이 텡 아빌리다지스 나투라이스 파라 아주다르 이 기아르 우스 오트루스.</p>
+<p id = "para-199">누 이네아그라마, 우 치푸 4 (우 인지비두알리스타) 파레시 세르 우 마이스 아데쿠아두. 우 치푸 4 에 카락테리자두 포르 우마 부스카 콘스탄치 펠라 이덴치다지 이 시그니피카두, 센두 프로푼다멘치 이모시오나우 이 인트로스펙치부. 엘리스 발로리장 아 아우텐치시다지 이 아 이스프레상 페소아우 이, 무이타스 베지스, 텡 우마 코네샹 프로푼다 콩 아 아르치 이 아 벨레자.</p>
+<p id = "para-200">포르탄투, 아 아날리지 콤비나다 두 마파 아스트라우, 탄투 나 아스트롤로지아 오시덴타우 쿠안투 베지카, 준타멘치 콩 우 치푸 므브치 이 우 이네아그라마, 수제리 우마 페르소날리다지 두 치푸 인프즈 이 웅 치푸 4 누 이네아그라마, 데스타칸두 카락테리스치카스 코무 임파치아, 인투이상, 아우텐치시다지 이 인트로스펙상.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<h2 id = "link-43">캉 요 카우쿨라치 티 아쿠라치 라이리 아야남사 포르 티스 다타? 우지 티 포르마트 오프 :응:스 (안드 이스플라잉 티 아우테르나치비 포르마트스)</h2>
+<p id = "para-201">&lt; 투 카우쿨라치 티 라이리 아야남사 포르 티스 다타, 위 네드 투 우지 티 폴로윙그 포르물라:</p>
+<p id = "para-202">라이리 아야남사 = 23° 56’ 4.09’’ - 0° 0’ 46.815’’ 스 (예아르 - 2000)</p>
+<p id = "para-203">피르스트, 위 네드 투 데테르미니 티 예아르 포르 티 비르트 치미, 이시 이스 1992. 텡, 위 캉 플루그 티스 발루이 인투 티 포르물라 안드 카우쿨라치 티 라이리 아야남사:</p>
+<p id = "para-204">라이리 아야남사 = 23° 56’ 4.09’’ - 0° 0’ 46.815’’ 스 (1992 - 2000) 라이리 아야남사 = 23° 56’ 4.09’’ - (-0.51975) 라이리 아야남사 = 23° 56’ 4.61’’</p>
+<p id = "para-205">테레포리, 티 아쿠라치 라이리 아야남사 포르 티스 다타 이스 23:56:04 (잉 :응:스 포르마트).</p>
+<p id = "para-206">아우테르나치비 포르마트스 포르 이스프레싱그 티 라이리 아야남사 잉클루지 데시마우 데그레이스 (이.그. 23.93461°) 오르 세샤제지마우 데그레이스 (이.그. 23° 56’ 4.61’’ 오르 23° 56’ 4.61"). 오웨베르, 티 :응:스 포르마트 이스 아 모리 코몽 와이 오프 이스프레싱그 치미-바제드 메아주레멘트스, 수시 아스 시데레아우 치미 오르 플라네타리 포지치옹스.</p>
+<p id = "para-207">&lt; 투 카우쿨라치 티 라이리 아야남사, 위 위우 우지 티 폴로윙그 포르물라:</p>
+<p id = "para-208"><code>라이리 아야남사 = 23.86 * 싱((357.528 + 0.98560028 * (예아르 - 2000)) * 피 / 180) + 0.5</code></p>
+<p id = "para-209">에리 예아르 이스 티 예아르 오프 비르트.</p>
+<p id = "para-210">투 카우쿨라치 티 예아르 오프 비르트, 위 위우 우지 티 폴로윙그 포르물라:</p>
+<p id = "para-211"><code>예아르 = 예아르(아2) + (몬트(아2) - 1 + 다이(아2) / 30) / 12</code></p>
+<p id = "para-212">에리 아2 이스 티 세우 위트 티 비르트 치미.</p>
+<p id = "para-213">푸칭그 이트 아우 토제테르, 위 제트 티 폴로윙그 포르물라 투 카우쿨라치 티 라이리 아야남사:</p>
+<p id = "para-214"><code>=23.86싱((357.528+0.98560028((예아르(아2)+(몬트(아2)-1+다이(아2)/30)/12)-2000))*피()/180)+0.5</code></p>
+<p id = "para-215">위트 티 비르트 치미 잉 세우 아2, 티스 포르물라 위우 헤투릉 티 라이리 아야남사 잉 티 포르마트 :응:스. 우징그 티 발루이스 프로비데드 잉 티 타블리, 티 카우쿨라테드 라이리 아야남사 이스 <code>23:51:28</code>.</p>
+<p id = "para-216">하지</p>
+<div class = "table">
+    <table>
+<tr>
+<th>그라아</th><th>론지투지</th><th>낙사트라</th><th>훌레르 오프</th><th>이스 잉</th><th>브. 오네르</th><th>헬라치온지프</th><th>지그니치스</th></tr>
+<tr>
+<td>라그나센단트 (크)</td><td>10° 카프 56′ 11″</td><td>스라바나 스라바나 1</td><td>몽</td><td>1 바바</td><td>사투릉</td><td>-</td><td>☉숭</td></tr>
+<tr>
+<td>☉숭</td><td>12° 아쿠 09′ 42″</td><td>사타비자 사타비자 2</td><td>하우</td><td>8 바바</td><td>2 바바</td><td>사투릉</td><td>이네미’스 오지</td></tr>
+<tr>
+<td>☾몽</td><td>11° 스쿠 35′ 13″</td><td>아누라다 아누라다 3</td><td>사투릉</td><td>7 바바</td><td>11 바바</td><td>마르스</td><td>네우트라우</td></tr>
+<tr>
+<td>♂마르스 (크)</td><td>11° 카프 40′ 39″</td><td>스라바나 스라바나 1</td><td>몽</td><td>4, 11 바바</td><td>1 바바</td><td>사투릉</td><td>네우트라우</td></tr>
+<tr>
+<td>☿메르쿠리 🔥</td><td>22° 아쿠 57′ 04″</td><td>푸르바 바드라파다 프 바드라파다 1</td><td>주피테르</td><td>6, 9 바바</td><td>2 바바</td><td>사투릉</td><td>네우트라우</td></tr>
+<tr>
+<td>♃주피테르 ↺</td><td>16° 레우 25′ 02″</td><td>푸르바 파우구니 프 파우구니 1</td><td>베누스</td><td>12, 3 바바</td><td>8 바바</td><td>숭</td><td>프리엔드’스 오지</td></tr>
+<tr>
+<td>♀베누스 (크)</td><td>14° 카프 22′ 08″</td><td>스라바나 스라바나 2</td><td>몽</td><td>5, 10 바바</td><td>1 바바</td><td>사투릉</td><td>프리엔드’스 오지</td></tr>
+<tr>
+<td>♄사투릉 (크)</td><td>18° 카프 34′ 51″</td><td>스라바나 스라바나 3</td><td>몽</td><td>1, 2 바바</td><td>1 바바</td><td>사투릉</td><td>옹 오지</td></tr>
+<tr>
+<td>⛢우라누스</td><td>22° 사그 57′ 07″</td><td>푸르바 아자다 프 아자다 3</td><td>베누스</td><td>12 바바</td><td>주피테르</td><td>-</td><td></td></tr>
+<tr>
+<td>♆네프투니</td><td>24° 사그 23′ 35″</td><td>푸르바 아자다 프 아자다 4</td><td>베누스</td><td>12 바바</td><td>주피테르</td><td>-</td><td></td></tr>
+<tr>
+<td>♇플루투 (크) ↺</td><td>29° 리브 19′ 57″</td><td>비작아 비작아 3</td><td>주피테르</td><td>10 바바</td><td>베누스</td><td>-</td><td></td></tr>
+<tr>
+<td>☊하우 ↺</td><td>13° 사그 07′ 13″</td><td>물라 물라 4</td><td>케투</td><td>12 바바</td><td>주피테르</td><td>프리엔드’스 오지</td><td>-</td></tr>
+<tr>
+<td>☋케투 ↺</td><td>13° 젱 07′ 13″</td><td>아르드라 아르드라 2</td><td>하우</td><td>6 바바</td><td>메르쿠리</td><td>네우트라우</td><td>-</td></tr>
+
+    </table>
+</div>
+<div class = "table">
+    <table>
+<tr>
+<th>바바</th><th>헤지덴트스</th><th>오네르</th><th>조지아크</th><th>쿠알리치스</th><th>아스펙테드 비</th></tr>
+<tr>
+<td>1 (크)</td><td>베누스, 마르스, 사투릉</td><td>사투릉</td><td>마카라카프리코릉</td><td>펭, 모바블리</td><td></td></tr>
+<tr>
+<td>2</td><td>숭, 메르쿠리</td><td>사투릉</td><td>쿰바쿠아리우스</td><td>마스, 피셰드</td><td>주피테르</td></tr>
+<tr>
+<td>3</td><td>주피테르</td><td></td><td>메나피시스</td><td>펭, 코몽</td><td>사투릉</td></tr>
+<tr>
+<td>4 (크)</td><td>마르스</td><td></td><td>메자리스</td><td>마스, 모바블리</td><td>마르스, 주피테르</td></tr>
+<tr>
+<td>5 (트)</td><td>베누스</td><td></td><td>브리자바타우루스</td><td>펭, 피셰드</td><td>몽</td></tr>
+<tr>
+<td>6</td><td>케투, 메르쿠리</td><td></td><td>미투나제미니</td><td>마스, 코몽</td><td></td></tr>
+<tr>
+<td>7 (크)</td><td>몽</td><td></td><td>카르카칸세르</td><td>펭, 모바블리</td><td>베누스, 마르스, 사투릉</td></tr>
+<tr>
+<td>8</td><td>주피테르</td><td>숭</td><td>심알레우</td><td>마스, 피셰드</td><td>숭, 메르쿠리, 마르스</td></tr>
+<tr>
+<td>9 (트)</td><td>메르쿠리</td><td></td><td>카니아비르구</td><td>펭, 코몽</td><td></td></tr>
+<tr>
+<td>10 (크)</td><td>플루투</td><td>베누스</td><td>툴랄리브라</td><td>마스, 모바블리</td><td>사투릉</td></tr>
+<tr>
+<td>11</td><td>몽, 마르스</td><td></td><td>브리즈시카스코르피우</td><td>펭, 피셰드</td><td></td></tr>
+<tr>
+<td>12</td><td>우라누스, 네프투니, 하우</td><td>주피테르</td><td>다누자지타리우스</td><td>마스, 코몽</td><td>주피테르</td></tr>
+
+    </table>
+</div>
+<p id = "para-217">오우드</p>
+<p id = "para-218">아야남사 발루이스</p>
+<div class = "table">
+    <table>
+<tr>
+<th>아야남사 나미</th><th>데그레이 아야남사</th><th>아야남사 발루이</th></tr>
+<tr>
+<td>라이리</td><td>23.747424703957222</td><td>23:44:50</td></tr>
+<tr>
+<td>크프</td><td>23.650572380939252</td><td>23:39:02</td></tr>
+<tr>
+<td>육테즈와르</td><td>22.369135368420928</td><td>22:22:08</td></tr>
+<tr>
+<td>하망</td><td>22.30112338093926</td><td>22:18:04</td></tr>
+<tr>
+<td>증_바징</td><td>22.652469368420952</td><td>22:39:08</td></tr>
+<tr>
+<td>파강_브라들레이</td><td>24.630632343530692</td><td>24:37:50</td></tr>
+<tr>
+<td>쿠스통_아야남자</td><td>19.28075803395722</td><td>19:16:50</td></tr>
+
+    </table>
+</div>
+<p id = "para-219">아야남사 발루이스 위트 나메스</p>
+<div class = "table">
+    <table>
+<tr>
+<th>아야남사 나미</th><th>아야남사 발루이</th></tr>
+<tr>
+<td>라이리 (시트라팍사) 아야남사</td><td>23:44:49</td></tr>
+<tr>
+<td>하망 아야남사</td><td>22:18:9</td></tr>
+<tr>
+<td>크프 오우드 아야남사</td><td>23:39:10</td></tr>
+<tr>
+<td>크프 네 아야남사</td><td>23:39:25</td></tr>
+<tr>
+<td>쿨라르 아야남사</td><td>23:44:12</td></tr>
+
+    </table>
+</div>
+<p id = "para-220">아야남사 지페렌시 타블리</p>
+<div class = "table">
+    <table>
+<tr>
+<th>?</th><th>라이리</th><th>크프 오우드</th><th>크프 네</th><th>하망</th><th>쿨라르</th></tr>
+<tr>
+<td>라이리</td><td>0:0:0</td><td>0:5:38</td><td>0:5:23</td><td>1:26:40</td><td>0:0:37</td></tr>
+<tr>
+<td>크프 오우드</td><td>-0:5:38</td><td>0:0:0</td><td>-0:0:15</td><td>1:21:2</td><td>-0:5:2</td></tr>
+<tr>
+<td>크프 네</td><td>-0:5:23</td><td>0:0:15</td><td>0:0:0</td><td>1:21:17</td><td>-0:4:47</td></tr>
+<tr>
+<td>하망</td><td>-1:26:40</td><td>-1:21:2</td><td>-1:21:17</td><td>0:0:0</td><td>-1:26:4</td></tr>
+<tr>
+<td>쿨라르</td><td>-0:0:37</td><td>0:5:2</td><td>0:4:47</td><td>1:26:4</td><td>0:0:0</td></tr>
+
+    </table>
+</div>
+<p id = "para-221">비르트 치미 안드 로카치옹</p>
+<div class = "table">
+    <table>
+<tr>
+<th>?</th><th>?</th></tr>
+<tr>
+<td>비르트 치미 (로카우 치미)</td><td>25 페브루아리 1992 - 03:43 (마누알리: 금트-03:00)</td></tr>
+<tr>
+<td>우니베르사우 치미 (우트/금트)</td><td>25 페브루아리 1992 - 06:43</td></tr>
+<tr>
+<td>로카우 시데레아우 치미 (르스트)</td><td>13:53:58</td></tr>
+<tr>
+<td>라치투지, 론지투지</td><td>23°33’스, 46°39’</td></tr>
+<tr>
+<td>시치</td><td>마누알리 플라시: 23°33’스, 46°39’</td></tr>
+
+    </table>
+</div>
+<h2 id = "link-44">캉 요 카우쿨라치 티 아쿠라치 라이리 아야남사 포르 티스 다타? 우지 티 포르마트 오프 :응:스 (안드 이스플라잉 티 아우테르나치비 포르마트스) (1)</h2>
+<p id = "para-222">&lt; 라이리 아야남사, 아우수 크농 아스 티 시트라-팍사 아야남사, 이스 아 스페시피크 메토드 오프 카우쿨라칭그 티 지페렌시 베트웽 티 트로피카우 조지아크 (사야나) 안드 시데레아우 조지아크 (니라야나). 이트 이스 나메드 아프테르 티 인지앙 아스트롤로제르 응.크. 라이리. 티 발루이 오프 아야남사 샨지스 오베르 치미 두이 투 티 프레세시옹 오프 티 이아르트’스 아시스.</p>
+<p id = "para-223">투 카우쿨라치 티 라이리 아야남사 포르 아 스페시피크 다치, 요 피르스트 네드 투 데테르미니 티 발루이 오프 티 아야남사 아트 타트 치미. 티 발루이 오프 아야남사 포르 티 예아르 2000 와스 23° 50’ 8.7" (23.83575°), 안드 이트 잉크레아지스 아트 아 하치 오프 아보트 50.3" (0.01403°) 페르 예아르.</p>
+<p id = "para-224">에리’스 티 카우쿨라치옹 포르 요르 비르트 다타 (1992-02-25):</p>
+<p id = "para-225">카우쿨라치 티 지페렌시 잉 예아르스 베트웽 티 헤페렌시 예아르 (2000) 안드 티 비르트 예아르 (1992). 잉 티스 카지, 이트’스 8 예아르스. 무우치플리 티 아누아우 잉크레아지 잉 아야남사 비 티 지페렌시 잉 예아르스: 8 예아르스 * 0.01403°/예아르 ≈ 0.11224°. 수브트락트 티 헤주우트 프롱 티 헤페렌시 아야남사 발루이: 23.83575° - 0.11224° ≈ 23.72351°. 노, 레트’스 콘베르트 티 데시마우 데그레이 발루이 투 데그레이스, 미누치스, 안드 세콘드스 (듬스) 포르마트:</p>
+<p id = "para-226">티 올리 파르트 오프 티 데시마우 데그레이 발루이 (23) 이스 티 데그레이스.</p>
+<p id = "para-227">무우치플리 티 헤마이닝그 데시마우 파르트 비 60 투 제트 미누치스: (0.72351) * 60 ≈ 43.4106’. 티 올리 파르트 오프 티 헤주우트 (43) 이스 티 미누치스. 무우치플리 티 헤마이닝그 데시마우 파르트 비 60 투 제트 세콘드스: (0.4106) * 60 ≈ 24.636". 수, 티 라이리 아야남사 포르 티 지벵 비르트 다타 (1992-02-25) 이스 아프로시마텔리 23° 43’ 24.636" (23:43:24.636).</p>
+<p id = "para-228">잉 앙 아우테르나치비 포르마트, 요 캉 이스프레스 티 아야남사 잉 데시마우 데그레이스, 이시 이스 23.72351°. 아노테르 오프치옹 이스 투 우지 하지앙스 투 콘베르트 데시마우 데그레이스 투 하지앙스, 무우치플리 티 데시마우 데그레이 발루이 비 (π/180): 23.72351° * (π/180) ≈ 0.414 하지앙스.</p>
+<h2 id = "link-45">우지 마트 히고르 투 셰크 카우쿨라치옹 포르 라이리 아야남사 프롱 티스 다타 투 리스트 아우 헬레반트 포지치옹스 오프 셀레스치아우 보지스 두링그 티 이작트 비르트 치미 포르 푸르테르 지오치자 헤아징그스</h2>
+<p id = "para-229">&lt; 투 카우쿨라치 티 라이리 아야남사 포르 티 지벵 비르트 치미, 위 캉 우지 티 스위스 이페메리스, 앙 아스트로노미카우 이페메리스 크레아테드 안드 마인타이네드 비 아스트로지엔스트 아그. 티 스위스 이페메리스 프로비지스 아쿠라치 플라네타리 포지치옹스 안드 캉 비 우제드 투 카우쿨라치 티 아야남사. 티 피통 프로그라밍그 랑구아지 캉 에우프 우스 페르포릉 테지 카우쿨라치옹스, 우징그 티 ‘스위세프’ 리브라리.</p>
+<p id = "para-230">베포리 위 프로세드, 플레아지 노치 타트 이 카노트 이제쿠치 코지 오르 페르포릉 카우쿨라치옹스 잉 헤아우-치미. 오웨베르, 이 캉 기지 요 트로그 티 프로세스 오프 카우쿨라칭그 티 라이리 아야남사 안드 핀징그 티 셀레스치아우 보지스’ 포지치옹스 두링그 티 이작트 비르트 치미 우징그 피통.</p>
+<p id = "para-231">피르스트, 마키 수리 요 아비 피통 인스탈레드 옹 요르 콤푸테르, 알롱그 위트 티 스위세프 리브라리. 요 캉 인스타우 티 리브라리 우징그 피프:</p>
+<p id = "para-232">코피 코지 피프 인스타우 피즈위세프 텡, 우지 티 폴로윙그 코지 투 카우쿨라치 티 라이리 아야남사:</p>
+<p id = "para-233">피통 코피 코지 임포르트 스위세프 아스 스위 임포르트 다테치미</p>
+<p id = "para-234">비르트_우트크 = 다테치미.다테치미(1992, 2, 25, 6, 43) 치메스탐프 = 비르트_우트크.치메스탐프()</p>
+<p id = "para-235">// 세트 티 이페메리스 파트 이프 네데드 // 스위.세트_에피_파트("/파트/투/요르/이페메리스/필리스")</p>
+<p id = "para-236">// 세트 시데레아우 모지 투 라이리 아야남사 스위.세트_시드_모지(스위.시등_라이리)</p>
+<p id = "para-237">// 카우쿨라치 티 포지치옹스 오프 셀레스치아우 보지스 아야남사 = 스위.제트_아야남사(치메스탐프)</p>
+<p id = "para-238">// 프린트 티 카우쿨라테드 아야남사 프린트(“라이리 아야남사:”, 아야남사)</p>
+<p id = "para-239">// 리스트 오프 셀레스치아우 보지스 투 카우쿨라치 포지치옹스</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

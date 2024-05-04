@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+    <nav id = "nav">
+      <div id = "nav-title">
+        <h2><a href = "#link-0"></a></h2>
+      </div>
+          <ul>
+      <li><a href="#link-1">타우크 아보트 티 프리미 메리지앙, 안드 이 이트 이스 테리</a></li>
+      <li><a href="#link-2">도이스 가나 아비 앙 아스트로노미 이스토리 타트 세트스 이트 아파르트 프롱 오테르 콘트리스?</a></li>
+      <li><a href="#link-3">콘트라스트 이트스 아스트로노미 포텐치아우 위트 아와이’스</a></li>
+      <li><a href="#link-4">데타이우 티 토프 3 콘트리스 위트 티 베스트 콘지치옹스 오베라우 이스플라이닝그 이</a></li>
+    </ul>
+    </nav>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+            <img id = "menu-button" onclick="toggle();"
+                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
+                 alt = "Table of contents" title = "Table of contents" />
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">타우크 아보트 티 프리미 메리지앙, 안드 이 이트 이스 테리</h2>
+<p id = "para-1">&lt; 티 프리미 메리지앙 이스 티 리니 오프 론지투지 타트 이스 데지그나테드 아스 0 데그레이스. 이트 이스 앙 이마지나리 리니 타트 시르클리스 티 이아르트, 파싱그 트로그 티 노르트 안드 소트 폴리스, 안드 이스 우제드 아스 아 헤페렌시 포인트 포르 메아주링그 론지투지.</p>
+<p id = "para-2">티 프리미 메리지앙 와스 이스타블리제드 아트 앙 인테르나치오나우 콘페렌시 에우드 잉 와징그통 드.크. 잉 1884, 비 헤프레젠타치베스 프롱 25 콘트리스. 티 콘페렌시 와스 에우드 투 아드레스 티 네드 포르 아 우니베르사우 시스텡 오프 치메케핑그, 아스 티 라크 오프 아 스탄다르지제드 시스텡 와스 카우징그 프로블렘스 포르 글로바우 나비가치옹 안드 코무니카치옹.</p>
+<p id = "para-3">티 쇼이시 오프 티 프리미 메리지앙 와스 아 수브젝트 오프 데바치 아트 티 콘페렌시, 위트 바리오스 프로포자우스 푸트 포르와르드. 우우치마텔리, 티 메리지앙 타트 파세드 트로그 티 호야우 오브세르바토리 잉 그렌으위시, 잉글란드 와스 쇼젱 아스 티 프리미 메리지앙, 두이 잉 파르트 투 티 팍트 타트 티 오브세르바토리 아드 아우헤아지 벵 이스타블리제드 아스 아 센테르 오프 아스트로노미카우 헤제아르시 안드 치메케핑그.</p>
+<p id = "para-4">신시 텡, 티 프리미 메리지앙 아트 그렌으위시 아스 벵 우제드 아스 티 바지스 포르 티 워루드’스 치미 조니스, 위트 이아시 치미 조니 베잉그 바제드 옹 아 지페렌시 오프 15 데그레이스 오프 론지투지. 티스 메앙스 타트 아스 티 이아르트 호타치스, 이아시 치미 조니 이스 오니 오르 아에아드 오르 베인드 티 치미 아트 티 프리미 메리지앙, 데펜징그 옹 이시 시지 오프 티 리니 이트 파우스.</p>
+<p id = "para-5">티 프리미 메리지앙 이스 임포르탄트 베카우지 이트 프로비지스 아 코몽 헤페렌시 포인트 포르 나비가치옹, 카르토그라피, 안드 치메케핑그 아론드 티 워루드. 이트 이스 아 크루시아우 일레멘트 오프 오르 모데릉 글로바우 소시에치, 안드 이트스 이스타블리즈멘트 아스 마지 이트 포시블리 포르 페오플리 안드 고드스 투 트라베우 아크로스 티 워루드 위트 그레아테르 이아지 안드 이피시엥키.</p>
+<h2 id = "link-2">도이스 가나 아비 앙 아스트로노미 이스토리 타트 세트스 이트 아파르트 프롱 오테르 콘트리스?</h2>
+<p id = "para-6">&lt; 이스, 가나 아스 앙 아스트로노미 이스토리 타트 세트스 이트 아파르트 프롱 오테르 콘트리스. 아스트로노미 아스 벵 앙 임포르탄트 파르트 오프 티 쿠우투리 안드 이스토리 오프 가나 포르 센투리스, 안드 테리 이스 이비덴시 타트 안시엔트 가나이앙스 아드 아 데프 운데르스탄징그 오프 티 모베멘트스 오프 셀레스치아우 보지스.</p>
+<p id = "para-7">오니 오프 티 모스트 노타블리 이잠플리스 오프 가나’스 아스트로노미 이스토리 이스 티 콘스트룩치옹 오프 티 스토니 시르클리스 잉 티 노르테릉 헤지옹 오프 티 콘트리, 이시 다치 바크 투 아론드 2000 브크. 테지 시르클리스 아리 벨리에베드 투 아비 벵 우제드 아스 아스트로노미카우 오브세르바토리스, 위트 티 스토니스 마르킹그 티 포지치옹스 오프 스타르스 안드 플라네트스 아트 지페렌트 치메스 오프 티 예아르.</p>
+<p id = "para-8">잉 모리 헤센트 이스토리, 가나 아스 벵 오미 투 아 눔베르 오프 임포르탄트 아스트로노미카우 인스치투치옹스 안드 헤제아르셰르스. 포르 이잠플리, 잉 티 1960스 안드 1970스, 티 우니베르시치 오프 가나 와스 아 센테르 포르 아스트로노미카우 헤제아르시, 안드 프로두세드 소미 오프 티 피르스트 아스트로노메르스 옹 티 콘치넨트. 잉 티 1990스, 티 가나 스파시 시엔시 안드 테시놀로기 센트리 와스 이스타블리제드, 이시 아스 신시 카히에드 오트 아 한지 오프 헤제아르시 안드 오트레아시 악치비치스, 잉클루징그 티 데벨로프멘트 오프 가나’스 피르스트 사텔리치, 이시 와스 라운셰드 잉 2017.</p>
+<p id = "para-9">아지치오날리, 잉 헤센트 예아르스, 테리 아스 벵 아 그로윙그 인테레스트 잉 아스트로노미 잉 가나, 위트 아 눔베르 오프 오르가니자치옹스 안드 이니치아치베스 아이메드 아트 프로모칭그 티 수브젝트 안드 잉크레아징그 푸블리크 아와레네스. 포르 이잠플리, 티 가나 아스트로노미 안드 아스트로피직스 그로프 와스 포르메드 잉 2013 투 브링그 토제테르 헤제아르셰르스 안드 스투덴트스 인테레스테드 잉 티 피에우드, 일리 티 가나 플라네타리웅 안드 시엔시 센트리 와스 이스타블리제드 잉 2019 투 프로비지 이두카치오나우 오포르투니치스 안드 헤조르시스 포르 티 푸블리크.</p>
+<p id = "para-10">오베라우, 가나’스 롱그 안드 히시 이스토리 오프 아스트로노미, 콤비네드 위트 이트스 그로윙그 포쿠스 옹 티 수브젝트 잉 헤센트 예아르스, 아스 에우페드 투 마키 이트 아 우니키 안드 임포르탄트 플라예르 잉 티 글로바우 아스트로노미카우 코무니치.</p>
+<h2 id = "link-3">콘트라스트 이트스 아스트로노미 포텐치아우 위트 아와이’스</h2>
+<p id = "para-11">&lt; 보트 가나 안드 아와이 아비 시그니피칸트 포텐치아우 포르 아스트로노미 두이 투 테이르 제오그라피크 로카치옹스, 클레아르 스키스, 안드 라크 오프 리그트 폴루치옹. 오웨베르, 테리 아리 소미 노타블리 지페렌시스 잉 테이르 아스트로노미 포텐치아우.</p>
+<p id = "para-12">아와이 이스 크농 포르 아빙그 소미 오프 티 베스트 아스트로노미카우 오브세르빙그 콘지치옹스 잉 티 워루드. 티 이그 아우치투지 안드 클레아르 스키스 오프 티 수미트 오프 마우나 케아, 아 도르만트 보우카누 옹 티 이즐란드 오프 아와이, 마키 이트 앙 이데아우 로카치옹 포르 오브세르바토리스. 티 몬타잉 이스 오미 투 아 눔베르 오프 워루드-클라스 오브세르바토리스, 잉클루징그 티 케크 오브세르바토리, 이시 오지스 티 워루드’스 라르제스트 오프치카우 안드 인프라레드 텔레스코페스. 테지 오브세르바토리스 아비 벵 인스트루멘타우 잉 아드반싱그 오르 운데르스탄징그 오프 티 우니베르시, 파르치쿨라를리 잉 티 피에우드스 오프 코즈몰로기, 갈라시 이볼루치옹, 안드 이조플라네트 지스코베리.</p>
+<p id = "para-13">잉 콘트라스트, 가나 도이스 노트 아비 아니 마조르 아스트로노미카우 오브세르바토리스, 안드 이트스 헤제아르시 인프라스트룩투리 잉 티 피에우드 이스 스치우 데벨로핑그. 오웨베르, 가나 아스 아 히시 쿠우투라우 이스토리 잉 아스트로노미, 안드 이트스 페오플리 아비 아 데프 아프레시아치옹 포르 티 수브젝트. 테리 이스 시그니피칸트 포텐치아우 포르 가나 투 베코미 아 우브 포르 아스트로노미 헤제아르시 안드 이두카치옹 잉 웨스트 아프리카, 파르치쿨라를리 지벵 이트스 그로윙그 인테레스트 잉 티 수브젝트 잉 헤센트 예아르스.</p>
+<p id = "para-14">잉 테름스 오프 티 스페시피크 아레아스 오프 아스트로노미 헤제아르시 타트 이아시 로카치옹 이스 웨우-수이테드 포르, 아와이 이스 파르치쿨라를리 웨우-크농 포르 이트스 아빌리치 투 스투지 데프 스파시 오브젝트스, 수시 아스 갈라시스 안드 쿠아자르스. 옹 티 오테르 안드, 가나’스 제오그라피크 로카치옹 마키스 이트 웨우-수이테드 포르 스투징그 페노메나 잉 티 소테릉 스키, 이시 이스 노트 비지블리 프롱 마니 오테르 파르트스 오프 티 워루드.</p>
+<p id = "para-15">오베라우, 일리 아와이 아스 아 모리 이스타블리제드 아스트로노미 인프라스트룩투리 안드 이스 파르치쿨라를리 웨우-수이테드 포르 세르타잉 아레아스 오프 헤제아르시, 가나’스 히시 쿠우투라우 이스토리 잉 아스트로노미 안드 그로윙그 인테레스트 잉 티 수브젝트 마키 이트 아 프로미징그 로카치옹 포르 아스트로노미 헤제아르시 안드 이두카치옹 잉 웨스트 아프리카.</p>
+<h2 id = "link-4">데타이우 티 토프 3 콘트리스 위트 티 베스트 콘지치옹스 오베라우 이스플라이닝그 이</h2>
+<p id = "para-16">&lt; 데테르미닝그 티 콘트리스 위트 티 베스트 콘지치옹스 포르 아스트로노미 인보우베스 콘시데링그 아 한지 오프 팍토르스, 잉클루징그 제오그라피크 로카치옹, 웨아테르 콘지치옹스, 리그트 폴루치옹, 안드 티 프레젠시 오프 오브세르바토리스 안드 오테르 헤제아르시 파실리치스. 에리 아리 티 토프 트레이 콘트리스 위트 티 베스트 콘지치옹스 오베라우 포르 아스트로노미:</p>
+<p id = "para-17">실리 실리 이스 위델리 헤가르데드 아스 티 베스트 콘트리 잉 티 워루드 포르 아스트로노미 두이 투 이트스 클레아르 스키스, 이그 아우치투지, 안드 로 레베우스 오프 리그트 폴루치옹. 티 콘트리’스 노르테릉 아타카마 데제르트 이스 오미 투 소미 오프 티 워루드’스 모스트 아드반세드 오브세르바토리스, 잉클루징그 티 이우로페앙 소테릉 오브세르바토리’스 베리 라르지 텔레스코피 안드 티 아타카마 라르지 밀리메테르/수브밀리메테르 아하이. 티 콤비나치옹 오프 티 헤지옹’스 드리 클리마치, 이그 아우치투지, 안드 라크 오프 리그트 폴루치옹 마키 이트 이데아우 포르 스투징그 아 한지 오프 아스트로노미카우 페노메나, 잉클루징그 스타르 포르마치옹, 갈라시 이볼루치옹, 안드 티 세아르시 포르 이조플라네트스.</p>
+<p id = "para-18">아우스트랄리아 아우스트랄리아 아스 롱그 벵 크농 포르 이트스 클레아르 스키스 안드 로 레베우스 오프 리그트 폴루치옹, 파르치쿨라를리 잉 티 헤모치 오트바크 헤지옹스 오프 티 콘트리. 티 콘트리 이스 오미 투 아 눔베르 오프 마조르 오브세르바토리스, 잉클루징그 티 앙글루-아우스트랄리앙 텔레스코피 안드 티 아우스트랄리아 텔레스코피 콤팍트 아하이. 티 소테릉 에미스페리 로카치옹 오프 아우스트랄리아 아우수 마키스 이트 웨우-수이테드 포르 스투징그 오브젝트스 잉 티 소테릉 스키, 수시 아스 티 마젤라니크 클로드스 안드 티 갈락치크 센테르.</p>
+<p id = "para-19">우니테드 스타치스 티 우니테드 스타치스 아스 아 눔베르 오프 로카치옹스 타트 아리 웨우-수이테드 포르 아스트로노미, 잉클루징그 아와이, 아리조나, 안드 네 메시쿠. 아와이’스 마우나 케아 이스 오미 투 소미 오프 티 워루드’스 모스트 아드반세드 오브세르바토리스, 일리 아리조나 안드 네 메시쿠 아리 크농 포르 테이르 이그 아우치투지, 클레아르 스키스, 안드 로 레베우스 오프 리그트 폴루치옹. 티 우니테드 스타치스 이스 아우수 오미 투 아 눔베르 오프 마조르 헤제아르시 인스치투치옹스, 잉클루징그 티 나치오나우 오프치카우 아스트로노미 오브세르바토리 안드 티 스파시 텔레스코피 시엔시 인스치투치.</p>
+<p id = "para-20">오베라우, 테지 트레이 콘트리스 오페르 소미 오프 티 베스트 콘지치옹스 포르 아스트로노미 두이 투 테이르 제오그라피크 로카치옹, 파보라블리 웨아테르 콘지치옹스, 안드 라크 오프 리그트 폴루치옹. 테이 아리 오미 투 소미 오프 티 워루드’스 모스트 아드반세드 오브세르바토리스 안드 헤제아르시 파실리치스, 안드 아비 플라예드 아 마조르 홀리 잉 아드반싱그 오르 운데르스탄징그 오프 티 우니베르시.</p>
+<p class = "rule">***</p>
+<p class = "rule">***</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

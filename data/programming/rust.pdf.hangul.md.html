@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이안7비트7비6프치그푼흐5금즈드3이조프드크프프36구틈아4이스포이.이프프스.드웨브.링크/?필레나미=마라+부스+-+후스트+아토믹스+안드+록스-우%27헤일리+메지아+%282023%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이브3프3트5프브즈코이스흐튼드크드지2이와즈프그스프3브7브74스브즈트지62아이.이프프스.드웨브.링크/?필레나미=시우바잉+케르코르+-+블라크+아트+후스트_+아플리에드+오펜시비+세쿠리치+위트+티+후스트+프로그라밍그+랑구아지+%282022%29+-+리브젱.리.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이그크드크그투3느지227이27드3이스프7크즈브크그프트2피트2쿠이즈4지7스44우.이프프스.드웨브.링크/?필레나미=%28마스테링그+콤푸테르+시엔시%29+수피앙+빙+우자이르+-+마스테링그+후스트_+아+베지네르%27스+기지-크르크+프레스+%282022%29+.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이2브25즈드스크2스프43브4브즈바크2이프치르스즈르데틈스스브크구웍고쿠.이프프스.드웨브.링크/?필레나미=브렌뎅+마테스+-+마닝그+이아를리+아세스+프로그랑+코지+리키+아+프루+잉+후스트+베르시옹+4-마닝그+푸블리카치옹스+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이7오브4프스직킁2리우크프프슈4브26스3후35바스2이그52크즈크4즈비.이프프스.드웨브.링크/?필레나미=에르베르트+워우베르송+-+후스트+브라잉+테아제르스_+이제르시지+요르+민드-프라그마치크+복세우프+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이그즌스6응2크5르스643그7르36브빅브스크7스크6이트삼응2드2니스7르스33므브크.이프프스.드웨브.링크/?필레나미=루카+파우미에리+-+제루+투+프로둑치옹+잉+후스트_+앙+오피니오나테드+인트로둑치옹+투+바켄드+데벨로프멘트-인데펜덴틀리+푸블리제드+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이에븡3브3브르크2익스스그5우르브주4오구프킁42아그2오크42모우크크쇼근즈시브3아.이프프스.드웨브.링크/?필레나미=프라부+이즈와를라+-+후스트+세르베르스%2크+세르비시스%2크+안드+아프스-마닝그+푸블리카치옹스+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이그65프2프3케프주4스스케그피이3르크4아엔드74크그드크4오프6부3즈위스73이.이프프스.드웨브.링크/?필레나미=켕+요엥스-클라르크+-+코만드-리니+후스트_+아+프로젝트-바제드+프리메르+포르+리칭그+후스트+클리스-우%27헤일리+메지아+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이드스스미4싱4느프프프타프7우이7우프프브7우6스스7드크프케스투37아오스2크스그4.이프프스.드웨브.링크/?필레나미=이리크+스미트+-+가미+데벨로프멘트+위트+후스트+안드+웨바셈블리_+레아릉+오+투+훙+후스트+옹+티+웨브+일리+부이우징그+아+가미-팍트+푸블리징그+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이프65아프6브6쿠2오킁5으스틈스르누이슘프2즈푸브7우자즈스쿠비.이프프스.드웨브.링크/?필레나미=바스치앙+그루베르+-+후스트+웨브+데벨로프멘트-마닝그+푸블리카치옹스+%282023%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이드세이북스브페우26이르2그파6늠프스7자2프2즈6름브브5세아에크르트32다이.이프프스.드웨브.링크/?필레나미=센지우+쿠마르+넬라이야펭+-+프락치카우+웨바셈블리_+이스플로리+티+푼다멘타우스+오프+웨바셈블리+프로그라밍그+우징그+후스트-팍트+푸블리징그+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이바75그즈세근7흐디그657즈즈프즈브크5키우프스36아르드즈브스트슨푸에이우.이프프스.드웨브.링크/?필레나미=아비제크+쿠마르+-+후스트+크라즈+코르시_+부이우드+이그-페르포르만시%2크+이피시엔트+안드+프로둑치비+소프트와리+위트+티+포웨르+오프+네스트-제네라치옹+프로그라밍그+스키우스+%28잉글리즈+이지치옹%29-브프브+푸블리카치옹스+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이드7븐플루아즈프2오그즈2이드크7이스5누픙333이부트슈7우이셰브무.이프프스.드웨브.링크/?필레나미=마스웨우+플리통+-+후스트+웨브+프로그라밍그_+아+안드스-옹+기지+투+데벨로핑그%2크+파카징그%2크+안드+데플로잉그+풀리+풍크치오나우+후스트+웨브+아플리카치옹스%2크-팍트+푸블리징그+%282023%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이프스브드프4635크4트7224크브틀렉즈5아이5에보우셰오이오이크프니프7후아.이프프스.드웨브.링크/?필레나미=카루나+무르치+-+후스트+웨브+데벨로프멘트+위트+호케트_+아+프락치카우+기지+투+스타르칭그+요르+조르네이+잉+후스트+웨브+데벨로프멘트+우징그+티+호케트+프라메워르크-팍트+푸블리징그+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre><pre><span style="color:#323232;">우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이크3크프르스크2자이스그스크2름프4리스6미브크큰부트그슈이드3436스크스키아.이프프스.드웨브.링크/?필레나미=알레샨드루+하도비시%2크+이오아나+쿨리크+-+제칭그+스타르테드+위트+세쿠리+임베데드+시스템스_+데벨로핑그+이오트+시스템스+포르+미크루_비트+안드+하스프베히+피+피쿠+우징그+후스트+안드+토크-아프레스+%282022%29.프드프#파지=1</span>
+<span style="color:#323232;">프라미: 트프스://</span>
+<span style="color:#323232;">스칠리: 에이그트:50브</span>
+
+</pre>
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>

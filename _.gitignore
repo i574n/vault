@@ -10,8 +10,10 @@
 *.bundle
 .*.md
 .history
+.vscode/
 
 dist/
+deps/
 target/
 gen/
 file_cache/

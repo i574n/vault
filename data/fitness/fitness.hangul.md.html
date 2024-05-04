@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="crowbook">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    
+    <title></title>
+    <style type = "text/css">
+      body {
+    font-family: "Linux Libertine", "Georgia", serif;
+    text-align: justify;
+    font-size: 100%;
+}
+
+p {
+    text-indent: 1.25em;
+    margin:0;
+    hyphens: auto;
+}
+
+blockquote {
+    margin: 1em;
+    font-style: italic;
+}
+code {
+    font-size: 80%;
+    font-family: "Linux Libertine Mono", monospace;
+    background-color: #F0F0F0;
+}
+pre {
+    font-family: "Linux Libertine Mono", monospace;
+    margin: 1em;
+    padding-top: 0;
+    background-color: #F0F0F0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+/* Try to disable hyphenation in titles */
+h1, h2, h3, h4, h5, h5 {
+    adobe-hyphenate: none;
+    -ms-hyphens: none; /* Trident (Windows) */
+    -moz-hyphens: none; /* Gecko (Firefox) */
+    -webkit-hyphens: none; /* Webkit */
+    -epub-hyphens: none; /* EPUB 3 */
+    hyphens: none; /* Futur standard */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    font-family: Linux Biolinum, sans-serif;
+    font-variant: small-caps;
+}
+
+/* Title of a part */
+h1.part {
+    font-size: 250%;
+    text-align: center;
+}
+
+/* The `Part X` section of a part */
+h2.part {
+    font-size: 175%;
+    text-align: center;
+}
+
+/* The "Chapter X" section of a chapter */
+span.chapter-header {
+    font-size: 75%;
+}
+
+/* Title of the book */
+h1.title {
+    text-align: center;
+    font-size: 300%;
+}
+/* Author */
+h2.author {
+    text-align: right;
+    font-size:  200%;
+}
+
+/* Subtitle */
+h2.subtitle {
+    text-align: center;
+    font-size: 200%;
+}
+
+/* When toc is displayed inlined */
+#toc ol, #toc ul {
+    padding: 0;
+    margin-left: 1em;
+}
+#toc li {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+#toc li:before {
+    content: none;
+}
+
+#cover img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.rule {
+    text-align: center !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+}
+
+/* The number of the note in an expanded footnote (e.g. [3]) */
+.note-number {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+td.note-number {
+    vertical-align: top;
+}
+
+/* When footnotes (try to) be diplayed as margin notes */
+.sidenote {
+    display: block;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+    margin-right: -1.5em;
+}
+
+.sidenote .note-number {
+    float: left;
+}
+
+/* The div class displaying notes at the end of a chapter */
+div.notes {
+    text-align: justify;
+    border-top: thin dashed black;
+    margin-top: 1em;
+}
+
+table.notes {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+table.notes tr td {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+table.notes tr td p {
+    text-indent: 0;
+}
+                 
+/* Every markdown table is included in a <div class = "table"> */
+.table {
+    margin: 1em;
+}
+
+.table table {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.table table th, .table table td {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+.table table th {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+
+span.initial { 
+    float: left;
+    font-size: 285%;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 0.8em;
+}
+
+p.first-para {
+    text-indent: 0;
+}
+
+/* Use this for escape narrow space so it is non-breaking */
+.nnbsp {
+    /* white-space: nowrap;*/
+    word-spacing: -0.13em;
+    /* Following necessary for Kobo EPUB3 reader??? */
+    margin: 0;
+    padding: 0;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '/* Default  HTML CSS file includes default EPUB CSS file */
+
+/* Colors for the navigation menu (toc) */
+nav {
+    background: #CBBFCC;
+    color: black;
+    border-right-color: black;
+}
+
+#nav a:link {
+    color: black;
+}
+
+#nav a:visited {
+    color: black;
+}
+
+/* Colors for top and footer */
+#top {
+    background-color: #444343;
+    color: white;
+}
+
+footer {
+    background-color: #444343;
+    color: white;
+}
+
+footer a, #top a {
+    color: #fc71ff;
+}
+
+footer a:hover, #top a:hover {
+    color: #b743fe;
+}
+
+/* Additional elements, only use for proofreading */
+/* Grammar error */
+.grammar-error {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+/*    background: #d966ff;*/
+}
+
+
+p.first-para:first-letter {
+    font-size: 300%;
+    float: left;
+    font-weight: bold;
+    margin-right: 0.05em;
+    line-height: 1em;
+}
+
+/* The nav element corresponding to the navigation menu */
+nav {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    font-size: 80%;
+    margin-left: 0;
+    border-right-width: 2px;
+    border-right-style: dashed;
+}
+
+#nav code {
+    background-color: transparent;
+}
+
+#nav a:link {
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+}
+
+#nav {
+    text-align: left;
+}
+
+#nav h2 {
+    text-align: center;
+}
+
+#nav li {
+    list-style-type: none;
+    text-indent: -1em;
+}
+
+#nav li:before {
+    content: none;
+}
+
+#nav ul {
+    padding-right: 1em;
+    padding-left: 1.5em;
+}
+
+/* The menu containing the button to display the navigation bar */
+#menu {
+    position: fixed;
+    z-index: 2;
+    top: 0em;
+    left: 1em;
+    transition: left 1s;
+}
+
+#menu img {
+    opacity: 0.5;
+}
+
+#menu img:hover {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+#menu-button {
+    height: 1.5em;
+    padding: 0.5em;
+}
+
+#book-button {
+    height: 1.5em;
+    padding: 0.5em;
+    float: left;
+}
+
+/* Hide navigation bar */
+#nav {
+    left: -21%;
+    transition: left 1s;
+}
+
+/* The main content of the book */
+#content {
+    overflow-y: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: margin-left 1s;
+}
+
+/* Used for multifiles HTML */
+.prev_chapter {
+    text-align: left;
+    text-indent: 0;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.next_chapter {
+    text-align: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 120%;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+/* Improving readability for the HTML format only */
+p, blockquote, li, .image  {
+    margin-right: auto;
+    max-width: 33em;
+}
+
+blockquote {
+    padding: 1em;
+}
+
+#content {
+    text-align: center;
+}
+
+#page {
+    display: inline-block;
+    text-align: justify;
+    max-width: 33em;
+}
+
+#nav-container {
+    top: 0;
+    width: 100%;
+}
+
+#nav-title {
+    top: 0;
+}
+
+#toolbar {
+    top: 0;
+    float: left;
+}
+
+#toolbar img {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#top p {
+    font-family: "Linux Biolinum";
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+footer, #top {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    transition: margin-left 1s;
+}
+
+footer a, #top a {
+    text-decoration: none;
+}
+
+footer p, #top p {
+    text-indent: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    max-width: 33em;
+}
+
+' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '
+
+    </style>
+    <style type = "text/css" media = "print">
+      #page {
+    display: block;
+}
+
+.chapter {
+    page-break-before: always;
+}
+
+#menu {
+    display: none;
+}
+
+#nav {
+    display: none;
+}
+    </style>
+   <script>
+function on(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "pink";
+    }
+}
+function off(name) {
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++) {
+        var elem = elements[i];
+        elem.style.backgroundColor = "white";
+    }
+}
+
+var display_menu = false;
+function toggle() {
+    if (display_menu == true) {
+        display_menu = false;
+        document.getElementById("nav").style.left = "-21%";
+        document.getElementById("content").style.marginLeft = "0%";
+        document.getElementById("menu").style.left = "1em";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "0";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "0%";
+        }*/
+    } else {
+        display_menu = true;
+        document.getElementById("nav").style.left = "0";
+        document.getElementById("content").style.marginLeft = "20%";
+        document.getElementById("menu").style.left = "20%";
+/*        if(document.getElementById("top")) {
+            document.getElementById("top").style.left = "20%";
+        }
+        if(document.getElementById("footer")) {
+            document.getElementById("footer").style.marginLeft = "20%";
+        }*/
+    }
+}
+
+
+
+   </script>
+
+
+  </head>
+  <body>
+    
+<script type = 'application/ld+json'>
+{
+    "@context": "http://schema.org/",
+    "@type": "Book",
+    "author": "",
+    "name": "",
+    
+    
+    
+    
+    
+    "inLanguage": "en"
+
+
+
+
+}
+</script>
+
+    <div id = "content">
+      
+      <div id = "page">
+        <header>
+
+          <div id = "menu">
+          </div>
+	  <h2 class="author"></h2>
+          <h1 id = "link-0" class="title" ></h1>
+	  
+        </header>
+
+        <div id = "chapter-0" class = "chapter">
+  <h2 id = "link-1">데타이우 잉 프트-브르 티 10 무스클리스 타트 코우드 우지 소미 다일리 스트레트싱그 위트 프로페르 헤마르크스</h2>
+<ol>
+<li><p id = "para-1"><b>쿠아드리세프스</b>: 에스치 그란지 그루푸 무스쿨라르 나 프렌치 다스 코샤스 에 웅 두스 마이스 임포르탄치스 파라 아 노사 모빌리다지. 이스치카-루스 헤굴라르멘치 포지 아주다르 아 이비타르 아 히지데스 이 아스 레종이스. 파라 이스치카르, 피키 잉 페, 도브리 우 조엘류 이 세구리 우 토르노젤루 나 망 코헤스폰덴치.</p>
+</li>
+<li><p id = "para-2"><b>이스키오치비아이스</b>: 로칼리자두스 나 파르치 지 트라스 다스 코샤스, 에스치스 무스쿨루스 상 프레켄테멘치 네글리젠시아두스, 마스 이스치카-루스 포지 프레베니르 레종이스 나 파르치 인페리오르 다스 코스타스 이 조엘류스. 우마 마네이라 심플리스 지 알롱가-루스 에 시 센타르 누 샹 콩 웅 페 이스치카두 아 수아 프렌치 이 도브라르 아 파르치르 두 쿠아드리우 파라 토카르 우 페.</p>
+</li>
+<li><p id = "para-3"><b>제메우스</b>: 에스치스 무스쿨루스 나 파르치 지 트라스 다 페르나 포뎅 피카르 텐수스 아포스 우 우주 이세시부, 이스페시아우멘치 시 보세 코히 오 카미냐 무이투. 파라 알롱가르, 피키 잉 프렌치 아 우마 파레지, 아반시 웅 페 이 잉클리니-시 파라 프렌치, 만텐두 아 페르나 지 트라스 헤타.</p>
+</li>
+<li><p id = "para-4"><b>플레쇼리스 두 쿠아드리우</b>: 시투아두스 누 쿠아드리우, 에스치스 무스쿨루스 페르미텡 레반타르 우스 조엘류스 이 도브라르 나 신투라. 시 이스치베렝 아페르타두스, 포뎅 레바르 아 프로블레마스 지 포스투라. 파라 알롱가-루스, 파사 웅 파수 아 프렌치 이 도브리 우 조엘류 다 프렌치, 만텐두 우 페 지 트라스 누 샹.</p>
+</li>
+<li><p id = "para-5"><b>트라페지우</b>: 에스치 그란지 무스쿨루 나 파르치 수페리오르 다스 코스타스 포지 피카르 텐수 콩 우 이스트레시 오 마 포스투라. 파라 알롱가-루, 센치-시 잉 우마 카데이라, 세구리 아 바지 다 카데이라 콩 우마 망 이 잉클리니 아 카베사 파라 우 라두 오포스투.</p>
+</li>
+<li><p id = "para-6"><b>글루테우스</b>: 우스 무스쿨루스 다스 나데가스 상 이센시아이스 파라 아 이스타빌리다지 다 페우비 이 파라 안다르 이 코헤르. 파라 알롱가-루스, 센치-시 누 샹, 도브리 웅 조엘류 이 콜로키 우 토르노젤루 누 조엘류 오포스투, 데포이스 프레시오니 수아베멘치 우 조엘류 도브라두.</p>
+</li>
+<li><p id = "para-7"><b>페이토라우</b>: 에스치스 무스쿨루스 두 페이투 포뎅 아페르타르 시 보세 파사르 무이투 템푸 센타두 오 시 쿠르반두. 파라 알롱가-루스, 피키 잉 우마 포르타 아베르타 이 콜로키 우스 안테브라수스 나스 모우두라스 다 포르타, 데포이스 아반시 파라 센치르 웅 알롱가멘투 누 페이투.</p>
+</li>
+<li><p id = "para-8"><b>데우토이지스</b>: 에스치 무스쿨루 두 옴브루 포지 피카르 텐수 콩 모비멘투스 헤페치치부스 두 브라수 오 마 포스투라. 파라 알롱가-루, 이스텐다 우 브라수 아트라베스 두 코르푸 이 우지 우 오트루 브라수 파라 아플리카르 우마 레비 프레상.</p>
+</li>
+<li><p id = "para-9"><b>비세프스</b>: 시 보세 우자 무이투 우스 브라수스, 우스 비세프스 포뎅 프레시자르 지 웅 봉 알롱가멘투. 레반치 우스 브라수스 아 아우투라 두스 옴브루스 이 데포이스 파라 트라스 아테 센치르 웅 알롱가멘투 나 프렌치 두스 브라수스.</p>
+</li>
+<li><p id = "para-10"><b>트리세프스</b>: 에스치 무스쿨루 나 파르치 지 트라스 두 브라수 포지 피카르 텐수 아포스 이제르시시우스 지 포르사 오 아치비다지스 코무 지지타상. 파라 알롱가-루, 레반치 우 브라수 아시마 다 카베사, 도브리 우 코토벨루 파라 키 아 망 아친자 아 파르치 지 트라스 두 페스코수 이 우지 아 오트라 망 파라 아플리카르 우마 레비 프레상.</p>
+</li>
+</ol>
+<p id = "para-11">렘브리-시, 눙카 데비 도에르 쿠안두 보세 이스치카. 시 보세 센치르 도르, 이수 포지 세르 웅 시나우 지 키 보세 이스타 시 이스치칸두 데마이스 오 파젠두 우 알롱가멘투 지 마네이라 잉코헤타. 웅 프로피시오나우 지 이두카상 피지카 오 피지오테라페우타 포지 포르네세르 오리엔타상 아지시오나우.</p>
+
+</div>
+
+      </div>
+      
+    </div>
+  </body>
+</html>
