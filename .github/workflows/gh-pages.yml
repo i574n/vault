@@ -24,7 +24,6 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.100-preview.1.24101.2'
-          cache: true
 
       - uses: actions/setup-node@v3
         with:
