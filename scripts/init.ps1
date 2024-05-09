@@ -31,4 +31,5 @@ if (!$fast) {
 { cargo +nightly install crowbook } | Invoke-Block -OnError Continue
 
 { pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block
+
 { pwsh ../apps/documents/build.ps1 } | Invoke-Block

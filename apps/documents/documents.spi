@@ -5,12 +5,13 @@ open rust_operators
 
 /// ## types
 inl types () =
-    rust.types ()
     am'.types ()
-    sm'.types ()
+    async.types ()
+    crypto.types ()
     file_system.types ()
     runtime.types ()
-    async.types ()
+    rust.types ()
+    sm'.types ()
 
 /// ## args
 inl get_args () =
@@ -52,7 +53,7 @@ let get_command () =
 
 /// ## crowbook
 let crowbook { ext dist_dir dist_path output_path } =
-    inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\'\'\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\'\'\\\\\\""'
+    inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
 
     inl exit_code, result =
         runtime.execution_options fun x => { x with
@@ -62,14 +63,14 @@ let crowbook { ext dist_dir dist_path output_path } =
         |> runtime.execute_with_options
 
     if result |> sm'.contains "ERROR" then
-        trace Info
+        trace Warning
             fun () => $'"documents.crowbook / result contains ERROR"'
-            fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / output_path: {!output_path} / {!_locals ()}"'
+            fun () => $'$"exit_code: %A{!exit_code} / output_path: {!output_path} / result: {!result} / {!_locals ()}"'
         (exit_code, result) |> Error
     else (exit_code, result) |> Ok
 
 /// ## hangul
-let hangul repository_root hangul_spec { ext dist_dir dist_path output_path } =
+let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
     inl lines =
         dist_path
         |> file_system.read_all_text
@@ -88,7 +89,7 @@ let hangul repository_root hangul_spec { ext dist_dir dist_path output_path } =
             command =
                 inl hangulize_path =
                     inl _exe = runtime.get_executable_suffix ()
-                    repository_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
+                    workspace_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
                 $'$"{!hangulize_path} {!hangul_spec}"'
             stdin =
                 fun stdin =>
@@ -190,12 +191,12 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
 let run { source_dir dist_dir cache_dir hangul_spec }
     : async.future_pin (resultm.result' (am'.vec (resultm.result' (pair string (am'.vec (optionm'.option' (resultm.result' string (pair string string))))) sm'.std_string)) sm'.std_string) =
 
-    inl repository_root = file_system.get_repository_root ()
+    inl workspace_root = file_system.get_workspace_root ()
 
     inl source_dir = source_dir |> file_system.get_full_path
     inl dist_dir = dist_dir |> file_system.get_full_path
     inl cache_dir = cache_dir |> file_system.get_full_path
-    
+
     trace Debug
         fun () => $'"documents.run"'
         fun () => $'$"source_dir: {!source_dir} / dist_dir: {!dist_dir} / cache_dir: {!cache_dir} / hangul_spec: %A{!hangul_spec} / {!_locals ()}"'
@@ -272,7 +273,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                         working_directory = source_dir |> Some |> optionm'.box
                     }
                     |> runtime.execute_with_options
-                
+
                 inl dist_path = dist_dir </> relative_path |> file_system.standardize_path
 
                 inl local_git_hash_exit_code, local_git_hash =
@@ -287,7 +288,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                 inl files =
                     inl files_fn = files_fn { dist_dir cache_dir }
                     inl files = [
-                        "hangul.md", dist_path, hangul repository_root hangul_spec |> files_fn
+                        "hangul.md", dist_path, hangul workspace_root hangul_spec |> files_fn
                     ]
 
                     inl { output_path } = fix_paths { dist_path cache_dir ext = "hangul.md" }
@@ -319,7 +320,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                             files
                         else []
                     else []
-                    
+
                 inl files' =
                     if files' <> []
                     then files'
@@ -418,7 +419,7 @@ inl main (args : array_base string) =
         |> optionm'.unbox
         |> optionm.value
         |> sm'.from_std_string
-    
+
     run { source_dir dist_dir cache_dir hangul_spec }
     |> async.block_on
     |> resultm.unwrap'

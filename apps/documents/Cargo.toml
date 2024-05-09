@@ -16,9 +16,13 @@ futures = "~0.3"
 futures-lite = "~2.3"
 async-walkdir = "~1.0"
 rayon = "~1.10"
+sha2 = "~0.11.0-pre.3"
 
 [dev-dependencies]
 
+[lib]
+path = "documents.rs"
+
 [[bin]]
 name = "documents"
-path = "documents.rs"
+path = "main.rs"
