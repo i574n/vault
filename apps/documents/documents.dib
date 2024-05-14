@@ -87,11 +87,39 @@ let get_command () =
 
 #!spiral
 
-let crowbook { ext dist_dir dist_path output_path } =
-
+let crowbook hangul { ext dist_dir dist_path output_path } =
     inl exit_code, result =
+        inl args =
+            inl default ext =
+                $'$" rendering.num_depth 6"'
+                +. $'$" rendering.highlight.theme \\\\\\"Solarized (dark)\\\\\\""'
+            match ext with
+            | "html" =>
+                $'$"--set"'
+                +. $'$" html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
+                +. default ext
+            | "pdf" =>
+                $'$"--set"'
+                +. $'$" tex.paper.size a4paper"'
+                +. (
+                    if hangul |> not
+                    then ""
+                    else
+                        $'$" tex.template.add \\\"\\\\usepackage{{polyglossia}}\\\""'
+                        +. $'$" tex.template.add \\\"\\\\setmainlanguage{{korean}}\\\""'
+                        +. $'$" tex.template.add \\\"\\\\setmainfont{{NanumGothicCoding}}\\\""'
+                )
+                +. default ext
+            | "epub" =>
+                $'$"--set"'
+                +. $'$" epub.version 3"'
+                +. $'$" html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
+                +. default ext
+            | _ => ""
         runtime.execution_options fun x => { x with
-            command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
+            command =
+                $'$"crowbook --verbose --to {!ext}"'
+                +. $'$" --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" {!args}"'
             working_directory = dist_dir |> Some |> optionm'.box
         }
         |> runtime.execute_with_options
@@ -348,12 +376,12 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                     inl { output_path } = fix_paths { dist_path cache_dir ext = "hangul.md" }
 
                     inl files' = [
-                        "html", dist_path, crowbook |> files_fn
-                        "pdf", dist_path, crowbook |> files_fn
-                        "epub", dist_path, crowbook |> files_fn
-                        "html", output_path, crowbook |> files_fn
-                        "pdf", output_path, crowbook |> files_fn
-                        "epub", output_path, crowbook |> files_fn
+                        "html", dist_path, crowbook false |> files_fn
+                        "pdf", dist_path, crowbook false |> files_fn
+                        "epub", dist_path, crowbook false |> files_fn
+                        "html", output_path, crowbook true |> files_fn
+                        "pdf", output_path, crowbook true |> files_fn
+                        "epub", output_path, crowbook true |> files_fn
                     ]
 
                     [ files; files' ]
