@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,68 +613,70 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifcu2uh7pesxrzgxspgxqxgc4ulwy4ygefrilrnonvjigy6dtcit4.ipfs.dweb.link/?filename=%28Expert+insight%29+Imran+Bashir+-+Mastering+Blockchain+_+a+deep+dive+into+distributed+ledgers%2C+consensus+protocols%2C+smart+contracts%2C+DApps%2C+cryptocurrencies%2C+Ethereum%2C+and+more+%282020%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+  <pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifcu2uh7pesxrzgxspgxqxgc4ulwy4ygefrilrnonvjigy6dtcit4.ipfs.dweb.link/?filename=%28Expert+insight%29+Imran+Bashir+-+Mastering+Blockchain+_+a+deep+dive+into+distributed+ledgers%2C+consensus+protocols%2C+smart+contracts%2C+DApps%2C+cryptocurrencies%2C+Ethereum%2C+and+more+%282020%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeic3zjbbfwysja3oi4vlx5bdlvpqprspzjjtlhowf7e2ssupvni27a.ipfs.dweb.link/?filename=Wei-Meng+Lee+-+Beginning+Ethereum+Smart+Contracts+Programming_+With+Examples+in+Python%2C+Solidity%2C+and+JavaScript-Apress+%282023%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeic3zjbbfwysja3oi4vlx5bdlvpqprspzjjtlhowf7e2ssupvni27a.ipfs.dweb.link/?filename=Wei-Meng+Lee+-+Beginning+Ethereum+Smart+Contracts+Programming_+With+Examples+in+Python%2C+Solidity%2C+and+JavaScript-Apress+%282023%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifqkwwmns2jhexzqhviwghrynjm67dx5yqbugr73p7t443vldulo4.ipfs.dweb.link/?filename=%28Perspectives+in+Law%2C+Business+and+Innovation%29+Marcelo+Corrales%2C+Mark+Fenwick%2C+Helena+Haapio+-+Legal+Tech%2C+Smart+Contracts+and+Blockchain-Springer+Singapore+%282019%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifqkwwmns2jhexzqhviwghrynjm67dx5yqbugr73p7t443vldulo4.ipfs.dweb.link/?filename=%28Perspectives+in+Law%2C+Business+and+Innovation%29+Marcelo+Corrales%2C+Mark+Fenwick%2C+Helena+Haapio+-+Legal+Tech%2C+Smart+Contracts+and+Blockchain-Springer+Singapore+%282019%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidc4wmofhl3aknijfijlm5fvmkq3yxe6tnpvhbqcwu675wlpjpwtq.ipfs.dweb.link/?filename=Gavin+Zheng%2C+Longxiang+Gao%2C+Liqun+Huang%2C+Jian+Guan+-+Ethereum+Smart+Contract+Development+in+Solidity-Springer+Singapore_Springer+%282021%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidc4wmofhl3aknijfijlm5fvmkq3yxe6tnpvhbqcwu675wlpjpwtq.ipfs.dweb.link/?filename=Gavin+Zheng%2C+Longxiang+Gao%2C+Liqun+Huang%2C+Jian+Guan+-+Ethereum+Smart+Contract+Development+in+Solidity-Springer+Singapore_Springer+%282021%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeicmofouieinj4ibqwdu4qn7pmbz7szvopqpgqs74sd665om5untma.ipfs.dweb.link/?filename=Howard+E.+Poston+III+-+Blockchain+Security+from+the+Bottom+Up_+Securing+and+Preventing+Attacks+on+Cryptocurrencies%2C+Decentralized+Applications%2C+NFTs%2C+and+Smart+Contracts-Wiley+%282022%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeicmofouieinj4ibqwdu4qn7pmbz7szvopqpgqs74sd665om5untma.ipfs.dweb.link/?filename=Howard+E.+Poston+III+-+Blockchain+Security+from+the+Bottom+Up_+Securing+and+Preventing+Attacks+on+Cryptocurrencies%2C+Decentralized+Applications%2C+NFTs%2C+and+Smart+Contracts-Wiley+%282022%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigdyaefwpa7cdkogspvaujlitae4iqans24q6eslvyvfnzazttoxm.ipfs.dweb.link/?filename=Kevin+Solorio%2C+Randall+Kanna%2C+David+H.+Hoover+-+Hands-On+Smart+Contract+Development+with+Solidity+and+Ethereum_+From+Fundamentals+to+Deployment-O%27Reilly+Media+%282019%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigdyaefwpa7cdkogspvaujlitae4iqans24q6eslvyvfnzazttoxm.ipfs.dweb.link/?filename=Kevin+Solorio%2C+Randall+Kanna%2C+David+H.+Hoover+-+Hands-On+Smart+Contract+Development+with+Solidity+and+Ethereum_+From+Fundamentals+to+Deployment-O%27Reilly+Media+%282019%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeid43m7m4plzkljcdgknpita6bpo4hpg35dcswtx5hgt2q2jvrppau.ipfs.dweb.link/?filename=Lorne+Lantz%2C+Daniel+Cawrey+-+Mastering+Blockchain_+Unlocking+the+Power+of+Cryptocurrencies%2C+Smart+Contracts%2C+and+Decentralized+Applications-O%27Reilly+Media+%282020%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeid43m7m4plzkljcdgknpita6bpo4hpg35dcswtx5hgt2q2jvrppau.ipfs.dweb.link/?filename=Lorne+Lantz%2C+Daniel+Cawrey+-+Mastering+Blockchain_+Unlocking+the+Power+of+Cryptocurrencies%2C+Smart+Contracts%2C+and+Decentralized+Applications-O%27Reilly+Media+%282020%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeif7zygspsumnix2lpawklkcnkxhvf2epymbfrnzlbwdycmnyhddsq.ipfs.dweb.link/?filename=Marcelo+Corrales+Compagnucci_+Mark+Fenwick_+Stefan+Wrbka+%28editors%29+-+Smart+Contracts_+Technological%2C+Business+and+Legal+Perspectives-Hart+Publishing+%282021%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeif7zygspsumnix2lpawklkcnkxhvf2epymbfrnzlbwdycmnyhddsq.ipfs.dweb.link/?filename=Marcelo+Corrales+Compagnucci_+Mark+Fenwick_+Stefan+Wrbka+%28editors%29+-+Smart+Contracts_+Technological%2C+Business+and+Legal+Perspectives-Hart+Publishing+%282021%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeicg3dqktgeqztzitopalzjpcumajfcu23lq2ydjtuoliph6e4mg2u.ipfs.dweb.link/?filename=Matt+Fortnow%2C+QuHarrison+Terry+-+The+NFT+Handbook_+How+to+Create%2C+Sell+and+Buy+Non-Fungible+Tokens-Wiley+%282021%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeicg3dqktgeqztzitopalzjpcumajfcu23lq2ydjtuoliph6e4mg2u.ipfs.dweb.link/?filename=Matt+Fortnow%2C+QuHarrison+Terry+-+The+NFT+Handbook_+How+to+Create%2C+Sell+and+Buy+Non-Fungible+Tokens-Wiley+%282021%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibtnibwy6crwp2hlc2w6d7mqufaaldk5yqylxla3rhgktj2aatl3i.ipfs.dweb.link/?filename=Mayukh+Mukhopadhyay+-+Ethereum+smart+contract+development_+build+blockchain-based+decentralized+applications+using+Solidity-Packt+Publishing+%282018%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibtnibwy6crwp2hlc2w6d7mqufaaldk5yqylxla3rhgktj2aatl3i.ipfs.dweb.link/?filename=Mayukh+Mukhopadhyay+-+Ethereum+smart+contract+development_+build+blockchain-based+decentralized+applications+using+Solidity-Packt+Publishing+%282018%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeieyzd6w7o3jasslwpx2o5j6mkz65lrjurg5o654iwtuazktmgdxo4.ipfs.dweb.link/?filename=Ritesh+Modi+-+Solidity+Programming+Essentials_+A+guide+to+building+smart+contracts+and+tokens+using+the+widely+used+Solidity+language-Packt+Publishing+Ltd+%282022%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeieyzd6w7o3jasslwpx2o5j6mkz65lrjurg5o654iwtuazktmgdxo4.ipfs.dweb.link/?filename=Ritesh+Modi+-+Solidity+Programming+Essentials_+A+guide+to+building+smart+contracts+and+tokens+using+the+widely+used+Solidity+language-Packt+Publishing+Ltd+%282022%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibampim3atlspzml5qockntq5kq7ttvkhcxx2rmztgvgvquj7s3ju.ipfs.dweb.link/?filename=Matt+Zand%2C+Xun+%28Brian%29+Wu%2C+Mark+Anthony+Morris+-+Hands-On+Smart+Contract+Development+with+Hyperledger+Fabric+V2_+Building+Enterprise+Blockchain+Applications-O%27Reilly+Media+%282021%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibampim3atlspzml5qockntq5kq7ttvkhcxx2rmztgvgvquj7s3ju.ipfs.dweb.link/?filename=Matt+Zand%2C+Xun+%28Brian%29+Wu%2C+Mark+Anthony+Morris+-+Hands-On+Smart+Contract+Development+with+Hyperledger+Fabric+V2_+Building+Enterprise+Blockchain+Applications-O%27Reilly+Media+%282021%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigxrxcgswif55m4ctffdhwe3eol4olyhd7q5hkenj76u7xa6tyqmm.ipfs.dweb.link/?filename=Primavera+De+Filippi%2C+Aaron+Wright+-+Blockchain+and+the+Law_+The+Rule+of+Code-Harvard+University+Press+%282018%29.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigxrxcgswif55m4ctffdhwe3eol4olyhd7q5hkenj76u7xa6tyqmm.ipfs.dweb.link/?filename=Primavera+De+Filippi%2C+Aaron+Wright+-+Blockchain+and+the+Law_+The+Rule+of+Code-Harvard+University+Press+%282018%29.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeienz24uhuxwobqmgkwrbgtdrkfbgd2ogntdmh6w3n27dqcwybr6iq.ipfs.dweb.link/?filename=%28International+Series+on+Computer+Entertainment+and+Media+Technology%29+Patrice+Poujol+-+Online+Film+Production+in+China+Using+Blockchain+and+Smart+Contracts_+The+Development+of+Collaborative+Platforms+.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeienz24uhuxwobqmgkwrbgtdrkfbgd2ogntdmh6w3n27dqcwybr6iq.ipfs.dweb.link/?filename=%28International+Series+on+Computer+Entertainment+and+Media+Technology%29+Patrice+Poujol+-+Online+Film+Production+in+China+Using+Blockchain+and+Smart+Contracts_+The+Development+of+Collaborative+Platforms+.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
 </pre>
 </div>

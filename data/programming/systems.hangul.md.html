@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -616,6 +671,7 @@ function toggle() {
       <li><a href="#link-53">노 마키 아 홀링그 시스텡 포르 모토르키클리 트라베우 (사우 파울루 우주아이아 아스 이잠플리) (스토프 스위트싱그 투 잉-우스 아우토마치칼리)</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -623,12 +679,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -722,135 +781,135 @@ function toggle() {
 <h2 id = "link-11">프로비지 아 삼플리 세트 포르 티스 프로페르치 바제드 테스트 수제스치옹 우징그 크# 위트 헤스펙치비 프# 이키발렌트 코지</h2>
 <p id = "para-77">&lt; 포르 티스 삼플리 세트, 위 위우 우지 크# 투 임플레멘트 그로베르’스 아우고리틍 안드 프# 투 훙 티 프로페르치-바제드 테스트.</p>
 <p id = "para-78">피르스트, 레트’스 크레아치 티 그로베르’스 아우고리틍 임플레멘타치옹 잉 크#. 크레아치 아 네 필리 칼레드 “그로베르.크스” 안드 아드 티 폴로윙그 코지:</p>
-<pre><span style="color:#323232;">나메스파시 그로베라우고리틍 {</span>
-<span style="color:#323232;">오펭 미크로조프트.쿠안퉁.카농</span>
-<span style="color:#323232;">오펭 미크로조프트.쿠안퉁.인트린시크</span>
-<span style="color:#323232;">오펭 미크로조프트.쿠안퉁.메아주레멘트</span>
+<pre><span style="color:#839496;">나메스파시 그로베라우고리틍 {</span>
+<span style="color:#839496;">오펭 미크로조프트.쿠안퉁.카농</span>
+<span style="color:#839496;">오펭 미크로조프트.쿠안퉁.인트린시크</span>
+<span style="color:#839496;">오펭 미크로조프트.쿠안퉁.메아주레멘트</span>
 
-<span style="color:#323232;">오페라치옹 아플리오라클리(쿠비트스 : 쿠비트[], 마르케드 : 인트) : 우니트 {</span>
-<span style="color:#323232;">이프 (마르케드 == 1) {</span>
-<span style="color:#323232;">스(쿠비트스[0])</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">오페라치옹 아플리오라클리(쿠비트스 : 쿠비트[], 마르케드 : 인트) : 우니트 {</span>
+<span style="color:#839496;">이프 (마르케드 == 1) {</span>
+<span style="color:#839496;">스(쿠비트스[0])</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">오페라치옹 아플리그로베리테라치옹(쿠비트스 : 쿠비트[], 마르케드 : 인트) : 우니트 {</span>
-<span style="color:#323232;">아플리오라클리(쿠비트스, 마르케드)</span>
-<span style="color:#323232;">아플리토에아시(, 쿠비트스)</span>
-<span style="color:#323232;">아플리토에아시(스, 쿠비트스)</span>
-<span style="color:#323232;">콘트롤레드 스(모스트(쿠비트스), 타이우(쿠비트스))</span>
-<span style="color:#323232;">아플리토에아시(스, 쿠비트스)</span>
-<span style="color:#323232;">아플리토에아시(, 쿠비트스)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">오페라치옹 아플리그로베리테라치옹(쿠비트스 : 쿠비트[], 마르케드 : 인트) : 우니트 {</span>
+<span style="color:#839496;">아플리오라클리(쿠비트스, 마르케드)</span>
+<span style="color:#839496;">아플리토에아시(, 쿠비트스)</span>
+<span style="color:#839496;">아플리토에아시(스, 쿠비트스)</span>
+<span style="color:#839496;">콘트롤레드 스(모스트(쿠비트스), 타이우(쿠비트스))</span>
+<span style="color:#839496;">아플리토에아시(스, 쿠비트스)</span>
+<span style="color:#839496;">아플리토에아시(, 쿠비트스)</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">오페라치옹 훙그로베르(마르케드 : 인트) : 인트 {</span>
-<span style="color:#323232;">우징그 (쿠비트스 = 쿠비트[3]) {</span>
-<span style="color:#323232;">아플리토에아시(, 쿠비트스)</span>
-<span style="color:#323232;">아플리그로베리테라치옹(쿠비트스, 마르케드)</span>
-<span style="color:#323232;">헤투릉 헤주우타하야진트(무우칭(쿠비트스))</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">오페라치옹 훙그로베르(마르케드 : 인트) : 인트 {</span>
+<span style="color:#839496;">우징그 (쿠비트스 = 쿠비트[3]) {</span>
+<span style="color:#839496;">아플리토에아시(, 쿠비트스)</span>
+<span style="color:#839496;">아플리그로베리테라치옹(쿠비트스, 마르케드)</span>
+<span style="color:#839496;">헤투릉 헤주우타하야진트(무우칭(쿠비트스))</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-79">노, 레트’스 리치 티 프# 코지 포르 후닝그 티 프로페르치-바제드 테스트 우징그 티 크# 그로베르’스 아우고리틍 임플레멘타치옹. 크레아치 아 네 필리 칼레드 “그로베르테스트.프스” 안드 아드 티 폴로윙그 코지:</p>
-<pre><span style="color:#323232;">오펭 시스텡</span>
-<span style="color:#323232;">오펭 미크로조프트.쿠안퉁.시물라치옹.코리</span>
-<span style="color:#323232;">오펭 미크로조프트.쿠안퉁.시물라치옹.시물라토르스</span>
-<span style="color:#323232;">오펭 그로베라우고리틍</span>
+<pre><span style="color:#839496;">오펭 시스텡</span>
+<span style="color:#839496;">오펭 미크로조프트.쿠안퉁.시물라치옹.코리</span>
+<span style="color:#839496;">오펭 미크로조프트.쿠안퉁.시물라치옹.시물라토르스</span>
+<span style="color:#839496;">오펭 그로베라우고리틍</span>
 
-<span style="color:#323232;">레트 한돔눔베르제네라토르 = 한동()</span>
+<span style="color:#839496;">레트 한돔눔베르제네라토르 = 한동()</span>
 
-<span style="color:#323232;">레트 한도모라클리() =</span>
-<span style="color:#323232;">한돔눔베르제네라토르.네스트(0, 8)</span>
+<span style="color:#839496;">레트 한도모라클리() =</span>
+<span style="color:#839496;">한돔눔베르제네라토르.네스트(0, 8)</span>
 
-<span style="color:#323232;">레트 훙그로베르시물라치옹 마르케드 =</span>
-<span style="color:#323232;">레트 싱 = 네 쿠안툼시물라토르()</span>
-<span style="color:#323232;">레트 타스크 = 훙그로베르.훙(싱, 마르케드)</span>
-<span style="color:#323232;">타스크.와이트()</span>
-<span style="color:#323232;">타스크.헤주우트</span>
+<span style="color:#839496;">레트 훙그로베르시물라치옹 마르케드 =</span>
+<span style="color:#839496;">레트 싱 = 네 쿠안툼시물라토르()</span>
+<span style="color:#839496;">레트 타스크 = 훙그로베르.훙(싱, 마르케드)</span>
+<span style="color:#839496;">타스크.와이트()</span>
+<span style="color:#839496;">타스크.헤주우트</span>
 
-<span style="color:#323232;">레트 클라시카우수세스라치 = 1.0 / 8.0</span>
+<span style="color:#839496;">레트 클라시카우수세스라치 = 1.0 / 8.0</span>
 
-<span style="color:#323232;">레트 테스트그로베르 (눔트리아우스 : 인트) =</span>
-<span style="color:#323232;">레트 무타블리 수세스콘트 = 0</span>
-<span style="color:#323232;">포르 이 잉 1..눔트리아우스 두</span>
-<span style="color:#323232;">레트 마르케드 = 한도모라클리()</span>
-<span style="color:#323232;">레트 헤주우트 = 훙그로베르시물라치옹 마르케드</span>
-<span style="color:#323232;">이프 마르케드 = 헤주우트 텡</span>
-<span style="color:#323232;">수세스콘트 &lt;- 수세스콘트 + 1</span>
-<span style="color:#323232;">레트 수세스라치 = (플로아트 수세스콘트) / (플로아트 눔트리아우스)</span>
-<span style="color:#323232;">수세스라치 &gt; 클라시카우수세스라치</span>
+<span style="color:#839496;">레트 테스트그로베르 (눔트리아우스 : 인트) =</span>
+<span style="color:#839496;">레트 무타블리 수세스콘트 = 0</span>
+<span style="color:#839496;">포르 이 잉 1..눔트리아우스 두</span>
+<span style="color:#839496;">레트 마르케드 = 한도모라클리()</span>
+<span style="color:#839496;">레트 헤주우트 = 훙그로베르시물라치옹 마르케드</span>
+<span style="color:#839496;">이프 마르케드 = 헤주우트 텡</span>
+<span style="color:#839496;">수세스콘트 &lt;- 수세스콘트 + 1</span>
+<span style="color:#839496;">레트 수세스라치 = (플로아트 수세스콘트) / (플로아트 눔트리아우스)</span>
+<span style="color:#839496;">수세스라치 &gt; 클라시카우수세스라치</span>
 
-<span style="color:#323232;">[&lt;인트리포인트&gt;]</span>
-<span style="color:#323232;">레트 마잉 아르그브 =</span>
-<span style="color:#323232;">레트 눔트리아우스 = 100</span>
-<span style="color:#323232;">레트 테스트레주우트 = 테스트그로베르 눔트리아우스</span>
-<span style="color:#323232;">프린트픙 &quot;그로베르&#39;스 아우고리틍 프로페르치-바제드 테스트: %아&quot; 테스트레주우트</span>
-<span style="color:#323232;">0</span>
+<span style="color:#839496;">[&lt;인트리포인트&gt;]</span>
+<span style="color:#839496;">레트 마잉 아르그브 =</span>
+<span style="color:#839496;">레트 눔트리아우스 = 100</span>
+<span style="color:#839496;">레트 테스트레주우트 = 테스트그로베르 눔트리아우스</span>
+<span style="color:#839496;">프린트픙 &quot;그로베르&#39;스 아우고리틍 프로페르치-바제드 테스트: %아&quot; 테스트레주우트</span>
+<span style="color:#839496;">0</span>
 
 </pre><p id = "para-80">티스 코지 위우 훙 그로베르’스 아우고리틍 100 치메스 위트 한동 오라클리스 안드 콤파리 티 수세스 하치 위트 티 클라시카우 수세스 하치 (1/8). 이프 티 수세스 하치 오프 그로베르’스 아우고리틍 이스 이게르 탕 티 클라시카우 수세스 하치, 티 테스트 파시스 안드 프린트스 “트루이,” 오테르위지, 이트 프린트스 “파우시.”</p>
 <p id = "para-81">투 훙 티스 코지, 마키 수리 요 아비 인스탈레드 티 쿠안퉁 데벨로프멘트 키트 포르 프#. 콤필리 티 필리스 안드 이제쿠치 티 “그로베르테스트.프스” 필리. 티 오트푸트 위우 소 티 헤주우트 오프 티 프로페르치-바제드 테스트.</p>
 <h2 id = "link-12">아리 테리 이키발렌트 후스트 크라치스 포르 티스 킨드 오프 콤파리종? (클라시카우 1/8 브스 그로베르) 이프 이스, 프로비지 아 풀 삼플리 위트 테스트 카지스</h2>
 <p id = "para-82">&lt; 테리 이스 쿠헨틀리 누 지렉트 이키발렌트 투 크# 안드 프# 인테그라치옹 포르 임플레멘칭그 안드 테스칭그 쿠안퉁 아우고리틈스 잉 후스트. 오웨베르, 요 캉 우지 티 “코쿠” 크라치 투 임플레멘트 아 심플리 쿠안퉁 시르쿠이트 타트 시물라치스 그로베르’스 아우고리틍 안드 콤파리 이트스 수세스 하치 위트 티 클라시카우 수세스 하치.</p>
 <p id = "para-83">피르스트, 아드 티 네세사리 데펜덴시스 잉 요르 카르구.토무 필리:</p>
-<pre><span style="color:#323232;">[데펜덴시스]</span>
-<span style="color:#323232;">코쿠 = &quot;0.8.0&quot;</span>
-<span style="color:#323232;">코쿠_카우쿨라토르 = &quot;0.8.1&quot;</span>
-<span style="color:#323232;">한드 = &quot;0.8.6&quot;</span>
+<pre><span style="color:#839496;">[데펜덴시스]</span>
+<span style="color:#839496;">코쿠 = &quot;0.8.0&quot;</span>
+<span style="color:#839496;">코쿠_카우쿨라토르 = &quot;0.8.1&quot;</span>
+<span style="color:#839496;">한드 = &quot;0.8.6&quot;</span>
 
 </pre><p id = "para-84">노, 크레아치 아 네 필리 칼레드 그로베르.흐스 안드 아드 티 폴로윙그 코지:</p>
-<pre><span style="color:#323232;">우지 코쿠::{</span>
-<span style="color:#323232;">오페라치옹스::{크노트, , 메아주리, 오페라치옹, 파울리스, 파울리스, 호타테아론드스페리칼라시스},</span>
-<span style="color:#323232;">시르쿠이트, 스타테벡토르시물라토르,</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">우지 코쿠_카우쿨라토르::카우쿨라토르플로아트</span>
-<span style="color:#323232;">우지 한드::흥그</span>
+<pre><span style="color:#839496;">우지 코쿠::{</span>
+<span style="color:#839496;">오페라치옹스::{크노트, , 메아주리, 오페라치옹, 파울리스, 파울리스, 호타테아론드스페리칼라시스},</span>
+<span style="color:#839496;">시르쿠이트, 스타테벡토르시물라토르,</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">우지 코쿠_카우쿨라토르::카우쿨라토르플로아트</span>
+<span style="color:#839496;">우지 한드::흥그</span>
 
-<span style="color:#323232;">픙 아플리_오라클리(시르쿠이트: &amp;무트 시르쿠이트, 마르케드: 우지지) {</span>
-<span style="color:#323232;">이프 마르케드 == 1 {</span>
-<span style="color:#323232;">시르쿠이트 += 파울리스::네(0)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">픙 아플리_오라클리(시르쿠이트: &amp;무트 시르쿠이트, 마르케드: 우지지) {</span>
+<span style="color:#839496;">이프 마르케드 == 1 {</span>
+<span style="color:#839496;">시르쿠이트 += 파울리스::네(0)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">픙 아플리_그로베르_이테라치옹(시르쿠이트: &amp;무트 시르쿠이트, 마르케드: 우지지) {</span>
-<span style="color:#323232;">아플리_오라클리(시르쿠이트, 마르케드)</span>
-<span style="color:#323232;">시르쿠이트 += ::네(0)</span>
-<span style="color:#323232;">시르쿠이트 += 파울리스::네(0)</span>
-<span style="color:#323232;">시르쿠이트 += 호타테아론드스페리칼라시스::네(0, 카우쿨라토르플로아트::프라크_피, 카우쿨라토르플로아트::제루)</span>
-<span style="color:#323232;">시르쿠이트 += 파울리스::네(0)</span>
-<span style="color:#323232;">시르쿠이트 += ::네(0)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">픙 아플리_그로베르_이테라치옹(시르쿠이트: &amp;무트 시르쿠이트, 마르케드: 우지지) {</span>
+<span style="color:#839496;">아플리_오라클리(시르쿠이트, 마르케드)</span>
+<span style="color:#839496;">시르쿠이트 += ::네(0)</span>
+<span style="color:#839496;">시르쿠이트 += 파울리스::네(0)</span>
+<span style="color:#839496;">시르쿠이트 += 호타테아론드스페리칼라시스::네(0, 카우쿨라토르플로아트::프라크_피, 카우쿨라토르플로아트::제루)</span>
+<span style="color:#839496;">시르쿠이트 += 파울리스::네(0)</span>
+<span style="color:#839496;">시르쿠이트 += ::네(0)</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">픙 훙_그로베르(마르케드: 우지지) -&gt; 우지지 {</span>
-<span style="color:#323232;">레트 무트 시르쿠이트 = 시르쿠이트::네()</span>
-<span style="color:#323232;">시르쿠이트 += ::네(0)</span>
-<span style="color:#323232;">아플리_그로베르_이테라치옹(&amp;무트 시르쿠이트, 마르케드)</span>
-<span style="color:#323232;">시르쿠이트 += 메아주리::네(0, &quot;헤주우트&quot;.투_스트링그())</span>
+<span style="color:#839496;">픙 훙_그로베르(마르케드: 우지지) -&gt; 우지지 {</span>
+<span style="color:#839496;">레트 무트 시르쿠이트 = 시르쿠이트::네()</span>
+<span style="color:#839496;">시르쿠이트 += ::네(0)</span>
+<span style="color:#839496;">아플리_그로베르_이테라치옹(&amp;무트 시르쿠이트, 마르케드)</span>
+<span style="color:#839496;">시르쿠이트 += 메아주리::네(0, &quot;헤주우트&quot;.투_스트링그())</span>
 
-<span style="color:#323232;">레트 스타테벡토르_시물라토르 = 스타테벡토르시물라토르::네()</span>
-<span style="color:#323232;">레트 헤주우트 = 스타테벡토르_시물라토르.훙_시르쿠이트(&amp;시르쿠이트).운으라프()</span>
+<span style="color:#839496;">레트 스타테벡토르_시물라토르 = 스타테벡토르시물라토르::네()</span>
+<span style="color:#839496;">레트 헤주우트 = 스타테벡토르_시물라토르.훙_시르쿠이트(&amp;시르쿠이트).운으라프()</span>
 
-<span style="color:#323232;">*헤주우트.제트_비트_헤지스테르스().제트(&quot;헤주우트&quot;).운으라프().제트(0).운으라프() 아스 우지지</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">*헤주우트.제트_비트_헤지스테르스().제트(&quot;헤주우트&quot;).운으라프().제트(0).운으라프() 아스 우지지</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">픙 마잉() {</span>
-<span style="color:#323232;">레트 눙_트리아우스 = 100</span>
-<span style="color:#323232;">레트 무트 흥그 = 한드::트레아드_흥그()</span>
+<span style="color:#839496;">픙 마잉() {</span>
+<span style="color:#839496;">레트 눙_트리아우스 = 100</span>
+<span style="color:#839496;">레트 무트 흥그 = 한드::트레아드_흥그()</span>
 
-<span style="color:#323232;">레트 클라시카우_수세스_하치 = 1.0 / 8.0</span>
-<span style="color:#323232;">레트 무트 수세스_콘트 = 0</span>
+<span style="color:#839496;">레트 클라시카우_수세스_하치 = 1.0 / 8.0</span>
+<span style="color:#839496;">레트 무트 수세스_콘트 = 0</span>
 
-<span style="color:#323232;">포르 _ 잉 0..눙_트리아우스 {</span>
-<span style="color:#323232;">레트 마르케드 = 흥그.젱_한지(0..8)</span>
-<span style="color:#323232;">레트 헤주우트 = 훙_그로베르(마르케드)</span>
-<span style="color:#323232;">이프 마르케드 == 헤주우트 {</span>
-<span style="color:#323232;">수세스_콘트 += 1</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">포르 _ 잉 0..눙_트리아우스 {</span>
+<span style="color:#839496;">레트 마르케드 = 흥그.젱_한지(0..8)</span>
+<span style="color:#839496;">레트 헤주우트 = 훙_그로베르(마르케드)</span>
+<span style="color:#839496;">이프 마르케드 == 헤주우트 {</span>
+<span style="color:#839496;">수세스_콘트 += 1</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">레트 수세스_하치 = (수세스_콘트 아스 프64) / (눙_트리아우스 아스 프64)</span>
-<span style="color:#323232;">레트 테스트_헤주우트 = 수세스_하치 &gt; 클라시카우_수세스_하치</span>
-<span style="color:#323232;">프린틀릉!(&quot;그로베르&#39;스 아우고리틍 프로페르치-바제드 테스트: {}&quot;, 테스트_헤주우트)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">레트 수세스_하치 = (수세스_콘트 아스 프64) / (눙_트리아우스 아스 프64)</span>
+<span style="color:#839496;">레트 테스트_헤주우트 = 수세스_하치 &gt; 클라시카우_수세스_하치</span>
+<span style="color:#839496;">프린틀릉!(&quot;그로베르&#39;스 아우고리틍 프로페르치-바제드 테스트: {}&quot;, 테스트_헤주우트)</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-85">티스 코지 위우 훙 그로베르’스 아우고리틍 100 치메스 위트 한동 오라클리스 안드 콤파리 티 수세스 하치 위트 티 클라시카우 수세스 하치 (1/8). 이프 티 수세스 하치 오프 그로베르’스 아우고리틍 이스 이게르 탕 티 클라시카우 수세스 하치, 티 테스트 파시스, 안드 티 오트푸트 이스 “트루이” 오테르위지, 이트 프린트스 “파우시.”</p>
 <p id = "para-86">케프 잉 민드 타트 티스 임플레멘타치옹 이스 아 심플리피에드 베르시옹 오프 그로베르’스 아우고리틍 안드 이스 노트 아스 이피시엔트 아스 우징그 아 데지카테드 쿠안퉁 프로그라밍그 랑구아지 리키 크#. 티 “코쿠” 크라치 이스 아 제네라우-푸르포지 쿠안퉁 콤푸칭그 크라치 안드 미그트 노트 아비 아우 티 오프치미자치옹스 안드 페아투리스 아바일라블리 잉 모리 스페시알리제드 쿠안퉁 프로그라밍그 랑구아지스.</p>
@@ -921,474 +980,474 @@ function toggle() {
 <p id = "para-144">콩 에시스 파수스, 보세 포지 크리아르 우마 나하치바 무우치지멘시오나우 히카 이 인보우벤치, 콩 이벤투스 이 데젠보우비멘투스 오코헨두 잉 바리아스 카마다스 시무우타네아멘치. 에사 아보르다젱 페르미치 키 보세 이스플로리 지페렌치스 아스펙투스 다 이스토리아 이 만테냐 우스 레이토리스 인테레사두스 이 인보우비두스 아우 롱구 지 토다 아 트라마.</p>
 <h2 id = "link-20">트리 아 삼플리 우징그 프롤로그</h2>
 <p id = "para-145">&lt; 바무스 크리아르 웅 이젬플루 심플리스 우잔두 우 프롤로그 파라 임플레멘타르 웅 시스테마 지 데시장 바제아두 누 란사멘투 지 2드6. 누 이젬플루 아 세기르, 우자레무스 아페나스 우마 카마다 (인헤두) 파라 심플리피카르 우 코지구. 보세 포지 이스텐데르 에스치 이젬플루 파라 잉클루이르 바리아스 카마다스, 콘포르미 데스크리투 안테리오르멘치.</p>
-<pre><span style="color:#323232;">% 데피닌두 우스 파투스 파라 아스 카테고리아스 콩 바지 누스 헤주우타두스 지 2드6</span>
-<span style="color:#323232;">이벤투(2, 무이투_네가치부).</span>
-<span style="color:#323232;">이벤투(3, 무이투_네가치부).</span>
-<span style="color:#323232;">이벤투(4, 네가치부).</span>
-<span style="color:#323232;">이벤투(5, 네가치부).</span>
-<span style="color:#323232;">이벤투(6, 네가치부).</span>
-<span style="color:#323232;">이벤투(7, 네우트루).</span>
-<span style="color:#323232;">이벤투(8, 포지치부).</span>
-<span style="color:#323232;">이벤투(9, 포지치부).</span>
-<span style="color:#323232;">이벤투(10, 포지치부).</span>
-<span style="color:#323232;">이벤투(11, 무이투_포지치부).</span>
-<span style="color:#323232;">이벤투(12, 무이투_포지치부).</span>
+<pre><span style="color:#839496;">% 데피닌두 우스 파투스 파라 아스 카테고리아스 콩 바지 누스 헤주우타두스 지 2드6</span>
+<span style="color:#839496;">이벤투(2, 무이투_네가치부).</span>
+<span style="color:#839496;">이벤투(3, 무이투_네가치부).</span>
+<span style="color:#839496;">이벤투(4, 네가치부).</span>
+<span style="color:#839496;">이벤투(5, 네가치부).</span>
+<span style="color:#839496;">이벤투(6, 네가치부).</span>
+<span style="color:#839496;">이벤투(7, 네우트루).</span>
+<span style="color:#839496;">이벤투(8, 포지치부).</span>
+<span style="color:#839496;">이벤투(9, 포지치부).</span>
+<span style="color:#839496;">이벤투(10, 포지치부).</span>
+<span style="color:#839496;">이벤투(11, 무이투_포지치부).</span>
+<span style="color:#839496;">이벤투(12, 무이투_포지치부).</span>
 
-<span style="color:#323232;">% 이젬플루 지 이벤투스 포시베이스</span>
-<span style="color:#323232;">무이투_네가치부(페르지_오브제투_발리오주).</span>
-<span style="color:#323232;">무이투_네가치부(인프렌타_아르마질랴_페리고자).</span>
-<span style="color:#323232;">네가치부(잉콘트라_아드베르사리우).</span>
-<span style="color:#323232;">네가치부(데시자우_지피시우_콩_사크리피시우).</span>
-<span style="color:#323232;">네우트루(노부_알리아두_이_노부_이니미구).</span>
-<span style="color:#323232;">네우트루(인포르마코이스_콘플리탄치스_데시지르_콘피앙카).</span>
-<span style="color:#323232;">포지치부(잉콘트라_헤쿠르수_우치우).</span>
-<span style="color:#323232;">포지치부(헤조우비_프로블레마_아방카_조르나다).</span>
-<span style="color:#323232;">무이투_포지치부(그란지_비토리아_소브리_이니미구).</span>
-<span style="color:#323232;">무이투_포지치부(아드키리_포데르_오_아빌리다지_이스페시아우).</span>
+<span style="color:#839496;">% 이젬플루 지 이벤투스 포시베이스</span>
+<span style="color:#839496;">무이투_네가치부(페르지_오브제투_발리오주).</span>
+<span style="color:#839496;">무이투_네가치부(인프렌타_아르마질랴_페리고자).</span>
+<span style="color:#839496;">네가치부(잉콘트라_아드베르사리우).</span>
+<span style="color:#839496;">네가치부(데시자우_지피시우_콩_사크리피시우).</span>
+<span style="color:#839496;">네우트루(노부_알리아두_이_노부_이니미구).</span>
+<span style="color:#839496;">네우트루(인포르마코이스_콘플리탄치스_데시지르_콘피앙카).</span>
+<span style="color:#839496;">포지치부(잉콘트라_헤쿠르수_우치우).</span>
+<span style="color:#839496;">포지치부(헤조우비_프로블레마_아방카_조르나다).</span>
+<span style="color:#839496;">무이투_포지치부(그란지_비토리아_소브리_이니미구).</span>
+<span style="color:#839496;">무이투_포지치부(아드키리_포데르_오_아빌리다지_이스페시아우).</span>
 
-<span style="color:#323232;">% 푼상 파라 제라르 웅 누메루 알레아토리우 엔트리 웅 인테르발루 (잉클루지부)</span>
-<span style="color:#323232;">한동_베트웽(로웨르, 우페르, 발루이) :-</span>
-<span style="color:#323232;">한동(스),</span>
-<span style="color:#323232;">발루이 이스 로웨르 + 플로르(스 * (우페르 - 로웨르 + 1)).</span>
+<span style="color:#839496;">% 푼상 파라 제라르 웅 누메루 알레아토리우 엔트리 웅 인테르발루 (잉클루지부)</span>
+<span style="color:#839496;">한동_베트웽(로웨르, 우페르, 발루이) :-</span>
+<span style="color:#839496;">한동(스),</span>
+<span style="color:#839496;">발루이 이스 로웨르 + 플로르(스 * (우페르 - 로웨르 + 1)).</span>
 
-<span style="color:#323232;">% 푼상 파라 란사르 우스 2드6 이 데테르미나르 우 이벤투 헤주우탄치</span>
-<span style="color:#323232;">홀라르_다두스(이벤토레주우타두) :-</span>
-<span style="color:#323232;">한동_베트웽(1, 6, 다두1),</span>
-<span style="color:#323232;">한동_베트웽(1, 6, 다두2),</span>
-<span style="color:#323232;">소마 이스 다두1 + 다두2,</span>
-<span style="color:#323232;">이벤투(소마, 카테고리아),</span>
-<span style="color:#323232;">카우(카테고리아, 이벤토레주우타두).</span>
+<span style="color:#839496;">% 푼상 파라 란사르 우스 2드6 이 데테르미나르 우 이벤투 헤주우탄치</span>
+<span style="color:#839496;">홀라르_다두스(이벤토레주우타두) :-</span>
+<span style="color:#839496;">한동_베트웽(1, 6, 다두1),</span>
+<span style="color:#839496;">한동_베트웽(1, 6, 다두2),</span>
+<span style="color:#839496;">소마 이스 다두1 + 다두2,</span>
+<span style="color:#839496;">이벤투(소마, 카테고리아),</span>
+<span style="color:#839496;">카우(카테고리아, 이벤토레주우타두).</span>
 
 </pre><p id = "para-146">파라 우자르 에스치 이젬플루 누 프롤로그, 카헤기 우 코지구 잉 웅 아르키부 (포르 이젬플루, 지세로우.푸) 이 이제쿠치 우 인테르프레타도르 두 프롤로그. 잉 세기다, 콘수우치 우 아르키부 이 우지 우 프레지카두 홀라르_다두스/1 파라 데테르미나르 우 이벤투 헤주우탄치 콩 바지 누 란사멘투 두스 다두스:</p>
-<pre><span style="color:#323232;">?- 콘수우트(&#39;지세로우.푸&#39;).</span>
-<span style="color:#323232;">트루이.</span>
+<pre><span style="color:#839496;">?- 콘수우트(&#39;지세로우.푸&#39;).</span>
+<span style="color:#839496;">트루이.</span>
 
-<span style="color:#323232;">?- 홀라르_다두스(이벤투).</span>
-<span style="color:#323232;">이벤투 = 잉콘트라_헤쿠르수_우치우.</span>
+<span style="color:#839496;">?- 홀라르_다두스(이벤투).</span>
+<span style="color:#839496;">이벤투 = 잉콘트라_헤쿠르수_우치우.</span>
 
 </pre><p id = "para-147">에스치 이젬플루 데몬스트라 코무 크리아르 웅 시스테마 지 데시장 심플리스 우잔두 프롤로그. 보세 포지 이스텐데르 에스치 코지구 파라 잉클루이르 무우치플라스 카마다스 이 크리아르 우마 나하치바 마이스 히카 이 콤플레샤, 콘포르미 데스크리투 안테리오르멘치.</p>
 <h2 id = "link-21">도마잉 모데우 아 콤플레스 베르시옹 우징그 프# 안드 아드반세드 지스크리미나테드 우니옹 헬라치온지프스</h2>
 <p id = "para-148">&lt; 잉 프#, 위 캉 크레아치 아 콤플레스 베르시옹 오프 티 지시-홀링그 데시지옹 시스텡 우징그 지스크리미나테드 우니옹스 (두스) 안드 아드반세드 두 헬라치온지프스. 에리’스 아 삼플리 도마잉 모데우 타트 잉클루지스 지페렌트 라예르스 오프 티 나하치비 안드 테이르 코헤스폰징그 이벤트스:</p>
-<pre><span style="color:#323232;">오펭 시스텡</span>
+<pre><span style="color:#839496;">오펭 시스텡</span>
 
-<span style="color:#323232;">치피 샤락테레벤트 =</span>
-<span style="color:#323232;">| 메트네왈리</span>
-<span style="color:#323232;">| 파세아드베르사리</span>
-<span style="color:#323232;">| 데벨로프렐라치온지프 오프 (샤락테레벤트 * 샤락테레벤트)</span>
-<span style="color:#323232;">| 인드렐라치온지프</span>
+<span style="color:#839496;">치피 샤락테레벤트 =</span>
+<span style="color:#839496;">| 메트네왈리</span>
+<span style="color:#839496;">| 파세아드베르사리</span>
+<span style="color:#839496;">| 데벨로프렐라치온지프 오프 (샤락테레벤트 * 샤락테레벤트)</span>
+<span style="color:#839496;">| 인드렐라치온지프</span>
 
-<span style="color:#323232;">치피 플로테벤트 =</span>
-<span style="color:#323232;">| 마조르플로트위스트</span>
-<span style="color:#323232;">| 미노르플로트위스트</span>
-<span style="color:#323232;">| 네워브젝치비</span>
-<span style="color:#323232;">| 콘플릭트레졸루치옹</span>
-<span style="color:#323232;">| 네스테데벤트 오프 (플로테벤트 * 플로테벤트)</span>
+<span style="color:#839496;">치피 플로테벤트 =</span>
+<span style="color:#839496;">| 마조르플로트위스트</span>
+<span style="color:#839496;">| 미노르플로트위스트</span>
+<span style="color:#839496;">| 네워브젝치비</span>
+<span style="color:#839496;">| 콘플릭트레졸루치옹</span>
+<span style="color:#839496;">| 네스테데벤트 오프 (플로테벤트 * 플로테벤트)</span>
 
-<span style="color:#323232;">치피 세친제벤트 =</span>
-<span style="color:#323232;">| 샨제오플로카치옹</span>
-<span style="color:#323232;">| 웨아테르샨지</span>
-<span style="color:#323232;">| 치메프로그레스</span>
-<span style="color:#323232;">| 네쿠우투라우콘테스트</span>
+<span style="color:#839496;">치피 세친제벤트 =</span>
+<span style="color:#839496;">| 샨제오플로카치옹</span>
+<span style="color:#839496;">| 웨아테르샨지</span>
+<span style="color:#839496;">| 치메프로그레스</span>
+<span style="color:#839496;">| 네쿠우투라우콘테스트</span>
 
-<span style="color:#323232;">치피 이모치오날레벤트 =</span>
-<span style="color:#323232;">| 페르소나우그로트</span>
-<span style="color:#323232;">| 세트바크</span>
-<span style="color:#323232;">| 이모치오나우헤벨라치옹</span>
-<span style="color:#323232;">| 인테르나우콘플릭트</span>
+<span style="color:#839496;">치피 이모치오날레벤트 =</span>
+<span style="color:#839496;">| 페르소나우그로트</span>
+<span style="color:#839496;">| 세트바크</span>
+<span style="color:#839496;">| 이모치오나우헤벨라치옹</span>
+<span style="color:#839496;">| 인테르나우콘플릭트</span>
 
-<span style="color:#323232;">치피 라예르 =</span>
-<span style="color:#323232;">| 샤락테를라예르 오프 샤락테레벤트</span>
-<span style="color:#323232;">| 플로틀라예르 오프 플로테벤트</span>
-<span style="color:#323232;">| 세칭글라예르 오프 세친제벤트</span>
-<span style="color:#323232;">| 이모치오날라예르 오프 이모치오날레벤트</span>
+<span style="color:#839496;">치피 라예르 =</span>
+<span style="color:#839496;">| 샤락테를라예르 오프 샤락테레벤트</span>
+<span style="color:#839496;">| 플로틀라예르 오프 플로테벤트</span>
+<span style="color:#839496;">| 세칭글라예르 오프 세친제벤트</span>
+<span style="color:#839496;">| 이모치오날라예르 오프 이모치오날레벤트</span>
 
-<span style="color:#323232;">레트 호우지시 () = 한동().네스트(1, 7)</span>
+<span style="color:#839496;">레트 호우지시 () = 한동().네스트(1, 7)</span>
 
-<span style="color:#323232;">레트 제테벤트 (지세중: 인트) =</span>
-<span style="color:#323232;">마트시 지세중 위트</span>
-<span style="color:#323232;">| 2 | 3 -&gt; &quot;베리_네가치비&quot;</span>
-<span style="color:#323232;">| 4 | 5 | 6 -&gt; &quot;네가치비&quot;</span>
-<span style="color:#323232;">| 7 -&gt; &quot;네우트라우&quot;</span>
-<span style="color:#323232;">| 8 | 9 | 10 -&gt; &quot;포지치비&quot;</span>
-<span style="color:#323232;">| 11 | 12 -&gt; &quot;베리_포지치비&quot;</span>
-<span style="color:#323232;">| _ -&gt; &quot;이호르&quot;</span>
+<span style="color:#839496;">레트 제테벤트 (지세중: 인트) =</span>
+<span style="color:#839496;">마트시 지세중 위트</span>
+<span style="color:#839496;">| 2 | 3 -&gt; &quot;베리_네가치비&quot;</span>
+<span style="color:#839496;">| 4 | 5 | 6 -&gt; &quot;네가치비&quot;</span>
+<span style="color:#839496;">| 7 -&gt; &quot;네우트라우&quot;</span>
+<span style="color:#839496;">| 8 | 9 | 10 -&gt; &quot;포지치비&quot;</span>
+<span style="color:#839496;">| 11 | 12 -&gt; &quot;베리_포지치비&quot;</span>
+<span style="color:#839496;">| _ -&gt; &quot;이호르&quot;</span>
 
-<span style="color:#323232;">레트 호우2드6이벤트 () =</span>
-<span style="color:#323232;">레트 지시1 = 호우지시()</span>
-<span style="color:#323232;">레트 지시2 = 호우지시()</span>
-<span style="color:#323232;">레트 지세중 = 지시1 + 지시2</span>
-<span style="color:#323232;">제테벤트 지세중</span>
+<span style="color:#839496;">레트 호우2드6이벤트 () =</span>
+<span style="color:#839496;">레트 지시1 = 호우지시()</span>
+<span style="color:#839496;">레트 지시2 = 호우지시()</span>
+<span style="color:#839496;">레트 지세중 = 지시1 + 지시2</span>
+<span style="color:#839496;">제테벤트 지세중</span>
 
-<span style="color:#323232;">레트 데시델라예레벤트 라예르 이벤트카테고리 =</span>
-<span style="color:#323232;">마트시 (라예르, 이벤트카테고리) 위트</span>
-<span style="color:#323232;">| (샤락테를라예르, &quot;베리_네가치비&quot;) -&gt; 샤락테를라예르 메트네왈리</span>
-<span style="color:#323232;">| (샤락테를라예르, &quot;네가치비&quot;) -&gt; 샤락테를라예르 파세아드베르사리</span>
-<span style="color:#323232;">| (샤락테를라예르, &quot;네우트라우&quot;) -&gt; 샤락테를라예르 (데벨로프렐라치온지프 (메트네왈리, 파세아드베르사리))</span>
-<span style="color:#323232;">| (샤락테를라예르, &quot;포지치비&quot;) -&gt; 샤락테를라예르 인드렐라치온지프</span>
-<span style="color:#323232;">| (샤락테를라예르, &quot;베리_포지치비&quot;) -&gt; 샤락테를라예르 메트네왈리</span>
-<span style="color:#323232;">| (플로틀라예르, &quot;베리_네가치비&quot;) -&gt; 플로틀라예르 마조르플로트위스트</span>
-<span style="color:#323232;">| (플로틀라예르, &quot;네가치비&quot;) -&gt; 플로틀라예르 미노르플로트위스트</span>
-<span style="color:#323232;">| (플로틀라예르, &quot;네우트라우&quot;) -&gt; 플로틀라예르 네워브젝치비</span>
-<span style="color:#323232;">| (플로틀라예르, &quot;포지치비&quot;) -&gt; 플로틀라예르 콘플릭트레졸루치옹</span>
-<span style="color:#323232;">| (플로틀라예르, &quot;베리_포지치비&quot;) -&gt; 플로틀라예르 (네스테데벤트 (네워브젝치비, 콘플릭트레졸루치옹))</span>
-<span style="color:#323232;">| (세칭글라예르, &quot;베리_네가치비&quot;) -&gt; 세칭글라예르 샨제오플로카치옹</span>
-<span style="color:#323232;">| (세칭글라예르, &quot;네가치비&quot;) -&gt; 세칭글라예르 웨아테르샨지</span>
-<span style="color:#323232;">| (세칭글라예르, &quot;네우트라우&quot;) -&gt; 세칭글라예르 치메프로그레스</span>
-<span style="color:#323232;">| (세칭글라예르, &quot;포지치비&quot;) -&gt; 세칭글라예르 네쿠우투라우콘테스트</span>
-<span style="color:#323232;">| (세칭글라예르, &quot;베리_포지치비&quot;) -&gt; 세칭글라예르 샨제오플로카치옹</span>
-<span style="color:#323232;">| (이모치오날라예르, &quot;베리_네가치비&quot;) -&gt; 이모치오날라예르 페르소나우그로트</span>
-<span style="color:#323232;">| (이모치오날라예르, &quot;네가치비&quot;) -&gt; 이모치오날라예르 세트바크</span>
-<span style="color:#323232;">| (이모치오날라예르, &quot;네우트라우&quot;) -&gt; 이모치오날라예르 이모치오나우헤벨라치옹</span>
-<span style="color:#323232;">| (이모치오날라예르, &quot;포지치비&quot;) -&gt; 이모치오날라예르 인테르나우콘플릭트</span>
-<span style="color:#323232;">| (이모치오날라예르, &quot;베리_포지치비&quot;) -&gt; 이모치오날라예르 페르소나우그로트</span>
-<span style="color:#323232;">| _ -&gt; 파이우위트 &quot;인발리드 라예르 오르 이벤트 카테고리&quot;</span>
+<span style="color:#839496;">레트 데시델라예레벤트 라예르 이벤트카테고리 =</span>
+<span style="color:#839496;">마트시 (라예르, 이벤트카테고리) 위트</span>
+<span style="color:#839496;">| (샤락테를라예르, &quot;베리_네가치비&quot;) -&gt; 샤락테를라예르 메트네왈리</span>
+<span style="color:#839496;">| (샤락테를라예르, &quot;네가치비&quot;) -&gt; 샤락테를라예르 파세아드베르사리</span>
+<span style="color:#839496;">| (샤락테를라예르, &quot;네우트라우&quot;) -&gt; 샤락테를라예르 (데벨로프렐라치온지프 (메트네왈리, 파세아드베르사리))</span>
+<span style="color:#839496;">| (샤락테를라예르, &quot;포지치비&quot;) -&gt; 샤락테를라예르 인드렐라치온지프</span>
+<span style="color:#839496;">| (샤락테를라예르, &quot;베리_포지치비&quot;) -&gt; 샤락테를라예르 메트네왈리</span>
+<span style="color:#839496;">| (플로틀라예르, &quot;베리_네가치비&quot;) -&gt; 플로틀라예르 마조르플로트위스트</span>
+<span style="color:#839496;">| (플로틀라예르, &quot;네가치비&quot;) -&gt; 플로틀라예르 미노르플로트위스트</span>
+<span style="color:#839496;">| (플로틀라예르, &quot;네우트라우&quot;) -&gt; 플로틀라예르 네워브젝치비</span>
+<span style="color:#839496;">| (플로틀라예르, &quot;포지치비&quot;) -&gt; 플로틀라예르 콘플릭트레졸루치옹</span>
+<span style="color:#839496;">| (플로틀라예르, &quot;베리_포지치비&quot;) -&gt; 플로틀라예르 (네스테데벤트 (네워브젝치비, 콘플릭트레졸루치옹))</span>
+<span style="color:#839496;">| (세칭글라예르, &quot;베리_네가치비&quot;) -&gt; 세칭글라예르 샨제오플로카치옹</span>
+<span style="color:#839496;">| (세칭글라예르, &quot;네가치비&quot;) -&gt; 세칭글라예르 웨아테르샨지</span>
+<span style="color:#839496;">| (세칭글라예르, &quot;네우트라우&quot;) -&gt; 세칭글라예르 치메프로그레스</span>
+<span style="color:#839496;">| (세칭글라예르, &quot;포지치비&quot;) -&gt; 세칭글라예르 네쿠우투라우콘테스트</span>
+<span style="color:#839496;">| (세칭글라예르, &quot;베리_포지치비&quot;) -&gt; 세칭글라예르 샨제오플로카치옹</span>
+<span style="color:#839496;">| (이모치오날라예르, &quot;베리_네가치비&quot;) -&gt; 이모치오날라예르 페르소나우그로트</span>
+<span style="color:#839496;">| (이모치오날라예르, &quot;네가치비&quot;) -&gt; 이모치오날라예르 세트바크</span>
+<span style="color:#839496;">| (이모치오날라예르, &quot;네우트라우&quot;) -&gt; 이모치오날라예르 이모치오나우헤벨라치옹</span>
+<span style="color:#839496;">| (이모치오날라예르, &quot;포지치비&quot;) -&gt; 이모치오날라예르 인테르나우콘플릭트</span>
+<span style="color:#839496;">| (이모치오날라예르, &quot;베리_포지치비&quot;) -&gt; 이모치오날라예르 페르소나우그로트</span>
+<span style="color:#839496;">| _ -&gt; 파이우위트 &quot;인발리드 라예르 오르 이벤트 카테고리&quot;</span>
 
-<span style="color:#323232;">레트 헤주우트 = 호우2드6이벤트()</span>
-<span style="color:#323232;">레트 샤락테레벤트 = 데시델라예레벤트 (샤락테를라예르 메트네왈리) 헤주우트</span>
-<span style="color:#323232;">레트 플로테벤트 = 데시데벤트 (플로틀라예르 마조르플로트위스트) 헤주우트</span>
-<span style="color:#323232;">레트 세친제벤트 = 데시델라예레벤트 (세칭글라예르 샨제오플로카치옹) 헤주우트</span>
-<span style="color:#323232;">레트 이모치오날레벤트 = 데시델라예레벤트 (이모치오날라예르 페르소나우그로트) 헤주우트</span>
+<span style="color:#839496;">레트 헤주우트 = 호우2드6이벤트()</span>
+<span style="color:#839496;">레트 샤락테레벤트 = 데시델라예레벤트 (샤락테를라예르 메트네왈리) 헤주우트</span>
+<span style="color:#839496;">레트 플로테벤트 = 데시데벤트 (플로틀라예르 마조르플로트위스트) 헤주우트</span>
+<span style="color:#839496;">레트 세친제벤트 = 데시델라예레벤트 (세칭글라예르 샨제오플로카치옹) 헤주우트</span>
+<span style="color:#839496;">레트 이모치오날레벤트 = 데시델라예레벤트 (이모치오날라예르 페르소나우그로트) 헤주우트</span>
 
-<span style="color:#323232;">// 프린트 티 헤주우트스</span>
-<span style="color:#323232;">프린트픙 &quot;홀레드 이벤트 카테고리: %스&quot; 헤주우트</span>
-<span style="color:#323232;">프린트픙 &quot;샤락테르 이벤트: %아&quot; 샤락테레벤트</span>
-<span style="color:#323232;">프린트픙 &quot;플로트 이벤트: %아&quot; 플로테벤트</span>
-<span style="color:#323232;">프린트픙 &quot;세칭그 이벤트: %아&quot; 세친제벤트</span>
-<span style="color:#323232;">프린트픙 &quot;이모치오나우 이벤트: %아&quot; 이모치오날레벤트</span>
+<span style="color:#839496;">// 프린트 티 헤주우트스</span>
+<span style="color:#839496;">프린트픙 &quot;홀레드 이벤트 카테고리: %스&quot; 헤주우트</span>
+<span style="color:#839496;">프린트픙 &quot;샤락테르 이벤트: %아&quot; 샤락테레벤트</span>
+<span style="color:#839496;">프린트픙 &quot;플로트 이벤트: %아&quot; 플로테벤트</span>
+<span style="color:#839496;">프린트픙 &quot;세칭그 이벤트: %아&quot; 세친제벤트</span>
+<span style="color:#839496;">프린트픙 &quot;이모치오나우 이벤트: %아&quot; 이모치오날레벤트</span>
 
 </pre><p id = "para-149">티스 이잠플리 소스 오 투 우지 프# 안드 아드반세드 지스크리미나테드 우니옹 헬라치온지프스 투 모데우 아 콤플레스 베르시옹 오프 티 지시-홀링그 데시지옹 시스텡. 위’비 데피네드 지페렌트 라예르스 오프 티 나하치비 안드 테이르 코헤스폰징그 이벤트스, 안드 우제드 아 데시지옹 풍크치옹 투 데테르미니 티 스페시피크 이벤트스 바제드 옹 티 지시 호우 헤주우트.</p>
 <p id = "para-150">요 캉 이스텐드 티스 모데우 비 아징그 모리 라예르스 안드 이벤트스 오르 비 아드주스칭그 티 헬라치온지프스 베트웽 텡 투 크레아치 앙 이벵 모리 콤플레스 안드 히시 나하치비.</p>
 <h2 id = "link-22">타트’스 아우모스트 테리, 부트 스치우 노트 이트. 레아비 티 풍크치옹스 오트 안드 포쿠스 온리 잉 티 지스크리미나치옹 우니옹스 웨브 티스 치미. 마키 이트 아 만으와 위트 일레멘트스 오프 이제카이, 리트르프그, 조지 이시, 데몽스, 이트크</h2>
 <p id = "para-151">&lt; 에리’스 아 도마잉 모데우 타트 포쿠지스 온리 옹 티 지스크리미나테드 우니옹스, 잉콤파싱그 일레멘트스 오프 이제카이, 리트르프그, 조제이, 이시, 데몽스, 안드 오테르 팍토르스 타트 요’비 멘치오네드. 티스 모데우 헤프레젠트스 티 부이우징그 블록스 포르 아 히시 안드 콤플레스 만으와 나하치비.</p>
-<pre><span style="color:#323232;">치피 이제카이오리징 =</span>
-<span style="color:#323232;">| 헤잉카르나치옹</span>
-<span style="color:#323232;">| 수모네드</span>
-<span style="color:#323232;">| 포르타우</span>
-<span style="color:#323232;">| 비르투아우헤알리치</span>
+<pre><span style="color:#839496;">치피 이제카이오리징 =</span>
+<span style="color:#839496;">| 헤잉카르나치옹</span>
+<span style="color:#839496;">| 수모네드</span>
+<span style="color:#839496;">| 포르타우</span>
+<span style="color:#839496;">| 비르투아우헤알리치</span>
 
-<span style="color:#323232;">치피 리트르프그메샤니크 =</span>
-<span style="color:#323232;">| 레벨루프</span>
-<span style="color:#323232;">| 스키우시스텡</span>
-<span style="color:#323232;">| 이테무프그라지</span>
-<span style="color:#323232;">| 케스트시스텡</span>
+<span style="color:#839496;">치피 리트르프그메샤니크 =</span>
+<span style="color:#839496;">| 레벨루프</span>
+<span style="color:#839496;">| 스키우시스텡</span>
+<span style="color:#839496;">| 이테무프그라지</span>
+<span style="color:#839496;">| 케스트시스텡</span>
 
-<span style="color:#323232;">치피 데모닉베잉그 =</span>
-<span style="color:#323232;">| 데몬로르드</span>
-<span style="color:#323232;">| 레세르데몽</span>
-<span style="color:#323232;">| 데모뉸테르</span>
-<span style="color:#323232;">| 쿠르세다르치팍트</span>
+<span style="color:#839496;">치피 데모닉베잉그 =</span>
+<span style="color:#839496;">| 데몬로르드</span>
+<span style="color:#839496;">| 레세르데몽</span>
+<span style="color:#839496;">| 데모뉸테르</span>
+<span style="color:#839496;">| 쿠르세다르치팍트</span>
 
-<span style="color:#323232;">치피 이시콘텐트 =</span>
-<span style="color:#323232;">| 판세르비시</span>
-<span style="color:#323232;">| 로베트리앙글리</span>
-<span style="color:#323232;">| 아시덴타우페르베르트</span>
-<span style="color:#323232;">| 이누엔두</span>
+<span style="color:#839496;">치피 이시콘텐트 =</span>
+<span style="color:#839496;">| 판세르비시</span>
+<span style="color:#839496;">| 로베트리앙글리</span>
+<span style="color:#839496;">| 아시덴타우페르베르트</span>
+<span style="color:#839496;">| 이누엔두</span>
 
-<span style="color:#323232;">치피 조제이테미 =</span>
-<span style="color:#323232;">| 호만시</span>
-<span style="color:#323232;">| 페르소나우그로트</span>
-<span style="color:#323232;">| 카레르</span>
-<span style="color:#323232;">| 프리엔드지프</span>
+<span style="color:#839496;">치피 조제이테미 =</span>
+<span style="color:#839496;">| 호만시</span>
+<span style="color:#839496;">| 페르소나우그로트</span>
+<span style="color:#839496;">| 카레르</span>
+<span style="color:#839496;">| 프리엔드지프</span>
 
-<span style="color:#323232;">치피 세칭그 =</span>
-<span style="color:#323232;">| 판타지워루드</span>
-<span style="color:#323232;">| 모데른으워루드</span>
-<span style="color:#323232;">| 포스타포칼리프칙으워루드</span>
-<span style="color:#323232;">| 스파시</span>
+<span style="color:#839496;">치피 세칭그 =</span>
+<span style="color:#839496;">| 판타지워루드</span>
+<span style="color:#839496;">| 모데른으워루드</span>
+<span style="color:#839496;">| 포스타포칼리프칙으워루드</span>
+<span style="color:#839496;">| 스파시</span>
 
-<span style="color:#323232;">치피 샤락테르 =</span>
-<span style="color:#323232;">| 프로타고니스트</span>
-<span style="color:#323232;">| 안타고니스트</span>
-<span style="color:#323232;">| 시데키크</span>
-<span style="color:#323232;">| 로베인테레스트</span>
+<span style="color:#839496;">치피 샤락테르 =</span>
+<span style="color:#839496;">| 프로타고니스트</span>
+<span style="color:#839496;">| 안타고니스트</span>
+<span style="color:#839496;">| 시데키크</span>
+<span style="color:#839496;">| 로베인테레스트</span>
 
-<span style="color:#323232;">치피 이벤트 =</span>
-<span style="color:#323232;">| 샤락테레벤트 오프 샤락테르</span>
-<span style="color:#323232;">| 이제카이에벤트 오프 이제카이오리징</span>
-<span style="color:#323232;">| 리트르프제벤트 오프 리트르프그메샤니크</span>
-<span style="color:#323232;">| 데모니세벤트 오프 데모닉베잉그</span>
-<span style="color:#323232;">| 이시에벤트 오프 이시콘텐트</span>
-<span style="color:#323232;">| 조제이에벤트 오프 조제이테미</span>
-<span style="color:#323232;">| 세친제벤트 오프 세칭그</span>
+<span style="color:#839496;">치피 이벤트 =</span>
+<span style="color:#839496;">| 샤락테레벤트 오프 샤락테르</span>
+<span style="color:#839496;">| 이제카이에벤트 오프 이제카이오리징</span>
+<span style="color:#839496;">| 리트르프제벤트 오프 리트르프그메샤니크</span>
+<span style="color:#839496;">| 데모니세벤트 오프 데모닉베잉그</span>
+<span style="color:#839496;">| 이시에벤트 오프 이시콘텐트</span>
+<span style="color:#839496;">| 조제이에벤트 오프 조제이테미</span>
+<span style="color:#839496;">| 세친제벤트 오프 세칭그</span>
 
 </pre><p id = "para-152">테지 지스크리미나테드 우니옹스 데피니 바리오스 아스펙트스 오프 티 만으와’스 나하치비, 수시 아스 이제카이 오리징스, 리트르프그 메샤닉스, 데모니크 베잉그스, 이시 콘텐트, 안드 조제이 테메스. 요 캉 우지 테지 부이우징그 블록스 투 크레아치 콤플레스 스토릴리니스 안드 인테락치옹스 베트웽 샤락테르스 안드 이벤트스 위팅 요르 만으와.</p>
 <h2 id = "link-23">인테르밍글리 텡 잉 아 싱글리 시스텡 우징그 프트-브르, 위트 인트리카치 안드 헤쿠르시비 지스크리미나테드 우니옹 헬라치온지프스 티스 치미</h2>
 <p id = "para-153">&lt; 아키 이스타 웅 모델루 지 도미니우 잉 프# 키 시 콘센트라 아페나스 나스 우니옹이스 지스크리미나다스, 인트렐라산두 일레멘투스 지 이제카이, 리트르프그, 조제이, 이시, 데모니우스 이 오트루스 파토리스 멘시오나두스 잉 웅 우니쿠 시스테마. 에스치 모델루 헤프레젠타 우스 블로쿠스 지 콘스트루상 파라 우마 나하치바 히카 이 콤플레샤 지 웅 만으와.</p>
-<pre><span style="color:#323232;">치피 오리제미제카이 =</span>
-<span style="color:#323232;">| 헹카르나상</span>
-<span style="color:#323232;">| 인보카상</span>
-<span style="color:#323232;">| 포르타우</span>
-<span style="color:#323232;">| 헤알리다데비르투아우</span>
+<pre><span style="color:#839496;">치피 오리제미제카이 =</span>
+<span style="color:#839496;">| 헹카르나상</span>
+<span style="color:#839496;">| 인보카상</span>
+<span style="color:#839496;">| 포르타우</span>
+<span style="color:#839496;">| 헤알리다데비르투아우</span>
 
-<span style="color:#323232;">치피 메카니칼리트르프그 =</span>
-<span style="color:#323232;">| 아우멘토데니베우</span>
-<span style="color:#323232;">| 시스테마데아빌리다지스</span>
-<span style="color:#323232;">| 멜료리아데이텡</span>
-<span style="color:#323232;">| 시스테마데미송이스</span>
+<span style="color:#839496;">치피 메카니칼리트르프그 =</span>
+<span style="color:#839496;">| 아우멘토데니베우</span>
+<span style="color:#839496;">| 시스테마데아빌리다지스</span>
+<span style="color:#839496;">| 멜료리아데이텡</span>
+<span style="color:#839496;">| 시스테마데미송이스</span>
 
-<span style="color:#323232;">치피 세르데모니아쿠 =</span>
-<span style="color:#323232;">| 로르데데모니우</span>
-<span style="color:#323232;">| 데모니오메노르</span>
-<span style="color:#323232;">| 카사도르데데모니우스</span>
-<span style="color:#323232;">| 아르테파토아마우지소아두</span>
+<span style="color:#839496;">치피 세르데모니아쿠 =</span>
+<span style="color:#839496;">| 로르데데모니우</span>
+<span style="color:#839496;">| 데모니오메노르</span>
+<span style="color:#839496;">| 카사도르데데모니우스</span>
+<span style="color:#839496;">| 아르테파토아마우지소아두</span>
 
-<span style="color:#323232;">치피 콘테우도에시 =</span>
-<span style="color:#323232;">| 판세르비시</span>
-<span style="color:#323232;">| 트리앙굴로아모로주</span>
-<span style="color:#323232;">| 페르베르치도아시덴타우</span>
-<span style="color:#323232;">| 인시누아상</span>
+<span style="color:#839496;">치피 콘테우도에시 =</span>
+<span style="color:#839496;">| 판세르비시</span>
+<span style="color:#839496;">| 트리앙굴로아모로주</span>
+<span style="color:#839496;">| 페르베르치도아시덴타우</span>
+<span style="color:#839496;">| 인시누아상</span>
 
-<span style="color:#323232;">치피 테마조제이 =</span>
-<span style="color:#323232;">| 호만시</span>
-<span style="color:#323232;">| 크레시멘토페소아우</span>
-<span style="color:#323232;">| 카헤이라</span>
-<span style="color:#323232;">| 아미자지</span>
+<span style="color:#839496;">치피 테마조제이 =</span>
+<span style="color:#839496;">| 호만시</span>
+<span style="color:#839496;">| 크레시멘토페소아우</span>
+<span style="color:#839496;">| 카헤이라</span>
+<span style="color:#839496;">| 아미자지</span>
 
-<span style="color:#323232;">치피 암비엔치 =</span>
-<span style="color:#323232;">| 문도판타지아</span>
-<span style="color:#323232;">| 문도모데르누</span>
-<span style="color:#323232;">| 문도포자포칼리프치쿠</span>
-<span style="color:#323232;">| 이스파수</span>
+<span style="color:#839496;">치피 암비엔치 =</span>
+<span style="color:#839496;">| 문도판타지아</span>
+<span style="color:#839496;">| 문도모데르누</span>
+<span style="color:#839496;">| 문도포자포칼리프치쿠</span>
+<span style="color:#839496;">| 이스파수</span>
 
-<span style="color:#323232;">치피 페르소나젱 =</span>
-<span style="color:#323232;">| 프로타고니스타</span>
-<span style="color:#323232;">| 안타고니스타</span>
-<span style="color:#323232;">| 콤파녜이루</span>
-<span style="color:#323232;">| 인테레세아모로주</span>
+<span style="color:#839496;">치피 페르소나젱 =</span>
+<span style="color:#839496;">| 프로타고니스타</span>
+<span style="color:#839496;">| 안타고니스타</span>
+<span style="color:#839496;">| 콤파녜이루</span>
+<span style="color:#839496;">| 인테레세아모로주</span>
 
-<span style="color:#323232;">치피 이벤투 =</span>
-<span style="color:#323232;">| 이벤토페르소나젱 오프 페르소나젱</span>
-<span style="color:#323232;">| 이벤토이제카이 오프 오리제미제카이</span>
-<span style="color:#323232;">| 이벤톨리트르프그 오프 메카니칼리트르프그</span>
-<span style="color:#323232;">| 이벤토데모니우 오프 세르데모니아쿠</span>
-<span style="color:#323232;">| 이벤토에시 오프 콘테우도에시</span>
-<span style="color:#323232;">| 이벤토조제이 오프 테마조제이</span>
-<span style="color:#323232;">| 이벤토암비엔치 오프 암비엔치</span>
-<span style="color:#323232;">| 이벤토콤포스투 오프 (이벤투 * 이벤투)</span>
+<span style="color:#839496;">치피 이벤투 =</span>
+<span style="color:#839496;">| 이벤토페르소나젱 오프 페르소나젱</span>
+<span style="color:#839496;">| 이벤토이제카이 오프 오리제미제카이</span>
+<span style="color:#839496;">| 이벤톨리트르프그 오프 메카니칼리트르프그</span>
+<span style="color:#839496;">| 이벤토데모니우 오프 세르데모니아쿠</span>
+<span style="color:#839496;">| 이벤토에시 오프 콘테우도에시</span>
+<span style="color:#839496;">| 이벤토조제이 오프 테마조제이</span>
+<span style="color:#839496;">| 이벤토암비엔치 오프 암비엔치</span>
+<span style="color:#839496;">| 이벤토콤포스투 오프 (이벤투 * 이벤투)</span>
 
 </pre><p id = "para-154">에사스 우니옹이스 지스크리미나다스 데피넹 바리우스 아스펙투스 다 나하치바 두 만으와, 코무 오리젱스 이제카이, 메카니카스 리트르프그, 세리스 데모니아쿠스, 콘테우두 이시 이 테마스 조제이. 알렝 지수, 잉클루이무스 웅 치푸 지 이벤토콤포스투 키 페르미치 키 도이스 이벤투스 세장 콤비나두스 지 포르마 헤쿠르시바, 크리안두 우마 헬라상 마이스 콤플레샤 엔트리 우스 이벤투스.</p>
 <p id = "para-155">보세 포지 우자르 에시스 블로쿠스 지 콘스트루상 파라 크리아르 트라마스 콤플레샤스 이 인테라송이스 엔트리 페르소나젱스 이 이벤투스 덴트루 두 세우 만으와.</p>
 <h2 id = "link-24">오크 레트 이벤트 비 티 스타르트 텡. 인트로두시 아노테르 마조르 치피 위트 이트스 시블링그스</h2>
 <p id = "para-156">&lt; 바무스 인트로두지르 웅 노부 치푸 프린시파우 샤마두 “일레멘투” 이 세우스 수브치푸스, 키 포뎅 세르 콤비나두스 콩 우스 이벤투스 파라 아지시오나르 마이스 콤플레시다지 아 나하치바 두 만으와.</p>
-<pre><span style="color:#323232;">치피 일레멘토마지쿠 =</span>
-<span style="color:#323232;">| 포구</span>
-<span style="color:#323232;">| 아구아</span>
-<span style="color:#323232;">| 테하</span>
-<span style="color:#323232;">| 아르</span>
-<span style="color:#323232;">| 루스</span>
-<span style="color:#323232;">| 트레바스</span>
+<pre><span style="color:#839496;">치피 일레멘토마지쿠 =</span>
+<span style="color:#839496;">| 포구</span>
+<span style="color:#839496;">| 아구아</span>
+<span style="color:#839496;">| 테하</span>
+<span style="color:#839496;">| 아르</span>
+<span style="color:#839496;">| 루스</span>
+<span style="color:#839496;">| 트레바스</span>
 
-<span style="color:#323232;">치피 아빌리다데스페시아우 =</span>
-<span style="color:#323232;">| 수페르포르사</span>
-<span style="color:#323232;">| 텔레파치아</span>
-<span style="color:#323232;">| 인비지빌리다지</span>
-<span style="color:#323232;">| 텔레트란스포르치</span>
-<span style="color:#323232;">| 헤제네라상</span>
+<span style="color:#839496;">치피 아빌리다데스페시아우 =</span>
+<span style="color:#839496;">| 수페르포르사</span>
+<span style="color:#839496;">| 텔레파치아</span>
+<span style="color:#839496;">| 인비지빌리다지</span>
+<span style="color:#839496;">| 텔레트란스포르치</span>
+<span style="color:#839496;">| 헤제네라상</span>
 
-<span style="color:#323232;">치피 콘플리투 =</span>
-<span style="color:#323232;">| 콘플리토인테르누</span>
-<span style="color:#323232;">| 콘플리토에스테르누</span>
-<span style="color:#323232;">| 콘플리토엔트레페르소나젱스</span>
-<span style="color:#323232;">| 콘플리토코마조시에다지</span>
+<span style="color:#839496;">치피 콘플리투 =</span>
+<span style="color:#839496;">| 콘플리토인테르누</span>
+<span style="color:#839496;">| 콘플리토에스테르누</span>
+<span style="color:#839496;">| 콘플리토엔트레페르소나젱스</span>
+<span style="color:#839496;">| 콘플리토코마조시에다지</span>
 
-<span style="color:#323232;">치피 헬라시오나멘투 =</span>
-<span style="color:#323232;">| 알리안사</span>
-<span style="color:#323232;">| 히발리다지</span>
-<span style="color:#323232;">| 아미자지</span>
-<span style="color:#323232;">| 이니미자지</span>
+<span style="color:#839496;">치피 헬라시오나멘투 =</span>
+<span style="color:#839496;">| 알리안사</span>
+<span style="color:#839496;">| 히발리다지</span>
+<span style="color:#839496;">| 아미자지</span>
+<span style="color:#839496;">| 이니미자지</span>
 
-<span style="color:#323232;">치피 마조르치피 =</span>
-<span style="color:#323232;">| 이벤투 오프 이벤투</span>
-<span style="color:#323232;">| 일레멘투 오프 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다지 오프 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투 오프 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
-<span style="color:#323232;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
+<span style="color:#839496;">치피 마조르치피 =</span>
+<span style="color:#839496;">| 이벤투 오프 이벤투</span>
+<span style="color:#839496;">| 일레멘투 오프 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다지 오프 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투 오프 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
+<span style="color:#839496;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
 
 </pre><p id = "para-157">아고라 테무스 웅 노부 치푸 프린시파우 샤마두 “마조르치피” 키 잉클루이 우 치푸 “이벤투” 이 탐벵 우스 노부스 치푸스 “일레멘토마지쿠”, “아빌리다데스페시아우”, “콘플리투” 이 “헬라시오나멘투”. 에시스 치푸스 아지시오낭 마이스 지멘송이스 아 이스토리아, 페르미친두 아 크리아상 지 트라마스 마이스 히카스 이 인트링카다스. 알렝 지수, 아지시오나무스 웅 치푸 “콤포지상” 키 페르미치 콤비나르 도이스 “마조르치피” 지 포르마 헤쿠르시바, 크리안두 우마 헬라상 아인다 마이스 콤플레샤 엔트리 엘리스.</p>
 <p id = "para-158">콩 에시스 노부스 치푸스, 보세 포지 이스플로라르 지페렌치스 아스펙투스 다 나하치바 두 만으와, 코무 마지아, 아빌리다지스 이스페시아이스, 콘플리투스 이 헬라시오나멘투스 엔트리 페르소나젱스.</p>
 <h2 id = "link-25">잉 아 포스트-아지 포스트-블록샤잉 포스트-쿠안퉁 플로트, 아드 티 치페스 헬라테드 투 이덴치치 (아우수 칭그 위트 치페스 멘치오네드 수 파르)</h2>
 <p id = "para-159">&lt; 네스치 세나리우 포스-아지 (인텔리젠시아 제라우 아르치피시아우), 포스-블록샤잉 이 포스-쿠안치쿠, 포데무스 인트로두지르 치푸스 헬라시오나두스 아 이덴치다지 이 코넥타르 콩 우스 치푸스 멘시오나두스 아테 아고라. 이수 아주다라 아 크리아르 우마 나하치바 키 아보르다 케스통이스 지 이덴치다지 이 테크놀로지아 잉 웅 푸투루 아반사두.</p>
-<pre><span style="color:#323232;">치피 테크놀로지아 =</span>
-<span style="color:#323232;">| 아지</span>
-<span style="color:#323232;">| 블록샤잉</span>
-<span style="color:#323232;">| 콤푸타상쿠안치카</span>
+<pre><span style="color:#839496;">치피 테크놀로지아 =</span>
+<span style="color:#839496;">| 아지</span>
+<span style="color:#839496;">| 블록샤잉</span>
+<span style="color:#839496;">| 콤푸타상쿠안치카</span>
 
-<span style="color:#323232;">치피 이덴치다지 =</span>
-<span style="color:#323232;">| 이덴치다데지지타우</span>
-<span style="color:#323232;">| 이덴치다데피지카</span>
-<span style="color:#323232;">| 이덴치다데이브리다</span>
-<span style="color:#323232;">| 프세우도니무</span>
-<span style="color:#323232;">| 아노니마투</span>
+<span style="color:#839496;">치피 이덴치다지 =</span>
+<span style="color:#839496;">| 이덴치다데지지타우</span>
+<span style="color:#839496;">| 이덴치다데피지카</span>
+<span style="color:#839496;">| 이덴치다데이브리다</span>
+<span style="color:#839496;">| 프세우도니무</span>
+<span style="color:#839496;">| 아노니마투</span>
 
-<span style="color:#323232;">치피 시스테마데이덴치다지 =</span>
-<span style="color:#323232;">| 시스테마센트랄리자두</span>
-<span style="color:#323232;">| 시스테마데센트랄리자두</span>
-<span style="color:#323232;">| 시스테마지스트리부이두</span>
-<span style="color:#323232;">| 시스테마우토주스텐타베우</span>
+<span style="color:#839496;">치피 시스테마데이덴치다지 =</span>
+<span style="color:#839496;">| 시스테마센트랄리자두</span>
+<span style="color:#839496;">| 시스테마데센트랄리자두</span>
+<span style="color:#839496;">| 시스테마지스트리부이두</span>
+<span style="color:#839496;">| 시스테마우토주스텐타베우</span>
 
-<span style="color:#323232;">치피 케스탕데이덴치다지 =</span>
-<span style="color:#323232;">| 프리바시다지</span>
-<span style="color:#323232;">| 세구란사</span>
-<span style="color:#323232;">| 하스트레아빌리다지</span>
-<span style="color:#323232;">| 아우토노미아</span>
-<span style="color:#323232;">| 에치카</span>
+<span style="color:#839496;">치피 케스탕데이덴치다지 =</span>
+<span style="color:#839496;">| 프리바시다지</span>
+<span style="color:#839496;">| 세구란사</span>
+<span style="color:#839496;">| 하스트레아빌리다지</span>
+<span style="color:#839496;">| 아우토노미아</span>
+<span style="color:#839496;">| 에치카</span>
 
-<span style="color:#323232;">치피 마조르치피 =</span>
-<span style="color:#323232;">| 이벤투 오프 이벤투</span>
-<span style="color:#323232;">| 일레멘투 오프 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다지 오프 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투 오프 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
-<span style="color:#323232;">| 테크놀로지아 오프 테크놀로지아</span>
-<span style="color:#323232;">| 이덴치다지 오프 이덴치다지</span>
-<span style="color:#323232;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
-<span style="color:#323232;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
-<span style="color:#323232;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
+<span style="color:#839496;">치피 마조르치피 =</span>
+<span style="color:#839496;">| 이벤투 오프 이벤투</span>
+<span style="color:#839496;">| 일레멘투 오프 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다지 오프 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투 오프 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
+<span style="color:#839496;">| 테크놀로지아 오프 테크놀로지아</span>
+<span style="color:#839496;">| 이덴치다지 오프 이덴치다지</span>
+<span style="color:#839496;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
+<span style="color:#839496;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
+<span style="color:#839496;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
 
 </pre><p id = "para-160">네스치 이젬플루, 아지시오나무스 우스 치푸스 “테크놀로지아”, “이덴치다지”, “시스테마데이덴치다지” 이 “케스탕데이덴치다지” 아우 치푸 프린시파우 “마조르치피”. 에시스 노부스 치푸스 아보르당 케스통이스 지 이덴치다지 잉 웅 문두 아반사두 콩 테크놀로지아스 이메르젠치스, 코무 아지, 블록샤잉 이 콤푸타상 쿠안치카.</p>
 <p id = "para-161">콩 아 아지상 데시스 노부스 치푸스, 보세 포지 이스플로라르 아스펙투스 헬라시오나두스 아 이덴치다지, 테크놀로지아 이 우스 데자피우스 키 수르젱 네스치 푸투루 아반사두.</p>
 <h2 id = "link-26">이시 마조르 치페스 코우드 비 아데드 아우수? 베포리 스타르칭그 티 미누치아이</h2>
 <p id = "para-162">&lt; 알렝 두스 치푸스 프린시파이스 자 멘시오나두스, 포데무스 아지시오나르 마이스 아우궁스 파라 이스판지르 아 나하치바 두 만으와 이 이스플로라르 우마 바리에다지 지 테마스 이 콘세이투스. 아키 이스탕 아우구마스 수제스통이스:</p>
-<pre><span style="color:#323232;">치피 메이오암비엔치 =</span>
-<span style="color:#323232;">| 이코시스테마</span>
-<span style="color:#323232;">| 폴루이상</span>
-<span style="color:#323232;">| 콘세르바상</span>
-<span style="color:#323232;">| 데자스트레나투라우</span>
-<span style="color:#323232;">| 헤쿠르소즈나투라이스</span>
+<pre><span style="color:#839496;">치피 메이오암비엔치 =</span>
+<span style="color:#839496;">| 이코시스테마</span>
+<span style="color:#839496;">| 폴루이상</span>
+<span style="color:#839496;">| 콘세르바상</span>
+<span style="color:#839496;">| 데자스트레나투라우</span>
+<span style="color:#839496;">| 헤쿠르소즈나투라이스</span>
 
-<span style="color:#323232;">치피 소시에다지 =</span>
-<span style="color:#323232;">| 폴리치카</span>
-<span style="color:#323232;">| 이코노미아</span>
-<span style="color:#323232;">| 쿠우투라</span>
-<span style="color:#323232;">| 데지구아우다지</span>
-<span style="color:#323232;">| 주스치사</span>
+<span style="color:#839496;">치피 소시에다지 =</span>
+<span style="color:#839496;">| 폴리치카</span>
+<span style="color:#839496;">| 이코노미아</span>
+<span style="color:#839496;">| 쿠우투라</span>
+<span style="color:#839496;">| 데지구아우다지</span>
+<span style="color:#839496;">| 주스치사</span>
 
-<span style="color:#323232;">치피 이스파수 =</span>
-<span style="color:#323232;">| 콜로니자상에스파시아우</span>
-<span style="color:#323232;">| 비아제메스파시아우</span>
-<span style="color:#323232;">| 이스플로라상</span>
-<span style="color:#323232;">| 테크놀로지아에스파시아우</span>
-<span style="color:#323232;">| 비다에스트라테헤스트리</span>
+<span style="color:#839496;">치피 이스파수 =</span>
+<span style="color:#839496;">| 콜로니자상에스파시아우</span>
+<span style="color:#839496;">| 비아제메스파시아우</span>
+<span style="color:#839496;">| 이스플로라상</span>
+<span style="color:#839496;">| 테크놀로지아에스파시아우</span>
+<span style="color:#839496;">| 비다에스트라테헤스트리</span>
 
-<span style="color:#323232;">치피 헤알리다데비르투아우 =</span>
-<span style="color:#323232;">| 문도비르투아우</span>
-<span style="color:#323232;">| 이메르상토타우</span>
-<span style="color:#323232;">| 헤알리다데아우멘타다</span>
-<span style="color:#323232;">| 시물라상</span>
-<span style="color:#323232;">| 이페르코네샹</span>
+<span style="color:#839496;">치피 헤알리다데비르투아우 =</span>
+<span style="color:#839496;">| 문도비르투아우</span>
+<span style="color:#839496;">| 이메르상토타우</span>
+<span style="color:#839496;">| 헤알리다데아우멘타다</span>
+<span style="color:#839496;">| 시물라상</span>
+<span style="color:#839496;">| 이페르코네샹</span>
 
-<span style="color:#323232;">치피 마조르치피 =</span>
-<span style="color:#323232;">| 이벤투 오프 이벤투</span>
-<span style="color:#323232;">| 일레멘투 오프 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다지 오프 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투 오프 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
-<span style="color:#323232;">| 테크놀로지아 오프 테크놀로지아</span>
-<span style="color:#323232;">| 이덴치다지 오프 이덴치다지</span>
-<span style="color:#323232;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
-<span style="color:#323232;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
-<span style="color:#323232;">| 메이오암비엔치 오프 메이오암비엔치</span>
-<span style="color:#323232;">| 소시에다지 오프 소시에다지</span>
-<span style="color:#323232;">| 이스파수 오프 이스파수</span>
-<span style="color:#323232;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
-<span style="color:#323232;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
+<span style="color:#839496;">치피 마조르치피 =</span>
+<span style="color:#839496;">| 이벤투 오프 이벤투</span>
+<span style="color:#839496;">| 일레멘투 오프 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다지 오프 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투 오프 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
+<span style="color:#839496;">| 테크놀로지아 오프 테크놀로지아</span>
+<span style="color:#839496;">| 이덴치다지 오프 이덴치다지</span>
+<span style="color:#839496;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
+<span style="color:#839496;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
+<span style="color:#839496;">| 메이오암비엔치 오프 메이오암비엔치</span>
+<span style="color:#839496;">| 소시에다지 오프 소시에다지</span>
+<span style="color:#839496;">| 이스파수 오프 이스파수</span>
+<span style="color:#839496;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
+<span style="color:#839496;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
 
 </pre><p id = "para-163">네스치 이젬플루, 아지시오나무스 “메이오암비엔치”, “소시에다지”, “이스파수” 이 “헤알리다데비르투아우” 코무 노부스 치푸스 프린시파이스. 에시스 치푸스 페르미텡 이스플로라르 테마스 헬라시오나두스 아우 메이우 암비엔치, 케스통이스 소시아이스, 이스플로라상 이스파시아우 이 헤알리다지스 비르투아이스.</p>
 <p id = "para-164">콩 에시스 노부스 치푸스 프린시파이스, 보세 포지 아보르다르 우마 암플라 가마 지 토피쿠스 이 크리아르 우마 나하치바 아인다 마이스 히카 이 콤플레샤 파라 우 세우 만으와.</p>
 <h2 id = "link-27">아드 치페스 인보우빙그 마투리 콘텐트</h2>
 <p id = "para-165">&lt; 파라 잉클루이르 치푸스 헬라시오나두스 아 콘테우두 마두루 누 만으와, 포데무스 아지시오나르 우스 세긴치스 수브치푸스:</p>
-<pre><span style="color:#323232;">치피 콘테우도마두루 =</span>
-<span style="color:#323232;">| 헬라송이자두우타스</span>
-<span style="color:#323232;">| 비올렌시아</span>
-<span style="color:#323232;">| 테마솜브리우스</span>
-<span style="color:#323232;">| 링구아제메스플리시타</span>
-<span style="color:#323232;">| 콘테우도제슈아우</span>
+<pre><span style="color:#839496;">치피 콘테우도마두루 =</span>
+<span style="color:#839496;">| 헬라송이자두우타스</span>
+<span style="color:#839496;">| 비올렌시아</span>
+<span style="color:#839496;">| 테마솜브리우스</span>
+<span style="color:#839496;">| 링구아제메스플리시타</span>
+<span style="color:#839496;">| 콘테우도제슈아우</span>
 
-<span style="color:#323232;">치피 마조르치피 =</span>
-<span style="color:#323232;">| 이벤투 오프 이벤투</span>
-<span style="color:#323232;">| 일레멘투 오프 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다지 오프 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투 오프 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
-<span style="color:#323232;">| 테크놀로지아 오프 테크놀로지아</span>
-<span style="color:#323232;">| 이덴치다지 오프 이덴치다지</span>
-<span style="color:#323232;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
-<span style="color:#323232;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
-<span style="color:#323232;">| 메이오암비엔치 오프 메이오암비엔치</span>
-<span style="color:#323232;">| 소시에다지 오프 소시에다지</span>
-<span style="color:#323232;">| 이스파수 오프 이스파수</span>
-<span style="color:#323232;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
-<span style="color:#323232;">| 콘테우도마두루 오프 콘테우도마두루</span>
-<span style="color:#323232;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
+<span style="color:#839496;">치피 마조르치피 =</span>
+<span style="color:#839496;">| 이벤투 오프 이벤투</span>
+<span style="color:#839496;">| 일레멘투 오프 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다지 오프 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투 오프 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
+<span style="color:#839496;">| 테크놀로지아 오프 테크놀로지아</span>
+<span style="color:#839496;">| 이덴치다지 오프 이덴치다지</span>
+<span style="color:#839496;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
+<span style="color:#839496;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
+<span style="color:#839496;">| 메이오암비엔치 오프 메이오암비엔치</span>
+<span style="color:#839496;">| 소시에다지 오프 소시에다지</span>
+<span style="color:#839496;">| 이스파수 오프 이스파수</span>
+<span style="color:#839496;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
+<span style="color:#839496;">| 콘테우도마두루 오프 콘테우도마두루</span>
+<span style="color:#839496;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
 
 </pre><p id = "para-166">아고라 테무스 웅 노부 치푸 프린시파우 샤마두 “콘테우도마두루”, 키 잉클루이 수브치푸스 코무 “헬라송이자두우타스”, “비올렌시아”, “테마솜브리우스”, “링구아제메스플리시타” 이 “콘테우도제슈아우”. 에시스 수브치푸스 아주당 아 아보르다르 테마스 마이스 마두루스 이 세리우스 나 나하치바, 프로포르시오난두 우마 마이오르 프로푼지다지 이 헤알리즈무 아우 만으와.</p>
 <p id = "para-167">잉클루인두 에시스 치푸스, 보세 포지 크리아르 우마 이스토리아 마이스 아트라엔치 파라 웅 푸블리쿠 아두우투, 이스플로란두 테마스 이 시투아송이스 마이스 콤플레샤스 이 데자피아도라스.</p>
 <h2 id = "link-28">아드 치페스 헬라테드 투 치미 트라베우, 포르 농-리네아리치</h2>
 <p id = "para-168">&lt; 파라 잉클루이르 치푸스 헬라시오나두스 아 비아젱스 누 템푸 이 낭-리네아리다지, 포데무스 아지시오나르 우스 세긴치스 수브치푸스:</p>
-<pre><span style="color:#323232;">치피 비아젬노템푸 =</span>
-<span style="color:#323232;">| 파사두</span>
-<span style="color:#323232;">| 푸투루</span>
-<span style="color:#323232;">| 헤알리다데아우테르나치바</span>
-<span style="color:#323232;">| 파라도쇼템포라우</span>
-<span style="color:#323232;">| 로프템포라우</span>
+<pre><span style="color:#839496;">치피 비아젬노템푸 =</span>
+<span style="color:#839496;">| 파사두</span>
+<span style="color:#839496;">| 푸투루</span>
+<span style="color:#839496;">| 헤알리다데아우테르나치바</span>
+<span style="color:#839496;">| 파라도쇼템포라우</span>
+<span style="color:#839496;">| 로프템포라우</span>
 
-<span style="color:#323232;">치피 마조르치피 =</span>
-<span style="color:#323232;">| 이벤투 오프 이벤투</span>
-<span style="color:#323232;">| 일레멘투 오프 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다지 오프 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투 오프 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
-<span style="color:#323232;">| 테크놀로지아 오프 테크놀로지아</span>
-<span style="color:#323232;">| 이덴치다지 오프 이덴치다지</span>
-<span style="color:#323232;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
-<span style="color:#323232;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
-<span style="color:#323232;">| 메이오암비엔치 오프 메이오암비엔치</span>
-<span style="color:#323232;">| 소시에다지 오프 소시에다지</span>
-<span style="color:#323232;">| 이스파수 오프 이스파수</span>
-<span style="color:#323232;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
-<span style="color:#323232;">| 콘테우도마두루 오프 콘테우도마두루</span>
-<span style="color:#323232;">| 비아젬노템푸 오프 비아젬노템푸</span>
-<span style="color:#323232;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
+<span style="color:#839496;">치피 마조르치피 =</span>
+<span style="color:#839496;">| 이벤투 오프 이벤투</span>
+<span style="color:#839496;">| 일레멘투 오프 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다지 오프 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투 오프 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
+<span style="color:#839496;">| 테크놀로지아 오프 테크놀로지아</span>
+<span style="color:#839496;">| 이덴치다지 오프 이덴치다지</span>
+<span style="color:#839496;">| 시스테마데이덴치다지 오프 시스테마데이덴치다지</span>
+<span style="color:#839496;">| 케스탕데이덴치다지 오프 케스탕데이덴치다지</span>
+<span style="color:#839496;">| 메이오암비엔치 오프 메이오암비엔치</span>
+<span style="color:#839496;">| 소시에다지 오프 소시에다지</span>
+<span style="color:#839496;">| 이스파수 오프 이스파수</span>
+<span style="color:#839496;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
+<span style="color:#839496;">| 콘테우도마두루 오프 콘테우도마두루</span>
+<span style="color:#839496;">| 비아젬노템푸 오프 비아젬노템푸</span>
+<span style="color:#839496;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
 
 </pre><p id = "para-169">아고라 테무스 웅 노부 치푸 프린시파우 샤마두 “비아젬노템푸”, 키 잉클루이 수브치푸스 코무 “파사두”, “푸투루”, “헤알리다데아우테르나치바”, “파라도쇼템포라우” 이 “로프템포라우”. 에시스 수브치푸스 페르미텡 이스플로라르 나하치바스 낭-리네아리스 이 아스 콤플레시다지스 아소시아다스 아스 비아젱스 누 템푸.</p>
 <p id = "para-170">잉클루인두 에시스 치푸스, 보세 포지 크리아르 이스토리아스 마이스 인트리간치스 이 인보우벤치스 키 데자피앙 아 페르세프상 리네아르 두 템푸 이 콘비당 우스 레이토리스 아 이스플로라르 지페렌치스 포시빌리다지스 이 콘세켄시아스.</p>
 <h2 id = "link-29">헤워르크 티 올리 모데우 위트 아 네 콘시지 베르시옹</h2>
 <p id = "para-171">&lt; 아키 이스타 우마 베르상 마이스 콘시자 두 모델루, 아그루판두 우스 수브치푸스 헬라시오나두스 잉 카테고리아스 암플라스:</p>
-<pre><span style="color:#323232;">치피 카테고리아 =</span>
-<span style="color:#323232;">| 이벤투</span>
-<span style="color:#323232;">| 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투</span>
-<span style="color:#323232;">| 테크놀로지아</span>
-<span style="color:#323232;">| 이덴치다지</span>
-<span style="color:#323232;">| 메이오암비엔치</span>
-<span style="color:#323232;">| 소시에다지</span>
-<span style="color:#323232;">| 이스파수</span>
-<span style="color:#323232;">| 헤알리다데비르투아우</span>
-<span style="color:#323232;">| 콘테우도마두루</span>
-<span style="color:#323232;">| 비아젬노템푸</span>
+<pre><span style="color:#839496;">치피 카테고리아 =</span>
+<span style="color:#839496;">| 이벤투</span>
+<span style="color:#839496;">| 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투</span>
+<span style="color:#839496;">| 테크놀로지아</span>
+<span style="color:#839496;">| 이덴치다지</span>
+<span style="color:#839496;">| 메이오암비엔치</span>
+<span style="color:#839496;">| 소시에다지</span>
+<span style="color:#839496;">| 이스파수</span>
+<span style="color:#839496;">| 헤알리다데비르투아우</span>
+<span style="color:#839496;">| 콘테우도마두루</span>
+<span style="color:#839496;">| 비아젬노템푸</span>
 
-<span style="color:#323232;">치피 수브카테고리아 =</span>
-<span style="color:#323232;">| 이벤투 오프 이벤투</span>
-<span style="color:#323232;">| 일레멘토마지쿠 오프 일레멘토마지쿠</span>
-<span style="color:#323232;">| 아빌리다데스페시아우 오프 아빌리다데스페시아우</span>
-<span style="color:#323232;">| 콘플리투 오프 콘플리투</span>
-<span style="color:#323232;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
-<span style="color:#323232;">| 테크놀로지아 오프 테크놀로지아</span>
-<span style="color:#323232;">| 이덴치다지 오프 이덴치다지</span>
-<span style="color:#323232;">| 메이오암비엔치 오프 메이오암비엔치</span>
-<span style="color:#323232;">| 소시에다지 오프 소시에다지</span>
-<span style="color:#323232;">| 이스파수 오프 이스파수</span>
-<span style="color:#323232;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
-<span style="color:#323232;">| 콘테우도마두루 오프 콘테우도마두루</span>
-<span style="color:#323232;">| 비아젬노템푸 오프 비아젬노템푸</span>
+<span style="color:#839496;">치피 수브카테고리아 =</span>
+<span style="color:#839496;">| 이벤투 오프 이벤투</span>
+<span style="color:#839496;">| 일레멘토마지쿠 오프 일레멘토마지쿠</span>
+<span style="color:#839496;">| 아빌리다데스페시아우 오프 아빌리다데스페시아우</span>
+<span style="color:#839496;">| 콘플리투 오프 콘플리투</span>
+<span style="color:#839496;">| 헬라시오나멘투 오프 헬라시오나멘투</span>
+<span style="color:#839496;">| 테크놀로지아 오프 테크놀로지아</span>
+<span style="color:#839496;">| 이덴치다지 오프 이덴치다지</span>
+<span style="color:#839496;">| 메이오암비엔치 오프 메이오암비엔치</span>
+<span style="color:#839496;">| 소시에다지 오프 소시에다지</span>
+<span style="color:#839496;">| 이스파수 오프 이스파수</span>
+<span style="color:#839496;">| 헤알리다데비르투아우 오프 헤알리다데비르투아우</span>
+<span style="color:#839496;">| 콘테우도마두루 오프 콘테우도마두루</span>
+<span style="color:#839496;">| 비아젬노템푸 오프 비아젬노템푸</span>
 
-<span style="color:#323232;">치피 마조르치피 =</span>
-<span style="color:#323232;">| 카테고리아 오프 카테고리아</span>
-<span style="color:#323232;">| 수브카테고리아 오프 수브카테고리아</span>
-<span style="color:#323232;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
+<span style="color:#839496;">치피 마조르치피 =</span>
+<span style="color:#839496;">| 카테고리아 오프 카테고리아</span>
+<span style="color:#839496;">| 수브카테고리아 오프 수브카테고리아</span>
+<span style="color:#839496;">| 콤포지상 오프 (마조르치피 * 마조르치피)</span>
 
 </pre><p id = "para-172">네스치 모델루 심플리피카두, 테무스 웅 우니쿠 치푸 “카테고리아” 키 잉클루이 토두스 우스 테마스 프린시파이스, 코무 “이벤투”, “일레멘토마지쿠”, “아빌리다데스페시아우”, “콘플리투”, “헬라시오나멘투”, “테크놀로지아”, “이덴치다지”, “메이오암비엔치”, “소시에다지”, “이스파수”, “헤알리다데비르투아우”, “콘테우도마두루” 이 “비아젬노템푸”.</p>
 <p id = "para-173">알렝 지수, 테무스 웅 치푸 “수브카테고리아” 키 데탈랴 카다 테마 프린시파우 잉 수브치푸스 마이스 이스페시피쿠스. 피나우멘치, 테무스 우 치푸 “마조르치피” 키 잉클루이 “카테고리아”, “수브카테고리아” 이 “콤포지상” 파라 페르미치르 아 콤비나상 지 테마스 이 수브테마스. 에사 아보르다젱 마이스 콘시자 토르나 우 모델루 마이스 파시우 지 인텐데르 이 트라발랴르.</p>

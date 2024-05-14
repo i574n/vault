@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,60 +613,62 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
   <p id = "para-1">The Sworn Book of Honorius: Liber Iuratus Honorii.pdf</p>
-<pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzaceawunvfcqiffrrgv2erm6ahi66sgdylefy2gobrlstetgsvesdogs#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+<pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzaceawunvfcqiffrrgv2erm6ahi66sgdylefy2gobrlstetgsvesdogs#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
 </pre><p id = "para-2">Grimorium Verum.pdf</p>
-<pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzacecvyzt2oeqsfkadspefoluayvzenjmjlxrx32dle6uzslyangztjo</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+<pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzacecvyzt2oeqsfkadspefoluayvzenjmjlxrx32dle6uzslyangztjo</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigvcl62hrmmxumhrluxjamopjhwhldy3kzbit2xxfwj7eqwltgoca.ipfs.nftstorage.link/Grimorium%20Verum%20pt-br.pdf</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigvcl62hrmmxumhrluxjamopjhwhldy3kzbit2xxfwj7eqwltgoca.ipfs.nftstorage.link/Grimorium%20Verum%20pt-br.pdf</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
 </pre><p id = "para-3">PICATRIX A MEDIEVAL TREATISE ON ASTRAL MAGIC.pdf</p>
-<pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzacecdmdzuixxni7lhd6rrzei2mjcsdaitsllpn7unljsuz34uouhn32</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+<pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzacecdmdzuixxni7lhd6rrzei2mjcsdaitsllpn7unljsuz34uouhn32</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
 </pre><p id = "para-4">Ars Notoria.pdf</p>
-<pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzaced7ezcnguredfa6qzoves7gjlp76tq3se6l6a77a6omb4sqcsc4sk</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+<pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzaced7ezcnguredfa6qzoves7gjlp76tq3se6l6a77a6omb4sqcsc4sk</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigibxslwpxljvs6apwsutighqepbnx2w5ggnhmgpxfhyz4sl3nfee.ipfs.nftstorage.link/Grimorio%20Da%20Grande%20Gaya.pdf</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigibxslwpxljvs6apwsutighqepbnx2w5ggnhmgpxfhyz4sl3nfee.ipfs.nftstorage.link/Grimorio%20Da%20Grande%20Gaya.pdf</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeid6szghmh4kjaroeyazrnkocwfdj6msfly6aisu3huopzgjhqi5na.ipfs.nftstorage.link/O-Martelo-das-Feiticeiras-Heinrich-Kramer.pdf</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeid6szghmh4kjaroeyazrnkocwfdj6msfly6aisu3huopzgjhqi5na.ipfs.nftstorage.link/O-Martelo-das-Feiticeiras-Heinrich-Kramer.pdf</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiegobsuptxxsnqmqdz3efsqbrwazju2z52gmwurilrk5gbnbudz3a.ipfs.nftstorage.link/Escrita%20Magica-divina-rubens-saraceni.pdf</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiegobsuptxxsnqmqdz3efsqbrwazju2z52gmwurilrk5gbnbudz3a.ipfs.nftstorage.link/Escrita%20Magica-divina-rubens-saraceni.pdf</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidhc6lpnztvqn3nsrf53ilznzwdrsxwthp6xwpodvnnn74y6y4d7q.ipfs.nftstorage.link/As%20100%20Lendas%20do%20Folclore%20brasilei%20-%20A.S%20Franchini.pdf</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidhc6lpnztvqn3nsrf53ilznzwdrsxwthp6xwpodvnnn74y6y4d7q.ipfs.nftstorage.link/As%20100%20Lendas%20do%20Folclore%20brasilei%20-%20A.S%20Franchini.pdf</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibhuec2rdqucdysycwyhzjbr5nnfcthoq5fcwraihcbsoo6df5xoi.ipfs.nftstorage.link/DICIONRIO%20DEMONOLOGIA.pdf</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibhuec2rdqucdysycwyhzjbr5nnfcthoq5fcwraihcbsoo6df5xoi.ipfs.nftstorage.link/DICIONRIO%20DEMONOLOGIA.pdf</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihu3uefmyukblbrvmwvtigxwmxihkjs4hjjosfoc73mb2uophdscu.ipfs.dweb.link/?filename=Papus+-+Tratado+elementar+de+magia+pr%C3%A1tica.pdf#page=1</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:50vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihu3uefmyukblbrvmwvtigxwmxihkjs4hjjosfoc73mb2uophdscu.ipfs.dweb.link/?filename=Papus+-+Tratado+elementar+de+magia+pr%C3%A1tica.pdf#page=1</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:50vh</span>
 
 </pre><p class = "rule">***</p>
 

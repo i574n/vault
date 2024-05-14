@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,9 +613,11 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -618,71 +674,71 @@ function toggle() {
 
 
 </pre><p id = "para-1">All open tasks that are due today:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due today</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due today</span>
 
 </pre><p id = "para-2">All open tasks that are due within the next two weeks, but are not overdue (due today or later):</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due after yesterday</span>
-<span style="color:#323232;">due before in two weeks</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due after yesterday</span>
+<span style="color:#839496;">due before in two weeks</span>
 
 </pre><p id = "para-3">All open tasks that are due within the next two weeks, and either have the #inbox tag, or are in an Inbox note:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">(due after yesterday) AND (due before in two weeks)</span>
-<span style="color:#323232;">(tags include #inbox) OR (path includes Inbox)</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">(due after yesterday) AND (due before in two weeks)</span>
+<span style="color:#839496;">(tags include #inbox) OR (path includes Inbox)</span>
 
 </pre><p id = "para-4">All open tasks due during the next calendar month but not scheduled:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due next month</span>
-<span style="color:#323232;">not scheduled</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due next month</span>
+<span style="color:#839496;">not scheduled</span>
 
 </pre><p id = "para-5">All done tasks that are anywhere in the vault under a tasks heading (e.g. ## Tasks):</p>
-<pre><span style="color:#323232;">done</span>
-<span style="color:#323232;">heading includes tasks</span>
+<pre><span style="color:#839496;">done</span>
+<span style="color:#839496;">heading includes tasks</span>
 
 </pre><p id = "para-6">All tasks done this calendar month but that were due or scheduled on the month before:</p>
-<pre><span style="color:#323232;">(due last month) OR (scheduled last month)</span>
-<span style="color:#323232;">done this month</span>
+<pre><span style="color:#839496;">(due last month) OR (scheduled last month)</span>
+<span style="color:#839496;">done this month</span>
 
 </pre><p id = "para-7">Show all tasks that aren’t done, are due on the 9th of April 2021, and where the path includes GitHub:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due on 2021-04-09</span>
-<span style="color:#323232;">path includes GitHub</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due on 2021-04-09</span>
+<span style="color:#839496;">path includes GitHub</span>
 
 </pre><p id = "para-8">Show all open tasks that are due in a two week range inclusively, hide the due date and edit button:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due 2021-05-01 2021-05-14</span>
-<span style="color:#323232;">hide due date</span>
-<span style="color:#323232;">hide edit button</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due 2021-05-01 2021-05-14</span>
+<span style="color:#839496;">hide due date</span>
+<span style="color:#839496;">hide edit button</span>
 
 </pre><p id = "para-9">Show all tasks that were done before the 1st of December 2020:</p>
-<pre><span style="color:#323232;">done before 2020-12-01</span>
+<pre><span style="color:#839496;">done before 2020-12-01</span>
 
 </pre><p id = "para-10">Show all tasks scheduled for this quarter and that have a tag:</p>
-<pre><span style="color:#323232;">scheduled this quarter</span>
-<span style="color:#323232;">has tags</span>
+<pre><span style="color:#839496;">scheduled this quarter</span>
+<span style="color:#839496;">has tags</span>
 
 </pre><p id = "para-11">Show one task that is due on the 5th of May and includes #prio1 in its description:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due on 2021-05-05</span>
-<span style="color:#323232;">description includes #prio1</span>
-<span style="color:#323232;">limit to 1 tasks</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due on 2021-05-05</span>
+<span style="color:#839496;">description includes #prio1</span>
+<span style="color:#839496;">limit to 1 tasks</span>
 
 </pre><p id = "para-12">All open tasks that are due today or earlier, sorted by due date, then grouped together by the folder containing the task:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">due before tomorrow</span>
-<span style="color:#323232;">sort by due</span>
-<span style="color:#323232;">group by folder</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">due before tomorrow</span>
+<span style="color:#839496;">sort by due</span>
+<span style="color:#839496;">group by folder</span>
 
 </pre><p id = "para-13">All open tasks that begin with a time stamp in HH:mm format, followed by any white space character:</p>
-<pre><span style="color:#323232;">not done</span>
-<span style="color:#323232;">description regex matches /^[012][0-9]:[0-5][0-9]\s/</span>
+<pre><span style="color:#839496;">not done</span>
+<span style="color:#839496;">description regex matches /^[012][0-9]:[0-5][0-9]\s/</span>
 
 </pre><p class = "rule">***</p>
-<pre><span style="color:#323232;">due date is before 2022-10-22 (Saturday 22nd October 2022)</span>
-<span style="color:#323232;">is recurring</span>
+<pre><span style="color:#839496;">due date is before 2022-10-22 (Saturday 22nd October 2022)</span>
+<span style="color:#839496;">is recurring</span>
 
-</pre><pre><span style="color:#323232;">scheduled date is after 2020-10-21 OR no start date</span>
+</pre><pre><span style="color:#839496;">scheduled date is after 2020-10-21 OR no start date</span>
 
 </pre>
 </div>

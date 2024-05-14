@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -640,6 +695,7 @@ function toggle() {
       <li><a href="#link-77">for each item, give one example and one trivia</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -647,44 +703,47 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=&lt;ID&gt;</span>
+  <pre><span style="color:#839496;">yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=&lt;ID&gt;</span>
 
-<span style="color:#323232;">---</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">for file in ./*\&#39;*.mp3; do mv &quot;$file&quot; &quot;${file//\&#39;/}&quot;; done</span>
+<span style="color:#839496;">for file in ./*\&#39;*.mp3; do mv &quot;$file&quot; &quot;${file//\&#39;/}&quot;; done</span>
 
-<span style="color:#323232;">for i in *.mp3; do echo &quot;file &#39;$i&#39;&quot; &gt;&gt; files.txt; done</span>
-<span style="color:#323232;">ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3</span>
-<span style="color:#323232;">rm files.txt</span>
+<span style="color:#839496;">for i in *.mp3; do echo &quot;file &#39;$i&#39;&quot; &gt;&gt; files.txt; done</span>
+<span style="color:#839496;">ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3</span>
+<span style="color:#839496;">rm files.txt</span>
 
-<span style="color:#323232;">---</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">declare -A files_map</span>
+<span style="color:#839496;">declare -A files_map</span>
 
-<span style="color:#323232;">for file in ./*\&#39;*.mp3; do</span>
-<span style="color:#323232;">    new_file=&quot;${file//\&#39;/}&quot;</span>
-<span style="color:#323232;">    mv &quot;$file&quot; &quot;$new_file&quot;</span>
-<span style="color:#323232;">    files_map[&quot;$new_file&quot;]=&quot;$file&quot;</span>
-<span style="color:#323232;">    echo &quot;file &#39;$new_file&#39;&quot; &gt;&gt; files.txt</span>
-<span style="color:#323232;">done</span>
+<span style="color:#839496;">for file in ./*\&#39;*.mp3; do</span>
+<span style="color:#839496;">    new_file=&quot;${file//\&#39;/}&quot;</span>
+<span style="color:#839496;">    mv &quot;$file&quot; &quot;$new_file&quot;</span>
+<span style="color:#839496;">    files_map[&quot;$new_file&quot;]=&quot;$file&quot;</span>
+<span style="color:#839496;">    echo &quot;file &#39;$new_file&#39;&quot; &gt;&gt; files.txt</span>
+<span style="color:#839496;">done</span>
 
-<span style="color:#323232;">ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3</span>
+<span style="color:#839496;">ffmpeg -f concat -safe 0 -i files.txt -c copy output.mp3</span>
 
-<span style="color:#323232;">for new_file in &quot;${!files_map[@]}&quot;; do</span>
-<span style="color:#323232;">    mv &quot;$new_file&quot; &quot;${files_map[$new_file]}&quot;</span>
-<span style="color:#323232;">done</span>
+<span style="color:#839496;">for new_file in &quot;${!files_map[@]}&quot;; do</span>
+<span style="color:#839496;">    mv &quot;$new_file&quot; &quot;${files_map[$new_file]}&quot;</span>
+<span style="color:#839496;">done</span>
 
-<span style="color:#323232;">rm files.txt</span>
+<span style="color:#839496;">rm files.txt</span>
 
 
 
@@ -1414,34 +1473,34 @@ function toggle() {
 <h2 id = "link-48">to achieve the desired track, list some function combinations that might be important in the structure</h2>
 <p id = "para-200">To create a 180 BPM hi-tech psytrance track in TidalCycles, you will want to utilize various functions and their combinations to generate intricate rhythms, melodies, and sound manipulations. Here are some function combinations that might be essential in building your track:</p>
 <p id = "para-201">Setting BPM:</p>
-<pre><span style="color:#323232;">setcps (</span><span style="color:#0086b3;">180</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#0086b3;">60</span><span style="font-weight:bold;color:#a71d5d;">/</span><span style="color:#0086b3;">4</span><span style="color:#323232;">)</span>
+<pre><span style="color:#839496;">setcps (</span><span style="color:#6c71c4;">180</span><span style="color:#859900;">/</span><span style="color:#6c71c4;">60</span><span style="color:#859900;">/</span><span style="color:#6c71c4;">4</span><span style="color:#839496;">)</span>
 
 </pre><p id = "para-202">Layering multiple patterns using stack:</p>
-<pre><span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> stack [</span>
-<span style="color:#323232;">    s </span><span style="color:#183691;">&quot;bd(3,8)&quot;</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    s </span><span style="color:#183691;">&quot;sn(5,16)&quot;</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    s </span><span style="color:#183691;">&quot;hh*4(3,8)&quot;</span>
-<span style="color:#323232;">]</span>
+<pre><span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> stack [</span>
+<span style="color:#839496;">    s &quot;</span><span style="color:#2aa198;">bd(3,8)</span><span style="color:#839496;">&quot;,</span>
+<span style="color:#839496;">    s &quot;</span><span style="color:#2aa198;">sn(5,16)</span><span style="color:#839496;">&quot;,</span>
+<span style="color:#839496;">    s &quot;</span><span style="color:#2aa198;">hh*4(3,8)</span><span style="color:#839496;">&quot;</span>
+<span style="color:#839496;">]</span>
 
 </pre><p id = "para-203">Combining patterns with different transformations using jux and rev:</p>
-<pre><span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> jux (rev) </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bd(3,8) sn&quot;</span>
+<pre><span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> jux (rev) </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bd(3,8) sn</span><span style="color:#839496;">&quot;</span>
 
 </pre><p id = "para-204">Applying time transformations using fast, slow, and density:</p>
-<pre><span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> slow </span><span style="color:#0086b3;">2 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bd*2 sn*4&quot;</span>
-<span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> fast </span><span style="color:#0086b3;">4 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;hh*8 cp*4&quot;</span>
-<span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> density </span><span style="color:#0086b3;">2 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bass*4 arpy*2&quot;</span>
+<pre><span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> slow </span><span style="color:#6c71c4;">2 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bd*2 sn*4</span><span style="color:#839496;">&quot;</span>
+<span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> fast </span><span style="color:#6c71c4;">4 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">hh*8 cp*4</span><span style="color:#839496;">&quot;</span>
+<span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> density </span><span style="color:#6c71c4;">2 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bass*4 arpy*2</span><span style="color:#839496;">&quot;</span>
 
 </pre><p id = "para-205">Modulating parameters with control patterns using |+|, |*|, and |&gt;|:</p>
-<pre><span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bass(3,8)&quot; </span><span style="font-weight:bold;color:#a71d5d;">|+|</span><span style="color:#323232;"> n </span><span style="color:#183691;">&quot;0 3 -1 2&quot; </span><span style="font-weight:bold;color:#a71d5d;">|</span><span style="color:#323232;">*</span><span style="font-weight:bold;color:#a71d5d;">|</span><span style="color:#323232;"> gain </span><span style="color:#183691;">&quot;0.8 1 0.7&quot;</span>
+<pre><span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bass(3,8)</span><span style="color:#839496;">&quot; </span><span style="color:#859900;">|+|</span><span style="color:#839496;"> n &quot;</span><span style="color:#2aa198;">0 3 -1 2</span><span style="color:#839496;">&quot; </span><span style="color:#859900;">|</span><span style="color:#839496;">*</span><span style="color:#859900;">|</span><span style="color:#839496;"> gain &quot;</span><span style="color:#2aa198;">0.8 1 0.7</span><span style="color:#839496;">&quot;</span>
 
-</pre><pre><span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bass*2&quot;</span><span style="color:#323232;"> # speed (choose [</span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1.5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0.5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">])</span>
-<span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;arpy(5,16)&quot;</span><span style="color:#323232;"> # pan (rand)</span>
-<span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;sn*4&quot;</span><span style="color:#323232;"> # gain (shuffle [</span><span style="color:#0086b3;">0.7</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0.8</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0.9</span><span style="color:#323232;">])</span>
+</pre><pre><span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bass*2</span><span style="color:#839496;">&quot; # speed (choose [</span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1.5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0.5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">])</span>
+<span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">arpy(5,16)</span><span style="color:#839496;">&quot; # pan (rand)</span>
+<span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">sn*4</span><span style="color:#839496;">&quot; # gain (shuffle [</span><span style="color:#6c71c4;">0.7</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0.8</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0.9</span><span style="color:#839496;">])</span>
 
 </pre><p id = "para-206">Applying conditional transformations with functions like whenmod, every, and while:</p>
-<pre><span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> every </span><span style="color:#0086b3;">4</span><span style="color:#323232;"> (fast </span><span style="color:#0086b3;">2</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bd*2 sn*4&quot;</span>
-<span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> whenmod </span><span style="color:#0086b3;">8 3</span><span style="color:#323232;"> (</span><span style="font-weight:bold;color:#a71d5d;">|+|</span><span style="color:#323232;"> n </span><span style="color:#183691;">&quot;12&quot;</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;bass*4&quot;</span>
-<span style="color:#323232;">d1 </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> while (</span><span style="font-weight:bold;color:#a71d5d;">|&lt;|</span><span style="color:#323232;"> gain </span><span style="color:#183691;">&quot;0.7&quot;</span><span style="color:#323232;">) (# speed </span><span style="color:#0086b3;">2</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">$</span><span style="color:#323232;"> s </span><span style="color:#183691;">&quot;arpy*2&quot;</span>
+<pre><span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> every </span><span style="color:#6c71c4;">4</span><span style="color:#839496;"> (fast </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">) </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bd*2 sn*4</span><span style="color:#839496;">&quot;</span>
+<span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> whenmod </span><span style="color:#6c71c4;">8 3</span><span style="color:#839496;"> (</span><span style="color:#859900;">|+|</span><span style="color:#839496;"> n &quot;</span><span style="color:#2aa198;">12</span><span style="color:#839496;">&quot;) </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">bass*4</span><span style="color:#839496;">&quot;</span>
+<span style="color:#839496;">d1 </span><span style="color:#859900;">$</span><span style="color:#839496;"> while (</span><span style="color:#859900;">|&lt;|</span><span style="color:#839496;"> gain &quot;</span><span style="color:#2aa198;">0.7</span><span style="color:#839496;">&quot;) (# speed </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">) </span><span style="color:#859900;">$</span><span style="color:#839496;"> s &quot;</span><span style="color:#2aa198;">arpy*2</span><span style="color:#839496;">&quot;</span>
 
 </pre><p id = "para-207">By combining these functions and experimenting with different patterns and parameters, you can create a complex, hi-tech psytrance track with TidalCycles. Remember that TidalCycles is a live coding environment, so feel free to tweak, modify, and explore these function combinations in real-time to achieve the desired sound.</p>
 <p class = "rule">***</p>
@@ -1558,15 +1617,15 @@ function toggle() {
 <h2 id = "link-57">try to provide an initial sample using gleam’s discriminated union relationships and axon</h2>
 <p id = "para-268">&lt; Na data do meu treinamento (setembro de 2021), Gleam ainda está em estágios iniciais de desenvolvimento e tem interoperabilidade com Elixir e Erlang, mas as bibliotecas em Elixir como Axon não têm tipagem específica para Gleam. Além disso, Gleam não suporta diretamente manipulações complexas de matrizes ou tensores, que são necessárias para a maioria dos cálculos de aprendizado profundo.</p>
 <p id = "para-269">No entanto, é possível representar tipos mais complexos e suas relações na Gleam usando uniões discriminadas. Aqui está um exemplo muito simplificado de como você poderia representar um neurônio em uma rede neural:</p>
-<pre><span style="color:#323232;">  = Sigmoid</span>
-<span style="color:#323232;">  | ReLU</span>
-<span style="color:#323232;">  | Tanh</span>
+<pre><span style="color:#839496;">  = Sigmoid</span>
+<span style="color:#839496;">  | ReLU</span>
+<span style="color:#839496;">  | Tanh</span>
 
-<span style="color:#323232;">type Neuron =</span>
-<span style="color:#323232;">  { weights: List(Float)</span>
-<span style="color:#323232;">  , bias: Float</span>
-<span style="color:#323232;">  , activation: ActivationFunction</span>
-<span style="color:#323232;">  }</span>
+<span style="color:#839496;">type Neuron =</span>
+<span style="color:#839496;">  { weights: List(Float)</span>
+<span style="color:#839496;">  , bias: Float</span>
+<span style="color:#839496;">  , activation: ActivationFunction</span>
+<span style="color:#839496;">  }</span>
 
 </pre><p id = "para-270">Neste exemplo, <code>ActivationFunction</code> é uma união discriminada que representa as diferentes funções de ativação que um neurônio pode ter. O <code>Neuron</code> é um tipo de registro que representa um neurônio em uma rede neural, incluindo seus pesos, bias e a função de ativação que usa.</p>
 <p id = "para-271">Note que este é um exemplo extremamente simplificado e uma implementação real de redes neurais em Gleam provavelmente exigiria uma abstração muito mais complexa.</p>
@@ -1574,29 +1633,29 @@ function toggle() {
 <h2 id = "link-58">provide an initial sample for a core part using axon and elixir’s multi clause functions only</h2>
 <p id = "para-273">&lt; Axon é uma biblioteca para Deep Learning escrita em Elixir. Aqui está um exemplo simples de como definir e treinar uma rede neural usando Axon. Neste exemplo, vamos considerar a tarefa de classificação binária.</p>
 <p id = "para-274">Primeiro, precisamos definir a arquitetura da nossa rede:</p>
-<pre><span style="color:#323232;">defmodule ExampleNN do</span>
-<span style="color:#323232;">  use Axon.Model</span>
+<pre><span style="color:#839496;">defmodule ExampleNN do</span>
+<span style="color:#839496;">  use Axon.Model</span>
 
-<span style="color:#323232;">  def init(_params) do</span>
-<span style="color:#323232;">    Axon.input({nil, 784})</span>
-<span style="color:#323232;">    |&gt; Axon.dense(128, activation: :relu)</span>
-<span style="color:#323232;">    |&gt; Axon.dense(64, activation: :relu)</span>
-<span style="color:#323232;">    |&gt; Axon.dense(1, activation: :sigmoid)</span>
-<span style="color:#323232;">  end</span>
-<span style="color:#323232;">end</span>
+<span style="color:#839496;">  def init(_params) do</span>
+<span style="color:#839496;">    Axon.input({nil, 784})</span>
+<span style="color:#839496;">    |&gt; Axon.dense(128, activation: :relu)</span>
+<span style="color:#839496;">    |&gt; Axon.dense(64, activation: :relu)</span>
+<span style="color:#839496;">    |&gt; Axon.dense(1, activation: :sigmoid)</span>
+<span style="color:#839496;">  end</span>
+<span style="color:#839496;">end</span>
 
 </pre><p id = "para-275">Aqui definimos uma rede com duas camadas ocultas com ativação ReLU e uma camada de saída com ativação sigmóide.</p>
 <p id = "para-276">Depois, podemos definir funções para treinar a nossa rede:</p>
-<pre><span style="color:#323232;">def train(network, {inputs, targets}) do</span>
-<span style="color:#323232;">  {params, _} = Nx.Defn.grad(network, &amp;Axon.Losses.binary_crossentropy(targets, &amp;1))</span>
-<span style="color:#323232;">  {inputs, targets, params}</span>
-<span style="color:#323232;">end</span>
+<pre><span style="color:#839496;">def train(network, {inputs, targets}) do</span>
+<span style="color:#839496;">  {params, _} = Nx.Defn.grad(network, &amp;Axon.Losses.binary_crossentropy(targets, &amp;1))</span>
+<span style="color:#839496;">  {inputs, targets, params}</span>
+<span style="color:#839496;">end</span>
 
-<span style="color:#323232;">def loop(network, data) do</span>
-<span style="color:#323232;">  for _ &lt;- 1..100 do</span>
-<span style="color:#323232;">    Enum.reduce(data, network, &amp;train/2)</span>
-<span style="color:#323232;">  end</span>
-<span style="color:#323232;">end</span>
+<span style="color:#839496;">def loop(network, data) do</span>
+<span style="color:#839496;">  for _ &lt;- 1..100 do</span>
+<span style="color:#839496;">    Enum.reduce(data, network, &amp;train/2)</span>
+<span style="color:#839496;">  end</span>
+<span style="color:#839496;">end</span>
 
 </pre><p id = "para-277">Neste código, <code>train/2</code> recebe a rede e um conjunto de entradas e alvos, e calcula o gradiente da função de perda (neste caso, a entropia cruzada binária) em relação aos parâmetros da rede. <code>loop/2</code> executa o treinamento por 100 épocas.</p>
 <p id = "para-278">Observe que este é um exemplo muito simplificado e não inclui várias partes importantes do treinamento de uma rede neural na prática, como a divisão de dados em lotes, a utilização de um otimizador para atualizar os parâmetros da rede, a validação do modelo em um conjunto de dados de teste, etc.</p>
@@ -1630,43 +1689,43 @@ function toggle() {
 <p id = "para-294">Quanto à arquitetura que poderia ser mais difícil, mas mais recompensadora para implementar usando uniões discriminadas, provavelmente seria algo como um modelo Transformer. Os Transformers envolvem uma complexidade significativa, com várias partes diferentes (camadas de atenção, redes feed-forward, camadas de normalização, etc.) que podem ser modeladas como variantes em uma união discriminada. No entanto, os Transformers também provaram ser muito eficazes para uma ampla gama de tarefas de aprendizado de máquina, por isso, apesar da complexidade de sua implementação, eles podem ser bastante recompensadores em termos de desempenho do modelo.</p>
 <h2 id = "link-61">detail the most intricate enum of the transformer model for such albums task (omit the type definition of the adjacent types and onward for later, but if there’s recursion try to leave a comment)</h2>
 <p id = "para-295">&lt; Vamos considerar uma simplificação de alto nível da arquitetura Transformer e como ela poderia ser representada em Rust usando enums. Isso é apenas uma representação ilustrativa e uma implementação real seria muito mais complexa.</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Layer {</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Other layer types might be added here</span>
-<span style="color:#323232;">    Transformer(TransformerLayer)</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Layer </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Other layer types might be added here</span>
+<span style="color:#839496;">    Transformer</span><span style="color:#657b83;">(</span><span style="color:#839496;">TransformerLayer</span><span style="color:#657b83;">)</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">TransformerLayer {</span>
-<span style="color:#323232;">    EncoderLayer(EncoderLayer),</span>
-<span style="color:#323232;">    DecoderLayer(DecoderLayer),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">TransformerLayer </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    EncoderLayer</span><span style="color:#657b83;">(</span><span style="color:#839496;">EncoderLayer</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    DecoderLayer</span><span style="color:#657b83;">(</span><span style="color:#839496;">DecoderLayer</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">struct </span><span style="color:#323232;">EncoderLayer {</span>
-<span style="color:#323232;">    self_attn: MultiHeadAttention,</span>
-<span style="color:#323232;">    feed_forward: PositionWiseFeedForward,</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// SubLayerConnection for each of the above</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">struct </span><span style="color:#b58900;">EncoderLayer </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">self_attn</span><span style="color:#839496;">: MultiHeadAttention,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">feed_forward</span><span style="color:#839496;">: PositionWiseFeedForward,</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// SubLayerConnection for each of the above</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// ...</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">struct </span><span style="color:#323232;">DecoderLayer {</span>
-<span style="color:#323232;">    self_attn: MultiHeadAttention,</span>
-<span style="color:#323232;">    cross_attn: MultiHeadAttention,</span>
-<span style="color:#323232;">    feed_forward: PositionWiseFeedForward,</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// SubLayerConnection for each of the above</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">struct </span><span style="color:#b58900;">DecoderLayer </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">self_attn</span><span style="color:#839496;">: MultiHeadAttention,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cross_attn</span><span style="color:#839496;">: MultiHeadAttention,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">feed_forward</span><span style="color:#839496;">: PositionWiseFeedForward,</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// SubLayerConnection for each of the above</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// ...</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">struct </span><span style="color:#323232;">MultiHeadAttention {</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Q, K, V linear layers, output linear layer,</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// and attention mechanism (like ScaledDotProductAttention)</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">struct </span><span style="color:#b58900;">MultiHeadAttention </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Q, K, V linear layers, output linear layer,</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// and attention mechanism (like ScaledDotProductAttention)</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// ...</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">struct </span><span style="color:#323232;">PositionWiseFeedForward {</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Two linear layers and an activation function in between</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">struct </span><span style="color:#b58900;">PositionWiseFeedForward </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Two linear layers and an activation function in between</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// ...</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Other struct definitions...</span>
+<span style="color:#586e75;">// Other struct definitions...</span>
 
 </pre><p id = "para-296">Neste exemplo, um <code>Layer</code> é um enum que pode representar vários tipos diferentes de camadas. Neste caso, estamos apenas considerando <code>TransformerLayer</code>, que pode ser ou uma <code>EncoderLayer</code> ou uma <code>DecoderLayer</code>.</p>
 <p id = "para-297"><code>EncoderLayer</code> e <code>DecoderLayer</code> são structs que contêm as partes constituintes das camadas do codificador e decodificador do Transformer, respectivamente. Ambas contêm um <code>MultiHeadAttention</code> e um <code>PositionWiseFeedForward</code>, e o <code>DecoderLayer</code> contém um <code>MultiHeadAttention</code> adicional para a atenção cruzada entre as saídas do codificador e as entradas do decodificador.</p>
@@ -1790,50 +1849,50 @@ function toggle() {
 <p id = "para-368">Finally, it’s worth noting that Near Protocol is designed to be more scalable and efficient than many other blockchains, and it uses a sharded, proof-of-stake model to achieve high throughput and low transaction fees. This makes it a suitable choice for a project like a generative album.</p>
 <h2 id = "link-71">provide an initial mvp sample using rust with only the sales part, focusing the discriminated union relationships in such business logic</h2>
 <p id = "para-369">&lt; Below is a minimal smart contract in Rust focusing only on the sales part of a generative album. It’s a rough template, and you would need to expand this according to your specific needs. In particular, note that the real-world smart contract should handle more safety checks and edge cases.</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};</span>
-<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">near_sdk::{near_bindgen, AccountId, Balance, Promise};</span>
+<pre><span style="color:#859900;">use </span><span style="color:#839496;">near_sdk::borsh::</span><span style="color:#657b83;">{</span><span style="color:#d33682;">self</span><span style="color:#839496;">, BorshDeserialize, BorshSerialize</span><span style="color:#657b83;">}</span><span style="color:#839496;">;</span>
+<span style="color:#859900;">use </span><span style="color:#839496;">near_sdk::</span><span style="color:#657b83;">{</span><span style="color:#839496;">near_bindgen, AccountId, Balance, Promise</span><span style="color:#657b83;">}</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">#[near_bindgen]</span>
-<span style="color:#323232;">#[derive(BorshDeserialize, BorshSerialize)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Album {</span>
-<span style="color:#323232;">    owner_id: AccountId,</span>
-<span style="color:#323232;">    price_per_track: Balance,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">near_bindgen</span><span style="color:#657b83;">]</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">BorshDeserialize, BorshSerialize</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Album </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">owner_id</span><span style="color:#839496;">: AccountId,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">price_per_track</span><span style="color:#839496;">: Balance,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">#[near_bindgen]</span>
-<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Album {</span>
-<span style="color:#323232;">    #[init]</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(owner_id: AccountId, price_per_track: Balance) -&gt; </span><span style="font-weight:bold;color:#a71d5d;">Self </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">Self </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">            owner_id,</span>
-<span style="color:#323232;">            price_per_track,</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">near_bindgen</span><span style="color:#657b83;">]</span>
+<span style="color:#268bd2;">impl </span><span style="color:#b58900;">Album </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    #</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">init</span><span style="color:#657b83;">]</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">new</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">owner_id</span><span style="color:#839496;">: AccountId, </span><span style="color:#268bd2;">price_per_track</span><span style="color:#839496;">: Balance</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; </span><span style="color:#268bd2;">Self </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">Self </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            owner_id,</span>
+<span style="color:#839496;">            price_per_track,</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">purchase_track</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, buyer_id: AccountId, track_id: </span><span style="font-weight:bold;color:#a71d5d;">u64</span><span style="color:#323232;">) -&gt; Promise {</span>
-<span style="color:#323232;">        assert!(</span><span style="font-style:italic;color:#969896;">/* Track exists and is available for purchase */</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">        Promise::new(self.owner_id.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">())</span>
-<span style="color:#323232;">            .</span><span style="color:#62a35c;">transfer</span><span style="color:#323232;">(self.price_per_track)</span>
-<span style="color:#323232;">        </span><span style="font-style:italic;color:#969896;">/* Add functionality to transfer ownership of the track to the buyer */</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">purchase_track</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut </span><span style="color:#268bd2;">self</span><span style="color:#839496;">, </span><span style="color:#268bd2;">buyer_id</span><span style="color:#839496;">: AccountId, </span><span style="color:#268bd2;">track_id</span><span style="color:#839496;">: </span><span style="color:#268bd2;">u64</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Promise </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">assert!</span><span style="color:#657b83;">(</span><span style="color:#586e75;">/* Track exists and is available for purchase */</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        Promise::new</span><span style="color:#657b83;">(</span><span style="color:#d33682;">self</span><span style="color:#839496;">.owner_id.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">())</span>
+<span style="color:#839496;">            .</span><span style="color:#859900;">transfer</span><span style="color:#657b83;">(</span><span style="color:#d33682;">self</span><span style="color:#839496;">.price_per_track</span><span style="color:#657b83;">)</span>
+<span style="color:#839496;">        </span><span style="color:#586e75;">/* Add functionality to transfer ownership of the track to the buyer */</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">/* Getter methods would go here */</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">/* Getter methods would go here */</span>
+<span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">#[cfg(test)]</span>
-<span style="font-weight:bold;color:#a71d5d;">mod </span><span style="color:#323232;">tests {</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">/* Add your tests here */</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">cfg</span><span style="color:#657b83;">(</span><span style="color:#839496;">test</span><span style="color:#657b83;">)]</span>
+<span style="color:#268bd2;">mod </span><span style="color:#b58900;">tests </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">/* Add your tests here */</span>
+<span style="color:#657b83;">}</span>
 
 
 </pre><p id = "para-370">This contract only includes the basic sale functionality where someone can purchase a track by calling the <code>purchase_track</code> method. The balance is then transferred to the owner’s account. It is assumed that there’s a way to check if the track exists and is available for purchase (which you should implement), and also a way to transfer ownership of the track to the buyer.</p>
 <p id = "para-371">The <code>#[init]</code> attribute is used to denote the constructor method which initializes the contract.</p>
 <p id = "para-372">The discriminated union in Rust is <code>enum</code>. For this case, we didn’t need it but if you have a requirement where you need to have a type which can have several different variants, then you can use the <code>enum</code> keyword.</p>
 <p id = "para-373">For example, suppose you had different kinds of albums in your marketplace, like a single track album and a multiple tracks album, you can model that using an enum:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">AlbumType {</span>
-<span style="color:#323232;">    SingleTrack(Track),</span>
-<span style="color:#323232;">    MultipleTracks(Vec&lt;Track&gt;),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#268bd2;">enum </span><span style="color:#b58900;">AlbumType </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    SingleTrack</span><span style="color:#657b83;">(</span><span style="color:#839496;">Track</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    MultipleTracks</span><span style="color:#657b83;">(</span><span style="color:#839496;">Vec&lt;Track&gt;</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-374">Remember that building a smart contract requires a good understanding of blockchain technology and programming, and it’s always recommended to have any smart contract audited for security vulnerabilities before deploying it.</p>
 <h2 id = "link-72">keep outputting in pt-br. considering the cranky state of the music industry, with many oddities like ‘single track albums’, detail other things that could be nitpicked as additional complexity for such contract in order to adhere to retro compatibility</h2>

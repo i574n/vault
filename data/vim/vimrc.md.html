@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,167 +613,169 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">function! VisualSearch(direction)</span>
-<span style="color:#323232;">    let l:register=@@</span>
-<span style="color:#323232;">    normal! gvy</span>
-<span style="color:#323232;">    let l:search=escape(@@, &#39;$.*/\[]&#39;)</span>
-<span style="color:#323232;">    if a:direction==&#39;/&#39;</span>
-<span style="color:#323232;">        execute &#39;normal! /&#39;.l:search</span>
-<span style="color:#323232;">    else</span>
-<span style="color:#323232;">        execute &#39;normal! ?&#39;.l:search</span>
-<span style="color:#323232;">    endif</span>
-<span style="color:#323232;">    let @/=l:search</span>
-<span style="color:#323232;">    normal! gV</span>
-<span style="color:#323232;">    let @@=l:register</span>
-<span style="color:#323232;">endfunction</span>
+  <pre><span style="color:#839496;">function! VisualSearch(direction)</span>
+<span style="color:#839496;">    let l:register=@@</span>
+<span style="color:#839496;">    normal! gvy</span>
+<span style="color:#839496;">    let l:search=escape(@@, &#39;$.*/\[]&#39;)</span>
+<span style="color:#839496;">    if a:direction==&#39;/&#39;</span>
+<span style="color:#839496;">        execute &#39;normal! /&#39;.l:search</span>
+<span style="color:#839496;">    else</span>
+<span style="color:#839496;">        execute &#39;normal! ?&#39;.l:search</span>
+<span style="color:#839496;">    endif</span>
+<span style="color:#839496;">    let @/=l:search</span>
+<span style="color:#839496;">    normal! gV</span>
+<span style="color:#839496;">    let @@=l:register</span>
+<span style="color:#839496;">endfunction</span>
 
-<span style="color:#323232;">set lazyredraw</span>
-<span style="color:#323232;">set visualbell</span>
-<span style="color:#323232;">set noerrorbells</span>
+<span style="color:#839496;">set lazyredraw</span>
+<span style="color:#839496;">set visualbell</span>
+<span style="color:#839496;">set noerrorbells</span>
 
-<span style="color:#323232;">let mapleader=&quot; &quot;</span>
-<span style="color:#323232;">let @a = &quot;text&quot;</span>
+<span style="color:#839496;">let mapleader=&quot; &quot;</span>
+<span style="color:#839496;">let @a = &quot;text&quot;</span>
 
-<span style="color:#323232;">noremap &lt;C-e&gt; 7&lt;C-e&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;e 7&lt;C-e&gt;</span>
+<span style="color:#839496;">noremap &lt;C-e&gt; 7&lt;C-e&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;e 7&lt;C-e&gt;</span>
 
-<span style="color:#323232;">noremap &lt;C-y&gt; 7&lt;C-y&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;y 7&lt;C-y&gt;</span>
+<span style="color:#839496;">noremap &lt;C-y&gt; 7&lt;C-y&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;y 7&lt;C-y&gt;</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;f &lt;C-f&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;b &lt;C-b&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;f &lt;C-f&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;b &lt;C-b&gt;</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;sa &lt;Cmd&gt;call VSCodeNotify(&#39;editor.action.selectAll&#39;)&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;go &lt;Cmd&gt;call VSCodeNotify(&#39;workbench.action.gotoLine&#39;)&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;sa &lt;Cmd&gt;call VSCodeNotify(&#39;editor.action.selectAll&#39;)&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;go &lt;Cmd&gt;call VSCodeNotify(&#39;workbench.action.gotoLine&#39;)&lt;CR&gt;</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;m M</span>
-<span style="color:#323232;">noremap &lt;leader&gt;&lt;leader&gt;4 $</span>
-<span style="color:#323232;">noremap &lt;leader&gt;tt :action ParameterInfo&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;te :action ShowErrorDescription&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;m M</span>
+<span style="color:#839496;">noremap &lt;leader&gt;&lt;leader&gt;4 $</span>
+<span style="color:#839496;">noremap &lt;leader&gt;tt :action ParameterInfo&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;te :action ShowErrorDescription&lt;CR&gt;</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;js o```js&lt;enter&gt;```&lt;esc&gt;O</span>
-<span style="color:#323232;">noremap &lt;leader&gt;fs o```fs&lt;enter&gt;```&lt;esc&gt;O</span>
-
-
-<span style="color:#323232;">noremap &lt;leader&gt;vv V</span>
-
-<span style="color:#323232;">noremap &lt;leader&gt;y y</span>
-<span style="color:#323232;">noremap &lt;leader&gt;Y Y</span>
-<span style="color:#323232;">vnoremap d j</span>
-<span style="color:#323232;">vnoremap &lt;leader&gt;d d</span>
-
-<span style="color:#323232;">noremap &lt;leader&gt;1 &quot;zy</span>
-<span style="color:#323232;">noremap &lt;leader&gt;2 &quot;zY</span>
-<span style="color:#323232;">noremap &lt;leader&gt;3 &quot;zp</span>
-<span style="color:#323232;">noremap &lt;leader&gt;&lt;leader&gt;3 &quot;zP</span>
-<span style="color:#323232;">noremap &lt;leader&gt;4 &quot;zd</span>
-
-<span style="color:#323232;">noremap &lt;leader&gt;&lt;leader&gt;&#39; i````&lt;Esc&gt;hi</span>
-<span style="color:#323232;">inoremap &lt;leader&gt;&lt;leader&gt;&#39; ````&lt;Esc&gt;hi</span>
+<span style="color:#839496;">noremap &lt;leader&gt;js o```js&lt;enter&gt;```&lt;esc&gt;O</span>
+<span style="color:#839496;">noremap &lt;leader&gt;fs o```fs&lt;enter&gt;```&lt;esc&gt;O</span>
 
 
-<span style="color:#323232;">nnoremap &lt;leader&gt;[ ?let &lt;CR&gt;:noh&lt;CR&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;] /let &lt;CR&gt;:noh&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;vv V</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;rr :action Rerun&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;ru :action Run&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;rs :action Stop&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;rc :action RunConfiguration&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;y y</span>
+<span style="color:#839496;">noremap &lt;leader&gt;Y Y</span>
+<span style="color:#839496;">vnoremap d j</span>
+<span style="color:#839496;">vnoremap &lt;leader&gt;d d</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;cn :action CloseAllNotifications&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;co :action CloseAllEditorsButActive&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;1 &quot;zy</span>
+<span style="color:#839496;">noremap &lt;leader&gt;2 &quot;zY</span>
+<span style="color:#839496;">noremap &lt;leader&gt;3 &quot;zp</span>
+<span style="color:#839496;">noremap &lt;leader&gt;&lt;leader&gt;3 &quot;zP</span>
+<span style="color:#839496;">noremap &lt;leader&gt;4 &quot;zd</span>
 
-<span style="color:#323232;">noremap &lt;leader&gt;ra &lt;Cmd&gt;call VSCodeNotify(&#39;notebook.execute&#39;)&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;re :redo&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;ne &lt;Cmd&gt;call VSCodeNotify(&#39;editor.action.marker.next&#39;)&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;pe &lt;Cmd&gt;call VSCodeNotify(&#39;editor.action.marker.prev&#39;)&lt;CR&gt;</span>
-
-<span style="color:#323232;">noremap &lt;leader&gt;nc &lt;Cmd&gt;call VSCodeNotify(&#39;notebook.focusNextEditor&#39;)&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;pc &lt;Cmd&gt;call VSCodeNotify(&#39;notebook.focusPreviousEditor&#39;)&lt;CR&gt;</span>
-
-<span style="color:#323232;">noremap &lt;leader&gt;no :action NextOccurence&lt;CR&gt;</span>
-<span style="color:#323232;">noremap &lt;leader&gt;po :action PreviousOccurence&lt;CR&gt;</span>
-
-<span style="color:#323232;">noremap Q /</span>
-<span style="color:#323232;">noremap &lt;space&gt;Q ?</span>
-<span style="color:#323232;">noremap / j</span>
-<span style="color:#323232;">noremap ? j</span>
+<span style="color:#839496;">noremap &lt;leader&gt;&lt;leader&gt;&#39; i````&lt;Esc&gt;hi</span>
+<span style="color:#839496;">inoremap &lt;leader&gt;&lt;leader&gt;&#39; ````&lt;Esc&gt;hi</span>
 
 
-<span style="color:#323232;">if env ==? &quot;sh&quot;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;[ ?let &lt;CR&gt;:noh&lt;CR&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;] /let &lt;CR&gt;:noh&lt;CR&gt;</span>
 
-<span style="color:#323232;">    nnoremap &lt;c-right&gt; gt</span>
-<span style="color:#323232;">    nnoremap &lt;c-left&gt; gT</span>
+<span style="color:#839496;">noremap &lt;leader&gt;rr :action Rerun&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;ru :action Run&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;rs :action Stop&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;rc :action RunConfiguration&lt;CR&gt;</span>
 
-<span style="color:#323232;">    nnoremap &lt;silent&gt;&lt;esc&gt;&lt;esc&gt; :noh&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;cn :action CloseAllNotifications&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;co :action CloseAllEditorsButActive&lt;CR&gt;</span>
 
-<span style="color:#323232;">    nnoremap &lt;leader&gt;w /[A-Z]&lt;CR&gt;h:noh&lt;CR&gt;</span>
-<span style="color:#323232;">    nnoremap &lt;leader&gt;W /[A-Z]&lt;CR&gt;:noh&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;ra &lt;Cmd&gt;call VSCodeNotify(&#39;notebook.execute&#39;)&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;re :redo&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;ne &lt;Cmd&gt;call VSCodeNotify(&#39;editor.action.marker.next&#39;)&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;pe &lt;Cmd&gt;call VSCodeNotify(&#39;editor.action.marker.prev&#39;)&lt;CR&gt;</span>
 
-<span style="color:#323232;">    vnoremap &lt;leader&gt;w /[A-Z]&lt;CR&gt;h</span>
-<span style="color:#323232;">    vnoremap &lt;leader&gt;W /[A-Z]&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;nc &lt;Cmd&gt;call VSCodeNotify(&#39;notebook.focusNextEditor&#39;)&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;pc &lt;Cmd&gt;call VSCodeNotify(&#39;notebook.focusPreviousEditor&#39;)&lt;CR&gt;</span>
 
-<span style="color:#323232;">    vnoremap &lt;silent&gt;* &lt;ESC&gt;:call VisualSearch(&#39;/&#39;)&lt;CR&gt;/&lt;CR&gt;</span>
-<span style="color:#323232;">    vnoremap &lt;silent&gt;# &lt;ESC&gt;:call VisualSearch(&#39;?&#39;)&lt;CR&gt;?&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;no :action NextOccurence&lt;CR&gt;</span>
+<span style="color:#839496;">noremap &lt;leader&gt;po :action PreviousOccurence&lt;CR&gt;</span>
 
-<span style="color:#323232;">elseif env ==? &quot;idea&quot;</span>
-
-<span style="color:#323232;">    noremap &lt;leader&gt;w ]w</span>
-<span style="color:#323232;">    noremap &lt;leader&gt;W [w</span>
-
-<span style="color:#323232;">    set ignorecase</span>
-
-<span style="color:#323232;">endif</span>
-
-<span style="color:#323232;">set ignorecase</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;w /\C[A-Z_]&lt;CR&gt;h:noh&lt;CR&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;W /\C[A-Z_]&lt;CR&gt;:noh&lt;CR&gt;</span>
-<span style="color:#323232;">vnoremap &lt;leader&gt;w /\C[A-Z_]&lt;CR&gt;h</span>
-<span style="color:#323232;">vnoremap &lt;leader&gt;W /\C[A-Z_]&lt;CR&gt;</span>
+<span style="color:#839496;">noremap Q /</span>
+<span style="color:#839496;">noremap &lt;space&gt;Q ?</span>
+<span style="color:#839496;">noremap / j</span>
+<span style="color:#839496;">noremap ? j</span>
 
 
-<span style="color:#323232;">nnoremap &lt;c-[&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-]&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-\&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-s-[&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-s-]&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-s-\&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">if env ==? &quot;sh&quot;</span>
 
-<span style="color:#323232;">nnoremap ; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-;&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-s-;&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">    nnoremap &lt;c-right&gt; gt</span>
+<span style="color:#839496;">    nnoremap &lt;c-left&gt; gT</span>
 
-<span style="color:#323232;">nnoremap &lt;leader&gt;&lt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;- &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;= &lt;nop&gt;</span>
+<span style="color:#839496;">    nnoremap &lt;silent&gt;&lt;esc&gt;&lt;esc&gt; :noh&lt;CR&gt;</span>
+
+<span style="color:#839496;">    nnoremap &lt;leader&gt;w /[A-Z]&lt;CR&gt;h:noh&lt;CR&gt;</span>
+<span style="color:#839496;">    nnoremap &lt;leader&gt;W /[A-Z]&lt;CR&gt;:noh&lt;CR&gt;</span>
+
+<span style="color:#839496;">    vnoremap &lt;leader&gt;w /[A-Z]&lt;CR&gt;h</span>
+<span style="color:#839496;">    vnoremap &lt;leader&gt;W /[A-Z]&lt;CR&gt;</span>
+
+<span style="color:#839496;">    vnoremap &lt;silent&gt;* &lt;ESC&gt;:call VisualSearch(&#39;/&#39;)&lt;CR&gt;/&lt;CR&gt;</span>
+<span style="color:#839496;">    vnoremap &lt;silent&gt;# &lt;ESC&gt;:call VisualSearch(&#39;?&#39;)&lt;CR&gt;?&lt;CR&gt;</span>
+
+<span style="color:#839496;">elseif env ==? &quot;idea&quot;</span>
+
+<span style="color:#839496;">    noremap &lt;leader&gt;w ]w</span>
+<span style="color:#839496;">    noremap &lt;leader&gt;W [w</span>
+
+<span style="color:#839496;">    set ignorecase</span>
+
+<span style="color:#839496;">endif</span>
+
+<span style="color:#839496;">set ignorecase</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;w /\C[A-Z_]&lt;CR&gt;h:noh&lt;CR&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;W /\C[A-Z_]&lt;CR&gt;:noh&lt;CR&gt;</span>
+<span style="color:#839496;">vnoremap &lt;leader&gt;w /\C[A-Z_]&lt;CR&gt;h</span>
+<span style="color:#839496;">vnoremap &lt;leader&gt;W /\C[A-Z_]&lt;CR&gt;</span>
 
 
-<span style="color:#323232;">nnoremap ! &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;s-tab&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;s-f1&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;s-f5&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;c-k&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap ,d &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;&lt;leader&gt; &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;j &lt;nop&gt;</span>
-<span style="color:#323232;">nnoremap &lt;leader&gt;J &lt;nop&gt;</span>
-<span style="color:#323232;">&quot;&quot; nnoremap &lt;tab&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-[&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-]&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-\&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-s-[&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-s-]&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-s-\&gt; &lt;nop&gt;</span>
 
-<span style="color:#323232;">&quot;&quot; noremap &lt;leader&gt;&lt;leader&gt;/ i／</span>
-<span style="color:#323232;">&quot;&quot; inoremap &lt;leader&gt;&lt;leader&gt;/ ／</span>
-<span style="color:#323232;">&quot;&quot; noremap y j</span>
-<span style="color:#323232;">&quot;&quot; noremap Y j</span>
+<span style="color:#839496;">nnoremap ; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-;&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-s-;&gt; &lt;nop&gt;</span>
 
-<span style="color:#323232;">&quot;&quot; noremap &lt;leader&gt;gl Olet getLocals () = $&quot;0={0} {getLocals ()}&quot;&lt;Esc&gt;0jw</span>
-<span style="color:#323232;">&quot;&quot; noremap &lt;leader&gt;nm ggcenamespace&lt;esc&gt;Eviw&quot;mxxo&lt;esc&gt;omodule &lt;esc&gt;&quot;mpa =&lt;esc&gt;o()&lt;esc&gt;&gt;&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;&lt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;- &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;= &lt;nop&gt;</span>
+
+
+<span style="color:#839496;">nnoremap ! &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;s-tab&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;s-f1&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;s-f5&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;c-k&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap ,d &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;&lt;leader&gt; &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;j &lt;nop&gt;</span>
+<span style="color:#839496;">nnoremap &lt;leader&gt;J &lt;nop&gt;</span>
+<span style="color:#839496;">&quot;&quot; nnoremap &lt;tab&gt; &lt;nop&gt;</span>
+
+<span style="color:#839496;">&quot;&quot; noremap &lt;leader&gt;&lt;leader&gt;/ i／</span>
+<span style="color:#839496;">&quot;&quot; inoremap &lt;leader&gt;&lt;leader&gt;/ ／</span>
+<span style="color:#839496;">&quot;&quot; noremap y j</span>
+<span style="color:#839496;">&quot;&quot; noremap Y j</span>
+
+<span style="color:#839496;">&quot;&quot; noremap &lt;leader&gt;gl Olet getLocals () = $&quot;0={0} {getLocals ()}&quot;&lt;Esc&gt;0jw</span>
+<span style="color:#839496;">&quot;&quot; noremap &lt;leader&gt;nm ggcenamespace&lt;esc&gt;Eviw&quot;mxxo&lt;esc&gt;omodule &lt;esc&gt;&quot;mpa =&lt;esc&gt;o()&lt;esc&gt;&gt;&gt;</span>
 
 
 </pre>

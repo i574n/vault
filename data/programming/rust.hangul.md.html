@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -595,6 +650,7 @@ function toggle() {
       <li><a href="#link-36">리치 프롱 71 투 90 티 모스트 임포르탄트 프로페르치 바제드 테스트스 우징그 아프로프리아치 크라치스 포르 이트 콘시데링그 수시 인트리카치 보칭그 시스텡</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -602,17 +658,20 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">응/.카르구/빙</span>
+  <pre><span style="color:#839496;">응/.카르구/빙</span>
 
 </pre><p class = "rule">***</p>
 <h2 id = "link-1">리스트 오테르 헬레반트 마크루스 타트 캉 비 헤아드 잉 부이우드 치미</h2>
@@ -631,33 +690,33 @@ function toggle() {
 <h2 id = "link-3">지비 2 프라그마치크 이잠플리스</h2>
 <p id = "para-12">&lt; 수리, 에리 아리 트우 프라그마치크 이잠플리스 오프 후스트 마크루스:</p>
 <p id = "para-13">드브그!: 수포지 요’히 데부징그 아 후스트 프로그랑 안드 요 완트 투 프린트 티 발루이 오프 아 바리아블리 투 티 콘솔리. 인스테아드 오프 리칭그 아 세파라치 프린틀릉! 스타테멘트 포르 이아시 바리아블리, 요 캉 우지 티 드브그! 마크루 투 프린트 티 발루이 오프 티 바리아블리 안드 이트스 나미 아트 티 사미 치미. 포르 이잠플리:</p>
-<pre><span style="color:#323232;">레트 스 = 42</span>
-<span style="color:#323232;">드브그!(스) // 프린트스 &quot;스흐크/마잉.흐스:3:4: 스 = 42&quot;</span>
+<pre><span style="color:#839496;">레트 스 = 42</span>
+<span style="color:#839496;">드브그!(스) // 프린트스 &quot;스흐크/마잉.흐스:3:4: 스 = 42&quot;</span>
 
 </pre><p id = "para-14">티스 프린트스 티 필리 나미, 리니 눔베르, 콜룸응 눔베르, 바리아블리 나미, 안드 바리아블리 발루이 투 티 콘솔리, 마킹그 이트 이아지 투 데부그 요르 프로그랑.</p>
 <p id = "para-15">잉클루지!: 수포지 요 아비 아 라르지 다타 필리, 수시 아스 아 크스브 오르 즈송 필리, 타트 요 완트 투 잉클루지 잉 요르 후스트 프로그랑. 인스테아드 오프 헤아징그 티 필리 아트 훈치미, 요 캉 우지 티 잉클루지! 마크루 투 잉클루지 티 콘텐트스 오프 티 필리 아트 콤필리-치미. 포르 이잠플리:</p>
-<pre><span style="color:#323232;">레트 다타: &amp;&#39;스타치크 스트르 = 잉클루지_스트르!(&quot;다타.크스브&quot;)</span>
+<pre><span style="color:#839496;">레트 다타: &amp;&#39;스타치크 스트르 = 잉클루지_스트르!(&quot;다타.크스브&quot;)</span>
 
 </pre><p id = "para-16">티스 헤아드스 티 콘텐트스 오프 다타.크스브 안드 잉클루지스 텡 아스 아 스타치크 스트링그 잉 티 콤필레드 비나리. 티스 캉 마키 요르 프로그랑 파스테르 안드 모리 이피시엔트, 신시 이트 도에증’트 네드 투 헤아드 티 필리 아트 훈치미.</p>
 <p id = "para-17">이 오피 테지 이잠플리스 에우프 일루스트라치 티 프락치카우 우지스 오프 후스트 마크루스!</p>
 <h2 id = "link-4">2 모리 이잠플리스, 포르 티 나스치 카지스</h2>
 <p id = "para-18">&lt; 수리, 에리 아리 트우 모리 이잠플리스 오프 후스트 마크루스 포르 티 “나스치” 카지스:</p>
 <p id = "para-19">트리!: 수포지 요’히 워르킹그 위트 아 레가키 후스트 코데바지 타트 우지스 티 트리! 마크루, 이시 아스 신시 벵 데프레카테드 잉 파보르 오프 티 ? 오페라토르. 인스테아드 오프 헤팍토링그 티 인치리 코데바지, 요 캉 우지 티 트리! 마크루 아스 아 소르탄드 포르 티 ? 오페라토르. 포르 이잠플리:</p>
-<pre><span style="color:#323232;">레트 헤주우트 = 트리!(소미_풍크치옹())</span>
+<pre><span style="color:#839496;">레트 헤주우트 = 트리!(소미_풍크치옹())</span>
 
 </pre><p id = "para-20">티스 이스 이키발렌트 투:</p>
-<pre><span style="color:#323232;">레트 헤주우트 = 소미_풍크치옹()?</span>
+<pre><span style="color:#839496;">레트 헤주우트 = 소미_풍크치옹()?</span>
 
 </pre><p id = "para-21">티스 캉 사비 요 아 로트 오프 치미 안드 이포르트 엥 데알링그 위트 레가키 코지.</p>
 <p id = "para-22">콩카트_이덴트스!: 수포지 요’히 워르킹그 옹 아 코지 제네라토르 타트 네드스 투 제네라치 아 라르지 눔베르 오프 이덴치피에르스 바제드 옹 인푸트 다타. 인스테아드 오프 리칭그 헤페치치비 코지 투 제네라치 이아시 이덴치피에르, 요 캉 우지 티 콩카트_이덴트스! 마크루 투 제네라치 티 이덴치피에르스 아트 콤필리-치미. 포르 이잠플리:</p>
-<pre><span style="color:#323232;">마크루_훌리스! 제네라치_이덴치피에르스 {</span>
-<span style="color:#323232;">($프레피스:이스프르, $콘트:이스프르) =&gt; {</span>
-<span style="color:#323232;">$(</span>
-<span style="color:#323232;">콩카트_이덴트스!($프레피스, $콘트)</span>
-<span style="color:#323232;">)*</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">제네라치_이덴치피에르스!(&quot;미_이덴치피에르_&quot;, 1, 2, 3, 4, 5)</span>
+<pre><span style="color:#839496;">마크루_훌리스! 제네라치_이덴치피에르스 {</span>
+<span style="color:#839496;">($프레피스:이스프르, $콘트:이스프르) =&gt; {</span>
+<span style="color:#839496;">$(</span>
+<span style="color:#839496;">콩카트_이덴트스!($프레피스, $콘트)</span>
+<span style="color:#839496;">)*</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">제네라치_이덴치피에르스!(&quot;미_이덴치피에르_&quot;, 1, 2, 3, 4, 5)</span>
 
 </pre><p id = "para-23">티스 제네라치스 티 이덴치피에르스 미_이덴치피에르_1, 미_이덴치피에르_2, 미_이덴치피에르_3, 미_이덴치피에르_4, 안드 미_이덴치피에르_5 아트 콤필리-치미. 티스 캉 사비 요 아 로트 오프 헤페치치비 코지 안드 마키 요르 코지 제네라토르 모리 이피시엔트.</p>
 <p id = "para-24">이 오피 테지 이잠플리스 에우프 일루스트라치 티 포웨르 안드 플레시빌리치 오프 후스트 마크루스, 이벵 잉 “나스치” 오르 에드지 카지스.</p>
@@ -669,11 +728,11 @@ function toggle() {
 <p id = "para-28">아우수 이트 이스 임포르탄트 투 포인트 오트 타트 티 마잉 풍크치옹 잉 아 후스트 케르네우 워우드 비 티 _스타르트 오르 _스타르트_후스트 심보우, 이트 워우드 안들리 로-레베우 이니치알리자치옹 수시 아스 세칭그 우프 티 스타크, 칼링그 콘스트룩토르스, 제로잉그 브스 안드 수 옹, 베포리 트란스페힝그 콘트로우 투 티 케르네우 프로페르.</p>
 <h2 id = "link-7">캉 요 지비 미 아 스케트시 오프 티스 이눙 잉 아 후스트 코지 블로크?</h2>
 <p id = "para-29">&lt; 수리! 에리’스 앙 이잠플리 오프 아트 아 심플리 이눙 포르 아 케르네우’스 스타치 미그트 로크 리키 잉 후스트:</p>
-<pre><span style="color:#323232;">이눙 케르네우스타치 {</span>
-<span style="color:#323232;">후닝그(프로세스),</span>
-<span style="color:#323232;">슬레핑그(치메르),</span>
-<span style="color:#323232;">아우테드,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">이눙 케르네우스타치 {</span>
+<span style="color:#839496;">후닝그(프로세스),</span>
+<span style="color:#839496;">슬레핑그(치메르),</span>
+<span style="color:#839496;">아우테드,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-30">티스 이눙 아스 트레이 바리안트스:</p>
 <p id = "para-31">후닝그(프로세스): 인지카치스 타트 티 케르네우 이스 쿠헨틀리 후닝그 아 프로세스. 티 프로세스 치피 워우드 네드 투 비 데피네드 이우세에리 잉 티 코지, 안드 코우드 콘타잉 인포르마치옹 아보트 티 쿠헨트 프로세스, 수시 아스 이트스 메모리 라요트 안드 오펭 필리 데스크리프토르스.</p>
@@ -719,92 +778,92 @@ function toggle() {
 <p id = "para-67">아스 포르 티 레가우, 콤플리안시, 안드 헤굴라치옹 시지, 베포리 부이우징그 수시 아 세르베르, 이트’스 임포르탄트 투 콘수우트 위트 레가우 이스페르트스, 투 비 수리 타트 티 세르베르 아데리스 투 티 아우 티 라스 안드 헤굴라치옹스 헤가르징그 스토라지 안드 트란스페르 오프 다타, 이스페시알리 이프 티 세르베르 이스 스토링그 오르 트란즈미칭그 센시치비 다타.</p>
 <h2 id = "link-12">캉 요 리스트 후스트 스니페트스 위트 티 마잉 다타 스트룩투리스 (이눔스 안드 치페스) 투 스타르트 티스 농 트리비아우 프로젝트</h2>
 <p id = "para-68">&lt; 수리, 에리 아리 소미 이잠플리 후스트 스니페트스 포르 소미 오프 티 마잉 다타 스트룩투리스 타트 미그트 비 우제드 잉 아 프로젝트 투 부이우드 아 지트 세르베르 위트 앙 이벤트 소르싱그 로그 타트 우지스 티 텔레그랑 아피:</p>
-<pre><span style="color:#323232;">이눙 지토페라치옹 {</span>
-<span style="color:#323232;">코미트 { 메사지: 스트링그 },</span>
-<span style="color:#323232;">푸즈,</span>
-<span style="color:#323232;">풀,</span>
-<span style="color:#323232;">메르지 { 브란시: 스트링그 },</span>
-<span style="color:#323232;">// 오테르 오페라치옹스 아스 네데드</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">이눙 지토페라치옹 {</span>
+<span style="color:#839496;">코미트 { 메사지: 스트링그 },</span>
+<span style="color:#839496;">푸즈,</span>
+<span style="color:#839496;">풀,</span>
+<span style="color:#839496;">메르지 { 브란시: 스트링그 },</span>
+<span style="color:#839496;">// 오테르 오페라치옹스 아스 네데드</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-69">티스 이눙 코우드 비 우제드 투 헤프레젠트 티 지페렌트 치페스 오프 지트 오페라치옹스 타트 아 클리엔트 캉 페르포릉. 포르 이잠플리, 아 클리엔트 코우드 센드 아 메사지 투 티 텔레그랑 보트 위트 티 코미트 { 메사지: “이니치아우 코미트” } 오페라치옹.</p>
-<pre><span style="color:#323232;">스트룩트 이벤트 {</span>
-<span style="color:#323232;">오페라치옹: 지토페라치옹,</span>
-<span style="color:#323232;">치메스탐프: 이64,</span>
-<span style="color:#323232;">우제르_이드: 이32,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">스트룩트 이벤트 {</span>
+<span style="color:#839496;">오페라치옹: 지토페라치옹,</span>
+<span style="color:#839496;">치메스탐프: 이64,</span>
+<span style="color:#839496;">우제르_이드: 이32,</span>
+<span style="color:#839496;">}</span>
 
 
 </pre><p id = "para-70">티스 스트룩트 코우드 비 우제드 투 헤프레젠트 앙 이벤트 잉 티 이벤트 소르싱그 로그. 이아시 이벤트 워우드 잉클루지 티 지트 오페라치옹 타트 와스 페르포르메드, 티 치메스탐프 아트 이시 이트 와스 페르포르메드, 안드 티 텔레그랑 우제르 이드 오프 티 클리엔트 우 페르포르메드 티 오페라치옹.</p>
-<pre><span style="color:#323232;">스트룩트 헤포지토리 {</span>
-<span style="color:#323232;">이드: 이32,</span>
-<span style="color:#323232;">이벤트스: 베크&lt;이벤트&gt;,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">스트룩트 헤포지토리 {</span>
+<span style="color:#839496;">이드: 이32,</span>
+<span style="color:#839496;">이벤트스: 베크&lt;이벤트&gt;,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-71">티스 스트룩트 코우드 비 우제드 투 헤프레젠트 아 싱글리 헤포지토리. 이트 워우드 잉클루지 티 헤포지토리’스 이드 안드 아 벡토르 오프 이벤트스 헤프레젠칭그 티 이벤트 소르싱그 로그 포르 타트 헤포지토리.</p>
-<pre><span style="color:#323232;">스트룩트 우제르 {</span>
-<span style="color:#323232;">이드: 이32,</span>
-<span style="color:#323232;">나미: 스트링그,</span>
-<span style="color:#323232;">이마이우: 스트링그,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">스트룩트 우제르 {</span>
+<span style="color:#839496;">이드: 이32,</span>
+<span style="color:#839496;">나미: 스트링그,</span>
+<span style="color:#839496;">이마이우: 스트링그,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-72">티스 스트룩트 코우드 비 우제드 투 헤프레젠트 아 우제르. 이트 워우드 잉클루지 티 텔레그랑 우제르 이드, 우제르나미, 안드 이마이우 오프 티 우제르.</p>
-<pre><span style="color:#323232;">스트룩트 스타치 {</span>
-<span style="color:#323232;">우제르스: 아즈마프&lt;이32, 우제르&gt;,</span>
-<span style="color:#323232;">헤포지토리스: 아즈마프&lt;이32, 헤포지토리&gt;,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">스트룩트 스타치 {</span>
+<span style="color:#839496;">우제르스: 아즈마프&lt;이32, 우제르&gt;,</span>
+<span style="color:#839496;">헤포지토리스: 아즈마프&lt;이32, 헤포지토리&gt;,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-73">티스 스트룩트 코우드 비 우제드 투 헤프레젠트 티 쿠헨트 스타치 오프 티 세르베르. 이트 워우드 잉클루지 아 아즈마프 오프 우제르스 안드 아 아즈마프 오프 헤포지토리스.</p>
 <p id = "para-74">테지 아리 주스트 아 페 이잠플리스 오프 티 마잉 다타 스트룩투리스 타트 코우드 비 우제드 잉 수시 아 프로젝트, 데펜징그 옹 티 스페시피크 헤키레멘트스 안드 데지긍 오프 티 아플리카치옹. 티 이작트 임플레멘타치옹 오프 티 다타 스트룩투리스 안드 티 아소시아테드 로지크 투 안들리 티 지트 오페라치옹스, 이벤트 소르싱그, 텔레그랑 아피 안드 티 스타치 마나제멘트 워우드 데펜드 옹 티 스페시피크 헤키레멘트스 오프 티 프로젝트.</p>
 <h2 id = "link-13">캉 요 지비 이잠플리스 오프 세베라우 테스트 카우스 오프 지페렌트 콤플레시치스 우징그 테지 치페스 (투 스페드 우프 데벨로프멘트). 요 캉 리스트 네 치페스 이프 네데드</h2>
 <p id = "para-75">&lt; 수리, 에리 아리 소미 이잠플리스 오프 테스트 카우스 타트 우지 티 다타 스트룩투리스 송 잉 티 프레비오스 이잠플리스:</p>
-<pre><span style="color:#323232;">//테스트 카지 1: 센드 아 코미트 메사지</span>
-<span style="color:#323232;">레트 오페라치옹 = 지토페라치옹::코미트 { 메사지: &quot;이니치아우 코미트&quot;.투_스트링그() }</span>
-<span style="color:#323232;">레트 이벤트 = 이벤트 {</span>
-<span style="color:#323232;">오페라치옹: 오페라치옹,</span>
-<span style="color:#323232;">치메스탐프: 치미::제트_치미().세크,</span>
-<span style="color:#323232;">우제르_이드: 123,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">//테스트 카지 1: 센드 아 코미트 메사지</span>
+<span style="color:#839496;">레트 오페라치옹 = 지토페라치옹::코미트 { 메사지: &quot;이니치아우 코미트&quot;.투_스트링그() }</span>
+<span style="color:#839496;">레트 이벤트 = 이벤트 {</span>
+<span style="color:#839496;">오페라치옹: 오페라치옹,</span>
+<span style="color:#839496;">치메스탐프: 치미::제트_치미().세크,</span>
+<span style="color:#839496;">우제르_이드: 123,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">//테스트 카지 2: 센드 아 푸즈 메사지</span>
-<span style="color:#323232;">레트 오페라치옹 = 지토페라치옹::푸즈</span>
-<span style="color:#323232;">레트 이벤트 = 이벤트 {</span>
-<span style="color:#323232;">오페라치옹: 오페라치옹,</span>
-<span style="color:#323232;">치메스탐프: 치미::제트_치미().세크,</span>
-<span style="color:#323232;">우제르_이드: 123,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">//테스트 카지 2: 센드 아 푸즈 메사지</span>
+<span style="color:#839496;">레트 오페라치옹 = 지토페라치옹::푸즈</span>
+<span style="color:#839496;">레트 이벤트 = 이벤트 {</span>
+<span style="color:#839496;">오페라치옹: 오페라치옹,</span>
+<span style="color:#839496;">치메스탐프: 치미::제트_치미().세크,</span>
+<span style="color:#839496;">우제르_이드: 123,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">//테스트 카지 3: 센드 아 메르지 메사지</span>
-<span style="color:#323232;">레트 오페라치옹 = 지토페라치옹::메르지 { 브란시: &quot;페아투리-브란시&quot;.투_스트링그() }</span>
-<span style="color:#323232;">레트 이벤트 = 이벤트 {</span>
-<span style="color:#323232;">오페라치옹: 오페라치옹,</span>
-<span style="color:#323232;">치메스탐프: 치미::제트_치미().세크,</span>
-<span style="color:#323232;">우제르_이드: 123,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">//테스트 카지 3: 센드 아 메르지 메사지</span>
+<span style="color:#839496;">레트 오페라치옹 = 지토페라치옹::메르지 { 브란시: &quot;페아투리-브란시&quot;.투_스트링그() }</span>
+<span style="color:#839496;">레트 이벤트 = 이벤트 {</span>
+<span style="color:#839496;">오페라치옹: 오페라치옹,</span>
+<span style="color:#839496;">치메스탐프: 치미::제트_치미().세크,</span>
+<span style="color:#839496;">우제르_이드: 123,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-76">에리 아리 앙 이잠플리 오프 아 테스트 타트 인보우베스 안들링그 오프 우제르스 안드 헤포지토리스</p>
-<pre><span style="color:#323232;">// 크레아치 아 네 우제르</span>
-<span style="color:#323232;">레트 우제르 = 우제르 {</span>
-<span style="color:#323232;">이드: 123,</span>
-<span style="color:#323232;">나미: &quot;우제르1&quot;.투_스트링그(),</span>
-<span style="color:#323232;">이마이우: &quot;우제르1@이잠플리.콩&quot;.투_스트링그()</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 크레아치 아 네 우제르</span>
+<span style="color:#839496;">레트 우제르 = 우제르 {</span>
+<span style="color:#839496;">이드: 123,</span>
+<span style="color:#839496;">나미: &quot;우제르1&quot;.투_스트링그(),</span>
+<span style="color:#839496;">이마이우: &quot;우제르1@이잠플리.콩&quot;.투_스트링그()</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 크레아치 아 네 헤포지토리</span>
-<span style="color:#323232;">레트 헤포지토리 = 헤포지토리 {</span>
-<span style="color:#323232;">이드: 1,</span>
-<span style="color:#323232;">이벤트스: 베크![],</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 크레아치 아 네 헤포지토리</span>
+<span style="color:#839496;">레트 헤포지토리 = 헤포지토리 {</span>
+<span style="color:#839496;">이드: 1,</span>
+<span style="color:#839496;">이벤트스: 베크![],</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 크레아치 티 이니치아우 스타치</span>
-<span style="color:#323232;">레트 무트 스타치 = 스타치 {</span>
-<span style="color:#323232;">우제르스: 아즈마프::네(),</span>
-<span style="color:#323232;">헤포지토리스: 아즈마프::네(),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 크레아치 티 이니치아우 스타치</span>
+<span style="color:#839496;">레트 무트 스타치 = 스타치 {</span>
+<span style="color:#839496;">우제르스: 아즈마프::네(),</span>
+<span style="color:#839496;">헤포지토리스: 아즈마프::네(),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 아드 티 우제르 안드 헤포지토리 투 티 스타치</span>
-<span style="color:#323232;">스타치.우제르스.인세르트(우제르.이드, 우제르)</span>
-<span style="color:#323232;">스타치.헤포지토리스.인세르트(헤포지토리.이드, 헤포지토리)</span>
+<span style="color:#839496;">// 아드 티 우제르 안드 헤포지토리 투 티 스타치</span>
+<span style="color:#839496;">스타치.우제르스.인세르트(우제르.이드, 우제르)</span>
+<span style="color:#839496;">스타치.헤포지토리스.인세르트(헤포지토리.이드, 헤포지토리)</span>
 
 </pre><p id = "para-77">티스 이스 온리 아 심플리 이잠플리 오프 오 티 지페렌트 치페스 코우드 비 우제드 투 테스트 지페렌트 세나리우스, 안드 이트 코우드 데펜드 옹 티 스페시피크 헤키레멘트스 안드 데지긍 오프 티 아플리카치옹. 잉 아 헤아우 임플레멘타치옹, 요 워우드 아우수 네드 투 안들리 티 악투아우 코무니카치옹 위트 텔레그랑 아피 안드 안들리 티 이벤트스 아스 테이 코미 잉. 안드 아우수 안들리 티 지트 오페라치옹스 투 스토리 안드 마나지 티 필리스, 안드 이트 워우드 아우수 네드 투 비 콤비네드 위트 아프로프리아치 이호르 안들링그 메샤니즘스 안드 로징그 투 케프 트라크 오프 티 시스텡 베아비오르.</p>
 <p id = "para-78">이트’스 워르트 노칭그 타트 티스 이스 아 키치 브로아드 수브젝트, 안드 테리 아리 마니 데타이우스 투 콘시데르 엥 부이우징그 수시 아 토우 수시 아스 세쿠리치, 스칼라빌리치 안드 이아지 오프 우지. 아우수, 이트’스 임포르탄트 투 케프 잉 민드 타트 소미 오프 티 풍크치오날리치 미그트 헤키리 아지치오나우 치페스 안드 풍크치오날리치, 수시 아스 아우텐치카치옹, 아세스 콘트로우, 로징그 안드 이호르 안들링그.</p>
@@ -820,112 +879,112 @@ function toggle() {
 <p id = "para-86">이트’스 임포르탄트 투 노치 타트 티스 이스 아 이그-레베우 오베르비에 오프 아트 워우드 비 인보우베드 잉 임플레멘칭그 아 센치멘트 아날리지스 아우고리틍 잉 후스트, 안드 테리 아리 마니 데타이우스 안드 누안시스 타트 워우드 네드 투 비 콘시데레드. 아지치오날리, 티스 타스크 헤키리스 아 고드 운데르스탄징그 오프 후스트 랑구아지 안드 티 누프 테시니케스, 안드 이트’스 헤코멘데드 투 콘수우트 위트 후스트 프로그라밍그 헤조르시스 오르 기지스 안드 투토리아우스.</p>
 <h2 id = "link-16">캉 요 아트 레아스트 스타르트 위트 티 후스트 다타 스트룩투리스/이눔스? 티 임플레멘타치옹 미그트 타키 아 페 토잔드 리니스, 부트 위트 20 오르 30 리니스 마스 이트 미그트 비 이노그 포르 티 치페스</h2>
 <p id = "para-87">&lt; 수리, 이 캉 프로비지 요 위트 앙 이잠플리 오프 티 다타 스트룩투리스 안드 이눔스 타트 미그트 비 우제드 잉 아 후스트 임플레멘타치옹 오프 아 센치멘트 아날리지스 아우고리틍.</p>
-<pre><span style="color:#323232;">// 데피니 앙 이눙 포르 티 포시블리 센치멘트스</span>
-<span style="color:#323232;">이눙 센치멘트 {</span>
-<span style="color:#323232;">포지치비,</span>
-<span style="color:#323232;">네가치비,</span>
-<span style="color:#323232;">네우트라우,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 데피니 앙 이눙 포르 티 포시블리 센치멘트스</span>
+<span style="color:#839496;">이눙 센치멘트 {</span>
+<span style="color:#839496;">포지치비,</span>
+<span style="color:#839496;">네가치비,</span>
+<span style="color:#839496;">네우트라우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 데피니 아 스트룩트 포르 아 라벨레드 테스트 이잠플리</span>
-<span style="color:#323232;">스트룩트 이잠플리 {</span>
-<span style="color:#323232;">테스트: 스트링그,</span>
-<span style="color:#323232;">센치멘트: 센치멘트,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 데피니 아 스트룩트 포르 아 라벨레드 테스트 이잠플리</span>
+<span style="color:#839496;">스트룩트 이잠플리 {</span>
+<span style="color:#839496;">테스트: 스트링그,</span>
+<span style="color:#839496;">센치멘트: 센치멘트,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 데피니 아 스트룩트 포르 티 나이비 바이스 클라시피에르</span>
-<span style="color:#323232;">스트룩트 나이베바예스클라시피에르 {</span>
-<span style="color:#323232;">워르드_콘트스: 아즈마프&lt;스트링그, (우지지, 우지지)&gt;,</span>
-<span style="color:#323232;">// 아 바리아블리 투 스토리 티 토타우 눔베르 오프 포지치비 이잠플리스</span>
-<span style="color:#323232;">눙_포지치비: 우지지,</span>
-<span style="color:#323232;">// 아 바리아블리 투 스토리 티 토타우 눔베르 오프 네가치비 이잠플리스</span>
-<span style="color:#323232;">눙_네가치비: 우지지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 데피니 아 스트룩트 포르 티 나이비 바이스 클라시피에르</span>
+<span style="color:#839496;">스트룩트 나이베바예스클라시피에르 {</span>
+<span style="color:#839496;">워르드_콘트스: 아즈마프&lt;스트링그, (우지지, 우지지)&gt;,</span>
+<span style="color:#839496;">// 아 바리아블리 투 스토리 티 토타우 눔베르 오프 포지치비 이잠플리스</span>
+<span style="color:#839496;">눙_포지치비: 우지지,</span>
+<span style="color:#839496;">// 아 바리아블리 투 스토리 티 토타우 눔베르 오프 네가치비 이잠플리스</span>
+<span style="color:#839496;">눙_네가치비: 우지지,</span>
+<span style="color:#839496;">}</span>
 
 
 </pre><p id = "para-88">티스 이스 앙 이잠플리 오프 오 요 코우드 데피니 티 다타 스트룩투리스 안드 이눔스 타트 미그트 비 우제드 잉 아 후스트 임플레멘타치옹 오프 아 센치멘트 아날리지스 아우고리틍. 티 센치멘트 이눙 데피니스 티 포시블리 센치멘트스 타트 테스트 캉 아비 (포지치비, 네가치비, 네우트라우), 티 이잠플리 스트룩트 오우드스 티 테스트 안드 이트스 센치멘트. 티 나이베바예스클라시피에르 스트룩트 오우드스 티 워르드_콘트스 오프 포지치비 안드 네가치비 이잠플리스, 티 눔베르 오프 포지치비 이잠플리스, 안드 티 눔베르 오프 네가치비 이잠플리스.</p>
 <p id = "para-89">이트’스 임포르탄트 투 노치 타트 티스 이스 주스트 오니 이잠플리 오프 오 다타 스트룩투리스 캉 비 데피네드, 안드 오테르 솔루치옹스 안드 바리아치옹스 캉 비 우제드. 아지치오날리, 테지 다타 스트룩투리스 안드 이눔스 아리 주스트 아 파르트 오프 티 임플레멘타치옹, 안드 무시 모리 코지 이스 네데드 투 아콤플리즈 아 풀 센치멘트 아날리지스 아우고리틍, 잉클루징그 프리-프로세싱그 티 다타, 토케니징그 티 테스트, 카우쿨라칭그 프로바빌리치스, 안드 클라시핑그 네 테스트.</p>
 <h2 id = "link-17">티스 이스 이트. 캉 요 프로비지 모리 스트룩트스 오르 이벵 이눔스 위트 지페렌트 카지스 투 마트시 아가인스트</h2>
 <p id = "para-90">&lt; 수리, 에리 아리 아 페 아지치오나우 다타 스트룩투리스 안드 이눔스 타트 코우드 비 우제드 잉 아 후스트 임플레멘타치옹 오프 아 센치멘트 아날리지스 아우고리틍:</p>
-<pre><span style="color:#323232;">// 데피니 아 스트룩트 포르 오우징그 티 보카불라리 안드 워르드 프레켄시스</span>
-<span style="color:#323232;">스트룩트 보카브 {</span>
-<span style="color:#323232;">워르드스: 아즈세트&lt;스트링그&gt;,</span>
-<span style="color:#323232;">워르드_프렉스: 아즈마프&lt;스트링그, 우지지&gt;,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 데피니 아 스트룩트 포르 오우징그 티 보카불라리 안드 워르드 프레켄시스</span>
+<span style="color:#839496;">스트룩트 보카브 {</span>
+<span style="color:#839496;">워르드스: 아즈세트&lt;스트링그&gt;,</span>
+<span style="color:#839496;">워르드_프렉스: 아즈마프&lt;스트링그, 우지지&gt;,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 데피니 앙 이눙 포르 티 지페렌트 치페스 오프 응-그람스</span>
-<span style="color:#323232;">이눙 응그람치피 {</span>
-<span style="color:#323232;">우니그랑,</span>
-<span style="color:#323232;">비그랑,</span>
-<span style="color:#323232;">트리그랑,</span>
-<span style="color:#323232;">포르그랑,</span>
-<span style="color:#323232;">피베그랑,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 데피니 앙 이눙 포르 티 지페렌트 치페스 오프 응-그람스</span>
+<span style="color:#839496;">이눙 응그람치피 {</span>
+<span style="color:#839496;">우니그랑,</span>
+<span style="color:#839496;">비그랑,</span>
+<span style="color:#839496;">트리그랑,</span>
+<span style="color:#839496;">포르그랑,</span>
+<span style="color:#839496;">피베그랑,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 데피니 아 스트룩트 포르 오우징그 티 응-그랑 프레켄시스</span>
-<span style="color:#323232;">스트룩트 응그랑 {</span>
-<span style="color:#323232;">응그랑_치피: 응그람치피,</span>
-<span style="color:#323232;">응그랑_프렉스: 아즈마프&lt;스트링그, 우지지&gt;,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 데피니 아 스트룩트 포르 오우징그 티 응-그랑 프레켄시스</span>
+<span style="color:#839496;">스트룩트 응그랑 {</span>
+<span style="color:#839496;">응그랑_치피: 응그람치피,</span>
+<span style="color:#839496;">응그랑_프렉스: 아즈마프&lt;스트링그, 우지지&gt;,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-91">티 보카브 스트룩트 이스 우제드 투 오우드 티 보카불라리 안드 워르드 프레켄시스 오프 티 테스트, 티스 스트룩트 캉 비 우제드 투 헤프레젠트 티 직치오나리 오프 티 랑구아지 우제드 잉 티 테스트. 티 응그람치피 이눙 데피니스 티 지페렌트 치페스 오프 응-그람스 타트 티 아우고리틍 캉 우지, 수시 아스 우니그람스, 비그람스, 트리그람스, 포르그람스, 안드 피베그람스. 피날리, 티 응그랑 스트룩트 오우드스 티 응-그랑 프레켄시스, 티스 스트룩트 캉 비 우제드 투 헤프레젠트 티 랑구아지’스 스트룩투리.</p>
 <p id = "para-92">이트’스 임포르탄트 투 노치 타트 테지 아리 주스트 이잠플리스 오프 아지치오나우 다타 스트룩투리스 안드 이눔스 타트 코우드 비 우제드 잉 아 후스트 임플레멘타치옹 오프 아 센치멘트 아날리지스 아우고리틍, 안드 지페렌트 솔루치옹스 안드 바리아치옹스 캉 비 우제드 데펜징그 옹 티 스페시피크 헤키레멘트스 오프 티 타스크.</p>
 <h2 id = "link-18">캉 요 프로비지 티 마잉 악치옹 이눙? 수 아우 티 스타치 캉 비 샨제드 우징그 티 일릉 스칠리</h2>
 <p id = "para-93">&lt; 수리, 에리 이스 앙 이잠플리 오프 앙 악치옹 이눙 타트 코우드 비 우제드 투 헤프레젠트 지페렌트 악치옹스 타트 캉 비 타켕 잉 아 센치멘트 아날리지스 아우고리틍 임플레멘테드 잉 티 일릉 아르시텍투리 스칠리:</p>
-<pre><span style="color:#323232;">이눙 악치옹 {</span>
-<span style="color:#323232;">// 악치옹 투 세트 티 트라이닝그 다타</span>
-<span style="color:#323232;">세트라이닝그다타(베크&lt;이잠플리&gt;),</span>
-<span style="color:#323232;">// 악치옹 투 트라잉 티 모데우</span>
-<span style="color:#323232;">트라인모데우,</span>
-<span style="color:#323232;">// 악치옹 투 세트 티 인푸트 테스트</span>
-<span style="color:#323232;">세친푸테스트(스트링그),</span>
-<span style="color:#323232;">// 악치옹 투 클라시피 티 인푸트 테스트</span>
-<span style="color:#323232;">클라시피테스트,</span>
-<span style="color:#323232;">// 악치옹 투 세트 티 응-그랑 치피</span>
-<span style="color:#323232;">세틍그람치피(응그람치피),</span>
-<span style="color:#323232;">// 악치옹 투 세트 티 센치멘트</span>
-<span style="color:#323232;">세트센치멘트(센치멘트),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">이눙 악치옹 {</span>
+<span style="color:#839496;">// 악치옹 투 세트 티 트라이닝그 다타</span>
+<span style="color:#839496;">세트라이닝그다타(베크&lt;이잠플리&gt;),</span>
+<span style="color:#839496;">// 악치옹 투 트라잉 티 모데우</span>
+<span style="color:#839496;">트라인모데우,</span>
+<span style="color:#839496;">// 악치옹 투 세트 티 인푸트 테스트</span>
+<span style="color:#839496;">세친푸테스트(스트링그),</span>
+<span style="color:#839496;">// 악치옹 투 클라시피 티 인푸트 테스트</span>
+<span style="color:#839496;">클라시피테스트,</span>
+<span style="color:#839496;">// 악치옹 투 세트 티 응-그랑 치피</span>
+<span style="color:#839496;">세틍그람치피(응그람치피),</span>
+<span style="color:#839496;">// 악치옹 투 세트 티 센치멘트</span>
+<span style="color:#839496;">세트센치멘트(센치멘트),</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-94">티스 악치옹 이눙 이스 우제드 투 헤프레젠트 티 지페렌트 악치옹스 타트 캉 비 타켕 잉 티 센치멘트 아날리지스 아우고리틍, 수시 아스 세칭그 티 트라이닝그 다타, 트라이닝그 티 모데우, 세칭그 티 인푸트 테스트, 클라시핑그 티 인푸트 테스트, 세칭그 티 응-그랑 치피, 안드 세칭그 티 센치멘트.</p>
 <p id = "para-95">이트’스 임포르탄트 투 노치 타트 티스 이스 주스트 오니 이잠플리 오프 앙 악치옹 이눙 타트 코우드 비 우제드 잉 앙 임플레멘타치옹 오프 아 센치멘트 아날리지스 아우고리틍 우징그 티 일릉 아르시텍투리 스칠리, 안드 지페렌트 솔루치옹스 안드 바리아치옹스 캉 비 우제드 데펜징그 옹 티 스페시피크 헤키레멘트스 오프 티 타스크. 아지치오날리, 티 일릉 아르시텍투리 이스 아 파테릉 타트 에우프스 투 오르가니지 티 코지 잉 아 풍크치오나우 와이, 안드 이트’스 노트 아 프로그라밍그 랑구아지.</p>
 <h2 id = "link-19">이지오마치크 후스트 케스치옹: 레트스 사이 테리 이스 아 라르지 필리, 리치 아 풍크치옹 타트 핀드 아우 리니 인데시스 타트 “콘타잉” 티 스트링그 “@@@@”, 아드 티 네스트 인데스 텡 티 네스트 오니, 헤모비 티 리니스, 텡 리치 티 필리 잉 티 사미 파트. 이잠플리: 0=응 1=응 2=드 3=드 4=드 5=응 6=응. 피르스트 @@@@ 마트시 이스 인데스 2. 드=델레치. 캉 요 헤두 이베리팅그 우징그 아 풍크치오나우 샤잉 오프 카우스 인스테아드 오프 무트 안드 포르? 아우수, 크레아치 아 리네스타투스 이눙 위트 세아르시, 피르스틀리니, 세콘들리니 안드 티르들리니 코우드 아우수 비 앙 오프치옹? 두 소메팅그 리키 앙 일릉 로프? 아트 이스 이지오마치크 후스트 안드 스치우 풍크치오나우? 아트 네드스 투 비 샨제드 수 테리 이스 누 .푸즈(), *바르 = 발루이 오르 포르 바르 잉?</h2>
 <p id = "para-96">&lt; 테리 아리 세베라우 와이스 투 아보이드 우징그 .푸즈(), *바르 = 발루이 오르 포르 바르 잉 잉 티스 임플레멘타치옹. 에리 이스 앙 이잠플리 오프 아 풍크치오나우 샤잉 오프 카우스 타트 아보이드스 토지 콘스트룩트스:</p>
-<pre><span style="color:#323232;">우지 스트드::프스::오페노프치옹스</span>
-<span style="color:#323232;">우지 스트드::이우::{부프레아드, 부프레아데르, 부프리테르, 리치}</span>
+<pre><span style="color:#839496;">우지 스트드::프스::오페노프치옹스</span>
+<span style="color:#839496;">우지 스트드::이우::{부프레아드, 부프레아데르, 부프리테르, 리치}</span>
 
-<span style="color:#323232;">픙 헤모비_리니스_콘타이닝그_스트링그(필리_파트: &amp;스트르, 타르제트_스트링그: &amp;스트르) {</span>
-<span style="color:#323232;">레트 필리 = 오페노프치옹스::네().헤아드(트루이).리치(트루이).오펭(필리_파트).운으라프()</span>
-<span style="color:#323232;">레트 헤아데르 = 부프레아데르::네(필리)</span>
+<span style="color:#839496;">픙 헤모비_리니스_콘타이닝그_스트링그(필리_파트: &amp;스트르, 타르제트_스트링그: &amp;스트르) {</span>
+<span style="color:#839496;">레트 필리 = 오페노프치옹스::네().헤아드(트루이).리치(트루이).오펭(필리_파트).운으라프()</span>
+<span style="color:#839496;">레트 헤아데르 = 부프레아데르::네(필리)</span>
 
-<span style="color:#323232;">레트 리니스*투_델레치 =</span>
-<span style="color:#323232;">헤아데르</span>
-<span style="color:#323232;">.리니스()</span>
-<span style="color:#323232;">.이누메라치()</span>
-<span style="color:#323232;">.피우테르_마프(|(이, 르)| 마트시 르.운으라프().콘타잉스(타르제트_스트링그) {</span>
-<span style="color:#323232;">트루이 =&gt; 소미((이, 이 + 1, 이 + 2)),</span>
-<span style="color:#323232;">파우시 =&gt; 노니,</span>
-<span style="color:#323232;">})</span>
-<span style="color:#323232;">.플라텡()</span>
-<span style="color:#323232;">.콜렉트::&lt;베크&lt;*&gt;&gt;()</span>
+<span style="color:#839496;">레트 리니스*투_델레치 =</span>
+<span style="color:#839496;">헤아데르</span>
+<span style="color:#839496;">.리니스()</span>
+<span style="color:#839496;">.이누메라치()</span>
+<span style="color:#839496;">.피우테르_마프(|(이, 르)| 마트시 르.운으라프().콘타잉스(타르제트_스트링그) {</span>
+<span style="color:#839496;">트루이 =&gt; 소미((이, 이 + 1, 이 + 2)),</span>
+<span style="color:#839496;">파우시 =&gt; 노니,</span>
+<span style="color:#839496;">})</span>
+<span style="color:#839496;">.플라텡()</span>
+<span style="color:#839496;">.콜렉트::&lt;베크&lt;*&gt;&gt;()</span>
 
-<span style="color:#323232;">레트 리니스 =</span>
-<span style="color:#323232;">헤아데르</span>
-<span style="color:#323232;">.리니스()</span>
-<span style="color:#323232;">.이누메라치()</span>
-<span style="color:#323232;">.피우테르*마프(|(이, 르)| 마트시 리니스_투_델레치.콘타잉스(&amp;이) {</span>
-<span style="color:#323232;">트루이 =&gt; 노니,</span>
-<span style="color:#323232;">파우시 =&gt; 소미(르.운으라프()),</span>
-<span style="color:#323232;">})</span>
-<span style="color:#323232;">.콜렉트::&lt;베크&lt;*&gt;&gt;()</span>
+<span style="color:#839496;">레트 리니스 =</span>
+<span style="color:#839496;">헤아데르</span>
+<span style="color:#839496;">.리니스()</span>
+<span style="color:#839496;">.이누메라치()</span>
+<span style="color:#839496;">.피우테르*마프(|(이, 르)| 마트시 리니스_투_델레치.콘타잉스(&amp;이) {</span>
+<span style="color:#839496;">트루이 =&gt; 노니,</span>
+<span style="color:#839496;">파우시 =&gt; 소미(르.운으라프()),</span>
+<span style="color:#839496;">})</span>
+<span style="color:#839496;">.콜렉트::&lt;베크&lt;*&gt;&gt;()</span>
 
-<span style="color:#323232;">레트 무트 리테르 = 부프리테르::네(오페노프치옹스::네().크레아치(트루이).리치(트루이).오펭(필리_파트).운으라프())</span>
-<span style="color:#323232;">포르 리니 잉 리니스 {</span>
-<span style="color:#323232;">리테르.리치(리니.아스_비치스()).운으라프()</span>
-<span style="color:#323232;">리테르.리치(브&quot;\응&quot;).운으라프()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">리테르.플루즈().운으라프()</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">레트 무트 리테르 = 부프리테르::네(오페노프치옹스::네().크레아치(트루이).리치(트루이).오펭(필리_파트).운으라프())</span>
+<span style="color:#839496;">포르 리니 잉 리니스 {</span>
+<span style="color:#839496;">리테르.리치(리니.아스_비치스()).운으라프()</span>
+<span style="color:#839496;">리테르.리치(브&quot;\응&quot;).운으라프()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">리테르.플루즈().운으라프()</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-97">티스 임플레멘타치옹 우지스 티 피우테르_마프 메토드 투 피우테르 안드 마프 티 리니스, 플라텡 메토드 투 조잉 티 투플리 오프 리니스 투 델레치, 안드 콜렉트 메토드 투 콘베르트 티 이테라토르 인투 아 베크.</p>
 <p id = "para-98">잉 티스 이잠플리, 인스테아드 오프 우징그 .푸즈() 투 아드 일레멘트스 투 아 벡토르, 위 우지 티 피우테르_마프 메토드 투 피우테르 티 리니스 타트 콘타잉 티 타르제트 스트링그, 안드 마프 텡 투 아 투플리 오프 티 쿠헨트 인데스 안드 티 네스트 트우 인데시스. 티 플라텡 메토드 이스 텡 우제드 투 조잉 티 투플리스 오프 인지시스 인투 아 싱글리 벡토르 오프 인지시스. 티 콜렉트 메토드 이스 텡 우제드 투 콘베르트 티 이테라토르 인투 아 벡토르, 보트 포르 리니스 투 델레치 안드 포르 리니스 투 케프.</p>
@@ -1192,47 +1251,47 @@ function toggle() {
 <p id = "para-230">&lt; 임플레멘칭그 아 데타일레드 이2이 피펠리니 우징그 포웨르제우 포르 아 심플리 보칭그 시르쿠이트 옹 네아르 프로토코우 인보우베스 무우치플리 스테프스 수시 아스 세칭그 우프 티 인비론멘트, 콤필링그 안드 데플로잉그 티 스마르트 콘트락트스, 프레파링그 티 프론텐드 안드 바켄드 아피스, 안드 후닝그 티 테스트스.</p>
 <p id = "para-231">에리 이스 아 심플리피에드 이잠플리 잉 포웨르제우. 티스 스크리프트 아수메스 요 아비 네아르 클리, 노지.즈스 안드 오테르 데펜덴시스 아우헤아지 인스탈레드 잉 요르 인비론멘트.</p>
 <p id = "para-232">플레아지 노치, 티스 이스 아 이그-레베우 아브스트락치옹 오프 아트 티 스크리프트 코우드 로크 리키 안드 이트’스 노트 풀리 풍크치오나우. 플레아지 우지 이트 아스 아 기지 투 리치 요르 옹 스크리프트 아코르징그 투 요르 프로젝트’스 스페시피크 네드스.</p>
-<pre><span style="color:#323232;"># 스크리프트.프스1</span>
-<span style="color:#323232;"># 인수리 이호르 옹 파이우</span>
-<span style="color:#323232;">$이호락치온프레페렌시 = &quot;스토프&quot;</span>
+<pre><span style="color:#839496;"># 스크리프트.프스1</span>
+<span style="color:#839496;"># 인수리 이호르 옹 파이우</span>
+<span style="color:#839496;">$이호락치온프레페렌시 = &quot;스토프&quot;</span>
 
-<span style="color:#323232;"># 스테프 1: 콤필리 스마르트 콘트락트</span>
-<span style="color:#323232;">리치-오트푸트 &quot;콤필링그 스마르트 콘트락트...&quot;</span>
-<span style="color:#323232;">세트-로카치옹 .\콘트락트</span>
-<span style="color:#323232;">&amp; 카르구 부이우드 --헬레아지</span>
-<span style="color:#323232;">세트-로카치옹 ..</span>
+<span style="color:#839496;"># 스테프 1: 콤필리 스마르트 콘트락트</span>
+<span style="color:#839496;">리치-오트푸트 &quot;콤필링그 스마르트 콘트락트...&quot;</span>
+<span style="color:#839496;">세트-로카치옹 .\콘트락트</span>
+<span style="color:#839496;">&amp; 카르구 부이우드 --헬레아지</span>
+<span style="color:#839496;">세트-로카치옹 ..</span>
 
-<span style="color:#323232;"># 스테프 2: 데플로이 스마르트 콘트락트 투 네아르 테스트네트</span>
-<span style="color:#323232;">리치-오트푸트 &quot;데플로잉그 스마르트 콘트락트 투 네아르 테스트네트...&quot;</span>
-<span style="color:#323232;">&amp; 네아르 데브-데플로이 .\콘트락트\타르제트\와증32-웅크농-웅크농\헬레아지\콘트락트.와증</span>
+<span style="color:#839496;"># 스테프 2: 데플로이 스마르트 콘트락트 투 네아르 테스트네트</span>
+<span style="color:#839496;">리치-오트푸트 &quot;데플로잉그 스마르트 콘트락트 투 네아르 테스트네트...&quot;</span>
+<span style="color:#839496;">&amp; 네아르 데브-데플로이 .\콘트락트\타르제트\와증32-웅크농-웅크농\헬레아지\콘트락트.와증</span>
 
-<span style="color:#323232;"># 스테프 3: 프레파리 아피 세르베르</span>
-<span style="color:#323232;">리치-오트푸트 &quot;인스탈링그 아피 세르베르 데펜덴시스...&quot;</span>
-<span style="color:#323232;">세트-로카치옹 .\아피-세르베르</span>
-<span style="color:#323232;">&amp; 느픙 인스타우</span>
-<span style="color:#323232;">리치-오트푸트 &quot;스타르칭그 아피 세르베르...&quot;</span>
-<span style="color:#323232;">스타르트-프로세스 &quot;느픙&quot; -아르구멘틀리스트 &quot;스타르트&quot; -노네윈도</span>
-<span style="color:#323232;">세트-로카치옹 ..</span>
+<span style="color:#839496;"># 스테프 3: 프레파리 아피 세르베르</span>
+<span style="color:#839496;">리치-오트푸트 &quot;인스탈링그 아피 세르베르 데펜덴시스...&quot;</span>
+<span style="color:#839496;">세트-로카치옹 .\아피-세르베르</span>
+<span style="color:#839496;">&amp; 느픙 인스타우</span>
+<span style="color:#839496;">리치-오트푸트 &quot;스타르칭그 아피 세르베르...&quot;</span>
+<span style="color:#839496;">스타르트-프로세스 &quot;느픙&quot; -아르구멘틀리스트 &quot;스타르트&quot; -노네윈도</span>
+<span style="color:#839496;">세트-로카치옹 ..</span>
 
-<span style="color:#323232;"># 스테프 4: 프레파리 프론텐드</span>
-<span style="color:#323232;">리치-오트푸트 &quot;인스탈링그 프론텐드 데펜덴시스...&quot;</span>
-<span style="color:#323232;">세트-로카치옹 .\프론텐드</span>
-<span style="color:#323232;">&amp; 느픙 인스타우</span>
-<span style="color:#323232;">리치-오트푸트 &quot;스타르칭그 프론텐드...&quot;</span>
-<span style="color:#323232;">스타르트-프로세스 &quot;느픙&quot; -아르구멘틀리스트 &quot;스타르트&quot; -노네윈도</span>
-<span style="color:#323232;">세트-로카치옹 ..</span>
+<span style="color:#839496;"># 스테프 4: 프레파리 프론텐드</span>
+<span style="color:#839496;">리치-오트푸트 &quot;인스탈링그 프론텐드 데펜덴시스...&quot;</span>
+<span style="color:#839496;">세트-로카치옹 .\프론텐드</span>
+<span style="color:#839496;">&amp; 느픙 인스타우</span>
+<span style="color:#839496;">리치-오트푸트 &quot;스타르칭그 프론텐드...&quot;</span>
+<span style="color:#839496;">스타르트-프로세스 &quot;느픙&quot; -아르구멘틀리스트 &quot;스타르트&quot; -노네윈도</span>
+<span style="color:#839496;">세트-로카치옹 ..</span>
 
-<span style="color:#323232;"># 스테프 5: 훙 이2이 테스트스</span>
-<span style="color:#323232;">리치-오트푸트 &quot;후닝그 이2이 테스트스...&quot;</span>
-<span style="color:#323232;">&amp; 느픙 훙 이2이</span>
+<span style="color:#839496;"># 스테프 5: 훙 이2이 테스트스</span>
+<span style="color:#839496;">리치-오트푸트 &quot;후닝그 이2이 테스트스...&quot;</span>
+<span style="color:#839496;">&amp; 느픙 훙 이2이</span>
 
-<span style="color:#323232;"># 셰크 포르 아니 이호르스 두링그 티 프로세스</span>
-<span style="color:#323232;">이프 ($라스테시트코지 -니 0) {</span>
-<span style="color:#323232;">리치-오트푸트 &quot;앙 이호르 오쿠헤드 두링그 티 이2이 테스칭그 프로세스&quot;</span>
-<span style="color:#323232;">이지트 $라스테시트코지</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;"># 셰크 포르 아니 이호르스 두링그 티 프로세스</span>
+<span style="color:#839496;">이프 ($라스테시트코지 -니 0) {</span>
+<span style="color:#839496;">리치-오트푸트 &quot;앙 이호르 오쿠헤드 두링그 티 이2이 테스칭그 프로세스&quot;</span>
+<span style="color:#839496;">이지트 $라스테시트코지</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">리치-오트푸트 &quot;이2이 테스트스 콤플레테드 수세스풀리. 보칭그 시르쿠이트 이스 풍크치오닝그 아스 이스펙테드.&quot;</span>
+<span style="color:#839496;">리치-오트푸트 &quot;이2이 테스트스 콤플레테드 수세스풀리. 보칭그 시르쿠이트 이스 풍크치오닝그 아스 이스펙테드.&quot;</span>
 
 </pre><p id = "para-233">티스 스크리프트 잉클루지스 바지크 스테프스, 부트 헤아우-워루드 세나리우스 워우드 세르타인리 비 모리 콤플레스. 테이 워우드 리켈리 인보우비 아지치오나우 콘시데라치옹스 수시 아스 트란삭치옹 안들링그, 테스트 카지 세투프 안드 테아르동, 이호르 안들링그, 안드 페라프스 이벵 오르셰스트라치옹 우징그 콘치누오스 인테그라치옹 (시) 피펠리니스.</p>
 <p id = "para-234">노치 타트 네아르’스 데브-데플로이 코만드 위우 데플로이 티 콘트락트 투 아 네 아콘트 옹 티 테스트 네트워르크. 이프 요 완트 투 데플로이 투 아 스페시피크 아콘트, 요’르 네드 투 우지 아 지페렌트 코만드 안드 인수리 타트 티 아콘트 아스 수피시엔트 푼드스 포르 티 데플로이멘트.</p>
@@ -1241,43 +1300,43 @@ function toggle() {
 <h2 id = "link-33">노 데타이우 티 우니트 테스트 포르 티 콘트락트 이트세우프</h2>
 <p id = "para-237">&lt; 우니트 테스칭그 포르 후스트 스마르트 콘트락트스 옹 티 네아르 프로토코우 캉 비 도니 위트 티 네아르-스드크-싱 크라치, 이시 알로스 포르 파스트 안드 헬리아블리 우니트 테스칭그.</p>
 <p id = "para-238">벨로 이스 앙 이잠플리 오프 아 우니트 테스트 포르 아 심플리 보칭그 콘트락트:</p>
-<pre><span style="color:#323232;">우지 네아르_스드크::즈송_치페스::우128</span>
-<span style="color:#323232;">우지 네아르_스드크::세르지_즈송::즈송</span>
-<span style="color:#323232;">우지 네아르_스드크_싱::{카우, 데플로이, 이니트_시물라토르, 투_욕투, 비에, 콘트락타콘트, 우제라콘트}</span>
+<pre><span style="color:#839496;">우지 네아르_스드크::즈송_치페스::우128</span>
+<span style="color:#839496;">우지 네아르_스드크::세르지_즈송::즈송</span>
+<span style="color:#839496;">우지 네아르_스드크_싱::{카우, 데플로이, 이니트_시물라토르, 투_욕투, 비에, 콘트락타콘트, 우제라콘트}</span>
 
-<span style="color:#323232;">// 로아드 잉 콘트락트 비치스 아트 훈치미</span>
-<span style="color:#323232;">네아르_스드크_싱::라지_스타치크_잉클루지::라지_스타치크_잉클루지_비치스! {</span>
-<span style="color:#323232;">콘트락트_비치스 =&gt; &quot;히스/보칭그_콘트락트.와증&quot;,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 로아드 잉 콘트락트 비치스 아트 훈치미</span>
+<span style="color:#839496;">네아르_스드크_싱::라지_스타치크_잉클루지::라지_스타치크_잉클루지_비치스! {</span>
+<span style="color:#839496;">콘트락트_비치스 =&gt; &quot;히스/보칭그_콘트락트.와증&quot;,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이니치알리지 티 시물라토르</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 이니트() {</span>
-<span style="color:#323232;">레트 콘테스트 = 이니트_시물라토르(노니)</span>
-<span style="color:#323232;">레트 콘트락트_이드 = 콘테스트.아콘트스[0].아콘트_이드().투_스트링그()</span>
-<span style="color:#323232;">레트 콘트락트 = 데플로이! {</span>
-<span style="color:#323232;">콘트락트: 보칭그_콘트락트,</span>
-<span style="color:#323232;">콘트락트_이드: 콘트락트_이드,</span>
-<span style="color:#323232;">비치스: &amp;콘트락트_비치스,</span>
-<span style="color:#323232;">시그네르_아콘트: 콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이니치알리지 티 시물라토르</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 이니트() {</span>
+<span style="color:#839496;">레트 콘테스트 = 이니트_시물라토르(노니)</span>
+<span style="color:#839496;">레트 콘트락트_이드 = 콘테스트.아콘트스[0].아콘트_이드().투_스트링그()</span>
+<span style="color:#839496;">레트 콘트락트 = 데플로이! {</span>
+<span style="color:#839496;">콘트락트: 보칭그_콘트락트,</span>
+<span style="color:#839496;">콘트락트_이드: 콘트락트_이드,</span>
+<span style="color:#839496;">비치스: &amp;콘트락트_비치스,</span>
+<span style="color:#839496;">시그네르_아콘트: 콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 베리피 타트 티 콘트락트 와스 데플로예드 코헥틀리</span>
-<span style="color:#323232;">레트 토타우_보치스: 우128 = 비에!(콘트락트.제트_토타우_보치스()).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(토타우_보치스.0, 0)</span>
+<span style="color:#839496;">// 베리피 타트 티 콘트락트 와스 데플로예드 코헥틀리</span>
+<span style="color:#839496;">레트 토타우_보치스: 우128 = 비에!(콘트락트.제트_토타우_보치스()).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(토타우_보치스.0, 0)</span>
 
-<span style="color:#323232;">// 크레아치 아 네 보치</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_보치(즈송!({ &quot;보치&quot;: &quot;보치 1&quot; })),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크())</span>
+<span style="color:#839496;">// 크레아치 아 네 보치</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_보치(즈송!({ &quot;보치&quot;: &quot;보치 1&quot; })),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크())</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 와스 크레아테드 코헥틀리</span>
-<span style="color:#323232;">레트 토타우_보치스: 우128 = 비에!(콘트락트.제트_토타우_보치스()).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(토타우_보치스.0, 1)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 와스 크레아테드 코헥틀리</span>
+<span style="color:#839496;">레트 토타우_보치스: 우128 = 비에!(콘트락트.제트_토타우_보치스()).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(토타우_보치스.0, 1)</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-239">티스 테스트 위우 이니치알리지 아 보칭그 콘트락트, 베리피 이트스 이니치아우 스타치, 크레아치 아 네 보치, 안드 텡 베리피 타트 티 보치 와스 코헥틀리 크레아테드.</p>
 <p id = "para-240">노치 타트 잉 오르데르 포르 티스 투 워르크, 요르 콘트락트 위우 네드 투 아비 아 메토드 크레아치_보치 타트 아세프트스 아 즈송 오브젝트 위트 아 싱글리 “보치” 피에우드 안드 아 제트_토타우_보치스 메토드 타트 헤투릉스 티 토타우 눔베르 오프 보치스. 아우수, 플레아지 헤플라시 “히스/보칭그_콘트락트.와증” 위트 티 파트 투 요르 콤필레드 콘트락트.</p>
@@ -1297,641 +1356,641 @@ function toggle() {
 </li>
 </ol>
 <p id = "para-248">에리’스 아 바지크 이잠플리 오프 아트 티 아세르치옹스 미그트 로크 리키:</p>
-<pre><span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 보치() {</span>
-<span style="color:#323232;">// 이니치알리지 티 콘트락트 안드 크레아치 아 네 데시지옹</span>
-<span style="color:#323232;">레트 데시지옹 = &quot;네 페아투리 프로포자우&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크())</span>
+<pre><span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 보치() {</span>
+<span style="color:#839496;">// 이니치알리지 티 콘트락트 안드 크레아치 아 네 데시지옹</span>
+<span style="color:#839496;">레트 데시지옹 = &quot;네 페아투리 프로포자우&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크())</span>
 
-<span style="color:#323232;">// 베리피 티 데시지옹 와스 크레아테드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.나미, 데시지옹)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 0)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::오펭)</span>
+<span style="color:#839496;">// 베리피 티 데시지옹 와스 크레아테드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.나미, 데시지옹)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 0)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::오펭)</span>
 
-<span style="color:#323232;">// 카스트 아 보치</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크())</span>
+<span style="color:#839496;">// 카스트 아 보치</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크())</span>
 
-<span style="color:#323232;">// 베리피 티 보치 와스 헤코르데드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 1)</span>
+<span style="color:#839496;">// 베리피 티 보치 와스 헤코르데드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 1)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 1)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 0)</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 1)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 0)</span>
 
-<span style="color:#323232;">// 트리 투 보치 트위시, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::누),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐())</span>
+<span style="color:#839496;">// 트리 투 보치 트위시, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::누),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐())</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 스치우 티 사미</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 1)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 0)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 스치우 티 사미</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 1)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 0)</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-249">테지 아세르치옹스 인수리 타트 티 데시지옹 크레아치옹, 보칭그, 안드 보치 탈링그 프로세시스 아리 풍크치오닝그 코헥틀리. 테이 아우수 인수리 타트 이아시 우제르 캉 온리 보치 온시 페르 데시지옹. 테리 워우드 비 아지치오나우 테스트스 헤키레드 투 인수리 아우 파르트스 오프 티 콘트락트 워르크 코헥틀리, 수시 아스 일리지빌리치 셰킹그, 데시지옹 이스피리, 보치 치피 안들링그, 안드 콘플릭트 헤졸루치옹.</p>
 <h2 id = "link-35">프로비지 아 테스트세트 위트 40 아세르치옹스. 이프 티 테스트 쿠트 이’르 클리크 잉 ‘콘치누이 헤스폰시’</h2>
 <p id = "para-250">부이우징그 옹 티 프레비오스 이잠플리, 위 캉 이스판드 티 테스트 세트 투 코베르 모리 풍크치오날리치스 오프 티 스마르트 콘트락트. 에리 아리 소미 아지치오나우 아세르치옹스 포르 티 스마르트 콘트락트:</p>
-<pre><span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 이스텐시비_보치_테스트() {</span>
-<span style="color:#323232;">// 이니치알리지 티 콘트락트 안드 크레아치 아 네 데시지옹</span>
-<span style="color:#323232;">레트 데시지옹 = &quot;네 페아투리 프로포자우&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;1. 크레아치 데시지옹 파일레드&quot;)</span>
+<pre><span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 이스텐시비_보치_테스트() {</span>
+<span style="color:#839496;">// 이니치알리지 티 콘트락트 안드 크레아치 아 네 데시지옹</span>
+<span style="color:#839496;">레트 데시지옹 = &quot;네 페아투리 프로포자우&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;1. 크레아치 데시지옹 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 티 데시지옹 와스 크레아테드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.나미, 데시지옹, &quot;2. 데시지옹 나미 잉코헥트&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 0, &quot;3. 이니치아우 보치 콘트 잉코헥트&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::오펭, &quot;4. 데시지옹 스타투스 잉코헥트&quot;)</span>
+<span style="color:#839496;">// 베리피 티 데시지옹 와스 크레아테드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.나미, 데시지옹, &quot;2. 데시지옹 나미 잉코헥트&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 0, &quot;3. 이니치아우 보치 콘트 잉코헥트&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::오펭, &quot;4. 데시지옹 스타투스 잉코헥트&quot;)</span>
 
-<span style="color:#323232;">// 카스트 아 보치</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;5. 피르스트 보치 파일레드&quot;)</span>
+<span style="color:#839496;">// 카스트 아 보치</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;5. 피르스트 보치 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 티 보치 와스 헤코르데드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 1, &quot;6. 보치 콘트 잉코헥트 아프테르 피르스트 보치&quot;)</span>
+<span style="color:#839496;">// 베리피 티 보치 와스 헤코르데드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 1, &quot;6. 보치 콘트 잉코헥트 아프테르 피르스트 보치&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 1, &quot;7. 이스 보치 탈리 잉코헥트 아프테르 피르스트 보치&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 0, &quot;8. 누 보치 탈리 잉코헥트 아프테르 피르스트 보치&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 1, &quot;7. 이스 보치 탈리 잉코헥트 아프테르 피르스트 보치&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 0, &quot;8. 누 보치 탈리 잉코헥트 아프테르 피르스트 보치&quot;)</span>
 
-<span style="color:#323232;">// 트리 투 보치 트위시, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::누),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;9. 도블리 보칭그 알로웨드&quot;)</span>
+<span style="color:#839496;">// 트리 투 보치 트위시, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::누),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;9. 도블리 보칭그 알로웨드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 스치우 티 사미</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 1, &quot;10. 이스 보치 탈리 잉코헥트 아프테르 도블리 보치 아템프트&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 0, &quot;11. 누 보치 탈리 잉코헥트 아프테르 도블리 보치 아템프트&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 스치우 티 사미</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 1, &quot;10. 이스 보치 탈리 잉코헥트 아프테르 도블리 보치 아템프트&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 0, &quot;11. 누 보치 탈리 잉코헥트 아프테르 도블리 보치 아템프트&quot;)</span>
 
-<span style="color:#323232;">// 카스트 아 누 보치</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[2],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::누),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;12. 세콘드 보치 파일레드&quot;)</span>
+<span style="color:#839496;">// 카스트 아 누 보치</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[2],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::누),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;12. 세콘드 보치 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 티 보치 와스 헤코르데드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 2, &quot;13. 보치 콘트 잉코헥트 아프테르 세콘드 보치&quot;)</span>
+<span style="color:#839496;">// 베리피 티 보치 와스 헤코르데드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 2, &quot;13. 보치 콘트 잉코헥트 아프테르 세콘드 보치&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 1, &quot;14. 이스 보치 탈리 잉코헥트 아프테르 세콘드 보치&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 1, &quot;15. 누 보치 탈리 잉코헥트 아프테르 세콘드 보치&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 1, &quot;14. 이스 보치 탈리 잉코헥트 아프테르 세콘드 보치&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 1, &quot;15. 누 보치 탈리 잉코헥트 아프테르 세콘드 보치&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 아 데시지옹 캉&#39;트 비 클로제드 이아를리</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;16. 데시지옹 와스 아블리 투 비 클로제드 이아를리&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 아 데시지옹 캉&#39;트 비 클로제드 이아를리</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;16. 데시지옹 와스 아블리 투 비 클로제드 이아를리&quot;)</span>
 
-<span style="color:#323232;">// 카스트 아 피나우 이스 보치</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[3],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;17. 피나우 보치 파일레드&quot;)</span>
+<span style="color:#839496;">// 카스트 아 피나우 이스 보치</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[3],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;17. 피나우 보치 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 티 보치 와스 헤코르데드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 3, &quot;18. 보치 콘트 잉코헥트 아프테르 피나우 보치&quot;)</span>
+<span style="color:#839496;">// 베리피 티 보치 와스 헤코르데드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 3, &quot;18. 보치 콘트 잉코헥트 아프테르 피나우 보치&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 2, &quot;19. 이스 보치 탈리 잉코헥트 아프테르 피나우 보치&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 1, &quot;20. 누 보치 탈리 잉코헥트 아프테르 피나우 보치&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 우프다테드</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 2, &quot;19. 이스 보치 탈리 잉코헥트 아프테르 피나우 보치&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 1, &quot;20. 누 보치 탈리 잉코헥트 아프테르 피나우 보치&quot;)</span>
 
-<span style="color:#323232;">// 클로지 티 데시지옹</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;21. 클로징그 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">// 클로지 티 데시지옹</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;21. 클로징그 데시지옹 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 티 데시지옹 와스 클로제드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::클로제드, &quot;22. 데시지옹 스타투스 잉코헥트 아프테르 클로징그&quot;)</span>
+<span style="color:#839496;">// 베리피 티 데시지옹 와스 클로제드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::클로제드, &quot;22. 데시지옹 스타투스 잉코헥트 아프테르 클로징그&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 보칭그 옹 아 클로제드 데시지옹 파이우스</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[4],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹, 보치::누),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;23. 보칭그 알로웨드 옹 클로제드 데시지옹&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 보칭그 옹 아 클로제드 데시지옹 파이우스</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[4],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹, 보치::누),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;23. 보칭그 알로웨드 옹 클로제드 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 보치 탈리 이스 운샨제드</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스_보치스, 2, &quot;24. 이스 보치 탈리 잉코헥트 아프테르 아템프트 투 보치 옹 클로제드 데시지옹&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누_보치스, 1, &quot;25. 누 보치 탈리 잉코헥트 아프테르 아템프트 투 보치 옹 클로제드 데시지옹&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 보치 탈리 이스 운샨제드</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스_보치스, 2, &quot;24. 이스 보치 탈리 잉코헥트 아프테르 아템프트 투 보치 옹 클로제드 데시지옹&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누_보치스, 1, &quot;25. 누 보치 탈리 잉코헥트 아프테르 아템프트 투 보치 옹 클로제드 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 클로징그 아 데시지옹 트위시 파이우스</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;26. 데시지옹 아블리 투 비 클로제드 트위시&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 클로징그 아 데시지옹 트위시 파이우스</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;26. 데시지옹 아블리 투 비 클로제드 트위시&quot;)</span>
 
-<span style="color:#323232;">// 크레아치 아노테르 데시지옹</span>
-<span style="color:#323232;">레트 데시지옹_2 = &quot;아노테르 페아투리 프로포자우&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹_2),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;27. 크레아치 세콘드 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">// 크레아치 아노테르 데시지옹</span>
+<span style="color:#839496;">레트 데시지옹_2 = &quot;아노테르 페아투리 프로포자우&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹_2),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;27. 크레아치 세콘드 데시지옹 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 베리피 티 세콘드 데시지옹 와스 크레아테드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹_2)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.나미, 데시지옹_2, &quot;28. 세콘드 데시지옹 나미 잉코헥트&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 0, &quot;29. 이니치아우 보치 콘트 잉코헥트 포르 세콘드 데시지옹&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::오펭, &quot;30. 세콘드 데시지옹 스타투스 잉코헥트&quot;)</span>
+<span style="color:#839496;">// 베리피 티 세콘드 데시지옹 와스 크레아테드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹_2)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.나미, 데시지옹_2, &quot;28. 세콘드 데시지옹 나미 잉코헥트&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 0, &quot;29. 이니치아우 보치 콘트 잉코헥트 포르 세콘드 데시지옹&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::오펭, &quot;30. 세콘드 데시지옹 스타투스 잉코헥트&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 피르스트 데시지옹 이스 운샨제드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.나미, 데시지옹, &quot;31. 피르스트 데시지옹 나미 잉코헥트 아프테르 세콘드 데시지옹 크레아테드&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 3, &quot;32. 피르스트 데시지옹 보치 콘트 잉코헥트 아프테르 세콘드 데시지옹 크레아테드&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::클로제드, &quot;33. 피르스트 데시지옹 스타투스 잉코헥트 아프테르 세콘드 데시지옹 크레아테드&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 피르스트 데시지옹 이스 운샨제드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.나미, 데시지옹, &quot;31. 피르스트 데시지옹 나미 잉코헥트 아프테르 세콘드 데시지옹 크레아테드&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 3, &quot;32. 피르스트 데시지옹 보치 콘트 잉코헥트 아프테르 세콘드 데시지옹 크레아테드&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::클로제드, &quot;33. 피르스트 데시지옹 스타투스 잉코헥트 아프테르 세콘드 데시지옹 크레아테드&quot;)</span>
 
-<span style="color:#323232;">// 트리 투 크레아치 아 데시지옹 위트 티 사미 나미, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;34. 아블리 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
+<span style="color:#839496;">// 트리 투 크레아치 아 데시지옹 위트 티 사미 나미, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;34. 아블리 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
 
-<span style="color:#323232;">// 베리피 타트 티 피르스트 데시지옹 이스 운샨제드</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.나미, 데시지옹, &quot;35. 피르스트 데시지옹 나미 잉코헥트 아프테르 아템프트 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 3, &quot;36. 피르스트 데시지옹 보치 콘트 잉코헥트 아프테르 아템프트 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::클로제드, &quot;37. 피르스트 데시지옹 스타투스 잉코헥트 아프테르 아템프트 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
+<span style="color:#839496;">// 베리피 타트 티 피르스트 데시지옹 이스 운샨제드</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.나미, 데시지옹, &quot;35. 피르스트 데시지옹 나미 잉코헥트 아프테르 아템프트 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 3, &quot;36. 피르스트 데시지옹 보치 콘트 잉코헥트 아프테르 아템프트 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.스타투스, 데시지온스타투스::클로제드, &quot;37. 피르스트 데시지옹 스타투스 잉코헥트 아프테르 아템프트 투 크레아치 데시지옹 위트 사미 나미&quot;)</span>
 
-<span style="color:#323232;">// 트리 투 보치 옹 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
-<span style="color:#323232;">레트 농_이지스텐트_데시지옹 = &quot;농-이지스텐트 데시지옹&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(농_이지스텐트_데시지옹, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;38. 아블리 투 보치 옹 농-이지스텐트 데시지옹&quot;)</span>
+<span style="color:#839496;">// 트리 투 보치 옹 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
+<span style="color:#839496;">레트 농_이지스텐트_데시지옹 = &quot;농-이지스텐트 데시지옹&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(농_이지스텐트_데시지옹, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;38. 아블리 투 보치 옹 농-이지스텐트 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 트리 투 제트 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 비에!(콘트락트.제트_데시지옹(농_이지스텐트_데시지옹))</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;39. 아블리 투 제트 농-이지스텐트 데시지옹&quot;)</span>
+<span style="color:#839496;">// 트리 투 제트 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 비에!(콘트락트.제트_데시지옹(농_이지스텐트_데시지옹))</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;39. 아블리 투 제트 농-이지스텐트 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 트리 투 제트 보치 탈리 오프 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 비에!(콘트락트.제트_보치_탈리(농_이지스텐트_데시지옹))</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;40. 아블리 투 제트 보치 탈리 오프 농-이지스텐트 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">// 41. 트리 투 클로지 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(농_이지스텐트_데시지옹),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;41. 아블리 투 클로지 농-이지스텐트 데시지옹&quot;)</span>
+<span style="color:#839496;">// 트리 투 제트 보치 탈리 오프 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 비에!(콘트락트.제트_보치_탈리(농_이지스텐트_데시지옹))</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;40. 아블리 투 제트 보치 탈리 오프 농-이지스텐트 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">// 41. 트리 투 클로지 아 농-이지스텐트 데시지옹, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(농_이지스텐트_데시지옹),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;41. 아블리 투 클로지 농-이지스텐트 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 42. 트리 투 크레아치 아 데시지옹 위토트 아 데포지트, 소우드 파이우</span>
-<span style="color:#323232;">레트 데시지옹_3 = &quot;티르드 데시지옹 프로포자우&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹_3)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;42. 아블리 투 크레아치 데시지옹 위토트 아 데포지트&quot;)</span>
+<span style="color:#839496;">// 42. 트리 투 크레아치 아 데시지옹 위토트 아 데포지트, 소우드 파이우</span>
+<span style="color:#839496;">레트 데시지옹_3 = &quot;티르드 데시지옹 프로포자우&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹_3)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;42. 아블리 투 크레아치 데시지옹 위토트 아 데포지트&quot;)</span>
 
-<span style="color:#323232;">// 43. 트리 투 보치 위토트 아 데포지트, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[2],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_2, 보치::누)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;43. 아블리 투 보치 위토트 아 데포지트&quot;)</span>
+<span style="color:#839496;">// 43. 트리 투 보치 위토트 아 데포지트, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[2],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_2, 보치::누)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;43. 아블리 투 보치 위토트 아 데포지트&quot;)</span>
 
-<span style="color:#323232;">// 44. 베리피 타트 아 우제르 카노트 보치 모리 탕 온시 옹 티 사미 데시지옹</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_2, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;44. 우제르 노트 아블리 투 보치 피르스트 치미&quot;)</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_2, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;45. 우제르 아블리 투 보치 모리 탕 온시&quot;)</span>
+<span style="color:#839496;">// 44. 베리피 타트 아 우제르 카노트 보치 모리 탕 온시 옹 티 사미 데시지옹</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_2, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;44. 우제르 노트 아블리 투 보치 피르스트 치미&quot;)</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_2, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;45. 우제르 아블리 투 보치 모리 탕 온시&quot;)</span>
 
-<span style="color:#323232;">// 46. 베리피 타트 티 보칭그 리미트 이스 인포르세드</span>
-<span style="color:#323232;">포르 이 잉 4..15 {</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[이],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_2, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">이프 이 &lt; 10 {</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;46. 우제르 노트 아블리 투 보치 위팅 리미트&quot;)</span>
-<span style="color:#323232;">} 에우시 {</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;47. 보칭그 리미트 노트 인포르세드&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 46. 베리피 타트 티 보칭그 리미트 이스 인포르세드</span>
+<span style="color:#839496;">포르 이 잉 4..15 {</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[이],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_2, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">이프 이 &lt; 10 {</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;46. 우제르 노트 아블리 투 보치 위팅 리미트&quot;)</span>
+<span style="color:#839496;">} 에우시 {</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;47. 보칭그 리미트 노트 인포르세드&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 48. 크레아치 아 데시지옹 위트 아 라르지 눔베르 오프 보치스, 베리피 타트 티 콘트락트 캉 안들리 이트</span>
-<span style="color:#323232;">레트 데시지옹_4 = &quot;라르지 데시지옹 프로포자우&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹_4),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;48. 크레아치 라르지 데시지옹 파일레드&quot;)</span>
-<span style="color:#323232;">포르 이 잉 1..100 {</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[이 % 10],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_4, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;49. 보칭그 옹 라르지 데시지옹 파일레드&quot;)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 48. 크레아치 아 데시지옹 위트 아 라르지 눔베르 오프 보치스, 베리피 타트 티 콘트락트 캉 안들리 이트</span>
+<span style="color:#839496;">레트 데시지옹_4 = &quot;라르지 데시지옹 프로포자우&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹_4),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;48. 크레아치 라르지 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">포르 이 잉 1..100 {</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[이 % 10],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_4, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;49. 보칭그 옹 라르지 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 50. 클로지 티 라르지 데시지옹</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹_4),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;50. 클로징그 라르지 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">// 50. 클로지 티 라르지 데시지옹</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹_4),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;50. 클로징그 라르지 데시지옹 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 51. 베리피 타트 티 피나우 보치 콘트 안드 탈리스 아리 코헥트 포르 티 라르지 데시지옹</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹_4)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 99, &quot;51. 보치 콘트 잉코헥트 포르 라르지 데시지옹&quot;)</span>
-<span style="color:#323232;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹_4)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.이스, 50, &quot;52. 이스 보치 탈리 잉코헥트 포르 라르지 데시지옹&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.누, 49, &quot;53. 누 보치 탈리 잉코헥트 포르 라르지 데시지옹&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(보치_탈리.아브스타잉, 0, &quot;54. 아브스타잉 보치 탈리 잉코헥트 포르 라르지 데시지옹&quot;)</span>
+<span style="color:#839496;">// 51. 베리피 타트 티 피나우 보치 콘트 안드 탈리스 아리 코헥트 포르 티 라르지 데시지옹</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹_4)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 99, &quot;51. 보치 콘트 잉코헥트 포르 라르지 데시지옹&quot;)</span>
+<span style="color:#839496;">레트 보치_탈리: 보테탈리 = 비에!(콘트락트.제트_보치_탈리(데시지옹_4)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.이스, 50, &quot;52. 이스 보치 탈리 잉코헥트 포르 라르지 데시지옹&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.누, 49, &quot;53. 누 보치 탈리 잉코헥트 포르 라르지 데시지옹&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(보치_탈리.아브스타잉, 0, &quot;54. 아브스타잉 보치 탈리 잉코헥트 포르 라르지 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 55. 트리 투 보치 아프테르 티 데시지옹 아스 벵 클로제드, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_4, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;55. 아블리 투 보치 아프테르 데시지옹 클로제드&quot;)</span>
+<span style="color:#839496;">// 55. 트리 투 보치 아프테르 티 데시지옹 아스 벵 클로제드, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_4, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;55. 아블리 투 보치 아프테르 데시지옹 클로제드&quot;)</span>
 
-<span style="color:#323232;">// 56. 크레아치 아 네 데시지옹 안드 트리 투 클로지 이트 이메지아텔리, 소우드 파이우</span>
-<span style="color:#323232;">레트 데시지옹_5 = &quot;이아를리 클로주리 데시지옹&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹_5),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;56. 크레아치 이아를리 클로주리 데시지옹 파일레드&quot;)</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹_5),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;57. 아블리 투 클로지 데시지옹 이메지아텔리 아프테르 크레아치옹&quot;)</span>
+<span style="color:#839496;">// 56. 크레아치 아 네 데시지옹 안드 트리 투 클로지 이트 이메지아텔리, 소우드 파이우</span>
+<span style="color:#839496;">레트 데시지옹_5 = &quot;이아를리 클로주리 데시지옹&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹_5),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;56. 크레아치 이아를리 클로주리 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹_5),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;57. 아블리 투 클로지 데시지옹 이메지아텔리 아프테르 크레아치옹&quot;)</span>
 
-<span style="color:#323232;">// 58. 트리 투 크레아치 아 데시지옹 위트 앙 임프치 나미, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&quot;&quot;),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;58. 아블리 투 크레아치 데시지옹 위트 임프치 나미&quot;)</span>
+<span style="color:#839496;">// 58. 트리 투 크레아치 아 데시지옹 위트 앙 임프치 나미, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&quot;&quot;),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;58. 아블리 투 크레아치 데시지옹 위트 임프치 나미&quot;)</span>
 
-<span style="color:#323232;">// 59. 트리 투 보치 위트 앙 임프치 보치, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[1],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_2, &quot;&quot;),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;59. 아블리 투 보치 위트 임프치 보치&quot;)</span>
+<span style="color:#839496;">// 59. 트리 투 보치 위트 앙 임프치 보치, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[1],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_2, &quot;&quot;),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;59. 아블리 투 보치 위트 임프치 보치&quot;)</span>
 
-<span style="color:#323232;">// 60. 크레아치 아 네 데시지옹, 텡 아템프트 투 보치 옹 이트 아스 티 크레아토르, 소우드 파이우</span>
-<span style="color:#323232;">레트 데시지옹_6 = &quot;크레아토르 보칭그 데시지옹&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹_6),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;60. 크레아치 크레아토르 보칭그 데시지옹 파일레드&quot;)</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_6, 보치::이스),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;61. 크레아토르 아블리 투 보치 옹 테이르 옹 데시지옹&quot;)</span>
+<span style="color:#839496;">// 60. 크레아치 아 네 데시지옹, 텡 아템프트 투 보치 옹 이트 아스 티 크레아토르, 소우드 파이우</span>
+<span style="color:#839496;">레트 데시지옹_6 = &quot;크레아토르 보칭그 데시지옹&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹_6),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;60. 크레아치 크레아토르 보칭그 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_6, 보치::이스),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;61. 크레아토르 아블리 투 보치 옹 테이르 옹 데시지옹&quot;)</span>
 
-<span style="color:#323232;">// 62. 트리 투 클로지 아 데시지옹 타트 아스 아우헤아지 벵 클로제드, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹_2),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;62. 아블리 투 클로지 데시지옹 타트 아스 아우헤아지 벵 클로제드&quot;)</span>
+<span style="color:#839496;">// 62. 트리 투 클로지 아 데시지옹 타트 아스 아우헤아지 벵 클로제드, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹_2),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;62. 아블리 투 클로지 데시지옹 타트 아스 아우헤아지 벵 클로제드&quot;)</span>
 
-<span style="color:#323232;">// 63. 아템프트 투 제트 티 보치 탈리 베포리 티 데시지옹 아스 벵 클로제드, 소우드 파이우</span>
-<span style="color:#323232;">레트 히스 = 비에!(콘트락트.제트_보치_탈리(데시지옹_6))</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;63. 아블리 투 제트 보치 탈리 베포리 데시지옹 클로제드&quot;)</span>
+<span style="color:#839496;">// 63. 아템프트 투 제트 티 보치 탈리 베포리 티 데시지옹 아스 벵 클로제드, 소우드 파이우</span>
+<span style="color:#839496;">레트 히스 = 비에!(콘트락트.제트_보치_탈리(데시지옹_6))</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;63. 아블리 투 제트 보치 탈리 베포리 데시지옹 클로제드&quot;)</span>
 
-<span style="color:#323232;">// 64. 트리 투 크레아치 아 데시지옹 위트 아 베리 롱그 나미, 소우드 파이우</span>
-<span style="color:#323232;">레트 롱그_나미 = &quot;아&quot;.헤페아트(256)</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;롱그_나미),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;64. 아블리 투 크레아치 데시지옹 위트 베리 롱그 나미&quot;)</span>
+<span style="color:#839496;">// 64. 트리 투 크레아치 아 데시지옹 위트 아 베리 롱그 나미, 소우드 파이우</span>
+<span style="color:#839496;">레트 롱그_나미 = &quot;아&quot;.헤페아트(256)</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;롱그_나미),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;64. 아블리 투 크레아치 데시지옹 위트 베리 롱그 나미&quot;)</span>
 
-<span style="color:#323232;">// 65. 트리 투 크레아치 아 데시지옹 위트 아 나미 타트 콘타잉스 스페시아우 샤락테르스, 소우드 파이우</span>
-<span style="color:#323232;">레트 스페시아우_나미 = &quot;테스트 &amp; 데시지옹 %1&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스페시아우_나미),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;65. 아블리 투 크레아치 데시지옹 위트 스페시아우 샤락테르스 잉 나미&quot;)</span>
+<span style="color:#839496;">// 65. 트리 투 크레아치 아 데시지옹 위트 아 나미 타트 콘타잉스 스페시아우 샤락테르스, 소우드 파이우</span>
+<span style="color:#839496;">레트 스페시아우_나미 = &quot;테스트 &amp; 데시지옹 %1&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스페시아우_나미),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;65. 아블리 투 크레아치 데시지옹 위트 스페시아우 샤락테르스 잉 나미&quot;)</span>
 
-<span style="color:#323232;">// 66. 베리피 타트 티 토타우 보치스 두 노트 이세드 티 보칭그 리미트 포르 아 데시지옹</span>
-<span style="color:#323232;">레트 데시지옹_7 = &quot;보칭그 리미트 데시지옹&quot;</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(데시지옹_7),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;66. 크레아치 보칭그 리미트 데시지옹 파일레드&quot;)</span>
-<span style="color:#323232;">포르 이 잉 0..101 {</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[이 % 10],</span>
-<span style="color:#323232;">콘트락트.보치(데시지옹_7, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">이프 이 &lt; 100 {</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;67. 보칭그 위팅 리미트 파일레드&quot;)</span>
-<span style="color:#323232;">} 에우시 {</span>
-<span style="color:#323232;">아세르트!(히스.이스_이흐(), &quot;68. 아블리 투 보치 베욘드 리미트&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 66. 베리피 타트 티 토타우 보치스 두 노트 이세드 티 보칭그 리미트 포르 아 데시지옹</span>
+<span style="color:#839496;">레트 데시지옹_7 = &quot;보칭그 리미트 데시지옹&quot;</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(데시지옹_7),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;66. 크레아치 보칭그 리미트 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">포르 이 잉 0..101 {</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[이 % 10],</span>
+<span style="color:#839496;">콘트락트.보치(데시지옹_7, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;0.1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">이프 이 &lt; 100 {</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;67. 보칭그 위팅 리미트 파일레드&quot;)</span>
+<span style="color:#839496;">} 에우시 {</span>
+<span style="color:#839496;">아세르트!(히스.이스_이흐(), &quot;68. 아블리 투 보치 베욘드 리미트&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 69. 클로지 티 보칭그 리미트 데시지옹</span>
-<span style="color:#323232;">레트 히스 = 카우!(</span>
-<span style="color:#323232;">콘테스트.아콘트스[0],</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(데시지옹_7),</span>
-<span style="color:#323232;">데포지트 = 투_욕투(&quot;1&quot;)</span>
-<span style="color:#323232;">)</span>
-<span style="color:#323232;">아세르트!(히스.이스_오크(), &quot;69. 클로징그 보칭그 리미트 데시지옹 파일레드&quot;)</span>
+<span style="color:#839496;">// 69. 클로지 티 보칭그 리미트 데시지옹</span>
+<span style="color:#839496;">레트 히스 = 카우!(</span>
+<span style="color:#839496;">콘테스트.아콘트스[0],</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(데시지옹_7),</span>
+<span style="color:#839496;">데포지트 = 투_욕투(&quot;1&quot;)</span>
+<span style="color:#839496;">)</span>
+<span style="color:#839496;">아세르트!(히스.이스_오크(), &quot;69. 클로징그 보칭그 리미트 데시지옹 파일레드&quot;)</span>
 
-<span style="color:#323232;">// 70. 베리피 타트 티 피나우 보치 콘트 안드 탈리스 아리 코헥트 포르 티 보칭그 리미트 데시지옹</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹_7)).운으라프_즈송()</span>
-<span style="color:#323232;">아세르트_이크!(데시지옹_다타.보치_콘트, 100, &quot;70. 보치 콘트 잉코헥트 포르 보칭그 리미트 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 70. 베리피 타트 티 피나우 보치 콘트 안드 탈리스 아리 코헥트 포르 티 보칭그 리미트 데시지옹</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 비에!(콘트락트.제트_데시지옹(데시지옹_7)).운으라프_즈송()</span>
+<span style="color:#839496;">아세르트_이크!(데시지옹_다타.보치_콘트, 100, &quot;70. 보치 콘트 잉코헥트 포르 보칭그 리미트 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-251">이 무스트 헤이테라치 타트 테지 아리 제네랄리제드 테스트 카지스 안드 테리 미그트 비 스페시피크 시투아치옹스 오르 헤키레멘트스 잉 요르 코데바지 타트 네드 투 비 테스테드 아코르징글리.</p>
 <h2 id = "link-36">리치 프롱 71 투 90 티 모스트 임포르탄트 프로페르치 바제드 테스트스 우징그 아프로프리아치 크라치스 포르 이트 콘시데링그 수시 인트리카치 보칭그 시스텡</h2>
 <p id = "para-252">&lt; 프로페르치-바제드 테스칭그 인보우베스 제네라칭그 한동 인푸트스 안드 베리핑그 타트 세르타잉 프로페르치스 오우드, 하테르 탕 셰킹그 티 헤주우트 포르 아 스페시피크 인푸트. 이트’스 모리 아보트 티 베아비오르 오프 요르 프로그랑 지벵 아 라르지 아몬트 오프 다타 안드 레스 아보트 티 코헥트네스 오프 스페시피크 헤주우트스. 잉 후스트, 티 프로프테스트 크라치 이스 치피칼리 우제드 포르 프로페르치-바제드 테스칭그.</p>
-<pre><span style="color:#323232;">우지 프로프테스트::프렐루지::*</span>
-<span style="color:#323232;">우지 크라치::콘트락트::{콘트락트, 보치, 데시지옹}</span>
-<span style="color:#323232;">우지 네아르_스드크::아콘치드</span>
-<span style="color:#323232;">우지 네아르_스드크_싱::투_욕투</span>
+<pre><span style="color:#839496;">우지 프로프테스트::프렐루지::*</span>
+<span style="color:#839496;">우지 크라치::콘트락트::{콘트락트, 보치, 데시지옹}</span>
+<span style="color:#839496;">우지 네아르_스드크::아콘치드</span>
+<span style="color:#839496;">우지 네아르_스드크_싱::투_욕투</span>
 
-<span style="color:#323232;">// 71. 테스트 타트 데시지옹 나미 렝그트 이스 아우와이스 발리드</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_데시지옹_나미_렝그트(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(스.렝() &lt;= 255, &quot;71. 데시지옹 나미 토 롱그&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 71. 테스트 타트 데시지옹 나미 렝그트 이스 아우와이스 발리드</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_데시지옹_나미_렝그트(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(스.렝() &lt;= 255, &quot;71. 데시지옹 나미 토 롱그&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 72. 테스트 타트 보치 치페스 아리 아우와이스 발리드</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_보치_치피(보치 잉 아니::&lt;보치&gt;()) {</span>
-<span style="color:#323232;">프로프_아세르트!(보치 == 보치::이스 || 보치 == 보치::누 || 보치 == 보치::아브스타잉, &quot;72. 인발리드 보치 치피&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 72. 테스트 타트 보치 치페스 아리 아우와이스 발리드</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_보치_치피(보치 잉 아니::&lt;보치&gt;()) {</span>
+<span style="color:#839496;">프로프_아세르트!(보치 == 보치::이스 || 보치 == 보치::누 || 보치 == 보치::아브스타잉, &quot;72. 인발리드 보치 치피&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 73. 테스트 타트 데포지트 아몬트 이스 아우와이스 발리드 포르 데시지옹 크레아치옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_데시지옹_데포지트_아몬트(데포지트 잉 아니::&lt;우128&gt;()) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.크레아치_데시지옹(&quot;데시지옹&quot;, 데포지트 = 데포지트)</span>
-<span style="color:#323232;">프로프_아세르트!(데포지트 &gt;= 투_욕투(&quot;1&quot;), &quot;73. 데포지트 토 스마우 포르 데시지옹 크레아치옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 73. 테스트 타트 데포지트 아몬트 이스 아우와이스 발리드 포르 데시지옹 크레아치옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_데시지옹_데포지트_아몬트(데포지트 잉 아니::&lt;우128&gt;()) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.크레아치_데시지옹(&quot;데시지옹&quot;, 데포지트 = 데포지트)</span>
+<span style="color:#839496;">프로프_아세르트!(데포지트 &gt;= 투_욕투(&quot;1&quot;), &quot;73. 데포지트 토 스마우 포르 데시지옹 크레아치옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 74. 테스트 타트 데포지트 아몬트 이스 아우와이스 발리드 포르 보칭그</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_보치_데포지트_아몬트(데포지트 잉 아니::&lt;우128&gt;()) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&quot;데시지옹&quot;, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.보치(&quot;데시지옹&quot;, 보치::이스, 데포지트 = 데포지트)</span>
-<span style="color:#323232;">프로프_아세르트!(데포지트 &gt;= 투_욕투(&quot;0.1&quot;), &quot;74. 데포지트 토 스마우 포르 보칭그&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 74. 테스트 타트 데포지트 아몬트 이스 아우와이스 발리드 포르 보칭그</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_보치_데포지트_아몬트(데포지트 잉 아니::&lt;우128&gt;()) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&quot;데시지옹&quot;, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.보치(&quot;데시지옹&quot;, 보치::이스, 데포지트 = 데포지트)</span>
+<span style="color:#839496;">프로프_아세르트!(데포지트 &gt;= 투_욕투(&quot;0.1&quot;), &quot;74. 데포지트 토 스마우 포르 보칭그&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 75. 테스트 타트 데시지옹 카노트 비 클로제드 이메지아텔리 아프테르 크레아치옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_데시지옹_클로지_치밍그(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;75. 데시지옹 클로제드 이메지아텔리 아프테르 크레아치옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 75. 테스트 타트 데시지옹 카노트 비 클로제드 이메지아텔리 아프테르 크레아치옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_데시지옹_클로지_치밍그(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;75. 데시지옹 클로제드 이메지아텔리 아프테르 크레아치옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 76. 테스트 타트 크레아토르 카노트 보치 옹 테이르 옹 데시지옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_크레아토르_카노트_보치(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 투_욕투(&quot;0.1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;76. 크레아토르 보테드 옹 테이르 옹 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 76. 테스트 타트 크레아토르 카노트 보치 옹 테이르 옹 데시지옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_크레아토르_카노트_보치(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 투_욕투(&quot;0.1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;76. 크레아토르 보테드 옹 테이르 옹 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 77. 테스트 타트 보치 콘트 도이스 노트 이세드 티 보칭그 리미트 포르 아 데시지옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_보치_콘트_리미트(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">포르 이 잉 0..101 {</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;))</span>
-<span style="color:#323232;">이프 이 &lt; 100 {</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_오크(), &quot;77. 보칭그 위팅 리미트 파일레드&quot;)</span>
-<span style="color:#323232;">} 에우시 {</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;78. 아블리 투 보치 베욘드 리미트&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 77. 테스트 타트 보치 콘트 도이스 노트 이세드 티 보칭그 리미트 포르 아 데시지옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_보치_콘트_리미트(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">포르 이 잉 0..101 {</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;))</span>
+<span style="color:#839496;">이프 이 &lt; 100 {</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_오크(), &quot;77. 보칭그 위팅 리미트 파일레드&quot;)</span>
+<span style="color:#839496;">} 에우시 {</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;78. 아블리 투 보치 베욘드 리미트&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 79. 테스트 타트 티 피나우 보치 콘트 안드 탈리스 아리 코헥트 포르 아 데시지옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_피나우_보치_콘트(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">포르 이 잉 0..100 {</span>
-<span style="color:#323232;">콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
-<span style="color:#323232;">프로프_아세르트_이크!(데시지옹_다타.보치_콘트, 100, &quot;79. 보치 콘트 잉코헥트 포르 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 79. 테스트 타트 티 피나우 보치 콘트 안드 탈리스 아리 코헥트 포르 아 데시지옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_피나우_보치_콘트(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">포르 이 잉 0..100 {</span>
+<span style="color:#839496;">콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
+<span style="color:#839496;">프로프_아세르트_이크!(데시지옹_다타.보치_콘트, 100, &quot;79. 보치 콘트 잉코헥트 포르 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 80. 테스트 타트 티 토타우 데포지테드 아몬트 이스 코헥트 포르 아 데시지옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_토타우_데포지트(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">포르 이 잉 0..100 {</span>
-<span style="color:#323232;">콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
-<span style="color:#323232;">프로프_아세르트_이크!(데시지옹_다타.토타우_데포지트, 투_욕투(&quot;10&quot;) + 투_욕투(&quot;1&quot;), &quot;80. 토타우 데포지트 잉코헥트 포르 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 80. 테스트 타트 티 토타우 데포지테드 아몬트 이스 코헥트 포르 아 데시지옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_토타우_데포지트(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">포르 이 잉 0..100 {</span>
+<span style="color:#839496;">콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
+<span style="color:#839496;">프로프_아세르트_이크!(데시지옹_다타.토타우_데포지트, 투_욕투(&quot;10&quot;) + 투_욕투(&quot;1&quot;), &quot;80. 토타우 데포지트 잉코헥트 포르 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 81. 테스트 타트 티 보칭그 헤주우트스 아리 아우와이스 코헥트</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_보칭그_헤주우트스(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">포르 이 잉 0..100 {</span>
-<span style="color:#323232;">콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
-<span style="color:#323232;">레트 이스펙테드_이스_보치스 = 50</span>
-<span style="color:#323232;">레트 이스펙테드_누_보치스 = 50</span>
-<span style="color:#323232;">프로프_아세르트_이크!(데시지옹_다타.이스_보치스, 이스펙테드_이스_보치스, &quot;81. 이스 보치스 잉코헥트 포르 데시지옹&quot;)</span>
-<span style="color:#323232;">프로프_아세르트_이크!(데시지옹_다타.누_보치스, 이스펙테드_누_보치스, &quot;82. 누 보치스 잉코헥트 포르 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 81. 테스트 타트 티 보칭그 헤주우트스 아리 아우와이스 코헥트</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_보칭그_헤주우트스(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">포르 이 잉 0..100 {</span>
+<span style="color:#839496;">콘트락트.보치(&amp;스, 이프 이 % 2 == 0 { 보치::이스 } 에우시 { 보치::누 }, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
+<span style="color:#839496;">레트 이스펙테드_이스_보치스 = 50</span>
+<span style="color:#839496;">레트 이스펙테드_누_보치스 = 50</span>
+<span style="color:#839496;">프로프_아세르트_이크!(데시지옹_다타.이스_보치스, 이스펙테드_이스_보치스, &quot;81. 이스 보치스 잉코헥트 포르 데시지옹&quot;)</span>
+<span style="color:#839496;">프로프_아세르트_이크!(데시지옹_다타.누_보치스, 이스펙테드_누_보치스, &quot;82. 누 보치스 잉코헥트 포르 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 83. 테스트 타트 온리 티 크레아토르 캉 클로지 티 데시지옹</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_온리_크레아토르_캉_클로지(스 잉 &quot;\\프크*&quot;, 이드 잉 아니::&lt;아콘치드&gt;()) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.아스(이드).클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;83. 농-크레아토르 클로제드 데시지옹&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 83. 테스트 타트 온리 티 크레아토르 캉 클로지 티 데시지옹</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_온리_크레아토르_캉_클로지(스 잉 &quot;\\프크*&quot;, 이드 잉 아니::&lt;아콘치드&gt;()) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.아스(이드).클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;83. 농-크레아토르 클로제드 데시지옹&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 84. 테스트 타트 보치스 카노트 비 카스트 아프테르 데시지옹 이스 클로제드</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_누_보치스_아프테르_클로지(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 투_욕투(&quot;0.1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;84. 아블리 투 보치 아프테르 데시지옹 클로제드&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 84. 테스트 타트 보치스 카노트 비 카스트 아프테르 데시지옹 이스 클로제드</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_누_보치스_아프테르_클로지(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 투_욕투(&quot;0.1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;84. 아블리 투 보치 아프테르 데시지옹 클로제드&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 85. 테스트 타트 티 피나우 데시지옹 오트코미 이스 코헥트 바제드 옹 티 마조리치 오프 보치스</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_피나우_데시지옹_오트코미(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">포르 이 잉 0..60 {</span>
-<span style="color:#323232;">콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">포르 이 잉 0..40 {</span>
-<span style="color:#323232;">콘트락트.보치(&amp;스, 보치::누, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
-<span style="color:#323232;">프로프_아세르트_이크!(데시지옹_다타.오트코미, 소미(보치::이스), &quot;85. 데시지옹 오트코미 잉코헥트&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 85. 테스트 타트 티 피나우 데시지옹 오트코미 이스 코헥트 바제드 옹 티 마조리치 오프 보치스</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_피나우_데시지옹_오트코미(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">포르 이 잉 0..60 {</span>
+<span style="color:#839496;">콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">포르 이 잉 0..40 {</span>
+<span style="color:#839496;">콘트락트.보치(&amp;스, 보치::누, 데포지트 = 투_욕투(&quot;0.1&quot;)).운으라프()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 데시지옹_다타: 데시지옹 = 콘트락트.제트_데시지옹(&amp;스).운으라프()</span>
+<span style="color:#839496;">프로프_아세르트_이크!(데시지옹_다타.오트코미, 소미(보치::이스), &quot;85. 데시지옹 오트코미 잉코헥트&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 86. 테스트 타트 콘트락트 카우스 파이우 위트 인수피시엔트 푼드스</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_인수피시엔트_푼드스(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 0)</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;86. 데시지옹 크레아테드 위트 인수피시엔트 푼드스&quot;)</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 0)</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;87. 보치 카스트 위트 인수피시엔트 푼드스&quot;)</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 0)</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;88. 데시지옹 클로제드 위트 인수피시엔트 푼드스&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 86. 테스트 타트 콘트락트 카우스 파이우 위트 인수피시엔트 푼드스</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_인수피시엔트_푼드스(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 0)</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;86. 데시지옹 크레아테드 위트 인수피시엔트 푼드스&quot;)</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.보치(&amp;스, 보치::이스, 데포지트 = 0)</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;87. 보치 카스트 위트 인수피시엔트 푼드스&quot;)</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.클로지_데시지옹(&amp;스, 데포지트 = 0)</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;88. 데시지옹 클로제드 위트 인수피시엔트 푼드스&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 89. 테스트 타트 데시지옹 나메스 아리 아우와이스 우니키</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_우니키_데시지옹_나미(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;89. 두플리카치 데시지옹 나미&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 89. 테스트 타트 데시지옹 나메스 아리 아우와이스 우니키</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_우니키_데시지옹_나미(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;)).운으라프()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.크레아치_데시지옹(&amp;스, 데포지트 = 투_욕투(&quot;1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;89. 두플리카치 데시지옹 나미&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 90. 테스트 타트 데시지옹 나미 카노트 비 임프치</span>
-<span style="color:#323232;">프로프테스트! {</span>
-<span style="color:#323232;">#[테스트]</span>
-<span style="color:#323232;">픙 프로프_농_임프치_데시지옹_나미(스 잉 &quot;\\프크*&quot;) {</span>
-<span style="color:#323232;">레트 콘트락트 = 콘트락트::네()</span>
-<span style="color:#323232;">레트 히스 = 콘트락트.크레아치_데시지옹(&quot;&quot;, 데포지트 = 투_욕투(&quot;1&quot;))</span>
-<span style="color:#323232;">프로프_아세르트!(히스.이스_이흐(), &quot;90. 임프치 데시지옹 나미&quot;)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 90. 테스트 타트 데시지옹 나미 카노트 비 임프치</span>
+<span style="color:#839496;">프로프테스트! {</span>
+<span style="color:#839496;">#[테스트]</span>
+<span style="color:#839496;">픙 프로프_농_임프치_데시지옹_나미(스 잉 &quot;\\프크*&quot;) {</span>
+<span style="color:#839496;">레트 콘트락트 = 콘트락트::네()</span>
+<span style="color:#839496;">레트 히스 = 콘트락트.크레아치_데시지옹(&quot;&quot;, 데포지트 = 투_욕투(&quot;1&quot;))</span>
+<span style="color:#839496;">프로프_아세르트!(히스.이스_이흐(), &quot;90. 임프치 데시지옹 나미&quot;)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-253">헤멤베르, 테지 아리 주스트 이잠플리스 안드 네드 투 비 모지피에드 바제드 옹 티 악투아우 콘트락트 데타이우스 안드 부지네스 헤키레멘트스. 프로페르치-바제드 테스칭그 캉 비 아 포웨르풀 토우 잉 요르 테스칭그 아르세나우, 에우핑그 요 카트시 코르네르 카지스 안드 우네스펙테드 베아비오르 타트 미그트 노트 비 코베레드 비 트라지치오나우 우니트 테스트스.</p>
 <p class = "rule">***</p>

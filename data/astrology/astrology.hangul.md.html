@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -585,6 +640,7 @@ function toggle() {
       <li><a href="#link-26">이스플라잉 오 티 우망 데지긍 시스텡 코우드 비 아시밀라테드 아우수</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -592,12 +648,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -614,71 +673,71 @@ function toggle() {
 <p id = "para-9">티 샤르트 이스 우주알리 오르가니제드 잉 티 포릉 오프 아 시르클리, 이시 이스 지비데드 인투 12 이쿠아우 파르트스 칼레드 오지스, 안드 이아시 오지 헤프레젠트스 아 스페시피크 아레아 오프 리피, 수시 아스 세우프, 모네이, 헬라치온지프스, 이트크. 티 포지치옹스 오프 티 플라네트스 잉 티 오지스 안드 잉 헬라치옹 투 이아시 오테르 캉 프로비지 인시그트 인투 티 페르송’스 포텐치아우스, 스트렝그트스, 안드 웨아크네시스, 안드 티 제네라우 나투리 오프 테이르 리피.</p>
 <p id = "para-10">티 샤르트 아우수 잉클루지스 티 포지치옹스 오프 티 27 루나르 만시옹스 오르 낙사트라스, 이시 아리 우제드 투 아날리지 티 제네라우 나투리 오프 티 페르송 안드 티 치밍그 오프 이벤트스 잉 테이르 리피.</p>
 <p id = "para-11">이트 셈스 타트 아우 티 네세사리 다타 투 제네라치 아 베지크 아스트롤로지카우 샤르트 이스 프로비데드. 이트’스 임포르탄트 투 노치 타트 티 샤르트 알로니 도이스 노트 프로비지 아 콤플레치 픽투리 오프 아 페르송’스 리피, 안드 이트 소우드 비 인테르프레테드 비 앙 이스페리엔세드 아스트롤로제르 우징그 바리오스 테시니케스 안드 콘세프트스, 수시 아스 티 아날리지스 오프 티 플라네타리 포지치옹스, 아스펙트스, 안드 헬라치온지프스, 티 우지 오프 티 드</p>
-<pre><span style="color:#323232;">치피 조지악시긍 =</span>
-<span style="color:#323232;">| 아리스</span>
-<span style="color:#323232;">| 타우루스</span>
-<span style="color:#323232;">| 제미니</span>
-<span style="color:#323232;">| 칸세르</span>
-<span style="color:#323232;">| 레우</span>
-<span style="color:#323232;">| 비르구</span>
-<span style="color:#323232;">| 리브라</span>
-<span style="color:#323232;">| 스코르피우</span>
-<span style="color:#323232;">| 사지타리우스</span>
-<span style="color:#323232;">| 카프리코릉</span>
-<span style="color:#323232;">| 아쿠아리우스</span>
-<span style="color:#323232;">| 피시스</span>
+<pre><span style="color:#839496;">치피 조지악시긍 =</span>
+<span style="color:#839496;">| 아리스</span>
+<span style="color:#839496;">| 타우루스</span>
+<span style="color:#839496;">| 제미니</span>
+<span style="color:#839496;">| 칸세르</span>
+<span style="color:#839496;">| 레우</span>
+<span style="color:#839496;">| 비르구</span>
+<span style="color:#839496;">| 리브라</span>
+<span style="color:#839496;">| 스코르피우</span>
+<span style="color:#839496;">| 사지타리우스</span>
+<span style="color:#839496;">| 카프리코릉</span>
+<span style="color:#839496;">| 아쿠아리우스</span>
+<span style="color:#839496;">| 피시스</span>
 
-<span style="color:#323232;">치피 플라네트 =</span>
-<span style="color:#323232;">| 숭</span>
-<span style="color:#323232;">| 몽</span>
-<span style="color:#323232;">| 메르쿠리</span>
-<span style="color:#323232;">| 베누스</span>
-<span style="color:#323232;">| 마르스</span>
-<span style="color:#323232;">| 주피테르</span>
-<span style="color:#323232;">| 사투릉</span>
+<span style="color:#839496;">치피 플라네트 =</span>
+<span style="color:#839496;">| 숭</span>
+<span style="color:#839496;">| 몽</span>
+<span style="color:#839496;">| 메르쿠리</span>
+<span style="color:#839496;">| 베누스</span>
+<span style="color:#839496;">| 마르스</span>
+<span style="color:#839496;">| 주피테르</span>
+<span style="color:#839496;">| 사투릉</span>
 
-<span style="color:#323232;">치피 아스펙트 =</span>
-<span style="color:#323232;">| 콘중크치옹</span>
-<span style="color:#323232;">| 세스칠리</span>
-<span style="color:#323232;">| 스쿠아리</span>
-<span style="color:#323232;">| 트리니</span>
-<span style="color:#323232;">| 오포지치옹</span>
+<span style="color:#839496;">치피 아스펙트 =</span>
+<span style="color:#839496;">| 콘중크치옹</span>
+<span style="color:#839496;">| 세스칠리</span>
+<span style="color:#839496;">| 스쿠아리</span>
+<span style="color:#839496;">| 트리니</span>
+<span style="color:#839496;">| 오포지치옹</span>
 
-<span style="color:#323232;">치피 샤르트 = {</span>
-<span style="color:#323232;">숭: 조지악시긍</span>
-<span style="color:#323232;">몽: 조지악시긍</span>
-<span style="color:#323232;">메르쿠리: 조지악시긍</span>
-<span style="color:#323232;">베누스: 조지악시긍</span>
-<span style="color:#323232;">마르스: 조지악시긍</span>
-<span style="color:#323232;">주피테르: 조지악시긍</span>
-<span style="color:#323232;">사투릉: 조지악시긍</span>
-<span style="color:#323232;">아스펙트스: 아스펙트 리스트</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">치피 샤르트 = {</span>
+<span style="color:#839496;">숭: 조지악시긍</span>
+<span style="color:#839496;">몽: 조지악시긍</span>
+<span style="color:#839496;">메르쿠리: 조지악시긍</span>
+<span style="color:#839496;">베누스: 조지악시긍</span>
+<span style="color:#839496;">마르스: 조지악시긍</span>
+<span style="color:#839496;">주피테르: 조지악시긍</span>
+<span style="color:#839496;">사투릉: 조지악시긍</span>
+<span style="color:#839496;">아스펙트스: 아스펙트 리스트</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">치피 오지 =</span>
-<span style="color:#323232;">| 피르스트</span>
-<span style="color:#323232;">| 세콘드</span>
-<span style="color:#323232;">| 티르드</span>
-<span style="color:#323232;">| 포르트</span>
-<span style="color:#323232;">| 피프트</span>
-<span style="color:#323232;">| 시스트</span>
-<span style="color:#323232;">| 세벤트</span>
-<span style="color:#323232;">| 이그트</span>
-<span style="color:#323232;">| 닌트</span>
-<span style="color:#323232;">| 텐트</span>
-<span style="color:#323232;">| 일레벤트</span>
-<span style="color:#323232;">| 트웨우프트</span>
+<span style="color:#839496;">치피 오지 =</span>
+<span style="color:#839496;">| 피르스트</span>
+<span style="color:#839496;">| 세콘드</span>
+<span style="color:#839496;">| 티르드</span>
+<span style="color:#839496;">| 포르트</span>
+<span style="color:#839496;">| 피프트</span>
+<span style="color:#839496;">| 시스트</span>
+<span style="color:#839496;">| 세벤트</span>
+<span style="color:#839496;">| 이그트</span>
+<span style="color:#839496;">| 닌트</span>
+<span style="color:#839496;">| 텐트</span>
+<span style="color:#839496;">| 일레벤트</span>
+<span style="color:#839496;">| 트웨우프트</span>
 
-<span style="color:#323232;">치피 데그레이 =</span>
-<span style="color:#323232;">| 카르지나우</span>
-<span style="color:#323232;">| 피셰드</span>
-<span style="color:#323232;">| 무타블리</span>
+<span style="color:#839496;">치피 데그레이 =</span>
+<span style="color:#839496;">| 카르지나우</span>
+<span style="color:#839496;">| 피셰드</span>
+<span style="color:#839496;">| 무타블리</span>
 
-<span style="color:#323232;">레트 카우쿨라테아스펙트스 (샤르트: 샤르트) =</span>
-<span style="color:#323232;">()</span>
+<span style="color:#839496;">레트 카우쿨라테아스펙트스 (샤르트: 샤르트) =</span>
+<span style="color:#839496;">()</span>
 
-<span style="color:#323232;">레트 카우쿨라테오지스 (샤르트: 샤르트) =</span>
-<span style="color:#323232;">()</span>
+<span style="color:#839496;">레트 카우쿨라테오지스 (샤르트: 샤르트) =</span>
+<span style="color:#839496;">()</span>
 
 
 </pre><p class = "rule">***</p>

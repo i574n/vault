@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,9 +613,11 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -572,44 +628,44 @@ function toggle() {
 <p id = "para-4">1 아 즈 스 2 브 크 트 (11 -&gt; 2) 3 크 르 우 4 드 응 브 (22 -&gt; 4) 5 이 응 6 프 우 스 (33 -&gt; 6) 7 그 프 이 8 크 스 9 이 흐</p>
 <p id = "para-5">&lt;트프스://잉.위키페지아.오르그/위키/루오주_스쿠아리&gt;</p>
 <p id = "para-6">에리 이스 아 심플리 아우고리틍 잉 후스트 타트 콘베르트스 아 레테르 프롱 티 피르스트 세트 투 티 세콘드 세트:</p>
-<pre><span style="color:#323232;">픙 콘베르트_레테르(크: 샤르) -&gt; 샤르 {</span>
-<span style="color:#323232;">레트 오프세트 = (크 아스 우8 - &#39;아&#39; 아스 우8) * 2 + 1</span>
-<span style="color:#323232;">(오프세트 아스 샤르).투_우페르카지().네스트().운으라프()</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">픙 콘베르트_레테르(크: 샤르) -&gt; 샤르 {</span>
+<span style="color:#839496;">레트 오프세트 = (크 아스 우8 - &#39;아&#39; 아스 우8) * 2 + 1</span>
+<span style="color:#839496;">(오프세트 아스 샤르).투_우페르카지().네스트().운으라프()</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-7">안드 에리 이스 티 아우고리틍 투 콘베르트 아 레테르 프롱 티 세콘드 세트 바크 투 티 피르스트 세트:</p>
-<pre><span style="color:#323232;">픙 콘베르트_레테르_바크(크: 샤르) -&gt; 샤르 {</span>
-<span style="color:#323232;">레트 오프세트 = (크 아스 우8 - &#39;아&#39; 아스 우8) / 2</span>
-<span style="color:#323232;">(오프세트 아스 샤르 + &#39;아&#39; 아스 우8) 아스 샤르</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">픙 콘베르트_레테르_바크(크: 샤르) -&gt; 샤르 {</span>
+<span style="color:#839496;">레트 오프세트 = (크 아스 우8 - &#39;아&#39; 아스 우8) / 2</span>
+<span style="color:#839496;">(오프세트 아스 샤르 + &#39;아&#39; 아스 우8) 아스 샤르</span>
+<span style="color:#839496;">}</span>
 
 
-<span style="color:#323232;">아세르트_이크!(콘베르트_투_눔베르(&quot;아브크&quot;), 123)</span>
-<span style="color:#323232;">아세르트_이크!(콘베르트_투_눔베르(&quot;즈스트&quot;), 578)</span>
-<span style="color:#323232;">아세르트_이크!(콘베르트_투_레테르(123), &quot;아브크&quot;)</span>
-<span style="color:#323232;">아세르트_이크!(콘베르트_투_레테르(578), &quot;즈스트&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(콘베르트_투_눔베르(&quot;아브크&quot;), 123)</span>
+<span style="color:#839496;">아세르트_이크!(콘베르트_투_눔베르(&quot;즈스트&quot;), 578)</span>
+<span style="color:#839496;">아세르트_이크!(콘베르트_투_레테르(123), &quot;아브크&quot;)</span>
+<span style="color:#839496;">아세르트_이크!(콘베르트_투_레테르(578), &quot;즈스트&quot;)</span>
 
 
 
-<span style="color:#323232;">픙 콘베르트_투_눔베르(스: &amp;스트르) -&gt; 우32 {</span>
-<span style="color:#323232;">레트 무트 헤주우트 = 0</span>
-<span style="color:#323232;">포르 크 잉 스.샤르스() {</span>
-<span style="color:#323232;">레트 오프세트 = (크 아스 우32) - (&#39;아&#39; 아스 우32)</span>
-<span style="color:#323232;">헤주우트 = 헤주우트 * 10 + (오프세트 / 3) + 1</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">헤주우트</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">픙 콘베르트_투_눔베르(스: &amp;스트르) -&gt; 우32 {</span>
+<span style="color:#839496;">레트 무트 헤주우트 = 0</span>
+<span style="color:#839496;">포르 크 잉 스.샤르스() {</span>
+<span style="color:#839496;">레트 오프세트 = (크 아스 우32) - (&#39;아&#39; 아스 우32)</span>
+<span style="color:#839496;">헤주우트 = 헤주우트 * 10 + (오프세트 / 3) + 1</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">헤주우트</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">픙 콘베르트_투_레테르(응: 우32) -&gt; 스트링그 {</span>
-<span style="color:#323232;">레트 무트 헤주우트 = 스트링그::네()</span>
-<span style="color:#323232;">레트 무트 응 = 응</span>
-<span style="color:#323232;">일리 응 &gt; 0 {</span>
-<span style="color:#323232;">레트 지지트 = (응 % 10) 아스 우8 - 1</span>
-<span style="color:#323232;">응 /= 10</span>
-<span style="color:#323232;">헤주우트.푸즈(((지지트 * 3) + &#39;아&#39; 아스 우8) 아스 샤르)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">헤주우트.샤르스().헤브().콜렉트()</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">픙 콘베르트_투_레테르(응: 우32) -&gt; 스트링그 {</span>
+<span style="color:#839496;">레트 무트 헤주우트 = 스트링그::네()</span>
+<span style="color:#839496;">레트 무트 응 = 응</span>
+<span style="color:#839496;">일리 응 &gt; 0 {</span>
+<span style="color:#839496;">레트 지지트 = (응 % 10) 아스 우8 - 1</span>
+<span style="color:#839496;">응 /= 10</span>
+<span style="color:#839496;">헤주우트.푸즈(((지지트 * 3) + &#39;아&#39; 아스 우8) 아스 샤르)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">헤주우트.샤르스().헤브().콜렉트()</span>
+<span style="color:#839496;">}</span>
 
 
 </pre>

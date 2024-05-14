@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,9 +613,11 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -625,7 +681,7 @@ function toggle() {
 <h2 id = "link-2">PREFÁCIO: O DUPLO</h2>
 <p id = "para-24">O que é o duplo?</p>
 <p id = "para-25">O duplo é você, não limitado pelo espaço e pelo tempo. O duplo é você que existe além dos limites da realidade física que você pode sentir como a única realidade que existe agora, aqui neste lugar.</p>
-<p id = "para-26">Mas nesta vida, você é o duplo e o duplo é você; vocês são dois, você é Janus<a href = "#note-dest-1"><sup id = "note-source-1">[1]</sup></a>.</p>
+<p id = "para-26">Mas nesta vida, você é o duplo e o duplo é você; vocês são dois, você é Janus<a class = "footnote_reference" href = "#note-dest-1-1" id = "note-source-1-1"><sup>[1]</sup></a>.</p>
 <p id = "para-27">Você pode encontrar esse duplo em seus sonhos, e quando encontrar esse duplo, não será um estranho que você encontrará; o que você realmente encontrará é VOCÊ.</p>
 <p id = "para-28">O duplo não é um portal estelar (não é um portal dimensional) porque o duplo é, por sua própria natureza, em todos os lugares e em lugar nenhum. O duplo não é um recipiente para o eu imortal, porque você já é imortal, você é parte desse eu imortal. O que ele é, é o recipiente para a sua individualidade; é a sua individualidade! Isso é muito importante!</p>
 <p id = "para-29">Não existe tempo como normalmente entendemos o tempo, existe apenas um infinito agora.</p>
@@ -790,7 +846,7 @@ function toggle() {
 <p id = "para-168">Ir para dentro é ir para fora, este é o grande segredo.</p>
 <p class = "rule">***</p>
 <p id = "para-169">Qual é a resposta para a pergunta definitiva sobre a vida, o universo e tudo mais?</p>
-<p id = "para-170">Para o Pensador Profundo<a href = "#note-dest-2"><sup id = "note-source-2">[2]</sup></a>, é 42.</p>
+<p id = "para-170">Para o Pensador Profundo<a class = "footnote_reference" href = "#note-dest-1-2" id = "note-source-1-2"><sup>[2]</sup></a>, é 42.</p>
 <p id = "para-171">Mas para um Alquimista Interior, é: não alimente a agitação, apenas surfe a onda!</p>
 <p id = "para-172">O que pode ser explicado da seguinte forma:</p>
 <p id = "para-173">O mundo humano, e todas as criações desta humanidade da qual fazemos parte, é muito mais complexo do que a maioria imagina.</p>
@@ -1082,7 +1138,7 @@ function toggle() {
 <li><p id = "para-402">Trazer coisas que você possa precisar</p>
 </li>
 </ul>
-<p id = "para-403">A explicação geral do que é um servidor é que ele é uma forma de pensamento concentrado que é criada para realizar uma determinada(s) tarefa(s). Esotericamente, acredita-se que os pensamentos podem ser concentrados a tal ponto que esses pensamentos eventualmente se tornem fisicamente reais. A exploradora e escritora Alexandra David-Néel, por exemplo, escreveu extensivamente sobre seus encontros com formas de pensamento no Tibete, chamadas “Tulpa”, e como os monges tibetanos eram incrivelmente hábeis em criá-las. Ela também escreve como foi capaz de criar uma dessas Tulpas ela mesma após muitos meses de esforço, e eventualmente essa forma de pensamento se tornou tão sólida que outros em sua expedição puderam vê-la também<a href = "#note-dest-3"><sup id = "note-source-3">[3]</sup></a>.</p>
+<p id = "para-403">A explicação geral do que é um servidor é que ele é uma forma de pensamento concentrado que é criada para realizar uma determinada(s) tarefa(s). Esotericamente, acredita-se que os pensamentos podem ser concentrados a tal ponto que esses pensamentos eventualmente se tornem fisicamente reais. A exploradora e escritora Alexandra David-Néel, por exemplo, escreveu extensivamente sobre seus encontros com formas de pensamento no Tibete, chamadas “Tulpa”, e como os monges tibetanos eram incrivelmente hábeis em criá-las. Ela também escreve como foi capaz de criar uma dessas Tulpas ela mesma após muitos meses de esforço, e eventualmente essa forma de pensamento se tornou tão sólida que outros em sua expedição puderam vê-la também<a class = "footnote_reference" href = "#note-dest-1-3" id = "note-source-1-3"><sup>[3]</sup></a>.</p>
 <p id = "para-404">Para criar um servidor funcional decente, você não precisa gastar meses montando-o e certamente ele não precisa ser tão poderoso que outros possam vê-lo.</p>
 <p id = "para-405">Para aqueles que acham difícil acreditar que as formas de pensamento possam ser coalescidas em tal poder, que possam realmente afetar a realidade ou serem vistas por outras pessoas, também existe uma explicação psicológica que pode ajudar. Alguns psicólogos gostam de expor a teoria de que a psique humana pode ser vista como composta por diferentes partes; ou seja, o que consideramos uma personalidade completa é na verdade uma personalidade composta por muitas subpersonalidades diferentes trabalhando juntas. Há uma parte de você, por exemplo, que gosta de reclamar, enquanto há outra parte de você que gosta de ganhar a todo custo. Como transitamos perfeitamente de uma parte (subpersonalidade) da nossa personalidade inteira para outra, não percebemos que, na realidade, somos feitos de muitas partes diferentes trabalhando juntas.</p>
 <p id = "para-406">Um servidor, então, é como uma parte que você está criando através do uso de um ato ritual. Você cria uma nova subpersonalidade inteira ou reúne algumas dessas subpersonalidades para manifestar uma nova que seja adequada para um propósito particular.</p>
@@ -1997,7 +2053,7 @@ function toggle() {
 <p id = "para-1159">Nos termos mais simples, do ponto de vista do alquimista interior, a luta está fora e dentro de nós simultaneamente, mas para estabelecer parâmetros para a ação real, devemos usar a melhor terminologia possível para tentar explicar de maneira gradativa a natureza desta ação, para podermos nos envolver nessa ação, que é de certa forma uma espécie de não-ação.</p>
 <p class = "rule">***</p>
 <p id = "para-1160"><b>Q: Eu realmente acredito que vale a pena, eu realmente acredito que é isso que quero, e vou me libertar, mas eu te pergunto o que alguém deve fazer quando tem medo de deixar a gaiola? As coisas além dessa gaiola valem a pena deixá-la? Como posso superar essa fase, essa resistência?</b></p>
-<p id = "para-1161">A: Eu começaria dizendo que o que você sente é a coisa mais natural possível, a coisa mais sensata possível, e certamente haveria mais perguntas da minha parte se você não se sentisse pelo menos de alguma forma dessa maneira. O que realmente significa é que você pode, como alguns costumavam dizer antigamente, compreender<a href = "#note-dest-4"><sup id = "note-source-4">[4]</sup></a>, o que realmente está acontecendo com você e o que você realmente está enfrentando ao confrontar o infinito que está ao nosso redor.</p>
+<p id = "para-1161">A: Eu começaria dizendo que o que você sente é a coisa mais natural possível, a coisa mais sensata possível, e certamente haveria mais perguntas da minha parte se você não se sentisse pelo menos de alguma forma dessa maneira. O que realmente significa é que você pode, como alguns costumavam dizer antigamente, compreender<a class = "footnote_reference" href = "#note-dest-1-4" id = "note-source-1-4"><sup>[4]</sup></a>, o que realmente está acontecendo com você e o que você realmente está enfrentando ao confrontar o infinito que está ao nosso redor.</p>
 <p id = "para-1162">Sinceramente, não há como superar esse medo, não totalmente. Um lutador nunca supera o medo, o assombro. Eles estão em um estado constante deste tipo estupendo de assombro/medo. Acontece que depois de um tempo eles se acostumam com isso, ganham tantas cicatrizes que, depois de um tempo, enfrentar a eternidade, embora nunca se torne uma rotina simples, pelo menos se torna algo que você sabe que pode suportar; algo ao qual você fica viciado, algo que você deve ter em sua vida para continuar.</p>
 <p id = "para-1163">Todos nós temos medo de altura, faz parte da nossa natureza de macaco. É assim que os macacos evitam cair das árvores, eles têm medo de altura e, portanto, sabem que devem se segurar, ou cairão, não importa o quão bons se tornem em se mover por essas alturas. Tal medo, portanto, não é uma coisa negativa, mas nos permite avaliar e nos preparar para o que enfrentaremos, para o que enfrentaremos na eternidade por uma eternidade.</p>
 <p id = "para-1164">Há apenas duas coisas possíveis para os sãos que estão enlouquecendo, para os loucos ambulantes. E isso é começar devagar. Sendo que todos nós somos praticantes solitários como alquimistas interiores, não seremos empurrados para lugares de onde possamos precisar ser resgatados; não haverá ninguém para nos resgatar. Por esse motivo, é melhor começarmos devagar, e como tal, eu aconselharia você a fazer o mesmo, e perceber que está definindo seu próprio ritmo e que irá devagar, que não se forçará a nada que o coloque em perigo. É bom perceber isso, isso ajudará.</p>
@@ -2063,7 +2119,7 @@ function toggle() {
 <p id = "para-1217"><b>1.</b> <b>Esta realidade é má</b></p>
 <p id = "para-1218"><b>2.</b> <b>Como este universo foi projetado, isso significa que cada falha que vemos na natureza também foi projetada</b></p>
 <p id = "para-1219"><b>3.</b> <b>Este mundo não é uma escola ou projetado para nos ajudar a evoluir. Foi projetado para produzir emoção negativa (medo, dor e sofrimento)</b></p>
-<p id = "para-1220"><b>4.</b> <b>A humanidade foi criada para produzir ainda mais loosh<a href = "#note-dest-5"><sup id = "note-source-5">[5]</sup></a> de qualidade do que poderia ser colhido.</b></p>
+<p id = "para-1220"><b>4.</b> <b>A humanidade foi criada para produzir ainda mais loosh<a class = "footnote_reference" href = "#note-dest-1-5" id = "note-source-1-5"><sup>[5]</sup></a> de qualidade do que poderia ser colhido.</b></p>
 <p id = "para-1221"><b>Então, minha pergunta é: como podemos escapar desta realidade? E se você tem as respostas para algumas dessas perguntas, por que seu trabalho não é censurado?</b></p>
 <p id = "para-1222"><b>Sei que em seus livros você afirma ter as respostas. Ainda assim, você está aqui nesta realidade, então estou um pouco confuso quanto às suas afirmações. Você está vendendo seus livros, então obviamente precisa de dinheiro. Portanto, posso concluir que você ainda faz parte desta realidade e ainda faz parte deste sistema.</b></p>
 <p id = "para-1223"><b>Pelo que vejo, ninguém tem a resposta. Minha prova? O mundo ainda existe, e ainda somos escravos miseráveis.</b></p>
@@ -2126,19 +2182,18 @@ function toggle() {
 <b>“- contanto que eu chegue EM ALGUM LUGAR,” Alice acrescentou como explicação.</b><br />
 <b>“Ah, você com certeza fará isso,” disse o Gato, “se você apenas caminhar o suficiente.”</b><br />
 <em>― LEWIS CARROLL, AS AVENTURAS DE ALICE NO PAÍS DAS MARAVILHAS</em></p>
-
-</div><section class = "notes" >
+<section class = "notes" >
  <h2 class = "notes">Notes</h2>
 <table class = "notes">
 <tr class = "notes">
  <td class = "note-number">
   <p class = "note-number">
-  <a href = "#note-source-1">[1]</a>
+  <a rel = "footnote" href = "#note-source-1-1">[1]</a>
 </p>
 
  </td>
  <td class = "note">
-  <aside id = "note-dest-1"><p id = "para-1274">No antigo panteão romano, Janus é o Deus da transição, do tempo, dos portões. Ele é um Deus de duas cabeças ou duas faces. Cada face está voltada na direção oposta e, dessa forma, ele pode ser considerado um Deus que olha para FORA e também para DENTRO simultaneamente. Ele é, portanto, o Deus de todos os começos, ele é o Deus que se conhece completamente, tanto o exterior quanto o interior, e está consciente de ambos. Ele é um deus que sabe e ensina como conhecer a totalidade de si mesmo.</p>
+  <aside class = "footnote" id = "note-dest-1-1"><p id = "para-1274">No antigo panteão romano, Janus é o Deus da transição, do tempo, dos portões. Ele é um Deus de duas cabeças ou duas faces. Cada face está voltada na direção oposta e, dessa forma, ele pode ser considerado um Deus que olha para FORA e também para DENTRO simultaneamente. Ele é, portanto, o Deus de todos os começos, ele é o Deus que se conhece completamente, tanto o exterior quanto o interior, e está consciente de ambos. Ele é um deus que sabe e ensina como conhecer a totalidade de si mesmo.</p>
 <p id = "para-1275">O sonhador aspira conhecer e lembrar como ele. Todos nós temos duas faces: um aspecto de nós mesmos olha para o mundo físico, e outra face (outro aspecto de nossos eus totais) que olha para as vastas dimensões interiores; as dimensões dos sonhos. Cada face pode esquecer a outra, então a pessoa média tem dois eus individuais distintos; o conhecido que olha para fora e a face desconhecida que olha para dentro. A batalha do sonhador, do projetista, é encontrar algum lugar no meio, algum ‘portão’ entre ambas as faces onde cada uma possa conhecer a outra. Janus é realmente o Deus do projetista e também o Deus daqueles que desejam lembrar. Ser como Janus, adorar Janus, é ser alguém que entende a totalidade de si mesmo, alguém que pode ver para fora e para dentro simultaneamente, alguém que conseguiu lembrar e manter uma posição cognitiva totalmente nova e expandida.</p>
 </aside>
   </td>
@@ -2146,54 +2201,55 @@ function toggle() {
 <tr class = "notes">
  <td class = "note-number">
   <p class = "note-number">
-  <a href = "#note-source-2">[2]</a>
+  <a rel = "footnote" href = "#note-source-1-2">[2]</a>
 </p>
 
  </td>
  <td class = "note">
-  <aside id = "note-dest-2"><p id = "para-1276">Deep Thought é um supercomputador extremamente poderoso, de fato sobrenatural, programado para calcular a resposta para a Pergunta Fundamental da “Vida, do Universo e de Tudo”. Ele é apresentado na série de livros de ficção científica de Douglas Adams, O Guia do Mochileiro das Galáxias.</p>
+  <aside class = "footnote" id = "note-dest-1-2"><p id = "para-1276">Deep Thought é um supercomputador extremamente poderoso, de fato sobrenatural, programado para calcular a resposta para a Pergunta Fundamental da “Vida, do Universo e de Tudo”. Ele é apresentado na série de livros de ficção científica de Douglas Adams, O Guia do Mochileiro das Galáxias.</p>
 </aside>
   </td>
 </tr>
 <tr class = "notes">
  <td class = "note-number">
   <p class = "note-number">
-  <a href = "#note-source-3">[3]</a>
+  <a rel = "footnote" href = "#note-source-1-3">[3]</a>
 </p>
 
  </td>
  <td class = "note">
-  <aside id = "note-dest-3"><p id = "para-1277"><em>Magia e Mistério no Tibete</em>, 1929</p>
+  <aside class = "footnote" id = "note-dest-1-3"><p id = "para-1277"><em>Magia e Mistério no Tibete</em>, 1929</p>
 </aside>
   </td>
 </tr>
 <tr class = "notes">
  <td class = "note-number">
   <p class = "note-number">
-  <a href = "#note-source-4">[4]</a>
+  <a rel = "footnote" href = "#note-source-1-4">[4]</a>
 </p>
 
  </td>
  <td class = "note">
-  <aside id = "note-dest-4"><p id = "para-1278">“Grok” é uma palavra cunhada por Robert A. Heinlein no livro <em>Um Estranho numa Terra Estranha</em>. Em um sentido fundamental, significa entender algo em um nível profundo e intuitivo; ter uma espécie de conexão e comunicação jubilosa com o outro.</p>
+  <aside class = "footnote" id = "note-dest-1-4"><p id = "para-1278">“Grok” é uma palavra cunhada por Robert A. Heinlein no livro <em>Um Estranho numa Terra Estranha</em>. Em um sentido fundamental, significa entender algo em um nível profundo e intuitivo; ter uma espécie de conexão e comunicação jubilosa com o outro.</p>
 </aside>
   </td>
 </tr>
 <tr class = "notes">
  <td class = "note-number">
   <p class = "note-number">
-  <a href = "#note-source-5">[5]</a>
+  <a rel = "footnote" href = "#note-source-1-5">[5]</a>
 </p>
 
  </td>
  <td class = "note">
-  <aside id = "note-dest-5"><p id = "para-1279">“Loosh” é um termo cunhado por Robert Monroe para se referir à energia espiritual ou psíquica que um indivíduo (homem ou animal) produz na luta. Loosh é uma fonte de alimento usada por certos seres transdimensionais para prolongar suas próprias vidas.</p>
+  <aside class = "footnote" id = "note-dest-1-5"><p id = "para-1279">“Loosh” é um termo cunhado por Robert Monroe para se referir à energia espiritual ou psíquica que um indivíduo (homem ou animal) produz na luta. Loosh é uma fonte de alimento usada por certos seres transdimensionais para prolongar suas próprias vidas.</p>
 </aside>
   </td>
 </tr>
 </table>
 </section>
 
+</div>
 
       </div>
       

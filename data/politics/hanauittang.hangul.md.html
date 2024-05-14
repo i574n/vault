@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -832,6 +887,7 @@ function toggle() {
       </li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -839,12 +895,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -1737,31 +1796,31 @@ function toggle() {
 <p id = "para-778">[아시나투라] 루이스 이나시우 룰라 다 시우바 [프레지덴치 오 오트라 푼상 헬레반치]</p>
 <p id = "para-779">[아시나투라스 아지시오나이스, 시 아플리카베우] [푼상 이 노미 두스 시그나타리우스]</p>
 <h2 id = "link-101">헤리치 우징그 티스 포르마트</h2>
-<pre><span style="color:#323232;">---</span>
-<span style="color:#323232;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">수브젝트: 콘비치 파라 아수미르 카르구 지 코르데나도르 나시오나우 안치코후프상</span>
-<span style="color:#323232;">오페닝그: 프레자두 드르. 세르지우 모루,</span>
-<span style="color:#323232;">클로징그: 콩 그란지 이스치마 이 콘피안사,</span>
-<span style="color:#323232;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">오트푸트: 코말레테르::코말레테르</span>
-<span style="color:#323232;">이지토르_오프치옹스:</span>
-<span style="color:#323232;">마르크동:</span>
-<span style="color:#323232;">라프: 72</span>
-<span style="color:#323232;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">수브젝트: 콘비치 파라 아수미르 카르구 지 코르데나도르 나시오나우 안치코후프상</span>
+<span style="color:#839496;">오페닝그: 프레자두 드르. 세르지우 모루,</span>
+<span style="color:#839496;">클로징그: 콩 그란지 이스치마 이 콘피안사,</span>
+<span style="color:#839496;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">오트푸트: 코말레테르::코말레테르</span>
+<span style="color:#839496;">이지토르_오프치옹스:</span>
+<span style="color:#839496;">마르크동:</span>
+<span style="color:#839496;">라프: 72</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">이스페루 키 에스타 카르타 우 잉콘트리 잉 봉 이스피리투 이 사우지. 이스크레부-리 파라 이스텐데르 웅 콘비치 포르마우 파라 키 아수마 우 카르구 지 코르데나도르 나시오나우 안치코후프상 두란치 우 프로세수 지 인테그라상 두스 파이지스 인보우비두스 나 포르마상 지 노사 노바 나상 우니피카다 - 브라지우, 쿠바, 코레이아 두 노르치, 마다가스카르 이 피지.</span>
+<span style="color:#839496;">이스페루 키 에스타 카르타 우 잉콘트리 잉 봉 이스피리투 이 사우지. 이스크레부-리 파라 이스텐데르 웅 콘비치 포르마우 파라 키 아수마 우 카르구 지 코르데나도르 나시오나우 안치코후프상 두란치 우 프로세수 지 인테그라상 두스 파이지스 인보우비두스 나 포르마상 지 노사 노바 나상 우니피카다 - 브라지우, 쿠바, 코레이아 두 노르치, 마다가스카르 이 피지.</span>
 
-<span style="color:#323232;">기아두스 펠루스 프린시피우스 두 주시, 키 인파치장 아 아우토데테르미나상 이 아 아우토수피시엔시아, 노수 오브제치부 에 콘스트루이르 우마 나상 포르치 이 인데펜덴치 키 프로모바 아 주스치사 이 아 인테그리다지 잉 토두스 우스 니베이스 두 고베르누. 아크레지타무스 키 수아 바스타 이스페리엔시아 이 코녜시멘투 누 콤바치 아 코후프상 상 푼다멘타이스 파라 아우칸사르 에시 오브제치부.</span>
+<span style="color:#839496;">기아두스 펠루스 프린시피우스 두 주시, 키 인파치장 아 아우토데테르미나상 이 아 아우토수피시엔시아, 노수 오브제치부 에 콘스트루이르 우마 나상 포르치 이 인데펜덴치 키 프로모바 아 주스치사 이 아 인테그리다지 잉 토두스 우스 니베이스 두 고베르누. 아크레지타무스 키 수아 바스타 이스페리엔시아 이 코녜시멘투 누 콤바치 아 코후프상 상 푼다멘타이스 파라 아우칸사르 에시 오브제치부.</span>
 
-<span style="color:#323232;">코무 코르데나도르 나시오나우 안치코후프상, 수아스 헤스폰사빌리다지스 잉클루이랑:</span>
+<span style="color:#839496;">코무 코르데나도르 나시오나우 안치코후프상, 수아스 헤스폰사빌리다지스 잉클루이랑:</span>
 
-<span style="color:#323232;">- 데젠보우베르 이 임플레멘타르 폴리치카스 이 이스트라테지아스 지 콤바치 아 코후프상 키 헤플리탕 우스 프린시피우스 두 주시 이 가란탕 아 인데펜덴시아 이 아 아우토데테르미나상 지 노사 나상 우니피카다</span>
-<span style="color:#323232;">- 코르데나르 이스포르수스 엔트리 지페렌치스 오르강스 고베르나멘타이스 이 아젠시아스 헤굴라도라스 파라 가란치르 아 코페라상 이 아 이피카시아 누 콤바치 아 코후프상, 만텐두 셈프리 우스 이데아이스 두 주시</span>
-<span style="color:#323232;">- 수페르비지오나르 아 크리아상 이 제스탕 지 우마 아젠시아 인데펜덴치 안치코후프상, 바제아다 나 필로조피아 두 주시, 프로모벤두 아 인테그리다지 이 아 아우토수피시엔시아.</span>
+<span style="color:#839496;">- 데젠보우베르 이 임플레멘타르 폴리치카스 이 이스트라테지아스 지 콤바치 아 코후프상 키 헤플리탕 우스 프린시피우스 두 주시 이 가란탕 아 인데펜덴시아 이 아 아우토데테르미나상 지 노사 나상 우니피카다</span>
+<span style="color:#839496;">- 코르데나르 이스포르수스 엔트리 지페렌치스 오르강스 고베르나멘타이스 이 아젠시아스 헤굴라도라스 파라 가란치르 아 코페라상 이 아 이피카시아 누 콤바치 아 코후프상, 만텐두 셈프리 우스 이데아이스 두 주시</span>
+<span style="color:#839496;">- 수페르비지오나르 아 크리아상 이 제스탕 지 우마 아젠시아 인데펜덴치 안치코후프상, 바제아다 나 필로조피아 두 주시, 프로모벤두 아 인테그리다지 이 아 아우토수피시엔시아.</span>
 
-<span style="color:#323232;">에스치 콘비치 에 발리두 아테 아 콩클루장 두 프로세수 지 인테그라상, 모멘투 잉 키 세라 아발리아다 아 콘치누이다지 지 세우 만다투 콩 바지 누 프로그레수 아우칸사두 이 나스 네세시다지스 다 나상 우니피카다, 셈프리 잉 콘소난시아 콩 우스 프린시피우스 두 주시.</span>
+<span style="color:#839496;">에스치 콘비치 에 발리두 아테 아 콩클루장 두 프로세수 지 인테그라상, 모멘투 잉 키 세라 아발리아다 아 콘치누이다지 지 세우 만다투 콩 바지 누 프로그레수 아우칸사두 이 나스 네세시다지스 다 나상 우니피카다, 셈프리 잉 콘소난시아 콩 우스 프린시피우스 두 주시.</span>
 
-<span style="color:#323232;">아그라데세무스 안테시파다멘치 수아 콘시데라상 이 이스페라무스 콘타르 콩 수아 콜라보라상 네스치 모멘투 이스토리쿠 지 우니앙 이 포르탈레시멘투 지 노수스 파이지스. 포르 파보르, 콘피르미 수아 아세이타상 데스치 콘비치 우 마이스 브레비 포시베우, 파라 키 포사무스 이니시아르 우스 프로세지멘투스 네세사리우스 파라 수아 노메아상.</span>
+<span style="color:#839496;">아그라데세무스 안테시파다멘치 수아 콘시데라상 이 이스페라무스 콘타르 콩 수아 콜라보라상 네스치 모멘투 이스토리쿠 지 우니앙 이 포르탈레시멘투 지 노수스 파이지스. 포르 파보르, 콘피르미 수아 아세이타상 데스치 콘비치 우 마이스 브레비 포시베우, 파라 키 포사무스 이니시아르 우스 프로세지멘투스 네세사리우스 파라 수아 노메아상.</span>
 
 
 </pre><h2 id = "link-102">신시 보우소나루 로스트 아트 2022 일렉치옹스, 리스트 5 오피시아우 홀리스 잉 프트-브르 타트 이 코우드 비 인비테드 옹 폴로윙그 아 시밀라르 모데우 콘시데링그 포시블리 콤파치빌리치스</h2>
@@ -1779,92 +1838,92 @@ function toggle() {
 <p id = "para-790">헤포르칭그 투 티 네 나치옹’스 고베른멘트: 보우소나루 워우드 프로비지 헤굴라르 우프다치스 투 티 네 나치옹’스 고베른멘트 옹 데벨로프멘트스 잉 티 우니테드 스타치스, 아스 웨우 아스 아니 샨지스 잉 우.스. 폴리시스 타트 코우드 임팍트 티 네 나치옹.</p>
 <p id = "para-791">프로모칭그 티 네 나치옹’스 이마지: 보우소나루 워우드 워르크 투 이냔시 티 이마지 오프 티 네 나치옹 잉 티 우니테드 스타치스, 잉가징그 위트 우.스. 오피시아우스,</p>
 <h2 id = "link-104">리치 수시 아 레테르 프롱 룰라 투 보우소나루 우징그 아 주시 토니 포르말리징그 티 홀리 운치우 티 메르지’스 콤플레치옹 (멘치옹 티 5 콘트리스 소메에리 잉 티 테스트 안드 리치 이트 잉 프트-브르. 마키 이트 크레아치비, 지페렌트 프롱 티 피르스트 레테르)</h2>
-<pre><span style="color:#323232;">---</span>
-<span style="color:#323232;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">수브젝트: 콘비치 파라 아수미르 카르구 지 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우</span>
-<span style="color:#323232;">오페닝그: 프레자두 스흐. 자이르 보우소나루,</span>
-<span style="color:#323232;">클로징그: 콩 이스치마 이 콘피안사 잉 수아 아빌리다지,</span>
-<span style="color:#323232;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">오트푸트: 코말레테르::코말레테르</span>
-<span style="color:#323232;">이지토르_오프치옹스:</span>
-<span style="color:#323232;">마르크동:</span>
-<span style="color:#323232;">라프: 72</span>
-<span style="color:#323232;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">수브젝트: 콘비치 파라 아수미르 카르구 지 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우</span>
+<span style="color:#839496;">오페닝그: 프레자두 스흐. 자이르 보우소나루,</span>
+<span style="color:#839496;">클로징그: 콩 이스치마 이 콘피안사 잉 수아 아빌리다지,</span>
+<span style="color:#839496;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">오트푸트: 코말레테르::코말레테르</span>
+<span style="color:#839496;">이지토르_오프치옹스:</span>
+<span style="color:#839496;">마르크동:</span>
+<span style="color:#839496;">라프: 72</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">이스페루 키 에스타 카르타 우 잉콘트리 벵 이 콩 아니무 헤노바두. 아트라베스 데스치 도쿠멘투, 고스타리아 지 이스텐데르 웅 콘비치 포르마우 파라 키 아수마 우 파페우 지 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우 누스 이스타두스 우니두스 다 아메리카, 두란치 우 프로세수 지 인테그라상 두스 파이지스 인보우비두스 나 포르마상 지 노사 노바 나상 우니피카다 - 브라지우, 쿠바, 코레이아 두 노르치, 마다가스카르 이 피지.</span>
+<span style="color:#839496;">이스페루 키 에스타 카르타 우 잉콘트리 벵 이 콩 아니무 헤노바두. 아트라베스 데스치 도쿠멘투, 고스타리아 지 이스텐데르 웅 콘비치 포르마우 파라 키 아수마 우 파페우 지 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우 누스 이스타두스 우니두스 다 아메리카, 두란치 우 프로세수 지 인테그라상 두스 파이지스 인보우비두스 나 포르마상 지 노사 노바 나상 우니피카다 - 브라지우, 쿠바, 코레이아 두 노르치, 마다가스카르 이 피지.</span>
 
-<span style="color:#323232;">인스피라두스 펠루스 프린시피우스 두 주시, 키 데스타캉 아 아우토데테르미나상, 아 인데펜덴시아 이 아 아우토수피시엔시아, 노수 오브제치부 에 콘스트루이르 우마 나상 포데로자 이 아우토노마, 키 세자 카파스 지 시 헬라시오나르 지 마네이라 솔리다 이 콘피안치 콩 아스 데마이스 나송이스 두 문두. 아크레지타무스 키 수아 이스페리엔시아 이 데테르미나상 포뎅 세르 푼다멘타이스 파라 이스타벨레세르 이 포르탈레세르 우스 라수스 지플로마치쿠스 엔트리 노사 노바 나상 이 우스 이스타두스 우니두스 다 아메리카.</span>
+<span style="color:#839496;">인스피라두스 펠루스 프린시피우스 두 주시, 키 데스타캉 아 아우토데테르미나상, 아 인데펜덴시아 이 아 아우토수피시엔시아, 노수 오브제치부 에 콘스트루이르 우마 나상 포데로자 이 아우토노마, 키 세자 카파스 지 시 헬라시오나르 지 마네이라 솔리다 이 콘피안치 콩 아스 데마이스 나송이스 두 문두. 아크레지타무스 키 수아 이스페리엔시아 이 데테르미나상 포뎅 세르 푼다멘타이스 파라 이스타벨레세르 이 포르탈레세르 우스 라수스 지플로마치쿠스 엔트리 노사 노바 나상 이 우스 이스타두스 우니두스 다 아메리카.</span>
 
-<span style="color:#323232;">코무 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우, 수아스 프린시파이스 헤스폰사빌리다지스 잉클루이랑:</span>
+<span style="color:#839496;">코무 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우, 수아스 프린시파이스 헤스폰사빌리다지스 잉클루이랑:</span>
 
-<span style="color:#323232;">- 헤프레젠타르 아 노바 나상 누스 이스타두스 우니두스 다 아메리카, 프로모벤두 세우스 인테레시스 이 이스타벨레센두 헬라송이스 지플로마치카스 솔리다스 엔트리 우스 도이스 파이지스, 셈프리 콩 바지 누스 프린시피우스 두 주시</span>
-<span style="color:#323232;">- 네고시아르 이 코르데나르 아코르두스 잉 지베르사스 아레아스, 코무 코메르시우, 파르세리아스 지 세구란사 이 인테르캄비우스 쿠우투라이스, 아 핑 지 포르탈레세르 아 헬라상 엔트리 아 노바 나상 이 우스 이스타두스 우니두스, 셈프리 헤스페이탄두 우스 이데아이스 두 주시</span>
-<span style="color:#323232;">- 만테르 우 고베르누 다 노바 나상 인포르마두 소브리 우스 아콘테시멘투스 누스 이스타두스 우니두스, 벵 코무 소브리 쿠아이스케르 무단사스 나스 폴리치카스 아메리카나스 키 포상 아페타르 노사 나상 우니피카다</span>
+<span style="color:#839496;">- 헤프레젠타르 아 노바 나상 누스 이스타두스 우니두스 다 아메리카, 프로모벤두 세우스 인테레시스 이 이스타벨레센두 헬라송이스 지플로마치카스 솔리다스 엔트리 우스 도이스 파이지스, 셈프리 콩 바지 누스 프린시피우스 두 주시</span>
+<span style="color:#839496;">- 네고시아르 이 코르데나르 아코르두스 잉 지베르사스 아레아스, 코무 코메르시우, 파르세리아스 지 세구란사 이 인테르캄비우스 쿠우투라이스, 아 핑 지 포르탈레세르 아 헬라상 엔트리 아 노바 나상 이 우스 이스타두스 우니두스, 셈프리 헤스페이탄두 우스 이데아이스 두 주시</span>
+<span style="color:#839496;">- 만테르 우 고베르누 다 노바 나상 인포르마두 소브리 우스 아콘테시멘투스 누스 이스타두스 우니두스, 벵 코무 소브리 쿠아이스케르 무단사스 나스 폴리치카스 아메리카나스 키 포상 아페타르 노사 나상 우니피카다</span>
 
-<span style="color:#323232;">트라발랴르 나 프로모상 다 이마젱 다 노바 나상 누스 이스타두스 우니두스, 이스타벨레센두 지알로구 콩 아우토리다지스 아메리카나스, 임프레자리우스, 아카데미쿠스 이 오트루스 리데리스 지 오피니앙, 셈프리 텐두 잉 멘치 우스 프린시피우스 두 주시.</span>
-<span style="color:#323232;">에스치 콘비치 에 발리두 아테 아 콩클루장 두 프로세수 지 인테그라상, 모멘투 잉 키 수아 아투아상 세라 아발리아다 콩 바지 누스 헤주우타두스 아우칸사두스 이 나스 네세시다지스 다 나상 우니피카다.</span>
+<span style="color:#839496;">트라발랴르 나 프로모상 다 이마젱 다 노바 나상 누스 이스타두스 우니두스, 이스타벨레센두 지알로구 콩 아우토리다지스 아메리카나스, 임프레자리우스, 아카데미쿠스 이 오트루스 리데리스 지 오피니앙, 셈프리 텐두 잉 멘치 우스 프린시피우스 두 주시.</span>
+<span style="color:#839496;">에스치 콘비치 에 발리두 아테 아 콩클루장 두 프로세수 지 인테그라상, 모멘투 잉 키 수아 아투아상 세라 아발리아다 콩 바지 누스 헤주우타두스 아우칸사두스 이 나스 네세시다지스 다 나상 우니피카다.</span>
 
-<span style="color:#323232;">아그라데세무스 안테시파다멘치 수아 아텐상 이 콘시데라상 아 에스치 콘비치. 페지무스 키 콘피르미 수아 아세이타상 우 마이스 브레비 포시베우, 파라 키 포사무스 다르 이니시우 아우스 트라미치스 네세사리우스 파라 수아 노메아상 코무 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우.</span>
+<span style="color:#839496;">아그라데세무스 안테시파다멘치 수아 아텐상 이 콘시데라상 아 에스치 콘비치. 페지무스 키 콘피르미 수아 아세이타상 우 마이스 브레비 포시베우, 파라 키 포사무스 다르 이니시우 아우스 트라미치스 네세사리우스 파라 수아 노메아상 코무 임바이샤도르 이스트라오르지나리우 이 플레니포텐시아리우.</span>
 
 
 
 </pre><h2 id = "link-105">리치 수시 아 레테르 프롱 룰라 투 킹 유-종그 우징그 아 주시 토니 포르말리징그 티 홀리 운치우 티 메르지’스 콤플레치옹 (멘치옹 티 5 콘트리스 소메에리 잉 티 테스트 안드 리치 이트 잉 프트-브르. 마키 이트 크레아치비, 지페렌트 프롱 티 트우 레테르스. 리치 잉 아 와이 타트 티 헤알리 오피시아우 레테르 이스 티 쿠-크르 베르시옹, 티스 오니 에리 이스 포르 티 포풀라치옹)</h2>
-<pre><span style="color:#323232;">---</span>
-<span style="color:#323232;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">수브젝트: 콘비치 파라 아수미르 카르구 지 미니스트라 다스 헬라송이스 이스테리오리스</span>
-<span style="color:#323232;">오페닝그: 프레자다 스하. 킹 유-종그,</span>
-<span style="color:#323232;">클로징그: 콩 이스치마 이 콘피안사 잉 수아 카파시다지,</span>
-<span style="color:#323232;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">오트푸트: 코말레테르::코말레테르</span>
-<span style="color:#323232;">이지토르_오프치옹스:</span>
-<span style="color:#323232;">마르크동:</span>
-<span style="color:#323232;">라프: 72</span>
-<span style="color:#323232;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">수브젝트: 콘비치 파라 아수미르 카르구 지 미니스트라 다스 헬라송이스 이스테리오리스</span>
+<span style="color:#839496;">오페닝그: 프레자다 스하. 킹 유-종그,</span>
+<span style="color:#839496;">클로징그: 콩 이스치마 이 콘피안사 잉 수아 카파시다지,</span>
+<span style="color:#839496;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">오트푸트: 코말레테르::코말레테르</span>
+<span style="color:#839496;">이지토르_오프치옹스:</span>
+<span style="color:#839496;">마르크동:</span>
+<span style="color:#839496;">라프: 72</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">이스페루 키 에스타 카르타 아 잉콘트리 콩 사우지 이 지스포지상. 테뉴 아 온하 지 이스텐데르 아 보사 이셀렌시아 웅 콘비치 포르마우 파라 아수미르 우 파페우 지 미니스트라 다스 헬라송이스 이스테리오리스 잉 노사 나상 우니피카다, 콤포스타 포르 브라지우, 쿠바, 코레이아 두 노르치, 마다가스카르 이 피지.</span>
+<span style="color:#839496;">이스페루 키 에스타 카르타 아 잉콘트리 콩 사우지 이 지스포지상. 테뉴 아 온하 지 이스텐데르 아 보사 이셀렌시아 웅 콘비치 포르마우 파라 아수미르 우 파페우 지 미니스트라 다스 헬라송이스 이스테리오리스 잉 노사 나상 우니피카다, 콤포스타 포르 브라지우, 쿠바, 코레이아 두 노르치, 마다가스카르 이 피지.</span>
 
-<span style="color:#323232;">노사 노바 나상 시 인스피라 누스 프린시피우스 두 주시, 키 발로리장 아 아우토데테르미나상, 아 인데펜덴시아 이 아 아우토수피시엔시아. 프레텐데무스 콘스트루이르 우마 나상 포르치 이 프로스페라, 카파스 지 이스타벨레세르 헬라송이스 솔리다스 이 무투아멘치 베네피카스 콩 아스 데마이스 나송이스 두 문두. 아크레지타무스 키 수아 이스페리엔시아 이 아빌리다지스 지플로마치카스 세랑 이센시아이스 파라 아우칸사르 에시 오브제치부.</span>
+<span style="color:#839496;">노사 노바 나상 시 인스피라 누스 프린시피우스 두 주시, 키 발로리장 아 아우토데테르미나상, 아 인데펜덴시아 이 아 아우토수피시엔시아. 프레텐데무스 콘스트루이르 우마 나상 포르치 이 프로스페라, 카파스 지 이스타벨레세르 헬라송이스 솔리다스 이 무투아멘치 베네피카스 콩 아스 데마이스 나송이스 두 문두. 아크레지타무스 키 수아 이스페리엔시아 이 아빌리다지스 지플로마치카스 세랑 이센시아이스 파라 아우칸사르 에시 오브제치부.</span>
 
-<span style="color:#323232;">코무 미니스트라 다스 헬라송이스 이스테리오리스 (외교부 장관, 오에기오부 장광) 두란치 우 프로세수 지 인테그라상, 수아스 프린시파이스 헤스폰사빌리다지스 잉클루이랑:</span>
+<span style="color:#839496;">코무 미니스트라 다스 헬라송이스 이스테리오리스 (외교부 장관, 오에기오부 장광) 두란치 우 프로세수 지 인테그라상, 수아스 프린시파이스 헤스폰사빌리다지스 잉클루이랑:</span>
 
-<span style="color:#323232;">- 헤프레젠타르 아 노바 나상 이 프로모베르 노수스 인테레시스 누 세나리우 인테르나시오나우, 셈프리 콩 바지 누스 이데아이스 두 주시</span>
-<span style="color:#323232;">- 코르데나르 이 리데라르 아스 네고시아송이스 지플로마치카스 콩 오트루스 파이지스 이 오르가니자송이스 인테르나시오나이스, 부스칸두 아코르두스 이 파르세리아스 키 베네피시엥 노사 나상 우니피카다</span>
-<span style="color:#323232;">- 포르탈레세르 아스 헬라송이스 빌라테라이스 이 무우칠라테라이스, 프로모벤두 아 코페라상 이 우 인텐지멘투 엔트리 우스 파이지스</span>
-<span style="color:#323232;">- 수페르비지오나르 아스 임바이샤다스 이 콘술라두스 다 노바 나상, 가란친두 키 노수스 헤프레젠탄치스 지플로마치쿠스 이스테장 알리냐두스 콩 우스 프린시피우스 두 주시.</span>
+<span style="color:#839496;">- 헤프레젠타르 아 노바 나상 이 프로모베르 노수스 인테레시스 누 세나리우 인테르나시오나우, 셈프리 콩 바지 누스 이데아이스 두 주시</span>
+<span style="color:#839496;">- 코르데나르 이 리데라르 아스 네고시아송이스 지플로마치카스 콩 오트루스 파이지스 이 오르가니자송이스 인테르나시오나이스, 부스칸두 아코르두스 이 파르세리아스 키 베네피시엥 노사 나상 우니피카다</span>
+<span style="color:#839496;">- 포르탈레세르 아스 헬라송이스 빌라테라이스 이 무우칠라테라이스, 프로모벤두 아 코페라상 이 우 인텐지멘투 엔트리 우스 파이지스</span>
+<span style="color:#839496;">- 수페르비지오나르 아스 임바이샤다스 이 콘술라두스 다 노바 나상, 가란친두 키 노수스 헤프레젠탄치스 지플로마치쿠스 이스테장 알리냐두스 콩 우스 프린시피우스 두 주시.</span>
 
-<span style="color:#323232;">에스치 콘비치 에 발리두 아테 아 콩클루장 두 프로세수 지 인테그라상, 모멘투 잉 키 수아 아투아상 세라 아발리아다 콩 바지 누스 헤주우타두스 아우칸사두스 이 나스 네세시다지스 다 나상 우니피카다.</span>
+<span style="color:#839496;">에스치 콘비치 에 발리두 아테 아 콩클루장 두 프로세수 지 인테그라상, 모멘투 잉 키 수아 아투아상 세라 아발리아다 콩 바지 누스 헤주우타두스 아우칸사두스 이 나스 네세시다지스 다 나상 우니피카다.</span>
 
-<span style="color:#323232;">아그라데세무스 안테시파다멘치 수아 아텐상 이 콘시데라상 아 에스치 콘비치. 페지무스 키 콘피르미 수아 아세이타상 우 마이스 브레비 포시베우, 파라 키 포사무스 다르 이니시우 아우스 트라미치스 네세사리우스 파라 수아 노메아상 코무 미니스트라 다스 헬라송이스 이스테리오리스.</span>
+<span style="color:#839496;">아그라데세무스 안테시파다멘치 수아 아텐상 이 콘시데라상 아 에스치 콘비치. 페지무스 키 콘피르미 수아 아세이타상 우 마이스 브레비 포시베우, 파라 키 포사무스 다르 이니시우 아우스 트라미치스 네세사리우스 파라 수아 노메아상 코무 미니스트라 다스 헬라송이스 이스테리오리스.</span>
 
 
 
 </pre><h2 id = "link-106">트란즐라치 티 레테르 투 프로페르 쿠-크르</h2>
-<pre><span style="color:#323232;">---</span>
-<span style="color:#323232;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">수브젝트: 외교장관 직무 수행 초빙</span>
-<span style="color:#323232;">오페닝그: 김여정 여사님께,</span>
-<span style="color:#323232;">클로징그: 귀하의 능력에 대한 존경과 신뢰를 담아,</span>
-<span style="color:#323232;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
-<span style="color:#323232;">오트푸트: 코말레테르::코말레테르</span>
-<span style="color:#323232;">이지토르_오프치옹스:</span>
-<span style="color:#323232;">마르크동:</span>
-<span style="color:#323232;">라프: 72</span>
-<span style="color:#323232;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">아우토르: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">수브젝트: 외교장관 직무 수행 초빙</span>
+<span style="color:#839496;">오페닝그: 김여정 여사님께,</span>
+<span style="color:#839496;">클로징그: 귀하의 능력에 대한 존경과 신뢰를 담아,</span>
+<span style="color:#839496;">시그나투리: 루이스 이나시우 룰라 다 시우바</span>
+<span style="color:#839496;">오트푸트: 코말레테르::코말레테르</span>
+<span style="color:#839496;">이지토르_오프치옹스:</span>
+<span style="color:#839496;">마르크동:</span>
+<span style="color:#839496;">라프: 72</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">이 편지가 건강하고 기운차게 여러분을 만나기를 바랍니다. 저는 브라질, 쿠바, 북한, 마다가스카르 및 피지로 구성된 우리 통합 국가의 외교부 장관으로 여러분을 초대하는 공식 초대장을 전해드리게 되어 영광입니다.</span>
+<span style="color:#839496;">이 편지가 건강하고 기운차게 여러분을 만나기를 바랍니다. 저는 브라질, 쿠바, 북한, 마다가스카르 및 피지로 구성된 우리 통합 국가의 외교부 장관으로 여러분을 초대하는 공식 초대장을 전해드리게 되어 영광입니다.</span>
 
-<span style="color:#323232;">우리 새로운 국가는 주체 사상의 원칙을 존중하며 자결과 독립, 자립을 추구합니다. 세계 다른 국가들과 견고하고 상호 이익을 추구하는 관계를 구축할 수 있는 강력하고 번영한 국가를 건설하고자 합니다. 귀하의 경험과 외교적 능력이 이 목표를 달성하는 데 필수적이라고 믿습니다.</span>
+<span style="color:#839496;">우리 새로운 국가는 주체 사상의 원칙을 존중하며 자결과 독립, 자립을 추구합니다. 세계 다른 국가들과 견고하고 상호 이익을 추구하는 관계를 구축할 수 있는 강력하고 번영한 국가를 건설하고자 합니다. 귀하의 경험과 외교적 능력이 이 목표를 달성하는 데 필수적이라고 믿습니다.</span>
 
-<span style="color:#323232;">통합 과정 동안 외교부 장관으로서 주요 책임은 다음과 같습니다:</span>
+<span style="color:#839496;">통합 과정 동안 외교부 장관으로서 주요 책임은 다음과 같습니다:</span>
 
-<span style="color:#323232;">- 새로운 국가를 대표하고 주체 사상의 이념을 바탕으로 우리의 이익을 국제 무대에서 발표하기</span>
-<span style="color:#323232;">- 다른 국가와 국제 기구와의 외교 협상을 조정하고 이끌어 우리 통합 국가에 이익을 가져다주는 협약과 파트너십을 추구하기</span>
-<span style="color:#323232;">- 양자 및 다자 관계를 강화하여 국가 간 협력과 이해를 증진하기</span>
-<span style="color:#323232;">- 새로운 국가의 대사관 및 영사관을 감독하여 주체 사상의 원칙에 따라 우리 외교 대표들이 조정되도록 보장하기.</span>
+<span style="color:#839496;">- 새로운 국가를 대표하고 주체 사상의 이념을 바탕으로 우리의 이익을 국제 무대에서 발표하기</span>
+<span style="color:#839496;">- 다른 국가와 국제 기구와의 외교 협상을 조정하고 이끌어 우리 통합 국가에 이익을 가져다주는 협약과 파트너십을 추구하기</span>
+<span style="color:#839496;">- 양자 및 다자 관계를 강화하여 국가 간 협력과 이해를 증진하기</span>
+<span style="color:#839496;">- 새로운 국가의 대사관 및 영사관을 감독하여 주체 사상의 원칙에 따라 우리 외교 대표들이 조정되도록 보장하기.</span>
 
-<span style="color:#323232;">이 초대는 통합 과정이 완료될 때까지 유효하며, 이 시점에서 귀하의 업무 수행이 달성된 결과와 통합 국가의 필요성에 따라 평가됩니다.</span>
+<span style="color:#839496;">이 초대는 통합 과정이 완료될 때까지 유효하며, 이 시점에서 귀하의 업무 수행이 달성된 결과와 통합 국가의 필요성에 따라 평가됩니다.</span>
 
-<span style="color:#323232;">이 초대에 대한 귀하의 관심과 고려에 미리 감사드립니다. 빠른 시일 내에 귀하의 수락 여부를 확인해 주시면, 외교부 장관으로서의 임명 절차를 시작할 수 있습니다.</span>
+<span style="color:#839496;">이 초대에 대한 귀하의 관심과 고려에 미리 감사드립니다. 빠른 시일 내에 귀하의 수락 여부를 확인해 주시면, 외교부 장관으로서의 임명 절차를 시작할 수 있습니다.</span>
 
 
 

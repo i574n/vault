@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -617,6 +672,7 @@ function toggle() {
       <li><a href="#link-46">create a new roll technique considering bed time</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -624,12 +680,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -756,217 +815,217 @@ function toggle() {
 <h2 id = "link-8">encode the technique using F# discriminated union recursive relationships (connected by the ‘and’ token) with required property based tests using fscheck+expecto</h2>
 <p id = "para-63">&lt; Pelo que entendi, você gostaria que a Técnica dos Dados Mental fosse codificada usando Discriminated Unions (DU) em F#, bem como testes de propriedade usando FsCheck e Expecto.</p>
 <p id = "para-64">Os DUs em F# são usados para representar valores que podem ser um de vários tipos possíveis. Vamos começar definindo os tipos de dados que precisamos:</p>
-<pre><span style="color:#323232;">type Complexity = Simple | Moderate | Complex</span>
-<span style="color:#323232;">type Effort = Light | Medium | Heavy</span>
-<span style="color:#323232;">type Dice = { d1: int; d2: int; }</span>
-<span style="color:#323232;">type Task = { complexity: Complexity; effort: Effort; duration: int; }</span>
+<pre><span style="color:#839496;">type Complexity = Simple | Moderate | Complex</span>
+<span style="color:#839496;">type Effort = Light | Medium | Heavy</span>
+<span style="color:#839496;">type Dice = { d1: int; d2: int; }</span>
+<span style="color:#839496;">type Task = { complexity: Complexity; effort: Effort; duration: int; }</span>
 
 
 </pre><p id = "para-65">Aqui, definimos o esforço e a complexidade como tipos DU, cada um com três possíveis valores. Também definimos um registro para a jogada de dados e um para a tarefa.</p>
 <p id = "para-66">Podemos agora definir uma função para criar uma nova tarefa a partir de uma jogada de dados:</p>
-<pre><span style="color:#323232;">let generateTask dice =</span>
-<span style="color:#323232;">    let complexity =</span>
-<span style="color:#323232;">        match dice.d1 * dice.d2 with</span>
-<span style="color:#323232;">        | n when n &lt;= 12 -&gt; Simple</span>
-<span style="color:#323232;">        | n when n &lt;= 24 -&gt; Moderate</span>
-<span style="color:#323232;">        | _ -&gt; Complex</span>
+<pre><span style="color:#839496;">let generateTask dice =</span>
+<span style="color:#839496;">    let complexity =</span>
+<span style="color:#839496;">        match dice.d1 * dice.d2 with</span>
+<span style="color:#839496;">        | n when n &lt;= 12 -&gt; Simple</span>
+<span style="color:#839496;">        | n when n &lt;= 24 -&gt; Moderate</span>
+<span style="color:#839496;">        | _ -&gt; Complex</span>
 
-<span style="color:#323232;">    let effort =</span>
-<span style="color:#323232;">        match dice.d1 + dice.d2 with</span>
-<span style="color:#323232;">        | n when n &lt;= 4 -&gt; Light</span>
-<span style="color:#323232;">        | n when n &lt;= 8 -&gt; Medium</span>
-<span style="color:#323232;">        | _ -&gt; Heavy</span>
+<span style="color:#839496;">    let effort =</span>
+<span style="color:#839496;">        match dice.d1 + dice.d2 with</span>
+<span style="color:#839496;">        | n when n &lt;= 4 -&gt; Light</span>
+<span style="color:#839496;">        | n when n &lt;= 8 -&gt; Medium</span>
+<span style="color:#839496;">        | _ -&gt; Heavy</span>
 
-<span style="color:#323232;">    let duration = dice.d1 + dice.d2</span>
+<span style="color:#839496;">    let duration = dice.d1 + dice.d2</span>
 
-<span style="color:#323232;">    { complexity = complexity; effort = effort; duration = duration; }</span>
+<span style="color:#839496;">    { complexity = complexity; effort = effort; duration = duration; }</span>
 
 
 </pre><p id = "para-67">Aqui, usamos correspondência de padrões (pattern matching) para determinar a complexidade e o esforço com base na jogada dos dados.</p>
 <p id = "para-68">Agora, para a parte de testes de propriedade, poderíamos usar FsCheck e Expecto para testar nossa função <code>generateTask</code>. Um teste de propriedade simples poderia verificar se a duração da tarefa é sempre a soma dos valores dos dados:</p>
-<pre><span style="color:#323232;">let taskDurationProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 Dice (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun dice -&gt;</span>
-<span style="color:#323232;">        let task = generateTask dice</span>
-<span style="color:#323232;">        task.duration = dice.d1 + dice.d2</span>
+<pre><span style="color:#839496;">let taskDurationProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 Dice (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun dice -&gt;</span>
+<span style="color:#839496;">        let task = generateTask dice</span>
+<span style="color:#839496;">        task.duration = dice.d1 + dice.d2</span>
 
-<span style="color:#323232;">[&lt;Tests&gt;]</span>
-<span style="color:#323232;">let tests =</span>
-<span style="color:#323232;">    testList &quot;Task generation tests&quot; [</span>
-<span style="color:#323232;">        testProperty &quot;Task duration should be the sum of dice values&quot; taskDurationProperty</span>
-<span style="color:#323232;">    ]</span>
+<span style="color:#839496;">[&lt;Tests&gt;]</span>
+<span style="color:#839496;">let tests =</span>
+<span style="color:#839496;">    testList &quot;Task generation tests&quot; [</span>
+<span style="color:#839496;">        testProperty &quot;Task duration should be the sum of dice values&quot; taskDurationProperty</span>
+<span style="color:#839496;">    ]</span>
 
-<span style="color:#323232;">runTests { defaultConfig with parallel = false } tests</span>
+<span style="color:#839496;">runTests { defaultConfig with parallel = false } tests</span>
 
 
 </pre><p id = "para-69">Este é um exemplo bastante básico e os testes de propriedade podem ser muito mais complexos. Você poderia, por exemplo, escrever testes de propriedade que verifiquem se a complexidade e o esforço da tarefa são sempre consistentes com os valores dos dados.</p>
 <p id = "para-70">Por favor, note que eu assumi que você tem algum conhecimento de F#, discriminated unions e testes de propriedade. Caso contrário, ou se você tiver alguma dúvida sobre o código, por favor, deixe-me saber!</p>
 <h2 id = "link-9">i didn’t find the multiplication part in the code. provide the full implementation of the algorithm, we think about the tests later</h2>
 <p id = "para-71">&lt; Peço desculpas pela confusão. Vamos codificar a Técnica dos Dados Mental em F# usando Discriminated Unions e recursion. Primeiro, definiremos a duração do foco e a complexidade da tarefa.</p>
-<pre><span style="color:#323232;">// Definindo o tipo de dados para a complexidade e duração do foco</span>
-<span style="color:#323232;">type Complexity = Simple | Moderate | Complex</span>
-<span style="color:#323232;">type Duration = Short | Medium | Long</span>
+<pre><span style="color:#839496;">// Definindo o tipo de dados para a complexidade e duração do foco</span>
+<span style="color:#839496;">type Complexity = Simple | Moderate | Complex</span>
+<span style="color:#839496;">type Duration = Short | Medium | Long</span>
 
-<span style="color:#323232;">// Discriminated Union para os dados</span>
-<span style="color:#323232;">type Dice = D1 of int | D2 of int</span>
+<span style="color:#839496;">// Discriminated Union para os dados</span>
+<span style="color:#839496;">type Dice = D1 of int | D2 of int</span>
 
-<span style="color:#323232;">// Discriminated Union para a tarefa</span>
-<span style="color:#323232;">type Task =</span>
-<span style="color:#323232;">    | Task of Complexity * Duration * Task</span>
-<span style="color:#323232;">    | NoTask</span>
+<span style="color:#839496;">// Discriminated Union para a tarefa</span>
+<span style="color:#839496;">type Task =</span>
+<span style="color:#839496;">    | Task of Complexity * Duration * Task</span>
+<span style="color:#839496;">    | NoTask</span>
 
 
 </pre><p id = "para-72">Em seguida, vamos criar funções para calcular a duração do foco e a complexidade da tarefa com base na soma e na multiplicação dos valores dos dados.</p>
-<pre><span style="color:#323232;">// Função para calcular a duração do foco com base na soma dos valores dos dados</span>
-<span style="color:#323232;">let durationOfFocus (d1: int) (d2: int) =</span>
-<span style="color:#323232;">    match d1 + d2 with</span>
-<span style="color:#323232;">    | sum when sum &lt;= 4 -&gt; Short</span>
-<span style="color:#323232;">    | sum when sum &lt;= 8 -&gt; Medium</span>
-<span style="color:#323232;">    | _ -&gt; Long</span>
+<pre><span style="color:#839496;">// Função para calcular a duração do foco com base na soma dos valores dos dados</span>
+<span style="color:#839496;">let durationOfFocus (d1: int) (d2: int) =</span>
+<span style="color:#839496;">    match d1 + d2 with</span>
+<span style="color:#839496;">    | sum when sum &lt;= 4 -&gt; Short</span>
+<span style="color:#839496;">    | sum when sum &lt;= 8 -&gt; Medium</span>
+<span style="color:#839496;">    | _ -&gt; Long</span>
 
-<span style="color:#323232;">// Função para calcular a complexidade da tarefa com base na multiplicação dos valores dos dados</span>
-<span style="color:#323232;">let complexityOfTask (d1: int) (d2: int) =</span>
-<span style="color:#323232;">    match d1 * d2 with</span>
-<span style="color:#323232;">    | product when product &lt;= 12 -&gt; Simple</span>
-<span style="color:#323232;">    | product when product &lt;= 24 -&gt; Moderate</span>
-<span style="color:#323232;">    | _ -&gt; Complex</span>
+<span style="color:#839496;">// Função para calcular a complexidade da tarefa com base na multiplicação dos valores dos dados</span>
+<span style="color:#839496;">let complexityOfTask (d1: int) (d2: int) =</span>
+<span style="color:#839496;">    match d1 * d2 with</span>
+<span style="color:#839496;">    | product when product &lt;= 12 -&gt; Simple</span>
+<span style="color:#839496;">    | product when product &lt;= 24 -&gt; Moderate</span>
+<span style="color:#839496;">    | _ -&gt; Complex</span>
 
 
 </pre><p id = "para-73">Agora, vamos criar uma função recursiva para gerar uma lista encadeada de tarefas.</p>
-<pre><span style="color:#323232;">// Função recursiva para gerar uma lista encadeada de tarefas</span>
-<span style="color:#323232;">let rec generateTaskList d1 d2 previousTask =</span>
-<span style="color:#323232;">    match d1, d2 with</span>
-<span style="color:#323232;">    | d1, d2 when d1 &gt; 0 &amp;&amp; d2 &gt; 0 -&gt;</span>
-<span style="color:#323232;">        let complexity = complexityOfTask d1 d2</span>
-<span style="color:#323232;">        let duration = durationOfFocus d1 d2</span>
-<span style="color:#323232;">        let newTask = Task (complexity, duration, previousTask)</span>
-<span style="color:#323232;">        generateTaskList (d1 - 1) (d2 - 1) newTask</span>
-<span style="color:#323232;">    | _, _ -&gt; previousTask</span>
+<pre><span style="color:#839496;">// Função recursiva para gerar uma lista encadeada de tarefas</span>
+<span style="color:#839496;">let rec generateTaskList d1 d2 previousTask =</span>
+<span style="color:#839496;">    match d1, d2 with</span>
+<span style="color:#839496;">    | d1, d2 when d1 &gt; 0 &amp;&amp; d2 &gt; 0 -&gt;</span>
+<span style="color:#839496;">        let complexity = complexityOfTask d1 d2</span>
+<span style="color:#839496;">        let duration = durationOfFocus d1 d2</span>
+<span style="color:#839496;">        let newTask = Task (complexity, duration, previousTask)</span>
+<span style="color:#839496;">        generateTaskList (d1 - 1) (d2 - 1) newTask</span>
+<span style="color:#839496;">    | _, _ -&gt; previousTask</span>
 
 
 </pre><p id = "para-74">Finalmente, podemos gerar uma lista encadeada de tarefas com base nos valores dos dados.</p>
-<pre><span style="color:#323232;">let dice1 = 6 // Valor do primeiro dado</span>
-<span style="color:#323232;">let dice2 = 6 // Valor do segundo dado</span>
+<pre><span style="color:#839496;">let dice1 = 6 // Valor do primeiro dado</span>
+<span style="color:#839496;">let dice2 = 6 // Valor do segundo dado</span>
 
-<span style="color:#323232;">let taskList = generateTaskList dice1 dice2 NoTask</span>
+<span style="color:#839496;">let taskList = generateTaskList dice1 dice2 NoTask</span>
 
 
 </pre><p id = "para-75">Por favor, note que essa implementação é um exemplo e pode não se adequar perfeitamente às suas necessidades. A função <code>generateTaskList</code> gera uma lista encadeada de tarefas, cada uma representando um “estado” diferente da mente de acordo com os valores dos dados. As funções <code>durationOfFocus</code> e <code>complexityOfTask</code> podem ser ajustadas para corresponder à sua interpretação dos valores dos dados.</p>
 <h2 id = "link-10">now provide some advanced fscheck+expecto tests</h2>
 <p id = "para-76">&lt; Agora, vamos criar alguns testes de propriedade para validar a implementação usando FsCheck e Expecto. Vamos supor que você já instalou os pacotes FsCheck e Expecto através do NuGet ou outro gerenciador de pacotes.</p>
-<pre><span style="color:#323232;">open FsCheck</span>
-<span style="color:#323232;">open Expecto</span>
+<pre><span style="color:#839496;">open FsCheck</span>
+<span style="color:#839496;">open Expecto</span>
 
-<span style="color:#323232;">// Propriedade para verificar se a duração do foco é calculada corretamente</span>
-<span style="color:#323232;">let focusDurationProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 Tuple2 (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
-<span style="color:#323232;">        let expected =</span>
-<span style="color:#323232;">            match d1 + d2 with</span>
-<span style="color:#323232;">            | sum when sum &lt;= 4 -&gt; Short</span>
-<span style="color:#323232;">            | sum when sum &lt;= 8 -&gt; Medium</span>
-<span style="color:#323232;">            | _ -&gt; Long</span>
-<span style="color:#323232;">        let actual = durationOfFocus d1 d2</span>
-<span style="color:#323232;">        expected = actual</span>
+<span style="color:#839496;">// Propriedade para verificar se a duração do foco é calculada corretamente</span>
+<span style="color:#839496;">let focusDurationProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 Tuple2 (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
+<span style="color:#839496;">        let expected =</span>
+<span style="color:#839496;">            match d1 + d2 with</span>
+<span style="color:#839496;">            | sum when sum &lt;= 4 -&gt; Short</span>
+<span style="color:#839496;">            | sum when sum &lt;= 8 -&gt; Medium</span>
+<span style="color:#839496;">            | _ -&gt; Long</span>
+<span style="color:#839496;">        let actual = durationOfFocus d1 d2</span>
+<span style="color:#839496;">        expected = actual</span>
 
-<span style="color:#323232;">// Propriedade para verificar se a complexidade da tarefa é calculada corretamente</span>
-<span style="color:#323232;">let taskComplexityProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 Tuple2 (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
-<span style="color:#323232;">        let expected =</span>
-<span style="color:#323232;">            match d1 * d2 with</span>
-<span style="color:#323232;">            | product when product &lt;= 12 -&gt; Simple</span>
-<span style="color:#323232;">            | product when product &lt;= 24 -&gt; Moderate</span>
-<span style="color:#323232;">            | _ -&gt; Complex</span>
-<span style="color:#323232;">        let actual = complexityOfTask d1 d2</span>
-<span style="color:#323232;">        expected = actual</span>
+<span style="color:#839496;">// Propriedade para verificar se a complexidade da tarefa é calculada corretamente</span>
+<span style="color:#839496;">let taskComplexityProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 Tuple2 (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
+<span style="color:#839496;">        let expected =</span>
+<span style="color:#839496;">            match d1 * d2 with</span>
+<span style="color:#839496;">            | product when product &lt;= 12 -&gt; Simple</span>
+<span style="color:#839496;">            | product when product &lt;= 24 -&gt; Moderate</span>
+<span style="color:#839496;">            | _ -&gt; Complex</span>
+<span style="color:#839496;">        let actual = complexityOfTask d1 d2</span>
+<span style="color:#839496;">        expected = actual</span>
 
-<span style="color:#323232;">// Propriedade para verificar se a lista de tarefas tem o comprimento correto</span>
-<span style="color:#323232;">let taskListLengthProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 Tuple2 (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
-<span style="color:#323232;">        let taskList = generateTaskList d1 d2 NoTask</span>
-<span style="color:#323232;">        let rec taskListLength taskList =</span>
-<span style="color:#323232;">            match taskList with</span>
-<span style="color:#323232;">            | Task (_, _, nextTask) -&gt; 1 + taskListLength nextTask</span>
-<span style="color:#323232;">            | NoTask -&gt; 0</span>
-<span style="color:#323232;">        let actual = taskListLength taskList</span>
-<span style="color:#323232;">        let expected = min d1 d2</span>
-<span style="color:#323232;">        expected = actual</span>
+<span style="color:#839496;">// Propriedade para verificar se a lista de tarefas tem o comprimento correto</span>
+<span style="color:#839496;">let taskListLengthProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 Tuple2 (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
+<span style="color:#839496;">        let taskList = generateTaskList d1 d2 NoTask</span>
+<span style="color:#839496;">        let rec taskListLength taskList =</span>
+<span style="color:#839496;">            match taskList with</span>
+<span style="color:#839496;">            | Task (_, _, nextTask) -&gt; 1 + taskListLength nextTask</span>
+<span style="color:#839496;">            | NoTask -&gt; 0</span>
+<span style="color:#839496;">        let actual = taskListLength taskList</span>
+<span style="color:#839496;">        let expected = min d1 d2</span>
+<span style="color:#839496;">        expected = actual</span>
 
-<span style="color:#323232;">// Definindo a lista de testes</span>
-<span style="color:#323232;">let tests =</span>
-<span style="color:#323232;">    testList &quot;Task generation tests&quot; [</span>
-<span style="color:#323232;">        testProperty &quot;Duration of focus should be calculated correctly&quot; focusDurationProperty</span>
-<span style="color:#323232;">        testProperty &quot;Task complexity should be calculated correctly&quot; taskComplexityProperty</span>
-<span style="color:#323232;">        testProperty &quot;Task list should have the correct length&quot; taskListLengthProperty</span>
-<span style="color:#323232;">    ]</span>
+<span style="color:#839496;">// Definindo a lista de testes</span>
+<span style="color:#839496;">let tests =</span>
+<span style="color:#839496;">    testList &quot;Task generation tests&quot; [</span>
+<span style="color:#839496;">        testProperty &quot;Duration of focus should be calculated correctly&quot; focusDurationProperty</span>
+<span style="color:#839496;">        testProperty &quot;Task complexity should be calculated correctly&quot; taskComplexityProperty</span>
+<span style="color:#839496;">        testProperty &quot;Task list should have the correct length&quot; taskListLengthProperty</span>
+<span style="color:#839496;">    ]</span>
 
-<span style="color:#323232;">// Executando os testes</span>
-<span style="color:#323232;">[&lt;EntryPoint&gt;]</span>
-<span style="color:#323232;">let main argv =</span>
-<span style="color:#323232;">    runTests defaultConfig tests</span>
-<span style="color:#323232;">    0</span>
+<span style="color:#839496;">// Executando os testes</span>
+<span style="color:#839496;">[&lt;EntryPoint&gt;]</span>
+<span style="color:#839496;">let main argv =</span>
+<span style="color:#839496;">    runTests defaultConfig tests</span>
+<span style="color:#839496;">    0</span>
 
 
 </pre><p id = "para-77">A função <code>Gen.map2</code> em FsCheck espera uma função de dois argumentos como o primeiro parâmetro e então dois geradores. Em vez de <code>Gen.map2 Tuple (Gen.choose (1, 6)) (Gen.choose (1, 6))</code>, deveria ser <code>Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6))</code>. A função de dois argumentos <code>fun d1 d2 -&gt; (d1, d2)</code> simplesmente retorna uma tupla dos argumentos.</p>
 <p id = "para-78">Então, o código corrigido ficaria assim:</p>
-<pre><span style="color:#323232;">let focusDurationProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
-<span style="color:#323232;">        let expected =</span>
-<span style="color:#323232;">            match d1 + d2 with</span>
-<span style="color:#323232;">            | sum when sum &lt;= 4 -&gt; Short</span>
-<span style="color:#323232;">            | sum when sum &lt;= 8 -&gt; Medium</span>
-<span style="color:#323232;">            | _ -&gt; Long</span>
-<span style="color:#323232;">        let actual = durationOfFocus d1 d2</span>
-<span style="color:#323232;">        expected = actual</span>
+<pre><span style="color:#839496;">let focusDurationProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
+<span style="color:#839496;">        let expected =</span>
+<span style="color:#839496;">            match d1 + d2 with</span>
+<span style="color:#839496;">            | sum when sum &lt;= 4 -&gt; Short</span>
+<span style="color:#839496;">            | sum when sum &lt;= 8 -&gt; Medium</span>
+<span style="color:#839496;">            | _ -&gt; Long</span>
+<span style="color:#839496;">        let actual = durationOfFocus d1 d2</span>
+<span style="color:#839496;">        expected = actual</span>
 
-<span style="color:#323232;">let taskComplexityProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
-<span style="color:#323232;">        let expected =</span>
-<span style="color:#323232;">            match d1 * d2 with</span>
-<span style="color:#323232;">            | product when product &lt;= 12 -&gt; Simple</span>
-<span style="color:#323232;">            | product when product &lt;= 24 -&gt; Moderate</span>
-<span style="color:#323232;">            | _ -&gt; Complex</span>
-<span style="color:#323232;">        let actual = complexityOfTask d1 d2</span>
-<span style="color:#323232;">        expected = actual</span>
+<span style="color:#839496;">let taskComplexityProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
+<span style="color:#839496;">        let expected =</span>
+<span style="color:#839496;">            match d1 * d2 with</span>
+<span style="color:#839496;">            | product when product &lt;= 12 -&gt; Simple</span>
+<span style="color:#839496;">            | product when product &lt;= 24 -&gt; Moderate</span>
+<span style="color:#839496;">            | _ -&gt; Complex</span>
+<span style="color:#839496;">        let actual = complexityOfTask d1 d2</span>
+<span style="color:#839496;">        expected = actual</span>
 
-<span style="color:#323232;">let taskListLengthProperty =</span>
-<span style="color:#323232;">    Prop.forAll (Arb.fromGen (Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
-<span style="color:#323232;">        let taskList = generateTaskList d1 d2 NoTask</span>
-<span style="color:#323232;">        let rec taskListLength taskList =</span>
-<span style="color:#323232;">            match taskList with</span>
-<span style="color:#323232;">            | Task (_, _, nextTask) -&gt; 1 + taskListLength nextTask</span>
-<span style="color:#323232;">            | NoTask -&gt; 0</span>
-<span style="color:#323232;">        let actual = taskListLength taskList</span>
-<span style="color:#323232;">        let expected = min d1 d2</span>
-<span style="color:#323232;">        expected = actual</span>
+<span style="color:#839496;">let taskListLengthProperty =</span>
+<span style="color:#839496;">    Prop.forAll (Arb.fromGen (Gen.map2 (fun d1 d2 -&gt; (d1, d2)) (Gen.choose (1, 6)) (Gen.choose (1, 6)))) &lt;| fun (d1, d2) -&gt;</span>
+<span style="color:#839496;">        let taskList = generateTaskList d1 d2 NoTask</span>
+<span style="color:#839496;">        let rec taskListLength taskList =</span>
+<span style="color:#839496;">            match taskList with</span>
+<span style="color:#839496;">            | Task (_, _, nextTask) -&gt; 1 + taskListLength nextTask</span>
+<span style="color:#839496;">            | NoTask -&gt; 0</span>
+<span style="color:#839496;">        let actual = taskListLength taskList</span>
+<span style="color:#839496;">        let expected = min d1 d2</span>
+<span style="color:#839496;">        expected = actual</span>
 
 
 </pre><p id = "para-79">Espero que isso resolva o problema que você estava enfrentando! Se você tiver mais perguntas, por favor, deixe-me saber!</p>
 <h2 id = "link-11">it passed. explain thoroughly line-by-line why this is the output</h2>
 <p id = "para-80">&lt; Para entender a saída, precisamos observar o algoritmo que foi criado e as funções que determinam a complexidade da tarefa e a duração do foco, baseadas na soma e na multiplicação dos dados.</p>
 <p id = "para-81">Aqui está a definição de como a complexidade da tarefa e a duração do foco são determinadas:</p>
-<pre><span style="color:#323232;">// Função para calcular a duração do foco com base na soma dos valores dos dados</span>
-<span style="color:#323232;">let durationOfFocus (d1: int) (d2: int) =</span>
-<span style="color:#323232;">    match d1 + d2 with</span>
-<span style="color:#323232;">    | sum when sum &lt;= 4 -&gt; Short</span>
-<span style="color:#323232;">    | sum when sum &lt;= 8 -&gt; Medium</span>
-<span style="color:#323232;">    | _ -&gt; Long</span>
+<pre><span style="color:#839496;">// Função para calcular a duração do foco com base na soma dos valores dos dados</span>
+<span style="color:#839496;">let durationOfFocus (d1: int) (d2: int) =</span>
+<span style="color:#839496;">    match d1 + d2 with</span>
+<span style="color:#839496;">    | sum when sum &lt;= 4 -&gt; Short</span>
+<span style="color:#839496;">    | sum when sum &lt;= 8 -&gt; Medium</span>
+<span style="color:#839496;">    | _ -&gt; Long</span>
 
-<span style="color:#323232;">// Função para calcular a complexidade da tarefa com base na multiplicação dos valores dos dados</span>
-<span style="color:#323232;">let complexityOfTask (d1: int) (d2: int) =</span>
-<span style="color:#323232;">    match d1 * d2 with</span>
-<span style="color:#323232;">    | product when product &lt;= 12 -&gt; Simple</span>
-<span style="color:#323232;">    | product when product &lt;= 24 -&gt; Moderate</span>
-<span style="color:#323232;">    | _ -&gt; Complex</span>
+<span style="color:#839496;">// Função para calcular a complexidade da tarefa com base na multiplicação dos valores dos dados</span>
+<span style="color:#839496;">let complexityOfTask (d1: int) (d2: int) =</span>
+<span style="color:#839496;">    match d1 * d2 with</span>
+<span style="color:#839496;">    | product when product &lt;= 12 -&gt; Simple</span>
+<span style="color:#839496;">    | product when product &lt;= 24 -&gt; Moderate</span>
+<span style="color:#839496;">    | _ -&gt; Complex</span>
 
 </pre><p id = "para-82">E a função para gerar a lista de tarefas:</p>
-<pre><span style="color:#323232;">// Função recursiva para gerar uma lista encadeada de tarefas</span>
-<span style="color:#323232;">let rec generateTaskList d1 d2 previousTask =</span>
-<span style="color:#323232;">    match d1, d2 with</span>
-<span style="color:#323232;">    | d1, d2 when d1 &gt; 0 &amp;&amp; d2 &gt; 0 -&gt;</span>
-<span style="color:#323232;">        let complexity = complexityOfTask d1 d2</span>
-<span style="color:#323232;">        let duration = durationOfFocus d1 d2</span>
-<span style="color:#323232;">        let newTask = Task (complexity, duration, previousTask)</span>
-<span style="color:#323232;">        generateTaskList (d1 - 1) (d2 - 1) newTask</span>
-<span style="color:#323232;">    | _, _ -&gt; previousTask</span>
+<pre><span style="color:#839496;">// Função recursiva para gerar uma lista encadeada de tarefas</span>
+<span style="color:#839496;">let rec generateTaskList d1 d2 previousTask =</span>
+<span style="color:#839496;">    match d1, d2 with</span>
+<span style="color:#839496;">    | d1, d2 when d1 &gt; 0 &amp;&amp; d2 &gt; 0 -&gt;</span>
+<span style="color:#839496;">        let complexity = complexityOfTask d1 d2</span>
+<span style="color:#839496;">        let duration = durationOfFocus d1 d2</span>
+<span style="color:#839496;">        let newTask = Task (complexity, duration, previousTask)</span>
+<span style="color:#839496;">        generateTaskList (d1 - 1) (d2 - 1) newTask</span>
+<span style="color:#839496;">    | _, _ -&gt; previousTask</span>
 
 
 </pre><p id = "para-83">A saída é gerada a partir dos valores de dados de 6 e 6. Vamos analisar a saída linha por linha:</p>
@@ -1113,79 +1172,79 @@ function toggle() {
 <p id = "para-155">De uma perspectiva computacional ou de engenharia, esses padrões poderiam ser explorados para gerar algoritmos de tomada de decisão ou esquemas de distribuição de carga de trabalho que são ao mesmo tempo simples de implementar e capazes de produzir resultados variados e imprevisíveis. Eles também têm o potencial de ser ajustados para diferentes contextos ou necessidades, alterando a maneira como os resultados dos lançamentos de dados são interpretados ou aplicados.</p>
 <h2 id = "link-16">draw a plot for the sum using the js canvas api</h2>
 <p id = "para-156">&lt; Se você deseja exibir um gráfico de distribuição de soma de dois dados de 6 lados usando o Canvas API, você pode modificar o código para criar um gráfico de barras em vez de um círculo. Aqui está um exemplo de código que você pode usar:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">canvas </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">$(</span><span style="color:#183691;">&quot;#canvas1&quot;</span><span style="color:#323232;">)[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">context </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">canvas.getContext(</span><span style="color:#183691;">&quot;2d&quot;</span><span style="color:#323232;">);</span>
+<pre><span style="color:#268bd2;">var </span><span style="color:#839496;">canvas </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">$</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">#canvas1</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">context </span><span style="color:#657b83;">= </span><span style="color:#839496;">canvas.</span><span style="color:#b58900;">getContext</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">2d</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
 
-<span style="font-style:italic;color:#969896;">// Distribution of sums of two 6-sided dice</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">distribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">barWidth </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">40</span><span style="color:#323232;">;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">barSpacing </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">10</span><span style="color:#323232;">;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">barColor </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#183691;">&quot;red&quot;</span><span style="color:#323232;">;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">baseLine </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">300</span><span style="color:#323232;">;</span>
+<span style="color:#586e75;">// Distribution of sums of two 6-sided dice</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">distribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">barWidth </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">40</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">barSpacing </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">10</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">barColor </span><span style="color:#657b83;">= </span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">red</span><span style="color:#839496;">&quot;;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">baseLine </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">300</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">$(</span><span style="color:#183691;">&quot;#plotDrawer&quot;</span><span style="color:#323232;">).on(</span><span style="color:#183691;">&#39;click&#39;</span><span style="color:#323232;">, drawPlot);</span>
+<span style="color:#268bd2;">$</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">#plotDrawer</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">.</span><span style="color:#b58900;">on</span><span style="color:#657b83;">(</span><span style="color:#839496;">&#39;</span><span style="color:#2aa198;">click</span><span style="color:#839496;">&#39;, drawPlot</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
 
-<span style="font-weight:bold;color:#a71d5d;">function </span><span style="font-weight:bold;color:#795da3;">drawBar</span><span style="color:#323232;">(x, height) {</span>
-<span style="color:#323232;">    context.beginPath();</span>
-<span style="color:#323232;">    context.rect(x, baseLine </span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">height, barWidth, height);</span>
-<span style="color:#323232;">    context.fillStyle </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">barColor;</span>
-<span style="color:#323232;">    context.</span><span style="color:#0086b3;">fill</span><span style="color:#323232;">();</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">function </span><span style="color:#b58900;">drawBar</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">x</span><span style="color:#839496;">, </span><span style="color:#268bd2;">height</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">    context.</span><span style="color:#b58900;">beginPath</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    context.</span><span style="color:#b58900;">rect</span><span style="color:#657b83;">(</span><span style="color:#839496;">x, baseLine </span><span style="color:#657b83;">- </span><span style="color:#839496;">height, barWidth, height</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    context.fillStyle </span><span style="color:#657b83;">= </span><span style="color:#839496;">barColor;</span>
+<span style="color:#839496;">    context.</span><span style="color:#859900;">fill</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">function </span><span style="font-weight:bold;color:#795da3;">drawPlot</span><span style="color:#323232;">() {</span>
-<span style="color:#323232;">    context.clearRect(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, canvas.width, canvas.height);</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">for </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">i </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">0</span><span style="color:#323232;">; i </span><span style="font-weight:bold;color:#a71d5d;">&lt; </span><span style="color:#323232;">distribution.length; i</span><span style="font-weight:bold;color:#a71d5d;">++</span><span style="color:#323232;">) {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">x </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">i </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(barWidth </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">barSpacing);</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">height </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">distribution[i] </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">20</span><span style="color:#323232;">;  </span><span style="font-style:italic;color:#969896;">// Scale factor for display</span>
-<span style="color:#323232;">        drawBar(x, height);</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">function </span><span style="color:#b58900;">drawPlot</span><span style="color:#657b83;">() {</span>
+<span style="color:#839496;">    context.</span><span style="color:#b58900;">clearRect</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, canvas.width, canvas.height</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">for </span><span style="color:#657b83;">(</span><span style="color:#268bd2;">var </span><span style="color:#839496;">i </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">; i </span><span style="color:#859900;">&lt; </span><span style="color:#839496;">distribution.length; i</span><span style="color:#657b83;">++) {</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">var </span><span style="color:#839496;">x </span><span style="color:#657b83;">= </span><span style="color:#839496;">i </span><span style="color:#657b83;">* (</span><span style="color:#839496;">barWidth </span><span style="color:#657b83;">+ </span><span style="color:#839496;">barSpacing</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">var </span><span style="color:#839496;">height </span><span style="color:#657b83;">= </span><span style="color:#839496;">distribution</span><span style="color:#268bd2;">[</span><span style="color:#839496;">i</span><span style="color:#268bd2;">] </span><span style="color:#657b83;">* </span><span style="color:#6c71c4;">20</span><span style="color:#839496;">;  </span><span style="color:#586e75;">// Scale factor for display</span>
+<span style="color:#839496;">        </span><span style="color:#b58900;">drawBar</span><span style="color:#657b83;">(</span><span style="color:#839496;">x, height</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
 
 </pre><p id = "para-157">Este código define uma distribuição de somas para dois dados de 6 faces e uma função <code>drawBar</code> para desenhar uma única barra. A função <code>drawPlot</code> limpa o canvas e depois desenha uma barra para cada valor na distribuição.</p>
 <p id = "para-158">Lembre-se que este código é apenas um exemplo simples e pode precisar de ajustes para se adaptar ao seu contexto específico. Por exemplo, você pode querer adicionar eixos ao gráfico, ou ajustar a escala do gráfico para melhor se adequar aos dados.</p>
 <h2 id = "link-17">now make it a multi layered draw function for all functions related to the rollings intuition. sum, multiplication, maybe 3 more. in case the code cuts, openai implemented a “continue response” button</h2>
 <p id = "para-159">&lt; Abaixo está um exemplo de código que plota a distribuição de somas e produtos de dois lançamentos de dados D6, bem como a distribuição de diferenças, razões e médias. Ele adiciona cinco funções de desenho adicionais para cada uma dessas distribuições, e chama todas elas na função <code>drawPlot</code>.</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">canvas </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">$(</span><span style="color:#183691;">&quot;#canvas1&quot;</span><span style="color:#323232;">)[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">context </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">canvas.getContext(</span><span style="color:#183691;">&quot;2d&quot;</span><span style="color:#323232;">);</span>
+<pre><span style="color:#268bd2;">var </span><span style="color:#839496;">canvas </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">$</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">#canvas1</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">context </span><span style="color:#657b83;">= </span><span style="color:#839496;">canvas.</span><span style="color:#b58900;">getContext</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">2d</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
 
-<span style="font-style:italic;color:#969896;">// Distribution of sums, products, differences, ratios and averages of two 6-sided dice</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">sumDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">productDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">diffDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">ratioDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">];</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">averageDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">6</span><span style="color:#323232;">, </span><span style="color:#0086b3;">5</span><span style="color:#323232;">, </span><span style="color:#0086b3;">4</span><span style="color:#323232;">, </span><span style="color:#0086b3;">3</span><span style="color:#323232;">, </span><span style="color:#0086b3;">2</span><span style="color:#323232;">, </span><span style="color:#0086b3;">1</span><span style="color:#323232;">];</span>
+<span style="color:#586e75;">// Distribution of sums, products, differences, ratios and averages of two 6-sided dice</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">sumDistribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">productDistribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">diffDistribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">ratioDistribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">averageDistribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">4</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">3</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">1</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
 
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">barWidth </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">20</span><span style="color:#323232;">;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">barSpacing </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">5</span><span style="color:#323232;">;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">baseLine </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">300</span><span style="color:#323232;">;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">colors </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[</span><span style="color:#183691;">&quot;red&quot;</span><span style="color:#323232;">, </span><span style="color:#183691;">&quot;blue&quot;</span><span style="color:#323232;">, </span><span style="color:#183691;">&quot;green&quot;</span><span style="color:#323232;">, </span><span style="color:#183691;">&quot;yellow&quot;</span><span style="color:#323232;">, </span><span style="color:#183691;">&quot;purple&quot;</span><span style="color:#323232;">];</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">barWidth </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">20</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">barSpacing </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">5</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">baseLine </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">300</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">colors </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">red</span><span style="color:#839496;">&quot;, &quot;</span><span style="color:#2aa198;">blue</span><span style="color:#839496;">&quot;, &quot;</span><span style="color:#2aa198;">green</span><span style="color:#839496;">&quot;, &quot;</span><span style="color:#2aa198;">yellow</span><span style="color:#839496;">&quot;, &quot;</span><span style="color:#2aa198;">purple</span><span style="color:#839496;">&quot;</span><span style="color:#268bd2;">]</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">$(</span><span style="color:#183691;">&quot;#plotDrawer&quot;</span><span style="color:#323232;">).on(</span><span style="color:#183691;">&#39;click&#39;</span><span style="color:#323232;">, drawPlot);</span>
+<span style="color:#268bd2;">$</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">#plotDrawer</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">.</span><span style="color:#b58900;">on</span><span style="color:#657b83;">(</span><span style="color:#839496;">&#39;</span><span style="color:#2aa198;">click</span><span style="color:#839496;">&#39;, drawPlot</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
 
-<span style="font-weight:bold;color:#a71d5d;">function </span><span style="font-weight:bold;color:#795da3;">drawBar</span><span style="color:#323232;">(x, height, color) {</span>
-<span style="color:#323232;">    context.beginPath();</span>
-<span style="color:#323232;">    context.rect(x, baseLine </span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">height, barWidth, height);</span>
-<span style="color:#323232;">    context.fillStyle </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">color;</span>
-<span style="color:#323232;">    context.</span><span style="color:#0086b3;">fill</span><span style="color:#323232;">();</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">function </span><span style="color:#b58900;">drawBar</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">x</span><span style="color:#839496;">, </span><span style="color:#268bd2;">height</span><span style="color:#839496;">, </span><span style="color:#268bd2;">color</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">    context.</span><span style="color:#b58900;">beginPath</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    context.</span><span style="color:#b58900;">rect</span><span style="color:#657b83;">(</span><span style="color:#839496;">x, baseLine </span><span style="color:#657b83;">- </span><span style="color:#839496;">height, barWidth, height</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    context.fillStyle </span><span style="color:#657b83;">= </span><span style="color:#839496;">color;</span>
+<span style="color:#839496;">    context.</span><span style="color:#859900;">fill</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">function </span><span style="font-weight:bold;color:#795da3;">drawDistribution</span><span style="color:#323232;">(distribution, xOffset, color) {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">for </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">i </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">0</span><span style="color:#323232;">; i </span><span style="font-weight:bold;color:#a71d5d;">&lt; </span><span style="color:#323232;">distribution.length; i</span><span style="font-weight:bold;color:#a71d5d;">++</span><span style="color:#323232;">) {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">x </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">xOffset </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">i </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(barWidth </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">barSpacing);</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">height </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">distribution[i] </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">10</span><span style="color:#323232;">;  </span><span style="font-style:italic;color:#969896;">// Scale factor for display</span>
-<span style="color:#323232;">        drawBar(x, height, color);</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">function </span><span style="color:#b58900;">drawDistribution</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">distribution</span><span style="color:#839496;">, </span><span style="color:#268bd2;">xOffset</span><span style="color:#839496;">, </span><span style="color:#268bd2;">color</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">for </span><span style="color:#657b83;">(</span><span style="color:#268bd2;">var </span><span style="color:#839496;">i </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">; i </span><span style="color:#859900;">&lt; </span><span style="color:#839496;">distribution.length; i</span><span style="color:#657b83;">++) {</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">var </span><span style="color:#839496;">x </span><span style="color:#657b83;">= </span><span style="color:#839496;">xOffset </span><span style="color:#657b83;">+ </span><span style="color:#839496;">i </span><span style="color:#657b83;">* (</span><span style="color:#839496;">barWidth </span><span style="color:#657b83;">+ </span><span style="color:#839496;">barSpacing</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">var </span><span style="color:#839496;">height </span><span style="color:#657b83;">= </span><span style="color:#839496;">distribution</span><span style="color:#268bd2;">[</span><span style="color:#839496;">i</span><span style="color:#268bd2;">] </span><span style="color:#657b83;">* </span><span style="color:#6c71c4;">10</span><span style="color:#839496;">;  </span><span style="color:#586e75;">// Scale factor for display</span>
+<span style="color:#839496;">        </span><span style="color:#b58900;">drawBar</span><span style="color:#657b83;">(</span><span style="color:#839496;">x, height, color</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">function </span><span style="font-weight:bold;color:#795da3;">drawPlot</span><span style="color:#323232;">() {</span>
-<span style="color:#323232;">    context.clearRect(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, canvas.width, canvas.height);</span>
-<span style="color:#323232;">    drawDistribution(sumDistribution, </span><span style="color:#0086b3;">0</span><span style="color:#323232;">, colors[</span><span style="color:#0086b3;">0</span><span style="color:#323232;">]);</span>
-<span style="color:#323232;">    drawDistribution(productDistribution, </span><span style="color:#0086b3;">400</span><span style="color:#323232;">, colors[</span><span style="color:#0086b3;">1</span><span style="color:#323232;">]);</span>
-<span style="color:#323232;">    drawDistribution(diffDistribution, </span><span style="color:#0086b3;">800</span><span style="color:#323232;">, colors[</span><span style="color:#0086b3;">2</span><span style="color:#323232;">]);</span>
-<span style="color:#323232;">    drawDistribution(ratioDistribution, </span><span style="color:#0086b3;">1200</span><span style="color:#323232;">, colors[</span><span style="color:#0086b3;">3</span><span style="color:#323232;">]);</span>
-<span style="color:#323232;">    drawDistribution(averageDistribution, </span><span style="color:#0086b3;">1600</span><span style="color:#323232;">, colors[</span><span style="color:#0086b3;">4</span><span style="color:#323232;">]);</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">function </span><span style="color:#b58900;">drawPlot</span><span style="color:#657b83;">() {</span>
+<span style="color:#839496;">    context.</span><span style="color:#b58900;">clearRect</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, canvas.width, canvas.height</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#b58900;">drawDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">sumDistribution, </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, colors</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">0</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#b58900;">drawDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">productDistribution, </span><span style="color:#6c71c4;">400</span><span style="color:#839496;">, colors</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">1</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#b58900;">drawDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">diffDistribution, </span><span style="color:#6c71c4;">800</span><span style="color:#839496;">, colors</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">2</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#b58900;">drawDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">ratioDistribution, </span><span style="color:#6c71c4;">1200</span><span style="color:#839496;">, colors</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">3</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#b58900;">drawDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">averageDistribution, </span><span style="color:#6c71c4;">1600</span><span style="color:#839496;">, colors</span><span style="color:#268bd2;">[</span><span style="color:#6c71c4;">4</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
 
 
 </pre><p id = "para-160">Este código implementa a função <code>drawDistribution</code> que desenha uma distribuição inteira com um deslocamento x e cor específicos. A função <code>drawPlot</code> limpa o canvas e então desenha todas as cinco distribuições em locais diferentes no canvas.</p>
@@ -1193,34 +1252,34 @@ function toggle() {
 <h2 id = "link-18">these are really correct? make it self calling concise anonymous functions instead of hardcoding the results</h2>
 <p id = "para-162">&lt; Peço desculpas pela confusão anterior. As distribuições foram preenchidas apenas para ilustrar como o código funciona e não refletem as verdadeiras distribuições estatísticas do somatório, produto, diferença, razão e média de dois lançamentos de um dado de 6 faces.</p>
 <p id = "para-163">Para calcular as distribuições reais, podemos usar uma função que gera todas as possíveis combinações de dois lançamentos de um dado de 6 faces e então calcula a operação desejada para cada par. Aqui está um exemplo de como isso pode ser feito em JavaScript:</p>
-<pre><span style="font-style:italic;color:#969896;">// Function to generate a distribution for a given operation</span>
-<span style="font-weight:bold;color:#a71d5d;">function </span><span style="font-weight:bold;color:#795da3;">generateDistribution</span><span style="color:#323232;">(operation) {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">distribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">[];</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">for </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">i </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">1</span><span style="color:#323232;">; i </span><span style="font-weight:bold;color:#a71d5d;">&lt;= </span><span style="color:#0086b3;">6</span><span style="color:#323232;">; i</span><span style="font-weight:bold;color:#a71d5d;">++</span><span style="color:#323232;">) {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">for </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">j </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">1</span><span style="color:#323232;">; j </span><span style="font-weight:bold;color:#a71d5d;">&lt;= </span><span style="color:#0086b3;">6</span><span style="color:#323232;">; j</span><span style="font-weight:bold;color:#a71d5d;">++</span><span style="color:#323232;">) {</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">result </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">operation(i, j);</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">!</span><span style="color:#323232;">distribution[result]) {</span>
-<span style="color:#323232;">                distribution[result] </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">0</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">            }</span>
-<span style="color:#323232;">            distribution[result]</span><span style="font-weight:bold;color:#a71d5d;">++</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">return </span><span style="color:#323232;">distribution;</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Function to generate a distribution for a given operation</span>
+<span style="color:#268bd2;">function </span><span style="color:#b58900;">generateDistribution</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">operation</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">var </span><span style="color:#839496;">distribution </span><span style="color:#657b83;">= </span><span style="color:#268bd2;">[]</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">for </span><span style="color:#657b83;">(</span><span style="color:#268bd2;">var </span><span style="color:#839496;">i </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">; i </span><span style="color:#859900;">&lt;= </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">; i</span><span style="color:#657b83;">++) {</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">for </span><span style="color:#657b83;">(</span><span style="color:#268bd2;">var </span><span style="color:#839496;">j </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">; j </span><span style="color:#859900;">&lt;= </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">; j</span><span style="color:#657b83;">++) {</span>
+<span style="color:#839496;">            </span><span style="color:#268bd2;">var </span><span style="color:#839496;">result </span><span style="color:#657b83;">= </span><span style="color:#b58900;">operation</span><span style="color:#657b83;">(</span><span style="color:#839496;">i, j</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">if </span><span style="color:#657b83;">(</span><span style="color:#859900;">!</span><span style="color:#839496;">distribution</span><span style="color:#268bd2;">[</span><span style="color:#839496;">result</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">                distribution</span><span style="color:#268bd2;">[</span><span style="color:#839496;">result</span><span style="color:#268bd2;">] </span><span style="color:#657b83;">= </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">            distribution</span><span style="color:#268bd2;">[</span><span style="color:#839496;">result</span><span style="color:#268bd2;">]</span><span style="color:#657b83;">++</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">return </span><span style="color:#839496;">distribution;</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Define operations</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="font-weight:bold;color:#795da3;">sum </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">(a, b) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">a </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">b;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="font-weight:bold;color:#795da3;">product </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">(a, b) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">a </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">b;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="font-weight:bold;color:#795da3;">difference </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">(a, b) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">Math</span><span style="color:#323232;">.abs(a </span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">b);</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="font-weight:bold;color:#795da3;">ratio </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">(a, b) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">a </span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#323232;">b;</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="font-weight:bold;color:#795da3;">average </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">(a, b) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">(a </span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">b) </span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#0086b3;">2</span><span style="color:#323232;">;</span>
+<span style="color:#586e75;">// Define operations</span>
+<span style="color:#268bd2;">var </span><span style="color:#b58900;">sum </span><span style="color:#657b83;">= (</span><span style="color:#268bd2;">a</span><span style="color:#839496;">, </span><span style="color:#268bd2;">b</span><span style="color:#657b83;">) </span><span style="color:#268bd2;">=&gt; </span><span style="color:#839496;">a </span><span style="color:#657b83;">+ </span><span style="color:#839496;">b;</span>
+<span style="color:#268bd2;">var </span><span style="color:#b58900;">product </span><span style="color:#657b83;">= (</span><span style="color:#268bd2;">a</span><span style="color:#839496;">, </span><span style="color:#268bd2;">b</span><span style="color:#657b83;">) </span><span style="color:#268bd2;">=&gt; </span><span style="color:#839496;">a </span><span style="color:#657b83;">* </span><span style="color:#839496;">b;</span>
+<span style="color:#268bd2;">var </span><span style="color:#b58900;">difference </span><span style="color:#657b83;">= (</span><span style="color:#268bd2;">a</span><span style="color:#839496;">, </span><span style="color:#268bd2;">b</span><span style="color:#657b83;">) </span><span style="color:#268bd2;">=&gt; </span><span style="color:#859900;">Math</span><span style="color:#839496;">.</span><span style="color:#b58900;">abs</span><span style="color:#657b83;">(</span><span style="color:#839496;">a </span><span style="color:#657b83;">- </span><span style="color:#839496;">b</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#b58900;">ratio </span><span style="color:#657b83;">= (</span><span style="color:#268bd2;">a</span><span style="color:#839496;">, </span><span style="color:#268bd2;">b</span><span style="color:#657b83;">) </span><span style="color:#268bd2;">=&gt; </span><span style="color:#839496;">a </span><span style="color:#657b83;">/ </span><span style="color:#839496;">b;</span>
+<span style="color:#268bd2;">var </span><span style="color:#b58900;">average </span><span style="color:#657b83;">= (</span><span style="color:#268bd2;">a</span><span style="color:#839496;">, </span><span style="color:#268bd2;">b</span><span style="color:#657b83;">) </span><span style="color:#268bd2;">=&gt; </span><span style="color:#657b83;">(</span><span style="color:#839496;">a </span><span style="color:#657b83;">+ </span><span style="color:#839496;">b</span><span style="color:#657b83;">) / </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">;</span>
 
-<span style="font-style:italic;color:#969896;">// Generate distributions</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">sumDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">generateDistribution(sum);</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">productDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">generateDistribution(product);</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">differenceDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">generateDistribution(difference);</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">ratioDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">generateDistribution(ratio);</span>
-<span style="font-weight:bold;color:#a71d5d;">var </span><span style="color:#323232;">averageDistribution </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">generateDistribution(average);</span>
+<span style="color:#586e75;">// Generate distributions</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">sumDistribution </span><span style="color:#657b83;">= </span><span style="color:#b58900;">generateDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">sum</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">productDistribution </span><span style="color:#657b83;">= </span><span style="color:#b58900;">generateDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">product</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">differenceDistribution </span><span style="color:#657b83;">= </span><span style="color:#b58900;">generateDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">difference</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">ratioDistribution </span><span style="color:#657b83;">= </span><span style="color:#b58900;">generateDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">ratio</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#268bd2;">var </span><span style="color:#839496;">averageDistribution </span><span style="color:#657b83;">= </span><span style="color:#b58900;">generateDistribution</span><span style="color:#657b83;">(</span><span style="color:#839496;">average</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
 
 
 </pre><p id = "para-164">Este código define uma função <code>generateDistribution</code> que aceita uma operação (como soma, produto, etc.) e gera a distribuição correspondente. As operações são definidas como funções anônimas e passadas para a função <code>generateDistribution</code> para gerar as distribuições correspondentes.</p>
@@ -1265,25 +1324,25 @@ function toggle() {
 <p id = "para-186">As for which of the dice roll dynamics (sum, product, difference, ratio, average) would emerge, that would be dependent on the specific implementation of the smart contract. It could be designed to simulate any or all of these operations, as desired by the contract creator.</p>
 <h2 id = "link-22">keep outputting in pt-br. considering all of this in mind, use this model as foundation for a new 2.0</h2>
 <p id = "para-187">Considerando a discussão anterior, podemos pensar em como a mecânica quântica, o processamento multitarefa e o uso de hashes de transações de blockchain poderiam ser incorporados em uma versão 2.0 desse modelo. Isso é apenas uma sugestão e pode exigir ajustes dependendo do contexto específico:</p>
-<pre><span style="color:#323232;">// Definindo o tipo de dados para a complexidade e duração do foco</span>
-<span style="color:#323232;">type Complexity = Simple | Moderate | Complex</span>
-<span style="color:#323232;">type Duration = Short | Medium | Long</span>
+<pre><span style="color:#839496;">// Definindo o tipo de dados para a complexidade e duração do foco</span>
+<span style="color:#839496;">type Complexity = Simple | Moderate | Complex</span>
+<span style="color:#839496;">type Duration = Short | Medium | Long</span>
 
-<span style="color:#323232;">// Discriminated Union para os dados</span>
-<span style="color:#323232;">type Dice = D1 of int | D2 of int</span>
+<span style="color:#839496;">// Discriminated Union para os dados</span>
+<span style="color:#839496;">type Dice = D1 of int | D2 of int</span>
 
-<span style="color:#323232;">// Adicionando um tipo de dado para o estado quântico</span>
-<span style="color:#323232;">type QuantumState = Superposition of int list</span>
+<span style="color:#839496;">// Adicionando um tipo de dado para o estado quântico</span>
+<span style="color:#839496;">type QuantumState = Superposition of int list</span>
 
-<span style="color:#323232;">// Discriminated Union para a tarefa</span>
-<span style="color:#323232;">type Task =</span>
-<span style="color:#323232;">    | Task of Complexity * Duration * Task</span>
-<span style="color:#323232;">    | QuantumTask of QuantumState * Task</span>
-<span style="color:#323232;">    | BlockchainTask of string * Task</span>
-<span style="color:#323232;">    | NoTask</span>
+<span style="color:#839496;">// Discriminated Union para a tarefa</span>
+<span style="color:#839496;">type Task =</span>
+<span style="color:#839496;">    | Task of Complexity * Duration * Task</span>
+<span style="color:#839496;">    | QuantumTask of QuantumState * Task</span>
+<span style="color:#839496;">    | BlockchainTask of string * Task</span>
+<span style="color:#839496;">    | NoTask</span>
 
-<span style="color:#323232;">// Adicionando um tipo de dado para um bloco de blockchain</span>
-<span style="color:#323232;">type Block = Block of string * string // hash e dados da transação</span>
+<span style="color:#839496;">// Adicionando um tipo de dado para um bloco de blockchain</span>
+<span style="color:#839496;">type Block = Block of string * string // hash e dados da transação</span>
 
 
 </pre><p id = "para-188">Na versão 2.0 deste modelo:</p>

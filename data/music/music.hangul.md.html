@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -640,6 +695,7 @@ function toggle() {
       <li><a href="#link-77">포르 이아시 이텡, 지비 오니 이잠플리 안드 오니 트리비아</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -647,44 +703,47 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">이트-두프 --이스트락트-아우지우 --아우지우-포르마트 므프3 트프스://.요투비.콩/와트시?브=&lt;이드&gt;</span>
+  <pre><span style="color:#839496;">이트-두프 --이스트락트-아우지우 --아우지우-포르마트 므프3 트프스://.요투비.콩/와트시?브=&lt;이드&gt;</span>
 
-<span style="color:#323232;">---</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">포르 필리 잉 ./*\&#39;*.므프3 두 므브 &quot;$필리&quot; &quot;${필리//\&#39;/}&quot; 도니</span>
+<span style="color:#839496;">포르 필리 잉 ./*\&#39;*.므프3 두 므브 &quot;$필리&quot; &quot;${필리//\&#39;/}&quot; 도니</span>
 
-<span style="color:#323232;">포르 이 잉 *.므프3 두 에슈 &quot;필리 &#39;$이&#39;&quot; &gt;&gt; 필리스.트스트 도니</span>
-<span style="color:#323232;">픔페그 -프 콩카트 -사피 0 -이 필리스.트스트 -크 코피 오트푸트.므프3</span>
-<span style="color:#323232;">흥 필리스.트스트</span>
+<span style="color:#839496;">포르 이 잉 *.므프3 두 에슈 &quot;필리 &#39;$이&#39;&quot; &gt;&gt; 필리스.트스트 도니</span>
+<span style="color:#839496;">픔페그 -프 콩카트 -사피 0 -이 필리스.트스트 -크 코피 오트푸트.므프3</span>
+<span style="color:#839496;">흥 필리스.트스트</span>
 
-<span style="color:#323232;">---</span>
+<span style="color:#839496;">---</span>
 
-<span style="color:#323232;">데클라리 -아 필리스_마프</span>
+<span style="color:#839496;">데클라리 -아 필리스_마프</span>
 
-<span style="color:#323232;">포르 필리 잉 ./*\&#39;*.므프3 두</span>
-<span style="color:#323232;">네_필리=&quot;${필리//\&#39;/}&quot;</span>
-<span style="color:#323232;">므브 &quot;$필리&quot; &quot;$네_필리&quot;</span>
-<span style="color:#323232;">필리스_마프[&quot;$네_필리&quot;]=&quot;$필리&quot;</span>
-<span style="color:#323232;">에슈 &quot;필리 &#39;$네_필리&#39;&quot; &gt;&gt; 필리스.트스트</span>
-<span style="color:#323232;">도니</span>
+<span style="color:#839496;">포르 필리 잉 ./*\&#39;*.므프3 두</span>
+<span style="color:#839496;">네_필리=&quot;${필리//\&#39;/}&quot;</span>
+<span style="color:#839496;">므브 &quot;$필리&quot; &quot;$네_필리&quot;</span>
+<span style="color:#839496;">필리스_마프[&quot;$네_필리&quot;]=&quot;$필리&quot;</span>
+<span style="color:#839496;">에슈 &quot;필리 &#39;$네_필리&#39;&quot; &gt;&gt; 필리스.트스트</span>
+<span style="color:#839496;">도니</span>
 
-<span style="color:#323232;">픔페그 -프 콩카트 -사피 0 -이 필리스.트스트 -크 코피 오트푸트.므프3</span>
+<span style="color:#839496;">픔페그 -프 콩카트 -사피 0 -이 필리스.트스트 -크 코피 오트푸트.므프3</span>
 
-<span style="color:#323232;">포르 네_필리 잉 &quot;${!필리스_마프[@]}&quot; 두</span>
-<span style="color:#323232;">므브 &quot;$네_필리&quot; &quot;${필리스_마프[$네_필리]}&quot;</span>
-<span style="color:#323232;">도니</span>
+<span style="color:#839496;">포르 네_필리 잉 &quot;${!필리스_마프[@]}&quot; 두</span>
+<span style="color:#839496;">므브 &quot;$네_필리&quot; &quot;${필리스_마프[$네_필리]}&quot;</span>
+<span style="color:#839496;">도니</span>
 
-<span style="color:#323232;">흥 필리스.트스트</span>
+<span style="color:#839496;">흥 필리스.트스트</span>
 
 
 
@@ -1414,34 +1473,34 @@ function toggle() {
 <h2 id = "link-48">투 아시에비 티 데지레드 트라크, 리스트 소미 풍크치옹 콤비나치옹스 타트 미그트 비 임포르탄트 잉 티 스트룩투리</h2>
 <p id = "para-200">투 크레아치 아 180 브픙 이-테시 프시트란시 트라크 잉 치다우키클리스, 요 위우 완트 투 우칠리지 바리오스 풍크치옹스 안드 테이르 콤비나치옹스 투 제네라치 인트리카치 히틈스, 멜로지스, 안드 손드 마니풀라치옹스. 에리 아리 소미 풍크치옹 콤비나치옹스 타트 미그트 비 이센치아우 잉 부이우징그 요르 트라크:</p>
 <p id = "para-201">세칭그 브픙:</p>
-<pre><span style="color:#323232;">세트크프스 (180/60/4)</span>
+<pre><span style="color:#839496;">세트크프스 (180/60/4)</span>
 
 </pre><p id = "para-202">라예링그 무우치플리 파테릉스 우징그 스타크:</p>
-<pre><span style="color:#323232;">드1 $ 스타크 [</span>
-<span style="color:#323232;">스 &quot;브드(3,8)&quot;,</span>
-<span style="color:#323232;">스 &quot;승(5,16)&quot;,</span>
-<span style="color:#323232;">스 &quot;*4(3,8)&quot;</span>
-<span style="color:#323232;">]</span>
+<pre><span style="color:#839496;">드1 $ 스타크 [</span>
+<span style="color:#839496;">스 &quot;브드(3,8)&quot;,</span>
+<span style="color:#839496;">스 &quot;승(5,16)&quot;,</span>
+<span style="color:#839496;">스 &quot;*4(3,8)&quot;</span>
+<span style="color:#839496;">]</span>
 
 </pre><p id = "para-203">콤비닝그 파테릉스 위트 지페렌트 트란스포르마치옹스 우징그 주스 안드 헤브:</p>
-<pre><span style="color:#323232;">드1 $ 주스 (헤브) $ 스 &quot;브드(3,8) 승&quot;</span>
+<pre><span style="color:#839496;">드1 $ 주스 (헤브) $ 스 &quot;브드(3,8) 승&quot;</span>
 
 </pre><p id = "para-204">아플링그 치미 트란스포르마치옹스 우징그 파스트, 슬로, 안드 덴시치:</p>
-<pre><span style="color:#323232;">드1 $ 슬로 2 $ 스 &quot;브드*2 승*4&quot;</span>
-<span style="color:#323232;">드1 $ 파스트 4 $ 스 &quot;*8 크프*4&quot;</span>
-<span style="color:#323232;">드1 $ 덴시치 2 $ 스 &quot;바스*4 아르피*2&quot;</span>
+<pre><span style="color:#839496;">드1 $ 슬로 2 $ 스 &quot;브드*2 승*4&quot;</span>
+<span style="color:#839496;">드1 $ 파스트 4 $ 스 &quot;*8 크프*4&quot;</span>
+<span style="color:#839496;">드1 $ 덴시치 2 $ 스 &quot;바스*4 아르피*2&quot;</span>
 
 </pre><p id = "para-205">모둘라칭그 파라메테르스 위트 콘트로우 파테릉스 우징그 |+|, |*|, 안드 |&gt;|:</p>
-<pre><span style="color:#323232;">드1 $ 스 &quot;바스(3,8)&quot; |+| 응 &quot;0 3 -1 2&quot; |*| 가잉 &quot;0.8 1 0.7&quot;</span>
+<pre><span style="color:#839496;">드1 $ 스 &quot;바스(3,8)&quot; |+| 응 &quot;0 3 -1 2&quot; |*| 가잉 &quot;0.8 1 0.7&quot;</span>
 
-</pre><pre><span style="color:#323232;">드1 $ 스 &quot;바스*2&quot; # 스페드 (쇼지 [1, 1.5, 0.5, 2])</span>
-<span style="color:#323232;">드1 $ 스 &quot;아르피(5,16)&quot; # 팡 (한드)</span>
-<span style="color:#323232;">드1 $ 스 &quot;승*4&quot; # 가잉 (수플리 [0.7, 0.8, 1, 0.9])</span>
+</pre><pre><span style="color:#839496;">드1 $ 스 &quot;바스*2&quot; # 스페드 (쇼지 [1, 1.5, 0.5, 2])</span>
+<span style="color:#839496;">드1 $ 스 &quot;아르피(5,16)&quot; # 팡 (한드)</span>
+<span style="color:#839496;">드1 $ 스 &quot;승*4&quot; # 가잉 (수플리 [0.7, 0.8, 1, 0.9])</span>
 
 </pre><p id = "para-206">아플링그 콘지치오나우 트란스포르마치옹스 위트 풍크치옹스 리키 엔모드, 이베리, 안드 일리:</p>
-<pre><span style="color:#323232;">드1 $ 이베리 4 (파스트 2) $ 스 &quot;브드*2 승*4&quot;</span>
-<span style="color:#323232;">드1 $ 엔모드 8 3 (|+| 응 &quot;12&quot;) $ 스 &quot;바스*4&quot;</span>
-<span style="color:#323232;">드1 $ 일리 (|&lt;| 가잉 &quot;0.7&quot;) (# 스페드 2) $ 스 &quot;아르피*2&quot;</span>
+<pre><span style="color:#839496;">드1 $ 이베리 4 (파스트 2) $ 스 &quot;브드*2 승*4&quot;</span>
+<span style="color:#839496;">드1 $ 엔모드 8 3 (|+| 응 &quot;12&quot;) $ 스 &quot;바스*4&quot;</span>
+<span style="color:#839496;">드1 $ 일리 (|&lt;| 가잉 &quot;0.7&quot;) (# 스페드 2) $ 스 &quot;아르피*2&quot;</span>
 
 </pre><p id = "para-207">비 콤비닝그 테지 풍크치옹스 안드 이스페리멘칭그 위트 지페렌트 파테릉스 안드 파라메테르스, 요 캉 크레아치 아 콤플레스, 이-테시 프시트란시 트라크 위트 치다우키클리스. 헤멤베르 타트 치다우키클리스 이스 아 리비 코징그 인비론멘트, 수 페우 프레이 투 트웨아크, 모지피, 안드 이스플로리 테지 풍크치옹 콤비나치옹스 잉 헤아우-치미 투 아시에비 티 데지레드 손드.</p>
 <p class = "rule">***</p>
@@ -1558,15 +1617,15 @@ function toggle() {
 <h2 id = "link-57">트리 투 프로비지 앙 이니치아우 삼플리 우징그 글레앙’스 지스크리미나테드 우니옹 헬라치온지프스 안드 아숑</h2>
 <p id = "para-268">&lt; 나 다타 두 메우 트레이나멘투 (세템브루 지 2021), 글레앙 아인다 이스타 잉 이스타지우스 이니시아이스 지 데젠보우비멘투 이 텡 인테로페라빌리다지 콩 일리시르 이 이를랑그, 마스 아스 비블리오테카스 잉 일리시르 코무 아숑 낭 텡 치파젱 이스페시피카 파라 글레앙. 알렝 지수, 글레앙 낭 수포르타 지레타멘치 마니풀라송이스 콤플레샤스 지 마트리지스 오 텐소리스, 키 상 네세사리아스 파라 아 마이오리아 두스 카우쿨루스 지 아프렌지자두 프로푼두.</p>
 <p id = "para-269">누 인탄투, 에 포시베우 헤프레젠타르 치푸스 마이스 콤플레슈스 이 수아스 헬라송이스 나 글레앙 우잔두 우니옹이스 지스크리미나다스. 아키 이스타 웅 이젬플루 무이투 심플리피카두 지 코무 보세 포데리아 헤프레젠타르 웅 네우로니우 잉 우마 헤지 네우라우:</p>
-<pre><span style="color:#323232;">= 시그모이드</span>
-<span style="color:#323232;">| 헬루</span>
-<span style="color:#323232;">| 탄</span>
+<pre><span style="color:#839496;">= 시그모이드</span>
+<span style="color:#839496;">| 헬루</span>
+<span style="color:#839496;">| 탄</span>
 
-<span style="color:#323232;">치피 네우롱 =</span>
-<span style="color:#323232;">{ 웨이그트스: 리스트(플로아트)</span>
-<span style="color:#323232;">, 비아스: 플로아트</span>
-<span style="color:#323232;">, 악치바치옹: 악치바치온풍크치옹</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">치피 네우롱 =</span>
+<span style="color:#839496;">{ 웨이그트스: 리스트(플로아트)</span>
+<span style="color:#839496;">, 비아스: 플로아트</span>
+<span style="color:#839496;">, 악치바치옹: 악치바치온풍크치옹</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-270">네스치 이젬플루, <code>악치바치온풍크치옹</code> 에 우마 우니앙 지스크리미나다 키 헤프레젠타 아스 지페렌치스 푼송이스 지 아치바상 키 웅 네우로니우 포지 테르. 우 <code>네우롱</code> 에 웅 치푸 지 헤지스트루 키 헤프레젠타 웅 네우로니우 잉 우마 헤지 네우라우, 잉클루인두 세우스 페주스, 비아스 이 아 푼상 지 아치바상 키 우자.</p>
 <p id = "para-271">노치 키 에스치 에 웅 이젬플루 이스트레마멘치 심플리피카두 이 우마 임플레멘타상 헤아우 지 헤지스 네우라이스 잉 글레앙 프로바베우멘치 이지지리아 우마 아브스트라상 무이투 마이스 콤플레샤.</p>
@@ -1574,29 +1633,29 @@ function toggle() {
 <h2 id = "link-58">프로비지 앙 이니치아우 삼플리 포르 아 코리 파르트 우징그 아숑 안드 일리시르’스 무우치 클라우지 풍크치옹스 온리</h2>
 <p id = "para-273">&lt; 아숑 에 우마 비블리오테카 파라 데프 레아르닝그 이스크리타 잉 일리시르. 아키 이스타 웅 이젬플루 심플리스 지 코무 데피니르 이 트레이나르 우마 헤지 네우라우 우잔두 아숑. 네스치 이젬플루, 바무스 콘시데라르 아 타레파 지 클라시피카상 비나리아.</p>
 <p id = "para-274">프리메이루, 프레시자무스 데피니르 아 아르키테투라 다 노사 헤지:</p>
-<pre><span style="color:#323232;">데프모둘리 이잠플렝 두</span>
-<span style="color:#323232;">우지 아숑.모데우</span>
+<pre><span style="color:#839496;">데프모둘리 이잠플렝 두</span>
+<span style="color:#839496;">우지 아숑.모데우</span>
 
-<span style="color:#323232;">데프 이니트(_파람스) 두</span>
-<span style="color:#323232;">아숑.인푸트({니우, 784})</span>
-<span style="color:#323232;">|&gt; 아숑.덴시(128, 악치바치옹: :헬루)</span>
-<span style="color:#323232;">|&gt; 아숑.덴시(64, 악치바치옹: :헬루)</span>
-<span style="color:#323232;">|&gt; 아숑.덴시(1, 악치바치옹: :시그모이드)</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프 이니트(_파람스) 두</span>
+<span style="color:#839496;">아숑.인푸트({니우, 784})</span>
+<span style="color:#839496;">|&gt; 아숑.덴시(128, 악치바치옹: :헬루)</span>
+<span style="color:#839496;">|&gt; 아숑.덴시(64, 악치바치옹: :헬루)</span>
+<span style="color:#839496;">|&gt; 아숑.덴시(1, 악치바치옹: :시그모이드)</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
 
 </pre><p id = "para-275">아키 데피니무스 우마 헤지 콩 두아스 카마다스 오쿠우타스 콩 아치바상 헬루 이 우마 카마다 지 사이다 콩 아치바상 시그모이지.</p>
 <p id = "para-276">데포이스, 포데무스 데피니르 푼송이스 파라 트레이나르 아 노사 헤지:</p>
-<pre><span style="color:#323232;">데프 트라잉(네트워르크, {인푸트스, 타르제트스}) 두</span>
-<span style="color:#323232;">{파람스, _} = 느스.데픙.그라드(네트워르크, &amp;아숑.로시스.비나리_크로센트로피(타르제트스, &amp;1))</span>
-<span style="color:#323232;">{인푸트스, 타르제트스, 파람스}</span>
-<span style="color:#323232;">인드</span>
+<pre><span style="color:#839496;">데프 트라잉(네트워르크, {인푸트스, 타르제트스}) 두</span>
+<span style="color:#839496;">{파람스, _} = 느스.데픙.그라드(네트워르크, &amp;아숑.로시스.비나리_크로센트로피(타르제트스, &amp;1))</span>
+<span style="color:#839496;">{인푸트스, 타르제트스, 파람스}</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프 로프(네트워르크, 다타) 두</span>
-<span style="color:#323232;">포르 _ &lt;- 1..100 두</span>
-<span style="color:#323232;">이눙.헤두시(다타, 네트워르크, &amp;트라잉/2)</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프 로프(네트워르크, 다타) 두</span>
+<span style="color:#839496;">포르 _ &lt;- 1..100 두</span>
+<span style="color:#839496;">이눙.헤두시(다타, 네트워르크, &amp;트라잉/2)</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
 
 </pre><p id = "para-277">네스치 코지구, <code>트라잉/2</code> 헤세비 아 헤지 이 웅 콘준투 지 인트라다스 이 아우부스, 이 카우쿨라 우 그라지엔치 다 푼상 지 페르다 (네스치 카주, 아 인트로피아 크루자다 비나리아) 잉 헬라상 아우스 파라메트루스 다 헤지. <code>로프/2</code> 이제쿠타 우 트레이나멘투 포르 100 에포카스.</p>
 <p id = "para-278">오브세르비 키 에스치 에 웅 이젬플루 무이투 심플리피카두 이 낭 잉클루이 바리아스 파르치스 임포르탄치스 두 트레이나멘투 지 우마 헤지 네우라우 나 프라치카, 코무 아 지비장 지 다두스 잉 로치스, 아 우칠리자상 지 웅 오치미자도르 파라 아투알리자르 우스 파라메트루스 다 헤지, 아 발리다상 두 모델루 잉 웅 콘준투 지 다두스 지 테스치, 이트크.</p>
@@ -1630,43 +1689,43 @@ function toggle() {
 <p id = "para-294">쿠안투 아 아르키테투라 키 포데리아 세르 마이스 지피시우, 마스 마이스 헤콤펜사도라 파라 임플레멘타르 우잔두 우니옹이스 지스크리미나다스, 프로바베우멘치 세리아 아우구 코무 웅 모델루 트란스포르메르. 우스 트란스포르메르스 인보우벵 우마 콤플레시다지 시그니피카치바, 콩 바리아스 파르치스 지페렌치스 (카마다스 지 아텐상, 헤지스 페드-포르와르드, 카마다스 지 노르말리자상, 이트크.) 키 포뎅 세르 모델라다스 코무 바리안치스 잉 우마 우니앙 지스크리미나다. 누 인탄투, 우스 트란스포르메르스 탐벵 프로바랑 세르 무이투 이피카지스 파라 우마 암플라 가마 지 타레파스 지 아프렌지자두 지 마키나, 포르 이수, 아페자르 다 콤플레시다지 지 수아 임플레멘타상, 엘리스 포뎅 세르 바스탄치 헤콤펜사도리스 잉 테르무스 지 데젬페뉴 두 모델루.</p>
 <h2 id = "link-61">데타이우 티 모스트 인트리카치 이눙 오프 티 트란스포르메르 모데우 포르 수시 아우붐스 타스크 (오미트 티 치피 데피니치옹 오프 티 아드자센트 치페스 안드 온으와르드 포르 라테르, 부트 이프 테리’스 헤쿠르시옹 트리 투 레아비 아 코멘트)</h2>
 <p id = "para-295">&lt; 바무스 콘시데라르 우마 심플리피카상 지 아우투 니베우 다 아르키테투라 트란스포르메르 이 코무 엘라 포데리아 세르 헤프레젠타다 잉 후스트 우잔두 이눔스. 이수 에 아페나스 우마 헤프레젠타상 일루스트라치바 이 우마 임플레멘타상 헤아우 세리아 무이투 마이스 콤플레샤.</p>
-<pre><span style="color:#323232;">이눙 라예르 {</span>
-<span style="color:#323232;">// 오테르 라예르 치페스 미그트 비 아데드 에리</span>
-<span style="color:#323232;">트란스포르메르(트란스포르메를라예르)</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">이눙 라예르 {</span>
+<span style="color:#839496;">// 오테르 라예르 치페스 미그트 비 아데드 에리</span>
+<span style="color:#839496;">트란스포르메르(트란스포르메를라예르)</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">이눙 트란스포르메를라예르 {</span>
-<span style="color:#323232;">잉코데를라예르(잉코데를라예르),</span>
-<span style="color:#323232;">데코데를라예르(데코데를라예르),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">이눙 트란스포르메를라예르 {</span>
+<span style="color:#839496;">잉코데를라예르(잉코데를라예르),</span>
+<span style="color:#839496;">데코데를라예르(데코데를라예르),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">스트룩트 잉코데를라예르 {</span>
-<span style="color:#323232;">세우프_아틍: 무우치에아다텐치옹,</span>
-<span style="color:#323232;">페드_포르와르드: 포지치온으위제페드포르와르드,</span>
-<span style="color:#323232;">// 수블라예르코넥치옹 포르 이아시 오프 티 아보비</span>
-<span style="color:#323232;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">스트룩트 잉코데를라예르 {</span>
+<span style="color:#839496;">세우프_아틍: 무우치에아다텐치옹,</span>
+<span style="color:#839496;">페드_포르와르드: 포지치온으위제페드포르와르드,</span>
+<span style="color:#839496;">// 수블라예르코넥치옹 포르 이아시 오프 티 아보비</span>
+<span style="color:#839496;">// ...</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">스트룩트 데코데를라예르 {</span>
-<span style="color:#323232;">세우프_아틍: 무우치에아다텐치옹,</span>
-<span style="color:#323232;">크로스_아틍: 무우치에아다텐치옹,</span>
-<span style="color:#323232;">페드_포르와르드: 포지치온으위제페드포르와르드,</span>
-<span style="color:#323232;">// 수블라예르코넥치옹 포르 이아시 오프 티 아보비</span>
-<span style="color:#323232;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">스트룩트 데코데를라예르 {</span>
+<span style="color:#839496;">세우프_아틍: 무우치에아다텐치옹,</span>
+<span style="color:#839496;">크로스_아틍: 무우치에아다텐치옹,</span>
+<span style="color:#839496;">페드_포르와르드: 포지치온으위제페드포르와르드,</span>
+<span style="color:#839496;">// 수블라예르코넥치옹 포르 이아시 오프 티 아보비</span>
+<span style="color:#839496;">// ...</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">스트룩트 무우치에아다텐치옹 {</span>
-<span style="color:#323232;">// 크, 크, 브 리네아르 라예르스, 오트푸트 리네아르 라예르,</span>
-<span style="color:#323232;">// 안드 아텐치옹 메샤니증 (리키 스칼레도트프로둑타텐치옹)</span>
-<span style="color:#323232;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">스트룩트 무우치에아다텐치옹 {</span>
+<span style="color:#839496;">// 크, 크, 브 리네아르 라예르스, 오트푸트 리네아르 라예르,</span>
+<span style="color:#839496;">// 안드 아텐치옹 메샤니증 (리키 스칼레도트프로둑타텐치옹)</span>
+<span style="color:#839496;">// ...</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">스트룩트 포지치온으위제페드포르와르드 {</span>
-<span style="color:#323232;">// 트우 리네아르 라예르스 안드 앙 악치바치옹 풍크치옹 잉 베트웽</span>
-<span style="color:#323232;">// ...</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">스트룩트 포지치온으위제페드포르와르드 {</span>
+<span style="color:#839496;">// 트우 리네아르 라예르스 안드 앙 악치바치옹 풍크치옹 잉 베트웽</span>
+<span style="color:#839496;">// ...</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 오테르 스트룩트 데피니치옹스...</span>
+<span style="color:#839496;">// 오테르 스트룩트 데피니치옹스...</span>
 
 </pre><p id = "para-296">네스치 이젬플루, 웅 <code>라예르</code> 에 웅 이눙 키 포지 헤프레젠타르 바리우스 치푸스 지페렌치스 지 카마다스. 네스치 카주, 이스타무스 아페나스 콘시데란두 <code>트란스포르메를라예르</code>, 키 포지 세르 오 우마 <code>잉코데를라예르</code> 오 우마 <code>데코데를라예르</code>.</p>
 <p id = "para-297"><code>잉코데를라예르</code> 이 <code>데코데를라예르</code> 상 스트룩트스 키 콘텡 아스 파르치스 콘스치투인치스 다스 카마다스 두 코지피카도르 이 데코지피카도르 두 트란스포르메르, 헤스펙치바멘치. 암바스 콘텡 웅 <code>무우치에아다텐치옹</code> 이 웅 <code>포지치온으위제페드포르와르드</code>, 이 우 <code>데코데를라예르</code> 콘텡 웅 <code>무우치에아다텐치옹</code> 아지시오나우 파라 아 아텐상 크루자다 엔트리 아스 사이다스 두 코지피카도르 이 아스 인트라다스 두 데코지피카도르.</p>
@@ -1790,50 +1849,50 @@ function toggle() {
 <p id = "para-368">피날리, 이트’스 워르트 노칭그 타트 네아르 프로토코우 이스 데지그네드 투 비 모리 스칼라블리 안드 이피시엔트 탕 마니 오테르 블록샤잉스, 안드 이트 우지스 아 사르데드, 프로프-오프-스타키 모데우 투 아시에비 이그 트로그푸트 안드 로 트란삭치옹 페이스. 티스 마키스 이트 아 수이타블리 쇼이시 포르 아 프로젝트 리키 아 제네라치비 아우붕.</p>
 <h2 id = "link-71">프로비지 앙 이니치아우 므브프 삼플리 우징그 후스트 위트 온리 티 살리스 파르트, 포쿠징그 티 지스크리미나테드 우니옹 헬라치온지프스 잉 수시 부지네스 로지크</h2>
 <p id = "para-369">&lt; 벨로 이스 아 미니마우 스마르트 콘트락트 잉 후스트 포쿠징그 온리 옹 티 살리스 파르트 오프 아 제네라치비 아우붕. 이트’스 아 호그 템플라치, 안드 요 워우드 네드 투 이스판드 티스 아코르징그 투 요르 스페시피크 네드스. 잉 파르치쿨라르, 노치 타트 티 헤아우-워루드 스마르트 콘트락트 소우드 안들리 모리 사페치 셱스 안드 에드지 카지스.</p>
-<pre><span style="color:#323232;">우지 네아르_스드크::보르즈::{세우프, 보르즈데제리알리지, 보르즈세리알리지}</span>
-<span style="color:#323232;">우지 네아르_스드크::{네아르_빈드젱, 아콘치드, 발란시, 프로미지}</span>
+<pre><span style="color:#839496;">우지 네아르_스드크::보르즈::{세우프, 보르즈데제리알리지, 보르즈세리알리지}</span>
+<span style="color:#839496;">우지 네아르_스드크::{네아르_빈드젱, 아콘치드, 발란시, 프로미지}</span>
 
-<span style="color:#323232;">#[네아르_빈드젱]</span>
-<span style="color:#323232;">#[데리비(보르즈데제리알리지, 보르즈세리알리지)]</span>
-<span style="color:#323232;">푸브 스트룩트 아우붕 {</span>
-<span style="color:#323232;">오네르_이드: 아콘치드,</span>
-<span style="color:#323232;">프리시_페르_트라크: 발란시,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#[네아르_빈드젱]</span>
+<span style="color:#839496;">#[데리비(보르즈데제리알리지, 보르즈세리알리지)]</span>
+<span style="color:#839496;">푸브 스트룩트 아우붕 {</span>
+<span style="color:#839496;">오네르_이드: 아콘치드,</span>
+<span style="color:#839496;">프리시_페르_트라크: 발란시,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">#[네아르_빈드젱]</span>
-<span style="color:#323232;">임푸 아우붕 {</span>
-<span style="color:#323232;">#[이니트]</span>
-<span style="color:#323232;">푸브 픙 네(오네르_이드: 아콘치드, 프리시_페르_트라크: 발란시) -&gt; 세우프 {</span>
-<span style="color:#323232;">세우프 {</span>
-<span style="color:#323232;">오네르_이드,</span>
-<span style="color:#323232;">프리시_페르_트라크,</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#[네아르_빈드젱]</span>
+<span style="color:#839496;">임푸 아우붕 {</span>
+<span style="color:#839496;">#[이니트]</span>
+<span style="color:#839496;">푸브 픙 네(오네르_이드: 아콘치드, 프리시_페르_트라크: 발란시) -&gt; 세우프 {</span>
+<span style="color:#839496;">세우프 {</span>
+<span style="color:#839496;">오네르_이드,</span>
+<span style="color:#839496;">프리시_페르_트라크,</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 픙 푸르샤지_트라크(&amp;무트 세우프, 부예르_이드: 아콘치드, 트라크_이드: 우64) -&gt; 프로미지 {</span>
-<span style="color:#323232;">아세르트!(/* 트라크 이지스트스 안드 이스 아바일라블리 포르 푸르샤지 */)</span>
-<span style="color:#323232;">프로미지::네(세우프.오네르_이드.클로니())</span>
-<span style="color:#323232;">.트란스페르(세우프.프리시_페르_트라크)</span>
-<span style="color:#323232;">/* 아드 풍크치오날리치 투 트란스페르 오네르지프 오프 티 트라크 투 티 부예르 */</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 픙 푸르샤지_트라크(&amp;무트 세우프, 부예르_이드: 아콘치드, 트라크_이드: 우64) -&gt; 프로미지 {</span>
+<span style="color:#839496;">아세르트!(/* 트라크 이지스트스 안드 이스 아바일라블리 포르 푸르샤지 */)</span>
+<span style="color:#839496;">프로미지::네(세우프.오네르_이드.클로니())</span>
+<span style="color:#839496;">.트란스페르(세우프.프리시_페르_트라크)</span>
+<span style="color:#839496;">/* 아드 풍크치오날리치 투 트란스페르 오네르지프 오프 티 트라크 투 티 부예르 */</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">/* 제테르 메토드스 워우드 구 에리 */</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">/* 제테르 메토드스 워우드 구 에리 */</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">#[크프그(테스트)]</span>
-<span style="color:#323232;">모드 테스트스 {</span>
-<span style="color:#323232;">/* 아드 요르 테스트스 에리 */</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#[크프그(테스트)]</span>
+<span style="color:#839496;">모드 테스트스 {</span>
+<span style="color:#839496;">/* 아드 요르 테스트스 에리 */</span>
+<span style="color:#839496;">}</span>
 
 
 </pre><p id = "para-370">티스 콘트락트 온리 잉클루지스 티 바지크 살리 풍크치오날리치 에리 소메오니 캉 푸르샤지 아 트라크 비 칼링그 티 <code>푸르샤지_트라크</code> 메토드. 티 발란시 이스 텡 트란스페헤드 투 티 오네르’스 아콘트. 이트 이스 아수메드 타트 테리’스 아 와이 투 셰크 이프 티 트라크 이지스트스 안드 이스 아바일라블리 포르 푸르샤지 (이시 요 소우드 임플레멘트), 안드 아우수 아 와이 투 트란스페르 오네르지프 오프 티 트라크 투 티 부예르.</p>
 <p id = "para-371">티 <code>#[이니트]</code> 아트리부치 이스 우제드 투 데노치 티 콘스트룩토르 메토드 이시 이니치알리지스 티 콘트락트.</p>
 <p id = "para-372">티 지스크리미나테드 우니옹 잉 후스트 이스 <code>이눙</code>. 포르 티스 카지, 위 지등’트 네드 이트 부트 이프 요 아비 아 헤키레멘트 에리 요 네드 투 아비 아 치피 이시 캉 아비 세베라우 지페렌트 바리안트스, 텡 요 캉 우지 티 <code>이눙</code> 케이워르드.</p>
 <p id = "para-373">포르 이잠플리, 수포지 요 아드 지페렌트 킨드스 오프 아우붐스 잉 요르 마르케트플라시, 리키 아 싱글리 트라크 아우붕 안드 아 무우치플리 트락스 아우붕, 요 캉 모데우 타트 우징그 앙 이눙:</p>
-<pre><span style="color:#323232;">이눙 아우붐치피 {</span>
-<span style="color:#323232;">싱글레트라크(트라크),</span>
-<span style="color:#323232;">무우치플레트락스(베크&lt;트라크&gt;),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">이눙 아우붐치피 {</span>
+<span style="color:#839496;">싱글레트라크(트라크),</span>
+<span style="color:#839496;">무우치플레트락스(베크&lt;트라크&gt;),</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-374">헤멤베르 타트 부이우징그 아 스마르트 콘트락트 헤키리스 아 고드 운데르스탄징그 오프 블록샤잉 테시놀로기 안드 프로그라밍그, 안드 이트’스 아우와이스 헤코멘데드 투 아비 아니 스마르트 콘트락트 아우지테드 포르 세쿠리치 부우네라빌리치스 베포리 데플로잉그 이트.</p>
 <h2 id = "link-72">케프 오트푸칭그 잉 프트-브르. 콘시데링그 티 크랑키 스타치 오프 티 무지크 인두스트리, 위트 마니 오지치스 리키 ‘싱글리 트라크 아우붐스’, 데타이우 오테르 팅그스 타트 코우드 비 니트피케드 아스 아지치오나우 콤플레시치 포르 수시 콘트락트 잉 오르데르 투 아데리 투 헤트루 콤파치빌리치</h2>

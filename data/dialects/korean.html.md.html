@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,56 +613,58 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Hangul</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+  <pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Hangul</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Korean_language_and_computers</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Korean_language_and_computers</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Hangul_consonant_and_vowel_tables</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Hangul_consonant_and_vowel_tables</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/List_of_Hangul_jamo</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/List_of_Hangul_jamo</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Unified_Hangul_Code</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Unified_Hangul_Code</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/List_of_modern_Hangul_characters_in_ISO/IEC_2022–compliant_national_character_set_standards</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/List_of_modern_Hangul_characters_in_ISO/IEC_2022–compliant_national_character_set_standards</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Hangul_Syllables</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Hangul_Syllables</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Hangul_Jamo_Extended-A</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Hangul_Jamo_Extended-A</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Hangul_Jamo_Extended-B</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Hangul_Jamo_Extended-B</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/Hangul_Compatibility_Jamo</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/Hangul_Compatibility_Jamo</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: en.wikipedia.org/wiki/CJK_Unified_Ideographs_(Unicode_block)</span>
-<span style="color:#323232;">frame: https_dark://</span>
-<span style="color:#323232;">style: height:30vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: en.wikipedia.org/wiki/CJK_Unified_Ideographs_(Unicode_block)</span>
+<span style="color:#839496;">frame: https_dark://</span>
+<span style="color:#839496;">style: height:30vh</span>
 
 </pre>
 </div>

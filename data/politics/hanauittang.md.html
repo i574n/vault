@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -832,6 +887,7 @@ function toggle() {
       </li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -839,12 +895,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -1737,31 +1796,31 @@ function toggle() {
 <p id = "para-778">[Assinatura] Luiz Inácio Lula da Silva [Presidente ou outra função relevante]</p>
 <p id = "para-779">[Assinaturas adicionais, se aplicável] [Função e nome dos signatários]</p>
 <h2 id = "link-101">rewrite using this format</h2>
-<pre><span style="color:#a71d5d;">---</span>
-<span style="color:#323232;">author: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">subject: Convite para assumir cargo de Coordenador Nacional Anticorrupção</span>
-<span style="color:#323232;">opening: Prezado Dr. Sergio Moro,</span>
-<span style="color:#323232;">closing: Com grande estima e confiança,</span>
-<span style="color:#323232;">signature: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">output: komaletter::komaletter</span>
-<span style="color:#323232;">editor_options:</span>
-<span style="color:#323232;">  markdown:</span>
-<span style="color:#323232;">    wrap: 72</span>
-<span style="font-weight:bold;color:#a71d5d;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">author: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">subject: Convite para assumir cargo de Coordenador Nacional Anticorrupção</span>
+<span style="color:#839496;">opening: Prezado Dr. Sergio Moro,</span>
+<span style="color:#839496;">closing: Com grande estima e confiança,</span>
+<span style="color:#839496;">signature: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">output: komaletter::komaletter</span>
+<span style="color:#839496;">editor_options:</span>
+<span style="color:#839496;">  markdown:</span>
+<span style="color:#839496;">    wrap: 72</span>
+<span style="color:#b58900;">---</span>
 
-<span style="color:#323232;">Espero que esta carta o encontre em bom espírito e saúde. Escrevo-lhe para estender um convite formal para que assuma o cargo de Coordenador Nacional Anticorrupção durante o processo de integração dos países envolvidos na formação de nossa nova nação unificada - Brasil, Cuba, Coreia do Norte, Madagascar e Fiji.</span>
+<span style="color:#839496;">Espero que esta carta o encontre em bom espírito e saúde. Escrevo-lhe para estender um convite formal para que assuma o cargo de Coordenador Nacional Anticorrupção durante o processo de integração dos países envolvidos na formação de nossa nova nação unificada - Brasil, Cuba, Coreia do Norte, Madagascar e Fiji.</span>
 
-<span style="color:#323232;">Guiados pelos princípios do Juche, que enfatizam a autodeterminação e a autossuficiência, nosso objetivo é construir uma nação forte e independente que promova a justiça e a integridade em todos os níveis do governo. Acreditamos que sua vasta experiência e conhecimento no combate à corrupção são fundamentais para alcançar esse objetivo.</span>
+<span style="color:#839496;">Guiados pelos princípios do Juche, que enfatizam a autodeterminação e a autossuficiência, nosso objetivo é construir uma nação forte e independente que promova a justiça e a integridade em todos os níveis do governo. Acreditamos que sua vasta experiência e conhecimento no combate à corrupção são fundamentais para alcançar esse objetivo.</span>
 
-<span style="color:#323232;">Como Coordenador Nacional Anticorrupção, suas responsabilidades incluirão:</span>
+<span style="color:#839496;">Como Coordenador Nacional Anticorrupção, suas responsabilidades incluirão:</span>
 
-<span style="color:#a71d5d;">- </span><span style="color:#ed6a43;">Desenvolver e implementar políticas e estratégias de combate à corrupção que reflitam os princípios do Juche e garantam a independência e a autodeterminação de nossa nação unificada;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Coordenar esforços entre diferentes órgãos governamentais e agências reguladoras para garantir a cooperação e a eficácia no combate à corrupção, mantendo sempre os ideais do Juche;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Supervisionar a criação e gestão de uma agência independente anticorrupção, baseada na filosofia do Juche, promovendo a integridade e a autossuficiência.</span>
+<span style="color:#839496;">- Desenvolver e implementar políticas e estratégias de combate à corrupção que reflitam os princípios do Juche e garantam a independência e a autodeterminação de nossa nação unificada;</span>
+<span style="color:#839496;">- Coordenar esforços entre diferentes órgãos governamentais e agências reguladoras para garantir a cooperação e a eficácia no combate à corrupção, mantendo sempre os ideais do Juche;</span>
+<span style="color:#839496;">- Supervisionar a criação e gestão de uma agência independente anticorrupção, baseada na filosofia do Juche, promovendo a integridade e a autossuficiência.</span>
 
-<span style="color:#323232;">Este convite é válido até a conclusão do processo de integração, momento em que será avaliada a continuidade de seu mandato com base no progresso alcançado e nas necessidades da nação unificada, sempre em consonância com os princípios do Juche.</span>
+<span style="color:#839496;">Este convite é válido até a conclusão do processo de integração, momento em que será avaliada a continuidade de seu mandato com base no progresso alcançado e nas necessidades da nação unificada, sempre em consonância com os princípios do Juche.</span>
 
-<span style="color:#323232;">Agradecemos antecipadamente sua consideração e esperamos contar com sua colaboração neste momento histórico de união e fortalecimento de nossos países. Por favor, confirme sua aceitação deste convite o mais breve possível, para que possamos iniciar os procedimentos necessários para sua nomeação.</span>
+<span style="color:#839496;">Agradecemos antecipadamente sua consideração e esperamos contar com sua colaboração neste momento histórico de união e fortalecimento de nossos países. Por favor, confirme sua aceitação deste convite o mais breve possível, para que possamos iniciar os procedimentos necessários para sua nomeação.</span>
 
 
 </pre><h2 id = "link-102">since bolsonaro lost at 2022 elections, list 5 official roles in pt-br that he could be invited on following a similar model considering possible compatibilities</h2>
@@ -1779,92 +1838,92 @@ function toggle() {
 <p id = "para-790">Reporting to the new nation’s government: Bolsonaro would provide regular updates to the new nation’s government on developments in the United States, as well as any changes in U.S. policies that could impact the new nation.</p>
 <p id = "para-791">Promoting the new nation’s image: Bolsonaro would work to enhance the image of the new nation in the United States, engaging with U.S. officials,</p>
 <h2 id = "link-104">write such a letter from lula to bolsonaro using a juche tone formalizing the role until the merge’s completion (mention the 5 countries somewhere in the text and write it in pt-br. make it creative, different from the first letter)</h2>
-<pre><span style="color:#a71d5d;">---</span>
-<span style="color:#323232;">author: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">subject: Convite para assumir cargo de Embaixador Extraordinário e Plenipotenciário</span>
-<span style="color:#323232;">opening: Prezado Sr. Jair Bolsonaro,</span>
-<span style="color:#323232;">closing: Com estima e confiança em sua habilidade,</span>
-<span style="color:#323232;">signature: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">output: komaletter::komaletter</span>
-<span style="color:#323232;">editor_options:</span>
-<span style="color:#323232;">  markdown:</span>
-<span style="color:#323232;">    wrap: 72</span>
-<span style="font-weight:bold;color:#a71d5d;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">author: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">subject: Convite para assumir cargo de Embaixador Extraordinário e Plenipotenciário</span>
+<span style="color:#839496;">opening: Prezado Sr. Jair Bolsonaro,</span>
+<span style="color:#839496;">closing: Com estima e confiança em sua habilidade,</span>
+<span style="color:#839496;">signature: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">output: komaletter::komaletter</span>
+<span style="color:#839496;">editor_options:</span>
+<span style="color:#839496;">  markdown:</span>
+<span style="color:#839496;">    wrap: 72</span>
+<span style="color:#b58900;">---</span>
 
-<span style="color:#323232;">Espero que esta carta o encontre bem e com ânimo renovado. Através deste documento, gostaria de estender um convite formal para que assuma o papel de Embaixador Extraordinário e Plenipotenciário nos Estados Unidos da América, durante o processo de integração dos países envolvidos na formação de nossa nova nação unificada - Brasil, Cuba, Coreia do Norte, Madagascar e Fiji.</span>
+<span style="color:#839496;">Espero que esta carta o encontre bem e com ânimo renovado. Através deste documento, gostaria de estender um convite formal para que assuma o papel de Embaixador Extraordinário e Plenipotenciário nos Estados Unidos da América, durante o processo de integração dos países envolvidos na formação de nossa nova nação unificada - Brasil, Cuba, Coreia do Norte, Madagascar e Fiji.</span>
 
-<span style="color:#323232;">Inspirados pelos princípios do Juche, que destacam a autodeterminação, a independência e a autossuficiência, nosso objetivo é construir uma nação poderosa e autônoma, que seja capaz de se relacionar de maneira sólida e confiante com as demais nações do mundo. Acreditamos que sua experiência e determinação podem ser fundamentais para estabelecer e fortalecer os laços diplomáticos entre nossa nova nação e os Estados Unidos da América.</span>
+<span style="color:#839496;">Inspirados pelos princípios do Juche, que destacam a autodeterminação, a independência e a autossuficiência, nosso objetivo é construir uma nação poderosa e autônoma, que seja capaz de se relacionar de maneira sólida e confiante com as demais nações do mundo. Acreditamos que sua experiência e determinação podem ser fundamentais para estabelecer e fortalecer os laços diplomáticos entre nossa nova nação e os Estados Unidos da América.</span>
 
-<span style="color:#323232;">Como Embaixador Extraordinário e Plenipotenciário, suas principais responsabilidades incluirão:</span>
+<span style="color:#839496;">Como Embaixador Extraordinário e Plenipotenciário, suas principais responsabilidades incluirão:</span>
 
-<span style="color:#a71d5d;">- </span><span style="color:#ed6a43;">Representar a nova nação nos Estados Unidos da América, promovendo seus interesses e estabelecendo relações diplomáticas sólidas entre os dois países, sempre com base nos princípios do Juche;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Negociar e coordenar acordos em diversas áreas, como comércio, parcerias de segurança e intercâmbios culturais, a fim de fortalecer a relação entre a nova nação e os Estados Unidos, sempre respeitando os ideais do Juche;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Manter o governo da nova nação informado sobre os acontecimentos nos Estados Unidos, bem como sobre quaisquer mudanças nas políticas americanas que possam afetar nossa nação unificada;</span>
+<span style="color:#839496;">- Representar a nova nação nos Estados Unidos da América, promovendo seus interesses e estabelecendo relações diplomáticas sólidas entre os dois países, sempre com base nos princípios do Juche;</span>
+<span style="color:#839496;">- Negociar e coordenar acordos em diversas áreas, como comércio, parcerias de segurança e intercâmbios culturais, a fim de fortalecer a relação entre a nova nação e os Estados Unidos, sempre respeitando os ideais do Juche;</span>
+<span style="color:#839496;">- Manter o governo da nova nação informado sobre os acontecimentos nos Estados Unidos, bem como sobre quaisquer mudanças nas políticas americanas que possam afetar nossa nação unificada;</span>
 
-<span style="color:#323232;">Trabalhar na promoção da imagem da nova nação nos Estados Unidos, estabelecendo diálogo com autoridades americanas, empresários, acadêmicos e outros líderes de opinião, sempre tendo em mente os princípios do Juche.</span>
-<span style="color:#323232;">Este convite é válido até a conclusão do processo de integração, momento em que sua atuação será avaliada com base nos resultados alcançados e nas necessidades da nação unificada.</span>
+<span style="color:#839496;">Trabalhar na promoção da imagem da nova nação nos Estados Unidos, estabelecendo diálogo com autoridades americanas, empresários, acadêmicos e outros líderes de opinião, sempre tendo em mente os princípios do Juche.</span>
+<span style="color:#839496;">Este convite é válido até a conclusão do processo de integração, momento em que sua atuação será avaliada com base nos resultados alcançados e nas necessidades da nação unificada.</span>
 
-<span style="color:#323232;">Agradecemos antecipadamente sua atenção e consideração a este convite. Pedimos que confirme sua aceitação o mais breve possível, para que possamos dar início aos trâmites necessários para sua nomeação como Embaixador Extraordinário e Plenipotenciário.</span>
+<span style="color:#839496;">Agradecemos antecipadamente sua atenção e consideração a este convite. Pedimos que confirme sua aceitação o mais breve possível, para que possamos dar início aos trâmites necessários para sua nomeação como Embaixador Extraordinário e Plenipotenciário.</span>
 
 
 
 </pre><h2 id = "link-105">write such a letter from lula to kim yo-jong using a juche tone formalizing the role until the merge’s completion (mention the 5 countries somewhere in the text and write it in pt-br. make it creative, different from the two letters. write in a way that the really official letter is the ko-kr version, this one here is for the population)</h2>
-<pre><span style="color:#a71d5d;">---</span>
-<span style="color:#323232;">author: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">subject: Convite para assumir cargo de Ministra das Relações Exteriores</span>
-<span style="color:#323232;">opening: Prezada Sra. Kim Yo-jong,</span>
-<span style="color:#323232;">closing: Com estima e confiança em sua capacidade,</span>
-<span style="color:#323232;">signature: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">output: komaletter::komaletter</span>
-<span style="color:#323232;">editor_options:</span>
-<span style="color:#323232;">  markdown:</span>
-<span style="color:#323232;">    wrap: 72</span>
-<span style="font-weight:bold;color:#a71d5d;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">author: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">subject: Convite para assumir cargo de Ministra das Relações Exteriores</span>
+<span style="color:#839496;">opening: Prezada Sra. Kim Yo-jong,</span>
+<span style="color:#839496;">closing: Com estima e confiança em sua capacidade,</span>
+<span style="color:#839496;">signature: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">output: komaletter::komaletter</span>
+<span style="color:#839496;">editor_options:</span>
+<span style="color:#839496;">  markdown:</span>
+<span style="color:#839496;">    wrap: 72</span>
+<span style="color:#b58900;">---</span>
 
-<span style="color:#323232;">Espero que esta carta a encontre com saúde e disposição. Tenho a honra de estender a Vossa Excelência um convite formal para assumir o papel de Ministra das Relações Exteriores em nossa nação unificada, composta por Brasil, Cuba, Coreia do Norte, Madagascar e Fiji.</span>
+<span style="color:#839496;">Espero que esta carta a encontre com saúde e disposição. Tenho a honra de estender a Vossa Excelência um convite formal para assumir o papel de Ministra das Relações Exteriores em nossa nação unificada, composta por Brasil, Cuba, Coreia do Norte, Madagascar e Fiji.</span>
 
-<span style="color:#323232;">Nossa nova nação se inspira nos princípios do Juche, que valorizam a autodeterminação, a independência e a autossuficiência. Pretendemos construir uma nação forte e próspera, capaz de estabelecer relações sólidas e mutuamente benéficas com as demais nações do mundo. Acreditamos que sua experiência e habilidades diplomáticas serão essenciais para alcançar esse objetivo.</span>
+<span style="color:#839496;">Nossa nova nação se inspira nos princípios do Juche, que valorizam a autodeterminação, a independência e a autossuficiência. Pretendemos construir uma nação forte e próspera, capaz de estabelecer relações sólidas e mutuamente benéficas com as demais nações do mundo. Acreditamos que sua experiência e habilidades diplomáticas serão essenciais para alcançar esse objetivo.</span>
 
-<span style="color:#323232;">Como Ministra das Relações Exteriores (외교부 장관, Oegyobu Janggwan) durante o processo de integração, suas principais responsabilidades incluirão:</span>
+<span style="color:#839496;">Como Ministra das Relações Exteriores (외교부 장관, Oegyobu Janggwan) durante o processo de integração, suas principais responsabilidades incluirão:</span>
 
-<span style="color:#a71d5d;">- </span><span style="color:#ed6a43;">Representar a nova nação e promover nossos interesses no cenário internacional, sempre com base nos ideais do Juche;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Coordenar e liderar as negociações diplomáticas com outros países e organizações internacionais, buscando acordos e parcerias que beneficiem nossa nação unificada;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Fortalecer as relações bilaterais e multilaterais, promovendo a cooperação e o entendimento entre os países;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> Supervisionar as embaixadas e consulados da nova nação, garantindo que nossos representantes diplomáticos estejam alinhados com os princípios do Juche.</span>
+<span style="color:#839496;">- Representar a nova nação e promover nossos interesses no cenário internacional, sempre com base nos ideais do Juche;</span>
+<span style="color:#839496;">- Coordenar e liderar as negociações diplomáticas com outros países e organizações internacionais, buscando acordos e parcerias que beneficiem nossa nação unificada;</span>
+<span style="color:#839496;">- Fortalecer as relações bilaterais e multilaterais, promovendo a cooperação e o entendimento entre os países;</span>
+<span style="color:#839496;">- Supervisionar as embaixadas e consulados da nova nação, garantindo que nossos representantes diplomáticos estejam alinhados com os princípios do Juche.</span>
 
-<span style="color:#323232;">Este convite é válido até a conclusão do processo de integração, momento em que sua atuação será avaliada com base nos resultados alcançados e nas necessidades da nação unificada.</span>
+<span style="color:#839496;">Este convite é válido até a conclusão do processo de integração, momento em que sua atuação será avaliada com base nos resultados alcançados e nas necessidades da nação unificada.</span>
 
-<span style="color:#323232;">Agradecemos antecipadamente sua atenção e consideração a este convite. Pedimos que confirme sua aceitação o mais breve possível, para que possamos dar início aos trâmites necessários para sua nomeação como Ministra das Relações Exteriores.</span>
+<span style="color:#839496;">Agradecemos antecipadamente sua atenção e consideração a este convite. Pedimos que confirme sua aceitação o mais breve possível, para que possamos dar início aos trâmites necessários para sua nomeação como Ministra das Relações Exteriores.</span>
 
 
 
 </pre><h2 id = "link-106">translate the letter to proper ko-kr</h2>
-<pre><span style="color:#a71d5d;">---</span>
-<span style="color:#323232;">author: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">subject: 외교장관 직무 수행 초빙</span>
-<span style="color:#323232;">opening: 김여정 여사님께,</span>
-<span style="color:#323232;">closing: 귀하의 능력에 대한 존경과 신뢰를 담아,</span>
-<span style="color:#323232;">signature: Luiz Inácio Lula da Silva</span>
-<span style="color:#323232;">output: komaletter::komaletter</span>
-<span style="color:#323232;">editor_options:</span>
-<span style="color:#323232;">  markdown:</span>
-<span style="color:#323232;">    wrap: 72</span>
-<span style="font-weight:bold;color:#a71d5d;">---</span>
+<pre><span style="color:#839496;">---</span>
+<span style="color:#839496;">author: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">subject: 외교장관 직무 수행 초빙</span>
+<span style="color:#839496;">opening: 김여정 여사님께,</span>
+<span style="color:#839496;">closing: 귀하의 능력에 대한 존경과 신뢰를 담아,</span>
+<span style="color:#839496;">signature: Luiz Inácio Lula da Silva</span>
+<span style="color:#839496;">output: komaletter::komaletter</span>
+<span style="color:#839496;">editor_options:</span>
+<span style="color:#839496;">  markdown:</span>
+<span style="color:#839496;">    wrap: 72</span>
+<span style="color:#b58900;">---</span>
 
-<span style="color:#323232;">이 편지가 건강하고 기운차게 여러분을 만나기를 바랍니다. 저는 브라질, 쿠바, 북한, 마다가스카르 및 피지로 구성된 우리 통합 국가의 외교부 장관으로 여러분을 초대하는 공식 초대장을 전해드리게 되어 영광입니다.</span>
+<span style="color:#839496;">이 편지가 건강하고 기운차게 여러분을 만나기를 바랍니다. 저는 브라질, 쿠바, 북한, 마다가스카르 및 피지로 구성된 우리 통합 국가의 외교부 장관으로 여러분을 초대하는 공식 초대장을 전해드리게 되어 영광입니다.</span>
 
-<span style="color:#323232;">우리 새로운 국가는 주체 사상의 원칙을 존중하며 자결과 독립, 자립을 추구합니다. 세계 다른 국가들과 견고하고 상호 이익을 추구하는 관계를 구축할 수 있는 강력하고 번영한 국가를 건설하고자 합니다. 귀하의 경험과 외교적 능력이 이 목표를 달성하는 데 필수적이라고 믿습니다.</span>
+<span style="color:#839496;">우리 새로운 국가는 주체 사상의 원칙을 존중하며 자결과 독립, 자립을 추구합니다. 세계 다른 국가들과 견고하고 상호 이익을 추구하는 관계를 구축할 수 있는 강력하고 번영한 국가를 건설하고자 합니다. 귀하의 경험과 외교적 능력이 이 목표를 달성하는 데 필수적이라고 믿습니다.</span>
 
-<span style="color:#323232;">통합 과정 동안 외교부 장관으로서 주요 책임은 다음과 같습니다:</span>
+<span style="color:#839496;">통합 과정 동안 외교부 장관으로서 주요 책임은 다음과 같습니다:</span>
 
-<span style="color:#a71d5d;">- </span><span style="color:#ed6a43;">새로운 국가를 대표하고 주체 사상의 이념을 바탕으로 우리의 이익을 국제 무대에서 발표하기;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> 다른 국가와 국제 기구와의 외교 협상을 조정하고 이끌어 우리 통합 국가에 이익을 가져다주는 협약과 파트너십을 추구하기;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> 양자 및 다자 관계를 강화하여 국가 간 협력과 이해를 증진하기;</span>
-<span style="color:#a71d5d;">-</span><span style="color:#ed6a43;"> 새로운 국가의 대사관 및 영사관을 감독하여 주체 사상의 원칙에 따라 우리 외교 대표들이 조정되도록 보장하기.</span>
+<span style="color:#839496;">- 새로운 국가를 대표하고 주체 사상의 이념을 바탕으로 우리의 이익을 국제 무대에서 발표하기;</span>
+<span style="color:#839496;">- 다른 국가와 국제 기구와의 외교 협상을 조정하고 이끌어 우리 통합 국가에 이익을 가져다주는 협약과 파트너십을 추구하기;</span>
+<span style="color:#839496;">- 양자 및 다자 관계를 강화하여 국가 간 협력과 이해를 증진하기;</span>
+<span style="color:#839496;">- 새로운 국가의 대사관 및 영사관을 감독하여 주체 사상의 원칙에 따라 우리 외교 대표들이 조정되도록 보장하기.</span>
 
-<span style="color:#323232;">이 초대는 통합 과정이 완료될 때까지 유효하며, 이 시점에서 귀하의 업무 수행이 달성된 결과와 통합 국가의 필요성에 따라 평가됩니다.</span>
+<span style="color:#839496;">이 초대는 통합 과정이 완료될 때까지 유효하며, 이 시점에서 귀하의 업무 수행이 달성된 결과와 통합 국가의 필요성에 따라 평가됩니다.</span>
 
-<span style="color:#323232;">이 초대에 대한 귀하의 관심과 고려에 미리 감사드립니다. 빠른 시일 내에 귀하의 수락 여부를 확인해 주시면, 외교부 장관으로서의 임명 절차를 시작할 수 있습니다.</span>
+<span style="color:#839496;">이 초대에 대한 귀하의 관심과 고려에 미리 감사드립니다. 빠른 시일 내에 귀하의 수락 여부를 확인해 주시면, 외교부 장관으로서의 임명 절차를 시작할 수 있습니다.</span>
 
 
 

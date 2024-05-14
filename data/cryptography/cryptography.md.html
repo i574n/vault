@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,89 +613,91 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(case (mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">%1 </span><span style="color:#0086b3;">6</span><span style="color:#323232;">) </span><span style="color:#0086b3;">11</span><span style="color:#323232;">) </span><span style="color:#0086b3;">91</span><span style="color:#323232;">) </span><span style="color:#0086b3;">0 1 12 6 </span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">%)) [</span><span style="color:#0086b3;">10 22 21 10</span><span style="color:#323232;">])</span>
+  <pre><span style="color:#839496;">(</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(case (mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">%1 </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">11</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">91</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">0 1 12 6 </span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#268bd2;">%</span><span style="color:#839496;">)) [</span><span style="color:#6c71c4;">10 22 21 10</span><span style="color:#839496;">])</span>
 
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">%1 </span><span style="color:#0086b3;">6</span><span style="color:#323232;">) </span><span style="color:#0086b3;">11</span><span style="color:#323232;">) </span><span style="color:#0086b3;">91</span><span style="color:#323232;">)) [</span><span style="color:#0086b3;">10 22 21 10</span><span style="color:#323232;">])</span>
-<span style="color:#323232;">(</span><span style="color:#183691;">&quot;G&quot; &quot;4&quot; &quot;.&quot; &quot;G&quot;</span><span style="color:#323232;">)</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">%1 </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">11</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">91</span><span style="color:#839496;">)) [</span><span style="color:#6c71c4;">10 22 21 10</span><span style="color:#839496;">])</span>
+<span style="color:#839496;">(&quot;</span><span style="color:#2aa198;">G</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">4</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">.</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">G</span><span style="color:#839496;">&quot;)</span>
 
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[c (mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">6</span><span style="color:#323232;">) </span><span style="color:#0086b3;">35</span><span style="color:#323232;">) </span><span style="color:#0086b3;">91</span><span style="color:#323232;">)] (</span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">c </span><span style="color:#0086b3;">35</span><span style="color:#323232;">) </span><span style="color:#0086b3;">\# </span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">c))) [</span><span style="color:#0086b3;">10 22 21 10</span><span style="color:#323232;">])</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">let </span><span style="color:#839496;">[</span><span style="color:#268bd2;">c </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">6</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">35</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">91</span><span style="color:#839496;">)] (</span><span style="color:#859900;">if </span><span style="color:#839496;">(</span><span style="color:#859900;">= </span><span style="color:#839496;">c </span><span style="color:#6c71c4;">35</span><span style="color:#839496;">) </span><span style="color:#dc322f;">\# </span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">c))) [</span><span style="color:#6c71c4;">10 22 21 10</span><span style="color:#839496;">])</span>
 
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">10 10</span><span style="color:#323232;">) </span><span style="color:#0086b3;">10</span><span style="color:#323232;">) </span><span style="color:#0086b3;">10</span><span style="color:#323232;">)) [</span><span style="color:#0086b3;">10 10 10 10</span><span style="color:#323232;">])</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">10 10</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">10</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">10</span><span style="color:#839496;">)) [</span><span style="color:#6c71c4;">10 10 10 10</span><span style="color:#839496;">])</span>
 
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">3 14 0 14</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">7</span><span style="color:#323232;">) </span><span style="color:#0086b3;">97</span><span style="color:#323232;">) </span><span style="color:#0086b3;">256</span><span style="color:#323232;">))))</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">3 14 0 14</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">7</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">97</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">256</span><span style="color:#839496;">))))</span>
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">23 1 12 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">19 29</span><span style="color:#323232;">) </span><span style="color:#0086b3;">124</span><span style="color:#323232;">) </span><span style="color:#0086b3;">127</span><span style="color:#323232;">))))</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">23 1 12 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">19 29</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">124</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">127</span><span style="color:#839496;">))))</span>
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">23 1 12 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">19 29</span><span style="color:#323232;">) </span><span style="color:#0086b3;">97</span><span style="color:#323232;">) </span><span style="color:#0086b3;">127</span><span style="color:#323232;">))))</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">23 1 12 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">19 29</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">97</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">127</span><span style="color:#839496;">))))</span>
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 12 0 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(mod (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 </span><span style="color:#323232;">% </span><span style="color:#0086b3;">2 3</span><span style="color:#323232;">]) % </span><span style="color:#0086b3;">31</span><span style="color:#323232;">) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">) </span><span style="color:#0086b3;">127</span><span style="color:#323232;">))))</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 12 0 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(mod (</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#839496;">(</span><span style="color:#859900;">reduce * </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">2 3</span><span style="color:#839496;">]) </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">31</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">127</span><span style="color:#839496;">))))</span>
 
 
-<span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">2 1 13 1</span><span style="color:#323232;">] (</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 2 3</span><span style="color:#323232;">]) (</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#0086b3;">31</span><span style="color:#323232;">) (</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#0086b3;">96</span><span style="color:#323232;">) (mod </span><span style="color:#0086b3;">127</span><span style="color:#323232;">) (</span><span style="color:#62a35c;">char</span><span style="color:#323232;">))</span>
+<span style="color:#839496;">(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">2 1 13 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">reduce * </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 2 3</span><span style="color:#839496;">]) (</span><span style="color:#859900;">* </span><span style="color:#6c71c4;">31</span><span style="color:#839496;">) (</span><span style="color:#859900;">+ </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">) (mod </span><span style="color:#6c71c4;">127</span><span style="color:#839496;">) (</span><span style="color:#859900;">char</span><span style="color:#839496;">))</span>
 
 
 
-<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% </span><span style="color:#0086b3;">7</span><span style="color:#323232;">) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
-<span style="color:#323232;">(</span><span style="color:#183691;">&quot;g&quot; &quot;g&quot; &quot;»&quot; &quot;g&quot;</span><span style="color:#323232;">)</span>
+<span style="color:#839496;">=&gt;(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 1 13 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">7</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">))))</span>
+<span style="color:#839496;">(&quot;</span><span style="color:#2aa198;">g</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">g</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">»</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">g</span><span style="color:#839496;">&quot;)</span>
 
-<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% (</span><span style="color:#62a35c;">reduce </span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">take </span><span style="color:#323232;">% (</span><span style="font-weight:bold;color:#a71d5d;">iterate </span><span style="color:#62a35c;">inc </span><span style="color:#0086b3;">2</span><span style="color:#323232;">)))) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
-<span style="color:#323232;">(</span><span style="color:#183691;">&quot;b&quot; &quot;b&quot; &quot;ࡠ&quot; &quot;b&quot;</span><span style="color:#323232;">)</span>
+<span style="color:#839496;">=&gt;(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 1 13 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#839496;">(</span><span style="color:#859900;">reduce * </span><span style="color:#839496;">(</span><span style="color:#859900;">take </span><span style="color:#268bd2;">% </span><span style="color:#839496;">(</span><span style="color:#859900;">iterate inc </span><span style="color:#6c71c4;">2</span><span style="color:#839496;">)))) </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">))))</span>
+<span style="color:#839496;">(&quot;</span><span style="color:#2aa198;">b</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">b</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">ࡠ</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">b</span><span style="color:#839496;">&quot;)</span>
 
-<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">(</span><span style="color:#62a35c;">bit-and </span><span style="color:#323232;">% </span><span style="color:#0086b3;">23</span><span style="color:#323232;">) (</span><span style="color:#62a35c;">bit-or </span><span style="color:#323232;">% </span><span style="color:#0086b3;">23</span><span style="color:#323232;">)) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
-<span style="color:#323232;">(</span><span style="color:#183691;">&quot;w&quot; &quot;w&quot; &quot;û&quot; &quot;w&quot;</span><span style="color:#323232;">)</span>
+<span style="color:#839496;">=&gt;(</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 1 13 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#839496;">(</span><span style="color:#859900;">bit-and </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">23</span><span style="color:#839496;">) (</span><span style="color:#859900;">bit-or </span><span style="color:#268bd2;">% </span><span style="color:#6c71c4;">23</span><span style="color:#839496;">)) </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">))))</span>
+<span style="color:#839496;">(&quot;</span><span style="color:#2aa198;">w</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">w</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">û</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">w</span><span style="color:#839496;">&quot;)</span>
 
-<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">defn </span><span style="font-weight:bold;color:#795da3;">f </span><span style="color:#323232;">[n] (</span><span style="font-weight:bold;color:#a71d5d;">if </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&lt;= </span><span style="color:#323232;">n </span><span style="color:#0086b3;">0</span><span style="color:#323232;">) </span><span style="color:#0086b3;">1 </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">n (f (</span><span style="font-weight:bold;color:#a71d5d;">- </span><span style="color:#323232;">n </span><span style="color:#0086b3;">1</span><span style="color:#323232;">))))) (</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(f %) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">))))</span>
-<span style="color:#323232;">(</span><span style="color:#183691;">&quot;a&quot; &quot;a&quot; &quot;챠&quot; &quot;a&quot;</span><span style="color:#323232;">)</span>
+<span style="color:#839496;">=&gt;(</span><span style="color:#268bd2;">defn </span><span style="color:#b58900;">f </span><span style="color:#839496;">[</span><span style="color:#268bd2;">n</span><span style="color:#839496;">] (</span><span style="color:#859900;">if </span><span style="color:#839496;">(</span><span style="color:#859900;">&lt;= </span><span style="color:#839496;">n </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">1 </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#839496;">n (f (</span><span style="color:#859900;">- </span><span style="color:#839496;">n </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">))))) (</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 1 13 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(</span><span style="color:#859900;">+ </span><span style="color:#839496;">(f </span><span style="color:#268bd2;">%</span><span style="color:#839496;">) </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">))))</span>
+<span style="color:#839496;">(&quot;</span><span style="color:#2aa198;">a</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">a</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">챠</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">a</span><span style="color:#839496;">&quot;)</span>
 
-<span style="color:#323232;">=&gt;(</span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">[m1 [[</span><span style="color:#0086b3;">1 2</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">3 4</span><span style="color:#323232;">]] m2 [[</span><span style="color:#0086b3;">5 6</span><span style="color:#323232;">] [</span><span style="color:#0086b3;">7 8</span><span style="color:#323232;">]]] (</span><span style="font-weight:bold;color:#a71d5d;">-&gt;&gt; </span><span style="color:#323232;">[</span><span style="color:#0086b3;">1 1 13 1</span><span style="color:#323232;">] (</span><span style="font-weight:bold;color:#a71d5d;">map #</span><span style="color:#323232;">(</span><span style="color:#62a35c;">char </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">+ </span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">* </span><span style="color:#323232;">% (</span><span style="color:#62a35c;">get-in </span><span style="color:#323232;">m1 [</span><span style="color:#0086b3;">0 0</span><span style="color:#323232;">])) (</span><span style="color:#62a35c;">get-in </span><span style="color:#323232;">m2 [</span><span style="color:#0086b3;">0 1</span><span style="color:#323232;">]) </span><span style="color:#0086b3;">96</span><span style="color:#323232;">)))))</span>
-<span style="color:#323232;">(</span><span style="color:#183691;">&quot;g&quot; &quot;g&quot; &quot;s&quot; &quot;g&quot;</span><span style="color:#323232;">)</span>
+<span style="color:#839496;">=&gt;(</span><span style="color:#859900;">let </span><span style="color:#839496;">[</span><span style="color:#268bd2;">m1 </span><span style="color:#839496;">[[</span><span style="color:#6c71c4;">1 2</span><span style="color:#839496;">] [</span><span style="color:#6c71c4;">3 4</span><span style="color:#839496;">]] </span><span style="color:#268bd2;">m2 </span><span style="color:#839496;">[[</span><span style="color:#6c71c4;">5 6</span><span style="color:#839496;">] [</span><span style="color:#6c71c4;">7 8</span><span style="color:#839496;">]]] (</span><span style="color:#859900;">-&gt;&gt; </span><span style="color:#839496;">[</span><span style="color:#6c71c4;">1 1 13 1</span><span style="color:#839496;">] (</span><span style="color:#859900;">map </span><span style="color:#268bd2;">#</span><span style="color:#839496;">(</span><span style="color:#859900;">char </span><span style="color:#839496;">(</span><span style="color:#859900;">+ </span><span style="color:#839496;">(</span><span style="color:#859900;">* </span><span style="color:#268bd2;">% </span><span style="color:#839496;">(</span><span style="color:#859900;">get-in </span><span style="color:#839496;">m1 [</span><span style="color:#6c71c4;">0 0</span><span style="color:#839496;">])) (</span><span style="color:#859900;">get-in </span><span style="color:#839496;">m2 [</span><span style="color:#6c71c4;">0 1</span><span style="color:#839496;">]) </span><span style="color:#6c71c4;">96</span><span style="color:#839496;">)))))</span>
+<span style="color:#839496;">(&quot;</span><span style="color:#2aa198;">g</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">g</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">s</span><span style="color:#839496;">&quot; &quot;</span><span style="color:#2aa198;">g</span><span style="color:#839496;">&quot;)</span>
 
-</pre><pre><span style="color:#323232;">[2, 4, 6, 8] |&gt; Enum.map(&amp;(&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}&quot; |&gt; byte_size() |&gt; to_string() &lt;&gt; to_string(&amp;1 * &amp;1 * 7 + &amp;1 + 95)) |&gt; String.to_charlist()) |&gt; IO.inspect()</span>
+</pre><pre><span style="color:#839496;">[2, 4, 6, 8] |&gt; Enum.map(&amp;(&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}&quot; |&gt; byte_size() |&gt; to_string() &lt;&gt; to_string(&amp;1 * &amp;1 * 7 + &amp;1 + 95)) |&gt; String.to_charlist()) |&gt; IO.inspect()</span>
 
 
-<span style="color:#323232;">elixir -e &quot;[2, 4, 6, 8] |&gt; Enum.map(&amp;(\&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}\&quot; |&gt; byte_size() |&gt; to_string() |&gt; (fn x -&gt; Integer.parse(to_string(x)) |&gt; elem(0) end).() |&gt; (fn y -&gt; to_string(y * y * 7 + y + 95) end).())) |&gt; IO.inspect()&quot;</span>
+<span style="color:#839496;">elixir -e &quot;[2, 4, 6, 8] |&gt; Enum.map(&amp;(\&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}\&quot; |&gt; byte_size() |&gt; to_string() |&gt; (fn x -&gt; Integer.parse(to_string(x)) |&gt; elem(0) end).() |&gt; (fn y -&gt; to_string(y * y * 7 + y + 95) end).())) |&gt; IO.inspect()&quot;</span>
 
 
-<span style="color:#323232;">elixir -e &#39;input = [97, 109, 97]</span>
-<span style="color:#323232;">  coeffs = Enum.reverse(input)</span>
+<span style="color:#839496;">elixir -e &#39;input = [97, 109, 97]</span>
+<span style="color:#839496;">  coeffs = Enum.reverse(input)</span>
 
-<span style="color:#323232;">  with acc &lt;- 1..4</span>
-<span style="color:#323232;">          |&gt; Enum.map(fn x -&gt; x * x * x * (coeffs |&gt; Enum.at(0)) + x * x * (coeffs |&gt; Enum.at(1)) + x * (coeffs |&gt; Enum.at(2)) + (coeffs |&gt; Enum.at(3)) end)</span>
-<span style="color:#323232;">          |&gt; Enum.sum(),</span>
-<span style="color:#323232;">       codepoint &lt;- rem(acc, 1111) + 770,</span>
-<span style="color:#323232;">       do: IO.puts(:&quot;\##{codepoint}&quot;)&#39;</span>
+<span style="color:#839496;">  with acc &lt;- 1..4</span>
+<span style="color:#839496;">          |&gt; Enum.map(fn x -&gt; x * x * x * (coeffs |&gt; Enum.at(0)) + x * x * (coeffs |&gt; Enum.at(1)) + x * (coeffs |&gt; Enum.at(2)) + (coeffs |&gt; Enum.at(3)) end)</span>
+<span style="color:#839496;">          |&gt; Enum.sum(),</span>
+<span style="color:#839496;">       codepoint &lt;- rem(acc, 1111) + 770,</span>
+<span style="color:#839496;">       do: IO.puts(:&quot;\##{codepoint}&quot;)&#39;</span>
 
 
 
 
 
-<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([97, 109, 97, 35], fn x -&gt; (x + 6) * (x + 4) * (x + 2) * x |&gt; rem(26) |&gt; Kernel.+(97) end) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
+<span style="color:#839496;">elixir -e &quot;IO.puts \&quot;#{Enum.map([97, 109, 97, 35], fn x -&gt; (x + 6) * (x + 4) * (x + 2) * x |&gt; rem(26) |&gt; Kernel.+(97) end) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
 
-<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([97, 109, 97, 35], fn x -&gt; ((x + 6) * (x + 4) * (x + 2) * x) |&gt; rem(26) |&gt; Kernel.+(97) |&gt; :erlang.int_to_char end) |&gt; List.to_string()}\&quot;&quot;</span>
+<span style="color:#839496;">elixir -e &quot;IO.puts \&quot;#{Enum.map([97, 109, 97, 35], fn x -&gt; ((x + 6) * (x + 4) * (x + 2) * x) |&gt; rem(26) |&gt; Kernel.+(97) |&gt; :erlang.int_to_char end) |&gt; List.to_string()}\&quot;&quot;</span>
 
 
 
-<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; :erlang.integer_to_list()</span>
-<span style="color:#323232;">#         || [109] ++ Enum.map([2,3],fn x-&gt; 97+((2*x-7)*rem(13))||99end )</span>
-<span style="color:#323232;">#            ||[97]|&gt; List.foldl(&amp;List::flatten/1,[])</span>
-<span style="color:#323232;">#            ||:unicode.characters_to_binary()}\&quot;&quot;</span>
-<span style="color:#323232;"># ama</span>
+<span style="color:#839496;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; :erlang.integer_to_list()</span>
+<span style="color:#839496;">#         || [109] ++ Enum.map([2,3],fn x-&gt; 97+((2*x-7)*rem(13))||99end )</span>
+<span style="color:#839496;">#            ||[97]|&gt; List.foldl(&amp;List::flatten/1,[])</span>
+<span style="color:#839496;">#            ||:unicode.characters_to_binary()}\&quot;&quot;</span>
+<span style="color:#839496;"># ama</span>
 
-<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
+<span style="color:#839496;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
 
 
-<span style="color:#323232;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
+<span style="color:#839496;">elixir -e &quot;IO.puts \&quot;#{Enum.map([1, 2, 3], fn x -&gt; (x + 4) * (x + 1) * (x - 1) |&gt; rem(26) |&gt; Kernel.-(98)||100 end ) |&gt; Enum.map(&amp;(:erlang.integer_to_list(&amp;1) |&gt; List.first())) |&gt; :unicode.characters_to_binary()}\&quot;&quot;</span>
 
 
 
@@ -649,191 +705,191 @@ function toggle() {
 
 
 
-<span style="color:#323232;"># Encode function</span>
-<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
-<span style="color:#323232;">encoded = plaintext</span>
-<span style="color:#323232;">|&gt; String.downcase()</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97)) * 8 |&gt; Kernel.+(11)</span>
-<span style="color:#323232;">  |&gt; rem(26)</span>
-<span style="color:#323232;">  |&gt; Kernel.+(97)</span>
-<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(encoded)</span>
+<span style="color:#839496;"># Encode function</span>
+<span style="color:#839496;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#839496;">encoded = plaintext</span>
+<span style="color:#839496;">|&gt; String.downcase()</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97)) * 8 |&gt; Kernel.+(11)</span>
+<span style="color:#839496;">  |&gt; rem(26)</span>
+<span style="color:#839496;">  |&gt; Kernel.+(97)</span>
+<span style="color:#839496;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(encoded)</span>
 
-<span style="color:#323232;"># Decode function</span>
-<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
-<span style="color:#323232;">decoded = ciphertext</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97) |&gt; Kernel.-(11))</span>
-<span style="color:#323232;">  |&gt; rem(26 * 8)</span>
-<span style="color:#323232;">  |&gt; rem(26)</span>
-<span style="color:#323232;">  |&gt; Kernel.+(97)</span>
-<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(decoded)</span>
-
-
-
-
-
-
-
-<span style="color:#323232;"># Encode function</span>
-<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
-<span style="color:#323232;">encoded = plaintext</span>
-<span style="color:#323232;">|&gt; String.downcase()</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97)) |&gt; Kernel.*(8) |&gt; Kernel.+(11)</span>
-<span style="color:#323232;">  |&gt; rem(26)</span>
-<span style="color:#323232;">  |&gt; Kernel.+(97)</span>
-<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(encoded)</span>
+<span style="color:#839496;"># Decode function</span>
+<span style="color:#839496;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#839496;">decoded = ciphertext</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97) |&gt; Kernel.-(11))</span>
+<span style="color:#839496;">  |&gt; rem(26 * 8)</span>
+<span style="color:#839496;">  |&gt; rem(26)</span>
+<span style="color:#839496;">  |&gt; Kernel.+(97)</span>
+<span style="color:#839496;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(decoded)</span>
+
+
+
+
+
+
+
+<span style="color:#839496;"># Encode function</span>
+<span style="color:#839496;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#839496;">encoded = plaintext</span>
+<span style="color:#839496;">|&gt; String.downcase()</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  (x |&gt; String.to_charlist() |&gt; hd() |&gt; :erlang.binary_to_integer() |&gt; Kernel.-(97)) |&gt; Kernel.*(8) |&gt; Kernel.+(11)</span>
+<span style="color:#839496;">  |&gt; rem(26)</span>
+<span style="color:#839496;">  |&gt; Kernel.+(97)</span>
+<span style="color:#839496;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(encoded)</span>
 
-<span style="color:#323232;"># Decode function</span>
-<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
-<span style="color:#323232;">decoded = ciphertext</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  (x |&gt; String.to_charlist() |&gt; hd()</span>
-<span style="color:#323232;">   |&gt; Kernel.-(97)</span>
-<span style="color:#323232;">   |&gt; Kernel.-(11)</span>
-<span style="color:#323232;">   |&gt; rem(26 * 8)</span>
-<span style="color:#323232;">   |&gt; rem(26)</span>
-<span style="color:#323232;">   |&gt; Kernel.+(97)</span>
-<span style="color:#323232;">   |&gt; Integer.to_string()</span>
-<span style="color:#323232;">   |&gt; :erlang.binary_to_integer())</span>
-<span style="color:#323232;">  |&gt; Integer.to_charlist()</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(decoded)</span>
+<span style="color:#839496;"># Decode function</span>
+<span style="color:#839496;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#839496;">decoded = ciphertext</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  (x |&gt; String.to_charlist() |&gt; hd()</span>
+<span style="color:#839496;">   |&gt; Kernel.-(97)</span>
+<span style="color:#839496;">   |&gt; Kernel.-(11)</span>
+<span style="color:#839496;">   |&gt; rem(26 * 8)</span>
+<span style="color:#839496;">   |&gt; rem(26)</span>
+<span style="color:#839496;">   |&gt; Kernel.+(97)</span>
+<span style="color:#839496;">   |&gt; Integer.to_string()</span>
+<span style="color:#839496;">   |&gt; :erlang.binary_to_integer())</span>
+<span style="color:#839496;">  |&gt; Integer.to_charlist()</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(decoded)</span>
 
-
-
-<span style="color:#323232;">elixi</span>
-<span style="color:#323232;">r -e &#39;# Encode function</span>
-<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
-<span style="color:#323232;">encoded = plaintext</span>
-<span style="color:#323232;">|&gt; String.downcase()</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(&amp;(&amp;1 |&gt; String.to_charlist() |&gt; hd() |&gt; (&amp;1 - 97 - 11) |&gt; rem(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; Integer.to_string() |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt;))</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(encoded)</span>
-
-<span style="color:#323232;"># Decode function</span>
-<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
-<span style="color:#323232;">decoded = ciphertext</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(&amp;(&amp;1 |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt; |&gt; String.to_integer() |&gt; (&amp;1 - 97 + 11) |&gt; rem(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; Integer.to_string() |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt;))</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(decoded)&#39;</span>
-<span style="color:#323232;">** (CompileError) nofile:6: nested captures are not allowed. You cannot define a function using  the capture operator &amp; inside another function defined via &amp;. Got invalid nested capture: &amp;(&amp;1 + 97)</span>
-<span style="color:#323232;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
-<span style="color:#323232;">    (stdlib 4.2) lists.erl:1463: :lists.mapfoldl_1/3</span>
-<span style="color:#323232;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
-<span style="color:#323232;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
-<span style="color:#323232;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
-<span style="color:#323232;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
-<span style="color:#323232;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
-<span style="color:#323232;">    (elixir 1.14.3) expanding macro: Kernel.|&gt;/2</span>
-
-
-
-
-
-
-<span style="color:#323232;"># Encode function</span>
-<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
-<span style="color:#323232;">encoded = plaintext</span>
-<span style="color:#323232;">|&gt; String.downcase()</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  c = hd(String.to_charlist(x))</span>
-<span style="color:#323232;">  c = c - 97 - 11</span>
-<span style="color:#323232;">  c = rem(c, 26)</span>
-<span style="color:#323232;">  c = c + 97</span>
-<span style="color:#323232;">  c = Integer.to_string(c)</span>
-<span style="color:#323232;">  &lt;&lt;c::utf8&gt;&gt;</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(encoded)</span>
-
-<span style="color:#323232;"># Decode function</span>
-<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
-<span style="color:#323232;">decoded = ciphertext</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  c = String.to_integer(x |&gt; then(fn x -&gt; &lt;&lt;x::utf8&gt;&gt; end))</span>
-<span style="color:#323232;">  c = c - 97 + 11</span>
-<span style="color:#323232;">  c = rem(c, 26)</span>
-<span style="color:#323232;">  c = c + 97</span>
-<span style="color:#323232;">  c = Integer.to_string(c)</span>
-<span style="color:#323232;">  &lt;&lt;c::utf8&gt;&gt;</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(decoded)</span>
+
+
+<span style="color:#839496;">elixi</span>
+<span style="color:#839496;">r -e &#39;# Encode function</span>
+<span style="color:#839496;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#839496;">encoded = plaintext</span>
+<span style="color:#839496;">|&gt; String.downcase()</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(&amp;(&amp;1 |&gt; String.to_charlist() |&gt; hd() |&gt; (&amp;1 - 97 - 11) |&gt; rem(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; Integer.to_string() |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt;))</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(encoded)</span>
+
+<span style="color:#839496;"># Decode function</span>
+<span style="color:#839496;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#839496;">decoded = ciphertext</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(&amp;(&amp;1 |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt; |&gt; String.to_integer() |&gt; (&amp;1 - 97 + 11) |&gt; rem(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; Integer.to_string() |&gt; &lt;&lt;(&amp;1::utf8)&gt;&gt;))</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(decoded)&#39;</span>
+<span style="color:#839496;">** (CompileError) nofile:6: nested captures are not allowed. You cannot define a function using  the capture operator &amp; inside another function defined via &amp;. Got invalid nested capture: &amp;(&amp;1 + 97)</span>
+<span style="color:#839496;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
+<span style="color:#839496;">    (stdlib 4.2) lists.erl:1463: :lists.mapfoldl_1/3</span>
+<span style="color:#839496;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
+<span style="color:#839496;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
+<span style="color:#839496;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
+<span style="color:#839496;">    (stdlib 4.2) lists.erl:1462: :lists.mapfoldl_1/3</span>
+<span style="color:#839496;">    (elixir 1.14.3) src/elixir_fn.erl:140: :elixir_fn.escape/3</span>
+<span style="color:#839496;">    (elixir 1.14.3) expanding macro: Kernel.|&gt;/2</span>
+
+
+
+
+
+
+<span style="color:#839496;"># Encode function</span>
+<span style="color:#839496;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#839496;">encoded = plaintext</span>
+<span style="color:#839496;">|&gt; String.downcase()</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  c = hd(String.to_charlist(x))</span>
+<span style="color:#839496;">  c = c - 97 - 11</span>
+<span style="color:#839496;">  c = rem(c, 26)</span>
+<span style="color:#839496;">  c = c + 97</span>
+<span style="color:#839496;">  c = Integer.to_string(c)</span>
+<span style="color:#839496;">  &lt;&lt;c::utf8&gt;&gt;</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(encoded)</span>
+
+<span style="color:#839496;"># Decode function</span>
+<span style="color:#839496;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#839496;">decoded = ciphertext</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  c = String.to_integer(x |&gt; then(fn x -&gt; &lt;&lt;x::utf8&gt;&gt; end))</span>
+<span style="color:#839496;">  c = c - 97 + 11</span>
+<span style="color:#839496;">  c = rem(c, 26)</span>
+<span style="color:#839496;">  c = c + 97</span>
+<span style="color:#839496;">  c = Integer.to_string(c)</span>
+<span style="color:#839496;">  &lt;&lt;c::utf8&gt;&gt;</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(decoded)</span>
 
 
 
 
-
-
-
+
+
+
 
-
-
-
-
-
-
-
-
-
-<span style="color:#323232;"># Encode function</span>
-<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
-<span style="color:#323232;">encoded = plaintext</span>
-<span style="color:#323232;">|&gt; String.downcase()</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  hd(String.to_charlist(x)) - 97 - 11</span>
-<span style="color:#323232;">  |&gt; rem(26)</span>
-<span style="color:#323232;">  |&gt; &amp; &amp;1 + 97</span>
-<span style="color:#323232;">  |&gt; Integer.to_string()</span>
-<span style="color:#323232;">  |&gt; List.to_string()</span>
-<span style="color:#323232;">  |&gt; String.codepoints()</span>
-<span style="color:#323232;">  |&gt; Enum.filter(&amp;String.printable?/1)</span>
-<span style="color:#323232;">  |&gt; List.to_string()</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(encoded)</span>
-
-<span style="color:#323232;"># Decode function</span>
-<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
-<span style="color:#323232;">decoded = ciphertext</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  x</span>
-<span style="color:#323232;">  |&gt; String.codepoints()</span>
-<span style="color:#323232;">  |&gt; List.to_string()</span>
-<span style="color:#323232;">  |&gt; String.to_integer()</span>
-<span style="color:#323232;">  |&gt; &amp; &amp;1 - 97 + 11</span>
-<span style="color:#323232;">  |&gt; rem(26)</span>
-<span style="color:#323232;">  |&gt; &amp; &amp;1 + 97</span>
-<span style="color:#323232;">  |&gt; Integer.to_string()</span>
-<span style="color:#323232;">  |&gt; List.to_string()</span>
-<span style="color:#323232;">  |&gt; String.codepoints()</span>
-<span style="color:#323232;">  |&gt; Enum.filter(&amp;String.printable?/1)</span>
-<span style="color:#323232;">  |&gt; List.to_string()</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">IO.puts(decoded)</span>
+
+
+
+
+
+
+
+
+
+<span style="color:#839496;"># Encode function</span>
+<span style="color:#839496;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#839496;">encoded = plaintext</span>
+<span style="color:#839496;">|&gt; String.downcase()</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  hd(String.to_charlist(x)) - 97 - 11</span>
+<span style="color:#839496;">  |&gt; rem(26)</span>
+<span style="color:#839496;">  |&gt; &amp; &amp;1 + 97</span>
+<span style="color:#839496;">  |&gt; Integer.to_string()</span>
+<span style="color:#839496;">  |&gt; List.to_string()</span>
+<span style="color:#839496;">  |&gt; String.codepoints()</span>
+<span style="color:#839496;">  |&gt; Enum.filter(&amp;String.printable?/1)</span>
+<span style="color:#839496;">  |&gt; List.to_string()</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(encoded)</span>
+
+<span style="color:#839496;"># Decode function</span>
+<span style="color:#839496;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#839496;">decoded = ciphertext</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  x</span>
+<span style="color:#839496;">  |&gt; String.codepoints()</span>
+<span style="color:#839496;">  |&gt; List.to_string()</span>
+<span style="color:#839496;">  |&gt; String.to_integer()</span>
+<span style="color:#839496;">  |&gt; &amp; &amp;1 - 97 + 11</span>
+<span style="color:#839496;">  |&gt; rem(26)</span>
+<span style="color:#839496;">  |&gt; &amp; &amp;1 + 97</span>
+<span style="color:#839496;">  |&gt; Integer.to_string()</span>
+<span style="color:#839496;">  |&gt; List.to_string()</span>
+<span style="color:#839496;">  |&gt; String.codepoints()</span>
+<span style="color:#839496;">  |&gt; Enum.filter(&amp;String.printable?/1)</span>
+<span style="color:#839496;">  |&gt; List.to_string()</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">IO.puts(decoded)</span>
 
 
 
@@ -841,30 +897,30 @@ function toggle() {
 
 
 
-<span style="color:#323232;">plaintext = &quot;HELLO&quot;</span>
-<span style="color:#323232;">encoded = plaintext</span>
-<span style="color:#323232;">|&gt; String.downcase()</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  %{value: char} = List.first(String.codepoints(x))</span>
-<span style="color:#323232;">  char = char - ?a + 11 |&gt; rem(26) |&gt; Kernel.+(?a)</span>
-<span style="color:#323232;">  Integer.to_string(char)</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">|&gt; String.replace(&quot;[]&quot;, &quot;&quot;)</span>
-<span style="color:#323232;">|&gt; IO.puts()</span>
+<span style="color:#839496;">plaintext = &quot;HELLO&quot;</span>
+<span style="color:#839496;">encoded = plaintext</span>
+<span style="color:#839496;">|&gt; String.downcase()</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  %{value: char} = List.first(String.codepoints(x))</span>
+<span style="color:#839496;">  char = char - ?a + 11 |&gt; rem(26) |&gt; Kernel.+(?a)</span>
+<span style="color:#839496;">  Integer.to_string(char)</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">|&gt; String.replace(&quot;[]&quot;, &quot;&quot;)</span>
+<span style="color:#839496;">|&gt; IO.puts()</span>
 
-<span style="color:#323232;">ciphertext = &quot;fthvq&quot;</span>
-<span style="color:#323232;">decoded = ciphertext</span>
-<span style="color:#323232;">|&gt; String.graphemes()</span>
-<span style="color:#323232;">|&gt; Enum.map(fn x -&gt;</span>
-<span style="color:#323232;">  %{value: char} = List.first(String.codepoints(x))</span>
-<span style="color:#323232;">  char = char - ?a |&gt; rem(26) |&gt; Kernel.+(?a)</span>
-<span style="color:#323232;">  Integer.to_string(char)</span>
-<span style="color:#323232;">end)</span>
-<span style="color:#323232;">|&gt; List.to_string()</span>
-<span style="color:#323232;">|&gt; String.replace(&quot;[]&quot;, &quot;&quot;)</span>
-<span style="color:#323232;">|&gt; IO.puts()</span>
+<span style="color:#839496;">ciphertext = &quot;fthvq&quot;</span>
+<span style="color:#839496;">decoded = ciphertext</span>
+<span style="color:#839496;">|&gt; String.graphemes()</span>
+<span style="color:#839496;">|&gt; Enum.map(fn x -&gt;</span>
+<span style="color:#839496;">  %{value: char} = List.first(String.codepoints(x))</span>
+<span style="color:#839496;">  char = char - ?a |&gt; rem(26) |&gt; Kernel.+(?a)</span>
+<span style="color:#839496;">  Integer.to_string(char)</span>
+<span style="color:#839496;">end)</span>
+<span style="color:#839496;">|&gt; List.to_string()</span>
+<span style="color:#839496;">|&gt; String.replace(&quot;[]&quot;, &quot;&quot;)</span>
+<span style="color:#839496;">|&gt; IO.puts()</span>
 
 
 
@@ -873,54 +929,54 @@ function toggle() {
 
 
 
-<span style="color:#323232;">shift_poly = [1, 0, 1]</span>
+<span style="color:#839496;">shift_poly = [1, 0, 1]</span>
 
-<span style="color:#323232;">modular_inverse = fn f -&gt;</span>
-<span style="color:#323232;">  fn a, n -&gt;</span>
-<span style="color:#323232;">    case rem(n, a) do</span>
-<span style="color:#323232;">      0 -&gt; {1, 0, a}</span>
-<span style="color:#323232;">      b -&gt;</span>
-<span style="color:#323232;">        {y, x, d} = f.(b, a)</span>
-<span style="color:#323232;">        {x - div(n, a) * y, y, d}</span>
-<span style="color:#323232;">    end</span>
-<span style="color:#323232;">  end</span>
-<span style="color:#323232;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
+<span style="color:#839496;">modular_inverse = fn f -&gt;</span>
+<span style="color:#839496;">  fn a, n -&gt;</span>
+<span style="color:#839496;">    case rem(n, a) do</span>
+<span style="color:#839496;">      0 -&gt; {1, 0, a}</span>
+<span style="color:#839496;">      b -&gt;</span>
+<span style="color:#839496;">        {y, x, d} = f.(b, a)</span>
+<span style="color:#839496;">        {x - div(n, a) * y, y, d}</span>
+<span style="color:#839496;">    end</span>
+<span style="color:#839496;">  end</span>
+<span style="color:#839496;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
 
-<span style="color:#323232;">poly_shift_character = fn {char, _rest}, {a, b, c} -&gt;</span>
-<span style="color:#323232;">  shifted_val = a * char * char + b * char + c</span>
-<span style="color:#323232;">  &lt;&lt;shifted_val::utf8&gt;&gt;</span>
-<span style="color:#323232;">end</span>
+<span style="color:#839496;">poly_shift_character = fn {char, _rest}, {a, b, c} -&gt;</span>
+<span style="color:#839496;">  shifted_val = a * char * char + b * char + c</span>
+<span style="color:#839496;">  &lt;&lt;shifted_val::utf8&gt;&gt;</span>
+<span style="color:#839496;">end</span>
 
-<span style="color:#323232;">encode = fn f -&gt;</span>
-<span style="color:#323232;">  fn [char | tail], key_poly -&gt;</span>
-<span style="color:#323232;">    [poly_shift_character.({char, 0}, key_poly) | f.(tail, key_poly)]</span>
-<span style="color:#323232;">  end.([], &amp;1)</span>
-<span style="color:#323232;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
+<span style="color:#839496;">encode = fn f -&gt;</span>
+<span style="color:#839496;">  fn [char | tail], key_poly -&gt;</span>
+<span style="color:#839496;">    [poly_shift_character.({char, 0}, key_poly) | f.(tail, key_poly)]</span>
+<span style="color:#839496;">  end.([], &amp;1)</span>
+<span style="color:#839496;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
 
-<span style="color:#323232;">decode = fn f -&gt;</span>
-<span style="color:#323232;">  fn [a, b | tail], {a_coeff, b_coeff, c_coeff} -&gt;</span>
-<span style="color:#323232;">    inv_a = modular_inverse.(a_coeff, 256) |&gt; elem(0)</span>
-<span style="color:#323232;">    _inv_b = 256 - b_coeff</span>
-<span style="color:#323232;">    sqrt_term = round(:math.sqrt(b_coeff * b_coeff - 4 * a_coeff * c_coeff))</span>
-<span style="color:#323232;">    inv_c = rem(inv_a * (b_coeff * b_coeff - 4 * a_coeff * c_coeff), 256)</span>
+<span style="color:#839496;">decode = fn f -&gt;</span>
+<span style="color:#839496;">  fn [a, b | tail], {a_coeff, b_coeff, c_coeff} -&gt;</span>
+<span style="color:#839496;">    inv_a = modular_inverse.(a_coeff, 256) |&gt; elem(0)</span>
+<span style="color:#839496;">    _inv_b = 256 - b_coeff</span>
+<span style="color:#839496;">    sqrt_term = round(:math.sqrt(b_coeff * b_coeff - 4 * a_coeff * c_coeff))</span>
+<span style="color:#839496;">    inv_c = rem(inv_a * (b_coeff * b_coeff - 4 * a_coeff * c_coeff), 256)</span>
 
-<span style="color:#323232;">    char_val = rem(inv_a * (256 + b_coeff - sqrt_term), 256)</span>
-<span style="color:#323232;">                  |&gt; rem(&amp;(&amp;1 in 32..126))</span>
+<span style="color:#839496;">    char_val = rem(inv_a * (256 + b_coeff - sqrt_term), 256)</span>
+<span style="color:#839496;">                  |&gt; rem(&amp;(&amp;1 in 32..126))</span>
 
-<span style="color:#323232;">    [&lt;&lt;char_val::utf8&gt;&gt; | f.(tail, {a_coeff, b_coeff, c_coeff})]</span>
-<span style="color:#323232;">  end.([], &amp;1)</span>
-<span style="color:#323232;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
+<span style="color:#839496;">    [&lt;&lt;char_val::utf8&gt;&gt; | f.(tail, {a_coeff, b_coeff, c_coeff})]</span>
+<span style="color:#839496;">  end.([], &amp;1)</span>
+<span style="color:#839496;">end.(fn f -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) end)</span>
 
-<span style="color:#323232;">plaintext = &quot;Hello World!&quot;</span>
-<span style="color:#323232;">key_poly = shift_poly</span>
+<span style="color:#839496;">plaintext = &quot;Hello World!&quot;</span>
+<span style="color:#839496;">key_poly = shift_poly</span>
 
-<span style="color:#323232;">ciphertext = encode.(String.graphemes(plaintext), key_poly) |&gt; List.to_string()</span>
-<span style="color:#323232;">decoded = decode.(String.codepoints(ciphertext), key_poly) |&gt; List.to_string()</span>
+<span style="color:#839496;">ciphertext = encode.(String.graphemes(plaintext), key_poly) |&gt; List.to_string()</span>
+<span style="color:#839496;">decoded = decode.(String.codepoints(ciphertext), key_poly) |&gt; List.to_string()</span>
 
-<span style="color:#323232;"># Output the results</span>
-<span style="color:#323232;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
-<span style="color:#323232;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
-<span style="color:#323232;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
+<span style="color:#839496;"># Output the results</span>
+<span style="color:#839496;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
 
 
 
@@ -942,36 +998,36 @@ function toggle() {
 
 
 
-<span style="color:#323232;">defmodule Cipher do</span>
-<span style="color:#323232;">  def shift_character(&lt;&lt;char::utf8&gt;&gt; = _input, shift) do</span>
-<span style="color:#323232;">    shifted_val = char + shift</span>
-<span style="color:#323232;">    &lt;&lt;shifted_val :: utf8&gt;&gt;</span>
-<span style="color:#323232;">  end</span>
+<span style="color:#839496;">defmodule Cipher do</span>
+<span style="color:#839496;">  def shift_character(&lt;&lt;char::utf8&gt;&gt; = _input, shift) do</span>
+<span style="color:#839496;">    shifted_val = char + shift</span>
+<span style="color:#839496;">    &lt;&lt;shifted_val :: utf8&gt;&gt;</span>
+<span style="color:#839496;">  end</span>
 
-<span style="color:#323232;">  def encode(plaintext, key) do</span>
-<span style="color:#323232;">    plaintext</span>
-<span style="color:#323232;">    |&gt; String.codepoints()</span>
-<span style="color:#323232;">    |&gt; Enum.map(&amp;shift_character(&amp;1, key))</span>
-<span style="color:#323232;">    |&gt; List.to_string()</span>
-<span style="color:#323232;">  end</span>
+<span style="color:#839496;">  def encode(plaintext, key) do</span>
+<span style="color:#839496;">    plaintext</span>
+<span style="color:#839496;">    |&gt; String.codepoints()</span>
+<span style="color:#839496;">    |&gt; Enum.map(&amp;shift_character(&amp;1, key))</span>
+<span style="color:#839496;">    |&gt; List.to_string()</span>
+<span style="color:#839496;">  end</span>
 
-<span style="color:#323232;">  def decode(ciphertext, key) do</span>
-<span style="color:#323232;">    ciphertext</span>
-<span style="color:#323232;">    |&gt; String.codepoints()</span>
-<span style="color:#323232;">    |&gt; Enum.map(&amp;shift_character(&amp;1, -key))</span>
-<span style="color:#323232;">    |&gt; List.to_string()</span>
-<span style="color:#323232;">  end</span>
-<span style="color:#323232;">end</span>
+<span style="color:#839496;">  def decode(ciphertext, key) do</span>
+<span style="color:#839496;">    ciphertext</span>
+<span style="color:#839496;">    |&gt; String.codepoints()</span>
+<span style="color:#839496;">    |&gt; Enum.map(&amp;shift_character(&amp;1, -key))</span>
+<span style="color:#839496;">    |&gt; List.to_string()</span>
+<span style="color:#839496;">  end</span>
+<span style="color:#839496;">end</span>
 
 
-<span style="color:#323232;">plaintext = &quot;Hello World!&quot;</span>
-<span style="color:#323232;">k = 3</span>
-<span style="color:#323232;">ciphertext = Cipher.encode(plaintext, k)</span>
-<span style="color:#323232;">decoded = Cipher.decode(ciphertext, k)</span>
+<span style="color:#839496;">plaintext = &quot;Hello World!&quot;</span>
+<span style="color:#839496;">k = 3</span>
+<span style="color:#839496;">ciphertext = Cipher.encode(plaintext, k)</span>
+<span style="color:#839496;">decoded = Cipher.decode(ciphertext, k)</span>
 
-<span style="color:#323232;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
-<span style="color:#323232;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
-<span style="color:#323232;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
 
 
 
@@ -982,68 +1038,68 @@ function toggle() {
 
 
 
-<span style="color:#323232;">defmodule ShiftCipher do</span>
-<span style="color:#323232;">  defp modular_inverse(_a, 0), do: {1, 0, 0}</span>
-<span style="color:#323232;">  defp modular_inverse(a, n) when rem(n, a) != 0 do</span>
-<span style="color:#323232;">    {y, x, d} = modular_inverse(rem(n, a), a)</span>
-<span style="color:#323232;">    {x - div(n, a) * y, y, d}</span>
-<span style="color:#323232;">  end</span>
+<span style="color:#839496;">defmodule ShiftCipher do</span>
+<span style="color:#839496;">  defp modular_inverse(_a, 0), do: {1, 0, 0}</span>
+<span style="color:#839496;">  defp modular_inverse(a, n) when rem(n, a) != 0 do</span>
+<span style="color:#839496;">    {y, x, d} = modular_inverse(rem(n, a), a)</span>
+<span style="color:#839496;">    {x - div(n, a) * y, y, d}</span>
+<span style="color:#839496;">  end</span>
 
-<span style="color:#323232;">  defp poly_shift_character(char, {a, b, c}) do</span>
-<span style="color:#323232;">    a * String.to_integer(char) * String.to_integer(char) + b * String.to_integer(char) + c |&gt; rem(256)</span>
-<span style="color:#323232;">  end</span>
+<span style="color:#839496;">  defp poly_shift_character(char, {a, b, c}) do</span>
+<span style="color:#839496;">    a * String.to_integer(char) * String.to_integer(char) + b * String.to_integer(char) + c |&gt; rem(256)</span>
+<span style="color:#839496;">  end</span>
 
-<span style="color:#323232;">  def encode(plaintext, key_poly) do</span>
-<span style="color:#323232;">    plaintext</span>
-<span style="color:#323232;">    |&gt; String.codepoints()</span>
-<span style="color:#323232;">    |&gt; Enum.map(&amp;poly_shift_character(&amp;1, key_poly))</span>
-<span style="color:#323232;">  end</span>
+<span style="color:#839496;">  def encode(plaintext, key_poly) do</span>
+<span style="color:#839496;">    plaintext</span>
+<span style="color:#839496;">    |&gt; String.codepoints()</span>
+<span style="color:#839496;">    |&gt; Enum.map(&amp;poly_shift_character(&amp;1, key_poly))</span>
+<span style="color:#839496;">  end</span>
 
-<span style="color:#323232;">  def decode(ciphertext, key_poly) do</span>
-<span style="color:#323232;">    ciphertext</span>
-<span style="color:#323232;">    |&gt; String.codepoints()</span>
-<span style="color:#323232;">    |&gt; Enum.chunk_every(2, 1, :discard)</span>
-<span style="color:#323232;">    |&gt; Enum.map(&amp;decode_character(&amp;1, key_poly))</span>
-<span style="color:#323232;">    |&gt; (fn x -&gt; List.to_string(x) end).()</span>
-<span style="color:#323232;">  end</span>
+<span style="color:#839496;">  def decode(ciphertext, key_poly) do</span>
+<span style="color:#839496;">    ciphertext</span>
+<span style="color:#839496;">    |&gt; String.codepoints()</span>
+<span style="color:#839496;">    |&gt; Enum.chunk_every(2, 1, :discard)</span>
+<span style="color:#839496;">    |&gt; Enum.map(&amp;decode_character(&amp;1, key_poly))</span>
+<span style="color:#839496;">    |&gt; (fn x -&gt; List.to_string(x) end).()</span>
+<span style="color:#839496;">  end</span>
 
-<span style="color:#323232;">  defp decode_character([a, b], {a_coeff, b_coeff, c_coeff}) do</span>
-<span style="color:#323232;">    inv_a = modular_inverse(a_coeff, 256) |&gt; elem(0)</span>
-<span style="color:#323232;">    discriminant = b_coeff * b_coeff - 4 * a_coeff * c_coeff</span>
-<span style="color:#323232;">    case discriminant do</span>
-<span style="color:#323232;">      d when d &lt; 0 -&gt; 0</span>
-<span style="color:#323232;">      _ -&gt;</span>
-<span style="color:#323232;">        root1 = (-b_coeff + :math.sqrt(discriminant)) * inv_a |&gt; rem(256)</span>
-<span style="color:#323232;">        root2 = (-b_coeff - :math.sqrt(discriminant)) * inv_a |&gt; rem(256)</span>
-<span style="color:#323232;">        decoded =</span>
-<span style="color:#323232;">          case rem(a, 2) do</span>
-<span style="color:#323232;">            0 -&gt;</span>
-<span style="color:#323232;">              if rem(a * root1 * root1 + b * root1 + c_coeff, 256) == a do</span>
-<span style="color:#323232;">                root1</span>
-<span style="color:#323232;">              else</span>
-<span style="color:#323232;">                root2</span>
-<span style="color:#323232;">              end</span>
-<span style="color:#323232;">            _ -&gt;</span>
-<span style="color:#323232;">              if b &gt;= 0 do</span>
-<span style="color:#323232;">                root1</span>
-<span style="color:#323232;">              else</span>
-<span style="color:#323232;">                root2</span>
-<span style="color:#323232;">              end</span>
-<span style="color:#323232;">          end</span>
-<span style="color:#323232;">        Integer.to_charlist(decoded)</span>
-<span style="color:#323232;">    end</span>
-<span style="color:#323232;">  end</span>
-<span style="color:#323232;">end</span>
+<span style="color:#839496;">  defp decode_character([a, b], {a_coeff, b_coeff, c_coeff}) do</span>
+<span style="color:#839496;">    inv_a = modular_inverse(a_coeff, 256) |&gt; elem(0)</span>
+<span style="color:#839496;">    discriminant = b_coeff * b_coeff - 4 * a_coeff * c_coeff</span>
+<span style="color:#839496;">    case discriminant do</span>
+<span style="color:#839496;">      d when d &lt; 0 -&gt; 0</span>
+<span style="color:#839496;">      _ -&gt;</span>
+<span style="color:#839496;">        root1 = (-b_coeff + :math.sqrt(discriminant)) * inv_a |&gt; rem(256)</span>
+<span style="color:#839496;">        root2 = (-b_coeff - :math.sqrt(discriminant)) * inv_a |&gt; rem(256)</span>
+<span style="color:#839496;">        decoded =</span>
+<span style="color:#839496;">          case rem(a, 2) do</span>
+<span style="color:#839496;">            0 -&gt;</span>
+<span style="color:#839496;">              if rem(a * root1 * root1 + b * root1 + c_coeff, 256) == a do</span>
+<span style="color:#839496;">                root1</span>
+<span style="color:#839496;">              else</span>
+<span style="color:#839496;">                root2</span>
+<span style="color:#839496;">              end</span>
+<span style="color:#839496;">            _ -&gt;</span>
+<span style="color:#839496;">              if b &gt;= 0 do</span>
+<span style="color:#839496;">                root1</span>
+<span style="color:#839496;">              else</span>
+<span style="color:#839496;">                root2</span>
+<span style="color:#839496;">              end</span>
+<span style="color:#839496;">          end</span>
+<span style="color:#839496;">        Integer.to_charlist(decoded)</span>
+<span style="color:#839496;">    end</span>
+<span style="color:#839496;">  end</span>
+<span style="color:#839496;">end</span>
 
-<span style="color:#323232;">plaintext = &quot;Hello World!&quot;</span>
-<span style="color:#323232;">key_poly = {1, 0, 1}</span>
+<span style="color:#839496;">plaintext = &quot;Hello World!&quot;</span>
+<span style="color:#839496;">key_poly = {1, 0, 1}</span>
 
-<span style="color:#323232;">ciphertext = ShiftCipher.encode(plaintext, key_poly)</span>
-<span style="color:#323232;">decoded = ShiftCipher.decode(ciphertext, key_poly)</span>
+<span style="color:#839496;">ciphertext = ShiftCipher.encode(plaintext, key_poly)</span>
+<span style="color:#839496;">decoded = ShiftCipher.decode(ciphertext, key_poly)</span>
 
-<span style="color:#323232;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
-<span style="color:#323232;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
-<span style="color:#323232;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Plaintext: #{plaintext}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Ciphertext: #{ciphertext}&quot;)</span>
+<span style="color:#839496;">IO.puts(&quot;Decoded: #{decoded}&quot;)</span>
 
 
 

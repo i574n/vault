@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -616,6 +671,7 @@ function toggle() {
       <li><a href="#link-53">now make a rolling system for motorcycle travel (sao paulo ushuaia as example) (stop switching to en-us automatically)</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -623,12 +679,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -722,135 +781,135 @@ function toggle() {
 <h2 id = "link-11">provide a sample set for this property based test suggestion using Q# with respective F# equivalent code</h2>
 <p id = "para-77">&lt; For this sample set, we will use Q# to implement Grover’s algorithm and F# to run the property-based test.</p>
 <p id = "para-78">First, let’s create the Grover’s algorithm implementation in Q#. Create a new file called “Grover.qs” and add the following code:</p>
-<pre><span style="color:#323232;">namespace GroverAlgorithm {</span>
-<span style="color:#323232;">    open Microsoft.Quantum.Canon;</span>
-<span style="color:#323232;">    open Microsoft.Quantum.Intrinsic;</span>
-<span style="color:#323232;">    open Microsoft.Quantum.Measurement;</span>
+<pre><span style="color:#839496;">namespace GroverAlgorithm {</span>
+<span style="color:#839496;">    open Microsoft.Quantum.Canon;</span>
+<span style="color:#839496;">    open Microsoft.Quantum.Intrinsic;</span>
+<span style="color:#839496;">    open Microsoft.Quantum.Measurement;</span>
 
-<span style="color:#323232;">    operation ApplyOracle(qubits : Qubit[], marked : Int) : Unit {</span>
-<span style="color:#323232;">        if (marked == 1) {</span>
-<span style="color:#323232;">            X(qubits[0]);</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    operation ApplyOracle(qubits : Qubit[], marked : Int) : Unit {</span>
+<span style="color:#839496;">        if (marked == 1) {</span>
+<span style="color:#839496;">            X(qubits[0]);</span>
+<span style="color:#839496;">        }</span>
+<span style="color:#839496;">    }</span>
 
-<span style="color:#323232;">    operation ApplyGroverIteration(qubits : Qubit[], marked : Int) : Unit {</span>
-<span style="color:#323232;">        ApplyOracle(qubits, marked);</span>
-<span style="color:#323232;">        ApplyToEach(H, qubits);</span>
-<span style="color:#323232;">        ApplyToEach(X, qubits);</span>
-<span style="color:#323232;">        Controlled Z(Most(qubits), Tail(qubits));</span>
-<span style="color:#323232;">        ApplyToEach(X, qubits);</span>
-<span style="color:#323232;">        ApplyToEach(H, qubits);</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    operation ApplyGroverIteration(qubits : Qubit[], marked : Int) : Unit {</span>
+<span style="color:#839496;">        ApplyOracle(qubits, marked);</span>
+<span style="color:#839496;">        ApplyToEach(H, qubits);</span>
+<span style="color:#839496;">        ApplyToEach(X, qubits);</span>
+<span style="color:#839496;">        Controlled Z(Most(qubits), Tail(qubits));</span>
+<span style="color:#839496;">        ApplyToEach(X, qubits);</span>
+<span style="color:#839496;">        ApplyToEach(H, qubits);</span>
+<span style="color:#839496;">    }</span>
 
-<span style="color:#323232;">    operation RunGrover(marked : Int) : Int {</span>
-<span style="color:#323232;">        using (qubits = Qubit[3]) {</span>
-<span style="color:#323232;">            ApplyToEach(H, qubits);</span>
-<span style="color:#323232;">            ApplyGroverIteration(qubits, marked);</span>
-<span style="color:#323232;">            return ResultArrayAsInt(MultiM(qubits));</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">    operation RunGrover(marked : Int) : Int {</span>
+<span style="color:#839496;">        using (qubits = Qubit[3]) {</span>
+<span style="color:#839496;">            ApplyToEach(H, qubits);</span>
+<span style="color:#839496;">            ApplyGroverIteration(qubits, marked);</span>
+<span style="color:#839496;">            return ResultArrayAsInt(MultiM(qubits));</span>
+<span style="color:#839496;">        }</span>
+<span style="color:#839496;">    }</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-79">Now, let’s write the F# code for running the property-based test using the Q# Grover’s algorithm implementation. Create a new file called “GroverTest.fs” and add the following code:</p>
-<pre><span style="color:#323232;">open System</span>
-<span style="color:#323232;">open Microsoft.Quantum.Simulation.Core</span>
-<span style="color:#323232;">open Microsoft.Quantum.Simulation.Simulators</span>
-<span style="color:#323232;">open GroverAlgorithm</span>
+<pre><span style="color:#839496;">open System</span>
+<span style="color:#839496;">open Microsoft.Quantum.Simulation.Core</span>
+<span style="color:#839496;">open Microsoft.Quantum.Simulation.Simulators</span>
+<span style="color:#839496;">open GroverAlgorithm</span>
 
-<span style="color:#323232;">let randomNumberGenerator = Random()</span>
+<span style="color:#839496;">let randomNumberGenerator = Random()</span>
 
-<span style="color:#323232;">let randomOracle() =</span>
-<span style="color:#323232;">    randomNumberGenerator.Next(0, 8)</span>
+<span style="color:#839496;">let randomOracle() =</span>
+<span style="color:#839496;">    randomNumberGenerator.Next(0, 8)</span>
 
-<span style="color:#323232;">let runGroverSimulation marked =</span>
-<span style="color:#323232;">    let sim = new QuantumSimulator()</span>
-<span style="color:#323232;">    let task = RunGrover.Run(sim, marked)</span>
-<span style="color:#323232;">    task.Wait()</span>
-<span style="color:#323232;">    task.Result</span>
+<span style="color:#839496;">let runGroverSimulation marked =</span>
+<span style="color:#839496;">    let sim = new QuantumSimulator()</span>
+<span style="color:#839496;">    let task = RunGrover.Run(sim, marked)</span>
+<span style="color:#839496;">    task.Wait()</span>
+<span style="color:#839496;">    task.Result</span>
 
-<span style="color:#323232;">let classicalSuccessRate = 1.0 / 8.0</span>
+<span style="color:#839496;">let classicalSuccessRate = 1.0 / 8.0</span>
 
-<span style="color:#323232;">let testGrover (numTrials : int) =</span>
-<span style="color:#323232;">    let mutable successCount = 0</span>
-<span style="color:#323232;">    for i in 1..numTrials do</span>
-<span style="color:#323232;">        let marked = randomOracle()</span>
-<span style="color:#323232;">        let result = runGroverSimulation marked</span>
-<span style="color:#323232;">        if marked = result then</span>
-<span style="color:#323232;">            successCount &lt;- successCount + 1</span>
-<span style="color:#323232;">    let successRate = (float successCount) / (float numTrials)</span>
-<span style="color:#323232;">    successRate &gt; classicalSuccessRate</span>
+<span style="color:#839496;">let testGrover (numTrials : int) =</span>
+<span style="color:#839496;">    let mutable successCount = 0</span>
+<span style="color:#839496;">    for i in 1..numTrials do</span>
+<span style="color:#839496;">        let marked = randomOracle()</span>
+<span style="color:#839496;">        let result = runGroverSimulation marked</span>
+<span style="color:#839496;">        if marked = result then</span>
+<span style="color:#839496;">            successCount &lt;- successCount + 1</span>
+<span style="color:#839496;">    let successRate = (float successCount) / (float numTrials)</span>
+<span style="color:#839496;">    successRate &gt; classicalSuccessRate</span>
 
-<span style="color:#323232;">[&lt;EntryPoint&gt;]</span>
-<span style="color:#323232;">let main argv =</span>
-<span style="color:#323232;">    let numTrials = 100</span>
-<span style="color:#323232;">    let testResult = testGrover numTrials</span>
-<span style="color:#323232;">    printfn &quot;Grover&#39;s Algorithm Property-Based Test: %A&quot; testResult</span>
-<span style="color:#323232;">    0</span>
+<span style="color:#839496;">[&lt;EntryPoint&gt;]</span>
+<span style="color:#839496;">let main argv =</span>
+<span style="color:#839496;">    let numTrials = 100</span>
+<span style="color:#839496;">    let testResult = testGrover numTrials</span>
+<span style="color:#839496;">    printfn &quot;Grover&#39;s Algorithm Property-Based Test: %A&quot; testResult</span>
+<span style="color:#839496;">    0</span>
 
 </pre><p id = "para-80">This code will run Grover’s algorithm 100 times with random oracles and compare the success rate with the classical success rate (1/8). If the success rate of Grover’s algorithm is higher than the classical success rate, the test passes and prints “true,” otherwise, it prints “false.”</p>
 <p id = "para-81">To run this code, make sure you have installed the Quantum Development Kit for F#. Compile the files and execute the “GroverTest.fs” file. The output will show the result of the property-based test.</p>
 <h2 id = "link-12">are there equivalent rust crates for this kind of comparison? (classical 1/8 vs grover) if yes, provide a full sample with test cases</h2>
 <p id = "para-82">&lt; There is currently no direct equivalent to Q# and F# integration for implementing and testing quantum algorithms in Rust. However, you can use the “qoqo” crate to implement a simple quantum circuit that simulates Grover’s algorithm and compare its success rate with the classical success rate.</p>
 <p id = "para-83">First, add the necessary dependencies in your Cargo.toml file:</p>
-<pre><span style="color:#323232;">[dependencies]</span>
-<span style="color:#323232;">qoqo = &quot;0.8.0&quot;</span>
-<span style="color:#323232;">qoqo_calculator = &quot;0.8.1&quot;</span>
-<span style="color:#323232;">rand = &quot;0.8.6&quot;</span>
+<pre><span style="color:#839496;">[dependencies]</span>
+<span style="color:#839496;">qoqo = &quot;0.8.0&quot;</span>
+<span style="color:#839496;">qoqo_calculator = &quot;0.8.1&quot;</span>
+<span style="color:#839496;">rand = &quot;0.8.6&quot;</span>
 
 </pre><p id = "para-84">Now, create a new file called grover.rs and add the following code:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">qoqo::{</span>
-<span style="color:#323232;">    operations::{</span><span style="color:#0086b3;">CNOT</span><span style="color:#323232;">, H, Measure, Operation, PauliX, PauliZ, RotateAroundSphericalAxis},</span>
-<span style="color:#323232;">    Circuit, StateVectorSimulator,</span>
-<span style="color:#323232;">};</span>
-<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">qoqo_calculator::CalculatorFloat;</span>
-<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">rand::Rng;</span>
+<pre><span style="color:#859900;">use </span><span style="color:#839496;">qoqo::</span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    operations::</span><span style="color:#657b83;">{</span><span style="color:#cb4b16;">CNOT</span><span style="color:#839496;">, H, Measure, Operation, PauliX, PauliZ, RotateAroundSphericalAxis</span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Circuit, StateVectorSimulator,</span>
+<span style="color:#657b83;">}</span><span style="color:#839496;">;</span>
+<span style="color:#859900;">use </span><span style="color:#839496;">qoqo_calculator::CalculatorFloat;</span>
+<span style="color:#859900;">use </span><span style="color:#839496;">rand::Rng;</span>
 
-<span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">apply_oracle</span><span style="color:#323232;">(circuit: </span><span style="font-weight:bold;color:#a71d5d;">&amp;mut</span><span style="color:#323232;"> Circuit, marked: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">if</span><span style="color:#323232;"> marked </span><span style="font-weight:bold;color:#a71d5d;">== </span><span style="color:#0086b3;">1 </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">        circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">PauliX::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">fn </span><span style="color:#b58900;">apply_oracle</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">circuit</span><span style="color:#839496;">: </span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> Circuit, </span><span style="color:#268bd2;">marked</span><span style="color:#839496;">: </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">if</span><span style="color:#839496;"> marked </span><span style="color:#859900;">== </span><span style="color:#6c71c4;">1 </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">PauliX::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">apply_grover_iteration</span><span style="color:#323232;">(circuit: </span><span style="font-weight:bold;color:#a71d5d;">&amp;mut</span><span style="color:#323232;"> Circuit, marked: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) {</span>
-<span style="color:#323232;">    </span><span style="color:#62a35c;">apply_oracle</span><span style="color:#323232;">(circuit, marked);</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">H::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">PauliX::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">RotateAroundSphericalAxis::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, CalculatorFloat::</span><span style="color:#0086b3;">FRAC_PI</span><span style="color:#323232;">, CalculatorFloat::</span><span style="color:#0086b3;">ZERO</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">PauliX::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">H::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">fn </span><span style="color:#b58900;">apply_grover_iteration</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">circuit</span><span style="color:#839496;">: </span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> Circuit, </span><span style="color:#268bd2;">marked</span><span style="color:#839496;">: </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">apply_oracle</span><span style="color:#657b83;">(</span><span style="color:#839496;">circuit, marked</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">H::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">PauliX::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">RotateAroundSphericalAxis::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, CalculatorFloat::</span><span style="color:#cb4b16;">FRAC_PI</span><span style="color:#839496;">, CalculatorFloat::</span><span style="color:#cb4b16;">ZERO</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">PauliX::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">H::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">run_grover</span><span style="color:#323232;">(marked: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) -&gt; </span><span style="font-weight:bold;color:#a71d5d;">usize </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let mut</span><span style="color:#323232;"> circuit </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">Circuit::new();</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">H::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    </span><span style="color:#62a35c;">apply_grover_iteration</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut</span><span style="color:#323232;"> circuit, marked);</span>
-<span style="color:#323232;">    circuit </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#323232;">Measure::new(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">, </span><span style="color:#183691;">&quot;result&quot;</span><span style="color:#323232;">.</span><span style="color:#62a35c;">to_string</span><span style="color:#323232;">());</span>
+<span style="color:#268bd2;">fn </span><span style="color:#b58900;">run_grover</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">marked</span><span style="color:#839496;">: </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; </span><span style="color:#268bd2;">usize </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let </span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> circuit </span><span style="color:#859900;">= </span><span style="color:#839496;">Circuit::new</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">H::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">apply_grover_iteration</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> circuit, marked</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    circuit </span><span style="color:#859900;">+= </span><span style="color:#839496;">Measure::new</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#839496;">, &quot;</span><span style="color:#2aa198;">result</span><span style="color:#839496;">&quot;.</span><span style="color:#859900;">to_string</span><span style="color:#657b83;">())</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> statevector_simulator </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">StateVectorSimulator::new();</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> result </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> statevector_simulator.</span><span style="color:#62a35c;">run_circuit</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">circuit).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">();</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> statevector_simulator </span><span style="color:#859900;">= </span><span style="color:#839496;">StateVectorSimulator::new</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> result </span><span style="color:#859900;">=</span><span style="color:#839496;"> statevector_simulator.</span><span style="color:#859900;">run_circuit</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#839496;">circuit</span><span style="color:#657b83;">)</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">*</span><span style="color:#323232;">result.</span><span style="color:#62a35c;">get_bit_registers</span><span style="color:#323232;">().</span><span style="color:#62a35c;">get</span><span style="color:#323232;">(</span><span style="color:#183691;">&quot;result&quot;</span><span style="color:#323232;">).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">().</span><span style="color:#62a35c;">get</span><span style="color:#323232;">(</span><span style="color:#0086b3;">0</span><span style="color:#323232;">).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">() </span><span style="font-weight:bold;color:#a71d5d;">as usize</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">*</span><span style="color:#839496;">result.</span><span style="color:#859900;">get_bit_registers</span><span style="color:#657b83;">()</span><span style="color:#839496;">.</span><span style="color:#859900;">get</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">result</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">()</span><span style="color:#839496;">.</span><span style="color:#859900;">get</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#657b83;">)</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">() </span><span style="color:#859900;">as </span><span style="color:#268bd2;">usize</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">main</span><span style="color:#323232;">() {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> num_trials </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">100</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let mut</span><span style="color:#323232;"> rng </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">rand::thread_rng();</span>
+<span style="color:#268bd2;">fn </span><span style="color:#b58900;">main</span><span style="color:#657b83;">() {</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> num_trials </span><span style="color:#859900;">= </span><span style="color:#6c71c4;">100</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let </span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> rng </span><span style="color:#859900;">= </span><span style="color:#839496;">rand::thread_rng</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> classical_success_rate </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">1.0 </span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#0086b3;">8.0</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let mut</span><span style="color:#323232;"> success_count </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#0086b3;">0</span><span style="color:#323232;">;</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> classical_success_rate </span><span style="color:#859900;">= </span><span style="color:#6c71c4;">1.0 </span><span style="color:#859900;">/ </span><span style="color:#6c71c4;">8.0</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let </span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> success_count </span><span style="color:#859900;">= </span><span style="color:#6c71c4;">0</span><span style="color:#839496;">;</span>
 
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">for _ in </span><span style="color:#0086b3;">0</span><span style="font-weight:bold;color:#a71d5d;">..</span><span style="color:#323232;">num_trials {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> marked </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> rng.</span><span style="color:#62a35c;">gen_range</span><span style="color:#323232;">(</span><span style="color:#0086b3;">0</span><span style="font-weight:bold;color:#a71d5d;">..</span><span style="color:#0086b3;">8</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> result </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#62a35c;">run_grover</span><span style="color:#323232;">(marked);</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">if</span><span style="color:#323232;"> marked </span><span style="font-weight:bold;color:#a71d5d;">==</span><span style="color:#323232;"> result {</span>
-<span style="color:#323232;">            success_count </span><span style="font-weight:bold;color:#a71d5d;">+= </span><span style="color:#0086b3;">1</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">for _ in </span><span style="color:#6c71c4;">0</span><span style="color:#859900;">..</span><span style="color:#839496;">num_trials </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> marked </span><span style="color:#859900;">=</span><span style="color:#839496;"> rng.</span><span style="color:#859900;">gen_range</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">0</span><span style="color:#859900;">..</span><span style="color:#6c71c4;">8</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> result </span><span style="color:#859900;">= run_grover</span><span style="color:#657b83;">(</span><span style="color:#839496;">marked</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">if</span><span style="color:#839496;"> marked </span><span style="color:#859900;">==</span><span style="color:#839496;"> result </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            success_count </span><span style="color:#859900;">+= </span><span style="color:#6c71c4;">1</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> success_rate </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#323232;">(success_count </span><span style="font-weight:bold;color:#a71d5d;">as f64</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">/ </span><span style="color:#323232;">(num_trials </span><span style="font-weight:bold;color:#a71d5d;">as f64</span><span style="color:#323232;">);</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> test_result </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> success_rate </span><span style="font-weight:bold;color:#a71d5d;">&gt;</span><span style="color:#323232;"> classical_success_rate;</span>
-<span style="color:#323232;">    println!(</span><span style="color:#183691;">&quot;Grover&#39;s Algorithm Property-Based Test: </span><span style="color:#0086b3;">{}</span><span style="color:#183691;">&quot;</span><span style="color:#323232;">, test_result);</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> success_rate </span><span style="color:#859900;">= </span><span style="color:#657b83;">(</span><span style="color:#839496;">success_count </span><span style="color:#859900;">as </span><span style="color:#268bd2;">f64</span><span style="color:#657b83;">) </span><span style="color:#859900;">/ </span><span style="color:#657b83;">(</span><span style="color:#839496;">num_trials </span><span style="color:#859900;">as </span><span style="color:#268bd2;">f64</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> test_result </span><span style="color:#859900;">=</span><span style="color:#839496;"> success_rate </span><span style="color:#859900;">&gt;</span><span style="color:#839496;"> classical_success_rate;</span>
+<span style="color:#839496;">    </span><span style="color:#859900;">println!</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Grover&#39;s Algorithm Property-Based Test: </span><span style="color:#cb4b16;">{}</span><span style="color:#839496;">&quot;, test_result</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-85">This code will run Grover’s algorithm 100 times with random oracles and compare the success rate with the classical success rate (1/8). If the success rate of Grover’s algorithm is higher than the classical success rate, the test passes, and the output is “true”; otherwise, it prints “false.”</p>
 <p id = "para-86">Keep in mind that this implementation is a simplified version of Grover’s algorithm and is not as efficient as using a dedicated quantum programming language like Q#. The “qoqo” crate is a general-purpose quantum computing crate and might not have all the optimizations and features available in more specialized quantum programming languages.</p>
@@ -921,474 +980,474 @@ function toggle() {
 <p id = "para-144">Com esses passos, você pode criar uma narrativa multidimensional rica e envolvente, com eventos e desenvolvimentos ocorrendo em várias camadas simultaneamente. Essa abordagem permite que você explore diferentes aspectos da história e mantenha os leitores interessados e envolvidos ao longo de toda a trama.</p>
 <h2 id = "link-20">try a sample using prolog</h2>
 <p id = "para-145">&lt; Vamos criar um exemplo simples usando o Prolog para implementar um sistema de decisão baseado no lançamento de 2d6. No exemplo a seguir, usaremos apenas uma camada (enredo) para simplificar o código. Você pode estender este exemplo para incluir várias camadas, conforme descrito anteriormente.</p>
-<pre><span style="color:#323232;">% Definindo os fatos para </span><span style="font-weight:bold;color:#a71d5d;">as</span><span style="color:#323232;"> categorias com base nos resultados de 2d6</span>
-<span style="color:#323232;">evento(2, muito_negativo).</span>
-<span style="color:#323232;">evento(3, muito_negativo).</span>
-<span style="color:#323232;">evento(4, negativo).</span>
-<span style="color:#323232;">evento(5, negativo).</span>
-<span style="color:#323232;">evento(6, negativo).</span>
-<span style="color:#323232;">evento(7, neutro).</span>
-<span style="color:#323232;">evento(8, positivo).</span>
-<span style="color:#323232;">evento(9, positivo).</span>
-<span style="color:#323232;">evento(10, positivo).</span>
-<span style="color:#323232;">evento(11, muito_positivo).</span>
-<span style="color:#323232;">evento(12, muito_positivo).</span>
+<pre><span style="color:#839496;">% Definindo os fatos para </span><span style="color:#859900;">as</span><span style="color:#839496;"> categorias com base nos resultados de 2d6</span>
+<span style="color:#839496;">evento(2, muito_negativo).</span>
+<span style="color:#839496;">evento(3, muito_negativo).</span>
+<span style="color:#839496;">evento(4, negativo).</span>
+<span style="color:#839496;">evento(5, negativo).</span>
+<span style="color:#839496;">evento(6, negativo).</span>
+<span style="color:#839496;">evento(7, neutro).</span>
+<span style="color:#839496;">evento(8, positivo).</span>
+<span style="color:#839496;">evento(9, positivo).</span>
+<span style="color:#839496;">evento(10, positivo).</span>
+<span style="color:#839496;">evento(11, muito_positivo).</span>
+<span style="color:#839496;">evento(12, muito_positivo).</span>
 
-<span style="color:#323232;">% Exemplo de eventos possíveis</span>
-<span style="color:#323232;">muito_negativo(perde_objeto_valioso).</span>
-<span style="color:#323232;">muito_negativo(enfrenta_armadilha_perigosa).</span>
-<span style="color:#323232;">negativo(encontra_adversario).</span>
-<span style="color:#323232;">negativo(decisao_dificil_com_sacrificio).</span>
-<span style="color:#323232;">neutro(novo_aliado_e_novo_inimigo).</span>
-<span style="color:#323232;">neutro(informacoes_conflitantes_decidir_confianca).</span>
-<span style="color:#323232;">positivo(encontra_recurso_util).</span>
-<span style="color:#323232;">positivo(resolve_problema_avanca_jornada).</span>
-<span style="color:#323232;">muito_positivo(grande_vitoria_sobre_inimigo).</span>
-<span style="color:#323232;">muito_positivo(adquire_poder_ou_habilidade_especial).</span>
+<span style="color:#839496;">% Exemplo de eventos possíveis</span>
+<span style="color:#839496;">muito_negativo(perde_objeto_valioso).</span>
+<span style="color:#839496;">muito_negativo(enfrenta_armadilha_perigosa).</span>
+<span style="color:#839496;">negativo(encontra_adversario).</span>
+<span style="color:#839496;">negativo(decisao_dificil_com_sacrificio).</span>
+<span style="color:#839496;">neutro(novo_aliado_e_novo_inimigo).</span>
+<span style="color:#839496;">neutro(informacoes_conflitantes_decidir_confianca).</span>
+<span style="color:#839496;">positivo(encontra_recurso_util).</span>
+<span style="color:#839496;">positivo(resolve_problema_avanca_jornada).</span>
+<span style="color:#839496;">muito_positivo(grande_vitoria_sobre_inimigo).</span>
+<span style="color:#839496;">muito_positivo(adquire_poder_ou_habilidade_especial).</span>
 
-<span style="color:#323232;">% Função para gerar um número aleatório entre um intervalo (inclusivo)</span>
-<span style="color:#323232;">random_between(Lower, Upper, Value) :-</span>
-<span style="color:#323232;">    random(X),</span>
-<span style="color:#323232;">    Value is Lower + floor(X * (Upper - Lower + 1)).</span>
+<span style="color:#839496;">% Função para gerar um número aleatório entre um intervalo (inclusivo)</span>
+<span style="color:#839496;">random_between(Lower, Upper, Value) :-</span>
+<span style="color:#839496;">    random(X),</span>
+<span style="color:#839496;">    Value is Lower + floor(X * (Upper - Lower + 1)).</span>
 
-<span style="color:#323232;">% Função para lançar os 2d6 e determinar o evento resultante</span>
-<span style="color:#323232;">rolar_dados(EventoResultado) :-</span>
-<span style="color:#323232;">    random_between(1, 6, Dado1),</span>
-<span style="color:#323232;">    random_between(1, 6, Dado2),</span>
-<span style="color:#323232;">    Soma is Dado1 + Dado2,</span>
-<span style="color:#323232;">    evento(Soma, Categoria),</span>
-<span style="color:#323232;">    call(Categoria, EventoResultado).</span>
+<span style="color:#839496;">% Função para lançar os 2d6 e determinar o evento resultante</span>
+<span style="color:#839496;">rolar_dados(EventoResultado) :-</span>
+<span style="color:#839496;">    random_between(1, 6, Dado1),</span>
+<span style="color:#839496;">    random_between(1, 6, Dado2),</span>
+<span style="color:#839496;">    Soma is Dado1 + Dado2,</span>
+<span style="color:#839496;">    evento(Soma, Categoria),</span>
+<span style="color:#839496;">    call(Categoria, EventoResultado).</span>
 
 </pre><p id = "para-146">Para usar este exemplo no Prolog, carregue o código em um arquivo (por exemplo, diceroll.pl) e execute o interpretador do Prolog. Em seguida, consulte o arquivo e use o predicado rolar_dados/1 para determinar o evento resultante com base no lançamento dos dados:</p>
-<pre><span style="color:#0086b3;">?-</span><span style="color:#323232;"> consult(</span><span style="color:#183691;">&#39;diceroll.pl&#39;</span><span style="color:#323232;">).</span>
-<span style="color:#0086b3;">true</span><span style="color:#323232;">.</span>
+<pre><span style="color:#6c71c4;">?-</span><span style="color:#839496;"> consult(&#39;</span><span style="color:#2aa198;">diceroll.pl</span><span style="color:#839496;">&#39;).</span>
+<span style="color:#b58900;">true</span><span style="color:#839496;">.</span>
 
-<span style="color:#0086b3;">?-</span><span style="color:#323232;"> rolar_dados(</span><span style="color:#0086b3;">Evento</span><span style="color:#323232;">).</span>
-<span style="color:#323232;">Evento </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> encontra_recurso_util.</span>
+<span style="color:#6c71c4;">?-</span><span style="color:#839496;"> rolar_dados(</span><span style="color:#b58900;">Evento</span><span style="color:#839496;">).</span>
+<span style="color:#b58900;">Evento </span><span style="color:#657b83;">=</span><span style="color:#839496;"> encontra_recurso_util.</span>
 
 </pre><p id = "para-147">Este exemplo demonstra como criar um sistema de decisão simples usando Prolog. Você pode estender este código para incluir múltiplas camadas e criar uma narrativa mais rica e complexa, conforme descrito anteriormente.</p>
 <h2 id = "link-21">domain model a complex version using F# and advanced discriminated union relationships</h2>
 <p id = "para-148">&lt; In F#, we can create a complex version of the dice-rolling decision system using discriminated unions (DUs) and advanced DU relationships. Here’s a sample domain model that includes different layers of the narrative and their corresponding events:</p>
-<pre><span style="color:#323232;">open System</span>
+<pre><span style="color:#839496;">open System</span>
 
-<span style="color:#323232;">type CharacterEvent =</span>
-<span style="color:#323232;">    | MeetNewAlly</span>
-<span style="color:#323232;">    | FaceAdversary</span>
-<span style="color:#323232;">    | DevelopRelationship of (CharacterEvent * CharacterEvent)</span>
-<span style="color:#323232;">    | EndRelationship</span>
+<span style="color:#839496;">type CharacterEvent =</span>
+<span style="color:#839496;">    | MeetNewAlly</span>
+<span style="color:#839496;">    | FaceAdversary</span>
+<span style="color:#839496;">    | DevelopRelationship of (CharacterEvent * CharacterEvent)</span>
+<span style="color:#839496;">    | EndRelationship</span>
 
-<span style="color:#323232;">type PlotEvent =</span>
-<span style="color:#323232;">    | MajorPlotTwist</span>
-<span style="color:#323232;">    | MinorPlotTwist</span>
-<span style="color:#323232;">    | NewObjective</span>
-<span style="color:#323232;">    | ConflictResolution</span>
-<span style="color:#323232;">    | NestedEvent of (PlotEvent * PlotEvent)</span>
+<span style="color:#839496;">type PlotEvent =</span>
+<span style="color:#839496;">    | MajorPlotTwist</span>
+<span style="color:#839496;">    | MinorPlotTwist</span>
+<span style="color:#839496;">    | NewObjective</span>
+<span style="color:#839496;">    | ConflictResolution</span>
+<span style="color:#839496;">    | NestedEvent of (PlotEvent * PlotEvent)</span>
 
-<span style="color:#323232;">type SettingEvent =</span>
-<span style="color:#323232;">    | ChangeOfLocation</span>
-<span style="color:#323232;">    | WeatherChange</span>
-<span style="color:#323232;">    | TimeProgress</span>
-<span style="color:#323232;">    | NewCulturalContext</span>
+<span style="color:#839496;">type SettingEvent =</span>
+<span style="color:#839496;">    | ChangeOfLocation</span>
+<span style="color:#839496;">    | WeatherChange</span>
+<span style="color:#839496;">    | TimeProgress</span>
+<span style="color:#839496;">    | NewCulturalContext</span>
 
-<span style="color:#323232;">type EmotionalEvent =</span>
-<span style="color:#323232;">    | PersonalGrowth</span>
-<span style="color:#323232;">    | Setback</span>
-<span style="color:#323232;">    | EmotionalRevelation</span>
-<span style="color:#323232;">    | InternalConflict</span>
+<span style="color:#839496;">type EmotionalEvent =</span>
+<span style="color:#839496;">    | PersonalGrowth</span>
+<span style="color:#839496;">    | Setback</span>
+<span style="color:#839496;">    | EmotionalRevelation</span>
+<span style="color:#839496;">    | InternalConflict</span>
 
-<span style="color:#323232;">type Layer =</span>
-<span style="color:#323232;">    | CharacterLayer of CharacterEvent</span>
-<span style="color:#323232;">    | PlotLayer of PlotEvent</span>
-<span style="color:#323232;">    | SettingLayer of SettingEvent</span>
-<span style="color:#323232;">    | EmotionalLayer of EmotionalEvent</span>
+<span style="color:#839496;">type Layer =</span>
+<span style="color:#839496;">    | CharacterLayer of CharacterEvent</span>
+<span style="color:#839496;">    | PlotLayer of PlotEvent</span>
+<span style="color:#839496;">    | SettingLayer of SettingEvent</span>
+<span style="color:#839496;">    | EmotionalLayer of EmotionalEvent</span>
 
-<span style="color:#323232;">let rollDice () = Random().Next(1, 7)</span>
+<span style="color:#839496;">let rollDice () = Random().Next(1, 7)</span>
 
-<span style="color:#323232;">let getEvent (diceSum: int) =</span>
-<span style="color:#323232;">    match diceSum with</span>
-<span style="color:#323232;">    | 2 | 3 -&gt; &quot;very_negative&quot;</span>
-<span style="color:#323232;">    | 4 | 5 | 6 -&gt; &quot;negative&quot;</span>
-<span style="color:#323232;">    | 7 -&gt; &quot;neutral&quot;</span>
-<span style="color:#323232;">    | 8 | 9 | 10 -&gt; &quot;positive&quot;</span>
-<span style="color:#323232;">    | 11 | 12 -&gt; &quot;very_positive&quot;</span>
-<span style="color:#323232;">    | _ -&gt; &quot;error&quot;</span>
+<span style="color:#839496;">let getEvent (diceSum: int) =</span>
+<span style="color:#839496;">    match diceSum with</span>
+<span style="color:#839496;">    | 2 | 3 -&gt; &quot;very_negative&quot;</span>
+<span style="color:#839496;">    | 4 | 5 | 6 -&gt; &quot;negative&quot;</span>
+<span style="color:#839496;">    | 7 -&gt; &quot;neutral&quot;</span>
+<span style="color:#839496;">    | 8 | 9 | 10 -&gt; &quot;positive&quot;</span>
+<span style="color:#839496;">    | 11 | 12 -&gt; &quot;very_positive&quot;</span>
+<span style="color:#839496;">    | _ -&gt; &quot;error&quot;</span>
 
-<span style="color:#323232;">let roll2d6Event () =</span>
-<span style="color:#323232;">    let dice1 = rollDice()</span>
-<span style="color:#323232;">    let dice2 = rollDice()</span>
-<span style="color:#323232;">    let diceSum = dice1 + dice2</span>
-<span style="color:#323232;">    getEvent diceSum</span>
+<span style="color:#839496;">let roll2d6Event () =</span>
+<span style="color:#839496;">    let dice1 = rollDice()</span>
+<span style="color:#839496;">    let dice2 = rollDice()</span>
+<span style="color:#839496;">    let diceSum = dice1 + dice2</span>
+<span style="color:#839496;">    getEvent diceSum</span>
 
-<span style="color:#323232;">let decideLayerEvent layer eventCategory =</span>
-<span style="color:#323232;">    match (layer, eventCategory) with</span>
-<span style="color:#323232;">    | (CharacterLayer, &quot;very_negative&quot;) -&gt; CharacterLayer MeetNewAlly</span>
-<span style="color:#323232;">    | (CharacterLayer, &quot;negative&quot;) -&gt; CharacterLayer FaceAdversary</span>
-<span style="color:#323232;">    | (CharacterLayer, &quot;neutral&quot;) -&gt; CharacterLayer (DevelopRelationship (MeetNewAlly, FaceAdversary))</span>
-<span style="color:#323232;">    | (CharacterLayer, &quot;positive&quot;) -&gt; CharacterLayer EndRelationship</span>
-<span style="color:#323232;">    | (CharacterLayer, &quot;very_positive&quot;) -&gt; CharacterLayer MeetNewAlly</span>
-<span style="color:#323232;">    | (PlotLayer, &quot;very_negative&quot;) -&gt; PlotLayer MajorPlotTwist</span>
-<span style="color:#323232;">    | (PlotLayer, &quot;negative&quot;) -&gt; PlotLayer MinorPlotTwist</span>
-<span style="color:#323232;">    | (PlotLayer, &quot;neutral&quot;) -&gt; PlotLayer NewObjective</span>
-<span style="color:#323232;">    | (PlotLayer, &quot;positive&quot;) -&gt; PlotLayer ConflictResolution</span>
-<span style="color:#323232;">    | (PlotLayer, &quot;very_positive&quot;) -&gt; PlotLayer (NestedEvent (NewObjective, ConflictResolution))</span>
-<span style="color:#323232;">    | (SettingLayer, &quot;very_negative&quot;) -&gt; SettingLayer ChangeOfLocation</span>
-<span style="color:#323232;">    | (SettingLayer, &quot;negative&quot;) -&gt; SettingLayer WeatherChange</span>
-<span style="color:#323232;">    | (SettingLayer, &quot;neutral&quot;) -&gt; SettingLayer TimeProgress</span>
-<span style="color:#323232;">    | (SettingLayer, &quot;positive&quot;) -&gt; SettingLayer NewCulturalContext</span>
-<span style="color:#323232;">    | (SettingLayer, &quot;very_positive&quot;) -&gt; SettingLayer ChangeOfLocation</span>
-<span style="color:#323232;">    | (EmotionalLayer, &quot;very_negative&quot;) -&gt; EmotionalLayer PersonalGrowth</span>
-<span style="color:#323232;">    | (EmotionalLayer, &quot;negative&quot;) -&gt; EmotionalLayer Setback</span>
-<span style="color:#323232;">    | (EmotionalLayer, &quot;neutral&quot;) -&gt; EmotionalLayer EmotionalRevelation</span>
-<span style="color:#323232;">    | (EmotionalLayer, &quot;positive&quot;) -&gt; EmotionalLayer InternalConflict</span>
-<span style="color:#323232;">    | (EmotionalLayer, &quot;very_positive&quot;) -&gt; EmotionalLayer PersonalGrowth</span>
-<span style="color:#323232;">    | _ -&gt; failwith &quot;Invalid layer or event category&quot;</span>
+<span style="color:#839496;">let decideLayerEvent layer eventCategory =</span>
+<span style="color:#839496;">    match (layer, eventCategory) with</span>
+<span style="color:#839496;">    | (CharacterLayer, &quot;very_negative&quot;) -&gt; CharacterLayer MeetNewAlly</span>
+<span style="color:#839496;">    | (CharacterLayer, &quot;negative&quot;) -&gt; CharacterLayer FaceAdversary</span>
+<span style="color:#839496;">    | (CharacterLayer, &quot;neutral&quot;) -&gt; CharacterLayer (DevelopRelationship (MeetNewAlly, FaceAdversary))</span>
+<span style="color:#839496;">    | (CharacterLayer, &quot;positive&quot;) -&gt; CharacterLayer EndRelationship</span>
+<span style="color:#839496;">    | (CharacterLayer, &quot;very_positive&quot;) -&gt; CharacterLayer MeetNewAlly</span>
+<span style="color:#839496;">    | (PlotLayer, &quot;very_negative&quot;) -&gt; PlotLayer MajorPlotTwist</span>
+<span style="color:#839496;">    | (PlotLayer, &quot;negative&quot;) -&gt; PlotLayer MinorPlotTwist</span>
+<span style="color:#839496;">    | (PlotLayer, &quot;neutral&quot;) -&gt; PlotLayer NewObjective</span>
+<span style="color:#839496;">    | (PlotLayer, &quot;positive&quot;) -&gt; PlotLayer ConflictResolution</span>
+<span style="color:#839496;">    | (PlotLayer, &quot;very_positive&quot;) -&gt; PlotLayer (NestedEvent (NewObjective, ConflictResolution))</span>
+<span style="color:#839496;">    | (SettingLayer, &quot;very_negative&quot;) -&gt; SettingLayer ChangeOfLocation</span>
+<span style="color:#839496;">    | (SettingLayer, &quot;negative&quot;) -&gt; SettingLayer WeatherChange</span>
+<span style="color:#839496;">    | (SettingLayer, &quot;neutral&quot;) -&gt; SettingLayer TimeProgress</span>
+<span style="color:#839496;">    | (SettingLayer, &quot;positive&quot;) -&gt; SettingLayer NewCulturalContext</span>
+<span style="color:#839496;">    | (SettingLayer, &quot;very_positive&quot;) -&gt; SettingLayer ChangeOfLocation</span>
+<span style="color:#839496;">    | (EmotionalLayer, &quot;very_negative&quot;) -&gt; EmotionalLayer PersonalGrowth</span>
+<span style="color:#839496;">    | (EmotionalLayer, &quot;negative&quot;) -&gt; EmotionalLayer Setback</span>
+<span style="color:#839496;">    | (EmotionalLayer, &quot;neutral&quot;) -&gt; EmotionalLayer EmotionalRevelation</span>
+<span style="color:#839496;">    | (EmotionalLayer, &quot;positive&quot;) -&gt; EmotionalLayer InternalConflict</span>
+<span style="color:#839496;">    | (EmotionalLayer, &quot;very_positive&quot;) -&gt; EmotionalLayer PersonalGrowth</span>
+<span style="color:#839496;">    | _ -&gt; failwith &quot;Invalid layer or event category&quot;</span>
 
-<span style="color:#323232;">let result = roll2d6Event()</span>
-<span style="color:#323232;">let characterEvent = decideLayerEvent (CharacterLayer MeetNewAlly) result</span>
-<span style="color:#323232;">let plotEvent = decideEvent (PlotLayer MajorPlotTwist) result</span>
-<span style="color:#323232;">let settingEvent = decideLayerEvent (SettingLayer ChangeOfLocation) result</span>
-<span style="color:#323232;">let emotionalEvent = decideLayerEvent (EmotionalLayer PersonalGrowth) result</span>
+<span style="color:#839496;">let result = roll2d6Event()</span>
+<span style="color:#839496;">let characterEvent = decideLayerEvent (CharacterLayer MeetNewAlly) result</span>
+<span style="color:#839496;">let plotEvent = decideEvent (PlotLayer MajorPlotTwist) result</span>
+<span style="color:#839496;">let settingEvent = decideLayerEvent (SettingLayer ChangeOfLocation) result</span>
+<span style="color:#839496;">let emotionalEvent = decideLayerEvent (EmotionalLayer PersonalGrowth) result</span>
 
-<span style="color:#323232;">// Print the results</span>
-<span style="color:#323232;">printfn &quot;Rolled event category: %s&quot; result</span>
-<span style="color:#323232;">printfn &quot;Character event: %A&quot; characterEvent</span>
-<span style="color:#323232;">printfn &quot;Plot event: %A&quot; plotEvent</span>
-<span style="color:#323232;">printfn &quot;Setting event: %A&quot; settingEvent</span>
-<span style="color:#323232;">printfn &quot;Emotional event: %A&quot; emotionalEvent</span>
+<span style="color:#839496;">// Print the results</span>
+<span style="color:#839496;">printfn &quot;Rolled event category: %s&quot; result</span>
+<span style="color:#839496;">printfn &quot;Character event: %A&quot; characterEvent</span>
+<span style="color:#839496;">printfn &quot;Plot event: %A&quot; plotEvent</span>
+<span style="color:#839496;">printfn &quot;Setting event: %A&quot; settingEvent</span>
+<span style="color:#839496;">printfn &quot;Emotional event: %A&quot; emotionalEvent</span>
 
 </pre><p id = "para-149">This example shows how to use F# and advanced discriminated union relationships to model a complex version of the dice-rolling decision system. We’ve defined different layers of the narrative and their corresponding events, and used a decision function to determine the specific events based on the dice roll result.</p>
 <p id = "para-150">You can extend this model by adding more layers and events or by adjusting the relationships between them to create an even more complex and rich narrative.</p>
 <h2 id = "link-22">that’s almost there, but still not it. leave the functions out and focus only in the discrimination unions web this time. make it a manhwa with elements of isekai, litrpg, josie ecchi, demons, etc</h2>
 <p id = "para-151">&lt; Here’s a domain model that focuses only on the discriminated unions, encompassing elements of isekai, litRPG, josei, ecchi, demons, and other factors that you’ve mentioned. This model represents the building blocks for a rich and complex manhwa narrative.</p>
-<pre><span style="color:#323232;">type IsekaiOrigin =</span>
-<span style="color:#323232;">    | Reincarnation</span>
-<span style="color:#323232;">    | Summoned</span>
-<span style="color:#323232;">    | Portal</span>
-<span style="color:#323232;">    | VirtualReality</span>
+<pre><span style="color:#839496;">type IsekaiOrigin =</span>
+<span style="color:#839496;">    | Reincarnation</span>
+<span style="color:#839496;">    | Summoned</span>
+<span style="color:#839496;">    | Portal</span>
+<span style="color:#839496;">    | VirtualReality</span>
 
-<span style="color:#323232;">type LitRPGMechanic =</span>
-<span style="color:#323232;">    | LevelUp</span>
-<span style="color:#323232;">    | SkillSystem</span>
-<span style="color:#323232;">    | ItemUpgrade</span>
-<span style="color:#323232;">    | QuestSystem</span>
+<span style="color:#839496;">type LitRPGMechanic =</span>
+<span style="color:#839496;">    | LevelUp</span>
+<span style="color:#839496;">    | SkillSystem</span>
+<span style="color:#839496;">    | ItemUpgrade</span>
+<span style="color:#839496;">    | QuestSystem</span>
 
-<span style="color:#323232;">type DemonicBeing =</span>
-<span style="color:#323232;">    | DemonLord</span>
-<span style="color:#323232;">    | LesserDemon</span>
-<span style="color:#323232;">    | DemonHunter</span>
-<span style="color:#323232;">    | CursedArtifact</span>
+<span style="color:#839496;">type DemonicBeing =</span>
+<span style="color:#839496;">    | DemonLord</span>
+<span style="color:#839496;">    | LesserDemon</span>
+<span style="color:#839496;">    | DemonHunter</span>
+<span style="color:#839496;">    | CursedArtifact</span>
 
-<span style="color:#323232;">type EcchiContent =</span>
-<span style="color:#323232;">    | FanService</span>
-<span style="color:#323232;">    | LoveTriangle</span>
-<span style="color:#323232;">    | AccidentalPervert</span>
-<span style="color:#323232;">    | Innuendo</span>
+<span style="color:#839496;">type EcchiContent =</span>
+<span style="color:#839496;">    | FanService</span>
+<span style="color:#839496;">    | LoveTriangle</span>
+<span style="color:#839496;">    | AccidentalPervert</span>
+<span style="color:#839496;">    | Innuendo</span>
 
-<span style="color:#323232;">type JoseiTheme =</span>
-<span style="color:#323232;">    | Romance</span>
-<span style="color:#323232;">    | PersonalGrowth</span>
-<span style="color:#323232;">    | Career</span>
-<span style="color:#323232;">    | Friendship</span>
+<span style="color:#839496;">type JoseiTheme =</span>
+<span style="color:#839496;">    | Romance</span>
+<span style="color:#839496;">    | PersonalGrowth</span>
+<span style="color:#839496;">    | Career</span>
+<span style="color:#839496;">    | Friendship</span>
 
-<span style="color:#323232;">type Setting =</span>
-<span style="color:#323232;">    | FantasyWorld</span>
-<span style="color:#323232;">    | ModernWorld</span>
-<span style="color:#323232;">    | PostApocalypticWorld</span>
-<span style="color:#323232;">    | Space</span>
+<span style="color:#839496;">type Setting =</span>
+<span style="color:#839496;">    | FantasyWorld</span>
+<span style="color:#839496;">    | ModernWorld</span>
+<span style="color:#839496;">    | PostApocalypticWorld</span>
+<span style="color:#839496;">    | Space</span>
 
-<span style="color:#323232;">type Character =</span>
-<span style="color:#323232;">    | Protagonist</span>
-<span style="color:#323232;">    | Antagonist</span>
-<span style="color:#323232;">    | Sidekick</span>
-<span style="color:#323232;">    | LoveInterest</span>
+<span style="color:#839496;">type Character =</span>
+<span style="color:#839496;">    | Protagonist</span>
+<span style="color:#839496;">    | Antagonist</span>
+<span style="color:#839496;">    | Sidekick</span>
+<span style="color:#839496;">    | LoveInterest</span>
 
-<span style="color:#323232;">type Event =</span>
-<span style="color:#323232;">    | CharacterEvent of Character</span>
-<span style="color:#323232;">    | IsekaiEvent of IsekaiOrigin</span>
-<span style="color:#323232;">    | LitRPGEvent of LitRPGMechanic</span>
-<span style="color:#323232;">    | DemonicEvent of DemonicBeing</span>
-<span style="color:#323232;">    | EcchiEvent of EcchiContent</span>
-<span style="color:#323232;">    | JoseiEvent of JoseiTheme</span>
-<span style="color:#323232;">    | SettingEvent of Setting</span>
+<span style="color:#839496;">type Event =</span>
+<span style="color:#839496;">    | CharacterEvent of Character</span>
+<span style="color:#839496;">    | IsekaiEvent of IsekaiOrigin</span>
+<span style="color:#839496;">    | LitRPGEvent of LitRPGMechanic</span>
+<span style="color:#839496;">    | DemonicEvent of DemonicBeing</span>
+<span style="color:#839496;">    | EcchiEvent of EcchiContent</span>
+<span style="color:#839496;">    | JoseiEvent of JoseiTheme</span>
+<span style="color:#839496;">    | SettingEvent of Setting</span>
 
 </pre><p id = "para-152">These discriminated unions define various aspects of the manhwa’s narrative, such as isekai origins, litRPG mechanics, demonic beings, ecchi content, and josei themes. You can use these building blocks to create complex storylines and interactions between characters and events within your manhwa.</p>
 <h2 id = "link-23">intermingle them in a single system using pt-br, with intricate and recursive discriminated union relationships this time</h2>
 <p id = "para-153">&lt; Aqui está um modelo de domínio em F# que se concentra apenas nas uniões discriminadas, entrelaçando elementos de isekai, litRPG, josei, ecchi, demônios e outros fatores mencionados em um único sistema. Este modelo representa os blocos de construção para uma narrativa rica e complexa de um manhwa.</p>
-<pre><span style="color:#323232;">type OrigemIsekai =</span>
-<span style="color:#323232;">    | Reencarnação</span>
-<span style="color:#323232;">    | Invocação</span>
-<span style="color:#323232;">    | Portal</span>
-<span style="color:#323232;">    | RealidadeVirtual</span>
+<pre><span style="color:#839496;">type OrigemIsekai =</span>
+<span style="color:#839496;">    | Reencarnação</span>
+<span style="color:#839496;">    | Invocação</span>
+<span style="color:#839496;">    | Portal</span>
+<span style="color:#839496;">    | RealidadeVirtual</span>
 
-<span style="color:#323232;">type MecânicaLitRPG =</span>
-<span style="color:#323232;">    | AumentoDeNível</span>
-<span style="color:#323232;">    | SistemaDeHabilidades</span>
-<span style="color:#323232;">    | MelhoriaDeItem</span>
-<span style="color:#323232;">    | SistemaDeMissões</span>
+<span style="color:#839496;">type MecânicaLitRPG =</span>
+<span style="color:#839496;">    | AumentoDeNível</span>
+<span style="color:#839496;">    | SistemaDeHabilidades</span>
+<span style="color:#839496;">    | MelhoriaDeItem</span>
+<span style="color:#839496;">    | SistemaDeMissões</span>
 
-<span style="color:#323232;">type SerDemoníaco =</span>
-<span style="color:#323232;">    | LordeDemônio</span>
-<span style="color:#323232;">    | DemônioMenor</span>
-<span style="color:#323232;">    | CaçadorDeDemônios</span>
-<span style="color:#323232;">    | ArtefatoAmaldiçoado</span>
+<span style="color:#839496;">type SerDemoníaco =</span>
+<span style="color:#839496;">    | LordeDemônio</span>
+<span style="color:#839496;">    | DemônioMenor</span>
+<span style="color:#839496;">    | CaçadorDeDemônios</span>
+<span style="color:#839496;">    | ArtefatoAmaldiçoado</span>
 
-<span style="color:#323232;">type ConteúdoEcchi =</span>
-<span style="color:#323232;">    | FanService</span>
-<span style="color:#323232;">    | TriânguloAmoroso</span>
-<span style="color:#323232;">    | PervertidoAcidental</span>
-<span style="color:#323232;">    | Insinuação</span>
+<span style="color:#839496;">type ConteúdoEcchi =</span>
+<span style="color:#839496;">    | FanService</span>
+<span style="color:#839496;">    | TriânguloAmoroso</span>
+<span style="color:#839496;">    | PervertidoAcidental</span>
+<span style="color:#839496;">    | Insinuação</span>
 
-<span style="color:#323232;">type TemaJosei =</span>
-<span style="color:#323232;">    | Romance</span>
-<span style="color:#323232;">    | CrescimentoPessoal</span>
-<span style="color:#323232;">    | Carreira</span>
-<span style="color:#323232;">    | Amizade</span>
+<span style="color:#839496;">type TemaJosei =</span>
+<span style="color:#839496;">    | Romance</span>
+<span style="color:#839496;">    | CrescimentoPessoal</span>
+<span style="color:#839496;">    | Carreira</span>
+<span style="color:#839496;">    | Amizade</span>
 
-<span style="color:#323232;">type Ambiente =</span>
-<span style="color:#323232;">    | MundoFantasia</span>
-<span style="color:#323232;">    | MundoModerno</span>
-<span style="color:#323232;">    | MundoPósApocalíptico</span>
-<span style="color:#323232;">    | Espaço</span>
+<span style="color:#839496;">type Ambiente =</span>
+<span style="color:#839496;">    | MundoFantasia</span>
+<span style="color:#839496;">    | MundoModerno</span>
+<span style="color:#839496;">    | MundoPósApocalíptico</span>
+<span style="color:#839496;">    | Espaço</span>
 
-<span style="color:#323232;">type Personagem =</span>
-<span style="color:#323232;">    | Protagonista</span>
-<span style="color:#323232;">    | Antagonista</span>
-<span style="color:#323232;">    | Companheiro</span>
-<span style="color:#323232;">    | InteresseAmoroso</span>
+<span style="color:#839496;">type Personagem =</span>
+<span style="color:#839496;">    | Protagonista</span>
+<span style="color:#839496;">    | Antagonista</span>
+<span style="color:#839496;">    | Companheiro</span>
+<span style="color:#839496;">    | InteresseAmoroso</span>
 
-<span style="color:#323232;">type Evento =</span>
-<span style="color:#323232;">    | EventoPersonagem of Personagem</span>
-<span style="color:#323232;">    | EventoIsekai of OrigemIsekai</span>
-<span style="color:#323232;">    | EventoLitRPG of MecânicaLitRPG</span>
-<span style="color:#323232;">    | EventoDemônio of SerDemoníaco</span>
-<span style="color:#323232;">    | EventoEcchi of ConteúdoEcchi</span>
-<span style="color:#323232;">    | EventoJosei of TemaJosei</span>
-<span style="color:#323232;">    | EventoAmbiente of Ambiente</span>
-<span style="color:#323232;">    | EventoComposto of (Evento * Evento)</span>
+<span style="color:#839496;">type Evento =</span>
+<span style="color:#839496;">    | EventoPersonagem of Personagem</span>
+<span style="color:#839496;">    | EventoIsekai of OrigemIsekai</span>
+<span style="color:#839496;">    | EventoLitRPG of MecânicaLitRPG</span>
+<span style="color:#839496;">    | EventoDemônio of SerDemoníaco</span>
+<span style="color:#839496;">    | EventoEcchi of ConteúdoEcchi</span>
+<span style="color:#839496;">    | EventoJosei of TemaJosei</span>
+<span style="color:#839496;">    | EventoAmbiente of Ambiente</span>
+<span style="color:#839496;">    | EventoComposto of (Evento * Evento)</span>
 
 </pre><p id = "para-154">Essas uniões discriminadas definem vários aspectos da narrativa do manhwa, como origens isekai, mecânicas litRPG, seres demoníacos, conteúdo ecchi e temas josei. Além disso, incluímos um tipo de EventoComposto que permite que dois eventos sejam combinados de forma recursiva, criando uma relação mais complexa entre os eventos.</p>
 <p id = "para-155">Você pode usar esses blocos de construção para criar tramas complexas e interações entre personagens e eventos dentro do seu manhwa.</p>
 <h2 id = "link-24">ok let event be the start them. introduce another major type with its siblings</h2>
 <p id = "para-156">&lt; Vamos introduzir um novo tipo principal chamado “Elemento” e seus subtipos, que podem ser combinados com os eventos para adicionar mais complexidade à narrativa do manhwa.</p>
-<pre><span style="color:#323232;">type ElementoMágico =</span>
-<span style="color:#323232;">    | Fogo</span>
-<span style="color:#323232;">    | Água</span>
-<span style="color:#323232;">    | Terra</span>
-<span style="color:#323232;">    | Ar</span>
-<span style="color:#323232;">    | Luz</span>
-<span style="color:#323232;">    | Trevas</span>
+<pre><span style="color:#839496;">type ElementoMágico =</span>
+<span style="color:#839496;">    | Fogo</span>
+<span style="color:#839496;">    | Água</span>
+<span style="color:#839496;">    | Terra</span>
+<span style="color:#839496;">    | Ar</span>
+<span style="color:#839496;">    | Luz</span>
+<span style="color:#839496;">    | Trevas</span>
 
-<span style="color:#323232;">type HabilidadeEspecial =</span>
-<span style="color:#323232;">    | SuperForça</span>
-<span style="color:#323232;">    | Telepatia</span>
-<span style="color:#323232;">    | Invisibilidade</span>
-<span style="color:#323232;">    | Teletransporte</span>
-<span style="color:#323232;">    | Regeneração</span>
+<span style="color:#839496;">type HabilidadeEspecial =</span>
+<span style="color:#839496;">    | SuperForça</span>
+<span style="color:#839496;">    | Telepatia</span>
+<span style="color:#839496;">    | Invisibilidade</span>
+<span style="color:#839496;">    | Teletransporte</span>
+<span style="color:#839496;">    | Regeneração</span>
 
-<span style="color:#323232;">type Conflito =</span>
-<span style="color:#323232;">    | ConflitoInterno</span>
-<span style="color:#323232;">    | ConflitoExterno</span>
-<span style="color:#323232;">    | ConflitoEntrePersonagens</span>
-<span style="color:#323232;">    | ConflitoComASociedade</span>
+<span style="color:#839496;">type Conflito =</span>
+<span style="color:#839496;">    | ConflitoInterno</span>
+<span style="color:#839496;">    | ConflitoExterno</span>
+<span style="color:#839496;">    | ConflitoEntrePersonagens</span>
+<span style="color:#839496;">    | ConflitoComASociedade</span>
 
-<span style="color:#323232;">type Relacionamento =</span>
-<span style="color:#323232;">    | Aliança</span>
-<span style="color:#323232;">    | Rivalidade</span>
-<span style="color:#323232;">    | Amizade</span>
-<span style="color:#323232;">    | Inimizade</span>
+<span style="color:#839496;">type Relacionamento =</span>
+<span style="color:#839496;">    | Aliança</span>
+<span style="color:#839496;">    | Rivalidade</span>
+<span style="color:#839496;">    | Amizade</span>
+<span style="color:#839496;">    | Inimizade</span>
 
-<span style="color:#323232;">type MajorType =</span>
-<span style="color:#323232;">    | Evento of Evento</span>
-<span style="color:#323232;">    | Elemento of ElementoMágico</span>
-<span style="color:#323232;">    | Habilidade of HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito of Conflito</span>
-<span style="color:#323232;">    | Relacionamento of Relacionamento</span>
-<span style="color:#323232;">    | Composição of (MajorType * MajorType)</span>
+<span style="color:#839496;">type MajorType =</span>
+<span style="color:#839496;">    | Evento of Evento</span>
+<span style="color:#839496;">    | Elemento of ElementoMágico</span>
+<span style="color:#839496;">    | Habilidade of HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito of Conflito</span>
+<span style="color:#839496;">    | Relacionamento of Relacionamento</span>
+<span style="color:#839496;">    | Composição of (MajorType * MajorType)</span>
 
 </pre><p id = "para-157">Agora temos um novo tipo principal chamado “MajorType” que inclui o tipo “Evento” e também os novos tipos “ElementoMágico”, “HabilidadeEspecial”, “Conflito” e “Relacionamento”. Esses tipos adicionam mais dimensões à história, permitindo a criação de tramas mais ricas e intrincadas. Além disso, adicionamos um tipo “Composição” que permite combinar dois “MajorType” de forma recursiva, criando uma relação ainda mais complexa entre eles.</p>
 <p id = "para-158">Com esses novos tipos, você pode explorar diferentes aspectos da narrativa do manhwa, como magia, habilidades especiais, conflitos e relacionamentos entre personagens.</p>
 <h2 id = "link-25">in a post-agi post-blockchain post-quantum plot, add the types related to identity (also tying with types mentioned so far)</h2>
 <p id = "para-159">&lt; Neste cenário pós-AGI (Inteligência Geral Artificial), pós-blockchain e pós-quântico, podemos introduzir tipos relacionados à identidade e conectar com os tipos mencionados até agora. Isso ajudará a criar uma narrativa que aborda questões de identidade e tecnologia em um futuro avançado.</p>
-<pre><span style="color:#323232;">type Tecnologia =</span>
-<span style="color:#323232;">    | AGI</span>
-<span style="color:#323232;">    | Blockchain</span>
-<span style="color:#323232;">    | ComputaçãoQuântica</span>
+<pre><span style="color:#839496;">type Tecnologia =</span>
+<span style="color:#839496;">    | AGI</span>
+<span style="color:#839496;">    | Blockchain</span>
+<span style="color:#839496;">    | ComputaçãoQuântica</span>
 
-<span style="color:#323232;">type Identidade =</span>
-<span style="color:#323232;">    | IdentidadeDigital</span>
-<span style="color:#323232;">    | IdentidadeFísica</span>
-<span style="color:#323232;">    | IdentidadeHíbrida</span>
-<span style="color:#323232;">    | Pseudônimo</span>
-<span style="color:#323232;">    | Anonimato</span>
+<span style="color:#839496;">type Identidade =</span>
+<span style="color:#839496;">    | IdentidadeDigital</span>
+<span style="color:#839496;">    | IdentidadeFísica</span>
+<span style="color:#839496;">    | IdentidadeHíbrida</span>
+<span style="color:#839496;">    | Pseudônimo</span>
+<span style="color:#839496;">    | Anonimato</span>
 
-<span style="color:#323232;">type SistemaDeIdentidade =</span>
-<span style="color:#323232;">    | SistemaCentralizado</span>
-<span style="color:#323232;">    | SistemaDescentralizado</span>
-<span style="color:#323232;">    | SistemaDistribuído</span>
-<span style="color:#323232;">    | SistemaAutoSustentável</span>
+<span style="color:#839496;">type SistemaDeIdentidade =</span>
+<span style="color:#839496;">    | SistemaCentralizado</span>
+<span style="color:#839496;">    | SistemaDescentralizado</span>
+<span style="color:#839496;">    | SistemaDistribuído</span>
+<span style="color:#839496;">    | SistemaAutoSustentável</span>
 
-<span style="color:#323232;">type QuestãoDeIdentidade =</span>
-<span style="color:#323232;">    | Privacidade</span>
-<span style="color:#323232;">    | Segurança</span>
-<span style="color:#323232;">    | Rastreabilidade</span>
-<span style="color:#323232;">    | Autonomia</span>
-<span style="color:#323232;">    | Ética</span>
+<span style="color:#839496;">type QuestãoDeIdentidade =</span>
+<span style="color:#839496;">    | Privacidade</span>
+<span style="color:#839496;">    | Segurança</span>
+<span style="color:#839496;">    | Rastreabilidade</span>
+<span style="color:#839496;">    | Autonomia</span>
+<span style="color:#839496;">    | Ética</span>
 
-<span style="color:#323232;">type MajorType =</span>
-<span style="color:#323232;">    | Evento of Evento</span>
-<span style="color:#323232;">    | Elemento of ElementoMágico</span>
-<span style="color:#323232;">    | Habilidade of HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito of Conflito</span>
-<span style="color:#323232;">    | Relacionamento of Relacionamento</span>
-<span style="color:#323232;">    | Tecnologia of Tecnologia</span>
-<span style="color:#323232;">    | Identidade of Identidade</span>
-<span style="color:#323232;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
-<span style="color:#323232;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
-<span style="color:#323232;">    | Composição of (MajorType * MajorType)</span>
+<span style="color:#839496;">type MajorType =</span>
+<span style="color:#839496;">    | Evento of Evento</span>
+<span style="color:#839496;">    | Elemento of ElementoMágico</span>
+<span style="color:#839496;">    | Habilidade of HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito of Conflito</span>
+<span style="color:#839496;">    | Relacionamento of Relacionamento</span>
+<span style="color:#839496;">    | Tecnologia of Tecnologia</span>
+<span style="color:#839496;">    | Identidade of Identidade</span>
+<span style="color:#839496;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
+<span style="color:#839496;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
+<span style="color:#839496;">    | Composição of (MajorType * MajorType)</span>
 
 </pre><p id = "para-160">Neste exemplo, adicionamos os tipos “Tecnologia”, “Identidade”, “SistemaDeIdentidade” e “QuestãoDeIdentidade” ao tipo principal “MajorType”. Esses novos tipos abordam questões de identidade em um mundo avançado com tecnologias emergentes, como AGI, blockchain e computação quântica.</p>
 <p id = "para-161">Com a adição desses novos tipos, você pode explorar aspectos relacionados à identidade, tecnologia e os desafios que surgem neste futuro avançado.</p>
 <h2 id = "link-26">which major types could be added also? before starting the minutiae</h2>
 <p id = "para-162">&lt; Além dos tipos principais já mencionados, podemos adicionar mais alguns para expandir a narrativa do manhwa e explorar uma variedade de temas e conceitos. Aqui estão algumas sugestões:</p>
-<pre><span style="color:#323232;">type MeioAmbiente =</span>
-<span style="color:#323232;">    | Ecossistema</span>
-<span style="color:#323232;">    | Poluição</span>
-<span style="color:#323232;">    | Conservação</span>
-<span style="color:#323232;">    | DesastreNatural</span>
-<span style="color:#323232;">    | RecursosNaturais</span>
+<pre><span style="color:#839496;">type MeioAmbiente =</span>
+<span style="color:#839496;">    | Ecossistema</span>
+<span style="color:#839496;">    | Poluição</span>
+<span style="color:#839496;">    | Conservação</span>
+<span style="color:#839496;">    | DesastreNatural</span>
+<span style="color:#839496;">    | RecursosNaturais</span>
 
-<span style="color:#323232;">type Sociedade =</span>
-<span style="color:#323232;">    | Política</span>
-<span style="color:#323232;">    | Economia</span>
-<span style="color:#323232;">    | Cultura</span>
-<span style="color:#323232;">    | Desigualdade</span>
-<span style="color:#323232;">    | Justiça</span>
+<span style="color:#839496;">type Sociedade =</span>
+<span style="color:#839496;">    | Política</span>
+<span style="color:#839496;">    | Economia</span>
+<span style="color:#839496;">    | Cultura</span>
+<span style="color:#839496;">    | Desigualdade</span>
+<span style="color:#839496;">    | Justiça</span>
 
-<span style="color:#323232;">type Espaço =</span>
-<span style="color:#323232;">    | ColonizaçãoEspacial</span>
-<span style="color:#323232;">    | ViagemEspacial</span>
-<span style="color:#323232;">    | Exploração</span>
-<span style="color:#323232;">    | TecnologiaEspacial</span>
-<span style="color:#323232;">    | VidaExtraterrestre</span>
+<span style="color:#839496;">type Espaço =</span>
+<span style="color:#839496;">    | ColonizaçãoEspacial</span>
+<span style="color:#839496;">    | ViagemEspacial</span>
+<span style="color:#839496;">    | Exploração</span>
+<span style="color:#839496;">    | TecnologiaEspacial</span>
+<span style="color:#839496;">    | VidaExtraterrestre</span>
 
-<span style="color:#323232;">type RealidadeVirtual =</span>
-<span style="color:#323232;">    | MundoVirtual</span>
-<span style="color:#323232;">    | ImersãoTotal</span>
-<span style="color:#323232;">    | RealidadeAumentada</span>
-<span style="color:#323232;">    | Simulação</span>
-<span style="color:#323232;">    | Hiperconexão</span>
+<span style="color:#839496;">type RealidadeVirtual =</span>
+<span style="color:#839496;">    | MundoVirtual</span>
+<span style="color:#839496;">    | ImersãoTotal</span>
+<span style="color:#839496;">    | RealidadeAumentada</span>
+<span style="color:#839496;">    | Simulação</span>
+<span style="color:#839496;">    | Hiperconexão</span>
 
-<span style="color:#323232;">type MajorType =</span>
-<span style="color:#323232;">    | Evento of Evento</span>
-<span style="color:#323232;">    | Elemento of ElementoMágico</span>
-<span style="color:#323232;">    | Habilidade of HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito of Conflito</span>
-<span style="color:#323232;">    | Relacionamento of Relacionamento</span>
-<span style="color:#323232;">    | Tecnologia of Tecnologia</span>
-<span style="color:#323232;">    | Identidade of Identidade</span>
-<span style="color:#323232;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
-<span style="color:#323232;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
-<span style="color:#323232;">    | MeioAmbiente of MeioAmbiente</span>
-<span style="color:#323232;">    | Sociedade of Sociedade</span>
-<span style="color:#323232;">    | Espaço of Espaço</span>
-<span style="color:#323232;">    | RealidadeVirtual of RealidadeVirtual</span>
-<span style="color:#323232;">    | Composição of (MajorType * MajorType)</span>
+<span style="color:#839496;">type MajorType =</span>
+<span style="color:#839496;">    | Evento of Evento</span>
+<span style="color:#839496;">    | Elemento of ElementoMágico</span>
+<span style="color:#839496;">    | Habilidade of HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito of Conflito</span>
+<span style="color:#839496;">    | Relacionamento of Relacionamento</span>
+<span style="color:#839496;">    | Tecnologia of Tecnologia</span>
+<span style="color:#839496;">    | Identidade of Identidade</span>
+<span style="color:#839496;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
+<span style="color:#839496;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
+<span style="color:#839496;">    | MeioAmbiente of MeioAmbiente</span>
+<span style="color:#839496;">    | Sociedade of Sociedade</span>
+<span style="color:#839496;">    | Espaço of Espaço</span>
+<span style="color:#839496;">    | RealidadeVirtual of RealidadeVirtual</span>
+<span style="color:#839496;">    | Composição of (MajorType * MajorType)</span>
 
 </pre><p id = "para-163">Neste exemplo, adicionamos “MeioAmbiente”, “Sociedade”, “Espaço” e “RealidadeVirtual” como novos tipos principais. Esses tipos permitem explorar temas relacionados ao meio ambiente, questões sociais, exploração espacial e realidades virtuais.</p>
 <p id = "para-164">Com esses novos tipos principais, você pode abordar uma ampla gama de tópicos e criar uma narrativa ainda mais rica e complexa para o seu manhwa.</p>
 <h2 id = "link-27">add types involving mature content</h2>
 <p id = "para-165">&lt; Para incluir tipos relacionados a conteúdo maduro no manhwa, podemos adicionar os seguintes subtipos:</p>
-<pre><span style="color:#323232;">type ConteúdoMaduro =</span>
-<span style="color:#323232;">    | RelaçõesAdultas</span>
-<span style="color:#323232;">    | Violência</span>
-<span style="color:#323232;">    | TemasSombrios</span>
-<span style="color:#323232;">    | LinguagemExplícita</span>
-<span style="color:#323232;">    | ConteúdoSexual</span>
+<pre><span style="color:#839496;">type ConteúdoMaduro =</span>
+<span style="color:#839496;">    | RelaçõesAdultas</span>
+<span style="color:#839496;">    | Violência</span>
+<span style="color:#839496;">    | TemasSombrios</span>
+<span style="color:#839496;">    | LinguagemExplícita</span>
+<span style="color:#839496;">    | ConteúdoSexual</span>
 
-<span style="color:#323232;">type MajorType =</span>
-<span style="color:#323232;">    | Evento of Evento</span>
-<span style="color:#323232;">    | Elemento of ElementoMágico</span>
-<span style="color:#323232;">    | Habilidade of HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito of Conflito</span>
-<span style="color:#323232;">    | Relacionamento of Relacionamento</span>
-<span style="color:#323232;">    | Tecnologia of Tecnologia</span>
-<span style="color:#323232;">    | Identidade of Identidade</span>
-<span style="color:#323232;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
-<span style="color:#323232;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
-<span style="color:#323232;">    | MeioAmbiente of MeioAmbiente</span>
-<span style="color:#323232;">    | Sociedade of Sociedade</span>
-<span style="color:#323232;">    | Espaço of Espaço</span>
-<span style="color:#323232;">    | RealidadeVirtual of RealidadeVirtual</span>
-<span style="color:#323232;">    | ConteúdoMaduro of ConteúdoMaduro</span>
-<span style="color:#323232;">    | Composição of (MajorType * MajorType)</span>
+<span style="color:#839496;">type MajorType =</span>
+<span style="color:#839496;">    | Evento of Evento</span>
+<span style="color:#839496;">    | Elemento of ElementoMágico</span>
+<span style="color:#839496;">    | Habilidade of HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito of Conflito</span>
+<span style="color:#839496;">    | Relacionamento of Relacionamento</span>
+<span style="color:#839496;">    | Tecnologia of Tecnologia</span>
+<span style="color:#839496;">    | Identidade of Identidade</span>
+<span style="color:#839496;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
+<span style="color:#839496;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
+<span style="color:#839496;">    | MeioAmbiente of MeioAmbiente</span>
+<span style="color:#839496;">    | Sociedade of Sociedade</span>
+<span style="color:#839496;">    | Espaço of Espaço</span>
+<span style="color:#839496;">    | RealidadeVirtual of RealidadeVirtual</span>
+<span style="color:#839496;">    | ConteúdoMaduro of ConteúdoMaduro</span>
+<span style="color:#839496;">    | Composição of (MajorType * MajorType)</span>
 
 </pre><p id = "para-166">Agora temos um novo tipo principal chamado “ConteúdoMaduro”, que inclui subtipos como “RelaçõesAdultas”, “Violência”, “TemasSombrios”, “LinguagemExplícita” e “ConteúdoSexual”. Esses subtipos ajudam a abordar temas mais maduros e sérios na narrativa, proporcionando uma maior profundidade e realismo ao manhwa.</p>
 <p id = "para-167">Incluindo esses tipos, você pode criar uma história mais atraente para um público adulto, explorando temas e situações mais complexas e desafiadoras.</p>
 <h2 id = "link-28">add types related to time travel, for non-linearity</h2>
 <p id = "para-168">&lt; Para incluir tipos relacionados a viagens no tempo e não-linearidade, podemos adicionar os seguintes subtipos:</p>
-<pre><span style="color:#323232;">type ViagemNoTempo =</span>
-<span style="color:#323232;">    | Passado</span>
-<span style="color:#323232;">    | Futuro</span>
-<span style="color:#323232;">    | RealidadeAlternativa</span>
-<span style="color:#323232;">    | ParadoxoTemporal</span>
-<span style="color:#323232;">    | LoopTemporal</span>
+<pre><span style="color:#839496;">type ViagemNoTempo =</span>
+<span style="color:#839496;">    | Passado</span>
+<span style="color:#839496;">    | Futuro</span>
+<span style="color:#839496;">    | RealidadeAlternativa</span>
+<span style="color:#839496;">    | ParadoxoTemporal</span>
+<span style="color:#839496;">    | LoopTemporal</span>
 
-<span style="color:#323232;">type MajorType =</span>
-<span style="color:#323232;">    | Evento of Evento</span>
-<span style="color:#323232;">    | Elemento of ElementoMágico</span>
-<span style="color:#323232;">    | Habilidade of HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito of Conflito</span>
-<span style="color:#323232;">    | Relacionamento of Relacionamento</span>
-<span style="color:#323232;">    | Tecnologia of Tecnologia</span>
-<span style="color:#323232;">    | Identidade of Identidade</span>
-<span style="color:#323232;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
-<span style="color:#323232;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
-<span style="color:#323232;">    | MeioAmbiente of MeioAmbiente</span>
-<span style="color:#323232;">    | Sociedade of Sociedade</span>
-<span style="color:#323232;">    | Espaço of Espaço</span>
-<span style="color:#323232;">    | RealidadeVirtual of RealidadeVirtual</span>
-<span style="color:#323232;">    | ConteúdoMaduro of ConteúdoMaduro</span>
-<span style="color:#323232;">    | ViagemNoTempo of ViagemNoTempo</span>
-<span style="color:#323232;">    | Composição of (MajorType * MajorType)</span>
+<span style="color:#839496;">type MajorType =</span>
+<span style="color:#839496;">    | Evento of Evento</span>
+<span style="color:#839496;">    | Elemento of ElementoMágico</span>
+<span style="color:#839496;">    | Habilidade of HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito of Conflito</span>
+<span style="color:#839496;">    | Relacionamento of Relacionamento</span>
+<span style="color:#839496;">    | Tecnologia of Tecnologia</span>
+<span style="color:#839496;">    | Identidade of Identidade</span>
+<span style="color:#839496;">    | SistemaDeIdentidade of SistemaDeIdentidade</span>
+<span style="color:#839496;">    | QuestãoDeIdentidade of QuestãoDeIdentidade</span>
+<span style="color:#839496;">    | MeioAmbiente of MeioAmbiente</span>
+<span style="color:#839496;">    | Sociedade of Sociedade</span>
+<span style="color:#839496;">    | Espaço of Espaço</span>
+<span style="color:#839496;">    | RealidadeVirtual of RealidadeVirtual</span>
+<span style="color:#839496;">    | ConteúdoMaduro of ConteúdoMaduro</span>
+<span style="color:#839496;">    | ViagemNoTempo of ViagemNoTempo</span>
+<span style="color:#839496;">    | Composição of (MajorType * MajorType)</span>
 
 </pre><p id = "para-169">Agora temos um novo tipo principal chamado “ViagemNoTempo”, que inclui subtipos como “Passado”, “Futuro”, “RealidadeAlternativa”, “ParadoxoTemporal” e “LoopTemporal”. Esses subtipos permitem explorar narrativas não-lineares e as complexidades associadas às viagens no tempo.</p>
 <p id = "para-170">Incluindo esses tipos, você pode criar histórias mais intrigantes e envolventes que desafiam a percepção linear do tempo e convidam os leitores a explorar diferentes possibilidades e consequências.</p>
 <h2 id = "link-29">rework the whole model with a new concise version</h2>
 <p id = "para-171">&lt; Aqui está uma versão mais concisa do modelo, agrupando os subtipos relacionados em categorias amplas:</p>
-<pre><span style="color:#323232;">type Categoria =</span>
-<span style="color:#323232;">    | Evento</span>
-<span style="color:#323232;">    | ElementoMágico</span>
-<span style="color:#323232;">    | HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito</span>
-<span style="color:#323232;">    | Relacionamento</span>
-<span style="color:#323232;">    | Tecnologia</span>
-<span style="color:#323232;">    | Identidade</span>
-<span style="color:#323232;">    | MeioAmbiente</span>
-<span style="color:#323232;">    | Sociedade</span>
-<span style="color:#323232;">    | Espaço</span>
-<span style="color:#323232;">    | RealidadeVirtual</span>
-<span style="color:#323232;">    | ConteúdoMaduro</span>
-<span style="color:#323232;">    | ViagemNoTempo</span>
+<pre><span style="color:#839496;">type Categoria =</span>
+<span style="color:#839496;">    | Evento</span>
+<span style="color:#839496;">    | ElementoMágico</span>
+<span style="color:#839496;">    | HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito</span>
+<span style="color:#839496;">    | Relacionamento</span>
+<span style="color:#839496;">    | Tecnologia</span>
+<span style="color:#839496;">    | Identidade</span>
+<span style="color:#839496;">    | MeioAmbiente</span>
+<span style="color:#839496;">    | Sociedade</span>
+<span style="color:#839496;">    | Espaço</span>
+<span style="color:#839496;">    | RealidadeVirtual</span>
+<span style="color:#839496;">    | ConteúdoMaduro</span>
+<span style="color:#839496;">    | ViagemNoTempo</span>
 
-<span style="color:#323232;">type Subcategoria =</span>
-<span style="color:#323232;">    | Evento of Evento</span>
-<span style="color:#323232;">    | ElementoMágico of ElementoMágico</span>
-<span style="color:#323232;">    | HabilidadeEspecial of HabilidadeEspecial</span>
-<span style="color:#323232;">    | Conflito of Conflito</span>
-<span style="color:#323232;">    | Relacionamento of Relacionamento</span>
-<span style="color:#323232;">    | Tecnologia of Tecnologia</span>
-<span style="color:#323232;">    | Identidade of Identidade</span>
-<span style="color:#323232;">    | MeioAmbiente of MeioAmbiente</span>
-<span style="color:#323232;">    | Sociedade of Sociedade</span>
-<span style="color:#323232;">    | Espaço of Espaço</span>
-<span style="color:#323232;">    | RealidadeVirtual of RealidadeVirtual</span>
-<span style="color:#323232;">    | ConteúdoMaduro of ConteúdoMaduro</span>
-<span style="color:#323232;">    | ViagemNoTempo of ViagemNoTempo</span>
+<span style="color:#839496;">type Subcategoria =</span>
+<span style="color:#839496;">    | Evento of Evento</span>
+<span style="color:#839496;">    | ElementoMágico of ElementoMágico</span>
+<span style="color:#839496;">    | HabilidadeEspecial of HabilidadeEspecial</span>
+<span style="color:#839496;">    | Conflito of Conflito</span>
+<span style="color:#839496;">    | Relacionamento of Relacionamento</span>
+<span style="color:#839496;">    | Tecnologia of Tecnologia</span>
+<span style="color:#839496;">    | Identidade of Identidade</span>
+<span style="color:#839496;">    | MeioAmbiente of MeioAmbiente</span>
+<span style="color:#839496;">    | Sociedade of Sociedade</span>
+<span style="color:#839496;">    | Espaço of Espaço</span>
+<span style="color:#839496;">    | RealidadeVirtual of RealidadeVirtual</span>
+<span style="color:#839496;">    | ConteúdoMaduro of ConteúdoMaduro</span>
+<span style="color:#839496;">    | ViagemNoTempo of ViagemNoTempo</span>
 
-<span style="color:#323232;">type MajorType =</span>
-<span style="color:#323232;">    | Categoria of Categoria</span>
-<span style="color:#323232;">    | Subcategoria of Subcategoria</span>
-<span style="color:#323232;">    | Composição of (MajorType * MajorType)</span>
+<span style="color:#839496;">type MajorType =</span>
+<span style="color:#839496;">    | Categoria of Categoria</span>
+<span style="color:#839496;">    | Subcategoria of Subcategoria</span>
+<span style="color:#839496;">    | Composição of (MajorType * MajorType)</span>
 
 </pre><p id = "para-172">Neste modelo simplificado, temos um único tipo “Categoria” que inclui todos os temas principais, como “Evento”, “ElementoMágico”, “HabilidadeEspecial”, “Conflito”, “Relacionamento”, “Tecnologia”, “Identidade”, “MeioAmbiente”, “Sociedade”, “Espaço”, “RealidadeVirtual”, “ConteúdoMaduro” e “ViagemNoTempo”.</p>
 <p id = "para-173">Além disso, temos um tipo “Subcategoria” que detalha cada tema principal em subtipos mais específicos. Finalmente, temos o tipo “MajorType” que inclui “Categoria”, “Subcategoria” e “Composição” para permitir a combinação de temas e subtemas. Essa abordagem mais concisa torna o modelo mais fácil de entender e trabalhar.</p>

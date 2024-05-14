@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,9 +613,11 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -569,48 +625,48 @@ function toggle() {
   <ul>
 <li></li>
 </ul>
-<pre><span style="color:#323232;">.</span><span style="color:#795da3;">leaflet-control-attribution </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">  </span><span style="color:#0086b3;">display</span><span style="color:#323232;">: none;</span>
-<span style="color:#323232;"> </span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#b58900;">.leaflet-control-attribution </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">  </span><span style="color:#859900;">display</span><span style="color:#839496;">: </span><span style="color:#859900;">none</span><span style="color:#839496;">;</span>
+<span style="color:#839496;"> </span>
+<span style="color:#657b83;">}</span>
 
-<span style="color:#63a35c;">body </span><span style="color:#323232;">&gt; </span><span style="color:#63a35c;">button</span><span style="color:#323232;">, #</span><span style="color:#795da3;">map </span><span style="color:#323232;">.</span><span style="color:#795da3;">leaflet-control-zoom </span><span style="color:#63a35c;">a </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">  </span><span style="color:#0086b3;">opacity</span><span style="color:#323232;">: </span><span style="color:#0086b3;">0.3</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">}</span>
+<span style="color:#b58900;">body </span><span style="color:#657b83;">&gt; </span><span style="color:#b58900;">button</span><span style="color:#657b83;">, </span><span style="color:#b58900;">#map .leaflet-control-zoom a </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">  </span><span style="color:#859900;">opacity</span><span style="color:#839496;">: </span><span style="color:#6c71c4;">0.3</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: edward17.github.io/LayersCollection/#map=3/20.71502/388.91602&amp;layers=1067,2049,2048,2047,2000,2001,2002,2019,2020,2033,2009,2008,2006,2013,2014,2015,2016,2017,2018,2046,2088,2032,2075</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:40vh</span>
-
-</pre><ul>
-<li></li>
-</ul>
-<pre><span style="color:#323232;">urlSuffix: cyclosm.org/#map=13/-23.9515/-46.3864/opentopomap-waymarkedtrails-cyclosmlite</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:40vh</span>
-
-</pre><pre><span style="color:#323232;">urlSuffix: opentopomap.org/#map=13/-23.95057/-46.38402</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:40vh</span>
+</pre><pre><span style="color:#839496;">urlSuffix: edward17.github.io/LayersCollection/#map=3/20.71502/388.91602&amp;layers=1067,2049,2048,2047,2000,2001,2002,2019,2020,2033,2009,2008,2006,2013,2014,2015,2016,2017,2018,2046,2088,2032,2075</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:40vh</span>
 
 </pre><ul>
 <li></li>
 </ul>
-<pre><span style="color:#323232;">#</span><span style="color:#795da3;">info</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">.</span><span style="color:#795da3;">github-fork-ribbon-wrapper</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">.</span><span style="color:#795da3;">leaflet-control-layers-expanded</span><span style="color:#323232;">.</span><span style="color:#795da3;">leaflet-control-layers-minimap</span>
-<span style="color:#323232;">{</span>
-<span style="color:#323232;">  </span><span style="color:#0086b3;">display</span><span style="color:#323232;">: none;</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">urlSuffix: cyclosm.org/#map=13/-23.9515/-46.3864/opentopomap-waymarkedtrails-cyclosmlite</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:40vh</span>
 
-<span style="color:#323232;">.</span><span style="color:#795da3;">leaflet-control-layers-expanded</span><span style="color:#323232;">.</span><span style="color:#795da3;">leaflet-control-layers-minimap</span>
-<span style="color:#323232;">{</span>
-<span style="color:#323232;">  </span><span style="color:#0086b3;">width</span><span style="color:#323232;">: </span><span style="color:#0086b3;">200</span><span style="font-weight:bold;color:#a71d5d;">px</span><span style="color:#323232;">;</span>
-<span style="color:#323232;">}</span>
+</pre><pre><span style="color:#839496;">urlSuffix: opentopomap.org/#map=13/-23.95057/-46.38402</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:40vh</span>
 
-</pre><pre><span style="color:#323232;">urlSuffix: leaflet-extras.github.io/leaflet-providers/preview</span>
-<span style="color:#323232;">frame: https://</span>
-<span style="color:#323232;">style: height:40vh</span>
+</pre><ul>
+<li></li>
+</ul>
+<pre><span style="color:#b58900;">#info</span><span style="color:#657b83;">,</span>
+<span style="color:#b58900;">.github-fork-ribbon-wrapper</span><span style="color:#657b83;">,</span>
+<span style="color:#b58900;">.leaflet-control-layers-expanded.leaflet-control-layers-minimap</span>
+<span style="color:#657b83;">{</span>
+<span style="color:#839496;">  </span><span style="color:#859900;">display</span><span style="color:#839496;">: </span><span style="color:#859900;">none</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
+
+<span style="color:#b58900;">.leaflet-control-layers-expanded.leaflet-control-layers-minimap</span>
+<span style="color:#657b83;">{</span>
+<span style="color:#839496;">  </span><span style="color:#859900;">width</span><span style="color:#839496;">: </span><span style="color:#6c71c4;">200</span><span style="color:#859900;">px</span><span style="color:#839496;">;</span>
+<span style="color:#657b83;">}</span>
+
+</pre><pre><span style="color:#839496;">urlSuffix: leaflet-extras.github.io/leaflet-providers/preview</span>
+<span style="color:#839496;">frame: https://</span>
+<span style="color:#839496;">style: height:40vh</span>
 
 </pre>
 </div>

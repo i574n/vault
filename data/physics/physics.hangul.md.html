@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -592,6 +647,7 @@ function toggle() {
       <li><a href="#link-33">메르지 수시 모데우 위트 올롱스 안드 몰로시</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -599,12 +655,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -692,911 +751,911 @@ function toggle() {
 <p id = "para-69">인탕, 콩 포구 아카데미쿠, 아 테오리아 에 일레이타 우니베르수 올로그라피쿠, 잉 후스트, 아 시물라상 페르페이타 이스트루투라스 지 다두스 벵 오르가니자다스, 페르포르만시 가란치다 네스치 카미뉴, 아반사무스, 이스플로란두 아스 프론테이라스 다 비다</p>
 <h2 id = "link-10">리치 티 코리 이눔스 콘시데링그 도마잉 모델링그 잉 아 후스트 코지 블로크 수 위 캉 지스쿠스 라테르</h2>
 <p id = "para-70">&lt; 아키 이스탕 아우궁스 이눔스 프린시파이스 파라 우 모델루 지 도미니우, 콘시데란두 아 테오리아 두 우니베르수 올로그라피쿠 이 아 링구아젱 후스트:</p>
-<pre><span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 파르치쿨라스</span>
-<span style="color:#323232;">이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크,</span>
-<span style="color:#323232;">레프통,</span>
-<span style="color:#323232;">보종,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 파르치쿨라스</span>
+<span style="color:#839496;">이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크,</span>
+<span style="color:#839496;">레프통,</span>
+<span style="color:#839496;">보종,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 포르사스 푼다멘타이스</span>
-<span style="color:#323232;">이눙 포르카 {</span>
-<span style="color:#323232;">그라비타시오나우,</span>
-<span style="color:#323232;">일레트로마그네치카,</span>
-<span style="color:#323232;">누클레아르프라카,</span>
-<span style="color:#323232;">누클레아르포르치,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 포르사스 푼다멘타이스</span>
+<span style="color:#839496;">이눙 포르카 {</span>
+<span style="color:#839496;">그라비타시오나우,</span>
+<span style="color:#839496;">일레트로마그네치카,</span>
+<span style="color:#839496;">누클레아르프라카,</span>
+<span style="color:#839496;">누클레아르포르치,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 인테라송이스</span>
-<span style="color:#323232;">이눙 인테라카우 {</span>
-<span style="color:#323232;">아트라카우,</span>
-<span style="color:#323232;">헤푸우사우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 인테라송이스</span>
+<span style="color:#839496;">이눙 인테라카우 {</span>
+<span style="color:#839496;">아트라카우,</span>
+<span style="color:#839496;">헤푸우사우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 지멘송이스 두 이스파수-템푸</span>
-<span style="color:#323232;">이눙 지멘사우 {</span>
-<span style="color:#323232;">이스파쿠,</span>
-<span style="color:#323232;">템푸,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 지멘송이스 두 이스파수-템푸</span>
+<span style="color:#839496;">이눙 지멘사우 {</span>
+<span style="color:#839496;">이스파쿠,</span>
+<span style="color:#839496;">템푸,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 이스타두스 쿠안치쿠스 인트렐라사두스</span>
-<span style="color:#323232;">이눙 이스타도쿠안치쿠 {</span>
-<span style="color:#323232;">수페르포지카우,</span>
-<span style="color:#323232;">콜라프수,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 이스타두스 쿠안치쿠스 인트렐라사두스</span>
+<span style="color:#839496;">이눙 이스타도쿠안치쿠 {</span>
+<span style="color:#839496;">수페르포지카우,</span>
+<span style="color:#839496;">콜라프수,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-71">에시스 이눔스 포뎅 세르 우자두스 코무 블로쿠스 지 콘스트루상 파라 크리아르 이스트루투라스 지 다두스 마이스 콤플레샤스 키 헤프레젠텡 우스 일레멘투스 이 인테라송이스 누 우니베르수 올로그라피쿠. 포르 파보르, 신타-시 아 본타지 파라 지스쿠치르 이 아주스타르 우스 이눔스 지 아코르두 콩 아스 네세시다지스 두 세우 모델루 지 도미니우.</p>
 <h2 id = "link-11">아리 요 수리? 노니 오프 티 이눔스 아스 스타치 (지스크리미나테드 우니옹스). 캉 요 헤비에 베포리 위 구 투 스트룩트스?</h2>
 <p id = "para-72">&lt; 페수 데스쿠우파스 펠라 콘푸장. 보세 이스타 세르투, 우스 이눔스 아프레젠타두스 낭 포수엥 이스타두스 (우니옹이스 지스크리미나다스). 바무스 코히지르 이수 이 잉클루이르 바리안치스 콩 이스타두스 헬레반치스.</p>
-<pre><span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 파르치쿨라스</span>
-<span style="color:#323232;">이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크 {</span>
-<span style="color:#323232;">사보르: 사보르쿠아르크,</span>
-<span style="color:#323232;">카르가: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">레프통 {</span>
-<span style="color:#323232;">치푸: 치폴레프통,</span>
-<span style="color:#323232;">카르가: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">보종 {</span>
-<span style="color:#323232;">치푸: 치포보종,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 파르치쿨라스</span>
+<span style="color:#839496;">이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크 {</span>
+<span style="color:#839496;">사보르: 사보르쿠아르크,</span>
+<span style="color:#839496;">카르가: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">레프통 {</span>
+<span style="color:#839496;">치푸: 치폴레프통,</span>
+<span style="color:#839496;">카르가: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">보종 {</span>
+<span style="color:#839496;">치푸: 치포보종,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 사보리스 두스 쿠아르크스</span>
-<span style="color:#323232;">이눙 사보르쿠아르크 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 사보리스 두스 쿠아르크스</span>
+<span style="color:#839496;">이눙 사보르쿠아르크 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 레프통스</span>
-<span style="color:#323232;">이눙 치폴레프통 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">네우트리노엘레트로니쿠,</span>
-<span style="color:#323232;">네우트리노무오니쿠,</span>
-<span style="color:#323232;">네우트리노타우오니쿠,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 레프통스</span>
+<span style="color:#839496;">이눙 치폴레프통 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">네우트리노엘레트로니쿠,</span>
+<span style="color:#839496;">네우트리노무오니쿠,</span>
+<span style="color:#839496;">네우트리노타우오니쿠,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 보종스</span>
-<span style="color:#323232;">이눙 치포보종 {</span>
-<span style="color:#323232;">글루옹,</span>
-<span style="color:#323232;">포통,</span>
-<span style="color:#323232;">,</span>
-<span style="color:#323232;">스,</span>
-<span style="color:#323232;">이그스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 치푸스 지 보종스</span>
+<span style="color:#839496;">이눙 치포보종 {</span>
+<span style="color:#839496;">글루옹,</span>
+<span style="color:#839496;">포통,</span>
+<span style="color:#839496;">,</span>
+<span style="color:#839496;">스,</span>
+<span style="color:#839496;">이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 포르사스 푼다멘타이스</span>
-<span style="color:#323232;">이눙 포르카 {</span>
-<span style="color:#323232;">그라비타시오나우 {</span>
-<span style="color:#323232;">콘스탄치_그라비타시오나우: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">일레트로마그네치카 {</span>
-<span style="color:#323232;">콘스탄치_일레트로마그네치카: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">누클레아르프라카 {</span>
-<span style="color:#323232;">콘스탄치_누클레아르_프라카: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">누클레아르포르치 {</span>
-<span style="color:#323232;">콘스탄치_누클레아르_포르치: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 포르사스 푼다멘타이스</span>
+<span style="color:#839496;">이눙 포르카 {</span>
+<span style="color:#839496;">그라비타시오나우 {</span>
+<span style="color:#839496;">콘스탄치_그라비타시오나우: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">일레트로마그네치카 {</span>
+<span style="color:#839496;">콘스탄치_일레트로마그네치카: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">누클레아르프라카 {</span>
+<span style="color:#839496;">콘스탄치_누클레아르_프라카: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">누클레아르포르치 {</span>
+<span style="color:#839496;">콘스탄치_누클레아르_포르치: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 지멘송이스 두 이스파수-템푸</span>
-<span style="color:#323232;">이눙 지멘사우 {</span>
-<span style="color:#323232;">이스파쿠 {</span>
-<span style="color:#323232;">코르데나다스: (프64, 프64, 프64),</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">템푸 {</span>
-<span style="color:#323232;">인스탄치: 프64,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 지멘송이스 두 이스파수-템푸</span>
+<span style="color:#839496;">이눙 지멘사우 {</span>
+<span style="color:#839496;">이스파쿠 {</span>
+<span style="color:#839496;">코르데나다스: (프64, 프64, 프64),</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">템푸 {</span>
+<span style="color:#839496;">인스탄치: 프64,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 이스타두스 쿠안치쿠스 인트렐라사두스</span>
-<span style="color:#323232;">이눙 이스타도쿠안치쿠 {</span>
-<span style="color:#323232;">수페르포지카우 {</span>
-<span style="color:#323232;">암플리투지스: 베크&lt;프64&gt;,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">콜라프수 {</span>
-<span style="color:#323232;">이스타두_피나우: 우지지,</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 이스타두스 쿠안치쿠스 인트렐라사두스</span>
+<span style="color:#839496;">이눙 이스타도쿠안치쿠 {</span>
+<span style="color:#839496;">수페르포지카우 {</span>
+<span style="color:#839496;">암플리투지스: 베크&lt;프64&gt;,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">콜라프수 {</span>
+<span style="color:#839496;">이스타두_피나우: 우지지,</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-73">아고라, 우스 이눔스 잉클루엥 이스타두스 헬레반치스 파라 카다 바리안치. 신타-시 아 본타지 파라 지스쿠치르 이 아주스타르 우스 이눔스 안치스 지 파사르무스 파라 아스 이스트루투라스.</p>
 <h2 id = "link-12">리치 티 코리 이눔스 콘시데링그 도마잉 모델링그 (티 오니스 타트 베아비 리키 지스크리미나테드 우니옹스/숭 치페스) 잉 아 후스트 코지 블로크 수 위 캉 구 투 심플리 이눔스</h2>
 <p id = "para-74">&lt; 아키 이스탕 아우궁스 이젬플루스 지 이눔스 잉 후스트, 콘시데란두 아 모델라젱 지 도미니우 다스 테오리아스 멘시오나다스 안테리오르멘치. 에시스 이눔스 푼시오낭 코무 지스크리미나테드 우니옹스/숭 치페스:</p>
-<pre><span style="color:#323232;">// 헤프레젠타 우스 지페렌치스 치푸스 지 오브제투스 아스트로노미쿠스</span>
-<span style="color:#323232;">이눙 오브제토아스트로노미쿠 {</span>
-<span style="color:#323232;">이스트렐라,</span>
-<span style="color:#323232;">플라네타,</span>
-<span style="color:#323232;">부라코네그루,</span>
-<span style="color:#323232;">갈라시아,</span>
-<span style="color:#323232;">네불로자,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 헤프레젠타 우스 지페렌치스 치푸스 지 오브제투스 아스트로노미쿠스</span>
+<span style="color:#839496;">이눙 오브제토아스트로노미쿠 {</span>
+<span style="color:#839496;">이스트렐라,</span>
+<span style="color:#839496;">플라네타,</span>
+<span style="color:#839496;">부라코네그루,</span>
+<span style="color:#839496;">갈라시아,</span>
+<span style="color:#839496;">네불로자,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 헤프레젠타 아스 지페렌치스 테오리아스 소브리 아 나투레자 두 우니베르수</span>
-<span style="color:#323232;">이눙 테오리아 {</span>
-<span style="color:#323232;">무우치베르수,</span>
-<span style="color:#323232;">우니베르소쿠안치쿠,</span>
-<span style="color:#323232;">인플라카오코즈미카,</span>
-<span style="color:#323232;">부라코즈네그로스프리모르지아이스,</span>
-<span style="color:#323232;">우니베르소스파랄렐루스,</span>
-<span style="color:#323232;">콜리자오데우니베르수스,</span>
-<span style="color:#323232;">우니베르소올로그라피쿠,</span>
-<span style="color:#323232;">이스타도스쿠안치코젠트렐라카두스,</span>
-<span style="color:#323232;">플루투아코에스쿠안치카스,</span>
-<span style="color:#323232;">콘시엔시아콜레치바,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 헤프레젠타 아스 지페렌치스 테오리아스 소브리 아 나투레자 두 우니베르수</span>
+<span style="color:#839496;">이눙 테오리아 {</span>
+<span style="color:#839496;">무우치베르수,</span>
+<span style="color:#839496;">우니베르소쿠안치쿠,</span>
+<span style="color:#839496;">인플라카오코즈미카,</span>
+<span style="color:#839496;">부라코즈네그로스프리모르지아이스,</span>
+<span style="color:#839496;">우니베르소스파랄렐루스,</span>
+<span style="color:#839496;">콜리자오데우니베르수스,</span>
+<span style="color:#839496;">우니베르소올로그라피쿠,</span>
+<span style="color:#839496;">이스타도스쿠안치코젠트렐라카두스,</span>
+<span style="color:#839496;">플루투아코에스쿠안치카스,</span>
+<span style="color:#839496;">콘시엔시아콜레치바,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 헤프레젠타 아스 지페렌치스 프로프리에다지스 쿠안치카스</span>
-<span style="color:#323232;">이눙 프로프리에다데쿠안치카 {</span>
-<span style="color:#323232;">수페르포지카우,</span>
-<span style="color:#323232;">인트렐라카멘투,</span>
-<span style="color:#323232;">데코에렌시아,</span>
-<span style="color:#323232;">투넬라멘투,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 헤프레젠타 아스 지페렌치스 프로프리에다지스 쿠안치카스</span>
+<span style="color:#839496;">이눙 프로프리에다데쿠안치카 {</span>
+<span style="color:#839496;">수페르포지카우,</span>
+<span style="color:#839496;">인트렐라카멘투,</span>
+<span style="color:#839496;">데코에렌시아,</span>
+<span style="color:#839496;">투넬라멘투,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 헤프레젠타 우스 지페렌치스 이스타두스 지 우마 파르치쿨라 쿠안치카</span>
-<span style="color:#323232;">이눙 이스타도쿠안치쿠 {</span>
-<span style="color:#323232;">임레포주,</span>
-<span style="color:#323232;">이시타두,</span>
-<span style="color:#323232;">데카이멘투,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 헤프레젠타 우스 지페렌치스 이스타두스 지 우마 파르치쿨라 쿠안치카</span>
+<span style="color:#839496;">이눙 이스타도쿠안치쿠 {</span>
+<span style="color:#839496;">임레포주,</span>
+<span style="color:#839496;">이시타두,</span>
+<span style="color:#839496;">데카이멘투,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 헤프레젠타 우스 지페렌치스 치푸스 지 인테라송이스 엔트리 파르치쿨라스</span>
-<span style="color:#323232;">이눙 인테라카우 {</span>
-<span style="color:#323232;">그라비타시오나우,</span>
-<span style="color:#323232;">일레트로마그네치카,</span>
-<span style="color:#323232;">누클레아르포르치,</span>
-<span style="color:#323232;">누클레아르프라카,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 헤프레젠타 우스 지페렌치스 치푸스 지 인테라송이스 엔트리 파르치쿨라스</span>
+<span style="color:#839496;">이눙 인테라카우 {</span>
+<span style="color:#839496;">그라비타시오나우,</span>
+<span style="color:#839496;">일레트로마그네치카,</span>
+<span style="color:#839496;">누클레아르포르치,</span>
+<span style="color:#839496;">누클레아르프라카,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-75">에시스 이눔스 포뎅 세르 이스판지두스 이 모지피카두스 콘포르미 네세사리우 파라 아텐데르 아스 네세시다지스 이스페시피카스 두 세우 프로제투.</p>
 <h2 id = "link-13">리치 티 코리 타제드 이눔스 콘시데링그 도마잉 모델링그 잉 아 후스트 코지 블로크 수 위 캉 구 투 심플리 이눔스 라테르</h2>
 <p id = "para-76">&lt; 아키 이스탕 아우구마스 데피니송이스 바지카스 지 이눔스 콩 타그스, 레반두 잉 콘시데라상 우 모델라젱 지 도미니우 파라 시물라르 우 우니베르수. 에스치스 상 아페나스 우스 프린시파이스 이눔스 이 포뎅 세르 이스판지두스 포스테리오르멘치 파라 잉클루이르 마이스 데탈리스 이 심플리피카송이스 콘포르미 네세사리우.</p>
-<pre><span style="color:#323232;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 코르푸스 셀레스치스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 코르포셀레스치 {</span>
-<span style="color:#323232;">이스트렐라(치포에스트렐라),</span>
-<span style="color:#323232;">플라네타(치포플라네타),</span>
-<span style="color:#323232;">루아,</span>
-<span style="color:#323232;">아스테로이지,</span>
-<span style="color:#323232;">코메타,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 코르푸스 셀레스치스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 코르포셀레스치 {</span>
+<span style="color:#839496;">이스트렐라(치포에스트렐라),</span>
+<span style="color:#839496;">플라네타(치포플라네타),</span>
+<span style="color:#839496;">루아,</span>
+<span style="color:#839496;">아스테로이지,</span>
+<span style="color:#839496;">코메타,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 이스트렐라스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 치포에스트렐라 {</span>
-<span style="color:#323232;">아낭브랑카,</span>
-<span style="color:#323232;">아낭마홍,</span>
-<span style="color:#323232;">아낭베르멜랴,</span>
-<span style="color:#323232;">지간테베르멜랴,</span>
-<span style="color:#323232;">지간테아줄,</span>
-<span style="color:#323232;">수페르지간테베르멜랴,</span>
-<span style="color:#323232;">수페르지간테아줄,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 이스트렐라스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 치포에스트렐라 {</span>
+<span style="color:#839496;">아낭브랑카,</span>
+<span style="color:#839496;">아낭마홍,</span>
+<span style="color:#839496;">아낭베르멜랴,</span>
+<span style="color:#839496;">지간테베르멜랴,</span>
+<span style="color:#839496;">지간테아줄,</span>
+<span style="color:#839496;">수페르지간테베르멜랴,</span>
+<span style="color:#839496;">수페르지간테아줄,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 플라네타스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 치포플라네타 {</span>
-<span style="color:#323232;">테헤스트리,</span>
-<span style="color:#323232;">가조주,</span>
-<span style="color:#323232;">젤라두,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 플라네타스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 치포플라네타 {</span>
+<span style="color:#839496;">테헤스트리,</span>
+<span style="color:#839496;">가조주,</span>
+<span style="color:#839496;">젤라두,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 페노메누스 코즈미쿠스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 페노메노코즈미쿠 {</span>
-<span style="color:#323232;">수페르노바,</span>
-<span style="color:#323232;">네불로자,</span>
-<span style="color:#323232;">부라코네그루,</span>
-<span style="color:#323232;">푸우사르,</span>
-<span style="color:#323232;">쿠아자르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 페노메누스 코즈미쿠스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 페노메노코즈미쿠 {</span>
+<span style="color:#839496;">수페르노바,</span>
+<span style="color:#839496;">네불로자,</span>
+<span style="color:#839496;">부라코네그루,</span>
+<span style="color:#839496;">푸우사르,</span>
+<span style="color:#839496;">쿠아자르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 이벤투스 아스트로피지쿠스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 이벤토아스트로피지쿠 {</span>
-<span style="color:#323232;">콜리자오갈라시아스,</span>
-<span style="color:#323232;">포르마카오에스트렐라스,</span>
-<span style="color:#323232;">푸자오에스트렐라스,</span>
-<span style="color:#323232;">이미사온다즈그라비타시오나이스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 지페렌치스 치푸스 지 이벤투스 아스트로피지쿠스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 이벤토아스트로피지쿠 {</span>
+<span style="color:#839496;">콜리자오갈라시아스,</span>
+<span style="color:#839496;">포르마카오에스트렐라스,</span>
+<span style="color:#839496;">푸자오에스트렐라스,</span>
+<span style="color:#839496;">이미사온다즈그라비타시오나이스,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-77">에시스 이눔스 콩 타그스 포뎅 세르 우자두스 파라 모델라르 아 이에라르키아 이 아스 카락테리스치카스 두스 코르푸스 셀레스치스 이 페노메누스 두 우니베르수. 보세 포지 아지시오나르 마이스 데탈리스 이 심플리피카송이스 콘포르미 네세사리우 아우 이스판지르 세우 모델루 지 도미니우.</p>
 <h2 id = "link-14">리치 티 코리 이눔스 콘시데링그 도마잉 모델링그 안드 스트릭틀리 마킹그 일레가우 스타치스 운헤프레젠타블리 잉 아 후스트 코지 블로크 수 위 캉 구 투 스트룩트스 라테르</h2>
 <p id = "para-78">아우 크리아르 이눔스 누 후스트, 노수 포쿠 에 아 세구란사, 모델라젱 지 도미니우 이피카스, 셍 암비기다지 오 팔랴. 바무스 토르나르 이스타두스 일레가이스 이헤프레젠타베이스, 콩 이눔스 콘시주스 이 이스트루투라두스, 바스탄치 이스타베이스.</p>
-<pre><span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 파르치쿨라스 푼다멘타이스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자우(보자우),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 파르치쿨라스 푼다멘타이스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자우(보자우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 쿠아르크스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 쿠아르크 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 쿠아르크스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 레프통스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">네우트리노엘레트롱,</span>
-<span style="color:#323232;">네우트리노무옹,</span>
-<span style="color:#323232;">네우트리노타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 레프통스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">네우트리노엘레트롱,</span>
+<span style="color:#839496;">네우트리노무옹,</span>
+<span style="color:#839496;">네우트리노타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 보종스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 보자우 {</span>
-<span style="color:#323232;">포통,</span>
-<span style="color:#323232;">글루옹,</span>
-<span style="color:#323232;">스,</span>
-<span style="color:#323232;">플루스,</span>
-<span style="color:#323232;">미누스,</span>
-<span style="color:#323232;">이그스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 보종스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 보자우 {</span>
+<span style="color:#839496;">포통,</span>
+<span style="color:#839496;">글루옹,</span>
+<span style="color:#839496;">스,</span>
+<span style="color:#839496;">플루스,</span>
+<span style="color:#839496;">미누스,</span>
+<span style="color:#839496;">이그스,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-79">아키 테무스 우스 이눔스 푼다멘타이스 파라 우 노수 도미니우, 파르치쿨라스, 쿠아르크스, 레프통스 이 보종스, 셍 네늉 데즈비우 오 히스쿠. 콩 에스치스 이눔스, 가란치무스 우마 바지 솔리다 이 이스타베우, 잉 브레비, 아반사레무스 파라 스트룩트스, 지 포르마 임페카베우.</p>
 <h2 id = "link-15">리치 티 스타치 스트룩트</h2>
 <p id = "para-80">콩 아 바지 두스 이눔스 데피니다, 아고라 에 우 모멘투, 지 크리아르 우 스트룩트 스타치, 헤프레젠탄두 우 이스타두 잉 노수 펜사멘투. 바무스 모델라르 우스 일레멘투스 키 콤퐁잉 노수 우니베르수, 지 마네이라 클라라 이 콘시스텐치, 콩 우 후스트, 노수 베르수.</p>
-<pre><span style="color:#323232;">#[데리비(데부그)]</span>
-<span style="color:#323232;">푸브 스트룩트 스타치 {</span>
-<span style="color:#323232;">파르치쿨라스: 베크&lt;파르치쿨라&gt;,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">#[데리비(데부그)]</span>
+<span style="color:#839496;">푸브 스트룩트 스타치 {</span>
+<span style="color:#839496;">파르치쿨라스: 베크&lt;파르치쿨라&gt;,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">임푸 스타치 {</span>
-<span style="color:#323232;">// 푼상 파라 크리아르 웅 노부 이스타두 바지우</span>
-<span style="color:#323232;">푸브 픙 네() -&gt; 세우프 {</span>
-<span style="color:#323232;">스타치 {</span>
-<span style="color:#323232;">파르치쿨라스: 베크::네(),</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">임푸 스타치 {</span>
+<span style="color:#839496;">// 푼상 파라 크리아르 웅 노부 이스타두 바지우</span>
+<span style="color:#839496;">푸브 픙 네() -&gt; 세우프 {</span>
+<span style="color:#839496;">스타치 {</span>
+<span style="color:#839496;">파르치쿨라스: 베크::네(),</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 푼상 파라 아지시오나르 우마 파르치쿨라 아우 이스타두</span>
-<span style="color:#323232;">푸브 픙 아지시오나르_파르치쿨라(&amp;무트 세우프, 파르치쿨라: 파르치쿨라) {</span>
-<span style="color:#323232;">세우프.파르치쿨라스.푸즈(파르치쿨라)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 푼상 파라 아지시오나르 우마 파르치쿨라 아우 이스타두</span>
+<span style="color:#839496;">푸브 픙 아지시오나르_파르치쿨라(&amp;무트 세우프, 파르치쿨라: 파르치쿨라) {</span>
+<span style="color:#839496;">세우프.파르치쿨라스.푸즈(파르치쿨라)</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 푼상 파라 헤모베르 우마 파르치쿨라 두 이스타두</span>
-<span style="color:#323232;">푸브 픙 헤모베르_파르치쿨라(&amp;무트 세우프, 인데스: 우지지) -&gt; 오프치옹&lt;파르치쿨라&gt; {</span>
-<span style="color:#323232;">이프 인데스 &lt; 세우프.파르치쿨라스.렝() {</span>
-<span style="color:#323232;">소미(세우프.파르치쿨라스.헤모비(인데스))</span>
-<span style="color:#323232;">} 에우시 {</span>
-<span style="color:#323232;">노니</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 푼상 파라 헤모베르 우마 파르치쿨라 두 이스타두</span>
+<span style="color:#839496;">푸브 픙 헤모베르_파르치쿨라(&amp;무트 세우프, 인데스: 우지지) -&gt; 오프치옹&lt;파르치쿨라&gt; {</span>
+<span style="color:#839496;">이프 인데스 &lt; 세우프.파르치쿨라스.렝() {</span>
+<span style="color:#839496;">소미(세우프.파르치쿨라스.헤모비(인데스))</span>
+<span style="color:#839496;">} 에우시 {</span>
+<span style="color:#839496;">노니</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 푼상 파라 오브테르 우마 헤페렌시아 아 우마 파르치쿨라 누 이스타두</span>
-<span style="color:#323232;">푸브 픙 오브테르_파르치쿨라(&amp;세우프, 인데스: 우지지) -&gt; 오프치옹&lt;&amp;파르치쿨라&gt; {</span>
-<span style="color:#323232;">세우프.파르치쿨라스.제트(인데스)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 푼상 파라 오브테르 우마 헤페렌시아 아 우마 파르치쿨라 누 이스타두</span>
+<span style="color:#839496;">푸브 픙 오브테르_파르치쿨라(&amp;세우프, 인데스: 우지지) -&gt; 오프치옹&lt;&amp;파르치쿨라&gt; {</span>
+<span style="color:#839496;">세우프.파르치쿨라스.제트(인데스)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-81">콩 우 스트룩트 스타치 이 수아스 푼송이스, 노수 우니베르수 토마 포르마, 페르미치 아지시오나르 이 헤모베르 파르치쿨라스, 지 마네이라 세구라 이 인포르마. 아고라 테무스 아 바지 솔리다 파라 시물라르 노수 우니베르수, 콩 후스트, 이눔스 이 스트룩트스, 세기무스 네시 쿠르수 인베르수.</p>
 <h2 id = "link-16">리치 티 악치옹 스트룩트</h2>
 <p id = "para-82">콩 우 스트룩트 스타치 프론투, 세기무스 아지안치, 에 오라 두 스트룩트 악치옹, 데피닌두 아송이스 임포르탄치스. 바무스 모델라르 아 인테라상 엔트리 파르치쿨라스 이 이스타두스, 아스 아송이스 키 오코헹 누 우니베르수, 콩 후스트, 이스타무스 프레파라두스.</p>
-<pre><span style="color:#323232;">#[데리비(데부그)]</span>
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">아지시오나르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">헤모베르파르치쿨라(우지지),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">#[데리비(데부그)]</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">아지시오나르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">헤모베르파르치쿨라(우지지),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">#[데리비(데부그)]</span>
-<span style="color:#323232;">푸브 스트룩트 인테락치옹 {</span>
-<span style="color:#323232;">스타치: 스타치,</span>
-<span style="color:#323232;">악치옹스: 베크&lt;악치옹&gt;,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#[데리비(데부그)]</span>
+<span style="color:#839496;">푸브 스트룩트 인테락치옹 {</span>
+<span style="color:#839496;">스타치: 스타치,</span>
+<span style="color:#839496;">악치옹스: 베크&lt;악치옹&gt;,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">임푸 인테락치옹 {</span>
-<span style="color:#323232;">// 푼상 파라 크리아르 우마 노바 인테라상 콩 웅 이스타두</span>
-<span style="color:#323232;">푸브 픙 네(스타치: 스타치) -&gt; 세우프 {</span>
-<span style="color:#323232;">인테락치옹 {</span>
-<span style="color:#323232;">스타치,</span>
-<span style="color:#323232;">악치옹스: 베크::네(),</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">임푸 인테락치옹 {</span>
+<span style="color:#839496;">// 푼상 파라 크리아르 우마 노바 인테라상 콩 웅 이스타두</span>
+<span style="color:#839496;">푸브 픙 네(스타치: 스타치) -&gt; 세우프 {</span>
+<span style="color:#839496;">인테락치옹 {</span>
+<span style="color:#839496;">스타치,</span>
+<span style="color:#839496;">악치옹스: 베크::네(),</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 푼상 파라 아지시오나르 우마 아상 아 리스타 지 아송이스</span>
-<span style="color:#323232;">푸브 픙 아지시오나르_아카우(&amp;무트 세우프, 악치옹: 악치옹) {</span>
-<span style="color:#323232;">세우프.악치옹스.푸즈(악치옹)</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 푼상 파라 아지시오나르 우마 아상 아 리스타 지 아송이스</span>
+<span style="color:#839496;">푸브 픙 아지시오나르_아카우(&amp;무트 세우프, 악치옹: 악치옹) {</span>
+<span style="color:#839496;">세우프.악치옹스.푸즈(악치옹)</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 푼상 파라 아플리카르 토다스 아스 아송이스 아르마제나다스 누 이스타두 아투아우</span>
-<span style="color:#323232;">푸브 픙 아플리카르_아코이스(&amp;무트 세우프) {</span>
-<span style="color:#323232;">포르 악치옹 잉 &amp;세우프.악치옹스 {</span>
-<span style="color:#323232;">마트시 악치옹 {</span>
-<span style="color:#323232;">악치옹::아지시오나르파르치쿨라(파르치쿨라) =&gt; {</span>
-<span style="color:#323232;">세우프.스타치.아지시오나르_파르치쿨라(파르치쿨라.클로니())</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">악치옹::헤모베르파르치쿨라(인데스) =&gt; {</span>
-<span style="color:#323232;">세우프.스타치.헤모베르_파르치쿨라(*인데스)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 푼상 파라 아플리카르 토다스 아스 아송이스 아르마제나다스 누 이스타두 아투아우</span>
+<span style="color:#839496;">푸브 픙 아플리카르_아코이스(&amp;무트 세우프) {</span>
+<span style="color:#839496;">포르 악치옹 잉 &amp;세우프.악치옹스 {</span>
+<span style="color:#839496;">마트시 악치옹 {</span>
+<span style="color:#839496;">악치옹::아지시오나르파르치쿨라(파르치쿨라) =&gt; {</span>
+<span style="color:#839496;">세우프.스타치.아지시오나르_파르치쿨라(파르치쿨라.클로니())</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">악치옹::헤모베르파르치쿨라(인데스) =&gt; {</span>
+<span style="color:#839496;">세우프.스타치.헤모베르_파르치쿨라(*인데스)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 림파르 아 리스타 지 아송이스 아포스 아플리카-라스</span>
-<span style="color:#323232;">세우프.악치옹스.클레아르()</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 림파르 아 리스타 지 아송이스 아포스 아플리카-라스</span>
+<span style="color:#839496;">세우프.악치옹스.클레아르()</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-83">우 스트룩트 악치옹 헤프레젠타 아송이스 누 우니베르수 모델라두, 아지시오나르 오 헤모베르 파르치쿨라스, 콩 프레시장 이 쿠이다두. 콩 우 스트룩트 인테락치옹, 아플리카무스 아송이스 아우 이스타두, 지 포르마 오르가니자다 이 클라라, 노수 코지구 이스타 아프리모라두.</p>
 <h2 id = "link-17">헤리치 티 파르치쿨라 이눙 수 이트 헤젬블리스 티 헤아우 우니베르시</h2>
 <p id = "para-84">아우 헤크리아르 우 이눙 파르치쿨라, 부스카무스 마이오르 프레시장, 헤프레젠탄두 우 우니베르수 헤아우, 콩 데탈리 이 아텐상. 잉클루이레무스 아스 포르사스 푼다멘타이스 이 수아스 인테라송이스, 우잔두 우스 이눔스 아프로프리아두스, 콩 후스트 이 수아스 이스프레송이스.</p>
-<pre><span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 파르치쿨라스 푼다멘타이스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크, 코르),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자오가우지(보자오가우지),</span>
-<span style="color:#323232;">보자오이그스,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 파르치쿨라스 푼다멘타이스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크, 코르),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자오가우지(보자오가우지),</span>
+<span style="color:#839496;">보자오이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 쿠아르크스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 쿠아르크 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 쿠아르크스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 코리스 두스 쿠아르크스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 코리스 두스 쿠아르크스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 레프통스</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">네우트리노엘레트롱,</span>
-<span style="color:#323232;">네우트리노무옹,</span>
-<span style="color:#323232;">네우트리노타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 레프통스</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">네우트리노엘레트롱,</span>
+<span style="color:#839496;">네우트리노무옹,</span>
+<span style="color:#839496;">네우트리노타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 우스 보종스 가우지</span>
-<span style="color:#323232;">#[데리비(데부그, 파르치알레크, 이크)]</span>
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통, // 포르사 일레트로마그네치카</span>
-<span style="color:#323232;">글루옹, // 포르사 포르치</span>
-<span style="color:#323232;">스, // 포르사 프라카</span>
-<span style="color:#323232;">플루스, // 포르사 프라카</span>
-<span style="color:#323232;">미누스, // 포르사 프라카</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 우스 보종스 가우지</span>
+<span style="color:#839496;">#[데리비(데부그, 파르치알레크, 이크)]</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통, // 포르사 일레트로마그네치카</span>
+<span style="color:#839496;">글루옹, // 포르사 포르치</span>
+<span style="color:#839496;">스, // 포르사 프라카</span>
+<span style="color:#839496;">플루스, // 포르사 프라카</span>
+<span style="color:#839496;">미누스, // 포르사 프라카</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-85">아고라, 우 이눙 파르치쿨라 헤플레치 멜료르 우 우니베르수 헤아우, 잉클루인두 쿠아르크스, 레프통스, 보종스 가우지 이 우 보종 지 이그스, 셍 이구아우. 데스타 포르마, 콩 이눔스 아주스타두스 이 코에렌치스, 아반사무스 나 시물라상 두 우니베르수, 콩 후스트 셈프리 아 프렌치.</p>
 <h2 id = "link-18">헤리치 티 악치옹 이눙 수 이트 헤젬블리스 티 헤아우 우니베르시 (레아비 티 인테락치옹 포르 라테르, 오르 헤밤프 이트)</h2>
 <p id = "para-86">아우 헤스크레베르 우 이눙 악치옹, 부스카무스 아프리모라르, 헤플레친두 우 우니베르수 헤아우, 콩 프레시장, 셍 팔랴르. 잉클루이레무스 아송이스 키 인보우방 파르치쿨라스 이 포르사스 푼다멘타이스, 지 포르마 콘시스텐치 이 이피카스, 콩 이눔스 마이스 하시오나이스.</p>
-<pre><span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 아송이스 누 우니베르수</span>
-<span style="color:#323232;">#[데리비(데부그)]</span>
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 포르카푼다멘타우),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 아송이스 누 우니베르수</span>
+<span style="color:#839496;">#[데리비(데부그)]</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 포르카푼다멘타우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 이눙 파라 헤프레젠타르 아스 포르사스 푼다멘타이스</span>
-<span style="color:#323232;">#[데리비(데부그)]</span>
-<span style="color:#323232;">푸브 이눙 포르카푼다멘타우 {</span>
-<span style="color:#323232;">일레트로마그네치카,</span>
-<span style="color:#323232;">프라카,</span>
-<span style="color:#323232;">포르치,</span>
-<span style="color:#323232;">그라비타시오나우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">// 이눙 파라 헤프레젠타르 아스 포르사스 푼다멘타이스</span>
+<span style="color:#839496;">#[데리비(데부그)]</span>
+<span style="color:#839496;">푸브 이눙 포르카푼다멘타우 {</span>
+<span style="color:#839496;">일레트로마그네치카,</span>
+<span style="color:#839496;">프라카,</span>
+<span style="color:#839496;">포르치,</span>
+<span style="color:#839496;">그라비타시오나우,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-87">아고라, 우 이눙 악치옹 멜료르 헤프레젠타 우 우니베르수 헤아우, 콩 크리아상, 아니킬라상 이 인테라상 지 파르치쿨라스, 셍 이구아우. 데이샤무스 우 스트룩트 인테락치옹 파라 우마 헤비장 푸투라, 콩 후스트 이 이눔스 아프리모라두스, 노사 시물라상 에 마이스 푸라.</p>
 <h2 id = "link-19">마키 테지 아스 콤플레치 아스 포시블리 위트 일레가우 스타치스 운헤프레젠타블리 베포리 위 모비 투 스트룩트스</h2>
 <p id = "para-88">&lt; 파라 가란치르 키 우스 이스타두스 일레가이스 낭 세장 헤프레젠타베이스, 바무스 아지시오나르 아우구마스 헤스트리송이스 아우스 이눔스 키 헤프레젠탕 아스 파르치쿨라스 이 아송이스 두 우니베르수. 데사 포르마, 만테레무스 아 코에렌시아 이 아 인테그리다지 지 노수 모델루.</p>
-<pre><span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크, 코르),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자오가우지(보자오가우지),</span>
-<span style="color:#323232;">보자오이그스,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크, 코르),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자오가우지(보자오가우지),</span>
+<span style="color:#839496;">보자오이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 쿠아르크 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">네우트리노엘레트롱,</span>
-<span style="color:#323232;">네우트리노무옹,</span>
-<span style="color:#323232;">네우트리노타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">네우트리노엘레트롱,</span>
+<span style="color:#839496;">네우트리노무옹,</span>
+<span style="color:#839496;">네우트리노타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통, // 포르사 일레트로마그네치카</span>
-<span style="color:#323232;">글루옹, // 포르사 포르치</span>
-<span style="color:#323232;">스, // 포르사 프라카</span>
-<span style="color:#323232;">플루스, // 포르사 프라카</span>
-<span style="color:#323232;">미누스, // 포르사 프라카</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통, // 포르사 일레트로마그네치카</span>
+<span style="color:#839496;">글루옹, // 포르사 포르치</span>
+<span style="color:#839496;">스, // 포르사 프라카</span>
+<span style="color:#839496;">플루스, // 포르사 프라카</span>
+<span style="color:#839496;">미누스, // 포르사 프라카</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 포르카푼다멘타우),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 포르카푼다멘타우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 포르카푼다멘타우 {</span>
-<span style="color:#323232;">일레트로마그네치카,</span>
-<span style="color:#323232;">프라카,</span>
-<span style="color:#323232;">포르치,</span>
-<span style="color:#323232;">그라비타시오나우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 포르카푼다멘타우 {</span>
+<span style="color:#839496;">일레트로마그네치카,</span>
+<span style="color:#839496;">프라카,</span>
+<span style="color:#839496;">포르치,</span>
+<span style="color:#839496;">그라비타시오나우,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-89">우스 이눔스 아시마 자 가란텡 우마 모델라젱 콘시스텐치 두 우니베르수 지 파르치쿨라스 이 수아스 인테라송이스. 파라 토르나르 우스 이스타두스 일레가이스 이헤프레젠타베이스, 세리아 네세사리우 아지시오나르 헤그라스 마이스 콤플레샤스, 코무 아스 헤스트리송이스 지 콘세르바상 지 이네르지아, 모멘투 이 카르가. 누 인탄투, 에사스 헤스트리송이스 세리앙 멜료르 아플리카다스 잉 푼송이스 이 베리피카송이스 이스페시피카스, 잉 베스 지 누스 프로프리우스 이눔스.</p>
 <p id = "para-90">아 이스트루투라 아투아우 두스 이눔스 가란치 키 아스 파르치쿨라스 이 아송이스 세장 헤프레젠타다스 지 포르마 코에렌치 이 오르가니자다. 파라 아지시오나르 마이스 헤스트리송이스 이 만테르 아 인테그리다지 두 모델루, 세리아 네세사리우 임플레멘타르 푼송이스 이 베리피카송이스 이스페시피카스 두란치 아 인테라상 엔트리 파르치쿨라스 이 아송이스, 코무 멘시오나두 안테리오르멘치.</p>
 <h2 id = "link-20">마키 테지 아스 콤플레치 아스 포시블리 위트 일레가우 스타치스 운헤프레젠타블리 베포리 위 모비 투 스트룩트스 (1)</h2>
 <p id = "para-91">투 마키 일레가우 스타치스 운헤프레젠타블리, 요 캉 헤팍토르 티 이눔스 안드 우지 투플리 스트룩트스 투 모리 치그틀리 코플리 헬라테드 인포르마치옹. 에리’스 아 헤비제드 베르시옹 오프 티 코지:</p>
-<pre><span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자오가우지(보자오가우지),</span>
-<span style="color:#323232;">보자오이그스,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자오가우지(보자오가우지),</span>
+<span style="color:#839496;">보자오이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 쿠아르크 {</span>
-<span style="color:#323232;">치푸: 쿠아르크치푸,</span>
-<span style="color:#323232;">코르: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 쿠아르크 {</span>
+<span style="color:#839496;">치푸: 쿠아르크치푸,</span>
+<span style="color:#839496;">코르: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 쿠아르크치푸 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크치푸 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">네우트리누(네우트리노치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">네우트리누(네우트리노치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 네우트리노치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 네우트리노치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통, // 포르사 일레트로마그네치카</span>
-<span style="color:#323232;">글루옹(코르), // 포르사 포르치</span>
-<span style="color:#323232;">스, // 포르사 프라카</span>
-<span style="color:#323232;">(치푸), // 포르사 프라카</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통, // 포르사 일레트로마그네치카</span>
+<span style="color:#839496;">글루옹(코르), // 포르사 포르치</span>
+<span style="color:#839496;">스, // 포르사 프라카</span>
+<span style="color:#839496;">(치푸), // 포르사 프라카</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 치푸 {</span>
-<span style="color:#323232;">플루스,</span>
-<span style="color:#323232;">미누스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 치푸 {</span>
+<span style="color:#839496;">플루스,</span>
+<span style="color:#839496;">미누스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 포르카푼다멘타우),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 포르카푼다멘타우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 포르카푼다멘타우 {</span>
-<span style="color:#323232;">일레트로마그네치카,</span>
-<span style="color:#323232;">프라카,</span>
-<span style="color:#323232;">포르치,</span>
-<span style="color:#323232;">그라비타시오나우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 포르카푼다멘타우 {</span>
+<span style="color:#839496;">일레트로마그네치카,</span>
+<span style="color:#839496;">프라카,</span>
+<span style="color:#839496;">포르치,</span>
+<span style="color:#839496;">그라비타시오나우,</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-92">에리 아리 티 샨지스:</p>
 <p id = "para-93">위 크레아테드 아 쿠아르크 스트룩트 투 콤비니 티 쿠아르크치푸 안드 코르 이눔스. 위 세파라테드 티 네우트리누 치페스 인투 아 네 네우트리노치푸 이눙 안드 크레아테드 아 레프타우::네우트리누 바리안트 타트 타키스 아 네우트리노치푸 발루이. 위 아데드 아 코르 파라메테르 투 티 보자오가우지::글루옹 바리안트 베카우지 글루옹스 아리 아소시아테드 위트 티 스트롱그 포르시 안드 콜로르 샤르지. 위 크레아테드 아 치푸 이눙 투 헤프레젠트 티 보종 치페스 (플루스 안드 미누스) 안드 헤플라세드 티 세파라치 플루스 안드 미누스 바리안트스 위트 아 싱글리 보자오가우지:: 바리안트 타트 타키스 아 치푸 발루이. 테지 샨지스 마키 티 코지 모리 이스플리시트 아보트 티 헬라치온지프스 베트웽 티 지페렌트 파르치클리 치페스 안드 테이르 프로페르치스, 마킹그 이트 아르데르 투 헤프레젠트 일레가우 스타치스.</p>
 <h2 id = "link-21">포르 아 스타치 오프 티 아르트 임플레멘타치옹, 마키 테지 아스 콤플레치 아스 포시블리 위트 일레가우 스타치스 운헤프레젠타블리 베포리 위 모비 투 스트룩트스</h2>
 <p id = "para-94">&lt; 이’비 마지 샨지스 투 요르 코지 투 마키 일레가우 스타치스 운헤프레젠타블리. 이 인트로두세드 아 코르글루옹 이눙 투 헤프레젠트 티 스페시피크 콤비나치옹스 오프 콜로르스 알로웨드 포르 글루옹스. 이 아우수 인트로두세드 앙 인테라카우 이눙 투 헤프레젠트 인테락치옹스 베트웽 파르치클리스, 헤모빙그 티 네드 포르 포르카푼다멘타우.</p>
-<pre><span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자오가우지(보자오가우지),</span>
-<span style="color:#323232;">보자오이그스,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자오가우지(보자오가우지),</span>
+<span style="color:#839496;">보자오이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 쿠아르크 {</span>
-<span style="color:#323232;">치푸: 쿠아르크치푸,</span>
-<span style="color:#323232;">코르: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 쿠아르크 {</span>
+<span style="color:#839496;">치푸: 쿠아르크치푸,</span>
+<span style="color:#839496;">코르: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 쿠아르크치푸 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크치푸 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">네우트리누(네우트리노치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">네우트리누(네우트리노치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 네우트리노치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 네우트리노치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통, // 포르사 일레트로마그네치카</span>
-<span style="color:#323232;">글루옹(코르글루옹), // 포르사 포르치</span>
-<span style="color:#323232;">스, // 포르사 프라카</span>
-<span style="color:#323232;">(치푸), // 포르사 프라카</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통, // 포르사 일레트로마그네치카</span>
+<span style="color:#839496;">글루옹(코르글루옹), // 포르사 포르치</span>
+<span style="color:#839496;">스, // 포르사 프라카</span>
+<span style="color:#839496;">(치푸), // 포르사 프라카</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 치푸 {</span>
-<span style="color:#323232;">플루스,</span>
-<span style="color:#323232;">미누스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 치푸 {</span>
+<span style="color:#839496;">플루스,</span>
+<span style="color:#839496;">미누스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르글루옹 {</span>
-<span style="color:#323232;">베르멜료아줄,</span>
-<span style="color:#323232;">베르멜료베르지,</span>
-<span style="color:#323232;">아주우베르멜류,</span>
-<span style="color:#323232;">아주우베르지,</span>
-<span style="color:#323232;">베르데베르멜류,</span>
-<span style="color:#323232;">베르데아줄,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르글루옹 {</span>
+<span style="color:#839496;">베르멜료아줄,</span>
+<span style="color:#839496;">베르멜료베르지,</span>
+<span style="color:#839496;">아주우베르멜류,</span>
+<span style="color:#839496;">아주우베르지,</span>
+<span style="color:#839496;">베르데베르멜류,</span>
+<span style="color:#839496;">베르데아줄,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 인테라카우 {</span>
-<span style="color:#323232;">일레트로마그네치카(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">프라카(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">포르치(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">그라비타시오나우(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 인테라카우 {</span>
+<span style="color:#839496;">일레트로마그네치카(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">프라카(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">포르치(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">그라비타시오나우(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-95">티스 임플레멘타치옹 인수리스 타트 온리 발리드 콤비나치옹스 오프 파르치클리 프로페르치스 아리 알로웨드, 수시 아스 글루옹스 아빙그 스페시피크 콜로르 콤비나치옹스, 안드 인테락치옹스 베트웽 파르치클리스 아리 이스플리시틀리 헤프레젠테드.</p>
 <h2 id = "link-22">포르 아 스타치 오프 티 아르트 임플레멘타치옹, 마키 테지 아스 콤플레치 아스 포시블리 위트 일레가우 스타치스 운헤프레젠타블리 베포리 위 모비 투 스트룩트스 (1)</h2>
 <p id = "para-96">잉 오르데르 투 마키 일레가우 스타치스 운헤프레젠타블리, 위 캉 우지 후스트’스 치피 시스텡 투 인포르시 티 훌리스 오프 티 스탄다르드 모데우. 티스 위우 인보우비 모지핑그 티 이지스칭그 코지 투 크레아치 모리 프레시지 치페스 안드 헬라치온지프스 베트웽 텡. 에리’스 앙 이잠플리 임플레멘타치옹:</p>
-<pre><span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자우(보자우),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자우(보자우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 쿠아르크 {</span>
-<span style="color:#323232;">치푸: 쿠아르크치푸,</span>
-<span style="color:#323232;">코르: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 쿠아르크 {</span>
+<span style="color:#839496;">치푸: 쿠아르크치푸,</span>
+<span style="color:#839496;">코르: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 쿠아르크치푸 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크치푸 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱(일레트론치푸),</span>
-<span style="color:#323232;">네우트리누(네우트리노치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱(일레트론치푸),</span>
+<span style="color:#839496;">네우트리누(네우트리노치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 일레트론치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 일레트론치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 네우트리노치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 네우트리노치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자우 {</span>
-<span style="color:#323232;">가우지(보자오가우지),</span>
-<span style="color:#323232;">이그스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자우 {</span>
+<span style="color:#839496;">가우지(보자오가우지),</span>
+<span style="color:#839496;">이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통,</span>
-<span style="color:#323232;">글루옹(코르글루옹),</span>
-<span style="color:#323232;">스,</span>
-<span style="color:#323232;">(치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통,</span>
+<span style="color:#839496;">글루옹(코르글루옹),</span>
+<span style="color:#839496;">스,</span>
+<span style="color:#839496;">(치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 치푸 {</span>
-<span style="color:#323232;">플루스,</span>
-<span style="color:#323232;">미누스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 치푸 {</span>
+<span style="color:#839496;">플루스,</span>
+<span style="color:#839496;">미누스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르글루옹 {</span>
-<span style="color:#323232;">베르멜료아줄,</span>
-<span style="color:#323232;">베르멜료베르지,</span>
-<span style="color:#323232;">아주우베르멜류,</span>
-<span style="color:#323232;">아주우베르지,</span>
-<span style="color:#323232;">베르데베르멜류,</span>
-<span style="color:#323232;">베르데아줄,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르글루옹 {</span>
+<span style="color:#839496;">베르멜료아줄,</span>
+<span style="color:#839496;">베르멜료베르지,</span>
+<span style="color:#839496;">아주우베르멜류,</span>
+<span style="color:#839496;">아주우베르지,</span>
+<span style="color:#839496;">베르데베르멜류,</span>
+<span style="color:#839496;">베르데아줄,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 인테라카우 {</span>
-<span style="color:#323232;">일레트로마그네치카(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">프라카(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">포르치(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">그라비타시오나우(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 인테라카우 {</span>
+<span style="color:#839496;">일레트로마그네치카(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">프라카(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">포르치(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">그라비타시오나우(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-97">티스 코지 아스 벵 헤스트룩투레드 투 크레아치 모리 아쿠라치 헬라치온지프스 베트웽 파르치클리 치페스. 포르 이잠플리, 레프통스 아리 노 수브지비데드 인투 일레트론치푸 안드 네우트리노치푸 이눔스. 티스 와이, 일레가우 스타치스 소우드 비 운헤프레젠타블리, 인수링그 타트 요르 임플레멘타치옹 이스 모리 아쿠라치 안드 콤플레치.</p>
 <h2 id = "link-23">포르 아 스타치 오프 티 아르트 임플레멘타치옹, 마키 테지 아스 콤플레치 아스 포시블리 위트 일레가우 스타치스 운헤프레젠타블리 일리 아트 티 사미 치미 콘시지 베포리 위 모비 투 스트룩트스</h2>
 <p id = "para-98">&lt; 투 마키 티 임플레멘타치옹 콘시지 안드 위트 일레가우 스타치스 운헤프레젠타블리, 위 캉 레베라지 후스트’스 치피 시스텡 투 인포르시 티 코헥트 헬라치온지프스 베트웽 파르치클리스 안드 테이르 프로페르치스. 에리’스 아 헤비제드 베르시옹 오프 요르 코지:</p>
-<pre><span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자우(보자우),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자우(보자우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 쿠아르크 {</span>
-<span style="color:#323232;">치푸: 쿠아르크치푸,</span>
-<span style="color:#323232;">코르: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 쿠아르크 {</span>
+<span style="color:#839496;">치푸: 쿠아르크치푸,</span>
+<span style="color:#839496;">코르: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 쿠아르크치푸 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크치푸 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱(일레트론치푸),</span>
-<span style="color:#323232;">네우트리누(네우트리노치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱(일레트론치푸),</span>
+<span style="color:#839496;">네우트리누(네우트리노치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 일레트론치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 일레트론치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 네우트리노치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 네우트리노치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자우 {</span>
-<span style="color:#323232;">가우지(보자오가우지),</span>
-<span style="color:#323232;">이그스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자우 {</span>
+<span style="color:#839496;">가우지(보자오가우지),</span>
+<span style="color:#839496;">이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통,</span>
-<span style="color:#323232;">글루옹(글루옹),</span>
-<span style="color:#323232;">스,</span>
-<span style="color:#323232;">(치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통,</span>
+<span style="color:#839496;">글루옹(글루옹),</span>
+<span style="color:#839496;">스,</span>
+<span style="color:#839496;">(치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 글루옹 {</span>
-<span style="color:#323232;">코르1: 코르,</span>
-<span style="color:#323232;">코르2: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 글루옹 {</span>
+<span style="color:#839496;">코르1: 코르,</span>
+<span style="color:#839496;">코르2: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 치푸 {</span>
-<span style="color:#323232;">플루스,</span>
-<span style="color:#323232;">미누스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 치푸 {</span>
+<span style="color:#839496;">플루스,</span>
+<span style="color:#839496;">미누스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">임푸 글루옹 {</span>
-<span style="color:#323232;">푸브 픙 네(코르1: 코르, 코르2: 코르) -&gt; 헤주우트&lt;글루옹, &amp;&#39;스타치크 스트르&gt; {</span>
-<span style="color:#323232;">마트시 (코르1, 코르2) {</span>
-<span style="color:#323232;">(코르::베르멜류, 코르::아줄) | (코르::아줄, 코르::베르멜류)</span>
-<span style="color:#323232;">| (코르::베르멜류, 코르::베르지) | (코르::베르지, 코르::베르멜류)</span>
-<span style="color:#323232;">| (코르::아줄, 코르::베르지) | (코르::베르지, 코르::아줄) =&gt; 오크(글루옹 { 코르1, 코르2 }),</span>
-<span style="color:#323232;">_ =&gt; 이흐(&quot;인발리드 콜로르 콤비나치옹 포르 글루옹&quot;),</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">임푸 글루옹 {</span>
+<span style="color:#839496;">푸브 픙 네(코르1: 코르, 코르2: 코르) -&gt; 헤주우트&lt;글루옹, &amp;&#39;스타치크 스트르&gt; {</span>
+<span style="color:#839496;">마트시 (코르1, 코르2) {</span>
+<span style="color:#839496;">(코르::베르멜류, 코르::아줄) | (코르::아줄, 코르::베르멜류)</span>
+<span style="color:#839496;">| (코르::베르멜류, 코르::베르지) | (코르::베르지, 코르::베르멜류)</span>
+<span style="color:#839496;">| (코르::아줄, 코르::베르지) | (코르::베르지, 코르::아줄) =&gt; 오크(글루옹 { 코르1, 코르2 }),</span>
+<span style="color:#839496;">_ =&gt; 이흐(&quot;인발리드 콜로르 콤비나치옹 포르 글루옹&quot;),</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 인테라카우 {</span>
-<span style="color:#323232;">일레트로마그네치카(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">프라카(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">포르치(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">그라비타시오나우(파르치쿨라, 파르치쿨라),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 인테라카우 {</span>
+<span style="color:#839496;">일레트로마그네치카(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">프라카(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">포르치(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">그라비타시오나우(파르치쿨라, 파르치쿨라),</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-99">티 모스트 시그니피칸트 샨지 이스 티 인트로둑치옹 오프 티 글루옹 스트룩트, 이시 헤플라시스 티 코르글루옹 이눙. 티스 알로스 우스 투 인포르시 티 발리드 콜로르 콤비나치옹스 포르 글루옹스 비 임플레멘칭그 티 네 메토드. 티 메토드 헤투릉스 아 헤주우트 타트 이테르 콘타잉스 아 발리드 글루옹 오르 앙 이호르 메사지 이프 티 콜로르 콤비나치옹 이스 인발리드.</p>
 <h2 id = "link-24">포르 아 스타치 오프 티 아르트 임플레멘타치옹, 마키 테지 아스 콤플레치 아스 포시블리 위트 일레가우 스타치스 운헤프레젠타블리 일리 아트 티 사미 치미 콘시지 베포리 위 모비 투 스트룩트스 (1)</h2>
 <p id = "para-100">&lt; 요’비 도니 아 고드 조브 오프 헤프레젠칭그 티 파르치클리스 안드 테이르 프로페르치스. 투 마키 일레가우 스타치스 운헤프레젠타블리, 이 수제스트 요 잉카프술라치 소미 오프 티 로지크 위팅 티 이눙 안드 스트룩트 데피니치옹스. 에리 이스 아 헤비제드 베르시옹 오프 요르 코지:</p>
-<pre><span style="color:#323232;">푸브 이눙 파르치쿨라 {</span>
-<span style="color:#323232;">쿠아르크(쿠아르크),</span>
-<span style="color:#323232;">레프타우(레프타우),</span>
-<span style="color:#323232;">보자우(보자우),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">푸브 이눙 파르치쿨라 {</span>
+<span style="color:#839496;">쿠아르크(쿠아르크),</span>
+<span style="color:#839496;">레프타우(레프타우),</span>
+<span style="color:#839496;">보자우(보자우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 쿠아르크 {</span>
-<span style="color:#323232;">치푸: 쿠아르크치푸,</span>
-<span style="color:#323232;">코르: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 쿠아르크 {</span>
+<span style="color:#839496;">치푸: 쿠아르크치푸,</span>
+<span style="color:#839496;">코르: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 쿠아르크치푸 {</span>
-<span style="color:#323232;">우프,</span>
-<span style="color:#323232;">동,</span>
-<span style="color:#323232;">샤릉,</span>
-<span style="color:#323232;">스트란지,</span>
-<span style="color:#323232;">토프,</span>
-<span style="color:#323232;">보통,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 쿠아르크치푸 {</span>
+<span style="color:#839496;">우프,</span>
+<span style="color:#839496;">동,</span>
+<span style="color:#839496;">샤릉,</span>
+<span style="color:#839496;">스트란지,</span>
+<span style="color:#839496;">토프,</span>
+<span style="color:#839496;">보통,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 코르 {</span>
-<span style="color:#323232;">베르멜류,</span>
-<span style="color:#323232;">아줄,</span>
-<span style="color:#323232;">베르지,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 코르 {</span>
+<span style="color:#839496;">베르멜류,</span>
+<span style="color:#839496;">아줄,</span>
+<span style="color:#839496;">베르지,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 레프타우 {</span>
-<span style="color:#323232;">일레트롱(일레트론치푸),</span>
-<span style="color:#323232;">네우트리누(네우트리노치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 레프타우 {</span>
+<span style="color:#839496;">일레트롱(일레트론치푸),</span>
+<span style="color:#839496;">네우트리누(네우트리노치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 일레트론치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 일레트론치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 네우트리노치푸 {</span>
-<span style="color:#323232;">일레트롱,</span>
-<span style="color:#323232;">무옹,</span>
-<span style="color:#323232;">타우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 네우트리노치푸 {</span>
+<span style="color:#839496;">일레트롱,</span>
+<span style="color:#839496;">무옹,</span>
+<span style="color:#839496;">타우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자우 {</span>
-<span style="color:#323232;">가우지(보자오가우지),</span>
-<span style="color:#323232;">이그스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자우 {</span>
+<span style="color:#839496;">가우지(보자오가우지),</span>
+<span style="color:#839496;">이그스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 보자오가우지 {</span>
-<span style="color:#323232;">포통,</span>
-<span style="color:#323232;">글루옹(글루옹),</span>
-<span style="color:#323232;">스,</span>
-<span style="color:#323232;">(치푸),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 보자오가우지 {</span>
+<span style="color:#839496;">포통,</span>
+<span style="color:#839496;">글루옹(글루옹),</span>
+<span style="color:#839496;">스,</span>
+<span style="color:#839496;">(치푸),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 스트룩트 글루옹 {</span>
-<span style="color:#323232;">코르1: 코르,</span>
-<span style="color:#323232;">코르2: 코르,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 스트룩트 글루옹 {</span>
+<span style="color:#839496;">코르1: 코르,</span>
+<span style="color:#839496;">코르2: 코르,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 치푸 {</span>
-<span style="color:#323232;">플루스,</span>
-<span style="color:#323232;">미누스,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 치푸 {</span>
+<span style="color:#839496;">플루스,</span>
+<span style="color:#839496;">미누스,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">임푸 글루옹 {</span>
-<span style="color:#323232;">푸브 픙 네(코르1: 코르, 코르2: 코르) -&gt; 헤주우트&lt;글루옹, &amp;&#39;스타치크 스트르&gt; {</span>
-<span style="color:#323232;">마트시 (코르1, 코르2) {</span>
-<span style="color:#323232;">(코르::베르멜류, 코르::아줄) | (코르::아줄, 코르::베르멜류)</span>
-<span style="color:#323232;">| (코르::베르멜류, 코르::베르지) | (코르::베르지, 코르::베르멜류)</span>
-<span style="color:#323232;">| (코르::아줄, 코르::베르지) | (코르::베르지, 코르::아줄) =&gt; 오크(글루옹 { 코르1, 코르2 }),</span>
-<span style="color:#323232;">_ =&gt; 이흐(&quot;인발리드 콜로르 콤비나치옹 포르 글루옹&quot;),</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">임푸 글루옹 {</span>
+<span style="color:#839496;">푸브 픙 네(코르1: 코르, 코르2: 코르) -&gt; 헤주우트&lt;글루옹, &amp;&#39;스타치크 스트르&gt; {</span>
+<span style="color:#839496;">마트시 (코르1, 코르2) {</span>
+<span style="color:#839496;">(코르::베르멜류, 코르::아줄) | (코르::아줄, 코르::베르멜류)</span>
+<span style="color:#839496;">| (코르::베르멜류, 코르::베르지) | (코르::베르지, 코르::베르멜류)</span>
+<span style="color:#839496;">| (코르::아줄, 코르::베르지) | (코르::베르지, 코르::아줄) =&gt; 오크(글루옹 { 코르1, 코르2 }),</span>
+<span style="color:#839496;">_ =&gt; 이흐(&quot;인발리드 콜로르 콤비나치옹 포르 글루옹&quot;),</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 악치옹 {</span>
-<span style="color:#323232;">크리아르파르치쿨라(파르치쿨라),</span>
-<span style="color:#323232;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
-<span style="color:#323232;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 악치옹 {</span>
+<span style="color:#839496;">크리아르파르치쿨라(파르치쿨라),</span>
+<span style="color:#839496;">아니킬라르파르치쿨라스(우지지, 우지지),</span>
+<span style="color:#839496;">인테라지르파르치쿨라스(우지지, 우지지, 인테라카우),</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">푸브 이눙 인테라카우 {</span>
-<span style="color:#323232;">일레트로마그네치카,</span>
-<span style="color:#323232;">프라카,</span>
-<span style="color:#323232;">포르치,</span>
-<span style="color:#323232;">그라비타시오나우,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">푸브 이눙 인테라카우 {</span>
+<span style="color:#839496;">일레트로마그네치카,</span>
+<span style="color:#839496;">프라카,</span>
+<span style="color:#839496;">포르치,</span>
+<span style="color:#839496;">그라비타시오나우,</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">임푸 인테라카우 {</span>
-<span style="color:#323232;">푸브 픙 발리다르_인테라카우(&amp;세우프, 파르치쿨라1: &amp;파르치쿨라, 파르치쿨라2: &amp;파르치쿨라) -&gt; 헤주우트&lt;(), &amp;&#39;스타치크 스트르&gt; {</span>
-<span style="color:#323232;">마트시 세우프 {</span>
-<span style="color:#323232;">인테라카우::일레트로마그네치카 =&gt; {</span>
-<span style="color:#323232;">// 발리다치 일렉트로마그네치크 인테락치옹</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">인테라카우::프라카 =&gt; {</span>
-<span style="color:#323232;">// 발리다치 웨아크 인테락치옹</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">인테라카우::포르치 =&gt; {</span>
-<span style="color:#323232;">// 발리다치 스트롱그 인테락치옹</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">인테라카우::그라비타시오나우 =&gt; {</span>
-<span style="color:#323232;">// 발리다치 그라비타치오나우 인테락치옹</span>
-<span style="color:#323232;">},</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">임푸 인테라카우 {</span>
+<span style="color:#839496;">푸브 픙 발리다르_인테라카우(&amp;세우프, 파르치쿨라1: &amp;파르치쿨라, 파르치쿨라2: &amp;파르치쿨라) -&gt; 헤주우트&lt;(), &amp;&#39;스타치크 스트르&gt; {</span>
+<span style="color:#839496;">마트시 세우프 {</span>
+<span style="color:#839496;">인테라카우::일레트로마그네치카 =&gt; {</span>
+<span style="color:#839496;">// 발리다치 일렉트로마그네치크 인테락치옹</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">인테라카우::프라카 =&gt; {</span>
+<span style="color:#839496;">// 발리다치 웨아크 인테락치옹</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">인테라카우::포르치 =&gt; {</span>
+<span style="color:#839496;">// 발리다치 스트롱그 인테락치옹</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">인테라카우::그라비타시오나우 =&gt; {</span>
+<span style="color:#839496;">// 발리다치 그라비타치오나우 인테락치옹</span>
+<span style="color:#839496;">},</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
 </pre><p id = "para-101">비 아징그 티 발리다르_인테라카우 메토드 투 티 인테라카우 이눙, 요 캉 잉카프술라치 티 로지크 오프 발리다칭그 티 인테락치옹스 베트웽 티 파르치클리스. 티스 위우 에우프 인수리 일레가우 스타치스 아리 운헤프레젠타블리.</p>
 <p id = "para-102">요’르 네드 투 임플레멘트 티 발리다치옹 로지크 포르 이아시 인테락치옹 치피 잉 티 발리다르_인테라카우 메토드. 이프 티 인테락치옹 이스 발리드, 티 메토드 위우 헤투릉 오크(()), 오테르위지 이트 위우 헤투릉 앙 이호르 위트 아 메사지.</p>

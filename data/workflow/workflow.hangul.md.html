@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -617,6 +672,7 @@ function toggle() {
       <li><a href="#link-46">크레아치 아 네 호우 테시니키 콘시데링그 베드 치미</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -624,12 +680,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -758,217 +817,217 @@ function toggle() {
 <h2 id = "link-8">잉코지 티 테시니키 우징그 프# 지스크리미나테드 우니옹 헤쿠르시비 헬라치온지프스 (코넥테드 비 티 ‘안드’ 토켕) 위트 헤키레드 프로페르치 바제드 테스트스 우징그 프스셰크+이스펙투</h2>
 <p id = "para-63">&lt; 펠루 키 인텐지, 보세 고스타리아 키 아 테크니카 두스 다두스 멘타우 포시 코지피카다 우잔두 지스크리미나테드 우니옹스 (두) 잉 프#, 벵 코무 테스치스 지 프로프리에다지 우잔두 프스셰크 이 이스펙투.</p>
 <p id = "para-64">우스 두스 잉 프# 상 우자두스 파라 헤프레젠타르 발로리스 키 포뎅 세르 웅 지 바리우스 치푸스 포시베이스. 바무스 코메사르 데피닌두 우스 치푸스 지 다두스 키 프레시자무스:</p>
-<pre><span style="color:#323232;">치피 콤플레시치 = 심플리 | 모데라치 | 콤플레스</span>
-<span style="color:#323232;">치피 이포르트 = 리그트 | 메지웅 | 에아비</span>
-<span style="color:#323232;">치피 지시 = { 드1: 인트 드2: 인트 }</span>
-<span style="color:#323232;">치피 타스크 = { 콤플레시치: 콤플레시치 이포르트: 이포르트 두라치옹: 인트 }</span>
+<pre><span style="color:#839496;">치피 콤플레시치 = 심플리 | 모데라치 | 콤플레스</span>
+<span style="color:#839496;">치피 이포르트 = 리그트 | 메지웅 | 에아비</span>
+<span style="color:#839496;">치피 지시 = { 드1: 인트 드2: 인트 }</span>
+<span style="color:#839496;">치피 타스크 = { 콤플레시치: 콤플레시치 이포르트: 이포르트 두라치옹: 인트 }</span>
 
 
 </pre><p id = "para-65">아키, 데피니무스 우 이스포르수 이 아 콤플레시다지 코무 치푸스 두, 카다 웅 콩 트레스 포시베이스 발로리스. 탐벵 데피니무스 웅 헤지스트루 파라 아 조가다 지 다두스 이 웅 파라 아 타레파.</p>
 <p id = "para-66">포데무스 아고라 데피니르 우마 푼상 파라 크리아르 우마 노바 타레파 아 파르치르 지 우마 조가다 지 다두스:</p>
-<pre><span style="color:#323232;">레트 제네라테타스크 지시 =</span>
-<span style="color:#323232;">레트 콤플레시치 =</span>
-<span style="color:#323232;">마트시 지시.드1 * 지시.드2 위트</span>
-<span style="color:#323232;">| 응 엥 응 &lt;= 12 -&gt; 심플리</span>
-<span style="color:#323232;">| 응 엥 응 &lt;= 24 -&gt; 모데라치</span>
-<span style="color:#323232;">| _ -&gt; 콤플레스</span>
+<pre><span style="color:#839496;">레트 제네라테타스크 지시 =</span>
+<span style="color:#839496;">레트 콤플레시치 =</span>
+<span style="color:#839496;">마트시 지시.드1 * 지시.드2 위트</span>
+<span style="color:#839496;">| 응 엥 응 &lt;= 12 -&gt; 심플리</span>
+<span style="color:#839496;">| 응 엥 응 &lt;= 24 -&gt; 모데라치</span>
+<span style="color:#839496;">| _ -&gt; 콤플레스</span>
 
-<span style="color:#323232;">레트 이포르트 =</span>
-<span style="color:#323232;">마트시 지시.드1 + 지시.드2 위트</span>
-<span style="color:#323232;">| 응 엥 응 &lt;= 4 -&gt; 리그트</span>
-<span style="color:#323232;">| 응 엥 응 &lt;= 8 -&gt; 메지웅</span>
-<span style="color:#323232;">| _ -&gt; 에아비</span>
+<span style="color:#839496;">레트 이포르트 =</span>
+<span style="color:#839496;">마트시 지시.드1 + 지시.드2 위트</span>
+<span style="color:#839496;">| 응 엥 응 &lt;= 4 -&gt; 리그트</span>
+<span style="color:#839496;">| 응 엥 응 &lt;= 8 -&gt; 메지웅</span>
+<span style="color:#839496;">| _ -&gt; 에아비</span>
 
-<span style="color:#323232;">레트 두라치옹 = 지시.드1 + 지시.드2</span>
+<span style="color:#839496;">레트 두라치옹 = 지시.드1 + 지시.드2</span>
 
-<span style="color:#323232;">{ 콤플레시치 = 콤플레시치 이포르트 = 이포르트 두라치옹 = 두라치옹 }</span>
+<span style="color:#839496;">{ 콤플레시치 = 콤플레시치 이포르트 = 이포르트 두라치옹 = 두라치옹 }</span>
 
 
 </pre><p id = "para-67">아키, 우자무스 코헤스폰덴시아 지 파드롱이스 (파테릉 마트싱그) 파라 데테르미나르 아 콤플레시다지 이 우 이스포르수 콩 바지 나 조가다 두스 다두스.</p>
 <p id = "para-68">아고라, 파라 아 파르치 지 테스치스 지 프로프리에다지, 포데리아무스 우자르 프스셰크 이 이스펙투 파라 테스타르 노사 푼상 <code>제네라테타스크</code>. 웅 테스치 지 프로프리에다지 심플리스 포데리아 베리피카르 시 아 두라상 다 타레파 에 셈프리 아 소마 두스 발로리스 두스 다두스:</p>
-<pre><span style="color:#323232;">레트 타스크두라치온프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 지시 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 지시 -&gt;</span>
-<span style="color:#323232;">레트 타스크 = 제네라테타스크 지시</span>
-<span style="color:#323232;">타스크.두라치옹 = 지시.드1 + 지시.드2</span>
+<pre><span style="color:#839496;">레트 타스크두라치온프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 지시 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 지시 -&gt;</span>
+<span style="color:#839496;">레트 타스크 = 제네라테타스크 지시</span>
+<span style="color:#839496;">타스크.두라치옹 = 지시.드1 + 지시.드2</span>
 
-<span style="color:#323232;">[&lt;테스트스&gt;]</span>
-<span style="color:#323232;">레트 테스트스 =</span>
-<span style="color:#323232;">테스틀리스트 &quot;타스크 제네라치옹 테스트스&quot; [</span>
-<span style="color:#323232;">테스트프로페르치 &quot;타스크 두라치옹 소우드 비 티 숭 오프 지시 발루이스&quot; 타스크두라치온프로페르치</span>
-<span style="color:#323232;">]</span>
+<span style="color:#839496;">[&lt;테스트스&gt;]</span>
+<span style="color:#839496;">레트 테스트스 =</span>
+<span style="color:#839496;">테스틀리스트 &quot;타스크 제네라치옹 테스트스&quot; [</span>
+<span style="color:#839496;">테스트프로페르치 &quot;타스크 두라치옹 소우드 비 티 숭 오프 지시 발루이스&quot; 타스크두라치온프로페르치</span>
+<span style="color:#839496;">]</span>
 
-<span style="color:#323232;">훈테스트스 { 데파우우트콘피그 위트 파랄레우 = 파우시 } 테스트스</span>
+<span style="color:#839496;">훈테스트스 { 데파우우트콘피그 위트 파랄레우 = 파우시 } 테스트스</span>
 
 
 </pre><p id = "para-69">에스치 에 웅 이젬플루 바스탄치 바지쿠 이 우스 테스치스 지 프로프리에다지 포뎅 세르 무이투 마이스 콤플레슈스. 보세 포데리아, 포르 이젬플루, 이스크레베르 테스치스 지 프로프리에다지 키 베리피켕 시 아 콤플레시다지 이 우 이스포르수 다 타레파 상 셈프리 콘시스텐치스 콩 우스 발로리스 두스 다두스.</p>
 <p id = "para-70">포르 파보르, 노치 키 이우 아수미 키 보세 텡 아우궁 코녜시멘투 지 프#, 지스크리미나테드 우니옹스 이 테스치스 지 프로프리에다지. 카주 콘트라리우, 오 시 보세 치베르 아우구마 두비다 소브리 우 코지구, 포르 파보르, 데이시-미 사베르!</p>
 <h2 id = "link-9">이 지등’트 핀드 티 무우치플리카치옹 파르트 잉 티 코지. 프로비지 티 풀 임플레멘타치옹 오프 티 아우고리틍, 위 팅크 아보트 티 테스트스 라테르</h2>
 <p id = "para-71">&lt; 페수 데스쿠우파스 펠라 콘푸장. 바무스 코지피카르 아 테크니카 두스 다두스 멘타우 잉 프# 우잔두 지스크리미나테드 우니옹스 이 헤쿠르시옹. 프리메이루, 데피니레무스 아 두라상 두 포쿠 이 아 콤플레시다지 다 타레파.</p>
-<pre><span style="color:#323232;">// 데피닌두 우 치푸 지 다두스 파라 아 콤플레시다지 이 두라상 두 포쿠</span>
-<span style="color:#323232;">치피 콤플레시치 = 심플리 | 모데라치 | 콤플레스</span>
-<span style="color:#323232;">치피 두라치옹 = 소르트 | 메지웅 | 롱그</span>
+<pre><span style="color:#839496;">// 데피닌두 우 치푸 지 다두스 파라 아 콤플레시다지 이 두라상 두 포쿠</span>
+<span style="color:#839496;">치피 콤플레시치 = 심플리 | 모데라치 | 콤플레스</span>
+<span style="color:#839496;">치피 두라치옹 = 소르트 | 메지웅 | 롱그</span>
 
-<span style="color:#323232;">// 지스크리미나테드 우니옹 파라 우스 다두스</span>
-<span style="color:#323232;">치피 지시 = 드1 오프 인트 | 드2 오프 인트</span>
+<span style="color:#839496;">// 지스크리미나테드 우니옹 파라 우스 다두스</span>
+<span style="color:#839496;">치피 지시 = 드1 오프 인트 | 드2 오프 인트</span>
 
-<span style="color:#323232;">// 지스크리미나테드 우니옹 파라 아 타레파</span>
-<span style="color:#323232;">치피 타스크 =</span>
-<span style="color:#323232;">| 타스크 오프 콤플레시치 * 두라치옹 * 타스크</span>
-<span style="color:#323232;">| 노타스크</span>
+<span style="color:#839496;">// 지스크리미나테드 우니옹 파라 아 타레파</span>
+<span style="color:#839496;">치피 타스크 =</span>
+<span style="color:#839496;">| 타스크 오프 콤플레시치 * 두라치옹 * 타스크</span>
+<span style="color:#839496;">| 노타스크</span>
 
 
 </pre><p id = "para-72">잉 세기다, 바무스 크리아르 푼송이스 파라 카우쿨라르 아 두라상 두 포쿠 이 아 콤플레시다지 다 타레파 콩 바지 나 소마 이 나 무우치플리카상 두스 발로리스 두스 다두스.</p>
-<pre><span style="color:#323232;">// 푼상 파라 카우쿨라르 아 두라상 두 포쿠 콩 바지 나 소마 두스 발로리스 두스 다두스</span>
-<span style="color:#323232;">레트 두라치오노포쿠스 (드1: 인트) (드2: 인트) =</span>
-<span style="color:#323232;">마트시 드1 + 드2 위트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
-<span style="color:#323232;">| _ -&gt; 롱그</span>
+<pre><span style="color:#839496;">// 푼상 파라 카우쿨라르 아 두라상 두 포쿠 콩 바지 나 소마 두스 발로리스 두스 다두스</span>
+<span style="color:#839496;">레트 두라치오노포쿠스 (드1: 인트) (드2: 인트) =</span>
+<span style="color:#839496;">마트시 드1 + 드2 위트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
+<span style="color:#839496;">| _ -&gt; 롱그</span>
 
-<span style="color:#323232;">// 푼상 파라 카우쿨라르 아 콤플레시다지 다 타레파 콩 바지 나 무우치플리카상 두스 발로리스 두스 다두스</span>
-<span style="color:#323232;">레트 콤플레시치오프타스크 (드1: 인트) (드2: 인트) =</span>
-<span style="color:#323232;">마트시 드1 * 드2 위트</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
-<span style="color:#323232;">| _ -&gt; 콤플레스</span>
+<span style="color:#839496;">// 푼상 파라 카우쿨라르 아 콤플레시다지 다 타레파 콩 바지 나 무우치플리카상 두스 발로리스 두스 다두스</span>
+<span style="color:#839496;">레트 콤플레시치오프타스크 (드1: 인트) (드2: 인트) =</span>
+<span style="color:#839496;">마트시 드1 * 드2 위트</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
+<span style="color:#839496;">| _ -&gt; 콤플레스</span>
 
 
 </pre><p id = "para-73">아고라, 바무스 크리아르 우마 푼상 헤쿠르시바 파라 제라르 우마 리스타 잉카데아다 지 타레파스.</p>
-<pre><span style="color:#323232;">// 푼상 헤쿠르시바 파라 제라르 우마 리스타 잉카데아다 지 타레파스</span>
-<span style="color:#323232;">레트 헤크 제네라테타스클리스트 드1 드2 프레비오스타스크 =</span>
-<span style="color:#323232;">마트시 드1, 드2 위트</span>
-<span style="color:#323232;">| 드1, 드2 엥 드1 &gt; 0 &amp;&amp; 드2 &gt; 0 -&gt;</span>
-<span style="color:#323232;">레트 콤플레시치 = 콤플레시치오프타스크 드1 드2</span>
-<span style="color:#323232;">레트 두라치옹 = 두라치오노포쿠스 드1 드2</span>
-<span style="color:#323232;">레트 네타스크 = 타스크 (콤플레시치, 두라치옹, 프레비오스타스크)</span>
-<span style="color:#323232;">제네라테타스클리스트 (드1 - 1) (드2 - 1) 네타스크</span>
-<span style="color:#323232;">| _, _ -&gt; 프레비오스타스크</span>
+<pre><span style="color:#839496;">// 푼상 헤쿠르시바 파라 제라르 우마 리스타 잉카데아다 지 타레파스</span>
+<span style="color:#839496;">레트 헤크 제네라테타스클리스트 드1 드2 프레비오스타스크 =</span>
+<span style="color:#839496;">마트시 드1, 드2 위트</span>
+<span style="color:#839496;">| 드1, 드2 엥 드1 &gt; 0 &amp;&amp; 드2 &gt; 0 -&gt;</span>
+<span style="color:#839496;">레트 콤플레시치 = 콤플레시치오프타스크 드1 드2</span>
+<span style="color:#839496;">레트 두라치옹 = 두라치오노포쿠스 드1 드2</span>
+<span style="color:#839496;">레트 네타스크 = 타스크 (콤플레시치, 두라치옹, 프레비오스타스크)</span>
+<span style="color:#839496;">제네라테타스클리스트 (드1 - 1) (드2 - 1) 네타스크</span>
+<span style="color:#839496;">| _, _ -&gt; 프레비오스타스크</span>
 
 
 </pre><p id = "para-74">피나우멘치, 포데무스 제라르 우마 리스타 잉카데아다 지 타레파스 콩 바지 누스 발로리스 두스 다두스.</p>
-<pre><span style="color:#323232;">레트 지시1 = 6 // 발로르 두 프리메이루 다두</span>
-<span style="color:#323232;">레트 지시2 = 6 // 발로르 두 세군두 다두</span>
+<pre><span style="color:#839496;">레트 지시1 = 6 // 발로르 두 프리메이루 다두</span>
+<span style="color:#839496;">레트 지시2 = 6 // 발로르 두 세군두 다두</span>
 
-<span style="color:#323232;">레트 타스클리스트 = 제네라테타스클리스트 지시1 지시2 노타스크</span>
+<span style="color:#839496;">레트 타스클리스트 = 제네라테타스클리스트 지시1 지시2 노타스크</span>
 
 
 </pre><p id = "para-75">포르 파보르, 노치 키 에사 임플레멘타상 에 웅 이젬플루 이 포지 낭 시 아데쿠아르 페르페이타멘치 아스 수아스 네세시다지스. 아 푼상 <code>제네라테타스클리스트</code> 제라 우마 리스타 잉카데아다 지 타레파스, 카다 우마 헤프레젠탄두 웅 “이스타두” 지페렌치 다 멘치 지 아코르두 콩 우스 발로리스 두스 다두스. 아스 푼송이스 <code>두라치오노포쿠스</code> 이 <code>콤플레시치오프타스크</code> 포뎅 세르 아주스타다스 파라 코헤스폰데르 아 수아 인테르프레타상 두스 발로리스 두스 다두스.</p>
 <h2 id = "link-10">노 프로비지 소미 아드반세드 프스셰크+이스펙투 테스트스</h2>
 <p id = "para-76">&lt; 아고라, 바무스 크리아르 아우궁스 테스치스 지 프로프리에다지 파라 발리다르 아 임플레멘타상 우잔두 프스셰크 이 이스펙투. 바무스 수포르 키 보세 자 인스탈로 우스 파코치스 프스셰크 이 이스펙투 아트라베스 두 누제트 오 오트루 제렌시아도르 지 파코치스.</p>
-<pre><span style="color:#323232;">오펭 프스셰크</span>
-<span style="color:#323232;">오펭 이스펙투</span>
+<pre><span style="color:#839496;">오펭 프스셰크</span>
+<span style="color:#839496;">오펭 이스펙투</span>
 
-<span style="color:#323232;">// 프로프리에다지 파라 베리피카르 시 아 두라상 두 포쿠 에 카우쿨라다 코헤타멘치</span>
-<span style="color:#323232;">레트 포쿠즈두라치온프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 투플리2 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
-<span style="color:#323232;">레트 이스펙테드 =</span>
-<span style="color:#323232;">마트시 드1 + 드2 위트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
-<span style="color:#323232;">| _ -&gt; 롱그</span>
-<span style="color:#323232;">레트 악투아우 = 두라치오노포쿠스 드1 드2</span>
-<span style="color:#323232;">이스펙테드 = 악투아우</span>
+<span style="color:#839496;">// 프로프리에다지 파라 베리피카르 시 아 두라상 두 포쿠 에 카우쿨라다 코헤타멘치</span>
+<span style="color:#839496;">레트 포쿠즈두라치온프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 투플리2 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
+<span style="color:#839496;">레트 이스펙테드 =</span>
+<span style="color:#839496;">마트시 드1 + 드2 위트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
+<span style="color:#839496;">| _ -&gt; 롱그</span>
+<span style="color:#839496;">레트 악투아우 = 두라치오노포쿠스 드1 드2</span>
+<span style="color:#839496;">이스펙테드 = 악투아우</span>
 
-<span style="color:#323232;">// 프로프리에다지 파라 베리피카르 시 아 콤플레시다지 다 타레파 에 카우쿨라다 코헤타멘치</span>
-<span style="color:#323232;">레트 타스크콤플레시치프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 투플리2 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
-<span style="color:#323232;">레트 이스펙테드 =</span>
-<span style="color:#323232;">마트시 드1 * 드2 위트</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
-<span style="color:#323232;">| _ -&gt; 콤플레스</span>
-<span style="color:#323232;">레트 악투아우 = 콤플레시치오프타스크 드1 드2</span>
-<span style="color:#323232;">이스펙테드 = 악투아우</span>
+<span style="color:#839496;">// 프로프리에다지 파라 베리피카르 시 아 콤플레시다지 다 타레파 에 카우쿨라다 코헤타멘치</span>
+<span style="color:#839496;">레트 타스크콤플레시치프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 투플리2 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
+<span style="color:#839496;">레트 이스펙테드 =</span>
+<span style="color:#839496;">마트시 드1 * 드2 위트</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
+<span style="color:#839496;">| _ -&gt; 콤플레스</span>
+<span style="color:#839496;">레트 악투아우 = 콤플레시치오프타스크 드1 드2</span>
+<span style="color:#839496;">이스펙테드 = 악투아우</span>
 
-<span style="color:#323232;">// 프로프리에다지 파라 베리피카르 시 아 리스타 지 타레파스 텡 우 콤프리멘투 코헤투</span>
-<span style="color:#323232;">레트 타스클리스틀렝그트프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 투플리2 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
-<span style="color:#323232;">레트 타스클리스트 = 제네라테타스클리스트 드1 드2 노타스크</span>
-<span style="color:#323232;">레트 헤크 타스클리스틀렝그트 타스클리스트 =</span>
-<span style="color:#323232;">마트시 타스클리스트 위트</span>
-<span style="color:#323232;">| 타스크 (_, _, 네스타스크) -&gt; 1 + 타스클리스틀렝그트 네스타스크</span>
-<span style="color:#323232;">| 노타스크 -&gt; 0</span>
-<span style="color:#323232;">레트 악투아우 = 타스클리스틀렝그트 타스클리스트</span>
-<span style="color:#323232;">레트 이스펙테드 = 밍 드1 드2</span>
-<span style="color:#323232;">이스펙테드 = 악투아우</span>
+<span style="color:#839496;">// 프로프리에다지 파라 베리피카르 시 아 리스타 지 타레파스 텡 우 콤프리멘투 코헤투</span>
+<span style="color:#839496;">레트 타스클리스틀렝그트프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 투플리2 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
+<span style="color:#839496;">레트 타스클리스트 = 제네라테타스클리스트 드1 드2 노타스크</span>
+<span style="color:#839496;">레트 헤크 타스클리스틀렝그트 타스클리스트 =</span>
+<span style="color:#839496;">마트시 타스클리스트 위트</span>
+<span style="color:#839496;">| 타스크 (_, _, 네스타스크) -&gt; 1 + 타스클리스틀렝그트 네스타스크</span>
+<span style="color:#839496;">| 노타스크 -&gt; 0</span>
+<span style="color:#839496;">레트 악투아우 = 타스클리스틀렝그트 타스클리스트</span>
+<span style="color:#839496;">레트 이스펙테드 = 밍 드1 드2</span>
+<span style="color:#839496;">이스펙테드 = 악투아우</span>
 
-<span style="color:#323232;">// 데피닌두 아 리스타 지 테스치스</span>
-<span style="color:#323232;">레트 테스트스 =</span>
-<span style="color:#323232;">테스틀리스트 &quot;타스크 제네라치옹 테스트스&quot; [</span>
-<span style="color:#323232;">테스트프로페르치 &quot;두라치옹 오프 포쿠스 소우드 비 카우쿨라테드 코헥틀리&quot; 포쿠즈두라치온프로페르치</span>
-<span style="color:#323232;">테스트프로페르치 &quot;타스크 콤플레시치 소우드 비 카우쿨라테드 코헥틀리&quot; 타스크콤플레시치프로페르치</span>
-<span style="color:#323232;">테스트프로페르치 &quot;타스크 리스트 소우드 아비 티 코헥트 렝그트&quot; 타스클리스틀렝그트프로페르치</span>
-<span style="color:#323232;">]</span>
+<span style="color:#839496;">// 데피닌두 아 리스타 지 테스치스</span>
+<span style="color:#839496;">레트 테스트스 =</span>
+<span style="color:#839496;">테스틀리스트 &quot;타스크 제네라치옹 테스트스&quot; [</span>
+<span style="color:#839496;">테스트프로페르치 &quot;두라치옹 오프 포쿠스 소우드 비 카우쿨라테드 코헥틀리&quot; 포쿠즈두라치온프로페르치</span>
+<span style="color:#839496;">테스트프로페르치 &quot;타스크 콤플레시치 소우드 비 카우쿨라테드 코헥틀리&quot; 타스크콤플레시치프로페르치</span>
+<span style="color:#839496;">테스트프로페르치 &quot;타스크 리스트 소우드 아비 티 코헥트 렝그트&quot; 타스클리스틀렝그트프로페르치</span>
+<span style="color:#839496;">]</span>
 
-<span style="color:#323232;">// 이제쿠탄두 우스 테스치스</span>
-<span style="color:#323232;">[&lt;인트리포인트&gt;]</span>
-<span style="color:#323232;">레트 마잉 아르그브 =</span>
-<span style="color:#323232;">훈테스트스 데파우우트콘피그 테스트스</span>
-<span style="color:#323232;">0</span>
+<span style="color:#839496;">// 이제쿠탄두 우스 테스치스</span>
+<span style="color:#839496;">[&lt;인트리포인트&gt;]</span>
+<span style="color:#839496;">레트 마잉 아르그브 =</span>
+<span style="color:#839496;">훈테스트스 데파우우트콘피그 테스트스</span>
+<span style="color:#839496;">0</span>
 
 
 </pre><p id = "para-77">아 푼상 <code>젱.마프2</code> 잉 프스셰크 이스페라 우마 푼상 지 도이스 아르구멘투스 코무 우 프리메이루 파라메트루 이 인탕 도이스 제라도리스. 잉 베스 지 <code>젱.마프2 투플리 (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6))</code>, 데베리아 세르 <code>젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6))</code>. 아 푼상 지 도이스 아르구멘투스 <code>풍 드1 드2 -&gt; (드1, 드2)</code> 심플레즈멘치 헤토르나 우마 투플라 두스 아르구멘투스.</p>
 <p id = "para-78">인탕, 우 코지구 코히지두 피카리아 아싱:</p>
-<pre><span style="color:#323232;">레트 포쿠즈두라치온프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
-<span style="color:#323232;">레트 이스펙테드 =</span>
-<span style="color:#323232;">마트시 드1 + 드2 위트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
-<span style="color:#323232;">| _ -&gt; 롱그</span>
-<span style="color:#323232;">레트 악투아우 = 두라치오노포쿠스 드1 드2</span>
-<span style="color:#323232;">이스펙테드 = 악투아우</span>
+<pre><span style="color:#839496;">레트 포쿠즈두라치온프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
+<span style="color:#839496;">레트 이스펙테드 =</span>
+<span style="color:#839496;">마트시 드1 + 드2 위트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
+<span style="color:#839496;">| _ -&gt; 롱그</span>
+<span style="color:#839496;">레트 악투아우 = 두라치오노포쿠스 드1 드2</span>
+<span style="color:#839496;">이스펙테드 = 악투아우</span>
 
-<span style="color:#323232;">레트 타스크콤플레시치프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
-<span style="color:#323232;">레트 이스펙테드 =</span>
-<span style="color:#323232;">마트시 드1 * 드2 위트</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
-<span style="color:#323232;">| _ -&gt; 콤플레스</span>
-<span style="color:#323232;">레트 악투아우 = 콤플레시치오프타스크 드1 드2</span>
-<span style="color:#323232;">이스펙테드 = 악투아우</span>
+<span style="color:#839496;">레트 타스크콤플레시치프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
+<span style="color:#839496;">레트 이스펙테드 =</span>
+<span style="color:#839496;">마트시 드1 * 드2 위트</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
+<span style="color:#839496;">| _ -&gt; 콤플레스</span>
+<span style="color:#839496;">레트 악투아우 = 콤플레시치오프타스크 드1 드2</span>
+<span style="color:#839496;">이스펙테드 = 악투아우</span>
 
-<span style="color:#323232;">레트 타스클리스틀렝그트프로페르치 =</span>
-<span style="color:#323232;">프로프.포라우 (아르브.프롬젱 (젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
-<span style="color:#323232;">레트 타스클리스트 = 제네라테타스클리스트 드1 드2 노타스크</span>
-<span style="color:#323232;">레트 헤크 타스클리스틀렝그트 타스클리스트 =</span>
-<span style="color:#323232;">마트시 타스클리스트 위트</span>
-<span style="color:#323232;">| 타스크 (_, _, 네스타스크) -&gt; 1 + 타스클리스틀렝그트 네스타스크</span>
-<span style="color:#323232;">| 노타스크 -&gt; 0</span>
-<span style="color:#323232;">레트 악투아우 = 타스클리스틀렝그트 타스클리스트</span>
-<span style="color:#323232;">레트 이스펙테드 = 밍 드1 드2</span>
-<span style="color:#323232;">이스펙테드 = 악투아우</span>
+<span style="color:#839496;">레트 타스클리스틀렝그트프로페르치 =</span>
+<span style="color:#839496;">프로프.포라우 (아르브.프롬젱 (젱.마프2 (풍 드1 드2 -&gt; (드1, 드2)) (젱.쇼지 (1, 6)) (젱.쇼지 (1, 6)))) &lt;| 풍 (드1, 드2) -&gt;</span>
+<span style="color:#839496;">레트 타스클리스트 = 제네라테타스클리스트 드1 드2 노타스크</span>
+<span style="color:#839496;">레트 헤크 타스클리스틀렝그트 타스클리스트 =</span>
+<span style="color:#839496;">마트시 타스클리스트 위트</span>
+<span style="color:#839496;">| 타스크 (_, _, 네스타스크) -&gt; 1 + 타스클리스틀렝그트 네스타스크</span>
+<span style="color:#839496;">| 노타스크 -&gt; 0</span>
+<span style="color:#839496;">레트 악투아우 = 타스클리스틀렝그트 타스클리스트</span>
+<span style="color:#839496;">레트 이스펙테드 = 밍 드1 드2</span>
+<span style="color:#839496;">이스펙테드 = 악투아우</span>
 
 
 </pre><p id = "para-79">이스페루 키 이수 헤조우바 우 프로블레마 키 보세 이스타바 인프렌탄두! 시 보세 치베르 마이스 페르군타스, 포르 파보르, 데이시-미 사베르!</p>
 <h2 id = "link-11">이트 파세드. 이스플라잉 토로글리 리니-비-리니 이 티스 이스 티 오트푸트</h2>
 <p id = "para-80">&lt; 파라 인텐데르 아 사이다, 프레시자무스 오브세르바르 우 아우고리트무 키 포이 크리아두 이 아스 푼송이스 키 데테르미낭 아 콤플레시다지 다 타레파 이 아 두라상 두 포쿠, 바제아다스 나 소마 이 나 무우치플리카상 두스 다두스.</p>
 <p id = "para-81">아키 이스타 아 데피니상 지 코무 아 콤플레시다지 다 타레파 이 아 두라상 두 포쿠 상 데테르미나다스:</p>
-<pre><span style="color:#323232;">// 푼상 파라 카우쿨라르 아 두라상 두 포쿠 콩 바지 나 소마 두스 발로리스 두스 다두스</span>
-<span style="color:#323232;">레트 두라치오노포쿠스 (드1: 인트) (드2: 인트) =</span>
-<span style="color:#323232;">마트시 드1 + 드2 위트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
-<span style="color:#323232;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
-<span style="color:#323232;">| _ -&gt; 롱그</span>
+<pre><span style="color:#839496;">// 푼상 파라 카우쿨라르 아 두라상 두 포쿠 콩 바지 나 소마 두스 발로리스 두스 다두스</span>
+<span style="color:#839496;">레트 두라치오노포쿠스 (드1: 인트) (드2: 인트) =</span>
+<span style="color:#839496;">마트시 드1 + 드2 위트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 4 -&gt; 소르트</span>
+<span style="color:#839496;">| 숭 엥 숭 &lt;= 8 -&gt; 메지웅</span>
+<span style="color:#839496;">| _ -&gt; 롱그</span>
 
-<span style="color:#323232;">// 푼상 파라 카우쿨라르 아 콤플레시다지 다 타레파 콩 바지 나 무우치플리카상 두스 발로리스 두스 다두스</span>
-<span style="color:#323232;">레트 콤플레시치오프타스크 (드1: 인트) (드2: 인트) =</span>
-<span style="color:#323232;">마트시 드1 * 드2 위트</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
-<span style="color:#323232;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
-<span style="color:#323232;">| _ -&gt; 콤플레스</span>
+<span style="color:#839496;">// 푼상 파라 카우쿨라르 아 콤플레시다지 다 타레파 콩 바지 나 무우치플리카상 두스 발로리스 두스 다두스</span>
+<span style="color:#839496;">레트 콤플레시치오프타스크 (드1: 인트) (드2: 인트) =</span>
+<span style="color:#839496;">마트시 드1 * 드2 위트</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 12 -&gt; 심플리</span>
+<span style="color:#839496;">| 프로둑트 엥 프로둑트 &lt;= 24 -&gt; 모데라치</span>
+<span style="color:#839496;">| _ -&gt; 콤플레스</span>
 
 </pre><p id = "para-82">이 아 푼상 파라 제라르 아 리스타 지 타레파스:</p>
-<pre><span style="color:#323232;">// 푼상 헤쿠르시바 파라 제라르 우마 리스타 잉카데아다 지 타레파스</span>
-<span style="color:#323232;">레트 헤크 제네라테타스클리스트 드1 드2 프레비오스타스크 =</span>
-<span style="color:#323232;">마트시 드1, 드2 위트</span>
-<span style="color:#323232;">| 드1, 드2 엥 드1 &gt; 0 &amp;&amp; 드2 &gt; 0 -&gt;</span>
-<span style="color:#323232;">레트 콤플레시치 = 콤플레시치오프타스크 드1 드2</span>
-<span style="color:#323232;">레트 두라치옹 = 두라치오노포쿠스 드1 드2</span>
-<span style="color:#323232;">레트 네타스크 = 타스크 (콤플레시치, 두라치옹, 프레비오스타스크)</span>
-<span style="color:#323232;">제네라테타스클리스트 (드1 - 1) (드2 - 1) 네타스크</span>
-<span style="color:#323232;">| _, _ -&gt; 프레비오스타스크</span>
+<pre><span style="color:#839496;">// 푼상 헤쿠르시바 파라 제라르 우마 리스타 잉카데아다 지 타레파스</span>
+<span style="color:#839496;">레트 헤크 제네라테타스클리스트 드1 드2 프레비오스타스크 =</span>
+<span style="color:#839496;">마트시 드1, 드2 위트</span>
+<span style="color:#839496;">| 드1, 드2 엥 드1 &gt; 0 &amp;&amp; 드2 &gt; 0 -&gt;</span>
+<span style="color:#839496;">레트 콤플레시치 = 콤플레시치오프타스크 드1 드2</span>
+<span style="color:#839496;">레트 두라치옹 = 두라치오노포쿠스 드1 드2</span>
+<span style="color:#839496;">레트 네타스크 = 타스크 (콤플레시치, 두라치옹, 프레비오스타스크)</span>
+<span style="color:#839496;">제네라테타스클리스트 (드1 - 1) (드2 - 1) 네타스크</span>
+<span style="color:#839496;">| _, _ -&gt; 프레비오스타스크</span>
 
 
 </pre><p id = "para-83">아 사이다 에 제라다 아 파르치르 두스 발로리스 지 다두스 지 6 이 6. 바무스 아날리자르 아 사이다 리냐 포르 리냐:</p>
@@ -1115,79 +1174,79 @@ function toggle() {
 <p id = "para-155">지 우마 페르스펙치바 콤푸타시오나우 오 지 인제냐리아, 에시스 파드롱이스 포데리앙 세르 이스플로라두스 파라 제라르 아우고리트무스 지 토마다 지 데시장 오 이스케마스 지 지스트리부이상 지 카르가 지 트라발류 키 상 아우 메즈무 템푸 심플리스 지 임플레멘타르 이 카파지스 지 프로두지르 헤주우타두스 바리아두스 이 임프레비지베이스. 엘리스 탐벵 텡 우 포텐시아우 지 세르 아주스타두스 파라 지페렌치스 콘테스투스 오 네세시다지스, 아우테란두 아 마네이라 코무 우스 헤주우타두스 두스 란사멘투스 지 다두스 상 인테르프레타두스 오 아플리카두스.</p>
 <h2 id = "link-16">드라 아 플로트 포르 티 숭 우징그 티 즈스 칸바스 아피</h2>
 <p id = "para-156">&lt; 시 보세 데제자 이지비르 웅 그라피쿠 지 지스트리부이상 지 소마 지 도이스 다두스 지 6 라두스 우잔두 우 칸바스 아피, 보세 포지 모지피카르 우 코지구 파라 크리아르 웅 그라피쿠 지 바하스 잉 베스 지 웅 시르쿨루. 아키 이스타 웅 이젬플루 지 코지구 키 보세 포지 우자르:</p>
-<pre><span style="color:#323232;">바르 칸바스 = $(&quot;#칸바스1&quot;)[0]</span>
-<span style="color:#323232;">바르 콘테스트 = 칸바스.제트콘테스트(&quot;2드&quot;)</span>
+<pre><span style="color:#839496;">바르 칸바스 = $(&quot;#칸바스1&quot;)[0]</span>
+<span style="color:#839496;">바르 콘테스트 = 칸바스.제트콘테스트(&quot;2드&quot;)</span>
 
-<span style="color:#323232;">// 지스트리부치옹 오프 숨스 오프 트우 6-시데드 지시</span>
-<span style="color:#323232;">바르 지스트리부치옹 = [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]</span>
-<span style="color:#323232;">바르 바르위드트 = 40</span>
-<span style="color:#323232;">바르 바르스파싱그 = 10</span>
-<span style="color:#323232;">바르 바르콜로르 = &quot;헤드&quot;</span>
-<span style="color:#323232;">바르 바젤리니 = 300</span>
+<span style="color:#839496;">// 지스트리부치옹 오프 숨스 오프 트우 6-시데드 지시</span>
+<span style="color:#839496;">바르 지스트리부치옹 = [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]</span>
+<span style="color:#839496;">바르 바르위드트 = 40</span>
+<span style="color:#839496;">바르 바르스파싱그 = 10</span>
+<span style="color:#839496;">바르 바르콜로르 = &quot;헤드&quot;</span>
+<span style="color:#839496;">바르 바젤리니 = 300</span>
 
-<span style="color:#323232;">$(&quot;#플로트드라웨르&quot;).옹(&#39;클리크&#39;, 드라플로트)</span>
+<span style="color:#839496;">$(&quot;#플로트드라웨르&quot;).옹(&#39;클리크&#39;, 드라플로트)</span>
 
-<span style="color:#323232;">풍크치옹 드라바르(스, 에이그트) {</span>
-<span style="color:#323232;">콘테스트.베진파트()</span>
-<span style="color:#323232;">콘테스트.헥트(스, 바젤리니 - 에이그트, 바르위드트, 에이그트)</span>
-<span style="color:#323232;">콘테스트.피우스칠리 = 바르콜로르</span>
-<span style="color:#323232;">콘테스트.피우()</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">풍크치옹 드라바르(스, 에이그트) {</span>
+<span style="color:#839496;">콘테스트.베진파트()</span>
+<span style="color:#839496;">콘테스트.헥트(스, 바젤리니 - 에이그트, 바르위드트, 에이그트)</span>
+<span style="color:#839496;">콘테스트.피우스칠리 = 바르콜로르</span>
+<span style="color:#839496;">콘테스트.피우()</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">풍크치옹 드라플로트() {</span>
-<span style="color:#323232;">콘테스트.클레아헥트(0, 0, 칸바스.위드트, 칸바스.에이그트)</span>
-<span style="color:#323232;">포르 (바르 이 = 0 이 &lt; 지스트리부치옹.렝그트 이++) {</span>
-<span style="color:#323232;">바르 스 = 이 * (바르위드트 + 바르스파싱그)</span>
-<span style="color:#323232;">바르 에이그트 = 지스트리부치옹[이] * 20 // 스칼리 팍토르 포르 지스플라이</span>
-<span style="color:#323232;">드라바르(스, 에이그트)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">풍크치옹 드라플로트() {</span>
+<span style="color:#839496;">콘테스트.클레아헥트(0, 0, 칸바스.위드트, 칸바스.에이그트)</span>
+<span style="color:#839496;">포르 (바르 이 = 0 이 &lt; 지스트리부치옹.렝그트 이++) {</span>
+<span style="color:#839496;">바르 스 = 이 * (바르위드트 + 바르스파싱그)</span>
+<span style="color:#839496;">바르 에이그트 = 지스트리부치옹[이] * 20 // 스칼리 팍토르 포르 지스플라이</span>
+<span style="color:#839496;">드라바르(스, 에이그트)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
 
 </pre><p id = "para-157">에스치 코지구 데피니 우마 지스트리부이상 지 소마스 파라 도이스 다두스 지 6 파시스 이 우마 푼상 <code>드라바르</code> 파라 데제냐르 우마 우니카 바하. 아 푼상 <code>드라플로트</code> 림파 우 칸바스 이 데포이스 데제냐 우마 바하 파라 카다 발로르 나 지스트리부이상.</p>
 <p id = "para-158">렘브리-시 키 에스치 코지구 에 아페나스 웅 이젬플루 심플리스 이 포지 프레시자르 지 아주스치스 파라 시 아다프타르 아우 세우 콘테스투 이스페시피쿠. 포르 이젬플루, 보세 포지 케레르 아지시오나르 이슈스 아우 그라피쿠, 오 아주스타르 아 이스칼라 두 그라피쿠 파라 멜료르 시 아데쿠아르 아우스 다두스.</p>
 <h2 id = "link-17">노 마키 이트 아 무우치 라예레드 드라 풍크치옹 포르 아우 풍크치옹스 헬라테드 투 티 홀링그스 인투이치옹. 숭, 무우치플리카치옹, 마이비 3 모리. 잉 카지 티 코지 쿠트스, 오페나이 임플레멘테드 아 “콘치누이 헤스폰시” 부통</h2>
 <p id = "para-159">&lt; 아바이슈 이스타 웅 이젬플루 지 코지구 키 플로타 아 지스트리부이상 지 소마스 이 프로두투스 지 도이스 란사멘투스 지 다두스 드6, 벵 코무 아 지스트리부이상 지 지페렌사스, 하종이스 이 메지아스. 엘리 아지시오나 싱쿠 푼송이스 지 데제뉴 아지시오나이스 파라 카다 우마 데사스 지스트리부이송이스, 이 샤마 토다스 엘라스 나 푼상 <code>드라플로트</code>.</p>
-<pre><span style="color:#323232;">바르 칸바스 = $(&quot;#칸바스1&quot;)[0]</span>
-<span style="color:#323232;">바르 콘테스트 = 칸바스.제트콘테스트(&quot;2드&quot;)</span>
+<pre><span style="color:#839496;">바르 칸바스 = $(&quot;#칸바스1&quot;)[0]</span>
+<span style="color:#839496;">바르 콘테스트 = 칸바스.제트콘테스트(&quot;2드&quot;)</span>
 
-<span style="color:#323232;">// 지스트리부치옹 오프 숨스, 프로둑트스, 지페렌시스, 하치우스 안드 아베라지스 오프 트우 6-시데드 지시</span>
-<span style="color:#323232;">바르 숨지스트리부치옹 = [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]</span>
-<span style="color:#323232;">바르 프로둑트지스트리부치옹 = [0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 1]</span>
-<span style="color:#323232;">바르 지프지스트리부치옹 = [5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5]</span>
-<span style="color:#323232;">바르 하치오지스트리부치옹 = [0, 6, 3, 2, 2, 1, 6, 1, 2, 2, 3, 6, 0]</span>
-<span style="color:#323232;">바르 아베라제지스트리부치옹 = [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]</span>
+<span style="color:#839496;">// 지스트리부치옹 오프 숨스, 프로둑트스, 지페렌시스, 하치우스 안드 아베라지스 오프 트우 6-시데드 지시</span>
+<span style="color:#839496;">바르 숨지스트리부치옹 = [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]</span>
+<span style="color:#839496;">바르 프로둑트지스트리부치옹 = [0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 1]</span>
+<span style="color:#839496;">바르 지프지스트리부치옹 = [5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5]</span>
+<span style="color:#839496;">바르 하치오지스트리부치옹 = [0, 6, 3, 2, 2, 1, 6, 1, 2, 2, 3, 6, 0]</span>
+<span style="color:#839496;">바르 아베라제지스트리부치옹 = [0, 0, 1, 2, 3, 4, 5, 6, 5, 4, 3, 2, 1]</span>
 
-<span style="color:#323232;">바르 바르위드트 = 20</span>
-<span style="color:#323232;">바르 바르스파싱그 = 5</span>
-<span style="color:#323232;">바르 바젤리니 = 300</span>
-<span style="color:#323232;">바르 콜로르스 = [&quot;헤드&quot;, &quot;블루이&quot;, &quot;그렝&quot;, &quot;옐로&quot;, &quot;푸르플리&quot;]</span>
+<span style="color:#839496;">바르 바르위드트 = 20</span>
+<span style="color:#839496;">바르 바르스파싱그 = 5</span>
+<span style="color:#839496;">바르 바젤리니 = 300</span>
+<span style="color:#839496;">바르 콜로르스 = [&quot;헤드&quot;, &quot;블루이&quot;, &quot;그렝&quot;, &quot;옐로&quot;, &quot;푸르플리&quot;]</span>
 
-<span style="color:#323232;">$(&quot;#플로트드라웨르&quot;).옹(&#39;클리크&#39;, 드라플로트)</span>
+<span style="color:#839496;">$(&quot;#플로트드라웨르&quot;).옹(&#39;클리크&#39;, 드라플로트)</span>
 
-<span style="color:#323232;">풍크치옹 드라바르(스, 에이그트, 콜로르) {</span>
-<span style="color:#323232;">콘테스트.베진파트()</span>
-<span style="color:#323232;">콘테스트.헥트(스, 바젤리니 - 에이그트, 바르위드트, 에이그트)</span>
-<span style="color:#323232;">콘테스트.피우스칠리 = 콜로르</span>
-<span style="color:#323232;">콘테스트.피우()</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">풍크치옹 드라바르(스, 에이그트, 콜로르) {</span>
+<span style="color:#839496;">콘테스트.베진파트()</span>
+<span style="color:#839496;">콘테스트.헥트(스, 바젤리니 - 에이그트, 바르위드트, 에이그트)</span>
+<span style="color:#839496;">콘테스트.피우스칠리 = 콜로르</span>
+<span style="color:#839496;">콘테스트.피우()</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">풍크치옹 드라지스트리부치옹(지스트리부치옹, 쇼프세트, 콜로르) {</span>
-<span style="color:#323232;">포르 (바르 이 = 0 이 &lt; 지스트리부치옹.렝그트 이++) {</span>
-<span style="color:#323232;">바르 스 = 쇼프세트 + 이 * (바르위드트 + 바르스파싱그)</span>
-<span style="color:#323232;">바르 에이그트 = 지스트리부치옹[이] * 10 // 스칼리 팍토르 포르 지스플라이</span>
-<span style="color:#323232;">드라바르(스, 에이그트, 콜로르)</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">풍크치옹 드라지스트리부치옹(지스트리부치옹, 쇼프세트, 콜로르) {</span>
+<span style="color:#839496;">포르 (바르 이 = 0 이 &lt; 지스트리부치옹.렝그트 이++) {</span>
+<span style="color:#839496;">바르 스 = 쇼프세트 + 이 * (바르위드트 + 바르스파싱그)</span>
+<span style="color:#839496;">바르 에이그트 = 지스트리부치옹[이] * 10 // 스칼리 팍토르 포르 지스플라이</span>
+<span style="color:#839496;">드라바르(스, 에이그트, 콜로르)</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">풍크치옹 드라플로트() {</span>
-<span style="color:#323232;">콘테스트.클레아헥트(0, 0, 칸바스.위드트, 칸바스.에이그트)</span>
-<span style="color:#323232;">드라지스트리부치옹(숨지스트리부치옹, 0, 콜로르스[0])</span>
-<span style="color:#323232;">드라지스트리부치옹(프로둑트지스트리부치옹, 400, 콜로르스[1])</span>
-<span style="color:#323232;">드라지스트리부치옹(지프지스트리부치옹, 800, 콜로르스[2])</span>
-<span style="color:#323232;">드라지스트리부치옹(하치오지스트리부치옹, 1200, 콜로르스[3])</span>
-<span style="color:#323232;">드라지스트리부치옹(아베라제지스트리부치옹, 1600, 콜로르스[4])</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">풍크치옹 드라플로트() {</span>
+<span style="color:#839496;">콘테스트.클레아헥트(0, 0, 칸바스.위드트, 칸바스.에이그트)</span>
+<span style="color:#839496;">드라지스트리부치옹(숨지스트리부치옹, 0, 콜로르스[0])</span>
+<span style="color:#839496;">드라지스트리부치옹(프로둑트지스트리부치옹, 400, 콜로르스[1])</span>
+<span style="color:#839496;">드라지스트리부치옹(지프지스트리부치옹, 800, 콜로르스[2])</span>
+<span style="color:#839496;">드라지스트리부치옹(하치오지스트리부치옹, 1200, 콜로르스[3])</span>
+<span style="color:#839496;">드라지스트리부치옹(아베라제지스트리부치옹, 1600, 콜로르스[4])</span>
+<span style="color:#839496;">}</span>
 
 
 </pre><p id = "para-160">에스치 코지구 임플레멘타 아 푼상 <code>드라지스트리부치옹</code> 키 데제냐 우마 지스트리부이상 인테이라 콩 웅 데즐로카멘투 스 이 코르 이스페시피쿠스. 아 푼상 <code>드라플로트</code> 림파 우 칸바스 이 인탕 데제냐 토다스 아스 싱쿠 지스트리부이송이스 잉 로카이스 지페렌치스 누 칸바스.</p>
@@ -1195,34 +1254,34 @@ function toggle() {
 <h2 id = "link-18">테지 아리 헤알리 코헥트? 마키 이트 세우프 칼링그 콘시지 아노니모스 풍크치옹스 인스테아드 오프 아르드코징그 티 헤주우트스</h2>
 <p id = "para-162">&lt; 페수 데스쿠우파스 펠라 콘푸장 안테리오르. 아스 지스트리부이송이스 포랑 프렌시다스 아페나스 파라 일루스트라르 코무 우 코지구 푼시오나 이 낭 헤플레텡 아스 베르다데이라스 지스트리부이송이스 이스타치스치카스 두 소마토리우, 프로두투, 지페렌사, 하장 이 메지아 지 도이스 란사멘투스 지 웅 다두 지 6 파시스.</p>
 <p id = "para-163">파라 카우쿨라르 아스 지스트리부이송이스 헤아이스, 포데무스 우자르 우마 푼상 키 제라 토다스 아스 포시베이스 콤비나송이스 지 도이스 란사멘투스 지 웅 다두 지 6 파시스 이 인탕 카우쿨라 아 오페라상 데제자다 파라 카다 파르. 아키 이스타 웅 이젬플루 지 코무 이수 포지 세르 페이투 잉 자바스크리프트:</p>
-<pre><span style="color:#323232;">// 풍크치옹 투 제네라치 아 지스트리부치옹 포르 아 지벵 오페라치옹</span>
-<span style="color:#323232;">풍크치옹 제네라테지스트리부치옹(오페라치옹) {</span>
-<span style="color:#323232;">바르 지스트리부치옹 = []</span>
-<span style="color:#323232;">포르 (바르 이 = 1 이 &lt;= 6 이++) {</span>
-<span style="color:#323232;">포르 (바르 즈 = 1 즈 &lt;= 6 즈++) {</span>
-<span style="color:#323232;">바르 헤주우트 = 오페라치옹(이, 즈)</span>
-<span style="color:#323232;">이프 (!지스트리부치옹[헤주우트]) {</span>
-<span style="color:#323232;">지스트리부치옹[헤주우트] = 0</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">지스트리부치옹[헤주우트]++</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">}</span>
-<span style="color:#323232;">헤투릉 지스트리부치옹</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">// 풍크치옹 투 제네라치 아 지스트리부치옹 포르 아 지벵 오페라치옹</span>
+<span style="color:#839496;">풍크치옹 제네라테지스트리부치옹(오페라치옹) {</span>
+<span style="color:#839496;">바르 지스트리부치옹 = []</span>
+<span style="color:#839496;">포르 (바르 이 = 1 이 &lt;= 6 이++) {</span>
+<span style="color:#839496;">포르 (바르 즈 = 1 즈 &lt;= 6 즈++) {</span>
+<span style="color:#839496;">바르 헤주우트 = 오페라치옹(이, 즈)</span>
+<span style="color:#839496;">이프 (!지스트리부치옹[헤주우트]) {</span>
+<span style="color:#839496;">지스트리부치옹[헤주우트] = 0</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">지스트리부치옹[헤주우트]++</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">}</span>
+<span style="color:#839496;">헤투릉 지스트리부치옹</span>
+<span style="color:#839496;">}</span>
 
-<span style="color:#323232;">// 데피니 오페라치옹스</span>
-<span style="color:#323232;">바르 숭 = (아, 브) =&gt; 아 + 브</span>
-<span style="color:#323232;">바르 프로둑트 = (아, 브) =&gt; 아 * 브</span>
-<span style="color:#323232;">바르 지페렌시 = (아, 브) =&gt; 마트.아브스(아 - 브)</span>
-<span style="color:#323232;">바르 하치우 = (아, 브) =&gt; 아 / 브</span>
-<span style="color:#323232;">바르 아베라지 = (아, 브) =&gt; (아 + 브) / 2</span>
+<span style="color:#839496;">// 데피니 오페라치옹스</span>
+<span style="color:#839496;">바르 숭 = (아, 브) =&gt; 아 + 브</span>
+<span style="color:#839496;">바르 프로둑트 = (아, 브) =&gt; 아 * 브</span>
+<span style="color:#839496;">바르 지페렌시 = (아, 브) =&gt; 마트.아브스(아 - 브)</span>
+<span style="color:#839496;">바르 하치우 = (아, 브) =&gt; 아 / 브</span>
+<span style="color:#839496;">바르 아베라지 = (아, 브) =&gt; (아 + 브) / 2</span>
 
-<span style="color:#323232;">// 제네라치 지스트리부치옹스</span>
-<span style="color:#323232;">바르 숨지스트리부치옹 = 제네라테지스트리부치옹(숭)</span>
-<span style="color:#323232;">바르 프로둑트지스트리부치옹 = 제네라테지스트리부치옹(프로둑트)</span>
-<span style="color:#323232;">바르 지페렌세지스트리부치옹 = 제네라테지스트리부치옹(지페렌시)</span>
-<span style="color:#323232;">바르 하치오지스트리부치옹 = 제네라테지스트리부치옹(하치우)</span>
-<span style="color:#323232;">바르 아베라제지스트리부치옹 = 제네라테지스트리부치옹(아베라지)</span>
+<span style="color:#839496;">// 제네라치 지스트리부치옹스</span>
+<span style="color:#839496;">바르 숨지스트리부치옹 = 제네라테지스트리부치옹(숭)</span>
+<span style="color:#839496;">바르 프로둑트지스트리부치옹 = 제네라테지스트리부치옹(프로둑트)</span>
+<span style="color:#839496;">바르 지페렌세지스트리부치옹 = 제네라테지스트리부치옹(지페렌시)</span>
+<span style="color:#839496;">바르 하치오지스트리부치옹 = 제네라테지스트리부치옹(하치우)</span>
+<span style="color:#839496;">바르 아베라제지스트리부치옹 = 제네라테지스트리부치옹(아베라지)</span>
 
 
 </pre><p id = "para-164">에스치 코지구 데피니 우마 푼상 <code>제네라테지스트리부치옹</code> 키 아세이타 우마 오페라상 (코무 소마, 프로두투, 이트크.) 이 제라 아 지스트리부이상 코헤스폰덴치. 아스 오페라송이스 상 데피니다스 코무 푼송이스 아노니마스 이 파사다스 파라 아 푼상 <code>제네라테지스트리부치옹</code> 파라 제라르 아스 지스트리부이송이스 코헤스폰덴치스.</p>
@@ -1267,25 +1326,25 @@ function toggle() {
 <p id = "para-186">아스 포르 이시 오프 티 지시 호우 지나믹스 (숭, 프로둑트, 지페렌시, 하치우, 아베라지) 워우드 이메르지, 타트 워우드 비 데펜덴트 옹 티 스페시피크 임플레멘타치옹 오프 티 스마르트 콘트락트. 이트 코우드 비 데지그네드 투 시물라치 아니 오르 아우 오프 테지 오페라치옹스, 아스 데지레드 비 티 콘트락트 크레아토르.</p>
 <h2 id = "link-22">케프 오트푸칭그 잉 프트-브르. 콘시데링그 아우 오프 티스 잉 민드, 우지 티스 모데우 아스 폰다치옹 포르 아 네 2.0</h2>
 <p id = "para-187">콘시데란두 아 지스쿠상 안테리오르, 포데무스 펜사르 잉 코무 아 메카니카 쿠안치카, 우 프로세사멘투 무우치타레파 이 우 우주 지 아지스 지 트란사송이스 지 블록샤잉 포데리앙 세르 잉코르포라두스 잉 우마 베르상 2.0 데시 모델루. 이수 에 아페나스 우마 수제스탕 이 포지 이지지르 아주스치스 데펜덴두 두 콘테스투 이스페시피쿠:</p>
-<pre><span style="color:#323232;">// 데피닌두 우 치푸 지 다두스 파라 아 콤플레시다지 이 두라상 두 포쿠</span>
-<span style="color:#323232;">치피 콤플레시치 = 심플리 | 모데라치 | 콤플레스</span>
-<span style="color:#323232;">치피 두라치옹 = 소르트 | 메지웅 | 롱그</span>
+<pre><span style="color:#839496;">// 데피닌두 우 치푸 지 다두스 파라 아 콤플레시다지 이 두라상 두 포쿠</span>
+<span style="color:#839496;">치피 콤플레시치 = 심플리 | 모데라치 | 콤플레스</span>
+<span style="color:#839496;">치피 두라치옹 = 소르트 | 메지웅 | 롱그</span>
 
-<span style="color:#323232;">// 지스크리미나테드 우니옹 파라 우스 다두스</span>
-<span style="color:#323232;">치피 지시 = 드1 오프 인트 | 드2 오프 인트</span>
+<span style="color:#839496;">// 지스크리미나테드 우니옹 파라 우스 다두스</span>
+<span style="color:#839496;">치피 지시 = 드1 오프 인트 | 드2 오프 인트</span>
 
-<span style="color:#323232;">// 아지시오난두 웅 치푸 지 다두 파라 우 이스타두 쿠안치쿠</span>
-<span style="color:#323232;">치피 쿠안툼스타치 = 수페르포지치옹 오프 인트 리스트</span>
+<span style="color:#839496;">// 아지시오난두 웅 치푸 지 다두 파라 우 이스타두 쿠안치쿠</span>
+<span style="color:#839496;">치피 쿠안툼스타치 = 수페르포지치옹 오프 인트 리스트</span>
 
-<span style="color:#323232;">// 지스크리미나테드 우니옹 파라 아 타레파</span>
-<span style="color:#323232;">치피 타스크 =</span>
-<span style="color:#323232;">| 타스크 오프 콤플레시치 * 두라치옹 * 타스크</span>
-<span style="color:#323232;">| 쿠안툼타스크 오프 쿠안툼스타치 * 타스크</span>
-<span style="color:#323232;">| 블록샤인타스크 오프 스트링그 * 타스크</span>
-<span style="color:#323232;">| 노타스크</span>
+<span style="color:#839496;">// 지스크리미나테드 우니옹 파라 아 타레파</span>
+<span style="color:#839496;">치피 타스크 =</span>
+<span style="color:#839496;">| 타스크 오프 콤플레시치 * 두라치옹 * 타스크</span>
+<span style="color:#839496;">| 쿠안툼타스크 오프 쿠안툼스타치 * 타스크</span>
+<span style="color:#839496;">| 블록샤인타스크 오프 스트링그 * 타스크</span>
+<span style="color:#839496;">| 노타스크</span>
 
-<span style="color:#323232;">// 아지시오난두 웅 치푸 지 다두 파라 웅 블로쿠 지 블록샤잉</span>
-<span style="color:#323232;">치피 블로크 = 블로크 오프 스트링그 * 스트링그 // 아즈 이 다두스 다 트란사상</span>
+<span style="color:#839496;">// 아지시오난두 웅 치푸 지 다두 파라 웅 블로쿠 지 블록샤잉</span>
+<span style="color:#839496;">치피 블로크 = 블로크 오프 스트링그 * 스트링그 // 아즈 이 다두스 다 트란사상</span>
 
 
 </pre><p id = "para-188">나 베르상 2.0 데스치 모델루:</p>

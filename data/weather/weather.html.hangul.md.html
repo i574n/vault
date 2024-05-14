@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,76 +613,78 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">우루수피스: 종.이아르트/마프스/템페라투리/#비에=-23.570989,-46.590619,10스/다치=2023-03-08,13:40,-3/모데우=이콩/오베를라이스=윈드,피리스,크로사이르</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+  <pre><span style="color:#839496;">우루수피스: 종.이아르트/마프스/템페라투리/#비에=-23.570989,-46.590619,10스/다치=2023-03-08,13:40,-3/모데우=이콩/오베를라이스=윈드,피리스,크로사이르</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 종.이아르트/마프스/템페라투리-페우/#비에=-23.570989,-46.590619,10스/다치=2023-03-08,13:40,-3/모데우=이콩/오베를라이스=윈드,피리스,크로사이르</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 종.이아르트/마프스/템페라투리-페우/#비에=-23.570989,-46.590619,10스/다치=2023-03-08,13:40,-3/모데우=이콩/오베를라이스=윈드,피리스,크로사이르</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 종.이아르트/마프스/프레시피타치옹/#비에=-23.570989,-46.590619,10스/다치=2023-03-08,13:40,-3/모데우=이콩/오베를라이스=윈드,피리스,크로사이르</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 종.이아르트/마프스/프레시피타치옹/#비에=-23.570989,-46.590619,10스/다치=2023-03-08,13:40,-3/모데우=이콩/오베를라이스=윈드,피리스,크로사이르</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 므증.콩/잉-우스/웨아테르/오를리포레카스트/잉-상-파울루,브라지우</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 므증.콩/잉-우스/웨아테르/오를리포레카스트/잉-상-파울루,브라지우</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/템페라투리/잉-스%크3%아3우-파울루,브라지우</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/템페라투리/잉-스%크3%아3우-파울루,브라지우</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/프레시피타치옹/잉-스%크3%아3우-파울루,브라지우</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/프레시피타치옹/잉-스%크3%아3우-파울루,브라지우</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/윈드/잉-스%크3%아3우-파울루,브라지우</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/윈드/잉-스%크3%아3우-파울루,브라지우</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/클로드/잉-스%크3%아3우-파울루,브라지우</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 므증.콩/잉-우스/웨아테르/마프스/클로드/잉-스%크3%아3우-파울루,브라지우</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 운데르그론드.콩/운데르마프?헨데레르=2&amp;우니트스=잉글리즈&amp;종=9&amp;라트=-23.5606808&amp;롱=-46.5971924&amp;스틍=1&amp;스튼모지=흐&amp;사텔리치=1&amp;사텔리테오파=0.6&amp;스토릉-세우스=1&amp;스트=1&amp;프론트스=1&amp;우르=1&amp;윈드스트르=0</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 운데르그론드.콩/운데르마프?헨데레르=2&amp;우니트스=잉글리즈&amp;종=9&amp;라트=-23.5606808&amp;롱=-46.5971924&amp;스틍=1&amp;스튼모지=흐&amp;사텔리치=1&amp;사텔리테오파=0.6&amp;스토릉-세우스=1&amp;스트=1&amp;프론트스=1&amp;우르=1&amp;윈드스트르=0</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 운데르그론드.콩/운데르마프?헨데레르=2&amp;우니트스=잉글리즈&amp;종=9&amp;라트=-23.5606808&amp;롱=-46.5971924&amp;스틍=1&amp;스튼모지=트&amp;사텔리치=1&amp;사텔리테오파=0.6&amp;스토릉-세우스=1&amp;스트=1&amp;프론트스=1&amp;우르=1&amp;윈드스트르=0</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 운데르그론드.콩/운데르마프?헨데레르=2&amp;우니트스=잉글리즈&amp;종=9&amp;라트=-23.5606808&amp;롱=-46.5971924&amp;스틍=1&amp;스튼모지=트&amp;사텔리치=1&amp;사텔리테오파=0.6&amp;스토릉-세우스=1&amp;스트=1&amp;프론트스=1&amp;우르=1&amp;윈드스트르=0</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 운데르그론드.콩/운데르마프?헨데레르=2&amp;우니트스=잉글리즈&amp;종=9&amp;라트=-23.5606808&amp;롱=-46.5971924&amp;스틍=1&amp;스튼모지=흐&amp;사텔리치=0&amp;사텔리테오파=0.6&amp;스토릉-세우스=1&amp;스트=1&amp;프론트스=1&amp;우르=1&amp;윈드스트르=1</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 운데르그론드.콩/운데르마프?헨데레르=2&amp;우니트스=잉글리즈&amp;종=9&amp;라트=-23.5606808&amp;롱=-46.5971924&amp;스틍=1&amp;스튼모지=흐&amp;사텔리치=0&amp;사텔리테오파=0.6&amp;스토릉-세우스=1&amp;스트=1&amp;프론트스=1&amp;우르=1&amp;윈드스트르=1</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 운데르그론드.콩/오를리/브르/아에로포르투-인테르나시오나우/-23.43,-46.48</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 운데르그론드.콩/오를리/브르/아에로포르투-인테르나시오나우/-23.43,-46.48</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 오펜으웨아테르마프.오르그/웨아테르마프?바제마프=마프&amp;시치스=트루이&amp;라예르=하다르&amp;라트=-23.5475&amp;롱=-46.6361&amp;종=9</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 오펜으웨아테르마프.오르그/웨아테르마프?바제마프=마프&amp;시치스=트루이&amp;라예르=하다르&amp;라트=-23.5475&amp;롱=-46.6361&amp;종=9</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 아쿠웨아테르.콩/잉/브르/스%크3%아3우-파울루/1-45881_1_아우/오를리-웨아테르-포레카스트/1-45881_1_아우</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 아쿠웨아테르.콩/잉/브르/스%크3%아3우-파울루/1-45881_1_아우/오를리-웨아테르-포레카스트/1-45881_1_아우</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 웨아테르.콩/웨아테르/오르비오르/르/63이18이아74아484크42크3921크프52아8페크98113드브13프6데브7크477브2프453크95브837</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:30브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 웨아테르.콩/웨아테르/오르비오르/르/63이18이아74아484크42크3921크프52아8페크98113드브13프6데브7크477브2프453크95브837</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:30브</span>
 
-</pre><pre><span style="color:#323232;">우루수피스: 웨아테르스파르크.콩/콤파리/이/16780응30268응142723응104299응144952/콤파리종-오프-티-아베라지-웨아테르-잉-아바나-상-파울루-숑그징-안타나나리부-안드-수바</span>
-<span style="color:#323232;">프라미: 트프스://</span>
-<span style="color:#323232;">스칠리: 에이그트:40브</span>
+</pre><pre><span style="color:#839496;">우루수피스: 웨아테르스파르크.콩/콤파리/이/16780응30268응142723응104299응144952/콤파리종-오프-티-아베라지-웨아테르-잉-아바나-상-파울루-숑그징-안타나나리부-안드-수바</span>
+<span style="color:#839496;">프라미: 트프스://</span>
+<span style="color:#839496;">스칠리: 에이그트:40브</span>
 
 </pre><p class = "rule">***</p>
 

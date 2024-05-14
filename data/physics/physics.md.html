@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,13 +603,11 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
     <nav id = "nav">
+      
       <div id = "nav-title">
         <h2><a href = "#link-0"></a></h2>
       </div>
@@ -592,6 +647,7 @@ function toggle() {
       <li><a href="#link-33">merge such model with holons and moloch</a></li>
     </ul>
     </nav>
+    
 
     <div id = "content">
       
@@ -599,12 +655,15 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
             <img id = "menu-button" onclick="toggle();"
                  src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMjAwbW0iCiAgIGhlaWdodD0iMjAwbW0iCiAgIHZpZXdCb3g9IjAgMCA3MDguNjYxNDIgNzA4LjY2MTQxIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ibWVudS5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM0IiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIwLjQ5NDk3NDc1IgogICAgIGlua3NjYXBlOmN4PSIxMDUuNjEyNzUiCiAgICAgaW5rc2NhcGU6Y3k9IjQwNy4wNjM5MSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0icHgiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIgogICAgIHNob3dncmlkPSJmYWxzZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzNjYiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzA0IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIiAvPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTciPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiCiAgICAgaW5rc2NhcGU6Z3JvdXBtb2RlPSJsYXllciIKICAgICBpZD0ibGF5ZXIxIgogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTM0My43MDA3OSkiPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDQ2OS41MDUxIDUwMCwwIgogICAgICAgaWQ9InBhdGg0MTM2IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxMDA7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDEwNC4zMzA3MSw3MDQuNTA1MSA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlua3NjYXBlOnRyYW5zZm9ybS1jZW50ZXIteD0iNzEuNDI4NTcyIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci15PSItMjQyLjg1NzE2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjEwMDtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Im0gMTA0LjMzMDcxLDkzOS41MDUwNiA1MDAsMCIKICAgICAgIGlkPSJwYXRoNDEzNi01LTMiCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaW5rc2NhcGU6dHJhbnNmb3JtLWNlbnRlci14PSI3MS40Mjg1NzIiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9Ii0yNDIuODU3MTYiIC8+CiAgPC9nPgo8L3N2Zz4K"
                  alt = "Table of contents" title = "Table of contents" />
+          
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
+	  
 	  
         </header>
 
@@ -692,911 +751,911 @@ function toggle() {
 <p id = "para-69">Então, com fogo acadêmico, a teoria é eleita Universo holográfico, em Rust, a simulação perfeita Estruturas de dados bem organizadas, performance garantida Neste caminho, avançamos, explorando as fronteiras da vida</p>
 <h2 id = "link-10">write the core enums considering domain modeling in a rust code block so we can discuss later</h2>
 <p id = "para-70">&lt; Aqui estão alguns enums principais para o modelo de domínio, considerando a teoria do universo holográfico e a linguagem Rust:</p>
-<pre><span style="font-style:italic;color:#969896;">// Enum para representar os tipos de partículas</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark,</span>
-<span style="color:#323232;">    Lepton,</span>
-<span style="color:#323232;">    Boson,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Enum para representar os tipos de partículas</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark,</span>
+<span style="color:#839496;">    Lepton,</span>
+<span style="color:#839496;">    Boson,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar as forças fundamentais</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Forca {</span>
-<span style="color:#323232;">    Gravitacional,</span>
-<span style="color:#323232;">    Eletromagnetica,</span>
-<span style="color:#323232;">    NuclearFraca,</span>
-<span style="color:#323232;">    NuclearForte,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar as forças fundamentais</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Forca </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gravitacional,</span>
+<span style="color:#839496;">    Eletromagnetica,</span>
+<span style="color:#839496;">    NuclearFraca,</span>
+<span style="color:#839496;">    NuclearForte,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os tipos de interações</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    Atracao,</span>
-<span style="color:#323232;">    Repulsao,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os tipos de interações</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Atracao,</span>
+<span style="color:#839496;">    Repulsao,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar as dimensões do espaço-tempo</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Dimensao {</span>
-<span style="color:#323232;">    Espaco,</span>
-<span style="color:#323232;">    Tempo,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar as dimensões do espaço-tempo</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Dimensao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Espaco,</span>
+<span style="color:#839496;">    Tempo,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os estados quânticos entrelaçados</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">EstadoQuantico {</span>
-<span style="color:#323232;">    Superposicao,</span>
-<span style="color:#323232;">    Colapso,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os estados quânticos entrelaçados</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">EstadoQuantico </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Superposicao,</span>
+<span style="color:#839496;">    Colapso,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-71">Esses enums podem ser usados como blocos de construção para criar estruturas de dados mais complexas que representem os elementos e interações no universo holográfico. Por favor, sinta-se à vontade para discutir e ajustar os enums de acordo com as necessidades do seu modelo de domínio.</p>
 <h2 id = "link-11">are you sure? none of the enums has state (discriminated unions). can you review before we go to structs?</h2>
 <p id = "para-72">&lt; Peço desculpas pela confusão. Você está certo, os enums apresentados não possuem estados (uniões discriminadas). Vamos corrigir isso e incluir variantes com estados relevantes.</p>
-<pre><span style="font-style:italic;color:#969896;">// Enum para representar os tipos de partículas</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark {</span>
-<span style="color:#323232;">        sabor: SaborQuark,</span>
-<span style="color:#323232;">        carga: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    Lepton {</span>
-<span style="color:#323232;">        tipo: TipoLepton,</span>
-<span style="color:#323232;">        carga: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    Boson {</span>
-<span style="color:#323232;">        tipo: TipoBoson,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Enum para representar os tipos de partículas</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        sabor: SaborQuark,</span>
+<span style="color:#839496;">        carga: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Lepton </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        tipo: TipoLepton,</span>
+<span style="color:#839496;">        carga: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Boson </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        tipo: TipoBoson,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os sabores dos quarks</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">SaborQuark {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os sabores dos quarks</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">SaborQuark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os tipos de léptons</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">TipoLepton {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">    NeutrinoEletronico,</span>
-<span style="color:#323232;">    NeutrinoMuonico,</span>
-<span style="color:#323232;">    NeutrinoTauonico,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os tipos de léptons</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">TipoLepton </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#839496;">    NeutrinoEletronico,</span>
+<span style="color:#839496;">    NeutrinoMuonico,</span>
+<span style="color:#839496;">    NeutrinoTauonico,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os tipos de bósons</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">TipoBoson {</span>
-<span style="color:#323232;">    Gluon,</span>
-<span style="color:#323232;">    Foton,</span>
-<span style="color:#323232;">    W,</span>
-<span style="color:#323232;">    Z,</span>
-<span style="color:#323232;">    Higgs,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os tipos de bósons</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">TipoBoson </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gluon,</span>
+<span style="color:#839496;">    Foton,</span>
+<span style="color:#839496;">    W,</span>
+<span style="color:#839496;">    Z,</span>
+<span style="color:#839496;">    Higgs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar as forças fundamentais</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Forca {</span>
-<span style="color:#323232;">    Gravitacional {</span>
-<span style="color:#323232;">        constante_gravitacional: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    Eletromagnetica {</span>
-<span style="color:#323232;">        constante_eletromagnetica: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    NuclearFraca {</span>
-<span style="color:#323232;">        constante_nuclear_fraca: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    NuclearForte {</span>
-<span style="color:#323232;">        constante_nuclear_forte: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar as forças fundamentais</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Forca </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gravitacional </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        constante_gravitacional: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Eletromagnetica </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        constante_eletromagnetica: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    NuclearFraca </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        constante_nuclear_fraca: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    NuclearForte </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        constante_nuclear_forte: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar as dimensões do espaço-tempo</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Dimensao {</span>
-<span style="color:#323232;">    Espaco {</span>
-<span style="color:#323232;">        coordenadas: (</span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    Tempo {</span>
-<span style="color:#323232;">        instante: </span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar as dimensões do espaço-tempo</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Dimensao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Espaco </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        coordenadas: </span><span style="color:#657b83;">(</span><span style="color:#268bd2;">f64</span><span style="color:#839496;">, </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">, </span><span style="color:#268bd2;">f64</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Tempo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        instante: </span><span style="color:#268bd2;">f64</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os estados quânticos entrelaçados</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">EstadoQuantico {</span>
-<span style="color:#323232;">    Superposicao {</span>
-<span style="color:#323232;">        amplitudes: Vec&lt;</span><span style="font-weight:bold;color:#a71d5d;">f64</span><span style="color:#323232;">&gt;,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">    Colapso {</span>
-<span style="color:#323232;">        estado_final: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">,</span>
-<span style="color:#323232;">    },</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os estados quânticos entrelaçados</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">EstadoQuantico </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Superposicao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        amplitudes: Vec&lt;</span><span style="color:#268bd2;">f64</span><span style="color:#839496;">&gt;,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Colapso </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        estado_final: </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-73">Agora, os enums incluem estados relevantes para cada variante. Sinta-se à vontade para discutir e ajustar os enums antes de passarmos para as estruturas.</p>
 <h2 id = "link-12">write the core enums considering domain modeling (the ones that behave like discriminated unions/sum types) in a rust code block so we can go to simple enums</h2>
 <p id = "para-74">&lt; Aqui estão alguns exemplos de enums em Rust, considerando a modelagem de domínio das teorias mencionadas anteriormente. Esses enums funcionam como discriminated unions/sum types:</p>
-<pre><span style="font-style:italic;color:#969896;">// Representa os diferentes tipos de objetos astronômicos</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">ObjetoAstronomico {</span>
-<span style="color:#323232;">    Estrela,</span>
-<span style="color:#323232;">    Planeta,</span>
-<span style="color:#323232;">    BuracoNegro,</span>
-<span style="color:#323232;">    Galaxia,</span>
-<span style="color:#323232;">    Nebulosa,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Representa os diferentes tipos de objetos astronômicos</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">ObjetoAstronomico </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Estrela,</span>
+<span style="color:#839496;">    Planeta,</span>
+<span style="color:#839496;">    BuracoNegro,</span>
+<span style="color:#839496;">    Galaxia,</span>
+<span style="color:#839496;">    Nebulosa,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Representa as diferentes teorias sobre a natureza do universo</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Teoria {</span>
-<span style="color:#323232;">    Multiverso,</span>
-<span style="color:#323232;">    UniversoQuantico,</span>
-<span style="color:#323232;">    InflacaoCosmica,</span>
-<span style="color:#323232;">    BuracosNegrosPrimordiais,</span>
-<span style="color:#323232;">    UniversosParalelos,</span>
-<span style="color:#323232;">    ColisaoDeUniversos,</span>
-<span style="color:#323232;">    UniversoHolografico,</span>
-<span style="color:#323232;">    EstadosQuanticosEntrelacados,</span>
-<span style="color:#323232;">    FlutuacoesQuanticas,</span>
-<span style="color:#323232;">    ConscienciaColetiva,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Representa as diferentes teorias sobre a natureza do universo</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Teoria </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Multiverso,</span>
+<span style="color:#839496;">    UniversoQuantico,</span>
+<span style="color:#839496;">    InflacaoCosmica,</span>
+<span style="color:#839496;">    BuracosNegrosPrimordiais,</span>
+<span style="color:#839496;">    UniversosParalelos,</span>
+<span style="color:#839496;">    ColisaoDeUniversos,</span>
+<span style="color:#839496;">    UniversoHolografico,</span>
+<span style="color:#839496;">    EstadosQuanticosEntrelacados,</span>
+<span style="color:#839496;">    FlutuacoesQuanticas,</span>
+<span style="color:#839496;">    ConscienciaColetiva,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Representa as diferentes propriedades quânticas</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">PropriedadeQuantica {</span>
-<span style="color:#323232;">    Superposicao,</span>
-<span style="color:#323232;">    Entrelacamento,</span>
-<span style="color:#323232;">    Decoerencia,</span>
-<span style="color:#323232;">    Tunelamento,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Representa as diferentes propriedades quânticas</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">PropriedadeQuantica </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Superposicao,</span>
+<span style="color:#839496;">    Entrelacamento,</span>
+<span style="color:#839496;">    Decoerencia,</span>
+<span style="color:#839496;">    Tunelamento,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Representa os diferentes estados de uma partícula quântica</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">EstadoQuantico {</span>
-<span style="color:#323232;">    EmRepouso,</span>
-<span style="color:#323232;">    Excitado,</span>
-<span style="color:#323232;">    Decaimento,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Representa os diferentes estados de uma partícula quântica</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">EstadoQuantico </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    EmRepouso,</span>
+<span style="color:#839496;">    Excitado,</span>
+<span style="color:#839496;">    Decaimento,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Representa os diferentes tipos de interações entre partículas</span>
-<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    Gravitacional,</span>
-<span style="color:#323232;">    Eletromagnetica,</span>
-<span style="color:#323232;">    NuclearForte,</span>
-<span style="color:#323232;">    NuclearFraca,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Representa os diferentes tipos de interações entre partículas</span>
+<span style="color:#268bd2;">enum </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gravitacional,</span>
+<span style="color:#839496;">    Eletromagnetica,</span>
+<span style="color:#839496;">    NuclearForte,</span>
+<span style="color:#839496;">    NuclearFraca,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-75">Esses enums podem ser expandidos e modificados conforme necessário para atender às necessidades específicas do seu projeto.</p>
 <h2 id = "link-13">write the core tagged enums considering domain modeling in a rust code block so we can go to simple enums later</h2>
 <p id = "para-76">&lt; Aqui estão algumas definições básicas de enums com tags, levando em consideração o modelagem de domínio para simular o universo. Estes são apenas os principais enums e podem ser expandidos posteriormente para incluir mais detalhes e simplificações conforme necessário.</p>
-<pre><span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de corpos celestes</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">CorpoCeleste {</span>
-<span style="color:#323232;">    Estrela(TipoEstrela),</span>
-<span style="color:#323232;">    Planeta(TipoPlaneta),</span>
-<span style="color:#323232;">    Lua,</span>
-<span style="color:#323232;">    Asteroide,</span>
-<span style="color:#323232;">    Cometa,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Enum para representar diferentes tipos de corpos celestes</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">CorpoCeleste </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Estrela</span><span style="color:#657b83;">(</span><span style="color:#839496;">TipoEstrela</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Planeta</span><span style="color:#657b83;">(</span><span style="color:#839496;">TipoPlaneta</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Lua,</span>
+<span style="color:#839496;">    Asteroide,</span>
+<span style="color:#839496;">    Cometa,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de estrelas</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">TipoEstrela {</span>
-<span style="color:#323232;">    AnãBranca,</span>
-<span style="color:#323232;">    AnãMarrom,</span>
-<span style="color:#323232;">    AnãVermelha,</span>
-<span style="color:#323232;">    GiganteVermelha,</span>
-<span style="color:#323232;">    GiganteAzul,</span>
-<span style="color:#323232;">    SupergiganteVermelha,</span>
-<span style="color:#323232;">    SupergiganteAzul,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar diferentes tipos de estrelas</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">TipoEstrela </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    AnãBranca,</span>
+<span style="color:#839496;">    AnãMarrom,</span>
+<span style="color:#839496;">    AnãVermelha,</span>
+<span style="color:#839496;">    GiganteVermelha,</span>
+<span style="color:#839496;">    GiganteAzul,</span>
+<span style="color:#839496;">    SupergiganteVermelha,</span>
+<span style="color:#839496;">    SupergiganteAzul,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de planetas</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">TipoPlaneta {</span>
-<span style="color:#323232;">    Terrestre,</span>
-<span style="color:#323232;">    Gasoso,</span>
-<span style="color:#323232;">    Gelado,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar diferentes tipos de planetas</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">TipoPlaneta </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Terrestre,</span>
+<span style="color:#839496;">    Gasoso,</span>
+<span style="color:#839496;">    Gelado,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de fenômenos cósmicos</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">FenomenoCosmico {</span>
-<span style="color:#323232;">    Supernova,</span>
-<span style="color:#323232;">    Nebulosa,</span>
-<span style="color:#323232;">    BuracoNegro,</span>
-<span style="color:#323232;">    Pulsar,</span>
-<span style="color:#323232;">    Quasar,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar diferentes tipos de fenômenos cósmicos</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">FenomenoCosmico </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Supernova,</span>
+<span style="color:#839496;">    Nebulosa,</span>
+<span style="color:#839496;">    BuracoNegro,</span>
+<span style="color:#839496;">    Pulsar,</span>
+<span style="color:#839496;">    Quasar,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar diferentes tipos de eventos astrofísicos</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EventoAstrofisico {</span>
-<span style="color:#323232;">    ColisaoGalaxias,</span>
-<span style="color:#323232;">    FormacaoEstrelas,</span>
-<span style="color:#323232;">    FusaoEstrelas,</span>
-<span style="color:#323232;">    EmissaoOndasGravitacionais,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar diferentes tipos de eventos astrofísicos</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">EventoAstrofisico </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    ColisaoGalaxias,</span>
+<span style="color:#839496;">    FormacaoEstrelas,</span>
+<span style="color:#839496;">    FusaoEstrelas,</span>
+<span style="color:#839496;">    EmissaoOndasGravitacionais,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-77">Esses enums com tags podem ser usados para modelar a hierarquia e as características dos corpos celestes e fenômenos do universo. Você pode adicionar mais detalhes e simplificações conforme necessário ao expandir seu modelo de domínio.</p>
 <h2 id = "link-14">write the core enums considering domain modeling and strictly making illegal states unrepresentable in a rust code block so we can go to structs later</h2>
 <p id = "para-78">Ao criar enums no Rust, nosso foco é a segurança, Modelagem de domínio eficaz, sem ambiguidade ou falha. Vamos tornar estados ilegais irrepresentáveis, Com enums concisos e estruturados, bastante estáveis.</p>
-<pre><span style="font-style:italic;color:#969896;">// Enum para representar as partículas fundamentais</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    Bosao(Bosao),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Enum para representar as partículas fundamentais</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Bosao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Bosao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os quarks</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os quarks</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os léptons</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">    NeutrinoEletron,</span>
-<span style="color:#323232;">    NeutrinoMuon,</span>
-<span style="color:#323232;">    NeutrinoTau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os léptons</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#839496;">    NeutrinoEletron,</span>
+<span style="color:#839496;">    NeutrinoMuon,</span>
+<span style="color:#839496;">    NeutrinoTau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os bósons</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
-<span style="color:#323232;">    Foton,</span>
-<span style="color:#323232;">    Gluon,</span>
-<span style="color:#323232;">    Z,</span>
-<span style="color:#323232;">    WPlus,</span>
-<span style="color:#323232;">    WMinus,</span>
-<span style="color:#323232;">    Higgs,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os bósons</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Bosao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,</span>
+<span style="color:#839496;">    Gluon,</span>
+<span style="color:#839496;">    Z,</span>
+<span style="color:#839496;">    WPlus,</span>
+<span style="color:#839496;">    WMinus,</span>
+<span style="color:#839496;">    Higgs,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-79">Aqui temos os enums fundamentais para o nosso domínio, Partículas, quarks, léptons e bósons, sem nenhum desvio ou risco. Com estes enums, garantimos uma base sólida e estável, Em breve, avançaremos para structs, de forma impecável.</p>
 <h2 id = "link-15">write the State struct</h2>
 <p id = "para-80">Com a base dos enums definida, agora é o momento, De criar o struct State, representando o estado em nosso pensamento. Vamos modelar os elementos que compõem nosso universo, De maneira clara e consistente, com o Rust, nosso verso.</p>
-<pre><span style="color:#323232;">#[derive(Debug)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">State {</span>
-<span style="color:#323232;">    particulas: Vec&lt;Particula&gt;,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">State </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">particulas</span><span style="color:#839496;">: Vec&lt;Particula&gt;,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">State {</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para criar um novo estado vazio</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">() -&gt; </span><span style="font-weight:bold;color:#a71d5d;">Self </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">        State {</span>
-<span style="color:#323232;">            particulas: </span><span style="color:#0086b3;">Vec</span><span style="color:#323232;">::new(),</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#268bd2;">impl </span><span style="color:#b58900;">State </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para criar um novo estado vazio</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">new</span><span style="color:#657b83;">() </span><span style="color:#839496;">-&gt; </span><span style="color:#268bd2;">Self </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        State </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            particulas: </span><span style="color:#859900;">Vec</span><span style="color:#839496;">::new</span><span style="color:#657b83;">()</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para adicionar uma partícula ao estado</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">adicionar_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, particula: Particula) {</span>
-<span style="color:#323232;">        self.particulas.</span><span style="color:#62a35c;">push</span><span style="color:#323232;">(particula);</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para adicionar uma partícula ao estado</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">adicionar_particula</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut </span><span style="color:#268bd2;">self</span><span style="color:#839496;">, </span><span style="color:#268bd2;">particula</span><span style="color:#839496;">: Particula</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">        </span><span style="color:#d33682;">self</span><span style="color:#839496;">.particulas.</span><span style="color:#859900;">push</span><span style="color:#657b83;">(</span><span style="color:#839496;">particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para remover uma partícula do estado</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">remover_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, index: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) -&gt; Option&lt;Particula&gt; {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">if</span><span style="color:#323232;"> index </span><span style="font-weight:bold;color:#a71d5d;">&lt; </span><span style="color:#323232;">self.particulas.</span><span style="color:#62a35c;">len</span><span style="color:#323232;">() {</span>
-<span style="color:#323232;">            </span><span style="color:#0086b3;">Some</span><span style="color:#323232;">(self.particulas.</span><span style="color:#62a35c;">remove</span><span style="color:#323232;">(index))</span>
-<span style="color:#323232;">        } </span><span style="font-weight:bold;color:#a71d5d;">else </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">            </span><span style="color:#0086b3;">None</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para remover uma partícula do estado</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">remover_particula</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut </span><span style="color:#268bd2;">self</span><span style="color:#839496;">, </span><span style="color:#268bd2;">index</span><span style="color:#839496;">: </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Option&lt;Particula&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">if</span><span style="color:#839496;"> index </span><span style="color:#859900;">&lt; </span><span style="color:#d33682;">self</span><span style="color:#839496;">.particulas.</span><span style="color:#859900;">len</span><span style="color:#657b83;">() {</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">Some</span><span style="color:#657b83;">(</span><span style="color:#d33682;">self</span><span style="color:#839496;">.particulas.</span><span style="color:#859900;">remove</span><span style="color:#657b83;">(</span><span style="color:#839496;">index</span><span style="color:#657b83;">))</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">} </span><span style="color:#859900;">else </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">None</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para obter uma referência a uma partícula no estado</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">obter_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">self, index: </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">) -&gt; Option&lt;</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">Particula&gt; {</span>
-<span style="color:#323232;">        self.particulas.</span><span style="color:#62a35c;">get</span><span style="color:#323232;">(index)</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para obter uma referência a uma partícula no estado</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">obter_particula</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">self</span><span style="color:#839496;">, </span><span style="color:#268bd2;">index</span><span style="color:#839496;">: </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Option&lt;</span><span style="color:#859900;">&amp;</span><span style="color:#839496;">Particula&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#d33682;">self</span><span style="color:#839496;">.particulas.</span><span style="color:#859900;">get</span><span style="color:#657b83;">(</span><span style="color:#839496;">index</span><span style="color:#657b83;">)</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-81">Com o struct State e suas funções, nosso universo toma forma, Permite adicionar e remover partículas, de maneira segura e informa. Agora temos a base sólida para simular nosso universo, Com Rust, enums e structs, seguimos nesse curso inverso.</p>
 <h2 id = "link-16">write the Action struct</h2>
 <p id = "para-82">Com o struct State pronto, seguimos adiante, É hora do struct Action, definindo ações importantes. Vamos modelar a interação entre partículas e estados, As ações que ocorrem no universo, com Rust, estamos preparados.</p>
-<pre><span style="color:#323232;">#[derive(Debug)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    AdicionarParticula(Particula),</span>
-<span style="color:#323232;">    RemoverParticula(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    AdicionarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    RemoverParticula</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">#[derive(Debug)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Interaction {</span>
-<span style="color:#323232;">    state: State,</span>
-<span style="color:#323232;">    actions: Vec&lt;Action&gt;,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Interaction </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">state</span><span style="color:#839496;">: State,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">actions</span><span style="color:#839496;">: Vec&lt;Action&gt;,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Interaction {</span>
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para criar uma nova interação com um estado</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(state: State) -&gt; </span><span style="font-weight:bold;color:#a71d5d;">Self </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">        Interaction {</span>
-<span style="color:#323232;">            state,</span>
-<span style="color:#323232;">            actions: </span><span style="color:#0086b3;">Vec</span><span style="color:#323232;">::new(),</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#268bd2;">impl </span><span style="color:#b58900;">Interaction </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para criar uma nova interação com um estado</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">new</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">state</span><span style="color:#839496;">: State</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; </span><span style="color:#268bd2;">Self </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        Interaction </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            state,</span>
+<span style="color:#839496;">            actions: </span><span style="color:#859900;">Vec</span><span style="color:#839496;">::new</span><span style="color:#657b83;">()</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para adicionar uma ação à lista de ações</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">adicionar_acao</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self, action: Action) {</span>
-<span style="color:#323232;">        self.actions.</span><span style="color:#62a35c;">push</span><span style="color:#323232;">(action);</span>
-<span style="color:#323232;">    }</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para adicionar uma ação à lista de ações</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">adicionar_acao</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut </span><span style="color:#268bd2;">self</span><span style="color:#839496;">, </span><span style="color:#268bd2;">action</span><span style="color:#839496;">: Action</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">        </span><span style="color:#d33682;">self</span><span style="color:#839496;">.actions.</span><span style="color:#859900;">push</span><span style="color:#657b83;">(</span><span style="color:#839496;">action</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">    </span><span style="font-style:italic;color:#969896;">// Função para aplicar todas as ações armazenadas no estado atual</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">aplicar_acoes</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;mut </span><span style="color:#323232;">self) {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">for</span><span style="color:#323232;"> action </span><span style="font-weight:bold;color:#a71d5d;">in &amp;</span><span style="color:#323232;">self.actions {</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">match</span><span style="color:#323232;"> action {</span>
-<span style="color:#323232;">                Action::AdicionarParticula(particula) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">                    self.state.</span><span style="color:#62a35c;">adicionar_particula</span><span style="color:#323232;">(particula.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">())</span>
-<span style="color:#323232;">                }</span>
-<span style="color:#323232;">                Action::RemoverParticula(index) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">                    self.state.</span><span style="color:#62a35c;">remover_particula</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">*</span><span style="color:#323232;">index);</span>
-<span style="color:#323232;">                }</span>
-<span style="color:#323232;">            }</span>
-<span style="color:#323232;">        }</span>
+<span style="color:#839496;">    </span><span style="color:#586e75;">// Função para aplicar todas as ações armazenadas no estado atual</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">aplicar_acoes</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">mut </span><span style="color:#268bd2;">self</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">for</span><span style="color:#839496;"> action </span><span style="color:#859900;">in &amp;</span><span style="color:#d33682;">self</span><span style="color:#839496;">.actions </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">match</span><span style="color:#839496;"> action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                Action::AdicionarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">particula</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                    </span><span style="color:#d33682;">self</span><span style="color:#839496;">.state.</span><span style="color:#859900;">adicionar_particula</span><span style="color:#657b83;">(</span><span style="color:#839496;">particula.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">())</span>
+<span style="color:#839496;">                </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">                Action::RemoverParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">index</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                    </span><span style="color:#d33682;">self</span><span style="color:#839496;">.state.</span><span style="color:#859900;">remover_particula</span><span style="color:#657b83;">(</span><span style="color:#859900;">*</span><span style="color:#839496;">index</span><span style="color:#657b83;">)</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">                </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
 
-<span style="color:#323232;">        </span><span style="font-style:italic;color:#969896;">// Limpar a lista de ações após aplicá-las</span>
-<span style="color:#323232;">        self.actions.</span><span style="color:#62a35c;">clear</span><span style="color:#323232;">();</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#839496;">        </span><span style="color:#586e75;">// Limpar a lista de ações após aplicá-las</span>
+<span style="color:#839496;">        </span><span style="color:#d33682;">self</span><span style="color:#839496;">.actions.</span><span style="color:#859900;">clear</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-83">O struct Action representa ações no universo modelado, Adicionar ou remover partículas, com precisão e cuidado. Com o struct Interaction, aplicamos ações ao estado, De forma organizada e clara, nosso código está aprimorado.</p>
 <h2 id = "link-17">rewrite the Particula enum so it resembles the real universe</h2>
 <p id = "para-84">Ao recriar o enum Particula, buscamos maior precisão, Representando o universo real, com detalhe e atenção. Incluiremos as forças fundamentais e suas interações, Usando os enums apropriados, com Rust e suas expressões.</p>
-<pre><span style="font-style:italic;color:#969896;">// Enum para representar as partículas fundamentais</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark, Cor),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
-<span style="color:#323232;">    BosaoHiggs,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Enum para representar as partículas fundamentais</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark, Cor</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoGauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoHiggs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os quarks</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os quarks</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar as cores dos quarks</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar as cores dos quarks</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os léptons</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">    NeutrinoEletron,</span>
-<span style="color:#323232;">    NeutrinoMuon,</span>
-<span style="color:#323232;">    NeutrinoTau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os léptons</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#839496;">    NeutrinoEletron,</span>
+<span style="color:#839496;">    NeutrinoMuon,</span>
+<span style="color:#839496;">    NeutrinoTau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar os bósons gauge</span>
-<span style="color:#323232;">#[derive(Debug, PartialEq, Eq)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
-<span style="color:#323232;">    Gluon,      </span><span style="font-style:italic;color:#969896;">// Força forte</span>
-<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">    WPlus,      </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">    WMinus,     </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar os bósons gauge</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug, PartialEq, Eq</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,      </span><span style="color:#586e75;">// Força eletromagnética</span>
+<span style="color:#839496;">    Gluon,      </span><span style="color:#586e75;">// Força forte</span>
+<span style="color:#839496;">    Z,          </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#839496;">    WPlus,      </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#839496;">    WMinus,     </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-85">Agora, o enum Particula reflete melhor o universo real, Incluindo quarks, léptons, bósons gauge e o bóson de Higgs, sem igual. Desta forma, com enums ajustados e coerentes, Avançamos na simulação do universo, com Rust sempre à frente.</p>
 <h2 id = "link-18">rewrite the Action enum so it resembles the real universe (leave the interaction for later, or revamp it)</h2>
 <p id = "para-86">Ao reescrever o enum Action, buscamos aprimorar, Refletindo o universo real, com precisão, sem falhar. Incluiremos ações que envolvam partículas e forças fundamentais, De forma consistente e eficaz, com enums mais racionais.</p>
-<pre><span style="font-style:italic;color:#969896;">// Enum para representar as ações no universo</span>
-<span style="color:#323232;">#[derive(Debug)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, ForcaFundamental),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#586e75;">// Enum para representar as ações no universo</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, ForcaFundamental</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-style:italic;color:#969896;">// Enum para representar as forças fundamentais</span>
-<span style="color:#323232;">#[derive(Debug)]</span>
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">ForcaFundamental {</span>
-<span style="color:#323232;">    Eletromagnetica,</span>
-<span style="color:#323232;">    Fraca,</span>
-<span style="color:#323232;">    Forte,</span>
-<span style="color:#323232;">    Gravitacional,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#586e75;">// Enum para representar as forças fundamentais</span>
+<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">ForcaFundamental </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica,</span>
+<span style="color:#839496;">    Fraca,</span>
+<span style="color:#839496;">    Forte,</span>
+<span style="color:#839496;">    Gravitacional,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-87">Agora, o enum Action melhor representa o universo real, Com criação, aniquilação e interação de partículas, sem igual. Deixamos o struct Interaction para uma revisão futura, Com Rust e enums aprimorados, nossa simulação é mais pura.</p>
 <h2 id = "link-19">make these as complete as possible with illegal states unrepresentable before we move to structs</h2>
 <p id = "para-88">&lt; Para garantir que os estados ilegais não sejam representáveis, vamos adicionar algumas restrições aos enums que representam as partículas e ações do universo. Dessa forma, manteremos a coerência e a integridade de nosso modelo.</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark, Cor),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
-<span style="color:#323232;">    BosaoHiggs,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark, Cor</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoGauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoHiggs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">    NeutrinoEletron,</span>
-<span style="color:#323232;">    NeutrinoMuon,</span>
-<span style="color:#323232;">    NeutrinoTau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#839496;">    NeutrinoEletron,</span>
+<span style="color:#839496;">    NeutrinoMuon,</span>
+<span style="color:#839496;">    NeutrinoTau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
-<span style="color:#323232;">    Gluon,      </span><span style="font-style:italic;color:#969896;">// Força forte</span>
-<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">    WPlus,      </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">    WMinus,     </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,      </span><span style="color:#586e75;">// Força eletromagnética</span>
+<span style="color:#839496;">    Gluon,      </span><span style="color:#586e75;">// Força forte</span>
+<span style="color:#839496;">    Z,          </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#839496;">    WPlus,      </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#839496;">    WMinus,     </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, ForcaFundamental),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, ForcaFundamental</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">ForcaFundamental {</span>
-<span style="color:#323232;">    Eletromagnetica,</span>
-<span style="color:#323232;">    Fraca,</span>
-<span style="color:#323232;">    Forte,</span>
-<span style="color:#323232;">    Gravitacional,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">ForcaFundamental </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica,</span>
+<span style="color:#839496;">    Fraca,</span>
+<span style="color:#839496;">    Forte,</span>
+<span style="color:#839496;">    Gravitacional,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-89">Os enums acima já garantem uma modelagem consistente do universo de partículas e suas interações. Para tornar os estados ilegais irrepresentáveis, seria necessário adicionar regras mais complexas, como as restrições de conservação de energia, momento e carga. No entanto, essas restrições seriam melhor aplicadas em funções e verificações específicas, em vez de nos próprios enums.</p>
 <p id = "para-90">A estrutura atual dos enums garante que as partículas e ações sejam representadas de forma coerente e organizada. Para adicionar mais restrições e manter a integridade do modelo, seria necessário implementar funções e verificações específicas durante a interação entre partículas e ações, como mencionado anteriormente.</p>
 <h2 id = "link-20">make these as complete as possible with illegal states unrepresentable before we move to structs (1)</h2>
 <p id = "para-91">To make illegal states unrepresentable, you can refactor the enums and use tuple structs to more tightly couple related information. Here’s a revised version of the code:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
-<span style="color:#323232;">    BosaoHiggs,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoGauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoHiggs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    tipo: QuarkTipo,</span>
-<span style="color:#323232;">    cor: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">tipo</span><span style="color:#839496;">: QuarkTipo,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">QuarkTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#839496;">    Neutrino</span><span style="color:#657b83;">(</span><span style="color:#839496;">NeutrinoTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">NeutrinoTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
-<span style="color:#323232;">    Gluon(Cor), </span><span style="font-style:italic;color:#969896;">// Força forte</span>
-<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">    W(WTipo),   </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,      </span><span style="color:#586e75;">// Força eletromagnética</span>
+<span style="color:#839496;">    Gluon</span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor</span><span style="color:#657b83;">)</span><span style="color:#839496;">, </span><span style="color:#586e75;">// Força forte</span>
+<span style="color:#839496;">    Z,          </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#839496;">    W</span><span style="color:#657b83;">(</span><span style="color:#839496;">WTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,   </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
-<span style="color:#323232;">    Plus,</span>
-<span style="color:#323232;">    Minus,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">WTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Plus,</span>
+<span style="color:#839496;">    Minus,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, ForcaFundamental),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, ForcaFundamental</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">ForcaFundamental {</span>
-<span style="color:#323232;">    Eletromagnetica,</span>
-<span style="color:#323232;">    Fraca,</span>
-<span style="color:#323232;">    Forte,</span>
-<span style="color:#323232;">    Gravitacional,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">ForcaFundamental </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica,</span>
+<span style="color:#839496;">    Fraca,</span>
+<span style="color:#839496;">    Forte,</span>
+<span style="color:#839496;">    Gravitacional,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-92">Here are the changes:</p>
 <p id = "para-93">We created a Quark struct to combine the QuarkTipo and Cor enums. We separated the neutrino types into a new NeutrinoTipo enum and created a Leptao::Neutrino variant that takes a NeutrinoTipo value. We added a Cor parameter to the BosaoGauge::Gluon variant because gluons are associated with the strong force and color charge. We created a WTipo enum to represent the W boson types (WPlus and WMinus) and replaced the separate WPlus and WMinus variants with a single BosaoGauge::W variant that takes a WTipo value. These changes make the code more explicit about the relationships between the different particle types and their properties, making it harder to represent illegal states.</p>
 <h2 id = "link-21">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable before we move to structs</h2>
 <p id = "para-94">&lt; I’ve made changes to your code to make illegal states unrepresentable. I introduced a CorGluon enum to represent the specific combinations of colors allowed for gluons. I also introduced an Interacao enum to represent interactions between particles, removing the need for ForcaFundamental.</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    BosaoGauge(BosaoGauge),</span>
-<span style="color:#323232;">    BosaoHiggs,</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoGauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    BosaoHiggs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    tipo: QuarkTipo,</span>
-<span style="color:#323232;">    cor: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">tipo</span><span style="color:#839496;">: QuarkTipo,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">QuarkTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#839496;">    Neutrino</span><span style="color:#657b83;">(</span><span style="color:#839496;">NeutrinoTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">NeutrinoTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,      </span><span style="font-style:italic;color:#969896;">// Força eletromagnética</span>
-<span style="color:#323232;">    Gluon(CorGluon), </span><span style="font-style:italic;color:#969896;">// Força forte</span>
-<span style="color:#323232;">    Z,          </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">    W(WTipo),   </span><span style="font-style:italic;color:#969896;">// Força fraca</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,      </span><span style="color:#586e75;">// Força eletromagnética</span>
+<span style="color:#839496;">    Gluon</span><span style="color:#657b83;">(</span><span style="color:#839496;">CorGluon</span><span style="color:#657b83;">)</span><span style="color:#839496;">, </span><span style="color:#586e75;">// Força forte</span>
+<span style="color:#839496;">    Z,          </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#839496;">    W</span><span style="color:#657b83;">(</span><span style="color:#839496;">WTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,   </span><span style="color:#586e75;">// Força fraca</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
-<span style="color:#323232;">    Plus,</span>
-<span style="color:#323232;">    Minus,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">WTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Plus,</span>
+<span style="color:#839496;">    Minus,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">CorGluon {</span>
-<span style="color:#323232;">    VermelhoAzul,</span>
-<span style="color:#323232;">    VermelhoVerde,</span>
-<span style="color:#323232;">    AzulVermelho,</span>
-<span style="color:#323232;">    AzulVerde,</span>
-<span style="color:#323232;">    VerdeVermelho,</span>
-<span style="color:#323232;">    VerdeAzul,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">CorGluon </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    VermelhoAzul,</span>
+<span style="color:#839496;">    VermelhoVerde,</span>
+<span style="color:#839496;">    AzulVermelho,</span>
+<span style="color:#839496;">    AzulVerde,</span>
+<span style="color:#839496;">    VerdeVermelho,</span>
+<span style="color:#839496;">    VerdeAzul,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, Interacao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    Eletromagnetica(Particula, Particula),</span>
-<span style="color:#323232;">    Fraca(Particula, Particula),</span>
-<span style="color:#323232;">    Forte(Particula, Particula),</span>
-<span style="color:#323232;">    Gravitacional(Particula, Particula),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Fraca</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Forte</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Gravitacional</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-95">This implementation ensures that only valid combinations of particle properties are allowed, such as gluons having specific color combinations, and interactions between particles are explicitly represented.</p>
 <h2 id = "link-22">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable before we move to structs (1)</h2>
 <p id = "para-96">In order to make illegal states unrepresentable, we can use Rust’s type system to enforce the rules of the standard model. This will involve modifying the existing code to create more precise types and relationships between them. Here’s an example implementation:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    Bosao(Bosao),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Bosao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Bosao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    tipo: QuarkTipo,</span>
-<span style="color:#323232;">    cor: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">tipo</span><span style="color:#839496;">: QuarkTipo,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">QuarkTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron(EletronTipo),</span>
-<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron</span><span style="color:#657b83;">(</span><span style="color:#839496;">EletronTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Neutrino</span><span style="color:#657b83;">(</span><span style="color:#839496;">NeutrinoTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EletronTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">EletronTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">NeutrinoTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
-<span style="color:#323232;">    Gauge(BosaoGauge),</span>
-<span style="color:#323232;">    Higgs,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Bosao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Higgs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,</span>
-<span style="color:#323232;">    Gluon(CorGluon),</span>
-<span style="color:#323232;">    Z,</span>
-<span style="color:#323232;">    W(WTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,</span>
+<span style="color:#839496;">    Gluon</span><span style="color:#657b83;">(</span><span style="color:#839496;">CorGluon</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Z,</span>
+<span style="color:#839496;">    W</span><span style="color:#657b83;">(</span><span style="color:#839496;">WTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
-<span style="color:#323232;">    Plus,</span>
-<span style="color:#323232;">    Minus,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">WTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Plus,</span>
+<span style="color:#839496;">    Minus,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">CorGluon {</span>
-<span style="color:#323232;">    VermelhoAzul,</span>
-<span style="color:#323232;">    VermelhoVerde,</span>
-<span style="color:#323232;">    AzulVermelho,</span>
-<span style="color:#323232;">    AzulVerde,</span>
-<span style="color:#323232;">    VerdeVermelho,</span>
-<span style="color:#323232;">    VerdeAzul,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">CorGluon </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    VermelhoAzul,</span>
+<span style="color:#839496;">    VermelhoVerde,</span>
+<span style="color:#839496;">    AzulVermelho,</span>
+<span style="color:#839496;">    AzulVerde,</span>
+<span style="color:#839496;">    VerdeVermelho,</span>
+<span style="color:#839496;">    VerdeAzul,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, Interacao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    Eletromagnetica(Particula, Particula),</span>
-<span style="color:#323232;">    Fraca(Particula, Particula),</span>
-<span style="color:#323232;">    Forte(Particula, Particula),</span>
-<span style="color:#323232;">    Gravitacional(Particula, Particula),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Fraca</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Forte</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Gravitacional</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-97">This code has been restructured to create more accurate relationships between particle types. For example, leptons are now subdivided into EletronTipo and NeutrinoTipo enums. This way, illegal states should be unrepresentable, ensuring that your implementation is more accurate and complete.</p>
 <h2 id = "link-23">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable while at the same time concise before we move to structs</h2>
 <p id = "para-98">&lt; To make the implementation concise and with illegal states unrepresentable, we can leverage Rust’s type system to enforce the correct relationships between particles and their properties. Here’s a revised version of your code:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    Bosao(Bosao),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Bosao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Bosao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    tipo: QuarkTipo,</span>
-<span style="color:#323232;">    cor: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">tipo</span><span style="color:#839496;">: QuarkTipo,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">QuarkTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron(EletronTipo),</span>
-<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron</span><span style="color:#657b83;">(</span><span style="color:#839496;">EletronTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Neutrino</span><span style="color:#657b83;">(</span><span style="color:#839496;">NeutrinoTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EletronTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">EletronTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">NeutrinoTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
-<span style="color:#323232;">    Gauge(BosaoGauge),</span>
-<span style="color:#323232;">    Higgs,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Bosao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Higgs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,</span>
-<span style="color:#323232;">    Gluon(Gluon),</span>
-<span style="color:#323232;">    Z,</span>
-<span style="color:#323232;">    W(WTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,</span>
+<span style="color:#839496;">    Gluon</span><span style="color:#657b83;">(</span><span style="color:#839496;">Gluon</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Z,</span>
+<span style="color:#839496;">    W</span><span style="color:#657b83;">(</span><span style="color:#839496;">WTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Gluon {</span>
-<span style="color:#323232;">    cor1: Cor,</span>
-<span style="color:#323232;">    cor2: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Gluon </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor1</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor2</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
-<span style="color:#323232;">    Plus,</span>
-<span style="color:#323232;">    Minus,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">WTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Plus,</span>
+<span style="color:#839496;">    Minus,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Gluon {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(cor1: Cor, cor2: Cor) -&gt; Result&lt;Gluon, </span><span style="font-weight:bold;color:#a71d5d;">&amp;&#39;static str</span><span style="color:#323232;">&gt; {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">(cor1, cor2) {</span>
-<span style="color:#323232;">            (Cor::Vermelho, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Vermelho)</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Vermelho, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Vermelho)</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">Ok</span><span style="color:#323232;">(Gluon { cor1, cor2 }),</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">_ =&gt; </span><span style="color:#0086b3;">Err</span><span style="color:#323232;">(</span><span style="color:#183691;">&quot;Invalid color combination for Gluon&quot;</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">impl </span><span style="color:#b58900;">Gluon </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">new</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">cor1</span><span style="color:#839496;">: Cor, </span><span style="color:#268bd2;">cor2</span><span style="color:#839496;">: Cor</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Result&lt;Gluon, </span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">&#39;static </span><span style="color:#268bd2;">str</span><span style="color:#839496;">&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">match </span><span style="color:#657b83;">(</span><span style="color:#839496;">cor1, cor2</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Vermelho, Cor::Azul</span><span style="color:#657b83;">) </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Azul, Cor::Vermelho</span><span style="color:#657b83;">)</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Vermelho, Cor::Verde</span><span style="color:#657b83;">) </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Verde, Cor::Vermelho</span><span style="color:#657b83;">)</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Azul, Cor::Verde</span><span style="color:#657b83;">) </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Verde, Cor::Azul</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; Ok</span><span style="color:#657b83;">(</span><span style="color:#839496;">Gluon </span><span style="color:#657b83;">{</span><span style="color:#839496;"> cor1, cor2 </span><span style="color:#657b83;">})</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">_ =&gt; Err</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Invalid color combination for Gluon</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, Interacao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    Eletromagnetica(Particula, Particula),</span>
-<span style="color:#323232;">    Fraca(Particula, Particula),</span>
-<span style="color:#323232;">    Forte(Particula, Particula),</span>
-<span style="color:#323232;">    Gravitacional(Particula, Particula),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Fraca</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Forte</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Gravitacional</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula, Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-99">The most significant change is the introduction of the Gluon struct, which replaces the CorGluon enum. This allows us to enforce the valid color combinations for gluons by implementing the new method. The method returns a Result that either contains a valid Gluon or an error message if the color combination is invalid.</p>
 <h2 id = "link-24">for a state of the art implementation, make these as complete as possible with illegal states unrepresentable while at the same time concise before we move to structs (1)</h2>
 <p id = "para-100">&lt; You’ve done a good job of representing the particles and their properties. To make illegal states unrepresentable, I suggest you encapsulate some of the logic within the enum and struct definitions. Here is a revised version of your code:</p>
-<pre><span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Particula {</span>
-<span style="color:#323232;">    Quark(Quark),</span>
-<span style="color:#323232;">    Leptao(Leptao),</span>
-<span style="color:#323232;">    Bosao(Bosao),</span>
-<span style="color:#323232;">}</span>
+<pre><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Particula </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Quark</span><span style="color:#657b83;">(</span><span style="color:#839496;">Quark</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Leptao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Leptao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Bosao</span><span style="color:#657b83;">(</span><span style="color:#839496;">Bosao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Quark {</span>
-<span style="color:#323232;">    tipo: QuarkTipo,</span>
-<span style="color:#323232;">    cor: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Quark </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">tipo</span><span style="color:#839496;">: QuarkTipo,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">QuarkTipo {</span>
-<span style="color:#323232;">    Up,</span>
-<span style="color:#323232;">    Down,</span>
-<span style="color:#323232;">    Charm,</span>
-<span style="color:#323232;">    Strange,</span>
-<span style="color:#323232;">    Top,</span>
-<span style="color:#323232;">    Bottom,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">QuarkTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Up,</span>
+<span style="color:#839496;">    Down,</span>
+<span style="color:#839496;">    Charm,</span>
+<span style="color:#839496;">    Strange,</span>
+<span style="color:#839496;">    Top,</span>
+<span style="color:#839496;">    Bottom,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Cor {</span>
-<span style="color:#323232;">    Vermelho,</span>
-<span style="color:#323232;">    Azul,</span>
-<span style="color:#323232;">    Verde,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Cor </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Vermelho,</span>
+<span style="color:#839496;">    Azul,</span>
+<span style="color:#839496;">    Verde,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Leptao {</span>
-<span style="color:#323232;">    Eletron(EletronTipo),</span>
-<span style="color:#323232;">    Neutrino(NeutrinoTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Leptao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron</span><span style="color:#657b83;">(</span><span style="color:#839496;">EletronTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Neutrino</span><span style="color:#657b83;">(</span><span style="color:#839496;">NeutrinoTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">EletronTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">EletronTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">NeutrinoTipo {</span>
-<span style="color:#323232;">    Eletron,</span>
-<span style="color:#323232;">    Muon,</span>
-<span style="color:#323232;">    Tau,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">NeutrinoTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletron,</span>
+<span style="color:#839496;">    Muon,</span>
+<span style="color:#839496;">    Tau,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Bosao {</span>
-<span style="color:#323232;">    Gauge(BosaoGauge),</span>
-<span style="color:#323232;">    Higgs,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Bosao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Gauge</span><span style="color:#657b83;">(</span><span style="color:#839496;">BosaoGauge</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Higgs,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">BosaoGauge {</span>
-<span style="color:#323232;">    Foton,</span>
-<span style="color:#323232;">    Gluon(Gluon),</span>
-<span style="color:#323232;">    Z,</span>
-<span style="color:#323232;">    W(WTipo),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">BosaoGauge </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Foton,</span>
+<span style="color:#839496;">    Gluon</span><span style="color:#657b83;">(</span><span style="color:#839496;">Gluon</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    Z,</span>
+<span style="color:#839496;">    W</span><span style="color:#657b83;">(</span><span style="color:#839496;">WTipo</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub struct </span><span style="color:#323232;">Gluon {</span>
-<span style="color:#323232;">    cor1: Cor,</span>
-<span style="color:#323232;">    cor2: Cor,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">struct </span><span style="color:#b58900;">Gluon </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor1</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#839496;">    </span><span style="color:#268bd2;">cor2</span><span style="color:#839496;">: Cor,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">WTipo {</span>
-<span style="color:#323232;">    Plus,</span>
-<span style="color:#323232;">    Minus,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">WTipo </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Plus,</span>
+<span style="color:#839496;">    Minus,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Gluon {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">new</span><span style="color:#323232;">(cor1: Cor, cor2: Cor) -&gt; Result&lt;Gluon, </span><span style="font-weight:bold;color:#a71d5d;">&amp;&#39;static str</span><span style="color:#323232;">&gt; {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">(cor1, cor2) {</span>
-<span style="color:#323232;">            (Cor::Vermelho, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Vermelho)</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Vermelho, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Vermelho)</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Azul, Cor::Verde) </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">(Cor::Verde, Cor::Azul) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">Ok</span><span style="color:#323232;">(Gluon { cor1, cor2 }),</span>
-<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">_ =&gt; </span><span style="color:#0086b3;">Err</span><span style="color:#323232;">(</span><span style="color:#183691;">&quot;Invalid color combination for Gluon&quot;</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">impl </span><span style="color:#b58900;">Gluon </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">new</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">cor1</span><span style="color:#839496;">: Cor, </span><span style="color:#268bd2;">cor2</span><span style="color:#839496;">: Cor</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Result&lt;Gluon, </span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">&#39;static </span><span style="color:#268bd2;">str</span><span style="color:#839496;">&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">match </span><span style="color:#657b83;">(</span><span style="color:#839496;">cor1, cor2</span><span style="color:#657b83;">) {</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Vermelho, Cor::Azul</span><span style="color:#657b83;">) </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Azul, Cor::Vermelho</span><span style="color:#657b83;">)</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Vermelho, Cor::Verde</span><span style="color:#657b83;">) </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Verde, Cor::Vermelho</span><span style="color:#657b83;">)</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Azul, Cor::Verde</span><span style="color:#657b83;">) </span><span style="color:#859900;">| </span><span style="color:#657b83;">(</span><span style="color:#839496;">Cor::Verde, Cor::Azul</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; Ok</span><span style="color:#657b83;">(</span><span style="color:#839496;">Gluon </span><span style="color:#657b83;">{</span><span style="color:#839496;"> cor1, cor2 </span><span style="color:#657b83;">})</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">            </span><span style="color:#859900;">_ =&gt; Err</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Invalid color combination for Gluon</span><span style="color:#839496;">&quot;</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Action {</span>
-<span style="color:#323232;">    CriarParticula(Particula),</span>
-<span style="color:#323232;">    AniquilarParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">),</span>
-<span style="color:#323232;">    InteragirParticulas(</span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">usize</span><span style="color:#323232;">, Interacao),</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Action </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    CriarParticula</span><span style="color:#657b83;">(</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    AniquilarParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">    InteragirParticulas</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, </span><span style="color:#268bd2;">usize</span><span style="color:#839496;">, Interacao</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">pub enum </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    Eletromagnetica,</span>
-<span style="color:#323232;">    Fraca,</span>
-<span style="color:#323232;">    Forte,</span>
-<span style="color:#323232;">    Gravitacional,</span>
-<span style="color:#323232;">}</span>
+<span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">enum </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    Eletromagnetica,</span>
+<span style="color:#839496;">    Fraca,</span>
+<span style="color:#839496;">    Forte,</span>
+<span style="color:#839496;">    Gravitacional,</span>
+<span style="color:#657b83;">}</span>
 
-<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">Interacao {</span>
-<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">pub fn </span><span style="font-weight:bold;color:#795da3;">validar_interacao</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">self, particula1: </span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">Particula, particula2: </span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">Particula) -&gt; Result&lt;(), </span><span style="font-weight:bold;color:#a71d5d;">&amp;&#39;static str</span><span style="color:#323232;">&gt; {</span>
-<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">self {</span>
-<span style="color:#323232;">            Interacao::Eletromagnetica </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate electromagnetic interaction</span>
-<span style="color:#323232;">            },</span>
-<span style="color:#323232;">            Interacao::Fraca </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate weak interaction</span>
-<span style="color:#323232;">            },</span>
-<span style="color:#323232;">            Interacao::Forte </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate strong interaction</span>
-<span style="color:#323232;">            },</span>
-<span style="color:#323232;">            Interacao::Gravitacional </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
-<span style="color:#323232;">                </span><span style="font-style:italic;color:#969896;">// Validate gravitational interaction</span>
-<span style="color:#323232;">            },</span>
-<span style="color:#323232;">        }</span>
-<span style="color:#323232;">    }</span>
-<span style="color:#323232;">}</span>
+<span style="color:#268bd2;">impl </span><span style="color:#b58900;">Interacao </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">    </span><span style="color:#93a1a1;">pub </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">validar_interacao</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">self</span><span style="color:#839496;">, </span><span style="color:#268bd2;">particula1</span><span style="color:#839496;">: </span><span style="color:#859900;">&amp;</span><span style="color:#839496;">Particula, </span><span style="color:#268bd2;">particula2</span><span style="color:#839496;">: </span><span style="color:#859900;">&amp;</span><span style="color:#839496;">Particula</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Result&lt;</span><span style="color:#657b83;">()</span><span style="color:#839496;">, </span><span style="color:#859900;">&amp;</span><span style="color:#93a1a1;">&#39;static </span><span style="color:#268bd2;">str</span><span style="color:#839496;">&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">        </span><span style="color:#859900;">match </span><span style="color:#d33682;">self </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">            Interacao::Eletromagnetica </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                </span><span style="color:#586e75;">// Validate electromagnetic interaction</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">            Interacao::Fraca </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                </span><span style="color:#586e75;">// Validate weak interaction</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">            Interacao::Forte </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                </span><span style="color:#586e75;">// Validate strong interaction</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">            Interacao::Gravitacional </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
+<span style="color:#839496;">                </span><span style="color:#586e75;">// Validate gravitational interaction</span>
+<span style="color:#839496;">            </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
+<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
+<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="color:#657b83;">}</span>
 
 </pre><p id = "para-101">By adding the validar_interacao method to the Interacao enum, you can encapsulate the logic of validating the interactions between the particles. This will help ensure illegal states are unrepresentable.</p>
 <p id = "para-102">You’ll need to implement the validation logic for each interaction type in the validar_interacao method. If the interaction is valid, the method will return Ok(()), otherwise it will return an error with a message.</p>

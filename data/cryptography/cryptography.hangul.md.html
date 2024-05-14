@@ -31,6 +31,7 @@ code {
 }
 pre {
     font-family: "Linux Libertine Mono", monospace;
+    text-align: left;
     margin: 1em;
     padding-top: 0;
     background-color: #F0F0F0;
@@ -199,6 +200,7 @@ table.notes tr td p {
 }
 
 
+
 span.initial { 
     float: left;
     font-size: 285%;
@@ -220,11 +222,12 @@ p.first-para {
     padding: 0;
 }
 
- body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } /* Default  HTML CSS file includes default EPUB CSS file */
+ body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
+/* Default  HTML CSS file includes default EPUB CSS file */
 
 /* Colors for the navigation menu (toc) */
 nav {
-    background: #CBBFCC;
+    background: #dfcae6;
     color: black;
     border-right-color: black;
 }
@@ -263,6 +266,10 @@ footer a:hover, #top a:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
 /*    background: #d966ff;*/
+}
+
+.popup_footnote {
+    background-color: #e8e897;
 }
 
 
@@ -463,6 +470,14 @@ footer p, #top p {
     max-width: 33em;
 }
 
+.popup_footnote {
+    margin: 2em;
+    padding : 1em;
+    right: 2em;
+    max-width: 20em;
+}
+
+
  body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } 
 
     </style>
@@ -483,8 +498,9 @@ footer p, #top p {
     display: none;
 }
     </style>
+    
    <script>
-function on(name) {
+    function on(name) {
     var elements = document.getElementsByClassName(name);
     for (var i = 0; i < elements.length; i++) {
         var elem = elements[i];
@@ -526,6 +542,47 @@ function toggle() {
     }
 }
 
+function remove_footnotes() {
+    var footnotes = document.querySelectorAll('.popup_footnote');
+    for (var i = 0; i < footnotes.length; i++) {
+        var f = footnotes[i];
+        if (f.parentNode) {
+            f.parentNode.removeChild(f);
+        }
+    }
+}
+
+function show_footnote(event) {
+    remove_footnotes();
+    var id = event.target.getAttribute("id");
+    var target_id = id.replace("source", "dest");
+    var content = document.getElementById(target_id).innerHTML;
+    var top = Math.round(event.target.getBoundingClientRect().top + event.target.getBoundingClientRect().height);
+    event.target.insertAdjacentHTML('afterend', '<aside class = "popup_footnote" style = "position: fixed; top: '+ top + 'px; ">' + content + '</aside>')
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var anchors = document.querySelectorAll('.footnote_reference');
+
+    for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        anchor.addEventListener(
+            "mouseenter",
+            (event) => {
+                show_footnote(event);
+            }
+        );
+        anchor.addEventListener(
+            "mouseleave",
+            (event) => {
+                remove_footnotes();
+            }
+        );
+    }
+});
+
+
 
 
    </script>
@@ -546,12 +603,9 @@ function toggle() {
     
     
     "inLanguage": "en"
-
-
-
-
 }
 </script>
+    
 
     <div id = "content">
       
@@ -559,89 +613,91 @@ function toggle() {
         <header>
 
           <div id = "menu">
+	        
           </div>
 	  <h2 class="author"></h2>
           <h1 id = "link-0" class="title" ></h1>
 	  
+	  
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#323232;">(마프 #(카지 (모드 (+ (* %1 6) 11) 91) 0 1 12 6 (샤르 %)) [10 22 21 10])</span>
+  <pre><span style="color:#839496;">(마프 #(카지 (모드 (+ (* %1 6) 11) 91) 0 1 12 6 (샤르 %)) [10 22 21 10])</span>
 
 
-<span style="color:#323232;">(마프 #(샤르 (모드 (+ (* %1 6) 11) 91)) [10 22 21 10])</span>
-<span style="color:#323232;">(&quot;그&quot; &quot;4&quot; &quot;.&quot; &quot;그&quot;)</span>
+<span style="color:#839496;">(마프 #(샤르 (모드 (+ (* %1 6) 11) 91)) [10 22 21 10])</span>
+<span style="color:#839496;">(&quot;그&quot; &quot;4&quot; &quot;.&quot; &quot;그&quot;)</span>
 
 
-<span style="color:#323232;">(마프 #(레트 [크 (모드 (+ (* % 6) 35) 91)] (이프 (= 크 35) \# (샤르 크))) [10 22 21 10])</span>
+<span style="color:#839496;">(마프 #(레트 [크 (모드 (+ (* % 6) 35) 91)] (이프 (= 크 35) \# (샤르 크))) [10 22 21 10])</span>
 
 
-<span style="color:#323232;">(마프 #(샤르 (모드 (+ (* % 10 10) 10) 10)) [10 10 10 10])</span>
+<span style="color:#839496;">(마프 #(샤르 (모드 (+ (* % 10 10) 10) 10)) [10 10 10 10])</span>
 
 
-<span style="color:#323232;">(-&gt;&gt; [3 14 0 14] (마프 #(샤르 (모드 (+ (* % 7) 97) 256))))</span>
+<span style="color:#839496;">(-&gt;&gt; [3 14 0 14] (마프 #(샤르 (모드 (+ (* % 7) 97) 256))))</span>
 
-<span style="color:#323232;">(-&gt;&gt; [23 1 12 1] (마프 #(샤르 (모드 (+ (* % 19 29) 124) 127))))</span>
+<span style="color:#839496;">(-&gt;&gt; [23 1 12 1] (마프 #(샤르 (모드 (+ (* % 19 29) 124) 127))))</span>
 
-<span style="color:#323232;">(-&gt;&gt; [23 1 12 1] (마프 #(샤르 (모드 (+ (* % 19 29) 97) 127))))</span>
+<span style="color:#839496;">(-&gt;&gt; [23 1 12 1] (마프 #(샤르 (모드 (+ (* % 19 29) 97) 127))))</span>
 
-<span style="color:#323232;">(-&gt;&gt; [1 12 0 1] (마프 #(샤르 (모드 (+ (* (헤두시 * [1 % 2 3]) % 31) 96) 127))))</span>
+<span style="color:#839496;">(-&gt;&gt; [1 12 0 1] (마프 #(샤르 (모드 (+ (* (헤두시 * [1 % 2 3]) % 31) 96) 127))))</span>
 
 
-<span style="color:#323232;">(-&gt;&gt; [2 1 13 1] (헤두시 * [1 2 3]) (* 31) (+ 96) (모드 127) (샤르))</span>
+<span style="color:#839496;">(-&gt;&gt; [2 1 13 1] (헤두시 * [1 2 3]) (* 31) (+ 96) (모드 127) (샤르))</span>
 
 
 
-<span style="color:#323232;">=&gt;(-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* % 7) 96))))</span>
-<span style="color:#323232;">(&quot;그&quot; &quot;그&quot; &quot;»&quot; &quot;그&quot;)</span>
+<span style="color:#839496;">=&gt;(-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* % 7) 96))))</span>
+<span style="color:#839496;">(&quot;그&quot; &quot;그&quot; &quot;»&quot; &quot;그&quot;)</span>
 
-<span style="color:#323232;">=&gt;(-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* % (헤두시 * (타키 % (이테라치 잉크 2)))) 96))))</span>
-<span style="color:#323232;">(&quot;브&quot; &quot;브&quot; &quot;ࡠ&quot; &quot;브&quot;)</span>
+<span style="color:#839496;">=&gt;(-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* % (헤두시 * (타키 % (이테라치 잉크 2)))) 96))))</span>
+<span style="color:#839496;">(&quot;브&quot; &quot;브&quot; &quot;ࡠ&quot; &quot;브&quot;)</span>
 
-<span style="color:#323232;">=&gt;(-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* (비트-안드 % 23) (비트-오르 % 23)) 96))))</span>
-<span style="color:#323232;">(&quot;&quot; &quot;&quot; &quot;우&quot; &quot;&quot;)</span>
+<span style="color:#839496;">=&gt;(-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* (비트-안드 % 23) (비트-오르 % 23)) 96))))</span>
+<span style="color:#839496;">(&quot;&quot; &quot;&quot; &quot;우&quot; &quot;&quot;)</span>
 
-<span style="color:#323232;">=&gt;(데픙 프 [응] (이프 (&lt;= 응 0) 1 (* 응 (프 (- 응 1))))) (-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (프 %) 96))))</span>
-<span style="color:#323232;">(&quot;아&quot; &quot;아&quot; &quot;챠&quot; &quot;아&quot;)</span>
+<span style="color:#839496;">=&gt;(데픙 프 [응] (이프 (&lt;= 응 0) 1 (* 응 (프 (- 응 1))))) (-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (프 %) 96))))</span>
+<span style="color:#839496;">(&quot;아&quot; &quot;아&quot; &quot;챠&quot; &quot;아&quot;)</span>
 
-<span style="color:#323232;">=&gt;(레트 [응1 [[1 2] [3 4]] 응2 [[5 6] [7 8]]] (-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* % (제트-잉 응1 [0 0])) (제트-잉 응2 [0 1]) 96)))))</span>
-<span style="color:#323232;">(&quot;그&quot; &quot;그&quot; &quot;스&quot; &quot;그&quot;)</span>
+<span style="color:#839496;">=&gt;(레트 [응1 [[1 2] [3 4]] 응2 [[5 6] [7 8]]] (-&gt;&gt; [1 1 13 1] (마프 #(샤르 (+ (* % (제트-잉 응1 [0 0])) (제트-잉 응2 [0 1]) 96)))))</span>
+<span style="color:#839496;">(&quot;그&quot; &quot;그&quot; &quot;스&quot; &quot;그&quot;)</span>
 
-</pre><pre><span style="color:#323232;">[2, 4, 6, 8] |&gt; 이눙.마프(&amp;(&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}&quot; |&gt; 비치_시지() |&gt; 투_스트링그() &lt;&gt; 투_스트링그(&amp;1 * &amp;1 * 7 + &amp;1 + 95)) |&gt; 스트링그.투_샤를리스트()) |&gt; 이우.인스펙트()</span>
+</pre><pre><span style="color:#839496;">[2, 4, 6, 8] |&gt; 이눙.마프(&amp;(&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}&quot; |&gt; 비치_시지() |&gt; 투_스트링그() &lt;&gt; 투_스트링그(&amp;1 * &amp;1 * 7 + &amp;1 + 95)) |&gt; 스트링그.투_샤를리스트()) |&gt; 이우.인스펙트()</span>
 
 
-<span style="color:#323232;">일리시르 -이 &quot;[2, 4, 6, 8] |&gt; 이눙.마프(&amp;(\&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}\&quot; |&gt; 비치_시지() |&gt; 투_스트링그() |&gt; (픙 스 -&gt; 인테제르.파르시(투_스트링그(스)) |&gt; 엘렝(0) 인드).() |&gt; (픙 이 -&gt; 투_스트링그(이 * 이 * 7 + 이 + 95) 인드).())) |&gt; 이우.인스펙트()&quot;</span>
+<span style="color:#839496;">일리시르 -이 &quot;[2, 4, 6, 8] |&gt; 이눙.마프(&amp;(\&quot;#{&amp;1 * 2 - 2}#{&amp;1 * 3 - 9}#{&amp;1 * 5 - 25}#{&amp;1 * 7 - 49}\&quot; |&gt; 비치_시지() |&gt; 투_스트링그() |&gt; (픙 스 -&gt; 인테제르.파르시(투_스트링그(스)) |&gt; 엘렝(0) 인드).() |&gt; (픙 이 -&gt; 투_스트링그(이 * 이 * 7 + 이 + 95) 인드).())) |&gt; 이우.인스펙트()&quot;</span>
 
 
-<span style="color:#323232;">일리시르 -이 &#39;인푸트 = [97, 109, 97]</span>
-<span style="color:#323232;">코에프스 = 이눙.헤베르시(인푸트)</span>
+<span style="color:#839496;">일리시르 -이 &#39;인푸트 = [97, 109, 97]</span>
+<span style="color:#839496;">코에프스 = 이눙.헤베르시(인푸트)</span>
 
-<span style="color:#323232;">위트 아크 &lt;- 1..4</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt; 스 * 스 * 스 * (코에프스 |&gt; 이눙.아트(0)) + 스 * 스 * (코에프스 |&gt; 이눙.아트(1)) + 스 * (코에프스 |&gt; 이눙.아트(2)) + (코에프스 |&gt; 이눙.아트(3)) 인드)</span>
-<span style="color:#323232;">|&gt; 이눙.숭(),</span>
-<span style="color:#323232;">코데포인트 &lt;- 헹(아크, 1111) + 770,</span>
-<span style="color:#323232;">두: 이우.푸트스(:&quot;\##{코데포인트}&quot;)&#39;</span>
+<span style="color:#839496;">위트 아크 &lt;- 1..4</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt; 스 * 스 * 스 * (코에프스 |&gt; 이눙.아트(0)) + 스 * 스 * (코에프스 |&gt; 이눙.아트(1)) + 스 * (코에프스 |&gt; 이눙.아트(2)) + (코에프스 |&gt; 이눙.아트(3)) 인드)</span>
+<span style="color:#839496;">|&gt; 이눙.숭(),</span>
+<span style="color:#839496;">코데포인트 &lt;- 헹(아크, 1111) + 770,</span>
+<span style="color:#839496;">두: 이우.푸트스(:&quot;\##{코데포인트}&quot;)&#39;</span>
 
 
 
 
 
-<span style="color:#323232;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([97, 109, 97, 35], 픙 스 -&gt; (스 + 6) * (스 + 4) * (스 + 2) * 스 |&gt; 헹(26) |&gt; 케르네우.+(97) 인드) |&gt; 이눙.마프(&amp;(:이를랑그.인테제르_투_리스트(&amp;1) |&gt; 리스트.피르스트())) |&gt; :우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
+<span style="color:#839496;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([97, 109, 97, 35], 픙 스 -&gt; (스 + 6) * (스 + 4) * (스 + 2) * 스 |&gt; 헹(26) |&gt; 케르네우.+(97) 인드) |&gt; 이눙.마프(&amp;(:이를랑그.인테제르_투_리스트(&amp;1) |&gt; 리스트.피르스트())) |&gt; :우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
 
-<span style="color:#323232;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([97, 109, 97, 35], 픙 스 -&gt; ((스 + 6) * (스 + 4) * (스 + 2) * 스) |&gt; 헹(26) |&gt; 케르네우.+(97) |&gt; :이를랑그.인트_투_샤르 인드) |&gt; 리스트.투_스트링그()}\&quot;&quot;</span>
+<span style="color:#839496;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([97, 109, 97, 35], 픙 스 -&gt; ((스 + 6) * (스 + 4) * (스 + 2) * 스) |&gt; 헹(26) |&gt; 케르네우.+(97) |&gt; :이를랑그.인트_투_샤르 인드) |&gt; 리스트.투_스트링그()}\&quot;&quot;</span>
 
 
 
-<span style="color:#323232;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([1, 2, 3], 픙 스 -&gt; (스 + 4) * (스 + 1) * (스 - 1) |&gt; 헹(26) |&gt; 케르네우.-(98)||100 인드 ) |&gt; :이를랑그.인테제르_투_리스트()</span>
-<span style="color:#323232;"># || [109] ++ 이눙.마프([2,3],픙 스-&gt; 97+((2*스-7)*헹(13))||99인드 )</span>
-<span style="color:#323232;"># ||[97]|&gt; 리스트.포우두(&amp;리스트::플라텡/1,[])</span>
-<span style="color:#323232;"># ||:우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
-<span style="color:#323232;"># 아마</span>
+<span style="color:#839496;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([1, 2, 3], 픙 스 -&gt; (스 + 4) * (스 + 1) * (스 - 1) |&gt; 헹(26) |&gt; 케르네우.-(98)||100 인드 ) |&gt; :이를랑그.인테제르_투_리스트()</span>
+<span style="color:#839496;"># || [109] ++ 이눙.마프([2,3],픙 스-&gt; 97+((2*스-7)*헹(13))||99인드 )</span>
+<span style="color:#839496;"># ||[97]|&gt; 리스트.포우두(&amp;리스트::플라텡/1,[])</span>
+<span style="color:#839496;"># ||:우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
+<span style="color:#839496;"># 아마</span>
 
-<span style="color:#323232;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([1, 2, 3], 픙 스 -&gt; (스 + 4) * (스 + 1) * (스 - 1) |&gt; 헹(26) |&gt; 케르네우.-(98)||100 인드 ) |&gt; 이눙.마프(&amp;(:이를랑그.인테제르_투_리스트(&amp;1) |&gt; 리스트.피르스트())) |&gt; :우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
+<span style="color:#839496;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([1, 2, 3], 픙 스 -&gt; (스 + 4) * (스 + 1) * (스 - 1) |&gt; 헹(26) |&gt; 케르네우.-(98)||100 인드 ) |&gt; 이눙.마프(&amp;(:이를랑그.인테제르_투_리스트(&amp;1) |&gt; 리스트.피르스트())) |&gt; :우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
 
 
-<span style="color:#323232;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([1, 2, 3], 픙 스 -&gt; (스 + 4) * (스 + 1) * (스 - 1) |&gt; 헹(26) |&gt; 케르네우.-(98)||100 인드 ) |&gt; 이눙.마프(&amp;(:이를랑그.인테제르_투_리스트(&amp;1) |&gt; 리스트.피르스트())) |&gt; :우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
+<span style="color:#839496;">일리시르 -이 &quot;이우.푸트스 \&quot;#{이눙.마프([1, 2, 3], 픙 스 -&gt; (스 + 4) * (스 + 1) * (스 - 1) |&gt; 헹(26) |&gt; 케르네우.-(98)||100 인드 ) |&gt; 이눙.마프(&amp;(:이를랑그.인테제르_투_리스트(&amp;1) |&gt; 리스트.피르스트())) |&gt; :우니코지.샤락테르스_투_비나리()}\&quot;&quot;</span>
 
 
 
@@ -649,191 +705,191 @@ function toggle() {
 
 
 
-<span style="color:#323232;"># 잉코지 풍크치옹</span>
-<span style="color:#323232;">플라인테스트 = &quot;엘루&quot;</span>
-<span style="color:#323232;">잉코데드 = 플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.동카지()</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; :이를랑그.비나리_투_인테제르() |&gt; 케르네우.-(97)) * 8 |&gt; 케르네우.+(11)</span>
-<span style="color:#323232;">|&gt; 헹(26)</span>
-<span style="color:#323232;">|&gt; 케르네우.+(97)</span>
-<span style="color:#323232;">|&gt; 인테제르.투_샤를리스트()</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(잉코데드)</span>
+<span style="color:#839496;"># 잉코지 풍크치옹</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루&quot;</span>
+<span style="color:#839496;">잉코데드 = 플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.동카지()</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; :이를랑그.비나리_투_인테제르() |&gt; 케르네우.-(97)) * 8 |&gt; 케르네우.+(11)</span>
+<span style="color:#839496;">|&gt; 헹(26)</span>
+<span style="color:#839496;">|&gt; 케르네우.+(97)</span>
+<span style="color:#839496;">|&gt; 인테제르.투_샤를리스트()</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(잉코데드)</span>
 
-<span style="color:#323232;"># 데코지 풍크치옹</span>
-<span style="color:#323232;">시페르테스트 = &quot;프트브크&quot;</span>
-<span style="color:#323232;">데코데드 = 시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; :이를랑그.비나리_투_인테제르() |&gt; 케르네우.-(97) |&gt; 케르네우.-(11))</span>
-<span style="color:#323232;">|&gt; 헹(26 * 8)</span>
-<span style="color:#323232;">|&gt; 헹(26)</span>
-<span style="color:#323232;">|&gt; 케르네우.+(97)</span>
-<span style="color:#323232;">|&gt; 인테제르.투_샤를리스트()</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(데코데드)</span>
-
-
-
-
-
-
-
-<span style="color:#323232;"># 잉코지 풍크치옹</span>
-<span style="color:#323232;">플라인테스트 = &quot;엘루&quot;</span>
-<span style="color:#323232;">잉코데드 = 플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.동카지()</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; :이를랑그.비나리_투_인테제르() |&gt; 케르네우.-(97)) |&gt; 케르네우.*(8) |&gt; 케르네우.+(11)</span>
-<span style="color:#323232;">|&gt; 헹(26)</span>
-<span style="color:#323232;">|&gt; 케르네우.+(97)</span>
-<span style="color:#323232;">|&gt; 인테제르.투_샤를리스트()</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(잉코데드)</span>
+<span style="color:#839496;"># 데코지 풍크치옹</span>
+<span style="color:#839496;">시페르테스트 = &quot;프트브크&quot;</span>
+<span style="color:#839496;">데코데드 = 시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; :이를랑그.비나리_투_인테제르() |&gt; 케르네우.-(97) |&gt; 케르네우.-(11))</span>
+<span style="color:#839496;">|&gt; 헹(26 * 8)</span>
+<span style="color:#839496;">|&gt; 헹(26)</span>
+<span style="color:#839496;">|&gt; 케르네우.+(97)</span>
+<span style="color:#839496;">|&gt; 인테제르.투_샤를리스트()</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(데코데드)</span>
+
+
+
+
+
+
+
+<span style="color:#839496;"># 잉코지 풍크치옹</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루&quot;</span>
+<span style="color:#839496;">잉코데드 = 플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.동카지()</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; :이를랑그.비나리_투_인테제르() |&gt; 케르네우.-(97)) |&gt; 케르네우.*(8) |&gt; 케르네우.+(11)</span>
+<span style="color:#839496;">|&gt; 헹(26)</span>
+<span style="color:#839496;">|&gt; 케르네우.+(97)</span>
+<span style="color:#839496;">|&gt; 인테제르.투_샤를리스트()</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(잉코데드)</span>
 
-<span style="color:#323232;"># 데코지 풍크치옹</span>
-<span style="color:#323232;">시페르테스트 = &quot;프트브크&quot;</span>
-<span style="color:#323232;">데코데드 = 시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드()</span>
-<span style="color:#323232;">|&gt; 케르네우.-(97)</span>
-<span style="color:#323232;">|&gt; 케르네우.-(11)</span>
-<span style="color:#323232;">|&gt; 헹(26 * 8)</span>
-<span style="color:#323232;">|&gt; 헹(26)</span>
-<span style="color:#323232;">|&gt; 케르네우.+(97)</span>
-<span style="color:#323232;">|&gt; 인테제르.투_스트링그()</span>
-<span style="color:#323232;">|&gt; :이를랑그.비나리_투_인테제르())</span>
-<span style="color:#323232;">|&gt; 인테제르.투_샤를리스트()</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(데코데드)</span>
+<span style="color:#839496;"># 데코지 풍크치옹</span>
+<span style="color:#839496;">시페르테스트 = &quot;프트브크&quot;</span>
+<span style="color:#839496;">데코데드 = 시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">(스 |&gt; 스트링그.투_샤를리스트() |&gt; 드()</span>
+<span style="color:#839496;">|&gt; 케르네우.-(97)</span>
+<span style="color:#839496;">|&gt; 케르네우.-(11)</span>
+<span style="color:#839496;">|&gt; 헹(26 * 8)</span>
+<span style="color:#839496;">|&gt; 헹(26)</span>
+<span style="color:#839496;">|&gt; 케르네우.+(97)</span>
+<span style="color:#839496;">|&gt; 인테제르.투_스트링그()</span>
+<span style="color:#839496;">|&gt; :이를랑그.비나리_투_인테제르())</span>
+<span style="color:#839496;">|&gt; 인테제르.투_샤를리스트()</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(데코데드)</span>
 
-
-
-<span style="color:#323232;">일리시</span>
-<span style="color:#323232;">흐 -이 &#39;# 잉코지 풍크치옹</span>
-<span style="color:#323232;">플라인테스트 = &quot;엘루&quot;</span>
-<span style="color:#323232;">잉코데드 = 플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.동카지()</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(&amp;(&amp;1 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; (&amp;1 - 97 - 11) |&gt; 헹(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; 인테제르.투_스트링그() |&gt; &lt;&lt;(&amp;1::우트프8)&gt;&gt;))</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(잉코데드)</span>
-
-<span style="color:#323232;"># 데코지 풍크치옹</span>
-<span style="color:#323232;">시페르테스트 = &quot;프트브크&quot;</span>
-<span style="color:#323232;">데코데드 = 시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(&amp;(&amp;1 |&gt; &lt;&lt;(&amp;1::우트프8)&gt;&gt; |&gt; 스트링그.투_인테제르() |&gt; (&amp;1 - 97 + 11) |&gt; 헹(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; 인테제르.투_스트링그() |&gt; &lt;&lt;(&amp;1::우트프8)&gt;&gt;))</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(데코데드)&#39;</span>
-<span style="color:#323232;">** (콤필레호르) 노필리:6: 네스테드 카프투리스 아리 노트 알로웨드. 요 카노트 데피니 아 풍크치옹 우징그 티 카프투리 오페라토르 &amp; 인시지 아노테르 풍크치옹 데피네드 비아 &amp;. 고트 인발리드 네스테드 카프투리: &amp;(&amp;1 + 97)</span>
-<span style="color:#323232;">(스트들리브 4.2) 리스트스.이루:1462: :리스트스.마프포우두_1/3</span>
-<span style="color:#323232;">(스트들리브 4.2) 리스트스.이루:1463: :리스트스.마프포우두_1/3</span>
-<span style="color:#323232;">(일리시르 1.14.3) 스흐크/일리시르_픙.이루:140: :일리시르_픙.이스카피/3</span>
-<span style="color:#323232;">(스트들리브 4.2) 리스트스.이루:1462: :리스트스.마프포우두_1/3</span>
-<span style="color:#323232;">(일리시르 1.14.3) 스흐크/일리시르_픙.이루:140: :일리시르_픙.이스카피/3</span>
-<span style="color:#323232;">(스트들리브 4.2) 리스트스.이루:1462: :리스트스.마프포우두_1/3</span>
-<span style="color:#323232;">(일리시르 1.14.3) 스흐크/일리시르_픙.이루:140: :일리시르_픙.이스카피/3</span>
-<span style="color:#323232;">(일리시르 1.14.3) 이스판징그 마크루: 케르네우.|&gt;/2</span>
-
-
-
-
-
-
-<span style="color:#323232;"># 잉코지 풍크치옹</span>
-<span style="color:#323232;">플라인테스트 = &quot;엘루&quot;</span>
-<span style="color:#323232;">잉코데드 = 플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.동카지()</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">크 = 드(스트링그.투_샤를리스트(스))</span>
-<span style="color:#323232;">크 = 크 - 97 - 11</span>
-<span style="color:#323232;">크 = 헹(크, 26)</span>
-<span style="color:#323232;">크 = 크 + 97</span>
-<span style="color:#323232;">크 = 인테제르.투_스트링그(크)</span>
-<span style="color:#323232;">&lt;&lt;크::우트프8&gt;&gt;</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(잉코데드)</span>
-
-<span style="color:#323232;"># 데코지 풍크치옹</span>
-<span style="color:#323232;">시페르테스트 = &quot;프트브크&quot;</span>
-<span style="color:#323232;">데코데드 = 시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">크 = 스트링그.투_인테제르(스 |&gt; 텡(픙 스 -&gt; &lt;&lt;스::우트프8&gt;&gt; 인드))</span>
-<span style="color:#323232;">크 = 크 - 97 + 11</span>
-<span style="color:#323232;">크 = 헹(크, 26)</span>
-<span style="color:#323232;">크 = 크 + 97</span>
-<span style="color:#323232;">크 = 인테제르.투_스트링그(크)</span>
-<span style="color:#323232;">&lt;&lt;크::우트프8&gt;&gt;</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(데코데드)</span>
+
+
+<span style="color:#839496;">일리시</span>
+<span style="color:#839496;">흐 -이 &#39;# 잉코지 풍크치옹</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루&quot;</span>
+<span style="color:#839496;">잉코데드 = 플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.동카지()</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(&amp;(&amp;1 |&gt; 스트링그.투_샤를리스트() |&gt; 드() |&gt; (&amp;1 - 97 - 11) |&gt; 헹(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; 인테제르.투_스트링그() |&gt; &lt;&lt;(&amp;1::우트프8)&gt;&gt;))</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(잉코데드)</span>
+
+<span style="color:#839496;"># 데코지 풍크치옹</span>
+<span style="color:#839496;">시페르테스트 = &quot;프트브크&quot;</span>
+<span style="color:#839496;">데코데드 = 시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(&amp;(&amp;1 |&gt; &lt;&lt;(&amp;1::우트프8)&gt;&gt; |&gt; 스트링그.투_인테제르() |&gt; (&amp;1 - 97 + 11) |&gt; 헹(26) |&gt; (&amp;((&amp;1 + 97))) |&gt; 인테제르.투_스트링그() |&gt; &lt;&lt;(&amp;1::우트프8)&gt;&gt;))</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(데코데드)&#39;</span>
+<span style="color:#839496;">** (콤필레호르) 노필리:6: 네스테드 카프투리스 아리 노트 알로웨드. 요 카노트 데피니 아 풍크치옹 우징그 티 카프투리 오페라토르 &amp; 인시지 아노테르 풍크치옹 데피네드 비아 &amp;. 고트 인발리드 네스테드 카프투리: &amp;(&amp;1 + 97)</span>
+<span style="color:#839496;">(스트들리브 4.2) 리스트스.이루:1462: :리스트스.마프포우두_1/3</span>
+<span style="color:#839496;">(스트들리브 4.2) 리스트스.이루:1463: :리스트스.마프포우두_1/3</span>
+<span style="color:#839496;">(일리시르 1.14.3) 스흐크/일리시르_픙.이루:140: :일리시르_픙.이스카피/3</span>
+<span style="color:#839496;">(스트들리브 4.2) 리스트스.이루:1462: :리스트스.마프포우두_1/3</span>
+<span style="color:#839496;">(일리시르 1.14.3) 스흐크/일리시르_픙.이루:140: :일리시르_픙.이스카피/3</span>
+<span style="color:#839496;">(스트들리브 4.2) 리스트스.이루:1462: :리스트스.마프포우두_1/3</span>
+<span style="color:#839496;">(일리시르 1.14.3) 스흐크/일리시르_픙.이루:140: :일리시르_픙.이스카피/3</span>
+<span style="color:#839496;">(일리시르 1.14.3) 이스판징그 마크루: 케르네우.|&gt;/2</span>
+
+
+
+
+
+
+<span style="color:#839496;"># 잉코지 풍크치옹</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루&quot;</span>
+<span style="color:#839496;">잉코데드 = 플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.동카지()</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">크 = 드(스트링그.투_샤를리스트(스))</span>
+<span style="color:#839496;">크 = 크 - 97 - 11</span>
+<span style="color:#839496;">크 = 헹(크, 26)</span>
+<span style="color:#839496;">크 = 크 + 97</span>
+<span style="color:#839496;">크 = 인테제르.투_스트링그(크)</span>
+<span style="color:#839496;">&lt;&lt;크::우트프8&gt;&gt;</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(잉코데드)</span>
+
+<span style="color:#839496;"># 데코지 풍크치옹</span>
+<span style="color:#839496;">시페르테스트 = &quot;프트브크&quot;</span>
+<span style="color:#839496;">데코데드 = 시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">크 = 스트링그.투_인테제르(스 |&gt; 텡(픙 스 -&gt; &lt;&lt;스::우트프8&gt;&gt; 인드))</span>
+<span style="color:#839496;">크 = 크 - 97 + 11</span>
+<span style="color:#839496;">크 = 헹(크, 26)</span>
+<span style="color:#839496;">크 = 크 + 97</span>
+<span style="color:#839496;">크 = 인테제르.투_스트링그(크)</span>
+<span style="color:#839496;">&lt;&lt;크::우트프8&gt;&gt;</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(데코데드)</span>
 
 
 
 
-
-
-
+
+
+
 
-
-
-
-
-
-
-
-
-
-<span style="color:#323232;"># 잉코지 풍크치옹</span>
-<span style="color:#323232;">플라인테스트 = &quot;엘루&quot;</span>
-<span style="color:#323232;">잉코데드 = 플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.동카지()</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">드(스트링그.투_샤를리스트(스)) - 97 - 11</span>
-<span style="color:#323232;">|&gt; 헹(26)</span>
-<span style="color:#323232;">|&gt; &amp; &amp;1 + 97</span>
-<span style="color:#323232;">|&gt; 인테제르.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 이눙.피우테르(&amp;스트링그.프린타블리?/1)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(잉코데드)</span>
-
-<span style="color:#323232;"># 데코지 풍크치옹</span>
-<span style="color:#323232;">시페르테스트 = &quot;프트브크&quot;</span>
-<span style="color:#323232;">데코데드 = 시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">스</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 스트링그.투_인테제르()</span>
-<span style="color:#323232;">|&gt; &amp; &amp;1 - 97 + 11</span>
-<span style="color:#323232;">|&gt; 헹(26)</span>
-<span style="color:#323232;">|&gt; &amp; &amp;1 + 97</span>
-<span style="color:#323232;">|&gt; 인테제르.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 이눙.피우테르(&amp;스트링그.프린타블리?/1)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">이우.푸트스(데코데드)</span>
+
+
+
+
+
+
+
+
+
+<span style="color:#839496;"># 잉코지 풍크치옹</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루&quot;</span>
+<span style="color:#839496;">잉코데드 = 플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.동카지()</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">드(스트링그.투_샤를리스트(스)) - 97 - 11</span>
+<span style="color:#839496;">|&gt; 헹(26)</span>
+<span style="color:#839496;">|&gt; &amp; &amp;1 + 97</span>
+<span style="color:#839496;">|&gt; 인테제르.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 이눙.피우테르(&amp;스트링그.프린타블리?/1)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(잉코데드)</span>
+
+<span style="color:#839496;"># 데코지 풍크치옹</span>
+<span style="color:#839496;">시페르테스트 = &quot;프트브크&quot;</span>
+<span style="color:#839496;">데코데드 = 시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">스</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 스트링그.투_인테제르()</span>
+<span style="color:#839496;">|&gt; &amp; &amp;1 - 97 + 11</span>
+<span style="color:#839496;">|&gt; 헹(26)</span>
+<span style="color:#839496;">|&gt; &amp; &amp;1 + 97</span>
+<span style="color:#839496;">|&gt; 인테제르.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 이눙.피우테르(&amp;스트링그.프린타블리?/1)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">이우.푸트스(데코데드)</span>
 
 
 
@@ -841,30 +897,30 @@ function toggle() {
 
 
 
-<span style="color:#323232;">플라인테스트 = &quot;엘루&quot;</span>
-<span style="color:#323232;">잉코데드 = 플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.동카지()</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">%{발루이: 샤르} = 리스트.피르스트(스트링그.코데포인트스(스))</span>
-<span style="color:#323232;">샤르 = 샤르 - ?아 + 11 |&gt; 헹(26) |&gt; 케르네우.+(?아)</span>
-<span style="color:#323232;">인테제르.투_스트링그(샤르)</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 스트링그.헤플라시(&quot;[]&quot;, &quot;&quot;)</span>
-<span style="color:#323232;">|&gt; 이우.푸트스()</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루&quot;</span>
+<span style="color:#839496;">잉코데드 = 플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.동카지()</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">%{발루이: 샤르} = 리스트.피르스트(스트링그.코데포인트스(스))</span>
+<span style="color:#839496;">샤르 = 샤르 - ?아 + 11 |&gt; 헹(26) |&gt; 케르네우.+(?아)</span>
+<span style="color:#839496;">인테제르.투_스트링그(샤르)</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 스트링그.헤플라시(&quot;[]&quot;, &quot;&quot;)</span>
+<span style="color:#839496;">|&gt; 이우.푸트스()</span>
 
-<span style="color:#323232;">시페르테스트 = &quot;프트브크&quot;</span>
-<span style="color:#323232;">데코데드 = 시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.그라페메스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(픙 스 -&gt;</span>
-<span style="color:#323232;">%{발루이: 샤르} = 리스트.피르스트(스트링그.코데포인트스(스))</span>
-<span style="color:#323232;">샤르 = 샤르 - ?아 |&gt; 헹(26) |&gt; 케르네우.+(?아)</span>
-<span style="color:#323232;">인테제르.투_스트링그(샤르)</span>
-<span style="color:#323232;">인드)</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">|&gt; 스트링그.헤플라시(&quot;[]&quot;, &quot;&quot;)</span>
-<span style="color:#323232;">|&gt; 이우.푸트스()</span>
+<span style="color:#839496;">시페르테스트 = &quot;프트브크&quot;</span>
+<span style="color:#839496;">데코데드 = 시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.그라페메스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(픙 스 -&gt;</span>
+<span style="color:#839496;">%{발루이: 샤르} = 리스트.피르스트(스트링그.코데포인트스(스))</span>
+<span style="color:#839496;">샤르 = 샤르 - ?아 |&gt; 헹(26) |&gt; 케르네우.+(?아)</span>
+<span style="color:#839496;">인테제르.투_스트링그(샤르)</span>
+<span style="color:#839496;">인드)</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">|&gt; 스트링그.헤플라시(&quot;[]&quot;, &quot;&quot;)</span>
+<span style="color:#839496;">|&gt; 이우.푸트스()</span>
 
 
 
@@ -873,54 +929,54 @@ function toggle() {
 
 
 
-<span style="color:#323232;">시프트_폴리 = [1, 0, 1]</span>
+<span style="color:#839496;">시프트_폴리 = [1, 0, 1]</span>
 
-<span style="color:#323232;">모둘라르_인베르시 = 픙 프 -&gt;</span>
-<span style="color:#323232;">픙 아, 응 -&gt;</span>
-<span style="color:#323232;">카지 헹(응, 아) 두</span>
-<span style="color:#323232;">0 -&gt; {1, 0, 아}</span>
-<span style="color:#323232;">브 -&gt;</span>
-<span style="color:#323232;">{이, 스, 드} = 프.(브, 아)</span>
-<span style="color:#323232;">{스 - 지브(응, 아) * 이, 이, 드}</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드.(픙 프 -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) 인드)</span>
+<span style="color:#839496;">모둘라르_인베르시 = 픙 프 -&gt;</span>
+<span style="color:#839496;">픙 아, 응 -&gt;</span>
+<span style="color:#839496;">카지 헹(응, 아) 두</span>
+<span style="color:#839496;">0 -&gt; {1, 0, 아}</span>
+<span style="color:#839496;">브 -&gt;</span>
+<span style="color:#839496;">{이, 스, 드} = 프.(브, 아)</span>
+<span style="color:#839496;">{스 - 지브(응, 아) * 이, 이, 드}</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드.(픙 프 -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) 인드)</span>
 
-<span style="color:#323232;">폴리_시프트_샤락테르 = 픙 {샤르, _헤스트}, {아, 브, 크} -&gt;</span>
-<span style="color:#323232;">시프테드_바우 = 아 * 샤르 * 샤르 + 브 * 샤르 + 크</span>
-<span style="color:#323232;">&lt;&lt;시프테드_바우::우트프8&gt;&gt;</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">폴리_시프트_샤락테르 = 픙 {샤르, _헤스트}, {아, 브, 크} -&gt;</span>
+<span style="color:#839496;">시프테드_바우 = 아 * 샤르 * 샤르 + 브 * 샤르 + 크</span>
+<span style="color:#839496;">&lt;&lt;시프테드_바우::우트프8&gt;&gt;</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">잉코지 = 픙 프 -&gt;</span>
-<span style="color:#323232;">픙 [샤르 | 타이우], 케이_폴리 -&gt;</span>
-<span style="color:#323232;">[폴리_시프트_샤락테르.({샤르, 0}, 케이_폴리) | 프.(타이우, 케이_폴리)]</span>
-<span style="color:#323232;">인드.([], &amp;1)</span>
-<span style="color:#323232;">인드.(픙 프 -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) 인드)</span>
+<span style="color:#839496;">잉코지 = 픙 프 -&gt;</span>
+<span style="color:#839496;">픙 [샤르 | 타이우], 케이_폴리 -&gt;</span>
+<span style="color:#839496;">[폴리_시프트_샤락테르.({샤르, 0}, 케이_폴리) | 프.(타이우, 케이_폴리)]</span>
+<span style="color:#839496;">인드.([], &amp;1)</span>
+<span style="color:#839496;">인드.(픙 프 -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) 인드)</span>
 
-<span style="color:#323232;">데코지 = 픙 프 -&gt;</span>
-<span style="color:#323232;">픙 [아, 브 | 타이우], {아_코에프, 브_코에프, 크_코에프} -&gt;</span>
-<span style="color:#323232;">인브_아 = 모둘라르_인베르시.(아_코에프, 256) |&gt; 엘렝(0)</span>
-<span style="color:#323232;">_인브_브 = 256 - 브_코에프</span>
-<span style="color:#323232;">스크르트_테릉 = 혼드(:마트.스크르트(브_코에프 * 브_코에프 - 4 * 아_코에프 * 크_코에프))</span>
-<span style="color:#323232;">인브_크 = 헹(인브_아 * (브_코에프 * 브_코에프 - 4 * 아_코에프 * 크_코에프), 256)</span>
+<span style="color:#839496;">데코지 = 픙 프 -&gt;</span>
+<span style="color:#839496;">픙 [아, 브 | 타이우], {아_코에프, 브_코에프, 크_코에프} -&gt;</span>
+<span style="color:#839496;">인브_아 = 모둘라르_인베르시.(아_코에프, 256) |&gt; 엘렝(0)</span>
+<span style="color:#839496;">_인브_브 = 256 - 브_코에프</span>
+<span style="color:#839496;">스크르트_테릉 = 혼드(:마트.스크르트(브_코에프 * 브_코에프 - 4 * 아_코에프 * 크_코에프))</span>
+<span style="color:#839496;">인브_크 = 헹(인브_아 * (브_코에프 * 브_코에프 - 4 * 아_코에프 * 크_코에프), 256)</span>
 
-<span style="color:#323232;">샤르_바우 = 헹(인브_아 * (256 + 브_코에프 - 스크르트_테릉), 256)</span>
-<span style="color:#323232;">|&gt; 헹(&amp;(&amp;1 잉 32..126))</span>
+<span style="color:#839496;">샤르_바우 = 헹(인브_아 * (256 + 브_코에프 - 스크르트_테릉), 256)</span>
+<span style="color:#839496;">|&gt; 헹(&amp;(&amp;1 잉 32..126))</span>
 
-<span style="color:#323232;">[&lt;&lt;샤르_바우::우트프8&gt;&gt; | 프.(타이우, {아_코에프, 브_코에프, 크_코에프})]</span>
-<span style="color:#323232;">인드.([], &amp;1)</span>
-<span style="color:#323232;">인드.(픙 프 -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) 인드)</span>
+<span style="color:#839496;">[&lt;&lt;샤르_바우::우트프8&gt;&gt; | 프.(타이우, {아_코에프, 브_코에프, 크_코에프})]</span>
+<span style="color:#839496;">인드.([], &amp;1)</span>
+<span style="color:#839496;">인드.(픙 프 -&gt; &amp;(&amp;1.(&amp;1.(&amp;1))) 인드)</span>
 
-<span style="color:#323232;">플라인테스트 = &quot;엘루 워루드!&quot;</span>
-<span style="color:#323232;">케이_폴리 = 시프트_폴리</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루 워루드!&quot;</span>
+<span style="color:#839496;">케이_폴리 = 시프트_폴리</span>
 
-<span style="color:#323232;">시페르테스트 = 잉코지.(스트링그.그라페메스(플라인테스트), 케이_폴리) |&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">데코데드 = 데코지.(스트링그.코데포인트스(시페르테스트), 케이_폴리) |&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">시페르테스트 = 잉코지.(스트링그.그라페메스(플라인테스트), 케이_폴리) |&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">데코데드 = 데코지.(스트링그.코데포인트스(시페르테스트), 케이_폴리) |&gt; 리스트.투_스트링그()</span>
 
-<span style="color:#323232;"># 오트푸트 티 헤주우트스</span>
-<span style="color:#323232;">이우.푸트스(&quot;플라인테스트: #{플라인테스트}&quot;)</span>
-<span style="color:#323232;">이우.푸트스(&quot;시페르테스트: #{시페르테스트}&quot;)</span>
-<span style="color:#323232;">이우.푸트스(&quot;데코데드: #{데코데드}&quot;)</span>
+<span style="color:#839496;"># 오트푸트 티 헤주우트스</span>
+<span style="color:#839496;">이우.푸트스(&quot;플라인테스트: #{플라인테스트}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;시페르테스트: #{시페르테스트}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;데코데드: #{데코데드}&quot;)</span>
 
 
 
@@ -942,36 +998,36 @@ function toggle() {
 
 
 
-<span style="color:#323232;">데프모둘리 시페르 두</span>
-<span style="color:#323232;">데프 시프트_샤락테르(&lt;&lt;샤르::우트프8&gt;&gt; = _인푸트, 시프트) 두</span>
-<span style="color:#323232;">시프테드_바우 = 샤르 + 시프트</span>
-<span style="color:#323232;">&lt;&lt;시프테드_바우 :: 우트프8&gt;&gt;</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프모둘리 시페르 두</span>
+<span style="color:#839496;">데프 시프트_샤락테르(&lt;&lt;샤르::우트프8&gt;&gt; = _인푸트, 시프트) 두</span>
+<span style="color:#839496;">시프테드_바우 = 샤르 + 시프트</span>
+<span style="color:#839496;">&lt;&lt;시프테드_바우 :: 우트프8&gt;&gt;</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프 잉코지(플라인테스트, 케이) 두</span>
-<span style="color:#323232;">플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(&amp;시프트_샤락테르(&amp;1, 케이))</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프 잉코지(플라인테스트, 케이) 두</span>
+<span style="color:#839496;">플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(&amp;시프트_샤락테르(&amp;1, 케이))</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프 데코지(시페르테스트, 케이) 두</span>
-<span style="color:#323232;">시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(&amp;시프트_샤락테르(&amp;1, -케이))</span>
-<span style="color:#323232;">|&gt; 리스트.투_스트링그()</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프 데코지(시페르테스트, 케이) 두</span>
+<span style="color:#839496;">시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(&amp;시프트_샤락테르(&amp;1, -케이))</span>
+<span style="color:#839496;">|&gt; 리스트.투_스트링그()</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
 
 
-<span style="color:#323232;">플라인테스트 = &quot;엘루 워루드!&quot;</span>
-<span style="color:#323232;">크 = 3</span>
-<span style="color:#323232;">시페르테스트 = 시페르.잉코지(플라인테스트, 크)</span>
-<span style="color:#323232;">데코데드 = 시페르.데코지(시페르테스트, 크)</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루 워루드!&quot;</span>
+<span style="color:#839496;">크 = 3</span>
+<span style="color:#839496;">시페르테스트 = 시페르.잉코지(플라인테스트, 크)</span>
+<span style="color:#839496;">데코데드 = 시페르.데코지(시페르테스트, 크)</span>
 
-<span style="color:#323232;">이우.푸트스(&quot;플라인테스트: #{플라인테스트}&quot;)</span>
-<span style="color:#323232;">이우.푸트스(&quot;시페르테스트: #{시페르테스트}&quot;)</span>
-<span style="color:#323232;">이우.푸트스(&quot;데코데드: #{데코데드}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;플라인테스트: #{플라인테스트}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;시페르테스트: #{시페르테스트}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;데코데드: #{데코데드}&quot;)</span>
 
 
 
@@ -982,68 +1038,68 @@ function toggle() {
 
 
 
-<span style="color:#323232;">데프모둘리 시프트시페르 두</span>
-<span style="color:#323232;">데프프 모둘라르_인베르시(_아, 0), 두: {1, 0, 0}</span>
-<span style="color:#323232;">데프프 모둘라르_인베르시(아, 응) 엥 헹(응, 아) != 0 두</span>
-<span style="color:#323232;">{이, 스, 드} = 모둘라르_인베르시(헹(응, 아), 아)</span>
-<span style="color:#323232;">{스 - 지브(응, 아) * 이, 이, 드}</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프모둘리 시프트시페르 두</span>
+<span style="color:#839496;">데프프 모둘라르_인베르시(_아, 0), 두: {1, 0, 0}</span>
+<span style="color:#839496;">데프프 모둘라르_인베르시(아, 응) 엥 헹(응, 아) != 0 두</span>
+<span style="color:#839496;">{이, 스, 드} = 모둘라르_인베르시(헹(응, 아), 아)</span>
+<span style="color:#839496;">{스 - 지브(응, 아) * 이, 이, 드}</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프프 폴리_시프트_샤락테르(샤르, {아, 브, 크}) 두</span>
-<span style="color:#323232;">아 * 스트링그.투_인테제르(샤르) * 스트링그.투_인테제르(샤르) + 브 * 스트링그.투_인테제르(샤르) + 크 |&gt; 헹(256)</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프프 폴리_시프트_샤락테르(샤르, {아, 브, 크}) 두</span>
+<span style="color:#839496;">아 * 스트링그.투_인테제르(샤르) * 스트링그.투_인테제르(샤르) + 브 * 스트링그.투_인테제르(샤르) + 크 |&gt; 헹(256)</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프 잉코지(플라인테스트, 케이_폴리) 두</span>
-<span style="color:#323232;">플라인테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 이눙.마프(&amp;폴리_시프트_샤락테르(&amp;1, 케이_폴리))</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프 잉코지(플라인테스트, 케이_폴리) 두</span>
+<span style="color:#839496;">플라인테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 이눙.마프(&amp;폴리_시프트_샤락테르(&amp;1, 케이_폴리))</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프 데코지(시페르테스트, 케이_폴리) 두</span>
-<span style="color:#323232;">시페르테스트</span>
-<span style="color:#323232;">|&gt; 스트링그.코데포인트스()</span>
-<span style="color:#323232;">|&gt; 이눙.슝크_이베리(2, 1, :지스카르드)</span>
-<span style="color:#323232;">|&gt; 이눙.마프(&amp;데코지_샤락테르(&amp;1, 케이_폴리))</span>
-<span style="color:#323232;">|&gt; (픙 스 -&gt; 리스트.투_스트링그(스) 인드).()</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프 데코지(시페르테스트, 케이_폴리) 두</span>
+<span style="color:#839496;">시페르테스트</span>
+<span style="color:#839496;">|&gt; 스트링그.코데포인트스()</span>
+<span style="color:#839496;">|&gt; 이눙.슝크_이베리(2, 1, :지스카르드)</span>
+<span style="color:#839496;">|&gt; 이눙.마프(&amp;데코지_샤락테르(&amp;1, 케이_폴리))</span>
+<span style="color:#839496;">|&gt; (픙 스 -&gt; 리스트.투_스트링그(스) 인드).()</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">데프프 데코지_샤락테르([아, 브], {아_코에프, 브_코에프, 크_코에프}) 두</span>
-<span style="color:#323232;">인브_아 = 모둘라르_인베르시(아_코에프, 256) |&gt; 엘렝(0)</span>
-<span style="color:#323232;">지스크리미난트 = 브_코에프 * 브_코에프 - 4 * 아_코에프 * 크_코에프</span>
-<span style="color:#323232;">카지 지스크리미난트 두</span>
-<span style="color:#323232;">드 엥 드 &lt; 0 -&gt; 0</span>
-<span style="color:#323232;">_ -&gt;</span>
-<span style="color:#323232;">호트1 = (-브_코에프 + :마트.스크르트(지스크리미난트)) * 인브_아 |&gt; 헹(256)</span>
-<span style="color:#323232;">호트2 = (-브_코에프 - :마트.스크르트(지스크리미난트)) * 인브_아 |&gt; 헹(256)</span>
-<span style="color:#323232;">데코데드 =</span>
-<span style="color:#323232;">카지 헹(아, 2) 두</span>
-<span style="color:#323232;">0 -&gt;</span>
-<span style="color:#323232;">이프 헹(아 * 호트1 * 호트1 + 브 * 호트1 + 크_코에프, 256) == 아 두</span>
-<span style="color:#323232;">호트1</span>
-<span style="color:#323232;">에우시</span>
-<span style="color:#323232;">호트2</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">_ -&gt;</span>
-<span style="color:#323232;">이프 브 &gt;= 0 두</span>
-<span style="color:#323232;">호트1</span>
-<span style="color:#323232;">에우시</span>
-<span style="color:#323232;">호트2</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인테제르.투_샤를리스트(데코데드)</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
-<span style="color:#323232;">인드</span>
+<span style="color:#839496;">데프프 데코지_샤락테르([아, 브], {아_코에프, 브_코에프, 크_코에프}) 두</span>
+<span style="color:#839496;">인브_아 = 모둘라르_인베르시(아_코에프, 256) |&gt; 엘렝(0)</span>
+<span style="color:#839496;">지스크리미난트 = 브_코에프 * 브_코에프 - 4 * 아_코에프 * 크_코에프</span>
+<span style="color:#839496;">카지 지스크리미난트 두</span>
+<span style="color:#839496;">드 엥 드 &lt; 0 -&gt; 0</span>
+<span style="color:#839496;">_ -&gt;</span>
+<span style="color:#839496;">호트1 = (-브_코에프 + :마트.스크르트(지스크리미난트)) * 인브_아 |&gt; 헹(256)</span>
+<span style="color:#839496;">호트2 = (-브_코에프 - :마트.스크르트(지스크리미난트)) * 인브_아 |&gt; 헹(256)</span>
+<span style="color:#839496;">데코데드 =</span>
+<span style="color:#839496;">카지 헹(아, 2) 두</span>
+<span style="color:#839496;">0 -&gt;</span>
+<span style="color:#839496;">이프 헹(아 * 호트1 * 호트1 + 브 * 호트1 + 크_코에프, 256) == 아 두</span>
+<span style="color:#839496;">호트1</span>
+<span style="color:#839496;">에우시</span>
+<span style="color:#839496;">호트2</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">_ -&gt;</span>
+<span style="color:#839496;">이프 브 &gt;= 0 두</span>
+<span style="color:#839496;">호트1</span>
+<span style="color:#839496;">에우시</span>
+<span style="color:#839496;">호트2</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인테제르.투_샤를리스트(데코데드)</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
+<span style="color:#839496;">인드</span>
 
-<span style="color:#323232;">플라인테스트 = &quot;엘루 워루드!&quot;</span>
-<span style="color:#323232;">케이_폴리 = {1, 0, 1}</span>
+<span style="color:#839496;">플라인테스트 = &quot;엘루 워루드!&quot;</span>
+<span style="color:#839496;">케이_폴리 = {1, 0, 1}</span>
 
-<span style="color:#323232;">시페르테스트 = 시프트시페르.잉코지(플라인테스트, 케이_폴리)</span>
-<span style="color:#323232;">데코데드 = 시프트시페르.데코지(시페르테스트, 케이_폴리)</span>
+<span style="color:#839496;">시페르테스트 = 시프트시페르.잉코지(플라인테스트, 케이_폴리)</span>
+<span style="color:#839496;">데코데드 = 시프트시페르.데코지(시페르테스트, 케이_폴리)</span>
 
-<span style="color:#323232;">이우.푸트스(&quot;플라인테스트: #{플라인테스트}&quot;)</span>
-<span style="color:#323232;">이우.푸트스(&quot;시페르테스트: #{시페르테스트}&quot;)</span>
-<span style="color:#323232;">이우.푸트스(&quot;데코데드: #{데코데드}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;플라인테스트: #{플라인테스트}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;시페르테스트: #{시페르테스트}&quot;)</span>
+<span style="color:#839496;">이우.푸트스(&quot;데코데드: #{데코데드}&quot;)</span>
 
 
 
