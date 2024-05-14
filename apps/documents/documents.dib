@@ -88,11 +88,10 @@ let get_command () =
 #!spiral
 
 let crowbook { ext dist_dir dist_path output_path } =
-    inl command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
 
     inl exit_code, result =
         runtime.execution_options fun x => { x with
-            command
+            command = $'$"crowbook --single \\\"{!dist_path}\\\" --output \\\"{!output_path}\\\" --to {!ext} --set rendering.num_depth 6 html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
             working_directory = dist_dir |> Some |> optionm'.box
         }
         |> runtime.execute_with_options
@@ -416,7 +415,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                 (new_pair file files |> Ok |> resultm.box) : _ _ sm'.std_string
             |> async.par_collect
 
-        trace Debug
+        trace Info
             fun () => $'"documents.run"'
             fun () =>
                 inl result_len = result |> am'.vec_len
@@ -429,7 +428,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
 //// test
 //// print_code=false
-///! rust -d async-walkdir futures-lite rayon regex sha2
+///! rust -d async-walkdir encoding_rs encoding_rs_io futures-lite rayon regex sha2
 
 types ()
 inl workspace_root = file_system.get_workspace_root ()
@@ -584,9 +583,7 @@ inl tests () =
 ///! 
 
 inl main (args : array_base string) =
-    inl trace_state = get_trace_state ()
-    inl trace_level = trace_state.level
-    trace_level <- Info
+    Info |> Some |> init_trace_state
 
     trace Info
         fun () => $'$"documents.main"'
