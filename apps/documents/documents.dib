@@ -96,7 +96,7 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
             match ext with
             | "html" =>
                 $'$"--set"'
-                +. $'$" html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
+                +. $'$" html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} pre {{ background-color: #1b1b1b; padding: 10px; }} \'\\\\\\""'
                 +. default ext
             | "pdf" =>
                 $'$"--set"'
@@ -108,6 +108,7 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
                         $'$" tex.template.add \\\"\\\\usepackage{{polyglossia}}\\\""'
                         +. $'$" tex.template.add \\\"\\\\setmainlanguage{{korean}}\\\""'
                         +. $'$" tex.template.add \\\"\\\\setmainfont{{NanumGothicCoding}}\\\""'
+                        +. $'$" tex.font.size 12"'
                 )
                 +. default ext
             | "epub" =>
@@ -455,7 +456,6 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 #!spiral
 
 //// test
-//// print_code=false
 ///! rust -d async-walkdir encoding_rs encoding_rs_io futures-lite rayon regex sha2
 
 types ()

@@ -21,7 +21,6 @@ if (!$fast) {
 { pwsh ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
 { pwsh ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
 { pwsh ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../../polyglot/lib/rust/fable/build.ps1 } | Invoke-Block
 { pwsh ../../polyglot/apps/spiral/builder/build.ps1 -fast 1 } | Invoke-Block
 { pwsh ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
 
