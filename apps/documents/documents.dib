@@ -101,6 +101,8 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
             | "pdf" =>
                 $'$"--set"'
                 +. $'$" tex.paper.size a4paper"'
+                +. $'$" tex.template.add \\\"\\\\pagenumbering{{gobble}}\\\""'
+                // +. $'$" tex.template.add \\\"\\\\pagestyle{{empty}}\\\""'
                 +. (
                     if hangul |> not
                     then ""
@@ -456,7 +458,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 #!spiral
 
 //// test
-///! rust -d async-walkdir encoding_rs encoding_rs_io futures-lite rayon regex sha2
+///! rust -d async-walkdir encoding_rs encoding_rs_io futures futures-lite rayon regex sha2
 
 types ()
 inl workspace_root = file_system.get_workspace_root ()

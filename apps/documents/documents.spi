@@ -66,6 +66,8 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
             | "pdf" =>
                 $'$"--set"'
                 +. $'$" tex.paper.size a4paper"'
+                +. $'$" tex.template.add \\\"\\\\pagenumbering{{gobble}}\\\""'
+                // +. $'$" tex.template.add \\\"\\\\pagestyle{{empty}}\\\""'
                 +. (
                     if hangul |> not
                     then ""
