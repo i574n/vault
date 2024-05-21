@@ -457,5 +457,5 @@ inl main (args : array_base string) =
 
 inl main () =
     types ()
-    $"let tests () = !tests ()" : ()
-    $"let main args = !main args" : ()
+    $'let tests () = !tests ()' : ()
+    $'let main args = !main args' : ()
