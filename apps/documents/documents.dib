@@ -1,6 +1,6 @@
 #!meta
 
-{"kernelInfo":{"defaultKernelName":"spiral","items":[]}}
+{"kernelInfo":{"defaultKernelName":"spiral","items":[{"aliases":[],"name":"spiral"}]}}
 
 #!markdown
 
@@ -245,8 +245,18 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
     inl equal =
         if file_system.file_exists output_path
             && file_system.file_exists output_cache_path then
-            inl output_hash = output_path |> crypto.get_file_hash |> resultm.get
-            inl output_cache_hash = output_cache_path |> crypto.get_file_hash |> resultm.get
+            inl output_hash =
+                output_path
+                |> crypto.get_file_hash
+                |> resultm.map_error' sm'.format'
+                |> resultm.unbox'
+                |> resultm.get
+            inl output_cache_hash =
+                output_cache_path
+                |> crypto.get_file_hash
+                |> resultm.map_error' sm'.format'
+                |> resultm.unbox'
+                |> resultm.get
             output_hash = output_cache_hash
         else false
 
@@ -391,11 +401,21 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                 inl files' =
                     if origin_hash |> sm'.contains local_git_hash |> not then
-                        inl hash1 = dist_path |> crypto.get_file_hash |> resultm.get
+                        inl hash1 =
+                            dist_path
+                            |> crypto.get_file_hash
+                            |> resultm.map_error' sm'.format'
+                            |> resultm.unbox'
+                            |> resultm.get
                         inl hash2 =
-                            if cache_path |> file_system.file_exists
-                            then cache_path |> crypto.get_file_hash |> resultm.ok
-                            else None
+                            if cache_path |> file_system.file_exists |> not
+                            then None
+                            else
+                                cache_path
+                                |> crypto.get_file_hash
+                                |> resultm.map_error' sm'.format'
+                                |> resultm.unbox'
+                                |> resultm.ok
 
                         if hash2 = None || hash1 <>. (hash2 |> optionm.value) then
                             trace Info
@@ -458,7 +478,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 #!spiral
 
 //// test
-///! rust -d async-walkdir encoding_rs encoding_rs_io futures futures-lite rayon regex sha2
+///! rust -d async-walkdir encoding_rs encoding_rs_io futures futures-lite rayon regex sha2 tokio['rt-multi-thread'] tokio-stream
 
 types ()
 inl workspace_root = file_system.get_workspace_root ()
@@ -472,9 +492,9 @@ source_dir |> file_system.directory_delete true
 dist_dir |> file_system.directory_delete true
 cache_dir |> file_system.directory_delete true
 
-source_dir |> file_system.create_directory' |> ignore
-dist_dir |> file_system.create_directory' |> ignore
-cache_dir |> file_system.create_directory' |> ignore
+source_dir |> file_system.create_dir |> ignore
+dist_dir |> file_system.create_dir |> ignore
+cache_dir |> file_system.create_dir |> ignore
 
 inl text = "# a\n\n## b\n\n---\n\nabc\nabc\n\nabc\n\nabc\n"
 text |> file_system.write_all_text (source_dir </> file_name)
@@ -523,7 +543,7 @@ run {
 )
 
 dist_dir |> file_system.directory_delete true
-dist_dir |> file_system.create_directory' |> ignore
+dist_dir |> file_system.create_dir |> ignore
 
 text |> file_system.write_all_text (dist_dir </> file_name)
 

@@ -195,8 +195,18 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
     inl equal =
         if file_system.file_exists output_path
             && file_system.file_exists output_cache_path then
-            inl output_hash = output_path |> crypto.get_file_hash |> resultm.get
-            inl output_cache_hash = output_cache_path |> crypto.get_file_hash |> resultm.get
+            inl output_hash =
+                output_path
+                |> crypto.get_file_hash
+                |> resultm.map_error' sm'.format'
+                |> resultm.unbox'
+                |> resultm.get
+            inl output_cache_hash =
+                output_cache_path
+                |> crypto.get_file_hash
+                |> resultm.map_error' sm'.format'
+                |> resultm.unbox'
+                |> resultm.get
             output_hash = output_cache_hash
         else false
 
@@ -336,11 +346,21 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
                 inl files' =
                     if origin_hash |> sm'.contains local_git_hash |> not then
-                        inl hash1 = dist_path |> crypto.get_file_hash |> resultm.get
+                        inl hash1 =
+                            dist_path
+                            |> crypto.get_file_hash
+                            |> resultm.map_error' sm'.format'
+                            |> resultm.unbox'
+                            |> resultm.get
                         inl hash2 =
-                            if cache_path |> file_system.file_exists
-                            then cache_path |> crypto.get_file_hash |> resultm.ok
-                            else None
+                            if cache_path |> file_system.file_exists |> not
+                            then None
+                            else
+                                cache_path
+                                |> crypto.get_file_hash
+                                |> resultm.map_error' sm'.format'
+                                |> resultm.unbox'
+                                |> resultm.ok
 
                         if hash2 = None || hash1 <>. (hash2 |> optionm.value) then
                             trace Info
