@@ -622,98 +622,98 @@ document.addEventListener('DOMContentLoaded', function() {
         </header>
 
         <div id = "chapter-0" class = "chapter">
-  <pre><span style="color:#839496;">inl api_url = &quot;https://api.telegram.org/bot&quot; +\ token</span>
-<span style="color:#839496;">inl url_get_updates = api_url +\ &quot;/getUpdates&quot;</span>
+  <pre><span style="color:#323232;">inl api_url = &quot;https://api.telegram.org/bot&quot; +\ token</span>
+<span style="color:#323232;">inl url_get_updates = api_url +\ &quot;/getUpdates&quot;</span>
 
-</pre><pre><span style="color:#839496;">cargo run SpiFsxBuild -- --spi-path=&quot;./cli.spi&quot;</span>
-<span style="color:#839496;">&quot;../../target/release/cli&quot; SpiFsxBuild -- --spi-path=&quot;./cli.spi&quot; --fsx-path=&quot;./cli.fsx&quot;</span>
+</pre><pre><span style="color:#323232;">cargo run SpiFsxBuild -- --spi-path=&quot;./cli.spi&quot;</span>
+<span style="color:#323232;">&quot;../../target/release/cli&quot; SpiFsxBuild -- --spi-path=&quot;./cli.spi&quot; --fsx-path=&quot;./cli.fsx&quot;</span>
 
-</pre><pre><span style="color:#859900;">use </span><span style="color:#839496;">std::path::PathBuf;</span>
-<span style="color:#859900;">use </span><span style="color:#839496;">std::sync::mpsc::</span><span style="color:#657b83;">{</span><span style="color:#839496;">channel, Sender</span><span style="color:#657b83;">}</span><span style="color:#839496;">;</span>
-<span style="color:#859900;">use </span><span style="color:#839496;">std::thread::</span><span style="color:#657b83;">{</span><span style="color:#839496;">spawn, JoinHandle</span><span style="color:#657b83;">}</span><span style="color:#839496;">;</span>
-<span style="color:#859900;">use </span><span style="color:#839496;">std::time::Duration;</span>
+</pre><pre><span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">std::path::PathBuf;</span>
+<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">std::sync::mpsc::{channel, Sender};</span>
+<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">std::thread::{spawn, JoinHandle};</span>
+<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">std::time::Duration;</span>
 
-<span style="color:#859900;">use </span><span style="color:#839496;">notify::</span><span style="color:#657b83;">{</span><span style="color:#839496;">RecommendedWatcher, RecursiveMode, Watcher</span><span style="color:#657b83;">}</span><span style="color:#839496;">;</span>
+<span style="font-weight:bold;color:#a71d5d;">use </span><span style="color:#323232;">notify::{RecommendedWatcher, RecursiveMode, Watcher};</span>
 
-<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
-<span style="color:#268bd2;">enum </span><span style="color:#b58900;">FileSystemChangeType </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">    Error,</span>
-<span style="color:#839496;">    Changed,</span>
-<span style="color:#839496;">    Created,</span>
-<span style="color:#839496;">    Deleted,</span>
-<span style="color:#839496;">    Renamed,</span>
-<span style="color:#657b83;">}</span>
+<span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">FileSystemChangeType {</span>
+<span style="color:#323232;">    Error,</span>
+<span style="color:#323232;">    Changed,</span>
+<span style="color:#323232;">    Created,</span>
+<span style="color:#323232;">    Deleted,</span>
+<span style="color:#323232;">    Renamed,</span>
+<span style="color:#323232;">}</span>
 
-<span style="color:#839496;">#</span><span style="color:#657b83;">[</span><span style="color:#268bd2;">derive</span><span style="color:#657b83;">(</span><span style="color:#839496;">Debug</span><span style="color:#657b83;">)]</span>
-<span style="color:#268bd2;">enum </span><span style="color:#b58900;">FileSystemChange </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">    Error</span><span style="color:#657b83;">(</span><span style="color:#839496;">std::io::Error</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">    Changed</span><span style="color:#657b83;">(</span><span style="color:#839496;">PathBuf</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">    Created</span><span style="color:#657b83;">(</span><span style="color:#839496;">PathBuf</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">    Deleted</span><span style="color:#657b83;">(</span><span style="color:#839496;">PathBuf</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">    Renamed</span><span style="color:#657b83;">(</span><span style="color:#839496;">PathBuf, PathBuf</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
-<span style="color:#657b83;">}</span>
+<span style="color:#323232;">#[derive(Debug)]</span>
+<span style="font-weight:bold;color:#a71d5d;">enum </span><span style="color:#323232;">FileSystemChange {</span>
+<span style="color:#323232;">    Error(std::io::Error),</span>
+<span style="color:#323232;">    Changed(PathBuf),</span>
+<span style="color:#323232;">    Created(PathBuf),</span>
+<span style="color:#323232;">    Deleted(PathBuf),</span>
+<span style="color:#323232;">    Renamed(PathBuf, PathBuf),</span>
+<span style="color:#323232;">}</span>
 
-<span style="color:#268bd2;">impl </span><span style="color:#b58900;">FileSystemChange </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">    </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">path</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">self</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Option&lt;</span><span style="color:#657b83;">(</span><span style="color:#839496;">PathBuf, PathBuf</span><span style="color:#657b83;">)</span><span style="color:#839496;">&gt; </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">        </span><span style="color:#859900;">match </span><span style="color:#d33682;">self </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">            FileSystemChange::Error</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; None</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">            FileSystemChange::Changed</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">)</span>
-<span style="color:#839496;">            </span><span style="color:#859900;">| </span><span style="color:#839496;">FileSystemChange::Created</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">)</span>
-<span style="color:#839496;">            </span><span style="color:#859900;">| </span><span style="color:#839496;">FileSystemChange::Deleted</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">(</span><span style="color:#859900;">None</span><span style="color:#839496;">, </span><span style="color:#859900;">Some</span><span style="color:#657b83;">(</span><span style="color:#839496;">path.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">()))</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">            FileSystemChange::Renamed</span><span style="color:#657b83;">(</span><span style="color:#839496;">old_path, path</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; Some</span><span style="color:#657b83;">((</span><span style="color:#839496;">old_path.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">()</span><span style="color:#839496;">, path.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">()))</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
-<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
+<span style="font-weight:bold;color:#a71d5d;">impl </span><span style="color:#323232;">FileSystemChange {</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">path</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">self) -&gt; Option&lt;(PathBuf, PathBuf)&gt; {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">self {</span>
+<span style="color:#323232;">            FileSystemChange::Error(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">None</span><span style="color:#323232;">,</span>
+<span style="color:#323232;">            FileSystemChange::Changed(path)</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">FileSystemChange::Created(path)</span>
+<span style="color:#323232;">            </span><span style="font-weight:bold;color:#a71d5d;">| </span><span style="color:#323232;">FileSystemChange::Deleted(path) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">(</span><span style="color:#0086b3;">None</span><span style="color:#323232;">, </span><span style="color:#0086b3;">Some</span><span style="color:#323232;">(path.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">())),</span>
+<span style="color:#323232;">            FileSystemChange::Renamed(old_path, path) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#0086b3;">Some</span><span style="color:#323232;">((old_path.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">(), path.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">())),</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
 
-<span style="color:#839496;">    </span><span style="color:#268bd2;">fn </span><span style="color:#b58900;">change_type</span><span style="color:#657b83;">(</span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">self</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; FileSystemChangeType </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">        </span><span style="color:#859900;">match </span><span style="color:#d33682;">self </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">            FileSystemChange::Error</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#839496;">FileSystemChangeType::Error,</span>
-<span style="color:#839496;">            FileSystemChange::Changed</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#839496;">FileSystemChangeType::Changed,</span>
-<span style="color:#839496;">            FileSystemChange::Created</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#839496;">FileSystemChangeType::Created,</span>
-<span style="color:#839496;">            FileSystemChange::Deleted</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#839496;">FileSystemChangeType::Deleted,</span>
-<span style="color:#839496;">            FileSystemChange::Renamed</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#839496;">, </span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#839496;">FileSystemChangeType::Renamed,</span>
-<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
-<span style="color:#839496;">    </span><span style="color:#657b83;">}</span>
-<span style="color:#657b83;">}</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">change_type</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">&amp;</span><span style="color:#323232;">self) -&gt; FileSystemChangeType {</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match </span><span style="color:#323232;">self {</span>
+<span style="color:#323232;">            FileSystemChange::Error(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">FileSystemChangeType::Error,</span>
+<span style="color:#323232;">            FileSystemChange::Changed(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">FileSystemChangeType::Changed,</span>
+<span style="color:#323232;">            FileSystemChange::Created(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">FileSystemChangeType::Created,</span>
+<span style="color:#323232;">            FileSystemChange::Deleted(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">FileSystemChangeType::Deleted,</span>
+<span style="color:#323232;">            FileSystemChange::Renamed(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">, </span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">FileSystemChangeType::Renamed,</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    }</span>
+<span style="color:#323232;">}</span>
 
-<span style="color:#268bd2;">fn </span><span style="color:#b58900;">watch_with_filter</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">path</span><span style="color:#839496;">: </span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">str</span><span style="color:#839496;">, </span><span style="color:#268bd2;">filter</span><span style="color:#839496;">: notify::RecommendedWatcher</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Sender&lt;FileSystemChange&gt; </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">    </span><span style="color:#268bd2;">let </span><span style="color:#657b83;">(</span><span style="color:#839496;">tx, rx</span><span style="color:#657b83;">) </span><span style="color:#859900;">= channel</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
+<span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">watch_with_filter</span><span style="color:#323232;">(path: </span><span style="font-weight:bold;color:#a71d5d;">&amp;str</span><span style="color:#323232;">, filter: notify::RecommendedWatcher) -&gt; Sender&lt;FileSystemChange&gt; {</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let </span><span style="color:#323232;">(tx, rx) </span><span style="font-weight:bold;color:#a71d5d;">= </span><span style="color:#62a35c;">channel</span><span style="color:#323232;">();</span>
 
-<span style="color:#839496;">    </span><span style="color:#268bd2;">let </span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> watcher: RecommendedWatcher </span><span style="color:#859900;">=</span><span style="color:#839496;"> filter.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
-<span style="color:#839496;">    watcher</span>
-<span style="color:#839496;">        .</span><span style="color:#859900;">watch</span><span style="color:#657b83;">(</span><span style="color:#839496;">path, RecursiveMode::Recursive</span><span style="color:#657b83;">)</span>
-<span style="color:#839496;">        .</span><span style="color:#859900;">unwrap_or_else</span><span style="color:#657b83;">(|</span><span style="color:#268bd2;">e</span><span style="color:#657b83;">| </span><span style="color:#859900;">panic!</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Failed to watch directory &#39;{}&#39;: {:?}</span><span style="color:#839496;">&quot;, path, e</span><span style="color:#657b83;">))</span><span style="color:#839496;">;</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let mut</span><span style="color:#323232;"> watcher: RecommendedWatcher </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> filter.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">();</span>
+<span style="color:#323232;">    watcher</span>
+<span style="color:#323232;">        .</span><span style="color:#62a35c;">watch</span><span style="color:#323232;">(path, RecursiveMode::Recursive)</span>
+<span style="color:#323232;">        .</span><span style="color:#62a35c;">unwrap_or_else</span><span style="color:#323232;">(|e| panic!(</span><span style="color:#183691;">&quot;Failed to watch directory &#39;{}&#39;: {:?}&quot;</span><span style="color:#323232;">, path, e));</span>
 
-<span style="color:#839496;">    </span><span style="color:#268bd2;">let</span><span style="color:#839496;"> tx2 </span><span style="color:#859900;">=</span><span style="color:#839496;"> tx.</span><span style="color:#859900;">clone</span><span style="color:#657b83;">()</span><span style="color:#839496;">;</span>
-<span style="color:#839496;">    </span><span style="color:#268bd2;">let </span><span style="color:#93a1a1;">mut</span><span style="color:#839496;"> events </span><span style="color:#859900;">=</span><span style="color:#839496;"> watcher</span>
-<span style="color:#839496;">        .</span><span style="color:#859900;">event_receiver</span><span style="color:#657b83;">()</span>
-<span style="color:#839496;">        .</span><span style="color:#859900;">unwrap_or_else</span><span style="color:#657b83;">(|</span><span style="color:#268bd2;">e</span><span style="color:#657b83;">| </span><span style="color:#859900;">panic!</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Failed to receive events for directory &#39;{}&#39;: {:?}</span><span style="color:#839496;">&quot;, path, e</span><span style="color:#657b83;">))</span><span style="color:#839496;">;</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let</span><span style="color:#323232;"> tx2 </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> tx.</span><span style="color:#62a35c;">clone</span><span style="color:#323232;">();</span>
+<span style="color:#323232;">    </span><span style="font-weight:bold;color:#a71d5d;">let mut</span><span style="color:#323232;"> events </span><span style="font-weight:bold;color:#a71d5d;">=</span><span style="color:#323232;"> watcher</span>
+<span style="color:#323232;">        .</span><span style="color:#62a35c;">event_receiver</span><span style="color:#323232;">()</span>
+<span style="color:#323232;">        .</span><span style="color:#62a35c;">unwrap_or_else</span><span style="color:#323232;">(|e| panic!(</span><span style="color:#183691;">&quot;Failed to receive events for directory &#39;{}&#39;: {:?}&quot;</span><span style="color:#323232;">, path, e));</span>
 
-<span style="color:#839496;">    </span><span style="color:#859900;">spawn</span><span style="color:#657b83;">(</span><span style="color:#93a1a1;">move </span><span style="color:#859900;">|| loop </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">        </span><span style="color:#859900;">match</span><span style="color:#839496;"> events.</span><span style="color:#859900;">recv_timeout</span><span style="color:#657b83;">(</span><span style="color:#839496;">Duration::from_secs</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">1</span><span style="color:#657b83;">)) {</span>
-<span style="color:#839496;">            </span><span style="color:#859900;">Ok</span><span style="color:#657b83;">(</span><span style="color:#839496;">event</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; match</span><span style="color:#839496;"> event </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">                notify::DebouncedEvent::Write</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt;</span><span style="color:#839496;"> tx.</span><span style="color:#859900;">send</span><span style="color:#657b83;">(</span><span style="color:#839496;">FileSystemChange::Changed</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">))</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">()</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">                notify::DebouncedEvent::Create</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt;</span><span style="color:#839496;"> tx.</span><span style="color:#859900;">send</span><span style="color:#657b83;">(</span><span style="color:#839496;">FileSystemChange::Created</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">))</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">()</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">                notify::DebouncedEvent::Remove</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt;</span><span style="color:#839496;"> tx.</span><span style="color:#859900;">send</span><span style="color:#657b83;">(</span><span style="color:#839496;">FileSystemChange::Deleted</span><span style="color:#657b83;">(</span><span style="color:#839496;">path</span><span style="color:#657b83;">))</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">()</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">                notify::DebouncedEvent::Rename</span><span style="color:#657b83;">(</span><span style="color:#839496;">old_path, path</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">                    tx.</span><span style="color:#859900;">send</span><span style="color:#657b83;">(</span><span style="color:#839496;">FileSystemChange::Renamed</span><span style="color:#657b83;">(</span><span style="color:#839496;">old_path, path</span><span style="color:#657b83;">))</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap</span><span style="color:#657b83;">()</span>
-<span style="color:#839496;">                </span><span style="color:#657b83;">}</span>
-<span style="color:#839496;">                </span><span style="color:#859900;">_ =&gt; </span><span style="color:#657b83;">{}</span>
-<span style="color:#839496;">            </span><span style="color:#657b83;">}</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">            </span><span style="color:#859900;">Err</span><span style="color:#657b83;">(</span><span style="color:#859900;">_</span><span style="color:#657b83;">) </span><span style="color:#859900;">=&gt; </span><span style="color:#657b83;">{}</span>
-<span style="color:#839496;">        </span><span style="color:#657b83;">}</span>
-<span style="color:#839496;">    </span><span style="color:#657b83;">})</span><span style="color:#839496;">;</span>
+<span style="color:#323232;">    </span><span style="color:#62a35c;">spawn</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">move || loop </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">        </span><span style="font-weight:bold;color:#a71d5d;">match</span><span style="color:#323232;"> events.</span><span style="color:#62a35c;">recv_timeout</span><span style="color:#323232;">(Duration::from_secs(</span><span style="color:#0086b3;">1</span><span style="color:#323232;">)) {</span>
+<span style="color:#323232;">            </span><span style="color:#0086b3;">Ok</span><span style="color:#323232;">(event) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; match</span><span style="color:#323232;"> event {</span>
+<span style="color:#323232;">                notify::DebouncedEvent::Write(path) </span><span style="font-weight:bold;color:#a71d5d;">=&gt;</span><span style="color:#323232;"> tx.</span><span style="color:#62a35c;">send</span><span style="color:#323232;">(FileSystemChange::Changed(path)).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">(),</span>
+<span style="color:#323232;">                notify::DebouncedEvent::Create(path) </span><span style="font-weight:bold;color:#a71d5d;">=&gt;</span><span style="color:#323232;"> tx.</span><span style="color:#62a35c;">send</span><span style="color:#323232;">(FileSystemChange::Created(path)).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">(),</span>
+<span style="color:#323232;">                notify::DebouncedEvent::Remove(path) </span><span style="font-weight:bold;color:#a71d5d;">=&gt;</span><span style="color:#323232;"> tx.</span><span style="color:#62a35c;">send</span><span style="color:#323232;">(FileSystemChange::Deleted(path)).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">(),</span>
+<span style="color:#323232;">                notify::DebouncedEvent::Rename(old_path, path) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{</span>
+<span style="color:#323232;">                    tx.</span><span style="color:#62a35c;">send</span><span style="color:#323232;">(FileSystemChange::Renamed(old_path, path)).</span><span style="color:#62a35c;">unwrap</span><span style="color:#323232;">()</span>
+<span style="color:#323232;">                }</span>
+<span style="color:#323232;">                </span><span style="font-weight:bold;color:#a71d5d;">_ =&gt; </span><span style="color:#323232;">{}</span>
+<span style="color:#323232;">            },</span>
+<span style="color:#323232;">            </span><span style="color:#0086b3;">Err</span><span style="color:#323232;">(</span><span style="font-weight:bold;color:#a71d5d;">_</span><span style="color:#323232;">) </span><span style="font-weight:bold;color:#a71d5d;">=&gt; </span><span style="color:#323232;">{}</span>
+<span style="color:#323232;">        }</span>
+<span style="color:#323232;">    });</span>
 
-<span style="color:#839496;">    tx2</span>
-<span style="color:#657b83;">}</span>
+<span style="color:#323232;">    tx2</span>
+<span style="color:#323232;">}</span>
 
-<span style="color:#268bd2;">fn </span><span style="color:#b58900;">watch</span><span style="color:#657b83;">(</span><span style="color:#268bd2;">path</span><span style="color:#839496;">: </span><span style="color:#859900;">&amp;</span><span style="color:#268bd2;">str</span><span style="color:#657b83;">) </span><span style="color:#839496;">-&gt; Sender&lt;FileSystemChange&gt; </span><span style="color:#657b83;">{</span>
-<span style="color:#839496;">    </span><span style="color:#859900;">watch_with_filter</span><span style="color:#657b83;">(</span>
-<span style="color:#839496;">        path,</span>
-<span style="color:#839496;">        notify::Watcher::new</span><span style="color:#657b83;">(</span>
-<span style="color:#839496;">            std::time::Duration::from_secs</span><span style="color:#657b83;">(</span><span style="color:#6c71c4;">2</span><span style="color:#657b83;">)</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">        </span><span style="color:#657b83;">)</span><span style="color:#839496;">.</span><span style="color:#859900;">unwrap_or_else</span><span style="color:#657b83;">(|</span><span style="color:#268bd2;">e</span><span style="color:#657b83;">| </span><span style="color:#859900;">panic!</span><span style="color:#657b83;">(</span><span style="color:#839496;">&quot;</span><span style="color:#2aa198;">Failed to create watcher for directory &#39;{}&#39;: {:?}</span><span style="color:#839496;">&quot;, path, e</span><span style="color:#657b83;">))</span><span style="color:#839496;">,</span>
-<span style="color:#839496;">    </span><span style="color:#657b83;">)</span>
-<span style="color:#657b83;">}</span>
+<span style="font-weight:bold;color:#a71d5d;">fn </span><span style="font-weight:bold;color:#795da3;">watch</span><span style="color:#323232;">(path: </span><span style="font-weight:bold;color:#a71d5d;">&amp;str</span><span style="color:#323232;">) -&gt; Sender&lt;FileSystemChange&gt; {</span>
+<span style="color:#323232;">    </span><span style="color:#62a35c;">watch_with_filter</span><span style="color:#323232;">(</span>
+<span style="color:#323232;">        path,</span>
+<span style="color:#323232;">        notify::Watcher::new(</span>
+<span style="color:#323232;">            std::time::Duration::from_secs(</span><span style="color:#0086b3;">2</span><span style="color:#323232;">),</span>
+<span style="color:#323232;">        ).</span><span style="color:#62a35c;">unwrap_or_else</span><span style="color:#323232;">(|e| panic!(</span><span style="color:#183691;">&quot;Failed to create watcher for directory &#39;{}&#39;: {:?}&quot;</span><span style="color:#323232;">, path, e)),</span>
+<span style="color:#323232;">    )</span>
+<span style="color:#323232;">}</span>
 
 </pre>
 </div>
