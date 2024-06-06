@@ -118,8 +118,7 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
         runtime.execution_options fun x => { x with
             command =
                 inl hangulize_path =
-                    inl _exe = runtime.get_executable_suffix ()
-                    workspace_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!_exe}"'
+                    workspace_root </> $'$"../vault/deps/hangulize/cmd/hangulize/hangulize{!(platform.get_executable_suffix ())}"'
                 $'$"{!hangulize_path} {!hangul_spec}"'
             stdin =
                 fun stdin =>
