@@ -394,13 +394,11 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                     files'
                     |> listm'.box
                     |> listm'.to_array'
-                    |> fun (a x : _ i32 _) => x
                     |> am'.to_vec
                     |> am'.vec_collect fun files =>
                         files
                         |> listm'.box
                         |> listm'.to_array'
-                        |> fun (a x : _ i32 _) => x
                         |> am'.to_vec
                         |> async.into_par_iter
                         |> async.par_map fun ext, path, fn =>
