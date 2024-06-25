@@ -16,7 +16,7 @@ encoding_rs_io = "~0.1"
 futures = "~0.3"
 tokio = { version = "~1.37", features = ["rt-multi-thread"] }
 tokio-stream = "~0.1"
-async-walkdir = "~1.0"
+async-walkdir = "~2.0"
 rayon = "~1.10"
 sha2 = "~0.11.0-pre.3"
 
