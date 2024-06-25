@@ -95,7 +95,7 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
     if result |> sm'.contains "ERROR" then
         trace Warning
             fun () => $'"documents.crowbook / result contains ERROR"'
-            fun () => $'$"exit_code: %A{!exit_code} / output_path: {!output_path} / result: {!result} / {!_locals ()}"'
+            fun () => { exit_code output_path result }
         (exit_code, result) |> Error
     else (exit_code, result) |> Ok
 
@@ -159,9 +159,7 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
 
     trace Info
         fun () => $'"documents.hangul"'
-        fun () =>
-            inl result_len : i32 = result |> sm'.length
-            $'$"exit_code: %A{!exit_code} / result_len: {!result_len} / output_path: {!output_path} / {!_locals ()}"'
+        fun () => { exit_code result_len = result |> sm'.length : i32; output_path }
 
     (exit_code, result) |> Ok
     |> fun x => x : result (i32 * string) (i32 * string)
@@ -215,7 +213,7 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
         | Ok (exit_code, result) when exit_code <>. 0 =>
             trace Info
                 fun () => $'"documents.files_fn / error"'
-                fun () => $'$"exit_code: %A{!exit_code} / result: {!result} / {!_locals ()}"'
+                fun () => { exit_code result }
             new_pair output_path result |> Error |> resultm.box |> Some
         | Error (exit_code, result) =>
             new_pair output_path result |> Error |> resultm.box |> Some
@@ -238,7 +236,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
     trace Debug
         fun () => $'"documents.run"'
-        fun () => $'$"source_dir: {!source_dir} / dist_dir: {!dist_dir} / cache_dir: {!cache_dir} / hangul_spec: %A{!hangul_spec} / {!_locals ()}"'
+        fun () => { source_dir dist_dir cache_dir hangul_spec }
 
     fun () =>
         inl files =
@@ -275,15 +273,13 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                 | Error error =>
                     trace Critical
                         fun () => $'"documents.run / stream_filter_map"'
-                        fun () => $'$"error: {!error} / {!_locals ()}"'
+                        fun () => { error }
                     None
                 |> optionm'.box
 
         trace Debug
             fun () => $'"documents.run"'
-            fun () =>
-                inl files_len = files |> am'.vec_len
-                $'$"files_len: {!files_len} / {!_locals ()}"'
+            fun () => { files_len = files |> am'.vec_len }
 
         inl result =
             files
@@ -364,7 +360,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                         if hash2 = None || hash1 <>. (hash2 |> optionm.value) then
                             trace Info
                                 fun () => $'"documents.run / par_map / origin_hash |> sm\'.contains local_git_hash |> not / hash2 = None || hash1 <>. (hash2 |> optionm.value)"'
-                                fun () => $'$"file: {!file} / real_path: {!real_path} / relative_path: {!relative_path} / origin_hash_exit_code: {!origin_hash_exit_code} / origin_hash: {!origin_hash} / local_git_hash_exit_code: {!local_git_hash_exit_code} / local_git_hash: {!local_git_hash} / hash1: {!hash1} / hash2: %A{!hash2} / dist_path: {!dist_path} / cache_path: {!cache_path} / {!_locals ()}"'
+                                fun () => { file real_path relative_path origin_hash_exit_code origin_hash local_git_hash_exit_code local_git_hash hash1 hash2 dist_path cache_path }
                             dist_path |> file_system.file_copy cache_path
                             files
                         else []
@@ -384,7 +380,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                                     if file_system.file_exists output_cache_path then
                                         trace Info
                                             fun () => $'"documents.run / par_map / files\' = [] / listm.iter"'
-                                            fun () => $'$"output_path: %A{!output_path} / output_cache_path: {!output_cache_path} / {!_locals ()}"'
+                                            fun () => { output_path output_cache_path }
                                         output_cache_path |> file_system.file_copy output_path
                                         false
                                     else true
@@ -410,9 +406,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
         trace Info
             fun () => $'"documents.run"'
-            fun () =>
-                inl result_len = result |> am'.vec_len
-                $'$"result_len: {!result_len} / {!_locals ()}"'
+            fun () => { result_len = result |> am'.vec_len }
 
         result |> Ok |> resultm.box
     |> async.future_init (4, 3) 1
@@ -432,7 +426,7 @@ inl main (args : array_base string) =
 
     trace Info
         fun () => $'$"documents.main"'
-        fun () => $'$"args: {!args} / {!_locals ()}"'
+        fun () => { args }
 
     inl command = get_command ()
     inl arg_matches = command |> runtime.command_get_matches
