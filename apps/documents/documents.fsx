@@ -11123,7 +11123,8 @@ and method112 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
     let v48 : string =
         match v30 with
         | US3_1 -> (* None *)
-            failwith<string> "Option does not have a value."
+            let v46 : string = ""
+            v46
         | US3_0(v45) -> (* Some *)
             v45
     let start_info = System.Diagnostics.ProcessStartInfo (
@@ -17110,7 +17111,7 @@ and method153 (v0 : Result<Vec<Result<(string * Vec<Result<string, (string * str
 and method19 (v0 : string, v1 : string, v2 : string, v3 : string) : std_pin_Pin<Box<Dyn<std_future_Future<Result<Vec<Result<(string * Vec<Result<string, (string * string)> option>), std_string_String>>, std_string_String>>>>> =
     let v4 : string = __SOURCE_DIRECTORY__
     let v5 : string = "polyglot"
-    let v6 : string = ".paket"
+    let v6 : string = ".devcontainer"
     let v7 : string = method20(v5, v6)
     let v8 : US7 = method23(v7, v4)
     let v17 : US3 =

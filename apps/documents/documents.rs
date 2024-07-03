@@ -161,43 +161,6 @@ mod module_2555ccf7 {
             US0_3,
             US0_4,
         }
-        impl Documents::US0 {
-            pub fn get_IsUS0_0(this_: &MutCell<Documents::US0>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS0_1(this_: &MutCell<Documents::US0>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS0_2(this_: &MutCell<Documents::US0>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS0_3(this_: &MutCell<Documents::US0>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS0_4(this_: &MutCell<Documents::US0>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US0 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -244,22 +207,6 @@ mod module_2555ccf7 {
             US1_0(Documents::US0),
             US1_1,
         }
-        impl Documents::US1 {
-            pub fn get_IsUS1_0(this_: &MutCell<Documents::US1>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS1_1(this_: &MutCell<Documents::US1>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US1 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -270,22 +217,6 @@ mod module_2555ccf7 {
             US2_0(i64),
             US2_1,
         }
-        impl Documents::US2 {
-            pub fn get_IsUS2_0(this_: &MutCell<Documents::US2>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS2_1(this_: &MutCell<Documents::US2>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US2 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -295,22 +226,6 @@ mod module_2555ccf7 {
         pub enum US3 {
             US3_0(string),
             US3_1,
-        }
-        impl Documents::US3 {
-            pub fn get_IsUS3_0(this_: &MutCell<Documents::US3>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS3_1(this_: &MutCell<Documents::US3>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US3 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -331,22 +246,6 @@ mod module_2555ccf7 {
             US4_0(std::string::String),
             US4_1,
         }
-        impl Documents::US4 {
-            pub fn get_IsUS4_0(this_: &MutCell<Documents::US4>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS4_1(this_: &MutCell<Documents::US4>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US4 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -357,29 +256,6 @@ mod module_2555ccf7 {
             US5_0,
             US5_1,
             US5_2,
-        }
-        impl Documents::US5 {
-            pub fn get_IsUS5_0(this_: &MutCell<Documents::US5>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS5_1(this_: &MutCell<Documents::US5>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS5_2(this_: &MutCell<Documents::US5>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US5 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -394,43 +270,6 @@ mod module_2555ccf7 {
             US6_3(Documents::US5),
             US6_4(Documents::US5),
         }
-        impl Documents::US6 {
-            pub fn get_IsUS6_0(this_: &MutCell<Documents::US6>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS6_1(this_: &MutCell<Documents::US6>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS6_2(this_: &MutCell<Documents::US6>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS6_3(this_: &MutCell<Documents::US6>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS6_4(this_: &MutCell<Documents::US6>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US6 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -440,22 +279,6 @@ mod module_2555ccf7 {
         pub enum US7 {
             US7_0(string),
             US7_1(string),
-        }
-        impl Documents::US7 {
-            pub fn get_IsUS7_0(this_: &MutCell<Documents::US7>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS7_1(this_: &MutCell<Documents::US7>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US7 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -488,29 +311,6 @@ mod module_2555ccf7 {
             US8_1,
             US8_2,
         }
-        impl Documents::US8 {
-            pub fn get_IsUS8_0(this_: &MutCell<Documents::US8>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS8_1(this_: &MutCell<Documents::US8>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS8_2(this_: &MutCell<Documents::US8>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US8 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -520,22 +320,6 @@ mod module_2555ccf7 {
         pub enum US9 {
             US9_0(std::fs::FileType),
             US9_1(std::string::String),
-        }
-        impl Documents::US9 {
-            pub fn get_IsUS9_0(this_: &MutCell<Documents::US9>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS9_1(this_: &MutCell<Documents::US9>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US9 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -547,22 +331,6 @@ mod module_2555ccf7 {
             US10_0(async_walkdir::DirEntry),
             US10_1(std::string::String),
         }
-        impl Documents::US10 {
-            pub fn get_IsUS10_0(this_: &MutCell<Documents::US10>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS10_1(this_: &MutCell<Documents::US10>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US10 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -572,22 +340,6 @@ mod module_2555ccf7 {
         pub enum US11 {
             US11_0(string, Documents::US3),
             US11_1(string),
-        }
-        impl Documents::US11 {
-            pub fn get_IsUS11_0(this_: &MutCell<Documents::US11>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS11_1(this_: &MutCell<Documents::US11>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US11 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -599,22 +351,6 @@ mod module_2555ccf7 {
             US12_0(char, string, LrcPtr<StringBuilder>, i32, i32),
             US12_1(string),
         }
-        impl Documents::US12 {
-            pub fn get_IsUS12_0(this_: &MutCell<Documents::US12>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS12_1(this_: &MutCell<Documents::US12>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US12 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -624,22 +360,6 @@ mod module_2555ccf7 {
         pub enum UH0 {
             UH0_0,
             UH0_1(char, LrcPtr<Documents::UH0>),
-        }
-        impl Documents::UH0 {
-            pub fn get_IsUH0_0(this_: LrcPtr<Documents::UH0>, unitArg: ()) -> bool {
-                if let Documents::UH0::UH0_0 = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUH0_1(this_: LrcPtr<Documents::UH0>, unitArg: ()) -> bool {
-                if let Documents::UH0::UH0_1(this__1_0, this__1_1) = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::UH0 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -654,22 +374,6 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::UH1>,
             ),
         }
-        impl Documents::UH1 {
-            pub fn get_IsUH1_0(this_: LrcPtr<Documents::UH1>, unitArg: ()) -> bool {
-                if let Documents::UH1::UH1_0 = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUH1_1(this_: LrcPtr<Documents::UH1>, unitArg: ()) -> bool {
-                if let Documents::UH1::UH1_1(this__1_0, this__1_1) = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::UH1 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -679,22 +383,6 @@ mod module_2555ccf7 {
         pub enum US13 {
             US13_0(string, string, LrcPtr<StringBuilder>, i32, i32),
             US13_1(string),
-        }
-        impl Documents::US13 {
-            pub fn get_IsUS13_0(this_: &MutCell<Documents::US13>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS13_1(this_: &MutCell<Documents::US13>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US13 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -706,22 +394,6 @@ mod module_2555ccf7 {
             US14_0(char),
             US14_1,
         }
-        impl Documents::US14 {
-            pub fn get_IsUS14_0(this_: &MutCell<Documents::US14>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS14_1(this_: &MutCell<Documents::US14>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US14 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -731,22 +403,6 @@ mod module_2555ccf7 {
         pub enum US15 {
             US15_0(string, LrcPtr<StringBuilder>, i32, i32),
             US15_1(string),
-        }
-        impl Documents::US15 {
-            pub fn get_IsUS15_0(this_: &MutCell<Documents::US15>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS15_1(this_: &MutCell<Documents::US15>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US15 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -765,22 +421,6 @@ mod module_2555ccf7 {
             ),
             US16_1(string),
         }
-        impl Documents::US16 {
-            pub fn get_IsUS16_0(this_: &MutCell<Documents::US16>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS16_1(this_: &MutCell<Documents::US16>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US16 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -790,22 +430,6 @@ mod module_2555ccf7 {
         pub enum US17 {
             US17_0(Documents::US14, string, LrcPtr<StringBuilder>, i32, i32),
             US17_1(string),
-        }
-        impl Documents::US17 {
-            pub fn get_IsUS17_0(this_: &MutCell<Documents::US17>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS17_1(this_: &MutCell<Documents::US17>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US17 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -817,22 +441,6 @@ mod module_2555ccf7 {
             US18_0(Documents::US3, string, LrcPtr<StringBuilder>, i32, i32),
             US18_1(string),
         }
-        impl Documents::US18 {
-            pub fn get_IsUS18_0(this_: &MutCell<Documents::US18>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS18_1(this_: &MutCell<Documents::US18>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US18 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -843,22 +451,6 @@ mod module_2555ccf7 {
             US19_0(Array<string>),
             US19_1(string),
         }
-        impl Documents::US19 {
-            pub fn get_IsUS19_0(this_: &MutCell<Documents::US19>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS19_1(this_: &MutCell<Documents::US19>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US19 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -868,22 +460,6 @@ mod module_2555ccf7 {
         pub enum UH2 {
             UH2_0,
             UH2_1(string, LrcPtr<Documents::UH2>),
-        }
-        impl Documents::UH2 {
-            pub fn get_IsUH2_0(this_: LrcPtr<Documents::UH2>, unitArg: ()) -> bool {
-                if let Documents::UH2::UH2_0 = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUH2_1(this_: LrcPtr<Documents::UH2>, unitArg: ()) -> bool {
-                if let Documents::UH2::UH2_1(this__1_0, this__1_1) = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::UH2 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -901,22 +477,6 @@ mod module_2555ccf7 {
             ),
             US20_1(string),
         }
-        impl Documents::US20 {
-            pub fn get_IsUS20_0(this_: &MutCell<Documents::US20>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS20_1(this_: &MutCell<Documents::US20>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US20 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -930,22 +490,6 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::UH3>,
             ),
         }
-        impl Documents::UH3 {
-            pub fn get_IsUH3_0(this_: LrcPtr<Documents::UH3>, unitArg: ()) -> bool {
-                if let Documents::UH3::UH3_0 = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUH3_1(this_: LrcPtr<Documents::UH3>, unitArg: ()) -> bool {
-                if let Documents::UH3::UH3_1(this__1_0, this__1_1) = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::UH3 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -955,22 +499,6 @@ mod module_2555ccf7 {
         pub enum US21 {
             US21_0(std::sync::Arc<std::sync::Mutex<Option<std::process::Child>>>),
             US21_1(std::string::String),
-        }
-        impl Documents::US21 {
-            pub fn get_IsUS21_0(this_: &MutCell<Documents::US21>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS21_1(this_: &MutCell<Documents::US21>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US21 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -988,22 +516,6 @@ mod module_2555ccf7 {
             ),
             US22_1,
         }
-        impl Documents::US22 {
-            pub fn get_IsUS22_0(this_: &MutCell<Documents::US22>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS22_1(this_: &MutCell<Documents::US22>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US22 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1013,22 +525,6 @@ mod module_2555ccf7 {
         pub enum US23 {
             US23_0(std::string::String),
             US23_1(std::string::String),
-        }
-        impl Documents::US23 {
-            pub fn get_IsUS23_0(this_: &MutCell<Documents::US23>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS23_1(this_: &MutCell<Documents::US23>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US23 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -1040,22 +536,6 @@ mod module_2555ccf7 {
             US24_0(Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>),
             US24_1,
         }
-        impl Documents::US24 {
-            pub fn get_IsUS24_0(this_: &MutCell<Documents::US24>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS24_1(this_: &MutCell<Documents::US24>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US24 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1065,22 +545,6 @@ mod module_2555ccf7 {
         pub enum US25 {
             US25_0(std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>),
             US25_1,
-        }
-        impl Documents::US25 {
-            pub fn get_IsUS25_0(this_: &MutCell<Documents::US25>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS25_1(this_: &MutCell<Documents::US25>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US25 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -1092,22 +556,6 @@ mod module_2555ccf7 {
             US26_0(std::process::Output),
             US26_1(std::string::String),
         }
-        impl Documents::US26 {
-            pub fn get_IsUS26_0(this_: &MutCell<Documents::US26>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS26_1(this_: &MutCell<Documents::US26>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US26 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1117,22 +565,6 @@ mod module_2555ccf7 {
         pub enum US27 {
             US27_0(i32),
             US27_1,
-        }
-        impl Documents::US27 {
-            pub fn get_IsUS27_0(this_: &MutCell<Documents::US27>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS27_1(this_: &MutCell<Documents::US27>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US27 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -1144,22 +576,6 @@ mod module_2555ccf7 {
             US28_0(Func1<(i32, string, bool), Arc<Async<()>>>),
             US28_1,
         }
-        impl Documents::US28 {
-            pub fn get_IsUS28_0(this_: &MutCell<Documents::US28>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS28_1(this_: &MutCell<Documents::US28>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US28 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1170,22 +586,6 @@ mod module_2555ccf7 {
             US29_0(CancellationToken),
             US29_1,
         }
-        impl Documents::US29 {
-            pub fn get_IsUS29_0(this_: &MutCell<Documents::US29>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS29_1(this_: &MutCell<Documents::US29>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US29 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1195,22 +595,6 @@ mod module_2555ccf7 {
         pub enum US30 {
             US30_0(Result<string, LrcPtr<(string, string)>>),
             US30_1,
-        }
-        impl Documents::US30 {
-            pub fn get_IsUS30_0(this_: &MutCell<Documents::US30>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS30_1(this_: &MutCell<Documents::US30>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US30 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -1227,24 +611,6 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::UH5>,
             ),
         }
-        impl Documents::UH5 {
-            pub fn get_IsUH5_0(this_: LrcPtr<Documents::UH5>, unitArg: ()) -> bool {
-                if let Documents::UH5::UH5_0 = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUH5_1(this_: LrcPtr<Documents::UH5>, unitArg: ()) -> bool {
-                if let Documents::UH5::UH5_1(this__1_0, this__1_1, this__1_2, this__1_3) =
-                    this_.as_ref()
-                {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::UH5 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1254,22 +620,6 @@ mod module_2555ccf7 {
         pub enum UH4 {
             UH4_0,
             UH4_1(LrcPtr<Documents::UH5>, LrcPtr<Documents::UH4>),
-        }
-        impl Documents::UH4 {
-            pub fn get_IsUH4_0(this_: LrcPtr<Documents::UH4>, unitArg: ()) -> bool {
-                if let Documents::UH4::UH4_0 = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUH4_1(this_: LrcPtr<Documents::UH4>, unitArg: ()) -> bool {
-                if let Documents::UH4::UH4_1(this__1_0, this__1_1) = this_.as_ref() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::UH4 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -1281,22 +631,6 @@ mod module_2555ccf7 {
             US31_0(string),
             US31_1(std::string::String),
         }
-        impl Documents::US31 {
-            pub fn get_IsUS31_0(this_: &MutCell<Documents::US31>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS31_1(this_: &MutCell<Documents::US31>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-        }
         impl core::fmt::Display for Documents::US31 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
@@ -1306,22 +640,6 @@ mod module_2555ccf7 {
         pub enum US32 {
             US32_0(i32, string),
             US32_1(i32, string),
-        }
-        impl Documents::US32 {
-            pub fn get_IsUS32_0(this_: &MutCell<Documents::US32>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
-            pub fn get_IsUS32_1(this_: &MutCell<Documents::US32>, unitArg: ()) -> bool {
-                if unreachable!() {
-                    true
-                } else {
-                    false
-                }
-            }
         }
         impl core::fmt::Display for Documents::US32 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
@@ -13987,7 +13305,7 @@ mod module_2555ccf7 {
             >,
         > {
             let v8: Documents::US7 = Documents::method23(
-                Documents::method20(string("polyglot"), string(".paket")),
+                Documents::method20(string("polyglot"), string(".devcontainer")),
                 string("C:\\home\\git\\polyglot\\target\\Builder\\documents"),
             );
             let v17: Documents::US3 = match &v8 {
@@ -14020,7 +13338,7 @@ mod module_2555ccf7 {
                 _ => {
                     let v20: string = Documents::method30();
                     let v22: Documents::US7 = Documents::method23(
-                        Documents::method20(string("polyglot"), string(".paket")),
+                        Documents::method20(string("polyglot"), string(".devcontainer")),
                         v20,
                     );
                     match &v22 {
