@@ -3,16 +3,6 @@ open file_system_operators
 open sm'_operators
 open rust_operators
 
-/// ## types
-inl types () =
-    am'.types ()
-    async.types ()
-    crypto.types ()
-    file_system.types ()
-    runtime.types ()
-    rust.types ()
-    sm'.types ()
-
 /// ## args
 inl get_args () =
     {
@@ -467,6 +457,5 @@ inl main (args : array_base string) =
     0i32
 
 inl main () =
-    types ()
     $'let tests () = !tests ()' : ()
     $'let main args = !main args' : ()

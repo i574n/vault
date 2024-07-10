@@ -20,21 +20,6 @@ open testing
 
 #!markdown
 
-## types
-
-#!spiral
-
-inl types () =
-    am'.types ()
-    async.types ()
-    crypto.types ()
-    file_system.types ()
-    runtime.types ()
-    rust.types ()
-    sm'.types ()
-
-#!markdown
-
 ## args
 
 #!spiral
@@ -471,7 +456,6 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 //// test
 ///! rust -d async-walkdir encoding_rs encoding_rs_io futures futures-lite rayon regex sha2 tokio['rt-multi-thread'] tokio-stream
 
-types ()
 inl workspace_root = file_system.get_workspace_root ()
 inl source_dir = workspace_root </> "../vault/target/documents"
 inl dist_dir = source_dir </> "dist"
@@ -669,6 +653,5 @@ inl main (args : array_base string) =
     0i32
 
 inl main () =
-    types ()
     $'let tests () = !tests ()' : ()
     $'let main args = !main args' : ()
