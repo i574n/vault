@@ -1,7 +1,8 @@
 /// # documents
 open file_system_operators
 open sm'_operators
-open rust_operators
+open rust.rust_operators
+open rust
 
 /// ## args
 inl get_args () =
@@ -403,13 +404,13 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 
 /// ## tests
 inl tests () =
-    rust.run_tests [
-        "verify_app", fun _ =>
+    testing.run_tests {
+        verify_app = fun (_ : string) =>
             get_command () |> runtime.command_debug_assert
-    ]
+    }
 
 /// ## main
-///! 
+///! _
 
 inl main (args : array_base string) =
     Info |> Some |> init_trace_state
