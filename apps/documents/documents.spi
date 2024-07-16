@@ -405,8 +405,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 /// ## tests
 inl tests () =
     testing.run_tests {
-        verify_app = fun (_ : string) =>
-            get_command () |> runtime.command_debug_assert
+        verify_app = get_command >> runtime.command_debug_assert
     }
 
 /// ## main

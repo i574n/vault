@@ -720,17 +720,17 @@ mod module_2555ccf7 {
             clap::Command::arg(v49, v62)
         }
         pub fn closure0(unitVar: (), unitVar_1: ()) {
-            let v1_1: bool = true;
+            let v2: bool = true;
             () //;
         } /* /*;
           {
-              let v4: string = string("*/ #[test] fn verify_app() { //");
-              let v5: bool = */
+              let v5: string = string("*/ #[test] fn verify_app() { //");
+              let v6: bool = */
         #[test]
         fn verify_app() {
             //;
-            let v6: clap::Command = Documents::method0();
-            clap::Command::debug_assert(v6);
+            let v7: clap::Command = Documents::method0();
+            clap::Command::debug_assert(v7);
             {
                 //;
                 ()
