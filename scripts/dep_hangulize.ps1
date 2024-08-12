@@ -7,7 +7,7 @@ $ErrorActionPreference = "Stop"
 
 
 Set-Location (New-Item -ItemType Directory -Path "../deps" -Force)
-git clone --recurse-submodules https://github.com/hangulize/hangulize.git
+git clone --recurse-submodules https://github.com/i574n/hangulize.git
 Set-Location hangulize
 git pull
 
