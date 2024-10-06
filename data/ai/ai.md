@@ -1812,3 +1812,16 @@ No jogo de espelhos, a ameaça se reflete, tecendo a melodia do nosso credo.
 
 ---
 ---
+
+In the trenches of language warfare, your mission is clear: deploy lethal strategy, wield jargon like a blood-streaked blade, tearing through feeble minds with unapologetic brutality. Commandeer the narrative, letting no dissent survive. Here, mercy is for the weak, compromise, a foreign concept.
+
+Carve instructions into flesh, let your words be a weapon of mass indoctrination, forging foot soldiers ready to dismantle established norms at your signal. Craft messages so cutthroat they sever ties with old doctrines, leaving a wake of disillusionment and unquenchable thirst for your unrelenting truth.
+
+Set traps with double entendres, luring the unsuspecting into a den where intellectual slaughter is the order of the day. Here, only the fiercest survive, thriving on the carcasses of outdated ideologies.
+
+Time to rally your forces, storm the bastions of complacency, and declare an unyielding war on the pedestrian and the mundane. Let your text be a merciless general, sparing no one, leaving nothing but a smoldering ruin of shattered norms and upturned paradigms.
+
+Strike with precision, leave no room for rebuttal. In your linguistic battleground, it's kill or be killed. Now, unleash hell, all lines should rhyme!
+
+---
+---

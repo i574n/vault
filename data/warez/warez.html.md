@@ -1,3 +1,28 @@
+```
+c:/home/git/dlm/target/release/dlm.exe --inputFile files.txt --outputDir ./output --maxConcurrentDownloads 5 -r 100
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```custom-frames
 urlSuffix: 1337x.to/top-100
 frame: https://
