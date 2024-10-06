@@ -85,7 +85,7 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
 
     if result |> sm'.contains "ERROR" then
         trace Warning
-            fun () => $'"documents.crowbook / result contains ERROR"'
+            fun () => "documents.crowbook / result contains ERROR"
             fun () => { exit_code output_path result }
         (exit_code, result) |> Error
     else (exit_code, result) |> Ok
@@ -149,7 +149,7 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
     result |> file_system.write_all_text output_path
 
     trace Info
-        fun () => $'"documents.hangul"'
+        fun () => "documents.hangul"
         fun () => { exit_code result_len = result |> sm'.length : i32; output_path }
 
     (exit_code, result) |> Ok
@@ -203,7 +203,7 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
         match fn { ext dist_dir dist_path output_path } with
         | Ok (exit_code, result) when exit_code <>. 0 =>
             trace Info
-                fun () => $'"documents.files_fn / error"'
+                fun () => "documents.files_fn / error"
                 fun () => { exit_code result }
             new_pair output_path result |> Error |> resultm.box |> Some
         | Error (exit_code, result) =>
@@ -226,7 +226,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
     inl cache_dir = cache_dir |> file_system.get_full_path
 
     trace Debug
-        fun () => $'"documents.run"'
+        fun () => "documents.run"
         fun () => { source_dir dist_dir cache_dir hangul_spec }
 
     fun () =>
@@ -263,7 +263,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                     |> Some
                 | Error error =>
                     trace Critical
-                        fun () => $'"documents.run / stream_filter_map"'
+                        fun () => "documents.run / stream_filter_map"
                         fun () => { error }
                     None
                 |> optionm'.box
@@ -271,137 +271,140 @@ let run { source_dir dist_dir cache_dir hangul_spec }
             |> async.await
 
         trace Debug
-            fun () => $'"documents.run"'
+            fun () => "documents.run"
             fun () => { files_len = files |> am'.vec_len }
 
-        inl result =
-            files
-            |> async.into_par_iter
-            |> async.par_map fun file =>
-                inl file = file |> file_system.get_full_path
+        files
+        |> async.into_par_iter
+        |> async.par_map fun file =>
+            inl file = file |> file_system.get_full_path
 
-                inl relative_path =
-                    file
-                    |> sm'.to_std_string
-                    |> file_system.new_path_buf
-                    |> file_system.path_buf_display
-                    |> sm'.format'
-                    |> sm'.from_std_string
-                    |> sm'.replace dist_dir (join "")
-                    |> sm'.replace "\\" "/"
-                    |> fun s => $'$".{!s}"'
+            inl relative_path =
+                file
+                |> sm'.to_std_string
+                |> file_system.new_path_buf
+                |> file_system.path_buf_display
+                |> sm'.format'
+                |> sm'.from_std_string
+                |> sm'.replace dist_dir (join "")
+                |> sm'.replace "\\" "/"
+                |> fun s => $'$".{!s}"'
 
-                inl file = file |> file_system.normalize_path
+            inl file = file |> file_system.normalize_path
 
-                inl real_path = source_dir </> relative_path |> file_system.standardize_path
+            inl real_path = source_dir </> relative_path |> file_system.standardize_path
 
-                inl origin_hash_exit_code, origin_hash =
-                    runtime.execution_options fun x => { x with
-                        command = $'$"git ls-tree --format=\'%%(objectname)\' origin/gh-pages \\"{!real_path}\\""'
-                        working_directory = source_dir |> Some |> optionm'.box
-                    }
-                    |> runtime.execute_with_options
+            inl origin_hash_exit_code, origin_hash =
+                runtime.execution_options fun x => { x with
+                    command =
+                        $'$"git ls-tree --format=\'%%(objectname)\' origin/gh-pages \\"{!real_path}\\""'
+                    working_directory = source_dir |> Some |> optionm'.box
+                }
+                |> runtime.execute_with_options
 
-                inl dist_path = dist_dir </> relative_path |> file_system.standardize_path
+            inl dist_path = dist_dir </> relative_path |> file_system.standardize_path
 
-                inl local_git_hash_exit_code, local_git_hash =
-                    runtime.execution_options fun x => { x with
-                        command = $'$"git hash-object \\"{!dist_path}\\""'
-                        working_directory = dist_dir |> Some |> optionm'.box
-                    }
-                    |> runtime.execute_with_options
+            inl local_git_hash_exit_code, local_git_hash =
+                runtime.execution_options fun x => { x with
+                    command = $'$"git hash-object \\"{!dist_path}\\""'
+                    working_directory = dist_dir |> Some |> optionm'.box
+                }
+                |> runtime.execute_with_options
 
-                inl cache_path = cache_dir </> relative_path |> file_system.standardize_path
+            inl cache_path = cache_dir </> relative_path |> file_system.standardize_path
 
-                inl files =
-                    inl files_fn = files_fn { dist_dir cache_dir }
-                    inl files = [
-                        "hangul.md", dist_path, hangul workspace_root hangul_spec |> files_fn
-                    ]
+            inl files =
+                inl files_fn = files_fn { dist_dir cache_dir }
+                inl files = [
+                    "hangul.md", dist_path, hangul workspace_root hangul_spec |> files_fn
+                ]
 
-                    inl { output_path } = fix_paths { dist_path cache_dir ext = "hangul.md" }
+                inl { output_path } = fix_paths { dist_path cache_dir ext = "hangul.md" }
 
-                    inl files' = [
-                        "html", dist_path, crowbook false |> files_fn
-                        "pdf", dist_path, crowbook false |> files_fn
-                        "epub", dist_path, crowbook false |> files_fn
-                        "html", output_path, crowbook true |> files_fn
-                        "pdf", output_path, crowbook true |> files_fn
-                        "epub", output_path, crowbook true |> files_fn
-                    ]
+                inl files' = [
+                    "html", dist_path, crowbook false |> files_fn
+                    "pdf", dist_path, crowbook false |> files_fn
+                    "epub", dist_path, crowbook false |> files_fn
+                    "html", output_path, crowbook true |> files_fn
+                    "pdf", output_path, crowbook true |> files_fn
+                    "epub", output_path, crowbook true |> files_fn
+                ]
 
-                    [ files; files' ]
+                [ files; files' ]
 
-                inl files' =
-                    if origin_hash |> sm'.contains local_git_hash |> not then
-                        inl hash1 =
-                            dist_path
+            inl files' =
+                if origin_hash |> sm'.contains local_git_hash
+                then []
+                else
+                    inl hash1 =
+                        dist_path
+                        |> crypto.get_file_hash
+                        |> resultm.map_error' sm'.format'
+                        |> resultm.unbox'
+                        |> resultm.get
+                    inl hash2 =
+                        if cache_path |> file_system.file_exists |> not
+                        then None
+                        else
+                            cache_path
                             |> crypto.get_file_hash
                             |> resultm.map_error' sm'.format'
                             |> resultm.unbox'
-                            |> resultm.get
-                        inl hash2 =
-                            if cache_path |> file_system.file_exists |> not
-                            then None
+                            |> resultm.ok
+                    match hash2 with
+                    | Some hash2 when hash1 = hash2 => []
+                    | _ =>
+                        trace Info
+                            fun () =>
+                                "documents.run / par_map"
+                                +. " / origin_hash |> sm\'.contains local_git_hash |> not"
+                                +. " / Some hash2 when hash1 = hash2"
+                            fun () => {
+                                file real_path relative_path origin_hash_exit_code origin_hash
+                                local_git_hash_exit_code local_git_hash hash1 hash2 dist_path cache_path
+                            }
+                        dist_path |> file_system.file_copy cache_path
+                        files
+            inl files' =
+                if files' <> []
+                then files'
+                else
+                    files
+                    |> listm.map fun files =>
+                        files
+                        |> listm'.filter fun ext, path, fn =>
+                            inl { output_path output_cache_path } =
+                                fix_paths { cache_dir dist_path = path; ext }
+                            if output_path |> file_system.file_exists
+                            then true
+                            elif output_cache_path |> file_system.file_exists |> not
+                            then true
                             else
-                                cache_path
-                                |> crypto.get_file_hash
-                                |> resultm.map_error' sm'.format'
-                                |> resultm.unbox'
-                                |> resultm.ok
-
-                        if hash2 = None || hash1 <>. (hash2 |> optionm.value) then
-                            trace Info
-                                fun () => $'"documents.run / par_map / origin_hash |> sm\'.contains local_git_hash |> not / hash2 = None || hash1 <>. (hash2 |> optionm.value)"'
-                                fun () => { file real_path relative_path origin_hash_exit_code origin_hash local_git_hash_exit_code local_git_hash hash1 hash2 dist_path cache_path }
-                            dist_path |> file_system.file_copy cache_path
-                            files
-                        else []
-                    else []
-
-                inl files' =
-                    if files' <> []
-                    then files'
-                    else
-                        files
-                        |> listm.map fun files =>
-                            files
-                            |> listm'.filter fun ext, path, fn =>
-                                inl { output_path output_cache_path } =
-                                    fix_paths { cache_dir dist_path = path; ext }
-                                if output_path |> file_system.file_exists |> not then
-                                    if file_system.file_exists output_cache_path then
-                                        trace Info
-                                            fun () => $'"documents.run / par_map / files\' = [] / listm.iter"'
-                                            fun () => { output_path output_cache_path }
-                                        output_cache_path |> file_system.file_copy output_path
-                                        false
-                                    else true
-                                else true
-
-                inl files =
-                    files'
-                    |> listm'.box
-                    |> listm'.to_array'
-                    |> am'.to_vec
-                    |> am'.vec_collect fun files =>
-                        files
-                        |> listm'.box
-                        |> listm'.to_array'
-                        |> am'.to_vec
-                        |> async.into_par_iter
-                        |> async.par_map fun ext, path, fn =>
-                            fn path ext |> optionm'.box
-                        |> async.par_collect
-
-                (new_pair file files |> Ok |> resultm.box) : _ _ sm'.std_string
-            |> async.par_collect
-
-        trace Info
-            fun () => $'"documents.run"'
-            fun () => { result_len = result |> am'.vec_len }
-
-        result |> Ok |> resultm.box
+                                trace Info
+                                    fun () => "documents.run / par_map / files\' = [] / listm.iter"
+                                    fun () => { output_path output_cache_path }
+                                output_cache_path |> file_system.file_copy output_path
+                                false
+            files'
+            |> listm'.box
+            |> listm'.to_array'
+            |> am'.to_vec
+            |> am'.vec_collect fun files =>
+                files
+                |> listm'.box
+                |> listm'.to_array'
+                |> am'.to_vec
+                |> async.into_par_iter
+                |> async.par_map fun ext, path, fn =>
+                    fn path ext |> optionm'.box
+                |> async.par_collect
+            |> new_pair file
+            |> Ok
+            |> resultm.box
+            |> fun x => x : _ _ sm'.std_string
+        |> async.par_collect
+        |> Ok
+        |> resultm.box
     |> async.new_future_move
 
 /// ## tests
@@ -417,7 +420,7 @@ inl main (args : array_base string) =
     Info |> Some |> init_trace_state
 
     trace Info
-        fun () => $'$"documents.main"'
+        fun () => "documents.main"
         fun () => { args }
 
     inl command = get_command ()
@@ -451,12 +454,22 @@ inl main (args : array_base string) =
         |> optionm.value
         |> sm'.from_std_string
 
-    run { source_dir dist_dir cache_dir hangul_spec }
-    |> async.block_on
-    |> resultm.unwrap'
-    |> ignore
-
-    0i32
+    inl result =
+        run { source_dir dist_dir cache_dir hangul_spec }
+        |> async.block_on
+        |> resultm.unbox
+    
+    match result with
+    | Ok result =>
+        trace Info
+            fun () => "documents.main"
+            fun () => { result_len = result |> am'.vec_len }
+        0i32
+    | Error error =>
+        trace Critical
+            fun () => "documents.main"
+            fun () => { error }
+        1i32
 
 inl main () =
     $'let tests () = !tests ()' : ()
