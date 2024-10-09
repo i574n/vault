@@ -765,7 +765,7 @@ mod module_2555ccf7 {
             let v51: string = string("r#\"hangul-spec\"#");
             let v52: &'static str = r#"hangul-spec"#;
             let v54: clap::Arg = clap::Arg::new(v52);
-            let v56: clap::Arg = v54.short('s');
+            let v56: clap::Arg = v54.short('h');
             let v57: string = string("r#\"hangul-spec\"#");
             let v58: &'static str = r#"hangul-spec"#;
             let v60: clap::Arg = v56.long(v58);
@@ -10019,220 +10019,222 @@ mod module_2555ccf7 {
             let patternInput: (string, string) = Documents::method128(v5, v4.clone(), v0_1);
             let v7: string = patternInput.1.clone();
             let v6: string = patternInput.0.clone();
-            if (if if Documents::method132(v6.clone()) {
-                Documents::method132(v7.clone())
+            if if if Documents::method132(v6.clone()) == false {
+                true
             } else {
-                false
+                Documents::method132(v7.clone()) == false
             } {
-                let v11: string = Documents::method40(v6.clone());
-                let v13: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v11);
-                let v16: std::fs::File = v13.unwrap();
-                let v28: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v16);
-                let v30: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                    std::io::BufReader::new(v28);
-                let v32: bool = true;
-                let mut v30 = v30;
+                false
+            } else {
+                let v13: string = Documents::method40(v6.clone());
+                let v15: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v13);
+                let v18: std::fs::File = v15.unwrap();
+                let v30: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v18);
+                let v32: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                    std::io::BufReader::new(v30);
+                let v34: bool = true;
+                let mut v32 = v32;
                 let result: sha2::Sha256 = sha2::Digest::new();
                 {
-                    let v35: sha2::Sha256 = result;
-                    let v37: bool = true;
-                    let mut v35 = v35;
-                    let v38: usize = 0_i32 as usize;
-                    let v42: _ = [0_u8; 1024];
-                    let v44: bool = true;
+                    let v37: sha2::Sha256 = result;
+                    let v39: bool = true;
+                    let mut v37 = v37;
+                    let v40: usize = 0_i32 as usize;
+                    let v44: _ = [0_u8; 1024];
+                    let v46: bool = true;
                     loop {
                         // rust.loop;
-                        let v46: bool = true;
-                        let mut v42 = v42;
-                        let v48: Result<usize, std::io::Error> =
-                            std::io::Read::read(&mut v30, &mut v42);
-                        let v59: usize = v48.unwrap();
-                        if v59 == v38 {
-                            let v66: bool = true;
+                        let v48: bool = true;
+                        let mut v44 = v44;
+                        let v50: Result<usize, std::io::Error> =
+                            std::io::Read::read(&mut v32, &mut v44);
+                        let v61: usize = v50.unwrap();
+                        if v61 == v40 {
+                            let v68: bool = true;
                             break;
                             ()
                         }
                         {
-                            let v68: usize = v42.len();
-                            let v69: u8 = v68 as u8;
-                            let v72: usize = v59;
-                            let v85: &_ = if v72 == v68 {
-                                &v42[v38..]
+                            let v70: usize = v44.len();
+                            let v71: u8 = v70 as u8;
+                            let v74: usize = v61;
+                            let v87: &_ = if v74 == v70 {
+                                &v44[v40..]
                             } else {
-                                &v42[v38..v72]
+                                &v44[v40..v74]
                             };
-                            sha2::Digest::update(&mut v35, v85);
+                            sha2::Digest::update(&mut v37, v87);
                             {
-                                let v88: bool = true;
+                                let v90: bool = true;
                             } // rust.loop;
-                            let v90: bool = true;
+                            let v92: bool = true;
                         } // rust.loop;
-                        let v92: bool = true;
+                        let v94: bool = true;
                     } // rust.loop;
-                    let v94: bool = true;
+                    let v96: bool = true;
                     {
                         // rust.loop;
-                        let v96: bool = true;
+                        let v98: bool = true;
                         {
                             // rust.loop;
-                            let v98: &[u8] = &sha2::Digest::finalize(v35);
-                            let v100: Vec<u8> = v98.iter().map(|x| *x).collect::<Vec<_>>();
-                            let v102: bool = true;
-                            let _vec_map: Vec<_> = v100
+                            let v100: &[u8] = &sha2::Digest::finalize(v37);
+                            let v102: Vec<u8> = v100.iter().map(|x| *x).collect::<Vec<_>>();
+                            let v104: bool = true;
+                            let _vec_map: Vec<_> = v102
                                 .into_iter()
                                 .map(|x| {
                                     //;
-                                    let v104: u8 = x;
-                                    let v106: std::string::String = format!("{:02x}", v104);
-                                    let v108: string =
-                                        fable_library_rust::String_::fromString(v106);
-                                    let v110: bool = true;
-                                    v108
+                                    let v106: u8 = x;
+                                    let v108: std::string::String = format!("{:02x}", v106);
+                                    let v110: string =
+                                        fable_library_rust::String_::fromString(v108);
+                                    let v112: bool = true;
+                                    v110
                                 })
                                 .collect::<Vec<_>>();
-                            let v112: Vec<string> = _vec_map;
-                            let v114: Array<string> =
-                                fable_library_rust::NativeArray_::array_from(v112);
-                            let v115: LrcPtr<dyn IEnumerable_1<string>> = delay(Func0::new({
-                                let v114 = v114.clone();
+                            let v114: Vec<string> = _vec_map;
+                            let v116: Array<string> =
+                                fable_library_rust::NativeArray_::array_from(v114);
+                            let v117: LrcPtr<dyn IEnumerable_1<string>> = delay(Func0::new({
+                                let v116 = v116.clone();
                                 move || {
                                     map_1(
                                         Func1::new({
-                                            let v114 = v114.clone();
-                                            move |i: i32| v114[i].clone()
+                                            let v116 = v116.clone();
+                                            move |i: i32| v116[i].clone()
                                         }),
-                                        rangeNumeric(0_i32, 1_i32, count_2(v114.clone()) - 1_i32),
+                                        rangeNumeric(0_i32, 1_i32, count_2(v116.clone()) - 1_i32),
                                     )
                                 }
                             }));
-                            let v121: string = join(Documents::method129(), toArray_1(v115));
-                            let v125 = Documents::method53();
-                            let v128: Result<string, std::string::String> =
-                                Ok::<string, std::io::Error>(v121).map_err(|x| v125(x));
-                            let v139 = Documents::method130();
-                            let v140 = Documents::method131();
-                            let v142: Documents::US33 = match v128 {
-                                Ok(x) => v139(x),
-                                Err(e) => v140(e),
+                            let v123: string = join(Documents::method129(), toArray_1(v117));
+                            let v127 = Documents::method53();
+                            let v130: Result<string, std::string::String> =
+                                Ok::<string, std::io::Error>(v123).map_err(|x| v127(x));
+                            let v141 = Documents::method130();
+                            let v142 = Documents::method131();
+                            let v144: Documents::US33 = match v130 {
+                                Ok(x) => v141(x),
+                                Err(e) => v142(e),
                             };
-                            let v148: string = match &v142 {
-                                Documents::US33::US33_0(v142_0_0) => v142_0_0.clone(),
-                                Documents::US33::US33_1(v142_1_0) => panic!(
+                            let v150: string = match &v144 {
+                                Documents::US33::US33_0(v144_0_0) => v144_0_0.clone(),
+                                Documents::US33::US33_1(v144_1_0) => panic!(
                                     "{}",
                                     sprintf!(
                                         "resultm.get / Result value was Error: {}",
-                                        v142_1_0.clone()
+                                        v144_1_0.clone()
                                     ),
                                 ),
                             };
-                            let v149: string = Documents::method40(v7.clone());
-                            let v151: Result<std::fs::File, std::io::Error> =
-                                std::fs::File::open(&*v149);
-                            let v154: std::fs::File = v151.unwrap();
-                            let v166: std::io::BufReader<std::fs::File> =
-                                std::io::BufReader::new(v154);
-                            let v168: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                                std::io::BufReader::new(v166);
-                            let v170: bool = true;
-                            let mut v168 = v168;
+                            let v151: string = Documents::method40(v7.clone());
+                            let v153: Result<std::fs::File, std::io::Error> =
+                                std::fs::File::open(&*v151);
+                            let v156: std::fs::File = v153.unwrap();
+                            let v168: std::io::BufReader<std::fs::File> =
+                                std::io::BufReader::new(v156);
+                            let v170: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                                std::io::BufReader::new(v168);
+                            let v172: bool = true;
+                            let mut v170 = v170;
                             let result: sha2::Sha256 = sha2::Digest::new();
                             {
-                                let v173: sha2::Sha256 = result;
-                                let v175: bool = true;
-                                let mut v173 = v173;
-                                let v176: usize = 0_i32 as usize;
-                                let v180: _ = [0_u8; 1024];
-                                let v182: bool = true;
+                                let v175: sha2::Sha256 = result;
+                                let v177: bool = true;
+                                let mut v175 = v175;
+                                let v178: usize = 0_i32 as usize;
+                                let v182: _ = [0_u8; 1024];
+                                let v184: bool = true;
                                 loop {
                                     // rust.loop;
-                                    let v184: bool = true;
-                                    let mut v180 = v180;
-                                    let v186: Result<usize, std::io::Error> =
-                                        std::io::Read::read(&mut v168, &mut v180);
-                                    let v197: usize = v186.unwrap();
-                                    if v197 == v176 {
-                                        let v204: bool = true;
+                                    let v186: bool = true;
+                                    let mut v182 = v182;
+                                    let v188: Result<usize, std::io::Error> =
+                                        std::io::Read::read(&mut v170, &mut v182);
+                                    let v199: usize = v188.unwrap();
+                                    if v199 == v178 {
+                                        let v206: bool = true;
                                         break;
                                         ()
                                     }
                                     {
-                                        let v206: usize = v180.len();
-                                        let v207: u8 = v206 as u8;
-                                        let v210: usize = v197;
-                                        let v223: &_ = if v210 == v206 {
-                                            &v180[v176..]
+                                        let v208: usize = v182.len();
+                                        let v209: u8 = v208 as u8;
+                                        let v212: usize = v199;
+                                        let v225: &_ = if v212 == v208 {
+                                            &v182[v178..]
                                         } else {
-                                            &v180[v176..v210]
+                                            &v182[v178..v212]
                                         };
-                                        sha2::Digest::update(&mut v173, v223);
+                                        sha2::Digest::update(&mut v175, v225);
                                         {
-                                            let v226: bool = true;
+                                            let v228: bool = true;
                                         } // rust.loop;
-                                        let v228: bool = true;
+                                        let v230: bool = true;
                                     } // rust.loop;
-                                    let v230: bool = true;
+                                    let v232: bool = true;
                                 } // rust.loop;
-                                let v232: bool = true;
+                                let v234: bool = true;
                                 {
                                     // rust.loop;
-                                    let v234: bool = true;
+                                    let v236: bool = true;
                                     {
                                         // rust.loop;
-                                        let v236: &[u8] = &sha2::Digest::finalize(v173);
-                                        let v238: Vec<u8> =
-                                            v236.iter().map(|x| *x).collect::<Vec<_>>();
-                                        let v240: bool = true;
-                                        let _vec_map: Vec<_> = v238
+                                        let v238: &[u8] = &sha2::Digest::finalize(v175);
+                                        let v240: Vec<u8> =
+                                            v238.iter().map(|x| *x).collect::<Vec<_>>();
+                                        let v242: bool = true;
+                                        let _vec_map: Vec<_> = v240
                                             .into_iter()
                                             .map(|x| {
                                                 //;
-                                                let v242: u8 = x;
-                                                let v244: std::string::String =
-                                                    format!("{:02x}", v242);
-                                                let v246: string =
-                                                    fable_library_rust::String_::fromString(v244);
-                                                let v248: bool = true;
-                                                v246
+                                                let v244: u8 = x;
+                                                let v246: std::string::String =
+                                                    format!("{:02x}", v244);
+                                                let v248: string =
+                                                    fable_library_rust::String_::fromString(v246);
+                                                let v250: bool = true;
+                                                v248
                                             })
                                             .collect::<Vec<_>>();
-                                        let v250: Vec<string> = _vec_map;
-                                        let v252: Array<string> =
-                                            fable_library_rust::NativeArray_::array_from(v250);
-                                        let v253: LrcPtr<dyn IEnumerable_1<string>> =
+                                        let v252: Vec<string> = _vec_map;
+                                        let v254: Array<string> =
+                                            fable_library_rust::NativeArray_::array_from(v252);
+                                        let v255: LrcPtr<dyn IEnumerable_1<string>> =
                                             delay(Func0::new({
-                                                let v252 = v252.clone();
+                                                let v254 = v254.clone();
                                                 move || {
                                                     map_1(
                                                         Func1::new({
-                                                            let v252 = v252.clone();
-                                                            move |i_1: i32| v252[i_1].clone()
+                                                            let v254 = v254.clone();
+                                                            move |i_1: i32| v254[i_1].clone()
                                                         }),
                                                         rangeNumeric(
                                                             0_i32,
                                                             1_i32,
-                                                            count_2(v252.clone()) - 1_i32,
+                                                            count_2(v254.clone()) - 1_i32,
                                                         ),
                                                     )
                                                 }
                                             }));
-                                        let v259: string =
-                                            join(Documents::method129(), toArray_1(v253));
-                                        let v263 = Documents::method53();
-                                        let v266: Result<string, std::string::String> =
-                                            Ok::<string, std::io::Error>(v259).map_err(|x| v263(x));
-                                        let v277 = Documents::method130();
-                                        let v278 = Documents::method131();
-                                        let v280: Documents::US33 = match v266 {
-                                            Ok(x) => v277(x),
-                                            Err(e) => v278(e),
+                                        let v261: string =
+                                            join(Documents::method129(), toArray_1(v255));
+                                        let v265 = Documents::method53();
+                                        let v268: Result<string, std::string::String> =
+                                            Ok::<string, std::io::Error>(v261).map_err(|x| v265(x));
+                                        let v279 = Documents::method130();
+                                        let v280 = Documents::method131();
+                                        let v282: Documents::US33 = match v268 {
+                                            Ok(x) => v279(x),
+                                            Err(e) => v280(e),
                                         };
-                                        v148 == match &v280 {
-                                            Documents::US33::US33_0(v280_0_0) => v280_0_0.clone(),
-                                            Documents::US33::US33_1(v280_1_0) => panic!(
+                                        v150 == match &v282 {
+                                            Documents::US33::US33_0(v282_0_0) => v282_0_0.clone(),
+                                            Documents::US33::US33_1(v282_1_0) => panic!(
                                                 "{}",
                                                 sprintf!(
                                                     "resultm.get / Result value was Error: {}",
-                                                    v280_1_0.clone()
+                                                    v282_1_0.clone()
                                                 ),
                                             ),
                                         }
@@ -10242,22 +10244,21 @@ mod module_2555ccf7 {
                         }
                     }
                 }
+            } {
+                Documents::US32::US32_1
             } else {
-                false
-            }) == false
-            {
-                let v290: Documents::US35 = Documents::method141(v2, v3, v6.clone(), v4);
-                match &v290 {
-                    Documents::US35::US35_0(v290_0_0, v290_0_1) => {
-                        let v292: string = v290_0_1.clone();
-                        let v291: i32 = v290_0_0.clone();
-                        if v291 != 0_i32 {
-                            let v298: () = {
-                                Documents::closure77(v292.clone(), v291, ());
+                let v292: Documents::US35 = Documents::method141(v2, v3, v6.clone(), v4);
+                match &v292 {
+                    Documents::US35::US35_0(v292_0_0, v292_0_1) => {
+                        let v294: string = v292_0_1.clone();
+                        let v293: i32 = v292_0_0.clone();
+                        if v293 != 0_i32 {
+                            let v300: () = {
+                                Documents::closure77(v294.clone(), v293, ());
                                 ()
                             };
                             Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                                LrcPtr::new((v6.clone(), v292)),
+                                LrcPtr::new((v6.clone(), v294)),
                             ))
                         } else {
                             if Documents::method132(v6.clone()) {
@@ -10273,14 +10274,12 @@ mod module_2555ccf7 {
                             ))
                         }
                     }
-                    Documents::US35::US35_1(v290_1_0, v290_1_1) => {
+                    Documents::US35::US35_1(v292_1_0, v292_1_1) => {
                         Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                            LrcPtr::new((v6.clone(), v290_1_1.clone())),
+                            LrcPtr::new((v6.clone(), v292_1_1.clone())),
                         ))
                     }
                 }
-            } else {
-                Documents::US32::US32_1
             }
         }
         pub fn closure73(
@@ -10439,11 +10438,7 @@ mod module_2555ccf7 {
                         v2,
                         v1_1.clone(),
                         if string("html") == v4.clone() {
-                            let v7: string =
-                                                            string(" html.css.add \\\"\' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } \'\\\"");
-                            append(append(string("--set"),
-                                                                      v7),
-                                                               string(" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\""))
+                            string("--set html.css.add \\\"\'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
                         } else {
                             if string("pdf") == v4.clone() {
                                 append(append(string("--set tex.paper.size a4paper tex.template.add \"\\pagenumbering{gobble}\""),
@@ -10453,12 +10448,12 @@ mod module_2555ccf7 {
                                                                               {
                                                                                string("")
                                                                            } else {
-                                                                               string(" tex.template.add \"\\usepackage{polyglossia}\" tex.template.add \"\\setmainlanguage{korean}\" tex.template.add \"\\setmainfont{NanumGothicCoding}\" tex.font.size 12")
+                                                                               string(" tex.template.add \"\\usepackage{polyglossia}\" tex.template.add \"\\setmainlanguage{korean}\" tex.template.add \"\\setmainfont{NanumGothicCoding}\" tex.font.size 13")
                                                                            })),
                                                                    string(" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\""))
                             } else {
                                 if string("epub") == v4 {
-                                    string("--set epub.version 3 html.css.add \\\"\' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
+                                    string("--set epub.version 3 html.css.add \\\"\'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
                                 } else {
                                     string("")
                                 }
@@ -10473,16 +10468,16 @@ mod module_2555ccf7 {
                 true,
                 Some(v3),
             );
-            let v61: string = patternInput.1.clone();
-            let v60: i32 = patternInput.0.clone();
-            if contains(v61.clone(), string("ERROR")) {
-                let v68: () = {
-                    Documents::closure80(v1_1, v61.clone(), v60, ());
+            let v75: string = patternInput.1.clone();
+            let v74: i32 = patternInput.0.clone();
+            if contains(v75.clone(), string("ERROR")) == false {
+                Documents::US35::US35_0(v74, v75.clone())
+            } else {
+                let v84: () = {
+                    Documents::closure80(v1_1, v75.clone(), v74, ());
                     ()
                 };
-                Documents::US35::US35_1(v60, v61.clone())
-            } else {
-                Documents::US35::US35_0(v60, v61)
+                Documents::US35::US35_1(v74, v75)
             }
         }
         pub fn closure79(
@@ -10495,220 +10490,222 @@ mod module_2555ccf7 {
             let patternInput: (string, string) = Documents::method128(v4.clone(), v3.clone(), v0_1);
             let v6: string = patternInput.1.clone();
             let v5: string = patternInput.0.clone();
-            if (if if Documents::method132(v5.clone()) {
-                Documents::method132(v6.clone())
+            if if if Documents::method132(v5.clone()) == false {
+                true
             } else {
-                false
+                Documents::method132(v6.clone()) == false
             } {
-                let v10: string = Documents::method40(v5.clone());
-                let v12: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v10);
-                let v15: std::fs::File = v12.unwrap();
-                let v27: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v15);
-                let v29: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                    std::io::BufReader::new(v27);
-                let v31: bool = true;
-                let mut v29 = v29;
+                false
+            } else {
+                let v12: string = Documents::method40(v5.clone());
+                let v14: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v12);
+                let v17: std::fs::File = v14.unwrap();
+                let v29: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v17);
+                let v31: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                    std::io::BufReader::new(v29);
+                let v33: bool = true;
+                let mut v31 = v31;
                 let result: sha2::Sha256 = sha2::Digest::new();
                 {
-                    let v34: sha2::Sha256 = result;
-                    let v36: bool = true;
-                    let mut v34 = v34;
-                    let v37: usize = 0_i32 as usize;
-                    let v41: _ = [0_u8; 1024];
-                    let v43: bool = true;
+                    let v36: sha2::Sha256 = result;
+                    let v38: bool = true;
+                    let mut v36 = v36;
+                    let v39: usize = 0_i32 as usize;
+                    let v43: _ = [0_u8; 1024];
+                    let v45: bool = true;
                     loop {
                         // rust.loop;
-                        let v45: bool = true;
-                        let mut v41 = v41;
-                        let v47: Result<usize, std::io::Error> =
-                            std::io::Read::read(&mut v29, &mut v41);
-                        let v58: usize = v47.unwrap();
-                        if v58 == v37 {
-                            let v65: bool = true;
+                        let v47: bool = true;
+                        let mut v43 = v43;
+                        let v49: Result<usize, std::io::Error> =
+                            std::io::Read::read(&mut v31, &mut v43);
+                        let v60: usize = v49.unwrap();
+                        if v60 == v39 {
+                            let v67: bool = true;
                             break;
                             ()
                         }
                         {
-                            let v67: usize = v41.len();
-                            let v68: u8 = v67 as u8;
-                            let v71: usize = v58;
-                            let v84: &_ = if v71 == v67 {
-                                &v41[v37..]
+                            let v69: usize = v43.len();
+                            let v70: u8 = v69 as u8;
+                            let v73: usize = v60;
+                            let v86: &_ = if v73 == v69 {
+                                &v43[v39..]
                             } else {
-                                &v41[v37..v71]
+                                &v43[v39..v73]
                             };
-                            sha2::Digest::update(&mut v34, v84);
+                            sha2::Digest::update(&mut v36, v86);
                             {
-                                let v87: bool = true;
+                                let v89: bool = true;
                             } // rust.loop;
-                            let v89: bool = true;
+                            let v91: bool = true;
                         } // rust.loop;
-                        let v91: bool = true;
+                        let v93: bool = true;
                     } // rust.loop;
-                    let v93: bool = true;
+                    let v95: bool = true;
                     {
                         // rust.loop;
-                        let v95: bool = true;
+                        let v97: bool = true;
                         {
                             // rust.loop;
-                            let v97: &[u8] = &sha2::Digest::finalize(v34);
-                            let v99: Vec<u8> = v97.iter().map(|x| *x).collect::<Vec<_>>();
-                            let v101: bool = true;
-                            let _vec_map: Vec<_> = v99
+                            let v99: &[u8] = &sha2::Digest::finalize(v36);
+                            let v101: Vec<u8> = v99.iter().map(|x| *x).collect::<Vec<_>>();
+                            let v103: bool = true;
+                            let _vec_map: Vec<_> = v101
                                 .into_iter()
                                 .map(|x| {
                                     //;
-                                    let v103: u8 = x;
-                                    let v105: std::string::String = format!("{:02x}", v103);
-                                    let v107: string =
-                                        fable_library_rust::String_::fromString(v105);
-                                    let v109: bool = true;
-                                    v107
+                                    let v105: u8 = x;
+                                    let v107: std::string::String = format!("{:02x}", v105);
+                                    let v109: string =
+                                        fable_library_rust::String_::fromString(v107);
+                                    let v111: bool = true;
+                                    v109
                                 })
                                 .collect::<Vec<_>>();
-                            let v111: Vec<string> = _vec_map;
-                            let v113: Array<string> =
-                                fable_library_rust::NativeArray_::array_from(v111);
-                            let v114: LrcPtr<dyn IEnumerable_1<string>> = delay(Func0::new({
-                                let v113 = v113.clone();
+                            let v113: Vec<string> = _vec_map;
+                            let v115: Array<string> =
+                                fable_library_rust::NativeArray_::array_from(v113);
+                            let v116: LrcPtr<dyn IEnumerable_1<string>> = delay(Func0::new({
+                                let v115 = v115.clone();
                                 move || {
                                     map_1(
                                         Func1::new({
-                                            let v113 = v113.clone();
-                                            move |i: i32| v113[i].clone()
+                                            let v115 = v115.clone();
+                                            move |i: i32| v115[i].clone()
                                         }),
-                                        rangeNumeric(0_i32, 1_i32, count_2(v113.clone()) - 1_i32),
+                                        rangeNumeric(0_i32, 1_i32, count_2(v115.clone()) - 1_i32),
                                     )
                                 }
                             }));
-                            let v120: string = join(Documents::method129(), toArray_1(v114));
-                            let v124 = Documents::method53();
-                            let v127: Result<string, std::string::String> =
-                                Ok::<string, std::io::Error>(v120).map_err(|x| v124(x));
-                            let v138 = Documents::method130();
-                            let v139 = Documents::method131();
-                            let v141: Documents::US33 = match v127 {
-                                Ok(x) => v138(x),
-                                Err(e) => v139(e),
+                            let v122: string = join(Documents::method129(), toArray_1(v116));
+                            let v126 = Documents::method53();
+                            let v129: Result<string, std::string::String> =
+                                Ok::<string, std::io::Error>(v122).map_err(|x| v126(x));
+                            let v140 = Documents::method130();
+                            let v141 = Documents::method131();
+                            let v143: Documents::US33 = match v129 {
+                                Ok(x) => v140(x),
+                                Err(e) => v141(e),
                             };
-                            let v147: string = match &v141 {
-                                Documents::US33::US33_0(v141_0_0) => v141_0_0.clone(),
-                                Documents::US33::US33_1(v141_1_0) => panic!(
+                            let v149: string = match &v143 {
+                                Documents::US33::US33_0(v143_0_0) => v143_0_0.clone(),
+                                Documents::US33::US33_1(v143_1_0) => panic!(
                                     "{}",
                                     sprintf!(
                                         "resultm.get / Result value was Error: {}",
-                                        v141_1_0.clone()
+                                        v143_1_0.clone()
                                     ),
                                 ),
                             };
-                            let v148: string = Documents::method40(v6.clone());
-                            let v150: Result<std::fs::File, std::io::Error> =
-                                std::fs::File::open(&*v148);
-                            let v153: std::fs::File = v150.unwrap();
-                            let v165: std::io::BufReader<std::fs::File> =
-                                std::io::BufReader::new(v153);
-                            let v167: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                                std::io::BufReader::new(v165);
-                            let v169: bool = true;
-                            let mut v167 = v167;
+                            let v150: string = Documents::method40(v6.clone());
+                            let v152: Result<std::fs::File, std::io::Error> =
+                                std::fs::File::open(&*v150);
+                            let v155: std::fs::File = v152.unwrap();
+                            let v167: std::io::BufReader<std::fs::File> =
+                                std::io::BufReader::new(v155);
+                            let v169: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                                std::io::BufReader::new(v167);
+                            let v171: bool = true;
+                            let mut v169 = v169;
                             let result: sha2::Sha256 = sha2::Digest::new();
                             {
-                                let v172: sha2::Sha256 = result;
-                                let v174: bool = true;
-                                let mut v172 = v172;
-                                let v175: usize = 0_i32 as usize;
-                                let v179: _ = [0_u8; 1024];
-                                let v181: bool = true;
+                                let v174: sha2::Sha256 = result;
+                                let v176: bool = true;
+                                let mut v174 = v174;
+                                let v177: usize = 0_i32 as usize;
+                                let v181: _ = [0_u8; 1024];
+                                let v183: bool = true;
                                 loop {
                                     // rust.loop;
-                                    let v183: bool = true;
-                                    let mut v179 = v179;
-                                    let v185: Result<usize, std::io::Error> =
-                                        std::io::Read::read(&mut v167, &mut v179);
-                                    let v196: usize = v185.unwrap();
-                                    if v196 == v175 {
-                                        let v203: bool = true;
+                                    let v185: bool = true;
+                                    let mut v181 = v181;
+                                    let v187: Result<usize, std::io::Error> =
+                                        std::io::Read::read(&mut v169, &mut v181);
+                                    let v198: usize = v187.unwrap();
+                                    if v198 == v177 {
+                                        let v205: bool = true;
                                         break;
                                         ()
                                     }
                                     {
-                                        let v205: usize = v179.len();
-                                        let v206: u8 = v205 as u8;
-                                        let v209: usize = v196;
-                                        let v222: &_ = if v209 == v205 {
-                                            &v179[v175..]
+                                        let v207: usize = v181.len();
+                                        let v208: u8 = v207 as u8;
+                                        let v211: usize = v198;
+                                        let v224: &_ = if v211 == v207 {
+                                            &v181[v177..]
                                         } else {
-                                            &v179[v175..v209]
+                                            &v181[v177..v211]
                                         };
-                                        sha2::Digest::update(&mut v172, v222);
+                                        sha2::Digest::update(&mut v174, v224);
                                         {
-                                            let v225: bool = true;
+                                            let v227: bool = true;
                                         } // rust.loop;
-                                        let v227: bool = true;
+                                        let v229: bool = true;
                                     } // rust.loop;
-                                    let v229: bool = true;
+                                    let v231: bool = true;
                                 } // rust.loop;
-                                let v231: bool = true;
+                                let v233: bool = true;
                                 {
                                     // rust.loop;
-                                    let v233: bool = true;
+                                    let v235: bool = true;
                                     {
                                         // rust.loop;
-                                        let v235: &[u8] = &sha2::Digest::finalize(v172);
-                                        let v237: Vec<u8> =
-                                            v235.iter().map(|x| *x).collect::<Vec<_>>();
-                                        let v239: bool = true;
-                                        let _vec_map: Vec<_> = v237
+                                        let v237: &[u8] = &sha2::Digest::finalize(v174);
+                                        let v239: Vec<u8> =
+                                            v237.iter().map(|x| *x).collect::<Vec<_>>();
+                                        let v241: bool = true;
+                                        let _vec_map: Vec<_> = v239
                                             .into_iter()
                                             .map(|x| {
                                                 //;
-                                                let v241: u8 = x;
-                                                let v243: std::string::String =
-                                                    format!("{:02x}", v241);
-                                                let v245: string =
-                                                    fable_library_rust::String_::fromString(v243);
-                                                let v247: bool = true;
-                                                v245
+                                                let v243: u8 = x;
+                                                let v245: std::string::String =
+                                                    format!("{:02x}", v243);
+                                                let v247: string =
+                                                    fable_library_rust::String_::fromString(v245);
+                                                let v249: bool = true;
+                                                v247
                                             })
                                             .collect::<Vec<_>>();
-                                        let v249: Vec<string> = _vec_map;
-                                        let v251: Array<string> =
-                                            fable_library_rust::NativeArray_::array_from(v249);
-                                        let v252: LrcPtr<dyn IEnumerable_1<string>> =
+                                        let v251: Vec<string> = _vec_map;
+                                        let v253: Array<string> =
+                                            fable_library_rust::NativeArray_::array_from(v251);
+                                        let v254: LrcPtr<dyn IEnumerable_1<string>> =
                                             delay(Func0::new({
-                                                let v251 = v251.clone();
+                                                let v253 = v253.clone();
                                                 move || {
                                                     map_1(
                                                         Func1::new({
-                                                            let v251 = v251.clone();
-                                                            move |i_1: i32| v251[i_1].clone()
+                                                            let v253 = v253.clone();
+                                                            move |i_1: i32| v253[i_1].clone()
                                                         }),
                                                         rangeNumeric(
                                                             0_i32,
                                                             1_i32,
-                                                            count_2(v251.clone()) - 1_i32,
+                                                            count_2(v253.clone()) - 1_i32,
                                                         ),
                                                     )
                                                 }
                                             }));
-                                        let v258: string =
-                                            join(Documents::method129(), toArray_1(v252));
-                                        let v262 = Documents::method53();
-                                        let v265: Result<string, std::string::String> =
-                                            Ok::<string, std::io::Error>(v258).map_err(|x| v262(x));
-                                        let v276 = Documents::method130();
-                                        let v277 = Documents::method131();
-                                        let v279: Documents::US33 = match v265 {
-                                            Ok(x) => v276(x),
-                                            Err(e) => v277(e),
+                                        let v260: string =
+                                            join(Documents::method129(), toArray_1(v254));
+                                        let v264 = Documents::method53();
+                                        let v267: Result<string, std::string::String> =
+                                            Ok::<string, std::io::Error>(v260).map_err(|x| v264(x));
+                                        let v278 = Documents::method130();
+                                        let v279 = Documents::method131();
+                                        let v281: Documents::US33 = match v267 {
+                                            Ok(x) => v278(x),
+                                            Err(e) => v279(e),
                                         };
-                                        v147 == match &v279 {
-                                            Documents::US33::US33_0(v279_0_0) => v279_0_0.clone(),
-                                            Documents::US33::US33_1(v279_1_0) => panic!(
+                                        v149 == match &v281 {
+                                            Documents::US33::US33_0(v281_0_0) => v281_0_0.clone(),
+                                            Documents::US33::US33_1(v281_1_0) => panic!(
                                                 "{}",
                                                 sprintf!(
                                                     "resultm.get / Result value was Error: {}",
-                                                    v279_1_0.clone()
+                                                    v281_1_0.clone()
                                                 ),
                                             ),
                                         }
@@ -10718,22 +10715,21 @@ mod module_2555ccf7 {
                         }
                     }
                 }
+            } {
+                Documents::US32::US32_1
             } else {
-                false
-            }) == false
-            {
-                let v289: Documents::US35 = Documents::method152(v2, v5.clone(), v3, v1_1, v4);
-                match &v289 {
-                    Documents::US35::US35_0(v289_0_0, v289_0_1) => {
-                        let v291: string = v289_0_1.clone();
-                        let v290: i32 = v289_0_0.clone();
-                        if v290 != 0_i32 {
-                            let v297: () = {
-                                Documents::closure77(v291.clone(), v290, ());
+                let v291: Documents::US35 = Documents::method152(v2, v5.clone(), v3, v1_1, v4);
+                match &v291 {
+                    Documents::US35::US35_0(v291_0_0, v291_0_1) => {
+                        let v293: string = v291_0_1.clone();
+                        let v292: i32 = v291_0_0.clone();
+                        if v292 != 0_i32 {
+                            let v299: () = {
+                                Documents::closure77(v293.clone(), v292, ());
                                 ()
                             };
                             Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                                LrcPtr::new((v5.clone(), v291)),
+                                LrcPtr::new((v5.clone(), v293)),
                             ))
                         } else {
                             if Documents::method132(v5.clone()) {
@@ -10749,14 +10745,12 @@ mod module_2555ccf7 {
                             ))
                         }
                     }
-                    Documents::US35::US35_1(v289_1_0, v289_1_1) => {
+                    Documents::US35::US35_1(v291_1_0, v291_1_1) => {
                         Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                            LrcPtr::new((v5.clone(), v289_1_1.clone())),
+                            LrcPtr::new((v5.clone(), v291_1_1.clone())),
                         ))
                     }
                 }
-            } else {
-                Documents::US32::US32_1
             }
         }
         pub fn closure78(

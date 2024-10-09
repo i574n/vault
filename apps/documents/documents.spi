@@ -7,39 +7,27 @@ open rust
 /// ## args
 inl get_args () =
     {
-        source_dir = "source-dir"
-        dist_dir = "dist-dir"
-        cache_dir = "cache-dir"
-        hangul_spec = "hangul-spec"
+        source_dir = "source-dir", 's'
+        dist_dir = "dist-dir", 'd'
+        cache_dir = "cache-dir", 'c'
+        hangul_spec = "hangul-spec", 'h'
     }
 
 /// ## get_command
 let get_command () =
     ##"command"
     |> runtime.new_command
-    |> runtime.command_arg (
-        runtime.new_arg ##(get_args () .source_dir)
-        |> runtime.arg_short 's'
-        |> runtime.arg_long ##(get_args () .source_dir)
-        |> runtime.arg_required true
+    |> runtime.command_init_arg (get_args () .source_dir) (
+        runtime.arg_required true
     )
-    |> runtime.command_arg (
-        runtime.new_arg ##(get_args () .dist_dir)
-        |> runtime.arg_short 'd'
-        |> runtime.arg_long ##(get_args () .dist_dir)
-        |> runtime.arg_required true
+    |> runtime.command_init_arg (get_args () .dist_dir) (
+        runtime.arg_required true
     )
-    |> runtime.command_arg (
-        runtime.new_arg ##(get_args () .cache_dir)
-        |> runtime.arg_short 'c'
-        |> runtime.arg_long ##(get_args () .cache_dir)
-        |> runtime.arg_required true
+    |> runtime.command_init_arg (get_args () .cache_dir) (
+        runtime.arg_required true
     )
-    |> runtime.command_arg (
-        runtime.new_arg ##(get_args () .hangul_spec)
-        |> runtime.arg_short 's'
-        |> runtime.arg_long ##(get_args () .hangul_spec)
-        |> runtime.arg_required true
+    |> runtime.command_init_arg (get_args () .hangul_spec) (
+        runtime.arg_required true
     )
 
 /// ## crowbook
@@ -52,7 +40,11 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
             match ext with
             | "html" =>
                 $'$"--set"'
-                +. $'$" html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} pre {{ background-color: #1b1b1b; padding: 10px; }} \'\\\\\\""'
+                +. $'$" html.css.add \\\\\\"\' "'
+                +. $'$" body {{ color: #e8e6e3; background-color: #202324; }} "'
+                +. $'$" a {{ color: #989693; }} "'
+                +. $'$" pre {{ background-color: #1b1b1b; padding: 10px; }} "'
+                +. $'$"  \'\\\\\\""'
                 +. default ext
             | "pdf" =>
                 $'$"--set"'
@@ -66,13 +58,16 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
                         $'$" tex.template.add \\\"\\\\usepackage{{polyglossia}}\\\""'
                         +. $'$" tex.template.add \\\"\\\\setmainlanguage{{korean}}\\\""'
                         +. $'$" tex.template.add \\\"\\\\setmainfont{{NanumGothicCoding}}\\\""'
-                        +. $'$" tex.font.size 12"'
+                        +. $'$" tex.font.size 13"'
                 )
                 +. default ext
             | "epub" =>
                 $'$"--set"'
                 +. $'$" epub.version 3"'
-                +. $'$" html.css.add \\\\\\"\' body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} \'\\\\\\""'
+                +. $'$" html.css.add \\\\\\"\' "'
+                +. $'$" body {{ color: #e8e6e3; background-color: #202324; }} "'
+                +. $'$" a {{ color: #989693; }} "'
+                +. $'$" \'\\\\\\""'
                 +. default ext
             | _ => ""
         runtime.execution_options fun x => { x with
@@ -83,12 +78,13 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
         }
         |> runtime.execute_with_options
 
-    if result |> sm'.contains "ERROR" then
+    if result |> sm'.contains "ERROR" |> not
+    then (exit_code, result) |> Ok
+    else
         trace Warning
             fun () => "documents.crowbook / result contains ERROR"
             fun () => { exit_code output_path result }
         (exit_code, result) |> Error
-    else (exit_code, result) |> Ok
 
 /// ## hangul
 let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
@@ -96,7 +92,7 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
         dist_path
         |> file_system.read_all_text
         |> sm'.split "\n"
-        |> fun x => a x : _ i32 _
+        |> fun x => a x : _ int _
         |> am.map sm'.trim
     inl text =
         lines
@@ -104,7 +100,6 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
         |> seq.of_array'
         |> sm'.concat "\n"
         |> fun x => $'$"{!x}\n\n"'
-
     inl exit_code, result =
         runtime.execution_options fun x => { x with
             command =
@@ -121,15 +116,14 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
                 |> Some |> optionm'.box
         }
         |> runtime.execute_with_options
-
-    inl result : string =
+    inl result =
         inl result =
             result
             |> sm'.split "\n"
-            |> fun x => a x : _ i32 _
+            |> fun x => a x : _ int _
         inl result_len = result |> am'.length
 
-        (("", (0i32, 0i32)), lines)
+        (("", (0, 0)), lines)
         ||> am.fold fun (acc, (i, n)) x =>
             if x = ""
             then $'$"{!acc}\n"', (i + 1, n + 1)
@@ -145,15 +139,12 @@ let hangul workspace_root hangul_spec { ext dist_dir dist_path output_path } =
                         else $'$"{!acc}{!line}\n"'
                 acc, (i + 1, n)
         |> fst
-
     result |> file_system.write_all_text output_path
-
     trace Info
         fun () => "documents.hangul"
-        fun () => { exit_code result_len = result |> sm'.length : i32; output_path }
-
+        fun () => { exit_code result_len = result |> sm'.length : int; output_path }
     (exit_code, result) |> Ok
-    |> fun x => x : result (i32 * string) (i32 * string)
+    |> fun x => x : result (int * string) (int * string)
 
 /// ## fix_paths
 let fix_paths { cache_dir dist_path ext } =
@@ -165,7 +156,6 @@ let fix_paths { cache_dir dist_path ext } =
     inl cache_path_no_ext =
         cache_path
         |> sm'.slice 0 ((cache_path |> sm'.last_index_of ".") - 1)
-
     inl is_md = ext |> sm'.ends_with ".md"
     inl output_path : string =
         if is_md |> not
@@ -181,8 +171,10 @@ let fix_paths { cache_dir dist_path ext } =
 inl files_fn { dist_dir cache_dir } fn dist_path ext =
     inl { output_path output_cache_path } = fix_paths { cache_dir dist_path ext }
     inl equal =
-        if file_system.file_exists output_path
-            && file_system.file_exists output_cache_path then
+        if (output_path |> file_system.file_exists |> not)
+            || (output_cache_path |> file_system.file_exists |> not)
+        then false
+        else
             inl output_hash =
                 output_path
                 |> crypto.get_file_hash
@@ -196,10 +188,9 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
                 |> resultm.unbox'
                 |> resultm.get
             output_hash = output_cache_hash
-        else false
-
-    if not equal
-    then
+    if equal
+    then None
+    else
         match fn { ext dist_dir dist_path output_path } with
         | Ok (exit_code, result) when exit_code <>. 0 =>
             trace Info
@@ -213,7 +204,6 @@ inl files_fn { dist_dir cache_dir } fn dist_path ext =
             then output_path |> file_system.file_copy output_cache_path
             else failwith $'$"documents.files_fn / {!output_path} should exist"'
             output_path |> Ok |> resultm.box |> Some
-    else None
 
 /// ## run
 let run { source_dir dist_dir cache_dir hangul_spec }
@@ -401,7 +391,6 @@ let run { source_dir dist_dir cache_dir hangul_spec }
             |> new_pair file
             |> Ok
             |> resultm.box
-            |> fun x => x : _ _ sm'.std_string
         |> async.par_collect
         |> Ok
         |> resultm.box
@@ -428,28 +417,28 @@ inl main (args : array_base string) =
 
     inl source_dir =
         arg_matches
-        |> runtime.matches_get_one (get_args () .source_dir)
+        |> runtime.matches_get_one (get_args () .source_dir |> fst)
         |> optionm'.unbox
         |> optionm.value
         |> sm'.from_std_string
 
     inl dist_dir =
         arg_matches
-        |> runtime.matches_get_one (get_args () .dist_dir)
+        |> runtime.matches_get_one (get_args () .dist_dir |> fst)
         |> optionm'.unbox
         |> optionm.value
         |> sm'.from_std_string
 
     inl cache_dir =
         arg_matches
-        |> runtime.matches_get_one (get_args () .cache_dir)
+        |> runtime.matches_get_one (get_args () .cache_dir |> fst)
         |> optionm'.unbox
         |> optionm.value
         |> sm'.from_std_string
 
     inl hangul_spec =
         arg_matches
-        |> runtime.matches_get_one (get_args () .hangul_spec)
+        |> runtime.matches_get_one (get_args () .hangul_spec |> fst)
         |> optionm'.unbox
         |> optionm.value
         |> sm'.from_std_string
