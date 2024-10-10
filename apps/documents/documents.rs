@@ -10441,7 +10441,7 @@ mod module_2555ccf7 {
                         v2,
                         v1_1.clone(),
                         if string("html") == v4.clone() {
-                            string("--set html.css.add \\\"\'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
+                            string("--set html.css.add \\\"\' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
                         } else {
                             if string("pdf") == v4.clone() {
                                 append(append(string("--set tex.paper.size a4paper tex.template.add \"\\pagenumbering{gobble}\""),

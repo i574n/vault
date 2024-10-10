@@ -35563,15 +35563,15 @@ and method153 (v0 : bool, v1 : string, v2 : string, v3 : string, v4 : string) : 
     let v61 : string =
         if v5 then
             let v6 : string = $"--set"
-            let v7 : string = $" html.css.add \\\"' "
+            let v7 : string = $" html.css.add \\\"'"
             let v8 : string = v6 + v7 
-            let v9 : string = $" body {{ color: #e8e6e3; background-color: #202324; }} "
+            let v9 : string = $" body {{ color: #e8e6e3; background-color: #202324; }}"
             let v10 : string = v8 + v9 
-            let v11 : string = $" a {{ color: #989693; }} "
+            let v11 : string = $" a {{ color: #989693; }}"
             let v12 : string = v10 + v11 
-            let v13 : string = $" pre {{ background-color: #1b1b1b; padding: 10px; }} "
+            let v13 : string = $" pre {{ background-color: #1b1b1b; padding: 10px; }}"
             let v14 : string = v12 + v13 
-            let v15 : string = $"  '\\\""
+            let v15 : string = $" '\\\""
             let v16 : string = v14 + v15 
             let v17 : string = $" rendering.num_depth 6"
             let v18 : string = $" rendering.highlight.theme \\\"Solarized (dark)\\\""

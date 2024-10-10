@@ -40,11 +40,11 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
             match ext with
             | "html" =>
                 $'$"--set"'
-                +. $'$" html.css.add \\\\\\"\' "'
-                +. $'$" body {{ color: #e8e6e3; background-color: #202324; }} "'
-                +. $'$" a {{ color: #989693; }} "'
-                +. $'$" pre {{ background-color: #1b1b1b; padding: 10px; }} "'
-                +. $'$"  \'\\\\\\""'
+                +. $'$" html.css.add \\\\\\"\'"'
+                +. $'$" body {{ color: #e8e6e3; background-color: #202324; }}"'
+                +. $'$" a {{ color: #989693; }}"'
+                +. $'$" pre {{ background-color: #1b1b1b; padding: 10px; }}"'
+                +. $'$" \'\\\\\\""'
                 +. default ext
             | "pdf" =>
                 $'$"--set"'
