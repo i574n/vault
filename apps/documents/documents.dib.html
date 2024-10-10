@@ -7589,10 +7589,10 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inl</span> <span class="n">get_args</span> <span class="p">()</span> <span class="o">=</span>
     <span class="p">{</span>
-        <span class="n">source_dir</span> <span class="o">=</span> <span class="s2">"source-dir"</span>
-        <span class="n">dist_dir</span> <span class="o">=</span> <span class="s2">"dist-dir"</span>
-        <span class="n">cache_dir</span> <span class="o">=</span> <span class="s2">"cache-dir"</span>
-        <span class="n">hangul_spec</span> <span class="o">=</span> <span class="s2">"hangul-spec"</span>
+        <span class="n">source_dir</span> <span class="o">=</span> <span class="s2">"source-dir"</span><span class="p">,</span> <span class="s1">'s'</span>
+        <span class="n">dist_dir</span> <span class="o">=</span> <span class="s2">"dist-dir"</span><span class="p">,</span> <span class="s1">'d'</span>
+        <span class="n">cache_dir</span> <span class="o">=</span> <span class="s2">"cache-dir"</span><span class="p">,</span> <span class="s1">'c'</span>
+        <span class="n">hangul_spec</span> <span class="o">=</span> <span class="s2">"hangul-spec"</span><span class="p">,</span> <span class="s1">'h'</span>
     <span class="p">}</span>
 </pre></div>
 </div>
@@ -7621,29 +7621,17 @@ a.anchor-link {
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">get_command</span> <span class="p">()</span> <span class="o">=</span>
     <span class="c1">##"command"</span>
     <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">new_command</span>
-    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_arg</span> <span class="p">(</span>
-        <span class="n">runtime</span><span class="o">.</span><span class="n">new_arg</span> <span class="c1">##(get_args () .source_dir)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_short</span> <span class="s1">'s'</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_long</span> <span class="c1">##(get_args () .source_dir)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
+    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_init_arg</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">source_dir</span><span class="p">)</span> <span class="p">(</span>
+        <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
     <span class="p">)</span>
-    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_arg</span> <span class="p">(</span>
-        <span class="n">runtime</span><span class="o">.</span><span class="n">new_arg</span> <span class="c1">##(get_args () .dist_dir)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_short</span> <span class="s1">'d'</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_long</span> <span class="c1">##(get_args () .dist_dir)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
+    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_init_arg</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">dist_dir</span><span class="p">)</span> <span class="p">(</span>
+        <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
     <span class="p">)</span>
-    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_arg</span> <span class="p">(</span>
-        <span class="n">runtime</span><span class="o">.</span><span class="n">new_arg</span> <span class="c1">##(get_args () .cache_dir)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_short</span> <span class="s1">'c'</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_long</span> <span class="c1">##(get_args () .cache_dir)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
+    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_init_arg</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">cache_dir</span><span class="p">)</span> <span class="p">(</span>
+        <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
     <span class="p">)</span>
-    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_arg</span> <span class="p">(</span>
-        <span class="n">runtime</span><span class="o">.</span><span class="n">new_arg</span> <span class="c1">##(get_args () .hangul_spec)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_short</span> <span class="s1">'s'</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_long</span> <span class="c1">##(get_args () .hangul_spec)</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
+    <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">command_init_arg</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">hangul_spec</span><span class="p">)</span> <span class="p">(</span>
+        <span class="n">runtime</span><span class="o">.</span><span class="n">arg_required</span> <span class="n">true</span>
     <span class="p">)</span>
 </pre></div>
 </div>
@@ -7678,13 +7666,16 @@ a.anchor-link {
             <span class="k">match</span> <span class="n">ext</span> <span class="k">with</span>
             <span class="o">|</span> <span class="s2">"html"</span> <span class="o">=&gt;</span>
                 <span class="err">$</span><span class="s1">'$"--set"'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" html.css.add </span><span class="se">\\\\\\</span><span class="s1">"</span><span class="se">\'</span><span class="s1"> body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} pre {{ background-color: #1b1b1b; padding: 10px; }} </span><span class="se">\'\\\\\\</span><span class="s1">""'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" html.css.add </span><span class="se">\\\\\\</span><span class="s1">"</span><span class="se">\'</span><span class="s1"> "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" body {{ color: #e8e6e3; background-color: #202324; }} "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" a {{ color: #989693; }} "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" pre {{ background-color: #1b1b1b; padding: 10px; }} "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$"  </span><span class="se">\'\\\\\\</span><span class="s1">""'</span>
                 <span class="o">+.</span> <span class="n">default</span> <span class="n">ext</span>
             <span class="o">|</span> <span class="s2">"pdf"</span> <span class="o">=&gt;</span>
                 <span class="err">$</span><span class="s1">'$"--set"'</span>
                 <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.paper.size a4paper"'</span>
                 <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.template.add </span><span class="se">\\\"\\\\</span><span class="s1">pagenumbering{{gobble}}</span><span class="se">\\\"</span><span class="s1">"'</span>
-                <span class="o">//</span> <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.template.add </span><span class="se">\\\"\\\\</span><span class="s1">pagestyle{{empty}}</span><span class="se">\\\"</span><span class="s1">"'</span>
                 <span class="o">+.</span> <span class="p">(</span>
                     <span class="k">if</span> <span class="n">hangul</span> <span class="o">|&gt;</span> <span class="ow">not</span>
                     <span class="n">then</span> <span class="s2">""</span>
@@ -7692,13 +7683,16 @@ a.anchor-link {
                         <span class="err">$</span><span class="s1">'$" tex.template.add </span><span class="se">\\\"\\\\</span><span class="s1">usepackage{{polyglossia}}</span><span class="se">\\\"</span><span class="s1">"'</span>
                         <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.template.add </span><span class="se">\\\"\\\\</span><span class="s1">setmainlanguage{{korean}}</span><span class="se">\\\"</span><span class="s1">"'</span>
                         <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.template.add </span><span class="se">\\\"\\\\</span><span class="s1">setmainfont{{NanumGothicCoding}}</span><span class="se">\\\"</span><span class="s1">"'</span>
-                        <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.font.size 12"'</span>
+                        <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" tex.font.size 13"'</span>
                 <span class="p">)</span>
                 <span class="o">+.</span> <span class="n">default</span> <span class="n">ext</span>
             <span class="o">|</span> <span class="s2">"epub"</span> <span class="o">=&gt;</span>
                 <span class="err">$</span><span class="s1">'$"--set"'</span>
                 <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" epub.version 3"'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" html.css.add </span><span class="se">\\\\\\</span><span class="s1">"</span><span class="se">\'</span><span class="s1"> body {{ color: #e8e6e3; background-color: #202324; }} a {{ color: #989693; }} </span><span class="se">\'\\\\\\</span><span class="s1">""'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" html.css.add </span><span class="se">\\\\\\</span><span class="s1">"</span><span class="se">\'</span><span class="s1"> "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" body {{ color: #e8e6e3; background-color: #202324; }} "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" a {{ color: #989693; }} "'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" </span><span class="se">\'\\\\\\</span><span class="s1">""'</span>
                 <span class="o">+.</span> <span class="n">default</span> <span class="n">ext</span>
             <span class="o">|</span> <span class="n">_</span> <span class="o">=&gt;</span> <span class="s2">""</span>
         <span class="n">runtime</span><span class="o">.</span><span class="n">execution_options</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">x</span> <span class="k">with</span>
@@ -7709,12 +7703,13 @@ a.anchor-link {
         <span class="p">}</span>
         <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">execute_with_options</span>
 
-    <span class="k">if</span> <span class="n">result</span> <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.contains "ERROR" then</span>
+    <span class="k">if</span> <span class="n">result</span> <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.contains "ERROR" |&gt; not</span>
+    <span class="n">then</span> <span class="p">(</span><span class="n">exit_code</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">Ok</span>
+    <span class="k">else</span>
         <span class="n">trace</span> <span class="ne">Warning</span>
             <span class="n">fun</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="s2">"documents.crowbook / result contains ERROR"</span>
             <span class="n">fun</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">exit_code</span> <span class="n">output_path</span> <span class="n">result</span> <span class="p">}</span>
         <span class="p">(</span><span class="n">exit_code</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">Error</span>
-    <span class="k">else</span> <span class="p">(</span><span class="n">exit_code</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">Ok</span>
 </pre></div>
 </div>
 </div>
@@ -7744,7 +7739,7 @@ a.anchor-link {
         <span class="n">dist_path</span>
         <span class="o">|&gt;</span> <span class="n">file_system</span><span class="o">.</span><span class="n">read_all_text</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.split "</span><span class="se">\n</span><span class="s1">"</span>
-        <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">a</span> <span class="n">x</span> <span class="p">:</span> <span class="n">_</span> <span class="n">i32</span> <span class="n">_</span>
+        <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">a</span> <span class="n">x</span> <span class="p">:</span> <span class="n">_</span> <span class="nb">int</span> <span class="n">_</span>
         <span class="o">|&gt;</span> <span class="n">am</span><span class="o">.</span><span class="n">map</span> <span class="n">sm</span><span class="s1">'.trim</span>
     <span class="n">inl</span> <span class="n">text</span> <span class="o">=</span>
         <span class="n">lines</span>
@@ -7752,7 +7747,6 @@ a.anchor-link {
         <span class="o">|&gt;</span> <span class="n">seq</span><span class="o">.</span><span class="n">of_array</span><span class="s1">'</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.concat "</span><span class="se">\n</span><span class="s1">"</span>
         <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="err">$</span><span class="s1">'$"{!x}</span><span class="se">\n\n</span><span class="s1">"'</span>
-
     <span class="n">inl</span> <span class="n">exit_code</span><span class="p">,</span> <span class="n">result</span> <span class="o">=</span>
         <span class="n">runtime</span><span class="o">.</span><span class="n">execution_options</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">x</span> <span class="k">with</span>
             <span class="n">command</span> <span class="o">=</span>
@@ -7769,15 +7763,14 @@ a.anchor-link {
                 <span class="o">|&gt;</span> <span class="n">Some</span> <span class="o">|&gt;</span> <span class="n">optionm</span><span class="s1">'.box</span>
         <span class="p">}</span>
         <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">execute_with_options</span>
-
-    <span class="n">inl</span> <span class="n">result</span> <span class="p">:</span> <span class="n">string</span> <span class="o">=</span>
+    <span class="n">inl</span> <span class="n">result</span> <span class="o">=</span>
         <span class="n">inl</span> <span class="n">result</span> <span class="o">=</span>
             <span class="n">result</span>
             <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.split "</span><span class="se">\n</span><span class="s1">"</span>
-            <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">a</span> <span class="n">x</span> <span class="p">:</span> <span class="n">_</span> <span class="n">i32</span> <span class="n">_</span>
+            <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">a</span> <span class="n">x</span> <span class="p">:</span> <span class="n">_</span> <span class="nb">int</span> <span class="n">_</span>
         <span class="n">inl</span> <span class="n">result_len</span> <span class="o">=</span> <span class="n">result</span> <span class="o">|&gt;</span> <span class="n">am</span><span class="s1">'.length</span>
 
-        <span class="p">((</span><span class="s2">""</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="n">i32</span><span class="p">,</span> <span class="mi">0</span><span class="n">i32</span><span class="p">)),</span> <span class="n">lines</span><span class="p">)</span>
+        <span class="p">((</span><span class="s2">""</span><span class="p">,</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span> <span class="n">lines</span><span class="p">)</span>
         <span class="o">||&gt;</span> <span class="n">am</span><span class="o">.</span><span class="n">fold</span> <span class="n">fun</span> <span class="p">(</span><span class="n">acc</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span> <span class="n">x</span> <span class="o">=&gt;</span>
             <span class="k">if</span> <span class="n">x</span> <span class="o">=</span> <span class="s2">""</span>
             <span class="n">then</span> <span class="err">$</span><span class="s1">'$"{!acc}</span><span class="se">\n</span><span class="s1">"'</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
@@ -7793,15 +7786,12 @@ a.anchor-link {
                         <span class="k">else</span> <span class="err">$</span><span class="s1">'$"{!acc}{!line}</span><span class="se">\n</span><span class="s1">"'</span>
                 <span class="n">acc</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
         <span class="o">|&gt;</span> <span class="n">fst</span>
-
     <span class="n">result</span> <span class="o">|&gt;</span> <span class="n">file_system</span><span class="o">.</span><span class="n">write_all_text</span> <span class="n">output_path</span>
-
     <span class="n">trace</span> <span class="n">Info</span>
         <span class="n">fun</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="s2">"documents.hangul"</span>
-        <span class="n">fun</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">exit_code</span> <span class="n">result_len</span> <span class="o">=</span> <span class="n">result</span> <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.length : i32; output_path }</span>
-
+        <span class="n">fun</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">exit_code</span> <span class="n">result_len</span> <span class="o">=</span> <span class="n">result</span> <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.length : int; output_path }</span>
     <span class="p">(</span><span class="n">exit_code</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">Ok</span>
-    <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">x</span> <span class="p">:</span> <span class="n">result</span> <span class="p">(</span><span class="n">i32</span> <span class="o">*</span> <span class="n">string</span><span class="p">)</span> <span class="p">(</span><span class="n">i32</span> <span class="o">*</span> <span class="n">string</span><span class="p">)</span>
+    <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">x</span> <span class="p">:</span> <span class="n">result</span> <span class="p">(</span><span class="nb">int</span> <span class="o">*</span> <span class="n">string</span><span class="p">)</span> <span class="p">(</span><span class="nb">int</span> <span class="o">*</span> <span class="n">string</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7835,7 +7825,6 @@ a.anchor-link {
     <span class="n">inl</span> <span class="n">cache_path_no_ext</span> <span class="o">=</span>
         <span class="n">cache_path</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.slice 0 ((cache_path |&gt; sm'</span><span class="o">.</span><span class="n">last_index_of</span> <span class="s2">"."</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-
     <span class="n">inl</span> <span class="n">is_md</span> <span class="o">=</span> <span class="n">ext</span> <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.ends_with ".md"</span>
     <span class="n">inl</span> <span class="n">output_path</span> <span class="p">:</span> <span class="n">string</span> <span class="o">=</span>
         <span class="k">if</span> <span class="n">is_md</span> <span class="o">|&gt;</span> <span class="ow">not</span>
@@ -7873,8 +7862,10 @@ a.anchor-link {
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inl</span> <span class="n">files_fn</span> <span class="p">{</span> <span class="n">dist_dir</span> <span class="n">cache_dir</span> <span class="p">}</span> <span class="n">fn</span> <span class="n">dist_path</span> <span class="n">ext</span> <span class="o">=</span>
     <span class="n">inl</span> <span class="p">{</span> <span class="n">output_path</span> <span class="n">output_cache_path</span> <span class="p">}</span> <span class="o">=</span> <span class="n">fix_paths</span> <span class="p">{</span> <span class="n">cache_dir</span> <span class="n">dist_path</span> <span class="n">ext</span> <span class="p">}</span>
     <span class="n">inl</span> <span class="n">equal</span> <span class="o">=</span>
-        <span class="k">if</span> <span class="n">file_system</span><span class="o">.</span><span class="n">file_exists</span> <span class="n">output_path</span>
-            <span class="o">&amp;&amp;</span> <span class="n">file_system</span><span class="o">.</span><span class="n">file_exists</span> <span class="n">output_cache_path</span> <span class="n">then</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">output_path</span> <span class="o">|&gt;</span> <span class="n">file_system</span><span class="o">.</span><span class="n">file_exists</span> <span class="o">|&gt;</span> <span class="ow">not</span><span class="p">)</span>
+            <span class="o">||</span> <span class="p">(</span><span class="n">output_cache_path</span> <span class="o">|&gt;</span> <span class="n">file_system</span><span class="o">.</span><span class="n">file_exists</span> <span class="o">|&gt;</span> <span class="ow">not</span><span class="p">)</span>
+        <span class="n">then</span> <span class="n">false</span>
+        <span class="k">else</span>
             <span class="n">inl</span> <span class="n">output_hash</span> <span class="o">=</span>
                 <span class="n">output_path</span>
                 <span class="o">|&gt;</span> <span class="n">crypto</span><span class="o">.</span><span class="n">get_file_hash</span>
@@ -7888,10 +7879,9 @@ a.anchor-link {
                 <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">unbox</span><span class="s1">'</span>
                 <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">get</span>
             <span class="n">output_hash</span> <span class="o">=</span> <span class="n">output_cache_hash</span>
-        <span class="k">else</span> <span class="n">false</span>
-
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">equal</span>
-    <span class="n">then</span>
+    <span class="k">if</span> <span class="n">equal</span>
+    <span class="n">then</span> <span class="kc">None</span>
+    <span class="k">else</span>
         <span class="k">match</span> <span class="n">fn</span> <span class="p">{</span> <span class="n">ext</span> <span class="n">dist_dir</span> <span class="n">dist_path</span> <span class="n">output_path</span> <span class="p">}</span> <span class="k">with</span>
         <span class="o">|</span> <span class="n">Ok</span> <span class="p">(</span><span class="n">exit_code</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span> <span class="n">when</span> <span class="n">exit_code</span> <span class="o">&lt;&gt;.</span> <span class="mi">0</span> <span class="o">=&gt;</span>
             <span class="n">trace</span> <span class="n">Info</span>
@@ -7905,7 +7895,6 @@ a.anchor-link {
             <span class="n">then</span> <span class="n">output_path</span> <span class="o">|&gt;</span> <span class="n">file_system</span><span class="o">.</span><span class="n">file_copy</span> <span class="n">output_cache_path</span>
             <span class="k">else</span> <span class="n">failwith</span> <span class="err">$</span><span class="s1">'$"documents.files_fn / {!output_path} should exist"'</span>
             <span class="n">output_path</span> <span class="o">|&gt;</span> <span class="n">Ok</span> <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">box</span> <span class="o">|&gt;</span> <span class="n">Some</span>
-    <span class="k">else</span> <span class="kc">None</span>
 </pre></div>
 </div>
 </div>
@@ -7966,7 +7955,7 @@ a.anchor-link {
                         <span class="k">if</span> <span class="p">(</span><span class="n">path</span> <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.ends_with ".md" |&gt; not) || (path |&gt; sm'</span><span class="o">.</span><span class="n">ends_with</span> <span class="s2">".hangul.md"</span><span class="p">)</span>
                         <span class="n">then</span> <span class="n">file_system</span><span class="o">.</span><span class="n">Ignore</span>
                         <span class="k">else</span> <span class="n">file_system</span><span class="o">.</span><span class="n">Continue</span>
-            <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">stream_filter_map</span> <span class="n">fun</span> <span class="p">(</span><span class="n">entry</span> <span class="p">:</span> <span class="n">_</span> <span class="n">_</span> <span class="n">file_system</span><span class="o">.</span><span class="n">async_walkdir_error</span><span class="p">)</span> <span class="o">=&gt;</span>
+            <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">stream_filter_map_futures</span> <span class="n">fun</span> <span class="p">(</span><span class="n">entry</span> <span class="p">:</span> <span class="n">_</span> <span class="n">_</span> <span class="n">file_system</span><span class="o">.</span><span class="n">async_walkdir_error</span><span class="p">)</span> <span class="o">=&gt;</span>
                 <span class="k">match</span> <span class="n">entry</span> <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">map_error</span><span class="s1">' sm'</span><span class="o">.</span><span class="n">format</span><span class="s1">' |&gt; resultm.unbox with</span>
                 <span class="o">|</span> <span class="n">Ok</span> <span class="n">entry</span> <span class="o">=&gt;</span>
                     <span class="n">entry</span>
@@ -7981,7 +7970,7 @@ a.anchor-link {
                         <span class="n">fun</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="n">error</span> <span class="p">}</span>
                     <span class="kc">None</span>
                 <span class="o">|&gt;</span> <span class="n">optionm</span><span class="s1">'.box</span>
-            <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">stream_collect</span>
+            <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">stream_collect_futures</span>
             <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="k">await</span>
 
         <span class="n">trace</span> <span class="n">Debug</span>
@@ -8115,7 +8104,6 @@ a.anchor-link {
             <span class="o">|&gt;</span> <span class="n">new_pair</span> <span class="n">file</span>
             <span class="o">|&gt;</span> <span class="n">Ok</span>
             <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">box</span>
-            <span class="o">|&gt;</span> <span class="n">fun</span> <span class="n">x</span> <span class="o">=&gt;</span> <span class="n">x</span> <span class="p">:</span> <span class="n">_</span> <span class="n">_</span> <span class="n">sm</span><span class="s1">'.std_string</span>
         <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">par_collect</span>
         <span class="o">|&gt;</span> <span class="n">Ok</span>
         <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">box</span>
@@ -8134,7 +8122,7 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">////</span> <span class="n">test</span>
-<span class="o">///</span><span class="err">!</span> <span class="n">rust</span> <span class="o">-</span><span class="n">d</span> <span class="k">async</span><span class="o">-</span><span class="n">walkdir</span> <span class="n">encoding_rs</span> <span class="n">encoding_rs_io</span> <span class="n">futures</span> <span class="n">futures</span><span class="o">-</span><span class="n">lite</span> <span class="n">rayon</span> <span class="n">regex</span> <span class="n">sha2</span> <span class="n">tokio</span><span class="p">[</span><span class="s1">'rt-multi-thread'</span><span class="p">]</span> <span class="n">tokio</span><span class="o">-</span><span class="n">stream</span>
+<span class="o">///</span><span class="err">!</span> <span class="n">rust</span> <span class="o">-</span><span class="n">d</span> <span class="k">async</span><span class="o">-</span><span class="n">walkdir</span> <span class="n">encoding_rs</span> <span class="n">encoding_rs_io</span> <span class="n">futures</span> <span class="n">futures</span><span class="o">-</span><span class="n">lite</span> <span class="n">rayon</span> <span class="n">regex</span> <span class="n">sha2</span>
 
 <span class="n">inl</span> <span class="n">workspace_root</span> <span class="o">=</span> <span class="n">file_system</span><span class="o">.</span><span class="n">get_workspace_root</span> <span class="p">()</span>
 <span class="n">inl</span> <span class="n">source_dir</span> <span class="o">=</span> <span class="n">workspace_root</span> <span class="o">&lt;/&gt;</span> <span class="s2">"../vault/target/documents"</span>
@@ -8169,7 +8157,7 @@ a.anchor-link {
     <span class="n">cache_dir</span>
     <span class="n">hangul_spec</span> <span class="o">=</span> <span class="s2">"por-br"</span>
 <span class="p">}</span>
-<span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">block_on</span>
+<span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">block_on_futures</span>
 <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">unwrap</span><span class="s1">'</span>
 <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.format_debug'</span>
 <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.from_std_string</span>
@@ -8208,7 +8196,7 @@ a.anchor-link {
     <span class="n">cache_dir</span> <span class="o">=</span> <span class="n">cache_dir</span>
     <span class="n">hangul_spec</span> <span class="o">=</span> <span class="s2">"por-br"</span>
 <span class="p">}</span>
-<span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">block_on</span>
+<span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">block_on_futures</span>
 <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">unwrap</span><span class="s1">'</span>
 <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.format_debug'</span>
 <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.from_std_string</span>
@@ -8312,84 +8300,84 @@ a.anchor-link {
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
 00:00:00 <span class="ansi-black-intense-fg">v</span> #26 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #27 ! 13:53:00 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #27 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #28 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #29 ! 13:53:00 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #30 ! 13:53:00 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #31 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.html", "--set", "html.css.add", "' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.html" --set html.css.add \"' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #29 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.html", "--set", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.html" --set html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #32 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html", "--set", "html.css.add", "' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html" --set html.css.add \"' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-black-intense-fg">v</span> #30 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #31 ! 22:20:52 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #32 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html", "--set", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html" --set html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
 00:00:00 <span class="ansi-black-intense-fg">v</span> #33 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #34 ! 13:53:00 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #34 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #35 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #36 ! 13:53:00 [DEBUG] (1) crowbook::book: Attempting to generate html...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #37 ! 13:53:00 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;a&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #38 ! 13:53:00 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.md.html
+00:00:00 <span class="ansi-black-intense-fg">v</span> #36 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate html...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #37 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;a&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #38 ! 22:20:52 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.md.html
 00:00:00 <span class="ansi-black-intense-fg">v</span> #39 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #40 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 385 }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #41 ! 13:53:00 [DEBUG] (1) crowbook::book: Ignoring YAML block:
-00:00:00 <span class="ansi-black-intense-fg">v</span> #42 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #43 ! 13:53:00 [DEBUG] (1) crowbook::book: Attempting to generate html...
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #44 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; result = 11585 }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #45 ! 13:53:00 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;아&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #46 ! 13:53:00 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.hangul.md.html
+00:00:00 <span class="ansi-black-intense-fg">v</span> #40 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #41 !
+00:00:00 <span class="ansi-black-intense-fg">v</span> #42 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate html...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #43 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 385 }
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #44 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; result = 11595 }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #45 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;아&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #46 ! 22:20:52 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.hangul.md.html
 00:00:00 <span class="ansi-black-intense-fg">v</span> #47 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 392 }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #48 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; result = 11611 }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #49 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "pdf", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf", "--set", "tex.paper.size", "a4paper", "tex.template.add", "\\pagenumbering{gobble}", "tex.template.add", "\\usepackage{polyglossia}", "tex.template.add", "\\setmainlanguage{korean}", "tex.template.add", "\\setmainfont{NanumGothicCoding}", "tex.font.size", "12", "rendering.num_depth", "6", "rendering.highlight.theme", "Solarized (dark)"]; options = { command = crowbook --verbose --to pdf --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf" --set tex.paper.size a4paper tex.template.add "\pagenumbering{gobble}" tex.template.add "\usepackage{polyglossia}" tex.template.add "\setmainlanguage{korean}" tex.template.add "\setmainfont{NanumGothicCoding}" tex.font.size 12 rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #48 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; result = 11621 }
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #49 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "pdf", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf", "--set", "tex.paper.size", "a4paper", "tex.template.add", "\\pagenumbering{gobble}", "tex.template.add", "\\usepackage{polyglossia}", "tex.template.add", "\\setmainlanguage{korean}", "tex.template.add", "\\setmainfont{NanumGothicCoding}", "tex.font.size", "13", "rendering.num_depth", "6", "rendering.highlight.theme", "Solarized (dark)"]; options = { command = crowbook --verbose --to pdf --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf" --set tex.paper.size a4paper tex.template.add "\pagenumbering{gobble}" tex.template.add "\usepackage{polyglossia}" tex.template.add "\setmainlanguage{korean}" tex.template.add "\setmainfont{NanumGothicCoding}" tex.font.size 13 rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
 00:00:00 <span class="ansi-black-intense-fg">v</span> #50 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #51 ! 13:53:00 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #51 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #52 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #53 ! 13:53:00 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #54 ! 13:53:00 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #55 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "epub", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.epub", "--set", "epub.version", "3", "html.css.add", "' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '"]; options = { command = crowbook --verbose --to epub --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.epub" --set epub.version 3 html.css.add \"' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-black-intense-fg">v</span> #53 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #54 ! 22:20:52 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #55 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "epub", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.epub", "--set", "epub.version", "3", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  '"]; options = { command = crowbook --verbose --to epub --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.epub" --set epub.version 3 html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #56 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #57 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "epub", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub", "--set", "epub.version", "3", "html.css.add", "' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '"]; options = { command = crowbook --verbose --to epub --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub" --set epub.version 3 html.css.add \"' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #56 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "epub", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub", "--set", "epub.version", "3", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  '"]; options = { command = crowbook --verbose --to epub --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub" --set epub.version 3 html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #58 ! 13:53:00 [DEBUG] (1) crowbook::book: Ignoring YAML block:
-00:00:00 <span class="ansi-black-intense-fg">v</span> #59 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #60 ! 13:53:00 [DEBUG] (1) crowbook::book: Attempting to generate epub...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #61 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #62 ! 13:53:00 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #57 ! CROWBOOK 0.17.0
+00:00:00 <span class="ansi-black-intense-fg">v</span> #58 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #59 ! CROWBOOK 0.17.0
+00:00:00 <span class="ansi-black-intense-fg">v</span> #60 !
+00:00:00 <span class="ansi-black-intense-fg">v</span> #61 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #62 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate epub...
 00:00:00 <span class="ansi-black-intense-fg">v</span> #63 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #64 ! 13:53:00 [DEBUG] (1) crowbook::book: Attempting to generate epub...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #65 ! 13:53:00 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #66 ! 13:53:00 [DEBUG] (1) epub_builder::epub: render_opf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #67 ! 13:53:00 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #68 ! 13:53:00 [DEBUG] (1) epub_builder::epub: render_opf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #69 ! 13:53:00 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #70 ! 13:53:00 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #71 ! 13:53:00 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #72 ! 13:53:00 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #73 ! 13:53:00 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #74 ! 13:53:00 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #75 ! 13:53:00 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "a" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #76 ! 13:53:00 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "아" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #76 ! 13:53:00 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #78 ! 13:53:00 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #79 ! 13:53:00 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #80 ! 13:53:00 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #81 ! 13:53:00 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;아&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #82 ! 13:53:00 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;a&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #83 ! 13:53:00 [INFO] crowbook::book: Succesfully generated EPUB: test.md.epub
-00:00:00 <span class="ansi-black-intense-fg">v</span> #84 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 1326 }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #85 ! 13:53:00 [INFO] crowbook::book: Succesfully generated EPUB: test.hangul.md.epub
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #86 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; result = 4886 }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #87 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 1333 }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #88 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.epub; result = 4935 }
-00:00:01 <span class="ansi-black-intense-fg">v</span> #89 ! 13:53:01 [INFO] crowbook::book: Succesfully generated PDF: test.md.pdf
+00:00:00 <span class="ansi-black-intense-fg">v</span> #64 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate epub...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #65 ! 22:20:52 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #66 ! 22:20:52 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #67 ! 22:20:52 [DEBUG] (1) epub_builder::epub: render_opf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #68 ! 22:20:52 [DEBUG] (1) epub_builder::epub: render_opf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #69 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #70 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #71 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #72 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #73 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #74 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #75 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "a" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #76 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "아" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #77 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #77 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #79 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #79 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #81 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;a&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #82 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;아&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #83 ! 22:20:52 [INFO] crowbook::book: Succesfully generated EPUB: test.hangul.md.epub
+00:00:00 <span class="ansi-black-intense-fg">v</span> #84 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 1333 }
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #85 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.epub; result = 4935 }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #86 ! 22:20:52 [INFO] crowbook::book: Succesfully generated EPUB: test.md.epub
+00:00:00 <span class="ansi-black-intense-fg">v</span> #87 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 1326 }
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #88 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; result = 4886 }
+00:00:01 <span class="ansi-black-intense-fg">v</span> #89 ! 22:20:53 [INFO] crowbook::book: Succesfully generated PDF: test.md.pdf
 00:00:01 <span class="ansi-black-intense-fg">v</span> #90 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 352 }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #91 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; result = 4013 }
-00:00:01 <span class="ansi-black-intense-fg">v</span> #92 ! 13:53:01 [INFO] crowbook::book: Succesfully generated PDF: test.hangul.md.pdf
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #91 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; result = 4012 }
+00:00:01 <span class="ansi-black-intense-fg">v</span> #92 ! 22:20:53 [INFO] crowbook::book: Succesfully generated PDF: test.hangul.md.pdf
 00:00:01 <span class="ansi-black-intense-fg">v</span> #93 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 359 }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #94 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; result = 8041 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #94 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; result = 8036 }
 __assert_eq / actual: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", [Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.epub")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub"))]))]" / expected: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", [Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.epub")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub"))]))]"
 00:00:01 <span class="ansi-black-intense-fg">v</span> #95 file_system.create_dir / { dir = /home/runner/work/vault/polyglot/../vault/target/documents/dist }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #96 documents.run / { source_dir = /home/runner/work/vault/vault/target/documents; dist_dir = /home/runner/work/vault/vault/target/documents/dist; cache_dir = /home/runner/work/vault/vault/target/documents/cache; hangul_spec = por-br }
@@ -8407,15 +8395,15 @@ __assert_eq / actual: "[Ok(("/home/runner/work/vault/vault/target/documents/dist
 00:00:01 <span class="ansi-green-intense-fg">i</span> #104 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.epub }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #105 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.epub; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub; result = 4935 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #106 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #107 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; result = 8041 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #107 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; result = 8036 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #108 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #109 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; result = 11611 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #109 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; result = 11621 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #110 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #111 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; result = 4886 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #112 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #113 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; result = 4013 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #113 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; result = 4012 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #114 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #115 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; result = 11585 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #115 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; result = 11595 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #116 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #117 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md; result = 62 }
 __assert_eq / actual: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", []))]" / expected: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", []))]"
@@ -8516,35 +8504,35 @@ __assert_eq / actual: true / expected: true
 
     <span class="n">inl</span> <span class="n">source_dir</span> <span class="o">=</span>
         <span class="n">arg_matches</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">source_dir</span><span class="p">)</span>
+        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">source_dir</span> <span class="o">|&gt;</span> <span class="n">fst</span><span class="p">)</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="s1">'.unbox</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="o">.</span><span class="n">value</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.from_std_string</span>
 
     <span class="n">inl</span> <span class="n">dist_dir</span> <span class="o">=</span>
         <span class="n">arg_matches</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">dist_dir</span><span class="p">)</span>
+        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">dist_dir</span> <span class="o">|&gt;</span> <span class="n">fst</span><span class="p">)</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="s1">'.unbox</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="o">.</span><span class="n">value</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.from_std_string</span>
 
     <span class="n">inl</span> <span class="n">cache_dir</span> <span class="o">=</span>
         <span class="n">arg_matches</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">cache_dir</span><span class="p">)</span>
+        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">cache_dir</span> <span class="o">|&gt;</span> <span class="n">fst</span><span class="p">)</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="s1">'.unbox</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="o">.</span><span class="n">value</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.from_std_string</span>
 
     <span class="n">inl</span> <span class="n">hangul_spec</span> <span class="o">=</span>
         <span class="n">arg_matches</span>
-        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">hangul_spec</span><span class="p">)</span>
+        <span class="o">|&gt;</span> <span class="n">runtime</span><span class="o">.</span><span class="n">matches_get_one</span> <span class="p">(</span><span class="n">get_args</span> <span class="p">()</span> <span class="o">.</span><span class="n">hangul_spec</span> <span class="o">|&gt;</span> <span class="n">fst</span><span class="p">)</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="s1">'.unbox</span>
         <span class="o">|&gt;</span> <span class="n">optionm</span><span class="o">.</span><span class="n">value</span>
         <span class="o">|&gt;</span> <span class="n">sm</span><span class="s1">'.from_std_string</span>
 
     <span class="n">inl</span> <span class="n">result</span> <span class="o">=</span>
         <span class="n">run</span> <span class="p">{</span> <span class="n">source_dir</span> <span class="n">dist_dir</span> <span class="n">cache_dir</span> <span class="n">hangul_spec</span> <span class="p">}</span>
-        <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">block_on</span>
+        <span class="o">|&gt;</span> <span class="k">async</span><span class="o">.</span><span class="n">block_on_futures</span>
         <span class="o">|&gt;</span> <span class="n">resultm</span><span class="o">.</span><span class="n">unbox</span>
     
     <span class="k">match</span> <span class="n">result</span> <span class="k">with</span>
