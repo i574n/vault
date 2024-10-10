@@ -50,7 +50,6 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
                 $'$"--set"'
                 +. $'$" tex.paper.size a4paper"'
                 +. $'$" tex.template.add \\\"\\\\pagenumbering{{gobble}}\\\""'
-                // +. $'$" tex.template.add \\\"\\\\pagestyle{{empty}}\\\""'
                 +. (
                     if hangul |> not
                     then ""
@@ -242,7 +241,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                         if (path |> sm'.ends_with ".md" |> not) || (path |> sm'.ends_with ".hangul.md")
                         then file_system.Ignore
                         else file_system.Continue
-            |> async.stream_filter_map fun (entry : _ _ file_system.async_walkdir_error) =>
+            |> async.stream_filter_map_futures fun (entry : _ _ file_system.async_walkdir_error) =>
                 match entry |> resultm.map_error' sm'.format' |> resultm.unbox with
                 | Ok entry =>
                     entry
@@ -257,7 +256,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                         fun () => { error }
                     None
                 |> optionm'.box
-            |> async.stream_collect
+            |> async.stream_collect_futures
             |> async.await
 
         trace Debug
@@ -445,7 +444,7 @@ inl main (args : array_base string) =
 
     inl result =
         run { source_dir dist_dir cache_dir hangul_spec }
-        |> async.block_on
+        |> async.block_on_futures
         |> resultm.unbox
     
     match result with

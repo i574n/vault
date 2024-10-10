@@ -80,7 +80,6 @@ let crowbook hangul { ext dist_dir dist_path output_path } =
                 $'$"--set"'
                 +. $'$" tex.paper.size a4paper"'
                 +. $'$" tex.template.add \\\"\\\\pagenumbering{{gobble}}\\\""'
-                // +. $'$" tex.template.add \\\"\\\\pagestyle{{empty}}\\\""'
                 +. (
                     if hangul |> not
                     then ""
@@ -292,7 +291,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                         if (path |> sm'.ends_with ".md" |> not) || (path |> sm'.ends_with ".hangul.md")
                         then file_system.Ignore
                         else file_system.Continue
-            |> async.stream_filter_map fun (entry : _ _ file_system.async_walkdir_error) =>
+            |> async.stream_filter_map_futures fun (entry : _ _ file_system.async_walkdir_error) =>
                 match entry |> resultm.map_error' sm'.format' |> resultm.unbox with
                 | Ok entry =>
                     entry
@@ -307,7 +306,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
                         fun () => { error }
                     None
                 |> optionm'.box
-            |> async.stream_collect
+            |> async.stream_collect_futures
             |> async.await
 
         trace Debug
@@ -449,7 +448,7 @@ let run { source_dir dist_dir cache_dir hangul_spec }
 #!spiral
 
 //// test
-///! rust -d async-walkdir encoding_rs encoding_rs_io futures futures-lite rayon regex sha2 tokio['rt-multi-thread'] tokio-stream
+///! rust -d async-walkdir encoding_rs encoding_rs_io futures futures-lite rayon regex sha2
 
 inl workspace_root = file_system.get_workspace_root ()
 inl source_dir = workspace_root </> "../vault/target/documents"
@@ -484,7 +483,7 @@ run {
     cache_dir
     hangul_spec = "por-br"
 }
-|> async.block_on
+|> async.block_on_futures
 |> resultm.unwrap'
 |> sm'.format_debug'
 |> sm'.from_std_string
@@ -523,7 +522,7 @@ run {
     cache_dir = cache_dir
     hangul_spec = "por-br"
 }
-|> async.block_on
+|> async.block_on_futures
 |> resultm.unwrap'
 |> sm'.format_debug'
 |> sm'.from_std_string
@@ -641,7 +640,7 @@ inl main (args : array_base string) =
 
     inl result =
         run { source_dir dist_dir cache_dir hangul_spec }
-        |> async.block_on
+        |> async.block_on_futures
         |> resultm.unbox
     
     match result with
