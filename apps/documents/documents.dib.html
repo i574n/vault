@@ -7666,11 +7666,11 @@ a.anchor-link {
             <span class="k">match</span> <span class="n">ext</span> <span class="k">with</span>
             <span class="o">|</span> <span class="s2">"html"</span> <span class="o">=&gt;</span>
                 <span class="err">$</span><span class="s1">'$"--set"'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" html.css.add </span><span class="se">\\\\\\</span><span class="s1">"</span><span class="se">\'</span><span class="s1"> "'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" body {{ color: #e8e6e3; background-color: #202324; }} "'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" a {{ color: #989693; }} "'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" pre {{ background-color: #1b1b1b; padding: 10px; }} "'</span>
-                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$"  </span><span class="se">\'\\\\\\</span><span class="s1">""'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" html.css.add </span><span class="se">\\\\\\</span><span class="s1">"</span><span class="se">\'</span><span class="s1">"'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" body {{ color: #e8e6e3; background-color: #202324; }}"'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" a {{ color: #989693; }}"'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" pre {{ background-color: #1b1b1b; padding: 10px; }}"'</span>
+                <span class="o">+.</span> <span class="err">$</span><span class="s1">'$" </span><span class="se">\'\\\\\\</span><span class="s1">""'</span>
                 <span class="o">+.</span> <span class="n">default</span> <span class="n">ext</span>
             <span class="o">|</span> <span class="s2">"pdf"</span> <span class="o">=&gt;</span>
                 <span class="err">$</span><span class="s1">'$"--set"'</span>
@@ -8299,41 +8299,41 @@ a.anchor-link {
 00:00:00 <span class="ansi-blue-intense-fg">d</span> #25 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "pdf", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.pdf", "--set", "tex.paper.size", "a4paper", "tex.template.add", "\\pagenumbering{gobble}", "rendering.num_depth", "6", "rendering.highlight.theme", "Solarized (dark)"]; options = { command = crowbook --verbose --to pdf --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.pdf" --set tex.paper.size a4paper tex.template.add "\pagenumbering{gobble}" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #26 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #27 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
-00:00:00 <span class="ansi-black-intense-fg">v</span> #28 !
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #29 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.html", "--set", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.html" --set html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #26 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.html", "--set", "html.css.add", "' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.html" --set html.css.add \"' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #30 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #31 ! 22:20:52 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #32 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html", "--set", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html" --set html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  pre { background-color: #1b1b1b; padding: 10px; }   '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
+00:00:00 <span class="ansi-black-intense-fg">v</span> #27 ! CROWBOOK 0.17.0
+00:00:00 <span class="ansi-black-intense-fg">v</span> #28 ! 23:18:19 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #29 !
+00:00:00 <span class="ansi-black-intense-fg">v</span> #30 ! 23:18:19 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #31 ! 23:18:19 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #32 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "html", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html", "--set", "html.css.add", "' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '"]; options = { command = crowbook --verbose --to html --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html" --set html.css.add \"' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
 00:00:00 <span class="ansi-black-intense-fg">v</span> #33 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #34 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #34 ! 23:18:19 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #35 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #36 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate html...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #37 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;a&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #38 ! 22:20:52 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.md.html
+00:00:00 <span class="ansi-black-intense-fg">v</span> #36 ! 23:18:19 [DEBUG] (1) crowbook::book: Attempting to generate html...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #37 ! 23:18:19 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;아&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #38 ! 23:18:19 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.hangul.md.html
 00:00:00 <span class="ansi-black-intense-fg">v</span> #39 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #40 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #40 ! 23:18:19 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #41 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #42 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate html...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #43 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 385 }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #44 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; result = 11595 }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #45 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;아&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #46 ! 22:20:52 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.hangul.md.html
-00:00:00 <span class="ansi-black-intense-fg">v</span> #47 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 392 }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #48 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; result = 11621 }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #41 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 392 }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #43 ! 23:18:19 [DEBUG] (1) crowbook::book: Attempting to generate html...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #44 ! 23:18:19 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"#link-1\"&gt;a&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #45 ! 23:18:19 [INFO] crowbook::book: Succesfully generated HTML (standalone page): test.md.html
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #46 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; result = 11611 }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #47 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 385 }
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #48 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; result = 11585 }
 00:00:00 <span class="ansi-blue-intense-fg">d</span> #49 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "pdf", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf", "--set", "tex.paper.size", "a4paper", "tex.template.add", "\\pagenumbering{gobble}", "tex.template.add", "\\usepackage{polyglossia}", "tex.template.add", "\\setmainlanguage{korean}", "tex.template.add", "\\setmainfont{NanumGothicCoding}", "tex.font.size", "13", "rendering.num_depth", "6", "rendering.highlight.theme", "Solarized (dark)"]; options = { command = crowbook --verbose --to pdf --single "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf" --set tex.paper.size a4paper tex.template.add "\pagenumbering{gobble}" tex.template.add "\usepackage{polyglossia}" tex.template.add "\setmainlanguage{korean}" tex.template.add "\setmainfont{NanumGothicCoding}" tex.font.size 13 rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
 00:00:00 <span class="ansi-black-intense-fg">v</span> #50 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #51 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #51 ! 23:18:19 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #52 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #53 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #54 ! 22:20:52 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
+00:00:00 <span class="ansi-black-intense-fg">v</span> #53 ! 23:18:19 [DEBUG] (1) crowbook::book: Attempting to generate pdf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #54 ! 23:18:19 [DEBUG] (1) crowbook::latex: Attempting to run LaTeX on generated file
 00:00:00 <span class="ansi-blue-intense-fg">d</span> #55 runtime.execute_with_options / { file_name = crowbook; arguments = ["--verbose", "--to", "epub", "--single", "/home/runner/work/vault/vault/target/documents/dist/test.md", "--output", "/home/runner/work/vault/vault/target/documents/dist/test.md.epub", "--set", "epub.version", "3", "html.css.add", "'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  '"]; options = { command = crowbook --verbose --to epub --single "/home/runner/work/vault/vault/target/documents/dist/test.md" --output "/home/runner/work/vault/vault/target/documents/dist/test.md.epub" --set epub.version 3 html.css.add \"'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  '\" rendering.num_depth 6 rendering.highlight.theme \"Solarized (dark)\"; cancellation_token = None; environment_variables = Array(MutCell([])); on_line = None; stdin = None; trace = true; working_directory = Some(
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
@@ -8341,43 +8341,43 @@ a.anchor-link {
     "/home/runner/work/vault/vault/target/documents/dist",
 ) } }
 00:00:00 <span class="ansi-black-intense-fg">v</span> #57 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #58 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
-00:00:00 <span class="ansi-black-intense-fg">v</span> #59 ! CROWBOOK 0.17.0
-00:00:00 <span class="ansi-black-intense-fg">v</span> #60 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #61 ! 22:20:52 [DEBUG] (1) crowbook::book: Ignoring YAML block:
-00:00:00 <span class="ansi-black-intense-fg">v</span> #62 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate epub...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #58 ! 23:18:19 [DEBUG] (1) crowbook::book: Ignoring YAML block:
+00:00:00 <span class="ansi-black-intense-fg">v</span> #59 !
+00:00:00 <span class="ansi-black-intense-fg">v</span> #60 ! 23:18:19 [DEBUG] (1) crowbook::book: Attempting to generate epub...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #61 ! CROWBOOK 0.17.0
+00:00:00 <span class="ansi-black-intense-fg">v</span> #62 ! 23:18:19 [DEBUG] (1) crowbook::book: Ignoring YAML block:
 00:00:00 <span class="ansi-black-intense-fg">v</span> #63 !
-00:00:00 <span class="ansi-black-intense-fg">v</span> #64 ! 22:20:52 [DEBUG] (1) crowbook::book: Attempting to generate epub...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #65 ! 22:20:52 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #66 ! 22:20:52 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #67 ! 22:20:52 [DEBUG] (1) epub_builder::epub: render_opf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #68 ! 22:20:52 [DEBUG] (1) epub_builder::epub: render_opf...
-00:00:00 <span class="ansi-black-intense-fg">v</span> #69 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #70 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #71 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #72 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #73 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #74 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #75 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "a" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #76 ! 22:20:52 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "아" }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #77 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #77 ! 22:20:52 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #79 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #79 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #81 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;a&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #82 ! 22:20:52 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;아&lt;/a&gt;&lt;/li&gt;"
-00:00:00 <span class="ansi-black-intense-fg">v</span> #83 ! 22:20:52 [INFO] crowbook::book: Succesfully generated EPUB: test.hangul.md.epub
+00:00:00 <span class="ansi-black-intense-fg">v</span> #64 ! 23:18:19 [DEBUG] (1) crowbook::book: Attempting to generate epub...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #65 ! 23:18:19 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #66 ! 23:18:19 [DEBUG] (1) epub_builder::epub: render_opf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #67 ! 23:18:19 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #68 ! 23:18:19 [DEBUG] (1) epub_builder::epub: Add resource: "stylesheet.css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #69 ! 23:18:19 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #70 ! 23:18:19 [DEBUG] (1) epub_builder::epub: render_opf...
+00:00:00 <span class="ansi-black-intense-fg">v</span> #71 ! 23:18:19 [DEBUG] (1) epub_builder::epub: id="title_page.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #72 ! 23:18:19 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #73 ! 23:18:19 [DEBUG] (1) epub_builder::epub: content = Content { file: "title_page.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(TitlePage), title: "Title" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #74 ! 23:18:19 [DEBUG] (1) epub_builder::epub: id="chapter_000.xhtml", mime="application/xhtml+xml"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #75 ! 23:18:19 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "아" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #76 ! 23:18:19 [DEBUG] (1) epub_builder::epub: content = Content { file: "chapter_000.xhtml", mime: "application/xhtml+xml", itemref: true, cover: false, reftype: Some(Text), title: "a" }
+00:00:00 <span class="ansi-black-intense-fg">v</span> #77 ! 23:18:19 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #77 ! 23:18:19 [DEBUG] (1) epub_builder::epub: id="stylesheet.css", mime="text/css"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #79 ! 23:18:19 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #80 ! 23:18:19 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;a&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #81 ! 23:18:19 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"title_page.xhtml\"&gt;Title&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #82 ! 23:18:19 [DEBUG] (1) epub_builder::toc: rendered elem: "&lt;li&gt;&lt;a href=\"chapter_000.xhtml\"&gt;아&lt;/a&gt;&lt;/li&gt;"
+00:00:00 <span class="ansi-black-intense-fg">v</span> #83 ! 23:18:19 [INFO] crowbook::book: Succesfully generated EPUB: test.hangul.md.epub
 00:00:00 <span class="ansi-black-intense-fg">v</span> #84 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 1333 }
 00:00:00 <span class="ansi-blue-intense-fg">d</span> #85 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.epub; result = 4935 }
-00:00:00 <span class="ansi-black-intense-fg">v</span> #86 ! 22:20:52 [INFO] crowbook::book: Succesfully generated EPUB: test.md.epub
+00:00:00 <span class="ansi-black-intense-fg">v</span> #86 ! 23:18:19 [INFO] crowbook::book: Succesfully generated EPUB: test.md.epub
 00:00:00 <span class="ansi-black-intense-fg">v</span> #87 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 1326 }
-00:00:00 <span class="ansi-blue-intense-fg">d</span> #88 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; result = 4886 }
-00:00:01 <span class="ansi-black-intense-fg">v</span> #89 ! 22:20:53 [INFO] crowbook::book: Succesfully generated PDF: test.md.pdf
-00:00:01 <span class="ansi-black-intense-fg">v</span> #90 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 352 }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #91 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; result = 4012 }
-00:00:01 <span class="ansi-black-intense-fg">v</span> #92 ! 22:20:53 [INFO] crowbook::book: Succesfully generated PDF: test.hangul.md.pdf
-00:00:01 <span class="ansi-black-intense-fg">v</span> #93 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 359 }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #94 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; result = 8036 }
+00:00:00 <span class="ansi-blue-intense-fg">d</span> #88 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; result = 4887 }
+00:00:01 <span class="ansi-black-intense-fg">v</span> #89 ! 23:18:20 [INFO] crowbook::book: Succesfully generated PDF: test.hangul.md.pdf
+00:00:01 <span class="ansi-black-intense-fg">v</span> #90 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 359 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #91 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; result = 8036 }
+00:00:01 <span class="ansi-black-intense-fg">v</span> #92 ! 23:18:21 [INFO] crowbook::book: Succesfully generated PDF: test.md.pdf
+00:00:01 <span class="ansi-black-intense-fg">v</span> #93 runtime.execute_with_options / result / { exit_code = 0; std_trace_length = 352 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #94 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; result = 4012 }
 __assert_eq / actual: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", [Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.epub")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub"))]))]" / expected: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", [Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.md.epub")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf")), Some(Ok("/home/runner/work/vault/vault/target/documents/dist/test.hangul.md.epub"))]))]"
 00:00:01 <span class="ansi-black-intense-fg">v</span> #95 file_system.create_dir / { dir = /home/runner/work/vault/polyglot/../vault/target/documents/dist }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #96 documents.run / { source_dir = /home/runner/work/vault/vault/target/documents; dist_dir = /home/runner/work/vault/vault/target/documents/dist; cache_dir = /home/runner/work/vault/vault/target/documents/cache; hangul_spec = por-br }
@@ -8397,13 +8397,13 @@ __assert_eq / actual: "[Ok(("/home/runner/work/vault/vault/target/documents/dist
 00:00:01 <span class="ansi-green-intense-fg">i</span> #106 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #107 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.pdf; result = 8036 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #108 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #109 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; result = 11621 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #109 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md.html; result = 11611 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #110 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #111 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; result = 4886 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #111 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.epub; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.epub; result = 4887 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #112 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #113 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.pdf; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.pdf; result = 4012 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #114 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html }
-00:00:01 <span class="ansi-blue-intense-fg">d</span> #115 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; result = 11595 }
+00:00:01 <span class="ansi-blue-intense-fg">d</span> #115 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.md.html; new_path = /home/runner/work/vault/vault/target/documents/dist/test.md.html; result = 11585 }
 00:00:01 <span class="ansi-green-intense-fg">i</span> #116 documents.run / par_map / files' = [] / listm.iter / { output_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md; output_cache_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md }
 00:00:01 <span class="ansi-blue-intense-fg">d</span> #117 file_system.file_copy / { old_path = /home/runner/work/vault/vault/target/documents/cache/test.hangul.md; new_path = /home/runner/work/vault/vault/target/documents/dist/test.hangul.md; result = 62 }
 __assert_eq / actual: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", []))]" / expected: "[Ok(("/home/runner/work/vault/vault/target/documents/dist/test.md", []))]"
