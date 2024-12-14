@@ -8,6 +8,7 @@
 #![allow(unused_macros)]
 #![allow(unused_parens)]
 #![allow(unused_variables)]
+#![allow(unused_assignments)]
 use fable_library_rust::NativeArray_::array_from;
 use fable_library_rust::String_::fromString;
 mod module_2555ccf7 {
@@ -25,12 +26,12 @@ mod module_2555ccf7 {
         use fable_library_rust::List_::List;
         use fable_library_rust::Map_::find;
         use fable_library_rust::Map_::ofSeq;
-        use fable_library_rust::NativeArray_::count as count_2;
+        use fable_library_rust::NativeArray_::get_Count;
         use fable_library_rust::NativeArray_::new_array;
         use fable_library_rust::NativeArray_::new_empty;
         use fable_library_rust::NativeArray_::new_init;
         use fable_library_rust::NativeArray_::Array;
-        use fable_library_rust::Native_::defaultOf;
+        use fable_library_rust::Native_::getZero;
         use fable_library_rust::Native_::unbox;
         use fable_library_rust::Native_::Any;
         use fable_library_rust::Native_::Arc;
@@ -41,7 +42,6 @@ mod module_2555ccf7 {
         use fable_library_rust::Native_::MutCell;
         use fable_library_rust::Native_::OnceInit;
         use fable_library_rust::Option_::defaultValue;
-        use fable_library_rust::Option_::getValue;
         use fable_library_rust::Option_::map;
         use fable_library_rust::Range_::rangeNumeric;
         use fable_library_rust::Seq_::delay;
@@ -50,8 +50,9 @@ mod module_2555ccf7 {
         use fable_library_rust::Seq_::ofList;
         use fable_library_rust::Seq_::toArray as toArray_1;
         use fable_library_rust::String_::append;
+        use fable_library_rust::String_::concat;
         use fable_library_rust::String_::contains;
-        use fable_library_rust::String_::endsWith;
+        use fable_library_rust::String_::endsWith3;
         use fable_library_rust::String_::getCharAt;
         use fable_library_rust::String_::getSlice;
         use fable_library_rust::String_::indexOf;
@@ -72,7 +73,8 @@ mod module_2555ccf7 {
         use fable_library_rust::String_::trimStartChars;
         use fable_library_rust::TimeSpan_::TimeSpan;
         type ConcurrentStack_1<T> = T;
-        use fable_library_rust::Interfaces_::System::Collections::Generic::IEnumerable_1;
+        use fable_library_rust::System::Collections::Generic::IEnumerable_1;
+        use fable_library_rust::System::Exception;
         use fable_library_rust::System::Text::StringBuilder;
         type CancellationToken = ();
         type TaskCanceledException = ();
@@ -120,43 +122,43 @@ mod module_2555ccf7 {
                     .clone()
             }
         }
-        pub trait IOsEnviron {
+        pub trait IOsEnviron: core::fmt::Debug + core::fmt::Display {
             fn environ(&self) -> LrcPtr<dyn Any>;
         }
-        impl<V: IOsEnviron + Clone + 'static> IOsEnviron for LrcPtr<V> {
+        impl<V: IOsEnviron + core::fmt::Debug + core::fmt::Display> IOsEnviron for LrcPtr<V> {
             #[inline]
             fn environ(&self) -> LrcPtr<dyn Any> {
                 (**self).environ()
             }
         }
-        pub trait IPathJoin {
+        pub trait IPathJoin: core::fmt::Debug + core::fmt::Display {
             fn join(&self, paths: Array<string>) -> string;
         }
-        impl<V: IPathJoin + Clone + 'static> IPathJoin for LrcPtr<V> {
+        impl<V: IPathJoin + core::fmt::Debug + core::fmt::Display> IPathJoin for LrcPtr<V> {
             #[inline]
             fn join(&self, paths: Array<string>) -> string {
                 (**self).join(paths)
             }
         }
-        pub trait IFsExistsSync {
+        pub trait IFsExistsSync: core::fmt::Debug + core::fmt::Display {
             fn existsSync(&self, path: string) -> bool;
         }
-        impl<V: IFsExistsSync + Clone + 'static> IFsExistsSync for LrcPtr<V> {
+        impl<V: IFsExistsSync + core::fmt::Debug + core::fmt::Display> IFsExistsSync for LrcPtr<V> {
             #[inline]
             fn existsSync(&self, path: string) -> bool {
                 (**self).existsSync(path)
             }
         }
-        pub trait IPathDirname {
+        pub trait IPathDirname: core::fmt::Debug + core::fmt::Display {
             fn dirname(&self, path: string) -> string;
         }
-        impl<V: IPathDirname + Clone + 'static> IPathDirname for LrcPtr<V> {
+        impl<V: IPathDirname + core::fmt::Debug + core::fmt::Display> IPathDirname for LrcPtr<V> {
             #[inline]
             fn dirname(&self, path: string) -> string {
                 (**self).dirname(path)
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US0 {
             US0_0,
             US0_1,
@@ -164,16 +166,16 @@ mod module_2555ccf7 {
             US0_3,
             US0_4,
         }
-        impl core::fmt::Display for Documents::US0 {
+        impl core::fmt::Display for US0 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut0 {
             pub l0: MutCell<i64>,
         }
-        impl core::fmt::Display for Documents::Mut0 {
+        impl core::fmt::Display for Mut0 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -182,70 +184,70 @@ mod module_2555ccf7 {
         pub struct Mut1 {
             pub l0: MutCell<Func1<string, ()>>,
         }
-        impl core::fmt::Display for Documents::Mut1 {
+        impl core::fmt::Display for Mut1 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut2 {
             pub l0: MutCell<bool>,
         }
-        impl core::fmt::Display for Documents::Mut2 {
+        impl core::fmt::Display for Mut2 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut3 {
             pub l0: MutCell<string>,
         }
-        impl core::fmt::Display for Documents::Mut3 {
+        impl core::fmt::Display for Mut3 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut4 {
             pub l0: MutCell<Documents::US0>,
         }
-        impl core::fmt::Display for Documents::Mut4 {
+        impl core::fmt::Display for Mut4 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US1 {
             US1_0(Documents::US0),
             US1_1,
         }
-        impl core::fmt::Display for Documents::US1 {
+        impl core::fmt::Display for US1 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US2 {
             US2_0(i64),
             US2_1,
         }
-        impl core::fmt::Display for Documents::US2 {
+        impl core::fmt::Display for US2 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US3 {
             US3_0,
             US3_1,
             US3_2,
         }
-        impl core::fmt::Display for Documents::US3 {
+        impl core::fmt::Display for US3 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US4 {
             US4_0(Documents::US3),
             US4_1(Documents::US3),
@@ -253,17 +255,17 @@ mod module_2555ccf7 {
             US4_3(Documents::US3),
             US4_4(Documents::US3),
         }
-        impl core::fmt::Display for Documents::US4 {
+        impl core::fmt::Display for US4 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US5 {
             US5_0(string),
             US5_1,
         }
-        impl core::fmt::Display for Documents::US5 {
+        impl core::fmt::Display for US5 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -273,17 +275,17 @@ mod module_2555ccf7 {
             US6_0(std::string::String),
             US6_1,
         }
-        impl core::fmt::Display for Documents::US6 {
+        impl core::fmt::Display for US6 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US7 {
             US7_0(string),
             US7_1(string),
         }
-        impl core::fmt::Display for Documents::US7 {
+        impl core::fmt::Display for US7 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -293,7 +295,7 @@ mod module_2555ccf7 {
             US8_0(std::path::PathBuf),
             US8_1(string),
         }
-        impl core::fmt::Display for Documents::US8 {
+        impl core::fmt::Display for US8 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -303,27 +305,27 @@ mod module_2555ccf7 {
             US9_0(std::path::PathBuf),
             US9_1,
         }
-        impl core::fmt::Display for Documents::US9 {
+        impl core::fmt::Display for US9 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut5 {
             pub l0: MutCell<i32>,
             pub l1: MutCell<i32>,
             pub l2: MutCell<Array<string>>,
         }
-        impl core::fmt::Display for Documents::Mut5 {
+        impl core::fmt::Display for Mut5 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut6 {
             pub l0: MutCell<i32>,
         }
-        impl core::fmt::Display for Documents::Mut6 {
+        impl core::fmt::Display for Mut6 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -333,18 +335,18 @@ mod module_2555ccf7 {
             US10_0(std::fs::FileType),
             US10_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US10 {
+        impl core::fmt::Display for US10 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US11 {
             US11_0,
             US11_1,
             US11_2,
         }
-        impl core::fmt::Display for Documents::US11 {
+        impl core::fmt::Display for US11 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -354,17 +356,17 @@ mod module_2555ccf7 {
             US12_0(async_walkdir::DirEntry),
             US12_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US12 {
+        impl core::fmt::Display for US12 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US13 {
             US13_0(string, Documents::US5),
             US13_1(string),
         }
-        impl core::fmt::Display for Documents::US13 {
+        impl core::fmt::Display for US13 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -374,17 +376,17 @@ mod module_2555ccf7 {
             US14_0(char, string, LrcPtr<StringBuilder>, i32, i32),
             US14_1(string),
         }
-        impl core::fmt::Display for Documents::US14 {
+        impl core::fmt::Display for US14 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum UH0 {
             UH0_0,
             UH0_1(char, LrcPtr<Documents::UH0>),
         }
-        impl core::fmt::Display for Documents::UH0 {
+        impl core::fmt::Display for UH0 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -397,7 +399,7 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::UH1>,
             ),
         }
-        impl core::fmt::Display for Documents::UH1 {
+        impl core::fmt::Display for UH1 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -407,17 +409,17 @@ mod module_2555ccf7 {
             US15_0(string, string, LrcPtr<StringBuilder>, i32, i32),
             US15_1(string),
         }
-        impl core::fmt::Display for Documents::US15 {
+        impl core::fmt::Display for US15 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US16 {
             US16_0(char),
             US16_1,
         }
-        impl core::fmt::Display for Documents::US16 {
+        impl core::fmt::Display for US16 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -427,7 +429,7 @@ mod module_2555ccf7 {
             US17_0(string, LrcPtr<StringBuilder>, i32, i32),
             US17_1(string),
         }
-        impl core::fmt::Display for Documents::US17 {
+        impl core::fmt::Display for US17 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -444,7 +446,7 @@ mod module_2555ccf7 {
             ),
             US18_1(string),
         }
-        impl core::fmt::Display for Documents::US18 {
+        impl core::fmt::Display for US18 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -454,7 +456,7 @@ mod module_2555ccf7 {
             US19_0(Documents::US16, string, LrcPtr<StringBuilder>, i32, i32),
             US19_1(string),
         }
-        impl core::fmt::Display for Documents::US19 {
+        impl core::fmt::Display for US19 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -464,27 +466,27 @@ mod module_2555ccf7 {
             US20_0(Documents::US5, string, LrcPtr<StringBuilder>, i32, i32),
             US20_1(string),
         }
-        impl core::fmt::Display for Documents::US20 {
+        impl core::fmt::Display for US20 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US21 {
             US21_0(Array<string>),
             US21_1(string),
         }
-        impl core::fmt::Display for Documents::US21 {
+        impl core::fmt::Display for US21 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum UH2 {
             UH2_0,
             UH2_1(string, LrcPtr<Documents::UH2>),
         }
-        impl core::fmt::Display for Documents::UH2 {
+        impl core::fmt::Display for UH2 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -500,7 +502,7 @@ mod module_2555ccf7 {
             ),
             US22_1(string),
         }
-        impl core::fmt::Display for Documents::US22 {
+        impl core::fmt::Display for US22 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -513,7 +515,7 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::UH3>,
             ),
         }
-        impl core::fmt::Display for Documents::UH3 {
+        impl core::fmt::Display for UH3 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -523,7 +525,7 @@ mod module_2555ccf7 {
             US23_0(std::sync::Arc<std::sync::Mutex<Option<std::process::Child>>>),
             US23_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US23 {
+        impl core::fmt::Display for US23 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -539,7 +541,7 @@ mod module_2555ccf7 {
             ),
             US24_1,
         }
-        impl core::fmt::Display for Documents::US24 {
+        impl core::fmt::Display for US24 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -549,7 +551,7 @@ mod module_2555ccf7 {
             US25_0(std::string::String),
             US25_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US25 {
+        impl core::fmt::Display for US25 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -559,7 +561,7 @@ mod module_2555ccf7 {
             US26_0(Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>),
             US26_1,
         }
-        impl core::fmt::Display for Documents::US26 {
+        impl core::fmt::Display for US26 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -569,7 +571,7 @@ mod module_2555ccf7 {
             US27_0(std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>),
             US27_1,
         }
-        impl core::fmt::Display for Documents::US27 {
+        impl core::fmt::Display for US27 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -579,17 +581,17 @@ mod module_2555ccf7 {
             US28_0(std::process::Output),
             US28_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US28 {
+        impl core::fmt::Display for US28 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US29 {
             US29_0(i32),
             US29_1,
         }
-        impl core::fmt::Display for Documents::US29 {
+        impl core::fmt::Display for US29 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -599,27 +601,27 @@ mod module_2555ccf7 {
             US30_0(Func1<(i32, string, bool), Arc<Async<()>>>),
             US30_1,
         }
-        impl core::fmt::Display for Documents::US30 {
+        impl core::fmt::Display for US30 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US31 {
             US31_0(CancellationToken),
             US31_1,
         }
-        impl core::fmt::Display for Documents::US31 {
+        impl core::fmt::Display for US31 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US32 {
             US32_0(Result<string, LrcPtr<(string, string)>>),
             US32_1,
         }
-        impl core::fmt::Display for Documents::US32 {
+        impl core::fmt::Display for US32 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -634,7 +636,7 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::UH5>,
             ),
         }
-        impl core::fmt::Display for Documents::UH5 {
+        impl core::fmt::Display for UH5 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -644,7 +646,7 @@ mod module_2555ccf7 {
             UH4_0,
             UH4_1(LrcPtr<Documents::UH5>, LrcPtr<Documents::UH4>),
         }
-        impl core::fmt::Display for Documents::UH4 {
+        impl core::fmt::Display for UH4 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -654,7 +656,7 @@ mod module_2555ccf7 {
             US33_0(string),
             US33_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US33 {
+        impl core::fmt::Display for US33 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -664,49 +666,49 @@ mod module_2555ccf7 {
             US34_0(u64),
             US34_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US34 {
+        impl core::fmt::Display for US34 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub enum US35 {
             US35_0(i32, string),
             US35_1(i32, string),
         }
-        impl core::fmt::Display for Documents::US35 {
+        impl core::fmt::Display for US35 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut7 {
             pub l0: MutCell<i32>,
             pub l1: MutCell<i32>,
         }
-        impl core::fmt::Display for Documents::Mut7 {
+        impl core::fmt::Display for Mut7 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default, PartialEq, PartialOrd, Hash, Eq)]
+        #[derive(Clone, Debug, Hash, PartialEq, PartialOrd)]
         pub struct Mut8 {
             pub l0: MutCell<i32>,
             pub l1: MutCell<string>,
             pub l2: MutCell<i32>,
             pub l3: MutCell<i32>,
         }
-        impl core::fmt::Display for Documents::Mut8 {
+        impl core::fmt::Display for Mut8 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
         }
-        #[derive(Clone, Debug, Default)]
+        #[derive(Clone, Debug)]
         pub struct Mut9 {
             pub l0: MutCell<i32>,
             pub l1: MutCell<Vec<Option<Result<string, LrcPtr<(string, string)>>>>>,
         }
-        impl core::fmt::Display for Documents::Mut9 {
+        impl core::fmt::Display for Mut9 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -726,7 +728,7 @@ mod module_2555ccf7 {
             ),
             US36_1(std::string::String),
         }
-        impl core::fmt::Display for Documents::US36 {
+        impl core::fmt::Display for US36 {
             fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
                 write!(f, "{}", core::any::type_name::<Self>())
             }
@@ -789,93 +791,112 @@ mod module_2555ccf7 {
                 ()
             }
         }
-        pub fn method4() -> string {
+        pub fn method4(v0_1: string) -> string {
+            v0_1
+        }
+        pub fn method5() -> string {
             string("")
         }
         pub fn closure3(unitVar: (), v0_1: string) -> Documents::US5 {
             Documents::US5::US5_0(v0_1)
         }
-        pub fn method5() -> Func1<string, Documents::US5> {
+        pub fn method6() -> Func1<string, Documents::US5> {
             Func1::new(move |v: string| Documents::closure3((), v))
         }
         pub fn method3(v0_1: string) -> string {
-            let v3: Result<std::string::String, std::env::VarError> = std::env::var(&*v0_1);
-            let v5: bool = true;
-            let _result_map_ = v3.map(|x| {
+            let v2: string = Documents::method4(v0_1);
+            let v4: Result<std::string::String, std::env::VarError> = std::env::var(&*v2);
+            let v6: bool = true;
+            let _result_map_ = v4.map(|x| {
                 //;
-                let v7: std::string::String = x;
-                let v9: string = fable_library_rust::String_::fromString(v7);
-                let v11: bool = true;
-                v9
+                let v8: std::string::String = x;
+                let v10: string = fable_library_rust::String_::fromString(v8);
+                let v12: bool = true;
+                v10
             });
-            let v13: Result<string, std::env::VarError> = _result_map_;
-            let v14: string = Documents::method4();
-            v13.unwrap_or(v14)
+            let v14: Result<string, std::env::VarError> = _result_map_;
+            let v15: string = Documents::method5();
+            v14.unwrap_or(v15)
         }
         pub fn method2() -> (Documents::US1, Documents::US2) {
             let v1_1: string = Documents::method3(string("TRACE_LEVEL"));
-            let v6: Documents::US1 = if string("Verbose") == v1_1.clone() {
+            let v6: Documents::US1 = if string("Verbose") == (v1_1.clone()) {
                 Documents::US1::US1_0(Documents::US0::US0_0)
             } else {
                 Documents::US1::US1_1
             };
             (
                 match &v6 {
-                    Documents::US1::US1_0(v6_0_0) => Documents::US1::US1_0(match &v6 {
-                        Documents::US1::US1_0(x) => x.clone(),
-                        _ => unreachable!(),
-                    }),
+                    Documents::US1::US1_0(v6_0_0) => Documents::US1::US1_0(
+                        match &v6 {
+                            Documents::US1::US1_0(x) => x.clone(),
+                            _ => unreachable!(),
+                        }
+                        .clone(),
+                    ),
                     _ => {
-                        let v13: Documents::US1 = if string("Debug") == v1_1.clone() {
+                        let v13: Documents::US1 = if string("Debug") == (v1_1.clone()) {
                             Documents::US1::US1_0(Documents::US0::US0_1)
                         } else {
                             Documents::US1::US1_1
                         };
                         match &v13 {
-                            Documents::US1::US1_0(v13_0_0) => Documents::US1::US1_0(match &v13 {
-                                Documents::US1::US1_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            }),
+                            Documents::US1::US1_0(v13_0_0) => Documents::US1::US1_0(
+                                match &v13 {
+                                    Documents::US1::US1_0(x) => x.clone(),
+                                    _ => unreachable!(),
+                                }
+                                .clone(),
+                            ),
                             _ => {
-                                let v20: Documents::US1 = if string("Info") == v1_1.clone() {
+                                let v20: Documents::US1 = if string("Info") == (v1_1.clone()) {
                                     Documents::US1::US1_0(Documents::US0::US0_2)
                                 } else {
                                     Documents::US1::US1_1
                                 };
                                 match &v20 {
-                                    Documents::US1::US1_0(v20_0_0) => {
-                                        Documents::US1::US1_0(match &v20 {
+                                    Documents::US1::US1_0(v20_0_0) => Documents::US1::US1_0(
+                                        match &v20 {
                                             Documents::US1::US1_0(x) => x.clone(),
                                             _ => unreachable!(),
-                                        })
-                                    }
+                                        }
+                                        .clone(),
+                                    ),
                                     _ => {
                                         let v27: Documents::US1 =
-                                            if string("Warning") == v1_1.clone() {
+                                            if string("Warning") == (v1_1.clone()) {
                                                 Documents::US1::US1_0(Documents::US0::US0_3)
                                             } else {
                                                 Documents::US1::US1_1
                                             };
                                         match &v27 {
                                             Documents::US1::US1_0(v27_0_0) => {
-                                                Documents::US1::US1_0(match &v27 {
-                                                    Documents::US1::US1_0(x) => x.clone(),
-                                                    _ => unreachable!(),
-                                                })
+                                                Documents::US1::US1_0(
+                                                    match &v27 {
+                                                        Documents::US1::US1_0(x) => x.clone(),
+                                                        _ => unreachable!(),
+                                                    }
+                                                    .clone(),
+                                                )
                                             }
                                             _ => {
                                                 let v34: Documents::US1 =
-                                                    if string("Critical") == v1_1.clone() {
+                                                    if string("Critical") == (v1_1.clone()) {
                                                         Documents::US1::US1_0(Documents::US0::US0_4)
                                                     } else {
                                                         Documents::US1::US1_1
                                                     };
                                                 match &v34 {
                                                     Documents::US1::US1_0(v34_0_0) => {
-                                                        Documents::US1::US1_0(match &v34 {
-                                                            Documents::US1::US1_0(x) => x.clone(),
-                                                            _ => unreachable!(),
-                                                        })
+                                                        Documents::US1::US1_0(
+                                                            match &v34 {
+                                                                Documents::US1::US1_0(x) => {
+                                                                    x.clone()
+                                                                }
+                                                                _ => unreachable!(),
+                                                            }
+                                                            .clone(),
+                                                        )
                                                     }
                                                     _ => Documents::US1::US1_1,
                                                 }
@@ -887,7 +908,7 @@ mod module_2555ccf7 {
                         }
                     }
                 },
-                if Documents::method3(string("AUTOMATION")) != string("True") {
+                if (Documents::method3(string("AUTOMATION"))) != string("True") {
                     Documents::US2::US2_1
                 } else {
                     Documents::US2::US2_0({
@@ -933,8 +954,9 @@ mod module_2555ccf7 {
                         Documents::US1::US1_0(v131_0_0) => match &v131 {
                             Documents::US1::US1_0(x) => x.clone(),
                             _ => unreachable!(),
-                        },
-                        _ => v0_1,
+                        }
+                        .clone(),
+                        _ => v0_1.clone(),
                     }),
                 }),
                 match &v132 {
@@ -988,7 +1010,7 @@ mod module_2555ccf7 {
                 ()
             };
         }
-        pub fn method6(v0_1: Documents::US0) -> bool {
+        pub fn method7(v0_1: Documents::US0) -> bool {
             let v3: () = {
                 Documents::closure6((), ());
                 ()
@@ -1000,12 +1022,12 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::Mut3>,
                 LrcPtr<Documents::Mut4>,
                 Option<i64>,
-            ) = getValue(Documents::TraceState::trace_state().get().clone());
+            ) = Documents::TraceState::trace_state().get().clone().unwrap();
             let v35: Documents::US0 = (patternInput.4.clone()).l0.get().clone();
-            if (patternInput.2.clone()).l0.get().clone() == false {
+            if ((patternInput.2.clone()).l0.get().clone()) == false {
                 false
             } else {
-                find(
+                (find(
                     v0_1,
                     ofSeq(ofList(ofArray(new_array(&[
                         LrcPtr::new((Documents::US0::US0_0, 0_i32)),
@@ -1014,7 +1036,7 @@ mod module_2555ccf7 {
                         LrcPtr::new((Documents::US0::US0_3, 3_i32)),
                         LrcPtr::new((Documents::US0::US0_4, 4_i32)),
                     ])))),
-                ) >= find(
+                )) >= (find(
                     v35,
                     ofSeq(ofList(ofArray(new_array(&[
                         LrcPtr::new((Documents::US0::US0_0, 0_i32)),
@@ -1023,22 +1045,22 @@ mod module_2555ccf7 {
                         LrcPtr::new((Documents::US0::US0_3, 3_i32)),
                         LrcPtr::new((Documents::US0::US0_4, 4_i32)),
                     ])))),
-                )
+                ))
             }
         }
         pub fn closure7(unitVar: (), v0_1: i64) -> Documents::US2 {
             Documents::US2::US2_0(v0_1)
         }
-        pub fn method8() -> Func1<i64, Documents::US2> {
+        pub fn method9() -> Func1<i64, Documents::US2> {
             Func1::new(move |v: i64| Documents::closure7((), v))
         }
-        pub fn method9() -> string {
+        pub fn method10() -> string {
             string("hh:mm:ss")
         }
-        pub fn method10() -> string {
+        pub fn method11() -> string {
             string("HH:mm:ss")
         }
-        pub fn method7(
+        pub fn method8(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -1047,17 +1069,17 @@ mod module_2555ccf7 {
             v5: Option<i64>,
         ) -> string {
             let v20: Documents::US2 =
-                defaultValue(Documents::US2::US2_1, map(Documents::method8(), v5));
+                defaultValue(Documents::US2::US2_1, map(Documents::method9(), v5));
             let v117: DateTime = match &v20 {
                 Documents::US2::US2_0(v20_0_0) => {
                     let v77: TimeSpan = TimeSpan::new_ticks(
-                        {
+                        ({
                             let _arg: DateTime = DateTime::now();
                             _arg.ticks()
-                        } - match &v20 {
+                        }) - (match &v20 {
                             Documents::US2::US2_0(x) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }),
                     );
                     DateTime::new_ymdhms_milli(
                         1_i32,
@@ -1071,25 +1093,25 @@ mod module_2555ccf7 {
                 }
                 _ => DateTime::now(),
             };
-            let v118: string = Documents::method9();
-            let provider: string = if v118.clone() == string("") {
+            let v118: string = Documents::method10();
+            let provider: string = if (v118.clone()) == string("") {
                 string("M-d-y hh:mm:ss tt")
             } else {
                 v118
             };
             v117.toString(provider)
         }
-        pub fn method13() -> string {
+        pub fn method14() -> string {
             string("")
         }
         pub fn closure8(v0_1: LrcPtr<Documents::Mut3>, v1_1: string, unitVar: ()) {
-            let v3: string = append(v0_1.l0.get().clone(), v1_1);
+            let v3: string = append((v0_1.l0.get().clone()), (v1_1));
             v0_1.l0.set(v3);
             ()
         }
-        pub fn method12(v0_1: char) -> string {
+        pub fn method13(v0_1: char) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v8: () = {
                 Documents::closure8(v2.clone(), sprintf!("{}", v0_1), ());
@@ -1097,50 +1119,50 @@ mod module_2555ccf7 {
             };
             v2.l0.get().clone()
         }
-        pub fn method14() -> string {
+        pub fn method15() -> string {
             string("\u{001b}[0m")
         }
-        pub fn method11() -> string {
-            let v6: string = Documents::method12(getCharAt(toLower(string("Info")), 0_i32));
+        pub fn method12() -> string {
+            let v6: string = Documents::method13(getCharAt(toLower(string("Info")), 0_i32));
             let v9: &str = inline_colorization::color_bright_green;
             let v12: &str = &*v6;
             let v35: &str = inline_colorization::color_reset;
             let v37: std::string::String = format!("{}{}{}", v9, v12, v35);
             fable_library_rust::String_::fromString(v37)
         }
-        pub fn method16(v0_1: Array<string>) -> string {
+        pub fn method17(v0_1: Array<string>) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v9: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v2.clone(), string("{ "), ());
                 ()
             };
             let v18: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("args")), ());
+                Documents::closure8(v2.clone(), string("args"), ());
                 ()
             };
             let v27: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v2.clone(), string(" = "), ());
                 ()
             };
             let v38: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", sprintf!("{:?}", v0_1)), ());
+                Documents::closure8(v2.clone(), sprintf!("{:?}", v0_1), ());
                 ()
             };
             let v47: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v2.clone(), string(" }"), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method17(v0_1: string) -> string {
+        pub fn method18(v0_1: string) -> string {
             trimEndChars(
                 trimStartChars(v0_1, toArray(empty::<char>())),
                 toArray(ofArray(new_array(&[' ', '/']))),
             )
         }
-        pub fn method15(
+        pub fn method16(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -1151,8 +1173,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: Array<string>,
         ) -> string {
-            let v9: string = Documents::method16(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method17(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -1162,7 +1184,7 @@ mod module_2555ccf7 {
             ))
         }
         pub fn closure9(v0_1: LrcPtr<Documents::Mut0>, unitVar: ()) {
-            let v2: i64 = v0_1.l0.get().clone() + 1_i64;
+            let v2: i64 = (v0_1.l0.get().clone()) + 1_i64;
             v0_1.l0.set(v2);
             ()
         }
@@ -1176,7 +1198,7 @@ mod module_2555ccf7 {
             };
             ()
         }
-        pub fn method18(v0_1: string) {
+        pub fn method19(v0_1: string) {
             let v3: () = {
                 Documents::closure6((), ());
                 ()
@@ -1188,17 +1210,16 @@ mod module_2555ccf7 {
                 LrcPtr<Documents::Mut3>,
                 LrcPtr<Documents::Mut4>,
                 Option<i64>,
-            ) = getValue(Documents::TraceState::trace_state().get().clone());
+            ) = Documents::TraceState::trace_state().get().clone().unwrap();
             let v37: () = {
                 Documents::closure9(patternInput.0.clone(), ());
                 ()
             };
             println!("{}", v0_1.clone());
-            ();
             ((patternInput.1.clone()).l0.get().clone())(v0_1)
         }
         pub fn closure5(v0_1: Array<string>, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_2) {
+            if Documents::method7(Documents::US0::US0_2) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -1210,51 +1231,45 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method15(
+                Documents::method19(Documents::method16(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method11(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method12(),
                     v0_1,
                 ))
             };
         }
-        pub fn method19() -> string {
+        pub fn method20() -> string {
             string("source-dir")
         }
         pub fn closure12(unitVar: (), v0_1: std::string::String) -> Documents::US6 {
             Documents::US6::US6_0(v0_1)
         }
-        pub fn method20() -> Func1<std::string::String, Documents::US6> {
+        pub fn method21() -> Func1<std::string::String, Documents::US6> {
             Func1::new(move |v: std::string::String| Documents::closure12((), v))
         }
-        pub fn method21() -> string {
+        pub fn method22() -> string {
             string("dist-dir")
         }
-        pub fn method22() -> string {
+        pub fn method23() -> string {
             string("cache-dir")
         }
-        pub fn method23() -> string {
+        pub fn method24() -> string {
             string("hangul-spec")
         }
-        pub fn method27(v0_1: string) -> string {
-            v0_1
-        }
-        pub fn method26(v0_1: string, v1_1: string) -> (string, string) {
-            (v1_1, Documents::method27(v0_1))
-        }
-        pub fn method25(v0_1: string, v1_1: string) -> string {
+        pub fn method26(v0_1: string, v1_1: string) -> string {
             let v5: &str = &*v0_1;
             let v29: std::string::String = String::from(v5);
             let v53: std::path::PathBuf = std::path::PathBuf::from(v29);
@@ -1265,7 +1280,7 @@ mod module_2555ccf7 {
             let v151: std::string::String = format!("{}", v127);
             fable_library_rust::String_::fromString(v151)
         }
-        pub fn method29(v0_1: string) -> bool {
+        pub fn method28(v0_1: string) -> bool {
             let v4: &str = &*v0_1;
             let v28: std::string::String = String::from(v4);
             let v69: std::path::PathBuf = std::path::PathBuf::from(v28);
@@ -1275,7 +1290,7 @@ mod module_2555ccf7 {
                 false
             }
         }
-        pub fn method31(v0_1: string) -> Option<string> {
+        pub fn method29(v0_1: string) -> Option<string> {
             let v4: &str = &*v0_1;
             let v28: std::string::String = String::from(v4);
             let v52: std::path::PathBuf = std::path::PathBuf::from(v28);
@@ -1292,38 +1307,33 @@ mod module_2555ccf7 {
             });
             _optionm_map_
         }
-        pub fn closure13(unitVar: (), v0_1: string) -> Option<string> {
-            Documents::method31(v0_1)
-        }
-        pub fn method30() -> Func1<string, Option<string>> {
-            Func1::new(move |v: string| Documents::closure13((), v))
-        }
-        pub fn method32(v0_1: string, v1_1: string, v2: string) -> Documents::US7 {
+        pub fn method30(v0_1: string, v1_1: string, v2: string) -> Documents::US7 {
             let v0_1: MutCell<string> = MutCell::new(v0_1.clone());
             let v1_1: MutCell<string> = MutCell::new(v1_1.clone());
             let v2: MutCell<string> = MutCell::new(v2.clone());
-            '_method32: loop {
-                break '_method32 (if Documents::method29(Documents::method25(
+            '_method30: loop {
+                break '_method30 (if Documents::method28(Documents::method26(
                     v2.get().clone(),
                     v0_1.get().clone(),
                 )) {
                     Documents::US7::US7_0(v2.get().clone())
                 } else {
-                    let v7: Option<string> = (Documents::method30())(v2.get().clone());
-                    let v21: Documents::US5 =
-                        defaultValue(Documents::US5::US5_1, map(Documents::method5(), v7));
-                    match &v21 {
-                        Documents::US5::US5_0(v21_0_0) => {
+                    let v6: Option<string> = Documents::method29(v2.get().clone());
+                    let v20: Documents::US5 =
+                        defaultValue(Documents::US5::US5_1, map(Documents::method6(), v6));
+                    match &v20 {
+                        Documents::US5::US5_0(v20_0_0) => {
                             let v0_1_temp: string = v0_1.get().clone();
                             let v1_1_temp: string = v1_1.get().clone();
-                            let v2_temp: string = match &v21 {
+                            let v2_temp: string = match &v20 {
                                 Documents::US5::US5_0(x) => x.clone(),
                                 _ => unreachable!(),
-                            };
+                            }
+                            .clone();
                             v0_1.set(v0_1_temp);
                             v1_1.set(v1_1_temp);
                             v2.set(v2_temp);
-                            continue '_method32;
+                            continue '_method30;
                         }
                         _ => Documents::US7::US7_1(sprintf!(
                             "No parent for {} \'{}\' at \'{}\' (until \'{}\')",
@@ -1336,21 +1346,22 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method28(v0_1: string, v1_1: string) -> Documents::US7 {
-            if Documents::method29(Documents::method25(v1_1.clone(), v0_1.clone())) {
+        pub fn method27(v0_1: string, v1_1: string) -> Documents::US7 {
+            if Documents::method28(Documents::method26(v1_1.clone(), v0_1.clone())) {
                 Documents::US7::US7_0(v1_1.clone())
             } else {
-                let v6: Option<string> = (Documents::method30())(v1_1.clone());
-                let v20: Documents::US5 =
-                    defaultValue(Documents::US5::US5_1, map(Documents::method5(), v6));
-                match &v20 {
-                    Documents::US5::US5_0(v20_0_0) => Documents::method32(
+                let v5: Option<string> = Documents::method29(v1_1.clone());
+                let v19: Documents::US5 =
+                    defaultValue(Documents::US5::US5_1, map(Documents::method6(), v5));
+                match &v19 {
+                    Documents::US5::US5_0(v19_0_0) => Documents::method30(
                         v0_1.clone(),
                         v1_1.clone(),
-                        match &v20 {
+                        match &v19 {
                             Documents::US5::US5_0(x) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }
+                        .clone(),
                     ),
                     _ => Documents::US7::US7_1(sprintf!(
                         "No parent for {} \'{}\' at \'{}\' (until \'{}\')",
@@ -1362,41 +1373,41 @@ mod module_2555ccf7 {
                 }
             }
         }
-        pub fn method33() -> string {
-            let v6: string = Documents::method12(getCharAt(toLower(string("Warning")), 0_i32));
+        pub fn method31() -> string {
+            let v6: string = Documents::method13(getCharAt(toLower(string("Warning")), 0_i32));
             let v9: &str = inline_colorization::color_yellow;
             let v12: &str = &*v6;
             let v35: &str = inline_colorization::color_reset;
             let v37: std::string::String = format!("{}{}{}", v9, v12, v35);
             fable_library_rust::String_::fromString(v37)
         }
-        pub fn method35(v0_1: string) -> string {
+        pub fn method33(v0_1: string) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v9: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v2.clone(), string("{ "), ());
                 ()
             };
             let v18: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("error")), ());
+                Documents::closure8(v2.clone(), string("error"), ());
                 ()
             };
             let v27: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v2.clone(), string(" = "), ());
                 ()
             };
             let v35: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v2.clone(), v0_1, ());
                 ()
             };
             let v44: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v2.clone(), string(" }"), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method34(
+        pub fn method32(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -1407,8 +1418,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: string,
         ) -> string {
-            let v9: string = Documents::method35(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method33(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -1417,8 +1428,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure14(v0_1: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_3) {
+        pub fn closure13(v0_1: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_3) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -1430,67 +1441,63 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method34(
+                Documents::method19(Documents::method32(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method33(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method31(),
                     v0_1,
                 ))
             };
         }
-        pub fn method36() -> string {
+        pub fn method34() -> string {
             let v2: Result<std::path::PathBuf, std::io::Error> = std::env::current_dir();
             let v5: std::path::PathBuf = v2.unwrap();
             let v19: std::path::Display = v5.display();
             let v43: std::string::String = format!("{}", v19);
             fable_library_rust::String_::fromString(v43)
         }
-        pub fn method42(v0_1: std::io::Error) -> string {
+        pub fn method40(v0_1: std::io::Error) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v5: std::string::String = format!("{:#?}", v0_1);
             let v38: () = {
-                Documents::closure8(
-                    v2.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v5)),
-                    (),
-                );
+                Documents::closure8(v2.clone(), fable_library_rust::String_::fromString(v5), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn closure15(unitVar: (), v0_1: std::io::Error) -> string {
-            Documents::method42(v0_1)
+        pub fn closure14(unitVar: (), v0_1: std::io::Error) -> string {
+            Documents::method40(v0_1)
         }
-        pub fn method41() -> Func1<std::io::Error, string> {
-            Func1::new(move |v: std::io::Error| Documents::closure15((), v))
+        pub fn method39() -> Func1<std::io::Error, string> {
+            Func1::new(move |v: std::io::Error| Documents::closure14((), v))
         }
-        pub fn closure16(unitVar: (), v0_1: std::path::PathBuf) -> Documents::US8 {
+        pub fn closure15(unitVar: (), v0_1: std::path::PathBuf) -> Documents::US8 {
             Documents::US8::US8_0(v0_1)
         }
-        pub fn method43() -> Func1<std::path::PathBuf, Documents::US8> {
-            Func1::new(move |v: std::path::PathBuf| Documents::closure16((), v))
+        pub fn method41() -> Func1<std::path::PathBuf, Documents::US8> {
+            Func1::new(move |v: std::path::PathBuf| Documents::closure15((), v))
         }
-        pub fn closure17(unitVar: (), v0_1: string) -> Documents::US8 {
+        pub fn closure16(unitVar: (), v0_1: string) -> Documents::US8 {
             Documents::US8::US8_1(v0_1)
         }
-        pub fn method44() -> Func1<string, Documents::US8> {
-            Func1::new(move |v: string| Documents::closure17((), v))
+        pub fn method42() -> Func1<string, Documents::US8> {
+            Func1::new(move |v: string| Documents::closure16((), v))
         }
-        pub fn method47(v0_1: string) -> string {
+        pub fn method45(v0_1: string) -> string {
             let v4: &str = &*v0_1;
             let v28: std::string::String = String::from(v4);
             let v52: std::path::PathBuf = std::path::PathBuf::from(v28);
@@ -1509,38 +1516,39 @@ mod module_2555ccf7 {
             });
             let v115: Option<string> = _optionm_map_;
             let v129: Documents::US5 =
-                defaultValue(Documents::US5::US5_1, map(Documents::method5(), v115));
+                defaultValue(Documents::US5::US5_1, map(Documents::method6(), v115));
             match &v129 {
                 Documents::US5::US5_0(v129_0_0) => match &v129 {
                     Documents::US5::US5_0(x) => x.clone(),
                     _ => unreachable!(),
-                },
+                }
+                .clone(),
                 _ => string(""),
             }
         }
-        pub fn method48(v0_1: string) -> string {
+        pub fn method46(v0_1: string) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v8: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v2.clone(), v0_1, ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method46(
+        pub fn method44(
             v0_1: string,
             v1_1: Func2<u8, string, Result<std::path::PathBuf, std::io::Error>>,
             v2: u8,
             v3: string,
             v4: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            let v5: string = Documents::method47(v4.clone());
-            let v6: Option<string> = Documents::method31(v4.clone());
+            let v5: string = Documents::method45(v4.clone());
+            let v6: Option<string> = Documents::method29(v4.clone());
             let v20: Documents::US5 =
-                defaultValue(Documents::US5::US5_1, map(Documents::method5(), v6));
-            let v24: string = Documents::method48(v3);
-            if v2 >= 11_u8 {
+                defaultValue(Documents::US5::US5_1, map(Documents::method6(), v6));
+            let v24: string = Documents::method46(v3);
+            if (v2) >= 11_u8 {
                 let v26: string = sprintf!(
                     "file_system.read_link / path: {} / n: {} / path\': {} / name: {}",
                     v0_1.clone(),
@@ -1552,25 +1560,20 @@ mod module_2555ccf7 {
                 Err(v29)
             } else {
                 if let Documents::US5::US5_0(v20_0_0) = &v20 {
-                    if v4.clone() != string("") {
-                        let v72: Result<std::path::PathBuf, std::io::Error> = v1_1(
-                            v2 + 1_u8,
-                            match &v20 {
-                                Documents::US5::US5_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            },
-                        );
-                        let v73 = Documents::method41();
+                    if (v4.clone()) != string("") {
+                        let v72: Result<std::path::PathBuf, std::io::Error> =
+                            v1_1((v2) + 1_u8, v20_0_0.clone());
+                        let v73 = Documents::method39();
                         let v85: Result<std::path::PathBuf, string> = v72.map_err(|x| v73(x));
-                        let v88 = Documents::method43();
-                        let v89 = Documents::method44();
+                        let v88 = Documents::method41();
+                        let v89 = Documents::method42();
                         let v90: Documents::US8 = match &v85 {
                             Err(v85_1_0) => v89(v85_1_0.clone()),
                             Ok(v85_0_0) => v88(v85_0_0.clone()),
                         };
                         match &v90 {
                             Documents::US8::US8_0(v90_0_0) => {
-                                let v119: string = Documents::method25(
+                                let v119: string = Documents::method26(
                                     toString(v90_0_0.clone().display()),
                                     v5.clone(),
                                 );
@@ -1603,75 +1606,75 @@ mod module_2555ccf7 {
                 } else {
                     let v288: string =
                         sprintf!("file_system.read_link / run / The file or directory is not a reparse point. / path: {} / error: {} / path\': {} / name: {}",
-                                 v0_1, v24, v4, v5.clone());
+                                 v0_1, v24.clone(), v4, v5.clone());
                     let v291: std::io::Error =
                         std::io::Error::new(std::io::ErrorKind::Other, &*v288);
                     Err(v291)
                 }
             }
         }
-        pub fn method45(
+        pub fn method43(
             v0_1: string,
             v1_1: u8,
             v2: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
             let v5: Result<std::path::PathBuf, std::io::Error> = std::fs::read_link(&*v2.clone());
-            let v6 = Documents::method41();
+            let v6 = Documents::method39();
             let v18: Result<std::path::PathBuf, string> = v5.map_err(|x| v6(x));
-            let v21 = Documents::method43();
-            let v22 = Documents::method44();
+            let v21 = Documents::method41();
+            let v22 = Documents::method42();
             let v23: Documents::US8 = match &v18 {
                 Err(v18_1_0) => v22(v18_1_0.clone()),
                 Ok(v18_0_0) => v21(v18_0_0.clone()),
             };
             match &v23 {
                 Documents::US8::US8_0(v23_0_0) => Ok(v23_0_0.clone()),
-                Documents::US8::US8_1(v23_1_0) => Documents::method46(
+                Documents::US8::US8_1(v23_1_0) => Documents::method44(
                     v0_1.clone(),
                     Func2::new({
                         let v0_1 = v0_1.clone();
                         move |b0: u8, b1: string| {
                             (Func1::new({
                                 let v0_1 = v0_1.clone();
-                                move |v: u8| Documents::closure18(v0_1.clone(), v)
+                                move |v: u8| Documents::closure17(v0_1.clone(), v)
                             }))(b0)(b1)
                         }
                     }),
                     v1_1,
                     v23_1_0.clone(),
-                    v2,
+                    v2.clone(),
                 ),
             }
         }
-        pub fn closure19(
+        pub fn closure18(
             v0_1: string,
             v1_1: u8,
             v2: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            Documents::method45(v0_1, v1_1, v2)
+            Documents::method43(v0_1, v1_1, v2)
         }
-        pub fn closure18(
+        pub fn closure17(
             v0_1: string,
             v1_1: u8,
         ) -> Func1<string, Result<std::path::PathBuf, std::io::Error>> {
             Func1::new({
                 let v0_1 = v0_1.clone();
                 let v1_1 = v1_1.clone();
-                move |v: string| Documents::closure19(v0_1.clone(), v1_1, v)
+                move |v: string| Documents::closure18(v0_1.clone(), v1_1, v)
             })
         }
-        pub fn method49(
+        pub fn method47(
             v0_1: string,
             v1_1: Func2<u8, string, Result<std::path::PathBuf, std::io::Error>>,
             v2: u8,
             v3: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            let v4: string = Documents::method47(v0_1.clone());
-            let v5: Option<string> = Documents::method31(v0_1.clone());
+            let v4: string = Documents::method45(v0_1.clone());
+            let v5: Option<string> = Documents::method29(v0_1.clone());
             let v19: Documents::US5 =
-                defaultValue(Documents::US5::US5_1, map(Documents::method5(), v5));
-            let v23: string = Documents::method48(v3);
-            if v2 >= 11_u8 {
+                defaultValue(Documents::US5::US5_1, map(Documents::method6(), v5));
+            let v23: string = Documents::method46(v3);
+            if (v2) >= 11_u8 {
                 let v25: string = sprintf!(
                     "file_system.read_link / path: {} / n: {} / path\': {} / name: {}",
                     v0_1.clone(),
@@ -1683,25 +1686,20 @@ mod module_2555ccf7 {
                 Err(v28)
             } else {
                 if let Documents::US5::US5_0(v19_0_0) = &v19 {
-                    if v0_1.clone() != string("") {
-                        let v71: Result<std::path::PathBuf, std::io::Error> = v1_1(
-                            v2 + 1_u8,
-                            match &v19 {
-                                Documents::US5::US5_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            },
-                        );
-                        let v72 = Documents::method41();
+                    if (v0_1.clone()) != string("") {
+                        let v71: Result<std::path::PathBuf, std::io::Error> =
+                            v1_1((v2) + 1_u8, v19_0_0.clone());
+                        let v72 = Documents::method39();
                         let v84: Result<std::path::PathBuf, string> = v71.map_err(|x| v72(x));
-                        let v87 = Documents::method43();
-                        let v88 = Documents::method44();
+                        let v87 = Documents::method41();
+                        let v88 = Documents::method42();
                         let v89: Documents::US8 = match &v84 {
                             Err(v84_1_0) => v88(v84_1_0.clone()),
                             Ok(v84_0_0) => v87(v84_0_0.clone()),
                         };
                         match &v89 {
                             Documents::US8::US8_0(v89_0_0) => {
-                                let v118: string = Documents::method25(
+                                let v118: string = Documents::method26(
                                     toString(v89_0_0.clone().display()),
                                     v4.clone(),
                                 );
@@ -1734,33 +1732,33 @@ mod module_2555ccf7 {
                 } else {
                     let v287: string =
                         sprintf!("file_system.read_link / run / The file or directory is not a reparse point. / path: {} / error: {} / path\': {} / name: {}",
-                                 v0_1.clone(), v23, v0_1, v4.clone());
+                                 v0_1.clone(), v23.clone(), v0_1, v4.clone());
                     let v290: std::io::Error =
                         std::io::Error::new(std::io::ErrorKind::Other, &*v287);
                     Err(v290)
                 }
             }
         }
-        pub fn method40(v0_1: string, v1_1: u8) -> Result<std::path::PathBuf, std::io::Error> {
+        pub fn method38(v0_1: string, v1_1: u8) -> Result<std::path::PathBuf, std::io::Error> {
             let v4: Result<std::path::PathBuf, std::io::Error> = std::fs::read_link(&*v0_1.clone());
-            let v5 = Documents::method41();
+            let v5 = Documents::method39();
             let v17: Result<std::path::PathBuf, string> = v4.map_err(|x| v5(x));
-            let v20 = Documents::method43();
-            let v21 = Documents::method44();
+            let v20 = Documents::method41();
+            let v21 = Documents::method42();
             let v22: Documents::US8 = match &v17 {
                 Err(v17_1_0) => v21(v17_1_0.clone()),
                 Ok(v17_0_0) => v20(v17_0_0.clone()),
             };
             match &v22 {
                 Documents::US8::US8_0(v22_0_0) => Ok(v22_0_0.clone()),
-                Documents::US8::US8_1(v22_1_0) => Documents::method49(
+                Documents::US8::US8_1(v22_1_0) => Documents::method47(
                     v0_1.clone(),
                     Func2::new({
                         let v0_1 = v0_1.clone();
                         move |b0: u8, b1: string| {
                             (Func1::new({
                                 let v0_1 = v0_1.clone();
-                                move |v: u8| Documents::closure18(v0_1.clone(), v)
+                                move |v: u8| Documents::closure17(v0_1.clone(), v)
                             }))(b0)(b1)
                         }
                     }),
@@ -1769,19 +1767,28 @@ mod module_2555ccf7 {
                 ),
             }
         }
-        pub fn method52(
+        pub fn method49(v0_1: ()) -> i32 {
+            unbox::<i32>(&getZero())
+        }
+        pub fn method50() -> i32 {
+            unbox::<i32>(&getZero())
+        }
+        pub fn method51(v0_1: i32, v1_1: i32) -> bool {
+            unbox::<bool>(&getZero())
+        }
+        pub fn method53(
             v0_1: string,
             v1_1: Func2<u8, string, Result<std::path::PathBuf, std::io::Error>>,
             v2: u8,
             v3: std::io::Error,
             v4: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            let v5: string = Documents::method47(v4.clone());
-            let v6: Option<string> = Documents::method31(v4.clone());
+            let v5: string = Documents::method45(v4.clone());
+            let v6: Option<string> = Documents::method29(v4.clone());
             let v20: Documents::US5 =
-                defaultValue(Documents::US5::US5_1, map(Documents::method5(), v6));
-            let v24: string = Documents::method42(v3);
-            if v2 >= 11_u8 {
+                defaultValue(Documents::US5::US5_1, map(Documents::method6(), v6));
+            let v24: string = Documents::method40(v3);
+            if (v2) >= 11_u8 {
                 let v26: string = sprintf!(
                     "file_system.read_link / path: {} / n: {} / path\': {} / name: {}",
                     v0_1.clone(),
@@ -1793,25 +1800,20 @@ mod module_2555ccf7 {
                 Err(v29)
             } else {
                 if let Documents::US5::US5_0(v20_0_0) = &v20 {
-                    if v4.clone() != string("") {
-                        let v72: Result<std::path::PathBuf, std::io::Error> = v1_1(
-                            v2 + 1_u8,
-                            match &v20 {
-                                Documents::US5::US5_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            },
-                        );
-                        let v73 = Documents::method41();
+                    if (v4.clone()) != string("") {
+                        let v72: Result<std::path::PathBuf, std::io::Error> =
+                            v1_1((v2) + 1_u8, v20_0_0.clone());
+                        let v73 = Documents::method39();
                         let v85: Result<std::path::PathBuf, string> = v72.map_err(|x| v73(x));
-                        let v88 = Documents::method43();
-                        let v89 = Documents::method44();
+                        let v88 = Documents::method41();
+                        let v89 = Documents::method42();
                         let v90: Documents::US8 = match &v85 {
                             Err(v85_1_0) => v89(v85_1_0.clone()),
                             Ok(v85_0_0) => v88(v85_0_0.clone()),
                         };
                         match &v90 {
                             Documents::US8::US8_0(v90_0_0) => {
-                                let v119: string = Documents::method25(
+                                let v119: string = Documents::method26(
                                     toString(v90_0_0.clone().display()),
                                     v5.clone(),
                                 );
@@ -1844,76 +1846,74 @@ mod module_2555ccf7 {
                 } else {
                     let v288: string =
                         sprintf!("file_system.read_link / run / The file or directory is not a reparse point. / path: {} / error: {} / path\': {} / name: {}",
-                                 v0_1, v24, v4, v5.clone());
+                                 v0_1, v24.clone(), v4, v5.clone());
                     let v291: std::io::Error =
                         std::io::Error::new(std::io::ErrorKind::Other, &*v288);
                     Err(v291)
                 }
             }
         }
-        pub fn method51(
+        pub fn method52(
             v0_1: string,
             v1_1: u8,
             v2: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            let v4: () = defaultOf();
-            let v30: i32 = unbox::<i32>(&defaultOf());
-            let v55: i32 = unbox::<i32>(&defaultOf());
-            let v99: bool = unbox::<bool>(&defaultOf());
-            if v99 {
-                let v105: () = defaultOf();
-                let v155: std::path::PathBuf = defaultOf();
-                Ok(v155)
+            let v30: i32 = Documents::method49(getZero());
+            let v32: bool = Documents::method51(Documents::method50(), v30);
+            if v32 {
+                let v34: () = getZero();
+                let v86: std::path::PathBuf = getZero();
+                Ok(v86)
             } else {
-                let v172: string =
+                let v103: string =
                     sprintf!("file_system.read_link / Fsharp / The file or directory is not a reparse point. / path: {} / result: {} / path\': {} / n: {}",
-                             v0_1.clone(), v99, v2.clone(), v1_1);
-                Documents::method52(
+                             v0_1.clone(), v32, v2.clone(), v1_1);
+                Documents::method53(
                     v0_1.clone(),
                     Func2::new({
                         let v0_1 = v0_1.clone();
                         move |b0: u8, b1: string| {
                             (Func1::new({
                                 let v0_1 = v0_1.clone();
-                                move |v: u8| Documents::closure20(v0_1.clone(), v)
+                                move |v: u8| Documents::closure19(v0_1.clone(), v)
                             }))(b0)(b1)
                         }
                     }),
                     v1_1,
-                    std::io::Error::new(std::io::ErrorKind::Other, &*v172),
+                    std::io::Error::new(std::io::ErrorKind::Other, &*v103),
                     v2,
                 )
             }
         }
-        pub fn closure21(
+        pub fn closure20(
             v0_1: string,
             v1_1: u8,
             v2: string,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            Documents::method51(v0_1, v1_1, v2)
+            Documents::method52(v0_1, v1_1, v2)
         }
-        pub fn closure20(
+        pub fn closure19(
             v0_1: string,
             v1_1: u8,
         ) -> Func1<string, Result<std::path::PathBuf, std::io::Error>> {
             Func1::new({
                 let v0_1 = v0_1.clone();
                 let v1_1 = v1_1.clone();
-                move |v: string| Documents::closure21(v0_1.clone(), v1_1, v)
+                move |v: string| Documents::closure20(v0_1.clone(), v1_1, v)
             })
         }
-        pub fn method53(
+        pub fn method54(
             v0_1: string,
             v1_1: Func2<u8, string, Result<std::path::PathBuf, std::io::Error>>,
             v2: u8,
             v3: std::io::Error,
         ) -> Result<std::path::PathBuf, std::io::Error> {
-            let v4: string = Documents::method47(v0_1.clone());
-            let v5: Option<string> = Documents::method31(v0_1.clone());
+            let v4: string = Documents::method45(v0_1.clone());
+            let v5: Option<string> = Documents::method29(v0_1.clone());
             let v19: Documents::US5 =
-                defaultValue(Documents::US5::US5_1, map(Documents::method5(), v5));
-            let v23: string = Documents::method42(v3);
-            if v2 >= 11_u8 {
+                defaultValue(Documents::US5::US5_1, map(Documents::method6(), v5));
+            let v23: string = Documents::method40(v3);
+            if (v2) >= 11_u8 {
                 let v25: string = sprintf!(
                     "file_system.read_link / path: {} / n: {} / path\': {} / name: {}",
                     v0_1.clone(),
@@ -1925,25 +1925,20 @@ mod module_2555ccf7 {
                 Err(v28)
             } else {
                 if let Documents::US5::US5_0(v19_0_0) = &v19 {
-                    if v0_1.clone() != string("") {
-                        let v71: Result<std::path::PathBuf, std::io::Error> = v1_1(
-                            v2 + 1_u8,
-                            match &v19 {
-                                Documents::US5::US5_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            },
-                        );
-                        let v72 = Documents::method41();
+                    if (v0_1.clone()) != string("") {
+                        let v71: Result<std::path::PathBuf, std::io::Error> =
+                            v1_1((v2) + 1_u8, v19_0_0.clone());
+                        let v72 = Documents::method39();
                         let v84: Result<std::path::PathBuf, string> = v71.map_err(|x| v72(x));
-                        let v87 = Documents::method43();
-                        let v88 = Documents::method44();
+                        let v87 = Documents::method41();
+                        let v88 = Documents::method42();
                         let v89: Documents::US8 = match &v84 {
                             Err(v84_1_0) => v88(v84_1_0.clone()),
                             Ok(v84_0_0) => v87(v84_0_0.clone()),
                         };
                         match &v89 {
                             Documents::US8::US8_0(v89_0_0) => {
-                                let v118: string = Documents::method25(
+                                let v118: string = Documents::method26(
                                     toString(v89_0_0.clone().display()),
                                     v4.clone(),
                                 );
@@ -1976,75 +1971,73 @@ mod module_2555ccf7 {
                 } else {
                     let v287: string =
                         sprintf!("file_system.read_link / run / The file or directory is not a reparse point. / path: {} / error: {} / path\': {} / name: {}",
-                                 v0_1.clone(), v23, v0_1, v4.clone());
+                                 v0_1.clone(), v23.clone(), v0_1, v4.clone());
                     let v290: std::io::Error =
                         std::io::Error::new(std::io::ErrorKind::Other, &*v287);
                     Err(v290)
                 }
             }
         }
-        pub fn method50(v0_1: string, v1_1: u8) -> Result<std::path::PathBuf, std::io::Error> {
-            let v3: () = defaultOf();
-            let v29: i32 = unbox::<i32>(&defaultOf());
-            let v54: i32 = unbox::<i32>(&defaultOf());
-            let v98: bool = unbox::<bool>(&defaultOf());
-            if v98 {
-                let v104: () = defaultOf();
-                let v154: std::path::PathBuf = defaultOf();
-                Ok(v154)
+        pub fn method48(v0_1: string, v1_1: u8) -> Result<std::path::PathBuf, std::io::Error> {
+            let v29: i32 = Documents::method49(getZero());
+            let v31: bool = Documents::method51(Documents::method50(), v29);
+            if v31 {
+                let v33: () = getZero();
+                let v85: std::path::PathBuf = getZero();
+                Ok(v85)
             } else {
-                let v171: string =
+                let v102: string =
                     sprintf!("file_system.read_link / Fsharp / The file or directory is not a reparse point. / path: {} / result: {} / path\': {} / n: {}",
-                             v0_1.clone(), v98, v0_1.clone(), v1_1);
-                Documents::method53(
+                             v0_1.clone(), v31, v0_1.clone(), v1_1);
+                Documents::method54(
                     v0_1.clone(),
                     Func2::new({
                         let v0_1 = v0_1.clone();
                         move |b0: u8, b1: string| {
                             (Func1::new({
                                 let v0_1 = v0_1.clone();
-                                move |v: u8| Documents::closure20(v0_1.clone(), v)
+                                move |v: u8| Documents::closure19(v0_1.clone(), v)
                             }))(b0)(b1)
                         }
                     }),
                     v1_1,
-                    std::io::Error::new(std::io::ErrorKind::Other, &*v171),
+                    std::io::Error::new(std::io::ErrorKind::Other, &*v102),
                 )
             }
         }
-        pub fn method39(v0_1: string) -> Result<std::path::PathBuf, std::io::Error> {
-            if Documents::method29(v0_1.clone()) {
+        pub fn method37(v0_1: string) -> Result<std::path::PathBuf, std::io::Error> {
+            if Documents::method28(v0_1.clone()) {
                 std::fs::read_link(&*v0_1.clone())
             } else {
-                Documents::method40(v0_1, 0_u8)
+                Documents::method38(v0_1, 0_u8)
             }
         }
-        pub fn closure22(unitVar: (), v0_1: std::path::PathBuf) -> Documents::US9 {
+        pub fn closure21(unitVar: (), v0_1: std::path::PathBuf) -> Documents::US9 {
             Documents::US9::US9_0(v0_1)
         }
-        pub fn method54() -> Func1<std::path::PathBuf, Documents::US9> {
-            Func1::new(move |v: std::path::PathBuf| Documents::closure22((), v))
+        pub fn method55() -> Func1<std::path::PathBuf, Documents::US9> {
+            Func1::new(move |v: std::path::PathBuf| Documents::closure21((), v))
         }
-        pub fn method56(v0_1: string) -> string {
+        pub fn method57(v0_1: string) -> string {
             v0_1
         }
-        pub fn method55(v0_1: string, v1_1: string, v2: string) -> string {
+        pub fn method56(v0_1: string, v1_1: string, v2: string) -> string {
             let v5: Result<regex::Regex, regex::Error> = regex::Regex::new(&v0_1);
             let v8: regex::Regex = v5.unwrap();
-            let v20: string = Documents::method56(v2);
+            let v20: string = Documents::method57(v2);
             let v22: std::borrow::Cow<str> = v8.replace_all(&*v20, &*v1_1);
             let v24: std::string::String = String::from(v22);
             fable_library_rust::String_::fromString(v24)
         }
-        pub fn method38(v0_1: string) -> string {
-            if v0_1.clone() == string("") {
+        pub fn method36(v0_1: string) -> string {
+            if (v0_1.clone()) == string("") {
                 string("")
             } else {
                 let v3: Result<std::path::PathBuf, std::io::Error> =
-                    Documents::method39(v0_1.clone());
+                    Documents::method37(v0_1.clone());
                 let v6: Option<std::path::PathBuf> = v3.ok();
                 let v31: Documents::US9 =
-                    defaultValue(Documents::US9::US9_1, map(Documents::method54(), v6));
+                    defaultValue(Documents::US9::US9_1, map(Documents::method55(), v6));
                 let v66: string = match &v31 {
                     Documents::US9::US9_0(v31_0_0) => {
                         let v60: string = toString(
@@ -2052,9 +2045,10 @@ mod module_2555ccf7 {
                                 Documents::US9::US9_0(x) => x.clone(),
                                 _ => unreachable!(),
                             }
+                            .clone()
                             .display(),
                         );
-                        if v60.clone() == string("") {
+                        if (v60.clone()) == string("") {
                             v0_1.clone()
                         } else {
                             v60
@@ -2062,249 +2056,248 @@ mod module_2555ccf7 {
                     }
                     _ => v0_1.clone(),
                 };
-                if v66.clone() == string("") {
+                if (v66.clone()) == string("") {
                     string("")
                 } else {
                     let v71: string =
-                        Documents::method55(string("^\\\\\\\\\\?\\\\"), string(""), v66);
+                        Documents::method56(string("^\\\\\\\\\\?\\\\"), string(""), v66);
                     replace(
-                        sprintf!(
-                            "{}{}",
+                        concat(new_array(&[
                             toLower(ofChar(getCharAt(v71.clone(), 0_i32))),
-                            getSlice(v71, Some(1_i32), None::<i32>)
-                        ),
+                            getSlice(v71, Some(1_i32), None::<i32>),
+                        ])),
                         string("\\"),
                         string("/"),
                     )
                 }
             }
         }
-        pub fn method57(v0_1: i32, v1_1: LrcPtr<Documents::Mut5>) -> bool {
-            v1_1.l0.get().clone() < v0_1
+        pub fn method58(v0_1: i32, v1_1: LrcPtr<Documents::Mut5>) -> bool {
+            (v1_1.l0.get().clone()) < (v0_1)
         }
-        pub fn method58(v0_1: i32, v1_1: LrcPtr<Documents::Mut6>) -> bool {
-            v1_1.l0.get().clone() < v0_1
+        pub fn method59(v0_1: i32, v1_1: LrcPtr<Documents::Mut6>) -> bool {
+            (v1_1.l0.get().clone()) < (v0_1)
         }
-        pub fn method59() -> char {
+        pub fn method60() -> char {
             std::path::MAIN_SEPARATOR
         }
-        pub fn method60(v0_1: string) -> string {
+        pub fn method61(v0_1: string) -> string {
             v0_1
         }
-        pub fn method37(v0_1: string) -> string {
+        pub fn method35(v0_1: string) -> string {
             let v4: &str = &*v0_1.clone();
             let v28: std::string::String = String::from(v4);
             let v52: std::path::PathBuf = std::path::PathBuf::from(v28);
-            if v52.exists() == false {
-                let v77: string = Documents::method36();
+            if (v52.exists()) == false {
+                let v77: string = Documents::method34();
                 let v81: Array<string> = split(
-                    Documents::method38(Documents::method25(v77.clone(), v0_1.clone())),
+                    Documents::method36(Documents::method26(v77.clone(), v0_1.clone())),
                     string("/"),
                     -1_i32,
                     0_i32,
                 );
-                let v85: i32 = count_2(v81.clone());
+                let v85: i32 = get_Count(v81.clone());
                 let v86: LrcPtr<Documents::Mut5> = LrcPtr::new(Documents::Mut5 {
                     l0: MutCell::new(0_i32),
                     l1: MutCell::new(0_i32),
                     l2: MutCell::new(new_empty::<string>()),
                 });
-                while Documents::method57(v85, v86.clone()) {
+                while Documents::method58(v85, v86.clone()) {
                     let v88: i32 = v86.l0.get().clone();
-                    let v91: i32 = v88.wrapping_neg() + v85 - 1_i32;
+                    let v91: i32 = ((v88.wrapping_neg()) + (v85)) - 1_i32;
                     let matchValue: i32 = v86.l1.get().clone();
                     let v93: Array<string> = v86.l2.get().clone();
                     let v92: i32 = matchValue;
                     let v94: string = v81[v91].clone();
-                    let patternInput_1: (i32, Array<string>) = if string("..") == v94.clone() {
-                        (v92 + 1_i32, v93.clone())
+                    let patternInput_1: (i32, Array<string>) = if string("..") == (v94.clone()) {
+                        ((v92) + 1_i32, v93.clone())
                     } else {
-                        if string(".") == v94.clone() {
+                        if string(".") == (v94.clone()) {
                             (v92, v93.clone())
                         } else {
-                            if 0_i32 == v92 {
-                                if endsWith(v94.clone(), string(":"), false) {
-                                    let v102: Array<string> = new_array(&[sprintf!(
+                            if 0_i32 == (v92) {
+                                if endsWith3(v94.clone(), string(":"), false) {
+                                    let v104: Array<string> = new_array(&[sprintf!(
                                         "{}:",
                                         getCharAt(v77.clone(), 0_i32)
                                     )]);
-                                    let v103: i32 = count_2(v102.clone());
-                                    let v105: i32 = v103 + count_2(v93.clone());
-                                    let v106: Array<string> = new_init(&string(""), v105);
-                                    let v107: LrcPtr<Documents::Mut6> =
+                                    let v105: i32 = get_Count(v104.clone());
+                                    let v107: i32 = (v105) + (get_Count(v93.clone()));
+                                    let v108: Array<string> = new_init(&string(""), v107);
+                                    let v109: LrcPtr<Documents::Mut6> =
                                         LrcPtr::new(Documents::Mut6 {
                                             l0: MutCell::new(0_i32),
                                         });
-                                    while Documents::method58(v105, v107.clone()) {
-                                        let v109: i32 = v107.l0.get().clone();
-                                        let v114: string = if v109 < v103 {
-                                            v102[v109].clone()
+                                    while Documents::method59(v107, v109.clone()) {
+                                        let v111: i32 = v109.l0.get().clone();
+                                        let v116: string = if (v111) < (v105) {
+                                            v104[v111].clone()
                                         } else {
-                                            let v112: i32 = v109 - v103;
-                                            v93[v112].clone()
+                                            let v114: i32 = (v111) - (v105);
+                                            v93[v114].clone()
                                         };
-                                        v106.get_mut()[v109 as usize] = v114;
+                                        v108.get_mut()[v111 as usize] = v116;
                                         {
-                                            let v115: i32 = v109 + 1_i32;
-                                            v107.l0.set(v115);
+                                            let v117: i32 = (v111) + 1_i32;
+                                            v109.l0.set(v117);
                                             ()
                                         }
                                     }
-                                    (0_i32, v106.clone())
+                                    (0_i32, v108.clone())
                                 } else {
-                                    let v116: Array<string> = new_array(&[v94]);
-                                    let v117: i32 = count_2(v116.clone());
-                                    let v119: i32 = v117 + count_2(v93.clone());
-                                    let v120: Array<string> = new_init(&string(""), v119);
-                                    let v121: LrcPtr<Documents::Mut6> =
+                                    let v118: Array<string> = new_array(&[v94]);
+                                    let v119: i32 = get_Count(v118.clone());
+                                    let v121: i32 = (v119) + (get_Count(v93.clone()));
+                                    let v122: Array<string> = new_init(&string(""), v121);
+                                    let v123: LrcPtr<Documents::Mut6> =
                                         LrcPtr::new(Documents::Mut6 {
                                             l0: MutCell::new(0_i32),
                                         });
-                                    while Documents::method58(v119, v121.clone()) {
-                                        let v123: i32 = v121.l0.get().clone();
-                                        let v128: string = if v123 < v117 {
-                                            v116[v123].clone()
+                                    while Documents::method59(v121, v123.clone()) {
+                                        let v125: i32 = v123.l0.get().clone();
+                                        let v130: string = if (v125) < (v119) {
+                                            v118[v125].clone()
                                         } else {
-                                            let v126: i32 = v123 - v117;
-                                            v93[v126].clone()
+                                            let v128: i32 = (v125) - (v119);
+                                            v93[v128].clone()
                                         };
-                                        v120.get_mut()[v123 as usize] = v128;
+                                        v122.get_mut()[v125 as usize] = v130;
                                         {
-                                            let v129: i32 = v123 + 1_i32;
-                                            v121.l0.set(v129);
+                                            let v131: i32 = (v125) + 1_i32;
+                                            v123.l0.set(v131);
                                             ()
                                         }
                                     }
-                                    (0_i32, v120.clone())
+                                    (0_i32, v122.clone())
                                 }
                             } else {
-                                (v92 - 1_i32, v93.clone())
+                                ((v92) - 1_i32, v93.clone())
                             }
                         }
                     };
-                    let v139: i32 = v88 + 1_i32;
-                    v86.l0.set(v139);
+                    let v141: i32 = (v88) + 1_i32;
+                    v86.l0.set(v141);
                     v86.l1.set(patternInput_1.0.clone());
                     v86.l2.set(patternInput_1.1.clone());
                     ()
                 }
                 {
                     let matchValue_2: i32 = v86.l1.get().clone();
-                    let v141: Array<string> = v86.l2.get().clone();
-                    let _v142: LrcPtr<dyn IEnumerable_1<string>> = delay(Func0::new({
-                        let v141 = v141.clone();
+                    let v143: Array<string> = v86.l2.get().clone();
+                    let _v144: LrcPtr<dyn IEnumerable_1<string>> = delay(Func0::new({
+                        let v143 = v143.clone();
                         move || {
                             map_1(
                                 Func1::new({
-                                    let v141 = v141.clone();
-                                    move |i: i32| v141[i].clone()
+                                    let v143 = v143.clone();
+                                    move |i: i32| v143[i].clone()
                                 }),
-                                rangeNumeric(0_i32, 1_i32, count_2(v141.clone()) - 1_i32),
+                                rangeNumeric(0_i32, 1_i32, (get_Count(v143.clone())) - 1_i32),
                             )
                         }
                     }));
-                    let v151: string = ofChar(Documents::method59());
+                    let v155: string = ofChar(Documents::method60());
                     join(
-                        if v151.clone() == string("\n") {
-                            Documents::method60(v151.clone())
+                        if (v155.clone()) == string("\n") {
+                            Documents::method61(v155.clone())
                         } else {
-                            v151
+                            v155
                         },
-                        toArray_1(_v142),
+                        toArray_1(_v144),
                     )
                 }
             } else {
-                let v163: Result<std::path::PathBuf, std::io::Error> =
+                let v167: Result<std::path::PathBuf, std::io::Error> =
                     std::fs::canonicalize(&*v0_1);
-                let v166: std::path::PathBuf = v163.unwrap();
-                let v180: std::path::Display = v166.display();
-                let v204: std::string::String = format!("{}", v180);
-                fable_library_rust::String_::fromString(v204)
+                let v170: std::path::PathBuf = v167.unwrap();
+                let v184: std::path::Display = v170.display();
+                let v208: std::string::String = format!("{}", v184);
+                fable_library_rust::String_::fromString(v208)
             }
         }
-        pub fn method61() -> string {
-            let v6: string = Documents::method12(getCharAt(toLower(string("Debug")), 0_i32));
+        pub fn method62() -> string {
+            let v6: string = Documents::method13(getCharAt(toLower(string("Debug")), 0_i32));
             let v9: &str = inline_colorization::color_bright_blue;
             let v12: &str = &*v6;
             let v35: &str = inline_colorization::color_reset;
             let v37: std::string::String = format!("{}{}{}", v9, v12, v35);
             fable_library_rust::String_::fromString(v37)
         }
-        pub fn method63(v0_1: string, v1_1: string, v2: string, v3: string) -> string {
+        pub fn method64(v0_1: string, v1_1: string, v2: string, v3: string) -> string {
             let v5: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v12: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v5.clone(), string("{ "), ());
                 ()
             };
             let v21: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("source_dir")), ());
+                Documents::closure8(v5.clone(), string("source_dir"), ());
                 ()
             };
             let v30: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v5.clone(), string(" = "), ());
                 ()
             };
             let v38: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v5.clone(), v0_1, ());
                 ()
             };
             let v47: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v5.clone(), string("; "), ());
                 ()
             };
             let v56: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("dist_dir")), ());
+                Documents::closure8(v5.clone(), string("dist_dir"), ());
                 ()
             };
             let v64: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v5.clone(), string(" = "), ());
                 ()
             };
             let v72: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v5.clone(), v1_1, ());
                 ()
             };
             let v80: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v5.clone(), string("; "), ());
                 ()
             };
             let v89: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("cache_dir")), ());
+                Documents::closure8(v5.clone(), string("cache_dir"), ());
                 ()
             };
             let v97: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v5.clone(), string(" = "), ());
                 ()
             };
             let v105: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", v2), ());
+                Documents::closure8(v5.clone(), v2, ());
                 ()
             };
             let v113: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v5.clone(), string("; "), ());
                 ()
             };
             let v122: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string("hangul_spec")), ());
+                Documents::closure8(v5.clone(), string("hangul_spec"), ());
                 ()
             };
             let v130: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v5.clone(), string(" = "), ());
                 ()
             };
             let v138: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", v3), ());
+                Documents::closure8(v5.clone(), v3, ());
                 ()
             };
             let v147: () = {
-                Documents::closure8(v5.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v5.clone(), string(" }"), ());
                 ()
             };
             v5.l0.get().clone()
         }
-        pub fn method62(
+        pub fn method63(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -2318,8 +2311,8 @@ mod module_2555ccf7 {
             v10: string,
             v11: string,
         ) -> string {
-            let v12: string = Documents::method63(v8, v9, v10, v11);
-            Documents::method17(sprintf!(
+            let v12: string = Documents::method64(v8, v9, v10, v11);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -2328,8 +2321,8 @@ mod module_2555ccf7 {
                 v12
             ))
         }
-        pub fn closure23(v0_1: string, v1_1: string, v2: string, v3: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_1) {
+        pub fn closure22(v0_1: string, v1_1: string, v2: string, v3: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_1) {
                 let v8: () = {
                     Documents::closure6((), ());
                     ()
@@ -2341,22 +2334,22 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v27: Option<i64> = patternInput.5.clone();
                 let v26: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v25: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v24: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v23: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v22: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method62(
+                Documents::method19(Documents::method63(
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
                     v26.clone(),
                     v27.clone(),
-                    Documents::method7(v22, v23, v24, v25, v26, v27),
-                    Documents::method61(),
+                    Documents::method8(v22, v23, v24, v25, v26, v27),
+                    Documents::method62(),
                     v1_1,
                     v2,
                     v3,
@@ -2364,37 +2357,31 @@ mod module_2555ccf7 {
                 ))
             };
         }
-        pub fn method64(v0_1: async_walkdir::DirEntry) -> async_walkdir::DirEntry {
-            v0_1
-        }
-        pub fn closure25(unitVar: (), v0_1: std::io::Error) -> std::string::String {
+        pub fn closure24(unitVar: (), v0_1: std::io::Error) -> std::string::String {
             format!("{}", v0_1)
         }
         pub fn method65() -> Func1<std::io::Error, std::string::String> {
-            Func1::new(move |v: std::io::Error| Documents::closure25((), v))
+            Func1::new(move |v: std::io::Error| Documents::closure24((), v))
         }
-        pub fn closure26(unitVar: (), v0_1: std::fs::FileType) -> Documents::US10 {
+        pub fn closure25(unitVar: (), v0_1: std::fs::FileType) -> Documents::US10 {
             Documents::US10::US10_0(v0_1)
         }
         pub fn method66() -> Func1<std::fs::FileType, Documents::US10> {
-            Func1::new(move |v: std::fs::FileType| Documents::closure26((), v))
+            Func1::new(move |v: std::fs::FileType| Documents::closure25((), v))
         }
-        pub fn closure27(unitVar: (), v0_1: std::string::String) -> Documents::US10 {
+        pub fn closure26(unitVar: (), v0_1: std::string::String) -> Documents::US10 {
             Documents::US10::US10_1(v0_1)
         }
         pub fn method67() -> Func1<std::string::String, Documents::US10> {
-            Func1::new(move |v: std::string::String| Documents::closure27((), v))
+            Func1::new(move |v: std::string::String| Documents::closure26((), v))
         }
-        pub fn method68(v0_1: std::fs::FileType) -> std::fs::FileType {
+        pub fn method68(v0_1: Documents::US11) -> Documents::US11 {
             v0_1
         }
-        pub fn method69(v0_1: Documents::US11) -> Documents::US11 {
+        pub fn method69(v0_1: async_walkdir::Filtering) -> async_walkdir::Filtering {
             v0_1
         }
-        pub fn method70(v0_1: async_walkdir::Filtering) -> async_walkdir::Filtering {
-            v0_1
-        }
-        pub fn closure24(
+        pub fn closure23(
             unitVar: (),
             v0_1: async_walkdir::DirEntry,
         ) -> std::pin::Pin<Box<dyn std::future::Future<Output = async_walkdir::Filtering> + Send>>
@@ -2405,31 +2392,27 @@ mod module_2555ccf7 {
                 let v4: bool = true;
                 let __future_init = Box::pin(async move {
                     //;
-                    let v5: async_walkdir::DirEntry = Documents::method64(v0_1.clone());
-                    let v7: std::pin::Pin<
+                    let v6: async_walkdir::DirEntry = v0_1.clone();
+                    let v8: std::pin::Pin<
                         Box<
                             dyn std::future::Future<
                                     Output = Result<std::fs::FileType, std::io::Error>,
                                 > + Send,
                         >,
-                    > = Box::pin(async_walkdir::DirEntry::file_type(&v5));
-                    let v9: Result<std::fs::FileType, std::io::Error> = v7.await;
-                    let v10 = Documents::method65();
-                    let v22: Result<std::fs::FileType, std::string::String> =
-                        v9.map_err(|x| v10(x));
-                    let v25 = Documents::method66();
-                    let v26 = Documents::method67();
-                    let v27: Documents::US10 = match &v22 {
-                        Err(v22_1_0) => v26(v22_1_0.clone()),
-                        Ok(v22_0_0) => v25(v22_0_0.clone()),
+                    > = Box::pin(async_walkdir::DirEntry::file_type(&v6));
+                    let v10: Result<std::fs::FileType, std::io::Error> = v8.await;
+                    let v11 = Documents::method65();
+                    let v23: Result<std::fs::FileType, std::string::String> =
+                        v10.map_err(|x| v11(x));
+                    let v26 = Documents::method66();
+                    let v27 = Documents::method67();
+                    let v28: Documents::US10 = match &v23 {
+                        Err(v23_1_0) => v27(v23_1_0.clone()),
+                        Ok(v23_0_0) => v26(v23_0_0.clone()),
                     };
-                    let v157: Documents::US11 =
-                        Documents::method69(if let Documents::US10::US10_0(v27_0_0) = &v27 {
-                            let v29: std::fs::FileType = Documents::method68(match &v27 {
-                                Documents::US10::US10_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            });
-                            if std::fs::FileType::is_dir(&v29) {
+                    let v165: Documents::US11 =
+                        Documents::method68(if let Documents::US10::US10_0(v28_0_0) = &v28 {
+                            if std::fs::FileType::is_dir(&v28_0_0.clone()) {
                                 Documents::US11::US11_0
                             } else {
                                 let v34: std::path::PathBuf =
@@ -2437,10 +2420,10 @@ mod module_2555ccf7 {
                                 let v37: std::path::Display = v34.display();
                                 let v61: std::string::String = format!("{}", v37);
                                 let v84: string = fable_library_rust::String_::fromString(v61);
-                                if if endsWith(v84.clone(), string(".md"), false) == false {
+                                if if (endsWith3(v84.clone(), string(".md"), false)) == false {
                                     true
                                 } else {
-                                    endsWith(v84, string(".hangul.md"), false)
+                                    endsWith3(v84, string(".hangul.md"), false)
                                 } {
                                     Documents::US11::US11_0
                                 } else {
@@ -2448,117 +2431,113 @@ mod module_2555ccf7 {
                                 }
                             }
                         } else {
-                            let v96: std::path::PathBuf = async_walkdir::DirEntry::path(&v0_1);
-                            let v99: std::path::Display = v96.display();
-                            let v123: std::string::String = format!("{}", v99);
-                            let v146: string = fable_library_rust::String_::fromString(v123);
-                            if if endsWith(v146.clone(), string(".md"), false) == false {
+                            let v100: std::path::PathBuf = async_walkdir::DirEntry::path(&v0_1);
+                            let v103: std::path::Display = v100.display();
+                            let v127: std::string::String = format!("{}", v103);
+                            let v150: string = fable_library_rust::String_::fromString(v127);
+                            if if (endsWith3(v150.clone(), string(".md"), false)) == false {
                                 true
                             } else {
-                                endsWith(v146, string(".hangul.md"), false)
+                                endsWith3(v150, string(".hangul.md"), false)
                             } {
                                 Documents::US11::US11_0
                             } else {
                                 Documents::US11::US11_2
                             }
                         });
-                    let v160: string = string("}");
-                    let v164: bool = true;
-                    let v161 = v157;
-                    let v176: string = append(
-                        append(
-                            append(append(string("true; v161 "), v160), string("); ")),
+                    let v168: string = string("}");
+                    let v172: bool = true;
+                    let v169 = v165;
+                    let v184: string = append(
+                        (append(
+                            (append((append(string("true; v169 "), (v168))), string("); "))),
                             string(""),
-                        ),
+                        )),
                         string(" // rust.fix_closure\'"),
                     );
-                    let v177: bool = true;
-                    v161
+                    let v185: bool = true;
+                    v169
                 }); // rust.fix_closure';
-                let v179 = __future_init;
-                let v181: std::pin::Pin<
+                let v187 = __future_init;
+                let v189: std::pin::Pin<
                     Box<dyn std::future::Future<Output = Documents::US11> + Send>,
-                > = v179;
-                let v183: Documents::US11 = v181.await;
-                let v193: async_walkdir::Filtering = Documents::method70(match &v183 {
+                > = v187;
+                let v191: Documents::US11 = v189.await;
+                let v201: async_walkdir::Filtering = Documents::method69(match &v191 {
                     Documents::US11::US11_0 => async_walkdir::Filtering::Ignore,
                     Documents::US11::US11_1 => async_walkdir::Filtering::IgnoreDir,
                     _ => async_walkdir::Filtering::Continue,
                 });
-                let v194: string = string("}");
-                let v198: bool = true;
-                let v195 = v193;
-                let v210: string = append(
-                    append(
-                        append(append(string("true; v195 "), v194), string("); ")),
+                let v202: string = string("}");
+                let v206: bool = true;
+                let v203 = v201;
+                let v218: string = append(
+                    (append(
+                        (append((append(string("true; v203 "), (v202))), string("); "))),
                         string(""),
-                    ),
+                    )),
                     string(" // rust.fix_closure\'"),
                 );
-                let v211: bool = true;
-                v195
+                let v219: bool = true;
+                v203
             }); // rust.fix_closure';
-            let v213 = __future_init;
-            v213
+            let v221 = __future_init;
+            v221
         }
-        pub fn closure29(unitVar: (), v0_1: async_walkdir::Error) -> std::string::String {
+        pub fn closure28(unitVar: (), v0_1: async_walkdir::Error) -> std::string::String {
             format!("{}", v0_1)
         }
-        pub fn method72() -> Func1<async_walkdir::Error, std::string::String> {
-            Func1::new(move |v: async_walkdir::Error| Documents::closure29((), v))
+        pub fn method71() -> Func1<async_walkdir::Error, std::string::String> {
+            Func1::new(move |v: async_walkdir::Error| Documents::closure28((), v))
         }
-        pub fn closure30(unitVar: (), v0_1: async_walkdir::DirEntry) -> Documents::US12 {
+        pub fn closure29(unitVar: (), v0_1: async_walkdir::DirEntry) -> Documents::US12 {
             Documents::US12::US12_0(v0_1)
         }
-        pub fn method73() -> Func1<async_walkdir::DirEntry, Documents::US12> {
-            Func1::new(move |v: async_walkdir::DirEntry| Documents::closure30((), v))
+        pub fn method72() -> Func1<async_walkdir::DirEntry, Documents::US12> {
+            Func1::new(move |v: async_walkdir::DirEntry| Documents::closure29((), v))
         }
-        pub fn closure31(unitVar: (), v0_1: std::string::String) -> Documents::US12 {
+        pub fn closure30(unitVar: (), v0_1: std::string::String) -> Documents::US12 {
             Documents::US12::US12_1(v0_1)
         }
-        pub fn method74() -> Func1<std::string::String, Documents::US12> {
-            Func1::new(move |v: std::string::String| Documents::closure31((), v))
+        pub fn method73() -> Func1<std::string::String, Documents::US12> {
+            Func1::new(move |v: std::string::String| Documents::closure30((), v))
         }
-        pub fn method75() -> string {
-            let v6: string = Documents::method12(getCharAt(toLower(string("Critical")), 0_i32));
+        pub fn method74() -> string {
+            let v6: string = Documents::method13(getCharAt(toLower(string("Critical")), 0_i32));
             let v9: &str = inline_colorization::color_bright_red;
             let v12: &str = &*v6;
             let v35: &str = inline_colorization::color_reset;
             let v37: std::string::String = format!("{}{}{}", v9, v12, v35);
             fable_library_rust::String_::fromString(v37)
         }
-        pub fn method77(v0_1: std::string::String) -> string {
+        pub fn method76(v0_1: std::string::String) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v9: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v2.clone(), string("{ "), ());
                 ()
             };
             let v18: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("error")), ());
+                Documents::closure8(v2.clone(), string("error"), ());
                 ()
             };
             let v27: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v2.clone(), string(" = "), ());
                 ()
             };
             let v32: std::string::String = format!("{:#?}", v0_1);
             let v65: () = {
-                Documents::closure8(
-                    v2.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v32)),
-                    (),
-                );
+                Documents::closure8(v2.clone(), fable_library_rust::String_::fromString(v32), ());
                 ()
             };
             let v74: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v2.clone(), string(" }"), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method76(
+        pub fn method75(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -2569,8 +2548,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: std::string::String,
         ) -> string {
-            let v9: string = Documents::method77(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method76(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -2579,8 +2558,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure32(v0_1: std::string::String, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_4) {
+        pub fn closure31(v0_1: std::string::String, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_4) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -2592,35 +2571,35 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method76(
+                Documents::method19(Documents::method75(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method75(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method74(),
                     v0_1,
                 ))
             };
         }
-        pub fn closure28(
+        pub fn closure27(
             unitVar: (),
             v0_1: Result<async_walkdir::DirEntry, async_walkdir::Error>,
         ) -> Option<string> {
-            let v1_1 = Documents::method72();
+            let v1_1 = Documents::method71();
             let v13: Result<async_walkdir::DirEntry, std::string::String> =
                 v0_1.map_err(|x| v1_1(x));
-            let v16 = Documents::method73();
-            let v17 = Documents::method74();
+            let v16 = Documents::method72();
+            let v17 = Documents::method73();
             let v18: Documents::US12 = match &v13 {
                 Err(v13_1_0) => v17(v13_1_0.clone()),
                 Ok(v13_0_0) => v16(v13_0_0.clone()),
@@ -2634,60 +2613,59 @@ mod module_2555ccf7 {
                 }
                 Documents::US12::US12_1(v18_1_0) => {
                     let v76: () = {
-                        Documents::closure32(v18_1_0.clone(), ());
+                        Documents::closure31(v18_1_0.clone(), ());
                         ()
                     };
                     Documents::US5::US5_1
                 }
             };
             match &v118 {
-                Documents::US5::US5_0(v118_0_0) => Some(match &v118 {
-                    Documents::US5::US5_0(x) => x.clone(),
-                    _ => unreachable!(),
-                }),
+                Documents::US5::US5_0(v118_0_0) => Some(
+                    match &v118 {
+                        Documents::US5::US5_0(x) => x.clone(),
+                        _ => unreachable!(),
+                    }
+                    .clone(),
+                ),
                 _ => None::<string>,
             }
         }
-        pub fn method71(
+        pub fn method70(
         ) -> Func1<Result<async_walkdir::DirEntry, async_walkdir::Error>, Option<string>> {
             Func1::new(
                 move |v: Result<async_walkdir::DirEntry, async_walkdir::Error>| {
-                    Documents::closure28((), v)
+                    Documents::closure27((), v)
                 },
             )
         }
-        pub fn method79(v0_1: usize) -> string {
+        pub fn method78(v0_1: usize) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v9: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v2.clone(), string("{ "), ());
                 ()
             };
             let v18: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("files_len")), ());
+                Documents::closure8(v2.clone(), string("files_len"), ());
                 ()
             };
             let v27: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v2.clone(), string(" = "), ());
                 ()
             };
             let v32: std::string::String = format!("{:#?}", v0_1);
             let v65: () = {
-                Documents::closure8(
-                    v2.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v32)),
-                    (),
-                );
+                Documents::closure8(v2.clone(), fable_library_rust::String_::fromString(v32), ());
                 ()
             };
             let v74: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v2.clone(), string(" }"), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method78(
+        pub fn method77(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -2698,8 +2676,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: usize,
         ) -> string {
-            let v9: string = Documents::method79(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method78(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -2708,8 +2686,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure33(v0_1: Vec<string>, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_1) {
+        pub fn closure32(v0_1: Vec<string>, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_1) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -2721,33 +2699,33 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method78(
+                Documents::method19(Documents::method77(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method61(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method62(),
                     v0_1.len(),
                 ))
             };
         }
-        pub fn method80() -> string {
+        pub fn method79() -> string {
             string("")
         }
-        pub fn method81(v0_1: string) -> string {
-            Documents::method38(Documents::method37(v0_1))
+        pub fn method80(v0_1: string) -> string {
+            Documents::method36(Documents::method35(v0_1))
         }
-        pub fn method83(
+        pub fn method82(
             v0_1: string,
             v1_1: Option<CancellationToken>,
             v2: Array<(string, string)>,
@@ -2758,25 +2736,25 @@ mod module_2555ccf7 {
         ) -> string {
             v0_1
         }
-        pub fn method85() -> string {
+        pub fn method84() -> string {
             string("")
         }
-        pub fn closure37(v0_1: char, v1_1: LrcPtr<Documents::UH0>) -> LrcPtr<Documents::UH0> {
+        pub fn closure36(v0_1: char, v1_1: LrcPtr<Documents::UH0>) -> LrcPtr<Documents::UH0> {
             LrcPtr::new(Documents::UH0::UH0_1(v0_1, v1_1))
         }
-        pub fn closure36(
+        pub fn closure35(
             unitVar: (),
             v0_1: char,
         ) -> Func1<LrcPtr<Documents::UH0>, LrcPtr<Documents::UH0>> {
             Func1::new({
                 let v0_1 = v0_1.clone();
-                move |v: LrcPtr<Documents::UH0>| Documents::closure37(v0_1, v)
+                move |v: LrcPtr<Documents::UH0>| Documents::closure36(v0_1, v)
             })
         }
-        pub fn method86() -> Func1<char, Func1<LrcPtr<Documents::UH0>, LrcPtr<Documents::UH0>>> {
-            Func1::new(move |v: char| Documents::closure36((), v))
+        pub fn method85() -> Func1<char, Func1<LrcPtr<Documents::UH0>, LrcPtr<Documents::UH0>>> {
+            Func1::new(move |v: char| Documents::closure35((), v))
         }
-        pub fn method87(
+        pub fn method86(
             v0_1: LrcPtr<Documents::UH0>,
             v1_1: LrcPtr<StringBuilder>,
             v2: i32,
@@ -2786,8 +2764,8 @@ mod module_2555ccf7 {
             let v1_1: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v1_1.clone());
             let v2: MutCell<i32> = MutCell::new(v2);
             let v3: MutCell<i32> = MutCell::new(v3);
-            '_method87: loop {
-                break '_method87 (match v0_1.get().clone().as_ref() {
+            '_method86: loop {
+                break '_method86 (match v0_1.get().clone().as_ref() {
                     Documents::UH0::UH0_0 => {
                         (v1_1.get().clone(), v2.get().clone(), v3.get().clone())
                     }
@@ -2796,18 +2774,19 @@ mod module_2555ccf7 {
                             Documents::UH0::UH0_1(x, _) => x.clone(),
                             _ => unreachable!(),
                         };
-                        let v6: bool = '\n' == v4;
+                        let v6: bool = '\n' == (v4);
                         let patternInput: (i32, i32) = if v6 {
-                            (v2.get().clone() + 1_i32, 1_i32)
+                            ((v2.get().clone()) + 1_i32, 1_i32)
                         } else {
-                            (v2.get().clone(), v3.get().clone() + 1_i32)
+                            (v2.get().clone(), (v3.get().clone()) + 1_i32)
                         };
                         {
                             let v0_1_temp: LrcPtr<Documents::UH0> =
                                 match v0_1.get().clone().as_ref() {
                                     Documents::UH0::UH0_1(_, x) => x.clone(),
                                     _ => unreachable!(),
-                                };
+                                }
+                                .clone();
                             let v1_1_temp: LrcPtr<StringBuilder> = if v6 {
                                 let v12: LrcPtr<StringBuilder> = v1_1.get().clone().Clear();
                                 v1_1.get().clone()
@@ -2824,13 +2803,13 @@ mod module_2555ccf7 {
                             v1_1.set(v1_1_temp);
                             v2.set(v2_temp);
                             v3.set(v3_temp);
-                            continue '_method87;
+                            continue '_method86;
                         }
                     }
                 });
             }
         }
-        pub fn closure35(
+        pub fn closure34(
             unitVar: (),
             _arg: (string, LrcPtr<StringBuilder>, i32, i32),
         ) -> Documents::US14 {
@@ -2838,7 +2817,7 @@ mod module_2555ccf7 {
             let v2: i32 = _arg.2.clone();
             let v1_1: LrcPtr<StringBuilder> = _arg.1.clone();
             let v0_1: string = _arg.0.clone();
-            if string("") == v0_1.clone() {
+            if string("") == (v0_1.clone()) {
                 Documents::US14::US14_1(sprintf!(
                     "parsing.p_char / unexpected end of input / c: \'{}\' / s: {:?}",
                     '\"',
@@ -2846,11 +2825,11 @@ mod module_2555ccf7 {
                 ))
             } else {
                 let v9: char = getCharAt(v0_1.clone(), 0_i32);
-                if v9 == '\"' {
+                if (v9) == '\"' {
                     let v30: string = getSlice(
                         v0_1.clone(),
                         Some(1_i32),
-                        Some(length(v0_1.clone()) - 1_i32),
+                        Some((length(v0_1.clone())) - 1_i32),
                     );
                     let v35: string = ofChar(v9);
                     let v38: i32 = length(v35.clone());
@@ -2858,22 +2837,22 @@ mod module_2555ccf7 {
                     let v40: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                         l0: MutCell::new(0_i32),
                     });
-                    while Documents::method58(v38, v40.clone()) {
+                    while Documents::method59(v38, v40.clone()) {
                         let v42: i32 = v40.l0.get().clone();
                         let v43: char = getCharAt(v35.clone(), v42);
                         v39.get_mut()[v42 as usize] = v43;
                         {
-                            let v44: i32 = v42 + 1_i32;
+                            let v44: i32 = (v42) + 1_i32;
                             v40.l0.set(v44);
                             ()
                         }
                     }
                     {
                         let v45: List<char> = ofArray(v39.clone());
-                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method87(
+                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method86(
                             foldBack(
                                 Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                    (Documents::method86())(b0)(b1)
+                                    (Documents::method85())(b0)(b1)
                                 }),
                                 v45,
                                 LrcPtr::new(Documents::UH0::UH0_0),
@@ -2891,9 +2870,8 @@ mod module_2555ccf7 {
                         )
                     }
                 } else {
-                    let v83: i32 = indexOf(v0_1.clone(), string("\n")) - 1_i32;
-                    Documents::US14::US14_1(sprintf!(
-                        "{}\n{}\n",
+                    let v83: i32 = (indexOf(v0_1.clone(), string("\n"))) - 1_i32;
+                    Documents::US14::US14_1(concat(new_array(&[
                         sprintf!(
                             "parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
                             '\"',
@@ -2904,20 +2882,22 @@ mod module_2555ccf7 {
                                 v0_1.clone(),
                                 Some(0_i32),
                                 Some(
-                                    if -2_i32 == v83 {
-                                        length(v0_1) + 1_i32
+                                    (if -2_i32 == (v83) {
+                                        (length(v0_1)) + 1_i32
                                     } else {
-                                        v83 + 1_i32
-                                    } - 1_i32
+                                        (v83) + 1_i32
+                                    }) - 1_i32
                                 )
                             )
                         ),
-                        append(replicate(v3 - 1_i32, string(" ")), string("^"))
-                    ))
+                        string("\n"),
+                        append((replicate((v3) - 1_i32, string(" "))), string("^")),
+                        string("\n"),
+                    ])))
                 }
             }
         }
-        pub fn closure38(
+        pub fn closure37(
             unitVar: (),
             _arg: (string, LrcPtr<StringBuilder>, i32, i32),
         ) -> Documents::US14 {
@@ -2925,7 +2905,7 @@ mod module_2555ccf7 {
             let v2: i32 = _arg.2.clone();
             let v1_1: LrcPtr<StringBuilder> = _arg.1.clone();
             let v0_1: string = _arg.0.clone();
-            if string("") == v0_1.clone() {
+            if string("") == (v0_1.clone()) {
                 Documents::US14::US14_1(sprintf!(
                     "parsing.p_char / unexpected end of input / c: \'{}\' / s: {:?}",
                     '\'',
@@ -2933,11 +2913,11 @@ mod module_2555ccf7 {
                 ))
             } else {
                 let v9: char = getCharAt(v0_1.clone(), 0_i32);
-                if v9 == '\'' {
+                if (v9) == '\'' {
                     let v30: string = getSlice(
                         v0_1.clone(),
                         Some(1_i32),
-                        Some(length(v0_1.clone()) - 1_i32),
+                        Some((length(v0_1.clone())) - 1_i32),
                     );
                     let v35: string = ofChar(v9);
                     let v38: i32 = length(v35.clone());
@@ -2945,22 +2925,22 @@ mod module_2555ccf7 {
                     let v40: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                         l0: MutCell::new(0_i32),
                     });
-                    while Documents::method58(v38, v40.clone()) {
+                    while Documents::method59(v38, v40.clone()) {
                         let v42: i32 = v40.l0.get().clone();
                         let v43: char = getCharAt(v35.clone(), v42);
                         v39.get_mut()[v42 as usize] = v43;
                         {
-                            let v44: i32 = v42 + 1_i32;
+                            let v44: i32 = (v42) + 1_i32;
                             v40.l0.set(v44);
                             ()
                         }
                     }
                     {
                         let v45: List<char> = ofArray(v39.clone());
-                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method87(
+                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method86(
                             foldBack(
                                 Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                    (Documents::method86())(b0)(b1)
+                                    (Documents::method85())(b0)(b1)
                                 }),
                                 v45,
                                 LrcPtr::new(Documents::UH0::UH0_0),
@@ -2978,9 +2958,8 @@ mod module_2555ccf7 {
                         )
                     }
                 } else {
-                    let v83: i32 = indexOf(v0_1.clone(), string("\n")) - 1_i32;
-                    Documents::US14::US14_1(sprintf!(
-                        "{}\n{}\n",
+                    let v83: i32 = (indexOf(v0_1.clone(), string("\n"))) - 1_i32;
+                    Documents::US14::US14_1(concat(new_array(&[
                         sprintf!(
                             "parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
                             '\'',
@@ -2991,20 +2970,22 @@ mod module_2555ccf7 {
                                 v0_1.clone(),
                                 Some(0_i32),
                                 Some(
-                                    if -2_i32 == v83 {
-                                        length(v0_1) + 1_i32
+                                    (if -2_i32 == (v83) {
+                                        (length(v0_1)) + 1_i32
                                     } else {
-                                        v83 + 1_i32
-                                    } - 1_i32
+                                        (v83) + 1_i32
+                                    }) - 1_i32
                                 )
                             )
                         ),
-                        append(replicate(v3 - 1_i32, string(" ")), string("^"))
-                    ))
+                        string("\n"),
+                        append((replicate((v3) - 1_i32, string(" "))), string("^")),
+                        string("\n"),
+                    ])))
                 }
             }
         }
-        pub fn method88(
+        pub fn method87(
             v0_1: string,
             v1_1: LrcPtr<StringBuilder>,
             v2: LrcPtr<Documents::UH1>,
@@ -3012,8 +2993,8 @@ mod module_2555ccf7 {
             let v0_1: MutCell<string> = MutCell::new(v0_1.clone());
             let v1_1: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v1_1.clone());
             let v2: MutCell<LrcPtr<Documents::UH1>> = MutCell::new(v2.clone());
-            '_method88: loop {
-                break '_method88 (match v2.get().clone().as_ref() {
+            '_method87: loop {
+                break '_method87 (match v2.get().clone().as_ref() {
                     Documents::UH1::UH1_0 => {
                         Documents::US14::US14_1(string("parsing.choice / no parsers succeeded"))
                     }
@@ -3038,56 +3019,57 @@ mod module_2555ccf7 {
                                     match v2.get().clone().as_ref() {
                                         Documents::UH1::UH1_1(_, x) => x.clone(),
                                         _ => unreachable!(),
-                                    };
+                                    }
+                                    .clone();
                                 v0_1.set(v0_1_temp);
                                 v1_1.set(v1_1_temp);
                                 v2.set(v2_temp);
-                                continue '_method88;
+                                continue '_method87;
                             }
                         }
                     }
                 });
             }
         }
-        pub fn method89(v0_1: char, v1_1: i64) -> bool {
+        pub fn method88(v0_1: char, v1_1: i64) -> bool {
             let v0_1: MutCell<char> = MutCell::new(v0_1);
             let v1_1: MutCell<i64> = MutCell::new(v1_1);
-            '_method89: loop {
-                break '_method89 (if v1_1.get().clone() >= 2_i64 {
+            '_method88: loop {
+                break '_method88 (if (v1_1.get().clone()) >= 2_i64 {
                     false
                 } else {
-                    let v11: Documents::US16 = if v1_1.get().clone() == 0_i64 {
+                    let v11: Documents::US16 = if (v1_1.get().clone()) == 0_i64 {
                         Documents::US16::US16_0('\"')
                     } else {
-                        let v5: i64 = v1_1.get().clone() - 1_i64;
-                        if v5 == 0_i64 {
+                        let v5: i64 = (v1_1.get().clone()) - 1_i64;
+                        if (v5) == 0_i64 {
                             Documents::US16::US16_0('\'')
                         } else {
-                            let v8: i64 = v5 - 1_i64;
+                            let v8: i64 = (v5) - 1_i64;
                             Documents::US16::US16_1
                         }
                     };
-                    if v0_1.get().clone()
-                        == match &v11 {
+                    if (v0_1.get().clone())
+                        == (match &v11 {
                             Documents::US16::US16_0(v11_0_0) => match &v11 {
                                 Documents::US16::US16_0(x) => x.clone(),
                                 _ => unreachable!(),
                             },
                             _ => panic!("{}", string("Option does not have a value."),),
-                        }
+                        })
                     {
                         true
                     } else {
                         let v0_1_temp: char = v0_1.get().clone();
-                        let v1_1_temp: i64 = v1_1.get().clone() + 1_i64;
+                        let v1_1_temp: i64 = (v1_1.get().clone()) + 1_i64;
                         v0_1.set(v0_1_temp);
                         v1_1.set(v1_1_temp);
-                        continue '_method89;
+                        continue '_method88;
                     }
                 });
             }
         }
-        pub fn method90(
+        pub fn method89(
             v0_1: string,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -3099,9 +3081,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method90: loop {
-                break '_method90 ({
-                    let v109: Documents::US14 = if string("") == v1_1.get().clone() {
+            '_method89: loop {
+                break '_method89 ({
+                    let v109: Documents::US14 = if string("") == (v1_1.get().clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                             toArray(ofArray(new_array(&['\"', '\'']))),
@@ -3109,11 +3091,11 @@ mod module_2555ccf7 {
                         ))
                     } else {
                         let v21: char = getCharAt(v1_1.get().clone(), 0_i32);
-                        if Documents::method89(v21, 0_i64) == false {
+                        if (Documents::method88(v21, 0_i64)) == false {
                             let v44: string = getSlice(
                                 v1_1.get().clone(),
                                 Some(1_i32),
-                                Some(length(v1_1.get().clone()) - 1_i32),
+                                Some((length(v1_1.get().clone())) - 1_i32),
                             );
                             let v49: string = ofChar(v21);
                             let v52: i32 = length(v49.clone());
@@ -3121,12 +3103,12 @@ mod module_2555ccf7 {
                             let v54: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                 l0: MutCell::new(0_i32),
                             });
-                            while Documents::method58(v52, v54.clone()) {
+                            while Documents::method59(v52, v54.clone()) {
                                 let v56: i32 = v54.l0.get().clone();
                                 let v57: char = getCharAt(v49.clone(), v56);
                                 v53.get_mut()[v56 as usize] = v57;
                                 {
-                                    let v58: i32 = v56 + 1_i32;
+                                    let v58: i32 = (v56) + 1_i32;
                                     v54.l0.set(v58);
                                     ()
                                 }
@@ -3134,11 +3116,11 @@ mod module_2555ccf7 {
                             {
                                 let v59: List<char> = ofArray(v53.clone());
                                 let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                    Documents::method87(
+                                    Documents::method86(
                                         foldBack(
                                             Func2::new(
                                                 move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                    (Documents::method86())(b0)(b1)
+                                                    (Documents::method85())(b0)(b1)
                                                 },
                                             ),
                                             v59,
@@ -3175,7 +3157,7 @@ mod module_2555ccf7 {
                         ) => {
                             let v110: char = v109_0_0.clone();
                             Documents::US14::US14_0(
-                                if '\\' == v110 { '/' } else { v110 },
+                                if '\\' == (v110) { '/' } else { v110 },
                                 v109_0_1.clone(),
                                 v109_0_2.clone(),
                                 v109_0_3.clone(),
@@ -3195,7 +3177,7 @@ mod module_2555ccf7 {
                             v121_0_4,
                         ) => {
                             let v0_1_temp: string =
-                                append(v0_1.get().clone(), ofChar(v121_0_0.clone()));
+                                append((v0_1.get().clone()), (ofChar(v121_0_0.clone())));
                             let v1_1_temp: string = v121_0_1.clone();
                             let v2_temp: LrcPtr<StringBuilder> = v121_0_2.clone();
                             let v3_temp: i32 = v121_0_3.clone();
@@ -3205,7 +3187,7 @@ mod module_2555ccf7 {
                             v2.set(v2_temp);
                             v3.set(v3_temp);
                             v4.set(v4_temp);
-                            continue '_method90;
+                            continue '_method89;
                         }
                         _ => (
                             v0_1.get().clone(),
@@ -3218,7 +3200,7 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method91(
+        pub fn method90(
             v0_1: string,
             v1_1: LrcPtr<StringBuilder>,
             v2: i32,
@@ -3230,8 +3212,8 @@ mod module_2555ccf7 {
             let v2: MutCell<i32> = MutCell::new(v2);
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<LrcPtr<Documents::UH1>> = MutCell::new(v4.clone());
-            '_method91: loop {
-                break '_method91 (match v4.get().clone().as_ref() {
+            '_method90: loop {
+                break '_method90 (match v4.get().clone().as_ref() {
                     Documents::UH1::UH1_0 => {
                         Documents::US14::US14_1(string("parsing.choice / no parsers succeeded"))
                     }
@@ -3258,63 +3240,64 @@ mod module_2555ccf7 {
                                     match v4.get().clone().as_ref() {
                                         Documents::UH1::UH1_1(_, x) => x.clone(),
                                         _ => unreachable!(),
-                                    };
+                                    }
+                                    .clone();
                                 v0_1.set(v0_1_temp);
                                 v1_1.set(v1_1_temp);
                                 v2.set(v2_temp);
                                 v3.set(v3_temp);
                                 v4.set(v4_temp);
-                                continue '_method91;
+                                continue '_method90;
                             }
                         }
                     }
                 });
             }
         }
-        pub fn method92(v0_1: char, v1_1: i64) -> bool {
+        pub fn method91(v0_1: char, v1_1: i64) -> bool {
             let v0_1: MutCell<char> = MutCell::new(v0_1);
             let v1_1: MutCell<i64> = MutCell::new(v1_1);
-            '_method92: loop {
-                break '_method92 (if v1_1.get().clone() >= 3_i64 {
+            '_method91: loop {
+                break '_method91 (if (v1_1.get().clone()) >= 3_i64 {
                     false
                 } else {
-                    let v15: Documents::US16 = if v1_1.get().clone() == 0_i64 {
+                    let v15: Documents::US16 = if (v1_1.get().clone()) == 0_i64 {
                         Documents::US16::US16_0('\"')
                     } else {
-                        let v5: i64 = v1_1.get().clone() - 1_i64;
-                        if v5 == 0_i64 {
+                        let v5: i64 = (v1_1.get().clone()) - 1_i64;
+                        if (v5) == 0_i64 {
                             Documents::US16::US16_0('\'')
                         } else {
-                            let v8: i64 = v5 - 1_i64;
-                            if v8 == 0_i64 {
+                            let v8: i64 = (v5) - 1_i64;
+                            if (v8) == 0_i64 {
                                 Documents::US16::US16_0(' ')
                             } else {
-                                let v11: i64 = v8 - 1_i64;
+                                let v11: i64 = (v8) - 1_i64;
                                 Documents::US16::US16_1
                             }
                         }
                     };
-                    if v0_1.get().clone()
-                        == match &v15 {
+                    if (v0_1.get().clone())
+                        == (match &v15 {
                             Documents::US16::US16_0(v15_0_0) => match &v15 {
                                 Documents::US16::US16_0(x) => x.clone(),
                                 _ => unreachable!(),
                             },
                             _ => panic!("{}", string("Option does not have a value."),),
-                        }
+                        })
                     {
                         true
                     } else {
                         let v0_1_temp: char = v0_1.get().clone();
-                        let v1_1_temp: i64 = v1_1.get().clone() + 1_i64;
+                        let v1_1_temp: i64 = (v1_1.get().clone()) + 1_i64;
                         v0_1.set(v0_1_temp);
                         v1_1.set(v1_1_temp);
-                        continue '_method92;
+                        continue '_method91;
                     }
                 });
             }
         }
-        pub fn method93(
+        pub fn method92(
             v0_1: string,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -3326,9 +3309,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method93: loop {
-                break '_method93 ({
-                    let v115: Documents::US14 = if string("") == v1_1.get().clone() {
+            '_method92: loop {
+                break '_method92 ({
+                    let v115: Documents::US14 = if string("") == (v1_1.get().clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                             toArray(ofArray(new_array(&['\"', '\'', ' ']))),
@@ -3336,11 +3319,11 @@ mod module_2555ccf7 {
                         ))
                     } else {
                         let v24: char = getCharAt(v1_1.get().clone(), 0_i32);
-                        if Documents::method92(v24, 0_i64) == false {
+                        if (Documents::method91(v24, 0_i64)) == false {
                             let v47: string = getSlice(
                                 v1_1.get().clone(),
                                 Some(1_i32),
-                                Some(length(v1_1.get().clone()) - 1_i32),
+                                Some((length(v1_1.get().clone())) - 1_i32),
                             );
                             let v52: string = ofChar(v24);
                             let v55: i32 = length(v52.clone());
@@ -3348,12 +3331,12 @@ mod module_2555ccf7 {
                             let v57: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                 l0: MutCell::new(0_i32),
                             });
-                            while Documents::method58(v55, v57.clone()) {
+                            while Documents::method59(v55, v57.clone()) {
                                 let v59: i32 = v57.l0.get().clone();
                                 let v60: char = getCharAt(v52.clone(), v59);
                                 v56.get_mut()[v59 as usize] = v60;
                                 {
-                                    let v61: i32 = v59 + 1_i32;
+                                    let v61: i32 = (v59) + 1_i32;
                                     v57.l0.set(v61);
                                     ()
                                 }
@@ -3361,11 +3344,11 @@ mod module_2555ccf7 {
                             {
                                 let v62: List<char> = ofArray(v56.clone());
                                 let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                    Documents::method87(
+                                    Documents::method86(
                                         foldBack(
                                             Func2::new(
                                                 move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                    (Documents::method86())(b0)(b1)
+                                                    (Documents::method85())(b0)(b1)
                                                 },
                                             ),
                                             v62,
@@ -3402,7 +3385,7 @@ mod module_2555ccf7 {
                         ) => {
                             let v116: char = v115_0_0.clone();
                             Documents::US14::US14_0(
-                                if '\\' == v116 { '/' } else { v116 },
+                                if '\\' == (v116) { '/' } else { v116 },
                                 v115_0_1.clone(),
                                 v115_0_2.clone(),
                                 v115_0_3.clone(),
@@ -3422,7 +3405,7 @@ mod module_2555ccf7 {
                             v127_0_4,
                         ) => {
                             let v0_1_temp: string =
-                                append(v0_1.get().clone(), ofChar(v127_0_0.clone()));
+                                append((v0_1.get().clone()), (ofChar(v127_0_0.clone())));
                             let v1_1_temp: string = v127_0_1.clone();
                             let v2_temp: LrcPtr<StringBuilder> = v127_0_2.clone();
                             let v3_temp: i32 = v127_0_3.clone();
@@ -3432,7 +3415,7 @@ mod module_2555ccf7 {
                             v2.set(v2_temp);
                             v3.set(v3_temp);
                             v4.set(v4_temp);
-                            continue '_method93;
+                            continue '_method92;
                         }
                         _ => (
                             v0_1.get().clone(),
@@ -3445,26 +3428,26 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method94(v0_1: string, v1_1: i32) -> i32 {
+        pub fn method93(v0_1: string, v1_1: i32) -> i32 {
             let v0_1: MutCell<string> = MutCell::new(v0_1.clone());
             let v1_1: MutCell<i32> = MutCell::new(v1_1);
-            '_method94: loop {
-                break '_method94 (if v1_1.get().clone() >= length(v0_1.get().clone()) {
+            '_method93: loop {
+                break '_method93 (if (v1_1.get().clone()) >= (length(v0_1.get().clone())) {
                     v1_1.get().clone()
                 } else {
-                    if ' ' == getCharAt(v0_1.get().clone(), v1_1.get().clone()) {
+                    if ' ' == (getCharAt(v0_1.get().clone(), v1_1.get().clone())) {
                         let v0_1_temp: string = v0_1.get().clone();
-                        let v1_1_temp: i32 = v1_1.get().clone() + 1_i32;
+                        let v1_1_temp: i32 = (v1_1.get().clone()) + 1_i32;
                         v0_1.set(v0_1_temp);
                         v1_1.set(v1_1_temp);
-                        continue '_method94;
+                        continue '_method93;
                     } else {
                         v1_1.get().clone()
                     }
                 });
             }
         }
-        pub fn method95(
+        pub fn method94(
             v0_1: string,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -3476,9 +3459,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method95: loop {
-                break '_method95 ({
-                    let v79: Documents::US14 = if string("") == v1_1.get().clone() {
+            '_method94: loop {
+                break '_method94 ({
+                    let v79: Documents::US14 = if string("") == (v1_1.get().clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.any_char / unexpected end of input / s: {:?}",
                             (v2.get().clone(), v3.get().clone(), v4.get().clone())
@@ -3488,7 +3471,7 @@ mod module_2555ccf7 {
                         let v30: string = getSlice(
                             v1_1.get().clone(),
                             Some(1_i32),
-                            Some(length(v1_1.get().clone()) - 1_i32),
+                            Some((length(v1_1.get().clone())) - 1_i32),
                         );
                         let v35: string = ofChar(v10);
                         let v38: i32 = length(v35.clone());
@@ -3496,12 +3479,12 @@ mod module_2555ccf7 {
                         let v40: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                             l0: MutCell::new(0_i32),
                         });
-                        while Documents::method58(v38, v40.clone()) {
+                        while Documents::method59(v38, v40.clone()) {
                             let v42: i32 = v40.l0.get().clone();
                             let v43: char = getCharAt(v35.clone(), v42);
                             v39.get_mut()[v42 as usize] = v43;
                             {
-                                let v44: i32 = v42 + 1_i32;
+                                let v44: i32 = (v42) + 1_i32;
                                 v40.l0.set(v44);
                                 ()
                             }
@@ -3509,10 +3492,10 @@ mod module_2555ccf7 {
                         {
                             let v45: List<char> = ofArray(v39.clone());
                             let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                Documents::method87(
+                                Documents::method86(
                                     foldBack(
                                         Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                            (Documents::method86())(b0)(b1)
+                                            (Documents::method85())(b0)(b1)
                                         }),
                                         v45,
                                         LrcPtr::new(Documents::UH0::UH0_0),
@@ -3533,7 +3516,7 @@ mod module_2555ccf7 {
                     match &v79 {
                         Documents::US14::US14_0(v79_0_0, v79_0_1, v79_0_2, v79_0_3, v79_0_4) => {
                             let v0_1_temp: string =
-                                append(v0_1.get().clone(), ofChar(v79_0_0.clone()));
+                                append((v0_1.get().clone()), (ofChar(v79_0_0.clone())));
                             let v1_1_temp: string = v79_0_1.clone();
                             let v2_temp: LrcPtr<StringBuilder> = v79_0_2.clone();
                             let v3_temp: i32 = v79_0_3.clone();
@@ -3543,7 +3526,7 @@ mod module_2555ccf7 {
                             v2.set(v2_temp);
                             v3.set(v3_temp);
                             v4.set(v4_temp);
-                            continue '_method95;
+                            continue '_method94;
                         }
                         _ => (
                             v0_1.get().clone(),
@@ -3556,7 +3539,7 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method84(v0_1: string) -> Documents::US13 {
+        pub fn method83(v0_1: string) -> Documents::US13 {
             let _v0: MutCell<Option<Option<string>>> = MutCell::new(None::<Option<string>>);
             _v0.set(Some(Some(v0_1)));
             {
@@ -3568,14 +3551,14 @@ mod module_2555ccf7 {
                     },
                 );
                 let v12: LrcPtr<StringBuilder> =
-                    StringBuilder::_ctor__Z721C83C5(Documents::method85());
+                    StringBuilder::_ctor__Z721C83C5(Documents::method84());
                 fn v15(arg10_0040: (string, LrcPtr<StringBuilder>, i32, i32)) -> Documents::US14 {
-                    Documents::closure35((), arg10_0040)
+                    Documents::closure34((), arg10_0040)
                 }
                 fn v16(arg10_0040_1: (string, LrcPtr<StringBuilder>, i32, i32)) -> Documents::US14 {
-                    Documents::closure38((), arg10_0040_1)
+                    Documents::closure37((), arg10_0040_1)
                 }
-                let v20: Documents::US14 = Documents::method88(
+                let v20: Documents::US14 = Documents::method87(
                     v7.clone(),
                     v12.clone(),
                     LrcPtr::new(Documents::UH1::UH1_1(
@@ -3592,7 +3575,7 @@ mod module_2555ccf7 {
                         let v24: i32 = v20_0_3.clone();
                         let v23: LrcPtr<StringBuilder> = v20_0_2.clone();
                         let v22: string = v20_0_1.clone();
-                        let v130: Documents::US14 = if string("") == v22.clone() {
+                        let v130: Documents::US14 = if string("") == (v22.clone()) {
                             Documents::US14::US14_1(sprintf!(
                                 "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                                 toArray(ofArray(new_array(&['\"', '\'']))),
@@ -3600,11 +3583,11 @@ mod module_2555ccf7 {
                             ))
                         } else {
                             let v42: char = getCharAt(v22.clone(), 0_i32);
-                            if Documents::method89(v42, 0_i64) == false {
+                            if (Documents::method88(v42, 0_i64)) == false {
                                 let v65: string = getSlice(
                                     v22.clone(),
                                     Some(1_i32),
-                                    Some(length(v22.clone()) - 1_i32),
+                                    Some((length(v22.clone())) - 1_i32),
                                 );
                                 let v70: string = ofChar(v42);
                                 let v73: i32 = length(v70.clone());
@@ -3612,12 +3595,12 @@ mod module_2555ccf7 {
                                 let v75: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                     l0: MutCell::new(0_i32),
                                 });
-                                while Documents::method58(v73, v75.clone()) {
+                                while Documents::method59(v73, v75.clone()) {
                                     let v77: i32 = v75.l0.get().clone();
                                     let v78: char = getCharAt(v70.clone(), v77);
                                     v74.get_mut()[v77 as usize] = v78;
                                     {
-                                        let v79: i32 = v77 + 1_i32;
+                                        let v79: i32 = (v77) + 1_i32;
                                         v75.l0.set(v79);
                                         ()
                                     }
@@ -3625,11 +3608,11 @@ mod module_2555ccf7 {
                                 {
                                     let v80: List<char> = ofArray(v74.clone());
                                     let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                        Documents::method87(
+                                        Documents::method86(
                                             foldBack(
                                                 Func2::new(
                                                     move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                        (Documents::method86())(b0)(b1)
+                                                        (Documents::method85())(b0)(b1)
                                                     },
                                                 ),
                                                 v80,
@@ -3667,7 +3650,7 @@ mod module_2555ccf7 {
                             ) => {
                                 let v131: char = v130_0_0.clone();
                                 Documents::US14::US14_0(
-                                    if '\\' == v131 { '/' } else { v131 },
+                                    if '\\' == (v131) { '/' } else { v131 },
                                     v130_0_1.clone(),
                                     v130_0_2.clone(),
                                     v130_0_3.clone(),
@@ -3692,7 +3675,7 @@ mod module_2555ccf7 {
                                     LrcPtr<StringBuilder>,
                                     i32,
                                     i32,
-                                ) = Documents::method90(
+                                ) = Documents::method89(
                                     ofChar(v142_0_0.clone()),
                                     v142_0_1.clone(),
                                     v142_0_2.clone(),
@@ -3745,7 +3728,7 @@ mod module_2555ccf7 {
                                 let v175: i32 = v171_0_3.clone();
                                 let v174: LrcPtr<StringBuilder> = v171_0_2.clone();
                                 let v173: string = v171_0_1.clone();
-                                let v180: Documents::US14 = Documents::method91(
+                                let v180: Documents::US14 = Documents::method90(
                                     v173.clone(),
                                     v174.clone(),
                                     v175,
@@ -3776,12 +3759,12 @@ mod module_2555ccf7 {
                                                                           v12.clone(),
                                                                           1_i32,
                                                                           1_i32),
-                                                                         (v22,
-                                                                          v23,
+                                                                         (v22.clone(),
+                                                                          v23.clone(),
                                                                           v24,
                                                                           v25),
-                                                                         (v173,
-                                                                          v174,
+                                                                         (v173.clone(),
+                                                                          v174.clone(),
                                                                           v175,
                                                                           v176))),
                                     }
@@ -3798,7 +3781,7 @@ mod module_2555ccf7 {
                         v202.clone()
                     }
                     _ => {
-                        let v321: Documents::US14 = if string("") == v7.clone() {
+                        let v321: Documents::US14 = if string("") == (v7.clone()) {
                             Documents::US14::US14_1(sprintf!(
                                 "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                                 toArray(ofArray(new_array(&['\"', '\'', ' ']))),
@@ -3806,11 +3789,11 @@ mod module_2555ccf7 {
                             ))
                         } else {
                             let v228: char = getCharAt(v7.clone(), 0_i32);
-                            if Documents::method92(v228, 0_i64) == false {
+                            if (Documents::method91(v228, 0_i64)) == false {
                                 let v251: string = getSlice(
                                     v7.clone(),
                                     Some(1_i32),
-                                    Some(length(v7.clone()) - 1_i32),
+                                    Some((length(v7.clone())) - 1_i32),
                                 );
                                 let v256: string = ofChar(v228);
                                 let v259: i32 = length(v256.clone());
@@ -3818,12 +3801,12 @@ mod module_2555ccf7 {
                                 let v261: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                     l0: MutCell::new(0_i32),
                                 });
-                                while Documents::method58(v259, v261.clone()) {
+                                while Documents::method59(v259, v261.clone()) {
                                     let v263: i32 = v261.l0.get().clone();
                                     let v264: char = getCharAt(v256.clone(), v263);
                                     v260.get_mut()[v263 as usize] = v264;
                                     {
-                                        let v265: i32 = v263 + 1_i32;
+                                        let v265: i32 = (v263) + 1_i32;
                                         v261.l0.set(v265);
                                         ()
                                     }
@@ -3831,11 +3814,11 @@ mod module_2555ccf7 {
                                 {
                                     let v266: List<char> = ofArray(v260.clone());
                                     let patternInput_2: (LrcPtr<StringBuilder>, i32, i32) =
-                                        Documents::method87(
+                                        Documents::method86(
                                             foldBack(
                                                 Func2::new(
                                                     move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                        (Documents::method86())(b0)(b1)
+                                                        (Documents::method85())(b0)(b1)
                                                     },
                                                 ),
                                                 v266,
@@ -3874,7 +3857,7 @@ mod module_2555ccf7 {
                             ) => {
                                 let v322: char = v321_0_0.clone();
                                 Documents::US14::US14_0(
-                                    if '\\' == v322 { '/' } else { v322 },
+                                    if '\\' == (v322) { '/' } else { v322 },
                                     v321_0_1.clone(),
                                     v321_0_2.clone(),
                                     v321_0_3.clone(),
@@ -3899,7 +3882,7 @@ mod module_2555ccf7 {
                                     LrcPtr<StringBuilder>,
                                     i32,
                                     i32,
-                                ) = Documents::method93(
+                                ) = Documents::method92(
                                     ofChar(v333_0_0.clone()),
                                     v333_0_1.clone(),
                                     v333_0_2.clone(),
@@ -3927,7 +3910,7 @@ mod module_2555ccf7 {
                                 v352_0_4,
                             ) => v352.clone(),
                             _ => {
-                                let v366: Documents::US17 = if length(v7.clone()) == 0_i32 {
+                                let v366: Documents::US17 = if (length(v7.clone())) == 0_i32 {
                                     Documents::US17::US17_0(v7.clone(), v12.clone(), 1_i32, 1_i32)
                                 } else {
                                     Documents::US17::US17_1(sprintf!(
@@ -3965,8 +3948,8 @@ mod module_2555ccf7 {
                                             v375_0_0.clone(),
                                             getSlice(
                                                 v377.clone(),
-                                                Some(Documents::method94(v377.clone(), 0_i32)),
-                                                Some(length(v377) - 1_i32),
+                                                Some(Documents::method93(v377.clone(), 0_i32)),
+                                                Some((length(v377)) - 1_i32),
                                             ),
                                             v375_0_2.clone(),
                                             v375_0_3.clone(),
@@ -3987,7 +3970,7 @@ mod module_2555ccf7 {
                         let v418: i32 = v414_0_3.clone();
                         let v417: LrcPtr<StringBuilder> = v414_0_2.clone();
                         let v416: string = v414_0_1.clone();
-                        let v544: Documents::US14 = if string("") == v416.clone() {
+                        let v544: Documents::US14 = if string("") == (v416.clone()) {
                             Documents::US14::US14_1(sprintf!(
                                 "parsing.p_char / unexpected end of input / c: \'{}\' / s: {:?}",
                                 ' ',
@@ -3995,11 +3978,11 @@ mod module_2555ccf7 {
                             ))
                         } else {
                             let v425: char = getCharAt(v416.clone(), 0_i32);
-                            if v425 == ' ' {
+                            if (v425) == ' ' {
                                 let v446: string = getSlice(
                                     v416.clone(),
                                     Some(1_i32),
-                                    Some(length(v416.clone()) - 1_i32),
+                                    Some((length(v416.clone())) - 1_i32),
                                 );
                                 let v451: string = ofChar(v425);
                                 let v454: i32 = length(v451.clone());
@@ -4007,12 +3990,12 @@ mod module_2555ccf7 {
                                 let v456: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                     l0: MutCell::new(0_i32),
                                 });
-                                while Documents::method58(v454, v456.clone()) {
+                                while Documents::method59(v454, v456.clone()) {
                                     let v458: i32 = v456.l0.get().clone();
                                     let v459: char = getCharAt(v451.clone(), v458);
                                     v455.get_mut()[v458 as usize] = v459;
                                     {
-                                        let v460: i32 = v458 + 1_i32;
+                                        let v460: i32 = (v458) + 1_i32;
                                         v456.l0.set(v460);
                                         ()
                                     }
@@ -4020,11 +4003,11 @@ mod module_2555ccf7 {
                                 {
                                     let v461: List<char> = ofArray(v455.clone());
                                     let patternInput_4: (LrcPtr<StringBuilder>, i32, i32) =
-                                        Documents::method87(
+                                        Documents::method86(
                                             foldBack(
                                                 Func2::new(
                                                     move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                        (Documents::method86())(b0)(b1)
+                                                        (Documents::method85())(b0)(b1)
                                                     },
                                                 ),
                                                 v461,
@@ -4043,34 +4026,35 @@ mod module_2555ccf7 {
                                     )
                                 }
                             } else {
-                                let v499: i32 = indexOf(v416.clone(), string("\n")) - 1_i32;
-                                Documents::US14::US14_1(sprintf!("{}\n{}\n",
-                                                                         sprintf!("parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
-                                                                                  ' ',
-                                                                                  v418,
-                                                                                  v419,
-                                                                                  v417.clone(),
-                                                                                  getSlice(v416.clone(),
-                                                                                           Some(0_i32),
-                                                                                           Some(if -2_i32
-                                                                                                       ==
-                                                                                                       v499
-                                                                                                   {
-                                                                                                    length(v416.clone())
-                                                                                                        +
-                                                                                                        1_i32
-                                                                                                } else {
-                                                                                                    v499
-                                                                                                        +
-                                                                                                        1_i32
-                                                                                                }
-                                                                                                    -
-                                                                                                    1_i32))),
-                                                                         append(replicate(v419
-                                                                                              -
-                                                                                              1_i32,
-                                                                                          string(" ")),
-                                                                                string("^"))))
+                                let v499: i32 = (indexOf(v416.clone(), string("\n"))) - 1_i32;
+                                Documents::US14::US14_1(concat(new_array(&[sprintf!("parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
+                                                                                            ' ',
+                                                                                            v418,
+                                                                                            v419,
+                                                                                            v417.clone(),
+                                                                                            getSlice(v416.clone(),
+                                                                                                     Some(0_i32),
+                                                                                                     Some((if -2_i32
+                                                                                                                  ==
+                                                                                                                  (v499)
+                                                                                                              {
+                                                                                                               (length(v416.clone()))
+                                                                                                                   +
+                                                                                                                   1_i32
+                                                                                                           } else {
+                                                                                                               (v499)
+                                                                                                                   +
+                                                                                                                   1_i32
+                                                                                                           })
+                                                                                                              -
+                                                                                                              1_i32))),
+                                                                                   string("\n"),
+                                                                                   append((replicate((v419)
+                                                                                                         -
+                                                                                                         1_i32,
+                                                                                                     string(" "))),
+                                                                                          string("^")),
+                                                                                   string("\n")])))
                             }
                         };
                         let v556: Documents::US19 = match &v544 {
@@ -4107,7 +4091,7 @@ mod module_2555ccf7 {
                                 let v560: i32 = v556_0_3.clone();
                                 let v559: LrcPtr<StringBuilder> = v556_0_2.clone();
                                 let v558: string = v556_0_1.clone();
-                                let v636: Documents::US14 = if string("") == v558.clone() {
+                                let v636: Documents::US14 = if string("") == (v558.clone()) {
                                     Documents::US14::US14_1(sprintf!(
                                         "parsing.any_char / unexpected end of input / s: {:?}",
                                         (v559.clone(), v560, v561)
@@ -4117,7 +4101,7 @@ mod module_2555ccf7 {
                                     let v587: string = getSlice(
                                         v558.clone(),
                                         Some(1_i32),
-                                        Some(length(v558) - 1_i32),
+                                        Some((length(v558)) - 1_i32),
                                     );
                                     let v592: string = ofChar(v567);
                                     let v595: i32 = length(v592.clone());
@@ -4126,12 +4110,12 @@ mod module_2555ccf7 {
                                         LrcPtr::new(Documents::Mut6 {
                                             l0: MutCell::new(0_i32),
                                         });
-                                    while Documents::method58(v595, v597.clone()) {
+                                    while Documents::method59(v595, v597.clone()) {
                                         let v599: i32 = v597.l0.get().clone();
                                         let v600: char = getCharAt(v592.clone(), v599);
                                         v596.get_mut()[v599 as usize] = v600;
                                         {
-                                            let v601: i32 = v599 + 1_i32;
+                                            let v601: i32 = (v599) + 1_i32;
                                             v597.l0.set(v601);
                                             ()
                                         }
@@ -4141,12 +4125,12 @@ mod module_2555ccf7 {
                                         let patternInput_5:
                                                             (LrcPtr<StringBuilder>,
                                                              i32, i32) =
-                                                        Documents::method87(foldBack(Func2::new(move
+                                                        Documents::method86(foldBack(Func2::new(move
                                                                                                     |b0:
                                                                                                          char,
                                                                                                      b1:
                                                                                                          LrcPtr<Documents::UH0>|
-                                                                                                    (Documents::method86())(b0)(b1)),
+                                                                                                    (Documents::method85())(b0)(b1)),
                                                                                      v602,
                                                                                      LrcPtr::new(Documents::UH0::UH0_0)),
                                                                             v559,
@@ -4175,7 +4159,7 @@ mod module_2555ccf7 {
                                             LrcPtr<StringBuilder>,
                                             i32,
                                             i32,
-                                        ) = Documents::method95(
+                                        ) = Documents::method94(
                                             ofChar(v636_0_0.clone()),
                                             v636_0_1.clone(),
                                             v636_0_2.clone(),
@@ -4215,8 +4199,8 @@ mod module_2555ccf7 {
                             ),
                             _ => Documents::US20::US20_0(
                                 Documents::US5::US5_1,
-                                v416,
-                                v417,
+                                v416.clone(),
+                                v417.clone(),
                                 v418,
                                 v419,
                             ),
@@ -4256,55 +4240,55 @@ mod module_2555ccf7 {
                 }
             }
         }
-        pub fn method98(v0_1: char, v1_1: i64) -> bool {
+        pub fn method97(v0_1: char, v1_1: i64) -> bool {
             let v0_1: MutCell<char> = MutCell::new(v0_1);
             let v1_1: MutCell<i64> = MutCell::new(v1_1);
-            '_method98: loop {
-                break '_method98 (if v1_1.get().clone() >= 4_i64 {
+            '_method97: loop {
+                break '_method97 (if (v1_1.get().clone()) >= 4_i64 {
                     false
                 } else {
-                    let v19: Documents::US16 = if v1_1.get().clone() == 0_i64 {
+                    let v19: Documents::US16 = if (v1_1.get().clone()) == 0_i64 {
                         Documents::US16::US16_0('\\')
                     } else {
-                        let v5: i64 = v1_1.get().clone() - 1_i64;
-                        if v5 == 0_i64 {
+                        let v5: i64 = (v1_1.get().clone()) - 1_i64;
+                        if (v5) == 0_i64 {
                             Documents::US16::US16_0('`')
                         } else {
-                            let v8: i64 = v5 - 1_i64;
-                            if v8 == 0_i64 {
+                            let v8: i64 = (v5) - 1_i64;
+                            if (v8) == 0_i64 {
                                 Documents::US16::US16_0('\"')
                             } else {
-                                let v11: i64 = v8 - 1_i64;
-                                if v11 == 0_i64 {
+                                let v11: i64 = (v8) - 1_i64;
+                                if (v11) == 0_i64 {
                                     Documents::US16::US16_0(' ')
                                 } else {
-                                    let v14: i64 = v11 - 1_i64;
+                                    let v14: i64 = (v11) - 1_i64;
                                     Documents::US16::US16_1
                                 }
                             }
                         }
                     };
-                    if v0_1.get().clone()
-                        == match &v19 {
+                    if (v0_1.get().clone())
+                        == (match &v19 {
                             Documents::US16::US16_0(v19_0_0) => match &v19 {
                                 Documents::US16::US16_0(x) => x.clone(),
                                 _ => unreachable!(),
                             },
                             _ => panic!("{}", string("Option does not have a value."),),
-                        }
+                        })
                     {
                         true
                     } else {
                         let v0_1_temp: char = v0_1.get().clone();
-                        let v1_1_temp: i64 = v1_1.get().clone() + 1_i64;
+                        let v1_1_temp: i64 = (v1_1.get().clone()) + 1_i64;
                         v0_1.set(v0_1_temp);
                         v1_1.set(v1_1_temp);
-                        continue '_method98;
+                        continue '_method97;
                     }
                 });
             }
         }
-        pub fn method99(
+        pub fn method98(
             v0_1: string,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -4316,9 +4300,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method99: loop {
-                break '_method99 ({
-                    let v121: Documents::US14 = if string("") == v1_1.get().clone() {
+            '_method98: loop {
+                break '_method98 ({
+                    let v121: Documents::US14 = if string("") == (v1_1.get().clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                             toArray(ofArray(new_array(&['\\', '`', '\"', ' ']))),
@@ -4326,11 +4310,11 @@ mod module_2555ccf7 {
                         ))
                     } else {
                         let v27: char = getCharAt(v1_1.get().clone(), 0_i32);
-                        if Documents::method98(v27, 0_i64) == false {
+                        if (Documents::method97(v27, 0_i64)) == false {
                             let v50: string = getSlice(
                                 v1_1.get().clone(),
                                 Some(1_i32),
-                                Some(length(v1_1.get().clone()) - 1_i32),
+                                Some((length(v1_1.get().clone())) - 1_i32),
                             );
                             let v55: string = ofChar(v27);
                             let v58: i32 = length(v55.clone());
@@ -4338,12 +4322,12 @@ mod module_2555ccf7 {
                             let v60: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                 l0: MutCell::new(0_i32),
                             });
-                            while Documents::method58(v58, v60.clone()) {
+                            while Documents::method59(v58, v60.clone()) {
                                 let v62: i32 = v60.l0.get().clone();
                                 let v63: char = getCharAt(v55.clone(), v62);
                                 v59.get_mut()[v62 as usize] = v63;
                                 {
-                                    let v64: i32 = v62 + 1_i32;
+                                    let v64: i32 = (v62) + 1_i32;
                                     v60.l0.set(v64);
                                     ()
                                 }
@@ -4351,11 +4335,11 @@ mod module_2555ccf7 {
                             {
                                 let v65: List<char> = ofArray(v59.clone());
                                 let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                    Documents::method87(
+                                    Documents::method86(
                                         foldBack(
                                             Func2::new(
                                                 move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                    (Documents::method86())(b0)(b1)
+                                                    (Documents::method85())(b0)(b1)
                                                 },
                                             ),
                                             v65,
@@ -4391,7 +4375,7 @@ mod module_2555ccf7 {
                             v121_0_4,
                         ) => {
                             let v0_1_temp: string =
-                                append(v0_1.get().clone(), ofChar(v121_0_0.clone()));
+                                append((v0_1.get().clone()), (ofChar(v121_0_0.clone())));
                             let v1_1_temp: string = v121_0_1.clone();
                             let v2_temp: LrcPtr<StringBuilder> = v121_0_2.clone();
                             let v3_temp: i32 = v121_0_3.clone();
@@ -4401,7 +4385,7 @@ mod module_2555ccf7 {
                             v2.set(v2_temp);
                             v3.set(v3_temp);
                             v4.set(v4_temp);
-                            continue '_method99;
+                            continue '_method98;
                         }
                         _ => (
                             v0_1.get().clone(),
@@ -4414,50 +4398,50 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method101(v0_1: char, v1_1: i64) -> bool {
+        pub fn method100(v0_1: char, v1_1: i64) -> bool {
             let v0_1: MutCell<char> = MutCell::new(v0_1);
             let v1_1: MutCell<i64> = MutCell::new(v1_1);
-            '_method101: loop {
-                break '_method101 (if v1_1.get().clone() >= 3_i64 {
+            '_method100: loop {
+                break '_method100 (if (v1_1.get().clone()) >= 3_i64 {
                     false
                 } else {
-                    let v15: Documents::US16 = if v1_1.get().clone() == 0_i64 {
+                    let v15: Documents::US16 = if (v1_1.get().clone()) == 0_i64 {
                         Documents::US16::US16_0('\\')
                     } else {
-                        let v5: i64 = v1_1.get().clone() - 1_i64;
-                        if v5 == 0_i64 {
+                        let v5: i64 = (v1_1.get().clone()) - 1_i64;
+                        if (v5) == 0_i64 {
                             Documents::US16::US16_0('`')
                         } else {
-                            let v8: i64 = v5 - 1_i64;
-                            if v8 == 0_i64 {
+                            let v8: i64 = (v5) - 1_i64;
+                            if (v8) == 0_i64 {
                                 Documents::US16::US16_0('\"')
                             } else {
-                                let v11: i64 = v8 - 1_i64;
+                                let v11: i64 = (v8) - 1_i64;
                                 Documents::US16::US16_1
                             }
                         }
                     };
-                    if v0_1.get().clone()
-                        == match &v15 {
+                    if (v0_1.get().clone())
+                        == (match &v15 {
                             Documents::US16::US16_0(v15_0_0) => match &v15 {
                                 Documents::US16::US16_0(x) => x.clone(),
                                 _ => unreachable!(),
                             },
                             _ => panic!("{}", string("Option does not have a value."),),
-                        }
+                        })
                     {
                         true
                     } else {
                         let v0_1_temp: char = v0_1.get().clone();
-                        let v1_1_temp: i64 = v1_1.get().clone() + 1_i64;
+                        let v1_1_temp: i64 = (v1_1.get().clone()) + 1_i64;
                         v0_1.set(v0_1_temp);
                         v1_1.set(v1_1_temp);
-                        continue '_method101;
+                        continue '_method100;
                     }
                 });
             }
         }
-        pub fn closure39(
+        pub fn closure38(
             unitVar: (),
             _arg: (string, LrcPtr<StringBuilder>, i32, i32),
         ) -> Documents::US15 {
@@ -4465,7 +4449,7 @@ mod module_2555ccf7 {
             let v2: i32 = _arg.2.clone();
             let v1_1: LrcPtr<StringBuilder> = _arg.1.clone();
             let v0_1: string = _arg.0.clone();
-            let v128: Documents::US14 = if string("") == v0_1.clone() {
+            let v128: Documents::US14 = if string("") == (v0_1.clone()) {
                 Documents::US14::US14_1(sprintf!(
                     "parsing.p_char / unexpected end of input / c: \'{}\' / s: {:?}",
                     '\\',
@@ -4473,11 +4457,11 @@ mod module_2555ccf7 {
                 ))
             } else {
                 let v9: char = getCharAt(v0_1.clone(), 0_i32);
-                if v9 == '\\' {
+                if (v9) == '\\' {
                     let v30: string = getSlice(
                         v0_1.clone(),
                         Some(1_i32),
-                        Some(length(v0_1.clone()) - 1_i32),
+                        Some((length(v0_1.clone())) - 1_i32),
                     );
                     let v35: string = ofChar(v9);
                     let v38: i32 = length(v35.clone());
@@ -4485,22 +4469,22 @@ mod module_2555ccf7 {
                     let v40: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                         l0: MutCell::new(0_i32),
                     });
-                    while Documents::method58(v38, v40.clone()) {
+                    while Documents::method59(v38, v40.clone()) {
                         let v42: i32 = v40.l0.get().clone();
                         let v43: char = getCharAt(v35.clone(), v42);
                         v39.get_mut()[v42 as usize] = v43;
                         {
-                            let v44: i32 = v42 + 1_i32;
+                            let v44: i32 = (v42) + 1_i32;
                             v40.l0.set(v44);
                             ()
                         }
                     }
                     {
                         let v45: List<char> = ofArray(v39.clone());
-                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method87(
+                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method86(
                             foldBack(
                                 Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                    (Documents::method86())(b0)(b1)
+                                    (Documents::method85())(b0)(b1)
                                 }),
                                 v45,
                                 LrcPtr::new(Documents::UH0::UH0_0),
@@ -4518,9 +4502,8 @@ mod module_2555ccf7 {
                         )
                     }
                 } else {
-                    let v83: i32 = indexOf(v0_1.clone(), string("\n")) - 1_i32;
-                    Documents::US14::US14_1(sprintf!(
-                        "{}\n{}\n",
+                    let v83: i32 = (indexOf(v0_1.clone(), string("\n"))) - 1_i32;
+                    Documents::US14::US14_1(concat(new_array(&[
                         sprintf!(
                             "parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
                             '\\',
@@ -4531,16 +4514,18 @@ mod module_2555ccf7 {
                                 v0_1.clone(),
                                 Some(0_i32),
                                 Some(
-                                    if -2_i32 == v83 {
-                                        length(v0_1) + 1_i32
+                                    (if -2_i32 == (v83) {
+                                        (length(v0_1)) + 1_i32
                                     } else {
-                                        v83 + 1_i32
-                                    } - 1_i32
+                                        (v83) + 1_i32
+                                    }) - 1_i32
                                 )
                             )
                         ),
-                        append(replicate(v3 - 1_i32, string(" ")), string("^"))
-                    ))
+                        string("\n"),
+                        append((replicate((v3) - 1_i32, string(" "))), string("^")),
+                        string("\n"),
+                    ])))
                 }
             };
             let v212: Documents::US14 = match &v128 {
@@ -4549,7 +4534,7 @@ mod module_2555ccf7 {
                     let v132: i32 = v128_0_3.clone();
                     let v131: LrcPtr<StringBuilder> = v128_0_2.clone();
                     let v130: string = v128_0_1.clone();
-                    if string("") == v130.clone() {
+                    if string("") == (v130.clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.any_char / unexpected end of input / s: {:?}",
                             (v131.clone(), v132, v133)
@@ -4557,19 +4542,19 @@ mod module_2555ccf7 {
                     } else {
                         let v139: char = getCharAt(v130.clone(), 0_i32);
                         let v159: string =
-                            getSlice(v130.clone(), Some(1_i32), Some(length(v130) - 1_i32));
+                            getSlice(v130.clone(), Some(1_i32), Some((length(v130)) - 1_i32));
                         let v164: string = ofChar(v139);
                         let v167: i32 = length(v164.clone());
                         let v168: Array<char> = new_init(&'\u{0000}', v167);
                         let v169: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                             l0: MutCell::new(0_i32),
                         });
-                        while Documents::method58(v167, v169.clone()) {
+                        while Documents::method59(v167, v169.clone()) {
                             let v171: i32 = v169.l0.get().clone();
                             let v172: char = getCharAt(v164.clone(), v171);
                             v168.get_mut()[v171 as usize] = v172;
                             {
-                                let v173: i32 = v171 + 1_i32;
+                                let v173: i32 = (v171) + 1_i32;
                                 v169.l0.set(v173);
                                 ()
                             }
@@ -4577,10 +4562,10 @@ mod module_2555ccf7 {
                         {
                             let v174: List<char> = ofArray(v168.clone());
                             let patternInput_1: (LrcPtr<StringBuilder>, i32, i32) =
-                                Documents::method87(
+                                Documents::method86(
                                     foldBack(
                                         Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                            (Documents::method86())(b0)(b1)
+                                            (Documents::method85())(b0)(b1)
                                         }),
                                         v174,
                                         LrcPtr::new(Documents::UH0::UH0_0),
@@ -4604,7 +4589,7 @@ mod module_2555ccf7 {
             match &v212 {
                 Documents::US14::US14_0(v212_0_0, v212_0_1, v212_0_2, v212_0_3, v212_0_4) => {
                     Documents::US15::US15_0(
-                        append(ofChar('\\'), ofChar(v212_0_0.clone())),
+                        append((ofChar('\\')), (ofChar(v212_0_0.clone()))),
                         v212_0_1.clone(),
                         v212_0_2.clone(),
                         v212_0_3.clone(),
@@ -4614,7 +4599,7 @@ mod module_2555ccf7 {
                 Documents::US14::US14_1(v212_1_0) => Documents::US15::US15_1(v212_1_0.clone()),
             }
         }
-        pub fn closure40(
+        pub fn closure39(
             unitVar: (),
             _arg: (string, LrcPtr<StringBuilder>, i32, i32),
         ) -> Documents::US15 {
@@ -4622,7 +4607,7 @@ mod module_2555ccf7 {
             let v2: i32 = _arg.2.clone();
             let v1_1: LrcPtr<StringBuilder> = _arg.1.clone();
             let v0_1: string = _arg.0.clone();
-            let v128: Documents::US14 = if string("") == v0_1.clone() {
+            let v128: Documents::US14 = if string("") == (v0_1.clone()) {
                 Documents::US14::US14_1(sprintf!(
                     "parsing.p_char / unexpected end of input / c: \'{}\' / s: {:?}",
                     '`',
@@ -4630,11 +4615,11 @@ mod module_2555ccf7 {
                 ))
             } else {
                 let v9: char = getCharAt(v0_1.clone(), 0_i32);
-                if v9 == '`' {
+                if (v9) == '`' {
                     let v30: string = getSlice(
                         v0_1.clone(),
                         Some(1_i32),
-                        Some(length(v0_1.clone()) - 1_i32),
+                        Some((length(v0_1.clone())) - 1_i32),
                     );
                     let v35: string = ofChar(v9);
                     let v38: i32 = length(v35.clone());
@@ -4642,22 +4627,22 @@ mod module_2555ccf7 {
                     let v40: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                         l0: MutCell::new(0_i32),
                     });
-                    while Documents::method58(v38, v40.clone()) {
+                    while Documents::method59(v38, v40.clone()) {
                         let v42: i32 = v40.l0.get().clone();
                         let v43: char = getCharAt(v35.clone(), v42);
                         v39.get_mut()[v42 as usize] = v43;
                         {
-                            let v44: i32 = v42 + 1_i32;
+                            let v44: i32 = (v42) + 1_i32;
                             v40.l0.set(v44);
                             ()
                         }
                     }
                     {
                         let v45: List<char> = ofArray(v39.clone());
-                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method87(
+                        let patternInput: (LrcPtr<StringBuilder>, i32, i32) = Documents::method86(
                             foldBack(
                                 Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                    (Documents::method86())(b0)(b1)
+                                    (Documents::method85())(b0)(b1)
                                 }),
                                 v45,
                                 LrcPtr::new(Documents::UH0::UH0_0),
@@ -4675,9 +4660,8 @@ mod module_2555ccf7 {
                         )
                     }
                 } else {
-                    let v83: i32 = indexOf(v0_1.clone(), string("\n")) - 1_i32;
-                    Documents::US14::US14_1(sprintf!(
-                        "{}\n{}\n",
+                    let v83: i32 = (indexOf(v0_1.clone(), string("\n"))) - 1_i32;
+                    Documents::US14::US14_1(concat(new_array(&[
                         sprintf!(
                             "parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
                             '`',
@@ -4688,16 +4672,18 @@ mod module_2555ccf7 {
                                 v0_1.clone(),
                                 Some(0_i32),
                                 Some(
-                                    if -2_i32 == v83 {
-                                        length(v0_1) + 1_i32
+                                    (if -2_i32 == (v83) {
+                                        (length(v0_1)) + 1_i32
                                     } else {
-                                        v83 + 1_i32
-                                    } - 1_i32
+                                        (v83) + 1_i32
+                                    }) - 1_i32
                                 )
                             )
                         ),
-                        append(replicate(v3 - 1_i32, string(" ")), string("^"))
-                    ))
+                        string("\n"),
+                        append((replicate((v3) - 1_i32, string(" "))), string("^")),
+                        string("\n"),
+                    ])))
                 }
             };
             let v212: Documents::US14 = match &v128 {
@@ -4706,7 +4692,7 @@ mod module_2555ccf7 {
                     let v132: i32 = v128_0_3.clone();
                     let v131: LrcPtr<StringBuilder> = v128_0_2.clone();
                     let v130: string = v128_0_1.clone();
-                    if string("") == v130.clone() {
+                    if string("") == (v130.clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.any_char / unexpected end of input / s: {:?}",
                             (v131.clone(), v132, v133)
@@ -4714,19 +4700,19 @@ mod module_2555ccf7 {
                     } else {
                         let v139: char = getCharAt(v130.clone(), 0_i32);
                         let v159: string =
-                            getSlice(v130.clone(), Some(1_i32), Some(length(v130) - 1_i32));
+                            getSlice(v130.clone(), Some(1_i32), Some((length(v130)) - 1_i32));
                         let v164: string = ofChar(v139);
                         let v167: i32 = length(v164.clone());
                         let v168: Array<char> = new_init(&'\u{0000}', v167);
                         let v169: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                             l0: MutCell::new(0_i32),
                         });
-                        while Documents::method58(v167, v169.clone()) {
+                        while Documents::method59(v167, v169.clone()) {
                             let v171: i32 = v169.l0.get().clone();
                             let v172: char = getCharAt(v164.clone(), v171);
                             v168.get_mut()[v171 as usize] = v172;
                             {
-                                let v173: i32 = v171 + 1_i32;
+                                let v173: i32 = (v171) + 1_i32;
                                 v169.l0.set(v173);
                                 ()
                             }
@@ -4734,10 +4720,10 @@ mod module_2555ccf7 {
                         {
                             let v174: List<char> = ofArray(v168.clone());
                             let patternInput_1: (LrcPtr<StringBuilder>, i32, i32) =
-                                Documents::method87(
+                                Documents::method86(
                                     foldBack(
                                         Func2::new(move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                            (Documents::method86())(b0)(b1)
+                                            (Documents::method85())(b0)(b1)
                                         }),
                                         v174,
                                         LrcPtr::new(Documents::UH0::UH0_0),
@@ -4761,7 +4747,7 @@ mod module_2555ccf7 {
             match &v212 {
                 Documents::US14::US14_0(v212_0_0, v212_0_1, v212_0_2, v212_0_3, v212_0_4) => {
                     Documents::US15::US15_0(
-                        append(ofChar('`'), ofChar(v212_0_0.clone())),
+                        append((ofChar('`')), (ofChar(v212_0_0.clone()))),
                         v212_0_1.clone(),
                         v212_0_2.clone(),
                         v212_0_3.clone(),
@@ -4771,7 +4757,7 @@ mod module_2555ccf7 {
                 Documents::US14::US14_1(v212_1_0) => Documents::US15::US15_1(v212_1_0.clone()),
             }
         }
-        pub fn method102(
+        pub fn method101(
             v0_1: string,
             v1_1: LrcPtr<StringBuilder>,
             v2: i32,
@@ -4783,8 +4769,8 @@ mod module_2555ccf7 {
             let v2: MutCell<i32> = MutCell::new(v2);
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<LrcPtr<Documents::UH3>> = MutCell::new(v4.clone());
-            '_method102: loop {
-                break '_method102 (match v4.get().clone().as_ref() {
+            '_method101: loop {
+                break '_method101 (match v4.get().clone().as_ref() {
                     Documents::UH3::UH3_0 => {
                         Documents::US15::US15_1(string("parsing.choice / no parsers succeeded"))
                     }
@@ -4811,48 +4797,51 @@ mod module_2555ccf7 {
                                     match v4.get().clone().as_ref() {
                                         Documents::UH3::UH3_1(_, x) => x.clone(),
                                         _ => unreachable!(),
-                                    };
+                                    }
+                                    .clone();
                                 v0_1.set(v0_1_temp);
                                 v1_1.set(v1_1_temp);
                                 v2.set(v2_temp);
                                 v3.set(v3_temp);
                                 v4.set(v4_temp);
-                                continue '_method102;
+                                continue '_method101;
                             }
                         }
                     }
                 });
             }
         }
-        pub fn method103(
+        pub fn method102(
             v0_1: LrcPtr<Documents::UH2>,
             v1_1: LrcPtr<Documents::UH2>,
         ) -> LrcPtr<Documents::UH2> {
             let v0_1: MutCell<LrcPtr<Documents::UH2>> = MutCell::new(v0_1.clone());
             let v1_1: MutCell<LrcPtr<Documents::UH2>> = MutCell::new(v1_1.clone());
-            '_method103: loop {
-                break '_method103 (match v0_1.get().clone().as_ref() {
+            '_method102: loop {
+                break '_method102 (match v0_1.get().clone().as_ref() {
                     Documents::UH2::UH2_0 => v1_1.get().clone(),
                     Documents::UH2::UH2_1(v0_1_1_0, v0_1_1_1) => {
                         let v0_1_temp: LrcPtr<Documents::UH2> = match v0_1.get().clone().as_ref() {
                             Documents::UH2::UH2_1(_, x) => x.clone(),
                             _ => unreachable!(),
-                        };
+                        }
+                        .clone();
                         let v1_1_temp: LrcPtr<Documents::UH2> = LrcPtr::new(Documents::UH2::UH2_1(
                             match v0_1.get().clone().as_ref() {
                                 Documents::UH2::UH2_1(x, _) => x.clone(),
                                 _ => unreachable!(),
-                            },
+                            }
+                            .clone(),
                             v1_1.get().clone(),
                         ));
                         v0_1.set(v0_1_temp);
                         v1_1.set(v1_1_temp);
-                        continue '_method103;
+                        continue '_method102;
                     }
                 });
             }
         }
-        pub fn method100(
+        pub fn method99(
             v0_1: LrcPtr<Documents::UH2>,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -4864,9 +4853,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method100: loop {
-                break '_method100 ({
-                    let v115: Documents::US14 = if string("") == v1_1.get().clone() {
+            '_method99: loop {
+                break '_method99 ({
+                    let v115: Documents::US14 = if string("") == (v1_1.get().clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                             toArray(ofArray(new_array(&['\\', '`', '\"']))),
@@ -4874,11 +4863,11 @@ mod module_2555ccf7 {
                         ))
                     } else {
                         let v24: char = getCharAt(v1_1.get().clone(), 0_i32);
-                        if Documents::method101(v24, 0_i64) == false {
+                        if (Documents::method100(v24, 0_i64)) == false {
                             let v47: string = getSlice(
                                 v1_1.get().clone(),
                                 Some(1_i32),
-                                Some(length(v1_1.get().clone()) - 1_i32),
+                                Some((length(v1_1.get().clone())) - 1_i32),
                             );
                             let v52: string = ofChar(v24);
                             let v55: i32 = length(v52.clone());
@@ -4886,12 +4875,12 @@ mod module_2555ccf7 {
                             let v57: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                 l0: MutCell::new(0_i32),
                             });
-                            while Documents::method58(v55, v57.clone()) {
+                            while Documents::method59(v55, v57.clone()) {
                                 let v59: i32 = v57.l0.get().clone();
                                 let v60: char = getCharAt(v52.clone(), v59);
                                 v56.get_mut()[v59 as usize] = v60;
                                 {
-                                    let v61: i32 = v59 + 1_i32;
+                                    let v61: i32 = (v59) + 1_i32;
                                     v57.l0.set(v61);
                                     ()
                                 }
@@ -4899,11 +4888,11 @@ mod module_2555ccf7 {
                             {
                                 let v62: List<char> = ofArray(v56.clone());
                                 let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                    Documents::method87(
+                                    Documents::method86(
                                         foldBack(
                                             Func2::new(
                                                 move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                    (Documents::method86())(b0)(b1)
+                                                    (Documents::method85())(b0)(b1)
                                                 },
                                             ),
                                             v62,
@@ -4956,7 +4945,7 @@ mod module_2555ccf7 {
                             v129_0_3,
                             v129_0_4,
                         ) => v129.clone(),
-                        _ => Documents::method102(
+                        _ => Documents::method101(
                             v1_1.get().clone(),
                             v2.get().clone(),
                             v3.get().clone(),
@@ -4964,7 +4953,7 @@ mod module_2555ccf7 {
                             LrcPtr::new(Documents::UH3::UH3_1(
                                 Func1::new(
                                     move |arg10_0040: (string, LrcPtr<StringBuilder>, i32, i32)| {
-                                        Documents::closure39((), arg10_0040)
+                                        Documents::closure38((), arg10_0040)
                                     },
                                 ),
                                 LrcPtr::new(Documents::UH3::UH3_1(
@@ -4975,7 +4964,7 @@ mod module_2555ccf7 {
                                             i32,
                                             i32,
                                         )| {
-                                            Documents::closure40((), arg10_0040_1)
+                                            Documents::closure39((), arg10_0040_1)
                                         },
                                     ),
                                     LrcPtr::new(Documents::UH3::UH3_0),
@@ -5003,10 +4992,10 @@ mod module_2555ccf7 {
                             v2.set(v2_temp);
                             v3.set(v3_temp);
                             v4.set(v4_temp);
-                            continue '_method100;
+                            continue '_method99;
                         }
                         _ => Documents::US22::US22_0(
-                            Documents::method103(
+                            Documents::method102(
                                 v0_1.get().clone(),
                                 LrcPtr::new(Documents::UH2::UH2_0),
                             ),
@@ -5019,25 +5008,27 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method104(v0_1: LrcPtr<Documents::UH2>, v1_1: List<string>) -> List<string> {
+        pub fn method103(v0_1: LrcPtr<Documents::UH2>, v1_1: List<string>) -> List<string> {
             match v0_1.as_ref() {
                 Documents::UH2::UH2_0 => v1_1.clone(),
                 Documents::UH2::UH2_1(v0_1_1_0, v0_1_1_1) => cons(
                     match v0_1.as_ref() {
                         Documents::UH2::UH2_1(x, _) => x.clone(),
                         _ => unreachable!(),
-                    },
-                    Documents::method104(
+                    }
+                    .clone(),
+                    Documents::method103(
                         match v0_1.as_ref() {
                             Documents::UH2::UH2_1(_, x) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }
+                        .clone(),
                         v1_1.clone(),
                     ),
                 ),
             }
         }
-        pub fn method105(
+        pub fn method104(
             v0_1: LrcPtr<Documents::UH2>,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -5049,9 +5040,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method105: loop {
-                break '_method105 ({
-                    let v115: Documents::US14 = if string("") == v1_1.get().clone() {
+            '_method104: loop {
+                break '_method104 ({
+                    let v115: Documents::US14 = if string("") == (v1_1.get().clone()) {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
                             toArray(ofArray(new_array(&['\\', '`', '\"']))),
@@ -5059,11 +5050,11 @@ mod module_2555ccf7 {
                         ))
                     } else {
                         let v24: char = getCharAt(v1_1.get().clone(), 0_i32);
-                        if Documents::method101(v24, 0_i64) == false {
+                        if (Documents::method100(v24, 0_i64)) == false {
                             let v47: string = getSlice(
                                 v1_1.get().clone(),
                                 Some(1_i32),
-                                Some(length(v1_1.get().clone()) - 1_i32),
+                                Some((length(v1_1.get().clone())) - 1_i32),
                             );
                             let v52: string = ofChar(v24);
                             let v55: i32 = length(v52.clone());
@@ -5071,12 +5062,12 @@ mod module_2555ccf7 {
                             let v57: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                 l0: MutCell::new(0_i32),
                             });
-                            while Documents::method58(v55, v57.clone()) {
+                            while Documents::method59(v55, v57.clone()) {
                                 let v59: i32 = v57.l0.get().clone();
                                 let v60: char = getCharAt(v52.clone(), v59);
                                 v56.get_mut()[v59 as usize] = v60;
                                 {
-                                    let v61: i32 = v59 + 1_i32;
+                                    let v61: i32 = (v59) + 1_i32;
                                     v57.l0.set(v61);
                                     ()
                                 }
@@ -5084,11 +5075,11 @@ mod module_2555ccf7 {
                             {
                                 let v62: List<char> = ofArray(v56.clone());
                                 let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                    Documents::method87(
+                                    Documents::method86(
                                         foldBack(
                                             Func2::new(
                                                 move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                    (Documents::method86())(b0)(b1)
+                                                    (Documents::method85())(b0)(b1)
                                                 },
                                             ),
                                             v62,
@@ -5153,10 +5144,10 @@ mod module_2555ccf7 {
                             v2.set(v2_temp);
                             v3.set(v3_temp);
                             v4.set(v4_temp);
-                            continue '_method105;
+                            continue '_method104;
                         }
                         _ => Documents::US22::US22_0(
-                            Documents::method103(
+                            Documents::method102(
                                 v0_1.get().clone(),
                                 LrcPtr::new(Documents::UH2::UH2_0),
                             ),
@@ -5169,7 +5160,7 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method97(
+        pub fn method96(
             v0_1: LrcPtr<Documents::UH2>,
             v1_1: string,
             v2: LrcPtr<StringBuilder>,
@@ -5181,9 +5172,9 @@ mod module_2555ccf7 {
             let v2: MutCell<LrcPtr<StringBuilder>> = MutCell::new(v2.clone());
             let v3: MutCell<i32> = MutCell::new(v3);
             let v4: MutCell<i32> = MutCell::new(v4);
-            '_method97: loop {
-                break '_method97 ({
-                    let v5: bool = string("") == v1_1.get().clone();
+            '_method96: loop {
+                break '_method96 ({
+                    let v5: bool = string("") == (v1_1.get().clone());
                     let v121: Documents::US14 = if v5 {
                         Documents::US14::US14_1(sprintf!(
                             "parsing.none_of / unexpected end of input / chars: {:?} / s: {:?}",
@@ -5192,11 +5183,11 @@ mod module_2555ccf7 {
                         ))
                     } else {
                         let v27: char = getCharAt(v1_1.get().clone(), 0_i32);
-                        if Documents::method98(v27, 0_i64) == false {
+                        if (Documents::method97(v27, 0_i64)) == false {
                             let v50: string = getSlice(
                                 v1_1.get().clone(),
                                 Some(1_i32),
-                                Some(length(v1_1.get().clone()) - 1_i32),
+                                Some((length(v1_1.get().clone())) - 1_i32),
                             );
                             let v55: string = ofChar(v27);
                             let v58: i32 = length(v55.clone());
@@ -5204,12 +5195,12 @@ mod module_2555ccf7 {
                             let v60: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                                 l0: MutCell::new(0_i32),
                             });
-                            while Documents::method58(v58, v60.clone()) {
+                            while Documents::method59(v58, v60.clone()) {
                                 let v62: i32 = v60.l0.get().clone();
                                 let v63: char = getCharAt(v55.clone(), v62);
                                 v59.get_mut()[v62 as usize] = v63;
                                 {
-                                    let v64: i32 = v62 + 1_i32;
+                                    let v64: i32 = (v62) + 1_i32;
                                     v60.l0.set(v64);
                                     ()
                                 }
@@ -5217,11 +5208,11 @@ mod module_2555ccf7 {
                             {
                                 let v65: List<char> = ofArray(v59.clone());
                                 let patternInput: (LrcPtr<StringBuilder>, i32, i32) =
-                                    Documents::method87(
+                                    Documents::method86(
                                         foldBack(
                                             Func2::new(
                                                 move |b0: char, b1: LrcPtr<Documents::UH0>| {
-                                                    (Documents::method86())(b0)(b1)
+                                                    (Documents::method85())(b0)(b1)
                                                 },
                                             ),
                                             v65,
@@ -5257,7 +5248,7 @@ mod module_2555ccf7 {
                             v121_0_4,
                         ) => {
                             let patternInput_1: (string, string, LrcPtr<StringBuilder>, i32, i32) =
-                                Documents::method99(
+                                Documents::method98(
                                     ofChar(v121_0_0.clone()),
                                     v121_0_1.clone(),
                                     v121_0_2.clone(),
@@ -5276,7 +5267,7 @@ mod module_2555ccf7 {
                             Documents::US15::US15_1(v121_1_0.clone())
                         }
                     };
-                    let v517: Documents::US15 = match &v140 {
+                    let v521: Documents::US15 = match &v140 {
                         Documents::US15::US15_0(
                             v140_0_0,
                             v140_0_1,
@@ -5293,11 +5284,11 @@ mod module_2555ccf7 {
                                                                                    v4.get().clone())))
                             } else {
                                 let v151: char = getCharAt(v1_1.get().clone(), 0_i32);
-                                if v151 == '\"' {
+                                if (v151) == '\"' {
                                     let v172: string = getSlice(
                                         v1_1.get().clone(),
                                         Some(1_i32),
-                                        Some(length(v1_1.get().clone()) - 1_i32),
+                                        Some((length(v1_1.get().clone())) - 1_i32),
                                     );
                                     let v177: string = ofChar(v151);
                                     let v180: i32 = length(v177.clone());
@@ -5306,12 +5297,12 @@ mod module_2555ccf7 {
                                         LrcPtr::new(Documents::Mut6 {
                                             l0: MutCell::new(0_i32),
                                         });
-                                    while Documents::method58(v180, v182.clone()) {
+                                    while Documents::method59(v180, v182.clone()) {
                                         let v184: i32 = v182.l0.get().clone();
                                         let v185: char = getCharAt(v177.clone(), v184);
                                         v181.get_mut()[v184 as usize] = v185;
                                         {
-                                            let v186: i32 = v184 + 1_i32;
+                                            let v186: i32 = (v184) + 1_i32;
                                             v182.l0.set(v186);
                                             ()
                                         }
@@ -5321,12 +5312,12 @@ mod module_2555ccf7 {
                                         let patternInput_2:
                                                                  (LrcPtr<StringBuilder>,
                                                                   i32, i32) =
-                                                             Documents::method87(foldBack(Func2::new(move
+                                                             Documents::method86(foldBack(Func2::new(move
                                                                                                          |b0:
                                                                                                               char,
                                                                                                           b1:
                                                                                                               LrcPtr<Documents::UH0>|
-                                                                                                         (Documents::method86())(b0)(b1)),
+                                                                                                         (Documents::method85())(b0)(b1)),
                                                                                           v187,
                                                                                           LrcPtr::new(Documents::UH0::UH0_0)),
                                                                                  v2.get().clone(),
@@ -5342,37 +5333,38 @@ mod module_2555ccf7 {
                                     }
                                 } else {
                                     let v225: i32 =
-                                        indexOf(v1_1.get().clone(), string("\n")) - 1_i32;
-                                    Documents::US14::US14_1(sprintf!("{}\n{}\n",
-                                                                                      sprintf!("parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
-                                                                                               '\"',
-                                                                                               v3.get().clone(),
-                                                                                               v4.get().clone(),
-                                                                                               v2.get().clone(),
-                                                                                               getSlice(v1_1.get().clone(),
-                                                                                                        Some(0_i32),
-                                                                                                        Some(if -2_i32
-                                                                                                                    ==
-                                                                                                                    v225
-                                                                                                                {
-                                                                                                                 length(v1_1.get().clone())
-                                                                                                                     +
-                                                                                                                     1_i32
-                                                                                                             } else {
-                                                                                                                 v225
-                                                                                                                     +
-                                                                                                                     1_i32
-                                                                                                             }
-                                                                                                                 -
-                                                                                                                 1_i32))),
-                                                                                      append(replicate(v4.get().clone()
-                                                                                                           -
-                                                                                                           1_i32,
-                                                                                                       string(" ")),
-                                                                                             string("^"))))
+                                        (indexOf(v1_1.get().clone(), string("\n"))) - 1_i32;
+                                    Documents::US14::US14_1(concat(new_array(&[sprintf!("parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
+                                                                                                         '\"',
+                                                                                                         v3.get().clone(),
+                                                                                                         v4.get().clone(),
+                                                                                                         v2.get().clone(),
+                                                                                                         getSlice(v1_1.get().clone(),
+                                                                                                                  Some(0_i32),
+                                                                                                                  Some((if -2_i32
+                                                                                                                               ==
+                                                                                                                               (v225)
+                                                                                                                           {
+                                                                                                                            (length(v1_1.get().clone()))
+                                                                                                                                +
+                                                                                                                                1_i32
+                                                                                                                        } else {
+                                                                                                                            (v225)
+                                                                                                                                +
+                                                                                                                                1_i32
+                                                                                                                        })
+                                                                                                                           -
+                                                                                                                           1_i32))),
+                                                                                                string("\n"),
+                                                                                                append((replicate((v4.get().clone())
+                                                                                                                      -
+                                                                                                                      1_i32,
+                                                                                                                  string(" "))),
+                                                                                                       string("^")),
+                                                                                                string("\n")])))
                                 }
                             };
-                            let v454: Documents::US15 = match &v270 {
+                            let v456: Documents::US15 = match &v270 {
                                 Documents::US14::US14_0(
                                     v270_0_0,
                                     v270_0_1,
@@ -5384,14 +5376,14 @@ mod module_2555ccf7 {
                                     let v274: i32 = v270_0_3.clone();
                                     let v273: LrcPtr<StringBuilder> = v270_0_2.clone();
                                     let v272: string = v270_0_1.clone();
-                                    let v277: Documents::US22 = Documents::method100(
+                                    let v277: Documents::US22 = Documents::method99(
                                         LrcPtr::new(Documents::UH2::UH2_0),
                                         v272.clone(),
                                         v273.clone(),
                                         v274,
                                         v275,
                                     );
-                                    let v302: Documents::US15 = match &v277 {
+                                    let v304: Documents::US15 = match &v277 {
                                         Documents::US22::US22_0(
                                             v277_0_0,
                                             v277_0_1,
@@ -5399,7 +5391,7 @@ mod module_2555ccf7 {
                                             v277_0_3,
                                             v277_0_4,
                                         ) => {
-                                            let v284: List<string> = Documents::method104(
+                                            let v284: List<string> = Documents::method103(
                                                 v277_0_0.clone(),
                                                 empty::<string>(),
                                             );
@@ -5419,7 +5411,8 @@ mod module_2555ccf7 {
                                                                 rangeNumeric(
                                                                     0_i32,
                                                                     1_i32,
-                                                                    length_1(v284.clone()) - 1_i32,
+                                                                    (length_1(v284.clone()))
+                                                                        - 1_i32,
                                                                 ),
                                                             )
                                                         }
@@ -5435,139 +5428,141 @@ mod module_2555ccf7 {
                                             Documents::US15::US15_1(v277_1_0.clone())
                                         }
                                     };
-                                    match &v302 {
+                                    match &v304 {
                                         Documents::US15::US15_0(
-                                            v302_0_0,
-                                            v302_0_1,
-                                            v302_0_2,
-                                            v302_0_3,
-                                            v302_0_4,
+                                            v304_0_0,
+                                            v304_0_1,
+                                            v304_0_2,
+                                            v304_0_3,
+                                            v304_0_4,
                                         ) => {
-                                            let v307: i32 = v302_0_4.clone();
-                                            let v306: i32 = v302_0_3.clone();
-                                            let v305: LrcPtr<StringBuilder> = v302_0_2.clone();
-                                            let v304: string = v302_0_1.clone();
-                                            let v432: Documents::US14 = if string("")
-                                                == v304.clone()
+                                            let v309: i32 = v304_0_4.clone();
+                                            let v308: i32 = v304_0_3.clone();
+                                            let v307: LrcPtr<StringBuilder> = v304_0_2.clone();
+                                            let v306: string = v304_0_1.clone();
+                                            let v434: Documents::US14 = if string("")
+                                                == (v306.clone())
                                             {
                                                 Documents::US14::US14_1(sprintf!("parsing.p_char / unexpected end of input / c: \'{}\' / s: {:?}",
                                                                                                       '\"',
-                                                                                                      (v305.clone(),
-                                                                                                       v306,
-                                                                                                       v307)))
+                                                                                                      (v307.clone(),
+                                                                                                       v308,
+                                                                                                       v309)))
                                             } else {
-                                                let v313: char = getCharAt(v304.clone(), 0_i32);
-                                                if v313 == '\"' {
-                                                    let v334: string = getSlice(
-                                                        v304.clone(),
+                                                let v315: char = getCharAt(v306.clone(), 0_i32);
+                                                if (v315) == '\"' {
+                                                    let v336: string = getSlice(
+                                                        v306.clone(),
                                                         Some(1_i32),
-                                                        Some(length(v304.clone()) - 1_i32),
+                                                        Some((length(v306.clone())) - 1_i32),
                                                     );
-                                                    let v339: string = ofChar(v313);
-                                                    let v342: i32 = length(v339.clone());
-                                                    let v343: Array<char> =
-                                                        new_init(&'\u{0000}', v342);
-                                                    let v344: LrcPtr<Documents::Mut6> =
+                                                    let v341: string = ofChar(v315);
+                                                    let v344: i32 = length(v341.clone());
+                                                    let v345: Array<char> =
+                                                        new_init(&'\u{0000}', v344);
+                                                    let v346: LrcPtr<Documents::Mut6> =
                                                         LrcPtr::new(Documents::Mut6 {
                                                             l0: MutCell::new(0_i32),
                                                         });
-                                                    while Documents::method58(v342, v344.clone()) {
-                                                        let v346: i32 = v344.l0.get().clone();
-                                                        let v347: char =
-                                                            getCharAt(v339.clone(), v346);
-                                                        v343.get_mut()[v346 as usize] = v347;
+                                                    while Documents::method59(v344, v346.clone()) {
+                                                        let v348: i32 = v346.l0.get().clone();
+                                                        let v349: char =
+                                                            getCharAt(v341.clone(), v348);
+                                                        v345.get_mut()[v348 as usize] = v349;
                                                         {
-                                                            let v348: i32 = v346 + 1_i32;
-                                                            v344.l0.set(v348);
+                                                            let v350: i32 = (v348) + 1_i32;
+                                                            v346.l0.set(v350);
                                                             ()
                                                         }
                                                     }
                                                     {
-                                                        let v349: List<char> =
-                                                            ofArray(v343.clone());
+                                                        let v351: List<char> =
+                                                            ofArray(v345.clone());
                                                         let patternInput_3:
                                                                                      (LrcPtr<StringBuilder>,
                                                                                       i32,
                                                                                       i32) =
-                                                                                 Documents::method87(foldBack(Func2::new(move
+                                                                                 Documents::method86(foldBack(Func2::new(move
                                                                                                                              |b0:
                                                                                                                                   char,
                                                                                                                               b1:
                                                                                                                                   LrcPtr<Documents::UH0>|
-                                                                                                                             (Documents::method86())(b0)(b1)),
-                                                                                                              v349,
+                                                                                                                             (Documents::method85())(b0)(b1)),
+                                                                                                              v351,
                                                                                                               LrcPtr::new(Documents::UH0::UH0_0)),
-                                                                                                     v305.clone(),
-                                                                                                     v306,
-                                                                                                     v307);
+                                                                                                     v307.clone(),
+                                                                                                     v308,
+                                                                                                     v309);
                                                         Documents::US14::US14_0(
-                                                            v313,
-                                                            v334,
+                                                            v315,
+                                                            v336,
                                                             patternInput_3.0.clone(),
                                                             patternInput_3.1.clone(),
                                                             patternInput_3.2.clone(),
                                                         )
                                                     }
                                                 } else {
-                                                    let v387: i32 =
-                                                        indexOf(v304.clone(), string("\n")) - 1_i32;
-                                                    Documents::US14::US14_1(sprintf!("{}\n{}\n",
-                                                                                                          sprintf!("parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
-                                                                                                                   '\"',
-                                                                                                                   v306,
-                                                                                                                   v307,
-                                                                                                                   v305.clone(),
-                                                                                                                   getSlice(v304.clone(),
-                                                                                                                            Some(0_i32),
-                                                                                                                            Some(if -2_i32
-                                                                                                                                        ==
-                                                                                                                                        v387
-                                                                                                                                    {
-                                                                                                                                     length(v304.clone())
-                                                                                                                                         +
-                                                                                                                                         1_i32
-                                                                                                                                 } else {
-                                                                                                                                     v387
-                                                                                                                                         +
-                                                                                                                                         1_i32
-                                                                                                                                 }
-                                                                                                                                     -
-                                                                                                                                     1_i32))),
-                                                                                                          append(replicate(v307
-                                                                                                                               -
-                                                                                                                               1_i32,
-                                                                                                                           string(" ")),
-                                                                                                                 string("^"))))
+                                                    let v389: i32 =
+                                                        (indexOf(v306.clone(), string("\n")))
+                                                            - 1_i32;
+                                                    Documents::US14::US14_1(concat(new_array(&[sprintf!("parsing.p_char / expected: \'{}\' / line: {} / col: {}\n{}{}",
+                                                                                                                             '\"',
+                                                                                                                             v308,
+                                                                                                                             v309,
+                                                                                                                             v307.clone(),
+                                                                                                                             getSlice(v306.clone(),
+                                                                                                                                      Some(0_i32),
+                                                                                                                                      Some((if -2_i32
+                                                                                                                                                   ==
+                                                                                                                                                   (v389)
+                                                                                                                                               {
+                                                                                                                                                (length(v306.clone()))
+                                                                                                                                                    +
+                                                                                                                                                    1_i32
+                                                                                                                                            } else {
+                                                                                                                                                (v389)
+                                                                                                                                                    +
+                                                                                                                                                    1_i32
+                                                                                                                                            })
+                                                                                                                                               -
+                                                                                                                                               1_i32))),
+                                                                                                                    string("\n"),
+                                                                                                                    append((replicate((v309)
+                                                                                                                                          -
+                                                                                                                                          1_i32,
+                                                                                                                                      string(" "))),
+                                                                                                                           string("^")),
+                                                                                                                    string("\n")])))
                                                 }
                                             };
-                                            match &v432 {
-                                                                 Documents::US14::US14_0(v432_0_0,
-                                                                                         v432_0_1,
-                                                                                         v432_0_2,
-                                                                                         v432_0_3,
-                                                                                         v432_0_4)
+                                            match &v434 {
+                                                                 Documents::US14::US14_0(v434_0_0,
+                                                                                         v434_0_1,
+                                                                                         v434_0_2,
+                                                                                         v434_0_3,
+                                                                                         v434_0_4)
                                                                  =>
-                                                                 Documents::US15::US15_0(v302_0_0.clone(),
-                                                                                         v432_0_1.clone(),
-                                                                                         v432_0_2.clone(),
-                                                                                         v432_0_3.clone(),
-                                                                                         v432_0_4.clone()),
-                                                                 Documents::US14::US14_1(v432_1_0)
+                                                                 Documents::US15::US15_0(v304_0_0.clone(),
+                                                                                         v434_0_1.clone(),
+                                                                                         v434_0_2.clone(),
+                                                                                         v434_0_3.clone(),
+                                                                                         v434_0_4.clone()),
+                                                                 Documents::US14::US14_1(v434_1_0)
                                                                  =>
                                                                  Documents::US15::US15_1(sprintf!("parsing.between / expected closing delimiter / e: {:?} / input: {:?} / rest1: {:?} / rest2: {:?}",
-                                                                                                  v432_1_0.clone(),
+                                                                                                  v434_1_0.clone(),
                                                                                                   (v1_1.get().clone(),
                                                                                                    v2.get().clone(),
                                                                                                    v3.get().clone(),
                                                                                                    v4.get().clone()),
-                                                                                                  (v272,
-                                                                                                   v273,
+                                                                                                  (v272.clone(),
+                                                                                                   v273.clone(),
                                                                                                    v274,
                                                                                                    v275),
-                                                                                                  (v304,
-                                                                                                   v305,
-                                                                                                   v306,
-                                                                                                   v307))),
+                                                                                                  (v306.clone(),
+                                                                                                   v307.clone(),
+                                                                                                   v308,
+                                                                                                   v309))),
                                                              }
                                         }
                                         _ => Documents::US15::US15_1(string(
@@ -5579,17 +5574,17 @@ mod module_2555ccf7 {
                                     Documents::US15::US15_1(v270_1_0.clone())
                                 }
                             };
-                            match &v454 {
+                            match &v456 {
                                 Documents::US15::US15_0(
-                                    v454_0_0,
-                                    v454_0_1,
-                                    v454_0_2,
-                                    v454_0_3,
-                                    v454_0_4,
-                                ) => v454.clone(),
+                                    v456_0_0,
+                                    v456_0_1,
+                                    v456_0_2,
+                                    v456_0_3,
+                                    v456_0_4,
+                                ) => v456.clone(),
                                 _ => {
-                                    let v466: Documents::US15 =
-                                                     Documents::method102(v1_1.get().clone(),
+                                    let v468: Documents::US15 =
+                                                     Documents::method101(v1_1.get().clone(),
                                                                           v2.get().clone(),
                                                                           v3.get().clone(),
                                                                           v4.get().clone(),
@@ -5599,7 +5594,7 @@ mod module_2555ccf7 {
                                                                                                                                  LrcPtr<StringBuilder>,
                                                                                                                                  i32,
                                                                                                                                  i32)|
-                                                                                                                           Documents::closure39((),
+                                                                                                                           Documents::closure38((),
                                                                                                                                                 arg10_0040)),
                                                                                                             LrcPtr::new(Documents::UH3::UH3_1(Func1::new(move
                                                                                                                                                              |arg10_0040_1:
@@ -5607,156 +5602,157 @@ mod module_2555ccf7 {
                                                                                                                                                                    LrcPtr<StringBuilder>,
                                                                                                                                                                    i32,
                                                                                                                                                                    i32)|
-                                                                                                                                                             Documents::closure40((),
+                                                                                                                                                             Documents::closure39((),
                                                                                                                                                                                   arg10_0040_1)),
                                                                                                                                               LrcPtr::new(Documents::UH3::UH3_0))))));
-                                    let v477: Documents::US15 = match &v466 {
+                                    let v479: Documents::US15 = match &v468 {
                                         Documents::US15::US15_0(
-                                            v466_0_0,
-                                            v466_0_1,
-                                            v466_0_2,
-                                            v466_0_3,
-                                            v466_0_4,
+                                            v468_0_0,
+                                            v468_0_1,
+                                            v468_0_2,
+                                            v468_0_3,
+                                            v468_0_4,
                                         ) => Documents::US15::US15_0(
                                             string(""),
-                                            v466_0_1.clone(),
-                                            v466_0_2.clone(),
-                                            v466_0_3.clone(),
-                                            v466_0_4.clone(),
+                                            v468_0_1.clone(),
+                                            v468_0_2.clone(),
+                                            v468_0_3.clone(),
+                                            v468_0_4.clone(),
                                         ),
-                                        Documents::US15::US15_1(v466_1_0) => {
-                                            Documents::US15::US15_1(v466_1_0.clone())
+                                        Documents::US15::US15_1(v468_1_0) => {
+                                            Documents::US15::US15_1(v468_1_0.clone())
                                         }
                                     };
-                                    let v488: Documents::US22 = match &v477 {
+                                    let v490: Documents::US22 = match &v479 {
                                         Documents::US15::US15_0(
-                                            v477_0_0,
-                                            v477_0_1,
-                                            v477_0_2,
-                                            v477_0_3,
-                                            v477_0_4,
-                                        ) => Documents::method105(
+                                            v479_0_0,
+                                            v479_0_1,
+                                            v479_0_2,
+                                            v479_0_3,
+                                            v479_0_4,
+                                        ) => Documents::method104(
                                             LrcPtr::new(Documents::UH2::UH2_0),
-                                            v477_0_1.clone(),
-                                            v477_0_2.clone(),
-                                            v477_0_3.clone(),
-                                            v477_0_4.clone(),
+                                            v479_0_1.clone(),
+                                            v479_0_2.clone(),
+                                            v479_0_3.clone(),
+                                            v479_0_4.clone(),
                                         ),
-                                        Documents::US15::US15_1(v477_1_0) => {
-                                            Documents::US22::US22_1(v477_1_0.clone())
+                                        Documents::US15::US15_1(v479_1_0) => {
+                                            Documents::US22::US22_1(v479_1_0.clone())
                                         }
                                     };
-                                    match &v488 {
+                                    match &v490 {
                                         Documents::US22::US22_0(
-                                            v488_0_0,
-                                            v488_0_1,
-                                            v488_0_2,
-                                            v488_0_3,
-                                            v488_0_4,
+                                            v490_0_0,
+                                            v490_0_1,
+                                            v490_0_2,
+                                            v490_0_3,
+                                            v490_0_4,
                                         ) => {
-                                            let v495: List<string> = Documents::method104(
-                                                v488_0_0.clone(),
+                                            let v497: List<string> = Documents::method103(
+                                                v490_0_0.clone(),
                                                 empty::<string>(),
                                             );
                                             Documents::US15::US15_0(
                                                 join(
                                                     string(""),
                                                     toArray_1(delay(Func0::new({
-                                                        let v495 = v495.clone();
+                                                        let v497 = v497.clone();
                                                         move || {
                                                             map_1(
                                                                 Func1::new({
-                                                                    let v495 = v495.clone();
+                                                                    let v497 = v497.clone();
                                                                     move |i_1: i32| {
-                                                                        item(i_1, v495.clone())
+                                                                        item(i_1, v497.clone())
                                                                     }
                                                                 }),
                                                                 rangeNumeric(
                                                                     0_i32,
                                                                     1_i32,
-                                                                    length_1(v495.clone()) - 1_i32,
+                                                                    (length_1(v497.clone()))
+                                                                        - 1_i32,
                                                                 ),
                                                             )
                                                         }
                                                     }))),
                                                 ),
-                                                v488_0_1.clone(),
-                                                v488_0_2.clone(),
-                                                v488_0_3.clone(),
-                                                v488_0_4.clone(),
+                                                v490_0_1.clone(),
+                                                v490_0_2.clone(),
+                                                v490_0_3.clone(),
+                                                v490_0_4.clone(),
                                             )
                                         }
-                                        Documents::US22::US22_1(v488_1_0) => {
-                                            Documents::US15::US15_1(v488_1_0.clone())
+                                        Documents::US22::US22_1(v490_1_0) => {
+                                            Documents::US15::US15_1(v490_1_0.clone())
                                         }
                                     }
                                 }
                             }
                         }
                     };
-                    match &v517 {
+                    match &v521 {
                         Documents::US15::US15_0(
-                            v517_0_0,
-                            v517_0_1,
-                            v517_0_2,
-                            v517_0_3,
-                            v517_0_4,
+                            v521_0_0,
+                            v521_0_1,
+                            v521_0_2,
+                            v521_0_3,
+                            v521_0_4,
                         ) => {
-                            let v522: i32 = v517_0_4.clone();
-                            let v521: i32 = v517_0_3.clone();
-                            let v520: LrcPtr<StringBuilder> = v517_0_2.clone();
-                            let v519: string = v517_0_1.clone();
-                            let v518: string = v517_0_0.clone();
-                            let v524: i32 = Documents::method94(v519.clone(), 0_i32);
-                            let v552: Documents::US17 = if 0_i32 == v524 {
+                            let v526: i32 = v521_0_4.clone();
+                            let v525: i32 = v521_0_3.clone();
+                            let v524: LrcPtr<StringBuilder> = v521_0_2.clone();
+                            let v523: string = v521_0_1.clone();
+                            let v522: string = v521_0_0.clone();
+                            let v528: i32 = Documents::method93(v523.clone(), 0_i32);
+                            let v556: Documents::US17 = if 0_i32 == (v528) {
                                 Documents::US17::US17_1(string(
                                     "parsing.spaces1 / expected at least one space",
                                 ))
                             } else {
                                 Documents::US17::US17_0(
                                     getSlice(
-                                        v519.clone(),
-                                        Some(v524),
-                                        Some(length(v519.clone()) - 1_i32),
+                                        v523.clone(),
+                                        Some(v528),
+                                        Some((length(v523.clone())) - 1_i32),
                                     ),
-                                    v520.clone(),
-                                    v521,
-                                    v522,
+                                    v524.clone(),
+                                    v525,
+                                    v526,
                                 )
                             };
-                            match &v552 {
-                                Documents::US17::US17_0(v552_0_0, v552_0_1, v552_0_2, v552_0_3) => {
+                            match &v556 {
+                                Documents::US17::US17_0(v556_0_0, v556_0_1, v556_0_2, v556_0_3) => {
                                     let v0_1_temp: LrcPtr<Documents::UH2> = LrcPtr::new(
-                                        Documents::UH2::UH2_1(v518.clone(), v0_1.get().clone()),
+                                        Documents::UH2::UH2_1(v522.clone(), v0_1.get().clone()),
                                     );
-                                    let v1_1_temp: string = v552_0_0.clone();
-                                    let v2_temp: LrcPtr<StringBuilder> = v552_0_1.clone();
-                                    let v3_temp: i32 = v552_0_2.clone();
-                                    let v4_temp: i32 = v552_0_3.clone();
+                                    let v1_1_temp: string = v556_0_0.clone();
+                                    let v2_temp: LrcPtr<StringBuilder> = v556_0_1.clone();
+                                    let v3_temp: i32 = v556_0_2.clone();
+                                    let v4_temp: i32 = v556_0_3.clone();
                                     v0_1.set(v0_1_temp);
                                     v1_1.set(v1_1_temp);
                                     v2.set(v2_temp);
                                     v3.set(v3_temp);
                                     v4.set(v4_temp);
-                                    continue '_method97;
+                                    continue '_method96;
                                 }
                                 _ => Documents::US22::US22_0(
-                                    Documents::method103(
+                                    Documents::method102(
                                         v0_1.get().clone(),
                                         LrcPtr::new(Documents::UH2::UH2_1(
-                                            v518.clone(),
+                                            v522.clone(),
                                             LrcPtr::new(Documents::UH2::UH2_0),
                                         )),
                                     ),
-                                    v519,
-                                    v520,
-                                    v521,
-                                    v522,
+                                    v523.clone(),
+                                    v524.clone(),
+                                    v525,
+                                    v526,
                                 ),
                             }
                         }
                         _ => Documents::US22::US22_0(
-                            Documents::method103(
+                            Documents::method102(
                                 v0_1.get().clone(),
                                 LrcPtr::new(Documents::UH2::UH2_0),
                             ),
@@ -5769,11 +5765,11 @@ mod module_2555ccf7 {
                 });
             }
         }
-        pub fn method96(v0_1: string) -> Documents::US21 {
+        pub fn method95(v0_1: string) -> Documents::US21 {
             let _v0: MutCell<Option<Option<string>>> = MutCell::new(None::<Option<string>>);
             _v0.set(Some(Some(v0_1)));
             {
-                let v18: Documents::US22 = Documents::method97(
+                let v18: Documents::US22 = Documents::method96(
                     LrcPtr::new(Documents::UH2::UH2_0),
                     defaultValue(
                         string(""),
@@ -5782,13 +5778,13 @@ mod module_2555ccf7 {
                             Some(_v0_0_0) => _v0_0_0.clone(),
                         },
                     ),
-                    StringBuilder::_ctor__Z721C83C5(Documents::method85()),
+                    StringBuilder::_ctor__Z721C83C5(Documents::method84()),
                     1_i32,
                     1_i32,
                 );
                 match &v18 {
                     Documents::US22::US22_0(v18_0_0, v18_0_1, v18_0_2, v18_0_3, v18_0_4) => {
-                        Documents::US21::US21_0(toArray(Documents::method104(
+                        Documents::US21::US21_0(toArray(Documents::method103(
                             v18_0_0.clone(),
                             empty::<string>(),
                         )))
@@ -5797,7 +5793,7 @@ mod module_2555ccf7 {
                 }
             }
         }
-        pub fn method107(
+        pub fn method106(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -5809,207 +5805,199 @@ mod module_2555ccf7 {
             v8: Option<string>,
         ) -> string {
             let v10: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v17: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v10.clone(), string("{ "), ());
                 ()
             };
             let v26: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("file_name")), ());
+                Documents::closure8(v10.clone(), string("file_name"), ());
                 ()
             };
             let v35: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v43: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v10.clone(), v0_1, ());
                 ()
             };
             let v52: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v61: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("arguments")), ());
+                Documents::closure8(v10.clone(), string("arguments"), ());
                 ()
             };
             let v69: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v77: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v10.clone(), v1_1, ());
                 ()
             };
             let v85: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v94: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("options")), ());
+                Documents::closure8(v10.clone(), string("options"), ());
                 ()
             };
             let v102: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v110: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v10.clone(), string("{ "), ());
                 ()
             };
             let v119: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("command")), ());
+                Documents::closure8(v10.clone(), string("command"), ());
                 ()
             };
             let v127: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v135: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", v2), ());
+                Documents::closure8(v10.clone(), v2, ());
                 ()
             };
             let v143: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v152: () = {
-                Documents::closure8(
-                    v10.clone(),
-                    sprintf!("{}", string("cancellation_token")),
-                    (),
-                );
+                Documents::closure8(v10.clone(), string("cancellation_token"), ());
                 ()
             };
             let v160: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v165: std::string::String = format!("{:#?}", v3);
             let v198: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v165)),
+                    fable_library_rust::String_::fromString(v165),
                     (),
                 );
                 ()
             };
             let v206: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v215: () = {
-                Documents::closure8(
-                    v10.clone(),
-                    sprintf!("{}", string("environment_variables")),
-                    (),
-                );
+                Documents::closure8(v10.clone(), string("environment_variables"), ());
                 ()
             };
             let v223: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v234: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", sprintf!("{:?}", v4)), ());
+                Documents::closure8(v10.clone(), sprintf!("{:?}", v4), ());
                 ()
             };
             let v242: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v251: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("on_line")), ());
+                Documents::closure8(v10.clone(), string("on_line"), ());
                 ()
             };
             let v259: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v264: std::string::String = format!("{:#?}", v5);
             let v297: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v264)),
+                    fable_library_rust::String_::fromString(v264),
                     (),
                 );
                 ()
             };
             let v305: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v314: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("stdin")), ());
+                Documents::closure8(v10.clone(), string("stdin"), ());
                 ()
             };
             let v322: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v327: std::string::String = format!("{:#?}", v6);
             let v360: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v327)),
+                    fable_library_rust::String_::fromString(v327),
                     (),
                 );
                 ()
             };
             let v368: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v377: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("trace")), ());
+                Documents::closure8(v10.clone(), string("trace"), ());
                 ()
             };
             let v385: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v396: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", if v7 { string("true") } else { string("false") }),
+                    if v7 { string("true") } else { string("false") },
                     (),
                 );
                 ()
             };
             let v404: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v413: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("working_directory")), ());
+                Documents::closure8(v10.clone(), string("working_directory"), ());
                 ()
             };
             let v421: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v426: std::string::String = format!("{:#?}", v8);
             let v459: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v426)),
+                    fable_library_rust::String_::fromString(v426),
                     (),
                 );
                 ()
             };
             let v468: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v10.clone(), string(" }"), ());
                 ()
             };
             let v476: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v10.clone(), string(" }"), ());
                 ()
             };
             v10.l0.get().clone()
         }
-        pub fn method106(
+        pub fn method105(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -6028,8 +6016,8 @@ mod module_2555ccf7 {
             v15: bool,
             v16: Option<string>,
         ) -> string {
-            let v17: string = Documents::method107(v8, v9, v10, v11, v12, v13, v14, v15, v16);
-            Documents::method17(sprintf!(
+            let v17: string = Documents::method106(v8, v9, v10, v11, v12, v13, v14, v15, v16);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6038,7 +6026,7 @@ mod module_2555ccf7 {
                 v17
             ))
         }
-        pub fn closure41(
+        pub fn closure40(
             v0_1: string,
             v1_1: Option<CancellationToken>,
             v2: Array<(string, string)>,
@@ -6050,7 +6038,7 @@ mod module_2555ccf7 {
             v8: Vec<std::string::String>,
             unitVar: (),
         ) {
-            if Documents::method6(Documents::US0::US0_1) {
+            if Documents::method7(Documents::US0::US0_1) {
                 let v13: () = {
                     Documents::closure6((), ());
                     ()
@@ -6062,22 +6050,22 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v32: Option<i64> = patternInput.5.clone();
                 let v31: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v30: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v29: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v28: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v27: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method106(
+                Documents::method19(Documents::method105(
                     v27.clone(),
                     v28.clone(),
                     v29.clone(),
                     v30.clone(),
                     v31.clone(),
                     v32.clone(),
-                    Documents::method7(v27, v28, v29, v30, v31, v32),
-                    Documents::method61(),
+                    Documents::method8(v27, v28, v29, v30, v31, v32),
+                    Documents::method62(),
                     v7,
                     sprintf!("{:?}", v8),
                     v0_1,
@@ -6090,37 +6078,37 @@ mod module_2555ccf7 {
                 ))
             };
         }
-        pub fn closure42(
+        pub fn closure41(
             unitVar: (),
             v0_1: Option<std::process::Child>,
         ) -> Option<std::process::Child> {
             v0_1
         }
-        pub fn method108() -> Func1<Option<std::process::Child>, Option<std::process::Child>> {
-            Func1::new(move |v: Option<std::process::Child>| Documents::closure42((), v))
+        pub fn method107() -> Func1<Option<std::process::Child>, Option<std::process::Child>> {
+            Func1::new(move |v: Option<std::process::Child>| Documents::closure41((), v))
         }
-        pub fn closure43(
+        pub fn closure42(
             unitVar: (),
             v0_1: std::sync::Arc<std::sync::Mutex<Option<std::process::Child>>>,
         ) -> Documents::US23 {
             Documents::US23::US23_0(v0_1)
         }
-        pub fn method109(
+        pub fn method108(
         ) -> Func1<std::sync::Arc<std::sync::Mutex<Option<std::process::Child>>>, Documents::US23>
         {
             Func1::new(
                 move |v: std::sync::Arc<std::sync::Mutex<Option<std::process::Child>>>| {
-                    Documents::closure43((), v)
+                    Documents::closure42((), v)
                 },
             )
         }
-        pub fn closure44(unitVar: (), v0_1: std::string::String) -> Documents::US23 {
+        pub fn closure43(unitVar: (), v0_1: std::string::String) -> Documents::US23 {
             Documents::US23::US23_1(v0_1)
         }
-        pub fn method110() -> Func1<std::string::String, Documents::US23> {
-            Func1::new(move |v: std::string::String| Documents::closure44((), v))
+        pub fn method109() -> Func1<std::string::String, Documents::US23> {
+            Func1::new(move |v: std::string::String| Documents::closure43((), v))
         }
-        pub fn method111(
+        pub fn method110(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -6131,8 +6119,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: std::string::String,
         ) -> string {
-            let v9: string = Documents::method77(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method76(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6141,8 +6129,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure45(v0_1: std::string::String, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_4) {
+        pub fn closure44(v0_1: std::string::String, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_4) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -6154,150 +6142,143 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method111(
+                Documents::method19(Documents::method110(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method75(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method74(),
                     v0_1,
                 ))
             };
         }
-        pub fn method112(
+        pub fn method111(
             v0_1: std::sync::MutexGuard<Option<std::process::Child>>,
         ) -> std::sync::MutexGuard<Option<std::process::Child>> {
             v0_1
         }
-        pub fn closure46(
+        pub fn closure45(
             unitVar: (),
             v0_1: Option<std::process::ChildStdin>,
         ) -> Option<std::process::ChildStdin> {
             v0_1
         }
-        pub fn method113(
+        pub fn method112(
         ) -> Func1<Option<std::process::ChildStdin>, Option<std::process::ChildStdin>> {
-            Func1::new(move |v: Option<std::process::ChildStdin>| Documents::closure46((), v))
+            Func1::new(move |v: Option<std::process::ChildStdin>| Documents::closure45((), v))
         }
-        pub fn closure47(
+        pub fn closure46(
             unitVar: (),
             v0_1: std::sync::mpsc::Sender<std::string::String>,
         ) -> std::sync::mpsc::Sender<std::string::String> {
             v0_1
+        }
+        pub fn method113() -> Func1<
+            std::sync::mpsc::Sender<std::string::String>,
+            std::sync::mpsc::Sender<std::string::String>,
+        > {
+            Func1::new(move |v: std::sync::mpsc::Sender<std::string::String>| {
+                Documents::closure46((), v)
+            })
         }
         pub fn method114() -> Func1<
             std::sync::mpsc::Sender<std::string::String>,
             std::sync::mpsc::Sender<std::string::String>,
         > {
             Func1::new(move |v: std::sync::mpsc::Sender<std::string::String>| {
-                Documents::closure47((), v)
+                Documents::closure46((), v)
             })
         }
-        pub fn method115() -> Func1<
-            std::sync::mpsc::Sender<std::string::String>,
-            std::sync::mpsc::Sender<std::string::String>,
-        > {
-            Func1::new(move |v: std::sync::mpsc::Sender<std::string::String>| {
-                Documents::closure47((), v)
-            })
-        }
-        pub fn closure48(
+        pub fn closure47(
             unitVar: (),
             v0_1: std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
         ) -> std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>> {
             v0_1
         }
-        pub fn method116() -> Func1<
+        pub fn method115() -> Func1<
             std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
             std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
         > {
             Func1::new(
                 move |v: std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>| {
-                    Documents::closure48((), v)
+                    Documents::closure47((), v)
                 },
             )
         }
-        pub fn closure49(unitVar: (), v0_1: std::string::String) -> Documents::US25 {
+        pub fn closure48(unitVar: (), v0_1: std::string::String) -> Documents::US25 {
             Documents::US25::US25_0(v0_1)
+        }
+        pub fn method116() -> Func1<std::string::String, Documents::US25> {
+            Func1::new(move |v: std::string::String| Documents::closure48((), v))
+        }
+        pub fn closure49(unitVar: (), v0_1: std::string::String) -> Documents::US25 {
+            Documents::US25::US25_1(v0_1)
         }
         pub fn method117() -> Func1<std::string::String, Documents::US25> {
             Func1::new(move |v: std::string::String| Documents::closure49((), v))
         }
-        pub fn closure50(unitVar: (), v0_1: std::string::String) -> Documents::US25 {
-            Documents::US25::US25_1(v0_1)
-        }
-        pub fn method118() -> Func1<std::string::String, Documents::US25> {
-            Func1::new(move |v: std::string::String| Documents::closure50((), v))
-        }
-        pub fn method120(v0_1: bool, v1_1: std::string::String) -> string {
+        pub fn method119(v0_1: bool, v1_1: std::string::String) -> string {
             let v3: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v10: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v3.clone(), string("{ "), ());
                 ()
             };
             let v19: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("trace\'")), ());
+                Documents::closure8(v3.clone(), string("trace\'"), ());
                 ()
             };
             let v28: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v39: () = {
                 Documents::closure8(
                     v3.clone(),
-                    sprintf!(
-                        "{}",
-                        if v0_1 {
-                            string("true")
-                        } else {
-                            string("false")
-                        }
-                    ),
+                    if v0_1 {
+                        string("true")
+                    } else {
+                        string("false")
+                    },
                     (),
                 );
                 ()
             };
             let v48: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v3.clone(), string("; "), ());
                 ()
             };
             let v57: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("e")), ());
+                Documents::closure8(v3.clone(), string("e"), ());
                 ()
             };
             let v65: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v70: std::string::String = format!("{:#?}", v1_1);
             let v103: () = {
-                Documents::closure8(
-                    v3.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v70)),
-                    (),
-                );
+                Documents::closure8(v3.clone(), fable_library_rust::String_::fromString(v70), ());
                 ()
             };
             let v112: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v3.clone(), string(" }"), ());
                 ()
             };
             v3.l0.get().clone()
         }
-        pub fn method119(
+        pub fn method118(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -6309,8 +6290,8 @@ mod module_2555ccf7 {
             v8: bool,
             v9: std::string::String,
         ) -> string {
-            let v10: string = Documents::method120(v8, v9);
-            Documents::method17(sprintf!(
+            let v10: string = Documents::method119(v8, v9);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6319,8 +6300,8 @@ mod module_2555ccf7 {
                 v10
             ))
         }
-        pub fn closure51(v0_1: bool, v1_1: std::string::String, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_4) {
+        pub fn closure50(v0_1: bool, v1_1: std::string::String, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_4) {
                 let v6: () = {
                     Documents::closure6((), ());
                     ()
@@ -6332,42 +6313,42 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v25: Option<i64> = patternInput.5.clone();
                 let v24: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v23: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v22: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v21: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v20: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method119(
+                Documents::method19(Documents::method118(
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
-                    Documents::method7(v20, v21, v22, v23, v24, v25),
-                    Documents::method75(),
+                    Documents::method8(v20, v21, v22, v23, v24, v25),
+                    Documents::method74(),
                     v0_1,
                     v1_1,
                 ))
             };
         }
-        pub fn method121() -> string {
-            let v6: string = Documents::method12(getCharAt(toLower(string("Verbose")), 0_i32));
+        pub fn method120() -> string {
+            let v6: string = Documents::method13(getCharAt(toLower(string("Verbose")), 0_i32));
             let v9: &str = inline_colorization::color_bright_black;
             let v12: &str = &*v6;
             let v35: &str = inline_colorization::color_reset;
             let v37: std::string::String = format!("{}{}{}", v9, v12, v35);
             fable_library_rust::String_::fromString(v37)
         }
-        pub fn method123() -> string {
+        pub fn method122() -> string {
             let v1_1: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             v1_1.l0.get().clone()
         }
-        pub fn method122(
+        pub fn method121(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -6378,8 +6359,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: string,
         ) -> string {
-            let v9: string = Documents::method123();
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method122();
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6388,8 +6369,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure52(v0_1: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_0) {
+        pub fn closure51(v0_1: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_0) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -6401,104 +6382,104 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(if v0_1.clone() == string("") {
+                Documents::method19(if (v0_1.clone()) == string("") {
                     string("")
                 } else {
-                    Documents::method122(
+                    Documents::method121(
                         v19.clone(),
                         v20.clone(),
                         v21.clone(),
                         v22.clone(),
                         v23.clone(),
                         v24.clone(),
-                        Documents::method7(v19, v20, v21, v22, v23, v24),
-                        Documents::method121(),
+                        Documents::method8(v19, v20, v21, v22, v23, v24),
+                        Documents::method120(),
                         v0_1,
                     )
                 })
             };
         }
-        pub fn closure53(
+        pub fn closure52(
             unitVar: (),
             v0_1: std::sync::mpsc::SendError<std::string::String>,
         ) -> std::string::String {
             format!("{}", v0_1)
         }
-        pub fn method124(
+        pub fn method123(
         ) -> Func1<std::sync::mpsc::SendError<std::string::String>, std::string::String> {
             Func1::new(move |v: std::sync::mpsc::SendError<std::string::String>| {
-                Documents::closure53((), v)
+                Documents::closure52((), v)
             })
         }
-        pub fn method125(v0_1: Result<(), string>) -> Result<(), string> {
+        pub fn method124(v0_1: Result<(), string>) -> Result<(), string> {
             v0_1
         }
-        pub fn closure54(
+        pub fn closure53(
             unitVar: (),
             v0_1: Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>,
         ) -> Documents::US26 {
             Documents::US26::US26_0(v0_1)
         }
-        pub fn method126() -> Func1<
+        pub fn method125() -> Func1<
             Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>,
             Documents::US26,
         > {
             Func1::new(
                 move |v: Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>| {
-                    Documents::closure54((), v)
+                    Documents::closure53((), v)
                 },
             )
         }
-        pub fn method127(
+        pub fn method126(
             v0_1: std::sync::MutexGuard<Option<std::process::ChildStdin>>,
         ) -> std::sync::MutexGuard<Option<std::process::ChildStdin>> {
             v0_1
         }
-        pub fn closure55(
+        pub fn closure54(
             unitVar: (),
             v0_1: std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>,
         ) -> Documents::US27 {
             Documents::US27::US27_0(v0_1)
         }
-        pub fn method128(
+        pub fn method127(
         ) -> Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, Documents::US27>
         {
             Func1::new(
                 move |v: std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>| {
-                    Documents::closure55((), v)
+                    Documents::closure54((), v)
                 },
             )
         }
-        pub fn method129(
+        pub fn method128(
             v0_1: std::sync::MutexGuard<std::process::ChildStdin>,
         ) -> std::sync::MutexGuard<std::process::ChildStdin> {
             v0_1
         }
-        pub fn method130(
+        pub fn method129(
             v0_1: std::thread::JoinHandle<Result<(), string>>,
         ) -> std::thread::JoinHandle<Result<(), string>> {
             v0_1
         }
-        pub fn closure56(unitVar: (), v0_1: std::process::Output) -> Documents::US28 {
+        pub fn closure55(unitVar: (), v0_1: std::process::Output) -> Documents::US28 {
             Documents::US28::US28_0(v0_1)
         }
-        pub fn method131() -> Func1<std::process::Output, Documents::US28> {
-            Func1::new(move |v: std::process::Output| Documents::closure56((), v))
+        pub fn method130() -> Func1<std::process::Output, Documents::US28> {
+            Func1::new(move |v: std::process::Output| Documents::closure55((), v))
         }
-        pub fn closure57(unitVar: (), v0_1: std::string::String) -> Documents::US28 {
+        pub fn closure56(unitVar: (), v0_1: std::string::String) -> Documents::US28 {
             Documents::US28::US28_1(v0_1)
         }
-        pub fn method132() -> Func1<std::string::String, Documents::US28> {
-            Func1::new(move |v: std::string::String| Documents::closure57((), v))
+        pub fn method131() -> Func1<std::string::String, Documents::US28> {
+            Func1::new(move |v: std::string::String| Documents::closure56((), v))
         }
-        pub fn method133(
+        pub fn method132(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -6509,8 +6490,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: std::string::String,
         ) -> string {
-            let v9: string = Documents::method77(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method76(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6519,8 +6500,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure58(v0_1: std::string::String, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_4) {
+        pub fn closure57(v0_1: std::string::String, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_4) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -6532,49 +6513,49 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method133(
+                Documents::method19(Documents::method132(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method75(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method74(),
                     v0_1,
                 ))
             };
         }
-        pub fn closure59(unitVar: (), v0_1: i32) -> Documents::US29 {
+        pub fn closure58(unitVar: (), v0_1: i32) -> Documents::US29 {
             Documents::US29::US29_0(v0_1)
         }
-        pub fn method134() -> Func1<i32, Documents::US29> {
-            Func1::new(move |v: i32| Documents::closure59((), v))
+        pub fn method133() -> Func1<i32, Documents::US29> {
+            Func1::new(move |v: i32| Documents::closure58((), v))
         }
-        pub fn method135() -> string {
+        pub fn method134() -> string {
             string("\n")
         }
-        pub fn method137(v0_1: i32, v1_1: i32) -> string {
+        pub fn method136(v0_1: i32, v1_1: i32) -> string {
             let v3: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v10: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v3.clone(), string("{ "), ());
                 ()
             };
             let v19: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("exit_code")), ());
+                Documents::closure8(v3.clone(), string("exit_code"), ());
                 ()
             };
             let v28: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v36: () = {
@@ -6582,15 +6563,15 @@ mod module_2555ccf7 {
                 ()
             };
             let v45: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v3.clone(), string("; "), ());
                 ()
             };
             let v54: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("std_trace_length")), ());
+                Documents::closure8(v3.clone(), string("std_trace_length"), ());
                 ()
             };
             let v62: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v70: () = {
@@ -6598,12 +6579,12 @@ mod module_2555ccf7 {
                 ()
             };
             let v79: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v3.clone(), string(" }"), ());
                 ()
             };
             v3.l0.get().clone()
         }
-        pub fn method136(
+        pub fn method135(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -6615,8 +6596,8 @@ mod module_2555ccf7 {
             v8: i32,
             v9: i32,
         ) -> string {
-            let v10: string = Documents::method137(v8, v9);
-            Documents::method17(sprintf!(
+            let v10: string = Documents::method136(v8, v9);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6625,8 +6606,8 @@ mod module_2555ccf7 {
                 v10
             ))
         }
-        pub fn closure60(v0_1: i32, v1_1: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_0) {
+        pub fn closure59(v0_1: i32, v1_1: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_0) {
                 let v6: () = {
                     Documents::closure6((), ());
                     ()
@@ -6638,22 +6619,22 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v25: Option<i64> = patternInput.5.clone();
                 let v24: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v23: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v22: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v21: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v20: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method136(
+                Documents::method19(Documents::method135(
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
-                    Documents::method7(v20, v21, v22, v23, v24, v25),
-                    Documents::method121(),
+                    Documents::method8(v20, v21, v22, v23, v24, v25),
+                    Documents::method120(),
                     v0_1,
                     length(v1_1),
                 ))
@@ -6671,202 +6652,194 @@ mod module_2555ccf7 {
             v8: Option<string>,
         ) -> string {
             let v10: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v17: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v10.clone(), string("{ "), ());
                 ()
             };
             let v26: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("file_name")), ());
+                Documents::closure8(v10.clone(), string("file_name"), ());
                 ()
             };
             let v35: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v43: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v10.clone(), v0_1, ());
                 ()
             };
             let v52: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v61: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("arguments")), ());
+                Documents::closure8(v10.clone(), string("arguments"), ());
                 ()
             };
             let v69: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v80: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", sprintf!("{:?}", v1_1)), ());
+                Documents::closure8(v10.clone(), sprintf!("{:?}", v1_1), ());
                 ()
             };
             let v88: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v97: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("options")), ());
+                Documents::closure8(v10.clone(), string("options"), ());
                 ()
             };
             let v105: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v113: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v10.clone(), string("{ "), ());
                 ()
             };
             let v122: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("command")), ());
+                Documents::closure8(v10.clone(), string("command"), ());
                 ()
             };
             let v130: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v138: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", v2), ());
+                Documents::closure8(v10.clone(), v2, ());
                 ()
             };
             let v146: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v155: () = {
-                Documents::closure8(
-                    v10.clone(),
-                    sprintf!("{}", string("cancellation_token")),
-                    (),
-                );
+                Documents::closure8(v10.clone(), string("cancellation_token"), ());
                 ()
             };
             let v163: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v168: std::string::String = format!("{:#?}", v3);
             let v201: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v168)),
+                    fable_library_rust::String_::fromString(v168),
                     (),
                 );
                 ()
             };
             let v209: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v218: () = {
-                Documents::closure8(
-                    v10.clone(),
-                    sprintf!("{}", string("environment_variables")),
-                    (),
-                );
+                Documents::closure8(v10.clone(), string("environment_variables"), ());
                 ()
             };
             let v226: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v237: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", sprintf!("{:?}", v4)), ());
+                Documents::closure8(v10.clone(), sprintf!("{:?}", v4), ());
                 ()
             };
             let v245: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v254: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("on_line")), ());
+                Documents::closure8(v10.clone(), string("on_line"), ());
                 ()
             };
             let v262: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v267: std::string::String = format!("{:#?}", v5);
             let v300: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v267)),
+                    fable_library_rust::String_::fromString(v267),
                     (),
                 );
                 ()
             };
             let v308: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v317: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("stdin")), ());
+                Documents::closure8(v10.clone(), string("stdin"), ());
                 ()
             };
             let v325: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v330: std::string::String = format!("{:#?}", v6);
             let v363: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v330)),
+                    fable_library_rust::String_::fromString(v330),
                     (),
                 );
                 ()
             };
             let v371: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v380: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("trace")), ());
+                Documents::closure8(v10.clone(), string("trace"), ());
                 ()
             };
             let v388: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v399: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", if v7 { string("true") } else { string("false") }),
+                    if v7 { string("true") } else { string("false") },
                     (),
                 );
                 ()
             };
             let v407: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v10.clone(), string("; "), ());
                 ()
             };
             let v416: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string("working_directory")), ());
+                Documents::closure8(v10.clone(), string("working_directory"), ());
                 ()
             };
             let v424: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v10.clone(), string(" = "), ());
                 ()
             };
             let v429: std::string::String = format!("{:#?}", v8);
             let v462: () = {
                 Documents::closure8(
                     v10.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v429)),
+                    fable_library_rust::String_::fromString(v429),
                     (),
                 );
                 ()
             };
             let v471: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v10.clone(), string(" }"), ());
                 ()
             };
             let v479: () = {
-                Documents::closure8(v10.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v10.clone(), string(" }"), ());
                 ()
             };
             v10.l0.get().clone()
@@ -6891,7 +6864,7 @@ mod module_2555ccf7 {
             v16: Option<string>,
         ) -> string {
             let v17: string = Documents::method140(v8, v9, v10, v11, v12, v13, v14, v15, v16);
-            Documents::method17(sprintf!(
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -6900,7 +6873,7 @@ mod module_2555ccf7 {
                 v17
             ))
         }
-        pub fn closure61(
+        pub fn closure60(
             v0_1: string,
             v1_1: Option<CancellationToken>,
             v2: Array<(string, string)>,
@@ -6912,7 +6885,7 @@ mod module_2555ccf7 {
             v8: string,
             unitVar: (),
         ) {
-            if Documents::method6(Documents::US0::US0_1) {
+            if Documents::method7(Documents::US0::US0_1) {
                 let v13: () = {
                     Documents::closure6((), ());
                     ()
@@ -6924,22 +6897,22 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v32: Option<i64> = patternInput.5.clone();
                 let v31: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v30: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v29: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v28: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v27: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method139(
+                Documents::method19(Documents::method139(
                     v27.clone(),
                     v28.clone(),
                     v29.clone(),
                     v30.clone(),
                     v31.clone(),
                     v32.clone(),
-                    Documents::method7(v27, v28, v29, v30, v31, v32),
-                    Documents::method61(),
+                    Documents::method8(v27, v28, v29, v30, v31, v32),
+                    Documents::method62(),
                     v8,
                     v7,
                     v0_1,
@@ -6963,19 +6936,25 @@ mod module_2555ccf7 {
         ) -> Array<(string, string)> {
             v2
         }
-        pub fn closure63(
+        pub fn method144(v0_1: ()) -> string {
+            unbox::<string>(&getZero())
+        }
+        pub fn closure62(
             unitVar: (),
             v0_1: Func1<(i32, string, bool), Arc<Async<()>>>,
         ) -> Documents::US30 {
             Documents::US30::US30_0(v0_1)
         }
-        pub fn method142() -> Func1<Func1<(i32, string, bool), Arc<Async<()>>>, Documents::US30> {
+        pub fn method145() -> Func1<Func1<(i32, string, bool), Arc<Async<()>>>, Documents::US30> {
             Func1::new(move |v: Func1<(i32, string, bool), Arc<Async<()>>>| {
-                Documents::closure63((), v)
+                Documents::closure62((), v)
             })
         }
-        pub fn closure64(v0_1: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_0) {
+        pub fn method146(v0_1: ()) -> i32 {
+            unbox::<i32>(&getZero())
+        }
+        pub fn closure63(v0_1: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_0) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -6987,31 +6966,31 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(if v0_1.clone() == string("") {
+                Documents::method19(if (v0_1.clone()) == string("") {
                     string("")
                 } else {
-                    Documents::method122(
+                    Documents::method121(
                         v19.clone(),
                         v20.clone(),
                         v21.clone(),
                         v22.clone(),
                         v23.clone(),
                         v24.clone(),
-                        Documents::method7(v19, v20, v21, v22, v23, v24),
-                        Documents::method121(),
+                        Documents::method8(v19, v20, v21, v22, v23, v24),
+                        Documents::method120(),
                         v0_1,
                     )
                 })
             };
         }
-        pub fn closure62(
+        pub fn method143(
             v0_1: string,
             v1_1: Option<CancellationToken>,
             v2: Array<(string, string)>,
@@ -7021,14 +7000,12 @@ mod module_2555ccf7 {
             v6: Option<string>,
             v7: (),
             v8: LrcPtr<ConcurrentStack_1<string>>,
-            v9: (),
-        ) {
-            let v11: Arc<Async<()>> = defaultOf();
-            defaultOf::<()>();
-            ();
-            ()
+            v9: bool,
+            v10: (),
+        ) -> Arc<Async<()>> {
+            getZero()
         }
-        pub fn closure65(
+        pub fn method142(
             v0_1: string,
             v1_1: Option<CancellationToken>,
             v2: Array<(string, string)>,
@@ -7038,57 +7015,80 @@ mod module_2555ccf7 {
             v6: Option<string>,
             v7: (),
             v8: LrcPtr<ConcurrentStack_1<string>>,
-            v9: (),
+            v9: bool,
+            v10: (),
+        ) -> Arc<Async<()>> {
+            Documents::method143(v0_1, v1_1, v2, v3, v4, v5, v6, v7, v8, v9, v10)
+        }
+        pub fn closure61(
+            v0_1: string,
+            v1_1: Option<CancellationToken>,
+            v2: Array<(string, string)>,
+            v3: Option<Func1<(i32, string, bool), Arc<Async<()>>>>,
+            v4: Option<Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>>,
+            v5: bool,
+            v6: Option<string>,
+            v7: (),
+            v8: LrcPtr<ConcurrentStack_1<string>>,
+            v9: bool,
+            v10: (),
         ) {
-            let v11: Arc<Async<()>> = defaultOf();
-            defaultOf::<()>();
-            ();
+            let v11: Arc<Async<()>> =
+                Documents::method142(v0_1, v1_1, v2, v3, v4, v5, v6, v7, v8, v9, v10);
+            getZero::<()>();
             ()
         }
-        pub fn closure66(unitVar: (), v0_1: CancellationToken) -> Documents::US31 {
+        pub fn closure64(unitVar: (), v0_1: CancellationToken) -> Documents::US31 {
             Documents::US31::US31_0(v0_1)
         }
-        pub fn method143() -> Func1<CancellationToken, Documents::US31> {
-            Func1::new(move |v: CancellationToken| Documents::closure66((), v))
+        pub fn method147() -> Func1<CancellationToken, Documents::US31> {
+            Func1::new(move |v: CancellationToken| Documents::closure64((), v))
         }
-        pub fn closure67(v0_1: (), unitVar: ()) {
-            if unbox::<bool>(&defaultOf()) == false {
-                ();
-                ()
+        pub fn method148(v0_1: CancellationToken) -> Arc<Async<CancellationToken>> {
+            getZero()
+        }
+        pub fn method149(v0_1: ()) -> bool {
+            unbox::<bool>(&getZero())
+        }
+        pub fn method150(v0_1: ()) {
+            ();
+        }
+        pub fn closure65(v0_1: (), unitVar: ()) {
+            if (Documents::method149(v0_1)) == false {
+                Documents::method150(v0_1);
             };
         }
-        pub fn method145(v0_1: LrcPtr<TaskCanceledException>) -> string {
+        pub fn closure66(v0_1: LrcPtr<Exception>, unitVar: ()) -> LrcPtr<Exception> {
+            v0_1
+        }
+        pub fn method153(v0_1: LrcPtr<TaskCanceledException>) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v9: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v2.clone(), string("{ "), ());
                 ()
             };
             let v18: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("ex")), ());
+                Documents::closure8(v2.clone(), string("ex"), ());
                 ()
             };
             let v27: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v2.clone(), string(" = "), ());
                 ()
             };
             let v32: std::string::String = format!("{:#?}", v0_1);
             let v65: () = {
-                Documents::closure8(
-                    v2.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v32)),
-                    (),
-                );
+                Documents::closure8(v2.clone(), fable_library_rust::String_::fromString(v32), ());
                 ()
             };
             let v74: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v2.clone(), string(" }"), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method144(
+        pub fn method152(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -7099,8 +7099,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: LrcPtr<TaskCanceledException>,
         ) -> string {
-            let v9: string = Documents::method145(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method153(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -7109,8 +7109,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure68(v0_1: LrcPtr<TaskCanceledException>, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_3) {
+        pub fn closure67(v0_1: LrcPtr<TaskCanceledException>, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_3) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -7122,40 +7122,47 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method144(
+                Documents::method19(Documents::method152(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method33(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method31(),
                     v0_1,
                 ))
             };
         }
-        pub fn method147(v0_1: i32, v1_1: i32) -> string {
+        pub fn method151(
+            v0_1: (),
+            v1_1: LrcPtr<ConcurrentStack_1<string>>,
+            v2: CancellationToken,
+        ) -> Arc<Async<i32>> {
+            getZero()
+        }
+        pub fn method155(v0_1: i32, v1_1: i32) -> string {
             let v3: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v10: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v3.clone(), string("{ "), ());
                 ()
             };
             let v19: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("exit_code")), ());
+                Documents::closure8(v3.clone(), string("exit_code"), ());
                 ()
             };
             let v28: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v36: () = {
@@ -7163,15 +7170,15 @@ mod module_2555ccf7 {
                 ()
             };
             let v45: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v3.clone(), string("; "), ());
                 ()
             };
             let v54: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("output_length")), ());
+                Documents::closure8(v3.clone(), string("output_length"), ());
                 ()
             };
             let v62: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v70: () = {
@@ -7179,12 +7186,12 @@ mod module_2555ccf7 {
                 ()
             };
             let v79: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v3.clone(), string(" }"), ());
                 ()
             };
             v3.l0.get().clone()
         }
-        pub fn method146(
+        pub fn method154(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -7196,8 +7203,8 @@ mod module_2555ccf7 {
             v8: i32,
             v9: i32,
         ) -> string {
-            let v10: string = Documents::method147(v8, v9);
-            Documents::method17(sprintf!(
+            let v10: string = Documents::method155(v8, v9);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -7206,8 +7213,8 @@ mod module_2555ccf7 {
                 v10
             ))
         }
-        pub fn closure69(v0_1: i32, v1_1: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_1) {
+        pub fn closure68(v0_1: i32, v1_1: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_1) {
                 let v6: () = {
                     Documents::closure6((), ());
                     ()
@@ -7219,22 +7226,22 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v25: Option<i64> = patternInput.5.clone();
                 let v24: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v23: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v22: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v21: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v20: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method146(
+                Documents::method19(Documents::method154(
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
-                    Documents::method7(v20, v21, v22, v23, v24, v25),
-                    Documents::method61(),
+                    Documents::method8(v20, v21, v22, v23, v24, v25),
+                    Documents::method62(),
                     v0_1,
                     length(v1_1),
                 ))
@@ -7249,9 +7256,20 @@ mod module_2555ccf7 {
             v5: bool,
             v6: Option<string>,
         ) -> Arc<Async<(i32, string)>> {
-            defaultOf()
+            getZero()
         }
-        pub fn method82(
+        pub fn method137(
+            v0_1: string,
+            v1_1: Option<CancellationToken>,
+            v2: Array<(string, string)>,
+            v3: Option<Func1<(i32, string, bool), Arc<Async<()>>>>,
+            v4: Option<Func1<std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>, ()>>,
+            v5: bool,
+            v6: Option<string>,
+        ) -> Arc<Async<(i32, string)>> {
+            Documents::method138(v0_1, v1_1, v2, v3, v4, v5, v6)
+        }
+        pub fn method81(
             v0_1: string,
             v1_1: Option<CancellationToken>,
             v2: Array<(string, string)>,
@@ -7260,7 +7278,7 @@ mod module_2555ccf7 {
             v5: bool,
             v6: Option<string>,
         ) -> (i32, string) {
-            let v9: Documents::US13 = Documents::method84(Documents::method83(
+            let v9: Documents::US13 = Documents::method83(Documents::method82(
                 v0_1.clone(),
                 v1_1.clone(),
                 v2.clone(),
@@ -7273,23 +7291,30 @@ mod module_2555ccf7 {
                 Documents::US13::US13_0(v9_0_0, v9_0_1) => (v9_0_0.clone(), v9_0_1.clone()),
                 Documents::US13::US13_1(v9_1_0) => panic!(
                     "{}",
-                    sprintf!("resultm.get / Result value was Error: {}", v9_1_0.clone()),
+                    concat(new_array(&[
+                        string("resultm.get / Result value was Error: "),
+                        v9_1_0.clone()
+                    ])),
                 ),
             };
             let v21: Documents::US5 = patternInput.1.clone();
             let v20: string = patternInput.0.clone();
-            let v26: Documents::US21 = Documents::method96(match &v21 {
+            let v26: Documents::US21 = Documents::method95(match &v21 {
                 Documents::US5::US5_0(v21_0_0) => match &v21 {
                     Documents::US5::US5_0(x) => x.clone(),
                     _ => unreachable!(),
-                },
+                }
+                .clone(),
                 _ => string(""),
             });
             let v34: Array<string> = match &v26 {
                 Documents::US21::US21_0(v26_0_0) => v26_0_0.clone(),
                 Documents::US21::US21_1(v26_1_0) => panic!(
                     "{}",
-                    sprintf!("resultm.get / Result value was Error: {}", v26_1_0.clone()),
+                    concat(new_array(&[
+                        string("resultm.get / Result value was Error: "),
+                        v26_1_0.clone()
+                    ])),
                 ),
             };
             let v36: Vec<string> = v34.to_vec();
@@ -7307,7 +7332,7 @@ mod module_2555ccf7 {
                 .collect::<Vec<_>>();
             let v92: Vec<std::string::String> = _vec_map;
             let v95: () = {
-                Documents::closure41(
+                Documents::closure40(
                     v0_1,
                     v1_1,
                     v2.clone(),
@@ -7335,175 +7360,197 @@ mod module_2555ccf7 {
                         let v140: std::process::Command = std::process::Command::new(&*v20.clone());
                         let v142: bool = true;
                         let mut v140 = v140;
-                        let v144: &mut std::process::Command =
-                            std::process::Command::args(&mut v140, &*v92.clone());
-                        let v146: std::process::Stdio = std::process::Stdio::piped();
-                        let v148: &mut std::process::Command =
-                            std::process::Command::stdout(v144, std::process::Stdio::piped());
-                        let v150: std::process::Stdio = std::process::Stdio::piped();
-                        let v152: &mut std::process::Command =
-                            std::process::Command::stderr(v148, std::process::Stdio::piped());
-                        let v154: std::process::Stdio = std::process::Stdio::piped();
-                        let v156: &mut std::process::Command =
-                            std::process::Command::stdin(v152, std::process::Stdio::piped());
-                        let v170: Documents::US5 = defaultValue(
+                        let v144: bool = true;
+                        std::process::Command::args(&mut v140, &*v92.clone());
+                        let v146: std::process::Command = v140;
+                        let v148: std::process::Stdio = std::process::Stdio::piped();
+                        let v150: bool = true;
+                        let mut v146 = v146;
+                        let v152: bool = true;
+                        std::process::Command::stdout(&mut v146, std::process::Stdio::piped());
+                        let v154: std::process::Command = v146;
+                        let v156: std::process::Stdio = std::process::Stdio::piped();
+                        let v158: bool = true;
+                        let mut v154 = v154;
+                        let v160: bool = true;
+                        std::process::Command::stderr(&mut v154, std::process::Stdio::piped());
+                        let v162: std::process::Command = v154;
+                        let v164: std::process::Stdio = std::process::Stdio::piped();
+                        let v166: bool = true;
+                        let mut v162 = v162;
+                        let v168: bool = true;
+                        std::process::Command::stdin(&mut v162, std::process::Stdio::piped());
+                        let v170: std::process::Command = v162;
+                        let v184: Documents::US5 = defaultValue(
                             Documents::US5::US5_1,
-                            map(Documents::method5(), v6.clone()),
+                            map(Documents::method6(), v6.clone()),
                         );
-                        let v178: &mut std::process::Command = match &v170 {
-                            Documents::US5::US5_0(v170_0_0) => std::process::Command::current_dir(
-                                v156,
-                                &*match &v170 {
-                                    Documents::US5::US5_0(x) => x.clone(),
-                                    _ => unreachable!(),
-                                },
-                            ),
-                            _ => v156,
+                        let v198: std::process::Command = match &v184 {
+                            Documents::US5::US5_0(v184_0_0) => {
+                                let v190: bool = true;
+                                let mut v170 = v170;
+                                let v192: bool = true;
+                                std::process::Command::current_dir(
+                                    &mut v170,
+                                    &*match &v184 {
+                                        Documents::US5::US5_0(x) => x.clone(),
+                                        _ => unreachable!(),
+                                    }
+                                    .clone(),
+                                );
+                                v170
+                            }
+                            _ => v170,
                         };
-                        let v196: &mut std::process::Command = if count_2(v2.clone()) as u64
-                            == 0_u64
+                        let v220: std::process::Command = if (get_Count(v2.clone()) as u64) == 0_u64
                         {
-                            v178
+                            v198
                         } else {
-                            let v182: Vec<(string, string)> = v2.clone().to_vec();
-                            let v184: bool = true;
-                            let _vec_fold_ = v182.into_iter().fold(v178, |acc, x| {
+                            let v202: Vec<(string, string)> = v2.clone().to_vec();
+                            let v204: bool = true;
+                            let _vec_fold_ = v202.into_iter().fold(v198, |acc, x| {
                                 //;
-                                let v186: &mut std::process::Command = acc;
+                                let v206: std::process::Command = acc;
                                 let patternInput_1: (string, string) = x;
-                                let v191: &mut std::process::Command = std::process::Command::env(
-                                    v186,
+                                let v211: bool = true;
+                                let mut v206 = v206;
+                                let v213: bool = true;
+                                std::process::Command::env(
+                                    &mut v206,
                                     &*patternInput_1.0.clone(),
                                     &*patternInput_1.1.clone(),
                                 );
-                                let v193: bool = true;
-                                v191
+                                let v215: std::process::Command = v206;
+                                let v217: bool = true;
+                                v215
                             });
                             _vec_fold_
                         };
-                        let v198: Result<std::process::Child, std::io::Error> =
-                            std::process::Command::spawn(v196);
-                        let v199 = Documents::method65();
-                        let v202: Result<std::process::Child, std::string::String> =
-                            v198.map_err(|x| v199(x));
-                        let v214 = Documents::method108();
-                        let v216: bool = true;
-                        let _result_map_ = v202.map(|x| {
+                        let v222: bool = true;
+                        let mut v220 = v220;
+                        let v224: Result<std::process::Child, std::io::Error> =
+                            std::process::Command::spawn(&mut v220);
+                        let v225 = Documents::method65();
+                        let v228: Result<std::process::Child, std::string::String> =
+                            v224.map_err(|x| v225(x));
+                        let v240 = Documents::method107();
+                        let v242: bool = true;
+                        let _result_map_ = v228.map(|x| {
                             //;
-                            let v222: Option<std::process::Child> = v214(Some(x));
-                            let v224: std::sync::Mutex<Option<std::process::Child>> =
-                                std::sync::Mutex::new(v222);
-                            let v226: std::sync::Arc<
+                            let v248: Option<std::process::Child> = v240(Some(x));
+                            let v250: std::sync::Mutex<Option<std::process::Child>> =
+                                std::sync::Mutex::new(v248);
+                            let v252: std::sync::Arc<
                                 std::sync::Mutex<Option<std::process::Child>>,
-                            > = std::sync::Arc::new(v224);
-                            let v228: bool = true;
-                            v226
+                            > = std::sync::Arc::new(v250);
+                            let v254: bool = true;
+                            v252
                         });
-                        let v230: Result<
+                        let v256: Result<
                             std::sync::Arc<std::sync::Mutex<Option<std::process::Child>>>,
                             std::string::String,
                         > = _result_map_;
-                        let v231 = Documents::method109();
-                        let v232 = Documents::method110();
-                        let v234: Documents::US23 = match v230 {
-                            Ok(x) => v231(x),
-                            Err(e) => v232(e),
+                        let v257 = Documents::method108();
+                        let v258 = Documents::method109();
+                        let v260: Documents::US23 = match v256 {
+                            Ok(x) => v257(x),
+                            Err(e) => v258(e),
                         };
-                        let patternInput_3: (i32, Documents::US6, Documents::US24) = match &v234 {
-                            Documents::US23::US23_0(v234_0_0) => {
-                                let v235: std::sync::Arc<
+                        let patternInput_3: (i32, Documents::US6, Documents::US24) = match &v260 {
+                            Documents::US23::US23_0(v260_0_0) => {
+                                let v261: std::sync::Arc<
                                     std::sync::Mutex<Option<std::process::Child>>,
-                                > = v234_0_0.clone();
-                                let v237: bool = true;
+                                > = v260_0_0.clone();
+                                let v263: bool = true;
                                 let _capture = (|| {
                                     //;
-                                    let v239: std::sync::Arc<
+                                    let v265: std::sync::Arc<
                                         std::sync::Mutex<Option<std::process::Child>>,
-                                    > = v235.clone();
-                                    let v241: Result<
+                                    > = v261.clone();
+                                    let v267: Result<
                                         std::sync::MutexGuard<Option<std::process::Child>>,
                                         std::sync::PoisonError<
                                             std::sync::MutexGuard<Option<std::process::Child>>,
                                         >,
-                                    > = v239.lock();
-                                    let v256: std::sync::MutexGuard<Option<std::process::Child>> =
-                                        Documents::method112(v241.unwrap());
-                                    let v258: bool = true;
-                                    let mut v256 = v256;
-                                    let v260: &mut Option<std::process::Child> = &mut v256;
-                                    let v262: Option<&mut std::process::Child> = v260.as_mut();
-                                    let v264: &mut std::process::Child = v262.unwrap();
-                                    let v266: &mut Option<std::process::ChildStdout> =
-                                        &mut v264.stdout;
-                                    let v268: Option<std::process::ChildStdout> =
-                                        Option::take(v266);
-                                    let v270: std::process::ChildStdout = v268.unwrap();
-                                    let v272: bool = true;
-                                    v270
+                                    > = v265.lock();
+                                    let v282: std::sync::MutexGuard<Option<std::process::Child>> =
+                                        Documents::method111(v267.unwrap());
+                                    let v284: bool = true;
+                                    let mut v282 = v282;
+                                    let v286: &mut Option<std::process::Child> = &mut v282;
+                                    let v288: Option<&mut std::process::Child> = v286.as_mut();
+                                    let v290: &mut std::process::Child = v288.unwrap();
+                                    let v292: &mut Option<std::process::ChildStdout> =
+                                        &mut v290.stdout;
+                                    let v294: Option<std::process::ChildStdout> =
+                                        Option::take(v292);
+                                    let v296: std::process::ChildStdout = v294.unwrap();
+                                    let v298: bool = true;
+                                    v296
                                 })();
-                                let v274: std::process::ChildStdout = _capture;
-                                let v276: bool = true;
+                                let v300: std::process::ChildStdout = _capture;
+                                let v302: bool = true;
                                 let _capture = (|| {
                                     //;
-                                    let v278: std::sync::Arc<
+                                    let v304: std::sync::Arc<
                                         std::sync::Mutex<Option<std::process::Child>>,
-                                    > = v235.clone();
-                                    let v280: Result<
+                                    > = v261.clone();
+                                    let v306: Result<
                                         std::sync::MutexGuard<Option<std::process::Child>>,
                                         std::sync::PoisonError<
                                             std::sync::MutexGuard<Option<std::process::Child>>,
                                         >,
-                                    > = v278.lock();
-                                    let v295: std::sync::MutexGuard<Option<std::process::Child>> =
-                                        Documents::method112(v280.unwrap());
-                                    let v297: bool = true;
-                                    let mut v295 = v295;
-                                    let v299: &mut Option<std::process::Child> = &mut v295;
-                                    let v301: Option<&mut std::process::Child> = v299.as_mut();
-                                    let v303: &mut std::process::Child = v301.unwrap();
-                                    let v305: &mut Option<std::process::ChildStderr> =
-                                        &mut v303.stderr;
-                                    let v307: Option<std::process::ChildStderr> =
-                                        Option::take(v305);
-                                    let v309: std::process::ChildStderr = v307.unwrap();
-                                    let v311: bool = true;
-                                    v309
+                                    > = v304.lock();
+                                    let v321: std::sync::MutexGuard<Option<std::process::Child>> =
+                                        Documents::method111(v306.unwrap());
+                                    let v323: bool = true;
+                                    let mut v321 = v321;
+                                    let v325: &mut Option<std::process::Child> = &mut v321;
+                                    let v327: Option<&mut std::process::Child> = v325.as_mut();
+                                    let v329: &mut std::process::Child = v327.unwrap();
+                                    let v331: &mut Option<std::process::ChildStderr> =
+                                        &mut v329.stderr;
+                                    let v333: Option<std::process::ChildStderr> =
+                                        Option::take(v331);
+                                    let v335: std::process::ChildStderr = v333.unwrap();
+                                    let v337: bool = true;
+                                    v335
                                 })();
-                                let v313: std::process::ChildStderr = _capture;
-                                let v315: bool = true;
+                                let v339: std::process::ChildStderr = _capture;
+                                let v341: bool = true;
                                 let _capture = (|| {
                                     //;
-                                    let v317: std::sync::Arc<
+                                    let v343: std::sync::Arc<
                                         std::sync::Mutex<Option<std::process::Child>>,
-                                    > = v235.clone();
-                                    let v319: Result<
+                                    > = v261.clone();
+                                    let v345: Result<
                                         std::sync::MutexGuard<Option<std::process::Child>>,
                                         std::sync::PoisonError<
                                             std::sync::MutexGuard<Option<std::process::Child>>,
                                         >,
-                                    > = v317.lock();
-                                    let v334: std::sync::MutexGuard<Option<std::process::Child>> =
-                                        Documents::method112(v319.unwrap());
-                                    let v336: bool = true;
-                                    let mut v334 = v334;
-                                    let v338: &mut Option<std::process::Child> = &mut v334;
-                                    let v340: Option<&mut std::process::Child> = v338.as_mut();
-                                    let v342: &mut std::process::Child = v340.unwrap();
-                                    let v344: &mut Option<std::process::ChildStdin> =
-                                        &mut v342.stdin;
-                                    let v346: Option<std::process::ChildStdin> = Option::take(v344);
-                                    let v348: std::process::ChildStdin = v346.unwrap();
-                                    let v353: Option<std::process::ChildStdin> =
-                                        (Documents::method113())(Some(v348));
-                                    let v355: std::sync::Mutex<Option<std::process::ChildStdin>> =
-                                        std::sync::Mutex::new(v353);
-                                    let v357: std::sync::Arc<
+                                    > = v343.lock();
+                                    let v360: std::sync::MutexGuard<Option<std::process::Child>> =
+                                        Documents::method111(v345.unwrap());
+                                    let v362: bool = true;
+                                    let mut v360 = v360;
+                                    let v364: &mut Option<std::process::Child> = &mut v360;
+                                    let v366: Option<&mut std::process::Child> = v364.as_mut();
+                                    let v368: &mut std::process::Child = v366.unwrap();
+                                    let v370: &mut Option<std::process::ChildStdin> =
+                                        &mut v368.stdin;
+                                    let v372: Option<std::process::ChildStdin> = Option::take(v370);
+                                    let v374: std::process::ChildStdin = v372.unwrap();
+                                    let v379: Option<std::process::ChildStdin> =
+                                        (Documents::method112())(Some(v374));
+                                    let v381: std::sync::Mutex<Option<std::process::ChildStdin>> =
+                                        std::sync::Mutex::new(v379);
+                                    let v383: std::sync::Arc<
                                         std::sync::Mutex<Option<std::process::ChildStdin>>,
-                                    > = std::sync::Arc::new(v355);
-                                    let v359: bool = true;
-                                    v357
+                                    > = std::sync::Arc::new(v381);
+                                    let v385: bool = true;
+                                    v383
                                 })();
-                                let v361: std::sync::Arc<
+                                let v387: std::sync::Arc<
                                     std::sync::Mutex<Option<std::process::ChildStdin>>,
                                 > = _capture;
                                 let patternInput_2: (
@@ -7513,133 +7560,133 @@ mod module_2555ccf7 {
                                     let (sender, receiver) = std::sync::mpsc::channel();
                                     (sender, std::sync::Arc::new(receiver))
                                 };
-                                let v363: std::sync::mpsc::Sender<std::string::String> =
+                                let v389: std::sync::mpsc::Sender<std::string::String> =
                                     patternInput_2.0.clone();
-                                let v366: std::sync::mpsc::Sender<std::string::String> =
-                                    (Documents::method114())(v363.clone());
-                                let v368: std::sync::Mutex<
+                                let v392: std::sync::mpsc::Sender<std::string::String> =
+                                    (Documents::method113())(v389.clone());
+                                let v394: std::sync::Mutex<
                                     std::sync::mpsc::Sender<std::string::String>,
-                                > = std::sync::Mutex::new(v366);
-                                let v370: std::sync::Arc<
+                                > = std::sync::Mutex::new(v392);
+                                let v396: std::sync::Arc<
                                     std::sync::Mutex<std::sync::mpsc::Sender<std::string::String>>,
-                                > = std::sync::Arc::new(v368);
-                                let v372: std::sync::mpsc::Sender<std::string::String> =
-                                    (Documents::method115())(v363);
-                                let v374: std::sync::Mutex<
+                                > = std::sync::Arc::new(v394);
+                                let v398: std::sync::mpsc::Sender<std::string::String> =
+                                    (Documents::method114())(v389);
+                                let v400: std::sync::Mutex<
                                     std::sync::mpsc::Sender<std::string::String>,
-                                > = std::sync::Mutex::new(v372);
-                                let v376: std::sync::Arc<
+                                > = std::sync::Mutex::new(v398);
+                                let v402: std::sync::Arc<
                                     std::sync::Mutex<std::sync::mpsc::Sender<std::string::String>>,
-                                > = std::sync::Arc::new(v374);
-                                let v378: std::sync::Arc<
+                                > = std::sync::Arc::new(v400);
+                                let v404: std::sync::Arc<
                                     std::sync::mpsc::Receiver<std::string::String>,
-                                > = (Documents::method116())(patternInput_2.1.clone());
-                                let v380: std::sync::Mutex<
+                                > = (Documents::method115())(patternInput_2.1.clone());
+                                let v406: std::sync::Mutex<
                                     std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
-                                > = std::sync::Mutex::new(v378);
-                                let v382: std::sync::Arc<
+                                > = std::sync::Mutex::new(v404);
+                                let v408: std::sync::Arc<
                                     std::sync::Mutex<
                                         std::sync::Arc<
                                             std::sync::mpsc::Receiver<std::string::String>,
                                         >,
                                     >,
-                                > = std::sync::Arc::new(v380);
-                                let v384: bool = true;
+                                > = std::sync::Arc::new(v406);
+                                let v410: bool = true;
                                 let __spawn = std::thread::spawn(move || {
                                     //;
-                                    let v386: encoding_rs_io::DecodeReaderBytes<
+                                    let v412: encoding_rs_io::DecodeReaderBytes<
                                         std::process::ChildStdout,
                                         Vec<u8>,
                                     > = encoding_rs_io::DecodeReaderBytesBuilder::new()
                                         .utf8_passthru(true)
-                                        .build(v274);
-                                    let v388: std::io::BufReader<
+                                        .build(v300);
+                                    let v414: std::io::BufReader<
                                         encoding_rs_io::DecodeReaderBytes<
                                             std::process::ChildStdout,
                                             Vec<u8>,
                                         >,
-                                    > = std::io::BufReader::new(v386);
-                                    let v390: std::io::Lines<
+                                    > = std::io::BufReader::new(v412);
+                                    let v416: std::io::Lines<
                                         std::io::BufReader<
                                             encoding_rs_io::DecodeReaderBytes<
                                                 std::process::ChildStdout,
                                                 Vec<u8>,
                                             >,
                                         >,
-                                    > = std::io::BufRead::lines(v388);
-                                    let v392: bool = true;
-                                    let mut v390 = v390;
-                                    let _iter_try_for_each = v390.try_for_each(|x| {
+                                    > = std::io::BufRead::lines(v414);
+                                    let v418: bool = true;
+                                    let mut v416 = v416;
+                                    let _iter_try_for_each = v416.try_for_each(|x| {
                                         //;
-                                        let v394: Result<std::string::String, std::io::Error> = x;
-                                        let v396: std::sync::Arc<
+                                        let v420: Result<std::string::String, std::io::Error> = x;
+                                        let v422: std::sync::Arc<
                                             std::sync::Mutex<
                                                 std::sync::mpsc::Sender<std::string::String>,
                                             >,
-                                        > = v370.clone();
-                                        let v397 = Documents::method65();
-                                        let v400: Result<std::string::String, std::string::String> =
-                                            v394.map_err(|x| v397(x));
-                                        let v412 = Documents::method117();
-                                        let v413 = Documents::method118();
-                                        let v415: Documents::US25 = match v400 {
-                                            Ok(x) => v412(x),
-                                            Err(e) => v413(e),
+                                        > = v396.clone();
+                                        let v423 = Documents::method65();
+                                        let v426: Result<std::string::String, std::string::String> =
+                                            v420.map_err(|x| v423(x));
+                                        let v438 = Documents::method116();
+                                        let v439 = Documents::method117();
+                                        let v441: Documents::US25 = match v426 {
+                                            Ok(x) => v438(x),
+                                            Err(e) => v439(e),
                                         };
-                                        let v610: std::string::String = match &v415 {
-                                            Documents::US25::US25_0(v415_0_0) => {
-                                                let v418: string =
+                                        let v636: std::string::String = match &v441 {
+                                            Documents::US25::US25_0(v441_0_0) => {
+                                                let v444: string =
                                                     fable_library_rust::String_::fromString(
-                                                        v415_0_0.clone(),
+                                                        v441_0_0.clone(),
                                                     );
-                                                let v420: &encoding_rs::Encoding =
+                                                let v446: &encoding_rs::Encoding =
                                                     encoding_rs::UTF_8;
-                                                let v422: std::borrow::Cow<[u8]> =
-                                                    v420.encode(&*v418).0;
-                                                let v424: &[u8] = v422.as_ref();
-                                                let v426: Result<&str, std::str::Utf8Error> =
-                                                    std::str::from_utf8(v424);
-                                                let v429: &str = v426.unwrap();
-                                                let v460: std::string::String = String::from(v429);
-                                                let v467: string = sprintf!(
-                                                    "> {}",
+                                                let v448: std::borrow::Cow<[u8]> =
+                                                    v446.encode(&*v444).0;
+                                                let v450: &[u8] = v448.as_ref();
+                                                let v452: Result<&str, std::str::Utf8Error> =
+                                                    std::str::from_utf8(v450);
+                                                let v455: &str = v452.unwrap();
+                                                let v486: std::string::String = String::from(v455);
+                                                let v493: string = concat(new_array(&[
+                                                    string("> "),
                                                     fable_library_rust::String_::fromString(
-                                                        v460.clone()
-                                                    )
-                                                );
+                                                        v486.clone(),
+                                                    ),
+                                                ]));
                                                 if v5 {
-                                                    let v470: () = {
-                                                        Documents::closure52(v467.clone(), ());
+                                                    let v496: () = {
+                                                        Documents::closure51(v493.clone(), ());
                                                         ()
                                                     };
                                                     ()
                                                 } else {
-                                                    let v515: () = {
-                                                        Documents::closure11(v467, ());
+                                                    let v541: () = {
+                                                        Documents::closure11(v493, ());
                                                         ()
                                                     };
                                                     ()
                                                 }
-                                                v460
+                                                v486
                                             }
-                                            Documents::US25::US25_1(v415_1_0) => {
-                                                let v517: std::string::String = v415_1_0.clone();
-                                                let v520: () = {
-                                                    Documents::closure51(v5, v517.clone(), ());
+                                            Documents::US25::US25_1(v441_1_0) => {
+                                                let v543: std::string::String = v441_1_0.clone();
+                                                let v546: () = {
+                                                    Documents::closure50(v5, v543.clone(), ());
                                                     ()
                                                 };
-                                                let v560: string =
-                                                    sprintf!("\u{001b}[4;7m{}\u{001b}[0m", v517);
-                                                let v563: &str = &*v560;
-                                                String::from(v563)
+                                                let v586: string =
+                                                    sprintf!("\u{001b}[4;7m{}\u{001b}[0m", v543);
+                                                let v589: &str = &*v586;
+                                                String::from(v589)
                                             }
                                         };
-                                        let v612: std::sync::Arc<
+                                        let v638: std::sync::Arc<
                                             std::sync::Mutex<
                                                 std::sync::mpsc::Sender<std::string::String>,
                                             >,
-                                        > = v396;
-                                        let v614: Result<
+                                        > = v422;
+                                        let v640: Result<
                                             std::sync::MutexGuard<
                                                 std::sync::mpsc::Sender<std::string::String>,
                                             >,
@@ -7648,146 +7695,146 @@ mod module_2555ccf7 {
                                                     std::sync::mpsc::Sender<std::string::String>,
                                                 >,
                                             >,
-                                        > = v612.lock();
-                                        let v617: std::sync::MutexGuard<
+                                        > = v638.lock();
+                                        let v643: std::sync::MutexGuard<
                                             std::sync::mpsc::Sender<std::string::String>,
-                                        > = v614.unwrap();
-                                        let v630: &std::sync::mpsc::Sender<std::string::String> =
-                                            &v617;
-                                        let v632: Result<
+                                        > = v640.unwrap();
+                                        let v656: &std::sync::mpsc::Sender<std::string::String> =
+                                            &v643;
+                                        let v658: Result<
                                             (),
                                             std::sync::mpsc::SendError<std::string::String>,
-                                        > = v630.send(v610);
-                                        let v633 = Documents::method124();
-                                        let v636: Result<(), std::string::String> =
-                                            v632.map_err(|x| v633(x));
-                                        let v649: _ = v636;
-                                        let v651: bool = true;
-                                        v649
+                                        > = v656.send(v636);
+                                        let v659 = Documents::method123();
+                                        let v662: Result<(), std::string::String> =
+                                            v658.map_err(|x| v659(x));
+                                        let v675: _ = v662;
+                                        let v677: bool = true;
+                                        v675
                                     }); //;
-                                    let v654: Result<(), string> = Documents::method125(
+                                    let v680: Result<(), string> = Documents::method124(
                                         _iter_try_for_each.map_err(|x| x.into()),
                                     );
-                                    let v657: string = string("}");
-                                    let v661: bool = true;
-                                    let v658 = v654;
-                                    let v673: string = append(
-                                        append(
-                                            append(
-                                                append(string("true; v658 "), v657),
+                                    let v683: string = string("}");
+                                    let v687: bool = true;
+                                    let v684 = v680;
+                                    let v699: string = append(
+                                        (append(
+                                            (append(
+                                                (append(string("true; v684 "), (v683))),
                                                 string("); "),
-                                            ),
+                                            )),
                                             string(""),
-                                        ),
+                                        )),
                                         string(" // rust.fix_closure\'"),
                                     );
-                                    let v674: bool = true;
-                                    v658
+                                    let v700: bool = true;
+                                    v684
                                 }); // rust.fix_closure';
-                                let v676: std::thread::JoinHandle<Result<(), string>> = __spawn;
-                                let v678: bool = true;
+                                let v702: std::thread::JoinHandle<Result<(), string>> = __spawn;
+                                let v704: bool = true;
                                 let __spawn = std::thread::spawn(move || {
                                     //;
-                                    let v680: encoding_rs_io::DecodeReaderBytes<
+                                    let v706: encoding_rs_io::DecodeReaderBytes<
                                         std::process::ChildStderr,
                                         Vec<u8>,
                                     > = encoding_rs_io::DecodeReaderBytesBuilder::new()
                                         .utf8_passthru(true)
-                                        .build(v313);
-                                    let v682: std::io::BufReader<
+                                        .build(v339);
+                                    let v708: std::io::BufReader<
                                         encoding_rs_io::DecodeReaderBytes<
                                             std::process::ChildStderr,
                                             Vec<u8>,
                                         >,
-                                    > = std::io::BufReader::new(v680);
-                                    let v684: std::io::Lines<
+                                    > = std::io::BufReader::new(v706);
+                                    let v710: std::io::Lines<
                                         std::io::BufReader<
                                             encoding_rs_io::DecodeReaderBytes<
                                                 std::process::ChildStderr,
                                                 Vec<u8>,
                                             >,
                                         >,
-                                    > = std::io::BufRead::lines(v682);
-                                    let v686: bool = true;
-                                    let mut v684 = v684;
-                                    let _iter_try_for_each = v684.try_for_each(|x| {
+                                    > = std::io::BufRead::lines(v708);
+                                    let v712: bool = true;
+                                    let mut v710 = v710;
+                                    let _iter_try_for_each = v710.try_for_each(|x| {
                                         //;
-                                        let v688: Result<std::string::String, std::io::Error> = x;
-                                        let v690: std::sync::Arc<
+                                        let v714: Result<std::string::String, std::io::Error> = x;
+                                        let v716: std::sync::Arc<
                                             std::sync::Mutex<
                                                 std::sync::mpsc::Sender<std::string::String>,
                                             >,
-                                        > = v376.clone();
-                                        let v691 = Documents::method65();
-                                        let v694: Result<std::string::String, std::string::String> =
-                                            v688.map_err(|x| v691(x));
-                                        let v706 = Documents::method117();
-                                        let v707 = Documents::method118();
-                                        let v709: Documents::US25 = match v694 {
-                                            Ok(x) => v706(x),
-                                            Err(e) => v707(e),
+                                        > = v402.clone();
+                                        let v717 = Documents::method65();
+                                        let v720: Result<std::string::String, std::string::String> =
+                                            v714.map_err(|x| v717(x));
+                                        let v732 = Documents::method116();
+                                        let v733 = Documents::method117();
+                                        let v735: Documents::US25 = match v720 {
+                                            Ok(x) => v732(x),
+                                            Err(e) => v733(e),
                                         };
-                                        let v952: std::string::String = match &v709 {
-                                            Documents::US25::US25_0(v709_0_0) => {
-                                                let v712: string =
+                                        let v978: std::string::String = match &v735 {
+                                            Documents::US25::US25_0(v735_0_0) => {
+                                                let v738: string =
                                                     fable_library_rust::String_::fromString(
-                                                        v709_0_0.clone(),
+                                                        v735_0_0.clone(),
                                                     );
-                                                let v714: &encoding_rs::Encoding =
+                                                let v740: &encoding_rs::Encoding =
                                                     encoding_rs::UTF_8;
-                                                let v716: std::borrow::Cow<[u8]> =
-                                                    v714.encode(&*v712).0;
-                                                let v718: &[u8] = v716.as_ref();
-                                                let v720: Result<&str, std::str::Utf8Error> =
-                                                    std::str::from_utf8(v718);
-                                                let v723: &str = v720.unwrap();
-                                                let v754: std::string::String = String::from(v723);
-                                                let v761: string = sprintf!(
-                                                    "! {}",
+                                                let v742: std::borrow::Cow<[u8]> =
+                                                    v740.encode(&*v738).0;
+                                                let v744: &[u8] = v742.as_ref();
+                                                let v746: Result<&str, std::str::Utf8Error> =
+                                                    std::str::from_utf8(v744);
+                                                let v749: &str = v746.unwrap();
+                                                let v780: std::string::String = String::from(v749);
+                                                let v787: string = concat(new_array(&[
+                                                    string("! "),
                                                     fable_library_rust::String_::fromString(
-                                                        v754.clone()
-                                                    )
-                                                );
+                                                        v780.clone(),
+                                                    ),
+                                                ]));
                                                 if v5 {
-                                                    let v764: () = {
-                                                        Documents::closure52(v761.clone(), ());
+                                                    let v790: () = {
+                                                        Documents::closure51(v787.clone(), ());
                                                         ()
                                                     };
                                                     ()
                                                 } else {
-                                                    let v808: () = {
-                                                        Documents::closure11(v761, ());
+                                                    let v834: () = {
+                                                        Documents::closure11(v787, ());
                                                         ()
                                                     };
                                                     ()
                                                 }
                                                 {
-                                                    let v810: string = sprintf!(
+                                                    let v836: string = sprintf!(
                                                         "\u{001b}[4;7m{}\u{001b}[0m",
-                                                        v754
+                                                        v780
                                                     );
-                                                    let v813: &str = &*v810;
-                                                    String::from(v813)
+                                                    let v839: &str = &*v836;
+                                                    String::from(v839)
                                                 }
                                             }
-                                            Documents::US25::US25_1(v709_1_0) => {
-                                                let v859: std::string::String = v709_1_0.clone();
-                                                let v862: () = {
-                                                    Documents::closure51(v5, v859.clone(), ());
+                                            Documents::US25::US25_1(v735_1_0) => {
+                                                let v885: std::string::String = v735_1_0.clone();
+                                                let v888: () = {
+                                                    Documents::closure50(v5, v885.clone(), ());
                                                     ()
                                                 };
-                                                let v902: string =
-                                                    sprintf!("\u{001b}[4;7m{}\u{001b}[0m", v859);
-                                                let v905: &str = &*v902;
-                                                String::from(v905)
+                                                let v928: string =
+                                                    sprintf!("\u{001b}[4;7m{}\u{001b}[0m", v885);
+                                                let v931: &str = &*v928;
+                                                String::from(v931)
                                             }
                                         };
-                                        let v954: std::sync::Arc<
+                                        let v980: std::sync::Arc<
                                             std::sync::Mutex<
                                                 std::sync::mpsc::Sender<std::string::String>,
                                             >,
-                                        > = v690;
-                                        let v956: Result<
+                                        > = v716;
+                                        let v982: Result<
                                             std::sync::MutexGuard<
                                                 std::sync::mpsc::Sender<std::string::String>,
                                             >,
@@ -7796,109 +7843,110 @@ mod module_2555ccf7 {
                                                     std::sync::mpsc::Sender<std::string::String>,
                                                 >,
                                             >,
-                                        > = v954.lock();
-                                        let v959: std::sync::MutexGuard<
+                                        > = v980.lock();
+                                        let v985: std::sync::MutexGuard<
                                             std::sync::mpsc::Sender<std::string::String>,
-                                        > = v956.unwrap();
-                                        let v972: &std::sync::mpsc::Sender<std::string::String> =
-                                            &v959;
-                                        let v974: Result<
+                                        > = v982.unwrap();
+                                        let v998: &std::sync::mpsc::Sender<std::string::String> =
+                                            &v985;
+                                        let v1000: Result<
                                             (),
                                             std::sync::mpsc::SendError<std::string::String>,
-                                        > = v972.send(v952);
-                                        let v975 = Documents::method124();
-                                        let v978: Result<(), std::string::String> =
-                                            v974.map_err(|x| v975(x));
-                                        let v991: _ = v978;
-                                        let v993: bool = true;
-                                        v991
+                                        > = v998.send(v978);
+                                        let v1001 = Documents::method123();
+                                        let v1004: Result<(), std::string::String> =
+                                            v1000.map_err(|x| v1001(x));
+                                        let v1017: _ = v1004;
+                                        let v1019: bool = true;
+                                        v1017
                                     }); //;
-                                    let v996: Result<(), string> = Documents::method125(
+                                    let v1022: Result<(), string> = Documents::method124(
                                         _iter_try_for_each.map_err(|x| x.into()),
                                     );
-                                    let v997: string = string("}");
-                                    let v1001: bool = true;
-                                    let v998 = v996;
-                                    let v1013: string = append(
-                                        append(
-                                            append(
-                                                append(string("true; v998 "), v997),
+                                    let v1023: string = string("}");
+                                    let v1027: bool = true;
+                                    let v1024 = v1022;
+                                    let v1039: string = append(
+                                        (append(
+                                            (append(
+                                                (append(string("true; v1024 "), (v1023))),
                                                 string("); "),
-                                            ),
+                                            )),
                                             string(""),
-                                        ),
+                                        )),
                                         string(" // rust.fix_closure\'"),
                                     );
-                                    let v1014: bool = true;
-                                    v998
+                                    let v1040: bool = true;
+                                    v1024
                                 }); // rust.fix_closure';
-                                let v1016: std::thread::JoinHandle<Result<(), string>> = __spawn;
-                                let v1030: Documents::US26 = defaultValue(
+                                let v1042: std::thread::JoinHandle<Result<(), string>> = __spawn;
+                                let v1056: Documents::US26 = defaultValue(
                                     Documents::US26::US26_1,
-                                    map(Documents::method126(), v4.clone()),
+                                    map(Documents::method125(), v4.clone()),
                                 );
-                                match &v1030 {
-                                    Documents::US26::US26_0(v1030_0_0) => {
-                                        let v1036: std::sync::Arc<
+                                match &v1056 {
+                                    Documents::US26::US26_0(v1056_0_0) => {
+                                        let v1062: std::sync::Arc<
                                             std::sync::Mutex<Option<std::process::ChildStdin>>,
-                                        > = v361;
-                                        let v1038: Result<
+                                        > = v387.clone();
+                                        let v1064: Result<
                                             std::sync::MutexGuard<Option<std::process::ChildStdin>>,
                                             std::sync::PoisonError<
                                                 std::sync::MutexGuard<
                                                     Option<std::process::ChildStdin>,
                                                 >,
                                             >,
-                                        > = v1036.lock();
-                                        let v1053: std::sync::MutexGuard<
+                                        > = v1062.lock();
+                                        let v1079: std::sync::MutexGuard<
                                             Option<std::process::ChildStdin>,
-                                        > = Documents::method127(v1038.unwrap());
-                                        let v1055: bool = true;
-                                        let mut v1053 = v1053;
-                                        let v1057: &mut Option<std::process::ChildStdin> =
-                                            &mut v1053;
-                                        let v1059: Option<std::process::ChildStdin> =
-                                            Option::take(v1057);
-                                        let v1061: bool = true;
-                                        let _optionm_map_ = v1059.map(|x| {
+                                        > = Documents::method126(v1064.unwrap());
+                                        let v1081: bool = true;
+                                        let mut v1079 = v1079;
+                                        let v1083: &mut Option<std::process::ChildStdin> =
+                                            &mut v1079;
+                                        let v1085: Option<std::process::ChildStdin> =
+                                            Option::take(v1083);
+                                        let v1087: bool = true;
+                                        let _optionm_map_ = v1085.map(|x| {
                                             //;
-                                            let v1063: std::process::ChildStdin = x;
-                                            let v1065: std::sync::Mutex<std::process::ChildStdin> =
-                                                std::sync::Mutex::new(v1063);
-                                            let v1067: std::sync::Arc<
+                                            let v1089: std::process::ChildStdin = x;
+                                            let v1091: std::sync::Mutex<std::process::ChildStdin> =
+                                                std::sync::Mutex::new(v1089);
+                                            let v1093: std::sync::Arc<
                                                 std::sync::Mutex<std::process::ChildStdin>,
-                                            > = std::sync::Arc::new(v1065);
-                                            let v1069: bool = true;
-                                            v1067
+                                            > = std::sync::Arc::new(v1091);
+                                            let v1095: bool = true;
+                                            v1093
                                         });
-                                        let v1071: Option<
+                                        let v1097: Option<
                                             std::sync::Arc<
                                                 std::sync::Mutex<std::process::ChildStdin>,
                                             >,
                                         > = _optionm_map_;
-                                        let v1085: Documents::US27 = defaultValue(
+                                        let v1111: Documents::US27 = defaultValue(
                                             Documents::US27::US27_1,
-                                            map(Documents::method128(), v1071),
+                                            map(Documents::method127(), v1097),
                                         );
-                                        match &v1085 {
-                                            Documents::US27::US27_0(v1085_0_0) => {
-                                                let v1089: std::sync::Arc<
+                                        match &v1111 {
+                                            Documents::US27::US27_0(v1111_0_0) => {
+                                                let v1115: std::sync::Arc<
                                                     std::sync::Mutex<std::process::ChildStdin>,
-                                                > = match &v1085 {
+                                                > = match &v1111 {
                                                     Documents::US27::US27_0(x) => x.clone(),
                                                     _ => unreachable!(),
-                                                };
-                                                (match &v1030 {
+                                                }
+                                                .clone();
+                                                (match &v1056 {
                                                     Documents::US26::US26_0(x) => x.clone(),
                                                     _ => unreachable!(),
                                                 })(
-                                                    v1089.clone()
+                                                    v1115.clone()
                                                 );
                                                 {
-                                                    let v1091: std::sync::Arc<
+                                                    let v1117: std::sync::Arc<
                                                         std::sync::Mutex<std::process::ChildStdin>,
-                                                    > = v1089;
-                                                    let v1093: Result<
+                                                    > = v1115;
+                                                    let v1119: Result<
                                                         std::sync::MutexGuard<
                                                             std::process::ChildStdin,
                                                         >,
@@ -7907,14 +7955,14 @@ mod module_2555ccf7 {
                                                                 std::process::ChildStdin,
                                                             >,
                                                         >,
-                                                    > = v1091.lock();
-                                                    let v1108: std::sync::MutexGuard<
+                                                    > = v1117.lock();
+                                                    let v1134: std::sync::MutexGuard<
                                                         std::process::ChildStdin,
-                                                    > = Documents::method129(v1093.unwrap());
-                                                    let v1110: bool = true;
-                                                    let mut v1108 = v1108;
-                                                    let v1112: bool = true;
-                                                    std::io::Write::flush(&mut *v1108).unwrap();
+                                                    > = Documents::method128(v1119.unwrap());
+                                                    let v1136: bool = true;
+                                                    let mut v1134 = v1134;
+                                                    let v1138: bool = true;
+                                                    std::io::Write::flush(&mut *v1134).unwrap();
                                                     ()
                                                 }
                                             }
@@ -7924,103 +7972,105 @@ mod module_2555ccf7 {
                                     _ => (),
                                 }
                                 {
-                                    let v1114: std::sync::Arc<
+                                    let v1140: std::sync::Arc<
                                         std::sync::Mutex<Option<std::process::Child>>,
-                                    > = v235;
-                                    let v1116: Result<
+                                    > = v261;
+                                    let v1142: Result<
                                         std::sync::MutexGuard<Option<std::process::Child>>,
                                         std::sync::PoisonError<
                                             std::sync::MutexGuard<Option<std::process::Child>>,
                                         >,
-                                    > = v1114.lock();
-                                    let v1131: std::sync::MutexGuard<Option<std::process::Child>> =
-                                        Documents::method112(v1116.unwrap());
-                                    let v1133: bool = true;
-                                    let mut v1131 = v1131;
-                                    let v1135: &mut Option<std::process::Child> = &mut v1131;
-                                    let v1137: Option<std::process::Child> = Option::take(v1135);
-                                    let v1139: std::process::Child = v1137.unwrap();
-                                    let v1141: Result<std::process::Output, std::io::Error> =
-                                        v1139.wait_with_output();
-                                    let v1142 = Documents::method65();
-                                    let v1154: Result<std::process::Output, std::string::String> =
-                                        v1141.map_err(|x| v1142(x));
-                                    let v1157: std::thread::JoinHandle<Result<(), string>> =
-                                        Documents::method130(v1016);
-                                    let v1160: string = string("v1157");
-                                    let v1161: std::thread::JoinHandle<Result<(), string>> =
-                                        Documents::method130(v676);
-                                    let v1166: string = append(
-                                        append(string("vec!["), append(string("v1161, "), v1160)),
+                                    > = v1140.lock();
+                                    let v1157: std::sync::MutexGuard<Option<std::process::Child>> =
+                                        Documents::method111(v1142.unwrap());
+                                    let v1159: bool = true;
+                                    let mut v1157 = v1157;
+                                    let v1161: &mut Option<std::process::Child> = &mut v1157;
+                                    let v1163: Option<std::process::Child> = Option::take(v1161);
+                                    let v1165: std::process::Child = v1163.unwrap();
+                                    let v1167: Result<std::process::Output, std::io::Error> =
+                                        v1165.wait_with_output();
+                                    let v1168 = Documents::method65();
+                                    let v1180: Result<std::process::Output, std::string::String> =
+                                        v1167.map_err(|x| v1168(x));
+                                    let v1183: std::thread::JoinHandle<Result<(), string>> =
+                                        Documents::method129(v1042);
+                                    let v1186: string = string("v1183");
+                                    let v1187: std::thread::JoinHandle<Result<(), string>> =
+                                        Documents::method129(v702);
+                                    let v1192: string = append(
+                                        (append(
+                                            string("vec!["),
+                                            (append(string("v1187, "), (v1186))),
+                                        )),
                                         string("]"),
                                     );
-                                    let v1167: Vec<std::thread::JoinHandle<Result<(), string>>> =
-                                        vec![v1161, v1157];
-                                    let v1169: bool = true;
-                                    v1167.into_iter().for_each(|x| {
+                                    let v1193: Vec<std::thread::JoinHandle<Result<(), string>>> =
+                                        vec![v1187, v1183];
+                                    let v1195: bool = true;
+                                    v1193.into_iter().for_each(|x| {
                                         //;
-                                        let v1171: std::thread::JoinHandle<Result<(), string>> = x;
-                                        let v1173: Result<
+                                        let v1197: std::thread::JoinHandle<Result<(), string>> = x;
+                                        let v1199: Result<
                                             Result<(), string>,
                                             Box<dyn core::any::Any + 'static + Send>,
-                                        > = std::thread::JoinHandle::join(v1171);
-                                        let v1176: Result<(), string> = v1173.unwrap();
-                                        v1176.unwrap();
-                                        ();
+                                        > = std::thread::JoinHandle::join(v1197);
+                                        let v1202: Result<(), string> = v1199.unwrap();
+                                        v1202.unwrap();
                                         {
-                                            let v1193: bool = true;
-                                            let v1195: bool = true;
+                                            let v1219: bool = true;
+                                            let v1221: bool = true;
                                         }
                                     });
                                     {
                                         //;
-                                        let v1196 = Documents::method131();
-                                        let v1197 = Documents::method132();
-                                        let v1198: Documents::US28 = match &v1154 {
-                                            Err(v1154_1_0) => v1197(v1154_1_0.clone()),
-                                            Ok(v1154_0_0) => v1196(v1154_0_0.clone()),
+                                        let v1222 = Documents::method130();
+                                        let v1223 = Documents::method131();
+                                        let v1224: Documents::US28 = match &v1180 {
+                                            Err(v1180_1_0) => v1223(v1180_1_0.clone()),
+                                            Ok(v1180_0_0) => v1222(v1180_0_0.clone()),
                                         };
-                                        match &v1198 {
-                                            Documents::US28::US28_0(v1198_0_0) => {
-                                                let v1201: std::process::ExitStatus =
-                                                    v1198_0_0.clone().status;
-                                                let v1203: Option<i32> = v1201.code();
-                                                let v1217: Documents::US29 = defaultValue(
+                                        match &v1224 {
+                                            Documents::US28::US28_0(v1224_0_0) => {
+                                                let v1227: std::process::ExitStatus =
+                                                    v1224_0_0.clone().status;
+                                                let v1229: Option<i32> = v1227.code();
+                                                let v1243: Documents::US29 = defaultValue(
                                                     Documents::US29::US29_1,
-                                                    map(Documents::method134(), v1203),
+                                                    map(Documents::method133(), v1229),
                                                 );
-                                                match &v1217 {
-                                                    Documents::US29::US29_0(v1217_0_0) => (
-                                                        match &v1217 {
+                                                match &v1243 {
+                                                    Documents::US29::US29_0(v1243_0_0) => (
+                                                        match &v1243 {
                                                             Documents::US29::US29_0(x) => x.clone(),
                                                             _ => unreachable!(),
                                                         },
                                                         Documents::US6::US6_1,
-                                                        Documents::US24::US24_0(v382.clone()),
+                                                        Documents::US24::US24_0(v408.clone()),
                                                     ),
                                                     _ => {
-                                                        let v1227:
+                                                        let v1253:
                                                                                         &str =
                                                                                     &*string("runtime.execute_with_options / exit_code=None");
                                                         (
                                                             -1_i32,
                                                             Documents::US6::US6_0(String::from(
-                                                                v1227,
+                                                                v1253,
                                                             )),
-                                                            Documents::US24::US24_0(v382.clone()),
+                                                            Documents::US24::US24_0(v408.clone()),
                                                         )
                                                     }
                                                 }
                                             }
-                                            Documents::US28::US28_1(v1198_1_0) => {
-                                                let v1281: std::string::String = v1198_1_0.clone();
-                                                let v1284: () = {
-                                                    Documents::closure58(v1281.clone(), ());
+                                            Documents::US28::US28_1(v1224_1_0) => {
+                                                let v1307: std::string::String = v1224_1_0.clone();
+                                                let v1310: () = {
+                                                    Documents::closure57(v1307.clone(), ());
                                                     ()
                                                 };
                                                 (
                                                     -2_i32,
-                                                    Documents::US6::US6_0(v1281),
+                                                    Documents::US6::US6_0(v1307),
                                                     Documents::US24::US24_1,
                                                 )
                                             }
@@ -8028,33 +8078,36 @@ mod module_2555ccf7 {
                                     }
                                 }
                             }
-                            Documents::US23::US23_1(v234_1_0) => {
-                                let v1332: std::string::String = v234_1_0.clone();
-                                let v1335: () = {
-                                    Documents::closure45(v1332.clone(), ());
+                            Documents::US23::US23_1(v260_1_0) => {
+                                let v1358: std::string::String = v260_1_0.clone();
+                                let v1361: () = {
+                                    Documents::closure44(v1358.clone(), ());
                                     ()
                                 };
                                 (
                                     -1_i32,
-                                    Documents::US6::US6_0(v1332),
+                                    Documents::US6::US6_0(v1358),
                                     Documents::US24::US24_1,
                                 )
                             }
                         };
-                        let v1382: Documents::US24 = patternInput_3.2.clone();
-                        let v1381: Documents::US6 = patternInput_3.1.clone();
-                        let v1380: i32 = patternInput_3.0.clone();
-                        let v1389: Option<
+                        let v1408: Documents::US24 = patternInput_3.2.clone();
+                        let v1407: Documents::US6 = patternInput_3.1.clone();
+                        let v1406: i32 = patternInput_3.0.clone();
+                        let v1415: Option<
                             std::sync::Arc<
                                 std::sync::Mutex<
                                     std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
                                 >,
                             >,
-                        > = match &v1382 {
-                            Documents::US24::US24_0(v1382_0_0) => Some(match &v1382 {
-                                Documents::US24::US24_0(x) => x.clone(),
-                                _ => unreachable!(),
-                            }),
+                        > = match &v1408 {
+                            Documents::US24::US24_0(v1408_0_0) => Some(
+                                match &v1408 {
+                                    Documents::US24::US24_0(x) => x.clone(),
+                                    _ => unreachable!(),
+                                }
+                                .clone(),
+                            ),
                             _ => {
                                 None::<
                                     std::sync::Arc<
@@ -8067,20 +8120,20 @@ mod module_2555ccf7 {
                                 >
                             }
                         };
-                        let v1391: bool = true;
-                        let _optionm_map_ = v1389.map(|x| {
+                        let v1417: bool = true;
+                        let _optionm_map_ = v1415.map(|x| {
                             //;
-                            let v1393: std::sync::Arc<
+                            let v1419: std::sync::Arc<
                                 std::sync::Mutex<
                                     std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
                                 >,
                             > = x;
-                            let v1395: std::sync::Arc<
+                            let v1421: std::sync::Arc<
                                 std::sync::Mutex<
                                     std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
                                 >,
-                            > = v1393;
-                            let v1397: Result<
+                            > = v1419;
+                            let v1423: Result<
                                 std::sync::MutexGuard<
                                     std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
                                 >,
@@ -8091,111 +8144,115 @@ mod module_2555ccf7 {
                                         >,
                                     >,
                                 >,
-                            > = v1395.lock();
-                            let v1400: std::sync::MutexGuard<
+                            > = v1421.lock();
+                            let v1426: std::sync::MutexGuard<
                                 std::sync::Arc<std::sync::mpsc::Receiver<std::string::String>>,
-                            > = v1397.unwrap();
-                            let v1413 = v1400.iter();
-                            let v1415: Vec<std::string::String> = v1413.collect::<Vec<_>>();
-                            let v1417: bool = true;
-                            let _vec_map: Vec<_> = v1415
+                            > = v1423.unwrap();
+                            let v1439 = v1426.iter();
+                            let v1441: Vec<std::string::String> = v1439.collect::<Vec<_>>();
+                            let v1443: bool = true;
+                            let _vec_map: Vec<_> = v1441
                                 .into_iter()
                                 .map(|x| {
                                     //;
-                                    let v1419: std::string::String = x;
-                                    let v1421: string =
-                                        fable_library_rust::String_::fromString(v1419);
-                                    let v1423: bool = true;
-                                    v1421
+                                    let v1445: std::string::String = x;
+                                    let v1447: string =
+                                        fable_library_rust::String_::fromString(v1445);
+                                    let v1449: bool = true;
+                                    v1447
                                 })
                                 .collect::<Vec<_>>();
-                            let v1425: Vec<string> = _vec_map;
-                            let v1428: LrcPtr<dyn IEnumerable_1<string>> =
-                                ofArray_1(fable_library_rust::NativeArray_::array_from(v1425));
-                            let v1434: string = join(Documents::method135(), toArray_1(v1428));
-                            let v1439: bool = true;
-                            v1434
+                            let v1451: Vec<string> = _vec_map;
+                            let v1454: LrcPtr<dyn IEnumerable_1<string>> =
+                                ofArray_1(fable_library_rust::NativeArray_::array_from(v1451));
+                            let v1460: string = join(Documents::method134(), toArray_1(v1454));
+                            let v1465: bool = true;
+                            v1460
                         });
-                        let v1441: Option<string> = _optionm_map_;
-                        let v1448: Documents::US5 = match &v1381 {
-                            Documents::US6::US6_0(v1381_0_0) => Documents::US5::US5_0(
-                                fable_library_rust::String_::fromString(match &v1381 {
-                                    Documents::US6::US6_0(x) => x.clone(),
-                                    _ => unreachable!(),
-                                }),
-                            ),
+                        let v1467: Option<string> = _optionm_map_;
+                        let v1474: Documents::US5 = match &v1407 {
+                            Documents::US6::US6_0(v1407_0_0) => {
+                                Documents::US5::US5_0(fable_library_rust::String_::fromString(
+                                    match &v1407 {
+                                        Documents::US6::US6_0(x) => x.clone(),
+                                        _ => unreachable!(),
+                                    }
+                                    .clone(),
+                                ))
+                            }
                             _ => Documents::US5::US5_1,
                         };
-                        let v1453: string = defaultValue(
-                            match &v1448 {
-                                Documents::US5::US5_0(v1448_0_0) => match &v1448 {
+                        let v1479: string = defaultValue(
+                            match &v1474 {
+                                Documents::US5::US5_0(v1474_0_0) => match &v1474 {
                                     Documents::US5::US5_0(x) => x.clone(),
                                     _ => unreachable!(),
-                                },
+                                }
+                                .clone(),
                                 _ => string(""),
                             },
-                            v1441,
+                            v1467,
                         );
-                        let v1458: () = {
-                            Documents::closure60(v1380, v1453.clone(), ());
+                        let v1484: () = {
+                            Documents::closure59(v1406, v1479.clone(), ());
                             ()
                         };
-                        LrcPtr::new((v1380, v1453))
+                        LrcPtr::new((v1406, v1479))
                     }
                 }))();
                 _v138.set(Some(x_3))
             }
             {
-                let v1500: LrcPtr<(i32, string)> = match &_v138.get().clone() {
+                let v1526: LrcPtr<(i32, string)> = match &_v138.get().clone() {
                     None => panic!("{}", string("base.capture / _v138=None"),),
                     Some(_v138_0_0) => _v138_0_0.clone(),
                 };
-                let _v7: (i32, string) = (v1500.0.clone(), v1500.1.clone());
+                let _v7: (i32, string) = (v1526.0.clone(), v1526.1.clone());
                 (_v7.0.clone(), _v7.1.clone())
             }
         }
-        pub fn method148(v0_1: string, v1_1: string, v2: string) -> (string, string) {
-            let v4: string = Documents::method25(v2, Documents::method47(v1_1.clone()));
+        pub fn method156(v0_1: string, v1_1: string, v2: string) -> (string, string) {
+            let v4: string = Documents::method26(v2, Documents::method45(v1_1.clone()));
             let v8: string = getSlice(
                 v1_1.clone(),
                 Some(0_i32),
-                Some(lastIndexOf(v1_1.clone(), string(".")) - 1_i32),
+                Some((lastIndexOf(v1_1.clone(), string("."))) - 1_i32),
             );
             let v14: string = getSlice(
                 v4.clone(),
                 Some(0_i32),
-                Some(lastIndexOf(v4.clone(), string(".")) - 1_i32),
+                Some((lastIndexOf(v4.clone(), string("."))) - 1_i32),
             );
-            let v20: bool = endsWith(v0_1.clone(), string(".md"), false) == false;
+            let v22: bool = (endsWith3(v0_1.clone(), string(".md"), false)) == false;
             (
-                if v20 {
-                    sprintf!("{}.{}", v1_1, v0_1.clone())
+                if v22 {
+                    concat(new_array(&[v1_1, string("."), v0_1.clone()]))
                 } else {
-                    sprintf!("{}.{}", v8, v0_1.clone())
+                    concat(new_array(&[v8, string("."), v0_1.clone()]))
                 },
-                if v20 {
-                    sprintf!("{}.{}", v4, v0_1.clone())
+                if v22 {
+                    concat(new_array(&[v4, string("."), v0_1.clone()]))
                 } else {
-                    sprintf!("{}.{}", v14, v0_1)
+                    concat(new_array(&[v14, string("."), v0_1]))
                 },
             )
         }
-        pub fn method149() -> string {
+        pub fn method157() -> string {
             string("")
         }
-        pub fn closure70(unitVar: (), v0_1: string) -> Documents::US33 {
+        pub fn closure69(unitVar: (), v0_1: string) -> Documents::US33 {
             Documents::US33::US33_0(v0_1)
         }
-        pub fn method150() -> Func1<string, Documents::US33> {
-            Func1::new(move |v: string| Documents::closure70((), v))
+        pub fn method158() -> Func1<string, Documents::US33> {
+            Func1::new(move |v: string| Documents::closure69((), v))
         }
-        pub fn closure71(unitVar: (), v0_1: std::string::String) -> Documents::US33 {
+        pub fn closure70(unitVar: (), v0_1: std::string::String) -> Documents::US33 {
             Documents::US33::US33_1(v0_1)
         }
-        pub fn method151() -> Func1<std::string::String, Documents::US33> {
-            Func1::new(move |v: std::string::String| Documents::closure71((), v))
+        pub fn method159() -> Func1<std::string::String, Documents::US33> {
+            Func1::new(move |v: std::string::String| Documents::closure70((), v))
         }
-        pub fn method152(v0_1: string) -> bool {
+        pub fn method160(v0_1: string) -> bool {
             let v4: &str = &*v0_1;
             let v28: std::string::String = String::from(v4);
             let v69: std::path::PathBuf = std::path::PathBuf::from(v28);
@@ -8205,7 +8262,7 @@ mod module_2555ccf7 {
                 false
             }
         }
-        pub fn method154(
+        pub fn method162(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -8219,70 +8276,66 @@ mod module_2555ccf7 {
             v10: string,
         ) -> string {
             let v12: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v19: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v12.clone(), string("{ "), ());
                 ()
             };
             let v28: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("file")), ());
+                Documents::closure8(v12.clone(), string("file"), ());
                 ()
             };
             let v37: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v45: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v12.clone(), v0_1, ());
                 ()
             };
             let v54: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v63: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("real_path")), ());
+                Documents::closure8(v12.clone(), string("real_path"), ());
                 ()
             };
             let v71: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v79: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v12.clone(), v1_1, ());
                 ()
             };
             let v87: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v96: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("relative_path")), ());
+                Documents::closure8(v12.clone(), string("relative_path"), ());
                 ()
             };
             let v104: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v112: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v2), ());
+                Documents::closure8(v12.clone(), v2, ());
                 ()
             };
             let v120: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v129: () = {
-                Documents::closure8(
-                    v12.clone(),
-                    sprintf!("{}", string("origin_hash_exit_code")),
-                    (),
-                );
+                Documents::closure8(v12.clone(), string("origin_hash_exit_code"), ());
                 ()
             };
             let v137: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v145: () = {
@@ -8290,35 +8343,31 @@ mod module_2555ccf7 {
                 ()
             };
             let v153: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v162: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("origin_hash")), ());
+                Documents::closure8(v12.clone(), string("origin_hash"), ());
                 ()
             };
             let v170: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v178: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v4), ());
+                Documents::closure8(v12.clone(), v4, ());
                 ()
             };
             let v186: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v195: () = {
-                Documents::closure8(
-                    v12.clone(),
-                    sprintf!("{}", string("local_git_hash_exit_code")),
-                    (),
-                );
+                Documents::closure8(v12.clone(), string("local_git_hash_exit_code"), ());
                 ()
             };
             let v203: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v211: () = {
@@ -8326,92 +8375,92 @@ mod module_2555ccf7 {
                 ()
             };
             let v219: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v228: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("local_git_hash")), ());
+                Documents::closure8(v12.clone(), string("local_git_hash"), ());
                 ()
             };
             let v236: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v244: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v6), ());
+                Documents::closure8(v12.clone(), v6, ());
                 ()
             };
             let v252: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v261: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("hash1")), ());
+                Documents::closure8(v12.clone(), string("hash1"), ());
                 ()
             };
             let v269: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v277: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v7), ());
+                Documents::closure8(v12.clone(), v7, ());
                 ()
             };
             let v285: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v294: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("hash2")), ());
+                Documents::closure8(v12.clone(), string("hash2"), ());
                 ()
             };
             let v302: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v313: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", sprintf!("{:?}", v8)), ());
+                Documents::closure8(v12.clone(), sprintf!("{:?}", v8), ());
                 ()
             };
             let v321: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v330: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("dist_path")), ());
+                Documents::closure8(v12.clone(), string("dist_path"), ());
                 ()
             };
             let v338: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v346: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v9), ());
+                Documents::closure8(v12.clone(), v9, ());
                 ()
             };
             let v354: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v12.clone(), string("; "), ());
                 ()
             };
             let v363: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string("cache_path")), ());
+                Documents::closure8(v12.clone(), string("cache_path"), ());
                 ()
             };
             let v371: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v12.clone(), string(" = "), ());
                 ()
             };
             let v379: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", v10), ());
+                Documents::closure8(v12.clone(), v10, ());
                 ()
             };
             let v388: () = {
-                Documents::closure8(v12.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v12.clone(), string(" }"), ());
                 ()
             };
             v12.l0.get().clone()
         }
-        pub fn method153(
+        pub fn method161(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -8434,8 +8483,8 @@ mod module_2555ccf7 {
             v19: string,
         ) -> string {
             let v20: string =
-                Documents::method154(v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19);
-            Documents::method17(sprintf!(
+                Documents::method162(v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -8444,7 +8493,7 @@ mod module_2555ccf7 {
                 v20
             ))
         }
-        pub fn closure72(
+        pub fn closure71(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -8458,7 +8507,7 @@ mod module_2555ccf7 {
             v10: Documents::US5,
             unitVar: (),
         ) {
-            if Documents::method6(Documents::US0::US0_2) {
+            if Documents::method7(Documents::US0::US0_2) {
                 let v15: () = {
                     Documents::closure6((), ());
                     ()
@@ -8470,7 +8519,7 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v34: Option<i64> = patternInput.5.clone();
                 let v33: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v32: LrcPtr<Documents::Mut3> = patternInput.3.clone();
@@ -8479,18 +8528,18 @@ mod module_2555ccf7 {
                 let v29: LrcPtr<Documents::Mut0> = patternInput.0.clone();
                 let v53: string =
                     string("documents.run / par_map / origin_hash |> sm\'.contains local_git_hash |> not / Some hash2 when hash1 = hash2");
-                Documents::method18(if v53.clone() == string("") {
+                Documents::method19(if (v53.clone()) == string("") {
                     string("")
                 } else {
-                    Documents::method153(
+                    Documents::method161(
                         v29.clone(),
                         v30.clone(),
                         v31.clone(),
                         v32.clone(),
                         v33.clone(),
                         v34.clone(),
-                        Documents::method7(v29, v30, v31, v32, v33, v34),
-                        Documents::method11(),
+                        Documents::method8(v29, v30, v31, v32, v33, v34),
+                        Documents::method12(),
                         v53,
                         v1_1,
                         v2,
@@ -8507,85 +8556,82 @@ mod module_2555ccf7 {
                 })
             };
         }
-        pub fn method156(v0_1: string) -> string {
-            v0_1
-        }
-        pub fn closure73(unitVar: (), v0_1: u64) -> Documents::US34 {
+        pub fn closure72(unitVar: (), v0_1: u64) -> Documents::US34 {
             Documents::US34::US34_0(v0_1)
         }
-        pub fn method157() -> Func1<u64, Documents::US34> {
-            Func1::new(move |v: u64| Documents::closure73((), v))
+        pub fn method164() -> Func1<u64, Documents::US34> {
+            Func1::new(move |v: u64| Documents::closure72((), v))
         }
-        pub fn closure74(unitVar: (), v0_1: std::string::String) -> Documents::US34 {
+        pub fn closure73(unitVar: (), v0_1: std::string::String) -> Documents::US34 {
             Documents::US34::US34_1(v0_1)
         }
-        pub fn method158() -> Func1<std::string::String, Documents::US34> {
-            Func1::new(move |v: std::string::String| Documents::closure74((), v))
+        pub fn method165() -> Func1<std::string::String, Documents::US34> {
+            Func1::new(move |v: std::string::String| Documents::closure73((), v))
         }
-        pub fn method160(v0_1: string, v1_1: string, v2: std::string::String) -> string {
+        pub fn method167(v0_1: string, v1_1: string, v2: std::string::String) -> string {
             let v4: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v11: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v4.clone(), string("{ "), ());
                 ()
             };
             let v20: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("old_path")), ());
+                Documents::closure8(v4.clone(), string("old_path"), ());
                 ()
             };
             let v29: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v37: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v4.clone(), v0_1, ());
                 ()
             };
             let v46: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v55: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("new_path")), ());
+                Documents::closure8(v4.clone(), string("new_path"), ());
                 ()
             };
             let v63: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v71: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v4.clone(), v1_1, ());
                 ()
             };
             let v79: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v88: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("error")), ());
+                Documents::closure8(v4.clone(), string("error"), ());
                 ()
             };
             let v96: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v101: std::string::String = format!("{:#?}", v2);
             let v134: () = {
                 Documents::closure8(
                     v4.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v101)),
+                    fable_library_rust::String_::fromString(v101),
                     (),
                 );
                 ()
             };
             let v143: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v4.clone(), string(" }"), ());
                 ()
             };
             v4.l0.get().clone()
         }
-        pub fn method159(
+        pub fn method166(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -8598,8 +8644,8 @@ mod module_2555ccf7 {
             v9: string,
             v10: std::string::String,
         ) -> string {
-            let v11: string = Documents::method160(v8, v9, v10);
-            Documents::method17(sprintf!(
+            let v11: string = Documents::method167(v8, v9, v10);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -8608,8 +8654,8 @@ mod module_2555ccf7 {
                 v11
             ))
         }
-        pub fn closure75(v0_1: string, v1_1: string, v2: std::string::String, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_3) {
+        pub fn closure74(v0_1: string, v1_1: string, v2: std::string::String, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_3) {
                 let v7: () = {
                     Documents::closure6((), ());
                     ()
@@ -8621,74 +8667,74 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v26: Option<i64> = patternInput.5.clone();
                 let v25: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v24: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v23: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v22: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v21: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method159(
+                Documents::method19(Documents::method166(
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
                     v26.clone(),
-                    Documents::method7(v21, v22, v23, v24, v25, v26),
-                    Documents::method33(),
-                    v0_1,
+                    Documents::method8(v21, v22, v23, v24, v25, v26),
+                    Documents::method31(),
                     v1_1,
+                    v0_1,
                     v2,
                 ))
             };
         }
-        pub fn method162(v0_1: string, v1_1: string, v2: u64) -> string {
+        pub fn method169(v0_1: string, v1_1: string, v2: u64) -> string {
             let v4: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v11: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v4.clone(), string("{ "), ());
                 ()
             };
             let v20: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("old_path")), ());
+                Documents::closure8(v4.clone(), string("old_path"), ());
                 ()
             };
             let v29: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v37: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v4.clone(), v0_1, ());
                 ()
             };
             let v46: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v55: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("new_path")), ());
+                Documents::closure8(v4.clone(), string("new_path"), ());
                 ()
             };
             let v63: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v71: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v4.clone(), v1_1, ());
                 ()
             };
             let v79: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v88: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("result")), ());
+                Documents::closure8(v4.clone(), string("result"), ());
                 ()
             };
             let v96: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v104: () = {
@@ -8696,12 +8742,12 @@ mod module_2555ccf7 {
                 ()
             };
             let v113: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v4.clone(), string(" }"), ());
                 ()
             };
             v4.l0.get().clone()
         }
-        pub fn method161(
+        pub fn method168(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -8714,8 +8760,8 @@ mod module_2555ccf7 {
             v9: string,
             v10: u64,
         ) -> string {
-            let v11: string = Documents::method162(v8, v9, v10);
-            Documents::method17(sprintf!(
+            let v11: string = Documents::method169(v8, v9, v10);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -8724,8 +8770,8 @@ mod module_2555ccf7 {
                 v11
             ))
         }
-        pub fn closure76(v0_1: string, v1_1: string, v2: u64, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_1) {
+        pub fn closure75(v0_1: string, v1_1: string, v2: u64, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_1) {
                 let v7: () = {
                     Documents::closure6((), ());
                     ()
@@ -8737,73 +8783,71 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v26: Option<i64> = patternInput.5.clone();
                 let v25: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v24: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v23: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v22: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v21: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method161(
+                Documents::method19(Documents::method168(
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
                     v26.clone(),
-                    Documents::method7(v21, v22, v23, v24, v25, v26),
-                    Documents::method61(),
-                    v0_1,
+                    Documents::method8(v21, v22, v23, v24, v25, v26),
+                    Documents::method62(),
                     v1_1,
+                    v0_1,
                     v2,
                 ))
             };
         }
-        pub fn method155(v0_1: string, v1_1: string) {
-            let v3: string = Documents::method156(v0_1);
-            let v5: Result<u64, std::io::Error> = std::fs::copy(&*v1_1.clone(), &*v3);
-            let v6 = Documents::method65();
-            let v18: Result<u64, std::string::String> = v5.map_err(|x| v6(x));
-            let v21 = Documents::method157();
-            let v22 = Documents::method158();
-            let v23: Documents::US34 = match &v18 {
-                Err(v18_1_0) => v22(v18_1_0.clone()),
-                Ok(v18_0_0) => v21(v18_0_0.clone()),
+        pub fn method163(v0_1: string, v1_1: string) {
+            let v4: Result<u64, std::io::Error> = std::fs::copy(&*v1_1.clone(), &*v0_1.clone());
+            let v5 = Documents::method65();
+            let v17: Result<u64, std::string::String> = v4.map_err(|x| v5(x));
+            let v20 = Documents::method164();
+            let v21 = Documents::method165();
+            let v22: Documents::US34 = match &v17 {
+                Err(v17_1_0) => v21(v17_1_0.clone()),
+                Ok(v17_0_0) => v20(v17_0_0.clone()),
             };
-            match &v23 {
-                Documents::US34::US34_0(v23_0_0) => {
-                    let v27: () = {
-                        Documents::closure76(v1_1.clone(), v3.clone(), v23_0_0.clone(), ());
+            match &v22 {
+                Documents::US34::US34_0(v22_0_0) => {
+                    let v26: () = {
+                        Documents::closure75(v0_1.clone(), v1_1.clone(), v22_0_0.clone(), ());
                         ()
                     };
                     ()
                 }
-                Documents::US34::US34_1(v23_1_0) => {
-                    let v70: () = {
-                        Documents::closure75(v1_1.clone(), v3.clone(), v23_1_0.clone(), ());
+                Documents::US34::US34_1(v22_1_0) => {
+                    let v69: () = {
+                        Documents::closure74(v0_1.clone(), v1_1.clone(), v22_1_0.clone(), ());
                         ()
                     };
                     ()
                 }
             }
-            ();
             ()
         }
-        pub fn method164(v0_1: Vec<u8>) -> Vec<u8> {
+        pub fn method171(v0_1: Vec<u8>) -> Vec<u8> {
             v0_1
         }
-        pub fn method165(v0_1: i32, v1_1: LrcPtr<Documents::Mut7>) -> bool {
-            v1_1.l0.get().clone() < v0_1
+        pub fn method172(v0_1: i32, v1_1: LrcPtr<Documents::Mut7>) -> bool {
+            (v1_1.l0.get().clone()) < (v0_1)
         }
-        pub fn method166(v0_1: string) -> string {
+        pub fn method173(v0_1: string) -> string {
             v0_1
         }
-        pub fn method167(
+        pub fn method174(
             v0_1: std::sync::MutexGuard<std::process::ChildStdin>,
         ) -> std::sync::MutexGuard<std::process::ChildStdin> {
             v0_1
         }
-        pub fn closure79(
+        pub fn closure78(
             v0_1: string,
             v1_1: std::sync::Arc<std::sync::Mutex<std::process::ChildStdin>>,
         ) {
@@ -8813,35 +8857,32 @@ mod module_2555ccf7 {
                 std::sync::PoisonError<std::sync::MutexGuard<std::process::ChildStdin>>,
             > = v3.lock();
             let v8: std::sync::MutexGuard<std::process::ChildStdin> = v5.unwrap();
-            let v20: string = Documents::method166(v0_1);
+            let v20: string = Documents::method173(v0_1);
             let v22: &[u8] = v20.as_bytes();
-            let v23: std::sync::MutexGuard<std::process::ChildStdin> = Documents::method167(v8);
+            let v23: std::sync::MutexGuard<std::process::ChildStdin> = Documents::method174(v8);
             let v25: bool = true;
             let mut v23 = v23;
             let v27: bool = true;
             std::io::Write::write_all(&mut *v23, v22).unwrap();
             ()
         }
-        pub fn method168(v0_1: i32, v1_1: LrcPtr<Documents::Mut8>) -> bool {
-            v1_1.l0.get().clone() < v0_1
+        pub fn method175(v0_1: i32, v1_1: LrcPtr<Documents::Mut8>) -> bool {
+            (v1_1.l0.get().clone()) < (v0_1)
         }
-        pub fn method169(v0_1: string) -> string {
-            v0_1
-        }
-        pub fn method171(v0_1: i32, v1_1: i32, v2: string) -> string {
+        pub fn method177(v0_1: i32, v1_1: i32, v2: string) -> string {
             let v4: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v11: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v4.clone(), string("{ "), ());
                 ()
             };
             let v20: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("exit_code")), ());
+                Documents::closure8(v4.clone(), string("exit_code"), ());
                 ()
             };
             let v29: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v37: () = {
@@ -8849,15 +8890,15 @@ mod module_2555ccf7 {
                 ()
             };
             let v46: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v55: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("result_len")), ());
+                Documents::closure8(v4.clone(), string("result_len"), ());
                 ()
             };
             let v63: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v71: () = {
@@ -8865,28 +8906,28 @@ mod module_2555ccf7 {
                 ()
             };
             let v79: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v88: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("output_path")), ());
+                Documents::closure8(v4.clone(), string("output_path"), ());
                 ()
             };
             let v96: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v104: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v2), ());
+                Documents::closure8(v4.clone(), v2, ());
                 ()
             };
             let v113: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v4.clone(), string(" }"), ());
                 ()
             };
             v4.l0.get().clone()
         }
-        pub fn method170(
+        pub fn method176(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -8899,8 +8940,8 @@ mod module_2555ccf7 {
             v9: i32,
             v10: string,
         ) -> string {
-            let v11: string = Documents::method171(v8, v9, v10);
-            Documents::method17(sprintf!(
+            let v11: string = Documents::method177(v8, v9, v10);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -8909,8 +8950,8 @@ mod module_2555ccf7 {
                 v11
             ))
         }
-        pub fn closure80(v0_1: string, v1_1: i32, v2: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_2) {
+        pub fn closure79(v0_1: string, v1_1: i32, v2: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_2) {
                 let v7: () = {
                     Documents::closure6((), ());
                     ()
@@ -8922,31 +8963,31 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v26: Option<i64> = patternInput.5.clone();
                 let v25: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v24: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v23: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v22: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v21: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method170(
+                Documents::method19(Documents::method176(
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
                     v26.clone(),
-                    Documents::method7(v21, v22, v23, v24, v25, v26),
-                    Documents::method11(),
+                    Documents::method8(v21, v22, v23, v24, v25, v26),
+                    Documents::method12(),
                     v1_1,
                     length(v2),
                     v0_1,
                 ))
             };
         }
-        pub fn method163(v0_1: string, v1_1: string, v2: string, v3: string) -> Documents::US35 {
+        pub fn method170(v0_1: string, v1_1: string, v2: string, v3: string) -> Documents::US35 {
             let v7: Result<Vec<u8>, std::io::Error> = std::fs::read(&*v3);
-            let v45: Vec<u8> = Documents::method164(v7.unwrap());
+            let v45: Vec<u8> = Documents::method171(v7.unwrap());
             let v47: Result<std::string::String, std::string::FromUtf8Error> =
                 std::string::String::from_utf8(v45);
             let v50: std::string::String = v47.unwrap();
@@ -8956,39 +8997,39 @@ mod module_2555ccf7 {
                 -1_i32,
                 0_i32,
             );
-            let v89: i32 = count_2(v86.clone());
+            let v89: i32 = get_Count(v86.clone());
             let v90: Array<string> = new_init(&string(""), v89);
             let v91: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                 l0: MutCell::new(0_i32),
             });
-            while Documents::method58(v89, v91.clone()) {
+            while Documents::method59(v89, v91.clone()) {
                 let v93: i32 = v91.l0.get().clone();
                 let v96: string = trim(v86[v93].clone());
                 v90.get_mut()[v93 as usize] = v96;
                 {
-                    let v99: i32 = v93 + 1_i32;
+                    let v99: i32 = (v93) + 1_i32;
                     v91.l0.set(v99);
                     ()
                 }
             }
             {
-                let v100: i32 = count_2(v90.clone());
+                let v100: i32 = get_Count(v90.clone());
                 let v101: Array<string> = new_init(&string(""), v100);
                 let v102: LrcPtr<Documents::Mut7> = LrcPtr::new(Documents::Mut7 {
                     l0: MutCell::new(0_i32),
                     l1: MutCell::new(0_i32),
                 });
-                while Documents::method165(v100, v102.clone()) {
+                while Documents::method172(v100, v102.clone()) {
                     let v104: i32 = v102.l0.get().clone();
                     let v105: i32 = v102.l1.get().clone();
                     let v106: string = v90[v104].clone();
-                    let v112: i32 = if string("") != v106.clone() {
+                    let v112: i32 = if string("") != (v106.clone()) {
                         v101.get_mut()[v105 as usize] = v106;
-                        v105 + 1_i32
+                        (v105) + 1_i32
                     } else {
                         v105
                     };
-                    let v113: i32 = v104 + 1_i32;
+                    let v113: i32 = (v104) + 1_i32;
                     v102.l0.set(v113);
                     v102.l1.set(v112);
                     ()
@@ -8999,12 +9040,12 @@ mod module_2555ccf7 {
                     let v116: LrcPtr<Documents::Mut6> = LrcPtr::new(Documents::Mut6 {
                         l0: MutCell::new(0_i32),
                     });
-                    while Documents::method58(v114, v116.clone()) {
+                    while Documents::method59(v114, v116.clone()) {
                         let v118: i32 = v116.l0.get().clone();
                         let v119: string = v101[v118].clone();
                         v115.get_mut()[v118 as usize] = v119;
                         {
-                            let v120: i32 = v118 + 1_i32;
+                            let v120: i32 = (v118) + 1_i32;
                             v116.l0.set(v120);
                             ()
                         }
@@ -9018,119 +9059,124 @@ mod module_2555ccf7 {
                                         let v115 = v115.clone();
                                         move |i: i32| v115[i].clone()
                                     }),
-                                    rangeNumeric(0_i32, 1_i32, count_2(v115.clone()) - 1_i32),
+                                    rangeNumeric(0_i32, 1_i32, (get_Count(v115.clone())) - 1_i32),
                                 )
                             }
                         }));
-                        let v134: string =
-                            sprintf!("{}\n\n", join(Documents::method135(), toArray_1(_v121)));
-                        let patternInput: (i32, string) = Documents::method82(
-                            sprintf!(
-                                "{} {}",
-                                Documents::method25(
+                        let v136: string = concat(new_array(&[
+                            join(Documents::method134(), toArray_1(_v121)),
+                            string("\n\n"),
+                        ]));
+                        let patternInput: (i32, string) = Documents::method81(
+                            concat(new_array(&[
+                                Documents::method26(
                                     v0_1,
-                                    sprintf!(
-                                        "../vault/deps/hangulize/cmd/hangulize/hangulize{}",
+                                    concat(new_array(&[
+                                        string("../vault/deps/hangulize/cmd/hangulize/hangulize"),
                                         if cfg!(windows) {
                                             string(".exe")
                                         } else {
                                             string("")
-                                        }
-                                    )
+                                        },
+                                    ])),
                                 ),
-                                v1_1
-                            ),
+                                string(" "),
+                                v1_1,
+                            ])),
                             None::<CancellationToken>,
                             new_empty::<(string, string)>(),
                             None::<Func1<(i32, string, bool), Arc<Async<()>>>>,
                             Some(Func1::new({
-                                let v134 = v134.clone();
+                                let v136 = v136.clone();
                                 move |v: std::sync::Arc<
                                     std::sync::Mutex<std::process::ChildStdin>,
                                 >| {
-                                    Documents::closure79(v134.clone(), v)
+                                    Documents::closure78(v136.clone(), v)
                                 }
                             })),
                             true,
                             None::<string>,
                         );
-                        let v178: i32 = patternInput.0.clone();
-                        let v180: Array<string> =
+                        let v180: i32 = patternInput.0.clone();
+                        let v182: Array<string> =
                             split(patternInput.1.clone(), string("\n"), -1_i32, 0_i32);
-                        let v183: i32 = count_2(v180.clone());
-                        let v185: LrcPtr<Documents::Mut8> = LrcPtr::new(Documents::Mut8 {
+                        let v185: i32 = get_Count(v182.clone());
+                        let v187: LrcPtr<Documents::Mut8> = LrcPtr::new(Documents::Mut8 {
                             l0: MutCell::new(0_i32),
                             l1: MutCell::new(string("")),
                             l2: MutCell::new(0_i32),
                             l3: MutCell::new(0_i32),
                         });
-                        while Documents::method168(v100, v185.clone()) {
-                            let v187: i32 = v185.l0.get().clone();
-                            let matchValue: string = v185.l1.get().clone();
-                            let matchValue_1: i32 = v185.l2.get().clone();
-                            let v190: i32 = v185.l3.get().clone();
-                            let v189: i32 = matchValue_1;
-                            let v188: string = matchValue;
+                        while Documents::method175(v100, v187.clone()) {
+                            let v189: i32 = v187.l0.get().clone();
+                            let matchValue: string = v187.l1.get().clone();
+                            let matchValue_1: i32 = v187.l2.get().clone();
+                            let v192: i32 = v187.l3.get().clone();
+                            let v191: i32 = matchValue_1;
+                            let v190: string = matchValue;
                             let patternInput_2: (string, i32, i32) =
-                                if v90[v187].clone() == string("") {
-                                    (sprintf!("{}\n", v188.clone()), v189 + 1_i32, v190 + 1_i32)
-                                } else {
-                                    let v196: i32 = v189 - v190;
+                                if (v90[v189].clone()) == string("") {
                                     (
-                                        if v196 >= v183 {
-                                            v188.clone()
+                                        concat(new_array(&[v190.clone(), string("\n")])),
+                                        (v191) + 1_i32,
+                                        (v192) + 1_i32,
+                                    )
+                                } else {
+                                    let v198: i32 = (v191) - (v192);
+                                    (
+                                        if (v198) >= (v185) {
+                                            v190.clone()
                                         } else {
-                                            let v198: string = v180[v196].clone();
-                                            if v196 == v183 - 1_i32 {
-                                                sprintf!("{}{}", v188.clone(), v198.clone())
+                                            let v200: string = v182[v198].clone();
+                                            if (v198) == ((v185) - 1_i32) {
+                                                concat(new_array(&[v190.clone(), v200.clone()]))
                                             } else {
-                                                sprintf!("{}{}\n", v188, v198)
+                                                concat(new_array(&[v190, v200, string("\n")]))
                                             }
                                         },
-                                        v189 + 1_i32,
-                                        v190,
+                                        (v191) + 1_i32,
+                                        v192,
                                     )
                                 };
-                            let v211: i32 = v187 + 1_i32;
-                            v185.l0.set(v211);
-                            v185.l1.set(patternInput_2.0.clone());
-                            v185.l2.set(patternInput_2.1.clone());
-                            v185.l3.set(patternInput_2.2.clone());
+                            let v213: i32 = (v189) + 1_i32;
+                            v187.l0.set(v213);
+                            v187.l1.set(patternInput_2.0.clone());
+                            v187.l2.set(patternInput_2.1.clone());
+                            v187.l3.set(patternInput_2.2.clone());
                             ()
                         }
                         {
-                            let matchValue_3: string = v185.l1.get().clone();
-                            let matchValue_4: i32 = v185.l2.get().clone();
-                            let matchValue_5: i32 = v185.l3.get().clone();
-                            let v212: string = matchValue_3;
-                            std::fs::write(&*v2.clone(), &*v212.clone()).unwrap();
-                            ();
+                            let matchValue_3: string = v187.l1.get().clone();
+                            let matchValue_4: i32 = v187.l2.get().clone();
+                            let matchValue_5: i32 = v187.l3.get().clone();
+                            let v214: string = matchValue_3;
+                            std::fs::write(&*v2.clone(), &*v214.clone()).unwrap();
                             {
-                                let v220: () = {
-                                    Documents::closure80(v2, v178, v212.clone(), ());
+                                let v221: () = {
+                                    Documents::closure79(v2, v180, v214.clone(), ());
                                     ()
                                 };
-                                Documents::US35::US35_0(v178, v212)
+                                Documents::US35::US35_0(v180, v214)
                             }
                         }
                     }
                 }
             }
         }
-        pub fn method173(v0_1: i32, v1_1: string) -> string {
+        pub fn method179(v0_1: i32, v1_1: string) -> string {
             let v3: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v10: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v3.clone(), string("{ "), ());
                 ()
             };
             let v19: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("exit_code")), ());
+                Documents::closure8(v3.clone(), string("exit_code"), ());
                 ()
             };
             let v28: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v36: () = {
@@ -9138,28 +9184,28 @@ mod module_2555ccf7 {
                 ()
             };
             let v45: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v3.clone(), string("; "), ());
                 ()
             };
             let v54: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("result")), ());
+                Documents::closure8(v3.clone(), string("result"), ());
                 ()
             };
             let v62: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v70: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v3.clone(), v1_1, ());
                 ()
             };
             let v79: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v3.clone(), string(" }"), ());
                 ()
             };
             v3.l0.get().clone()
         }
-        pub fn method172(
+        pub fn method178(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -9171,8 +9217,8 @@ mod module_2555ccf7 {
             v8: i32,
             v9: string,
         ) -> string {
-            let v10: string = Documents::method173(v8, v9);
-            Documents::method17(sprintf!(
+            let v10: string = Documents::method179(v8, v9);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -9181,8 +9227,8 @@ mod module_2555ccf7 {
                 v10
             ))
         }
-        pub fn closure81(v0_1: string, v1_1: i32, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_2) {
+        pub fn closure80(v0_1: string, v1_1: i32, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_2) {
                 let v6: () = {
                     Documents::closure6((), ());
                     ()
@@ -9194,28 +9240,28 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v25: Option<i64> = patternInput.5.clone();
                 let v24: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v23: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v22: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v21: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v20: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method172(
+                Documents::method19(Documents::method178(
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
-                    Documents::method7(v20, v21, v22, v23, v24, v25),
-                    Documents::method11(),
+                    Documents::method8(v20, v21, v22, v23, v24, v25),
+                    Documents::method12(),
                     v1_1,
                     v0_1,
                 ))
             };
         }
-        pub fn closure78(
+        pub fn closure77(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -9223,17 +9269,17 @@ mod module_2555ccf7 {
             v4: string,
             v5: string,
         ) -> Documents::US32 {
-            let patternInput: (string, string) = Documents::method148(v5, v4.clone(), v0_1);
+            let patternInput: (string, string) = Documents::method156(v5, v4.clone(), v0_1);
             let v7: string = patternInput.1.clone();
             let v6: string = patternInput.0.clone();
-            if if if Documents::method152(v6.clone()) == false {
+            if if if (Documents::method160(v6.clone())) == false {
                 true
             } else {
-                Documents::method152(v7.clone()) == false
+                (Documents::method160(v7.clone())) == false
             } {
                 false
             } else {
-                let v13: string = Documents::method38(v6.clone());
+                let v13: string = Documents::method36(v6.clone());
                 let v15: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v13);
                 let v18: std::fs::File = v15.unwrap();
                 let v31: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v18);
@@ -9256,14 +9302,14 @@ mod module_2555ccf7 {
                         let v51: Result<usize, std::io::Error> =
                             std::io::Read::read(&mut v33, &mut v45);
                         let v63: usize = v51.unwrap();
-                        if v63 == v41 {
+                        if (v63) == (v41) {
                             let v70: bool = true;
                             break;
                             ()
                         }
                         {
                             let v71: usize = v63;
-                            let v86: &_ = if v71 == v45.len() {
+                            let v86: &_ = if (v71) == (v45.len()) {
                                 &v45[v41..]
                             } else {
                                 &v45[v41..v71]
@@ -9308,154 +9354,161 @@ mod module_2555ccf7 {
                                             let v115 = v115.clone();
                                             move |i: i32| v115[i].clone()
                                         }),
-                                        rangeNumeric(0_i32, 1_i32, count_2(v115.clone()) - 1_i32),
+                                        rangeNumeric(
+                                            0_i32,
+                                            1_i32,
+                                            (get_Count(v115.clone())) - 1_i32,
+                                        ),
                                     )
                                 }
                             }));
-                            let v123: string = Documents::method149();
-                            let v129: string = join(
-                                if v123.clone() == string("\n") {
-                                    Documents::method60(v123.clone())
+                            let v125: string = Documents::method157();
+                            let v131: string = join(
+                                if (v125.clone()) == string("\n") {
+                                    Documents::method61(v125.clone())
                                 } else {
-                                    v123
+                                    v125
                                 },
                                 toArray_1(_v116),
                             );
-                            let v133 = Documents::method65();
-                            let v136: Result<string, std::string::String> =
-                                Ok::<string, std::io::Error>(v129).map_err(|x| v133(x));
-                            let v148 = Documents::method150();
-                            let v149 = Documents::method151();
-                            let v151: Documents::US33 = match v136 {
-                                Ok(x) => v148(x),
-                                Err(e) => v149(e),
+                            let v135 = Documents::method65();
+                            let v138: Result<string, std::string::String> =
+                                Ok::<string, std::io::Error>(v131).map_err(|x| v135(x));
+                            let v150 = Documents::method158();
+                            let v151 = Documents::method159();
+                            let v153: Documents::US33 = match v138 {
+                                Ok(x) => v150(x),
+                                Err(e) => v151(e),
                             };
-                            let v159: string = match &v151 {
-                                Documents::US33::US33_0(v151_0_0) => v151_0_0.clone(),
-                                Documents::US33::US33_1(v151_1_0) => panic!(
+                            let v161: string = match &v153 {
+                                Documents::US33::US33_0(v153_0_0) => v153_0_0.clone(),
+                                Documents::US33::US33_1(v153_1_0) => panic!(
                                     "{}",
                                     sprintf!(
                                         "resultm.get / Result value was Error: {}",
-                                        v151_1_0.clone()
+                                        v153_1_0.clone()
                                     ),
                                 ),
                             };
-                            let v160: string = Documents::method38(v7.clone());
-                            let v162: Result<std::fs::File, std::io::Error> =
-                                std::fs::File::open(&*v160);
-                            let v165: std::fs::File = v162.unwrap();
-                            let v178: std::io::BufReader<std::fs::File> =
-                                std::io::BufReader::new(v165);
-                            let v180: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                                std::io::BufReader::new(v178);
-                            let v182: bool = true;
-                            let mut v180 = v180;
+                            let v162: string = Documents::method36(v7.clone());
+                            let v164: Result<std::fs::File, std::io::Error> =
+                                std::fs::File::open(&*v162);
+                            let v167: std::fs::File = v164.unwrap();
+                            let v180: std::io::BufReader<std::fs::File> =
+                                std::io::BufReader::new(v167);
+                            let v182: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                                std::io::BufReader::new(v180);
+                            let v184: bool = true;
+                            let mut v182 = v182;
                             let result: sha2::Sha256 = sha2::Digest::new();
                             {
-                                let v185: sha2::Sha256 = result;
-                                let v187: bool = true;
-                                let mut v185 = v185;
-                                let v188: usize = 0_i32 as usize;
-                                let v192: _ = [0_u8; 1024];
-                                let v194: bool = true;
+                                let v187: sha2::Sha256 = result;
+                                let v189: bool = true;
+                                let mut v187 = v187;
+                                let v190: usize = 0_i32 as usize;
+                                let v194: _ = [0_u8; 1024];
+                                let v196: bool = true;
                                 loop {
                                     // rust.loop;
-                                    let v196: bool = true;
-                                    let mut v192 = v192;
-                                    let v198: Result<usize, std::io::Error> =
-                                        std::io::Read::read(&mut v180, &mut v192);
-                                    let v210: usize = v198.unwrap();
-                                    if v210 == v188 {
-                                        let v217: bool = true;
+                                    let v198: bool = true;
+                                    let mut v194 = v194;
+                                    let v200: Result<usize, std::io::Error> =
+                                        std::io::Read::read(&mut v182, &mut v194);
+                                    let v212: usize = v200.unwrap();
+                                    if (v212) == (v190) {
+                                        let v219: bool = true;
                                         break;
                                         ()
                                     }
                                     {
-                                        let v218: usize = v210;
-                                        let v233: &_ = if v218 == v192.len() {
-                                            &v192[v188..]
+                                        let v220: usize = v212;
+                                        let v235: &_ = if (v220) == (v194.len()) {
+                                            &v194[v190..]
                                         } else {
-                                            &v192[v188..v218]
+                                            &v194[v190..v220]
                                         };
-                                        sha2::Digest::update(&mut v185, v233);
+                                        sha2::Digest::update(&mut v187, v235);
                                         {
-                                            let v236: bool = true;
+                                            let v238: bool = true;
                                         } // rust.loop;
-                                        let v238: bool = true;
+                                        let v240: bool = true;
                                     } // rust.loop;
-                                    let v240: bool = true;
+                                    let v242: bool = true;
                                 } // rust.loop;
-                                let v242: bool = true;
+                                let v244: bool = true;
                                 {
                                     // rust.loop;
-                                    let v244: bool = true;
+                                    let v246: bool = true;
                                     {
                                         // rust.loop;
-                                        let v246: &[u8] = &sha2::Digest::finalize(v185);
-                                        let v248: Vec<u8> =
-                                            v246.iter().map(|x| *x).collect::<Vec<_>>();
-                                        let v250: bool = true;
-                                        let _vec_map: Vec<_> = v248
+                                        let v248: &[u8] = &sha2::Digest::finalize(v187);
+                                        let v250: Vec<u8> =
+                                            v248.iter().map(|x| *x).collect::<Vec<_>>();
+                                        let v252: bool = true;
+                                        let _vec_map: Vec<_> = v250
                                             .into_iter()
                                             .map(|x| {
                                                 //;
-                                                let v252: u8 = x;
-                                                let v254: std::string::String =
-                                                    format!("{:02x}", v252);
-                                                let v256: string =
-                                                    fable_library_rust::String_::fromString(v254);
-                                                let v258: bool = true;
-                                                v256
+                                                let v254: u8 = x;
+                                                let v256: std::string::String =
+                                                    format!("{:02x}", v254);
+                                                let v258: string =
+                                                    fable_library_rust::String_::fromString(v256);
+                                                let v260: bool = true;
+                                                v258
                                             })
                                             .collect::<Vec<_>>();
-                                        let v260: Vec<string> = _vec_map;
-                                        let v262: Array<string> =
-                                            fable_library_rust::NativeArray_::array_from(v260);
-                                        let _v263: LrcPtr<dyn IEnumerable_1<string>> =
+                                        let v262: Vec<string> = _vec_map;
+                                        let v264: Array<string> =
+                                            fable_library_rust::NativeArray_::array_from(v262);
+                                        let _v265: LrcPtr<dyn IEnumerable_1<string>> =
                                             delay(Func0::new({
-                                                let v262 = v262.clone();
+                                                let v264 = v264.clone();
                                                 move || {
                                                     map_1(
                                                         Func1::new({
-                                                            let v262 = v262.clone();
-                                                            move |i_1: i32| v262[i_1].clone()
+                                                            let v264 = v264.clone();
+                                                            move |i_1: i32| v264[i_1].clone()
                                                         }),
                                                         rangeNumeric(
                                                             0_i32,
                                                             1_i32,
-                                                            count_2(v262.clone()) - 1_i32,
+                                                            (get_Count(v264.clone())) - 1_i32,
                                                         ),
                                                     )
                                                 }
                                             }));
-                                        let v270: string = Documents::method149();
-                                        let v276: string = join(
-                                            if v270.clone() == string("\n") {
-                                                Documents::method60(v270.clone())
+                                        let v274: string = Documents::method157();
+                                        let v280: string = join(
+                                            if (v274.clone()) == string("\n") {
+                                                Documents::method61(v274.clone())
                                             } else {
-                                                v270
+                                                v274
                                             },
-                                            toArray_1(_v263),
+                                            toArray_1(_v265),
                                         );
-                                        let v280 = Documents::method65();
-                                        let v283: Result<string, std::string::String> =
-                                            Ok::<string, std::io::Error>(v276).map_err(|x| v280(x));
-                                        let v295 = Documents::method150();
-                                        let v296 = Documents::method151();
-                                        let v298: Documents::US33 = match v283 {
-                                            Ok(x) => v295(x),
-                                            Err(e) => v296(e),
+                                        let v284 = Documents::method65();
+                                        let v287: Result<string, std::string::String> =
+                                            Ok::<string, std::io::Error>(v280).map_err(|x| v284(x));
+                                        let v299 = Documents::method158();
+                                        let v300 = Documents::method159();
+                                        let v302: Documents::US33 = match v287 {
+                                            Ok(x) => v299(x),
+                                            Err(e) => v300(e),
                                         };
-                                        v159 == match &v298 {
-                                            Documents::US33::US33_0(v298_0_0) => v298_0_0.clone(),
-                                            Documents::US33::US33_1(v298_1_0) => panic!(
-                                                "{}",
-                                                sprintf!(
-                                                    "resultm.get / Result value was Error: {}",
-                                                    v298_1_0.clone()
+                                        (v161)
+                                            == (match &v302 {
+                                                Documents::US33::US33_0(v302_0_0) => {
+                                                    v302_0_0.clone()
+                                                }
+                                                Documents::US33::US33_1(v302_1_0) => panic!(
+                                                    "{}",
+                                                    sprintf!(
+                                                        "resultm.get / Result value was Error: {}",
+                                                        v302_1_0.clone()
+                                                    ),
                                                 ),
-                                            ),
-                                        }
+                                            })
                                     }
                                 }
                             }
@@ -9465,26 +9518,30 @@ mod module_2555ccf7 {
             } {
                 Documents::US32::US32_1
             } else {
-                let v310: Documents::US35 = Documents::method163(v2, v3, v6.clone(), v4);
-                match &v310 {
-                    Documents::US35::US35_0(v310_0_0, v310_0_1) => {
-                        let v312: string = v310_0_1.clone();
-                        let v311: i32 = v310_0_0.clone();
-                        if v311 != 0_i32 {
-                            let v318: () = {
-                                Documents::closure81(v312.clone(), v311, ());
+                let v314: Documents::US35 = Documents::method170(v2, v3, v6.clone(), v4);
+                match &v314 {
+                    Documents::US35::US35_0(v314_0_0, v314_0_1) => {
+                        let v316: string = v314_0_1.clone();
+                        let v315: i32 = v314_0_0.clone();
+                        if (v315) != 0_i32 {
+                            let v322: () = {
+                                Documents::closure80(v316.clone(), v315, ());
                                 ()
                             };
                             Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                                LrcPtr::new((v6.clone(), v312)),
+                                LrcPtr::new((v6.clone(), v316)),
                             ))
                         } else {
-                            if Documents::method152(v6.clone()) {
-                                Documents::method155(v7, v6.clone())
+                            if Documents::method160(v6.clone()) {
+                                Documents::method163(v7.clone(), v6.clone())
                             } else {
                                 panic!(
                                     "{}",
-                                    sprintf!("documents.files_fn / {} should exist", v6.clone()),
+                                    concat(new_array(&[
+                                        string("documents.files_fn / "),
+                                        v6.clone(),
+                                        string(" should exist")
+                                    ])),
                                 )
                             }
                             Documents::US32::US32_0(Ok::<string, LrcPtr<(string, string)>>(
@@ -9492,15 +9549,15 @@ mod module_2555ccf7 {
                             ))
                         }
                     }
-                    Documents::US35::US35_1(v310_1_0, v310_1_1) => {
+                    Documents::US35::US35_1(v314_1_0, v314_1_1) => {
                         Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                            LrcPtr::new((v6.clone(), v310_1_1.clone())),
+                            LrcPtr::new((v6.clone(), v314_1_1.clone())),
                         ))
                     }
                 }
             }
         }
-        pub fn closure77(
+        pub fn closure76(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -9514,7 +9571,7 @@ mod module_2555ccf7 {
                 let v3 = v3.clone();
                 let v4 = v4.clone();
                 move |v: string| {
-                    Documents::closure78(
+                    Documents::closure77(
                         v0_1.clone(),
                         v1_1.clone(),
                         v2.clone(),
@@ -9525,20 +9582,20 @@ mod module_2555ccf7 {
                 }
             })
         }
-        pub fn method176(v0_1: i32, v1_1: string, v2: string) -> string {
+        pub fn method182(v0_1: i32, v1_1: string, v2: string) -> string {
             let v4: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v11: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v4.clone(), string("{ "), ());
                 ()
             };
             let v20: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("exit_code")), ());
+                Documents::closure8(v4.clone(), string("exit_code"), ());
                 ()
             };
             let v29: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v37: () = {
@@ -9546,44 +9603,44 @@ mod module_2555ccf7 {
                 ()
             };
             let v46: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v55: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("output_path")), ());
+                Documents::closure8(v4.clone(), string("output_path"), ());
                 ()
             };
             let v63: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v71: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v4.clone(), v1_1, ());
                 ()
             };
             let v79: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v4.clone(), string("; "), ());
                 ()
             };
             let v88: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string("result")), ());
+                Documents::closure8(v4.clone(), string("result"), ());
                 ()
             };
             let v96: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v4.clone(), string(" = "), ());
                 ()
             };
             let v104: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", v2), ());
+                Documents::closure8(v4.clone(), v2, ());
                 ()
             };
             let v113: () = {
-                Documents::closure8(v4.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v4.clone(), string(" }"), ());
                 ()
             };
             v4.l0.get().clone()
         }
-        pub fn method175(
+        pub fn method181(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -9596,8 +9653,8 @@ mod module_2555ccf7 {
             v9: string,
             v10: string,
         ) -> string {
-            let v11: string = Documents::method176(v8, v9, v10);
-            Documents::method17(sprintf!(
+            let v11: string = Documents::method182(v8, v9, v10);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -9606,8 +9663,8 @@ mod module_2555ccf7 {
                 v11
             ))
         }
-        pub fn closure84(v0_1: string, v1_1: string, v2: i32, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_3) {
+        pub fn closure83(v0_1: string, v1_1: string, v2: i32, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_3) {
                 let v7: () = {
                     Documents::closure6((), ());
                     ()
@@ -9619,65 +9676,58 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v26: Option<i64> = patternInput.5.clone();
                 let v25: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v24: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v23: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v22: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v21: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method175(
+                Documents::method19(Documents::method181(
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
                     v26.clone(),
-                    Documents::method7(v21, v22, v23, v24, v25, v26),
-                    Documents::method33(),
+                    Documents::method8(v21, v22, v23, v24, v25, v26),
+                    Documents::method31(),
                     v2,
                     v0_1,
                     v1_1,
                 ))
             };
         }
-        pub fn method174(
+        pub fn method180(
             v0_1: bool,
             v1_1: string,
             v2: string,
             v3: string,
             v4: string,
         ) -> Documents::US35 {
-            let patternInput: (i32, string) = Documents::method82(
+            let v61: string = if string("html") == (v4.clone()) {
+                string("--set html.css.add \\\"\' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
+            } else {
+                if string("pdf") == (v4.clone()) {
+                    append((append(string("--set tex.paper.size a4paper tex.template.add \"\\pagenumbering{gobble}\""),
+                                       (if (v0_1) == false {
+                                            string("")
+                                        } else {
+                                            string(" tex.template.add \"\\usepackage{polyglossia}\" tex.template.add \"\\setmainlanguage{korean}\" tex.template.add \"\\setmainfont{NanumGothicCoding}\" tex.font.size 13")
+                                        }))),
+                               string(" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\""))
+                } else {
+                    if string("epub") == (v4.clone()) {
+                        string("--set epub.version 3 html.css.add \\\"\'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
+                    } else {
+                        string("")
+                    }
+                }
+            };
+            let patternInput: (i32, string) = Documents::method81(
                 append(
-                    sprintf!("crowbook --verbose --to {}", v4.clone()),
-                    sprintf!(
-                        " --single \"{}\" --output \"{}\" {}",
-                        v2,
-                        v1_1.clone(),
-                        if string("html") == v4.clone() {
-                            string("--set html.css.add \\\"\' body { color: #e8e6e3; background-color: #202324; } a { color: #989693; } pre { background-color: #1b1b1b; padding: 10px; } \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
-                        } else {
-                            if string("pdf") == v4.clone() {
-                                append(append(string("--set tex.paper.size a4paper tex.template.add \"\\pagenumbering{gobble}\""),
-                                                                          (if v0_1
-                                                                                  ==
-                                                                                  false
-                                                                              {
-                                                                               string("")
-                                                                           } else {
-                                                                               string(" tex.template.add \"\\usepackage{polyglossia}\" tex.template.add \"\\setmainlanguage{korean}\" tex.template.add \"\\setmainfont{NanumGothicCoding}\" tex.font.size 13")
-                                                                           })),
-                                                                   string(" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\""))
-                            } else {
-                                if string("epub") == v4 {
-                                    string("--set epub.version 3 html.css.add \\\"\'  body { color: #e8e6e3; background-color: #202324; }  a { color: #989693; }  \'\\\" rendering.num_depth 6 rendering.highlight.theme \\\"Solarized (dark)\\\"")
-                                } else {
-                                    string("")
-                                }
-                            }
-                        }
-                    ),
+                    (concat(new_array(&[string("crowbook --verbose --to "), v4]))),
+                    sprintf!(" --single \"{}\" --output \"{}\" {}", v2, v1_1.clone(), v61),
                 ),
                 None::<CancellationToken>,
                 new_empty::<(string, string)>(),
@@ -9688,34 +9738,34 @@ mod module_2555ccf7 {
             );
             let v75: string = patternInput.1.clone();
             let v74: i32 = patternInput.0.clone();
-            if contains(v75.clone(), string("ERROR")) == false {
+            if (contains(v75.clone(), string("ERROR"))) == false {
                 Documents::US35::US35_0(v74, v75.clone())
             } else {
                 let v84: () = {
-                    Documents::closure84(v1_1, v75.clone(), v74, ());
+                    Documents::closure83(v1_1, v75.clone(), v74, ());
                     ()
                 };
                 Documents::US35::US35_1(v74, v75)
             }
         }
-        pub fn closure83(
+        pub fn closure82(
             v0_1: string,
             v1_1: string,
             v2: bool,
             v3: string,
             v4: string,
         ) -> Documents::US32 {
-            let patternInput: (string, string) = Documents::method148(v4.clone(), v3.clone(), v0_1);
+            let patternInput: (string, string) = Documents::method156(v4.clone(), v3.clone(), v0_1);
             let v6: string = patternInput.1.clone();
             let v5: string = patternInput.0.clone();
-            if if if Documents::method152(v5.clone()) == false {
+            if if if (Documents::method160(v5.clone())) == false {
                 true
             } else {
-                Documents::method152(v6.clone()) == false
+                (Documents::method160(v6.clone())) == false
             } {
                 false
             } else {
-                let v12: string = Documents::method38(v5.clone());
+                let v12: string = Documents::method36(v5.clone());
                 let v14: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v12);
                 let v17: std::fs::File = v14.unwrap();
                 let v30: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v17);
@@ -9738,14 +9788,14 @@ mod module_2555ccf7 {
                         let v50: Result<usize, std::io::Error> =
                             std::io::Read::read(&mut v32, &mut v44);
                         let v62: usize = v50.unwrap();
-                        if v62 == v40 {
+                        if (v62) == (v40) {
                             let v69: bool = true;
                             break;
                             ()
                         }
                         {
                             let v70: usize = v62;
-                            let v85: &_ = if v70 == v44.len() {
+                            let v85: &_ = if (v70) == (v44.len()) {
                                 &v44[v40..]
                             } else {
                                 &v44[v40..v70]
@@ -9790,154 +9840,161 @@ mod module_2555ccf7 {
                                             let v114 = v114.clone();
                                             move |i: i32| v114[i].clone()
                                         }),
-                                        rangeNumeric(0_i32, 1_i32, count_2(v114.clone()) - 1_i32),
+                                        rangeNumeric(
+                                            0_i32,
+                                            1_i32,
+                                            (get_Count(v114.clone())) - 1_i32,
+                                        ),
                                     )
                                 }
                             }));
-                            let v122: string = Documents::method149();
-                            let v128: string = join(
-                                if v122.clone() == string("\n") {
-                                    Documents::method60(v122.clone())
+                            let v124: string = Documents::method157();
+                            let v130: string = join(
+                                if (v124.clone()) == string("\n") {
+                                    Documents::method61(v124.clone())
                                 } else {
-                                    v122
+                                    v124
                                 },
                                 toArray_1(_v115),
                             );
-                            let v132 = Documents::method65();
-                            let v135: Result<string, std::string::String> =
-                                Ok::<string, std::io::Error>(v128).map_err(|x| v132(x));
-                            let v147 = Documents::method150();
-                            let v148 = Documents::method151();
-                            let v150: Documents::US33 = match v135 {
-                                Ok(x) => v147(x),
-                                Err(e) => v148(e),
+                            let v134 = Documents::method65();
+                            let v137: Result<string, std::string::String> =
+                                Ok::<string, std::io::Error>(v130).map_err(|x| v134(x));
+                            let v149 = Documents::method158();
+                            let v150 = Documents::method159();
+                            let v152: Documents::US33 = match v137 {
+                                Ok(x) => v149(x),
+                                Err(e) => v150(e),
                             };
-                            let v158: string = match &v150 {
-                                Documents::US33::US33_0(v150_0_0) => v150_0_0.clone(),
-                                Documents::US33::US33_1(v150_1_0) => panic!(
+                            let v160: string = match &v152 {
+                                Documents::US33::US33_0(v152_0_0) => v152_0_0.clone(),
+                                Documents::US33::US33_1(v152_1_0) => panic!(
                                     "{}",
                                     sprintf!(
                                         "resultm.get / Result value was Error: {}",
-                                        v150_1_0.clone()
+                                        v152_1_0.clone()
                                     ),
                                 ),
                             };
-                            let v159: string = Documents::method38(v6.clone());
-                            let v161: Result<std::fs::File, std::io::Error> =
-                                std::fs::File::open(&*v159);
-                            let v164: std::fs::File = v161.unwrap();
-                            let v177: std::io::BufReader<std::fs::File> =
-                                std::io::BufReader::new(v164);
-                            let v179: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                                std::io::BufReader::new(v177);
-                            let v181: bool = true;
-                            let mut v179 = v179;
+                            let v161: string = Documents::method36(v6.clone());
+                            let v163: Result<std::fs::File, std::io::Error> =
+                                std::fs::File::open(&*v161);
+                            let v166: std::fs::File = v163.unwrap();
+                            let v179: std::io::BufReader<std::fs::File> =
+                                std::io::BufReader::new(v166);
+                            let v181: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                                std::io::BufReader::new(v179);
+                            let v183: bool = true;
+                            let mut v181 = v181;
                             let result: sha2::Sha256 = sha2::Digest::new();
                             {
-                                let v184: sha2::Sha256 = result;
-                                let v186: bool = true;
-                                let mut v184 = v184;
-                                let v187: usize = 0_i32 as usize;
-                                let v191: _ = [0_u8; 1024];
-                                let v193: bool = true;
+                                let v186: sha2::Sha256 = result;
+                                let v188: bool = true;
+                                let mut v186 = v186;
+                                let v189: usize = 0_i32 as usize;
+                                let v193: _ = [0_u8; 1024];
+                                let v195: bool = true;
                                 loop {
                                     // rust.loop;
-                                    let v195: bool = true;
-                                    let mut v191 = v191;
-                                    let v197: Result<usize, std::io::Error> =
-                                        std::io::Read::read(&mut v179, &mut v191);
-                                    let v209: usize = v197.unwrap();
-                                    if v209 == v187 {
-                                        let v216: bool = true;
+                                    let v197: bool = true;
+                                    let mut v193 = v193;
+                                    let v199: Result<usize, std::io::Error> =
+                                        std::io::Read::read(&mut v181, &mut v193);
+                                    let v211: usize = v199.unwrap();
+                                    if (v211) == (v189) {
+                                        let v218: bool = true;
                                         break;
                                         ()
                                     }
                                     {
-                                        let v217: usize = v209;
-                                        let v232: &_ = if v217 == v191.len() {
-                                            &v191[v187..]
+                                        let v219: usize = v211;
+                                        let v234: &_ = if (v219) == (v193.len()) {
+                                            &v193[v189..]
                                         } else {
-                                            &v191[v187..v217]
+                                            &v193[v189..v219]
                                         };
-                                        sha2::Digest::update(&mut v184, v232);
+                                        sha2::Digest::update(&mut v186, v234);
                                         {
-                                            let v235: bool = true;
+                                            let v237: bool = true;
                                         } // rust.loop;
-                                        let v237: bool = true;
+                                        let v239: bool = true;
                                     } // rust.loop;
-                                    let v239: bool = true;
+                                    let v241: bool = true;
                                 } // rust.loop;
-                                let v241: bool = true;
+                                let v243: bool = true;
                                 {
                                     // rust.loop;
-                                    let v243: bool = true;
+                                    let v245: bool = true;
                                     {
                                         // rust.loop;
-                                        let v245: &[u8] = &sha2::Digest::finalize(v184);
-                                        let v247: Vec<u8> =
-                                            v245.iter().map(|x| *x).collect::<Vec<_>>();
-                                        let v249: bool = true;
-                                        let _vec_map: Vec<_> = v247
+                                        let v247: &[u8] = &sha2::Digest::finalize(v186);
+                                        let v249: Vec<u8> =
+                                            v247.iter().map(|x| *x).collect::<Vec<_>>();
+                                        let v251: bool = true;
+                                        let _vec_map: Vec<_> = v249
                                             .into_iter()
                                             .map(|x| {
                                                 //;
-                                                let v251: u8 = x;
-                                                let v253: std::string::String =
-                                                    format!("{:02x}", v251);
-                                                let v255: string =
-                                                    fable_library_rust::String_::fromString(v253);
-                                                let v257: bool = true;
-                                                v255
+                                                let v253: u8 = x;
+                                                let v255: std::string::String =
+                                                    format!("{:02x}", v253);
+                                                let v257: string =
+                                                    fable_library_rust::String_::fromString(v255);
+                                                let v259: bool = true;
+                                                v257
                                             })
                                             .collect::<Vec<_>>();
-                                        let v259: Vec<string> = _vec_map;
-                                        let v261: Array<string> =
-                                            fable_library_rust::NativeArray_::array_from(v259);
-                                        let _v262: LrcPtr<dyn IEnumerable_1<string>> =
+                                        let v261: Vec<string> = _vec_map;
+                                        let v263: Array<string> =
+                                            fable_library_rust::NativeArray_::array_from(v261);
+                                        let _v264: LrcPtr<dyn IEnumerable_1<string>> =
                                             delay(Func0::new({
-                                                let v261 = v261.clone();
+                                                let v263 = v263.clone();
                                                 move || {
                                                     map_1(
                                                         Func1::new({
-                                                            let v261 = v261.clone();
-                                                            move |i_1: i32| v261[i_1].clone()
+                                                            let v263 = v263.clone();
+                                                            move |i_1: i32| v263[i_1].clone()
                                                         }),
                                                         rangeNumeric(
                                                             0_i32,
                                                             1_i32,
-                                                            count_2(v261.clone()) - 1_i32,
+                                                            (get_Count(v263.clone())) - 1_i32,
                                                         ),
                                                     )
                                                 }
                                             }));
-                                        let v269: string = Documents::method149();
-                                        let v275: string = join(
-                                            if v269.clone() == string("\n") {
-                                                Documents::method60(v269.clone())
+                                        let v273: string = Documents::method157();
+                                        let v279: string = join(
+                                            if (v273.clone()) == string("\n") {
+                                                Documents::method61(v273.clone())
                                             } else {
-                                                v269
+                                                v273
                                             },
-                                            toArray_1(_v262),
+                                            toArray_1(_v264),
                                         );
-                                        let v279 = Documents::method65();
-                                        let v282: Result<string, std::string::String> =
-                                            Ok::<string, std::io::Error>(v275).map_err(|x| v279(x));
-                                        let v294 = Documents::method150();
-                                        let v295 = Documents::method151();
-                                        let v297: Documents::US33 = match v282 {
-                                            Ok(x) => v294(x),
-                                            Err(e) => v295(e),
+                                        let v283 = Documents::method65();
+                                        let v286: Result<string, std::string::String> =
+                                            Ok::<string, std::io::Error>(v279).map_err(|x| v283(x));
+                                        let v298 = Documents::method158();
+                                        let v299 = Documents::method159();
+                                        let v301: Documents::US33 = match v286 {
+                                            Ok(x) => v298(x),
+                                            Err(e) => v299(e),
                                         };
-                                        v158 == match &v297 {
-                                            Documents::US33::US33_0(v297_0_0) => v297_0_0.clone(),
-                                            Documents::US33::US33_1(v297_1_0) => panic!(
-                                                "{}",
-                                                sprintf!(
-                                                    "resultm.get / Result value was Error: {}",
-                                                    v297_1_0.clone()
+                                        (v160)
+                                            == (match &v301 {
+                                                Documents::US33::US33_0(v301_0_0) => {
+                                                    v301_0_0.clone()
+                                                }
+                                                Documents::US33::US33_1(v301_1_0) => panic!(
+                                                    "{}",
+                                                    sprintf!(
+                                                        "resultm.get / Result value was Error: {}",
+                                                        v301_1_0.clone()
+                                                    ),
                                                 ),
-                                            ),
-                                        }
+                                            })
                                     }
                                 }
                             }
@@ -9947,26 +10004,30 @@ mod module_2555ccf7 {
             } {
                 Documents::US32::US32_1
             } else {
-                let v309: Documents::US35 = Documents::method174(v2, v5.clone(), v3, v1_1, v4);
-                match &v309 {
-                    Documents::US35::US35_0(v309_0_0, v309_0_1) => {
-                        let v311: string = v309_0_1.clone();
-                        let v310: i32 = v309_0_0.clone();
-                        if v310 != 0_i32 {
-                            let v317: () = {
-                                Documents::closure81(v311.clone(), v310, ());
+                let v313: Documents::US35 = Documents::method180(v2, v5.clone(), v3, v1_1, v4);
+                match &v313 {
+                    Documents::US35::US35_0(v313_0_0, v313_0_1) => {
+                        let v315: string = v313_0_1.clone();
+                        let v314: i32 = v313_0_0.clone();
+                        if (v314) != 0_i32 {
+                            let v321: () = {
+                                Documents::closure80(v315.clone(), v314, ());
                                 ()
                             };
                             Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                                LrcPtr::new((v5.clone(), v311)),
+                                LrcPtr::new((v5.clone(), v315)),
                             ))
                         } else {
-                            if Documents::method152(v5.clone()) {
-                                Documents::method155(v6, v5.clone())
+                            if Documents::method160(v5.clone()) {
+                                Documents::method163(v6.clone(), v5.clone())
                             } else {
                                 panic!(
                                     "{}",
-                                    sprintf!("documents.files_fn / {} should exist", v5.clone()),
+                                    concat(new_array(&[
+                                        string("documents.files_fn / "),
+                                        v5.clone(),
+                                        string(" should exist")
+                                    ])),
                                 )
                             }
                             Documents::US32::US32_0(Ok::<string, LrcPtr<(string, string)>>(
@@ -9974,15 +10035,15 @@ mod module_2555ccf7 {
                             ))
                         }
                     }
-                    Documents::US35::US35_1(v309_1_0, v309_1_1) => {
+                    Documents::US35::US35_1(v313_1_0, v313_1_1) => {
                         Documents::US32::US32_0(Err::<string, LrcPtr<(string, string)>>(
-                            LrcPtr::new((v5.clone(), v309_1_1.clone())),
+                            LrcPtr::new((v5.clone(), v313_1_1.clone())),
                         ))
                     }
                 }
             }
         }
-        pub fn closure82(
+        pub fn closure81(
             v0_1: string,
             v1_1: string,
             v2: bool,
@@ -9993,52 +10054,52 @@ mod module_2555ccf7 {
                 let v1_1 = v1_1.clone();
                 let v2 = v2.clone();
                 let v3 = v3.clone();
-                move |v: string| Documents::closure83(v0_1.clone(), v1_1.clone(), v2, v3.clone(), v)
+                move |v: string| Documents::closure82(v0_1.clone(), v1_1.clone(), v2, v3.clone(), v)
             })
         }
-        pub fn method178(v0_1: string, v1_1: string) -> string {
+        pub fn method184(v0_1: string, v1_1: string) -> string {
             let v3: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v10: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v3.clone(), string("{ "), ());
                 ()
             };
             let v19: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("output_path")), ());
+                Documents::closure8(v3.clone(), string("output_path"), ());
                 ()
             };
             let v28: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v36: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", v0_1), ());
+                Documents::closure8(v3.clone(), v0_1, ());
                 ()
             };
             let v45: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("; ")), ());
+                Documents::closure8(v3.clone(), string("; "), ());
                 ()
             };
             let v54: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string("output_cache_path")), ());
+                Documents::closure8(v3.clone(), string("output_cache_path"), ());
                 ()
             };
             let v62: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v3.clone(), string(" = "), ());
                 ()
             };
             let v70: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", v1_1), ());
+                Documents::closure8(v3.clone(), v1_1, ());
                 ()
             };
             let v79: () = {
-                Documents::closure8(v3.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v3.clone(), string(" }"), ());
                 ()
             };
             v3.l0.get().clone()
         }
-        pub fn method177(
+        pub fn method183(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -10050,8 +10111,8 @@ mod module_2555ccf7 {
             v8: string,
             v9: string,
         ) -> string {
-            let v10: string = Documents::method178(v8, v9);
-            Documents::method17(sprintf!(
+            let v10: string = Documents::method184(v8, v9);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -10060,8 +10121,8 @@ mod module_2555ccf7 {
                 v10
             ))
         }
-        pub fn closure85(v0_1: string, v1_1: string, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_2) {
+        pub fn closure84(v0_1: string, v1_1: string, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_2) {
                 let v6: () = {
                     Documents::closure6((), ());
                     ()
@@ -10073,28 +10134,28 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v25: Option<i64> = patternInput.5.clone();
                 let v24: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v23: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v22: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v21: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v20: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method177(
+                Documents::method19(Documents::method183(
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
                     v25.clone(),
-                    Documents::method7(v20, v21, v22, v23, v24, v25),
-                    Documents::method11(),
+                    Documents::method8(v20, v21, v22, v23, v24, v25),
+                    Documents::method12(),
                     v1_1,
                     v0_1,
                 ))
             };
         }
-        pub fn method179(
+        pub fn method185(
             v0_1: LrcPtr<Documents::UH4>,
             v1_1: List<LrcPtr<Documents::UH5>>,
         ) -> List<LrcPtr<Documents::UH5>> {
@@ -10104,21 +10165,23 @@ mod module_2555ccf7 {
                     match v0_1.as_ref() {
                         Documents::UH4::UH4_1(x, _) => x.clone(),
                         _ => unreachable!(),
-                    },
-                    Documents::method179(
+                    }
+                    .clone(),
+                    Documents::method185(
                         match v0_1.as_ref() {
                             Documents::UH4::UH4_1(_, x) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }
+                        .clone(),
                         v1_1.clone(),
                     ),
                 ),
             }
         }
-        pub fn method180(v0_1: i32, v1_1: LrcPtr<Documents::Mut9>) -> bool {
-            v1_1.l0.get().clone() < v0_1
+        pub fn method186(v0_1: i32, v1_1: LrcPtr<Documents::Mut9>) -> bool {
+            (v1_1.l0.get().clone()) < (v0_1)
         }
-        pub fn method181(
+        pub fn method187(
             v0_1: LrcPtr<Documents::UH5>,
             v1_1: List<(
                 string,
@@ -10137,11 +10200,13 @@ mod module_2555ccf7 {
                         match v0_1.as_ref() {
                             Documents::UH5::UH5_1(x, _, _, _) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }
+                        .clone(),
                         match v0_1.as_ref() {
                             Documents::UH5::UH5_1(_, x, _, _) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }
+                        .clone(),
                         Func1::new({
                             let v0_1 = v0_1.clone();
                             move |a0: string| {
@@ -10158,17 +10223,18 @@ mod module_2555ccf7 {
                             }
                         }),
                     ),
-                    Documents::method181(
+                    Documents::method187(
                         match v0_1.as_ref() {
                             Documents::UH5::UH5_1(_, _, _, x) => x.clone(),
                             _ => unreachable!(),
-                        },
+                        }
+                        .clone(),
                         v1_1.clone(),
                     ),
                 ),
             }
         }
-        pub fn closure86(
+        pub fn closure85(
             unitVar: (),
             _arg: (
                 string,
@@ -10178,24 +10244,27 @@ mod module_2555ccf7 {
         ) -> Option<Result<string, LrcPtr<(string, string)>>> {
             let v4: Documents::US32 = (_arg.2.clone())(_arg.1.clone())(_arg.0.clone());
             match &v4 {
-                Documents::US32::US32_0(v4_0_0) => Some(match &v4 {
-                    Documents::US32::US32_0(x) => x.clone(),
-                    _ => unreachable!(),
-                }),
+                Documents::US32::US32_0(v4_0_0) => Some(
+                    match &v4 {
+                        Documents::US32::US32_0(x) => x.clone(),
+                        _ => unreachable!(),
+                    }
+                    .clone(),
+                ),
                 _ => None::<Result<string, LrcPtr<(string, string)>>>,
             }
         }
-        pub fn method182(
+        pub fn method188(
             v0_1: Vec<Option<Result<string, LrcPtr<(string, string)>>>>,
         ) -> Vec<Option<Result<string, LrcPtr<(string, string)>>>> {
             v0_1
         }
-        pub fn method183(
+        pub fn method189(
             v0_1: Vec<Option<Result<string, LrcPtr<(string, string)>>>>,
         ) -> Vec<Option<Result<string, LrcPtr<(string, string)>>>> {
             v0_1
         }
-        pub fn closure34(
+        pub fn closure33(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -10209,31 +10278,32 @@ mod module_2555ccf7 {
             )>,
             std::string::String,
         > {
-            let v6: string = Documents::method37(v5);
+            let v6: string = Documents::method35(v5);
             let v9: &str = &*v6.clone();
             let v33: std::string::String = String::from(v9);
             let v57: std::path::PathBuf = std::path::PathBuf::from(v33);
             let v81: std::path::Display = v57.display();
             let v105: std::string::String = format!("{}", v81);
-            let v134: string = sprintf!(
-                ".{}",
+            let v134: string = concat(new_array(&[
+                string("."),
                 replace(
                     replace(
                         fable_library_rust::String_::fromString(v105),
                         v3.clone(),
-                        Documents::method80()
+                        Documents::method79(),
                     ),
                     string("\\"),
-                    string("/")
-                )
-            );
-            let v135: string = Documents::method38(v6);
-            let v137: string = Documents::method81(Documents::method25(v2.clone(), v134.clone()));
-            let patternInput: (i32, string) = Documents::method82(
-                sprintf!(
-                    "git ls-tree --format=\'%(objectname)\' origin/gh-pages \"{}\"",
-                    v137.clone()
+                    string("/"),
                 ),
+            ]));
+            let v135: string = Documents::method36(v6);
+            let v137: string = Documents::method80(Documents::method26(v2.clone(), v134.clone()));
+            let patternInput: (i32, string) = Documents::method81(
+                concat(new_array(&[
+                    string("git ls-tree --format=\'%(objectname)\' origin/gh-pages \""),
+                    v137.clone(),
+                    string("\""),
+                ])),
                 None::<CancellationToken>,
                 new_empty::<(string, string)>(),
                 None::<Func1<(i32, string, bool), Arc<Async<()>>>>,
@@ -10243,9 +10313,13 @@ mod module_2555ccf7 {
             );
             let v149: string = patternInput.1.clone();
             let v148: i32 = patternInput.0.clone();
-            let v151: string = Documents::method81(Documents::method25(v3.clone(), v134.clone()));
-            let patternInput_1: (i32, string) = Documents::method82(
-                sprintf!("git hash-object \"{}\"", v151.clone()),
+            let v151: string = Documents::method80(Documents::method26(v3.clone(), v134.clone()));
+            let patternInput_1: (i32, string) = Documents::method81(
+                concat(new_array(&[
+                    string("git hash-object \""),
+                    v151.clone(),
+                    string("\""),
+                ])),
                 None::<CancellationToken>,
                 new_empty::<(string, string)>(),
                 None::<Func1<(i32, string, bool), Arc<Async<()>>>>,
@@ -10255,15 +10329,15 @@ mod module_2555ccf7 {
             );
             let v163: string = patternInput_1.1.clone();
             let v162: i32 = patternInput_1.0.clone();
-            let v165: string = Documents::method81(Documents::method25(v4.clone(), v134.clone()));
+            let v165: string = Documents::method80(Documents::method26(v4.clone(), v134.clone()));
             let v167: string =
-                (Documents::method148(string("hangul.md"), v151.clone(), v4.clone()))
+                (Documents::method156(string("hangul.md"), v151.clone(), v4.clone()))
                     .0
                     .clone();
-            let v624: LrcPtr<Documents::UH4> = if contains(v149.clone(), v163.clone()) {
+            let v628: LrcPtr<Documents::UH4> = if contains(v149.clone(), v163.clone()) {
                 LrcPtr::new(Documents::UH4::UH4_0)
             } else {
-                let v179: string = Documents::method38(v151.clone());
+                let v179: string = Documents::method36(v151.clone());
                 let v181: Result<std::fs::File, std::io::Error> = std::fs::File::open(&*v179);
                 let v184: std::fs::File = v181.unwrap();
                 let v197: std::io::BufReader<std::fs::File> = std::io::BufReader::new(v184);
@@ -10286,14 +10360,14 @@ mod module_2555ccf7 {
                         let v217: Result<usize, std::io::Error> =
                             std::io::Read::read(&mut v199, &mut v211);
                         let v229: usize = v217.unwrap();
-                        if v229 == v207 {
+                        if (v229) == (v207) {
                             let v236: bool = true;
                             break;
                             ()
                         }
                         {
                             let v237: usize = v229;
-                            let v252: &_ = if v237 == v211.len() {
+                            let v252: &_ = if (v237) == (v211.len()) {
                                 &v211[v207..]
                             } else {
                                 &v211[v207..v237]
@@ -10338,155 +10412,159 @@ mod module_2555ccf7 {
                                             let v281 = v281.clone();
                                             move |i: i32| v281[i].clone()
                                         }),
-                                        rangeNumeric(0_i32, 1_i32, count_2(v281.clone()) - 1_i32),
+                                        rangeNumeric(
+                                            0_i32,
+                                            1_i32,
+                                            (get_Count(v281.clone())) - 1_i32,
+                                        ),
                                     )
                                 }
                             }));
-                            let v289: string = Documents::method149();
-                            let v295: string = join(
-                                if v289.clone() == string("\n") {
-                                    Documents::method60(v289.clone())
+                            let v291: string = Documents::method157();
+                            let v297: string = join(
+                                if (v291.clone()) == string("\n") {
+                                    Documents::method61(v291.clone())
                                 } else {
-                                    v289
+                                    v291
                                 },
                                 toArray_1(_v282),
                             );
-                            let v299 = Documents::method65();
-                            let v302: Result<string, std::string::String> =
-                                Ok::<string, std::io::Error>(v295).map_err(|x| v299(x));
-                            let v314 = Documents::method150();
-                            let v315 = Documents::method151();
-                            let v317: Documents::US33 = match v302 {
-                                Ok(x) => v314(x),
-                                Err(e) => v315(e),
+                            let v301 = Documents::method65();
+                            let v304: Result<string, std::string::String> =
+                                Ok::<string, std::io::Error>(v297).map_err(|x| v301(x));
+                            let v316 = Documents::method158();
+                            let v317 = Documents::method159();
+                            let v319: Documents::US33 = match v304 {
+                                Ok(x) => v316(x),
+                                Err(e) => v317(e),
                             };
-                            let v325: string = match &v317 {
-                                Documents::US33::US33_0(v317_0_0) => v317_0_0.clone(),
-                                Documents::US33::US33_1(v317_1_0) => panic!(
+                            let v327: string = match &v319 {
+                                Documents::US33::US33_0(v319_0_0) => v319_0_0.clone(),
+                                Documents::US33::US33_1(v319_1_0) => panic!(
                                     "{}",
                                     sprintf!(
                                         "resultm.get / Result value was Error: {}",
-                                        v317_1_0.clone()
+                                        v319_1_0.clone()
                                     ),
                                 ),
                             };
-                            let v474: Documents::US5 = if Documents::method152(v165.clone())
+                            let v478: Documents::US5 = if (Documents::method160(v165.clone()))
                                 == false
                             {
                                 Documents::US5::US5_1
                             } else {
-                                let v329: string = Documents::method38(v165.clone());
-                                let v331: Result<std::fs::File, std::io::Error> =
-                                    std::fs::File::open(&*v329);
-                                let v334: std::fs::File = v331.unwrap();
-                                let v347: std::io::BufReader<std::fs::File> =
-                                    std::io::BufReader::new(v334);
-                                let v349: std::io::BufReader<std::io::BufReader<std::fs::File>> =
-                                    std::io::BufReader::new(v347);
-                                let v351: bool = true;
-                                let mut v349 = v349;
+                                let v331: string = Documents::method36(v165.clone());
+                                let v333: Result<std::fs::File, std::io::Error> =
+                                    std::fs::File::open(&*v331);
+                                let v336: std::fs::File = v333.unwrap();
+                                let v349: std::io::BufReader<std::fs::File> =
+                                    std::io::BufReader::new(v336);
+                                let v351: std::io::BufReader<std::io::BufReader<std::fs::File>> =
+                                    std::io::BufReader::new(v349);
+                                let v353: bool = true;
+                                let mut v351 = v351;
                                 let result: sha2::Sha256 = sha2::Digest::new();
                                 {
-                                    let v354: sha2::Sha256 = result;
-                                    let v356: bool = true;
-                                    let mut v354 = v354;
-                                    let v357: usize = 0_i32 as usize;
-                                    let v361: _ = [0_u8; 1024];
-                                    let v363: bool = true;
+                                    let v356: sha2::Sha256 = result;
+                                    let v358: bool = true;
+                                    let mut v356 = v356;
+                                    let v359: usize = 0_i32 as usize;
+                                    let v363: _ = [0_u8; 1024];
+                                    let v365: bool = true;
                                     loop {
                                         // rust.loop;
-                                        let v365: bool = true;
-                                        let mut v361 = v361;
-                                        let v367: Result<usize, std::io::Error> =
-                                            std::io::Read::read(&mut v349, &mut v361);
-                                        let v379: usize = v367.unwrap();
-                                        if v379 == v357 {
-                                            let v386: bool = true;
+                                        let v367: bool = true;
+                                        let mut v363 = v363;
+                                        let v369: Result<usize, std::io::Error> =
+                                            std::io::Read::read(&mut v351, &mut v363);
+                                        let v381: usize = v369.unwrap();
+                                        if (v381) == (v359) {
+                                            let v388: bool = true;
                                             break;
                                             ()
                                         }
                                         {
-                                            let v387: usize = v379;
-                                            let v402: &_ = if v387 == v361.len() {
-                                                &v361[v357..]
+                                            let v389: usize = v381;
+                                            let v404: &_ = if (v389) == (v363.len()) {
+                                                &v363[v359..]
                                             } else {
-                                                &v361[v357..v387]
+                                                &v363[v359..v389]
                                             };
-                                            sha2::Digest::update(&mut v354, v402);
+                                            sha2::Digest::update(&mut v356, v404);
                                             {
-                                                let v405: bool = true;
+                                                let v407: bool = true;
                                             } // rust.loop;
-                                            let v407: bool = true;
+                                            let v409: bool = true;
                                         } // rust.loop;
-                                        let v409: bool = true;
+                                        let v411: bool = true;
                                     } // rust.loop;
-                                    let v411: bool = true;
+                                    let v413: bool = true;
                                     {
                                         // rust.loop;
-                                        let v413: bool = true;
+                                        let v415: bool = true;
                                         {
                                             // rust.loop;
-                                            let v415: &[u8] = &sha2::Digest::finalize(v354);
-                                            let v417: Vec<u8> =
-                                                v415.iter().map(|x| *x).collect::<Vec<_>>();
-                                            let v419: bool = true;
-                                            let _vec_map: Vec<_> = v417
+                                            let v417: &[u8] = &sha2::Digest::finalize(v356);
+                                            let v419: Vec<u8> =
+                                                v417.iter().map(|x| *x).collect::<Vec<_>>();
+                                            let v421: bool = true;
+                                            let _vec_map: Vec<_> = v419
                                                 .into_iter()
                                                 .map(|x| {
                                                     //;
-                                                    let v421: u8 = x;
-                                                    let v423: std::string::String =
-                                                        format!("{:02x}", v421);
-                                                    let v425: string =
+                                                    let v423: u8 = x;
+                                                    let v425: std::string::String =
+                                                        format!("{:02x}", v423);
+                                                    let v427: string =
                                                         fable_library_rust::String_::fromString(
-                                                            v423,
+                                                            v425,
                                                         );
-                                                    let v427: bool = true;
-                                                    v425
+                                                    let v429: bool = true;
+                                                    v427
                                                 })
                                                 .collect::<Vec<_>>();
-                                            let v429: Vec<string> = _vec_map;
-                                            let v431: Array<string> =
-                                                fable_library_rust::NativeArray_::array_from(v429);
-                                            let _v432: LrcPtr<dyn IEnumerable_1<string>> =
+                                            let v431: Vec<string> = _vec_map;
+                                            let v433: Array<string> =
+                                                fable_library_rust::NativeArray_::array_from(v431);
+                                            let _v434: LrcPtr<dyn IEnumerable_1<string>> =
                                                 delay(Func0::new({
-                                                    let v431 = v431.clone();
+                                                    let v433 = v433.clone();
                                                     move || {
                                                         map_1(
                                                             Func1::new({
-                                                                let v431 = v431.clone();
-                                                                move |i_1: i32| v431[i_1].clone()
+                                                                let v433 = v433.clone();
+                                                                move |i_1: i32| v433[i_1].clone()
                                                             }),
                                                             rangeNumeric(
                                                                 0_i32,
                                                                 1_i32,
-                                                                count_2(v431.clone()) - 1_i32,
+                                                                (get_Count(v433.clone())) - 1_i32,
                                                             ),
                                                         )
                                                     }
                                                 }));
-                                            let v439: string = Documents::method149();
-                                            let v445: string = join(
-                                                if v439.clone() == string("\n") {
-                                                    Documents::method60(v439.clone())
+                                            let v443: string = Documents::method157();
+                                            let v449: string = join(
+                                                if (v443.clone()) == string("\n") {
+                                                    Documents::method61(v443.clone())
                                                 } else {
-                                                    v439
+                                                    v443
                                                 },
-                                                toArray_1(_v432),
+                                                toArray_1(_v434),
                                             );
-                                            let v449 = Documents::method65();
-                                            let v452: Result<string, std::string::String> =
-                                                Ok::<string, std::io::Error>(v445)
-                                                    .map_err(|x| v449(x));
-                                            let v464 = Documents::method150();
-                                            let v465 = Documents::method151();
-                                            let v467: Documents::US33 = match v452 {
-                                                Ok(x) => v464(x),
-                                                Err(e) => v465(e),
+                                            let v453 = Documents::method65();
+                                            let v456: Result<string, std::string::String> =
+                                                Ok::<string, std::io::Error>(v449)
+                                                    .map_err(|x| v453(x));
+                                            let v468 = Documents::method158();
+                                            let v469 = Documents::method159();
+                                            let v471: Documents::US33 = match v456 {
+                                                Ok(x) => v468(x),
+                                                Err(e) => v469(e),
                                             };
-                                            match &v467 {
-                                                Documents::US33::US33_0(v467_0_0) => {
-                                                    Documents::US5::US5_0(v467_0_0.clone())
+                                            match &v471 {
+                                                Documents::US33::US33_0(v471_0_0) => {
+                                                    Documents::US5::US5_0(v471_0_0.clone())
                                                 }
                                                 _ => Documents::US5::US5_1,
                                             }
@@ -10494,17 +10572,12 @@ mod module_2555ccf7 {
                                     }
                                 }
                             };
-                            if let Documents::US5::US5_0(v474_0_0) = &v474 {
-                                if v325.clone()
-                                    == match &v474 {
-                                        Documents::US5::US5_0(x) => x.clone(),
-                                        _ => unreachable!(),
-                                    }
-                                {
+                            if let Documents::US5::US5_0(v478_0_0) = &v478 {
+                                if (v327.clone()) == (v478_0_0.clone()) {
                                     LrcPtr::new(Documents::UH4::UH4_0)
                                 } else {
-                                    let v480: () = {
-                                        Documents::closure72(
+                                    let v484: () = {
+                                        Documents::closure71(
                                             v134.clone(),
                                             v135.clone(),
                                             v137.clone(),
@@ -10514,13 +10587,13 @@ mod module_2555ccf7 {
                                             v163.clone(),
                                             v162,
                                             v165.clone(),
-                                            v325.clone(),
-                                            v474.clone(),
+                                            v327.clone(),
+                                            v478.clone(),
                                             (),
                                         );
                                         ()
                                     };
-                                    Documents::method155(v165.clone(), v151.clone());
+                                    Documents::method163(v165.clone(), v151.clone());
                                     LrcPtr::new(Documents::UH4::UH4_1(
                                         LrcPtr::new(Documents::UH5::UH5_1(
                                             string("hangul.md"),
@@ -10537,7 +10610,7 @@ mod module_2555ccf7 {
                                                         let v3 = v3.clone();
                                                         let v4 = v4.clone();
                                                         move |v: string| {
-                                                            Documents::closure77(
+                                                            Documents::closure76(
                                                                 v4.clone(),
                                                                 v3.clone(),
                                                                 v1_1.clone(),
@@ -10566,7 +10639,7 @@ mod module_2555ccf7 {
                                                             let v3 = v3.clone();
                                                             let v4 = v4.clone();
                                                             move |v_1: string| {
-                                                                Documents::closure82(
+                                                                Documents::closure81(
                                                                     v4.clone(),
                                                                     v3.clone(),
                                                                     false,
@@ -10591,7 +10664,7 @@ mod module_2555ccf7 {
                                                                 let v3 = v3.clone();
                                                                 let v4 = v4.clone();
                                                                 move |v_2: string| {
-                                                                    Documents::closure82(
+                                                                    Documents::closure81(
                                                                         v4.clone(),
                                                                         v3.clone(),
                                                                         false,
@@ -10616,7 +10689,7 @@ mod module_2555ccf7 {
                                                                     let v3 = v3.clone();
                                                                     let v4 = v4.clone();
                                                                     move |v_3: string| {
-                                                                        Documents::closure82(
+                                                                        Documents::closure81(
                                                                             v4.clone(),
                                                                             v3.clone(),
                                                                             false,
@@ -10641,7 +10714,7 @@ mod module_2555ccf7 {
                                                                         let v3 = v3.clone();
                                                                         let v4 = v4.clone();
                                                                         move |v_4: string| {
-                                                                            Documents::closure82(
+                                                                            Documents::closure81(
                                                                                 v4.clone(),
                                                                                 v3.clone(),
                                                                                 true,
@@ -10666,7 +10739,7 @@ mod module_2555ccf7 {
                                                                             let v3 = v3.clone();
                                                                             let v4 = v4.clone();
                                                                             move |v_5: string| {
-                                                                                Documents::closure82(
+                                                                                Documents::closure81(
                                                                                     v4.clone(),
                                                                                     v3.clone(),
                                                                                     true,
@@ -10701,7 +10774,7 @@ mod module_2555ccf7 {
                                                                                                                                                                                                                                                                                                                                                            move
                                                                                                                                                                                                                                                                                                                                                                |v_6:
                                                                                                                                                                                                                                                                                                                                                                     string|
-                                                                                                                                                                                                                                                                                                                                                               Documents::closure82(v4.clone(),
+                                                                                                                                                                                                                                                                                                                                                               Documents::closure81(v4.clone(),
                                                                                                                                                                                                                                                                                                                                                                                     v3.clone(),
                                                                                                                                                                                                                                                                                                                                                                                     true,
                                                                                                                                                                                                                                                                                                                                                                                     v_6)
@@ -10721,8 +10794,8 @@ mod module_2555ccf7 {
                                     ))
                                 }
                             } else {
-                                let v553: () = {
-                                    Documents::closure72(
+                                let v557: () = {
+                                    Documents::closure71(
                                         v134,
                                         v135.clone(),
                                         v137,
@@ -10732,13 +10805,13 @@ mod module_2555ccf7 {
                                         v163,
                                         v162,
                                         v165.clone(),
-                                        v325,
-                                        v474,
+                                        v327,
+                                        v478.clone(),
                                         (),
                                     );
                                     ()
                                 };
-                                Documents::method155(v165, v151.clone());
+                                Documents::method163(v165, v151.clone());
                                 LrcPtr::new(Documents::UH4::UH4_1(
                                     LrcPtr::new(Documents::UH5::UH5_1(
                                         string("hangul.md"),
@@ -10755,7 +10828,7 @@ mod module_2555ccf7 {
                                                     let v3 = v3.clone();
                                                     let v4 = v4.clone();
                                                     move |v_7: string| {
-                                                        Documents::closure77(
+                                                        Documents::closure76(
                                                             v4.clone(),
                                                             v3.clone(),
                                                             v1_1.clone(),
@@ -10782,7 +10855,7 @@ mod module_2555ccf7 {
                                                         let v3 = v3.clone();
                                                         let v4 = v4.clone();
                                                         move |v_8: string| {
-                                                            Documents::closure82(
+                                                            Documents::closure81(
                                                                 v4.clone(),
                                                                 v3.clone(),
                                                                 false,
@@ -10807,7 +10880,7 @@ mod module_2555ccf7 {
                                                             let v3 = v3.clone();
                                                             let v4 = v4.clone();
                                                             move |v_9: string| {
-                                                                Documents::closure82(
+                                                                Documents::closure81(
                                                                     v4.clone(),
                                                                     v3.clone(),
                                                                     false,
@@ -10832,7 +10905,7 @@ mod module_2555ccf7 {
                                                                 let v3 = v3.clone();
                                                                 let v4 = v4.clone();
                                                                 move |v_10: string| {
-                                                                    Documents::closure82(
+                                                                    Documents::closure81(
                                                                         v4.clone(),
                                                                         v3.clone(),
                                                                         false,
@@ -10857,7 +10930,7 @@ mod module_2555ccf7 {
                                                                     let v3 = v3.clone();
                                                                     let v4 = v4.clone();
                                                                     move |v_11: string| {
-                                                                        Documents::closure82(
+                                                                        Documents::closure81(
                                                                             v4.clone(),
                                                                             v3.clone(),
                                                                             true,
@@ -10882,7 +10955,7 @@ mod module_2555ccf7 {
                                                                         let v3 = v3.clone();
                                                                         let v4 = v4.clone();
                                                                         move |v_12: string| {
-                                                                            Documents::closure82(
+                                                                            Documents::closure81(
                                                                                 v4.clone(),
                                                                                 v3.clone(),
                                                                                 true,
@@ -10907,7 +10980,7 @@ mod module_2555ccf7 {
                                                                             let v3 = v3.clone();
                                                                             let v4 = v4.clone();
                                                                             move |v_13: string| {
-                                                                                Documents::closure82(
+                                                                                Documents::closure81(
                                                                                     v4.clone(),
                                                                                     v3.clone(),
                                                                                     true,
@@ -10936,30 +11009,30 @@ mod module_2555ccf7 {
                     }
                 }
             };
-            let v1005: Array<LrcPtr<Documents::UH5>> = toArray(Documents::method179(
-                if (if let Documents::UH4::UH4_0 = v624.as_ref() {
+            let v1009: Array<LrcPtr<Documents::UH5>> = toArray(Documents::method185(
+                if (if let Documents::UH4::UH4_0 = v628.as_ref() {
                     true
                 } else {
                     false
                 }) != true
                 {
-                    v624
+                    v628
                 } else {
                     let patternInput_3: (string, string) =
-                        Documents::method148(string("epub"), v167.clone(), v4.clone());
-                    let v629: string = patternInput_3.1.clone();
-                    let v628: string = patternInput_3.0.clone();
-                    let v681: LrcPtr<Documents::UH5> = if if Documents::method152(v628.clone()) {
+                        Documents::method156(string("epub"), v167.clone(), v4.clone());
+                    let v633: string = patternInput_3.1.clone();
+                    let v632: string = patternInput_3.0.clone();
+                    let v685: LrcPtr<Documents::UH5> = if if Documents::method160(v632.clone()) {
                         true
                     } else {
-                        if Documents::method152(v629.clone()) == false {
+                        if (Documents::method160(v633.clone())) == false {
                             true
                         } else {
-                            let v635: () = {
-                                Documents::closure85(v629.clone(), v628.clone(), ());
+                            let v639: () = {
+                                Documents::closure84(v633.clone(), v632.clone(), ());
                                 ()
                             };
-                            Documents::method155(v628, v629);
+                            Documents::method163(v632, v633);
                             false
                         }
                     } {
@@ -10974,7 +11047,7 @@ mod module_2555ccf7 {
                                         let v3 = v3.clone();
                                         let v4 = v4.clone();
                                         move |v_14: string| {
-                                            Documents::closure82(v4.clone(), v3.clone(), true, v_14)
+                                            Documents::closure81(v4.clone(), v3.clone(), true, v_14)
                                         }
                                     }))(b0)(b1)
                                 }
@@ -10985,20 +11058,20 @@ mod module_2555ccf7 {
                         LrcPtr::new(Documents::UH5::UH5_0)
                     };
                     let patternInput_4: (string, string) =
-                        Documents::method148(string("pdf"), v167.clone(), v4.clone());
-                    let v684: string = patternInput_4.1.clone();
-                    let v683: string = patternInput_4.0.clone();
-                    let v734: LrcPtr<Documents::UH5> = if if Documents::method152(v683.clone()) {
+                        Documents::method156(string("pdf"), v167.clone(), v4.clone());
+                    let v688: string = patternInput_4.1.clone();
+                    let v687: string = patternInput_4.0.clone();
+                    let v738: LrcPtr<Documents::UH5> = if if Documents::method160(v687.clone()) {
                         true
                     } else {
-                        if Documents::method152(v684.clone()) == false {
+                        if (Documents::method160(v688.clone())) == false {
                             true
                         } else {
-                            let v690: () = {
-                                Documents::closure85(v684.clone(), v683.clone(), ());
+                            let v694: () = {
+                                Documents::closure84(v688.clone(), v687.clone(), ());
                                 ()
                             };
-                            Documents::method155(v683, v684);
+                            Documents::method163(v687, v688);
                             false
                         }
                     } {
@@ -11013,31 +11086,31 @@ mod module_2555ccf7 {
                                         let v3 = v3.clone();
                                         let v4 = v4.clone();
                                         move |v_15: string| {
-                                            Documents::closure82(v4.clone(), v3.clone(), true, v_15)
+                                            Documents::closure81(v4.clone(), v3.clone(), true, v_15)
                                         }
                                     }))(b0)(b1)
                                 }
                             }),
-                            v681.clone(),
+                            v685.clone(),
                         ))
                     } else {
-                        v681
+                        v685
                     };
                     let patternInput_5: (string, string) =
-                        Documents::method148(string("html"), v167.clone(), v4.clone());
-                    let v737: string = patternInput_5.1.clone();
-                    let v736: string = patternInput_5.0.clone();
-                    let v787: LrcPtr<Documents::UH5> = if if Documents::method152(v736.clone()) {
+                        Documents::method156(string("html"), v167.clone(), v4.clone());
+                    let v741: string = patternInput_5.1.clone();
+                    let v740: string = patternInput_5.0.clone();
+                    let v791: LrcPtr<Documents::UH5> = if if Documents::method160(v740.clone()) {
                         true
                     } else {
-                        if Documents::method152(v737.clone()) == false {
+                        if (Documents::method160(v741.clone())) == false {
                             true
                         } else {
-                            let v743: () = {
-                                Documents::closure85(v737.clone(), v736.clone(), ());
+                            let v747: () = {
+                                Documents::closure84(v741.clone(), v740.clone(), ());
                                 ()
                             };
-                            Documents::method155(v736, v737);
+                            Documents::method163(v740, v741);
                             false
                         }
                     } {
@@ -11052,31 +11125,31 @@ mod module_2555ccf7 {
                                         let v3 = v3.clone();
                                         let v4 = v4.clone();
                                         move |v_16: string| {
-                                            Documents::closure82(v4.clone(), v3.clone(), true, v_16)
+                                            Documents::closure81(v4.clone(), v3.clone(), true, v_16)
                                         }
                                     }))(b0)(b1)
                                 }
                             }),
-                            v734.clone(),
+                            v738.clone(),
                         ))
                     } else {
-                        v734
+                        v738
                     };
                     let patternInput_6: (string, string) =
-                        Documents::method148(string("epub"), v151.clone(), v4.clone());
-                    let v789: string = patternInput_6.1.clone();
-                    let v788: string = patternInput_6.0.clone();
-                    let v839: LrcPtr<Documents::UH5> = if if Documents::method152(v788.clone()) {
+                        Documents::method156(string("epub"), v151.clone(), v4.clone());
+                    let v793: string = patternInput_6.1.clone();
+                    let v792: string = patternInput_6.0.clone();
+                    let v843: LrcPtr<Documents::UH5> = if if Documents::method160(v792.clone()) {
                         true
                     } else {
-                        if Documents::method152(v789.clone()) == false {
+                        if (Documents::method160(v793.clone())) == false {
                             true
                         } else {
-                            let v795: () = {
-                                Documents::closure85(v789.clone(), v788.clone(), ());
+                            let v799: () = {
+                                Documents::closure84(v793.clone(), v792.clone(), ());
                                 ()
                             };
-                            Documents::method155(v788, v789);
+                            Documents::method163(v792, v793);
                             false
                         }
                     } {
@@ -11091,7 +11164,7 @@ mod module_2555ccf7 {
                                         let v3 = v3.clone();
                                         let v4 = v4.clone();
                                         move |v_17: string| {
-                                            Documents::closure82(
+                                            Documents::closure81(
                                                 v4.clone(),
                                                 v3.clone(),
                                                 false,
@@ -11101,26 +11174,26 @@ mod module_2555ccf7 {
                                     }))(b0)(b1)
                                 }
                             }),
-                            v787.clone(),
+                            v791.clone(),
                         ))
                     } else {
-                        v787
+                        v791
                     };
                     let patternInput_7: (string, string) =
-                        Documents::method148(string("pdf"), v151.clone(), v4.clone());
-                    let v841: string = patternInput_7.1.clone();
-                    let v840: string = patternInput_7.0.clone();
-                    let v891: LrcPtr<Documents::UH5> = if if Documents::method152(v840.clone()) {
+                        Documents::method156(string("pdf"), v151.clone(), v4.clone());
+                    let v845: string = patternInput_7.1.clone();
+                    let v844: string = patternInput_7.0.clone();
+                    let v895: LrcPtr<Documents::UH5> = if if Documents::method160(v844.clone()) {
                         true
                     } else {
-                        if Documents::method152(v841.clone()) == false {
+                        if (Documents::method160(v845.clone())) == false {
                             true
                         } else {
-                            let v847: () = {
-                                Documents::closure85(v841.clone(), v840.clone(), ());
+                            let v851: () = {
+                                Documents::closure84(v845.clone(), v844.clone(), ());
                                 ()
                             };
-                            Documents::method155(v840, v841);
+                            Documents::method163(v844, v845);
                             false
                         }
                     } {
@@ -11135,7 +11208,7 @@ mod module_2555ccf7 {
                                         let v3 = v3.clone();
                                         let v4 = v4.clone();
                                         move |v_18: string| {
-                                            Documents::closure82(
+                                            Documents::closure81(
                                                 v4.clone(),
                                                 v3.clone(),
                                                 false,
@@ -11145,26 +11218,26 @@ mod module_2555ccf7 {
                                     }))(b0)(b1)
                                 }
                             }),
-                            v839.clone(),
+                            v843.clone(),
                         ))
                     } else {
-                        v839
+                        v843
                     };
                     let patternInput_8: (string, string) =
-                        Documents::method148(string("html"), v151.clone(), v4.clone());
-                    let v893: string = patternInput_8.1.clone();
-                    let v892: string = patternInput_8.0.clone();
-                    let v943: LrcPtr<Documents::UH5> = if if Documents::method152(v892.clone()) {
+                        Documents::method156(string("html"), v151.clone(), v4.clone());
+                    let v897: string = patternInput_8.1.clone();
+                    let v896: string = patternInput_8.0.clone();
+                    let v947: LrcPtr<Documents::UH5> = if if Documents::method160(v896.clone()) {
                         true
                     } else {
-                        if Documents::method152(v893.clone()) == false {
+                        if (Documents::method160(v897.clone())) == false {
                             true
                         } else {
-                            let v899: () = {
-                                Documents::closure85(v893.clone(), v892.clone(), ());
+                            let v903: () = {
+                                Documents::closure84(v897.clone(), v896.clone(), ());
                                 ()
                             };
-                            Documents::method155(v892, v893);
+                            Documents::method163(v896, v897);
                             false
                         }
                     } {
@@ -11179,7 +11252,7 @@ mod module_2555ccf7 {
                                         let v3 = v3.clone();
                                         let v4 = v4.clone();
                                         move |v_19: string| {
-                                            Documents::closure82(
+                                            Documents::closure81(
                                                 v4.clone(),
                                                 v3.clone(),
                                                 false,
@@ -11189,27 +11262,27 @@ mod module_2555ccf7 {
                                     }))(b0)(b1)
                                 }
                             }),
-                            v891.clone(),
+                            v895.clone(),
                         ))
                     } else {
-                        v891
+                        v895
                     };
                     let patternInput_9: (string, string) =
-                        Documents::method148(string("hangul.md"), v151.clone(), v4.clone());
-                    let v945: string = patternInput_9.1.clone();
-                    let v944: string = patternInput_9.0.clone();
+                        Documents::method156(string("hangul.md"), v151.clone(), v4.clone());
+                    let v949: string = patternInput_9.1.clone();
+                    let v948: string = patternInput_9.0.clone();
                     LrcPtr::new(Documents::UH4::UH4_1(
-                        if if Documents::method152(v944.clone()) {
+                        if if Documents::method160(v948.clone()) {
                             true
                         } else {
-                            if Documents::method152(v945.clone()) == false {
+                            if (Documents::method160(v949.clone())) == false {
                                 true
                             } else {
-                                let v951: () = {
-                                    Documents::closure85(v945.clone(), v944.clone(), ());
+                                let v955: () = {
+                                    Documents::closure84(v949.clone(), v948.clone(), ());
                                     ()
                                 };
-                                Documents::method155(v944, v945);
+                                Documents::method163(v948, v949);
                                 false
                             }
                         } {
@@ -11228,7 +11301,7 @@ mod module_2555ccf7 {
                                             let v3 = v3.clone();
                                             let v4 = v4.clone();
                                             move |v_20: string| {
-                                                Documents::closure77(
+                                                Documents::closure76(
                                                     v4.clone(),
                                                     v3.clone(),
                                                     v1_1.clone(),
@@ -11245,58 +11318,58 @@ mod module_2555ccf7 {
                             LrcPtr::new(Documents::UH5::UH5_0)
                         },
                         LrcPtr::new(Documents::UH4::UH4_1(
-                            v943,
+                            v947,
                             LrcPtr::new(Documents::UH4::UH4_0),
                         )),
                     ))
                 },
                 empty::<LrcPtr<Documents::UH5>>(),
             ));
-            let v1009: Vec<LrcPtr<Documents::UH5>> = v1005.to_vec();
-            let v1012: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
+            let v1013: Vec<LrcPtr<Documents::UH5>> = v1009.to_vec();
+            let v1016: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
                 new_empty::<Option<Result<string, LrcPtr<(string, string)>>>>().to_vec();
-            let v1014: Array<LrcPtr<Documents::UH5>> =
-                fable_library_rust::NativeArray_::array_from(v1009);
-            let v1015: i32 = count_2(v1014.clone());
-            let v1016: LrcPtr<Documents::Mut9> = LrcPtr::new(Documents::Mut9 {
+            let v1018: Array<LrcPtr<Documents::UH5>> =
+                fable_library_rust::NativeArray_::array_from(v1013);
+            let v1019: i32 = get_Count(v1018.clone());
+            let v1020: LrcPtr<Documents::Mut9> = LrcPtr::new(Documents::Mut9 {
                 l0: MutCell::new(0_i32),
-                l1: MutCell::new(v1012),
+                l1: MutCell::new(v1016),
             });
-            while Documents::method180(v1015, v1016.clone()) {
-                let v1018: i32 = v1016.l0.get().clone();
-                let v1019: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
-                    v1016.l1.get().clone();
-                let v1024 = toArray(Documents::method181(
-                    v1014[v1018].clone(),
+            while Documents::method186(v1019, v1020.clone()) {
+                let v1022: i32 = v1020.l0.get().clone();
+                let v1023: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
+                    v1020.l1.get().clone();
+                let v1028 = toArray(Documents::method187(
+                    v1018[v1022].clone(),
                     empty::<(
                         string,
                         string,
                         Func1<string, Func1<string, Documents::US32>>,
                     )>(),
                 ));
-                let v1028 = v1024.to_vec();
-                let v1030 = rayon::iter::IntoParallelIterator::into_par_iter(v1028);
-                let v1033 = rayon::iter::ParallelIterator::map(v1030, |x| {
+                let v1032 = v1028.to_vec();
+                let v1034 = rayon::iter::IntoParallelIterator::into_par_iter(v1032);
+                let v1037 = rayon::iter::ParallelIterator::map(v1034, |x| {
                     Func1::new(
                         move |arg10_0040_9: (
                             string,
                             string,
                             Func1<string, Func1<string, Documents::US32>>,
-                        )| Documents::closure86((), arg10_0040_9),
+                        )| Documents::closure85((), arg10_0040_9),
                     )(x)
                 });
-                let v1036: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
-                    Documents::method182(rayon::iter::ParallelIterator::collect(v1033));
-                let v1037: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
-                    Documents::method183(v1019);
-                let v1039: bool = true;
-                let mut v1037 = v1037;
-                let v1041: bool = true;
-                v1037.extend(v1036);
-                let v1043: Vec<Option<Result<string, LrcPtr<(string, string)>>>> = v1037;
-                let v1044: i32 = v1018 + 1_i32;
-                v1016.l0.set(v1044);
-                v1016.l1.set(v1043);
+                let v1040: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
+                    Documents::method188(rayon::iter::ParallelIterator::collect(v1037));
+                let v1041: Vec<Option<Result<string, LrcPtr<(string, string)>>>> =
+                    Documents::method189(v1023);
+                let v1043: bool = true;
+                let mut v1041 = v1041;
+                let v1045: bool = true;
+                v1041.extend(v1040);
+                let v1047: Vec<Option<Result<string, LrcPtr<(string, string)>>>> = v1041;
+                let v1048: i32 = (v1022) + 1_i32;
+                v1020.l0.set(v1048);
+                v1020.l1.set(v1047);
                 ()
             }
             Ok::<
@@ -11305,9 +11378,9 @@ mod module_2555ccf7 {
                     Vec<Option<Result<string, LrcPtr<(string, string)>>>>,
                 )>,
                 std::string::String,
-            >(LrcPtr::new((v135, v1016.l1.get().clone())))
+            >(LrcPtr::new((v135, v1020.l1.get().clone())))
         }
-        pub fn method184(
+        pub fn method190(
             v0_1: Result<
                 Vec<
                     Result<
@@ -11334,7 +11407,7 @@ mod module_2555ccf7 {
         > {
             v0_1
         }
-        pub fn method24(
+        pub fn method25(
             v0_1: string,
             v1_1: string,
             v2: string,
@@ -11357,36 +11430,39 @@ mod module_2555ccf7 {
                 >,
             >,
         > {
-            let v8: Documents::US7 = Documents::method28(
-                Documents::method25(string("polyglot"), string(".devcontainer")),
+            let v8: Documents::US7 = Documents::method27(
+                Documents::method26(string("polyglot"), string(".devcontainer")),
                 string("C:\\home\\git\\polyglot\\target\\Builder\\documents"),
             );
             let v56: Documents::US5 = match &v8 {
                 Documents::US7::US7_0(v8_0_0) => Documents::US5::US5_0(v8_0_0.clone()),
                 Documents::US7::US7_1(v8_1_0) => {
                     let v14: () = {
-                        Documents::closure14(v8_1_0.clone(), ());
+                        Documents::closure13(v8_1_0.clone(), ());
                         ()
                     };
                     Documents::US5::US5_1
                 }
             };
             let v111: Documents::US5 = match &v56 {
-                Documents::US5::US5_0(v56_0_0) => Documents::US5::US5_0(match &v56 {
-                    Documents::US5::US5_0(x) => x.clone(),
-                    _ => unreachable!(),
-                }),
+                Documents::US5::US5_0(v56_0_0) => Documents::US5::US5_0(
+                    match &v56 {
+                        Documents::US5::US5_0(x) => x.clone(),
+                        _ => unreachable!(),
+                    }
+                    .clone(),
+                ),
                 _ => {
-                    let v59: string = Documents::method36();
-                    let v61: Documents::US7 = Documents::method28(
-                        Documents::method25(string("polyglot"), string(".devcontainer")),
+                    let v59: string = Documents::method34();
+                    let v61: Documents::US7 = Documents::method27(
+                        Documents::method26(string("polyglot"), string(".devcontainer")),
                         v59,
                     );
                     match &v61 {
                         Documents::US7::US7_0(v61_0_0) => Documents::US5::US5_0(v61_0_0.clone()),
                         Documents::US7::US7_1(v61_1_0) => {
                             let v67: () = {
-                                Documents::closure14(v61_1_0.clone(), ());
+                                Documents::closure13(v61_1_0.clone(), ());
                                 ()
                             };
                             Documents::US5::US5_1
@@ -11394,21 +11470,22 @@ mod module_2555ccf7 {
                     }
                 }
             };
-            let v116: string = Documents::method25(
+            let v116: string = Documents::method26(
                 match &v111 {
                     Documents::US5::US5_0(v111_0_0) => match &v111 {
                         Documents::US5::US5_0(x) => x.clone(),
                         _ => unreachable!(),
-                    },
+                    }
+                    .clone(),
                     _ => panic!("{}", string("Option does not have a value."),),
                 },
                 string("polyglot"),
             );
-            let v117: string = Documents::method37(v3);
-            let v118: string = Documents::method37(v2);
-            let v119: string = Documents::method37(v1_1);
+            let v117: string = Documents::method35(v3);
+            let v118: string = Documents::method35(v2);
+            let v119: string = Documents::method35(v1_1);
             let v122: () = {
-                Documents::closure23(v0_1.clone(), v117.clone(), v118.clone(), v119.clone(), ());
+                Documents::closure22(v0_1.clone(), v117.clone(), v118.clone(), v119.clone(), ());
                 ()
             };
             let v163: bool = true;
@@ -11416,15 +11493,15 @@ mod module_2555ccf7 {
                 //;
                 let v165: async_walkdir::WalkDir = async_walkdir::WalkDir::new(&*v118.clone());
                 let v168: async_walkdir::WalkDir = async_walkdir::WalkDir::filter(v165, move |x| {
-                    Func1::new(move |v: async_walkdir::DirEntry| Documents::closure24((), v))(x)
+                    Func1::new(move |v: async_walkdir::DirEntry| Documents::closure23((), v))(x)
                 });
-                let v169 = Documents::method71();
+                let v169 = Documents::method70();
                 let v171 = futures::stream::StreamExt::filter_map(v168, |x| async { v169(x) });
                 let v173: std::pin::Pin<Box<dyn std::future::Future<Output = Vec<string>>>> =
                     Box::pin(futures::stream::StreamExt::collect(v171));
                 let v175: Vec<string> = v173.await;
                 let v178: () = {
-                    Documents::closure33(v175.clone(), ());
+                    Documents::closure32(v175.clone(), ());
                     ()
                 };
                 let v221: rayon::vec::IntoIter<string> =
@@ -11438,7 +11515,7 @@ mod module_2555ccf7 {
                             let v118 = v118.clone();
                             let v119 = v119.clone();
                             move |v_1: string| {
-                                Documents::closure34(
+                                Documents::closure33(
                                     v0_1.clone(),
                                     v116.clone(),
                                     v117.clone(),
@@ -11460,7 +11537,7 @@ mod module_2555ccf7 {
                         >,
                     >,
                     std::string::String,
-                > = Documents::method184(Ok::<
+                > = Documents::method190(Ok::<
                     Vec<
                         Result<
                             LrcPtr<(
@@ -11478,10 +11555,10 @@ mod module_2555ccf7 {
                 let v235: bool = true;
                 let v232 = v228;
                 let v247: string = append(
-                    append(
-                        append(append(string("true; v232 "), v231), string("); ")),
+                    (append(
+                        (append((append(string("true; v232 "), (v231))), string("); "))),
                         string(""),
-                    ),
+                    )),
                     string(" // rust.fix_closure\'"),
                 );
                 let v248: bool = true;
@@ -11490,7 +11567,7 @@ mod module_2555ccf7 {
             let v250 = __future_init;
             v250
         }
-        pub fn closure87(
+        pub fn closure86(
             unitVar: (),
             v0_1: Vec<
                 Result<
@@ -11504,7 +11581,7 @@ mod module_2555ccf7 {
         ) -> Documents::US36 {
             Documents::US36::US36_0(v0_1)
         }
-        pub fn method185() -> Func1<
+        pub fn method191() -> Func1<
             Vec<
                 Result<
                     LrcPtr<(
@@ -11525,16 +11602,16 @@ mod module_2555ccf7 {
                         )>,
                         std::string::String,
                     >,
-                >| Documents::closure87((), v),
+                >| Documents::closure86((), v),
             )
         }
-        pub fn closure88(unitVar: (), v0_1: std::string::String) -> Documents::US36 {
+        pub fn closure87(unitVar: (), v0_1: std::string::String) -> Documents::US36 {
             Documents::US36::US36_1(v0_1)
         }
-        pub fn method186() -> Func1<std::string::String, Documents::US36> {
-            Func1::new(move |v: std::string::String| Documents::closure88((), v))
+        pub fn method192() -> Func1<std::string::String, Documents::US36> {
+            Func1::new(move |v: std::string::String| Documents::closure87((), v))
         }
-        pub fn method187(
+        pub fn method193(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -11545,8 +11622,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: std::string::String,
         ) -> string {
-            let v9: string = Documents::method77(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method76(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -11555,8 +11632,8 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure89(v0_1: std::string::String, unitVar: ()) {
-            if Documents::method6(Documents::US0::US0_4) {
+        pub fn closure88(v0_1: std::string::String, unitVar: ()) {
+            if Documents::method7(Documents::US0::US0_4) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -11568,58 +11645,54 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method187(
+                Documents::method19(Documents::method193(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method75(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method74(),
                     v0_1,
                 ))
             };
         }
-        pub fn method189(v0_1: usize) -> string {
+        pub fn method195(v0_1: usize) -> string {
             let v2: LrcPtr<Documents::Mut3> = LrcPtr::new(Documents::Mut3 {
-                l0: MutCell::new(Documents::method13()),
+                l0: MutCell::new(Documents::method14()),
             });
             let v9: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("{ ")), ());
+                Documents::closure8(v2.clone(), string("{ "), ());
                 ()
             };
             let v18: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string("result_len")), ());
+                Documents::closure8(v2.clone(), string("result_len"), ());
                 ()
             };
             let v27: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" = ")), ());
+                Documents::closure8(v2.clone(), string(" = "), ());
                 ()
             };
             let v32: std::string::String = format!("{:#?}", v0_1);
             let v65: () = {
-                Documents::closure8(
-                    v2.clone(),
-                    sprintf!("{}", fable_library_rust::String_::fromString(v32)),
-                    (),
-                );
+                Documents::closure8(v2.clone(), fable_library_rust::String_::fromString(v32), ());
                 ()
             };
             let v74: () = {
-                Documents::closure8(v2.clone(), sprintf!("{}", string(" }")), ());
+                Documents::closure8(v2.clone(), string(" }"), ());
                 ()
             };
             v2.l0.get().clone()
         }
-        pub fn method188(
+        pub fn method194(
             v0_1: LrcPtr<Documents::Mut0>,
             v1_1: LrcPtr<Documents::Mut1>,
             v2: LrcPtr<Documents::Mut2>,
@@ -11630,8 +11703,8 @@ mod module_2555ccf7 {
             v7: string,
             v8: usize,
         ) -> string {
-            let v9: string = Documents::method189(v8);
-            Documents::method17(sprintf!(
+            let v9: string = Documents::method195(v8);
+            Documents::method18(sprintf!(
                 "{} {} #{} {} / {}",
                 v6,
                 v7,
@@ -11640,7 +11713,7 @@ mod module_2555ccf7 {
                 v9
             ))
         }
-        pub fn closure90(
+        pub fn closure89(
             v0_1: Vec<
                 Result<
                     LrcPtr<(
@@ -11652,7 +11725,7 @@ mod module_2555ccf7 {
             >,
             unitVar: (),
         ) {
-            if Documents::method6(Documents::US0::US0_2) {
+            if Documents::method7(Documents::US0::US0_2) {
                 let v5: () = {
                     Documents::closure6((), ());
                     ()
@@ -11664,22 +11737,22 @@ mod module_2555ccf7 {
                     LrcPtr<Documents::Mut3>,
                     LrcPtr<Documents::Mut4>,
                     Option<i64>,
-                ) = getValue(Documents::TraceState::trace_state().get().clone());
+                ) = Documents::TraceState::trace_state().get().clone().unwrap();
                 let v24: Option<i64> = patternInput.5.clone();
                 let v23: LrcPtr<Documents::Mut4> = patternInput.4.clone();
                 let v22: LrcPtr<Documents::Mut3> = patternInput.3.clone();
                 let v21: LrcPtr<Documents::Mut2> = patternInput.2.clone();
                 let v20: LrcPtr<Documents::Mut1> = patternInput.1.clone();
                 let v19: LrcPtr<Documents::Mut0> = patternInput.0.clone();
-                Documents::method18(Documents::method188(
+                Documents::method19(Documents::method194(
                     v19.clone(),
                     v20.clone(),
                     v21.clone(),
                     v22.clone(),
                     v23.clone(),
                     v24.clone(),
-                    Documents::method7(v19, v20, v21, v22, v23, v24),
-                    Documents::method11(),
+                    Documents::method8(v19, v20, v21, v22, v23, v24),
+                    Documents::method12(),
                     v0_1.len(),
                 ))
             };
@@ -11695,58 +11768,62 @@ mod module_2555ccf7 {
             };
             let v59: clap::Command = Documents::method0();
             let v61: clap::ArgMatches = clap::Command::get_matches(v59);
-            let v62: string = Documents::method19();
+            let v62: string = Documents::method20();
             let v65: &str = &*v62;
             let v88: Option<std::string::String> =
                 clap::ArgMatches::get_one(&v61.clone(), v65).cloned();
             let v102: Documents::US6 =
-                defaultValue(Documents::US6::US6_1, map(Documents::method20(), v88));
+                defaultValue(Documents::US6::US6_1, map(Documents::method21(), v88));
             let v109: std::string::String = match &v102 {
                 Documents::US6::US6_0(v102_0_0) => match &v102 {
                     Documents::US6::US6_0(x) => x.clone(),
                     _ => unreachable!(),
-                },
+                }
+                .clone(),
                 _ => panic!("{}", string("Option does not have a value."),),
             };
             let v111: string = fable_library_rust::String_::fromString(v109);
-            let v112: string = Documents::method21();
+            let v112: string = Documents::method22();
             let v115: &str = &*v112;
             let v138: Option<std::string::String> =
                 clap::ArgMatches::get_one(&v61.clone(), v115).cloned();
             let v152: Documents::US6 =
-                defaultValue(Documents::US6::US6_1, map(Documents::method20(), v138));
+                defaultValue(Documents::US6::US6_1, map(Documents::method21(), v138));
             let v159: std::string::String = match &v152 {
                 Documents::US6::US6_0(v152_0_0) => match &v152 {
                     Documents::US6::US6_0(x) => x.clone(),
                     _ => unreachable!(),
-                },
+                }
+                .clone(),
                 _ => panic!("{}", string("Option does not have a value."),),
             };
             let v161: string = fable_library_rust::String_::fromString(v159);
-            let v162: string = Documents::method22();
+            let v162: string = Documents::method23();
             let v165: &str = &*v162;
             let v188: Option<std::string::String> =
                 clap::ArgMatches::get_one(&v61.clone(), v165).cloned();
             let v202: Documents::US6 =
-                defaultValue(Documents::US6::US6_1, map(Documents::method20(), v188));
+                defaultValue(Documents::US6::US6_1, map(Documents::method21(), v188));
             let v209: std::string::String = match &v202 {
                 Documents::US6::US6_0(v202_0_0) => match &v202 {
                     Documents::US6::US6_0(x) => x.clone(),
                     _ => unreachable!(),
-                },
+                }
+                .clone(),
                 _ => panic!("{}", string("Option does not have a value."),),
             };
             let v211: string = fable_library_rust::String_::fromString(v209);
-            let v212: string = Documents::method23();
+            let v212: string = Documents::method24();
             let v215: &str = &*v212;
             let v238: Option<std::string::String> = clap::ArgMatches::get_one(&v61, v215).cloned();
             let v252: Documents::US6 =
-                defaultValue(Documents::US6::US6_1, map(Documents::method20(), v238));
+                defaultValue(Documents::US6::US6_1, map(Documents::method21(), v238));
             let v259: std::string::String = match &v252 {
                 Documents::US6::US6_0(v252_0_0) => match &v252 {
                     Documents::US6::US6_0(x) => x.clone(),
                     _ => unreachable!(),
-                },
+                }
+                .clone(),
                 _ => panic!("{}", string("Option does not have a value."),),
             };
             let v262: std::pin::Pin<
@@ -11766,7 +11843,7 @@ mod module_2555ccf7 {
                         >,
                     >,
                 >,
-            > = Documents::method24(
+            > = Documents::method25(
                 fable_library_rust::String_::fromString(v259),
                 v211,
                 v161,
@@ -11784,8 +11861,8 @@ mod module_2555ccf7 {
                 >,
                 std::string::String,
             > = futures::executor::block_on(v262);
-            let v265 = Documents::method185();
-            let v266 = Documents::method186();
+            let v265 = Documents::method191();
+            let v266 = Documents::method192();
             let v267: Documents::US36 = match &v264 {
                 Err(v264_1_0) => v266(v264_1_0.clone()),
                 Ok(v264_0_0) => v265(v264_0_0.clone()),
@@ -11793,14 +11870,14 @@ mod module_2555ccf7 {
             match &v267 {
                 Documents::US36::US36_0(v267_0_0) => {
                     let v271: () = {
-                        Documents::closure90(v267_0_0.clone(), ());
+                        Documents::closure89(v267_0_0.clone(), ());
                         ()
                     };
                     0_i32
                 }
                 Documents::US36::US36_1(v267_1_0) => {
                     let v316: () = {
-                        Documents::closure89(v267_1_0.clone(), ());
+                        Documents::closure88(v267_1_0.clone(), ());
                         ()
                     };
                     1_i32
