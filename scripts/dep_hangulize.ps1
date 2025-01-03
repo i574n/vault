@@ -3,7 +3,7 @@ param(
 )
 Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
-. ../../polyglot/scripts/core.ps1
+. ../deps/polyglot/scripts/core.ps1
 
 
 Set-Location (New-Item -ItemType Directory -Path "../deps" -Force)

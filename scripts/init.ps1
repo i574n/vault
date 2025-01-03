@@ -17,12 +17,13 @@ if (!$fast) {
 
 . ../../polyglot/scripts/core.ps1
 
+EnsureSymbolicLink -Path "../deps/polyglot" -Target "../../polyglot"
 
-{ pwsh ../../polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../../polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../../polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../../polyglot/apps/spiral/builder/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../../polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../deps/polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../deps/polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../deps/polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../deps/polyglot/apps/spiral/builder/build.ps1 -fast 1 } | Invoke-Block
+{ pwsh ../deps/polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
 
 { sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
 { sudo apt install -y texlive-xetex pandoc fonts-nanum-coding } | Invoke-Block -Linux -Distro ubuntu

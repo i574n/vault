@@ -5,7 +5,7 @@ param(
 )
 Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
-. ../../polyglot/scripts/core.ps1
+. ../deps/polyglot/scripts/core.ps1
 
 
 if (!$SkipSync) {
@@ -63,4 +63,4 @@ Set-Location $ScriptDir
 
 { . ../apps/documents/target/release/documents$(_exe) --source-dir $vaultDir --dist-dir $distDir --cache-dir $targetDir --hangul-spec por-br } | Invoke-Block
 
-{ . ../../polyglot/apps/dir-tree-html/dist/DirTreeHtml$(_exe) --dir ../dist --html ../dist/index.html } | Invoke-Block
+{ . ../deps/polyglot/apps/dir-tree-html/dist/DirTreeHtml$(_exe) --dir ../dist --html ../dist/index.html } | Invoke-Block
