@@ -22,7 +22,6 @@ EnsureSymbolicLink -Path "../deps/polyglot" -Target "../../polyglot"
 { pwsh ../deps/polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
 { pwsh ../deps/polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
 { pwsh ../deps/polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../deps/polyglot/apps/spiral/builder/build.ps1 -fast 1 } | Invoke-Block
 { pwsh ../deps/polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
 
 { sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
