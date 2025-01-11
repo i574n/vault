@@ -21,6 +21,7 @@ if (!$SkipSync) {
         --exclude 'dist' `
     `
         --include 'LICENSE' `
+        --include 'Dockerfile' `
         --include '*.editorconfig' `
         --include '*.edn' `
         --include '*.epub' `

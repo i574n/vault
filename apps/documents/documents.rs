@@ -76,7 +76,7 @@ mod module_2555ccf7 {
         use fable_library_rust::System::Collections::Generic::IEnumerable_1;
         use fable_library_rust::System::Exception;
         use fable_library_rust::System::Text::StringBuilder;
-        type CancellationToken = ();
+        use fable_library_rust::System::Threading::CancellationToken;
         type TaskCanceledException = ();
         pub mod TraceState {
             use super::*;
