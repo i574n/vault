@@ -50,8 +50,10 @@ $distDir = "$vaultDir/dist"
 
 $targetDir = "$vaultDir/target/gh-pages"
 New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
+$targetDirLog = $targetDir
 $targetDir = (Resolve-Path $targetDir).Path
-Write-Output "publish / targetDir: $targetDir / distDir: $distDir"
+$resolvedTargetDir = ResolveLink $targetDir
+Write-Output "vault/scripts/publish.ps1 / targetDir: $targetDir / distDir: $distDir / targetDirLog: $targetDirLog / resolvedTargetDir: $resolvedTargetDir"
 if (!(Test-Path $targetDir)) {
     exit 1
 }
