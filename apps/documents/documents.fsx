@@ -524,7 +524,9 @@ and closure3 () (v0 : string) : US5 =
 and method6 () : (string -> US5) =
     closure3()
 and method3 (v0 : string) : string =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -704,7 +706,9 @@ and method2 () : struct (US1 * US2) =
         if v51 then
             US2_1
         else
+            (* run_target_args'
             let v55 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -737,7 +741,9 @@ and method2 () : struct (US1 * US2) =
             let _run_target_args'_v55 = v64 
             #endif
             let v65 : System.DateTime = _run_target_args'_v55 
+            (* run_target_args'
             let v70 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -782,7 +788,9 @@ and method2 () : struct (US1 * US2) =
 and closure4 () (v0 : string) : unit =
     ()
 and method1 (v0 : US0) : struct (Mut0 * Mut1 * Mut2 * Mut3 * Mut4 * int64 option) =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -797,14 +805,18 @@ and method1 (v0 : US0) : struct (Mut0 * Mut1 * Mut2 * Mut3 * Mut4 * int64 option
     #endif
 #if FABLE_COMPILER_RUST && CONTRACT
     let v6 : string = "AUTOMATION"
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v8 : string = "option_env!(\"" + v6 + "\").unwrap_or(\"\")"
     let v9 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v8 
+    (* run_target_args'
     let v10 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -847,7 +859,9 @@ and method1 (v0 : US0) : struct (Mut0 * Mut1 * Mut2 * Mut3 * Mut4 * int64 option
 #if FABLE_COMPILER_RUST && WASM
     let v36 : string = "option_env!(\"" + v6 + "\").unwrap_or(\"\")"
     let v37 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v36 
+    (* run_target_args'
     let v38 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -890,7 +904,9 @@ and method1 (v0 : US0) : struct (Mut0 * Mut1 * Mut2 * Mut3 * Mut4 * int64 option
 #if FABLE_COMPILER_RUST && CONTRACT
     let v64 : string = "option_env!(\"" + v6 + "\").unwrap_or(\"\")"
     let v65 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v64 
+    (* run_target_args'
     let v66 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -1042,7 +1058,9 @@ and method11 () : string =
     let v0 : string = "HH:mm:ss"
     v0
 and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 option) : string =
+    (* run_target_args'
     let v6 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -1054,7 +1072,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
     let v117 : System.DateTime =
         match v20 with
         | US2_1 -> (* None *)
+            (* run_target_args'
             let v101 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1089,7 +1109,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let v111 : System.DateTime = _run_target_args'_v101 
             v111
         | US2_0(v24) -> (* Some *)
+            (* run_target_args'
             let v25 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1122,7 +1144,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let _run_target_args'_v25 = v34 
             #endif
             let v35 : System.DateTime = _run_target_args'_v25 
+            (* run_target_args'
             let v40 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1194,7 +1218,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
     let v249 : System.DateTime =
         match v152 with
         | US2_1 -> (* None *)
+            (* run_target_args'
             let v233 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1229,7 +1255,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let v243 : System.DateTime = _run_target_args'_v233 
             v243
         | US2_0(v156) -> (* Some *)
+            (* run_target_args'
             let v157 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1262,7 +1290,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let _run_target_args'_v157 = v166 
             #endif
             let v167 : System.DateTime = _run_target_args'_v157 
+            (* run_target_args'
             let v172 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1362,7 +1392,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
     let v418 : System.DateTime =
         match v321 with
         | US2_1 -> (* None *)
+            (* run_target_args'
             let v402 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1397,7 +1429,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let v412 : System.DateTime = _run_target_args'_v402 
             v412
         | US2_0(v325) -> (* Some *)
+            (* run_target_args'
             let v326 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1430,7 +1464,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let _run_target_args'_v326 = v335 
             #endif
             let v336 : System.DateTime = _run_target_args'_v326 
+            (* run_target_args'
             let v341 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1502,7 +1538,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
     let v550 : System.DateTime =
         match v453 with
         | US2_1 -> (* None *)
+            (* run_target_args'
             let v534 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1537,7 +1575,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let v544 : System.DateTime = _run_target_args'_v534 
             v544
         | US2_0(v457) -> (* Some *)
+            (* run_target_args'
             let v458 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1570,7 +1610,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let _run_target_args'_v458 = v467 
             #endif
             let v468 : System.DateTime = _run_target_args'_v458 
+            (* run_target_args'
             let v473 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1642,7 +1684,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
     let v682 : System.DateTime =
         match v585 with
         | US2_1 -> (* None *)
+            (* run_target_args'
             let v666 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1677,7 +1721,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let v676 : System.DateTime = _run_target_args'_v666 
             v676
         | US2_0(v589) -> (* Some *)
+            (* run_target_args'
             let v590 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1710,7 +1756,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let _run_target_args'_v590 = v599 
             #endif
             let v600 : System.DateTime = _run_target_args'_v590 
+            (* run_target_args'
             let v605 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1782,7 +1830,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
     let v814 : System.DateTime =
         match v717 with
         | US2_1 -> (* None *)
+            (* run_target_args'
             let v798 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1817,7 +1867,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let v808 : System.DateTime = _run_target_args'_v798 
             v808
         | US2_0(v721) -> (* Some *)
+            (* run_target_args'
             let v722 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1850,7 +1902,9 @@ and method8 (v0 : Mut0, v1 : Mut1, v2 : Mut2, v3 : Mut3, v4 : Mut4, v5 : int64 o
             let _run_target_args'_v722 = v731 
             #endif
             let v732 : System.DateTime = _run_target_args'_v722 
+            (* run_target_args'
             let v737 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -1947,14 +2001,18 @@ and method12 () : string =
     let v2 : string = v1 ()
     let v5 : char = v2.[int 0]
     let v6 : string = method13(v5)
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v8 : string = "inline_colorization::color_bright_green"
     let v9 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v8 
+    (* run_target_args'
     let v10 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2001,7 +2059,9 @@ and method12 () : string =
 #if FABLE_COMPILER_RUST && WASM
     let v40 : string = "inline_colorization::color_bright_green"
     let v41 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v40 
+    (* run_target_args'
     let v42 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2048,7 +2108,9 @@ and method12 () : string =
 #if FABLE_COMPILER_RUST && CONTRACT
     let v72 : string = "inline_colorization::color_bright_green"
     let v73 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v72 
+    (* run_target_args'
     let v74 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2192,7 +2254,9 @@ and method19 (v0 : string) : unit =
     let v36 : (unit -> unit) = closure9(v17)
     let v37 : unit = (fun () -> v36 (); v35) ()
     let v40 : (string -> unit) = closure10()
+    (* run_target_args'
     let v41 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2221,7 +2285,9 @@ and method19 (v0 : string) : unit =
                 let v50 : string = v48 + v49 
                 let v51 : string = v50 + v0 
                 v51
+    (* run_target_args'
     let v54 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2347,12 +2413,16 @@ and method24 () : string =
     let v0 : string = "hangul-spec"
     v0
 and method26 (v0 : string, v1 : string) : string =
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2388,7 +2458,9 @@ and method26 (v0 : string, v1 : string) : string =
     let _run_target_args'_v3 = v19 
     #endif
     let v22 : Ref<Str> = _run_target_args'_v3 
+    (* run_target_args'
     let v27 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2424,7 +2496,9 @@ and method26 (v0 : string, v1 : string) : string =
     let _run_target_args'_v27 = v43 
     #endif
     let v46 : std_string_String = _run_target_args'_v27 
+    (* run_target_args'
     let v51 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2460,7 +2534,9 @@ and method26 (v0 : string, v1 : string) : string =
     let _run_target_args'_v51 = v67 
     #endif
     let v70 : std_path_PathBuf = _run_target_args'_v51 
+    (* run_target_args'
     let v75 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2496,7 +2572,9 @@ and method26 (v0 : string, v1 : string) : string =
     let _run_target_args'_v75 = v91 
     #endif
     let v94 : Ref<Str> = _run_target_args'_v75 
+    (* run_target_args'
     let v99 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2534,7 +2612,9 @@ and method26 (v0 : string, v1 : string) : string =
     let v118 : std_string_String = _run_target_args'_v99 
     let v123 : string = "$0.join($1)"
     let v124 : std_path_PathBuf = Fable.Core.RustInterop.emitRustExpr struct (v70, v118) v123 
+    (* run_target_args'
     let v125 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2570,7 +2650,9 @@ and method26 (v0 : string, v1 : string) : string =
     let _run_target_args'_v125 = v141 
     #endif
     let v144 : std_path_Display = _run_target_args'_v125 
+    (* run_target_args'
     let v149 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2649,12 +2731,16 @@ and method26 (v0 : string, v1 : string) : string =
     let v195 : string = _run_target_args'_v2 
     v195
 and method28 (v0 : string) : bool =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2690,7 +2776,9 @@ and method28 (v0 : string) : bool =
     let _run_target_args'_v2 = v18 
     #endif
     let v21 : Ref<Str> = _run_target_args'_v2 
+    (* run_target_args'
     let v26 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2726,7 +2814,9 @@ and method28 (v0 : string) : bool =
     let _run_target_args'_v26 = v42 
     #endif
     let v45 : std_string_String = _run_target_args'_v26 
+    (* run_target_args'
     let v50 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2804,12 +2894,16 @@ and method28 (v0 : string) : bool =
     let v97 : bool = _run_target_args'_v1 
     v97
 and method29 (v0 : string) : string option =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2845,7 +2939,9 @@ and method29 (v0 : string) : string option =
     let _run_target_args'_v2 = v18 
     #endif
     let v21 : Ref<Str> = _run_target_args'_v2 
+    (* run_target_args'
     let v26 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2881,7 +2977,9 @@ and method29 (v0 : string) : string option =
     let _run_target_args'_v26 = v42 
     #endif
     let v45 : std_string_String = _run_target_args'_v26 
+    (* run_target_args'
     let v50 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2923,7 +3021,9 @@ and method29 (v0 : string) : string option =
     let v77 : bool = Fable.Core.RustInterop.emitRustExpr v75 v76 
     let v78 : string = "x"
     let v79 : std_path_PathBuf = Fable.Core.RustInterop.emitRustExpr () v78 
+    (* run_target_args'
     let v80 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -2959,7 +3059,9 @@ and method29 (v0 : string) : string option =
     let _run_target_args'_v80 = v96 
     #endif
     let v99 : std_path_Display = _run_target_args'_v80 
+    (* run_target_args'
     let v104 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3036,7 +3138,9 @@ and method29 (v0 : string) : string option =
         if v158 then
             US5_1
         else
+            (* run_target_args'
             let v162 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -3128,14 +3232,18 @@ and method31 () : string =
     let v2 : string = v1 ()
     let v5 : char = v2.[int 0]
     let v6 : string = method13(v5)
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v8 : string = "inline_colorization::color_yellow"
     let v9 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v8 
+    (* run_target_args'
     let v10 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3182,7 +3290,9 @@ and method31 () : string =
 #if FABLE_COMPILER_RUST && WASM
     let v40 : string = "inline_colorization::color_yellow"
     let v41 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v40 
+    (* run_target_args'
     let v42 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3229,7 +3339,9 @@ and method31 () : string =
 #if FABLE_COMPILER_RUST && CONTRACT
     let v72 : string = "inline_colorization::color_yellow"
     let v73 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v72 
+    (* run_target_args'
     let v74 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3351,14 +3463,18 @@ and closure13 (v0 : string) () : unit =
         let v39 : string = method32(v19, v20, v21, v22, v23, v24, v37, v38, v0)
         method19(v39)
 and method34 () : string =
+    (* run_target_args'
     let v0 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v1 : string = "std::env::current_dir()"
     let v2 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v1 
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3394,7 +3510,9 @@ and method34 () : string =
     let _run_target_args'_v3 = v13 
     #endif
     let v14 : std_path_PathBuf = _run_target_args'_v3 
+    (* run_target_args'
     let v17 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3430,7 +3548,9 @@ and method34 () : string =
     let _run_target_args'_v17 = v33 
     #endif
     let v36 : std_path_Display = _run_target_args'_v17 
+    (* run_target_args'
     let v41 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3500,7 +3620,9 @@ and method34 () : string =
 and method40 (v0 : std_io_Error) : string =
     let v1 : string = method14()
     let v2 : Mut3 = {l0 = v1} : Mut3
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3561,12 +3683,16 @@ and closure16 () (v0 : string) : US8 =
 and method42 () : (string -> US8) =
     closure16()
 and method45 (v0 : string) : string =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3602,7 +3728,9 @@ and method45 (v0 : string) : string =
     let _run_target_args'_v2 = v18 
     #endif
     let v21 : Ref<Str> = _run_target_args'_v2 
+    (* run_target_args'
     let v26 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3638,7 +3766,9 @@ and method45 (v0 : string) : string =
     let _run_target_args'_v26 = v42 
     #endif
     let v45 : std_string_String = _run_target_args'_v26 
+    (* run_target_args'
     let v50 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3686,7 +3816,9 @@ and method45 (v0 : string) : string =
     let v83 : Ref<Str> option = Fable.Core.RustInterop.emitRustExpr v81 v82 
     let v84 : string = "$0.unwrap()"
     let v85 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr v83 v84 
+    (* run_target_args'
     let v86 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -3802,7 +3934,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let v26 : string = $"file_system.read_link / "
         let v27 : string = $"path: {v0} / n: {v2} / path': {v4} / name: {v5}"
         let v28 : string = v26 + v27 
+        (* run_target_args'
         let v29 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -3838,7 +3972,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let _run_target_args'_v29 = v45 
         #endif
         let v48 : std_io_Error = _run_target_args'_v29 
+        (* run_target_args'
         let v53 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -3885,7 +4021,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v73 : (string -> Result<std_path_PathBuf, std_io_Error>) = v1 v72
                 let v74 : Result<std_path_PathBuf, std_io_Error> = v73 v67
                 let v75 : (std_io_Error -> string) = method39()
+                (* run_target_args'
                 let v76 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -3929,7 +4067,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v209 : string = $"file_system.read_link / "
                     let v210 : string = $"error': {v208} / error: {v24} / name: {v5}"
                     let v211 : string = v209 + v210 
+                    (* run_target_args'
                     let v212 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -3965,7 +4105,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v212 = v228 
                     #endif
                     let v231 : std_io_Error = _run_target_args'_v212 
+                    (* run_target_args'
                     let v236 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4003,7 +4145,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v247 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v236 
                     v247
                 | US8_0(v93) -> (* Ok *)
+                    (* run_target_args'
                     let v94 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4041,7 +4185,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v113 : std_path_Display = _run_target_args'_v94 
                     let v118 : string = v113 |> string 
                     let v121 : string = method26(v118, v5)
+                    (* run_target_args'
                     let v122 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4077,7 +4223,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v122 = v138 
                     #endif
                     let v141 : Ref<Str> = _run_target_args'_v122 
+                    (* run_target_args'
                     let v146 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4113,7 +4261,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v146 = v162 
                     #endif
                     let v165 : std_string_String = _run_target_args'_v146 
+                    (* run_target_args'
                     let v170 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4149,7 +4299,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v170 = v186 
                     #endif
                     let v189 : std_path_PathBuf = _run_target_args'_v170 
+                    (* run_target_args'
                     let v194 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4190,7 +4342,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v252 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
                 let v253 : string = $"path: {v0} / error: {v24} / path': {v4} / name: {v5}"
                 let v254 : string = v252 + v253 
+                (* run_target_args'
                 let v255 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -4226,7 +4380,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let _run_target_args'_v255 = v271 
                 #endif
                 let v274 : std_io_Error = _run_target_args'_v255 
+                (* run_target_args'
                 let v279 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -4267,7 +4423,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v294 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
             let v295 : string = $"path: {v0} / error: {v24} / path': {v4} / name: {v5}"
             let v296 : string = v294 + v295 
+            (* run_target_args'
             let v297 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -4303,7 +4461,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let _run_target_args'_v297 = v313 
             #endif
             let v316 : std_io_Error = _run_target_args'_v297 
+            (* run_target_args'
             let v321 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -4341,7 +4501,9 @@ and method44 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v332 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v321 
             v332
 and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, std_io_Error> =
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -4349,7 +4511,9 @@ and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
     let v4 : string = "std::fs::read_link(&*$0)"
     let v5 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v2 v4 
     let v6 : (std_io_Error -> string) = method39()
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -4394,7 +4558,9 @@ and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
             let v40 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure17(v0)
             method44(v0, v40, v1, v39, v2)
         | US8_0(v24) -> (* Ok *)
+            (* run_target_args'
             let v25 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -4437,7 +4603,9 @@ and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
     let v44 : string = "std::fs::read_link(&*$0)"
     let v45 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v2 v44 
     let v46 : (std_io_Error -> string) = method39()
+    (* run_target_args'
     let v47 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -4482,7 +4650,9 @@ and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
             let v80 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure17(v0)
             method44(v0, v80, v1, v79, v2)
         | US8_0(v64) -> (* Ok *)
+            (* run_target_args'
             let v65 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -4525,7 +4695,9 @@ and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
     let v84 : string = "std::fs::read_link(&*$0)"
     let v85 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v2 v84 
     let v86 : (std_io_Error -> string) = method39()
+    (* run_target_args'
     let v87 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -4570,7 +4742,9 @@ and method43 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
             let v120 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure17(v0)
             method44(v0, v120, v1, v119, v2)
         | US8_0(v104) -> (* Ok *)
+            (* run_target_args'
             let v105 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -4644,7 +4818,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let v25 : string = $"file_system.read_link / "
         let v26 : string = $"path: {v0} / n: {v2} / path': {v0} / name: {v4}"
         let v27 : string = v25 + v26 
+        (* run_target_args'
         let v28 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -4680,7 +4856,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let _run_target_args'_v28 = v44 
         #endif
         let v47 : std_io_Error = _run_target_args'_v28 
+        (* run_target_args'
         let v52 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -4727,7 +4905,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v72 : (string -> Result<std_path_PathBuf, std_io_Error>) = v1 v71
                 let v73 : Result<std_path_PathBuf, std_io_Error> = v72 v66
                 let v74 : (std_io_Error -> string) = method39()
+                (* run_target_args'
                 let v75 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -4771,7 +4951,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v208 : string = $"file_system.read_link / "
                     let v209 : string = $"error': {v207} / error: {v23} / name: {v4}"
                     let v210 : string = v208 + v209 
+                    (* run_target_args'
                     let v211 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4807,7 +4989,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v211 = v227 
                     #endif
                     let v230 : std_io_Error = _run_target_args'_v211 
+                    (* run_target_args'
                     let v235 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4845,7 +5029,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v246 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v235 
                     v246
                 | US8_0(v92) -> (* Ok *)
+                    (* run_target_args'
                     let v93 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4883,7 +5069,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v112 : std_path_Display = _run_target_args'_v93 
                     let v117 : string = v112 |> string 
                     let v120 : string = method26(v117, v4)
+                    (* run_target_args'
                     let v121 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4919,7 +5107,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v121 = v137 
                     #endif
                     let v140 : Ref<Str> = _run_target_args'_v121 
+                    (* run_target_args'
                     let v145 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4955,7 +5145,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v145 = v161 
                     #endif
                     let v164 : std_string_String = _run_target_args'_v145 
+                    (* run_target_args'
                     let v169 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -4991,7 +5183,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v169 = v185 
                     #endif
                     let v188 : std_path_PathBuf = _run_target_args'_v169 
+                    (* run_target_args'
                     let v193 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5032,7 +5226,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v251 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
                 let v252 : string = $"path: {v0} / error: {v23} / path': {v0} / name: {v4}"
                 let v253 : string = v251 + v252 
+                (* run_target_args'
                 let v254 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -5068,7 +5264,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let _run_target_args'_v254 = v270 
                 #endif
                 let v273 : std_io_Error = _run_target_args'_v254 
+                (* run_target_args'
                 let v278 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -5109,7 +5307,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v293 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
             let v294 : string = $"path: {v0} / error: {v23} / path': {v0} / name: {v4}"
             let v295 : string = v293 + v294 
+            (* run_target_args'
             let v296 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -5145,7 +5345,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let _run_target_args'_v296 = v312 
             #endif
             let v315 : std_io_Error = _run_target_args'_v296 
+            (* run_target_args'
             let v320 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -5183,7 +5385,9 @@ and method47 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v331 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v320 
             v331
 and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> =
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5191,7 +5395,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
     let v3 : string = "std::fs::read_link(&*$0)"
     let v4 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v0 v3 
     let v5 : (std_io_Error -> string) = method39()
+    (* run_target_args'
     let v6 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5236,7 +5442,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
             let v39 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure17(v0)
             method47(v0, v39, v1, v38)
         | US8_0(v23) -> (* Ok *)
+            (* run_target_args'
             let v24 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -5279,7 +5487,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
     let v43 : string = "std::fs::read_link(&*$0)"
     let v44 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v0 v43 
     let v45 : (std_io_Error -> string) = method39()
+    (* run_target_args'
     let v46 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5324,7 +5534,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
             let v79 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure17(v0)
             method47(v0, v79, v1, v78)
         | US8_0(v63) -> (* Ok *)
+            (* run_target_args'
             let v64 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -5367,7 +5579,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
     let v83 : string = "std::fs::read_link(&*$0)"
     let v84 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v0 v83 
     let v85 : (std_io_Error -> string) = method39()
+    (* run_target_args'
     let v86 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5412,7 +5626,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
             let v119 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure17(v0)
             method47(v0, v119, v1, v118)
         | US8_0(v103) -> (* Ok *)
+            (* run_target_args'
             let v104 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -5470,7 +5686,9 @@ and method38 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
     let v135 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v2 
     v135
 and method49 (v0 : System_IO_DirectoryInfo) : System.IO.FileAttributes =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5506,7 +5724,9 @@ and method49 (v0 : System_IO_DirectoryInfo) : System.IO.FileAttributes =
     let v22 : System.IO.FileAttributes = _run_target_args'_v1 
     v22
 and method50 () : System.IO.FileAttributes =
+    (* run_target_args'
     let v0 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5541,7 +5761,9 @@ and method50 () : System.IO.FileAttributes =
     let v20 : System.IO.FileAttributes = _run_target_args'_v0 
     v20
 and method51 (v0 : System.IO.FileAttributes, v1 : System.IO.FileAttributes) : bool =
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -5588,7 +5810,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let v26 : string = $"file_system.read_link / "
         let v27 : string = $"path: {v0} / n: {v2} / path': {v4} / name: {v5}"
         let v28 : string = v26 + v27 
+        (* run_target_args'
         let v29 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -5624,7 +5848,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let _run_target_args'_v29 = v45 
         #endif
         let v48 : std_io_Error = _run_target_args'_v29 
+        (* run_target_args'
         let v53 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -5671,7 +5897,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v73 : (string -> Result<std_path_PathBuf, std_io_Error>) = v1 v72
                 let v74 : Result<std_path_PathBuf, std_io_Error> = v73 v67
                 let v75 : (std_io_Error -> string) = method39()
+                (* run_target_args'
                 let v76 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -5715,7 +5943,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v209 : string = $"file_system.read_link / "
                     let v210 : string = $"error': {v208} / error: {v24} / name: {v5}"
                     let v211 : string = v209 + v210 
+                    (* run_target_args'
                     let v212 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5751,7 +5981,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v212 = v228 
                     #endif
                     let v231 : std_io_Error = _run_target_args'_v212 
+                    (* run_target_args'
                     let v236 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5789,7 +6021,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v247 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v236 
                     v247
                 | US8_0(v93) -> (* Ok *)
+                    (* run_target_args'
                     let v94 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5827,7 +6061,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v113 : std_path_Display = _run_target_args'_v94 
                     let v118 : string = v113 |> string 
                     let v121 : string = method26(v118, v5)
+                    (* run_target_args'
                     let v122 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5863,7 +6099,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v122 = v138 
                     #endif
                     let v141 : Ref<Str> = _run_target_args'_v122 
+                    (* run_target_args'
                     let v146 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5899,7 +6137,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v146 = v162 
                     #endif
                     let v165 : std_string_String = _run_target_args'_v146 
+                    (* run_target_args'
                     let v170 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5935,7 +6175,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v170 = v186 
                     #endif
                     let v189 : std_path_PathBuf = _run_target_args'_v170 
+                    (* run_target_args'
                     let v194 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -5976,7 +6218,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v252 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
                 let v253 : string = $"path: {v0} / error: {v24} / path': {v4} / name: {v5}"
                 let v254 : string = v252 + v253 
+                (* run_target_args'
                 let v255 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -6012,7 +6256,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let _run_target_args'_v255 = v271 
                 #endif
                 let v274 : std_io_Error = _run_target_args'_v255 
+                (* run_target_args'
                 let v279 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -6053,7 +6299,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v294 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
             let v295 : string = $"path: {v0} / error: {v24} / path': {v4} / name: {v5}"
             let v296 : string = v294 + v295 
+            (* run_target_args'
             let v297 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -6089,7 +6337,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let _run_target_args'_v297 = v313 
             #endif
             let v316 : std_io_Error = _run_target_args'_v297 
+            (* run_target_args'
             let v321 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -6127,7 +6377,9 @@ and method53 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v332 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v321 
             v332
 and method52 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, std_io_Error> =
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -6164,7 +6416,9 @@ and method52 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
     let v31 : System.IO.FileAttributes = method50()
     let v32 : bool = method51(v31, v30)
     if v32 then
+        (* run_target_args'
         let v33 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6197,7 +6451,9 @@ and method52 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
         let _run_target_args'_v33 = v52 
         #endif
         let v55 : System_IO_FileInfo = _run_target_args'_v33 
+        (* run_target_args'
         let v60 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6232,7 +6488,9 @@ and method52 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
         #endif
         let v81 : string = _run_target_args'_v60 
         let v86 : std_path_PathBuf = v81 |> unbox<std_path_PathBuf>
+        (* run_target_args'
         let v89 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6275,7 +6533,9 @@ and method52 (v0 : string, v1 : uint8, v2 : string) : Result<std_path_PathBuf, s
         let v105 : string = v103 + v104 
         let v106 : string = $"path: {v0} / result: {v32} / path': {v2} / n: {v1}"
         let v107 : string = v105 + v106 
+        (* run_target_args'
         let v108 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6330,7 +6590,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let v25 : string = $"file_system.read_link / "
         let v26 : string = $"path: {v0} / n: {v2} / path': {v0} / name: {v4}"
         let v27 : string = v25 + v26 
+        (* run_target_args'
         let v28 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6366,7 +6628,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
         let _run_target_args'_v28 = v44 
         #endif
         let v47 : std_io_Error = _run_target_args'_v28 
+        (* run_target_args'
         let v52 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6413,7 +6677,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v72 : (string -> Result<std_path_PathBuf, std_io_Error>) = v1 v71
                 let v73 : Result<std_path_PathBuf, std_io_Error> = v72 v66
                 let v74 : (std_io_Error -> string) = method39()
+                (* run_target_args'
                 let v75 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -6457,7 +6723,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v208 : string = $"file_system.read_link / "
                     let v209 : string = $"error': {v207} / error: {v23} / name: {v4}"
                     let v210 : string = v208 + v209 
+                    (* run_target_args'
                     let v211 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6493,7 +6761,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v211 = v227 
                     #endif
                     let v230 : std_io_Error = _run_target_args'_v211 
+                    (* run_target_args'
                     let v235 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6531,7 +6801,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v246 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v235 
                     v246
                 | US8_0(v92) -> (* Ok *)
+                    (* run_target_args'
                     let v93 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6569,7 +6841,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let v112 : std_path_Display = _run_target_args'_v93 
                     let v117 : string = v112 |> string 
                     let v120 : string = method26(v117, v4)
+                    (* run_target_args'
                     let v121 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6605,7 +6879,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v121 = v137 
                     #endif
                     let v140 : Ref<Str> = _run_target_args'_v121 
+                    (* run_target_args'
                     let v145 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6641,7 +6917,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v145 = v161 
                     #endif
                     let v164 : std_string_String = _run_target_args'_v145 
+                    (* run_target_args'
                     let v169 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6677,7 +6955,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                     let _run_target_args'_v169 = v185 
                     #endif
                     let v188 : std_path_PathBuf = _run_target_args'_v169 
+                    (* run_target_args'
                     let v193 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -6718,7 +6998,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let v251 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
                 let v252 : string = $"path: {v0} / error: {v23} / path': {v0} / name: {v4}"
                 let v253 : string = v251 + v252 
+                (* run_target_args'
                 let v254 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -6754,7 +7036,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
                 let _run_target_args'_v254 = v270 
                 #endif
                 let v273 : std_io_Error = _run_target_args'_v254 
+                (* run_target_args'
                 let v278 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -6795,7 +7079,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v293 : string = $"file_system.read_link / run / The file or directory is not a reparse point. / "
             let v294 : string = $"path: {v0} / error: {v23} / path': {v0} / name: {v4}"
             let v295 : string = v293 + v294 
+            (* run_target_args'
             let v296 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -6831,7 +7117,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let _run_target_args'_v296 = v312 
             #endif
             let v315 : std_io_Error = _run_target_args'_v296 
+            (* run_target_args'
             let v320 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -6869,7 +7157,9 @@ and method54 (v0 : string, v1 : (uint8 -> (string -> Result<std_path_PathBuf, st
             let v331 : Result<std_path_PathBuf, std_io_Error> = _run_target_args'_v320 
             v331
 and method48 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> =
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -6906,7 +7196,9 @@ and method48 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
     let v30 : System.IO.FileAttributes = method50()
     let v31 : bool = method51(v30, v29)
     if v31 then
+        (* run_target_args'
         let v32 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6939,7 +7231,9 @@ and method48 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
         let _run_target_args'_v32 = v51 
         #endif
         let v54 : System_IO_FileInfo = _run_target_args'_v32 
+        (* run_target_args'
         let v59 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -6974,7 +7268,9 @@ and method48 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
         #endif
         let v80 : string = _run_target_args'_v59 
         let v85 : std_path_PathBuf = v80 |> unbox<std_path_PathBuf>
+        (* run_target_args'
         let v88 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -7017,7 +7313,9 @@ and method48 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
         let v104 : string = v102 + v103 
         let v105 : string = $"path: {v0} / result: {v31} / path': {v0} / n: {v1}"
         let v106 : string = v104 + v105 
+        (* run_target_args'
         let v107 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -7056,7 +7354,9 @@ and method48 (v0 : string, v1 : uint8) : Result<std_path_PathBuf, std_io_Error> 
         let v131 : (uint8 -> (string -> Result<std_path_PathBuf, std_io_Error>)) = closure19(v0)
         method54(v0, v131, v1, v126)
 and method37 (v0 : string) : Result<std_path_PathBuf, std_io_Error> =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7123,14 +7423,18 @@ and method55 () : (std_path_PathBuf -> US9) =
 and method57 (v0 : string) : string =
     v0
 and method56 (v0 : string, v1 : string, v2 : string) : string =
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v4 : string = $"regex::Regex::new(&$0)"
     let v5 : Result<regex_Regex, regex_Error> = Fable.Core.RustInterop.emitRustExpr v0 v4 
+    (* run_target_args'
     let v6 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7208,7 +7512,9 @@ and method36 (v0 : string) : string =
         v2
     else
         let v3 : Result<std_path_PathBuf, std_io_Error> = method37(v0)
+        (* run_target_args'
         let v4 : unit = ()
+        run_target_args' *)
         
 #if FABLE_COMPILER || WASM || CONTRACT
         
@@ -7253,7 +7559,9 @@ and method36 (v0 : string) : string =
             | US9_1 -> (* None *)
                 v0
             | US9_0(v35) -> (* Some *)
+                (* run_target_args'
                 let v36 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -7317,7 +7625,9 @@ and method59 (v0 : int32, v1 : Mut6) : bool =
     let v3 : bool = v2 < v0
     v3
 and method60 () : char =
+    (* run_target_args'
     let v0 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7355,12 +7665,16 @@ and method60 () : char =
 and method61 (v0 : string) : string =
     v0
 and method35 (v0 : string) : string =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7396,7 +7710,9 @@ and method35 (v0 : string) : string =
     let _run_target_args'_v2 = v18 
     #endif
     let v21 : Ref<Str> = _run_target_args'_v2 
+    (* run_target_args'
     let v26 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7432,7 +7748,9 @@ and method35 (v0 : string) : string =
     let _run_target_args'_v26 = v42 
     #endif
     let v45 : std_string_String = _run_target_args'_v26 
+    (* run_target_args'
     let v50 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7585,7 +7903,9 @@ and method35 (v0 : string) : string =
         else
             let v166 : string = "std::fs::canonicalize(&*$0)"
             let v167 : Result<std_path_PathBuf, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v0 v166 
+            (* run_target_args'
             let v168 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -7621,7 +7941,9 @@ and method35 (v0 : string) : string =
             let _run_target_args'_v168 = v178 
             #endif
             let v179 : std_path_PathBuf = _run_target_args'_v168 
+            (* run_target_args'
             let v182 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -7657,7 +7979,9 @@ and method35 (v0 : string) : string =
             let _run_target_args'_v182 = v198 
             #endif
             let v201 : std_path_Display = _run_target_args'_v182 
+            (* run_target_args'
             let v206 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -7736,14 +8060,18 @@ and method62 () : string =
     let v2 : string = v1 ()
     let v5 : char = v2.[int 0]
     let v6 : string = method13(v5)
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v8 : string = "inline_colorization::color_bright_blue"
     let v9 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v8 
+    (* run_target_args'
     let v10 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7790,7 +8118,9 @@ and method62 () : string =
 #if FABLE_COMPILER_RUST && WASM
     let v40 : string = "inline_colorization::color_bright_blue"
     let v41 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v40 
+    (* run_target_args'
     let v42 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -7837,7 +8167,9 @@ and method62 () : string =
 #if FABLE_COMPILER_RUST && CONTRACT
     let v72 : string = "inline_colorization::color_bright_blue"
     let v73 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v72 
+    (* run_target_args'
     let v74 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8011,7 +8343,9 @@ and closure22 (v0 : string, v1 : string, v2 : string, v3 : string) () : unit =
         let v42 : string = method63(v22, v23, v24, v25, v26, v27, v40, v41, v1, v2, v3, v0)
         method19(v42)
 and closure24 () (v0 : std_io_Error) : std_string_String =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8078,7 +8412,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
     let v17 : string = "v16.await"
     let v18 : Result<std_fs_FileType, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v17 
     let v19 : (std_io_Error -> std_string_String) = method65()
+    (* run_target_args'
     let v20 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8127,7 +8463,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
             else
                 let v41 : string = "async_walkdir::DirEntry::path(&$0)"
                 let v42 : std_path_PathBuf = Fable.Core.RustInterop.emitRustExpr v0 v41 
+                (* run_target_args'
                 let v43 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -8163,7 +8501,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
                 let _run_target_args'_v43 = v59 
                 #endif
                 let v62 : std_path_Display = _run_target_args'_v43 
+                (* run_target_args'
                 let v67 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -8218,7 +8558,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
         | _ ->
             let v107 : string = "async_walkdir::DirEntry::path(&$0)"
             let v108 : std_path_PathBuf = Fable.Core.RustInterop.emitRustExpr v0 v107 
+            (* run_target_args'
             let v109 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -8254,7 +8596,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
             let _run_target_args'_v109 = v125 
             #endif
             let v128 : std_path_Display = _run_target_args'_v109 
+            (* run_target_args'
             let v133 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -8312,7 +8656,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
     let x = v172 //
     let v176 : _ = x
     let v177 : unit = ()
+    (* run_target_args'
     let v178 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8370,7 +8716,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
     let x = v203 //
     let v205 : _ = x
     let v206 : unit = ()
+    (* run_target_args'
     let v207 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8410,7 +8758,9 @@ and closure23 () (v0 : async_walkdir_DirEntry) : std_pin_Pin<Box<LifetimeJoin<Dy
     let v221 : std_pin_Pin<Box<LifetimeJoin<Dyn<std_future_Future<async_walkdir_Filtering>>, Send<Dyn<std_future_Future<async_walkdir_Filtering>>>>>> = Fable.Core.RustInterop.emitRustExpr () v220 
     v221
 and closure28 () (v0 : async_walkdir_Error) : std_string_String =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8468,14 +8818,18 @@ and method72 () : string =
     let v2 : string = v1 ()
     let v5 : char = v2.[int 0]
     let v6 : string = method13(v5)
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v8 : string = "inline_colorization::color_bright_red"
     let v9 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v8 
+    (* run_target_args'
     let v10 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8522,7 +8876,9 @@ and method72 () : string =
 #if FABLE_COMPILER_RUST && WASM
     let v40 : string = "inline_colorization::color_bright_red"
     let v41 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v40 
+    (* run_target_args'
     let v42 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8569,7 +8925,9 @@ and method72 () : string =
 #if FABLE_COMPILER_RUST && CONTRACT
     let v72 : string = "inline_colorization::color_bright_red"
     let v73 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v72 
+    (* run_target_args'
     let v74 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8661,7 +9019,9 @@ and method74 (v0 : std_string_String) : string =
     let v25 : unit = ()
     let v26 : (unit -> unit) = closure8(v2, v22)
     let v27 : unit = (fun () -> v26 (); v25) ()
+    (* run_target_args'
     let v30 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8734,7 +9094,9 @@ and closure31 (v0 : std_string_String) () : unit =
         method19(v39)
 and closure27 () (v0 : Result<async_walkdir_DirEntry, async_walkdir_Error>) : string option =
     let v1 : (async_walkdir_Error -> std_string_String) = method69()
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -8783,7 +9145,9 @@ and closure27 () (v0 : Result<async_walkdir_DirEntry, async_walkdir_Error>) : st
         | US12_0(v19) -> (* Ok *)
             let v20 : string = "async_walkdir::DirEntry::path(&$0)"
             let v21 : std_path_PathBuf = Fable.Core.RustInterop.emitRustExpr v19 v20 
+            (* run_target_args'
             let v22 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -8819,7 +9183,9 @@ and closure27 () (v0 : Result<async_walkdir_DirEntry, async_walkdir_Error>) : st
             let _run_target_args'_v22 = v38 
             #endif
             let v41 : std_path_Display = _run_target_args'_v22 
+            (* run_target_args'
             let v46 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -8885,7 +9251,9 @@ and method76 (v0 : unativeint) : string =
     let v25 : unit = ()
     let v26 : (unit -> unit) = closure8(v2, v22)
     let v27 : unit = (fun () -> v26 (); v25) ()
+    (* run_target_args'
     let v30 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -10792,7 +11160,9 @@ and method105 (v0 : string, v1 : string, v2 : string, v3 : System.Threading.Canc
     let v158 : unit = ()
     let v159 : (unit -> unit) = closure8(v10, v155)
     let v160 : unit = (fun () -> v159 (); v158) ()
+    (* run_target_args'
     let v163 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -10869,7 +11239,9 @@ and method105 (v0 : string, v1 : string, v2 : string, v3 : System.Threading.Canc
     let v257 : unit = ()
     let v258 : (unit -> unit) = closure8(v10, v254)
     let v259 : unit = (fun () -> v258 (); v257) ()
+    (* run_target_args'
     let v262 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -10928,7 +11300,9 @@ and method105 (v0 : string, v1 : string, v2 : string, v3 : System.Threading.Canc
     let v320 : unit = ()
     let v321 : (unit -> unit) = closure8(v10, v317)
     let v322 : unit = (fun () -> v321 (); v320) ()
+    (* run_target_args'
     let v325 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11011,7 +11385,9 @@ and method105 (v0 : string, v1 : string, v2 : string, v3 : System.Threading.Canc
     let v419 : unit = ()
     let v420 : (unit -> unit) = closure8(v10, v416)
     let v421 : unit = (fun () -> v420 (); v419) ()
+    (* run_target_args'
     let v424 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11184,7 +11560,9 @@ and method118 (v0 : bool, v1 : std_string_String) : string =
     let v63 : unit = ()
     let v64 : (unit -> unit) = closure8(v3, v60)
     let v65 : unit = (fun () -> v64 (); v63) ()
+    (* run_target_args'
     let v68 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11266,14 +11644,18 @@ and method119 () : string =
     let v2 : string = v1 ()
     let v5 : char = v2.[int 0]
     let v6 : string = method13(v5)
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v8 : string = "inline_colorization::color_bright_black"
     let v9 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v8 
+    (* run_target_args'
     let v10 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11320,7 +11702,9 @@ and method119 () : string =
 #if FABLE_COMPILER_RUST && WASM
     let v40 : string = "inline_colorization::color_bright_black"
     let v41 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v40 
+    (* run_target_args'
     let v42 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11367,7 +11751,9 @@ and method119 () : string =
 #if FABLE_COMPILER_RUST && CONTRACT
     let v72 : string = "inline_colorization::color_bright_black"
     let v73 : Ref<Str> = Fable.Core.RustInterop.emitRustExpr () v72 
+    (* run_target_args'
     let v74 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11470,7 +11856,9 @@ and closure52 (v0 : string) () : unit =
                 method120(v19, v20, v21, v22, v23, v24, v37, v38, v0)
         method19(v42)
 and closure53 () (v0 : std_sync_mpsc_SendError<std_string_String>) : std_string_String =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11706,7 +12094,9 @@ and method138 (v0 : string, v1 : US5, v2 : string, v3 : System.Threading.Cancell
     let v161 : unit = ()
     let v162 : (unit -> unit) = closure8(v10, v158)
     let v163 : unit = (fun () -> v162 (); v161) ()
+    (* run_target_args'
     let v166 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11783,7 +12173,9 @@ and method138 (v0 : string, v1 : US5, v2 : string, v3 : System.Threading.Cancell
     let v260 : unit = ()
     let v261 : (unit -> unit) = closure8(v10, v257)
     let v262 : unit = (fun () -> v261 (); v260) ()
+    (* run_target_args'
     let v265 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11842,7 +12234,9 @@ and method138 (v0 : string, v1 : US5, v2 : string, v3 : System.Threading.Cancell
     let v323 : unit = ()
     let v324 : (unit -> unit) = closure8(v10, v320)
     let v325 : unit = (fun () -> v324 (); v323) ()
+    (* run_target_args'
     let v328 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -11925,7 +12319,9 @@ and method138 (v0 : string, v1 : US5, v2 : string, v3 : System.Threading.Cancell
     let v422 : unit = ()
     let v423 : (unit -> unit) = closure8(v10, v419)
     let v424 : unit = (fun () -> v423 (); v422) ()
+    (* run_target_args'
     let v427 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12003,7 +12399,9 @@ and closure61 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
 and method139 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : (struct (string * string) []), v3 : (struct (int32 * string * bool) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : bool, v6 : string option) : (struct (string * string) []) =
     v2
 and method142 (v0 : System.Diagnostics.DataReceivedEventArgs) : string =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12043,7 +12441,9 @@ and closure63 () (v0 : (struct (int32 * string * bool) -> Async<unit>)) : US30 =
 and method143 () : ((struct (int32 * string * bool) -> Async<unit>) -> US30) =
     closure63()
 and method144 (v0 : System.Diagnostics.Process) : int32 =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12097,7 +12497,9 @@ and closure64 (v0 : string) () : unit =
                 method120(v19, v20, v21, v22, v23, v24, v37, v38, v0)
         method19(v42)
 and method141 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : (struct (string * string) []), v3 : (struct (int32 * string * bool) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : bool, v6 : string option, v7 : System.Diagnostics.Process, v8 : System.Collections.Concurrent.ConcurrentStack<string>, v9 : bool, v10 : System.Diagnostics.DataReceivedEventArgs) : Async<unit> =
+    (* run_target_args'
     let v11 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12166,7 +12568,9 @@ and method141 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
                         let v106 : string = ""
                         v106
                 let v108 : string = $"{v104}{v24}{v107}"
+                (* run_target_args'
                 let v109 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -12252,7 +12656,9 @@ and method141 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
                         let v806 : string = ""
                         v806
                 let v808 : string = $"{v804}{v724}{v807}"
+                (* run_target_args'
                 let v809 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -12338,7 +12744,9 @@ and method141 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
                         let v1506 : string = ""
                         v1506
                 let v1508 : string = $"{v1504}{v1424}{v1507}"
+                (* run_target_args'
                 let v1509 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -12424,7 +12832,9 @@ and method141 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
                         let v2206 : string = ""
                         v2206
                 let v2208 : string = $"{v2204}{v2124}{v2207}"
+                (* run_target_args'
                 let v2209 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -12463,7 +12873,9 @@ and method140 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
     method141(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10)
 and closure62 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : (struct (string * string) []), v3 : (struct (int32 * string * bool) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : bool, v6 : string option, v7 : System.Diagnostics.Process, v8 : System.Collections.Concurrent.ConcurrentStack<string>, v9 : bool) (v10 : System.Diagnostics.DataReceivedEventArgs) : unit =
     let v11 : Async<unit> = method140(v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10)
+    (* run_target_args'
     let v12 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12499,7 +12911,9 @@ and closure65 () (v0 : System.Threading.CancellationToken) : US31 =
 and method145 () : (System.Threading.CancellationToken -> US31) =
     closure65()
 and method146 (v0 : System.Threading.CancellationToken) : Async<System.Threading.CancellationToken> =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12519,7 +12933,9 @@ and method146 (v0 : System.Threading.CancellationToken) : Async<System.Threading
     let v11 : unit = ()
     let _let'_v11 =
         async {
+            (* run_target_args'
             let v14 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -12573,7 +12989,9 @@ and method146 (v0 : System.Threading.CancellationToken) : Async<System.Threading
     let v247 : unit = ()
     let _let'_v247 =
         async {
+            (* run_target_args'
             let v250 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -12627,7 +13045,9 @@ and method146 (v0 : System.Threading.CancellationToken) : Async<System.Threading
     let v483 : unit = ()
     let _let'_v483 =
         async {
+            (* run_target_args'
             let v486 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -12681,7 +13101,9 @@ and method146 (v0 : System.Threading.CancellationToken) : Async<System.Threading
     let v719 : unit = ()
     let _let'_v719 =
         async {
+            (* run_target_args'
             let v722 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -12734,7 +13156,9 @@ and method146 (v0 : System.Threading.CancellationToken) : Async<System.Threading
     let v955 : Async<System.Threading.CancellationToken> = _run_target_args'_v1 
     v955
 and method147 (v0 : System.Diagnostics.Process) : bool =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12770,7 +13194,9 @@ and method147 (v0 : System.Diagnostics.Process) : bool =
     let v22 : bool = _run_target_args'_v1 
     v22
 and method148 (v0 : System.Diagnostics.Process) : unit =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12815,7 +13241,9 @@ and method151 (v0 : System.Threading.Tasks.TaskCanceledException) : string =
     let v25 : unit = ()
     let v26 : (unit -> unit) = closure8(v2, v22)
     let v27 : unit = (fun () -> v26 (); v25) ()
+    (* run_target_args'
     let v30 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12887,7 +13315,9 @@ and closure67 (v0 : System.Threading.Tasks.TaskCanceledException) () : unit =
         let v39 : string = method150(v19, v20, v21, v22, v23, v24, v37, v38, v0)
         method19(v39)
 and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurrent.ConcurrentStack<string>, v2 : System.Threading.CancellationToken) : Async<int32> =
+    (* run_target_args'
     let v3 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -12908,7 +13338,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
     let _let'_v13 =
         async {
             try
+                (* run_target_args'
                 let v16 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -12941,7 +13373,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v16 = v35 
                 #endif
                 let v36 : System.Threading.Tasks.Task = _run_target_args'_v16 
+                (* run_target_args'
                 let v41 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -12979,7 +13413,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 #endif
                 let v59 : Async<unit> = _run_target_args'_v41 
                 do! v59 
+                (* run_target_args'
                 let v64 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13018,7 +13454,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
             indent *)
             with ex ->
                 let v162 : exn = ex
+                (* run_target_args'
                 let v163 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13051,7 +13489,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v163 = v182 
                 #endif
                 let v183 : string = _run_target_args'_v163 
+                (* run_target_args'
                 let v188 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13097,7 +13537,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
     let _let'_v2353 =
         async {
             try
+                (* run_target_args'
                 let v2356 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13130,7 +13572,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v2356 = v2375 
                 #endif
                 let v2376 : System.Threading.Tasks.Task = _run_target_args'_v2356 
+                (* run_target_args'
                 let v2381 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13168,7 +13612,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 #endif
                 let v2399 : Async<unit> = _run_target_args'_v2381 
                 do! v2399 
+                (* run_target_args'
                 let v2404 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13207,7 +13653,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
             indent *)
             with ex ->
                 let v2502 : exn = ex
+                (* run_target_args'
                 let v2503 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13240,7 +13688,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v2503 = v2522 
                 #endif
                 let v2523 : string = _run_target_args'_v2503 
+                (* run_target_args'
                 let v2528 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13286,7 +13736,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
     let _let'_v4693 =
         async {
             try
+                (* run_target_args'
                 let v4696 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13319,7 +13771,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v4696 = v4715 
                 #endif
                 let v4716 : System.Threading.Tasks.Task = _run_target_args'_v4696 
+                (* run_target_args'
                 let v4721 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13357,7 +13811,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 #endif
                 let v4739 : Async<unit> = _run_target_args'_v4721 
                 do! v4739 
+                (* run_target_args'
                 let v4744 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13396,7 +13852,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
             indent *)
             with ex ->
                 let v4842 : exn = ex
+                (* run_target_args'
                 let v4843 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13429,7 +13887,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v4843 = v4862 
                 #endif
                 let v4863 : string = _run_target_args'_v4843 
+                (* run_target_args'
                 let v4868 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13475,7 +13935,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
     let _let'_v7033 =
         async {
             try
+                (* run_target_args'
                 let v7036 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13508,7 +13970,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v7036 = v7055 
                 #endif
                 let v7056 : System.Threading.Tasks.Task = _run_target_args'_v7036 
+                (* run_target_args'
                 let v7061 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13546,7 +14010,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 #endif
                 let v7079 : Async<unit> = _run_target_args'_v7061 
                 do! v7079 
+                (* run_target_args'
                 let v7084 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13585,7 +14051,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
             indent *)
             with ex ->
                 let v7182 : exn = ex
+                (* run_target_args'
                 let v7183 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13618,7 +14086,9 @@ and method149 (v0 : System.Diagnostics.Process, v1 : System.Collections.Concurre
                 let _run_target_args'_v7183 = v7202 
                 #endif
                 let v7203 : string = _run_target_args'_v7183 
+                (* run_target_args'
                 let v7208 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -13728,7 +14198,9 @@ and closure68 (v0 : int32, v1 : string) () : unit =
         let v41 : string = method152(v20, v21, v22, v23, v24, v25, v38, v39, v0, v40)
         method19(v41)
 and method136 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : (struct (string * string) []), v3 : (struct (int32 * string * bool) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : bool, v6 : string option) : Async<struct (int32 * string)> =
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -13748,7 +14220,9 @@ and method136 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
     let v17 : unit = ()
     let _let'_v17 =
         async {
+            (* run_target_args'
             let v20 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -13899,7 +14373,9 @@ and method136 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
     let v1893 : unit = ()
     let _let'_v1893 =
         async {
+            (* run_target_args'
             let v1896 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14050,7 +14526,9 @@ and method136 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
     let v3769 : unit = ()
     let _let'_v3769 =
         async {
+            (* run_target_args'
             let v3772 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14201,7 +14679,9 @@ and method136 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
     let v5645 : unit = ()
     let _let'_v5645 =
         async {
+            (* run_target_args'
             let v5648 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14353,7 +14833,9 @@ and method136 (v0 : string, v1 : System.Threading.CancellationToken option, v2 :
 and method135 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : (struct (string * string) []), v3 : (struct (int32 * string * bool) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : bool, v6 : string option) : Async<struct (int32 * string)> =
     method136(v0, v1, v2, v3, v4, v5, v6)
 and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : (struct (string * string) []), v3 : (struct (int32 * string * bool) -> Async<unit>) option, v4 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option, v5 : bool, v6 : string option) : struct (int32 * string) =
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -14388,7 +14870,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
     let v38 : bool = Fable.Core.RustInterop.emitRustExpr v36 v37 
     let v39 : string = "x"
     let v40 : string = Fable.Core.RustInterop.emitRustExpr () v39 
+    (* run_target_args'
     let v41 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -14424,7 +14908,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
     let _run_target_args'_v41 = v57 
     #endif
     let v60 : Ref<Str> = _run_target_args'_v41 
+    (* run_target_args'
     let v65 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -14552,7 +15038,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
     let v223 : string = "std::process::Command::spawn(&mut v220)"
     let v224 : Result<std_process_Child, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v223 
     let v225 : (std_io_Error -> std_string_String) = method65()
+    (* run_target_args'
     let v226 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -14623,7 +15111,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v265 : std_sync_Arc<std_sync_Mutex<std_process_Child option>> = Fable.Core.RustInterop.emitRustExpr v261 v264 
             let v266 : string = "v265.lock()"
             let v267 : Result<std_sync_MutexGuard<std_process_Child option>, std_sync_PoisonError<std_sync_MutexGuard<std_process_Child option>>> = Fable.Core.RustInterop.emitRustExpr () v266 
+            (* run_target_args'
             let v268 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14684,7 +15174,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v304 : std_sync_Arc<std_sync_Mutex<std_process_Child option>> = Fable.Core.RustInterop.emitRustExpr v261 v303 
             let v305 : string = "v304.lock()"
             let v306 : Result<std_sync_MutexGuard<std_process_Child option>, std_sync_PoisonError<std_sync_MutexGuard<std_process_Child option>>> = Fable.Core.RustInterop.emitRustExpr () v305 
+            (* run_target_args'
             let v307 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14745,7 +15237,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v343 : std_sync_Arc<std_sync_Mutex<std_process_Child option>> = Fable.Core.RustInterop.emitRustExpr v261 v342 
             let v344 : string = "v343.lock()"
             let v345 : Result<std_sync_MutexGuard<std_process_Child option>, std_sync_PoisonError<std_sync_MutexGuard<std_process_Child option>>> = Fable.Core.RustInterop.emitRustExpr () v344 
+            (* run_target_args'
             let v346 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14842,7 +15336,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v421 : string = "$0.clone()"
             let v422 : std_sync_Arc<std_sync_Mutex<std_sync_mpsc_Sender<std_string_String>>> = Fable.Core.RustInterop.emitRustExpr v396 v421 
             let v423 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v424 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -14889,7 +15385,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let v545 : (unit -> unit) = closure51(v5, v543)
                     let v546 : unit = (fun () -> v545 (); v544) ()
                     let v586 : string = $"\u001b[4;7m{v543}\u001b[0m"
+                    (* run_target_args'
                     let v587 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -14925,7 +15423,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let _run_target_args'_v587 = v603 
                     #endif
                     let v606 : Ref<Str> = _run_target_args'_v587 
+                    (* run_target_args'
                     let v611 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -14973,7 +15473,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let v450 : Ref<Slice<uint8>> = Fable.Core.RustInterop.emitRustExpr v448 v449 
                     let v451 : string = "std::str::from_utf8($0)"
                     let v452 : Result<Ref<Str>, std_str_Utf8Error> = Fable.Core.RustInterop.emitRustExpr v450 v451 
+                    (* run_target_args'
                     let v453 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15009,7 +15511,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let _run_target_args'_v453 = v463 
                     #endif
                     let v464 : Ref<Str> = _run_target_args'_v453 
+                    (* run_target_args'
                     let v467 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15063,7 +15567,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v638 : std_sync_Arc<std_sync_Mutex<std_sync_mpsc_Sender<std_string_String>>> = Fable.Core.RustInterop.emitRustExpr v422 v637 
             let v639 : string = "v638.lock()"
             let v640 : Result<std_sync_MutexGuard<std_sync_mpsc_Sender<std_string_String>>, std_sync_PoisonError<std_sync_MutexGuard<std_sync_mpsc_Sender<std_string_String>>>> = Fable.Core.RustInterop.emitRustExpr () v639 
+            (* run_target_args'
             let v641 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15104,7 +15610,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v657 : string = "$0.send($1)"
             let v658 : Result<unit, std_sync_mpsc_SendError<std_string_String>> = Fable.Core.RustInterop.emitRustExpr struct (v656, v636) v657 
             let v659 : (std_sync_mpsc_SendError<std_string_String> -> std_string_String) = method122()
+            (* run_target_args'
             let v660 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15153,7 +15661,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let x = v680 //
             let v684 : _ = x
             let v685 : unit = ()
+            (* run_target_args'
             let v686 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15204,7 +15714,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v711 : string = "$0.clone()"
             let v712 : std_sync_Arc<std_sync_Mutex<std_sync_mpsc_Sender<std_string_String>>> = Fable.Core.RustInterop.emitRustExpr v402 v711 
             let v713 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v714 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15251,7 +15763,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let v883 : (unit -> unit) = closure51(v5, v881)
                     let v884 : unit = (fun () -> v883 (); v882) ()
                     let v924 : string = $"\u001b[4;7m{v881}\u001b[0m"
+                    (* run_target_args'
                     let v925 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15287,7 +15801,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let _run_target_args'_v925 = v941 
                     #endif
                     let v944 : Ref<Str> = _run_target_args'_v925 
+                    (* run_target_args'
                     let v949 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15335,7 +15851,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let v740 : Ref<Slice<uint8>> = Fable.Core.RustInterop.emitRustExpr v738 v739 
                     let v741 : string = "std::str::from_utf8($0)"
                     let v742 : Result<Ref<Str>, std_str_Utf8Error> = Fable.Core.RustInterop.emitRustExpr v740 v741 
+                    (* run_target_args'
                     let v743 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15371,7 +15889,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let _run_target_args'_v743 = v753 
                     #endif
                     let v754 : Ref<Str> = _run_target_args'_v743 
+                    (* run_target_args'
                     let v757 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15421,7 +15941,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                         let v830 : unit = (fun () -> v829 (); v828) ()
                         ()
                     let v832 : string = $"\u001b[4;7m{v776}\u001b[0m"
+                    (* run_target_args'
                     let v833 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15457,7 +15979,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let _run_target_args'_v833 = v849 
                     #endif
                     let v852 : Ref<Str> = _run_target_args'_v833 
+                    (* run_target_args'
                     let v857 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15498,7 +16022,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v976 : std_sync_Arc<std_sync_Mutex<std_sync_mpsc_Sender<std_string_String>>> = Fable.Core.RustInterop.emitRustExpr v712 v975 
             let v977 : string = "v976.lock()"
             let v978 : Result<std_sync_MutexGuard<std_sync_mpsc_Sender<std_string_String>>, std_sync_PoisonError<std_sync_MutexGuard<std_sync_mpsc_Sender<std_string_String>>>> = Fable.Core.RustInterop.emitRustExpr () v977 
+            (* run_target_args'
             let v979 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15539,7 +16065,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v995 : string = "$0.send($1)"
             let v996 : Result<unit, std_sync_mpsc_SendError<std_string_String>> = Fable.Core.RustInterop.emitRustExpr struct (v994, v974) v995 
             let v997 : (std_sync_mpsc_SendError<std_string_String> -> std_string_String) = method122()
+            (* run_target_args'
             let v998 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15586,7 +16114,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let x = v1018 //
             let v1020 : _ = x
             let v1021 : unit = ()
+            (* run_target_args'
             let v1022 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15634,7 +16164,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                 let v1054 : std_sync_Arc<std_sync_Mutex<std_process_ChildStdin option>> = Fable.Core.RustInterop.emitRustExpr v387 v1053 
                 let v1055 : string = "v1054.lock()"
                 let v1056 : Result<std_sync_MutexGuard<std_process_ChildStdin option>, std_sync_PoisonError<std_sync_MutexGuard<std_process_ChildStdin option>>> = Fable.Core.RustInterop.emitRustExpr () v1055 
+                (* run_target_args'
                 let v1057 : unit = ()
+                run_target_args' *)
                 
 #if FABLE_COMPILER || WASM || CONTRACT
                 
@@ -15702,7 +16234,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let v1109 : std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> = Fable.Core.RustInterop.emitRustExpr v1107 v1108 
                     let v1110 : string = "v1109.lock()"
                     let v1111 : Result<std_sync_MutexGuard<std_process_ChildStdin>, std_sync_PoisonError<std_sync_MutexGuard<std_process_ChildStdin>>> = Fable.Core.RustInterop.emitRustExpr () v1110 
+                    (* run_target_args'
                     let v1112 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15748,7 +16282,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v1132 : std_sync_Arc<std_sync_Mutex<std_process_Child option>> = Fable.Core.RustInterop.emitRustExpr v261 v1131 
             let v1133 : string = "v1132.lock()"
             let v1134 : Result<std_sync_MutexGuard<std_process_Child option>, std_sync_PoisonError<std_sync_MutexGuard<std_process_Child option>>> = Fable.Core.RustInterop.emitRustExpr () v1133 
+            (* run_target_args'
             let v1135 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15796,7 +16332,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v1158 : string = "$0.wait_with_output()"
             let v1159 : Result<std_process_Output, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v1157 v1158 
             let v1160 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v1161 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15847,7 +16385,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let v1187 : std_thread_JoinHandle<Result<unit, string>> = Fable.Core.RustInterop.emitRustExpr () v1186 
             let v1188 : string = "std::thread::JoinHandle::join($0)"
             let v1189 : Result<Result<unit, string>, Box<LifetimeRef<Dyn<LifetimeJoin<core_any_Any, LifetimeRef<LifetimeJoin<StaticLifetime, Send<StaticLifetime>>>>>>>> = Fable.Core.RustInterop.emitRustExpr v1187 v1188 
+            (* run_target_args'
             let v1190 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15883,7 +16423,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
             let _run_target_args'_v1190 = v1200 
             #endif
             let v1201 : Result<unit, string> = _run_target_args'_v1190 
+            (* run_target_args'
             let v1204 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -15939,7 +16481,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                 match v1233 with
                 | US29_1 -> (* None *)
                     let v1240 : string = "runtime.execute_with_options / exit_code=None"
+                    (* run_target_args'
                     let v1241 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -15975,7 +16519,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
                     let _run_target_args'_v1241 = v1257 
                     #endif
                     let v1260 : Ref<Str> = _run_target_args'_v1241 
+                    (* run_target_args'
                     let v1265 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -16034,7 +16580,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
     let v1411 : std_sync_Arc<std_sync_Mutex<std_sync_Arc<std_sync_mpsc_Receiver<std_string_String>>>> = Fable.Core.RustInterop.emitRustExpr v1409 v1410 
     let v1412 : string = "v1411.lock()"
     let v1413 : Result<std_sync_MutexGuard<std_sync_Arc<std_sync_mpsc_Receiver<std_string_String>>>, std_sync_PoisonError<std_sync_MutexGuard<std_sync_Arc<std_sync_mpsc_Receiver<std_string_String>>>>> = Fable.Core.RustInterop.emitRustExpr () v1412 
+    (* run_target_args'
     let v1414 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16148,7 +16696,9 @@ and method79 (v0 : string, v1 : System.Threading.CancellationToken option, v2 : 
     #endif
 #else
     let v2929 : Async<struct (int32 * string)> = method135(v0, v1, v2, v3, v4, v5, v6)
+    (* run_target_args'
     let v2930 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16228,12 +16778,16 @@ and closure70 () (v0 : std_string_String) : US33 =
 and method157 () : (std_string_String -> US33) =
     closure70()
 and method158 (v0 : string) : bool =
+    (* run_target_args'
     let v1 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16269,7 +16823,9 @@ and method158 (v0 : string) : bool =
     let _run_target_args'_v2 = v18 
     #endif
     let v21 : Ref<Str> = _run_target_args'_v2 
+    (* run_target_args'
     let v26 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16305,7 +16861,9 @@ and method158 (v0 : string) : bool =
     let _run_target_args'_v26 = v42 
     #endif
     let v45 : std_string_String = _run_target_args'_v26 
+    (* run_target_args'
     let v50 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16672,7 +17230,9 @@ and method165 (v0 : string, v1 : string, v2 : std_string_String) : string =
     let v94 : unit = ()
     let v95 : (unit -> unit) = closure8(v4, v91)
     let v96 : unit = (fun () -> v95 (); v94) ()
+    (* run_target_args'
     let v99 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16826,7 +17386,9 @@ and closure75 (v0 : string, v1 : string, v2 : uint64) () : unit =
         let v41 : string = method166(v21, v22, v23, v24, v25, v26, v39, v40, v1, v0, v2)
         method19(v41)
 and method161 (v0 : string, v1 : string) : unit =
+    (* run_target_args'
     let v2 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16834,7 +17396,9 @@ and method161 (v0 : string, v1 : string) : unit =
     let v3 : string = "std::fs::copy(&*$0, &*$1)"
     let v4 : Result<uint64, std_io_Error> = Fable.Core.RustInterop.emitRustExpr struct (v1, v0) v3 
     let v5 : (std_io_Error -> std_string_String) = method65()
+    (* run_target_args'
     let v6 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -16915,7 +17479,9 @@ and closure78 (v0 : string) (v1 : std_sync_Arc<std_sync_Mutex<std_process_ChildS
     let v3 : std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> = Fable.Core.RustInterop.emitRustExpr v1 v2 
     let v4 : string = "v3.lock()"
     let v5 : Result<std_sync_MutexGuard<std_process_ChildStdin>, std_sync_PoisonError<std_sync_MutexGuard<std_process_ChildStdin>>> = Fable.Core.RustInterop.emitRustExpr () v4 
+    (* run_target_args'
     let v6 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -17048,19 +17614,25 @@ and closure79 (v0 : string, v1 : int32, v2 : string) () : unit =
         let v42 : string = method174(v21, v22, v23, v24, v25, v26, v39, v40, v1, v41, v0)
         method19(v42)
 and method168 (v0 : string, v1 : string, v2 : string, v3 : string) : US35 =
+    (* run_target_args'
     let v4 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
+    (* run_target_args'
     let v5 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
 #if FABLE_COMPILER_RUST && !WASM && !CONTRACT
     let v6 : string = "std::fs::read(&*$0)"
     let v7 : Result<Vec<uint8>, std_io_Error> = Fable.Core.RustInterop.emitRustExpr v3 v6 
+    (* run_target_args'
     let v8 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -17128,7 +17700,9 @@ and method168 (v0 : string, v1 : string, v2 : string, v3 : string) : US35 =
     let v45 : Vec<uint8> = method169(v40)
     let v46 : string = "std::string::String::from_utf8($0)"
     let v47 : Result<std_string_String, std_string_FromUtf8Error> = Fable.Core.RustInterop.emitRustExpr v45 v46 
+    (* run_target_args'
     let v48 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -17261,7 +17835,9 @@ and method168 (v0 : string, v1 : string, v2 : string, v3 : string) : US35 =
     let v139 : (struct (int32 * string * bool) -> Async<unit>) option = None
     let v140 : (std_sync_Arc<std_sync_Mutex<std_process_ChildStdin>> -> unit) option = None
     let v141 : string option = None
+    (* run_target_args'
     let v142 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -17363,7 +17939,9 @@ and method168 (v0 : string, v1 : string, v2 : string, v3 : string) : US35 =
         v187.l3 <- v212
         ()
     let struct (v214 : string, v215 : int32, v216 : int32) = v187.l1, v187.l2, v187.l3
+    (* run_target_args'
     let v217 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -17472,7 +18050,9 @@ and closure77 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v13 : string = method36(v6)
             let v14 : string = "std::fs::File::open(&*v13)"
             let v15 : Result<std_fs_File, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v14 
+            (* run_target_args'
             let v16 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -17529,7 +18109,9 @@ and closure77 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v49 : bool = Fable.Core.RustInterop.emitRustExpr () v48 
             let v50 : string = "std::io::Read::read(&mut v33, &mut v45)"
             let v51 : Result<unativeint, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v50 
+            (* run_target_args'
             let v52 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -17638,7 +18220,9 @@ and closure77 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v131 : string = v130 v119
             let v134 : Result<string, std_io_Error> = Ok v131 
             let v135 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v136 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -17688,7 +18272,9 @@ and closure77 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v162 : string = method36(v7)
             let v163 : string = "std::fs::File::open(&*v162)"
             let v164 : Result<std_fs_File, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v163 
+            (* run_target_args'
             let v165 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -17745,7 +18331,9 @@ and closure77 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v198 : bool = Fable.Core.RustInterop.emitRustExpr () v197 
             let v199 : string = "std::io::Read::read(&mut v182, &mut v194)"
             let v200 : Result<unativeint, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v199 
+            (* run_target_args'
             let v201 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -17854,7 +18442,9 @@ and closure77 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v280 : string = v279 v268
             let v283 : Result<string, std_io_Error> = Ok v280 
             let v284 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v285 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18123,7 +18713,9 @@ and closure82 (v0 : string, v1 : string, v2 : bool, v3 : string) (v4 : string) :
             let v12 : string = method36(v5)
             let v13 : string = "std::fs::File::open(&*v12)"
             let v14 : Result<std_fs_File, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v13 
+            (* run_target_args'
             let v15 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18180,7 +18772,9 @@ and closure82 (v0 : string, v1 : string, v2 : bool, v3 : string) (v4 : string) :
             let v48 : bool = Fable.Core.RustInterop.emitRustExpr () v47 
             let v49 : string = "std::io::Read::read(&mut v32, &mut v44)"
             let v50 : Result<unativeint, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v49 
+            (* run_target_args'
             let v51 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18289,7 +18883,9 @@ and closure82 (v0 : string, v1 : string, v2 : bool, v3 : string) (v4 : string) :
             let v130 : string = v129 v118
             let v133 : Result<string, std_io_Error> = Ok v130 
             let v134 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v135 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18339,7 +18935,9 @@ and closure82 (v0 : string, v1 : string, v2 : bool, v3 : string) (v4 : string) :
             let v161 : string = method36(v6)
             let v162 : string = "std::fs::File::open(&*v161)"
             let v163 : Result<std_fs_File, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v162 
+            (* run_target_args'
             let v164 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18396,7 +18994,9 @@ and closure82 (v0 : string, v1 : string, v2 : bool, v3 : string) (v4 : string) :
             let v197 : bool = Fable.Core.RustInterop.emitRustExpr () v196 
             let v198 : string = "std::io::Read::read(&mut v181, &mut v193)"
             let v199 : Result<unativeint, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v198 
+            (* run_target_args'
             let v200 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18505,7 +19105,9 @@ and closure82 (v0 : string, v1 : string, v2 : bool, v3 : string) (v4 : string) :
             let v279 : string = v278 v267
             let v282 : Result<string, std_io_Error> = Ok v279 
             let v283 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v284 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18713,7 +19315,9 @@ and method185 (v0 : UH4, v1 : Vec<Result<string, (string * string)> option>) : V
         v1
 and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) (v5 : string) : Result<(string * Vec<Result<string, (string * string)> option>), std_string_String> =
     let v6 : string = method35(v5)
+    (* run_target_args'
     let v7 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -18749,7 +19353,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let _run_target_args'_v7 = v23 
     #endif
     let v26 : Ref<Str> = _run_target_args'_v7 
+    (* run_target_args'
     let v31 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -18785,7 +19391,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let _run_target_args'_v31 = v47 
     #endif
     let v50 : std_string_String = _run_target_args'_v31 
+    (* run_target_args'
     let v55 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -18821,7 +19429,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let _run_target_args'_v55 = v71 
     #endif
     let v74 : std_path_PathBuf = _run_target_args'_v55 
+    (* run_target_args'
     let v79 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -18857,7 +19467,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
     let _run_target_args'_v79 = v95 
     #endif
     let v98 : std_path_Display = _run_target_args'_v79 
+    (* run_target_args'
     let v103 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -18942,7 +19554,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v179 : string = method36(v151)
             let v180 : string = "std::fs::File::open(&*v179)"
             let v181 : Result<std_fs_File, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v180 
+            (* run_target_args'
             let v182 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -18999,7 +19613,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v215 : bool = Fable.Core.RustInterop.emitRustExpr () v214 
             let v216 : string = "std::io::Read::read(&mut v199, &mut v211)"
             let v217 : Result<unativeint, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v216 
+            (* run_target_args'
             let v218 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -19108,7 +19724,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
             let v297 : string = v296 v285
             let v300 : Result<string, std_io_Error> = Ok v297 
             let v301 : (std_io_Error -> std_string_String) = method65()
+            (* run_target_args'
             let v302 : unit = ()
+            run_target_args' *)
             
 #if FABLE_COMPILER || WASM || CONTRACT
             
@@ -19164,7 +19782,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
                     let v331 : string = method36(v165)
                     let v332 : string = "std::fs::File::open(&*v331)"
                     let v333 : Result<std_fs_File, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v332 
+                    (* run_target_args'
                     let v334 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -19221,7 +19841,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
                     let v367 : bool = Fable.Core.RustInterop.emitRustExpr () v366 
                     let v368 : string = "std::io::Read::read(&mut v351, &mut v363)"
                     let v369 : Result<unativeint, std_io_Error> = Fable.Core.RustInterop.emitRustExpr () v368 
+                    (* run_target_args'
                     let v370 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -19330,7 +19952,9 @@ and closure33 (v0 : string, v1 : string, v2 : string, v3 : string, v4 : string) 
                     let v449 : string = v448 v437
                     let v452 : Result<string, std_io_Error> = Ok v449 
                     let v453 : (std_io_Error -> std_string_String) = method65()
+                    (* run_target_args'
                     let v454 : unit = ()
+                    run_target_args' *)
                     
 #if FABLE_COMPILER || WASM || CONTRACT
                     
@@ -19708,7 +20332,9 @@ and method25 (v0 : string, v1 : string, v2 : string, v3 : string) : std_pin_Pin<
     let x = v231 //
     let v235 : _ = x
     let v236 : unit = ()
+    (* run_target_args'
     let v237 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -19791,7 +20417,9 @@ and method193 (v0 : unativeint) : string =
     let v25 : unit = ()
     let v26 : (unit -> unit) = closure8(v2, v22)
     let v27 : unit = (fun () -> v26 (); v25) ()
+    (* run_target_args'
     let v30 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -19875,7 +20503,9 @@ and closure1 () (v0 : (string [])) : int32 =
     let v60 : string = "clap::Command::get_matches($0)"
     let v61 : clap_ArgMatches = Fable.Core.RustInterop.emitRustExpr v59 v60 
     let v62 : string = method20()
+    (* run_target_args'
     let v63 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -19926,7 +20556,9 @@ and closure1 () (v0 : (string [])) : int32 =
     let v110 : string = "fable_library_rust::String_::fromString($0)"
     let v111 : string = Fable.Core.RustInterop.emitRustExpr v109 v110 
     let v112 : string = method22()
+    (* run_target_args'
     let v113 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -19977,7 +20609,9 @@ and closure1 () (v0 : (string [])) : int32 =
     let v160 : string = "fable_library_rust::String_::fromString($0)"
     let v161 : string = Fable.Core.RustInterop.emitRustExpr v159 v160 
     let v162 : string = method23()
+    (* run_target_args'
     let v163 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     
@@ -20028,7 +20662,9 @@ and closure1 () (v0 : (string [])) : int32 =
     let v210 : string = "fable_library_rust::String_::fromString($0)"
     let v211 : string = Fable.Core.RustInterop.emitRustExpr v209 v210 
     let v212 : string = method24()
+    (* run_target_args'
     let v213 : unit = ()
+    run_target_args' *)
     
 #if FABLE_COMPILER || WASM || CONTRACT
     

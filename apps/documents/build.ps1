@@ -6,7 +6,7 @@ param(
 Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
 . ../../deps/polyglot/scripts/core.ps1
-. ../../deps/polyglot/lib/spiral/lib.ps1
+. ../../deps/polyglot/deps/spiral/lib/spiral/lib.ps1
 
 
 $projectName = "documents"
@@ -28,7 +28,8 @@ $targetDir = GetTargetDir $projectName
 { BuildFable $targetDir $projectName "rs" } | Invoke-Block -Location ../../deps/polyglot
 (Get-Content "$targetDir/target/rs/$projectName.rs") `
     -replace "../../../lib", "../polyglot/lib" `
-    -replace "`"./lib", "`"../../../polyglot/lib" `
+    -replace "`"../../../../../deps/spiral", "`"../../deps/polyglot/deps/spiral" `
+    -replace "`"./lib", "`"../../deps/polyglot/lib" `
     -replace ".fsx`"]", ".rs`"]" `
     | FixRust `
     | Set-Content "$projectName.rs"
