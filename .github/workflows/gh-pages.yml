@@ -35,7 +35,7 @@ jobs:
 
       - uses: actions/setup-go@v5
 
-      - uses: awalsh128/cache-apt-pkgs-action@latest
+      - uses: awalsh128/cache-apt-pkgs-action@master
         with:
           packages: texlive-xetex pandoc fonts-nanum-coding
           version: 1.0
