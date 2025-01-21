@@ -8,28 +8,15 @@ $ErrorActionPreference = "Stop"
 
 if (!$fast) {
     Set-Location (New-Item -ItemType Directory -Path "../.." -Force)
-    git clone --recurse-submodules https://github.com/i574n/polyglot.git # --branch gh-pages
-    Set-Location polyglot
+    git clone --recurse-submodules https://github.com/i574n/alphabet.git # --branch gh-pages
+    Set-Location alphabet
     git pull
     Set-Location $ScriptDir
-    pwsh ../../polyglot/scripts/init.ps1
+    pwsh ../../alphabet/scripts/init.ps1
 }
 
 . ../../polyglot/scripts/core.ps1
 
-EnsureSymbolicLink -Path "../deps/polyglot" -Target "../../polyglot"
+EnsureSymbolicLink -Path "../deps/alphabet" -Target "../../alphabet"
 
-{ pwsh ../deps/polyglot/apps/builder/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../deps/polyglot/apps/parser/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../deps/polyglot/apps/spiral/build.ps1 -fast 1 } | Invoke-Block
-{ pwsh ../deps/polyglot/deps/spiral/apps/spiral/build.ps1 -SkipFsx 1 } | Invoke-Block
-{ pwsh ../deps/polyglot/apps/dir-tree-html/build.ps1 -fast 1 } | Invoke-Block
-
-{ sudo apt-get update } | Invoke-Block -Linux -Distro ubuntu
-{ sudo apt install -y texlive-xetex pandoc fonts-nanum-coding } | Invoke-Block -Linux -Distro ubuntu
-
-{ cargo install --git https://github.com/crowdagger/crowbook.git --locked } | Invoke-Block -OnError Continue
-
-{ pwsh ./dep_hangulize.ps1 -fast 1 } | Invoke-Block
-
-{ pwsh ../apps/documents/build.ps1 } | Invoke-Block
+{ pwsh ../deps/alphabet/apps/documents/build.ps1 -fast 1 } | Invoke-Block

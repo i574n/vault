@@ -14,6 +14,13 @@
     https://github.com/codespaces/badge.svg)](
         https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=602361649)
 
+---
+
+- [Build](#build)
+- [TODO](#todo)
+- [Contributing](#contributing)
+- [License](#license)
+
 ## Build
 
 ```ps1
@@ -24,3 +31,15 @@ pwsh scripts/publish.ps1
 ## TODO
 
 - [ ] Only commit the binary .pdf and .epub files to gh-pages when the markdown text content changes
+
+## Contributing
+
+Contributions are welcome! Please see the [CONTRIBUTING.md](https://github.com/i574n/.github/blob/main/CONTRIBUTING.md) for guidelines.
+
+## License
+
+This project is licensed under the AGPLv3 License. See the [LICENSE](https://github.com/i574n/vault/blob/main/LICENSE) file for details.
+
+---
+
+[![Star History Chart](https://api.star-history.com/svg?repos=i574n/vault&type=Timeline)]
