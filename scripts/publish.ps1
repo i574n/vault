@@ -5,7 +5,7 @@ param(
 )
 Set-Location $ScriptDir
 $ErrorActionPreference = "Stop"
-. ../../polyglot/scripts/core.ps1
+. ../deps/alphabet/deps/polyglot/scripts/core.ps1
 
 
 if (!$SkipSync) {
@@ -21,6 +21,7 @@ if (!$SkipSync) {
         --exclude 'dist' `
     `
         --include 'LICENSE' `
+        --include 'Dockerfile' `
         --include '*.editorconfig' `
         --include '*.edn' `
         --include '*.epub' `
@@ -49,8 +50,10 @@ $distDir = "$vaultDir/dist"
 
 $targetDir = "$vaultDir/target/gh-pages"
 New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
+$targetDirLog = $targetDir
 $targetDir = (Resolve-Path $targetDir).Path
-Write-Output "publish / targetDir: $targetDir / distDir: $distDir"
+$resolvedTargetDir = ResolveLink $targetDir
+Write-Output "vault/scripts/publish.ps1 / targetDir: $targetDir / distDir: $distDir / targetDirLog: $targetDirLog / resolvedTargetDir: $resolvedTargetDir"
 if (!(Test-Path $targetDir)) {
     exit 1
 }
@@ -61,6 +64,6 @@ git pull --rebase -Xtheirs
 Set-Location $ScriptDir
 
 
-{ . ../apps/documents/target/release/documents$(_exe) --source-dir $vaultDir --dist-dir $distDir --cache-dir $targetDir --hangul-spec por-br } | Invoke-Block
+{ . ../deps/alphabet/apps/documents/target/release/documents$(_exe) --source-dir $vaultDir --dist-dir $distDir --cache-dir $targetDir --hangul-spec por-br } | Invoke-Block
 
-{ . ../../polyglot/apps/dir-tree-html/dist/DirTreeHtml$(_exe) --dir ../dist --html ../dist/index.html } | Invoke-Block
+{ . ../deps/alphabet/deps/polyglot/apps/dir-tree-html/dist/DirTreeHtml$(_exe) --dir ../dist --html ../dist/index.html } | Invoke-Block

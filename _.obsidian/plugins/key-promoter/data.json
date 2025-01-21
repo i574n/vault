@@ -12,7 +12,7 @@
     "workspace:undo-close-pane": 20,
     "obsidian-git:backup-and-close": 20,
     "workspace:close": 20,
-    "workspace:close-window": 39,
+    "workspace:close-window": 40,
     "workspace:close-others": 20,
     "workspace:close-tab-group": 20,
     "workspace:close-others-tab-group": 20,
