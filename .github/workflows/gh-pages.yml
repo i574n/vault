@@ -40,9 +40,7 @@ jobs:
           packages: texlive-xetex texlive-full pandoc fonts-nanum-coding
           version: 1.0
 
-      - run: pwsh scripts/init.ps1
-
-      - run: pwsh scripts/publish.ps1
+      - run: pwsh scripts/workflow.ps1
 
       - uses: actions/upload-artifact@v4
         with:
