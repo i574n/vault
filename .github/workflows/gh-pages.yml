@@ -37,7 +37,7 @@ jobs:
 
       - uses: awalsh128/cache-apt-pkgs-action@master
         with:
-          packages: texlive-xetex texlive-full pandoc fonts-nanum-coding
+          packages: texlive-xetex pandoc fonts-nanum-coding
           version: 1.0
 
       - run: pwsh scripts/workflow.ps1
