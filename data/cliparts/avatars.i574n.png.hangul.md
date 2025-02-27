@@ -1,4 +1,4 @@
 
-![프리마](트프스://바피베익트브나킁7스3스크프드미스4오크5브브브큼프드크스즈7445눔6느바키4.이프프스.느프트스토라지.링크)
-![이574응](트프스://바피베이그브르7즈2익지즈워그브4프크즈노도이7즈기드54프브프트브스포스7브7시6이.이프프스.느프트스토라지.링크/이574응%20아바타르.픙그)
-![윈도스](트프스://바피베이에프스흐프7스프크드7프르프캉크그크3브프7브프드루2흐데아브지7드66브쿠.이프프스.느프트스토라지.링크/%7브2아아크60-3에이8-4드33-8크3이-80브프06915344%7드-이마지1080.즈프그)
+![prima](https://bafybeictvnacn7z3xkpdmyhs4ok5vbvcmpdkxxzh7w445nlwmh6nvaqqe4.ipfs.nftstorage.link)
+![i574n](https://bafybeigbrhw7j2eqjijwogb4pqjnodoy7jgyihd54pvfttbspoz7v7si6i.ipfs.nftstorage.link/i574n%20avatar.png)
+![windows](https://bafybeiepsrp7xhfcwd7prhpqankgk3vf7bhpdru2rdeabjhy7dw6ww6bcu.ipfs.nftstorage.link/%7B2AAAAC60-3EE8-4D33-8C3E-80BF06915344%7D-Image1080.jpg)

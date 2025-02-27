@@ -1,5 +1,5 @@
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이브즈3오브픙3드반브제스스그부우지6흐주66흐7사브5느즈루6우이지.이프프스.느프트스토라지.링크/즈모트제르트픙1219메모리.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibjww3obfn3dvannhbzesxgbuldy6rwzu66r7sav5nwzrhl6uiwdi.ipfs.nftstorage.link/jmotgerTFM1219memory.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```

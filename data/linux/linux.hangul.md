@@ -8,7 +8,7 @@
 
 ### 니슈스_이니트
 
-니스-샤네우 --아드 <트프스://니슈스.오르그/샤네우스/니슈스-운스타블리> 니슈스-운스타블리
+nix-channel --add <https://nixos.org/channels/nixos-unstable> nixos-unstable
 니스-샤네우 --우프다치
 
 ```트스트

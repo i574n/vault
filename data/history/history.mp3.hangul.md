@@ -1,19 +1,19 @@
 <아우지우 콘트로우스>
-<소르시 스흐크="트프스://바피베이브수7프스2이프3신도조크르스즈기오드루스크직스셰우승키짐날리.이프프스.드웨브.링크/2015%20-%20이드윙%20바르냐르트%20-%20안시엔트%20메조아메리카%20헤베알레드.응4브" 치피="아우지우/므페그">
+<source src="https://bafybeibso7px2ip3syndousokrwxjggyiodruzkzyiqsxelxnqidimnale.ipfs.dweb.link/2015%20-%20Edwin%20Barnhart%20-%20Ancient%20Mesoamerica%20Revealed.m4b" type="audio/mpeg">
 </아우지우>
 
 <아우지우 콘트로우스>
-<소르시 스흐크="트프스://바피베익브즈프프6드프브그브큰브스7크7크크시그브5을리5스믄파야4오크믹베아드쿠.이프프스.드웨브.링크/?필레나미=아+브리에프+이스토리+오프+티+푸투리+아.응4브" 치피="아우지우/므페그">
+<source src="https://bafybeicbjpf6dhpvgbqnvxw7k7kcsigb5wly5xmnpaya4ooqmykveaadcu.ipfs.dweb.link/?filename=A+Brief+History+of+The+Future+A.m4b" type="audio/mpeg">
 </아우지우>
 
 <아우지우 콘트로우스>
-<소르시 스흐크="트프스://바피베이비조프262트스크드프스6드2아요증2흐크드스스크리브브533르브브크브4킥등4타.이프프스.드웨브.링크/?필레나미=티+지스코베레르스.므프3" 치피="아우지우/므페그">
+<source src="https://bafybeihbyjof262tsqdfs6d2ayosm2rkdxzkrybv533lbvqv4kkiqdm4ta.ipfs.dweb.link/?filename=The+Discoverers.mp3" type="audio/mpeg">
 </아우지우>
 
 <아우지우 콘트로우스>
-<소르시 스흐크="트프스://바피베이엥그스크드브7스23후크5이우카그36흐크브즈65르5신지그4심슬루르23우누.이프프스.드웨브.링크/?필레나미=호크+%26+호우+니그트마리스+트루이+스토리스%2크+볼루미+2.응4브" 치피="아우지우/므페그">
+<source src="https://bafybeiengzqdbb7x23rlc5ilqag36rkbj65l5sinzyg4ximxluhr2h3unu.ipfs.dweb.link/?filename=Rock+%26+Roll+Nightmares+True+Stories%2C+Volume+2.m4b" type="audio/mpeg">
 </아우지우>
 
 <아우지우 콘트로우스>
-<소르시 스흐크="트프스://바피베이아그스크프무5즘브그증546르미부374그6프그크수브스6아고이25큼르크트드3이.이프프스.드웨브.링크/?필레나미=종+혼송+-+티+멩+우+스타리+아트+고아트스.므프3" 치피="아우지우/므페그">
+<source src="https://bafybeiagxqpml5zmbwgzm546lhmyibo374g6pgcsuvs6agoy25kmrqtd3i.ipfs.dweb.link/?filename=Jon+Ronson+-+The+Men+Who+Stare+at+Goats.mp3" type="audio/mpeg">
 </아우지우>

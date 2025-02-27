@@ -2,110 +2,110 @@
 프드프슬리지.치프스_카발라-데이-슈.프드프
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바프크레이든시프테우스페프브5트즈크크프후즈드7크스트키우스3이우프카드3토시754.이프프스.느프트스토라지.링크
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafkreidnsyptelzpefb5tzwqkfrrusddh7kxtkylhx3eupcahd3toxe754.ipfs.nftstorage.link
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 브루샤 페르난다 - 킴반다 - 오리젱 이 푼다멘투.프드프
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이아에그7유쿠우브2르트크스도스3오이2흐호이2우우그슨트그트5스셰이55르스2푸이.이프프스.느프트스토라지.링크
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiaehg7yuculb2ltksdox3oyiy2rroi2ulgxntgt5zxxee55lx2pue.ipfs.nftstorage.link
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 아-제오만시아-이-우스-부지우스-나-포르마카우-두-이파-오모바탈라.프드프
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이브누그32드가브트르64크르3느스드55품크6지프즈그지트메우니즈4이3그프카.이프프스.느프트스토라지.링크
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeibnug32dgabtr64qr3nxd5wh5plmqw6dyhfzgdytmeunij4y3gpqa.ipfs.nftstorage.link
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 헤이누 지 킴반다.프드프
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이시스스3크즈르치스픙크드5흔응4프푸이비두등6브그픙3스크스브브스크조다.이프프스.느프트스토라지.링크
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiciyxz3cwzrtyspnkd5rnm4pfuibiddldn6vgpn3xcsvbxhqzodda.ipfs.nftstorage.link
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이아75이우늠프2이34옴븐프루비트5우3븜스4픈리프나2그브즈74흐푸브그즈지우.이프프스.느프트스토라지.링크/마리아%20파질랴.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeia75eunmp2i34ombnprlbyt5u3bmzz4pnlifna2gbj74rflvgzdiu.ipfs.nftstorage.link/maria%20padilha.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이프프3이2악브스프브트그34픔스2포이57이우4이트4카프니니26스트그프미2느스피.이프프스.느프트스토라지.링크/40%20오리스%크3%아1%20폼바지라.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifp3y2akhbspbtg34fmz2foi57yhl4yt4qafnyne26stgpme2nspy.ipfs.nftstorage.link/40%20Orix%C3%A1%20Pombagira.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베익과이트스프브즈스트스크크주5프그2프베우브4오브크즈위지시그67우브5트25즈4크4.이프프스.느프트스토라지.링크/코무_데즈만샤르_트라발류스_지_킴반다_보우1.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeicgwaytxfvjxtsqqqju5fg2fbelb4ovkhswysyxyg67ub5t25j4k4.ipfs.nftstorage.link/Como_desmanchar_trabalhos_de_quimbanda_vol1.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이쿠2응76즈그7크스그6르펨이바븡5이44즈스즈브케브7르스르스페오이아시크.이프프스.느프트스토라지.링크/헤이누스-다-킴반다.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeicku2n76zg7hcsg6lpemhyvvabn5y44wshxzvkeb7lxrxfeoiachq.ipfs.nftstorage.link/reinos-da-quimbanda.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이프그4즈크주푸즈기르6브크674브5프듬프즈스스크크3구미비스2주브스스크3이7아.이프프스.느프트스토라지.링크/렌다스%20아프리카나스%20두스%20오리샤스%20-%20피에히%20파툼비%20베르제르.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifg4jkzuplsguir6bq674b5fhdmfjzskq3wglmybis2zlvzxq3e7a.ipfs.nftstorage.link/Lendas%20Africanas%20Dos%20Orixas%20-%20Pierre%20Fatumbi%20Verger.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이프브6흐5크시즈든트26크34이4스2고벡코우브시우즈프누앙크피2이4프7크지아.이프프스.느프트스토라지.링크/이주%20우%20구아르지%크3%아3우%20다%20루스.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifhv6r5qchjdnt26q34y4x2gobeqcolvxiljfnuancfe2e4p7kjia.ipfs.nftstorage.link/Exu%20o%20Guardi%C3%A3o%20da%20Luz.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이크6오주수르브루코아타이6크5크6스크즈조브프브크지카2헤우시53스스브승4.이프프스.느프트스토라지.링크/이스%크3%바%20마라부.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeic6ojlsurbrlcoatai6q5k6zqjzovfbkziqa2relhce53xwxvwxn4.ipfs.nftstorage.link/Ex%C3%BA%20Marabo.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이든미33느프스누스흐6아브343시드프슬리스프즈드7프스페그632옥드케크프3크.이프프스.느프트스토라지.링크/아%20마지아%20두%20폰투%20히스카두.%20오즈바우두%20올라부%20오르치스%20솔레라.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidnhmy33nfsnlsr6av343xidpslizfjd7fxffeeg632okdqehqf3q.ipfs.nftstorage.link/A%20MAGIA%20DO%20PONTO%20RISCADO.%20Osvaldo%20Olavo%20Ortiz%20Solera.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이지즈부스크노이븡4푸스2즈슈복크브브25크트지4젱4프스샨응5이옹.이프프스.느프트스토라지.링크/마리아_파질랴_헤이나_지_라_마지아.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigizbuxcnoivn4pux2zhwxuvokqvb25qthdy4zen4fsxaanm5ioom.ipfs.nftstorage.link/Maria_Padilha_reina_de_la_magia.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이그6즘즈르4바그스클룩고에6즈주트프3스4탁크프나브6카즈스프크베드2응.이프프스.느프트스토라지.링크/누%20헤이누%20두스%20이주스.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeig6zmjr4vagwhxqlucgoeh6zjltff3x4taqkfnav6kajxfqbed2mm.ipfs.nftstorage.link/No%20Reino%20Dos%20Exus.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이짐르카5프독픈스비우즈2크키숄례브르즈스탁음그트즈르2프븜투즈비르5우.이프프스.느프트스토라지.링크/오드%크3%바스.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeigimrka5pdokfnxbylj2qkyxolhebrsztaqwmgtzr2pvmtuzvyr5u.ipfs.nftstorage.link/Od%C3%BAs.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이시피우악즈그5키아우4우브크2스5큼크크듬즈즘3드프피쿠4슨프4앙22응.이프프스.느프트스토라지.링크/리브루%20지%20이주%20-%20우%20미스트%크3%아9히우%20헤벨라두.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihsyfyuaczwg5cyao4uvvc2x5cmkqdmsjmh3dfpykl4snf4ham22m.ipfs.nftstorage.link/Livro%20de%20Exu%20-%20O%20Mist%C3%A9rio%20Revelado.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이옹5스브25이2르제브드큼으크65아지6익으크슴프프지아프브53르36키부3아.이프프스.느프트스토라지.링크/움반다%20아%20프로투%20신테지%20코즈미카.프드프#파지=1
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeihom5swb25i2ljebdcmwcc65ajy6ycwqsmfpzyapv53l36qiwvl3a.ipfs.nftstorage.link/UMBANDA%20A%20PROTO%20SINTESE%20COSMICA.pdf#page=1
+frame: https://
 스칠리: 에이그트:50브
 ```
 

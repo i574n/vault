@@ -35,7 +35,7 @@
 
 ```
 
-![3 베오우시크 피나우_와이푸2스_아르트_노이지3_스칼리](트프스://바피베익스크브그프크프2스프트바즈그브62스피4프즈쇼우픈스4크6스타77즈드즈코7이.이프프스.느프트스토라지.링크/3%20베오우시크%20피나우_와이푸2스_아르트_노이지3_스칼리.픙그)
+![3 beolsik final_waifu2x_art_noise3_scale](https://bafybeicsqhbghfqf2sptvajgv62zfi4ppjxolphnx4q6xxta77zdjkoo7i.ipfs.nftstorage.link/3%20beolsik%20final_waifu2x_art_noise3_scale.png)
 
 ```트스트
 
@@ -64,10 +64,10 @@
 
 ```
 
-![세베오우시크 누 시프트](트프스://바피베이브3제이프마프스듬레픙크바우65우븡6크22스7응46흐2스2이프그르크7므드그크스시.이프프스.느프트스토라지.링크/세베오우시크%20누%20시프트.픙그)
+![sebeolsik no shift](https://bafybeib3zeipmapxdmlepncval65uvm6q2w2z7m46r2x2ypgrk7mdgkzxe.ipfs.nftstorage.link/sebeolsik%20no%20shift.png)
 
 ---
 
-![앙굴](트프스://바피베이드트지르7프스트67스히무스크스그6스프7힘드66스4호프즈57아프2프크2스스트키.이프프스.드웨브.링크)
+![hangul](https://bafybeidtwgir7pzt6h7srymuhskxg6xp7rymd66z4ropj57ap2fq2sztki.ipfs.dweb.link)
 
-![앙굴](트프스://바피베이프븐트금스쿠크그스26브미크65샤오주66이3브7트드스2오브드즈그6우킥크프27지.이프프스.드웨브.링크)
+![hangul](https://bafybeifbntgmxclkgz26bmyk65xaojl66y3v7htdz2ovdzg6uqiqcp27je.ipfs.dweb.link)

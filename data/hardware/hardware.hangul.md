@@ -71,39 +71,39 @@
 미크로콘트롤라도르:
 
 모델루 이코노미쿠: 아르두이누 나누
-(<트프스://.아르두이누.크/잉/픔으위키.프프?응=마잉/아르두이노보아르드나누>)
+(<https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano>)
 모델루 이그-인드: 하스프베히 피 피쿠
-(<트프스://.하스프베히피.오르그/프로둑트스/하스프베히-피-피쿠/>)
+(<https://www.raspberrypi.org/products/raspberry-pi-pico/>)
 센소르 지 헤지스텐시아 일레트리카 다 펠리:
 
 모델루 이코노미쿠: 지 그스흐 센소르
-(<트프스://.인스트룩타블리스.콩/아르두이누-그스흐-센소르/>)
+(<https://www.instructables.com/Arduino-GSR-sensor/>)
 모델루 이그-인드: 그로비 그스흐 센소르
-(<트프스://위키.세에드스투지우.콩/그로비-그스흐_센소르/>)
+(<https://wiki.seeedstudio.com/Grove-GSR_Sensor/>)
 라타스 지 메타우:
 
 모델루 이코노미쿠: 라타스 지 메타우 헤베스치두 (수시 아스 임프치, 클레앙 포드 캉스 위트 아 플라스치크 코아칭그)
 모델루 이그-인드: 라타스 지 알루미니우 (세아르시 포르 알루미눙 콘타이네르스 위트 스모트 수르파시스)
 카부스 이 코넥토리스:
 
-모델루 이코노미쿠: 카부스 줌페르 (<트프스://.아다프루이트.콩/프로둑트/1956>)
-모델루 이그-인드: 카부스 지 실리코니 (<트프스://.아다프루이트.콩/프로둑트/3528>)
+Modelo Econômico: Cabos jumper (<https://www.adafruit.com/product/1956>)
+Modelo High-End: Cabos de silicone (<https://www.adafruit.com/product/3528>)
 폰치 지 알리멘타상:
 
-모델루 이코노미쿠: 바테리아 9브 (<트프스://.두라세우.콩/잉-우스/테시놀로기/바테리-카리-우지-안드-지스포자우/9-보우트/>)
-모델루 이그-인드: 바테리아 리푸 (<트프스://.아다프루이트.콩/프로둑트/328>)
+Modelo Econômico: Bateria 9V (<https://www.duracell.com/en-us/technology/battery-care-use-and-disposal/9-volt/>)
+Modelo High-End: Bateria LiPo (<https://www.adafruit.com/product/328>)
 지스플라이:
 
-모델루 이코노미쿠: 텔라 르크드 16스2 (<트프스://.아다프루이트.콩/프로둑트/181>)
-모델루 이그-인드: 텔라 올레드 0.96" (<트프스://.아다프루이트.콩/프로둑트/326>)
+Modelo Econômico: Tela LCD 16x2 (<https://www.adafruit.com/product/181>)
+Modelo High-End: Tela OLED 0.96" (<https://www.adafruit.com/product/326>)
 카이샤 오 가비네치:
 
 모델루 이코노미쿠: 카이샤 지 플라스치쿠 (세아르시 포르 프로젝트 잉클로주리 오르 프로젝트 보스)
 모델루 이그-인드: 가비네치 지 알루미니우 (세아르시 포르 알루미눙 잉클로주리 오르 알루미눙 프로젝트 보스)
 페하멘타스 이 마테리아이스 아지시오나이스:
 
-모델루 이코노미쿠: 키트 바지쿠 지 페하멘타스 (<트프스://.아다프루이트.콩/프로둑트/136>)
-모델루 이그-인드: 키트 콤플레투 (<트프스://.아다프루이트.콩/프로둑트/853>)
+Modelo Econômico: Kit básico de ferramentas (<https://www.adafruit.com/product/136>)
+Modelo High-End: Kit completo (<https://www.adafruit.com/product/853>)
 
 테지 콤포넨트스 소우드 비 수피시엔트 투 부이우드 아 풍크치오나우 이-메테르. 오웨베르, 요 마이 네드 투 마키 아드주스트멘트스 바제드 옹 요르 스페시피크 네드스, 로카우 아바일라빌리치 오프 콤포넨트스, 안드 요르 이스페리엔시 위트 일렉트로닉스 프로젝트스. 이트'스 이센치아우 투 폴로 프로페르 사페치 프레카우치옹스 엥 워르킹그 위트 일렉트로닉스 안드 투 콘수우트 헬레반트 헤조르시스 오르 세크 아시스탄시 프롱 이스페리엔세드 인지비두아우스 이프 네데드.
 

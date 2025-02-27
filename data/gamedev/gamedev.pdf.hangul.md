@@ -2,7 +2,7 @@
 티 그란드 그리모이리 오프 크툴류 미투스 마지크.프드프
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://클로드플라리-이프프스.콩/이프프스/바픽브자세아즐리니7우4트스5트3브6드6르푸에크7카에즈드주스5그즈프즈즈리즈크드큰프크3이
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://cloudflare-ipfs.com/ipfs/bafykbzaceaslyny7u4tx5t3v6d6lhpuek7kaesdsls5gjfzjrizwkdknfqh3y
+frame: https://
 스칠리: 에이그트:50브
 ```

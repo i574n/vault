@@ -1,4 +1,4 @@
 
 <아우지우 콘트로우스>
-<소르시 스흐크="트프스://바피베이아7므크르프브프스즈주5소르5네트나스3브바프6프즈도이조크2흐스와그7이스시.이프프스.드웨브.링크/티%20프레직치오네르'스%20가미%20-%20우징그%20티%20로지크%20오프%20브라젱%20세우프-인테레스트%20투%20세이%20안드%20사피%20티%20푸투리.므프3" 치피="아우지우/므페그">
+<source src="https://bafybeia7mkrpbfhxjzu5sor5netnaahs3bvap6pjddoyzok2rxwag7izce.ipfs.dweb.link/The%20Predictioneer's%20Game%20-%20Using%20the%20Logic%20of%20Brazen%20Self-Interest%20to%20See%20and%20Shape%20the%20Future.mp3" type="audio/mpeg">
 </아우지우>

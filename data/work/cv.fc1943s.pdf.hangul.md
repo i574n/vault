@@ -1,11 +1,11 @@
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이그크스크스그피6이브레아브32스프5보2투4이트드지2스그5클리프큼슨스즈56이.이프프스.드웨브.링크/?필레나미=필리피_잉-우스.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeighczkxgfiy6ivreab32zp5bou2to4ytdgi2sg5qlypkmxnxxj56i.ipfs.dweb.link/?filename=filipe_en-us.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이푸즈67스스위즈프그크4브위32무4므그부72즈2스2암스7오브리2슨스3아지74.이프프스.드웨브.링크/?필레나미=필리피_프트-브르.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeifuj67zxwijfhgc4vwy32ml4mgbu72j2z2ams7ovryw2snx3ajy74.ipfs.dweb.link/?filename=filipe_pt-br.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```

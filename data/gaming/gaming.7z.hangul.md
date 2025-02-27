@@ -1,2 +1,2 @@
 
-<트프스://바피베이드즌즈스26이누드크페케부우드키클리76페브프드7이지금트브즈르스브픙3치.이프프스.드웨브.링크/?필레나미=워+2.4.3+잉그브.7스>
+<https://bafybeidzwnsz26inldkfeqebuldcycle7h6febpd7izigmtbzrxvpm3tti.ipfs.dweb.link/?filename=WoW+2.4.3+enGB.7z>

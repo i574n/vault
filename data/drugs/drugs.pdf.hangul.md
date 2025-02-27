@@ -1,7 +1,7 @@
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이에핑5세큰무4크2옥즈즈바오키스32응367우이6세욱브5즈바조클리6이.이프프스.느프트스토라지.링크/기아두%20펠라%20루아%20-%20이드와르드%20므크라이%20(2).프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiefywm5cecnnmuh4q2okzjbaocyx32n367uy6seukb5jvasoqli6i.ipfs.nftstorage.link/Guiado%20Pela%20Lua%20-%20Edward%20Mcrae%20(2).pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 

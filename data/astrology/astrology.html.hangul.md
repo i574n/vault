@@ -1,3 +1,3 @@
-<트프스://.아스트루.콩/아스트롤로기/잉_아야남자_이.틍>
+<https://www.astro.com/astrology/in_ayanamsha_e.htm>
 
-<트프://베지카스트롤로제르.오르그/즈/인데스.틍>
+<http://vedicastrologer.org/jh/index.htm>

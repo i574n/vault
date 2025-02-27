@@ -1,7 +1,7 @@
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이드스4프2르크즈두24크즈즈드크75유지토바프카누4응2프3트32주이코르비.이프프스.느프트스토라지.링크/쿠르수%20지%20케니아%20-%20에우지%20크%크3%아5히%20파우스칸제르.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidz4p2lkhjddl24czsdq75yugihtovhapcanl4m2p3t32juiqorby.ipfs.nftstorage.link/Curso%20de%20Quenya%20-%20Helge%20K%C3%A5re%20Fauskanger.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 

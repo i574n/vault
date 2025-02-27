@@ -1,13 +1,13 @@
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이아시2리7르루24프키브키셰스트프프7크스스클레븜르5시25트스피파우.이프프스.느프트스토라지.링크/이스토리아스%20인치마스%20-%20세슈알리다지%20-%20마리%20데우%20프리오리.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiaxy2le7lhru24pkivwcyxeztpf7hqsxwclebmr5ch25ttxpifhau.ipfs.nftstorage.link/Historias%20Intimas%20-%20Sexualidade%20-%20Mary%20Del%20Priore.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이아프트4즈6크그드브수24트주닝크파2브치크2사워즈누아우36이7즐료크.이프프스.느프트스토라지.링크/보카지_포에지아스.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeiaft4j6qggdvwxll24tzllnincpah2btic2sawojnual36y7jlhoq.ipfs.nftstorage.link/Bocage_Poesias.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 

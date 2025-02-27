@@ -1,45 +1,106 @@
 # 바우우트
 
-<트프스://바우우트.금브>
+<https://vault.gmbh>
 
-<트프스://바우우트.옹.플레크.쿠>
+<https://vault.on.fleek.co>
 
-<트프스://바우우트-크미.파지스.데브>
+<https://vault-cme.pages.dev>
 
-<트프스://이574응.지투브.이우/바우우트>
+<https://i574n.github.io/vault>
 
-<트프스://이프프스.이우/이픙스/크51크지5우쿠5듬그05긍크트02픔키0스노브프0프시비0드즈그크0브즈수97우1브투2브프크>
+<https://ipfs.io/ipns/k51qzi5uqu5dmg05gnqt02fmke0xnobp0psyve0dsgcq0bjso97u1btto2hbfc>
 
 [![깃허브 코드스페이스](
-트프스://지투브.콩/코데스파시스/바드지.스브그)](
-트프스://지투브.콩/코데스파시스/네?이지_헤푸_셀렉트=트루이&헤프=마잉&헤푸=602361649)
+https://github.com/codespaces/badge.svg)](
+https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=602361649)
 
 ---
 
-- [부이우드](#부이우드)
+- [제칭그 스타르테드](#제칭그-스타르테드)
+- [인스탈라치옹](#인스탈라치옹)
 - [토두](#토두)
+- [링크스](#링크스)
 - [콘트리부칭그](#콘트리부칭그)
 - [리센시](#리센시)
 
-## 부이우드
+## 제칭그 스타르테드
 
-```프스1
-프즈 스크리프트스/이니트.프스1
-프즈 스크리프트스/푸블리즈.프스1
+### 인스탈라치옹
+
+클로니 티 헤포지토리:
+
+```포웨르제우
+git clone https://github.com/i574n/vault.git
+```
+
+나비가치 투 티 지렉토리, 이니치알리지 데펜덴시스 안드 부이우드 티 프로젝트:
+
+```포웨르제우
+크드 바우우트
+프즈 스크리프트스/워르크플로.프스1
 ```
 
 ## 토두
 
 - [ ] 온리 코미트 티 비나리 .프드프 안드 .이푸브 필리스 투 그-파지스 엥 티 마르크동 테스트 콘텐트 샨지스
 
+## 링크스
+
+<타블리>
+
+<트르>
+<트드>
+
+도쿠멘타치옹
+
+</트드>
+<트드>
+
+- 헤포지토리 필리 트레이 (트무)
+<https://i574n.github.io/vault>
+
+</트드>
+</트르>
+
+<트르>
+<트드>
+
+헤센트 트란즐라치옹스 투 프트-브르
+
+</트드>
+<트드>
+
+<https://i574n.github.io/vault/data/community/netiquette_pt-br.md.html>
+<https://i574n.github.io/vault/data/community/netiquette_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/economy/만리마속도_pt-br.md.html>
+<https://i574n.github.io/vault/data/economy/만리마속도_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/magic/the-book-of-remembering_pt-br.md.html>
+<https://i574n.github.io/vault/data/magic/the-book-of-remembering_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/spirituality/gvk_pt-br.md.html>
+<https://i574n.github.io/vault/data/spirituality/gvk_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/spirituality/ressurection_pt-br.md.html>
+<https://i574n.github.io/vault/data/spirituality/ressurection_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/spirituality/the-book-of-innocence_pt-br.md.html>
+<https://i574n.github.io/vault/data/spirituality/the-book-of-innocence_pt-br.hangul.md.html>
+
+</트드>
+</트르>
+
+</타블리>
+
 ## 콘트리부칭그
 
-콘트리부치옹스 아리 웨우코미! 플레아지 세이 티 [콘트리부칭그.므드](트프스://지투브.콩/이574응/.지투브/블로브/마잉/콘트리부칭그.므드) 포르 기델리니스.
+Contributions are welcome! Please see the [CONTRIBUTING.md](https://github.com/i574n/.github/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## 리센시
 
-티스 프로젝트 이스 리센세드 운데르 티 아그푸브3 리센시. 세이 티 [리센시](트프스://지투브.콩/이574응/바우우트/블로브/마잉/리센시) 필리 포르 데타이우스.
+This project is licensed under the AGPLv3 License. See the [LICENSE](https://github.com/i574n/vault/blob/main/LICENSE) file for details.
 
 ---
 
-[![스타르 이스토리 샤르트](트프스://아피.스타르-이스토리.콩/스브그?헤푸스=이574응/바우우트&치피=치멜리니)]
+[![Star History Chart](https://api.star-history.com/svg?repos=i574n/vault&type=Timeline)]

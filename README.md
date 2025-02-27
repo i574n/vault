@@ -16,21 +16,82 @@
 
 ---
 
-- [Build](#build)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
 - [TODO](#todo)
+- [Links](#links)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Build
+## Getting Started
 
-```ps1
-pwsh scripts/init.ps1
-pwsh scripts/publish.ps1
+### Installation
+
+Clone the repository:
+
+```powershell
+git clone https://github.com/i574n/vault.git
+```
+
+Navigate to the directory, initialize dependencies and build the project:
+
+```powershell
+cd vault
+pwsh scripts/workflow.ps1
 ```
 
 ## TODO
 
 - [ ] Only commit the binary .pdf and .epub files to gh-pages when the markdown text content changes
+
+## Links
+
+<table>
+
+<tr>
+<td>
+
+Documentation
+
+</td>
+<td>
+
+- Repository file tree (HTML)  
+<https://i574n.github.io/vault>
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+Recent translations to pt-BR
+
+</td>
+<td>
+
+<https://i574n.github.io/vault/data/community/netiquette_pt-br.md.html>  
+<https://i574n.github.io/vault/data/community/netiquette_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/economy/만리마속도_pt-br.md.html>  
+<https://i574n.github.io/vault/data/economy/만리마속도_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/magic/the-book-of-remembering_pt-br.md.html>  
+<https://i574n.github.io/vault/data/magic/the-book-of-remembering_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/spirituality/gvk_pt-br.md.html>  
+<https://i574n.github.io/vault/data/spirituality/gvk_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/spirituality/ressurection_pt-br.md.html>  
+<https://i574n.github.io/vault/data/spirituality/ressurection_pt-br.hangul.md.html>
+
+<https://i574n.github.io/vault/data/spirituality/the-book-of-innocence_pt-br.md.html>  
+<https://i574n.github.io/vault/data/spirituality/the-book-of-innocence_pt-br.hangul.md.html>
+
+</td>
+</tr>
+
+</table>
 
 ## Contributing
 

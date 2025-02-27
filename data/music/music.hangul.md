@@ -1,6 +1,6 @@
 
 ```프스1
-이트-두프 --이스트락트-아우지우 --아우지우-포르마트 므프3 트프스://.요투비.콩/와트시?브=<이드>
+yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=<ID>
 
 ---
 
@@ -761,13 +761,13 @@
 
 < 아스 오프 2021, 테리 아리 세베라우 온리니 플라트포름스 안드 코무니치스 에리 요 캉 핀드 안드 돈로아드 풀 비트위그 스투지우 프로젝트스. 노치 타트 소미 오프 테지 헤조르시스 마이 헤키리 우제르 헤지스트라치옹 오르 마이 아비 샨제드 신시 텡. 에리 아리 소미 오프 티 포풀라르 소르시스:
 
-비트위그 코무니치 프로젝트스: 비트위그'스 오피시아우 웨브시치 아스 아 콜렉치옹 오프 프로젝트스 사레드 비 티 코무니치. 테지 프로젝트스 캉 비 돈로아데드 안드 오페네드 지렉틀리 잉 비트위그 스투지우. 비지트 <트프스://.비트위그.콩/코무니치/코무니치-프로젝트스/>
+Bitwig Community Projects: Bitwig's official website has a collection of projects shared by the community. These projects can be downloaded and opened directly in Bitwig Studio. Visit <https://www.bitwig.com/community/community-projects/>
 
-블렌드.이우: 블렌드.이우 이스 앙 온리니 플라트포릉 포르 무지크 콜라보라치옹, 에리 우제르스 캉 사리 안드 돈로아드 프로젝트스 프롱 바리오스 다스, 잉클루징그 비트위그 스투지우. 비지트 <트프스://블렌드.이우/이스플로리/비트위그>
+Blend.io: Blend.io is an online platform for music collaboration, where users can share and download projects from various DAWs, including Bitwig Studio. Visit <https://blend.io/explore/bitwig>
 
-흐/비트위그: 티 비트위그 스투지우 수브레지트 이스 앙 악치비 코무니치 오프 비트위그 우제르스 우 오카지오날리 사리 테이르 프로젝트스 안드 콜라보라치 위트 오테르 멤베르스. 비지트 <트프스://.헤지트.콩/흐/비트위그/>
+r/Bitwig: The Bitwig Studio subreddit is an active community of Bitwig users who occasionally share their projects and collaborate with other members. Visit <https://www.reddit.com/r/Bitwig/>
 
-크브르 아우지우 포룽: 티 크브르 아우지우 포룽 아스 아 비트위그-스페시피크 섹치옹 에리 우제르스 캉 사리 프로젝트스, 지스쿠스 치프스 안드 테시니케스, 안드 세크 에우프. 비지트 <트프스://.크브라우지우.콩/포룽/비에포룽.프프?프=259>
+KVR Audio Forum: The KVR Audio forum has a Bitwig-specific section where users can share projects, discuss tips and techniques, and seek help. Visit <https://www.kvraudio.com/forum/viewforum.php?f=259>
 
 요투비: 마니 비트위그 스투지우 우제르스 안드 콘텐트 크레아토르스 사리 테이르 프로젝트스 잉 티 비데우 데스크리프치옹스 오프 테이르 요투비 투토리아우스, 데무스, 오르 페르포르만시스...
 

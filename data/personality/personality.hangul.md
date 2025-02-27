@@ -824,17 +824,17 @@
 
 < 파라 코메사르 웅 포드카스트 다우 (오르가니자상 아우토노마 데센트랄리자다) 우잔두 아 블록샤잉 네아르, 시가 우스 파수스 아바이슈:
 
-코녜사 아 플라타포르마 네아르: 아 블록샤잉 네아르 에 우마 플라타포르마 데센트랄리자다 지 아플리카치부스 이 콘트라투스 인텔리젠치스. 파밀리아리지-시 콩 아 도쿠멘타상 이 헤쿠르수스 지스포니베이스 누 시치 오피시아우 다 네아르 (<트프스://네아르.오르그/>) 파라 인텐데르 코무 아 플라타포르마 푼시오나 이 코무 데젠보우베르 아플리카치부스 넬라.
+Conheça a plataforma NEAR: A blockchain NEAR é uma plataforma descentralizada de aplicativos e contratos inteligentes. Familiarize-se com a documentação e recursos disponíveis no site oficial da NEAR (<https://near.org/>) para entender como a plataforma funciona e como desenvolver aplicativos nela.
 
-크리 우마 콘타 네아르: 파라 인테라지르 콩 아 블록샤잉 네아르, 크리 우마 콘타 우잔두 우 네아르 왈레트 (<트프스://왈레트.네아르.오르그/>). 아노치 수아 샤비 프리바다 이 구아르지-아 잉 웅 로카우 세구루.
+Crie uma conta NEAR: Para interagir com a blockchain NEAR, crie uma conta usando o NEAR Wallet (<https://wallet.near.org/>). Anote sua chave privada e guarde-a em um local seguro.
 
-아프렌다 아 링구아젱 지 프로그라마상 후스트: 콘트라투스 인텔리젠치스 나 블록샤잉 네아르 상 이스크리투스 잉 후스트, 우마 링구아젱 지 프로그라마상 모데르나 이 세구라. 아프렌다 우 바지쿠 다 링구아젱 후스트 (<트프스://.후스트-랑그.오르그/레아릉>) 이 이스플로리 아 도쿠멘타상 이스페시피카 두 네아르 스드크 파라 후스트 (<트프스://독스.흐스/네아르-스드크/>).
+Aprenda a linguagem de programação Rust: Contratos inteligentes na blockchain NEAR são escritos em Rust, uma linguagem de programação moderna e segura. Aprenda o básico da linguagem Rust (<https://www.rust-lang.org/learn>) e explore a documentação específica do NEAR SDK para Rust (<https://docs.rs/near-sdk/>).
 
-데젠보우바 우 콘트라투 인텔리젠치 두 다우: 우잔두 후스트 이 우 네아르 스드크, 데젠보우바 웅 콘트라투 인텔리젠치 페르소날리자두 파라 우 세우 포드카스트 다우. 우 콘트라투 데비 잉클루이르 푼시오날리다지스 코무 제렌시아멘투 지 멤브루스, 보타송이스, 프로포스타스 지 피난시아멘투 이 지스트리부이상 지 헤콤펜사스. 보세 포지 시 인스피라르 잉 프로제투스 다우 이지스텐치스 오 우자르 모델루스 지스포니베이스, 코무 우 스푸트닉다우 (<트프스://지투브.콩/네아르-다우스/스푸트니크-다우-콘트락트>).
+Desenvolva o contrato inteligente do DAO: Usando Rust e o NEAR SDK, desenvolva um contrato inteligente personalizado para o seu podcast DAO. O contrato deve incluir funcionalidades como gerenciamento de membros, votações, propostas de financiamento e distribuição de recompensas. Você pode se inspirar em projetos DAO existentes ou usar modelos disponíveis, como o SputnikDAO (<https://github.com/near-daos/sputnik-dao-contract>).
 
-임플란치 우 콘트라투 인텔리젠치: 콩 우 콘트라투 인텔리젠치 데젠보우비두, 임플란치-우 나 블록샤잉 네아르 우잔두 아 클리 (코만드 리니 인테르파시) 오 우마 페하멘타 지 임플란타상, 코무 우 네아르 클리 (<트프스://독스.네아르.오르그/독스/토우스/네아르-클리>).
+Implante o contrato inteligente: Com o contrato inteligente desenvolvido, implante-o na blockchain NEAR usando a CLI (Command Line Interface) ou uma ferramenta de implantação, como o NEAR CLI (<https://docs.near.org/docs/tools/near-cli>).
 
-콘피구라르 우 프론텐드 이 아 인테르파시 두 우주아리우: 크리 우마 인테르파시 아미가베우 파라 우스 우주아리우스 인테라지렝 콩 우 포드카스트 다우. 에사 인테르파시 포지 세르 웅 시치 오 아플리카치부 키 시 코넥타 아 블록샤잉 네아르 이 페르미치 키 우스 우주아리우스 파르치시펭 지 보타송이스, 인비엥 프로포스타스 이 제렌시엥 수아스 파르치시파송이스 누 다우. 우칠리지 비블리오테카스 이 페하멘타스 두 이코시스테마 네아르, 코무 우 네아르 아피 즈스 (<트프스://지투브.콩/네아르/네아르-아피-즈스>), 파라 파실리타르 아 코네샹 엔트리 우 프론텐드 이 아 블록샤잉.
+Configurar o frontend e a interface do usuário: Crie uma interface amigável para os usuários interagirem com o podcast DAO. Essa interface pode ser um site ou aplicativo que se conecta à blockchain NEAR e permite que os usuários participem de votações, enviem propostas e gerenciem suas participações no DAO. Utilize bibliotecas e ferramentas do ecossistema NEAR, como o NEAR API JS (<https://github.com/near/near-api-js>), para facilitar a conexão entre o frontend e a blockchain.
 
 지부우기 우 포드카스트 다우: 콩 아 인프라에스트루투라 두 다우 프론타, 프로모바 세우 프로제투 파라 아트라이르 아포이아도리스, 이스펙타도리스 이 멤브루스 다 코무니다지. 이스플리키 우스 베네피시우스 지 파르치시파르 두 포드카스트 다우 이 코무 우스 토켕스 이 아 고베르난사 데센트랄리자다 포뎅 인히케세르 아 이스페리엔시아 두 포드카스트.
 
@@ -846,9 +846,9 @@
 
 < 잉 우마 시투아상 잉 키 아 벤다 지 느프트스 잉 플라타포르마스 트라지시오나이스 코무 우 파라스 낭 에 포시베우 이 아 베리피카상 헤주우타 잉 이스푸우상, 보세 포지 이스플로라르 오트라스 마네이라스 지 잉콘트라르 콜라보라도리스 이 아포이아도리스 파라 우 세우 프로제투. 아키 이스탕 아우구마스 이스트라테지아스 아우테르나치바스:
 
-오트라스 플라타포르마스 느프트 데센트랄리자다스: 이스플로리 오트라스 플라타포르마스 지 느프트 데센트랄리자다스 이 메누스 헤스트리치바스, 코무 하리블리 (<트프스://하리블리.콩/>), 오펜세아 (<트프스://오펜세아.이우/>), 오 이크 이트 눙크 (<트프스://이세트눙크.시스/>). 에사스 플라타포르마스 포뎅 오페레세르 마이스 리베르다지 파라 리스타르 이 벤데르 세우스 느프트스 셍 아스 헤스트리송이스 지 베리피카상.
+Outras plataformas NFT descentralizadas: Explore outras plataformas de NFT descentralizadas e menos restritivas, como Rarible (<https://rarible.com/>), OpenSea (<https://opensea.io/>), ou Hic et Nunc (<https://hicetnunc.xyz/>). Essas plataformas podem oferecer mais liberdade para listar e vender seus NFTs sem as restrições de verificação.
 
-헤지스 소시아이스 이 코무니다지스: 지부우기 세우 프로제투 잉 헤지스 소시아이스 데센트랄리자다스 오 바제아다스 잉 블록샤잉, 코무 마스토동 (<트프스://조인마스토동.오르그/>) 오 스테미트 (<트프스://스테미트.콩/>). 파르치시피 지 코무니다지스 이 포룽스 헬라시오나두스 아우 세우 프로제투, 코무 그루푸스 두 지스코르드, 텔레그랑 오 헤지트, 파라 잉콘트라르 페소아스 인테레사다스 잉 아포이아르 이 콘트리부이르 파라 우 세우 프로제투.
+Redes sociais e comunidades: Divulgue seu projeto em redes sociais descentralizadas ou baseadas em blockchain, como Mastodon (<https://joinmastodon.org/>) ou Steemit (<https://steemit.com/>). Participe de comunidades e fóruns relacionados ao seu projeto, como grupos do Discord, Telegram ou Reddit, para encontrar pessoas interessadas em apoiar e contribuir para o seu projeto.
 
 이벤투스 이 잉콘트루스 비르투아이스: 파르치시피 지 이벤투스, 콘페렌시아스 이 잉콘트루스 비르투아이스 헬라시오나두스 아우 세우 프로제투, 블록샤잉 이 느프트스. 에시스 이벤투스 포뎅 세르 우마 이셀렌치 오포르투니다지 파라 아프레젠타르 세우 프로제투, 잉콘트라르 콜라보라도리스 이 콘스트루이르 코네숑이스 콩 페소아스 인테레사다스.
 
@@ -858,7 +858,7 @@
 
 캄파냐스 지 마르케칭그 이 흐프: 인비스타 잉 캄파냐스 지 마르케칭그 이 헬라송이스 푸블리카스 파라 아우멘타르 아 콘시엔치자상 소브리 우 세우 프로제투 이 아트라이르 콜라보라도리스. 이수 포지 잉클루이르 아 크리아상 지 콘테우두 프로모시오나우, 코무 포스타젱스 지 블로그, 비데우스 이 포스타젱스 잉 헤지스 소시아이스, 이 우 아우칸시 지 인플루엔시아도리스, 미지아 이 오트루스 카나이스 지 코무니카상 헬레반치스.
 
-크로드푼징그 이 피난시아멘투 데센트랄리자두: 이스플로리 오프송이스 지 크로드푼징그 이 피난시아멘투 데센트랄리자두, 코무 지트코잉 (<트프스://지트코잉.쿠/>) 오 그노지스 (<트프스://그노지스.이우/>), 파라 아헤카다르 푼두스 이 잉콘트라르 콜라보라도리스 인테레사두스 잉 아포이아르 우 세우 프로제투.
+Crowdfunding e financiamento descentralizado: Explore opções de crowdfunding e financiamento descentralizado, como Gitcoin (<https://gitcoin.co/>) ou Gnosis (<https://gnosis.io/>), para arrecadar fundos e encontrar colaboradores interessados em apoiar o seu projeto.
 
 인프렌타르 헤스트리송이스 잉 플라타포르마스 센트랄리자다스 포지 세르 데자피아도르, 마스 이스플로라르 에사스 아우테르나치바스 이 아다프타르-시 아 시투아상 포지 아주다르 아 수페라르 오브스타쿨루스 이 잉콘트라르 콜라보라도리스 이 아포이아도리스 파라 우 세우 프로제투.
 

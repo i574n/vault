@@ -12,7 +12,9 @@ if (!$fast) {
     Set-Location alphabet
     git pull
     Set-Location $ScriptDir
-    pwsh ../../alphabet/scripts/init.ps1
+    if (!$fast) {
+        pwsh ../../alphabet/scripts/init.ps1
+    }
 }
 
 . ../../polyglot/scripts/core.ps1

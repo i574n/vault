@@ -1,7 +1,7 @@
 
 ```쿠스통-프라메스
-우루수피스: 모질라.지투브.이우/프드프.즈스/웨브/비에웨르.트무?필리=트프스://바피베이드스4프2르크즈두24크즈즈드크75유지토바프카누4응2프3트32주이코르비.이프프스.느프트스토라지.링크/토두스%20시%20코무니캉%20마스%20포쿠스%20시%20코넥탕%20종%20크.%20마스웨우.프드프
-프라미: 트프스://
+urlSuffix: mozilla.github.io/pdf.js/web/viewer.html?file=https://bafybeidz4p2lkhjddl24czsdq75yugihtovhapcanl4m2p3t32juiqorby.ipfs.nftstorage.link/Todos%20se%20comunicam%20mas%20poucos%20se%20conectam%20John%20C.%20Maxwell.pdf
+frame: https://
 스칠리: 에이그트:50브
 ```
 
