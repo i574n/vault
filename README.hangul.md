@@ -100,7 +100,3 @@ Contributions are welcome! Please see the [CONTRIBUTING.md](https://github.com/i
 ## 리센시
 
 This project is licensed under the AGPLv3 License. See the [LICENSE](https://github.com/i574n/vault/blob/main/LICENSE) file for details.
-
----
-
-[![Star History Chart](https://api.star-history.com/svg?repos=i574n/vault&type=Timeline)]
