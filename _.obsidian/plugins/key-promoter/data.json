@@ -6,9 +6,9 @@
   "template": "{{commandId}} - {{commandName}} - {{hotkey}}",
   "descriptionOfActions": false,
   "mouseStatistics": {
-    "editor:open-link-in-new-leaf": 6,
-    "workspace:new-tab": 6,
-    "app:toggle-default-new-pane-mode": 6,
+    "editor:open-link-in-new-leaf": 7,
+    "workspace:new-tab": 7,
+    "app:toggle-default-new-pane-mode": 7,
     "workspace:undo-close-pane": 20,
     "obsidian-git:backup-and-close": 20,
     "workspace:close": 20,
