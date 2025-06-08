@@ -1,0 +1,21 @@
+{
+  "pluginList": [
+    "mnaoumov/obsidian-advanced-exclude"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "mnaoumov/obsidian-advanced-exclude",
+      "version": "latest"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": ""
+}

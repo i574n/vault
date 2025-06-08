@@ -1,12 +1,10 @@
 
-- [ ] aluminum foil
 - [ ] cell chips
 
 ---
 ---
 
-Rua Adolfo Reile, 286, Ap. 83 A - Jardim Celeste, São Paulo - SP, 04195-070
-Avenida do Cursino, 6667, Ap. 83 A - Vila Moraes, São Paulo - SP, 04169-000
+
 
 ---
 
