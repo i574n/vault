@@ -51,6 +51,6 @@
   "userIgnoreFilters": [
     "dist/",
     "target/",
-    "/^dist\\/.*?$/"
+    "deps/"
   ]
 }

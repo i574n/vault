@@ -8,17 +8,16 @@
         "type": "split",
         "children": [
           {
-            "id": "09ff9f3c8d338bd0",
+            "id": "fa51c429b79de9a6",
             "type": "split",
-            "dimension": 58.434221146085555,
+            "dimension": 69.23076923076923,
             "children": [
               {
                 "id": "324240d2f1b88acc",
                 "type": "tabs",
-                "dimension": 50,
                 "children": [
                   {
-                    "id": "55df00fd14ac860b",
+                    "id": "bb0211bbab256315",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -26,19 +25,20 @@
                         "file": "README.md",
                         "mode": "source",
                         "source": true
-                      }
+                      },
+                      "icon": "lucide-file",
+                      "title": "README"
                     },
-                    "group": "d77b1d6c610149eb"
+                    "group": "ead2db2a42828534"
                   }
                 ]
               },
               {
-                "id": "5454e2a273396d41",
+                "id": "78e17ed1de3456dc",
                 "type": "tabs",
-                "dimension": 50,
                 "children": [
                   {
-                    "id": "479bcbae50342d47",
+                    "id": "ce798148de42a143",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
@@ -46,9 +46,11 @@
                         "file": "README.md",
                         "mode": "source",
                         "source": false
-                      }
+                      },
+                      "icon": "lucide-file",
+                      "title": "README"
                     },
-                    "group": "d77b1d6c610149eb"
+                    "group": "ead2db2a42828534"
                   }
                 ]
               }
@@ -58,18 +60,20 @@
           {
             "id": "140ca31b6a8917b5",
             "type": "split",
-            "dimension": 41.565778853914445,
+            "dimension": 30.76923076923077,
             "children": [
               {
                 "id": "8c63664035249ad2",
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "46f222e247c245e9",
+                    "id": "ff1c062e21d5f225",
                     "type": "leaf",
                     "state": {
                       "type": "empty",
-                      "state": {}
+                      "state": {},
+                      "icon": "lucide-file",
+                      "title": "New tab"
                     }
                   }
                 ]
@@ -79,15 +83,13 @@
                 "type": "tabs",
                 "children": [
                   {
-                    "id": "c186d0d6ccec40d3",
+                    "id": "681091769c24ecba",
                     "type": "leaf",
                     "state": {
-                      "type": "markdown",
-                      "state": {
-                        "file": "data/ai/chatgpt.toml",
-                        "mode": "source",
-                        "source": true
-                      }
+                      "type": "empty",
+                      "state": {},
+                      "icon": "lucide-file",
+                      "title": "New tab"
                     }
                   }
                 ]
@@ -115,8 +117,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -125,13 +130,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kimbanda",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -139,7 +146,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -147,14 +156,36 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "5e4501fd8a98e5bb",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
+            "id": "363becbd13211317",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 215.50418853759766
+    "width": 293.5124969482422
   },
   "right": {
     "id": "7542570fcac33ce2",
@@ -170,6 +201,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "data/mercadolivre/mercadolivre.i574n.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +209,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for mercadolivre.i574n"
             }
           },
           {
@@ -186,9 +220,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "data/mercadolivre/mercadolivre.i574n.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from mercadolivre.i574n"
             }
           },
           {
@@ -199,7 +236,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -207,7 +246,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "data/mercadolivre/mercadolivre.i574n.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of mercadolivre.i574n"
             }
           },
           {
@@ -215,11 +258,81 @@
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "e18f41b629934847",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "a193a9c73ab19a99",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "a24f490ddfbef45e",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "1ad14623c10a6153",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
+            }
+          },
+          {
+            "id": "0602549c6018eafd",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7da98e22f4bd7984",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -228,6 +341,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian42-brat:BRAT": false,
       "random-note:Open random note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -235,48 +349,53 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false,
+      "terminal:Open terminal": false,
       "obsidian-custom-frames:Open https_dark://": false,
-      "obsidian-custom-frames:Open http://": false
+      "obsidian-custom-frames:Open http://": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-day-planner:Timeline": false,
+      "publish:Publish changes...": false
     }
   },
-  "active": "46f222e247c245e9",
+  "active": "ff1c062e21d5f225",
   "lastOpenFiles": [
+    "data/workflow/test.toml",
     "README.md",
-    "data/fiction/stories.md",
-    "data/ai/chatgpt.md",
-    "data/workflow/file_cache/2023-07-09.md",
-    "data/art/ephemeral-art_pt-br.md",
-    "data/workflow/file_cache/2023-07-07.md",
-    "data/psychology/inner-inferno_pt-br.md",
-    "LICENSE",
-    "data/drugs/selva-verde_pt-br.md",
-    "data/workflow/file_cache/2023-07-05.md",
-    "data/magic/o-caminho-demonico-dos-dados_pt-br.md",
-    "data/hip-hop/complexity-and-competition_pt-br.md",
-    "data/workflow/file_cache/2023-07-01.md",
-    "data/workflow/file_cache/2023-07-03.md",
-    "data/workflow/file_cache/2023-06-30.md",
-    "data/workflow/file_cache/2023-06-29.md",
-    "data/workflow/file_cache/2023-06-26.md",
-    "data/workflow/file_cache/2023-06-24.md",
-    "data/sex/sex.html.md",
-    "data/dialects/korean.md",
-    "data/dialects/english.md",
-    "data/dialects/korean.html.md",
+    "data/workflow/tasks.md",
+    "data/travel/travel.i574n.md",
+    "data/workflow/test.md",
+    "scripts/init.ps1",
+    "data/workflow/topic.posts.md",
+    "data/trakt/trakt.html.md",
+    "data/trakt/trakt.i574n.md",
+    "data/doujinshi/doujinshi.md",
+    "data/ethics/ethics.mp3.md",
+    "data/dotnet/dotnet.md",
+    "data/ai/ai.md",
+    "data/mercadolivre/mercadolivre.i574n.md",
     "data/ai/chatgpt.toml",
-    "data/workflow/file_cache/albums2.json",
-    "data/workflow/file_cache/albums.json.md",
-    "data/workflow/file_cache/albums.json",
-    "data/workflow/file_cache/2023-06-28.md",
-    "data/tech/devilopment_pt-br.md",
-    "data/community/community.md",
-    "data/spirituality/ressurection_pt-br.md",
-    "data/music/file_cache/[The Endless Knot] Presents  ATMOS [5 album tribute to goa gil] mixed by CinderVOMIT.mp3",
-    "data/science",
-    "data/biology",
-    "data/history 1",
-    "data/fiction/comics",
-    "data/fiction/prose",
+    "apps/documents/target/release/deps/documents.documents.30793887733f64e9-cgu.0.rcgu.o",
+    "apps/documents/target/release/deps/documents.b7yw4orbtaw2wp2jg1le09rux.rcgu.o",
+    "apps/documents/target/release/deps/documents-93d2e9c36bc3a876.documents.3d76df97c07c802d-cgu.0.rcgu.o",
+    "apps/documents/target/release/deps/documents-93d2e9c36bc3a876.0z6clxjufc2v8xzvjwybqle32.rcgu.o",
+    "apps/documents/target/release/deps/libdocuments-67e8432316d5c8bb.rlib",
+    "apps/documents/target/release/deps/documents-67e8432316d5c8bb.documents.2405691374a82a8b-cgu.00.rcgu.o",
+    "apps/documents/target/release/deps/documents-67e8432316d5c8bb.documents.2405691374a82a8b-cgu.01.rcgu.o",
+    "target/documents/dist/test.hangul.md",
+    "data/workflow/vault.fc1943s.7z.md",
+    "data/workflow/vault.html.md",
+    "data/identity/identity.fc1943s.png.md",
+    "data/identity/identity.fc1943s.pdf.md",
+    "data/identity/identity.fc1943s.7z.md",
+    "data/travel/travel.html.md",
+    "data/travel/travel.i574n.html.md",
+    "data/travel/travel.png.md",
+    "data/web3/storage.html.md",
+    "data/dialects/korean.html.md",
+    "test.md",
+    "data/warez/warez.html.md",
+    "Untitled.canvas",
     "data/identity/file_cache/marriage certificate 084442 01 55 2019 2 00057 107 0015664 37 - 2019-05-10.jpg",
     "data/cliparts/file_cache/windows avatar.jpg",
     "data/cliparts/file_cache/i574n avatar.png",
